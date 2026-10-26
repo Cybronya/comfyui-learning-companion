@@ -1,78 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_unet_99
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.916714
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy promptLine]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.822625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/多角度一致性工作流_1987778123494305793.json, 图片生成/图生图/最新多角度分镜（人物一致性）_1985310456749432834.json, 图片生成/文生图/多角度-生图_2077359821246001153.json, 图片生成/文生图/多角度（短剧专用）-邻家AI大女孩_2042370680309686273.json, 图片生成/文生图/多角度（短剧专用）-邻家AI大女孩_2056917392671985665.json, 图片生成/文生图/模特分镜 套图 Qwen_Edit_2511   IP角色多视图 多视角 三视图_2042929279717085186.json, 图片生成/文生图/电商模特多镜头多视角生图工作流_2002650110460850177.json]
+members: [视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2084154545424388098.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2087935494813478914.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2099783471219699713.json, 视频生成/图生视频/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）_2084260178744139778.json, 视频生成/图生视频/minimax H3巨物图生视频_2093886571169796098.json, 视频生成/图生视频/minimax H3巨物图生视频_2097867227113541634.json, 视频生成/图生视频/minimaxH3首尾帧视频工作流（超级加速版）_2084965664602804226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_99
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/多角度一致性工作流_1987778123494305793.json、图片生成/图生图/最新多角度分镜（人物一致性）_1985310456749432834.json、图片生成/文生图/多角度-生图_2077359821246001153.json、图片生成/文生图/多角度（短剧专用）-邻家AI大女孩_2042370680309686273.json、图片生成/文生图/多角度（短剧专用）-邻家AI大女孩_2056917392671985665.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2084154545424388098.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2087935494813478914.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2099783471219699713.json、视频生成/图生视频/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）_2084260178744139778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `Text Multiline`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 6/7 个有
-- `Any Switch (rgthree)` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `INTConstant` —— 3/7 个有
-- `ShowText|pysssss` —— 3/7 个有
-- `String Literal` —— 3/7 个有
-- `Text Load Line From File` —— 3/7 个有
-- `ImageScaleBy` —— 1/7 个有
-- `SeedVR2LoadDiTModel` —— 1/7 个有
-- `SeedVR2LoadVAEModel` —— 1/7 个有
-- `SeedVR2VideoUpscaler` —— 1/7 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/7 个有
-- `easy imageScaleToNormPixels` —— 1/7 个有
+- `CreateVideo` —— 5/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `Label (rgthree)` —— 4/8 个有
+- `ShowText|pysssss` —— 3/8 个有
+- `SolAttnPatch` —— 3/8 个有
+- `VHS_VideoCombine` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ManualSigmas` —— 2/8 个有
+- `MuyeTextEditOutput` —— 2/8 个有
+- `PrimitiveStringMultiline` —— 2/8 个有
+- `RHLLMChatNode` —— 2/8 个有
+- `SplitSigmas` —— 2/8 个有
+- `ModelPreviewOverrideKJ` —— 1/8 个有
+- `PathchSageAttentionKJ` —— 1/8 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 7 | 57% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 7 | 57% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，7 个样本
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（6/7 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

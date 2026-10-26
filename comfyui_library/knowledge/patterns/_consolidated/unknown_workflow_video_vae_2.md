@@ -1,39 +1,42 @@
 ---
 name: unknown_workflow_video_vae_2
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.898167
-common_nodes: [HunyuanVideoFoley, RH_Translator, SaveLatent, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
+coverage: 0.897333
+common_nodes: [GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, SaveLatent, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/hunyuan配音_1964226224115564546.json, 音频生成/音频生成/影片配音，音效_2008073310583660545.json, 音频生成/音频生成/影视短剧导演之六：视频音效 背景音_1989874275039498242.json, 音频生成/音频生成/视频配音 混元-Foley 背景音效_1972211822608707586.json, 音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1983443250952478721.json, 音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1986009915342954497.json]
+members: [视频生成/图生视频/N版！混元Foley视频音效工作流V1_1962919236110888961.json, 音频生成/音频生成/Foley音效_1974117007509598209.json, 音频生成/音频生成/超强！混元Foley视频音效工作流V1（强化版）_1961636892909441026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/hunyuan配音_1964226224115564546.json、音频生成/音频生成/影片配音，音效_2008073310583660545.json、音频生成/音频生成/影视短剧导演之六：视频音效 背景音_1989874275039498242.json、音频生成/音频生成/视频配音 混元-Foley 背景音效_1972211822608707586.json、音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1983443250952478721.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/N版！混元Foley视频音效工作流V1_1962919236110888961.json、音频生成/音频生成/Foley音效_1974117007509598209.json、音频生成/音频生成/超强！混元Foley视频音效工作流V1（强化版）_1961636892909441026.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `GetVideoComponents`
 - `HunyuanVideoFoley`
-- `RH_Translator`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadVideo`
 - `SaveLatent`
 - `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 5/6 个有
+- `AILab_MiniCPM_4_V` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `text_mul_replace` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
 
 ## 典型参数
 

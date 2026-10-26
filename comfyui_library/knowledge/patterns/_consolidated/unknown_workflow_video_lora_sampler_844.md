@@ -3,57 +3,62 @@ name: unknown_workflow_video_lora_sampler_844
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6415
-common_nodes: [Anything Everywhere, Divide [DVB], GetNode, LoadWanVideoT5TextEncoder, SetNode, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, mxSlider]
+coverage: 0.9525
+common_nodes: [AudioCombine, AudioSeparation, CLIPVisionLoader, CR SDXL Aspect Ratio, DF_Int_to_Float, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveInt, RH_GetAudioDuration, RH_Translator, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2图生视频_1957436481176530945.json, 视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json]
+members: [视频生成/图生视频/Infinite Talk数字人_1957982233535639554.json, 视频生成/图生视频/Infinite Talk数字人定制_1988128458423312386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_844
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频_1957436481176530945.json、视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk数字人_1957982233535639554.json、视频生成/图生视频/Infinite Talk数字人定制_1988128458423312386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Divide [DVB]`
-- `GetNode`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `Textbox`
+- `AudioCombine`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR SDXL Aspect Ratio`
+- `DF_Int_to_Float`
+- `DownloadAndLoadWav2VecModel`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveInt`
+- `RH_GetAudioDuration`
+- `RH_Translator`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `mxSlider`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `PurgeVRAM_UTK` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `SeedVR2BlockSwap` —— 1/2 个有
+- `SeedVR2ExtraArgs` —— 1/2 个有
+- `SeedVR2GGUF` —— 1/2 个有
 
 ## 典型参数
 

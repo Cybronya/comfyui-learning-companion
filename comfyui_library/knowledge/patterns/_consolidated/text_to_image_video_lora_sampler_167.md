@@ -1,123 +1,89 @@
 ---
 name: text_to_image_video_lora_sampler_167
 type: Text To Image
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.823333
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Concatenate, ComfyMathExpression, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelMemoryUsageFactorOverride, PT_H3ConcatAVLatent, PathchSageAttentionKJ, PixaromaResolution, PreviewImage, ProcessString, RHHiddenNodes, RandomNoise, ReferenceLatent, ResolutionSelector, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Switch any [Crystools], Text, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.89775
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, RHHiddenNodes, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json, 视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json, 视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json]
+members: [视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json, 视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2114183955657351169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_167
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json、视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json、视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json、视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2114183955657351169.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CFGGuider`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `CreateCFGScheduleFloatList`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageFromBatch`
-- `ImageResizeKJv2`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelMemoryUsageFactorOverride`
-- `PT_H3ConcatAVLatent`
-- `PathchSageAttentionKJ`
-- `PixaromaResolution`
-- `PreviewImage`
-- `ProcessString`
 - `RHHiddenNodes`
-- `RandomNoise`
-- `ReferenceLatent`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Switch any [Crystools]`
-- `Text`
-- `Text Multiline`
+- `RH_LLMAPI_Pro_Node`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 - `easy boolean`
-- `easy cleanGpuUsed`
-- `easy imageListToImageBatch`
-- `easy promptLine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `MiniMaxChunkFeedForward` —— 1/3 个有
-- `MiniMaxLowVRAMAttention` —— 1/3 个有
-- `ModelPreviewOverrideKJ` —— 1/3 个有
-- `PixaromaGetNode` —— 1/3 个有
-- `PixaromaLabel` —— 1/3 个有
-- `PixaromaSetNode` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `孤海注释` —— 3/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

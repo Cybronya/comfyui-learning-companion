@@ -3,69 +3,56 @@ name: unknown_workflow_sampler_unet_vae_181
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.805667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8925
+common_nodes: [BasicScheduler, CLIPLoader, CR Text, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/地表最强开源-Minimax H3 REF2V图生视频_2084811145361321985.json, 视频生成/图生视频/地表最强开源-Minimax H3 REF2V多参生视频_2084910817996271617.json, 视频生成/文生视频/MINIMAX H3 全能参考图生视频 官方工作流 seedance平替 多参考_2084157424512102401.json, 视频生成/文生视频/MINIMAX-H3工作流_2091759961062862849.json, 视频生成/文生视频/MiniMax H3 全模态多参考视频生成器_2090715767955345410.json, 视频生成/文生视频/MiniMax-H3 视频参考生视频_2089945535112372225.json]
+members: [图片生成/图生图/boogu edit图像编辑_2069677788981981186.json, 图片生成/图生图/boogu edit图像编辑_2070346438869086209.json, 图片生成/图生图/boogu edit图像编辑_2070347722284158977.json, 图片生成/图生图/boogu 图像编辑模式 提示词自动优化版_2083613193791959042.json, 图片生成/图生图/开源图像boogu 图像编辑 提示词自动优化版_2069584129343184898.json, 图片生成/图生图/开源图像悍将boogu 图像编辑模式 提示词自动优化版_2069366511243980802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_181
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/地表最强开源-Minimax H3 REF2V图生视频_2084811145361321985.json、视频生成/图生视频/地表最强开源-Minimax H3 REF2V多参生视频_2084910817996271617.json、视频生成/文生视频/MINIMAX H3 全能参考图生视频 官方工作流 seedance平替 多参考_2084157424512102401.json、视频生成/文生视频/MINIMAX-H3工作流_2091759961062862849.json、视频生成/文生视频/MiniMax H3 全模态多参考视频生成器_2090715767955345410.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/boogu edit图像编辑_2069677788981981186.json、图片生成/图生图/boogu edit图像编辑_2070346438869086209.json、图片生成/图生图/boogu edit图像编辑_2070347722284158977.json、图片生成/图生图/boogu 图像编辑模式 提示词自动优化版_2083613193791959042.json、图片生成/图生图/开源图像boogu 图像编辑 提示词自动优化版_2069584129343184898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `CR Text`
+- `EmptyLatentImage`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
+- `SaveImage`
+- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `LoadAudio` —— 4/6 个有
-- `PrimitiveFloat` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `EasyCache` —— 3/6 个有
-- `Int` —— 3/6 个有
-- `LoadVideo` —— 3/6 个有
-- `PathchSageAttentionKJ` —— 3/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `TextBox` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `GetImageRangeFromBatch` —— 1/6 个有
-- `Image Compare (mtb)` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `SDVN Any Show` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `VHS_VideoInfo` —— 1/6 个有
-- `VRAM_Debug` —— 1/6 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
+- `Dapao_LlamaChat` —— 3/6 个有
+- `GetImageSize` —— 3/6 个有
+- `ResizeImageMaskNode` —— 3/6 个有
+- `Seed (rgthree)` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `孤海注释` —— 3/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | 512 - 1024 | 6 | 67% |
+| 高度 | 768 | 512 - 1024 | 6 | 67% |
 
 ## 常见问题
 
@@ -73,4 +60,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 768，观测区间 512 - 1024，6 个样本
+- 高度 中位数 768，观测区间 512 - 1024，6 个样本

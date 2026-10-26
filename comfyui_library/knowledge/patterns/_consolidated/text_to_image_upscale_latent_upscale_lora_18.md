@@ -1,78 +1,92 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_18
 type: Text To Image
-frequency: 3
+frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScale, ImageUpscaleWithModel, KSampler, LatentUpscaleBy, LoadImage, Power Lora Loader (rgthree), PreviewImage, PrimitiveStringMultiline, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.763
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ColorMatchV2, ConditioningZeroOut, EmptyLatentImage, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetImageSize+, Image Comparer (rgthree), KSampler, KSamplerAdvanced, LatentUpscaleBy, LayerFilter: GaussianBlur, LazySwitch2way, LoaderGGUF, LoraLoaderModelOnly, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, ResolutionStdSelector, SaveImage, Seed (rgthree), SimpleMathDual+, TTResolutionSelector, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageSizeByLongerSide, 孤海注释, 数学运算_孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/游戏场景01_2100549378082697217.json, 图片生成/文生图/游戏场景01_2100180693333659649.json, 图片生成/文生图/游戏场景01文生图打底｜场景概念图批量生成，游戏美术素材库起步首选_2100481657882107905.json]
+members: [图片生成/文生图/Krea2-w高清生图整合流 双放大方案画质优化_2104362550707187713.json, 图片生成/文生图/黑鹤 Krea2-w高清生图优化流(整合)_2077069059501420545.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_18
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/游戏场景01_2100549378082697217.json、图片生成/文生图/游戏场景01_2100180693333659649.json、图片生成/文生图/游戏场景01文生图打底｜场景概念图批量生成，游戏美术素材库起步首选_2100481657882107905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2-w高清生图整合流 双放大方案画质优化_2104362550707187713.json、图片生成/文生图/黑鹤 Krea2-w高清生图优化流(整合)_2077069059501420545.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ColorMatchV2`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageScale`
-- `ImageUpscaleWithModel`
+- `Fast Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `KSamplerAdvanced`
 - `LatentUpscaleBy`
-- `LoadImage`
-- `Power Lora Loader (rgthree)`
+- `LayerFilter: GaussianBlur`
+- `LazySwitch2way`
+- `LoaderGGUF`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `ResolutionStdSelector`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SimpleMathDual+`
+- `TTResolutionSelector`
 - `UNETLoader`
+- `UltimateSDUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy imageSizeByLongerSide`
+- `孤海注释`
+- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `solarL_SaveImagesToZip` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `JjkText` —— 1/2 个有
+- `solarL_SaveImagesToZip` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 3 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 3 | 24% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 0.3 | 0.3 - 1 | 3 | 38% |
-| 宽度 | 1536 | 80 - 1536 | 3 | 35% |
-| 高度 | 768 | 80 - 768 | 3 | 40% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 7.25 | - | 2 | 62% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | beta | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
+| 宽度 | 400 | - | 2 | 20% |
+| 高度 | 680 | - | 2 | 12% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，3 个样本，取值分散，一致性仅 24%
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，3 个样本，取值分散，一致性仅 38%
-- 宽度 中位数 1536，观测区间 80 - 1536，3 个样本，取值分散，一致性仅 35%
-- 高度 中位数 768，观测区间 80 - 768，3 个样本，取值分散，一致性仅 40%
-- 高发问题（10/3 个样本）：Steps较低可能导致细节不足
+- Prompt 约束强度(CFG) 中位数 7.25，样本不足，未给区间，2 个样本
+- 调度器 最常用 beta，2 个样本，一致性 50%
+- 宽度 中位数 400，样本不足，未给区间，2 个样本，取值分散，一致性仅 20%
+- 高度 中位数 680，样本不足，未给区间，2 个样本，取值分散，一致性仅 12%
+- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

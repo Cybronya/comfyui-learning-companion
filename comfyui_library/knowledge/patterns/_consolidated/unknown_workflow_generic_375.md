@@ -3,36 +3,36 @@ name: unknown_workflow_generic_375
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.753
-common_nodes: [DramaBoxLoader, DramaBoxTTS, JjkText, SaveAudio]
+coverage: 0.623857
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2056283924774612993.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2057834156830322690.json]
+members: [图片生成/图生图/[书墨🛫]万物皆成“冰”——冰雕世界_1934606257615478786.json, 图片生成/图生图/klein高清放大2k_2057671437875499010.json, 图片生成/图生图/图片场景优化（全能图片-2.0）_2031338334768865282.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058230403361759234.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058481857167183873.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058487778131922946.json, 图片生成/图生图/细节_1996167870063263745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_375
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/[书墨🛫]万物皆成“冰”——冰雕世界_1934606257615478786.json、图片生成/图生图/klein高清放大2k_2057671437875499010.json、图片生成/图生图/图片场景优化（全能图片-2.0）_2031338334768865282.json、图片生成/图生图/最佳全能高清修复放大2K4K_2058230403361759234.json、图片生成/图生图/最佳全能高清修复放大2K4K_2058481857167183873.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `DramaBoxLoader`
-- `DramaBoxTTS`
-- `JjkText`
-- `SaveAudio`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `DramaBoxAudioPreview` —— 6/7 个有
-- `DramaBoxVoiceClone` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `PrimitiveFloat` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `RHHiddenNodes` —— 4/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/7 个有
+- `ImageScale` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
 
 ## 典型参数
 

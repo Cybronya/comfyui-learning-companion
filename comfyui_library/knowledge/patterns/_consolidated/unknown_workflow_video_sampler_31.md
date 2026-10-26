@@ -3,49 +3,37 @@ name: unknown_workflow_video_sampler_31
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8875
-common_nodes: [Compare, DiffuEraserLoader, DiffuEraserSampler, GetVideoComponents, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Translator, RepeatImageBatch, SaveVideo, Text, VHS_GetImageCount, VHS_VideoCombine, easy cleanGpuUsed, easy ifElse]
+coverage: 0.8285
+common_nodes: [GetVideoComponents, Int, JjkText, LayerUtility: ImageScaleByAspectRatio V2, RunningHub Void Mask Reasoner, RunningHub Void Pass Loader, RunningHub Void Pass Sampler, RunningHub Void Point Editor, SaveVideo, VHS_VideoCombine, floatToInt _O]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S图生视频加去水印一体_1975073237912694785.json, 视频生成/文生视频/全能视频S文生视频加去水印一体_1974820757119348737.json]
+members: [数字人/数字人/水印移除 视频移除 奈飞Void_2047249130749173762.json, 数字人/数字人/视频编辑 视频擦除 Netflix void_2047231208416878593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_31
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S图生视频加去水印一体_1975073237912694785.json、视频生成/文生视频/全能视频S文生视频加去水印一体_1974820757119348737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/水印移除 视频移除 奈飞Void_2047249130749173762.json、数字人/数字人/视频编辑 视频擦除 Netflix void_2047231208416878593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Compare`
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
 - `GetVideoComponents`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `Int`
+- `JjkText`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RH_Translator`
-- `RepeatImageBatch`
+- `RunningHub Void Mask Reasoner`
+- `RunningHub Void Pass Loader`
+- `RunningHub Void Pass Sampler`
+- `RunningHub Void Point Editor`
 - `SaveVideo`
-- `Text`
-- `VHS_GetImageCount`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Sora2_I2V` —— 1/2 个有
-- `RH_Sora2_T2V` —— 1/2 个有
-- `SaveText|pysssss` —— 1/2 个有
+- `floatToInt _O`
 
 ## 典型参数
 

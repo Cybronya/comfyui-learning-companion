@@ -1,84 +1,90 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_46
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.7465
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.842125
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/minimaxh3-多参+latent二采_2090316749035106305.json, 图片生成/文生图/啊癫 minimaxh3极速版二采潜空间直接放大_2091125688710553601.json, 数字人/数字人/老王房产专用流-Minimax+H3双模双采_2097619417130684417.json, 视频生成/图生视频/4k+二采新condition+同模双采+H3+动态修复_2108509040342028289.json, 视频生成/图生视频/LMS测试+二采新condition+同模双采+语义桥_2100942089772163074.json, 视频生成/图生视频/同模双采 H3 动态修复_2096940486610219009.json]
+members: [视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json, 视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json, 视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json, 视频生成/文生视频/LTX-2.3生成Logo展示视频_2030526628283027457.json, 视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json, 视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json, 视频生成/文生视频/LTX-文生视频-官方标准版-必收藏_2069062124302852097.json, 视频生成/文生视频/LTX2.3官方工作流_2070310733811896321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_46
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/minimaxh3-多参+latent二采_2090316749035106305.json、图片生成/文生图/啊癫 minimaxh3极速版二采潜空间直接放大_2091125688710553601.json、数字人/数字人/老王房产专用流-Minimax+H3双模双采_2097619417130684417.json、视频生成/图生视频/4k+二采新condition+同模双采+H3+动态修复_2108509040342028289.json、视频生成/图生视频/LMS测试+二采新condition+同模双采+语义桥_2100942089772163074.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json、视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json、视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json、视频生成/文生视频/LTX-2.3生成Logo展示视频_2030526628283027457.json、视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LoadImage`
+- `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `H3SigmaRefiner` —— 5/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
-- `MiniMaxH3SigmaShift` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `CreateVideo` —— 4/6 个有
-- `SaveVideo` —— 4/6 个有
-- `SolAttnMiniMax` —— 4/6 个有
-- `VHS_VideoCombine` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `MiniMaxH3TurboLoRA` —— 3/6 个有
-- `MiniMaxLowVRAMAttention` —— 3/6 个有
-- `Seed (rgthree)` —— 3/6 个有
-- `ShellAgentPluginVideoCombineEncrypt` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `ConcatTextOfUtils` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `MiniMaxChunkFeedForward` —— 2/6 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 2/6 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 2/6 个有
-- `Astra` —— 1/6 个有
-- `ExtendIntermediateSigmas` —— 1/6 个有
-- `GetImageSize` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 1/6 个有
-- `MiniMaxH3VAEDecodeFast` —— 1/6 个有
-- `easy int` —— 1/6 个有
+- `CheckpointLoaderSimple` —— 7/8 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `LTXVAudioVAELoader` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ResizeImageMaskNode` —— 7/8 个有
+- `VAEDecodeTiled` —— 7/8 个有
+- `LoadImage` —— 5/8 个有
+- `PreviewAny` —— 4/8 个有
+- `EmptyImage` —— 3/8 个有
+- `Label (rgthree)` —— 3/8 个有
+- `CR Text` —— 2/8 个有
+- `CR Text Replace` —— 2/8 个有
+- `ComfySwitchNode` —— 2/8 个有
+- `LoraLoader` —— 2/8 个有
+- `TextGenerateLTX2Prompt` —— 2/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `LTX2_NAG` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 1/8 个有
+- `StringReplace` —— 1/8 个有
+- `UNETLoader` —— 1/8 个有
+- `VAEDecode` —— 1/8 个有
+- `VAELoader` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
+- `string_util_StrConcat` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 8 | 100% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -86,4 +92,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

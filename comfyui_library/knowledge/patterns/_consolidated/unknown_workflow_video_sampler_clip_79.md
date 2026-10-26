@@ -3,64 +3,74 @@ name: unknown_workflow_video_sampler_clip_79
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.79275
-common_nodes: [ImageResize+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+coverage: 0.967125
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json, 视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json, 视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json, 视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json, 视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json, 视频生成/文生视频/CG迷-WAN fun首尾帧视频动画工作流_1927317975609806849.json, 视频生成/文生视频/CG迷-Wan视频升级版720P精度首尾帧FLF2V_1927010943581192194.json, 视频生成/文生视频/首尾帧图像稳定全自动稳定输出视频丨自动生成_1946379105648697346.json]
+members: [视频生成/图生视频/WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_1953283354574712834.json, 视频生成/图生视频/Wan2.2 整合模型超快图生视频_1950706525243396097.json, 视频生成/图生视频/Wan_FusionX_i2v_Native-Y-Workflow_1934825065211207682.json, 视频生成/图生视频/comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json, 视频生成/图生视频/wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json, 视频生成/图生视频/wan2.1_lora_官方工作流_gguf版_480P_1930311373908250626.json, 视频生成/图生视频/wan2.1挤压效果_1898936758191771650.json, 视频生成/图生视频/喝西北风_1911197940504035330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_79
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json、视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json、视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json、视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json、视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_1953283354574712834.json、视频生成/图生视频/Wan2.2 整合模型超快图生视频_1950706525243396097.json、视频生成/图生视频/Wan_FusionX_i2v_Native-Y-Workflow_1934825065211207682.json、视频生成/图生视频/comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json、视频生成/图生视频/wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `ImageResize+`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SetNode` —— 7/8 个有
-- `WanVideoSLG` —— 7/8 个有
-- `WanVideoBlockSwap` —— 6/8 个有
-- `AddLabel` —— 5/8 个有
-- `EmptyImage` —— 5/8 个有
-- `GetImageSizeAndCount` —— 5/8 个有
-- `GetNode` —— 5/8 个有
-- `ImageConcatMulti` —— 5/8 个有
-- `WanVideoExperimentalArgs` —— 5/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `Anything Everywhere` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `RIFE VFI` —— 2/8 个有
-- `WanVideoVRAMManagement` —— 2/8 个有
+- `ModelSamplingSD3` —— 7/8 个有
+- `CLIPVisionEncode` —— 6/8 个有
+- `CLIPVisionLoader` —— 6/8 个有
+- `UNETLoader` —— 5/8 个有
+- `UnetLoaderGGUF` —— 4/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `EmptyHunyuanLatentVideo` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `LoraLoader` —— 2/8 个有
+- `SaveAnimatedWEBP` —— 2/8 个有
+- `WanVideoTeaCacheKJ` —— 2/8 个有
+- `ApplySageAttention` —— 1/8 个有
+- `TeaCache` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 15 | 4 - 30 | 8 | 42% |
+| Prompt 约束强度(CFG) | 5.985 | 1 - 6 | 8 | 41% |
+| 采样算法 | uni_pc | - | 8 | 75% |
+| 调度器 | simple | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| LoRA 模型强度 | 0.65 | - | 2 | 46% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 15，观测区间 4 - 30，8 个样本，取值分散，一致性仅 42%
+- Prompt 约束强度(CFG) 中位数 5.985，观测区间 1 - 6，8 个样本，取值分散，一致性仅 41%
+- 采样算法 最常用 uni_pc，8 个样本，一致性 75%
+- 调度器 最常用 simple，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

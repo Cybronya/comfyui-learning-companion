@@ -3,54 +3,69 @@ name: unknown_workflow_video_sampler_vae_143
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.75475
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, SetNode, VHS_VideoCombine]
+coverage: 0.6535
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImpactFloat, MathExpression|pysssss, PrimitiveFloat, SetNode, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json, 视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json, 视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json, 视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json]
+members: [视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json, 视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-smoothMix-KJ_1983039998909906946.json, 视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-KJ_1982718916021624834.json, 视频生成/文生视频/视频-文生视频自动扩写-wan2.2-KJ_1972719438250332161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_143
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json、视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json、视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json、视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json、视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-smoothMix-KJ_1983039998909906946.json、视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-KJ_1982718916021624834.json、视频生成/文生视频/视频-文生视频自动扩写-wan2.2-KJ_1972719438250332161.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
+- `CreateCFGScheduleFloatList`
 - `GetImageSizeAndCount`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoGetClosestBucketSize`
-- `HyVideoI2VEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageScale`
-- `LoadImage`
+- `GetNode`
+- `INTConstant`
+- `ImpactFloat`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
 - `SetNode`
+- `StringFunction|pysssss`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy imageSize`
+- `easy int`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/4 个有
-- `ImageConcatMulti` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `JanusImageUnderstanding` —— 1/4 个有
-- `JanusModelLoader` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `ImageLoader` —— 2/4 个有
+- `ImageResizeKJ` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `MemoryCleaner` —— 2/4 个有
+- `MultiplePathsInput` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Qwen3_VQA` —— 2/4 个有
+- `QwenLoader` —— 2/4 个有
+- `WanVideoEmptyEmbeds` —— 2/4 个有
+- `WanVideoImageToVideoEncode` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `WanVideoPromptExtender` —— 2/4 个有
+- `WanVideoSetLoRAs` —— 1/4 个有
 
 ## 典型参数
 

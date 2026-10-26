@@ -1,86 +1,79 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_23
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.957385
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy imageSize, easy int, easy mathInt]
+frequency: 12
+level: moderate
+coverage: 0.924
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderBypassModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LatentUpscaleBy32T8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3 Singularity-图生视频_2054550521217855489.json, 视频生成/图生视频/LTX-2.3 Singularity-图生视频_2054554418292502529.json, 视频生成/图生视频/LTX-2.3 Singularity-图生视频、首尾帧_2063043864067399681.json, 视频生成/图生视频/LTX-2.3 Singularity图生视频（自动提词示优化版）_2063157785164083202.json, 视频生成/图生视频/LTX-2.3 Singularity正式优化版（图生视频、首尾帧）_2062774620129939457.json, 视频生成/图生视频/LTX-2.3 Singularity正式版（图生视频、_2062869219989086209.json, 视频生成/图生视频/LTX-2.3 Singularity正式版（图生视频、首尾帧）_2062051326342815746.json, 视频生成/图生视频/LTX-2.3 Singularity首尾帧生视频（自动提词示优化版）V2_2063144368743206913.json, 视频生成/图生视频/LTX-2.3 Singularity（图生视频、首尾帧）_2053064469290463233.json, 视频生成/图生视频/LTX-2.3 Singularity（图生视频、首尾帧）_2063911577220378625.json, 视频生成/图生视频/LTX-2.3 Singularity（图生视频、首尾帧）_2063914876237602818.json, 视频生成/图生视频/图生视频+LTX-2.3+Singularity图生视频 数字人说话唱歌对口型 优化升级 （自动提词_2063429400057704450.json, 视频生成/文生视频/LTX-2.3 Singularity正式优化版（图生视频、首尾帧）优化版_2070498825197940737.json]
+members: [数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092206996211724289.json, 数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092231431488622593.json, 数字人/数字人/（0901）Minimax参考生视频V3_2094657495255048194.json, 视频生成/图生视频/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092676059840991233.json, 视频生成/图生视频/Minimax参考生视频V3_2091389333650628610.json, 视频生成/图生视频/Minimax参考生视频V3_2091443515422236674.json, 视频生成/图生视频/（0824）Minimax参考生视频V3_2091726026987626498.json, 视频生成/图生视频/（0828）Minimax参考生视频V3_2093315459616694273.json, 视频生成/图生视频/（0830）Minimax参考生视频V3_2094357571929989121.json, 视频生成/图生视频/（0913）Minimax参考生视频V3_2099142712363667458.json, 视频生成/文生视频/10.09新工作流_2108550820999553026.json, 视频生成/文生视频/（0930）Minimax参考生视频V3_2105122969159815169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_23
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 Singularity-图生视频_2054550521217855489.json、视频生成/图生视频/LTX-2.3 Singularity-图生视频_2054554418292502529.json、视频生成/图生视频/LTX-2.3 Singularity-图生视频、首尾帧_2063043864067399681.json、视频生成/图生视频/LTX-2.3 Singularity图生视频（自动提词示优化版）_2063157785164083202.json、视频生成/图生视频/LTX-2.3 Singularity正式优化版（图生视频、首尾帧）_2062774620129939457.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092206996211724289.json、数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092231431488622593.json、数字人/数字人/（0901）Minimax参考生视频V3_2094657495255048194.json、视频生成/图生视频/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092676059840991233.json、视频生成/图生视频/Minimax参考生视频V3_2091389333650628610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `ImageScaleBy`
+全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `ManualSigmas`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LatentUpscaleBy32T8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PreviewAny`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `SaveVideo`
+- `SolAttnMiniMax`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy imageSize`
-- `easy int`
-- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 12/13 个有
-- `CR Text` —— 10/13 个有
-- `Fast Groups Muter (rgthree)` —— 10/13 个有
-- `LTXVImgToVideoInplaceKJ` —— 10/13 个有
-- `RH_LLMAPI_Pro_Node` —— 10/13 个有
-- `Dapao_LlamaChat` —— 9/13 个有
-- `easy showAnything` —— 7/13 个有
-- `CR Prompt Text` —— 5/13 个有
-- `llama_cpp_instruct_adv` —— 3/13 个有
-- `llama_cpp_model_loader` —— 3/13 个有
-- `llama_cpp_parameters` —— 3/13 个有
-- `FlashVSRNode` —— 1/13 个有
-- `LoraLoaderBlockWeight //Inspire` —— 1/13 个有
-- `easy clearCacheAll` —— 1/13 个有
+- `Any To String (mtb)` —— 11/12 个有
+- `JoinStringMulti` —— 11/12 个有
+- `LoadAudio` —— 11/12 个有
+- `StringConcatenate` —— 11/12 个有
+- `BatchImagesNode` —— 10/12 个有
+- `llama_cpp_instruct_adv` —— 10/12 个有
+- `llama_cpp_model_loader` —— 10/12 个有
+- `llama_cpp_parameters` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `MiniMaxH3HybridLoader` —— 8/12 个有
+- `ModelPreviewOverrideKJ` —— 8/12 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/12 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/12 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/12 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/12 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/12 个有
+- `JjkText` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 361 | 361 - 361 | 13 | 100% |
-| 高度 | 24 | 24 - 24 | 13 | 100% |
-| LoRA 模型强度 | LTX 2.3 - Pixar CGI Toon Style().safetensors | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -88,5 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 361 - 361，13 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，13 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

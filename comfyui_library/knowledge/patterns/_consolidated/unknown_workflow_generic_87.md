@@ -3,44 +3,38 @@ name: unknown_workflow_generic_87
 type: Unknown Workflow
 frequency: 16
 level: moderate
-coverage: 0.56425
-common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, easy showAnything]
+coverage: 1
+common_nodes: [JWStringConcat, LoadImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json, 视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频全球最低主页不断更新案例_1987413449342914561.json, 视频生成/图生视频/eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无水印8秒带货视频免会员无rh水印_2019985817179000833.json, 视频生成/图生视频/s0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印独家分享10-15秒_2013820039870287873.json, 视频生成/图生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json, 视频生成/图生视频/ve03谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法ve3.1_2016363121190899713.json, 视频生成/图生视频/仅4毛钱谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2000191170644934657.json, 视频生成/图生视频/全能视频S图生视频ai漫剧ai短剧全能视频S分镜漫画视频无水印高清免会员去rh水印独家分享_2004436071788277762.json, 视频生成/图生视频/全能视频S图生视频全能视频S分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家分享_1995142612589928449.json, 视频生成/图生视频/全能视频S图生视频全能视频S电商短视频带货无水印高清主页不断更新案例免会员去rh水印独家分享_1993194159827779586.json, 视频生成/图生视频/全能视频S高清无水印5分钱一次请求电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990473001458176001.json, 视频生成/图生视频/全能视频S高清无水印deepseek分镜提示词电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990478640083329026.json, 视频生成/图生视频/全能视频S高清无水印deepseek分镜提示词电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1994986824512811010.json, 视频生成/图生视频/谷歌3.1单图多图生视频文生视频带货视频短剧视频_2058489344364732417.json, 视频生成/文生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json, 视频生成/文生视频/全能视频Ss0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印10-15秒_2036314099788816386.json]
+members: [图片生成/图生图/N等于2专用版-中转站-零件类型计数修正版_2097600951505997826.json, 图片生成/图生图/QK-主图-自建Image2.5_2114647170975625218.json, 图片生成/图生图/QK-卖点图-自建Image2.5_2114647124922167298.json, 图片生成/图生图/QK-多场景图-自建Image2.5_2114646907267149825.json, 图片生成/图生图/QK-尺寸图-自建Image2.5_2114647146682208257.json, 图片生成/图生图/QK-步骤图-自建Image2.5_2114646876975886338.json, 图片生成/图生图/QK-特点图-自建Image2.5_2114646609584803842.json, 图片生成/图生图/QK精修工作流_2110543022021758977.json, 图片生成/图生图/qk主图_2074675719229231105.json, 图片生成/图生图/runninghub_组合装提示词-N大于2专用版-中转站-零件类型计数修正版_2097559055115046913.json, 图片生成/图生图/runninghub_组合装提示词-N大于2专用版_2097230126437195778.json, 图片生成/图生图/runninghub_组合装提示词-RunningHub转换版_2097172018063036417.json, 图片生成/图生图/套图_prompt-v1.0-RunningHub转换版_2095343110200053762.json, 图片生成/图生图/最新单品_deepseek_2099745074035908609.json, 图片生成/图生图/最新单品_单品4图中转站视觉颜色修正版_2097583595878699009.json, 图片生成/图生图/错误修改_2095700041741717506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_87
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json、视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频全球最低主页不断更新案例_1987413449342914561.json、视频生成/图生视频/eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无水印8秒带货视频免会员无rh水印_2019985817179000833.json、视频生成/图生视频/s0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印独家分享10-15秒_2013820039870287873.json、视频生成/图生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/N等于2专用版-中转站-零件类型计数修正版_2097600951505997826.json、图片生成/图生图/QK-主图-自建Image2.5_2114647170975625218.json、图片生成/图生图/QK-卖点图-自建Image2.5_2114647124922167298.json、图片生成/图生图/QK-多场景图-自建Image2.5_2114646907267149825.json、图片生成/图生图/QK-尺寸图-自建Image2.5_2114647146682208257.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
-- `DownloadVideo`
+- `JWStringConcat`
 - `LoadImage`
-- `LoadVideoFromUrl_RH`
-- `PreviewAny`
-- `PrimitiveString`
-- `SaveVideo`
-- `UploadToImageHost`
-- `easy showAnything`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `SoraCreateVideo` —— 12/16 个有
-- `SoraQueryTask` —— 12/16 个有
-- `Text Multiline` —— 12/16 个有
-- `VeoImage2Video` —— 4/16 个有
-- `VeoQueryTask` —— 4/16 个有
-- `SoraPromptFromProduct` —— 2/16 个有
-- `String to Text` —— 2/16 个有
-- `MultiLinePromptIndex` —— 1/16 个有
+- `SaveImage` —— 14/16 个有
+- `JjkShowText` —— 11/16 个有
+- `RH_LLMAPI_NODE` —— 11/16 个有
+- `SaveText` —— 8/16 个有
+- `PixelAPIImage2Node` —— 6/16 个有
+- `RH_RhartImageG25FlareImageToImage` —— 3/16 个有
+- `VRGDG_LocalLLM` —— 1/16 个有
 
 ## 典型参数
 

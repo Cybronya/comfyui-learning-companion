@@ -1,70 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_429
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9192
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.492
+common_nodes: [Float, GetNode, If ANY execute A else B, ImageResizeKJv2, ImpactSwitch, JWStringSplit, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PrimitiveBoolean, PrimitiveString, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy convertAnything, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json, 视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json, 视频生成/图生视频/infinitetalk双人对话唱歌【支持长时间语音】_1965302801381380098.json, 视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json, 视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json]
+members: [视频生成/图生视频/参考生成视频-三图_1950878198265487362.json, 视频生成/图生视频/参考生成视频-三图_1967512579738361857.json, 视频生成/图生视频/参考生成视频-单图_1950857772990660610.json, 视频生成/图生视频/参考生成视频-单图_1967526201378136065.json, 视频生成/图生视频/参考生成视频-双图_1950866948588503042.json, 视频生成/图生视频/参考生成视频-双图_1967525929503297538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_429
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json、视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json、视频生成/图生视频/infinitetalk双人对话唱歌【支持长时间语音】_1965302801381380098.json、视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json、视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/参考生成视频-三图_1950878198265487362.json、视频生成/图生视频/参考生成视频-三图_1967512579738361857.json、视频生成/图生视频/参考生成视频-单图_1950857772990660610.json、视频生成/图生视频/参考生成视频-单图_1967526201378136065.json、视频生成/图生视频/参考生成视频-双图_1950866948588503042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+全部 6 个 workflow 都包含：
+- `Float`
+- `GetNode`
+- `If ANY execute A else B`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `JWStringSplit`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `PrimitiveBoolean`
+- `PrimitiveString`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy convertAnything`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `CR Text` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `WanVideoImageToVideoMultiTalk` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 4/5 个有
-- `ImageResizeKJv2` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `PreviewAudio` —— 3/5 个有
-- `Audio Duration (mtb)` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `easy cleanGpuUsed` —— 2/5 个有
-- `ImageSmartSharpen+` —— 1/5 个有
-- `InversionDemoLazyIndexSwitch` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `MaskPreview+` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SeparateMasks` —— 1/5 个有
-- `WanVideoImageToVideoEncode` —— 1/5 个有
-- `easy anythingIndexSwitch` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
+- `ImageBatchMultiple+` —— 4/6 个有
+- `ImageConcatFromBatch` —— 4/6 个有
+- `MathExpression|pysssss` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `PrimitiveInt` —— 4/6 个有
 
 ## 典型参数
 

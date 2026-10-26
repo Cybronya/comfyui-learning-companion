@@ -3,33 +3,36 @@ name: unknown_workflow_generic_691
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.875
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.70475
+common_nodes: [CR Prompt Text, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json, 图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json, 图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json, 图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json]
+members: [图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json, 图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json, 图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json, 图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_691
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json、图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json、图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json、图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json、图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json、图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json、图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
 - `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_LumaUni1MaxImageEdit` —— 1/4 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/4 个有
+- `Comfly_suno_lyrics` —— 1/4 个有
+- `RH_Captioner_Pro` —— 1/4 个有
 
 ## 典型参数
 

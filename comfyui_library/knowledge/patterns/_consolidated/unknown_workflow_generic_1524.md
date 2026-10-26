@@ -3,33 +3,47 @@ name: unknown_workflow_generic_1524
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioAdvanced]
+coverage: 0.666
+common_nodes: [Bjornulf_ShowInt, GetNode, LoadImage, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, Text, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3音色生成_2090373649973997570.json, 音频生成/音频生成/声音设计专用流_2016157124283342849.json]
+members: [图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json, 图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1524
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Qwen3音色生成_2090373649973997570.json、音频生成/音频生成/声音设计专用流_2016157124283342849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json、图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudioAdvanced`
+- `Bjornulf_ShowInt`
+- `GetNode`
+- `LoadImage`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `SaveImage`
+- `SetNode`
+- `Text`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `TextInput` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage_Batch` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
 
 ## 典型参数
 

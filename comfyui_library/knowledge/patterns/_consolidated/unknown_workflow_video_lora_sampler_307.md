@@ -1,69 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_307
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.856571
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.496625
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minmax H3-VDN +SelfLift 采样直出1080P_2098822938639290370.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2109663330502795265.json, 视频生成/文生视频/MiniMax H3 双采样全面升级版｜文戏不油｜武戏不糊_2099322604426457090.json, 视频生成/文生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098012326409621505.json, 视频生成/文生视频/文戏-提示词练习_2098925401614671874.json, 视频生成/文生视频/极简双采_2102955651466096641.json]
+members: [视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json, 视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json, 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json, 视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json, 视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json, 视频生成/图生视频/🐱OneToAll视频姿势参考（骨骼驱动）-言灵ru😼_2000904519246639105.json, 视频生成/文生视频/One-to-All Animation角色动画与图像姿态迁移延长流_1999029619397382145.json, 视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_307
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Minmax H3-VDN +SelfLift 采样直出1080P_2098822938639290370.json、视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json、视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2109663330502795265.json、视频生成/文生视频/MiniMax H3 双采样全面升级版｜文戏不油｜武戏不糊_2099322604426457090.json、视频生成/文生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098012326409621505.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json、视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json、视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json、视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json、视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxLowVRAMAttention`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
-- `SelfLiftH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 8 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetLatentSizeAndCount` —— 6/7 个有
-- `ModelAttentionBackend` —— 6/7 个有
-- `LoadAudio` —— 5/7 个有
-- `LoadImage` —— 5/7 个有
-- `VHS_LoadVideo` —— 5/7 个有
-- `CreateVideo` —— 1/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
-- `easy imageChooser` —— 1/7 个有
-- `easy promptConcat` —— 1/7 个有
-- `kkVideoFirstLastFrames` —— 1/7 个有
+- `FloatConstant` —— 7/8 个有
+- `WanVideoScheduler` —— 7/8 个有
+- `MathExpression|pysssss` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `easy forLoopEnd` —— 3/8 个有
+- `easy forLoopStart` —— 3/8 个有
+- `MaskPreview+` —— 2/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
+- `GIMMVFI_interpolate` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 

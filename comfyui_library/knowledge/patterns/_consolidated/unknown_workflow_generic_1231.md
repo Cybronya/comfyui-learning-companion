@@ -3,47 +3,34 @@ name: unknown_workflow_generic_1231
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.71
-common_nodes: [Any To String (mtb), CR String To Combo, Fast Groups Bypasser (rgthree), ImageLoader, MultiTextConcatenate, PDRatioSelector, PreviewAny, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RTXVideoSuperResolution, SaveImage, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat]
+coverage: 0.845
+common_nodes: [FishAudioInstantVoiceClone, FishAudioTextToSpeech, FishAudioVoiceSelector, LoadAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程_2059838391201652738.json, 图片生成/图生图/全能图片G2-GP-T2.0一键生成专业影视分镜与关键帧全流程提示词_2064283735096385538.json]
+members: [comfyui-workflow-templates-json/api_fishaudio_text_to_speech.json, comfyui-workflow-templates-json/api_fishaudio_voice_clone_tts.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1231
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程_2059838391201652738.json、图片生成/图生图/全能图片G2-GP-T2.0一键生成专业影视分镜与关键帧全流程提示词_2064283735096385538.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_fishaudio_text_to_speech.json、comfyui-workflow-templates-json/api_fishaudio_voice_clone_tts.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `CR String To Combo`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageLoader`
-- `MultiTextConcatenate`
-- `PDRatioSelector`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RTXVideoSuperResolution`
-- `SaveImage`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `ttN concat`
+- `FishAudioInstantVoiceClone`
+- `FishAudioTextToSpeech`
+- `FishAudioVoiceSelector`
+- `LoadAudio`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `RecordAudio` —— 1/2 个有
 
 ## 典型参数
 

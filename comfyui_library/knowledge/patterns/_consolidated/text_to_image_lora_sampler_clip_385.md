@@ -3,65 +3,57 @@ name: text_to_image_lora_sampler_clip_385
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8626
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.89
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Minimax-H3加速一站式-文生视频图生视频工作流_2087399914660777986.json, 视频生成/文生视频/MinimaxH3完美优化版 生视频质量与速度双优_2104296777661902850.json, 视频生成/文生视频/minimaxlora）ENG加速一站式工作流（文生视频图生视频首尾帧全能参考加速ENG_2087115789043331074.json, 视频生成/文生视频/加速lora一站式｜minimax文生图生视频首尾帧全能参考_2092878945308991490.json, 视频生成/文生视频/即梦写法MiniMax_H3_全能参考文生视频视频生视频图生视频_2086539152329371650.json]
+members: [图片生成/图生图/Qwen image 2.1双图编辑 两张参考图图生图处理工具_2113021920923971585.json, 图片生成/图生图/Qwen image 2.1图片编辑二号版｜图生图精细修改随心改_2112816409389649921.json, 图片生成/图生图/Qwen image2.1单图编辑｜图片换背景轻松搞定｜模特产品展示利器_2102227263780642818.json, 图片生成/图生图/Qwen image2.1多图编辑实用版｜多张图片统一处理｜其它图片处理通吃_2102216509333528578.json, 图片生成/图生图/Qwen_image2.1单图编辑｜图片换背景轻松搞定｜模特产品展示利器_2104449836132159489.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_385
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Minimax-H3加速一站式-文生视频图生视频工作流_2087399914660777986.json、视频生成/文生视频/MinimaxH3完美优化版 生视频质量与速度双优_2104296777661902850.json、视频生成/文生视频/minimaxlora）ENG加速一站式工作流（文生视频图生视频首尾帧全能参考加速ENG_2087115789043331074.json、视频生成/文生视频/加速lora一站式｜minimax文生图生视频首尾帧全能参考_2092878945308991490.json、视频生成/文生视频/即梦写法MiniMax_H3_全能参考文生视频视频生视频图生视频_2086539152329371650.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1双图编辑 两张参考图图生图处理工具_2113021920923971585.json、图片生成/图生图/Qwen image 2.1图片编辑二号版｜图生图精细修改随心改_2112816409389649921.json、图片生成/图生图/Qwen image2.1单图编辑｜图片换背景轻松搞定｜模特产品展示利器_2102227263780642818.json、图片生成/图生图/Qwen image2.1多图编辑实用版｜多张图片统一处理｜其它图片处理通吃_2102216509333528578.json、图片生成/图生图/Qwen_image2.1单图编辑｜图片换背景轻松搞定｜模特产品展示利器_2104449836132159489.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `PathchSageAttentionKJ` —— 4/5 个有
-- `SaveVideo` —— 4/5 个有
-- `LoadImage` —— 3/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 3/5 个有
-- `BasicScheduler` —— 2/5 个有
-- `KSamplerSelect` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `SpectrumSDXL` —— 2/5 个有
-- `AudioAdjustVolume` —— 1/5 个有
-- `EasyCache` —— 1/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `SpectrumApplyMiniMaxH3` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `孤海注释` —— 4/5 个有
+- `ComfySwitchNode` —— 3/5 个有
+- `RHLLMChatNode` —— 3/5 个有
+- `ResolutionSelector` —— 3/5 个有
+- `Any Switch (rgthree)` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `QwenPERewriteT8` —— 2/5 个有
+- `ResizeLongestToNode` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `PrimitiveString` —— 1/5 个有
+- `StringToInt` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 

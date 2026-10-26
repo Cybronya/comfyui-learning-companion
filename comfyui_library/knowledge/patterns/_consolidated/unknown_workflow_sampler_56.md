@@ -3,34 +3,37 @@ name: unknown_workflow_sampler_56
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.833333
-common_nodes: [SaveAudio, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
+coverage: 1
+common_nodes: [Kimodo_ExportBVH, Kimodo_LoadModel, Kimodo_Preview, Kimodo_Preview3D, Kimodo_Sampler, Kimodo_SaveNPZ, Kimodo_TextEncode, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI歌曲生成_1950367419039662082.json, 音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json, 音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json]
+members: [图片生成/文生图/kimodo-basic_2067452656217579521.json, 数字人/数字人/kimodo-basic动作生成BVH_2068960959871406081.json, 视频生成/文生视频/kimodo-basic_2065975919554162690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_56
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI歌曲生成_1950367419039662082.json、音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json、音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/kimodo-basic_2067452656217579521.json、数字人/数字人/kimodo-basic动作生成BVH_2068960959871406081.json、视频生成/文生视频/kimodo-basic_2065975919554162690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `SaveAudio`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
+- `Kimodo_ExportBVH`
+- `Kimodo_LoadModel`
+- `Kimodo_Preview`
+- `Kimodo_Preview3D`
+- `Kimodo_Sampler`
+- `Kimodo_SaveNPZ`
+- `Kimodo_TextEncode`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 

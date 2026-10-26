@@ -2,67 +2,68 @@
 name: unknown_workflow_sampler_clip_unet_305
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.63
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImpactSwitch, JjkText, KSampler, LimitNumber, LoadImage, PrimitiveInt, RH_LLMAPI_NODE, SaveImage, TextCombinerSix, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, easy seed, easy showAnything]
+level: strong
+coverage: 0.9525
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, Flux2Scheduler, ImageConcanate, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json, 图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json, 图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json, 图片生成/文生图/wan2.2+qwen edit Plus --视频封面制作_1970937254313107458.json]
+members: [图片生成/图生图/换脸Flux2Klein全能编辑20版人物一致自然真实多图编辑加速版_2058558786536828930.json, 图片生成/图生图/换脸Flux2Klein全能编辑20版人物一致自然真实多图编辑加速版_2075718981842980866.json, 图片生成/图生图/换脸Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2012770534232170497.json, 图片生成/图生图/换脸_2052716812382547970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_305
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json、图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json、图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json、图片生成/文生图/wan2.2+qwen edit Plus --视频封面制作_1970937254313107458.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/换脸Flux2Klein全能编辑20版人物一致自然真实多图编辑加速版_2058558786536828930.json、图片生成/图生图/换脸Flux2Klein全能编辑20版人物一致自然真实多图编辑加速版_2075718981842980866.json、图片生成/图生图/换脸Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2012770534232170497.json、图片生成/图生图/换脸_2052716812382547970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `ImpactSwitch`
-- `JjkText`
-- `KSampler`
-- `LimitNumber`
+- `CR Text`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextCombinerSix`
-- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `PreviewImage` —— 3/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `JWFloat` —— 2/4 个有
+- `KSamplerAdvanced` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `ModelSamplingAuraFlow` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `RunningHub Deepcleaner` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 40 | 4 | 70% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 4 | 61% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta57 | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 9 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | beta57 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -70,8 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 40，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta57，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 beta57，2 个样本，一致性 100%

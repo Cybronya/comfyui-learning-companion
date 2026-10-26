@@ -1,31 +1,30 @@
 ---
 name: text_to_image_sampler_clip_unet_51
 type: Text To Image
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.831
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.889091
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2基础文生图（提示词扩写）_2070539846480912385.json, 图片生成/文生图/Z-iamge文生图批量版_2009171371842084866.json, 图片生成/文生图/Z-image 多图生成_2021773113834344449.json, 图片生成/文生图/Z-image多图生成（抖音）_2044693320726745089.json, 图片生成/文生图/Z-image批量文生图_2008069205383450626.json, 图片生成/文生图/boogu turbo批量文生图_2070386922110930945.json, 图片生成/文生图/boogu turbo文生图批量版_2070336788392144897.json, 图片生成/文生图/boogu turbo文生图批量版_2070422555663622146.json, 图片生成/文生图/boogu turbo文生图批量版_2070469626550644737.json, 图片生成/文生图/boogu全自动文生图工作流_2071823346756575234.json, 图片生成/文生图/krea2全自动文生图工作流_2071823380147425281.json, 图片生成/文生图/krea2全自动文生图工作流_2095743937389621250.json]
+members: [图片生成/反推提示词/反推提示词forZimage_2025858147600048130.json, 图片生成/反推提示词/图片反推提示词_1992900235936722945.json, 图片生成/图生图/Z-image  美女模特时尚人物穿搭 日常穿搭 电影级美学 网红洗图 批量生成 SeedVR2.5_2030806592970559490.json, 图片生成/文生图/2030634268841480193.json, 图片生成/文生图/Z-image-中老年内衣女模特_1999303495641690114.json, 图片生成/文生图/Z-image-女内裤模特图_1998988604456194049.json, 图片生成/文生图/Z-image-电商保暖模特_1996104929171423233.json, 图片生成/文生图/Z-image-电商内衣模特图_2002330895598120962.json, 图片生成/文生图/Z-image-电商女内裤模特图_1999755593114152961.json, 图片生成/文生图/Z-image-男内裤模特_1998588053952299010.json, 图片生成/文生图/Z-image电商文胸模特_1995676126175485954.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_51
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Krea2基础文生图（提示词扩写）_2070539846480912385.json、图片生成/文生图/Z-iamge文生图批量版_2009171371842084866.json、图片生成/文生图/Z-image 多图生成_2021773113834344449.json、图片生成/文生图/Z-image多图生成（抖音）_2044693320726745089.json、图片生成/文生图/Z-image批量文生图_2008069205383450626.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/反推提示词forZimage_2025858147600048130.json、图片生成/反推提示词/图片反推提示词_1992900235936722945.json、图片生成/图生图/Z-image  美女模特时尚人物穿搭 日常穿搭 电影级美学 网红洗图 批量生成 SeedVR2.5_2030806592970559490.json、图片生成/文生图/2030634268841480193.json、图片生成/文生图/Z-image-中老年内衣女模特_1999303495641690114.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
@@ -35,46 +34,51 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptBatchQueue` —— 8/12 个有
-- `easy showAnything` —— 8/12 个有
-- `HAIGC_SaveImagesToZip` —— 7/12 个有
-- `llama_cpp_instruct_adv` —— 4/12 个有
-- `llama_cpp_model_loader` —— 4/12 个有
-- `llama_cpp_parameters` —— 4/12 个有
-- `Any Switch (rgthree)` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
-- `LoadImage` —— 3/12 个有
-- `RH_LLMAPI_Pro_Node` —— 3/12 个有
-- `ResolutionSelector` —— 3/12 个有
-- `ConditioningKrea2Rebalance` —— 2/12 个有
-- `MuyeTextEditOutput` —— 1/12 个有
-- `TTResolutionSelector` —— 1/12 个有
+- `LoraLoaderModelOnly` —— 10/11 个有
+- `easy cleanGpuUsed` —— 10/11 个有
+- `Image Comparer (rgthree)` —— 9/11 个有
+- `ImpactInt` —— 9/11 个有
+- `SeedVR2LoadDiTModel` —— 9/11 个有
+- `SeedVR2LoadVAEModel` —— 9/11 个有
+- `SeedVR2VideoUpscaler` —— 9/11 个有
+- `String Literal` —— 9/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/11 个有
+- `LoadImage` —— 3/11 个有
+- `Qwen3_VQA` —— 3/11 个有
+- `SeedVR2TorchCompileSettings` —— 3/11 个有
+- `easy showAnything` —— 3/11 个有
+- `ShowText|pysssss` —— 2/11 个有
+- `CR Prompt List` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `WD14Tagger|pysssss` —— 1/11 个有
+- `easy textSwitch` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1664 | 12 | 64% |
-| 高度 | 1504 | 512 - 1536 | 12 | 59% |
-| 采样步数 | 8 | 4 - 10 | 12 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 92% |
-| 调度器 | simple | - | 12 | 92% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 10 | 1 - 10 | 11 | 72% |
+| Prompt 约束强度(CFG) | 1.2 | 0 - 1.5 | 11 | 65% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | beta57 | - | 11 | 73% |
+| 重绘幅度 | 1 | 0 - 1 | 11 | 68% |
+| 宽度 | 720 | 512 - 832 | 11 | 90% |
+| 高度 | 1280 | 512 - 1280 | 11 | 82% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1664，12 个样本
-- 高度 中位数 1504，观测区间 512 - 1536，12 个样本
-- 采样步数 中位数 8，观测区间 4 - 10，12 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 92%
-- 调度器 最常用 simple，12 个样本，一致性 92%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（8/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 1 - 10，11 个样本
+- Prompt 约束强度(CFG) 中位数 1.2，观测区间 0 - 1.5，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 beta57，11 个样本，一致性 73%
+- 重绘幅度 中位数 1，观测区间 0 - 1，11 个样本
+- 宽度 中位数 720，观测区间 512 - 832，11 个样本，取值集中（一致性 90%）
+- 高度 中位数 1280，观测区间 512 - 1280，11 个样本，取值集中（一致性 82%）
+- 风险：Prompt 约束强度(CFG) 观测到 0，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 风险：重绘幅度 观测到 0，低于常用下限 0.1（）

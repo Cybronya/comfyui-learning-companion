@@ -3,34 +3,36 @@ name: unknown_workflow_generic_1303
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
+coverage: 0.6855
+common_nodes: [LoadImage, RH_Captioner, RH_Translator, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/一图生多图_2074870551881015297.json, 图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json]
+members: [图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json, 图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1303
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一图生多图_2074870551881015297.json、图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json、图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `RH_Captioner`
+- `RH_Translator`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 

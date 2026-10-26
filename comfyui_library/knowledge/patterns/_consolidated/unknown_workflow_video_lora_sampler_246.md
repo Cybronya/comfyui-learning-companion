@@ -1,81 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_246
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.551625
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+coverage: 0.952333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ImageBatchExtendWithOverlap, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, VAEDecode, VAELoader, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json, 视频生成/图生视频/Wan2.2 PainterI2V慢动作优化无限长视频生成(QwenVL增强)_1992287754939854849.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json, 视频生成/图生视频/三帧流转视频_1996195758498004994.json, 视频生成/图生视频/人物-场景-道具 多图生视频 Wan2_2_14B_i2v_FFGO_basic_2018679573021462530.json, 视频生成/图生视频/超能视频2.0-丐版Wan22-FFGO（参考生视频）_2030310808810430466.json, 视频生成/文生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_2050153435672129537.json]
+members: [视频生成/图生视频/3.生视频类-6..真人、动漫、跳舞长视频001.长视频-手动-真人&动漫.json_2022090916130988033.json, 视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json, 视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2011456654914621441.json, 视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事（确实很不错）_2043277344625926145.json, 视频生成/图生视频/Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810117122.json, 视频生成/图生视频/【4月】Wan2.2 Dasiwa V10+ SVI2Pro全自动长视频（严格遵循提示词控制）_2042934269093355522.json, 视频生成/图生视频/视频：20s长视频剧情生成_2035685146686394370.json, 视频生成/图生视频/🔥超丝滑长视频生成-分镜时长+内容定制精准叙事_2046827963190087682.json, 视频生成/文生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2047624351276601345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_246
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json、视频生成/图生视频/Wan2.2 PainterI2V慢动作优化无限长视频生成(QwenVL增强)_1992287754939854849.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json、视频生成/图生视频/三帧流转视频_1996195758498004994.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/3.生视频类-6..真人、动漫、跳舞长视频001.长视频-手动-真人&动漫.json_2022090916130988033.json、视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json、视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2011456654914621441.json、视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事（确实很不错）_2043277344625926145.json、视频生成/图生视频/Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810117122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGZeroStar`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `CR Text`
+- `ImageBatchExtendWithOverlap`
+- `JWInteger`
 - `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `RMBG` —— 7/8 个有
-- `TrimVideoLatent` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `RIFE VFI` —— 2/8 个有
-- `AILab_ImageStitch` —— 1/8 个有
-- `AILab_QwenVL` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `ForLoopClose` —— 1/8 个有
-- `ForLoopOpen` —— 1/8 个有
-- `ImageRotate` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `WanImageToVideo` —— 1/8 个有
-- `easy batchAnything` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
-- `easy promptConcat` —— 1/8 个有
-- `llama_cpp_instruct_adv` —— 1/8 个有
-- `llama_cpp_model_loader` —— 1/8 个有
+- `DiffusionModelLoaderKJ` —— 8/9 个有
+- `VAEEncode` —— 8/9 个有
+- `WanImageToVideoSVIPro` —— 8/9 个有
+- `DF_Int_to_Float` —— 6/9 个有
+- `GODMT_ListGetByIndex` —— 6/9 个有
+- `GODMT_SplitString` —— 6/9 个有
+- `MathExpression|pysssss` —— 6/9 个有
+- `StringToInt` —— 6/9 个有
+- `WWAA-LineCount` —— 6/9 个有
+- `Int` —— 3/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `ModelSamplingSD3` —— 1/9 个有
+- `RIFE VFI` —— 1/9 个有
+- `UNETLoader` —— 1/9 个有
+- `WanAdvancedI2V` —— 1/9 个有
+- `easy float` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 88% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 采样步数 | randomize | - | 9 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 9 | 92% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -83,8 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 88%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 采样步数 最常用 randomize，9 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，9 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

@@ -1,75 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_97
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.869133
-common_nodes: [CreateCFGScheduleFloatList, DF_Integer, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+coverage: 0.787188
+common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, ImageFromBatch+, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveInt, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_2044313653356273666.json, 视频生成/图生视频/Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472962.json, 视频生成/图生视频/wan2.2 kj版_1955015931215822850.json, 视频生成/图生视频/wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.json, 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json, 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1955912718601650177.json, 视频生成/图生视频/wan2.2 图生视频 - 加速优化版_1957829417538088962.json, 视频生成/图生视频/wan2.2 图生视频_1953992101455548418.json, 视频生成/图生视频/wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json, 视频生成/图生视频/静态漫画视频生成ez_1995801916682670082.json, 视频生成/文生视频/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_1950600207669088257.json, 视频生成/文生视频/Wan2.2文生视频+KJ加速版+提示词自动优化_2055539394576166914.json, 视频生成/文生视频/Wan2.2文生视频+KJ加速版+提示词自动优化_2056240799226093570.json, 视频生成/文生视频/wan2.2 图生视频 -  超级加速晋级版_1967469611824373761.json, 视频生成/文生视频/wan2.2文生视频，加速版（自动润色提示词）_2006301824508239873.json]
+members: [数字人/数字人/1.1_infinitetalk视频双人对口型（效果最好）_1994720356055326722.json, 数字人/数字人/1.2_InfiniteTalk视频+音频对口型（效果最好）_1994683257532915714.json, 数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json, 数字人/数字人/InfiniteTalk数字人视频生视频2_1978763649466699777.json, 数字人/数字人/InfiniteTalk数字人视频生视频_1958502190061142018.json, 数字人/数字人/InfiniteTalk数字人视频生视频_1982814946415259649.json, 数字人/数字人/InfiniteTalk数字人视频生视频_2001131954474975234.json, 数字人/数字人/infinitetalk图像对口型_1971910981158891521.json, 数字人/数字人/infinitetalk视频双人对口型_1980526429727313921.json, 数字人/数字人/infinitetalk视频对口型（hua）_1998027187120955394.json, 数字人/数字人/infinitetalk视频对口型（hua）_2006207828683395074.json, 数字人/数字人/wan2.1视频对口型（支持超长30秒）_2061334128561315841.json, 数字人/数字人/【808】视频角色对口型_2038885608399048706.json, 数字人/数字人/视频对口型（指定角色）_2036439627673899009.json, 数字人/数字人/视频对口型（指定角色）_2037210359945240577.json, 音频生成/音频生成/视频对口型（指定角色）_2012598659203997698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_97
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_2044313653356273666.json、视频生成/图生视频/Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472962.json、视频生成/图生视频/wan2.2 kj版_1955015931215822850.json、视频生成/图生视频/wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.json、视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/1.1_infinitetalk视频双人对口型（效果最好）_1994720356055326722.json、数字人/数字人/1.2_InfiniteTalk视频+音频对口型（效果最好）_1994683257532915714.json、数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json、数字人/数字人/InfiniteTalk数字人视频生视频2_1978763649466699777.json、数字人/数字人/InfiniteTalk数字人视频生视频_1958502190061142018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `DF_Integer`
-- `INTConstant`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_Translator`
+全部 16 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveInt`
 - `SimpleMath+`
-- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 14/15 个有
-- `PrimitiveBoolean` —— 14/15 个有
-- `ShowText|pysssss` —— 14/15 个有
-- `easy ifElse` —— 14/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/15 个有
-- `LoadImage` —— 8/15 个有
-- `WanVideoImageToVideoEncode` —— 8/15 个有
-- `CR Text` —— 7/15 个有
-- `CR Text Concatenate` —— 7/15 个有
-- `RH_Captioner` —— 7/15 个有
-- `RH_LLMAPI_NODE` —— 7/15 个有
-- `RH_Prompter` —— 7/15 个有
-- `WanVideoEmptyEmbeds` —— 7/15 个有
-- `string_util_StrReplace` —— 7/15 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/15 个有
-- `GIMMVFI_interpolate` —— 2/15 个有
-- `Display Int (rgthree)` —— 1/15 个有
-- `PreviewImage` —— 1/15 个有
-- `RIFE VFI` —— 1/15 个有
-- `easy batchAnything` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
-- `easy forLoopEnd` —— 1/15 个有
-- `easy forLoopStart` —— 1/15 个有
-- `easy imageIndexSwitch` —— 1/15 个有
+- `VHS_LoadVideo` —— 15/16 个有
+- `WanVideoEncode` —— 15/16 个有
+- `AudioCrop` —— 14/16 个有
+- `ImageResizeKJv2` —— 14/16 个有
+- `CR Text` —— 10/16 个有
+- `easy showAnything` —— 10/16 个有
+- `WanVideoTorchCompileSettings` —— 9/16 个有
+- `easy cleanGpuUsed` —— 8/16 个有
+- `GetNode` —— 6/16 个有
+- `JjkText` —— 6/16 个有
+- `LayerUtility: PurgeVRAM` —— 6/16 个有
+- `PreviewAny` —— 6/16 个有
+- `PrimitiveString` —— 6/16 个有
+- `SetNode` —— 6/16 个有
+- `PreviewImage` —— 5/16 个有
+- `AILab_MaskPreview` —— 4/16 个有
+- `ImageFromBatch` —— 4/16 个有
+- `MaskListToMaskBatch` —— 4/16 个有
+- `PreviewAudio` —— 4/16 个有
+- `RH_Translator` —— 4/16 个有
+- `Text` —— 4/16 个有
+- `VHS_VideoInfo` —— 4/16 个有
+- `easy sam3ModelLoader` —— 4/16 个有
+- `easy sam3VideoSegmentation` —— 4/16 个有
+- `LoadImage` —— 3/16 个有
+- `ImageResize+` —— 2/16 个有
+- `SaveImage` —— 2/16 个有
+- `VHS_VideoInfoLoaded` —— 2/16 个有
+- `FloatConstant` —— 1/16 个有
+- `PrimitiveFloat` —— 1/16 个有
 
 ## 典型参数
 

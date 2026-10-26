@@ -3,69 +3,64 @@ name: unknown_workflow_video_lora_sampler_864
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5425
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ColorMatch, GetNode, ImageFromBatch, ImageResizeKJv2, Int, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAI2V, PainterAudioCut, PreviewAudio, SetNode, SimpleMath+, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy promptLine]
+coverage: 0.678
+common_nodes: [BasicScheduler, CLIPLoader, GetNode, JjkText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/【推荐，图片对口型】单图+音频+提示词驱动数字人_2018019225536831490.json, 视频生成/图生视频/图片转数字人_2045963626250506242.json]
+members: [视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json, 视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_864
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【推荐，图片对口型】单图+音频+提示词驱动数字人_2018019225536831490.json、视频生成/图生视频/图片转数字人_2045963626250506242.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json、视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ColorMatch`
 - `GetNode`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `Int`
-- `KSamplerAdvanced`
-- `LoadAudio`
+- `JjkText`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PreviewAudio`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
-- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `CFGGuider` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `H3SigmaRefiner` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `QwenH3PromptLocal` —— 1/2 个有
+- `T8LLMProviderConfig` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,38 +3,47 @@ name: unknown_workflow_generic_342
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.740143
-common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.637571
+common_nodes: [CR Text Replace, ComfyMathExpression, JoinStrings, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json, 图片生成/图生图/个人号洗4.0_2055233377527189506.json, 图片生成/图生图/个人号洗_2052376260571090945.json, 图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json, 图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json, 图片生成/图生图/简单的动作更改，不改变原图风格_1978322603704246273.json, 图片生成/文生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1977798578682953729.json]
+members: [图片生成/反推提示词/001-H3智能分镜助手-全网最强版V12.2版_2087129844428664834.json, 图片生成/反推提示词/Minimax-H3智能分镜提示词助手-强的可怕_2090346971516198913.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_342
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json、图片生成/图生图/个人号洗4.0_2055233377527189506.json、图片生成/图生图/个人号洗_2052376260571090945.json、图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json、图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/001-H3智能分镜助手-全网最强版V12.2版_2087129844428664834.json、图片生成/反推提示词/Minimax-H3智能分镜提示词助手-强的可怕_2090346971516198913.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `JoinStrings`
+- `PrimitiveInt`
+- `SaveText`
+- `ShowText|pysssss`
+- `SomethingToString`
+- `Text Multiline`
+- `easy positive`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `ImageConcanate` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `ResizeLongestToNode` —— 1/7 个有
+- `GetNode` —— 5/7 个有
+- `SetNode` —— 5/7 个有
+- `LoadImage` —— 3/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `LoadImagesFromFolderKJ` —— 2/7 个有
+- `Prompt_Edit` —— 1/7 个有
 
 ## 典型参数
 

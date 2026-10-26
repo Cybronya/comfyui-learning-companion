@@ -2,88 +2,80 @@
 name: unknown_workflow_video_upscale_latent_upscale_117
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.852333
-common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, DF_Integer, DisTorchPurgeVRAMV2, EmptyLTXVLatentVideo, GetImageSize+, ImageResizeKJv2, ImageSizeInfo, JWImageSequenceExtractFromBatch, JWInteger, JWStringGetLine, JjkConcat, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, ResizeLongestToNode, SamplerCustomAdvanced, ShowText, TextBoxMira, VAEDecodeTiled, VHS_MergeImages, VHS_VideoCombine, easy mathInt, easy saveText, easy showAnything, image_scale_pixel_v2]
+level: moderate
+coverage: 0.477
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json, 视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json, 视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json]
+members: [视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json, 视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json, 视频生成/图生视频/兼具质量和速度的数字人_2089306091665580034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_117
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json、视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json、视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json、视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json、视频生成/图生视频/兼具质量和速度的数字人_2089306091665580034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioConcat`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CheckpointLoaderSimple`
-- `DF_Integer`
-- `DisTorchPurgeVRAMV2`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize+`
-- `ImageResizeKJv2`
-- `ImageSizeInfo`
-- `JWImageSequenceExtractFromBatch`
-- `JWInteger`
-- `JWStringGetLine`
-- `JjkConcat`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ExtendIntermediateSigmas`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
-- `ResizeLongestToNode`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowText`
-- `TextBoxMira`
-- `VAEDecodeTiled`
-- `VHS_MergeImages`
+- `SetNode`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy mathInt`
-- `easy saveText`
-- `easy showAnything`
-- `image_scale_pixel_v2`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_ImageGridSplit` —— 2/3 个有
-- `If ANY execute A else B` —— 2/3 个有
-- `JWStringSplit` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `string_util_StrFind` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LoraLoaderBypassModelOnly` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `easy ab` —— 2/3 个有
+- `HeartMuLa_Transcribe` —— 1/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `MiniMaxH3HybridLoader` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `SoundFlow_GetLength` —— 1/3 个有
+- `TTP_text_mix` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VRGDG_AudioCrop` —— 1/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -91,5 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

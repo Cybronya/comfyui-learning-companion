@@ -1,50 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_254
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.936
-common_nodes: [CFGGuider, CLIPLoader, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.61775
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-Klein单图编辑_2054474437596065794.json, 图片生成/图生图/Klein-9B-单图编辑+真实细节增加_2036060432284262401.json, 图片生成/图生图/Klein换衣服_2054474542659194882.json]
+members: [视频生成/图生视频/Dasiwa V1-SLA加速-MiniMax H3_2091698361979203585.json, 视频生成/图生视频/MiniMax H3 Ref2VA开源版-ComfyUI官方-量化加速-视频编辑-人物替换_2084895356386635778.json, 视频生成/图生视频/数字人对口型-MiniMax H3 Ref2VA开源版-ComfyUI官方-量化加速_2084948483420803073.json, 视频生成/图生视频/数字人对口型工作流_2087435972651868162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_254
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Klein单图编辑_2054474437596065794.json、图片生成/图生图/Klein-9B-单图编辑+真实细节增加_2036060432284262401.json、图片生成/图生图/Klein换衣服_2054474542659194882.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Dasiwa V1-SLA加速-MiniMax H3_2091698361979203585.json、视频生成/图生视频/MiniMax H3 Ref2VA开源版-ComfyUI官方-量化加速-视频编辑-人物替换_2084895356386635778.json、视频生成/图生视频/数字人对口型-MiniMax H3 Ref2VA开源版-ComfyUI官方-量化加速_2084948483420803073.json、视频生成/图生视频/数字人对口型工作流_2087435972651868162.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `Flux2Scheduler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetNode`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PainterFluxImageEdit`
+- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy clearCacheAll` —— 2/3 个有
-- `Mask Fill Holes` —— 1/3 个有
-- `ModelScopeVisionPromptInversion_Sevr` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `EasyCache` —— 3/4 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `Audio Cut (mtb)` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `VAEDecodeAudio` —— 2/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/4 个有
+- `DF_Int_to_Float` —— 1/4 个有
+- `LoraLoaderBypassModelOnly` —— 1/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/4 个有
+- `ModelAttentionBackend` —— 1/4 个有
+- `SolAttnMiniMax` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,44 +3,38 @@ name: unknown_workflow_generic_574
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8146
-common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideoNode, easy saveText, easy showAnything]
+coverage: 0.7948
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance+2.0+复刻爆款视频+(反推+图生视频）_2096559422251290626.json, 视频生成/图生视频/云信广告视频复刻SD2.0+mini_2086004554730135554.json, 视频生成/图生视频/爆款视频复刻：爆款视频反推提示词+Seedance 2.0 多参视频生成_2095547056520785922.json, 视频生成/文生视频/Seedance 2.0 复刻爆款视频 (反推+图生视频）_2085261023614947329.json, 视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json]
+members: [图片生成/图生图/☃️超赞绝伦封面一键生成器【含封面风格复刻】☃️_1995005989252423682.json, 图片生成/图生图/☃️超赞绝伦封面一键生成器【含封面风格复刻】☃️_1995187510022221825.json, 图片生成/图生图/😼一图一剧情 生成25分镜图😼_2023973352108466177.json, 图片生成/文生图/视频封面生成器（大模型全能3pro+全能图片pro）_1997654148789284866.json, 数字人/数字人/文生_参考图生封面图详情页_2102205736095936513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_574
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Seedance+2.0+复刻爆款视频+(反推+图生视频）_2096559422251290626.json、视频生成/图生视频/云信广告视频复刻SD2.0+mini_2086004554730135554.json、视频生成/图生视频/爆款视频复刻：爆款视频反推提示词+Seedance 2.0 多参视频生成_2095547056520785922.json、视频生成/文生视频/Seedance 2.0 复刻爆款视频 (反推+图生视频）_2085261023614947329.json、视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/☃️超赞绝伦封面一键生成器【含封面风格复刻】☃️_1995005989252423682.json、图片生成/图生图/☃️超赞绝伦封面一键生成器【含封面风格复刻】☃️_1995187510022221825.json、图片生成/图生图/😼一图一剧情 生成25分镜图😼_2023973352108466177.json、图片生成/文生图/视频封面生成器（大模型全能3pro+全能图片pro）_1997654148789284866.json、数字人/数字人/文生_参考图生封面图详情页_2102205736095936513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
+- `CR Text`
 - `LoadImage`
-- `LoadVideo`
 - `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideoNode`
-- `easy saveText`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/5 个有
-- `LoadAudio` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `easy getAudioFromVideo` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `JoinStringMulti` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 4/5 个有
+- `Note Plus (mtb)` —— 3/5 个有
 
 ## 典型参数
 

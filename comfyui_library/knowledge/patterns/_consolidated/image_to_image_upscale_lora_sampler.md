@@ -1,105 +1,124 @@
 ---
 name: image_to_image_upscale_lora_sampler
 type: Image To Image
-frequency: 38
+frequency: 35
 level: moderate
-coverage: 0.667947
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+coverage: 0.850686
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DisableNoise, FlipSigmas, Float, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, Get resolution [Crystools], Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, InFluxModelSamplingPred, JWFloat, KSampler, Latent Noise Injection, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, OutFluxModelSamplingPred, PreviewImage, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, Upscale Model Loader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/26313-动漫转真人_2032308024513138690.json, 图片生成/图生图/Qwen   Z_image   zimage  线稿转效果图  线稿上色 图生图_2039882255182602241.json, 图片生成/图生图/Qwen  Z_image  线稿转效果图  手稿转效果图 建筑设计_2039689984633999361.json, 图片生成/图生图/Qwen  zimage 图生图  线稿转效果图 线稿上色_2039891477131698177.json, 图片生成/图生图/Qwen ZI 二次元 转真人 真实感  洗图_2008160677533323265.json, 图片生成/图生图/Qwen edit +Z-lmage Turbo 二次元转真人 动漫转真人 真实感洗图  极致写实图_2041687465215397890.json, 图片生成/图生图/Qwen image+Z-image二次元转真人，真实感洗图!_2011631332140519426.json, 图片生成/图生图/Qwen 二次元转真人  线稿转真人 超真实感 去AI感_2034189810599993345.json, 图片生成/图生图/Qwen 漫画转真人 去AI感 超真实_2034554986268463106.json, 图片生成/图生图/Qwen+Z-image二次元转真人（可洗图）_2029057737249787906.json, 图片生成/图生图/Qwen+Z-image二次元转真人，真实感洗图!一比一还原！_2006640953188163585.json, 图片生成/图生图/Qwen+ZI二次元转真人_2007986059270950914.json, 图片生成/图生图/Qwen+ZI二次元转真人_2011321068090298369.json, 图片生成/图生图/Qwen+ZI二次元转真人_2044682901060591618.json, 图片生成/图生图/Qwen+ZI二次元转真人_2109893692935991297.json, 图片生成/图生图/Qwen+ZI二次元转真人真实感洗图_2031261933726339073.json, 图片生成/图生图/Qwen+ZI二次元转真人！很好用！_2058810045835603970.json, 图片生成/图生图/Qwen+ZI二次元转真人！很好用！_2084159255174795265.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2006971430335946754.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2006977149189758978.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2014573947509018626.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2020054362193661953.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2030278386714677249.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图_2039543860065472513.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图【贼拉带劲！无比好用，谁用谁知道！】_2029072350313975809.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图【贼拉带劲！无比好用，谁用谁知道！】_2041681908236554241.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图，亚洲风格-B站AIGC大赏_2021248304369115137.json, 图片生成/图生图/Qwen+ZI二次元转真人，真实感洗图，亚洲风格-B站AIGC大赏_2065316695910477824.json, 图片生成/图生图/Qwen+ZI动漫转真人写实感洗图_2040971599993638913.json, 图片生成/图生图/Qwen+ZI动漫转真人写实感洗图_2070031093717360642.json, 图片生成/图生图/Qwen+ZI动漫转真人写实感洗图_2070344105913307138.json, 图片生成/图生图/Qwen+ZI动漫转真人写实感洗图_2092868889398046722.json, 图片生成/图生图/Qwen+ZI手绘转真人！很好用！_2067503115376619521.json, 图片生成/图生图/Qwen+ZI手绘转真人！很好用！_2072197751311519745.json, 图片生成/图生图/Qwen+ZI风格迁移-二次元转真人_2026921283136528386.json, 图片生成/图生图/Qwen+ZI风格迁移，动漫转真人_2046480250682478593.json, 图片生成/图生图/Qwen+Zimage动漫转真人+逼真4k高清优化_2024774674177073153.json, 图片生成/图生图/空白工作流 Qwen+KREA2二次元转真人，真实感洗图，亚洲风格-B站AIGC大赏_2075765007878545409.json]
+members: [图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085537946291228673.json, 图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085549602685669378.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2054771273582039041.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056329181260242945.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056345221847404545.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056345572193427458.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056380965597044737.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2065636354414956546.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2065642554388992002.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2069739143986503682.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2069748397896196097.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2070426951579422722.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2070427218920173569.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2075189192073764866.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2076147006128607233.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2076210246317596674.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2098721853920604162.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2099337725139832834.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2099669224871514113.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2074025290006880258.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2074857235167141890.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2075035762504060929.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2019785205631946754.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2096862565203795969.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2097156992153505793.json, 图片生成/图生图/z-image+klein+seedvr2放大原始版本_2073353536687132674.json, 图片生成/图生图/商业级高清放大 Z-image+Klein+SeedVR2去ai感商业级图片真实感放大_2076193850191859713.json, 图片生成/图生图/最强商业级真实感图片放大工作流_2046104834587234305.json, 图片生成/图生图/最真实的高清放大工作流_2059536367583059970.json, 图片生成/图生图/最真实的高清放大工作流_2096170630549954561.json, 图片生成/图生图/最真实的高清放大工作流_2096408189825798145.json, 图片生成/图生图/最真实的高清放大工作流_2096591789057728513.json, 图片生成/图生图/超好用🔥去ai感商业级真实感高清放大-最新_2054855654153695233.json, 图片生成/图生图/通用放大2.0_2052628160168116226.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 38 个 workflow 归纳得出（图片生成/图生图/26313-动漫转真人_2032308024513138690.json、图片生成/图生图/Qwen   Z_image   zimage  线稿转效果图  线稿上色 图生图_2039882255182602241.json、图片生成/图生图/Qwen  Z_image  线稿转效果图  手稿转效果图 建筑设计_2039689984633999361.json、图片生成/图生图/Qwen  zimage 图生图  线稿转效果图 线稿上色_2039891477131698177.json、图片生成/图生图/Qwen ZI 二次元 转真人 真实感  洗图_2008160677533323265.json…）
+> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085537946291228673.json、图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085549602685669378.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2054771273582039041.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056329181260242945.json…）
 
 - **类型**：Image To Image
-- **样本数**：38
+- **样本数**：35
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 38 个 workflow 都包含：
+全部 35 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `ImageScaleToTotalPixels`
+- `DisableNoise`
+- `FlipSigmas`
+- `Float`
+- `FluxDeGuidance`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `Get resolution [Crystools]`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `InFluxModelSamplingPred`
+- `JWFloat`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Latent Noise Injection`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `NunchakuFluxDiTLoader`
+- `NunchakuTextEncoderLoader`
+- `OutFluxModelSamplingPred`
+- `PreviewImage`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
+- `Upscale Model Loader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3_VQA` —— 37/38 个有
-- `ShowText|pysssss` —— 37/38 个有
-- `WD14Tagger|pysssss` —— 37/38 个有
-- `easy clearCacheAll` —— 37/38 个有
-- `easy showAnything` —— 37/38 个有
-- `SaveImage` —— 36/38 个有
-- `ImageScaleBy` —— 35/38 个有
-- `JoinStrings` —— 35/38 个有
-- `Fast Groups Bypasser (rgthree)` —— 33/38 个有
-- `GetNode` —— 33/38 个有
-- `SetNode` —— 33/38 个有
-- `PreviewImage` —— 12/38 个有
-- `Image Comparer (rgthree)` —— 7/38 个有
-- `CFGGuider` —— 4/38 个有
-- `EmptyFlux2LatentImage` —— 4/38 个有
-- `Flux2Scheduler` —— 4/38 个有
-- `GetImageSize` —— 4/38 个有
-- `KSamplerSelect` —— 4/38 个有
-- `RandomNoise` —— 4/38 个有
-- `ReferenceLatent` —— 4/38 个有
-- `SamplerCustomAdvanced` —— 4/38 个有
-- `Checkpoint Loader (Simple)` —— 3/38 个有
-- `CompressImages` —— 3/38 个有
-- `ImageColorMatch+` —— 3/38 个有
-- `LayerUtility: PurgeVRAM` —— 3/38 个有
-- `llama_cpp_instruct_adv` —— 3/38 个有
-- `llama_cpp_model_loader` —— 3/38 个有
-- `llama_cpp_parameters` —— 3/38 个有
-- `CR Text` —— 1/38 个有
-- `CheckpointLoaderSimple` —— 1/38 个有
-- `Label (rgthree)` —— 1/38 个有
-- `MuyeTextEditOutput` —— 1/38 个有
-- `PrimitiveStringMultiline` —— 1/38 个有
-- `StringMergeNode` —— 1/38 个有
+- `AdvancedLyingSigmaSampler` —— 34/35 个有
+- `CR Text` —— 34/35 个有
+- `KSamplerSelect` —— 34/35 个有
+- `SimpleMath+` —— 34/35 个有
+- `UltimateSDUpscaleCustomSample` —— 34/35 个有
+- `UpscaleModelLoader` —— 34/35 个有
+- `easy int` —— 34/35 个有
+- `ModelSamplingAuraFlow` —— 30/35 个有
+- `AILab_QwenVL` —— 29/35 个有
+- `ReferenceLatent` —— 29/35 个有
+- `ShowText|pysssss` —— 29/35 个有
+- `UNETLoader_Any` —— 29/35 个有
+- `LayerColor: RGB` —— 10/35 个有
+- `RHHiddenNodes` —— 7/35 个有
+- `llama_cpp_instruct_adv` —— 6/35 个有
+- `llama_cpp_model_loader` —— 6/35 个有
+- `DisTorchPurgeVRAMV2` —— 5/35 个有
+- `GroupExecutor` —— 5/35 个有
+- `Int` —— 5/35 个有
+- `LayerColor: Color of Shadow & Highlight` —— 5/35 个有
+- `MemoryCleaner` —— 5/35 个有
+- `PrimitiveFloat` —— 5/35 个有
+- `easy showAnything` —— 5/35 个有
+- `GrowMask` —— 1/35 个有
+- `InvertMask` —— 1/35 个有
+- `JoinImageWithAlpha` —— 1/35 个有
+- `LG_Color_Match_V2` —— 1/35 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/35 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/35 个有
+- `llama_cpp_parameters` —— 1/35 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 5 - 10 | 38 | 83% |
-| Prompt 约束强度(CFG) | 1.6 | 1 - 1.6 | 38 | 77% |
-| 采样算法 | euler | - | 38 | 53% |
-| 调度器 | simple | - | 38 | 55% |
-| 重绘幅度 | 0.35 | 0.2 - 1 | 38 | 48% |
+| 采样步数 | 4 | 3 - 4 | 35 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 35 | 100% |
+| 采样算法 | euler | - | 35 | 69% |
+| 调度器 | simple | - | 35 | 69% |
+| 重绘幅度 | 1 | 0.4 - 1 | 35 | 66% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 79/38 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 99/35 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 5 - 10，38 个样本，取值集中（一致性 83%）
-- Prompt 约束强度(CFG) 中位数 1.6，观测区间 1 - 1.6，38 个样本
-- 采样算法 最常用 euler，38 个样本，一致性 53%
-- 调度器 最常用 simple，38 个样本，一致性 55%
-- 重绘幅度 中位数 0.35，观测区间 0.2 - 1，38 个样本，取值分散，一致性仅 48%
-- 高发问题（79/38 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 3 - 4，35 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，35 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，35 个样本，一致性 69%
+- 调度器 最常用 simple，35 个样本，一致性 69%
+- 重绘幅度 中位数 1，观测区间 0.4 - 1，35 个样本
+- 高发问题（99/35 个样本）：Steps较低可能导致细节不足

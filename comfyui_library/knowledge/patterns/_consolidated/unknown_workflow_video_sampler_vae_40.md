@@ -3,74 +3,55 @@ name: unknown_workflow_video_sampler_vae_40
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.9264
-common_nodes: [GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImageResizeKJ, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8806
+common_nodes: [INTConstant, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249.json, 视频生成/图生视频/CausVid-3步720P多图参考(Wan2.1&MoviiGen&Skyreels)_1923698037238263809.json, 视频生成/图生视频/WAN-VACE(双图参考)_1909082788321239041.json, 视频生成/图生视频/WAN-VACE(图像参考)_1909078127585468418.json, 视频生成/图生视频/fusionxPhantom两图融合_1933797677106946049.json, 视频生成/图生视频/单图参考(Wan2.1-VACE-14B)_1923226071490359297.json, 视频生成/图生视频/多图参考(Wan2.1-VACE-14B)_1923186184321683457.json, 视频生成/图生视频/多图融合-Phantom-Wan-14B_1927603788339634178.json, 视频生成/文生视频/Self Forcing-VACE-七组实践_1933086733389139969.json, 视频生成/文生视频/lightx2v-V2-VACE-七组实践_1945819044681576449.json]
+members: [视频生成/图生视频/Skyreels V3 多图参考生视频 sky r2v_2027315533716131841.json, 视频生成/图生视频/phantom多图参考一致性视频生成-电商带货_1917399608392089601.json, 视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json, 视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json, 视频生成/图生视频/字节Phantom 14B_1927551955353374722.json, 视频生成/图生视频/最优参数Phantom14B多图参考_1927581509937422337.json, 视频生成/图生视频/最优参数Phantom14B多图参考_1971606625880567810.json, 视频生成/图生视频/龙明Phantom14b多图参考_1928697815218950145.json, 视频生成/图生视频/龙明phantom FusionX+NAG_1935045733223735298.json, 视频生成/图生视频/🔥Phantom初体验！AI带货视频制作指南 + ComfyUI保姆级教程_1930083460306649089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_40
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249.json、视频生成/图生视频/CausVid-3步720P多图参考(Wan2.1&MoviiGen&Skyreels)_1923698037238263809.json、视频生成/图生视频/WAN-VACE(双图参考)_1909082788321239041.json、视频生成/图生视频/WAN-VACE(图像参考)_1909078127585468418.json、视频生成/图生视频/fusionxPhantom两图融合_1933797677106946049.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Skyreels V3 多图参考生视频 sky r2v_2027315533716131841.json、视频生成/图生视频/phantom多图参考一致性视频生成-电商带货_1917399608392089601.json、视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json、视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json、视频生成/图生视频/字节Phantom 14B_1927551955353374722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `GetImageSize`
 - `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
+- `ImagePadKJ`
 - `ImageResizeKJ`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 9/10 个有
-- `String Literal` —— 8/10 个有
-- `WanVideoSLG` —— 8/10 个有
+- `WanVideoTextEncode` —— 9/10 个有
+- `PreviewImage` —— 8/10 个有
 - `WanVideoTeaCache` —— 8/10 个有
-- `WanVideoVACEEncode` —— 8/10 个有
-- `ImageConcanate` —— 5/10 个有
-- `WanVideoVACEModelSelect` —— 5/10 个有
-- `ImagePadKJ` —— 4/10 个有
-- `LayerUtility: PurgeVRAM` —— 4/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/10 个有
-- `RH_Captioner` —— 4/10 个有
-- `easy ifElse` —— 4/10 个有
-- `easy showAnything` —— 4/10 个有
-- `WanVideoLoraSelect` —— 3/10 个有
-- `AIO_Preprocessor` —— 2/10 个有
-- `GetImageSize+` —— 2/10 个有
-- `GetImageSizeAndCount` —— 2/10 个有
-- `GrowMaskWithBlur` —— 2/10 个有
-- `InpaintPreprocessor` —— 2/10 个有
-- `KepStringLiteral` —— 2/10 个有
-- `MaskToImage` —— 2/10 个有
-- `VHS_LoadVideo` —— 2/10 个有
-- `WanVideoEncode` —— 2/10 个有
-- `WanVideoPhantomEmbeds` —— 2/10 个有
-- `WanVideoVACEStartToEndFrame` —— 2/10 个有
-- `WanVideoFreeInitArgs` —— 1/10 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `ImageConcatMulti` —— 7/10 个有
+- `easy imageRemBg` —— 3/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `Evaluate Integers` —— 1/10 个有
+- `FlashVSRNode` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `Text _O` —— 1/10 个有
+- `WanVideoApplyNAG` —— 1/10 个有
+- `WanVideoTextEncodeSingle` —— 1/10 个有
+- `WanVideoVRAMManagement` —— 1/10 个有
 
 ## 典型参数
 

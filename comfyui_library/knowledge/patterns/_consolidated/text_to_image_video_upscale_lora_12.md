@@ -3,64 +3,90 @@ name: text_to_image_video_upscale_lora_12
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9615
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, INTConstant, ImageBatchMulti, ImageFromBatch, JjkText, KSampler, KSamplerSelect, LoadVideoUI, LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3Unified, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, ReverseImageBatch, SamplerCustomAdvanced, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy getNode, easy setNode, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8345
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawViTPose, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetImageSizeAndCount, GetNode, ImageFromBatch, ImageFromBatch+, ImageResize+, ImageResizeKJv2, ImageUpscaleWithModelBatched, JjkText, KSampler, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PixelPerfectResolution, PoseAndFaceDetection, RHHiddenNodes, RIFE VFI, SetNode, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimateToVideo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUniAnimatePoseInput, WanVideoVAELoader, easy int, easy showAnything, solarL_SaveImagesToZip, wanBlockSwap, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/完美长视频拼接工作流，视频生视频图生视频处理方案_2108282545954709505.json, 视频生成/图生视频/完美长视频拼接工作流｜多段素材无缝合并成片_2108083435968491522.json]
+members: [视频生成/图生视频/跳舞动作迁移加表情复刻跳舞动作模仿工作流，视频生视频图生视频_2106509202175913985.json, 视频生成/图生视频/跳舞动作迁移加表情复刻｜动作模仿视频生视频一键复刻同款舞姿_2106205754679193602.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/完美长视频拼接工作流，视频生视频图生视频处理方案_2108282545954709505.json、视频生成/图生视频/完美长视频拼接工作流｜多段素材无缝合并成片_2108083435968491522.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/跳舞动作迁移加表情复刻跳舞动作模仿工作流，视频生视频图生视频_2106509202175913985.json、视频生成/图生视频/跳舞动作迁移加表情复刻｜动作模仿视频生视频一键复刻同款舞姿_2106205754679193602.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawViTPose`
 - `EmptyLatentImage`
-- `INTConstant`
-- `ImageBatchMulti`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `ImageUpscaleWithModelBatched`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadVideoUI`
+- `KepStringLiteral`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MemoryCleaner`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3Unified`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `ReverseImageBatch`
-- `SamplerCustomAdvanced`
-- `TrimAudioDuration`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `OnnxDetectionModelLoader`
+- `PathchSageAttentionKJ`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `RHHiddenNodes`
+- `RIFE VFI`
+- `SetNode`
+- `SimpleMath+`
+- `TorchCompileModelWanVideoV2`
+- `TrimVideoLatent`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy getNode`
-- `easy setNode`
+- `VHS_VideoInfo`
+- `WanAnimateToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoUniAnimatePoseInput`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `wanBlockSwap`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
@@ -82,7 +108,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -93,5 +119,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

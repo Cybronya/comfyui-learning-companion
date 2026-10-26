@@ -3,56 +3,64 @@ name: unknown_workflow_video_sampler_unet_80
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8205
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.375
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, GetNode, ImageResizeKJv2, ImpactConditionalBranch, Int, KSamplerSelect, LoadAudio, LoadImage, MathExpression|pysssss, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, 孤海注释, 布尔孤海, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 文生视频  提示词自动优化版_2084674314833580034.json, 视频生成/文生视频/MiniMaxH3图生视频工作流 By 像素幻想Lab_2093254151970058242.json]
+members: [视频生成/文生视频/自用版   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V6.0_2100491353854668802.json, 视频生成/文生视频/自用版   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V6.1_2098342858284691457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_80
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 文生视频  提示词自动优化版_2084674314833580034.json、视频生成/文生视频/MiniMaxH3图生视频工作流 By 像素幻想Lab_2093254151970058242.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/自用版   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V6.0_2100491353854668802.json、视频生成/文生视频/自用版   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V6.1_2098342858284691457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `Any Switch (rgthree)`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImpactConditionalBranch`
+- `Int`
 - `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
-- `RandomNoise`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SelfLiftH3Sampler`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `孤海注释`
+- `布尔孤海`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `JWFloatToString` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
 - `LoraLoaderModelOnly` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy promptConcat` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [BagelModelLoader, BagelTextToImage, SaveImage]
+common_nodes: [LoadImage, RH_GPT_Image15, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Bagel文生图_1926988360424837121.json, 图片生成/文生图/Bagel文生图_1937463028348559362.json]
+members: [图片生成/图生图/全能图片G Image 1.5 图生图_2045011362828525570.json, 图片生成/图生图/全能图片G-Image 1.5 图生图_2004421107258191874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1460
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Bagel文生图_1926988360424837121.json、图片生成/文生图/Bagel文生图_1937463028348559362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G Image 1.5 图生图_2045011362828525570.json、图片生成/图生图/全能图片G-Image 1.5 图生图_2004421107258191874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,12 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BagelModelLoader`
-- `BagelTextToImage`
+- `LoadImage`
+- `RH_GPT_Image15`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive string [Crystools]` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,73 +3,67 @@ name: unknown_workflow_video_sampler_vae_180
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6315
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageFromBatch+, ImageResizeKJ, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, PreviewImage, RepeatImageBatch, ReplaceImagesInBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, WanVideoVRAMManagement, easy int, easy showAnything]
+coverage: 0.8345
+common_nodes: [AudioCrop, AudioSeparation, CR Text Concatenate, ColorMatch, CreateCFGScheduleFloatList, Display Int (rgthree), DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageFromBatch+, ImageResizeKJ, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, PrimitiveString, SimpleMath+, SoundFlow_GetLength, Text Multiline, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageRemBg, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE+For循环版重叠帧_1907868005584220162.json, 视频生成/图生视频/wan2.1 Vace 一键生成3分钟mv_1909565444448288770.json]
+members: [数字人/数字人/wan2.2数字人_1987723803025412097.json, 数字人/数字人/wan2.2数字人_1991331380875362306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_180
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE+For循环版重叠帧_1907868005584220162.json、视频生成/图生视频/wan2.1 Vace 一键生成3分钟mv_1909565444448288770.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/wan2.2数字人_1987723803025412097.json、数字人/数字人/wan2.2数字人_1991331380875362306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CR Text Concatenate`
+- `ColorMatch`
+- `CreateCFGScheduleFloatList`
+- `Display Int (rgthree)`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
+- `ImageConcatMulti`
 - `ImageFromBatch+`
 - `ImageResizeKJ`
-- `ImageToMask`
-- `LayerUtility: ColorImage`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskPreview+`
-- `PreviewImage`
-- `RepeatImageBatch`
-- `ReplaceImagesInBatch`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `PrimitiveString`
 - `SimpleMath+`
+- `SoundFlow_GetLength`
+- `Text Multiline`
+- `ToInt`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
+- `easy imageRemBg`
 - `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
 - `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Text Load Line From File` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `TT_img_enc` —— 1/2 个有
 
 ## 典型参数
 

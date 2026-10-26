@@ -2,53 +2,63 @@
 name: unknown_workflow_video_sampler_clip_164
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.77975
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+level: strong
+coverage: 0.9105
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJv2, ImageStitch, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PreviewImage, PrimitiveStringMultiline, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/中文出视频 WAN2.1 万相图生视频_1894627814531051521.json, 视频生成/图生视频/图生视频   Wan2.1  局部动作_2032283738113056769.json, 视频生成/图生视频/生成中文的AI视频+图片视频+通义万相=艾橘溪_1896135143269007362.json, 视频生成/图生视频/通义万相 Wan2.1 图生视频_1894649502454710273.json]
+members: [视频生成/图生视频/remix V3.0 单图生视频&首尾帧_2034945354898083841.json, 视频生成/图生视频/remix V3.0 首尾帧_2036038473215381506.json, 视频生成/图生视频/remix V3.0首-中-尾多帧生视频_2034940280880762881.json, 视频生成/图生视频/remix V3.0首-中-尾多帧生视频_2057420747668283393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_164
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/中文出视频 WAN2.1 万相图生视频_1894627814531051521.json、视频生成/图生视频/图生视频   Wan2.1  局部动作_2032283738113056769.json、视频生成/图生视频/生成中文的AI视频+图片视频+通义万相=艾橘溪_1896135143269007362.json、视频生成/图生视频/通义万相 Wan2.1 图生视频_1894649502454710273.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/remix V3.0 单图生视频&首尾帧_2034945354898083841.json、视频生成/图生视频/remix V3.0 首尾帧_2036038473215381506.json、视频生成/图生视频/remix V3.0首-中-尾多帧生视频_2034940280880762881.json、视频生成/图生视频/remix V3.0首-中-尾多帧生视频_2057420747668283393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageStitch`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `Seed (rgthree)`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeAdvanced` —— 3/4 个有
-- `JjkText` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `TextCombinerTwo` —— 1/4 个有
-- `Textbox` —— 1/4 个有
+- `CLIPVisionEncode` —— 2/4 个有
+- `CLIPVisionLoader` —— 2/4 个有
+- `LatentFromBatch` —— 2/4 个有
+- `WanFirstMiddleLastFrameToVideo` —— 2/4 个有
+- `WanFunInpaintToVideo` —— 2/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -56,4 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

@@ -3,36 +3,32 @@ name: unknown_workflow_generic_1654
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM V2, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
+coverage: 0.6
+common_nodes: [PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Heygem数字人+IndexTTS文字对口型_1945485523890708482.json, 音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json]
+members: [图片生成/文生图/🍌文生图_2017626542070833153.json, 视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1654
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Heygem数字人+IndexTTS文字对口型_1945485523890708482.json、音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/🍌文生图_2017626542070833153.json、视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `IndexTTSRun` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
 
 ## 典型参数
 

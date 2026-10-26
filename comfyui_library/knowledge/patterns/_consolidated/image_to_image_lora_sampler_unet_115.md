@@ -3,83 +3,58 @@ name: image_to_image_lora_sampler_unet_115
 type: Image To Image
 frequency: 6
 level: strong
-coverage: 0.7285
-common_nodes: [CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyImage, GetImageSize, GrowMask, ImageBlend, ImageCompositeMasked, ImageFromBatch, ImageResizeKJv2, InvertMask, KSampler, LTXVConcatAVLatent, LoadBackgroundRemovalModel, LoadImage, LoraLoaderModelOnly, MaskToImage, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PointsEditor, PreviewAnimation, RemoveBackground, ResizeImageMaskNode, ResolutionSelector, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_LoadVideo]
+coverage: 0.885
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/海螺H3！Sec定点遮罩替换_2092136875254439938.json, 数字人/数字人/视频指定人物替换 Minimax H3  - SEC_2092432088149610498.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2090226018845024258.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2109443531659104257.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2110274068917342210.json, 视频生成/图生视频/Minimax+H3+局部编辑_2090659815860297729.json]
+members: [图片生成/图生图/胡文的服装设计_2043927068303433730.json, 图片生成/图生图/调整镜头方向Qwen 2511_2037043928532262913.json, 图片生成/图生图/镜头控制Qwen_2511_2049396359823892482.json, 图片生成/图生图/👾怪獸-人物道具场景多视角加速版👾_2058103710215131137.json, 图片生成/图生图/🦖2511可视化重打灯光_2011613758954676226.json, 视频生成/图生视频/QWEN imageEdit拍摄视角选择器_2010896559696777218.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_115
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/海螺H3！Sec定点遮罩替换_2092136875254439938.json、数字人/数字人/视频指定人物替换 Minimax H3  - SEC_2092432088149610498.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2090226018845024258.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2109443531659104257.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2110274068917342210.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/胡文的服装设计_2043927068303433730.json、图片生成/图生图/调整镜头方向Qwen 2511_2037043928532262913.json、图片生成/图生图/镜头控制Qwen_2511_2049396359823892482.json、图片生成/图生图/👾怪獸-人物道具场景多视角加速版👾_2058103710215131137.json、图片生成/图生图/🦖2511可视化重打灯光_2011613758954676226.json…）
 
 - **类型**：Image To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `EmptyImage`
-- `GetImageSize`
-- `GrowMask`
-- `ImageBlend`
-- `ImageCompositeMasked`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `InvertMask`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
-- `LTXVConcatAVLatent`
-- `LoadBackgroundRemovalModel`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PointsEditor`
-- `PreviewAnimation`
-- `RemoveBackground`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `ImageStitch` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `JjkText` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `easy sam3ModelLoader` —— 1/6 个有
-- `easy sam3VideoSegmentation` —— 1/6 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `QwenMultiangleCameraNode` —— 4/6 个有
+- `easy promptList` —— 3/6 个有
+- `Comfly_LLm_API` —— 1/6 个有
+- `Comfly_api_set` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `ProcessString` —— 1/6 个有
+- `QwenMultiangleLightningNode` —— 1/6 个有
+- `easy promptLine` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 6 | 88% |
+| 采样步数 | 6 | 4 - 8 | 6 | 67% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
 | 采样算法 | euler | - | 6 | 100% |
 | 调度器 | simple | - | 6 | 100% |
@@ -93,7 +68,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 88%）
+- 采样步数 中位数 6，观测区间 4 - 8，6 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，6 个样本，一致性 100%
 - 调度器 最常用 simple，6 个样本，一致性 100%

@@ -1,40 +1,43 @@
 ---
 name: unknown_workflow_video_79
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4835
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHUploadZip, easy imageCount, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.579
+common_nodes: [CR Text, GetNode, GetVideoComponents, LoadImage, PlaySound|pysssss, PreviewImage, RHHiddenNodes, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, SetNode, TextCombinerTwo, VHS_VideoCombine, easy imageConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/批量上传图片进行预览-拓宽视野_1979151893966524417.json, 视频生成/图生视频/批量图片合成视频_1979131311141064706.json]
+members: [视频生成/图生视频/产品视频制作+一键生成分镜脚本_1990069401049288706.json, 视频生成/图生视频/电商产品广告宣传（高质量）_2011096977253076993.json, 视频生成/图生视频/电影级大制作-放飞无穷想象力（加V本地布署）🔥_1990282585572077569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_79
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量上传图片进行预览-拓宽视野_1979151893966524417.json、视频生成/图生视频/批量图片合成视频_1979131311141064706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/产品视频制作+一键生成分镜脚本_1990069401049288706.json、视频生成/图生视频/电商产品广告宣传（高质量）_2011096977253076993.json、视频生成/图生视频/电影级大制作-放飞无穷想象力（加V本地布署）🔥_1990282585572077569.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `GetNode`
+- `GetVideoComponents`
 - `LoadImage`
+- `PlaySound|pysssss`
 - `PreviewImage`
-- `RHUploadZip`
-- `easy imageCount`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Sora2_I2V`
+- `SetNode`
+- `TextCombinerTwo`
+- `VHS_VideoCombine`
+- `easy imageConcat`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
 
 ## 典型参数
 
@@ -46,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

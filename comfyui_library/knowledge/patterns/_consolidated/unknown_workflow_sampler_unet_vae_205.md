@@ -2,67 +2,57 @@
 name: unknown_workflow_sampler_unet_vae_205
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.981
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.798
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, FluxGuidance, ImageFromBatch, KSamplerSelect, LayerUtility: SaveImagePlus, PreviewImage, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json, 图片生成/图生图/直播汉服写真_1913521276361633794.json, 图片生成/图生图/角色一致性_1938427878101155842.json, 图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json, 图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json]
+members: [图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json, 图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json, 图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json, 图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json, 图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_205
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json、图片生成/图生图/直播汉服写真_1913521276361633794.json、图片生成/图生图/角色一致性_1938427878101155842.json、图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json、图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json、图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json、图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json、图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json、图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
 - `BasicScheduler`
-- `DualCLIPLoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `FluxGuidance`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `LoadImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
+- `LayerUtility: SaveImagePlus`
+- `PreviewImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `ScheduledCFGGuidance`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 4/5 个有
-- `CLIPTextEncodeFlux` —— 3/5 个有
-- `CLIPLoaderGGUF` —— 2/5 个有
-- `CLIPTextEncode` —— 2/5 个有
-- `FluxGuidance` —— 2/5 个有
-- `LoraLoader` —— 2/5 个有
-- `UnetLoaderGGUF` —— 2/5 个有
-- `VAEEncode` —— 2/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `EmptyLatentImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PulidFluxFaceDetector` —— 1/5 个有
-- `PulidFluxOptions` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `Label (rgthree)` —— 4/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `EmptyMiniMaxH3LatentAV` —— 3/5 个有
+- `easy imageColorMatch` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `LayerUtility: ImageReel` —— 2/5 个有
+- `LayerUtility: ImageReelComposit` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1576 | - | 1 | 100% |
-| LoRA 模型强度 | 0.9 | - | 2 | 89% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,5 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

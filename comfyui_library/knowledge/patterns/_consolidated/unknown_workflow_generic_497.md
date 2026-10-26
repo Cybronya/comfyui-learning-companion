@@ -1,53 +1,40 @@
 ---
 name: unknown_workflow_generic_497
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.863
-common_nodes: [Bjornulf_ShowInt, CompressImages, ImageListToBatch_, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy batchAnything, easy cleanGpuUsed, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.6495
+common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3ForcedAlign, Qwen3ForcedAlignerLoader, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061625229243412481.json, 图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061724347244572673.json, 图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2096874184919052290.json, 图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2097168246758789121.json, 图片生成/图生图/食杂素材批量抠图【压缩包上传+压缩包下载】_2014306406605791233.json]
+members: [图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json, 数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字基础工作流_2020676844198039553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_497
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061625229243412481.json、图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061724347244572673.json、图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2096874184919052290.json、图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2097168246758789121.json、图片生成/图生图/食杂素材批量抠图【压缩包上传+压缩包下载】_2014306406605791233.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json、数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json、音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CompressImages`
-- `ImageListToBatch_`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `SaveImage`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `Qwen3ForcedAlign`
+- `Qwen3ForcedAlignerLoader`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `忽略多组孤海` —— 4/5 个有
-- `BiRefNetRMBG` —— 2/5 个有
-- `GH_MaskGrowthBlur` —— 2/5 个有
-- `JoinImageWithAlpha` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `LoadRembgByBiRefNetModel` —— 2/5 个有
-- `RembgByBiRefNet` —— 2/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `CR Prompt Text` —— 1/6 个有
+- `IndexTTSRun` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
 
 ## 典型参数
 

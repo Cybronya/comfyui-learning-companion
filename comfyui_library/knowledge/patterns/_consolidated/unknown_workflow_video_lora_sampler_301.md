@@ -1,71 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_301
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.721571
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.9085
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3TimeSmear, H3V2VInit, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk数字人-基础视频生成_1975057390238306306.json, 视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json, 视频生成/图生视频/Wan2.1对口型数字人_2054610077646114818.json, 视频生成/图生视频/Wan21Animate高质量丝滑单人数字人_1993501240730599426.json, 视频生成/图生视频/数字人 InfiniTetalk 音频+图片GGUF_2012499953494528001.json, 视频生成/图生视频/无限时长多人数字人-InfiniteTalkd多人图生视频_1958125817404542978.json, 视频生成/图生视频/无限时长音乐数字人-InfiniteTalk单人图生视频_1958125770365423618.json]
+members: [视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json, 视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json, 视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json, 视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json, 视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088568398233038849.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088607540094521346.json, 视频生成/文生视频/Minimax H3拖影强化文生视频工作流_2088291098631434242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_301
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk数字人-基础视频生成_1975057390238306306.json、视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json、视频生成/图生视频/Wan2.1对口型数字人_2054610077646114818.json、视频生成/图生视频/Wan21Animate高质量丝滑单人数字人_1993501240730599426.json、视频生成/图生视频/数字人 InfiniTetalk 音频+图片GGUF_2012499953494528001.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json、视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json、视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json、视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json、视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `H3ExactRecover`
+- `H3InjectSchedule`
+- `H3JerkHeatmap`
+- `H3JerkOracle`
+- `H3TimeSmear`
+- `H3V2VInit`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/7 个有
-- `GetImageSizeAndCount` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `GetNode` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `WanVideoTextEncodeCached` —— 5/7 个有
-- `INTConstant` —— 3/7 个有
-- `JWInteger` —— 3/7 个有
-- `LoadWanVideoT5TextEncoder` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `PrimitiveInt` —— 2/7 个有
-- `Text Multiline` —— 2/7 个有
-- `WanVideoTextEncode` —— 2/7 个有
-- `Audio Duration (mtb)` —— 1/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `IndexTTSNode` —— 1/7 个有
-- `JWIntegerToString` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `PixaromaLabel` —— 1/7 个有
-- `PixaromaResolution` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `H3AudioRecover` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `MiniMaxH3ImageToVideo` —— 4/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `孤海注释` —— 2/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `MemoryCleaner` —— 1/8 个有
 
 ## 典型参数
 

@@ -3,34 +3,38 @@ name: unknown_workflow_generic_534
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7148
-common_nodes: [JjkText, LoadImage, SaveVideo]
+coverage: 0.825
+common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能视频S 并发4个_2005681568708521986.json, 图片生成/图生图/全能视频X-图生视频-官方稳定版_2041841814168145921.json, 视频生成/图生视频/三笔成书——全能视频S多线程视频_1999903042818502658.json, 视频生成/图生视频/全能视频S Image to Video Batch 多程线并发 闪电生成_1999004397331959810.json, 视频生成/图生视频/全能视频S图生视频__批量视频高速7个并发_2001204449873887233.json]
+members: [图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json, 图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json, 图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_534
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能视频S 并发4个_2005681568708521986.json、图片生成/图生图/全能视频X-图生视频-官方稳定版_2041841814168145921.json、视频生成/图生视频/三笔成书——全能视频S多线程视频_1999903042818502658.json、视频生成/图生视频/全能视频S Image to Video Batch 多程线并发 闪电生成_1999004397331959810.json、视频生成/图生视频/全能视频S图生视频__批量视频高速7个并发_2001204449873887233.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json、图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json、图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `JjkText`
+- `CR Prompt Text`
 - `LoadImage`
-- `SaveVideo`
+- `MiniMaxH3PromptEnhancerT8`
+- `PreviewAny`
+- `RH_Translator`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_I2V_Batch` —— 4/5 个有
-- `easy saveText` —— 3/5 个有
-- `RH_RhartVideoGOfficialImageToVideo` —— 1/5 个有
+- `easy showAnything` —— 4/5 个有
+- `SaveImage` —— 3/5 个有
+- `easy imageSave` —— 2/5 个有
+- `CM_FloatToInt` —— 1/5 个有
 
 ## 典型参数
 

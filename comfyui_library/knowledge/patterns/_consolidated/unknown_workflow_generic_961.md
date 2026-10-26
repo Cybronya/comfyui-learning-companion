@@ -3,37 +3,43 @@ name: unknown_workflow_generic_961
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.977667
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.910667
+common_nodes: [AutoDownloadBiRefNetModel, ImageConcanate, LayerUtility: CropByMask V2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_ComfyFluxKontext, RembgByBiRefNet, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json, 图片生成/文生图/Image 2图像模型_2048040470286180353.json, 图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json]
+members: [图片生成/图生图/Flux-Kontext多图融合 三图编辑-电商产品展示 一句修改图像_1933159787083538433.json, 图片生成/图生图/Flux-Kontext模型功能全面测试最全案例演示超详细使用教程_1933145305657290753.json, 图片生成/文生图/FLUX kontext 图像编辑-一句话改图-多图融合_1929554434584645634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_961
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json、图片生成/文生图/Image 2图像模型_2048040470286180353.json、图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Kontext多图融合 三图编辑-电商产品展示 一句修改图像_1933159787083538433.json、图片生成/图生图/Flux-Kontext模型功能全面测试最全案例演示超详细使用教程_1933145305657290753.json、图片生成/文生图/FLUX kontext 图像编辑-一句话改图-多图融合_1929554434584645634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AutoDownloadBiRefNetModel`
+- `ImageConcanate`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2TextToImage`
+- `RH_ComfyFluxKontext`
+- `RembgByBiRefNet`
 - `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialTextToImage` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `RH_RhartImageV1TextToImage` —— 1/3 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 

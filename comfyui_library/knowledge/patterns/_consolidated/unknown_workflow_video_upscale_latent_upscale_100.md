@@ -3,121 +3,87 @@ name: unknown_workflow_video_upscale_latent_upscale_100
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.466
-common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyImage, Fast Groups Bypasser (rgthree), GetImageSize, GetImageSize+, GetNode, GrowMaskWithBlur, INTConstant, ImageCompositeFromMaskBatch+, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PreviewImage, PrimitiveFloat, PrimitiveInt, RandomNoise, ReservedRegionFrameComposer, ResizeImageMaskNode, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.927
+common_nodes: [1hew_AudioDuration, BasicScheduler, CFGGuider, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVEnhanceAVideoKJ, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: NumberCalculatorV2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, Text, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, easy positive]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.3 参考引导局部重绘工作流_2041676758285553666.json, 视频生成/文生视频/ltx23_inpaint_masked_Reference2Video 视频编辑工作流_2042807285466009602.json, 视频生成/文生视频/视频去字幕（参考）-0.5版本 循环_2048762397640364034.json, 视频生成/文生视频/视频去字幕（参考）-0.5版本_2048741719289630722.json]
+members: [视频生成/图生视频/解说漫-三图声音控时长V1_2054612092153548802.json, 视频生成/图生视频/解说漫-三图音频_2054399661825380353.json, 视频生成/图生视频/解说漫-二图声音控时长V1_2057031917425487874.json, 视频生成/图生视频/解说漫-二图声音控时长_2054997494110670850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_100
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 参考引导局部重绘工作流_2041676758285553666.json、视频生成/文生视频/ltx23_inpaint_masked_Reference2Video 视频编辑工作流_2042807285466009602.json、视频生成/文生视频/视频去字幕（参考）-0.5版本 循环_2048762397640364034.json、视频生成/文生视频/视频去字幕（参考）-0.5版本_2048741719289630722.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/解说漫-三图声音控时长V1_2054612092153548802.json、视频生成/图生视频/解说漫-三图音频_2054399661825380353.json、视频生成/图生视频/解说漫-二图声音控时长V1_2057031917425487874.json、视频生成/图生视频/解说漫-二图声音控时长_2054997494110670850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `1hew_AudioDuration`
 - `BasicScheduler`
-- `BlockifyMask`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CM_IntToFloat`
+- `ComfyMathExpression`
 - `DualCLIPLoader`
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetNode`
-- `GrowMaskWithBlur`
+- `EmptyLTXVLatentVideo`
 - `INTConstant`
-- `ImageCompositeFromMaskBatch+`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEEncode`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: NumberCalculatorV2`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PreviewImage`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
-- `PrimitiveInt`
+- `RTXVideoSuperResolution`
 - `RandomNoise`
-- `ReservedRegionFrameComposer`
-- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
 - `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleCalculatorKJ`
 - `SolidMask`
+- `Text`
 - `TrimAudioDuration`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
 - `VAELoaderKJ`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `VisualizeSigmasKJ`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyAudio` —— 3/4 个有
-- `ImageFromBatch+` —— 3/4 个有
-- `JWImageResizeByLongerSide` —— 3/4 个有
-- `RecordAudio` —— 3/4 个有
-- `SeCModelLoader_Ultra-Fast` —— 3/4 个有
-- `SeCVideoSegmentation_Ultra-Fast` —— 3/4 个有
-- `VRAMReserver` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `ImageCropV2` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `LTXVAudioVAEDecode` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `MaskRepeatBatch` —— 2/4 个有
-- `PrimitiveBoundingBox` —— 2/4 个有
-- `SimpleMath+` —— 2/4 个有
-- `VAEDecodeTiled` —— 2/4 个有
-- `easy imageSize` —— 2/4 个有
-- `BiRefNetRMBG` —— 1/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `DF_Get_image_size` —— 1/4 个有
-- `EmptyLTXVLatentVideo` —— 1/4 个有
-- `Image Blank` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `JWStringConcat` —— 1/4 个有
-- `MaskToImage` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `RMBG` —— 1/4 个有
-- `SAM3Segment` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `VHS_BatchManager` —— 1/4 个有
-- `easy batchAnything` —— 1/4 个有
-- `easy forLoopEnd` —— 1/4 个有
-- `easy forLoopStart` —— 1/4 个有
-- `easy mathInt` —— 1/4 个有
-- `llama_cpp_instruct_adv` —— 1/4 个有
-- `llama_cpp_model_loader` —— 1/4 个有
+- `SaveImage` —— 3/4 个有
+- `LTXVAddGuideMulti` —— 2/4 个有
+- `LTXVAddGuideMultiDynamic` —— 2/4 个有
+- `STGGuiderAdvanced` —— 2/4 个有
+- `LTXVAudioVAEEncode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 24 | 24 - 24 | 4 | 100% |
+| 高度 | 25 | 24 - 25 | 4 | 98% |
 
 ## 常见问题
 
@@ -126,4 +92,4 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）

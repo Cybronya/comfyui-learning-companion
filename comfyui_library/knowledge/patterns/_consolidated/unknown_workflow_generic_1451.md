@@ -3,32 +3,36 @@ name: unknown_workflow_generic_1451
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8375
-common_nodes: [ImageStitch, JjkText, LoadImage, RH_Nano_Banana_Image2Image, ResizeLongestToNode, SaveImage]
+coverage: 0.6165
+common_nodes: [LoadImage, PreviewImage, PrimitiveString, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/🦖人物打卡游戏（全能图片V1）_1960915589634174977.json, 图片生成/图生图/🦖全能图片PRo多合一_1960897981321023490.json]
+members: [图片生成/图生图/亿薪海报_2102278162146222081.json, 图片生成/文生图/全能图片G-单图模式-支持PS插件_2047191235810562049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1451
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖人物打卡游戏（全能图片V1）_1960915589634174977.json、图片生成/图生图/🦖全能图片PRo多合一_1960897981321023490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/亿薪海报_2102278162146222081.json、图片生成/文生图/全能图片G-单图模式-支持PS插件_2047191235810562049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageStitch`
-- `JjkText`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `ResizeLongestToNode`
+- `PreviewImage`
+- `PrimitiveString`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveInt` —— 1/2 个有
+- `RHSettingsNode` —— 1/2 个有
+- `StringReplace` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_199
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.879889
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.889333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, SaveImage, Text, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json, 图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json, 图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json, 图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json, 图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json, 图片生成/图生图/qwen2.1去除卡片 图片元素精准移除_2104692967377293313.json, 图片生成/图生图/qwen2.1去除油腻｜图生图人像修图 AI感一扫自然出片_2104109391455809538.json, 图片生成/图生图/qwen2.1替换主体工作流｜产品模特随意换场景不翻车_2103712617431912449.json, 图片生成/图生图/画面去油腻 qwen2.1图片质感清爽优化_2104333923810635777.json]
+members: [图片生成/反推提示词/一键自动生成｜MiniMax导演台自动提示词反推_2090909602220175362.json, 图片生成/反推提示词/全自动电商出详情只提示工作流，反推提示词电商详情生成工具_2107252613136867330.json, 图片生成/反推提示词/全自动电商详情页生成｜反推提示词一键出文案_2107006999824265217.json, 图片生成/反推提示词/多分镜连贯系统｜MiniMax图生视频自动提示词反推_2092921033551597570.json, 图片生成/反推提示词/导演台自动提示词｜一键自动生成MiniMax反推提示词_2092897411608965122.json, 图片生成/反推提示词/自动提示词一键生成｜MiniMax导演台反推提示词_2092706699449815042.json, 图片生成/图生图/MiniMax导演台自动提示词版｜一键自动生成不用写词，出片零门槛_2099492125976125442.json, 图片生成/图生图/全能图片G产品图智能解析，电商详情页批量生成图文排版套图一步到位_2112704920347570178.json, 图片生成/图生图/全能图片G产品图智能解析｜电商详情页批量生成排版_2112419294628896769.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_199
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json、图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json、图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json、图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json、图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/一键自动生成｜MiniMax导演台自动提示词反推_2090909602220175362.json、图片生成/反推提示词/全自动电商出详情只提示工作流，反推提示词电商详情生成工具_2107252613136867330.json、图片生成/反推提示词/全自动电商详情页生成｜反推提示词一键出文案_2107006999824265217.json、图片生成/反推提示词/多分镜连贯系统｜MiniMax图生视频自动提示词反推_2092921033551597570.json、图片生成/反推提示词/导演台自动提示词｜一键自动生成MiniMax反推提示词_2092897411608965122.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -30,26 +30,33 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 8/9 个有
-- `Anything Everywhere3` —— 7/9 个有
-- `孤海注释` —— 7/9 个有
-- `Text` —— 6/9 个有
-- `ImageToMask` —— 5/9 个有
-- `PixaromaInpaintCrop` —— 5/9 个有
-- `PixaromaUncrop` —— 5/9 个有
-- `ImageColorMatch+` —— 3/9 个有
-- `EmptyImage` —— 2/9 个有
-- `Image Remove Alpha JK` —— 2/9 个有
-- `ResolutionSelector` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `easy saveText` —— 7/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `INTConstant` —— 5/9 个有
+- `MultiTextConcatenate` —— 5/9 个有
+- `RH_Utils` —— 5/9 个有
+- `ProcessString` —— 4/9 个有
+- `ShowAnything|Mie` —— 4/9 个有
+- `ShowText` —— 4/9 个有
+- `easy promptConcat` —— 4/9 个有
+- `easy promptLine` —— 4/9 个有
+- `PreviewImage` —— 3/9 个有
+- `CR Text` —— 2/9 个有
+- `PrimitiveString` —— 2/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 2/9 个有
+- `SimplePromptBatcher` —— 2/9 个有
+- `EmptyImage` —— 1/9 个有
 
 ## 典型参数
 

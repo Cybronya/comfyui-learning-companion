@@ -3,31 +3,34 @@ name: unknown_workflow_generic_935
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.963667
-common_nodes: [Fast Groups Bypasser (rgthree), ImageScale, LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
+coverage: 1
+common_nodes: [ImageResize+, RH_Nano_Banana_Image2Image, SaveImage, ShellAgentPluginInputImage, ShellAgentPluginSaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/同SKU调色_2035992574976073729.json, 图片生成/图生图/独立站改尺寸_2089981291298115586.json, 图片生成/文生图/TK改尺寸_2096859444712927234.json]
+members: [图片生成/图生图/-全能图片V1-多角色打起来自制动作MS_1962418519176515586.json, 图片生成/图生图/-全能图片V1-蜡笔小新风格转换ms自用_1961659460555096065.json, 图片生成/图生图/一键生成二次元coser老婆_1962764039917056001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_935
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/同SKU调色_2035992574976073729.json、图片生成/图生图/独立站改尺寸_2089981291298115586.json、图片生成/文生图/TK改尺寸_2096859444712927234.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-多角色打起来自制动作MS_1962418519176515586.json、图片生成/图生图/-全能图片V1-蜡笔小新风格转换ms自用_1961659460555096065.json、图片生成/图生图/一键生成二次元coser老婆_1962764039917056001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `ImageScale`
-- `LoadImage`
-- `RH_RhartImageNG31FlashImageToImage`
+- `ImageResize+`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
+- `ShellAgentPluginInputImage`
+- `ShellAgentPluginSaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/3 个有
 
 ## 典型参数
 

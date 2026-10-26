@@ -1,91 +1,57 @@
 ---
 name: unknown_workflow_video_sampler_vae_120
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.899
-common_nodes: [DWPreprocessor, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatch, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, SimpleMath+, VHS_BatchManager, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
+coverage: 0.89175
+common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/转绘循环-8帧重叠_1942816632961961986.json, 视频生成/文生视频/Wan 2.2 姿态引导下的 SVI 2.0 视频到视频无限循环延长与高一致性生成工作流_1998603727122653185.json, 视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环姿态引导控制+参考_1967140300189786113.json, 视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环深度引导控制+参考_1967169915356581890.json, 视频生成/文生视频/无限时长视频转绘Lynx+InfiniteTalk+VACE_1976202797450428418.json]
+members: [图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json, 视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json, 视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json, 视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_120
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/转绘循环-8帧重叠_1942816632961961986.json、视频生成/文生视频/Wan 2.2 姿态引导下的 SVI 2.0 视频到视频无限循环延长与高一致性生成工作流_1998603727122653185.json、视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环姿态引导控制+参考_1967140300189786113.json、视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环深度引导控制+参考_1967169915356581890.json、视频生成/文生视频/无限时长视频转绘Lynx+InfiniteTalk+VACE_1976202797450428418.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json、视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json、视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json、视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DWPreprocessor`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatch`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `HunyuanImageToVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_BatchManager`
-- `VHS_LoadVideo`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `TextEncodeHunyuanVideo_ImageToVideo`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `WanVideoSetBlockSwap` —— 4/5 个有
-- `WanVideoSetLoRAs` —— 4/5 个有
-- `WanVideoVACEModelSelect` —— 4/5 个有
-- `WanVideoScheduler` —— 3/5 个有
-- `WanVideoSigmaToStep` —— 3/5 个有
-- `easy globalSeed` —— 3/5 个有
-- `LoadLynxResampler` —— 2/5 个有
-- `LynxEncodeFaceIP` —— 2/5 个有
-- `LynxInsightFaceCrop` —— 2/5 个有
-- `MultiTalkModelLoader` —— 2/5 个有
-- `WanVideoAddLynxEmbeds` —— 2/5 个有
-- `WanVideoExtraModelSelect` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `ACE_AudioCrop` —— 1/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `AudioSeparation` —— 1/5 个有
-- `DepthCrafter` —— 1/5 个有
-- `DownloadAndLoadDepthCrafterModel` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MultiTalkWav2VecEmbeds` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `WanVideoEnhanceAVideo` —— 1/5 个有
-- `WanVideoExperimentalArgs` —— 1/5 个有
-- `WanVideoLoraSelectMulti` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoTeaCache` —— 1/5 个有
-- `WanVideoTextEncodeCached` —— 1/5 个有
-- `Wav2VecModelLoader` —— 1/5 个有
-- `floatToText _O` —— 1/5 个有
+- `UNETLoader` —— 3/4 个有
+- `VAEDecode` —— 3/4 个有
+- `SaveWEBM` —— 2/4 个有
+- `ImageFromBatch` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `SaveAnimatedWEBP` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

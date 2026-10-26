@@ -3,30 +3,30 @@ name: text_to_image_sampler_clip_unet_102
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.974
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.923714
+common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/qwen-image+提示词扩写+8步快速lora_1956256254878470146.json, 图片生成/文生图/zimage文生图_2004814222078996481.json, 图片生成/文生图/写实 文生图_2068912035760529409.json, 图片生成/文生图/太猛了！Z-image文生图新王-支持中文！_1995051018658492417.json, 图片生成/文生图/徽派建筑klein_2063615144353165314.json, 图片生成/文生图/怀旧农村写实风格工作流_2000925300957605889.json, 图片生成/文生图/提示词扩写+z-image文生图___qwen-image文生图_2049685174404829186.json]
+members: [图片生成/图生图/无损扩图 360度lora工作流_1990199382748393474.json, 图片生成/文生图/1.FLUX1 文生图工作流_2043903853527048193.json, 图片生成/文生图/FLUX + LoRA 文生图工作流_2087432058120523777.json, 图片生成/文生图/FLUX + 加速LoRA 文生图工作流_2039621959402659841.json, 图片生成/文生图/Kontext 功能大全-(卷心菜YA )_1942874687296704513.json, 图片生成/文生图/喜剧复古动漫风格2.0_1942404910103080961.json, 视频生成/图生视频/kontext 360度lora工作流_1947265490784784385.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_102
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/qwen-image+提示词扩写+8步快速lora_1956256254878470146.json、图片生成/文生图/zimage文生图_2004814222078996481.json、图片生成/文生图/写实 文生图_2068912035760529409.json、图片生成/文生图/太猛了！Z-image文生图新王-支持中文！_1995051018658492417.json、图片生成/文生图/徽派建筑klein_2063615144353165314.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/无损扩图 360度lora工作流_1990199382748393474.json、图片生成/文生图/1.FLUX1 文生图工作流_2043903853527048193.json、图片生成/文生图/FLUX + LoRA 文生图工作流_2087432058120523777.json、图片生成/文生图/FLUX + 加速LoRA 文生图工作流_2039621959402659841.json、图片生成/文生图/Kontext 功能大全-(卷心菜YA )_1942874687296704513.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `FluxGuidance`
 - `KSampler`
 - `SaveImage`
 - `UNETLoader`
@@ -34,44 +34,46 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 5/7 个有
-- `ModelSamplingAuraFlow` —— 2/7 个有
-- `QwenLoader` —— 2/7 个有
-- `ShowText|pysssss` —— 2/7 个有
-- `WanVideoPromptExtender` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `PreviewImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `FluxKontextImageScale` —— 4/7 个有
+- `LoadImage` —— 4/7 个有
+- `Kontext Inpainting Conditioning` —— 2/7 个有
+- `LoraLoader` —— 2/7 个有
+- `ReferenceLatent` —— 2/7 个有
+- `VAEEncode` —— 2/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
+- `ImageStitch` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.9 - 1 | 5 | 96% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1080 | 720 - 1920 | 7 | 65% |
-| 高度 | 1280 | 1024 - 1920 | 7 | 74% |
-| 采样步数 | 8 | 4 - 10 | 7 | 70% |
+| 采样步数 | 20 | 8 - 28 | 7 | 60% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 71% |
-| 调度器 | simple | - | 7 | 71% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 86% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 1504 | 768 - 1536 | 7 | 76% |
+| 高度 | 1000 | 768 - 1504 | 7 | 75% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.9 - 1，5 个样本，取值集中（一致性 96%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 720 - 1920，7 个样本
-- 高度 中位数 1280，观测区间 1024 - 1920，7 个样本
-- 采样步数 中位数 8，观测区间 4 - 10，7 个样本
+- 采样步数 中位数 20，观测区间 8 - 28，7 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 71%
-- 调度器 最常用 simple，7 个样本，一致性 71%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 86%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1504，观测区间 768 - 1536，7 个样本
+- 高度 中位数 1000，观测区间 768 - 1504，7 个样本

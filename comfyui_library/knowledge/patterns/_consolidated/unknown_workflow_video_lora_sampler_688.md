@@ -2,76 +2,83 @@
 name: unknown_workflow_video_lora_sampler_688
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.466667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.954667
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CFGGuider, CLIPTextEncode, DF_Int_to_Float, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, JWIntegerToString, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PreviewAudio, RandomNoise, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SamplerCustomAdvanced, SamplerEulerAncestral, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy getNode, easy int, easy setNode, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/1-Aiden-MiniMax-H3-疯狂测试工作流！！！！_2093054855547015170.json, 视频生成/文生视频/H3全能参考短剧工作流_2108172108395278338.json, 视频生成/文生视频/H3长视频衔接（尾帧22帧锚点）_2108174255279140865.json]
+members: [视频生成/图生视频/LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致性_去字幕全面优化版_2051564460493557762.json, 视频生成/图生视频/LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致性_去字幕全面优化版_2051946649047576577.json, 视频生成/图生视频/VOXCPM2 +LTX 2.3 数字人图生视频V3_2051952349974937602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_688
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1-Aiden-MiniMax-H3-疯狂测试工作流！！！！_2093054855547015170.json、视频生成/文生视频/H3全能参考短剧工作流_2108172108395278338.json、视频生成/文生视频/H3长视频衔接（尾帧22帧锚点）_2108174255279140865.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致性_去字幕全面优化版_2051564460493557762.json、视频生成/图生视频/LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致性_去字幕全面优化版_2051946649047576577.json、视频生成/图生视频/VOXCPM2 +LTX 2.3 数字人图生视频V3_2051952349974937602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `DF_Int_to_Float`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
+- `Int`
+- `JWIntegerToString`
 - `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `PreviewAudio`
 - `RandomNoise`
-- `ResolutionSelector`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SamplerEulerAncestral`
+- `SetLatentNoiseMask`
+- `ShowAnything|Mie`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy getNode`
+- `easy int`
+- `easy setNode`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
 - `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `InversionDemoLazyIndexSwitch` —— 1/3 个有
-- `LTXVConcatAVLatent` —— 1/3 个有
-- `LTXVSeparateAVLatent` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `MiniMaxH3AddGuide` —— 1/3 个有
-- `MiniMaxH3SigmaShift` —— 1/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
-- `easy int` —— 1/3 个有
-- `easy positive` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -79,4 +86,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

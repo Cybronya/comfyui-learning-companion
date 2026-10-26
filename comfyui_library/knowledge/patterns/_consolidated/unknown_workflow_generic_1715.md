@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1715
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [LoadAudio, LoadImage, SaveAudio, TextInput_, easy showAnything]
+coverage: 0.4595
+common_nodes: [Comfly_Googel_Veo3, LoadImage, RH_Translator, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json, 音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json]
+members: [视频生成/图生视频/全能视频V3.1+你的名字+爆款复刻+拍摄现场花絮_2000283848959291394.json, 视频生成/图生视频/全能视频V3.1+最终幻想+爆款复刻+转场粒子效果+首尾帧_2000853660760408065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1715
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json、音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1+你的名字+爆款复刻+拍摄现场花絮_2000283848959291394.json、视频生成/图生视频/全能视频V3.1+最终幻想+爆款复刻+转场粒子效果+首尾帧_2000853660760408065.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `Comfly_Googel_Veo3`
 - `LoadImage`
-- `SaveAudio`
-- `TextInput_`
+- `RH_Translator`
+- `SaveVideo`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 1/2 个有
-- `IndexTTS2_MultiTalk` —— 1/2 个有
-- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
+- `Comfly_api_set` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_190
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.964571
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.935286
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, ImageConcanate, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2 klein 文生图+高清放大_2062019207847567361.json, 图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json, 图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json, 图片生成/文生图/Flux2文生图极速版—阿浩_2029018694231269377.json, 图片生成/文生图/文生图（解禁模型）：Flux.2 Klein 9B_2051283326727663617.json]
+members: [图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json, 图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json, 图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json, 图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json, 图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json, 图片生成/图生图/Flux2-Klein-9b(仅启用图片编辑，可转角度重打光）_2012726330126766082.json, 图片生成/图生图/klein单图编辑——修改版_2033387043891449857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_190
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux2 klein 文生图+高清放大_2062019207847567361.json、图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json、图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json、图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json、图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json、图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json、图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
@@ -28,28 +28,38 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
+- `ImageConcanate`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/7 个有
-- `Int` —— 5/7 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 2/7 个有
-- `LayerUtility: PurgeVRAM` —— 2/7 个有
-- `SeedVR2LoadDiTModel` —— 2/7 个有
-- `SeedVR2LoadVAEModel` —— 2/7 个有
-- `SeedVR2VideoUpscaler` —— 2/7 个有
-- `String Literal` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `GetImageSize` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `ConditioningZeroOut` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `ImageUpscaleWithModel` —— 2/7 个有
+- `JWFloat` —— 2/7 个有
+- `UpscaleModelLoader` —— 2/7 个有
+- `easy imageSize` —— 2/7 个有
 - `CR Text` —— 1/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
+- `ConstrainImage|pysssss` —— 1/7 个有
+- `ImagePadForOutpaint` —— 1/7 个有
 - `Label (rgthree)` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `OpenposePreprocessor` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `QwenMultiangleCameraNode` —— 1/7 个有
+- `QwenMultiangleLightningNode` —— 1/7 个有
+- `easy seed` —— 1/7 个有
 
 ## 典型参数
 

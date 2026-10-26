@@ -1,76 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_11
 type: Unknown Workflow
-frequency: 45
-level: strong
-coverage: 0.874556
-common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, Float, HunyuanVideoFoley, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, Text, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy mathInt, easy showAnything]
+frequency: 47
+level: moderate
+coverage: 0.563043
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, InvertMask, LayerUtility: ImageBlend, LoadImage, MaskToImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json, 视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json, 视频生成/图生视频/bernini人物卡通漫剧多分镜视频生成_2079216311300878337.json, 视频生成/图生视频/bernini图生视频2_2076678007443509249.json, 视频生成/图生视频/bernini多分镜自动扩展提示词_2079559170201837570.json, 视频生成/图生视频/bernini多分镜自动提示词_2076486473653776385.json, 视频生成/图生视频/bernini漫剧图生视频1_2077297515594076162.json, 视频生成/图生视频/bernini自动扩展提示词图生视频_2076302783288008706.json, 视频生成/图生视频/bernini高画质图生视频_2081017151829397505.json, 视频生成/图生视频/人物卡通漫剧图生视频_2081212413805940737.json, 视频生成/图生视频/俏皮少女素材1_2080456381441859585.json, 视频生成/图生视频/俏皮少女素材2_2080483813427343362.json, 视频生成/图生视频/俏皮少女素材3_2080457429132857345.json, 视频生成/图生视频/俏皮少女素材4_2080516332377952258.json, 视频生成/图生视频/叮叮的飞吻_2083468110757187585.json, 视频生成/图生视频/周末愉快_2083807638411894785.json, 视频生成/图生视频/哈哈，好看的裙子，哈哈，很有曲线美_2083501855832895490.json, 视频生成/图生视频/图生视频人物场景漫剧_2081230151186210817.json, 视频生成/图生视频/图生视频漫剧_2080522658558595074.json, 视频生成/图生视频/图生视频鲨喵_2081243950228267010.json, 视频生成/图生视频/多分镜提示词生成视频_2080891153406316545.json, 视频生成/图生视频/多参分镜自动扩展提示词·卡通漫剧_2080857100208664577.json, 视频生成/图生视频/快速高清图生视频_2080244665965699073.json, 视频生成/图生视频/无API手动多分镜自动扩展提示词_2079557430773637122.json, 视频生成/图生视频/最新漫剧自动提示词扩展图到视频_2077431585602891778.json, 视频生成/图生视频/最新自动扩展提示词图生视频1_2077420333774237698.json, 视频生成/图生视频/最新自动扩展提示词图生视频2_2077430810310955010.json, 视频生成/图生视频/漫剧俯拍长镜头_2083497022388269057.json, 视频生成/图生视频/漫剧图生视频_2081693338629140481.json, 视频生成/图生视频/漫剧多参分镜图生视频_2077710494714130434.json, 视频生成/图生视频/漫剧梦幻异世界_2079571585241014274.json, 视频生成/图生视频/漫剧素材奇幻场景1_2079963275604877314.json, 视频生成/图生视频/漫剧素材奇幻场景2_2080167337260568577.json, 视频生成/图生视频/漫剧素材奇幻场景3_2080203702916444161.json, 视频生成/图生视频/漫剧素材奇幻场景4_2080262167093399553.json, 视频生成/图生视频/漫剧素材奇幻场景5_2080279967212064769.json, 视频生成/图生视频/漫剧长镜头图书馆场景_2083527540001566722.json, 视频生成/图生视频/漫剧风格化图像转视频_2083521242224750594.json, 视频生成/图生视频/电商商品拍摄TEST1_2083809381015187458.json, 视频生成/图生视频/电商商品拍摄TEST2_2083816642307514369.json, 视频生成/图生视频/电商商品拍摄TEST3_2083816654127067138.json, 视频生成/图生视频/电商服装时尚大片_2077445647162236930.json, 视频生成/图生视频/高动态漫剧图生视频1_2082704275330920450.json, 视频生成/图生视频/高动态漫剧图生视频_2082719576378400770.json, 视频生成/图生视频/高动态漫剧图生视频_2082730576058081281.json]
+members: [视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选_2021541718369247233.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选工作流_2088990764796825602.json, 视频生成/图生视频/Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.json, 视频生成/图生视频/Wan2.2 角色替换   动作迁移  二创首选_2039620407292076033.json, 视频生成/图生视频/kitten practicing kung fu_2084182943492300802.json, 视频生成/图生视频/kitten practicing kung fu_2091771507398762498.json, 视频生成/图生视频/人物替换     角色替换    二创首选  Wan2.2 wan22_2061909733405188097.json, 视频生成/图生视频/人物替换    角色替换   二创首选  Wan2.2 wan22_2061714173691785218.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045436584266309633.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045756399656898561.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2047879824609386498.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2048374565356707842.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052077583671541761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052089396547072002.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2053480599746293761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061717483219931137.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061732736808873986.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046446441639448578.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2061517996736208897.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2061703653236502530.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2025383055673794562.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2046490215514120193.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2054545413268615170.json, 视频生成/图生视频/双向引导人物主体替换2.2+sec_1984107698880970753.json, 视频生成/图生视频/女装穿搭原图转全身动态短视频 MoCap 动作迁移带货工作流_2077919550741499905.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2041820466159034370.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2044048099055771650.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061522776120446978.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061720298134786049.json, 视频生成/图生视频/角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061525825463341057.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061706268229857282.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿  动作迁移  二创首选_2039303290109825025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2039983104382734337.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047944109041651714.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047960672364929025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2048361532148420610.json, 视频生成/图生视频/角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2039898768174223362.json, 视频生成/图生视频/角色替换  Wan2.2  图生视频_2042073520565391361.json, 视频生成/图生视频/角色替换  人物替换  Wan2.2   动作模仿 动作迁移 二创首选_2047907869110050818.json, 视频生成/图生视频/角色替换 人物替换 动作模仿 动作迁移 二创首选 Wan2.2_2053516783939801089.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2043513913018421250.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2044060077488873474.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052436872852459521.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052759183916843010.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2053154685997068289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 45 个 workflow 归纳得出（视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json、视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json、视频生成/图生视频/bernini人物卡通漫剧多分镜视频生成_2079216311300878337.json、视频生成/图生视频/bernini图生视频2_2076678007443509249.json、视频生成/图生视频/bernini多分镜自动扩展提示词_2079559170201837570.json…）
+> 由 `engine/knowledge_consolidation` 从 47 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选_2021541718369247233.json、视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选工作流_2088990764796825602.json、视频生成/图生视频/Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.json、视频生成/图生视频/Wan2.2 角色替换   动作迁移  二创首选_2039620407292076033.json、视频生成/图生视频/kitten practicing kung fu_2084182943492300802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：45
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：47
+- **可信度**：中等可信
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 45 个 workflow 都包含：
-- `Any To Any`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `Float`
-- `HunyuanVideoFoley`
-- `Int`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 47 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `InvertMask`
+- `LayerUtility: ImageBlend`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_SelectFilename`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy mathInt`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 39/45 个有
-- `TextConcatenate_UTK` —— 39/45 个有
-- `PreviewImage` —— 33/45 个有
-- `RH_Translator` —— 26/45 个有
-- `GoogleTranslateTextNode` —— 13/45 个有
-- `ImageResizeKJv2` —— 12/45 个有
-- `ImageConcatMulti` —— 11/45 个有
-- `ImageConcatenate_UTK` —— 9/45 个有
-- `JDCN_StringToList` —— 9/45 个有
-- `StringReplace` —— 9/45 个有
-- `easy indexAnything` —— 9/45 个有
-- `RHHiddenNodes` —— 6/45 个有
+- `CR Text` —— 46/47 个有
+- `GrowMask` —— 46/47 个有
+- `VHS_VideoInfo` —— 46/47 个有
+- `ImageFromBatch+` —— 45/47 个有
+- `PointsEditor` —— 45/47 个有
+- `PreviewImage` —— 45/47 个有
+- `easy cleanGpuUsed` —— 44/47 个有
+- `JWInteger` —— 38/47 个有
+- `ImageFromBatch` —— 2/47 个有
+- `ImageScaleToTotalPixels` —— 2/47 个有
+- `IndexTTSNode` —— 2/47 个有
+- `MemoryCleaner` —— 2/47 个有
+- `SeedVR2LoadDiTModel` —— 2/47 个有
+- `SeedVR2LoadVAEModel` —— 2/47 个有
+- `SeedVR2VideoUpscaler` —— 2/47 个有
+- `Text Multiline` —— 2/47 个有
+- `easy framesEditor` —— 2/47 个有
+- `GetImageSize` —— 1/47 个有
+- `GrowMaskWithBlur` —— 1/47 个有
+- `PrimitiveInt` —— 1/47 个有
+- `PrimitiveStringMultiline` —— 1/47 个有
+- `WanVideoTorchCompileSettings` —— 1/47 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 45 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 45 | 100% |
-| 采样算法 | 1 | 1 - 1 | 45 | 100% |
-| 调度器 | euler | - | 45 | 100% |
-| 重绘幅度 | simple | - | 45 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，45 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，45 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，45 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，45 个样本，一致性 100%
-- 重绘幅度 最常用 simple，45 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

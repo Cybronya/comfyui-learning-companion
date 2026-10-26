@@ -3,62 +3,66 @@ name: unknown_workflow_upscale_sampler_clip_49
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.784
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8715
+common_nodes: [APersonMaskGenerator, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningAverage, ConditioningZeroOut, DF_Image_scale_to_side, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Florence2ModelLoader, Florence2Run, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageCompositeMasked, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, MaskPreview+, MuyeTextEditOutput, PreviewImage, RandomNoise, ReferenceLatent, ResizeMask, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscaleNoUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageConcat]
 problems: []
 missing: []
-members: [图片生成/图生图/解说漫-Klein角色编辑_2070829957756047362.json, 图片生成/文生图/AA--超快！Klein 9b 文生图+5图编辑+自由多角度图+4K放大_2014671333396848641.json]
+members: [图片生成/图生图/一站式工作流_2028044247143813122.json, 图片生成/图生图/高清_2021574160450854914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_49
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/解说漫-Klein角色编辑_2070829957756047362.json、图片生成/文生图/AA--超快！Klein 9b 文生图+5图编辑+自由多角度图+4K放大_2014671333396848641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一站式工作流_2028044247143813122.json、图片生成/图生图/高清_2021574160450854914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `APersonMaskGenerator`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningAverage`
 - `ConditioningZeroOut`
+- `DF_Image_scale_to_side`
 - `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Florence2ModelLoader`
+- `Florence2Run`
 - `Flux2Scheduler`
 - `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageCompositeMasked`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `PrimitiveInt`
+- `MaskPreview+`
+- `MuyeTextEditOutput`
+- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
+- `ResizeMask`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
 - `UNETLoader`
+- `UltimateSDUpscaleNoUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy float` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

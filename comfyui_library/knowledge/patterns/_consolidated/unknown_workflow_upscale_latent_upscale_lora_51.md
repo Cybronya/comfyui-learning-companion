@@ -1,84 +1,76 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_51
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.5566
-common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FloatConstant, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SimpleMath+, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+coverage: 0.759143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/ZIBT 高清写真图生图20260407_2041177396161810433.json, 图片生成/文生图/Moody文生图_2034202713419948033.json, 图片生成/文生图/YZ金鱼-Moody ZIB+ZIT 文生图_2033524845866127361.json, 图片生成/文生图/ZIB+ZIT-双采文生图_2054942630194229249.json, 图片生成/文生图/双Z高清文生图_2035896757829242882.json]
+members: [视频生成/图生视频/MinimaxH3-turbo-I2V_2094678182095052802.json, 视频生成/图生视频/MinimaxH3-turbo-R2V_2096133628672696321.json, 视频生成/图生视频/双彩去油优化版_2094596803365793793.json, 视频生成/图生视频/双彩去油优化版_2105703775204896770.json, 视频生成/图生视频/双彩去油优化版_2106240702928736257.json, 视频生成/文生视频/MiniMax H3 latent放大模型双采加速 高动态不糊 去油腻 修音频 全能工作流_2090423453655588865.json, 视频生成/文生视频/MinimaxH3-turbo-T2V_2094630845184299009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_51
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/ZIBT 高清写真图生图20260407_2041177396161810433.json、图片生成/文生图/Moody文生图_2034202713419948033.json、图片生成/文生图/YZ金鱼-Moody ZIB+ZIT 文生图_2033524845866127361.json、图片生成/文生图/ZIB+ZIT-双采文生图_2054942630194229249.json、图片生成/文生图/双Z高清文生图_2035896757829242882.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-turbo-I2V_2094678182095052802.json、视频生成/图生视频/MinimaxH3-turbo-R2V_2096133628672696321.json、视频生成/图生视频/双彩去油优化版_2094596803365793793.json、视频生成/图生视频/双彩去油优化版_2105703775204896770.json、视频生成/图生视频/双彩去油优化版_2106240702928736257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `FloatConstant`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSamplerAdvanced`
-- `LatentUpscaleBy`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `SimpleMath+`
+- `MinimaxH3LatentUpscaler3D`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SplitSigmas`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `llama_cpp_instruct_adv` —— 4/5 个有
-- `llama_cpp_model_loader` —— 4/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `DuckHideNode` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `Lora Loader Stack (rgthree)` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `ProcessString` —— 1/5 个有
-- `Qwen3_VQA` —— 1/5 个有
-- `SomethingToString` —— 1/5 个有
-- `TT_img_enc_v2` —— 1/5 个有
-- `TextConcatenate` —— 1/5 个有
-- `ZML_SwitchOutput` —— 1/5 个有
-- `easy promptLine` —— 1/5 个有
+- `LoadImage` —— 6/7 个有
+- `ResolutionSelector` —— 6/7 个有
+- `LoadAudio` —— 5/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 5/7 个有
+- `ExtendIntermediateSigmas` —— 4/7 个有
+- `H3LatentUpscaleByJingchen573` —— 4/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/7 个有
+- `MiniMaxLowVRAMAttention` —— 4/7 个有
+- `ModelAttentionBackend` —— 4/7 个有
+- `PathchSageAttentionKJ` —— 4/7 个有
+- `ShowText|pysssss` —— 4/7 个有
+- `SolAttnMiniMax` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `SolAttnPatch` —— 3/7 个有
+- `easy mathInt` —— 3/7 个有
+- `MiniMaxH3ImageToVideo` —— 2/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `WujiAudioLoader` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 12 | 12 - 15 | 5 | 89% |
-| 采样算法 | 1 | 1 - 4 | 5 | 33% |
-| 调度器 | sa_solver | - | 5 | 60% |
-| 重绘幅度 | beta | - | 5 | 60% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -86,9 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 15，5 个样本，取值集中（一致性 89%）
-- 采样算法 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 33%
-- 调度器 最常用 sa_solver，5 个样本，一致性 60%
-- 重绘幅度 最常用 beta，5 个样本，一致性 60%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

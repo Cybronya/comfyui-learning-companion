@@ -3,59 +3,62 @@ name: text_to_image_lora_sampler_clip_332
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.8315
-common_nodes: [AudioCrop, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, FlashVSRNode, JjkText, KSampler, LoadAudio, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, PrimitiveStringMultiline, ProcessString, SaveAudioAdvanced, SaveImage, SimpleMath+, Sleep, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.653833
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, DapaoImagePadDirectionNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/H3 声音克隆工作流｜上传音频文本即可复刻同款嗓音_2096851493616967681.json, 音频生成/音频生成/H3声音克隆批量版本工作流，音频生成语音克隆批量处理工具_2107972747690332162.json, 音频生成/音频生成/H3声音克隆生成｜音频克隆一键合成高质量语音_2094733831185199106.json, 音频生成/音频生成/H3声音克隆语音复刻｜高保真音频生成制作工具_2096663251756085249.json, 音频生成/音频生成/H3纯声音克隆｜上传音频加文本直接合成音频生成_2088703674741772290.json, 音频生成/音频生成/声音克隆纯音频生成｜H3上传音频内容即可复刻_2089032310741094402.json]
+members: [图片生成/图生图/Qwen 2511 扩图工作流｜画面边界自由延伸_2112436437365903362.json, 图片生成/图生图/Qwen 2511百分比可控扩图，画面精准延展局部重绘不崩_2112647034019864578.json, 图片生成/图生图/Qwen Image 2.1按百分比可控扩图 精准延展画布一键放大_2104685153539936257.json, 图片生成/图生图/Qwen-Image-2.1按百分比可控扩图｜精准延展画布局部重绘，一键放大画布_2104543456440967169.json, 图片生成/图生图/Qwen-Image-2.1百分比可控扩图，画布精准延展一键放大_2112266614245773314.json, 图片生成/图生图/Qwen-Image-2.1百分比可控扩图｜精准延展画布保留构图｜一键放大出全景_2112123239035133954.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_332
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/H3 声音克隆工作流｜上传音频文本即可复刻同款嗓音_2096851493616967681.json、音频生成/音频生成/H3声音克隆批量版本工作流，音频生成语音克隆批量处理工具_2107972747690332162.json、音频生成/音频生成/H3声音克隆生成｜音频克隆一键合成高质量语音_2094733831185199106.json、音频生成/音频生成/H3声音克隆语音复刻｜高保真音频生成制作工具_2096663251756085249.json、音频生成/音频生成/H3纯声音克隆｜上传音频加文本直接合成音频生成_2088703674741772290.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen 2511 扩图工作流｜画面边界自由延伸_2112436437365903362.json、图片生成/图生图/Qwen 2511百分比可控扩图，画面精准延展局部重绘不崩_2112647034019864578.json、图片生成/图生图/Qwen Image 2.1按百分比可控扩图 精准延展画布一键放大_2104685153539936257.json、图片生成/图生图/Qwen-Image-2.1按百分比可控扩图｜精准延展画布局部重绘，一键放大画布_2104543456440967169.json、图片生成/图生图/Qwen-Image-2.1百分比可控扩图，画布精准延展一键放大_2112266614245773314.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioCrop`
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `DapaoImagePadDirectionNode`
 - `EmptyLatentImage`
-- `FlashVSRNode`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
-- `LoraLoaderBypassModelOnly`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MultiTextConcatenate`
-- `PrimitiveStringMultiline`
-- `ProcessString`
-- `SaveAudioAdvanced`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `SaveImage`
-- `SimpleMath+`
-- `Sleep`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 5/6 个有
-- `CR Prompt List` —— 1/6 个有
-- `easy forLoopEnd` —— 1/6 个有
-- `easy forLoopStart` —— 1/6 个有
+- `SeedVR2LoadDiTModel` —— 5/6 个有
+- `SeedVR2LoadVAEModel` —— 5/6 个有
+- `SeedVR2VideoUpscaler` —— 5/6 个有
+- `QwenImage21Cache` —— 4/6 个有
+- `RHHiddenNodes` —— 4/6 个有
+- `TextEncodeQwenImage21` —— 4/6 个有
+- `TextGenerateLTX2Prompt` —— 4/6 个有
+- `easy imageSizeByLongerSide` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `CFGNorm` —— 2/6 个有
+- `ConditioningZeroOut` —— 2/6 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/6 个有
 
 ## 典型参数
 

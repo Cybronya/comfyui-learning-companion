@@ -1,82 +1,105 @@
 ---
 name: unknown_workflow_video_lora_sampler_348
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.932333
-common_nodes: [BasicScheduler, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImpactInt, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 7
+level: moderate
+coverage: 0.808429
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json, 视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json, 视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json, 视频生成/图生视频/新玩意LTX2.3+sulphur 图生视频_2059322431231324161.json]
+members: [视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json, 视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json, 视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json, 视频生成/图生视频/图生视频 BindWeave 双图编辑 · 数字人音色克隆_2029535256906309633.json, 视频生成/文生视频/多重参考生视频（WAN_BindWeave+TTS+MULTITALK）_1990350029464498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_348
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json、视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json、视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json、视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json、视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImpactInt`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptRelaySmartEncode` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `Dapao_LlamaChat` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
-- `LoaderGGUF` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `CR Text Replace` —— 1/6 个有
-- `Fast Bypasser (rgthree)` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `CLIPLoader` —— 5/7 个有
+- `CR Prompt Text` —— 5/7 个有
+- `DrawMaskOnImage` —— 5/7 个有
+- `ImageBatchMulti` —— 5/7 个有
+- `InvertMask` —— 5/7 个有
+- `MaskBatchMulti` —— 5/7 个有
+- `MathExpression|pysssss` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `SaveAudio` —— 5/7 个有
+- `SolidMask` —— 5/7 个有
+- `TextImageEncodeQwenVL` —— 5/7 个有
+- `WanVideoAddBindweaveEmbeds` —— 5/7 个有
+- `WanVideoEncodeLatentBatch` —— 5/7 个有
+- `WanVideoTextEncodeCached` —— 5/7 个有
+- `easy imageRemBg` —— 5/7 个有
+- `LayerUtility: PurgeVRAM` —— 4/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `ImageRemoveBackground+` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `PrimitiveFloat` —— 3/7 个有
+- `TextInput_` —— 3/7 个有
+- `TransparentBGSession+` —— 3/7 个有
+- `easy cleanGpuUsed` —— 3/7 个有
+- `CreateCFGScheduleFloatList` —— 2/7 个有
+- `Float` —— 2/7 个有
+- `INTConstant` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `ImagePadKJ` —— 2/7 个有
+- `JjkText` —— 2/7 个有
+- `MaskPreview+` —— 2/7 个有
+- `Primitive integer [Crystools]` —— 2/7 个有
+- `RMBG` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `WanVideoScheduler` —— 2/7 个有
+- `WanVideoSigmaToStep` —— 2/7 个有
+- `WanVideoContextOptions` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 489 - 489 | 6 | 100% |
-| 高度 | 25 | 24 - 25 | 6 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +107,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 489 - 489，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

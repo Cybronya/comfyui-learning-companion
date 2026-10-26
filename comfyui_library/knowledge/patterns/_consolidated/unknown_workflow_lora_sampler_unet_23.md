@@ -1,73 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_unet_23
 type: Unknown Workflow
-frequency: 18
-level: strong
-coverage: 0.956778
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine]
-problems: [Steps较低可能导致细节不足]
+frequency: 19
+level: moderate
+coverage: 0.873579
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Edit2509多角度分镜直出_1985616988087242754.json, 图片生成/图生图/Qwen Edit2509多角度分镜直出_2002189457388367873.json, 图片生成/图生图/Qwen Image Edit 2511图生图角色多角度版_2053674460150026242.json, 图片生成/图生图/Qwen 三视图 角色多视图 多角度 多视角  Qwen_Edit_2511 图生图_2042105672287916033.json, 图片生成/图生图/Qwen 三视图 角色多视图 多角度 多视角  Qwen_Edit_2511 图生图_2042795583605317634.json, 图片生成/图生图/Qwen 三视图 角色多视图 多角度 多视角  Qwen_Edit_2511 图生图_2042935220361498626.json, 图片生成/图生图/Qwen 图生图 Qwen_Edit_2511 角色多视图 多角度 多视角_2041530373527572482.json, 图片生成/图生图/Qwen 图生图 Qwen_Edit_2511 角色多视图 多角度 多视角_2042104874451603458.json, 图片生成/图生图/Qwen 图生图 Qwen_Edit_2511 角色多视图 多角度 多视角_2042511034333798401.json, 图片生成/图生图/Qwen 图生图 角色多视图 多角度 多视角 Qwen_Edit_2511_2042106304688300033.json, 图片生成/图生图/Qwen-Image-Edit 2511 一图转多视角保持角色一致性（提示词版）_2051930740379668481.json, 图片生成/图生图/Qwen2511多角度生成-URL版_2018176771971096578.json, 图片生成/图生图/Qwen_Edit_2511 角色多视图 多角度 多视角_2037166069290373121.json, 图片生成/图生图/qwen 图生图 IP角色 多视图  多视角  Qwen_Edit_2511_2041716661635522562.json, 图片生成/图生图/一键分镜图生图—多视图+多角度+多视角，可自行调整_2094742222590795777.json, 图片生成/图生图/一键生多图分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2069243753457610754.json, 图片生成/图生图/千问-多角度分镜直出_1996116204152668162.json, 视频生成/图生视频/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2079109724708102146.json]
+members: [视频生成/图生视频/Minimax H3-360度视频生成_2108541709025112066.json, 视频生成/图生视频/Minimax H3-加速双采-self-lift工作流_2097544900240822273.json, 视频生成/图生视频/Minimax-H3-多参Singularity-V2版_2113596965647896577.json, 视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097641972067557378.json, 视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097665516235223042.json, 视频生成/图生视频/Minimax-h3-多参视频生成（不油、不偏色及一致性好）_2107461072583221250.json, 视频生成/图生视频/Minimax_H3-加速双采-self-lift工作流_2099777362543075329.json, 视频生成/图生视频/Minimax_H3-加速双采-self-lift工作流_2100037395591815170.json, 视频生成/图生视频/minimax-H3超写实颜值赛道起号神器_2113569756015054850.json, 视频生成/图生视频/minimax-H3超写实颜值赛道起号神器_2113599325896003585.json, 视频生成/图生视频/【开源】MiniMax-H3 加速双采-self-lift_2099618432286281730.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100021900394192897.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100184323868680193.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2101869698915856385.json, 视频生成/图生视频/参考图生视频｜Self-Lift 双采·5秒预检_2098678648126664705.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2100028907868213250.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2101556853078585345.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流_2099386693676785665.json, 视频生成/图生视频/黑科技加速双采-self-lift高动态_2102398843047469057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_23
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Qwen Edit2509多角度分镜直出_1985616988087242754.json、图片生成/图生图/Qwen Edit2509多角度分镜直出_2002189457388367873.json、图片生成/图生图/Qwen Image Edit 2511图生图角色多角度版_2053674460150026242.json、图片生成/图生图/Qwen 三视图 角色多视图 多角度 多视角  Qwen_Edit_2511 图生图_2042105672287916033.json、图片生成/图生图/Qwen 三视图 角色多视图 多角度 多视角  Qwen_Edit_2511 图生图_2042795583605317634.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/Minimax H3-360度视频生成_2108541709025112066.json、视频生成/图生视频/Minimax H3-加速双采-self-lift工作流_2097544900240822273.json、视频生成/图生视频/Minimax-H3-多参Singularity-V2版_2113596965647896577.json、视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097641972067557378.json、视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097665516235223042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：19
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `CFGNorm`
+全部 19 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 16/18 个有
-- `Text Multiline` —— 16/18 个有
-- `PreviewImage` —— 9/18 个有
-- `CR Model Input Switch` —— 2/18 个有
-- `PrimitiveStringMultiline` —— 2/18 个有
-- `Switch any [Crystools]` —— 2/18 个有
-- `CR Text Cycler` —— 1/18 个有
-- `ImageURLLoader` —— 1/18 个有
-- `UnetLoaderGGUF` —— 1/18 个有
+- `MiniMaxH3ReferenceToVideo` —— 18/19 个有
+- `H3SigmaRefiner` —— 17/19 个有
+- `MiniMaxChunkFeedForward` —— 17/19 个有
+- `ModelPreviewOverrideKJ` —— 17/19 个有
+- `PrimitiveStringMultiline` —— 16/19 个有
+- `VHS_VideoCombine` —— 16/19 个有
+- `MiniMaxLowVRAMAttention` —— 15/19 个有
+- `CreateVideo` —— 14/19 个有
+- `LoadAudio` —— 4/19 个有
+- `BlockSparseAttention` —— 3/19 个有
+- `PreviewImage` —— 3/19 个有
+- `SaveVideo` —— 3/19 个有
+- `EmptyImage` —— 2/19 个有
+- `LoraLoaderBypassModelOnly` —— 2/19 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/19 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/19 个有
+- `MiniMaxH3SigmaShift` —— 2/19 个有
+- `StringFormat` —— 2/19 个有
+- `Text` —— 2/19 个有
+- `easy cleanGpuUsed` —— 2/19 个有
+- `CR Prompt Text` —— 1/19 个有
+- `MiniMaxH3ImageToVideo` —— 1/19 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 18 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 94% |
-| 调度器 | simple | - | 18 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，18 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 94%
-- 调度器 最常用 simple，18 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

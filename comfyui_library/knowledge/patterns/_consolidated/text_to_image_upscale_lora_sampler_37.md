@@ -1,80 +1,77 @@
 ---
 name: text_to_image_upscale_lora_sampler_37
 type: Text To Image
-frequency: 6
-level: strong
-coverage: 0.909
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyLatentImage, ImageScale, JjkText, KSampler, LoraLoaderModelOnly, PreviewImage, QZ_ResolutionPreset, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMathDual+, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy seed, solarL_SaveImagesToZip]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: moderate
+coverage: 0.924857
+common_nodes: [CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, ImageScale, ImageUpscaleWithModel, KSampler, LoraLoader, SaveImage, UpscaleModelLoader, VAEDecodeTiled, VAEEncodeTiled]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1场景4K 超高清场景图生成_2105424857071710209.json, 图片生成/文生图/Qwen Image 2.1场景4K 超高清场景图生成_2105426302470803457.json, 图片生成/文生图/Qwen Image 2.1场景4K文生图，高质量场景生成工作流_2102852270667943937.json, 图片生成/文生图/Qwen-Image-2.1场景4K版｜文生图场景大片轻松出_2105270809030905857.json, 图片生成/文生图/Qwen-Image-2.1场景4K｜文生图高清放大细节拉满_2105269192474841090.json, 图片生成/文生图/Qwen_Image_2.1场景4K文生图，高质量场景生成工作流_2105849610391609345.json]
+members: [图片生成/文生图/ChenkinNoobXL文生图工作流_2091808819218309122.json, 图片生成/文生图/Illustrious+二次元动漫插画工作流_2028299693389783042.json, 图片生成/文生图/SDXL Illustrious 2d cg插画工作流_1977304880945733633.json, 图片生成/文生图/SDXL+Illustrious+二次元动漫插画工作流_2010926888553811969.json, 图片生成/文生图/SDXL+Illustrious+二次元动漫插画工作流_2049309152706568194.json, 图片生成/文生图/【文生图】Illustrious+DPM+++全节点注释_2058772797203247105.json, 图片生成/文生图/【文生图】流光溢彩 · Illustrious五重绘卷_2054181305167958017.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_37
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1场景4K 超高清场景图生成_2105424857071710209.json、图片生成/文生图/Qwen Image 2.1场景4K 超高清场景图生成_2105426302470803457.json、图片生成/文生图/Qwen Image 2.1场景4K文生图，高质量场景生成工作流_2102852270667943937.json、图片生成/文生图/Qwen-Image-2.1场景4K版｜文生图场景大片轻松出_2105270809030905857.json、图片生成/文生图/Qwen-Image-2.1场景4K｜文生图高清放大细节拉满_2105269192474841090.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/ChenkinNoobXL文生图工作流_2091808819218309122.json、图片生成/文生图/Illustrious+二次元动漫插画工作流_2028299693389783042.json、图片生成/文生图/SDXL Illustrious 2d cg插画工作流_1977304880945733633.json、图片生成/文生图/SDXL+Illustrious+二次元动漫插画工作流_2010926888553811969.json、图片生成/文生图/SDXL+Illustrious+二次元动漫插画工作流_2049309152706568194.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `CLIPSetLastLayer`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `ImageScale`
-- `JjkText`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QZ_ResolutionPreset`
+- `LoraLoader`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMathDual+`
-- `TextEncodeQwenImage21`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `easy seed`
-- `solarL_SaveImagesToZip`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 5/6 个有
-- `EmptyImage` —— 1/6 个有
+- `VAEDecode` —— 5/7 个有
+- `easy promptLine` —— 3/7 个有
+- `CR Text` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 832 | 768 - 1984 | 7 | 57% |
+| 高度 | 1216 | 1120 - 1984 | 7 | 79% |
+| 采样步数 | 35 | 20 - 35 | 7 | 84% |
+| Prompt 约束强度(CFG) | 4 | 4 - 5 | 7 | 90% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 7 | 57% |
+| 调度器 | karras | - | 7 | 86% |
+| 重绘幅度 | 1 | 0.45 - 1 | 7 | 70% |
+| LoRA 模型强度 | 1 | 0.3 - 1 | 7 | 60% |
+| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 832，观测区间 768 - 1984，7 个样本
+- 高度 中位数 1216，观测区间 1120 - 1984，7 个样本
+- 采样步数 中位数 35，观测区间 20 - 35，7 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 5，7 个样本，取值集中（一致性 90%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，7 个样本，一致性 57%
+- 调度器 最常用 karras，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 0.45 - 1，7 个样本
+- LoRA 模型强度 中位数 1，观测区间 0.3 - 1，7 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

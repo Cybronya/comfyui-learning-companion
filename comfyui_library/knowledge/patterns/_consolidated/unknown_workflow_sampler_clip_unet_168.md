@@ -2,29 +2,29 @@
 name: unknown_workflow_sampler_clip_unet_168
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.860375
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.868875
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【老金驿站】Z-anime满血文生图工作流_2046119986116173825.json, 图片生成/文生图/【老金驿站】Z-image高清细节DejpegV2_1997835100480016386.json, 图片生成/文生图/【老金驿站】z-image8步文生图工作流_1994293848790728706.json, 图片生成/文生图/【阡陌】Ovis Image文生图工作流_1999424887913578498.json, 图片生成/文生图/【阡陌】Qwen-Image-2512 + 4步加速lora文生图工作流_2008154394784702466.json, 图片生成/文生图/【阡陌】Z-Image随机多样性增强文生图工作流_2009600567135444994.json, 图片生成/文生图/【阡陌】双截棍Nunchaku Z-Image极速文生图工作流_2011317669181526017.json, 图片生成/文生图/基础案例basic_switch_node+全节点注释_2055478851081383937.json]
+members: [图片生成/文生图/Qwen-Image-Pruning版本更低显存质量一致_1968866874069065729.json, 图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json, 图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json, 图片生成/文生图/Z-image-base文生图8部加速版_2033075055076319234.json, 图片生成/文生图/唯一讲述着专用Z-image造像_2000531408500162562.json, 图片生成/文生图/小说推文古风小说推文抖音超火_1991148887255920641.json, 图片生成/文生图/沙雕动漫修仙玄幻人物三视图（加速版）_1988478076659130370.json, 图片生成/文生图/沙雕动漫怪兽神兽多视图三视图（加速版）_2002568995201007617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_168
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/【老金驿站】Z-anime满血文生图工作流_2046119986116173825.json、图片生成/文生图/【老金驿站】Z-image高清细节DejpegV2_1997835100480016386.json、图片生成/文生图/【老金驿站】z-image8步文生图工作流_1994293848790728706.json、图片生成/文生图/【阡陌】Ovis Image文生图工作流_1999424887913578498.json、图片生成/文生图/【阡陌】Qwen-Image-2512 + 4步加速lora文生图工作流_2008154394784702466.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-Pruning版本更低显存质量一致_1968866874069065729.json、图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json、图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json、图片生成/文生图/Z-image-base文生图8部加速版_2033075055076319234.json、图片生成/文生图/唯一讲述着专用Z-image造像_2000531408500162562.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
 - `KSampler`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
@@ -33,28 +33,32 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `LoadImage` —— 4/8 个有
-- `ConditioningZeroOut` —— 3/8 个有
-- `ConditioningNoiseInjection` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
-- `CLIPLoaderGGUF` —— 1/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `MuyeSizeSelector` —— 1/8 个有
-- `NunchakuZImageDiTLoader` —— 1/8 个有
-- `PrimitiveBoolean` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `Text Multiline` —— 7/8 个有
+- `EmptySD3LatentImage` —— 4/8 个有
+- `RMBG` —— 4/8 个有
+- `SDXLEmptyLatentSizePicker+` —— 4/8 个有
+- `easy promptConcat` —— 3/8 个有
+- `CR Text Concatenate` —— 2/8 个有
+- `DyPE_FLUX` —— 2/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
+- `ConditioningZeroOut` —— 1/8 个有
+- `LoraLoader` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 4 - 50 | 8 | 2% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 8 | 18% |
-| 采样算法 | euler | - | 8 | 50% |
+| 宽度 | 832x1152 (0.72) | - | 4 | 50% |
+| 高度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 8 | 4 - 20 | 8 | 41% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 8 | 58% |
+| 采样算法 | euler | - | 8 | 88% |
 | 调度器 | simple | - | 8 | 88% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -64,9 +68,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 4 - 50，8 个样本，取值分散，一致性仅 2%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，8 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 euler，8 个样本，一致性 50%
+- 宽度 最常用 832x1152 (0.72)，4 个样本，一致性 50%
+- 高度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 20，8 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，8 个样本
+- 采样算法 最常用 euler，8 个样本，一致性 88%
 - 调度器 最常用 simple，8 个样本，一致性 88%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 高发问题（6/8 个样本）：Steps较低可能导致细节不足

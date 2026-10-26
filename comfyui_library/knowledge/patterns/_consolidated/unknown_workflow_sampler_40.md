@@ -3,39 +3,36 @@ name: unknown_workflow_sampler_40
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.734
-common_nodes: [ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LoadImage, LoadLBMModel, PreviewImage, SaveImage, TransparentBGSession+]
+coverage: 0.94375
+common_nodes: [DF_Get_image_size, ImageStitch, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json, 图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json, 图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json, 视频生成/图生视频/LBM-换背景的重打光优化_1922624982000746497.json]
+members: [图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json, 图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json, 图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json, 图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_40
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json、图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json、图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json、视频生成/图生视频/LBM-换背景的重打光优化_1922624982000746497.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json、图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json、图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json、图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageCompositeMasked`
-- `ImageRemoveBackground+`
-- `ImageResizeKJv2`
-- `LBMSampler`
+- `DF_Get_image_size`
+- `ImageStitch`
 - `LoadImage`
-- `LoadLBMModel`
-- `PreviewImage`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
 - `SaveImage`
-- `TransparentBGSession+`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
 
 ## 典型参数
 

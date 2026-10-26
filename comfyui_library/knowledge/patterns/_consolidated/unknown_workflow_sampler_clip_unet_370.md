@@ -2,65 +2,45 @@
 name: unknown_workflow_sampler_clip_unet_370
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.649
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, FluxKontextMultiReferenceLatentMethod, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.877
+common_nodes: [CLIPTextEncode, ImageScale, LoadImage, PreviewImage, QuadrupleCLIPLoader, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, workflow>IP2PSampler]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json, 图片生成/文生图/yxmys-遗物生成_2039166117398192130.json, 图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json]
+members: [图片生成/图生图/图像编辑HiDream-E1.1｜图像编辑_1947605353364185089.json, 图片生成/图生图/图像编辑HiDream-E1.1｜图像风格转换_1947604199786881026.json, 图片生成/图生图/图像编辑模型HiDream-E1.1基础工作流_1945701195933732866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_370
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json、图片生成/文生图/yxmys-遗物生成_2039166117398192130.json、图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像编辑HiDream-E1.1｜图像编辑_1947605353364185089.json、图片生成/图生图/图像编辑HiDream-E1.1｜图像风格转换_1947604199786881026.json、图片生成/图生图/图像编辑模型HiDream-E1.1基础工作流_1945701195933732866.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxKontextMultiReferenceLatentMethod`
-- `KSamplerSelect`
-- `ModelSamplingAuraFlow`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ImageScale`
+- `LoadImage`
+- `PreviewImage`
+- `QuadrupleCLIPLoader`
 - `SaveImage`
-- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `workflow>IP2PSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `AV_LoraLoader` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `MultiTextConcatenate` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `GetImageSize` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `ReferenceLatent` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `PIP_图像联结` —— 2/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,5 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

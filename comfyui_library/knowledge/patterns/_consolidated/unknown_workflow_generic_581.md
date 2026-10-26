@@ -3,32 +3,41 @@ name: unknown_workflow_generic_581
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6478
-common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
+coverage: 0.6838
+common_nodes: [AddBackgroundNode, HivisionLayOutNode, HivisionNode, LaterProcessNode, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json, 视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json, 视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json, 视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json, 视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json]
+members: [图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json, 图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json, 图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json, 图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json, 图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_581
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json、视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json、视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json、视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json、视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json、图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json、图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json、图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json、图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `JjkText`
+- `AddBackgroundNode`
+- `HivisionLayOutNode`
+- `HivisionNode`
+- `LaterProcessNode`
 - `LoadImage`
-- `PreviewAny`
-- `RHHiddenNodes`
-- `RH_Wan26_I2V`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `AddWaterMarkNode` —— 4/5 个有
+- `ZHHivisionParamsNode` —— 3/5 个有
+- `ENHivisionParamsNode` —— 2/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `SetNode` —— 1/5 个有
 
 ## 典型参数
 

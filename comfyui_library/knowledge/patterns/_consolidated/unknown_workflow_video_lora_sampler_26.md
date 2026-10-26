@@ -3,51 +3,91 @@ name: unknown_workflow_video_lora_sampler_26
 type: Unknown Workflow
 frequency: 28
 level: moderate
-coverage: 0.919536
-common_nodes: [Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.560571
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/上传图片就可实现泼水变装_2035705926753193985.json, 视频生成/图生视频/全民秀肌肉+kj通义万相=艾橘溪_1900164696572571649.json, 视频生成/图生视频/全民秀肌肉+kj通义万相，大国之风！_2036986018880036866.json, 视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1930223716829970433.json, 视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1956253952461426689.json, 视频生成/图生视频/泼水变装+换装=通义万相_1996610177388388353.json, 视频生成/图生视频/泼水变装+换装=通义万相_2065267287250259969.json, 视频生成/图生视频/泼水变装+换装_1953668981687287809.json, 视频生成/图生视频/泼水变装+换装_1976135458428162050.json, 视频生成/图生视频/泼水变装+换装_2006375007433269250.json, 视频生成/图生视频/泼水变装_1976842256592392193.json, 视频生成/图生视频/泼水变装_1977972192019447810.json, 视频生成/图生视频/泼水变装_1978305034586873857.json, 视频生成/图生视频/通义万相模型：泼水变装与换装特效视频制作工作流_2018188936127975425.json, 视频生成/图生视频/通义万相模型：泼水变装与换装特效视频制作工作流_2068686422604861441.json, 视频生成/图生视频/通义万相视频生成加速版_1932259606163353602.json, 视频生成/文生视频/WAN2.1 泼水换装 画风真实 运行流畅 可更换lora_1931880994263990273.json, 视频生成/文生视频/WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json, 视频生成/文生视频/WAN2.1+运镜能量光柱特效+可更换lora_1932238187564101633.json, 视频生成/文生视频/wan2.1 美女做鬼脸 伸舌头表情视频动画_1932596754137411585.json, 视频生成/文生视频/最新WAN2.1 步行街美女团队走向镜头动画_1932262844979736577.json, 视频生成/文生视频/泼水变装+换装=通义万相_1951219952894324738.json, 视频生成/文生视频/泼水变装+换装_1950029325979533313.json, 视频生成/文生视频/泼水变装+换装_1991050908614205442.json, 视频生成/文生视频/泼水变装-通义万相_1944994913614483458.json, 视频生成/文生视频/泼水变装666_1942406850870710274.json, 视频生成/文生视频/泼水变装_1940983307876331522.json, 视频生成/文生视频/泼水变装_1942044343698145281.json]
+members: [视频生成/图生视频/CG迷-SCAIL动物多人跳舞视频工作流_2014280344236724226.json, 视频生成/图生视频/MT动作_2015659195076452354.json, 视频生成/图生视频/SCAIL AI舞蹈生成：一键创造小猫小狗人物多人跳舞视频，支持多人多动物动作跳舞模仿_2015270492097220610.json, 视频生成/图生视频/SCAIL 动物多人跳舞小猫小狗人物跳舞视频工作流 scaila 多人跳舞跨物种舞蹈合拍生成神器_2015747193864462338.json, 视频生成/图生视频/SCAIL 单人_双人，支持丝滑转身，Q版，动物等角色，支持不同构图_2007356620417798146.json, 视频生成/图生视频/SCAIL 多人动作迁移_2001530537791614977.json, 视频生成/图生视频/SCAIL 多人物动作参考（表情、运镜、动作多重参考）_2001210850083995649.json, 视频生成/图生视频/SCAIL动物多人跳舞小猫小狗人物跳舞视频工作流scaila多人跳舞_2014586479497977857.json, 视频生成/图生视频/SCAIL动物多人跳舞视频工作流 林耀_2015807283493605378.json, 视频生成/图生视频/SCAIL动物多人跳舞视频工作流_2060202407728074754.json, 视频生成/图生视频/SCAIL动物多人跳舞视频工作流_2061258943049068546.json, 视频生成/图生视频/SCAIL动物多人跳舞视频工作流_2070055592605081601.json, 视频生成/图生视频/SCAIL动物多人跳舞视频工作流_2070875275063283713.json, 视频生成/图生视频/SCAIL单人多人动作迁移（支持Q版动漫人物宠物）_2003797202612961282.json, 视频生成/图生视频/SCAIL单人多人动作迁移（支持Q版动漫人物宠物）_2013930664512462850.json, 视频生成/图生视频/SCAIL多动物+多人跳舞视频_2070419354554036226.json, 视频生成/图生视频/单人_多人动作迁移（支持Q版动漫人物宠物）_2016200341376737281.json, 视频生成/图生视频/单人多人动作迁移 运镜迁移 Scail-一键切换综合版_2002182497679077377.json, 视频生成/图生视频/图生视频-SCAIL动作多人跳舞视频工作流_2063413138116145153.json, 视频生成/图生视频/多人动作迁移 单人动作迁移 Scail综合版_1996588683803369474.json, 视频生成/图生视频/多人动作迁移 单人动作迁移 Scail综合版_2058885569916264450.json, 视频生成/图生视频/多人跳舞视频工作流 (1)_2061338178342178818.json, 视频生成/图生视频/多人（动物）跳舞 完美迁移动作_2057470162856665090.json, 视频生成/图生视频/小动物跳舞一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿动作舞蹈模_2014580771620659201.json, 视频生成/图生视频/最强动作迁移，单人_多人_非人类，支持运镜_长视频_2016085257711263746.json, 视频生成/图生视频/最强动作迁移，单人_多人_非人类，支持运镜_长视频（优化版）_2022569352733663234.json, 视频生成/图生视频/最强动作迁移，单人_多人_非人类，支持运镜_长视频（优化版）_2063499066276925442.json, 视频生成/图生视频/王府甄选SCAIL动物多人跳舞视频工作流_2057793982742228993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_26
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/上传图片就可实现泼水变装_2035705926753193985.json、视频生成/图生视频/全民秀肌肉+kj通义万相=艾橘溪_1900164696572571649.json、视频生成/图生视频/全民秀肌肉+kj通义万相，大国之风！_2036986018880036866.json、视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1930223716829970433.json、视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1956253952461426689.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/CG迷-SCAIL动物多人跳舞视频工作流_2014280344236724226.json、视频生成/图生视频/MT动作_2015659195076452354.json、视频生成/图生视频/SCAIL AI舞蹈生成：一键创造小猫小狗人物多人跳舞视频，支持多人多动物动作跳舞模仿_2015270492097220610.json、视频生成/图生视频/SCAIL 动物多人跳舞小猫小狗人物跳舞视频工作流 scaila 多人跳舞跨物种舞蹈合拍生成神器_2015747193864462338.json、视频生成/图生视频/SCAIL 单人_双人，支持丝滑转身，Q版，动物等角色，支持不同构图_2007356620417798146.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：28
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 28 个 workflow 都包含：
-- `Int`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 27/28 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 26/28 个有
-- `MathExpression|pysssss` —— 26/28 个有
-- `LayerUtility: PurgeVRAM` —— 14/28 个有
-- `WanVideoClipVisionEncode` —— 14/28 个有
-- `WanVideoImageClipEncode` —— 14/28 个有
-- `WanVideoImageToVideoEncode` —— 14/28 个有
-- `ImageSizeAndBatchSize` —— 12/28 个有
-- `WanVideoTeaCache` —— 2/28 个有
-- `ImageScale` —— 1/28 个有
-- `RIFE VFI` —— 1/28 个有
+- `INTConstant` —— 27/28 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 26/28 个有
+- `GetNode` —— 26/28 个有
+- `DWPreprocessor` —— 25/28 个有
+- `LoadWanVideoT5TextEncoder` —— 25/28 个有
+- `SimpleMath+` —— 25/28 个有
+- `WanVideoTextEncode` —— 25/28 个有
+- `Int` —— 24/28 个有
+- `CR Text` —— 21/28 个有
+- `LoadNLFModel` —— 21/28 个有
+- `SDPoseOODLoader` —— 21/28 个有
+- `SDPoseOODProcessor` —— 21/28 个有
+- `YOLOModelLoader` —— 21/28 个有
+- `ImageConcatMulti` —— 20/28 个有
+- `GroundingDinoModelLoader_SDPose` —— 19/28 个有
+- `VHS_VideoInfoLoaded` —— 18/28 个有
+- `WanVideoEncode` —— 14/28 个有
+- `WanVideoUni3C_ControlnetLoader` —— 14/28 个有
+- `WanVideoUni3C_embeds` —— 14/28 个有
+- `GetImageSizeAndCount` —— 10/28 个有
+- `WanVideoSetBlockSwap` —— 10/28 个有
+- `DownloadAndLoadNLFModel` —— 7/28 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/28 个有
+- `FloatConstant` —— 7/28 个有
+- `GetImageRangeFromBatch` —— 7/28 个有
+- `easy cleanGpuUsed` —— 7/28 个有
+- `TwoWaySwitch` —— 6/28 个有
+- `Any Switch (rgthree)` —— 4/28 个有
+- `PreviewImage` —— 4/28 个有
+- `JjkText` —— 3/28 个有
+- `RIFE VFI` —— 3/28 个有
+- `SimpleCalculatorKJ` —— 3/28 个有
+- `WanVideoTextEncodeCached` —— 3/28 个有
+- `intToFloat _O` —— 3/28 个有
+- `Bookmark (rgthree)` —— 1/28 个有
+- `CR SDXL Aspect Ratio` —— 1/28 个有
+- `MemoryCleaner` —— 1/28 个有
+- `TextBox` —— 1/28 个有
 
 ## 典型参数
 

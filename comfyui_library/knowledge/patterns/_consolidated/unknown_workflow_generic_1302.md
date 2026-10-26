@@ -3,32 +3,38 @@ name: unknown_workflow_generic_1302
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.675
-common_nodes: [DoubaoImageGenerator, LoadImage, SaveImage]
+coverage: 0.799
+common_nodes: [MultiplePathsInput, Qwen3_VQA, RH_Sora2_T2V, SaveVideo, VideoLoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/【阡陌】豆包Seedream 4.0超强单图图像编辑工作流_1966479186854653953.json, 图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json]
+members: [图片生成/反推提示词/Qwen3VL：全系反推提示词，解析图像 DNA，精准复刻！_1981862000647127042.json, 视频生成/文生视频/【阡陌】Qwen3-VL视频反推提示词全能视频S自动文生视频_1983422798716706818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1302
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【阡陌】豆包Seedream 4.0超强单图图像编辑工作流_1966479186854653953.json、图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen3VL：全系反推提示词，解析图像 DNA，精准复刻！_1981862000647127042.json、视频生成/文生视频/【阡陌】Qwen3-VL视频反推提示词全能视频S自动文生视频_1983422798716706818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DoubaoImageGenerator`
-- `LoadImage`
-- `SaveImage`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
+- `RH_Sora2_T2V`
+- `SaveVideo`
+- `VideoLoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ImageLoader` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

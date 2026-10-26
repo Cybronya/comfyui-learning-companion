@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_503
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.3608
-common_nodes: [JjkText, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, 孤海注释]
+coverage: 0.938333
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json, 图片生成/图生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100141125607706626.json, 图片生成/文生图/MJ悠船V7基础流_2058747215417528321.json, 图片生成/文生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2095314632121610241.json, 图片生成/文生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100062487323435009.json]
+members: [视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json, 视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json, 视频生成/图生视频/超能视频2.0-全能参考 生真人视频_2039220191824973826.json, 视频生成/图生视频/超能视频2.0-图生视频 生真人视频_2039512964276948994.json, 视频生成/图生视频/超能视频2.0-多图生视频_2044295602602778625.json, 视频生成/文生视频/seedance2.0超强多模态全能参考_2039735724001464321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_503
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json、图片生成/图生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100141125607706626.json、图片生成/文生图/MJ悠船V7基础流_2058747215417528321.json、图片生成/文生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2095314632121610241.json、图片生成/文生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100062487323435009.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json、视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json、视频生成/图生视频/超能视频2.0-全能参考 生真人视频_2039220191824973826.json、视频生成/图生视频/超能视频2.0-图生视频 生真人视频_2039512964276948994.json、视频生成/图生视频/超能视频2.0-多图生视频_2044295602602778625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：36%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `SaveImage`
-- `孤海注释`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_YouchuanTextToImageV82Fast` —— 4/5 个有
-- `RH_Midjourney` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
+- `RH_SparkVideoAssetCreate` —— 5/6 个有
+- `RH_SparkVideoAssetIdsMerge` —— 5/6 个有
+- `LoadVideo` —— 4/6 个有
+- `easy seed` —— 3/6 个有
+- `Fast Groups Muter (rgthree)` —— 2/6 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 2/6 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 2/6 个有
 
 ## 典型参数
 

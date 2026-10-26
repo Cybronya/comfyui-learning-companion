@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_335
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.923857
-common_nodes: [CR Text, Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, SaveImage]
+coverage: 0.7875
+common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json, 图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json, 图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json, 图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json, 图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json, 图片生成/图生图/一键换装Seedream-v5-pro 服装迁移 局部重绘  人物模特服饰换装 换装换脸 高度一致风_2075423755916103682.json, 图片生成/图生图/换脸换装 全能图片 图生图 高质量版_2099308533576716290.json]
+members: [视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json, 视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json, 视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json, 视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json, 视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json, 视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json, 视频生成/文生视频/梭罗2文生视频25s（竖屏）全能视频SPRO_1983038421939683330.json, 视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_335
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json、图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json、图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json、图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json、图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json、视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json、视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json、视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json、视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LoadImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV5ProImageToImage` —— 5/7 个有
-- `图像缩放V2_孤海` —— 5/7 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
+- `easy showAnything` —— 7/8 个有
+- `Label (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

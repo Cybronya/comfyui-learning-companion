@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_398
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.7135
-common_nodes: [JanusImageUnderstanding, JanusModelLoader, LoadImage, SaveImage, ShowText|pysssss]
+coverage: 0.833
+common_nodes: [ComfyMathExpression, LoadImage, SaveVideo, workflow>参数调整组, workflow>工作节点组]
 problems: []
 missing: []
-members: [图片生成/图生图/DeepSeek反推提示词业务流_1957245076286136321.json, 图片生成/图生图/【阡陌】 Comfyui Qwen-Image调用deepseek反推提示词生图 洗图_1960224788335767553.json, 图片生成/图生图/哪吒「deepseek10秒成图」_1888114080048111618.json, 图片生成/图生图/图像理解  图像视觉理解 图像识别_2034928444127059969.json, 图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json, 图片生成/文生图/Janus官方工作流-图片理解和图片生成_1930262386970673154.json]
+members: [视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json, 视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089018608247721985.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089537873346392066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_398
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DeepSeek反推提示词业务流_1957245076286136321.json、图片生成/图生图/【阡陌】 Comfyui Qwen-Image调用deepseek反推提示词生图 洗图_1960224788335767553.json、图片生成/图生图/哪吒「deepseek10秒成图」_1888114080048111618.json、图片生成/图生图/图像理解  图像视觉理解 图像识别_2034928444127059969.json、图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json、视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
+全部 7 个 workflow 都包含：
+- `ComfyMathExpression`
 - `LoadImage`
-- `SaveImage`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `JanusImageGeneration` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `ArgosTranslateTextNode` —— 1/6 个有
-- `QwenImageNode` —— 1/6 个有
+- `SaveVideo`
+- `workflow>参数调整组`
+- `workflow>工作节点组`
 
 ## 典型参数
 

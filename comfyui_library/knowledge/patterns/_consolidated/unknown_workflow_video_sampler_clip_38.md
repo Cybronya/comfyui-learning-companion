@@ -1,57 +1,92 @@
 ---
 name: unknown_workflow_video_sampler_clip_38
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.896417
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LucyConditionConcatNode, ModelSamplingSD3, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 13
+level: moderate
+coverage: 0.986462
+common_nodes: [AudioCrop, AudioSeparation, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/Lucy Edit视频换装（手动提示词）_2013153772620488705.json, 视频生成/图生视频/Lucy+Edit视频换装（文本控制）V1.1_2064156316251283458.json, 视频生成/图生视频/视频换装（文本控制）V1.1_2080106360926199809.json, 视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_1969845849503264769.json, 视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_2051828457667088386.json, 视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_2051846229662937090.json, 视频生成/文生视频/Lucy Edit视频编辑（P视频神器）_1970021776442990594.json, 视频生成/文生视频/Lucy Edit视频编辑（主体替换）V1.1_1969945935545573378.json, 视频生成/文生视频/Lucy Edit视频编辑（全局改变-概率抽卡）V1.1_1969954015096283137.json, 视频生成/文生视频/Lucy Edit视频编辑（物体添加）V1.1_1969947895673856001.json, 视频生成/文生视频/Lucy Edit视频编辑（颜色与材质）V1.1_1969948275333865474.json, 音频生成/音频生成/一句话编辑你的视频，放弃vace吧_1970462951100608514.json]
+members: [图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json, 图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json, 数字人/数字人/LTX2.3图片数字人_2037856663717289985.json, 数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json, 数字人/数字人/LTX2.3超强一致性数字人_2046938947288305665.json, 数字人/数字人/LTX2.3超强一致性数字人去字幕优化版v2_2046132644798275586.json, 数字人/数字人/图片数字人(LTX2.3)_2041738934023102466.json, 视频生成/图生视频/LTX2.3 数字人_2041853931457880066.json, 视频生成/图生视频/LTX2.3单图数字人_2064665242105372674.json, 视频生成/图生视频/LTX2.3图片数字人_2069015764195176450.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2046558500209299457.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2048669501297790977.json, 视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Lucy Edit视频换装（手动提示词）_2013153772620488705.json、视频生成/图生视频/Lucy+Edit视频换装（文本控制）V1.1_2064156316251283458.json、视频生成/图生视频/视频换装（文本控制）V1.1_2080106360926199809.json、视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_1969845849503264769.json、视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_2051828457667088386.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json、图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json、数字人/数字人/LTX2.3图片数字人_2037856663717289985.json、数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json、数字人/数字人/LTX2.3超强一致性数字人_2046938947288305665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
-- `LucyConditionConcatNode`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy float`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 11/12 个有
-- `JWInteger` —— 11/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
-- `PrimitiveFloat` —— 11/12 个有
-- `PrimitiveInt` —— 11/12 个有
-- `VHS_VideoInfo` —— 1/12 个有
+- `Audio Duration (mtb)` —— 12/13 个有
+- `CR Float To Integer` —— 12/13 个有
+- `DiffusionModelLoaderKJ` —— 12/13 个有
+- `easy int` —— 12/13 个有
+- `LTXVScheduler` —— 11/13 个有
+- `LatentUpscaleModelLoader` —— 11/13 个有
+- `LTXVChunkFeedForward` —— 8/13 个有
+- `LTXVImgToVideoInplace` —— 8/13 个有
+- `VRAMReserver` —— 7/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `easy showAnything` —— 6/13 个有
+- `LTXVCropGuides` —— 5/13 个有
+- `LTXVImgToVideoInplaceKJ` —— 5/13 个有
+- `JWFloat` —— 3/13 个有
+- `JWIntegerToString` —— 3/13 个有
+- `1hew_AudioDuration` —— 1/13 个有
+- `Bjornulf_FreeVRAM` —— 1/13 个有
+- `CR Text` —— 1/13 个有
+- `Fast Groups Muter (rgthree)` —— 1/13 个有
+- `FlashVSRInitPipe` —— 1/13 个有
+- `FlashVSRNodeAdv` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `MelBandRoFormerModelLoader` —— 1/13 个有
+- `MelBandRoFormerSampler` —— 1/13 个有
+- `SaveAudioMP3` —— 1/13 个有
+- `TTResolutionSelector` —— 1/13 个有
+- `UNETLoader` —— 1/13 个有
+- `VHS_LoadVideo` —— 1/13 个有
+- `easy anythingIndexSwitch` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 50 - 50 | 12 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,8 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 50 - 50，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

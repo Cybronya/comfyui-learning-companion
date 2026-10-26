@@ -1,69 +1,103 @@
 ---
 name: unknown_workflow_video_lora_sampler_189
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.876
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.510545
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSize, ImageCompositeMasked, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json, 视频生成/图生视频/InfiniteTalk数字人动态加强版（对口型-唱歌）_2015692807259824129.json, 视频生成/图生视频/InfiniteTalk数字人唱歌口播长视频生成_1980248252606013441.json, 视频生成/图生视频/InfiniteTalk数字人长视频（唱歌-对口型）_1957840696807096321.json, 视频生成/图生视频/InfiniteTalk数字人（图片+音频）_1957992360850468865.json, 视频生成/图生视频/SunoV5音乐+InfiniteTalk数字人MV_1983589305073508353.json, 视频生成/图生视频/Y-InfiniteTalk单人图生视频_1958373813031485441.json, 视频生成/图生视频/数字人长视频（唱歌-对口型）_2028126776630710273.json, 音频生成/音频生成/InfiniteTalk单人视频到视频_1958736757212753921.json]
+members: [视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json, 视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json, 视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json, 视频生成/图生视频/Scail2-动作迁移（单人+多人版）_2065351817646661633.json, 视频生成/图生视频/Scail2全自动单人角色替换工作流_2065037170393575426.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换_2067503598057123841.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换自动版_2067564547317264386.json, 视频生成/图生视频/scail 2双人互动异步动作迁移_2067087693439397890.json, 视频生成/图生视频/scail2带货视频 电商带货，人货互动_2067282833252634625.json, 视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2075466870496522242.json, 视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2080060140501426177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_189
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json、视频生成/图生视频/InfiniteTalk数字人动态加强版（对口型-唱歌）_2015692807259824129.json、视频生成/图生视频/InfiniteTalk数字人唱歌口播长视频生成_1980248252606013441.json、视频生成/图生视频/InfiniteTalk数字人长视频（唱歌-对口型）_1957840696807096321.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json、视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json、视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json、视频生成/图生视频/Scail2-动作迁移（单人+多人版）_2065351817646661633.json、视频生成/图生视频/Scail2全自动单人角色替换工作流_2065037170393575426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 11 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `ComfyMathExpression`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `EmptyImage`
+- `GIMMVFI_interpolate`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `ImageCompositeMasked`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewAny`
+- `PreviewImage`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `TensorLoopClose`
+- `TensorLoopOpen`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 9/10 个有
-- `PrimitiveInt` —— 8/10 个有
-- `LoadImage` —— 7/10 个有
-- `Audio Duration (mtb)` —— 6/10 个有
-- `CR Text` —— 6/10 个有
-- `JWIntegerToString` —— 5/10 个有
-- `SimpleMath+` —— 5/10 个有
-- `WanVideoTorchCompileSettings` —— 5/10 个有
-- `ImageFromBatch+` —— 4/10 个有
-- `JWInteger` —— 4/10 个有
-- `Text Multiline` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `WanVideoEncode` —— 2/10 个有
-- `WanVideoUni3C_ControlnetLoader` —— 2/10 个有
-- `WanVideoUni3C_embeds` —— 2/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `PreviewAudio` —— 1/10 个有
-- `RH_Suno_Single` —— 1/10 个有
-- `SaveAudioMP3` —— 1/10 个有
-- `String` —— 1/10 个有
-- `easy int` —— 1/10 个有
+- `GetNode` —— 10/11 个有
+- `PrimitiveInt` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `ImageResizeKJv2` —— 9/11 个有
+- `RH_Captioner` —— 9/11 个有
+- `VHS_VideoInfoSource` —— 9/11 个有
+- `easy imageCount` —— 9/11 个有
+- `easy showAnything` —— 9/11 个有
+- `Text` —— 8/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/11 个有
+- `JWInteger` —— 6/11 个有
+- `TextConcatenate_UTK` —— 6/11 个有
+- `Int` —— 5/11 个有
+- `easy indexAnything` —— 5/11 个有
+- `DrawMaskOnImage` —— 4/11 个有
+- `InvertMask` —— 4/11 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 4/11 个有
+- `Text Multiline` —— 4/11 个有
+- `easy mathInt` —— 4/11 个有
+- `ImageConcatMulti` —— 3/11 个有
+- `ResizeImageMaskNode` —— 3/11 个有
+- `1hew_MaskMathOps` —— 2/11 个有
+- `ColorPickerMW` —— 2/11 个有
+- `FillMaskWithColor` —— 2/11 个有
+- `ImageConcatenate_UTK` —— 2/11 个有
+- `RHHiddenNodes` —— 2/11 个有
+- `Switch` —— 2/11 个有
+- `Bjornulf_ShowInt` —— 1/11 个有
+- `ComfySwitchNode` —— 1/11 个有
+- `ImageCrop` —— 1/11 个有
+- `ImageFromBatch` —— 1/11 个有
+- `PointsEditor` —— 1/11 个有
+- `PrimitiveBoolean` —— 1/11 个有
+- `ReActorFaceSwap` —— 1/11 个有
+- `RemoveWatermarks_LoadModel` —— 1/11 个有
+- `RemoveWatermarks_Run` —— 1/11 个有
+- `SeCModelLoader` —— 1/11 个有
+- `SeCVideoSegmentation` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
+- `string_util_StrConcat` —— 1/11 个有
 
 ## 典型参数
 

@@ -2,108 +2,76 @@
 name: image_to_image_upscale_sampler_clip_20
 type: Image To Image
 frequency: 6
-level: strong
-coverage: 0.715167
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, DF_Integer, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageCASharpening+, ImageListToImageBatch, ImpactMinMax, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, easy imageBatchToImageList, easy imageSize, easy int, easy showAnything]
+level: weak
+coverage: 0.557
+common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingFlux, ReferenceLatent, SaveImage, SetNode, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageColorMatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/千问edit2511版一键动漫卡通转真人支持各种画风零偏移2K直出+red Z重绘修复细节+可选4K高清放大_1904700984499613698.json, 图片生成/图生图/迄今超强极速FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大V2_2013181887820337154.json, 图片生成/图生图/迄今超强极速出图FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2013168195938557954.json, 图片生成/图生图/迄今超强极速出图FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2070157661773058049.json, 图片生成/图生图/迄今超强极速出图潜力无穷FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2013152768189538305.json, 图片生成/文生图/迄今超强极速出图FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2090309370855907329.json]
+members: [图片生成/图生图/F.2Klein 9b增强细节，高清真实皮肤质感_2056567735584382978.json, "图片生成/图生图/去AI感, 高清修复, 细节增强 Flux2_2070499201896771585.json", 图片生成/图生图/老孙AI  去AI感  高清修复  细节增强_2087085834855084034.json, 图片生成/图生图/高清修复_细节增强 去AI感（flux2极速出图）_2016831625438433282.json, 图片生成/图生图/高清修复_细节增强 去AI感（flux2极速出图）_2047172994874740738.json, 图片生成/图生图/高清修复flux2_2026831925956059137.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/千问edit2511版一键动漫卡通转真人支持各种画风零偏移2K直出+red Z重绘修复细节+可选4K高清放大_1904700984499613698.json、图片生成/图生图/迄今超强极速FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大V2_2013181887820337154.json、图片生成/图生图/迄今超强极速出图FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2013168195938557954.json、图片生成/图生图/迄今超强极速出图FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2070157661773058049.json、图片生成/图生图/迄今超强极速出图潜力无穷FLUX2 Klein-9b单图_双图_多图编辑极速出图+可选高清4K放大_2013152768189538305.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/F.2Klein 9b增强细节，高清真实皮肤质感_2056567735584382978.json、图片生成/图生图/去AI感, 高清修复, 细节增强 Flux2_2070499201896771585.json、图片生成/图生图/老孙AI  去AI感  高清修复  细节增强_2087085834855084034.json、图片生成/图生图/高清修复_细节增强 去AI感（flux2极速出图）_2016831625438433282.json、图片生成/图生图/高清修复_细节增强 去AI感（flux2极速出图）_2047172994874740738.json…）
 
 - **类型**：Image To Image
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：72%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DF_Integer`
-- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageListToImageBatch`
-- `ImpactMinMax`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `ModelSamplingFlux`
+- `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SetNode`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageBatchToImageList`
-- `easy imageSize`
-- `easy int`
-- `easy showAnything`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 5/6 个有
-- `CR Latent Input Switch` —— 5/6 个有
-- `CR SDXL Aspect Ratio` —— 5/6 个有
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `FluxGuidance` —— 5/6 个有
-- `FluxKontextImageScale` —— 5/6 个有
-- `GetNode` —— 5/6 个有
-- `ImageConcatMulti` —— 5/6 个有
-- `ReferenceLatent` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `CFGNorm` —— 1/6 个有
-- `CheckpointLoaderSimple` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `ModelSamplingAuraFlow` —— 1/6 个有
-- `QwenEditAdaptiveLongestEdge` —— 1/6 个有
-- `QwenEditConfigPreparer` —— 1/6 个有
-- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 1/6 个有
-- `easy float` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `TextBox1` —— 5/6 个有
+- `easy imageConcat` —— 5/6 个有
+- `CR Text` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 2 | 2 - 8 | 6 | 25% |
+| Prompt 约束强度(CFG) | 1.4 | 1 - 1.4 | 6 | 89% |
+| 采样算法 | euler_ancestral | - | 6 | 83% |
+| 调度器 | beta57 | - | 6 | 83% |
+| 重绘幅度 | 0.25 | 0.25 - 1 | 6 | 34% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 2，观测区间 2 - 8，6 个样本，取值分散，一致性仅 25%
+- Prompt 约束强度(CFG) 中位数 1.4，观测区间 1 - 1.4，6 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler_ancestral，6 个样本，一致性 83%
+- 调度器 最常用 beta57，6 个样本，一致性 83%
+- 重绘幅度 中位数 0.25，观测区间 0.25 - 1，6 个样本，取值分散，一致性仅 34%
+- 高发问题（12/6 个样本）：Steps较低可能导致细节不足

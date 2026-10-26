@@ -2,73 +2,58 @@
 name: image_to_image_lora_sampler_clip_48
 type: Image To Image
 frequency: 6
-level: moderate
-coverage: 0.7465
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR Prompt Text, GetNode, ImageScaleToTotalPixels, JWStringConcat, KSampler, LoadImage, LoraLoaderModelOnly, MemoryCleaner, ModelSamplingAuraFlow, Qwen3_VQA, SaveImage, SetNode, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy int, easy showAnything, 图像缩放V2_孤海]
+level: strong
+coverage: 0.708
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, Image Comparer (rgthree), ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, PMRF, PathchSageAttentionKJ, PreviewAny, PreviewImage, PrimitiveString, Qwen3_VQA, SaveImage, Text Concatenate, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-史上最强动漫转写实真人（Z-image重绘CFG1.6）_2002567462472302594.json, 图片生成/图生图/Qwen-史上最强动漫转真人（Z-image_FlowMatch重绘）_2002654471387770881.json, 图片生成/图生图/【推荐】Qwen+Z-image+FlowMat强动漫转真人_2008549846252261378.json, 图片生成/图生图/【推荐】动漫转写实真人（Z-image重绘CFG1.6）_2008549814203588610.json, 图片生成/图生图/动漫转写实真人-Z-image重绘_2002960576038989826.json, 图片生成/图生图/动漫转真人_2004780912804069377.json]
+members: [图片生成/图生图/wan 2.2 超强细节重绘和高清修复_1992597393449308162.json, 图片生成/图生图/wan 2.2 超强细节重绘，高清修复，修正含糊内容及结构_1988960620106100738.json, 图片生成/图生图/wan_2.2_超强细节重绘，高清修复，修正含糊内容及结构_2097868678569222146.json, 图片生成/图生图/wan_2.2_超强细节重绘，高清修复，修正含糊内容及结构_2099408211622322177.json, 图片生成/图生图/最新超强细节重绘及高清修复_1991312599069601794.json, 图片生成/图生图/细节增强_Wan 2.2 超强细节重绘，高清修复_2034615030871760897.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_48
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-史上最强动漫转写实真人（Z-image重绘CFG1.6）_2002567462472302594.json、图片生成/图生图/Qwen-史上最强动漫转真人（Z-image_FlowMatch重绘）_2002654471387770881.json、图片生成/图生图/【推荐】Qwen+Z-image+FlowMat强动漫转真人_2008549846252261378.json、图片生成/图生图/【推荐】动漫转写实真人（Z-image重绘CFG1.6）_2008549814203588610.json、图片生成/图生图/动漫转写实真人-Z-image重绘_2002960576038989826.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/wan 2.2 超强细节重绘和高清修复_1992597393449308162.json、图片生成/图生图/wan 2.2 超强细节重绘，高清修复，修正含糊内容及结构_1988960620106100738.json、图片生成/图生图/wan_2.2_超强细节重绘，高清修复，修正含糊内容及结构_2097868678569222146.json、图片生成/图生图/wan_2.2_超强细节重绘，高清修复，修正含糊内容及结构_2099408211622322177.json、图片生成/图生图/最新超强细节重绘及高清修复_1991312599069601794.json…）
 
 - **类型**：Image To Image
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `JWStringConcat`
+- `CR Text Replace`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MemoryCleaner`
-- `ModelSamplingAuraFlow`
+- `PMRF`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveString`
 - `Qwen3_VQA`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
 - `easy showAnything`
-- `图像缩放V2_孤海`
-
-**可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 5/6 个有
-- `FlowMatchEulerDiscreteScheduler (Custom)` —— 5/6 个有
-- `KSamplerSelect` —— 5/6 个有
-- `LazyCache` —— 5/6 个有
-- `RandomNoise` —— 5/6 个有
-- `SamplerCustomAdvanced` —— 5/6 个有
-- `SplitSigmasDenoise` —— 5/6 个有
-- `Fast Groups Muter (rgthree)` —— 4/6 个有
-- `ConditioningZeroOut` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 6 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.6 | 6 | 80% |
-| 采样算法 | res_2m | - | 6 | 83% |
-| 调度器 | sgm_uniform | - | 6 | 83% |
-| 重绘幅度 | 1 | 0.4 - 1 | 6 | 75% |
+| 采样步数 | 9 | 9 - 9 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | uni_pc | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 0.12 | 0.12 - 0.12 | 6 | 100% |
 
 ## 常见问题
 
@@ -78,9 +63,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，6 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.6，6 个样本
-- 采样算法 最常用 res_2m，6 个样本，一致性 83%
-- 调度器 最常用 sgm_uniform，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，6 个样本
+- 采样步数 中位数 9，观测区间 9 - 9，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.12，观测区间 0.12 - 0.12，6 个样本，取值集中（一致性 100%）
 - 高发问题（6/6 个样本）：Steps较低可能导致细节不足

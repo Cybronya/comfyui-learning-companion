@@ -3,37 +3,36 @@ name: unknown_workflow_generic_1478
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.654
-common_nodes: [CR Text Concatenate, GetNode, LoadImage, PreviewAny, SaveImage, SetNode, TextInput_]
+coverage: 0.778
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResize+, JjkText, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/YH_G2_v002_2053042954142531586.json, 图片生成/文生图/生图2-v2.2_2028309826870190082.json]
+members: [图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json, 图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1478
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/YH_G2_v002_2053042954142531586.json、图片生成/文生图/生图2-v2.2_2028309826870190082.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json、图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `JjkText`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `PreviewAny`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `SetNode`
-- `TextInput_`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

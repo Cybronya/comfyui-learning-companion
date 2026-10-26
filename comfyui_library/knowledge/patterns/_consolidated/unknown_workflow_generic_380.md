@@ -3,39 +3,36 @@ name: unknown_workflow_generic_380
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.874286
-common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.955429
+common_nodes: [CR Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json, 音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json, 音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json, 音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json, 音频生成/音频生成/声音克隆&声音设计_2061665723885383682.json, 音频生成/音频生成/🦖QwenTTS 语音克隆 音色设计🦖 2_2014631013019815937.json]
+members: [图片生成/图生图/全能图像G2图像编辑版_2047866724027994114.json, 图片生成/图生图/全能图像G2图像编辑版_2049035561326874625.json, 图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079021048368033794.json, 图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079876966806806529.json, 图片生成/图生图/全能图像image 2.0 图生图自用_2054850721660579842.json, 图片生成/图生图/全能图片G image 2.0-图生图_2054839956958400514.json, 图片生成/图生图/全能图片——电商创意海报+文案_2060265171804844034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_380
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json、音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json、音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json、音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json、音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图像G2图像编辑版_2047866724027994114.json、图片生成/图生图/全能图像G2图像编辑版_2049035561326874625.json、图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079021048368033794.json、图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079876966806806529.json、图片生成/图生图/全能图像image 2.0 图生图自用_2054850721660579842.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+- `CR Text`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `Qwen3TTSVoiceDesign` —— 6/7 个有
-- `HeartMuLa_Transcribe` —— 4/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `WhisperTurboRun` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 2/7 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 2/7 个有
+- `PreviewTextNode` —— 1/7 个有
+- `RHLLMChatNode` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,119 +1,63 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_60
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.6805
-common_nodes: [ASRMW, Any To String (mtb), AudioToFPS, CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, ImpactSwitch, Int, InversionDemoLazySwitch, JWInteger, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ProcessString, Qwen3_VQA, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, SomethingToString, Switch any [Crystools], VAEDecodeTiled, VAELoaderKJ, VRAMReserver, easy boolean, easy cleanGpuUsed, easy compare]
+coverage: 0.9926
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FluxGuidance, InjectLatentNoise+, KSamplerSelect, LatentUpscaleBy, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmasDenoise, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3音频对口型【数字人】测试版本+效果如图_2039639579086561281.json, 视频生成/图生视频/LTX2.3首尾帧+音频对口型_2034072615744180226.json, 视频生成/图生视频/QwenTTS+LTX2.0角色说话_2017601157362884610.json, 视频生成/图生视频/对口型LTX【Qwen-TTS音色设计】_2019964726540771330.json]
+members: [图片生成/文生图/抖音网红脸cos敖闰_1892232669667745794.json, 图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json, 图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json, 图片生成/文生图/颜值网红美女工作流_1896063182081490945.json, 视频生成/图生视频/美女跳舞图片_1932281057691729921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_60
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3音频对口型【数字人】测试版本+效果如图_2039639579086561281.json、视频生成/图生视频/LTX2.3首尾帧+音频对口型_2034072615744180226.json、视频生成/图生视频/QwenTTS+LTX2.0角色说话_2017601157362884610.json、视频生成/图生视频/对口型LTX【Qwen-TTS音色设计】_2019964726540771330.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/抖音网红脸cos敖闰_1892232669667745794.json、图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json、图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json、图片生成/文生图/颜值网红美女工作流_1896063182081490945.json、视频生成/图生视频/美女跳舞图片_1932281057691729921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ASRMW`
-- `Any To String (mtb)`
-- `AudioToFPS`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
+- `DisableNoise`
 - `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
-- `ImpactSwitch`
-- `Int`
-- `InversionDemoLazySwitch`
-- `JWInteger`
+- `FluxGuidance`
+- `InjectLatentNoise+`
 - `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
+- `LatentUpscaleBy`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ProcessString`
-- `Qwen3_VQA`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `ShowText|pysssss`
-- `SolidMask`
-- `SomethingToString`
-- `Switch any [Crystools]`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VRAMReserver`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy compare`
+- `SaveImage`
+- `SplitSigmasDenoise`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR String To Combo` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `Display Any (rgthree)` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `JoinStrings` —— 3/4 个有
-- `LTXVAudioVAEDecode` —— 3/4 个有
-- `LTXVImgToVideoInplace` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `ttN concat` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioDither` —— 2/4 个有
-- `AudioPad` —— 2/4 个有
-- `AudioResample` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CreateVideo` —— 2/4 个有
-- `LTX2_NAG` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `SaveAudio` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `WhisperSTT` —— 2/4 个有
-- `AudioSeparation` —— 1/4 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LTXVFirstLastFrameControl_TTP` —— 1/4 个有
-- `PIP_IntegerCalculator` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `CR Aspect Ratio` —— 4/5 个有
+- `ModelSamplingFlux` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `CheckpointLoaderSimple` —— 1/5 个有
+- `EmptyLatentImage` —— 1/5 个有
+- `ImageSmartSharpen+` —— 1/5 个有
+- `LatentInterpolate` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1600 | - | 1 | 100% |
 
 ## 常见问题
 

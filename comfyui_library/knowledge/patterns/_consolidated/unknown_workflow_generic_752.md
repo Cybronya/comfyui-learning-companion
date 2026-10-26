@@ -3,33 +3,38 @@ name: unknown_workflow_generic_752
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.875
-common_nodes: [JjkText, LoadImage, SaveVideo]
+coverage: 0.83625
+common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Higgsfield 图生视频（摄影指导）_2015789801991049217.json, 视频生成/图生视频/SeedDance fast 2.0真人版 图生视频-9t图_2049294005959135233.json, 视频生成/图生视频/SeedDance fast 2.0真人版 图生视频_2047621014405779457.json, 视频生成/图生视频/视频特效万花筒_2011346619601522690.json]
+members: [图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json, 图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json, 图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json, 图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_752
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Higgsfield 图生视频（摄影指导）_2015789801991049217.json、视频生成/图生视频/SeedDance fast 2.0真人版 图生视频-9t图_2049294005959135233.json、视频生成/图生视频/SeedDance fast 2.0真人版 图生视频_2047621014405779457.json、视频生成/图生视频/视频特效万花筒_2011346619601522690.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json、图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json、图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json、图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JjkText`
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG25FlareImageToImage`
+- `RH_RhartImageG25FlareTextToImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 2/4 个有
-- `RH_Higgsfield_I2V` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 3/4 个有
+- `MuyeTextEditOutput` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,41 +1,46 @@
 ---
 name: unknown_workflow_generic_631
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.65425
-common_nodes: [CR Prompt Text, Comfly_api_set, ImageConcanate, JWInteger, LoadImage, PDIMAGE_LongerSize, SaveImage, easy showAnything]
+coverage: 0.8146
+common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideoNode, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/(贞贞AI工坊)Flux2 Flex图像自定义编辑（约官方价格的77折）_1995111644210638849.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO单图参考（约官方价格的77折）_1995102914823774209.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995098453489410049.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995107938727604226.json]
+members: [视频生成/图生视频/Seedance+2.0+复刻爆款视频+(反推+图生视频）_2096559422251290626.json, 视频生成/图生视频/云信广告视频复刻SD2.0+mini_2086004554730135554.json, 视频生成/图生视频/爆款视频复刻：爆款视频反推提示词+Seedance 2.0 多参视频生成_2095547056520785922.json, 视频生成/文生视频/Seedance 2.0 复刻爆款视频 (反推+图生视频）_2085261023614947329.json, 视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_631
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/(贞贞AI工坊)Flux2 Flex图像自定义编辑（约官方价格的77折）_1995111644210638849.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO单图参考（约官方价格的77折）_1995102914823774209.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995098453489410049.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995107938727604226.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Seedance+2.0+复刻爆款视频+(反推+图生视频）_2096559422251290626.json、视频生成/图生视频/云信广告视频复刻SD2.0+mini_2086004554730135554.json、视频生成/图生视频/爆款视频复刻：爆款视频反推提示词+Seedance 2.0 多参视频生成_2095547056520785922.json、视频生成/文生视频/Seedance 2.0 复刻爆款视频 (反推+图生视频）_2085261023614947329.json、视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `ImageConcanate`
-- `JWInteger`
+全部 5 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
 - `LoadImage`
-- `PDIMAGE_LongerSize`
-- `SaveImage`
+- `LoadVideo`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideoNode`
+- `easy saveText`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Flux_2_Pro` —— 3/4 个有
-- `Comfly_Flux_2_Flex` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
+- `VHS_LoadVideo` —— 4/5 个有
+- `LoadAudio` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `easy getAudioFromVideo` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
 
 ## 典型参数
 

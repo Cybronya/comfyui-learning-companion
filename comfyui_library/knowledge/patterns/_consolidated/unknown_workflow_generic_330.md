@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_330
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.746571
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.791
+common_nodes: [SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/QY睡裤通用主图_2066851024517820417.json, 图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json, 图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json, 图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json, 图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json, 图片生成/图生图/童装详情页设计_2104950032737849345.json, 图片生成/文生图/服装详情页设计_2054201706078064641.json]
+members: [视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json, 视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json, 视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json, 视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json, 视频生成/文生视频/最简洁的全能视频S 文生视频工作流 支持横_竖屏_2005119650105098242.json, 视频生成/文生视频/梭罗2稳定版全能视频S文生视频0.08元每次_2036026472900599809.json, 视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099368852604940290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_330
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/QY睡裤通用主图_2066851024517820417.json、图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json、图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json、图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json、图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json、视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json、视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json、视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Find and Replace` —— 3/7 个有
-- `Image Stitch` —— 2/7 个有
-- `ZML_MergeText` —— 1/7 个有
+- `CR Text` —— 6/8 个有
+- `LoadImage` —— 6/8 个有
+- `RH_MinimaxH3MaxTurboImageToVideo` —— 4/8 个有
+- `RH_Sora2_T2V` —— 4/8 个有
 
 ## 典型参数
 

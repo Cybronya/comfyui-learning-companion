@@ -3,62 +3,74 @@ name: unknown_workflow_video_lora_sampler_813
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.627
-common_nodes: [Bjornulf_ShowStringText, CLIPLoader, CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int2Any_AS, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, SimpleMath+, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.753
+common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, ExtendIntermediateSigmas, GH_ImageVideoComparer, GetImageSizeAndCount, GoohaiRatioAndResolution, ImageBatchMulti, ImageFromBatch, ImageFromBatch+, Int, KSamplerSelect, LazySwitchKJ, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, MultiplicationNode, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SimpleMath+, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, YusuLoadVideoUI, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json, 视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json]
+members: [数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json, 数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_813
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json、视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json、数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowStringText`
+- `AudioConcat`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CR Text`
-- `CreateCFGScheduleFloatList`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `Int2Any_AS`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `ExtendIntermediateSigmas`
+- `GH_ImageVideoComparer`
+- `GetImageSizeAndCount`
+- `GoohaiRatioAndResolution`
+- `ImageBatchMulti`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `Int`
+- `KSamplerSelect`
+- `LazySwitchKJ`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RH_LLMAPI_NODE`
-- `SetNode`
-- `ShowText`
-- `SimpleCondition+`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `MultiplicationNode`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `Seed (rgthree)`
 - `SimpleMath+`
-- `String`
+- `SolAttnMiniMax`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadVideoPath`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-
-**可变部分**（部分 workflow 才有）：
-- `DF_Get_image_size` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `LoadWanVideoClipTextEncoder` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
+- `YusuLoadVideoUI`
+- `easy showAnything`
 
 ## 典型参数
 

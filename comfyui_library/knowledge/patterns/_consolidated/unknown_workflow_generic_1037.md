@@ -3,33 +3,31 @@ name: unknown_workflow_generic_1037
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoV31ProOfficialImageToVideo, SaveVideo]
+coverage: 0.822333
+common_nodes: [RH_YouchuanTextToImageNiji6, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频 V3.1 图生视频_2045420917798473729.json, 视频生成/图生视频/全能视频 V3.1pro 官方版 图生视频_2028677120590876674.json, 视频生成/图生视频/自用V-E-O  3.1_2037419095750090753.json]
+members: [图片生成/图生图/悠船图生图-niji6_2080596827015045121.json, 图片生成/文生图/Youchuan_TextToImageNiji6_v6.0_2034593870482247681.json, 图片生成/文生图/悠船文生图-niji6_2080619618204479489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1037
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频 V3.1 图生视频_2045420917798473729.json、视频生成/图生视频/全能视频 V3.1pro 官方版 图生视频_2028677120590876674.json、视频生成/图生视频/自用V-E-O  3.1_2037419095750090753.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-niji6_2080596827015045121.json、图片生成/文生图/Youchuan_TextToImageNiji6_v6.0_2034593870482247681.json、图片生成/文生图/悠船文生图-niji6_2080619618204479489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoV31ProOfficialImageToVideo`
-- `SaveVideo`
+- `RH_YouchuanTextToImageNiji6`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/3 个有
-- `TextBox` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

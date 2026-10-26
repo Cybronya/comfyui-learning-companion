@@ -3,34 +3,46 @@ name: unknown_workflow_generic_1315
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.379
-common_nodes: [GetNode, LoadImage, SaveImage, SetNode]
+coverage: 0.8435
+common_nodes: [GetImageSizeAndCount, PreviewAny, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, ToString, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/九图合一_2021240272025292802.json, 图片生成/图生图/全能图片pro_Neo_xlw_2028742013948010498.json]
+members: [图片生成/反推提示词/压缩包批量打标工作流_2030176517560475650.json, 图片生成/文生图/批量图片打标V2_2005802387858227201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1315
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/九图合一_2021240272025292802.json、图片生成/图生图/全能图片pro_Neo_xlw_2028742013948010498.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/压缩包批量打标工作流_2030176517560475650.json、图片生成/文生图/批量图片打标V2_2005802387858227201.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
-- `LoadImage`
-- `SaveImage`
-- `SetNode`
+- `GetImageSizeAndCount`
+- `PreviewAny`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `ToString`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `NineGridMosaicNode` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
+- `MultiTextConcatenate` —— 1/2 个有
+- `Save image with extra metadata [Crystools]` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

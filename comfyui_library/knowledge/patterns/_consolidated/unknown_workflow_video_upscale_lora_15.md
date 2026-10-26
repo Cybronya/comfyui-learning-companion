@@ -1,60 +1,74 @@
 ---
 name: unknown_workflow_video_upscale_lora_15
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.96475
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PreviewImage, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.380333
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, Fast Groups Bypasser (rgthree), GetImage, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanImageGridComposite, YuanLoadImageOutput, YuanMultiImage, YuanPrimitive, YuanTool, Yuan_H3MotionContextTrim, Yuan_H3ProgressiveSampler, Yuan_MiniMaxH3Video]
 problems: []
 missing: []
-members: [视频生成/图生视频/万相图生视频国风变装-戏服_1915350081669894146.json, 视频生成/图生视频/图生视频_大摆锤舞蹈_1952209693416566785.json, 视频生成/图生视频/图生视频_大摆锤舞蹈_1955172596662898690.json, 视频生成/文生视频/图生视频_大摆锤舞蹈_1965243729651093506.json]
+members: [视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_15
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万相图生视频国风变装-戏服_1915350081669894146.json、视频生成/图生视频/图生视频_大摆锤舞蹈_1952209693416566785.json、视频生成/图生视频/图生视频_大摆锤舞蹈_1955172596662898690.json、视频生成/文生视频/图生视频_大摆锤舞蹈_1965243729651093506.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `ImageUpscaleWithModel`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImage`
+- `GetNode`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewAudio`
 - `PreviewImage`
-- `UpscaleModelLoader`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
+- `SetNode`
+- `StringConcatenate`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTShotDurations`
+- `YuanAudioList`
+- `YuanAudioLoad`
+- `YuanAudioSplit`
+- `YuanImageGridComposite`
+- `YuanLoadImageOutput`
+- `YuanMultiImage`
+- `YuanPrimitive`
+- `YuanTool`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_H3ProgressiveSampler`
+- `Yuan_MiniMaxH3Video`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `CLIPVisionLoader` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `ImageSmartSharpen+` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `WanVideoExperimentalArgs` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
-- `WanVideoVRAMManagement` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `easy clearCacheAll` —— 1/3 个有
 
 ## 典型参数
 

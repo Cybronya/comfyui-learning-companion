@@ -3,38 +3,36 @@ name: unknown_workflow_generic_211
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8824
-common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.9857
+common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
+members: [图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json, 图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json, 图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json, 图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json, 图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json, 图片生成/图生图/全能图片V1 三图_1968839390380347393.json, 图片生成/图生图/全能图片V1 单图_1963478031736213506.json, 图片生成/图生图/全能图片V1 四图融合_1970048530469580802.json, 图片生成/图生图/全能图片V1-lmage2lmage-图生图-傲雪AIGC_1994422410524889090.json, 图片生成/图生图/全能图片V1基础多图编辑（A pose）_1975563839305592834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_211
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json、图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json、图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json、图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json、图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+- `ImageResize+`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 6/10 个有
-- `SaveAudioMP3` —— 6/10 个有
-- `CR Text Concatenate` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `String` —— 1/10 个有
+- `CR Combine Prompt` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PresetTextSelector` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,98 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_vae_25
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.705
-common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncode, CM_IntToBool, CR Text, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxResolutionNode, Image Comparer (rgthree), ImageResize+, ImpactConditionalBranch, Int, KSamplerSelect, LoadImage, MathExpression|pysssss, ModelSamplingFlux, NunchakuFluxDiTLoader, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
-problems: []
+frequency: 8
+level: moderate
+coverage: 0.89125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/100种不同风格图片转绘-加速稳定版_2022624756767399937.json, 图片生成/图生图/Flux 破损黑白照片修复上色_1948974283469594626.json, 图片生成/图生图/Kontext Dev 一键去图片水印_1945730379670233089.json, 图片生成/图生图/Kontext Dev 简易一键去图片水印_1946786876764381186.json, 图片生成/图生图/Kontext dev 动漫角色一致性_1943214888284282882.json, 图片生成/图生图/Kontext dev 去除水印_1947229755512934402.json, 图片生成/图生图/【老照片顶级修复V3】Flux-Kontext-Dev（plus-48G版）_1938603945344294913.json]
+members: [图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json, 图片生成/文生图/海报生成器+QwenImage=艾橘溪_1954567812612288513.json, 图片生成/文生图/炼狱杏寿郎_1981285976733638658.json, 图片生成/文生图/猩红共生体变身与感染_2051256128578830338.json, 图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json, 图片生成/文生图/艺术字体生成器+QwenImage=B站艾橘溪_1954565922696654850.json, 图片生成/文生图/（贞贞版3W步绝美版）Z-Image-Base文生图V1_2016831860403343362.json, 图片生成/文生图/（贞贞版）Z-Image-Base 2w2步_2016755186840113154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/100种不同风格图片转绘-加速稳定版_2022624756767399937.json、图片生成/图生图/Flux 破损黑白照片修复上色_1948974283469594626.json、图片生成/图生图/Kontext Dev 一键去图片水印_1945730379670233089.json、图片生成/图生图/Kontext Dev 简易一键去图片水印_1946786876764381186.json、图片生成/图生图/Kontext dev 动漫角色一致性_1943214888284282882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json、图片生成/文生图/海报生成器+QwenImage=艾橘溪_1954567812612288513.json、图片生成/文生图/炼狱杏寿郎_1981285976733638658.json、图片生成/文生图/猩红共生体变身与感染_2051256128578830338.json、图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：70%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_IntToBool`
-- `CR Text`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxResolutionNode`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImpactConditionalBranch`
-- `Int`
-- `KSamplerSelect`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `ModelSamplingFlux`
-- `NunchakuFluxDiTLoader`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/7 个有
-- `GetNode` —— 3/7 个有
-- `RHHiddenNodes` —— 3/7 个有
-- `SetNode` —— 3/7 个有
-- `AIO_Preprocessor` —— 2/7 个有
-- `ApplyInstantID` —— 2/7 个有
-- `CFGGuider` —— 2/7 个有
-- `CheckpointLoader|pysssss` —— 2/7 个有
-- `ControlNetApplySD3` —— 2/7 个有
-- `ControlNetLoader` —— 2/7 个有
-- `Float` —— 2/7 个有
-- `InstantIDFaceAnalysis` —— 2/7 个有
-- `InstantIDModelLoader` —— 2/7 个有
-- `LoraLoader|pysssss` —— 2/7 个有
-- `SetUnionControlNetType` —— 2/7 个有
-- `easy imageConcat` —— 2/7 个有
-- `CR Text Concatenate` —— 1/7 个有
-- `ColorCorrectOfUtils` —— 1/7 个有
-- `ImpactSwitch` —— 1/7 个有
-- `SeedVR2` —— 1/7 个有
+- `ModelSamplingAuraFlow` —— 7/8 个有
+- `UNETLoader` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `LayerUtility: PurgeVRAM` —— 3/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `NunchakuQwenImageDiTLoader` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 7 | 100% |
-| 高度 | 512 | 512 - 512 | 7 | 100% |
-| LoRA 模型强度 | 0.5 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 0.2 | - | 2 | 100% |
+| 采样步数 | 22.5 | 8 - 50 | 8 | 33% |
+| Prompt 约束强度(CFG) | 3.25 | 1 - 5 | 8 | 47% |
+| 采样算法 | euler | - | 8 | 75% |
+| 调度器 | simple | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，7 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 22.5，观测区间 8 - 50，8 个样本，取值分散，一致性仅 33%
+- Prompt 约束强度(CFG) 中位数 3.25，观测区间 1 - 5，8 个样本，取值分散，一致性仅 47%
+- 采样算法 最常用 euler，8 个样本，一致性 75%
+- 调度器 最常用 simple，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

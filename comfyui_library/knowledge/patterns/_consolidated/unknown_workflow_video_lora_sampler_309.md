@@ -1,77 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_309
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.656714
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 8
+level: strong
+coverage: 0.92275
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, EmptyHunyuanLatentVideo, ImageFromBatch+, JWInteger, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, ShellAgentPluginOutputText, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI稳定长视频生成【无限循环】_1983506887171842049.json, 视频生成/图生视频/SVI长视频_1982104863096086530.json, 视频生成/图生视频/SVI长镜头分段提示词工作流_1981341961615474690.json, 视频生成/图生视频/Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测！_2000388407983566850.json, 视频生成/图生视频/Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大公开！_1986760720148852738.json, 视频生成/图生视频/无限视频SVI-Wan22_1999143356380966913.json, 视频生成/文生视频/网红制造WanVideoWrapper_I2V_SVI_长视频工作流_1988840595856691202.json]
+members: [视频生成/图生视频/Wan2.2 Smooth V3--Qwen3.5自动提示词--文生视频_2035656316517093377.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035358127658377218.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2035617864299843586.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2036029728359976962.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频工作流_2035941912657534978.json, 视频生成/文生视频/（N sfw版）Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035617850320228353.json, 视频生成/文生视频/（自用）N版Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035392938565443585.json, 视频生成/文生视频/（贞贞lora-自用）N版Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035397258946027521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_309
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/SVI稳定长视频生成【无限循环】_1983506887171842049.json、视频生成/图生视频/SVI长视频_1982104863096086530.json、视频生成/图生视频/SVI长镜头分段提示词工作流_1981341961615474690.json、视频生成/图生视频/Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测！_2000388407983566850.json、视频生成/图生视频/Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大公开！_1986760720148852738.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Smooth V3--Qwen3.5自动提示词--文生视频_2035656316517093377.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035358127658377218.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2035617864299843586.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2036029728359976962.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频工作流_2035941912657534978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
-- `SetNode`
-- `SimpleMath+`
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text`
+- `EmptyHunyuanLatentVideo`
+- `ImageFromBatch+`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ShellAgentPluginOutputText`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 6/7 个有
-- `CLIPVisionLoader` —— 5/7 个有
-- `InvertMask` —— 5/7 个有
-- `WanVideoClipVisionEncode` —— 5/7 个有
-- `WanVideoVACEStartToEndFrame` —— 5/7 个有
-- `ColorMatch` —— 4/7 个有
-- `WanVideoSetLoRAs` —— 4/7 个有
-- `easy forLoopEnd` —— 3/7 个有
-- `easy forLoopStart` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `MathExpression|pysssss` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `AudioCrop` —— 1/7 个有
-- `CR Text Input Switch (4 way)` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
-- `easy promptLine` —— 1/7 个有
+- `Seed (rgthree)` —— 7/8 个有
+- `DuckHideNode` —— 3/8 个有
+- `LoadImage` —— 3/8 个有
+- `SaveImage` —— 3/8 个有
+- `TT_img_enc` —— 3/8 个有
+- `TT_img_enc_v2` —— 3/8 个有
+- `ConcatTextOfUtils` —— 1/8 个有
+- `Int` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -79,4 +72,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

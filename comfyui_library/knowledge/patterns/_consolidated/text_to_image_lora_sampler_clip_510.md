@@ -3,52 +3,53 @@ name: text_to_image_lora_sampler_clip_510
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.901667
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DaSiWa_LLMPromptWriter, EmptyImage, EmptyLatentImage, INTConstant, JjkText, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, ResizeImageMaskNode, SaveImage, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.909333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleToTotalPixels, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110253494568574978.json, 图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110367813318828033.json, 图片生成/文生图/Krea2单双参考人物套图写真 人像写真批量生成_2109775101934788610.json]
+members: [图片生成/图生图/Krea2画质增强图生图 Turbo8步快速处理工作流_2099923071095365633.json, 图片生成/图生图/画质增强图生图｜Krea2 Turbo八步极速，写实细节翻倍_2099922159283032065.json, 图片生成/文生图/宫崎骏风格一键转换｜Qwen-Image-Edit文生图动漫_2095509841522544642.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_510
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110253494568574978.json、图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110367813318828033.json、图片生成/文生图/Krea2单双参考人物套图写真 人像写真批量生成_2109775101934788610.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Krea2画质增强图生图 Turbo8步快速处理工作流_2099923071095365633.json、图片生成/图生图/画质增强图生图｜Krea2 Turbo八步极速，写实细节翻倍_2099922159283032065.json、图片生成/文生图/宫崎骏风格一键转换｜Qwen-Image-Edit文生图动漫_2095509841522544642.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DaSiWa_LLMPromptWriter`
-- `EmptyImage`
 - `EmptyLatentImage`
-- `INTConstant`
+- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
-- `ResizeImageMaskNode`
 - `SaveImage`
-- `Text Concatenate`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 2/3 个有
+- `EnhancedLoadDiffusionModel` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `TextEncodeKrea2` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `CFGNorm` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `TextEncodeQwenImageEdit` —— 1/3 个有
 
 ## 典型参数
 
@@ -66,7 +67,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,4 +78,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（8/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/3 个样本）：Steps较低可能导致细节不足

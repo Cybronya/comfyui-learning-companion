@@ -3,79 +3,58 @@ name: unknown_workflow_video_sampler_vae_57
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.71725
-common_nodes: [DrawViTPose, GetImageSizeAndCount, ImageResizeKJv2, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.912375
+common_nodes: [ImageConcatMulti, ImagePadKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json, 视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json, 视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json, 视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json, 视频生成/图生视频/wanvideo_WanAnimate_v2-kj-小鸟摇_1977738504492961794.json, 视频生成/图生视频/全能图片V12 + WanAnimate，让你穿着勇士队球衣开跳库里之歌_1992409563280330754.json, 视频生成/图生视频/白用更新动作迁移_2051920241860591618.json, 视频生成/图生视频/视频角色替换工作流_2010634733373366273.json]
+members: [视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json, 视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json, 视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json, 视频生成/图生视频/上传一张图生成电商产品展示视频（phantom主体一致性）_1917815570186567682.json, 视频生成/图生视频/字节Phantom14B_最新多图参考一致性视频(电商带货)_1916395426835005442.json, 视频生成/图生视频/字节Phantom14B单主体(电商广告视频生成)_1927557646478643202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_57
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json、视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json、视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json、视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json、视频生成/图生视频/wanvideo_WanAnimate_v2-kj-小鸟摇_1977738504492961794.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json、视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json、视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `VHS_LoadVideo`
+- `ImageConcatMulti`
+- `ImagePadKJ`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 7/8 个有
-- `DownloadAndLoadSAM2Model` —— 7/8 个有
-- `DrawMaskOnImage` —— 7/8 个有
-- `GrowMaskWithBlur` —— 7/8 个有
-- `LoadImage` —— 7/8 个有
-- `Sam2Segmentation` —— 7/8 个有
-- `CLIPVisionLoader` —— 5/8 个有
-- `PrimitiveInt` —— 5/8 个有
-- `VHS_VideoInfo` —— 5/8 个有
-- `WanVideoClipVisionEncode` —— 5/8 个有
-- `CR Text` —— 4/8 个有
-- `GetNode` —— 4/8 个有
-- `ImageFromBatch+` —— 4/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/8 个有
-- `SetNode` —— 4/8 个有
-- `SimpleMath+` —— 4/8 个有
-- `WanVideoContextOptions` —— 4/8 个有
-- `WanVideoLoraSelect` —— 4/8 个有
-- `WanVideoLoraSelectMulti` —— 4/8 个有
-- `WanVideoSetLoRAs` —— 4/8 个有
-- `INTConstant` —— 3/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `WanVideoTorchCompileSettings` —— 3/8 个有
-- `Label (rgthree)` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetImageSize+` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
-- `SDPoseOODLoader` —— 1/8 个有
-- `SDPoseOODProcessor` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `ImageResizeKJ` —— 7/8 个有
+- `Text Multiline` —— 7/8 个有
+- `Primitive integer [Crystools]` —— 6/8 个有
+- `WanVideoTeaCache` —— 6/8 个有
+- `EmptyImage` —— 2/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `RH_Translator` —— 2/8 个有
+- `AddLabel` —— 1/8 个有
+- `DF_Integer` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

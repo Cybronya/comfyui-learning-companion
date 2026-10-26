@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_664
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8275
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
+coverage: 0.7682
+common_nodes: [LoadAudio, SaveAudio, VoxCPM_TTS]
 problems: []
 missing: []
-members: [图片生成/图生图/huahua批量出图_2038597387756773378.json, 图片生成/图生图/一键生成分镜图 —— 短剧角色设定_2073769772994613249.json, 图片生成/图生图/全能图片Pro 提示词优化版_2044984729702768642.json, 图片生成/图生图/全能图片pro 提示词优化版_2042072865050202114.json]
+members: [音频生成/音频生成/VoxCPM 1.5模型 TTS V3_2016022810824544258.json, 音频生成/音频生成/VoxCPM TTS 生成多地方方言-附免费生方言网站_1976570613458407426.json, 音频生成/音频生成/VoxCPM TTS1.5语音克隆_2042023472389431298.json, 音频生成/音频生成/VoxCPM TTS声音克隆上海话_1970685580105445377.json, 音频生成/音频生成/粤语克隆VoxCPM TTS_1970781273805496321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_664
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/huahua批量出图_2038597387756773378.json、图片生成/图生图/一键生成分镜图 —— 短剧角色设定_2073769772994613249.json、图片生成/图生图/全能图片Pro 提示词优化版_2044984729702768642.json、图片生成/图生图/全能图片pro 提示词优化版_2042072865050202114.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VoxCPM 1.5模型 TTS V3_2016022810824544258.json、音频生成/音频生成/VoxCPM TTS 生成多地方方言-附免费生方言网站_1976570613458407426.json、音频生成/音频生成/VoxCPM TTS1.5语音克隆_2042023472389431298.json、音频生成/音频生成/VoxCPM TTS声音克隆上海话_1970685580105445377.json、音频生成/音频生成/粤语克隆VoxCPM TTS_1970781273805496321.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `easy showAnything`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `VoxCPM_TTS`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `ImageStitch` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `easy promptLine` —— 1/4 个有
+- `Apply Whisper` —— 4/5 个有
+- `CR Prompt Text` —— 4/5 个有
+- `AudioCrop` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,60 +3,55 @@ name: unknown_workflow_lora_sampler_clip_263
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6415
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, SetNode, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy promptLine]
+coverage: 0.852
+common_nodes: [BasicScheduler, CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, DeepTranslatorTextNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RH_Captioner, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/001-krea2-单双采对比_2080571304964612098.json, 图片生成/文生图/001-krea2-双采-afterlight_2083480828507676674.json]
+members: [图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json, 图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_263
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/001-krea2-单双采对比_2080571304964612098.json、图片生成/文生图/001-krea2-双采-afterlight_2083480828507676674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json、图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CFGZeroStarAndInit`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
+- `CR Text`
+- `CR Text Concatenate`
+- `DeepTranslatorTextNode`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoader`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
+- `RH_Captioner`
+- `SamplerCustom`
 - `SaveImage`
-- `SetNode`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `ResolutionSelector` —— 1/2 个有
+- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 10 | - | 2 | 80% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
-| 宽度 | 960 | - | 2 | 100% |
-| 高度 | 1344 | - | 2 | 100% |
+| LoRA 模型强度 | 0.7 | - | 2 | 100% |
+| LoRA 文本强度 | 0.7 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,11 +59,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 宽度 中位数 960，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1344，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

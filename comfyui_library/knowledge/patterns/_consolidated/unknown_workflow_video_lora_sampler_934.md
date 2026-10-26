@@ -3,54 +3,65 @@ name: unknown_workflow_video_lora_sampler_934
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.901
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, ShowText|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.518
+common_nodes: [BlockifyMask, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJv2, JWInteger, LayerMask: MaskPreview, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Smooth_Mix文生图工作流KJ版_1979830318448414721.json, 视频生成/文生视频/wan2.2文生视频（KJ流）加速_1950237819014963201.json]
+members: [视频生成/图生视频/wan2.2animate视频人物替换_1969420590102814722.json, 视频生成/图生视频/wananimate视频动作迁移_1969490471846354945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_934
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Smooth_Mix文生图工作流KJ版_1979830318448414721.json、视频生成/文生视频/wan2.2文生视频（KJ流）加速_1950237819014963201.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2animate视频人物替换_1969420590102814722.json、视频生成/图生视频/wananimate视频动作迁移_1969490471846354945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `LoadWanVideoT5TextEncoder`
-- `ShowText|pysssss`
+- `BlockifyMask`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LayerMask: MaskPreview`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SAM3_Detect`
+- `SDPoseDrawKeypoints`
+- `SDPoseKeypointExtractor`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `GLM_Text_Chat` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `WanVideoEasyCache` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `Wan_video_prompt_generator` —— 1/2 个有
+- `easy showAnything`
 
 ## 典型参数
 

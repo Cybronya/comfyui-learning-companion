@@ -3,35 +3,42 @@ name: unknown_workflow_generic_597
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.94
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.8282
+common_nodes: [AddMask, CR Text, ChinesePrompt_Mix, GrowMaskWithBlur, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V2, LoadImage, Mask Invert, MaskPreview+, PreviewImage, RMBG, SDMatteApply, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json, 音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json, 音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json, 音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json, 音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json]
+members: [图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json, 图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_597
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json、音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json、音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json、音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json、音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json、图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-
-**可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `AddMask`
+- `CR Text`
+- `ChinesePrompt_Mix`
+- `GrowMaskWithBlur`
+- `JoinImageWithAlpha`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskPreview`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LoadImage`
+- `Mask Invert`
+- `MaskPreview+`
+- `PreviewImage`
+- `RMBG`
+- `SDMatteApply`
+- `SaveImage`
 
 ## 典型参数
 

@@ -3,33 +3,34 @@ name: unknown_workflow_generic_1645
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadAudio, RH_FireRedAudioEdit, RH_FireRedAudioLoader, SaveAudioMP3]
+coverage: 0.9375
+common_nodes: [CR Text, ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json, 音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json]
+members: [图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json, 图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1645
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json、音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json、图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RH_FireRedAudioEdit`
-- `RH_FireRedAudioLoader`
-- `SaveAudioMP3`
+- `CR Text`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
 
 ## 典型参数
 

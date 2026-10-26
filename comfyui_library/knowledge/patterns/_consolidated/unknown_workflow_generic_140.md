@@ -1,35 +1,46 @@
 ---
 name: unknown_workflow_generic_140
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.646083
-common_nodes: [PrimitiveStringMultiline, RH_Sora2_T2V, SaveVideo]
+coverage: 0.735154
+common_nodes: [LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能视频S文生视频15秒_1986360765202497538.json, 图片生成/文生图/广告大片直出_1982097023711232001.json, 视频生成/图生视频/全能视频S文生视频-百老汇+女团+走钢丝_1975367513905213442.json, 视频生成/文生视频/全能视频S 2文生视频工作流｜全能视频S 2 十秒电影级长镜头_2099402152606261249.json, 视频生成/文生视频/全能视频S 文生视频_1984545204990525442.json, 视频生成/文生视频/全能视频S丨文生视频_1984550896690413570.json, 视频生成/文生视频/全能视频S文生视频-广告大片直出_1976835467457052674.json, 视频生成/文生视频/全能视频S文生视频-广告大片直出_1976864902071701505.json, 视频生成/文生视频/全能视频S文生视频-广告大片直出_1993696914623365122.json, 视频生成/文生视频/全能视频S文生视频-香水广告片+古装动画电影+粘土人坐过山车_1976147181721780225.json, 视频生成/文生视频/全能视频S文生视频15秒_1983511794910175233.json, 视频生成/文生视频/全能视频S文生视频15秒_1985654698340429826.json]
+members: [数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json, 数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json, 数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json, 音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2050893627286663170.json, 音频生成/音频生成/LongCat-AudioDIT-语音克隆_2055595682752417794.json, 音频生成/音频生成/LongCat-AudioDiT+超真实语气+语音克隆工作流_2046995658002927618.json, 音频生成/音频生成/LongCat-TTS多人对话_2075504719178592258.json, 音频生成/音频生成/TTS语音音频克隆单人双人可以同时进行丝滑复制_2077303693199896577.json, 音频生成/音频生成/TTS超真实语气 语音克隆工作流 LAO   郑_2053183694545932289.json, 音频生成/音频生成/YZ-LongCat-AudioDIT-TTS_2041359894686732290.json, 音频生成/音频生成/YZ金鱼-LongCat-AudioDIT-TTS_2039380233228394497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_140
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/全能视频S文生视频15秒_1986360765202497538.json、图片生成/文生图/广告大片直出_1982097023711232001.json、视频生成/图生视频/全能视频S文生视频-百老汇+女团+走钢丝_1975367513905213442.json、视频生成/文生视频/全能视频S 2文生视频工作流｜全能视频S 2 十秒电影级长镜头_2099402152606261249.json、视频生成/文生视频/全能视频S 文生视频_1984545204990525442.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json、数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json、数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json、音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json、音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `RH_Sora2_T2V`
-- `SaveVideo`
+全部 13 个 workflow 都包含：
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `PreviewAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptGenerateAPI` —— 1/12 个有
-- `easy showAnything` —— 1/12 个有
+- `AudioCrop` —— 12/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
+- `LongCatMultiSpeakerTTS` —— 11/13 个有
+- `CR Prompt Text` —— 10/13 个有
+- `TextInput_` —— 3/13 个有
+- `Fast Groups Muter (rgthree)` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `TextInputNode` —— 1/13 个有
 
 ## 典型参数
 

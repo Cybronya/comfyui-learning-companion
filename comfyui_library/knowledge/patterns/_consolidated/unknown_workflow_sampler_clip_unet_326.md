@@ -1,57 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_unet_326
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.673333
-common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.856
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Deepfacelab素材一键直出16宫格_2028777260731338753.json, 图片生成/文生图/Z-Image+人像细节增强+美颜版本+全节点注释_2058872484786692098.json, 图片生成/文生图/Z-Image_写真写实+反推图片提示词生成+全节点注释_2057697011813675010.json]
+members: [图片生成/文生图/Z-image-文生图-同一提示词多样性出图TEXT TO IMAGE_1999698893736734721.json, 图片生成/文生图/Z-image-文生图-同一提示词多样性出图TEXT TO IMAGE_1999746796563857409.json, 图片生成/文生图/Z-image-文生图-多样性出图-海报电商二次元等_2028421841517285377.json, 图片生成/文生图/z-image-turbo 无限制模型 + 图形4倍放大 工作流_2018231007891169281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_326
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Deepfacelab素材一键直出16宫格_2028777260731338753.json、图片生成/文生图/Z-Image+人像细节增强+美颜版本+全节点注释_2058872484786692098.json、图片生成/文生图/Z-Image_写真写实+反推图片提示词生成+全节点注释_2057697011813675010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image-文生图-同一提示词多样性出图TEXT TO IMAGE_1999698893736734721.json、图片生成/文生图/Z-image-文生图-同一提示词多样性出图TEXT TO IMAGE_1999746796563857409.json、图片生成/文生图/Z-image-文生图-多样性出图-海报电商二次元等_2028421841517285377.json、图片生成/文生图/z-image-turbo 无限制模型 + 图形4倍放大 工作流_2018231007891169281.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `ConstrainImage|pysssss` —— 1/3 个有
-- `DetailDaemonSamplerNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `MultiplySigmas` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `SeedVarianceEnhancer` —— 1/3 个有
+- `Anything Everywhere` —— 3/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `easy seed` —— 3/4 个有
+- `CR Value` —— 1/4 个有
+- `UltimateSDUpscale` —— 1/4 个有
+- `UpscaleModelLoader` —— 1/4 个有
+- `easy promptLine` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1052 | 576 - 1080 | 4 | 78% |
+| 高度 | 1480 | 1024 - 1584 | 4 | 84% |
+| 采样步数 | fixed | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 10 | 9 - 10 | 4 | 96% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 75% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -59,4 +62,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1052，观测区间 576 - 1080，4 个样本
+- 高度 中位数 1480，观测区间 1024 - 1584，4 个样本，取值集中（一致性 84%）
+- 采样步数 最常用 fixed，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 9 - 10，4 个样本，取值集中（一致性 96%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 75%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

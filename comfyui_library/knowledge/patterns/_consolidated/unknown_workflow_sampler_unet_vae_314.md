@@ -3,63 +3,52 @@ name: unknown_workflow_sampler_unet_vae_314
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8385
-common_nodes: [ApplyFaceProcessor, CLIPLoader, CR Text, CR Text Concatenate, ConditioningZeroOut, EasyCache, FaceProcessorLoader, Int, KSampler, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, ShowText|pysssss, Text, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.864
+common_nodes: [BasicScheduler, CLIPLoader, CR Text, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SamplerCustom, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax H3 全能生图编辑_2084896566137151490.json, 图片生成/文生图/MiniMax+H3+全能生图编辑_2085195960048771073.json]
+members: [图片生成/图生图/V3 Boogu-Image 批量电商主图  本地可跑 适合于 情趣 养生 等类目_2068702253560717313.json, 图片生成/图生图/V3 Boogu-Image 批量详情 10张  开源本地可跑_2068718937306652673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_314
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 全能生图编辑_2084896566137151490.json、图片生成/文生图/MiniMax+H3+全能生图编辑_2085195960048771073.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/V3 Boogu-Image 批量电商主图  本地可跑 适合于 情趣 养生 等类目_2068702253560717313.json、图片生成/图生图/V3 Boogu-Image 批量详情 10张  开源本地可跑_2068718937306652673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `EasyCache`
-- `FaceProcessorLoader`
-- `Int`
-- `KSampler`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `SamplerCustom`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `ShowText|pysssss`
-- `Text`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `CompressImages` —— 1/2 个有
-- `VHS_Unbatch` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `easy promptLine`
+- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_multistep | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1152 | - | 2 | 78% |
+| 高度 | 1500 | - | 2 | 93% |
 
 ## 常见问题
 
@@ -67,9 +56,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1152，样本不足，未给区间，2 个样本
+- 高度 中位数 1500，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

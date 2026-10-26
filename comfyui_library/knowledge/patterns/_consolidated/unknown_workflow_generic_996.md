@@ -3,33 +3,40 @@ name: unknown_workflow_generic_996
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [RH_Nano_Banana2_Image2Image, RH_Translator, SaveImage]
+coverage: 0.494667
+common_nodes: [Any Switch (rgthree), CR Text, CR Text Replace, Fast Groups Bypasser (rgthree), GetNode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, SetNode]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片pro文生图_2035932753232924674.json, 图片生成/文生图/全能水果图片编辑PRO_2011331939113902082.json, 图片生成/文生图/模特换装换脸换背景_2028408164776943617.json]
+members: [图片生成/图生图/一键生成用于seedance2.0的人物_角色可视化AI短剧角色卡资产_2061644160330981378.json, 图片生成/图生图/人物_角色可视化AI短剧角色卡资产_2089673848122859522.json, 图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的可视化故事板（视频导演适用）_1996495795576782850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_996
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片pro文生图_2035932753232924674.json、图片生成/文生图/全能水果图片编辑PRO_2011331939113902082.json、图片生成/文生图/模特换装换脸换背景_2028408164776943617.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键生成用于seedance2.0的人物_角色可视化AI短剧角色卡资产_2061644160330981378.json、图片生成/图生图/人物_角色可视化AI短剧角色卡资产_2089673848122859522.json、图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的可视化故事板（视频导演适用）_1996495795576782850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
-- `RH_Translator`
+- `Any Switch (rgthree)`
+- `CR Text`
+- `CR Text Replace`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `SeedVR2` —— 1/3 个有
+- `SetNode`
 
 ## 典型参数
 

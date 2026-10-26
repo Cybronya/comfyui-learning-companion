@@ -3,35 +3,44 @@ name: unknown_workflow_generic_1051
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.731333
-common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Sora2_I2V, SaveVideo]
+coverage: 0.928333
+common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageLoader, ImageScaleToTotalPixels, MultiplePathsInputPlus, PreviewImage, Qwen3VL_Advanced, Qwen3_VQA, RH_Nano_Banana_Image2Image, SaveImage, StringFunction|pysssss, easy anythingIndexSwitch, easy imageConcat, easy int, easy positive, easy saveText, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频-图生视频-全能视频S_1985541163090329601.json, 视频生成/文生视频/全能视频S-电影预告片+动物跳舞+纸巾变鱼_1976522930123313154.json, 视频生成/文生视频/全能视频S最强文生视频、图生视频二合一工作流15秒_1996207366158819329.json]
+members: [图片生成/图生图/生图-三图编辑自动-全能图片V1_1980904638415290369.json, 图片生成/图生图/生图-五图编辑自动-全能图片V1_1998503044310556674.json, 图片生成/图生图/生图-四图编辑自动-全能图片V1_1980906918803886081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1051
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频-图生视频-全能视频S_1985541163090329601.json、视频生成/文生视频/全能视频S-电影预告片+动物跳舞+纸巾变鱼_1976522930123313154.json、视频生成/文生视频/全能视频S最强文生视频、图生视频二合一工作流15秒_1996207366158819329.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-三图编辑自动-全能图片V1_1980904638415290369.json、图片生成/图生图/生图-五图编辑自动-全能图片V1_1998503044310556674.json、图片生成/图生图/生图-四图编辑自动-全能图片V1_1980906918803886081.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Sora2_T2V` —— 2/3 个有
-- `easy seed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `MultiplePathsInputPlus`
+- `PreviewImage`
+- `Qwen3VL_Advanced`
+- `Qwen3_VQA`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `StringFunction|pysssss`
+- `easy anythingIndexSwitch`
+- `easy imageConcat`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,79 +3,79 @@ name: unknown_workflow_lora_sampler_unet_102
 type: Unknown Workflow
 frequency: 7
 level: strong
-coverage: 0.879429
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.800286
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CR Text, CR Text Concatenate, ConditioningZeroOut, CropWithPadInfo, FluxKontextMultiReferenceLatentMethod, GetImageSize, ImpactMinMax, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, Qwen3_VQA, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json, 视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 2K_2098776208187154433.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 4K_2098400619433381889.json]
+members: [图片生成/图生图/Qwen-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2021113810890788866.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2007712919701692418.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2008718061972496385.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2043108574913634305.json, 图片生成/图生图/Qwen-Image免骨架姿态迁移l_2021760534307147778.json, 图片生成/图生图/人物姿态迁移Qwen-Image-Edit2511+AnyPose_2008786454448709634.json, 图片生成/图生图/参考人物姿势迁移_2010268614363979778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_102
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json、视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2021113810890788866.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2007712919701692418.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2008718061972496385.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2043108574913634305.json、图片生成/图生图/Qwen-Image免骨架姿态迁移l_2021760534307147778.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
+- `Any Switch (rgthree)`
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetImageSize`
+- `ImpactMinMax`
+- `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/7 个有
-- `H3SigmaRefiner` —— 5/7 个有
-- `ModelPreviewOverrideKJ` —— 5/7 个有
-- `RH_DLSS5FrameInterpolation` —— 5/7 个有
-- `SelfLiftH3Sampler` —— 5/7 个有
-- `ImageResizeKJv2` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `LTXVSeparateAVLatent` —— 4/7 个有
-- `SeedVR2` —— 4/7 个有
-- `SeedVR2BlockSwap` —— 4/7 个有
-- `MiniMaxChunkFeedForward` —— 3/7 个有
-- `MiniMaxLowVRAMAttention` —— 3/7 个有
-- `BasicGuider` —— 2/7 个有
-- `LTXVConcatAVLatent` —— 2/7 个有
-- `LoadAudio` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `MiniMaxH3SigmaShift` —— 2/7 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/7 个有
-- `RandomNoise` —— 2/7 个有
-- `SamplerCustomAdvanced` —— 2/7 个有
-- `SplitSigmas` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.75 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 6 | 7 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.75，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 6，7 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

@@ -3,53 +3,39 @@ name: unknown_workflow_generic_965
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.843667
-common_nodes: [AddMask, ColorMatchPro, GetImageSize, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, Image Paste Crop by Location, ImageCompositeMasked, ImageCropV2, ImageScale, InvertMask, LayerMask: MaskPreview, LayerUtility: ImageAutoCrop, LoadImage, PreviewImage, PrimitiveBoundingBox, RH_Nano_Banana2_Gemini31Flash, ResolutionSelector, SAMLoader, SaveImage, SegmentV2, SimpleMath+, StringMergeNode, Text, YCMaskDirectionExpand, 图像缩放V2_孤海, 孤海图像裁剪按比例]
+coverage: 0.757667
+common_nodes: [CR Prompt Text, CR Text, Comfly_api_set, Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, StringFunction|pysssss, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/自动化换脸1_2104075933199192066.json, 图片生成/图生图/自动化换脸2_2104181850368466946.json, 图片生成/图生图/自动化换脸3_2104186362273550337.json]
+members: [图片生成/图生图/Image2 全能编辑 4K图像生成 图生图官方版+ 网址参考版_2050755919801270273.json, 图片生成/图生图/全能编辑 4K图像生成 Image2 图生图官方版+ 网址参考版_2050758505501605889.json, 图片生成/图生图/海报制作Gimage2图生图+Image2-图生图官方版-支持网址参考 +gxx-image-2_2061313092792967169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_965
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/自动化换脸1_2104075933199192066.json、图片生成/图生图/自动化换脸2_2104181850368466946.json、图片生成/图生图/自动化换脸3_2104186362273550337.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Image2 全能编辑 4K图像生成 图生图官方版+ 网址参考版_2050755919801270273.json、图片生成/图生图/全能编辑 4K图像生成 Image2 图生图官方版+ 网址参考版_2050758505501605889.json、图片生成/图生图/海报制作Gimage2图生图+Image2-图生图官方版-支持网址参考 +gxx-image-2_2061313092792967169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AddMask`
-- `ColorMatchPro`
-- `GetImageSize`
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `GrowMaskWithBlur`
-- `Image Paste Crop by Location`
-- `ImageCompositeMasked`
-- `ImageCropV2`
-- `ImageScale`
-- `InvertMask`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageAutoCrop`
+- `CR Prompt Text`
+- `CR Text`
+- `Comfly_api_set`
+- `Comfly_gpt_image_2`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveBoundingBox`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `ResolutionSelector`
-- `SAMLoader`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `SegmentV2`
-- `SimpleMath+`
-- `StringMergeNode`
-- `Text`
-- `YCMaskDirectionExpand`
-- `图像缩放V2_孤海`
-- `孤海图像裁剪按比例`
+- `StringFunction|pysssss`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Label (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

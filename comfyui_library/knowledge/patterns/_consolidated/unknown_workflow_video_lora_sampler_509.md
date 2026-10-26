@@ -1,73 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_509
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.75475
-common_nodes: [BBoxesToSAM2, CLIPVisionLoader, CM_IntToFloat, CR Text, DownloadAndLoadQwenModel, DrawViTPose, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, Int, LayerMask: SAM2Ultra, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, MaskPreview+, OnnxDetectionModelLoader, PoseAndFaceDetection, QwenVLDetection, RHHiddenNodes, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.9818
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan-Animate人物替换V3_1989226857599995905.json, 视频生成/图生视频/Wan-Animate人物替换V3_2002723614807998465.json, 视频生成/图生视频/Wan-Animate人物替换_1988762483311652866.json, 视频生成/图生视频/Wan-Animate人物替换遮罩版V3_2001920042348494850.json]
+members: [视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json, 视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json, 视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_509
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan-Animate人物替换V3_1989226857599995905.json、视频生成/图生视频/Wan-Animate人物替换V3_2002723614807998465.json、视频生成/图生视频/Wan-Animate人物替换_1988762483311652866.json、视频生成/图生视频/Wan-Animate人物替换遮罩版V3_2001920042348494850.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json、视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json、视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BBoxesToSAM2`
+全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Text`
-- `DownloadAndLoadQwenModel`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `Int`
-- `LayerMask: SAM2Ultra`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MaskPreview+`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `QwenVLDetection`
-- `RHHiddenNodes`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 3/4 个有
-- `DrawMaskOnImage` —— 3/4 个有
-- `GrowMask` —— 3/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ColorMatch` —— 4/5 个有
+- `WanVideoEnhanceAVideo` —— 4/5 个有
+- `WanVideoSLG` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `Bjornulf_ShowInt` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
+- `WanVideoUni3C_embeds` —— 1/5 个有
 
 ## 典型参数
 

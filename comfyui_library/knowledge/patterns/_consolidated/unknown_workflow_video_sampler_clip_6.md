@@ -1,75 +1,80 @@
 ---
 name: unknown_workflow_video_sampler_clip_6
 type: Unknown Workflow
-frequency: 46
-level: moderate
-coverage: 0.778109
-common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 41
+level: strong
+coverage: 0.93678
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/动态壁纸高质量720p(高清版）_1935507114980999169.json, 图片生成/文生图/极速泼水变装特效可灵同款wan2.1+accvid_1930983914234687490.json, 视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2083132017721565185.json, 视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2083164546344251394.json, 视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2100533210240348162.json, 视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2100556599650775041.json, 视频生成/图生视频/动态壁纸+高质量+高清_2064906885064646658.json, 视频生成/图生视频/动态壁纸+高质量+高清_2066330716488687617.json, 视频生成/图生视频/动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1964345936161947649.json, 视频生成/图生视频/动态壁纸高质量720p(高清版）_2011643164708315137.json, 视频生成/图生视频/动态壁纸｜自动 prompt｜高清 720P_1937393290176045057.json, 视频生成/图生视频/变身美人鱼同款特效_1932620542149324802.json, 视频生成/图生视频/图片高清动态壁纸高质量_2063232756540338178.json, 视频生成/图生视频/图生视频-一键生成高清动态壁纸高质量_2071180149613219842.json, 视频生成/图生视频/图生视频-一键生成高清动态壁纸高质量_2071197312889741314.json, 视频生成/图生视频/图生视频-一键生成高清动态壁纸高质量_2104899337225588738.json, 视频生成/图生视频/图生视频-一键生成高清动态壁纸高质量_2104909885799485441.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2064512548493422594.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2064890670665519105.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2066019261222576130.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2066405695934783489.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2069322434439897089.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2070344065056600066.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2072123157451984897.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2073930574682742785.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2073964917299965954.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2077187967709437953.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2079087699880931330.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2084105133889253377.json, 视频生成/图生视频/图生视频-高清动态壁纸高质量_2085268808855543809.json, 视频生成/图生视频/图生视频-高质量高清动态壁纸_2064937816110489602.json, 视频生成/图生视频/高清动态壁纸_2062446697229410305.json, 视频生成/图生视频/高清动态壁纸高质量_1984592201814523906.json, 视频生成/图生视频/高清动态壁纸高质量_2062011110185857025.json, 视频生成/图生视频/高清动态壁纸高质量_2062071884027617282.json, 视频生成/图生视频/高清动态壁纸高质量_2063825118928920577.json, 视频生成/图生视频/高清动态壁纸高质量_2065690221005594626.json, 视频生成/图生视频/高清动态壁纸高质量_2065690351356178433.json, 视频生成/图生视频/高清动态壁纸高质量_2072184809031553025.json, 视频生成/图生视频/高清动态壁纸高质量_2072198679603269634.json, 视频生成/图生视频/高清动态壁纸高质量_2078859878201909249.json, 视频生成/图生视频/高清动态壁纸高质量，限时免费全能图片G模型使用，仅需上传人物面部参考即可_2071490533779922946.json, 视频生成/图生视频/高清高质量动态壁纸_2066360192815689730.json, 视频生成/图生视频/高质量高清动态壁纸_2064592561976725506.json, 视频生成/图生视频/高质量高清动态壁纸_2069414462737702914.json, 视频生成/图生视频/高质量高清动态壁纸_2071841316409008130.json]
+members: [图片生成/图生图/wan2.2图生成视频720_2012918046804942849.json, 图片生成/图生图/wan2.2首尾帧生成视频720p_2012896358499360770.json, 视频生成/图生视频/1119图生视频-1_1991093640317501442.json, 视频生成/图生视频/1119图生视频_1991088603090759681.json, 视频生成/图生视频/DaSiWaWan2.2-动漫图生视频_2007793632560025602.json, 视频生成/图生视频/Remix-V3.0-首尾帧视频_2033895649091002370.json, 视频生成/图生视频/Remix超丝滑图生视频动态模型-官方工作流_1986706185669832705.json, 视频生成/图生视频/Remix超丝滑图生视频动态模型-官方工作流_2029757199156776962.json, 视频生成/图生视频/SmoothMix-V2.0首尾帧视频生成_2010689825397018625.json, 视频生成/图生视频/Wan2.2 V3 丝滑图生视频_2085749492984401922.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频+akcope_2062721995304955905.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频-最新版_2065249355430449154.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频-最新版_2079815036926783490.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频_极度丝滑没有之一+akcope (1)_2069948669922725889.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频_极度丝滑没有之一_2067127953313583105.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频超流畅最强版 (1)_2079386376218435585.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2101853750293000193.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2102664220360929281.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2102964268558798849.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2110571382307385346.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2111012816948912129.json, 视频生成/图生视频/万能模板-图生视频-Wan2.2 Remix V3_2066695652163284993.json, 视频生成/图生视频/优化版 Wan2.2 Remix V3 图生视频_2087918295860203522.json, 视频生成/图生视频/图生视频 超流畅最强版_2114204391677976578.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2062010063329521666.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2072567519474438146.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2075050765437198338.json, 视频生成/图生视频/图生视频-_极度丝滑Wan2.2 Remix V3_2066688919793655810.json, 视频生成/图生视频/图生视频-_极度丝滑Wan2.2 Remix V3_2072513717627088897.json, 视频生成/图生视频/图生视频Wan2.2 Remix V3_2072515754112667650.json, 视频生成/图生视频/图生视频Wan2.2 Remix V3_2073603689817919489.json, 视频生成/图生视频/图生视频_2062050188516220930.json, 视频生成/图生视频/图生视频_2068616634474000385.json, 视频生成/图生视频/图生视频_2108414096944222209.json, 视频生成/图生视频/图生视频超流畅最强版 Wan2.2+Remix+V3_2075461259432124418.json, 视频生成/图生视频/图生视频超流畅最强版Wan2.2+Remix+V3+_2083825723554492418.json, 视频生成/图生视频/图生视频（动态壁纸）高清版_2064427317950246914.json, 视频生成/图生视频/图生视频，无缝流畅_2075490820677001218.json, 视频生成/图生视频/定制风景生视频_2076940992846065665.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077718229480468482.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077733281923162113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 46 个 workflow 归纳得出（图片生成/图生图/动态壁纸高质量720p(高清版）_1935507114980999169.json、图片生成/文生图/极速泼水变装特效可灵同款wan2.1+accvid_1930983914234687490.json、视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2083132017721565185.json、视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2083164546344251394.json、视频生成/图生视频/一键生成高清动态壁纸高质量生成图生视频_2100533210240348162.json…）
+> 由 `engine/knowledge_consolidation` 从 41 个 workflow 归纳得出（图片生成/图生图/wan2.2图生成视频720_2012918046804942849.json、图片生成/图生图/wan2.2首尾帧生成视频720p_2012896358499360770.json、视频生成/图生视频/1119图生视频-1_1991093640317501442.json、视频生成/图生视频/1119图生视频_1991088603090759681.json、视频生成/图生视频/DaSiWaWan2.2-动漫图生视频_2007793632560025602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：46
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：41
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 46 个 workflow 都包含：
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+全部 41 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 44/46 个有
-- `CogVideoEnhanceAVideo` —— 44/46 个有
-- `PreviewImage` —— 44/46 个有
-- `WanVideoTorchCompileSettings` —— 42/46 个有
-- `easy cleanGpuUsed` —— 42/46 个有
-- `ShowText|pysssss` —— 41/46 个有
-- `Anything Everywhere` —— 40/46 个有
-- `RHHiddenNodes` —— 40/46 个有
-- `WanVideoSEVAELoader` —— 40/46 个有
-- `WanVideoSetBlockSwap` —— 40/46 个有
-- `CR Text` —— 6/46 个有
-- `WanVideoImageClipEncode` —— 6/46 个有
-- `WanVideoLoraSelect` —— 6/46 个有
-- `ImageScaleToTotalPixels` —— 4/46 个有
-- `easy imageSize` —— 4/46 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/46 个有
-- `ImageSizeAndBatchSize` —— 2/46 个有
-- `RH_Captioner` —— 2/46 个有
-- `WanVideoExperimentalArgs` —— 2/46 个有
-- `CR Text Concatenate` —— 1/46 个有
-- `GPTImage2EditImages` —— 1/46 个有
-- `ImageFromBatch` —— 1/46 个有
-- `JjkText` —— 1/46 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/46 个有
-- `SaveImage` —— 1/46 个有
-- `easy showAnything` —— 1/46 个有
+- `INTConstant` —— 39/41 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 38/41 个有
+- `LoraLoaderModelOnly` —— 38/41 个有
+- `CLIPVisionEncode` —— 36/41 个有
+- `CLIPVisionLoader` —— 36/41 个有
+- `WanImageToVideo` —— 36/41 个有
+- `LoadImage` —— 35/41 个有
+- `SimpleMath+` —— 35/41 个有
+- `RIFE VFI` —— 33/41 个有
+- `CR Text` —— 32/41 个有
+- `ImageScaleBy` —— 32/41 个有
+- `Text Concatenate` —— 32/41 个有
+- `Wan22PromptSelector` —— 32/41 个有
+- `easy cleanGpuUsed` —— 32/41 个有
+- `ImageResizeKJv2` —— 4/41 个有
+- `ConditioningKrea2Rebalance` —— 3/41 个有
+- `ConditioningZeroOut` —— 3/41 个有
+- `EmptyLatentImage` —— 3/41 个有
+- `Int` —— 3/41 个有
+- `LoadImageFromURL` —— 3/41 个有
+- `TTResolutionSelector` —— 3/41 个有
+- `WanFirstLastFrameToVideo` —— 3/41 个有
+- `easy promptLine` —— 3/41 个有
+- `PainterI2V_Wan2_2` —— 2/41 个有
+- `EmptyImage` —— 1/41 个有
+- `GetNode` —— 1/41 个有
+- `PreviewImage` —— 1/41 个有
+- `SetNode` —— 1/41 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 41 | 98% |
+| Prompt 约束强度(CFG) | 6 | 4 - 6 | 41 | 90% |
+| 采样算法 | 1 | 1 - 1 | 41 | 100% |
+| 调度器 | euler | - | 41 | 100% |
+| 重绘幅度 | simple | - | 41 | 85% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 3 | 100% |
 
 ## 常见问题
 
@@ -77,4 +82,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，41 个样本，一致性 98%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，41 个样本，取值集中（一致性 90%）
+- 采样算法 中位数 1，观测区间 1 - 1，41 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，41 个样本，一致性 100%
+- 重绘幅度 最常用 simple，41 个样本，一致性 85%
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，3 个样本，取值集中（一致性 100%）

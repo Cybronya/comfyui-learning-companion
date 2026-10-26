@@ -3,45 +3,43 @@ name: unknown_workflow_upscale_vae_48
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8605
-common_nodes: [GuHaiAutoImageSplit, Image Comparer (rgthree), ImageResize+, ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageSize, 孤海注释]
+coverage: 0.846
+common_nodes: [BOOLConstant, ComfyUI_Image_Round__ImageCropAdvanced, DisplayAny, DualCLIPLoader, GetImageSize, ImageUpscaleWithModel, JoinStrings, KOOK_SaveJPGImage, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SimpleMath+, Text Input [Dream], UpscaleModelLoader, VAELoader, easy ifElse, easy imageSplitGrid]
 problems: []
 missing: []
-members: [图片生成/图生图/多宫格图片高清放大裁切，短剧分镜故事板使用_2064073208059486209.json, 图片生成/图生图/多宫格高清放大裁切！开源短剧必备功能！_2061765655824785409.json]
+members: [图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json, 图片生成/图生图/配饰工作流_2076518830742007809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_48
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多宫格图片高清放大裁切，短剧分镜故事板使用_2064073208059486209.json、图片生成/图生图/多宫格高清放大裁切！开源短剧必备功能！_2061765655824785409.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json、图片生成/图生图/配饰工作流_2076518830742007809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GuHaiAutoImageSplit`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
+- `BOOLConstant`
+- `ComfyUI_Image_Round__ImageCropAdvanced`
+- `DisplayAny`
+- `DualCLIPLoader`
+- `GetImageSize`
+- `ImageUpscaleWithModel`
+- `JoinStrings`
+- `KOOK_SaveJPGImage`
 - `LoadImage`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageSize`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `DF_Integer` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SimpleMath+`
+- `Text Input [Dream]`
+- `UpscaleModelLoader`
+- `VAELoader`
+- `easy ifElse`
+- `easy imageSplitGrid`
 
 ## 典型参数
 

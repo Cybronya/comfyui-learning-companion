@@ -2,69 +2,75 @@
 name: unknown_workflow_sampler_clip_unet_90
 type: Unknown Workflow
 frequency: 11
-level: weak
-coverage: 0.923727
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.887
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json, 图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json, 图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json, 图片生成/文生图/Z-Image-Turbo-文生图_2013422713167155201.json, 图片生成/文生图/Z-Image_turbo造像模型文生图极速版_2049364318055043073.json, 图片生成/文生图/Z-Image（base）文生图_2016049580982407169.json, 图片生成/文生图/ZIT基础文生图_2088289408716992513.json, 图片生成/文生图/Z_image_turbo文生图原版工作流-B站UP主@好奇漫步_1995897359357919233.json, 图片生成/文生图/Zimage文生图基础_2044005460373676034.json, 图片生成/文生图/Zimage文生图基础_2060261069804892162.json, 图片生成/文生图/z-image-有无负面提示词对比_2016338426164944897.json]
+members: [图片生成/图生图/Bernini图片编辑+完美换装_2062428428065923073.json, 图片生成/图生图/F-2klein 9b无塑料感高清修复_2064209222493102082.json, 图片生成/图生图/F.2klein 9b无塑料感高清修复强烈推荐版_2062160878765694977.json, 图片生成/图生图/Klein 高清放大修复V2_2061130933612404737.json, 图片生成/图生图/Klein无塑料感高清修复_2061243781923557377.json, 图片生成/图生图/Klein调色_2055545779061829634.json, 图片生成/图生图/图像调色板-0偏移_2055573571447074818.json, 图片生成/图生图/模糊图片变清晰  图像清晰修复 高清放大_2061621095765204994.json, 图片生成/图生图/照片调色Color Master_ Multiple Photo Editing_2092443486053294081.json, 图片生成/图生图/调色大师 照片调色多风格-多种预设可选择_flux2+kelin_2084143743241900034.json, 图片生成/图生图/调色大师-多种预设选择_flux2 kelin_2064907302485975041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_90
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json、图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json、图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json、图片生成/文生图/Z-Image-Turbo-文生图_2013422713167155201.json、图片生成/文生图/Z-Image_turbo造像模型文生图极速版_2049364318055043073.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Bernini图片编辑+完美换装_2062428428065923073.json、图片生成/图生图/F-2klein 9b无塑料感高清修复_2064209222493102082.json、图片生成/图生图/F.2klein 9b无塑料感高清修复强烈推荐版_2062160878765694977.json、图片生成/图生图/Klein 高清放大修复V2_2061130933612404737.json、图片生成/图生图/Klein无塑料感高清修复_2061243781923557377.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/11 个有
-- `ModelSamplingAuraFlow` —— 9/11 个有
-- `LoadImage` —— 5/11 个有
-- `PreviewImage` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `LayerMask: BiRefNetUltra` —— 1/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `UnetLoaderGGUF` —— 1/11 个有
-- `VAEDecodeTiled` —— 1/11 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `Image Comparer (rgthree)` —— 10/11 个有
+- `ReferenceLatent` —— 10/11 个有
+- `VAEEncode` —— 10/11 个有
+- `ImageResizeKJv2` —— 9/11 个有
+- `LoraLoaderModelOnly` —— 9/11 个有
+- `LatentBlend` —— 5/11 个有
+- `PreviewImage` —— 5/11 个有
+- `easy imageColorMatch` —— 5/11 个有
+- `CR Text` —— 4/11 个有
+- `Int` —— 4/11 个有
+- `Anything Everywhere3` —— 3/11 个有
+- `Float` —— 3/11 个有
+- `ImpactSwitch` —— 3/11 个有
+- `easy imageConcat` —— 3/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `BerniniConditioning` —— 1/11 个有
+- `ModelSamplingSD3` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 30 | 11 | 32% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 11 | 34% |
-| 采样算法 | res_multistep | - | 11 | 82% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | fixed | - | 11 | 73% |
+| Prompt 约束强度(CFG) | 4 | 4 - 12 | 11 | 51% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | sa_solver | - | 11 | 45% |
+| 重绘幅度 | simple | - | 11 | 55% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 30，11 个样本，取值分散，一致性仅 32%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，11 个样本，取值分散，一致性仅 34%
-- 采样算法 最常用 res_multistep，11 个样本，一致性 82%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（7/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，11 个样本，一致性 73%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 12，11 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 最常用 sa_solver，11 个样本，一致性 45%
+- 重绘幅度 最常用 simple，11 个样本，一致性 55%

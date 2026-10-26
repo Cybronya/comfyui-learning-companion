@@ -3,39 +3,33 @@ name: unknown_workflow_generic_1686
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8565
-common_nodes: [CR Text, LoadAudio, PreviewAudio, SaveAudioMP3, SaveImage, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, easy cleanGpuUsed]
+coverage: 0.8035
+common_nodes: [LoadImage, PrimitiveStringMultiline, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX-Podcast 方言语音克隆_1986717348403032066.json, 音频生成/音频生成/SoulX-Podcast，语音克隆：粤语、四川、河南方言，AI本地部署_1999048955457662978.json]
+members: [视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json, 视频生成/图生视频/Seedance 2.0多模态参考工作流｜多图参考生视频_2099453267779612673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1686
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast 方言语音克隆_1986717348403032066.json、音频生成/音频生成/SoulX-Podcast，语音克隆：粤语、四川、河南方言，AI本地部署_1999048955457662978.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json、视频生成/图生视频/Seedance 2.0多模态参考工作流｜多图参考生视频_2099453267779612673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudioMP3`
-- `SaveImage`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
-- `easy cleanGpuUsed`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `PreViewVideo` —— 1/2 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/2 个有
+- `RH_PixverseV6ImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

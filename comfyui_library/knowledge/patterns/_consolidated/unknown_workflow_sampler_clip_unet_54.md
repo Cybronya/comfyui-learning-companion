@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_54
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.783714
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.913867
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json, 图片生成/图生图/AI扩图_2046771337133297665.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2089629118886404097.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2091716631025250306.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092058726743240706.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092609760863543297.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097139554640814081.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097236497970851841.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091113137687846913.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091132661388632065.json, 图片生成/图生图/flux2-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2085639645777453057.json]
+members: [图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json, 图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json, 图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json, 图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json, 图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json, 图片生成/文生图/FLUX2 Dev FP8 文生图_图片编辑_2073281827388874753.json, 图片生成/文生图/FLUX2 混合模型_1993521841442586625.json, 图片生成/文生图/FLUX2 混合模型_1993527380123860994.json, 图片生成/文生图/FLUX2-多参考一致性创意场景合成_2090769208387923969.json, 图片生成/文生图/Flux.2+LoRA文生图_1995120190486667265.json, 图片生成/文生图/Flux.2文生哪吒_1994791173480964097.json, 图片生成/文生图/flux2-ftp8 workflow_1993525727769411585.json, 图片生成/文生图/flux2_文生图+图片参考_1993696007951237121.json, 图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json, 图片生成/文生图/最强开源 FLUX2系列合集_1993708586574479361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json、图片生成/图生图/AI扩图_2046771337133297665.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json、图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json、图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json、图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json、图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CFGGuider`
+全部 15 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `Image Comparer (rgthree)`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 13/14 个有
-- `LoraLoaderModelOnly` —— 13/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 12/14 个有
-- `GetNode` —— 12/14 个有
-- `ImpactInt` —— 8/14 个有
-- `孤海注释` —— 8/14 个有
-- `LayerMask: BiRefNetUltra` —— 7/14 个有
-- `PreviewImage` —— 5/14 个有
-- `CR Prompt Text` —— 4/14 个有
-- `CR Text Input Switch (4 way)` —— 4/14 个有
-- `LayerMask: BiRefNetUltraV2` —— 4/14 个有
-- `LayerMask: LoadBiRefNetModel` —— 4/14 个有
-- `easy int` —— 4/14 个有
-- `DifferentialDiffusion` —— 2/14 个有
-- `InpaintModelConditioning` —— 2/14 个有
-- `PlaySound|pysssss` —— 2/14 个有
-- `GrowMaskWithBlur` —— 1/14 个有
-- `ImagePadForOutpaint` —— 1/14 个有
-- `LanPaint_MaskBlend` —— 1/14 个有
-- `easy imageRemBg` —— 1/14 个有
+- `ImageScaleToTotalPixels` —— 13/15 个有
+- `LoadImage` —— 13/15 个有
+- `ReferenceLatent` —— 13/15 个有
+- `VAEEncode` —— 13/15 个有
+- `PreviewImage` —— 4/15 个有
+- `LoraLoaderModelOnly` —— 3/15 个有
+- `ApplySageAttention` —— 2/15 个有
+- `CR Text` —— 2/15 个有
+- `Int Literal` —— 2/15 个有
+- `Label (rgthree)` —— 2/15 个有
+- `ModelPatchTorchSettings` —— 2/15 个有
+- `UnetLoaderGGUF` —— 2/15 个有
+- `easy int` —— 2/15 个有
+- `DeepTranslatorTextNode` —— 1/15 个有
+- `EasyCache` —— 1/15 个有
+- `ImageConcanate` —— 1/15 个有
+- `ImpactInt` —— 1/15 个有
+- `RH_Captioner` —— 1/15 个有
+- `TTResolutionSelector` —— 1/15 个有
+- `easy cleanGpuUsed` —— 1/15 个有
+- `easy showAnything` —— 1/15 个有
 
 ## 典型参数
 

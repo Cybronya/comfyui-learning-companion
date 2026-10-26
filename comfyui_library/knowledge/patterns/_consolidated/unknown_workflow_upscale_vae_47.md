@@ -3,43 +3,49 @@ name: unknown_workflow_upscale_vae_47
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.846
-common_nodes: [BOOLConstant, ComfyUI_Image_Round__ImageCropAdvanced, DisplayAny, DualCLIPLoader, GetImageSize, ImageUpscaleWithModel, JoinStrings, KOOK_SaveJPGImage, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SimpleMath+, Text Input [Dream], UpscaleModelLoader, VAELoader, easy ifElse, easy imageSplitGrid]
+coverage: 0.744
+common_nodes: [Image Comparer (rgthree), ImageBlur, ImageCASharpening+, ImageResize+, LayerUtility: BooleanOperatorV2, LayerUtility: SaveImagePlus, LoadImage, MathExpression|pysssss, PrimitiveBoolean, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, ZML_SwitchOutput, easy cleanGpuUsed, easy ifElse, easy imageScaleDownBy, easy imageSizeByLongerSide, easy imageSizeBySide]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json, 图片生成/图生图/配饰工作流_2076518830742007809.json]
+members: [图片生成/图生图/seedVR2_产品放大_2111751139820654594.json, 图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_47
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json、图片生成/图生图/配饰工作流_2076518830742007809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/seedVR2_产品放大_2111751139820654594.json、图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BOOLConstant`
-- `ComfyUI_Image_Round__ImageCropAdvanced`
-- `DisplayAny`
-- `DualCLIPLoader`
-- `GetImageSize`
-- `ImageUpscaleWithModel`
-- `JoinStrings`
-- `KOOK_SaveJPGImage`
+- `Image Comparer (rgthree)`
+- `ImageBlur`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `LayerUtility: BooleanOperatorV2`
+- `LayerUtility: SaveImagePlus`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `MathExpression|pysssss`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `SimpleMath+`
-- `Text Input [Dream]`
-- `UpscaleModelLoader`
-- `VAELoader`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `ZML_SwitchOutput`
+- `easy cleanGpuUsed`
 - `easy ifElse`
-- `easy imageSplitGrid`
+- `easy imageScaleDownBy`
+- `easy imageSizeByLongerSide`
+- `easy imageSizeBySide`
 
 ## 典型参数
 

@@ -3,34 +3,45 @@ name: unknown_workflow_generic_1279
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LoadImage, SaveImage]
+coverage: 0.672
+common_nodes: [AILab_QwenVL, Bjornulf_ShowInt, Fast Groups Bypasser (rgthree), ImageScale, ImageScaleBy, ImageScaleToTotalPixels, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/logo 剪裁_1970051206548758529.json, 图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json]
+members: [图片生成/反推提示词/AA--LORA工具--Qwen-VL批量反推打标-批量缩放_2000885609906438145.json, 图片生成/反推提示词/LORA工具：Qwen-VL批量打标+反推+图像批量缩放_2031220088656891905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1279
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/logo 剪裁_1970051206548758529.json、图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/AA--LORA工具--Qwen-VL批量反推打标-批量缩放_2000885609906438145.json、图片生成/反推提示词/LORA工具：Qwen-VL批量打标+反推+图像批量缩放_2031220088656891905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
-- `LoadImage`
+- `AILab_QwenVL`
+- `Bjornulf_ShowInt`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageScale`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
 - `SaveImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BoundingBox_Cropper` —— 1/2 个有
-- `LayerMask: SAM2Ultra` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
 
 ## 典型参数
 

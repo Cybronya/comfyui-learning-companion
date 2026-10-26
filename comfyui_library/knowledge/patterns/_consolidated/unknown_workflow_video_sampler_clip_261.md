@@ -3,80 +3,57 @@ name: unknown_workflow_video_sampler_clip_261
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6975
-common_nodes: [Audio Duration (mtb), AudioCrop, CLIPTextEncode, CR Text, CR Text Concatenate, CR Text Replace, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, Float, ImageResizeKJv2, Int to String, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, PreviewImage, PromptRelayEncode, Qwen3ASRLoader, Qwen3ASRTranscribe, RHHiddenNodes, RH_Translator, SamplerCustom, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, SomethingToString, Split String, TTResolutionSelector, Text, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy showAnything]
+coverage: 0.9515
+common_nodes: [FaceAnalysisModels, FaceBoundingBox, ImageConcanate, ImagePadForOutpaint, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: LaMa, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/双人对唱，不变脸，高清晰，全自动_LTX2.3_2051860484126715906.json, 视频生成/图生视频/数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制LTX2.3_2050900841577623553.json]
+members: [视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json, 视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_261
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/双人对唱，不变脸，高清晰，全自动_LTX2.3_2051860484126715906.json、视频生成/图生视频/数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制LTX2.3_2050900841577623553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json、视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `DiffusionModelLoaderKJ`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Float`
-- `ImageResizeKJv2`
-- `Int to String`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `ImageConcanate`
+- `ImagePadForOutpaint`
+- `ImageToMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: LaMa`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewAudio`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
 - `PreviewImage`
-- `PromptRelayEncode`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RHHiddenNodes`
-- `RH_Translator`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `ShowAnything|Mie`
-- `SolidMask`
-- `SomethingToString`
-- `Split String`
-- `TTResolutionSelector`
-- `Text`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `TextInput_`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `GuHaiAutoImageSplit` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `WanVideoTeaCache` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

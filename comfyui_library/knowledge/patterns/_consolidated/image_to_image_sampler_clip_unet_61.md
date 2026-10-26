@@ -2,87 +2,70 @@
 name: image_to_image_sampler_clip_unet_61
 type: Image To Image
 frequency: 7
-level: moderate
-coverage: 0.496857
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+level: weak
+coverage: 0.952286
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/ProReal Pipeline_2001169170496712705.json, 图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json, 图片生成/图生图/去照片AI味道_2009622540498505729.json, 图片生成/图生图/洗图_1941160724741963777.json, 图片生成/图生图/洗图工作流_2031338925985370113.json, 图片生成/文生图/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_1993975579062059010.json, 图片生成/文生图/Z-Image-图文生图-洗图-高清修复 z image zimage_2007444305413148674.json]
+members: [图片生成/图生图/Z-image线稿控制图生图洗图 原图无限制_2004964164030398466.json, 图片生成/图生图/Z-image线稿控制图生图洗图2.0_2000496629763407873.json, 图片生成/图生图/Z-image线稿控制图生图洗图2.1_2001578550618648578.json, 图片生成/图生图/Z-image线稿控制图生图洗图_1996432211425501185.json, 图片生成/图生图/boogu 图生图_2069055979379060737.json, 图片生成/图生图/krea-2  图生图_2070080986699886593.json, 图片生成/图生图/去AI味洗图真实感_2018210512684720129.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_61
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/ProReal Pipeline_2001169170496712705.json、图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json、图片生成/图生图/去照片AI味道_2009622540498505729.json、图片生成/图生图/洗图_1941160724741963777.json、图片生成/图生图/洗图工作流_2031338925985370113.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-image线稿控制图生图洗图 原图无限制_2004964164030398466.json、图片生成/图生图/Z-image线稿控制图生图洗图2.0_2000496629763407873.json、图片生成/图生图/Z-image线稿控制图生图洗图2.1_2001578550618648578.json、图片生成/图生图/Z-image线稿控制图生图洗图_1996432211425501185.json、图片生成/图生图/boogu 图生图_2069055979379060737.json…）
 
 - **类型**：Image To Image
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 6/7 个有
-- `CR SDXL Aspect Ratio` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `GetImageSize` —— 6/7 个有
-- `ImageScaleBy` —— 6/7 个有
-- `Qwen3_VQA` —— 6/7 个有
-- `SeedVR2` —— 6/7 个有
-- `SeedVR2BlockSwap` —— 6/7 个有
-- `SeedVR2ExtraArgs` —— 6/7 个有
-- `ShowText|pysssss` —— 6/7 个有
-- `LayerUtility: ImageReel` —— 5/7 个有
-- `LayerUtility: ImageReelComposit` —— 5/7 个有
-- `Float` —— 1/7 个有
-- `Lora Loader Stack (rgthree)` —— 1/7 个有
+- `AIO_Preprocessor` —— 5/7 个有
+- `ModelPatchLoader` —— 5/7 个有
+- `RH_Captioner` —— 5/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `QwenImageDiffsynthControlnet` —— 4/7 个有
+- `CR Text` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
 - `LoraLoaderModelOnly` —— 1/7 个有
-- `SeedVR2LoadDiTModel` —— 1/7 个有
-- `SeedVR2LoadVAEModel` —— 1/7 个有
-- `SeedVR2VideoUpscaler` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `VAEDecodeTiled` —— 1/7 个有
+- `ZImageFunControlnet` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 7 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.53 | 7 | 83% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 0.65 | 0.25 - 0.65 | 7 | 67% |
+| 采样步数 | 9 | 8 - 50 | 7 | 1% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 27% |
+| 采样算法 | euler | - | 7 | 71% |
+| 调度器 | simple | - | 7 | 71% |
+| 重绘幅度 | 0.2 | 0.16 - 1 | 7 | 9% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，7 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.53，7 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 0.65，观测区间 0.25 - 0.65，7 个样本
-- 高发问题（6/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 8 - 50，7 个样本，取值分散，一致性仅 1%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 27%
+- 采样算法 最常用 euler，7 个样本，一致性 71%
+- 调度器 最常用 simple，7 个样本，一致性 71%
+- 重绘幅度 中位数 0.2，观测区间 0.16 - 1，7 个样本，取值分散，一致性仅 9%
+- 高发问题（10/7 个样本）：Steps较低可能导致细节不足

@@ -3,52 +3,62 @@ name: unknown_workflow_lora_sampler_clip_191
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.912
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.915667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), JoinStrings, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/Amazon写实类人物场景 外贸跨境电商产品主图详情页场景_2012697618173923329.json, 图片生成/文生图/FLUX 2-文生图_1993499987302612994.json, 图片生成/文生图/FLUX2 文生图-text to image_1993525496059281410.json]
+members: [图片生成/图生图/一键参考渲染_2035713942202359809.json, 图片生成/图生图/庭院手绘转照片_2038555710916661249.json, 图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_191
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Amazon写实类人物场景 外贸跨境电商产品主图详情页场景_2012697618173923329.json、图片生成/文生图/FLUX 2-文生图_1993499987302612994.json、图片生成/文生图/FLUX2 文生图-text to image_1993525496059281410.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键参考渲染_2035713942202359809.json、图片生成/图生图/庭院手绘转照片_2038555710916661249.json、图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `JoinStrings`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
+- `Qwen3_VQA`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `ChinesePrompt_Mix` —— 1/3 个有
-- `DualCLIPLoader` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
+- `GetImageSize` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `LayerUtility: ImageReel` —— 2/3 个有
+- `LayerUtility: ImageReelComposit` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `VRAMReserver` —— 2/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `MuyeLoadImage` —— 1/3 个有
 
 ## 典型参数
 

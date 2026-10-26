@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_160
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.694727
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.880583
+common_nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/人物角色图_2088438846102007810.json, 图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json, 图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json, 图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json, 图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json, 图片生成/图生图/全能图像G Image 2.0双图编辑_2046784881849536513.json, 图片生成/图生图/全能图像G Image 2.0多图编辑（目前最强双图编辑）_2046805508866183169.json, 图片生成/图生图/全能图片2.5 鸡皮提新模型_2097894328864694274.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2098956670054522882.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2099068203778535426.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2100023234648436738.json]
+members: [视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json, 视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json, 视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json, 视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037034972783058946.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037444767545561089.json, 视频生成/文生视频/Seedance2.0 Fast文生视频（RH版）_2054421311123927041.json, 视频生成/文生视频/seeddance2.0 文生视频_2040952630356217857.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-纯文本生视频】工作流_2037776749177610242.json, 视频生成/文生视频/地表最强超能视频2.0-Fast_文生视频_2037432927675490306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_160
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/人物角色图_2088438846102007810.json、图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json、图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json、图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json、图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json、视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json、视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json、视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json、视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `RH_RhartVideoSparkvideo20FastTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 4/11 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 4/11 个有
-- `EmptyImage` —— 3/11 个有
+- `JjkText` —— 2/12 个有
 
 ## 典型参数
 

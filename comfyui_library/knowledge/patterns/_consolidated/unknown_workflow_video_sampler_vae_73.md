@@ -2,77 +2,71 @@
 name: unknown_workflow_video_sampler_vae_73
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.770714
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, PathchSageAttentionKJ, PreviewImage, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+level: moderate
+coverage: 0.533286
+common_nodes: [EmptyImage, GetImageSize, GetNode, ImageComposite+, ImageResizeKJv2, InspyrenetRembg, LoadImage, LoadWanVideoT5TextEncoder, MaskGenerator, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json, 视频生成/图生视频/LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json, 视频生成/图生视频/LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json, 视频生成/图生视频/LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.json, 视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json, 视频生成/图生视频/ltx2.3_prompt_relay_kj版_2059461166333775873.json, 视频生成/图生视频/本地开源免费，漫剧运镜长镜头1_2060459576042020865.json]
+members: [视频生成/图生视频/【VACE系列】《行走江湖摇》同款魔性舞蹈视频生成（人物照片+Pose控制）_1926613325860474881.json, 视频生成/图生视频/【霸总吃饭第1式：托腮式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1927603815992954882.json, 视频生成/图生视频/【霸总吃饭第2式：干咳式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928492165083639810.json, 视频生成/图生视频/【霸总吃饭第3式：喝汤式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928759873897664514.json, 视频生成/图生视频/【霸总吃饭第4式：摸头式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928782340749737985.json, 视频生成/图生视频/【霸总吃饭第5式：干饭式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928806775427076098.json, 视频生成/图生视频/【霸总吃饭第6式：咀嚼式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928820592806412290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_73
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json、视频生成/图生视频/LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json、视频生成/图生视频/LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json、视频生成/图生视频/LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.json、视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/【VACE系列】《行走江湖摇》同款魔性舞蹈视频生成（人物照片+Pose控制）_1926613325860474881.json、视频生成/图生视频/【霸总吃饭第1式：托腮式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1927603815992954882.json、视频生成/图生视频/【霸总吃饭第2式：干咳式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928492165083639810.json、视频生成/图生视频/【霸总吃饭第3式：喝汤式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928759873897664514.json、视频生成/图生视频/【霸总吃饭第4式：摸头式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928782340749737985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `PathchSageAttentionKJ`
+- `EmptyImage`
+- `GetImageSize`
+- `GetNode`
+- `ImageComposite+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MaskGenerator`
 - `PreviewImage`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `LTX2SamplingPreviewOverride` —— 6/7 个有
-- `LTXVPreprocess` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `UNETLoader` —— 6/7 个有
-- `PromptRelayEncode` —— 5/7 个有
-- `LoadAudio` —— 2/7 个有
-- `PromptRelayEncodeTimeline` —— 2/7 个有
-- `AudioCrop` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LTXVAudioVAEEncode` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `MultiImageLoader` —— 1/7 个有
-- `SetLatentNoiseMask` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy ifElse` —— 1/7 个有
-- `easy mathInt` —— 1/7 个有
+- `INTConstant` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `IntMathOperation` —— 1/7 个有
+- `LayerColor: ColorAdapter` —— 1/7 个有
+- `MaskBatchMulti` —— 1/7 个有
+- `WanVideoLoraSelect` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 441 | 313 - 489 | 7 | 85% |
-| 高度 | 25 | 24 - 25 | 7 | 99% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,5 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 441，观测区间 313 - 489，7 个样本，取值集中（一致性 85%）
-- 高度 中位数 25，观测区间 24 - 25，7 个样本，取值集中（一致性 99%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

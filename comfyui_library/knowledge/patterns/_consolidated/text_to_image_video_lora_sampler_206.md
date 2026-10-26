@@ -3,69 +3,61 @@ name: text_to_image_video_lora_sampler_206
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.912
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, EmptyLatentImage, FSamplerAdvanced, GIMMVFI_interpolate, ImageResizeKJv2, Int, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, solarL_SaveImagesToZip, wanBlockSwap, 孤海注释]
+coverage: 0.938
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), Getter, ImageLoader, ImageResizeKJv2, KSampler, LoraLoaderModelOnly, MultiplePathsInput, QZ_ResolutionPreset, Qwen3_VQA, RIFE VFI, SaveImage, Setter, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/AI漫剧Wan22角色表演图生视频｜FSampler+LLM动态可控｜官方版稳定运行_2104783563366424577.json, 视频生成/图生视频/Wan22+FSampler+LLM漫剧图生视频｜超高动态可控官方版｜角色表演鲜活_2104777184400470018.json]
+members: [图片生成/图生图/提示词反推-文生图-图生视频 全自动文生图图生视频_2045979108131213314.json, 图片生成/文生图/AI代码侠土豆 Qwen3VL提示词反推-文生图-图生视频 全自动文生图图生视频_1984243633375297537.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_206
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI漫剧Wan22角色表演图生视频｜FSampler+LLM动态可控｜官方版稳定运行_2104783563366424577.json、视频生成/图生视频/Wan22+FSampler+LLM漫剧图生视频｜超高动态可控官方版｜角色表演鲜活_2104777184400470018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/提示词反推-文生图-图生视频 全自动文生图图生视频_2045979108131213314.json、图片生成/文生图/AI代码侠土豆 Qwen3VL提示词反推-文生图-图生视频 全自动文生图图生视频_1984243633375297537.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
 - `EmptyLatentImage`
-- `FSamplerAdvanced`
-- `GIMMVFI_interpolate`
+- `Fast Groups Bypasser (rgthree)`
+- `Getter`
+- `ImageLoader`
 - `ImageResizeKJv2`
-- `Int`
-- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `MultiplePathsInput`
+- `QZ_ResolutionPreset`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `SaveImage`
+- `Setter`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `solarL_SaveImagesToZip`
-- `wanBlockSwap`
-- `孤海注释`
+- `WanMoeKSampler`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 采样步数 | 4 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | euler | - | 2 | 100% |
+| 宽度 | 1280 | - | 2 | 100% |
+| 高度 | 720 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -75,12 +67,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，2 个样本，一致性 100%
+- 宽度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 720，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

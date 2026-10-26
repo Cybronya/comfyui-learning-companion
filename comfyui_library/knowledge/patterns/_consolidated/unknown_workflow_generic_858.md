@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_858
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.476333
-common_nodes: [JjkText, LoadImage, PrimitiveInt, RHBerniniFullImageToImage, SaveImage]
+coverage: 0.91675
+common_nodes: [RH_Hailuo_Text2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Bernini-Full 万能图像编辑_2067212414164234242.json, 图片生成/图生图/Bernini-Full 图生图工作流_2066789931409821698.json, 图片生成/图生图/（满血版）Bernini-Full 图生图工作流_2066950047819984897.json]
+members: [视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json, 视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_858
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Bernini-Full 万能图像编辑_2067212414164234242.json、图片生成/图生图/Bernini-Full 图生图工作流_2066789931409821698.json、图片生成/图生图/（满血版）Bernini-Full 图生图工作流_2066950047819984897.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json、视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `PrimitiveInt`
-- `RHBerniniFullImageToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `RH_Hailuo_Text2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

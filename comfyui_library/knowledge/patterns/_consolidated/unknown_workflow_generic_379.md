@@ -3,41 +3,45 @@ name: unknown_workflow_generic_379
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.845429
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector]
+coverage: 0.460286
+common_nodes: [JoinStringMulti, LoadImage, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, ShowText|pysssss, TextSplitByDelimiterEnhanced, easy int, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2 AI语音克隆带情绪控制_2071922886033633282.json, 音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2073367262609887233.json, 音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2086427785454776321.json, 音频生成/音频生成/TTS2 AI语音克隆 情感控制(带语速调节)_2019317567415914498.json, 音频生成/音频生成/▶IndexTTS2 AI语音克隆-情绪控制(快速！强大！支持多角色克隆）_2013148857244327937.json, 音频生成/音频生成/▶IndexTTS2 AI语音克隆-情绪控制_2010614046168457217.json, 音频生成/音频生成/单人或多人声音克隆-阿浩_2026923742823194626.json]
+members: [图片生成/图生图/一键生成电商主图_2063137686013177857.json, 图片生成/图生图/一键生成电商主图_2069359780325580802.json, 图片生成/图生图/一键生成电商主图_2073744223848980482.json, 图片生成/图生图/产品图一键生成电商详情页（G-image-2.5）_2048573626043076609.json, 图片生成/图生图/产品图一键生成电商详情页（G-image-2）_2068998254318153730.json, 图片生成/图生图/详情页（G-image-2.5）_2111735466230902785.json, 图片生成/文生图/详情页（G-image-2.5）_2110909940465496065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_379
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2 AI语音克隆带情绪控制_2071922886033633282.json、音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2073367262609887233.json、音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2086427785454776321.json、音频生成/音频生成/TTS2 AI语音克隆 情感控制(带语速调节)_2019317567415914498.json、音频生成/音频生成/▶IndexTTS2 AI语音克隆-情绪控制(快速！强大！支持多角色克隆）_2013148857244327937.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一键生成电商主图_2063137686013177857.json、图片生成/图生图/一键生成电商主图_2069359780325580802.json、图片生成/图生图/一键生成电商主图_2073744223848980482.json、图片生成/图生图/产品图一键生成电商详情页（G-image-2.5）_2048573626043076609.json、图片生成/图生图/产品图一键生成电商详情页（G-image-2）_2068998254318153730.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSEmotionVector`
+- `JoinStringMulti`
+- `LoadImage`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextSplitByDelimiterEnhanced`
+- `easy int`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `SaveAudioMP3` —— 6/7 个有
-- `easy indexTTSGenerateSimple` —— 5/7 个有
-- `Label (rgthree)` —— 4/7 个有
-- `easy indexTTSGenerate` —— 2/7 个有
-- `PreviewAudio` —— 1/7 个有
+- `RH_LLMAPI_Pro_Node` —— 4/7 个有
+- `RH_RhartImageG25FlareImageToImage` —— 4/7 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/7 个有
+- `RHLLMChatNode` —— 3/7 个有
 
 ## 典型参数
 

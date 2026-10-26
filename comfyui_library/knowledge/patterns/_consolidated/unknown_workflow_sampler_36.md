@@ -3,35 +3,34 @@ name: unknown_workflow_sampler_36
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.78925
-common_nodes: [LoadImage, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
+coverage: 0.8225
+common_nodes: [LoadImage, LoadPhysicEditPipe, PhysicEditSampler, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json, 图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json, 图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json, 图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json]
+members: [图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json, 图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json, 图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json, 图片生成/图生图/物理感知图像编辑_2030822500543766529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json、图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json、图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json、图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json、图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json、图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json、图片生成/图生图/物理感知图像编辑_2030822500543766529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
+- `LoadPhysicEditPipe`
+- `PhysicEditSampler`
+- `PreviewImage`
 - `SaveImage`
-- `SenseNova_SM_Model`
-- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `CR Prompt Text` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,43 +3,40 @@ name: unknown_workflow_generic_1395
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.873
-common_nodes: [Fast Groups Muter (rgthree), Image Comparer (rgthree), InspyrenetRembg, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LoadImage, SaveImage]
+coverage: 0.902
+common_nodes: [ImageConcatMulti, ImageRemoveBackground+, JWImageResizeByLongerSide, LayerMask: SegmentAnythingUltra V2, LoadImage, MaskPreview+, PreviewImage, ReLight, RemBGSession+, SaveImage, Switch any [Crystools]]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图_一键抠图王_1982503060440260610.json, 图片生成/图生图/最强抠图_指定物品抠图_移除背景_2066793905529638913.json]
+members: [图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json, 图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1395
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/抠图_一键抠图王_1982503060440260610.json、图片生成/图生图/最强抠图_指定物品抠图_移除背景_2066793905529638913.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json、图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `Image Comparer (rgthree)`
-- `InspyrenetRembg`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModel`
+- `ImageConcatMulti`
+- `ImageRemoveBackground+`
+- `JWImageResizeByLongerSide`
 - `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: ImageCombineAlpha`
-- `LayerUtility: ImageRemoveAlpha`
 - `LoadImage`
+- `MaskPreview+`
+- `PreviewImage`
+- `ReLight`
+- `RemBGSession+`
 - `SaveImage`
+- `Switch any [Crystools]`
 
 **可变部分**（部分 workflow 才有）：
-- `ArgosTranslateTextNode` —— 1/2 个有
-- `BiRefNet_ModelLoader_Zho` —— 1/2 个有
-- `BiRefNet_Zho` —— 1/2 个有
-- `LayerUtility: ColorPicker` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

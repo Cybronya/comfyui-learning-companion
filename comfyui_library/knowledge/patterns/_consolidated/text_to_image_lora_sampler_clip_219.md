@@ -3,67 +3,53 @@ name: text_to_image_lora_sampler_clip_219
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.799333
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, EmptyYuE2LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, SaveAudioAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YuE2GenerateMusic, solarL_SaveImagesToZip]
+coverage: 0.806889
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/AI音乐自动原创歌曲工作流，音频生成音乐创作处理工具_2108288533705347074.json, 音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json, 音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110539658919759874.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110890424977158146.json, 音频生成/音频生成/YuE2音乐翻唱ComfyUI官方版音频生成处理工作流_2101391122361839617.json, 音频生成/音频生成/Yue2音乐翻唱官方工作流，音频生成音乐翻唱处理工具_2107246415910105090.json, 音频生成/音频生成/audio_yue2_music_cover音频生成｜AI翻唱一键搞定_2106987749390770177.json]
+members: [图片生成/文生图/GI2.5 Sunburst文生图加图生图集合流全能图片G2.5 二合一方案_2109407073535619073.json, 图片生成/文生图/GI2.5 Sunburst文生图图生图集合流｜新奇创意一把抓，文生图图生图双模式_2100484050002735106.json, 图片生成/文生图/MJ悠船V8.2美学艺术图像模型 文生图图生图创作_2099916811176341505.json, 图片生成/文生图/全能图片G-Image-2.5 Flare轻量快速版 文生图图生图编辑_2098705852541792258.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst高精旗舰版 文生图图生图编辑_2098702467142868994.json, 图片生成/文生图/美学艺术图像V8.2｜MJ悠船文生图+图生图赛博朋克_2094046651701874690.json, 图片生成/文生图/美学艺术图像模型｜MJ悠船V8.2文生图+图生图_2093840807345348609.json, 数字人/数字人/G Image 2.5全家桶 文生图与图像编辑多功能集成_2098292790764589058.json, 数字人/数字人/G Image 2.5全能图片 高一致性美学文生图与图像编辑_2098286878167490562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_219
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/AI音乐自动原创歌曲工作流，音频生成音乐创作处理工具_2108288533705347074.json、音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json、音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json、音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json、音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110539658919759874.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/GI2.5 Sunburst文生图加图生图集合流全能图片G2.5 二合一方案_2109407073535619073.json、图片生成/文生图/GI2.5 Sunburst文生图图生图集合流｜新奇创意一把抓，文生图图生图双模式_2100484050002735106.json、图片生成/文生图/MJ悠船V8.2美学艺术图像模型 文生图图生图创作_2099916811176341505.json、图片生成/文生图/全能图片G-Image-2.5 Flare轻量快速版 文生图图生图编辑_2098705852541792258.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst高精旗舰版 文生图图生图编辑_2098702467142868994.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `EmptyYuE2LatentAudio`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `SaveAudioAdvanced`
+- `PreviewImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `YuE2GenerateMusic`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `SeedNode` —— 8/9 个有
-- `孤海注释` —— 8/9 个有
-- `ComfySwitchNode` —— 7/9 个有
-- `PrimitiveBoolean` —— 7/9 个有
-- `YuE2GenerateABC` —— 6/9 个有
-- `PrimitiveString` —— 5/9 个有
-- `PrimitiveFloat` —— 4/9 个有
-- `AudioEncoderLoader` —— 3/9 个有
-- `LoadAudio` —— 3/9 个有
-- `PrimitiveInt` —— 3/9 个有
-- `SheetSage2AudioToABC` —— 3/9 个有
-- `Audio Duration (mtb)` —— 2/9 个有
-- `LoadImage` —— 2/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `RepeatImageBatch` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `VHS_VideoCombine` —— 2/9 个有
-- `Any Switch (rgthree)` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `EmptyImage` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
+- `PlaySound|pysssss` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/9 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/9 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 4/9 个有
+- `RH_RhartImageG25OfficialTokenFlareEdit` —— 3/9 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/9 个有
+- `RH_YouchuanTextToImageV82Fast` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 2/9 个有
+- `MuyeTextEditOutput` —— 2/9 个有
+- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 2/9 个有
 
 ## 典型参数
 

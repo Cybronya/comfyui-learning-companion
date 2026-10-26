@@ -2,70 +2,78 @@
 name: unknown_workflow_upscale_sampler_clip_24
 type: Unknown Workflow
 frequency: 6
-level: weak
-coverage: 0.804
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler (Efficient), LayerFilter: HDREffects, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, Text Multiline, easy imageChooser]
+level: strong
+coverage: 0.882833
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, GetImageSize+, GetImageSizeAndCount, If ANY execute A else B, Image Comparer (rgthree), ImageColorMatch+, ImageFromBatch, ImageListToImageBatch, ImageResize+, ImageResizeKJv2, ImpactCompare, ImpactImageBatchToImageList, Int, KSamplerAdvanced, LoadImage, MathExpression|pysssss, ModelSamplingAuraFlow, RH_Captioner, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, Switch any [Crystools], TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, Upscale Model Loader, Upscale by Factor with Model (WLSH), VAEDecode, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/图生图/一键运行：Z-IMAGE 海报生成器文生图、图生图、高清放大_1997563539177029633.json, 图片生成/文生图/一键运行：Ovis  文生图 反推 高清放大_2000064549170671618.json, 图片生成/文生图/一键运行：White_Marble-AIO 白玉工作流 反推、风格切换 、高清放大_2063094142267379714.json, 图片生成/文生图/一键运行：Z-IMAGE 文生图 图像反推，文案优化，高清放大，图像选择_1997560990004887553.json, 图片生成/文生图/一键运行：red-z-image 融合模型 反推 高清放大 文生图_1999794771981893634.json, 图片生成/文生图/一键运行：红潮 Pruned-Red-Z-image bf16 文生图 QWEN3 反推 放大_1999790696926150657.json]
+members: [图片生成/图生图/image2.0 后处理 去模糊放大，去ai感，合理细节_2047310409799049218.json, 图片生成/图生图/image2.0 后处理 去模糊放大，去ai感，合理细节_2068868548872728577.json, 图片生成/文生图/免费使用image-2带API-提示词合集_2048062518664372226.json, 图片生成/文生图/免费使用image-2带API提示词合集_2047662382851301378.json, 图片生成/文生图/单次0.02最强图像模型gp-2_2047335832788406274.json, 图片生成/文生图/最强图像模型单次0.02_2046593384072089602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_24
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键运行：Z-IMAGE 海报生成器文生图、图生图、高清放大_1997563539177029633.json、图片生成/文生图/一键运行：Ovis  文生图 反推 高清放大_2000064549170671618.json、图片生成/文生图/一键运行：White_Marble-AIO 白玉工作流 反推、风格切换 、高清放大_2063094142267379714.json、图片生成/文生图/一键运行：Z-IMAGE 文生图 图像反推，文案优化，高清放大，图像选择_1997560990004887553.json、图片生成/文生图/一键运行：red-z-image 融合模型 反推 高清放大 文生图_1999794771981893634.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/image2.0 后处理 去模糊放大，去ai感，合理细节_2047310409799049218.json、图片生成/图生图/image2.0 后处理 去模糊放大，去ai感，合理细节_2068868548872728577.json、图片生成/文生图/免费使用image-2带API-提示词合集_2048062518664372226.json、图片生成/文生图/免费使用image-2带API提示词合集_2047662382851301378.json、图片生成/文生图/单次0.02最强图像模型gp-2_2047335832788406274.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSampler (Efficient)`
-- `LayerFilter: HDREffects`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `If ANY execute A else B`
+- `Image Comparer (rgthree)`
+- `ImageColorMatch+`
+- `ImageFromBatch`
+- `ImageListToImageBatch`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `ImpactCompare`
+- `ImpactImageBatchToImageList`
+- `Int`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `PreviewImage`
+- `MathExpression|pysssss`
+- `ModelSamplingAuraFlow`
+- `RH_Captioner`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 - `ShowText|pysssss`
-- `Text Multiline`
-- `easy imageChooser`
+- `Switch any [Crystools]`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `Upscale Model Loader`
+- `Upscale by Factor with Model (WLSH)`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `StringFunction|pysssss` —— 5/6 个有
-- `easy stylesSelector` —— 5/6 个有
-- `easy textSwitch` —— 5/6 个有
-- `AILab_QwenVL` —— 4/6 个有
-- `CLIPLoader` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `Text Concatenate` —— 4/6 个有
-- `UNETLoader` —— 4/6 个有
-- `VAELoader` —— 4/6 个有
-- `Anything Everywhere` —— 2/6 个有
-- `CheckpointLoaderSimple` —— 2/6 个有
-- `ConditioningSetTimestepRange` —— 2/6 个有
-- `Qwen3_VQA` —— 2/6 个有
-- `CR Seed` —— 1/6 个有
-- `SeedVarianceEnhancer` —— 1/6 个有
+- `FancyTimerNode` —— 4/6 个有
+- `GptImage2` —— 4/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 6 - 50 | 6 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 6 | 11% |
-| 采样算法 | euler_ancestral | - | 6 | 50% |
-| 调度器 | sgm_uniform | - | 6 | 33% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 768 | 728 - 1080 | 6 | 85% |
-| 高度 | 1024 | 1024 - 1920 | 6 | 72% |
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 7 | 7 - 7 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | res_multistep | - | 6 | 100% |
+| 重绘幅度 | sgm_uniform | - | 6 | 100% |
 
 ## 常见问题
 
@@ -73,10 +81,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 6 - 50，6 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，6 个样本，取值分散，一致性仅 11%
-- 采样算法 最常用 euler_ancestral，6 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，6 个样本，一致性 33%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 728 - 1080，6 个样本，取值集中（一致性 85%）
-- 高度 中位数 1024，观测区间 1024 - 1920，6 个样本
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 res_multistep，6 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，6 个样本，一致性 100%

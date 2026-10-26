@@ -3,37 +3,33 @@ name: unknown_workflow_generic_1272
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [CR Prompt Text, Int, LoadImage, RH_RhartImageG2OfficialImageToImage, Repeater|pysssss, SaveImage]
+coverage: 0.5145
+common_nodes: [LoadImage, MaskPreview, PreviewImage]
 problems: []
 missing: []
-members: [图片生成/图生图/g-Image 2.0文生图、图片编辑整合_2070496984355663874.json, 图片生成/文生图/G.i2-高质量角色、场景生图_2091680278455603202.json]
+members: [comfyui-workflow-templates-json/utility_birefnet_remove_background.json, comfyui-workflow-templates-json/utility_moge_depth_estimation.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1272
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/g-Image 2.0文生图、图片编辑整合_2070496984355663874.json、图片生成/文生图/G.i2-高质量角色、场景生图_2091680278455603202.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_birefnet_remove_background.json、comfyui-workflow-templates-json/utility_moge_depth_estimation.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Int`
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `Repeater|pysssss`
-- `SaveImage`
+- `MaskPreview`
+- `PreviewImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `5b40ca21-ba1a-41d5-b403-4d2d7acdc195` —— 1/2 个有
+- `ca1fac5f-abe5-4729-b7fe-2299f6630a65` —— 1/2 个有
 
 ## 典型参数
 

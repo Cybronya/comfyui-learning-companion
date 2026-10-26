@@ -3,39 +3,33 @@ name: unknown_workflow_generic_709
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7085
-common_nodes: [LoadImage, QWEN_TextDisplay, RHLLMChatNode, RH_Nano_Banana2_Image2Image, SaveImage, StringMergeNode, Text]
+coverage: 0.87475
+common_nodes: [HYPIRImageRestoration, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/批量换衣新_2076845701216165889.json, 图片生成/图生图/批量换衣新_2077564298649493506.json, 图片生成/图生图/抄袭大师2_2082846764389978114.json, 图片生成/图生图/抄袭大师_2082785466595758082.json]
+members: [图片生成/图生图/Hypir高清方大_1958615133377425409.json, 图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json, 图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json, 图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_709
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/批量换衣新_2076845701216165889.json、图片生成/图生图/批量换衣新_2077564298649493506.json、图片生成/图生图/抄袭大师2_2082846764389978114.json、图片生成/图生图/抄袭大师_2082785466595758082.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Hypir高清方大_1958615133377425409.json、图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json、图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json、图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `HYPIRImageRestoration`
 - `LoadImage`
-- `QWEN_TextDisplay`
-- `RHLLMChatNode`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `StringMergeNode`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/4 个有
-- `GroupSwitcher` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SetNode` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
 
 ## 典型参数
 

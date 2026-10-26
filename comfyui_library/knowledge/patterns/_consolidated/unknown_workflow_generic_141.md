@@ -1,44 +1,34 @@
 ---
 name: unknown_workflow_generic_141
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.927917
-common_nodes: [CR Prompt Text, SaveAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.815462
+common_nodes: [RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json, 数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json, 音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json, 音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json, 音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json, 音频生成/音频生成/Breeze TTS 2 声音再设计_2096223350476599297.json, 音频生成/音频生成/Breeze TTS 2 声音再设计（非常好高保真还原原声 读取文字）_2109829100578885633.json, 音频生成/音频生成/Breeze TTS 2 声音导演2608_2096515625681244161.json, 音频生成/音频生成/Breeze TTS 2 声音导演_2095397305070473217.json, 音频生成/音频生成/Breeze TTS 2 声音设计 （自用）_2108146608234909698.json, 音频生成/音频生成/Breeze TTS2_自动情绪_音频克隆_设计_2098331150149308417.json, 音频生成/音频生成/【aide】Breeze TTS2_自动情绪_音频克隆_设计_2099749651778985986.json]
+members: [视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json, 视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json, 视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2068031543890960384.json, 视频生成/文生视频/Happyhorse 视频新王文生视频_2048670229525438466.json, 视频生成/文生视频/Happyhorse1.0-文生视频_2048997203577933826.json, 视频生成/文生视频/Happyhorse1.0-超强模型-文生视频工作流_2048769700766687233.json, 视频生成/文生视频/Happyhorse1.0文生视频｜输入文字直接生成短片_2106625262682202113.json, 视频生成/文生视频/happyhorse-1.0 快乐马+文生视频_2049334884107296770.json, 视频生成/文生视频/happyhorse文生视频（快乐马）_2048763504257146881.json, 视频生成/文生视频/视频丨阿里happyhorse快乐小马文生视频_2053809575291301890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_141
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json、数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json、音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json、音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json、音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json、视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json、视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveAudio`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 13 个 workflow 都包含：
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 10/12 个有
-- `LoadAudio` —— 10/12 个有
-- `PreviewAudio` —— 10/12 个有
-- `T8_BreezeTTS_DirectionRequest` —— 7/12 个有
-- `T8_BreezeTTS_DesignRequest` —— 4/12 个有
-- `T8_BreezeTTS_CloneRequest` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `RHLLMChatNode` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
+- `JjkText` —— 6/13 个有
+- `LoadImage` —— 1/13 个有
 
 ## 典型参数
 

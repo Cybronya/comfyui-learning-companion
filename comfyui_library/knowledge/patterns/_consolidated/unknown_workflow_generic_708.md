@@ -3,36 +3,42 @@ name: unknown_workflow_generic_708
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7655
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy promptLine, easy showAnything]
+coverage: 0.9915
+common_nodes: [GetExpression2, GetFaceLandmarks, GetHeadPose, HMFaceToolkitsLoader, HMImagePipelineLoader, HMPipelineImage, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/家具批量出图_2037152816489304065.json, 图片生成/图生图/家具批量出图_2037404390805475330.json, 图片生成/图生图/童装出图_2037511391975837698.json, 图片生成/图生图/童装出图_2038815068757954561.json]
+members: [图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json, 图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json, 图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json, 图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_708
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/家具批量出图_2037152816489304065.json、图片生成/图生图/家具批量出图_2037404390805475330.json、图片生成/图生图/童装出图_2037511391975837698.json、图片生成/图生图/童装出图_2038815068757954561.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json、图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json、图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json、图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `GetExpression2`
+- `GetFaceLandmarks`
+- `GetHeadPose`
+- `HMFaceToolkitsLoader`
+- `HMImagePipelineLoader`
+- `HMPipelineImage`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `GrsaiNanoBanana` —— 1/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `ExpressionEditor` —— 1/4 个有
+- `Get Image Size` —— 1/4 个有
+- `JWImageResize` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

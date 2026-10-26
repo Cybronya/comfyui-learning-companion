@@ -3,59 +3,69 @@ name: unknown_workflow_video_upscale_latent_upscale_94
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.45225
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, JWFloat, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVLatentSeparateT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug]
+coverage: 0.789
+common_nodes: [1hew_TextListToString, CFGGuider, CR Text, ComfyMathExpression, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, GetImageSize, Int, JsonExtractString, KSamplerSelect, LTX2MemoryEfficientSageAttentionPatch, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewAny, PrimitiveFloat, PromptRelaySmartEncode, Qwen3_VQA, RH_LLMAPI_NODE, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, StringToInt, Text, Text List, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json]
+members: [视频生成/图生视频/LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json, 视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2054820963426021378.json, 视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2058558198705119234.json, 视频生成/图生视频/超好用🔥四帧丝滑流转全自动动态编排-最新版_2056631310260719617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_94
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json、视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json、视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json、视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json、视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2054820963426021378.json、视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2058558198705119234.json、视频生成/图生视频/超好用🔥四帧丝滑流转全自动动态编排-最新版_2056631310260719617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
+- `1hew_TextListToString`
+- `CFGGuider`
+- `CR Text`
 - `ComfyMathExpression`
-- `GetNode`
-- `JWFloat`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ExtractLinesByIndex`
+- `GetImageSize`
+- `Int`
+- `JsonExtractString`
 - `KSamplerSelect`
+- `LTX2MemoryEfficientSageAttentionPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAddGuideMulti`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVLatentSeparateT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PT_H3ConcatAVLatent`
+- `ManualSigmas`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PromptRelaySmartEncode`
+- `Qwen3_VQA`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SplitSigmas`
+- `StringToInt`
+- `Text`
+- `Text List`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_LoadAudioUpload`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxChunkFeedForward` —— 3/4 个有
-- `MiniMaxLowVRAMAttention` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
 
 ## 典型参数
 

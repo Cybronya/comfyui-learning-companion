@@ -3,17 +3,17 @@ name: unknown_workflow_lora_sampler_unet_282
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8825
-common_nodes: [BasicScheduler, ConstrainImage|pysssss, DualCLIPLoader, FloatSlider, ImageScaleBy, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, Primitive integer [Crystools], RHHiddenNodes, RandomNoise, SaveImage, SetNode, ShowText|pysssss, String, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.876
+common_nodes: [BasicScheduler, BiRefNetRMBG, CFGGuider, CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/啊癫洗图仿图反演神器 起号必备 流量爆款_1933200560604491777.json, 图片生成/图生图/啊癫洗图仿图反演神器_1896103643554906113.json]
+members: [图片生成/图生图/qwen-edit-2511人物换脸最像_2039882640798523394.json, 图片生成/文生图/2511无痕换头大师版_2027327275267530754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_282
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/啊癫洗图仿图反演神器 起号必备 流量爆款_1933200560604491777.json、图片生成/图生图/啊癫洗图仿图反演神器_1896103643554906113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/qwen-edit-2511人物换脸最像_2039882640798523394.json、图片生成/文生图/2511无痕换头大师版_2027327275267530754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -24,30 +24,37 @@ source: knowledge_consolidation
 
 全部 2 个 workflow 都包含：
 - `BasicScheduler`
-- `ConstrainImage|pysssss`
-- `DualCLIPLoader`
-- `FloatSlider`
-- `ImageScaleBy`
+- `BiRefNetRMBG`
+- `CFGGuider`
+- `CFGNorm`
+- `CLIPLoader`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `String`
-- `StringFunction|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Joy_caption` —— 1/2 个有
-- `Joy_caption_load` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `BodySegment` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageCropByMask` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `InpaintCropImproved` —— 1/2 个有
+- `InpaintStitchImproved` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MaskPreview+` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

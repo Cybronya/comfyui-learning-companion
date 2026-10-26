@@ -1,72 +1,83 @@
 ---
 name: unknown_workflow_sampler_clip_unet_141
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.913875
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.738
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, Qwen3_VQA, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json, 图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json, 图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json, 图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json, 图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json, 图片生成/图生图/全能图片G-4o_真人转3D头像_1911383209878220801.json, 图片生成/图生图/全能图片G4o 同款 JOJO 风｜一键生图系列_1909501337153712129.json, 图片生成/图生图/全能图片G4o 同款史努比卡通风格｜一键生图系列_1908447812558987266.json]
+members: [视频生成/图生视频/DaSiWa图生视频（支持18禁_真人_漫画）_2010525636460290050.json, 视频生成/图生视频/DasiWa首尾帧生视频_2030701260868947970.json, 视频生成/图生视频/I2V-丝滑快速首中尾帧图生视频_2037924097656623106.json, 视频生成/图生视频/LightX2V+FMLF首中尾帧三图生视频【动态长视频】_1991681950526160898.json, 视频生成/图生视频/QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2073959208336322562.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2074661334712676354.json, 视频生成/图生视频/WAN2.视频生成（提示词优化版）_2079370650996789249.json, 视频生成/图生视频/wan2.2首帧生视频（附自动生提示词）输出【一段视频 + 尾帧图 + 提示词文本文件】_2015119585170690050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_141
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json、图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json、图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json、图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json、图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/DaSiWa图生视频（支持18禁_真人_漫画）_2010525636460290050.json、视频生成/图生视频/DasiWa首尾帧生视频_2030701260868947970.json、视频生成/图生视频/I2V-丝滑快速首中尾帧图生视频_2037924097656623106.json、视频生成/图生视频/LightX2V+FMLF首中尾帧三图生视频【动态长视频】_1991681950526160898.json、视频生成/图生视频/QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `INTConstant`
+- `Int`
+- `JoinStrings`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
+- `ShowText|pysssss`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/8 个有
-- `ConcatTextOfUtils` —— 5/8 个有
-- `EmptyLatentImage` —— 5/8 个有
-- `LoraLoader` —— 5/8 个有
-- `VAEEncode` —— 5/8 个有
-- `EmptySD3LatentImage` —— 3/8 个有
-- `SDVN Joy Caption` —— 3/8 个有
-- `Joy_caption` —— 2/8 个有
-- `Joy_caption_load` —— 2/8 个有
-- `Lora Loader Stack (rgthree)` —— 2/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `easy clearCacheAll` —— 2/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `PulidFluxFaceDetector` —— 1/8 个有
-- `PulidFluxOptions` —— 1/8 个有
+- `ImageConcatMulti` —— 8/9 个有
+- `RIFE VFI` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `ModelSamplingSD3` —— 7/9 个有
+- `easy cleanGpuUsed` —— 7/9 个有
+- `PreviewImage` —— 6/9 个有
+- `WanFirstLastFrameToVideo` —— 6/9 个有
+- `ImageBatchMulti` —— 5/9 个有
+- `ImageResizeKJv2` —— 5/9 个有
+- `LoraLoaderModelOnly` —— 5/9 个有
+- `PainterI2V` —— 5/9 个有
+- `PrimitiveInt` —— 5/9 个有
+- `WanMultiFrameRefToVideo` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `CRTFirstLastFrameSelector` —— 2/9 个有
+- `DuckHideNode` —— 2/9 个有
+- `GetNode` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `wanBlockSwap` —— 2/9 个有
+- `CM_IntToFloat` —— 1/9 个有
+- `ImageStitch` —— 1/9 个有
+- `MultiplyNode` —— 1/9 个有
+- `ShellAgentPluginOutputText` —— 1/9 个有
+- `WanImageToVideo` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 768 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 5 | 90% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | fixed | - | 9 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 9 | 81% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 67% |
 
 ## 常见问题
 
@@ -74,7 +85,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 768，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，5 个样本，取值集中（一致性 90%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，9 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，9 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 67%

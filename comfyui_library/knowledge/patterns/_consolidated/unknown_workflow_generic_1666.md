@@ -3,37 +3,40 @@ name: unknown_workflow_generic_1666
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6485
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSTrain, FB_Qwen3TTSVoiceClone, PreviewAny, PreviewAudio, RHUploadZip_V2, SaveAudio]
+coverage: 0.9165
+common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSVoiceClone, IndexTTS2Run, LoadAudio, PreviewAudio, PrimitiveStringMultiline, SaveAudioMP3, Text, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json, 音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json]
+members: [数字人/数字人/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2096188886392328193.json, 音频生成/音频生成/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2094932655317020673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1666
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json、音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2096188886392328193.json、音频生成/音频生成/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2094932655317020673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSTrain`
+- `Apply Whisper`
+- `AudioCrop`
 - `FB_Qwen3TTSVoiceClone`
-- `PreviewAny`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `PreviewAudio`
-- `RHUploadZip_V2`
-- `SaveAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
+- `Text`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `AudioConcat` —— 1/2 个有
+- `EmptyAudio` —— 1/2 个有
 
 ## 典型参数
 

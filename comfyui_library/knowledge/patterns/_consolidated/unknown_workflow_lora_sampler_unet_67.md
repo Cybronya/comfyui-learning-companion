@@ -3,64 +3,67 @@ name: unknown_workflow_lora_sampler_unet_67
 type: Unknown Workflow
 frequency: 9
 level: strong
-coverage: 0.863889
-common_nodes: [AILab_QwenVL, CLIPLoader, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, ShowText|pysssss, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.827444
+common_nodes: [CLIPLoader, ImageConcanate, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/人物一键九视图[同人同景同服装]超强有一致性模特套图加强版_2003309725775167489.json, 图片生成/图生图/固定人物IP多场景生成V1.0（IP）_1986353934086373377.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1986607902217695234.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1997265879790456833.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_2018861403326648321.json, 图片生成/图生图/固定人物Ip多场景生成V2_2004543457458880513.json, 图片生成/图生图/图生图一键九视图[同人同景同服装]超强有一致性模特套图加强版（无水印版）_1985276910106198017.json, 图片生成/图生图/图生图一键九视图[同人同景同服装]超强有一致性模特套图加强版（无水印版）_2066345362234892290.json, 图片生成/图生图/图生图杀马特一键九视图[同人同景同服装]超强有一致性模特套图加强版_1986321370713903106.json]
+members: [图片生成/图生图/FireRed Image Edit 1.1单图编辑（效果比qwen强）_2033358154595049474.json, 图片生成/图生图/FireRed Image Edit 1.1多图编辑（效果比qwen强）_2029803829331501058.json, 图片生成/图生图/Qwen Edit 2509，提示词改图_1987504679863169026.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，切换多镜头拍摄_1987508199920177154.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，去掉光影_1987518092307795970.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，重新打光_1987516185564655618.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，预测未来下一帧场景_1987519513975525377.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，高清图像_1987514462464880642.json, 图片生成/图生图/Qwen动漫转真人，动漫仿真人剧必备！_2052317417342291970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_67
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物一键九视图[同人同景同服装]超强有一致性模特套图加强版_2003309725775167489.json、图片生成/图生图/固定人物IP多场景生成V1.0（IP）_1986353934086373377.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1986607902217695234.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1997265879790456833.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_2018861403326648321.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FireRed Image Edit 1.1单图编辑（效果比qwen强）_2033358154595049474.json、图片生成/图生图/FireRed Image Edit 1.1多图编辑（效果比qwen强）_2029803829331501058.json、图片生成/图生图/Qwen Edit 2509，提示词改图_1987504679863169026.json、图片生成/图生图/Qwen Edit 2509，社区Lora，切换多镜头拍摄_1987508199920177154.json、图片生成/图生图/Qwen Edit 2509，社区Lora，去掉光影_1987518092307795970.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AILab_QwenVL`
 - `CLIPLoader`
-- `JDCN_StringToList`
+- `ImageConcanate`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/9 个有
-- `CR Text Replace` —— 5/9 个有
-- `ProcessString` —— 5/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `EmptySD3LatentImage` —— 4/9 个有
-- `RH_LLMAPI_NODE` —— 4/9 个有
-- `SetNode` —— 4/9 个有
-- `CompressImages` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `ImageConcanate` —— 3/9 个有
-- `ImageFromBatch` —— 3/9 个有
-- `LayerUtility: ImageReel` —— 3/9 个有
-- `LayerUtility: ImageReelComposit` —— 3/9 个有
+- `PreviewImage` —— 8/9 个有
+- `CFGNorm` —— 7/9 个有
+- `Image Comparer (rgthree)` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `ModelSamplingAuraFlow` —— 7/9 个有
+- `TextEncodeQwenImageEdit_lrzjason` —— 6/9 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 3/9 个有
+- `CR Prompt List` —— 2/9 个有
+- `CR Text` —— 2/9 个有
+- `ImageResize+` —— 2/9 个有
+- `Qwen3_VQA` —— 2/9 个有
+- `TextInput_` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `JoinStrings` —— 1/9 个有
+- `ReferenceLatent` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
+- `Text Concatenate (JPS)` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 9 | 66% |
+| 采样步数 | 6 | 4 - 8 | 9 | 80% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta57 | - | 9 | 56% |
+| 采样算法 | euler_ancestral | - | 9 | 56% |
+| 调度器 | simple | - | 9 | 78% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
@@ -71,9 +74,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，9 个样本
+- 采样步数 中位数 6，观测区间 4 - 8，9 个样本，取值集中（一致性 80%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta57，9 个样本，一致性 56%
+- 采样算法 最常用 euler_ancestral，9 个样本，一致性 56%
+- 调度器 最常用 simple，9 个样本，一致性 78%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 高发问题（9/9 个样本）：Steps较低可能导致细节不足

@@ -1,69 +1,84 @@
 ---
 name: unknown_workflow_video_lora_sampler_265
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.924
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+coverage: 0.774556
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json, 视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json, 视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json, 视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json, 视频生成/图生视频/ai动画_1988552709458542593.json, 视频生成/图生视频/wan2.2图生视频加速，kj版_1951106522648653826.json, 视频生成/图生视频/大明动画风格 图生视频_1962000212275478530.json, 视频生成/文生视频/(KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950046289267441666.json]
+members: [视频生成/图生视频/图生视频V1_2047405386377990145.json, 视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json, 视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json, 视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json, 视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json, 视频生成/图生视频/百组动态！Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V2_1960048260402589698.json, 视频生成/图生视频/稳定的唱歌对口型_2029971317079937026.json, 视频生成/图生视频/视频-图生视频+数字人对口型_1960792886629601281.json, 视频生成/图生视频/超强数字人生成40秒无压力_1980834296959291394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_265
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json、视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json、视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json、视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json、视频生成/图生视频/ai动画_1988552709458542593.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/图生视频V1_2047405386377990145.json、视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json、视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json、视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json、视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `CreateCFGScheduleFloatList` —— 7/8 个有
-- `GetImageSizeAndCount` —— 7/8 个有
-- `INTConstant` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `ImageFromBatch+` —— 5/8 个有
-- `JWInteger` —— 5/8 个有
-- `LayerUtility: PurgeVRAM` —— 5/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `CLIPVisionLoader` —— 2/8 个有
-- `WanVideoClipVisionEncode` —— 2/8 个有
-- `ConcatTextOfUtils` —— 1/8 个有
-- `Display Int (rgthree)` —— 1/8 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 1/8 个有
-- `SplineEditor` —— 1/8 个有
-- `WanVideoAddWanMoveTracks` —— 1/8 个有
-- `YC Color Match` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `LoadAudio` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `GetNode` —— 2/9 个有
+- `CLIPTextEncode` —— 1/9 个有
+- `CM_FloatToInt` —— 1/9 个有
+- `ConcatTextOfUtils` —— 1/9 个有
+- `ImageBatch` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `KSampler` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `VAEDecode` —— 1/9 个有
+- `VHS_LoadAudioUpload` —— 1/9 个有
+- `VRGDG_AudioCropTime` —— 1/9 个有
+- `WanInfiniteTalkToVideo` —— 1/9 个有
+- `easy indexAnything` —— 1/9 个有
+- `easy mathInt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | normal | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 

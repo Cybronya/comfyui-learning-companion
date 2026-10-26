@@ -3,34 +3,31 @@ name: unknown_workflow_generic_1040
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.580667
-common_nodes: [LoadImage, RH_Sora2_I2V_PRO, SaveVideo, easy showAnything]
+coverage: 0.833333
+common_nodes: [RH_YouchuanTextToImageV6, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S2 Pro图生视频 25秒_2009219269556445185.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json]
+members: [图片生成/图生图/悠船图生图-v6_2080554845563613185.json, 图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json, 图片生成/文生图/悠船文生图-v6_2080610458544992257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1040
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频S2 Pro图生视频 25秒_2009219269556445185.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v6_2080554845563613185.json、图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json、图片生成/文生图/悠船文生图-v6_2080610458544992257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_Sora2_I2V_PRO`
-- `SaveVideo`
-- `easy showAnything`
+- `RH_YouchuanTextToImageV6`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `PreviewAny` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

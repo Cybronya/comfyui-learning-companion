@@ -3,81 +3,74 @@ name: unknown_workflow_lora_sampler_unet_57
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.7584
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.9368
+common_nodes: [CLIPLoader, ConditioningZeroOut, ImageStitch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json, 视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json, 视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json, 视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json, 视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json, 视频生成/图生视频/【MINIMAX-H3】最强W版武戏-极速版_2111450852316770305.json, 视频生成/文生视频/15秒卡点混剪_2092720568926818306.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2098599696725004290.json, 视频生成/文生视频/【二采-低配版】MinMaxh3日常短剧专用_2095180548556808193.json, 视频生成/文生视频/【二采】MinMaxh3动态打斗专用_2095187337885085698.json]
+members: [图片生成/图生图/Nunchaku-Pose姿势参考-千问Edit2509图像编辑_1971205875295830018.json, 图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971207824632168449.json, 图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971210529568149505.json, 图片生成/图生图/Nunchaku-证件照-Edit2509图像编辑_1971199922907336705.json, 图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1970828887754186753.json, 图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1971040326016212994.json, 图片生成/图生图/Qwen-Image-Edit_2509单图融合编辑【Nunchaku版】_1971933422384050178.json, 图片生成/图生图/qwen-2511 Cosplay任何角色_2028679612187811842.json, 图片生成/图生图/千问Edit2509图像编辑-多图结婚照_1971036029203423233.json, 图片生成/图生图/多人场景融合-千问Edit2509图像编辑_1970822561934282754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json、视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json、视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json、视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json、视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Nunchaku-Pose姿势参考-千问Edit2509图像编辑_1971205875295830018.json、图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971207824632168449.json、图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971210529568149505.json、图片生成/图生图/Nunchaku-证件照-Edit2509图像编辑_1971199922907336705.json、图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1970828887754186753.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `ImageStitch`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `PrimitiveFloat` —— 8/10 个有
-- `VHS_VideoCombine` —— 8/10 个有
-- `ModelAttentionBackend` —— 7/10 个有
-- `H3SigmaRefiner` —— 6/10 个有
-- `CR Prompt Text` —— 4/10 个有
-- `CreateVideo` —— 4/10 个有
-- `ExtendIntermediateSigmas` —— 4/10 个有
-- `GetNode` —— 4/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
-- `LoadAudio` —— 4/10 个有
-- `MuyeTextEditOutput` —— 4/10 个有
-- `PreviewImage` —— 4/10 个有
-- `SetNode` —— 4/10 个有
-- `忽略多组孤海` —— 4/10 个有
-- `INTConstant` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `llama_cpp_instruct_adv` —— 3/10 个有
-- `llama_cpp_model_loader` —— 3/10 个有
-- `llama_cpp_parameters` —— 3/10 个有
-- `LTXVConcatAVLatent` —— 2/10 个有
-- `LTXVSeparateAVLatent` —— 2/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/10 个有
-- `SaveVideo` —— 2/10 个有
-- `VHS_VideoInfoLoaded` —— 2/10 个有
-- `PreviewAny` —— 1/10 个有
-- `RH_LLMAPI_Pro_Node` —— 1/10 个有
-- `XB_BatchImages` —— 1/10 个有
+- `Text Multiline` —— 9/10 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 9/10 个有
+- `NunchakuQwenImageDiTLoader` —— 5/10 个有
+- `AIO_Preprocessor` —— 3/10 个有
+- `PrimitiveInt` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `ImageConcanate` —— 2/10 个有
+- `ImageConcatMulti` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `Seed (rgthree)` —— 2/10 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/10 个有
+- `Anything Everywhere3` —— 1/10 个有
+- `RH_LLMAPI_NODE` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 4 - 20 | 10 | 67% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 10 | 73% |
+| 采样算法 | euler | - | 10 | 90% |
+| 调度器 | beta57 | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 4 - 20，10 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，10 个样本
+- 采样算法 最常用 euler，10 个样本，一致性 90%
+- 调度器 最常用 beta57，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

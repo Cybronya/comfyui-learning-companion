@@ -1,85 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_753
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4815
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, FL_IntToFloat, GetImageRangeFromBatch, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy imageSize, easy int]
+frequency: 3
+level: strong
+coverage: 0.288667
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, Fast Groups Bypasser (rgthree), GetNode, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SetNode, ShowText|pysssss, Split String, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanAdvancedI2V, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段子视频生成_2055962684570521602.json, 视频生成/图生视频/LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_2055942419597799425.json]
+members: [视频生成/图生视频/图生视频】文字驱动+长视频 Wan22_2052912742801125378.json, 视频生成/文生视频/Wan2.2 Remix I2V v2.1 + SVI2Pro 全自动反推长视频工作流_2075174301304713217.json, 视频生成/文生视频/全自动反推长视频工作流-Wan2.2+Remix+I2V+v2.1+SVI2Pro_2066838380490608641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_753
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段子视频生成_2055962684570521602.json、视频生成/图生视频/LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_2055942419597799425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频】文字驱动+长视频 Wan22_2052912742801125378.json、视频生成/文生视频/Wan2.2 Remix I2V v2.1 + SVI2Pro 全自动反推长视频工作流_2075174301304713217.json、视频生成/文生视频/全自动反推长视频工作流-Wan2.2+Remix+I2V+v2.1+SVI2Pro_2066838380490608641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：29%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `FL_IntToFloat`
-- `GetImageRangeFromBatch`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
+- `ModelSamplingSD3`
 - `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
+- `ShowText|pysssss`
+- `Split String`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy imageSize`
+- `WanAdvancedI2V`
 - `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DapaoGeminiInstructionZhenzhenNode` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `LTXVAddGuideMulti` —— 1/2 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/2 个有
-- `PromptRelayEncodeTimeline` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `Qwen3_VQA` —— 2/3 个有
+- `SomethingToString` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `TextPreview` —— 1/3 个有
+- `TextPreviewNode` —— 1/3 个有
+- `VHS_LoadVideoFFmpeg` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 349 | - | 2 | 97% |
-| 高度 | 24.5 | - | 2 | 98% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -87,6 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 349，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 24.5，样本不足，未给区间，2 个样本，取值集中（一致性 98%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

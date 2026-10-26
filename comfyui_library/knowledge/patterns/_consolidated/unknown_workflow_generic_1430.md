@@ -3,37 +3,40 @@ name: unknown_workflow_generic_1430
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.796
-common_nodes: [AspectRatioSelect, JjkText, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, String]
+coverage: 0.95
+common_nodes: [ImageSmartSharpen+, LayerColor: AutoAdjustV2, LayerColor: ColorBalance, LayerColor: HSV, LayerFilter: SkinBeauty, LayerFilter: SoftLight, LayerStyle: Gradient Map, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/美甲迁移4个角度机位批量生成_2035690133164396546.json, 图片生成/文生图/每日心灵鸡汤图片批量生成_2035199595067740162.json]
+members: [图片生成/图生图/【小清新】高级PS调色_1927536628363845633.json, 图片生成/图生图/照片1键转复古颗粒滤镜_1939317430579806209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1430
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/美甲迁移4个角度机位批量生成_2035690133164396546.json、图片生成/文生图/每日心灵鸡汤图片批量生成_2035199595067740162.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【小清新】高级PS调色_1927536628363845633.json、图片生成/图生图/照片1键转复古颗粒滤镜_1939317430579806209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AspectRatioSelect`
-- `JjkText`
+- `ImageSmartSharpen+`
+- `LayerColor: AutoAdjustV2`
+- `LayerColor: ColorBalance`
+- `LayerColor: HSV`
+- `LayerFilter: SkinBeauty`
+- `LayerFilter: SoftLight`
+- `LayerStyle: Gradient Map`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `String`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TextPreview` —— 1/2 个有
+- `FilmGrain` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `LayerFilter: FilmV2` —— 1/2 个有
 
 ## 典型参数
 

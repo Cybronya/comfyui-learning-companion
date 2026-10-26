@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_unet_22
 type: Unknown Workflow
-frequency: 16
+frequency: 13
 level: moderate
-coverage: 0.819312
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.645538
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json, 图片生成/图生图/interactive video2_2092871532694556673.json, 数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json, 数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json, 数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json, 数字人/数字人/人物场景替换工作流_2097197529950674946.json, 数字人/数字人/最新MiniMax-H3视频换人！视频编辑！_2086278232344719361.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099801459780055042.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099848381286928385.json, 视频生成/图生视频/H3+Video+Costume+Changes!+H3+Video_H3视频换装！H3视频编辑_2104434230909554690.json, 视频生成/图生视频/MiniMax H3 动作迁移解决方案｜视频动作迁移一键生成工作流_2101538902334074882.json, 视频生成/图生视频/MiniMaxH3 人物一致性动作模仿&动作迁移_2087460746010648577.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！B站艾橘溪_2085579704077217793.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2091762306387628033.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2095427085866192898.json, 视频生成/文生视频/MiniMaxH3_视频换背景_视频编辑_2100921498822332417.json]
+members: [图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json, 图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json, 视频生成/图生视频/LTX+2.3 Director 6宫格 _ 单图 简化版工作流-用于集成_2064037629812895745.json, 视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json, 视频生成/图生视频/LTX2.3-自动剧情-全自动宫格导演台_2068587096239071233.json, 视频生成/图生视频/LTX导演台_2075025517912346625.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2070124907555545090.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-六宫格全自动宫格导演台-自动剧情_2070402488083238913.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062715570117758978.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台（短剧使用）_2071479057736355841.json, 视频生成/图生视频/图生视频-LTX2.3_2057271107857768450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_22
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json、图片生成/图生图/interactive video2_2092871532694556673.json、数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json、数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json、数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json、图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json、视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json、视频生成/图生视频/LTX+2.3 Director 6宫格 _ 单图 简化版工作流-用于集成_2064037629812895745.json、视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicGuider`
+全部 13 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `GetNode`
 - `KSamplerSelect`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 15/16 个有
-- `VAEDecodeAudio` —— 15/16 个有
-- `LoadImage` —— 14/16 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/16 个有
-- `AILab_QwenVL` —— 13/16 个有
-- `DF_Int_to_Float` —— 13/16 个有
-- `ImageResizeKJv2` —— 13/16 个有
-- `JoinStrings` —— 13/16 个有
-- `PrimitiveInt` —— 13/16 个有
-- `ImageConcanate` —— 9/16 个有
-- `GetNode` —— 3/16 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/16 个有
-- `ResolutionSelector` —— 3/16 个有
-- `SetNode` —— 3/16 个有
-- `EmptyImage` —— 2/16 个有
-- `Label (rgthree)` —— 2/16 个有
-- `PreviewImage` —— 2/16 个有
-- `VRAM_Debug` —— 2/16 个有
-- `easy imageRemBg` —— 2/16 个有
-- `EasyCache` —— 1/16 个有
-- `FlashVSRNode` —— 1/16 个有
-- `Int` —— 1/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
-- `LoadAudio` —— 1/16 个有
-- `LoadVideo` —— 1/16 个有
+- `LoraLoaderModelOnly` —— 11/13 个有
+- `LoadImage` —— 10/13 个有
+- `PreviewAny` —— 9/13 个有
+- `RH_LLMAPI_Pro_Node` —— 9/13 个有
+- `TTResolutionSelector` —— 9/13 个有
+- `CS-LTXGridDirector` —— 8/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `LTXDirector` —— 4/13 个有
+- `Int` —— 3/13 个有
+- `JjkText` —— 3/13 个有
+- `RH_Utils` —— 3/13 个有
+- `ttN concat` —— 3/13 个有
+- `孤海注释` —— 3/13 个有
+- `CS-LTXSixGridDirector` —— 2/13 个有
+- `DiffusionModelLoaderKJ` —— 2/13 个有
+- `RHSettingsNode` —— 2/13 个有
+- `RH_RhartImageG2TextToImage` —— 2/13 个有
+- `SaveImage` —— 2/13 个有
+- `Text` —— 2/13 个有
+- `AppParams` —— 1/13 个有
 
 ## 典型参数
 

@@ -1,64 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_97
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9556
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.935455
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json, 图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json, 图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json, 图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json, 图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json, 图片生成/图生图/单图编辑-FLUX3-Klein-int8加速版_2110936341600104450.json, 图片生成/图生图/单图编辑-FLUX3-Klein-int8加速版pe提示词优化版_2111502270784434177.json, 图片生成/图生图/多图编辑Flux3 PE提示词强化加速版_2111482509593763842.json, 图片生成/文生图/FLUX3 PE提示词强化加速版文生图v1_2111364151871365122.json, 图片生成/文生图/FLUX3+PE提示词强化加速版文生图_2111485679510319106.json]
+members: [图片生成/图生图/自己用：标题字设计_qwen-image-2.0_1971022262755332097.json, 图片生成/文生图/1 超清人像 Z-image turbo_2071175125273239553.json, 图片生成/文生图/2029905977360785409.json, 图片生成/文生图/Flux2.0-Dev _ 文生图_1993501652189642754.json, 图片生成/文生图/Flux2文生图_1993378851996844034.json, 图片生成/文生图/Flux2文生图官方版_1993503885006405633.json, 图片生成/文生图/Z-Image-Turbo 8步出图_2005643797847572481.json, 图片生成/文生图/Z-Image批量文生图_1993908239676932097.json, 图片生成/文生图/千问AI工作台_字体生成_2048680548826091521.json, 图片生成/文生图/字体设计_qwen-image-2.0_2023648217132441602.json, 图片生成/文生图/字体设计_qwen-image-2.0_2037759609598906370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_97
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json、图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json、图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json、图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json、图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/自己用：标题字设计_qwen-image-2.0_1971022262755332097.json、图片生成/文生图/1 超清人像 Z-image turbo_2071175125273239553.json、图片生成/文生图/2029905977360785409.json、图片生成/文生图/Flux2.0-Dev _ 文生图_1993501652189642754.json、图片生成/文生图/Flux2文生图_1993378851996844034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSamplerSelect`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/10 个有
-- `Flux3PELoader` —— 7/10 个有
-- `Flux3PromptEnhance` —— 7/10 个有
-- `GetLatentSize` —— 7/10 个有
-- `CR Prompt Text` —— 6/10 个有
-- `PDIMAGE_LongerSize` —— 6/10 个有
-- `ReferenceLatent` —— 6/10 个有
-- `VAEEncode` —— 6/10 个有
-- `孤海注释` —— 3/10 个有
-- `ImageConcanate` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `ReferenceMultiLatent` —— 2/10 个有
-- `Text` —— 2/10 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `ModelSamplingAuraFlow` —— 8/11 个有
+- `CR Text` —— 7/11 个有
+- `easy promptList` —— 6/11 个有
+- `PreviewImage` —— 5/11 个有
+- `CR Text Input Switch (4 way)` —— 4/11 个有
+- `CR Text Replace` —— 4/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/11 个有
+- `Bookmark (rgthree)` —— 1/11 个有
+- `FromListGet1Image` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 4 - 20 | 11 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 11 | 31% |
+| 采样算法 | euler | - | 11 | 73% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 4 - 20，11 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，11 个样本，取值分散，一致性仅 31%
+- 采样算法 最常用 euler，11 个样本，一致性 73%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（9/11 个样本）：Steps较低可能导致细节不足

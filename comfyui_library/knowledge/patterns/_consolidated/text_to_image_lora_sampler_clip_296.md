@@ -1,98 +1,86 @@
 ---
 name: text_to_image_lora_sampler_clip_296
 type: Text To Image
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.928833
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, INTConstant, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, ReferenceLatent, SaveImage, SeedVR2Conditioning, SeedVR2Preprocess, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, solarL_SaveImagesToZip]
+coverage: 0.849143
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewAny, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Klein+SeedVR2双重采样 图片细节爆炸级高清放大超分无损精修_2104831073623568386.json, 图片生成/图生图/Klein+SeedVR2双重采样超分精修｜高清放大8K无损细节爆炸_2089445167932723202.json, 图片生成/图生图/Klein+SeedVR2双重采样｜高清放大超分精修 细节震撼无损_2089263939329810434.json, 图片生成/图生图/Klein加SeedVR2双重采样高清放大超分无损精修，细节爆炸图生图工具_2106098682989989889.json, 图片生成/图生图/V3-图像超分放大_精修_高清放大_2081985549186977794.json, 图片生成/图生图/细节爆炸让你的图片从能看到震撼 Klein加SeedVR2双重采样高清放大超分无损精修_2109694895496712194.json]
+members: [图片生成/图生图/Qwen2.1角色卡立绘工作流，图生图角色设计生成工具_2106472690608599042.json, 图片生成/图生图/绅士私房写真图片Qwen2.1工作流，图生图人像写真处理工具_2106121029063102465.json, 图片生成/图生图/角色头部替换Qwen2.1工作流，图生图面部替换处理工具_2106092844099391489.json, 图片生成/文生图/Qwen Image 2.1角色设定卡一分钟出图工作流，角色设计文生图工具_2107186101369790465.json, 图片生成/文生图/Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json, 图片生成/文生图/Qwen image2.1角色设定卡神器｜1分钟出图效率翻倍_2111098004596940801.json, 图片生成/文生图/Qwen image2.1角色设定卡，一分钟快速出图方案_2111208299730395138.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_296
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein+SeedVR2双重采样 图片细节爆炸级高清放大超分无损精修_2104831073623568386.json、图片生成/图生图/Klein+SeedVR2双重采样超分精修｜高清放大8K无损细节爆炸_2089445167932723202.json、图片生成/图生图/Klein+SeedVR2双重采样｜高清放大超分精修 细节震撼无损_2089263939329810434.json、图片生成/图生图/Klein加SeedVR2双重采样高清放大超分无损精修，细节爆炸图生图工具_2106098682989989889.json、图片生成/图生图/V3-图像超分放大_精修_高清放大_2081985549186977794.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen2.1角色卡立绘工作流，图生图角色设计生成工具_2106472690608599042.json、图片生成/图生图/绅士私房写真图片Qwen2.1工作流，图生图人像写真处理工具_2106121029063102465.json、图片生成/图生图/角色头部替换Qwen2.1工作流，图生图面部替换处理工具_2106092844099391489.json、图片生成/文生图/Qwen Image 2.1角色设定卡一分钟出图工作流，角色设计文生图工具_2107186101369790465.json、图片生成/文生图/Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `INTConstant`
-- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `ReferenceLatent`
+- `PreviewAny`
+- `ResolutionSelector`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2Preprocess`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 5/6 个有
-- `JjkText` —— 5/6 个有
-- `LayerFilter: GaussianBlur` —— 5/6 个有
-- `RHHiddenNodes` —— 5/6 个有
-- `easy imageConcat` —— 5/6 个有
-- `孤海注释` —— 5/6 个有
-- `SeedVR2PostProcessing` —— 3/6 个有
-- `easy imageColorMatch` —— 3/6 个有
-- `ColorMatchPro` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `ShunjingAIShade` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `LayerUtility: TextJoin` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `Seed (rgthree)` —— 4/7 个有
+- `PreviewImage` —— 3/7 个有
+- `QwenImage21Cache` —— 3/7 个有
+- `easy clearCacheAll` —— 3/7 个有
+- `easy imageConcat` —— 3/7 个有
+- `ImageScaleBy` —— 2/7 个有
+- `CR Prompt List` —— 1/7 个有
+- `PIP_图像联结` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（18/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

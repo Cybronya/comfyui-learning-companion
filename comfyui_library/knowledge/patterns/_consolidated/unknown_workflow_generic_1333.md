@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1333
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [Int, JjkText, LoadImage, RunningHub_Step1XEdit, SaveImage]
+coverage: 1
+common_nodes: [DisplayImageFromURL, ImageScale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json, 图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json]
+members: [图片生成/图生图/0-正后产品压缩_2094712818472935426.json, 图片生成/图生图/7-换装后四宫格切割1-1...2-3...3-4_2094712804384268290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1333
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json、图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/0-正后产品压缩_2094712818472935426.json、图片生成/图生图/7-换装后四宫格切割1-1...2-3...3-4_2094712804384268290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Int`
-- `JjkText`
-- `LoadImage`
-- `RunningHub_Step1XEdit`
+- `DisplayImageFromURL`
+- `ImageScale`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageGridtoBatch` —— 1/2 个有
+- `RotateImageNode` —— 1/2 个有
 
 ## 典型参数
 

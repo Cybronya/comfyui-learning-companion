@@ -3,82 +3,76 @@ name: unknown_workflow_lora_sampler_unet_311
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.482
-common_nodes: [BasicGuider, BlockSparseAttention, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.584
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, GrowMaskWithBlur, GulfSeaImageMergeMask, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveInt, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAELoader, 图像缩放V2_孤海, 孤海外补画板按方向]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json, 视频生成/文生视频/H3全能参考工作流_2086287689682350082.json]
+members: [图片生成/图生图/最炸无损封神自由扩图流_2068326455913832450.json, 图片生成/文生图/Qwen-Image-Edit-2511 扩图+全节点注释_2078117013251248129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_311
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json、视频生成/文生视频/H3全能参考工作流_2086287689682350082.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最炸无损封神自由扩图流_2068326455913832450.json、图片生成/文生图/Qwen-Image-Edit-2511 扩图+全节点注释_2078117013251248129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BlockSparseAttention`
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadAudio`
+- `ConditioningZeroOut`
+- `GrowMaskWithBlur`
+- `GulfSeaImageMergeMask`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SemanticBridgeApplyT8`
-- `MiniMaxH3SemanticBridgeConfigT8`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
+- `PrimitiveInt`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `图像缩放V2_孤海`
+- `孤海外补画板按方向`
 
 **可变部分**（部分 workflow 才有）：
-- `Astra` —— 1/2 个有
-- `BasicScheduler` —— 1/2 个有
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `MiniMaxChunkFeedForward` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `MiniMaxLowVRAMAttention` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
-- `SplitSigmas` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
-- `VRAM_Debug` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `布尔孤海` —— 1/2 个有
+- `Bjornulf_ShowInt` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Get Image Size` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `PDRatioSelector` —— 1/2 个有
+- `PIP_StringConcatenation` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8.5 | - | 2 | 94% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 采样步数 中位数 8.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

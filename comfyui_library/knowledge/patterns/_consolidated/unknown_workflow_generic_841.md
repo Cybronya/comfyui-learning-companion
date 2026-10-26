@@ -1,34 +1,40 @@
 ---
 name: unknown_workflow_generic_841
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.644667
-common_nodes: [LoadImage, SaveVideo, b7c2d337-c38d-4c04-922b-2d638449d13e]
+coverage: 0.68475
+common_nodes: [ImpactSwitch, LoadImage, RH_Captioner, SaveVideo, Textbox]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_ltx2_i2v.json, comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json, comfyui-workflow-templates-json/video_ltx2_i2v_lora.json]
+members: [视频生成/图生视频/【产品+场景】全能视频S.0 图生视频 -测试版_2008349449990447106.json, 视频生成/图生视频/全能视频S 图生视频_1977608241607778306.json, 视频生成/图生视频/全能视频S.0 图生视频_1989509567753187329.json, 视频生成/图生视频/图生视频 Grok Video3 🚀 _ API版_1998930755323580417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_841
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_i2v.json、comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json、comfyui-workflow-templates-json/video_ltx2_i2v_lora.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【产品+场景】全能视频S.0 图生视频 -测试版_2008349449990447106.json、视频生成/图生视频/全能视频S 图生视频_1977608241607778306.json、视频生成/图生视频/全能视频S.0 图生视频_1989509567753187329.json、视频生成/图生视频/图生视频 Grok Video3 🚀 _ API版_1998930755323580417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `ImpactSwitch`
 - `LoadImage`
+- `RH_Captioner`
 - `SaveVideo`
-- `b7c2d337-c38d-4c04-922b-2d638449d13e`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `ResizeImageMaskNode` —— 2/3 个有
+- `RH_Sora2_I2V` —— 3/4 个有
+- `easy showAnything` —— 2/4 个有
+- `ImageStitch` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RH_Grok_Video3` —— 1/4 个有
 
 ## 典型参数
 

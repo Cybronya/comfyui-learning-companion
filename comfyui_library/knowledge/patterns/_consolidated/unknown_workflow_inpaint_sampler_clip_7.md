@@ -2,66 +2,65 @@
 name: unknown_workflow_inpaint_sampler_clip_7
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.876778
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GrowMaskWithBlur, InpaintModelConditioning, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.826444
+common_nodes: [Anything Everywhere, CLIPTextEncode, DualCLIPLoader, FaceParse(FaceParsing), FaceParsingModelLoader(FaceParsing), FaceParsingProcessorLoader(FaceParsing), FaceParsingResultsParser(FaceParsing), FluxGuidance, Image Comparer (rgthree), ImageToMask, ImpactGaussianBlurMask, InpaintModelConditioning, KSampler, LayerUtility: ColorImage, LayerUtility: ImageBlendAdvance, LoadImage, MaskPreview+, MaskToImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy imageSize, 取色器_孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 万物迁移 + 涂抹精确控制大小_2017205500747714561.json, 图片生成/图生图/Flux2 Klein 局部重绘+ 万物迁移_2016435579096928258.json, 图片生成/图生图/Flux2 Klein【局部重绘】_2015209186262523906.json, 图片生成/图生图/Flux2 Klein服装迁移_2018144805066383361.json, 图片生成/图生图/万能图片局部重绘+图片去水印+物品迁移_2054764387465998338.json, 图片生成/图生图/产品设计｜局部修改 + 参考图（可选）｜Flux2 Klein_2052324457221509121.json, 图片生成/图生图/局部重绘+指定物品迁移 Flux2 Klein_2016402322179493889.json, "图片生成/图生图/局部重绘，效果很好，速度很快,Flux2 Klein_2052246216712437761.json", "图片生成/图生图/物体迁移，效果很好，速度很快,Flux2 Klein_2049660145730371585.json"]
+members: [图片生成/图生图/flux2-Klein9b-人像磨皮-真实皮肤_2069335361314181121.json, 图片生成/图生图/flux2Klein9B人像精修皮肤添加真实感细节_2064499608063135746.json, 图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2062719097502265345.json, 图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2063812992285888514.json, 图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2093237112207396866.json, 图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2093508562092912642.json, 图片生成/图生图/人像磨皮精修  Flux2人像精修皮肤添加真实感细节_2064916544941019138.json, 图片生成/图生图/人像精修磨皮 皮肤增加真实感细节 去除AI塑料感 Klein9B  图片去除Ai感_2067437441396596737.json, 图片生成/图生图/人像精修磨皮 皮肤增加真实感细节 去除AI塑料感（ Klein9B）_2067154115523858434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_7
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 万物迁移 + 涂抹精确控制大小_2017205500747714561.json、图片生成/图生图/Flux2 Klein 局部重绘+ 万物迁移_2016435579096928258.json、图片生成/图生图/Flux2 Klein【局部重绘】_2015209186262523906.json、图片生成/图生图/Flux2 Klein服装迁移_2018144805066383361.json、图片生成/图生图/万能图片局部重绘+图片去水印+物品迁移_2054764387465998338.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/flux2-Klein9b-人像磨皮-真实皮肤_2069335361314181121.json、图片生成/图生图/flux2Klein9B人像精修皮肤添加真实感细节_2064499608063135746.json、图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2062719097502265345.json、图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2063812992285888514.json、图片生成/图生图/flux2Klein9B磨皮人像精修皮肤添加真实感细节_2093237112207396866.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `Anything Everywhere`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GrowMaskWithBlur`
+- `DualCLIPLoader`
+- `FaceParse(FaceParsing)`
+- `FaceParsingModelLoader(FaceParsing)`
+- `FaceParsingProcessorLoader(FaceParsing)`
+- `FaceParsingResultsParser(FaceParsing)`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `ImageToMask`
+- `ImpactGaussianBlurMask`
 - `InpaintModelConditioning`
-- `KSamplerSelect`
+- `KSampler`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageBlendAdvance`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `MaskPreview+`
+- `MaskToImage`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy imageSize`
+- `取色器_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 8/9 个有
-- `MaskPreview+` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `Text` —— 7/9 个有
-- `Int` —— 6/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `ImageResize+` —— 2/9 个有
-- `ResizeMask` —— 2/9 个有
-- `ZML_MaskStroke` —— 2/9 个有
-- `Anything Everywhere` —— 1/9 个有
-- `ImageScaleToTotalPixelsX` —— 1/9 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `ZML_AnyTypeSwitch` —— 1/9 个有
-- `遮罩内外扩展` —— 1/9 个有
+- `LayerUtility: ColorPicker` —— 8/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 9 | 100% |
+| 重绘幅度 | 0.45 | 0.45 - 0.45 | 9 | 100% |
 
 ## 常见问题
 
@@ -69,4 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，9 个样本，一致性 100%
+- 重绘幅度 中位数 0.45，观测区间 0.45 - 0.45，9 个样本，取值集中（一致性 100%）

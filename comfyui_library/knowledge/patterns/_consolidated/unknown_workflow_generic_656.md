@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_656
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8875
-common_nodes: [LoadImage, RunningHub_Step1XEdit, SaveImage]
+coverage: 1
+common_nodes: [CR Prompt Text, FB_Qwen3TTSCustomVoice, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Step1X Edit 会打字就能改图_1916648328799387650.json, 图片生成/图生图/Step1X-Edit 全能图片G4o风格图像编辑_1916456042962817026.json, 图片生成/图生图/Step1X-Edit 全能图片G4o风格图像编辑_1920019243213979649.json, 图片生成/图生图/Step1X-Edit 稳定图像编辑_1916840173080870913.json]
+members: [音频生成/音频生成/Qwen3 TTS北京话（男）_2015759360391127041.json, 音频生成/音频生成/Qwen3 TTS四川话（男）_2015757098444922882.json, 音频生成/音频生成/（Smile版）Qwen3 TTS自定义声音_2015076760647376897.json, 音频生成/音频生成/（贞贞-中文语音模型版）Qwen3 TTS声音生成（自用）_2017266395846811650.json, 音频生成/音频生成/🎵 Qwen3-TTS CustomVoice-自定义声音_2015363721840828417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_656
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Step1X Edit 会打字就能改图_1916648328799387650.json、图片生成/图生图/Step1X-Edit 全能图片G4o风格图像编辑_1916456042962817026.json、图片生成/图生图/Step1X-Edit 全能图片G4o风格图像编辑_1920019243213979649.json、图片生成/图生图/Step1X-Edit 稳定图像编辑_1916840173080870913.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS北京话（男）_2015759360391127041.json、音频生成/音频生成/Qwen3 TTS四川话（男）_2015757098444922882.json、音频生成/音频生成/（Smile版）Qwen3 TTS自定义声音_2015076760647376897.json、音频生成/音频生成/（贞贞-中文语音模型版）Qwen3 TTS声音生成（自用）_2017266395846811650.json、音频生成/音频生成/🎵 Qwen3-TTS CustomVoice-自定义声音_2015363721840828417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub_Step1XEdit`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `FB_Qwen3TTSCustomVoice`
+- `PreviewAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveString` —— 2/4 个有
-- `LoadImageFromUrl` —— 1/4 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,99 +1,79 @@
 ---
 name: unknown_workflow_video_sampler_clip_9
 type: Unknown Workflow
-frequency: 27
+frequency: 33
 level: strong
-coverage: 0.92163
-common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DF_Int_to_Float, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.567333
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveInt, Qwen3_VQA, RIFE VFI, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/LTX2.3图生视频-带语音生成-摇动版_2047251943105503234.json, 图片生成/文生图/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2086369293654126594.json, 数字人/数字人/LTX2.3脱口秀一键制作_2087497245485780994.json, 视频生成/图生视频/LTX2.3+OmniNFT-极速-图生视频_2057094606336118785.json, 视频生成/图生视频/LTX2.3-亲子搞笑对话-文_图生视频工作流_2081970099841495042.json, 视频生成/图生视频/LTX2.3-爆款脱口秀-图生视频工作流-V2_2082088616767086594.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-大摆锤_2061114920523100161.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-摇动版_2066720677041893378.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-肚皮舞_2068388063612588033.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2070813395804319745.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2071195369723224066.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2076994911257317377.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2083129366271315970.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2083162929670737922.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2095825968475758593.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2095831915289993217.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2103436354901340161.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2103452178303250433.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2111305228783013889.json, 视频生成/图生视频/脱口秀爆款-LTX2.3极速文_图生视频工作流_2069653521200402433.json, 视频生成/图生视频/脱口秀爆款-LTX2.3极速文_图生视频工作流_2070743071674945537.json, 视频生成/图生视频/脱口秀爆款-LTX2.3极速文_图生视频工作流_2072940595001249794.json, 视频生成/图生视频/脱口秀爆款-LTX2.3极速文_图生视频工作流_2074485641030750209.json, 视频生成/文生视频/LTX2.3-OmniNFT-RL-Lora 文_图生视频_2057113427591647233.json, 视频生成/文生视频/LTX2.3极速-文_图生视频_2048020134731718657.json, 视频生成/文生视频/LTX2.3极速-文_图生视频_可选放大_2048719748099219457.json, 视频生成/文生视频/LTX2.3脱口秀一键制作_2043887479178141698.json]
+members: [视频生成/图生视频/三图首尾帧+风格一致性更强-电影质感动漫DaSiWaV9_2014265422324961282.json, 视频生成/图生视频/写实视频生成Remix_支持单图 _首尾帧 _ 三图首尾帧_2018698814936322049.json, 视频生成/图生视频/动漫专属模型DaSiWa8.1-支持单图 _双图 _ 三图 生视频_2008822660024766465.json, 视频生成/图生视频/动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2013245463608168449.json, 视频生成/图生视频/动漫视频生成DaSiWaV9_支持单图+_首尾帧+_+三图首尾帧_2018147957211664386.json, 视频生成/图生视频/单图+双图+三图版+最强动漫模型DaSiWa8.1视频流_2084164733128761346.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1_2058921608584192002.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1_2058925648005128194.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1_2058926947182403586.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1_2058930825034559489.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流 (1)_2071783993749626881.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流++_2057702930412822529.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2008533266399240194.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2058913924552159233.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2058930743153352705.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2058931179931389953.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2069752300628959233.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2069752441821814785.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2071417391518670850.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2071775950022467586.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2071849511944806402.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2071849751959662594.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2071857804616495105.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2079761122793709569.json, 视频生成/图生视频/单图版+最强动漫模型DaSiWa8.1视频流_2079851983518920705.json, 视频生成/图生视频/图生视频 WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2071399792839843842.json, 视频生成/图生视频/最强动漫模型DaSiWa8.1图生视频_2057352662831685634.json, 视频生成/图生视频/最强动漫模型DaSiWa8.1视频流_2082301874304274433.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9：支持单图、首尾帧及三图首尾帧创作工作流_2019973370779013122.json, 视频生成/图生视频/最强动漫视频生成支持单图+首尾帧_2016351598326321154.json, 视频生成/图生视频/最强模型DaSiWa8.1视频流-单图版_2071793684768714753.json, 视频生成/图生视频/最强短剧 动漫视频 生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2017586752311005186.json, 视频生成/图生视频/最强短剧 动漫视频 生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2019702921687998465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_9
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/LTX2.3图生视频-带语音生成-摇动版_2047251943105503234.json、图片生成/文生图/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2086369293654126594.json、数字人/数字人/LTX2.3脱口秀一键制作_2087497245485780994.json、视频生成/图生视频/LTX2.3+OmniNFT-极速-图生视频_2057094606336118785.json、视频生成/图生视频/LTX2.3-亲子搞笑对话-文_图生视频工作流_2081970099841495042.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（视频生成/图生视频/三图首尾帧+风格一致性更强-电影质感动漫DaSiWaV9_2014265422324961282.json、视频生成/图生视频/写实视频生成Remix_支持单图 _首尾帧 _ 三图首尾帧_2018698814936322049.json、视频生成/图生视频/动漫专属模型DaSiWa8.1-支持单图 _双图 _ 三图 生视频_2008822660024766465.json、视频生成/图生视频/动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2013245463608168449.json、视频生成/图生视频/动漫视频生成DaSiWaV9_支持单图+_首尾帧+_+三图首尾帧_2018147957211664386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
+- **样本数**：33
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicScheduler`
+全部 33 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DF_Int_to_Float`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `Int`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `JoinStrings`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
 - `PrimitiveInt`
-- `SamplerCustom`
-- `SimpleMath+`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `ShowText|pysssss`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanMultiFrameRefToVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 26/27 个有
-- `LTXVImgToVideoConditionOnly` —— 23/27 个有
-- `LoraLoaderModelOnly` —— 23/27 个有
-- `VRAMReserver` —— 23/27 个有
-- `easy getNode` —— 23/27 个有
-- `easy setNode` —— 23/27 个有
-- `CFGGuider` —— 20/27 个有
-- `Fast Groups Bypasser (rgthree)` —— 20/27 个有
-- `LTXVCropGuides` —— 20/27 个有
-- `LTXVImgToVideoInplace` —— 20/27 个有
-- `LTXVLatentUpsampler` —— 20/27 个有
-- `LatentUpscaleModelLoader` —— 20/27 个有
-- `ManualSigmas` —— 20/27 个有
-- `RandomNoise` —— 20/27 个有
-- `SamplerCustomAdvanced` —— 20/27 个有
-- `AILab_QwenVL_Advanced` —— 4/27 个有
-- `GetNode` —— 4/27 个有
-- `LTXVImgToVideoInplaceKJ` —— 4/27 个有
-- `LoraLoader|pysssss` —— 4/27 个有
-- `SaveImage` —— 4/27 个有
-- `SetNode` —— 4/27 个有
-- `ShowText|pysssss` —— 4/27 个有
-- `StringFunction|pysssss` —— 4/27 个有
-- `TT_img_enc_v2` —— 4/27 个有
-- `easy cleanGpuUsed` —— 4/27 个有
-- `easy positive` —— 4/27 个有
-- `ZML_SwitchOutput` —— 3/27 个有
-- `MuyeTextEditOutput` —— 2/27 个有
-- `text-util-prompt-join` —— 2/27 个有
-- `CR Prompt Text` —— 1/27 个有
-- `Text` —— 1/27 个有
+- `ModelSamplingSD3` —— 32/33 个有
+- `PainterI2V` —— 32/33 个有
+- `WanFirstLastFrameToVideo` —— 32/33 个有
+- `easy cleanGpuUsed` —— 32/33 个有
+- `Fast Groups Bypasser (rgthree)` —— 24/33 个有
+- `DuckHideNode` —— 23/33 个有
+- `SaveImage` —— 23/33 个有
+- `TT_img_enc` —— 23/33 个有
+- `TT_img_enc_v2` —— 23/33 个有
+- `PreviewImage` —— 9/33 个有
+- `SimpleMath+` —— 9/33 个有
+- `Fast Groups Muter (rgthree)` —— 8/33 个有
+- `GetImagesFromBatchIndexed` —— 1/33 个有
+- `JjkText` —— 1/33 个有
+- `LoraLoaderModelOnly` —— 1/33 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 305 | 27 | 42% |
-| 高度 | 25 | 24 - 25 | 27 | 99% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 33 | 73% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 33 | 81% |
+| 采样算法 | 1 | 1 - 1 | 33 | 100% |
+| 调度器 | euler | - | 33 | 100% |
+| 重绘幅度 | simple | - | 33 | 100% |
 
 ## 常见问题
 
@@ -101,7 +81,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 305，27 个样本，取值分散，一致性仅 42%
-- 高度 中位数 25，观测区间 24 - 25，27 个样本，取值集中（一致性 99%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，33 个样本，一致性 73%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，33 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，33 个样本，一致性 100%
+- 重绘幅度 最常用 simple，33 个样本，一致性 100%

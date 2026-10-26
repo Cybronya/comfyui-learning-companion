@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1659
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 1
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json, 音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json]
+members: [数字人/数字人/Qwen3音色生成_2090373649973997570.json, 音频生成/音频生成/声音设计专用流_2016157124283342849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1659
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json、音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Qwen3音色生成_2090373649973997570.json、音频生成/音频生成/声音设计专用流_2016157124283342849.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2EmotionAudioNode` —— 1/2 个有
-- `IndexTTS2EmotionTextNode` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `TextInput` —— 1/2 个有
 
 ## 典型参数
 

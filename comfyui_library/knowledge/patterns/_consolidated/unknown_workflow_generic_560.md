@@ -3,17 +3,17 @@ name: unknown_workflow_generic_560
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6364
-common_nodes: [LoadAudio, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize]
+coverage: 0.641
+common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RH_LLMAPI_Pro_Node, SaveImage, Text, easy cleanGpuUsed, easy showAnything, ttN concat]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json, 数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json, 音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json, 音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json, 音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json]
+members: [图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json, 图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json, 视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_560
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json、数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json、音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json、音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json、音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json、图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json、视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
@@ -23,14 +23,22 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
+- `ImageLoader`
+- `JjkText`
+- `MultiTextConcatenate`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `Text`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 3/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
+- `easy saveText` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 3/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `TextPreview` —— 1/5 个有
 
 ## 典型参数
 

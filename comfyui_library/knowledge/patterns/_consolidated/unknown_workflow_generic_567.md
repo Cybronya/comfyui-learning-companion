@@ -3,39 +3,33 @@ name: unknown_workflow_generic_567
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.98
-common_nodes: [CR Prompt Text, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
+coverage: 0.9666
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json, 视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json, 视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json, "视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json", 音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json]
+members: [图片生成/图生图/Seedance2.0-Mini_多模态视频_2114262968979517441.json, 视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json, 视频生成/图生视频/Seedance Mini 无缝循环动态壁纸_2071615448948494337.json, 视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json, 视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_567
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json、视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json、视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json、视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json、音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Seedance2.0-Mini_多模态视频_2114262968979517441.json、视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json、视频生成/图生视频/Seedance Mini 无缝循环动态壁纸_2071615448948494337.json、视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json、视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveAudio`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 3/5 个有
-- `LayerUtility: PurgeVRAM` —— 3/5 个有
-- `IndexTTSNode` —— 2/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `JWStringReplace` —— 1/5 个有
+- `LoadVideo` —— 4/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

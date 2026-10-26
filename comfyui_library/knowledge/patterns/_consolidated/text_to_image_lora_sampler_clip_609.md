@@ -3,54 +3,51 @@ name: text_to_image_lora_sampler_clip_609
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.615
-common_nodes: [CLIPLoader, CLIPTextEncode, CR String To Combo, CR Text Concatenate, EmptyLatentImage, JjkText, KSampler, LoadImagesFromURL, LoadMultiImage, LoraLoaderModelOnly, PrimitiveString, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_RhartImageG2ImageToImage, SaveImage, Text Find and Replace, Text Multiline, UNETLoader, VAEDecode, VAELoader, ZML_MergeText, easy promptLine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.831
+common_nodes: [Bounded Image Crop, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetImageSize, Image Bounds, Image Comparer (rgthree), ImagePadForOutpaint, ImageScaleToTotalPixels, Inset Image Bounds, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, ReferenceMultiLatent, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/自动生成产品详情页｜无文字版API调用图生图_2095265636569141249.json, 图片生成/图生图/自动生成产品详情页｜海报制作API调用生成_2095266978209550338.json]
+members: [图片生成/图生图/Flux3 Klein bf16蒸馏16步 图像编辑简化版处理工具_2113697205214334978.json, 图片生成/图生图/flux3 klein bf16蒸馏16步简化版｜轻量图像编辑高效出图_2113507168107458561.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_609
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自动生成产品详情页｜无文字版API调用图生图_2095265636569141249.json、图片生成/图生图/自动生成产品详情页｜海报制作API调用生成_2095266978209550338.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux3 Klein bf16蒸馏16步 图像编辑简化版处理工具_2113697205214334978.json、图片生成/图生图/flux3 klein bf16蒸馏16步简化版｜轻量图像编辑高效出图_2113507168107458561.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Bounded Image Crop`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR String To Combo`
-- `CR Text Concatenate`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `Image Bounds`
+- `Image Comparer (rgthree)`
+- `ImagePadForOutpaint`
+- `ImageScaleToTotalPixels`
+- `Inset Image Bounds`
 - `JjkText`
 - `KSampler`
-- `LoadImagesFromURL`
-- `LoadMultiImage`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveString`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `RH_RhartImageG2ImageToImage`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `ReferenceMultiLatent`
 - `SaveImage`
-- `Text Find and Replace`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `ZML_MergeText`
-- `easy promptLine`
 - `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 1/2 个有
 
 ## 典型参数
 

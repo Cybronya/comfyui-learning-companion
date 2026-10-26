@@ -3,35 +3,38 @@ name: unknown_workflow_generic_360
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.959143
-common_nodes: [CreateVideo, LoadAudio, RH_HeyGemNode, SaveVideo, VHS_LoadVideo]
+coverage: 0.876571
+common_nodes: [DF_Image_scale_to_side, ImageConcanate, JjkText, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LoadImage, PreviewBridge, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/HeyGem口播_2089232511313465346.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json, 视频生成/图生视频/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2090756294016856066.json, 视频生成/图生视频/Heygem真人对口型，数字人工作流_1927204893608804354.json]
+members: [图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json, 图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json, 图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json, 图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json, 图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json, 图片生成/图生图/Flux Kontext 模特眼镜大全｜产品展示_1935147224680865794.json, 图片生成/图生图/Flux Kontext 电商手持产品替换_1931909340028928001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_360
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/HeyGem口播_2089232511313465346.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json、图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json、图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json、图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json、图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CreateVideo`
-- `LoadAudio`
-- `RH_HeyGemNode`
-- `SaveVideo`
-- `VHS_LoadVideo`
+- `DF_Image_scale_to_side`
+- `ImageConcanate`
+- `JjkText`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LoadImage`
+- `PreviewBridge`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/7 个有
-- `PreviewVideoNode` —— 1/7 个有
+- `PreviewImage` —— 2/7 个有
 
 ## 典型参数
 

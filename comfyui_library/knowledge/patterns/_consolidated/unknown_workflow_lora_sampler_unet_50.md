@@ -1,85 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_unet_50
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.6151
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, H3SigmaRefiner, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
+coverage: 0.853273
+common_nodes: [BasicGuider, CLIPLoader, DF_Text_Box, GH_CropRestore, GH_MaskCropV2, Get Image Size, GetNode, GoohaiAnyExists, GoohaiDisplayAny, GulfSeaImageMergeMask, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ColorImage, LoraLoaderModelOnly, ManualSigmas, QwenImagePromptOptimizer, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader, easy ifElse, 图像缩放V2_孤海, 图像缩放范围孤海, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax_H3_电影质感正式版_2100140264701648898.json, 视频生成/图生视频/MiniMax H3全能参考+Latent放大 ｜真实电影质感_2097236111977439233.json, 视频生成/图生视频/MiniMax_H3_电影质感正式版_2100061128037588994.json, 视频生成/图生视频/电影感大片-minimax h3-多参双采样图影音-v2.0_2093541554236510209.json, 视频生成/文生视频/MiniMax H3 真实电影质感【无水印正式版】｜全能参考｜Latent放大_2108365559254568962.json, 视频生成/文生视频/MiniMax H3 真实电影质感【正式版】｜全能参考+Latent放大_2099642261834391553.json, 视频生成/文生视频/MiniMax H3 真实电影质感｜全能参考+Latent放大_2094202685590429698.json, 视频生成/文生视频/MiniMax H3_电影质感正式版_2092438021516906497.json, 视频生成/文生视频/MiniMax_H3远景模糊人脸修复_2100874075915767810.json, 视频生成/视频生视频/MiniMax H3_电影质感正式版_2105690903259209729.json]
+members: [图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json, 图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json, 图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_2113462305160777729.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113773453261234178.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113810483525541889.json, 图片生成/图生图/千问2.1 精准删除和定制重绘 GH优化版 像素无漂移_2113107421391581185.json, 图片生成/图生图/图像删除和定制重绘 Qwen2.1_2114328793446965249.json, 图片生成/图生图/局部重绘丨Qwen-Image 2.1丨物体移除_2113145473245736961.json, 图片生成/图生图/老孙AI Qwen 2.1 移除 _ 局部重绘_2113088082609266690.json, 数字人/数字人/Qwen2.1图像删除与定制重绘｜指定区域清除随心再创作_2114682241522692098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_50
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/MiniMax_H3_电影质感正式版_2100140264701648898.json、视频生成/图生视频/MiniMax H3全能参考+Latent放大 ｜真实电影质感_2097236111977439233.json、视频生成/图生视频/MiniMax_H3_电影质感正式版_2100061128037588994.json、视频生成/图生视频/电影感大片-minimax h3-多参双采样图影音-v2.0_2093541554236510209.json、视频生成/文生视频/MiniMax H3 真实电影质感【无水印正式版】｜全能参考｜Latent放大_2108365559254568962.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json、图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json、图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json、图片生成/图生图/Qwen_2.1_移除_局部重绘_2113462305160777729.json、图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113773453261234178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `H3SigmaRefiner`
+- `DF_Text_Box`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
+- `Get Image Size`
+- `GetNode`
+- `GoohaiAnyExists`
+- `GoohaiDisplayAny`
+- `GulfSeaImageMergeMask`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
+- `LayerUtility: ColorImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `QwenImagePromptOptimizer`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImage21GH`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `easy ifElse`
+- `图像缩放V2_孤海`
+- `图像缩放范围孤海`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 9/10 个有
-- `DisableNoise` —— 9/10 个有
-- `H3LatentUpscaleByJingchen573` —— 9/10 个有
-- `LTXVConcatAVLatent` —— 9/10 个有
-- `LTXVSeparateAVLatent` —— 9/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 9/10 个有
-- `SaveVideo` —— 9/10 个有
-- `SplitSigmas` —— 9/10 个有
-- `easy cleanGpuUsed` —— 9/10 个有
-- `easy anythingIndexSwitch` —— 8/10 个有
-- `GetNode` —— 5/10 个有
-- `MiniMaxH3ImageToVideo` —— 5/10 个有
-- `SetNode` —— 5/10 个有
-- `Any Switch (rgthree)` —— 4/10 个有
-- `Fast Groups Muter (rgthree)` —— 4/10 个有
-- `FastGroupsBypassSwitch` —— 4/10 个有
-- `MuyeTextEditOutput` —— 4/10 个有
-- `PrimitiveInt` —— 4/10 个有
-- `ShowText|pysssss` —— 4/10 个有
-- `孤海注释` —— 4/10 个有
-- `CR Text Concatenate` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `H3FaceStitch` —— 1/10 个有
-- `H3FaceTrackCrop` —— 1/10 个有
-- `H3InjectVideoLatent` —— 1/10 个有
-- `H3PerFrameDenoise` —— 1/10 个有
-- `LoraLoaderBypassModelOnly` —— 1/10 个有
-- `MiniMaxH3NativeAudioLock` —— 1/10 个有
-- `MmuuaiGroupBypass` —— 1/10 个有
-- `VHS_VideoCombine` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
-- `忽略多组孤海` —— 1/10 个有
+- `GoohaiUniversalSlider` —— 10/11 个有
+- `LoadImageGoohai` —— 10/11 个有
+- `PreviewImage` —— 7/11 个有
+- `孤海注释` —— 7/11 个有
+- `LoadImage` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
+- `MaskPreview` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `INTConstant` —— 1/11 个有
+- `easy getNode` —— 1/11 个有
+- `easy setNode` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,86 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_56
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.430667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, KSamplerSelect, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_MiniMaxH3Video]
+coverage: 0.9538
+common_nodes: [CFGGuider, DualCLIPLoader, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, ManualSigmas, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105117440979066882.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105494942570344449.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版）_2087449866099314689.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1自用Dasiwa_2095041265858605058.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V9.2（短剧版）_2093649983697412097.json, 视频生成/图生视频/MiniMax-H3导演台_2097884970437144578.json]
+members: [视频生成/图生视频/Ltx2.3 导演流（自用）_2063841095607476225.json, 视频生成/图生视频/亮哥aigcLTX23漫剧_2063614975846993922.json, 视频生成/图生视频/电商图片音频提示词生成视频 LtxDirector_2059242196313919490.json, 视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json, 视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105117440979066882.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105494942570344449.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版）_2087449866099314689.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1自用Dasiwa_2095041265858605058.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V9.2（短剧版）_2093649983697412097.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3 导演流（自用）_2063841095607476225.json、视频生成/图生视频/亮哥aigcLTX23漫剧_2063614975846993922.json、视频生成/图生视频/电商图片音频提示词生成视频 LtxDirector_2059242196313919490.json、视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json、视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImage`
-- `GetNode`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `DualCLIPLoader`
 - `KSamplerSelect`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `ManualSigmas`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YuanAudioList`
-- `YuanAudioSplit`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_MiniMaxH3Video`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 5/6 个有
-- `YUAN_TXTJsonSwitch` —— 5/6 个有
-- `YUAN_TXTPreviewContent` —— 5/6 个有
-- `Yuan_H3MotionContext` —— 5/6 个有
-- `Yuan_H3MotionContextTrim` —— 5/6 个有
-- `Yuan_H3Upscale3D` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
-- `TextGenerate` —— 4/6 个有
-- `VAEDecode` —— 3/6 个有
-- `VAEDecodeAudio` —— 3/6 个有
-- `ComfySwitchNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `Lora Loader Stack (rgthree)` —— 1/6 个有
-- `MiniMaxH3AddGuide` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `PrimitiveBoolean` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `SplitSigmas` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
-- `StringReplace` —— 1/6 个有
-- `YUAN_TXTParagraphSplitter` —— 1/6 个有
-- `YUAN_TXTShotDurations` —— 1/6 个有
-- `YUAN_TXTShotReplace` —— 1/6 个有
-- `YuanAudioLoad` —— 1/6 个有
-- `Yuan_H3MotionContextLoadLatent` —— 1/6 个有
-- `Yuan_VideoUI` —— 1/6 个有
+- `BasicScheduler` —— 4/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `LTXDirector` —— 4/5 个有
+- `LTXVLatentUpsampler` —— 4/5 个有
+- `LatentUpscaleModelLoader` —— 4/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `LTX2SamplingPreviewOverride` —— 3/5 个有
+- `LTX2_NAG` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `ComfyMathExpression` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `TTResolutionSelector` —— 2/5 个有
+- `VAEDecode` —— 2/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `Yusu-LTXDirector` —— 1/5 个有
 
 ## 典型参数
 

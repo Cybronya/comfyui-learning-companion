@@ -3,33 +3,32 @@ name: unknown_workflow_generic_912
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RMBG, SaveImage]
+coverage: 0.644667
+common_nodes: [LoadImage, SaveVideo, b7c2d337-c38d-4c04-922b-2d638449d13e]
 problems: []
 missing: []
-members: [图片生成/图生图/产品快速抠图工作流_2112016536545357825.json, 图片生成/图生图/扣角色_1945729607377047553.json, 图片生成/图生图/抠出主体_2103388321719345153.json]
+members: [comfyui-workflow-templates-json/video_ltx2_i2v.json, comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json, comfyui-workflow-templates-json/video_ltx2_i2v_lora.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_912
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品快速抠图工作流_2112016536545357825.json、图片生成/图生图/扣角色_1945729607377047553.json、图片生成/图生图/抠出主体_2103388321719345153.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_i2v.json、comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json、comfyui-workflow-templates-json/video_ltx2_i2v_lora.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RMBG`
-- `SaveImage`
+- `SaveVideo`
+- `b7c2d337-c38d-4c04-922b-2d638449d13e`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskToImage` —— 1/3 个有
-- `SaveImageAdvanced` —— 1/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
 
 ## 典型参数
 

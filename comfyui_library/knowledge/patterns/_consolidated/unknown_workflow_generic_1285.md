@@ -3,39 +3,37 @@ name: unknown_workflow_generic_1285
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.867
-common_nodes: [GoogleTranslator, Image Tile Offset (mtb), PrimitiveString, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline, Text Multiline (Code Compatible), easy promptReplace, easy showAnything]
+coverage: 0.6
+common_nodes: [CLIPLoader, GetVideoComponents, LoadVideo, SaveImage, ShowText|pysssss, TextGenerate, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/nono全新换装_2010995303696048130.json, 图片生成/图生图/nono面料直接上身_2012005804622225410.json]
+members: [图片生成/反推提示词/Gemma4 FT_2098902714246852609.json, 图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1285
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/nono全新换装_2010995303696048130.json、图片生成/图生图/nono面料直接上身_2012005804622225410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Gemma4 FT_2098902714246852609.json、图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GoogleTranslator`
-- `Image Tile Offset (mtb)`
-- `PrimitiveString`
-- `RH_Nano_Banana2_Image2Image`
+- `CLIPLoader`
+- `GetVideoComponents`
+- `LoadVideo`
 - `SaveImage`
-- `Text Multiline`
-- `Text Multiline (Code Compatible)`
-- `easy promptReplace`
+- `ShowText|pysssss`
+- `TextGenerate`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
 - `LoadImage` —— 1/2 个有
-- `LoadImageFromUrl` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

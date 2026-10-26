@@ -1,59 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_unet_59
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.89875
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.6828
+common_nodes: [BasicGuider, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json, 视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json, 视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json, 视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json]
+members: [视频生成/文生视频/MiniMax-H3图生视频工作流.json, 视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json, 视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json, 视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json, 视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_59
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json、视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json、视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json、视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3图生视频工作流.json、视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json、视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json、视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json、视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3AVDecodeT8GH`
+- `MiniMaxH3DualClockT8GH`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `SolAttnMiniMax` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `IntToString` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderBypassModelOnly` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Seed_` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `text-util-join-text` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `GetNode` —— 4/5 个有
+- `LoraLoaderBypassModelOnly` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `easy ifElse` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `SaveAudioAdvanced` —— 2/5 个有
+- `孤海注释` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

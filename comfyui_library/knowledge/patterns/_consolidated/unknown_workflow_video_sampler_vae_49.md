@@ -3,71 +3,66 @@ name: unknown_workflow_video_sampler_vae_49
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.779444
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.687889
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk带动作数字人V2【动态增强版】_1996999462549655554.json, 视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json, 视频生成/图生视频/InfiniteTalk数字人图生长视频-自动对口型（支持唱歌_说话）_1993207838587764737.json, 视频生成/图生视频/InfiniteTalk高动态_1985744717117890562.json, 视频生成/图生视频/【AI代码侠土豆】I2V-InfiniteTalk数字人_1964947566926417921.json, 视频生成/图生视频/商用娱乐地表最强数字人（测颜版）_1988227930037903361.json, 视频生成/图生视频/新版极速Infinite Talk图片数字人--自动计算_1988898686707044353.json, 视频生成/图生视频/自动计算帧数！Infinite Talk极速数字人。  基于T8star-Aix版本改造_1984094280551694338.json, 音频生成/音频生成/(歌曲数字人)全流程精准口型高强动作V4_1989287142675369986.json]
+members: [视频生成/图生视频/FusionX+LightX2V RANK64首尾帧特别版V1_1945374427557318658.json, 视频生成/图生视频/FusionX-VACE最强首尾帧_1934239339964493825.json, 视频生成/图生视频/FusionX双倍加速高细节最强首尾帧V1_1933577534904651778.json, 视频生成/图生视频/FusionX视频首尾帧稳定可靠_1939625951204655105.json, 视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json, 视频生成/图生视频/Vace 14B非对称逆推理尾帧参考FLF2V图生视频V1_1924821785194524673.json, 视频生成/图生视频/Vace 14B首尾帧工作流稳定修正版V2_1922710943292166146.json, 视频生成/图生视频/【首尾帧】FusionX 加速首尾帧图生视频_1933853840162607105.json, 视频生成/图生视频/通义万相视频FusionX模型一统江湖（首尾帧）_1934905346538283010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_49
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk带动作数字人V2【动态增强版】_1996999462549655554.json、视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json、视频生成/图生视频/InfiniteTalk数字人图生长视频-自动对口型（支持唱歌_说话）_1993207838587764737.json、视频生成/图生视频/InfiniteTalk高动态_1985744717117890562.json、视频生成/图生视频/【AI代码侠土豆】I2V-InfiniteTalk数字人_1964947566926417921.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/FusionX+LightX2V RANK64首尾帧特别版V1_1945374427557318658.json、视频生成/图生视频/FusionX-VACE最强首尾帧_1934239339964493825.json、视频生成/图生视频/FusionX双倍加速高细节最强首尾帧V1_1933577534904651778.json、视频生成/图生视频/FusionX视频首尾帧稳定可靠_1939625951204655105.json、视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 8/9 个有
-- `AudioSeparation` —— 8/9 个有
-- `MultiTalkModelLoader` —— 8/9 个有
-- `MultiTalkWav2VecEmbeds` —— 8/9 个有
-- `SimpleMath+` —— 8/9 个有
-- `WanVideoLoraSelect` —— 8/9 个有
-- `Int` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `WanVideoModelLoader` —— 7/9 个有
-- `PreviewAny` —— 6/9 个有
-- `RH_GetAudioDuration` —— 6/9 个有
-- `CR Prompt Text` —— 5/9 个有
-- `GetImageSizeAndCount` —— 5/9 个有
-- `JWInteger` —— 5/9 个有
-- `ToInt` —— 5/9 个有
-- `Float to Int` —— 3/9 个有
-- `JWFloat` —— 3/9 个有
-- `RHHiddenNodes` —— 3/9 个有
-- `easy showAnything` —— 3/9 个有
-- `ImageResizeKJv2` —— 2/9 个有
-- `SoundFlow_GetLength` —— 2/9 个有
-- `Comfly_api_set` —— 1/9 个有
-- `Comfly_suno_custom` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `PrimitiveFloat` —— 1/9 个有
-- `SaveAudio` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `easy clearCacheAll` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `JWInteger` —— 6/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/9 个有
+- `Note Plus (mtb)` —— 5/9 个有
+- `WanVideoTeaCache` —— 5/9 个有
+- `MathExpression|pysssss` —— 4/9 个有
+- `CR Prompt Text` —— 3/9 个有
+- `CR Text` —— 3/9 个有
+- `PDIMAGE_LongerSize` —— 3/9 个有
+- `WanVideoEnhanceAVideo` —— 3/9 个有
+- `WanVideoTorchCompileSettings` —— 3/9 个有
+- `WanVideoVACEModelSelect` —— 2/9 个有
+- `Image Blank` —— 1/9 个有
+- `LayerMask: MaskPreview` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `WanVideoLoraSelect` —— 1/9 个有
+- `easy batchAnything` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 

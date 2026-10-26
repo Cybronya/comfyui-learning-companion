@@ -3,84 +3,63 @@ name: unknown_workflow_video_lora_sampler_856
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CRTFirstLastFrameSelector, ConditioningZeroOut, Float, Getter, Int, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PreviewAudio, PreviewImage, Qwen3TTSModelLoader, RandomNoise, SamplerCustomAdvanced, Setter, SimpleMath+, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy showAnything]
+coverage: 0.5565
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, JjkText, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/◙For循环-infinitetalk-单人(MV_口播_翻唱多功能）_2040280794584846338.json, 视频生成/图生视频/◙For循环-infinitetalk-双人(MV_口播_对唱多功能）_2041800197050732545.json]
+members: [视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json, 视频生成/图生视频/短视频复刻-v3_2109928843170631681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_856
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/◙For循环-infinitetalk-单人(MV_口播_翻唱多功能）_2040280794584846338.json、视频生成/图生视频/◙For循环-infinitetalk-双人(MV_口播_对唱多功能）_2041800197050732545.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json、视频生成/图生视频/短视频复刻-v3_2109928843170631681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CRTFirstLastFrameSelector`
 - `ConditioningZeroOut`
-- `Float`
-- `Getter`
-- `Int`
+- `GetNode`
+- `JjkText`
 - `KSamplerSelect`
-- `LoadAudio`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PreviewAudio`
-- `PreviewImage`
-- `Qwen3TTSModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Setter`
-- `SimpleMath+`
-- `TrimAudioDuration`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_AnySwitchBool` —— 1/2 个有
-- `ASRMW` —— 1/2 个有
-- `AudioConcat` —— 1/2 个有
-- `AudioEvenSplitNode` —— 1/2 个有
-- `AudioMerge` —— 1/2 个有
-- `AudioSelectNode` —— 1/2 个有
-- `CLIPVisionEncode` —— 1/2 个有
-- `CLIPVisionLoader` —— 1/2 个有
-- `EmptyAudio` —— 1/2 个有
-- `GetAudioDurationFromAudio` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PainterVRAM` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `Qwen3TTSVoiceClone` —— 1/2 个有
-- `Qwen3TTSVoiceDesign` —— 1/2 个有
-- `ResizeImageMaskNode` —— 1/2 个有
-- `VRAMReserver` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
-- `图像缩放V2_孤海` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MiniMaxH3MotionContext` —— 1/2 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 1/2 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 1/2 个有
+- `MiniMaxH3MotionContextTrim` —— 1/2 个有
+- `SoundFlow_GetLength` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

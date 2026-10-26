@@ -3,33 +3,37 @@ name: unknown_workflow_generic_702
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.6
-common_nodes: [JjkText, LoadImage, SaveImage]
+coverage: 0.87325
+common_nodes: [Apply Whisper, FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json]
+members: [图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json, 音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json, 音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json, 音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_702
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json、图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json、音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json、音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json、音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `SaveImage`
+- `Apply Whisper`
+- `FishS2MultiSpeakerTTS`
+- `FishS2TTS`
+- `FishS2VoiceCloneTTS`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV45ImageToImage` —— 3/4 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LoadImage` —— 2/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

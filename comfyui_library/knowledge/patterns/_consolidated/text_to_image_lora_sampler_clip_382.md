@@ -3,78 +3,56 @@ name: text_to_image_lora_sampler_clip_382
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.7942
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip]
+coverage: 0.853
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2104054731424485378.json, 视频生成/图生视频/MiniMax_H3动作迁移图生视频_自定义背景人物全能参考_2101088561767473154.json, 视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考全接口视频生成处理工具_2102503531793182722.json, 视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考视频生成处理工具_2101373500354289666.json, 视频生成/文生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2102255598640394242.json]
+members: [图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json, 图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json, 图片生成/图生图/Qwen Image 2.1纯净官流编辑｜40步无PE稳定出图_2103104435521155074.json, 图片生成/图生图/Qwen Image 2.1编辑纯净官流40步无PE，搭配技能使用效果更佳_2103199505092014082.json, 图片生成/文生图/Qwen Image 2.1文生图纯净官流40步无PE，搭配技能高质量文本出图方案_2103260563735400450.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_382
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2104054731424485378.json、视频生成/图生视频/MiniMax_H3动作迁移图生视频_自定义背景人物全能参考_2101088561767473154.json、视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考全接口视频生成处理工具_2102503531793182722.json、视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考视频生成处理工具_2101373500354289666.json、视频生成/文生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2102255598640394242.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json、图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json、图片生成/图生图/Qwen Image 2.1纯净官流编辑｜40步无PE稳定出图_2103104435521155074.json、图片生成/图生图/Qwen Image 2.1编辑纯净官流40步无PE，搭配技能使用效果更佳_2103199505092014082.json、图片生成/文生图/Qwen Image 2.1文生图纯净官流40步无PE，搭配技能高质量文本出图方案_2103260563735400450.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `EasyCache` —— 4/5 个有
-- `FrameInterpolate` —— 4/5 个有
-- `FrameInterpolationModelLoader` —— 4/5 个有
-- `GroupSwitcher` —— 4/5 个有
-- `LTXVConcatAVLatent` —— 4/5 个有
-- `LTXVSeparateAVLatent` —— 4/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/5 个有
-- `PathchSageAttentionKJ` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `RH_DLSS5FrameInterpolation` —— 4/5 个有
-- `SeedNode` —— 4/5 个有
-- `SpectrumApplyMiniMaxH3` —— 4/5 个有
-- `TrimAudioDuration` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `easy clearCacheAll` —— 4/5 个有
-- `孤海注释` —— 3/5 个有
-- `EmptyImage` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `ComfySwitchNode` —— 3/5 个有
+- `PixaromaSeed` —— 3/5 个有
+- `PrimitiveBoolean` —— 3/5 个有
+- `Fast Bypasser (rgthree)` —— 2/5 个有
+- `PixaromaRunTimer` —— 2/5 个有
 - `PreviewImage` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
+- `QwenImage21Cache` —— 2/5 个有
+- `GetImageSize` —— 1/5 个有
+- `GroupSwitcher` —— 1/5 个有
+- `NuiKr.OpenPoseEditor` —— 1/5 个有
+- `OpenposePreprocessor` —— 1/5 个有
 
 ## 典型参数
 

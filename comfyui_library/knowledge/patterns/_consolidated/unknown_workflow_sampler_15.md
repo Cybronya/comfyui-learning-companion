@@ -1,39 +1,46 @@
 ---
 name: unknown_workflow_sampler_15
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.9815
-common_nodes: [ImageAndMaskPreview, ImageStitch, LoadImage, RunningHub OneReward Loader, SaveImage]
+coverage: 0.856
+common_nodes: [EligenArgsConcat, LoadImage, LoadQwenImageDiffSynthiPipe, MaskToImage, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetEligenArgs]
 problems: []
 missing: []
-members: [图片生成/图生图/OneReward擦除物体_1965642962145263617.json, 图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json, 图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json, 图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json, 图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json, 图片生成/图生图/文字绘写-字节OneReward-Fill_1966331017168662530.json]
+members: [图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json, 图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json, 图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json, 图片生成/文生图/Qwen千问Eligen自由设计画布_1954024086618066945.json, 图片生成/文生图/指哪画哪！Qwen-Image自由画布eligen_1955738055426674689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OneReward擦除物体_1965642962145263617.json、图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json、图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json、图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json、图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json、图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json、图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageAndMaskPreview`
-- `ImageStitch`
+全部 7 个 workflow 都包含：
+- `EligenArgsConcat`
 - `LoadImage`
-- `RunningHub OneReward Loader`
+- `LoadQwenImageDiffSynthiPipe`
+- `MaskToImage`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenImageDiffSynthSampler`
 - `SaveImage`
+- `SetEligenArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub OneReward Sampler` —— 4/6 个有
-- `RH_Translator` —— 2/6 个有
-- `RunningHub OneReward Eraser` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
+- `QwenImageRatio2Size` —— 6/7 个有
+- `LoadQwenImageDiffSynthLora` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `CR Text` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `SetMultiEligenArgs` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

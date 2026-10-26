@@ -3,17 +3,17 @@ name: image_to_image_sampler_clip_unet_57
 type: Image To Image
 frequency: 7
 level: strong
-coverage: 0.910571
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FastCanvas, FastCanvasTool, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg]
+coverage: 0.906714
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-kontext-产品+背景-自动合成溶图_1950960132547084289.json, 图片生成/图生图/KONTEXT 溶图 V3_1985552455687720962.json, 图片生成/图生图/KONTEXT+溶图+V3+，+最高效稳定万物迁移工作流_2013144975940263938.json, 图片生成/图生图/Kontext Dev多图融合技巧（更可控）_1939332448016637954.json, 图片生成/图生图/kontext超强溶图_1987866800891301889.json, 图片生成/图生图/电商设计一键万物迁移工作流 V1.0_1980477000945217538.json, 图片生成/图生图/🦚【大炮精选】Kontext 溶图工作流【产品溶图_场景融合】💐_1947855170459811842.json]
+members: [图片生成/图生图/Kontext Dev照片转绘【10种画风随意切换】_2013861706304331778.json, 图片生成/图生图/Kontext [dev] 漫画线稿上色_1939123701302677506.json, 图片生成/图生图/Kontext dev 线稿上色_1940218293493911554.json, 图片生成/图生图/Kontext+Dev照片转绘扁平矢量卡通风格V2_2047228009656094722.json, 图片生成/图生图/Kontext，改变相机角度，改变镜头，改变角度，Change Camera Angle_1977589854961836034.json, 图片生成/图生图/像素风画转画_2080593953581260802.json, 图片生成/图生图/照片转扁平插画风（超强设计感）Kontext+Dev_2029482820351037441.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux-kontext-产品+背景-自动合成溶图_1950960132547084289.json、图片生成/图生图/KONTEXT 溶图 V3_1985552455687720962.json、图片生成/图生图/KONTEXT+溶图+V3+，+最高效稳定万物迁移工作流_2013144975940263938.json、图片生成/图生图/Kontext Dev多图融合技巧（更可控）_1939332448016637954.json、图片生成/图生图/kontext超强溶图_1987866800891301889.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext Dev照片转绘【10种画风随意切换】_2013861706304331778.json、图片生成/图生图/Kontext [dev] 漫画线稿上色_1939123701302677506.json、图片生成/图生图/Kontext dev 线稿上色_1940218293493911554.json、图片生成/图生图/Kontext+Dev照片转绘扁平矢量卡通风格V2_2047228009656094722.json、图片生成/图生图/Kontext，改变相机角度，改变镜头，改变角度，Change Camera Angle_1977589854961836034.json…）
 
 - **类型**：Image To Image
 - **样本数**：7
@@ -26,43 +26,41 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `FastCanvas`
-- `FastCanvasTool`
 - `FluxGuidance`
 - `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
+- `PreviewImage`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `CR Text` —— 4/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `ImageConcanate` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `RepeatLatentBatch` —— 3/7 个有
-- `DeepTranslatorTextNode` —— 2/7 个有
-- `ImageConcatMulti` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `Seed (rgthree)` —— 2/7 个有
-- `StringFunction|pysssss` —— 2/7 个有
-- `ChinesePrompt_Mix` —— 1/7 个有
-- `ImageScaleToMegapixels` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
-- `TextCombinerTwo` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `ConstrainImage|pysssss` —— 6/7 个有
+- `SUPIR_Upscale` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `RH_Translator` —— 4/7 个有
+- `String` —— 4/7 个有
+- `CR Text Concatenate` —— 3/7 个有
+- `DeepTranslatorTextNode` —— 3/7 个有
+- `easy showAnything` —— 2/7 个有
+- `ttN concat` —— 2/7 个有
+- `CR Text` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `Note _O` —— 1/7 个有
+- `RepeatLatentBatch` —— 1/7 个有
+- `TeaCache` —— 1/7 个有
+- `easy anythingIndexSwitch` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 7 | 100% |
+| 采样步数 | 25 | 20 - 25 | 7 | 93% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
 | 采样算法 | euler | - | 7 | 100% |
 | 调度器 | simple | - | 7 | 100% |
@@ -74,7 +72,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 20 - 25，7 个样本，取值集中（一致性 93%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，7 个样本，一致性 100%
 - 调度器 最常用 simple，7 个样本，一致性 100%

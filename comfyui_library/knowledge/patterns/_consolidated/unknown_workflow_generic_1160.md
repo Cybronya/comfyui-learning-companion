@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_generic_1160
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.846
-common_nodes: [RecraftColorRGB, RecraftControls, RecraftStyleV3DigitalIllustration, RecraftStyleV3LogoRaster, RecraftStyleV3RealisticImage, RecraftTextToImageNode, RecraftVectorizeImageNode, SaveImage, SaveSVGNode]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [RH_Wan26_T2V, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_image_gen_with_color_control.json, comfyui-workflow-templates-json/api_recraft_image_gen_with_style_control.json]
+members: [视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json, 视频生成/文生视频/wan2.6 t2v_2000818374349385729.json, 视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1160
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_image_gen_with_color_control.json、comfyui-workflow-templates-json/api_recraft_image_gen_with_style_control.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json、视频生成/文生视频/wan2.6 t2v_2000818374349385729.json、视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `RecraftStyleV3DigitalIllustration`
-- `RecraftStyleV3LogoRaster`
-- `RecraftStyleV3RealisticImage`
-- `RecraftTextToImageNode`
-- `RecraftVectorizeImageNode`
-- `SaveImage`
-- `SaveSVGNode`
+全部 3 个 workflow 都包含：
+- `RH_Wan26_T2V`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

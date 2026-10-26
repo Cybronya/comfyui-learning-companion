@@ -3,85 +3,92 @@ name: unknown_workflow_lora_sampler_clip_110
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.978
-common_nodes: [BNK_CLIPTextEncodeAdvanced, CheckpointLoaderSimple, EmptyLatentImage, HyperLoRAApplyLoRA, HyperLoRAConfig, HyperLoRAFaceAttr, HyperLoRAGenerateIDLoRA, HyperLoRAIDCond, HyperLoRALoader, ImpactMakeImageBatch, JWInteger, KSampler, LoadImage, SaveImage, VAEDecode]
-problems: []
+coverage: 0.5952
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GrowMask, ImageBatch, ImageFromBatch, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, PrimitiveInt, Sam2Segmentation, SaveVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/HyperLora人物一致性文生图_1915931428176203777.json, 图片生成/文生图/HyperLora人物一致性文生图（参考）V1_1915751964595130369.json, 图片生成/文生图/HyperLora人物一致性脸部细化超级加速文生图（参考版）_1915754672240394242.json, 图片生成/文生图/HyperLora人物最强一致性InstantID超级加速文生图（参考版）_1915755901133717506.json, 图片生成/文生图/HyperLora超强人物一致性+CN控制文生图_1916009861518131201.json]
+members: [图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json, 数字人/数字人/ComfyUI_电商视频_整人物替换_Wan2.2_Animate_2081230895100547074.json, 视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json, 视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json, 视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_110
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/HyperLora人物一致性文生图_1915931428176203777.json、图片生成/文生图/HyperLora人物一致性文生图（参考）V1_1915751964595130369.json、图片生成/文生图/HyperLora人物一致性脸部细化超级加速文生图（参考版）_1915754672240394242.json、图片生成/文生图/HyperLora人物最强一致性InstantID超级加速文生图（参考版）_1915755901133717506.json、图片生成/文生图/HyperLora超强人物一致性+CN控制文生图_1916009861518131201.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json、数字人/数字人/ComfyUI_电商视频_整人物替换_Wan2.2_Animate_2081230895100547074.json、视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json、视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json、视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BNK_CLIPTextEncodeAdvanced`
-- `CheckpointLoaderSimple`
-- `EmptyLatentImage`
-- `HyperLoRAApplyLoRA`
-- `HyperLoRAConfig`
-- `HyperLoRAFaceAttr`
-- `HyperLoRAGenerateIDLoRA`
-- `HyperLoRAIDCond`
-- `HyperLoRALoader`
-- `ImpactMakeImageBatch`
-- `JWInteger`
+- `BlockifyMask`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CreateVideo`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GrowMask`
+- `ImageBatch`
+- `ImageFromBatch`
+- `ImageScale`
 - `KSampler`
 - `LoadImage`
-- `SaveImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `PrimitiveInt`
+- `Sam2Segmentation`
+- `SaveVideo`
+- `TrimVideoLatent`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 4/5 个有
-- `CLIPSetLastLayer` —— 4/5 个有
-- `ImageConcanate` —— 4/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `Note Plus (mtb)` —— 4/5 个有
-- `PreviewImage` —— 3/5 个有
-- `ControlNetLoader` —— 2/5 个有
-- `ApplyInstantIDAdvanced` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ControlNetApplyAdvanced` —— 1/5 个有
-- `FaceDetailer` —— 1/5 个有
+- `GetVideoComponents` —— 4/5 个有
+- `LoadVideo` —— 4/5 个有
+- `MaskPreview` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `GetNode` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `ForLoopClose` —— 1/5 个有
+- `ForLoopOpen` —— 1/5 个有
 - `ImageConcatMulti` —— 1/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `InstantIDFaceAnalysis` —— 1/5 个有
-- `InstantIDModelLoader` —— 1/5 个有
-- `OpenposePreprocessor` —— 1/5 个有
-- `UltralyticsDetectorProvider` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `ImageResizeAdvanced` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `VHS_LoadVideoFFmpeg` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
+- `VHS_VideoInfoLoaded` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 5 | 3 - 5 | 5 | 83% |
-| 采样算法 | dpmpp_2m | - | 5 | 100% |
-| 调度器 | karras | - | 5 | 100% |
+| 采样步数 | 6 | 6 - 6 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 3 - 5，5 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 dpmpp_2m，5 个样本，一致性 100%
-- 调度器 最常用 karras，5 个样本，一致性 100%
+- 采样步数 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（12/5 个样本）：Steps较低可能导致细节不足

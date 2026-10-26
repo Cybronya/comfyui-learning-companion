@@ -3,37 +3,36 @@ name: unknown_workflow_sampler_29
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9714
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler]
+coverage: 1
+common_nodes: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json, 视频生成/图生视频/FlashTalk_Head数字人生成_2027574914521239554.json, 视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json]
+members: [图片生成/图生图/风格迁移-主题固定【单参考图】uso_1967831030130421761.json, 图片生成/图生图/风格迁移-主题固定【双参考图】uso_1968132045371244546.json, 图片生成/图生图/风格迁移-单图-uso_2016515744707645442.json, 图片生成/文生图/风格迁移【单参考图】文生图版-uso_1968119490942763009.json, 图片生成/文生图/风格迁移【双参考图】文生图版-uso_1968132053638217730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json、视频生成/图生视频/FlashTalk_Head数字人生成_2027574914521239554.json、视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json、视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json、视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/风格迁移-主题固定【单参考图】uso_1967831030130421761.json、图片生成/图生图/风格迁移-主题固定【双参考图】uso_1968132045371244546.json、图片生成/图生图/风格迁移-单图-uso_2016515744707645442.json、图片生成/文生图/风格迁移【单参考图】文生图版-uso_1968119490942763009.json、图片生成/文生图/风格迁移【双参考图】文生图版-uso_1968132053638217730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CR Text`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 4/5 个有
-- `GetVideoComponents` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
+- `LayerUtility: ColorImage` —— 3/5 个有
 
 ## 典型参数
 

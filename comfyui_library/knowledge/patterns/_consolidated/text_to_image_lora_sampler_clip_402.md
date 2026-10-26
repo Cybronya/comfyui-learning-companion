@@ -1,91 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_402
 type: Text To Image
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.85475
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt List, CR Text, ConditioningZeroOut, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImpactInt, KSampler, LoadImage, LoraLoaderModelOnly, RegexReplace, SaveImage, String Literal, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.7666
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveStringMultiline, SaveImage, SeedNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea+2+电商模特图  写真摄影 真实拍摄 高清放大_2083011900706746369.json, 图片生成/图生图/极致美图 电商模特图  写真摄影 Krea+2+ 真实拍摄 高清放大_2083022262218878978.json, 图片生成/文生图/Gemma4+Zimage-turbo反推生成保暖内衣_2054902666865717249.json, 图片生成/文生图/Krea 2 电商模特图-2.0_2076532743651020802.json]
+members: [图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2077756477330247682.json, 图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2096069355342749697.json, 图片生成/文生图/Krea2 Turbo文生图（人像增强_低清晰快速版）_2077588064620343297.json, 图片生成/文生图/Krea2+Text-to-Image+(场景增强_低清晰快速版）_2079889659416637442.json, 图片生成/文生图/krea2+klein+zimage高质量生图_2083406223365468162.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_402
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Krea+2+电商模特图  写真摄影 真实拍摄 高清放大_2083011900706746369.json、图片生成/图生图/极致美图 电商模特图  写真摄影 Krea+2+ 真实拍摄 高清放大_2083022262218878978.json、图片生成/文生图/Gemma4+Zimage-turbo反推生成保暖内衣_2054902666865717249.json、图片生成/文生图/Krea 2 电商模特图-2.0_2076532743651020802.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2077756477330247682.json、图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2096069355342749697.json、图片生成/文生图/Krea2 Turbo文生图（人像增强_低清晰快速版）_2077588064620343297.json、图片生成/文生图/Krea2+Text-to-Image+(场景增强_低清晰快速版）_2079889659416637442.json、图片生成/文生图/krea2+klein+zimage高质量生图_2083406223365468162.json）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt List`
-- `CR Text`
 - `ConditioningZeroOut`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImpactInt`
 - `KSampler`
-- `LoadImage`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `RegexReplace`
+- `ModelSamplingAuraFlow`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `String Literal`
+- `SeedNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ResizeImageMaskNode` —— 3/4 个有
-- `SeedVR2Conditioning` —— 3/4 个有
-- `SeedVR2PostProcessing` —— 3/4 个有
-- `SeedVR2Preprocess` —— 3/4 个有
-- `VAEDecodeTiled` —— 3/4 个有
-- `VAEEncodeTiled` —— 3/4 个有
-- `CR Batch Images From List` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageFromBatch` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `llama_cpp_instruct_adv` —— 1/4 个有
-- `llama_cpp_model_loader` —— 1/4 个有
-- `llama_cpp_parameters` —— 1/4 个有
+- `Int` —— 4/5 个有
+- `QZ_ResolutionPreset` —— 4/5 个有
+- `CR Text` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `RHLLMChatNode` —— 2/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1280 | 720 - 1280 | 4 | 79% |
-| 高度 | 720 | 720 - 1280 | 4 | 72% |
-| 采样步数 | 8 | 8 - 15 | 4 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 4 | 96% |
-| 采样算法 | euler_ancestral | - | 4 | 75% |
-| 调度器 | bong_tangent | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 10 | 1 - 10 | 5 | 31% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 5 | 60% |
+| 重绘幅度 | simple | - | 5 | 60% |
+| 宽度 | 1024 | 720 - 1024 | 5 | 87% |
+| 高度 | 1024 | 1024 - 1280 | 5 | 90% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1280，观测区间 720 - 1280，4 个样本
-- 高度 中位数 720，观测区间 720 - 1280，4 个样本
-- 采样步数 中位数 8，观测区间 8 - 15，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，4 个样本，取值集中（一致性 96%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 75%
-- 调度器 最常用 bong_tangent，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（6/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 1 - 10，5 个样本，取值分散，一致性仅 31%
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 60%
+- 重绘幅度 最常用 simple，5 个样本，一致性 60%
+- 宽度 中位数 1024，观测区间 720 - 1024，5 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 1024 - 1280，5 个样本，取值集中（一致性 90%）
+- 高发问题（7/5 个样本）：Steps较低可能导致细节不足

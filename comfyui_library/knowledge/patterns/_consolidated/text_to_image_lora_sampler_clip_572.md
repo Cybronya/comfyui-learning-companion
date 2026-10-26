@@ -1,99 +1,71 @@
 ---
 name: text_to_image_lora_sampler_clip_572
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.856
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, ComfySwitchNode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LoadImage, LoraLoaderModelOnly, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, RandomNoise, ReferenceLatent, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.868
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), JjkText, JoinStrings, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Lora Loader, RH_RhartImageNG31FlashImageToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1图像编辑高清双采样版工作流，其它平面设计图生图处理工具_2108318327817986049.json, 图片生成/图生图/qwen image 2.1图像编辑 高清双采样版_2107420657985351681.json]
+members: [图片生成/文生图/文生图_图生图_全能图片三合一工作流_1955452266036674562.json, 图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069693848510623745.json, 图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069699625069666305.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_572
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑高清双采样版工作流，其它平面设计图生图处理工具_2108318327817986049.json、图片生成/图生图/qwen image 2.1图像编辑 高清双采样版_2107420657985351681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/文生图_图生图_全能图片三合一工作流_1955452266036674562.json、图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069693848510623745.json、图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069699625069666305.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ColorMatch`
-- `ComfySwitchNode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `JjkText`
+- `JoinStrings`
 - `KSampler`
-- `KSamplerSelect`
-- `LCSColorAnchor`
-- `LCSLoadData`
-- `LCSSharpnessCalibrate`
-- `LCSSharpnessIntervene`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenPERewriteT8`
-- `RandomNoise`
-- `ReferenceLatent`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `Lora Loader`
+- `RH_RhartImageNG31FlashImageToImage`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 - `easy showAnything`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
-- `solarL_SaveImagesToZip` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22 | - | 2 | 18% |
-| Prompt 约束强度(CFG) | 2.75 | - | 2 | 36% |
-| 采样算法 | er_sde | - | 2 | 50% |
-| 调度器 | beta | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 552 | - | 2 | 14% |
-| 高度 | 552 | - | 2 | 14% |
+| 采样步数 | 15 | 15 - 15 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler_ancestral | - | 3 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1080 | 1080 - 1080 | 3 | 100% |
+| 高度 | 1560 | 1560 - 1560 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 22，样本不足，未给区间，2 个样本，取值分散，一致性仅 18%
-- Prompt 约束强度(CFG) 中位数 2.75，样本不足，未给区间，2 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 er_sde，2 个样本，一致性 50%
-- 调度器 最常用 beta，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 552，样本不足，未给区间，2 个样本，取值分散，一致性仅 14%
-- 高度 中位数 552，样本不足，未给区间，2 个样本，取值分散，一致性仅 14%
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 15，观测区间 15 - 15，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 1080 - 1080，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1560，观测区间 1560 - 1560，3 个样本，取值集中（一致性 100%）

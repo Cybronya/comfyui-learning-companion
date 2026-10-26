@@ -3,82 +3,83 @@ name: text_to_image_lora_sampler_clip_523
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.918
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, CLIPVisionEncode, CLIPVisionLoader, CR Text, DF_Text_Box, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, Image Comparer (rgthree), JWImageResizeByLongerSide, Joy_caption_two, Joy_caption_two_load, KSampler, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApplySimple, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.746333
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetImageSizeAndCount, GetNode, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, QwenImage21Cache, ResolutionSelector, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/工作流项目篇10-萌宠合影趣味写真照(内含洗图工作流)_2016702922922397697.json, 图片生成/文生图/萌宠合影趣味写真照（内含洗图工作流）_1985668347650088962.json, 图片生成/文生图/萌宠合影趣味写真（含洗图）_2061367052845281281.json]
+members: [图片生成/图生图/QwenImage2.1 Anything2Realism任意风格转写实图像生成工作流_2108619777165062146.json, 图片生成/图生图/QwenImage2.1 Anything2Realism｜任意风格转写实图像生成_2108386828016513026.json, 图片生成/文生图/Qwen Image 2.1图像编辑加二次采样放大，去提示词增强精简版图生图方案_2103533493711106050.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_523
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/工作流项目篇10-萌宠合影趣味写真照(内含洗图工作流)_2016702922922397697.json、图片生成/文生图/萌宠合影趣味写真照（内含洗图工作流）_1985668347650088962.json、图片生成/文生图/萌宠合影趣味写真（含洗图）_2061367052845281281.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenImage2.1 Anything2Realism任意风格转写实图像生成工作流_2108619777165062146.json、图片生成/图生图/QwenImage2.1 Anything2Realism｜任意风格转写实图像生成_2108386828016513026.json、图片生成/文生图/Qwen Image 2.1图像编辑加二次采样放大，去提示词增强精简版图生图方案_2103533493711106050.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPTextEncodeFlux`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `DF_Text_Box`
-- `DetailDaemonSamplerNode`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `JWImageResizeByLongerSide`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StyleModelApplySimple`
-- `StyleModelLoader`
+- `SetNode`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Load Image From Url (mtb)` —— 2/3 个有
+- `RH_DLSS5Enhance` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Textbox` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 896 - 896 | 3 | 100% |
-| 高度 | 1152 | 1152 - 1152 | 3 | 100% |
-| LoRA 模型强度 | 0.8 | 0.8 - 0.8 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| 采样步数 | 25 | 25 - 25 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | dpmpp_2m | - | 3 | 100% |
-| 调度器 | sgm_uniform | - | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 896 - 896，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1152，观测区间 1152 - 1152，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 0.8，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，3 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

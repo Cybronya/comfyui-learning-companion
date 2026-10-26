@@ -1,63 +1,46 @@
 ---
 name: unknown_workflow_sampler_vae_34
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.928429
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ]
+coverage: 0.8727
+common_nodes: [CreateVideo, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-图生视频+导演分镜节点2.0_2070497842334097410.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点_2055988767751720962.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json, 视频生成/图生视频/LTX2.3全流程导演台！_2056659960074956802.json, 视频生成/图生视频/LTX2.3导演台分镜数字人_2086131734063702018.json, 视频生成/图生视频/LTX2.3脱口秀导演台_2080600442291183617.json, 视频生成/图生视频/ltx2.3导演台_2061378483611328514.json]
+members: [视频生成/文生视频/MiniMax-H3_文生视频_RH版_零质量损失_2100197900319027202.json, 视频生成/文生视频/MiniMax-H3_文生视频_RH版_零质量损失_2101873315043430401.json, 视频生成/文生视频/MiniMax-H3文生视频_2084112909017378818.json, 视频生成/文生视频/MiniMaxH3开源版-文生视频满血版_2085664955076014081.json, 视频生成/文生视频/MiniMax_H3_FL2VA开源版-文生视频_2098934858633535489.json, 视频生成/文生视频/MiniMax_H3_FL2VA开源版-文生视频_2098992624169472002.json, 视频生成/文生视频/MiniMax_H3_FL2VA开源版-文生视频_2099668092489125890.json, 视频生成/文生视频/Minimax H3文生视频工作流_2084627156352720897.json, 视频生成/文生视频/Mini开源Max+H3+-文生视频满血版_2084270525710426114.json, 视频生成/文生视频/【开源】MiniMax_H3 文生视频满血版_2084157675742519298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-图生视频+导演分镜节点2.0_2070497842334097410.json、视频生成/图生视频/LTX2.3-图生视频+导演分镜节点_2055988767751720962.json、视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json、视频生成/图生视频/LTX2.3全流程导演台！_2056659960074956802.json、视频生成/图生视频/LTX2.3导演台分镜数字人_2086131734063702018.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3_文生视频_RH版_零质量损失_2100197900319027202.json、视频生成/文生视频/MiniMax-H3_文生视频_RH版_零质量损失_2101873315043430401.json、视频生成/文生视频/MiniMax-H3文生视频_2084112909017378818.json、视频生成/文生视频/MiniMaxH3开源版-文生视频满血版_2085664955076014081.json、视频生成/文生视频/MiniMax_H3_FL2VA开源版-文生视频_2098934858633535489.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+全部 10 个 workflow 都包含：
+- `CreateVideo`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 6/7 个有
-- `LTXVAudioVAEDecode` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `PathchSageAttentionKJ` —— 5/7 个有
-- `CreateVideo` —— 4/7 个有
-- `SaveVideo` —— 4/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `ComfySwitchNode` —— 2/7 个有
-- `DiffusionModelLoaderKJ` —— 2/7 个有
-- `LTXVLatentUpsampler` —— 2/7 个有
-- `LatentUpscaleModelLoader` —— 2/7 个有
-- `ModelPatchTorchSettings` —— 2/7 个有
-- `TTResolutionSelector` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `ModelPreviewOverrideKJ` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `EmptyImage` —— 5/10 个有
+- `PreviewImage` —— 5/10 个有
+- `PrimitiveFloat` —— 2/10 个有
+- `ResolutionSelector` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `Text` —— 1/10 个有
 
 ## 典型参数
 

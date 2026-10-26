@@ -3,78 +3,73 @@ name: unknown_workflow_video_sampler_vae_98
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6398
-common_nodes: [GetImageSizeAndCount, GetNode, ImageFromBatch, ImageFromBatch+, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, PrimitiveFloat, Qwen3_VQA, SetNode, ShowText|pysssss, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.7426
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/视频-图生视频长视频-wan2.1-SVI 2.0-KJ_1985612085986045953.json, 视频生成/图生视频/视频-图生视频扩写-wan2.2-smoothMix-KJ_1982743157039349761.json, 视频生成/图生视频/视频-图生视频自动扩写-wan2.2-KJ_1972739991178792962.json, 视频生成/图生视频/视频-视频延长视频-wan2.1-SVI 2.0-KJ_1985620607834501122.json, 视频生成/图生视频/视频-视频延长视频＋参考图一致性-wan2.1-lynx-SVI 2.0-KJ_1985638903862439938.json]
+members: [视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json, 视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json, 视频生成/图生视频/FusionX-VACE深度_姿势二选一视频转绘_1934166540621107202.json, 视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json, 视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_98
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/视频-图生视频长视频-wan2.1-SVI 2.0-KJ_1985612085986045953.json、视频生成/图生视频/视频-图生视频扩写-wan2.2-smoothMix-KJ_1982743157039349761.json、视频生成/图生视频/视频-图生视频自动扩写-wan2.2-KJ_1972739991178792962.json、视频生成/图生视频/视频-视频延长视频-wan2.1-SVI 2.0-KJ_1985620607834501122.json、视频生成/图生视频/视频-视频延长视频＋参考图一致性-wan2.1-lynx-SVI 2.0-KJ_1985638903862439938.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json、视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json、视频生成/图生视频/FusionX-VACE深度_姿势二选一视频转绘_1934166540621107202.json、视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json、视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `ImpactFloat`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `Qwen3_VQA`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `SetNode`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageSize`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `CLIPVisionLoader` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `WanVideoClipVisionEncode` —— 3/5 个有
-- `WanVideoTextEncodeCached` —— 3/5 个有
-- `CM_FloatToInt` —— 2/5 个有
-- `CreateCFGScheduleFloatList` —— 2/5 个有
-- `GetImageRangeFromBatch` —— 2/5 个有
-- `ImageBatchMulti` —— 2/5 个有
-- `LoadWanVideoT5TextEncoder` —— 2/5 个有
-- `SimpleMath+` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `WanVideoScheduler` —— 2/5 个有
-- `WanVideoSigmaToStep` —— 2/5 个有
+- `LayerUtility: ImageRemoveAlpha` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `WanVideoVACEEncode` —— 4/5 个有
+- `CR Text` —— 3/5 个有
+- `DepthAnything_V2` —— 3/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 3/5 个有
+- `JWInteger` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 3/5 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `WanVideoApplyNAG` —— 3/5 个有
+- `WanVideoTeaCache` —— 3/5 个有
+- `WanVideoTextEncodeSingle` —— 3/5 个有
+- `MathExpression|pysssss` —— 2/5 个有
 - `WanVideoTextEncode` —— 2/5 个有
-- `easy mathFloat` —— 2/5 个有
-- `easy mathInt` —— 2/5 个有
-- `LoadLynxResampler` —— 1/5 个有
-- `LynxEncodeFaceIP` —— 1/5 个有
-- `LynxInsightFaceCrop` —— 1/5 个有
-- `WanVideoAddLynxEmbeds` —— 1/5 个有
-- `WanVideoExtraModelSelect` —— 1/5 个有
+- `WanVideoVACEModelSelect` —— 2/5 个有
+- `easy imageSize` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `ImagePadKJ` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `InspyrenetRembg` —— 1/5 个有
+- `Note _O` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoPhantomEmbeds` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,40 +3,39 @@ name: unknown_workflow_generic_1703
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.976
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, PreviewAudio, SaveAudio]
+coverage: 0.75
+common_nodes: [CR Prompt Text, CR Text, CR Text Concatenate, LoadImage, PreviewImage, RHHiddenNodes, RH_RhartImageG2ImageToImage, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen_tts_生成对话音频_2027276632188264449.json, 音频生成/音频生成/音频生成_Qwen3-TTS_多人对话_有声读物_2016481758623047682.json]
+members: [视频生成/图生视频/【3.1超值】带货视频  超低价  适合 口播短视频 带货讲解_2080302190673092610.json, 视频生成/图生视频/【超值】带货视频  低至0.04元_秒  全自动  带货视频生成_2076026308588560386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1703
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/qwen_tts_生成对话音频_2027276632188264449.json、音频生成/音频生成/音频生成_Qwen3-TTS_多人对话_有声读物_2016481758623047682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【3.1超值】带货视频  超低价  适合 口播短视频 带货讲解_2080302190673092610.json、视频生成/图生视频/【超值】带货视频  低至0.04元_秒  全自动  带货视频生成_2076026308588560386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `PreviewAudio`
-- `SaveAudio`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `FB_Qwen3TTSLoadSpeaker` —— 1/2 个有
-- `LayerUtility: TextBox` —— 1/2 个有
-- `SaveAudioMP3` —— 1/2 个有
+- `RH_RhartVideoGImageToVideo` —— 1/2 个有
+- `RH_Veo3_Image2Video` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,36 +3,35 @@ name: unknown_workflow_generic_1695
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudioAdvanced, SaveImage]
+coverage: 0.606
+common_nodes: [Comfly_Googel_Veo3, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM 语音克隆_2080098857383448577.json, 音频生成/音频生成/danotebook-voxcpm2_2066880930291212290.json]
+members: [视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json, 视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1695
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM 语音克隆_2080098857383448577.json、音频生成/音频生成/danotebook-voxcpm2_2066880930291212290.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json、视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudioAdvanced`
+- `Comfly_Googel_Veo3`
+- `LoadImage`
 - `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `Comfly_kling_videoPreview` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
 
 ## 典型参数
 

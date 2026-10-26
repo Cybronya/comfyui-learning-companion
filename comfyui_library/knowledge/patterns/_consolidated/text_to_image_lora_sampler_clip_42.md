@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_42
 type: Text To Image
 frequency: 19
 level: strong
-coverage: 0.798158
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.877947
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1单图编辑流｜局部修改想改哪里改哪里_2108081920897806338.json, 图片生成/图生图/Qwen Image 2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2106859828982407170.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2104763014581940225.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2108523054933561346.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜想修哪里修哪里_2107745036996800513.json, 图片生成/图生图/Qwen Image 2.1图像编辑利器｜图生图局部修改一句话搞定_2110685195149074434.json, 图片生成/图生图/Qwen Image 2.1多图编辑图片编辑全节点注释处理工具_2102541742317850626.json, 图片生成/图生图/Qwen Image 2.1多图编辑｜多参考图融合修改｜批量改图效率翻倍_2104764482592534530.json, 图片生成/图生图/Qwen Image 2.1｜万能输入文生图图生图一体工作流，千问2.1一站式创作_2107281533928300545.json, 图片生成/图生图/Qwen-Image-2.1图像编辑10张参考图｜局部重绘换装 图生图全能_2104094197203685378.json, 图片生成/图生图/Qwen-Image-2.1图像编辑｜最多10张参考图图生图随心改_2106230157538324481.json, 图片生成/图生图/最多10张参考图 Qwen-Image-2.1图像编辑2K输出换装局部重绘_2104274563130548225.json, 图片生成/图生图/最强换装工作流，电商服装展示一键换衣图生图处理工具_2106510801598246914.json, 图片生成/文生图/Qwen Image 2.1万能输入工作流，文生图图生图全场景覆盖处理方案_2107588581916233729.json, 图片生成/文生图/Qwen Image 2.1工作流合集，文生图图生图两用_2110837013854375937.json, 图片生成/文生图/Qwen Image 2.1工作流合集，文生图图生图多场景覆盖方案_2103981137117925377.json, 图片生成/文生图/Qwen Image 2.1工作流合集｜文生图图生图多场景全家桶_2110683569914998785.json, 图片生成/文生图/怪獸出品Qwen Image 2.1工作流合集｜文生图图生图双模式打包_2103663285953458177.json, 图片生成/文生图/怪獸整理Qwen Image 2.1合集｜文生图换装修图全收录_2103070200995340289.json]
+members: [图片生成/图生图/Zen Image Edit写实图像编辑｜图生图修图 其它图片处理一步到位_2104064412368850945.json, 图片生成/图生图/Zen Image Edit图像编辑｜图生图写实修图 其它图片处理全搞定_2104053107750686722.json, 图片生成/图生图/aigc-image-2.5图生图九图模式｜太平风图片批量处理_2106956375321567233.json, 图片生成/图生图/image 2.5图生图_2101659679536537601.json, 图片生成/图生图/image 2.5图生图工作流｜老图翻新重绘｜画质细节双重增强_2101867652611403778.json, 图片生成/图生图/image qwen image 2 1 character sheet with clothes_2108666622264303617.json, 图片生成/图生图/image qwen image 2 1 character sheet1 角色设定图生成_2108668112957698049.json, 图片生成/图生图/image2.5全能编辑器｜图生图修图改图一气呵成｜细节重绘不伤原图_2099110738114736130.json, 图片生成/图生图/qwen2.1漫剧角色三视图，图生图多角度设定一键出_2112290266672619522.json, 图片生成/图生图/qwen2.1漫剧角色三视图｜上传图像即出角色资产三视图｜漫剧创作必备_2112106203827490817.json, 图片生成/图生图/三视图+多表情+多视角Qwen Image 2.1｜角色一致性设计全角度_2114274271144005633.json, 图片生成/图生图/三视图多表情多视角Qwen 2.1｜角色一致性设计专用流_2114040279023046658.json, 图片生成/图生图/三视图多表情多视角Qwen Image 2.1｜角色多角度设计_2114047616643321857.json, 图片生成/图生图/三视图多表情多视角Qwen Image 2.1｜角色设计一致性_2114015336122109953.json, 图片生成/图生图/三视图多表情多视角Qwen工作流｜角色一致性图生图_2114051420059160577.json, 图片生成/图生图/三视图多表情多视角生成 Qwen Image 2.1角色工具_2113680994153881601.json, 图片生成/图生图/三视图多表情多视角生成 Qwen Image 2.1角色工具_2114061571478605826.json, 图片生成/图生图/美少女写实图生图 Qwen Image2.1参考图高质量重绘_2104285634960646145.json, 图片生成/图生图/角色三视图Qwen Image 2.1工作流，图生图角色设计处理工具_2107934196995018753.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_42
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1单图编辑流｜局部修改想改哪里改哪里_2108081920897806338.json、图片生成/图生图/Qwen Image 2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2106859828982407170.json、图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2104763014581940225.json、图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2108523054933561346.json、图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜想修哪里修哪里_2107745036996800513.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/Zen Image Edit写实图像编辑｜图生图修图 其它图片处理一步到位_2104064412368850945.json、图片生成/图生图/Zen Image Edit图像编辑｜图生图写实修图 其它图片处理全搞定_2104053107750686722.json、图片生成/图生图/aigc-image-2.5图生图九图模式｜太平风图片批量处理_2106956375321567233.json、图片生成/图生图/image 2.5图生图_2101659679536537601.json、图片生成/图生图/image 2.5图生图工作流｜老图翻新重绘｜画质细节双重增强_2101867652611403778.json…）
 
 - **类型**：Text To Image
 - **样本数**：19
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -30,9 +30,7 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -40,45 +38,21 @@ source: knowledge_consolidation
 
 **可变部分**（部分 workflow 才有）：
 - `孤海注释` —— 18/19 个有
-- `Anything Everywhere3` —— 16/19 个有
-- `ComfySwitchNode` —— 16/19 个有
-- `QwenImage21Cache` —— 16/19 个有
-- `CR Prompt Text` —— 15/19 个有
-- `TextGenerateLTX2Prompt` —— 13/19 个有
-- `GetNode` —— 12/19 个有
-- `SetNode` —— 12/19 个有
-- `BatchImagesNode` —— 11/19 个有
-- `ShowText|pysssss` —— 11/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/19 个有
-- `CR Text Concatenate` —— 9/19 个有
-- `PreviewAny` —— 8/19 个有
-- `CR Text` —— 6/19 个有
-- `AIO_Preprocessor` —— 5/19 个有
-- `FastGroupsBypassSwitch` —— 5/19 个有
-- `Image Comparer (rgthree)` —— 5/19 个有
-- `ImageBlend` —— 5/19 个有
-- `PreviewImage` —— 5/19 个有
-- `Seed (rgthree)` —— 5/19 个有
-- `TextGenerate` —— 5/19 个有
-- `easy showAnything` —— 5/19 个有
-- `DWPreprocessor` —— 4/19 个有
-- `DepthAnythingPreprocessor` —— 4/19 个有
-- `Qwen3VL_Advanced` —— 4/19 个有
-- `ResizeLongestToNode` —— 4/19 个有
-- `PrimitiveStringMultiline` —— 3/19 个有
-- `LoraLoaderBypassModelOnly` —— 2/19 个有
-- `easy sleep` —— 2/19 个有
-- `BlockifyMask` —— 1/19 个有
-- `CompressImages` —— 1/19 个有
-- `DepthAnythingV2Preprocessor` —— 1/19 个有
-- `DrawMaskOnImage` —— 1/19 个有
-- `ImageResizeKJ` —— 1/19 个有
+- `ResolutionSelector` —— 14/19 个有
+- `TextEncodeQwenImage21` —— 13/19 个有
+- `ComfySwitchNode` —— 10/19 个有
+- `QwenImage21Cache` —— 9/19 个有
+- `ImageStitch` —— 8/19 个有
+- `PrimitiveFloat` —— 7/19 个有
+- `CR Prompt Text` —— 5/19 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/19 个有
+- `Image Comparer (rgthree)` —— 2/19 个有
+- `SaveImageAdvanced` —— 2/19 个有
+- `ZenImageEditCheckpointLoader` —— 2/19 个有
+- `ZenImageEditEncodeAdvanced` —— 2/19 个有
+- `easy cleanGpuUsed` —— 2/19 个有
 - `ImageScaleToTotalPixels` —— 1/19 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/19 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/19 个有
-- `LayerUtility: ImageBlend` —— 1/19 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/19 个有
+- `Text` —— 1/19 个有
 
 ## 典型参数
 
@@ -96,7 +70,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 23/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -107,4 +81,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，19 个样本，一致性 100%
 - 调度器 最常用 beta，19 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 高发问题（23/19 个样本）：Steps较低可能导致细节不足
+- 高发问题（20/19 个样本）：Steps较低可能导致细节不足

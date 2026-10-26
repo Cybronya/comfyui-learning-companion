@@ -1,74 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_unet_30
 type: Unknown Workflow
-frequency: 22
+frequency: 21
 level: moderate
-coverage: 0.742864
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PreviewAny, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.922
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/MOSS Image布局控制图像设计Sft+base_2112216902151008257.json, 图片生成/图生图/MOSS sft Comfyui官方工作流_2112732679153209345.json, 图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2044590595057917954.json, 图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2046103550576562177.json, 图片生成/文生图/FLUX 3 Image Klein 文生图_2111461052599857153.json, 图片生成/文生图/HS-image_ernie_image_2044628228756742146.json, 图片生成/文生图/MOSS SFT 提示增强标准文生图_2112193931260813313.json, 图片生成/文生图/Moss 文生图_2111394608352681986.json, 图片生成/文生图/Moss-image Base Fixed文生图_2112185356295688193.json, 图片生成/文生图/Moss-image Base文生图_2112066738195091457.json, 图片生成/文生图/Moss-image Base文生图_2112122177809108994.json, 图片生成/文生图/Moss-image Base文生图_2112140955116728321.json, 图片生成/文生图/Moss-image Sft Fixed文生图_2112185347613487105.json, 图片生成/文生图/Moss-image Sft文生图_2112060921463001089.json, 图片生成/文生图/Moss-image(文生图）_2111701557262766082.json, 图片生成/文生图/Moss-image+Base+Fixed文生图_2112225720482226178.json, 图片生成/文生图/Moss-image+Base文生图_2112079816290816001.json, 图片生成/文生图/Moss-image+Sft+Fixed文生图_2112225707626680321.json, 图片生成/文生图/Moss-image+Sft文生图_2112079796443369473.json, 图片生成/文生图/Moss_Image_sft图像生产工作流_2112494670994567169.json, 图片生成/文生图/Qwen3.5反推提示词+ernie_image_turbo_2046120898310180865.json, 图片生成/文生图/moss_image图像生成_2112202038108049409.json]
+members: [图片生成/图生图/F2K-9B一键换头、换脸_2019369641709150209.json, 图片生成/图生图/FLUX2 Klein 双图编辑_2014610246840360961.json, 图片生成/图生图/FLUX2Klein 单图编辑_2026497012299993090.json, 图片生成/图生图/FLUX新王炸 Klein 双图编辑版_2012806080375562241.json, 图片生成/图生图/FLUX新王炸 Klein 图像编辑版 急速10秒出图_2048574540699148289.json, 图片生成/图生图/FLUX新王炸 Klein 图像编辑版 急速10秒出图_2048599240196235266.json, 图片生成/图生图/FLUX新王炸 Klein 图像编辑版_2016046164730187778.json, 图片生成/图生图/Flux 2 klein 9b 换头工作流_2013818759424778241.json, 图片生成/图生图/Flux 2 klein 9b 换头工作流_2015981757341900802.json, 图片生成/图生图/Flux2 Klein 双重增强现实_2067152624360706049.json, 图片生成/图生图/Flux2 Klein 增强现实LoRA_2020393021082181633.json, 图片生成/图生图/Flux2 Klein 增强现实LoRA_2033162072971812866.json, 图片生成/图生图/Flux2 Klein 增强现实（超还原cosplay)_2026115898070798337.json, 图片生成/图生图/Flux2 Klein9B 图像编辑工作流 加强了一致性 林耀3.6_2029755418074947585.json, 图片生成/图生图/Flux2-Klein扩图工作流_2052313109414592514.json, 图片生成/图生图/Flux2-Klein扩图工作流_2085318245518766082.json, 图片生成/图生图/Flux2-Klein照片扩图_2105520911993626625.json, 图片生成/图生图/Flux2-klein 单图编辑之胸围调节器_2021575947543121921.json, 图片生成/图生图/Flux2_Klein_9B高清放大Lora方法_2027577843588276226.json, 图片生成/图生图/klein-9b面部一致性增强与东方审美lora_2035090544275234817.json, 图片生成/图生图/klein克莱因转赛璐珞_2018983559482052610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_30
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/MOSS Image布局控制图像设计Sft+base_2112216902151008257.json、图片生成/图生图/MOSS sft Comfyui官方工作流_2112732679153209345.json、图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2044590595057917954.json、图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2046103550576562177.json、图片生成/文生图/FLUX 3 Image Klein 文生图_2111461052599857153.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/F2K-9B一键换头、换脸_2019369641709150209.json、图片生成/图生图/FLUX2 Klein 双图编辑_2014610246840360961.json、图片生成/图生图/FLUX2Klein 单图编辑_2026497012299993090.json、图片生成/图生图/FLUX新王炸 Klein 双图编辑版_2012806080375562241.json、图片生成/图生图/FLUX新王炸 Klein 图像编辑版 急速10秒出图_2048574540699148289.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
+全部 21 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSampler`
-- `PreviewAny`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 21/22 个有
-- `TextGenerate` —— 21/22 个有
-- `ComfySwitchNode` —— 20/22 个有
-- `PrimitiveBoolean` —— 19/22 个有
-- `ResolutionSelector` —— 18/22 个有
-- `SkipLayerGuidanceDiTSimple` —— 7/22 个有
-- `StringReplace` —— 4/22 个有
-- `CreateBoundingBoxes` —— 2/22 个有
-- `LoadImage` —— 2/22 个有
-- `MOSSImageLayoutPrompt` —— 2/22 个有
-- `INTConstant` —— 1/22 个有
-- `llama_cpp_instruct_adv` —— 1/22 个有
-- `llama_cpp_model_loader` —— 1/22 个有
-- `llama_cpp_parameters` —— 1/22 个有
+- `PreviewImage` —— 19/21 个有
+- `ConditioningZeroOut` —— 18/21 个有
+- `EmptyFlux2LatentImage` —— 18/21 个有
+- `ImageScaleToTotalPixels` —— 16/21 个有
+- `Image Comparer (rgthree)` —— 14/21 个有
+- `LayerUtility: ImageReel` —— 14/21 个有
+- `LayerUtility: ImageReelComposit` —— 14/21 个有
+- `CR Text` —— 13/21 个有
+- `LoraLoaderModelOnly` —— 11/21 个有
+- `ImagePadForOutpaint` —— 4/21 个有
+- `easy imageScaleDownToSize` —— 4/21 个有
+- `ImageConcanate` —— 3/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/21 个有
+- `Anything Everywhere3` —— 1/21 个有
+- `BetterFilmGrain` —— 1/21 个有
+- `ImageAndMaskPreview` —— 1/21 个有
+- `ImageApplyLUT+` —— 1/21 个有
+- `ImageSharpen` —— 1/21 个有
+- `LayerMask: HumanPartsUltra` —— 1/21 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/21 个有
+- `easy seed` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 8 - 50 | 22 | 61% |
-| Prompt 约束强度(CFG) | 3 | 1 - 4 | 22 | 74% |
-| 采样算法 | er_sde | - | 22 | 73% |
-| 调度器 | simple | - | 22 | 95% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 50，22 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，22 个样本
-- 采样算法 最常用 er_sde，22 个样本，一致性 73%
-- 调度器 最常用 simple，22 个样本，一致性 95%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

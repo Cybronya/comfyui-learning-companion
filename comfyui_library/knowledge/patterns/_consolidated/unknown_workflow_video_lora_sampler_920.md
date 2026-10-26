@@ -3,57 +3,55 @@ name: unknown_workflow_video_lora_sampler_920
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.976
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, GetVideoComponents, ImageScaleToMaxDimension, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadVideo, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SaveVideo, VAEEncodeTiled, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
+coverage: 0.5065
+common_nodes: [ComfyMathExpression, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, PreviewAny, SetNode, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.3 循环采样放大优化_2041055276513628161.json, 视频生成/文生视频/LTX-2视频放大_2010029707667968001.json]
+members: [视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json, 视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_920
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 循环采样放大优化_2041055276513628161.json、视频生成/文生视频/LTX-2视频放大_2010029707667968001.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json、视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `CreateVideo`
-- `GetVideoComponents`
-- `ImageScaleToMaxDimension`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVConditioning`
-- `LTXVLoopingSampler`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LoadVideo`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RandomNoise`
-- `SaveVideo`
-- `VAEEncodeTiled`
-- `VHS_LoadVideo`
+- `ComfyMathExpression`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `LongCatAvatarWhisperEmbeds`
+- `PreviewAny`
+- `SetNode`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `DisTorchPurgeVRAMV2` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `LTX2_NAG` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
-- `VAELoaderKJ` —— 1/2 个有
-- `VRAMReserver` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,59 +3,56 @@ name: unknown_workflow_sampler_clip_unet_468
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7835
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyImage, Flux2Scheduler, GetImageSizeAndCount, GetNode, KSamplerSelect, Qwen3VL_Chat, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, StringFunction|pysssss, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+coverage: 0.972
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/生图-文生图(角色白底图)-FLUX2-Klein_2013161608507301890.json, 图片生成/文生图/生图-文生图自动-FLUX2-Klein_2012451327334420481.json]
+members: [图片生成/文生图/Z-Image二次采样反推洗图_2073307813459353602.json, 图片生成/文生图/Z-Image哈迪斯风格反推重绘_2073310291110223874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_468
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/生图-文生图(角色白底图)-FLUX2-Klein_2013161608507301890.json、图片生成/文生图/生图-文生图自动-FLUX2-Klein_2012451327334420481.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image二次采样反推洗图_2073307813459353602.json、图片生成/文生图/Z-Image哈迪斯风格反推重绘_2073310291110223874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `EmptyImage`
-- `Flux2Scheduler`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `KSamplerSelect`
-- `Qwen3VL_Chat`
-- `RH_LLMAPI_NODE`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSampler`
+- `LoadImage`
 - `SaveImage`
-- `SetNode`
-- `StringFunction|pysssss`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageRemBg` —— 1/2 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `KSamplerAdvanced` —— 1/2 个有
+- `LatentUpscaleBy` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelSamplingAuraFlow` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 67% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -63,4 +60,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本
+- 调度器 最常用 euler，2 个样本，一致性 50%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

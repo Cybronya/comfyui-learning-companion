@@ -3,47 +3,36 @@ name: unknown_workflow_generic_77
 type: Unknown Workflow
 frequency: 17
 level: moderate
-coverage: 0.902529
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.789
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json, 数字人/数字人/TTS2声音克隆+情感参考_2030147654373609474.json, 数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json, 音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json, 音频生成/音频生成/Index-TTS 声音克隆+最强情感参考_2027294716693323778.json, 音频生成/音频生成/IndexTTS-2单人音色克隆_情感控制_2067098061402365954.json, 音频生成/音频生成/IndexTTS-2单人音色克隆（情感控制）整合版_2105324460952875009.json, 音频生成/音频生成/IndexTTS-2多人音色克隆（情感控制）_2067455760203862017.json, 音频生成/音频生成/IndexTTS2-有声书制作 多人声音克隆+情感参考_1998673212043055105.json, 音频生成/音频生成/indexTTS2- 单多人语音模仿 有声书制作_2036738111874535425.json, 音频生成/音频生成/indexTTS2-单人多人声音克隆_2050487352761565185.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_1980901258972282882.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2014197303279624194.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2046163060200574977.json, 音频生成/音频生成/赵老师傅的声音克隆_2065098685150752770.json, 音频生成/音频生成/超好用🔥TTS2-有声书制作-多人语音模仿-克隆_2047208745079410689.json, 音频生成/音频生成/（漫剧配音）全能语音大合集_2049541110682361857.json]
+members: [图片生成/图生图/一件生成电商主图_2039875368676495362.json, 图片生成/图生图/一键帮你搭配妆容和口红色号（全能图像编辑）_2015319832534720514.json, 图片生成/图生图/一键打造专属于你的发型设计&九宫格+单图（全能图像编辑）_2015443394918617089.json, 图片生成/图生图/一键打造九宫格3D拼贴时尚海报（全能图像编辑）_2014984481819598849.json, 图片生成/图生图/一键打造极简穿搭的职场形象照（全能图像编辑）_2014956448563859458.json, 图片生成/图生图/一键换妆造，直接省下好几千！（全能图像编辑）_2015280020230512642.json, 图片生成/图生图/一键搭配妆容、发型设计，服装搭配（全能图像编辑）_2015338130550820866.json, 图片生成/图生图/两张图转成效果图-全能图片V1_1995321302137417729.json, 图片生成/图生图/产品生主体_2000196703703662593.json, 图片生成/图生图/全能图片V1 pro：具备“深度推理”与“视觉常识”的超级创作引擎_2002897870015590401.json, 图片生成/图生图/全能图片V1 pro：绘画创作过程，一键逆向，学习大师级的创作流程！_1993513529026297857.json, 图片生成/图生图/全能图片V1Pro+产品精修+高清放大_1998564631998291969.json, 图片生成/图生图/全能图片V1Pro+人物九宫格_1998957118101315586.json, 图片生成/图生图/全能图片V1Pro香蕉pro最佳全能高清修复放大2K4K_1992127460982542338.json, 图片生成/图生图/单图生成效果图 全能图片V1_1998723293328891905.json, 图片生成/图生图/🍌V2全能图片处理(自用2)_2049301598630846465.json, 图片生成/文生图/全能图片V1 Pro 简易编辑_2005587777934815234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_77
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json、数字人/数字人/TTS2声音克隆+情感参考_2030147654373609474.json、数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json、音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json、音频生成/音频生成/Index-TTS 声音克隆+最强情感参考_2027294716693323778.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/一件生成电商主图_2039875368676495362.json、图片生成/图生图/一键帮你搭配妆容和口红色号（全能图像编辑）_2015319832534720514.json、图片生成/图生图/一键打造专属于你的发型设计&九宫格+单图（全能图像编辑）_2015443394918617089.json、图片生成/图生图/一键打造九宫格3D拼贴时尚海报（全能图像编辑）_2014984481819598849.json、图片生成/图生图/一键打造极简穿搭的职场形象照（全能图像编辑）_2014956448563859458.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionVector` —— 16/17 个有
-- `PreviewAudio` —— 15/17 个有
-- `easy indexTTSEmotionMerge` —— 14/17 个有
-- `easy indexTTSEmotionAudio` —— 12/17 个有
-- `easy indexTTSAudioMerge` —— 10/17 个有
-- `NovelTextStructureNode` —— 8/17 个有
-- `PreviewAny` —— 7/17 个有
-- `easy showAnything` —— 7/17 个有
-- `Fast Groups Muter (rgthree)` —— 5/17 个有
-- `CR Prompt Text` —— 3/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
-- `Qwen3TTSCustomVoice` —— 1/17 个有
-- `Qwen3TTSModelLoader` —— 1/17 个有
-- `Qwen3TTSVoiceDesign` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
+- `Text` —— 16/17 个有
+- `Image Comparer (rgthree)` —— 12/17 个有
+- `PreviewImage` —— 6/17 个有
+- `TextConcat` —— 1/17 个有
+- `easy promptConcat` —— 1/17 个有
 
 ## 典型参数
 

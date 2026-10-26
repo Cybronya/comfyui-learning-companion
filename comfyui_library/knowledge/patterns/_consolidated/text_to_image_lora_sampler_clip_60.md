@@ -1,79 +1,85 @@
 ---
 name: text_to_image_lora_sampler_clip_60
 type: Text To Image
-frequency: 17
+frequency: 16
 level: strong
-coverage: 0.901941
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.882687
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ProcessString, SaveImage, Seed (rgthree), Text Concatenate, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/影视小说名及角色微观画卷Qwen-image名人节日省市支持国家微观画卷九宫格_2087469479310741505.json, 图片生成/文生图/手鞠文生图工作流，动漫角色博人传风格文本到图像生成_2107189994585677825.json, 图片生成/文生图/火影人气角色手鞠文生图｜动漫角色一键生成立绘_2107011468645457922.json, 图片生成/文生图/火影人气角色雏田文生图｜一键生成动漫美少女立绘_2106935012426862593.json, 图片生成/文生图/精致漫画风文生图工作流｜动漫角色封面插图｜叙事感拉满出片_2101869067136233474.json, 图片生成/文生图/纲手文生图工作流，动漫角色博人传风格文本到图像生成_2106463739347300354.json, 图片生成/文生图/纲手文生图工作流，动漫角色文本到图像生成方案_2106460519686303745.json, 图片生成/文生图/纲手文生图工作流｜火影角色写真一键生成还原度高_2106272994342559745.json, 图片生成/文生图/纲手角色文生图模型｜二次元忍界女神写真轻松出图_2106276130637574145.json, 图片生成/文生图/视频跟练｜文生图打造跟练画面素材，健身舞蹈教学好帮手_2107363684484993025.json, 图片生成/文生图/雏田文生图工作流，动漫角色博人传风格文本到图像生成_2106465199158030337.json, 图片生成/文生图/雏田文生图工作流，动漫角色博人传风格文本到图像生成_2107205250850582529.json, 图片生成/文生图/雏田文生图模型｜火影白眼公主写真还原度惊艳_2106277753761914881.json, 数字人/数字人/云汐画梦二次元文生图｜动漫数字人形象创意生成_2097514674303619073.json, 数字人/数字人/动漫数字人绘画工作流｜角色形象文生图创意生成_2097516099490373633.json, 数字人/数字人/烬羽二次元风格绘画工作流｜数字人形象文生图生成_2097513169005662210.json, 视频生成/文生视频/幻绘星澜数字人生成｜文生视频高质量艺术创作_2095256969539047425.json]
+members: [图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json, 图片生成/图生图/快速洗图版v22_1999381371757920257.json, 图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json, 图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json, 图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json, 图片生成/图生图/🏇超快速美女孵蛋器超然洗图版V1🏇_1995386236758110209.json, 图片生成/文生图/Red Z-Image Vs Z-image Turbo对比_1998113383687839745.json, 图片生成/文生图/Z-Image-Turbo  D-OPSD美少女文生图_2058718122760302593.json, 图片生成/文生图/Z-Image-Turbo D-OPSD美少女文生图V1_2058219333456842754.json, 图片生成/文生图/Z-image 超快速美女孵蛋器超然升级版V1_1995339133893718018.json, 图片生成/文生图/redimage量贩美女图（全自动，批量，极速）_1998274589451018242.json, 图片生成/文生图/（量贩版）Z-image Art自动扩写文生图V1_2017609963115384833.json, 图片生成/文生图/（量贩装）Red-Z-Image去网红感自动提示词真实文生图V1(满血版)_1998237684017586177.json, 图片生成/文生图/（黑丝量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1994961305289285634.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版V1🏇_1995296859344318466.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版【本地版】🏇_1995302605654044674.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_60
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/影视小说名及角色微观画卷Qwen-image名人节日省市支持国家微观画卷九宫格_2087469479310741505.json、图片生成/文生图/手鞠文生图工作流，动漫角色博人传风格文本到图像生成_2107189994585677825.json、图片生成/文生图/火影人气角色手鞠文生图｜动漫角色一键生成立绘_2107011468645457922.json、图片生成/文生图/火影人气角色雏田文生图｜一键生成动漫美少女立绘_2106935012426862593.json、图片生成/文生图/精致漫画风文生图工作流｜动漫角色封面插图｜叙事感拉满出片_2101869067136233474.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json、图片生成/图生图/快速洗图版v22_1999381371757920257.json、图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json、图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json、图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json…）
 
 - **类型**：Text To Image
-- **样本数**：17
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Prompt Text`
+- `CR Text Replace`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
+- `JDCN_StringToList`
 - `KSampler`
+- `LayerUtility: PurgeVRAM`
 - `LoraLoaderModelOnly`
+- `ProcessString`
 - `SaveImage`
-- `UNETLoader`
+- `Seed (rgthree)`
+- `Text Concatenate`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 14/17 个有
-- `PrimitiveStringMultiline` —— 1/17 个有
-- `RHHiddenNodes` —— 1/17 个有
-- `WujiEditor` —— 1/17 个有
-- `WujiSampler` —— 1/17 个有
-- `easy showAnything` —— 1/17 个有
+- `CR Text` —— 15/16 个有
+- `RH_LLMAPI_Pro_Node` —— 14/16 个有
+- `UNETLoader` —— 14/16 个有
+- `easy showAnything` —— 11/16 个有
+- `ImpactInt` —— 6/16 个有
+- `LoadImage` —— 4/16 个有
+- `Note Plus (mtb)` —— 4/16 个有
+- `CheckpointLoaderSimple` —— 3/16 个有
+- `easy anythingIndexSwitch` —— 3/16 个有
+- `Qwen3VL_Chat` —— 2/16 个有
+- `AddLabel` —— 1/16 个有
+- `ImageConcatMulti` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
+- `图像缩放V2_孤海` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 17 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 17 | 100% |
-| 采样算法 | er_sde | - | 17 | 100% |
-| 调度器 | beta | - | 17 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| 宽度 | 80 | 80 - 80 | 17 | 100% |
-| 高度 | 80 | 80 - 80 | 17 | 100% |
-| LoRA 模型强度 | 0.6 | 0.1 - 0.7 | 14 | 57% |
-| LoRA 文本强度 | 0.6 | 0.1 - 0.7 | 14 | 61% |
+| 宽度 | 1080 | 1080 - 1920 | 16 | 82% |
+| 高度 | 1920 | 1080 - 1920 | 16 | 89% |
+| 采样步数 | 10 | 8 - 10 | 16 | 95% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 56% |
+| 调度器 | simple | - | 16 | 62% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，17 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，17 个样本，一致性 100%
-- 调度器 最常用 beta，17 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.1 - 0.7，14 个样本
-- LoRA 文本强度 中位数 0.6，观测区间 0.1 - 0.7，14 个样本
-- 高发问题（17/17 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 1080 - 1920，16 个样本，取值集中（一致性 82%）
+- 高度 中位数 1920，观测区间 1080 - 1920，16 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 10，观测区间 8 - 10，16 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 56%
+- 调度器 最常用 simple，16 个样本，一致性 62%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）

@@ -1,79 +1,119 @@
 ---
 name: unknown_workflow_lora_sampler_unet_160
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.75225
-common_nodes: [CLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.5984
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyImage, GetImageSizeAndCount, GetNode, H3SigmaRefiner, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, PrimitiveFloat, ResolutionSelector, SaveVideo, SelfLiftAvatarH3Sampler, SetNode, StringFunction|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy anythingIndexSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: []
 missing: []
-members: [图片生成/图生图/FireRed-Image-EDIT-过人脸_2046465672477155329.json, 图片生成/图生图/FireRed-Image-Edit-角色视图排版_2046480664115027969.json, 图片生成/图生图/即梦真人画风图片处理_2047285042627485698.json, 图片生成/图生图/第一步：智能服装提取 (Outfit Transfer)_1990304299924246530.json]
+members: [视频生成/图生视频/视频-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599809924231170.json, 视频生成/图生视频/视频-参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599796091416577.json, 视频生成/图生视频/视频-图生视频(+参考上一镜头)-Minnimax-H3-官方_2100602414704447490.json, 视频生成/图生视频/视频-音频歌曲MV-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599836948127746.json, 视频生成/图生视频/视频-音频歌曲MV-任意数量参考生视频-Minnimax-H3-官方_2093231781377040385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_160
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-EDIT-过人脸_2046465672477155329.json、图片生成/图生图/FireRed-Image-Edit-角色视图排版_2046480664115027969.json、图片生成/图生图/即梦真人画风图片处理_2047285042627485698.json、图片生成/图生图/第一步：智能服装提取 (Outfit Transfer)_1990304299924246530.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599809924231170.json、视频生成/图生视频/视频-参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599796091416577.json、视频生成/图生视频/视频-图生视频(+参考上一镜头)-Minnimax-H3-官方_2100602414704447490.json、视频生成/图生视频/视频-音频歌曲MV-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599836948127746.json、视频生成/图生视频/视频-音频歌曲MV-任意数量参考生视频-Minnimax-H3-官方_2093231781377040385.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：75%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `KSampler`
-- `LoadImage`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `H3SigmaRefiner`
+- `JWFloatToString`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `easy anythingIndexSwitch`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 3/4 个有
-- `CustomAddLabel` —— 3/4 个有
-- `GetImageSize` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 3/4 个有
-- `JjkText` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `SeedVR2` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `ConditioningZeroOut` —— 1/4 个有
-- `Int` —— 1/4 个有
+- `FL_ImageBatchToGrid` —— 4/5 个有
+- `GetVideoComponents` —— 4/5 个有
+- `ImageBatchMulti` —— 4/5 个有
+- `ImageFromBatch+` —— 4/5 个有
+- `LoadVideo` —— 4/5 个有
+- `PreviewAny` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `RunningHub OmniShotCut Detector` —— 4/5 个有
+- `RunningHub OmniShotCut Loader` —— 4/5 个有
+- `RunningHub OmniShotCut SaveJson` —— 4/5 个有
+- `RunningHub OmniShotCut ShotCount` —— 4/5 个有
+- `RunningHub OmniShotCut VideoSplitter` —— 4/5 个有
+- `Text` —— 4/5 个有
+- `easy batchAnything` —— 4/5 个有
+- `easy forLoopEnd` —— 4/5 个有
+- `easy forLoopStart` —— 4/5 个有
+- `CM_IntUnaryOperation` —— 3/5 个有
+- `ImageLoader` —— 3/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `ImpactFloat` —— 3/5 个有
+- `SimpleMath+` —— 3/5 个有
+- `easy anythingInversedSwitch` —— 3/5 个有
+- `LTXVAudioVAEEncode` —— 2/5 个有
+- `LTXVConcatAVLatent` —— 2/5 个有
+- `LTXVSeparateAVLatent` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `PreviewAudio` —— 2/5 个有
+- `Qwen3ASRLoader_DFT` —— 2/5 个有
+- `Qwen3ASRTranscribe_DFT` —— 2/5 个有
+- `Seed Everywhere` —— 2/5 个有
+- `SetLatentNoiseMask` —— 2/5 个有
+- `SolidMask` —— 2/5 个有
+- `SoundFlow_GetLength` —— 2/5 个有
+- `TrimAudioDuration` —— 2/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/5 个有
+- `Int` —— 1/5 个有
+- `Make Image Batch` —— 1/5 个有
+- `MiniMaxH3ImageToVideo` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `Text Contains` —— 1/5 个有
+- `Text Input Switch` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1.5 | 1 - 1.5 | 4 | 84% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1500 | 1024 - 1920 | 4 | 71% |
-| 高度 | 1080 | 1024 - 1920 | 4 | 71% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 1.5，4 个样本，取值集中（一致性 84%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1500，观测区间 1024 - 1920，4 个样本
-- 高度 中位数 1080，观测区间 1024 - 1920，4 个样本
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

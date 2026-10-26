@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_38
 type: Unknown Workflow
-frequency: 25
+frequency: 24
 level: moderate
-coverage: 0.83356
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.919708
+common_nodes: [RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance2.0-全能参考+生真人视频_2066710531104395266.json, 图片生成/文生图/4.1懂车帝分镜头1_2039309046368444418.json, 图片生成/文生图/万能编辑 换装换脸单图_多图编辑 电商产品模特展示 服饰迁移 展示多图融合  全能图片多图融 合_2061631872727339009.json, 视频生成/图生视频/SD2.0fast_2039546707423272961.json, 视频生成/图生视频/Seedance 2.0 fast全能参考生视频-真人参考_2046129845834354689.json, 视频生成/图生视频/Seedance2.0  生长视频_2080856590562979842.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2069253062396571649.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频 人物替换_2041416684765974530.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频（RH版）_2054421039081369601.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json, 视频生成/图生视频/Seedance2.0_Fast_API版-全能参考视频_2111086762943672321.json, 视频生成/图生视频/Wan2.7 万用视频工作流，带货视频洗，带货视频换脸，带货视频跳舞，绿幕人物和场景组合_2046638707599482882.json, 视频生成/图生视频/Wan2.7 视频换脸_2044689517751308290.json, 视频生成/图生视频/Wan2.7+换装换脸动作迁移 视频编辑_2082280794994864129.json, 视频生成/图生视频/Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_2061645895619407873.json, 视频生成/图生视频/seeddance2.0-Fast-多模态_2039340026965794817.json, 视频生成/图生视频/最强超能视频PRO 2.0-Fast极速版_全能参考 生视频_2037337961548746754.json, 视频生成/图生视频/真人替换-地表最强超能视频2.0-Fast_全能参考 生视频_2038496435926208514.json, 视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json, 视频生成/图生视频/（支持真人）地表最强超能视频2.0-Fast_全能参考 生视频_2037433035041280001.json, 视频生成/文生视频/HPSeedance2.0_2080565115467948033.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频_2040085661084028929.json, 视频生成/文生视频/Seedance2.0+Fast全能参考视频+全节点注释_2055561360163000321.json, 视频生成/文生视频/Seedance2.0-全能参考+生真人视频_2037830636290973698.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频生视频】工作流_2037776632408186881.json]
+members: [图片生成/图生图/Flux Kontext 明星简易换装_1936035777396772866.json, 图片生成/图生图/Flux Kontext 皮克斯3D卡通风格_1935283896755867650.json, 图片生成/图生图/Flux Kontext 简易风格转换｜吉卜力_1934427945874190337.json, 图片生成/图生图/Flux Kontext ｜明星同款撕拉片_1936026935900164097.json, 图片生成/图生图/Flux Kontext单图模式_1935238341434462209.json, 图片生成/图生图/Flux Kontext单图模式_1938426985372909570.json, 图片生成/图生图/Flux Kontext单图模式_1970160294544764930.json, 图片生成/图生图/Flux Kontext单图模式_1970163509063524353.json, 图片生成/图生图/Flux Kontext单图模式test_1970168242738241538.json, 图片生成/图生图/Flux Kontext老照片修复_1929918133505789954.json, 图片生成/图生图/Flux Kontext老照片修复_2018170370687246338.json, 图片生成/图生图/Flux.1 kontext 老照片修复_1932800388817195010.json, 图片生成/图生图/Haiilon_修字工作流_1949739628821700609.json, 图片生成/图生图/Kontext  图像编辑 - 服装更换_1935282264177836033.json, 图片生成/图生图/Kontext  图生图基础工作流_1934657765438889985.json, 图片生成/图生图/Kontext  服装更换yy_1936035021419614210.json, 图片生成/图生图/Kontext版本老照片修复，超高清还原度_1941356502609510402.json, 图片生成/图生图/OminiGEn2 一键简易换装_1936643590724685825.json, 图片生成/图生图/老照片修复上色精准融合flux kontext_1929456299971395585.json, 图片生成/图生图/超强修图改字一键完成_1931522596028743682.json, 图片生成/图生图/超强宫崎骏风格一键转绘_1931519950912204801.json, 图片生成/文生图/Flux+Kontext单图模式_1961644288889307138.json, 图片生成/文生图/Kontext   文生图基础工作流_1938513374336450561.json, 数字人/数字人/Flux Kontext单图模式_1945407787474276353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_38
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/图生图/Seedance2.0-全能参考+生真人视频_2066710531104395266.json、图片生成/文生图/4.1懂车帝分镜头1_2039309046368444418.json、图片生成/文生图/万能编辑 换装换脸单图_多图编辑 电商产品模特展示 服饰迁移 展示多图融合  全能图片多图融 合_2061631872727339009.json、视频生成/图生视频/SD2.0fast_2039546707423272961.json、视频生成/图生视频/Seedance 2.0 fast全能参考生视频-真人参考_2046129845834354689.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 明星简易换装_1936035777396772866.json、图片生成/图生图/Flux Kontext 皮克斯3D卡通风格_1935283896755867650.json、图片生成/图生图/Flux Kontext 简易风格转换｜吉卜力_1934427945874190337.json、图片生成/图生图/Flux Kontext ｜明星同款撕拉片_1936026935900164097.json、图片生成/图生图/Flux Kontext单图模式_1935238341434462209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 24 个 workflow 都包含：
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 22/25 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 19/25 个有
-- `RH_AlibabaWan27VideoEdit` —— 6/25 个有
-- `JjkText` —— 1/25 个有
+- `LoadImage` —— 23/24 个有
+- `RH_Translator` —— 18/24 个有
+- `easy showAnything` —— 6/24 个有
+- `Preview from image [Crystools]` —— 2/24 个有
 
 ## 典型参数
 

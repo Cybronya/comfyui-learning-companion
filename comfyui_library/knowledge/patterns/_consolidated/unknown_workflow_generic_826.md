@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_826
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.85
-common_nodes: [Load3D, SaveGLB]
+coverage: 1
+common_nodes: [GetVideoComponents, ImageFromBatch+, JWImageBatchCount, LoadImage, RH_Grok_Video3, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json, comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json, comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json]
+members: [视频生成/图生视频/Grok 3 图生视频(0.2元_次）_1999024701823406081.json, 视频生成/图生视频/Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json, 视频生成/图生视频/Grok Video3 图生视频(API版0.2元)_1998442283479498754.json, 视频生成/文生视频/Grok Video3 文生视频(API版0.2元)_1998465105186684929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_826
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json、comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json、comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Grok 3 图生视频(0.2元_次）_1999024701823406081.json、视频生成/图生视频/Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json、视频生成/图生视频/Grok Video3 图生视频(API版0.2元)_1998442283479498754.json、视频生成/文生视频/Grok Video3 文生视频(API版0.2元)_1998465105186684929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Load3D`
-- `SaveGLB`
-
-**可变部分**（部分 workflow 才有）：
-- `TencentModelTo3DUVNode` —— 2/3 个有
-- `TencentSmartTopologyNode` —— 2/3 个有
+全部 4 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageFromBatch+`
+- `JWImageBatchCount`
+- `LoadImage`
+- `RH_Grok_Video3`
+- `SaveImage`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -3,33 +3,31 @@ name: unknown_workflow_generic_1118
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.866667
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.833333
+common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/V2配音-API专用_1985683386402516993.json, 音频生成/音频生成/文生语音---音色克隆情绪克隆IndexTTS2_1967970134105161730.json, 音频生成/音频生成/文生语音--音色克隆情绪克隆IndexTTS2_1969377518765678593.json]
+members: [视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1118
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/V2配音-API专用_1985683386402516993.json、音频生成/音频生成/文生语音---音色克隆情绪克隆IndexTTS2_1967970134105161730.json、音频生成/音频生成/文生语音--音色克隆情绪克隆IndexTTS2_1969377518765678593.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+- `RH_RhartVideoGTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `KepStringLiteral` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

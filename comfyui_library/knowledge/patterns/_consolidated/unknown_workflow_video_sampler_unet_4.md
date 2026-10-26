@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_video_sampler_unet_4
 type: Unknown Workflow
-frequency: 34
+frequency: 33
 level: moderate
-coverage: 0.874882
+coverage: 0.875182
 common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json, 数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json, 视频生成/图生视频/(10eros-Max Ref2v加速)Minimax参考生视频V1_2090750346653167618.json, 视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087159355169918977.json, 视频生成/图生视频/(D+O)MiniMax H3高动态参考生视频V1_2093015390296305665.json, 视频生成/图生视频/(Dasiwa V1+SLA加速)Minimax参考生视频V1_2091348806297284610.json, 视频生成/图生视频/(Dasiwa V1+老版加速)Minimax参考生视频V1_2091360487035465729.json, 视频生成/图生视频/(Dasiwa v2+singularity)MiniMax H3双采参考生视频_2099475508353392642.json, 视频生成/图生视频/(Dasiwa v2+singularity-实验版)MiniMax H3双采参考生视频_2098944538827120642.json, 视频生成/图生视频/(Dasiwa v2-极速板)MiniMax H3双采参考生视频_2098937347936182274.json, 视频生成/图生视频/(Dasiwa+10Eros新版混合加速)MiniMax H3参考生视频_2095731331148894209.json, 视频生成/图生视频/(Dasiwa+Lightx2v 1.0 768P新)MiniMax H3参考生视频V1_2093206224304173058.json, 视频生成/图生视频/(Dasiwa-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092167836453138433.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094319326210912258.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094336188525146114.json, 视频生成/图生视频/(Dasiwa新版turbo)Minimax H3+双采参考生视频_2094320071555502081.json, 视频生成/图生视频/(Dasiwa新版turbo混合模式)Minimax H3+双采参考生视频_2094328299777515522.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速)MiniMax H3参考生视频_2095810700424859650.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速+Combat)MiniMax H3参考生视频_2095823591769202689.json, 视频生成/图生视频/(Lightx2v 新版768P 1.0 ref2va加速)MiniMax H3参考生视频_2095730955548971009.json, 视频生成/图生视频/(Ref-Face Swap换脸)MiniMax H3双采参考生视频_2100230235559120897.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2103008837287636994.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2104212842185580546.json, 视频生成/图生视频/(Vfx-Edit)MiniMax H3双采参考生视频_2103012226415284225.json, 视频生成/图生视频/(WallPaper)MiniMax H3双采参考生视频_2103039132627980290.json, 视频生成/图生视频/(风格参考)MiniMax H3双采参考生视频_2103022364463288322.json, 视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json, 视频生成/图生视频/MiniMax H3（自用）_2099416401143492609.json, 视频生成/图生视频/MiniMax_H3双采参考生视频V3_2098961081237594114.json, 视频生成/图生视频/MiniMax_H3双采参考生视频_2098902604083449857.json]
+members: [图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json, 数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json, 视频生成/图生视频/(10eros-Max Ref2v加速)Minimax参考生视频V1_2090750346653167618.json, 视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087159355169918977.json, 视频生成/图生视频/(D+O)MiniMax H3高动态参考生视频V1_2093015390296305665.json, 视频生成/图生视频/(Dasiwa V1+SLA加速)Minimax参考生视频V1_2091348806297284610.json, 视频生成/图生视频/(Dasiwa V1+老版加速)Minimax参考生视频V1_2091360487035465729.json, 视频生成/图生视频/(Dasiwa v2+singularity)MiniMax H3双采参考生视频_2099475508353392642.json, 视频生成/图生视频/(Dasiwa v2+singularity-实验版)MiniMax H3双采参考生视频_2098944538827120642.json, 视频生成/图生视频/(Dasiwa v2-极速板)MiniMax H3双采参考生视频_2098937347936182274.json, 视频生成/图生视频/(Dasiwa+10Eros新版混合加速)MiniMax H3参考生视频_2095731331148894209.json, 视频生成/图生视频/(Dasiwa+Lightx2v 1.0 768P新)MiniMax H3参考生视频V1_2093206224304173058.json, 视频生成/图生视频/(Dasiwa-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092167836453138433.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094319326210912258.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094336188525146114.json, 视频生成/图生视频/(Dasiwa新版turbo)Minimax H3+双采参考生视频_2094320071555502081.json, 视频生成/图生视频/(Dasiwa新版turbo混合模式)Minimax H3+双采参考生视频_2094328299777515522.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速)MiniMax H3参考生视频_2095810700424859650.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速+Combat)MiniMax H3参考生视频_2095823591769202689.json, 视频生成/图生视频/(Lightx2v 新版768P 1.0 ref2va加速)MiniMax H3参考生视频_2095730955548971009.json, 视频生成/图生视频/(Ref-Face Swap换脸)MiniMax H3双采参考生视频_2100230235559120897.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2103008837287636994.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2104212842185580546.json, 视频生成/图生视频/(Vfx-Edit)MiniMax H3双采参考生视频_2103012226415284225.json, 视频生成/图生视频/(WallPaper)MiniMax H3双采参考生视频_2103039132627980290.json, 视频生成/图生视频/(风格参考)MiniMax H3双采参考生视频_2103022364463288322.json, 视频生成/图生视频/MiniMax_H3双采参考生视频V3_2098961081237594114.json, 视频生成/图生视频/MiniMax_H3双采参考生视频_2098902604083449857.json, 视频生成/图生视频/电影质感 _ 文武双修 H3 多参双采高清V3_2099337469803192321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json、数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json、视频生成/图生视频/(10eros-Max Ref2v加速)Minimax参考生视频V1_2090750346653167618.json、视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json、数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json、视频生成/图生视频/(10eros-Max Ref2v加速)Minimax参考生视频V1_2090750346653167618.json、视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：34
+- **样本数**：33
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 34 个 workflow 都包含：
+全部 33 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
 - `ComfyMathExpression`
@@ -38,32 +38,38 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 33/34 个有
-- `LoraLoaderBypassModelOnly` —— 33/34 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 33/34 个有
-- `LoadImage` —— 32/34 个有
-- `ModelAttentionBackend` —— 27/34 个有
-- `SolAttnMiniMax` —— 27/34 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 24/34 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 24/34 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 24/34 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 24/34 个有
-- `LoraLoaderModelOnly` —— 18/34 个有
-- `ConcatTextOfUtils` —— 13/34 个有
-- `Float` —— 10/34 个有
-- `easy anythingIndexSwitch` —— 10/34 个有
-- `easy showAnything` —— 7/34 个有
-- `MiniMaxH3ActivationChunkT8Advanced` —— 6/34 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 6/34 个有
-- `RHLLMChatNode` —— 5/34 个有
-- `VHS_LoadVideo` —— 5/34 个有
-- `VHS_VideoInfo` —— 5/34 个有
-- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 3/34 个有
-- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 3/34 个有
-- `CreateVideo` —— 2/34 个有
-- `BatchImagesNode` —— 1/34 个有
-- `CR Text` —— 1/34 个有
-- `PromptBatchQueue` —— 1/34 个有
+- `CR Prompt Text` —— 32/33 个有
+- `LoraLoaderBypassModelOnly` —— 32/33 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 32/33 个有
+- `LoadImage` —— 31/33 个有
+- `ModelAttentionBackend` —— 26/33 个有
+- `SolAttnMiniMax` —— 26/33 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 23/33 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 23/33 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 23/33 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 23/33 个有
+- `LoraLoaderModelOnly` —— 17/33 个有
+- `ConcatTextOfUtils` —— 12/33 个有
+- `Float` —— 10/33 个有
+- `easy anythingIndexSwitch` —— 10/33 个有
+- `easy showAnything` —— 8/33 个有
+- `MiniMaxH3ActivationChunkT8Advanced` —— 6/33 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 6/33 个有
+- `RHLLMChatNode` —— 5/33 个有
+- `VHS_LoadVideo` —— 5/33 个有
+- `VHS_VideoInfo` —— 5/33 个有
+- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 3/33 个有
+- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 3/33 个有
+- `CreateVideo` —— 2/33 个有
+- `BatchImagesNode` —— 1/33 个有
+- `CR Text` —— 1/33 个有
+- `GetNode` —— 1/33 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/33 个有
+- `PreviewAny` —— 1/33 个有
+- `PromptBatchQueue` —— 1/33 个有
+- `RH_Translator` —— 1/33 个有
+- `SetNode` —— 1/33 个有
+- `easy saveText` —— 1/33 个有
 
 ## 典型参数
 

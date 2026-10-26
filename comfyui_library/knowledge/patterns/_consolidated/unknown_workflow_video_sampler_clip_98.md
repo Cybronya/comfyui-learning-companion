@@ -1,85 +1,81 @@
 ---
 name: unknown_workflow_video_sampler_clip_98
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.581
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, Fast Groups Bypasser (rgthree), ImageLoader, Int, JWStringConcat, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.618429
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [图片生成/文生图/Work-Fisher-全自动Qwen3VL+文生图+图生视频_1983065711180427265.json, 视频生成/图生视频/Work-Fisher-全自动Qwen3VL+文生图+图生视频+_2006367145126531073.json, 视频生成/图生视频/Work-Fisher-全自动Qwen3VL+文生图+图生视频_2056017029798350850.json, 视频生成/图生视频/gen全能视频Si-全自动qwen3-vl图片反推提示词 【图生视频】_1983541525290360833.json, 视频生成/图生视频/全自动Qwen3VL参考图反推+文生图+图生视频三合一工作流_2033860844664131586.json, 视频生成/图生视频/全自动Qwen3VL参考图反推提示词+文生图+图生视频_2002649806117978113.json]
+members: [视频生成/图生视频/wan2.2图生成视频940_2012914151470927874.json, 视频生成/图生视频/wan2.2首尾帧生成视频_2012826950003331074.json, 视频生成/图生视频/wan2.2首尾帧生视频_2042865188126334978.json, 视频生成/图生视频/修改自WorkFIsher大佬的工作流-首尾帧视频-需自己便携提示词-更精准控制视频_2011676327186796545.json, 视频生成/图生视频/图生视频流：首帧、首尾帧、首中尾帧 【大合集】_2016912682649128961.json, 视频生成/图生视频/液体滴落到产品上_2001566408855154689.json, 视频生成/图生视频/首中尾帧_图生视频_1991786549960601602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_98
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Work-Fisher-全自动Qwen3VL+文生图+图生视频_1983065711180427265.json、视频生成/图生视频/Work-Fisher-全自动Qwen3VL+文生图+图生视频+_2006367145126531073.json、视频生成/图生视频/Work-Fisher-全自动Qwen3VL+文生图+图生视频_2056017029798350850.json、视频生成/图生视频/gen全能视频Si-全自动qwen3-vl图片反推提示词 【图生视频】_1983541525290360833.json、视频生成/图生视频/全自动Qwen3VL参考图反推+文生图+图生视频三合一工作流_2033860844664131586.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生成视频940_2012914151470927874.json、视频生成/图生视频/wan2.2首尾帧生成视频_2012826950003331074.json、视频生成/图生视频/wan2.2首尾帧生视频_2042865188126334978.json、视频生成/图生视频/修改自WorkFIsher大佬的工作流-首尾帧视频-需自己便携提示词-更精准控制视频_2011676327186796545.json、视频生成/图生视频/图生视频流：首帧、首尾帧、首中尾帧 【大合集】_2016912682649128961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageLoader`
-- `Int`
-- `JWStringConcat`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `RIFE VFI`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Any To Any` —— 5/6 个有
-- `EmptySD3LatentImage` —— 5/6 个有
-- `INTConstant` —— 5/6 个有
-- `KSampler` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MultiplePathsInput` —— 5/6 个有
-- `SaveImage` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `VHS_SelectFilename` —— 5/6 个有
+- `INTConstant` —— 6/7 个有
+- `ModelSamplingSD3` —— 6/7 个有
+- `RIFE VFI` —— 6/7 个有
+- `ImageResizeKJv2` —— 5/7 个有
+- `LoadImage` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `WanFirstLastFrameToVideo` —— 5/7 个有
+- `ImageBatchMulti` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `WanMultiFrameRefToVideo` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `GetImagesFromBatchIndexed` —— 2/7 个有
+- `ImageConcatMulti` —— 2/7 个有
+- `LoadImageFromURL` —— 2/7 个有
+- `PainterI2V` —— 2/7 个有
+- `PrimitiveInt` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `FL_RIFE` —— 1/7 个有
+- `PainterI2V_Wan2_2` —— 1/7 个有
+- `TextInput_` —— 1/7 个有
+- `ttN seed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | 1 | 1 - 1 | 6 | 100% |
-| 重绘幅度 | euler_ancestral | - | 6 | 100% |
+| 采样步数 | randomize | - | 7 | 57% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 7 | 80% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | normal | - | 7 | 71% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，6 个样本，一致性 100%
-- 高发问题（5/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，7 个样本，一致性 57%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，7 个样本，取值集中（一致性 80%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 normal，7 个样本，一致性 71%

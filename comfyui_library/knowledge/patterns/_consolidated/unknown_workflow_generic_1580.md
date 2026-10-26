@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1580
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7595
-common_nodes: [CR Text, LoadImage, RH_RhartVideoGImageToVideo, SaveVideo, easy showAnything]
+coverage: 0.8
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/服装展示视频-全能视频X—V1.5图生视频低价版_2082292876633006081.json, 视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json]
+members: [图片生成/图生图/香蕉 Banan图片编辑新王【单图_多图】_1960516997396180993.json, 图片生成/文生图/全能图片V1文生图_多图编辑_1987793454732390401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1580
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/服装展示视频-全能视频X—V1.5图生视频低价版_2082292876633006081.json、视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/香蕉 Banan图片编辑新王【单图_多图】_1960516997396180993.json、图片生成/文生图/全能图片V1文生图_多图编辑_1987793454732390401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
 - `LoadImage`
-- `RH_RhartVideoGImageToVideo`
-- `SaveVideo`
-- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
 
 ## 典型参数
 

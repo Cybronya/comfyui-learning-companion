@@ -1,83 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_unet_81
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.810375
-common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, EmptyLatentImage, FluxKontextImageScale, ImpactSwitch, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageConcat]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.848778
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/WH-AI-Studio电商换脸工作流(一致性完美版)_2017977236460150785.json, 图片生成/图生图/千问Edit2511单图编辑版_2004219532371783682.json, 图片生成/图生图/千问Edit2511多图编辑版_2004223606701916162.json, 图片生成/图生图/千问Edit2511多图编辑版_api_2031567329150115842.json, 图片生成/图生图/单图编辑+一致性超强（Qwen Edit2511）_2003851550328012802.json, 图片生成/图生图/多图编辑+一致性超强（Qwen Edit2511）_2003829045265637377.json, 图片生成/图生图/🪐千问新王炸！Edit2511来了！更好的一致性！单图编辑版_2003643255369703426.json, 图片生成/图生图/🪐千问新王炸！Edit2511来了！更好的一致性！多图编辑版_2003653367052288001.json]
+members: [视频生成/图生视频/10Eros-Max 8步极速4视图生视频 v2.0_2087352692522962945.json, 视频生成/图生视频/260813001.Minimax-H3多图参考生视频_2088059548048379905.json, 视频生成/图生视频/2图参考生视频minimax_2110625760905089026.json, 视频生成/图生视频/MiniMax H3 REF2VA-全能参考生视频-(8步加速-768P)-V1_2085290521219649538.json, 视频生成/图生视频/Minimax H3参考生视频-电商带货-8步加速版_2107686836549279745.json, 视频生成/图生视频/Minimax H3参考生视频-电商带货-8步加速版_2109966408665878530.json, 视频生成/图生视频/Minimax-H3-8步加速-多参考生视频（平均3.5分钟出5秒）_2085387387793928194.json, 视频生成/文生视频/🍲Minimax-H3多模态参考4步加速极限双优版🍲_2086661468988198913.json, 视频生成/文生视频/🍲Minimax-H3提示词自动优化+4步加速极限双优版🍲_2086652281939914753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_81
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/WH-AI-Studio电商换脸工作流(一致性完美版)_2017977236460150785.json、图片生成/图生图/千问Edit2511单图编辑版_2004219532371783682.json、图片生成/图生图/千问Edit2511多图编辑版_2004223606701916162.json、图片生成/图生图/千问Edit2511多图编辑版_api_2031567329150115842.json、图片生成/图生图/单图编辑+一致性超强（Qwen Edit2511）_2003851550328012802.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/10Eros-Max 8步极速4视图生视频 v2.0_2087352692522962945.json、视频生成/图生视频/260813001.Minimax-H3多图参考生视频_2088059548048379905.json、视频生成/图生视频/2图参考生视频minimax_2110625760905089026.json、视频生成/图生视频/MiniMax H3 REF2VA-全能参考生视频-(8步加速-768P)-V1_2085290521219649538.json、视频生成/图生视频/Minimax H3参考生视频-电商带货-8步加速版_2107686836549279745.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `FluxKontextImageScale`
-- `ImpactSwitch`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 7/8 个有
-- `RH_LLMAPI_NODE` —— 5/8 个有
-- `easy showAnything` —— 5/8 个有
-- `Int` —— 2/8 个有
-- `Note Plus (mtb)` —— 2/8 个有
-- `PlaySound|pysssss` —— 2/8 个有
-- `Crop Face` —— 1/8 个有
-- `GetImage` —— 1/8 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/8 个有
-- `Load RetinaFace` —— 1/8 个有
-- `MaskColorize` —— 1/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `PathchSageAttentionKJ` —— 7/9 个有
+- `PrimitiveStringMultiline` —— 5/9 个有
+- `孤海注释` —— 5/9 个有
+- `Seed (rgthree)` —— 3/9 个有
+- `easy convertAnything` —— 3/9 个有
+- `easy int` —— 3/9 个有
+- `Note Plus (mtb)` —— 2/9 个有
+- `Text` —— 2/9 个有
+- `DapaoH3PromptBoxNode` —— 1/9 个有
+- `DapaoH3VideoPromptNode` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `JjkText` —— 1/9 个有
+- `MiniMaxChunkFeedForward` —— 1/9 个有
+- `MiniMaxH3AVDecodeT8` —— 1/9 个有
+- `MmuuaiGroupBypass` —— 1/9 个有
+- `PrimitiveString` —— 1/9 个有
+- `SaveLatent` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 1080 | 8 | 68% |
-| 高度 | 512 | 512 - 1920 | 8 | 32% |
-| 采样步数 | 8 | 8 - 8 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 8 | 71% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1080，8 个样本
-- 高度 中位数 512，观测区间 512 - 1920，8 个样本，取值分散，一致性仅 32%
-- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

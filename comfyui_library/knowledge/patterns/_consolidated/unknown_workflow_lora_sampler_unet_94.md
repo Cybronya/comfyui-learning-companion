@@ -1,81 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_unet_94
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.800286
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CR Text, CR Text Concatenate, ConditioningZeroOut, CropWithPadInfo, FluxKontextMultiReferenceLatentMethod, GetImageSize, ImpactMinMax, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, Qwen3_VQA, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.86825
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2021113810890788866.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2007712919701692418.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2008718061972496385.json, 图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2043108574913634305.json, 图片生成/图生图/Qwen-Image免骨架姿态迁移l_2021760534307147778.json, 图片生成/图生图/人物姿态迁移Qwen-Image-Edit2511+AnyPose_2008786454448709634.json, 图片生成/图生图/参考人物姿势迁移_2010268614363979778.json]
+members: [图片生成/图生图/Qwen_万物转水墨动漫风格_2052662192381669377.json, 图片生成/图生图/Qwen_转-通透动漫风格_2051951433578233857.json, 图片生成/图生图/Qwen_转Anmi质感通透动漫风格_2052224157546491906.json, 图片生成/图生图/printing_extraction_api_2100774516120186882.json, 图片生成/图生图/万物皆可Q：IP角色一键智绘Q版风格_2056237735295410178.json, 图片生成/图生图/人物图像生成动漫Q版动画人物IP角色一键智绘Q版风格_2077294254203949058.json, 图片生成/图生图/印花提取——qwen2511_2096790576627802114.json, 图片生成/图生图/印花提取——qwen2511_2097136560390103041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_94
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2021113810890788866.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2007712919701692418.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2008718061972496385.json、图片生成/图生图/Qwen-Image-Edit2511+AnyPose免骨架姿态迁移lora，4 步高效出图_2043108574913634305.json、图片生成/图生图/Qwen-Image免骨架姿态迁移l_2021760534307147778.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen_万物转水墨动漫风格_2052662192381669377.json、图片生成/图生图/Qwen_转-通透动漫风格_2051951433578233857.json、图片生成/图生图/Qwen_转Anmi质感通透动漫风格_2052224157546491906.json、图片生成/图生图/printing_extraction_api_2100774516120186882.json、图片生成/图生图/万物皆可Q：IP角色一键智绘Q版风格_2056237735295410178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 8 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
 - `FluxKontextMultiReferenceLatentMethod`
-- `GetImageSize`
-- `ImpactMinMax`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `Easy_QwenEdit2509` —— 5/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `CropWithPadInfo_EditUtils` —— 3/8 个有
+- `QwenEditConfigPreparer` —— 3/8 个有
+- `QwenEditOutputExtractor_EditUtils` —— 3/8 个有
+- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `ImageScale` —— 1/8 个有
+- `TT_img_enc` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 7 | 84% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 6 | 8 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，7 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 6，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

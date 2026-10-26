@@ -3,35 +3,38 @@ name: unknown_workflow_generic_1309
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [InvertMask, JoinImageWithAlpha, LoadImage, MaskPreview, SaveImage]
+coverage: 0.883
+common_nodes: [LoadImage, SaveImage, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图（LOGO专用）_2074311869149569026.json, 图片生成/图生图/一键移除白底_2074312821139140609.json]
+members: [图片生成/反推提示词/minimax 视频提示词_2084603841881927681.json, 图片生成/反推提示词/qwen3反推_2031249324046295042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1309
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键抠图（LOGO专用）_2074311869149569026.json、图片生成/图生图/一键移除白底_2074312821139140609.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/minimax 视频提示词_2084603841881927681.json、图片生成/反推提示词/qwen3反推_2031249324046295042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InvertMask`
-- `JoinImageWithAlpha`
 - `LoadImage`
-- `MaskPreview`
 - `SaveImage`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PDtools_Filter_GodenPNG_v1` —— 1/2 个有
-- `PDtools_Filter_WPNG_v1` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

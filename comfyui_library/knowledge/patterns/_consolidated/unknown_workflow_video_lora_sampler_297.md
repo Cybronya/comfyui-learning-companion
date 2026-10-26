@@ -1,63 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_297
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.893286
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+coverage: 0.53975
+common_nodes: [BasicGuider, BasicScheduler, ComfyMathExpression, GetNode, JWImageResizeToMegapixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI脑洞狮--图生视频_2035035563962671105.json, 视频生成/图生视频/Smooth Mix i2V v2.0图生视频8步加速版_2026835055515017218.json, 视频生成/图生视频/Smooth Mix i2V v2.0图生视频8步加速版_2056759291427778562.json, 视频生成/图生视频/WAN2.2 图生视频 4步出图_2016945597965672449.json, 视频生成/图生视频/WAN2.2 图生视频-首帧参考版_2027809490925527041.json, 视频生成/图生视频/Wan2.2 14B 6步超极速图生视频_1949992607571206146.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 6步生视频（无声音）_2056552561905332226.json]
+members: [视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105263212156514306.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105989505089101826.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2107504505440002049.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2110281046800551937.json, 视频生成/图生视频/H3+Viggle免提示词动作迁移【画质强化版】_2105133693995151361.json, 视频生成/图生视频/minimax-H3+Viggle  动作迁移强化版 免提示词_2109956166884356097.json, 视频生成/图生视频/minimax-H3+Viggle  动作迁移强化版 免提示词_2109987503527784449.json, 视频生成/图生视频/动作迁移美女跳舞minimax-H3+Viggle （ 免提示词 超级简化版）_2110005406293643265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_297
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/AI脑洞狮--图生视频_2035035563962671105.json、视频生成/图生视频/Smooth Mix i2V v2.0图生视频8步加速版_2026835055515017218.json、视频生成/图生视频/Smooth Mix i2V v2.0图生视频8步加速版_2056759291427778562.json、视频生成/图生视频/WAN2.2 图生视频 4步出图_2016945597965672449.json、视频生成/图生视频/WAN2.2 图生视频-首帧参考版_2027809490925527041.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105263212156514306.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105989505089101826.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2107504505440002049.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2110281046800551937.json、视频生成/图生视频/H3+Viggle免提示词动作迁移【画质强化版】_2105133693995151361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `ComfyMathExpression`
+- `GetNode`
+- `JWImageResizeToMegapixels`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `ViggleAnimateConditioning`
+- `ViggleTextCondLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `LayerUtility: PurgeVRAM` —— 2/7 个有
-- `PathchSageAttentionKJ` —— 2/7 个有
-- `ComfyMathExpression` —— 1/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `ImpactImageInfo` —— 1/7 个有
-- `JWInteger` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `VAEDecodeTiled` —— 1/7 个有
-- `easy clearCacheAll` —— 1/7 个有
+- `CR Value` —— 7/8 个有
+- `GH_AudioVideoMerger` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
+- `SeedVR2LoadDiTModel` —— 1/8 个有
+- `SeedVR2LoadVAEModel` —— 1/8 个有
+- `SeedVR2VideoUpscaler` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 71% |
-| Prompt 约束强度(CFG) | 6 | 4 - 12 | 7 | 60% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 71% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,8 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 71%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 12，7 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 71%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

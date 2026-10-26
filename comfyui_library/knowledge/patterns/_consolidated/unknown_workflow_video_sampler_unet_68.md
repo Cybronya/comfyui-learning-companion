@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_unet_68
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.773333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), H3SigmaRefiner, Int, KSamplerSelect, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SolAttnPatch, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.836333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), KSamplerSelect, KepStringLiteral, Label (rgthree), LoadImage, MiniMaxH3GenerationTailLoader, MiniMaxH3PromptEnhancer, PrimitiveFloat, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json, 视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json, 视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json]
+members: [视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json, 视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json, 视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_68
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json、视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json、视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json、视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json、视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
@@ -26,21 +26,19 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
 - `ComfyMathExpression`
 - `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
-- `Int`
 - `KSamplerSelect`
+- `KepStringLiteral`
 - `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `ModelAttentionBackend`
+- `MiniMaxH3GenerationTailLoader`
+- `MiniMaxH3PromptEnhancer`
 - `PrimitiveFloat`
+- `RTXVideoSuperResolution`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnPatch`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -48,17 +46,21 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `DF_Int_to_Float` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `ModelPreviewOverrideKJ` —— 1/3 个有
-- `SeargeFloatConstant` —— 1/3 个有
-- `SelfLiftH3Sampler` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `VHS_LoadAudioUpload` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `MiniMaxChunkFeedForward` —— 1/3 个有
+- `MiniMaxH3HybridLoader` —— 1/3 个有
+- `MiniMaxH3ImageToVideo` —— 1/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `MiniMaxLowVRAMAttention` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `SeedVR2` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 1/3 个有
+- `SeedVR2ExtraArgs` —— 1/3 个有
 
 ## 典型参数
 

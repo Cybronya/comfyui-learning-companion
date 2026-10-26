@@ -3,41 +3,36 @@ name: unknown_workflow_video_99
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Audio Duration (mtb), JWIntegerToFloat, LoadAudio, LoadImage, MathExpression|pysssss, Primitive integer [Crystools], RepeatImageBatch, RunningHub SongPrep, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline, VHS_VideoCombine, easy showAnything]
+coverage: 0.722
+common_nodes: [RIFE VFI, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/SongBloom自回归音乐模型_1995818841752186881.json, 音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json]
+members: [数字人/数字人/视频补帧，高清放大_1979526025606500353.json, 数字人/数字人/视频高清放大 视频补帧 SeedVR2_1979851671184510977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_99
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SongBloom自回归音乐模型_1995818841752186881.json、音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/视频补帧，高清放大_1979526025606500353.json、数字人/数字人/视频高清放大 视频补帧 SeedVR2_1979851671184510977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `JWIntegerToFloat`
-- `LoadAudio`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `RepeatImageBatch`
-- `RunningHub SongPrep`
-- `SaveAudio`
-- `SongBloomDecoder`
-- `SongBloomGenerate`
-- `SongBloomModelLoader`
-- `Text Multiline`
+- `RIFE VFI`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SeedVR2GGUF`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `VHS_VideoInfo` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

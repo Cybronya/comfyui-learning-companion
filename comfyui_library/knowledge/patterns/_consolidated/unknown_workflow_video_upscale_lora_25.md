@@ -1,54 +1,49 @@
 ---
 name: unknown_workflow_video_upscale_lora_25
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.939
-common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.96
+common_nodes: [CR Upscale Image, ImageScaleToTotalPixels, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, RHHiddenNodes, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, mxSlider]
 problems: []
 missing: []
-members: [视频生成/图生视频/返老还童图生视频_1900773672473501697.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1992837863268216833.json]
+members: [图片生成/图生图/动态壁纸无缝循环_1949641181822623746.json, 视频生成/图生视频/wan2.2动态壁纸无缝循环_1985985160506159105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/返老还童图生视频_1900773672473501697.json、视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json、视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1992837863268216833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/动态壁纸无缝循环_1949641181822623746.json、视频生成/图生视频/wan2.2动态壁纸无缝循环_1985985160506159105.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageUpscaleWithModel`
+全部 2 个 workflow 都包含：
+- `CR Upscale Image`
+- `ImageScaleToTotalPixels`
+- `Int`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `UpscaleModelLoader`
+- `RHHiddenNodes`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
+- `WanVideoSEDecode`
+- `WanVideoSEImageClipEncode`
+- `WanVideoSEModelLoader`
+- `WanVideoSESampler`
+- `WanVideoSLG`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `TextInput_` —— 2/3 个有
-- `easy imageSize` —— 2/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
-- `Select Image Indices` —— 1/3 个有
-- `Textbox` —— 1/3 个有
+- `mxSlider`
 
 ## 典型参数
 
@@ -60,4 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

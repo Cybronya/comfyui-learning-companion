@@ -3,29 +3,30 @@ name: unknown_workflow_sampler_clip_vae_31
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.952286
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.966429
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【遇见AI】nunchaku版FLUX1基础文生图_2047228635328811010.json, 图片生成/文生图/根据提示词生成图片_2058844453082845186.json, 图片生成/文生图/根据提示词生成图片_2058847096706519041.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880497829063061506.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880529226179964930.json, 图片生成/文生图/游戏Icon-奖励宝箱一键生成_1980191535377584130.json, 图片生成/文生图/精品高清手办套装3D哪吒甲亢哥盲盒玩具玩偶_1911771666933055489.json]
+members: [图片生成/文生图/CFGzero简单工作流带lora_1928999965027155970.json, 图片生成/文生图/FLUX文生图 繁花lora工作流_1942505597264924674.json, 图片生成/文生图/Flux 1 文生图基础工作流_1937783580867084290.json, 图片生成/文生图/Flux+Lora标准文生图_1932966165364834305.json, 图片生成/文生图/Flux文生图工作流_1941002485245100033.json, 图片生成/文生图/沙雕动画场景{中文提示词输入开跑版}_1934978430360592385.json, 图片生成/文生图/沙雕动画场景专用工作流_2075008312994787329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/【遇见AI】nunchaku版FLUX1基础文生图_2047228635328811010.json、图片生成/文生图/根据提示词生成图片_2058844453082845186.json、图片生成/文生图/根据提示词生成图片_2058847096706519041.json、图片生成/文生图/毛绒奇幻国·Zhiban_1880497829063061506.json、图片生成/文生图/毛绒奇幻国·Zhiban_1880529226179964930.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/CFGzero简单工作流带lora_1928999965027155970.json、图片生成/文生图/FLUX文生图 繁花lora工作流_1942505597264924674.json、图片生成/文生图/Flux 1 文生图基础工作流_1937783580867084290.json、图片生成/文生图/Flux+Lora标准文生图_1932966165364834305.json、图片生成/文生图/Flux文生图工作流_1941002485245100033.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPTextEncodeFlux`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSamplerSelect`
 - `RandomNoise`
@@ -35,24 +36,32 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
 - `UNETLoader` —— 6/7 个有
-- `LoraLoader` —— 4/7 个有
-- `LoadImage` —— 1/7 个有
-- `ModelSamplingFlux` —— 1/7 个有
-- `NunchakuFluxDiTLoader` —— 1/7 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
-- `SeargePromptCombiner` —— 1/7 个有
+- `DeepTranslatorTextNode` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `ImageScaleBy` —— 3/7 个有
+- `ImageUpscaleWithModel` —— 3/7 个有
+- `UpscaleModelLoader` —— 3/7 个有
+- `FluxSampler` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `ShowText|pysssss` —— 2/7 个有
+- `VAEEncode` —— 2/7 个有
+- `ttN concat` —— 2/7 个有
+- `CFGZeroStar` —— 1/7 个有
+- `FluxGuidance` —— 1/7 个有
+- `ImageSmartSharpen+` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `TextInputBasic` —— 1/7 个有
+- `UnetLoaderGGUF` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 832 - 2000 | 7 | 64% |
-| 高度 | 1024 | 1024 - 1248 | 7 | 93% |
-| LoRA 模型强度 | 1 | 0.8 - 1 | 4 | 91% |
-| LoRA 文本强度 | 1 | 1 - 3.5 | 4 | 33% |
+| 宽度 | 1152 | 1024 - 1440 | 7 | 87% |
+| 高度 | 1024 | 768 - 1536 | 7 | 70% |
 
 ## 常见问题
 
@@ -60,7 +69,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 832 - 2000，7 个样本
-- 高度 中位数 1024，观测区间 1024 - 1248，7 个样本，取值集中（一致性 93%）
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，4 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
+- 宽度 中位数 1152，观测区间 1024 - 1440，7 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 768 - 1536，7 个样本

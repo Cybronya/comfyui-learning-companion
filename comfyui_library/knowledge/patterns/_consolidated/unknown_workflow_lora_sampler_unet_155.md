@@ -3,82 +3,73 @@ name: unknown_workflow_lora_sampler_unet_155
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.7792
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, JWInteger, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
-problems: []
+coverage: 0.8956
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/阿良绘】火辣版_ Dasiwa V2+Prompt Relay视频生成_2056368932285665281.json, 视频生成/图生视频/（方案2）Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）V2_2046813828544995329.json, 视频生成/图生视频/（自用）N版 Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054515717713743873.json, 视频生成/图生视频/（自用）N版Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054915878034132994.json, 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json]
+members: [图片生成/图生图/服装提取qwen edit 2511_2087714207843311617.json, 图片生成/图生图/服装试穿-前后_2038441483426074626.json, 图片生成/图生图/电商产品展示 单图参考 qwen2511_2012505537132371969.json, 图片生成/图生图/电商产品展示 双图参考 qwen2511_2012719006670655489.json, 图片生成/图生图/电商产品展示 固定模特Ip_1986229520292347906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_155
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/阿良绘】火辣版_ Dasiwa V2+Prompt Relay视频生成_2056368932285665281.json、视频生成/图生视频/（方案2）Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）V2_2046813828544995329.json、视频生成/图生视频/（自用）N版 Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054515717713743873.json、视频生成/图生视频/（自用）N版Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054915878034132994.json、视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/服装提取qwen edit 2511_2087714207843311617.json、图片生成/图生图/服装试穿-前后_2038441483426074626.json、图片生成/图生图/电商产品展示 单图参考 qwen2511_2012505537132371969.json、图片生成/图生图/电商产品展示 双图参考 qwen2511_2012719006670655489.json、图片生成/图生图/电商产品展示 固定模特Ip_1986229520292347906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CFGNorm`
+- `CLIPLoader`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SetNode`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
-- `VisualizeSigmasKJ`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `DuckHideNode` —— 3/5 个有
-- `PromptRelaySmartEncode` —— 3/5 个有
-- `SaveImage` —— 3/5 个有
-- `TT_img_enc` —— 3/5 个有
-- `TT_img_enc_v2` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `CM_IntToFloat` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PromptRelayEncode` —— 1/5 个有
-- `PromptRelayEncodeTimeline` —— 1/5 个有
-- `RH_LLMAPI_Pro_Node` —— 1/5 个有
-- `RegexExtract` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 3/5 个有
+- `JjkText` —— 3/5 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 3/5 个有
+- `EmptyLatentImage` —— 2/5 个有
+- `RepeatLatentBatch` —— 1/5 个有
+- `SizeSelector` —— 1/5 个有
+- `Switch string [Crystools]` —— 1/5 个有
 - `Text` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 489 | 489 - 489 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 489 - 489，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

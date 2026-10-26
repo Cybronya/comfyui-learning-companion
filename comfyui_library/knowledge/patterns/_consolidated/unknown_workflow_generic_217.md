@@ -1,39 +1,46 @@
 ---
 name: unknown_workflow_generic_217
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.967444
-common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, SaveImage]
+coverage: 0.8254
+common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamO双图人物一致性Try On换装V2（不炸显存）_1925970864809152514.json, 图片生成/图生图/Nano 全能图片V1 Pro2+0.2一个标准九宫图_2000446115969368065.json, 图片生成/图生图/全能图片V1 2 旅拍写真组图_1999315041277050882.json, 图片生成/图生图/全能图片V1 2 旅拍写真组图_1999443031344414722.json, 图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场_2000499215249833985.json, 图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场稳定版_2000522097862508546.json, 图片生成/图生图/动漫转真人（一步还原）香芭蕉_2015650982276894722.json, 图片生成/图生图/动漫转真人（两步还原）香芭蕉_2015637352621809665.json, 图片生成/文生图/🍌2 pro+Pro2+0.05一个标准九宫图 全能图片+xiangjiao_2027184563528667137.json]
+members: [图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json, 图片生成/图生图/全能图像王-全能图片_2056671805045305346.json, 图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json, 图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json, 图片生成/图生图/全能图片2.0 电商海报洗图复刻_2067998887889162241.json, 图片生成/图生图/全能图片V2 多图参考优化版_2036357262402392065.json, 图片生成/图生图/全能图片V2 多图参考优化版_2036724522824503297.json, 图片生成/图生图/全能图片V2洗图+结构化提示词强化版【API节点一张图1毛钱】_2038835400483016706.json, 图片生成/图生图/图片重绘_2044580670260908034.json, 图片生成/图生图/延展再裁切测试_2034169911026655234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_217
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/DreamO双图人物一致性Try On换装V2（不炸显存）_1925970864809152514.json、图片生成/图生图/Nano 全能图片V1 Pro2+0.2一个标准九宫图_2000446115969368065.json、图片生成/图生图/全能图片V1 2 旅拍写真组图_1999315041277050882.json、图片生成/图生图/全能图片V1 2 旅拍写真组图_1999443031344414722.json、图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场_2000499215249833985.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json、图片生成/图生图/全能图像王-全能图片_2056671805045305346.json、图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json、图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json、图片生成/图生图/全能图片2.0 电商海报洗图复刻_2067998887889162241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageConcanate`
+全部 10 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `PDIMAGE_LongerSize`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 7/9 个有
-- `ImageGridtoBatch` —— 4/9 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/9 个有
-- `RunningHub DreamO` —— 1/9 个有
+- `easy showAnything` —— 7/10 个有
+- `RH_LLMAPI_Pro_Node` —— 6/10 个有
+- `PreviewImage` —— 5/10 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `DapaoPromptBrakeNode` —— 2/10 个有
+- `ImageStitch` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `StringFunction|pysssss` —— 2/10 个有
+- `AspectRatio` —— 1/10 个有
+- `GetImage` —— 1/10 个有
+- `KOOK_SaveJPGImage` —— 1/10 个有
 
 ## 典型参数
 

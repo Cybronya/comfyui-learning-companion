@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_58
 type: Unknown Workflow
-frequency: 19
+frequency: 21
 level: moderate
-coverage: 0.758211
-common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.868905
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2053068919455399938.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2054042696234356738.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103067378409103361.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103091767229898754.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2109239041446203393.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图生成器_2055205534084673538.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图生成器_2079521350217195522.json, 图片生成/图生图/图生图-动漫动态壁纸-一键生成_2065258970960453634.json, 图片生成/图生图/图生图-动漫动态壁纸-一键生成_2082644415797096450.json, 图片生成/图生图/宠物动态壁纸-动起来_2054485566716170241.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052593532090757122.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052907021460099074.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052920812591697922.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2057264018573848577.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2057264328226729985.json, 图片生成/文生图/动态壁纸-一键生成_1940241127955976194.json, 视频生成/图生视频/Wan2.1 生成动态壁纸_1913951966869843970.json, 视频生成/图生视频/Wan2.1-14B _ 动态壁纸专用 图生视频 Florence2反推 TeaCach_2060066021968539649.json, 视频生成/图生视频/【动态壁纸】 Wan2.1 图生视频_1913946553239961602.json]
+members: [视频生成/文生视频/(8步高质量极速)Minimax_H3开源版_短剧漫剧_创意视频文生视频（600步新加速LORA）_2100562439568969730.json, 视频生成/文生视频/(Lightx2v正式版-4步极速)Minimax双时钟-文生视频V2_2087782751431909378.json, 视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733229104226305.json, 视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733258703429633.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088215933931311105.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088238913705046018.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088952684803084290.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088980791148765186.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2090042820953464834.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax图生视频V1_2085634625891815425.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax文生视频V2（600步新加速LORA）_2087936438015975426.json, 视频生成/文生视频/(贞贞lora-双时钟-8步高质量极速)Minimax文生视频V1_2086638410957148161.json, 视频生成/文生视频/10Eros Beta+Lightx2v正式版Minimax双时钟图生视频V1_2087829000017244161.json, 视频生成/文生视频/10Eros Beta+Lightx2v正式版Minimax双时钟文生视频V1_2087432709114261505.json, 视频生成/文生视频/720P双时钟高质量加速 0.8_2087157302087471105.json, 视频生成/文生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2085586436685910018.json, 视频生成/文生视频/DG_H3 双时钟 图生视频V1 bf16_2087807546869501953.json, 视频生成/文生视频/Dasiwa-MiniMax H3-动态最强-单采-文生视频_2094938114493083650.json, 视频生成/文生视频/Minimax H3 文生视频_2087105033031737345.json, 视频生成/文生视频/Minimax-H3极速4分钟出15秒480P-文生视频(双时钟-8步lora)_2086317767086665729.json, 视频生成/文生视频/Minimax-H3极速视频编辑(双时钟-8步lora)_2086326048232398850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_58
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2053068919455399938.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2054042696234356738.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103067378409103361.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103091767229898754.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2109239041446203393.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/文生视频/(8步高质量极速)Minimax_H3开源版_短剧漫剧_创意视频文生视频（600步新加速LORA）_2100562439568969730.json、视频生成/文生视频/(Lightx2v正式版-4步极速)Minimax双时钟-文生视频V2_2087782751431909378.json、视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733229104226305.json、视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733258703429633.json、视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088215933931311105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `StringFunction|pysssss`
+全部 21 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 18/19 个有
-- `LoadImage` —— 18/19 个有
-- `CogVideoEnhanceAVideo` —— 17/19 个有
-- `WanVideoSetBlockSwap` —— 17/19 个有
-- `easy cleanGpuUsed` —— 17/19 个有
-- `GetNode` —— 3/19 个有
-- `SetNode` —— 3/19 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/19 个有
-- `Seed Everywhere` —— 2/19 个有
-- `WanVideoEnhanceAVideo` —— 2/19 个有
-- `CLIPTextEncode` —— 1/19 个有
-- `CheckpointLoaderSimple` —— 1/19 个有
-- `LoadImageFromUrl` —— 1/19 个有
-- `ResizeLongestToNode` —— 1/19 个有
-- `Text` —— 1/19 个有
-- `TextInput_` —— 1/19 个有
-- `WanVideoSEDecode` —— 1/19 个有
-- `WanVideoSEImageClipEncode` —— 1/19 个有
-- `WanVideoSEModelLoader` —— 1/19 个有
-- `WanVideoSESampler` —— 1/19 个有
+- `CR Prompt Text` —— 20/21 个有
+- `ModelAttentionBackend` —— 13/21 个有
+- `LoadImage` —— 7/21 个有
+- `孤海注释` —— 4/21 个有
+- `VHS_LoadVideo` —— 3/21 个有
+- `ImageConcatMulti` —— 2/21 个有
+- `EmptyImage` —— 1/21 个有
+- `Getter` —— 1/21 个有
+- `ImageScaleToTotalPixels` —— 1/21 个有
+- `LoraLoaderModelOnly` —— 1/21 个有
+- `PreviewImage` —— 1/21 个有
+- `Setter` —— 1/21 个有
 
 ## 典型参数
 

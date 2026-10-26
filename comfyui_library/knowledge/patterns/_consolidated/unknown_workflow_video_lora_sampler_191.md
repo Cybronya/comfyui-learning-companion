@@ -1,61 +1,102 @@
 ---
 name: unknown_workflow_video_lora_sampler_191
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8591
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.568818
+common_nodes: [BatchImagesNode, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageConcatenate_UTK, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SAM3_VideoTrack, SetNode, SimpleMath+, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL 2 长视频动作迁移最新顶级自适应无水印_2070317114317164545.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072165934445457410.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072211393461448705.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072215800739614722.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json, 视频生成/图生视频/Scail2视频角色替换TTP多图参考版_2072151352708517889.json, 视频生成/图生视频/scail2 动作迁移_测试_2069624919830384641.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2071482062011453441.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2072216679937036289.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2083763864499474433.json]
+members: [视频生成/图生视频/TIKTOK山顶放纵不羁摇卡通版_2084196243823226881.json, 视频生成/图生视频/scail2 多人场景选取角色替换_2079147768924426242.json, 视频生成/图生视频/scail2 长时多人场景选取双角色替换_2079200457477672961.json, 视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json, 视频生成/图生视频/scail2多人场景指定角色替换_2081244964683599874.json, 视频生成/图生视频/scail2多人场景选取角色迁移动作_2079182735972847618.json, 视频生成/图生视频/scail2影视二创精准选取角色替换30S_2081214742160560129.json, 视频生成/图生视频/scail2超长时长带货视频自动版_2078074267547295746.json, 视频生成/图生视频/tiktok山顶放纵不羁摇_2084164746915438593.json, 视频生成/图生视频/抖音热门山顶放纵不羁摇开源版_2083852005172400129.json, 视频生成/图生视频/最新超长时长电商带货视频_2078074374137143298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_191
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/SCAIL 2 长视频动作迁移最新顶级自适应无水印_2070317114317164545.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072165934445457410.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072211393461448705.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072215800739614722.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/TIKTOK山顶放纵不羁摇卡通版_2084196243823226881.json、视频生成/图生视频/scail2 多人场景选取角色替换_2079147768924426242.json、视频生成/图生视频/scail2 长时多人场景选取双角色替换_2079200457477672961.json、视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json、视频生成/图生视频/scail2多人场景指定角色替换_2081244964683599874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
+- `BatchImagesNode`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `GetNode`
+- `ImageConcatenate_UTK`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus VAELoader`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 9/10 个有
-- `ImageResizeKJv2` —— 9/10 个有
-- `CR Text` —— 8/10 个有
-- `PrimitiveInt` —— 8/10 个有
-- `SetNode` —— 2/10 个有
-- `VHS_VideoInfo` —— 2/10 个有
-- `GetNode` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `ImageResize+` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `Primitive integer [Crystools]` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `UNETLoader` —— 1/10 个有
-- `easy anythingIndexSwitch` —— 1/10 个有
+- `FillMaskWithColor` —— 10/11 个有
+- `InvertMask` —— 10/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `PlaySound|pysssss` —— 10/11 个有
+- `easy indexAnything` —— 10/11 个有
+- `easy mathInt` —— 10/11 个有
+- `SCAIL2ColoredMaskV2` —— 9/11 个有
+- `RH_Captioner` —— 8/11 个有
+- `Text` —— 8/11 个有
+- `VHS_LoadVideo` —— 8/11 个有
+- `easy showAnything` —— 8/11 个有
+- `1hew_MaskMathOps` —— 7/11 个有
+- `RMBG` —— 7/11 个有
+- `PointsEditor` —— 6/11 个有
+- `PrimitiveBoolean` —— 6/11 个有
+- `PrimitiveInt` —— 6/11 个有
+- `SeCModelLoader` —— 6/11 个有
+- `SeCVideoSegmentation` —— 6/11 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 5/11 个有
+- `SAM3_TrackToMask` —— 5/11 个有
+- `RHHiddenNodes` —— 4/11 个有
+- `AILab_LamaRemover` —— 3/11 个有
+- `ExtractNFrames` —— 3/11 个有
+- `Float` —— 3/11 个有
+- `Float to Int` —— 3/11 个有
+- `LayerUtility: ImageBlendAdvance` —— 3/11 个有
+- `TextConcatenate_UTK` —— 3/11 个有
+- `VHS_LoadVideoFFmpeg` —— 3/11 个有
+- `easy batchAnything` —— 3/11 个有
+- `easy forLoopEnd` —— 3/11 个有
+- `easy forLoopStart` —— 3/11 个有
+- `CLIPVisionEncode` —— 2/11 个有
+- `ColorPickerMW` —— 2/11 个有
+- `DrawMaskOnImage` —— 2/11 个有
+- `EmptyImage` —— 2/11 个有
+- `GrowMask` —— 2/11 个有
+- `ImageCompositeMasked` —— 2/11 个有
+- `GoogleTranslateTextNode` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `SaveImage` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,75 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_406
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5095
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Fast Groups Muter (rgthree), FluxGuidance, FluxResolutionNode, GetNode, GoogleTranslateTextNode, ImageStitch, JjkText, KSamplerSelect, LoadImage, ModelSamplingFlux, Note Plus (mtb), PreviewImage, RMBG, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.875667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux Kontext 2imagePlus_双图参考改进版_Borges_1951581485935570946.json, 图片生成/图生图/Flux Kontext 2imagePlus_双图参考改进版_Borges_1970488674284675073.json]
+members: [图片生成/文生图/▶Z-image文生图工作流整合_2036799699528720385.json, 图片生成/文生图/▶千问Qwen2512生图工作流(整合)_2036799795003662338.json, 图片生成/文生图/【老金驿站】Animate动漫出图Qwen工作流_1967848816110088193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_406
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 2imagePlus_双图参考改进版_Borges_1951581485935570946.json、图片生成/图生图/Flux Kontext 2imagePlus_双图参考改进版_Borges_1970488674284675073.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/▶Z-image文生图工作流整合_2036799699528720385.json、图片生成/文生图/▶千问Qwen2512生图工作流(整合)_2036799795003662338.json、图片生成/文生图/【老金驿站】Animate动漫出图Qwen工作流_1967848816110088193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
-- `FluxGuidance`
-- `FluxResolutionNode`
-- `GetNode`
-- `GoogleTranslateTextNode`
-- `ImageStitch`
-- `JjkText`
-- `KSamplerSelect`
-- `LoadImage`
-- `ModelSamplingFlux`
-- `Note Plus (mtb)`
-- `PreviewImage`
-- `RMBG`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImageFromUrl` —— 1/2 个有
-- `ResizeImageMixlab` —— 1/2 个有
+- `CLIPLoaderGGUF` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 100% |
+| 采样步数 | 8 | 6 - 8 | 3 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

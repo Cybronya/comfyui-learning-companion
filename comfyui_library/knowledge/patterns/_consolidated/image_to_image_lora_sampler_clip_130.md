@@ -3,17 +3,17 @@ name: image_to_image_lora_sampler_clip_130
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, RepeatLatentBatch, SaveImage, TeaCache, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9535
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImpactInt, InspyrenetRembg, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerUtility: HLFrequencyDetailRestore, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext，改变相机角度，改变镜头，改变角度，Change Camera Angle_1977589854961836034.json, 图片生成/图生图/PS调和服务端_1955212269064896514.json]
+members: [图片生成/图生图/Kontext 产品溶图打光_2047137205226840065.json, 图片生成/文生图/抠图，白底，透明_2045741598935355393.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_130
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext，改变相机角度，改变镜头，改变角度，Change Camera Angle_1977589854961836034.json、图片生成/图生图/PS调和服务端_1955212269064896514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext 产品溶图打光_2047137205226840065.json、图片生成/文生图/抠图，白底，透明_2045741598935355393.json）
 
 - **类型**：Image To Image
 - **样本数**：2
@@ -27,35 +27,41 @@ source: knowledge_consolidation
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `FluxKontextImageScale`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
+- `InspyrenetRembg`
 - `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: HLFrequencyDetailRestore`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ReferenceLatent`
-- `RepeatLatentBatch`
 - `SaveImage`
-- `TeaCache`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `GrowMask` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
+- `JoinImageWithAlpha` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `LayerUtility: ImageCombineAlpha` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `Seed_` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `ttN concat` —— 1/2 个有
+- `Upscale Model Loader` —— 1/2 个有
+- `YUAN_TXTConvertAny` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
+| 采样步数 | 30 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -67,7 +73,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

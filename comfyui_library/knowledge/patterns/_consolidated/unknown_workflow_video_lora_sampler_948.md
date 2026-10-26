@@ -3,60 +3,73 @@ name: unknown_workflow_video_lora_sampler_948
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.579
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7135
+common_nodes: [Anything Everywhere, BatchCount+, CLIPVisionLoader, CR Text, CR Text Concatenate, ColorCorrectOfUtils, CreateCFGScheduleFloatList, Float, GetNode, ImageCASharpening+, ImageResize+, Int, JWInteger, JjkText, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, PreviewImage, PrimitiveBoolean, RHHiddenNodes, RH_Nano_Banana_Image2Image, SetNode, Text Load Line From File, VHS_LoadAudioUpload, VHS_Unbatch, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [视频生成/文生视频/图片唱歌_2007669635780448258.json, 音频生成/音频生成/InfiniteTalk数字人+index-TTS2同步音视频生成_1975033453995536385.json]
+members: [视频生成/图生视频/【全能图片V1分镜】Wan2.2-aniwan（一键成片）_1978583926098776065.json, 视频生成/图生视频/全能图片V1香蕉分镜视频制作完整出片带音乐_1983855696577990658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_948
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/图片唱歌_2007669635780448258.json、音频生成/音频生成/InfiniteTalk数字人+index-TTS2同步音视频生成_1975033453995536385.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【全能图片V1分镜】Wan2.2-aniwan（一键成片）_1978583926098776065.json、视频生成/图生视频/全能图片V1香蕉分镜视频制作完整出片带音乐_1983855696577990658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Anything Everywhere`
+- `BatchCount+`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `CR Text`
+- `CR Text Concatenate`
+- `ColorCorrectOfUtils`
+- `CreateCFGScheduleFloatList`
+- `Float`
 - `GetNode`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
+- `JWInteger`
+- `JjkText`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `RHHiddenNodes`
+- `RH_Nano_Banana_Image2Image`
 - `SetNode`
+- `Text Load Line From File`
+- `VHS_LoadAudioUpload`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 1/2 个有
-- `AudioCrop` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `IndexTTS2_Emotion` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `QZ_ResolutionPreset` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

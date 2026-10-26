@@ -3,38 +3,41 @@ name: unknown_workflow_sampler_14
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.898286
-common_nodes: [AudioPad, Get Size JK, ImageResizeKJv2, IndexTTSRun, LoadAudio, LoadImage, PrimitiveStringMultiline, ResizeImagesByShorterEdge, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveAudio, SaveVideo]
+coverage: 0.924143
+common_nodes: [LoadImage, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json, 视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json, 视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json, 视频生成/图生视频/超自然FlashHead极速数字人 只需图片+文字_2032303580274761729.json, 视频生成/文生视频/FlashHead极速数字人生成，只需图片+文字就好_2033804221602074625.json]
+members: [图片生成/图生图/图生图-提示词扩图重绘-字节OneReward-Fill重绘_2036999131935281153.json, 图片生成/图生图/字节OneReward-扩图_1966290461180817409.json, 图片生成/图生图/局部重绘-字节OneReward-Fill重绘_1965584108363595778.json, 图片生成/图生图/扩图-字节OneReward-Fill_1966330801120030722.json, 图片生成/图生图/扩图重绘 _ OneReward_Fill + joy3 更精准扩图_1966170775696961537.json, 图片生成/图生图/扩图重绘-字节OneReward-Fill重绘_1965799229895651329.json, 图片生成/图生图/提示词扩图重绘-字节OneReward-Fill重绘_1965802483996078082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json、视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json、视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json、视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json、视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生图-提示词扩图重绘-字节OneReward-Fill重绘_2036999131935281153.json、图片生成/图生图/字节OneReward-扩图_1966290461180817409.json、图片生成/图生图/局部重绘-字节OneReward-Fill重绘_1965584108363595778.json、图片生成/图生图/扩图-字节OneReward-Fill_1966330801120030722.json、图片生成/图生图/扩图重绘 _ OneReward_Fill + joy3 更精准扩图_1966170775696961537.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `AudioPad`
-- `Get Size JK`
-- `ImageResizeKJv2`
-- `IndexTTSRun`
-- `LoadAudio`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `ResizeImagesByShorterEdge`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
-- `SaveAudio`
-- `SaveVideo`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ImagePadKJ` —— 6/7 个有
+- `ImageScaleDownToSize` —— 6/7 个有
+- `ImageStitch` —— 6/7 个有
+- `ImageAndMaskPreview` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `Text Multiline` —— 5/7 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/7 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
 
 ## 典型参数
 

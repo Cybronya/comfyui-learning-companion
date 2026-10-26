@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_526
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+coverage: 0.8955
+common_nodes: [LoadAudio, PreviewAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json, 图片生成/图生图/元素洗稿_2059844726915944450.json, 图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json, 图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json, 图片生成/图生图/洗稿_2057307768008306690.json]
+members: [音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json, 音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json, 音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json, 音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json, 音频生成/音频生成/语音生成工作流-indextts2-带情感调节_1979545115100352513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_526
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json、图片生成/图生图/元素洗稿_2059844726915944450.json、图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json、图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json、图片生成/图生图/洗稿_2057307768008306690.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json、音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json、音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json、音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `JWStringConcat` —— 1/5 个有
+- `easy indexTTSEmotionVector` —— 5/6 个有
+- `Fast Groups Muter (rgthree)` —— 2/6 个有
+- `easy indexTTSEmotionMerge` —— 2/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 

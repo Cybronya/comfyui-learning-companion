@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 6
 level: moderate
 coverage: 1
-common_nodes: [LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
+common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncode, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json, 视频生成/图生视频/SoulX-FlashTalk大模型：4090显卡实时生成直播视频！_2016719589106782209.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json, 视频生成/文生视频/FlashTalk 无限时长实时数字人工作流   高保真 直播数字人 超强_2057451172184809474.json]
+members: [图片生成/文生图/BitDance字节-文生图_2026930242924843010.json, 图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json, 图片生成/文生图/BitDance文生图V1_2026616770223677442.json, 图片生成/文生图/BitDance文生图_2026827350784086018.json, 图片生成/文生图/BitDance文生图_2027273573546594306.json, 图片生成/文生图/字节跳动 BitDance 文生图_2028002596664905730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json、视频生成/图生视频/SoulX-FlashTalk大模型：4090显卡实时生成直播视频！_2016719589106782209.json、视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/BitDance字节-文生图_2026930242924843010.json、图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json、图片生成/文生图/BitDance文生图V1_2026616770223677442.json、图片生成/文生图/BitDance文生图_2026827350784086018.json、图片生成/文生图/BitDance文生图_2027273573546594306.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,15 +23,16 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
-- `SaveVideo`
+- `BitDanceDecode`
+- `BitDanceLoader`
+- `BitDanceResolution`
+- `BitDanceSampler`
+- `BitDanceTextEncode`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio` —— 2/6 个有
-- `Label (rgthree)` —— 1/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 

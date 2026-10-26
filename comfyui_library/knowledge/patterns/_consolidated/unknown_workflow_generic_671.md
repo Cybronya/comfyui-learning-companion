@@ -3,36 +3,34 @@ name: unknown_workflow_generic_671
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.4005
-common_nodes: [GetNode, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, SetNode]
+coverage: 0.80175
+common_nodes: [LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换装_2042786160912633857.json, 图片生成/图生图/一键提取服装_2042504590024773634.json, 图片生成/图生图/一键提取服装_2046059357334413314.json, 图片生成/文生图/全能图片V2_Neo_xlw_2028755810783858690.json]
+members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json, comfyui-workflow-templates-json/api_seedance2_5_video_editing.json, comfyui-workflow-templates-json/api_seedance2_5_video_extend.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_671
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换装_2042786160912633857.json、图片生成/图生图/一键提取服装_2042504590024773634.json、图片生成/图生图/一键提取服装_2046059357334413314.json、图片生成/文生图/全能图片V2_Neo_xlw_2028755810783858690.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json、comfyui-workflow-templates-json/api_seedance2_5_video_editing.json、comfyui-workflow-templates-json/api_seedance2_5_video_extend.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：40%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetNode`
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `SetNode`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `easy imageConcat` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `Video Slice` —— 3/4 个有
+- `ByteDance2ReferenceNodeV2` —— 2/4 个有
+- `GeminiVideoOmniV2` —— 2/4 个有
+- `d9aa59a4-3784-4796-9f1b-5b467fb41fa1` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,64 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_584
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.852667
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.9475
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json, 视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json, 视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json]
+members: [视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json, 视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json, 视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json, 视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_584
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json、视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json、视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json、视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json、视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json、视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `Label (rgthree)`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `MelBandRoFormerModelLoader` —— 2/3 个有
-- `MelBandRoFormerSampler` —— 2/3 个有
-- `MiniMaxH3AVDecodeT8` —— 2/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `SolAttnMiniMax` —— 2/3 个有
-- `SoundFlow_GetLength` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
-- `BasicScheduler` —— 1/3 个有
-- `KSamplerSelect` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `VAEDecodeAudio` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `Audio Duration (mtb)` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageSmartSharpen+` —— 1/4 个有
+- `InversionDemoLazyIndexSwitch` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `WanVideoImageToVideoEncode` —— 1/4 个有
+- `easy anythingIndexSwitch` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,41 +3,36 @@ name: unknown_workflow_sampler_75
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6845
-common_nodes: [Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), LoadImage, PreviewImage, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, easy showAnything]
+coverage: 0.866
+common_nodes: [LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/自己用：USO  3D转2D_1968914270236889090.json, 图片生成/图生图/风格迁移 USO_1962502380937953281.json]
+members: [图片生成/图生图/OneReward图生图重绘_1965637128468185090.json, 图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自己用：USO  3D转2D_1968914270236889090.json、图片生成/图生图/风格迁移 USO_1962502380937953281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OneReward图生图重绘_1965637128468185090.json、图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PreviewImage`
 - `RH_Translator`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 1/2 个有
 - `CR Text` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_154
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.980818
-common_nodes: [CR Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.988083
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json, 图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json, 图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json, 图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json, 图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json, 图片生成/图生图/最新Gimage2图生图 Image2-图生图官方版-支持网址参考_2059136745282818049.json, 图片生成/图生图/空白工作流_2064887415608795138.json, 图片生成/图生图/空白工作流_2088587498250399746.json, 图片生成/文生图/HPimage2_2080558711264862209.json, 图片生成/文生图/IMAGE-2海报直出 可以网址参考_2049010707542319105.json, 图片生成/文生图/全能图像G2 官方版【更稳 更高清】_2047879397851537409.json]
+members: [图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json, 图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json, 图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json, 图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json, 图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json, 图片生成/文生图/-全能图片V1-pro_1991891403967975426.json, 图片生成/文生图/0201发布版：全能图片Pro_2020093603560820737.json, 图片生成/文生图/10合一超级全能图片香焦 bnana Pro_2019427181721554946.json, 图片生成/文生图/2029813681218916353.json, 图片生成/文生图/2029824177317875713.json, 图片生成/文生图/4k直出标注式服装款式图_2020845106500210689.json, 数字人/数字人/nano 全能图片V1n 2 图参考_1996431889017749506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_154
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json、图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json、图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json、图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json、图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json、图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json、图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json、图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json、图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Text`
+全部 12 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `StringFunction|pysssss` —— 9/11 个有
-- `Label (rgthree)` —— 6/11 个有
-- `Note Plus (mtb)` —— 2/11 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 1/11 个有
+- `ImageStitch` —— 2/12 个有
+- `RMBG` —— 1/12 个有
 
 ## 典型参数
 

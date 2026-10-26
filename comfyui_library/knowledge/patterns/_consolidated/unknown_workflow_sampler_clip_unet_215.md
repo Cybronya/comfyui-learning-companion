@@ -2,67 +2,69 @@
 name: unknown_workflow_sampler_clip_unet_215
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.9005
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.8675
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦角色标准参考三视图_2026223411495706625.json, 图片生成/图生图/去ai-V2版本_2051151522649657345.json, 图片生成/图生图/去亮_2067431169767071746.json, 图片生成/图生图/发型迁移与更换_2051141221707468801.json, 图片生成/图生图/提亮光影111_2067431193964015617.json, 图片生成/文生图/产品抠图透明背景精修版+全节点注释_2090760561532424194.json]
+members: [图片生成/图生图/Flux Redux 图片融合工作流_1902736324317851650.json, 图片生成/图生图/Flux_Redux官方工作流_1930169236486832129.json, "图片生成/图生图/WH-AI-Studio语义生图,形体转绘（还需研究）_2018161284826537986.json", 图片生成/图生图/图生图一键定制可爱IP形象_1884393250852163586.json, 图片生成/图生图/热血动漫风格｜真人转动漫_1935155915215839234.json, 图片生成/图生图/真人转动漫角色｜Flux 加速_1913224568469946369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_215
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/即梦角色标准参考三视图_2026223411495706625.json、图片生成/图生图/去ai-V2版本_2051151522649657345.json、图片生成/图生图/去亮_2067431169767071746.json、图片生成/图生图/发型迁移与更换_2051141221707468801.json、图片生成/图生图/提亮光影111_2067431193964015617.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux Redux 图片融合工作流_1902736324317851650.json、图片生成/图生图/Flux_Redux官方工作流_1930169236486832129.json、图片生成/图生图/WH-AI-Studio语义生图,形体转绘（还需研究）_2018161284826537986.json、图片生成/图生图/图生图一键定制可爱IP形象_1884393250852163586.json、图片生成/图生图/热血动漫风格｜真人转动漫_1935155915215839234.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `PreviewImage` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `EmptyLatentImage` —— 1/6 个有
-- `GrowMaskWithBlur` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `ImpactInt` —— 1/6 个有
-- `JoinImageWithAlpha` —— 1/6 个有
-- `LayerMask: BiRefNetUltra` —— 1/6 个有
-- `SAM3Segment` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `ModelSamplingFlux` —— 5/6 个有
+- `StyleModelApply` —— 5/6 个有
+- `ImageScale` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `LoraLoader` —— 2/6 个有
+- `easy imageSize` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `Get resolution [Crystools]` —— 1/6 个有
+- `ImageScaleBy` —— 1/6 个有
+- `Images to RGB` —— 1/6 个有
+- `InspyrenetRembg` —— 1/6 个有
+- `RH_Captioner` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StyleModelAdvancedApply` —— 1/6 个有
 - `easy imageConcat` —— 1/6 个有
-- `easy mathInt` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1512 | - | 1 | 100% |
-| 高度 | 1512 | - | 1 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -70,4 +72,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

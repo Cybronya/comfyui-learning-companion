@@ -3,37 +3,34 @@ name: unknown_workflow_generic_598
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, LoadAudio, NormalizeAudioLoudness, SaveAudioMP3, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.9778
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json]
+members: [图片生成/图生图/换脸-换装-人物替换-换头-全能图片2.0_2027966723378388993.json, 图片生成/图生图/提取线稿_2046098084769304578.json, 图片生成/图生图/白底-单图v2-4K_2048953873766817794.json, 图片生成/图生图/衣物生成3D镂空图，智能识别正反面，全能图片2.0_2020426864099074050.json, 图片生成/图生图/裤子背面平铺3D图_2026123015536250881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_598
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json、音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/换脸-换装-人物替换-换头-全能图片2.0_2027966723378388993.json、图片生成/图生图/提取线稿_2046098084769304578.json、图片生成/图生图/白底-单图v2-4K_2048953873766817794.json、图片生成/图生图/衣物生成3D镂空图，智能识别正反面，全能图片2.0_2020426864099074050.json、图片生成/图生图/裤子背面平铺3D图_2026123015536250881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `SaveAudioMP3`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/5 个有
-- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
-- `T8_IndexTTS25_SamplingConfig` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_191
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9361
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.744545
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/万能最强换头+换装+换景+动作迁移6图并发_2036995914925084674.json, 图片生成/图生图/上衣_连体衣一键批量合成工作流_2060551477709598721.json, 图片生成/图生图/任意改图_2039259679259369473.json, 图片生成/图生图/倒模买家秀_2052192392576552962.json, 图片生成/图生图/全能2.0建筑效果图_2030649784402452482.json, 图片生成/图生图/全能图片裤子正面平铺3D图_2026122856920256514.json, 图片生成/图生图/单图_ 4k_v2_2046160403226431489.json, 图片生成/图生图/娃娃换动作 v2_2042415596029087746.json, 图片生成/图生图/娃娃换动作 v2_2044663623238295554.json, 图片生成/图生图/效果图转绘渲染-内核_2031509766647844865.json]
+members: [数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json, 音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json, 音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json, 音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json, 音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json, 音频生成/音频生成/IndexTTS2最强音色克隆_1965570620937392129.json, 音频生成/音频生成/空白工作流_2052346805639237634.json, 音频生成/音频生成/艾希音色克隆 IndexTTS2文生声音+情感控制工作流 V1.0_2016426570805682178.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_1965610012699709441.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105125124012859394.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105504027202117633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_191
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/万能最强换头+换装+换景+动作迁移6图并发_2036995914925084674.json、图片生成/图生图/上衣_连体衣一键批量合成工作流_2060551477709598721.json、图片生成/图生图/任意改图_2039259679259369473.json、图片生成/图生图/倒模买家秀_2052192392576552962.json、图片生成/图生图/全能2.0建筑效果图_2030649784402452482.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json、音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json、音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json、音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json、音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+全部 11 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 8/10 个有
-- `Image Comparer (rgthree)` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `ImageResizeKJv2` —— 1/10 个有
-- `Int` —— 1/10 个有
+- `SaveAudioMP3` —— 9/11 个有
+- `PreviewAudio` —— 7/11 个有
+- `AudioSeparation` —— 6/11 个有
+- `PrimitiveString` —— 4/11 个有
 
 ## 典型参数
 

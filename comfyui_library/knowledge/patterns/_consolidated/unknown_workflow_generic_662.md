@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_662
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.913
-common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), InvertMask, InvertMask (segment anything), LayerUtility: CropByMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SAMLoader, SaveImage]
+coverage: 0.625
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, Fast Groups Bypasser (rgthree), RH_Suno_Custom, SaveAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/co 批量裁剪新2_2071504923543556097.json, 图片生成/图生图/co 批量裁剪新3_2071519463295508482.json, 图片生成/图生图/co裁剪1_2075961816714407937.json, 图片生成/图生图/co裁剪_2075131937269829633.json]
+members: [音频生成/音频生成/Suno V5.0 一键生成自己专属歌曲_2015399363836649474.json, 音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_1992472538030862337.json, 音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_1993959307106516994.json, 音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_2002695029527330818.json, 音频生成/音频生成/Suno V5.0 顶级音乐创作-自定义歌词和曲风_1998945233918382081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_662
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/co 批量裁剪新2_2071504923543556097.json、图片生成/图生图/co 批量裁剪新3_2071519463295508482.json、图片生成/图生图/co裁剪1_2075961816714407937.json、图片生成/图生图/co裁剪_2075131937269829633.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Suno V5.0 一键生成自己专属歌曲_2015399363836649474.json、音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_1992472538030862337.json、音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_1993959307106516994.json、音频生成/音频生成/Suno V5.0 音乐进阶版-自定义歌词和曲风_2002695029527330818.json、音频生成/音频生成/Suno V5.0 顶级音乐创作-自定义歌词和曲风_1998945233918382081.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `InvertMask`
-- `InvertMask (segment anything)`
-- `LayerUtility: CropByMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `SAMLoader`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `GroupSwitcher` —— 2/4 个有
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_suno_custom`
+- `Fast Groups Bypasser (rgthree)`
+- `RH_Suno_Custom`
+- `SaveAudio`
+- `SaveAudioMP3`
 
 ## 典型参数
 

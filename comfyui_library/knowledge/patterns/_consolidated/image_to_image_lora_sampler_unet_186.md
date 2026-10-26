@@ -2,85 +2,77 @@
 name: image_to_image_lora_sampler_unet_186
 type: Image To Image
 frequency: 3
-level: moderate
-coverage: 0.819333
-common_nodes: [CLIPLoader, CR Text, Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), ImageResizeKJv2, KSampler, LoadImage, LoraLoader, ReferenceLatent, SaveImage, ShowText|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, WD14Tagger|pysssss, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: []
+level: strong
+coverage: 0.8
+common_nodes: [CLIPLoader, ConditioningZeroOut, FluxKontextImageScale, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/全自动彩色总图生成工作流_2048602092713025537.json, 图片生成/图生图/全自动素模生成专业住宅效果图+cn控制工作流_2059581390613733378.json, 图片生成/图生图/全自动素模生成专业住宅效果图工作流_2059453336700674049.json]
+members: [图片生成/图生图/QwenEdit 小志版与原版一致性对比_2073056256641822721.json, 图片生成/图生图/QwenEdit偏移问题解决方案_1965093253525684225.json, 图片生成/文生图/Qwen-Edit-偏移纠正_1979205553991880706.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_186
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全自动彩色总图生成工作流_2048602092713025537.json、图片生成/图生图/全自动素模生成专业住宅效果图+cn控制工作流_2059581390613733378.json、图片生成/图生图/全自动素模生成专业住宅效果图工作流_2059453336700674049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenEdit 小志版与原版一致性对比_2073056256641822721.json、图片生成/图生图/QwenEdit偏移问题解决方案_1965093253525684225.json、图片生成/文生图/Qwen-Edit-偏移纠正_1979205553991880706.json）
 
 - **类型**：Image To Image
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
+- `ConditioningZeroOut`
+- `FluxKontextImageScale`
 - `Image Comparer (rgthree)`
-- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
-- `LoraLoader`
+- `LoraLoaderModelOnly`
 - `ReferenceLatent`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `WD14Tagger|pysssss`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 2/3 个有
-- `ConditioningZeroOut` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `CannyEdgePreprocessor` —— 1/3 个有
-- `ControlNetApplyAdvanced` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `LayerUtility: TextJoin` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `seed _O` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `Seed Everywhere` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/3 个有
+- `TextEncodeQwenImageEdit_lrzjason` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 0.88 - 1 | 3 | 94% |
-| 采样步数 | 30 | 25 - 40 | 3 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 3 | 12% |
-| 采样算法 | euler_cfg_pp | - | 3 | 67% |
-| 调度器 | karras | - | 3 | 67% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta57 | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| ControlNet 权重 | 0.75 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 20/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 0.88 - 1，3 个样本，取值集中（一致性 94%）
-- 采样步数 中位数 30，观测区间 25 - 40，3 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，3 个样本，取值分散，一致性仅 12%
-- 采样算法 最常用 euler_cfg_pp，3 个样本，一致性 67%
-- 调度器 最常用 karras，3 个样本，一致性 67%
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta57，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（20/3 个样本）：Steps较低可能导致细节不足

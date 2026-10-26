@@ -3,44 +3,38 @@ name: unknown_workflow_video_sampler_19
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.899
-common_nodes: [DownloadAndLoadMimicMotionModel, GetImageSizeAndCount, ImageResizeKJ, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.878667
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, LoadVideo, RunningHub KiwiEdit Loader, RunningHub KiwiEdit Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/人物视频动作迁移MimicMotion+换脸修复_1971772867861999618.json, 视频生成/图生视频/优化版图转视频加换脸修复加视频放大_1897825295863336961.json, 视频生成/图生视频/全民舞王_1897011447497662466.json]
+members: [数字人/数字人/多功能视频编辑 Kiwi Edit 极速版 物体增加，背景修改，风格转换。_2033012432871890946.json, 数字人/数字人/视频编辑-极速 Kiwi Edit 功能【替换，增加，去除，更换背景，参考图替换】_2033002935998746626.json, 视频生成/图生视频/视频修改  视频编辑  Kiwi Edit_2046777773141794817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/人物视频动作迁移MimicMotion+换脸修复_1971772867861999618.json、视频生成/图生视频/优化版图转视频加换脸修复加视频放大_1897825295863336961.json、视频生成/图生视频/全民舞王_1897011447497662466.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/多功能视频编辑 Kiwi Edit 极速版 物体增加，背景修改，风格转换。_2033012432871890946.json、数字人/数字人/视频编辑-极速 Kiwi Edit 功能【替换，增加，去除，更换背景，参考图替换】_2033002935998746626.json、视频生成/图生视频/视频修改  视频编辑  Kiwi Edit_2046777773141794817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DownloadAndLoadMimicMotionModel`
-- `GetImageSizeAndCount`
-- `ImageResizeKJ`
+- `CR Prompt Text`
+- `GetVideoComponents`
 - `LoadImage`
-- `MimicMotionDecode`
-- `MimicMotionGetPoses`
-- `MimicMotionSampler`
-- `VHS_LoadVideo`
+- `LoadVideo`
+- `RunningHub KiwiEdit Loader`
+- `RunningHub KiwiEdit Sampler`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 2/3 个有
-- `ReActorFaceSwap` —— 2/3 个有
-- `CR Upscale Image` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,68 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_201
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.615222
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), GetNode, LoadImage, PreviewImage, Seed (rgthree), SetNode, VHS_VideoCombine, VideoContinuationGenerator, WanVideoBlender, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.7332
+common_nodes: [BasicScheduler, CLIPLoader, CR Float To String, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, ImageBatchMultiV2, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PreviewAudio, PrimitiveStringMultiline, ResolutionSelector, SelfLiftAvatarH3Sampler, ShowAnything|Mie, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/wan2.2 2张旋转-简化_2038442502138630146.json, 图片生成/图生图/wan2.2 4张旋转_2031620500375474178.json, 视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json, 视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968663694437699585.json, 视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2037072303892209666.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2039320713127006210.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2039344777270923265.json, 视频生成/图生视频/wan2.2-4张旋转-简化-新提示词_2039706653515321346.json]
+members: [图片生成/图生图/MV_数字人_最高质量+中等质量1分钟MV_数字人(selflift)_2113455986445996034.json, 图片生成/图生图/全新_Selflift+商用MV工作流+12种组合可选。完美数字人20260916版_2113463501913157634.json, 数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json, 数字人/数字人/MV 数字人-唱歌 说唱 口播 虚拟主播  minmaxh3 一分钟MV_数字人(selflift)_2111794578809507842.json, 数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json, 视频生成/图生视频/MV 数字人 最高质量版+中等质量1分钟MV_数字人_2102990042653356034.json, 视频生成/图生视频/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104938995259109378.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2105590721473507329.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2108379925534298113.json, 视频生成/图生视频/全新 Selflift+商用MV工作流+12种组合可选。完美数字人20260916版_2099750134669201409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_201
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/wan2.2 2张旋转-简化_2038442502138630146.json、图片生成/图生图/wan2.2 4张旋转_2031620500375474178.json、视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json、视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968663694437699585.json、视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/MV_数字人_最高质量+中等质量1分钟MV_数字人(selflift)_2113455986445996034.json、图片生成/图生图/全新_Selflift+商用MV工作流+12种组合可选。完美数字人20260916版_2113463501913157634.json、数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json、数字人/数字人/MV 数字人-唱歌 说唱 口播 虚拟主播  minmaxh3 一分钟MV_数字人(selflift)_2111794578809507842.json、数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `GetNode`
+全部 10 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Float To String`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `ImageBatchMultiV2`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `Seed (rgthree)`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `ShowAnything|Mie`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VideoContinuationGenerator`
-- `WanVideoBlender`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 8/9 个有
-- `CR Text` —— 6/9 个有
-- `ImageConcanate` —— 6/9 个有
-- `ImpactSwitch` —— 6/9 个有
-- `RH_LLMAPI_NODE` —— 6/9 个有
-- `Anything Everywhere` —— 1/9 个有
-- `Bjornulf_ShowFloat` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `PrimitiveFloat` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
+- `LTXVSeparateAVLatent` —— 9/10 个有
+- `LTXVAudioVAEEncode` —— 8/10 个有
+- `LTXVConcatAVLatent` —— 8/10 个有
+- `LoadAudio` —— 8/10 个有
+- `SetLatentNoiseMask` —— 8/10 个有
+- `SolidMask` —— 8/10 个有
+- `SoundFlow_GetLength` —— 8/10 个有
+- `JWStringToFloat` —— 6/10 个有
+- `TrimAudioDuration` —— 6/10 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 3/10 个有
+- `AudioCrop` —— 2/10 个有
+- `EmptyImage` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `Int` —— 2/10 个有
+- `LoadAudioUI` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `PurgeVRAM_UTK` —— 2/10 个有
+- `RH_Translator` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `忽略多组孤海` —— 2/10 个有
+- `TextInput_` —— 1/10 个有
 
 ## 典型参数
 

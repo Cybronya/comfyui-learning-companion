@@ -1,81 +1,87 @@
 ---
 name: text_to_image_lora_sampler_clip_183
 type: Text To Image
-frequency: 9
-level: strong
-coverage: 0.889667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 10
+level: weak
+coverage: 0.8771
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI字体设计生成工作流｜快速出艺术字效果｜海报标题排版必备工具_2112033407785066497.json, 图片生成/图生图/G image2.5全能系列模型｜单张成本低至7分钱_2098728369797025793.json, 图片生成/图生图/Z-Image turbo文生图｜又快又好秒出高质量图片_2101537574203514882.json, 图片生成/图生图/hqwa001字体生成工作流，图生图精准输出艺术字设计_2112243051635761153.json, 图片生成/图生图/全能图片G image2.5系列 文生图图生图单张成本低至7分钱_2098662218412941313.json, 图片生成/图生图/大理石美甲摆拍工作流｜穿戴甲产品图商拍级出图_2097206536471924738.json, 图片生成/文生图/Anima文生图 高质量图片生成处理工具_2100652917832376321.json, 图片生成/文生图/Anima文生图｜动漫图像生成一键直出创作_2090189762333335553.json, 图片生成/文生图/Anima生图｜文生图动漫风格_2090465768436752386.json]
+members: [图片生成/文生图/千问2.1文生图_2103829231951241218.json, 图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json, 图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json, 图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json, 图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json, 图片生成/文生图/文生图MOSS文生图2K极速版｜美少女写实风秒出图_2114228750840852482.json, 数字人/数字人/Qwen 2.1透明背景抠图，一键生成PNG透明图生图工具_2102899365059846146.json, 数字人/数字人/Qwen Image 2.1文生图处理生成工具_2102554303809544193.json, 视频生成/图生视频/Qwen_2.1透明背景抠图，一键生成PNG透明图生图工具_2104737318635659265.json, 视频生成/图生视频/Qwen_Image_2.1透明背景抠图，PNG通道输出图生图专用工作流_2105508227860492289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_183
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI字体设计生成工作流｜快速出艺术字效果｜海报标题排版必备工具_2112033407785066497.json、图片生成/图生图/G image2.5全能系列模型｜单张成本低至7分钱_2098728369797025793.json、图片生成/图生图/Z-Image turbo文生图｜又快又好秒出高质量图片_2101537574203514882.json、图片生成/图生图/hqwa001字体生成工作流，图生图精准输出艺术字设计_2112243051635761153.json、图片生成/图生图/全能图片G image2.5系列 文生图图生图单张成本低至7分钱_2098662218412941313.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/千问2.1文生图_2103829231951241218.json、图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json、图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json、图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json、图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：10
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 7/9 个有
-- `LoraLoader` —— 4/9 个有
-- `ClownsharKSampler_Beta` —— 3/9 个有
-- `EmptySD3LatentImage` —— 2/9 个有
-- `LLGPTImage25Generator` —— 2/9 个有
-- `LoadAudio` —— 2/9 个有
-- `Qwen3ASRLoader` —— 2/9 个有
-- `Qwen3ASRTranscribe` —— 2/9 个有
-- `SaveText` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
+- `TextEncodeQwenImage21` —— 9/10 个有
+- `PreviewImage` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `ResolutionSelector` —— 7/10 个有
+- `孤海注释` —— 7/10 个有
+- `FastGroupsBypassSwitch` —— 6/10 个有
+- `TextGenerateLTX2Prompt` —— 5/10 个有
+- `LoadImage` —— 3/10 个有
+- `QwenImage21Cache` —— 3/10 个有
+- `TextCombinerTwo` —— 3/10 个有
+- `CM_FloatToInt` —— 2/10 个有
+- `CR Text` —— 2/10 个有
+- `EmptyImage` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `ComfySwitchNode` —— 1/10 个有
+- `EmptyFlux2LatentImage` —— 1/10 个有
+- `ImageConcatMulti` —— 1/10 个有
+- `SaveImageAdvanced` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 1024 | 10 | 0% |
+| 高度 | 80 | 80 - 1024 | 10 | 0% |
+| 采样步数 | 4 | 4 - 50 | 10 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 10 | 75% |
+| 采样算法 | er_sde | - | 10 | 90% |
+| 调度器 | beta | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 50，10 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，10 个样本
+- 采样算法 最常用 er_sde，10 个样本，一致性 90%
+- 调度器 最常用 beta，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（12/10 个样本）：Steps较低可能导致细节不足

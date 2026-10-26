@@ -3,71 +3,67 @@ name: text_to_image_lora_sampler_clip_41
 type: Text To Image
 frequency: 19
 level: strong
-coverage: 0.882211
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.727053
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PixaromaGroupSwitch, QwenImage21Cache, QwenPERewriteT8, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json, 图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json, 图片生成/图生图/Qwen 2.1图像编辑4步加速，电商产品图生图多场景处理工作流_2103186678771970050.json, 图片生成/图生图/Qwen 2.1图像编辑4步加速｜电商产品图改图全靠它_2103067038968279041.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑t8加速版｜图生图一键重绘提速神器_2104018991554580482.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑 加速版，角色设计图生图处理工具_2106137062041804802.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑工作流，人像写真图生图其它图片处理方案_2107212690769928193.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑高速版 指令式局部修改一键出图_2104260036716486658.json, 图片生成/图生图/Qwen Image 2.1 PE多图编辑｜最多9张图一起混合处理_2103039755335323650.json, 图片生成/图生图/Qwen Image 2.1人物换脸工作流，图生图面部替换处理工具_2106469574010036225.json, 图片生成/图生图/Qwen Image 2.1人物换脸工作流｜图生图换脸自然贴合_2103056179755835394.json, 图片生成/图生图/Qwen Image 2.1人物换脸，高保真面部替换图生图方案_2103185191014588417.json, 图片生成/图生图/Qwen Image 2.1整张图像编辑加速工作流，图生图处理方案_2106468101410869249.json, 图片生成/图生图/Qwen2.1图像编辑PE增强版，已清理think的图生图处理工作流_2103888095346257922.json, 图片生成/图生图/qwen2.1图像编辑 局部修改指令式操作_2104648645625860097.json, 图片生成/图生图/qwen2.1移除rgba背景｜图生图透明通道处理利器_2104569513869135873.json, 图片生成/图生图/qwen2.1移除rgba通道 透明背景图处理_2104688268930535425.json, 图片生成/文生图/Qwen Image 2.1 ControlNet工作流，精准控制改图文生图图生图方案_2106521489427222529.json, 图片生成/文生图/qwen_image_21_controlnet可控生成｜文生图图生图精准控制_2106248623163011074.json]
+members: [图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json, 图片生成/反推提示词/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流，文生图图生图方案_2107156037143982082.json, 图片生成/反推提示词/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json, 图片生成/反推提示词/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json, 图片生成/反推提示词/Qwen Image 2.1文生图工作流V1.0｜2026开源最强模型高质量出图_2104514477067694082.json, 图片生成/反推提示词/开源最强模型Qwen Image 2.1文生图工作流V1.0｜文生图反推一应俱全_2106917950035947522.json, 图片生成/图生图/Qwen Image 2.1图像编辑2026开源最强模型V1.0工作流，反推提示词图生图方案_2108316718539034625.json, 图片生成/图生图/Qwen Image 2.1图像编辑V1.0增强｜十图编辑提示词优化_2108088006333784066.json, 图片生成/图生图/Qwen Image 2.1图像编辑V1.0｜2026开源最强带反推提示词_2108084985277272066.json, 图片生成/图生图/Qwen Image 2.1图像编辑全功能版｜反推提示词智能配文_2108092452891615233.json, 图片生成/图生图/Qwen Image 2.1多图编辑V1.0，角色一致性设计开源最强图生图_2112676635475533826.json, 图片生成/图生图/Qwen Image 2.1多图编辑V1.0｜角色一致性设计出图_2108091016531234818.json, 图片生成/图生图/开源最强模型Qwen_Image_2.1文生图工作流V1.0｜文生图反推一应俱全_2112364776969035777.json, 图片生成/图生图/开源最强模型Qwen_Image_2.1文生图工作流V1.0｜文生图反推一应俱全_2113911898285633538.json, 图片生成/文生图/Qwen Image 2.1图像编辑工作流｜文生图反推提示词图生图_2108397884294127617.json, 图片生成/文生图/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流_2108630605763272706.json, 图片生成/文生图/Qwen Image 2.1图生图编辑神器｜2026开源最强图像处理_2108410842583752705.json, 图片生成/文生图/Qwen Image 2.1海报生成专属工作流，文生图海报制作字体文本到图像方案_2107585434829279233.json, 视频生成/图生视频/开源最强模型Qwen_Image_2.1文生图工作流V1.0｜文生图反推一应俱全_2108366475907133441.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_41
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json、图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json、图片生成/图生图/Qwen 2.1图像编辑4步加速，电商产品图生图多场景处理工作流_2103186678771970050.json、图片生成/图生图/Qwen 2.1图像编辑4步加速｜电商产品图改图全靠它_2103067038968279041.json、图片生成/图生图/Qwen Image 2.1 PE 图像编辑t8加速版｜图生图一键重绘提速神器_2104018991554580482.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json、图片生成/反推提示词/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流，文生图图生图方案_2107156037143982082.json、图片生成/反推提示词/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json、图片生成/反推提示词/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json、图片生成/反推提示词/Qwen Image 2.1文生图工作流V1.0｜2026开源最强模型高质量出图_2104514477067694082.json…）
 
 - **类型**：Text To Image
 - **样本数**：19
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 19 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PixaromaGroupSwitch`
+- `QwenImage21Cache`
+- `QwenPERewriteT8`
 - `SaveImage`
+- `SaveImageAdvanced`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 18/19 个有
-- `LoadImage` —— 17/19 个有
-- `ResolutionSelector` —— 16/19 个有
-- `QwenImage21Cache` —— 15/19 个有
-- `easy showAnything` —— 13/19 个有
-- `CR Prompt Text` —— 12/19 个有
-- `QwenPERewriteT8` —— 12/19 个有
-- `easy cleanGpuUsed` —— 12/19 个有
-- `Image Comparer (rgthree)` —— 9/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/19 个有
+- `Fast Bypasser (rgthree)` —— 18/19 个有
+- `Mute / Bypass Repeater (rgthree)` —— 18/19 个有
+- `孤海注释` —— 16/19 个有
+- `CR Text Concatenate` —— 13/19 个有
+- `GetNode` —— 13/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/19 个有
+- `ResolutionSelector` —— 13/19 个有
+- `SetNode` —— 13/19 个有
+- `ShowText|pysssss` —— 13/19 个有
+- `Fast Groups Muter (rgthree)` —— 12/19 个有
+- `PixaromaResolution` —— 7/19 个有
 - `PreviewAny` —— 7/19 个有
-- `StringConstantMultiline` —— 7/19 个有
-- `StringFunction|pysssss` —— 7/19 个有
-- `StringReplace` —— 7/19 个有
-- `TextGenerate` —— 7/19 个有
-- `BatchImagesNode` —— 6/19 个有
-- `QwenImage21BlockCacheT8` —— 6/19 个有
-- `QwenImage21SageAttentionT8` —— 6/19 个有
-- `QwenImage21SpectrumT8` —— 6/19 个有
-- `easy seed` —— 6/19 个有
-- `FluxKontextImageScale` —— 5/19 个有
-- `ColorMatch` —— 3/19 个有
-- `GrowMaskWithBlur` —— 3/19 个有
-- `LayerUtility: CropByMask V2` —— 3/19 个有
-- `LayerUtility: ImageScaleRestore V2` —— 3/19 个有
-- `LayerUtility: RestoreCropBox` —— 3/19 个有
-- `AIO_Preprocessor` —— 2/19 个有
-- `ModelPatchLoader` —— 2/19 个有
-- `PreviewImage` —— 2/19 个有
-- `ZImageFunControlnet` —— 2/19 个有
+- `llama_cpp_instruct_adv` —— 5/19 个有
+- `llama_cpp_model_loader` —— 5/19 个有
+- `llama_cpp_parameters` —— 5/19 个有
+- `ModelAttentionBackend` —— 2/19 个有
+- `EmptyImage` —— 1/19 个有
+- `PreviewImage` —— 1/19 个有
+- `VRAM_Debug` —— 1/19 个有
 
 ## 典型参数
 
@@ -85,7 +81,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 22/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 37/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -96,4 +92,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，19 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，19 个样本，取值集中（一致性 100%）
-- 高发问题（22/19 个样本）：Steps较低可能导致细节不足
+- 高发问题（37/19 个样本）：Steps较低可能导致细节不足

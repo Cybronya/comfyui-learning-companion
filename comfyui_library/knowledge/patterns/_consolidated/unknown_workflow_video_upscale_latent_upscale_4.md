@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_4
 type: Unknown Workflow
-frequency: 33
+frequency: 23
 level: moderate
-coverage: 0.759697
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.714174
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3高质量全能参考（二采加速版）_2088785262628397058.json, 视频生成/图生视频/MiniMax H3数字人视频带货！多图生视频_2102748591906451458.json, 视频生成/图生视频/MiniMax-H3 数字人视频带货-多图参考生视频_2096052002777288705.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108137283806392322.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108165309235548162.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货！_2095315877355937794.json, 视频生成/图生视频/MiniMax-H3_ 数字人视频带货！_2097134810035740673.json, 视频生成/图生视频/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2110655333088710658.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2097991965936799745.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2098027200141414401.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2104158521985163265.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2104200339196047362.json, 视频生成/图生视频/MiniMaxH3  数字人视频带货  H3多图生视频_2097942688929767426.json, 视频生成/图生视频/MiniMaxH3 图生视频！2K快速版！_2103052957838307329.json, 视频生成/图生视频/MiniMaxH3数字人视频带货H3多图生视频电商带货视频数字人视频_2108913611300237314.json, 视频生成/图生视频/MiniMaxH3数字人视频带货H3多图生视频电商带货视频数字人视频_2110325567538159618.json, 视频生成/图生视频/MiniMaxH3数字人视频带货！H3多图生视频！_2104537388365213698.json, 视频生成/图生视频/MiniMaxH3数字人视频带货！H3多图生视频！艾橘溪_2088870328951984130.json, 视频生成/图生视频/MiniMaxH3数字人视频带货！H3多图生视频！艾橘溪_2100540179919491073.json, 视频生成/图生视频/MiniMaxH3数字人视频带货！效果超好！_2096285325629935618.json, 视频生成/图生视频/minimax_h3_fast-清晰武戏-四图_2109487427214733314.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_trim_latent_upscale_2109449701736140802.json, 视频生成/图生视频/minimax_h3_r2v_Latent%20Upscaler3_2090611335280287745.json, 视频生成/图生视频/minimax_h3_r2v_story_board_2091816381816860674.json, 视频生成/图生视频/多图生视频，超强数字人视频带货！可用于多人场景视频制作_2103095600538546178.json, 视频生成/图生视频/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2097216829407186945.json, 视频生成/图生视频/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2097872678001664001.json, 视频生成/图生视频/数字人视频带货 Images into Videos—Digital Avatars Drive S_2098219003369054210.json, 视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2100028236955738114.json, 视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2101558136091013122.json, 视频生成/文生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频 口播带货视频_2098680337055444993.json, 视频生成/文生视频/MiniMaxH3数字人视频带货！H3多图生视频！_2098729617451479042.json, 视频生成/文生视频/minimax_h3_r2v_video_edit视频编辑_2094267455395950594.json]
+members: [视频生成/图生视频/02_H3首帧对白视频_1至5人_2101612649518813185.json, 视频生成/图生视频/02_H3首帧对白视频_1至5人_2113238126385778690.json, 视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json, 视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json, 视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json, 视频生成/图生视频/MiniMax H3双采参考生视频-8步turbo分镜叙事工作流_2095007873272209409.json, 视频生成/图生视频/MiniMax H3双采参考生视频（(Dasiwa v2版本）_2100154364542414850.json, 视频生成/图生视频/MiniMax H3双采多图参考生视频_2104183600680890369.json, 视频生成/图生视频/MiniMax H3双采数字人-双Pass高清精修口播工作流_2094984969503465474.json, 视频生成/图生视频/MiniMax H3（自用）_2099416401143492609.json, 视频生成/图生视频/MiniMax+H3参考生视频-最强战斗效果-多图参考_2096436150956285954.json, 视频生成/图生视频/MiniMax+H3双采全能工作流V2-音频驱动数字人-参考生视频_2111113734084190209.json, 视频生成/图生视频/MiniMaxH3_双采参考生视频_2104941388239560705.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100139084525166593.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2101871299831357442.json, 视频生成/图生视频/minimax H3 文戏工作流（急速版）_2106909033222459394.json, 视频生成/图生视频/minimaxh3高动文武双修工作流_2110566903226916866.json, 视频生成/图生视频/minimaxh3高动文武双修工作流_2111010562334355457.json, 视频生成/图生视频/【MINIMAX H3】武戏-高动态_极速高清_2107175289238409217.json, 视频生成/文生视频/9月30日目前最强武戏-高动态_极速高清_ 自动提示词+手动提示词2选1_2104942695335682050.json, 视频生成/文生视频/minimax H3 文戏工作流（急速版）_2106909033222459394.json, 视频生成/文生视频/minimaxh3高动文武双修工作流_2106006102767915010.json, 视频生成/文生视频/【MINIMAX H3】武戏-高动态_极速高清_ 全自动输出_2104519856463900674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_4
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（视频生成/图生视频/H3高质量全能参考（二采加速版）_2088785262628397058.json、视频生成/图生视频/MiniMax H3数字人视频带货！多图生视频_2102748591906451458.json、视频生成/图生视频/MiniMax-H3 数字人视频带货-多图参考生视频_2096052002777288705.json、视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108137283806392322.json、视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108165309235548162.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/02_H3首帧对白视频_1至5人_2101612649518813185.json、视频生成/图生视频/02_H3首帧对白视频_1至5人_2113238126385778690.json、视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json、视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json、视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：33
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MinimaxH3LatentUpscaler3D`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ManualSigmas` —— 32/33 个有
-- `MiniMaxH3ReferenceToVideo` —— 32/33 个有
-- `ResolutionSelector` —— 32/33 个有
-- `LoraLoaderModelOnly` —— 30/33 个有
-- `GetNode` —— 29/33 个有
-- `SetNode` —— 29/33 个有
-- `JjkText` —— 27/33 个有
-- `MiniMaxH3SigmaShift` —— 7/33 个有
-- `ModelAttentionBackend` —— 6/33 个有
-- `PrimitiveStringMultiline` —— 6/33 个有
-- `SplitSigmas` —— 5/33 个有
-- `ModelPreviewOverrideKJ` —— 4/33 个有
-- `BlockSparseAttention` —— 3/33 个有
-- `孤海注释` —— 3/33 个有
-- `CR Prompt Text` —— 1/33 个有
-- `EmptyImage` —— 1/33 个有
-- `Float` —— 1/33 个有
-- `Int` —— 1/33 个有
-- `JjkShowText` —— 1/33 个有
-- `LoadAudio` —— 1/33 个有
-- `MiniMaxH3ImageToVideo` —— 1/33 个有
-- `PreviewAny` —— 1/33 个有
-- `PreviewImage` —— 1/33 个有
-- `RHLLMChatNode` —— 1/33 个有
-- `VHS_LoadVideo` —— 1/33 个有
+- `ModelAttentionBackend` —— 21/23 个有
+- `ResolutionSelector` —— 21/23 个有
+- `SolAttnMiniMax` —— 21/23 个有
+- `LoraLoaderBypassModelOnly` —— 20/23 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 20/23 个有
+- `LoraLoaderModelOnly` —— 18/23 个有
+- `Float` —— 15/23 个有
+- `ConcatTextOfUtils` —— 13/23 个有
+- `GetNode` —— 11/23 个有
+- `SetNode` —— 11/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/23 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 10/23 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 10/23 个有
+- `PreviewImage` —— 9/23 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/23 个有
+- `PreviewAny` —— 8/23 个有
+- `RH_LLMAPI_Pro_Node` —— 8/23 个有
+- `LoadAudio` —— 6/23 个有
+- `VAEDecode` —— 5/23 个有
+- `VAEDecodeAudio` —— 5/23 个有
+- `easy cleanGpuUsed` —— 5/23 个有
+- `easy anythingIndexSwitch` —— 4/23 个有
+- `ImpactSwitch` —— 3/23 个有
+- `CR Text Concatenate` —— 2/23 个有
+- `GetImageSize` —— 2/23 个有
+- `ImageScaleToTotalPixels` —— 2/23 个有
+- `ImpactInt` —— 2/23 个有
+- `MiniMaxH3DurationPlannerT8` —— 2/23 个有
+- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 2/23 个有
+- `EmptyImage` —— 1/23 个有
+- `Text Multiline` —— 1/23 个有
 
 ## 典型参数
 

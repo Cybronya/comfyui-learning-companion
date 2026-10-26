@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1284
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8045
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.75
+common_nodes: [LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/nano 全能图片V1 2 pro_1993227466487644161.json, 图片生成/图生图/主图测试-Pro_2042175020784422914.json]
+members: [图片生成/反推提示词/Gemini2.0-图片反推_1902593401592688642.json, 图片生成/反推提示词/Joy Beta1全新模式打标器_1922601658482659330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1284
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/nano 全能图片V1 2 pro_1993227466487644161.json、图片生成/图生图/主图测试-Pro_2042175020784422914.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Gemini2.0-图片反推_1902593401592688642.json、图片生成/反推提示词/Joy Beta1全新模式打标器_1922601658482659330.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Text Multiline`
-- `easy showAnything`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
-- `MultiTextConcatenate` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
+- `Gemini_Flash_200_Exp` —— 1/2 个有
+- `JJC_JoyCaption` —— 1/2 个有
 
 ## 典型参数
 

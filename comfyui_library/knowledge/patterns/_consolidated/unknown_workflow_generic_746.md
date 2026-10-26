@@ -3,36 +3,35 @@ name: unknown_workflow_generic_746
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.77375
-common_nodes: [CR Prompt Text, LoadImage, SaveVideo]
+coverage: 0.9445
+common_nodes: [CR Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/(支持真人)超能视频2.0动作模仿RV2V（1秒1元）_2034225183669620738.json, 视频生成/图生视频/地表最强超能视频2.0-Fast全能参考图生视频-支持真人工作流_2037507739894685697.json, 视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json, 视频生成/文生视频/全能视频生成 图像+视频参考+语音驱动 支持真人 地表最强超能视频2.0 全能参考_2038435414712782850.json]
+members: [图片生成/图生图/全能图片 Pro_2027286874657656834.json, 图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json, 图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json, 图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_746
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/(支持真人)超能视频2.0动作模仿RV2V（1秒1元）_2034225183669620738.json、视频生成/图生视频/地表最强超能视频2.0-Fast全能参考图生视频-支持真人工作流_2037507739894685697.json、视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json、视频生成/文生视频/全能视频生成 图像+视频参考+语音驱动 支持真人 地表最强超能视频2.0 全能参考_2038435414712782850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片 Pro_2027286874657656834.json、图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json、图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json、图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+- `CR Text`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
+- `GetRandomIntegerInRange` —— 2/4 个有
+- `ImageStitch` —— 1/4 个有
 
 ## 典型参数
 

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [RHUploadZip_V2, SaveImage, SeedVR2]
+common_nodes: [MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextToModelNode, MeshyTextureNode, SaveGLB]
 problems: []
 missing: []
-members: [图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json, comfyui-workflow-templates-json/api_meshy7_text_to_model.json, comfyui-workflow-templates-json/api_meshy_text_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_901
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json、comfyui-workflow-templates-json/api_meshy7_text_to_model.json、comfyui-workflow-templates-json/api_meshy_text_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,9 +23,12 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RHUploadZip_V2`
-- `SaveImage`
-- `SeedVR2`
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextToModelNode`
+- `MeshyTextureNode`
+- `SaveGLB`
 
 ## 典型参数
 

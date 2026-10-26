@@ -3,43 +3,36 @@ name: unknown_workflow_generic_370
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.904714
-common_nodes: [LoadAudio, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, SaveAudio]
+coverage: 0.913143
+common_nodes: [CR Prompt Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json, 音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json, 音频生成/音频生成/OmniVoice 单人声音克隆_多人声音克隆_长文本克隆_2041716483511816193.json, 音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json, 音频生成/音频生成/OmniVoice全家桶 - 语音克隆 - 声音设计 - 多人对话_2041718125397286913.json, 音频生成/音频生成/omnivoice-tts  单人对话 双人对话 声音设计 全聚合版_2041524559928627202.json, 音频生成/音频生成/超强 600+语言支持 omnivoice-tts ComfyUI工作流_2042551349283393537.json]
+members: [图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json, 图片生成/图生图/（RH版）即梦4.0图像编辑单图V1_1965514036240633858.json, 图片生成/图生图/（RH版）即梦4.0图像编辑双图V1_1965516818934808577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_370
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json、音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json、音频生成/音频生成/OmniVoice 单人声音克隆_多人声音克隆_长文本克隆_2041716483511816193.json、音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json、音频生成/音频生成/OmniVoice全家桶 - 语音克隆 - 声音设计 - 多人对话_2041718125397286913.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json、图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json、图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json、图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json、图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `SaveAudio`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `OmniVoiceLongformTTS` —— 6/7 个有
-- `OmniVoiceVoiceDesignTTS` —— 6/7 个有
-- `OmniVoiceWhisperLoader` —— 6/7 个有
-- `PreviewAudio` —— 5/7 个有
-- `Qwen3ASRLoader` —— 4/7 个有
-- `Qwen3ASRTranscribe` —— 4/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `CR Text` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `easy showAnything` —— 3/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PDIMAGE_LongerSize` —— 1/7 个有
 
 ## 典型参数
 

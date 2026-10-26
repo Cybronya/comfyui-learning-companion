@@ -1,96 +1,87 @@
 ---
 name: image_to_image_upscale_lora_sampler_70
 type: Image To Image
-frequency: 2
+frequency: 3
 level: weak
-coverage: 0.723
-common_nodes: [Anything Everywhere, Anything Everywhere3, CLIPTextEncode, CR Text Concatenate, ConditioningZeroOut, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, GetNode, Image Comparer (rgthree), ImageAndMaskPreview, ImageCompositeMasked, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LayerColor: ColorAdapter, LayerMask: MaskGrow, LoadImage, LoraLoader, MaskPreview+, PreviewImage, ResizeImageMixlab, SaveImage, SetNode, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextInput_, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.666667
+common_nodes: [CLIPTextEncode, CR SDXL Aspect Ratio, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageScaleBy, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, PreviewImage, SaveImage, Seed (rgthree), SimpleMath+, UltimateSDUpscale, UnetLoaderGGUF, Upscale Model Loader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-无损修复放大_1963946685644816386.json, 图片生成/图生图/高清放大-无损去噪_1949822004884062210.json]
+members: [图片生成/文生图/Qwen Image edit 2509 + Nunchaku + SRPO 高清去AI感工作流  课程对应流程_1971577017105838081.json, 图片生成/文生图/Qwen Nunchaku 2509 多批次改图《街头霸王》实例工作流 ____1971835496915791873.json, 图片生成/文生图/SRPO_img2img_refiner_图像超分放大流-超写实相片级4K放大工作流_1970812659094482946.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_70
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux-无损修复放大_1963946685644816386.json、图片生成/图生图/高清放大-无损去噪_1949822004884062210.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image edit 2509 + Nunchaku + SRPO 高清去AI感工作流  课程对应流程_1971577017105838081.json、图片生成/文生图/Qwen Nunchaku 2509 多批次改图《街头霸王》实例工作流 ____1971835496915791873.json、图片生成/文生图/SRPO_img2img_refiner_图像超分放大流-超写实相片级4K放大工作流_1970812659094482946.json）
 
 - **类型**：Image To Image
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Anything Everywhere3`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Text Concatenate`
+- `CR SDXL Aspect Ratio`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `Florence2ModelLoader`
-- `Florence2Run`
 - `FluxGuidance`
-- `GetNode`
 - `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `ImageCompositeMasked`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerColor: ColorAdapter`
-- `LayerMask: MaskGrow`
 - `LoadImage`
-- `LoraLoader`
-- `MaskPreview+`
+- `LoraLoaderModelOnly`
+- `ModelSamplingFlux`
 - `PreviewImage`
-- `ResizeImageMixlab`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextInput_`
-- `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `Seed (rgthree)`
+- `SimpleMath+`
+- `UltimateSDUpscale`
+- `UnetLoaderGGUF`
+- `Upscale Model Loader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `CFGNorm` —— 2/3 个有
+- `CLIPLoader` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `EmptySD3LatentImage` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `ModelSamplingAuraFlow` —— 2/3 个有
+- `NunchakuQwenImageDiTLoader` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `TextEncodeQwenImageEditPlus` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 0.3 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 30 | 8 - 30 | 3 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 0.4 | 0.1 - 1 | 3 | 25% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 30，观测区间 8 - 30，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.4，观测区间 0.1 - 1，3 个样本，取值分散，一致性仅 25%
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

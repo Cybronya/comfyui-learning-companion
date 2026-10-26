@@ -1,100 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_404
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.7014
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+frequency: 6
+level: moderate
+coverage: 0.902833
+common_nodes: [CR Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, PrimitiveString, RHHiddenNodes, ShowText|pysssss, SimpleMath+, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-数字人-自定义音频图像(抖音复现)_2044784831422275586.json, 视频生成/图生视频/LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json, 视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2043896242345877506.json, 视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2046132388467580929.json, 视频生成/图生视频/LTX2.3稳定版数字人（最新版模型）_2044579812215361538.json]
+members: [视频生成/图生视频/AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频可控动态特效_1972840899115982849.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1978395931462750209.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1983384271719178241.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1997296684856184833.json, 视频生成/图生视频/【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（超清极速版）上传图像 描述提示词 选择时_1986614260161802241.json, 视频生成/图生视频/超高清动态可控+图生视频_2000608188644851714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_404
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-数字人-自定义音频图像(抖音复现)_2044784831422275586.json、视频生成/图生视频/LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json、视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2043896242345877506.json、视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2046132388467580929.json、视频生成/图生视频/LTX2.3稳定版数字人（最新版模型）_2044579812215361538.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频可控动态特效_1972840899115982849.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1978395931462750209.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1983384271719178241.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1997296684856184833.json、视频生成/图生视频/【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（超清极速版）上传图像 描述提示词 选择时_1986614260161802241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：70%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
+全部 6 个 workflow 都包含：
 - `CR Text`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
+- `CreateCFGScheduleFloatList`
+- `Float`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `UNETLoader`
-- `VAELoader`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `RHHiddenNodes`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `Wan22PromptSelector`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/5 个有
-- `TrimAudioDuration` —— 4/5 个有
-- `GetImageSize` —— 3/5 个有
-- `LTXVEmptyLatentAudio` —— 3/5 个有
-- `SaveAudio` —— 3/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `SigmasPreview` —— 2/5 个有
-- `llama_cpp_instruct_adv` —— 2/5 个有
-- `llama_cpp_model_loader` —— 2/5 个有
-- `llama_cpp_parameters` —— 2/5 个有
-- `AudioCrop` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Display Any (rgthree)` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `LTXVImgToVideoConditionOnly` —— 1/5 个有
-- `LTXVLatentUpsampler` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LatentUpscaleModelLoader` —— 1/5 个有
-- `Mute / Bypass Relay (rgthree)` —— 1/5 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/5 个有
-- `PreviewTextNode` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `RH_LLMAPI_Pro_Node` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 5/6 个有
+- `GIMMVFI_interpolate` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `WanVideoLoraSelectMulti` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 3 | 100% |
-| 高度 | 24 | 24 - 24 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -102,5 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

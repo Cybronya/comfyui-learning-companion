@@ -3,32 +3,34 @@ name: unknown_workflow_generic_1444
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.636
-common_nodes: [CR Prompt Text, Fast Groups Muter (rgthree), LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.757
+common_nodes: [BiRefNet_Hugo, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json, 图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json]
+members: [图片生成/图生图/两种最好用的抠图节点对比_1950092183018848257.json, 图片生成/图生图/抠图｜BiRefNet V2_2110554173988229121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1444
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json、图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/两种最好用的抠图节点对比_1950092183018848257.json、图片生成/图生图/抠图｜BiRefNet V2_2110554173988229121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Muter (rgthree)`
+- `BiRefNet_Hugo`
 - `LoadImage`
 - `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `InspyrenetRembg` —— 1/2 个有
+- `MaskToImage` —— 1/2 个有
 
 ## 典型参数
 

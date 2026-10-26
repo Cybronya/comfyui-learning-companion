@@ -1,77 +1,56 @@
 ---
 name: unknown_workflow_sampler_vae_59
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.692
-common_nodes: [AIO_Preprocessor, CFGNorm, CLIPLoader, ConditioningZeroOut, DrawMaskOnImage, GetNode, ImageConcatMulti, ImageResize+, ImageResizeKJ, KSampler, LayerMask: BiRefNetUltraV2, LayerUtility: ImageBlend, LayerUtility: ImageRemoveAlpha, LoadImage, ModelSamplingAuraFlow, PathchSageAttentionKJ, Primitive integer [Crystools], QwenEditConfigPreparer, RHHiddenNodes, SaveImage, SetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, VAEDecode, VAELoader, easy imagePixelPerfect, 孤海图像缩放按像素]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.73
+common_nodes: [DualCLIPLoader, DyPE_Condition, DyPE_Encode, DyPE_KSampler, DyPE_Model, SaveImage, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/人物替换 · 姿势参考 · 还原质感  V2_2006694084555051009.json, 图片生成/图生图/人物替换 · 姿势参考 · 还原质感  V2_2026570266813407233.json]
+members: [图片生成/文生图/DyPE Krea文生图修正稳定版V1（2-4K高清直出）_1984246530523742209.json, 图片生成/文生图/dype仿图高分辨率_1984409596913664002.json, 图片生成/文生图/文生图2-4K高清直出-DyPE Krea_1984816251937636354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_59
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物替换 · 姿势参考 · 还原质感  V2_2006694084555051009.json、图片生成/图生图/人物替换 · 姿势参考 · 还原质感  V2_2026570266813407233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/DyPE Krea文生图修正稳定版V1（2-4K高清直出）_1984246530523742209.json、图片生成/文生图/dype仿图高分辨率_1984409596913664002.json、图片生成/文生图/文生图2-4K高清直出-DyPE Krea_1984816251937636354.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CFGNorm`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `DrawMaskOnImage`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `ImageResizeKJ`
-- `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `Primitive integer [Crystools]`
-- `QwenEditConfigPreparer`
-- `RHHiddenNodes`
+全部 3 个 workflow 都包含：
+- `DualCLIPLoader`
+- `DyPE_Condition`
+- `DyPE_Encode`
+- `DyPE_KSampler`
+- `DyPE_Model`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `VAEDecode`
 - `VAELoader`
-- `easy imagePixelPerfect`
-- `孤海图像缩放按像素`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 9 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

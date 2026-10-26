@@ -3,31 +3,33 @@ name: unknown_workflow_generic_462
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartVideoGImageToVideo, SaveVideo]
+coverage: 0.944333
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/GOZAO-文图生视频-0图_2078368647386587138.json, 视频生成/文生视频/GOZAO-文图生视频-1图_2078370079468777474.json, 视频生成/文生视频/GOZAO-文图生视频-2图_2078379042386046978.json, 视频生成/文生视频/GOZAO-文图生视频-3图_2078380576075247617.json, 视频生成/文生视频/GOZAO-文图生视频-4图_2078382913359540225.json, 视频生成/文生视频/GOZAO-文图生视频-5图_2078384505290842114.json]
+members: [图片生成/图生图/flux kontext pro_1963792667628097538.json, 图片生成/图生图/flux.1 kontext 用自然语言扩图_1932793376875892737.json, 图片生成/图生图/kontext昼夜切换_1932251539602046978.json, 图片生成/文生图/Flux Kontext超强万物迁移+角色一致性控制工作流_1933715424578330625.json, 图片生成/文生图/Flux.1 Kontext 超强角色一致_1933765756871954434.json, 图片生成/文生图/安-一句话生图改图，类似全能图片G4o的使用方法（Kontext ）_1931559252207579138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_462
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/GOZAO-文图生视频-0图_2078368647386587138.json、视频生成/文生视频/GOZAO-文图生视频-1图_2078370079468777474.json、视频生成/文生视频/GOZAO-文图生视频-2图_2078379042386046978.json、视频生成/文生视频/GOZAO-文图生视频-3图_2078380576075247617.json、视频生成/文生视频/GOZAO-文图生视频-4图_2078382913359540225.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/flux kontext pro_1963792667628097538.json、图片生成/图生图/flux.1 kontext 用自然语言扩图_1932793376875892737.json、图片生成/图生图/kontext昼夜切换_1932251539602046978.json、图片生成/文生图/Flux Kontext超强万物迁移+角色一致性控制工作流_1933715424578330625.json、图片生成/文生图/Flux.1 Kontext 超强角色一致_1933765756871954434.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `RH_RhartVideoGImageToVideo`
-- `SaveVideo`
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
+- `ArgosTranslateTextNode` —— 5/6 个有
+- `Bjornulf_ShowStringText` —— 3/6 个有
 
 ## 典型参数
 

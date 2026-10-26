@@ -3,41 +3,38 @@ name: unknown_workflow_video_61
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.875333
-common_nodes: [CR Prompt Text, GetVideoComponents, JWInteger, LoadVideo, RunningHub Univideo Editor, RunningHub Univideo Loader, SaveVideo]
+coverage: 0.712
+common_nodes: [GetVideoComponents, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, PreviewAny, RH_Astra, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/UniVideo万能视频编辑V1_2012118316487286785.json, 视频生成/图生视频/UniVideo视频角色迁移V1_2012169222125785089.json, 视频生成/图生视频/最强视频编辑v2版_2012431207476240386.json]
+members: [数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json, 数字人/数字人/视频高清放大！极速！Topaz - Iris版_2099660465621258241.json, 视频生成/图生视频/视频超分_TopazIris_2099775194104684546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_61
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/UniVideo万能视频编辑V1_2012118316487286785.json、视频生成/图生视频/UniVideo视频角色迁移V1_2012169222125785089.json、视频生成/图生视频/最强视频编辑v2版_2012431207476240386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json、数字人/数字人/视频高清放大！极速！Topaz - Iris版_2099660465621258241.json、视频生成/图生视频/视频超分_TopazIris_2099775194104684546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
 - `GetVideoComponents`
-- `JWInteger`
+- `ImageFromBatch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadVideo`
-- `RunningHub Univideo Editor`
-- `RunningHub Univideo Loader`
+- `PreviewAny`
+- `RH_Astra`
 - `SaveVideo`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
 
 ## 典型参数
 

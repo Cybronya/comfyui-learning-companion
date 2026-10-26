@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [IndexTTSProNode, LoadAudio, SaveAudio]
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json, 音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json]
+members: [数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json, 数字人/数字人/全能图片G-2.0-图生图-低价渠道版_2049488440575660034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1656
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json、音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json、数字人/数字人/全能图片G-2.0-图生图-低价渠道版_2049488440575660034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,12 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTSProNode`
-- `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 1/2 个有
-- `TimbreAudioLoader` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
 
 ## 典型参数
 

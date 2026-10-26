@@ -3,43 +3,34 @@ name: unknown_workflow_generic_251
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.853556
-common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, SaveAudio, ShowText|pysssss]
+coverage: 0.816222
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json, 音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json, 音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json, 音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033118250942337025.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033509490481434625.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆_2034064881514717186.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆【内置翻译】_2034851081049608194.json]
+members: [图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json, 图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json, 图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json, 图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json, 图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json, 图片生成/图生图/全能图片2.0-二图生图_2027911158522449922.json, 图片生成/图生图/全能图片2.0-单图编辑_2027911148363845633.json, 图片生成/图生图/全能图片2.0_2027243924556877826.json, 图片生成/图生图/全能图片2.0_2027319442090237954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_251
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json、音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json、音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json、音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json、音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json、图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json、图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json、图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json、图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `FishS2VoiceCloneTTS`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/9 个有
-- `easy cleanGpuUsed` —— 5/9 个有
-- `FishS2TTS` —— 3/9 个有
-- `FishS2MultiSpeakerTTS` —— 2/9 个有
-- `Display Any (rgthree)` —— 1/9 个有
-- `RH_LLMAPI_NODE` —— 1/9 个有
-- `easy convertAnything` —— 1/9 个有
-- `easy saveText` —— 1/9 个有
-- `ttN concat` —— 1/9 个有
+- `GetRandomIntegerInRange` —— 1/9 个有
+- `TT_img_enc` —— 1/9 个有
 
 ## 典型参数
 

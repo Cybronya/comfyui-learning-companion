@@ -3,33 +3,33 @@ name: unknown_workflow_video_114
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.778
-common_nodes: [GetImageRangeFromBatch, Image Comparer (rgthree), Int, SeedVR2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.8635
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频放大，用很多目前这个最满意886666666666_1944672694811938818.json, 视频生成/图生视频/视频放大，用很多目前这个最满意_1944669713387671554.json]
+members: [视频生成/图生视频/Wan_happyhorse系列模型_2100407997376843777.json, 视频生成/图生视频/seedance2.0 Fast全能参考生成视频_2049837415535267842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_114
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频放大，用很多目前这个最满意886666666666_1944672694811938818.json、视频生成/图生视频/视频放大，用很多目前这个最满意_1944669713387671554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan_happyhorse系列模型_2100407997376843777.json、视频生成/图生视频/seedance2.0 Fast全能参考生成视频_2049837415535267842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `Image Comparer (rgthree)`
-- `Int`
-- `SeedVR2`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `LLWanVideo` —— 1/2 个有
+- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 1/2 个有
 
 ## 典型参数
 

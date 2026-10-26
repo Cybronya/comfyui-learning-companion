@@ -3,36 +3,38 @@ name: unknown_workflow_generic_243
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.688
-common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
+coverage: 0.943111
+common_nodes: [PreviewTextNode, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json, 视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json, 视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json, 视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json, 视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json, 视频生成/文生视频/全能视频S-卖护肤品+衣服+兵马俑_1977261430313492482.json, 视频生成/文生视频/全能视频S-图生视频-蛤蟆精_1994200651171299330.json, 视频生成/文生视频/全能视频S-文生视频-与小时候的自己一起玩耍_1978032008305717250.json, 视频生成/文生视频/全能视频S-文生视频-老鼠人_1990657346928074753.json]
+members: [图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json, 图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100070771115773954.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100182023997579266.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100223245185277953.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2101867405055188993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_243
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json、视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json、视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json、视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json、视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json、图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
+- `PreviewTextNode`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `RH_Sora2_T2V` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Fast Groups Muter (rgthree)` —— 1/9 个有
-- `TextInput_` —— 1/9 个有
+- `LoadImage` —— 8/9 个有
+- `Text Multiline` —— 8/9 个有
+- `EmptyImage` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `CRT_StringSplitter` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
 
 ## 典型参数
 

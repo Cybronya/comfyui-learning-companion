@@ -3,35 +3,41 @@ name: unknown_workflow_video_74
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.769
-common_nodes: [Bookmark (rgthree), CR Prompt Text, RH_Sora2_T2V, SaveVideo, SeedVR2, VHS_LoadVideoPath, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+coverage: 0.875333
+common_nodes: [CR Prompt Text, GetVideoComponents, JWInteger, LoadVideo, RunningHub Univideo Editor, RunningHub Univideo Loader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json]
+members: [视频生成/图生视频/UniVideo万能视频编辑V1_2012118316487286785.json, 视频生成/图生视频/UniVideo视频角色迁移V1_2012169222125785089.json, 视频生成/图生视频/最强视频编辑v2版_2012431207476240386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_74
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/UniVideo万能视频编辑V1_2012118316487286785.json、视频生成/图生视频/UniVideo视频角色迁移V1_2012169222125785089.json、视频生成/图生视频/最强视频编辑v2版_2012431207476240386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
 - `CR Prompt Text`
-- `RH_Sora2_T2V`
+- `GetVideoComponents`
+- `JWInteger`
+- `LoadVideo`
+- `RunningHub Univideo Editor`
+- `RunningHub Univideo Loader`
 - `SaveVideo`
-- `SeedVR2`
-- `VHS_LoadVideoPath`
-- `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcanate` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `DapaoImageAspectRatioResizeNode` —— 1/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
+- `RMBG` —— 1/3 个有
 
 ## 典型参数
 

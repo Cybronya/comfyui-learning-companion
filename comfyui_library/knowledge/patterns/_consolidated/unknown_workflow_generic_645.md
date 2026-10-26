@@ -1,44 +1,36 @@
 ---
 name: unknown_workflow_generic_645
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9915
-common_nodes: [GetExpression2, GetFaceLandmarks, GetHeadPose, HMFaceToolkitsLoader, HMImagePipelineLoader, HMPipelineImage, LoadImage, SaveImage]
+coverage: 0.95
+common_nodes: [CR Prompt Text, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json, 图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json, 图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json, 图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json]
+members: [音频生成/音频生成/AA--Qwen3TTS 声音设计+indexTTS情感增强--角色配音_有声书_2016086980660039681.json, 音频生成/音频生成/QWEN3 TTS声音设计V1_2014527958412697602.json, 音频生成/音频生成/QWEN3 TTS声音设计V1_2032440396629938177.json, 音频生成/音频生成/QWEN3 TTS声音设计_2014644006713565185.json, 音频生成/音频生成/QWEN音色设计_2085682346052898817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_645
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json、图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json、图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json、图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3TTS 声音设计+indexTTS情感增强--角色配音_有声书_2016086980660039681.json、音频生成/音频生成/QWEN3 TTS声音设计V1_2014527958412697602.json、音频生成/音频生成/QWEN3 TTS声音设计V1_2032440396629938177.json、音频生成/音频生成/QWEN3 TTS声音设计_2014644006713565185.json、音频生成/音频生成/QWEN音色设计_2085682346052898817.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetExpression2`
-- `GetFaceLandmarks`
-- `GetHeadPose`
-- `HMFaceToolkitsLoader`
-- `HMImagePipelineLoader`
-- `HMPipelineImage`
-- `LoadImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `ExpressionEditor` —— 1/4 个有
-- `Get Image Size` —— 1/4 个有
-- `JWImageResize` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `IndexTTS2Run` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,36 +1,47 @@
 ---
 name: unknown_workflow_generic_659
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_SeedreamV5LiteImageToImage, SaveImage, Text]
+coverage: 0.8938
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json, 图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json, 图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json, 图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json]
+members: [音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json, 音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json, 音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json, 音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json, 音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_659
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json、图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json、图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json、图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json、音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json、音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json、音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json、音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_SeedreamV5LiteImageToImage`
-- `SaveImage`
-- `Text`
+全部 5 个 workflow 都包含：
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/4 个有
-- `Switch` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClone` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `WhisperSTT` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

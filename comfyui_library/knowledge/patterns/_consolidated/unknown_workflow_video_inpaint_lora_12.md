@@ -3,72 +3,58 @@ name: unknown_workflow_video_inpaint_lora_12
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.901
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, GetImageRangeFromBatch, GetImageSize, Image To Mask, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, ManualSigmas, PathchSageAttentionKJ, PrimitiveInt, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncodeForInpaint, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
+coverage: 0.822
+common_nodes: [CLIPLoader, CLIPTextEncode, GrowMaskWithBlur, Image Comparer (rgthree), ImpactSwitch, InpaintModelConditioning, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingSD3, SaveImage, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-视频自动去字幕_去水印_模糊修复_高清放大（4合1）_2053854443006898178.json, 视频生成/图生视频/LTX2.3自动一键去字幕_2042927263661957121.json]
+members: [图片生成/图生图/Wan2.1再次突破极限：足部精修，还原足下每寸精彩！最强修脚，脚部修复，足部修复_1946405613585723393.json, 图片生成/图生图/Wan2.1完美修复—手部_修脚_精修_修复_1976878926352076802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-视频自动去字幕_去水印_模糊修复_高清放大（4合1）_2053854443006898178.json、视频生成/图生视频/LTX2.3自动一键去字幕_2042927263661957121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Wan2.1再次突破极限：足部精修，还原足下每寸精彩！最强修脚，脚部修复，足部修复_1946405613585723393.json、图片生成/图生图/Wan2.1完美修复—手部_修脚_精修_修复_1976878926352076802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `Image To Mask`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ColorImage`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `RandomNoise`
-- `RepeatImageBatch`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `SimpleMath+`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `ImpactSwitch`
+- `InpaintModelConditioning`
+- `KSampler`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MaskPreview+`
+- `ModelSamplingSD3`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeForInpaint`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `VAEDecode`
+- `VAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/2 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/2 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.2 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -76,6 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

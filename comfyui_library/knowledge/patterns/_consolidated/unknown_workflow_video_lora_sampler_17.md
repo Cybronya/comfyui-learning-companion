@@ -1,110 +1,97 @@
 ---
 name: unknown_workflow_video_lora_sampler_17
 type: Unknown Workflow
-frequency: 30
+frequency: 43
 level: moderate
-coverage: 0.5871
-common_nodes: [BBoxYOLO, BatchCount+, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, DrawViTPose, ImageBatch, ImageFromBatch, ImageResizeKJv2, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LazySwitch2way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SDPoseDrawKeypoints, SDPoseKeypointExtractor, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader, easy anythingIndexSwitch, easy boolean, easy compare, easy float, easy imageSize, easy int, easy mathInt]
+coverage: 0.619209
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Animate动作迁移V9（自动尺寸）_2077971164198166529.json, 图片生成/图生图/Wan2.2 Animate动作迁移V7（自动尺寸）_2046476272037007362.json, 视频生成/图生视频/11122_2052262207102177281.json, 视频生成/图生视频/Action Transfer 视频动作迁移 Animate_2096773886733021185.json, 视频生成/图生视频/Animate 动作迁移 复刻跳舞动作 单人跳舞_2071942874186477570.json, 视频生成/图生视频/Animate 动作迁移+表情+手部一致性 三种模式切换可多人_2092922363200495617.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作 单人跳舞_2067865822789455873.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作_2067572288576376834.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作_2082104573845663745.json, 视频生成/图生视频/AnimateV9动作迁移人物动作模仿_2091532232967151618.json, 视频生成/图生视频/Animate动作迁移V9（plus)_2088492819714498561.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸懒人版）_2067158640880078849.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）PLUS_2083515980403265537.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）_优化版V1_2087512134681980930.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）优化版V2_2087495748442214401.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）更强_2063224518570758145.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）更新版_2063576371754000385.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2065412383627112450.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2066779159443107841.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2066883170611585025.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2067591708271013889.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2067591863569309697.json, 视频生成/图生视频/Coze_Drive_动作迁移_V9_608x1088_固定版_2094292856751083522.json, 视频生成/图生视频/Wan2.2-Animate-Move&Mix-V1_2101929816374206466.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2064360062327549954.json, 视频生成/图生视频/动作迁移丨Wan2.2-Animate丨人物替换·自动尺寸_2099797041361805313.json, 视频生成/图生视频/啊癫 矮小动漫卡通身材动作迁移_2054929094915174402.json, 视频生成/图生视频/图生视频-高质量-1080p_1948362216455188482.json, 视频生成/图生视频/最新Animate视频动作迁移+表情+手部一致性_2065796439602720769.json, 视频生成/图生视频/角色表情+手部一致性 视频动作迁移+ Animate_2080519359495237633.json]
+members: [视频生成/图生视频/SCAIL2 动作迁移+角色替换_2075508947406114818.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085192450951438337.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085200053362323457.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085526911635247106.json, 视频生成/图生视频/SCAIL2 骨骼驱动+人物替换 支持长视频_2064678206946496514.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2083867987425193985.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2087530408845074433.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2089613034095468546.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2073276130169278465.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2073308786999259137.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2077003812061147137.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2089596899274874881.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2103438449415114754.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2103447110430576641.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长_2100214925217062914.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长_2108431179807551490.json, 视频生成/图生视频/Scail2视频动作迁移-自动循环_2066111362484498434.json, 视频生成/图生视频/Scail2视频角色替换-自动循环_2066326016666202113.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2070098008229896194.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2072654435834228737.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2080322084730916866.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2080326375218704385.json, 视频生成/图生视频/Scail2角色替换+动作迁移+高清补帧_2113468499032100865.json, 视频生成/图生视频/Scail2角色替换-不限时长（图片+参考动作的视频=保留视频的背景     建议一次不要超过30秒_2065395597909250050.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版 动作迁移 复刻动作_2082068440801701890.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2065338076536328193.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2065747971517534209.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2086427105323212801.json, 视频生成/图生视频/Scail2角色替换_2067281458544332801.json, 视频生成/图生视频/Scail2角色替换_2074063549172903938.json, 视频生成/图生视频/Scail2角色替换人物替换循环角色替换视频动作迁移动作模仿工作流_2065001681598902273.json, 视频生成/图生视频/Scail2角色替换人物替换角色转换视频角色变换图片替换视频角色_2065766773110165506.json, 视频生成/图生视频/Scail2角色替换人物替换角色转换视频角色变换图片替换视频角色动作迁移_2081281164979032066.json, 视频生成/图生视频/Scail2长视频动作迁移(长视频低显存版) Motion Transfer (Long‑Video_2101561671167860738.json, 视频生成/图生视频/Wan Scail2循环动作迁移_2064895115918929922.json, 视频生成/图生视频/Wan2.1-Scail2 单人角色替换 （高质量循环版）_2068508853481861121.json, 视频生成/图生视频/pipi-SCAIL2-动作迁移 不限时长 （国内版）_2068457565150867458.json, 视频生成/图生视频/pipi-SCAIL2-动作迁移 不限时长 （国内版）_2072184154577530881.json, 视频生成/图生视频/scail2双人异步动作迁移_2065350812397817858.json, 视频生成/图生视频/scail2双人异步动作迁移_2065428476076843010.json, 视频生成/图生视频/scail2双人替换_2065454404580495362.json, 视频生成/图生视频/scail2替换指定角色_2065428027999342594.json, 视频生成/图生视频/scial版本后裔摇_2069813471377711106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/图生图/Animate动作迁移V9（自动尺寸）_2077971164198166529.json、图片生成/图生图/Wan2.2 Animate动作迁移V7（自动尺寸）_2046476272037007362.json、视频生成/图生视频/11122_2052262207102177281.json、视频生成/图生视频/Action Transfer 视频动作迁移 Animate_2096773886733021185.json、视频生成/图生视频/Animate 动作迁移 复刻跳舞动作 单人跳舞_2071942874186477570.json…）
+> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（视频生成/图生视频/SCAIL2 动作迁移+角色替换_2075508947406114818.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085192450951438337.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085200053362323457.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085526911635247106.json、视频生成/图生视频/SCAIL2 骨骼驱动+人物替换 支持长视频_2064678206946496514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：30
+- **样本数**：43
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 30 个 workflow 都包含：
-- `BBoxYOLO`
-- `BatchCount+`
+全部 43 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Text`
 - `CheckpointLoaderSimple`
-- `DrawViTPose`
-- `ImageBatch`
-- `ImageFromBatch`
+- `ColorTransfer`
+- `GetImageRangeFromBatch`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LazySwitch1way`
-- `LazySwitch2way`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RHHiddenNodes`
-- `RepeatImageBatch`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
-- `easy anythingIndexSwitch`
-- `easy boolean`
-- `easy compare`
-- `easy float`
-- `easy imageSize`
-- `easy int`
-- `easy mathInt`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEncode` —— 29/30 个有
-- `WanVideoUni3C_ControlnetLoader` —— 29/30 个有
-- `WanVideoUni3C_embeds` —— 29/30 个有
-- `easy cleanGpuUsed` —— 29/30 个有
-- `GetNode` —— 28/30 个有
-- `SetNode` —— 28/30 个有
-- `BodyRatioMapperProportionTransfer` —— 27/30 个有
-- `BodyRatioMapperSDPoseRender` —— 27/30 个有
-- `ImageScaleToTotalPixels` —— 27/30 个有
-- `CompressImages` —— 26/30 个有
-- `VideoCombineNode` —— 26/30 个有
-- `ZML_AnyTypeSwitchFiveBoolean` —— 26/30 个有
-- `Bool` —— 19/30 个有
-- `LayerUtility: ColorImage V2` —— 16/30 个有
-- `孤海注释` —— 15/30 个有
-- `PreviewImage` —— 14/30 个有
-- `SimpleMath+` —— 11/30 个有
-- `SaveImage` —— 8/30 个有
-- `TT_img_enc` —— 8/30 个有
-- `easy showAnything` —— 8/30 个有
-- `AnyBooleanSwitch` —— 3/30 个有
-- `DownloadAndLoadNLFModel` —— 3/30 个有
-- `NLFPredict` —— 3/30 个有
-- `PoseDetectionVitPoseToDWPose` —— 3/30 个有
-- `PrimitiveBoolean` —— 3/30 个有
-- `RenderNLFPoses` —— 3/30 个有
-- `Any Switch (rgthree)` —— 2/30 个有
-- `BlockifyMask` —— 2/30 个有
-- `DownloadAndLoadSAM2Model` —— 2/30 个有
-- `DrawMaskOnImage` —— 2/30 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/30 个有
-- `GrowMaskWithBlur` —— 2/30 个有
-- `Sam2Segmentation` —— 2/30 个有
-- `CM_FloatToInt` —— 1/30 个有
-- `MemoryCleaner` —— 1/30 个有
-- `easy sam3ModelLoader` —— 1/30 个有
-- `easy sam3VideoSegmentation` —— 1/30 个有
+- `PreviewImage` —— 42/43 个有
+- `PreviewAny` —— 41/43 个有
+- `PrimitiveInt` —— 39/43 个有
+- `ComfyMathExpression` —— 38/43 个有
+- `GetImageSize` —— 38/43 个有
+- `TensorLoopClose` —— 38/43 个有
+- `TensorLoopOpen` —— 38/43 个有
+- `JWInteger` —— 37/43 个有
+- `DiffusionModelLoaderKJ` —— 32/43 个有
+- `SetNode` —— 26/43 个有
+- `DownloadAndLoadGIMMVFIModel` —— 25/43 个有
+- `GIMMVFI_interpolate` —— 25/43 个有
+- `GetNode` —— 25/43 个有
+- `ImageConcatMulti` —— 25/43 个有
+- `ResizeImageMaskNode` —— 24/43 个有
+- `EmptyImage` —— 23/43 个有
+- `ImageCompositeMasked` —— 23/43 个有
+- `SAM3_TrackToMask` —— 23/43 个有
+- `CR Prompt Text` —— 17/43 个有
+- `Seed (rgthree)` —— 17/43 个有
+- `ShowAnything|Mie` —— 17/43 个有
+- `VHS_VideoInfo` —— 17/43 个有
+- `WanChunkFeedForward` —— 17/43 个有
+- `UNETLoader` —— 11/43 个有
+- `CR Text` —— 10/43 个有
+- `easy showAnything` —— 7/43 个有
+- `Label (rgthree)` —— 5/43 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/43 个有
+- `SizeSelector` —— 5/43 个有
+- `VHS_VideoInfoSource` —— 5/43 个有
+- `easy imageCount` —— 5/43 个有
+- `Bjornulf_ShowInt` —— 4/43 个有
+- `Int` —— 2/43 个有
+- `BOOLConstant` —— 1/43 个有
+- `ImagePadKJ` —— 1/43 个有
+- `MathExpression|pysssss` —— 1/43 个有
+- `RunningHub Deepcleaner` —— 1/43 个有
+- `Text` —— 1/43 个有
+- `ToFloat` —— 1/43 个有
+- `VideoInfoLoaded` —— 1/43 个有
+- `easy cleanGpuUsed` —— 1/43 个有
+- `easy indexAnything` —— 1/43 个有
+- `easy positive` —— 1/43 个有
+- `llama_cpp_instruct_adv` —— 1/43 个有
+- `llama_cpp_parameters` —— 1/43 个有
 
 ## 典型参数
 

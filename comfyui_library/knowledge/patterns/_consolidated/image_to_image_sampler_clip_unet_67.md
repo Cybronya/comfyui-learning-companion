@@ -1,80 +1,74 @@
 ---
 name: image_to_image_sampler_clip_unet_67
 type: Image To Image
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.808429
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9355
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, ImageStitch, KSampler, LoadImage, RH_Translator, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/flux2-klen三图编辑_2040333512275927041.json, 图片生成/图生图/▶flux-2-klein-单-多图编辑_2035882063211008001.json, 图片生成/图生图/▶flux-2-klein-单-多图编辑_2082029601458573314.json, 图片生成/图生图/▶klein-动漫转真人流_2058927929484206081.json, 图片生成/图生图/单、多图编辑_2032720849052114945.json, 图片生成/图生图/单、多图编辑_2037505377234853890.json, 图片生成/文生图/B妮B妳_Flux2-klein_N_S_F_W_汇总_2019356802848137218.json]
+members: [图片生成/图生图/FLUX Kontext超级局部重绘_1939221910398091265.json, 图片生成/图生图/Flux kontext dev电商万能改图王（单图版）_1942889428345831425.json, 图片生成/图生图/Kontext局部重绘_1939165958160502786.json, 图片生成/图生图/flux kontext 超强图像编辑模型_1938518653468106753.json, 图片生成/图生图/flux kontext双图模式_1938527528707358722.json, 图片生成/图生图/flux_kontext_dev_双图-提示词更听话_1938809488537538562.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_67
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/flux2-klen三图编辑_2040333512275927041.json、图片生成/图生图/▶flux-2-klein-单-多图编辑_2035882063211008001.json、图片生成/图生图/▶flux-2-klein-单-多图编辑_2082029601458573314.json、图片生成/图生图/▶klein-动漫转真人流_2058927929484206081.json、图片生成/图生图/单、多图编辑_2032720849052114945.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX Kontext超级局部重绘_1939221910398091265.json、图片生成/图生图/Flux kontext dev电商万能改图王（单图版）_1942889428345831425.json、图片生成/图生图/Kontext局部重绘_1939165958160502786.json、图片生成/图生图/flux kontext 超强图像编辑模型_1938518653468106753.json、图片生成/图生图/flux kontext双图模式_1938527528707358722.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `ImageStitch`
 - `KSampler`
 - `LoadImage`
+- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `CLIPLoaderGGUF` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `UnetLoaderGGUF` —— 5/7 个有
-- `EasySizeSimpleImage` —— 2/7 个有
-- `GetImageSize+` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `HAIGC_SaveImagesToZip` —— 1/7 个有
-- `If ANY execute A else B` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/7 个有
-- `PreviewBridge` —— 1/7 个有
-- `easy boolean` —— 1/7 个有
+- `FluxKontextImageScale` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `AddLabel` —— 2/6 个有
+- `ImageAndMaskPreview` —— 2/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `ImageRemoveAlpha+` —— 2/6 个有
+- `InpaintModelConditioning` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `Note Plus (mtb)` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 20 | 20 - 25 | 6 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 25，6 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

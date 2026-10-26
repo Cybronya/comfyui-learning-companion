@@ -2,57 +2,87 @@
 name: unknown_workflow_video_lora_sampler_278
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.851125
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, VAEDecode, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.569625
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetNode, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/video_wan2_2_14B_rewards_lora_1966051284912607234.json, 视频生成/文生视频/video_wan2_2_14B_t2v_优化版_1972464256455208962.json, 视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952546698105163778.json, 视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952688713274953729.json, 视频生成/文生视频/video_wan2_2_14B_灯光工作流+提示词_1950503507558387713.json, 视频生成/文生视频/wan2.2+2.1文生视频_1950156709198217218.json, 视频生成/文生视频/wan2.2文生视频-官方极速版_1950456441427693570.json, 视频生成/文生视频/wan2_2_t2v-生万物+妙转换+广告创意动画-高质量_1973586939590873089.json]
+members: [图片生成/图生图/去掉字幕水印 wan2.2 animate_1971821276849434626.json, 图片生成/图生图/视频去水印去字幕_2042494499506626561.json, 数字人/数字人/WanAnimate-KJ流遮罩自动获取版_1970211323026022401.json, 数字人/数字人/动作迁移人物替换WanAnimate2.2_1990379558673289217.json, 数字人/数字人/舞蹈克隆_动作迁移表情迁移_改变原图背景_Wan2.2_1995364899742265346.json, 视频生成/图生视频/自用动作模仿动作迁移_2013906240371429377.json, 视频生成/图生视频/舞蹈克隆改变原图背景_Wan2.2_2062169414258221058.json, 视频生成/文生视频/图生视频 极速版 动作模仿 动作迁移 人物替换 Wan 2.2_2044310101514788865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_278
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/video_wan2_2_14B_rewards_lora_1966051284912607234.json、视频生成/文生视频/video_wan2_2_14B_t2v_优化版_1972464256455208962.json、视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952546698105163778.json、视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952688713274953729.json、视频生成/文生视频/video_wan2_2_14B_灯光工作流+提示词_1950503507558387713.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/去掉字幕水印 wan2.2 animate_1971821276849434626.json、图片生成/图生图/视频去水印去字幕_2042494499506626561.json、数字人/数字人/WanAnimate-KJ流遮罩自动获取版_1970211323026022401.json、数字人/数字人/动作迁移人物替换WanAnimate2.2_1990379558673289217.json、数字人/数字人/舞蹈克隆_动作迁移表情迁移_改变原图背景_Wan2.2_1995364899742265346.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `VAEDecode`
-- `VAELoader`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `Sam2Segmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 7/8 个有
-- `PathchSageAttentionKJ` —— 6/8 个有
-- `WanVideoNAG` —— 6/8 个有
-- `CFGZeroStar` —— 4/8 个有
-- `UnetLoaderGGUF` —— 3/8 个有
-- `GetNode` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 7/8 个有
+- `GIMMVFI_interpolate` —— 7/8 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `OnnxDetectionModelLoader` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `DrawViTPose` —— 6/8 个有
+- `GrowMask` —— 6/8 个有
+- `ImageBlend` —— 6/8 个有
+- `Int` —— 6/8 个有
+- `PoseAndFaceDetection` —— 6/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `CR Text` —— 3/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `Frame Select` —— 2/8 个有
+- `PointsEditor` —— 2/8 个有
+- `SaveImage` —— 2/8 个有
+- `SaveLatent` —— 2/8 个有
+- `TT_img_enc_v2` —— 2/8 个有
+- `Textbox` —— 2/8 个有
+- `VHS_VideoInfo` —— 2/8 个有
+- `WanVideoEncode` —— 2/8 个有
+- `AILab_MaskPreview` —— 1/8 个有
+- `Bookmark (rgthree)` —— 1/8 个有
+- `DF_Get_image_size` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
+- `easy showTensorShape` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 50% |
-| Prompt 约束强度(CFG) | 8 | 8 - 20 | 8 | 59% |
-| 采样算法 | 1 | 1 - 3.5 | 8 | 37% |
-| 调度器 | lcm | - | 8 | 62% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 20，8 个样本
-- 采样算法 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 37%
-- 调度器 最常用 lcm，8 个样本，一致性 62%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_433
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.90425
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.882
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/4o平替UNO多图参考一致性方案 多张输入角色一致性更强_2108710999837724674.json, 图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json, 图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json, 图片生成/文生图/好玩的文生图工作流｜人物类特效创意出图神器_2098761942302289921.json]
+members: [图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json, 图片生成/图生图/Qwen Image2.1强化抠图 精准移除遮挡输出完美PNG通道_2104659451750993922.json, 图片生成/图生图/Qwen Image2.1精准抠图移除遮挡 透明背景精准生成_2105404738362757121.json, 图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_433
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/4o平替UNO多图参考一致性方案 多张输入角色一致性更强_2108710999837724674.json、图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json、图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json、图片生成/文生图/好玩的文生图工作流｜人物类特效创意出图神器_2098761942302289921.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json、图片生成/图生图/Qwen Image2.1强化抠图 精准移除遮挡输出完美PNG通道_2104659451750993922.json、图片生成/图生图/Qwen Image2.1精准抠图移除遮挡 透明背景精准生成_2105404738362757121.json、图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -26,8 +26,10 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
@@ -37,15 +39,30 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 2/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 2/4 个有
-- `FluxGuidance` —— 1/4 个有
-- `easy XYInputs: Lora` —— 1/4 个有
-- `easy XYInputs: PromptSR` —— 1/4 个有
-- `easy XYPlotAdvanced` —— 1/4 个有
-- `easy fluxLoader` —— 1/4 个有
-- `easy fullkSampler` —— 1/4 个有
-- `easy imageSave` —— 1/4 个有
+- `ComfySwitchNode` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `QwenImage21Cache` —— 3/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `SaveImageAdvanced` —— 3/4 个有
+- `Seed (rgthree)` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `TextEncodeQwenImage21` —— 3/4 个有
+- `GrowMask` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `InvertMask` —— 2/4 个有
+- `JoinImageWithAlpha` —— 2/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Upscale Model Loader` —— 2/4 个有
+- `XinbaoImageStandardizer` —— 2/4 个有
+- `YUAN_TXTConvertAny` —— 2/4 个有
+- `DF_Integer` —— 1/4 个有
+- `ImageInvert` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LG_Color_Match_V2` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
 
 ## 典型参数
 

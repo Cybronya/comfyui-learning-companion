@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_522
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8196
-common_nodes: [LoadImage, SaveImage, TransparentImage]
+coverage: 1
+common_nodes: [Float, LoadAudio, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json, 图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json, 图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json, 图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json, 图片生成/图生图/透明_2068898137724514305.json]
+members: [音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json, 音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json, 音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json, 音频生成/音频生成/音乐生成（支持歌曲模仿）_2008964386093797378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_522
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json、图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json、图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json、图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json、图片生成/图生图/透明_2068898137724514305.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json、音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json、音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `TransparentImage`
-
-**可变部分**（部分 workflow 才有）：
-- `GroundingDinoModelLoader (segment anything)` —— 4/5 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 4/5 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 4/5 个有
-- `MaskToImage` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `SAMLoader` —— 4/5 个有
-- `RHHiddenNodes` —— 1/5 个有
+全部 6 个 workflow 都包含：
+- `Float`
+- `LoadAudio`
+- `SaveAudio`
+- `SongBloomDecoder`
+- `SongBloomGenerate`
+- `SongBloomModelLoader`
+- `Text Multiline`
 
 ## 典型参数
 

@@ -3,50 +3,48 @@ name: unknown_workflow_video_sampler_checkpoint_7
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.956
-common_nodes: [FloatProcess, GenerationParameters, ImageOnlyCheckpointLoader, LayerUtility: PurgeVRAM, LoadAudio, LoadFloatModels, LoadImage, MultiLineLyrics, MultiLinePromptACES, Note Plus (mtb), Note _O, PrimitiveFloat, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, VHS_VideoCombine]
+coverage: 0.516
+common_nodes: [Bookmark (rgthree), GetNode, ImageOnlyCheckpointLoader, ImageResize+, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SetNode, SimpleMath+, VHS_VideoCombine, easy float, easy seed]
 problems: []
 missing: []
-members: [音频生成/音频生成/AceStep声音、音乐局部编辑+数字人V1_1920523899745013761.json, 音频生成/音频生成/AceStep声音、音乐局部重绘+数字人V1_1920523940387819522.json, 音频生成/音频生成/AceStep声音、音乐扩展+数字人V1_1920523923002163201.json, 音频生成/音频生成/AceStep音乐生成稳定版+数字人V1_1920523877670391809.json]
+members: [图片生成/图生图/最强开源数字人，通杀真人动漫各种风格_1900899027012198402.json, 数字人/数字人/SONIC数字人，适配各种风格_1957643769740980226.json, 数字人/数字人/封神级开源数字人！横扫真人动漫双赛道_2011402620962869250.json, 视频生成/文生视频/各种风格真人动漫_1933419602271449089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_7
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AceStep声音、音乐局部编辑+数字人V1_1920523899745013761.json、音频生成/音频生成/AceStep声音、音乐局部重绘+数字人V1_1920523940387819522.json、音频生成/音频生成/AceStep声音、音乐扩展+数字人V1_1920523923002163201.json、音频生成/音频生成/AceStep音乐生成稳定版+数字人V1_1920523877670391809.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最强开源数字人，通杀真人动漫各种风格_1900899027012198402.json、数字人/数字人/SONIC数字人，适配各种风格_1957643769740980226.json、数字人/数字人/封神级开源数字人！横扫真人动漫双赛道_2011402620962869250.json、视频生成/文生视频/各种风格真人动漫_1933419602271449089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FloatProcess`
-- `GenerationParameters`
+- `Bookmark (rgthree)`
+- `GetNode`
 - `ImageOnlyCheckpointLoader`
-- `LayerUtility: PurgeVRAM`
+- `ImageResize+`
 - `LoadAudio`
-- `LoadFloatModels`
 - `LoadImage`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `Note Plus (mtb)`
-- `Note _O`
-- `PrimitiveFloat`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
-- `SaveAudio`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `easy float`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ACEStepEdit` —— 1/4 个有
-- `ACEStepExtend` —— 1/4 个有
-- `ACEStepGen` —— 1/4 个有
-- `ACEStepRepainting` —— 1/4 个有
-- `TrimAudio` —— 1/4 个有
+- `JoinStrings` —— 3/4 个有
+- `String Literal` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `CheckpointLoaderKJ` —— 1/4 个有
+- `CheckpointLoaderSimple` —— 1/4 个有
 
 ## 典型参数
 

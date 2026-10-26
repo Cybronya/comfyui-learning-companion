@@ -3,54 +3,60 @@ name: unknown_workflow_video_sampler_vae_50
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.898333
-common_nodes: [INTConstant, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.953111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Skyreels V3 多图参考生视频 sky r2v_2027315533716131841.json, 视频生成/图生视频/phantom多图参考一致性视频生成-电商带货_1917399608392089601.json, 视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json, 视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json, 视频生成/图生视频/字节Phantom 14B_1927551955353374722.json, 视频生成/图生视频/最优参数Phantom14B多图参考_1927581509937422337.json, 视频生成/图生视频/最优参数Phantom14B多图参考_1971606625880567810.json, 视频生成/图生视频/龙明Phantom14b多图参考_1928697815218950145.json, 视频生成/图生视频/龙明phantom FusionX+NAG_1935045733223735298.json]
+members: [视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速V2_2088193284681322497.json, 视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速_2088188664793878530.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0正式版8步加速_2087456117239668737.json, 视频生成/图生视频/MinimaxH3八步加速极速版T1_2088232222376681473.json, 视频生成/图生视频/minimaxH3先锋艺术_2088544149321633794.json, 视频生成/图生视频/minimaxH3多参提示词优化_2086425483746566146.json, 视频生成/图生视频/minimaxh3-三图参考生视频-15秒动作科幻题材_2097201624564457473.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T10_2085752202936803329.json, 视频生成/图生视频/图生视频提示词运镜_2086862647512879105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Skyreels V3 多图参考生视频 sky r2v_2027315533716131841.json、视频生成/图生视频/phantom多图参考一致性视频生成-电商带货_1917399608392089601.json、视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json、视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json、视频生成/图生视频/字节Phantom 14B_1927551955353374722.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速V2_2088193284681322497.json、视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速_2088188664793878530.json、视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0正式版8步加速_2087456117239668737.json、视频生成/图生视频/MinimaxH3八步加速极速版T1_2088232222376681473.json、视频生成/图生视频/minimaxH3先锋艺术_2088544149321633794.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `INTConstant`
-- `ImagePadKJ`
-- `ImageResizeKJ`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Text`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 8/9 个有
-- `WanVideoTextEncode` —— 8/9 个有
-- `ImageConcatMulti` —— 7/9 个有
-- `WanVideoTeaCache` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `easy imageRemBg` —— 3/9 个有
-- `Evaluate Integers` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `FlashVSRNode` —— 1/9 个有
-- `Text _O` —— 1/9 个有
-- `WanVideoApplyNAG` —— 1/9 个有
-- `WanVideoTextEncodeSingle` —— 1/9 个有
-- `WanVideoVRAMManagement` —— 1/9 个有
+- `ResolutionSelector` —— 7/9 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 7/9 个有
+- `ImageConcatenateMulti_UTK` —— 6/9 个有
+- `ComfyMathExpression` —— 5/9 个有
+- `EnhancedLoadDiffusionModel` —— 5/9 个有
+- `LoraLoaderBypassModelOnly` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
+- `PrimitiveFloat` —— 5/9 个有
+- `UNETLoader` —— 4/9 个有
+- `CreateVideo` —— 2/9 个有
+- `Int` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `LoraLoaderModelOnly` —— 2/9 个有
+- `MiniMaxH3ImageToVideo` —— 2/9 个有
+- `SaveVideo` —— 2/9 个有
+- `Images to RGB` —— 1/9 个有
+- `InspyrenetRembg` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

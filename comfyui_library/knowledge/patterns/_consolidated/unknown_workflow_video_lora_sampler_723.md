@@ -1,71 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_723
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.582
-common_nodes: [Display Int (rgthree), GetImageRangeFromBatch, GetNode, HuMoEmbeds, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, SoundFlow_GetLength, SoundFlow_TrimAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader, WhisperModelLoader, easy imageRemBg]
+frequency: 3
+level: moderate
+coverage: 0.699
+common_nodes: [CreateCFGScheduleFloatList, Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, GetNode, INTConstant, ImageConcanate, ImageConcatMulti, ImageFromBatch, ImageFromBatch+, ImageResizeKJ, ImageToMask, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, SetNode, ShowText|pysssss, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy imageSize, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/48. 多镜头长音频：Humo+Infinite MV直接生成_1984202703800778754.json, 视频生成/图生视频/单镜头：Humo+Infinite MV直接生成_1982621163400642562.json]
+members: [视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2018865681843888129.json, 视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json, 视频生成/图生视频/wan2.2视频局部替换_2016758036848709633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_723
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/48. 多镜头长音频：Humo+Infinite MV直接生成_1984202703800778754.json、视频生成/图生视频/单镜头：Humo+Infinite MV直接生成_1982621163400642562.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2018865681843888129.json、视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json、视频生成/图生视频/wan2.2视频局部替换_2016758036848709633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Display Int (rgthree)`
-- `GetImageRangeFromBatch`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `HuMoEmbeds`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImageToMask`
+- `ImpactFloat`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MaskToImage`
+- `PreviewImage`
 - `SetNode`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
-- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
-- `WhisperModelLoader`
 - `easy imageRemBg`
-
-**可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `easy imageSize`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 ## 典型参数
 
@@ -77,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

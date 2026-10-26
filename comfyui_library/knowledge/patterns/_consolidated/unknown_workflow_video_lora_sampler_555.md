@@ -3,60 +3,83 @@ name: unknown_workflow_video_lora_sampler_555
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.6125
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+coverage: 0.52675
+common_nodes: [Any Switch (rgthree), CFGGuider, CLIPTextEncode, CR Float To Integer, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json, 视频生成/文生视频/video_wan2_2_14B_Smooth Mix_1980199127709552641.json, 视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json, 视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json]
+members: [视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_2087887618532007938.json, 视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json, 视频生成/图生视频/MV生成 LTX-2.3_ref2vid_MSRV2_角色表参考+自定义音频视频生成工作流_2081967631405502466.json, 视频生成/文生视频/LTX-2.3_双角色设定集参考 + 自定义音频 视频生成工作流_2064203596383735809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_555
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json、视频生成/文生视频/video_wan2_2_14B_Smooth Mix_1980199127709552641.json、视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json、视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_2087887618532007938.json、视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json、视频生成/图生视频/MV生成 LTX-2.3_ref2vid_MSRV2_角色表参考+自定义音频视频生成工作流_2081967631405502466.json、视频生成/文生视频/LTX-2.3_双角色设定集参考 + 自定义音频 视频生成工作流_2064203596383735809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
+- `Any Switch (rgthree)`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `CR Float To Integer`
+- `ComfyNumberConvert`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `GetNode`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ManualSigmas`
+- `MathExpression|pysssss`
 - `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `PromptRelayEncode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
 - `SetNode`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `CR Text Replace` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `TextBox` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LTX2_NAG` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `ResizeImageMaskNode` —— 3/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `TrimAudioDuration` —— 2/4 个有
+- `AnyBooleanSwitch` —— 1/4 个有
+- `LTXVAudioVAELoader` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `VHS_LoadAudio` —— 1/4 个有
+- `easy mathFloat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 50% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 4 | 88% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 75% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 宽度 | 505 | 505 - 505 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -64,8 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 75%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 宽度 中位数 505，观测区间 505 - 505，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

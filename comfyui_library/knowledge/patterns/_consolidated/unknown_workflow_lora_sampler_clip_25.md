@@ -1,70 +1,97 @@
 ---
 name: unknown_workflow_lora_sampler_clip_25
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: strong
-coverage: 0.930182
-common_nodes: [BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DetailDaemonSamplerNode, DualCLIPLoader, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelApplySimple, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.838917
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Redux洗图工作流_1955898391345680385.json, 图片生成/图生图/Flux Redux洗图工作流_2020675664122224641.json, 图片生成/图生图/Flux+Redux洗图工作流_1990713474449891329.json, 图片生成/图生图/Flux-Redux洗图工作流_1999806514867171330.json, 图片生成/图生图/Flux_Redux洗图工作流（极致写实小红书风格模仿美少女）_1984262638253260802.json, 图片生成/图生图/Flux_Redux洗图工作流（男人金钱豹）_1984268576913833986.json, 图片生成/图生图/flux redux洗图、风格参考工作流_1965654086169317378.json, 图片生成/图生图/redux洗图工作流_1980567344630120450.json, 图片生成/图生图/电商洗图工作流_1969687604314730498.json, 图片生成/文生图/Flux基础文生图工作流_1997984984822611970.json, 图片生成/文生图/flux洗图工作流_1981983365639356418.json]
+members: [图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json, 视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json, 视频生成/图生视频/7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.json, 视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json, 视频生成/图生视频/LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json, 视频生成/图生视频/LTX-2.3图生视频，声画同步_2035291558307700737.json, 视频生成/图生视频/LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037366573874290689.json, 视频生成/图生视频/LTX2.3 图 + 音频数字人对口型_2043593704170070018.json, 视频生成/图生视频/LTX2.3-图像音频生视频，口型同步_2031297244112101377.json, 视频生成/图生视频/LTX2.3-数字人（支持双人对话）_2031346405217935361.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.0_（mv数字人）_2054790441681342465.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_2054484478025838593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux Redux洗图工作流_1955898391345680385.json、图片生成/图生图/Flux Redux洗图工作流_2020675664122224641.json、图片生成/图生图/Flux+Redux洗图工作流_1990713474449891329.json、图片生成/图生图/Flux-Redux洗图工作流_1999806514867171330.json、图片生成/图生图/Flux_Redux洗图工作流（极致写实小红书风格模仿美少女）_1984262638253260802.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json、视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json、视频生成/图生视频/7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.json、视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json、视频生成/图生视频/LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DetailDaemonSamplerNode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoraLoader`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `StyleModelApplySimple`
-- `StyleModelLoader`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 10/11 个有
-- `CR Text` —— 10/11 个有
-- `Image Comparer (rgthree)` —— 10/11 个有
-- `JWImageResizeByLongerSide` —— 10/11 个有
-- `VAEEncode` —— 10/11 个有
-- `Joy_caption_two` —— 9/11 个有
-- `Joy_caption_two_load` —— 9/11 个有
-- `ShowText|pysssss` —— 9/11 个有
-- `CFGGuider` —— 1/11 个有
-- `ConditioningZeroOut` —— 1/11 个有
-- `EmptyLatentImage` —— 1/11 个有
-- `SUPIR_Upscale` —— 1/11 个有
-- `easy imageScaleDownToSize` —— 1/11 个有
-- `easy imageSize` —— 1/11 个有
+- `KSamplerSelect` —— 11/12 个有
+- `LTXVLatentUpsampler` —— 11/12 个有
+- `LatentUpscaleModelLoader` —— 11/12 个有
+- `ResizeImagesByLongerEdge` —— 11/12 个有
+- `LTXVImgToVideoInplace` —— 10/12 个有
+- `LoadAudio` —— 10/12 个有
+- `SolidMask` —— 10/12 个有
+- `VAEDecodeTiled` —— 10/12 个有
+- `LTXVAudioVAEEncode` —— 9/12 个有
+- `PrimitiveFloat` —— 9/12 个有
+- `PrimitiveStringMultiline` —— 9/12 个有
+- `SetLatentNoiseMask` —— 9/12 个有
+- `PrimitiveBoolean` —— 8/12 个有
+- `ResizeImageMaskNode` —— 8/12 个有
+- `TrimAudioDuration` —— 8/12 个有
+- `easy cleanGpuUsed` —— 5/12 个有
+- `PreviewAny` —— 4/12 个有
+- `LTXVEmptyLatentAudio` —— 3/12 个有
+- `LoraLoader` —— 3/12 个有
+- `TextGenerateLTX2Prompt` —— 3/12 个有
+- `GetImageSize` —— 2/12 个有
+- `ImageResizeKJv2` —— 2/12 个有
+- `SimpleMath+` —— 2/12 个有
+- `SoundFlow_GetLength` —— 2/12 个有
+- `VAEDecode` —— 2/12 个有
+- `easy clearCacheAll` —— 2/12 个有
+- `AudioCrop` —— 1/12 个有
+- `ImageResize+` —— 1/12 个有
+- `LTXVAddGuide` —— 1/12 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/12 个有
+- `LTXVReferenceAudio` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `Qwen3ASRLoader_DFT` —— 1/12 个有
+- `Qwen3ASRTranscribe_DFT` —— 1/12 个有
+- `RecordAudio` —— 1/12 个有
+- `SamplerEulerAncestral` —— 1/12 个有
+- `StringConcatenate` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 11 | 93% |
-| LoRA 文本强度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 512 | - | 1 | 100% |
-| 高度 | 512 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -72,5 +99,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，11 个样本，取值集中（一致性 93%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

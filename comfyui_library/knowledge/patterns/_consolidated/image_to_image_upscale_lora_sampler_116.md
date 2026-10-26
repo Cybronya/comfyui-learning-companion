@@ -3,112 +3,73 @@ name: image_to_image_upscale_lora_sampler_116
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.634
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningAverage, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetNode, Image Comparer (rgthree), ImageResizeAndCropNode, ImageResizeKJ, ImageScaleBy, ImageSmartSharpen+, ImageUpscaleWithModel, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LazySwitch1way, LoadImage, LoraLoader, Manual XY Entry Info, ModelSamplingAuraFlow, PMRF, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, SaveImage, SetNode, ShowText|pysssss, TTP_CoordinateSplitter, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTP_condsetarea_merge, TTP_condtobatch, Text Concatenate, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageChooser, easy imageListToImageBatch]
+coverage: 0.964
+common_nodes: [CLIPLoader, ConditioningZeroOut, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, KOOK_SaveJPGImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlus, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/✅QWEN快速文生图8步+TTP放大（完美替代即梦豆包会员高清）_1953631561495269378.json, 图片生成/文生图/✅Qwen-imag+wan2.2ttp放大(fix改善幻影等的出现)_1954937738723147777.json]
+members: [图片生成/图生图/空影着装_2018500872002609154.json, 图片生成/图生图/空影着装模特图秒变实拍假模图，模特图变3D建模图_2020715952802897921.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_116
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/✅QWEN快速文生图8步+TTP放大（完美替代即梦豆包会员高清）_1953631561495269378.json、图片生成/文生图/✅Qwen-imag+wan2.2ttp放大(fix改善幻影等的出现)_1954937738723147777.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/空影着装_2018500872002609154.json、图片生成/图生图/空影着装模特图秒变实拍假模图，模特图变3D建模图_2020715952802897921.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningAverage`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageResizeAndCropNode`
-- `ImageResizeKJ`
+- `ConditioningZeroOut`
+- `GetImageSize+`
+- `ImageCASharpening+`
+- `ImageResize+`
 - `ImageScaleBy`
-- `ImageSmartSharpen+`
-- `ImageUpscaleWithModel`
+- `KOOK_SaveJPGImage`
 - `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LazySwitch1way`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `Manual XY Entry Info`
-- `ModelSamplingAuraFlow`
-- `PMRF`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_CoordinateSplitter`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `TTP_condsetarea_merge`
-- `TTP_condtobatch`
-- `Text Concatenate`
-- `Text Multiline`
-- `UNETLoader`
-- `UpscaleModelLoader`
+- `TextEncodeQwenImageEditPlus`
+- `UnetLoaderGGUF`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageChooser`
-- `easy imageListToImageBatch`
-
-**可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
-- `NAGGuider` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 7 | - | 2 | 86% |
+| 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.65 | - | 2 | 46% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

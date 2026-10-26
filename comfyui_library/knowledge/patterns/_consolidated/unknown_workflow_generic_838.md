@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_838
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.533333
-common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
+coverage: 0.95
+common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json]
+members: [视频生成/图生视频/happyhorse1.0-图生视频_2113798147217649665.json, 视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json, 视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json, 视频生成/文生视频/happyhores图片视频_2063141843059175426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_838
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/happyhorse1.0-图生视频_2113798147217649665.json、视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json、视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json、视频生成/文生视频/happyhores图片视频_2063141843059175426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `PreviewAny`
-- `TextGenerate`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

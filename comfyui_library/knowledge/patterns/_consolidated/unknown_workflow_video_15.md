@@ -3,36 +3,51 @@ name: unknown_workflow_video_15
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.794667
-common_nodes: [AudioSeparation, LoadAudio, SeedVCRun, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.692667
+common_nodes: [CR Text, GetImageRangeFromBatch, Image Comparer (rgthree), ImageScaleBy, PlaySound|pysssss, RH_Sora2_T2V, SaveVideo, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy anythingIndexSwitch, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json, 音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json, 音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json, 音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json, 音频生成/音频生成/视频人物音色替换_2105883053682937858.json, 音频生成/音频生成/青松换音色_2050078680013131778.json]
+members: [数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json, 视频生成/文生视频/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980068181710639105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_15
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json、音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json、音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json、音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json、音频生成/音频生成/视频人物音色替换_2105883053682937858.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioSeparation`
-- `LoadAudio`
-- `SeedVCRun`
-- `VHS_LoadVideo`
+- `CR Text`
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `PlaySound|pysssss`
+- `RH_Sora2_T2V`
+- `SaveVideo`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+- `easy anythingIndexSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `easy int` —— 5/6 个有
+- `MuyeLoadImage` —— 1/6 个有
+- `RH_Sora2_I2V` —— 1/6 个有
+- `RH_Sora2_I2V_PRO` —— 1/6 个有
+- `RH_Sora2_T2V_PRO` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

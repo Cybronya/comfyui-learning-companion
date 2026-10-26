@@ -2,23 +2,23 @@
 name: image_to_image_upscale_lora_sampler_9
 type: Image To Image
 frequency: 15
-level: weak
-coverage: 0.8114
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Float, FluxGuidance, Image Comparer (rgthree), ImageUpscaleWithModel, ImpactInt, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ReferenceLatent, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy promptConcat]
+level: moderate
+coverage: 0.876533
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactImageBatchToImageList, KSampler, LayerUtility: ImageMaskScaleAs, LoadImage, LoraLoaderModelOnly, MaskToImage, Mix Images By Mask, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageColorMatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Product Retouching 产品精修+万能产品修图_2093154645987389441.json, 图片生成/图生图/Transparent PNG image Product Retouching 产品精修_2106912090878464002.json, 图片生成/图生图/Transparent_PNG_image_Product_Retouching_产品精修_2107651060654493698.json, 图片生成/图生图/flux2全能产品精修，适合所有类型产品，4k直出_2060581652212043777.json, 图片生成/图生图/万能产品修图 美妆产品精修+支持瓶子 罐子 电商产品商业级修复打光_2067298785688113154.json, 图片生成/图生图/万能产品修图_Flux-2-Klein-9B_美妆产品精修_+支持瓶子_罐子_电商产品商业级修复打光_2060903281194524673.json, 图片生成/图生图/万能产品修图_Flux-2-Klein-9B_美妆产品精修_+支持瓶子_罐子_电商产品商业级修复打光_2061261459555971074.json, 图片生成/图生图/个人化妆品玻璃精修_2063358356420644865.json, 图片生成/图生图/个人塑料精修_2063338549637902337.json, 图片生成/图生图/产品精修 电商皮革纹理类产品精修 加强实用版_2088419890930741250.json, 图片生成/图生图/产品精修（标贴会变形，需要去标贴）_2034941844886396930.json, 图片生成/图生图/全能产品精修——适用于金属、饰品、化妆品、服装_2040979371816656897.json, 图片生成/图生图/商业级人像精修，增加皮肤质感、去AI感，4K直出，影楼专用_2033135017852932098.json, 图片生成/图生图/服装精修，衣服去皱，版型整理_2033166281683247106.json, 图片生成/图生图/电商网店首饰精修-图生图_2066321366307139585.json]
+members: [图片生成/图生图/Klein_亚秒级渲染精修_2083361847742394370.json, 图片生成/图生图/Klein_亚秒级渲染精修_2083373013055139841.json, 图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2080934004727046145.json, 图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2083360526314328065.json, 图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2083371919650410497.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修_2085627429598617602.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修_2085639627188293633.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修_2085909747752062977.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修_2085927494745673730.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修_2087368908192960513.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修去除粘胶_2085911313288622082.json, 图片生成/图生图/Klein_珠宝首饰渲染级精修去除粘胶_2085928521888784385.json, 图片生成/图生图/⭐️  渲染级精修-Klein 9b_2072982724671008770.json, 图片生成/图生图/渲染级精修-Klein_9b_2090094291338223617.json, 图片生成/图生图/蒜香卡普Klein9b_亚秒级产品渲染精修_2018625687455801345.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Product Retouching 产品精修+万能产品修图_2093154645987389441.json、图片生成/图生图/Transparent PNG image Product Retouching 产品精修_2106912090878464002.json、图片生成/图生图/Transparent_PNG_image_Product_Retouching_产品精修_2107651060654493698.json、图片生成/图生图/flux2全能产品精修，适合所有类型产品，4k直出_2060581652212043777.json、图片生成/图生图/万能产品修图 美妆产品精修+支持瓶子 罐子 电商产品商业级修复打光_2067298785688113154.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Klein_亚秒级渲染精修_2083361847742394370.json、图片生成/图生图/Klein_亚秒级渲染精修_2083373013055139841.json、图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2080934004727046145.json、图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2083360526314328065.json、图片生成/图生图/Klein_渲染级精修V5自动白底像素对齐_2083371919650410497.json…）
 
 - **类型**：Image To Image
 - **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -26,79 +26,83 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
+- `DualCLIPLoader`
 - `FluxGuidance`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
+- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `ImpactInt`
-- `JjkText`
+- `ImpactImageBatchToImageList`
 - `KSampler`
+- `LayerUtility: ImageMaskScaleAs`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ReferenceLatent`
+- `MaskToImage`
+- `Mix Images By Mask`
+- `PreviewImage`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptConcat`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMask` —— 14/15 个有
-- `InvertMask` —— 14/15 个有
-- `JoinImageWithAlpha` —— 14/15 个有
-- `LayerMask: BiRefNetUltraV2` —— 14/15 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 14/15 个有
-- `ImageListToImageBatch` —— 11/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/15 个有
-- `ModelSamplingSD3` —— 11/15 个有
-- `TTP_Image_Assy` —— 11/15 个有
-- `TTP_Image_Tile_Batch` —— 11/15 个有
-- `TTP_Tile_image_size` —— 11/15 个有
-- `Text _O` —— 11/15 个有
-- `easy cleanGpuUsed` —— 11/15 个有
-- `easy imageBatchToImageList` —— 11/15 个有
-- `PreviewImage` —— 8/15 个有
-- `Image Filter Adjustments` —— 7/15 个有
-- `LayerColor: Brightness & Contrast` —— 7/15 个有
-- `LayerColor: ColorTemperature` —— 7/15 个有
-- `FluxKontextImageScale` —— 4/15 个有
-- `GetImageSize+` —— 4/15 个有
-- `ImpactSwitch` —— 4/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/15 个有
-- `AnyBooleanSwitch` —— 3/15 个有
-- `孤海注释` —— 3/15 个有
-- `EmptyImage` —— 1/15 个有
-- `ExecutionBlocker` —— 1/15 个有
-- `PrimitiveBoolean` —— 1/15 个有
-- `RHHiddenNodes` —— 1/15 个有
-- `workflow>加密节点` —— 1/15 个有
+- `Fast Groups Muter (rgthree)` —— 13/15 个有
+- `CFGGuider` —— 10/15 个有
+- `EmptyFlux2LatentImage` —— 10/15 个有
+- `Flux2Scheduler` —— 10/15 个有
+- `GetImageSize` —— 10/15 个有
+- `KSamplerSelect` —— 10/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/15 个有
+- `RandomNoise` —— 10/15 个有
+- `ReferenceLatent` —— 10/15 个有
+- `SamplerCustomAdvanced` —— 10/15 个有
+- `GetImageSize+` —— 7/15 个有
+- `PainterFluxImageEdit` —— 7/15 个有
+- `CR Prompt Text` —— 5/15 个有
+- `CR Text Input Switch (4 way)` —— 5/15 个有
+- `ImageLoader` —— 5/15 个有
+- `PixaromaLabel` —— 5/15 个有
+- `ResizeImagesByLongerEdge` —— 4/15 个有
+- `ConstrainImage|pysssss` —— 3/15 个有
+- `easy textSwitch` —— 3/15 个有
+- `GrowMask` —— 2/15 个有
+- `InvertMask` —— 2/15 个有
+- `JoinImageWithAlpha` —— 2/15 个有
+- `LoadRembgByBiRefNetModel` —— 2/15 个有
+- `RembgByBiRefNetAdvanced` —— 2/15 个有
+- `孤海图像裁剪按比例` —— 2/15 个有
+- `忽略多组孤海` —— 2/15 个有
+- `Label (rgthree)` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 4 - 10 | 15 | 68% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | heun | - | 15 | 67% |
-| 调度器 | beta | - | 15 | 67% |
-| 重绘幅度 | 0.1 | 0.1 - 1 | 15 | 0% |
+| 采样步数 | 6 | 2 - 6 | 15 | 74% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 15 | 70% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | kl_optimal | - | 15 | 53% |
+| 重绘幅度 | 0.4 | 0.4 - 1 | 15 | 56% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 25/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 22/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 4 - 10，15 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 heun，15 个样本，一致性 67%
-- 调度器 最常用 beta，15 个样本，一致性 67%
-- 重绘幅度 中位数 0.1，观测区间 0.1 - 1，15 个样本，取值分散，一致性仅 0%
-- 高发问题（25/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 2 - 6，15 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，15 个样本
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 kl_optimal，15 个样本，一致性 53%
+- 重绘幅度 中位数 0.4，观测区间 0.4 - 1，15 个样本
+- 高发问题（22/15 个样本）：Steps较低可能导致细节不足

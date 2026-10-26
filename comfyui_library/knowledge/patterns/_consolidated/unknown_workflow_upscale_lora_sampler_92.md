@@ -3,71 +3,67 @@ name: unknown_workflow_upscale_lora_sampler_92
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.597
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningAverage, Florence2ModelLoader, Florence2Run, GetNode, Image Comparer (rgthree), ImageResizeKJ, ImageScaleToTotalPixels, ImageSmartSharpen+, ImageUpscaleWithModel, KSamplerSelect, LoadImage, LoraLoaderModelOnly, Manual XY Entry Info, ModelSamplingSD3, NAGGuider, PathchSageAttentionKJ, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, TTP_CoordinateSplitter, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTP_condsetarea_merge, TTP_condtobatch, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageListToImageBatch]
+coverage: 0.9005
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, GrowMask, Image Comparer (rgthree), ImageConcanate, ImageInvert, ImageUpscaleWithModel, InvertMask, JoinImageWithAlpha, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, Seed (rgthree), Text Multiline, TextEncodeQwenImage21, UNETLoader, Upscale Model Loader, VAEDecode, VAELoader, YUAN_TXTConvertAny]
 problems: []
 missing: []
-members: [图片生成/图生图/wan2.2+ttp放大【分块提示词】+nag高清放大_1955888060602961921.json, 图片生成/图生图/✅wan2.2+ttp放大+nag-高清放大_细节修复-分块提示词_1950234235819966466.json]
+members: [图片生成/图生图/Qwen 2.1 抠图_2108373874164461569.json, 图片生成/图生图/Qwen_2.1_抠图_2114260916647841794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_92
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/wan2.2+ttp放大【分块提示词】+nag高清放大_1955888060602961921.json、图片生成/图生图/✅wan2.2+ttp放大+nag-高清放大_细节修复-分块提示词_1950234235819966466.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1 抠图_2108373874164461569.json、图片生成/图生图/Qwen_2.1_抠图_2114260916647841794.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningAverage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `GetNode`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `GrowMask`
 - `Image Comparer (rgthree)`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
-- `ImageSmartSharpen+`
+- `ImageConcanate`
+- `ImageInvert`
 - `ImageUpscaleWithModel`
-- `KSamplerSelect`
+- `InvertMask`
+- `JoinImageWithAlpha`
+- `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageScaleByAspectRatio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `Manual XY Entry Info`
-- `ModelSamplingSD3`
-- `NAGGuider`
-- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_CoordinateSplitter`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TTP_condsetarea_merge`
-- `TTP_condtobatch`
+- `SaveImageAdvanced`
+- `Seed (rgthree)`
+- `Text Multiline`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `Upscale Model Loader`
+- `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
+- `YUAN_TXTConvertAny`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -75,4 +71,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

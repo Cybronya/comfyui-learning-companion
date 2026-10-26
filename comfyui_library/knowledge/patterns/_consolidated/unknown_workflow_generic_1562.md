@@ -3,40 +3,37 @@ name: unknown_workflow_generic_1562
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [FlashVSRNode, ImageLoader, JjkText, MultiTextConcatenate, PreviewImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RegexReplace, SaveImage, SaveTextNode, SaveVideo, easy showAnything, ttN concat]
+coverage: 0.873
+common_nodes: [LoadImage, RH_RhartImageG25OfficialTokenSunburstEdit, SaveImage, SynVowPsdLayerComposer, SynVowTransparentAssetPromptGenerator, SynVowTransparentPngSavePreview, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能图片G2.0故事板一键生成专业影视分镜与关键帧全流程工作流 V3.0_2071462194759430146.json, 视频生成/图生视频/全能图片G2.0故事板一键生成专业影视分镜与关键帧全流程工作流 V3.0_2086698851624378370.json]
+members: [图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2100824867754045441.json, 图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2111023870621872129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1562
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能图片G2.0故事板一键生成专业影视分镜与关键帧全流程工作流 V3.0_2071462194759430146.json、视频生成/图生视频/全能图片G2.0故事板一键生成专业影视分镜与关键帧全流程工作流 V3.0_2086698851624378370.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2100824867754045441.json、图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2111023870621872129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FlashVSRNode`
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `RegexReplace`
+- `LoadImage`
+- `RH_RhartImageG25OfficialTokenSunburstEdit`
 - `SaveImage`
-- `SaveTextNode`
-- `SaveVideo`
+- `SynVowPsdLayerComposer`
+- `SynVowTransparentAssetPromptGenerator`
+- `SynVowTransparentPngSavePreview`
 - `easy showAnything`
-- `ttN concat`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG25FlareImageToImage` —— 1/2 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1313
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [BiRefNet_Hugo, LoadImage, PreviewImage, SaveImage]
+coverage: 0.9
+common_nodes: [1hew_SaveTxt, AILab_QwenVL, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/两种最好用的抠图节点对比_1950092183018848257.json, 图片生成/图生图/抠图｜BiRefNet V2_2110554173988229121.json]
+members: [图片生成/反推提示词/人物动作提示词反推_2068260016997621761.json, 图片生成/反推提示词/人物动作提示词反推_2072582775118585858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1313
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/两种最好用的抠图节点对比_1950092183018848257.json、图片生成/图生图/抠图｜BiRefNet V2_2110554173988229121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/人物动作提示词反推_2068260016997621761.json、图片生成/反推提示词/人物动作提示词反推_2072582775118585858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BiRefNet_Hugo`
+- `1hew_SaveTxt`
+- `AILab_QwenVL`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

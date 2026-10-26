@@ -1,84 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_760
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6925
-common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Text Concatenate, ComfyMathExpression, ExtractAndCombineLines, Fast Groups Bypasser (rgthree), ImageBatchMulti, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaGetNode, PixaromaLabel, PixaromaSetNode, PreviewAny, PreviewImage, PrimitiveFloat, ProcessString, RHHiddenNodes, RHLLMChatNode, RHSettingsNode, ResolutionSelector, ShowText|pysssss, Text, UNETLoader, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 3
+level: moderate
+coverage: 0.798667
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json, 视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json]
+members: [视频生成/图生视频/正在测试lora  -_1944651399730745345.json, 视频生成/图生视频/正在测试lora  -_1944662370163544065.json, 视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_760
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json、视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/正在测试lora  -_1944651399730745345.json、视频生成/图生视频/正在测试lora  -_1944662370163544065.json、视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text Concatenate`
-- `ComfyMathExpression`
-- `ExtractAndCombineLines`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageBatchMulti`
-- `JWFloatToString`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PixaromaGetNode`
-- `PixaromaLabel`
-- `PixaromaSetNode`
-- `PreviewAny`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `ProcessString`
-- `RHHiddenNodes`
-- `RHLLMChatNode`
-- `RHSettingsNode`
-- `ResolutionSelector`
-- `ShowText|pysssss`
-- `Text`
-- `UNETLoader`
-- `VAELoader`
+- `PrimitiveStringMultiline`
+- `SaveLatent`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `ExtendIntermediateSigmas` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SelfLiftAvatarH3Sampler` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `ACE_TextConcatenate` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
+- `GIMMVFI_interpolate` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `LoadLatent` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -90,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

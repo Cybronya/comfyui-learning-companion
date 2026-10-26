@@ -1,57 +1,54 @@
 ---
 name: unknown_workflow_video_lora_sampler_439
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9818
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.894833
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageFromBatch+, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json, 视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json, 视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json]
+members: [视频生成/文生视频/wan2.2 文生视频_1956285811346079746.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json, 视频生成/文生视频/（6+4步最佳质量）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978813759940628482.json, 视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2模型高低噪同模型高动态文生视频V1（KJ版）_1979736664522264578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_439
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json、视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json、视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/wan2.2 文生视频_1956285811346079746.json、视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json、视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json、视频生成/文生视频/（6+4步最佳质量）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978813759940628482.json、视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
+全部 6 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `ImageFromBatch+`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 4/5 个有
-- `WanVideoEnhanceAVideo` —— 4/5 个有
-- `WanVideoSLG` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 4/5 个有
-- `Bjornulf_ShowInt` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
+- `CR Prompt Text` —— 5/6 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `JWInteger` —— 5/6 个有
+- `LayerColor: Brightness & Contrast` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `easy int` —— 1/6 个有
 
 ## 典型参数
 

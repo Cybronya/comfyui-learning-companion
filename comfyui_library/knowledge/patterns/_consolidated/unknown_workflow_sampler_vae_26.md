@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_vae_26
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.9137
-common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.949833
+common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json, 图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json, 图片生成/图生图/与财神握手LoRA——Qwen-Image-Edit应用_1960877013387153409.json, 图片生成/图生图/人或者物铜像化——Qwen-Image-Edit的LoRA应用_1958111693622693889.json, 图片生成/图生图/人物图像拼合_2042497116639076354.json, 图片生成/图生图/图生图_2057815724835565569.json, 图片生成/文生图/2030304000674893825.json, 图片生成/文生图/兵马俑LoRA——Qwen-Image-Edit应用_1963214327899721729.json, 视频生成/图生视频/千问多图融合编辑_1982020667237384193.json, 视频生成/图生视频/手办LoRA——Qwen-Image-Edit应用_1961983511181856769.json]
+members: [图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json, 图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json, 图片生成/图生图/qwen图生图  洗图  重绘 局部修改_2046419289288216577.json, 图片生成/图生图/产品展示 产品替换 图生图 多图编辑_2044376198586834945.json, 图片生成/图生图/产品展示 多图编辑 多图融合  图生图_2044421173475287041.json, 图片生成/图生图/产品展示 多图融合 多图编辑_2044376805544566785.json, 图片生成/图生图/产品替换 产品展示 电商 双图融合 多图编辑 多图融合  图生图_2045403356130189314.json, 图片生成/图生图/产品替换 产品展示_2045428594398208002.json, 图片生成/图生图/产品替换 双图融合 多图编辑 多图融合  图生图_2045390109431832578.json, 图片生成/图生图/人物角色-全视角参考视图_2040802253094785026.json, 图片生成/图生图/全视图 _ 角色一致性_1991419477451624450.json, 图片生成/图生图/全视图 _ 角色一致性_2007004747022213121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_26
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json、图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json、图片生成/图生图/与财神握手LoRA——Qwen-Image-Edit应用_1960877013387153409.json、图片生成/图生图/人或者物铜像化——Qwen-Image-Edit的LoRA应用_1958111693622693889.json、图片生成/图生图/人物图像拼合_2042497116639076354.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json、图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json、图片生成/图生图/qwen图生图  洗图  重绘 局部修改_2046419289288216577.json、图片生成/图生图/产品展示 产品替换 图生图 多图编辑_2044376198586834945.json、图片生成/图生图/产品展示 多图编辑 多图融合  图生图_2044421173475287041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
 - `EmptyLatentImage`
@@ -30,47 +30,48 @@ source: knowledge_consolidation
 - `LoadImage`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `VAEDecode` —— 9/10 个有
-- `TextEncodeQwenImageEditPlus` —— 6/10 个有
-- `TextEncodeQwenImageEdit` —— 5/10 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 2/10 个有
-- `ImageResize+` —— 2/10 个有
-- `AddLabel` —— 1/10 个有
-- `NunchakuQwenImageDiTLoader` —— 1/10 个有
-- `PathchSageAttentionKJ` —— 1/10 个有
-- `VAEDecodeTiled` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `UNETLoader` —— 11/12 个有
+- `ConditioningZeroOut` —— 10/12 个有
+- `PreviewImage` —— 7/12 个有
+- `Anything Everywhere` —— 3/12 个有
+- `Anything Everywhere3` —— 3/12 个有
+- `ConstrainImage|pysssss` —— 3/12 个有
+- `ImageResize+` —— 2/12 个有
+- `MuyeTextEditOutput` —— 1/12 个有
+- `NunchakuQwenImageDiTLoader` —— 1/12 个有
+- `PathchSageAttentionKJ` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 864 - 1280 | 10 | 91% |
-| 高度 | 1152 | 768 - 1536 | 10 | 80% |
-| 采样步数 | 4 | 4 - 20 | 10 | 20% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 10 | 61% |
-| 采样算法 | euler | - | 10 | 80% |
-| 调度器 | simple | - | 10 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 960 - 1024 | 12 | 97% |
+| 高度 | 1536 | 1248 - 1536 | 12 | 91% |
+| 采样步数 | 8 | 4 - 20 | 12 | 59% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 63% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 47/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 864 - 1280，10 个样本，取值集中（一致性 91%）
-- 高度 中位数 1152，观测区间 768 - 1536，10 个样本
-- 采样步数 中位数 4，观测区间 4 - 20，10 个样本，取值分散，一致性仅 20%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，10 个样本
-- 采样算法 最常用 euler，10 个样本，一致性 80%
-- 调度器 最常用 simple，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（9/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 960 - 1024，12 个样本，取值集中（一致性 97%）
+- 高度 中位数 1536，观测区间 1248 - 1536，12 个样本，取值集中（一致性 91%）
+- 采样步数 中位数 8，观测区间 4 - 20，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（47/12 个样本）：Steps较低可能导致细节不足

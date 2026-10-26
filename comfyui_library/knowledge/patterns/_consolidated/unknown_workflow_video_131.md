@@ -3,42 +3,37 @@ name: unknown_workflow_video_131
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [Audio Duration (mtb), Compare, ImageRepeat, IndexTTSProNode, LoadAudio, LoadImage, MathExpression|pysssss, NovelTextStructureNode, Primitive integer [Crystools], RHHiddenNodes, SaveAudio, Text Concatenate, Text Multiline, VHS_VideoCombine, easy ifElse, easy showAnything]
+coverage: 0.577
+common_nodes: [CR Text, DepthCrafter, DownloadAndLoadDepthCrafterModel, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [音频生成/音频生成/index小说文案声音克隆对话朗读_1933111959048859650.json, 音频生成/音频生成/小说文案→有声书克隆_1932806676258902018.json]
+members: [视频生成/图生视频/视频转深度视频素材+全节点注释_2082953986570809346.json, 视频生成/图生视频/视频转深度视频素材_2101558965585932289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_131
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/index小说文案声音克隆对话朗读_1933111959048859650.json、音频生成/音频生成/小说文案→有声书克隆_1932806676258902018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频转深度视频素材+全节点注释_2082953986570809346.json、视频生成/图生视频/视频转深度视频素材_2101558965585932289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `Compare`
-- `ImageRepeat`
-- `IndexTTSProNode`
-- `LoadAudio`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `NovelTextStructureNode`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `SaveAudio`
-- `Text Concatenate`
-- `Text Multiline`
+- `CR Text`
+- `DepthCrafter`
+- `DownloadAndLoadDepthCrafterModel`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy ifElse`
-- `easy showAnything`
+- `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

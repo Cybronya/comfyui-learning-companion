@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_44
 type: Text To Image
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.968
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.897167
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/z-image随机Prompt.一键生成一组写真_2004923441016958978.json, 图片生成/文生图/文生图-人物_2111999328125542402.json, 图片生成/文生图/文生图-升级款 法老专用_2035629542928289793.json, 图片生成/文生图/文生图-升级款 法老专用_2046862125410295809.json, 图片生成/文生图/文生图-角色生成_2058015180101083138.json, 图片生成/文生图/画安-Z-Image基本文生图_2080862730688491521.json, 图片生成/文生图/皮神-Zimage基础工作流_1996929661861040129.json, 图片生成/文生图/空白工作流_2051296618825175041.json, 图片生成/文生图/造相 Z-image 文生图_2073282210454659074.json, 图片生成/文生图/造相-Z-Image-Turo 文生图官方版_1993841938419957762.json, 图片生成/文生图/阿墨AIGC-Z-image-文生图基础工作流_2025764477991391233.json, 图片生成/文生图/麦穗AI-Z-image-文生图基础工作流_2066558941785579521.json, 视频生成/文生视频/高清超真实Z-image文生图_1999125125809176577.json]
+members: [图片生成/图生图/Zimage提示词海报逃离城市-拥抱自然_2057800201645154306.json, 图片生成/图生图/电商海报生成_2036017494078525441.json, 图片生成/图生图/百度ERNIE-image-turbo-自动提示词工作流_2044578766483103746.json, 图片生成/文生图/Z-image-Kook+Qwn3.5 反推提示词海报设计_2037007954775379969.json, 图片生成/文生图/Z-image头像生成器V2.0_2054103430381228033.json, 图片生成/文生图/Z-image头像生成器_1993848457626664961.json, 图片生成/文生图/Z-image头像生成器文生图_2052591390210707458.json, 图片生成/文生图/Zimage头像生成器_2057990922343899138.json, 图片生成/文生图/Zimage头像生成器_2061075705567473666.json, 图片生成/文生图/Zimage头像生成器_2072198363075923969.json, 图片生成/文生图/Zimage提示词海报设计制作_2054214009636835329.json, 图片生成/文生图/提示词+海报一键生成_2046250266453876738.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_44
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/z-image随机Prompt.一键生成一组写真_2004923441016958978.json、图片生成/文生图/文生图-人物_2111999328125542402.json、图片生成/文生图/文生图-升级款 法老专用_2035629542928289793.json、图片生成/文生图/文生图-升级款 法老专用_2046862125410295809.json、图片生成/文生图/文生图-角色生成_2058015180101083138.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Zimage提示词海报逃离城市-拥抱自然_2057800201645154306.json、图片生成/图生图/电商海报生成_2036017494078525441.json、图片生成/图生图/百度ERNIE-image-turbo-自动提示词工作流_2044578766483103746.json、图片生成/文生图/Z-image-Kook+Qwn3.5 反推提示词海报设计_2037007954775379969.json、图片生成/文生图/Z-image头像生成器V2.0_2054103430381228033.json…）
 
 - **类型**：Text To Image
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -31,40 +31,48 @@ source: knowledge_consolidation
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 11/13 个有
-- `ModelSamplingAuraFlow` —— 6/13 个有
-- `DPRandomGenerator` —— 1/13 个有
-- `easy batchAnything` —— 1/13 个有
-- `easy forLoopEnd` —— 1/13 个有
-- `easy forLoopStart` —— 1/13 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `PreviewImage` —— 11/12 个有
+- `ConditioningZeroOut` —— 7/12 个有
+- `CR Text` —— 6/12 个有
+- `Latent Noise Injection` —— 6/12 个有
+- `ShowText|pysssss` —— 6/12 个有
+- `FastFilmGrain` —— 5/12 个有
+- `LayerColor: BrightnessContrastV2` —— 5/12 个有
+- `LoadImage` —— 1/12 个有
+- `Text Concatenate (JPS)` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1920 | 13 | 68% |
-| 高度 | 1536 | 1024 - 1920 | 13 | 76% |
-| 采样步数 | 9 | 8 - 22 | 13 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 18% |
-| 采样算法 | euler | - | 13 | 92% |
-| 调度器 | simple | - | 13 | 85% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 9 | 8 - 10 | 12 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 58% |
+| 调度器 | sgm_uniform | - | 12 | 50% |
+| 重绘幅度 | 0.65 | 0.3 - 1 | 12 | 46% |
+| 宽度 | 1024 | 720 - 1104 | 12 | 91% |
+| 高度 | 1536 | 1280 - 1920 | 12 | 87% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1920，13 个样本
-- 高度 中位数 1536，观测区间 1024 - 1920，13 个样本
-- 采样步数 中位数 9，观测区间 8 - 22，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 euler，13 个样本，一致性 92%
-- 调度器 最常用 simple，13 个样本，一致性 85%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 高发问题（8/13 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 8 - 10，12 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 58%
+- 调度器 最常用 sgm_uniform，12 个样本，一致性 50%
+- 重绘幅度 中位数 0.65，观测区间 0.3 - 1，12 个样本，取值分散，一致性仅 46%
+- 宽度 中位数 1024，观测区间 720 - 1104，12 个样本，取值集中（一致性 91%）
+- 高度 中位数 1536，观测区间 1280 - 1920，12 个样本，取值集中（一致性 87%）
+- 高发问题（6/12 个样本）：Steps较低可能导致细节不足

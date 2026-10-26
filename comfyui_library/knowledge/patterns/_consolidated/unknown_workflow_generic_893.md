@@ -1,35 +1,49 @@
 ---
 name: unknown_workflow_generic_893
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadImage, SaveImage, SeedVR2]
+coverage: 0.88225
+common_nodes: [CR Text, CR Text Concatenate, FireRedTTS2_Dialogue, LoadAudio, MegaTTS3Run, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, String, WhisperSTT, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2一键图片高清放大｜极简三节点工作流_2097222046869708802.json, 图片生成/图生图/SeedVR2高清放大4k_2052581529376829441.json, 图片生成/图生图/顶级人像放大-SeedVR2工作流_2094967598625681410.json]
+members: [音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1985310272321691649.json, 音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1987826683791257601.json, 音频生成/音频生成/声音克隆情绪音色MegaTTS3、Index TTS2、VibeVoice TTS、SparkTTS_2010681116528746497.json, 音频生成/音频生成/语音克隆大集合_1968191920210083842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_893
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2一键图片高清放大｜极简三节点工作流_2097222046869708802.json、图片生成/图生图/SeedVR2高清放大4k_2052581529376829441.json、图片生成/图生图/顶级人像放大-SeedVR2工作流_2094967598625681410.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1985310272321691649.json、音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1987826683791257601.json、音频生成/音频生成/声音克隆情绪音色MegaTTS3、Index TTS2、VibeVoice TTS、SparkTTS_2010681116528746497.json、音频生成/音频生成/语音克隆大集合_1968191920210083842.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `CR Text Concatenate`
+- `FireRedTTS2_Dialogue`
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `String`
+- `WhisperSTT`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImageAdvanced` —— 1/3 个有
-- `SeedVR2ExtraArgs` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `IndexTTS2Run` —— 2/4 个有
+- `SaveAudioMP3` —— 2/4 个有
+- `VibeVoiceTTS` —— 2/4 个有
+- `easy indexTTSAudioMerge` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

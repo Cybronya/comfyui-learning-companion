@@ -3,39 +3,31 @@ name: unknown_workflow_generic_1636
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7915
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, TDQwen3TTSCustomVoice, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone, TDQwen3TTSVoiceDesign]
+coverage: 0.667
+common_nodes: [PreviewAny, RHHiddenNodes, RH_LLMAPI_NODE, ShellAgentPluginInputText, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/CG迷-Qwen3 TTS音色克隆工作流_2016079119808729090.json, 音频生成/音频生成/Qwen3-TTS_2015449559899574274.json]
+members: [图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json, 图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1636
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/CG迷-Qwen3 TTS音色克隆工作流_2016079119808729090.json、音频生成/音频生成/Qwen3-TTS_2015449559899574274.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json、图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `SaveAudio`
-- `TDQwen3TTSCustomVoice`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceClone`
-- `TDQwen3TTSVoiceDesign`
-
-**可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 1/2 个有
-- `AudioSpeedShift` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `PreviewAny`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
+- `ShellAgentPluginInputText`
+- `easy saveText`
 
 ## 典型参数
 

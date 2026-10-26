@@ -3,56 +3,75 @@ name: unknown_workflow_video_lora_sampler_845
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9525
-common_nodes: [INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.5
+common_nodes: [Any Switch (rgthree), Anything Everywhere, AudioSeparation, CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LoadImage, LoadImageListFromDir //Inspire, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, TrimAudioDuration, VHS_LoadAudioUpload, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy isNone, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2官方 VACE 首尾帧 KJ流_1967815071856472066.json, 视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json]
+members: [视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json, 视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_845
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2官方 VACE 首尾帧 KJ流_1967815071856472066.json、视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json、视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Anything Everywhere`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Batch Images From List`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `ImageConcatMulti`
+- `ImageListToBatch+`
 - `ImageResizeKJv2`
+- `InfiniteTalkEmbedsSlice`
+- `InfiniteTalkMultiImage`
 - `LoadImage`
-- `SimpleMath+`
+- `LoadImageListFromDir //Inspire`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Mute / Bypass Repeater (rgthree)`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `SetNode`
+- `TextInput_`
+- `TrimAudioDuration`
+- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
+- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LoadWanVideoT5TextEncoder` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeCached` —— 1/2 个有
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy indexAnything`
+- `easy isNone`
+- `easy seed`
+- `easy showAnything`
 
 ## 典型参数
 

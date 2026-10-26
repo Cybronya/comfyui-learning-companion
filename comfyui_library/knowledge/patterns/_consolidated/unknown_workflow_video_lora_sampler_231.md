@@ -1,93 +1,98 @@
 ---
 name: unknown_workflow_video_lora_sampler_231
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.6075
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.579778
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetNode, GrowMask, INTConstant, ImageBatch, ImageFromBatch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, Sam2Segmentation, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/4号工作流跳舞_2085004895417098242.json, 视频生成/图生视频/40秒以上-WanAnimate Sec-人物迁移_动作迁移_长视频循环_1984495051466293249.json, 视频生成/图生视频/AI换人术把你代入名场面，本来应该从从容容游刃有余_1976931314983161857.json, 视频生成/图生视频/Wan+AnimateV2指定区域迁移工作流_1995369036512997378.json, 视频生成/图生视频/WanAnimate -人物迁移_动作迁移_长视频（动作迁移支持卡通）_2058362232681091073.json, 视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json, 视频生成/图生视频/WanAnimate_Sec-人物迁移_动作迁移_长视频（动作迁移支持卡通）_2008938707402891265.json, 视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json]
+members: [图片生成/图生图/1_1模式视频动作_2000449752623874050.json, 视频生成/图生视频/Wan Animate+kj骨骼绑定人物角色图生视频动作_1999382397340839937.json, 视频生成/图生视频/可爱大头娃娃工作流V2+骨骼绑定与动作迁移_2042618078990704642.json, 视频生成/图生视频/可爱娃娃工作流_2057269921096232961.json, 视频生成/图生视频/可爱娃娃工作流_2059070496771239938.json, 视频生成/图生视频/图生视频---太极动作工作流-Aiwood_2039883987727949826.json, 视频生成/图生视频/大头娃娃工作流-Aiwood_1998717600895000577.json, 视频生成/文生视频/Wan-Animate原生无限流（修正）_1971749907403108354.json, 视频生成/文生视频/角色参考-原生无限流-补帧_1975828769351012354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_231
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/4号工作流跳舞_2085004895417098242.json、视频生成/图生视频/40秒以上-WanAnimate Sec-人物迁移_动作迁移_长视频循环_1984495051466293249.json、视频生成/图生视频/AI换人术把你代入名场面，本来应该从从容容游刃有余_1976931314983161857.json、视频生成/图生视频/Wan+AnimateV2指定区域迁移工作流_1995369036512997378.json、视频生成/图生视频/WanAnimate -人物迁移_动作迁移_长视频（动作迁移支持卡通）_2058362232681091073.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/1_1模式视频动作_2000449752623874050.json、视频生成/图生视频/Wan Animate+kj骨骼绑定人物角色图生视频动作_1999382397340839937.json、视频生成/图生视频/可爱大头娃娃工作流V2+骨骼绑定与动作迁移_2042618078990704642.json、视频生成/图生视频/可爱娃娃工作流_2057269921096232961.json、视频生成/图生视频/可爱娃娃工作流_2059070496771239938.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BlockifyMask`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
 - `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
+- `GetNode`
+- `GrowMask`
 - `INTConstant`
-- `ImageResizeKJv2`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `Sam2Segmentation`
+- `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 7/8 个有
-- `PrimitiveInt` —— 7/8 个有
-- `SeCModelLoader` —— 7/8 个有
-- `SeCVideoSegmentation` —— 7/8 个有
-- `WanVideoTorchCompileSettings` —— 7/8 个有
-- `easy int` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
-- `PointsEditor` —— 5/8 个有
-- `ColorMatch` —— 2/8 个有
-- `DWPreprocessor` —— 2/8 个有
-- `PixelPerfectResolution` —— 2/8 个有
-- `PrimitiveFloat` —— 2/8 个有
-- `Sa2VANodeTpl` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `SimpleMath+` —— 2/8 个有
-- `WanVideoContextOptions` —— 2/8 个有
-- `easy mathInt` —— 2/8 个有
-- `Bjornulf_ShowInt` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `DownloadAndLoadSAM2Model` —— 1/8 个有
-- `Float` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `ImageUpscaleWithModelBatched` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `RIFE VFI` —— 1/8 个有
-- `Sam2Segmentation` —— 1/8 个有
-- `UpscaleModelLoader` —— 1/8 个有
-- `VHS_VideoInfo` —— 1/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 8/9 个有
+- `GIMMVFI_interpolate` —— 8/9 个有
+- `SimpleMath+` —— 8/9 个有
+- `AV_VAELoader` —— 7/9 个有
+- `Display Int (rgthree)` —— 7/9 个有
+- `EmptyImage` —— 7/9 个有
+- `ImageResizeKJv2` —— 7/9 个有
+- `OnnxDetectionModelLoader` —— 7/9 个有
+- `PoseDetectionOneToAllAnimation` —— 7/9 个有
+- `Float` —— 2/9 个有
+- `GetImageSizeAndCount` —— 2/9 个有
+- `MaskPreview` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `VAELoader` —— 2/9 个有
+- `easy forLoopEnd` —— 2/9 个有
+- `easy forLoopStart` —— 2/9 个有
+- `DF_Float` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `Setter` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 25/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（25/9 个样本）：Steps较低可能导致细节不足

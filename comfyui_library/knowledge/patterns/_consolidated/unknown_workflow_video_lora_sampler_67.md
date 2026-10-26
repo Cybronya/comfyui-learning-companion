@@ -1,76 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_67
 type: Unknown Workflow
-frequency: 18
-level: strong
-coverage: 0.997056
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, LoraLoader, TeaCache, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 20
+level: moderate
+coverage: 0.5916
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+problems: []
 missing: []
-members: [图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json, 视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json, 视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json, 视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json, 视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json, 视频生成/图生视频/WAN2.1图生视频一键变身恶灵骑士_1912469568701329410.json, 视频生成/图生视频/WAN2.1图生视频万物成盒_1913534894562078722.json, 视频生成/图生视频/WAN2.1图生视频美女原地起飞_1908140275909468162.json, 视频生成/图生视频/WAN2.1图生视频美女射击_1910308143438491650.json, 视频生成/图生视频/WAN2.1图生视频美女转身_1909579567680684034.json, 视频生成/图生视频/WAN2.1美女热舞大摆锤_1908472121150812161.json, 视频生成/图生视频/Wan2.1 人物小丑面具特效｜i2V_1911952901085036546.json, 视频生成/图生视频/Wan2.1 愤怒人物表情特效｜i2V_1911801404531638273.json, 视频生成/图生视频/Wan2.1_人物哭泣特效｜i2V_1912077836331511810.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频展示_1911646094139555841.json, 视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json, 视频生成/图生视频/任意物体360度旋转展示 ｜盲盒、泡泡玛特_1910201244638740482.json, 视频生成/图生视频/抖胸舞跳起来_1921368068402921474.json]
+members: [视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json, 视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json, 视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2053665458540294145.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2068949443151491073.json, 视频生成/图生视频/SVI 2.0Pro长视频生成_2005593934388752385.json, 视频生成/图生视频/SVI+2.0Pro 一张图片一镜到底！_2066377373628592129.json, 视频生成/图生视频/SVI+2.0Pro一镜到底_2067252352830230529.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频_2005998121425522690.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频（升级版）_2006033971657842690.json, 视频生成/图生视频/SVI+2.0Pro长视频生成_2005982973738565633.json, 视频生成/图生视频/SVI+2.0Pro高质量动图_2009965288044896257.json, 视频生成/图生视频/SVI2.0Pro超长一镜到底！16S_2011274354910306306.json, 视频生成/图生视频/SVIpro视频延长-Aiwood_2005629100242993154.json, 视频生成/图生视频/顶峰--SVI+2.0Pro一镜到底！_2065196684543619074.json, 视频生成/图生视频/🐳SVI2.0PRO长视频生成 图生视频 KJ优化无限对接版 25-12-29🦋_2005505528635817986.json, 视频生成/图生视频/👾怪獸-SVI-Pro一镜到底👾_2005898003632320514.json, 视频生成/文生视频/一张图加一句话生成视频，图片文字生成视频_2066577714387177474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_67
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json、视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json、视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json、视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json、视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json、视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json、视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：20
+- **可信度**：中等可信
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
-- `LoraLoader`
-- `TeaCache`
-- `VAEDecodeTiled`
+- `DiffusionModelLoaderKJ`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 11/18 个有
-- `UnetLoaderGGUF` —— 11/18 个有
-- `ConcatTextOfUtils` —— 10/18 个有
-- `Joy_caption` —— 10/18 个有
-- `Joy_caption_load` —— 10/18 个有
-- `UNETLoader` —— 7/18 个有
-- `Int` —— 1/18 个有
-- `JjkText` —— 1/18 个有
+- `GetNode` —— 19/20 个有
+- `INTConstant` —— 19/20 个有
+- `LoadImage` —— 19/20 个有
+- `SetNode` —— 19/20 个有
+- `GetImageRangeFromBatch` —— 2/20 个有
+- `Primitive integer [Crystools]` —— 2/20 个有
+- `SimpleMath+` —— 2/20 个有
+- `ConditioningZeroOut` —— 1/20 个有
+- `ImpactInt` —— 1/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/20 个有
+- `Note Plus (mtb)` —— 1/20 个有
+- `VHS_LoadVideo` —— 1/20 个有
+- `VHS_VideoInfo` —— 1/20 个有
+- `easy imageColorMatch` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 18 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 18 | 100% |
-| 采样算法 | uni_pc | - | 18 | 100% |
-| 调度器 | simple | - | 18 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 18 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | fixed | - | 20 | 80% |
+| Prompt 约束强度(CFG) | 8 | 1 - 20 | 20 | 53% |
+| 采样算法 | 1 | 1 - 1 | 20 | 100% |
+| 调度器 | euler | - | 20 | 100% |
+| 重绘幅度 | simple | - | 20 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 18/18 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，18 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，18 个样本，一致性 100%
-- 调度器 最常用 simple，18 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 最常用 fixed，20 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 20，20 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，20 个样本，一致性 100%
+- 重绘幅度 最常用 simple，20 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

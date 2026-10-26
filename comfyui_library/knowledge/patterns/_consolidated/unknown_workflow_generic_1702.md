@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1702
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.965
-common_nodes: [Apply Whisper, Bjornulf_IfElse, CR Text, EmptyAudio, FB_Qwen3TTSConfig, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, ImpactSwitch, Int, LazySwitch1way, LoadAudio, Qwen3TTSVoicePresets, SaveAudioMP3, TrimAudioDuration, easy compare]
+coverage: 0.9575
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan27ImageEdit, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ImageToVideo, RH_AlibabaWan27ReferenceToVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_Wan25_I2V, RH_Wan25_T2V, RH_Wan26_I2V, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan26_T2V, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen3 tts-声音克隆_创建声音-整合版_2028677768417906689.json, 音频生成/音频生成/声音克隆_创建声音-整合版（健祥）_2031904106389966849.json]
+members: [视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json, 视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1702
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/qwen3 tts-声音克隆_创建声音-整合版_2028677768417906689.json、音频生成/音频生成/声音克隆_创建声音-整合版（健祥）_2031904106389966849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json、视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,24 +23,27 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `Bjornulf_IfElse`
-- `CR Text`
-- `EmptyAudio`
-- `FB_Qwen3TTSConfig`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `ImpactSwitch`
-- `Int`
-- `LazySwitch1way`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadAudio`
-- `Qwen3TTSVoicePresets`
-- `SaveAudioMP3`
-- `TrimAudioDuration`
-- `easy compare`
+- `LoadImage`
+- `LoadVideo`
+- `RH_AlibabaWan27ImageEdit`
+- `RH_AlibabaWan27ImageEditPro`
+- `RH_AlibabaWan27ImageToVideo`
+- `RH_AlibabaWan27ReferenceToVideo`
+- `RH_AlibabaWan27TextToImage`
+- `RH_AlibabaWan27TextToImagePro`
+- `RH_AlibabaWan27TextToVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `RH_AlibabaWan27VideoExtend`
+- `RH_Wan25_I2V`
+- `RH_Wan25_T2V`
+- `RH_Wan26_I2V`
+- `RH_Wan26_I2V_Flash`
+- `RH_Wan26_I2V_Flash_Custom`
+- `RH_Wan26_T2V`
+- `SaveImage`
+- `SaveVideo`
 
 ## 典型参数
 

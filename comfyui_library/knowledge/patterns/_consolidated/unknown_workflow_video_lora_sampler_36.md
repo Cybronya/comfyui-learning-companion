@@ -2,96 +2,70 @@
 name: unknown_workflow_video_lora_sampler_36
 type: Unknown Workflow
 frequency: 25
-level: strong
-coverage: 0.71456
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+level: moderate
+coverage: 0.95824
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, ImageResize+, JWInteger, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 MSR V2 +自定义声音_2067070674216251394.json, 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图+自定义音频_2076688428426682370.json, 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json, 视频生成/图生视频/LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json, 视频生成/图生视频/LTX2.3 MSR V2 单采升级版_2076685195511685122.json, 视频生成/图生视频/LTX2.3 MSR V2 参考生视频_2067070625793003522.json, 视频生成/图生视频/LTX2.3 MSR V2 双采+ Customer Audio_2076574537289920514.json, 视频生成/图生视频/LTX2.3 MSR V2 双采_2076575617784569858.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图+自定义音频_2076690587205586945.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图_2076689573417144322.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版_2083450850885853185.json, 视频生成/图生视频/LTX2.3 MSR V2_2077624792404021250.json, 视频生成/图生视频/LTX2.3 MSR-V2 漫剧工作流_2078684359644762113.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版+自定义语音_2078456447851130881.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版_2077979824391544834.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版+自定义语音-电商带货版_2078651399650504705.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版+自定义语音_2078456551601434625.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_2081280741002006529.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_2081351747490111490.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078828097239080962.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078833439343726593.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078835671065784322.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版_2077960603951525890.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考自成视频-提示词自动_双采版_高清放大_2079917333656719361.json, 视频生成/图生视频/LTX2.3MSR-V2_2077234968824205313.json]
+members: [图片生成/反推提示词/12shouweizhengao_2048982440785485825.json, 图片生成/反推提示词/45shouweizhenliuchang_2050102530000076802.json, 图片生成/图生图/Wan2.2首尾帧KJ8步_1952288273785933825.json, 图片生成/图生图/首尾帧视频WAN2.2高质量版v2.0（支持10s以上）_1995029039742115842.json, 图片生成/文生图/首尾帧视频-WAN2.2高质量版_1980937502708158465.json, 视频生成/图生视频/WAN2.2-首尾帧视频工作流_1981935370910744577.json, 视频生成/图生视频/WAN2.2毛茸茸首尾帧动画_1978297110992969730.json, 视频生成/图生视频/WAN2.2首尾帧视频工作流_1992060788846252034.json, 视频生成/图生视频/WAN2.2首尾帧高清快速出视频-高级版_1963555388825358337.json, 视频生成/图生视频/WAN2.2首尾帧高质量版_2027622896310427649.json, 视频生成/图生视频/WAN2.2高质量首尾帧视频加速版（3分钟版）_1981195312264110081.json, 视频生成/图生视频/Wan2.2 首尾帧视频工作流_1992174428303806466.json, 视频生成/图生视频/Wan2.2_KJ版 首尾帧+补帧_2019656861171060738.json, 视频生成/图生视频/Wan2.2_KJ版 首尾帧视频+补帧_高质量加速版V2_1998010318326497281.json, 视频生成/图生视频/Wan2.2_KJ版+首尾帧生视频+补帧_高质量加速版_2000475113990520833.json, 视频生成/图生视频/Wan2.2_KJ版+首尾帧生视频-阿浩_2026893415455133697.json, 视频生成/图生视频/Wan2.2首尾帧视频+补帧_KJ版_2018932205057216513.json, 视频生成/图生视频/Wan2.6高质量补帧首尾帧视频puls_2018481658378330113.json, 视频生成/图生视频/图生视频首尾帧快速版-WAN2.2稳定版_2025740661340774402.json, 视频生成/图生视频/课件25：WAN2.2首尾帧视频工作流（开源）_2103640919990951938.json, 视频生成/图生视频/首尾帧WAN2.2-AIGC大赏_2063448324002373634.json, 视频生成/图生视频/首尾帧生视频加速-WAN2.2配LoRA权重高质量版_2037500087261208578.json, 视频生成/图生视频/首尾帧视频 - WAN2.2_KJ_高质量加速版_1971037021902905346.json, 视频生成/图生视频/首尾帧视频 - WAN2.2_KJ_高质量加速画质修复版_1976556715808264194.json, 视频生成/图生视频/首尾帧视频 - WAN2.2_KJ_高质量加速画质修复版_2041413117292318723.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 MSR V2 +自定义声音_2067070674216251394.json、视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图+自定义音频_2076688428426682370.json、视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json、视频生成/图生视频/LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json、视频生成/图生视频/LTX2.3 MSR V2 单采升级版_2076685195511685122.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/反推提示词/12shouweizhengao_2048982440785485825.json、图片生成/反推提示词/45shouweizhenliuchang_2050102530000076802.json、图片生成/图生图/Wan2.2首尾帧KJ8步_1952288273785933825.json、图片生成/图生图/首尾帧视频WAN2.2高质量版v2.0（支持10s以上）_1995029039742115842.json、图片生成/文生图/首尾帧视频-WAN2.2高质量版_1980937502708158465.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：25
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 25 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `ImageResize+`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 24/25 个有
-- `PrimitiveStringMultiline` —— 24/25 个有
-- `UNETLoader` —— 24/25 个有
-- `PrimitiveInt` —— 23/25 个有
-- `RTXVideoSuperResolution` —— 22/25 个有
-- `LiconMSR` —— 20/25 个有
-- `FrameInterpolate` —— 19/25 个有
-- `FrameInterpolationModelLoader` —— 19/25 个有
-- `GetNode` —— 19/25 个有
-- `SetNode` —— 19/25 个有
-- `LTXVLatentUpsampler` —— 17/25 个有
-- `LatentUpscaleModelLoader` —— 17/25 个有
-- `LTXVEmptyLatentAudio` —— 16/25 个有
-- `LTXVAddGuideMulti` —— 15/25 个有
-- `Label (rgthree)` —— 14/25 个有
-- `孤海注释` —— 11/25 个有
-- `LTXVAudioVAEEncode` —— 9/25 个有
-- `LoadAudio` —— 9/25 个有
-- `PromptRelayEncode` —— 9/25 个有
-- `SetLatentNoiseMask` —— 9/25 个有
-- `SolidMask` —— 9/25 个有
-- `TrimAudioDuration` —— 9/25 个有
-- `MelBandRoFormerModelLoader` —— 8/25 个有
-- `MelBandRoFormerSampler` —— 8/25 个有
-- `BatchImagesNode` —— 6/25 个有
-- `RepeatImageBatch` —— 6/25 个有
-- `PreviewAudio` —— 5/25 个有
-- `LTXTiledSampler` —— 4/25 个有
-- `Int` —— 3/25 个有
-- `CR Prompt Text` —— 1/25 个有
-- `ImageOnlyCheckpointLoader` —— 1/25 个有
-- `PromptRelayEncodeTimeline` —— 1/25 个有
-- `RHHiddenNodes` —— 1/25 个有
-- `RHLLMChatNode` —— 1/25 个有
-- `Text` —— 1/25 个有
-- `easy showAnything` —— 1/25 个有
+- `easy cleanGpuUsed` —— 24/25 个有
+- `SimpleMath+` —— 23/25 个有
+- `ColorMatch` —— 9/25 个有
+- `WanVideoSLG` —— 9/25 个有
+- `Float` —— 8/25 个有
+- `DF_Int_to_Float` —— 6/25 个有
+- `RIFE VFI` —— 6/25 个有
+- `MuyeTextEditOutput` —— 2/25 个有
+- `RTXVideoSuperResolution` —— 2/25 个有
+- `GetNode` —— 1/25 个有
+- `Int` —— 1/25 个有
+- `Label (rgthree)` —— 1/25 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/25 个有
+- `SaveImage` —— 1/25 个有
+- `SetNode` —— 1/25 个有
+- `TT_img_enc_v2` —— 1/25 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 16 | 100% |
-| 高度 | 44 | 44 - 44 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -99,5 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，16 个样本，取值集中（一致性 100%）
-- 高度 中位数 44，观测区间 44 - 44，16 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

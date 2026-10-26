@@ -1,44 +1,43 @@
 ---
 name: unknown_workflow_upscale_vae_31
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.77775
-common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.963
+common_nodes: [Fast Groups Bypasser (rgthree), ImageResize+, ImpactMinMax, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImagePlus, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy cleanGpuUsed, easy imageSize, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_2008398304526209026.json, 图片生成/图生图/SeedVR2-高清放大_2057666509887074306.json, 图片生成/图生图/SeedVR2高清放大工作流_1991362449412829185.json, 图片生成/图生图/图像无损高清放大4K工作流_2050512834345349121.json]
+members: [图片生成/图生图/高清放大SeedVR2-V2.5节点超分辨率工作流_2084110112708452354.json, 图片生成/图生图/高清放大SeedVR2-V2.5节点超分辨率工作流_2084123406571761666.json, 图片生成/图生图/高清放大_SeedVR2_V2.5节点_2081987099439489025.json, 图片生成/图生图/高清放大_SeedVR2_V2.5节点_2082290946431086594.json, 图片生成/图生图/高清放大_SeedVR2_V2.5节点_2082295239536103425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_2008398304526209026.json、图片生成/图生图/SeedVR2-高清放大_2057666509887074306.json、图片生成/图生图/SeedVR2高清放大工作流_1991362449412829185.json、图片生成/图生图/图像无损高清放大4K工作流_2050512834345349121.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/高清放大SeedVR2-V2.5节点超分辨率工作流_2084110112708452354.json、图片生成/图生图/高清放大SeedVR2-V2.5节点超分辨率工作流_2084123406571761666.json、图片生成/图生图/高清放大_SeedVR2_V2.5节点_2081987099439489025.json、图片生成/图生图/高清放大_SeedVR2_V2.5节点_2082290946431086594.json、图片生成/图生图/高清放大_SeedVR2_V2.5节点_2082295239536103425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+全部 5 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResize+`
+- `ImpactMinMax`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SaveImage`
+- `SaveImagePlus`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `ImageUpscaleWithModel` —— 2/4 个有
-- `UpscaleModelLoader` —— 2/4 个有
-- `easy int` —— 2/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy int`
 
 ## 典型参数
 

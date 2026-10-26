@@ -1,66 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_562
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.634667
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, FloatToSigmas, ImageResizeKJ, KSamplerSelect, LTXVConditioning, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVLoopingSampler, LTXVTiledVAEDecode, LoraLoaderModelOnly, MultiPromptProvider, PrimitiveInt, PrintSigmas, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, StringToFloatList, VAEEncode, VHS_VideoCombine]
+coverage: 0.441
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/ltx-0.9.8-长视频生成_1947543467977232385.json, 视频生成/图生视频/LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_1947704155776397313.json, 视频生成/图生视频/LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json]
+members: [视频生成/图生视频/MiniMaxH38高动态加速流_2091799612456783873.json, 视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json, 视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_562
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/ltx-0.9.8-长视频生成_1947543467977232385.json、视频生成/图生视频/LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_1947704155776397313.json、视频生成/图生视频/LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH38高动态加速流_2091799612456783873.json、视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json、视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json、视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `FloatToSigmas`
-- `ImageResizeKJ`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `KSamplerSelect`
-- `LTXVConditioning`
-- `LTXVLatentUpsampler`
-- `LTXVLatentUpsamplerModelLoader`
-- `LTXVLoopingSampler`
-- `LTXVTiledVAEDecode`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MultiPromptProvider`
-- `PrimitiveInt`
-- `PrintSigmas`
+- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
-- `STGAdvancedPresets`
-- `STGGuiderAdvanced`
-- `Set VAE Decoder Noise`
-- `StringToFloatList`
-- `VAEEncode`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `VAEDecode` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LTXVFilmGrain` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `ExtendIntermediateSigmas` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `FloatConstant` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 

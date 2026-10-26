@@ -3,86 +3,55 @@ name: unknown_workflow_video_sampler_vae_117
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7744
-common_nodes: [Bjornulf_ShowStringText, CM_IntToBool, ColorMatch, EmptyImage, ForLoopClose, ForLoopOpen, GetImageRangeFromBatch, GetImageSizeAndCount, GetImagesFromBatchIndexed, GetNode, Image To Mask, ImageBatchMulti, ImageConcatMulti, ImageResize+, ImageResizeKJ, Int, Int Input [Dream], Int2String, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SDVN Any Show, SetNode, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy batchAnything, easy ifElse]
+coverage: 0.6956
+common_nodes: [CR Text, GetNode, ImpactSwitch, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/动作迁移_1944811219767185410.json, 视频生成/图生视频/动作迁移图片0111_1944922765126455298.json, 视频生成/图生视频/动作迁移图片01_1944815848504610817.json, 视频生成/图生视频/动作迁移图片_1944814439767920641.json, 视频生成/图生视频/长视频-2d跳舞-自动循环_1937502980541169666.json]
+members: [视频生成/文生视频/FusionX文生视频1280高清终究完美方案_1934086264885043201.json, 视频生成/文生视频/MoviiGen电影专业模型文生视频_1924067062367645697.json, 视频生成/文生视频/MoviiGen电影专业模型文生视频_1924084830865453057.json, 视频生成/文生视频/Self Forcing文生视频完美加速版_1933687634323791874.json, 视频生成/文生视频/【动漫专用】AniWan文生视频1280高清方案_1945827090790838274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_117
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/动作迁移_1944811219767185410.json、视频生成/图生视频/动作迁移图片0111_1944922765126455298.json、视频生成/图生视频/动作迁移图片01_1944815848504610817.json、视频生成/图生视频/动作迁移图片_1944814439767920641.json、视频生成/图生视频/长视频-2d跳舞-自动循环_1937502980541169666.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/FusionX文生视频1280高清终究完美方案_1934086264885043201.json、视频生成/文生视频/MoviiGen电影专业模型文生视频_1924067062367645697.json、视频生成/文生视频/MoviiGen电影专业模型文生视频_1924084830865453057.json、视频生成/文生视频/Self Forcing文生视频完美加速版_1933687634323791874.json、视频生成/文生视频/【动漫专用】AniWan文生视频1280高清方案_1945827090790838274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Bjornulf_ShowStringText`
-- `CM_IntToBool`
-- `ColorMatch`
-- `EmptyImage`
-- `ForLoopClose`
-- `ForLoopOpen`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetImagesFromBatchIndexed`
+- `CR Text`
 - `GetNode`
-- `Image To Mask`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `ImageResizeKJ`
-- `Int`
-- `Int Input [Dream]`
-- `Int2String`
-- `InvertMask`
-- `LoadImage`
+- `ImpactSwitch`
+- `JWInteger`
 - `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `PreviewImage`
-- `SDVN Any Show`
+- `RH_LLMAPI_NODE`
 - `SetNode`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 4/5 个有
-- `MimicMotionGetPoses` —— 4/5 个有
-- `TextInput_` —— 4/5 个有
-- `AddLabel` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `Text Concatenate` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `VHS_BatchManager` —— 1/5 个有
-- `WanVideoExperimentalArgs` —— 1/5 个有
+- `WanVideoTextEncode` —— 3/5 个有
+- `WanVideoVACEEncode` —— 3/5 个有
+- `FluxResolutionNode` —— 2/5 个有
+- `WanVideoApplyNAG` —— 2/5 个有
+- `WanVideoTextEncodeSingle` —— 2/5 个有
+- `WanVideoFreeInitArgs` —— 1/5 个有
 - `WanVideoLoraSelect` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoTeaCache` —— 1/5 个有
-- `WanVideoVACEModelSelect` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

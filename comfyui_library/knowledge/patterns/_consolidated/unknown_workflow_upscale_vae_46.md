@@ -3,49 +3,44 @@ name: unknown_workflow_upscale_vae_46
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.744
-common_nodes: [Image Comparer (rgthree), ImageBlur, ImageCASharpening+, ImageResize+, LayerUtility: BooleanOperatorV2, LayerUtility: SaveImagePlus, LoadImage, MathExpression|pysssss, PrimitiveBoolean, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, ZML_SwitchOutput, easy cleanGpuUsed, easy ifElse, easy imageScaleDownBy, easy imageSizeByLongerSide, easy imageSizeBySide]
+coverage: 0.931
+common_nodes: [GetImageSize, ImageResize+, ImageScale, ImageScaleBy, ImageScaleToTotalPixels, ImageTile+, ImageUntile+, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2_产品放大_2111751139820654594.json, 图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json]
+members: [图片生成/图生图/TTP分块高清放大_2100404605812301825.json, 图片生成/图生图/TTP分块高清放大_2100492925233885186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_46
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/seedVR2_产品放大_2111751139820654594.json、图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/TTP分块高清放大_2100404605812301825.json、图片生成/图生图/TTP分块高清放大_2100492925233885186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageBlur`
-- `ImageCASharpening+`
+- `GetImageSize`
 - `ImageResize+`
-- `LayerUtility: BooleanOperatorV2`
-- `LayerUtility: SaveImagePlus`
+- `ImageScale`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `ImageTile+`
+- `ImageUntile+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SimpleMath+`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
-- `ZML_SwitchOutput`
+- `TTP_Tile_image_size`
 - `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageScaleDownBy`
-- `easy imageSizeByLongerSide`
-- `easy imageSizeBySide`
 
 ## 典型参数
 

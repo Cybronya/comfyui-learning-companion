@@ -3,35 +3,40 @@ name: unknown_workflow_generic_439
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.824
-common_nodes: [LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.945833
+common_nodes: [CR Prompt Text, CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, StringConcatenate, Text, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json, 图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json, 图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json, 图片生成/文生图/image2文生图节点_2080482425800577025.json, 图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json, 图片生成/文生图/全能图片GGPPTT-image2.5-文生图+图片编辑_2097495837743075330.json]
+members: [图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json, 图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json, 图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json, 图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json, 图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json, 图片生成/文生图/【海皮】横竖屏9宫格稳定版_2028685414927699970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_439
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json、图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json、图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json、图片生成/文生图/image2文生图节点_2080482425800577025.json、图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json、图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json、图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json、图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json、图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `CR Text`
 - `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG2ImageToImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `StringConcatenate`
+- `Text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2TextToImage` —— 5/6 个有
-- `LayerUtility: TextBox` —— 3/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `RHHiddenNodes` —— 5/6 个有
+- `JjkConcat` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
 
 ## 典型参数
 

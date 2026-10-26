@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1334
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [RH_GPT_Image15, SaveImage]
+coverage: 1
+common_nodes: [ImageToMask, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-Image 1.5文生图工作流｜文字渲染精准出图_2099677254816198658.json, 图片生成/文生图/全能图片G-Image 1.5 文生图_2004418754467557378.json]
+members: [图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json, 图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1334
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image 1.5文生图工作流｜文字渲染精准出图_2099677254816198658.json、图片生成/文生图/全能图片G-Image 1.5 文生图_2004418754467557378.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json、图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_GPT_Image15`
+- `ImageToMask`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `ImageCompositeMasked` —— 1/2 个有
+- `LayerUtility: LaMa` —— 1/2 个有
 
 ## 典型参数
 

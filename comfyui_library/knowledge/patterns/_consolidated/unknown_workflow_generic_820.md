@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 4
 level: moderate
 coverage: 1
-common_nodes: [CM_IntToFloat, IndexTTSRun, LoadAudio, Primitive integer [Crystools], SaveAudio, Text Multiline]
+common_nodes: [LoadImage, RH_RhartVideoGImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json, 音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json, 音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json, 音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json]
+members: [数字人/数字人/服装电商一键带货【服装展示类+随机户外】_2052358769073500161.json, 视频生成/图生视频/全能视频X 低价图生30秒_2068345116238106625.json, 视频生成/图生视频/全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.json, 视频生成/图生视频/新手小白 做短剧  一秒4分钱   一键出短剧，增强对白_2079652664073347073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_820
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json、音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json、音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json、音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/服装电商一键带货【服装展示类+随机户外】_2052358769073500161.json、视频生成/图生视频/全能视频X 低价图生30秒_2068345116238106625.json、视频生成/图生视频/全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.json、视频生成/图生视频/新手小白 做短剧  一秒4分钱   一键出短剧，增强对白_2079652664073347073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,15 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CM_IntToFloat`
-- `IndexTTSRun`
-- `LoadAudio`
-- `Primitive integer [Crystools]`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadImage`
+- `RH_RhartVideoGImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/4 个有
+- `CR Text` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,34 +3,36 @@ name: unknown_workflow_generic_1564
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.789
-common_nodes: [CR Text, ImpactSwitch, LoadImage, RH_Sora2_I2V, RH_Sora2_I2V_PRO, SaveVideo, easy showAnything, easy string]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, ShowText, Text, easy promptConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json, 视频生成/图生视频/电商图生视频_2032120133279293442.json]
+members: [图片生成/图生图/空白工作流_2114548853587402754.json, 图片生成/文生图/2031174389567332354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1564
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json、视频生成/图生视频/电商图生视频_2032120133279293442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/空白工作流_2114548853587402754.json、图片生成/文生图/2031174389567332354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImpactSwitch`
 - `LoadImage`
-- `RH_Sora2_I2V`
-- `RH_Sora2_I2V_PRO`
-- `SaveVideo`
-- `easy showAnything`
-- `easy string`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `ShowText`
+- `Text`
+- `easy promptConcat`
+
+**可变部分**（部分 workflow 才有）：
+- `AILab_QwenVL` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 
 ## 典型参数
 

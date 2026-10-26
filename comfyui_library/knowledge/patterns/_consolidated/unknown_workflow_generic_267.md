@@ -1,50 +1,35 @@
 ---
 name: unknown_workflow_generic_267
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.63075
-common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RTXVideoSuperResolution, SaveImage, easy cleanGpuUsed, ttN concat]
+coverage: 0.826889
+common_nodes: [LoadImage, RH_AlibabaWan30ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/G2-GP-T2.0 自动一键生成专业影视分镜_2055623939371618306.json, 图片生成/图生图/Qwen3.5-单图一键生成专业影视分镜与关键帧全流程提示词_2038998127184715778.json, 图片生成/图生图/全能图片G2.0-低价渠道版一键生成专业影视分镜与关键帧全流程提示词-故事板_2063928193937141761.json, 图片生成/图生图/全能图片G2.0专业影视分镜与关键帧提示词_2052294291183153154.json, 图片生成/图生图/单图一键生成专业影视分镜与关键帧全流程提示词_2049451407090130946.json, 图片生成/图生图/单图一键生成专业影视分镜与关键帧全流程提示词_2054810788338118657.json, 图片生成/文生图/全能图片G2+image2生成下一分镜+全节点注释_2055630203384279041.json, 视频生成/图生视频/最新G image2 官方满血版 单图一键生成专业影视分镜与关键帧全流程提示词V1.0_2050601878207119361.json]
+members: [视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json, 视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json, 视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json, 视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json, 视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json, 视频生成/图生视频/Wan3.0首帧_2100196132054986754.json, 视频生成/图生视频/wan3 单图_双图 视频生成 Wan3.0 首尾帧生视频_2092056558216765441.json, 视频生成/图生视频/图生视频工作流｜万相 3.0 首尾帧 最高 1080P_2100471486690713601.json, 视频生成/文生视频/Wan 3.0 文生视频 图生视频 首尾帧 女装带货模版+车内一周穿搭展示+全节点注释_2091861387894149122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_267
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/G2-GP-T2.0 自动一键生成专业影视分镜_2055623939371618306.json、图片生成/图生图/Qwen3.5-单图一键生成专业影视分镜与关键帧全流程提示词_2038998127184715778.json、图片生成/图生图/全能图片G2.0-低价渠道版一键生成专业影视分镜与关键帧全流程提示词-故事板_2063928193937141761.json、图片生成/图生图/全能图片G2.0专业影视分镜与关键帧提示词_2052294291183153154.json、图片生成/图生图/单图一键生成专业影视分镜与关键帧全流程提示词_2049451407090130946.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json、视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json、视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json、视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json、视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RTXVideoSuperResolution`
-- `SaveImage`
-- `easy cleanGpuUsed`
-- `ttN concat`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_AlibabaWan30ImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 7/8 个有
-- `Float` —— 7/8 个有
-- `LoadImage` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `llama_cpp_instruct_adv` —— 7/8 个有
-- `llama_cpp_model_loader` —— 7/8 个有
-- `llama_cpp_parameters` —— 7/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/8 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 3/8 个有
-- `RH_RhartImageG2ImageToImage` —— 2/8 个有
-- `Seed` —— 2/8 个有
-- `PreviewImage` —— 1/8 个有
-- `RH_LLMAPI_Pro_Node` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
 
 ## 典型参数
 

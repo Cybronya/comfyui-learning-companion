@@ -3,37 +3,34 @@ name: unknown_workflow_generic_1280
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.882
-common_nodes: [EmptyImage, GetImageSize, ImageCompositeMasked, LoadImage, LongCatImageEdit, LongCatImageModelLoader, PreviewImage, SaveImage]
+coverage: 0.9
+common_nodes: [BagelImageUnderstanding, BagelModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/longcat-image-advanced-edit-图像编辑_2000840598707990530.json, 图片生成/文生图/longcat-image-advanced-edit_1998416916836442114.json]
+members: [图片生成/反推提示词/Bagel反推_1926998734700236802.json, 图片生成/反推提示词/Bagel提示词反推V2（10倍加速版）_1926956885998796801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1280
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/longcat-image-advanced-edit-图像编辑_2000840598707990530.json、图片生成/文生图/longcat-image-advanced-edit_1998416916836442114.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Bagel反推_1926998734700236802.json、图片生成/反推提示词/Bagel提示词反推V2（10倍加速版）_1926956885998796801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyImage`
-- `GetImageSize`
-- `ImageCompositeMasked`
+- `BagelImageUnderstanding`
+- `BagelModelLoader`
 - `LoadImage`
-- `LongCatImageEdit`
-- `LongCatImageModelLoader`
-- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
+- `Bjornulf_ShowStringText` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

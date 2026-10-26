@@ -3,59 +3,65 @@ name: image_to_image_controlnet_inpaint_lora_8
 type: Image To Image
 frequency: 4
 level: strong
-coverage: 0.641
-common_nodes: [AutoCropFaces, CLIPLoader, CheckpointLoaderSimple, ConditioningZeroOut, Image Comparer (rgthree), ImageStitch, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, TextEncodeQwenImageEditPlus, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.83025
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/251224002.分开式-QwenEdit2509一键自动换脸-24G显存起步​_2003684393887645697.json, 图片生成/图生图/251225001.008.QwenEdit2511自动换脸-24G显存起步_2004213257336487937.json, 图片生成/图生图/LH-DMT版本-2.生图片类-047.QwenEdit2509自动换脸-24G显存起步_2016524928803151874.json, 图片生成/图生图/工作流：LH-DMT版本-49.QwenEdit2509一键自动换脸-24G显存起步​_2003670534682517505.json]
+members: [图片生成/图生图/Qwen 局部重绘，极小区域重绘（完美无缝加速版-InstantX）_1966480322672144386.json, 图片生成/图生图/千问Qwen-Image-inpaint完美加速扩图工作流_1967425764293533698.json, 图片生成/图生图/千问局部重绘（Qwen Inpaint-InstantX）加速V2_1966468855948324866.json, 图片生成/图生图/千问扩图（完美加速版-InstantX）_1966457213625774081.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_lora_8
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/251224002.分开式-QwenEdit2509一键自动换脸-24G显存起步​_2003684393887645697.json、图片生成/图生图/251225001.008.QwenEdit2511自动换脸-24G显存起步_2004213257336487937.json、图片生成/图生图/LH-DMT版本-2.生图片类-047.QwenEdit2509自动换脸-24G显存起步_2016524928803151874.json、图片生成/图生图/工作流：LH-DMT版本-49.QwenEdit2509一键自动换脸-24G显存起步​_2003670534682517505.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen 局部重绘，极小区域重绘（完美无缝加速版-InstantX）_1966480322672144386.json、图片生成/图生图/千问Qwen-Image-inpaint完美加速扩图工作流_1967425764293533698.json、图片生成/图生图/千问局部重绘（Qwen Inpaint-InstantX）加速V2_1966468855948324866.json、图片生成/图生图/千问扩图（完美加速版-InstantX）_1966457213625774081.json）
 
 - **类型**：Image To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AutoCropFaces`
 - `CLIPLoader`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
+- `CLIPTextEncode`
+- `ControlNetInpaintingAliMamaApply`
+- `ControlNetLoader`
 - `Image Comparer (rgthree)`
-- `ImageStitch`
-- `InpaintModelConditioning`
 - `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MaskPreview+`
-- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `UnetLoaderGGUF`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `GrowMaskWithBlur` —— 2/4 个有
+- `ImagePadForOutpaint` —— 2/4 个有
+- `InpaintCropImproved` —— 1/4 个有
+- `InpaintStitchImproved` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `JWFloat` —— 1/4 个有
+- `LayerMask: MaskGrow` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| 采样步数 | 4 | 4 - 5 | 4 | 90% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.6 | 0.6 - 0.6 | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -65,9 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 5，4 个样本，取值集中（一致性 90%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.6，观测区间 0.6 - 0.6，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 高发问题（4/4 个样本）：Steps较低可能导致细节不足

@@ -1,89 +1,112 @@
 ---
 name: unknown_workflow_video_lora_sampler_4
 type: Unknown Workflow
-frequency: 67
+frequency: 81
 level: moderate
-coverage: 0.514373
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, Int, LoadImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.550235
+common_nodes: [BBoxYOLO, BatchCount+, CLIPVisionLoader, CheckpointLoaderSimple, DrawViTPose, ImageBatch, ImageFromBatch, ImageResizeKJv2, LazySwitch1way, LazySwitch2way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RepeatImageBatch, SDPoseKeypointExtractor, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader, easy anythingIndexSwitch, easy boolean, easy compare, easy float, easy imageSize, easy int, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json, 视频生成/图生视频/Wan2.2 Animate动作迁移（操作方便）_2019075587062636545.json, 视频生成/图生视频/Wan2.2+Animate动作迁移 实现20秒以上视频生成 支持多人动作 脸部表情迁移高质量输出_2073705930453245954.json, 视频生成/图生视频/Wan2.2+Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017135847610519553.json, 视频生成/图生视频/Wan2.2+Animate循环长视频_2003473617683922946.json, 视频生成/图生视频/Wan2.2+Animate支持20秒+支持多人动作迁移高质量_2006380310623162369.json, 视频生成/图生视频/Wan2.2+Animate支持20秒+支持多人动作迁移高质量_2053406061868138498.json, 视频生成/图生视频/Wan2.2+Animate支持5秒+支持多人动作迁移速度慢但是高质量_2007482787619672065.json, 视频生成/图生视频/Wan2.2结合Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017109030061219842.json, 视频生成/图生视频/Wan高精细的用这个动作迁移，动作高仿，需要高显存跑_2057669238491537409.json, 视频生成/图生视频/changge zhufu_2094680904781352962.json, 视频生成/图生视频/greeting video_2089174015540817921.json, 视频生成/图生视频/li_2033034553987702785.json, 视频生成/图生视频/wan motion control_2057856312750465025.json, 视频生成/图生视频/【推荐，动作迁移不变色】WanAnimate动作迁移升级版_2020604766358872065.json, 视频生成/图生视频/一键生成超精细动作迁移 单双人舞蹈动作模仿 各种动作复刻参考图生视频_2087865873062256642.json, 视频生成/图生视频/万相Wan2.2动作复刻，视频复刻，动作模仿_迁移_2046484614713188353.json, 视频生成/图生视频/人物精细高质量动作迁移 复刻动作 高级强化版_2083510108717408257.json, 视频生成/图生视频/人物精细高质量动作迁移 复刻动作 高级强化版_2083521883307339778.json, 视频生成/图生视频/人物精细高质量动作迁移 高级强化版_2083363876598534146.json, 视频生成/图生视频/动作模仿高精细1_1复刻的动作迁移_2078312802099482626.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2039672616482508802.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2039992227572748290.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2109524936074293249.json, 视频生成/图生视频/动作迁移-图片跳舞-动作模仿_2040075523052802049.json, 视频生成/图生视频/动作迁移_2047655725190619137.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2042165206326976513.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2056034376437256194.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2056388313015209985.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2058520279621652482.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2059247790496243714.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2070370786665385985.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2071503643160956929.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2078450483810889729.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2078647438625300482.json, 视频生成/图生视频/动作迁移【可抖X】-高清-偏慢-预计400RH_2082351326247350274.json, 视频生成/图生视频/动作迁移【可抖X】_2030874906992320514.json, 视频生成/图生视频/动作迁移【可抖X】_2039672522324582401.json, 视频生成/图生视频/动作迁移【可抖X】清晰-好-6秒300RH_2082825993336745985.json, 视频生成/图生视频/动作迁移【可抖X】高显存跑_2036032896015802370.json, 视频生成/图生视频/动作迁移抖胸设置动作高仿舞蹈复刻模仿角色替换人物替换_2092861283463950338.json, 视频生成/图生视频/动作迁移，这个动作高仿，还是这个模仿的好_2033570281733758977.json, 视频生成/图生视频/动作迁移，这个动作高仿，需要高显存跑_2060615103225094145.json, 视频生成/图生视频/口哨舞-动作迁移_2089255191454502914.json, 视频生成/图生视频/唱歌30秒_2099739134943391746.json, 视频生成/图生视频/欧派视频生成_副本_2058093873213296642.json, 视频生成/图生视频/精细化高标准动作迁移复刻舞蹈复制_2075200788628070401.json, 视频生成/图生视频/舞蹈动作迁移_2040058944869113857.json, 视频生成/图生视频/视频动作迁移好用丝滑_2031729739819393025.json, 视频生成/图生视频/超强 动作迁移 高精细动作模仿 需要plus_2084240017639170050.json, 视频生成/图生视频/超精准动作模仿，只模仿动作，1_1复刻人物动作_2078317675809431553.json, 视频生成/图生视频/超精细动作迁移 舞蹈动作模仿 各种动作复刻参考图生视频_2056347634981494785.json, 视频生成/图生视频/超精细动作迁移 舞蹈动作模仿 各种动作复刻参考图生视频_2079900208376410113.json, 视频生成/图生视频/超高一致性动作迁移 +姿势迁移+动作模仿+人物姿势+ 高清输出_2079451577068384257.json, 视频生成/图生视频/跑高精细的动作迁移（高清版）_2060595760235892737.json, 视频生成/图生视频/跑高精细的动作迁移（高清版）_2062202323358806018.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059569545886654466.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059625693083951106.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059626029299359746.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059651380591284225.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059655800087465986.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059655902189412353.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059659749129543682.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2060328341084921857.json, 视频生成/图生视频/跑高精细的用这个动作迁移【可抖X】高显存跑_2043400679816962049.json, 视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2052270190972420097.json, 视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2056605663723352066.json]
+members: [图片生成/反推提示词/最强动作迁移+表情+手部一致性Animate+V9三种模式切换可多人 工作流V1.0_2063541086307569665.json, 图片生成/图生图/Animate动作迁移V9（自动尺寸）_2077971164198166529.json, 图片生成/图生图/Wan2.2 Animate动作迁移V7（自动尺寸）_2046476272037007362.json, 数字人/数字人/Animate动作迁移_2061830030229069826.json, 数字人/数字人/Wan2.2 Animat V7 动作迁移-多功能版_2047479698636148737.json, 数字人/数字人/Wan2.2 Animate 动作迁移 V8.1-超清王炸+动态运镜+多人物模式_2055818595577417729.json, 数字人/数字人/Wan2.2 Animate动作迁移V7（自动尺寸）_2052646498596343809.json, 数字人/数字人/WanAnimate姿态驱动带说明_2082127688613064705.json, 数字人/数字人/三七爆款复刻_2077227222825529346.json, 数字人/数字人/三七爆款复刻_2077343062841454593.json, 数字人/数字人/最强动作迁移（自动尺寸，自动时长）_2069672412043632642.json, 数字人/数字人/最强动作迁移（自动尺寸，自动时长）_2069781381005271042.json, 数字人/数字人/电商带货人物完美替换_2052311672257298434.json, 数字人/数字人/表情动作迁移 Animate视频动作迁移+表情+手部动作一致_2070335475499487234.json, 视频生成/图生视频/Action Transfer 视频动作迁移 Animate_2096773886733021185.json, 视频生成/图生视频/Animate 动作迁移 复刻跳舞动作 单人跳舞_2071942874186477570.json, 视频生成/图生视频/Animate 动作迁移+表情+手部一致性 三种模式切换可多人_2092922363200495617.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作 单人跳舞_2067865822789455873.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作_2067572288576376834.json, 视频生成/图生视频/Animate 动作迁移-自动尺寸 复刻跳舞动作_2082104573845663745.json, 视频生成/图生视频/AnimateV9动作迁移人物动作模仿_2091532232967151618.json, 视频生成/图生视频/Animate动作迁移V9（plus)_2088492819714498561.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸懒人版）_2067158640880078849.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）PLUS_2083515980403265537.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）_优化版V1_2087512134681980930.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）优化版V2_2087495748442214401.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）更强_2063224518570758145.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）更新版_2063576371754000385.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2065412383627112450.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2066779159443107841.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2066883170611585025.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2067591708271013889.json, 视频生成/图生视频/Animate视频动作迁移+表情+手部一致性_2067591863569309697.json, 视频生成/图生视频/Coze_Drive_动作迁移_V9_608x1088_固定版_2094292856751083522.json, 视频生成/图生视频/Wan2.2 Animate动作迁移001_2052699613496397825.json, 视频生成/图生视频/Wan2.2 Animate动作迁移002（头发飘动版）_2052701962461818882.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V6.1（自动尺寸）_2043833661866385410.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2049032456640143362.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2051858865142149122.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2064628335476568065.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2066419073017278466.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2068949549372235778.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2083081868970381313.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸+同步运镜）_2095432121711157249.json, 视频生成/图生视频/Wan2.2 Animate动作迁移V7（自动尺寸）_2050309489475239937.json, 视频生成/图生视频/Wan2.2 Animate动作迁移老版本（自动尺寸）V0.016B_2048554524419297281.json, 视频生成/图生视频/Wan2.2+Animate动作迁移-多用途_2056978911422140417.json, 视频生成/图生视频/wan2.2-Animate动作迁移v1_2101930049103548418.json, 视频生成/图生视频/作迁移+表情+手部一致性Animate_2062872268446978050.json, 视频生成/图生视频/动作模仿 动作迁移+运镜_2047204133865791490.json, 视频生成/图生视频/动作迁移+动作模仿 Animate进阶强化版V9_2084807616802410498.json, 视频生成/图生视频/动作迁移+表情+手部一致性-三种模式切换可多人_2062041027145453570.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2060013241476141057.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2060216672379817986.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2060762389401923586.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2061446463477084162.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2061455467691462658.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2061769206588334081.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2061802124039770113.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2061805421148594177.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2063653264482201601.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2063660703613018114.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2064360062327549954.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate V8三种模式切换可多人_2071138655644770305.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V8三种模式切换可多人_2060986277968830466.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V8三种模式切换可多人_2062015081935888386.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V8三种模式切换可多人_2092825521984991234.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V9三种模式切换可多人+压缩_2063450550779342849.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V9三种模式切换可多人_2092869068524183554.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate+V9三种模式切换可多人_2096453318905253889.json, 视频生成/图生视频/动作迁移+表情+手部一致性Animate三种模式切换可多人_2061231522891522050.json, 视频生成/图生视频/动作迁移+表情+手部一致性【Animate+V8三种模式切换可多人】_2064529651204190210.json, 视频生成/图生视频/动作迁移-工作流_2046841959980994562.json, 视频生成/图生视频/啊癫 矮小动漫卡通身材动作迁移_2054929094915174402.json, 视频生成/图生视频/图生视频-高质量-1080p_1948362216455188482.json, 视频生成/图生视频/复刻美女跳舞_2056283340306735106.json, 视频生成/图生视频/小陆动作迁移工作流V9_2075410824641990657.json, 视频生成/图生视频/带货视频，动作模仿，动作迁移_2051928447810846722.json, 视频生成/图生视频/最新Animate视频动作迁移+表情+手部一致性_2065796439602720769.json, 视频生成/图生视频/模仿跳舞_2045493013840928770.json, 视频生成/图生视频/热门图片跳舞动作迁移（自动尺寸，自动时长）_2060202203054432257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 67 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json、视频生成/图生视频/Wan2.2 Animate动作迁移（操作方便）_2019075587062636545.json、视频生成/图生视频/Wan2.2+Animate动作迁移 实现20秒以上视频生成 支持多人动作 脸部表情迁移高质量输出_2073705930453245954.json、视频生成/图生视频/Wan2.2+Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017135847610519553.json、视频生成/图生视频/Wan2.2+Animate循环长视频_2003473617683922946.json…）
+> 由 `engine/knowledge_consolidation` 从 81 个 workflow 归纳得出（图片生成/反推提示词/最强动作迁移+表情+手部一致性Animate+V9三种模式切换可多人 工作流V1.0_2063541086307569665.json、图片生成/图生图/Animate动作迁移V9（自动尺寸）_2077971164198166529.json、图片生成/图生图/Wan2.2 Animate动作迁移V7（自动尺寸）_2046476272037007362.json、数字人/数字人/Animate动作迁移_2061830030229069826.json、数字人/数字人/Wan2.2 Animat V7 动作迁移-多功能版_2047479698636148737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：67
+- **样本数**：81
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 67 个 workflow 都包含：
+全部 81 个 workflow 都包含：
+- `BBoxYOLO`
+- `BatchCount+`
 - `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DrawViTPose`
+- `ImageBatch`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Int`
+- `LazySwitch1way`
+- `LazySwitch2way`
 - `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `RepeatImageBatch`
+- `SDPoseKeypointExtractor`
 - `VHS_LoadVideo`
-- `VHS_VideoCombine`
 - `VHS_VideoInfo`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `YOLOModelLoader`
+- `easy anythingIndexSwitch`
+- `easy boolean`
+- `easy compare`
+- `easy float`
+- `easy imageSize`
+- `easy int`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCount+` —— 66/67 个有
-- `GetNode` —— 66/67 个有
-- `ImageBatch` —— 66/67 个有
-- `ImageFromBatch` —— 66/67 个有
-- `PoseAndFaceDetection` —— 66/67 个有
-- `RepeatImageBatch` —— 66/67 个有
-- `SetNode` —— 66/67 个有
-- `easy mathInt` —— 66/67 个有
-- `PreviewImage` —— 65/67 个有
-- `RHHiddenNodes` —— 65/67 个有
-- `DrawViTPose` —— 61/67 个有
-- `OnnxDetectionModelLoader` —— 61/67 个有
-- `WanVideoModelLoader` —— 60/67 个有
-- `WanVideoLoraSelectMulti` —— 59/67 个有
-- `WanVideoContextOptions` —— 58/67 个有
-- `WanVideoLoraSelect` —— 58/67 个有
-- `VRAMReserver` —— 57/67 个有
-- `easy float` —— 57/67 个有
-- `easy showAnything` —— 56/67 个有
-- `MemoryCleaner` —— 35/67 个有
-- `LazySwitch1way` —— 7/67 个有
-- `WanVideoTeaCache` —— 7/67 个有
-- `easy compare` —— 7/67 个有
-- `孤海注释` —— 3/67 个有
-- `ComfyMathExpression` —— 2/67 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/67 个有
-- `Primitive integer [Crystools]` —— 2/67 个有
-- `SimpleMath+` —— 2/67 个有
-- `easy int` —— 2/67 个有
-- `CR Text` —— 1/67 个有
-- `CompressImages` —— 1/67 个有
-- `FlashVSRNode` —— 1/67 个有
-- `GemmaAPITextEncode` —— 1/67 个有
-- `GetImageSize+` —— 1/67 个有
-- `GetImageSizeAndCount` —— 1/67 个有
-- `ImageScale` —— 1/67 个有
-- `ImageUpscaleWithModel` —— 1/67 个有
-- `LoadVideo` —— 1/67 个有
-- `MathExpression|pysssss` —— 1/67 个有
-- `UpscaleModelLoader` —— 1/67 个有
-- `VHS_SelectFilename` —— 1/67 个有
-- `WanVideoEasyCache` —— 1/67 个有
+- `CR Text` —— 80/81 个有
+- `GetNode` —— 80/81 个有
+- `ImpactSwitch` —— 80/81 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 80/81 个有
+- `SDPoseDrawKeypoints` —— 80/81 个有
+- `SetNode` —— 80/81 个有
+- `VHS_VideoCombine` —— 80/81 个有
+- `WanVideoEncode` —— 80/81 个有
+- `WanVideoUni3C_ControlnetLoader` —— 80/81 个有
+- `WanVideoUni3C_embeds` —— 80/81 个有
+- `easy cleanGpuUsed` —— 80/81 个有
+- `CompressImages` —— 78/81 个有
+- `RHHiddenNodes` —— 78/81 个有
+- `VideoCombineNode` —— 78/81 个有
+- `ZML_AnyTypeSwitchFiveBoolean` —— 77/81 个有
+- `Bool` —— 69/81 个有
+- `BodyRatioMapperProportionTransfer` —— 59/81 个有
+- `BodyRatioMapperSDPoseRender` —— 59/81 个有
+- `ImageScaleToTotalPixels` —— 57/81 个有
+- `PreviewImage` —— 55/81 个有
+- `SimpleMath+` —— 35/81 个有
+- `孤海注释` —— 26/81 个有
+- `LayerUtility: ColorImage V2` —— 24/81 个有
+- `DownloadAndLoadNLFModel` —— 23/81 个有
+- `NLFPredict` —— 23/81 个有
+- `PoseDetectionVitPoseToDWPose` —— 23/81 个有
+- `RenderNLFPoses` —— 23/81 个有
+- `easy showAnything` —— 16/81 个有
+- `SaveImage` —— 8/81 个有
+- `TT_img_enc` —— 8/81 个有
+- `AnyBooleanSwitch` —— 2/81 个有
+- `PrimitiveBoolean` —— 2/81 个有
+- `AddLabel` —— 1/81 个有
+- `Any To Any` —— 1/81 个有
+- `AnyAspectRatio` —— 1/81 个有
+- `ComfyMathExpression` —— 1/81 个有
+- `CreateVideo` —— 1/81 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/81 个有
+- `GetImageSize` —— 1/81 个有
+- `Label (rgthree)` —— 1/81 个有
+- `MemoryCleaner` —— 1/81 个有
+- `MinNode` —— 1/81 个有
+- `PrimitiveInt` —— 1/81 个有
+- `SaveVideo` —— 1/81 个有
+- `easy indexAnything` —— 1/81 个有
 
 ## 典型参数
 

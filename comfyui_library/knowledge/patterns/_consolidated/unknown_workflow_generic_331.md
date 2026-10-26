@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_331
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.875714
-common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro, SaveVideo]
+coverage: 0.946375
+common_nodes: [LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json, 视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json, 视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json, 视频生成/图生视频/Seedance1.5pro图生视频（全自动）_2004099272159207426.json, 视频生成/图生视频/高清视频 Seedance Pro 首尾帧图生视频_2022516850940186626.json]
+members: [视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json, 视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json, 视频生成/图生视频/全能视频V3.1-首尾帧视频-低价版_2049857854470934530.json, 视频生成/图生视频/超好用🔥全能视频V3.1-首尾帧生视频-价低效果超棒_2047202620065980418.json, 视频生成/文生视频/角色发现镜头，对镜头做互动动作，添加人群噪音、体育场灯光和动态摄像机角度。+全节点注释_2054074849928196098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_331
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json、视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json、视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json、视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_Doubao_Seedance_1_5_Pro`
+- `RH_RhartVideoV31FastStartEndToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `PreviewAny` —— 4/7 个有
-- `AILab_QwenVL` —— 2/7 个有
-- `RHHiddenNodes` —— 2/7 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 

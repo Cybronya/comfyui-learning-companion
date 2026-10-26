@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1374
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.922
-common_nodes: [LoadImage, PreviewImage, SaveImage, easy imageConcat]
+coverage: 0.909
+common_nodes: [InstantCharacterGenerate, InstantCharacterLoadModel, LoadImage, RH_LLMAPI_NODE, RunningHub_Omini_Subject, SaveImage, TextBox, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/多图拼接_1992877878245388289.json, 图片生成/图生图/拼图工作流（2×4、5×2）_2112550774663368706.json]
+members: [图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json, 图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1374
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图拼接_1992877878245388289.json、图片生成/图生图/拼图工作流（2×4、5×2）_2112550774663368706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json、图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `InstantCharacterGenerate`
+- `InstantCharacterLoadModel`
 - `LoadImage`
-- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RunningHub_Omini_Subject`
 - `SaveImage`
-- `easy imageConcat`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Batch` —— 1/2 个有
-- `YuanImageGridComposite` —— 1/2 个有
+- `TextBox`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 

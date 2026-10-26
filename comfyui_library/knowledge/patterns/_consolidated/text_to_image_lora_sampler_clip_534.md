@@ -3,64 +3,55 @@ name: text_to_image_lora_sampler_clip_534
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.664
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateVideo, EmptyLatentImage, GetNode, H3AutoContextSampler, H3Parameter, H3SeamCorrection, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxLowVRAMAttention, ResolutionSelector, SaveImage, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.892
+common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, GetImagesFromBatchIndexed, GetVideoComponents, JjkText, KSampler, LoadVideoWithFilename, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy imageScaleDownBy, easy indexAnything, easy mathInt, solarL_SaveImagesToZip, workflow>合并]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3 AutoContext无限时长视频单采直出处理工具_2101723121383460866.json, 视频生成/图生视频/MiniMax H3 AutoContext无限时长视频双采放大1080P直出工具_2101721113498841089.json, 视频生成/图生视频/MiniMax H3 AutoContext无限时长视频双采放大武戏1080P直出工具_2101719041944674305.json]
+members: [图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2110439126616072193.json, 图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2114178239458529282.json, 图片生成/图生图/视频姿势提取二创｜角色设定图生图角色一致性_2092199662181765122.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_534
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 AutoContext无限时长视频单采直出处理工具_2101723121383460866.json、视频生成/图生视频/MiniMax H3 AutoContext无限时长视频双采放大1080P直出工具_2101721113498841089.json、视频生成/图生视频/MiniMax H3 AutoContext无限时长视频双采放大武戏1080P直出工具_2101719041944674305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2110439126616072193.json、图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2114178239458529282.json、图片生成/图生图/视频姿势提取二创｜角色设定图生图角色一致性_2092199662181765122.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AddLabel`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateVideo`
 - `EmptyLatentImage`
-- `GetNode`
-- `H3AutoContextSampler`
-- `H3Parameter`
-- `H3SeamCorrection`
-- `ImageResizeKJv2`
+- `GetImageSize`
+- `GetImagesFromBatchIndexed`
+- `GetVideoComponents`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadVideoWithFilename`
 - `LoraLoaderModelOnly`
-- `MiniMaxLowVRAMAttention`
-- `ResolutionSelector`
+- `PreviewImage`
 - `SaveImage`
-- `SaveVideo`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageScaleDownBy`
+- `easy indexAnything`
+- `easy mathInt`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
+- `workflow>合并`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/3 个有
-- `H3SigmaRefiner` —— 2/3 个有
-- `LTXVConcatAVLatent` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `MiniMaxH3SigmaShift` —— 2/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `SolAttnPatch` —— 2/3 个有
-- `SplitSigmas` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `孤海注释` —— 2/3 个有
+- `EmptyImage` —— 1/3 个有
 
 ## 典型参数
 

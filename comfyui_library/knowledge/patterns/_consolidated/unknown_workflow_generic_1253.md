@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1253
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [ImageScaleToTotalPixels, LayerUtility: PurgeVRAM V2, LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
+coverage: 0.9
+common_nodes: [SaveVideo, Wan3ReferenceToVideoApi]
 problems: []
 missing: []
-members: [图片生成/图生图/LongCat Edit单图像编辑_1998251120273317890.json, 图片生成/文生图/LongCat-Image-Edit_2001209556254552066.json]
+members: [comfyui-workflow-templates-json/api_wan3_0_r2v.json, comfyui-workflow-templates-json/api_wan3_0_t2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1253
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/LongCat Edit单图像编辑_1998251120273317890.json、图片生成/文生图/LongCat-Image-Edit_2001209556254552066.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_wan3_0_r2v.json、comfyui-workflow-templates-json/api_wan3_0_t2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LongCatImageEdit`
-- `LongCatImageModelLoader`
-- `SaveImage`
+- `SaveVideo`
+- `Wan3ReferenceToVideoApi`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

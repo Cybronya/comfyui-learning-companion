@@ -3,57 +3,36 @@ name: unknown_workflow_video_37
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.788
-common_nodes: [ForLoopClose, ForLoopOpen, GetImageSize, ImageCropByMask, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, MaskFix+, MathExpression|pysssss, PlaySound|pysssss, PointsEditor, PreviewImage, PrimitiveInt, QuadMaskWarper, RTXVideoSuperResolution, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy batchAnything, easy indexAnything, easy showAnything]
+coverage: 0.96875
+common_nodes: [AdvancedLivePortrait, ExpressionEditor, LoadImage, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json, 视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json, 视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json, 视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json]
+members: [数字人/数字人/Liveportrait 人物表情变化【AI小王子】_1912332314951778306.json, 视频生成/图生视频/LivePortrait面部表情迁移_1922957576219389954.json, 视频生成/图生视频/人物表情   图生视频   定制表情+模仿视频  超简单_1909991060288827394.json, 视频生成/图生视频/人物表情动画（上传图片、视频）设置表情变化Liveportrait_1928250481943166977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_37
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json、视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json、视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json、视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Liveportrait 人物表情变化【AI小王子】_1912332314951778306.json、视频生成/图生视频/LivePortrait面部表情迁移_1922957576219389954.json、视频生成/图生视频/人物表情   图生视频   定制表情+模仿视频  超简单_1909991060288827394.json、视频生成/图生视频/人物表情动画（上传图片、视频）设置表情变化Liveportrait_1928250481943166977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ForLoopClose`
-- `ForLoopOpen`
-- `GetImageSize`
-- `ImageCropByMask`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `MaskFix+`
-- `MathExpression|pysssss`
-- `PlaySound|pysssss`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `QuadMaskWarper`
-- `RTXVideoSuperResolution`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `AdvancedLivePortrait`
+- `ExpressionEditor`
+- `LoadImage`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy batchAnything`
-- `easy indexAnything`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `Bjornulf_ShowInt` —— 2/4 个有
-- `ImagePadKJ` —— 2/4 个有
-- `Images to RGB` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `ImageConcatenate_UTK` —— 1/4 个有
+- `RIFE VFI` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
 
 ## 典型参数
 

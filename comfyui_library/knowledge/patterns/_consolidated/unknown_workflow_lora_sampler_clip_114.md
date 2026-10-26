@@ -3,67 +3,85 @@ name: unknown_workflow_lora_sampler_clip_114
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, Simple String, String Literal, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.978
+common_nodes: [BNK_CLIPTextEncodeAdvanced, CheckpointLoaderSimple, EmptyLatentImage, HyperLoRAApplyLoRA, HyperLoRAConfig, HyperLoRAFaceAttr, HyperLoRAGenerateIDLoRA, HyperLoRAIDCond, HyperLoRALoader, ImpactMakeImageBatch, JWInteger, KSampler, LoadImage, SaveImage, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-image 胶片感_2035669521972858882.json, 图片生成/文生图/Z-image 胶片感_2071411620244447234.json, 图片生成/文生图/Zimage 基础流_2064620356811448321.json, 图片生成/文生图/Zimage 水印工作流_2038956956236386305.json, 图片生成/文生图/Zimage 胶片工作流_2060357293669179394.json]
+members: [图片生成/文生图/HyperLora人物一致性文生图_1915931428176203777.json, 图片生成/文生图/HyperLora人物一致性文生图（参考）V1_1915751964595130369.json, 图片生成/文生图/HyperLora人物一致性脸部细化超级加速文生图（参考版）_1915754672240394242.json, 图片生成/文生图/HyperLora人物最强一致性InstantID超级加速文生图（参考版）_1915755901133717506.json, 图片生成/文生图/HyperLora超强人物一致性+CN控制文生图_1916009861518131201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_114
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-image 胶片感_2035669521972858882.json、图片生成/文生图/Z-image 胶片感_2071411620244447234.json、图片生成/文生图/Zimage 基础流_2064620356811448321.json、图片生成/文生图/Zimage 水印工作流_2038956956236386305.json、图片生成/文生图/Zimage 胶片工作流_2060357293669179394.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/HyperLora人物一致性文生图_1915931428176203777.json、图片生成/文生图/HyperLora人物一致性文生图（参考）V1_1915751964595130369.json、图片生成/文生图/HyperLora人物一致性脸部细化超级加速文生图（参考版）_1915754672240394242.json、图片生成/文生图/HyperLora人物最强一致性InstantID超级加速文生图（参考版）_1915755901133717506.json、图片生成/文生图/HyperLora超强人物一致性+CN控制文生图_1916009861518131201.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `BNK_CLIPTextEncodeAdvanced`
+- `CheckpointLoaderSimple`
+- `EmptyLatentImage`
+- `HyperLoRAApplyLoRA`
+- `HyperLoRAConfig`
+- `HyperLoRAFaceAttr`
+- `HyperLoRAGenerateIDLoRA`
+- `HyperLoRAIDCond`
+- `HyperLoRALoader`
+- `ImpactMakeImageBatch`
+- `JWInteger`
 - `KSampler`
-- `LoraLoaderModelOnly`
+- `LoadImage`
 - `SaveImage`
-- `Simple String`
-- `String Literal`
-- `Text Concatenate`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BetterFilmGrain` —— 4/5 个有
-- `ImageSharpen` —— 4/5 个有
-- `LayerColor: ColorBalance` —— 4/5 个有
-- `LayerUtility: ImageBlendAdvance` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
+- `ApplyFBCacheOnModel` —— 4/5 个有
+- `CLIPSetLastLayer` —— 4/5 个有
+- `ImageConcanate` —— 4/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `Note Plus (mtb)` —— 4/5 个有
+- `PreviewImage` —— 3/5 个有
+- `ControlNetLoader` —— 2/5 个有
+- `ApplyInstantIDAdvanced` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `ControlNetApplyAdvanced` —— 1/5 个有
+- `FaceDetailer` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageUpscaleWithModel` —— 1/5 个有
+- `InstantIDFaceAnalysis` —— 1/5 个有
+- `InstantIDModelLoader` —— 1/5 个有
+- `OpenposePreprocessor` —— 1/5 个有
+- `UltralyticsDetectorProvider` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 9 - 9 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | sgm_uniform | - | 5 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 5 | 3 - 5 | 5 | 83% |
+| 采样算法 | dpmpp_2m | - | 5 | 100% |
+| 调度器 | karras | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| ControlNet 权重 | 0.7 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 9 - 9，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 5，观测区间 3 - 5，5 个样本，取值集中（一致性 83%）
+- 采样算法 最常用 dpmpp_2m，5 个样本，一致性 100%
+- 调度器 最常用 karras，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

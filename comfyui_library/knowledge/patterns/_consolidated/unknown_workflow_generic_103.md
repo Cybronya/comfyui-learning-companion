@@ -1,37 +1,37 @@
 ---
 name: unknown_workflow_generic_103
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.837143
-common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub DreamOmni2 Gen Pipeline, RunningHub DreamOmni2 Generator, SaveImage]
+coverage: 0.565
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamOmni2三张图_1977693881636716545.json, 图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json, 图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json, 图片生成/图生图/DreamOmni2合影_1977530658207748098.json, 图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json, 图片生成/图生图/DreamOmni2图片编辑大模型（）_1977609446580985858.json, 图片生成/图生图/DreamOmni2图生图洗图_1977206632318935042.json, 图片生成/图生图/DreamOmni2姿势迁移_1977509985427050497.json, 图片生成/图生图/DreamOmni2字体风格迁移_1977622397262143490.json, 图片生成/图生图/DreamOmni2打光融合_1977504086134280193.json, 图片生成/图生图/DreamOmni2电商模特商品_1977354620756467714.json, 图片生成/图生图/DreamOmni2电商模特换装_1977246427334234114.json, 图片生成/图生图/DreamOmni2表情迁移_1977596031246442498.json, 图片生成/图生图/DreamOmni2风格迁移_1977506050427506690.json]
+members: [图片生成/图生图/室内户型图五种处理方案_2111221179829805058.json, 图片生成/图生图/室内软装设计排版_2107634806942158850.json, 图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2101486660235128833.json, 图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2102217490880352257.json, 图片生成/图生图/故事版生成低价版_2101490718018723842.json, 图片生成/图生图/故事版生成低价版_2102304819271790593.json, 图片生成/图生图/故事版生成（低价版）_2100051124219895810.json, 图片生成/图生图/效果图转2.5D轴侧图_2105560279689031681.json, 图片生成/图生图/效果图重新渲染八种的光源及布光控制出图_2101475279637147650.json, 图片生成/图生图/效果图重新渲染的光源及布光控制出图_2101280365599088642.json, 图片生成/图生图/暖阳手账：一人多趣迷你小世界_2070409564427735041.json, 图片生成/图生图/照片光影重构十种风格_2101298116241743873.json, 图片生成/图生图/照片改撕裂式风格_2092538259690835970.json, 图片生成/图生图/照片改水墨画风格_2092429569696550913.json, 图片生成/图生图/照片改油画风格_2092439938225762306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_103
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/DreamOmni2三张图_1977693881636716545.json、图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json、图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json、图片生成/图生图/DreamOmni2合影_1977530658207748098.json、图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/室内户型图五种处理方案_2111221179829805058.json、图片生成/图生图/室内软装设计排版_2107634806942158850.json、图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2101486660235128833.json、图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2102217490880352257.json、图片生成/图生图/故事版生成低价版_2101490718018723842.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 15 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RunningHub DreamOmni2 Gen Pipeline`
-- `RunningHub DreamOmni2 Generator`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
-- `easy imageConcat` —— 1/14 个有
+- `Image Comparer (rgthree)` —— 3/15 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/15 个有
+- `LayerUtility: TextJoin` —— 1/15 个有
 
 ## 典型参数
 

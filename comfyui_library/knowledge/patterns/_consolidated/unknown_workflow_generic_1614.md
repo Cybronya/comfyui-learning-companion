@@ -3,29 +3,34 @@ name: unknown_workflow_generic_1614
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [PrimitiveStringMultiline, RH_Sora2_T2V_Realistic, SaveVideo]
+coverage: 0.6
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S 2写实视频工作流｜全能视频S 2 Realistic 实拍级质感_2099402165608599554.json, 视频生成/文生视频/全能视频S文生视频官方版(注意价格)_2016063169243910146.json]
+members: [图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json, 图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1614
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频S 2写实视频工作流｜全能视频S 2 Realistic 实拍级质感_2099402165608599554.json、视频生成/文生视频/全能视频S文生视频官方版(注意价格)_2016063169243910146.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json、图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `RH_Sora2_T2V_Realistic`
-- `SaveVideo`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `RH_RhartImageNProTextToImage` —— 1/2 个有
 
 ## 典型参数
 

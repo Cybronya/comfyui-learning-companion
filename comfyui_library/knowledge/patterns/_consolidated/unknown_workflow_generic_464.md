@@ -3,36 +3,37 @@ name: unknown_workflow_generic_464
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.895
-common_nodes: [LoadAudio, LoadImage, LoadVideo, PreviewAny, SaveVideo]
+coverage: 0.422833
+common_nodes: [CR Text Concatenate, JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage, ShowText, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.0 Global Fast  全参工作流_2073409651194032129.json, 视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json, 视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json, 视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global Fast_2056289282322685953.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json]
+members: [图片生成/图生图/jimeng多图_1990594104864247809.json, 图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json, 图片生成/图生图/广告产品 改图_1984200074525818882.json, 图片生成/图生图/漫剧场景 改图_1991480238735630337.json, 图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json, 图片生成/文生图/漫剧角色 改图_1991415445890813953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_464
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Global Fast  全参工作流_2073409651194032129.json、视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json、视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json、视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global Fast_2056289282322685953.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/jimeng多图_1990594104864247809.json、图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json、图片生成/图生图/广告产品 改图_1984200074525818882.json、图片生成/图生图/漫剧场景 改图_1991480238735630337.json、图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
+- `CR Text Concatenate`
+- `JjkText`
 - `LoadImage`
-- `LoadVideo`
-- `PreviewAny`
-- `SaveVideo`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
+- `ShowText`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 2/6 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 2/6 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 2/6 个有
+- `easy seed` —— 2/6 个有
+- `PrimitiveInt` —— 1/6 个有
 
 ## 典型参数
 

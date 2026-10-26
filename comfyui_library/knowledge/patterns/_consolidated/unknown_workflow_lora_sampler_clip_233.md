@@ -1,64 +1,60 @@
 ---
 name: unknown_workflow_lora_sampler_clip_233
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5685
-common_nodes: [AnimaFlowCorrectiveSampler, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, ColorMatch, Fast Groups Bypasser (rgthree), GetNode, Int, JDC_ResizeFactor, List of strings [Crystools], LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RTXVideoSuperResolution, SaveImage, Seed (rgthree), SetNode, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEEncode, VAELoader, WD14Tagger|pysssss, ZML_PreviewImage, ZML_TextFormatter, easy imageBatchToImageList, easy imageListToImageBatch, easy negative, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.848
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, FluxGuidance, ImageScaleBy, ImpactSwitch, Int, JjkText, KSamplerSelect, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, PreviewImage, RH_Prompter, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImagePlus, TextCombinerTwo, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/PSO2NGS专用高清放大流_2072922316006322178.json, 图片生成/图生图/PSO2NGS专用高清放大流_2080328358927364097.json]
+members: [图片生成/文生图/极速文生图_1983350145905532929.json, 图片生成/文生图/极速文生图_1983456421763325954.json, 图片生成/文生图/极速文生图（测试）_1957340539244965890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_233
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/PSO2NGS专用高清放大流_2072922316006322178.json、图片生成/图生图/PSO2NGS专用高清放大流_2080328358927364097.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/极速文生图_1983350145905532929.json、图片生成/文生图/极速文生图_1983456421763325954.json、图片生成/文生图/极速文生图（测试）_1957340539244965890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AnimaFlowCorrectiveSampler`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text`
-- `ColorMatch`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `ImageScaleBy`
+- `ImpactSwitch`
 - `Int`
-- `JDC_ResizeFactor`
-- `List of strings [Crystools]`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RTXVideoSuperResolution`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
+- `JjkText`
+- `KSamplerSelect`
+- `ModelSamplingFlux`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
+- `PreviewImage`
+- `RH_Prompter`
+- `RH_Translator`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImagePlus`
+- `TextCombinerTwo`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `WD14Tagger|pysssss`
-- `ZML_PreviewImage`
-- `ZML_TextFormatter`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy negative`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +62,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）

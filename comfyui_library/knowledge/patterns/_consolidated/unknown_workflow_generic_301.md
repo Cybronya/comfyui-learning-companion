@@ -3,33 +3,38 @@ name: unknown_workflow_generic_301
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.825
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.679625
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json, 视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json, 视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json, 视频生成/图生视频/图生视频 修改局部_1991867400045875201.json, 视频生成/图生视频/开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_1998420316537913346.json, 视频生成/图生视频/最新即梦图生视频3.0 PRO 图生视频 API调用 无水印_1994588476685361153.json]
+members: [图片生成/图生图/chat 全能图片G_2073669221862694914.json, 图片生成/图生图/全能图片G2_2112017803111911425.json, 图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json, 图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json, 图片生成/文生图/全能图片G2.0_2047522964949704706.json, 图片生成/文生图/全能图片G2.0_2047539684821176321.json, 图片生成/文生图/全能图片G2低价版_2051165573173784578.json, 图片生成/文生图/全能图片G2通用流（低价版）_2051172217471422466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_301
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json、视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json、视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json、视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json、视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/chat 全能图片G_2073669221862694914.json、图片生成/图生图/全能图片G2_2112017803111911425.json、图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json、图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json、图片生成/文生图/全能图片G2.0_2047522964949704706.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `RH_Jimeng_Image2Video_V2` —— 5/8 个有
-- `RH_RhartVideoGImageToVideo` —— 3/8 个有
+- `RH_RhartImageG2TextToImage` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

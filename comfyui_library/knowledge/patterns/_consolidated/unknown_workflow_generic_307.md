@@ -3,35 +3,34 @@ name: unknown_workflow_generic_307
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.59125
-common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex]
+coverage: 0.979125
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json, 音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json, 音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json, 音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json, 音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json, 音频生成/音频生成/双人说话带情绪用情绪音频控制+全节点注释_2052273666066526209.json, 音频生成/音频生成/双人说话带情绪用文本控制+全节点注释_2052273712635883522.json, 音频生成/音频生成/双人说话带情绪随机情绪+全节点注释_2052273819569664001.json]
+members: [图片生成/图生图/全能图片V1 Pro(谷歌版-企鹅节点)_1994047725679427586.json, 图片生成/图生图/全能图片V1图像编辑V1_1960502132866691073.json, 图片生成/图生图/全能图片V1最强图像编辑V1_1960406026166202369.json, 图片生成/图生图/全能图片V1最强图像编辑_1960679649426702338.json, 图片生成/图生图/全能图片V1最强图像编辑_1961431631984836610.json, 图片生成/图生图/全能图片那NO不拿呢。图生图_2014529839075692545.json, 图片生成/图生图/最强图像编辑 全能图片V1_1960421694022234114.json, 图片生成/文生图/Banan谷歌香蕉图像编辑2_1991528296819204097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_307
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json、音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json、音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json、音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json、音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro(谷歌版-企鹅节点)_1994047725679427586.json、图片生成/图生图/全能图片V1图像编辑V1_1960502132866691073.json、图片生成/图生图/全能图片V1最强图像编辑V1_1960406026166202369.json、图片生成/图生图/全能图片V1最强图像编辑_1960679649426702338.json、图片生成/图生图/全能图片V1最强图像编辑_1961431631984836610.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
+- `CR Prompt Text`
 - `LoadImage`
-- `MultiLinePromptIndex`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 7/8 个有
-- `SaveAudio` —— 2/8 个有
-- `easy imageSave` —— 1/8 个有
+- `RH_Nano_Banana_Image2Image` —— 7/8 个有
+- `ImageConcanate` —— 2/8 个有
+- `Gemini3ImageNode` —— 1/8 个有
 
 ## 典型参数
 

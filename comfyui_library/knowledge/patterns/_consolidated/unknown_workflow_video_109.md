@@ -3,38 +3,34 @@ name: unknown_workflow_video_109
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6145
-common_nodes: [CubeRotationNode, Int, LoadImage, PrimitiveFloat, Reroute (rgthree), VHS_VideoCombine, 孤海-取色器]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/图片生成立方体旋转效果视频_1978743150502105089.json, 视频生成/图生视频/多图生成立方体旋转效果视频_1979076576564383745.json]
+members: [视频生成/图生视频/RH 全能视频V3.1-fast-图生视频-低价渠道版-1.5元_次_2062201896533839874.json, 视频生成/图生视频/RH 全能视频V3.1-fast-首尾帧生视频-低价渠道版-1.5元_次_2062197611167309826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_109
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图片生成立方体旋转效果视频_1978743150502105089.json、视频生成/图生视频/多图生成立方体旋转效果视频_1979076576564383745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频V3.1-fast-图生视频-低价渠道版-1.5元_次_2062201896533839874.json、视频生成/图生视频/RH 全能视频V3.1-fast-首尾帧生视频-低价渠道版-1.5元_次_2062197611167309826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CubeRotationNode`
-- `Int`
+- `CR Prompt Text`
+- `GetVideoComponents`
 - `LoadImage`
-- `PrimitiveFloat`
-- `Reroute (rgthree)`
 - `VHS_VideoCombine`
-- `孤海-取色器`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Size` —— 1/2 个有
-- `ImageCombine` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
+- `RH_RhartVideoV31FastImageToVideo` —— 1/2 个有
+- `RH_RhartVideoV31FastStartEndToVideo` —— 1/2 个有
 
 ## 典型参数
 

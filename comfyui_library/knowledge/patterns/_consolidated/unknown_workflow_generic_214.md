@@ -1,50 +1,38 @@
 ---
 name: unknown_workflow_generic_214
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.847556
-common_nodes: [CR Simple Text Watermark, CR Text, CR Text Concatenate, CR Text Replace, Fast Groups Bypasser (rgthree), ImageBatchMulti, ImageCrop+, LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage, SeedVR2]
+coverage: 0.9361
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/AI小说推文分镜流（一次九张版）_2017544866812665857.json, 图片生成/图生图/AI小说推文（一次4张版）横屏16_9版_2017176913428619266.json, 图片生成/图生图/AI小说推文（一次九张版）_2046416789873106946.json, 图片生成/图生图/AI小说推文（一次十八张版）横屏16_9版_2018238467544719361.json, 图片生成/图生图/AI漫剧、小说推文（一次9张版）横屏16_9版_2017479043729334273.json, 图片生成/文生图/AI小说推文（一次4张版）_2013080252641185794.json, 图片生成/文生图/AI小说推文（一次九张版）_2013089309171130370.json, 图片生成/文生图/AI小说推文（一次十八张版）_2016435898019221506.json, 图片生成/文生图/推文（一次九张版）_2017116845068787713.json]
+members: [图片生成/图生图/万能最强换头+换装+换景+动作迁移6图并发_2036995914925084674.json, 图片生成/图生图/上衣_连体衣一键批量合成工作流_2060551477709598721.json, 图片生成/图生图/任意改图_2039259679259369473.json, 图片生成/图生图/倒模买家秀_2052192392576552962.json, 图片生成/图生图/全能2.0建筑效果图_2030649784402452482.json, 图片生成/图生图/全能图片裤子正面平铺3D图_2026122856920256514.json, 图片生成/图生图/单图_ 4k_v2_2046160403226431489.json, 图片生成/图生图/娃娃换动作 v2_2042415596029087746.json, 图片生成/图生图/娃娃换动作 v2_2044663623238295554.json, 图片生成/图生图/效果图转绘渲染-内核_2031509766647844865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_214
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI小说推文分镜流（一次九张版）_2017544866812665857.json、图片生成/图生图/AI小说推文（一次4张版）横屏16_9版_2017176913428619266.json、图片生成/图生图/AI小说推文（一次九张版）_2046416789873106946.json、图片生成/图生图/AI小说推文（一次十八张版）横屏16_9版_2018238467544719361.json、图片生成/图生图/AI漫剧、小说推文（一次9张版）横屏16_9版_2017479043729334273.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/万能最强换头+换装+换景+动作迁移6图并发_2036995914925084674.json、图片生成/图生图/上衣_连体衣一键批量合成工作流_2060551477709598721.json、图片生成/图生图/任意改图_2039259679259369473.json、图片生成/图生图/倒模买家秀_2052192392576552962.json、图片生成/图生图/全能2.0建筑效果图_2030649784402452482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Simple Text Watermark`
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageBatchMulti`
-- `ImageCrop+`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 8/9 个有
-- `HAIGC_SaveImagesToZip` —— 7/9 个有
-- `Any Switch (rgthree)` —— 3/9 个有
-- `ImagePass` —— 3/9 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/9 个有
-- `SeedVR2BlockSwap` —— 3/9 个有
-- `ExtractLinesByIndex` —— 2/9 个有
-- `GetNode` —— 2/9 个有
+- `Text Multiline` —— 8/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `Int` —— 1/10 个有
 
 ## 典型参数
 

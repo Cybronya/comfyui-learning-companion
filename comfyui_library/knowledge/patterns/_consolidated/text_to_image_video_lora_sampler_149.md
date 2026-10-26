@@ -1,137 +1,100 @@
 ---
 name: text_to_image_video_lora_sampler_149
 type: Text To Image
-frequency: 4
+frequency: 5
 level: strong
-coverage: 0.8435
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, Float, GetNode, ImageResize+, JjkText, JoinStrings, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SomethingToString, TextInput_, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9216
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, H3SigmaRefiner, Int, JjkText, KSampler, KSamplerSelect, List of strings [Crystools], LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3VDNRuntimeAuditT8Advanced, ModelAttentionBackend, PrimitiveStringMultiline, RH_Screenwriter, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MINIMAX-H3 ref2va Qwen3.8 27B｜数字人音频图生视频_2092074378220621826.json, 视频生成/图生视频/Minimaxh3与ltx2.5 fl2va首尾帧4K｜Qwen3.8反推V2版_2092052779299860481.json, 视频生成/图生视频/fl2va首尾帧4K高清V2｜Minimaxh3-ltx2.5高效率图生视频_2089491006780698626.json, 视频生成/图生视频/minimax h3 fl2va首尾帧2K二采｜Qwen3.8 27B反推版V1_2092051378125500418.json]
+members: [视频生成/文生视频/H3极速高动态武戏文戏视频生成 多重加速方案_2098865474892288001.json, 视频生成/文生视频/MIniMax H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成方案_2105105571027443713.json, 视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA｜极速高动态武戏文戏生成_2106954882283560961.json, 视频生成/文生视频/MIniMax-H3多插件合体｜武戏文戏极速生成高动态视频｜文生图生视频_2099090254283231234.json, 视频生成/文生视频/MiniMax H3极速高动态武戏文戏视频生成，文生视频分镜生成图生视频方案_2107169174538776577.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_149
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MINIMAX-H3 ref2va Qwen3.8 27B｜数字人音频图生视频_2092074378220621826.json、视频生成/图生视频/Minimaxh3与ltx2.5 fl2va首尾帧4K｜Qwen3.8反推V2版_2092052779299860481.json、视频生成/图生视频/fl2va首尾帧4K高清V2｜Minimaxh3-ltx2.5高效率图生视频_2089491006780698626.json、视频生成/图生视频/minimax h3 fl2va首尾帧2K二采｜Qwen3.8 27B反推版V1_2092051378125500418.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/H3极速高动态武戏文戏视频生成 多重加速方案_2098865474892288001.json、视频生成/文生视频/MIniMax H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成方案_2105105571027443713.json、视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA｜极速高动态武戏文戏生成_2106954882283560961.json、视频生成/文生视频/MIniMax-H3多插件合体｜武戏文戏极速生成高动态视频｜文生图生视频_2099090254283231234.json、视频生成/文生视频/MiniMax H3极速高动态武戏文戏视频生成，文生视频分镜生成图生视频方案_2107169174538776577.json）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 5 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Float`
-- `GetNode`
-- `ImageResize+`
+- `H3SigmaRefiner`
+- `Int`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `List of strings [Crystools]`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `MiniMaxH3VDNRuntimeAuditT8Advanced`
+- `ModelAttentionBackend`
+- `PrimitiveStringMultiline`
+- `RH_Screenwriter`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SomethingToString`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WujiCleaner`
+- `WujiH3PromptEnhancer`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `GetImageSize` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `LTX2_NAG` —— 3/4 个有
-- `LTXVAddGuideMulti` —— 3/4 个有
-- `LTXVAudioVAEDecode` —— 3/4 个有
-- `LTXVConditioning` —— 3/4 个有
-- `LTXVCropGuides` —— 3/4 个有
-- `LTXVEmptyLatentAudio` —— 3/4 个有
-- `LTXVLatentUpsampler` —— 3/4 个有
-- `LTXVPreprocess` —— 3/4 个有
-- `LatentUpscaleModelLoader` —— 3/4 个有
-- `ManualSigmas` —— 3/4 个有
-- `MiniMaxH3ImageToVideo` —— 3/4 个有
-- `MinimaxH3LatentUpscaler3D` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `ProcessString` —— 3/4 个有
-- `SLASageAttention` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `VAEDecodeTiled` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `llama_cpp_instruct_adv` —— 3/4 个有
-- `llama_cpp_model_loader` —— 3/4 个有
-- `llama_cpp_parameters` —— 3/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `Comfly_LLm_API` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `InjectLatentNoise+` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LTXAVTextEncoderLoader` —— 1/4 个有
-- `LTXVAudioVAELoader` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `MiniMaxH3LatentUpscaleCombined` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `PT_H3ConcatAVLatent` —— 1/4 个有
-- `VAEEncodeAudio` —— 1/4 个有
-- `easy forLoopEnd` —— 1/4 个有
-- `easy forLoopStart` —— 1/4 个有
+- `BlockSparseAttention` —— 3/5 个有
+- `CM_IntToFloat` —— 3/5 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 3/5 个有
+- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 3/5 个有
+- `MiniMaxH3OutputTrimT8` —— 3/5 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 3/5 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 3/5 个有
+- `SaveImage` —— 3/5 个有
+- `SelfLiftAvatarH3Sampler` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `MiniMaxH3SigmaShift` —— 2/5 个有
+- `SelfLiftH3Sampler` —— 2/5 个有
+- `SolAttnMiniMax` —— 2/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

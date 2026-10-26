@@ -3,53 +3,56 @@ name: unknown_workflow_lora_sampler_unet_267
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.951
-common_nodes: [CFGNorm, CLIPLoader, CR SDXL Aspect Ratio, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, Qwen3_VQA, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VideoLoader, easy showAnything]
+coverage: 0.737
+common_nodes: [AILab_QwenVL, CLIPLoader, CR SDXL Aspect Ratio, CR Text Concatenate, Evaluate Integers, Image Comparer (rgthree), KSampler, LayerMask: MaskInvert, LayerMask: MaskPreview, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RMBG, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen_image_edit_2509_2001244699685945346.json, 图片生成/图生图/天蝎猫qwen_image_edit_2509_2002905532736368642.json]
+members: [图片生成/图生图/Qwen-Edit-2511打光完美换背景_2012118734139297794.json, 图片生成/图生图/[🛫书墨]换背景、打光、任意尺寸零偏移一体机——Synvow书墨_2009090593338695682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_267
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/qwen_image_edit_2509_2001244699685945346.json、图片生成/图生图/天蝎猫qwen_image_edit_2509_2002905532736368642.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511打光完美换背景_2012118734139297794.json、图片生成/图生图/[🛫书墨]换背景、打光、任意尺寸零偏移一体机——Synvow书墨_2009090593338695682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
+- `AILab_QwenVL`
 - `CLIPLoader`
 - `CR SDXL Aspect Ratio`
+- `CR Text Concatenate`
+- `Evaluate Integers`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerMask: MaskInvert`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `Qwen3_VQA`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RMBG`
 - `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlus`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VideoLoader`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5 | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -63,7 +66,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

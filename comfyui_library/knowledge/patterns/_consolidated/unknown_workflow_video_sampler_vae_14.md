@@ -1,61 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_14
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.938824
-common_nodes: [Fast Groups Bypasser (rgthree), ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], ShowText, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.982556
+common_nodes: [INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-VACE大师级图生视频_1933536607737921538.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_1934652998628876289.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059216545439637505.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059998654034964482.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059999061939408898.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2081413753370931202.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2084126269507198978.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2084278181875507201.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-KJ_1933574608002138113.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-工作流_1933179380589834241.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-工作流_2050795023934992385.json, 视频生成/图生视频/【FusionX】LORA版本 + VACE图生视频_1935508820678332418.json, 视频生成/图生视频/图生视频 VACE FusionX_1990978944960765954.json, 视频生成/文生视频/图生视频_1950451311817965570.json, 视频生成/文生视频/图生视频_1950453907279536130.json, 视频生成/文生视频/图生视频_1950797780040220674.json, 视频生成/文生视频/高质量图生视频_1934251292992696321.json]
+members: [视频生成/图生视频/wan2.2 fun奖励LORA 图生视频-KJ版-更好动态 更好效果_1991002919573102593.json, 视频生成/图生视频/wan2.2 fun奖励LORA 图生视频KJ版【更好动态 更好效果】🦋_1968580959744479233.json, 视频生成/图生视频/wan2.2图生视频4步加速LORA_1955641756994846722.json, 视频生成/图生视频/图生视频 万象模型 精准 低动态 适合高级感视频展示_2053740152681447425.json, 视频生成/图生视频/图生视频 （wan2.2加速）_1958079800877469697.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2044685944468541441.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2053674429732929538.json, 视频生成/图生视频/图转视频-Wan2.2首尾帧Kijai版好用_1965310259709493249.json, 视频生成/图生视频/自己用：Wan2.2首尾帧_1955902508302520321.json, 视频生成/图生视频/首尾帧 加速 Wan2.2图生视频_1958076393995251714.json, 视频生成/图生视频/首尾帧-Rewards+Pusa+加速 Wan2.2_1967120522687418370.json, 视频生成/图生视频/首尾帧图片_生成视频（wan2.2最新版本）_1952744719957880834.json, 视频生成/图生视频/🐳wan2.2 fun奖励LORA 图生视频KJ版【更好动态 更好效果】🦋_1967414406411849730.json, 视频生成/图生视频/🐳wan2.2 图生视频 KJ优化版🦋【KJ模型】_1950037890026881025.json, 视频生成/图生视频/🐳wan2.2 首尾帧 超清臻享版 🦋【KJ模型】_1952313682334298114.json, 视频生成/图生视频/🐳wan2_2加速LORA 4步极速 图生视频【KJ优化版】🦋_1955569910405632001.json, 视频生成/文生视频/wan2.2文生视频4步加速LORA_1955636533911961602.json, 视频生成/文生视频/🐳wan2_2加速LORA 4步极速 文生视频【KJ优化版】🦋_1955577936088895489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_14
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE大师级图生视频_1933536607737921538.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_1934652998628876289.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059216545439637505.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059998654034964482.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059999061939408898.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/wan2.2 fun奖励LORA 图生视频-KJ版-更好动态 更好效果_1991002919573102593.json、视频生成/图生视频/wan2.2 fun奖励LORA 图生视频KJ版【更好动态 更好效果】🦋_1968580959744479233.json、视频生成/图生视频/wan2.2图生视频4步加速LORA_1955641756994846722.json、视频生成/图生视频/图生视频 万象模型 精准 低动态 适合高级感视频展示_2053740152681447425.json、视频生成/图生视频/图生视频 （wan2.2加速）_1958079800877469697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 18 个 workflow 都包含：
+- `INTConstant`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `ShowText`
-- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 16/17 个有
-- `RH_LLMAPI_NODE` —— 14/17 个有
-- `WanVideoEnhanceAVideo` —— 13/17 个有
-- `WanVideoExperimentalArgs` —— 13/17 个有
-- `JWStringReplace` —— 11/17 个有
-- `Compare` —— 4/17 个有
-- `RH_Captioner` —— 4/17 个有
-- `Text Concatenate` —— 4/17 个有
-- `Text Multiline (Code Compatible)` —— 4/17 个有
-- `easy ifElse` —— 4/17 个有
-- `LoadLatent` —— 3/17 个有
-- `SaveLatent` —— 3/17 个有
-- `String Replace (mtb)` —— 3/17 个有
+- `GetImageSizeAndCount` —— 16/18 个有
+- `ImageResizeKJv2` —— 16/18 个有
+- `LoadImage` —— 16/18 个有
+- `WanVideoImageToVideoEncode` —— 16/18 个有
+- `WanVideoLoraSelect` —— 14/18 个有
+- `WanVideoSetLoRAs` —— 14/18 个有
+- `CR Text` —— 13/18 个有
+- `ImpactInt` —— 13/18 个有
+- `SimpleMath+` —— 13/18 个有
+- `WanVideoApplyNAG` —— 11/18 个有
+- `WanVideoTextEncodeSingle` —— 11/18 个有
+- `CreateCFGScheduleFloatList` —— 8/18 个有
+- `WanVideoTextEncode` —— 7/18 个有
+- `easy cleanGpuUsed` —— 5/18 个有
+- `WanVideoLoraSelectMulti` —— 4/18 个有
+- `Note Plus (mtb)` —— 3/18 个有
+- `WanVideoContextOptions` —— 3/18 个有
+- `WanVideoEmptyEmbeds` —— 2/18 个有
+- `ImageConcanate` —— 1/18 个有
+- `ImageResizeKJ` —— 1/18 个有
+- `easy clearCacheAll` —— 1/18 个有
 
 ## 典型参数
 

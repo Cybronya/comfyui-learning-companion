@@ -3,17 +3,17 @@ name: unknown_workflow_generic_259
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.921667
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.923
+common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/tts_edge.json_2072854733987078145.json, 音频生成/音频生成/ttts_edge.json_2072873542991044609.json, 音频生成/音频生成/单人语音克隆-简单超好用Easy IndexTTS2_2044635974092722178.json, 音频生成/音频生成/口播音频生成-自定义上传参考音色-Index TTS_2028738552854482946.json, 音频生成/音频生成/小赛数字人语音生成_2041358520972484609.json, 音频生成/音频生成/文字转语言 + 人声克隆 Index TTS 2_1971248872825798658.json, 音频生成/音频生成/电商数字人-TTS2 情感滑块_1971488007771635713.json, 音频生成/音频生成/超好用Easy IndexTTS2无限组合版_2043548119710830593.json, 音频生成/音频生成/风水师-多人声音克隆+情感参考_2080563132703010818.json]
+members: [图片生成/图生图/最强编辑香蕉2PRO第三方+官方版_1999861913385398273.json, 图片生成/图生图/月禾-img_2016439225809375233.json, 图片生成/图生图/漫剧角色三视图+特写一键生成+漫剧专用（每天前5次免费）多角色同框管理系统_2008869029905174530.json, 图片生成/图生图/老陈 图生图_2016002994457812994.json, 图片生成/图生图/自定义表情包+人物表情+Q版动画，通用版（静态）_2012099111981420546.json, 图片生成/图生图/谷歌全能图片V12图像编辑（1次0.25元）_1991529682080374786.json, 图片生成/图生图/谷歌模型2 pro API_2002262719954862081.json, 图片生成/图生图/香蕉2（ 全能图片V12PRO）多图参考_1996253291677884417.json, 图片生成/文生图/NB2生图工作流_2026347013897457666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_259
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/tts_edge.json_2072854733987078145.json、音频生成/音频生成/ttts_edge.json_2072873542991044609.json、音频生成/音频生成/单人语音克隆-简单超好用Easy IndexTTS2_2044635974092722178.json、音频生成/音频生成/口播音频生成-自定义上传参考音色-Index TTS_2028738552854482946.json、音频生成/音频生成/小赛数字人语音生成_2041358520972484609.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/最强编辑香蕉2PRO第三方+官方版_1999861913385398273.json、图片生成/图生图/月禾-img_2016439225809375233.json、图片生成/图生图/漫剧角色三视图+特写一键生成+漫剧专用（每天前5次免费）多角色同框管理系统_2008869029905174530.json、图片生成/图生图/老陈 图生图_2016002994457812994.json、图片生成/图生图/自定义表情包+人物表情+Q版动画，通用版（静态）_2012099111981420546.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
@@ -23,16 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/9 个有
-- `PreviewAudio` —— 4/9 个有
-- `JjkText` —— 3/9 个有
-- `easy indexTTSEmotionVector` —— 2/9 个有
+- `JjkText` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
 
 ## 典型参数
 

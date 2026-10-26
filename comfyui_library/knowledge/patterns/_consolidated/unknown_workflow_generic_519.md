@@ -1,37 +1,42 @@
 ---
 name: unknown_workflow_generic_519
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.76
-common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.92
+common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json, 图片生成/图生图/分镜三人_2029364786164666370.json, 图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json, 图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json, 图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json]
+members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_519
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json、图片生成/图生图/分镜三人_2029364786164666370.json、图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json、图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json、图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RHHiddenNodes`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `JWImageFlip` —— 1/5 个有
+- `CR Prompt Text` —— 5/6 个有
+- `LongCatVoiceCloneTTS` —— 4/6 个有
+- `NormalizeAudioLoudness` —— 4/6 个有
+- `LongCatMultiSpeakerTTS` —— 3/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SaveAudio` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

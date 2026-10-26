@@ -2,58 +2,63 @@
 name: unknown_workflow_sampler_clip_unet_256
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 1
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.851
+common_nodes: [BasicGuider, BasicScheduler, Bjornulf_ShowStringText, CLIPTextEncode, DualCLIPLoader, ImageResize+, JjkText, KSamplerSelect, LoadImage, RH_Prompter, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextCombinerTwo, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/重绘流V1_2087151061260922882.json, 图片生成/图生图/重绘流V2_2087151258632286210.json, 图片生成/文生图/Krea2文生图标准工作流_2091191129374019586.json, 图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json, 图片生成/文生图/文生图V1_2087151380954963970.json]
+members: [图片生成/图生图/Flux图生图_1819700411573145602.json, 图片生成/图生图/Flux图生图_2045033605507850241.json, 图片生成/图生图/Flux图生图，精美，值得推荐！_2034854654676307970.json, 图片生成/图生图/Flux图生图，精美，值得推荐！_2047520744250286082.json, 图片生成/图生图/设计手稿转真人（真实还原）_2028393801617776641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_256
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/重绘流V1_2087151061260922882.json、图片生成/图生图/重绘流V2_2087151258632286210.json、图片生成/文生图/Krea2文生图标准工作流_2091191129374019586.json、图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json、图片生成/文生图/文生图V1_2087151380954963970.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux图生图_1819700411573145602.json、图片生成/图生图/Flux图生图_2045033605507850241.json、图片生成/图生图/Flux图生图，精美，值得推荐！_2034854654676307970.json、图片生成/图生图/Flux图生图，精美，值得推荐！_2047520744250286082.json、图片生成/图生图/设计手稿转真人（真实还原）_2028393801617776641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
+- `Bjornulf_ShowStringText`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
+- `ImageResize+`
+- `JjkText`
 - `KSamplerSelect`
+- `LoadImage`
+- `RH_Prompter`
+- `RH_Translator`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 3/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `LoraLoader` —— 3/5 个有
-- `EmptyLatentImage` —— 2/5 个有
-- `VAEEncode` —— 2/5 个有
-- `EmptySD3LatentImage` —— 1/5 个有
-- `ResolutionSelector` —— 1/5 个有
-- `T5TokenizerOptions` —— 1/5 个有
+- `ImpactSwitch` —— 4/5 个有
+- `SeedGenerator` —— 4/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `ImageUpscaleWithModel` —— 1/5 个有
+- `LoraLoader` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0 | 0 - 0 | 3 | 100% |
-| LoRA 文本强度 | 0 | 0 - 0 | 3 | 100% |
-| 宽度 | 1052 | - | 2 | 97% |
-| 高度 | 1472 | - | 2 | 70% |
+| LoRA 模型强度 | 0.5 | - | 1 | 100% |
+| LoRA 文本强度 | 0.5 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -61,7 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0，观测区间 0 - 0，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0，观测区间 0 - 0，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1052，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 1472，样本不足，未给区间，2 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

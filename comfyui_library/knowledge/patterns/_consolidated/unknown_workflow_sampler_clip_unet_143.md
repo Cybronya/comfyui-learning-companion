@@ -2,64 +2,68 @@
 name: unknown_workflow_sampler_clip_unet_143
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.827875
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatchToReference, ConditioningZeroOut, Image Comparer (rgthree), LoadImage, ReferenceLatent, SZ_KleinTiledKSampler, SaveImage, Seed (rgthree), SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+level: moderate
+coverage: 0.931625
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/F.2Klein极限超分增加细节 小图变大图_2062158009069031426.json, 图片生成/图生图/Flux.2-Klein9b极限超分增加细节 模糊变高清_2064348600515256322.json, 图片生成/图生图/Klein-一键修复模糊图像变高清_2061427632968921089.json, 图片生成/图生图/Klein-一键修复模糊图像变高清_2081264986487349249.json, 图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063571810217713666.json, 图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063948736388227073.json, 图片生成/图生图/修复模糊图像变高清-Klein_2060651278337925121.json, 图片生成/图生图/🐳Klein 图像急速修复 模糊变高清🐳_2059941498447290370.json]
+members: [comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json, 图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json, 图片生成/反推提示词/82huantou_2053067673583529985.json, 图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json, 图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json, 图片生成/图生图/FLUX克莱因指令编辑_2019953559508361217.json, 图片生成/图生图/Flux2 klein kv高速图片编辑_2040977793638469634.json, 图片生成/图生图/电商万物迁移 Flux klein_2021109944589754370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/F.2Klein极限超分增加细节 小图变大图_2062158009069031426.json、图片生成/图生图/Flux.2-Klein9b极限超分增加细节 模糊变高清_2064348600515256322.json、图片生成/图生图/Klein-一键修复模糊图像变高清_2061427632968921089.json、图片生成/图生图/Klein-一键修复模糊图像变高清_2081264986487349249.json、图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063571810217713666.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json、图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json、图片生成/反推提示词/82huantou_2053067673583529985.json、图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json、图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatchToReference`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
 - `LoadImage`
-- `ReferenceLatent`
-- `SZ_KleinTiledKSampler`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 6/8 个有
-- `孤海注释` —— 6/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `DapaoImageAspectRatioResizeNode` —— 3/8 个有
-- `GetNode` —— 3/8 个有
-- `SetNode` —— 3/8 个有
-- `Int` —— 2/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `GetImageSize` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `ReferenceLatent` —— 7/8 个有
+- `VAEEncode` —— 7/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `FluxKVCache` —— 2/8 个有
+- `ImpactInt` —— 2/8 个有
+- `JjkText` —— 2/8 个有
+- `RTXVideoSuperResolution` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` —— 1/8 个有
+- `93041a64-452a-477a-9447-40330b7c1136` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `CR Text` —— 1/8 个有
+- `Colored Image (mtb)` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `LayerUtility: CropByMask V3` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `LayerUtility: RestoreCropBox` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | res_2s | - | 8 | 75% |
-| 调度器 | bong_tangent | - | 8 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，8 个样本，一致性 75%
-- 调度器 最常用 bong_tangent，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

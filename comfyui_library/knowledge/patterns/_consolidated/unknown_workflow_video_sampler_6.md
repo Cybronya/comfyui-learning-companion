@@ -1,94 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_6
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.64175
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, INTConstant, ImageCropByMaskAndResize, ImageResizeKJ, LoadImage, PixelPerfectResolution, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached, easy anythingIndexSwitch, easy cleanGpuUsed]
+coverage: 0.881333
+common_nodes: [AudioSeparation, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkWav2VecEmbeds, RHHiddenNodes, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode]
 problems: []
 missing: []
-members: [视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json, 视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json, 视频生成/图生视频/Wan2.2 Animate（动作迁移稳定版）长视频循环48G_1999709871861792770.json, 视频生成/图生视频/Wan2.2-吸入漫画-后半部分工作流2_2011786789937221634.json, 视频生成/图生视频/最新视频换人技术！！！！-Wan Animate_1976525741590450177.json, 视频生成/图生视频/老赌替换工作流mm_1971065537902059521.json, 视频生成/图生视频/西洲 CHARM-角色替换+动作迁移+面部表情_1975054171986595841.json, 视频生成/图生视频/角色替换+动作迁移+面部表情-WanAnimate_1983153039076958210.json]
+members: [视频生成/图生视频/Vox Infinity 任意IP唱歌【动态稳定版】_1988524870826901505.json, 视频生成/图生视频/WanVideo-唱歌数字人-02_1992836871027838977.json, 视频生成/图生视频/WanVideo-唱歌数字人_1990968064927801345.json, 视频生成/图生视频/【动态控制版】数字人_1991042926883053570.json, 视频生成/图生视频/【大炮】InfiniteTalk音乐数字人_1990657012549771265.json, 视频生成/图生视频/数字人对口型    动态一致_2003004392984965122.json, 视频生成/图生视频/数字人对口型+动态一致_2015428221566717953.json, 视频生成/图生视频/自带运镜！演唱会数字人V1.0【口型完美+自动运镜】_1984278301894131714.json, 音频生成/音频生成/MV音乐赛道专用，商用级_2046698333896445954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json、视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json、视频生成/图生视频/Wan2.2 Animate（动作迁移稳定版）长视频循环48G_1999709871861792770.json、视频生成/图生视频/Wan2.2-吸入漫画-后半部分工作流2_2011786789937221634.json、视频生成/图生视频/最新视频换人技术！！！！-Wan Animate_1976525741590450177.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Vox Infinity 任意IP唱歌【动态稳定版】_1988524870826901505.json、视频生成/图生视频/WanVideo-唱歌数字人-02_1992836871027838977.json、视频生成/图生视频/WanVideo-唱歌数字人_1990968064927801345.json、视频生成/图生视频/【动态控制版】数字人_1991042926883053570.json、视频生成/图生视频/【大炮】InfiniteTalk音乐数字人_1990657012549771265.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `INTConstant`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJ`
+全部 9 个 workflow 都包含：
+- `AudioSeparation`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `Primitive integer [Crystools]`
+- `MultiTalkWav2VecEmbeds`
 - `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
+- `WanVideoTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 7/8 个有
-- `DownloadAndLoadFlorence2Model` —— 7/8 个有
-- `DownloadAndLoadSAM2Model` —— 7/8 个有
-- `DrawMaskOnImage` —— 7/8 个有
-- `Florence2Run` —— 7/8 个有
-- `Florence2toCoordinates` —— 7/8 个有
-- `GrowMask` —— 7/8 个有
-- `ImageResizeKJv2` —— 7/8 个有
-- `ImpactSwitch` —— 7/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
-- `PrimitiveString` —— 7/8 个有
-- `RH_Translator` —— 7/8 个有
-- `RMBG` —— 7/8 个有
-- `Sam2Segmentation` —— 7/8 个有
-- `SimpleMath+` —— 7/8 个有
-- `WanVideoSetBlockSwap` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `GetImageSizeAndCount` —— 6/8 个有
-- `ImageConcatMulti` —— 6/8 个有
-- `WanVideoContextOptions` —— 6/8 个有
-- `PreviewImage` —— 5/8 个有
-- `PointsEditor` —— 4/8 个有
-- `ImageFromBatch` —— 2/8 个有
-- `WanVideoSLG` —— 2/8 个有
-- `WanVideoTeaCache` —— 2/8 个有
-- `BatchCount+` —— 1/8 个有
-- `If ANY execute A else B` —— 1/8 个有
-- `IfInnerExecute` —— 1/8 个有
-- `ImageBatchMulti` —— 1/8 个有
-- `OnnxDetectionModelLoader` —— 1/8 个有
-- `PoseAndFaceDetection` —— 1/8 个有
-- `RepeatImageBatch` —— 1/8 个有
-- `easy batchAnything` —— 1/8 个有
-- `easy compare` —— 1/8 个有
-- `easy forLoopEnd` —— 1/8 个有
-- `easy forLoopStart` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `AudioCrop` —— 8/9 个有
+- `RH_GetAudioDuration` —— 8/9 个有
+- `easy showAnything` —— 8/9 个有
+- `CLIPVisionLoader` —— 5/9 个有
+- `DownloadAndLoadWav2VecModel` —— 5/9 个有
+- `LoadWanVideoT5TextEncoder` —— 5/9 个有
+- `WanVideoBlockSwap` —— 5/9 个有
+- `WanVideoVAELoader` —— 5/9 个有
+- `CreateVideo` —— 4/9 个有
+- `PreViewVideo` —— 4/9 个有
+- `ToFloat` —— 3/9 个有
+- `JWFloat` —— 2/9 个有
+- `GetAudioDurationFromAudio` —— 1/9 个有
+- `GetNode` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `SetNode` —— 1/9 个有
 
 ## 典型参数
 

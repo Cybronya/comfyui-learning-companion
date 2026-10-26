@@ -1,50 +1,43 @@
 ---
 name: unknown_workflow_video_7
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.840143
-common_nodes: [Any To Any, CR Prompt Text, GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, MultiplePathsInput, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
+coverage: 1
+common_nodes: [GrowMask, INTConstant, ImageBatch, ImageCompositeMasked, ImageResizeKJv2, ImageToMask, InvertMask, LayerColor: BrightnessContrastV2, LoadAudio, LoadImage, LoadImageMask, MaskBlur+, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/Foley-全自动-视频-音效生成_1988126827040382977.json, 音频生成/音频生成/Floley 音效生成_1988103459142541314.json, 音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json, 音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json, 音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json, 音频生成/音频生成/Qwen3-VL+Foley-全自动-视频音效生成_1987470194266279938.json, 音频生成/音频生成/Z-Foley-全自动-视频-音效生成_1992057230069657602.json]
+members: [视频生成/图生视频/vlog滑屏转场_2013490499956514818.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2050882588805480449.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2057267742750892033.json, 视频生成/图生视频/滑屏转场视频_2059150379807494146.json, 视频生成/文生视频/抖音剪映同款滑屏转场视频_1961976286589730817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_7
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Foley-全自动-视频-音效生成_1988126827040382977.json、音频生成/音频生成/Floley 音效生成_1988103459142541314.json、音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json、音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json、音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/vlog滑屏转场_2013490499956514818.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any To Any`
-- `CR Prompt Text`
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadVideo`
-- `MultiplePathsInput`
-- `Qwen3_VQA`
-- `VHS_SelectFilename`
+全部 9 个 workflow 都包含：
+- `GrowMask`
+- `INTConstant`
+- `ImageBatch`
+- `ImageCompositeMasked`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `InvertMask`
+- `LayerColor: BrightnessContrastV2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadImageMask`
+- `MaskBlur+`
+- `RepeatImageBatch`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `easy float` —— 6/7 个有
-- `Any Switch (rgthree)` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
-- `easy textSwitch` —— 1/7 个有
 
 ## 典型参数
 

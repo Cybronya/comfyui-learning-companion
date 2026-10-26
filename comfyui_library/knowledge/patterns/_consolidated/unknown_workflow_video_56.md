@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [JWImageResizeByLongerSide, JWInteger, LoadImage, RH_Translator, RunningHub_FramePack, VHS_VideoCombine]
+common_nodes: [ImageScaleToTotalPixels, LoadImage, Note Plus (mtb), SaveImage, VHS_VideoCombine, workflow>参数设置, workflow>面部参考]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json, 视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json, 视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json]
+members: [图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json, 图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json, 图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_56
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json、视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json、视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json、图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json、图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,12 +23,16 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JWImageResizeByLongerSide`
-- `JWInteger`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_Translator`
-- `RunningHub_FramePack`
+- `Note Plus (mtb)`
+- `SaveImage`
 - `VHS_VideoCombine`
+- `workflow>参数设置`
+- `workflow>面部参考`
+
+**可变部分**（部分 workflow 才有）：
+- `workflow>过度动画` —— 2/3 个有
 
 ## 典型参数
 

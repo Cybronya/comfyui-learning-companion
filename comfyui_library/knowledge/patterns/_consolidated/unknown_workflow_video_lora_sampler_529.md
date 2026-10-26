@@ -3,93 +3,75 @@ name: unknown_workflow_video_lora_sampler_529
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.9175
-common_nodes: [CLIPLoader, CLIPTextEncode, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, ImageBatchMulti, ImageResizeKJ, Int, JWImageExtractFromBatch, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, String Literal, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo, WanVideoEnhanceAVideoKJ, WanVideoVACEStartToEndFrame, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.935
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, EmptyConditioning, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJ, KSampler, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [视频生成/图生视频/六图丝滑循环变身_1982724016962183169.json, 视频生成/图生视频/六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_1962779273469771778.json, 视频生成/图生视频/六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_1997299541873475585.json, 视频生成/图生视频/极速无限循环变身VACE串联首尾帧_1927192575344594946.json]
+members: [图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json, 图片生成/文生图/【老金驿站】WAN2.1国家地理场景分镜生成工作流_1929433520668839938.json, 图片生成/文生图/【老金驿站】WAN2.1好莱坞人物分镜生成工作流_1929150896092123137.json, 图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_529
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/六图丝滑循环变身_1982724016962183169.json、视频生成/图生视频/六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_1962779273469771778.json、视频生成/图生视频/六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_1997299541873475585.json、视频生成/图生视频/极速无限循环变身VACE串联首尾帧_1927192575344594946.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json、图片生成/文生图/【老金驿站】WAN2.1国家地理场景分镜生成工作流_1929433520668839938.json、图片生成/文生图/【老金驿站】WAN2.1好莱坞人物分镜生成工作流_1929150896092123137.json、图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `ImageBatchMulti`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptyConditioning`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `ImageResizeKJ`
-- `Int`
-- `JWImageExtractFromBatch`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `String Literal`
-- `TrimVideoLatent`
-- `UnetLoaderGGUF`
+- `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoEnhanceAVideoKJ`
-- `WanVideoVACEStartToEndFrame`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `FlashVSRNode` —— 3/4 个有
-- `Lora Loader Stack (rgthree)` —— 3/4 个有
-- `RHHiddenNodes` —— 3/4 个有
-- `CFGZeroStarAndInit` —— 1/4 个有
-- `CR Upscale Image` —— 1/4 个有
-- `PatchModelPatcherOrder` —— 1/4 个有
-- `SkipLayerGuidanceWanVideo` —— 1/4 个有
-- `TorchCompileModelWanVideo` —— 1/4 个有
-- `UNETLoader` —— 1/4 个有
-- `WanVideoTeaCacheKJ` —— 1/4 个有
-- `wanBlockSwap` —— 1/4 个有
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 3 - 4 | 4 | 88% |
+| 采样步数 | 25 | 25 - 25 | 4 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
+| 采样算法 | deis | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 3 - 4，4 个样本，取值集中（一致性 88%）
+- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
+- 采样算法 最常用 deis，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

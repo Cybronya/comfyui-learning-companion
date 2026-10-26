@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_484
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9025
-common_nodes: [CLIPLoader, CLIPVisionLoader, ImageResizeKJv2, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview, PreviewImage, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.901
+common_nodes: [CFGGuider, CLIPTextEncode, LTX2_NAG, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEnhanceAVideoKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave单角色+场景一致性工作流_1989572607433469953.json, 视频生成/图生视频/BindWeave单角色一致性工作流_1989625310146646018.json, 视频生成/图生视频/BindWeave多主体角色一致性工作流_1989653435731595265.json, 视频生成/图生视频/字节Bindweave角色参考生视频工作流_1989703859226505217.json]
+members: [视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json, 视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json, 视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json, 视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json, 视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_484
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/BindWeave单角色+场景一致性工作流_1989572607433469953.json、视频生成/图生视频/BindWeave单角色一致性工作流_1989625310146646018.json、视频生成/图生视频/BindWeave多主体角色一致性工作流_1989653435731595265.json、视频生成/图生视频/字节Bindweave角色参考生视频工作流_1989703859226505217.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json、视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json、视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json、视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json、视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
-- `InvertMask`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskPreview`
-- `PreviewImage`
-- `TextImageEncodeQwenVL`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `LTX2_NAG`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PlaySound|pysssss`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_ColorInput` —— 3/4 个有
-- `ImageBatchMulti` —— 3/4 个有
-- `MaskBatchMulti` —— 3/4 个有
-- `RMBG` —— 3/4 个有
-- `SolidMask` —— 3/4 个有
-- `Textbox` —— 3/4 个有
-- `easy int` —— 3/4 个有
-- `MaskPreview+` —— 2/4 个有
-- `DrawMaskOnImage` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageRemoveBackground+` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `TransparentBGSession+` —— 1/4 个有
-- `WanVideoSetLoRAs` —— 1/4 个有
+- `BasicScheduler` —— 4/5 个有
+- `DualCLIPLoaderGGUF` —— 4/5 个有
+- `KSamplerSelect` —— 4/5 个有
+- `LTXVLatentUpsampler` —— 4/5 个有
+- `LatentUpscaleModelLoader` —— 4/5 个有
+- `LTX2SamplingPreviewOverride` —— 3/5 个有
+- `LTXVCropGuides` —— 3/5 个有
+- `UnetLoaderGGUF` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `Display Any (rgthree)` —— 2/5 个有
+- `LTXDirectorCropGuides` —— 2/5 个有
+- `LTXVTiledVAEDecode` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `ModelPreviewOverrideKJ` —— 2/5 个有
+- `TextGenerateLTX2Prompt` —— 2/5 个有
+- `UNETLoader` —— 2/5 个有
+- `DualCLIPLoader` —— 1/5 个有
+- `ManualSigmas` —— 1/5 个有
+- `SamplerEulerAncestral` —— 1/5 个有
 
 ## 典型参数
 

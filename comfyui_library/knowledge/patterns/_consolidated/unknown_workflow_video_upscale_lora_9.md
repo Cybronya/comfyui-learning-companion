@@ -3,101 +3,56 @@ name: unknown_workflow_video_upscale_lora_9
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.642
-common_nodes: [Any Switch (rgthree), BBoxesToSAM2, BlockifyMask, CLIPVisionLoader, CM_IntToFloat, CR Float To String, CR Integer To String, CR String To Number, CR Text, ClothesSegment, CropFace, DWPreprocessor, Display Any (rgthree), DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceSegment, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageFromBatch, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImageToMask, ImageUpscaleWithModelBatched, InvertMask (segment anything), LayerMask: DrawBBoxMaskV2, LayerMask: ObjectDetectorMask, LayerMask: SAM2VideoUltra, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PointsEditor, PoseAndFaceDetection, PreviewImage, QwenVLDetection, RIFE VFI, RMBG, ResizeMask, Sam2Segmentation, SetNode, ShowText|pysssss, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy clearCacheAll, easy imageIndexSwitch, easy int, easy seed]
+coverage: 0.8525
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ExtendIntermediateSigmas, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorRefine, MiniMaxH3DirectorSelfLift, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveStringMultiline, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/【多角色替换+ 动作迁移 】影视恶搞+ 多遮罩模式控制Wan2.2 Animate_2001328127429275650.json, 视频生成/图生视频/【多角色替换++动作迁移+】影视恶搞++多遮罩模式控制Wan2.2+Animate_2005518844527603713.json, 视频生成/图生视频/多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Animate_2026582867685416961.json, 视频生成/图生视频/影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控制 Wan2.2 Animate  丝滑运镜_2003334378287726593.json]
+members: [视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json, 视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【多角色替换+ 动作迁移 】影视恶搞+ 多遮罩模式控制Wan2.2 Animate_2001328127429275650.json、视频生成/图生视频/【多角色替换++动作迁移+】影视恶搞++多遮罩模式控制Wan2.2+Animate_2005518844527603713.json、视频生成/图生视频/多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Animate_2026582867685416961.json、视频生成/图生视频/影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控制 Wan2.2 Animate  丝滑运镜_2003334378287726593.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json、视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BBoxesToSAM2`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Float To String`
-- `CR Integer To String`
-- `CR String To Number`
-- `CR Text`
-- `ClothesSegment`
-- `CropFace`
-- `DWPreprocessor`
-- `Display Any (rgthree)`
-- `DownloadAndLoadQwenModel`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `FaceSegment`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `ImageUpscaleWithModelBatched`
-- `InvertMask (segment anything)`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SAM2VideoUltra`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `QwenVLDetection`
-- `RIFE VFI`
-- `RMBG`
-- `ResizeMask`
-- `Sam2Segmentation`
-- `SetNode`
-- `ShowText|pysssss`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ExtendIntermediateSigmas`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `UNETLoader`
 - `UpscaleModelLoader`
-- `VHS_LoadVideo`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageIndexSwitch`
-- `easy int`
-- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 3/4 个有
+- `MiniMaxH3DirectorGroupsCombine` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `MiniMaxH3DirectorGroupReferenceToVideo` —— 2/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `Video Slice` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `MiniMaxH3DirectorGroupImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

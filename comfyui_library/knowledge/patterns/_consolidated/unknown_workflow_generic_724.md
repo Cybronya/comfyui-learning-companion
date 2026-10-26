@@ -3,28 +3,34 @@ name: unknown_workflow_generic_724
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartImageNProOfficialTextToImage, SaveImage]
+coverage: 0.6305
+common_nodes: [Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/NPro_OfficialTextToImage_v1.0_2033838667017494530.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655488500035586.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655611904839681.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版_2061683310832742401.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json, 图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_724
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/NPro_OfficialTextToImage_v1.0_2033838667017494530.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655488500035586.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655611904839681.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版_2061683310832742401.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json、图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `RH_RhartImageNProOfficialTextToImage`
+- `Comfly_gpt_image_2`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
 - `SaveImage`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `String` —— 2/4 个有
 
 ## 典型参数
 

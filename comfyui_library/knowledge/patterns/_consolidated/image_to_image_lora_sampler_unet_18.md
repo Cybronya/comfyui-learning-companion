@@ -3,73 +3,80 @@ name: image_to_image_lora_sampler_unet_18
 type: Image To Image
 frequency: 18
 level: strong
-coverage: 0.777833
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.664389
+common_nodes: [CFGNorm, CLIPLoader, CR Prompt Text, Fast Groups Bypasser (rgthree), INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea-2-服装转移 服装试穿_2079811923427811330.json, 图片生成/图生图/Krea2 一键人物三视图+动态表情_2101374666509209601.json, 图片生成/图生图/Krea2 一键人物三视图+动态表情_2103482978172227585.json, 图片生成/图生图/Krea2 一键角色四视图_2090402745974087682.json, 图片生成/图生图/Krea2 人物一致性编辑_2082160207756611585.json, 图片生成/图生图/Krea2 服装提取_2093739389833793538.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100031704340717570.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100145717296852994.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108446641257795585.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108452003608350722.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108471820046397441.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108473367333527553.json, 图片生成/图生图/Krea2 角色四视图_2100439894907772929.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100403705555283969.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100491753827688450.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2101079172696330242.json, 数字人/数字人/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2099860117662560257.json, 视频生成/图生视频/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100042152431669249.json]
+members: [图片生成/反推提示词/Qwen-Edit-2511支持一键多角度，多场景分镜_2004063103497191426.json, 图片生成/图生图/002.Qwen编辑之王018.单图 双图 三图编辑_2034661175719370753.json, 图片生成/图生图/251225001.002.Qwen-Edit-2511-支持 单图 双图 三图编辑_2004198351618928642.json, 图片生成/图生图/LH-DMT版本-2.生图片类-042.Qwen-Edit-2511-支持 单图 双图 三图编辑_2016524711785664514.json, 图片生成/图生图/Qwen Image Edit 2511 合集_2004214649702805506.json, 图片生成/图生图/Qwen-2511单_双_三图编辑_2010241309461716993.json, 图片生成/图生图/Qwen-Edit-2511-一键多角度，多场景分镜_2003696921707487234.json, 图片生成/图生图/Qwen-Edit-2511-一键多角度，多场景分镜_2054221184434229250.json, 图片生成/图生图/Qwen-Edit-2511-单图+双图+三图编辑_2004033881311485953.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2003703615871197186.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2003752282514726913.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2042169776323170305.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2062798695934021633.json, 图片生成/图生图/Qwen-edit 简易一键3D皮克斯 Qwen-edit 简易一键3D皮克斯_2005154361963671553.json, 图片生成/图生图/Qwen-edit-2511 明星代言｜手持产品替换_2005156061877334017.json, 图片生成/图生图/最新的Qwenimage-Edit-升级版2511合集_2003763847158767617.json, 数字人/数字人/qwen-edit-Lora分镜生图 场景生图_2092240467063824386.json, 数字人/数字人/qwen-edit-Lora训练专用_2046420912991379457.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_18
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Krea-2-服装转移 服装试穿_2079811923427811330.json、图片生成/图生图/Krea2 一键人物三视图+动态表情_2101374666509209601.json、图片生成/图生图/Krea2 一键人物三视图+动态表情_2103482978172227585.json、图片生成/图生图/Krea2 一键角色四视图_2090402745974087682.json、图片生成/图生图/Krea2 人物一致性编辑_2082160207756611585.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/Qwen-Edit-2511支持一键多角度，多场景分镜_2004063103497191426.json、图片生成/图生图/002.Qwen编辑之王018.单图 双图 三图编辑_2034661175719370753.json、图片生成/图生图/251225001.002.Qwen-Edit-2511-支持 单图 双图 三图编辑_2004198351618928642.json、图片生成/图生图/LH-DMT版本-2.生图片类-042.Qwen-Edit-2511-支持 单图 双图 三图编辑_2016524711785664514.json、图片生成/图生图/Qwen Image Edit 2511 合集_2004214649702805506.json…）
 
 - **类型**：Image To Image
 - **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PlaySound|pysssss`
+- `ReferenceLatent`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/18 个有
+- `Image Comparer (rgthree)` —— 13/18 个有
+- `LayerUtility: ImageReel` —— 13/18 个有
+- `LayerUtility: ImageReelComposit` —— 13/18 个有
 - `PreviewImage` —— 13/18 个有
-- `GetNode` —— 12/18 个有
-- `SetNode` —— 12/18 个有
-- `孤海注释` —— 12/18 个有
-- `MuyeTextEditOutput` —— 2/18 个有
-- `ResolutionSelector` —— 2/18 个有
-- `EmptyImage` —— 1/18 个有
-- `ImageResizeKJv2` —— 1/18 个有
-- `PrimitiveStringMultiline` —— 1/18 个有
-- `SaveAnimatedWEBP` —— 1/18 个有
-- `easy imageConcat` —— 1/18 个有
+- `JWStringConcat` —— 5/18 个有
+- `Qwen3_VQA` —— 5/18 个有
+- `Text Multiline` —— 5/18 个有
+- `easy promptLine` —— 5/18 个有
+- `easy showAnything` —— 5/18 个有
+- `JjkText` —— 1/18 个有
+- `RAMCleanup` —— 1/18 个有
+- `VRAMCleanup` —— 1/18 个有
+- `easy cleanGpuUsed` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 18 | 95% |
+| 采样步数 | 4 | 4 - 4 | 18 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 89% |
-| 调度器 | simple | - | 18 | 100% |
+| 采样算法 | euler_ancestral | - | 18 | 61% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 18 | 56% |
 | 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 49/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，18 个样本，取值集中（一致性 95%）
+- 采样步数 中位数 4，观测区间 4 - 4，18 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 89%
-- 调度器 最常用 simple，18 个样本，一致性 100%
+- 采样算法 最常用 euler_ancestral，18 个样本，一致性 61%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，18 个样本，一致性 56%
 - 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（49/18 个样本）：Steps较低可能导致细节不足

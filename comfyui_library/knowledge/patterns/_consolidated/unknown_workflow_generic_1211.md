@@ -1,45 +1,40 @@
 ---
 name: unknown_workflow_generic_1211
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7425
-common_nodes: [CR Text, CR Text Concatenate, CR Text Replace, Fast Groups Muter (rgthree), GetNode, ImageTile+, ImpactMakeImageBatch, LoadImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, SaveImage, SetNode, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.74
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/AI漫剧分镜_2026825510570958849.json, 视频生成/图生视频/AI分镜图绘制_2022161330945396737.json]
+members: [音频生成/音频生成/余温克隆音色多人对话配音工作流_2107641636846133249.json, 音频生成/音频生成/多人对话（声音克隆）Qwen3-TTS_2109166934381121537.json, 音频生成/音频生成/多人对话（声音设计）Qwen3-TTS_2109223062850859010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1211
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI漫剧分镜_2026825510570958849.json、视频生成/图生视频/AI分镜图绘制_2022161330945396737.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/余温克隆音色多人对话配音工作流_2107641636846133249.json、音频生成/音频生成/多人对话（声音克隆）Qwen3-TTS_2109166934381121537.json、音频生成/音频生成/多人对话（声音设计）Qwen3-TTS_2109223062850859010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
-- `ImageTile+`
-- `ImpactMakeImageBatch`
-- `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `SetNode`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `JjkText` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `忽略多组孤海` —— 2/3 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
+- `HeartMuLa_Transcribe` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
 
 ## 典型参数
 
@@ -51,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

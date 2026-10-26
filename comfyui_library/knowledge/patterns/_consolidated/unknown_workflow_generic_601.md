@@ -3,34 +3,35 @@ name: unknown_workflow_generic_601
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9692
-common_nodes: [IndexTTS2Run, LoadAudio, Text Multiline]
+coverage: 0.9342
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json, 音频生成/音频生成/双人对话语音克隆_2063192858802343937.json, 音频生成/音频生成/声音克隆_1993713525206040578.json, 音频生成/音频生成/生成配音-情绪_2039538988712726529.json, 音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json]
+members: [图片生成/图生图/测试按钮_2072942393598500865.json, 图片生成/图生图/牛皮纸单盒_2049691312600961026.json, 图片生成/图生图/牛皮纸卷纸_2049675181253201921.json, 图片生成/图生图/牛皮纸多盒_2049695227673321474.json, 图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_601
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json、音频生成/音频生成/双人对话语音克隆_2063192858802343937.json、音频生成/音频生成/声音克隆_1993713525206040578.json、音频生成/音频生成/生成配音-情绪_2039538988712726529.json、音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/测试按钮_2072942393598500865.json、图片生成/图生图/牛皮纸单盒_2049691312600961026.json、图片生成/图生图/牛皮纸卷纸_2049675181253201921.json、图片生成/图生图/牛皮纸多盒_2049695227673321474.json、图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `Text Multiline`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/5 个有
-- `SaveAudio` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
+- `JWStringConcat` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `RH_RhartImageG2TextToImage` —— 1/5 个有
 
 ## 典型参数
 

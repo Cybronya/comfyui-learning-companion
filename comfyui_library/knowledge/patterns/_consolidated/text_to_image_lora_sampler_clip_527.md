@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_527
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.894
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.893667
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Muter (rgthree), ImpactInt, InspyrenetRembg, JjkText, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadRembgByBiRefNetModel, LoraLoaderModelOnly, RH_Translator, RMBG, RembgByBiRefNet, SaveImage, ThresholdMask, UNETLoader, VAEDecode, VAELoader, easy sam3ImageSegmentation, easy sam3ModelLoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json, 图片生成/文生图/稳定加速Tao版 Qwen Image 2.1 PE文生图加图生图编辑_2104352509451137025.json, 图片生成/文生图/（稳定加速版）Qwen Image 2.1 PE文生图｜快且稳的高质量出图_2104581684481060865.json]
+members: [图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090206527461347330.json, 图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090611072117071874.json, 图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090626728917037058.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_527
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json、图片生成/文生图/稳定加速Tao版 Qwen Image 2.1 PE文生图加图生图编辑_2104352509451137025.json、图片生成/文生图/（稳定加速版）Qwen Image 2.1 PE文生图｜快且稳的高质量出图_2104581684481060865.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090206527461347330.json、图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090611072117071874.json、图片生成/图生图/四合一全能抠图｜SAM3语义分割+BiRefNet最强+Inspyrenet最快_2090626728917037058.json）
 
 - **类型**：Text To Image
 - **样本数**：3
@@ -23,43 +23,35 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
+- `Fast Groups Muter (rgthree)`
+- `ImpactInt`
+- `InspyrenetRembg`
 - `JjkText`
 - `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadRembgByBiRefNetModel`
 - `LoraLoaderModelOnly`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenPERewriteT8`
-- `ResolutionSelector`
+- `RH_Translator`
+- `RMBG`
+- `RembgByBiRefNet`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `ThresholdMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `QwenImage21Cache` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Display Any (rgthree)` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `KSamplerSelect` —— 1/3 个有
-- `LTXVConcatAVLatent` —— 1/3 个有
-- `LTXVSeparateAVLatent` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,40 +3,35 @@ name: unknown_workflow_generic_1288
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [GroundingDinoModelLoader (segment anything2), GroundingDinoSAMSegment (segment anything), ImpactDilateMask, JoinImageWithAlpha, LoadImage, MaskBlur+, SAMModelLoader (segment anything), SaveImage]
+coverage: 0.616
+common_nodes: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewAny, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json, 图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json]
+members: [图片生成/反推提示词/JoyCaption本地图片提示词反推_2101492268921352193.json, 图片生成/反推提示词/tonnie-joycaption反推和florence2的对比_1993649842232770561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1288
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json、图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/JoyCaption本地图片提示词反推_2101492268921352193.json、图片生成/反推提示词/tonnie-joycaption反推和florence2的对比_1993649842232770561.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything2)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImpactDilateMask`
-- `JoinImageWithAlpha`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `MaskBlur+`
-- `SAMModelLoader (segment anything)`
+- `PreviewAny`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `InvertMask` —— 1/2 个有
-- `MaskFillHole` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PreviewBridge` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/2 个有
 
 ## 典型参数
 

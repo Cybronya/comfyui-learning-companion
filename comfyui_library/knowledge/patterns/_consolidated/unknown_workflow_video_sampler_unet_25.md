@@ -1,44 +1,39 @@
 ---
 name: unknown_workflow_video_sampler_unet_25
 type: Unknown Workflow
-frequency: 15
+frequency: 12
 level: moderate
-coverage: 0.879267
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, ManualSigmas, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.801833
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3多参视频生成+Qwen3.8全自动撰写H3提示词_2095738490674827265.json, 视频生成/图生视频/H3（人物替换）参考视频生成+Qwen3.8视频提示词反推_2095682870034653186.json, 视频生成/图生视频/minimax h3_fi2va-dasiwa-zs05可选单图双采_2092267502540779521.json, 视频生成/图生视频/minimax h3_ref2va-dasiwa-zs05可选双采_2092257046572920834.json, 视频生成/图生视频/minimax_h3_i2v_Latent%20Upscaler_2090996016345608194.json, 视频生成/图生视频/minimax_h3_r2v_complex_camera_motion_2094372650780028929.json, 视频生成/图生视频/minimax_h3_r2v_video_edit_2092169538497503233.json, 视频生成/图生视频/minmax潜空间放大姿势迁移_2097668196026372098.json, 视频生成/图生视频/参考故事版生成视频 minimax H3_2092780996881113090.json, 视频生成/文生视频/Minimax_h3_i2v_latent+upscale+去油光Lora工作流_2093179059550380034.json, 视频生成/文生视频/minimax h3文生视频双采高清流_2093374091788115970.json, 视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json, 视频生成/文生视频/（0825）二采放大1080P12秒-提示词未自动优化_2092123279141195777.json, 视频生成/文生视频/（0826）万象二采放大1080P横屏12秒-提示词未自动优化（增加动态lora）_2092578809114619905.json, 视频生成/文生视频/（0826）万象二采放大1080P竖屏12秒-提示词未自动优化（增加动态lora）_2092617053390856194.json]
+members: [图片生成/图生图/MiniMax_H3图生视频自动提示词版!RH普通会员版_2085415100269285377.json, 图片生成/图生图/h3短剧流-多角色对话_2094000700031332353.json, 图片生成/文生图/【阿楚臻选低成本01号】海螺H3全能多参音视频生成（9图3视频3音频）开源版_2085713549330046978.json, 视频生成/图生视频/1图_multi_ref_minimax_h3_i2v_2094711687055241217.json, 视频生成/图生视频/2图_multi_ref_minimax_h3_i2v_2094710093471375361.json, 视频生成/图生视频/3图_multi_ref_minimax_h3_i2v_2092499319101415426.json, 视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-图生视频_2086095379162025986.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图生视频-自动提示词_2084469087677276162.json, 视频生成/图生视频/MiniMax-H3 首尾帧图生视频_2084637924326465538.json, 视频生成/图生视频/MiniMax_ref2v_imgvideoaudio_2092306138221072386.json, 视频生成/图生视频/Minimax H3多参音视频生成开源版（9图3视频3音频）_2084892402388652033.json, 视频生成/图生视频/Minimax H3多参音视频生成开源版（9图3视频3音频）_2086998199218294786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_25
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/H3多参视频生成+Qwen3.8全自动撰写H3提示词_2095738490674827265.json、视频生成/图生视频/H3（人物替换）参考视频生成+Qwen3.8视频提示词反推_2095682870034653186.json、视频生成/图生视频/minimax h3_fi2va-dasiwa-zs05可选单图双采_2092267502540779521.json、视频生成/图生视频/minimax h3_ref2va-dasiwa-zs05可选双采_2092257046572920834.json、视频生成/图生视频/minimax_h3_i2v_Latent%20Upscaler_2090996016345608194.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/MiniMax_H3图生视频自动提示词版!RH普通会员版_2085415100269285377.json、图片生成/图生图/h3短剧流-多角色对话_2094000700031332353.json、图片生成/文生图/【阿楚臻选低成本01号】海螺H3全能多参音视频生成（9图3视频3音频）开源版_2085713549330046978.json、视频生成/图生视频/1图_multi_ref_minimax_h3_i2v_2094711687055241217.json、视频生成/图生视频/2图_multi_ref_minimax_h3_i2v_2094710093471375361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `LoadImage`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -46,25 +41,23 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 14/15 个有
-- `MinimaxH3LatentUpscaler3D` —— 14/15 个有
-- `PrimitiveStringMultiline` —— 13/15 个有
-- `MiniMaxH3ReferenceToVideo` —— 12/15 个有
-- `LoraLoaderModelOnly` —— 9/15 个有
-- `ImageResizeKJv2` —— 7/15 个有
-- `Label (rgthree)` —— 5/15 个有
-- `MiniMaxH3ImageToVideo` —— 3/15 个有
-- `MuyeTextEditOutput` —— 3/15 个有
-- `SaveImage` —— 3/15 个有
-- `VHS_LoadVideo` —— 3/15 个有
-- `Float to Int` —— 2/15 个有
-- `MiniMaxH3PromptEnhancerT8` —— 2/15 个有
-- `PreviewAny` —— 2/15 个有
-- `ShellAgentPluginOutputText` —— 2/15 个有
-- `easy showAnything` —— 2/15 个有
-- `LoadVideo` —— 1/15 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 1/15 个有
-- `MiniMaxH3TurboLoRA` —— 1/15 个有
+- `PathchSageAttentionKJ` —— 11/12 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/12 个有
+- `PainterVRAM` —— 8/12 个有
+- `LoadAudio` —— 5/12 个有
+- `MiniMaxH3ImageToVideo` —— 4/12 个有
+- `VHS_LoadVideo` —— 4/12 个有
+- `ImageResizeKJv2` —— 3/12 个有
+- `LoraLoaderModelOnly` —— 3/12 个有
+- `PreviewImage` —— 3/12 个有
+- `YK_LoadImageFromURL` —— 3/12 个有
+- `孤海注释` —— 3/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `TrimAudioDuration` —— 1/12 个有
+- `llama_cpp_instruct_adv` —— 1/12 个有
+- `llama_cpp_model_loader` —— 1/12 个有
+- `llama_cpp_parameters` —— 1/12 个有
+- `图像缩放V2_孤海` —— 1/12 个有
 
 ## 典型参数
 

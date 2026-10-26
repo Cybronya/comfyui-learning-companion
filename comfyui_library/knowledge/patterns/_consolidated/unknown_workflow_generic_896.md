@@ -3,36 +3,29 @@ name: unknown_workflow_generic_896
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.818
-common_nodes: [ConstrainImage|pysssss, GoohaiUniversalSlider, LoadImage, PreviewImage, RH_Captioner_Pro, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything, 忽略多组孤海]
+coverage: 0.904
+common_nodes: [GrokImageEditNodeV2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json, 图片生成/图生图/洗图  2.0_2094804532176965634.json, 图片生成/图生图/洗图 2.0_2095326743526727681.json]
+members: [comfyui-workflow-templates-json/api_grok_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json, comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_896
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json、图片生成/图生图/洗图  2.0_2094804532176965634.json、图片生成/图生图/洗图 2.0_2095326743526727681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json、comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `GoohaiUniversalSlider`
+- `GrokImageEditNodeV2`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner_Pro`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `easy showAnything`
-- `忽略多组孤海`
 
 ## 典型参数
 

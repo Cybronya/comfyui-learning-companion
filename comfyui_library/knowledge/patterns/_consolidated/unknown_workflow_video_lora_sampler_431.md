@@ -1,82 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_431
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8728
-common_nodes: [BasicScheduler, CLIPTextEncode, CR Text, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Preview from image [Crystools], PreviewAudio, PrimitiveBoolean, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy imageSave, 孤海注释]
+coverage: 0.774833
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoDecode, HyVideoEncodeKeyframes, HyVideoEnhanceAVideo, HyVideoLoraSelect, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEncode, HyVideoVAELoader, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2064410253088878594.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2082315667667243010.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json, 视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json]
+members: [视频生成/图生视频/混元首尾帧图生视频加速版_1905259795853529090.json, 视频生成/图生视频/🦖hunyuan首尾帧（0310更新）_1898964861882454017.json, 视频生成/文生视频/【升级进化】混元首尾帧工作流_1902236284432359426.json, 视频生成/文生视频/混元前后关键帧控制-图生视频工作流_2041411541697830913.json, 视频生成/文生视频/混元首尾帧工作流_1899158148928720898.json, 视频生成/文生视频/视频工作流_1937073069645271041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_431
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2064410253088878594.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2082315667667243010.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json、视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/混元首尾帧图生视频加速版_1905259795853529090.json、视频生成/图生视频/🦖hunyuan首尾帧（0310更新）_1898964861882454017.json、视频生成/文生视频/【升级进化】混元首尾帧工作流_1902236284432359426.json、视频生成/文生视频/混元前后关键帧控制-图生视频工作流_2041411541697830913.json、视频生成/文生视频/混元首尾帧工作流_1899158148928720898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CR Text`
-- `CS-LTXGridDirector`
-- `ComfySwitchNode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 6 个 workflow 都包含：
+- `DownloadAndLoadHyVideoTextEncoder`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncodeKeyframes`
+- `HyVideoEnhanceAVideo`
+- `HyVideoLoraSelect`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTextEncode`
+- `HyVideoVAELoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Preview from image [Crystools]`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `YusuLTXDirectorGuide`
-- `easy imageSave`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 4/5 个有
-- `GPTImage2PromptPreview` —— 4/5 个有
-- `RHHiddenNodes` —— 4/5 个有
-- `RH_RhartImageG2ImageToImage` —— 4/5 个有
-- `MuyeTextEditOutput` —— 3/5 个有
-- `PreviewAny` —— 2/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `AudioCrop` —— 1/5 个有
-- `ImageRGBChannel` —— 1/5 个有
-- `IndexTTS2Run` —— 1/5 个有
-- `LayerColor: Levels` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
-- `SaveAudioMP3` —— 1/5 个有
-- `ShellAgentPluginOutputText` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `HyVideoTorchCompileSettings` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `ImageScale` —— 5/6 个有
+- `GetNode` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `AddLabel` —— 2/6 个有
+- `EmptyImage` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `ColorMatch` —— 1/6 个有
+- `ImageResizeKJ` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,29 +3,38 @@ name: unknown_workflow_generic_579
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Vidu_Reference2Video, SaveVideo]
+coverage: 0.8196
+common_nodes: [LoadImage, SaveImage, TransparentImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json, 视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json, 视频生成/图生视频/杨先生的动画课-多图参考优秀工作流VIDU_1984531859684081665.json]
+members: [图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json, 图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json, 图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json, 图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json, 图片生成/图生图/透明_2068898137724514305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_579
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json、视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json、视频生成/图生视频/杨先生的动画课-多图参考优秀工作流VIDU_1984531859684081665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json、图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json、图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json、图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json、图片生成/图生图/透明_2068898137724514305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_Vidu_Reference2Video`
-- `SaveVideo`
+- `SaveImage`
+- `TransparentImage`
+
+**可变部分**（部分 workflow 才有）：
+- `GroundingDinoModelLoader (segment anything)` —— 4/5 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 4/5 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 4/5 个有
+- `MaskToImage` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `SAMLoader` —— 4/5 个有
+- `RHHiddenNodes` —— 1/5 个有
 
 ## 典型参数
 

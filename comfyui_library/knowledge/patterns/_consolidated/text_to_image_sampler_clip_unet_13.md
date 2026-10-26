@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_13
 type: Text To Image
-frequency: 21
-level: moderate
-coverage: 0.852762
+frequency: 22
+level: weak
+coverage: 0.986591
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/ZImage 光速高清文生图_1988965178039480322.json, 图片生成/文生图/ZImage3.0-SUPER 文生图_2017812013216436226.json, 图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json, 图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json, 图片生成/文生图/Zimage图像模型（支持真人的国产加速模型）_2028268832682418177.json, 图片生成/文生图/Zimage文生图-基础_2003639567171395585.json, 图片生成/文生图/Zimage文生图_1993848041241329666.json, 图片生成/文生图/Zimage文生图_2013426591489069057.json, 图片生成/文生图/Zimage文生图工作流-国产、认识中文、认识明星_1954438175747928065.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1993888771909369858.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1995004425267818497.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_2038275878496505858.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027694676630835201.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027695408717238273.json, 图片生成/文生图/[众馨]最新王炸Z-Image超快速超细节生图_1994245198530150402.json, 图片生成/文生图/aidir-文生图-krea2_2078304053796364290.json, 图片生成/文生图/anima_preview2 二次元动漫角色自由~ & RTX Video 超分放大~_2036407166378184705.json, 图片生成/文生图/krea 2 文生图工作流_2079525843776393218.json, 图片生成/文生图/krea-2-turbo 文生图_1903742090277195777.json, 图片生成/文生图/realism_engine_krea2（自动扩写提示词）_2072599087316299777.json, 图片生成/文生图/极速美学版-Krea2 Turbo-文生图-美学不错_2070037389308944386.json]
+members: [图片生成/文生图/FinePorn_Krea2基础工作流V3_2098728252046135298.json, 图片生成/文生图/KOOK_Zimage_底膜直出_2016539613388607489.json, 图片生成/文生图/Kook_Zimage_真实幻想_Turbo_1995721892386451457.json, 图片生成/文生图/Qwen Image 文生图，千问基础文生图_2005132413141479426.json, 图片生成/文生图/Qwen image 2512 我的50年_Qwen-Image-2512_2006650484186157057.json, 图片生成/文生图/Qwen image 2512文生图_2008433887889858562.json, 图片生成/文生图/Qwen-Image+Lightning4StepsLora-文生图工作流_1956201968337342466.json, 图片生成/文生图/Qwen-Image-2512 文生图 8步加速_2014683752181538818.json, 图片生成/文生图/Qwen-Image-2512 最新文生图_2006383515574738946.json, 图片生成/文生图/Qwen-Image-2512不用LoRA实现人物一致性_2006694730360430594.json, 图片生成/文生图/Qwen-Image-2512卡通女孩LoRA_2007803177848020993.json, 图片生成/文生图/Qwen-Image-2512四步10秒出图Qwen image 2512_2006497445919854594.json, 图片生成/文生图/Qwen-Image-2512文生图_1953006122934407170.json, 图片生成/文生图/Qwen-Image-2512文生图_2006354179845005313.json, 图片生成/文生图/Qwen-Image-2512的Bill_LoRA_2007418345481576449.json, 图片生成/文生图/Qwen-Image2512中文渲染全系列工作流_2010150714567299074.json, 图片生成/文生图/Qwen2512JK制服甜妹_2018334963661283330.json, 图片生成/文生图/Qwen2512性感迷人身材美女_2017894712933359617.json, 图片生成/文生图/Qwen大雷连体衣美女_2055856373283467265.json, 图片生成/文生图/Zimage_真实幻想_2049416827402457090.json, 图片生成/文生图/qwen2512完美魔鬼身材的美女_2018950663933267969.json, 图片生成/文生图/极品美女｜Krea2文生图 + 雯雯的后宫极品身材LoRA_2077759044986695682.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/ZImage 光速高清文生图_1988965178039480322.json、图片生成/文生图/ZImage3.0-SUPER 文生图_2017812013216436226.json、图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json、图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json、图片生成/文生图/Zimage图像模型（支持真人的国产加速模型）_2028268832682418177.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/FinePorn_Krea2基础工作流V3_2098728252046135298.json、图片生成/文生图/KOOK_Zimage_底膜直出_2016539613388607489.json、图片生成/文生图/Kook_Zimage_真实幻想_Turbo_1995721892386451457.json、图片生成/文生图/Qwen Image 文生图，千问基础文生图_2005132413141479426.json、图片生成/文生图/Qwen image 2512 我的50年_Qwen-Image-2512_2006650484186157057.json…）
 
 - **类型**：Text To Image
-- **样本数**：21
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：22
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -33,47 +33,41 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 20/21 个有
-- `PrimitiveInt` —— 10/21 个有
-- `PrimitiveStringMultiline` —— 10/21 个有
-- `RTXVideoSuperResolution` —— 4/21 个有
-- `ResolutionSelector` —— 4/21 个有
-- `PreviewAny` —— 3/21 个有
-- `StringConcatenate` —— 3/21 个有
-- `TextGenerate` —— 3/21 个有
-- `LoraLoader` —— 2/21 个有
-- `Image Comparer (rgthree)` —— 1/21 个有
-- `LoadImage` —— 1/21 个有
-- `LoraLoaderModelOnly` —— 1/21 个有
+- `LoraLoaderModelOnly` —— 20/22 个有
+- `ModelSamplingAuraFlow` —— 20/22 个有
+- `CompressImages` —— 4/22 个有
+- `HFEPostProcessor (lrzjason)` —— 3/22 个有
+- `VAEEncode` —— 2/22 个有
+- `Power Lora Loader (rgthree)` —— 1/22 个有
+- `ResolutionSelector` —— 1/22 个有
+- `easy positive` —— 1/22 个有
+- `easy promptConcat` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1920 | 21 | 62% |
-| 高度 | 1024 | 512 - 1920 | 21 | 55% |
-| 采样步数 | 10 | 8 - 35 | 21 | 38% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5.5 | 21 | 17% |
-| 采样算法 | euler | - | 21 | 90% |
-| 调度器 | simple | - | 21 | 95% |
-| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
-| LoRA 模型强度 | 0.6 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 7 | 4 - 30 | 22 | 19% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 22 | 24% |
+| 采样算法 | euler | - | 22 | 86% |
+| 调度器 | simple | - | 22 | 77% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 976 | 512 - 1664 | 22 | 76% |
+| 高度 | 1264 | 512 - 1920 | 22 | 74% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1920，21 个样本
-- 高度 中位数 1024，观测区间 512 - 1920，21 个样本
-- 采样步数 中位数 10，观测区间 8 - 35，21 个样本，取值分散，一致性仅 38%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5.5，21 个样本，取值分散，一致性仅 17%
-- 采样算法 最常用 euler，21 个样本，一致性 90%
-- 调度器 最常用 simple，21 个样本，一致性 95%
-- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 7，观测区间 4 - 30，22 个样本，取值分散，一致性仅 19%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，22 个样本，取值分散，一致性仅 24%
+- 采样算法 最常用 euler，22 个样本，一致性 86%
+- 调度器 最常用 simple，22 个样本，一致性 77%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 976，观测区间 512 - 1664，22 个样本
+- 高度 中位数 1264，观测区间 512 - 1920，22 个样本
+- 高发问题（17/22 个样本）：Steps较低可能导致细节不足

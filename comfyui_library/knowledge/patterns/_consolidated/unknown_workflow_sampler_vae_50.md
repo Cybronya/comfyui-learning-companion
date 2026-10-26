@@ -1,76 +1,73 @@
 ---
 name: unknown_workflow_sampler_vae_50
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.984
-common_nodes: [CFGNorm, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode]
+frequency: 4
+level: strong
+coverage: 0.8755
+common_nodes: [ConditioningZeroOut, ImageStitch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, VAEDecode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/QwenAIO动漫转真人三视图_2035514846493544449.json, 图片生成/图生图/QwenEdit2511-融图-去塑料感-v5.0_2046110169540599810.json, 图片生成/图生图/qwen 最新2026多视角生成保持一致性_2013805117430042625.json]
+members: [图片生成/图生图/Image-Edit-Rapid-AIO多功能融合模型-多图模式_1975849919569375233.json, 图片生成/图生图/Qwen-Image-Edit-2509：告别 “崩图”！人物身份稳、多图融得顺_1970737870178820098.json, 图片生成/图生图/nunchaku-qwen-edit-2509_1972268680992256001.json, 图片生成/图生图/文字渲染-千问Edit2509图像编辑_1970532850070134786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenAIO动漫转真人三视图_2035514846493544449.json、图片生成/图生图/QwenEdit2511-融图-去塑料感-v5.0_2046110169540599810.json、图片生成/图生图/qwen 最新2026多视角生成保持一致性_2013805117430042625.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Image-Edit-Rapid-AIO多功能融合模型-多图模式_1975849919569375233.json、图片生成/图生图/Qwen-Image-Edit-2509：告别 “崩图”！人物身份稳、多图融得顺_1970737870178820098.json、图片生成/图生图/nunchaku-qwen-edit-2509_1972268680992256001.json、图片生成/图生图/文字渲染-千问Edit2509图像编辑_1970532850070134786.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
+全部 4 个 workflow 都包含：
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
+- `ImageStitch`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
-- `QWenVL_API_S_Multi_Zho` —— 1/3 个有
-- `Qwen2.5VL` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
-- `easy promptLine` —— 1/3 个有
+- `CLIPLoader` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `VAELoader` —— 3/4 个有
+- `easy imageConcat` —— 3/4 个有
+- `OpenposePreprocessor` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `CFGZeroStar` —— 1/4 个有
+- `CheckpointLoaderSimple` —— 1/4 个有
+- `DWPreprocessor` —— 1/4 个有
+- `NunchakuQwenImageDiTLoader` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1.2 | 1 - 1.2 | 3 | 92% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | 512 - 1024 | 3 | 72% |
-| 高度 | 1536 | 512 - 1792 | 3 | 57% |
+| 采样步数 | 20 | 8 - 20 | 4 | 69% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | beta57 | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1.2，观测区间 1 - 1.2，3 个样本，取值集中（一致性 92%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1536，观测区间 512 - 1792，3 个样本
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 beta57，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

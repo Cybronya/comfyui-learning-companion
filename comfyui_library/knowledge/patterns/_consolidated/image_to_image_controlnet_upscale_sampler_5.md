@@ -1,79 +1,111 @@
 ---
 name: image_to_image_controlnet_upscale_sampler_5
 type: Image To Image
-frequency: 4
-level: strong
-coverage: 0.8015
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, Image Comparer (rgthree), ImageResize+, KSampler, LoadImage, Miaoshouai_Tagger, PreviewImage, SUPIR_Upscale, SaveImage, ShowText|pysssss, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.887
+common_nodes: [ApplyFBCacheOnModel, ApplyInstantID, CLIPTextEncode, CR Upscale Image, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, CropFace, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, Florence2Run, Florence2toCoordinates, GetImageSize+, GrowMaskWithBlur, Image Comparer (rgthree), ImageComposite+, ImageScale, ImageScaleBy, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: LayerImageTransform, LoadImage, MaskPreview+, PreviewImage, Sam2Segmentation, SaveImage, SetLatentNoiseMask, VAEDecode, VAEEncode, easy imageColorMatch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/产品CMF材质拓展_1922496385088946178.json, 图片生成/图生图/毛坯房效果图生成_1922658809972494338.json, 图片生成/图生图/氛围颜色更改_1922667276154146818.json, 图片生成/图生图/草图上色_1922509195185197058.json]
+members: [图片生成/图生图/Florence2 + InstantID：多人同屏精准换脸_修复工作流_1997845376902344706.json, 图片生成/图生图/图像编辑 _ Kontext多图融合+修脸_1946547822981181441.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_upscale_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/产品CMF材质拓展_1922496385088946178.json、图片生成/图生图/毛坯房效果图生成_1922658809972494338.json、图片生成/图生图/氛围颜色更改_1922667276154146818.json、图片生成/图生图/草图上色_1922509195185197058.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Florence2 + InstantID：多人同屏精准换脸_修复工作流_1997845376902344706.json、图片生成/图生图/图像编辑 _ Kontext多图融合+修脸_1946547822981181441.json）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 2 个 workflow 都包含：
+- `ApplyFBCacheOnModel`
+- `ApplyInstantID`
 - `CLIPTextEncode`
+- `CR Upscale Image`
 - `CheckpointLoaderSimple`
 - `ControlNetApplyAdvanced`
 - `ControlNetLoader`
+- `CropFace`
+- `DownloadAndLoadFlorence2Model`
+- `DownloadAndLoadSAM2Model`
+- `Florence2Run`
+- `Florence2toCoordinates`
+- `GetImageSize+`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
+- `ImageComposite+`
+- `ImageScale`
+- `ImageScaleBy`
+- `InstantIDFaceAnalysis`
+- `InstantIDModelLoader`
 - `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropBoxResolve`
+- `LayerUtility: CropByMask`
+- `LayerUtility: LayerImageTransform`
 - `LoadImage`
-- `Miaoshouai_Tagger`
+- `MaskPreview+`
 - `PreviewImage`
-- `SUPIR_Upscale`
+- `Sam2Segmentation`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SetLatentNoiseMask`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 3/4 个有
-- `ColorMatch` —— 3/4 个有
-- `easy ipadapterApplyADV` —— 3/4 个有
-- `AnyLineArtPreprocessor_aux` —— 2/4 个有
-- `ACN_ControlNetLoaderAdvanced` —— 1/4 个有
-- `ACN_ScaledSoftControlNetWeights` —— 1/4 个有
-- `ACN_SoftT2IAdapterWeights` —— 1/4 个有
-- `BiRefNetRMBG` —— 1/4 个有
-- `BiRefNet_Hugo` —— 1/4 个有
-- `Seed Everywhere` —— 1/4 个有
-- `TimestepKeyframe` —— 1/4 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `ColorMatch` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `EmptySD3LatentImage` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `IntToText` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `JjkShowText` —— 1/2 个有
+- `NunchakuFluxDiTLoader` —— 1/2 个有
+- `NunchakuFluxLoraLoader` —— 1/2 个有
+- `RMBG` —— 1/2 个有
+- `ReferenceLatent` —— 1/2 个有
+- `ResizeLongestToNode` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `VAELoader` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1 | 1 - 1 | 4 | 100% |
-| 采样步数 | 35 | 35 - 35 | 4 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 3.5 - 3.5 | 4 | 100% |
-| 采样算法 | dpmpp_2m_sde_gpu | - | 4 | 100% |
-| 调度器 | karras | - | 4 | 100% |
-| 重绘幅度 | 1 | 0.8 - 1 | 4 | 91% |
+| ControlNet 权重 | 0.1 | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler_ancestral | - | 2 | 100% |
+| 调度器 | sgm_uniform | - | 2 | 100% |
+| 重绘幅度 | 0.5 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 35，观测区间 35 - 35，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 3.5 - 3.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m_sde_gpu，4 个样本，一致性 100%
-- 调度器 最常用 karras，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.8 - 1，4 个样本，取值集中（一致性 91%）
+- ControlNet 权重 中位数 0.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

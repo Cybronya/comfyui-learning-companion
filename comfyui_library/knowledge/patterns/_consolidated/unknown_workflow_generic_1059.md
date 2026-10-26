@@ -3,36 +3,37 @@ name: unknown_workflow_generic_1059
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, LoadVideo, MuyeTextEditOutput, SaveVideo]
+coverage: 0.723667
+common_nodes: [CR Text, Int, LoadImage, PrimitiveFloat, RH_Jimeng4_Image2Image, Repeater|pysssss, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json, 视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json, 视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json]
+members: [图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json, 图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json, 图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1059
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json、视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json、视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json、图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json、图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
+- `CR Text`
+- `Int`
 - `LoadImage`
-- `LoadVideo`
-- `MuyeTextEditOutput`
-- `SaveVideo`
+- `PrimitiveFloat`
+- `RH_Jimeng4_Image2Image`
+- `Repeater|pysssss`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 1/3 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 1/3 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `SmartImageConcat` —— 1/3 个有
 
 ## 典型参数
 

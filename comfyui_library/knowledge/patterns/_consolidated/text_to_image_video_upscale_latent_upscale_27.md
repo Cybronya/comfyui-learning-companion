@@ -3,82 +3,84 @@ name: text_to_image_video_upscale_latent_upscale_27
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.649
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ComfySwitchNode, CreateVideo, EmptyLatentImage, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHOutput, GetNode, GetVideoComponents, H3SigmaRefiner, ImageUpscaleWithModel, InspyrenetRembg, Int, JjkText, JoinImageWithAlpha, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PreviewImage, PrimitiveBoolean, RandomSeedNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SaveImage, SaveVideo, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SeedVR2TemporalChunk, SeedVR2TemporalMerge, SetNode, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeAudio, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VHS_VideoCombine, Video Slice, easy cleanGpuUsed, easy float, solarL_SaveImagesToZip]
+coverage: 0.8495
+common_nodes: [AudioCrop, CFGGuider, CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TTResolutionSelector, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3极简多参工作流 轻量化图生视频处理工具_2099935822144430081.json, 视频生成/文生视频/H3极简多参工作流_轻量化图生视频处理工具_2100507570422239234.json]
+members: [数字人/数字人/数字人LTX2.3-kj版-快速配音_2082252252718391297.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版｜图生视频加速加持｜口播内容稳定产出_2102625263141089282.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_27
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3极简多参工作流 轻量化图生视频处理工具_2099935822144430081.json、视频生成/文生视频/H3极简多参工作流_轻量化图生视频处理工具_2100507570422239234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/数字人LTX2.3-kj版-快速配音_2082252252718391297.json、视频生成/图生视频/LTX2.3数字人口播长视频稳定版｜图生视频加速加持｜口播内容稳定产出_2102625263141089282.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `AudioCrop`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `ComfySwitchNode`
-- `CreateVideo`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHLoraStack`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
-- `GetVideoComponents`
-- `H3SigmaRefiner`
-- `ImageUpscaleWithModel`
-- `InspyrenetRembg`
-- `Int`
+- `ImageResizeKJv2`
 - `JjkText`
-- `JoinImageWithAlpha`
 - `KSampler`
 - `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RandomSeedNoise`
-- `ResizeImageMaskNode`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `SaveVideo`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SeedVR2TemporalChunk`
-- `SeedVR2TemporalMerge`
-- `SetNode`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TTResolutionSelector`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `Video Slice`
-- `easy cleanGpuUsed`
-- `easy float`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
+- `1hew_AudioDuration` —— 1/2 个有
+- `Audio Duration (mtb)` —— 1/2 个有
+- `AudioSeparation` —— 1/2 个有
+- `Bool` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JWString` —— 1/2 个有
+- `LTXVAudioVAEDecode` —— 1/2 个有
+- `LTXVChunkFeedForward` —— 1/2 个有
+- `LTXVPreprocess` —— 1/2 个有
+- `LTXVScheduler` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy float` —— 1/2 个有
+- `easy getNode` —— 1/2 个有
+- `easy setNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 - `孤海注释` —— 1/2 个有
 
 ## 典型参数
@@ -97,7 +99,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -108,5 +110,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,32 +3,33 @@ name: unknown_workflow_generic_1623
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [LoadImage, RH_RhartAudioSunoV55Single, SaveAudio]
+coverage: 0.6875
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/01_快乐治愈_SunoV5.5Single+全节点注释_2058869686774878209.json, 音频生成/音频生成/RH Suno_Single_1972958729199030273.json]
+members: [图片生成/文生图/全网最低价 全能图片V1_1969685223988490242.json, 图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1623
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/01_快乐治愈_SunoV5.5Single+全节点注释_2058869686774878209.json、音频生成/音频生成/RH Suno_Single_1972958729199030273.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全网最低价 全能图片V1_1969685223988490242.json、图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartAudioSunoV55Single`
-- `SaveAudio`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
+- `AgeTransformationNode` —— 1/2 个有
+- `TutengGeminiAPI` —— 1/2 个有
 
 ## 典型参数
 

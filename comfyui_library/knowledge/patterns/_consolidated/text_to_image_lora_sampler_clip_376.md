@@ -3,52 +3,55 @@ name: text_to_image_lora_sampler_clip_376
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8766
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RH_Nano_Banana2_Image2Image, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.85
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageScaleBy, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图与参考图生封面图详情页，海报制作与字体排版一体化_2104743204351471618.json, 数字人/数字人/全能图像Pro提示词玩法大全 电商主图详情页复刻工具_2099178316405239810.json, 数字人/数字人/全能图像Pro提示词玩法大全 电商主图详情页复刻工具_2099546664741720066.json, 数字人/数字人/全能图像Pro玩法宝典｜提示词合集一次拿全，电商主图详情页直接复刻_2099504783659986945.json, 数字人/数字人/文生图与参考图生封面图详情页，海报制作与字体排版一体化_2102892932557791233.json]
+members: [图片生成/图生图/KREA2图生图基础工作流｜图片重绘一键生成_2090872556252393474.json, 图片生成/图生图/KREA2图生图工具｜一键重绘低幅度出图工作流_2092877653731790850.json, 图片生成/图生图/KREA2图生图直出｜图像编辑生成一键工作流_2090566026646876161.json, 图片生成/图生图/Krea2图生图编辑｜图像处理一键生成直出_2092688991719084033.json, 图片生成/图生图/Z IMAGE增加皮肤细节 图生图单张处理工具_2099594269966290945.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_376
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/文生图与参考图生封面图详情页，海报制作与字体排版一体化_2104743204351471618.json、数字人/数字人/全能图像Pro提示词玩法大全 电商主图详情页复刻工具_2099178316405239810.json、数字人/数字人/全能图像Pro提示词玩法大全 电商主图详情页复刻工具_2099546664741720066.json、数字人/数字人/全能图像Pro玩法宝典｜提示词合集一次拿全，电商主图详情页直接复刻_2099504783659986945.json、数字人/数字人/文生图与参考图生封面图详情页，海报制作与字体排版一体化_2102892932557791233.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KREA2图生图基础工作流｜图片重绘一键生成_2090872556252393474.json、图片生成/图生图/KREA2图生图工具｜一键重绘低幅度出图工作流_2092877653731790850.json、图片生成/图生图/KREA2图生图直出｜图像编辑生成一键工作流_2090566026646876161.json、图片生成/图生图/Krea2图生图编辑｜图像处理一键生成直出_2092688991719084033.json、图片生成/图生图/Z IMAGE增加皮肤细节 图生图单张处理工具_2099594269966290945.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
+- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RH_Nano_Banana2_Image2Image`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/5 个有
-- `GetImageSize+` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `JoinStringMulti` —— 2/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `easy anythingIndexSwitch` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `CR Prompt Text` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `KSamplerAdvanced` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `图像缩放V2_孤海` —— 4/5 个有
+- `MultiTextConcatenate` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
 
 ## 典型参数
 
@@ -66,7 +69,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,4 +80,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

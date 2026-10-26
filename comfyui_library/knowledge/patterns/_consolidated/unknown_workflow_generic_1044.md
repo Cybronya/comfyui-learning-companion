@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1044
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.762
+common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json, 视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json, 视频生成/图生视频/图生视频_2069316266128658434.json]
+members: [图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json, 图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json, 图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1044
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json、视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json、视频生成/图生视频/图生视频_2069316266128658434.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json、图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json、图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RHSettingsNode` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `easy imageConcat` —— 2/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
 
 ## 典型参数
 

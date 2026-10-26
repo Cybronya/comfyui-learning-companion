@@ -3,56 +3,55 @@ name: text_to_image_lora_sampler_clip_366
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.895
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, Float, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.839
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json, 数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json, 数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json, 音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json, 音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json]
+members: [图片生成/反推提示词/爆款视频反推V2提示词分析视频脚本反推 提示词反推工具_2109392539609554946.json, 图片生成/反推提示词/短视频爆款拆解娱乐版｜反推提示词学套路｜热门视频结构一眼看穿_2102652141067390977.json, 图片生成/反推提示词/短视频爆款视频拆解娱乐版反推提示词处理工具_2101724950100008962.json, 图片生成/反推提示词/视频反推人像主体替换｜反推提示词高质量工作流_2095608214250409985.json, 图片生成/图生图/⭐️ 图片裂变3.0_2087140271216750593.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_366
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json、数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json、数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json、音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json、音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/爆款视频反推V2提示词分析视频脚本反推 提示词反推工具_2109392539609554946.json、图片生成/反推提示词/短视频爆款拆解娱乐版｜反推提示词学套路｜热门视频结构一眼看穿_2102652141067390977.json、图片生成/反推提示词/短视频爆款视频拆解娱乐版反推提示词处理工具_2101724950100008962.json、图片生成/反推提示词/视频反推人像主体替换｜反推提示词高质量工作流_2095608214250409985.json、图片生成/图生图/⭐️ 图片裂变3.0_2087140271216750593.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `EmptyLatentImage`
-- `Float`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_SamplingConfig`
+- `RH_LLMAPI_Pro_Node`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/5 个有
-- `SaveAudio` —— 3/5 个有
-- `PixaromaGroupSwitch` —— 2/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
-- `T8_IndexTTS25_DialogueGenerate` —— 2/5 个有
-- `T8_IndexTTS25_DialogueScript` —— 2/5 个有
-- `T8_IndexTTS25_RoleLibrary` —— 2/5 个有
-- `T8_IndexTTS25_VoiceProfile` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `LoadVideo` —— 4/5 个有
+- `easy saveText` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `CR Text Replace` —— 2/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `Any To String (mtb)` —— 1/5 个有
+- `AspectRatioSelect` —— 1/5 个有
+- `GoohaiUniversalSlider` —— 1/5 个有
+- `LayerSeparationSaveText` —— 1/5 个有
+- `RH_Captioner_Pro` —— 1/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
 
 ## 典型参数
 

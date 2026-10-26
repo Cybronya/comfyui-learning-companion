@@ -3,45 +3,38 @@ name: unknown_workflow_generic_240
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.849778
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.776333
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Qwen3 TTS最新多角色配音多角色音色设计_2017880998905651202.json, 音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json, 音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015603796998623233.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015609592415260673.json, 音频生成/音频生成/Qwen3 TTS多角色配音及克隆音色_2023064336373129217.json, 音频生成/音频生成/Qwen3 TTS最新多角色配音_2015427448355164161.json, 音频生成/音频生成/Qwen3-TTS支持8种角色+音色克隆_2015772753458106369.json]
+members: [图片生成/图生图/(0.08基准) 全能图片V1二次元年轻人的第一次NTR体验API工作流V2(支持本地)_1962809344620408834.json, 图片生成/图生图/(9宫格艺术版)Nano-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1985405828087881729.json, 图片生成/图生图/(基准0.04)多图编辑 全能图片V1图像编辑api工作流v3(支持本地)_1960787697747070977.json, 图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1980560528013742082.json, 图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑双图V1(贞贞工坊API)_1980560563623383041.json, 图片生成/图生图/(贞贞工坊API版) 全能图片V12图像编辑V1_1991641233128898562.json, 图片生成/图生图/两张图合并（图生图）全能图片V1_1976544641979949057.json, 图片生成/图生图/多图合并（根叔）_1977240810959839233.json, 图片生成/图生图/（基准0.04）单图编辑 全能图片V1图像编辑api工作流v2(支持本地)_1960785155709448194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_240
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Qwen3 TTS最新多角色配音多角色音色设计_2017880998905651202.json、音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json、音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015603796998623233.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/(0.08基准) 全能图片V1二次元年轻人的第一次NTR体验API工作流V2(支持本地)_1962809344620408834.json、图片生成/图生图/(9宫格艺术版)Nano-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1985405828087881729.json、图片生成/图生图/(基准0.04)多图编辑 全能图片V1图像编辑api工作流v3(支持本地)_1960787697747070977.json、图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1980560528013742082.json、图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑双图V1(贞贞工坊API)_1980560563623383041.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `CR Prompt Text`
+- `ImageConcanate`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 5/9 个有
-- `FB_Qwen3TTSVoiceDesign` —— 4/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `Text` —— 4/9 个有
-- `CR Text` —— 2/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
+- `JWImageResizeByLongerSide` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `Comfly_api_set` —— 7/9 个有
+- `Comfly_nano_banana` —— 6/9 个有
+- `PDIMAGE_LongerSize` —— 4/9 个有
+- `Comfly_nano_banana_edit` —— 3/9 个有
 
 ## 典型参数
 

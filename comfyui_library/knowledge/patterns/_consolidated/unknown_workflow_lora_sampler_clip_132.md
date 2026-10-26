@@ -2,93 +2,68 @@
 name: unknown_workflow_lora_sampler_clip_132
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.5415
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GrowMask, ImageBatch, ImageFromBatch, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, PrimitiveInt, Sam2Segmentation, SaveVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.56875
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, ComfySwitchNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SamplerCustom, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json, 视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json, 视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json, 视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json]
+members: [图片生成/图生图/Bernini R图生图标准版_2068956525464477698.json, 图片生成/图生图/Bernini_宝藏模型_参考生图_2066852458068004866.json, 图片生成/图生图/Bernini_宝藏模型_图片编辑_2066850763221069826.json, 图片生成/图生图/Bernini_宝藏模型_图片编辑_2073695721940934658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_132
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json、视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json、视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json、视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Bernini R图生图标准版_2068956525464477698.json、图片生成/图生图/Bernini_宝藏模型_参考生图_2066852458068004866.json、图片生成/图生图/Bernini_宝藏模型_图片编辑_2066850763221069826.json、图片生成/图生图/Bernini_宝藏模型_图片编辑_2073695721940934658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：54%
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BlockifyMask`
+- `BasicScheduler`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `DWPreprocessor`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GrowMask`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageScale`
-- `KSampler`
+- `ComfySwitchNode`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PixelPerfectResolution`
-- `PointsEditor`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
 - `PrimitiveInt`
-- `Sam2Segmentation`
-- `SaveVideo`
-- `TrimVideoLatent`
+- `PrimitiveStringMultiline`
+- `SamplerCustom`
+- `SaveImage`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `GetVideoComponents` —— 3/4 个有
-- `LoadVideo` —— 3/4 个有
-- `MaskPreview` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `ForLoopClose` —— 1/4 个有
-- `ForLoopOpen` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageResizeAdvanced` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `VHS_LoadVideoFFmpeg` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `GetImageSize` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ResizeImageMaskNode` —— 3/4 个有
+- `BatchImagesNode` —— 2/4 个有
+- `CustomCombo` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RegexExtract` —— 1/4 个有
+- `SimpleComparison+` —— 1/4 个有
+- `StringConcatenate` —— 1/4 个有
+- `StringReplace` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（9/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

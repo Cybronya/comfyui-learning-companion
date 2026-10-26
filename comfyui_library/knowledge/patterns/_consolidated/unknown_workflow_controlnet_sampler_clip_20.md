@@ -2,65 +2,78 @@
 name: unknown_workflow_controlnet_sampler_clip_20
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.725
-common_nodes: [ApplyFluxControlNet, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
-problems: []
+level: strong
+coverage: 0.897
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, Canny, ConditioningZeroOut, DepthAnythingV2Preprocessor, EmptySD3LatentImage, FloatConstant, GetImageSize, HEDPreprocessor, ImageScaleToMaxDimension, KSampler, LayerUtility: PurgeVRAM, ModelPatchLoader, ModelSamplingAuraFlow, OpenposePreprocessor, PreviewImage, Qwen3_VQA, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json, 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json, 图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json]
+members: [图片生成/图生图/Z-image-Turbo  双图编辑 身材优化  图生图 cn姿态控制 动作风格参考迁移_2028700458553970689.json, 图片生成/图生图/Zimage-图生图-4种方式-人物写真_2000832433547247618.json, 图片生成/图生图/zimage-双图编辑模式-图生图_2001583305646567426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json、图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json、图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Z-image-Turbo  双图编辑 身材优化  图生图 cn姿态控制 动作风格参考迁移_2028700458553970689.json、图片生成/图生图/Zimage-图生图-4种方式-人物写真_2000832433547247618.json、图片生成/图生图/zimage-双图编辑模式-图生图_2001583305646567426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ApplyFluxControlNet`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `LoadFluxControlNet`
-- `LoadImage`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `Canny`
+- `ConditioningZeroOut`
+- `DepthAnythingV2Preprocessor`
+- `EmptySD3LatentImage`
+- `FloatConstant`
+- `GetImageSize`
+- `HEDPreprocessor`
+- `ImageScaleToMaxDimension`
+- `KSampler`
+- `LayerUtility: PurgeVRAM`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
+- `OpenposePreprocessor`
 - `PreviewImage`
+- `Qwen3_VQA`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `XlabsSampler`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CannyEdgePreprocessor` —— 2/3 个有
-- `DepthAnythingV2Preprocessor` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DF_Text_Box` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `HEDPreprocessor` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
+- `ImageLoader` —— 2/3 个有
+- `TextConcatenate` —— 2/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 3 | 73% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 9 | 9 - 9 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | res_multistep | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
+- 采样步数 中位数 9，观测区间 9 - 9，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（12/3 个样本）：Steps较低可能导致细节不足

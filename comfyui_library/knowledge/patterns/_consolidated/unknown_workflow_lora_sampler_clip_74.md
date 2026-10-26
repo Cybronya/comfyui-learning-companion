@@ -1,72 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_clip_74
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.684
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, FluxDeGuidance, FluxKontextImageScale, ImageConcanate, KSamplerSelect, LayerUtility: ImageMaskScaleAs, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoaderV2, RandomNoise, ReferenceLatent, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, TextBox, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.97
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/13种提示词预设 _ Kontext Presets_1944364168247955457.json, 图片生成/图生图/Kontext Presets 官方预设提示｜提高生图_1947832362266673154.json, 图片生成/图生图/Kontext Presets 官方预设词模版 高效生图_1947214222984945665.json, 图片生成/图生图/Kontext Presets_12种提示词预设_1944911580158156801.json, 图片生成/图生图/Kontext Presets_12种提示词预设_1948205498127527937.json, 图片生成/图生图/单图编辑基础流 _ 双截棍+kontext （速度极快）_1939493492726931458.json]
+members: [视频生成/图生视频/ltx2.3多图参考生视频_2070392828198481921.json, 视频生成/图生视频/全能参考_2066143110995992578.json, 视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-落水漫剧电商服装分镜真人_2072573274269241345.json, 视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-追逐漫剧电商服装分镜真人_2072526155609104386.json, 视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json, 视频生成/图生视频/（高帧率）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063464652104884226.json, 视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_74
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/13种提示词预设 _ Kontext Presets_1944364168247955457.json、图片生成/图生图/Kontext Presets 官方预设提示｜提高生图_1947832362266673154.json、图片生成/图生图/Kontext Presets 官方预设词模版 高效生图_1947214222984945665.json、图片生成/图生图/Kontext Presets_12种提示词预设_1944911580158156801.json、图片生成/图生图/Kontext Presets_12种提示词预设_1948205498127527937.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/ltx2.3多图参考生视频_2070392828198481921.json、视频生成/图生视频/全能参考_2066143110995992578.json、视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-落水漫剧电商服装分镜真人_2072573274269241345.json、视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-追逐漫剧电商服装分镜真人_2072526155609104386.json、视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `FluxDeGuidance`
-- `FluxKontextImageScale`
-- `ImageConcanate`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
 - `KSamplerSelect`
-- `LayerUtility: ImageMaskScaleAs`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoaderV2`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceLatent`
-- `RepeatLatentBatch`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `TextBox`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 5/6 个有
-- `CR Text Replace` —— 5/6 个有
-- `GoogleTranslateTextNode` —— 5/6 个有
-- `LoadKontextPresets` —— 5/6 个有
-- `RH_Captioner` —— 5/6 个有
-- `BiRefNet_Hugo` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `Int` —— 4/6 个有
-- `LayerMask: RmBgUltra V2` —— 4/6 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 4/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `PrimitiveString` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `RH_LLMAPI_NODE` —— 1/6 个有
+- `LTXVAudioVAELoader` —— 6/7 个有
+- `CreateVideo` —— 4/7 个有
+- `SaveVideo` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `RH_LLMAPI_Pro_Node` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `VHS_VideoCombine` —— 3/7 个有
+- `PreviewImage` —— 2/7 个有
+- `RHHiddenNodes` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `CR Float To Integer` —— 1/7 个有
+- `LTXVAddGuideMulti` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `TT_img_enc` —— 1/7 个有
+- `VAELoaderKJ` —— 1/7 个有
+- `easy indexAnything` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 241 | 145 - 241 | 7 | 85% |
+| 高度 | 50 | 24 - 50 | 7 | 80% |
 
 ## 常见问题
 
@@ -74,4 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 241，观测区间 145 - 241，7 个样本，取值集中（一致性 85%）
+- 高度 中位数 50，观测区间 24 - 50，7 个样本，取值集中（一致性 80%）

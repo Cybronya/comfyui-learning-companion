@@ -3,29 +3,41 @@ name: unknown_workflow_generic_1511
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.832
+common_nodes: [CR SDXL Aspect Ratio, DF_Get_image_size, ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, PreviewImage, RH_Translator, RunningHub DreamO, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json, 图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json]
+members: [图片生成/图生图/字节DreamO-ID人像摄影_1926853143127072770.json, 图片生成/图生图/字节DreamO-风格迁移_1926871922779299842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1511
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json、图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO-ID人像摄影_1926853143127072770.json、图片生成/图生图/字节DreamO-风格迁移_1926871922779299842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG25SunburstTextToImage`
+- `CR SDXL Aspect Ratio`
+- `DF_Get_image_size`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Translator`
+- `RunningHub DreamO`
 - `SaveImage`
+- `ShowText|pysssss`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `TextInputBasic` —— 1/2 个有
 
 ## 典型参数
 

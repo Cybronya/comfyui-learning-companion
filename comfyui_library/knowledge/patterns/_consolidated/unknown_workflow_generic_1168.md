@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_1168
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadImage, SaveGLB, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
+frequency: 3
+level: moderate
+coverage: 0.8
+common_nodes: [IndexTTS2BaseNode, SaveAudioMP3, Text _O, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_tripo_p1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p1_mv_to_model.json]
+members: [音频生成/音频生成/API - Index TTS_2066918383110680578.json, 音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json, 音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1168
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo_p1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p1_mv_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/API - Index TTS_2066918383110680578.json、音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json、音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `SaveGLB`
-- `TripoConversionNode`
-- `TripoRetargetNode`
-- `TripoRigNode`
-- `TripoTextureNodeV2`
+全部 3 个 workflow 都包含：
+- `IndexTTS2BaseNode`
+- `SaveAudioMP3`
+- `Text _O`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `TripoP1ImageToModelNode` —— 1/2 个有
-- `TripoP1MultiviewToModelNode` —— 1/2 个有
+- `VHS_LoadAudioUpload` —— 2/3 个有
+- `LoadAudio` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

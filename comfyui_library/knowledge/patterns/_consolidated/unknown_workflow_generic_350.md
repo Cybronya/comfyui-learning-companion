@@ -3,33 +3,33 @@ name: unknown_workflow_generic_350
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.970714
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json, 图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json, 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json, 图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json, 图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json, 图片生成/文生图/（RH版）即梦4.5电商商品拍摄场图工作流(白底图生成场景图4K) V1.0_1998105602192736257.json]
+members: [图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json, 图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json, 图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json, 图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json, 图片生成/图生图/抠图_1961729963818991618.json, 图片生成/图生图/抠图（超牛）_2017208972964536322.json, 数字人/数字人/抠图（超牛）_2011716953840295938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_350
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json、图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json、图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json、图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json、图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json、图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json、图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json、图片生成/图生图/抠图_1961729963818991618.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CR Prompt Text`
 - `LoadImage`
 - `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 5/7 个有
-- `RH_Jimeng4_Image2Image` —— 2/7 个有
+- `MaskToImage` —— 4/7 个有
+- `Label (rgthree)` —— 1/7 个有
 
 ## 典型参数
 

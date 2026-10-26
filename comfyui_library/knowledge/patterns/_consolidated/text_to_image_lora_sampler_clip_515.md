@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_515
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.907667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.829
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageResizeKJv2, ImageScale, ImageToMask, Int, JjkText, KSampler, KSamplerSelect, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, ManualSigmas, Mask Fill Holes, MathExpression|pysssss, MaxNode, PreviewBridge, PreviewImage, QwenImage21Cache, SamplerCustom, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen image 2.1文生图稳定版｜中文语义理解到位｜长句描述也不崩_2102287119891918849.json, 图片生成/文生图/Qwen2.1 BF16官方文生图工作流｜海报制作字体设计一次到位_2102219743238385666.json, 图片生成/文生图/qwen image2.1文生图利器｜数字人海报制作一步搞定_2104529003418836993.json]
+members: [图片生成/图生图/Qwen Image 2.1 Turbo万物迁移｜一键风格迁移高效出图加速版_2113443918649057281.json, 图片生成/图生图/Qwen image 2.1 turbo万物迁移 风格迁移图像处理工具_2113690855524618241.json, 图片生成/图生图/细节恢复qwen image 2.1 图片清晰度增强方案_2109713939251687425.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_515
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1文生图稳定版｜中文语义理解到位｜长句描述也不崩_2102287119891918849.json、图片生成/文生图/Qwen2.1 BF16官方文生图工作流｜海报制作字体设计一次到位_2102219743238385666.json、图片生成/文生图/qwen image2.1文生图利器｜数字人海报制作一步搞定_2104529003418836993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 Turbo万物迁移｜一键风格迁移高效出图加速版_2113443918649057281.json、图片生成/图生图/Qwen image 2.1 turbo万物迁移 风格迁移图像处理工具_2113690855524618241.json、图片生成/图生图/细节恢复qwen image 2.1 图片清晰度增强方案_2109713939251687425.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
@@ -26,28 +26,47 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScale`
+- `ImageToMask`
+- `Int`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageBlendAdvance`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: RestoreCropBox`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
+- `ManualSigmas`
+- `Mask Fill Holes`
+- `MathExpression|pysssss`
+- `MaxNode`
+- `PreviewBridge`
+- `PreviewImage`
+- `QwenImage21Cache`
+- `SamplerCustom`
 - `SaveImage`
-- `SaveImageAdvanced`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AnySwitch` —— 1/3 个有
-- `Fast Bypasser (rgthree)` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `Seed Generator` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 2/3 个有
+- `Image Overlay` —— 1/3 个有
+- `KuwaharaBlur` —— 1/3 个有
+- `LayerFilter: GaussianBlur` —— 1/3 个有
 
 ## 典型参数
 

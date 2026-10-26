@@ -3,55 +3,70 @@ name: unknown_workflow_video_lora_sampler_452
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7898
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.7154
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, GetNode, INTConstant, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json, 视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json, 视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json, 视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json, 视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json]
+members: [图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json, 数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json, 视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json, 视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json, 视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_452
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json、视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json、视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json、视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json、视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json、数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json、视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json、视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json、视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CR Text`
+- `GetNode`
+- `INTConstant`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
+- `LoraLoaderModelOnly`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
+- `MiniMaxH3ReferenceToVideo`
+- `MultiTextConcatenate`
+- `MuyeTextEditOutput`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AudioConditioningT8` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `BasicScheduler` —— 2/5 个有
-- `KSamplerSelect` —— 2/5 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
-- `PT_H3ConcatAVLatent` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `RHLLMChatNode` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `easy int` —— 4/5 个有
+- `忽略多组孤海` —— 4/5 个有
+- `ComfyMathExpression` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageBatchMultiV2` —— 1/5 个有
+- `LTXVAudioVAEEncode` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
+- `SolidMask` —— 1/5 个有
+- `SoundFlow_GetLength` —— 1/5 个有
+- `llama_cpp_instruct_adv` —— 1/5 个有
+- `llama_cpp_model_loader` —— 1/5 个有
+- `llama_cpp_parameters` —— 1/5 个有
 
 ## 典型参数
 

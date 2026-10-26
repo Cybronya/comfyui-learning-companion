@@ -3,38 +3,34 @@ name: unknown_workflow_generic_571
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7542
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json, 视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json, 视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json, 视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json, 视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json, 图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json, 图片生成/图生图/xxx-image2_2053839405277827073.json, 图片生成/图生图/提取头部_2095356769915727873.json, 图片生成/图生图/道具图生成_2094712567414476802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_571
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json、视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json、视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json、视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json、视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json、图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json、图片生成/图生图/xxx-image2_2053839405277827073.json、图片生成/图生图/提取头部_2095356769915727873.json、图片生成/图生图/道具图生成_2094712567414476802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 3/5 个有
-- `JjkText` —— 2/5 个有
-- `PlaySound|pysssss` —— 2/5 个有
-- `Text` —— 1/5 个有
-- `easy saveText` —— 1/5 个有
+- `TextConcatenator` —— 3/5 个有
+- `ratio_selector` —— 1/5 个有
 
 ## 典型参数
 

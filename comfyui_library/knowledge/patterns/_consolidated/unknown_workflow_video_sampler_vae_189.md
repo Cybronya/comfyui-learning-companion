@@ -3,49 +3,51 @@ name: unknown_workflow_video_sampler_vae_189
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.895
-common_nodes: [INTConstant, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.976
+common_nodes: [GetImageSize+, ImagePadKJ, ImageResizeKJ, LoadWanVideoT5TextEncoder, MaskToImage, String Literal, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/稳定的图像编辑 fusionx_1934649298468708353.json, 视频生成/文生视频/FusionX Phantom多图迁移视频工作流_1937481435781447681.json]
+members: [视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json, 视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_189
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/稳定的图像编辑 fusionx_1934649298468708353.json、视频生成/文生视频/FusionX Phantom多图迁移视频工作流_1937481435781447681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json、视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `INTConstant`
+- `GetImageSize+`
 - `ImagePadKJ`
 - `ImageResizeKJ`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `MaskToImage`
+- `String Literal`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
 - `WanVideoEnhanceAVideo` —— 1/2 个有
 - `WanVideoExperimentalArgs` —— 1/2 个有
 - `WanVideoLoraSelect` —— 1/2 个有
-- `WanVideoMagCache` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
+- `WanVideoSetLoRAs` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

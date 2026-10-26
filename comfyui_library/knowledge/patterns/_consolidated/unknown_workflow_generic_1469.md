@@ -3,39 +3,43 @@ name: unknown_workflow_generic_1469
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.535
-common_nodes: [1hew_ImageGridSplit, EmptyImage, LoadImage, PreviewAny, PreviewImage, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.476
+common_nodes: [Any Switch (rgthree), CR Text Replace, CustomCombo, Fast Groups Bypasser (rgthree), Int2String, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveImage, Text Find and Replace, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json, 图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json]
+members: [图片生成/图生图/全能图片G2.0一键生成专业影视分镜与关键帧全流程提示词-双图版_低价_2104883463651414017.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-双图版_2104758765747789825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1469
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json、图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0一键生成专业影视分镜与关键帧全流程提示词-双图版_低价_2104883463651414017.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-双图版_2104758765747789825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `1hew_ImageGridSplit`
-- `EmptyImage`
+- `Any Switch (rgthree)`
+- `CR Text Replace`
+- `CustomCombo`
+- `Fast Groups Bypasser (rgthree)`
+- `Int2String`
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
+- `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RH_RhartImageG2OfficialImageToImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `Text Find and Replace`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

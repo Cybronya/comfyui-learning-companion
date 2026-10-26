@@ -3,41 +3,33 @@ name: unknown_workflow_generic_903
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.871667
-common_nodes: [CR Text, EG_ZZ_TMTX, GrowMaskWithBlur, Int, LoadImage, RMBG, SaveImage, SimpleMath+]
+coverage: 0.847
+common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图_1991274179580506113.json, 图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json, 图片生成/图生图/自动抠图透明背景_1992102190592618497.json]
+members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_903
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键抠图_1991274179580506113.json、图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json、图片生成/图生图/自动抠图透明背景_1992102190592618497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `EG_ZZ_TMTX`
-- `GrowMaskWithBlur`
-- `Int`
-- `LoadImage`
-- `RMBG`
-- `SaveImage`
-- `SimpleMath+`
+- `RecraftColorRGB`
+- `RecraftControls`
+- `SaveSVGNode`
 
 **可变部分**（部分 workflow 才有）：
-- `Sa2VANodeTpl` —— 2/3 个有
-- `easy imageCropFromMask` —— 2/3 个有
-- `FastCanvas` —— 1/3 个有
-- `FastCanvasTool` —— 1/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `RecraftV4TextToVectorNode` —— 2/3 个有
+- `RecraftTextToVectorNode` —— 1/3 个有
 
 ## 典型参数
 

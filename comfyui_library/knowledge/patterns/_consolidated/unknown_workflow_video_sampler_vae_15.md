@@ -1,72 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_15
 type: Unknown Workflow
-frequency: 15
+frequency: 17
 level: moderate
-coverage: 0.67
-common_nodes: [GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.938824
+common_nodes: [Fast Groups Bypasser (rgthree), ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], ShowText, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【丝滑】Wan2.1-VACE-14B首尾帧动画（超详细讲解）_1923066679113543681.json, 视频生成/图生视频/Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1951187088609882114.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE首尾帧视频加速版_1923973452506853378.json, 视频生成/图生视频/FusionX+LightX2V首尾帧特效版_1948561964491517953.json, 视频生成/图生视频/LightX2V人物变装视频首尾帧特效版V1_1945679647550132225.json, 视频生成/图生视频/LightX2V首尾帧特效版_1945794498888658946.json, 视频生成/图生视频/Q版人物跳舞_1934473934488162306.json, 视频生成/图生视频/Q版动漫小人跳舞工作流_1925467982229590018.json, 视频生成/图生视频/Q版动漫小人跳舞工作流_1932748571013697538.json, 视频生成/图生视频/VACE14B-视频多方位扩展编辑_1922732185021812737.json, 视频生成/图生视频/VACE14B-首尾帧视频生成_1922723230275223554.json, 视频生成/图生视频/wan2.1 万相 Q版卡通动漫角色跳舞视频动画_1936291028129206274.json, 视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1933765241819811842.json, 视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1934654524110118913.json, 视频生成/图生视频/首尾帧处理 - FusionX_VACE _ 放大与补帧优化_1937433374971600897.json]
+members: [视频生成/图生视频/FusionX-VACE大师级图生视频_1933536607737921538.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_1934652998628876289.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059216545439637505.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059998654034964482.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059999061939408898.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2081413753370931202.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2084126269507198978.json, 视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2084278181875507201.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-KJ_1933574608002138113.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-工作流_1933179380589834241.json, 视频生成/图生视频/Self-Forcing-VACE极速1280高质量图生视频-工作流_2050795023934992385.json, 视频生成/图生视频/【FusionX】LORA版本 + VACE图生视频_1935508820678332418.json, 视频生成/图生视频/图生视频 VACE FusionX_1990978944960765954.json, 视频生成/文生视频/图生视频_1950451311817965570.json, 视频生成/文生视频/图生视频_1950453907279536130.json, 视频生成/文生视频/图生视频_1950797780040220674.json, 视频生成/文生视频/高质量图生视频_1934251292992696321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_15
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/【丝滑】Wan2.1-VACE-14B首尾帧动画（超详细讲解）_1923066679113543681.json、视频生成/图生视频/Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1951187088609882114.json、视频生成/图生视频/CausVid仅需3-9步极速VACE首尾帧视频加速版_1923973452506853378.json、视频生成/图生视频/FusionX+LightX2V首尾帧特效版_1948561964491517953.json、视频生成/图生视频/LightX2V人物变装视频首尾帧特效版V1_1945679647550132225.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE大师级图生视频_1933536607737921538.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_1934652998628876289.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059216545439637505.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059998654034964482.json、视频生成/图生视频/LORA版本-FusionX+VACE图生视频_2059999061939408898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `GetImageSizeAndCount`
+全部 17 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `ShowText`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 14/15 个有
-- `EmptyImage` —— 14/15 个有
-- `ImageConcatMulti` —— 14/15 个有
-- `LoadImage` —— 14/15 个有
-- `WanVideoVACEStartToEndFrame` —— 14/15 个有
-- `GetNode` —— 13/15 个有
-- `SetNode` —— 13/15 个有
-- `WanVideoLoraSelect` —— 12/15 个有
-- `PreviewImage` —— 11/15 个有
-- `WanVideoExperimentalArgs` —— 11/15 个有
-- `WanVideoSLG` —— 11/15 个有
-- `WanVideoTeaCache` —— 11/15 个有
-- `MaskPreview+` —— 10/15 个有
-- `WanVideoTorchCompileSettings` —— 10/15 个有
-- `ImageResizeKJ` —— 9/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/15 个有
-- `Primitive integer [Crystools]` —— 6/15 个有
-- `Text Multiline` —— 6/15 个有
-- `ImageResizeKJv2` —— 5/15 个有
-- `VHS_LoadVideo` —— 5/15 个有
-- `ColorMatch` —— 4/15 个有
-- `Bookmark (rgthree)` —— 3/15 个有
-- `Label (rgthree)` —— 3/15 个有
-- `WanVideoEnhanceAVideo` —— 3/15 个有
-- `ImageResize+` —— 2/15 个有
-- `Anything Everywhere` —— 1/15 个有
-- `GetImageRangeFromBatch` —— 1/15 个有
-- `ImagePadKJ` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `VHS_VideoInfo` —— 1/15 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/15 个有
+- `WanVideoLoraSelect` —— 16/17 个有
+- `RH_LLMAPI_NODE` —— 14/17 个有
+- `WanVideoEnhanceAVideo` —— 13/17 个有
+- `WanVideoExperimentalArgs` —— 13/17 个有
+- `JWStringReplace` —— 11/17 个有
+- `Compare` —— 4/17 个有
+- `RH_Captioner` —— 4/17 个有
+- `Text Concatenate` —— 4/17 个有
+- `Text Multiline (Code Compatible)` —— 4/17 个有
+- `easy ifElse` —— 4/17 个有
+- `LoadLatent` —— 3/17 个有
+- `SaveLatent` —— 3/17 个有
+- `String Replace (mtb)` —— 3/17 个有
 
 ## 典型参数
 

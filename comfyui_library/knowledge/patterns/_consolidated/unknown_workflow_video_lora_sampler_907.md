@@ -3,58 +3,62 @@ name: unknown_workflow_video_lora_sampler_907
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.691
-common_nodes: [CR Text, CR Text Concatenate, GetImageSizeAndCount, GetNode, ImageResizeKJ, Int, LoadImage, LoadWanVideoT5TextEncoder, MaskBatch+, MaskFromBatch+, MaskPreview+, PreviewImage, RH_Captioner, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything]
+coverage: 0.627
+common_nodes: [Bjornulf_ShowStringText, CLIPLoader, CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int2Any_AS, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, SimpleMath+, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json, 视频生成/图生视频/首尾帧变身工作流_1935249679577698306.json]
+members: [视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json, 视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_907
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json、视频生成/图生视频/首尾帧变身工作流_1935249679577698306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json、视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
+- `CLIPLoader`
 - `CR Text`
-- `CR Text Concatenate`
-- `GetImageSizeAndCount`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `ImageResizeKJ`
-- `Int`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `Int2Any_AS`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskBatch+`
-- `MaskFromBatch+`
-- `MaskPreview+`
-- `PreviewImage`
-- `RH_Captioner`
+- `RH_LLMAPI_NODE`
 - `SetNode`
+- `ShowText`
+- `SimpleCondition+`
 - `SimpleMath+`
+- `String`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
 - `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `StringToInt` —— 1/2 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `LoadWanVideoClipTextEncoder` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
 
 ## 典型参数
 

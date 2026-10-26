@@ -3,59 +3,65 @@ name: unknown_workflow_video_sampler_vae_113
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.4654
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoVAELoader]
+coverage: 0.6978
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json, 视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json, 视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json, 视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json, 视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json]
+members: [视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json, 视频生成/图生视频/最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.json, 视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json, 视频生成/图生视频/贞贞换发型首尾帧特效版（T8自用）_1945694756720582658.json, 视频生成/图生视频/通义万相最新VACE超级首尾帧图生视频_1908024334332342274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_113
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json、视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json、视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json、视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json、视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json、视频生成/图生视频/最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.json、视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json、视频生成/图生视频/贞贞换发型首尾帧特效版（T8自用）_1945694756720582658.json、视频生成/图生视频/通义万相最新VACE超级首尾帧图生视频_1908024334332342274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `GetImageRangeFromBatch`
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `ImageConcatMulti`
 - `ImageResizeKJ`
 - `LoadImage`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoDiffusionForcingSampler`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
+- `WanVideoSampler`
 - `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 4/5 个有
-- `CLIPTextEncode` —— 4/5 个有
-- `WanVideoBlockSwap` —— 4/5 个有
-- `WanVideoTextEmbedBridge` —— 4/5 个有
-- `LoadWanVideoT5TextEncoder` —— 3/5 个有
-- `WanVideoTextEncode` —— 3/5 个有
+- `MaskPreview+` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `WanVideoVACEStartToEndFrame` —— 4/5 个有
 - `WanVideoTorchCompileSettings` —— 3/5 个有
-- `WanVideoVRAMManagement` —— 3/5 个有
-- `LoadImageFromUrl` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `WanVideoVACEModelSelect` —— 3/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `ImageBatchMulti` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `InspyrenetRembg` —— 1/5 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `Note _O` —— 1/5 个有
+- `WanVideoLoraSelect` —— 1/5 个有
+- `WanVideoVRAMManagement` —— 1/5 个有
+- `easy imageScaleDownToSize` —— 1/5 个有
 
 ## 典型参数
 

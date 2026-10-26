@@ -3,46 +3,34 @@ name: unknown_workflow_generic_436
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.742833
-common_nodes: [PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.86
+common_nodes: [LoadAudio, LoadImage, SaveVideo, Seedance_Config, Seedance_MultimodalVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/局部修改批量建筑工地流程（定制化流程）_2014730093721034753.json, 图片生成/图生图/懒人版一键批量抠图 ZIP批量上传图片，for循环处理多张图片工作流 V1.0_1980087975402967041.json, 图片生成/图生图/批量图片-工作流_2070423126621638658.json, 图片生成/图生图/批量改图-内部使用_2011643955431084033.json, 图片生成/图生图/批量自动抠图+ZIP上传+透明PNG图_2002652302882291714.json, 图片生成/图生图/最强批量图片编辑工作流_2047238302452948994.json]
+members: [图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json, 视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json, 视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json, 视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json, 视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json, 视频生成/文生视频/电商友好型-Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078403070370861058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_436
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/局部修改批量建筑工地流程（定制化流程）_2014730093721034753.json、图片生成/图生图/懒人版一键批量抠图 ZIP批量上传图片，for循环处理多张图片工作流 V1.0_1980087975402967041.json、图片生成/图生图/批量图片-工作流_2070423126621638658.json、图片生成/图生图/批量改图-内部使用_2011643955431084033.json、图片生成/图生图/批量自动抠图+ZIP上传+透明PNG图_2002652302882291714.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json、视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json、视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json、视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json、视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `SaveImage`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `LoadAudio`
+- `LoadImage`
+- `SaveVideo`
+- `Seedance_Config`
+- `Seedance_MultimodalVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 5/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
-- `easy batchAnything` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `LoadImage` —— 2/6 个有
-- `easy imageRemBg` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `MuyeLoadImage` —— 1/6 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

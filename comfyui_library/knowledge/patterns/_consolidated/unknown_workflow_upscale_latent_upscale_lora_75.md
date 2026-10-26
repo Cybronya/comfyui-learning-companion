@@ -1,85 +1,68 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_75
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6955
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RH_LLMAPI_NODE, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, Text Multiline, VAEDecodeTiled]
+frequency: 3
+level: moderate
+coverage: 0.986
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SaveVideo, SolAttnMiniMax, SplitSigmas, UNETLoader, VAELoader, easy getNode, easy imageChooser, easy setNode, kkVideoFirstLastFrames]
 problems: []
 missing: []
-members: [视频生成/图生视频/005.LTX2.3音视融合003.LTX2.3多图引导生视频_2035357780827185153.json, 视频生成/图生视频/LTX2.3多图关键帧生视频_2042630779330633730.json]
+members: [视频生成/图生视频/Minmax H3邪修-reminx+二采样放大8-26秋名山_2092281801766162433.json, 视频生成/图生视频/Minmax H3邪修-reminx+二采样放大_2091913349322854402.json, 视频生成/图生视频/Minmax H3邪修-reminx+二采样放大_2091939967688863745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_75
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/005.LTX2.3音视融合003.LTX2.3多图引导生视频_2035357780827185153.json、视频生成/图生视频/LTX2.3多图关键帧生视频_2042630779330633730.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minmax H3邪修-reminx+二采样放大8-26秋名山_2092281801766162433.json、视频生成/图生视频/Minmax H3邪修-reminx+二采样放大_2091913349322854402.json、视频生成/图生视频/Minmax H3邪修-reminx+二采样放大_2091939967688863745.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `INTConstant`
+- `CreateVideo`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RH_LLMAPI_NODE`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `Text Multiline`
-- `VAEDecodeTiled`
+- `SaveImage`
+- `SaveVideo`
+- `SolAttnMiniMax`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAELoader`
+- `easy getNode`
+- `easy imageChooser`
+- `easy setNode`
+- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LTXVScheduler` —— 1/2 个有
-- `MaxNode` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `Qwen3VL_Chat` —— 1/2 个有
-- `RIFEInterpolation` —— 1/2 个有
-- `ResizeImageMaskNode` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `SolidMask` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `easy float` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 169 | - | 2 | 57% |
-| 高度 | 24.5 | - | 2 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,6 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 169，样本不足，未给区间，2 个样本
-- 高度 中位数 24.5，样本不足，未给区间，2 个样本，取值集中（一致性 98%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

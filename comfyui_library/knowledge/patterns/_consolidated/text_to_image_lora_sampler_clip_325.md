@@ -3,34 +3,33 @@ name: text_to_image_lora_sampler_clip_325
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.894667
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.898
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax导演台全能工作流-图生视频工作流_2087382195718676481.json, 视频生成/图生视频/Minimax H3长视频导演台｜短剧漫剧分镜丝滑衔接_2098756338263355394.json, 视频生成/图生视频/宗门神曲多人替换演示导演台加速版全能工作流MiniMax_2087431272393166850.json, 视频生成/文生视频/MiniMax H3长视频导演台短剧漫剧人物一致分镜处理工具_2101400011450961921.json, 视频生成/文生视频/Minimax H3全能导演台｜短剧分镜丝滑衔接生成_2095094347023867905.json, 视频生成/文生视频/短剧分镜丝滑衔接｜Minimax H3全能导演台生成_2095053627458146306.json]
+members: [图片生成/图生图/Flux-高清放大_精修_图生图_2080931216911589378.json, 图片生成/图生图/Flux3 Klein图像编辑 局部重绘图生图处理生成工具_2112991480737521665.json, 图片生成/图生图/G IMAGE 2.5全能15图连出｜单张0.04平价出图_2098752661825875969.json, 图片生成/图生图/flux3 klein image edit图像编辑｜局部重绘改图不掉质感_2112861866576924674.json, 图片生成/图生图/flux3_klein_image_edit九图批量图像编辑｜图生图党福音_2111266093682745346.json, 图片生成/图生图/flux3_klein_image_edit图像编辑，角色一致性换装_2111568626292707329.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_325
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax导演台全能工作流-图生视频工作流_2087382195718676481.json、视频生成/图生视频/Minimax H3长视频导演台｜短剧漫剧分镜丝滑衔接_2098756338263355394.json、视频生成/图生视频/宗门神曲多人替换演示导演台加速版全能工作流MiniMax_2087431272393166850.json、视频生成/文生视频/MiniMax H3长视频导演台短剧漫剧人物一致分镜处理工具_2101400011450961921.json、视频生成/文生视频/Minimax H3全能导演台｜短剧分镜丝滑衔接生成_2095094347023867905.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux-高清放大_精修_图生图_2080931216911589378.json、图片生成/图生图/Flux3 Klein图像编辑 局部重绘图生图处理生成工具_2112991480737521665.json、图片生成/图生图/G IMAGE 2.5全能15图连出｜单张0.04平价出图_2098752661825875969.json、图片生成/图生图/flux3 klein image edit图像编辑｜局部重绘改图不掉质感_2112861866576924674.json、图片生成/图生图/flux3_klein_image_edit九图批量图像编辑｜图生图党福音_2111266093682745346.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -38,19 +37,17 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMiniMaxH3Director` —— 4/6 个有
-- `MiniMaxH3EasyModelAdapter` —— 4/6 个有
-- `MiniMaxH3TurboLoRA` —— 4/6 个有
-- `ModelAttentionBackend` —— 4/6 个有
-- `MiniMaxH3Director` —— 2/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `ModelPreviewOverrideKJ` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `VHS_VideoCombine` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `JjkText` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `ReferenceMultiLatent` —— 4/6 个有
+- `TextGenerate` —— 4/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `DualCLIPLoader` —— 1/6 个有
+- `Seedance_Config` —— 1/6 个有
+- `UltimateSDUpscale` —— 1/6 个有
+- `UpscaleModelLoader` —— 1/6 个有
+- `Zhenzhen_Image_G25_Lowprice` —— 1/6 个有
 
 ## 典型参数
 

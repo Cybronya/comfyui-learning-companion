@@ -3,37 +3,38 @@ name: unknown_workflow_generic_1324
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.695
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_nano_banana2_edit, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
+coverage: 0.746
+common_nodes: [LoadVideo, PreviewAny, RH_LLMAPI_Pro_Node, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json, 图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json]
+members: [图片生成/反推提示词/视频反推_2072878670691262465.json, 图片生成/反推提示词/视频反推带主角替换（qwen3.5）_2072890125205463041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1324
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json、图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/视频反推_2072878670691262465.json、图片生成/反推提示词/视频反推带主角替换（qwen3.5）_2072890125205463041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_nano_banana2_edit`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `SaveImage`
+- `LoadVideo`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `VHS_LoadVideo`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_nano_banana` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

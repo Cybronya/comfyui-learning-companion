@@ -1,87 +1,83 @@
 ---
 name: text_to_image_lora_sampler_clip_342
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8538
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DeepTranslatorTextNode, Display Any (rgthree), DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.961
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux_Kontext多图融合（超强版）_1939540814261362690.json, 图片生成/图生图/kontext_多图组合_调节位置_多图融合_加速_ps_1939882468222930946.json, 图片生成/图生图/kontext双人合照_10秒极速优化版_1938748449276022786.json, 图片生成/图生图/kontext双人合照换背景_3图融合_15秒极速版_1938831480829497345.json, 图片生成/图生图/最强kontext双图融合工作流_1938480334402945026.json]
+members: [图片生成/图生图/换装两种模式+身材调节！_2053010156153253889.json, 图片生成/图生图/服装穿搭：平铺视图生成_2021482132035608577.json, 图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_1990362142790569985.json, 图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_1995485264170639362.json, 图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_2034849943915077633.json, 图片生成/图生图/穿搭解析黑科技：加载带人物图像，一键轻松提出人物身上服装 ， ComfyUI服装平铺视图生成_2029088439232106498.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_342
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux_Kontext多图融合（超强版）_1939540814261362690.json、图片生成/图生图/kontext_多图组合_调节位置_多图融合_加速_ps_1939882468222930946.json、图片生成/图生图/kontext双人合照_10秒极速优化版_1938748449276022786.json、图片生成/图生图/kontext双人合照换背景_3图融合_15秒极速版_1938831480829497345.json、图片生成/图生图/最强kontext双图融合工作流_1938480334402945026.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/换装两种模式+身材调节！_2053010156153253889.json、图片生成/图生图/服装穿搭：平铺视图生成_2021482132035608577.json、图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_1990362142790569985.json、图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_1995485264170639362.json、图片生成/图生图/穿搭解析黑科技：ComfyUI服装平铺视图生成_2034849943915077633.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
-- `DeepTranslatorTextNode`
-- `Display Any (rgthree)`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
 - `FluxGuidance`
-- `ImageResizeKJv2`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoraLoader`
 - `ReferenceLatent`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_Expression_Eval` —— 4/5 个有
-- `FluxResolutionNode` —— 4/5 个有
-- `ImageConcanate` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `LayerStyle: ColorOverlay V2` —— 4/5 个有
-- `LayerUtility: CropByMask V2` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `NunchakuFluxDiTLoader` —— 4/5 个有
-- `easy imageRemBg` —— 4/5 个有
-- `ApplyFBCacheOnModel` —— 3/5 个有
-- `FlexLoraLoaderModelOnly` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Compositor3` —— 1/5 个有
-- `CompositorConfig3` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/5 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/5 个有
+- `CLIPLoader` —— 1/6 个有
+- `EmptyFlux2LatentImage` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `LazySwitch1way` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `TTResolutionSelector` —— 1/6 个有
+- `UNETLoader` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 760 | 760 - 1024 | 5 | 87% |
-| 高度 | 1152 | 1024 - 1152 | 5 | 95% |
-| 采样步数 | 20 | 12 - 20 | 5 | 83% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler_ancestral | - | 5 | 100% |
-| 调度器 | sgm_uniform | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 760，观测区间 760 - 1024，5 个样本，取值集中（一致性 87%）
-- 高度 中位数 1152，观测区间 1024 - 1152，5 个样本，取值集中（一致性 95%）
-- 采样步数 中位数 20，观测区间 12 - 20，5 个样本，取值集中（一致性 83%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，5 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，6 个样本，取值集中（一致性 100%）

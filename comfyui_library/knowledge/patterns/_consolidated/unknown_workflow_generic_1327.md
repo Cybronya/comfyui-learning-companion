@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1327
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.758
-common_nodes: [Fast Groups Bypasser (rgthree), JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.75
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_NODE, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0 单图双图多图编辑 一图生多角度 全能图片2 自由镜头  保持人物一致_2027980545220677634.json, 图片生成/文生图/新版全能图片2模型_2038810561290444801.json]
+members: [图片生成/反推提示词/首尾帧工作流_1994597749863686146.json, 图片生成/反推提示词/首尾帧工作流_2016031083736862722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1327
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2.0 单图双图多图编辑 一图生多角度 全能图片2 自由镜头  保持人物一致_2027980545220677634.json、图片生成/文生图/新版全能图片2模型_2038810561290444801.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/首尾帧工作流_1994597749863686146.json、图片生成/反推提示词/首尾帧工作流_2016031083736862722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `JjkText`
+- `CR Prompt Text`
+- `ImageConcanate`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
 
 ## 典型参数
 

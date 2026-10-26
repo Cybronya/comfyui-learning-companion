@@ -1,32 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_106
 type: Image To Image
-frequency: 5
-level: moderate
-coverage: 0.9728
-common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.94325
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ImageConcanate, KSampler, LoadImage, MathExpression|pysssss, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/自用美女_1963796521585299457.json, 图片生成/文生图/芝麻街特效_2073346446350442497.json, 图片生成/文生图/质感提升kontext工作流万物提升_1985614052636479490.json, 视频生成/图生视频/FLUX kontext 开源模型 工作流_1937024075837640705.json, 视频生成/图生视频/Flux 去除马赛克_1994289242960576513.json]
+members: [图片生成/图生图/(志佬开源)Qwen Edit像素偏移问题解决方案V1_1965046472079196162.json, 图片生成/图生图/Flux_Kontext一键生成三视图多视图_2007434930359373826.json, 图片生成/图生图/Kontext一键三视图_2013256248480763905.json, 图片生成/图生图/Kontext一键生成三视图_1948948289014702082.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_106
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/自用美女_1963796521585299457.json、图片生成/文生图/芝麻街特效_2073346446350442497.json、图片生成/文生图/质感提升kontext工作流万物提升_1985614052636479490.json、视频生成/图生视频/FLUX kontext 开源模型 工作流_1937024075837640705.json、视频生成/图生视频/Flux 去除马赛克_1994289242960576513.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/(志佬开源)Qwen Edit像素偏移问题解决方案V1_1965046472079196162.json、图片生成/图生图/Flux_Kontext一键生成三视图多视图_2007434930359373826.json、图片生成/图生图/Kontext一键三视图_2013256248480763905.json、图片生成/图生图/Kontext一键生成三视图_1948948289014702082.json）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `ConditioningZeroOut`
+- `ImageConcanate`
 - `KSampler`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -34,42 +37,44 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `FluxGuidance` —— 4/5 个有
-- `FluxKontextImageScale` —— 4/5 个有
-- `ReferenceLatent` —— 4/5 个有
-- `LoraLoader` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `EmptySD3LatentImage` —— 1/5 个有
-- `GetImageSizeAndCount` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `ImageStitch` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RepeatLatentBatch` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `DualCLIPLoader` —— 3/4 个有
+- `EmptyImage` —— 3/4 个有
+- `FluxGuidance` —— 3/4 个有
+- `FluxKontextImageScale` —— 3/4 个有
+- `GetImageSize+` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `CLIPLoader` —— 1/4 个有
+- `CR Simple Image Compare` —— 1/4 个有
+- `DF_Get_image_size` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageCrop` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `Text _O` —— 1/4 个有
+- `seed _O` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 5 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 5 | 0% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 0.8 - 1 | 5 | 92% |
-| LoRA 模型强度 | 0.9 | - | 2 | 89% |
-| LoRA 文本强度 | 0.9 | - | 2 | 89% |
+| 采样步数 | 20 | 8 - 20 | 4 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，5 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，5 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）
-- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- LoRA 文本强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 20，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

@@ -2,76 +2,69 @@
 name: unknown_workflow_controlnet_sampler_clip_8
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.872
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, EmptySD3LatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, SetUnionControlNetType, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.6835
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptySD3LatentImage, GetImageSize, GetNode, ImageScaleToMaxDimension, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingAuraFlow, Qwen3_VQA, QwenImageDiffsynthControlnet, RHHiddenNodes, SaveImage, SetNode, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image InstantX Controlnet Dwpose高难姿势控制V1_1961735398378639362.json, 图片生成/图生图/Qwen Image 姿势 Controlnet_1967676032595759105.json, 图片生成/文生图/Qwen Image 4步文生图_1977759228209364994.json, 图片生成/文生图/Qwen Image InstantX Controlnet(姿态，边缘，深度)_1960886656419205122.json]
+members: [图片生成/反推提示词/Z-image 完美Controlnet 洗图——自动提示词_2002907703670370305.json, 图片生成/图生图/Z-image Controlnet 自动提示词洗图_1996978241003012098.json, 图片生成/图生图/Z-image 完美Controlnet 洗图【2.0】自动提示词补足_1996958116019388417.json, 图片生成/文生图/Z-image 完美Controlnet 洗图【3.0】自动提示词补足_2002733726566105090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_8
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image InstantX Controlnet Dwpose高难姿势控制V1_1961735398378639362.json、图片生成/图生图/Qwen Image 姿势 Controlnet_1967676032595759105.json、图片生成/文生图/Qwen Image 4步文生图_1977759228209364994.json、图片生成/文生图/Qwen Image InstantX Controlnet(姿态，边缘，深度)_1960886656419205122.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Z-image 完美Controlnet 洗图——自动提示词_2002907703670370305.json、图片生成/图生图/Z-image Controlnet 自动提示词洗图_1996978241003012098.json、图片生成/图生图/Z-image 完美Controlnet 洗图【2.0】自动提示词补足_1996958116019388417.json、图片生成/文生图/Z-image 完美Controlnet 洗图【3.0】自动提示词补足_2002733726566105090.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGNorm`
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
 - `EmptySD3LatentImage`
+- `GetImageSize`
+- `GetNode`
+- `ImageScaleToMaxDimension`
 - `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
-- `PreviewImage`
+- `Qwen3_VQA`
+- `QwenImageDiffsynthControlnet`
+- `RHHiddenNodes`
 - `SaveImage`
-- `SetUnionControlNetType`
+- `SetNode`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `SeedVR2BlockSwap` —— 3/4 个有
-- `DepthAnything_V2` —— 2/4 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `OpenposePreprocessor` —— 2/4 个有
-- `SaveLatent` —— 2/4 个有
-- `SeedVR2GGUF` —— 2/4 个有
-- `AIO_Preprocessor` —— 1/4 个有
-- `Anything Everywhere3` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImpactSwitch` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `ModelPatchLoader` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Primitive integer [Crystools]` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1 | 0.75 - 1 | 4 | 88% |
-| 采样步数 | 8 | 4 - 20 | 4 | 40% |
+| 采样步数 | 8 | 8 - 9 | 4 | 95% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_2s | - | 4 | 75% |
-| 调度器 | beta57 | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | ddim_uniform | - | 4 | 100% |
+| 重绘幅度 | 0.725 | 0.45 - 1 | 4 | 62% |
 
 ## 常见问题
 
@@ -81,10 +74,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，观测区间 0.75 - 1，4 个样本，取值集中（一致性 88%）
-- 采样步数 中位数 8，观测区间 4 - 20，4 个样本，取值分散，一致性仅 40%
+- 采样步数 中位数 8，观测区间 8 - 9，4 个样本，取值集中（一致性 95%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，4 个样本，一致性 75%
-- 调度器 最常用 beta57，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 ddim_uniform，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.725，观测区间 0.45 - 1，4 个样本
 - 高发问题（5/4 个样本）：Steps较低可能导致细节不足

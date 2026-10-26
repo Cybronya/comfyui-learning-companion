@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_sampler_33
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8225
-common_nodes: [LoadImage, LoadPhysicEditPipe, PhysicEditSampler, PreviewImage, SaveImage]
+coverage: 0.7858
+common_nodes: [AudioCombine, HeartMuLa_Generate, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json, 图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json, 图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json, 图片生成/图生图/物理感知图像编辑_2030822500543766529.json]
+members: [音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json, 音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json, 音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json、图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json、图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json、图片生成/图生图/物理感知图像编辑_2030822500543766529.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json、音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json、音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `LoadPhysicEditPipe`
-- `PhysicEditSampler`
-- `PreviewImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `AudioCombine`
+- `HeartMuLa_Generate`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudioMP3`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
+- `Label (rgthree)` —— 2/5 个有
 
 ## 典型参数
 

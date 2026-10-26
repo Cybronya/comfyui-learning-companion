@@ -3,42 +3,36 @@ name: unknown_workflow_generic_783
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.86575
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.4575
+common_nodes: [ImpactSwitch, JjkText, RH_Jimeng_Image2Image, RH_Prompter, SaveImage, TextCombinerTwo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json, 音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json, 音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json]
+members: [图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json, 图片生成/文生图/即梦AI-文生图（手动提示词+扩写提示词+随机提示词）_1947167565694676994.json, 图片生成/文生图/漫剧   场景_1991475620517519362.json, 图片生成/文生图/漫剧   角色 设计_1987433422123675650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_783
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json、音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json、音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json、图片生成/文生图/即梦AI-文生图（手动提示词+扩写提示词+随机提示词）_1947167565694676994.json、图片生成/文生图/漫剧   场景_1991475620517519362.json、图片生成/文生图/漫剧   角色 设计_1987433422123675650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `ImpactSwitch`
+- `JjkText`
+- `RH_Jimeng_Image2Image`
+- `RH_Prompter`
+- `SaveImage`
+- `TextCombinerTwo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/4 个有
-- `AudioCrop` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `PreviewAny` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `HeartMuLa_Transcribe` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
+- `FluxResolutionNode` —— 3/4 个有
 
 ## 典型参数
 

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [NanFengH3MultiReferenceGeneratorV10, VHS_VideoCombine]
+common_nodes: [GetVideoComponents, LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json, 视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json, 视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json]
+members: [数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json, 音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json, 音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_62
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json、视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json、视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json、音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json、音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,8 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `NanFengH3MultiReferenceGeneratorV10`
+- `GetVideoComponents`
+- `LoadVideo`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `HunyuanVideoFoley` —— 2/3 个有
+- `Textbox` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,85 +1,83 @@
 ---
 name: unknown_workflow_lora_sampler_unet_95
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.812143
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.810375
+common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, EmptyLatentImage, FluxKontextImageScale, ImpactSwitch, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageConcat]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Eidt-2511-遮罩定位精准重绘工作流_2005991188308119553.json, 图片生成/图生图/Qwen-Eidt-2511-遮罩精细化改图零偏移工作流_2003746502742843393.json, 图片生成/图生图/Qwen-Eidt-2511遮罩精准重绘_2012062229088182274.json, 图片生成/图生图/Qwen2511 局部改图_2016674287960199170.json, 图片生成/图生图/QwenEdit2511单角色提升一致性Lora_2010970305585483777.json, 图片生成/图生图/WH-AI-Studio-Qwen-Eidt-2511局部重绘_2015620805454991362.json, 图片生成/文生图/Qwen-Eidt-2511零偏移遮罩双图局部重绘_2009941483956215810.json]
+members: [图片生成/图生图/WH-AI-Studio电商换脸工作流(一致性完美版)_2017977236460150785.json, 图片生成/图生图/千问Edit2511单图编辑版_2004219532371783682.json, 图片生成/图生图/千问Edit2511多图编辑版_2004223606701916162.json, 图片生成/图生图/千问Edit2511多图编辑版_api_2031567329150115842.json, 图片生成/图生图/单图编辑+一致性超强（Qwen Edit2511）_2003851550328012802.json, 图片生成/图生图/多图编辑+一致性超强（Qwen Edit2511）_2003829045265637377.json, 图片生成/图生图/🪐千问新王炸！Edit2511来了！更好的一致性！单图编辑版_2003643255369703426.json, 图片生成/图生图/🪐千问新王炸！Edit2511来了！更好的一致性！多图编辑版_2003653367052288001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_95
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-Eidt-2511-遮罩定位精准重绘工作流_2005991188308119553.json、图片生成/图生图/Qwen-Eidt-2511-遮罩精细化改图零偏移工作流_2003746502742843393.json、图片生成/图生图/Qwen-Eidt-2511遮罩精准重绘_2012062229088182274.json、图片生成/图生图/Qwen2511 局部改图_2016674287960199170.json、图片生成/图生图/QwenEdit2511单角色提升一致性Lora_2010970305585483777.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/WH-AI-Studio电商换脸工作流(一致性完美版)_2017977236460150785.json、图片生成/图生图/千问Edit2511单图编辑版_2004219532371783682.json、图片生成/图生图/千问Edit2511多图编辑版_2004223606701916162.json、图片生成/图生图/千问Edit2511多图编辑版_api_2031567329150115842.json、图片生成/图生图/单图编辑+一致性超强（Qwen Edit2511）_2003851550328012802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
+- **样本数**：8
+- **可信度**：中等可信
 - **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Text`
 - `ConditioningZeroOut`
-- `CropWithPadInfo`
+- `EmptyLatentImage`
+- `FluxKontextImageScale`
+- `ImpactSwitch`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `PreviewImage`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `InpaintCrop` —— 6/7 个有
-- `InpaintStitch` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `SaveImage` —— 6/7 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/7 个有
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `ImageAndMaskPreview` —— 5/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
-- `LayerUtility: ImageReel` —— 3/7 个有
-- `LayerUtility: ImageReelComposit` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `ImageConcanate` —— 2/7 个有
-- `Anything Everywhere3` —— 1/7 个有
-- `CR Text Concatenate` —— 1/7 个有
-- `GetImage` —— 1/7 个有
-- `LayerMask: MaskPreview` —— 1/7 个有
-- `LayerUtility: SaveImagePlus` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `QwenEditAdaptiveLongestEdge` —— 1/7 个有
-- `Text Multiline` —— 1/7 个有
+- `FluxResolutionNode` —— 7/8 个有
+- `RH_LLMAPI_NODE` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `Int` —— 2/8 个有
+- `Note Plus (mtb)` —— 2/8 个有
+- `PlaySound|pysssss` —— 2/8 个有
+- `Crop Face` —— 1/8 个有
+- `GetImage` —— 1/8 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/8 个有
+- `Load RetinaFace` —— 1/8 个有
+- `MaskColorize` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 7 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 512 | 512 - 1080 | 8 | 68% |
+| 高度 | 512 | 512 - 1920 | 8 | 32% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 8 | 71% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（9/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 1080，8 个样本
+- 高度 中位数 512，观测区间 512 - 1920，8 个样本，取值分散，一致性仅 32%
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，8 个样本
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

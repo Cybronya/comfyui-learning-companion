@@ -1,81 +1,88 @@
 ---
 name: image_to_image_sampler_unet_vae_5
 type: Image To Image
-frequency: 17
-level: weak
-coverage: 0.900882
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 18
+level: moderate
+coverage: 0.927778
+common_nodes: [AIO_Preprocessor, BlockifyMask, CFGNorm, CLIPLoader, ConditioningZeroOut, DrawMaskOnImage, ImageResizeKJ, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/QIANWEN图像编辑_2088896217135800321.json, 图片生成/图生图/QWEN-最新编辑模型_2003645392963158018.json, 图片生成/图生图/QWEN2511+重打光(Relight)_2018262241644126210.json, 图片生成/图生图/QWEN2511+重打光l(Relight)ora强化版_2014561496826646530.json, 图片生成/图生图/QWEN角度随心换升级版本_2010187591118757890.json, 图片生成/图生图/QWEN角度随心换升级版本_2027345865211387906.json, 图片生成/图生图/Qwen 2511 edit 多视角镜头拍摄 智能多角度生成 qwen image edit_2010692605092306946.json, 图片生成/图生图/Qwen 2511 多角度 + Z-Image-Turbo_2010904385815056386.json, 图片生成/图生图/Qwen 2511 镜头控制插件_2009786830929010690.json, "图片生成/图生图/Qwen Edit 2511+镜头多角度控制,一张图片变换多个角度_2052204567022063617.json", "图片生成/图生图/Qwen Edit 2511+镜头多角度控制,一张图片变换多个角度_2052916903613607937.json", 图片生成/图生图/Qwen Edit 2511： Multiangle Camera 镜头选择（直观简单好用）_2009796133521989633.json, 图片生成/图生图/Qwen Image Edit 2511+镜头选择 不同视角+镜头选择（柯基大佬版）_2012169391844102146.json, 图片生成/图生图/Qwen Image Edit 2511+镜头选择 不同视角_2011062220834213890.json, 图片生成/图生图/Qwen multiple angle2511+多镜头选择_2009799321264328706.json, 图片生成/图生图/Qwen-Edit2511人物多角度生成_2009909041430011905.json, 图片生成/文生图/Z-Image-Turbo 多角度学习_2039927595122298882.json]
+members: [图片生成/图生图/Qwen Edit 人物迁移 替换场景与姿势 替换人物_1991033301660049410.json, 图片生成/图生图/Qwen Edit 人物迁移 替换场景与姿势 替换人物_1998599231973810177.json, 图片生成/图生图/Qwen-Edit一键角色替换(场景迁移，姿势保持)_1988939767981150210.json, 图片生成/图生图/Qwen_edit + roleScene Blend角色场景融合_1991710780020174849.json, 图片生成/图生图/Qwen人物迁移（换场景与姿势）_2020760675198443521.json, 图片生成/图生图/Qwen人物迁移（换场景与姿势）_2084548675845574657.json, 图片生成/图生图/人物场景动作变换_2001919928741556226.json, 图片生成/图生图/人物场景迁移保持和参考姿势一致性_1988288063292006401.json, 图片生成/图生图/人物场景迁移保持和参考姿势一致性_1989226111236190209.json, 图片生成/图生图/人物场景迁移保持和参考姿势一致性_2002761035213860866.json, 图片生成/图生图/人物迁移换场景与姿势_1992928354124890113.json, 图片生成/图生图/人物迁移换背景与姿势_1991141914875637761.json, 图片生成/图生图/人物迁移（换场景与姿势）-Qwen_2020677536333697026.json, 图片生成/图生图/人物迁移（换场景与姿势）-Qwen_edit_1989169746773938177.json, 图片生成/图生图/图片换脸人物迁移，换场景与姿势_1998269364778467330.json, 图片生成/图生图/图生图-人物迁移（换场景与姿势）-Qwen_edit_2064152772584497154.json, 图片生成/图生图/改变场景_1998274546052554753.json, 图片生成/图生图/用这个，想去哪儿就去哪儿，随心所欲！人物迁移（换场景与姿势）-Qwen_edit_2021108652312109057.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/QIANWEN图像编辑_2088896217135800321.json、图片生成/图生图/QWEN-最新编辑模型_2003645392963158018.json、图片生成/图生图/QWEN2511+重打光(Relight)_2018262241644126210.json、图片生成/图生图/QWEN2511+重打光l(Relight)ora强化版_2014561496826646530.json、图片生成/图生图/QWEN角度随心换升级版本_2010187591118757890.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 人物迁移 替换场景与姿势 替换人物_1991033301660049410.json、图片生成/图生图/Qwen Edit 人物迁移 替换场景与姿势 替换人物_1998599231973810177.json、图片生成/图生图/Qwen-Edit一键角色替换(场景迁移，姿势保持)_1988939767981150210.json、图片生成/图生图/Qwen_edit + roleScene Blend角色场景融合_1991710780020174849.json、图片生成/图生图/Qwen人物迁移（换场景与姿势）_2020760675198443521.json…）
 
 - **类型**：Image To Image
-- **样本数**：17
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：18
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `BlockifyMask`
 - `CFGNorm`
 - `CLIPLoader`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `ImageResizeKJ`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 16/17 个有
-- `LoraLoaderModelOnly` —— 16/17 个有
-- `EmptySD3LatentImage` —— 13/17 个有
-- `QwenMultiangleCameraNode` —— 13/17 个有
-- `easy showAnything` —— 13/17 个有
-- `ImageScaleToTotalPixels` —— 12/17 个有
-- `easy promptList` —— 11/17 个有
-- `PreviewImage` —— 3/17 个有
-- `CLIPTextEncode` —— 2/17 个有
-- `ConditioningZeroOut` —— 2/17 个有
-- `LayerUtility: PurgeVRAM` —— 2/17 个有
-- `PreviewAny` —— 2/17 个有
-- `QwenMultiangleLightningNode` —— 2/17 个有
-- `EmptyLatentImage` —— 1/17 个有
-- `FluxKontextImageScale` —— 1/17 个有
-- `ShowText` —— 1/17 个有
+- `ImageConcanate` —— 17/18 个有
+- `ImageScaleBy` —— 17/18 个有
+- `ImageUpscaleWithModel` —— 17/18 个有
+- `PathchSageAttentionKJ` —— 17/18 个有
+- `TextEncodeQwenImageEditPlus` —— 17/18 个有
+- `UpscaleModelLoader` —— 17/18 个有
+- `FlexLoraLoaderModelOnly` —— 13/18 个有
+- `LoraLoaderModelOnly` —— 5/18 个有
+- `Image Comparer (rgthree)` —— 4/18 个有
+- `Anything Everywhere3` —— 1/18 个有
+- `CropWithPadInfo` —— 1/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `PrimitiveStringMultiline` —— 1/18 个有
+- `QwenEditConfigPreparer` —— 1/18 个有
+- `QwenEditOutputExtractor` —— 1/18 个有
+- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 40 | 17 | 1% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 17 | 58% |
-| 采样算法 | euler | - | 17 | 88% |
-| 调度器 | simple | - | 17 | 88% |
-| 重绘幅度 | 1 | 0.4 - 1 | 17 | 79% |
-| 宽度 | 1080 | - | 1 | 100% |
-| 高度 | 1920 | - | 1 | 100% |
+| 采样步数 | 8 | 8 - 8 | 18 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | beta57 | - | 18 | 100% |
+| 重绘幅度 | 0.1 | 0.1 - 1 | 18 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 35/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 40，17 个样本，取值分散，一致性仅 1%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，17 个样本
-- 采样算法 最常用 euler，17 个样本，一致性 88%
-- 调度器 最常用 simple，17 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，17 个样本
-- 高发问题（18/17 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 beta57，18 个样本，一致性 100%
+- 重绘幅度 中位数 0.1，观测区间 0.1 - 1，18 个样本，取值分散，一致性仅 0%
+- 高发问题（35/18 个样本）：Steps较低可能导致细节不足

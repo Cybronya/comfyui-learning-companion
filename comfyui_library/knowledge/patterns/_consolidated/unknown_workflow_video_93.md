@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+common_nodes: [ColorCorrectOfUtils, ImageCropV2, PrimitiveBoundingBox, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack图生视频_1913064575934132225.json, 视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json]
+members: [图片生成/图生图/视频切割转GIF自动切图比例自定义MP4转GIF_2072663952676442114.json, 视频生成/图生视频/视频切割转GIF自动切图比例自定义MP4转视频MP4_2072514567850258434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_93
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频_1913064575934132225.json、视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/视频切割转GIF自动切图比例自定义MP4转GIF_2072663952676442114.json、视频生成/图生视频/视频切割转GIF自动切图比例自定义MP4转视频MP4_2072514567850258434.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,16 +23,11 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `RunningHub_FramePack`
+- `ColorCorrectOfUtils`
+- `ImageCropV2`
+- `PrimitiveBoundingBox`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

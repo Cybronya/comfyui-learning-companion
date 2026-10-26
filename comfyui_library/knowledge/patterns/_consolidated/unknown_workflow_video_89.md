@@ -3,39 +3,40 @@ name: unknown_workflow_video_89
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.829
-common_nodes: [CR Text, LoadImage, Primitive integer [Crystools], RHHiddenNodes, RunningHub_FramePack_F1, VHS_VideoCombine, easy showAnything]
+coverage: 0.667
+common_nodes: [CM_IntToBool, Float, FloatProcess, Int, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadFloatModels, LoadImage, MathExpression|pysssss, Switch any [Crystools], VHS_LoadVideo, VHS_VideoCombine, easy ab]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack-F1图生视频(帧率+时长+提示词自动优化)_1932965781720236033.json, 视频生成/图生视频/FramePack-F1图生视频(帧率优化+时长优化+提示词优化)_1920125027860287490.json]
+members: [图片生成/图生图/Float 数字人_1923702019952209921.json, 视频生成/图生视频/数字人 _ Float （最新开源数字人模型）_1920808160179716098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_89
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1图生视频(帧率+时长+提示词自动优化)_1932965781720236033.json、视频生成/图生视频/FramePack-F1图生视频(帧率优化+时长优化+提示词优化)_1920125027860287490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Float 数字人_1923702019952209921.json、视频生成/图生视频/数字人 _ Float （最新开源数字人模型）_1920808160179716098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `CM_IntToBool`
+- `Float`
+- `FloatProcess`
+- `Int`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadFloatModels`
 - `LoadImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RunningHub_FramePack_F1`
+- `MathExpression|pysssss`
+- `Switch any [Crystools]`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `easy ab`
 
 ## 典型参数
 

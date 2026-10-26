@@ -1,88 +1,94 @@
 ---
 name: unknown_workflow_video_lora_sampler_596
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.513333
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, FloatConstant, GetImageSize, GetNode, INTConstant, ImageScaleToMaxDimension, InvertMask, JWStringMultiline, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, SetNode, SomethingToString, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy seed]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.895
+common_nodes: [BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, CropByBBoxes, ImageBatch, ImageFromBatch, ImageResizeKJv2, KSampler, LayerUtility: If , LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveBoolean, PrimitiveString, RTDETR_detect, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json, 视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json, 视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json]
+members: [视频生成/图生视频/动作迁移（卡通形象）_wan2.2_2063784977329909762.json, 视频生成/图生视频/动作迁移（插帧流畅版）_wan2.2_2065044173270634498.json, 视频生成/图生视频/图生视频  动作迁移_2062727464236965889.json, 视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_596
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json、视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json、视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动作迁移（卡通形象）_wan2.2_2063784977329909762.json、视频生成/图生视频/动作迁移（插帧流畅版）_wan2.2_2065044173270634498.json、视频生成/图生视频/图生视频  动作迁移_2062727464236965889.json、视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BodyRatioMapperProportionTransfer`
+- `BodyRatioMapperSDPoseRender`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageSize`
-- `GetNode`
-- `INTConstant`
-- `ImageScaleToMaxDimension`
-- `InvertMask`
-- `JWStringMultiline`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CropByBBoxes`
+- `ImageBatch`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LayerUtility: If `
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
-- `PreviewImage`
-- `SetNode`
-- `SomethingToString`
-- `TextImageEncodeQwenVL`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveBoolean`
+- `PrimitiveString`
+- `RTDETR_detect`
+- `SAM3_Detect`
+- `SDPoseDrawKeypoints`
+- `SDPoseKeypointExtractor`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageResizeToClosest`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `easy int`
-- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Create Grid Image from Batch` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `ImpactMinMax` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `string_util_StrConcat` —— 2/3 个有
-- `ImageFromBatch+` —— 1/3 个有
+- `CLIPLoaderGGUF` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `CLIPLoader` —— 1/4 个有
+- `FrameInterpolate` —— 1/4 个有
+- `FrameInterpolationModelLoader` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 5 | 4 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 5，4 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

@@ -1,92 +1,80 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_9
 type: Unknown Workflow
-frequency: 22
-level: strong
-coverage: 0.598955
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VHS_VideoCombine, easy int, easy showAnything]
+frequency: 21
+level: moderate
+coverage: 0.439286
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy float]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-10Eros单图_2057366686122209281.json, 视频生成/图生视频/LTX2.3-PromptRelay-首尾帧-多镜头分镜控制+逻辑控制+长视频+无字幕版_2052407231588646913.json, 视频生成/图生视频/LTX2.3-图生视频工作流-官方版_2041533297020375042.json, 视频生成/图生视频/LTX2.3-图生视频工作流-官方版_2062063025334603778.json, 视频生成/图生视频/LTX2.3-图生视频工作流_2067574333664489473.json, 视频生成/图生视频/LTX2.3-多帧图生视频工作流_2067832932571635714.json, 视频生成/图生视频/LTX2.3-多镜头分镜+逻辑+长视频+无字幕版图生视频_2066056896305516545.json, 视频生成/图生视频/LTX2.3-多镜头分镜控制+逻辑控制+长视频+无字幕版图生视频PromptRelay_2051939042543063041.json, 视频生成/图生视频/LTX2.3-多镜头分镜控制+逻辑控制+长视频+无字幕版图生视频PromptRelay_2052408126128832514.json, 视频生成/图生视频/LTX2.3-多镜头分镜控制+逻辑控制+长视频+无字幕版首尾帧+PromptRelay_2052004144654893058.json, 视频生成/图生视频/LTX2.3-无字幕版首尾帧-官方工作流-V2_2051899668497477634.json, 视频生成/图生视频/LTX2.3-首中尾三帧生成视频工作流-官方版_2042449515587833857.json, 视频生成/图生视频/LTX2.3-首中尾多帧生成视频工作流-官方版_2041478864202895362.json, 视频生成/图生视频/LTX2.3-首中尾多帧生成视频工作流-官方版_2062080764627472386.json, 视频生成/图生视频/LTX2.3-首中尾帧生成视频工作流-官方版_2051539757435506689.json, 视频生成/图生视频/LTX2.3-首尾帧图生视频工作流_2067818323794022402.json, 视频生成/图生视频/LTX2.3-首尾帧生成视频工作流-KJ版-V2_2051562392156426242.json, 视频生成/图生视频/LTX2.3-首尾帧生成视频工作流-官方版_2042433612146024450.json, 视频生成/图生视频/ltx图生视频工作流-官方-自用_2057367378488553473.json, 视频生成/图生视频/【Supermate】LTX2.3-10Eros单图+分镜控制+无字幕版+PromptRelay_2052409270473371649.json, 视频生成/图生视频/【Supermate】LTX2.3-10Eros首尾帧+分镜控制+无字幕版+PromptRelay_2052381787497738241.json, 视频生成/文生视频/LTX2.3-首中尾多帧生成视频工作流-官方版_2050806435688267777.json]
+members: [视频生成/图生视频/H3二采工作流_2107807033440428033.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2113553458224783362.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json, 视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json, 视频生成/图生视频/H3最强二采【唐僧彩蛋】_2107659032340287490.json, 视频生成/图生视频/H3最强二采【飓风京剧】_2107672314556010498.json, 视频生成/图生视频/H3最强二采，吊打SelfLift【虚空折叠流】_2107371063817621505.json, 视频生成/图生视频/H3最强二采，音画俱佳_2107833447233441793.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2100506302412840961.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2101855618586988546.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2102665425023750145.json, 视频生成/图生视频/H3最强动作工作流-真武大弟篇【金鱼佬框架--吃猪侠定制版】_2098093642488565761.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2101855011373404161.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2102664968234692610.json, 视频生成/图生视频/H3超强工作流_2107296344921698306.json, 视频生成/图生视频/MMH3全能参考生视频自用调优版（附带视频续接教程）_2096409310929702913.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108223200814518274.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108234638559899650.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2094419718181572610.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2111461486425100290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_9
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-10Eros单图_2057366686122209281.json、视频生成/图生视频/LTX2.3-PromptRelay-首尾帧-多镜头分镜控制+逻辑控制+长视频+无字幕版_2052407231588646913.json、视频生成/图生视频/LTX2.3-图生视频工作流-官方版_2041533297020375042.json、视频生成/图生视频/LTX2.3-图生视频工作流-官方版_2062063025334603778.json、视频生成/图生视频/LTX2.3-图生视频工作流_2067574333664489473.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/H3二采工作流_2107807033440428033.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2113553458224783362.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json、视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
-- **可信度**：强结论
-- **平均知识覆盖**：60%
+- **样本数**：21
+- **可信度**：中等可信
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+全部 21 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SimpleMath+`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy showAnything`
+- `easy float`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 21/22 个有
-- `VAEDecodeTiled` —— 21/22 个有
-- `LTXVPreprocess` —— 19/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 19/22 个有
-- `LTXVAddGuide` —— 16/22 个有
-- `GetNode` —— 14/22 个有
-- `ImpactFloat` —— 14/22 个有
-- `ImpactInt` —— 14/22 个有
-- `LTX2_NAG` —— 14/22 个有
-- `LTXVScheduler` —— 14/22 个有
-- `SetNode` —— 14/22 个有
-- `VAEDecode` —— 12/22 个有
-- `ImageResizeKJ` —— 11/22 个有
-- `PromptRelayEncodeTimeline` —— 7/22 个有
-- `LTXVImgToVideoInplaceKJ` —— 5/22 个有
-- `Int` —— 4/22 个有
-- `ImageResizeKJv2` —— 3/22 个有
-- `easy float` —— 3/22 个有
-- `Bool` —— 2/22 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/22 个有
-- `ImageResize+` —— 2/22 个有
-- `TTResolutionSelector` —— 2/22 个有
-- `VAELoaderKJ` —— 2/22 个有
-- `DualCLIPLoader` —— 1/22 个有
-- `LTX2SamplingPreviewOverride` —— 1/22 个有
-- `PrimitiveStringMultiline` —— 1/22 个有
-- `SDVN Load Image Url` —— 1/22 个有
-- `UNETLoader` —— 1/22 个有
+- `BasicGuider` —— 20/21 个有
+- `GetNode` —— 20/21 个有
+- `SetNode` —— 20/21 个有
+- `Text` —— 20/21 个有
+- `VHS_LoadVideo` —— 20/21 个有
+- `忽略多组孤海` —— 19/21 个有
+- `EmptyImage` —— 3/21 个有
+- `PreviewImage` —— 2/21 个有
+- `孤海注释` —— 2/21 个有
+- `Anything Everywhere` —— 1/21 个有
+- `CFGGuider` —— 1/21 个有
+- `CR Text Concatenate` —— 1/21 个有
+- `ConditioningZeroOut` —— 1/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/21 个有
+- `GH_AudioVideoMerger` —— 1/21 个有
+- `ImageScale` —— 1/21 个有
+- `ImageScaleToTotalPixels` —— 1/21 个有
+- `JjkText` —— 1/21 个有
+- `ModelPreviewOverrideKJ` —— 1/21 个有
+- `SeedVR2LoadDiTModel` —— 1/21 个有
+- `SeedVR2LoadVAEModel` —— 1/21 个有
+- `SeedVR2VideoUpscaler` —— 1/21 个有
+- `easy cleanGpuUsed` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 22 | 100% |
-| 高度 | 25 | 24 - 30 | 22 | 94% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,5 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，22 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 30，22 个样本，取值集中（一致性 94%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

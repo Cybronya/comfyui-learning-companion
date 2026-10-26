@@ -3,39 +3,52 @@ name: unknown_workflow_video_sampler_vae_173
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, HyVideoDecode, HyVideoModelLoader, HyVideoSampler, HyVideoTextEncode, HyVideoVAELoader, VHS_VideoCombine]
+coverage: 0.631333
+common_nodes: [AIO_Preprocessor, AddLabel, GetNode, ImageResizeKJv2, Int, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/hunyuan-混元文生视频_1886955735341780993.json, 视频生成/文生视频/混元文生视频+LORA hunyuanvideo lora_1870173036715347969.json, 视频生成/文生视频/混元视频生成大模型-文生视频 ComfyUI-HunyuanVideoWrapper_1864642141031985153.json]
+members: [视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/hunyuan-混元文生视频_1886955735341780993.json、视频生成/文生视频/混元文生视频+LORA hunyuanvideo lora_1870173036715347969.json、视频生成/文生视频/混元视频生成大模型-文生视频 ComfyUI-HunyuanVideoWrapper_1864642141031985153.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
-- `HyVideoDecode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTextEncode`
-- `HyVideoVAELoader`
+- `AIO_Preprocessor`
+- `AddLabel`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkText`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RIFE VFI`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `HyVideoLoraSelect` —— 2/3 个有
-- `RH_Prompter` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `Bjornulf_ShowInt` —— 2/3 个有
 
 ## 典型参数
 

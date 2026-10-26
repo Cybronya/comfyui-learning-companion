@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadAudio, RH_Wan25_T2V, SaveVideo]
+common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.5文生视频API_1970644366563962881.json, 视频生成/文生视频/Wan2.5文生视频_1978792977684434945.json]
+members: [图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json, 图片生成/文生图/分镜图生成_2046068941402939394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1606
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.5文生视频API_1970644366563962881.json、视频生成/文生视频/Wan2.5文生视频_1978792977684434945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json、图片生成/文生图/分镜图生成_2046068941402939394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,12 +23,12 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RH_Wan25_T2V`
-- `SaveVideo`
+- `RH_RhartImageNG31FlashTextToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/2 个有
+- `RHSettingsNode` —— 1/2 个有
 
 ## 典型参数
 

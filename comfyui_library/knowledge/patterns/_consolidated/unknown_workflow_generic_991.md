@@ -3,29 +3,29 @@ name: unknown_workflow_generic_991
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.75
-common_nodes: [MuyeTextEditOutput, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 1
+common_nodes: [RHUploadZip_V2, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2088114976178393089.json, 图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2088116556923498497.json, 图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2089565452728094721.json]
+members: [图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_991
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2088114976178393089.json、图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2088116556923498497.json、图片生成/文生图/全能图片G-2.0-文生图-低价渠道版 API专用_2089565452728094721.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `RH_RhartImageG2TextToImage`
+- `RHUploadZip_V2`
 - `SaveImage`
+- `SeedVR2`
 
 ## 典型参数
 

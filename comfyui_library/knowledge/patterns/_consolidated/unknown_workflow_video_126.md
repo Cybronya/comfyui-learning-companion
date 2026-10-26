@@ -3,39 +3,35 @@ name: unknown_workflow_video_126
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9645
-common_nodes: [Apply Whisper, AudioSeparation, LatentSyncNode, SaveAudio, ShowText, TextNode, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.867
+common_nodes: [Int, LoadImage, PreviewImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine, easy indexAnything, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/视频数字人(保持原视频 原音色+文字驱动)_1965826441835360258.json, 音频生成/音频生成/视频对口型(保持原音色)_1927663661807222785.json]
+members: [视频生成/图生视频/汤姆猫特效1漫剧电商服装分镜真人_2072948538811703298.json, 视频生成/图生视频/汤姆猫特效之达文西漫剧电商服装分镜真人_2072710252314845185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_126
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/视频数字人(保持原视频 原音色+文字驱动)_1965826441835360258.json、音频生成/音频生成/视频对口型(保持原音色)_1927663661807222785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/汤姆猫特效1漫剧电商服装分镜真人_2072948538811703298.json、视频生成/图生视频/汤姆猫特效之达文西漫剧电商服装分镜真人_2072710252314845185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioSeparation`
-- `LatentSyncNode`
-- `SaveAudio`
-- `ShowText`
-- `TextNode`
+- `Int`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `CosyVoiceNode` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
+- `easy indexAnything`
+- `easy mathInt`
+- `easy showAnything`
 
 ## 典型参数
 

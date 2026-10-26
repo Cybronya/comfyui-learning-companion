@@ -3,62 +3,69 @@ name: unknown_workflow_video_sampler_vae_85
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.768833
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.666833
+common_nodes: [AudioCrop, AudioSeparation, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json, 视频生成/图生视频/WAN2.1 首尾帧 生成视频_1919985178293239809.json, 视频生成/图生视频/Wan2.1-KJ首尾帧图生视频_1911321308582608897.json, 视频生成/图生视频/Wan2.1官方首尾帧FLF2V14b_1918282117372121090.json, 视频生成/图生视频/【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json, 视频生成/图生视频/【Wan2.1系列】首尾帧生成视频之Fun V1.1 Inp模型 _ 一键生成创意视频！_1920718476594315266.json]
+members: [视频生成/图生视频/视频改口型【 数字人 3.0 新版 】_2011113680129236994.json, 视频生成/图生视频/高质量数字人+对口型+情感口播+++InfiniTetalk+超自然数字人对口型_2079740437828558849.json, 视频生成/图生视频/（数字人）单图生视频+视频配口型工作流_2059508557720154113.json, 音频生成/音频生成/InfiniteTalk单人视频对口型_2048286460733820930.json, 音频生成/音频生成/YZ金鱼-InfiniteTalk超自然数字人对口型单人视频驱动_2025113443430305793.json, 音频生成/音频生成/单人对口型视频驱动_2036437031634604034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_85
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json、视频生成/图生视频/WAN2.1 首尾帧 生成视频_1919985178293239809.json、视频生成/图生视频/Wan2.1-KJ首尾帧图生视频_1911321308582608897.json、视频生成/图生视频/Wan2.1官方首尾帧FLF2V14b_1918282117372121090.json、视频生成/图生视频/【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/视频改口型【 数字人 3.0 新版 】_2011113680129236994.json、视频生成/图生视频/高质量数字人+对口型+情感口播+++InfiniTetalk+超自然数字人对口型_2079740437828558849.json、视频生成/图生视频/（数字人）单图生视频+视频配口型工作流_2059508557720154113.json、音频生成/音频生成/InfiniteTalk单人视频对口型_2048286460733820930.json、音频生成/音频生成/YZ金鱼-InfiniteTalk超自然数字人对口型单人视频驱动_2025113443430305793.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `LoadImage`
+- `AudioCrop`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `WanVideoExperimentalArgs` —— 5/6 个有
-- `ImageResize+` —— 4/6 个有
-- `LoadWanVideoClipTextEncoder` —— 4/6 个有
+- `Audio Duration (mtb)` —— 5/6 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `MultiTalkModelLoader` —— 5/6 个有
+- `PlaySound|pysssss` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `Anything Everywhere` —— 4/6 个有
+- `VHS_LoadVideo` —— 4/6 个有
+- `WanVideoEncode` —— 4/6 个有
+- `easy int` —— 4/6 个有
+- `LoadImage` —— 3/6 个有
+- `PreviewAudio` —— 3/6 个有
+- `VHS_VideoInfoLoaded` —— 3/6 个有
 - `WanVideoTorchCompileSettings` —— 3/6 个有
-- `CLIPVisionLoader` —— 2/6 个有
-- `ImageResizeKJ` —— 2/6 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `GIMMVFI_interpolate` —— 1/6 个有
-- `LayerUtility: PurgeVRAM` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `WanVideoVRAMManagement` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `easy showAnything` —— 3/6 个有
+- `FL_FloatToInt` —— 1/6 个有
+- `JWIntegerToString` —— 1/6 个有
+- `Primitive integer [Crystools]` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `easy convertAnything` —— 1/6 个有
 
 ## 典型参数
 

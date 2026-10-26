@@ -3,63 +3,70 @@ name: unknown_workflow_video_sampler_vae_131
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7405
-common_nodes: [ImageConcatMulti, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, Note Plus (mtb), VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.445
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoImageToVideoSkyreelsv3_audio, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json, 视频生成/图生视频/VACE 14B双图参考强视频编辑_1922711297270452225.json, 视频生成/图生视频/VACE自定义背景强一致性双重引导蒙版人物动作迁移V1_1907459540840026113.json, 视频生成/图生视频/普通版VACE注意力蒙版视频生视频_1907808853109387266.json]
+members: [视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json, 视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_131
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json、视频生成/图生视频/VACE 14B双图参考强视频编辑_1922711297270452225.json、视频生成/图生视频/VACE自定义背景强一致性双重引导蒙版人物动作迁移V1_1907459540840026113.json、视频生成/图生视频/普通版VACE注意力蒙版视频生视频_1907808853109387266.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json、视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageConcatMulti`
-- `JWInteger`
+- `CLIPVisionLoader`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Note Plus (mtb)`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoSkyreelsv3_audio`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: BiRefNetUltraV2` —— 3/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `GrowMaskWithBlur` —— 2/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `ImageResizeKJ` —— 2/4 个有
-- `JWImageResizeByLongerSide` —— 2/4 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 2/4 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 2/4 个有
-- `TTP_Expand_And_Mask` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `InpaintPreprocessor` —— 1/4 个有
-- `LayerUtility: ImageBlend V2` —— 1/4 个有
-- `MaskToImage` —— 1/4 个有
-- `VHS_MergeImages` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `WanVideoVACEModelSelect` —— 1/4 个有
+- `ColorMatch` —— 2/4 个有
+- `DownloadAndLoadWav2VecModel` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `AudioCrop` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `Qwen3ASRLoader` —— 1/4 个有
+- `Qwen3ASRTranscribe` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `Textbox` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
 
 ## 典型参数
 

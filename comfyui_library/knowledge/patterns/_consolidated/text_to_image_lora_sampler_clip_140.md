@@ -1,89 +1,80 @@
 ---
 name: text_to_image_lora_sampler_clip_140
 type: Text To Image
-frequency: 11
+frequency: 12
 level: strong
-coverage: 0.821
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.90025
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/QwenImage2.1 T2I官方提示词助手｜文生图有外挂｜灵感一句话变大片_2102643207380234241.json, 图片生成/文生图/QwenImage2.1文生图加官方提示词助手｜新手也能写好词_2103086483702902786.json, 图片生成/文生图/QwenImage2.1文生图搭配官方提示词助手，T2I自动扩写出图效率提升_2103196536837595138.json, 图片生成/文生图/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2102841325551972354.json, 图片生成/文生图/qwen image 2.1 turbo大模型基础文生图 高质量画面直出_2109726501351542786.json, 图片生成/文生图/qwen image 2.1官方turbo加速lora文生图基础流 高质量画面直出_2109727981399797762.json, 图片生成/文生图/qwen image 2.1提示词扩写｜一句话自动扩成专业描述｜文生图更省心_2102239968981770242.json, 图片生成/文生图/通用QwenImage2.1文生图图生图二合一｜日常出图万能底座_2111282466421035009.json, 图片生成/文生图/通用QwenImage2.1方案，文生图图生图一站搞定_2111525886070706178.json, 视频生成/图生视频/QwenImage2.1图生图搭配官方提示词助手，I2I编辑效率大幅提升_2105866245517168642.json, 视频生成/文生视频/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2105861679325208578.json]
+members: [视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json, 视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json, 视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json, 视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json, 视频生成/文生视频/MiniMax H3文生视频开源版 视频运镜处理生成工具_2113360451328364546.json, 视频生成/文生视频/MiniMax H3文生视频开源版处理生成工具_2102140647884021762.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜一句话生成大片级画面_2107663052278681601.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜运镜丝滑300+人在用_2097177388667990017.json, 视频生成/文生视频/res_multistep 2.46×零质量损加速｜MiniMax-H3文生视频RH版_2089008529712705537.json, 视频生成/文生视频/res_multistep 2.46倍加速零质量损｜MiniMax-H3文生视频RH版含音频_2088688872459952130.json, 视频生成/文生视频/开源版文生视频MiniMax视频运镜其它视频处理_2085851653433028610.json, 视频生成/文生视频/开源版文生视频｜MiniMax H3 视频运镜自由出片_2089266759978274818.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_140
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/QwenImage2.1 T2I官方提示词助手｜文生图有外挂｜灵感一句话变大片_2102643207380234241.json、图片生成/文生图/QwenImage2.1文生图加官方提示词助手｜新手也能写好词_2103086483702902786.json、图片生成/文生图/QwenImage2.1文生图搭配官方提示词助手，T2I自动扩写出图效率提升_2103196536837595138.json、图片生成/文生图/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2102841325551972354.json、图片生成/文生图/qwen image 2.1 turbo大模型基础文生图 高质量画面直出_2109726501351542786.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json、视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json、视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json、视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json、视频生成/文生视频/MiniMax H3文生视频开源版 视频运镜处理生成工具_2113360451328364546.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `ResolutionSelector` —— 9/11 个有
-- `TextGenerate` —— 9/11 个有
-- `孤海注释` —— 9/11 个有
-- `Any Switch (rgthree)` —— 8/11 个有
-- `JsonExtractString` —— 8/11 个有
-- `TextConcatenator` —— 8/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/11 个有
-- `SaveImageAdvanced` —— 6/11 个有
-- `ShowAnything|Mie` —— 5/11 个有
-- `easy showAnything` —— 4/11 个有
-- `ComfySwitchNode` —— 3/11 个有
-- `LoadImage` —— 3/11 个有
-- `QwenImage21Cache` —— 3/11 个有
-- `PreviewImage` —— 2/11 个有
-- `easy isNone` —— 2/11 个有
-- `EmptyImage` —— 1/11 个有
-- `GetNode` —— 1/11 个有
-- `ImageBatchMulti` —— 1/11 个有
-- `ImageScaleToTotalPixels` —— 1/11 个有
-- `SetNode` —— 1/11 个有
+- `GetVideoComponents` —— 7/12 个有
+- `VHS_VideoCombine` —— 7/12 个有
+- `SaveVideo` —— 5/12 个有
+- `SaveImage` —— 3/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 11 | 100% |
-| 高度 | 80 | 80 - 80 | 11 | 100% |
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
-| 采样算法 | er_sde | - | 11 | 100% |
-| 调度器 | beta | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
+| 采样算法 | er_sde | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，11 个样本，一致性 100%
-- 调度器 最常用 beta，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（13/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

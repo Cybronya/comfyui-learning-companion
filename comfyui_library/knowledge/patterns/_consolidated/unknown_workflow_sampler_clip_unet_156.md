@@ -3,57 +3,56 @@ name: unknown_workflow_sampler_clip_unet_156
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.99125
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.94675
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/服装替换_2083162795322994690.json, 图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json, 图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json, 图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093340946711793665.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093623432524156930.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093892857491976194.json, 图片生成/文生图/换装Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2035315458378833922.json]
+members: [图片生成/图生图/flux文生图_1988616802869624833.json, 图片生成/文生图/Pornmaster_krea2_t2i_Raw+Turbo_2098728229115879426.json, 图片生成/文生图/Z-Image+Base&Turbo双重采样工作流_2058016487142674434.json, 图片生成/文生图/Z-Image-Turbo文生图双重采样_2018553894216929282.json, 图片生成/文生图/Z-image-Turbo文生图 双重采样_2020839379777884161.json, 图片生成/文生图/一键生成美女Z-Image双重采样_2039874902513160193.json, 图片生成/文生图/文生图 双采 行为艺术 黑兽9优化版_2065363132853612544.json, 图片生成/文生图/电商生成真实感模特 ZImage 双采样_2046138498574454786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_156
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/服装替换_2083162795322994690.json、图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json、图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json、图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json、图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093340946711793665.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux文生图_1988616802869624833.json、图片生成/文生图/Pornmaster_krea2_t2i_Raw+Turbo_2098728229115879426.json、图片生成/文生图/Z-Image+Base&Turbo双重采样工作流_2058016487142674434.json、图片生成/文生图/Z-Image-Turbo文生图双重采样_2018553894216929282.json、图片生成/文生图/Z-image-Turbo文生图 双重采样_2020839379777884161.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/8 个有
-- `JWFloat` —— 7/8 个有
-- `ImageConcanate` —— 6/8 个有
-- `easy imageSize` —— 3/8 个有
-- `EmptyFlux2LatentImage` —— 1/8 个有
-- `EmptySD3LatentImage` —— 1/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `TextConcat` —— 1/8 个有
+- `CLIPLoader` —— 7/8 个有
+- `Int` —— 7/8 个有
+- `ModelSamplingAuraFlow` —— 6/8 个有
+- `SaveImage` —— 6/8 个有
+- `Seed (rgthree)` —— 6/8 个有
+- `CompressImages` —— 4/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `DualCLIPLoader` —— 1/8 个有
+- `FluxGuidance` —— 1/8 个有
+- `JjkText` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 20 | 8 | 9% |
+| 采样算法 | 1 | 1 - 1.5 | 8 | 84% |
+| 调度器 | euler | - | 8 | 88% |
+| 重绘幅度 | sgm_uniform | - | 8 | 75% |
+| 宽度 | 1080 | 832 - 1920 | 8 | 74% |
+| 高度 | 1728 | 1080 - 1920 | 8 | 80% |
 
 ## 常见问题
 
@@ -61,4 +60,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 20，8 个样本，取值分散，一致性仅 9%
+- 采样算法 中位数 1，观测区间 1 - 1.5，8 个样本，取值集中（一致性 84%）
+- 调度器 最常用 euler，8 个样本，一致性 88%
+- 重绘幅度 最常用 sgm_uniform，8 个样本，一致性 75%
+- 宽度 中位数 1080，观测区间 832 - 1920，8 个样本
+- 高度 中位数 1728，观测区间 1080 - 1920，8 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -1,35 +1,48 @@
 ---
 name: unknown_workflow_generic_137
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.515167
-common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.837154
+common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, Text, easy promptConcat, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/图生图/角色卡制作工作流_2052015917642596354.json, 图片生成/文生图/API 全能图像2.0 文生图 中文能力加强 G Image 2.0_2046758792863424514.json, 图片生成/文生图/API 全能图像2.0 文生图 中文能力加强_2067600600430370818.json, 图片生成/文生图/API_全能图像2.0_文生图_中文能力加强_G_Image_2.0_2098914650384584705.json, 图片生成/文生图/G - Image 2.0 文生图_2047474229376983041.json, 图片生成/文生图/G Image2.0 全能图像生成 API+ 文生图 中文能力加强_2080101534528004097.json, 图片生成/文生图/G-image2低价版文生图_2087387744153718785.json, 图片生成/文生图/RH封面制作 同时出中英文封面_2052576650784714753.json, 图片生成/文生图/全能图像G 2.0 文生图 全能图片G image 2.0_2046787294027325441.json, 图片生成/文生图/文生分镜镜头（九宫图）_2084972055329599490.json, 图片生成/文生图/文生图，G-2_2086633762254843905.json, 图片生成/文生图/最强文生图 全能图片G2.0_2047595153946316802.json]
+members: [图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json, 图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json, 图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json, 图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json, 图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2098981285736833026.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2099141290008080386.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2101488163675009025.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json, 图片生成/图生图/电商产品详情页一键生成6张_2064758435874430977.json, 图片生成/图生图/阿清的多张电商详情页生成_2092159694122082305.json, 图片生成/文生图/image2电商（主图+详情页）_2051119303629520897.json, 图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_137
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/角色卡制作工作流_2052015917642596354.json、图片生成/文生图/API 全能图像2.0 文生图 中文能力加强 G Image 2.0_2046758792863424514.json、图片生成/文生图/API 全能图像2.0 文生图 中文能力加强_2067600600430370818.json、图片生成/文生图/API_全能图像2.0_文生图_中文能力加强_G_Image_2.0_2098914650384584705.json、图片生成/文生图/G - Image 2.0 文生图_2047474229376983041.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json、图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json、图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json、图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json、图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `JjkText`
-- `RH_RhartImageG2TextToImage`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `ShowText|pysssss`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/12 个有
-- `StringConcatenate` —— 1/12 个有
+- `HAIGC_CombineUnits` —— 12/13 个有
+- `HAIGC_Layer` —— 12/13 个有
+- `HAIGC_SavePSD` —— 12/13 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 11/13 个有
+- `easy showAnything` —— 11/13 个有
+- `EmptyImage` —— 2/13 个有
+- `PreviewImage` —— 2/13 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/13 个有
+- `RH_RhartImageG2ImageToImage` —— 2/13 个有
+- `TT_img_enc` —— 1/13 个有
 
 ## 典型参数
 

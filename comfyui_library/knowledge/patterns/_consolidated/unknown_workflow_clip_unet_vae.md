@@ -2,22 +2,22 @@
 name: unknown_workflow_clip_unet_vae
 type: Unknown Workflow
 frequency: 25
-level: moderate
-coverage: 0.96372
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: weak
+coverage: 0.96164
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/002.Qwen编辑之王002.二次采样文生图_2034485126217863170.json, 图片生成/文生图/2030248533244256258.json, 图片生成/文生图/2030259700943560706.json, 图片生成/文生图/2030270553520607233.json, 图片生成/文生图/2030517261940822018.json, 图片生成/文生图/60.tonnie-Magic-Wan-Image文生图_2009063719375998977.json, 图片生成/文生图/Animate动漫出图Qwen工作流_2047157124668592129.json, 图片生成/文生图/Animate动漫出图Qwen工作流_2049757423077957634.json, 图片生成/文生图/Z-I-B道具快乐美女_2040453074061369345.json, 图片生成/文生图/Z-I-B长腿肉腿刺客美女_2056916021260410881.json, 图片生成/文生图/Z-image一键美女文生图_2023344603134431233.json, 图片生成/文生图/Z-image大码瑜伽裤模特_2054817937000804354.json, 图片生成/文生图/Z-image真实文生图_2027593525369507841.json, 图片生成/文生图/Z-image真实文生图_2096478812799328257.json, 图片生成/文生图/Z-image真实文生图无限制_2021242393848188929.json, 图片生成/文生图/Z-image韩国美少女写真_2040461723756400642.json, 图片生成/文生图/Z-image高中女生校服丝袜写真_2025507598744690689.json, 图片生成/文生图/qwen2512粗线条水墨_2082670662396760065.json, 图片生成/文生图/【老金驿站】Animate动漫出图Qwen工作流_1967848816110088193.json, 图片生成/文生图/一键生成可爱的小仙女_2029386005651922945.json, 图片生成/文生图/一键生成粗线条水彩画_2067418485902368769.json, 图片生成/文生图/动漫融合现实_2002300969109078017.json, 图片生成/文生图/动漫融合现实_2068864210045587458.json, 图片生成/文生图/粗线条插画_2016470143131459586.json, 图片生成/文生图/粗线条水彩_2021242555865763842.json]
+members: [图片生成/文生图/二次元 紫藤萝花主题婚纱设计_2032027433515356161.json, 图片生成/文生图/全量版Z_IMAGE文生图工作流_2068260369071689729.json, 图片生成/文生图/关键帧生成_2069402773254397953.json, 图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json, 图片生成/文生图/千问大模型Z_Image 文生图大模型（目前最真实）_1994767919693410305.json, 图片生成/文生图/千问文生图工作流_1980117131083812865.json, 图片生成/文生图/原生z-image-turbo_2003323871308677121.json, 图片生成/文生图/快速文生图：Z-image_zimage_2019318395178586113.json, 图片生成/文生图/文生图  Z-image  zimage  超真实 去除AI味_2042796990563622914.json, 图片生成/文生图/文生图 Z-image  zimage 超真实_2042852589439553537.json, 图片生成/文生图/文生图 阿里 Z-image  超真实 去除AI味_2041885856356638722.json, 图片生成/文生图/文生图 阿里 Z-image  超真实 去除AI味_2042157391986298882.json, 图片生成/文生图/文生图++Z-image多图猫咪 真实感_2048956527746224129.json, 图片生成/文生图/文生图Qwen-Image-10步蒸馏_2018607735310393346.json, 图片生成/文生图/文生图_1999752689116475393.json, 图片生成/文生图/文生图_2018496192077897730.json, 图片生成/文生图/文生图超真实+去除AI味_2043505519566000130.json, 图片生成/文生图/文生图（新）_2007073715049205761.json, 图片生成/文生图/极速文生图_2044017764528033793.json, 图片生成/文生图/极速文生图_2044030659710160898.json, 图片生成/文生图/神里绫华  zimage_2014941793854427137.json, 图片生成/文生图/超真实文生图 Z-image  zimage   自然真实 没AI感_2046109081471029250.json, 图片生成/文生图/超真实文生图_2044746798295687169.json, 图片生成/文生图/雷电将军zimage 生成_2009993579749449730.json, 视频生成/图生视频/workflow-关键帧-Flux_2114650060762996737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/002.Qwen编辑之王002.二次采样文生图_2034485126217863170.json、图片生成/文生图/2030248533244256258.json、图片生成/文生图/2030259700943560706.json、图片生成/文生图/2030270553520607233.json、图片生成/文生图/2030517261940822018.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/二次元 紫藤萝花主题婚纱设计_2032027433515356161.json、图片生成/文生图/全量版Z_IMAGE文生图工作流_2068260369071689729.json、图片生成/文生图/关键帧生成_2069402773254397953.json、图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json、图片生成/文生图/千问大模型Z_Image 文生图大模型（目前最真实）_1994767919693410305.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：25
-- **可信度**：中等可信
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：96%
 
 ## 共有节点
@@ -29,42 +29,38 @@ source: knowledge_consolidation
 - `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 24/25 个有
-- `LoraLoaderModelOnly` —— 24/25 个有
-- `CompressImages` —— 14/25 个有
-- `SeedVR2` —— 5/25 个有
-- `SeedVR2BlockSwap` —— 5/25 个有
-- `LatentUpscaleBy` —— 4/25 个有
-- `PathchSageAttentionKJ` —— 4/25 个有
-- `CheckpointLoaderSimple` —— 1/25 个有
-- `KSamplerAdvanced` —— 1/25 个有
-- `easy promptLine` —— 1/25 个有
+- `KSampler` —— 23/25 个有
+- `VAEDecode` —— 23/25 个有
+- `KSamplerAdvanced` —— 5/25 个有
+- `CFGNorm` —— 3/25 个有
+- `Lora Loader Stack (rgthree)` —— 3/25 个有
+- `VAEDecodeTiled` —— 2/25 个有
+- `PreviewImage` —— 1/25 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 12 | 24 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 25 | 48% |
-| 采样算法 | euler | - | 25 | 92% |
-| 调度器 | simple | - | 25 | 72% |
-| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
+| 采样步数 | 50 | 8 - 50 | 20 | 49% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 10 | 25 | 20% |
+| 采样算法 | res_multistep | - | 25 | 64% |
+| 调度器 | simple | - | 25 | 76% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/25 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 12，24 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，25 个样本，取值分散，一致性仅 48%
-- 采样算法 最常用 euler，25 个样本，一致性 92%
-- 调度器 最常用 simple，25 个样本，一致性 72%
-- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
-- 高发问题（18/25 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 50，观测区间 8 - 50，20 个样本，取值分散，一致性仅 49%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 10，25 个样本，取值分散，一致性仅 20%
+- 采样算法 最常用 res_multistep，25 个样本，一致性 64%
+- 调度器 最常用 simple，25 个样本，一致性 76%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）

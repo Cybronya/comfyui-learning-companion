@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_196
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.985
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
+coverage: 0.666667
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, Int, KSampler, LoadImage, ModelSamplingSD3, Primitive integer [Crystools], PrimitiveStringMultiline, RH_LLMAPI_NODE, ShowText|pysssss, VAEDecode, VHS_VideoCombine, WanImageToVideo, easy textSwitch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/wan2.2图生视频-加速版_1982413530160865281.json, 视频生成/图生视频/图生视频 动态图_2047476345214607362.json, 视频生成/图生视频/图生视频_2044959565564878850.json]
+members: [视频生成/图生视频/Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426178.json, "视频生成/图生视频/Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json", 视频生成/图生视频/【AIO-V10大一统】图生视频-Wan2.2_1962869582434373634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_196
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频-加速版_1982413530160865281.json、视频生成/图生视频/图生视频 动态图_2047476345214607362.json、视频生成/图生视频/图生视频_2044959565564878850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426178.json、视频生成/图生视频/Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json、视频生成/图生视频/【AIO-V10大一统】图生视频-Wan2.2_1962869582434373634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
@@ -27,24 +27,28 @@ source: knowledge_consolidation
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
+- `Int`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `Primitive integer [Crystools]`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
+- `ShowText|pysssss`
 - `VAEDecode`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `wanBlockSwap`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/3 个有
-- `CreateVideo` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `TorchCompileModelWanVideoV2` —— 1/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
 
 ## 典型参数
 

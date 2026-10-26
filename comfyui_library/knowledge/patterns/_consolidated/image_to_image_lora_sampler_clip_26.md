@@ -3,82 +3,71 @@ name: image_to_image_lora_sampler_clip_26
 type: Image To Image
 frequency: 9
 level: strong
-coverage: 0.863111
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.607556
+common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, DF_Integer, Float, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy seed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/万物一键转换——亚克力立架_1946941574536421378.json, 图片生成/图生图/万物一键转换——绒毛玩偶_1946954844869681154.json, 图片生成/图生图/产品_人像精修_2071792524552921090.json, 图片生成/图生图/产品精修工作流 一键出图细节文字保留_1956371792107634690.json, 图片生成/图生图/产品融入背景v4 真实光影_1957824102613745665.json, 图片生成/图生图/人像精修+上妆-kontxet_1959201923981324289.json, 图片生成/图生图/人物一键卸妆与素颜还原_2060237604842467329.json, 图片生成/图生图/冰爷老杨简单溶图-提前PS（省钱版）_1966078677220061185.json, 图片生成/图生图/🐲电商产品完美溶图【透视矫正 光影融合】🐲_2001553801477779457.json]
+members: [图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2053169989598883842.json, 图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2054760424528203777.json, 图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2059974184545116161.json, 图片生成/图生图/水墨插画图生图风格转换_2056925510059520002.json, 图片生成/图生图/水墨插画图生图风格转换_2058799155631443970.json, 图片生成/图生图/风格迁移（水墨插画风）_2054101584358985729.json, 图片生成/图生图/风格迁移（水墨插画风）_2054115985988300802.json, 图片生成/图生图/风格迁移（水墨插画风）_2085933520559628289.json, 图片生成/文生图/彩色图片转水墨+全节点注释_2057404353245442050.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_26
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/万物一键转换——亚克力立架_1946941574536421378.json、图片生成/图生图/万物一键转换——绒毛玩偶_1946954844869681154.json、图片生成/图生图/产品_人像精修_2071792524552921090.json、图片生成/图生图/产品精修工作流 一键出图细节文字保留_1956371792107634690.json、图片生成/图生图/产品融入背景v4 真实光影_1957824102613745665.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2053169989598883842.json、图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2054760424528203777.json、图片生成/图生图/水墨插画图生图风格转换-热点视频水墨风图片生成_2059974184545116161.json、图片生成/图生图/水墨插画图生图风格转换_2056925510059520002.json、图片生成/图生图/水墨插画图生图风格转换_2058799155631443970.json…）
 
 - **类型**：Image To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `Anything Everywhere3`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `DF_Integer`
+- `Float`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `PreviewImage` —— 7/9 个有
-- `FluxKontextImageScale` —— 5/9 个有
-- `DetailTransfer` —— 3/9 个有
-- `Fast Bypasser (rgthree)` —— 3/9 个有
-- `ImpactInt` —— 3/9 个有
-- `easy imageRemBg` —— 3/9 个有
-- `Seed (rgthree)` —— 2/9 个有
-- `Text Concatenate` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `ChinesePrompt_Mix` —— 1/9 个有
-- `FastCanvas` —— 1/9 个有
-- `FastCanvasTool` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `ImpactSwitch` —— 1/9 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `easy imageConcat` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `GetNode` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `Text` —— 8/9 个有
+- `CR Text` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 9 | 82% |
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 78% |
-| 调度器 | simple | - | 9 | 67% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，9 个样本，取值集中（一致性 82%）
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 78%
-- 调度器 最常用 simple，9 个样本，一致性 67%
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

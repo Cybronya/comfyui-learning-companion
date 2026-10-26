@@ -1,76 +1,77 @@
 ---
 name: image_to_image_sampler_unet_vae_17
 type: Image To Image
-frequency: 11
-level: strong
-coverage: 0.944909
-common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: weak
+coverage: 0.898375
+common_nodes: [CLIPLoader, CR Prompt Text, FluxKontextMultiReferenceLatentMethod, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/增强背景和主图效果_2059630159023656961.json, 图片生成/图生图/材质修改Q2511_2008020062157934594.json, 图片生成/图生图/极速真人转动漫_2061261202520625153.json, 图片生成/图生图/橘-qwen edit 2509 多图编辑基础流_2003471485438181377.json, 图片生成/图生图/正面白底图生成器-qwen-Edit-2509_2031287284074553346.json, 图片生成/图生图/灵魂画手工作流_1972209323231342593.json, 图片生成/图生图/生图-图生成正面白底图-qwen-Edit-2509-8步_2000610701750173697.json, 图片生成/图生图/老孙AI 一键去水印qwen2511_2086304124907380737.json, 图片生成/图生图/老照片修复qwen2511千问2511加速版_2003646847212265474.json, 图片生成/图生图/衣服提取衣服_2058616474121625602.json, 图片生成/图生图/衣服提取衣服qwen2511千问2511加速版_2004402979652468737.json]
+members: [图片生成/图生图/00_人物持物融合_单道具_20步_2101706068576530433.json, 图片生成/图生图/00_人物持物融合_单道具_4步_2101706038402707458.json, 图片生成/图生图/00_人物持物融合_双道具_20步_2101706122561413121.json, 图片生成/图生图/00_人物持物融合_双道具_4步_2101706099593400322.json, 图片生成/图生图/01_人物入景首帧_1至5人_2101611485456850946.json, 图片生成/图生图/01_人物入景首帧_1至5人_双人同轮融合优化版_2102593466231508993.json, 图片生成/图生图/01_人物入景首帧_1至5人_数值修复版_2102410325357318146.json, 图片生成/图生图/2511+调整任意角度（柯基大佬版）简化版-jbp_2009986941873295361.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/增强背景和主图效果_2059630159023656961.json、图片生成/图生图/材质修改Q2511_2008020062157934594.json、图片生成/图生图/极速真人转动漫_2061261202520625153.json、图片生成/图生图/橘-qwen edit 2509 多图编辑基础流_2003471485438181377.json、图片生成/图生图/正面白底图生成器-qwen-Edit-2509_2031287284074553346.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/00_人物持物融合_单道具_20步_2101706068576530433.json、图片生成/图生图/00_人物持物融合_单道具_4步_2101706038402707458.json、图片生成/图生图/00_人物持物融合_双道具_20步_2101706122561413121.json、图片生成/图生图/00_人物持物融合_双道具_4步_2101706099593400322.json、图片生成/图生图/01_人物入景首帧_1至5人_2101611485456850946.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Prompt Text`
+- `FluxKontextMultiReferenceLatentMethod`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 10/11 个有
-- `LoraLoaderModelOnly` —— 10/11 个有
-- `ModelSamplingAuraFlow` —— 10/11 个有
-- `TextEncodeQwenImageEditPlus` —— 10/11 个有
-- `ImageScaleToTotalPixels` —— 8/11 个有
-- `ImageConcanate` —— 6/11 个有
-- `CR Text` —— 5/11 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/11 个有
-- `PreviewImage` —— 3/11 个有
-- `ReferenceLatent` —— 3/11 个有
-- `GetImageSizeAndCount` —— 2/11 个有
-- `EmptySD3LatentImage` —— 1/11 个有
-- `FluxGuidance` —— 1/11 个有
-- `LayerFilter: GaussianBlur` —— 1/11 个有
-- `MaskToImage` —— 1/11 个有
-- `TextEncodeQwenImageEdit` —— 1/11 个有
+- `CR Text Concatenate` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `CFGNorm` —— 5/8 个有
+- `ImageCompositeMasked` —— 3/8 个有
+- `ImpactInt` —— 3/8 个有
+- `ImpactSwitch` —— 3/8 个有
+- `ImpactConvertDataType` —— 2/8 个有
+- `ImpactFloat` —— 2/8 个有
+- `EmptySD3LatentImage` —— 1/8 个有
+- `QwenMultiangleCameraNode` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `easy promptConcat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 11 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 91% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 4 | 4 - 20 | 8 | 13% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 26% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 91%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 20，8 个样本，取值分散，一致性仅 13%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 26%
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（18/8 个样本）：Steps较低可能导致细节不足

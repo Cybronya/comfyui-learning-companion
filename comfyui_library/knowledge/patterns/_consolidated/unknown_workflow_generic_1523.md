@@ -3,32 +3,33 @@ name: unknown_workflow_generic_1523
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 1
+common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/🍌文生图_2017626542070833153.json, 视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json]
+members: [图片生成/图生图/批量+改色(G-2.0)_2045144708422307842.json, 图片生成/文生图/Image2.0文生图_2046782365061615618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1523
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/🍌文生图_2017626542070833153.json、视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量+改色(G-2.0)_2045144708422307842.json、图片生成/文生图/Image2.0文生图_2046782365061615618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
+- `LayerUtility: TextJoin` —— 1/2 个有
 
 ## 典型参数
 

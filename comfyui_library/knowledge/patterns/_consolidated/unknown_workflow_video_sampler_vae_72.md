@@ -3,61 +3,75 @@ name: unknown_workflow_video_sampler_vae_72
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.969
-common_nodes: [GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.639143
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json, 视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json, 视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json, 视频生成/图生视频/VACE 14B-首尾帧图生视频_1925111334327754753.json, 视频生成/图生视频/VACE 14B视频扩图稳定版V1_1922724321020579841.json, 视频生成/图生视频/VACE-视频扩图工作流_1923332542534250497.json, 视频生成/图生视频/WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json]
+members: [视频生成/图生视频/wanvideo_infinitetalk_单人工作流_1958061014984118274.json, 视频生成/图生视频/wanvideo_infinitetalk_双人工作流_1958075798320197633.json, 视频生成/图生视频/wanvideo_infinitetalk_图片转视频单人工作流_2014174614657703937.json, 视频生成/图生视频/万象视频MultiTalk——MV制造机_1943647883407360002.json, 视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json, 视频生成/图生视频/数字人-文本驱动-图片+视频+声音克隆】_1989952363156918273.json, 音频生成/音频生成/数字人_视频_infinite【720P+高清+声音克隆】_1984533428567687169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_72
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json、视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json、视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json、视频生成/图生视频/VACE 14B-首尾帧图生视频_1925111334327754753.json、视频生成/图生视频/VACE 14B视频扩图稳定版V1_1922724321020579841.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/wanvideo_infinitetalk_单人工作流_1958061014984118274.json、视频生成/图生视频/wanvideo_infinitetalk_双人工作流_1958075798320197633.json、视频生成/图生视频/wanvideo_infinitetalk_图片转视频单人工作流_2014174614657703937.json、视频生成/图生视频/万象视频MultiTalk——MV制造机_1943647883407360002.json、视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `LoadWanVideoT5TextEncoder`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 6/7 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `WanVideoImageToVideoMultiTalk` —— 6/7 个有
+- `WanVideoLoraSelect` —— 6/7 个有
 - `WanVideoTextEncode` —— 6/7 个有
-- `AddLabel` —— 4/7 个有
-- `EmptyImage` —— 4/7 个有
-- `ImageConcatMulti` —— 4/7 个有
-- `LoadImage` —— 4/7 个有
-- `MaskPreview+` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `WanVideoTeaCache` —— 4/7 个有
-- `WanVideoVACEStartToEndFrame` —— 4/7 个有
-- `GetImageRangeFromBatch` —— 3/7 个有
-- `ImagePadKJ` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `VHS_LoadVideo` —— 3/7 个有
-- `WanVideoMagCache` —— 3/7 个有
-- `WanVideoVACEModelSelect` —— 3/7 个有
-- `easy int` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `RH_Translator` —— 2/7 个有
-- `Text` —— 1/7 个有
-- `WanVideoApplyNAG` —— 1/7 个有
-- `WanVideoTextEncodeSingle` —— 1/7 个有
+- `LoadImage` —— 5/7 个有
+- `VHS_LoadVideo` —— 5/7 个有
+- `INTConstant` —— 4/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
+- `RH_GetAudioDuration` —— 4/7 个有
+- `SimpleMath+` —— 4/7 个有
+- `Apply Whisper` —— 3/7 个有
+- `Float to Int` —— 3/7 个有
+- `ImageUpscaleWithModel` —— 3/7 个有
+- `IndexTTS2Run` —— 3/7 个有
+- `PrimitiveStringMultiline` —— 3/7 个有
+- `SaveAudio` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `UpscaleModelLoader` —— 3/7 个有
+- `WanVideoTorchCompileSettings` —— 3/7 个有
+- `easy anythingIndexSwitch` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `WanVideoContextOptions` —— 1/7 个有
+- `WanVideoEncode` —— 1/7 个有
+- `WanVideoEnhanceAVideo` —— 1/7 个有
+- `WanVideoImageToVideoEncode` —— 1/7 个有
+- `WanVideoSLG` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
 - `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数

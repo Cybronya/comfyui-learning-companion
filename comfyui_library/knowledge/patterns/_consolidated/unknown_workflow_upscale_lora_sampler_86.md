@@ -3,58 +3,61 @@ name: unknown_workflow_upscale_lora_sampler_86
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [BatchImagesNode, CLIPLoader, EmptyLatentImage, ImageConcatMulti, KSampler, LoadImage, LoadImageGoohai, LoraLoaderModelOnly, MuyeTextEditOutput, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, SplitImageWithAlpha, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, 忽略多组孤海]
+coverage: 0.707
+common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1 BFS换脸 换头工作流_2105665836672442370.json, 图片生成/图生图/Qwen_image_2.1_BFS换脸_换头工作流_2105336964957425665.json]
+members: [图片生成/图生图/FireRed-Edit 1.1 小红书图像编辑模型  多图编辑8步加速 更新2026.3.20_2026966221538725890.json, 图片生成/图生图/FireRed-Image-Edit 换装 换衣  4K高清出图_2093677788611039234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_86
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 BFS换脸 换头工作流_2105665836672442370.json、图片生成/图生图/Qwen_image_2.1_BFS换脸_换头工作流_2105336964957425665.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FireRed-Edit 1.1 小红书图像编辑模型  多图编辑8步加速 更新2026.3.20_2026966221538725890.json、图片生成/图生图/FireRed-Image-Edit 换装 换衣  4K高清出图_2093677788611039234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BatchImagesNode`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `ImageConcatMulti`
+- `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `LoadImageGoohai`
 - `LoraLoaderModelOnly`
 - `MuyeTextEditOutput`
 - `PreviewImage`
-- `QwenImage21Cache`
-- `ResolutionSelector`
 - `SaveImage`
-- `SplitImageWithAlpha`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `PIP_图像联结` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
+| 采样步数 | 6 | - | 2 | 67% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | deis_2m | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
@@ -66,11 +69,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis_2m，2 个样本，一致性 100%
+- 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足

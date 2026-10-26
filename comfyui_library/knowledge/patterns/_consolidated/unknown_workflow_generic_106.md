@@ -1,50 +1,35 @@
 ---
 name: unknown_workflow_generic_106
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.910429
-common_nodes: [Get Image Size, Image Comparer (rgthree), ImageResize+, ImpactMinMax, LoadImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch]
+coverage: 0.97
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2图片高清放大_1977995529814769665.json, 图片生成/图生图/seedVR2放大修复（按目标分辨率K数同比例放大）_1980684915954110466.json, 图片生成/图生图/万物图片高清放大（分块）seedVR2_1956177364311048194.json, 图片生成/图生图/万物高清_2086061742978846722.json, 图片生成/图生图/万物高清放大_1985667227728916481.json, 图片生成/图生图/人像、文字、万物皆可高清放大8K（不变形）_2112521603924971521.json, 图片生成/图生图/图像分块极速放大 SeedVR2 【快速、好用】_1977525512761417729.json, 图片生成/图生图/图片清晰放大优化精修模糊变清晰seedVR2 万物高清放大（分块）_2074670337190621185.json, 图片生成/图生图/老孙AI 万物高清放大（分块）_2085590392736673793.json, 图片生成/图生图/高清8K放大新版_1984920818033573890.json, 图片生成/图生图/高清放大 seedVR2 TTP_1972557496084852737.json, 图片生成/图生图/高清放大 seedVR2 TTP_2098713428201402370.json, 图片生成/图生图/高清放大_seedVR2_TTP_2089687383133474818.json, 视频生成/图生视频/seedVR2 TTP 高清修复放大_2066714614678773761.json]
+members: [图片生成/文生图/全能G生成视频_2029105561215700993.json, 数字人/数字人/自用G3_2067294107592126465.json, 视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json, 视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json, 视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json, 视频生成/图生视频/Grok 图生视频_1999287670520020993.json, 视频生成/图生视频/Seedance 1.5 Pro Fast 图生视频｜首尾帧视频｜支持1080P_2097537038789730305.json, 视频生成/图生视频/SeedanceV15ProImageToVideoFast_2038487770900992001.json, 视频生成/图生视频/全能GVideo3 (T2V_I2V)视频生成_2018214912014684161.json, 视频生成/图生视频/全能视频 G图生视频_2034836093006254081.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版_2049821213257674753.json, 视频生成/图生视频/全能视频X图生视频_1998230093191372801.json, 视频生成/图生视频/全能视频X图生视频_2034090844533297154.json, 视频生成/图生视频/图生视频 自定义动作高清视频_2014217858514952193.json, 视频生成/图生视频/老陈 Gork图生视频 2毛一次_2016146712053686273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_106
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/seedVR2图片高清放大_1977995529814769665.json、图片生成/图生图/seedVR2放大修复（按目标分辨率K数同比例放大）_1980684915954110466.json、图片生成/图生图/万物图片高清放大（分块）seedVR2_1956177364311048194.json、图片生成/图生图/万物高清_2086061742978846722.json、图片生成/图生图/万物高清放大_1985667227728916481.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/全能G生成视频_2029105561215700993.json、数字人/数字人/自用G3_2067294107592126465.json、视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json、视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json、视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImpactMinMax`
+全部 15 个 workflow 都包含：
 - `LoadImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Integer` —— 13/14 个有
-- `SimpleMath+` —— 13/14 个有
-- `SaveImage` —— 11/14 个有
-- `ImageCASharpening+` —— 9/14 个有
-- `easy cleanGpuUsed` —— 9/14 个有
-- `SeedVR2BlockSwap` —— 6/14 个有
-- `ImageColorMatchAdobe+` —— 5/14 个有
-- `KOOK_SaveJPGImage` —— 3/14 个有
-- `ColorMatch` —— 1/14 个有
-- `Fast Groups Muter (rgthree)` —— 1/14 个有
-- `Note Plus (mtb)` —— 1/14 个有
-- `TT_img_enc` —— 1/14 个有
+- `RH_Grok_Video3` —— 13/15 个有
+- `MuyeTextEditOutput` —— 3/15 个有
+- `RH_SeedanceV15ProImageToVideoFast` —— 2/15 个有
 
 ## 典型参数
 

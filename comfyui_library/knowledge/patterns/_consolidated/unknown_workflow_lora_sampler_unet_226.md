@@ -3,59 +3,77 @@ name: unknown_workflow_lora_sampler_unet_226
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.786
-common_nodes: [CLIPLoader, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, QwenImageIntegratedKSampler, SaveImage, UNETLoader, UnetLoaderGGUF, VAELoader]
-problems: []
+coverage: 0.868
+common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json, 图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json, 图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json]
+members: [图片生成/图生图/一键换装：完美4宫格替换衣物，超高一致性保持。_2095157044230844418.json, 图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2011329691990368258.json, 数字人/数字人/图生图（换装）_2092958523377410049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_226
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json、图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json、图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键换装：完美4宫格替换衣物，超高一致性保持。_2095157044230844418.json、图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2011329691990368258.json、数字人/数字人/图生图（换装）_2092958523377410049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
 - `Image Comparer (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `QwenImageIntegratedKSampler`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
 - `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
-- `UnetLoaderGGUF`
+- `VAEDecode`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 1/3 个有
+- `ControlNetApplySD3` —— 1/3 个有
+- `ControlNetLoader` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SetUnionControlNetType` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 图生图 image-to-image | - | 3 | 100% |
+| ControlNet 权重 | 1.5 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | 1472 | 1472 - 1472 | 3 | 100% |
-| 调度器 | 1104 | 1104 - 1104 | 3 | 100% |
-| 重绘幅度 | 1.05203e+15 | 9.21455e+14 - 1.06505e+15 | 3 | 94% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta57 | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 图生图 image-to-image，3 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1472，观测区间 1472 - 1472，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1104，观测区间 1104 - 1104，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1.05203e+15，观测区间 9.21455e+14 - 1.06505e+15，3 个样本，取值集中（一致性 94%）
-- 风险：重绘幅度 观测到 1.06505e+15，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta57，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

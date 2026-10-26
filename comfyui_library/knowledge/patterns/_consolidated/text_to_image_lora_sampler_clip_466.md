@@ -2,64 +2,67 @@
 name: text_to_image_lora_sampler_clip_466
 type: Text To Image
 frequency: 4
-level: strong
-coverage: 0.89925
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PreviewAudio, SaveAudioAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.84225
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), JoinStringMulti, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader, easy imageColorMatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/多人对话音色一键克隆｜Breeze TTS 2 九月音频生成强档_2096195742212902913.json, 音频生成/音频生成/腾讯Auk秒级音色复刻16项功能合一支持提示词增强_2100656204337991682.json, 音频生成/音频生成/音乐分离人声伴奏低音鼓点工作流，音频生成音乐分离处理工具_2106520036323184642.json, 音频生成/音频生成/音乐分离神器｜人声伴奏低音鼓点一键拆分音频生成_2106243974917877761.json]
+members: [图片生成/文生图/Anima文生图_2072678854979837953.json, 图片生成/文生图/Anima正式版-文生图工作流-提示词模版_2056942036279975937.json, 图片生成/文生图/Anima正式版-文生图工作流_2057761171805130754.json, 数字人/数字人/Anima正式版-文生图工作流_2067103556976603138.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_466
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/多人对话音色一键克隆｜Breeze TTS 2 九月音频生成强档_2096195742212902913.json、音频生成/音频生成/腾讯Auk秒级音色复刻16项功能合一支持提示词增强_2100656204337991682.json、音频生成/音频生成/音乐分离人声伴奏低音鼓点工作流，音频生成音乐分离处理工具_2106520036323184642.json、音频生成/音频生成/音乐分离神器｜人声伴奏低音鼓点一键拆分音频生成_2106243974917877761.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Anima文生图_2072678854979837953.json、图片生成/文生图/Anima正式版-文生图工作流-提示词模版_2056942036279975937.json、图片生成/文生图/Anima正式版-文生图工作流_2057761171805130754.json、数字人/数字人/Anima正式版-文生图工作流_2067103556976603138.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
-- `JjkText`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `JoinStringMulti`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
+- `ModelSamplingAuraFlow`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `AuKGenerateEdit_Doc` —— 1/4 个有
-- `AuKLlamaCppSettings_Doc` —— 1/4 个有
-- `AuKModelsLoader_Doc` —— 1/4 个有
-- `BreezeTTS2LoadModel` —— 1/4 个有
-- `BreezeTTS2MultiSpeaker` —— 1/4 个有
-- `BreezeTTS2Speaker` —— 1/4 个有
-- `llama_cpp_model_loader` —— 1/4 个有
+- `1hew_ImageToURL` —— 2/4 个有
+- `API_PromptHelper` —— 2/4 个有
+- `DuckQREncodeNode` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy saveText` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
+| 采样步数 | 17 | 4 - 30 | 4 | 24% |
+| Prompt 约束强度(CFG) | 3 | 1 - 5 | 4 | 33% |
+| 采样算法 | er_sde | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
 
 ## 常见问题
 
@@ -69,11 +72,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
+- 采样步数 中位数 17，观测区间 4 - 30，4 个样本，取值分散，一致性仅 24%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 5，4 个样本，取值分散，一致性仅 33%
+- 采样算法 最常用 er_sde，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
 - 高发问题（4/4 个样本）：Steps较低可能导致细节不足

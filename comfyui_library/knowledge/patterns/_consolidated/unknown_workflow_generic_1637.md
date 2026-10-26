@@ -3,35 +3,31 @@ name: unknown_workflow_generic_1637
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudioMP3, TextBox, easy cleanGpuUsed]
+coverage: 1
+common_nodes: [Label (rgthree), LoadImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/ComfyUI HeartMuLa 基础流_2013473041468104705.json, 音频生成/音频生成/ComfyUI HeartMuLa 复制流_2013486549110890497.json]
+members: [图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json, 图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1637
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ComfyUI HeartMuLa 基础流_2013473041468104705.json、音频生成/音频生成/ComfyUI HeartMuLa 复制流_2013486549110890497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json、图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudioMP3`
-- `TextBox`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
+- `Label (rgthree)`
+- `LoadImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 ## 典型参数
 

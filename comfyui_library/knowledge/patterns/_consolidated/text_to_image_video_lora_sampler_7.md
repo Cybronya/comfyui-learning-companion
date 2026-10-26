@@ -1,124 +1,102 @@
 ---
 name: text_to_image_video_lora_sampler_7
 type: Text To Image
-frequency: 36
+frequency: 37
 level: strong
-coverage: 0.724056
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, EmptyLatentImage, GetImageRangeFromBatch, GetImageSize, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, solarL_SaveImagesToZip]
+coverage: 0.893297
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SCAIL2动作迁移不限时长复刻跳舞动作，单人跳舞图生视频方案_2103987283769774081.json, 视频生成/图生视频/SCAIL2动作迁移不限时长复刻跳舞动作，单人跳舞视频生视频方案_2103947994725965825.json, 视频生成/图生视频/SCAIL2动作迁移不限时长｜国内版视频生成_2095242789704527874.json, 视频生成/图生视频/SCAIL2动作迁移不限时长｜视频生视频图生视频_2100826652468137986.json, 视频生成/图生视频/SCAIL2动作迁移单人跳舞版｜复刻舞蹈不限时长视频直出_2103689612811132930.json, 视频生成/图生视频/SCAIL2舞蹈动作复刻版｜单人跳舞视频不限时长超稳迁移_2103695977902329858.json, 视频生成/图生视频/SCAIL2跳舞动作不限时长复刻 单人图生视频迁移方案_2104700736683732993.json, 视频生成/图生视频/Scail2动作迁移升级版｜单人和多人场景全覆盖｜视频生视频轻松换动作_2102596091110838274.json, 视频生成/图生视频/Scail2动作迁移单人多人双版本｜视频角色动作替换_2105128302477398018.json, 视频生成/图生视频/Scail2动作迁移单人多人版 视频生视频图生视频_2100297305340596226.json, 视频生成/图生视频/Scail2动作迁移单人多人版，视频生视频与图生视频实现动态姿势迁移_2102822444510834689.json, 视频生成/图生视频/Scail2动作迁移单人多人版，视频生视频与图生视频实现动态姿势迁移_2106547829790560257.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106898397432213506.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106912137393303553.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2107576153123942401.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2108372496239128578.json, 视频生成/图生视频/Scail2动作迁移无限时长版｜视频动作完整复刻_2098721885197524993.json, 视频生成/图生视频/Scail2动作迁移｜单人多人版视频图生视频_2092341382097752066.json, 视频生成/图生视频/Scail2单人多人动作迁移 视频动作复刻方案_2110359254958952449.json, 视频生成/图生视频/Scail2复刻动作无限时长｜视频生视频动作迁移_2098747334107680770.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物替换高清处理工具_2101038221638590466.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物替换高清处理工具_2101404525457395713.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物角色替换高清长视频_2100281582610370562.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物角色替换高清长视频_2100648955267866625.json, 视频生成/图生视频/Scail2循环动作迁移超长视频｜人物角色替换+高清长视频，视频生视频一次跑完_2100459002353246209.json, 视频生成/图生视频/Scail2循环动作迁移高清长视频｜视频生视频人物角色替换，超长片单一循环到底_2100470356879429634.json, 视频生成/图生视频/lite无限时长低显存｜Scail2动作迁移复刻跳舞视频_2093792459687026690.json, 视频生成/图生视频/lite无限时长低显存｜Scail2跳舞动作复刻迁移视频_2094015557204008961.json, 视频生成/图生视频/不限时长动作迁移国内版｜pipi-SCAIL2视频生视频_2095573827723022337.json, 视频生成/图生视频/单人+多人动作迁移｜Scail2图生视频视频生视频_2092590570073055234.json, 视频生成/图生视频/虚拟IP打造专用工作流｜图生视频形象生成_2092024189837463553.json, 视频生成/图生视频/跳舞动作不限时长复刻 SCAIL2单人图生视频迁移方案_2104357540426502145.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2094026121233920002.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2097105682641285121.json, 视频生成/图生视频/长视频SCAIL2动作迁移_不限时长动作复刻输出_2109434088183656449.json, 视频生成/文生视频/Scail2动作迁移｜单人多人都支持｜文生视频图生视频一路通吃_2102572579264487425.json]
+members: [视频生成/文生视频/4步lora 768P 10秒模板｜Minimax H3满血多参双bf16加sage加速_2088760487675781121.json, 视频生成/文生视频/4步lora加速版（批量短剧专用）Minimax_h3_导演台插件3.0万象AI_2085854413360558081.json, 视频生成/文生视频/4步加速lora动漫生成 Minimax H3 Dasiwa 6步快速出片_2094222041418391553.json, 视频生成/文生视频/4步加速全能参考生视频-MiniMax H3文生视频生视频_2087339437670879234.json, 视频生成/文生视频/4步加速全能参考生视频｜MiniMax H3文生图生视频_2091277215991422978.json, 视频生成/文生视频/4步加速全能参考｜MiniMax H3九图三视频三音频生视频_2091267858146877441.json, 视频生成/文生视频/4步加速文生视频-MiniMax H3视频生视频图生视频_2087342119575965697.json, 视频生成/文生视频/4步加速文生视频｜MiniMax H3文生图生视频直出_2091290792244633602.json, 视频生成/文生视频/8步lora 768P 10秒模板｜Minimax H3满血多参双bf16加sage加速_2088751636515741697.json, 视频生成/文生视频/BF16 Turbo Sage加速版｜MiniMax_H3文生图生视频_2090567264184655873.json, 视频生成/文生视频/BF16剪枝微表情15秒｜Minimax H3 768P视频模板生成_2090894916292538370.json, 视频生成/文生视频/BF16剪枝高画质版｜Minimax H3采样器调度器三模生成_2094028023011037185.json, 视频生成/文生视频/BF16多参考真实打斗｜高质量768P打斗lora直出_2096231338943795201.json, 视频生成/文生视频/BF16打斗lora高质量｜多参考自动扩写动作768P直出_2096216737351028738.json, 视频生成/文生视频/BF16满血+Sage加速｜MiniMax H3双模式FL2VA与Ref2VA高速生成_2090873892377288706.json, 视频生成/文生视频/Dasiwa动漫4步加速lora｜Minimax+H3 6步三模视频_2094587676379934721.json, 视频生成/文生视频/Dasiwa动漫多参考｜Minimax H3直出1080P生视频_2094342464118284289.json, 视频生成/文生视频/MiniMax H3 BF16 Turbo Sage加速版｜文生图生视频_2092049982156271618.json, 视频生成/文生视频/Minimax H3参考生成｜多模态素材视频生成_2095229500903747585.json, 视频生成/文生视频/剪枝版BF16微表情｜Minimax H3 10秒768P模板_2090578253928034305.json, 视频生成/文生视频/剪枝版BF16高动态5秒｜Minimax H3 768P视频模板_2090576848353849345.json, 视频生成/文生视频/剪枝版BF16高动态｜Minimax H3 15秒768P模板_2090575450929188866.json, 视频生成/文生视频/剪枝版BF16高动态｜Minimax H3 15秒768P视频模板_2090889192581713922.json, 视频生成/文生视频/剪枝版高动态5秒模板｜Minimax H3 BF16 768P视频生成_2090892022604455938.json, 视频生成/文生视频/加速版直出｜MiniMax_H3_BF16_Turbo_Sage_ 文生图生视频高速生成_2089458798560894978.json, 视频生成/文生视频/参考生成多模态视频｜Minimax H3文生视频生视频_2095567468348661762.json, 视频生成/文生视频/参考生成文生图生视频生视频｜Minimax H3视频生成工作流_2088390683336994818.json, 视频生成/文生视频/双时钟8步lora极速4分钟出15秒480P｜Minimax-H3文生视频工作流_2087215608109821953.json, 视频生成/文生视频/多参考打斗视频生成｜MiniMax H3 BF16 768P lora_2095944735889383425.json, 视频生成/文生视频/多参考真实打斗生成｜MiniMax H3 Dasiwa 768P lora_2095940373528014850.json, 视频生成/文生视频/开源版8步极速｜MiniMax H3文生视频跳舞创意_2093813895210299394.json, 视频生成/文生视频/开源版文生视频8步极速｜Minimax H3跳舞短剧漫剧创意生成_2095558045421101058.json, 视频生成/文生视频/微表情10秒768P模板｜Minimax H3剪枝版BF16视频_2090893466330030082.json, 视频生成/文生视频/打斗lora自动扩写动作｜Minimax H3 多参考768P高质量_2096215187715088386.json, 视频生成/文生视频/极致满血1K 10秒模板｜Minimax H3多参双bf16加sage加速25步_2088754648592248834.json, 视频生成/文生视频/真实打斗多参考生成｜MiniMax H3 B25-49 768P lora_2095941865878147073.json, 视频生成/文生视频/音频驱动生视频数字人Minimax文生视频视频生视频图生视频_2086207004321865730.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（视频生成/图生视频/SCAIL2动作迁移不限时长复刻跳舞动作，单人跳舞图生视频方案_2103987283769774081.json、视频生成/图生视频/SCAIL2动作迁移不限时长复刻跳舞动作，单人跳舞视频生视频方案_2103947994725965825.json、视频生成/图生视频/SCAIL2动作迁移不限时长｜国内版视频生成_2095242789704527874.json、视频生成/图生视频/SCAIL2动作迁移不限时长｜视频生视频图生视频_2100826652468137986.json、视频生成/图生视频/SCAIL2动作迁移单人跳舞版｜复刻舞蹈不限时长视频直出_2103689612811132930.json…）
+> 由 `engine/knowledge_consolidation` 从 37 个 workflow 归纳得出（视频生成/文生视频/4步lora 768P 10秒模板｜Minimax H3满血多参双bf16加sage加速_2088760487675781121.json、视频生成/文生视频/4步lora加速版（批量短剧专用）Minimax_h3_导演台插件3.0万象AI_2085854413360558081.json、视频生成/文生视频/4步加速lora动漫生成 Minimax H3 Dasiwa 6步快速出片_2094222041418391553.json、视频生成/文生视频/4步加速全能参考生视频-MiniMax H3文生视频生视频_2087339437670879234.json、视频生成/文生视频/4步加速全能参考生视频｜MiniMax H3文生图生视频_2091277215991422978.json…）
 
 - **类型**：Text To Image
-- **样本数**：36
+- **样本数**：37
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 36 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
+全部 37 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
 - `EmptyLatentImage`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 35/36 个有
-- `PreviewAny` —— 35/36 个有
-- `TensorLoopClose` —— 35/36 个有
-- `TensorLoopOpen` —— 35/36 个有
-- `孤海注释` —— 33/36 个有
-- `JWInteger` —— 28/36 个有
-- `EmptyImage` —— 27/36 个有
-- `ImageCompositeMasked` —— 27/36 个有
-- `PrimitiveInt` —— 27/36 个有
-- `SAM3_TrackToMask` —— 27/36 个有
-- `DownloadAndLoadGIMMVFIModel` —— 26/36 个有
-- `GIMMVFI_interpolate` —— 26/36 个有
-- `ImageConcatMulti` —— 26/36 个有
-- `ResizeImageMaskNode` —— 26/36 个有
-- `DiffusionModelLoaderKJ` —— 25/36 个有
-- `SetNode` —— 19/36 个有
-- `CR Text` —— 18/36 个有
-- `GetNode` —— 18/36 个有
-- `SaveImage` —— 16/36 个有
-- `CR Prompt Text` —— 9/36 个有
-- `Int` —— 9/36 个有
-- `Seed (rgthree)` —— 9/36 个有
-- `ShowAnything|Mie` —— 9/36 个有
-- `VHS_VideoInfo` —— 9/36 个有
-- `WanChunkFeedForward` —— 9/36 个有
-- `MathExpression|pysssss` —— 8/36 个有
-- `Bjornulf_ShowInt` —— 7/36 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 7/36 个有
-- `ImageStitch` —— 6/36 个有
-- `AutoCropFaces` —— 1/36 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/36 个有
-- `ImpactInt` —— 1/36 个有
-- `RIFE VFI` —— 1/36 个有
-- `SimpleMath+` —— 1/36 个有
-- `ToFloat` —— 1/36 个有
-- `easy forLoopEnd` —— 1/36 个有
-- `easy forLoopStart` —— 1/36 个有
-- `easy int` —— 1/36 个有
-- `easy showAnything` —— 1/36 个有
+- `ComfyMathExpression` —— 36/37 个有
+- `MiniMaxH3AVDecodeT8` —— 36/37 个有
+- `MiniMaxH3AudioConditioningT8` —— 36/37 个有
+- `PrimitiveFloat` —— 36/37 个有
+- `ResolutionSelector` —— 36/37 个有
+- `CR Prompt Text` —— 35/37 个有
+- `LoadImage` —— 32/37 个有
+- `BasicScheduler` —— 25/37 个有
+- `KSamplerSelect` —— 25/37 个有
+- `LayerUtility: PurgeVRAM V2` —— 20/37 个有
+- `LoraLoaderBypassModelOnly` —— 13/37 个有
+- `MiniMaxH3DualClockSamplerT8` —— 12/37 个有
+- `LoadAudio` —— 10/37 个有
+- `LoadVideo` —— 7/37 个有
+- `GetVideoComponents` —— 6/37 个有
+- `ImpactSwitch` —— 3/37 个有
+- `ModelAttentionBackend` —— 3/37 个有
+- `easy showAnything` —— 3/37 个有
+- `PrimitiveStringMultiline` —— 2/37 个有
+- `RHMiniMaxH3T2VATextEncode` —— 2/37 个有
+- `RH_LLMAPI_Pro_Node` —— 2/37 个有
+- `ShellAgentPluginOutputText` —— 2/37 个有
+- `CeilNode` —— 1/37 个有
+- `DF_Int_to_Float` —— 1/37 个有
+- `Fast Groups Muter (rgthree)` —— 1/37 个有
+- `GetAudioDurationFromAudio` —— 1/37 个有
+- `SFH3MultimodalDirector` —— 1/37 个有
+- `SimpleMath+` —— 1/37 个有
+- `SoundFlow_GetLength` —— 1/37 个有
+- `VAEDecodeAudio` —— 1/37 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 36 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 36 | 100% |
-| 采样算法 | er_sde | - | 36 | 100% |
-| 调度器 | beta | - | 36 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 36 | 100% |
-| 宽度 | 80 | 80 - 80 | 36 | 100% |
-| 高度 | 80 | 80 - 80 | 36 | 100% |
+| 采样步数 | 4 | 4 - 4 | 37 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 37 | 100% |
+| 采样算法 | er_sde | - | 37 | 100% |
+| 调度器 | beta | - | 37 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 37 | 100% |
+| 宽度 | 80 | 80 - 80 | 37 | 100% |
+| 高度 | 80 | 80 - 80 | 37 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 41/36 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 37/37 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，36 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，36 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，36 个样本，一致性 100%
-- 调度器 最常用 beta，36 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，36 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，36 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，36 个样本，取值集中（一致性 100%）
-- 高发问题（41/36 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，37 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，37 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，37 个样本，一致性 100%
+- 调度器 最常用 beta，37 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，37 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，37 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，37 个样本，取值集中（一致性 100%）
+- 高发问题（37/37 个样本）：Steps较低可能导致细节不足

@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_video_4
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.651778
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.9381
+common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [图片生成/图生图/全能视频S爆款带货视频已经生成_1988444919993950210.json, 视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json, 视频生成/图生视频/【产品宣传视频】 自动剪辑 顺滑镜头 流畅运镜 全能视频S一键生成电商产品视频_1993942167926276098.json, 视频生成/图生视频/全能视频S TVB商业广告 一键生成带货视频 工作流 V1.0_1989559870573735937.json, 视频生成/图生视频/全能视频S 短视频带货全能版_1978020610695647233.json, 视频生成/图生视频/全能视频S 让自己的静态世界“活”起来！人人都能成为“造物主”和“导演”_1978837296143306754.json, 视频生成/图生视频/全能视频S2 图生视频_1980462772867784705.json, 视频生成/图生视频/全能视频S一个产品生成带货视频_1984984086768926722.json, 视频生成/图生视频/全能视频S一键图生视频-文字+图片【中文或者英文都可以】= 生成无水印高清带货视频 工作流_1977368854043205634.json]
+members: [数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json, 数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json, 数字人/数字人/【老金驿站】latentsync1.5语音完美口型工作流_1901881309147635713.json, 数字人/数字人/视频数字人LatentSync 1.6，可说话可唱歌_1949282157731688450.json, 数字人/数字人/视频生成视频-latentsync数字人对口型唱歌_1909469883543728130.json, 视频生成/图生视频/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_1948969805475454977.json, 视频生成/图生视频/LatentSync 1.6数字人_1945362805107380226.json, 视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json, 音频生成/音频生成/视频生数字人_1988266076419088385.json, 音频生成/音频生成/音频推动视频生成数字人加强latentsync1.5_1929185483350511617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_4
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能视频S爆款带货视频已经生成_1988444919993950210.json、视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json、视频生成/图生视频/【产品宣传视频】 自动剪辑 顺滑镜头 流畅运镜 全能视频S一键生成电商产品视频_1993942167926276098.json、视频生成/图生视频/全能视频S TVB商业广告 一键生成带货视频 工作流 V1.0_1989559870573735937.json、视频生成/图生视频/全能视频S 短视频带货全能版_1978020610695647233.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json、数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json、数字人/数字人/【老金驿站】latentsync1.5语音完美口型工作流_1901881309147635713.json、数字人/数字人/视频数字人LatentSync 1.6，可说话可唱歌_1949282157731688450.json、数字人/数字人/视频生成视频-latentsync数字人对口型唱歌_1909469883543728130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
+全部 10 个 workflow 都包含：
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `VideoLengthAdjuster`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/9 个有
-- `CR Text Concatenate` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
-- `String` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
+- `PreviewAudio` —— 4/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 

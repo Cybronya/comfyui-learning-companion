@@ -1,76 +1,89 @@
 ---
 name: unknown_workflow_video_lora_sampler_120
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.836308
-common_nodes: [AudioCrop, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.652667
+common_nodes: [CLIPVisionLoader, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk数字人图片双人对口型_2007459382434471938.json, 视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json, 视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062430418598711297.json, 视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062556213728071682.json, 视频生成/图生视频/Multitalk数字人对口型 高覆盖对嘴型_1955928297832153090.json, 视频生成/图生视频/infinitetalk最强数字人 单人新手直出版_1958474058688053249.json, 视频生成/图生视频/mv  唱歌  对口型  数字人 InfiniTetalk 超自然数字人对口型_2067838359027929089.json, 视频生成/图生视频/动漫对口型  数字人 InfiniTetalk 超自然数字人对口型_2080630602679803906.json, 视频生成/图生视频/口播  带货  对口型 数字人 InfiniTetalk 超自然数字人对口型_2061461382494769153.json, 视频生成/图生视频/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2061456753035923458.json, 视频生成/图生视频/口播带货  对口型  数字人 InfiniTetalk 超自然数字人对口型_2076965188426878978.json, 视频生成/图生视频/口播数字人   带货数字人   对口型 InfiniTetalk_2061428743545114626.json, 视频生成/图生视频/只需输入任意长度文本直出超自然口播数字人_2052234323893465089.json]
+members: [视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json, 视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json, 视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json, 视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json, 视频生成/图生视频/scail多人动作迁移_2015612655679053825.json, 视频生成/图生视频/scail多人动作迁移_2031033766637998081.json, 视频生成/图生视频/wanvideo_SCAIL_basic_pose_control_workflow_2000760906177015810.json, 视频生成/图生视频/wanvideo_SCAIL_pose and camera_control_workflow_2000851201182793729.json, 视频生成/图生视频/【动迁】Wan_SCAIL动作迁移+Light2v加速_2005453601126445058.json, 视频生成/图生视频/【多人】SCAIL Video Multi-Character Motion Transfer V1_2002334338010234881.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018306523847467009.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2023998769439711234.json, 视频生成/图生视频/萌宠跳舞-动作运镜最强迁移-SCAIL_姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018335059614375937.json, 视频生成/图生视频/角色动作迁移模仿-人物动物姿态驱动-骨骼对齐-运镜控制-360度旋转【公众号：70后教你做自媒体】_2066354482107207682.json, 视频生成/图生视频/🐱Scail模型-单双人视频动作迁移-言灵ru😼_2002394851083730946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_120
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk数字人图片双人对口型_2007459382434471938.json、视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json、视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062430418598711297.json、视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062556213728071682.json、视频生成/图生视频/Multitalk数字人对口型 高覆盖对嘴型_1955928297832153090.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json、视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json、视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json、视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json、视频生成/图生视频/scail多人动作迁移_2015612655679053825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `AudioCrop`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 15 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 12/13 个有
-- `CLIPVisionLoader` —— 12/13 个有
-- `WanVideoClipVisionEncode` —— 12/13 个有
-- `Audio Duration (mtb)` —— 11/13 个有
-- `GetImageRangeFromBatch` —— 11/13 个有
-- `GetNode` —— 11/13 个有
-- `MathExpression|pysssss` —— 11/13 个有
-- `SetNode` —— 11/13 个有
-- `PlaySound|pysssss` —— 9/13 个有
-- `WanVideoTorchCompileSettings` —— 4/13 个有
-- `Anything Everywhere` —— 2/13 个有
-- `CR Text` —— 2/13 个有
-- `ImpactInt` —— 2/13 个有
-- `JWIntegerToString` —— 2/13 个有
-- `RHHiddenNodes` —— 2/13 个有
-- `SimpleMath+` —— 2/13 个有
-- `easy showAnything` —— 2/13 个有
-- `Apply Whisper` —— 1/13 个有
-- `CogVideoEnhanceAVideo` —— 1/13 个有
-- `HyVideoBlockSwap` —— 1/13 个有
-- `ImageCASharpening+` —— 1/13 个有
-- `ImageSizeInfo` —— 1/13 个有
-- `IndexTTS2Run` —— 1/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `MelBandRoFormerModelLoader` —— 1/13 个有
-- `MelBandRoFormerSampler` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `WanVideoExperimentalArgs` —— 1/13 个有
-- `easy int` —— 1/13 个有
+- `GetImageSizeAndCount` —— 13/15 个有
+- `WanVideoLoraSelect` —— 13/15 个有
+- `INTConstant` —— 12/15 个有
+- `DownloadAndLoadNLFModel` —— 11/15 个有
+- `WanVideoEncode` —— 11/15 个有
+- `WanVideoUni3C_ControlnetLoader` —— 11/15 个有
+- `WanVideoUni3C_embeds` —— 11/15 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 9/15 个有
+- `DWPreprocessor` —— 9/15 个有
+- `LoadWanVideoT5TextEncoder` —— 9/15 个有
+- `SimpleMath+` —— 9/15 个有
+- `WanVideoTextEncode` —— 9/15 个有
+- `FloatConstant` —— 8/15 个有
+- `WanVideoTorchCompileSettings` —— 8/15 个有
+- `SimpleCalculatorKJ` —— 6/15 个有
+- `WanVideoTextEncodeCached` —— 6/15 个有
+- `Label (rgthree)` —— 5/15 个有
+- `LoadNLFModel` —— 4/15 个有
+- `PreviewImage` —— 4/15 个有
+- `CustomAddLabel` —— 3/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/15 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/15 个有
+- `GIMMVFI_interpolate` —— 2/15 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/15 个有
+- `Text Multiline` —— 2/15 个有
+- `WanVideoLoraSelectMulti` —— 2/15 个有
+- `CR Prompt Text` —— 1/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `PrimitiveInt` —— 1/15 个有
+- `TTResolutionSelector` —— 1/15 个有
+- `easy cleanGpuUsed` —— 1/15 个有
+- `easy showAnything` —— 1/15 个有
 
 ## 典型参数
 

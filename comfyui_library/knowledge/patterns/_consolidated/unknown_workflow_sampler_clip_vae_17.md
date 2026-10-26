@@ -1,58 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_vae_17
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.922556
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8274
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json, 图片生成/图生图/Flux2图生图工作流_1954841342910316546.json, 图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json, 图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json, 图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json, 图片生成/图生图/flux2-dev-fp8-mixed 多图编辑_2008381017370923010.json, 图片生成/图生图/【GUGU】FLUX2.0单图编辑_多图编辑_1993506477314949121.json, 图片生成/文生图/Flux2 官方文_图生视频_1993512866739322882.json, 图片生成/文生图/Flux2-TurboV2加速_2007448172402057217.json]
+members: [图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json, 图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json, 图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json, 图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json, 图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json, 图片生成/文生图/Flux2 Klein-文生图 加速版10秒出图_2012172099653214210.json, 图片生成/文生图/Flux2-Klein文生图+图生图_2012291526050717697.json, 图片生成/文生图/YJ-FAST-flux2klein为模特更换衣服裤子-jianan-tmp1-step1_2034278138842193922.json, 图片生成/文生图/二次元老婆秒变真人！ComfyUI动漫转写实，脸不变质感拉满_2059589704609255426.json, 图片生成/文生图/产品抠图透明背景精修版+全节点注释_2090760561532424194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json、图片生成/图生图/Flux2图生图工作流_1954841342910316546.json、图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json、图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json、图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json、图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json、图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json、图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json、图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `LoraLoaderModelOnly` —— 3/9 个有
-- `easy int` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `PrimitiveStringMultiline` —— 2/9 个有
-- `EmptySD3LatentImage` —— 1/9 个有
-- `GetImageSize+` —— 1/9 个有
-- `ImageConcanate` —— 1/9 个有
-- `Int Literal` —— 1/9 个有
-- `PathchSageAttentionKJ` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `UNETLoader` —— 9/10 个有
+- `LoadImage` —— 5/10 个有
+- `easy int` —— 5/10 个有
+- `ConditioningZeroOut` —— 4/10 个有
+- `PrimitiveInt` —— 4/10 个有
+- `PrimitiveStringMultiline` —— 4/10 个有
+- `ReferenceLatent` —— 4/10 个有
+- `Seed (rgthree)` —— 4/10 个有
+- `VAEEncode` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
+- `LoraLoaderModelOnly` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `GetImageSize` —— 2/10 个有
+- `AddLabel` —— 1/10 个有
+- `GGUFLoaderKJ` —— 1/10 个有
+- `ImageSmartSharpen+` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `LayerMask: BiRefNetUltra` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
 
 ## 典型参数
 

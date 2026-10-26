@@ -3,38 +3,37 @@ name: unknown_workflow_generic_823
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.91475
-common_nodes: [DF_Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, JjkText, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.89725
+common_nodes: [Apply Whisper, BreezeTTS2LoadModel, CR Text, LoadAudio, NormalizeAudioLoudness, PreviewAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json, 音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json, 音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json, 音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json]
+members: [数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json, 数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json, 音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json, 音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_823
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json、音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json、音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json、音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json、数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json、音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json、音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DF_Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+- `Apply Whisper`
+- `BreezeTTS2LoadModel`
+- `CR Text`
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `WhisperSTT` —— 3/4 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
+- `BreezeTTS2VoiceDirection` —— 3/4 个有
+- `BreezeTTS2VoiceClone` —— 1/4 个有
 
 ## 典型参数
 

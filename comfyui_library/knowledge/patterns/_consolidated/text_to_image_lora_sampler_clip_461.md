@@ -3,48 +3,58 @@ name: text_to_image_lora_sampler_clip_461
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.87175
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7715
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, KSamplerSelect, Load Lora, LoadImage, LoraLoaderModelOnly, MultiTextConcatenate, PainterFluxImageEdit, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3 MAX智能提示词工作流｜一句话自动增强出片_2095592106181091330.json, 视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜生成_2095586803368681473.json, 视频生成/文生视频/Mini多模态视频生成｜Seedance2.0文生视频生视频_2095871844741111809.json, 视频生成/文生视频/Seedance2.0 Mini多模态｜文生图生视频全都能跑_2106629854375534594.json]
+members: [图片生成/图生图/老照片修复洗图编辑｜Flux2Klein_trueV2升级版多合一_2093626238224134145.json, 图片生成/图生图/老照片修复洗图编辑｜Flux2Klein_trueV2升级版多合一_2093895934416613378.json, 图片生成/文生图/trueV2升级版｜Flux2Klein老照片修复文生图洗图编辑_2093787210565902338.json, 图片生成/文生图/老照片修复洗图编辑｜Flux2Klein trueV2升级版多合一_2093453609873797121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_461
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/H3 MAX智能提示词工作流｜一句话自动增强出片_2095592106181091330.json、视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜生成_2095586803368681473.json、视频生成/文生视频/Mini多模态视频生成｜Seedance2.0文生视频生视频_2095871844741111809.json、视频生成/文生视频/Seedance2.0 Mini多模态｜文生图生视频全都能跑_2106629854375534594.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/老照片修复洗图编辑｜Flux2Klein_trueV2升级版多合一_2093626238224134145.json、图片生成/图生图/老照片修复洗图编辑｜Flux2Klein_trueV2升级版多合一_2093895934416613378.json、图片生成/文生图/trueV2升级版｜Flux2Klein老照片修复文生图洗图编辑_2093787210565902338.json、图片生成/文生图/老照片修复洗图编辑｜Flux2Klein trueV2升级版多合一_2093453609873797121.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `Load Lora`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `MultiTextConcatenate`
+- `PainterFluxImageEdit`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `LoadVideo` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 2/4 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/4 个有
-- `RH_MinimaxHailuoH3ContextIrText` —— 1/4 个有
-- `RH_MinimaxHailuoH3MaxImageToVideo` —— 1/4 个有
-- `RH_MinimaxHailuoH3MaxTextToVideo` —— 1/4 个有
+- `忽略多组孤海` —— 3/4 个有
+- `孤海注释` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,54 +3,57 @@ name: unknown_workflow_video_sampler_clip_263
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.596
-common_nodes: [CLIPLoader, CLIPTextEncode, FastUnsharpSharpen, JjkText, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoaderGGUF, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PrimitiveInt, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy int]
+coverage: 0.9855
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, LoadImage, RIFE VFI, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频_Wan2.2 (1)_2047500838863642625.json, 视频生成/图生视频/图生视频_Wan2.2_2025831969728241666.json]
+members: [视频生成/图生视频/wan2.2首尾帧(官方版)_1946838262399033345.json, 视频生成/图生视频/动漫增强_DasiwaWan2.2图生视频_首尾帧生成_补帧_2014210765267406849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_263
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频_Wan2.2 (1)_2047500838863642625.json、视频生成/图生视频/图生视频_Wan2.2_2025831969728241666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2首尾帧(官方版)_1946838262399033345.json、视频生成/图生视频/动漫增强_DasiwaWan2.2图生视频_首尾帧生成_补帧_2014210765267406849.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `FastUnsharpSharpen`
-- `JjkText`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoaderGGUF`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SimpleMath+`
+- `RIFE VFI`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy int`
+- `WanFirstLastFrameToVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `DapaoImageAspectRatioResizeNode` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelSamplingSD3` —— 1/2 个有
+- `Seed Everywhere` —— 1/2 个有
+- `WanImageToVideo` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 16 | - | 2 | 75% |
+| 采样算法 | 2.25 | - | 2 | 44% |
 | 调度器 | euler | - | 2 | 100% |
 | 重绘幅度 | simple | - | 2 | 100% |
 
@@ -61,8 +64,9 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 16，样本不足，未给区间，2 个样本
+- 采样算法 中位数 2.25，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
 - 调度器 最常用 euler，2 个样本，一致性 100%
 - 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -2,62 +2,56 @@
 name: unknown_workflow_sampler_unet_vae_242
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.75925
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, Int, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.922
+common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, ManualSigmas, MiniMaxLowVRAMAttention, PathchSageAttentionKJ, QwenImage21Cache, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux性感网红美女文生图_1917546453768536066.json, 图片生成/文生图/Flux性感网红美女文生图_1919059234552745986.json, 图片生成/文生图/【最新】FLUX Krea 文生图 高质量_1951091883130953729.json, 图片生成/文生图/🦉FLUX Krea 文生图【真实质感 脱离AI感】🦉_1951074575276814337.json]
+members: [图片生成/图生图/Qwen2.1_Turbo8_加速-图生图_2110563208288366593.json, 图片生成/图生图/Qwen2.1_Turbo8_图生图_自动扩写_2110573186625662977.json, 图片生成/文生图/Qwen2.1_Turbo8_RunningHub_文生图_LLM自动扩写_2110569692946591746.json, 图片生成/文生图/Qwen2.1_Turbo8_加速-文生图_2110563232632107010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_242
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux性感网红美女文生图_1917546453768536066.json、图片生成/文生图/Flux性感网红美女文生图_1919059234552745986.json、图片生成/文生图/【最新】FLUX Krea 文生图 高质量_1951091883130953729.json、图片生成/文生图/🦉FLUX Krea 文生图【真实质感 脱离AI感】🦉_1951074575276814337.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen2.1_Turbo8_加速-图生图_2110563208288366593.json、图片生成/图生图/Qwen2.1_Turbo8_图生图_自动扩写_2110573186625662977.json、图片生成/文生图/Qwen2.1_Turbo8_RunningHub_文生图_LLM自动扩写_2110569692946591746.json、图片生成/文生图/Qwen2.1_Turbo8_加速-文生图_2110563232632107010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `Int`
+- `CLIPLoader`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
+- `ManualSigmas`
+- `MiniMaxLowVRAMAttention`
+- `PathchSageAttentionKJ`
+- `QwenImage21Cache`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/4 个有
-- `Anything Everywhere` —— 2/4 个有
-- `CLIPTextEncode` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `EmptyLatentImage` —— 2/4 个有
+- `ImageCompare` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 732 | 512 - 952 | 4 | 70% |
-| 高度 | 896 | 512 - 1280 | 4 | 57% |
+| 宽度 | 768 | - | 2 | 100% |
+| 高度 | 1376 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -65,5 +59,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 732，观测区间 512 - 952，4 个样本
-- 高度 中位数 896，观测区间 512 - 1280，4 个样本
+- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1376，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

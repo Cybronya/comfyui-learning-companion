@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_235
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.717444
-common_nodes: [LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, easy saveText]
+coverage: 0.8824
+common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/推理-音频提取字幕-Qwen3-ASR_2052619440117821442.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json]
+members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_235
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json、音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `easy saveText`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 8/9 个有
-- `easy showAnything` —— 1/9 个有
+- `SaveAudio` —— 6/10 个有
+- `SaveAudioMP3` —— 6/10 个有
+- `CR Text Concatenate` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `String` —— 1/10 个有
 
 ## 典型参数
 

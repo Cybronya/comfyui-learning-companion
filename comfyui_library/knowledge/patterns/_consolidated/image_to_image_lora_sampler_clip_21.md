@@ -1,115 +1,81 @@
 ---
 name: image_to_image_lora_sampler_clip_21
 type: Image To Image
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.7664
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DisableNoise, FlipSigmas, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, ImageResize+, InFluxModelSamplingPred, KSampler, LoadImage, LoraLoaderModelOnly, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, OutFluxModelSamplingPred, PrimitiveFloat, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader_Any, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch, easy int]
+coverage: 0.907222
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/GTPimage2.0：纯净细节，无痕优化_2069655726187958273.json, 图片生成/图生图/GTPimage2.0：纯净细节，无痕优化_2077642667059666946.json, 图片生成/图生图/为什么你AI出的图总感觉_脏_？用这个一步救回来_2069996619147337729.json, 图片生成/图生图/去AI感，真实感放大_Krea重塑自然美学_2083490624929615873.json, 图片生成/图生图/去AI感，真实感放大_Krea重塑自然美学_2095782841480212482.json, 图片生成/图生图/去AI感，真实感放大_Krea重塑自然美学_2096074942369583105.json, 图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学_2071416993240150018.json, 图片生成/图生图/商业级真实感放大最终章_1970132736906326018.json, 图片生成/图生图/商业级真实感放大最终章_2066849997286629378.json, 图片生成/图生图/通用放大终版_2072942349625413633.json]
+members: [图片生成/图生图/AI智能补光_1952658829760770050.json, 图片生成/图生图/AI智能补光_2099326768569217026.json, 图片生成/图生图/AI智能补光_2099666438209499137.json, 图片生成/图生图/F.Kontext 电商万物光影融合全能溶图产品打光_2043694360822288386.json, 图片生成/图生图/F.Kontext电商万物光影融合溶图产品打光_2054460915776532482.json, 图片生成/图生图/F.Kontext电商万物光影融合溶图产品打光_2057709154202120193.json, 图片生成/图生图/FLUX + LoRA 图生图工作流_2087431336314363906.json, 图片生成/图生图/Flux Kontext 万物移除_2010532864927997953.json, 图片生成/图生图/qwen2511 AIO老照片修复高清直出版_2005785362125520898.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_21
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/GTPimage2.0：纯净细节，无痕优化_2069655726187958273.json、图片生成/图生图/GTPimage2.0：纯净细节，无痕优化_2077642667059666946.json、图片生成/图生图/为什么你AI出的图总感觉_脏_？用这个一步救回来_2069996619147337729.json、图片生成/图生图/去AI感，真实感放大_Krea重塑自然美学_2083490624929615873.json、图片生成/图生图/去AI感，真实感放大_Krea重塑自然美学_2095782841480212482.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI智能补光_1952658829760770050.json、图片生成/图生图/AI智能补光_2099326768569217026.json、图片生成/图生图/AI智能补光_2099666438209499137.json、图片生成/图生图/F.Kontext 电商万物光影融合全能溶图产品打光_2043694360822288386.json、图片生成/图生图/F.Kontext电商万物光影融合溶图产品打光_2054460915776532482.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DisableNoise`
-- `FlipSigmas`
-- `FluxDeGuidance`
-- `FluxForwardODESampler`
-- `FluxReverseODESampler`
-- `ImageResize+`
-- `InFluxModelSamplingPred`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
-- `OutFluxModelSamplingPred`
-- `PrimitiveFloat`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader_Any`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageColorMatch`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 9/10 个有
-- `PreviewImage` —— 9/10 个有
-- `CR Text` —— 8/10 个有
-- `Bounded Image Crop with Mask` —— 7/10 个有
-- `ImageToMask` —— 7/10 个有
-- `Int` —— 7/10 个有
-- `KuwaharaBlur` —— 7/10 个有
-- `LayerColor: Color of Shadow & Highlight` —— 7/10 个有
-- `LayerColor: RGB` —— 7/10 个有
-- `RHHiddenNodes` —— 7/10 个有
-- `ResizeAndPadImage` —— 7/10 个有
-- `ResizeImageMixlab` —— 7/10 个有
-- `easy boolean` —— 7/10 个有
-- `easy ifElse` —— 7/10 个有
-- `Latent Noise Injection` —— 6/10 个有
-- `UNETLoader` —— 6/10 个有
-- `ModelSamplingAuraFlow` —— 5/10 个有
-- `DisTorchPurgeVRAMV2` —— 4/10 个有
-- `KSamplerAdvanced` —— 4/10 个有
-- `easy showAnything` —— 4/10 个有
-- `llama_cpp_instruct_adv` —— 4/10 个有
-- `llama_cpp_model_loader` —— 4/10 个有
-- `AILab_QwenVL` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/10 个有
-- `ClipLoaderGGUF` —— 1/10 个有
-- `DF_Integer` —— 1/10 个有
-- `GrowMask` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `InvertMask` —— 1/10 个有
-- `JoinImageWithAlpha` —— 1/10 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/10 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/10 个有
-- `Upscale Model Loader` —— 1/10 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `ReferenceLatent` —— 8/9 个有
+- `PreviewImage` —— 6/9 个有
+- `ImageUpscaleWithModel` —— 4/9 个有
+- `UpscaleModelLoader` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `ImpactInt` —— 3/9 个有
+- `LayerUtility: ImageScaleRestore V2` —— 3/9 个有
+- `easy imageConcat` —— 3/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `CheckpointLoaderSimple` —— 1/9 个有
+- `Image Compare (mtb)` —— 1/9 个有
+- `ImageAndMaskPreview` —— 1/9 个有
+- `ImageScaleBy` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `RepeatLatentBatch` —— 1/9 个有
+- `TextEncodeQwenImageEditPlus` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 10 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | sa_solver | - | 10 | 60% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 10 | 100% |
-| 重绘幅度 | 1 | 0.28 - 1 | 10 | 50% |
+| 采样步数 | 20 | 8 - 20 | 9 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 89% |
+| 调度器 | simple | - | 9 | 89% |
+| 重绘幅度 | 1 | 0.35 - 1 | 9 | 74% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 23/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，10 个样本，一致性 60%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.28 - 1，10 个样本
-- 高发问题（23/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 8 - 20，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 89%
+- 调度器 最常用 simple，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 0.35 - 1，9 个样本

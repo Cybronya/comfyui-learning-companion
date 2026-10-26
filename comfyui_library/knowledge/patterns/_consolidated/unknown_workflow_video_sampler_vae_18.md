@@ -1,74 +1,77 @@
 ---
 name: unknown_workflow_video_sampler_vae_18
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: moderate
-coverage: 0.869133
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, Float to Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.951429
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Int, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2072520035003879425.json, 视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2075913669199884290.json, 视频生成/图生视频/对口型 MV 唱歌音频音频驱动_2045503009345507330.json, 视频生成/图生视频/数字人口播 一键生成带货数字人视频 图生视频_2073671180170645506.json, 视频生成/图生视频/数字人口播 美妆模特 主播 静态图一键生成带货数字人视频_2074322783164788738.json, 视频生成/图生视频/数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_2020512883326586881.json, 视频生成/图生视频/数字人直播带货对口型RCM+Infinite Talk+VoxCPM TTS1.5_2027651848353615874.json, 视频生成/图生视频/无限时长（电商带货，音乐，数字人）_2054887667418050562.json, 视频生成/图生视频/电商专属--图生视频--AI数字人对口型RCM+Infinite Talk_2056187222017224706.json, 视频生成/图生视频/电商专属--图生视频--AI数字人对口型RCM+Infinite Talk_2056198886519263233.json, 视频生成/图生视频/直播带货数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1993682109309059073.json, 视频生成/图生视频/超自然Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主播对口型_2005895609095782402.json, 视频生成/图生视频/高动态Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主播对口型_2004571944911601665.json, 视频生成/文生视频/AI演唱数字人对口型RCM+Infinite+Talk+VoxCPM+TTS1.5 (1)_2034196163921977346.json, 视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json]
+members: [图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json, 图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json, 数字人/数字人/API-对口型-数字人-最新_2070339599389511682.json, 数字人/数字人/API-对口型-数字人_2043715361241047042.json, 数字人/数字人/API-对口型-数字人_2067238745916657666.json, 数字人/数字人/API-对口型-数字人（1280）_2057461580308238337.json, 数字人/数字人/API-对口型数字人-1280_2057455520889524226.json, 数字人/数字人/CustomerKing 数字人商品带货_2080338543561502721.json, 数字人/数字人/Infinite Talk数字人_1978415131019382786.json, 数字人/数字人/InfiniteTalk单人版数字人【超过1分钟的】_2003019304549380098.json, 数字人/数字人/InfiniteTalk图片对口型_1999422006565236738.json, 数字人/数字人/InfiniteTalk数字人-简单好用易理解_1991355341403193346.json, 数字人/数字人/Infinitetalk数字人_2006979668984991746.json, 视频生成/图生视频/Infinitetalk数字人_1989166244014198786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2072520035003879425.json、视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2075913669199884290.json、视频生成/图生视频/对口型 MV 唱歌音频音频驱动_2045503009345507330.json、视频生成/图生视频/数字人口播 一键生成带货数字人视频 图生视频_2073671180170645506.json、视频生成/图生视频/数字人口播 美妆模特 主播 静态图一键生成带货数字人视频_2074322783164788738.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json、图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json、数字人/数字人/API-对口型-数字人-最新_2070339599389511682.json、数字人/数字人/API-对口型-数字人_2043715361241047042.json、数字人/数字人/API-对口型-数字人_2067238745916657666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
-- `Float to Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `Int`
 - `LoadImage`
-- `MultiTalkModelLoader`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkWav2VecEmbeds`
-- `RH_GetAudioDuration`
 - `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 13/15 个有
-- `AudioSeparation` —— 11/15 个有
-- `SoundFlow_TrimAudio` —— 11/15 个有
-- `easy anythingIndexSwitch` —— 11/15 个有
-- `Int` —— 10/15 个有
-- `PrimitiveStringMultiline` —— 10/15 个有
-- `Apply Whisper` —— 7/15 个有
-- `FlashVSRNode` —— 7/15 个有
-- `String Literal` —— 7/15 个有
-- `VoxCPM_TTS` —— 7/15 个有
-- `Fast Groups Muter (rgthree)` —— 6/15 个有
-- `GetNode` —— 3/15 个有
-- `SetNode` —— 3/15 个有
-- `AudioCrop` —— 2/15 个有
-- `PreviewAudio` —— 2/15 个有
-- `RHHiddenNodes` —— 2/15 个有
-- `WanVideoTorchCompileSettings` —— 2/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
-- `PrimitiveFloat` —— 1/15 个有
-- `intToFloat _O` —— 1/15 个有
+- `AudioCrop` —— 13/14 个有
+- `easy showAnything` —— 13/14 个有
+- `LoadAudio` —— 12/14 个有
+- `WanVideoBlockSwap` —— 12/14 个有
+- `MultiTalkModelLoader` —— 11/14 个有
+- `WanVideoLoraSelect` —— 11/14 个有
+- `WanVideoModelLoader` —— 11/14 个有
+- `WanVideoTorchCompileSettings` —— 11/14 个有
+- `ImageResizeKJv2` —— 10/14 个有
+- `RH_GetAudioDuration` —— 10/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/14 个有
+- `easy int` —— 8/14 个有
+- `ImageUpscaleWithModel` —— 3/14 个有
+- `ImpactInt` —— 3/14 个有
+- `RHHiddenNodes` —— 3/14 个有
+- `Upscale Model Loader` —— 3/14 个有
+- `VHS_LoadAudioUpload` —— 3/14 个有
+- `CreateVideo` —— 2/14 个有
+- `GetImageRangeFromBatch` —— 2/14 个有
+- `GetImageSizeAndCount` —— 2/14 个有
+- `GetNode` —— 2/14 个有
+- `JWFloat` —— 2/14 个有
+- `PreViewVideo` —— 2/14 个有
+- `SaveAudio` —— 2/14 个有
+- `SetNode` —— 2/14 个有
+- `VHS_LoadVideo` —— 2/14 个有
+- `WanVideoEncode` —— 2/14 个有
+- `WanVideoTextEncodeCached` —— 2/14 个有
+- `Audio Duration (mtb)` —— 1/14 个有
+- `Text` —— 1/14 个有
+- `ToFloat` —— 1/14 个有
 
 ## 典型参数
 

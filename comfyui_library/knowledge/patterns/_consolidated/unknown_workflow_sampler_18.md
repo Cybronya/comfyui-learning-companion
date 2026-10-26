@@ -3,35 +3,34 @@ name: unknown_workflow_sampler_18
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.983333
-common_nodes: [ImageBatch, LoadImage, RunningHub_UNO_Loadmodel, RunningHub_UNO_Sampler, SaveImage]
+coverage: 0.972167
+common_nodes: [CR Prompt Text, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
 problems: []
 missing: []
-members: [图片生成/图生图/UNO 多图像多主体可控性图像生成_1910316871583789058.json, 图片生成/图生图/UNO 多图多主体精准控制多图融合_1910522550877679617.json, 图片生成/图生图/UNO 虚拟试穿_1910336322924441601.json, 图片生成/图生图/UNO单图_1910828718959357954.json, 图片生成/图生图/UNO多图片融合工作流_1912904597319446529.json, 图片生成/文生图/字节多主体一致性框架UNO_1910646097818152962.json]
+members: [图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json, 图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json, 图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json, 图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json, 图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json, 图片生成/文生图/SenseNova 文生图_2053116115265572866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UNO 多图像多主体可控性图像生成_1910316871583789058.json、图片生成/图生图/UNO 多图多主体精准控制多图融合_1910522550877679617.json、图片生成/图生图/UNO 虚拟试穿_1910336322924441601.json、图片生成/图生图/UNO单图_1910828718959357954.json、图片生成/图生图/UNO多图片融合工作流_1912904597319446529.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json、图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json、图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json、图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json、图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ImageBatch`
-- `LoadImage`
-- `RunningHub_UNO_Loadmodel`
-- `RunningHub_UNO_Sampler`
+- `CR Prompt Text`
 - `SaveImage`
+- `SenseNova_SM_Model`
+- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `Primitive string [Crystools]` —— 1/6 个有
+- `LoadImage` —— 4/6 个有
+- `ImageConcanate` —— 2/6 个有
 
 ## 典型参数
 

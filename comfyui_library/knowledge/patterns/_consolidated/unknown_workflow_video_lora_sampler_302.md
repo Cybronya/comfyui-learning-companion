@@ -1,80 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_302
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.592571
-common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), GetNode, Int, JjkText, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, ttN concat]
+coverage: 0.926375
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Unified, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数字人电商版 V3.0_2071042945586909186.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题-电商版_2068617926189600770.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-30秒_2067556103998763009.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_2067570521318969346.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2067587703197224961.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台_2066087123450683394.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台_2072548210463301634.json]
+members: [视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json, 视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json, 视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json, 视频生成/文生视频/minimaxH3全能黑科技工作流（10s只需5分钟）_2098047284964585473.json, 视频生成/文生视频/minimaxH3单采_双采工作流_2100606405177856002.json, 视频生成/文生视频/【变态加速高清版】MinMaxH3 全能参考-推荐_2098434067468476417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_302
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数字人电商版 V3.0_2071042945586909186.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题-电商版_2068617926189600770.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-30秒_2067556103998763009.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_2067570521318969346.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2067587703197224961.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json、视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json、视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CS-LTXGridDirector`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Int`
-- `JjkText`
+- `CLIPLoader`
+- `CR Text`
 - `KSamplerSelect`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
+- `MiniMaxH3Unified`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/7 个有
-- `孤海注释` —— 6/7 个有
-- `MultiTextConcatenate` —— 4/7 个有
-- `TTResolutionSelector` —— 4/7 个有
-- `AILab_QwenVL_Advanced` —— 1/7 个有
-- `Bjornulf_TextToStringAndSeed` —— 1/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `ConcatTextOfUtils` —— 1/7 个有
-- `FlashVSRNode` —— 1/7 个有
-- `ImageLoader` —— 1/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `RegexReplace` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `SaveTextNode` —— 1/7 个有
-- `easy positive` —— 1/7 个有
-- `easy promptConcat` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
-- `kkRegexNode` —— 1/7 个有
+- `Label (rgthree)` —— 7/8 个有
+- `MiniMaxChunkFeedForward` —— 6/8 个有
+- `MiniMaxLowVRAMAttention` —— 6/8 个有
+- `VAEDecode` —— 6/8 个有
+- `VAEDecodeAudio` —— 6/8 个有
+- `H3SigmaRefiner` —— 5/8 个有
+- `MiniMaxH3AVDecodeT8` —— 5/8 个有
+- `ConditioningZeroOut` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `PreviewImage` —— 3/8 个有
+- `SelfLiftH3Sampler` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `VHS_SelectImages` —— 3/8 个有
+- `MemoryCleaner` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `ComfyMathExpression` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `ManualSigmas` —— 1/8 个有
 
 ## 典型参数
 

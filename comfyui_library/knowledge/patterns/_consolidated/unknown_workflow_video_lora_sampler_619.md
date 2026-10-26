@@ -1,65 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_619
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.651667
-common_nodes: [BasicGuider, BasicScheduler, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UniBlockSwap, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, VRAM_Debug, easy clearCacheAll, easy ifElse]
+coverage: 0.66125
+common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json, 视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json, 视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json]
+members: [视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json, 视频生成/文生视频/lynx标准工作流_1975939269380452353.json, 视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json, 视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_619
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json、视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json、视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json、视频生成/文生视频/lynx标准工作流_1975939269380452353.json、视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json、视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UniBlockSwap`
-- `VAEDecode`
-- `VAEDecodeAudio`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `easy clearCacheAll`
-- `easy ifElse`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `MiniMaxH3BlockCacheT8` —— 2/3 个有
-- `MiniMaxLowVRAMAttention` —— 2/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `SplitSigmas` —— 2/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `RandomSeedNoise` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `VAEEncodeAudio` —— 1/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RMBG` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

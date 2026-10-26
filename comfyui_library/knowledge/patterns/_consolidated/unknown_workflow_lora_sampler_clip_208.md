@@ -3,77 +3,75 @@ name: unknown_workflow_lora_sampler_clip_208
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.877
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Replace, EmptySD3LatentImage, JDCN_StringToList, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.444
+common_nodes: [Anything Everywhere, BasicScheduler, CLIPLoader, CLIPTextEncode, ClownOptions_ExtraOptions_Beta, ClownsharKSampler_Beta, ClownsharkChainsampler_Beta, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageStitch, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, ResizeImageMaskNode, ResolutionSelector, SaveImage, Seed (rgthree), SetNode, SharkOptions_Beta, SigmasPreview, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
+problems: []
 missing: []
-members: [图片生成/文生图/各式写真生成器_2052206066884202498.json, 图片生成/文生图/摄影扭蛋机_zip_2053515891534512130.json, 图片生成/文生图/萌男摇摇乐_2052015200747962369.json]
+members: [图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json, 图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json, 视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/各式写真生成器_2052206066884202498.json、图片生成/文生图/摄影扭蛋机_zip_2053515891534512130.json、图片生成/文生图/萌男摇摇乐_2052015200747962369.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json、图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json、视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Anything Everywhere`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Replace`
-- `EmptySD3LatentImage`
-- `JDCN_StringToList`
-- `KSampler`
+- `ClownOptions_ExtraOptions_Beta`
+- `ClownsharKSampler_Beta`
+- `ClownsharkChainsampler_Beta`
+- `EmptyLatentImage`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageStitch`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ProcessString`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `SharkOptions_Beta`
+- `SigmasPreview`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-
-**可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `DuckHideNode` —— 1/3 个有
-- `HAIGC_SaveImagesToZip` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RegexExtract` —— 1/3 个有
-- `easy getNode` —— 1/3 个有
-- `easy setNode` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `easy promptLine`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 6 | 3 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | bong_tangent | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 2 | 2 - 2 | 3 | 100% |
+| 采样算法 | -1 | -1 - -1 | 3 | 100% |
+| 调度器 | 1 | 1 - 1 | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 6，3 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 bong_tangent，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 -1，观测区间 -1 - -1，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

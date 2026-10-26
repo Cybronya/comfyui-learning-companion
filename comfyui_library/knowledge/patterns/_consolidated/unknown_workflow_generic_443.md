@@ -3,36 +3,38 @@ name: unknown_workflow_generic_443
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.633333
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
+coverage: 0.814
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/GT-Image-2---文生图_2046759115384426497.json, 图片生成/文生图/gxx-image-2文生图（贞贞的AI工坊-Chat模式）_2046481114121904130.json, 图片生成/文生图/全能图片G-image-2图像编辑+文生图（贞贞的AI工坊-Chat模式）_2046589163054567425.json, 图片生成/文生图/新王者图像编辑 gxx-image-2 全能图像编辑（贞贞的AI工坊-Chat API模式）_2046817026815041538.json, 图片生成/文生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046836294315151362.json, 图片生成/文生图/（0.04积分）全能图片G V2文生图（贞贞的AI工坊-异步任务）_2046776565219987457.json]
+members: [图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json, 图片生成/图生图/产品更换_2057689275629654017.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json, 图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json, 图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json, 图片生成/图生图/自用全能图片_2040318979763347458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_443
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/GT-Image-2---文生图_2046759115384426497.json、图片生成/文生图/gxx-image-2文生图（贞贞的AI工坊-Chat模式）_2046481114121904130.json、图片生成/文生图/全能图片G-image-2图像编辑+文生图（贞贞的AI工坊-Chat模式）_2046589163054567425.json、图片生成/文生图/新王者图像编辑 gxx-image-2 全能图像编辑（贞贞的AI工坊-Chat API模式）_2046817026815041538.json、图片生成/文生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046836294315151362.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json、图片生成/图生图/产品更换_2057689275629654017.json、图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json、图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json、图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+- `Image Comparer (rgthree)`
+- `LoadImage`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gpt_image_2` —— 4/6 个有
-- `Comfly_gpt_image_2_S2A` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `CR Prompt Text` —— 5/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
+- `RH_Nano_Banana_Image2Image` —— 2/6 个有
+- `LayerUtility: TextJoin` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `TextInputNode` —— 1/6 个有
 
 ## 典型参数
 

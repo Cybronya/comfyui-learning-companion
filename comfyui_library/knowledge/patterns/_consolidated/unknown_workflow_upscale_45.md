@@ -3,34 +3,37 @@ name: unknown_workflow_upscale_45
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [Image Comparer (rgthree), LoadImage, SUPIR_Upscale, SaveImage]
+coverage: 0.778
+common_nodes: [GetImageSizeAndCount, Image Comparer (rgthree), ImageConcanate, ImpactFloat, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/水彩放大_2062547319521898497.json, 图片生成/图生图/矢量级放大 无损_1950225257456164865.json]
+members: [图片生成/图生图/生图-图放大-PMRF_1983045602609102849.json, 图片生成/图生图/生图-图放大快速-模型_1983043548167700481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_45
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/水彩放大_2062547319521898497.json、图片生成/图生图/矢量级放大 无损_1950225257456164865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图放大-PMRF_1983045602609102849.json、图片生成/图生图/生图-图放大快速-模型_1983043548167700481.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `GetImageSizeAndCount`
 - `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `ImpactFloat`
 - `LoadImage`
-- `SUPIR_Upscale`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ResizeImagesByLongerEdge` —— 1/2 个有
-- `easy imageScaleDownToSize` —— 1/2 个有
+- `CR Upscale Image` —— 1/2 个有
+- `PMRF` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,39 +3,34 @@ name: unknown_workflow_generic_1265
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8255
-common_nodes: [Get Image Size, Image Comparer (rgthree), ImageResize+, ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, easy compare, easy ifElse]
+coverage: 0.667
+common_nodes: [ImageScaleToMaxDimension, LoadImage, SaveImage, f754a936-daaf-4b6e-9658-41fdc54d301d]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2高清放大流_2003292714370260994.json, 图片生成/图生图/seedvr2 超高清无损放大 文字、人像等都非常给力_1975487646812213250.json]
+members: [comfyui-workflow-templates-json/image_qwen_image_layered.json, comfyui-workflow-templates-json/image_qwen_image_layered_control.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1265
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大流_2003292714370260994.json、图片生成/图生图/seedvr2 超高清无损放大 文字、人像等都非常给力_1975487646812213250.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_layered.json、comfyui-workflow-templates-json/image_qwen_image_layered_control.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
+- `ImageScaleToMaxDimension`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `easy compare`
-- `easy ifElse`
+- `f754a936-daaf-4b6e-9658-41fdc54d301d`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `1ea4fa01-a81b-4420-a03c-f60019e69a92` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

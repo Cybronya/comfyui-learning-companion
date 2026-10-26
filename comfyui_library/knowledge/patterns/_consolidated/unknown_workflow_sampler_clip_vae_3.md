@@ -1,55 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_vae_3
 type: Unknown Workflow
-frequency: 21
+frequency: 16
 level: moderate
-coverage: 0.838143
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.90425
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json, 图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json, 图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json, 图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json, 图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json, 图片生成/文生图/Flux2 Klein-文生图 加速版10秒出图_2012172099653214210.json, 图片生成/文生图/Flux2-Klein文生图_2012285704222543873.json, 图片生成/文生图/Flux2-klein-9b-fp8 基础文生图_2016379670488424449.json, 图片生成/文生图/Flux2-klein-9b-fp8 文生图_2013086202567598081.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2013502856430620674.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084470823594848258.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084518939031326721.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084529249729474562.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2085253506654621698.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2085255233579601922.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2087429216940937218.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2087708601073881089.json, 图片生成/文生图/Flux2.Klein文生图基础款_2013133525679087617.json, 图片生成/文生图/Flux2.Klein文生图基础款（单图生成）_2039547259301400577.json, 图片生成/文生图/Klein-t2i_2073767273445289985.json, 图片生成/文生图/Klein4B文生图(又快又好)_2036253514183221249.json]
+members: [图片生成/图生图/1.人物换装_2050619333541412866.json, 图片生成/图生图/20260722一致性personal_2079764596788912130.json, 图片生成/图生图/9.批量精修白底图_2050773369066401794.json, 图片生成/图生图/F.2Klein9B万物迁移_2066737707379945473.json, 图片生成/图生图/FLUX-Klein-图像编辑-10秒急速出图_2012126304631529473.json, 图片生成/图生图/FLUX.Klein-9B一致性lora单图编辑_2033155455794548737.json, 图片生成/图生图/Flux-2-Klein-9b 万物迁移_2065056521217728513.json, 图片生成/图生图/Klein - 万物迁移_2051859267984084993.json, 图片生成/图生图/Klein - 万物迁移_2065714934046089217.json, 图片生成/图生图/Klein - 万物迁移光影_2065342945917755393.json, 图片生成/图生图/Klein_-_万物迁移重新打光_2082641469969616898.json, 图片生成/图生图/Klein_-_万物迁移重新打光_2082650177730600962.json, 图片生成/图生图/万物迁移-Flux-2Klein-9b_2064567178598371329.json, 图片生成/图生图/光影迁移-打光色调复刻_kelin打光工作流_2068244841733115905.json, 图片生成/文生图/Klein - 万物迁移自用_2064658422053818370.json, 图片生成/文生图/Klein-一致性_2096434383749210114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json、图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json、图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json、图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json、图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/1.人物换装_2050619333541412866.json、图片生成/图生图/20260722一致性personal_2079764596788912130.json、图片生成/图生图/9.批量精修白底图_2050773369066401794.json、图片生成/图生图/F.2Klein9B万物迁移_2066737707379945473.json、图片生成/图生图/FLUX-Klein-图像编辑-10秒急速出图_2012126304631529473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 20/21 个有
-- `PrimitiveStringMultiline` —— 18/21 个有
-- `ConditioningZeroOut` —— 16/21 个有
-- `PrimitiveInt` —— 16/21 个有
-- `easy int` —— 4/21 个有
-- `Seed (rgthree)` —— 3/21 个有
-- `AddLabel` —— 2/21 个有
-- `LoraLoaderModelOnly` —— 2/21 个有
-- `CR Text Concatenate` —— 1/21 个有
-- `GGUFLoaderKJ` —— 1/21 个有
-- `LoadImage` —— 1/21 个有
-- `PrimitiveBoolean` —— 1/21 个有
-- `ResolutionSelector` —— 1/21 个有
-- `easy ifElse` —— 1/21 个有
+- `CLIPLoader` —— 15/16 个有
+- `ConditioningZeroOut` —— 15/16 个有
+- `GetImageSize` —— 15/16 个有
+- `ImageScaleToTotalPixels` —— 15/16 个有
+- `LoadImage` —— 15/16 个有
+- `LoraLoaderModelOnly` —— 15/16 个有
+- `PreviewImage` —— 15/16 个有
+- `UNETLoader` —— 15/16 个有
+- `CR Text` —— 14/16 个有
+- `LayerUtility: ImageReel` —— 14/16 个有
+- `LayerUtility: ImageReelComposit` —— 14/16 个有
+- `Image Comparer (rgthree)` —— 12/16 个有
+- `ImageStitch` —— 11/16 个有
+- `PrimitiveFloat` —— 10/16 个有
+- `ImageScaleToMaxDimension` —— 2/16 个有
+- `JWFloat` —— 2/16 个有
+- `ClothesSegment` —— 1/16 个有
+- `ColorMatchToReference` —— 1/16 个有
+- `CustomAddLabel` —— 1/16 个有
+- `HAIGC_LoadImagesFromZip` —— 1/16 个有
+- `ImageCompositeMasked` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LoadDiffusionModelShared //Inspire` —— 1/16 个有
+- `LoadTextEncoderShared //Inspire` —— 1/16 个有
 
 ## 典型参数
 

@@ -3,33 +3,46 @@ name: unknown_workflow_video_130
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [GetVideoComponents, HunyuanVideoFoley, LoadVideo, VHS_VideoCombine]
+coverage: 0.775
+common_nodes: [GrowMaskWithBlur, ImageFromBatch+, InvertMask, LayerMask: MaskBoxDetect, LayerUtility: CropByMask, LayerUtility: ImageBlendAdvance V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PM_BoxCropImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy imageSizeBySide]
 problems: []
 missing: []
-members: [音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json, 音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json]
+members: [视频生成/图生视频/视频添加动态水印任意位置自定义视频水印样式_1976642655776055297.json, 视频生成/图生视频/视频添加水印_1976608556025815041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_130
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json、音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频添加动态水印任意位置自定义视频水印样式_1976642655776055297.json、视频生成/图生视频/视频添加水印_1976608556025815041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `LoadVideo`
+- `GrowMaskWithBlur`
+- `ImageFromBatch+`
+- `InvertMask`
+- `LayerMask: MaskBoxDetect`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageBlendAdvance V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PM_BoxCropImage`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `easy imageSizeBySide`
 
 **可变部分**（部分 workflow 才有）：
-- `Textbox` —— 1/2 个有
+- `ImageBatchMultiple+` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `easy imageCount` —— 1/2 个有
 
 ## 典型参数
 

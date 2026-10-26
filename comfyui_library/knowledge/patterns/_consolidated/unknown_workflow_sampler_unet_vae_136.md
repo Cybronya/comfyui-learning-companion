@@ -3,75 +3,82 @@ name: unknown_workflow_sampler_unet_vae_136
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.81775
-common_nodes: [CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+coverage: 0.839625
+common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2042470485371396097.json, 音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2044010905905668097.json, 音频生成/音频生成/Acestep-xl-turbo音乐歌曲自动生成器_2042813080727461890.json, 音频生成/音频生成/Acestep-xl音乐生成_2043108252040306689.json, 音频生成/音频生成/acestep-v15-xl-turbo 音乐歌曲生成  Acestep-xl-turbo 开源霸主_2042573351738155009.json, 音频生成/音频生成/一键生成音乐，效果堪比SUNO!_2047582479183257601.json, 音频生成/音频生成/手_自动歌词-音乐歌曲生成Acestep-xl-turbo_2043000518099869697.json, 音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成_2042652525186256898.json]
+members: [图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json, 视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json, 视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json, 视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json, 视频生成/图生视频/H3_打斗工作流_2102828840786681857.json, 视频生成/图生视频/H3_打斗工作流_2105855489631408129.json, 视频生成/图生视频/MiniMax+H3-9.2_2095010503541215234.json, 视频生成/图生视频/黄色的大宝剑打斗流_2109476674894131202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_136
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2042470485371396097.json、音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2044010905905668097.json、音频生成/音频生成/Acestep-xl-turbo音乐歌曲自动生成器_2042813080727461890.json、音频生成/音频生成/Acestep-xl音乐生成_2043108252040306689.json、音频生成/音频生成/acestep-v15-xl-turbo 音乐歌曲生成  Acestep-xl-turbo 开源霸主_2042573351738155009.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json、视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json、视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json、视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json、视频生成/图生视频/H3_打斗工作流_2102828840786681857.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveAudioMP3`
-- `TextEncodeAceStepAudio1.5`
+- `BasicGuider`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 7/8 个有
-- `RegexExtract` —— 7/8 个有
-- `VAELoader` —— 7/8 个有
-- `easy anythingIndexSwitch` —— 7/8 个有
-- `RH_LLMAPI_Pro_Node` —— 6/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `ShellAgentPluginOutputText` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `BasicScheduler` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ComfyMathExpression` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `PrimitiveFloat` —— 6/8 个有
+- `ResolutionSelector` —— 6/8 个有
+- `CreateVideo` —— 5/8 个有
+- `ModelAttentionBackend` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `DisableNoise` —— 4/8 个有
+- `ExtendIntermediateSigmas` —— 4/8 个有
+- `SplitSigmasDenoise` —— 4/8 个有
+- `easy cleanGpuUsed` —— 4/8 个有
+- `INTConstant` —— 3/8 个有
+- `LoadAudio` —— 3/8 个有
+- `LoraLoaderBypassModelOnly` —— 3/8 个有
+- `MiniMaxH3SigmaShift` —— 3/8 个有
+- `SolAttnMiniMax` —— 3/8 个有
+- `VHS_VideoCombine` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `ModelPreviewOverrideKJ` —— 2/8 个有
+- `ResizeShortestToNode` —— 2/8 个有
+- `SFH3MultimodalDirector` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `CLIPTextEncode` —— 1/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `ManualSigmas` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `Text Concatenate` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 8 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.2 | 8 | 94% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 8/8 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，8 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.2，8 个样本，取值集中（一致性 94%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：发现KSampler但没有VAEDecode
-- 高发问题（6/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

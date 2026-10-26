@@ -3,31 +3,31 @@ name: unknown_workflow_sampler_clip_unet_268
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8332
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9624
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/danotebook-flux2-klein-9b_2062427994236481537.json, 图片生成/文生图/flux2-ftp8 workflow_1993525727769411585.json, 图片生成/文生图/flux2_文生图+图片参考_1993696007951237121.json, 图片生成/文生图/flux2基础_文生图_图生图_迁移_1993562025060139010.json, "视频生成/文生视频/谁与争锋 Flux2 Z-image,  多图编辑 挑战 Qwen Edit_1994227326332370945.json"]
+members: [图片生成/图生图/低精图洗图+服装替换_2085353987464847361.json, 图片生成/图生图/图案转刺绣风格_2043579107664994306.json, 图片生成/图生图/多图编辑组合_2078268396902379521.json, 图片生成/图生图/服装替换_2083162795322994690.json, 图片生成/文生图/Flux2 Klein 多图编辑&文生图 自由控制 平替全能图片 4B 极速 & 9B 质量_2012361850310107138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_268
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/danotebook-flux2-klein-9b_2062427994236481537.json、图片生成/文生图/flux2-ftp8 workflow_1993525727769411585.json、图片生成/文生图/flux2_文生图+图片参考_1993696007951237121.json、图片生成/文生图/flux2基础_文生图_图生图_迁移_1993562025060139010.json、视频生成/文生视频/谁与争锋 Flux2 Z-image,  多图编辑 挑战 Qwen Edit_1994227326332370945.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/低精图洗图+服装替换_2085353987464847361.json、图片生成/图生图/图案转刺绣风格_2043579107664994306.json、图片生成/图生图/多图编辑组合_2078268396902379521.json、图片生成/图生图/服装替换_2083162795322994690.json、图片生成/文生图/Flux2 Klein 多图编辑&文生图 自由控制 平替全能图片 4B 极速 & 9B 质量_2012361850310107138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -40,17 +40,21 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 4/5 个有
-- `FluxGuidance` —— 4/5 个有
-- `CFGGuider` —— 1/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
-- `StringCompare` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 4/5 个有
+- `CR Text` —— 3/5 个有
+- `EmptyFlux2LatentImage` —— 3/5 个有
+- `AspectRatio` —— 2/5 个有
+- `EmptySD3LatentImage` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `ImageResize+` —— 2/5 个有
+- `easy imageSize` —— 2/5 个有
+- `Any Switch (rgthree)` —— 1/5 个有
+- `CR Text Concatenate` —— 1/5 个有
+- `Display Any (rgthree)` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Qwen3VL_Chat` —— 1/5 个有
+- `Seed_` —— 1/5 个有
+- `ttN text` —— 1/5 个有
 
 ## 典型参数
 

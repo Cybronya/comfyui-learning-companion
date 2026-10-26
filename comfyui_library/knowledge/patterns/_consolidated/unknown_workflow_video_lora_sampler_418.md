@@ -1,59 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_418
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.9414
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 6
+level: moderate
+coverage: 0.632167
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json, 视频生成/图生视频/Wan2.2-native-control-Inp_1955921227057647617.json, 视频生成/图生视频/smooth图生视频工作流_2067249517136797697.json, 视频生成/图生视频/wan2.2图生视频官方工作流_2037349147073843201.json, 视频生成/图生视频/wan2.2极速4步图生视频_1963965754733416450.json]
+members: [视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json, 视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json, 视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json, 视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json, 视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json, 视频生成/文生视频/通义万相wan2.2视频转绘视频人物替换视频换脸V1.0_1957329600441413634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_418
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json、视频生成/图生视频/Wan2.2-native-control-Inp_1955921227057647617.json、视频生成/图生视频/smooth图生视频工作流_2067249517136797697.json、视频生成/图生视频/wan2.2图生视频官方工作流_2037349147073843201.json、视频生成/图生视频/wan2.2极速4步图生视频_1963965754733416450.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json、视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json、视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json、视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json、视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
+全部 6 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `WanImageToVideo` —— 3/5 个有
-- `CreateVideo` —— 1/5 个有
-- `FlashVSRNode` —— 1/5 个有
-- `ImageBatchExtendWithOverlap` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `WanAdvancedI2V` —— 1/5 个有
-- `WanFunInpaintToVideo` —— 1/5 个有
+- `DepthAnything_V2` —— 5/6 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
+- `GetNode` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `AIO_Preprocessor` —— 4/6 个有
+- `WanVideoTorchCompileSettings` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `ImpactInt` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `ImageBlend` —— 2/6 个有
+- `RHHiddenNodes` —— 2/6 个有
+- `easy anythingIndexSwitch` —— 2/6 个有
+- `ImageBlur` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `VHS_VideoInfoLoaded` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
+- `workflow>文本处理` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 8 | 4 - 20 | 5 | 33% |
-| 采样算法 | 1 | 1 - 3.5 | 5 | 39% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,9 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 20，5 个样本，取值分散，一致性仅 33%
-- 采样算法 中位数 1，观测区间 1 - 3.5，5 个样本，取值分散，一致性仅 39%
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

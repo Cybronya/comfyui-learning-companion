@@ -3,33 +3,35 @@ name: unknown_workflow_generic_474
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [Float, LoadAudio, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline]
+coverage: 0.778
+common_nodes: [CR Text, CR Text Concatenate, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json, 音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json, 音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json, 音频生成/音频生成/音乐生成（支持歌曲模仿）_2008964386093797378.json]
+members: [图片生成/图生图/全能图像G image2.0证件照生成_2059524530862903297.json, 图片生成/图生图/全能图像G image2.0证件照生成_2071074605229494274.json, 图片生成/图生图/老照片修复全能图片Gimage-2.0-图生图-低价渠道版(鸡pt)_2047869244360105985.json, 图片生成/图生图/视频封面海报制作_2064633664679534593.json, 图片生成/文生图/全能图像G image2.0证件照生成_2070716298870476802.json, 图片生成/文生图/全能图像G image2.0证件照生成_2071058363613532162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_474
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json、音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json、音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像G image2.0证件照生成_2059524530862903297.json、图片生成/图生图/全能图像G image2.0证件照生成_2071074605229494274.json、图片生成/图生图/老照片修复全能图片Gimage-2.0-图生图-低价渠道版(鸡pt)_2047869244360105985.json、图片生成/图生图/视频封面海报制作_2064633664679534593.json、图片生成/文生图/全能图像G image2.0证件照生成_2070716298870476802.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Float`
-- `LoadAudio`
-- `SaveAudio`
-- `SongBloomDecoder`
-- `SongBloomGenerate`
-- `SongBloomModelLoader`
-- `Text Multiline`
+- `CR Text`
+- `CR Text Concatenate`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `取色器_孤海` —— 4/6 个有
+- `ImageScale` —— 1/6 个有
 
 ## 典型参数
 

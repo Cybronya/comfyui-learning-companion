@@ -3,36 +3,33 @@ name: unknown_workflow_upscale_43
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.854
-common_nodes: [ImageScaleDownToSize, LoadImage, PreviewImage, SaveImage, Text Multiline]
+coverage: 0.9
+common_nodes: [ImageUpscaleWithModelBatched, LoadImage, SaveImage, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4.0 图像编辑模型 多图编辑版_1966306375569674241.json, 图片生成/图生图/让修图师失业的老照片修复_1961379946193207297.json]
+members: [图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json, 图片生成/图生图/炒粉工作流_1977977937079193601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_43
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.0 图像编辑模型 多图编辑版_1966306375569674241.json、图片生成/图生图/让修图师失业的老照片修复_1961379946193207297.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json、图片生成/图生图/炒粉工作流_1977977937079193601.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScaleDownToSize`
+- `ImageUpscaleWithModelBatched`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `Text Multiline`
+- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 1/2 个有
-- `RH_Jimeng4_Image2Image` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

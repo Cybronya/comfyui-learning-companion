@@ -3,80 +3,68 @@ name: unknown_workflow_video_upscale_lora_42
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [Any Switch (rgthree), CLIPVisionLoader, CM_IntToFloat, CR Integer To String, CR String To Number, CR Text, CropFace, DWPreprocessor, Display Any (rgthree), FaceMaskFromPoseKeypoints, Fast Groups Muter (rgthree), Float, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImageScale, ImageUpscaleWithModelBatched, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewImage, RIFE VFI, ReActorFaceSwap, SetNode, ShowText|pysssss, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy imageIndexSwitch, easy int]
+coverage: 0.4525
+common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, EmptyAudio, GetImage, If ANY execute A else B, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextTrim, Yuan_H3Upscale3D, Yuan_MiniMaxH3Video, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy isNone, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/角色替换 _ 动作迁移 _ 图生视频 Wan2.2 Animate V4_2027691887594835969.json, 视频生成/图生视频/角色替换 _ 动作迁移 _ 图生视频 Wan2.2 Animate_2020368444805357570.json]
+members: [视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2089027291140681730.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.3（短剧版本直出1分钟）+全节点注释_2094057420535451650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_42
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/角色替换 _ 动作迁移 _ 图生视频 Wan2.2 Animate V4_2027691887594835969.json、视频生成/图生视频/角色替换 _ 动作迁移 _ 图生视频 Wan2.2 Animate_2020368444805357570.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2089027291140681730.json、视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.3（短剧版本直出1分钟）+全节点注释_2094057420535451650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Integer To String`
-- `CR String To Number`
+- `AudioConcat`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `CR Text`
-- `CropFace`
-- `DWPreprocessor`
-- `Display Any (rgthree)`
-- `FaceMaskFromPoseKeypoints`
-- `Fast Groups Muter (rgthree)`
-- `Float`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `ImageScale`
-- `ImageUpscaleWithModelBatched`
-- `LayerUtility: PurgeVRAM V2`
+- `ComfyMathExpression`
+- `EmptyAudio`
+- `GetImage`
+- `If ANY execute A else B`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PixelPerfectResolution`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
 - `PreviewImage`
-- `RIFE VFI`
-- `ReActorFaceSwap`
-- `SetNode`
-- `ShowText|pysssss`
-- `UpscaleModelLoader`
-- `VHS_LoadVideo`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageIndexSwitch`
-- `easy int`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 1/2 个有
-- `ImageHistogramMatch+` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YuanAudioList`
+- `YuanAudioSplit`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_H3MotionContext`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_H3Upscale3D`
+- `Yuan_MiniMaxH3Video`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy isNone`
+- `easy mathInt`
 
 ## 典型参数
 

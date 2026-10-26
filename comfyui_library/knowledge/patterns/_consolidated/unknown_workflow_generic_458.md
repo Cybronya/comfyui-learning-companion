@@ -3,38 +3,34 @@ name: unknown_workflow_generic_458
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.5575
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json, 视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json, 视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json, 视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json, 视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
+members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json, 图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json, 图片生成/图生图/seedream5.0-pro 换装_2082447847693312001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_458
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json、视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json、视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json、视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json、视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json、图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_sora2`
 - `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Concatenate` —— 3/6 个有
-- `Comfly_sora2_character` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `CR Text` —— 1/6 个有
+- `CR Prompt Text` —— 3/6 个有
+- `Text` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
 
 ## 典型参数
 

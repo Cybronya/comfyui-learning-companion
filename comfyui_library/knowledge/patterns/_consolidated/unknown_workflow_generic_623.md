@@ -1,40 +1,45 @@
 ---
 name: unknown_workflow_generic_623
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.889
-common_nodes: [LoadImage, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextureNode]
+coverage: 0.7866
+common_nodes: [AudioCrop, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json, comfyui-workflow-templates-json/api_meshy7_image_to_model.json, comfyui-workflow-templates-json/api_meshy_image_to_model.json, comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json]
+members: [数字人/数字人/语音克隆 一键生成 LongCat-AudioDIT 单人_2094118911351541761.json, 音频生成/音频生成/LongCat-AudioDiT 超真实语气 语音克隆工作流_2044942830090592258.json, 音频生成/音频生成/LongCat龙猫语音单人_2075500484881903618.json, 音频生成/音频生成/单人文字转音频工作流_2077368923833585666.json, 音频生成/音频生成/单人语音克隆_2042506511330582529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_623
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json、comfyui-workflow-templates-json/api_meshy7_image_to_model.json、comfyui-workflow-templates-json/api_meshy_image_to_model.json、comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/语音克隆 一键生成 LongCat-AudioDIT 单人_2094118911351541761.json、音频生成/音频生成/LongCat-AudioDiT 超真实语气 语音克隆工作流_2044942830090592258.json、音频生成/音频生成/LongCat龙猫语音单人_2075500484881903618.json、音频生成/音频生成/单人文字转音频工作流_2077368923833585666.json、音频生成/音频生成/单人语音克隆_2042506511330582529.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `MeshyAnimateModelNode`
-- `MeshyRefineNode`
-- `MeshyRigModelNode`
-- `MeshyTextureNode`
+全部 5 个 workflow 都包含：
+- `AudioCrop`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `PreviewAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `MeshyImageToModelNode` —— 3/4 个有
-- `SaveGLB` —— 3/4 个有
-- `MeshyMultiImageToModelNode` —— 1/4 个有
-- `Preview3D` —— 1/4 个有
-- `Save3DAdvanced` —— 1/4 个有
+- `CR Prompt Text` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `Fast Groups Muter (rgthree)` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RHExtractAudio` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

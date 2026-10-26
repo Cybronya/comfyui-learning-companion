@@ -3,29 +3,33 @@ name: unknown_workflow_generic_1502
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
+coverage: 0.708
+common_nodes: [AspectRatioSelect, JjkText, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
+members: [图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json, 图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1502
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json、图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
+- `AspectRatioSelect`
+- `JjkText`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `Text`
+- `ShowText|pysssss`
 
 ## 典型参数
 

@@ -3,98 +3,77 @@ name: unknown_workflow_lora_sampler_unet_150
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.83
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageRangeFromBatch, GetVideoComponents, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SpectrumApplyMiniMaxH3, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy batchAnything]
-problems: []
+coverage: 1
+common_nodes: [CFGNorm, CLIPLoader, CR Text, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 fl2v无限长视频_2087006461363843073.json, 视频生成/图生视频/MiniMax-H3 fl2v视频扩展_2086765853382627330.json, 视频生成/图生视频/MiniMax-H3 ref2v无限长视频_2090036967839981569.json, 视频生成/图生视频/MiniMax-H3 无限长视频 提示词优化_2087038665250922498.json, 视频生成/图生视频/MiniMax-H3 无限长视频生成+二采放大_2094089704038821890.json]
+members: [图片生成/图生图/next shoot Qwen edit fish cut web APP_v1.1_2001316096290549761.json, 图片生成/图生图/next shoot Qwen edit fish cut web APP_v1.2_2001357640313827329.json, 图片生成/图生图/qwen_Edit_2511_角色三视图_2004958259977089025.json, 图片生成/图生图/最新编辑【换装】  可以设置分辨率_2048304011274620929.json, 图片生成/图生图/柏辰电商-宠物图变为德文猫V3_1989152999404613634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_150
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 fl2v无限长视频_2087006461363843073.json、视频生成/图生视频/MiniMax-H3 fl2v视频扩展_2086765853382627330.json、视频生成/图生视频/MiniMax-H3 ref2v无限长视频_2090036967839981569.json、视频生成/图生视频/MiniMax-H3 无限长视频 提示词优化_2087038665250922498.json、视频生成/图生视频/MiniMax-H3 无限长视频生成+二采放大_2094089704038821890.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/next shoot Qwen edit fish cut web APP_v1.1_2001316096290549761.json、图片生成/图生图/next shoot Qwen edit fish cut web APP_v1.2_2001357640313827329.json、图片生成/图生图/qwen_Edit_2511_角色三视图_2004958259977089025.json、图片生成/图生图/最新编辑【换装】  可以设置分辨率_2048304011274620929.json、图片生成/图生图/柏辰电商-宠物图变为德文猫V3_1989152999404613634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetImageRangeFromBatch`
-- `GetVideoComponents`
-- `KSamplerSelect`
+- `CR Text`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SpectrumApplyMiniMaxH3`
-- `Text Multiline`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy batchAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `LongTextToList` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `PreviewAny` —— 4/5 个有
-- `SDVN Any Show` —— 4/5 个有
-- `String Replace (mtb)` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `easy forLoopEnd` —— 4/5 个有
-- `easy forLoopStart` —— 4/5 个有
-- `string_util_StrLen` —— 4/5 个有
-- `AnySwitch` —— 3/5 个有
-- `Fast Bypasser (rgthree)` —— 3/5 个有
-- `JjkText` —— 3/5 个有
-- `Multi Text Merge` —— 3/5 个有
-- `TTP_text_mix` —— 3/5 个有
-- `AILab_QwenVL` —— 2/5 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LTXVSeparateAVLatent` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `MiniMaxH3ChainContext` —— 1/5 个有
-- `MiniMaxH3ChainExternalVideo` —— 1/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/5 个有
-- `Qwen3VL_Advanced` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `TrimAudioDuration` —— 1/5 个有
-- `Video Slice` —— 1/5 个有
-- `Yuan_H3MotionContext` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 4/5 个有
+- `CR Text Concatenate` —— 2/5 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 2/5 个有
+- `ImageResize+` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `SizeSelector` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
+- `图像缩放V2_孤海` —— 1/5 个有
+- `孤海图像缩放按像素` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 5 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1344 | 1080 - 1504 | 5 | 90% |
+| 高度 | 768 | 752 - 1920 | 5 | 58% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1344，观测区间 1080 - 1504，5 个样本，取值集中（一致性 90%）
+- 高度 中位数 768，观测区间 752 - 1920，5 个样本
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

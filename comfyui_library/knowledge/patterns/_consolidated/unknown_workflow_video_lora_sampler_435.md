@@ -1,76 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_435
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.491
-common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DuckHideNode, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG, easy saveText]
+coverage: 0.933
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, FlashVSR_SM_KSampler, FlashVSR_SM_Model, H3SigmaRefiner, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RHHiddenNodes, SelfLiftAvatarH3Sampler, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2012485583641255937.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2013095948842438657.json, 视频生成/图生视频/首尾帧视频_2005138908902031361.json]
+members: [视频生成/图生视频/高清去油版MinimaxH3-T1_2105922330722660354.json, 视频生成/图生视频/高清去油版MinimaxH3-T2_2105926309791752193.json, 视频生成/图生视频/高清去油版MinimaxH3-T3_2105926378402181122.json, 视频生成/图生视频/高画质minimaxH3-T1_2105599117824192514.json, 视频生成/图生视频/高画质minimaxH3-T2_2105603655398420481.json, 视频生成/图生视频/高画质minimaxH3-T3_2105610995262648321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_435
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2012485583641255937.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2013095948842438657.json、视频生成/图生视频/首尾帧视频_2005138908902031361.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/高清去油版MinimaxH3-T1_2105922330722660354.json、视频生成/图生视频/高清去油版MinimaxH3-T2_2105926309791752193.json、视频生成/图生视频/高清去油版MinimaxH3-T3_2105926378402181122.json、视频生成/图生视频/高画质minimaxH3-T1_2105599117824192514.json、视频生成/图生视频/高画质minimaxH3-T2_2105603655398420481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGZeroStar`
+全部 6 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DuckHideNode`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SaveImage`
-- `SetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `SelfLiftAvatarH3Sampler`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
-- `easy saveText`
-
-**可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `PainterI2V` —— 3/5 个有
-- `RunningHub Deepcleaner` —— 3/5 个有
-- `Textbox` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `MultiLinePromptMG` —— 2/5 个有
-- `TT_img_enc_v2` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `WanFirstLastFrameToVideo` —— 2/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | lcm | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 采样步数 | 1.22651e+09 | 3.47579e+08 - 2.0952e+09 | 6 | 56% |
+| Prompt 约束强度(CFG) | randomize | - | 6 | 100% |
+| 采样算法 | 2 | 2 - 2 | 6 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 6 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 6 | 100% |
 
 ## 常见问题
 
@@ -78,8 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 采样步数 中位数 1.22651e+09，观测区间 3.47579e+08 - 2.0952e+09，6 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，6 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，6 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，6 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，6 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.0952e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

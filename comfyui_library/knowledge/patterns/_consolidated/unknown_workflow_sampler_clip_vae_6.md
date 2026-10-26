@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_vae_6
 type: Unknown Workflow
-frequency: 16
+frequency: 15
 level: weak
-coverage: 0.977625
-common_nodes: [CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, VAEDecode, VAELoader, WanImageToVideo]
-problems: []
+coverage: 0.832867
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.2-14B图生视频_1951683752307142657.json, 视频生成/图生视频/【阡陌】wan2.2 GGUF+light4步加速lora图生视频工作流_1967787388695097345.json, 视频生成/图生视频/【阡陌】wan2.2+light4步加速lora图生视频工作流_1967772488862150657.json, 视频生成/图生视频/万相 Wan2.2  sage+lightx2V加速 图生视频_1949865527068024834.json, 视频生成/图生视频/万相Wan2.2图生视频_1994764866990878721.json, 视频生成/图生视频/万相wan2.2_14B图生视频官方工作流_1950181163430273026.json, 视频生成/图生视频/动态壁纸一键生成Wan2.2-live2D_2053650114769637377.json, 视频生成/图生视频/动态壁纸一键生成Wan2.2-live2D_2054459129242103809.json, 视频生成/图生视频/动态壁纸快速生成Wan2.2-live2D_2046114491431133185.json, 视频生成/图生视频/动态壁纸快速生成Wan2.2-live2D_2066869280796405762.json, 视频生成/图生视频/最新玩法子弹固定时间Wan2.2 LORA_1984131896915492865.json, 视频生成/图生视频/第1期：Wan2.2图生视频——《Wan2.2从入门到精通》_1954125145533247489.json, 视频生成/图生视频/（微观世界）小人国90秒81帧6步超极速图生视频V1_1950374828178104322.json, 视频生成/文生视频/Wan2.2 AI视频生成加速工作流_1954053840410857473.json, 视频生成/文生视频/wan2.2+GGUF+light4步加速lora图生视频工作流_1995845028314505218.json, 视频生成/文生视频/【老金驿站】14BWAN2.2--6步极速图生视频出片_1950558909717204993.json]
+members: [图片生成/文生图/AA--缓存加速Zimage-base-MeanCache5种加速模式对比_2019746684867190785.json, 图片生成/文生图/LH-DMT版本-2.生图片类-022.Z_image_turbo文生图_2016484426032619521.json, 图片生成/文生图/LH-DMT版本-2.生图片类-044.Qwen-Image-10步蒸馏-Q版3D人物_2016524825891704833.json, 图片生成/文生图/Neta Lumina新版Sota级动漫模型文生图_1948069349862060033.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_1959689364051800066.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2038785728322215938.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2039505785788567554.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2039620069642211330.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2042481267639328769.json, 图片生成/文生图/Nunchaku-Qwen-image-8步极速出图_1960003368511025153.json, 图片生成/文生图/Z-Image-Turbo文生图_1994260229521162241.json, 图片生成/文生图/Z-ImageBase-MeanCache加速-文生图_2019218139791237121.json, 图片生成/文生图/Z-image对比测试工作流_2068508638993534977.json, 图片生成/文生图/Z-image模型 与 Engineer v6 交叉对比-测试工作流_2065276186162458626.json, 图片生成/文生图/Z-turbo Engineer v6对比工作流_2064619941457907714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-14B图生视频_1951683752307142657.json、视频生成/图生视频/【阡陌】wan2.2 GGUF+light4步加速lora图生视频工作流_1967787388695097345.json、视频生成/图生视频/【阡陌】wan2.2+light4步加速lora图生视频工作流_1967772488862150657.json、视频生成/图生视频/万相 Wan2.2  sage+lightx2V加速 图生视频_1949865527068024834.json、视频生成/图生视频/万相Wan2.2图生视频_1994764866990878721.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/AA--缓存加速Zimage-base-MeanCache5种加速模式对比_2019746684867190785.json、图片生成/文生图/LH-DMT版本-2.生图片类-022.Z_image_turbo文生图_2016484426032619521.json、图片生成/文生图/LH-DMT版本-2.生图片类-044.Qwen-Image-10步蒸馏-Q版3D人物_2016524825891704833.json、图片生成/文生图/Neta Lumina新版Sota级动漫模型文生图_1948069349862060033.json、图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_1959689364051800066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：15
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 15 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `ModelSamplingSD3`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `VAEDecode`
 - `VAELoader`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 15/16 个有
-- `CreateVideo` —— 15/16 个有
-- `SaveVideo` —— 15/16 个有
-- `UNETLoader` —— 14/16 个有
-- `LoraLoaderModelOnly` —— 13/16 个有
-- `PathchSageAttentionKJ` —— 8/16 个有
-- `CFGZeroStar` —— 4/16 个有
-- `UnetLoaderGGUF` —— 4/16 个有
-- `VHS_VideoCombine` —— 2/16 个有
-- `CLIPLoaderGGUF` —— 1/16 个有
-- `Label (rgthree)` —— 1/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
+- `UNETLoader` —— 9/15 个有
+- `LayerUtility: PurgeVRAM` —— 6/15 个有
+- `NunchakuQwenImageDiTLoader` —— 6/15 个有
+- `AddLabel` —— 4/15 个有
+- `CR Prompt Text` —— 4/15 个有
+- `ImageConcatMulti` —— 4/15 个有
+- `easy seed` —— 3/15 个有
+- `ClipLoaderGGUF` —— 2/15 个有
+- `ConditioningZeroOut` —— 2/15 个有
+- `GetNode` —— 2/15 个有
+- `LoraLoaderModelOnly` —— 2/15 个有
+- `MeanCache_ZImage` —— 2/15 个有
+- `SetNode` —— 2/15 个有
+- `PreviewImage` —— 1/15 个有
+- `TeaCache` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 16 | 50% |
-| Prompt 约束强度(CFG) | 14 | 4 - 20 | 16 | 45% |
-| 采样算法 | 3.5 | 1 - 3.5 | 16 | 57% |
-| 调度器 | euler | - | 16 | 100% |
-| 重绘幅度 | simple | - | 16 | 100% |
+| 采样步数 | 20 | 8 - 50 | 15 | 31% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 5.5 | 15 | 41% |
+| 采样算法 | euler | - | 15 | 53% |
+| 调度器 | simple | - | 15 | 87% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，16 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 14，观测区间 4 - 20，16 个样本，取值分散，一致性仅 45%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，16 个样本
-- 调度器 最常用 euler，16 个样本，一致性 100%
-- 重绘幅度 最常用 simple，16 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 20，观测区间 8 - 50，15 个样本，取值分散，一致性仅 31%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 5.5，15 个样本，取值分散，一致性仅 41%
+- 采样算法 最常用 euler，15 个样本，一致性 53%
+- 调度器 最常用 simple，15 个样本，一致性 87%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（11/15 个样本）：Steps较低可能导致细节不足

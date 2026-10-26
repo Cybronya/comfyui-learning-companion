@@ -2,69 +2,75 @@
 name: unknown_workflow_sampler_clip_unet_194
 type: Unknown Workflow
 frequency: 7
-level: weak
-coverage: 0.943571
-common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.855429
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSamplerSelect, LoadImage, RFInversion, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, UnofficialExtensions, UntwistingRoPE, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-小红书风格封面设计工作流_1979207949715410946.json, 图片生成/文生图/Qwen一键小红书封面_2034820476354170881.json, 图片生成/文生图/Z image生图_1997316490393227266.json, 图片生成/文生图/qwen-image 20步稳定生图_1954932098835496961.json, 图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json, 图片生成/文生图/qwen-image 8步快速生图_1954932461516963842.json, 图片生成/文生图/qwen-image 极速生图_1956936946464296962.json]
+members: [图片生成/图生图/klein-9b-最强风格迁移_2064327792870907906.json, 图片生成/图生图/z-image-turbo-参考风格生成_2062502317689233409.json, 图片生成/文生图/Untwisting-RoPE：免训练高级图像风格转绘（文生图）_2070058042036670466.json, 图片生成/文生图/flux2_klein_9b ROPE 风格变换 工作流_2062039782582210561.json, 图片生成/文生图/qwen_image_edit_2511 ROPE 风格变换 工作流_2062044303366647809.json, 图片生成/文生图/z_image_turbo-UntwistingROPE 风格变换 工作流_2062027500867383297.json, 图片生成/文生图/【万物皆可转绘】Untwisting RoPE 免训练任意风格迁移_2069064857554604034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_194
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen-小红书风格封面设计工作流_1979207949715410946.json、图片生成/文生图/Qwen一键小红书封面_2034820476354170881.json、图片生成/文生图/Z image生图_1997316490393227266.json、图片生成/文生图/qwen-image 20步稳定生图_1954932098835496961.json、图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/klein-9b-最强风格迁移_2064327792870907906.json、图片生成/图生图/z-image-turbo-参考风格生成_2062502317689233409.json、图片生成/文生图/Untwisting-RoPE：免训练高级图像风格转绘（文生图）_2070058042036670466.json、图片生成/文生图/flux2_klein_9b ROPE 风格变换 工作流_2062039782582210561.json、图片生成/文生图/qwen_image_edit_2511 ROPE 风格变换 工作流_2062044303366647809.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `KSampler`
+- `EmptySD3LatentImage`
+- `KSamplerSelect`
+- `LoadImage`
+- `RFInversion`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
+- `UnofficialExtensions`
+- `UntwistingRoPE`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `ModelSamplingAuraFlow` —— 6/7 个有
-- `EmptySD3LatentImage` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `ConditioningZeroOut` —— 2/7 个有
-- `Float` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LatentUpscaleBy` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `TextCombinerSix` —— 1/7 个有
+- `ImageResizeKJv2` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `ImageScaleToTotalPixels` —— 3/7 个有
+- `ReferenceLatent` —— 3/7 个有
+- `ConditioningAddImageReference` —— 2/7 个有
+- `ImageScaleBy` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `GetImageSize` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageScaleToTotalPixelsX` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `TextConcatenate` —— 1/7 个有
+- `TextEncodeQwenImageEditPlus` —— 1/7 个有
+- `llama_cpp_instruct_adv` —— 1/7 个有
+- `llama_cpp_model_loader` —— 1/7 个有
+- `llama_cpp_parameters` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 9 | 4 - 30 | 7 | 29% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 38% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 4 - 30，7 个样本，取值分散，一致性仅 29%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 38%
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（4/7 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,57 +2,67 @@
 name: unknown_workflow_sampler_clip_unet_321
 type: Unknown Workflow
 frequency: 4
-level: weak
-coverage: 0.92025
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, WanImageToVideo]
+level: moderate
+coverage: 0.63
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImpactSwitch, JjkText, KSampler, LimitNumber, LoadImage, PrimitiveInt, RH_LLMAPI_NODE, SaveImage, TextCombinerSix, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2_2_I2V_org_api_1971438384981983234.json, 视频生成/图生视频/image_to_video_wan22_14B官方优化版_1950499114352103426.json, 视频生成/图生视频/wan2.2+Wan2.1图生视频_1950096057801859073.json, 视频生成/图生视频/wan2.2万相通义图生视频极速电影级版_1950206253990592514.json]
+members: [图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json, 图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json, 图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json, 图片生成/文生图/wan2.2+qwen edit Plus --视频封面制作_1970937254313107458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_321
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2_2_I2V_org_api_1971438384981983234.json、视频生成/图生视频/image_to_video_wan22_14B官方优化版_1950499114352103426.json、视频生成/图生视频/wan2.2+Wan2.1图生视频_1950096057801859073.json、视频生成/图生视频/wan2.2万相通义图生视频极速电影级版_1950206253990592514.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json、图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json、图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json、图片生成/文生图/wan2.2+qwen edit Plus --视频封面制作_1970937254313107458.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `EmptySD3LatentImage`
+- `ImpactSwitch`
+- `JjkText`
+- `KSampler`
+- `LimitNumber`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `TextCombinerSix`
+- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanImageToVideo`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `SaveAnimatedWEBP` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SaveWEBM` —— 1/4 个有
-- `wanBlockSwap` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `ModelSamplingSD3` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 9 | 4 - 20 | 4 | 35% |
-| 采样算法 | 2.25 | 1 - 3.5 | 4 | 44% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | 25 | 20 - 40 | 4 | 70% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 4 | 61% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | beta57 | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -60,9 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 4 - 20，4 个样本，取值分散，一致性仅 35%
-- 采样算法 中位数 2.25，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 44%
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 25，观测区间 20 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，4 个样本
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 beta57，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

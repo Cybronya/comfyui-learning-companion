@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_628
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9285
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.7542
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan_dancer.json, 图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json, 视频生成/图生视频/SD2.0满血_2038582456567205889.json, 视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json]
+members: [视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json, 视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json, 视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json, 视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json, 视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_628
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_dancer.json、图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json、视频生成/图生视频/SD2.0满血_2038582456567205889.json、视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json、视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json、视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json、视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json、视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
-- `StringConcatenate` —— 1/4 个有
-- `f7467834-35a6-42fe-b525-7f17383beb4f` —— 1/4 个有
+- `孤海注释` —— 3/5 个有
+- `JjkText` —— 2/5 个有
+- `PlaySound|pysssss` —— 2/5 个有
+- `Text` —— 1/5 个有
+- `easy saveText` —— 1/5 个有
 
 ## 典型参数
 

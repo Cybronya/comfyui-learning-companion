@@ -3,51 +3,64 @@ name: text_to_image_lora_sampler_clip_424
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.88725
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.841
+common_nodes: [AdaptiveLongestEdge_EditUtils, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, EmptyLatentImage, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, Image Comparer (rgthree), JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json, 图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json, 图片生成/图生图/全能图片PRO图生图官方稳定版 风格复刻构图可控_2099212184491479042.json, 图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json]
+members: [图片生成/图生图/Flux Klein 9B一键无缝融图，输入主体描述上传处理图片图生图方案_2103924861985976322.json, 图片生成/图生图/服装批量改色｜FK2一致性精修图生图处理_2090202184720936961.json, 图片生成/图生图/服装批量改色｜flux2一致性精修图生图处理_2090362556530651138.json, 图片生成/图生图/服装批量改色｜flux2一致性精修图生图处理_2090617813999374337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_424
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json、图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json、图片生成/图生图/全能图片PRO图生图官方稳定版 风格复刻构图可控_2099212184491479042.json、图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux Klein 9B一键无缝融图，输入主体描述上传处理图片图生图方案_2103924861985976322.json、图片生成/图生图/服装批量改色｜FK2一致性精修图生图处理_2090202184720936961.json、图片生成/图生图/服装批量改色｜flux2一致性精修图生图处理_2090362556530651138.json、图片生成/图生图/服装批量改色｜flux2一致性精修图生图处理_2090617813999374337.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AdaptiveLongestEdge_EditUtils`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
 - `EmptyLatentImage`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ConditioningZeroOut` —— 1/4 个有
-- `ImageFromBatch` —— 1/4 个有
-- `ImageStitch` —— 1/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
-- `MmuuaiGroupBypass` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetImageSize` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `easy promptList` —— 3/4 个有
+- `孤海注释` —— 2/4 个有
+- `DF_Get_image_size` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `easy promptReplace` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

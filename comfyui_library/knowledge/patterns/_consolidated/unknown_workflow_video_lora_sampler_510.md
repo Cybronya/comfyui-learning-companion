@@ -1,90 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_510
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.822
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageFromBatch+, ImpactSwitch, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, PreviewImage, RH_LLMAPI_NODE, Text Concatenate, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9536
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1+Stand-In+MultiTalk 人脸一致性文生数字人_1956219463043612673.json, 视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956357600432541698.json, 视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 数字人_1958494701273903106.json, 视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json]
+members: [视频生成/图生视频/【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json, 视频生成/图生视频/【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_2062803456766861313.json, 视频生成/图生视频/【遇见AI】wan2.1图生视频不同加速lora对比_2062116414055608321.json, 视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，带加速_2061019045620699138.json, 视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_510
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1+Stand-In+MultiTalk 人脸一致性文生数字人_1956219463043612673.json、视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956357600432541698.json、视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 数字人_1958494701273903106.json、视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json、视频生成/图生视频/【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_2062803456766861313.json、视频生成/图生视频/【遇见AI】wan2.1图生视频不同加速lora对比_2062116414055608321.json、视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，带加速_2061019045620699138.json、视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `ImageFromBatch+`
-- `ImpactSwitch`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `Text Concatenate`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/4 个有
-- `AudioSeparation` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `DownloadAndLoadWav2VecModel` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `InspyrenetRembg` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `LayerUtility: ImageRemoveAlpha` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `MultiTalkWav2VecEmbeds` —— 3/4 个有
-- `OpenposePreprocessor` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `WanVideoVACEEncode` —— 3/4 个有
-- `WanVideoVACEModelSelect` —— 3/4 个有
-- `WanVideoVACEStartToEndFrame` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `easy imageScaleDownToSize` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `JWIntegerToString` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `Audio Duration (mtb)` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `WanVideoEmptyEmbeds` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `WanVideoVRAMManagement` —— 2/5 个有
+- `PreviewImage` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
+- `WanVideoUni3C_embeds` —— 1/5 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/5 个有
+- `WanVideoUniAnimatePoseInput` —— 1/5 个有
 
 ## 典型参数
 

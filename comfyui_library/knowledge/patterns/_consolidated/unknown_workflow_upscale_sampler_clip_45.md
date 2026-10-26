@@ -1,71 +1,74 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_45
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.854
-common_nodes: [Anything Everywhere, CFGGuider, CLIPLoader, CLIPTextEncode, DF_Integer, EmptyFlux2LatentImage, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2, SeedVR2BlockSwap, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, 孤海图像缩放按像素]
+frequency: 3
+level: strong
+coverage: 0.813333
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, CR Text Input Switch (4 way), ConditioningZeroOut, DPMagicPrompt, KOOK_ImageCompression, KOOK_SaveJPGImage, KSampler (Efficient), LayerFilter: HDREffects, LoadImage, PreviewImage, PromptExpand, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SeedVarianceEnhancer, ShowText|pysssss, StringFunction|pysssss, Text Concatenate, Text Multiline, VAELoader, easy imageChooser, easy stylesSelector]
 problems: []
 missing: []
-members: [图片生成/图生图/千府AI-FLUX3KLEIN高清放大工作流_2112723870837993473.json, 图片生成/图生图/千府AI-高清修复放大二合一工作流_2009061305344331777.json]
+members: [图片生成/文生图/一键运行：Nunchaku Z-Image 文生图 动态提示词，反推，扩写，图像选择，高清放大_2005169988224905218.json, 图片生成/文生图/一键运行：Wz_image 文生图工作流（尺寸修改，反推，扩写，图像选择，高清放大、图片压缩）_2009910255966232578.json, 图片生成/文生图/一键运行：z-image 完整版（图片反推、高清放大、提示词扩写、动态提示词、高清压缩）_2002582226669826049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_45
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/千府AI-FLUX3KLEIN高清放大工作流_2112723870837993473.json、图片生成/图生图/千府AI-高清修复放大二合一工作流_2009061305344331777.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键运行：Nunchaku Z-Image 文生图 动态提示词，反推，扩写，图像选择，高清放大_2005169988224905218.json、图片生成/文生图/一键运行：Wz_image 文生图工作流（尺寸修改，反推，扩写，图像选择，高清放大、图片压缩）_2009910255966232578.json、图片生成/文生图/一键运行：z-image 完整版（图片反推、高清放大、提示词扩写、动态提示词、高清压缩）_2002582226669826049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Integer`
-- `EmptyFlux2LatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `KSamplerSelect`
+- `CR Text Input Switch (4 way)`
+- `ConditioningZeroOut`
+- `DPMagicPrompt`
+- `KOOK_ImageCompression`
+- `KOOK_SaveJPGImage`
+- `KSampler (Efficient)`
+- `LayerFilter: HDREffects`
 - `LoadImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `PromptExpand`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SeedVarianceEnhancer`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `Text Concatenate`
+- `Text Multiline`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `孤海图像缩放按像素`
+- `easy imageChooser`
+- `easy stylesSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `Flux2Scheduler` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `ShunjingAIShade` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `TextGenerate` —— 1/2 个有
+- `EmptyLatentImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `NunchakuZImageDiTLoader` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `EmptySD3LatentImage` —— 1/3 个有
+- `ResolutionMaster` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 9 - 9 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler_ancestral | - | 3 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 768 | - | 2 | 100% |
+| 高度 | 1200 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -73,4 +76,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 9，观测区间 9 - 9，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1200，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

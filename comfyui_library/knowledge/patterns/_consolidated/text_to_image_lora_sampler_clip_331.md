@@ -3,32 +3,37 @@ name: text_to_image_lora_sampler_clip_331
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.859833
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.908167
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/minmax生图工作流｜多人姿势迁移视频制作_2097811139928354818.json, 视频生成/文生视频/上下文文生视频扩写2K｜MiniMax H3一句话生成工作流_2096737308723728385.json, 视频生成/文生视频/上下文竖屏极速文生｜MiniMax H3一句话短视频生成_2096738714239197185.json, 视频生成/文生视频/低价批量视频生成｜文生图生视频生视频模型直出_2093139939205668866.json, 音频生成/音频生成/AI配音神器｜MiniMax音色设计一句话出成片配音｜音频生成创意玩法_2099111925031464962.json, 音频生成/音频生成/文生音乐工作流｜MiniMax Music 2.6一句话生成专属配乐｜音频生成_2099151761704579073.json]
+members: [图片生成/图生图/LLaDA Image Base图像编辑 一句话改图方案_2108973949999730689.json, 图片生成/图生图/Qwen image 2.1多参考生图 短剧分镜8步加速处理工具_2113027948751183873.json, 图片生成/图生图/Qwen image 2.1多参考生图｜短剧分镜制作专用8步加速版_2112827913790906370.json, 图片生成/文生图/LLaDA Image文生图全扩散架构 全参数扩散模型图像生成_2098692650353385474.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图工作流，指令生图速度快质量高_2114481503345405954.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图｜一句话生成高质量图片_2114173392453722113.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_331
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/minmax生图工作流｜多人姿势迁移视频制作_2097811139928354818.json、视频生成/文生视频/上下文文生视频扩写2K｜MiniMax H3一句话生成工作流_2096737308723728385.json、视频生成/文生视频/上下文竖屏极速文生｜MiniMax H3一句话短视频生成_2096738714239197185.json、视频生成/文生视频/低价批量视频生成｜文生图生视频生视频模型直出_2093139939205668866.json、音频生成/音频生成/AI配音神器｜MiniMax音色设计一句话出成片配音｜音频生成创意玩法_2099111925031464962.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/LLaDA Image Base图像编辑 一句话改图方案_2108973949999730689.json、图片生成/图生图/Qwen image 2.1多参考生图 短剧分镜8步加速处理工具_2113027948751183873.json、图片生成/图生图/Qwen image 2.1多参考生图｜短剧分镜制作专用8步加速版_2112827913790906370.json、图片生成/文生图/LLaDA Image文生图全扩散架构 全参数扩散模型图像生成_2098692650353385474.json、图片生成/文生图/Qwen Image 2.1 Turbo文生图工作流，指令生图速度快质量高_2114481503345405954.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -36,16 +41,20 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `SaveVideo` —— 4/6 个有
-- `RH_MinimaxHailuoH3ContextIrText` —— 2/6 个有
-- `RH_MinimaxHailuoH3TextToVideo` —— 2/6 个有
-- `SaveAudio` —— 2/6 个有
-- `LoadImage` —— 1/6 个有
-- `RH_BytedanceSeedance25TokenTextToVideo` —— 1/6 个有
-- `RH_MinimaxMusic26` —— 1/6 个有
-- `RH_MinimaxVoiceDesign` —— 1/6 个有
-- `RelayGrokImagineVideo` —— 1/6 个有
+- `QwenImage21Cache` —— 4/6 个有
+- `TextEncodeQwenImage21` —— 4/6 个有
+- `LoadImage` —— 3/6 个有
+- `BasicScheduler` —— 2/6 个有
+- `ExtendIntermediateSigmas` —— 2/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `ResolutionSelector` —— 2/6 个有
+- `T8LLaDAImageCheckpointLoader` —— 2/6 个有
+- `T8LLaDAImageScheduler` —— 2/6 个有
+- `EmptyFlux2LatentImage` —— 1/6 个有
+- `FluxKontextImageScale` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `T8LLaDAImageEditConditioning` —— 1/6 个有
 
 ## 典型参数
 

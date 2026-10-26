@@ -3,37 +3,34 @@ name: unknown_workflow_generic_968
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.723667
-common_nodes: [CR Text, Int, LoadImage, PrimitiveFloat, RH_Jimeng4_Image2Image, Repeater|pysssss, SaveImage]
+coverage: 0.689
+common_nodes: [Image Comparer (rgthree), LoadImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json, 图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json, 图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json]
+members: [图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json, 图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json, 图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_968
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json、图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json、图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json、图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json、图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Int`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RH_Jimeng4_Image2Image`
-- `Repeater|pysssss`
+- `RHHiddenNodes`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/3 个有
-- `SmartImageConcat` —— 1/3 个有
+- `easy int` —— 1/3 个有
+- `ttN int` —— 1/3 个有
 
 ## 典型参数
 

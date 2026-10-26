@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_220
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.724667
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.935
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json, 图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json, 图片生成/图生图/图像无损高清放大_1956239087894188033.json, 图片生成/图生图/图像无损高清放大_2059279536960917505.json, 图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json, 图片生成/图生图/最佳放大工作流：SeedVR2_bole_1956324968839741442.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1975560945038700545.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1997925676596494338.json, 图片生成/文生图/SeedVR2 高清无损放大_1965606007600762881.json]
+members: [图片生成/图生图/建筑-生成建筑电影感分镜工作流_2016678345735413762.json, 图片生成/图生图/硬核拆解_万物皆可生成说明书_2035713994807320578.json, 图片生成/图生图/萌宠跳舞图片生成_2016774724713455618.json, 图片生成/文生图/DG(整理)_rh_全能图片B-PRO_1957020005667889153.json, 图片生成/文生图/全流程测试用_2083814014668333058.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用-runinghub api_2002935527328346113.json, 图片生成/文生图/全能图片V1progenerate_1995684120686628865.json, 图片生成/文生图/全能图片模型_1999049685178384385.json, 图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json, 视频生成/图生视频/全能图片pro_2029979002751950850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_220
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json、图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json、图片生成/图生图/图像无损高清放大_1956239087894188033.json、图片生成/图生图/图像无损高清放大_2059279536960917505.json、图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/建筑-生成建筑电影感分镜工作流_2016678345735413762.json、图片生成/图生图/硬核拆解_万物皆可生成说明书_2035713994807320578.json、图片生成/图生图/萌宠跳舞图片生成_2016774724713455618.json、图片生成/文生图/DG(整理)_rh_全能图片B-PRO_1957020005667889153.json、图片生成/文生图/全流程测试用_2083814014668333058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
+全部 10 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `Int` —— 2/9 个有
-- `PrimitiveInt` —— 1/9 个有
+- `LoadImage` —— 9/10 个有
+- `ZML_MergeText` —— 1/10 个有
 
 ## 典型参数
 

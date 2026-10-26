@@ -3,61 +3,49 @@ name: unknown_workflow_sampler_clip_unet_418
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.987
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageResizeKJv2, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed Everywhere, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
+coverage: 0.8165
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/klein专用_2021769783435337730.json, 图片生成/图生图/klein单图-大头照-抠图_2016821224147521538.json]
+members: [图片生成/图生图/01-flux2（三视图）_2015672899671166977.json, 图片生成/文生图/【遇见AI】FLUX2基础文生图_1993593869338165249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_418
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/klein专用_2021769783435337730.json、图片生成/图生图/klein单图-大头照-抠图_2016821224147521538.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/01-flux2（三视图）_2015672899671166977.json、图片生成/文生图/【遇见AI】FLUX2基础文生图_1993593869338165249.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `ImageResizeKJv2`
+- `FluxGuidance`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed Everywhere`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `JoinImageWithAlpha` —— 1/2 个有
-- `LayerUtility: CropByMask` —— 1/2 个有
-- `LayerUtility: ExtendCanvasV2` —— 1/2 个有
-- `LoadBackgroundRemovalModel` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
+- `ImpactConditionalBranch` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
-- `RemoveBackground` —— 1/2 个有
-- `SAM3Segment` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `Primitive boolean [Crystools]` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `Seed (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

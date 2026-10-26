@@ -1,80 +1,110 @@
 ---
 name: unknown_workflow_video_sampler_clip_31
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: strong
-coverage: 0.971467
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Bypasser (rgthree), ImageScaleBy, ImpactInt, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveStringMultiline, Seed (rgthree), SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
-problems: []
+coverage: 0.397
+common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageFromBatch, KSampler, LoadAudio, LoadImage, ModelPatchLoader, PreviewAny, SetNode, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy indexAnything, easy promptLine, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json, 视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json, 视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json, 视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json, 视频生成/文生视频/wan2.2文生视频_2005367694092365826.json, 视频生成/文生视频/文生视频Wan2.2 GGUF 4步采样生成1k视频_2050852999907557378.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2038233332701470721.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2045817559047475201.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981303771013742594.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix_2051648863991279617.json, 视频生成/文生视频/文生视频_2008897153195839489.json, 视频生成/文生视频/文生视频_2011579787898261505.json, 视频生成/文生视频/极速渲染优化！Wan2.2 SmoothMix+RTX+Qwen3.5提示词优化_2048029118243020801.json, 视频生成/文生视频/🌈老许Gary：文生视频Wan2.2-Smooth Mix_2045834738073604098.json, 视频生成/文生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 文生视频🚵_1979382260715655170.json]
+members: [图片生成/反推提示词/41duikouxin_2050023991196307457.json, 图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json, 数字人/数字人/4超真实感数字人口播 虚拟人口播 短视频运营利器_2074112151891046401.json, 数字人/数字人/AI代码侠土豆-官流全自动循环流数字人_2018705105180168194.json, 数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json, 数字人/数字人/InfiniteTalk （官方流）图片驱动、数字人单人对口型_2019726268798869506.json, 数字人/数字人/InfiniteTalk数字人_2065228820231311362.json, 数字人/数字人/Jian Wei 单人InfiniteTalk官方版工作流（无限流）_2037806085641347074.json, 数字人/数字人/【海小川AIGC】-InfiniteTalk数字人_2031910229612437505.json, 数字人/数字人/三七—单人口播（sanqi）_2039235549533310978.json, 数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json, 数字人/数字人/单人InfiniteTalk官方版工作流_2066423963697373186.json, 数字人/数字人/图生对口型-全自动循环-数字人-模板（001）_2074755476276994049.json, 数字人/数字人/官流全自动循环流数字人_2019433133229215745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json、视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json、视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json、视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json、视频生成/文生视频/wan2.2文生视频_2005367694092365826.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/41duikouxin_2050023991196307457.json、图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json、数字人/数字人/4超真实感数字人口播 虚拟人口播 短视频运营利器_2074112151891046401.json、数字人/数字人/AI代码侠土豆-官流全自动循环流数字人_2018705105180168194.json、数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Fast Bypasser (rgthree)`
-- `ImageScaleBy`
-- `ImpactInt`
-- `KSamplerAdvanced`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
-- `Seed (rgthree)`
-- `SimpleMath+`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageFromBatch`
+- `KSampler`
+- `LoadAudio`
+- `LoadImage`
+- `ModelPatchLoader`
+- `PreviewAny`
+- `SetNode`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `wanBlockSwap`
+- `WanInfiniteTalkToVideo`
+- `easy indexAnything`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 14/15 个有
-- `UNETLoader` —— 14/15 个有
-- `LoraLoaderModelOnly` —— 8/15 个有
-- `RTXVideoSuperResolution` —— 8/15 个有
-- `easy cleanGpuUsed` —— 7/15 个有
-- `ShowText` —— 6/15 个有
-- `llama_cpp_instruct_adv` —— 6/15 个有
-- `llama_cpp_model_loader` —— 6/15 个有
-- `Wan22PromptSelector` —— 2/15 个有
-- `easy promptConcat` —— 2/15 个有
-- `Note Plus (mtb)` —— 1/15 个有
-- `SaveImage` —— 1/15 个有
-- `UnetLoaderGGUF` —— 1/15 个有
+- `Any2ListNode` —— 13/14 个有
+- `AudioCrop` —— 13/14 个有
+- `DiffusionModelLoaderKJ` —— 13/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/14 个有
+- `ImageBatch` —— 10/14 个有
+- `MathExpression|pysssss` —— 10/14 个有
+- `PreviewAudio` —— 10/14 个有
+- `PreviewImage` —— 10/14 个有
+- `PrimitiveFloat` —— 10/14 个有
+- `TextInput_` —— 10/14 个有
+- `easy int` —— 10/14 个有
+- `easy forLoopEnd` —— 5/14 个有
+- `easy forLoopStart` —— 5/14 个有
+- `ColorMatch` —— 4/14 个有
+- `Float` —— 4/14 个有
+- `Int` —— 4/14 个有
+- `PainterAudioCut` —— 4/14 个有
+- `SimpleMath+` —— 4/14 个有
+- `Text` —— 4/14 个有
+- `easy batchAnything` —— 4/14 个有
+- `easy lengthAnything` —— 4/14 个有
+- `Audio To Text (mtb)` —— 1/14 个有
+- `Bjornulf_ShowInt` —— 1/14 个有
+- `CR Prompt Text` —— 1/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `FishS2VoiceCloneTTS` —— 1/14 个有
+- `ImageResizeKJv2` —— 1/14 个有
+- `LayerUtility: PurgeVRAM` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `Load Whisper (mtb)` —— 1/14 个有
+- `LoadVideo` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 1/14 个有
+- `PlaySound|pysssss` —— 1/14 个有
+- `ShowText|pysssss` —— 1/14 个有
+- `UNETLoader` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 15 | 67% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 15 | 80% |
-| 采样算法 | 1 | 1 - 1 | 15 | 100% |
-| 调度器 | euler_ancestral | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 100% |
+| 采样步数 | 4 | 4 - 4 | 14 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 100% |
+| 调度器 | normal | - | 14 | 71% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 101/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，15 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，15 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 100%
+- 调度器 最常用 normal，14 个样本，一致性 71%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（101/14 个样本）：Steps较低可能导致细节不足

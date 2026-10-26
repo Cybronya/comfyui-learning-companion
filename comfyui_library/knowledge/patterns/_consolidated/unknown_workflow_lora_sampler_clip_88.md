@@ -2,65 +2,80 @@
 name: unknown_workflow_lora_sampler_clip_88
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.9865
-common_nodes: [BasicScheduler, CLIPTextEncode, CM_FloatToInt, CR Text, DualCLIPLoader, ImageConcanate, KSamplerSelect, LTXVAddGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoInfo]
+level: moderate
+coverage: 0.7405
+common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ImageBatch, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json, 视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json, 视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json, 视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json, 视频生成/图生视频/图生视频重要_2053455525341343746.json, 视频生成/图生视频/视频生视频 高清版_2054000800241856513.json]
+members: [数字人/数字人/infinite_talk_双人官流-长视频-循环-自动版_2018616978436526082.json, 数字人/数字人/infinite数字人-官流长视频循环自动版_2018616944190038017.json, 数字人/数字人/官方循环-infinitetalk_2018923804638056449.json, 视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json, 视频生成/文生视频/单人InfiniteTalk无限时长原生循环_2018256491320451073.json, 视频生成/文生视频/双人InfiniteTalk无限时长原生循环_2018267797146570753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_88
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json、视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json、视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json、视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json、视频生成/图生视频/图生视频重要_2053455525341343746.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/infinite_talk_双人官流-长视频-循环-自动版_2018616978436526082.json、数字人/数字人/infinite数字人-官流长视频循环自动版_2018616944190038017.json、数字人/数字人/官方循环-infinitetalk_2018923804638056449.json、视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json、视频生成/文生视频/单人InfiniteTalk无限时长原生循环_2018256491320451073.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
 - `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
-- `DualCLIPLoader`
-- `ImageConcanate`
+- `ConditioningZeroOut`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `LTXVAddGuide`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SamplerCustom`
+- `MathExpression|pysssss`
+- `ModelPatchLoader`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
+- `VAELoader`
+- `WanInfiniteTalkToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 5/6 个有
-- `DuckHideNode` —— 1/6 个有
-- `Float to Int` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `TT_img_enc` —— 1/6 个有
-- `TT_img_enc_v2` —— 1/6 个有
+- `AudioConcat` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `MelBandRoFormerModelLoader` —— 4/6 个有
+- `MelBandRoFormerSampler` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `AudioCrop` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `PreviewAudio` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `VHS_VideoCombine` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `LayerUtility: BooleanOperatorV2` —— 2/6 个有
+- `LayerUtility: If ` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `SimpleCalculatorKJ` —— 2/6 个有
+- `TrimAudioDuration` —— 2/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `MaskPreview+` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `PrimitiveString` —— 1/6 个有
+- `easy sam3ImageSegmentation` —— 1/6 个有
+- `easy sam3ModelLoader` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,5 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,71 +2,79 @@
 name: unknown_workflow_video_lora_sampler_449
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.8962
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: []
+level: strong
+coverage: 0.9444
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, ImageConcanate, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RepeatImageBatch, SaveImage, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Qwen3-VL反推视频提示词WAN22生成视频_1988333023324233729.json, 视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json, 视频生成/文生视频/Wan2.2特效 盒子装世界 Wan2.2 Jason版_1973586919907004418.json, 视频生成/文生视频/lora训练工具之五：wan2.2训练lora参数测试工作流（多模型综合加速文生视频）_1954421837595865089.json, 视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json]
+members: [图片生成/图生图/Wan2.1-姿势控制图生图_1949810093015654401.json, 图片生成/图生图/Wan2.1-深度控制图生图_1949810038555721730.json, 图片生成/图生图/Wan2.1一致性扩图图生图V1_1947268029098905601.json, 图片生成/图生图/Wan2.1姿势控制人物一致性图生图V1_1947250426543509506.json, 图片生成/图生图/Wan2.1深度控制人物一致性图生图V0.5_1947263708557905922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_449
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Qwen3-VL反推视频提示词WAN22生成视频_1988333023324233729.json、视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json、视频生成/文生视频/Wan2.2特效 盒子装世界 Wan2.2 Jason版_1973586919907004418.json、视频生成/文生视频/lora训练工具之五：wan2.2训练lora参数测试工作流（多模型综合加速文生视频）_1954421837595865089.json、视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.1-姿势控制图生图_1949810093015654401.json、图片生成/图生图/Wan2.1-深度控制图生图_1949810038555721730.json、图片生成/图生图/Wan2.1一致性扩图图生图V1_1947268029098905601.json、图片生成/图生图/Wan2.1姿势控制人物一致性图生图V1_1947250426543509506.json、图片生成/图生图/Wan2.1深度控制人物一致性图生图V0.5_1947263708557905922.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
+- `GetImageRangeFromBatch`
+- `ImageConcanate`
+- `JWInteger`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RepeatImageBatch`
+- `SaveImage`
+- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/5 个有
-- `AILab_QwenVL_Advanced` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CFGZeroStar` —— 2/5 个有
-- `WanVideoNAG` —— 2/5 个有
-- `easy clearCacheAll` —— 2/5 个有
-- `HunyuanImageToVideo` —— 1/5 个有
-- `ShellAgentPluginInputImage` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
-- `VHS_VideoInfoLoaded` —— 1/5 个有
+- `PDIMAGE_LongerSize` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `DepthAnything_V2` —— 2/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/5 个有
+- `DF_Get_image_size` —— 1/5 个有
+- `ImagePadKJ` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 4 | 4 - 8 | 5 | 65% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 采样步数 | 6 | 6 - 6 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，5 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 采样步数 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

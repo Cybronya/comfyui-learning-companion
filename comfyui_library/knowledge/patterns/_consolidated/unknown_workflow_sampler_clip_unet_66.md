@@ -2,78 +2,71 @@
 name: unknown_workflow_sampler_clip_unet_66
 type: Unknown Workflow
 frequency: 13
-level: moderate
-coverage: 0.798923
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: weak
+coverage: 0.980846
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/ideogram4文生图_2062829306715402242.json, 图片生成/文生图/ideogram4文生图_2074082025207844866.json, 图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json, 图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json, 图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json, 图片生成/文生图/ideogram4精准定位文生图_2066720301649768448.json, 图片生成/文生图/ideogram_光学眼镜模特_2073959342348521473.json, 图片生成/文生图/image_ideogram4_t2i_2062711247589691394.json, 图片生成/文生图/image_ideogram4_t2i_2062872301623926785.json, 图片生成/文生图/new_image_ideogram4_t2i  文生图工作流_2062929225497268226.json, 图片生成/文生图/【开源MJ】Ideogram4美学大师_2063949376107663361.json, 图片生成/文生图/图文排版新模型-IdeoGram4_2062809092619591682.json, 图片生成/文生图/指哪打哪文生图_ideogram4_t2i_2062732159298920450.json]
+members: [图片生成/图生图/test-z-image_2005514702337830914.json, 图片生成/文生图/Qwen白丝长腿丝袜美腿_2036808073796390913.json, 图片生成/文生图/Qwen黑丝长腿丝袜美腿_2019644098361171969.json, 图片生成/文生图/Z-imageTurbo-intorealism_真实照_2048029631424499714.json, 图片生成/文生图/Z-image文生图18×流_2013868687253573633.json, 图片生成/文生图/Z-image瑜伽舞蹈动作控制_2025505912990994434.json, 图片生成/文生图/Z-image鬼术妖臀蜜桃臀_2027414828809199617.json, 图片生成/文生图/ZImage+LoRA文生图_2018160063252271106.json, 图片生成/文生图/Z_image_turbo_int8_2079199590628282369.json, 图片生成/文生图/z_image_turbo文生图_2011271534962286593.json, 图片生成/文生图/【阡陌】Z-Image随机多样性增强文生图工作流_2009600567135444994.json, 图片生成/文生图/【阡陌】双截棍Nunchaku Z-Image极速文生图工作流_2011317669181526017.json, 图片生成/文生图/本地专用 Z-Image 文生图_2005279973143445506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_66
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/ideogram4文生图_2062829306715402242.json、图片生成/文生图/ideogram4文生图_2074082025207844866.json、图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json、图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json、图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/test-z-image_2005514702337830914.json、图片生成/文生图/Qwen白丝长腿丝袜美腿_2036808073796390913.json、图片生成/文生图/Qwen黑丝长腿丝袜美腿_2019644098361171969.json、图片生成/文生图/Z-imageTurbo-intorealism_真实照_2048029631424499714.json、图片生成/文生图/Z-image文生图18×流_2013868687253573633.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 10/13 个有
-- `KSamplerSelect` —— 10/13 个有
-- `ResolutionSelector` —— 10/13 个有
-- `CustomCombo` —— 9/13 个有
-- `PreviewAny` —— 9/13 个有
-- `PrimitiveStringMultiline` —— 8/13 个有
-- `Ideogram4PromptBuilderKJ` —— 5/13 个有
-- `PreviewImage` —— 5/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `ShowText|pysssss` —— 4/13 个有
-- `StringConcatenate` —— 4/13 个有
-- `TextGenerate` —— 4/13 个有
-- `SamplerEulerAncestral` —— 3/13 个有
-- `CR Text` —— 2/13 个有
-- `AILab_ImagePreview` —— 1/13 个有
-- `DeepTranslatorTextNode` —— 1/13 个有
-- `Display Int (rgthree)` —— 1/13 个有
-- `ImageBlend` —— 1/13 个有
-- `LoraLoaderModelOnly` —— 1/13 个有
-- `RHLLMChatNode` —— 1/13 个有
-- `SeedVR2` —— 1/13 个有
-- `SeedVR2BlockSwap` —— 1/13 个有
-- `SeedVR2ExtraArgs` —— 1/13 个有
+- `LoraLoaderModelOnly` —— 10/13 个有
+- `ModelSamplingAuraFlow` —— 10/13 个有
+- `ConditioningZeroOut` —— 5/13 个有
+- `DuckHideNode` —— 4/13 个有
+- `LoadImage` —— 3/13 个有
+- `SDXLAspectRatio` —— 3/13 个有
+- `ConditioningNoiseInjection` —— 2/13 个有
+- `MuyeSizeSelector` —— 1/13 个有
+- `NunchakuZImageDiTLoader` —— 1/13 个有
+- `Qwen3VL_Chat` —— 1/13 个有
+- `ShowAnything|Mie` —— 1/13 个有
+- `easy bookmark` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 5 - 16 | 13 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 6 | 13 | 3% |
+| 采样算法 | euler | - | 13 | 69% |
+| 调度器 | simple | - | 13 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 5 - 16，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，13 个样本，取值分散，一致性仅 3%
+- 采样算法 最常用 euler，13 个样本，一致性 69%
+- 调度器 最常用 simple，13 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（11/13 个样本）：Steps较低可能导致细节不足

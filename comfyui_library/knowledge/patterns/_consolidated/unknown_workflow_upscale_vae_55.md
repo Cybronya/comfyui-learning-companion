@@ -3,36 +3,40 @@ name: unknown_workflow_upscale_vae_55
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed]
+coverage: 0.531
+common_nodes: [Fast Groups Muter (rgthree), Image Comparer (rgthree), ImageBlend, ImageUpscaleWithModel, ImpactMakeAnyList, LoadImage, PreviewImage, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UpscaleModelLoader, easy imageColorMatch]
 problems: []
 missing: []
-members: [图片生成/图生图/电商三件套一键生成电商主图_2053330420904804353.json, 图片生成/图生图/超好用🔥电商三件套一键生成电商主图-只需一张产品图_2054878019872927746.json]
+members: [图片生成/图生图/模糊变清晰，细节增加，seedvr2_1995106312390422530.json, 图片生成/图生图/超强图片变清晰，超清，高清_1990451039277125633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_55
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商三件套一键生成电商主图_2053330420904804353.json、图片生成/图生图/超好用🔥电商三件套一键生成电商主图-只需一张产品图_2054878019872927746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/模糊变清晰，细节增加，seedvr2_1995106312390422530.json、图片生成/图生图/超强图片变清晰，超清，高清_1990451039277125633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `Fast Groups Muter (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageBlend`
+- `ImageUpscaleWithModel`
+- `ImpactMakeAnyList`
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2ImageToImage`
+- `PreviewImage`
+- `PrimitiveInt`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
+- `UpscaleModelLoader`
+- `easy imageColorMatch`
 
 ## 典型参数
 

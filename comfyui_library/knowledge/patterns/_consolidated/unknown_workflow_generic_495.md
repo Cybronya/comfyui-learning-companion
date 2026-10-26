@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_generic_495
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.718
-common_nodes: [Display Any (rgthree), PrimitiveStringMultiline, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.9445
+common_nodes: [RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/API  一键出6_9_25宫格 分镜图_2023967401880064002.json, 图片生成/图生图/一键出25分镜头图生图版本_2021191787578134529.json, 图片生成/文生图/一键出25分镜头文生图版本_2021188154425876482.json, 图片生成/文生图/一键出4分镜头文生图版本_2021413450899005441.json, 图片生成/文生图/一键出9分镜头文生图版本_2021416602603884545.json]
+members: [图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json, 图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json, 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json, 视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json, 视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json, 视频生成/文生视频/文生视频 Seedance2.0 Mini_2075568851261153282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_495
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/API  一键出6_9_25宫格 分镜图_2023967401880064002.json、图片生成/图生图/一键出25分镜头图生图版本_2021191787578134529.json、图片生成/文生图/一键出25分镜头文生图版本_2021188154425876482.json、图片生成/文生图/一键出4分镜头文生图版本_2021413450899005441.json、图片生成/文生图/一键出9分镜头文生图版本_2021416602603884545.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json、图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json、图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json、视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json、视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Display Any (rgthree)`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `RH_RhartVideoSparkvideo20MiniTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/5 个有
-- `RHHiddenNodes` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

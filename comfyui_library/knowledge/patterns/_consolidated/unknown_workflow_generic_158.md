@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_158
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.757091
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.939667
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/一键手绘设计稿上色_2027297981090762753.json, 图片生成/图生图/一键生成 专业设计手稿_2027295634415423489.json, 图片生成/图生图/俏皮九连拍肖像写真，每一张都可以做头像！（全能图像编辑）_2014873082552393729.json, 图片生成/图生图/全能图像编辑-人物服装拆解_2014699058291548162.json, 图片生成/图生图/全能图片 Pro-家居场景_2020059370511405058.json, 图片生成/图生图/全能图片X3 _ 超爽编辑_1922116337244766210.json, 图片生成/图生图/换装人物一致性全能图片2.0_2027674386949480449.json, 图片生成/图生图/洗图_1951995423781277697.json, 图片生成/文生图/全新new ! 全能图像编辑2 - 支持文生图 单图 双图 多图_2027221940829691906.json, 图片生成/文生图/卧室少女三连拍_2032010348026404866.json, 图片生成/文生图/最新版全能图像编辑+2+-+支持文生图+单图+双图+多图++_2027287092555943938.json]
+members: [数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json, 数字人/数字人/IndexTTS2最强配音带感情模型-V2_2015271792365015041.json, 数字人/数字人/音频-单人文本配音-IndexTTS2_1973651080347299841.json, 数字人/数字人/音频-双人文本配音-IndexTTS2_1973654275630960642.json, 音频生成/音频生成/IndexTTS2_1998361145272623105.json, 音频生成/音频生成/IndexTTS2_2015293179448266754.json, 音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2039948812336242690.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2043572634868256769.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2064259148337995778.json, 音频生成/音频生成/IndexTTS2_更专业的情感向量控制_语音_音色克隆_2012710824451772417.json, 音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_158
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/一键手绘设计稿上色_2027297981090762753.json、图片生成/图生图/一键生成 专业设计手稿_2027295634415423489.json、图片生成/图生图/俏皮九连拍肖像写真，每一张都可以做头像！（全能图像编辑）_2014873082552393729.json、图片生成/图生图/全能图像编辑-人物服装拆解_2014699058291548162.json、图片生成/图生图/全能图片 Pro-家居场景_2020059370511405058.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json、数字人/数字人/IndexTTS2最强配音带感情模型-V2_2015271792365015041.json、数字人/数字人/音频-单人文本配音-IndexTTS2_1973651080347299841.json、数字人/数字人/音频-双人文本配音-IndexTTS2_1973654275630960642.json、音频生成/音频生成/IndexTTS2_1998361145272623105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 10/11 个有
-- `ImageConcanate` —— 8/11 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 8/11 个有
-- `RH_Nano_Banana2_Image2Image` —— 4/11 个有
-- `JjkText` —— 3/11 个有
-- `RH_RhartImageG2ImageToImage` —— 2/11 个有
+- `PreviewAudio` —— 10/12 个有
+- `CR Text` —— 9/12 个有
+- `CR Prompt Text` —— 4/12 个有
+- `SaveAudioMP3` —— 4/12 个有
+- `Fast Groups Muter (rgthree)` —— 3/12 个有
 
 ## 典型参数
 

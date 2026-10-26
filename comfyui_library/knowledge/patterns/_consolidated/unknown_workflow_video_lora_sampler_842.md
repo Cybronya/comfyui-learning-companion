@@ -3,65 +3,47 @@ name: unknown_workflow_video_lora_sampler_842
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.518
-common_nodes: [BlockifyMask, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJv2, JWInteger, LayerMask: MaskPreview, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.881
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2animate视频人物替换_1969420590102814722.json, 视频生成/图生视频/wananimate视频动作迁移_1969490471846354945.json]
+members: [视频生成/图生视频/H3视频-四川话-版本（支持多参加速）_2088296997613817858.json, 视频生成/图生视频/邻家唯美｜H3八步·积分版自然互动_2102207203225718786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_842
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2animate视频人物替换_1969420590102814722.json、视频生成/图生视频/wananimate视频动作迁移_1969490471846354945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3视频-四川话-版本（支持多参加速）_2088296997613817858.json、视频生成/图生视频/邻家唯美｜H3八步·积分版自然互动_2102207203225718786.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DrawMaskOnImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LayerMask: MaskPreview`
-- `LayerUtility: PurgeVRAM V2`
+- `BasicGuider`
+- `BasicScheduler`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SAM3_Detect`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `FlashVSRNode` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `MiniMaxH3EasyMediaBridge` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,50 +3,38 @@ name: unknown_workflow_generic_359
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.616429
-common_nodes: [Any Switch (rgthree), CR Text, Fast Groups Bypasser (rgthree), ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHLLMChatNode, RHSettingsNode, SaveImage, ShowText|pysssss, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.799857
+common_nodes: [CustomAddLabel, FlashVSRNode, Int, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-IMAGE-2.5 API调用 文生图_图生图_智能体工作流_2099456134716416001.json, 图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100051222001700865.json, 图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100131630257102849.json, 图片生成/文生图/全能模型 G（全能图片G-IMAGE-2）API调用 文生图_图生图_智能体工作流_2096595193108721666.json, 图片生成/文生图/全能模型 RPO（PRO）API调用 文生图_图生图_智能体工作流_2097304215629684738.json, 图片生成/文生图/全能模型_G全能图片G-IMAGE-2API调用_文生图_图生图_智能体工作流_2100050680848412673.json, 图片生成/文生图/全能模型_G全能图片G-IMAGE-2API调用_文生图_图生图_智能体工作流_2100130259051040769.json]
+members: [图片生成/图生图/Flash VSR-图片高清-图片放大-速度快效果好_2052559331081637889.json, 图片生成/图生图/G2.0全能人像写实去AI去塑料高清直出_2058098351228407809.json, 图片生成/图生图/gemini-3.1人像增强皮肤细节提升商业增强高清直出_2061603141585559554.json, 图片生成/图生图/gemini2.0专业AI婚纱全能高清真实_2061078584269299714.json, 图片生成/图生图/gemini2.0全能专业AI婚纱可控高清直出_2058020655945306113.json, 图片生成/图生图/人像超写实皮肤增强-细节重塑-毛孔级写实提升-商业精修级材质增强-高清直出_2049094193208889345.json, 图片生成/图生图/全能图片2-Nan-oBanan2-多图编辑-高清直出_2048635142356344833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_359
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/全能图片G-IMAGE-2.5 API调用 文生图_图生图_智能体工作流_2099456134716416001.json、图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100051222001700865.json、图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100131630257102849.json、图片生成/文生图/全能模型 G（全能图片G-IMAGE-2）API调用 文生图_图生图_智能体工作流_2096595193108721666.json、图片生成/文生图/全能模型 RPO（PRO）API调用 文生图_图生图_智能体工作流_2097304215629684738.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flash VSR-图片高清-图片放大-速度快效果好_2052559331081637889.json、图片生成/图生图/G2.0全能人像写实去AI去塑料高清直出_2058098351228407809.json、图片生成/图生图/gemini-3.1人像增强皮肤细节提升商业增强高清直出_2061603141585559554.json、图片生成/图生图/gemini2.0专业AI婚纱全能高清真实_2061078584269299714.json、图片生成/图生图/gemini2.0全能专业AI婚纱可控高清直出_2058020655945306113.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CustomAddLabel`
+- `FlashVSRNode`
+- `Int`
 - `LoadImage`
-- `RHLLMChatNode`
-- `RHSettingsNode`
 - `SaveImage`
-- `ShowText|pysssss`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_YouchuanTextToImageV82Fast` —— 4/7 个有
-- `PixaromaLabel` —— 3/7 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/7 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 3/7 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 3/7 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/7 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/7 个有
-- `RH_RhartImageNProOfficialTextToImage` —— 1/7 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 6/7 个有
+- `RHHiddenNodes` —— 4/7 个有
+- `Text` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `Seed` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,96 +1,82 @@
 ---
 name: text_to_image_upscale_sampler_clip_16
 type: Text To Image
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.768286
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImpactInt, KSampler, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.561667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleToTotalPixels, JoinStrings, KSampler, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SomethingToString, TextInput_, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image  美女模特时尚人物穿搭 日常穿搭 电影级美学 网红洗图 批量生成 SeedVR2.5_2030806592970559490.json, 图片生成/图生图/Z-image洗图+高清放大+自动反推_2086916546852638722.json, 图片生成/图生图/反推Z-image生图放大滤镜_2062044431448104961.json, 图片生成/图生图/庭院景观建筑洗图重绘_2068756404294471681.json, 图片生成/图生图/洗图Z-image洗图+_高清放大带自动反推_2076208081142374402.json, 图片生成/图生图/洗图（Z-image洗图）+ 高清放大（带自动反推）_2026840484630503425.json, 图片生成/文生图/Z-tmage高清文生图_2031773633609211906.json]
+members: [图片生成/图生图/Anima3_动漫图生图_Qwen3反推工作流_2043988078615863297.json, 图片生成/图生图/Anima动漫图像模型—全自动图像反推生图_2047319224565108737.json, 图片生成/文生图/Anima动漫图像模型—全自动图像反推生图_2018204687069089793.json, 图片生成/文生图/Anima动漫图像模型—全自动文生图_2018013665781354497.json, 图片生成/文生图/Anima动漫图像模型：全自动图像反推生图工作流_2034605359565901825.json, 图片生成/文生图/【02.01】ANIMA动漫生图模型+二次放大_2060402251050610689.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_16
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-image  美女模特时尚人物穿搭 日常穿搭 电影级美学 网红洗图 批量生成 SeedVR2.5_2030806592970559490.json、图片生成/图生图/Z-image洗图+高清放大+自动反推_2086916546852638722.json、图片生成/图生图/反推Z-image生图放大滤镜_2062044431448104961.json、图片生成/图生图/庭院景观建筑洗图重绘_2068756404294471681.json、图片生成/图生图/洗图Z-image洗图+_高清放大带自动反推_2076208081142374402.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Anima3_动漫图生图_Qwen3反推工作流_2043988078615863297.json、图片生成/图生图/Anima动漫图像模型—全自动图像反推生图_2047319224565108737.json、图片生成/文生图/Anima动漫图像模型—全自动图像反推生图_2018204687069089793.json、图片生成/文生图/Anima动漫图像模型—全自动文生图_2018013665781354497.json、图片生成/文生图/Anima动漫图像模型：全自动图像反推生图工作流_2034605359565901825.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
+- `ImageScaleToTotalPixels`
+- `JoinStrings`
 - `KSampler`
-- `LoadImage`
+- `Qwen3_VQA`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `ShowText|pysssss`
+- `SomethingToString`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `AILab_QwenVL` —— 5/7 个有
-- `Float` —— 5/7 个有
-- `ImageScaleBy` —— 5/7 个有
-- `LoraLoader` —— 2/7 个有
-- `Qwen3_VQA` —— 2/7 个有
-- `FL_ImageAddNoise` —— 1/7 个有
-- `JoinStrings` —— 1/7 个有
-- `KimFilter` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `MemoryCleaner` —— 1/7 个有
-- `String Literal` —— 1/7 个有
-- `TextEncodeQwenImageEditPlus` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `VAEEncode` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy textSwitch` —— 1/7 个有
+- `GetNode` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `LayerUtility: ImageReel` —— 4/6 个有
+- `LayerUtility: ImageReelComposit` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 9 - 10 | 7 | 95% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1080 | 720 - 1080 | 7 | 88% |
-| 高度 | 1920 | 1280 - 1920 | 7 | 88% |
-| LoRA 模型强度 | 0.925 | - | 2 | 97% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 30 | 30 - 30 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 896 - 1024 | 6 | 95% |
+| 高度 | 1024 | 1024 - 1152 | 6 | 95% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 9 - 10，7 个样本，取值集中（一致性 95%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 720 - 1080，7 个样本，取值集中（一致性 88%）
-- 高度 中位数 1920，观测区间 1280 - 1920，7 个样本，取值集中（一致性 88%）
-- LoRA 模型强度 中位数 0.925，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（5/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 30 - 30，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 896 - 1024，6 个样本，取值集中（一致性 95%）
+- 高度 中位数 1024，观测区间 1024 - 1152，6 个样本，取值集中（一致性 95%）

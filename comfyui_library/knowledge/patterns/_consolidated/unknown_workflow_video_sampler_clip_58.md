@@ -2,79 +2,77 @@
 name: unknown_workflow_video_sampler_clip_58
 type: Unknown Workflow
 frequency: 10
-level: weak
-coverage: 0.975
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.5526
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json, "视频生成/图生视频/Wan2.2官方ComfyUI图生视频,高质量生成细节把控_1951292355926282242.json", 视频生成/图生视频/YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json, 视频生成/图生视频/wan2.2 Smooth Mix 高级电影质感和短剧—— 图生视频_1980633692215361538.json, 视频生成/图生视频/wan2.2 图生视频_2006925723407228930.json, 视频生成/图生视频/wan2.2 首帧图生视频字字1080_2018657772811853825.json, 视频生成/图生视频/wan2.2 首帧图生视频字字720_2018729929084510209.json, 视频生成/图生视频/一键生成花材展示电商短视频_2009598515076407298.json, 视频生成/图生视频/电影探班-爆款复刻-简单易用-优化版效果最好-独家原创工作流_2009284920207745026.json, 视频生成/图生视频/视频-您与建筑大师的动态合影工作流_2017792462663716865.json]
+members: [数字人/数字人/SCAIL2动作迁移+角色替换合集 支持长视频_2066182560610340865.json, 视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2070706889247252481.json, 视频生成/图生视频/SCAIL2 动作迁移（多图参考）_2079086131693572098.json, 视频生成/图生视频/SCAIL2 多人替换（动作迁移）_2083425183460843521.json, 视频生成/图生视频/SCAIL2 角色替换&动作迁移_2076542724727201794.json, 视频生成/图生视频/SCAIL2动作迁移+角色替换动作迁移话音同步 长视频 工作流V1.0_2066527706170351617.json, 视频生成/图生视频/SCAIL2动作迁移+角色替换合集 支持长视频_2066377947686199298.json, 视频生成/图生视频/scail_2-动作迁移完全体（单图、多参、角色替换）_2068169097623465985.json, 视频生成/图生视频/电商带货 动作迁移+角色替换合集 支持长视频  SCAIL2_2073480668717346817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_58
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json、视频生成/图生视频/Wan2.2官方ComfyUI图生视频,高质量生成细节把控_1951292355926282242.json、视频生成/图生视频/YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json、视频生成/图生视频/wan2.2 Smooth Mix 高级电影质感和短剧—— 图生视频_1980633692215361538.json、视频生成/图生视频/wan2.2 图生视频_2006925723407228930.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/SCAIL2动作迁移+角色替换合集 支持长视频_2066182560610340865.json、视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2070706889247252481.json、视频生成/图生视频/SCAIL2 动作迁移（多图参考）_2079086131693572098.json、视频生成/图生视频/SCAIL2 多人替换（动作迁移）_2083425183460843521.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `GetNode`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 9/10 个有
-- `CLIPVisionLoader` —— 9/10 个有
-- `PathchSageAttentionKJ` —— 9/10 个有
-- `easy cleanGpuUsed` —— 9/10 个有
-- `ImpactInt` —— 8/10 个有
-- `ModelPatchTorchSettings` —— 8/10 个有
-- `Seed (rgthree)` —— 8/10 个有
-- `SimpleMath+` —— 8/10 个有
-- `WanImageToVideo` —— 7/10 个有
-- `Fast Bypasser (rgthree)` —— 5/10 个有
-- `Mute / Bypass Repeater (rgthree)` —— 5/10 个有
-- `PrimitiveStringMultiline` —— 5/10 个有
-- `wanBlockSwap` —— 5/10 个有
-- `ImageScaleBy` —— 4/10 个有
-- `RIFE VFI` —— 4/10 个有
-- `LoadAudio` —— 3/10 个有
-- `RHHiddenNodes` —— 3/10 个有
-- `WanFirstLastFrameToVideo` —— 3/10 个有
-- `JWInteger` —— 2/10 个有
-- `easy anythingIndexSwitch` —— 2/10 个有
-- `easy batchAnything` —— 2/10 个有
-- `easy forLoopEnd` —— 2/10 个有
-- `easy forLoopStart` —— 2/10 个有
-- `CR Text Concatenate` —— 1/10 个有
-- `ImageBatchGet` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
-- `PainterI2V` —— 1/10 个有
-- `TextInput_` —— 1/10 个有
-- `easy imageSplitGrid` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `INTConstant` —— 9/10 个有
+- `ImageConcanate` —— 9/10 个有
+- `Switch any [Crystools]` —— 9/10 个有
+- `easy imageRemBg` —— 9/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `WanAnimatePlus LoraSelect` —— 6/10 个有
+- `easy boolean` —— 6/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
+- `Label (rgthree)` —— 5/10 个有
+- `BOOLConstant` —— 4/10 个有
+- `ImageBatchMulti` —— 4/10 个有
+- `ImageResizeKJv2` —— 4/10 个有
+- `WanAnimatePlus LoraSelectMulti` —— 4/10 个有
+- `WanAnimatePlus SetLoRAs` —— 4/10 个有
+- `WanAnimatePlus TorchCompileSettings` —— 4/10 个有
+- `GetImageRangeFromBatch` —— 3/10 个有
+- `ImageConcatMulti` —— 3/10 个有
+- `WanAnimatePlus ContextOptions` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `GetImageSize` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `LoadAudio` —— 1/10 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 10 | 60% |
-| Prompt 约束强度(CFG) | 7 | 4 - 20 | 10 | 42% |
-| 采样算法 | 1 | 1 - 3.5 | 10 | 40% |
-| 调度器 | euler_ancestral | - | 10 | 60% |
-| 重绘幅度 | simple | - | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,9 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，10 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 20，10 个样本，取值分散，一致性仅 42%
-- 采样算法 中位数 1，观测区间 1 - 3.5，10 个样本，取值分散，一致性仅 40%
-- 调度器 最常用 euler_ancestral，10 个样本，一致性 60%
-- 重绘幅度 最常用 simple，10 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

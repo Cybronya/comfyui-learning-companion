@@ -3,68 +3,71 @@ name: text_to_image_lora_sampler_clip_285
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.884286
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.905
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImpactInt, JjkText, KSampler, LayerMask: MaskGrow, LayerUtility: HLFrequencyDetailRestore, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Minimax H3 self-lift双采 sage加速二十五步最高质量版_2098297223221178370.json, 视频生成/文生视频/SelfLift双采BF16max多宫格单图专用三音色参考工作流，图生视频方案_2106481893637181442.json, 视频生成/文生视频/SelfLift双采BF16max多宫格单图专用双音色参考工作流，图生视频方案_2106512263355125761.json, 视频生成/文生视频/h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086259776987684865.json, 视频生成/文生视频/selfift双采BF16max多宫格单图专用｜三音色参考自由切换_2106225447443984385.json, 视频生成/文生视频/低显存12GB直出1080P高分辨率视频，BUNNY SelfLift混合工作流LoRA不模糊_2102864635153182721.json, 视频生成/文生视频/低显存高速Minimax H3双采 self-lift模式lora加速质量版_2098116326828105730.json]
+members: [图片生成/图生图/F.2 Klein产品溶图打光 电商场景合成光影融合海报_2098126474191654914.json, 图片生成/图生图/F.2_Klein产品溶图打光_电商场景合成光影融合海报_2098205867203186689.json, 图片生成/图生图/KONTX图像编辑工作流｜图生图一键高清生成_2094042285666299906.json, 图片生成/图生图/KONTX图像编辑工作流｜图生图局部重绘一键直出_2093832351976607745.json, 图片生成/图生图/Kontext产品溶图打光，图生图质感光影一步到位_2111209773038391298.json, 图片生成/图生图/Kontext产品溶图打光｜商品图质感升级出片利器_2111102942605570049.json, 图片生成/图生图/Kontext产品溶图打光｜图生图场景融合｜产品图氛围感直接拉满_2104785068794400770.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_285
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Minimax H3 self-lift双采 sage加速二十五步最高质量版_2098297223221178370.json、视频生成/文生视频/SelfLift双采BF16max多宫格单图专用三音色参考工作流，图生视频方案_2106481893637181442.json、视频生成/文生视频/SelfLift双采BF16max多宫格单图专用双音色参考工作流，图生视频方案_2106512263355125761.json、视频生成/文生视频/h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086259776987684865.json、视频生成/文生视频/selfift双采BF16max多宫格单图专用｜三音色参考自由切换_2106225447443984385.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/F.2 Klein产品溶图打光 电商场景合成光影融合海报_2098126474191654914.json、图片生成/图生图/F.2_Klein产品溶图打光_电商场景合成光影融合海报_2098205867203186689.json、图片生成/图生图/KONTX图像编辑工作流｜图生图一键高清生成_2094042285666299906.json、图片生成/图生图/KONTX图像编辑工作流｜图生图局部重绘一键直出_2093832351976607745.json、图片生成/图生图/Kontext产品溶图打光，图生图质感光影一步到位_2111209773038391298.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
 - `JjkText`
 - `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerUtility: HLFrequencyDetailRestore`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `ReferenceLatent`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 6/7 个有
-- `ConditioningZeroOut` —— 6/7 个有
-- `H3SigmaRefiner` —— 6/7 个有
-- `KSamplerSelect` —— 6/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
-- `VHS_VideoCombine` —— 6/7 个有
-- `孤海注释` —— 6/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/7 个有
-- `SaveImage` —— 5/7 个有
-- `SelfLiftH3Sampler` —— 5/7 个有
-- `LoadAudio` —— 4/7 个有
-- `BasicGuider` —— 1/7 个有
-- `CreateVideo` —— 1/7 个有
-- `LoraLoaderBypassModelOnly` —— 1/7 个有
-- `MiniMaxChunkFeedForward` —— 1/7 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/7 个有
-- `MiniMaxLowVRAMAttention` —— 1/7 个有
-- `RandomNoise` —— 1/7 个有
-- `SamplerCustomAdvanced` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
-- `SelfLiftAvatarH3Sampler` —— 1/7 个有
-- `SelfLiftAvatarH3TST` —— 1/7 个有
-- `SolAttnMiniMax` —— 1/7 个有
+- `DualCLIPLoader` —— 5/7 个有
+- `FluxGuidance` —— 5/7 个有
+- `InspyrenetRembg` —— 5/7 个有
+- `LayerMask: BiRefNetUltraV2` —— 5/7 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 5/7 个有
+- `GrowMask` —— 3/7 个有
+- `ImageUpscaleWithModel` —— 3/7 个有
+- `InvertMask` —— 3/7 个有
+- `JoinImageWithAlpha` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `Upscale Model Loader` —— 3/7 个有
+- `YUAN_TXTConvertAny` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `FastCanvas` —— 2/7 个有
+- `FastCanvasTool` —— 2/7 个有
+- `GLM_Translation_Text` —— 2/7 个有
+- `ImageCropper` —— 2/7 个有
+- `MultiTextConcatenate` —— 2/7 个有
+- `MuyeTextEditOutput` —— 2/7 个有
+- `easy imageRemBg` —— 2/7 个有
+- `Label (rgthree)` —— 1/7 个有
 
 ## 典型参数
 
@@ -82,7 +85,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -93,4 +96,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（11/7 个样本）：Steps较低可能导致细节不足

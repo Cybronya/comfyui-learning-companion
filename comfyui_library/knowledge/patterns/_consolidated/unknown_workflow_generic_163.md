@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_163
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.699364
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.723417
+common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/换装_2048376011816964097.json, 图片生成/图生图/换装换背景_2048790795930570753.json, 图片生成/图生图/角色三视图工作流｜一张角色图生成正侧背设定表_2099314455187378177.json, 图片生成/图生图/🍌全能图片Pro-api_2016823246326337537.json, 图片生成/文生图/AI漫剧人物和场景生成-盯盯盯-V2.0_2026277521989308418.json, 图片生成/文生图/AI漫剧人物和场景生成_2055554963975229442.json, 图片生成/文生图/AI漫剧人物生成-盯盯盯_2020521196940431362.json, 图片生成/文生图/全能图片2+Pro+视频生成合集_1939720000162992130.json, 视频生成/图生视频/全能图片+视频生成！（短剧、漫剧、电商）！效果好、速度快！_2031802829094002689.json, 视频生成/图生视频/电商换装生图生视频（可拆分运行）_2020032990960685058.json, 视频生成/图生视频/童年回忆 失落神庙 自定义角色【图片+视频 生成】_2013483702050889729.json]
+members: [音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json, 音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2038824621578919937.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2043543938941853698.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2075456272979283970.json, 音频生成/音频生成/FishAudio_2060290526255083522.json, 音频生成/音频生成/【3月】FishAudio S2TTS单人音色克隆_2033527407566659586.json, 音频生成/音频生成/单人语音克隆-83种语言-FishAudio S2 TTS（含特殊音效）吊打闭源_2033180836341747713.json, 音频生成/音频生成/带强调语气音频生成 FishAudio S2 TTS语气标签自动插入_2036968089769746434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_163
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/换装_2048376011816964097.json、图片生成/图生图/换装换背景_2048790795930570753.json、图片生成/图生图/角色三视图工作流｜一张角色图生成正侧背设定表_2099314455187378177.json、图片生成/图生图/🍌全能图片Pro-api_2016823246326337537.json、图片生成/文生图/AI漫剧人物和场景生成-盯盯盯-V2.0_2026277521989308418.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json、音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `FishS2VoiceCloneTTS`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 9/11 个有
-- `PrimitiveStringMultiline` —— 5/11 个有
-- `RH_Veo3_Image2Video` —— 4/11 个有
-- `SaveVideo` —— 4/11 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/11 个有
-- `CR Prompt Text` —— 1/11 个有
-- `DF_Text_Box` —— 1/11 个有
+- `CR Prompt Text` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `SaveAudioMP3` —— 10/12 个有
+- `RH_LLMAPI_Pro_Node` —— 8/12 个有
+- `SaveAudio` —— 2/12 个有
+- `easy clearCacheAll` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_636
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9
-common_nodes: [DF_Text_Box, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, 忽略多组孤海]
+coverage: 1
+common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Bnana全能图片编辑V2 香 蕉 Pro 4K直出_1983342124135555073.json, 图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json, 图片生成/图生图/老孙AI  Bnana全能图片编辑V2 香 蕉 Pro 4K_2087193170143703041.json, 数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json]
+members: [视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json, 视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json, 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json, 视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json, 视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_636
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Bnana全能图片编辑V2 香 蕉 Pro 4K直出_1983342124135555073.json、图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json、图片生成/图生图/老孙AI  Bnana全能图片编辑V2 香 蕉 Pro 4K_2087193170143703041.json、数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json、视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json、视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json、视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json、视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DF_Text_Box`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `忽略多组孤海`
+- `RH_AlibabaWan27ImageToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 3/5 个有
+- `TextBox` —— 1/5 个有
 
 ## 典型参数
 

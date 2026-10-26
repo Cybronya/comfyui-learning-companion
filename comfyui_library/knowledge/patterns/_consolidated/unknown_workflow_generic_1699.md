@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1699
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [CR Prompt Text, PreviewAny, SaveAudio, YuE2Loader, YuE2Plan, YuE2Render, YuE2SamplingConfig]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo, Text, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json, 音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json]
+members: [视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1699
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json、音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `PreviewAny`
-- `SaveAudio`
-- `YuE2Loader`
-- `YuE2Plan`
-- `YuE2Render`
-- `YuE2SamplingConfig`
+- `LoadImage`
+- `SaveVideo`
+- `Text`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 1/2 个有
+- `RH_AlibabaWan30PrimeImageToVideo` —— 1/2 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

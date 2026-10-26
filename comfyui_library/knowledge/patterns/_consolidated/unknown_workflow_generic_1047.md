@@ -3,32 +3,34 @@ name: unknown_workflow_generic_1047
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.809667
-common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
+coverage: 0.6
+common_nodes: [CR Prompt Text, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json, 视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json, 视频生成/文生视频/万相2.7-图生视频-首尾帧生视频_2040678606728339457.json]
+members: [图片生成/图生图/最强语言翻译Seed X Pro_1948335630064451586.json, 图片生成/文生图/（RH版）全能图片2极速文生图_2027396682912112642.json, 图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1047
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json、视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json、视频生成/文生视频/万相2.7-图生视频-首尾帧生视频_2040678606728339457.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/最强语言翻译Seed X Pro_1948335630064451586.json、图片生成/文生图/（RH版）全能图片2极速文生图_2027396682912112642.json、图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_AlibabaWan27ImageToVideo`
-- `SaveVideo`
+- `CR Prompt Text`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `RunningHub SeedXPro Translator` —— 1/3 个有
 
 ## 典型参数
 

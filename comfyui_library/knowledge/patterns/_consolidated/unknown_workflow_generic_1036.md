@@ -3,46 +3,33 @@ name: unknown_workflow_generic_1036
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.582
-common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), GetNode, JWString, LoadImage, MultiLinePromptIndex, MultiLinePromptMG, MultiTextConcatenate, PreviewAny, RH_Hailuo_Image2Video, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_Sora2_I2V, RH_Veo3_Image2Video, SaveImage, SaveVideo, SetNode, Text, Text Multiline, easy showAnything]
+coverage: 1
+common_nodes: [ImageLoaderAdvanced, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全流程工作流_2017334255008878594.json, 视频生成/图生视频/全流程工作流（老程）_2018275721206046722.json, 视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json]
+members: [图片生成/图生图/家居效果图_2012368922061836289.json, 图片生成/图生图/展厅效果图_2041433442071613441.json, 图片生成/文生图/家居产品家具沙发床生成效果图扩图美化图生图_2069484216743714818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1036
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全流程工作流_2017334255008878594.json、视频生成/图生视频/全流程工作流（老程）_2018275721206046722.json、视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/家居效果图_2012368922061836289.json、图片生成/图生图/展厅效果图_2041433442071613441.json、图片生成/文生图/家居产品家具沙发床生成效果图扩图美化图生图_2069484216743714818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `JWString`
-- `LoadImage`
-- `MultiLinePromptIndex`
-- `MultiLinePromptMG`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_Hailuo_Image2Video`
-- `RH_LLMAPI_Pro_Node`
+- `ImageLoaderAdvanced`
 - `RH_Nano_Banana2_Image2Image`
-- `RH_Sora2_I2V`
-- `RH_Veo3_Image2Video`
 - `SaveImage`
-- `SaveVideo`
-- `SetNode`
-- `Text`
-- `Text Multiline`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcanate` —— 2/3 个有
+- `TT_img_enc` —— 1/3 个有
 
 ## 典型参数
 

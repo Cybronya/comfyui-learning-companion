@@ -3,38 +3,37 @@ name: unknown_workflow_generic_1589
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.7845
+common_nodes: [GODMT_SplitString, RH_LLMAPI_Pro_Node, SaveImage, TextInput_, easy indexAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/AI图生剧本_2039001758223044609.json, 视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json]
+members: [图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json, 图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1589
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/AI图生剧本_2039001758223044609.json、视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json、图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadImage`
+- `GODMT_SplitString`
 - `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
+- `TextInput_`
+- `easy indexAnything`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ProcessString` —— 1/2 个有
-- `RHMiniMaxH3T2VATextEncode` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

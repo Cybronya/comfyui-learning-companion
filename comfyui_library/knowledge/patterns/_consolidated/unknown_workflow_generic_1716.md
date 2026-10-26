@@ -3,35 +3,28 @@ name: unknown_workflow_generic_1716
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [LoadAudio, LoadImage, SaveAudio, TextInput_, easy showAnything]
+coverage: 1
+common_nodes: [RH_RhartVideoV31ProOfficialTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆并精确控制情绪_1980158046997483521.json, 音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆并精确控制语音速度_1980136139854090241.json]
+members: [视频生成/图生视频/全能视频V3.1-pro-文生视频-官方稳定版_2028673252347875330.json, 视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1716
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆并精确控制情绪_1980158046997483521.json、音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆并精确控制语音速度_1980136139854090241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1-pro-文生视频-官方稳定版_2028673252347875330.json、视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `SaveAudio`
-- `TextInput_`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Duration` —— 1/2 个有
-- `IndexTTS2_Emotion` —— 1/2 个有
+- `RH_RhartVideoV31ProOfficialTextToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -1,66 +1,58 @@
 ---
 name: unknown_workflow_sampler_clip_unet_327
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.345
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, GetImageSize, GetNode, Image Comparer (rgthree), ImageBatchOneOrMore, ImageScaleToTotalPixels, KSampler, LazySwitchKJ, LoadImage, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, ReferenceMultiLatent, ResizeAndPadImage, ResolutionSelector, SaveImage, SeedNode, SetNode, TextGenerate, UNETLoader, VAEDecode, VAELoader, 忽略多组孤海]
+frequency: 4
+level: moderate
+coverage: 0.89075
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX 3 Klein 多功能整合工作流（16步蒸馏版 ·官方提示词增强）_2112320339689693186.json, 图片生成/图生图/FLUX+3 Klein  多功能整合 官方版_2111016753500352513.json, 图片生成/文生图/FLUX 3 Klein 多功能整合工作流（16步蒸馏版 ·官方提示词增强）_2110967971152752642.json]
+members: [图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json, 图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json, 图片生成/文生图/z_image二采_2093223736949432322.json, 图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_327
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX 3 Klein 多功能整合工作流（16步蒸馏版 ·官方提示词增强）_2112320339689693186.json、图片生成/图生图/FLUX+3 Klein  多功能整合 官方版_2111016753500352513.json、图片生成/文生图/FLUX 3 Klein 多功能整合工作流（16步蒸馏版 ·官方提示词增强）_2110967971152752642.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json、图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json、图片生成/文生图/z_image二采_2093223736949432322.json、图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：34%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageBatchOneOrMore`
-- `ImageScaleToTotalPixels`
-- `KSampler`
-- `LazySwitchKJ`
-- `LoadImage`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ReferenceMultiLatent`
-- `ResizeAndPadImage`
-- `ResolutionSelector`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `SeedNode`
-- `SetNode`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `LatentColorMatch` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `easy promptList` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 16 | 16 - 16 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 10 | 3 - 20 | 4 | 44% |
+| 采样算法 | 1 | 1 - 3 | 4 | 42% |
+| 调度器 | gradient_estimation | - | 4 | 25% |
+| 重绘幅度 | sgm_uniform | - | 4 | 75% |
+| 宽度 | 960 | 720 - 1080 | 4 | 85% |
+| 高度 | 1216 | 1024 - 1920 | 4 | 74% |
 
 ## 常见问题
 
@@ -68,8 +60,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 16，观测区间 16 - 16，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 3 - 20，4 个样本，取值分散，一致性仅 44%
+- 采样算法 中位数 1，观测区间 1 - 3，4 个样本，取值分散，一致性仅 42%
+- 调度器 最常用 gradient_estimation，4 个样本，一致性 25%
+- 重绘幅度 最常用 sgm_uniform，4 个样本，一致性 75%
+- 宽度 中位数 960，观测区间 720 - 1080，4 个样本，取值集中（一致性 85%）
+- 高度 中位数 1216，观测区间 1024 - 1920，4 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

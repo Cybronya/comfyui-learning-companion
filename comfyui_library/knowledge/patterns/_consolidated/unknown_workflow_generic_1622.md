@@ -3,35 +3,38 @@ name: unknown_workflow_generic_1622
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
+coverage: 0.6415
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, SetNode, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/超能视频2.0满血版-支持真人_2036459509194952706.json, 视频生成/文生视频/首帧-Seedance2.0_2086084682856361985.json]
+members: [图片生成/文生图/人物设计工作流_2019661430148046849.json, 图片生成/文生图/全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1622
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/超能视频2.0满血版-支持真人_2036459509194952706.json、视频生成/文生视频/首帧-Seedance2.0_2086084682856361985.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/人物设计工作流_2019661430148046849.json、图片生成/文生图/全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RH_SparkVideoAssetCreate`
-- `RH_SparkVideoAssetIdsMerge`
-- `SaveVideo`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `SetNode`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 
 ## 典型参数
 

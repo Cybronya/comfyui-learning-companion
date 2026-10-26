@@ -1,70 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_257
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.67225
-common_nodes: [GetImageRangeFromBatch, GetNode, GrowMask, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.949667
+common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Mocha sec4b视频抠图工作流_1982464273806966785.json, 视频生成/图生视频/人物替换Mocha工作流Wan（支持10s以上）_2013864867756773377.json, 视频生成/图生视频/最新视频角色替换Mocha_1980911162026016770.json, 视频生成/图生视频/视频人物替换 Mocha_1979526023647760386.json, 视频生成/图生视频/角色替换Mocha_1980827522109755393.json, 视频生成/图生视频/角色替换Mocha工作流_1986007241096605697.json, 视频生成/图生视频/（单参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980912658343968770.json, 视频生成/文生视频/（双参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980845806502760449.json]
+members: [视频生成/图生视频/WAN2.2图生视频_1950137059535183873.json, 视频生成/图生视频/WAN2.2图生视频快速流KJ版i2V_1949391348926971905.json, 视频生成/图生视频/Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json, 视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json, 视频生成/图生视频/Wan2.2一致性长视频_1950574501610311681.json, 视频生成/图生视频/Wan2.2图生视频-速度和质量的再一次提升_1950204585861365762.json, 视频生成/图生视频/Wan2.2图生视频吊打付费网站效果_1950068834109710337.json, 视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json, 视频生成/图生视频/wan2.2最好的360度旋转特效-可生成人物和物体一致性图片素材-附林黛玉写实_1986434223613636609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_257
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Mocha sec4b视频抠图工作流_1982464273806966785.json、视频生成/图生视频/人物替换Mocha工作流Wan（支持10s以上）_2013864867756773377.json、视频生成/图生视频/最新视频角色替换Mocha_1980911162026016770.json、视频生成/图生视频/视频人物替换 Mocha_1979526023647760386.json、视频生成/图生视频/角色替换Mocha_1980827522109755393.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/WAN2.2图生视频_1950137059535183873.json、视频生成/图生视频/WAN2.2图生视频快速流KJ版i2V_1949391348926971905.json、视频生成/图生视频/Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json、视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json、视频生成/图生视频/Wan2.2一致性长视频_1950574501610311681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GrowMask`
+全部 9 个 workflow 都包含：
 - `ImageResizeKJv2`
 - `LoadImage`
-- `MaskPreview`
-- `MochaEmbeds`
-- `PointsEditor`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 6/8 个有
-- `SeCModelLoader` —— 5/8 个有
-- `SeCVideoSegmentation` —— 5/8 个有
-- `easy imageRemBg` —— 5/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
-- `RMBG` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `Crop Face` —— 3/8 个有
-- `DownloadAndLoadSAM2Model` —— 3/8 个有
-- `Int` —— 3/8 个有
-- `Load RetinaFace` —— 3/8 个有
-- `Sam2Segmentation` —— 3/8 个有
-- `VHS_VideoInfo` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `JWInteger` —— 2/8 个有
-- `PDIMAGE_LongerSize` —— 2/8 个有
-- `SaveImage` —— 2/8 个有
-- `DF_Int_to_Float` —— 1/8 个有
-- `DeepTranslatorTextNode` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `GetImageSizeAndCount` —— 8/9 个有
+- `LoadWanVideoT5TextEncoder` —— 8/9 个有
+- `WanVideoTextEncode` —— 8/9 个有
+- `CreateCFGScheduleFloatList` —— 5/9 个有
+- `easy cleanGpuUsed` —— 5/9 个有
+- `CLIPLoader` —— 4/9 个有
+- `CLIPTextEncode` —— 4/9 个有
+- `INTConstant` —— 4/9 个有
+- `WanVideoTextEmbedBridge` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/9 个有
+- `GIMMVFI_interpolate` —— 3/9 个有
+- `GetNode` —— 1/9 个有
+- `JWStringMultiline` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
+- `Primitive integer [Crystools]` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 

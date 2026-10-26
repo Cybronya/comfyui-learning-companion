@@ -3,74 +3,59 @@ name: unknown_workflow_video_lora_sampler_630
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.527667
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewAny, PrimitiveFloat, PrimitiveInt, RIFE VFI, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
+coverage: 0.963333
+common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json, 视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json, 视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json, 视频生成/图生视频/【遇见AI】wan2.1 Skyreels V2 图生视频，支持超过81帧_2067521044533039105.json, 视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_630
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json、视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json、视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json、视频生成/图生视频/【遇见AI】wan2.1 Skyreels V2 图生视频，支持超过81帧_2067521044533039105.json、视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RIFE VFI`
-- `SaveAudio`
-- `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 2/3 个有
-- `DrawViTPose` —— 2/3 个有
-- `LayerMask: MaskInvert` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `CreateCFGScheduleFloatList` —— 1/3 个有
+- `FantasyTalkingModelLoader` —— 1/3 个有
+- `FantasyTalkingWav2VecEmbeds` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
+- `WanVideoImageToVideoSkyreelsv3_audio` —— 1/3 个有
+- `WanVideoPassImagesFromSamples` —— 1/3 个有
 
 ## 典型参数
 

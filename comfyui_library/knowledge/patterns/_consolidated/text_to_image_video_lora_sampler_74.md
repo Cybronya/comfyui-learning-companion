@@ -1,112 +1,97 @@
 ---
 name: text_to_image_video_lora_sampler_74
 type: Text To Image
-frequency: 9
+frequency: 11
 level: strong
-coverage: 0.649444
-common_nodes: [AFL:ImageSwitch, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyLatentImage, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GIMMVFI_interpolate, GetNode, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, ImpactConditionalBranch, ImpactIfNone, ImpactSwitch, Int, InversionDemoLazySwitch, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MinNode, ModelSamplingSD3, PreviewImage, PrimitiveBoolean, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy cleanGpuUsed, easy imageRemBg, easy int, easy showAnything, solarL_SaveImagesToZip, 图像缩放V2_孤海, 孤海注释]
+coverage: 0.894
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Scail2纯血官流动作迁移｜多参数灵活适配角色场景_2092721335620431874.json, 图片生成/图生图/Scail2纯血官流动作迁移｜多参数适配角色场景图生图_2093124409627340802.json, 图片生成/图生图/Scail2纯血官流版动作迁移｜多参数灵活适配角色场景_2090547739670179841.json, 图片生成/图生图/动作迁移Scail2纯血官流版 多参数支持灵活适配各类角色场景_2092547310298419202.json, 图片生成/图生图/纯血官流版动作迁移｜Scail2多参数灵活适配场景_2092923769936506881.json, 数字人/数字人/Scail2多参考图版V3动作迁移人物替换视频处理工具_2102475358082781185.json, 数字人/数字人/Scail2最新版｜多参考图动作迁移人物替换｜美少女数字人一键换主角_2102207160028581890.json, 数字人/数字人/动作迁移人物替换Scail2多参考图版V2工具_2100265714266497026.json, 视频生成/图生视频/Scail2最新版｜多参考图动作迁移人物替换｜美少女数字人一键换主角_2104059415866462210.json]
+members: [视频生成/文生视频/fengjing风景文生视频｜自然场景动态画面生成_2105256241860792321.json, 视频生成/文生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086255484864131074.json, 视频生成/文生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086540912632623105.json, 视频生成/文生视频/h3开源版H3数字人单人版运镜MiniMax图生视频口播数字人参考音频_2086497674601263105.json, 视频生成/文生视频/图片音频生成口播数字人｜MinimaxH3全节点注释_2091178749877379073.json, 视频生成/文生视频/开源版数字人说话唱歌｜Minimax H3图生视频直出_2092339960107061250.json, 视频生成/文生视频/开源版数字人｜MiniMax H3说话唱歌文生图生视频_2092589071527923714.json, 视频生成/文生视频/精准可控数字人升级版｜H3音频驱动+全能参考附整合包_2093760313689722881.json, 视频生成/文生视频/精准可控数字人升级版｜H3音频驱动+全能参考附整合包_2093991203292401665.json, 视频生成/文生视频/说话唱歌数字人｜Minimax H3开源版图生视频生成_2094743484795277314.json, 视频生成/文生视频/音频图片变口播数字人｜MinimaxH3全节点注释版_2090887027813343234.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_74
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Scail2纯血官流动作迁移｜多参数灵活适配角色场景_2092721335620431874.json、图片生成/图生图/Scail2纯血官流动作迁移｜多参数适配角色场景图生图_2093124409627340802.json、图片生成/图生图/Scail2纯血官流版动作迁移｜多参数灵活适配角色场景_2090547739670179841.json、图片生成/图生图/动作迁移Scail2纯血官流版 多参数支持灵活适配各类角色场景_2092547310298419202.json、图片生成/图生图/纯血官流版动作迁移｜Scail2多参数灵活适配场景_2092923769936506881.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/fengjing风景文生视频｜自然场景动态画面生成_2105256241860792321.json、视频生成/文生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086255484864131074.json、视频生成/文生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086540912632623105.json、视频生成/文生视频/h3开源版H3数字人单人版运镜MiniMax图生视频口播数字人参考音频_2086497674601263105.json、视频生成/文生视频/图片音频生成口播数字人｜MinimaxH3全节点注释_2091178749877379073.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AFL:ImageSwitch`
+全部 11 个 workflow 都包含：
+- `AudioCrop`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `DownloadAndLoadGIMMVFIModel`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GIMMVFI_interpolate`
-- `GetNode`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImpactConditionalBranch`
-- `ImpactIfNone`
-- `ImpactSwitch`
-- `Int`
-- `InversionDemoLazySwitch`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `MinNode`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
-- `Text`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanContextWindowsManual`
-- `WanSCAILToVideo`
-- `easy cleanGpuUsed`
-- `easy imageRemBg`
-- `easy int`
-- `easy showAnything`
+- `VRGDG_MiniMaxH3AudioDrive`
 - `solarL_SaveImagesToZip`
-- `图像缩放V2_孤海`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CompressImages` —— 5/9 个有
-- `VAEDecodeTiled` —— 5/9 个有
-- `VHS_SelectFilename` —— 5/9 个有
-- `SimpleMath+` —— 4/9 个有
-- `SaveImage` —— 2/9 个有
-- `忽略多组孤海` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
+- `LoadImage` —— 10/11 个有
+- `孤海注释` —— 9/11 个有
+- `PrimitiveFloat` —— 8/11 个有
+- `SoundFlow_GetLength` —— 8/11 个有
+- `Int` —— 7/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/11 个有
+- `PreviewAudio` —— 5/11 个有
+- `ModelAttentionBackend` —— 4/11 个有
+- `PathchSageAttentionKJ` —— 4/11 个有
+- `ResolutionSelector` —— 4/11 个有
+- `JWIntegerToString` —— 3/11 个有
+- `SimpleMath+` —— 3/11 个有
+- `CR Text` —— 2/11 个有
+- `ModelPreviewOverrideKJ` —— 2/11 个有
+- `MiniMaxH3BlockCacheT8` —— 1/11 个有
+- `PrimitiveString` —— 1/11 个有
+- `Text` —— 1/11 个有
+- `ZML_MergeText` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 11 | 100% |
+| 高度 | 80 | 80 - 80 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
+| 采样算法 | er_sde | - | 11 | 100% |
+| 调度器 | beta | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 21/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（21/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，11 个样本，一致性 100%
+- 调度器 最常用 beta，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

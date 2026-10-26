@@ -3,30 +3,37 @@ name: unknown_workflow_generic_1706
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [CR Text, JjkText, OmniVoiceVoiceDesignTTS, SaveAudio]
+coverage: 0.9665
+common_nodes: [LoadImage, RHHiddenNodes, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, RH_RhartImageG2ImageToImage, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/tts_edge.json_2072219550560641026.json, 音频生成/音频生成/ttts_edge.json_2071849435314876418.json]
+members: [视频生成/图生视频/一键生成15秒世界杯广告片_2074024822287454209.json, 视频生成/文生视频/一键小说原文转15秒漫剧工作流_2077774416972443650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1706
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/tts_edge.json_2072219550560641026.json、音频生成/音频生成/ttts_edge.json_2071849435314876418.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/一键生成15秒世界杯广告片_2074024822287454209.json、视频生成/文生视频/一键小说原文转15秒漫剧工作流_2077774416972443650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
-- `OmniVoiceVoiceDesignTTS`
-- `SaveAudio`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

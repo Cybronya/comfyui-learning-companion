@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1528
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.675
-common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioAdvanced]
+coverage: 0.8
+common_nodes: [LayerMask: SegmentAnythingUltra V2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json, 音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json]
+members: [图片生成/图生图/抠图_2038543335949869057.json, 图片生成/图生图/语音分割抠图升级版本+SegmentAnything Ultra V2+全节点注释_2056029346262994945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1528
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json、音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/抠图_2038543335949869057.json、图片生成/图生图/语音分割抠图升级版本+SegmentAnything Ultra V2+全节点注释_2056029346262994945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
+- `TransparentImage` —— 1/2 个有
 
 ## 典型参数
 

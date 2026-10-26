@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1433
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7085
-common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.675
+common_nodes: [DoubaoImageGenerator, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/自拍照片一键生成正装证件照_1964761706591305730.json, 图片生成/图生图/通用产品精修 （全能图片-2.0）_2029181713380810754.json]
+members: [图片生成/图生图/【阡陌】豆包Seedream 4.0超强单图图像编辑工作流_1966479186854653953.json, 图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1433
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自拍照片一键生成正装证件照_1964761706591305730.json、图片生成/图生图/通用产品精修 （全能图片-2.0）_2029181713380810754.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【阡陌】豆包Seedream 4.0超强单图图像编辑工作流_1966479186854653953.json、图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `DoubaoImageGenerator`
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveString` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,41 +3,48 @@ name: unknown_workflow_generic_932
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.557
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy showAnything]
+coverage: 0.508
+common_nodes: [CR Prompt Text, ImageConcatMulti, ImageFromBatch+, JWInteger, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, ShowAnything|Mie, VHS_LoadVideo, VHS_VideoInfo, easy forLoopEnd, easy forLoopStart, easy imageConcat, easy mathInt]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json, 图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json, 图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json]
+members: [图片生成/反推提示词/超好用-女装视频反推动作提示词_2050458933847965697.json, 视频生成/图生视频/超好用🔥女装视频拆解所有动作关键帧+全节点注释_2046474090080378881.json, 视频生成/图生视频/🔥超好用🔥女装视频拆解所有动作关键帧+全节点注释（优化算法）_2041794960168591361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_932
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json、图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json、图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/超好用-女装视频反推动作提示词_2050458933847965697.json、视频生成/图生视频/超好用🔥女装视频拆解所有动作关键帧+全节点注释_2046474090080378881.json、视频生成/图生视频/🔥超好用🔥女装视频拆解所有动作关键帧+全节点注释（优化算法）_2041794960168591361.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `CR Prompt Text`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `JWInteger`
 - `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `easy showAnything`
+- `ShellAgentPluginOutputText`
+- `ShowAnything|Mie`
+- `VHS_LoadVideo`
+- `VHS_VideoInfo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageConcat`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `AppendImageBatch` —— 2/3 个有
+- `SaveText` —— 2/3 个有
+- `LoadVideo` —— 1/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `easy saveText` —— 1/3 个有
 
 ## 典型参数
 

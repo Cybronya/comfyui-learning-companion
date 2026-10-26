@@ -1,74 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_496
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.94775
-common_nodes: [CLIPVisionLoader, GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, InspyrenetRembg, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 5
+level: strong
+coverage: 0.922
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageFromBatch+, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json, 视频生成/图生视频/MAGREF三图参考_1936376393980874754.json, 视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json, 视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json]
+members: [视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json, 视频生成/图生视频/Wan2.2 Vace图生视频加速版_1950473499028738049.json, 视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json, 视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json, 视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_496
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json、视频生成/图生视频/MAGREF三图参考_1936376393980874754.json、视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json、视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json、视频生成/图生视频/Wan2.2 Vace图生视频加速版_1950473499028738049.json、视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json、视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json、视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSize`
-- `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
-- `ImagePadKJ`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `InspyrenetRembg`
-- `KepStringLiteral`
-- `LayerUtility: PurgeVRAM V2`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageFromBatch+`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `TrimVideoLatent`
+- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `Seed Everywhere` —— 3/4 个有
-- `CreateVideo` —— 2/4 个有
-- `D_VideoLengthAdjuster` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `RH_HeyGemNode` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `String Literal` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
+- `JWInteger` —— 4/5 个有
+- `ImageBatch` —— 3/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `ImageToMask` —— 3/5 个有
+- `MaskToImage` —— 3/5 个有
+- `MathExpression|pysssss` —— 3/5 个有
+- `RepeatImageBatch` —— 3/5 个有
+- `SolidMask` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `SDVN Image Repeat` —— 2/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 10 | 8 - 10 | 5 | 89% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | lcm | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -76,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 89%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

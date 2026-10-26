@@ -1,60 +1,45 @@
 ---
 name: unknown_workflow_sampler_vae_43
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9236
-common_nodes: [BasicScheduler, CFGGuider, CreateVideo, DiffusionModelLoaderKJ, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SaveVideo, TTResolutionSelector, VAEDecodeTiled, VAELoaderKJ]
+coverage: 0.878167
+common_nodes: [JoyAI_Image_ENCODER, JoyAI_Image_LATENTS, JoyAI_Image_SM_Clip, JoyAI_Image_SM_KSampler, JoyAI_Image_SM_Model, JoyAI_Image_SM_VAE, JoyAI_Vae_Decoder, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.5导演台+图生数字人_2087557413565194242.json, 视频生成/图生视频/ltx2.3全流程导演台V3.0版本震撼来袭！（已修复）_2063253147182780418.json, 视频生成/文生视频/LTX2.5导演台+文生数字人_2087538824678301697.json, 视频生成/文生视频/LTX2.5导演台_2096907120728956929.json, 视频生成/文生视频/全民导演时代！LTX2.3全流程导演台！_2056554300528218114.json]
+members: [图片生成/图生图/JoyAI Image Edit 单图编辑 专攻镜头控制-视角旋转_2043521558035042306.json, 图片生成/图生图/JoyAI图像编辑_2042256669849165826.json, 图片生成/图生图/JoyAI图像编辑_2042953747986391041.json, 图片生成/图生图/JoyAi-image-edit单图编辑_2042230181556916225.json, 图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2042255778484064257.json, 图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2043621059412365313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_43
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.5导演台+图生数字人_2087557413565194242.json、视频生成/图生视频/ltx2.3全流程导演台V3.0版本震撼来袭！（已修复）_2063253147182780418.json、视频生成/文生视频/LTX2.5导演台+文生数字人_2087538824678301697.json、视频生成/文生视频/LTX2.5导演台_2096907120728956929.json、视频生成/文生视频/全民导演时代！LTX2.3全流程导演台！_2056554300528218114.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/JoyAI Image Edit 单图编辑 专攻镜头控制-视角旋转_2043521558035042306.json、图片生成/图生图/JoyAI图像编辑_2042256669849165826.json、图片生成/图生图/JoyAI图像编辑_2042953747986391041.json、图片生成/图生图/JoyAi-image-edit单图编辑_2042230181556916225.json、图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2042255778484064257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CreateVideo`
-- `DiffusionModelLoaderKJ`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+全部 6 个 workflow 都包含：
+- `JoyAI_Image_ENCODER`
+- `JoyAI_Image_LATENTS`
+- `JoyAI_Image_SM_Clip`
+- `JoyAI_Image_SM_KSampler`
+- `JoyAI_Image_SM_Model`
+- `JoyAI_Image_SM_VAE`
+- `JoyAI_Vae_Decoder`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 4/5 个有
-- `CLIPLoader` —— 3/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `LTXDirectorGuide` —— 3/5 个有
-- `YusuLTXDirector` —— 3/5 个有
-- `CLIPTextEncode` —— 2/5 个有
-- `DualCLIPLoader` —— 2/5 个有
-- `LTXDirector` —— 2/5 个有
-- `LTXVCropGuides` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `YusuLTXDirectorCropGuides` —— 2/5 个有
-- `YusuLTXDirectorGuide` —— 2/5 个有
-- `GetNode` —— 1/5 个有
-- `LTXDirectorCropGuides` —— 1/5 个有
-- `SetNode` —— 1/5 个有
+- `CR Text` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `RH_Translator` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `Int` —— 1/6 个有
 
 ## 典型参数
 

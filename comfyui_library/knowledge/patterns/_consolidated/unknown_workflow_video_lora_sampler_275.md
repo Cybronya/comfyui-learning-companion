@@ -3,61 +3,64 @@ name: unknown_workflow_video_lora_sampler_275
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.95375
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+coverage: 0.666875
+common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/单图生视频_2083552023793979393.json, 视频生成/图生视频/图生视频 Aiwood wan2.2+2.1二阶_2033358933443747841.json, 视频生成/图生视频/图生视频工作流_2066459393683705858.json, 视频生成/图生视频/社区模型图生视频Smooth Mix i2V v2.0模型测试_2050537311854710785.json, 视频生成/图生视频/背摔视频特效wan2.2_1981669095458381825.json, 视频生成/图生视频/通义万相wan2.2图生视频（lightx2v加速6步）_1949968677410136066.json, 视频生成/图生视频/（自用）Wan2.2高质量图生视频工作流81帧50秒_1952579457632669698.json, 视频生成/图生视频/（（自用）官方版）Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1952589946924273666.json]
+members: [图片生成/图生图/Lynx高保真IP迁移工作流升级版_2073214069175312386.json, 图片生成/图生图/人物图片代替视频lora模型--Lynx免训练ID_1976962835324522498.json, 视频生成/图生视频/无限画布工作流-嘉宾视频_1977229583860801538.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Full版V2_1975438784533762049.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(横版)_1975435330138542082.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(竖版)_1975446783209902081.json, 视频生成/文生视频/Wan2.1_T2V_Lynx人物一致性文生视频_1976584449313869825.json, 视频生成/文生视频/Wanvideo-lynx超级人物一致性文生视频_1976840032592052226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_275
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/单图生视频_2083552023793979393.json、视频生成/图生视频/图生视频 Aiwood wan2.2+2.1二阶_2033358933443747841.json、视频生成/图生视频/图生视频工作流_2066459393683705858.json、视频生成/图生视频/社区模型图生视频Smooth Mix i2V v2.0模型测试_2050537311854710785.json、视频生成/图生视频/背摔视频特效wan2.2_1981669095458381825.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Lynx高保真IP迁移工作流升级版_2073214069175312386.json、图片生成/图生图/人物图片代替视频lora模型--Lynx免训练ID_1976962835324522498.json、视频生成/图生视频/无限画布工作流-嘉宾视频_1977229583860801538.json、视频生成/文生视频/Lynx免训练ID一致性文生视频Full版V2_1975438784533762049.json、视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(横版)_1975435330138542082.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
-- `PathchSageAttentionKJ` —— 4/8 个有
-- `LayerUtility: PurgeVRAM` —— 3/8 个有
-- `CLIPVisionEncode` —— 2/8 个有
-- `CLIPVisionLoader` —— 2/8 个有
-- `LoadLatent` —— 2/8 个有
-- `SaveImage` —— 2/8 个有
-- `ConstrainImage|pysssss` —— 1/8 个有
-- `GetImageSize+` —— 1/8 个有
-- `SaveLatent` —— 1/8 个有
-- `easy imageSize` —— 1/8 个有
+- `GetNode` —— 6/8 个有
+- `ImageConcatMulti` —— 5/8 个有
+- `ImageFromBatch+` —— 5/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `GetImageSizeAndCount` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `CR Text` —— 3/8 个有
+- `AdvancedImageSelector` —— 1/8 个有
+- `FancyTimerNode` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `RMBG` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 62% |
-| Prompt 约束强度(CFG) | 6 | 4 - 14 | 8 | 61% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 62% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 62%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 14，8 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 62%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

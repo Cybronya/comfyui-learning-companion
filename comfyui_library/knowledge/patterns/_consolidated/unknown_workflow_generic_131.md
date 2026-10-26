@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_131
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.869
-common_nodes: [RH_ComfyFluxKontext, SaveImage]
+coverage: 0.811231
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json, 图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json, 图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json, 图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json, 图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json, 图片生成/图生图/Flux Kontext 明星手持产品｜代言海报_1932978465115344897.json, 图片生成/图生图/Flux Kontext 最简单人物换装_1930801597612228610.json, 图片生成/图生图/Flux Kontext 模特动作摆拍｜模特展示_1932619284621238273.json, 图片生成/图生图/Flux Kontext 模特手持产品图_1934783763614212097.json, 图片生成/图生图/kontext 图像编辑丨超便宜接口_1933925778687971330.json, 图片生成/图生图/kontext 对接扣子 _ 图像编辑丨超便宜接口_1933961441760468994.json, 图片生成/图生图/扣子接入Kontext图片编辑_1928687733341065217.json]
+members: [图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json, 图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json, 图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json, 图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json, 图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1960400616747167745.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1961692729006821378.json, 图片生成/图生图/全能图片V1图像编辑三图优化版_1960687935127511041.json, 图片生成/图生图/全能图片V1图像编辑双图优化版_1960404396435714050.json, 图片生成/图生图/全能图片V1热门手办生成_1962392113331703809.json, 图片生成/图生图/全能模型 最强开源 改年龄  一键年轻化  一键老年化_2046833230090870785.json, 图片生成/文生图/全能图片V1文生图_1962387003432112130.json, 图片生成/文生图/大全能生图-每天免米使用5次_2055661754121768962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_131
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json、图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json、图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json、图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json、图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json、图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json、图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json、图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json、图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_ComfyFluxKontext`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/12 个有
-- `DeepTranslatorTextNode` —— 8/12 个有
-- `PreviewImage` —— 4/12 个有
-- `ReroutePrimitive|pysssss` —— 3/12 个有
-- `easy showAnything` —— 3/12 个有
-- `LoadImageFromUrl` —— 2/12 个有
+- `CR Text` —— 11/13 个有
+- `GeminiInputFiles` —— 1/13 个有
+- `NineGridMosaicNode` —— 1/13 个有
 
 ## 典型参数
 

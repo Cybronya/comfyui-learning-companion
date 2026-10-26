@@ -2,65 +2,53 @@
 name: unknown_workflow_sampler_checkpoint_vae_17
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.887
-common_nodes: [Bjornulf_FreeVRAM, CM_IntToFloat, CheckpointLoaderSimple, EmptyYuE2LatentAudio, KSampler, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveStringMultiline, SaveAudio, SaveAudioAdvanced, VAEDecodeAudio, YuE2GenerateMusic]
-problems: [发现KSampler但没有VAEDecode]
+level: moderate
+coverage: 0.786833
+common_nodes: [CFGGuider, EmptyFlux2LatentImage, RandomNoise, SamplerCustomAdvanced, SaveImage, T8LLaDAImageCheckpointLoader, T8LLaDAImageScheduler, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/YuE2纯音乐bgm生成无人声)_2100745568250327042.json, 图片生成/文生图/YuE2纯音乐bgm生成无人声)_2101456369428819970.json, 图片生成/文生图/YuE2纯音乐bgm生成（无人声)_2102589555961585665.json, 音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2101851412895461377.json, 音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2102663661012738050.json, 音频生成/音频生成/YuE2纯音乐bgm生成（无人声)_2099828546146492417.json]
+members: [图片生成/文生图/LLaDA-Image Base VQ文生图·VQ编码高保真_2097528015889719297.json, 图片生成/文生图/LLaDA-Image Base文生图·高保真图像生成_2097527015002955777.json, 图片生成/文生图/LLaDA-Image Turbo VQ文生图·极速VQ编码_2097528202888568834.json, 图片生成/文生图/LLaDA-Image Turbo极速文生图·4步出图_2097527440242466817.json, 图片生成/文生图/LLaDA-Image-Turbo-4步-文生图_2098231001439887361.json, 图片生成/文生图/Llada Image Turbo 文生图_2097314140187615233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/YuE2纯音乐bgm生成无人声)_2100745568250327042.json、图片生成/文生图/YuE2纯音乐bgm生成无人声)_2101456369428819970.json、图片生成/文生图/YuE2纯音乐bgm生成（无人声)_2102589555961585665.json、音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2101851412895461377.json、音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2102663661012738050.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/LLaDA-Image Base VQ文生图·VQ编码高保真_2097528015889719297.json、图片生成/文生图/LLaDA-Image Base文生图·高保真图像生成_2097527015002955777.json、图片生成/文生图/LLaDA-Image Turbo VQ文生图·极速VQ编码_2097528202888568834.json、图片生成/文生图/LLaDA-Image Turbo极速文生图·4步出图_2097527440242466817.json、图片生成/文生图/LLaDA-Image-Turbo-4步-文生图_2098231001439887361.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Bjornulf_FreeVRAM`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimple`
-- `EmptyYuE2LatentAudio`
-- `KSampler`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioAdvanced`
-- `VAEDecodeAudio`
-- `YuE2GenerateMusic`
+- `CFGGuider`
+- `EmptyFlux2LatentImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `T8LLaDAImageCheckpointLoader`
+- `T8LLaDAImageScheduler`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
+- `CLIPTextEncode` —— 4/6 个有
+- `PrimitiveInt` —— 4/6 个有
+- `PrimitiveStringMultiline` —— 4/6 个有
+- `T8SamplerLLaDAImageTurbo` —— 4/6 个有
+- `KSamplerSelect` —— 2/6 个有
+- `T8LLaDAImageVQConditioning` —— 2/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 32 | 32 - 32 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | dpm_2 | - | 6 | 100% |
-| 调度器 | sgm_uniform | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 32，观测区间 32 - 32，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpm_2，6 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

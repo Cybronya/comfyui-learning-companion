@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadImage, RH_GPT_Image15, SaveImage]
+common_nodes: [ImageScaleToTotalPixels, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G Image 1.5 图生图_2045011362828525570.json, 图片生成/图生图/全能图片G-Image 1.5 图生图_2004421107258191874.json]
+members: [图片生成/图生图/-全能图片V1单图_多图工作流，图像编辑模型_1961791018268037121.json, 图片生成/图生图/-全能图片V1单图_多图工作流，最强图像编辑模型！_1961661249467695105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1330
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G Image 1.5 图生图_2045011362828525570.json、图片生成/图生图/全能图片G-Image 1.5 图生图_2004421107258191874.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/-全能图片V1单图_多图工作流，图像编辑模型_1961791018268037121.json、图片生成/图生图/-全能图片V1单图_多图工作流，最强图像编辑模型！_1961661249467695105.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,12 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_GPT_Image15`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `Text Multiline`
 
 ## 典型参数
 

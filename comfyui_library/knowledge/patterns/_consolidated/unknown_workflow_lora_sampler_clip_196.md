@@ -3,67 +3,58 @@ name: unknown_workflow_lora_sampler_clip_196
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.833
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, SimpleMath+, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy negative, easy positive, easy showAnything]
+coverage: 0.966
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/QT103-文生图双引擎（Wan2.2）自动提示词润色，一句话也也能出完美图像，wan2.2文生图_1956342842593607682.json, 图片生成/文生图/QY5-情境穿搭四幕剧（Wan2.2）千姿百态，电商、模特、服装，人物一致性+高清放大，万物迁移_1949359850576347138.json, 图片生成/文生图/Wan2.2文生图 扣子api调用_1963968525272498177.json]
+members: [图片生成/图生图/反推+洗图+图生图工作流_1895848802538618882.json, 图片生成/文生图/【AI由北】FLUX网红美女-工作流_1906689471180419073.json, 图片生成/文生图/文生图+LoRA_1912174132275150850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_196
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/QT103-文生图双引擎（Wan2.2）自动提示词润色，一句话也也能出完美图像，wan2.2文生图_1956342842593607682.json、图片生成/文生图/QY5-情境穿搭四幕剧（Wan2.2）千姿百态，电商、模特、服装，人物一致性+高清放大，万物迁移_1949359850576347138.json、图片生成/文生图/Wan2.2文生图 扣子api调用_1963968525272498177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/反推+洗图+图生图工作流_1895848802538618882.json、图片生成/文生图/【AI由北】FLUX网红美女-工作流_1906689471180419073.json、图片生成/文生图/文生图+LoRA_1912174132275150850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `Int`
-- `KSamplerAdvanced`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SimpleMath+`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy negative`
-- `easy positive`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `Wan_video_prompt_generator` —— 2/3 个有
-- `easy bookmark` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `RunningHub SeedXPro Translator` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `FluxGuidance` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `StringFunction|pysssss` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `LayerUtility: JoyCaption2ExtraOptions` —— 1/3 个有
+- `LayerUtility: JoyCaption2Split` —— 1/3 个有
+- `LayerUtility: LoadJoyCaption2Model` —— 1/3 个有
 - `easy cleanGpuUsed` —— 1/3 个有
+- `easy clearCacheAll` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 3 | 100% |
-| 采样算法 | 2.5 | 1 - 2.5 | 3 | 65% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 宽度 | 1080 | 512 - 1080 | 3 | 70% |
+| 高度 | 1432 | 512 - 1920 | 3 | 55% |
 
 ## 常见问题
 
@@ -71,8 +62,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2.5，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 宽度 中位数 1080，观测区间 512 - 1080，3 个样本
+- 高度 中位数 1432，观测区间 512 - 1920，3 个样本

@@ -2,79 +2,73 @@
 name: unknown_workflow_lora_sampler_clip_159
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.802
-common_nodes: [AudioCrop, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadAudio, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ]
-problems: []
+level: strong
+coverage: 0.81425
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SaveLatent, SeedVR2BlockSwap, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json, 视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json, 视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json, 视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json]
+members: [图片生成/文生图/IRC艺术作品_1962782328558862338.json, 图片生成/文生图/Qwen Image多训练器人像拟合度对比教程工作流_1962098134904147969.json, 图片生成/文生图/Qwen Image文生图（Bridge版）_1962778802571096065.json, 图片生成/文生图/（贞贞版）Qwen Image文生图（水墨纸片）_1963157852737212417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_159
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json、视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json、视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json、视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/IRC艺术作品_1962782328558862338.json、图片生成/文生图/Qwen Image多训练器人像拟合度对比教程工作流_1962098134904147969.json、图片生成/文生图/Qwen Image文生图（Bridge版）_1962778802571096065.json、图片生成/文生图/（贞贞版）Qwen Image文生图（水墨纸片）_1963157852737212417.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `CFGGuider`
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `SaveImage`
+- `SaveLatent`
+- `SeedVR2BlockSwap`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `PrimitiveInt` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `EmptyImage` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `LTXVImgToVideoInplace` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LTXVPreprocess` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `LTX2_NAG` —— 1/4 个有
-- `MaskPreview` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `PrimitiveFloat` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `SeedVR2GGUF` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `QwenTemplateBuilder` —— 2/4 个有
+- `IRC Art Converter` —— 1/4 个有
+- `IRC PNG Exporter` —— 1/4 个有
+- `IRC Text Saver` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_2s | - | 4 | 100% |
+| 调度器 | beta57 | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 15/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，4 个样本，一致性 100%
+- 调度器 最常用 beta57，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（15/4 个样本）：Steps较低可能导致细节不足

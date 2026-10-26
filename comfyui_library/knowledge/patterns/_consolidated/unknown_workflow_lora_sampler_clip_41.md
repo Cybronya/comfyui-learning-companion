@@ -1,84 +1,98 @@
 ---
 name: unknown_workflow_lora_sampler_clip_41
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.927333
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, LoraLoader, MaskToSEGS, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SEGSPreview, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.8359
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, VAEDecodeTiled]
 problems: []
 missing: []
-members: [图片生成/图生图/3D Pixar 皮克斯风格头像_1910151890116771841.json, 图片生成/图生图/4格动漫表情包生成 Flux 卡通人物_1921028630795714561.json, 图片生成/图生图/Airbnb 同款 3D 拟物图标_1926835855200260098.json, 图片生成/图生图/【最新】一键生成卡通3D收藏娃娃_1914669593783402497.json, 图片生成/图生图/一键雕琢精致商业图标v1.0_1911401582112768002.json, 图片生成/图生图/上传图片｜一键卡通可爱四宫格漫画_1913221382929379329.json, 图片生成/图生图/全能图片G-4o真人转水晶球摆件V2_1916741073857609730.json, 图片生成/图生图/定制人像专属冰箱贴_2023641529029496833.json, 图片生成/图生图/真人转全能图片G-4o卡通3D盲盒手办套装_1916399661408784386.json]
+members: [视频生成/图生视频/LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430530.json, 视频生成/图生视频/LTX2.3_数字人口播_v2.0_（融合音频生成，效果未必比1.0好）_2054789125802340354.json, 视频生成/图生视频/LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好）_2054780723667718145.json, 视频生成/图生视频/LTX2.3_数字人口播_v3.1_（首尾帧）_2058082401418563586.json, 视频生成/图生视频/LTX2.3_数字人口播_v5.0_（首尾帧）_2058097242602557441.json, 视频生成/图生视频/LTX2.3_数字人口播_v5.1_（首尾帧）_2058053097523601410.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.0_（首尾帧，抖动问题未解决）_2058106663583969282.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.1_（首尾帧，未解决抖动问题）_2058106651525345282.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.3_(首尾帧，Fisher优化版)_2057761252751003649.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.3_(首尾帧，Fisher优化版)_2058134319910187009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_41
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/3D Pixar 皮克斯风格头像_1910151890116771841.json、图片生成/图生图/4格动漫表情包生成 Flux 卡通人物_1921028630795714561.json、图片生成/图生图/Airbnb 同款 3D 拟物图标_1926835855200260098.json、图片生成/图生图/【最新】一键生成卡通3D收藏娃娃_1914669593783402497.json、图片生成/图生图/一键雕琢精致商业图标v1.0_1911401582112768002.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430530.json、视频生成/图生视频/LTX2.3_数字人口播_v2.0_（融合音频生成，效果未必比1.0好）_2054789125802340354.json、视频生成/图生视频/LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好）_2054780723667718145.json、视频生成/图生视频/LTX2.3_数字人口播_v3.1_（首尾帧）_2058082401418563586.json、视频生成/图生视频/LTX2.3_数字人口播_v5.0_（首尾帧）_2058097242602557441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoader`
-- `MaskToSEGS`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
-- `SEGSPreview`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 8/9 个有
-- `LayerUtility: TextJoin` —— 6/9 个有
-- `ModelSamplingFlux` —— 6/9 个有
-- `SDXLAspectRatioSelector` —— 6/9 个有
-- `ConstrainImage|pysssss` —— 5/9 个有
-- `ShowText|pysssss` —— 5/9 个有
-- `easy showAnything` —— 5/9 个有
-- `CR Text` —— 3/9 个有
-- `FluxResolutionNode` —— 3/9 个有
-- `JanusImageUnderstanding` —— 3/9 个有
-- `JanusModelLoader` —— 3/9 个有
-- `JjkText` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `RH_Captioner` —— 3/9 个有
-- `Text _O` —— 3/9 个有
-- `TextCombinerTwo` —— 3/9 个有
-- `DownloadAndLoadFlorence2Model` —— 2/9 个有
-- `ImageUpscaleWithModel` —— 2/9 个有
-- `Note Plus (mtb)` —— 2/9 个有
-- `UpscaleModelLoader` —— 2/9 个有
-- `RH_Prompter` —— 1/9 个有
-- `RH_Translator` —— 1/9 个有
+- `KSamplerSelect` —— 9/10 个有
+- `LTXVAudioVAEDecode` —— 9/10 个有
+- `LTXVLatentUpsampler` —— 9/10 个有
+- `LatentUpscaleModelLoader` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `LTXVImgToVideoInplace` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `LTXVImgToVideoInplaceKJ` —— 7/10 个有
+- `PrimitiveBoolean` —— 7/10 个有
+- `ResizeImagesByLongerEdge` —— 7/10 个有
+- `FloatConstant` —— 4/10 个有
+- `LTXVEmptyLatentAudio` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `PreviewAny` —— 4/10 个有
+- `Qwen3ASRLoader_DFT` —— 4/10 个有
+- `Qwen3ASRTranscribe_DFT` —— 4/10 个有
+- `ResizeImageMaskNode` —— 4/10 个有
+- `SimpleMath+` —— 4/10 个有
+- `StringConcatenate` —— 4/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `LTXVChunkFeedForward` —— 2/10 个有
+- `ModelPatchTorchSettings` —— 2/10 个有
+- `PathchSageAttentionKJ` —— 2/10 个有
+- `RH_LLMAPI_Pro_Node` —— 2/10 个有
+- `TextCombinerTwo` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `easy showAnything` —— 2/10 个有
+- `GetImageSize` —— 1/10 个有
+- `LTXVAddGuide` —— 1/10 个有
+- `SamplerEulerAncestral` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 832 | 768 - 832 | 9 | 96% |
-| 高度 | 1216 | 1024 - 1216 | 9 | 92% |
-| LoRA 模型强度 | 1 | 0.2 - 1 | 9 | 69% |
-| LoRA 文本强度 | 1 | 0.2 - 1 | 9 | 71% |
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -86,7 +100,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 832，观测区间 768 - 832，9 个样本，取值集中（一致性 96%）
-- 高度 中位数 1216，观测区间 1024 - 1216，9 个样本，取值集中（一致性 92%）
-- LoRA 模型强度 中位数 1，观测区间 0.2 - 1，9 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.2 - 1，9 个样本
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

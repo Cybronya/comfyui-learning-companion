@@ -3,32 +3,36 @@ name: unknown_workflow_generic_528
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.88
-common_nodes: [SaveImage, T8Zhenzhen_API_Settings, T8Zhenzhen_GPT_Image_2_5_Workshop]
+coverage: 0.7862
+common_nodes: [ElevenLabsInstantVoiceClone, ElevenLabsVoiceSelector, LoadAudio, RecordAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2099779786494275585.json, 图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2100389738363572225.json, 图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2100414765268033537.json, 图片生成/图生图/全能图片G-Image-2.5-多图编辑（贞贞的AI工坊）_2098084244609392642.json, 图片生成/文生图/全能图片G-Image-2.5-文生图（贞贞的AI工坊）_2098084257875976193.json]
+members: [comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_528
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2099779786494275585.json、图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2100389738363572225.json、图片生成/图生图/人像写真丨G-Image-2.5丨东方美学编辑_2100414765268033537.json、图片生成/图生图/全能图片G-Image-2.5-多图编辑（贞贞的AI工坊）_2098084244609392642.json、图片生成/文生图/全能图片G-Image-2.5-文生图（贞贞的AI工坊）_2098084257875976193.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `SaveImage`
-- `T8Zhenzhen_API_Settings`
-- `T8Zhenzhen_GPT_Image_2_5_Workshop`
+- `ElevenLabsInstantVoiceClone`
+- `ElevenLabsVoiceSelector`
+- `LoadAudio`
+- `RecordAudio`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
+- `ElevenLabsTextToDialogue` —— 2/5 个有
+- `ElevenLabsTextToSpeech` —— 2/5 个有
+- `ElevenLabsSpeechToSpeech` —— 1/5 个有
 
 ## 典型参数
 

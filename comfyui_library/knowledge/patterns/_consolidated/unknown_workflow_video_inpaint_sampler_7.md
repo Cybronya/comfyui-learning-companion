@@ -3,73 +3,64 @@ name: unknown_workflow_video_inpaint_sampler_7
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.727
-common_nodes: [CR Text Concatenate, DWPreprocessor, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, Fast Groups Bypasser (rgthree), Florence2Run, Florence2toCoordinates, GrowMaskWithBlur, ImageResize+, ImageResizeKJ, InpaintPreprocessor, Int, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, PrimitiveString, RH_Translator, Sam2Segmentation, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageRemBg, easy textSwitch]
+coverage: 0.743
+common_nodes: [GetNode, GrowMaskWithBlur, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/动迁1+1_1939680452862976002.json, 视频生成/图生视频/动迁1+1_1941245784644075522.json]
+members: [视频生成/图生视频/Wan2.1 FusionX VACE视频编辑_1949674343244144641.json, 视频生成/图生视频/视频版万物迁移_1934214235734106114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动迁1+1_1939680452862976002.json、视频生成/图生视频/动迁1+1_1941245784644075522.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 FusionX VACE视频编辑_1949674343244144641.json、视频生成/图生视频/视频版万物迁移_1934214235734106114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `DWPreprocessor`
-- `DownloadAndLoadFlorence2Model`
-- `DownloadAndLoadSAM2Model`
-- `Fast Groups Bypasser (rgthree)`
-- `Florence2Run`
-- `Florence2toCoordinates`
+- `GetNode`
 - `GrowMaskWithBlur`
-- `ImageResize+`
 - `ImageResizeKJ`
 - `InpaintPreprocessor`
-- `Int`
-- `LayerMask: LoadFlorence2Model`
-- `LayerUtility: Florence2Image2Prompt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MaskToImage`
-- `MathExpression|pysssss`
-- `PrimitiveString`
-- `RH_Translator`
-- `Sam2Segmentation`
-- `ShowText|pysssss`
+- `PreviewImage`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 - `easy imageRemBg`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnythingV2Preprocessor` —— 1/2 个有
-- `ImageScaleToMegapixels` —— 1/2 个有
+- `AIO_Preprocessor` —— 1/2 个有
+- `ColorMatch` —— 1/2 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
+- `GIMMVFI_interpolate` —— 1/2 个有
+- `ImageBlend` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
 - `ImageSmartSharpen+` —— 1/2 个有
-- `KEEP_ModelLoader` —— 1/2 个有
-- `KEEP_ProcessImageSequence` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LoadImageFromUrl` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PrimitiveString` —— 1/2 个有
 - `UpscaleModelLoader` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

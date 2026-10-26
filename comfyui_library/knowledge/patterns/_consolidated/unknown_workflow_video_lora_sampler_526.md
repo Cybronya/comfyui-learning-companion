@@ -2,80 +2,60 @@
 name: unknown_workflow_video_lora_sampler_526
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.7645
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveAudio, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+level: moderate
+coverage: 0.55975
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DisableNoise, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, SetNode, SplitSigmas, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054246914.json, 视频生成/图生视频/二次元数字人(LTX2.3新模型)_2044961246537060354.json, 视频生成/图生视频/数字人对口型LTX2.3稳定版数字_2044051743004172289.json, 视频生成/图生视频/（新版模型）LTX2.3稳定版数字人工作流_2044317825631784961.json]
+members: [图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json, 视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json, 视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json, 视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_526
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054246914.json、视频生成/图生视频/二次元数字人(LTX2.3新模型)_2044961246537060354.json、视频生成/图生视频/数字人对口型LTX2.3稳定版数字_2044051743004172289.json、视频生成/图生视频/（新版模型）LTX2.3稳定版数字人工作流_2044317825631784961.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json、视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json、视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json、视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **可信度**：中等可信
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfySwitchNode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `DisableNoise`
 - `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PrimitiveFloat`
+- `ModelSamplingSD3`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveAudio`
-- `SetLatentNoiseMask`
+- `ScheduledCFGGuidance`
 - `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `TrimAudioDuration`
-- `UNETLoader`
+- `SplitSigmas`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 3/4 个有
-- `INTConstant` —— 3/4 个有
-- `LTXVEmptyLatentAudio` —— 3/4 个有
-- `Int` —— 2/4 个有
-- `AudioInfoNode` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `DiffusionModelLoaderKJ` —— 2/4 个有
+- `PreviewImage` —— 1/4 个有
+- `SaveLatent` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 3 | 100% |
-| 高度 | 24 | 24 - 24 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,5 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,34 +3,38 @@ name: unknown_workflow_generic_1515
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9375
-common_nodes: [CR Text, ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.9115
+common_nodes: [Image Comparer (rgthree), ImageComposite+, LayerMask: LoadSegmentAnythingModels, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json, 图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json]
+members: [图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json, 图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1515
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json、图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json、图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImageScaleDownToSize`
+- `Image Comparer (rgthree)`
+- `ImageComposite+`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: MaskPreview`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 1/2 个有
+- `Image Rembg (Remove Background)` —— 1/2 个有
 
 ## 典型参数
 

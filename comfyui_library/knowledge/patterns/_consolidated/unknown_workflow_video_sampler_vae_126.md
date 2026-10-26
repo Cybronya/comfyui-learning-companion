@@ -3,53 +3,58 @@ name: unknown_workflow_video_sampler_vae_126
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8335
-common_nodes: [LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.921
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json, 视频生成/图生视频/wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json, 视频生成/图生视频/极速图生视频工作流(self-forcing-cfg-step-distill)_1935517569509937153.json, 视频生成/文生视频/刀切食物水果蔬菜 图片转视频 丨万物切切乐_1938096369187864577.json]
+members: [数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json, 数字人/数字人/极速版-数字人_个人IP_2114179464493101058.json, 视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json, 音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_126
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json、视频生成/图生视频/wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json、视频生成/图生视频/极速图生视频工作流(self-forcing-cfg-step-distill)_1935517569509937153.json、视频生成/文生视频/刀切食物水果蔬菜 图片转视频 丨万物切切乐_1938096369187864577.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json、数字人/数字人/极速版-数字人_个人IP_2114179464493101058.json、视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json、音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `CLIPTextEncode` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `WanVideoEnhanceAVideo` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `WanVideoTextEmbedBridge` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `ImageResizeKJ` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `LoadWanVideoClipTextEncoder` —— 2/4 个有
-- `WanVideoClipVisionEncode` —— 2/4 个有
-- `WanVideoEmptyEmbeds` —— 2/4 个有
-- `WanVideoImageToVideoEncode` —— 2/4 个有
-- `WanVideoVRAMManagement` —— 2/4 个有
-- `SaveImage` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `WanVideoEncode` —— 3/4 个有
+- `AudioDuration_wan` —— 2/4 个有
+- `AudioSeparation` —— 2/4 个有
+- `H3ModeSwitch` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `IndexTTS2Run` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PrimitiveString` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `WanVideoLoraSelectMulti` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

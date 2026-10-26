@@ -1,40 +1,33 @@
 ---
 name: unknown_workflow_generic_319
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.797286
-common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.91675
+common_nodes: [RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX Kontext Pro 图生图工作流_1946453615567626242.json, 图片生成/图生图/FLUX Kontext 全风格线稿上色 风格自由输入_1931956219735683073.json, 图片生成/图生图/FLUX Kontext 风格转换【卡通风】_1931914230113435649.json, 图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1929804969749200898.json, 图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1931325898262556673.json, 图片生成/图生图/FLUX.1 Kontext 双图融合_1929799532375130113.json, 图片生成/图生图/Flux  Kontext 图像编辑_1930804039121088513.json]
+members: [图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json, 图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2049781605606100993.json, 图片生成/文生图/全能图片G2文能图官方版 _ 2026最强生图_2056451598993416193.json, 图片生成/文生图/最新G image2  全量文生图官方稳定版 V1.0_2048017540726661121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_319
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FLUX Kontext Pro 图生图工作流_1946453615567626242.json、图片生成/图生图/FLUX Kontext 全风格线稿上色 风格自由输入_1931956219735683073.json、图片生成/图生图/FLUX Kontext 风格转换【卡通风】_1931914230113435649.json、图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1929804969749200898.json、图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1931325898262556673.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json、图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json、图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
-- `RH_ComfyFluxKontext`
+全部 8 个 workflow 都包含：
+- `RH_RhartImageG2OfficialTextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/7 个有
-- `DeepTranslatorTextNode` —— 4/7 个有
-- `ImageConcanate` —— 4/7 个有
-- `easy showAnything` —— 3/7 个有
-- `easy imageScaleDownToSize` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `PMRF` —— 1/7 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

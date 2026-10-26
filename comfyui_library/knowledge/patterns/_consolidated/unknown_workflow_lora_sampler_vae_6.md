@@ -1,73 +1,119 @@
 ---
 name: unknown_workflow_lora_sampler_vae_6
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: strong
-coverage: 0.5519
-common_nodes: [CLIPLoader, ConditioningZeroOut, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SetNode, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAELoader]
+coverage: 0.668556
+common_nodes: [BlockifyMask, CLIPLoader, ClothesSegment, DrawMaskOnImage, Florence2ModelLoader, Florence2Run, GetNode, KSampler, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskPreview+, PreviewImage, RMBG, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, ToBinaryMask, VAEDecode, YOLOModelLoader, easy ifElse, easy isMaskEmpty]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/002.Qwen编辑之王026.影视分镜回车控制批量_2034921737002950658.json, 图片生成/图生图/人物换装_多图编辑_2032426321309077505.json, 图片生成/文生图/AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json, 图片生成/文生图/分镜生成_2050910785261588482.json, 图片生成/文生图/影视分镜批量生成Qwen-Edit-AIO+Next Scene_1997318334771314689.json, 图片生成/文生图/影视分镜批量生成Qwen-Edit-AIO+Next+Scene_1998418153245958146.json, 图片生成/文生图/快速分镜生成 影视创作利器 再也不用手搓分镜了_2018317393369501697.json, 图片生成/文生图/漫剧动画分镜单镜_多镜生成_1999170734574497794.json, 图片生成/文生图/解说漫分镜工作流_2049704945468887041.json, 图片生成/文生图/超好用🔥解说漫剧分镜工作流-最新_2052760593840517122.json]
+members: [图片生成/图生图/FireRed Edit  1.1最强人物替换（适合二创）---不偏色，无偏移，平替全能图片V1_2029890668960681985.json, 图片生成/图生图/Qwen edit 2511最强人物替换（适合二创）---不偏色，无偏移，平替全能图片V1_2005835574374268930.json, 图片生成/图生图/Qwen角色替换_2012168849222799361.json, 图片生成/图生图/【推荐】最强二创-多人角色替换、人物迁移，不改背景（圈哪迁移哪）_2008559004934475777.json, 图片生成/图生图/二创人物替换_2111096798566772737.json, 图片生成/图生图/多人角色替换、人物迁移，不改背景_2006172580859875330.json, 图片生成/图生图/多人角色替换、人物迁移，不改背景_2008011759189237762.json, 图片生成/图生图/最强二创-多人角色替换、人物迁移，不改背景_2010644275884724226.json, 图片生成/图生图/最强二创-多人角色替换、人物迁移，不改背景_2010766623031955458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/002.Qwen编辑之王026.影视分镜回车控制批量_2034921737002950658.json、图片生成/图生图/人物换装_多图编辑_2032426321309077505.json、图片生成/文生图/AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json、图片生成/文生图/分镜生成_2050910785261588482.json、图片生成/文生图/影视分镜批量生成Qwen-Edit-AIO+Next Scene_1997318334771314689.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FireRed Edit  1.1最强人物替换（适合二创）---不偏色，无偏移，平替全能图片V1_2029890668960681985.json、图片生成/图生图/Qwen edit 2511最强人物替换（适合二创）---不偏色，无偏移，平替全能图片V1_2005835574374268930.json、图片生成/图生图/Qwen角色替换_2012168849222799361.json、图片生成/图生图/【推荐】最强二创-多人角色替换、人物迁移，不改背景（圈哪迁移哪）_2008559004934475777.json、图片生成/图生图/二创人物替换_2111096798566772737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `ClothesSegment`
+- `DrawMaskOnImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
 - `GetNode`
 - `KSampler`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskPreview+`
+- `PreviewImage`
+- `RMBG`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
 - `SaveImage`
 - `SetNode`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `ToBinaryMask`
 - `VAEDecode`
-- `VAELoader`
+- `YOLOModelLoader`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 9/10 个有
-- `ImageResizeKJv2` —— 9/10 个有
-- `PreviewAny` —— 9/10 个有
-- `ProcessString` —— 9/10 个有
-- `easy promptLine` —— 9/10 个有
-- `Text` —— 8/10 个有
-- `PreviewImage` —— 6/10 个有
-- `CR Text` —— 2/10 个有
-- `FluxKontextImageScale` —— 1/10 个有
-- `UNETLoader` —— 1/10 个有
+- `CR Prompt Text` —— 8/9 个有
+- `Fast Groups Muter (rgthree)` —— 8/9 个有
+- `MaskToImage` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `VAELoader` —— 8/9 个有
+- `ConditioningZeroOut` —— 7/9 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 7/9 个有
+- `CFGNorm` —— 6/9 个有
+- `Image Comparer (rgthree)` —— 6/9 个有
+- `ModelSamplingAuraFlow` —— 6/9 个有
+- `UnetLoaderGGUF` —— 6/9 个有
+- `GetImageSize+` —— 3/9 个有
+- `SeedVR2LoadDiTModel` —— 3/9 个有
+- `SeedVR2LoadVAEModel` —— 3/9 个有
+- `SeedVR2VideoUpscaler` —— 3/9 个有
+- `EmptyLatentImage` —— 2/9 个有
+- `LayerUtility: ImageReel` —— 2/9 个有
+- `LayerUtility: ImageReelComposit` —— 2/9 个有
+- `Sa2VANodeTpl` —— 2/9 个有
+- `TextEncodeQwenImageEditPlus` —— 2/9 个有
+- `CheckpointLoaderSimple` —— 1/9 个有
+- `ImageResize+` —— 1/9 个有
+- `ImageScaleBy` —— 1/9 个有
+- `ImageUpscaleWithModel` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `KOOK_ImageCompression` —— 1/9 个有
+- `PatchSageAttention` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `PrimitiveString` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `String` —— 1/9 个有
+- `TTP_Image_Assy` —— 1/9 个有
+- `TTP_Image_Tile_Batch` —— 1/9 个有
+- `TTP_Tile_image_size` —— 1/9 个有
+- `TorchCompileModelQwenImage` —— 1/9 个有
+- `UpscaleModelLoader` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 10 | 73% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | sa_solver | - | 10 | 90% |
-| 调度器 | beta | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 6 | 4 - 8 | 9 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 78% |
+| 调度器 | beta57 | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，10 个样本，一致性 90%
-- 调度器 最常用 beta，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 4 - 8，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 78%
+- 调度器 最常用 beta57，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（15/9 个样本）：Steps较低可能导致细节不足

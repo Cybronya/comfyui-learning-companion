@@ -3,52 +3,47 @@ name: unknown_workflow_video_lora_sampler_783
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6615
-common_nodes: [CLIPTextEncode, CR Text, CheckpointLoaderSimple, ImageBatchMulti, ImageResizeKJv2, LoadImage, RIFE VFI, SAM3_VideoTrack, SCAIL2ColoredMask, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy int]
+coverage: 1
+common_nodes: [CR Text, GetImageSize, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, VHS_SelectImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail2+卡通角色动作迁移+全节点注释_2072321050989383682.json, 视频生成/图生视频/Scail2多图参考人物替换工作流_2072172131533803521.json]
+members: [图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json, 视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_783
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Scail2+卡通角色动作迁移+全节点注释_2072321050989383682.json、视频生成/图生视频/Scail2多图参考人物替换工作流_2072172131533803521.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json、视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
 - `CR Text`
-- `CheckpointLoaderSimple`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
+- `GetImageSize`
 - `LoadImage`
-- `RIFE VFI`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `SaveImage`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
-- `easy int`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageResizeToClosest`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 

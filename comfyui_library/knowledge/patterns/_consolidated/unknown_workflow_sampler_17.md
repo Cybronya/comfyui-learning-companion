@@ -3,34 +3,38 @@ name: unknown_workflow_sampler_17
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.972167
-common_nodes: [CR Prompt Text, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
+coverage: 0.7795
+common_nodes: [LayeredControlV2Sampler, LoadImage, LoadLayeredControlV2Pipe, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json, 图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json, 图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json, 图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json, 图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json, 图片生成/文生图/SenseNova 文生图_2053116115265572866.json]
+members: [图片生成/图生图/Qwen layer文本控制_2031980500822265858.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json, 图片生成/图生图/龚老师的PPT页面分层_2051236518982897666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json、图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json、图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json、图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json、图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen layer文本控制_2031980500822265858.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
+- `LayeredControlV2Sampler`
+- `LoadImage`
+- `LoadLayeredControlV2Pipe`
 - `SaveImage`
-- `SenseNova_SM_Model`
-- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/6 个有
-- `ImageConcanate` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `Mask To Image (mtb)` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
 
 ## 典型参数
 

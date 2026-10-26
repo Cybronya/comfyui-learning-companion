@@ -1,72 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_303
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.853143
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.861375
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json, 视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json, 视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json, 视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json, 视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2073463668316323840.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2076823460927598594.json]
+members: [视频生成/图生视频/Scail动作迁移_2001603322555559938.json, 视频生成/图生视频/Scail单_双人动作迁移自由切换版_2024108725971193857.json, 视频生成/图生视频/Scail单人动作迁移(720P-Uni3c运镜版)V2_2000630427444539394.json, 视频生成/图生视频/Scail单人动作迁移(720P高质量版)V2_2000617753667137537.json, 视频生成/图生视频/Scail双人动作迁移_2012140955029213186.json, 视频生成/图生视频/Scail多人动作迁移(720P高质量版)V2_2011401964541710338.json, 视频生成/图生视频/Scail：单人动作迁移_2003684559344574466.json, 视频生成/图生视频/Wan+Scail多人姿势控制_2001210415457632258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_303
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json、视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json、视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json、视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json、视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Scail动作迁移_2001603322555559938.json、视频生成/图生视频/Scail单_双人动作迁移自由切换版_2024108725971193857.json、视频生成/图生视频/Scail单人动作迁移(720P-Uni3c运镜版)V2_2000630427444539394.json、视频生成/图生视频/Scail单人动作迁移(720P高质量版)V2_2000617753667137537.json、视频生成/图生视频/Scail双人动作迁移_2012140955029213186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadNLFModel`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `LTXDirectorGuide` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `GuHaiAutoImageSplit` —— 4/7 个有
-- `LTXDirector` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `CS-LTXGridDirector` —— 3/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `RHHiddenNodes` —— 3/7 个有
-- `RH_LLMAPI_Pro_Node` —— 3/7 个有
-- `YusuLTXDirectorGuide` —— 2/7 个有
-- `孤海注释` —— 2/7 个有
-- `LTXVChunkFeedForward` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
+- `CR Prompt Text` —— 7/8 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `RunningHub Deepcleaner` —— 7/8 个有
+- `WanVideoContextOptions` —— 7/8 个有
+- `WanVideoEncode` —— 7/8 个有
+- `WanVideoSamplerExtraArgs` —— 7/8 个有
+- `WanVideoUni3C_ControlnetLoader` —— 7/8 个有
+- `WanVideoUni3C_embeds` —— 7/8 个有
+- `PDIMAGE_LongerSize` —— 6/8 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 3/8 个有
+- `DWPreprocessor` —— 3/8 个有
+- `CM_IntToFloat` —— 1/8 个有
+- `DF_Int_to_Float` —— 1/8 个有
+- `Evaluate Integers` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `If ANY execute A else B` —— 1/8 个有
+- `ImageFromBatch+` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `Inversed Switch` —— 1/8 个有
+- `Logic Boolean` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

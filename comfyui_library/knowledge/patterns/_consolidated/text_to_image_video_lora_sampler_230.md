@@ -3,93 +3,81 @@ name: text_to_image_video_lora_sampler_230
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.859
-common_nodes: [BasicGuider, BasicScheduler, BlockifyMask, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, DrawMaskOnImage, EmptyLatentImage, GetImageSize, GetNode, GrowMaskWithBlur, ImageConcanate, ImageRemoveBackground+, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LayerUtility: ImageOpacity, LoadImage, LoraLoaderModelOnly, MaskToImage, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PointsEditor, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, TransparentBGSession+, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.925
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JWInteger, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_Fade, SoundFlow_GetLength, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMaxH3视频角色替换 多模态参考人物换脸换装_2098631310960054274.json, 视频生成/文生视频/MiniMaxH3视频角色替换｜文生视频图生视频通吃_2098718113788420097.json]
+members: [视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json, 视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_230
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMaxH3视频角色替换 多模态参考人物换脸换装_2098631310960054274.json、视频生成/文生视频/MiniMaxH3视频角色替换｜文生视频图生视频通吃_2098718113788420097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json、视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockifyMask`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `DrawMaskOnImage`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
-- `GetImageSize`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcanate`
-- `ImageRemoveBackground+`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LayerUtility: ImageOpacity`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SimpleMath+`
-- `SolidMask`
-- `TransparentBGSession+`
+- `SoundFlow_Fade`
+- `SoundFlow_GetLength`
+- `ToInt`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+- `WanVideoAddFantasyPortrait`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
 | 采样算法 | er_sde | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -99,12 +87,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

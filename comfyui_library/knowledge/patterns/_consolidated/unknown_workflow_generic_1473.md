@@ -3,32 +3,34 @@ name: unknown_workflow_generic_1473
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage, Text]
+coverage: 0.714
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json, 图片生成/文生图/分镜图生成_2046068941402939394.json]
+members: [图片生成/图生图/全能图片G2.5-图生图｜经济型｜4K画质｜超级一致性_2093853409320460290.json, 图片生成/图生图/全能图片PRO-图生图Ultra｜官方稳定版｜8K画质_2093859059287027714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1473
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json、图片生成/文生图/分镜图生成_2046068941402939394.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5-图生图｜经济型｜4K画质｜超级一致性_2093853409320460290.json、图片生成/图生图/全能图片PRO-图生图Ultra｜官方稳定版｜8K画质_2093859059287027714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageNG31FlashTextToImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RHSettingsNode` —— 1/2 个有
+- `RH_RhartImageNProEdit` —— 1/2 个有
+- `RH_RhartImageNProOfficialEditUltra` —— 1/2 个有
 
 ## 典型参数
 

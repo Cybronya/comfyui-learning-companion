@@ -2,23 +2,23 @@
 name: text_to_image_sampler_clip_unet_162
 type: Text To Image
 frequency: 4
-level: moderate
-coverage: 0.76925
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, PrimitiveStringMultiline, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.8755
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/boogu_base_文生图-支持复杂提示词(可自动扩写)_2069358557987954689.json, 图片生成/文生图/boogu_turbo_快速出图，支持复杂提示词（可自动扩写）​_2069356414316924929.json, 图片生成/文生图/文生图_2028064937913880578.json, 图片生成/文生图/文生图。Zimage（支持真人的国产加速模型）_2028059294964387841.json]
+members: [图片生成/文生图/Ernie-image-turbo与Z-image-turbo对比工作流_2044632672093343745.json, 图片生成/文生图/Z-Anime VS Z-image  VS  ERNIE-image-动漫风格对比_2049475191444606977.json, 图片生成/文生图/boogu-trubo VS boogu-base VS Z-image-trubo—图像对比_2068142561574866946.json, 图片生成/文生图/百度ERNIE-image-tubro-文生图+Qwen3.5提示词增加优化_2044778668962095105.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_162
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/boogu_base_文生图-支持复杂提示词(可自动扩写)_2069358557987954689.json、图片生成/文生图/boogu_turbo_快速出图，支持复杂提示词（可自动扩写）​_2069356414316924929.json、图片生成/文生图/文生图_2028064937913880578.json、图片生成/文生图/文生图。Zimage（支持真人的国产加速模型）_2028059294964387841.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Ernie-image-turbo与Z-image-turbo对比工作流_2044632672093343745.json、图片生成/文生图/Z-Anime VS Z-image  VS  ERNIE-image-动漫风格对比_2049475191444606977.json、图片生成/文生图/boogu-trubo VS boogu-base VS Z-image-trubo—图像对比_2068142561574866946.json、图片生成/文生图/百度ERNIE-image-tubro-文生图+Qwen3.5提示词增加优化_2044778668962095105.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -28,44 +28,50 @@ source: knowledge_consolidation
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `PrimitiveStringMultiline`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactConditionalBranch` —— 2/4 个有
-- `PDRatioSelector` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
+- `AddLabel` —— 3/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `EmptySD3LatentImage` —— 2/4 个有
+- `ModelSamplingAuraFlow` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `JDCN_StringToList` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1152 | 936 - 1920 | 4 | 70% |
-| 高度 | 1024 | 720 - 1280 | 4 | 80% |
-| 采样步数 | 35 | 4 - 40 | 4 | 50% |
-| Prompt 约束强度(CFG) | 4.75 | 1 - 5.5 | 4 | 54% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
+| 宽度 | 896 | 720 - 1024 | 4 | 88% |
+| 高度 | 1280 | 1280 - 1280 | 4 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1152，观测区间 936 - 1920，4 个样本
-- 高度 中位数 1024，观测区间 720 - 1280，4 个样本，取值集中（一致性 80%）
-- 采样步数 中位数 35，观测区间 4 - 40，4 个样本，取值分散，一致性仅 50%
-- Prompt 约束强度(CFG) 中位数 4.75，观测区间 1 - 5.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
+- 宽度 中位数 896，观测区间 720 - 1024，4 个样本，取值集中（一致性 88%）
+- 高度 中位数 1280，观测区间 1280 - 1280，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

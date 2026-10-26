@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_video_lora_sampler_227
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.899667
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8173
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json, 视频生成/图生视频/已做生图动画_1954716501561491457.json, 视频生成/图生视频/扭起来_1997179060881133570.json, 视频生成/图生视频/抖音坐着自拍_1959215164312727553.json, 视频生成/图生视频/抖音扭一扭_1957833676750159874.json, 视频生成/图生视频/抖音摇摆_1957824248537776130.json, 视频生成/图生视频/抖音涨粉利器真实跳舞抖胸_1979579693227741185.json, 视频生成/图生视频/抖音走路_1958894026126733314.json, 视频生成/图生视频/自拍2_1972314410939248641.json]
+members: [视频生成/图生视频/🥝stand-in脸部一致性视频生成 文生视频🥝_1956266863963590657.json, 视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json, 视频生成/文生视频/Aiwood-Stand-id+vace控制版_1955702074303397890.json, 视频生成/文生视频/Aiwood-Stand-id无控制板_1955698165593751554.json, 视频生成/文生视频/Stand In+Aniwan脸部参考文生视频V1 （高动态版）_1956789708207394817.json, 视频生成/文生视频/Stand In+Vace姿势参考脸部一致性视频生成V1_1956763443317628929.json, 视频生成/文生视频/Stand In脸部参考文生视频V1_1956768845814796289.json, 视频生成/文生视频/Wan面部参考+动作参考Stand-in文生视频_1957506592558215169.json, 视频生成/文生视频/文生视频stand-in脸部保持一致性视频生成_1957446441918722049.json, 视频生成/文生视频/🥝stand-in脸部一致性视频生成 VACE姿态迁移版🥝_1956266838781034498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_227
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json、视频生成/图生视频/已做生图动画_1954716501561491457.json、视频生成/图生视频/扭起来_1997179060881133570.json、视频生成/图生视频/抖音坐着自拍_1959215164312727553.json、视频生成/图生视频/抖音扭一扭_1957833676750159874.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/🥝stand-in脸部一致性视频生成 文生视频🥝_1956266863963590657.json、视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json、视频生成/文生视频/Aiwood-Stand-id+vace控制版_1955702074303397890.json、视频生成/文生视频/Aiwood-Stand-id无控制板_1955698165593751554.json、视频生成/文生视频/Stand In+Aniwan脸部参考文生视频V1 （高动态版）_1956789708207394817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 10 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -40,26 +40,29 @@ source: knowledge_consolidation
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 8/9 个有
-- `LayerUtility: PurgeVRAM` —— 8/9 个有
-- `CR Text Concatenate` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 6/9 个有
-- `GIMMVFI_interpolate` —— 6/9 个有
-- `RHHiddenNodes` —— 6/9 个有
-- `GetImageSizeAndCount` —— 5/9 个有
-- `ImageUpscaleWithModel` —— 4/9 个有
-- `UpscaleModelLoader` —— 4/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `GetNode` —— 1/9 个有
-- `RH_Captioner` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `ShowText` —— 1/9 个有
-- `StringReplace` —— 1/9 个有
-- `WanVideoContextOptions` —— 1/9 个有
+- `WanVideoVACEModelSelect` —— 9/10 个有
+- `ImageConcanate` —— 8/10 个有
+- `WanVideoEmptyEmbeds` —— 8/10 个有
+- `CR Text` —— 7/10 个有
+- `INTConstant` —— 7/10 个有
+- `ImpactInt` —— 6/10 个有
+- `OpenposePreprocessor` —— 5/10 个有
+- `VHS_LoadVideo` —— 5/10 个有
+- `WanVideoTorchCompileSettings` —— 5/10 个有
+- `WanVideoVACEEncode` —— 5/10 个有
+- `WanVideoVACEStartToEndFrame` —— 5/10 个有
+- `ImageConcatMulti` —— 4/10 个有
+- `JWInteger` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `SimpleMath+` —— 3/10 个有
+- `GetNode` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `JjkText` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,68 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_403
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.901
-common_nodes: [CFGGuider, CLIPTextEncode, LTX2_NAG, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEnhanceAVideoKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.521833
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, JjkText, LoadImage, Primitive integer [Crystools], RHHiddenNodes, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json, 视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json, 视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json, 视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json, 视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json]
+members: [视频生成/图生视频/AI知识分享宝库 _ 原生 视频人物替换 Animate 2.2_1977983075667824642.json, 视频生成/图生视频/原生系列 视频动作迁移 Animate 2.3 【动态运镜】_1979387280857141250.json, 视频生成/图生视频/视频人物替换 Animate 2.2_1978090235722608641.json, 视频生成/图生视频/视频人物替换_2066836510007185409.json, 视频生成/图生视频/视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json, 视频生成/图生视频/非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_403
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json、视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json、视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json、视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json、视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/AI知识分享宝库 _ 原生 视频人物替换 Animate 2.2_1977983075667824642.json、视频生成/图生视频/原生系列 视频动作迁移 Animate 2.3 【动态运镜】_1979387280857141250.json、视频生成/图生视频/视频人物替换 Animate 2.2_1978090235722608641.json、视频生成/图生视频/视频人物替换_2066836510007185409.json、视频生成/图生视频/视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `LTX2_NAG`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEnhanceAVideoKJ`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAELoaderKJ`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `JjkText`
+- `LoadImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 4/5 个有
-- `DualCLIPLoaderGGUF` —— 4/5 个有
-- `KSamplerSelect` —— 4/5 个有
-- `LTXVLatentUpsampler` —— 4/5 个有
-- `LatentUpscaleModelLoader` —— 4/5 个有
-- `LTX2SamplingPreviewOverride` —— 3/5 个有
-- `LTXVCropGuides` —— 3/5 个有
-- `UnetLoaderGGUF` —— 3/5 个有
-- `VAEDecodeTiled` —— 3/5 个有
-- `Display Any (rgthree)` —— 2/5 个有
-- `LTXDirectorCropGuides` —— 2/5 个有
-- `LTXVTiledVAEDecode` —— 2/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `ModelPreviewOverrideKJ` —— 2/5 个有
-- `TextGenerateLTX2Prompt` —— 2/5 个有
-- `UNETLoader` —— 2/5 个有
-- `DualCLIPLoader` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `SamplerEulerAncestral` —— 1/5 个有
+- `PoseAndFaceDetection` —— 5/6 个有
+- `BlockifyMask` —— 3/6 个有
+- `DWPreprocessor` —— 3/6 个有
+- `DrawMaskOnImage` —— 3/6 个有
+- `DrawViTPose` —— 3/6 个有
+- `PrimitiveString` —— 3/6 个有
+- `Sam2Segmentation` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `FaceMaskFromPoseKeypoints` —— 2/6 个有
+- `WanVideoBlockSwap` —— 1/6 个有
+- `WanVideoEncode` —— 1/6 个有
 
 ## 典型参数
 

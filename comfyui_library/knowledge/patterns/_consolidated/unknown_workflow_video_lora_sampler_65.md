@@ -1,65 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_65
 type: Unknown Workflow
-frequency: 19
+frequency: 20
 level: moderate
-coverage: 0.789158
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, JWStringConcat, LoadWanVideoT5TextEncoder, ShowText|pysssss, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.49575
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, PlaySound|pysssss, PreviewImage, PrimitiveBoolean, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, SimpleMath+, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2智能提示词文生视频直出2k横屏版（包含自训练脸模lora保持角色一致性）_1970020251171758081.json, 视频生成/图生视频/（光鸟黑贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963544329490092033.json, 视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json, 视频生成/文生视频/(4步KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1953756767052288002.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写文生视频加速版V1_1950804830958845953.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1950936240545800193.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1950828100848386049.json, 视频生成/文生视频/(Love贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1955828934376132610.json, 视频生成/文生视频/(剑舞贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1954869013831565314.json, 视频生成/文生视频/CineScale Wan2.2（低噪）三分镜智能提示词文生视频高细节工作流V1_1959252235161120769.json, 视频生成/文生视频/CineScale Wan2.2（高低噪）三分镜智能提示词文生视频高细节工作流V1_1959251891186249729.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward+VBVR逻辑增强）_2028179220836388865.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward运动增强）_2028179192646475777.json, 视频生成/文生视频/（miss贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961405033222967297.json, 视频生成/文生视频/（光舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(高质量横屏720P)_1958885395293483009.json, 视频生成/文生视频/（光鸟白贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963536083953995778.json, 视频生成/文生视频/（时间音符贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961307588656828418.json, 视频生成/文生视频/（水舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(高质量横屏720P)_1960069815262195714.json, 视频生成/文生视频/（鹊桥星河贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961399903941541890.json]
+members: [数字人/数字人/Scail2 重打光 动作迁移 多角色参考_2077716545614204929.json, 数字人/数字人/人物替换-动作迁移 Relight + Scail 2_2077740490937683969.json, 视频生成/图生视频/(Relight版)Scail 2新方案无限长视频无劣化多参动作迁移V1_2077358900407529474.json, 视频生成/图生视频/(上下文)Scail 2单人多参人物替换V3（肥猴+Wuwu版本）_2066604420628041729.json, 视频生成/图生视频/(上下文)Scail 2单人多参动作迁移+背景替换V5（肥猴+Wuwu版本）_2066603013753630721.json, 视频生成/图生视频/(上下文)Scail 2单人多参动作迁移V5（肥猴+Wuwu版本）_2066543884603314177.json, 视频生成/图生视频/(上下文)Scail 2多人多参人物替换V5（肥猴+Wuwu版本）_2066782151881875457.json, 视频生成/图生视频/(上下文)Scail 2多人多参动作迁移V2（肥猴+Wuwu版本）_2066741675816476673.json, 视频生成/图生视频/(帧窗口)Scail 2单人单参人物替换加速版V5_2068262147108458498.json, 视频生成/图生视频/Scail 2-7月新方案无限长视频无劣化多参动作迁移-(Relight版)_2078042149253378050.json, 视频生成/图生视频/Scail 2新方案无限长视频无劣化多参动作迁移V1_2076912417958883329.json, 视频生成/图生视频/Scail2 重打光 动作迁移 多角色参考_2084830615622471682.json, 视频生成/图生视频/（Relight-背景替换版）Scail 2新方案无限长视频无劣化多参角色替换V1_2077432876697743361.json, 视频生成/图生视频/（Relight版）Scail 2新方案无限长视频无劣化多参视频替换V1_2077419412851875842.json, 视频生成/图生视频/（帧窗口-抗劣化）Scail 2单人多参动作迁移加速稳定版V5_2068262165575983106.json, 视频生成/图生视频/（帧窗口）0Scail 2多人多参动作迁移加速稳定版V5_2068262138006827009.json, 视频生成/图生视频/（帧窗口）Scail 2单人单参动作迁移加速稳定版V5_2068335753142292482.json, 视频生成/图生视频/（帧窗口）Scail 2单人多参动作迁移+背景替换稳定加速版V5_2068262155610312705.json, 视频生成/图生视频/（帧窗口）Scail 2单人多参动作迁移加速稳定版V5_2068344555199614977.json, 视频生成/图生视频/（帧窗口）Scail 2多人单参人物替换加速版V5（肥猴+Wuwu版本）_2068262129140060162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/wan2.2智能提示词文生视频直出2k横屏版（包含自训练脸模lora保持角色一致性）_1970020251171758081.json、视频生成/图生视频/（光鸟黑贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963544329490092033.json、视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json、视频生成/文生视频/(4步KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1953756767052288002.json、视频生成/文生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写文生视频加速版V1_1950804830958845953.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/Scail2 重打光 动作迁移 多角色参考_2077716545614204929.json、数字人/数字人/人物替换-动作迁移 Relight + Scail 2_2077740490937683969.json、视频生成/图生视频/(Relight版)Scail 2新方案无限长视频无劣化多参动作迁移V1_2077358900407529474.json、视频生成/图生视频/(上下文)Scail 2单人多参人物替换V3（肥猴+Wuwu版本）_2066604420628041729.json、视频生成/图生视频/(上下文)Scail 2单人多参动作迁移+背景替换V5（肥猴+Wuwu版本）_2066603013753630721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `JWStringConcat`
-- `LoadWanVideoT5TextEncoder`
-- `ShowText|pysssss`
+全部 20 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadImage`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMaskV2`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus VAELoader`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 18/19 个有
-- `JWInteger` —— 18/19 个有
-- `RH_LLMAPI_NODE` —— 18/19 个有
-- `TextConcat` —— 18/19 个有
-- `WanVideoEmptyEmbeds` —— 18/19 个有
-- `ACE_ImageGetSize` —— 1/19 个有
-- `FloatToSigmas` —— 1/19 个有
-- `GLM_Text_Chat` —— 1/19 个有
-- `ImageResizeKJv2` —— 1/19 个有
-- `LoadImage` —— 1/19 个有
-- `MathExpression|pysssss` —— 1/19 个有
-- `Primitive integer [Crystools]` —— 1/19 个有
-- `RH_Captioner` —— 1/19 个有
-- `ResizeLongestToNode` —— 1/19 个有
-- `StringToFloatList` —— 1/19 个有
-- `WanVideoImageToVideoEncode` —— 1/19 个有
+- `ComfyMathExpression` —— 18/20 个有
+- `AutoRefCollage` —— 15/20 个有
+- `GIMMVFI_interpolate` —— 12/20 个有
+- `ImageBatchMulti` —— 12/20 个有
+- `Seed (rgthree)` —— 12/20 个有
+- `VHS_LoadVideo` —— 12/20 个有
+- `DownloadAndLoadGIMMVFIModel` —— 11/20 个有
+- `BatchImagesNode` —— 9/20 个有
+- `WanAnimatePlus ClipVisionEncode V2` —— 9/20 个有
+- `easy cleanGpuUsed` —— 9/20 个有
+- `VHS_LoadVideoFFmpeg` —— 8/20 个有
+- `WanAnimatePlus ContextOptions` —— 8/20 个有
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings` —— 8/20 个有
+- `easy clearCacheAll` —— 8/20 个有
+- `ComfySwitchNode` —— 6/20 个有
+- `WanVideoContextOptions` —— 5/20 个有
+- `EmptyImage` —— 4/20 个有
+- `FastCanvas` —— 4/20 个有
+- `FastCanvasTool` —— 4/20 个有
+- `RMBG` —— 4/20 个有
+- `ToBoolNode` —— 3/20 个有
+- `JjkText` —— 2/20 个有
+- `TTP_Expand_And_Mask` —— 2/20 个有
+- `RunningHub Deepcleaner` —— 1/20 个有
 
 ## 典型参数
 

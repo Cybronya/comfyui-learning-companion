@@ -3,41 +3,36 @@ name: unknown_workflow_generic_438
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.902167
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveImage, SaveVideo, ShowText|pysssss, StringFunction|pysssss]
+coverage: 0.653167
+common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/故事板+剧情_2055636530995179522.json, 视频生成/图生视频/一张电商产品一键制作视频_2053026294388015105.json, 视频生成/图生视频/一键制作电商产品视频v3版_2053121416081485826.json, 视频生成/图生视频/人物图片和简单剧情描述即可一站式生成剧情视频_2052944201704329218.json, 视频生成/图生视频/电商产品介绍 一键生成展示视频_2052992780963729410.json, 视频生成/图生视频/电商产品介绍 一键生成展示视频_2053679533211045889.json]
+members: [图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json, 图片生成/图生图/图像清晰工具_2064882507623002113.json, 图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json, 图片生成/图生图/生图 拆图分享_2042426276874555393.json, 图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_438
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/故事板+剧情_2055636530995179522.json、视频生成/图生视频/一张电商产品一键制作视频_2053026294388015105.json、视频生成/图生视频/一键制作电商产品视频v3版_2053121416081485826.json、视频生成/图生视频/人物图片和简单剧情描述即可一站式生成剧情视频_2052944201704329218.json、视频生成/图生视频/电商产品介绍 一键生成展示视频_2052992780963729410.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json、图片生成/图生图/图像清晰工具_2064882507623002113.json、图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json、图片生成/图生图/生图 拆图分享_2042426276874555393.json、图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Text`
+- `ImageFromBatch+`
+- `ImageTile+`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `PreviewImage`
 - `SaveImage`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
 
 ## 典型参数
 

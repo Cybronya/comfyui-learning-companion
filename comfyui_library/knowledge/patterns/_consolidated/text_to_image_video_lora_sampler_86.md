@@ -2,125 +2,94 @@
 name: text_to_image_video_lora_sampler_86
 type: Text To Image
 frequency: 9
-level: weak
-coverage: 0.630333
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, FillMaskWithColor, GetNode, ImageConcatenate_UTK, ImageResizeKJv2, Int, InvertMask, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PointsEditor, PreviewImage, PrimitiveInt, RH_Captioner, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, Text, VAEDecode, VAELoader, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, easy cleanGpuUsed, easy clearCacheAll, easy indexAnything, easy mathInt, easy showAnything]
+level: strong
+coverage: 0.775333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, GetImageRangeFromBatch, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/scail2关键帧分批次转换1_2082351084420558850.json, 视频生成/图生视频/多角色替换影视二创｜长时视频生图生视频生成_2093418632721293314.json, 视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2097823943913721857.json, 视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2101447299451936769.json, 视频生成/图生视频/影视二创神器_长视频多角色批量替换第2版_2109437055964110850.json, 视频生成/图生视频/影视二创第2弹｜长时长视频多角色替换保持原片质感_2101494880974495746.json, 视频生成/图生视频/影视二创长时多角色替换2｜换角色不换剧情_2097180512333942786.json, 视频生成/图生视频/影视二创长时多角色替换｜视频生视频图生视频工作流_2097031796901896194.json, 视频生成/图生视频/长时多角色替换2｜影视二创视频生视频一键处理_2093744499456561153.json]
+members: [图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json, 图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json, 视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长版｜表情复刻单人跳舞，舞姿神还原_2107334075940958210.json, 视频生成/图生视频/SteadyDancer单人跳舞动作迁移｜不限时长版表情复刻，视频生视频_2104525759527350274.json, 视频生成/图生视频/SteadyDancer骨骼迁移不限时长｜单人跳舞动物跳舞动作生成_2096710822365057025.json, 视频生成/图生视频/SteadyDancer骨骼迁移跳舞视频｜小猫小狗多人不限时长_2105832688631508994.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_86
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/scail2关键帧分批次转换1_2082351084420558850.json、视频生成/图生视频/多角色替换影视二创｜长时视频生图生视频生成_2093418632721293314.json、视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2097823943913721857.json、视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2101447299451936769.json、视频生成/图生视频/影视二创神器_长视频多角色批量替换第2版_2109437055964110850.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json、图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json、视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json、视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json、视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `FillMaskWithColor`
-- `GetNode`
-- `ImageConcatenate_UTK`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `Int`
-- `InvertMask`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
-- `PointsEditor`
+- `OnnxDetectionModelLoader`
 - `PreviewImage`
-- `PrimitiveInt`
-- `RH_Captioner`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SimpleMath+`
-- `Text`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode V2`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy indexAnything`
-- `easy mathInt`
-- `easy showAnything`
+- `WanVideoVAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_MaskMathOps` —— 8/9 个有
-- `JjkText` —— 8/9 个有
-- `PrimitiveBoolean` —— 8/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `VHS_LoadVideoFFmpeg` —— 8/9 个有
-- `solarL_SaveImagesToZip` —— 8/9 个有
-- `孤海注释` —— 7/9 个有
+- `PoseDetectionOneToAllAnimation` —— 8/9 个有
+- `TextInput_` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `GetNode` —— 7/9 个有
+- `SetNode` —— 7/9 个有
 - `SaveImage` —— 2/9 个有
-- `CFGNorm` —— 1/9 个有
-- `ConditioningZeroOut` —— 1/9 个有
-- `ControlNetApplySD3` —— 1/9 个有
-- `ControlNetLoader` —— 1/9 个有
-- `DepthAnything_V2` —— 1/9 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/9 个有
-- `ETN_ApplyMaskToImage` —— 1/9 个有
-- `EnhancedLoadDiffusionModel` —— 1/9 个有
-- `ExtractStoryboards_xuhuan1024` —— 1/9 个有
-- `Float` —— 1/9 个有
-- `Float to Int` —— 1/9 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/9 个有
-- `GetImageSize` —— 1/9 个有
-- `INPAINT_MaskedFill` —— 1/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/9 个有
-- `ModelSamplingAuraFlow` —— 1/9 个有
-- `RMBG` —— 1/9 个有
-- `SetUnionControlNetType` —— 1/9 个有
-- `TextConcatenate_UTK` —— 1/9 个有
-- `TextEncodeQwenImageEditPlus` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
+- `DF_Int_to_Float` —— 1/9 个有
+- `DrawViTPose` —— 1/9 个有
+- `EmptyImage` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `PoseAndFaceDetection` —— 1/9 个有
+- `RH_Sora2_I2V` —— 1/9 个有
+- `Text` —— 1/9 个有
+- `WanVideoBlockSwap` —— 1/9 个有
+- `WanVideoSetBlockSwap` —— 1/9 个有
+- `WanVideoTorchCompileSettings` —— 1/9 个有
+- `easy setNode` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 512 | 9 | 0% |
-| 高度 | 80 | 80 - 512 | 9 | 0% |
-| 采样步数 | 4 | 4 - 8 | 9 | 72% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 9 | 73% |
-| 采样算法 | er_sde | - | 9 | 89% |
-| 调度器 | beta | - | 9 | 89% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| ControlNet 权重 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -130,11 +99,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 512，9 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 512，9 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，9 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，9 个样本
-- 采样算法 最常用 er_sde，9 个样本，一致性 89%
-- 调度器 最常用 beta，9 个样本，一致性 89%
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 高发问题（9/9 个样本）：Steps较低可能导致细节不足

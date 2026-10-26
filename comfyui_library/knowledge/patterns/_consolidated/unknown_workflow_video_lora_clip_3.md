@@ -3,11 +3,11 @@ name: unknown_workflow_video_lora_clip_3
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.533143
+coverage: 0.542214
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanChunkFeedForward]
 problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL2动作迁移_2065073781403643906.json, 视频生成/图生视频/SCAIL2动作迁移长视频context_2068015030934786049.json, 视频生成/图生视频/SCAIL2动作迁移长视频infinite_2067983408994807810.json, 视频生成/图生视频/SCAIL2角色替换_2065050887139188738.json, 视频生成/图生视频/SCAIL2角色替换长视频context_2067976240774074369.json, 视频生成/图生视频/SCAIL2角色替换长视频infinite_2068006607816060929.json, 视频生成/图生视频/Scail2 Infinity稳定版多参工作流_2069809845880049665.json, 视频生成/图生视频/Scail2人物动作模仿工作流_2068608241436815362.json, 视频生成/图生视频/Scail2人物替换工作流-多段生成速度快_2068592068020228097.json, 视频生成/图生视频/Scail2人物替换工作流_2102813959735832577.json, 视频生成/图生视频/Scail2人物替换工作流_2106538167158530050.json, 视频生成/图生视频/Scail2动作模仿工作流-多段生成速度快_2068613671097552898.json, 视频生成/图生视频/【尺素】Scail2人物替换-低配15秒畅跑简约版_2066063514803986434.json, 视频生成/图生视频/（上下文）Scail2 Infinity稳定版多参工作流_2068394809362051074.json]
+members: [视频生成/图生视频/SCAIL2动作迁移_2065073781403643906.json, 视频生成/图生视频/SCAIL2动作迁移长视频context_2068015030934786049.json, 视频生成/图生视频/SCAIL2动作迁移长视频infinite_2067983408994807810.json, 视频生成/图生视频/SCAIL2角色替换_2065050887139188738.json, 视频生成/图生视频/SCAIL2角色替换长视频context_2067976240774074369.json, 视频生成/图生视频/SCAIL2角色替换长视频infinite_2068006607816060929.json, 视频生成/图生视频/Scail2 Infinity稳定版多参工作流_2069809845880049665.json, 视频生成/图生视频/Scail2人物动作模仿工作流_2068608241436815362.json, 视频生成/图生视频/Scail2人物替换工作流-多段生成速度快_2068592068020228097.json, 视频生成/图生视频/Scail2人物替换工作流_2102813959735832577.json, 视频生成/图生视频/Scail2人物替换工作流_2106538167158530050.json, 视频生成/图生视频/Scail2动作模仿工作流-多段生成速度快_2068613671097552898.json, 视频生成/图生视频/Wan-SCAIL2 动作迁移_人物替换_2064423977212272642.json, 视频生成/图生视频/（上下文）Scail2 Infinity稳定版多参工作流_2068394809362051074.json]
 source: knowledge_consolidation
 ---
 
@@ -18,7 +18,7 @@ source: knowledge_consolidation
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
@@ -67,11 +67,11 @@ source: knowledge_consolidation
 - `WanSCAILMultirefInfinity` —— 2/14 个有
 - `WanVideoMemoryEfficientSageAttentionPatch` —— 2/14 个有
 - `easy imageRemBg` —— 2/14 个有
+- `CR Text` —— 1/14 个有
 - `ComfySwitchNode` —— 1/14 个有
 - `EmptyImage` —— 1/14 个有
 - `GetImageSizeAndCount` —— 1/14 个有
-- `JWInteger` —— 1/14 个有
-- `PrimitiveInt` —— 1/14 个有
+- `Int` —— 1/14 个有
 
 ## 典型参数
 

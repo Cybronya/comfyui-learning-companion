@@ -1,75 +1,80 @@
 ---
 name: image_to_image_sampler_unet_vae_6
 type: Image To Image
-frequency: 15
+frequency: 18
 level: moderate
-coverage: 0.905333
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.929556
+common_nodes: [CFGNorm, CLIPLoader, CR Text, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Edit局部重绘_1964882500403253249.json, 图片生成/图生图/Qwen-Image-Edit 图生图编辑 _ 12 节点保持人物换装_加配饰_2086660579183386625.json, 图片生成/图生图/Qwen-Image-Edit 真人照片转3D卡通 _ 人物换装_2109096443209404418.json, 图片生成/图生图/Qwen-edit 打光工作流｜人物一致_1959175236979732482.json, 图片生成/图生图/人物打光换背景-Qwen-Image-Edit图像编辑_1958790192075268098.json, 图片生成/图生图/人物编辑-Qwen-Image-Edit图像编辑_1958681004053577729.json, 图片生成/图生图/千问Edit局部重绘_Qwen-Edit_1964284723205951490.json, 图片生成/图生图/千问Edit局部重绘_Qwen-Edit_1967961936698683393.json, 图片生成/图生图/千问Edit局部重绘【配合Qwen-Edit inpaint Lora】_1964666303120330754.json, 图片生成/图生图/千问_局部重绘_Qwen Image Edit Inpainting_1964904089928781826.json, 图片生成/图生图/转换视角-Qwen-Image-Edit图像编辑_1957970150108577793.json, 图片生成/图生图/转绘-Qwen-Image-Edit图像编辑_1957815011857068034.json, 图片生成/图生图/通义前文Qwen-Image-Edit图像编辑修复版（一致性大大增强）_1958671348539224065.json, 图片生成/图生图/通义千问图片编辑（qwen-edit）_1958158377425784833.json, 图片生成/图生图/🦖转绘-Qwen-Image_1958477176230277122.json]
+members: [图片生成/图生图/人物换发型_2037156801669505026.json, 图片生成/图生图/千问2511三图编辑_2004810240099053569.json, 图片生成/图生图/千问2511双图编辑_2004808317312663553.json, 图片生成/图生图/千问Edit-Plus双图编辑_1974067375094018050.json, 图片生成/图生图/千问Edit-Plus图片编辑_1974058449602482178.json, 图片生成/图生图/千问Edit2511三图编辑_2004489688587141122.json, 图片生成/图生图/千问Edit2511单图编辑_2003703669726035969.json, 图片生成/图生图/千问Edit2511双图编辑_2004435367468167169.json, 图片生成/图生图/千问Qwen2511图像编辑换装｜全节点注释喂饭级教程_2063477606913241090.json, 图片生成/图生图/千问edit-老照片修复_2079961641495650306.json, 图片生成/图生图/千问edit视角转换_1987460531059625986.json, 图片生成/图生图/千问最新图像编辑Plus八步加速_1975583252884885506.json, 图片生成/图生图/千问最新编辑模型Plus_1970422090648199170.json, 图片生成/图生图/千问编辑模型Plus三图版_1970743584494415874.json, 图片生成/图生图/去水印_去文字qwen2511_2071627982585810945.json, 图片生成/图生图/图片去水印_2038881204849610753.json, 图片生成/图生图/少儿_迁移_换装_抠图_runninghub简化版本_2077676821130338306.json, 图片生成/图生图/少儿_迁移_换装_抠图_runninghub简化版本_2079437242732474369.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit局部重绘_1964882500403253249.json、图片生成/图生图/Qwen-Image-Edit 图生图编辑 _ 12 节点保持人物换装_加配饰_2086660579183386625.json、图片生成/图生图/Qwen-Image-Edit 真人照片转3D卡通 _ 人物换装_2109096443209404418.json、图片生成/图生图/Qwen-edit 打光工作流｜人物一致_1959175236979732482.json、图片生成/图生图/人物打光换背景-Qwen-Image-Edit图像编辑_1958790192075268098.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/人物换发型_2037156801669505026.json、图片生成/图生图/千问2511三图编辑_2004810240099053569.json、图片生成/图生图/千问2511双图编辑_2004808317312663553.json、图片生成/图生图/千问Edit-Plus双图编辑_1974067375094018050.json、图片生成/图生图/千问Edit-Plus图片编辑_1974058449602482178.json…）
 
 - **类型**：Image To Image
-- **样本数**：15
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `CR Text`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 14/15 个有
-- `ImageStitch` —— 13/15 个有
-- `Text Multiline` —— 10/15 个有
-- `ImageAndMaskPreview` —— 8/15 个有
-- `ImageScaleDownToSize` —— 8/15 个有
-- `TextEncodeQwenImageEditEnhanced` —— 6/15 个有
-- `PreviewImage` —— 5/15 个有
-- `ImageScaleToTotalPixels` —— 4/15 个有
-- `RH_Translator` —— 3/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/15 个有
-- `Mask Fill Holes` —— 1/15 个有
-- `RepeatLatentBatch` —— 1/15 个有
-- `ShowText|pysssss` —— 1/15 个有
+- `LoraLoaderModelOnly` —— 15/18 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 12/18 个有
+- `Image Comparer (rgthree)` —— 4/18 个有
+- `PreviewImage` —— 4/18 个有
+- `ImageConcanate` —— 3/18 个有
+- `BackgroundEraseNetwork` —— 2/18 个有
+- `ETN_LoadImageBase64` —— 2/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `FillMaskedArea_UTK` —— 1/18 个有
+- `GrowMask` —— 1/18 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/18 个有
+- `LoraLoader` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 20 | 15 | 70% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 15 | 78% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 100% |
-| 重绘幅度 | 1 | 0.6 - 1 | 15 | 90% |
+| 采样步数 | 4 | 4 - 20 | 18 | 28% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 18 | 60% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | simple | - | 18 | 67% |
+| 重绘幅度 | 1 | 0.82 - 1 | 18 | 96% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 20，15 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，15 个样本
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.6 - 1，15 个样本，取值集中（一致性 90%）
+- 采样步数 中位数 4，观测区间 4 - 20，18 个样本，取值分散，一致性仅 28%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，18 个样本
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 simple，18 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 0.82 - 1，18 个样本，取值集中（一致性 96%）
+- 高发问题（16/18 个样本）：Steps较低可能导致细节不足

@@ -3,38 +3,39 @@ name: unknown_workflow_generic_206
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8512
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio]
+coverage: 0.6906
+common_nodes: [PrimitiveStringMultiline, RHHiddenNodes, SaveAudioMP3, ShowText|pysssss, WujiAudioLoader, WujiCleaner]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json, 音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json, 音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2044700131739574273.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2097613887163166722.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_1965792450579206146.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_2041905513490812929.json, 音频生成/音频生成/indextts2_2003659335702069249.json]
+members: [图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json, 音频生成/音频生成/FishAudio S2 TTS 文生语音单人标准版_2113240055170027521.json, 音频生成/音频生成/FishAudio S2 TTS 文生语音双人标准版_2113235195469058050.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json, 音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json, 音频生成/音频生成/单人_双人语音 复制情绪生成音频 FishAudio S2 TTS自适应情绪跨语言音频克隆_2041317897536016386.json, 音频生成/音频生成/自适应情绪跨语言音频克隆（单人or双人）_2045491676369657858.json, 音频生成/音频生成/（单人or双人）FishAudio S2 TTS自适应情绪跨语言音频克隆工作流_2040380303071514627.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_206
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json、音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json、音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json、音频生成/音频生成/FishAudio S2 TTS 文生语音单人标准版_2113240055170027521.json、音频生成/音频生成/FishAudio S2 TTS 文生语音双人标准版_2113235195469058050.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `SaveAudioMP3`
+- `ShowText|pysssss`
+- `WujiAudioLoader`
+- `WujiCleaner`
 
 **可变部分**（部分 workflow 才有）：
-- `Note _O` —— 9/10 个有
-- `SaveAudio` —— 9/10 个有
-- `NumberClamp` —— 2/10 个有
-- `SaveAudioMP3` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `VHS_LoadAudio` —— 1/10 个有
+- `FishS2MultiSpeakerTTS` —— 9/10 个有
+- `FishS2VoiceCloneTTS` —— 9/10 个有
+- `Fast Groups Muter (rgthree)` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
 
 ## 典型参数
 

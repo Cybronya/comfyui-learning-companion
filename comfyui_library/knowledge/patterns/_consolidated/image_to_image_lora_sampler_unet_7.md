@@ -1,81 +1,82 @@
 ---
 name: image_to_image_lora_sampler_unet_7
 type: Image To Image
-frequency: 38
+frequency: 33
 level: strong
-coverage: 0.590974
-common_nodes: [CFGNorm, CLIPLoader, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.814636
+common_nodes: [CLIPLoader, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ProcessString, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Extract_Clothing_Person_QwenEdit2511_JAMES001_2079604027645583362.json, 图片生成/图生图/Qwen Image Edit 2511-带F2P-支持单图多图编辑_2046849881221898241.json, 图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2069233419581739009.json, 图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2074649896665305089.json, 图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2082990309067284481.json, 图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2083017932996698114.json, 图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2083110808443252737.json, 图片生成/图生图/Qwen2511一键提取衣服+分离人物_2058472808627392513.json, 图片生成/图生图/Qwen2511一键提取衣服+分离人物_2058477521829711874.json, 图片生成/图生图/一张图片一键生成多角度多镜头 短剧必备_2016515954150215681.json, 图片生成/图生图/一张图片一键生成多角度多镜头 短剧必备_2091722800968065026.json, 图片生成/图生图/一键去壳！提取衣服分离人物-QwenEdit2511_2008516971700162561.json, 图片生成/图生图/一键提取衣服+分离人物+QwenEdit2511_2049018174875639810.json, 图片生成/图生图/一键提取衣服+分离人物=QwenEdit2511_2005532150214656002.json, 图片生成/图生图/一键提取衣服+分离人物=QwenEdit2511_2029572534571634689.json, 图片生成/图生图/一键提取衣服+分离人物=QwenEdit2511_2085666548760535042.json, 图片生成/图生图/一键提取衣服+分离人物=QwenEdit2511_2097881619569922050.json, 图片生成/图生图/一键提取衣服+分离人物=QwenEdit2511_2099411845491814402.json, 图片生成/图生图/一键提取衣服+分离人物（电商专用）_2045054734444273665.json, 图片生成/图生图/一键提服饰搭配+分离人物_2053484068637028354.json, 图片生成/图生图/一键生成多图多镜头+多角度=Qwen-Multiple-angles_2069247378271592449.json, 图片生成/图生图/一键生成多角度_多视角美女_2010711715217936385.json, 图片生成/图生图/一键生成多镜头+多角度2_2098938629342187522.json, 图片生成/图生图/一键生成多镜头+多角度=Qwen-Multiple-angles_1984963830654648321.json, 图片生成/图生图/一键生成多镜头+多角度=Qwen-Multiple-angles_2042955576895873025.json, 图片生成/图生图/一键生成多镜头+多角度=Qwen-Multiple-angles。好用到爆，超乎你想象！_2031902890029223937.json, 图片生成/图生图/一键生成多镜头+多角度=Qwen-Multiple-angles。好用到爆，超乎你想象！_2041156746311376898.json, 图片生成/图生图/一键生成多镜头+多角度_1997597737426292738.json, 图片生成/图生图/一键生成多镜头+多角度_2012761833446318081.json, 图片生成/图生图/一键生成多镜头+多角度_2019406910067318785.json, 图片生成/图生图/一键生成多镜头+多角度_2020848993571446785.json, 图片生成/图生图/一键生成多镜头+多角度_2069941228808003585.json, 图片生成/图生图/人物多机位视角切换_2009853282759483393.json, 图片生成/图生图/千问Qwen edit 2509BF16原版 图片一键生成多角度、多镜头控制工作流_1986296620218286081.json, 图片生成/图生图/图片多机位切换_1993495709802577921.json, 图片生成/图生图/提取人物衣服+分离人物 生成白底 QwenEdit_2087017832470106114.json, 图片生成/图生图/穿搭博主福音（一键拆分人物与服装）QwenEdit2511_2028285007155957762.json, 视频生成/图生视频/一键提取衣服+分离人物（懒人版上传就行）_2066580683623063553.json]
+members: [图片生成/图生图/1张图制作影视剧情，支持多分镜制作！！！Qwen模型_1978068040602497025.json, 图片生成/图生图/260110001.超级一致性分镜、短剧分镜神器_2011257263360577538.json, 图片生成/图生图/260110002.双主角影视剧情分镜制作_2011257318050111489.json, 图片生成/图生图/AI-动漫 漫画 短剧 分镜 三视图_2012237563565707265.json, 图片生成/图生图/AI-动漫短剧分镜_2019325060883947522.json, 图片生成/图生图/AI分镜无忧V1.0好用版嘎嘎方便嘎嘎好_2028822578684497921.json, 图片生成/图生图/AI漫剧分镜_2014938088660803585.json, 图片生成/图生图/AI短剧漫剧分镜图（一次性批量生成）_1999501061293473793.json, 图片生成/图生图/AI脚本分镜生成_1986979927847317506.json, 图片生成/图生图/Next+Scene根据参考制作分镜_1995672783566864386.json, 图片生成/图生图/Qwen 2511 next scene V2 电影分镜生成出图一致性影视剧情分镜制作_2008808672310333441.json, 图片生成/图生图/Qwen 2511 next scene V2 电影分镜生成出图一致性影视剧情分镜制作_2016063642785026050.json, 图片生成/图生图/Qwen Next Scene v2 分镜制作_1984092901477154818.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作V1_1980873324416909313.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作V2_1980887759596470274.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作_1983920137306865665.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作一键生成多镜多角度画面人物一致性_2073300067959795713.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2073291917919608833.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2101255160981970946.json, 图片生成/图生图/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2101289147616030721.json, 图片生成/图生图/Qwen ——影视剧情分镜制作（ai短剧）_1980273658113515522.json, 图片生成/图生图/Qwen+Next+Scene 分镜头  角色一致性_2039660310126137345.json, 图片生成/图生图/Qwen+Next+Scene 分镜头生成 角色一致性_2037092197958422529.json, 图片生成/图生图/Qwen+Next+Scene 分镜生成出图一致性影视剧情分镜制作_2060714698395447298.json, 图片生成/图生图/Qwen+Next+Scene 影视剧情分镜制作_2062812796873691138.json, 图片生成/图生图/Qwen+Next+Scene 影视剧情分镜制作_sfw_2015416285655474178.json, 图片生成/图生图/Qwen+Next+Scene 影视剧情分镜制作_本地编码_2015264925316292610.json, 图片生成/图生图/Qwen+Next+Scene 风格1致性电影分镜制作_1981989264269418497.json, 图片生成/图生图/Qwen2509影片分镜头剧情_1981664964194770946.json, 图片生成/图生图/QwenNextScene短视频12分镜图_1982228139298439169.json, 图片生成/图生图/Qwen影视剧情分镜制作_2015305786242633730.json, 图片生成/图生图/自动反推-风格1致性电影分镜制作-8步出图-Qwen+Next+Scene_1982013950143406082.json, 图片生成/图生图/风格1致性电影分镜制作 Qwen+Next+Scene_1981912845417889794.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 38 个 workflow 归纳得出（图片生成/图生图/Extract_Clothing_Person_QwenEdit2511_JAMES001_2079604027645583362.json、图片生成/图生图/Qwen Image Edit 2511-带F2P-支持单图多图编辑_2046849881221898241.json、图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2069233419581739009.json、图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2074649896665305089.json、图片生成/图生图/Qwen-Multiple-angl一键生成多镜头+多角度_2082990309067284481.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/1张图制作影视剧情，支持多分镜制作！！！Qwen模型_1978068040602497025.json、图片生成/图生图/260110001.超级一致性分镜、短剧分镜神器_2011257263360577538.json、图片生成/图生图/260110002.双主角影视剧情分镜制作_2011257318050111489.json、图片生成/图生图/AI-动漫 漫画 短剧 分镜 三视图_2012237563565707265.json、图片生成/图生图/AI-动漫短剧分镜_2019325060883947522.json…）
 
 - **类型**：Image To Image
-- **样本数**：38
+- **样本数**：33
 - **可信度**：强结论
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 38 个 workflow 都包含：
-- `CFGNorm`
+全部 33 个 workflow 都包含：
 - `CLIPLoader`
-- `ImageResizeKJv2`
+- `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `ProcessString`
 - `SaveImage`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 37/38 个有
-- `LayerUtility: PurgeVRAM` —— 37/38 个有
-- `PrimitiveInt` —— 37/38 个有
-- `GetNode` —— 22/38 个有
-- `SetNode` —— 22/38 个有
-- `ImageConcatMulti` —— 20/38 个有
-- `EmptySD3LatentImage` —— 16/38 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 16/38 个有
-- `easy imageConcat` —— 15/38 个有
-- `ImageStitch` —— 14/38 个有
-- `PreviewImage` —— 3/38 个有
-- `Fast Groups Muter (rgthree)` —— 2/38 个有
-- `Image Comparer (rgthree)` —— 1/38 个有
-- `Int` —— 1/38 个有
-- `Text` —— 1/38 个有
-- `孤海注释` —— 1/38 个有
+- `Int` —— 32/33 个有
+- `easy showAnything` —— 32/33 个有
+- `RH_LLMAPI_NODE` —— 31/33 个有
+- `ShellAgentPluginOutputText` —— 31/33 个有
+- `Anything Everywhere3` —— 29/33 个有
+- `PreviewImage` —— 8/33 个有
+- `GetNode` —— 3/33 个有
+- `SetNode` —— 3/33 个有
+- `Anything Everywhere` —— 2/33 个有
+- `CheckpointLoaderSimple` —— 2/33 个有
+- `Comfly_LLm_API` —— 2/33 个有
+- `CFGNorm` —— 1/33 个有
+- `DuckHideNode` —— 1/33 个有
+- `LayerUtility: ImageChannelMerge` —— 1/33 个有
+- `ModelSamplingAuraFlow` —— 1/33 个有
+- `easy imageConcat` —— 1/33 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 8 | 38 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 38 | 100% |
-| 采样算法 | euler | - | 38 | 100% |
-| 调度器 | simple | - | 38 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 38 | 100% |
+| 采样步数 | 4 | 4 - 8 | 33 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 33 | 100% |
+| 采样算法 | sa_solver | - | 33 | 100% |
+| 调度器 | simple | - | 33 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 211/38 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 33/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 8，38 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，38 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，38 个样本，一致性 100%
-- 调度器 最常用 simple，38 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，38 个样本，取值集中（一致性 100%）
-- 高发问题（211/38 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，33 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，33 个样本，一致性 100%
+- 调度器 最常用 simple，33 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
+- 高发问题（33/33 个样本）：Steps较低可能导致细节不足

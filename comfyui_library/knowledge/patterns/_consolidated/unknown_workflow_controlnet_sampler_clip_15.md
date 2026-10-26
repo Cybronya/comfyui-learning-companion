@@ -1,73 +1,66 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_15
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.892667
-common_nodes: [AIO_Preprocessor, ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ControlNetApplySD3, ControlNetLoader, DownloadAndLoadFlorence2Model, DualCLIPLoader, EmptySD3LatentImage, Florence2Run, FluxGuidance, ImageScale, KSamplerSelect, LoadImage, ModelSamplingFlux, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy imageSize]
+coverage: 0.94225
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, ImageScaleDownToSize, ImageStitch, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/PuLID角色一致性（面部）_1920675244418203649.json, 图片生成/图生图/【面部一致】FLUX PuLID 网红角色面部保持一致性不同姿势生成_1908024842749419521.json, 图片生成/图生图/面部保持一致_1902523531027197954.json]
+members: [图片生成/图生图/千问文字渲染_QWen-Image线稿Canny控制ComfyUI官方_1958771497777197058.json, 图片生成/图生图/千问深度Depth和canny控制_QWen-Image_1959234107358261249.json, 图片生成/图生图/千问深度Depth控制_QWen-Image-ComfyUI官方_1958744331945402370.json, 图片生成/图生图/千问线稿Canny控制-QWen-Image-ComfyUI官方_1958717419227344898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_15
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/PuLID角色一致性（面部）_1920675244418203649.json、图片生成/图生图/【面部一致】FLUX PuLID 网红角色面部保持一致性不同姿势生成_1908024842749419521.json、图片生成/图生图/面部保持一致_1902523531027197954.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千问文字渲染_QWen-Image线稿Canny控制ComfyUI官方_1958771497777197058.json、图片生成/图生图/千问深度Depth和canny控制_QWen-Image_1959234107358261249.json、图片生成/图生图/千问深度Depth控制_QWen-Image-ComfyUI官方_1958744331945402370.json、图片生成/图生图/千问线稿Canny控制-QWen-Image-ComfyUI官方_1958717419227344898.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `AIO_Preprocessor`
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text Concatenate`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
-- `DownloadAndLoadFlorence2Model`
-- `DualCLIPLoader`
 - `EmptySD3LatentImage`
-- `Florence2Run`
-- `FluxGuidance`
-- `ImageScale`
-- `KSamplerSelect`
+- `GetImageSize`
+- `ImageScaleDownToSize`
+- `ImageStitch`
+- `KSampler`
 - `LoadImage`
-- `ModelSamplingFlux`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `ShowText|pysssss`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `FromBasicPipe_v2` —— 2/3 个有
-- `ImageConcatMulti` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `ToBasicPipe` —— 2/3 个有
-- `easy imageSplitGrid` —— 2/3 个有
-- `easy imagesSplitImage` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `LayerUtility: TextJoin` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `RunningHub QwenImage Canny Pipeline` —— 1/4 个有
+- `RunningHub QwenImage Canny Sampler` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.66 | 0.66 - 0.66 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -75,4 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.66，观测区间 0.66 - 0.66，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

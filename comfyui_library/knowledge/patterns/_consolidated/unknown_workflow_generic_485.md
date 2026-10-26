@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_485
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5428
-common_nodes: [LoadVideo, ShowText|pysssss, easy positive, easy saveText]
+coverage: 0.943667
+common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/反推视频提示词-2_2107404573160853506.json, 图片生成/文生图/Gemini 3.5 flash+反推视频提示词+视频反推提示词+全节点注释_2058525227860185089.json, 图片生成/文生图/RHTV同款一次0.02+反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058528863780696065.json, 图片生成/文生图/SD2.0+Seedance 2.0+反推视频提示词+Gemini 3.5+全节点注释_2058528703394701314.json, 图片生成/文生图/反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058446045159452673.json]
+members: [图片生成/图生图/微调模块_2057855758682902529.json, 图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json, 图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json, 图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json, 图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json, 数字人/数字人/公司简介PPT工作流_2062465007568375809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_485
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/反推视频提示词-2_2107404573160853506.json、图片生成/文生图/Gemini 3.5 flash+反推视频提示词+视频反推提示词+全节点注释_2058525227860185089.json、图片生成/文生图/RHTV同款一次0.02+反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058528863780696065.json、图片生成/文生图/SD2.0+Seedance 2.0+反推视频提示词+Gemini 3.5+全节点注释_2058528703394701314.json、图片生成/文生图/反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058446045159452673.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/微调模块_2057855758682902529.json、图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json、图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json、图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json、图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadVideo`
-- `ShowText|pysssss`
-- `easy positive`
-- `easy saveText`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `RHHiddenNodes` —— 4/5 个有
-- `RH_LLMAPI_Pro_Node` —— 3/5 个有
-- `RH_RhartTextG3FlashPreviewVideoToText` —— 1/5 个有
-- `RH_RhartTextG3ProPreviewVideoToText` —— 1/5 个有
+- `CR Text Concatenate` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
 
 ## 典型参数
 

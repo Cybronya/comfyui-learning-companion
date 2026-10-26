@@ -3,33 +3,36 @@ name: unknown_workflow_generic_446
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.847
-common_nodes: [QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
+coverage: 0.813167
+common_nodes: [FlashVSRNode, Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen-image官方文生图，汉字理解第一梯队_1952745267520073729.json, 图片生成/文生图/Qwen-image支持中文海报，中文直出-秋天第一杯奶茶_1953300897659031553.json, 图片生成/文生图/Qwen-image汉字专用文生图_1952570971951706113.json, 图片生成/文生图/Qwen-image汉字专用文生图_1952647008134840321.json, 图片生成/文生图/通义千问Qwen-image-文生图_1952653222756462594.json, 图片生成/文生图/阿里最新开源Qwen-Image_1952726604263976961.json]
+members: [图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json, 图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json, 图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json, 图片生成/图生图/flashVSR图片高清放大_2067075698631729154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_446
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen-image官方文生图，汉字理解第一梯队_1952745267520073729.json、图片生成/文生图/Qwen-image支持中文海报，中文直出-秋天第一杯奶茶_1953300897659031553.json、图片生成/文生图/Qwen-image汉字专用文生图_1952570971951706113.json、图片生成/文生图/Qwen-image汉字专用文生图_1952647008134840321.json、图片生成/文生图/通义千问Qwen-image-文生图_1952653222756462594.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json、图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json、图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `QwenImageModelLoader`
-- `RH_QwenImageGenerator`
+- `FlashVSRNode`
+- `Image Comparer (rgthree)`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `easy imageScaleDownToSize` —— 3/6 个有
+- `Int` —— 2/6 个有
 
 ## 典型参数
 

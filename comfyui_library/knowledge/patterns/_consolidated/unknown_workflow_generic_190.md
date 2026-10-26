@@ -1,50 +1,38 @@
 ---
 name: unknown_workflow_generic_190
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8485
-common_nodes: [HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine]
+coverage: 0.874909
+common_nodes: [AudioCrop, LoadAudio, SaveAudio, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成详情页_2102050366396387330.json, 图片生成/图生图/个人形象设计图卡分析【6图】一键精准设计 全能G-image2.0低价版_2050963126404825090.json, 图片生成/图生图/全能图片G-image-2 电商详情页一键生成（RH平台廉价版api调用）_2050778767416668161.json, 图片生成/图生图/全能图片V1 Pro 电商详情页一键生成_2012746996444041218.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2098971573062553601.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2099073149110407169.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2100028090708746242.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2100860566008061953.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2101129753725071361.json, 图片生成/图生图/电商产品产品页+详情页【6图】一键精准设计 全能G-image2.0低价版_2050501658743980034.json]
+members: [数字人/数字人/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2035327678034747394.json, 视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json, 音频生成/音频生成/Qwen3 TTS 语音参考克隆+情感语气（单人）_2086710651883442178.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2061738767072980994.json, 音频生成/音频生成/Qwen3+TTS+音频克隆_2082332163504168962.json, 音频生成/音频生成/Qwen3音频克隆 Qwen3+TTS+音频克隆_2074007340663267330.json, 音频生成/音频生成/保存自己用-Qwen3 TTS 音频克隆_2067157702194851841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_190
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/一键生成详情页_2102050366396387330.json、图片生成/图生图/个人形象设计图卡分析【6图】一键精准设计 全能G-image2.0低价版_2050963126404825090.json、图片生成/图生图/全能图片G-image-2 电商详情页一键生成（RH平台廉价版api调用）_2050778767416668161.json、图片生成/图生图/全能图片V1 Pro 电商详情页一键生成_2012746996444041218.json、图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2098971573062553601.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2035327678034747394.json、视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `HAIGC_CombineUnits`
-- `HAIGC_Layer`
-- `HAIGC_SavePSD`
-- `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
+全部 11 个 workflow 都包含：
+- `AudioCrop`
+- `LoadAudio`
+- `SaveAudio`
 - `Text`
-- `easy promptConcat`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 9/10 个有
-- `ShowText|pysssss` —— 8/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 6/10 个有
-- `RH_RhartImageG2ImageToImage` —— 3/10 个有
-- `EmptyImage` —— 2/10 个有
-- `MuyeTextEditOutput` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `ShowText` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/10 个有
+- `Apply Whisper` —— 10/11 个有
+- `PreviewAny` —— 10/11 个有
+- `FB_Qwen3TTSVoiceClone` —— 7/11 个有
+- `FishS2VoiceCloneTTS` —— 4/11 个有
 
 ## 典型参数
 

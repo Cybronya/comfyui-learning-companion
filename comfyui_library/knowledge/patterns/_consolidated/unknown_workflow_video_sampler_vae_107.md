@@ -3,54 +3,59 @@ name: unknown_workflow_video_sampler_vae_107
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.857
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, LoadImage, Note _O, VHS_VideoCombine]
+coverage: 0.4654
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json, 视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json, 视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json, 视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json, 视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json]
+members: [视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json, 视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json, 视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json, 视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json, 视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_107
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json、视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json、视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json、视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json、视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json、视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json、视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json、视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json、视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoI2VEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJ`
 - `LoadImage`
-- `Note _O`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoDiffusionForcingSampler`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Resize` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 4/5 个有
-- `Note Plus (mtb)` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `HyVideoLoraSelect` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `JWImageResizeByLongerSide` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `CLIPLoader` —— 4/5 个有
+- `CLIPTextEncode` —— 4/5 个有
+- `WanVideoBlockSwap` —— 4/5 个有
+- `WanVideoTextEmbedBridge` —— 4/5 个有
+- `LoadWanVideoT5TextEncoder` —— 3/5 个有
+- `WanVideoTextEncode` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `WanVideoVRAMManagement` —— 3/5 个有
+- `LoadImageFromUrl` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

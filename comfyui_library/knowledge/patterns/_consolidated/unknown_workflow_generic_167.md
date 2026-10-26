@@ -3,33 +3,34 @@ name: unknown_workflow_generic_167
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.747727
-common_nodes: [CR Text, SaveVideo]
+coverage: 0.959091
+common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json, 视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json, 视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json, 视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json, 视频生成/文生视频/MiniMax H3文生视频_2083412798427717633.json, 视频生成/文生视频/MiniMax H3文生视频_2083417444428902401.json, 视频生成/文生视频/MiniMax H3文生视频_2083423068407549953.json, 视频生成/文生视频/MiniMax H3文生视频_2083426678491140097.json, 视频生成/文生视频/MiniMax+H3文生视频_2083396156163452930.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json]
+members: [图片生成/反推提示词/22zomeinimage_2049388256801857537.json, 图片生成/图生图/Nvidia_RTX_Nodes  图片放大_2032434516098293761.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2031914806810255362.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2032395867646337026.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2033180312687091714.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2035915630901207042.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2045857523072241665.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI+图片放大流_2054744352571838465.json, 图片生成/图生图/Nvidia_RTX_图片放大节点_2036584832876158978.json, 图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json, 图片生成/图生图/RTX Video Super Resolution 图片放大-图片高清_2047152370659893250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_167
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json、视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json、视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json、视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/22zomeinimage_2049388256801857537.json、图片生成/图生图/Nvidia_RTX_Nodes  图片放大_2032434516098293761.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2031914806810255362.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2032395867646337026.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2033180312687091714.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CR Text`
-- `SaveVideo`
+- `LoadImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3TextToVideo` —— 10/11 个有
-- `LoadImage` —— 2/11 个有
-- `RH_GeminiOmniFlashTextToVideo` —— 1/11 个有
+- `Float` —— 2/11 个有
+- `Image Comparer (rgthree)` —— 2/11 个有
+- `CustomAddLabel` —— 1/11 个有
 
 ## 典型参数
 

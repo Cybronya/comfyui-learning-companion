@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1474
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.866
-common_nodes: [CR Prompt Text, HAIGC_LoadImagesFromZip, Int, RunningHubRVCOneClickTrain, ShellAgentPluginOutputText, easy saveText]
+coverage: 0.714
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/RVC模型训练器_2101876081258229762.json, 音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json]
+members: [图片生成/图生图/全能图片PRO-图生图｜官方稳定版｜4K画质_2093857463824109569.json, 图片生成/图生图/全能图片V2 图生图｜官方稳定版｜超强一致性_2093844161140183042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1474
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RVC模型训练器_2101876081258229762.json、音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片PRO-图生图｜官方稳定版｜4K画质_2093857463824109569.json、图片生成/图生图/全能图片V2 图生图｜官方稳定版｜超强一致性_2093844161140183042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `HAIGC_LoadImagesFromZip`
-- `Int`
-- `RunningHubRVCOneClickTrain`
-- `ShellAgentPluginOutputText`
-- `easy saveText`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/2 个有
+- `RH_RhartImageNProOfficialEdit` —— 1/2 个有
 
 ## 典型参数
 

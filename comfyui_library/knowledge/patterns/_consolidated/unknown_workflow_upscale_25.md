@@ -3,29 +3,33 @@ name: unknown_workflow_upscale_25
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.916667
-common_nodes: [LoadImage, RH_TopazLabs_ImageUpscale, SaveImage]
+coverage: 0.861
+common_nodes: [LoadImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json, 图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json, 图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json]
+members: [图片生成/图生图/SUPIR高清放大_1929152001744211970.json, 图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json, 图片生成/图生图/图片放大修复细节_1897938893076156417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json、图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json、图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SUPIR高清放大_1929152001744211970.json、图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json、图片生成/图生图/图片放大修复细节_1897938893076156417.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_TopazLabs_ImageUpscale`
+- `SUPIR_Upscale`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Simple Image Compare` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
 
 ## 典型参数
 

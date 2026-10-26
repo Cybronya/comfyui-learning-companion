@@ -1,47 +1,39 @@
 ---
 name: unknown_workflow_sampler_32
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.864
-common_nodes: [DF_Get_image_size, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LoadImage, LoadLBMModel, PreviewImage, SaveImage, TransparentBGSession+]
+coverage: 0.8606
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/LBM-商品人物重打光换背景_1924654145469673473.json, 图片生成/图生图/LBM打光及背景融合工作流V1_1922669595415691266.json, 图片生成/图生图/[众馨]人物背景融合_1993246795654430722.json, 图片生成/图生图/人物换背景，调整位置，打光_1923965694881558530.json]
+members: [视频生成/图生视频/SoulX FlashTalk 最新数字人 超长时间 对口型_2017169836740190209.json, 视频生成/图生视频/SoulX-FlashTalk图片数字人v1_2104758449849589761.json, 视频生成/图生视频/SoulX-FlashTalk最新数字人技术图片+音频=高质量数字人（支持超长时间）林耀_2017427499575152641.json, 视频生成/图生视频/一张图片+一段音频生成数字人（SoulX-FlashTalk最新数字人技术，结合客户端可批量）_2017877096126750721.json, 音频生成/音频生成/FlashTalk数字人_2037417128906723329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LBM-商品人物重打光换背景_1924654145469673473.json、图片生成/图生图/LBM打光及背景融合工作流V1_1922669595415691266.json、图片生成/图生图/[众馨]人物背景融合_1993246795654430722.json、图片生成/图生图/人物换背景，调整位置，打光_1923965694881558530.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/SoulX FlashTalk 最新数字人 超长时间 对口型_2017169836740190209.json、视频生成/图生视频/SoulX-FlashTalk图片数字人v1_2104758449849589761.json、视频生成/图生视频/SoulX-FlashTalk最新数字人技术图片+音频=高质量数字人（支持超长时间）林耀_2017427499575152641.json、视频生成/图生视频/一张图片+一段音频生成数字人（SoulX-FlashTalk最新数字人技术，结合客户端可批量）_2017877096126750721.json、音频生成/音频生成/FlashTalk数字人_2037417128906723329.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DF_Get_image_size`
-- `ImageRemoveBackground+`
-- `ImageResizeKJv2`
-- `LBMSampler`
+全部 5 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadLBMModel`
-- `PreviewImage`
-- `SaveImage`
-- `TransparentBGSession+`
+- `RunningHub FlashTalk Loader`
+- `RunningHub FlashTalk Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 3/4 个有
-- `ImageConcanate` —— 3/4 个有
-- `LayerUtility: ImageAutoCrop V3` —— 3/4 个有
-- `PDIMAGE_LongerSize` —— 3/4 个有
-- `Compositor3` —— 1/4 个有
-- `CompositorConfig3` —— 1/4 个有
-- `ImageScaleDownToSize` —— 1/4 个有
-- `preview_mask` —— 1/4 个有
+- `PreviewImage` —— 4/5 个有
+- `Int` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 

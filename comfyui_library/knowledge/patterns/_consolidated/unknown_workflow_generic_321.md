@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_321
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.799857
-common_nodes: [CustomAddLabel, FlashVSRNode, Int, LoadImage, SaveImage]
+coverage: 0.725125
+common_nodes: [HeartMuLa_Generate, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Flash VSR-图片高清-图片放大-速度快效果好_2052559331081637889.json, 图片生成/图生图/G2.0全能人像写实去AI去塑料高清直出_2058098351228407809.json, 图片生成/图生图/gemini-3.1人像增强皮肤细节提升商业增强高清直出_2061603141585559554.json, 图片生成/图生图/gemini2.0专业AI婚纱全能高清真实_2061078584269299714.json, 图片生成/图生图/gemini2.0全能专业AI婚纱可控高清直出_2058020655945306113.json, 图片生成/图生图/人像超写实皮肤增强-细节重塑-毛孔级写实提升-商业精修级材质增强-高清直出_2049094193208889345.json, 图片生成/图生图/全能图片2-Nan-oBanan2-多图编辑-高清直出_2048635142356344833.json]
+members: [数字人/数字人/HeartMula写歌_2016410254724042753.json, 音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json, 音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json, 音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json, 音频生成/音频生成/音乐生成--HeartMula让你写歌自由_2013804466218209282.json, 音频生成/音频生成/🎵HeartMuLa🎵最新最强开源音乐生成_2014297660701810690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_321
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flash VSR-图片高清-图片放大-速度快效果好_2052559331081637889.json、图片生成/图生图/G2.0全能人像写实去AI去塑料高清直出_2058098351228407809.json、图片生成/图生图/gemini-3.1人像增强皮肤细节提升商业增强高清直出_2061603141585559554.json、图片生成/图生图/gemini2.0专业AI婚纱全能高清真实_2061078584269299714.json、图片生成/图生图/gemini2.0全能专业AI婚纱可控高清直出_2058020655945306113.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/HeartMula写歌_2016410254724042753.json、音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json、音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CustomAddLabel`
-- `FlashVSRNode`
-- `Int`
-- `LoadImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 6/7 个有
-- `RHHiddenNodes` —— 4/7 个有
-- `Text` —— 4/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `Seed` —— 1/7 个有
+- `Text Multiline` —— 2/8 个有
+- `INTConstant` —— 1/8 个有
+- `SaveAudioMP3` —— 1/8 个有
 
 ## 典型参数
 

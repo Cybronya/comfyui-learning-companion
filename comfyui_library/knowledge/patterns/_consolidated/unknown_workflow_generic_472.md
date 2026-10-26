@@ -3,39 +3,33 @@ name: unknown_workflow_generic_472
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.952333
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio, VRAMReserver]
+coverage: 0.958333
+common_nodes: [RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json, 音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json, 音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json, 音频生成/音频生成/Qwen3-TTS多角色多轮对话生成工作流_2014703508829769729.json, 音频生成/音频生成/🦖多角色对话配音（自定义音色）_2018213546974253057.json]
+members: [图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json, 图片生成/图生图/艺术-变化-字_2113128685749497858.json, 图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json, 图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json, 图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json, 视频生成/图生视频/商业图-广告图-产品图提示词一键生成-G2大模型_1965450548570935297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_472
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json、音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json、音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json、音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json、音频生成/音频生成/Qwen3-TTS多角色多轮对话生成工作流_2014703508829769729.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json、图片生成/图生图/艺术-变化-字_2113128685749497858.json、图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json、图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json、图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
-- `VRAMReserver`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/6 个有
-- `LoadAudio` —— 3/6 个有
-- `WhisperSTT` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `LoadImage` —— 4/6 个有
+- `Text Multiline` —— 3/6 个有
+- `easy promptLine` —— 1/6 个有
 
 ## 典型参数
 

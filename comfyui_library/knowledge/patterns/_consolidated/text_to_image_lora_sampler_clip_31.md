@@ -3,82 +3,102 @@ name: text_to_image_lora_sampler_clip_31
 type: Text To Image
 frequency: 22
 level: strong
-coverage: 0.902
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy int]
-problems: []
+coverage: 0.8765
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json, 图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫阙-第一套【syqiangk】_2078147529719504897.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-星幻王-第一套【syqiangk】_2041908781411471361.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-溟莲之主-第一套【syqiangk】_2080260967069478914.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-清衍静-第一套【syqiangk】_2074899453416394754.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-灵溪-第一套【syqiangk】_2079577200193523713.json, 图片生成/文生图/Krea2+Klein双采-国漫-师兄啊师兄-云霄-黑化版【syqiangk】_2085398499084038145.json, 图片生成/文生图/Krea2+Klein双采-国漫-择日飞升-青壁-第一套【syqiangk】_2086873516091203586.json, 图片生成/文生图/Krea2+Klein双采-国漫-斗破苍穹-药灵-第一套【syqiangk】_2082101399822888961.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏千荷-第一套【syqiangk】_2084295242433519617.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏梦瑶-第一套【syqiangk】_2081412397172084737.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第一套【syqiangk】_2076711849927729154.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第二套【syqiangk】_2080276212844421121.json, 图片生成/文生图/Krea2+Klein双采-国漫-深空彼岸-燕清妍-第一套【syqiangk】_2085035661463220225.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-楚月婵-年番第一套【syqiangk】_2083403282608910338.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-苍月公主-年番第二套【syqiangk】_2083178016846467074.json, 图片生成/文生图/Krea2+Klein双采-游戏-永劫无间-甘璇-第一套【syqiangk】_2075979084965957634.json, 图片生成/文生图/Krea2+Klein双采-韩漫-美丽新世界-金美庭-第一套【syqiangk】_2083572001037443074.json]
+members: [视频生成/图生视频/MiniMax H3超长视频流 一次直出2分15秒135S长视频_2110360650903023617.json, 视频生成/图生视频/MiniMax H3首尾帧图生视频 多模式视频生成处理工具_2113357272276619265.json, 视频生成/图生视频/MiniMax-H3 Ref2va参考生视频标准版｜高质量_2095566940180930561.json, 视频生成/图生视频/MiniMax-H3-多图参考视频生成（Lightx2v加速）_2086208730663841794.json, 视频生成/图生视频/MiniMaxH3参考生视频量化加速版｜文本图像音频视频全模态，图生视频更快出活_2100449477902553090.json, 视频生成/图生视频/MiniMax_H3 I2V加速多参考生视频，高效图生视频工具_2110532068039028738.json, 视频生成/图生视频/MiniMax_H3_I2V加速多参考生视频，高效图生视频工具_2111269686322225154.json, 视频生成/图生视频/MiniMax_H3_I2V加速多参考视频生成工作流，图生视频高效创作工具_2109863281748963329.json, 视频生成/图生视频/MiniMax_H3_I2V加速首尾帧工作流，图生视频高效创作工具_2110535989906202626.json, 视频生成/图生视频/MiniMax_H3多图参考生成视频图生视频与视频生视频全能参考方案_2109448439166750721.json, 视频生成/图生视频/MiniMax_H3多图参考生成视频，图生视频与视频生视频全能参考方案_2106558188098248705.json, 视频生成/图生视频/MiniMax_H3开源版首尾帧8步加速工作流，数字人图生视频处理工具_2109441379188436993.json, 视频生成/图生视频/MiniMax参考生视频视频生视频图生视频_2086540228310945793.json, 视频生成/图生视频/Minimax H3单人极速人物替换，角色一致性动作迁移_2110538185297186818.json, 视频生成/图生视频/Minimax_H3单人极速人物替换，角色一致性动作迁移_2110892482811744258.json, 视频生成/图生视频/minimax最强动作武打视频生视频，战斗特效一步到位_2111187364122030082.json, 视频生成/图生视频/无限长视频流工作流，图生视频长视频生成方案_2106530579587096577.json, 视频生成/图生视频/无限长视频流工作流，图生视频长视频生成方案_2106881388426383362.json, 视频生成/图生视频/无限长视频流工作流，图生视频长视频生成方案_2109439827979628546.json, 视频生成/图生视频/无限长视频流生成 多镜头角色表演图生视频_2098817794715504642.json, 视频生成/文生视频/MiniMax H3超长视频流一次直出2分15秒视频135秒，图生视频长视频方案_2107164033324511233.json, 视频生成/文生视频/MiniMax H3超长视频流｜一次直出2分15秒135S成片｜文生图生全支持_2101875396814917633.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json、图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json、图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3超长视频流 一次直出2分15秒135S长视频_2110360650903023617.json、视频生成/图生视频/MiniMax H3首尾帧图生视频 多模式视频生成处理工具_2113357272276619265.json、视频生成/图生视频/MiniMax-H3 Ref2va参考生视频标准版｜高质量_2095566940180930561.json、视频生成/图生视频/MiniMax-H3-多图参考视频生成（Lightx2v加速）_2086208730663841794.json、视频生成/图生视频/MiniMaxH3参考生视频量化加速版｜文本图像音频视频全模态，图生视频更快出活_2100449477902553090.json…）
 
 - **类型**：Text To Image
 - **样本数**：22
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 22 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetNode`
-- `ImageScaleToTotalPixels`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy int`
+- `solarL_SaveImagesToZip`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveFloat` —— 20/22 个有
+- `PrimitiveStringMultiline` —— 18/22 个有
+- `SaveImage` —— 17/22 个有
+- `MiniMaxH3ReferenceToVideo` —— 16/22 个有
+- `孤海注释` —— 15/22 个有
+- `CreateVideo` —— 14/22 个有
+- `SaveVideo` —— 12/22 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/22 个有
+- `EmptyImage` —— 10/22 个有
+- `PreviewImage` —— 10/22 个有
+- `VHS_VideoCombine` —— 10/22 个有
+- `AudioConcat` —— 8/22 个有
+- `GetImageRangeFromBatch` —— 8/22 个有
+- `ImageBatchMulti` —— 8/22 个有
+- `MiniMaxH3AddGuide` —— 8/22 个有
+- `LayerColor: ColorAdapter` —— 7/22 个有
+- `SaveAudio` —— 7/22 个有
+- `MiniMaxH3ImageToVideo` —— 6/22 个有
+- `LoadAudio` —— 5/22 个有
+- `VHS_LoadVideo` —— 5/22 个有
+- `MuyeTextEditOutput` —— 2/22 个有
+- `VHS_VideoInfoLoaded` —— 2/22 个有
+- `BlockSparseAttention` —— 1/22 个有
+- `EasyCache` —— 1/22 个有
+- `LoadVideo` —— 1/22 个有
+- `ManualSigmas` —— 1/22 个有
+- `ModelAttentionBackend` —— 1/22 个有
+- `ModelPreviewOverrideKJ` —— 1/22 个有
+- `SaveAudioAdvanced` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 16 | 16 - 16 | 22 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
-| 采样算法 | euler_ancestral | - | 22 | 100% |
-| 调度器 | simple | - | 22 | 100% |
+| 采样步数 | 4 | 4 - 4 | 22 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 22 | 100% |
+| 采样算法 | er_sde | - | 22 | 100% |
+| 调度器 | beta | - | 22 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
-| 宽度 | 512 | 512 - 512 | 22 | 100% |
-| 高度 | 512 | 512 - 512 | 22 | 100% |
+| 宽度 | 80 | 80 - 80 | 22 | 100% |
+| 高度 | 80 | 80 - 80 | 22 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 28/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 16，观测区间 16 - 16，22 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，22 个样本，一致性 100%
-- 调度器 最常用 simple，22 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，22 个样本，一致性 100%
+- 调度器 最常用 beta，22 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，22 个样本，取值集中（一致性 100%）
+- 高发问题（28/22 个样本）：Steps较低可能导致细节不足

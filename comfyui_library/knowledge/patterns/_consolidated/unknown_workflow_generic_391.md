@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_391
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.653167
-common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
+coverage: 0.762
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json, 图片生成/图生图/图像清晰工具_2064882507623002113.json, 图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json, 图片生成/图生图/生图 拆图分享_2042426276874555393.json, 图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json]
+members: [图片生成/文生图/image two文生图_2060255026014150658.json, 图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json, 图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json, 图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json, 图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json, 图片生成/文生图/全能图像G2-文生图_2048754806386331650.json, 图片生成/文生图/角色资产创建（API）_2051982716761067521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_391
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json、图片生成/图生图/图像清晰工具_2064882507623002113.json、图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json、图片生成/图生图/生图 拆图分享_2042426276874555393.json、图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/image two文生图_2060255026014150658.json、图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json、图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json、图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json、图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageFromBatch+`
-- `ImageTile+`
-- `LoadImage`
-- `PreviewImage`
+全部 7 个 workflow 都包含：
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `CR Text` —— 5/7 个有
+- `PreviewImage` —— 4/7 个有
+- `LoadImage` —— 2/7 个有
+- `RH_RhartImageNProEdit` —— 1/7 个有
 
 ## 典型参数
 

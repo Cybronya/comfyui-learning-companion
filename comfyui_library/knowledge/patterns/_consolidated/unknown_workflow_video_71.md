@@ -3,41 +3,34 @@ name: unknown_workflow_video_71
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.897333
-common_nodes: [Float, HYMotionEncodeText, HYMotionExportFBX, HYMotionGenerate, HYMotionLoadLLM, HYMotionLoadNetwork, HYMotionPreview, HYMotionPreviewAnimation, VHS_VideoCombine]
+coverage: 1
+common_nodes: [JWInteger, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json, 视频生成/文生视频/【文生3D人物动作】混元Motion1.0_2007873904911585282.json, 视频生成/文生视频/混元Motion1.0  腾讯动作生成3D大模型_2011443326301507585.json]
+members: [视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json, 视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json, 视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_71
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json、视频生成/文生视频/【文生3D人物动作】混元Motion1.0_2007873904911585282.json、视频生成/文生视频/混元Motion1.0  腾讯动作生成3D大模型_2011443326301507585.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json、视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json、视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Float`
-- `HYMotionEncodeText`
-- `HYMotionExportFBX`
-- `HYMotionGenerate`
-- `HYMotionLoadLLM`
-- `HYMotionLoadNetwork`
-- `HYMotionPreview`
-- `HYMotionPreviewAnimation`
+- `JWInteger`
+- `LoadImage`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/3 个有
-- `easy saveText` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Preview3D` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 

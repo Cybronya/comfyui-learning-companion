@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_262
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.986125
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage]
+coverage: 0.916667
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1api图像编辑_1960562056271396865.json, 图片生成/图生图/Nano 全能图片V1-职业照_1966116745255751681.json, 图片生成/图生图/Seedream 4.0 -即梦4.0-产品替换_1968348122147631105.json, 图片生成/图生图/全能图片V1- 证件照_1966114022749802497.json, 图片生成/图生图/全能图片V1-产品换色（提供参考）_1967870659596550146.json, 图片生成/图生图/全能图片V1-产品替换_1968356100242329601.json, 图片生成/图生图/全能图片V1-双图编辑_1961102456463802370.json, 图片生成/图生图/全能图片V1-证件照（九宫格-不同发型）_1966120837348847617.json]
+members: [图片生成/文生图/scc 文生图_2027011474685698050.json, "图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json", 图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json, 图片生成/文生图/全能图片 Pro_2032032541141639169.json, 图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json, 图片生成/文生图/全能图片V1 2 & Pro-文生图版强的可怕-text-to-image_1991900059478585346.json, 图片生成/文生图/全能图片V1 2 文生图_1992265412136030210.json, 图片生成/文生图/全能图片V1 Pro双图编辑_1993152726519529474.json, 图片生成/文生图/全能图片V12-香蕉2_1991696350530334722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_262
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/-全能图片V1api图像编辑_1960562056271396865.json、图片生成/图生图/Nano 全能图片V1-职业照_1966116745255751681.json、图片生成/图生图/Seedream 4.0 -即梦4.0-产品替换_1968348122147631105.json、图片生成/图生图/全能图片V1- 证件照_1966114022749802497.json、图片生成/图生图/全能图片V1-产品换色（提供参考）_1967870659596550146.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/scc 文生图_2027011474685698050.json、图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json、图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json、图片生成/文生图/全能图片 Pro_2032032541141639169.json、图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+全部 9 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 7/8 个有
-- `RH_Nano_Banana_Image2Image` —— 7/8 个有
-- `CR Text` —— 4/8 个有
-- `RH_Jimeng4_Image2Image` —— 1/8 个有
-- `SeargePromptText` —— 1/8 个有
+- `CR Text` —— 7/9 个有
+- `LoadImage` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `TextInput_` —— 2/9 个有
 
 ## 典型参数
 

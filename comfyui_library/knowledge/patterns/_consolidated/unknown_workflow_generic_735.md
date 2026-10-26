@@ -3,37 +3,36 @@ name: unknown_workflow_generic_735
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.84525
-common_nodes: [LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, SaveVideo, Text Multiline]
+coverage: 0.6845
+common_nodes: [LoadImage, SDPoseOODLoader, SDPoseOODProcessor, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能视频S25（老程)_2019700616704036866.json, 视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json, 视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json, 视频生成/图生视频/（昆昆）_2046917681038761985.json]
+members: [图片生成/图生图/万能姿态图 SDPose_1988986163945934849.json, 图片生成/图生图/万能骨骼图 SDPose_1989359431509004289.json, 图片生成/图生图/动作提取+姿势提取+万能骨骼图 SDPose+全节点注释_2054183862510604289.json, 图片生成/图生图/生成骨骼图_2054638352711856130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_735
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能视频S25（老程)_2019700616704036866.json、视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json、视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json、视频生成/图生视频/（昆昆）_2046917681038761985.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/万能姿态图 SDPose_1988986163945934849.json、图片生成/图生图/万能骨骼图 SDPose_1989359431509004289.json、图片生成/图生图/动作提取+姿势提取+万能骨骼图 SDPose+全节点注释_2054183862510604289.json、图片生成/图生图/生成骨骼图_2054638352711856130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveVideo`
-- `Text Multiline`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Veo3_Image2Video` —— 2/4 个有
-- `RH_Hailuo_Image2Video` —— 1/4 个有
-- `RH_Sora2_I2V_PRO` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `GroundingDinoModelLoader_SDPose` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `YOLOModelLoader` —— 3/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
 
 ## 典型参数
 

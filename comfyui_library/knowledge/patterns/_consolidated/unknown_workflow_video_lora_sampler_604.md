@@ -1,77 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_604
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.659
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Primitive string multiline [Crystools], RH_GetAudioDuration, SaveAudio, SeargeIntegerConstant, SetNode, SimpleCondition+, SimpleMath+, ToInt, VHS_LoadVideoFFmpeg, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
+frequency: 4
+level: strong
+coverage: 0.95125
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json, 视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json, 视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json]
+members: [视频生成/图生视频/角色Lora训练素材生成_1963220175883571201.json, 视频生成/图生视频/（自用）Wan2.2高质量图生视频工作流81帧50秒_1952579457632669698.json, 视频生成/图生视频/（（自用）官方版）Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1952589946924273666.json, 视频生成/文生视频/wan 2.2-图生视频-360°环绕一圈_1987014980908290050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_604
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json、视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json、视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/角色Lora训练素材生成_1963220175883571201.json、视频生成/图生视频/（自用）Wan2.2高质量图生视频工作流81帧50秒_1952579457632669698.json、视频生成/图生视频/（（自用）官方版）Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1952589946924273666.json、视频生成/文生视频/wan 2.2-图生视频-360°环绕一圈_1987014980908290050.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `Primitive string multiline [Crystools]`
-- `RH_GetAudioDuration`
-- `SaveAudio`
-- `SeargeIntegerConstant`
-- `SetNode`
-- `SimpleCondition+`
-- `SimpleMath+`
-- `ToInt`
-- `VHS_LoadVideoFFmpeg`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `FantasyPortraitFaceDetector` —— 1/3 个有
-- `FantasyPortraitModelLoader` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `WanVideoAddFantasyPortrait` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
-- `WanVideoUni3C_embeds` —— 1/3 个有
+- `CR Text` —— 2/4 个有
+- `ImpactInt` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `LoadLatent` —— 2/4 个有
+- `Seed Generator` —— 2/4 个有
+- `ImageResize+` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `SaveLatent` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 4 | 50% |
+| Prompt 约束强度(CFG) | 10 | 6 - 12 | 4 | 73% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 75% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -79,4 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，4 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 6 - 12，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 75%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

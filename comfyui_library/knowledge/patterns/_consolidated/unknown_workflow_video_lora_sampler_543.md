@@ -3,56 +3,61 @@ name: unknown_workflow_video_lora_sampler_543
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.695
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.93425
+common_nodes: [CLIPVisionLoader, CreateVideo, GetVideoComponents, ImageResizeKJv2, LoadImage, PrimitiveFloat, SaveVideo, VHS_GetImageCount, VHS_LoadVideo, Video Slice, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/FastH3 VSA文生视频优化版V1_2096244135350067201.json, 视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json, 视频生成/文生视频/H3基础文生视频工作流_2101289589221715969.json, 视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json]
+members: [视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json, 视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json, 视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json, 视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_543
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/FastH3 VSA文生视频优化版V1_2096244135350067201.json、视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json、视频生成/文生视频/H3基础文生视频工作流_2101289589221715969.json、视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json、视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json、视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json、视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `CLIPVisionLoader`
+- `CreateVideo`
+- `GetVideoComponents`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_VideoCombine`
+- `SaveVideo`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
+- `Video Slice`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageResizeToClosest`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `UniBlockSwap` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/4 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `BBOXToBoundingBoxKJ` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `DrawViTPose` —— 3/4 个有
+- `OnnxDetectionModelLoader` —— 3/4 个有
+- `PoseAndFaceDetection` —— 3/4 个有
+- `SDPoseDrawKeypoints` —— 3/4 个有
+- `SDPoseKeypointExtractor` —— 3/4 个有
+- `WanVideoAnimateEmbeds` —— 3/4 个有
+- `WanVideoContextOptions` —— 3/4 个有
+- `WanVideoAddSCAILPoseEmbeds` —— 1/4 个有
+- `WanVideoAddSCAILReferenceEmbeds` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 1/4 个有
 
 ## 典型参数
 

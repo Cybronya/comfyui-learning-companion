@@ -1,77 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_586
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.648667
-common_nodes: [DWPreprocessor, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddControlEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.89325
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json, 视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json]
+members: [视频生成/图生视频/video_humo_native_unlimited_workflow_1971476193147076609.json, 视频生成/图生视频/wan s2v 无时间限制音频转视频模型_1977204521292189697.json, 视频生成/图生视频/wans2v_3xfaster_workflow_1960961884411367425.json, 视频生成/文生视频/万象2.2 S2V 声音转视频_1961417789682728962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_586
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json、视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/video_humo_native_unlimited_workflow_1971476193147076609.json、视频生成/图生视频/wan s2v 无时间限制音频转视频模型_1977204521292189697.json、视频生成/图生视频/wans2v_3xfaster_workflow_1960961884411367425.json、视频生成/文生视频/万象2.2 S2V 声音转视频_1961417789682728962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DWPreprocessor`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSampler`
 - `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddControlEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `CLIPTextEncode` —— 2/3 个有
-- `CR Prompt Text` —— 2/3 个有
-- `DepthAnything_V2` —— 2/3 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `PDIMAGE_LongerSize` —— 2/3 个有
-- `WanVideoTextEmbedBridge` —— 2/3 个有
-- `CreateShapeImageOnPath` —— 1/3 个有
-- `GetMaskSizeAndCount` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `SplineEditor` —— 1/3 个有
-- `Zoe-DepthMapPreprocessor` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `WanSoundImageToVideo` —— 3/4 个有
+- `ContextWindowsManual` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `VHS_LoadAudioUpload` —— 1/4 个有
+- `WanHuMoImageToVideo` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 6 - 8 | 4 | 88% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | uni_pc | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

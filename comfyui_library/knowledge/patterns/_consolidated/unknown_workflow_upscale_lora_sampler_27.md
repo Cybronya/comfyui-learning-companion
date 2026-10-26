@@ -2,72 +2,63 @@
 name: unknown_workflow_upscale_lora_sampler_27
 type: Unknown Workflow
 frequency: 7
-level: weak
-coverage: 0.849429
-common_nodes: [CLIPTextEncode, DualCLIPLoader, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+level: strong
+coverage: 0.892286
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_2K高清放大工作流-可在线和本地使用_1951946483614560258.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_4K高清放大工作流-可在线和本地使用_1951977232698953729.json, 图片生成/文生图/Flux Krea-文生图+ttp高清放大_1967396109779865602.json, 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json, 图片生成/文生图/混元HUNYUAN2.1文生图+TTP高清修复_1977247385053208578.json]
+members: [图片生成/图生图/Qwen Image Edit 2511动漫转真实_2061721856541020161.json, 图片生成/图生图/Qwen Image Edit 2511单图编辑_2061688951336947713.json, 图片生成/图生图/Qwen Image Edit 2511双图编辑_2061697796184567810.json, 图片生成/图生图/Qwen Image Edit 2511多图编辑_2061708762708275202.json, 图片生成/图生图/Qwen-Edit 2511生活照一键改职业形象照_2061036720539398146.json, 图片生成/图生图/Qwen-Edit 2511生活照职业形象照企业形象照_2057466750949740546.json, 图片生成/图生图/Qwen-Edit 2511生活照职业形象照企业形象照_2062388891402989569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_27
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_2K高清放大工作流-可在线和本地使用_1951946483614560258.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_4K高清放大工作流-可在线和本地使用_1951977232698953729.json、图片生成/文生图/Flux Krea-文生图+ttp高清放大_1967396109779865602.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen Image Edit 2511动漫转真实_2061721856541020161.json、图片生成/图生图/Qwen Image Edit 2511单图编辑_2061688951336947713.json、图片生成/图生图/Qwen Image Edit 2511双图编辑_2061697796184567810.json、图片生成/图生图/Qwen Image Edit 2511多图编辑_2061708762708275202.json、图片生成/图生图/Qwen-Edit 2511生活照一键改职业形象照_2061036720539398146.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Image Comparer (rgthree)`
-- `ImageUpscaleWithModel`
+- `CFGNorm`
+- `CLIPLoader`
+- `ConditioningZeroOut`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/7 个有
-- `EmptySD3LatentImage` —— 5/7 个有
-- `ImageResizeKJ` —— 5/7 个有
-- `ImageSmartSharpen+` —— 5/7 个有
-- `Fast Groups Muter (rgthree)` —— 4/7 个有
-- `Anything Everywhere3` —— 3/7 个有
-- `EmptyHunyuanImageLatent` —— 2/7 个有
-- `FluxResolutionNode` —— 2/7 个有
-- `HunyuanRefinerLatent` —— 2/7 个有
-- `ImageCASharpening+` —— 2/7 个有
-- `ImageScaleBy` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `RH_Translator` —— 2/7 个有
-- `VAEEncodeTiled` —— 2/7 个有
+- `Anything Everywhere3` —— 4/7 个有
+- `CR Prompt Text` —— 4/7 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 4/7 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `RHHiddenNodes` —— 3/7 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 3/7 个有
+- `easy positive` —— 3/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 2 - 30 | 7 | 8% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 7 | 67% |
+| 采样步数 | 4 | 4 - 8 | 7 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
 | 采样算法 | euler | - | 7 | 100% |
-| 调度器 | sgm_uniform | - | 7 | 43% |
-| 重绘幅度 | 0.3 | 0.3 - 1 | 7 | 37% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -77,9 +68,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 2 - 30，7 个样本，取值分散，一致性仅 8%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，7 个样本
+- 采样步数 中位数 4，观测区间 4 - 8，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，7 个样本，一致性 43%
-- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，7 个样本，取值分散，一致性仅 37%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 高发问题（7/7 个样本）：Steps较低可能导致细节不足

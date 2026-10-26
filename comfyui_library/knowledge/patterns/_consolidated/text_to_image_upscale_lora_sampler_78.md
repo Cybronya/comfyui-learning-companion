@@ -1,90 +1,92 @@
 ---
 name: text_to_image_upscale_lora_sampler_78
 type: Text To Image
-frequency: 3
+frequency: 4
 level: weak
-coverage: 0.606333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxKVCache, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageSharpenKJ, ImageUpscaleWithModel, JjkText, KSampler, LatentColorMatchSimple, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewAny, SaveImageAndMetadata_, SetNode, Text Concatenate, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8785
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2图推大合集 图生图洗图多方案集合_2105412413075054593.json, 图片生成/图生图/Krea2图生图推演大合集｜李泽钧精选多场景一网打尽_2105109475588927490.json, 图片生成/图生图/李泽钧-Krea2图推大合集_2090641332904747010.json]
+members: [图片生成/文生图/Z-Image一键文生图工作流｜8K直出人像写真特效生成_2097486456024559617.json, 图片生成/文生图/Z-Image亿级像素文生图v3｜细节纤毫毕现超高清_2095586298563219457.json, 图片生成/文生图/Z-Image文生图8K_2100484708844007425.json, 图片生成/文生图/超级简单一键文生图｜Z-Image在线8K直出小白也能跑_2112936127370981378.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_78
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Krea2图推大合集 图生图洗图多方案集合_2105412413075054593.json、图片生成/图生图/Krea2图生图推演大合集｜李泽钧精选多场景一网打尽_2105109475588927490.json、图片生成/图生图/李泽钧-Krea2图推大合集_2090641332904747010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-Image一键文生图工作流｜8K直出人像写真特效生成_2097486456024559617.json、图片生成/文生图/Z-Image亿级像素文生图v3｜细节纤毫毕现超高清_2095586298563219457.json、图片生成/文生图/Z-Image文生图8K_2100484708844007425.json、图片生成/文生图/超级简单一键文生图｜Z-Image在线8K直出小白也能跑_2112936127370981378.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKVCache`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `ImageSharpenKJ`
-- `ImageUpscaleWithModel`
-- `JjkText`
+- `GetImageSize+`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `LatentColorMatchSimple`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `SaveImageAndMetadata_`
-- `SetNode`
-- `Text Concatenate`
+- `PreviewImage`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `solarL_SaveImagesToZip` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `SaveImage` —— 1/3 个有
+- `JjkText` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `solarL_SaveImagesToZip` —— 3/4 个有
+- `孤海注释` —— 3/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `EmptySD3LatentImage` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `LatentPixelScale` —— 1/4 个有
+- `LayerUtility: ImageReel` —— 1/4 个有
+- `LayerUtility: ImageReelComposit` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `UpscaleModelLoader` —— 1/4 个有
+- `VAEDecodeTiled` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1432 | 3 | 0% |
-| 高度 | 80 | 80 - 1536 | 3 | 0% |
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | beta | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 1080 | 4 | 0% |
+| 高度 | 80 | 80 - 1920 | 4 | 0% |
+| 采样步数 | 4 | 4 - 9 | 4 | 59% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 4 | 58% |
+| 采样算法 | er_sde | - | 4 | 75% |
+| 调度器 | beta | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 26/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1432，3 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1536，3 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 beta，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（26/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 1080，4 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1920，4 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 9，4 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，4 个样本
+- 采样算法 最常用 er_sde，4 个样本，一致性 75%
+- 调度器 最常用 beta，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

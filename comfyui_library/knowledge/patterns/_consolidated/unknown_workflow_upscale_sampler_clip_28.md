@@ -3,79 +3,83 @@ name: unknown_workflow_upscale_sampler_clip_28
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7988
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.7172
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/万物换背景（可手动控制位置） Klein Flux2 高清放大_2017792741320695809.json, 图片生成/图生图/万物融图，透明融图 Klein Flux2 高清放大。可手动控制位置_2017797048917041153.json, 图片生成/图生图/融图换背景（电商）-FLUX-Klein版_2015613997852135426.json, 图片生成/图生图/超强图片放大-去除ai感拒绝塑料感_2036681605707730945.json, 图片生成/文生图/最新FK2真实感图像高清重绘放大+seedvr2_2035635722681585665.json]
+members: [图片生成/图生图/4Kttpflux 放大工作流 api 版本_1984539387545468930.json, 图片生成/图生图/F1一键精修+放大，金属，户外带通用_1993247312828891137.json, 图片生成/图生图/FLUX-测图+TTP放大_1959876674903027714.json, 图片生成/图生图/FLUX高清修复去油腻工作流_1942936253006569474.json, 图片生成/图生图/Flux 4k高清修复_1932001102521106433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_28
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/万物换背景（可手动控制位置） Klein Flux2 高清放大_2017792741320695809.json、图片生成/图生图/万物融图，透明融图 Klein Flux2 高清放大。可手动控制位置_2017797048917041153.json、图片生成/图生图/融图换背景（电商）-FLUX-Klein版_2015613997852135426.json、图片生成/图生图/超强图片放大-去除ai感拒绝塑料感_2036681605707730945.json、图片生成/文生图/最新FK2真实感图像高清重绘放大+seedvr2_2035635722681585665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/4Kttpflux 放大工作流 api 版本_1984539387545468930.json、图片生成/图生图/F1一键精修+放大，金属，户外带通用_1993247312828891137.json、图片生成/图生图/FLUX-测图+TTP放大_1959876674903027714.json、图片生成/图生图/FLUX高清修复去油腻工作流_1942936253006569474.json、图片生成/图生图/Flux 4k高清修复_1932001102521106433.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `Image Comparer (rgthree)`
 - `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSamplerSelect`
 - `LoadImage`
 - `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `VAEDecode`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 4/5 个有
-- `ImageResize+` —— 4/5 个有
-- `ImageScaleBy` —— 4/5 个有
-- `TTP_Image_Assy` —— 4/5 个有
-- `TTP_Image_Tile_Batch` —— 4/5 个有
-- `TTP_Tile_image_size` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `FastCanvas` —— 3/5 个有
-- `FastCanvasTool` —— 3/5 个有
-- `LayerMask: BiRefNetUltraV2` —— 3/5 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `ColorMatch` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `KOOK_ImageCompression` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `Note _O` —— 2/5 个有
-- `Seed (rgthree)` —— 2/5 个有
-- `ImpactInt` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
+- `GetNode` —— 4/5 个有
+- `LoraLoader` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `easy imageBatchToImageList` —— 4/5 个有
+- `VAEDecode` —— 3/5 个有
+- `Florence2Run` —— 2/5 个有
+- `ImageListToImageBatch` —— 2/5 个有
+- `Seed Everywhere` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `easy imageListToImageBatch` —— 2/5 个有
+- `DisableNoise` —— 1/5 个有
+- `DownloadAndLoadFlorence2Model` —— 1/5 个有
+- `Florence2ModelLoader` —— 1/5 个有
+- `ImageListToBatch+` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `ImpactImageBatchToImageList` —— 1/5 个有
+- `InjectLatentNoise+` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `KepStringLiteral` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: JoyCaption2` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `SplitSigmasDenoise` —— 1/5 个有
+- `TeaCache` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.9 | 0.5 - 1 | 4 | 75% |
+| LoRA 文本强度 | 0.9 | 0.5 - 1 | 4 | 75% |
 
 ## 常见问题
 
@@ -83,4 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.9，观测区间 0.5 - 1，4 个样本
+- LoRA 文本强度 中位数 0.9，观测区间 0.5 - 1，4 个样本

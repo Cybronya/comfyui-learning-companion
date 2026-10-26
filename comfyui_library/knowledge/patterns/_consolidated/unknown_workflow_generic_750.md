@@ -3,34 +3,33 @@ name: unknown_workflow_generic_750
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.75175
-common_nodes: [LoadImage, PrimitiveStringMultiline, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageNNb21ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json, 视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json, 视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json, 视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json]
+members: [图片生成/图生图/全能图片2.1图生图——低价渠道版_2044652324945137666.json, 图片生成/图生图/全能图片V2.1-低价渠道版-图生图_2104818899987554305.json, 图片生成/图生图/全能图片V2.1-低价渠道版-图生图_2108829197140578306.json, 数字人/数字人/全能图片2.1文生图图生图官方示例工作流_2108805139749498881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_750
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json、视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json、视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json、视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片2.1图生图——低价渠道版_2044652324945137666.json、图片生成/图生图/全能图片V2.1-低价渠道版-图生图_2104818899987554305.json、图片生成/图生图/全能图片V2.1-低价渠道版-图生图_2108829197140578306.json、数字人/数字人/全能图片2.1文生图图生图官方示例工作流_2108805139749498881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
+- `RH_RhartImageNNb21ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 3/4 个有
-- `RH_VideoMergerUI` —— 2/4 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/4 个有
+- `RH_RhartImageNNb21TextToImage` —— 1/4 个有
+- `Textbox` —— 1/4 个有
 
 ## 典型参数
 

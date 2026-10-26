@@ -3,77 +3,61 @@ name: text_to_image_lora_sampler_clip_241
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.79425
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.853125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, ImageScaleBy, JjkText, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json, 视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json, 视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json, 视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json, 视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json, 视频生成/图生视频/战斗场面动态拉满｜Minimax H3最佳战斗版二代_2096534069990486018.json, 视频生成/图生视频/改版1｜数字人视频生成利器，老牌工作流焕新升级再战_2107327256866676738.json, 视频生成/图生视频/改版1｜数字人视频生成利器，老牌工作流焕新升级再战_2107440188136972289.json]
+members: [图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强图生图处理工具_2102135996421853185.json, 图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强，告别塑料感图生图方案_2103562807370412034.json, 图片生成/图生图/Flux2 Klein控油图生图精修｜高清放大增强细节_2094892914123034625.json, 图片生成/图生图/Flux2 Klein洗图去AI感 高清修复细节增强告别塑料感_2099567091627155458.json, 图片生成/图生图/控油高清放大增强细节｜Flux2 Klein图生图_2092881657077526529.json, 图片生成/图生图/高清放大增强细节｜Flux2 Klein控油图生图精修_2092692856954773506.json, 图片生成/图生图/高清放大增强细节｜Flux2_Klein控油图生图精修_2094592387850002434.json, 图片生成/图生图/高清放大增强细节｜Flux2_Klein控油图生图精修_2094724625912647681.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_241
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json、视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json、视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json、视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json、视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强图生图处理工具_2102135996421853185.json、图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强，告别塑料感图生图方案_2103562807370412034.json、图片生成/图生图/Flux2 Klein控油图生图精修｜高清放大增强细节_2094892914123034625.json、图片生成/图生图/Flux2 Klein洗图去AI感 高清修复细节增强告别塑料感_2099567091627155458.json、图片生成/图生图/控油高清放大增强细节｜Flux2 Klein图生图_2092881657077526529.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `ReferenceLatent`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3SigmaShift` —— 7/8 个有
-- `DisableNoise` —— 6/8 个有
-- `ExtendIntermediateSigmas` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `ModelAttentionBackend` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `SplitSigmasDenoise` —— 6/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/8 个有
-- `easy cleanGpuUsed` —— 5/8 个有
-- `INTConstant` —— 4/8 个有
-- `ResizeShortestToNode` —— 4/8 个有
-- `SaveImage` —— 4/8 个有
-- `SolAttnMiniMax` —— 4/8 个有
-- `LoadAudio` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `EmptyImage` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `MiniMaxH3SLAPrecisionV2T8Advanced` —— 2/8 个有
-- `ModelPreviewOverrideKJ` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `Fast Groups Muter (rgthree)` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `Text Concatenate` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
+- `孤海注释` —— 6/8 个有
+- `CR Prompt Text` —— 5/8 个有
+- `GetImageSize` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `RH_Captioner` —— 5/8 个有
+- `RunningHub Deepcleaner` —— 5/8 个有
+- `Float` —— 3/8 个有
+- `GetNode` —— 3/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `ImageResize+` —— 3/8 个有
+- `RHHiddenNodes` —— 3/8 个有
+- `SetNode` —— 3/8 个有
 
 ## 典型参数
 
@@ -91,7 +75,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -102,4 +86,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（17/8 个样本）：Steps较低可能导致细节不足

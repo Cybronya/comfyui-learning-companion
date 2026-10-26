@@ -1,52 +1,44 @@
 ---
 name: unknown_workflow_clip_unet_vae_20
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.8
+common_nodes: [Anything Everywhere3, CLIPTextEncode, ConstrainImage|pysssss, DualCLIPLoader, ImageConcanate, JjkText, LoadImage, SaveImage, UNETLoader, VAEEncode, VAELoader, workflow>0]
 problems: []
 missing: []
-members: [图片生成/文生图/百度Ernie极速5步文生图_2045655487722561537.json, 图片生成/文生图/百度Ernie极速5步文生图_2045870550827933697.json, 图片生成/文生图/空白工作流_2033896316320882689.json]
+members: [图片生成/图生图/Kontext 首饰项链万物迁移（小物件，保留原尺寸大小）_1956570197203320834.json, 图片生成/图生图/模特项链试戴展示 Kontext_1947193681922170882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae_20
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/百度Ernie极速5步文生图_2045655487722561537.json、图片生成/文生图/百度Ernie极速5步文生图_2045870550827933697.json、图片生成/文生图/空白工作流_2033896316320882689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext 首饰项链万物迁移（小物件，保留原尺寸大小）_1956570197203320834.json、图片生成/图生图/模特项链试戴展示 Kontext_1947193681922170882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `ConstrainImage|pysssss`
+- `DualCLIPLoader`
+- `ImageConcanate`
+- `JjkText`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `KSamplerAdvanced` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `VRAMReserver` —— 2/3 个有
-- `KSampler` —— 1/3 个有
+- `workflow>0`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 5 | 1 - 5 | 3 | 49% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | er_sde | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -54,8 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 5，3 个样本，取值分散，一致性仅 49%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 er_sde，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

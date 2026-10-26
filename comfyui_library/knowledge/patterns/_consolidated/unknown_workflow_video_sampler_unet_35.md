@@ -1,59 +1,57 @@
 ---
 name: unknown_workflow_video_sampler_unet_35
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9543
-common_nodes: [BasicScheduler, DualCLIPLoader, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirector, YusuLTXDirectorGuide]
+coverage: 0.923
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json, 视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579138.json, 视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077473064631230466.json, 视频生成/图生视频/LTX2.3-导演台2.0，全新升级_2079871871297875970.json, 视频生成/图生视频/LTX2.3-导演台2.0，全新升级，多功能支持！_2070426873351467010.json, 视频生成/文生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077330675799252994.json, 视频生成/文生视频/LTX2.3-导演台2.0视频合成图生视频编辑全能视频生成_2073674326481657857.json, 视频生成/文生视频/LTX2.3-（导演台）实现各种复杂运镜方式_2072576891915165697.json]
+members: [视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json, 视频生成/图生视频/漫剧图生视频_2085003263367278593.json, 视频生成/图生视频/空中起舞_2097526794093158402.json, 视频生成/图生视频/空白工作流MinimaxH3首尾帧创意视频T1_2086623709909053442.json, 视频生成/图生视频/美好的夏天_2097286565499330561.json, 视频生成/图生视频/首尾帧创意电商广告_2087187752570933249.json, 视频生成/图生视频/首尾帧欢乐小狗_2087363013287432194.json, 视频生成/图生视频/首尾帧生成广告视频_2087173880573157377.json, 视频生成/图生视频/首尾帧视频生成_2086728278747996161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json、视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579138.json、视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077473064631230466.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json、视频生成/图生视频/漫剧图生视频_2085003263367278593.json、视频生成/图生视频/空中起舞_2097526794093158402.json、视频生成/图生视频/空白工作流MinimaxH3首尾帧创意视频T1_2086623709909053442.json、视频生成/图生视频/美好的夏天_2097286565499330561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `DualCLIPLoader`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `SamplerCustom`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `YusuLTXDirector`
-- `YusuLTXDirectorGuide`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 9/10 个有
-- `ModelPreviewOverrideKJ` —— 9/10 个有
-- `LTX2SamplingPreviewOverride` —— 8/10 个有
-- `LTXVCropGuides` —— 5/10 个有
-- `LiconMSR` —— 5/10 个有
-- `LoadImage` —— 5/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `YusuLTXDirectorCropGuides` —— 5/10 个有
-- `Label (rgthree)` —— 4/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `PrimitiveFloat` —— 3/10 个有
-- `easy int` —— 3/10 个有
-- `TTResolutionSelector` —— 2/10 个有
+- `Text` —— 8/9 个有
+- `ImageResizeKJv2` —— 7/9 个有
+- `RHHiddenNodes` —— 5/9 个有
+- `RH_Captioner` —— 3/9 个有
+- `TextConcatenate_UTK` —— 3/9 个有
+- `easy showAnything` —— 3/9 个有
+- `MiniMaxH3BlockCacheT8` —— 2/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/9 个有
+- `Display Any (rgthree)` —— 1/9 个有
+- `PathchSageAttentionKJ` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
 
 ## 典型参数
 

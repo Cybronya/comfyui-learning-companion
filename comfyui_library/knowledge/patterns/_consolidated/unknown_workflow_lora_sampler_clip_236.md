@@ -1,76 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_236
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8795
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Image Comparer (rgthree), ImpactInt, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, Qwen3_VQA, SaveImage, Seed (rgthree), SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.923
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, PrimitiveStringMultiline, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen_image 图生图_1993271845350735874.json, 图片生成/文生图/Qwen_image 文生图_1993266820811603970.json]
+members: [视频生成/图生视频/LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新的视频 适合爆款视频清洗_2070081600632741890.json, 视频生成/图生视频/LTX-2.3_MSR RV2V参考生视频_2073325475514114050.json, 视频生成/图生视频/LTX-2.3_MSR V2多参数字人_2078871582214279170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_236
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen_image 图生图_1993271845350735874.json、图片生成/文生图/Qwen_image 文生图_1993266820811603970.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新的视频 适合爆款视频清洗_2070081600632741890.json、视频生成/图生视频/LTX-2.3_MSR RV2V参考生视频_2073325475514114050.json、视频生成/图生视频/LTX-2.3_MSR V2多参数字人_2078871582214279170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `UNETLoader`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `PrimitiveStringMultiline`
+- `PromptRelayEncode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
 - `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CR Text Replace` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `GetImageSize` —— 2/3 个有
+- `LTXVImgToVideoConditionOnly` —— 2/3 个有
+- `LTXVPreprocess` —— 2/3 个有
+- `ResizeImagesByLongerEdge` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `AudioInfo` —— 1/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,68 +2,74 @@
 name: unknown_workflow_sampler_clip_vae_42
 type: Unknown Workflow
 frequency: 6
-level: weak
-coverage: 0.9535
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.928333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json, 图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/墨宝映画人物设定_2015364874955657217.json, 图片生成/文生图/完美中文海报生成_2002018843826503681.json, 图片生成/文生图/战双帕米什_赛琳娜 动漫特化人物固定角色-ZImage_2042282589184073730.json]
+members: [图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json, 图片生成/文生图/Flux.1 Krea文生图_1951132199200432130.json, 图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json, 图片生成/文生图/Flux文生图工作流原版FP16_1965805471892443137.json, 图片生成/文生图/Flux稳定生成文字_1819769505672531969.json, 图片生成/文生图/Flux稳定生成文字_1824318987025952770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json、图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json、图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json、图片生成/文生图/墨宝映画人物设定_2015364874955657217.json、图片生成/文生图/完美中文海报生成_2002018843826503681.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json、图片生成/文生图/Flux.1 Krea文生图_1951132199200432130.json、图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json、图片生成/文生图/Flux文生图工作流原版FP16_1965805471892443137.json、图片生成/文生图/Flux稳定生成文字_1819769505672531969.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `DualCLIPLoader` —— 5/6 个有
 - `UNETLoader` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `ConditioningZeroOut` —— 1/6 个有
-- `DoubaoSizePreset` —— 1/6 个有
-- `LoadImage` —— 1/6 个有
-- `NunchakuQwenImageDiTLoader` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `VAELoader` —— 5/6 个有
+- `PreviewImage` —— 3/6 个有
+- `CFGZeroStar` —— 2/6 个有
+- `CLIPTextEncodeFlux` —— 2/6 个有
+- `CR SDXL Aspect Ratio` —— 2/6 个有
+- `KSamplerAdvanced` —— 2/6 个有
+- `Lora Loader Stack (rgthree)` —— 2/6 个有
+- `StringConstantMultiline` —— 2/6 个有
+- `CheckpointLoaderSimple` —— 1/6 个有
+- `FluxGuidance` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 8 - 50 | 6 | 2% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 6 | 23% |
-| 采样算法 | euler | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 1024 - 1080 | 6 | 97% |
+| 高度 | 1280 | 1024 - 1920 | 6 | 71% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 31 | - | 2 | 100% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | normal | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 8 - 50，6 个样本，取值分散，一致性仅 2%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，6 个样本，取值分散，一致性仅 23%
-- 采样算法 最常用 euler，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1080，6 个样本，取值集中（一致性 97%）
+- 高度 中位数 1280，观测区间 1024 - 1920，6 个样本
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 31，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 normal，2 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 31，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

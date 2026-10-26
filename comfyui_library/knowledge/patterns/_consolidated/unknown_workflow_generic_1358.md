@@ -3,36 +3,51 @@ name: unknown_workflow_generic_1358
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6845
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4, Comfly_api_set, ImageConcanate, LoadImage, SaveImage]
+coverage: 0.6625
+common_nodes: [CustomAddLabel, Float, GuHaiAutoImageSplit, ImageLoader, ImageScaleToTotalPixels, JjkText, MultiTextConcatenate, PreviewImage, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20MultimodalVideo, RTXVideoSuperResolution, SaveImage, SaveVideo, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json, 图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json]
+members: [图片生成/图生图/G image2.0 一键生成专业影视分镜和TVC广告片_2058437554432729090.json, 视频生成/图生视频/G2.0 一键生成专业影视分镜及关键帧TVC广告片 V1.0_2058411561324208130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1358
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json、图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G image2.0 一键生成专业影视分镜和TVC广告片_2058437554432729090.json、视频生成/图生视频/G2.0 一键生成专业影视分镜及关键帧TVC广告片 V1.0_2058411561324208130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_Doubao_Seedream_4`
-- `Comfly_api_set`
-- `ImageConcanate`
-- `LoadImage`
+- `CustomAddLabel`
+- `Float`
+- `GuHaiAutoImageSplit`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `JjkText`
+- `MultiTextConcatenate`
+- `PreviewImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RTXVideoSuperResolution`
 - `SaveImage`
+- `SaveVideo`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

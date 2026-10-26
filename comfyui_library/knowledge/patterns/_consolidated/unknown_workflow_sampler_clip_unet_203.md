@@ -1,70 +1,55 @@
 ---
 name: unknown_workflow_sampler_clip_unet_203
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.930833
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.826
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json, 图片生成/图生图/13.老照片修复_2051995992244932609.json, 图片生成/图生图/Flux.2 [Klein]图像扩图+4K放大_2012429239328444417.json, 图片生成/图生图/Flux2 Klein9B 图像编辑工作流 浮云2.2_2016809192056688641.json, 图片生成/图生图/模型渲染Flux2_1.0_2088092960683548674.json, 图片生成/图生图/模型渲染Flux2_1.1_2088837920449974273.json]
+members: [图片生成/文生图/Flux2文生图工作流--直出2K_1926661482686353410.json, 图片生成/文生图/Flux2韩国小姐姐8步加速文生图（Lora版）_2006072352236376065.json, 图片生成/文生图/flux2-dev-fp8-mixed 基础文生图_2006245362121580545.json, 图片生成/文生图/【ComfyUI】三图精准编辑工作流｜结构+材质+物件分离替换+全注释_2061365487593943042.json, 图片生成/文生图/动作编辑器应用系列之一__FLUX-2-klein-9b_文生图_2022474573257641985.json, 图片生成/文生图/反差人设-剧场后台花絮_1999861137980223490.json, "视频生成/文生视频/谁与争锋 Flux2 Z-image,  多图编辑 挑战 Qwen Edit_1994227326332370945.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_203
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json、图片生成/图生图/13.老照片修复_2051995992244932609.json、图片生成/图生图/Flux.2 [Klein]图像扩图+4K放大_2012429239328444417.json、图片生成/图生图/Flux2 Klein9B 图像编辑工作流 浮云2.2_2016809192056688641.json、图片生成/图生图/模型渲染Flux2_1.0_2088092960683548674.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux2文生图工作流--直出2K_1926661482686353410.json、图片生成/文生图/Flux2韩国小姐姐8步加速文生图（Lora版）_2006072352236376065.json、图片生成/文生图/flux2-dev-fp8-mixed 基础文生图_2006245362121580545.json、图片生成/文生图/【ComfyUI】三图精准编辑工作流｜结构+材质+物件分离替换+全注释_2061365487593943042.json、图片生成/文生图/动作编辑器应用系列之一__FLUX-2-klein-9b_文生图_2022474573257641985.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 5/6 个有
-- `SeedVR2LoadDiTModel` —— 5/6 个有
-- `SeedVR2LoadVAEModel` —— 5/6 个有
-- `SeedVR2VideoUpscaler` —— 5/6 个有
-- `ImageScaleToTotalPixels` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `ImageScaleBy` —— 3/6 个有
-- `FeatherMask` —— 2/6 个有
-- `ImageStitch` —— 2/6 个有
-- `ImageUpscaleWithModel` —— 2/6 个有
-- `InpaintModelConditioning` —— 2/6 个有
-- `MaskPreview` —— 2/6 个有
-- `ResizeImagesByLongerEdge` —— 2/6 个有
-- `UpscaleModelLoader` —— 2/6 个有
-- `ColorMatch` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `ImageAddNoise` —— 1/6 个有
-- `ImageCASharpening+` —— 1/6 个有
-- `ImageColorMatch+` —— 1/6 个有
-- `ImagePadForOutpaint` —— 1/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
-- `RTXVideoSuperResolution` —— 1/6 个有
+- `ReferenceLatent` —— 6/7 个有
+- `LoadImage` —— 4/7 个有
+- `VAEEncode` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `ImageScaleToTotalPixels` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `ModelPatchTorchSettings` —— 2/7 个有
+- `PathchSageAttentionKJ` —— 2/7 个有
+- `INTConstant` —— 1/7 个有
+- `ImageConcanate` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
 
 ## 典型参数
 

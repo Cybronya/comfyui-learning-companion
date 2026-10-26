@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_52
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.965
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.813111
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, GetVideoComponents, ImageFromBatch, JWInteger, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, RHLLMChatNode, SamplerCustom, SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json, 图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json, 图片生成/图生图/Klein 真实细节_2051257646812020737.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096041251173912578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096156283039735810.json, 图片生成/图生图/万物转动漫极速_2026648982881046530.json]
+members: [视频生成/图生视频/Bernini视频换人+视频换装_2063038125223538690.json, 视频生成/图生视频/Bernini视频换人+视频换装_2063144841558708225.json, 视频生成/图生视频/Bernini视频编辑（角色替换）优化加速版_2065359403267739650.json, 视频生成/图生视频/Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次高清放大视频1080p_2063267448056541186.json, 视频生成/图生视频/最新加速bernini人物替换10S版_2062393408311873538.json, 视频生成/图生视频/（4步极速版-sd2.0平替）Bernini 视频编辑高质量加速优化版V4_2073466192983052289.json, 视频生成/图生视频/（sd2.0平替）Bernini 视频编辑高质量加速优化版V3_2061857100334194689.json, 视频生成/图生视频/（长时稳定版方案1）Bernini 视频编辑高质量加速优化版V4_2062007172694892545.json, 视频生成/图生视频/（长时稳定版方案2）Bernini 视频编辑高质量加速优化版Beta版V4_2062019836196249601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_52
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json、图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json、图片生成/图生图/Klein 真实细节_2051257646812020737.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Bernini视频换人+视频换装_2063038125223538690.json、视频生成/图生视频/Bernini视频换人+视频换装_2063144841558708225.json、视频生成/图生视频/Bernini视频编辑（角色替换）优化加速版_2065359403267739650.json、视频生成/图生视频/Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次高清放大视频1080p_2063267448056541186.json、视频生成/图生视频/最新加速bernini人物替换10S版_2062393408311873538.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `ImageFromBatch`
+- `JWInteger`
 - `KSamplerSelect`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `RHLLMChatNode`
+- `SamplerCustom`
+- `SplitSigmas`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/8 个有
-- `ImageScaleToTotalPixels` —— 7/8 个有
-- `SaveImage` —— 7/8 个有
-- `SphereLightNode` —— 5/8 个有
-- `easy imageColorMatch` —— 5/8 个有
-- `DF_Integer` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `ImageResize+` —— 4/8 个有
-- `RHHiddenNodes` —— 4/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `CompressImages` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `VRAMReserver` —— 1/8 个有
+- `BerniniPromptEnhancer` —— 8/9 个有
+- `CreateVideo` —— 8/9 个有
+- `ImageConcanate` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `Float` —— 7/9 个有
+- `BatchImagesNode` —— 6/9 个有
+- `MathExpression|pysssss` —— 5/9 个有
+- `easy batchAnything` —— 5/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `SeedVR2LoadDiTModel` —— 1/9 个有
+- `SeedVR2LoadVAEModel` —— 1/9 个有
+- `SeedVR2VideoUpscaler` —— 1/9 个有
+- `WanContextWindowsManual` —— 1/9 个有
 
 ## 典型参数
 

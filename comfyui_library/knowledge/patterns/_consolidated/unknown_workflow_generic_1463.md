@@ -3,31 +3,31 @@ name: unknown_workflow_generic_1463
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [RH_RhartImageG4TextToImage, SaveImage]
+coverage: 0.8
+common_nodes: [Int, JjkText, LoadImage, RunningHub_Step1XEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/G4_TextToImage_v4.0_2033740377714331649.json, 图片生成/文生图/文生图1r_次 4_text_to_image+全节点注释_2059599524271841282.json]
+members: [图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json, 图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1463
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/G4_TextToImage_v4.0_2033740377714331649.json、图片生成/文生图/文生图1r_次 4_text_to_image+全节点注释_2059599524271841282.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json、图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageG4TextToImage`
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `RunningHub_Step1XEdit`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

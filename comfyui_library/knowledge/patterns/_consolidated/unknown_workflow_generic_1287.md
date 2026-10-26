@@ -3,56 +3,43 @@ name: unknown_workflow_generic_1287
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.859
-common_nodes: [DF_Integer, Get Image Size, Image Comparer (rgthree), ImageCASharpening+, ImageFromBatch, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.6865
+common_nodes: [Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json, 图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json]
+members: [图片生成/反推提示词/JoyCaption 3 图像反推_1993972081836621826.json, 图片生成/反推提示词/提示词反推集合_1991111614755635202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1287
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json、图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/JoyCaption 3 图像反推_1993972081836621826.json、图片生成/反推提示词/提示词反推集合_1991111614755635202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DF_Integer`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImpactMinMax`
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: JoyCaptionBeta1ExtraOptions`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `Florence2ModelLoader` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `JanusImageUnderstanding` —— 1/2 个有
+- `JanusModelLoader` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 

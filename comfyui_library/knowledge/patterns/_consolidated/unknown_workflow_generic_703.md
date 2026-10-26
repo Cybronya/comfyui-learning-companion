@@ -3,42 +3,31 @@ name: unknown_workflow_generic_703
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.83975
-common_nodes: [Image Comparer (rgthree), ImageCASharpening+, ImageResize+, LoadImage, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, easy int]
+coverage: 0.75025
+common_nodes: [RH_Flux_2_Max_TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/图像超清4k放大_1991039297094656002.json, 图片生成/图生图/高清修复 _ 图像版  升级优化_2052223595128074242.json, 图片生成/图生图/高清修复 _ 图像版  升级优化🚀_1961635415524577281.json, 图片生成/图生图/高清修复图像版升级优化_2060314094548373506.json]
+members: [图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json, 图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_703
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图像超清4k放大_1991039297094656002.json、图片生成/图生图/高清修复 _ 图像版  升级优化_2052223595128074242.json、图片生成/图生图/高清修复 _ 图像版  升级优化🚀_1961635415524577281.json、图片生成/图生图/高清修复图像版升级优化_2060314094548373506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json、图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `LoadImage`
+- `RH_Flux_2_Max_TextToImage`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 3/4 个有
-- `easy imageSizeBySide` —— 3/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Get Image Size` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
 
 ## 典型参数
 

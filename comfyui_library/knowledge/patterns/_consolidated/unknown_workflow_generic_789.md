@@ -3,33 +3,36 @@ name: unknown_workflow_generic_789
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.96875
+common_nodes: [AFL:AudioMixStems, AudioSeparation, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader, SaveAudio, VHS_LoadAudioUpload]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json, 音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json, 音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json, 音频生成/音频生成/生成双人对话声音_2035281634374717442.json]
+members: [图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json, 音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json, 音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json, 音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_789
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json、音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json、音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json、音频生成/音频生成/生成双人对话声音_2035281634374717442.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json、音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json、音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json、音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
+- `AFL:AudioMixStems`
+- `AudioSeparation`
+- `RunningHubRVCVoiceConversion`
+- `RunningHubRVCZipModelLoader`
 - `SaveAudio`
+- `VHS_LoadAudioUpload`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 3/4 个有
-- `FishS2MultiSpeakerTTS` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

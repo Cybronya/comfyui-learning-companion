@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_504
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8516
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.889
+common_nodes: [ImageResize+, LoadImage, RH_Sora2_I2V_Realistic, SaveVideo, easy compare, easy imageSwitch]
 problems: []
 missing: []
-members: [图片生成/图生图/RH seedream-v5-lite-图生图_2075100204101099521.json, 图片生成/图生图/Seedream V5 Lite 图生图｜3K画质_2097870053990559745.json, 图片生成/图生图/SeedreamV5Lite_ImageToImage_v5.0_2034593434933137409.json, 图片生成/图生图/人像精修工作流｜HYPIR_真实皮肤纹理_毛孔级还原_2098340851738046465.json, 图片生成/文生图/05豆包_SeedreamV5Lite_图生图+全节点注释_2058544902014849026.json]
+members: [视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json, 视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json, 视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json, 视频生成/图生视频/全能视频S 真人图生视频_1997595577485561858.json, 视频生成/图生视频/全能视频S 真人图生视频_2001547196065562625.json, 视频生成/图生视频/图生视频 写实风格动态视频_2017785280387878914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_504
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/RH seedream-v5-lite-图生图_2075100204101099521.json、图片生成/图生图/Seedream V5 Lite 图生图｜3K画质_2097870053990559745.json、图片生成/图生图/SeedreamV5Lite_ImageToImage_v5.0_2034593434933137409.json、图片生成/图生图/人像精修工作流｜HYPIR_真实皮肤纹理_毛孔级还原_2098340851738046465.json、图片生成/文生图/05豆包_SeedreamV5Lite_图生图+全节点注释_2058544902014849026.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json、视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json、视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json、视频生成/图生视频/全能视频S 真人图生视频_1997595577485561858.json、视频生成/图生视频/全能视频S 真人图生视频_2001547196065562625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageResize+`
 - `LoadImage`
-- `SaveImage`
+- `RH_Sora2_I2V_Realistic`
+- `SaveVideo`
+- `easy compare`
+- `easy imageSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV5LiteImageToImage` —— 4/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_ImageEnhanceHypirUltra` —— 1/5 个有
+- `CR Text` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 2/6 个有
 
 ## 典型参数
 

@@ -3,35 +3,38 @@ name: unknown_workflow_generic_1649
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, SaveAudio, easy showAnything]
+coverage: 0.7905
+common_nodes: [JjkText, LoadImage, PreviewAny, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json, 音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json]
+members: [图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json, 图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1649
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json、音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json、图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_custom`
-- `SaveAudio`
-- `easy showAnything`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_LLm_API` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `TTP_text_mix` —— 1/2 个有
+- `easy imageScaleDownToSize` —— 1/2 个有
 
 ## 典型参数
 

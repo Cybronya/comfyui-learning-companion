@@ -2,63 +2,65 @@
 name: unknown_workflow_sampler_clip_unet_188
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.903714
-common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: weak
+coverage: 0.858
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/2029744272278294529.json, 图片生成/文生图/87time #02 krea 默认生成_1955480075464577026.json, 图片生成/文生图/AI装饰画场景快速生成_1954389130199351298.json, 图片生成/文生图/FLUX.1 LoRA模型工作流搭建_2014635794983555074.json, 图片生成/文生图/FLUX.1+LoRA模型工作流_2055148110460006402.json, 图片生成/文生图/FLUX图生图LoRA工作流_2048670126542692354.json, 图片生成/文生图/latent大法工作流_1926584319706566658.json]
+members: [图片生成/图生图/Deepseek-janus-Pro精准反推图生图FLUX (1)_1896094012430811138.json, 图片生成/图生图/FLUX_图生图_赛博朋克风格V1.0_1922702310974308353.json, 图片生成/图生图/Flux 一键洗图_1920407438544277505.json, 图片生成/图生图/flux_吉卜力风格_图生图_1922695650230812674.json, 图片生成/图生图/修图重绘-常用_2006036350398631937.json, 图片生成/图生图/修图重绘_1939903917381881857.json, 图片生成/文生图/flux图生图-在线生图_1995862598363099137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_188
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/2029744272278294529.json、图片生成/文生图/87time #02 krea 默认生成_1955480075464577026.json、图片生成/文生图/AI装饰画场景快速生成_1954389130199351298.json、图片生成/文生图/FLUX.1 LoRA模型工作流搭建_2014635794983555074.json、图片生成/文生图/FLUX.1+LoRA模型工作流_2055148110460006402.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Deepseek-janus-Pro精准反推图生图FLUX (1)_1896094012430811138.json、图片生成/图生图/FLUX_图生图_赛博朋克风格V1.0_1922702310974308353.json、图片生成/图生图/Flux 一键洗图_1920407438544277505.json、图片生成/图生图/flux_吉卜力风格_图生图_1922695650230812674.json、图片生成/图生图/修图重绘-常用_2006036350398631937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPTextEncodeFlux`
-- `ConditioningZeroOut`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
 - `DualCLIPLoader`
-- `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `EmptyLatentImage` —— 3/7 个有
-- `RH_Translator` —— 2/7 个有
-- `DeepTranslatorTextNode` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `LoraLoader` —— 1/7 个有
-- `ModelMergeFlux1` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `SaveLatent` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
+- `LoraLoader` —— 6/7 个有
+- `CR Latent Batch Size` —— 5/7 个有
+- `Florence2ModelLoader` —— 5/7 个有
+- `Florence2Run` —— 5/7 个有
+- `ImageResize+` —— 5/7 个有
+- `ShowText|pysssss` —— 4/7 个有
+- `CR Text Concatenate` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `TextInput_` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `JanusImageUnderstanding` —— 2/7 个有
+- `JanusModelLoader` —— 2/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `ttN advPlot images` —— 1/7 个有
+- `ttN advanced xyPlot` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22 | 20 - 30 | 7 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 768 | 768 - 1024 | 3 | 86% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| LoRA 模型强度 | 0.8 | 0.6 - 1 | 6 | 78% |
+| LoRA 文本强度 | 1 | 1 - 10.48 | 6 | 0% |
 
 ## 常见问题
 
@@ -66,10 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 22，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 1024，3 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 1，6 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 10.48，6 个样本，取值分散，一致性仅 0%

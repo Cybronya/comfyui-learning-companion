@@ -1,58 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_354
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.9275
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.880857
+common_nodes: [AudioCrop, AudioCropProcessUTK, CLIPVisionLoader, CM_FloatUnaryOperation, CM_IntToFloat, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, HuMoEmbeds, INTConstant, ImageBatch, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch1way, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PrimitiveString, SoundFlow_Concatenator, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy boolean, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json, 视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json, 视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json, 视频生成/图生视频/WAN2.2图生视频_1963873192061521922.json, 视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json, 视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json]
+members: [视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO-3_1980829225919926273.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO_1973235123128807426.json, 视频生成/图生视频/数字人-图生视频-多分镜-HUMO1号_1991795582006145025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_354
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json、视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json、视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json、视频生成/图生视频/WAN2.2图生视频_1963873192061521922.json、视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json、视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO-3_1980829225919926273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioCropProcessUTK`
+- `CLIPVisionLoader`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `HuMoEmbeds`
 - `INTConstant`
+- `ImageBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LazySwitch1way`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `NormalizeAudioLoudness`
+- `PrimitiveString`
+- `SoundFlow_Concatenator`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy boolean`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `GetImageSizeAndCount` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `PrimitiveFloat` —— 3/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `easy positive` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageStitch` —— 1/6 个有
-- `LayerUtility: PurgeVRAM` —— 1/6 个有
-- `easy humanSegmentation` —— 1/6 个有
+- `ColorMatch` —— 6/7 个有
+- `ImpactSwitch` —— 6/7 个有
+- `easy compare` —— 6/7 个有
+- `MuterSwitcher` —— 1/7 个有
+- `🎈GroupDetector` —— 1/7 个有
+- `🎈StateTransfer` —— 1/7 个有
 
 ## 典型参数
 

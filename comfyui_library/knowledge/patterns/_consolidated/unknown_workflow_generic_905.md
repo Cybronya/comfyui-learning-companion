@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, SaveImage, ttN text]
+common_nodes: [LoadVideo, SaveVideo, TopazVideoEnhanceV2]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json, 图片生成/图生图/全能图片2.0_2027393529009414146.json, 图片生成/图生图/珠宝替换_精简版_2110422160215990274.json]
+members: [comfyui-workflow-templates-json/api_topaz_astra2.json, comfyui-workflow-templates-json/api_topaz_starlight_precise25.json, comfyui-workflow-templates-json/api_topaz_video_enhance.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_905
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json、图片生成/图生图/全能图片2.0_2027393529009414146.json、图片生成/图生图/珠宝替换_精简版_2110422160215990274.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_topaz_astra2.json、comfyui-workflow-templates-json/api_topaz_starlight_precise25.json、comfyui-workflow-templates-json/api_topaz_video_enhance.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,13 +23,9 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `ttN text`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
+- `LoadVideo`
+- `SaveVideo`
+- `TopazVideoEnhanceV2`
 
 ## 典型参数
 

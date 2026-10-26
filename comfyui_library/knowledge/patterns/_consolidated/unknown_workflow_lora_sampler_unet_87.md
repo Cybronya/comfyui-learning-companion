@@ -2,68 +2,76 @@
 name: unknown_workflow_lora_sampler_unet_87
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.867875
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+level: strong
+coverage: 0.801125
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json, 视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json, 视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json, 视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json, 视频生成/图生视频/速度逆天！Minimax多图全能参考T8双采样8步加速版_2085471982044401665.json, 视频生成/文生视频/8步加速Mini Max H3图生视频_2084136196300697601.json, 视频生成/文生视频/MinimaxH3参考8步生成视频工作流_2087040392687611906.json, 视频生成/文生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json]
+members: [图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json, 图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json, 图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json, 图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json, 图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json, 图片生成/图生图/Qwen-Edit一键生成字体海报_2003726936436318209.json, 图片生成/图生图/Qwen-创意涂鸦海报_2041395180921692161.json, 图片生成/图生图/图生图-产品创意海报_2040662642892742657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json、视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json、视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json、视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json、视频生成/图生视频/速度逆天！Minimax多图全能参考T8双采样8步加速版_2085471982044401665.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json、图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json、图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json、图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json、图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
-- `ResolutionSelector` —— 7/8 个有
-- `DF_String_Concatenate` —— 2/8 个有
-- `DF_Text_Box` —— 2/8 个有
-- `JWStringGetLine` —— 2/8 个有
-- `JjkConcat` —— 2/8 个有
-- `JjkShowText` —— 2/8 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/8 个有
-- `ReplaceString` —— 2/8 个有
-- `StringConstant` —— 2/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `SolAttnPatch` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 7/8 个有
+- `seed _O` —— 5/8 个有
+- `Text _O` —— 4/8 个有
+- `easy showAnything` —— 3/8 个有
+- `Fast Groups Muter (rgthree)` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `Seed (rgthree)` —— 2/8 个有
+- `TextCombinerTwo` —— 2/8 个有
+- `TextInput_` —— 2/8 个有
+- `EmptyLatentImage` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `PDIMAGE_LongerSize` —— 1/8 个有
+- `easy imageConcat` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 50% |
+| 调度器 | simple | - | 8 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 768 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 50%
+- 调度器 最常用 simple，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

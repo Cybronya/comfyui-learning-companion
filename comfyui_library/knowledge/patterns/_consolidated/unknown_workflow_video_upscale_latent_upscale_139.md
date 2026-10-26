@@ -3,85 +3,66 @@ name: unknown_workflow_video_upscale_latent_upscale_139
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5125
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWFloat, JWLoadImageSequenceWithStopIndex, JWSaveImageSequence, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuide, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PreviewAny, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy float, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
+coverage: 0.496
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, Pipe from any [Crystools], Pipe to/edit any [Crystools], PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SimpleMath+, SolAttnMiniMax, SplitSigmas, UNETLoader, VAELoader, VHS_VideoCombine, easy blocker, easy boolean, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3数字人无限时长V2_2038825068578480130.json, 视频生成/图生视频/LTX2.3真无限时长生成工作流最终版，彻底解决人物一致性、闪烁跳帧、变色、爆显存等问题_2038747014028075010.json]
+members: [视频生成/图生视频/H3_多参生视频_2108931656911507457.json, 视频生成/图生视频/minimax_H3_多参_2108804190872096769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_139
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3数字人无限时长V2_2038825068578480130.json、视频生成/图生视频/LTX2.3真无限时长生成工作流最终版，彻底解决人物一致性、闪烁跳帧、变色、爆显存等问题_2038747014028075010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3_多参生视频_2108931656911507457.json、视频生成/图生视频/minimax_H3_多参_2108804190872096769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
+- `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `ExtendIntermediateSigmas`
 - `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `JWFloat`
-- `JWLoadImageSequenceWithStopIndex`
-- `JWSaveImageSequence`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAddGuide`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PrimitiveString`
+- `ManualSigmas`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `ModelAttentionBackend`
+- `Pipe from any [Crystools]`
+- `Pipe to/edit any [Crystools]`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
 - `SetNode`
 - `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `SolAttnMiniMax`
+- `SplitSigmas`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy float`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy mathInt`
+- `easy blocker`
+- `easy boolean`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

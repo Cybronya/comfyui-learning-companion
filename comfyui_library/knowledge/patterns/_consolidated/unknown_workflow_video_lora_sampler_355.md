@@ -1,64 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_355
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.710333
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.592571
+common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), GetNode, Int, JjkText, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json, 视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json, 视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json, 视频生成/文生视频/SVI-Wan22-1207超长视频生成工作流-课程同步工作流_1998388912689176577.json]
+members: [视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数字人电商版 V3.0_2071042945586909186.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题-电商版_2068617926189600770.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-30秒_2067556103998763009.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_2067570521318969346.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2067587703197224961.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台_2066087123450683394.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台_2072548210463301634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_355
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json、视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json、视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数字人电商版 V3.0_2071042945586909186.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题-电商版_2068617926189600770.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-30秒_2067556103998763009.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_2067570521318969346.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2067587703197224961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetImageSizeAndCount`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CS-LTXGridDirector`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `InvertMask`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
+- `Int`
+- `JjkText`
+- `KSamplerSelect`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Utils`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `CR Text` —— 2/6 个有
-- `DF_Int_to_Float` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `IndexTTSRun` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MultiLinePromptIndex` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SaveAudioMP3` —— 1/6 个有
+- `LoadImage` —— 6/7 个有
+- `孤海注释` —— 6/7 个有
+- `MultiTextConcatenate` —— 4/7 个有
+- `TTResolutionSelector` —— 4/7 个有
+- `AILab_QwenVL_Advanced` —— 1/7 个有
+- `Bjornulf_TextToStringAndSeed` —— 1/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `ConcatTextOfUtils` —— 1/7 个有
+- `FlashVSRNode` —— 1/7 个有
+- `ImageLoader` —— 1/7 个有
+- `LayerUtility: PurgeVRAM` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `RH_RhartImageG2ImageToImage` —— 1/7 个有
+- `RegexReplace` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `SaveTextNode` —— 1/7 个有
+- `easy positive` —— 1/7 个有
+- `easy promptConcat` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
+- `kkRegexNode` —— 1/7 个有
 
 ## 典型参数
 

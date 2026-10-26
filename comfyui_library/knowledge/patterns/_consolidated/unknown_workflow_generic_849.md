@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_849
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [CR Overlay Text, ImageConcanate, LoadImage, SaveImage, TY360Roundtrip]
+coverage: 0.78675
+common_nodes: [LoadImage, PreviewAny, RH_Veo3_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json, 图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json, 图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json]
+members: [视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json, 视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json, 视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json, 视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_849
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json、图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json、图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json、视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json、视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json、视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Overlay Text`
-- `ImageConcanate`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
-- `TY360Roundtrip`
+- `PreviewAny`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Border` —— 2/3 个有
+- `ShellAgentPluginOutputText` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

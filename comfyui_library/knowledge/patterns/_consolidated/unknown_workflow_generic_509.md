@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_509
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9846
-common_nodes: [ImageStitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
+coverage: 0.5575
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream4.0【单图】一致性图像编辑_1968714568174325762.json, 图片生成/图生图/Seedream4.0【多图】一致性图像编辑 【 多人合影+姿势参考 】_1968710540304502786.json, 图片生成/图生图/人物姿势参考-既梦4.0一致性图像编辑_1968122621973901313.json, 图片生成/图生图/合影姿势参考-既梦4.0一致性图像编辑_1968113697153515522.json, 图片生成/图生图/家具整理和布置-既梦4.0图像编辑_1967955987967651842.json]
+members: [视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json, 视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json, 视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json, 视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json, 视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_509
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Seedream4.0【单图】一致性图像编辑_1968714568174325762.json、图片生成/图生图/Seedream4.0【多图】一致性图像编辑 【 多人合影+姿势参考 】_1968710540304502786.json、图片生成/图生图/人物姿势参考-既梦4.0一致性图像编辑_1968122621973901313.json、图片生成/图生图/合影姿势参考-既梦4.0一致性图像编辑_1968113697153515522.json、图片生成/图生图/家具整理和布置-既梦4.0图像编辑_1967955987967651842.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json、视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json、视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json、视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json、视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageStitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2`
 - `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/5 个有
+- `Text Concatenate` —— 3/6 个有
+- `Comfly_sora2_character` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

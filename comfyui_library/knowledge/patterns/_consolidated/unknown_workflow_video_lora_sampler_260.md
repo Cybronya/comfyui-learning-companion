@@ -1,77 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_260
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.742
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.885667
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageSizeAndCount, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Stand-In+VACE一致性视频生成_1958065173116366849.json, 视频生成/图生视频/Stand-In+VACE视频换脸_1959340354166272002.json, 视频生成/图生视频/Stand-In+vace高度人物一致性_1956763019890057217.json, 视频生成/图生视频/wan2.1+stand-in视频人像换脸_1957279872316010498.json, 视频生成/图生视频/自定义人脸_表情动作精准克隆_1957324783199383553.json, 视频生成/图生视频/视频生成视频_图生视频-动作迁移+人脸迁移-wan2.1_1958334806830551042.json, 视频生成/图生视频/👍最美最专角色姿态迁移+面部一致性视频生成工作流（VACE+stand-in）♥_1979202292152963074.json, 视频生成/图生视频/😍跳舞姿态迁移面部一致（VACE+stand-in）😍_1958798691941445634.json]
+members: [视频生成/图生视频/Wan22Animate动作迁移抖版_2004522934133817346.json, 视频生成/图生视频/Wan22Animate动作迁移抖版_2029116870359519233.json, 视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092804435218092034.json, 视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092862953073758209.json, 视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092864004770324481.json, 视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092864044922396674.json, 视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092864075528237057.json, 视频生成/图生视频/动作迁移优化版_2087223386203312129.json, 视频生成/图生视频/灵活分段生视频 4段变装+动作迁移+服装替换+人脸替换+ 灵活分段版_2089231514004447234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_260
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Stand-In+VACE一致性视频生成_1958065173116366849.json、视频生成/图生视频/Stand-In+VACE视频换脸_1959340354166272002.json、视频生成/图生视频/Stand-In+vace高度人物一致性_1956763019890057217.json、视频生成/图生视频/wan2.1+stand-in视频人像换脸_1957279872316010498.json、视频生成/图生视频/自定义人脸_表情动作精准克隆_1957324783199383553.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan22Animate动作迁移抖版_2004522934133817346.json、视频生成/图生视频/Wan22Animate动作迁移抖版_2029116870359519233.json、视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092804435218092034.json、视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092862953073758209.json、视频生成/图生视频/动作迁移 服装变换 4段变装（灵活分段版）_2092864004770324481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `ImageResizeKJv2`
+全部 9 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
+- `Int`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `INTConstant` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `WanVideoTorchCompileSettings` —— 6/8 个有
-- `CR Text` —— 5/8 个有
-- `WanVideoVACEStartToEndFrame` —— 5/8 个有
-- `ImageFromBatch+` —— 4/8 个有
-- `ImpactInt` —— 4/8 个有
-- `SimpleMath+` —— 4/8 个有
-- `Anything Everywhere` —— 3/8 个有
-- `ImageConcanate` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `InspyrenetRembg` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `LayerUtility: ImageRemoveAlpha` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `OpenposePreprocessor` —— 2/8 个有
-- `VHS_VideoInfo` —— 2/8 个有
-- `easy imageRemBg` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `Evaluate Integers` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `easy convertAnything` —— 1/8 个有
+- `GetNode` —— 8/9 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `SimpleMath+` —— 8/9 个有
+- `WanVideoLoraSelect` —— 8/9 个有
+- `Float` —— 7/9 个有
+- `ImageBatch` —— 6/9 个有
+- `ImageFromBatch` —— 6/9 个有
+- `MemoryCleaner` —— 6/9 个有
+- `MathExpression|pysssss` —— 3/9 个有
+- `CM_IntToFloat` —— 2/9 个有
+- `CR Text` —— 2/9 个有
+- `ImageFromBatch+` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `LayerUtility: PurgeVRAM` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `ImageScale` —— 1/9 个有
+- `String` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,51 +1,46 @@
 ---
 name: unknown_workflow_video_sampler_13
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.72275
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.938
+common_nodes: [CLIPLoader, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, ImageResizeKJ, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json, 视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json, 视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json, 视频生成/图生视频/视频去水印_1977048593158807553.json]
+members: [视频生成/图生视频/CogVideoX-I2V 图生视频_1844070499650539521.json, 视频生成/图生视频/CogVideoX-I2V 竖屏模式-图生视频_1844805165072175106.json, 视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1836407132143992833.json, 视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1977986107558219777.json, 视频生成/图生视频/抖音网红视频图生视频_1888124057349718017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_13
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json、视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json、视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json、视频生成/图生视频/视频去水印_1977048593158807553.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/CogVideoX-I2V 图生视频_1844070499650539521.json、视频生成/图生视频/CogVideoX-I2V 竖屏模式-图生视频_1844805165072175106.json、视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1836407132143992833.json、视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1977986107558219777.json、视频生成/图生视频/抖音网红视频图生视频_1888124057349718017.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `ImageResizeKJ`
 - `LoadImage`
-- `MaskToImage`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `CustomAddLabel` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `RH_Captioner` —— 4/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `VideoCombine_Adv` —— 2/5 个有
+- `ImageResizeAdvanced` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

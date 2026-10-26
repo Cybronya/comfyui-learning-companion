@@ -1,32 +1,36 @@
 ---
 name: image_to_image_sampler_clip_vae_19
 type: Image To Image
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.983556
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9941
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, NunchakuFluxDiTLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2.0单图编辑（GGUF加速版）_1993841057280573442.json, 图片生成/图生图/Flux2.0多图编辑工作流_1993686011580448770.json, 图片生成/图生图/Flux2DEV多图编辑_1993664042084532225.json, 图片生成/图生图/Flux2单图编辑加速版_1994696141314854914.json, 图片生成/图生图/Flux2图生图_图像编辑_1993490262106324993.json, 图片生成/图生图/Klein-9B-换头一键封神！_2034251935917805570.json, 图片生成/图生图/Klein-true-V2-单图编辑+一致性lora_2047831635298619393.json, 图片生成/图生图/flux-2-klein-单-多图编辑_2014322675694444546.json, 图片生成/图生图/flux2 dev双图编辑【全能图片V1平替】_2000078046042484738.json]
+members: [图片生成/图生图/超强去水印工作流Kontext_2095027681485217794.json, 图片生成/文生图/kontextNunchakuDev转绘低多边形风格_1940245828193927170.json, 图片生成/文生图/kontextNunchakuDev转绘动漫_1940236757055000577.json, 图片生成/文生图/kontextNunchakuDev转绘奇幻艺术_1940240607094722562.json, 图片生成/文生图/kontextNunchakuDev转绘工艺粘土风_1940239181278826498.json, 图片生成/文生图/kontextNunchakuDev转绘模拟电影_1940235010588758018.json, 图片生成/文生图/kontextNunchakuDev转绘漫画_1940238028432654337.json, 图片生成/文生图/kontextNunchakuDev转绘电影感风_1940230026011000833.json, 图片生成/文生图/kontextNunchakuDev转绘等距风格_1940242636722622465.json, 图片生成/文生图/kontextNunchakuDev转绘线条艺术_1940243382793060354.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2.0单图编辑（GGUF加速版）_1993841057280573442.json、图片生成/图生图/Flux2.0多图编辑工作流_1993686011580448770.json、图片生成/图生图/Flux2DEV多图编辑_1993664042084532225.json、图片生成/图生图/Flux2单图编辑加速版_1994696141314854914.json、图片生成/图生图/Flux2图生图_图像编辑_1993490262106324993.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/超强去水印工作流Kontext_2095027681485217794.json、图片生成/文生图/kontextNunchakuDev转绘低多边形风格_1940245828193927170.json、图片生成/文生图/kontextNunchakuDev转绘动漫_1940236757055000577.json、图片生成/文生图/kontextNunchakuDev转绘奇幻艺术_1940240607094722562.json、图片生成/文生图/kontextNunchakuDev转绘工艺粘土风_1940239181278826498.json…）
 
 - **类型**：Image To Image
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
+- `NunchakuFluxDiTLoader`
 - `ReferenceLatent`
 - `SaveImage`
 - `VAEDecode`
@@ -34,42 +38,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `ConditioningZeroOut` —— 6/9 个有
-- `EmptyFlux2LatentImage` —— 6/9 个有
-- `FluxGuidance` —— 6/9 个有
-- `ImageScaleToTotalPixels` —— 3/9 个有
-- `LoraLoaderModelOnly` —— 2/9 个有
-- `ModelPatchTorchSettings` —— 2/9 个有
-- `PathchSageAttentionKJ` —— 2/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `Flux2Scheduler` —— 1/9 个有
-- `ImageConcanate` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `ModelSamplingFlux` —— 9/10 个有
+- `RH_Translator` —— 9/10 个有
+- `ConstrainImage|pysssss` —— 1/10 个有
+- `DeepTranslatorTextNode` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
+- `LayerUtility: GetImageSize` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 6 - 20 | 9 | 64% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 20 | 20 - 20 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 6 - 20，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

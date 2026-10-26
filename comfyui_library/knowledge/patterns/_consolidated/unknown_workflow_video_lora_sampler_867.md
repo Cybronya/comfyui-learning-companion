@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_867
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7405
-common_nodes: [BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ConditioningZeroOut, GetNode, KSamplerSelect, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, SelfLiftAvatarH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
-problems: []
+coverage: 0.736
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, LayerMask: MaskGrow, LayerUtility: PurgeVRAM, MathExpression|pysssss, PreviewAnimation, PreviewImage, RHHiddenNodes, RMBG, SetNode, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy seed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/【阿良绘】H3数字人（自生台词+自动提词+自动时长）_2100779861139873793.json, 视频生成/文生视频/【变态加速高清版2.0】MinMaxH3 全能参考-推荐_2106435863944196098.json]
+members: [视频生成/图生视频/Nuash版-视频背景替换+人物追踪v3-加密_1970359648316497921.json, 视频生成/图生视频/Nuash版-视频背景替换v1-加密_1967851309351206913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_867
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【阿良绘】H3数字人（自生台词+自动提词+自动时长）_2100779861139873793.json、视频生成/文生视频/【变态加速高清版2.0】MinMaxH3 全能参考-推荐_2106435863944196098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Nuash版-视频背景替换+人物追踪v3-加密_1970359648316497921.json、视频生成/图生视频/Nuash版-视频背景替换v1-加密_1967851309351206913.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,52 +23,79 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `CLIPTextEncode`
+- `GetImageRangeFromBatch`
 - `GetNode`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: PurgeVRAM`
+- `MathExpression|pysssss`
+- `PreviewAnimation`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RMBG`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEmbedBridge`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `Int` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `KSampler` —— 1/2 个有
 - `LoadImage` —— 1/2 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/2 个有
-- `MiniMaxH3Unified` —— 1/2 个有
-- `MiniMaxH3VAEDecodeFast` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
-- `StringToNumber` —— 1/2 个有
-- `YUAN_TXTConvertAny` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAELoader` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | beta57 | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,82 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_347
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.704833
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+frequency: 7
+level: moderate
+coverage: 0.677143
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX 2.3+PromptRelay 三图参考_2040053495893598209.json, 视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json, 视频生成/图生视频/ltx无字幕多图参考promptrelay_2050899507684098050.json, 视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json, 视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json, 视频生成/文生视频/LTX不出字幕单图参考_无压缩参考_2049840291389157378.json]
+members: [数字人/数字人/视频改口型_InfiniteTalk_V2V_2054821175225790465.json, 数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json, 数字人/数字人/顶配--nfinite Talk低高动态高清版V2_1987461960633659393.json, 视频生成/图生视频/[V2V新版]Infinite Talk动态运镜控制数字人V2_1958336218591334402.json, 视频生成/图生视频/图片生成口播视频_InfiniteTalk_I2V_2010602329619304450.json, 视频生成/图生视频/视频改口型_InfiniteTalk_V2V_2010621857124323330.json, 视频生成/图生视频/（单人版Nova）Infinite Talk高动态V2V高清版数字人V2_1969815681778786306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_347
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3+PromptRelay 三图参考_2040053495893598209.json、视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json、视频生成/图生视频/ltx无字幕多图参考promptrelay_2050899507684098050.json、视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json、视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/视频改口型_InfiniteTalk_V2V_2054821175225790465.json、数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json、数字人/数字人/顶配--nfinite Talk低高动态高清版V2_1987461960633659393.json、视频生成/图生视频/[V2V新版]Infinite Talk动态运镜控制数字人V2_1958336218591334402.json、视频生成/图生视频/图片生成口播视频_InfiniteTalk_I2V_2010602329619304450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：70%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptRelayEncodeTimeline` —— 5/6 个有
-- `GetImageRangeFromBatch` —— 4/6 个有
-- `LTXVAddGuideMulti` —— 4/6 个有
-- `BasicScheduler` —— 2/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `DF_Int_to_Float` —— 2/6 个有
-- `Int` —— 2/6 个有
-- `LTX2SamplingPreviewOverride` —— 2/6 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/6 个有
-- `LTXVLatentUpsampler` —— 2/6 个有
-- `LatentUpscaleModelLoader` —— 2/6 个有
-- `ModelSamplingSD3` —— 2/6 个有
-- `PreviewAny` —— 2/6 个有
-- `SamplerCustom` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `VAELoader` —— 2/6 个有
-- `VisualizeSigmasKJ` —— 2/6 个有
-- `LTXVImgToVideoInplace` —— 1/6 个有
-- `easy positive` —— 1/6 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `VHS_LoadVideo` —— 6/7 个有
+- `INTConstant` —— 4/7 个有
+- `PreviewAudio` —— 4/7 个有
+- `AudioCrop` —— 3/7 个有
+- `AudioCropProcessUTK` —— 3/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `ImageConcanate` —— 3/7 个有
+- `ImpactSwitch` —— 3/7 个有
+- `JWInteger` —— 3/7 个有
+- `LayerUtility: TextBox` —— 3/7 个有
+- `LoadImage` —— 3/7 个有
+- `PDIMAGE_LongerSize` —— 3/7 个有
+- `WanVideoTorchCompileSettings` —— 3/7 个有
+- `ImageConcatMulti` —— 2/7 个有
+- `ImageScaleByAspectRatio_UTK` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
+- `VHS_VideoInfo` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `CR Text` —— 1/7 个有
+- `ColorMatch` —— 1/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `TrimAudioDuration` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 361 | 305 - 465 | 6 | 85% |
-| 高度 | 24 | 24 - 24 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 305 - 465，6 个样本，取值集中（一致性 85%）
-- 高度 中位数 24，观测区间 24 - 24，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

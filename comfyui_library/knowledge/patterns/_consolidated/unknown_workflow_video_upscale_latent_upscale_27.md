@@ -2,82 +2,82 @@
 name: unknown_workflow_video_upscale_latent_upscale_27
 type: Unknown Workflow
 frequency: 12
-level: strong
-coverage: 0.459
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+level: moderate
+coverage: 0.504167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Best_faceid V1 for ltx2.3_2082528336852635649.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json, 视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json, 视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json, 视频生成/图生视频/LTX2.3-best_faceid_charsheet-人脸高一致性_2083089483041427458.json, 视频生成/图生视频/LTX2.3-best_faceid_ganloss-人脸高一致性_2083196415471345666.json, 视频生成/图生视频/video_ltx2_3_best_charactor_sheet_ganloss_2080574328030191617.json, 视频生成/图生视频/video_ltx2_3_best_faceid_charsheet_ganloss_upscale_2080581115986931714.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2080550056238862337.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2083097564500549633.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_upscale_2080566370382729217.json]
+members: [视频生成/图生视频/MiniMax H3｜单人高质量数字人｜音频驱动多图参考 MV_2096969226736193537.json, 视频生成/图生视频/MiniMax_H3_去油腻_TwoPass_Ref2VA_2114214100938092545.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2107829656270499842.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2109548068579397633.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102702993295630338.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102731516450263042.json, 视频生成/图生视频/Minimax-H3多参考双采放大生成视频（Singularity）_2096792911970136066.json, 视频生成/图生视频/MinimaxH3动作迁移-人物替换！完美优化_2110384977471954946.json, 视频生成/图生视频/MinimaxH3动作迁移-人物替换，完美优化_2114528770223857666.json, 视频生成/图生视频/YZ金鱼-MiniMax H3-多参考生视频-优化版-9图全开_2099011685452439553.json, 视频生成/图生视频/YZ金鱼-MiniMax H3-多参考生视频-优化版_2114647900906156034.json, 视频生成/图生视频/双倍高清放大MiniMax H3-多参考生视频-字节DMAD加速版_2106606807736209409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_27
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Best_faceid V1 for ltx2.3_2082528336852635649.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json、视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json、视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3｜单人高质量数字人｜音频驱动多图参考 MV_2096969226736193537.json、视频生成/图生视频/MiniMax_H3_去油腻_TwoPass_Ref2VA_2114214100938092545.json、视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2107829656270499842.json、视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2109548068579397633.json、视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102702993295630338.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：46%
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageResizeKJv2`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveStringMultiline`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXIdentityOverlapConditioning` —— 11/12 个有
-- `LoadImage` —— 11/12 个有
-- `PreviewImage` —— 11/12 个有
-- `RMBG` —— 11/12 个有
-- `PrimitiveInt` —— 10/12 个有
-- `PrimitiveBoolean` —— 9/12 个有
-- `BasicScheduler` —— 8/12 个有
-- `LTXVAudioVAEDecode` —— 7/12 个有
-- `LTXVCropGuides` —— 7/12 个有
-- `VAEDecodeTiled` —— 7/12 个有
-- `LTXTiledSampler` —— 6/12 个有
-- `LTXVLatentUpsamplerTiled` —— 6/12 个有
-- `SimpleMath+` —— 3/12 个有
-- `Int` —— 2/12 个有
+- `ComfyMathExpression` —— 11/12 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `PrimitiveFloat` —— 11/12 个有
+- `VAEDecodeAudio` —— 11/12 个有
+- `VHS_LoadVideo` —— 11/12 个有
+- `easy float` —— 11/12 个有
+- `GetNode` —— 10/12 个有
+- `SetNode` —— 10/12 个有
+- `Text` —— 10/12 个有
+- `忽略多组孤海` —— 9/12 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/12 个有
 - `孤海注释` —— 2/12 个有
-- `GetImageRangeFromBatch` —— 1/12 个有
-- `ImageConcanate` —— 1/12 个有
-- `LTXVAddGuideMulti` —— 1/12 个有
-- `LTXVImgToVideoInplace` —— 1/12 个有
-- `LTXVLatentUpsampler` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `VAEEncode` —— 1/12 个有
-- `VHS_LoadVideo` —— 1/12 个有
+- `Astra` —— 1/12 个有
+- `CR Prompt Text` —— 1/12 个有
+- `ImageFromBatch` —— 1/12 个有
+- `Int` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `LoadVideo` —— 1/12 个有
+- `Lora Loader Stack (rgthree)` —— 1/12 个有
+- `MiniMaxH3AVDecodeT8` —— 1/12 个有
+- `ModelAttentionBackend` —— 1/12 个有
+- `SaveAudioAdvanced` —— 1/12 个有
+- `SaveVideo` —— 1/12 个有
+- `SolAttnMiniMax` —— 1/12 个有
+- `Text Multiline` —— 1/12 个有
+- `TrimAudioDuration` —— 1/12 个有
+- `VRAM_Debug` —— 1/12 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
+- `获取视频信息` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 12 | 100% |
-| 高度 | 25 | 25 - 25 | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,5 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

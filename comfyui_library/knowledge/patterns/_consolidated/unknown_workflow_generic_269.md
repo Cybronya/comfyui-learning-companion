@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_269
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadVideo, SaveVideo]
+coverage: 0.905778
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json, 数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json, 数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json, 数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json, 数字人/数字人/数字人【视频】V1.0_2094769332847988737.json, 数字人/数字人/超快HEYGEN数字人_2095826350211944450.json, 视频生成/图生视频/Wan2.7 视频延长_2041456018126807041.json, 音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json]
+members: [视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json, 视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json, 视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json, 视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json, 视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json, 视频生成/文生视频/Seedance2.0全能参考视频_2043901748414259202.json, 视频生成/文生视频/Seedance2.0全能参考（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051223810644430850.json, 视频生成/文生视频/seedance2.0_2043171204051247105.json, 视频生成/文生视频/万象AI+RH地表最强超能视频2.0_全能参考 生真人视频_2038582212496461825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_269
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json、数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json、数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json、数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json、数字人/数字人/数字人【视频】V1.0_2094769332847988737.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json、视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json、视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json、视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json、视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadAudio`
+- `LoadImage`
 - `LoadVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_HeyGemNode` —— 7/8 个有
-- `RH_AlibabaWan27VideoExtend` —— 1/8 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
+- `RH_AlibabaWan27ReferenceToVideo` —— 2/9 个有
 
 ## 典型参数
 

@@ -3,36 +3,36 @@ name: unknown_workflow_generic_210
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.5814
-common_nodes: [JjkText, RH_Suno_Single, SaveAudio, ShellAgentPluginOutputText]
+coverage: 0.8725
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/RH Suno_Single_2031164290161451010.json, 音频生成/音频生成/Suno AI音乐创作-自动生成歌词_2031624341296783361.json, 音频生成/音频生成/Suno5.0-AI 音乐创作-歌曲创作-原创音乐生成_2047279211932557313.json, 音频生成/音频生成/Suno_Single音乐克隆_1985533739885281281.json, 音频生成/音频生成/suno v5 歌曲创作 音乐创作 生成原创歌曲 AI音乐 自定义曲风_2054008022871093249.json, 音频生成/音频生成/suno v5付费音乐_2046107780586672130.json, 音频生成/音频生成/suno v5最强歌曲创作_2032367123665788930.json, 音频生成/音频生成/suno v5歌曲创作_音乐创作_生成原创歌曲_自定义曲风_2046066989352882178.json, 音频生成/音频生成/suno v5音乐创作 生成原创歌曲 AI音乐 自定义曲风，商用BGM_2035901494800683009.json, 音频生成/音频生成/suno音乐生成工作流_2088935989556375553.json]
+members: [图片生成/图生图/image 2.0图生图_2047234111944794114.json, 图片生成/图生图/【画意手记 • 时光碎碎念涂鸦】手绘注解造像师：定格生活碎碎念的治愈瞬间_全能图片G2.0图生图_2051859619470954497.json, 图片生成/图生图/印尼饰品海报（铭匠珠宝团队）_2093518497904152577.json, 图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图_2068085420554014722.json, 图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图（网红必备）_2068086393603186690.json, 图片生成/图生图/埃及饰品海报_2093907378327613442.json, 图片生成/图生图/定格生活的治愈瞬间_全能图片G2.0图生图_2055118199817023489.json, 图片生成/图生图/沙特饰品海报_2093895609467097090.json, 图片生成/图生图/泰国饰品海报（铭匠珠宝团队）_2093628384592093185.json, 图片生成/图生图/涂鸦手绘注解造像师_批量_2098344967252037634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_210
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/RH Suno_Single_2031164290161451010.json、音频生成/音频生成/Suno AI音乐创作-自动生成歌词_2031624341296783361.json、音频生成/音频生成/Suno5.0-AI 音乐创作-歌曲创作-原创音乐生成_2047279211932557313.json、音频生成/音频生成/Suno_Single音乐克隆_1985533739885281281.json、音频生成/音频生成/suno v5 歌曲创作 音乐创作 生成原创歌曲 AI音乐 自定义曲风_2054008022871093249.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/image 2.0图生图_2047234111944794114.json、图片生成/图生图/【画意手记 • 时光碎碎念涂鸦】手绘注解造像师：定格生活碎碎念的治愈瞬间_全能图片G2.0图生图_2051859619470954497.json、图片生成/图生图/印尼饰品海报（铭匠珠宝团队）_2093518497904152577.json、图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图_2068085420554014722.json、图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图（网红必备）_2068086393603186690.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `JjkText`
-- `RH_Suno_Single`
-- `SaveAudio`
-- `ShellAgentPluginOutputText`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 8/10 个有
-- `SaveAudioMP3` —— 8/10 个有
-- `LoadImage` —— 5/10 个有
-- `ShowText` —— 2/10 个有
+- `PreviewImage` —— 6/10 个有
+- `Text` —— 6/10 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 5/10 个有
+- `PlaySound|pysssss` —— 1/10 个有
+- `RHUploadZip_V2` —— 1/10 个有
 
 ## 典型参数
 

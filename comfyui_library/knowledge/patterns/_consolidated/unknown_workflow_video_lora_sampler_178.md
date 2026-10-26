@@ -1,62 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_178
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.878
-common_nodes: [CLIPVisionLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.575727
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GrowMask, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PointsEditor, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/AniWan超高动态图生视频_1946038864878202882.json, 视频生成/图生视频/1秒2帧！lightx2v最快16fps版高质量图生视频V1_1934999093192105986.json, 视频生成/图生视频/AccVid 加速Wan I2v图生视频V1_1929947388339765250.json, 视频生成/图生视频/AniWan专业动漫模型图生视频-更高运动幅度_1946761730153148417.json, 视频生成/图生视频/Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json, 视频生成/图生视频/Wan2.1 PUSA图生视频V1_1946072429141651458.json, 视频生成/图生视频/Wan2.1最高质量30秒长视频加速稳定版V1（图生视频）_1948954040869761026.json, 视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频加速版v1_1944601523588354050.json, 视频生成/图生视频/ani全能视频S动漫图生视频加速版_1944648210231250946.json, 视频生成/图生视频/ani全能视频S动漫特化3.0模型版图生视频加速版v1_1961656258828943362.json]
+members: [图片生成/图生图/Wan2.2 Animate角色替换与修改_1932812610956136450.json, 图片生成/图生图/Wan2.2 animate 视频人物替换_1976938900721672193.json, 图片生成/图生图/万物动作迁移One2All_1998760592200585217.json, 数字人/数字人/WanAnimate 人物替换 表情迁移_1969056420173934594.json, 数字人/数字人/WanAnimate 场景二 动作+表情迁移_1970111704807993345.json, 数字人/数字人/WanAnimate-动作迁移01_1969358029953134594.json, 数字人/数字人/WanAnimate（视频角色替换_姿势迁移）_1969678871396315137.json, 数字人/数字人/wan2.2 animate 一张图片生成跳舞视频_1942136597947301890.json, 视频生成/图生视频/动漫跳舞SDPOSE+Wan Animate_1973029204331728897.json, 视频生成/图生视频/最新WanAnimate之视频换装_1971421860208558082.json, 视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_1969435322595635201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_178
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/AniWan超高动态图生视频_1946038864878202882.json、视频生成/图生视频/1秒2帧！lightx2v最快16fps版高质量图生视频V1_1934999093192105986.json、视频生成/图生视频/AccVid 加速Wan I2v图生视频V1_1929947388339765250.json、视频生成/图生视频/AniWan专业动漫模型图生视频-更高运动幅度_1946761730153148417.json、视频生成/图生视频/Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate角色替换与修改_1932812610956136450.json、图片生成/图生图/Wan2.2 animate 视频人物替换_1976938900721672193.json、图片生成/图生图/万物动作迁移One2All_1998760592200585217.json、数字人/数字人/WanAnimate 人物替换 表情迁移_1969056420173934594.json、数字人/数字人/WanAnimate 场景二 动作+表情迁移_1970111704807993345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GrowMask`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `PointsEditor`
+- `Sam2Segmentation`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 9/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 9/10 个有
-- `Text Multiline` —— 9/10 个有
-- `WanVideoEnhanceAVideo` —— 9/10 个有
-- `WanVideoExperimentalArgs` —— 8/10 个有
-- `WanVideoSLG` —— 8/10 个有
-- `WanVideoVRAMManagement` —— 8/10 个有
-- `WanVideoFreeInitArgs` —— 6/10 个有
-- `CR Text` —— 1/10 个有
-- `EG_SZ_CGJS` —— 1/10 个有
-- `Float` —— 1/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `ImpactSwitch` —— 1/10 个有
-- `RH_Translator` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
-- `Text Concatenate` —— 1/10 个有
-- `WanVideoEasyCache` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `GetNode` —— 10/11 个有
+- `INTConstant` —— 10/11 个有
+- `ImageConcatMulti` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `WanVideoSetLoRAs` —— 10/11 个有
+- `WanVideoTorchCompileSettings` —— 10/11 个有
+- `DWPreprocessor` —— 9/11 个有
+- `GetImageSizeAndCount` —— 9/11 个有
+- `PixelPerfectResolution` —— 8/11 个有
+- `WanVideoContextOptions` —— 5/11 个有
+- `easy int` —— 4/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
+- `MathExpression|pysssss` —— 3/11 个有
+- `GroundingDinoModelLoader_SDPose` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `PrimitiveStringMultiline` —— 2/11 个有
+- `SDPoseOODLoader` —— 2/11 个有
+- `SDPoseOODProcessor` —— 2/11 个有
+- `YOLOModelLoader` —— 2/11 个有
+- `Fast Groups Muter (rgthree)` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `ImageFromBatch` —— 1/11 个有
+- `ImpactInt` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `OnnxDetectionModelLoader` —— 1/11 个有
+- `PoseDetectionOneToAllAnimation` —— 1/11 个有
+- `SimpleMath+` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 

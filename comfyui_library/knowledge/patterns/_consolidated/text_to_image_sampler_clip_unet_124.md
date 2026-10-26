@@ -1,81 +1,70 @@
 ---
 name: text_to_image_sampler_clip_unet_124
 type: Text To Image
-frequency: 5
-level: strong
-coverage: 0.946
-common_nodes: [ApplyFBCacheOnModel, CLIPTextEncode, DF_Get_image_size, DualCLIPLoader, EmptyLatentImage, Flex2Conditioner, ImageConcanate, ImageScaleToTotalPixels, KSampler, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 6
+level: moderate
+coverage: 0.9665
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flex.2局部二阶段重绘工作流V1_1916364099486154753.json, 图片生成/图生图/视频首帧Flex.2深度替换图_1924671178982813697.json, 图片生成/文生图/Flex.2无CN姿势控制文生图工作流V1_1916417413187829761.json, 图片生成/文生图/Flex.2无CN深度控制文生图工作流V1_1916415071411703809.json, 图片生成/文生图/Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json]
+members: [图片生成/文生图/Z-image文生图art_2017930293285490690.json, 图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json, 图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json, 图片生成/文生图/Z-image，文生图_1995081308172955649.json, 图片生成/文生图/api-z-image_1995157591246430209.json, 图片生成/文生图/image_Z-16秒_2013832572974927874.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_124
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flex.2局部二阶段重绘工作流V1_1916364099486154753.json、图片生成/图生图/视频首帧Flex.2深度替换图_1924671178982813697.json、图片生成/文生图/Flex.2无CN姿势控制文生图工作流V1_1916417413187829761.json、图片生成/文生图/Flex.2无CN深度控制文生图工作流V1_1916415071411703809.json、图片生成/文生图/Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-image文生图art_2017930293285490690.json、图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json、图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json、图片生成/文生图/Z-image，文生图_1995081308172955649.json、图片生成/文生图/api-z-image_1995157591246430209.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ApplyFBCacheOnModel`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Get_image_size`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Flex2Conditioner`
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
 - `KSampler`
-- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GroundingDinoModelLoader (segment anything2)` —— 4/5 个有
-- `JWImageResizeByLongerSide` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `Note Plus (mtb)` —— 4/5 个有
-- `DepthAnythingPreprocessor` —— 3/5 个有
-- `AnyLineArtPreprocessor_aux` —— 1/5 个有
-- `EG_ZZ_SSKZ` —— 1/5 个有
-- `GroundingDinoSAM2Segment (segment anything2)` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `OpenposePreprocessor` —— 1/5 个有
-- `SAM2ModelLoader (segment anything2)` —— 1/5 个有
-- `SetLatentNoiseMask` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `easy promptLine` —— 2/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `LatentFrequencyEnhancer_lrzjason` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `Text _O` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 840 | 840 - 840 | 5 | 100% |
-| 高度 | 1256 | 1256 - 1256 | 5 | 100% |
-| 采样步数 | 30 | 30 - 30 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | deis | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 10 | 8 - 14 | 6 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1112 | 512 - 2416 | 6 | 50% |
+| 高度 | 1276 | 512 - 1920 | 6 | 65% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 840，观测区间 840 - 840，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1256，观测区间 1256 - 1256，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，观测区间 30 - 30，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 8 - 14，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1112，观测区间 512 - 2416，6 个样本
+- 高度 中位数 1276，观测区间 512 - 1920，6 个样本

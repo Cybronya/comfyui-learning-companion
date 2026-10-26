@@ -1,77 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_3
 type: Unknown Workflow
-frequency: 27
+frequency: 29
 level: moderate
-coverage: 0.785852
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.739759
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3多条件参考视频工作流低显存加速版 开源 Ref2VA_2084437517675352065.json, 视频生成/图生视频/MiniMax+H3+参考图图生视频工作流_2084234953285525505.json, 视频生成/图生视频/MiniMax+H3参考生视频_2084466111193636865.json, 视频生成/图生视频/MiniMax-H3   数字人说放唱歌跳舞_2084483238164262914.json, 视频生成/图生视频/MiniMax-H3   数字人说话唱歌跳舞_2084848840682856449.json, 视频生成/图生视频/MiniMax-H3 图生视频 数字人说放唱歌跳舞_2084469631183577089.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2084140670419300353.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2084157109444366337.json, 视频生成/图生视频/MiniMax-H3 数字人说话唱歌跳舞_2084926291026993154.json, 视频生成/图生视频/MiniMax-H3-多图参考视频生成_2084247428697518082.json, 视频生成/图生视频/MiniMax-H3开源版 图片开口说话数字人 图像音频参考生视频_2084239385167482882.json, 视频生成/图生视频/MiniMax-H3开源版 图片开口说话数字人 图像音频参考生视频_2084246078630748161.json, 视频生成/图生视频/MiniMax-H3开源版 声音克隆数字人+全节点注释_2084492386390077442.json, 视频生成/图生视频/MiniMax-H3开源版 数字人（视频+文案）+全节点注释_2084488671373381634.json, 视频生成/图生视频/MiniMax-H3开源版 数字人（视频+文案）+全节点注释_2093665300192514049.json, 视频生成/图生视频/MiniMax-H3数字人（图片+音频）+全节点注释_2084487098446475265.json, 视频生成/图生视频/MiniMax-H3最强开源版 图片开口说话数字人 图像音频参考生视频_2084591926610849793.json, 视频生成/图生视频/MiniMax-H3最强开源版 图片开口说话数字人 图像音频参考生视频_2084625798031568897.json, 视频生成/图生视频/MiniMaxH3 图片数字人！加速版！B站艾橘溪_2084158052382625793.json, 视频生成/图生视频/MiniMax_H3+多参考图生视频（可本地运行）_2089621418697904129.json, 视频生成/图生视频/MiniMax_H3_全参考ref2va_中文版_2085180698285142017.json, 视频生成/图生视频/MinimaxH3 ref2va全能多参工作流_2084512370860318722.json, 视频生成/图生视频/The digital avatar speaks H3数字人说话_2100389571778404353.json, 视频生成/图生视频/信息流广告+Minimax-h3+多模态全能参考版_2111113526185127938.json, 视频生成/图生视频/图生成视频 MiniMax-H3  数字人说放唱歌跳舞_2089165953765560322.json, 视频生成/图生视频/地表最强开源视频！Minimax-h3 多模态全能参考版_2084358175293263874.json, 视频生成/图生视频/开源版Minimax-h3 多模态全能参考版_2084936517058912257.json]
+members: [图片生成/图生图/Qwen image 2.1图片编辑-1图_2112357928580763649.json, 图片生成/图生图/Qwen image 2.1图片编辑-2图_2112352357722972162.json, 图片生成/图生图/Qwen image 2.1图片编辑-3图_2112358020758990850.json, 图片生成/图生图/Qwen image 2.1图片编辑-4图_2112358074219581441.json, 图片生成/图生图/Qwen image 2.1图片编辑-5图_2112359254878412802.json, 图片生成/图生图/Qwen image 2.1图片编辑-6图_2112359295756099586.json, 图片生成/图生图/Qwen-image-2.1-单图编辑_2104464258397462529.json, 图片生成/图生图/Qwen2.1-图生图12参考-提速版_2112576868661682177.json, 图片生成/图生图/QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json, 图片生成/图生图/Qwen_Image_2.1_图像编辑_2105116270961192961.json, 图片生成/图生图/Qwen_Image_2.1_图像编辑_2105493174088192002.json, 图片生成/图生图/Qwen_Image_2.1自动分镜_短剧分镜_2102322312635834369.json, 图片生成/图生图/qwen image 2.1 图编辑_2102212148364668930.json, 图片生成/图生图/qwen-image 2.1图像编辑_2101777177351122945.json, 图片生成/图生图/qwen-image-2.1图像编辑_2101918037409615874.json, 图片生成/图生图/qwen_image_2_1_图像编辑-换背景和姿态_2102207016054906881.json, 图片生成/图生图/qwen_image_2_1_图像编辑-换装_2101845419922903041.json, 图片生成/图生图/qwen_image_2_1_图像编辑-文本换装_2101852516261646337.json, 图片生成/图生图/qwen_image_2_1_手持指定物品_2102203525789995009.json, 图片生成/图生图/千问2.1节日表情包_2104578062582108162.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2108811508326166529.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109545902754066433.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109573850085281794.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2111996327927312386.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112074578649509889.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112076292018495489.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112081176390361090.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112091885144727554.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112093934708150274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3多条件参考视频工作流低显存加速版 开源 Ref2VA_2084437517675352065.json、视频生成/图生视频/MiniMax+H3+参考图图生视频工作流_2084234953285525505.json、视频生成/图生视频/MiniMax+H3参考生视频_2084466111193636865.json、视频生成/图生视频/MiniMax-H3   数字人说放唱歌跳舞_2084483238164262914.json、视频生成/图生视频/MiniMax-H3   数字人说话唱歌跳舞_2084848840682856449.json…）
+> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1图片编辑-1图_2112357928580763649.json、图片生成/图生图/Qwen image 2.1图片编辑-2图_2112352357722972162.json、图片生成/图生图/Qwen image 2.1图片编辑-3图_2112358020758990850.json、图片生成/图生图/Qwen image 2.1图片编辑-4图_2112358074219581441.json、图片生成/图生图/Qwen image 2.1图片编辑-5图_2112359254878412802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
+- **样本数**：29
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 29 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `EmptyLatentImage`
+- `KSampler`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 25/27 个有
-- `LoadAudio` —— 21/27 个有
-- `PrimitiveStringMultiline` —— 21/27 个有
-- `AudioCrop` —— 17/27 个有
-- `AILab_QwenVL` —— 11/27 个有
-- `JoinStrings` —— 11/27 个有
-- `VHS_LoadVideo` —— 9/27 个有
-- `CR Text` —— 7/27 个有
-- `PathchSageAttentionKJ` —— 5/27 个有
-- `孤海注释` —— 3/27 个有
-- `VHS_LoadVideoFFmpeg` —— 2/27 个有
-- `Any To String (mtb)` —— 1/27 个有
-- `CR Prompt Text` —— 1/27 个有
-- `CS-MultiImageLoader` —— 1/27 个有
-- `ImageUpscaleWithModel` —— 1/27 个有
-- `Label (rgthree)` —— 1/27 个有
-- `Note Plus (mtb)` —— 1/27 个有
-- `PreviewAudio` —— 1/27 个有
-- `PrimitiveInt` —— 1/27 个有
-- `RH_GetAudioDuration` —— 1/27 个有
-- `UpscaleModelLoader` —— 1/27 个有
-- `VHS_LoadAudioUpload` —— 1/27 个有
+- `ComfySwitchNode` —— 28/29 个有
+- `PrimitiveStringMultiline` —— 24/29 个有
+- `SaveImageAdvanced` —— 21/29 个有
+- `QwenImage21Cache` —— 20/29 个有
+- `ResolutionSelector` —— 20/29 个有
+- `LoadImage` —— 14/29 个有
+- `LoraLoaderModelOnly` —— 11/29 个有
+- `PreviewImage` —— 11/29 个有
+- `PrimitiveBoolean` —— 10/29 个有
+- `QwenImage21_T2IPromptRewrite` —— 9/29 个有
+- `RH_QwenImagePromptEnhancer` —— 9/29 个有
+- `easy showAnything` —— 9/29 个有
+- `Int` —— 6/29 个有
+- `SDVN Load Image Url` —— 6/29 个有
+- `JjkShowText` —— 1/29 个有
+- `QwenPERewriteT8` —— 1/29 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 8 - 50 | 29 | 39% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 29 | 100% |
+| 采样算法 | euler | - | 29 | 100% |
+| 调度器 | simple | - | 29 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 29 | 100% |
+| 宽度 | 1024 | 16 - 2048 | 29 | 42% |
+| 高度 | 1024 | 720 - 2048 | 29 | 80% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/29 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 8 - 50，29 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，29 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，29 个样本，一致性 100%
+- 调度器 最常用 simple，29 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，29 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 16 - 2048，29 个样本，取值分散，一致性仅 42%
+- 高度 中位数 1024，观测区间 720 - 2048，29 个样本

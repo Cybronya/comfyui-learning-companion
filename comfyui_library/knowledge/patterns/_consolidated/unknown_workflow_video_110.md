@@ -3,36 +3,34 @@ name: unknown_workflow_video_110
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4585
-common_nodes: [ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveInt, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/实用工具-视频转GIF图片_2089752563230011394.json, 视频生成/图生视频/视频转gif-RH工作流主图专用_1975224669374689281.json]
+members: [视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json, 视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_110
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/实用工具-视频转GIF图片_2089752563230011394.json、视频生成/图生视频/视频转gif-RH工作流主图专用_1975224669374689281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json、视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageFromBatch+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PrimitiveInt`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `LoadImage`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `RH_RhartVideoV31ProImageToVideo` —— 1/2 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 1/2 个有
 
 ## 典型参数
 

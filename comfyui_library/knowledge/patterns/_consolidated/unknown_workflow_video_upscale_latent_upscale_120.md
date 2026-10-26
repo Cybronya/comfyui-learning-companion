@@ -3,51 +3,49 @@ name: unknown_workflow_video_upscale_latent_upscale_120
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.948
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CannyEdgePreprocessor, CheckpointLoaderSimple, CreateVideo, DWPreprocessor, DepthCrafter, DownloadAndLoadDepthCrafterModel, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PreviewImage, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VRAMReserver, easy showAnything]
+coverage: 0.852333
+common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, DF_Integer, DisTorchPurgeVRAMV2, EmptyLTXVLatentVideo, GetImageSize+, ImageResizeKJv2, ImageSizeInfo, JWImageSequenceExtractFromBatch, JWInteger, JWStringGetLine, JjkConcat, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, ResizeLongestToNode, SamplerCustomAdvanced, ShowText, TextBoxMira, VAEDecodeTiled, VHS_MergeImages, VHS_VideoCombine, easy mathInt, easy saveText, easy showAnything, image_scale_pixel_v2]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.3 视频控制高清增强_2040812593555709953.json, 视频生成/文生视频/LTX 2.3 音频驱动参考角色伪替换工作流_2040718940661354497.json, 视频生成/文生视频/LTX2.3 3.5套件｜一键控片·三阶渲染·视频生成_2068580767306964993.json]
+members: [视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json, 视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json, 视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_120
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 视频控制高清增强_2040812593555709953.json、视频生成/文生视频/LTX 2.3 音频驱动参考角色伪替换工作流_2040718940661354497.json、视频生成/文生视频/LTX2.3 3.5套件｜一键控片·三阶渲染·视频生成_2068580767306964993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json、视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json、视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AudioConcat`
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CM_FloatToInt`
-- `CannyEdgePreprocessor`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
-- `DWPreprocessor`
-- `DepthCrafter`
-- `DownloadAndLoadDepthCrafterModel`
-- `DualCLIPLoader`
+- `DF_Integer`
+- `DisTorchPurgeVRAMV2`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
+- `GetImageSize+`
 - `ImageResizeKJv2`
+- `ImageSizeInfo`
+- `JWImageSequenceExtractFromBatch`
+- `JWInteger`
+- `JWStringGetLine`
+- `JjkConcat`
 - `KSamplerSelect`
-- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
@@ -55,51 +53,37 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
+- `ResizeLongestToNode`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SimpleMath+`
-- `UNETLoader`
+- `ShowText`
+- `TextBoxMira`
 - `VAEDecodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `VHS_MergeImages`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `VRAMReserver`
+- `easy mathInt`
+- `easy saveText`
 - `easy showAnything`
+- `image_scale_pixel_v2`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `SDPoseOODLoader` —— 2/3 个有
-- `SDPoseOODProcessor` —— 2/3 个有
-- `Audio Duration (mtb)` —— 1/3 个有
-- `DisTorchPurgeVRAMV2` —— 1/3 个有
-- `Float to Int` —— 1/3 个有
-- `GetLatentSizeAndCount` —— 1/3 个有
-- `LTXFaceDetector` —— 1/3 个有
-- `LTXLatentAnchorAware` —— 1/3 个有
-- `LTXLikenessAnchor` —— 1/3 个有
-- `LTXLikenessGuide` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MelBandRoFormerModelLoader` —— 1/3 个有
-- `MelBandRoFormerSampler` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `SimpleCalculatorKJ` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `1hew_ImageGridSplit` —— 2/3 个有
+- `If ANY execute A else B` —— 2/3 个有
+- `JWStringSplit` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `string_util_StrFind` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 24 - 25 | 3 | 98% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -108,4 +92,4 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，3 个样本，取值集中（一致性 98%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

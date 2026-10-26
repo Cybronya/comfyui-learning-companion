@@ -3,28 +3,32 @@ name: unknown_workflow_video_sampler_vae_102
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.733
-common_nodes: [ADE_CameraPoseBasic, GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.696
+common_nodes: [CR Text, GetImageSizeAndCount, GetNode, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json, 视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json, 视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json]
+members: [视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json, 视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json, 视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_102
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json、视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json、视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json、视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json、视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json、视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json、视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ADE_CameraPoseBasic`
+- `CR Text`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `SetNode`
@@ -33,33 +37,28 @@ source: knowledge_consolidation
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `CameraPoseVisualizer` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `WanVideoVACEModelSelect` —— 4/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `WanVideoLoraSelect` —— 3/5 个有
 - `ColorMatch` —— 2/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `MathExpression|pysssss` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `RIFE VFI` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `ImageResizeKJ` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
+- `ImageRepeat` —— 1/5 个有
+- `Int` —— 1/5 个有
 - `Note Plus (mtb)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
 
 ## 典型参数
 

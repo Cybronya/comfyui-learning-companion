@@ -1,51 +1,66 @@
 ---
 name: unknown_workflow_sampler_vae_41
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.8246
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
+coverage: 0.8155
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/H3生成视频最终版本_2085274502887460865.json, 图片生成/图生图/MiniMax H3 FL2VA开源版-多图参考生视频_2096830763638542337.json, 图片生成/图生图/MiniMax H3 FL2VA正式版-多图参考生视频_2097242785194795009.json, 视频生成/动作迁移/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json, 视频生成/图生视频/MiniMax H3 AI提示词润色｜双角色有声微短剧｜两图一句话_2087013189312667650.json]
+members: [视频生成/图生视频/MiniMax H3 图生视频_首尾帧 加速版_2084297892575145985.json, 视频生成/图生视频/MiniMax H3 图生视频（开源版）_2084993401539358721.json, 视频生成/图生视频/MiniMax H3 图生视频｜一采生成 + 二采精修｜音画同步高清工作流_2086606849025073153.json, 视频生成/图生视频/MiniMax H3 多参输入生视频_2085272663802605570.json, 视频生成/图生视频/MiniMax H3 首尾帧_图生视频_2085645887220568065.json, 视频生成/图生视频/MiniMax H3全能参考（图片、音频、视频皆可参考）_2084166446040567809.json, 视频生成/图生视频/MiniMax+H3+图生视频_首尾帧低显存加速版(6~8GB)_2085705273888559106.json, 视频生成/文生视频/MINIMAX-H3 sage+sol att双加速低显存全功能工作流_2084920261798879233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_41
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/H3生成视频最终版本_2085274502887460865.json、图片生成/图生图/MiniMax H3 FL2VA开源版-多图参考生视频_2096830763638542337.json、图片生成/图生图/MiniMax H3 FL2VA正式版-多图参考生视频_2097242785194795009.json、视频生成/动作迁移/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json、视频生成/图生视频/MiniMax H3 AI提示词润色｜双角色有声微短剧｜两图一句话_2087013189312667650.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生视频_首尾帧 加速版_2084297892575145985.json、视频生成/图生视频/MiniMax H3 图生视频（开源版）_2084993401539358721.json、视频生成/图生视频/MiniMax H3 图生视频｜一采生成 + 二采精修｜音画同步高清工作流_2086606849025073153.json、视频生成/图生视频/MiniMax H3 多参输入生视频_2085272663802605570.json、视频生成/图生视频/MiniMax H3 首尾帧_图生视频_2085645887220568065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3Ref2VAEncode`
-- `RHMiniMaxH3Ref2VAImageReference`
-- `RHMiniMaxH3Ref2VAModelLoader`
-- `RHMiniMaxH3Ref2VATarget`
-- `RHMiniMaxH3Ref2VATextEncoderLoader`
-- `RHMiniMaxH3Ref2VAVAELoader`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `CLIPLoader` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `ResolutionSelector` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `StringConcatenate` —— 1/5 个有
-- `TextGenerate` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ResolutionSelector` —— 7/8 个有
+- `UNETLoader` —— 7/8 个有
+- `MiniMaxH3ImageToVideo` —— 6/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
+- `DiffusionModelLoaderKJ` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `Label (rgthree)` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `SaveImage` —— 2/8 个有
+- `UniBlockSwap` —— 2/8 个有
+- `Any Switch (rgthree)` —— 1/8 个有
+- `LTXVConcatAVLatent` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `RTXVideoSuperResolution` —— 1/8 个有
+- `SolAttnPatch` —— 1/8 个有
+- `UniBlockSwapTE` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
+- `VAEEncodeAudio` —— 1/8 个有
 
 ## 典型参数
 

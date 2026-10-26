@@ -2,88 +2,77 @@
 name: text_to_image_lora_sampler_clip_388
 type: Text To Image
 frequency: 5
-level: strong
-coverage: 0.8244
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EmptyMiniMaxMusic3LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.7434
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/MiniMax_Music3音乐生成完结版｜歌曲信息歌词时长设置音频生成_2088724711751639042.json, 音频生成/音频生成/Minimax Music 3开源｜最长5分钟音乐生成音频生成_2089692123355500546.json, 音频生成/音频生成/Minimax Music3文生音频工作流｜音频生成_2090079394516791298.json, 音频生成/音频生成/Minimax Music3音乐生成神器开源版｜官方skill自动优化音频生成_2089728078477094913.json, 音频生成/音频生成/Music3音乐生成完结版｜MiniMax歌曲信息歌词一键成曲_2089067866262949890.json]
+members: [图片生成/图生图/QwenImage_Edit_满血版-8步生图_1958022139515482113.json, 图片生成/图生图/任意角度分镜制作-qwen edit 2511_2010346866856173570.json, 图片生成/图生图/千问双图QwenImage_Edit_2509-8步双图版_1972574913502572546.json, 图片生成/图生图/可视化角度控制改图Qwen Multiangle Camera_2014245627441451009.json, 图片生成/图生图/效果图人物改变相机角度，直接拖动改为位置即可_2015794374164094978.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_388
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/MiniMax_Music3音乐生成完结版｜歌曲信息歌词时长设置音频生成_2088724711751639042.json、音频生成/音频生成/Minimax Music 3开源｜最长5分钟音乐生成音频生成_2089692123355500546.json、音频生成/音频生成/Minimax Music3文生音频工作流｜音频生成_2090079394516791298.json、音频生成/音频生成/Minimax Music3音乐生成神器开源版｜官方skill自动优化音频生成_2089728078477094913.json、音频生成/音频生成/Music3音乐生成完结版｜MiniMax歌曲信息歌词一键成曲_2089067866262949890.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/QwenImage_Edit_满血版-8步生图_1958022139515482113.json、图片生成/图生图/任意角度分镜制作-qwen edit 2511_2010346866856173570.json、图片生成/图生图/千问双图QwenImage_Edit_2509-8步双图版_1972574913502572546.json、图片生成/图生图/可视化角度控制改图Qwen Multiangle Camera_2014245627441451009.json、图片生成/图生图/效果图人物改变相机角度，直接拖动改为位置即可_2015794374164094978.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `JjkText`
+- `GetNode`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `ImpactConditionalBranch` —— 2/5 个有
-- `MuyeTextEditOutput` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `VAEDecodeAudioTiled` —— 2/5 个有
-- `ZML_BooleanSwitch` —— 2/5 个有
-- `llama_cpp_instruct_adv` —— 2/5 个有
-- `llama_cpp_model_loader` —— 2/5 个有
-- `llama_cpp_parameters` —— 2/5 个有
+- `QwenMultiangleCameraNode` —— 3/5 个有
+- `TextEncodeQwenImageEditPlus` —— 3/5 个有
+- `easy imageSize` —— 3/5 个有
+- `CR Simple Image Compare` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `String Literal` —— 2/5 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/5 个有
 - `CR Text` —— 1/5 个有
-- `DapaoMusic3CaptionPromptNode` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
+| 采样步数 | 8 | 8 - 20 | 5 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 5 | 65% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 60% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 宽度 | 1280 | 512 - 1280 | 5 | 61% |
+| 高度 | 720 | 512 - 720 | 5 | 84% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 8 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，5 个样本
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 60%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（6/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1280，观测区间 512 - 1280，5 个样本
+- 高度 中位数 720，观测区间 512 - 720，5 个样本，取值集中（一致性 84%）
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足

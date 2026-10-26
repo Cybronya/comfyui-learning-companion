@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_835
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.889
-common_nodes: [LoadImage, Save3DAdvanced, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
+coverage: 0.857
+common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub Univideo Generator(MultiID), RunningHub Univideo Loader, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json]
+members: [视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json, 视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json, 视频生成/图生视频/多图视频生成_2014230079726948354.json, 视频生成/图生视频/多图视频生成_2044236452975874050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_835
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json、视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json、视频生成/图生视频/多图视频生成_2014230079726948354.json、视频生成/图生视频/多图视频生成_2044236452975874050.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `Save3DAdvanced`
-- `TripoConversionNode`
-- `TripoRetargetNode`
-- `TripoRigNode`
-- `TripoTextureNodeV2`
-
-**可变部分**（部分 workflow 才有）：
-- `TripoImageToModelNodeV2` —— 1/3 个有
-- `TripoPSeriesImageToModelNode` —— 1/3 个有
-- `TripoPSeriesMultiviewToModelNode` —— 1/3 个有
+- `PrimitiveStringMultiline`
+- `RunningHub Univideo Generator(MultiID)`
+- `RunningHub Univideo Loader`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -3,33 +3,37 @@ name: unknown_workflow_generic_544
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9766
-common_nodes: [LoadImage, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage]
+coverage: 0.8558
+common_nodes: [LoadImage, LoadVideo, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/服装替换_2056614948456984578.json, 图片生成/图生图/电商主图_2061380619946520577.json, 图片生成/图生图/设计效果图出图_2086320748272115714.json, 图片生成/图生图/通哥的多角度裂变工作流_2085960197121601538.json, 图片生成/图生图/附图套图_2056995708020027394.json]
+members: [图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2064720603055218689.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2069025293804859393.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2074387964167282690.json, 图片生成/反推提示词/爆款视频反推_2067182431056261121.json, 视频生成/文生视频/爆款视频反推V2-提示词分析-视频脚本反推_2058553186096607233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_544
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/服装替换_2056614948456984578.json、图片生成/图生图/电商主图_2061380619946520577.json、图片生成/图生图/设计效果图出图_2086320748272115714.json、图片生成/图生图/通哥的多角度裂变工作流_2085960197121601538.json、图片生成/图生图/附图套图_2056995708020027394.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2064720603055218689.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2069025293804859393.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2074387964167282690.json、图片生成/反推提示词/爆款视频反推_2067182431056261121.json、视频生成/文生视频/爆款视频反推V2-提示词分析-视频脚本反推_2058553186096607233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageNG31FlashOfficialImageToImage`
+- `LoadVideo`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptBatchQueue` —— 3/5 个有
-- `PreviewImage` —— 1/5 个有
+- `Label (rgthree)` —— 4/5 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `LayerSeparationSaveText` —— 1/5 个有
 
 ## 典型参数
 

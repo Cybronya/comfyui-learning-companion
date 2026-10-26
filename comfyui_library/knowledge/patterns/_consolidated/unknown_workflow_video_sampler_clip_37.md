@@ -1,72 +1,91 @@
 ---
 name: unknown_workflow_video_sampler_clip_37
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: strong
-coverage: 0.843167
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8615
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, easy showAnything, wanBlockSwap]
+problems: []
 missing: []
-members: [图片生成/图生图/首尾帧：wan2.2-rapid-mega-aio-V3 工作流_1970185315388452866.json, 图片生成/文生图/文生视频-AIO-MegaV7 (2)_2051834619032555521.json, 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json, 视频生成/图生视频/wan2.2图生视频：wan2.2-rapid-mega-aio V10最新工作流_1970170134423871490.json, 视频生成/图生视频/图生视频-AIO-MegaV7_1968180543949012994.json, 视频生成/图生视频/图生视频-AIO-Mega【V3】_1970828010674888705.json, 视频生成/文生视频/【极速生成】wan2.2 rapid首尾帧视频动画生成【AIO Mega版】_1969276766730809345.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046504485811396609.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046752274625597441.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046762436140736513.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2044790035236528130.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2048651987276800002.json]
+members: [视频生成/图生视频/Wan2.2双模型首尾帧图生视频_2080624345147334658.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2082282165500469249.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json, 视频生成/图生视频/最强首尾帧视频 - Wan2.2动漫模型DaSiWa-_2009700904043286530.json, 视频生成/图生视频/王炸首尾帧--吊打闭源【万物生长 】_2013871524415016962.json, 视频生成/图生视频/首尾帧 Wan2.2-Remix 高动态，高画质_1987524619294978050.json, 视频生成/图生视频/首尾帧 图生视频 高动态 Wan2.2 Smooth Mix_1978796084820611074.json, 视频生成/图生视频/首尾帧视频-最强Wan2.2动漫模型DaSiWa_2008498194912649217.json, 视频生成/图生视频/首尾帧视频-最强Wan2.2动漫模型DaSiWa_2065475173511417857.json, 视频生成/文生视频/Wan2.2 Smooth Mix首尾帧_1980878054304206850.json, 视频生成/文生视频/Wan2.2 Smooth Mix首尾帧视频（高动态+自动提示词）_1986071453768568834.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2061638984954105858.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2064706031250395137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_37
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/首尾帧：wan2.2-rapid-mega-aio-V3 工作流_1970185315388452866.json、图片生成/文生图/文生视频-AIO-MegaV7 (2)_2051834619032555521.json、图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json、视频生成/图生视频/wan2.2图生视频：wan2.2-rapid-mega-aio V10最新工作流_1970170134423871490.json、视频生成/图生视频/图生视频-AIO-MegaV7_1968180543949012994.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan2.2双模型首尾帧图生视频_2080624345147334658.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2082282165500469249.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json、视频生成/图生视频/最强首尾帧视频 - Wan2.2动漫模型DaSiWa-_2009700904043286530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `KSampler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
+- `WanFirstLastFrameToVideo`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 10/12 个有
-- `PrimitiveInt` —— 9/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
-- `CM_IntToFloat` —— 5/12 个有
-- `SimpleMath+` —— 5/12 个有
-- `easy cleanGpuUsed` —— 3/12 个有
-- `easy clearCacheAll` —— 3/12 个有
-- `Int` —— 2/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `LoadAudio` —— 1/12 个有
-- `MathExpression|pysssss` —— 1/12 个有
+- `ImageConcanate` —— 13/14 个有
+- `ImageResizeKJ` —— 13/14 个有
+- `easy textSwitch` —— 10/14 个有
+- `GetNode` —— 8/14 个有
+- `RH_LLMAPI_NODE` —— 8/14 个有
+- `SetNode` —— 8/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/14 个有
+- `Images to RGB` —— 7/14 个有
+- `Qwen3_VQA` —— 7/14 个有
+- `RIFE VFI` —— 6/14 个有
+- `SeedVR2BlockSwap` —— 6/14 个有
+- `SeedVR2ExtraArgs` —— 6/14 个有
+- `SeedVR2GGUF` —— 6/14 个有
+- `intToFloat _O` —— 6/14 个有
+- `ImpactSwitch` —— 4/14 个有
+- `Int` —— 2/14 个有
+- `ImageConcatMulti` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 1/14 个有
+- `Maoyu_ListToString` —— 1/14 个有
+- `PreviewImage` —— 1/14 个有
+- `YC_SingleTextNode` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | ipndm | - | 12 | 75% |
-| 调度器 | beta | - | 12 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | randomize | - | 14 | 93% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 14 | 100% |
+| 采样算法 | 1 | 1 - 1 | 14 | 100% |
+| 调度器 | euler | - | 14 | 64% |
+| 重绘幅度 | simple | - | 14 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 14/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，12 个样本，一致性 75%
-- 调度器 最常用 beta，12 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（14/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，14 个样本，一致性 93%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，14 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，14 个样本，一致性 64%
+- 重绘幅度 最常用 simple，14 个样本，一致性 100%

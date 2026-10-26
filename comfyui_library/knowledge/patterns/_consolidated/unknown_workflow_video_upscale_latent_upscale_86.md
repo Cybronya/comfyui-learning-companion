@@ -1,75 +1,70 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_86
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.413
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy float, 忽略多组孤海]
+coverage: 0.8488
+common_nodes: [BasicGuider, CLIPLoader, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2采五段加速流_2104580181368336385.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json, 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json]
+members: [视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2103041925002653698.json, 视频生成/文生视频/Minimax H3横版文生视频Lantent Upscaler2_2091802068486025218.json, 视频生成/文生视频/Minimax H3横版文生视频Lantent Upscaler2_2092495104849309697.json, 视频生成/文生视频/动漫短剧文戏工作流（10eros+电影感lora）_2093873729087565825.json, 视频生成/文生视频/银河系小王minmaxh3-ForLoop多功能1至6段-视频续接V3V2_2094846710416756738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_86
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2采五段加速流_2104580181368336385.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json、视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2103041925002653698.json、视频生成/文生视频/Minimax H3横版文生视频Lantent Upscaler2_2091802068486025218.json、视频生成/文生视频/Minimax H3横版文生视频Lantent Upscaler2_2092495104849309697.json、视频生成/文生视频/动漫短剧文戏工作流（10eros+电影感lora）_2093873729087565825.json、视频生成/文生视频/银河系小王minmaxh3-ForLoop多功能1至6段-视频续接V3V2_2094846710416756738.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SplitSigmas`
-- `Text`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy float`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 3/4 个有
-- `AudioConcat` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `ImageBatchMulti` —— 2/4 个有
-- `MiniMaxH3AddGuide` —— 2/4 个有
-- `SaveAudio` —— 2/4 个有
-- `TrimAudioDuration` —— 2/4 个有
-- `BlockSparseAttention` —— 1/4 个有
-- `GH_AudioVideoMerger` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `LayerColor: ColorAdapter` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `ModelAttentionBackend` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `SeedVR2LoadDiTModel` —— 1/4 个有
-- `SeedVR2LoadVAEModel` —— 1/4 个有
-- `SeedVR2VideoUpscaler` —— 1/4 个有
+- `CR Prompt Text` —— 4/5 个有
+- `ComfyMathExpression` —— 4/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `CR Load LoRA` —— 1/5 个有
+- `FastGroupsBypassSwitch` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `ImpactConditionalBranch` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `MiniMaxH3MotionContext` —— 1/5 个有
+- `MiniMaxH3MotionContextTrim` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy forLoopEnd` —— 1/5 个有
+- `easy forLoopStart` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

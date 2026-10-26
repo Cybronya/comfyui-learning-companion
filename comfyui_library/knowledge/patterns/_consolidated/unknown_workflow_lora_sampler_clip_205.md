@@ -3,71 +3,68 @@ name: unknown_workflow_lora_sampler_clip_205
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.836
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyHunyuanLatentVideo, Image Comparer (rgthree), ImpactInt, KSamplerAdvanced, LoraLoaderModelOnly, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+coverage: 0.958333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/wan2-2+seedvr高清放大超级真实质感文生图_2043161931514646530.json, 图片生成/文生图/wan2-2文生图 超级真实质感工作流_1964175572664467458.json, 图片生成/文生图/🏇wan2-2超级真实质感 文生图🏇_1961625719518511105.json]
+members: [图片生成/文生图/2059VSMeiTu对比测试_1983097610955333634.json, 图片生成/文生图/CG迷-Qwen编辑工作流9大用法_1958563656520855554.json, 图片生成/文生图/MeiTu图像编辑_1983138603914174466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_205
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan2-2+seedvr高清放大超级真实质感文生图_2043161931514646530.json、图片生成/文生图/wan2-2文生图 超级真实质感工作流_1964175572664467458.json、图片生成/文生图/🏇wan2-2超级真实质感 文生图🏇_1961625719518511105.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/2059VSMeiTu对比测试_1983097610955333634.json、图片生成/文生图/CG迷-Qwen编辑工作流9大用法_1958563656520855554.json、图片生成/文生图/MeiTu图像编辑_1983138603914174466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `EmptyHunyuanLatentVideo`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
-- `KSamplerAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RH_LLMAPI_NODE`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVR2BlockSwap` —— 2/3 个有
-- `SeedVR2GGUF` —— 2/3 个有
-- `INTConstant` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `Seed (rgthree)` —— 2/3 个有
+- `String Literal` —— 2/3 个有
+- `FluxKontextImageScale` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | res_2s | - | 3 | 100% |
-| 重绘幅度 | bong_tangent | - | 3 | 100% |
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 res_2s，3 个样本，一致性 100%
-- 重绘幅度 最常用 bong_tangent，3 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

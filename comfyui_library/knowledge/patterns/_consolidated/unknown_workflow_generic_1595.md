@@ -3,37 +3,32 @@ name: unknown_workflow_generic_1595
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9445
-common_nodes: [InversionDemoLazySwitch, PrimitiveBoolean, RH_Prompter, RH_Translator, RH_Veo3_Text2Video, SaveVideo, ShowText]
+coverage: 1
+common_nodes: [BagelModelLoader, BagelTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH_全能视频V3文生视频_TK_1957059501363793922.json, 视频生成/文生视频/全能视频 V3文生视频_1945050682493714434.json]
+members: [图片生成/文生图/Bagel文生图_1926988360424837121.json, 图片生成/文生图/Bagel文生图_1937463028348559362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1595
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH_全能视频V3文生视频_TK_1957059501363793922.json、视频生成/文生视频/全能视频 V3文生视频_1945050682493714434.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Bagel文生图_1926988360424837121.json、图片生成/文生图/Bagel文生图_1937463028348559362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InversionDemoLazySwitch`
-- `PrimitiveBoolean`
-- `RH_Prompter`
-- `RH_Translator`
-- `RH_Veo3_Text2Video`
-- `SaveVideo`
-- `ShowText`
+- `BagelModelLoader`
+- `BagelTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `Primitive string [Crystools]` —— 1/2 个有
 
 ## 典型参数
 

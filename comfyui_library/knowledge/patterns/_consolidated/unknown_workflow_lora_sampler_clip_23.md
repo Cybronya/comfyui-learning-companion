@@ -2,99 +2,77 @@
 name: unknown_workflow_lora_sampler_clip_23
 type: Unknown Workflow
 frequency: 13
-level: strong
-coverage: 0.812308
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo]
-problems: []
+level: weak
+coverage: 0.888462
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SDXLEmptyLatentSizePicker+, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json, 视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json, 视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json, 视频生成/图生视频/HS-template_ltx2_3_style_transition_2042083663428460545.json, 视频生成/图生视频/LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json, 视频生成/图生视频/LTX 2.3 变身特效（亦诚视觉原创）_2041734587340038146.json, 视频生成/图生视频/LTX 2.3 多图引导生视频_2082120324979716097.json, 视频生成/图生视频/LTX 2.3 紫色生物机甲变身(lora)_2038207302813097986.json, 视频生成/图生视频/LTX 2.3 首尾帧_2031685383376867330.json, 视频生成/图生视频/LTX 2.3 首尾帧生成视频-调用版_2031928343846723586.json, 视频生成/图生视频/LTX 2.3图生视频_文生视频工作流_2030540846281527298.json, 视频生成/图生视频/LTX 2.3图生视频高清增强版_2075950096994361345.json, 视频生成/图生视频/音画同步图生视频高清版_2081658308183814145.json]
+members: [图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json, 图片生成/文生图/多风格绘本_2004518809287491586.json, 图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json, 图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json, 图片生成/文生图/沙雕动漫修仙道具_1975850526229311490.json, 图片生成/文生图/沙雕动漫修仙道具_1977868579548844034.json, 图片生成/文生图/沙雕动漫游戏8090都市人物开高清放大_1960893369214013442.json, 图片生成/文生图/沙雕动漫表情包沙雕动漫超火表情包_1965258449992994817.json, 图片生成/文生图/沙雕动漫都市道具专用工作流_2075022458377293825.json, 图片生成/文生图/沙雕动漫都市道具超清qwen加速版_1960894339947933698.json, 图片生成/文生图/沙雕动画场景-简笔画超清_2024368744855773185.json, 图片生成/文生图/沙雕动画道具—超清加速_2024381279193538562.json, 图片生成/文生图/简笔画都市场景图超清_1965638195176198145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_23
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json、视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json、视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json、视频生成/图生视频/HS-template_ltx2_3_style_transition_2042083663428460545.json、视频生成/图生视频/LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json、图片生成/文生图/多风格绘本_2004518809287491586.json、图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json、图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json、图片生成/文生图/沙雕动漫修仙道具_1975850526229311490.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SDXLEmptyLatentSizePicker+`
+- `SaveImage`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 12/13 个有
-- `VAEDecodeTiled` —— 12/13 个有
-- `KSamplerSelect` —— 11/13 个有
-- `LTXVLatentUpsampler` —— 11/13 个有
-- `LatentUpscaleModelLoader` —— 11/13 个有
-- `Int` —— 10/13 个有
-- `LTXVImgToVideoInplace` —— 10/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/13 个有
-- `ResizeImageMaskNode` —— 10/13 个有
-- `ResizeImagesByLongerEdge` —— 10/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 9/13 个有
-- `PrimitiveBoolean` —— 9/13 个有
-- `PrimitiveStringMultiline` —— 8/13 个有
-- `Float` —— 4/13 个有
-- `LTXVImgToVideoInplaceKJ` —— 4/13 个有
-- `MathExpression|pysssss` —— 4/13 个有
-- `ImageResizeKJv2` —— 3/13 个有
-- `YC_textReplaceNode` —— 3/13 个有
-- `GetImageSize` —— 2/13 个有
-- `LTXTiledSampler` —— 2/13 个有
-- `LTXVAddGuide` —— 2/13 个有
-- `LTXVFirstLastFrameControl_TTP` —— 2/13 个有
-- `LTXVLatentUpsamplerTiled` —— 2/13 个有
-- `LTXVMiddleFrame_TTP` —— 2/13 个有
-- `LayerUtility: TextBox` —— 2/13 个有
-- `SamplerEulerAncestral` —— 2/13 个有
-- `easy cleanGpuUsed` —— 2/13 个有
-- `easy mathInt` —— 2/13 个有
-- `ImageResizeKJ` —— 1/13 个有
-- `LTXVAddGuideMulti` —— 1/13 个有
-- `PreviewImage` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
-- `VAEDecode` —— 1/13 个有
-- `YC_ShowText` —— 1/13 个有
-- `YC_SingleTextNode` —— 1/13 个有
-- `easy clearCacheAll` —— 1/13 个有
+- `UpscaleModelLoader` —— 12/13 个有
+- `ConditioningZeroOut` —— 11/13 个有
+- `ImageUpscaleWithModel` —— 10/13 个有
+- `easy cleanGpuUsed` —— 10/13 个有
+- `easy promptConcat` —— 6/13 个有
+- `Anything Everywhere3` —— 5/13 个有
+- `CR Text Concatenate` —— 5/13 个有
+- `PreviewImage` —— 4/13 个有
+- `SaveLatent` —— 4/13 个有
+- `UltimateSDUpscale` —— 2/13 个有
+- `easy showAnything` —— 2/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 13 | 100% |
-| 高度 | 25 | 25 - 25 | 13 | 100% |
+| 宽度 | 1024x1024 (1.0) | - | 13 | 62% |
+| 高度 | 1 | 1 - 4 | 13 | 35% |
+| 采样步数 | 8 | 4 - 15 | 13 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 13 | 35% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 69% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，13 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，13 个样本，取值集中（一致性 100%）
+- 宽度 最常用 1024x1024 (1.0)，13 个样本，一致性 62%
+- 高度 中位数 1，观测区间 1 - 4，13 个样本，取值分散，一致性仅 35%
+- 采样步数 中位数 8，观测区间 4 - 15，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，13 个样本，取值分散，一致性仅 35%
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 69%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（8/13 个样本）：Steps较低可能导致细节不足

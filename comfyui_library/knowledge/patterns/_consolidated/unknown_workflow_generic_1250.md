@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1250
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [InspyrenetRembg, LoadImage, PreviewImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.857
+common_nodes: [LoadAudio, LoadImage, RecordAudio, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext一键快速三视图_1937358040310169602.json, 图片生成/图生图/kontext 万物迁移_1937833513100185602.json]
+members: [comfyui-workflow-templates-json/api_sync_so_talking_image.json, comfyui-workflow-templates-json/api_wan_image_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1250
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext一键快速三视图_1937358040310169602.json、图片生成/图生图/kontext 万物迁移_1937833513100185602.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_sync_so_talking_image.json、comfyui-workflow-templates-json/api_wan_image_to_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InspyrenetRembg`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+- `RecordAudio`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Stitch` —— 1/2 个有
-- `JjkText` —— 1/2 个有
+- `SyncTalkingImageNode` —— 1/2 个有
+- `WanImageToVideoApi` —— 1/2 个有
 
 ## 典型参数
 

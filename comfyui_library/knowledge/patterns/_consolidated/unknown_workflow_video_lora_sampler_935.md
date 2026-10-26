@@ -3,47 +3,57 @@ name: unknown_workflow_video_lora_sampler_935
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [INTConstant, LoadWanVideoT5TextEncoder, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.6415
+common_nodes: [Anything Everywhere, Divide [DVB], GetNode, LoadWanVideoT5TextEncoder, SetNode, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, mxSlider]
 problems: []
 missing: []
-members: [视频生成/文生视频/WAN2.2-AllInOne文生视频_1963909620598394882.json, 视频生成/文生视频/WAN2.2-AllInOne首尾帧_1963907661271224322.json]
+members: [视频生成/图生视频/wan2.2图生视频_1957436481176530945.json, 视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_935
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/WAN2.2-AllInOne文生视频_1963909620598394882.json、视频生成/文生视频/WAN2.2-AllInOne首尾帧_1963907661271224322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频_1957436481176530945.json、视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `INTConstant`
+- `Anything Everywhere`
+- `Divide [DVB]`
+- `GetNode`
 - `LoadWanVideoT5TextEncoder`
-- `String Literal`
+- `SetNode`
+- `Textbox`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoEnhanceAVideo`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `mxSlider`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
 - `LoadImage` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,102 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_219
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.619333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy imageRemBg]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 10
+level: moderate
+coverage: 0.7738
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json, 视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json, 视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json, 视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json, 视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json, 视频生成/图生视频/SCAIL2官方工作流_2067918393696669697.json, 视频生成/图生视频/Scail2动作舞蹈模仿！长视频生成！_2082692772032761857.json, 视频生成/图生视频/scail2社区官流（多参）动作替换 动作迁移_2073534746168217601.json, 视频生成/图生视频/短剧转绘——多人对话转绘scail2动作迁移_1995774153481392130.json]
+members: [视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json, 视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json, 视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json, 视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json, 视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json, 视频生成/图生视频/祝福视频测试 HUMO_2037863999005532162.json, 视频生成/文生视频/HuMo音频驱动文生数字人V1_1966946187645476866.json, 视频生成/文生视频/HuMo音频驱动文生数字人稳定修正版V3_1968587379978186753.json, 视频生成/文生视频/humo双图参考_1968180863945027585.json, 音频生成/音频生成/数字人HuMo单人参考数字人V1_1967105592944943105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_219
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json、视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json、视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json、视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json、视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json、视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json、视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json、视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json、视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `ImageResizeKJv2`
-- `KSampler`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `VAELoader`
-- `VHS_LoadVideo`
+全部 10 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `SetNode`
 - `VHS_VideoCombine`
-- `easy imageRemBg`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 8/9 个有
-- `VHS_VideoInfoLoaded` —— 8/9 个有
-- `WanSCAILToVideo` —— 8/9 个有
-- `easy int` —— 8/9 个有
-- `ImageFromBatch` —— 7/9 个有
-- `SetNode` —— 7/9 个有
-- `VAEDecodeTiled` —— 7/9 个有
-- `WanContextWindowsManual` —— 7/9 个有
-- `GetNode` —— 6/9 个有
-- `PreviewImage` —— 6/9 个有
-- `VAEDecode` —— 6/9 个有
-- `easy getNode` —— 6/9 个有
-- `easy setNode` —— 6/9 个有
-- `easy showAnything` —— 6/9 个有
-- `ImpactConditionalBranch` —— 5/9 个有
-- `MuyeTextEditOutput` —— 5/9 个有
-- `Fast Groups Muter (rgthree)` —— 4/9 个有
-- `CR Text` —— 3/9 个有
-- `easy float` —— 3/9 个有
-- `SimpleMath+` —— 2/9 个有
-- `ComfyMathExpression` —— 1/9 个有
-- `ComfyNumberConvert` —— 1/9 个有
-- `ComfySwitchNode` —— 1/9 个有
-- `CompressImages` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `ImageBatchMulti` —— 1/9 个有
-- `ImageFromBatch+` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `RTXVideoSuperResolution` —— 1/9 个有
-- `VHS_SelectFilename` —— 1/9 个有
-- `WanSCAILContextWindows` —— 1/9 个有
-- `WanSCAILToVideoMultiRef` —— 1/9 个有
+- `CR Prompt Text` —— 9/10 个有
+- `GetNode` —— 9/10 个有
+- `ImageResizeKJv2` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `PreviewImage` —— 8/10 个有
+- `ImageBatchMulti` —— 7/10 个有
+- `ImageConcatMulti` —— 7/10 个有
+- `RMBG` —— 6/10 个有
+- `INTConstant` —— 5/10 个有
+- `JWInteger` —— 4/10 个有
+- `MultiTalkModelLoader` —— 3/10 个有
+- `MultiTalkWav2VecEmbeds` —— 3/10 个有
+- `WanVideoCombineEmbeds` —— 3/10 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/10 个有
+- `Wav2VecModelLoader` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `PDIMAGE_LongerSize` —— 2/10 个有
+- `WanVideoTorchCompileSettings` —— 2/10 个有
+- `DF_Int_to_Float` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 8 | 9 | 84% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 3/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 8，9 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

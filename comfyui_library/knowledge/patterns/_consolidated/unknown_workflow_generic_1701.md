@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 0.833
-common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, ImpactLogger, IndexTTS2Run, IndexTTS2_Advanced, IndexTTS2_ModelManager, LoadAudio, LoadImage, PreviewAudio, PreviewTextNode, SaveAudio, Switch any [Crystools], VHS_LoadVideo, VHS_VideoInfo, easy boolean]
+common_nodes: [LoadAudio, LoadImage, PrimitiveStringMultiline, SaveVideo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [音频生成/音频生成/indexTTS2语音克隆高级控制_2022214134766510081.json, 音频生成/音频生成/indexTTS2语音情绪克隆高级控制_2035909904673808386.json]
+members: [视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json, 视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1701
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/indexTTS2语音克隆高级控制_2022214134766510081.json、音频生成/音频生成/indexTTS2语音情绪克隆高级控制_2035909904673808386.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json、视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,22 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `ImpactLogger`
-- `IndexTTS2Run`
-- `IndexTTS2_Advanced`
-- `IndexTTS2_ModelManager`
 - `LoadAudio`
 - `LoadImage`
-- `PreviewAudio`
-- `PreviewTextNode`
-- `SaveAudio`
-- `Switch any [Crystools]`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `easy boolean`
+- `PrimitiveStringMultiline`
+- `SaveVideo`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
 
 ## 典型参数
 

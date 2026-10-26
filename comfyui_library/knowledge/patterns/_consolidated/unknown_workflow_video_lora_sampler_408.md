@@ -1,65 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_408
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9928
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.652
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json, 视频生成/图生视频/Multitalk双人对唱数字人_1941678134205038593.json, 视频生成/图生视频/infinitetalk单人图生视频对口型_1960923370206498818.json, 视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json, 视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json]
+members: [视频生成/图生视频/LTX 2.3+PromptRelay 三图参考_2040053495893598209.json, 视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2080550056238862337.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2083097564500549633.json, 视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json, 视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_408
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json、视频生成/图生视频/Multitalk双人对唱数字人_1941678134205038593.json、视频生成/图生视频/infinitetalk单人图生视频对口型_1960923370206498818.json、视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json、视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3+PromptRelay 三图参考_2040053495893598209.json、视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json、视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2080550056238862337.json、视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2083097564500549633.json、视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 4/5 个有
-- `SeparateMasks` —— 4/5 个有
-- `WanVideoApplyNAG` —— 4/5 个有
-- `WanVideoTextEncodeSingle` —— 4/5 个有
-- `PreviewAudio` —— 3/5 个有
-- `EsesImageEffectBloom` —— 2/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `WanVideoSLG` —— 2/5 个有
-- `AudioCropProcessUTK` —— 1/5 个有
-- `Manual XY Entry Info` —— 1/5 个有
-- `WanVideoSetRadialAttention` —— 1/5 个有
-- `WanVideoTextEncode` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 4/6 个有
+- `LTX2_NAG` —— 4/6 个有
+- `LTXVAddGuideMulti` —— 4/6 个有
+- `LTXVAudioVAEDecode` —— 4/6 个有
+- `MathExpression|pysssss` —— 4/6 个有
+- `PathchSageAttentionKJ` —— 4/6 个有
+- `PromptRelayEncodeTimeline` —— 4/6 个有
+- `ComfyMathExpression` —— 2/6 个有
+- `LTXIdentityOverlapConditioning` —— 2/6 个有
+- `LatentUpscaleModelLoader` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `RMBG` —— 2/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 97 - 465 | 6 | 51% |
+| 高度 | 24 | 24 - 25 | 6 | 98% |
 
 ## 常见问题
 
@@ -67,4 +74,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 97 - 465，6 个样本
+- 高度 中位数 24，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）

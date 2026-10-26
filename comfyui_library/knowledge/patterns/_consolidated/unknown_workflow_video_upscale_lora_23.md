@@ -3,81 +3,52 @@ name: unknown_workflow_video_upscale_lora_23
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.631667
-common_nodes: [DownloadAndLoadWav2VecModel, FaceRestoreCFWithModel, FaceRestoreModelLoader, Float, GetNode, ImageFromBatch+, ImageResize+, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, Note _O, PreviewAudio, PrimitiveBoolean, RH_Captioner, RH_GetAudioDuration, ReActorFaceSwap, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+coverage: 0.939
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json, 视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json, 视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json]
+members: [视频生成/图生视频/返老还童图生视频_1900773672473501697.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1992837863268216833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_23
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json、视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json、视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/返老还童图生视频_1900773672473501697.json、视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json、视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1992837863268216833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DownloadAndLoadWav2VecModel`
-- `FaceRestoreCFWithModel`
-- `FaceRestoreModelLoader`
-- `Float`
-- `GetNode`
-- `ImageFromBatch+`
-- `ImageResize+`
 - `ImageUpscaleWithModel`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
-- `Note _O`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `RH_GetAudioDuration`
-- `ReActorFaceSwap`
-- `SetNode`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CreateCFGScheduleFloatList` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
-- `StringToFloatList` —— 1/3 个有
-- `WanVideoClipVisionEncode` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
-- `WanVideoScheduler` —— 1/3 个有
-- `WanVideoSigmaToStep` —— 1/3 个有
+- `TextInput_` —— 2/3 个有
+- `easy imageSize` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
+- `Select Image Indices` —— 1/3 个有
+- `Textbox` —— 1/3 个有
 
 ## 典型参数
 

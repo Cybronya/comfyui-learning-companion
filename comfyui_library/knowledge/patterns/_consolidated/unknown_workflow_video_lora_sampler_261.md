@@ -1,72 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_261
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.496625
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.900444
+common_nodes: [CLIPVisionLoader, LoadImage, SplineEditor, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json, 视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json, 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json, 视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json, 视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json, 视频生成/图生视频/🐱OneToAll视频姿势参考（骨骼驱动）-言灵ru😼_2000904519246639105.json, 视频生成/文生视频/One-to-All Animation角色动画与图像姿态迁移延长流_1999029619397382145.json, 视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json]
+members: [视频生成/图生视频/WanMove图生视频动作编辑_1999827613361242114.json, 视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999117926080933890.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999366459300212737.json, 视频生成/图生视频/Wanmove多点轨迹运动指引图生视频V1_1999110831537258497.json, 视频生成/图生视频/wanvideo_WanMove_I2V_example_1998599416028258305.json, 视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2007470369120198658.json, 视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2008000096457203714.json, 视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_261
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json、视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json、视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json、视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json、视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/WanMove图生视频动作编辑_1999827613361242114.json、视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json、视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999117926080933890.json、视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999366459300212737.json、视频生成/图生视频/Wanmove多点轨迹运动指引图生视频V1_1999110831537258497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
+全部 9 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllExtendEmbeds`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 7/8 个有
-- `WanVideoScheduler` —— 7/8 个有
-- `MathExpression|pysssss` —— 3/8 个有
-- `WanVideoTorchCompileSettings` —— 3/8 个有
-- `easy forLoopEnd` —— 3/8 个有
-- `easy forLoopStart` —— 3/8 个有
-- `MaskPreview+` —— 2/8 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
-- `GIMMVFI_interpolate` —— 1/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `ImpactInt` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
+- `LoadWanVideoT5TextEncoder` —— 8/9 个有
+- `RepeatImageBatch` —— 8/9 个有
+- `WanVideoSetBlockSwap` —— 8/9 个有
+- `WanVideoSetLoRAs` —— 8/9 个有
+- `WanVideoTextEncode` —— 8/9 个有
+- `WanVideoWanDrawWanMoveTracks` —— 8/9 个有
+- `INTConstant` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `ImageResizeKJv2` —— 4/9 个有
+- `WanVideoTorchCompileSettings` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `ImageConcanate` —— 3/9 个有
+- `CR Prompt Text` —— 2/9 个有
+- `Text Multiline` —— 2/9 个有
+- `Anything Everywhere3` —— 1/9 个有
+- `GetNode` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `WanVideoTextEncodeCached` —— 1/9 个有
 
 ## 典型参数
 

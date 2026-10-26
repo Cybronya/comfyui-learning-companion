@@ -1,39 +1,44 @@
 ---
 name: unknown_workflow_generic_618
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.712
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.8498
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json, comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json]
+members: [数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json, 音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json, 音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json, 音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_618
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json、comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json、音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json、音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json、音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageCompare`
-- `LoadImage`
-- `SaveImageAdvanced`
+全部 5 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateBoundingBoxes` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `BuildJsonPromptIdeogram` —— 2/4 个有
-- `Flux3ImageNode` —— 2/4 个有
-- `IdeogramEditApi` —— 1/4 个有
-- `IdeogramPreciseEditApi` —— 1/4 个有
+- `Apply Whisper` —— 3/5 个有
+- `AudioCrop` —— 3/5 个有
+- `CR Text` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `HeartMuLa_Transcribe` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
 
 ## 典型参数
 

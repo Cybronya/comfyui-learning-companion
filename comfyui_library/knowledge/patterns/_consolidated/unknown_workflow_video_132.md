@@ -3,39 +3,57 @@ name: unknown_workflow_video_132
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.825
-common_nodes: [GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, RHHiddenNodes, VHS_VideoCombine, easy showAnything]
+coverage: 0.8085
+common_nodes: [ACEStepGen, AudioCrop, Fast Groups Bypasser (rgthree), FloatProcess, GenerationParameters, GetTextFromJson, LayerUtility: PurgeVRAM, LoadAudio, LoadFloatModels, LoadImage, LoadJsonFromText, MultiLineLyrics, MultiLinePromptACES, PrimitiveFloat, RH_LLMAPI_NODE, ReplaceText, SaveAudio, ShowText, Text Concatenate, Text Multiline, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强混元Foley视频自动音效+MiniCPM4.5视觉反推_1962885773810970625.json, 音频生成/音频生成/最强视频反推混元Foley视频自动音效+Qwen3VL+LLM自动扩词_1985906304566927362.json]
+members: [视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json, 视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_132
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强混元Foley视频自动音效+MiniCPM4.5视觉反推_1962885773810970625.json、音频生成/音频生成/最强视频反推混元Foley视频自动音效+Qwen3VL+LLM自动扩词_1985906304566927362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json、视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadVideo`
-- `RHHiddenNodes`
+- `ACEStepGen`
+- `AudioCrop`
+- `Fast Groups Bypasser (rgthree)`
+- `FloatProcess`
+- `GenerationParameters`
+- `GetTextFromJson`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
+- `LoadFloatModels`
+- `LoadImage`
+- `LoadJsonFromText`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `PrimitiveFloat`
+- `RH_LLMAPI_NODE`
+- `ReplaceText`
+- `SaveAudio`
+- `ShowText`
+- `Text Concatenate`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
+- `Add Subtitles To Frames` —— 1/2 个有
+- `Apply Whisper` —— 1/2 个有
+- `DF_Int_to_Float` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `Primitive integer [Crystools]` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

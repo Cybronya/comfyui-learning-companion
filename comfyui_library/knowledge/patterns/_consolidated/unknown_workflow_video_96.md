@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
+common_nodes: [HYMotionEncodeText, HYMotionExportFBX, HYMotionGenerate, HYMotionLoadLLM, HYMotionLoadNetwork, HYMotionPreview, Preview3D, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json, 视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json]
+members: [数字人/数字人/3D角色动作生成_2044976802380128257.json, 视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_96
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json、视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/3D角色动作生成_2044976802380128257.json、视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,14 +23,19 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetVideoComponents`
-- `LoadImage`
+- `HYMotionEncodeText`
+- `HYMotionExportFBX`
+- `HYMotionGenerate`
+- `HYMotionLoadLLM`
+- `HYMotionLoadNetwork`
+- `HYMotionPreview`
+- `Preview3D`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31ProImageToVideo` —— 1/2 个有
-- `RH_RhartVideoV31ProStartEndToVideo` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `HYMotionPreviewAnimation` —— 1/2 个有
 
 ## 典型参数
 

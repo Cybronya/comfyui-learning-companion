@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_1138
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7625
-common_nodes: [ImageStitch, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.833333
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bfl_flux_1_kontext_max_image.json, comfyui-workflow-templates-json/utility_image_stitch.json]
+members: [视频生成/图生视频/全能视频S2   25秒图生视频_2027213914072686593.json, 视频生成/图生视频/全能视频S图生视频官方版本(注意价格)_2016060142260850690.json, 视频生成/文生视频/全能视频S图生视频 （横版_竖版），无水印，速度快_2015429548715810818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1138
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux_1_kontext_max_image.json、comfyui-workflow-templates-json/utility_image_stitch.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频S2   25秒图生视频_2027213914072686593.json、视频生成/图生视频/全能视频S图生视频官方版本(注意价格)_2016060142260850690.json、视频生成/文生视频/全能视频S图生视频 （横版_竖版），无水印，速度快_2015429548715810818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageStitch`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMaxImageNode` —— 1/2 个有
-- `ResizeImageMaskNode` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `RH_Sora2_I2V_PRO` —— 2/3 个有
+- `RH_Sora2_I2V_Realistic` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

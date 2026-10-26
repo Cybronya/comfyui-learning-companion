@@ -1,80 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_5
 type: Unknown Workflow
-frequency: 32
-level: moderate
-coverage: 0.461844
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, RandomNoise, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 23
+level: strong
+coverage: 0.950348
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy compare, easy ifElse, easy imageSize, easy mathInt, easy positive, easy promptConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3二采工作流_2107807033440428033.json, 视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json, 视频生成/图生视频/H3最强二采【唐僧彩蛋】_2107659032340287490.json, 视频生成/图生视频/H3最强二采【飓风京剧】_2107672314556010498.json, 视频生成/图生视频/H3最强二采，吊打SelfLift【虚空折叠流】_2107371063817621505.json, 视频生成/图生视频/H3最强二采，音画俱佳_2107833447233441793.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2100506302412840961.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2101855618586988546.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2102665425023750145.json, 视频生成/图生视频/H3最强动作工作流-真武大弟篇【金鱼佬框架--吃猪侠定制版】_2098093642488565761.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2101855011373404161.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2102664968234692610.json, 视频生成/图生视频/H3最强电影LORA+巅峰双采去油PRO版_2100507019949203458.json, 视频生成/图生视频/H3短剧生成新模型_2102294100425920514.json, 视频生成/图生视频/H3超强工作流_2107296344921698306.json, 视频生成/图生视频/MMH3全能参考生视频自用调优版（附带视频续接教程）_2096409310929702913.json, 视频生成/图生视频/MiniMax_H3-多参考7P3A2V生视频-二采优化版_2100561807021797378.json, 视频生成/图生视频/MiniMax_H3-多参考7P3A2V生视频-优化版_2100555142960603138.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2098931106912489474.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2098988833684676610.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2099664508309561346.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2107829656270499842.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2109548068579397633.json, 视频生成/图生视频/Minimax-H3多参考双采放大生成视频（Singularity）_2096792911970136066.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频_2097875587942666242.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频多比例版本_2104119164674859010.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2096460541328973825.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2097340280092581890.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒竖屏960分辨率）_2096477149321580546.json, 视频生成/文生视频/AIGC特异点-Minimax-H3多参考双采放大生成视频（Singularity）_2096091492187205633.json, 视频生成/文生视频/MiniMax H3-多参生视频二采15秒，24g可跑_2098839012025917442.json, 视频生成/文生视频/视频生成API_2099703467815292929.json]
+members: [视频生成/图生视频/LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 优化版_2051526645630156801.json, 视频生成/图生视频/LTX2.3 图生视频_2054436042597511169.json, 视频生成/图生视频/LTX2.3 图生视频提示词自动优化版 26-05-07_2052323497153703938.json, 视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2054756564090802178.json, 视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2055141755422560257.json, 视频生成/图生视频/LTX2.3+图生视频_2054731485474770946.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频LTX2.3_2058444144254742529.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2057287117268676609.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058362218181386241.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058392205324275714.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058398311345909761.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058417532914196482.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058436523154034690.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058440251340840961.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058444261548453889.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058491686904487937.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2067494155026255873.json, 视频生成/图生视频/ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json, 视频生成/图生视频/ltx2.3-qwen3-tts-服装模特带货短视频_2055109104980504577.json, 视频生成/图生视频/一键生成--LTX2.3 图生视频_2057346400337358850.json, 视频生成/图生视频/一键生成--LTX2.3 图生视频_2057635344086028289.json, 视频生成/文生视频/LTX2.3 图生视频提示词自动优化版_2071572188259512321.json, 视频生成/文生视频/LTX2.3+-图生视频+15s超长时间+电商服装模特带货短视频+优化版_2052915059373953025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_5
 
-> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（视频生成/图生视频/H3二采工作流_2107807033440428033.json、视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json、视频生成/图生视频/H3最强二采【唐僧彩蛋】_2107659032340287490.json、视频生成/图生视频/H3最强二采【飓风京剧】_2107672314556010498.json、视频生成/图生视频/H3最强二采，吊打SelfLift【虚空折叠流】_2107371063817621505.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 优化版_2051526645630156801.json、视频生成/图生视频/LTX2.3 图生视频_2054436042597511169.json、视频生成/图生视频/LTX2.3 图生视频提示词自动优化版 26-05-07_2052323497153703938.json、视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2054756564090802178.json、视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2055141755422560257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：32
-- **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **样本数**：23
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 32 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 23 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy compare`
+- `easy ifElse`
+- `easy imageSize`
+- `easy mathInt`
+- `easy positive`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 31/32 个有
-- `GetNode` —— 31/32 个有
-- `LoadAudio` —— 31/32 个有
-- `PrimitiveFloat` —— 31/32 个有
-- `ResolutionSelector` —— 31/32 个有
-- `SetNode` —— 31/32 个有
-- `Text` —— 31/32 个有
-- `easy float` —— 31/32 个有
-- `VHS_LoadVideo` —— 30/32 个有
-- `忽略多组孤海` —— 27/32 个有
-- `LoraLoaderModelOnly` —— 23/32 个有
-- `ModelAttentionBackend` —— 10/32 个有
-- `Lora Loader Stack (rgthree)` —— 9/32 个有
-- `SolAttnMiniMax` —— 9/32 个有
-- `EmptyImage` —— 6/32 个有
-- `PreviewImage` —— 6/32 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/32 个有
-- `Label (rgthree)` —— 2/32 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/32 个有
-- `ModelPreviewOverrideKJ` —— 2/32 个有
-- `Anything Everywhere` —— 1/32 个有
-- `CFGGuider` —— 1/32 个有
-- `CR Text Concatenate` —— 1/32 个有
-- `ConditioningZeroOut` —— 1/32 个有
-- `Float` —— 1/32 个有
-- `JjkText` —— 1/32 个有
-- `MiniMaxH3VoiceLibraryLoadT8` —— 1/32 个有
-- `easy int` —— 1/32 个有
+- `ImageConcanate` —— 22/23 个有
+- `LTXVEmptyLatentAudio` —— 22/23 个有
+- `LTXVPreprocess` —— 22/23 个有
+- `ResizeImagesByLongerEdge` —— 22/23 个有
+- `EmptyImage` —— 21/23 个有
+- `ImageScaleBy` —— 21/23 个有
+- `easy int` —— 21/23 个有
+- `CR Text` —— 19/23 个有
+- `Dapao_LlamaChat` —— 19/23 个有
+- `SimpleMath+` —— 19/23 个有
+- `AILab_QwenVL` —— 4/23 个有
+- `PreviewImage` —— 4/23 个有
+- `easy showAnything` —— 4/23 个有
+- `PreviewAny` —— 2/23 个有
+- `Seed (rgthree)` —— 2/23 个有
+- `CM_FloatToInt` —— 1/23 个有
+- `ExtractLinesByIndex` —— 1/23 个有
+- `LTXVAudioVAEEncode` —— 1/23 个有
+- `LayerUtility: TextImage V2` —— 1/23 个有
+- `LoadAudio` —— 1/23 个有
+- `Note Plus (mtb)` —— 1/23 个有
+- `PreviewAudio` —— 1/23 个有
+- `Qwen3TTSModelLoader` —— 1/23 个有
+- `Qwen3TTSVoiceClone` —— 1/23 个有
+- `SetLatentNoiseMask` —— 1/23 个有
+- `SolidMask` —— 1/23 个有
+- `SoundFlow_GetLength` —— 1/23 个有
+- `easy cleanGpuUsed` —— 1/23 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 361 - 481 | 22 | 93% |
+| 高度 | 24 | 24 - 24 | 22 | 100% |
 
 ## 常见问题
 
@@ -82,4 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 361 - 481，22 个样本，取值集中（一致性 93%）
+- 高度 中位数 24，观测区间 24 - 24，22 个样本，取值集中（一致性 100%）

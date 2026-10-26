@@ -3,62 +3,50 @@ name: unknown_workflow_lora_sampler_unet_263
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6075
-common_nodes: [Bjornulf_ShowInt, CFGNorm, CLIPLoader, CR Prompt List, GetNode, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, StringFunction|pysssss, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy forLoopEnd, easy forLoopStart, easy imageCount, easy imageRemBg, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.769
+common_nodes: [Any Switch (rgthree), CLIPLoader, DapaoImagePadDirectionNode, Image Comparer (rgthree), ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, Switch any [Crystools], TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, 孤海注释, 忽略多组孤海, 长边短边]
+problems: []
 missing: []
-members: [图片生成/图生图/ZIP批量—扁平转3D_1960605506417098753.json, 图片生成/图生图/ZIP批量—扁平转3D（不同图片不同材质）_1960891126226071553.json]
+members: [图片生成/图生图/Qwen image 2.1 高质量无痕扩图｜指定扩图大小｜指定图像比例｜零偏移｜零色差_2111962967242792961.json, 图片生成/图生图/千问Qwen image 2.1 高质量无痕扩图｜指定扩图大小｜指定图像比例｜零偏移｜零色差_2113826658422710274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_263
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ZIP批量—扁平转3D_1960605506417098753.json、图片生成/图生图/ZIP批量—扁平转3D（不同图片不同材质）_1960891126226071553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1 高质量无痕扩图｜指定扩图大小｜指定图像比例｜零偏移｜零色差_2111962967242792961.json、图片生成/图生图/千问Qwen image 2.1 高质量无痕扩图｜指定扩图大小｜指定图像比例｜零偏移｜零色差_2113826658422710274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CFGNorm`
+- `Any Switch (rgthree)`
 - `CLIPLoader`
-- `CR Prompt List`
-- `GetNode`
-- `ImageScaleToTotalPixels`
+- `DapaoImagePadDirectionNode`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
 - `SaveImage`
-- `SetNode`
-- `StringFunction|pysssss`
-- `TextEncodeQwenImageEdit`
+- `Switch any [Crystools]`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy imageRemBg`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 1/2 个有
-- `math_calculate` —— 1/2 个有
+- `孤海注释`
+- `忽略多组孤海`
+- `长边短边`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
+| 采样步数 | 25 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -66,16 +54,13 @@ source: knowledge_consolidation
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

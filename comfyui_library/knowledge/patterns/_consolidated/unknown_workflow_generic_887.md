@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_887
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.733333
-common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.48675
+common_nodes: [CR Prompt Text, Comfly_suno_custom, SaveAudio, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json, 图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json, 图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json]
+members: [音频生成/音频生成/Suno AI 音乐创作（根叔）_1977766329824464897.json, 音频生成/音频生成/Suno V5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1971612827184197633.json, 音频生成/音频生成/Suno V5.5音乐自定义生成顶级版（贞贞的AI工坊）_2044991724270915585.json, 音频生成/音频生成/Suno V5.5顶级音乐生成（贞贞的AI工坊）_2045176196102627330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_887
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json、图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json、图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno AI 音乐创作（根叔）_1977766329824464897.json、音频生成/音频生成/Suno V5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1971612827184197633.json、音频生成/音频生成/Suno V5.5音乐自定义生成顶级版（贞贞的AI工坊）_2044991724270915585.json、音频生成/音频生成/Suno V5.5顶级音乐生成（贞贞的AI工坊）_2045176196102627330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RTXVideoSuperResolution`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_suno_custom`
+- `SaveAudio`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `NumberClamp` —— 1/3 个有
+- `Comfly_api_set` —— 3/4 个有
 
 ## 典型参数
 

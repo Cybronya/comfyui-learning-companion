@@ -1,69 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_188
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8352
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, PreviewAny, ResolutionSelector, SaveImage, StringConstantMultiline, StringFunction|pysssss, StringReplace, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.823333
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/反推提示词/qwen2.1文生图_2103878768724107266.json, 图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json, 图片生成/图生图/qwen2.1图像编辑_2103878738139246594.json, 图片生成/图生图/qwen2.1移除rgba_2103878728098082818.json, 图片生成/图生图/qwen_image_21_controlnet_2105931638281687042.json]
+members: [图片生成/文生图/【API】Qwen-Image2.1文生图（提示词反推）_2111987215688622081.json, 图片生成/文生图/千问2.1！ 文生图！ 提示词自动优化！_2103393990568660994.json, 数字人/数字人/Qwen2.1- 文生图_2101941309354364929.json, 数字人/数字人/千问2.1！ 文生图！ 提示词自动优化！_2101851079326658561.json, 视频生成/文生视频/Qwen_Image_2.1_PE_文生图_2104447077903323137.json, 视频生成/文生视频/Qwen_Image_2.1_文生图-PE版_2106926003867185154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_188
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/qwen2.1文生图_2103878768724107266.json、图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json、图片生成/图生图/qwen2.1图像编辑_2103878738139246594.json、图片生成/图生图/qwen2.1移除rgba_2103878728098082818.json、图片生成/图生图/qwen_image_21_controlnet_2105931638281687042.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/【API】Qwen-Image2.1文生图（提示词反推）_2111987215688622081.json、图片生成/文生图/千问2.1！ 文生图！ 提示词自动优化！_2103393990568660994.json、数字人/数字人/Qwen2.1- 文生图_2101941309354364929.json、数字人/数字人/千问2.1！ 文生图！ 提示词自动优化！_2101851079326658561.json、视频生成/文生视频/Qwen_Image_2.1_PE_文生图_2104447077903323137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
-- `PreviewAny`
 - `ResolutionSelector`
 - `SaveImage`
-- `StringConstantMultiline`
-- `StringFunction|pysssss`
-- `StringReplace`
 - `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 4/5 个有
-- `ComfySwitchNode` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `QwenImage21Cache` —— 4/5 个有
-- `easy seed` —— 4/5 个有
-- `FluxKontextImageScale` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `ModelPatchLoader` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `ZImageFunControlnet` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `PreviewImage` —— 5/6 个有
+- `TextGenerateLTX2Prompt` —— 4/6 个有
+- `CR Prompt Text` —— 3/6 个有
+- `FastGroupsBypassSwitch` —— 3/6 个有
+- `JjkText` —— 3/6 个有
+- `QwenImage21Cache` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `ComfySwitchNode` —— 2/6 个有
+- `EmptyImage` —— 2/6 个有
+- `QwenPERewriteT8` —— 2/6 个有
+- `PlaySound|pysssss` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 采样步数 | 40 | 40 - 40 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 采样步数 | 45 | 40 - 50 | 6 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -71,10 +65,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 45，观测区间 40 - 50，6 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

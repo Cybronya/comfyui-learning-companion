@@ -1,78 +1,71 @@
 ---
 name: unknown_workflow_lora_sampler_unet_49
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.972
-common_nodes: [CLIPLoader, EmptyLatentImage, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, KSampler, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeKrea2OstrisEdit, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: moderate
+coverage: 0.758
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, JjkText, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveInt, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json, 图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079277352131063809.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079758940988071937.json, 图片生成/图生图/Krea2编辑移除元素_2079366566331904001.json, 图片生成/图生图/krea2-多人姿态控制_2092223835184656385.json, 图片生成/图生图/krea2-最强姿态控制_2091531264733048833.json]
+members: [图片生成/图生图/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2111005025232310273.json, 图片生成/图生图/舞蹈短片丨MiniMax H3丨首帧驱动·音画同生_2112107711432318977.json, 数字人/数字人/多图参考H3_ Two-Player Brawl! Multiple Screenshots_2111978242201710593.json, 视频生成/图生视频/H3图生视频！长视频加速版！H3 Image-to-Video! Long-Form Video_2107994007895896066.json, 视频生成/图生视频/H3图生视频！长视频加速版！H3_Image-to-Video!_Long-Form_Video_2110912412697325569.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站_2113791006826131458.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2084203498043957249.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2110889409909452801.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2113790005394104322.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2113802066551468034.json, 视频生成/图生视频/MiniMaxH3武状元，双人对战，效果超赞！_2114304947578818562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_49
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json、图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2111005025232310273.json、图片生成/图生图/舞蹈短片丨MiniMax H3丨首帧驱动·音画同生_2112107711432318977.json、数字人/数字人/多图参考H3_ Two-Player Brawl! Multiple Screenshots_2111978242201710593.json、视频生成/图生视频/H3图生视频！长视频加速版！H3 Image-to-Video! Long-Form Video_2107994007895896066.json、视频生成/图生视频/H3图生视频！长视频加速版！H3_Image-to-Video!_Long-Form_Video_2110912412697325569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `FluxKontextImageScale`
-- `FluxKontextMultiReferenceLatentMethod`
-- `KSampler`
-- `Krea2OstrisEditModelPatch`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `JjkText`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeKrea2OstrisEdit`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveInt`
+- `SelfLiftAvatarH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 8/10 个有
-- `CR Prompt Text` —— 5/10 个有
-- `BodyRatioMapperSDPoseRender` —— 2/10 个有
-- `CheckpointLoaderSimple` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `ResolutionSelector` —— 2/10 个有
-- `SDPoseKeypointExtractor` —— 2/10 个有
-- `BBoxYOLO` —— 1/10 个有
-- `YOLOModelLoader` —— 1/10 个有
+- `GetNode` —— 10/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `VHS_VideoCombine` —— 9/11 个有
+- `DF_Int_to_Float` —— 8/11 个有
+- `RTXVideoFrameGeneration` —— 8/11 个有
+- `ResolutionSelector` —— 8/11 个有
+- `EmptyImage` —— 4/11 个有
+- `PreviewImage` —— 4/11 个有
+- `CreateVideo` —— 2/11 个有
+- `SaveVideo` —— 2/11 个有
+- `MiniMaxH3ImageToVideo` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 10 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 1024 | 752 - 1024 | 10 | 87% |
-| 高度 | 1208 | 1024 - 1584 | 10 | 81% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，10 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 752 - 1024，10 个样本，取值集中（一致性 87%）
-- 高度 中位数 1208，观测区间 1024 - 1584，10 个样本，取值集中（一致性 81%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

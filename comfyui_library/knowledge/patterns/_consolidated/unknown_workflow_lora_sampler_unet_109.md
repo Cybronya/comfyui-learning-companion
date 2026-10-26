@@ -1,81 +1,93 @@
 ---
 name: unknown_workflow_lora_sampler_unet_109
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.943333
-common_nodes: [BatchImagesNode, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.589714
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoraLoaderModelOnly, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen image 2.1单图编辑4K版_2101843086979719170.json, 图片生成/图生图/文生图_参考生图2合1_2108194083813552130.json, 图片生成/图生图/文生图_参考生图2合1改_2110563178919845889.json, 图片生成/图生图/文生图_参考生图2合1改_2111007047281111042.json, 图片生成/文生图/image2.1文生图_参考生图2合1_2109107304275730434.json, 图片生成/文生图/文生图_参考生图2合1（改）_2108160229987938306.json]
+members: [数字人/数字人/MinimaxH3二采超快无脑数字人流程_2111169741544050690.json, 视频生成/图生视频/MinimaxH3数字人-唱歌说话快速高效_2110366154089910274.json, 视频生成/图生视频/minimax h3 二菜 1080p 工作流_2097150473840193537.json, 视频生成/文生视频/AI 蛮子   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V5.0_2096893867701399553.json, 视频生成/文生视频/AI蛮子  Minimax H3 文生+图参生视频二采高清放大工作流V4.2_2096076279169773569.json, 视频生成/文生视频/自用版  Minimax H3 文生+图参多合一生视频二采高清放大工作流V4.0_2094319638514593793.json, 视频生成/文生视频/自用版  Minimax H3 文生+图参生视频二采高清放大工作流（支持数字人）V4.1_2095775074598088705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_109
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1单图编辑4K版_2101843086979719170.json、图片生成/图生图/文生图_参考生图2合1_2108194083813552130.json、图片生成/图生图/文生图_参考生图2合1改_2110563178919845889.json、图片生成/图生图/文生图_参考生图2合1改_2111007047281111042.json、图片生成/文生图/image2.1文生图_参考生图2合1_2109107304275730434.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MinimaxH3二采超快无脑数字人流程_2111169741544050690.json、视频生成/图生视频/MinimaxH3数字人-唱歌说话快速高效_2110366154089910274.json、视频生成/图生视频/minimax h3 二菜 1080p 工作流_2097150473840193537.json、视频生成/文生视频/AI 蛮子   Minimax H3 文生+首尾+图参多合一生视频二采高清放大工作流V5.0_2096893867701399553.json、视频生成/文生视频/AI蛮子  Minimax H3 文生+图参生视频二采高清放大工作流V4.2_2096076279169773569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BatchImagesNode`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImageAdvanced` —— 5/6 个有
-- `llama_cpp_instruct_adv` —— 5/6 个有
-- `llama_cpp_model_loader` —— 5/6 个有
-- `JjkText` —— 2/6 个有
-- `ComfySwitchNode` —— 1/6 个有
-- `KOOK_ImageCompression` —— 1/6 个有
-- `KOOK_SaveJPGImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SeedVR2LoadDiTModel` —— 1/6 个有
-- `SeedVR2LoadVAEModel` —— 1/6 个有
-- `SeedVR2VideoUpscaler` —— 1/6 个有
+- `CreateVideo` —— 6/7 个有
+- `GetNode` —— 6/7 个有
+- `LTXVConcatAVLatent` —— 6/7 个有
+- `LTXVSeparateAVLatent` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `MiniMaxChunkFeedForward` —— 6/7 个有
+- `MinimaxH3LatentUpscaler3D` —— 6/7 个有
+- `SaveVideo` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `SolAttnPatch` —— 6/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 6/7 个有
+- `Int` —— 5/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `VAEDecodeAudio` —— 5/7 个有
+- `Any Switch (rgthree)` —— 4/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `MiniMaxH3ImageToVideo` —— 4/7 个有
+- `PathchSageAttentionKJ` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `孤海注释` —— 4/7 个有
+- `忽略多组孤海` —— 4/7 个有
+- `VHS_VideoCombine` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `MiniMaxH3Unified` —— 2/7 个有
+- `ModelPreviewOverrideKJ` —— 2/7 个有
+- `SplitSigmas` —— 2/7 个有
+- `H3SigmaRefiner` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `ImpactConditionalBranch` —— 1/7 个有
+- `ManualSigmas` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `easy boolean` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
+- `布尔孤海` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 1 - 20 | 6 | 58% |
-| Prompt 约束强度(CFG) | 8 | 1 - 8 | 6 | 62% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 0.3 - 1 | 6 | 70% |
-| 宽度 | 1024 | 512 - 1024 | 6 | 80% |
-| 高度 | 1024 | 512 - 1024 | 6 | 80% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 1 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，6 个样本
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，6 个样本
-- 宽度 中位数 1024，观测区间 512 - 1024，6 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，6 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

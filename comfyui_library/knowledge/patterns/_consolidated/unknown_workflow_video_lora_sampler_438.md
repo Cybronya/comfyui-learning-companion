@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_438
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7094
-common_nodes: [CreateCFGScheduleFloatList, GetNode, HuMoEmbeds, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.7975
+common_nodes: [GetImageSizeAndCount, INTConstant, ImageResizeKJ, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, RH_Captioner, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/wanvideo_HuMo_图片+音频生成视频_1967466923598417921.json, 视频生成/图生视频/wanvideo_HuMo_多参考图生成视频_1967487607431159809.json, 视频生成/图生视频/单图+语音-字节HuMo数字人(提示+图+音频驱动)含双图流_1968378350089719809.json, 视频生成/图生视频/单图-数字人-HuMo多模态+TTS数字人(提示+图+音频驱动)_1968155104769617921.json, 音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json]
+members: [视频生成/文生视频/lynx-VACE-ID一致性图生视频_1975850238516793345.json, 视频生成/文生视频/lynx-VACE-ID一致性图生视频（独立垫图）_1975858725598662658.json, 视频生成/文生视频/lynx-VACE-ID一致性首尾帧_1975861201806692353.json, 视频生成/文生视频/lynx-VACE-ID双一致性姿态视频引导视频生成_1975863056892866561.json, 视频生成/文生视频/lynx-VACE-ID双一致性文生视频_1975862492029169665.json, 视频生成/文生视频/lynx-VACE-ID换脸后图生视频_1975861887592214529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_438
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wanvideo_HuMo_图片+音频生成视频_1967466923598417921.json、视频生成/图生视频/wanvideo_HuMo_多参考图生成视频_1967487607431159809.json、视频生成/图生视频/单图+语音-字节HuMo数字人(提示+图+音频驱动)含双图流_1968378350089719809.json、视频生成/图生视频/单图-数字人-HuMo多模态+TTS数字人(提示+图+音频驱动)_1968155104769617921.json、音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/lynx-VACE-ID一致性图生视频_1975850238516793345.json、视频生成/文生视频/lynx-VACE-ID一致性图生视频（独立垫图）_1975858725598662658.json、视频生成/文生视频/lynx-VACE-ID一致性首尾帧_1975861201806692353.json、视频生成/文生视频/lynx-VACE-ID双一致性姿态视频引导视频生成_1975863056892866561.json、视频生成/文生视频/lynx-VACE-ID双一致性文生视频_1975862492029169665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetNode`
-- `HuMoEmbeds`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 6 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJ`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
 - `PreviewImage`
-- `SetNode`
+- `RH_Captioner`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/5 个有
-- `ImageBatchMulti` —— 4/5 个有
-- `WanVideoSetLoRAs` —— 4/5 个有
-- `Audio Duration (mtb)` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `IndexTTS2Run` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `PreviewAudio` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `easy cleanGpuUsed` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `WanVideoEmptyEmbeds` —— 4/6 个有
+- `GetImageSize` —— 2/6 个有
+- `Image Blank` —— 2/6 个有
+- `ImageCompositeMasked` —— 2/6 个有
+- `LayerMask: LoadFlorence2Model` —— 2/6 个有
+- `LayerMask: ObjectDetectorFL2` —— 2/6 个有
+- `LayerMask: SAM2Ultra` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `MaskToImage` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `DWPreprocessor` —— 1/6 个有
+- `GPENO Face Restoration` —— 1/6 个有
+- `ReActorFaceSwap` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

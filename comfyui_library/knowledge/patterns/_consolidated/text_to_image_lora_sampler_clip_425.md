@@ -3,62 +3,65 @@ name: text_to_image_lora_sampler_clip_425
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.90525
-common_nodes: [AI_Ollama, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, Int, KSampler, LoraLoaderModelOnly, QwenImagePromptStyler, RH_Translator, SaveImage, Switch, TextBox, VAEDecode, easy showAnything]
+coverage: 0.92075
+common_nodes: [CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, GoogleTranslateTextNode, ImageConcanate, ImageStitch, KSampler, LoadImage, LoadImageOutput, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/可调控尺寸lora-动漫二次元-文生图_2076995810960691201.json, 图片生成/图生图/可调控尺寸lora-动漫二次元-文生图_2080520972146405377.json, 图片生成/文生图/IL-XL-waiNS加可调控尺寸lora-支持中文提示词翻译-动漫-文生图（出图自选）款_2028882775184510977.json, 图片生成/文生图/二次元-文生图_2077425296835432449.json]
+members: [图片生成/图生图/Flux Kontext Dev手办多视图加速版v1_1942617096314662914.json, 图片生成/图生图/Flux Kontext万物邮票风加速版v1_1948676772624773121.json, 图片生成/图生图/Flux Kontext场景缩小加速版v1_1948665758464245761.json, 图片生成/图生图/Flux Kontext新三视图加速版v1_1948660015625318401.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_425
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/可调控尺寸lora-动漫二次元-文生图_2076995810960691201.json、图片生成/图生图/可调控尺寸lora-动漫二次元-文生图_2080520972146405377.json、图片生成/文生图/IL-XL-waiNS加可调控尺寸lora-支持中文提示词翻译-动漫-文生图（出图自选）款_2028882775184510977.json、图片生成/文生图/二次元-文生图_2077425296835432449.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Dev手办多视图加速版v1_1942617096314662914.json、图片生成/图生图/Flux Kontext万物邮票风加速版v1_1948676772624773121.json、图片生成/图生图/Flux Kontext场景缩小加速版v1_1948665758464245761.json、图片生成/图生图/Flux Kontext新三视图加速版v1_1948660015625318401.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AI_Ollama`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Int`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `GoogleTranslateTextNode`
+- `ImageConcanate`
+- `ImageStitch`
 - `KSampler`
+- `LoadImage`
+- `LoadImageOutput`
 - `LoraLoaderModelOnly`
-- `QwenImagePromptStyler`
-- `RH_Translator`
+- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
-- `Switch`
-- `TextBox`
+- `UnetLoaderGGUF`
 - `VAEDecode`
-- `easy showAnything`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DuckHideNode` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `SeedVR2LoadDiTModel` —— 2/4 个有
-- `SeedVR2LoadVAEModel` —— 2/4 个有
-- `SeedVR2VideoUpscaler` —— 2/4 个有
-- `HAIGC_SaveImagesToZip` —— 1/4 个有
-- `TT_img_enc_v2` —— 1/4 个有
+- `PDIMAGE_LongerSize` —— 3/4 个有
+- `TeaCache` —— 3/4 个有
+- `JWInteger` —— 1/4 个有
+- `MagCache` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4 - 5 | 4 | 89% |
-| 采样算法 | euler_ancestral | - | 4 | 100% |
-| 调度器 | karras | - | 4 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 4 | 75% |
+| 高度 | 1024 | 512 - 1024 | 4 | 75% |
+| 采样步数 | 20 | 20 - 30 | 4 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 768 | 768 - 768 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
 
 ## 常见问题
 
@@ -66,10 +69,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4 - 5，4 个样本，取值集中（一致性 89%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
-- 调度器 最常用 karras，4 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 512 - 1024，4 个样本
+- 高度 中位数 1024，观测区间 512 - 1024，4 个样本
+- 采样步数 中位数 20，观测区间 20 - 30，4 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 768，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）

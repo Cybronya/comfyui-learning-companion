@@ -3,36 +3,38 @@ name: unknown_workflow_generic_761
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8775
-common_nodes: [GetImageSizeAndCount, ImageScaleDownToSize, LoadAudio, LoadImage, RH_Wan2GPNode, SaveVideo]
+coverage: 0.805
+common_nodes: [ImageBatch, ImageScaleToTotalPixels, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/万物数字人有嘴就行Avatar支持非真人角色的_1933692868194426881.json, 视频生成/图生视频/数字人Avatar双人对话（实验版，不稳定）_1933127868404932610.json, 视频生成/图生视频/数字人Avatar非真人角色加速工作流_1933153542792486914.json, 音频生成/音频生成/数字人Avatar非真人角色加速工作流_1933377923841699841.json]
+members: [图片生成/图生图/全能融图url_1991042974500986882.json, 图片生成/图生图/全能融图url_1991044291315343362.json, 图片生成/图生图/全能融图本地_1991793529317961729.json, 图片生成/图生图/全能融图本地_2000747780865916929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_761
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万物数字人有嘴就行Avatar支持非真人角色的_1933692868194426881.json、视频生成/图生视频/数字人Avatar双人对话（实验版，不稳定）_1933127868404932610.json、视频生成/图生视频/数字人Avatar非真人角色加速工作流_1933153542792486914.json、音频生成/音频生成/数字人Avatar非真人角色加速工作流_1933377923841699841.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能融图url_1991042974500986882.json、图片生成/图生图/全能融图url_1991044291315343362.json、图片生成/图生图/全能融图本地_1991793529317961729.json、图片生成/图生图/全能融图本地_2000747780865916929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageScaleDownToSize`
-- `LoadAudio`
+- `ImageBatch`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_Wan2GPNode`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
+- `LoadImagesFromURL` —— 2/4 个有
+- `MaskToImage` —— 2/4 个有
+- `Mix Color By Mask` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
 
 ## 典型参数
 

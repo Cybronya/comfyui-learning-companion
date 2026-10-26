@@ -2,35 +2,35 @@
 name: image_to_image_lora_sampler_unet_143
 type: Image To Image
 frequency: 5
-level: strong
-coverage: 0.9814
-common_nodes: [CLIPLoader, EmptySD3LatentImage, ImageResizeKJv2, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.8436
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/生图-一键四视图白底图-Krea2_2097677926920712194.json, 图片生成/图生图/角色四视图辅助生成_2096880673448615937.json, 图片生成/文生图/krea2-人物四视图_2094627103068217345.json, 数字人/数字人/MiniMaxH3辅助四视图生成-k2_2094815406618927106.json, 数字人/数字人/多面部参考融合生成人物四视图_2098589358654844929.json]
+members: [图片生成/文生图/Qwen-Image_字体直出_字体设计_书法字体_综艺字体_海报生成QwenEdit_1982996678984773634.json, 图片生成/文生图/最新千问图像编辑_1970656696915927042.json, 数字人/数字人/【老金驿站】Qwen2509肌肤改善器工作流_1985948966875537410.json, 数字人/数字人/替换物品，人物，让人物穿上你想要的衣服，鞋子_2032482079761502210.json, 视频生成/文生视频/QwenEdit 2511（FH修复油腻感模型）_2004948756900573185.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/生图-一键四视图白底图-Krea2_2097677926920712194.json、图片生成/图生图/角色四视图辅助生成_2096880673448615937.json、图片生成/文生图/krea2-人物四视图_2094627103068217345.json、数字人/数字人/MiniMaxH3辅助四视图生成-k2_2094815406618927106.json、数字人/数字人/多面部参考融合生成人物四视图_2098589358654844929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen-Image_字体直出_字体设计_书法字体_综艺字体_海报生成QwenEdit_1982996678984773634.json、图片生成/文生图/最新千问图像编辑_1970656696915927042.json、数字人/数字人/【老金驿站】Qwen2509肌肤改善器工作流_1985948966875537410.json、数字人/数字人/替换物品，人物，让人物穿上你想要的衣服，鞋子_2032482079761502210.json、视频生成/文生视频/QwenEdit 2511（FH修复油腻感模型）_2004948756900573185.json）
 
 - **类型**：Image To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `ImageResizeKJv2`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -38,33 +38,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `GetImageSizeAndCount` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `StringFunction|pysssss` —— 1/5 个有
-- `easy positive` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `TextEncodeQwenImageEditPlus` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `TextEncodeQwenImageEdit` —— 2/5 个有
+- `CLIPTextEncode` —— 1/5 个有
+- `CR SDXL Aspect Ratio` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `LayerUtility: ImageReel` —— 1/5 个有
+- `LayerUtility: ImageReelComposit` —— 1/5 个有
+- `NunchakuQwenImageDiTLoader` —— 1/5 个有
+- `ReferenceLatent` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 12 | 5 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
+| 采样步数 | 8 | 8 - 25 | 5 | 40% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 54% |
+| 采样算法 | euler | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 60% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 12，5 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
+- 采样算法 最常用 euler，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 60%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

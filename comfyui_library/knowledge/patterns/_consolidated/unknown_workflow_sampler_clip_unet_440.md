@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_440
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9375
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LayerUtility: PurgeVRAM, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8955
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Color Panel, CR Text Replace, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize+, GrowMaskWithBlur, Image Blend, Image Comparer (rgthree), ImageColorMatch+, ImageComposite+, ImageCompositeMasked, Int, KSamplerSelect, LayerUtility: CropByMask, LayerUtility: ImageMaskScaleAs, LayerUtility: RestoreCropBox, LoadImage, PreviewImage, Primitive float [Crystools], RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageScaleDownToSize, easy imageSize, 取色器_孤海]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX 2 DEV 文生图_1993674276544987137.json, 图片生成/文生图/FLUX 2 _ 文生图_1933332658841628674.json]
+members: [图片生成/图生图/万物迁移增强版—饰品_服装等_2053702739301027841.json, 图片生成/图生图/电商产品替换（1）_2087469163865534466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_440
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/FLUX 2 DEV 文生图_1993674276544987137.json、图片生成/文生图/FLUX 2 _ 文生图_1933332658841628674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/万物迁移增强版—饰品_服装等_2053702739301027841.json、图片生成/图生图/电商产品替换（1）_2087469163865534466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -26,28 +26,42 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Color Panel`
+- `CR Text Replace`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `FluxGuidance`
+- `GetImageSize+`
+- `GrowMaskWithBlur`
+- `Image Blend`
+- `Image Comparer (rgthree)`
+- `ImageColorMatch+`
+- `ImageComposite+`
+- `ImageCompositeMasked`
+- `Int`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: RestoreCropBox`
+- `LoadImage`
+- `PreviewImage`
+- `Primitive float [Crystools]`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageScaleDownToSize`
+- `easy imageSize`
+- `取色器_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
 
 ## 典型参数
 

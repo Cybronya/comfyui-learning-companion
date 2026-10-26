@@ -1,73 +1,118 @@
 ---
 name: unknown_workflow_video_lora_sampler_157
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.799
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+frequency: 12
+level: strong
+coverage: 0.84425
+common_nodes: [CLIPLoader, CLIPVisionLoader, DrawViTPose, ImageFromBatch, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json, 图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json, 视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（色调）_1950186803727876098.json, 视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（运动能力）_1950195066095714306.json, 视频生成/图生视频/DNR-WAN2.2 KJ 图生视频_1951706628657721345.json, 视频生成/图生视频/HeGenAI-N8N-Wan2.2图生视频加速版_1968577373975261186.json, 视频生成/图生视频/KJ wan2.2首尾帧+Lightx4step lora_2015424489110118402.json, 视频生成/图生视频/KJ-Wan2.2-6步加速图生视频_1949986819199909890.json, 视频生成/图生视频/KJ-Wan2.2-6步加速文生视频_1950060354116214786.json, 视频生成/图生视频/SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json, 视频生成/图生视频/最新WAN2.2 KJ版 图生视频加速版工作流_1976954244421046273.json]
+members: [图片生成/图生图/换装+迁移+服装带货_2080563240534364161.json, 图片生成/图生图/电商换装丨AI换装视频丨Qwen-Edit 2511＋Wan2.2丨试穿·动作迁移_2100466094686433281.json, 视频生成/图生视频/AI换装｜Qwen Edit＋Wan2.2 Animate｜动作迁移视频_2100460302033838082.json, 视频生成/图生视频/动作迁移+服装换装+服装带货_2084132243286614018.json, 视频生成/图生视频/口哨舞-手势舞-换衣+动作迁移+抖X+最长30秒_2091127654450819073.json, 视频生成/图生视频/换衣+动作迁移+抖X_2091117455124029442.json, 视频生成/图生视频/换衣+动作迁移+抖X_2109943597553512449.json, 视频生成/图生视频/换装+迁移+服装带货_2065961484110360577.json, 视频生成/图生视频/换装+迁移+服装带货_2082823806179168258.json, 视频生成/图生视频/换装+迁移+服装带货（流量密码版）_2083093296070610945.json, 视频生成/图生视频/短视频人物服装高清替换+电商换装+尺度版_2088577100151345153.json, 视频生成/文生视频/换装+迁移+服装带货（流量密码版）_2083875222989656066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_157
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json、图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json、视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（色调）_1950186803727876098.json、视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（运动能力）_1950195066095714306.json、视频生成/图生视频/DNR-WAN2.2 KJ 图生视频_1951706628657721345.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/换装+迁移+服装带货_2080563240534364161.json、图片生成/图生图/电商换装丨AI换装视频丨Qwen-Edit 2511＋Wan2.2丨试穿·动作迁移_2100466094686433281.json、视频生成/图生视频/AI换装｜Qwen Edit＋Wan2.2 Animate｜动作迁移视频_2100460302033838082.json、视频生成/图生视频/动作迁移+服装换装+服装带货_2084132243286614018.json、视频生成/图生视频/口哨舞-手势舞-换衣+动作迁移+抖X+最长30秒_2091127654450819073.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 10/11 个有
-- `INTConstant` —— 9/11 个有
-- `GetImageSizeAndCount` —— 8/11 个有
-- `LoadImage` —— 7/11 个有
-- `CR Prompt Text` —— 6/11 个有
-- `ImageResizeKJv2` —— 6/11 个有
-- `JWInteger` —— 6/11 个有
-- `WanVideoImageToVideoEncode` —— 6/11 个有
-- `WanVideoEmptyEmbeds` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `GetNode` —— 4/11 个有
-- `SetNode` —— 4/11 个有
-- `MathExpression|pysssss` —— 3/11 个有
-- `WanVideoEasyCache` —— 3/11 个有
-- `Int` —— 2/11 个有
-- `Primitive integer [Crystools]` —— 2/11 个有
-- `Text Multiline` —— 2/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `Seed_` —— 1/11 个有
-- `easy bookmark` —— 1/11 个有
-- `easy imageSize` —— 1/11 个有
-- `easy positive` —— 1/11 个有
+- `CLIPTextEncode` —— 10/12 个有
+- `CropWithPadInfo` —— 10/12 个有
+- `Fast Groups Muter (rgthree)` —— 10/12 个有
+- `Image Comparer (rgthree)` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `QwenEditConfigPreparer` —— 10/12 个有
+- `QwenEditOutputExtractor` —— 10/12 个有
+- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 10/12 个有
+- `easy imageRemBg` —— 10/12 个有
+- `GetNode` —— 7/12 个有
+- `ImageUpscaleWithModel` —— 7/12 个有
+- `JWInteger` —— 7/12 个有
+- `LayerUtility: PurgeVRAM` —— 7/12 个有
+- `PrimitiveInt` —— 7/12 个有
+- `SetNode` —— 7/12 个有
+- `SimpleMath+` —— 7/12 个有
+- `UpscaleModelLoader` —— 7/12 个有
+- `ttN float` —— 7/12 个有
+- `BatchCount+` —— 5/12 个有
+- `ComfyMathExpression` —— 5/12 个有
+- `ImageBatch` —— 5/12 个有
+- `Int` —— 5/12 个有
+- `MemoryCleaner` —— 5/12 个有
+- `PreviewImage` —— 5/12 个有
+- `RepeatImageBatch` —— 5/12 个有
+- `WanVideoLoraSelect` —— 5/12 个有
+- `easy mathInt` —— 5/12 个有
+- `GoohaiUniversalSlider` —— 3/12 个有
+- `孤海注释` —— 3/12 个有
+- `ConditioningZeroOut` —— 2/12 个有
+- `SaveImage` —— 2/12 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/12 个有
+- `CR Text` —— 1/12 个有
+- `Float` —— 1/12 个有
+- `Primitive integer [Crystools]` —— 1/12 个有
+- `easy float` —— 1/12 个有
+- `easy int` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | beta57 | - | 12 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 beta57，12 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

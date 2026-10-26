@@ -2,59 +2,50 @@
 name: unknown_workflow_sampler_unet_vae_241
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.8715
-common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.96
+common_nodes: [BasicGuider, CLIPLoader, QwenImage21FunPDDLoader, RandomNoise, SamplerCustomAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json, 图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json, 图片生成/文生图/Qwen-image 2.1 Turbo_2092632974176116737.json, 图片生成/文生图/QwenImage2.1-turbo专用工作流_2109185736493850625.json]
+members: [图片生成/图生图/Qwen2.1-单图编辑_2106941936392294401.json, 图片生成/图生图/Qwen2.1-双图组合_2106944403725185025.json, 图片生成/图生图/Qwen2.1-透明抠图_2106946708730105858.json, 图片生成/文生图/Qwen2.1-文生图_2106946374871904257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_241
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json、图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json、图片生成/文生图/Qwen-image 2.1 Turbo_2092632974176116737.json、图片生成/文生图/QwenImage2.1-turbo专用工作流_2109185736493850625.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen2.1-单图编辑_2106941936392294401.json、图片生成/图生图/Qwen2.1-双图组合_2106944403725185025.json、图片生成/图生图/Qwen2.1-透明抠图_2106946708730105858.json、图片生成/文生图/Qwen2.1-文生图_2106946374871904257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
-- `KSamplerSelect`
-- `ManualSigmas`
+- `QwenImage21FunPDDLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 3/4 个有
 - `LoadImage` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `ResolutionSelector` —— 3/4 个有
-- `CLIPTextEncode` —— 2/4 个有
-- `EmptyFlux2LatentImage` —— 2/4 个有
-- `EmptyLatentImage` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `QwenImage21Cache` —— 2/4 个有
-- `TextEncodeQwenImage21` —— 2/4 个有
-- `ReferenceMultiLatent` —— 1/4 个有
-- `TextGenerate` —— 1/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `SaveImageAdvanced` —— 2/4 个有
+- `EmptyLatentImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -62,5 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

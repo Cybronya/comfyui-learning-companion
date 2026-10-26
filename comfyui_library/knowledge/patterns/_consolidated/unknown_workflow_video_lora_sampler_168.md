@@ -1,106 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_168
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.568818
-common_nodes: [BatchImagesNode, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageConcatenate_UTK, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SAM3_VideoTrack, SetNode, SimpleMath+, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, easy cleanGpuUsed, easy clearCacheAll]
+frequency: 12
+level: strong
+coverage: 0.518333
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), GetImagesFromBatchIndexed, INTConstant, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/TIKTOK山顶放纵不羁摇卡通版_2084196243823226881.json, 视频生成/图生视频/scail2 多人场景选取角色替换_2079147768924426242.json, 视频生成/图生视频/scail2 长时多人场景选取双角色替换_2079200457477672961.json, 视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json, 视频生成/图生视频/scail2多人场景指定角色替换_2081244964683599874.json, 视频生成/图生视频/scail2多人场景选取角色迁移动作_2079182735972847618.json, 视频生成/图生视频/scail2影视二创精准选取角色替换30S_2081214742160560129.json, 视频生成/图生视频/scail2超长时长带货视频自动版_2078074267547295746.json, 视频生成/图生视频/tiktok山顶放纵不羁摇_2084164746915438593.json, 视频生成/图生视频/抖音热门山顶放纵不羁摇开源版_2083852005172400129.json, 视频生成/图生视频/最新超长时长电商带货视频_2078074374137143298.json]
+members: [视频生成/图生视频/XingRUI图生视频工作流（720P横屏）+V：jfr-1988获取软件_2020365816381841410.json, 视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流 720P图生视频+V：dxyc2291获取软件_2019556133358276609.json, 视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流-720P横屏_2028271741587431426.json, 视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流（720P横屏）_2038255613351829505.json, 视频生成/图生视频/万象AI-图生视频动态优化工作流（720P）_2019042589701316609.json, 视频生成/图生视频/二次元图生视频-动漫专用DaSiWa V9_2014552922826219521.json, 视频生成/图生视频/动漫单图生视频-动漫模型-DaSiWa v9-图生视频_2012098237326434305.json, 视频生成/图生视频/图生视频_2027704519647305729.json, 视频生成/图生视频/批量图生视频工作流720P32帧自动工作流_2021547239155437569.json, 视频生成/图生视频/涂经理图生视频工作流（720P横屏）+V：a2447548665获取软件_2019677447897227266.json, 视频生成/图生视频/爆款二创720P图生视频工作流  20260109_2002722598842691586.json, 视频生成/文生视频/万象+runninghub制作动漫短剧图生视频工作流（720P横屏）+V：50259731获取软件_2002624985527119873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_168
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/TIKTOK山顶放纵不羁摇卡通版_2084196243823226881.json、视频生成/图生视频/scail2 多人场景选取角色替换_2079147768924426242.json、视频生成/图生视频/scail2 长时多人场景选取双角色替换_2079200457477672961.json、视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json、视频生成/图生视频/scail2多人场景指定角色替换_2081244964683599874.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/XingRUI图生视频工作流（720P横屏）+V：jfr-1988获取软件_2020365816381841410.json、视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流 720P图生视频+V：dxyc2291获取软件_2019556133358276609.json、视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流-720P横屏_2028271741587431426.json、视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流（720P横屏）_2038255613351829505.json、视频生成/图生视频/万象AI-图生视频动态优化工作流（720P）_2019042589701316609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BatchImagesNode`
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageConcatenate_UTK`
-- `ImageResizeKJv2`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImagesFromBatchIndexed`
+- `INTConstant`
 - `Int`
+- `JoinStrings`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `SAM3_VideoTrack`
-- `SetNode`
-- `SimpleMath+`
+- `Qwen3_VQA`
+- `TextInput_`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode V2`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FillMaskWithColor` —— 10/11 个有
-- `InvertMask` —— 10/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 10/11 个有
-- `LoadImage` —— 10/11 个有
-- `PlaySound|pysssss` —— 10/11 个有
-- `easy indexAnything` —— 10/11 个有
-- `easy mathInt` —— 10/11 个有
-- `SCAIL2ColoredMaskV2` —— 9/11 个有
-- `RH_Captioner` —— 8/11 个有
-- `Text` —— 8/11 个有
-- `VHS_LoadVideo` —— 8/11 个有
-- `easy showAnything` —— 8/11 个有
-- `1hew_MaskMathOps` —— 7/11 个有
-- `RMBG` —— 7/11 个有
-- `PointsEditor` —— 6/11 个有
-- `PrimitiveBoolean` —— 6/11 个有
-- `PrimitiveInt` —— 6/11 个有
-- `SeCModelLoader` —— 6/11 个有
-- `SeCVideoSegmentation` —— 6/11 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 5/11 个有
-- `SAM3_TrackToMask` —— 5/11 个有
-- `RHHiddenNodes` —— 4/11 个有
-- `AILab_LamaRemover` —— 3/11 个有
-- `ExtractNFrames` —— 3/11 个有
-- `Float` —— 3/11 个有
-- `Float to Int` —— 3/11 个有
-- `LayerUtility: ImageBlendAdvance` —— 3/11 个有
-- `TextConcatenate_UTK` —— 3/11 个有
-- `VHS_LoadVideoFFmpeg` —— 3/11 个有
-- `easy batchAnything` —— 3/11 个有
-- `easy forLoopEnd` —— 3/11 个有
-- `easy forLoopStart` —— 3/11 个有
-- `CLIPVisionEncode` —— 2/11 个有
-- `ColorPickerMW` —— 2/11 个有
-- `DrawMaskOnImage` —— 2/11 个有
-- `EmptyImage` —— 2/11 个有
-- `GrowMask` —— 2/11 个有
-- `ImageCompositeMasked` —— 2/11 个有
-- `GoogleTranslateTextNode` —— 1/11 个有
-- `PrimitiveStringMultiline` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
+- `easy cleanGpuUsed` —— 11/12 个有
+- `CR Integer To String` —— 10/12 个有
+- `CR Text Replace` —— 10/12 个有
+- `MathExpression|pysssss` —— 10/12 个有
+- `RIFE VFI` —— 10/12 个有
+- `ShowText|pysssss` —— 10/12 个有
+- `Text Concatenate` —— 10/12 个有
+- `Text Multiline` —— 10/12 个有
+- `wanBlockSwap` —— 10/12 个有
+- `GetAudioDurationFromAudio` —— 9/12 个有
+- `LoadAudio` —— 9/12 个有
+- `SimpleMath+` —— 2/12 个有
+- `easy convertAnything` —— 2/12 个有
+- `ImageOnlyCheckpointLoader` —— 1/12 个有
+- `SONICSampler` —— 1/12 个有
+- `SONICTLoader` —— 1/12 个有
+- `SONIC_PreData` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 12 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 12 | 100% |
+| 采样算法 | 1 | 1 - 1 | 12 | 100% |
+| 调度器 | euler | - | 12 | 100% |
+| 重绘幅度 | normal | - | 12 | 83% |
 
 ## 常见问题
 
@@ -108,4 +82,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，12 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，12 个样本，一致性 100%
+- 重绘幅度 最常用 normal，12 个样本，一致性 83%

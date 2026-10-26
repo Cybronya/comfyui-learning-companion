@@ -1,103 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_506
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.95425
-common_nodes: [AudioCropProcessUTK, CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float]
+coverage: 0.8728
+common_nodes: [BasicScheduler, CLIPTextEncode, CR Text, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Preview from image [Crystools], PreviewAudio, PrimitiveBoolean, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy imageSave, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/WH-AI-Studio-LTX2.3数字人_2049324232944914434.json, 视频生成/图生视频/ltx2.3数字人-图生视频_2029926925103276034.json, 视频生成/图生视频/ltx2.3数字人-图生视频无字幕_2069715609595760642.json, 视频生成/文生视频/ltx2.3-文_图生视频-数字人-整合版_2031260976904933377.json]
+members: [视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2064410253088878594.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2082315667667243010.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json, 视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_506
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WH-AI-Studio-LTX2.3数字人_2049324232944914434.json、视频生成/图生视频/ltx2.3数字人-图生视频_2029926925103276034.json、视频生成/图生视频/ltx2.3数字人-图生视频无字幕_2069715609595760642.json、视频生成/文生视频/ltx2.3-文_图生视频-数字人-整合版_2031260976904933377.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2064410253088878594.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2082315667667243010.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json、视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
 - `CR Text`
-- `CheckpointLoaderSimple`
+- `CS-LTXGridDirector`
+- `ComfySwitchNode`
 - `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `JWInteger`
 - `KSamplerSelect`
 - `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
 - `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVPreprocess`
+- `LTXVCropGuides`
 - `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `Preview from image [Crystools]`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `SamplerCustom`
 - `SetLatentNoiseMask`
 - `SolidMask`
-- `TrimAudioDuration`
+- `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy float`
+- `VisualizeSigmasKJ`
+- `YusuLTXDirectorGuide`
+- `easy imageSave`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `LTXVImgToVideoInplace` —— 3/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `NormalizeAudioLoudness` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `RH_LLMAPI_NODE` —— 3/4 个有
-- `RTXVideoSuperResolution` —— 3/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `LazySwitch1way` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `VAELoader` —— 2/4 个有
-- `WhisperSTT` —— 2/4 个有
-- `easy compare` —— 2/4 个有
-- `AudioInfoNode` —— 1/4 个有
-- `Bjornulf_IfElse` —— 1/4 个有
-- `CM_FloatToInt` —— 1/4 个有
-- `ComfySwitchNode` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `LTX2_NAG` —— 1/4 个有
-- `LTXVAudioVAEDecode` —— 1/4 个有
-- `LTXVEmptyLatentAudio` —— 1/4 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `RH_RhartTextG3ProPreviewImageToText` —— 1/4 个有
-- `ShowAnything|Mie` —— 1/4 个有
-- `easy convertAnything` —— 1/4 个有
-- `easy int` —— 1/4 个有
-- `ttN concat` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 4/5 个有
+- `GPTImage2PromptPreview` —— 4/5 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `RH_RhartImageG2ImageToImage` —— 4/5 个有
+- `MuyeTextEditOutput` —— 3/5 个有
+- `PreviewAny` —— 2/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `ImageRGBChannel` —— 1/5 个有
+- `IndexTTS2Run` —— 1/5 个有
+- `LayerColor: Levels` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `LoadVideo` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
+- `SaveAudio` —— 1/5 个有
+- `SaveAudioMP3` —— 1/5 个有
+- `ShellAgentPluginOutputText` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | - | 1 | 100% |
-| 高度 | 20 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

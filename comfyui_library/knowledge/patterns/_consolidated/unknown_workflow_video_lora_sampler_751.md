@@ -1,82 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_751
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.945
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, RandomNoise, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, VAEDecodeTiled, VHS_LoadVideo, VHS_VideoCombine, YOLOModelLoader]
+frequency: 3
+level: moderate
+coverage: 0.944667
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3 视频动作迁移_2041045547859054594.json, 视频生成/图生视频/LTX2.3动作迁移（人物二创）_2036397493621104642.json]
+members: [视频生成/图生视频/图片对口型工作流_2092091005381206017.json, 视频生成/图生视频/数字人-口播_1901831714153324545.json, 视频生成/文生视频/小赛数字人_1958479331356000258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_751
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 视频动作迁移_2041045547859054594.json、视频生成/图生视频/LTX2.3动作迁移（人物二创）_2036397493621104642.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图片对口型工作流_2092091005381206017.json、视频生成/图生视频/数字人-口播_1901831714153324545.json、视频生成/文生视频/小赛数字人_1958479331356000258.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `RandomNoise`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `YOLOModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LTXVChunkFeedForward` —— 1/2 个有
-- `LatentUpscaleModelLoader` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PixelPerfectResolution` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `AudioSeparation` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Audio Duration (mtb)` —— 1/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `Float to Int` —— 1/3 个有
+- `ImageResize` —— 1/3 个有
+- `RH_GetAudioDuration` —— 1/3 个有
+- `SoundFlow_GetLength` —— 1/3 个有
+- `SoundFlow_TrimAudio` —— 1/3 个有
+- `String Literal` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
+- `ttN int` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 109 | - | 2 | 89% |
-| 高度 | 24 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,6 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 109，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

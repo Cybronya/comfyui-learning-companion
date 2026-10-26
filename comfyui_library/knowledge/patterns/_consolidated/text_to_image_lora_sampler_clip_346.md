@@ -1,101 +1,119 @@
 ---
 name: text_to_image_lora_sampler_clip_346
 type: Text To Image
-frequency: 5
-level: weak
-coverage: 0.468
-common_nodes: [Any Switch (rgthree), BatchImagesNode, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageScaleToMaxDimension, JsonExtractString, KSampler, LoadImage, LoraLoaderBypassModelOnly, PreviewAny, PrimitiveBoolean, QwenImage21Cache, ResolutionSelector, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 6
+level: strong
+coverage: 0.8085
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1文生与编辑加速工作流双自动提示词，文生图图生图方案_2106086535849398274.json, 图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json, 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json, 图片生成/文生图/Qwen image 2.1文生与编辑加速工作流｜双自动提示词 文生图图生图全能_2104030500267577345.json, 图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json]
+members: [图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json, 数字人/数字人/MiniMax H3 MV造梦机 超快数字人低显存音乐节拍处理工具_2113020217671639041.json, 数字人/数字人/老王房产专用流｜Minimax+H3双模双采数字人_2097974073354702849.json, 视频生成/图生视频/4K加二采新condition加同模双采加H3加动态修复 视频生成优化_2108981922180452354.json, 视频生成/图生视频/LMS二采新Condition同模双采语义桥图生视频处理工具_2101405530886598657.json, 视频生成/图生视频/LMS二采新condition测试｜同模双采语义桥实战_2101147756453785601.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_346
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1文生与编辑加速工作流双自动提示词，文生图图生图方案_2106086535849398274.json、图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json、图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json、图片生成/文生图/Qwen image 2.1文生与编辑加速工作流｜双自动提示词 文生图图生图全能_2104030500267577345.json、图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json、数字人/数字人/MiniMax H3 MV造梦机 超快数字人低显存音乐节拍处理工具_2113020217671639041.json、数字人/数字人/老王房产专用流｜Minimax+H3双模双采数字人_2097974073354702849.json、视频生成/图生视频/4K加二采新condition加同模双采加H3加动态修复 视频生成优化_2108981922180452354.json、视频生成/图生视频/LMS二采新Condition同模双采语义桥图生视频处理工具_2101405530886598657.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：47%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BatchImagesNode`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfySwitchNode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToMaxDimension`
-- `JsonExtractString`
+- `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `QwenImage21Cache`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `StringConcatenate`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `solarL_SaveImagesToZip` —— 4/5 个有
-- `孤海注释` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `GoohaiAnyExists` —— 2/5 个有
-- `ImageScaleToTotalPixels` —— 2/5 个有
-- `JWFloat` —— 2/5 个有
-- `KSamplerAdvanced` —— 2/5 个有
-- `LatentSwitch` —— 2/5 个有
-- `PDIMAGE_LongerSize` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `ReferenceLatent` —— 2/5 个有
-- `SeedNode` —— 2/5 个有
-- `VAEEncode` —— 2/5 个有
-- `忽略多组孤海` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 5/6 个有
+- `LTXVSeparateAVLatent` —— 5/6 个有
+- `MiniMaxChunkFeedForward` —— 5/6 个有
+- `MinimaxH3LatentUpscaler3D` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `SplitSigmas` —— 5/6 个有
+- `VAEDecodeAudio` —— 5/6 个有
+- `VHS_VideoCombine` —— 5/6 个有
+- `H3SigmaRefiner` —— 4/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
+- `ModelPreviewOverrideKJ` —— 4/6 个有
+- `SaveImage` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
+- `CR Prompt Text` —— 3/6 个有
+- `ConcatTextOfUtils` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 3/6 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 3/6 个有
+- `MiniMaxH3TurboLoRA` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `Seed (rgthree)` —— 3/6 个有
+- `ShellAgentPluginVideoCombineEncrypt` —— 3/6 个有
+- `SolAttnMiniMax` —— 3/6 个有
+- `SolAttnPatch` —— 2/6 个有
+- `Astra` —— 1/6 个有
+- `CR Text` —— 1/6 个有
+- `GetImageSize` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 1/6 个有
+- `MiniMaxH3VAEDecodeFast` —— 1/6 个有
+- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 1/6 个有
+- `ModelPatchTorchSettings` —— 1/6 个有
+- `PathchSageAttentionKJ` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `VHS_LoadAudioUpload` —— 1/6 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 5 | 0% |
-| 高度 | 80 | 80 - 1024 | 5 | 0% |
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4 - 4.5 | 5 | 95% |
-| 采样算法 | er_sde | - | 5 | 80% |
-| 调度器 | beta | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，5 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，5 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4 - 4.5，5 个样本，取值集中（一致性 95%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 80%
-- 调度器 最常用 beta，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（14/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

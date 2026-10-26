@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_352
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.976167
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SeparateMasks, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.923
+common_nodes: [CR Text, CogVideoEnhanceAVideo, CombinationText, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RH_LLMAPI_NODE, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, easy string, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json, 视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json, 视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json, 视频生成/图生视频/电商带货 双人对话图生视频（multiTalk）_1944226088988053505.json]
+members: [视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json, 视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json, 视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json, 视频生成/图生视频/万物360度旋转_1994253220916690946.json, 视频生成/图生视频/图生视频_2000816719373496322.json, 视频生成/文生视频/360度旋转 细节保留 真实光影 超强一致 Wan2.2万物旋转 - 360度轨道镜头   万相任意_2000731719860879361.json, 视频生成/文生视频/【wan2.2】360度旋转特效+图生视频  万物旋转360度 KJ加速版_1972165939687059457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_352
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json、视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json、视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json、视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json、视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json、视频生成/图生视频/万物360度旋转_1994253220916690946.json、视频生成/图生视频/图生视频_2000816719373496322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 7 个 workflow 都包含：
+- `CR Text`
+- `CogVideoEnhanceAVideo`
+- `CombinationText`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `Int`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SeparateMasks`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 5/6 个有
-- `MathExpression|pysssss` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `AudioSeparation` —— 4/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `JWStringToInteger` —— 4/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoExperimentalArgs` —— 3/6 个有
-- `WanVideoFreeInitArgs` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `ACE_AudioCrop` —— 1/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `Compare` —— 1/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
-- `easy ifElse` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `easy showAnything`
+- `easy string`
+- `easy textSwitch`
 
 ## 典型参数
 

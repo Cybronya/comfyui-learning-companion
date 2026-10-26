@@ -3,47 +3,38 @@ name: unknown_workflow_upscale_vae_33
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.704
-common_nodes: [Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
+coverage: 0.89
+common_nodes: [ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/TTP+SEEDVR2超清无损放大-8K_2016403959757414401.json, 图片生成/图生图/TTP分块+SeedVR2放大工作流_2026145278633451521.json, 图片生成/图生图/TTP分块+SeedVR2放大工作流_2036412002213568513.json, 图片生成/图生图/🎯天下无腰TTP+SEEDVR2超清无损放大_2021978500932046850.json]
+members: [图片生成/图生图/SeedVR2_高清放大可批量_2097170882073546754.json, 图片生成/图生图/SeedVR2_高清放大可批量_2097509265190768641.json, 图片生成/图生图/单图放大_seedVR2_4K_2005946235443970049.json, 图片生成/图生图/最好的高清放大_2011245583637422082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_33
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/TTP+SEEDVR2超清无损放大-8K_2016403959757414401.json、图片生成/图生图/TTP分块+SeedVR2放大工作流_2026145278633451521.json、图片生成/图生图/TTP分块+SeedVR2放大工作流_2036412002213568513.json、图片生成/图生图/🎯天下无腰TTP+SEEDVR2超清无损放大_2021978500932046850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2_高清放大可批量_2097170882073546754.json、图片生成/图生图/SeedVR2_高清放大可批量_2097509265190768641.json、图片生成/图生图/单图放大_seedVR2_4K_2005946235443970049.json、图片生成/图生图/最好的高清放大_2011245583637422082.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScaleBy`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `IfInnerExecute` —— 2/4 个有
-- `ImpactMinMax` —— 2/4 个有
-- `SimpleComparison+` —— 2/4 个有
-- `easy imageScaleDownBy` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `HAIGC_SaveImagesToZip` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `RHUploadZip_V2` —— 2/4 个有
 
 ## 典型参数
 

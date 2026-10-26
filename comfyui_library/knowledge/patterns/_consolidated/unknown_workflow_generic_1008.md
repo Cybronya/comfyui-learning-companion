@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, SaveAudio, Textbox]
+common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy promptConcat]
 problems: []
 missing: []
-members: [数字人/数字人/Omnivoice-tts 声音克隆_2093697395476488194.json, 音频生成/音频生成/Omnivoice-tts 声音克隆 ComfyUI 工作流_2051302795759890433.json, 音频生成/音频生成/Omnivoice-tts 声音克隆_2092511461825404930.json]
+members: [图片生成/图生图/全能图像G2.0老照片修复_2087741372626456578.json, 图片生成/图生图/全能图像G2.0老照片修复_2087746707365912577.json, 图片生成/图生图/全能图像G2.0老照片修复_2087782062148374529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1008
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Omnivoice-tts 声音克隆_2093697395476488194.json、音频生成/音频生成/Omnivoice-tts 声音克隆 ComfyUI 工作流_2051302795759890433.json、音频生成/音频生成/Omnivoice-tts 声音克隆_2092511461825404930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图像G2.0老照片修复_2087741372626456578.json、图片生成/图生图/全能图像G2.0老照片修复_2087746707365912577.json、图片生成/图生图/全能图像G2.0老照片修复_2087782062148374529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,14 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `SaveAudio`
-- `Textbox`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
 
 ## 典型参数
 

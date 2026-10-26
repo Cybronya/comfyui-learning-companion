@@ -3,48 +3,54 @@ name: text_to_image_lora_sampler_clip_662
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9025
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.615
+common_nodes: [CLIPLoader, CLIPTextEncode, CR String To Combo, CR Text Concatenate, EmptyLatentImage, JjkText, KSampler, LoadImagesFromURL, LoadMultiImage, LoraLoaderModelOnly, PrimitiveString, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_RhartImageG2ImageToImage, SaveImage, Text Find and Replace, Text Multiline, UNETLoader, VAEDecode, VAELoader, ZML_MergeText, easy promptLine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Anima-2.9B智能图生图Qwen3VL反推｜文生视频视频生视频图生视频_2090074818287849473.json, 视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json]
+members: [图片生成/图生图/自动生成产品详情页｜无文字版API调用图生图_2095265636569141249.json, 图片生成/图生图/自动生成产品详情页｜海报制作API调用生成_2095266978209550338.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_662
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Anima-2.9B智能图生图Qwen3VL反推｜文生视频视频生视频图生视频_2090074818287849473.json、视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自动生成产品详情页｜无文字版API调用图生图_2095265636569141249.json、图片生成/图生图/自动生成产品详情页｜海报制作API调用生成_2095266978209550338.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR String To Combo`
+- `CR Text Concatenate`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadImagesFromURL`
+- `LoadMultiImage`
 - `LoraLoaderModelOnly`
+- `PrimitiveString`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `Text Find and Replace`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `ZML_MergeText`
+- `easy promptLine`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Qwen3VLProcessor` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `VAELoaderKJ` —— 1/2 个有
-- `image_scale_pixel_v2` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
 
 ## 典型参数
 

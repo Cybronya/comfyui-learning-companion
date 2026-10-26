@@ -1,66 +1,62 @@
 ---
 name: unknown_workflow_sampler_clip_unet_239
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9232
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.948833
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein 高清方法+seedvr2_2013887353395351553.json, 图片生成/图生图/PS高阶一键换脸_1903274591681421314.json, 图片生成/图生图/任意画风转写实_2053048956061536257.json, 图片生成/图生图/动漫少女现实化_2056400490073780225.json, 图片生成/图生图/服装上身与场景生成_2060636969994113025.json]
+members: [图片生成/文生图/中世纪奇幻女战士_1911987218066669570.json, 图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json, 图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json, 图片生成/文生图/大长腿性感女孩生成器可加5个lora 的工作流 FLUX_1964223507485872129.json, 图片生成/文生图/服装设计+模特上身工作流_1981999558349725697.json, 图片生成/文生图/简单logo设计工作流_1981992176706035713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_239
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Klein 高清方法+seedvr2_2013887353395351553.json、图片生成/图生图/PS高阶一键换脸_1903274591681421314.json、图片生成/图生图/任意画风转写实_2053048956061536257.json、图片生成/图生图/动漫少女现实化_2056400490073780225.json、图片生成/图生图/服装上身与场景生成_2060636969994113025.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/中世纪奇幻女战士_1911987218066669570.json、图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json、图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json、图片生成/文生图/大长腿性感女孩生成器可加5个lora 的工作流 FLUX_1964223507485872129.json、图片生成/文生图/服装设计+模特上身工作流_1981999558349725697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 4/5 个有
-- `Flux2Scheduler` —— 4/5 个有
-- `FluxKontextImageScale` —— 4/5 个有
-- `GetImageSize` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `SeedVR2` —— 2/5 个有
-- `SeedVR2BlockSwap` —— 2/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `BasicScheduler` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `LG_Color_Match_V2` —— 1/5 个有
-- `LatentUpscaleBy` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `SeedVR2ExtraArgs` —— 1/5 个有
-- `StringReplace` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `图像缩放V2_孤海` —— 1/5 个有
+- `LoraLoader` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `DetailDaemonSamplerNode` —— 3/6 个有
+- `ImageCrop+` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `SimpleMath+` —— 2/6 个有
+- `easy imageSize` —— 2/6 个有
+- `CR SDXL Aspect Ratio` —— 1/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `ModelSamplingFlux` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1284 | 512 - 2000 | 6 | 58% |
+| 高度 | 1024 | 512 - 1800 | 6 | 65% |
+| LoRA 模型强度 | 1 | 0.3 - 1 | 4 | 63% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -68,4 +64,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1284，观测区间 512 - 2000，6 个样本
+- 高度 中位数 1024，观测区间 512 - 1800，6 个样本
+- LoRA 模型强度 中位数 1，观测区间 0.3 - 1，4 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

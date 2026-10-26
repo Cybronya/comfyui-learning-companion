@@ -1,85 +1,90 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_74
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.698
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Model Input Switch, Fast Groups Bypasser (rgthree), GenerateNoise, GetNode, Image Comparer (rgthree), ImageScaleBy, KSampler, LGNoiseInjectionLatent, LatentUpscaleBy, LoadImage, LoraLoaderModelOnly, ModelSamplingZImage, PreviewImage, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, StringConcatenate, Textbox, UNETLoader, UnetLoaderGGUF, VAEDecode, VAEDecodeTiled, VAELoader, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.641667
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetLatentNoiseMask, SetNode, SolidMask, VAEDecodeTiled]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Turbo超写实效果物理级修复+SeedVR2细节增加放大_2017910237633712129.json, 图片生成/文生图/Z-Image-Turbo（参考图）自动提示词-超写实效果 RH在线工作流_2017933425348452353.json]
+members: [图片生成/文生图/LTX2 科比数字人工作流 （附加显存清理）_2013098604533129218.json, 图片生成/文生图/LTX2 科比数字人工作流_2012930792564985857.json, 视频生成/文生视频/ltx-2对口型_2011736436441092097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_74
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image-Turbo超写实效果物理级修复+SeedVR2细节增加放大_2017910237633712129.json、图片生成/文生图/Z-Image-Turbo（参考图）自动提示词-超写实效果 RH在线工作流_2017933425348452353.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LTX2 科比数字人工作流 （附加显存清理）_2013098604533129218.json、图片生成/文生图/LTX2 科比数字人工作流_2012930792564985857.json、视频生成/文生视频/ltx-2对口型_2011736436441092097.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Model Input Switch`
+- `CheckpointLoaderSimple`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
 - `Fast Groups Bypasser (rgthree)`
-- `GenerateNoise`
+- `GetImageSize`
 - `GetNode`
-- `Image Comparer (rgthree)`
 - `ImageScaleBy`
-- `KSampler`
-- `LGNoiseInjectionLatent`
-- `LatentUpscaleBy`
-- `LoadImage`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `ModelSamplingZImage`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Seed (rgthree)`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `StringConcatenate`
-- `Textbox`
-- `UNETLoader`
-- `UnetLoaderGGUF`
-- `VAEDecode`
+- `SolidMask`
 - `VAEDecodeTiled`
-- `VAELoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 1/2 个有
+- `Audio Duration (mtb)` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `CreateVideo` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `VHS_LoadAudio` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LTXVImgToVideoInplace` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

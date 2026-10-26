@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [ImageConcanate, ImageScaleToTotalPixels, LoadImage, ReActorBuildFaceModel, ReActorFaceBoost, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WujiCleaner]
+common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/三脸+视频换脸+自定义时长+精度_2077007977915174913.json, 视频生成/图生视频/视频换脸_1920378379508584450.json]
+members: [视频生成/图生视频/FramePack图生视频_1913064575934132225.json, 视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_107
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/三脸+视频换脸+自定义时长+精度_2077007977915174913.json、视频生成/图生视频/视频换脸_1920378379508584450.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频_1913064575934132225.json、视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,20 +23,16 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
+- `CR Prompt Text`
+- `JWInteger`
 - `LoadImage`
-- `ReActorBuildFaceModel`
-- `ReActorFaceBoost`
-- `ReActorFaceSwap`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WujiCleaner`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

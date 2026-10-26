@@ -1,73 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_103
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.8053
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 11
+level: weak
+coverage: 0.944727
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json, 图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json, 图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json, 图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json, 图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json, 图片生成/文生图/中文字体设计 - 媲美即梦 -  Qwen-Image图生图_1953067660055613442.json, 图片生成/文生图/中秋节文字一键生成 - Qwen-Image文生图_1970162502074068993.json, 图片生成/文生图/双11大促活动字体一键生成 Qwen-Image文生图_1973238135855386626.json, 图片生成/文生图/双11年终大促+-+活动字体一键成_1970152346649063426.json, 图片生成/文生图/高级感艺术字生成（自带提示词模板）_1972314392975110146.json]
+members: [图片生成/文生图/MOSS_4步_FP32模型 VS 25步_SFT模型 文生图工作流_2113618754377707521.json, 图片生成/文生图/MOSS_Image_SFT_BF16 + 4步加速LoRA 文生图工作流_2113944419647975426.json, 图片生成/文生图/Moss 文生图 2K分辨率直出_2113627882475053058.json, 图片生成/文生图/Moss-Base Fixed文生图_2112960445203177473.json, 图片生成/文生图/Moss-Image图像生成（官方示例版）_2111823655494840322.json, 图片生成/文生图/Moss-image+8步极速文生图_2112930768900149250.json, 图片生成/文生图/Moss-image-文生图-高质量-Base-SFT_2114528333923971074.json, 图片生成/文生图/pandy-MOSS-Image-50步文生图_2114240691202248706.json, 图片生成/文生图/pandy-MOSS-Image-8步加速文生图_2114246092383670273.json, 图片生成/文生图/【遇见AI】Moss image 文生图8步加速基础流_2112071294949879810.json, 图片生成/文生图/质感提升-MOSS-SFT_int8+观澜lora_2113835209383829506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_103
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json、图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json、图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json、图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json、图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/MOSS_4步_FP32模型 VS 25步_SFT模型 文生图工作流_2113618754377707521.json、图片生成/文生图/MOSS_Image_SFT_BF16 + 4步加速LoRA 文生图工作流_2113944419647975426.json、图片生成/文生图/Moss 文生图 2K分辨率直出_2113627882475053058.json、图片生成/文生图/Moss-Base Fixed文生图_2112960445203177473.json、图片生成/文生图/Moss-Image图像生成（官方示例版）_2111823655494840322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：11
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
+- `EmptyFlux2LatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 9/10 个有
-- `easy showAnything` —— 9/10 个有
-- `ImpactSwitch` —— 8/10 个有
-- `LoadImage` —— 8/10 个有
-- `PrimitiveBoolean` —— 8/10 个有
-- `RH_Captioner` —— 8/10 个有
-- `easy ifElse` —— 8/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
-- `CR Text Replace` —— 4/10 个有
-- `FluxResolutionNode` —— 4/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `Prompt_Text` —— 1/10 个有
+- `SkipLayerGuidanceDiTSimple` —— 7/11 个有
+- `ResolutionSelector` —— 6/11 个有
+- `LoraLoaderModelOnly` —— 4/11 个有
+- `Label (rgthree)` —— 2/11 个有
+- `LoadImage` —— 2/11 个有
+- `easy anythingIndexSwitch` —— 2/11 个有
+- `ImageBatch` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `孤海注释` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 10 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 25 | 4 - 50 | 11 | 23% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 5 | 11 | 44% |
+| 采样算法 | euler | - | 11 | 64% |
+| 调度器 | simple | - | 11 | 91% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 4 - 50，11 个样本，取值分散，一致性仅 23%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 5，11 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 euler，11 个样本，一致性 64%
+- 调度器 最常用 simple，11 个样本，一致性 91%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

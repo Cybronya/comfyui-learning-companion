@@ -1,72 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_236
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8734
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSamplerAdvanced, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageColorMatch]
-problems: []
+frequency: 6
+level: moderate
+coverage: 0.867833
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/F2Klein手部细节修复 局部重绘_高清放大_2064525984380051457.json, 图片生成/图生图/修手 细节修复 局部重绘 高清放大_2064141358033629185.json, 图片生成/图生图/修手_细节修复_局部重绘_高清放大_2064181510172925954.json, 图片生成/图生图/真人质感 模糊变清晰 蓝神版 Klein_2061023863017918465.json, 图片生成/图生图/高清修复  高清放大  模糊图片变清晰  图像清晰修复_2062450732946771969.json]
+members: [图片生成/文生图/Z-Image Base 文生图_2016498773949685761.json, 图片生成/文生图/Z-Image-Base-8steps 文生图_2063211651511443458.json, 图片生成/文生图/Z-Image-Base文生图V2（高画质版）_2016193102607818754.json, 图片生成/文生图/Z-Image-Turbo 极致写实文生图工作流_2084326650979905538.json, 图片生成/文生图/Z-Image-Turbo批量文生图_1993884946834145281.json, 图片生成/文生图/千问文生图-海报制造机器_1954172979645181954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_236
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/F2Klein手部细节修复 局部重绘_高清放大_2064525984380051457.json、图片生成/图生图/修手 细节修复 局部重绘 高清放大_2064141358033629185.json、图片生成/图生图/修手_细节修复_局部重绘_高清放大_2064181510172925954.json、图片生成/图生图/真人质感 模糊变清晰 蓝神版 Klein_2061023863017918465.json、图片生成/图生图/高清修复  高清放大  模糊图片变清晰  图像清晰修复_2062450732946771969.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-Image Base 文生图_2016498773949685761.json、图片生成/文生图/Z-Image-Base-8steps 文生图_2063211651511443458.json、图片生成/文生图/Z-Image-Base文生图V2（高画质版）_2016193102607818754.json、图片生成/文生图/Z-Image-Turbo 极致写实文生图工作流_2084326650979905538.json、图片生成/文生图/Z-Image-Turbo批量文生图_1993884946834145281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
+- **样本数**：6
+- **可信度**：中等可信
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `ReferenceLatent`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/5 个有
-- `GrowMaskWithBlur` —— 3/5 个有
-- `ImpactInt` —— 3/5 个有
-- `LayerUtility: CropByMask V2` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `LayerUtility: ImageScaleRestore V2` —— 3/5 个有
-- `LayerUtility: RestoreCropBox` —— 3/5 个有
-- `Mask Fill Holes` —— 3/5 个有
-- `MaskPreview+` —— 3/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `PreviewImage` —— 3/6 个有
+- `easy promptLine` —— 3/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `MuyeSizeSelector` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `WujiUpscaler` —— 1/6 个有
+- `easy hiresFix` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | sa_solver | - | 5 | 100% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 5 | 100% |
+| 采样步数 | 21 | 8 - 50 | 6 | 39% |
+| Prompt 约束强度(CFG) | 2.25 | 1 - 4 | 6 | 49% |
+| 采样算法 | euler | - | 6 | 50% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，5 个样本，一致性 100%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，5 个样本，一致性 100%
+- 采样步数 中位数 21，观测区间 8 - 50，6 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 2.25，观测区间 1 - 4，6 个样本，取值分散，一致性仅 49%
+- 采样算法 最常用 euler，6 个样本，一致性 50%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

@@ -3,11 +3,11 @@ name: unknown_workflow_upscale_latent_upscale_lora_20
 type: Unknown Workflow
 frequency: 13
 level: strong
-coverage: 0.807462
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
-problems: []
+coverage: 0.808615
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/LTX2.0文生视频-48G专用_2008734330729795586.json, 视频生成/文生视频/LTX2.0文生视频1080p_2022249801970098177.json, 视频生成/文生视频/LTX2.0文生视频V1_2008526831959412737.json, 视频生成/文生视频/LTX2.0文生视频_2008480312854056962.json, 视频生成/文生视频/LTX2.0文生视频_2009184025579098114.json, 视频生成/文生视频/LTX2.0文生视频（48g使用）视频与音频同步生成_2008803878514462721.json, 视频生成/文生视频/LTX2.0文生视频（plus）_2009269100320661506.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2008441572072890370.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2042529454865522690.json, 视频生成/文生视频/LTX2.0音视频同步-文生视频_2009172721598472194.json, 视频生成/文生视频/文生视频+语音+音乐 LTX2 优化版_2012877844082331650.json, 视频生成/文生视频/文生视频+语音+音乐+LTX2+优化版_2037769306263527425.json, 视频生成/文生视频/🥗开源视频新秀LTX2.0！【文生视频】工作流🥗_2008810413869244418.json]
+members: [视频生成/文生视频/LTX2.0文生视频-48G专用_2008734330729795586.json, 视频生成/文生视频/LTX2.0文生视频1080p_2022249801970098177.json, 视频生成/文生视频/LTX2.0文生视频V1_2008526831959412737.json, 视频生成/文生视频/LTX2.0文生视频_2008480312854056962.json, 视频生成/文生视频/LTX2.0文生视频_2009184025579098114.json, 视频生成/文生视频/LTX2.0文生视频（48g使用）视频与音频同步生成_2008803878514462721.json, 视频生成/文生视频/LTX2.0文生视频（plus）_2009269100320661506.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2008441572072890370.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2042529454865522690.json, 视频生成/文生视频/LTX2.0音视频同步-文生视频_2009172721598472194.json, 视频生成/文生视频/LTX2.3文生哭泣视频_2073302607023656962.json, 视频生成/文生视频/文生视频+语音+音乐 LTX2 优化版_2012877844082331650.json, 视频生成/文生视频/文生视频+语音+音乐+LTX2+优化版_2037769306263527425.json]
 source: knowledge_consolidation
 ---
 
@@ -41,12 +41,12 @@ source: knowledge_consolidation
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
+- `ManualSigmas` —— 12/13 个有
 - `PrimitiveFloat` —— 12/13 个有
 - `PrimitiveInt` —— 11/13 个有
 - `LTXVCropGuides` —— 10/13 个有
@@ -56,24 +56,22 @@ source: knowledge_consolidation
 - `VHS_VideoCombine` —— 8/13 个有
 - `CreateVideo` —— 5/13 个有
 - `MathExpression|pysssss` —— 5/13 个有
-- `RH_LLMAPI_NODE` —— 5/13 个有
 - `ImpactSwitch` —— 4/13 个有
 - `PrimitiveStringMultiline` —— 4/13 个有
-- `easy showAnything` —— 4/13 个有
+- `RH_LLMAPI_NODE` —— 4/13 个有
 - `ImpactInt` —— 3/13 个有
 - `TextInput_` —— 3/13 个有
 - `b7c2d337-c38d-4c04-922b-2d638449d13e` —— 3/13 个有
-- `CR Text` —— 2/13 个有
+- `easy showAnything` —— 3/13 个有
 - `Int` —— 2/13 个有
 - `floatToInt _O` —— 2/13 个有
+- `CR Text` —— 1/13 个有
 - `IntConditions` —— 1/13 个有
+- `KSampler` —— 1/13 个有
 - `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `Note Plus (mtb)` —— 1/13 个有
 - `ShowText|pysssss` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
 - `ToFloat` —— 1/13 个有
 - `easy ifElse` —— 1/13 个有
-- `easy int` —— 1/13 个有
 
 ## 典型参数
 
@@ -81,10 +79,17 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 121 | 13 | 90% |
 | 高度 | 25 | 25 - 25 | 13 | 100% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 0.4 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 

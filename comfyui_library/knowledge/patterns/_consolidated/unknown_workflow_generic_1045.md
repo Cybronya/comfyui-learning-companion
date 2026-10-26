@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1045
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.861
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.698333
+common_nodes: [BagelImageEdit, BagelModelLoader, BagelTextToImage, Fast Groups Muter (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/参考生视频工作流｜Vidu Q3 多图参考 角色一致_2100471510862483458.json, 视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json, 视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json]
+members: [图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json, 图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json, 图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1045
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/参考生视频工作流｜Vidu Q3 多图参考 角色一致_2100471510862483458.json、视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json、视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json、图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json、图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `BagelTextToImage`
+- `Fast Groups Muter (rgthree)`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RH_AlibabaWan26ImageToVideoFlash` —— 2/3 个有
-- `RH_ViduReferenceToVideoQ3Drama` —— 1/3 个有
+- `TextBox` —— 2/3 个有
+- `BagelImageUnderstanding` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

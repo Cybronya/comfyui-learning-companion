@@ -1,75 +1,82 @@
 ---
 name: image_to_image_lora_sampler_unet_39
 type: Image To Image
-frequency: 13
-level: strong
-coverage: 0.894077
-common_nodes: [CFGNorm, CLIPLoader, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditEnhanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 12
+level: moderate
+coverage: 0.830333
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/多图融合Qwen-Image-Edit图像编辑_1958033725604900866.json, 图片生成/图生图/家具设计溶图-Put-It-Here-Qwen版_1962136791979593730.json, 图片生成/图生图/手持商品溶图-Put-It-Here-Qwen版_1962135540076318722.json, 图片生成/图生图/打光-Qwen-Image-Edit图像编辑_1959152314194014209.json, 图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1958318280551370754.json, 图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1973274791648038914.json, 图片生成/图生图/服装加模特-Qwen-Image-Edit图像编辑_1958680755813642241.json, 图片生成/图生图/溶图Qwen版_1965249068194742273.json, 图片生成/图生图/溶图_1965258732785516546.json, 图片生成/图生图/电商手提包溶图-Put-It-Here-Qwen-8步加速版_1964254396915830786.json, 图片生成/图生图/电商手提包溶图-Put-It-Here-Qwen版_1962153400169381889.json, 图片生成/图生图/电商服装溶图-Put-It-Here-Qwen版_1962134309098471425.json, 图片生成/图生图/耳坠珠宝溶图-Put-It-Here-Qwen版_1962130346370383874.json]
+members: [图片生成/图生图/Qwen 2511-角色全身侧面站立图_2082270603360428034.json, 图片生成/图生图/Qwen 2511-角色全身正面站立图_2082264674363592706.json, 图片生成/图生图/Qwen 单张图像编辑_2020825475739820033.json, 图片生成/图生图/Qwen-Edit-2511 外部扩图工作流_2091508580599025665.json, 图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097157315584675841.json, 图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097496668118802434.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 1图_2089987209536561154.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 2图_2089986353214873602.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 3图_2089973995432136705.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流_1971196767998033922.json, 图片生成/图生图/扩图 - Qwen-Image-Edit-2511_2039543264075849730.json, 图片生成/图生图/扩图，上下左右自定义尺寸，超快_2018966865443295233.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_39
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/多图融合Qwen-Image-Edit图像编辑_1958033725604900866.json、图片生成/图生图/家具设计溶图-Put-It-Here-Qwen版_1962136791979593730.json、图片生成/图生图/手持商品溶图-Put-It-Here-Qwen版_1962135540076318722.json、图片生成/图生图/打光-Qwen-Image-Edit图像编辑_1959152314194014209.json、图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1958318280551370754.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen 2511-角色全身侧面站立图_2082270603360428034.json、图片生成/图生图/Qwen 2511-角色全身正面站立图_2082264674363592706.json、图片生成/图生图/Qwen 单张图像编辑_2020825475739820033.json、图片生成/图生图/Qwen-Edit-2511 外部扩图工作流_2091508580599025665.json、图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097157315584675841.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `ImageStitch`
+- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
+- `ReferenceLatent`
 - `SaveImage`
-- `TextEncodeQwenImageEditEnhanced`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleDownToSize` —— 12/13 个有
-- `Text Multiline` —— 12/13 个有
-- `TextEncodeQwenImageEdit` —— 12/13 个有
-- `FastCanvas` —— 8/13 个有
-- `FastCanvasTool` —— 8/13 个有
-- `easy imageRemBg` —— 8/13 个有
-- `PreviewImage` —— 7/13 个有
-- `Anything Everywhere3` —— 1/13 个有
-- `CR SDXL Aspect Ratio` —— 1/13 个有
-- `GetImageSizeAndCount` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `SeedVR2` —— 1/13 个有
-- `SeedVR2BlockSwap` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 9/12 个有
+- `EmptyLatentImage` —— 6/12 个有
+- `ImagePadKJ` —— 5/12 个有
+- `PreviewImage` —— 5/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/12 个有
+- `YK_LoadImageFromURL` —— 3/12 个有
+- `CR Text` —— 2/12 个有
+- `ConstrainImage|pysssss` —— 2/12 个有
+- `GetImageSize` —— 2/12 个有
+- `LayerUtility: TextJoin` —— 2/12 个有
+- `ResizeImageMaskNode` —— 2/12 个有
+- `TTResolutionSelector` —— 2/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 20 | 13 | 86% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 13 | 83% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 7 | 4 - 20 | 12 | 37% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 1680 | 512 - 1680 | 6 | 57% |
+| 高度 | 768 | 512 - 768 | 6 | 82% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 20，13 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，13 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 7，观测区间 4 - 20，12 个样本，取值分散，一致性仅 37%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1680，观测区间 512 - 1680，6 个样本
+- 高度 中位数 768，观测区间 512 - 768，6 个样本，取值集中（一致性 82%）
+- 高发问题（10/12 个样本）：Steps较低可能导致细节不足

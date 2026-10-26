@@ -3,36 +3,34 @@ name: unknown_workflow_generic_582
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8916
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 1
+common_nodes: [JWStringConcat, KOOK_SaveJPGImage, LoadImage, Text Input [DVB]]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.7万相2.7图生视频-参考生视频_2041500454491791362.json, 视频生成/图生视频/万相2.7-参考生视频工作流_2041779553500143618.json, 视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json, 视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json, 视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json]
+members: [图片生成/图生图/上衣-模特换衣_2059828259168284674.json, 图片生成/图生图/参考图调色_2059823068498980865.json, 图片生成/图生图/改指定平铺图_2059824813119721474.json, 图片生成/图生图/自由转平铺_3D_2059824800905912321.json, 图片生成/图生图/裤子-换其他_2059827651996639233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_582
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.7万相2.7图生视频-参考生视频_2041500454491791362.json、视频生成/图生视频/万相2.7-参考生视频工作流_2041779553500143618.json、视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json、视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json、视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/上衣-模特换衣_2059828259168284674.json、图片生成/图生图/参考图调色_2059823068498980865.json、图片生成/图生图/改指定平铺图_2059824813119721474.json、图片生成/图生图/自由转平铺_3D_2059824800905912321.json、图片生成/图生图/裤子-换其他_2059827651996639233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `JWStringConcat`
+- `KOOK_SaveJPGImage`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `Text Input [DVB]`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `LoadAudio` —— 2/5 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 2/5 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 2/5 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/5 个有
 
 ## 典型参数
 

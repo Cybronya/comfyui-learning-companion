@@ -3,63 +3,49 @@ name: unknown_workflow_video_sampler_vae_172
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.558
-common_nodes: [AddLabel, Bjornulf_CombineTexts, CR Text Input Switch, DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, Florence2ModelLoader, Florence2Run, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive string multiline [Crystools], SetNode, VHS_LoadVideoFFmpeg, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy promptReplace, easy showAnything]
+coverage: 0.913667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json]
+members: [视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json, 视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json, 视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json、视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json、视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json、视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json、视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AddLabel`
-- `Bjornulf_CombineTexts`
-- `CR Text Input Switch`
-- `DWPreprocessor`
-- `DepthAnything_V2`
-- `DownloadAndLoadDepthAnythingV2Model`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `GetNode`
-- `INTConstant`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `Primitive string multiline [Crystools]`
-- `SetNode`
-- `VHS_LoadVideoFFmpeg`
-- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy promptReplace`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `LoadAndResizeImage` —— 1/3 个有
+- `Note _O` —— 1/3 个有
+- `WanVideoImageToVideoEncode` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `WanVideoVRAMManagement` —— 1/3 个有
 
 ## 典型参数
 

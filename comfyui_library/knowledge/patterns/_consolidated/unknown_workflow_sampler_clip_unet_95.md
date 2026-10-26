@@ -1,36 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_unet_95
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.9437
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 11
+level: strong
+coverage: 0.970818
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合005.提示词优化单图编辑_2035249536402202626.json, 图片生成/图生图/003.FLUX.2智能综合010.三图融合_2035260057725706241.json, 图片生成/图生图/FLUX 2 DEV 多图编辑_1993665906230362113.json, 图片生成/图生图/FLUX.2-单图编辑_1993754112938409986.json, 图片生成/图生图/FLUX2单图编辑版_1993603323286798338.json, 图片生成/图生图/FLUX2多图编辑版_1993599745228734465.json, 图片生成/图生图/FLux2-换装改图_2082637929058488322.json, 图片生成/图生图/FLux2-换装改图_2082648770222841857.json, 图片生成/图生图/🍕最强开源 FLUX2系列之单图编辑版_1993557673455140865.json, 图片生成/图生图/🍕最强开源 FLUX2系列之多图编辑版_1993566728900771842.json]
+members: [图片生成/图生图/kontext-单图编辑_1957777844306018305.json, 图片生成/图生图/【角色一致性】kontext一键三视图_1941385374562467841.json, 图片生成/图生图/【角色生视图生成】flux kontext_1942377392872820737.json, 图片生成/图生图/一句话去除文字水印_2007189651940974593.json, 图片生成/图生图/万能改图 - Kontext Dev  单图模式_1939636345130098689.json, 图片生成/图生图/万能改图 - 双图模式_1939867866118459394.json, 图片生成/图生图/图片扩图 _kontext -2.0_1953103553411878914.json, 图片生成/文生图/FLUX Kontext DEV 图片编辑_1939140747582955521.json, 图片生成/文生图/Flux Kontext - 万能改图_1942739895523979266.json, 图片生成/文生图/Flux Kontext - 万能改图_1942746478307946498.json, 图片生成/文生图/Flux Kontext Dev单图模式_1938559858222551041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_95
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合005.提示词优化单图编辑_2035249536402202626.json、图片生成/图生图/003.FLUX.2智能综合010.三图融合_2035260057725706241.json、图片生成/图生图/FLUX 2 DEV 多图编辑_1993665906230362113.json、图片生成/图生图/FLUX.2-单图编辑_1993754112938409986.json、图片生成/图生图/FLUX2单图编辑版_1993603323286798338.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/kontext-单图编辑_1957777844306018305.json、图片生成/图生图/【角色一致性】kontext一键三视图_1941385374562467841.json、图片生成/图生图/【角色生视图生成】flux kontext_1942377392872820737.json、图片生成/图生图/一句话去除文字水印_2007189651940974593.json、图片生成/图生图/万能改图 - Kontext Dev  单图模式_1939636345130098689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
+- `DualCLIPLoader`
 - `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -41,25 +39,34 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 7/10 个有
-- `ImpactInt` —— 7/10 个有
-- `CR Text` —— 4/10 个有
-- `DeepTranslatorTextNode` —— 4/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
-- `PreviewImage` —— 4/10 个有
-- `Image Comparer (rgthree)` —— 3/10 个有
-- `Note Plus (mtb)` —— 2/10 个有
-- `TextInput_` —— 2/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
-- `Qwen3VL_Chat` —— 1/10 个有
-- `String` —— 1/10 个有
-- `VAEDecodeTiled` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `EmptyLatentImage` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `ModelSamplingFlux` —— 10/11 个有
+- `RH_Translator` —— 10/11 个有
+- `FluxResolutionNode` —— 9/11 个有
+- `ImageResize+` —— 8/11 个有
+- `MathExpression|pysssss` —— 8/11 个有
+- `Anything Everywhere` —— 2/11 个有
+- `Anything Everywhere3` —— 2/11 个有
+- `JWImageResizeByShorterSide` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `LoraLoaderModelOnly` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `DF_Get_image_size` —— 1/11 个有
+- `FluxKontextImageScale` —— 1/11 个有
+- `GetImageSize+` —— 1/11 个有
+- `ImageConcanate` —— 1/11 个有
+- `ImagePadForOutpaintMasked_UTK` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `LoadImagesFromURL` —— 1/11 个有
+- `RMBG` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 10 | 100% |
+| 高度 | 1280 | 1280 - 1280 | 10 | 100% |
 
 ## 常见问题
 
@@ -67,4 +74,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，观测区间 1280 - 1280，10 个样本，取值集中（一致性 100%）

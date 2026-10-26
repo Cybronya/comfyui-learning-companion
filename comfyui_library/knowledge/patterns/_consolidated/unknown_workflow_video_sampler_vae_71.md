@@ -3,69 +3,66 @@ name: unknown_workflow_video_sampler_vae_71
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.697
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.958857
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FantasyTalking万相超自然数字人_1916922893887016961.json, 视频生成/图生视频/FantasyTalking最强图片驱动数字人_1917000103838547969.json, 视频生成/图生视频/Wan2.1  Fantasy Talking  对口型_1948590349152321538.json, 视频生成/图生视频/Wan2.1-FantasyTalking语音克隆数字人_1921810331054833666.json, 视频生成/图生视频/wan2.1 音唇同步生成视频_1927647202212986882.json, 视频生成/图生视频/图生视频配配口型 超简单的数字人工作流 fantasytalking-wan2.1_1920720222377152514.json, 视频生成/文生视频/阿里巴巴最新免费数字人 Fantasy Talking for comfyUI工作流_1917812826264502273.json]
+members: [视频生成/图生视频/Wan FusionX 图生视频-极速版_1940936064079183874.json, 视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json, 视频生成/图生视频/Wan2.1(KJ)图片到视频基础工作流_1947465024660983810.json, 视频生成/图生视频/sky 玩偶起飞_1914213434668347393.json, 视频生成/图生视频/wan2.2首尾帧——KJ流_1958363442241552386.json, 视频生成/图生视频/wan美女视频转绘，跳舞15秒直出_1913561897336041474.json, 视频生成/图生视频/服装展示图像转视频_1915976312136073218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_71
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FantasyTalking万相超自然数字人_1916922893887016961.json、视频生成/图生视频/FantasyTalking最强图片驱动数字人_1917000103838547969.json、视频生成/图生视频/Wan2.1  Fantasy Talking  对口型_1948590349152321538.json、视频生成/图生视频/Wan2.1-FantasyTalking语音克隆数字人_1921810331054833666.json、视频生成/图生视频/wan2.1 音唇同步生成视频_1927647202212986882.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan FusionX 图生视频-极速版_1940936064079183874.json、视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json、视频生成/图生视频/Wan2.1(KJ)图片到视频基础工作流_1947465024660983810.json、视频生成/图生视频/sky 玩偶起飞_1914213434668347393.json、视频生成/图生视频/wan2.2首尾帧——KJ流_1958363442241552386.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `FantasyTalkingModelLoader`
-- `FantasyTalkingWav2VecEmbeds`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 6/7 个有
-- `ImageResizeKJ` —— 6/7 个有
-- `LoadAudio` —— 6/7 个有
-- `GetNode` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `SetNode` —— 5/7 个有
+- `CLIPVisionLoader` —— 5/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 5/7 个有
+- `GIMMVFI_interpolate` —— 5/7 个有
+- `ImageResizeKJ` —— 5/7 个有
+- `WanVideoClipVisionEncode` —— 5/7 个有
+- `WanVideoExperimentalArgs` —— 5/7 个有
+- `WanVideoTextEncode` —— 5/7 个有
 - `WanVideoTorchCompileSettings` —— 5/7 个有
-- `WanVideoVRAMManagement` —— 5/7 个有
-- `CreateCFGScheduleFloatList` —— 4/7 个有
-- `WanVideoContextOptions` —— 3/7 个有
-- `SaveAudio` —— 2/7 个有
+- `UpscaleModelLoader` —— 4/7 个有
+- `WanVideoLoraSelect` —— 4/7 个有
+- `ImageUpscaleWithModel` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `TextInputBasic` —— 3/7 个有
 - `VHS_LoadVideo` —— 2/7 个有
-- `easy clearCacheAll` —— 2/7 个有
-- `AudioSeparation` —— 1/7 个有
-- `CLIPLoader` —— 1/7 个有
-- `CLIPTextEncode` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LoadImageFromUrl` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `SparkTTSClone` —— 1/7 个有
-- `VHS_VideoInfo` —— 1/7 个有
-- `WanVideoTextEmbedBridge` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `WanVideoApplyNAG` —— 2/7 个有
+- `WanVideoTextEncodeSingle` —— 2/7 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 2/7 个有
+- `WanVideoUniAnimatePoseInput` —— 2/7 个有
+- `CreateCFGScheduleFloatList` —— 1/7 个有
+- `ImageScaleToMegapixels` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `WanVideoFreeInitArgs` —— 1/7 个有
+- `WanVideoLoraSelectMulti` —— 1/7 个有
+- `WanVideoVACEModelSelect` —— 1/7 个有
+- `easy anythingIndexSwitch` —— 1/7 个有
 
 ## 典型参数
 

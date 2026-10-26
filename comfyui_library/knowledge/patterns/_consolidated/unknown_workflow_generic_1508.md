@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1508
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5355
-common_nodes: [LoadImage, PreviewAny, SaveImage]
+coverage: 0.9175
+common_nodes: [CR Text, LoadImage, PreviewImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/图生图文生图_2047589701435006977.json, 图片生成/文生图/大香蕉  Pro 免费体验_1970664059605577729.json]
+members: [图片生成/图生图/大波服装设计工作流_2037704375614840833.json, 视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1508
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图生图文生图_2047589701435006977.json、图片生成/文生图/大香蕉  Pro 免费体验_1970664059605577729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/大波服装设计工作流_2037704375614840833.json、视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `PreviewAny`
+- `PreviewImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
 - `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_nano_banana2_edit` —— 1/2 个有
-- `🙅GPT_image_2_异步@炮老师的小课堂` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 

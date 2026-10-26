@@ -1,98 +1,55 @@
 ---
 name: unknown_workflow_upscale_lora_unet_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [Anything Everywhere3, CFGNorm, CLIPLoader, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RHHiddenNodes, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.838
+common_nodes: [BasicScheduler, CLIPLoader, CreateVideo, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, SaveVideo, UNETLoader, UpscaleModelLoader, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/迄今超强Qwen image-edit2511版工业外观风格迁移神器白底白膜线框一键上色在线运行_1914154624285376513.json, 图片生成/图生图/迄今超强Qwen image-edit2511版（更强一致性）支持单图双图多图编辑在线运行+可选4K高清放大V2_1958410274757885953.json]
+members: [视频生成/图生视频/H3 导演台｜短时间线整理版_2098739700910608385.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本Ref2va_2097293667320029186.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本T2V&FL&I2V修复版_2097354274782138370.json, 视频生成/文生视频/导演台 视频生成全能工作台minimax_2090685785686233089.json, 视频生成/文生视频/导演台全能工作流_2093548311629361154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/迄今超强Qwen image-edit2511版工业外观风格迁移神器白底白膜线框一键上色在线运行_1914154624285376513.json、图片生成/图生图/迄今超强Qwen image-edit2511版（更强一致性）支持单图双图多图编辑在线运行+可选4K高清放大V2_1958410274757885953.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3 导演台｜短时间线整理版_2098739700910608385.json、视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本Ref2va_2097293667320029186.json、视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本T2V&FL&I2V修复版_2097354274782138370.json、视频生成/文生视频/导演台 视频生成全能工作台minimax_2090685785686233089.json、视频生成/文生视频/导演台全能工作流_2093548311629361154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CFGNorm`
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKontextImageScale`
-- `FluxKontextMultiReferenceLatentMethod`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `CreateVideo`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TextEncodeQwenImageEditPlus`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorRefine`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
+- `UpscaleModelLoader`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `FluxResolutionNode` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `KSampler (Efficient)` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
-- `SeedVR2GGUF` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `easy imageSize` —— 1/2 个有
+- `PreviewAny` —— 4/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
+- `easy sleep` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 824 | - | 2 | 100% |
-| 高度 | 1376 | - | 2 | 100% |
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 824，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1376，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

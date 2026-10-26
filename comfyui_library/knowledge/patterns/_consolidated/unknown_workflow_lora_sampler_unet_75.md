@@ -1,81 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_unet_75
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.843
-common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.953333
+common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json, 图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json, 图片生成/图生图/klein模型提示词改车色_2063839522978361346.json, 图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json, 图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json, 图片生成/图生图/一键无缝融图——Klein_2090628254876131329.json, 图片生成/图生图/仅精修车身光影_2061258794776227841.json, 图片生成/图生图/压暗车窗_2064320626726363138.json]
+members: [图片生成/图生图/二次元国风漫画风格转绘-qwen2511-小宣喧-rh_2039599859279335425.json, 图片生成/图生图/千问→异形背景墙灯带（发布版本）_2057265237006569474.json, 图片生成/图生图/千问→白色自发光红框框选（发布版本）_2057265127598149633.json, 图片生成/图生图/千问→镜面材质红框框选（发布版本）_2057265361845837826.json, 图片生成/图生图/智柚AI模型渲染1-26v2_2015695801804136450.json, 图片生成/图生图/智柚AI模型渲染1-26v3_2062727167049551874.json, 图片生成/图生图/美漫风格转绘-Qwen2511-小宣喧-RH_2042055399045603329.json, 图片生成/图生图/（童装版）模特换姿势qwen2511_2040093318956191746.json, 图片生成/图生图/（童装版）模特换衣模特换装+模特换姿势qwen2511_2040078089027325953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_75
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json、图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json、图片生成/图生图/klein模型提示词改车色_2063839522978361346.json、图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json、图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/二次元国风漫画风格转绘-qwen2511-小宣喧-rh_2039599859279335425.json、图片生成/图生图/千问→异形背景墙灯带（发布版本）_2057265237006569474.json、图片生成/图生图/千问→白色自发光红框框选（发布版本）_2057265127598149633.json、图片生成/图生图/千问→镜面材质红框框选（发布版本）_2057265361845837826.json、图片生成/图生图/智柚AI模型渲染1-26v2_2015695801804136450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `EditTextEncode_EditUtils`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
+- `CropWithPadInfo`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 7/8 个有
-- `CropWithPadInfo_EditUtils` —— 6/8 个有
-- `Flux2KleinOutputExtractor_EditUtils` —— 6/8 个有
-- `PrimitiveStringMultiline` —— 6/8 个有
-- `Text` —— 6/8 个有
-- `AdaptiveLongestEdge_EditUtils` —— 4/8 个有
-- `DF_Get_image_size` —— 4/8 个有
-- `GetImageSize` —— 4/8 个有
-- `CLIPTextEncode` —— 3/8 个有
-- `CheckpointLoaderSimple` —— 3/8 个有
-- `InpaintCropImproved` —— 3/8 个有
-- `InpaintStitchImproved` —— 3/8 个有
-- `RH_Translator` —— 3/8 个有
-- `SAM3_Detect` —— 3/8 个有
-- `easy promptReplace` —— 3/8 个有
-- `easy showAnything` —— 3/8 个有
-- `Int` —— 2/8 个有
-- `LayerMask: MaskPreview` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `DapaoImagePadDirectionNode` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `CR Text` —— 7/9 个有
+- `SaveImage` —— 7/9 个有
+- `PreviewImage` —— 4/9 个有
+- `DWPreprocessor` —— 2/9 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 2/9 个有
+- `Image Comparer (rgthree)` —— 2/9 个有
+- `ImageResize+` —— 2/9 个有
+- `ImageStitch` —— 2/9 个有
+- `KOOK_SaveJPGImage` —— 2/9 个有
+- `GetImage` —— 1/9 个有
+- `kkGetImage` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 10 | 9 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | beta57 | - | 9 | 78% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 10，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 beta57，9 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（7/9 个样本）：Steps较低可能导致细节不足

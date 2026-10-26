@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 0.9
-common_nodes: [CR Text, LayerUtility: TextJoin, Qwen3_VQA, RunningHub Deepcleaner, SaveAudio, WooshLoadFlow, WooshSample, WooshTextEncode, easy showAnything]
+common_nodes: [LoadImage, RH_YouchuanImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Woosh文生音频音效-自动扩写_2043574738139746306.json, 音频生成/音频生成/全新Woosh文生音频音效，音效生成！！_2043670939925221377.json]
+members: [视频生成/图生视频/YouchuanImageToVideo_2038489173111349250.json, 视频生成/图生视频/悠船 图生视频_2080579297277992961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1698
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Woosh文生音频音效-自动扩写_2043574738139746306.json、音频生成/音频生成/全新Woosh文生音频音效，音效生成！！_2043670939925221377.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/YouchuanImageToVideo_2038489173111349250.json、视频生成/图生视频/悠船 图生视频_2080579297277992961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,15 +23,9 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: TextJoin`
-- `Qwen3_VQA`
-- `RunningHub Deepcleaner`
-- `SaveAudio`
-- `WooshLoadFlow`
-- `WooshSample`
-- `WooshTextEncode`
-- `easy showAnything`
+- `LoadImage`
+- `RH_YouchuanImageToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

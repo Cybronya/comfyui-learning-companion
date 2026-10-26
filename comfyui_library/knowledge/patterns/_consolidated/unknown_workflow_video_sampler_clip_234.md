@@ -3,74 +3,69 @@ name: unknown_workflow_video_sampler_clip_234
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.955
-common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, RH_LLMAPI_NODE, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.928
+common_nodes: [ApplyFBCacheOnModel, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWImageResizeByLongerSide, KSamplerSelect, LTXVApplySTG, LTXVPreprocess, LTXVScheduler, LayerUtility: PurgeVRAM, LoadImage, Note Plus (mtb), PatchModelPatcherOrder, PathchSageAttentionKJ, RH_Captioner, RandomNoise, STGGuider, SamplerCustomAdvanced, String Replace (mtb), StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/WAN 2.2 3D透视分析效果动画_1984072629252489218.json, 视频生成/图生视频/WAN 2.2 图生视频 LLM强化版_1960628671583313922.json]
+members: [视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json, 视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_234
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN 2.2 3D透视分析效果动画_1984072629252489218.json、视频生成/图生视频/WAN 2.2 图生视频 LLM强化版_1960628671583313922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json、视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ApplyFBCacheOnModel`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Integer`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `JWImageResizeByLongerSide`
+- `KSamplerSelect`
+- `LTXVApplySTG`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `RH_LLMAPI_NODE`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `Note Plus (mtb)`
+- `PatchModelPatcherOrder`
+- `PathchSageAttentionKJ`
+- `RH_Captioner`
+- `RandomNoise`
+- `STGGuider`
+- `SamplerCustomAdvanced`
+- `String Replace (mtb)`
+- `StringFunction|pysssss`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy int`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `CR SDXL Aspect Ratio` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `NunchakuQwenImageDiTLoader` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `TextEncodeQwenImageEdit` —— 1/2 个有
+- `EmptyLTXVLatentVideo` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `LTXVAddGuide` —— 1/2 个有
+- `LTXVConditioning` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideo` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

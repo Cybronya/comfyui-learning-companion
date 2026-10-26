@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_226
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.908111
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7882
+common_nodes: [Anything Everywhere, CLIPVisionLoader, Compare, CreateCFGScheduleFloatList, GetImageSize, ImageCASharpening+, ImageResize+, Int, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RHHiddenNodes, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeSingle, WanVideoVAELoader, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/单人音频+图片生成视频「说话，唱歌，支持中文」InfiniteTalk_1968700475308691457.json, 视频生成/图生视频/图生万影-说话_1983881923028287489.json, 视频生成/图生视频/图生视频+声音克隆数字人（一张图片对口型）_1985498577474625538.json, 视频生成/图生视频/图生视频-infinitetalk单人_2033715529726300161.json, 视频生成/图生视频/图生视频-infinitetalk单人_2034066519231041538.json, 视频生成/图生视频/图生视频-infinitetalk单人_2077567710116012034.json, 视频生成/图生视频/图生视频-infinitetalk单人_2084526458785058817.json, 视频生成/图生视频/数字人infinitetalk_1966325384155475970.json, 视频生成/图生视频/蓝天AI口播工作流_2080617453847138306.json]
+members: [视频生成/图生视频/wan2.2首尾帧视频_2002612444591734786.json, 视频生成/图生视频/【以梦为马 奔赴长空】wan2.2首尾帧-for循环（19镜）_2025325353673166850.json, 视频生成/图生视频/【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）_1992480102802059265.json, 视频生成/图生视频/【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）_2052226517211598849.json, 视频生成/图生视频/【商用级-首尾五帧联动】手动填词版_2021477807292944386.json, 视频生成/图生视频/【首尾五帧联动--商用级】超级自然_2068082288738529281.json, 视频生成/图生视频/五帧wan2.2首尾帧_2001973649991168002.json, 视频生成/图生视频/全自动首尾五帧智能循环_1994338708423901186.json, 视频生成/图生视频/最强首尾五帧联动+wan2.4-for循环_1999372976141238274.json, 视频生成/文生视频/首尾五帧联动 wan2.4首尾帧-for循环（全自动）_1999335210405724162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_226
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/单人音频+图片生成视频「说话，唱歌，支持中文」InfiniteTalk_1968700475308691457.json、视频生成/图生视频/图生万影-说话_1983881923028287489.json、视频生成/图生视频/图生视频+声音克隆数字人（一张图片对口型）_1985498577474625538.json、视频生成/图生视频/图生视频-infinitetalk单人_2033715529726300161.json、视频生成/图生视频/图生视频-infinitetalk单人_2034066519231041538.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/wan2.2首尾帧视频_2002612444591734786.json、视频生成/图生视频/【以梦为马 奔赴长空】wan2.2首尾帧-for循环（19镜）_2025325353673166850.json、视频生成/图生视频/【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）_1992480102802059265.json、视频生成/图生视频/【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）_2052226517211598849.json、视频生成/图生视频/【商用级-首尾五帧联动】手动填词版_2021477807292944386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
+- `Compare`
+- `CreateCFGScheduleFloatList`
+- `GetImageSize`
+- `ImageCASharpening+`
+- `ImageResize+`
 - `Int`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 8/9 个有
-- `LoadAudio` —— 8/9 个有
-- `ToInt` —— 8/9 个有
-- `WanVideoTorchCompileSettings` —— 8/9 个有
-- `easy showAnything` —— 8/9 个有
-- `RH_GetAudioDuration` —— 6/9 个有
-- `CR Text` —— 3/9 个有
-- `Audio Duration (mtb)` —— 2/9 个有
-- `IndexTTS2_Emotion` —— 2/9 个有
-- `PrimitiveFloat` —— 2/9 个有
-- `FlashVSRNode` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `SaveAudio` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
-- `Sleep` —— 1/9 个有
-- `TrimAudioDuration` —— 1/9 个有
-- `VHS_LoadAudioUpload` —— 1/9 个有
-- `easy anythingIndexSwitch` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `AdjustAudio` —— 1/10 个有
+- `AudioCombine` —— 1/10 个有
+- `AudioCrop` —— 1/10 个有
+- `CR Text` —— 1/10 个有
+- `Float` —— 1/10 个有
+- `HunyuanVideoFoley` —— 1/10 个有
+- `LoadAudio` —— 1/10 个有
+- `PreviewAudio` —— 1/10 个有
+- `RH_Captioner` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

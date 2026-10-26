@@ -3,69 +3,71 @@ name: unknown_workflow_lora_sampler_clip_80
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.931167
-common_nodes: [CFGGuider, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.856833
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/bg_2068900398752157698.json, 图片生成/图生图/flux2 klein 9B 4视图_2050825970894028801.json, 图片生成/图生图/klein_KV直出_2022222084566425602.json, 图片生成/图生图/换头换脸_真实自然-Flux2-Klein工作流_2017928641371443202.json, 图片生成/图生图/换头换脸_真实自然-Flux2-Klein工作流_2067849412315013121.json, 图片生成/图生图/赛博朋克画风_2029859105694814210.json]
+members: [图片生成/图生图/Qwen Rebalance写实洗图工作流_1990797714432667650.json, 图片生成/图生图/Qwen写实洗图工作流单张（防侵权）_1991315465637310465.json, 图片生成/图生图/Qwen洗图工作流单张（防侵权）_1995445153374593026.json, 图片生成/图生图/高级感服装模特展示图+全节点注释_2039663460946022401.json, 图片生成/文生图/Qwen Rebalance 写实洗图工作流_1991492700780371970.json, 图片生成/文生图/Qwen Rebalance超强写实质感出图_1990940694510514177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_80
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/bg_2068900398752157698.json、图片生成/图生图/flux2 klein 9B 4视图_2050825970894028801.json、图片生成/图生图/klein_KV直出_2022222084566425602.json、图片生成/图生图/换头换脸_真实自然-Flux2-Klein工作流_2017928641371443202.json、图片生成/图生图/换头换脸_真实自然-Flux2-Klein工作流_2067849412315013121.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen Rebalance写实洗图工作流_1990797714432667650.json、图片生成/图生图/Qwen写实洗图工作流单张（防侵权）_1991315465637310465.json、图片生成/图生图/Qwen洗图工作流单张（防侵权）_1995445153374593026.json、图片生成/图生图/高级感服装模特展示图+全节点注释_2039663460946022401.json、图片生成/文生图/Qwen Rebalance 写实洗图工作流_1991492700780371970.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LoadImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 5/6 个有
-- `CLIPLoader` —— 4/6 个有
-- `ImageScaleToTotalPixels` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `UNETLoader` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `SegmentV2` —— 3/6 个有
-- `LoadDiffusionModelShared //Inspire` —— 2/6 个有
-- `LoadTextEncoderShared //Inspire` —— 2/6 个有
-- `easy imageColorMatch` —— 2/6 个有
-- `GrowMaskWithBlur` —— 1/6 个有
-- `InpaintModelConditioning` —— 1/6 个有
-- `InvertMask` —— 1/6 个有
-- `MaskPreview` —— 1/6 个有
-- `MaskToImage` —— 1/6 个有
-- `Text` —— 1/6 个有
+- `AILab_QwenVL` —— 5/6 个有
+- `CheckpointLoaderSimple` —— 5/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `LayerUtility: ImageReel` —— 5/6 个有
+- `LayerUtility: ImageReelComposit` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/6 个有
+- `PreviewImage` —— 1/6 个有
+- `Text Concatenate` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 26 | 6 | 39% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 6 | 44% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 26，6 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，6 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（10/6 个样本）：Steps较低可能导致细节不足

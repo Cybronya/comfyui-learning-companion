@@ -1,45 +1,35 @@
 ---
 name: unknown_workflow_generic_843
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.676
-common_nodes: [Fast Groups Muter (rgthree), LayerUtility: JoyCaption2ExtraOptions, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewAny, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Translator, SaveImage, ShowText|pysssss, VHS_LoadVideo, WD14Tagger|pysssss, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.72925
+common_nodes: [JjkText, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json, 图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json, 图片生成/文生图/图片和视频提示词反推集合_2088982301207257089.json]
+members: [视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json, 视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json, 视频生成/图生视频/即梦视频2.0全能视频-图生视频超能视频2.0_2036325097518145537.json, 视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_843
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json、图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json、图片生成/文生图/图片和视频提示词反推集合_2088982301207257089.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json、视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json、视频生成/图生视频/即梦视频2.0全能视频-图生视频超能视频2.0_2036325097518145537.json、视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `LayerUtility: JoyCaption2ExtraOptions`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Translator`
-- `SaveImage`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
-- `WD14Tagger|pysssss`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 3/4 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 2/4 个有
+- `RH_CinematicVideoGenerator` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,108 +3,78 @@ name: text_to_image_video_lora_sampler_21
 type: Text To Image
 frequency: 25
 level: strong
-coverage: 0.66884
-common_nodes: [BatchCount+, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CR Text, DrawViTPose, EmptyLatentImage, GetNode, ImageBatch, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LazySwitch2way, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy boolean, easy cleanGpuUsed, easy compare, easy float, easy imageSize, easy int, easy mathInt, solarL_SaveImagesToZip]
+coverage: 0.85136
+common_nodes: [ApplySageAttention, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, EmptyLatentImage, EnhancedLoadDiffusionModel, GetNode, JWInteger, JjkText, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PatchModelPatcherOrder, PreviewImage, PromptRelaySmartEncode, SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Animate V8三模式动作迁移表情手部一致性｜可多人切换_2091646547846066177.json, 图片生成/图生图/Animate V8三模式｜多人动作迁移表情手部风格迁移_2091823150039388161.json, 图片生成/图生图/Animate V9三模式动作迁移表情手部｜可多人角色一致性_2091655831526928385.json, 图片生成/图生图/Animate动作迁移V9｜自动尺寸适配视频生成_2095561386318454786.json, 图片生成/图生图/V8三模式切换多人｜Animate动作迁移表情手部一致性_2091809118070853633.json, 图片生成/图生图/V8三模式多人｜Animate动作迁移表情手部一致性生成_2091830179525120002.json, 图片生成/图生图/V9三模式多人｜Animate动作迁移表情手部角色设计_2091827390875000833.json, 图片生成/图生图/V9动作迁移表情手部一致性Animate｜三模式切换可多人压缩版_2091654530839703554.json, 图片生成/图生图/V9多人动作迁移表情手部一致性｜Animate风格迁移角色_2091653205376716801.json, 图片生成/图生图/Wan2.2 Animate动作迁移V7｜自动尺寸同步运镜24G显存优化_2106963428257652737.json, 图片生成/图生图/多人V9一致性｜动作迁移表情手部风格迁移生成_2091820492125724673.json, 图片生成/图生图/自动尺寸动作迁移V9｜Animate风格迁移一键生成_2095806524168957953.json, 视频生成/图生视频/Animate V8三种模式随意切换｜多人动作迁移图生视频，表情手部一致性全保住_2100448012416933890.json, 视频生成/图生视频/Animate V9 动作迁移+表情+手部一致｜三模式切换支持多人_2096863458942873602.json, 视频生成/图生视频/Animate_V8三种模式随意切换_多人动作迁移保持表情手部一致_2100208341262884866.json, 视频生成/图生视频/Animate_V8三种模式随意切换_多人动作迁移保持表情手部一致_2101877076700778498.json, 视频生成/图生视频/Animate动作迁移V9｜自动尺寸视频图生视频直出_2091247920522817538.json, 视频生成/图生视频/Animate动作迁移_表情与手部细节全保持一致_2108738466895978498.json, 视频生成/图生视频/Animate动作迁移极速版复刻跳舞自动尺寸 动作复刻视频生成_2105417262227345410.json, 视频生成/图生视频/Coze Drive动作迁移V9固定版｜608x1088分辨率_2094521961572552705.json, 视频生成/图生视频/Scail-2.0_2094686124764655617.json, 视频生成/图生视频/V9自动尺寸版_Animate视频动作迁移免调参数_2101214216253435906.json, 视频生成/图生视频/V9自动尺寸版_Animate视频动作迁移免调参数_2101451540824412162.json, 视频生成/图生视频/Wan 2.2 Animate动作迁移图生视频处理生成工具_2102530563642052610.json, 视频生成/图生视频/三模式切换多人｜Animate动作迁移表情手部一致性图生视频_2091819115777454082.json]
+members: [视频生成/图生视频/三号分镜神器｜漫剧图生视频连续镜头轻松搞定_2096523046709452802.json, 视频生成/图生视频/提示词精准控制漫剧画面｜本地开源免费图生视频_2096207799368900609.json, 视频生成/图生视频/本地开源免费真人运镜长镜头4｜图生视频实拍运镜_2089742978712686594.json, 视频生成/图生视频/本地开源免费第4版｜真人运镜长镜头图生视频流畅顺滑_2101496411501191169.json, 视频生成/图生视频/漫剧分镜视频3代升级｜图生视频分镜更连贯，漫剧成片节奏直接起飞_2100434887214977025.json, 视频生成/图生视频/漫剧分镜视频3｜图生视频角色一致性一键生成分镜出图_2092561745666727937.json, 视频生成/图生视频/漫剧分镜视频5号版本｜图生视频画面更稳，长篇漫剧分镜一次拉满_2100436582313582593.json, 视频生成/图生视频/漫剧分镜视频5｜图生视频角色一致性一键生成分镜出图_2092563202113630209.json, 视频生成/图生视频/漫剧分镜视频生成3｜参考图或视频输入总帧数图生视频_2088741080157212674.json, 视频生成/图生视频/漫剧分镜视频生成3｜角色一致图生视频直出_2092326183810715650.json, 视频生成/图生视频/漫剧分镜视频生成5｜参考图视频加帧数设置图生视频_2088742647476342786.json, 视频生成/图生视频/漫剧分镜视频生成5｜角色一致图生视频直出_2092327671568093185.json, 视频生成/图生视频/漫剧创作提速｜五号分镜视频工作流图生视频稳定出片_2096521433223622658.json, 视频生成/图生视频/漫剧提示词精准控制本地开源免费图生视频工作流_2088362781291663361.json, 视频生成/图生视频/漫剧提示词精准控制本地开源免费｜图生视频工作流_2088330265683906562.json, 视频生成/图生视频/漫剧提示词精准控制｜本地免费开源图生视频_2092570779249635329.json, 视频生成/图生视频/真人运镜长镜头4｜本地开源免费不限次随便跑_2097182147487555586.json, 视频生成/图生视频/真人运镜长镜头4｜本地开源免费图生视频一键生成_2093745920608391170.json, 视频生成/图生视频/真人运镜长镜头9｜本地开源免费图生视频一键生成_2093750131110801409.json, 视频生成/图生视频/真人运镜长镜头9｜本地开源白嫖电影感运镜_2097186782122176513.json, 视频生成/图生视频/真人运镜长镜头本地开源免费｜图生视频高质量生成_2097033306788425729.json, 视频生成/图生视频/真人运镜长镜头第九弹｜本地开源免费图生视频_2101130149273104386.json, 视频生成/图生视频/真人运镜长镜头视频｜本地开源免费一键生成_2089292246733647874.json, 视频生成/图生视频/真人运镜长镜头视频｜本地开源免费图生图直出_2093420074748178434.json, 视频生成/图生视频/真人运镜长镜头｜本地开源免费图生视频一键生成_2089449051279421442.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_21
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/图生图/Animate V8三模式动作迁移表情手部一致性｜可多人切换_2091646547846066177.json、图片生成/图生图/Animate V8三模式｜多人动作迁移表情手部风格迁移_2091823150039388161.json、图片生成/图生图/Animate V9三模式动作迁移表情手部｜可多人角色一致性_2091655831526928385.json、图片生成/图生图/Animate动作迁移V9｜自动尺寸适配视频生成_2095561386318454786.json、图片生成/图生图/V8三模式切换多人｜Animate动作迁移表情手部一致性_2091809118070853633.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/三号分镜神器｜漫剧图生视频连续镜头轻松搞定_2096523046709452802.json、视频生成/图生视频/提示词精准控制漫剧画面｜本地开源免费图生视频_2096207799368900609.json、视频生成/图生视频/本地开源免费真人运镜长镜头4｜图生视频实拍运镜_2089742978712686594.json、视频生成/图生视频/本地开源免费第4版｜真人运镜长镜头图生视频流畅顺滑_2101496411501191169.json、视频生成/图生视频/漫剧分镜视频3代升级｜图生视频分镜更连贯，漫剧成片节奏直接起飞_2100434887214977025.json…）
 
 - **类型**：Text To Image
 - **样本数**：25
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 25 个 workflow 都包含：
-- `BatchCount+`
+- `ApplySageAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `DrawViTPose`
+- `EmptyHunyuanLatentVideo`
 - `EmptyLatentImage`
+- `EnhancedLoadDiffusionModel`
 - `GetNode`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LazySwitch1way`
-- `LazySwitch2way`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RHHiddenNodes`
-- `RepeatImageBatch`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PatchModelPatcherOrder`
+- `PreviewImage`
+- `PromptRelaySmartEncode`
 - `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy float`
-- `easy imageSize`
-- `easy int`
-- `easy mathInt`
+- `WanImageToVideoSVIPro`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BBoxYOLO` —— 24/25 个有
-- `CheckpointLoaderSimple` —— 24/25 个有
-- `CompressImages` —— 24/25 个有
-- `ImageScaleToTotalPixels` —— 24/25 个有
-- `ImpactSwitch` —— 24/25 个有
-- `SDPoseDrawKeypoints` —— 24/25 个有
-- `SDPoseKeypointExtractor` —— 24/25 个有
-- `VideoCombineNode` —— 24/25 个有
-- `WanVideoBlockSwap` —— 24/25 个有
-- `WanVideoEncode` —— 24/25 个有
-- `WanVideoSetBlockSwap` —— 24/25 个有
-- `WanVideoUni3C_ControlnetLoader` —— 24/25 个有
-- `WanVideoUni3C_embeds` —— 24/25 个有
-- `YOLOModelLoader` —— 24/25 个有
-- `ZML_AnyTypeSwitchFiveBoolean` —— 24/25 个有
-- `easy anythingIndexSwitch` —— 24/25 个有
-- `BodyRatioMapperProportionTransfer` —— 23/25 个有
-- `BodyRatioMapperSDPoseRender` —— 23/25 个有
-- `Bool` —— 19/25 个有
-- `孤海注释` —— 19/25 个有
-- `LayerUtility: ColorImage V2` —— 15/25 个有
-- `SimpleMath+` —— 14/25 个有
-- `PreviewImage` —— 12/25 个有
-- `easy showAnything` —— 9/25 个有
-- `EmptyImage` —— 4/25 个有
-- `AnyBooleanSwitch` —— 3/25 个有
-- `PrimitiveBoolean` —— 3/25 个有
-- `SaveImage` —— 3/25 个有
-- `DownloadAndLoadNLFModel` —— 1/25 个有
-- `NLFPredict` —— 1/25 个有
-- `PoseDetectionVitPoseToDWPose` —— 1/25 个有
-- `RenderNLFPoses` —— 1/25 个有
-- `TT_img_enc` —— 1/25 个有
+- `ImageBatchExtendWithOverlap` —— 21/25 个有
+- `LayerUtility: PurgeVRAM V2` —— 21/25 个有
+- `easy indexAnything` —— 21/25 个有
+- `easy mathInt` —— 21/25 个有
+- `ColorMatchV2` —— 17/25 个有
+- `Switch` —— 16/25 个有
+- `PreviewAny` —— 14/25 个有
+- `RegexExtract` —— 14/25 个有
+- `StringReplace` —— 14/25 个有
+- `RHLLMChatNode` —— 10/25 个有
+- `TextConcatenate_UTK` —— 10/25 个有
+- `TextSplitJoinByDelimiter` —— 10/25 个有
+- `easy showAnything` —— 10/25 个有
+- `FlashVSR_SM_KSampler` —— 9/25 个有
+- `FlashVSR_SM_Model` —— 9/25 个有
+- `GetImageRangeFromBatch` —— 9/25 个有
+- `GetImageSize` —— 9/25 个有
+- `BatchThief` —— 4/25 个有
+- `RH_Captioner` —— 4/25 个有
+- `SaveImage` —— 1/25 个有
 
 ## 典型参数
 
@@ -122,7 +92,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 26/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 25/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -133,4 +103,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，25 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，25 个样本，取值集中（一致性 100%）
-- 高发问题（26/25 个样本）：Steps较低可能导致细节不足
+- 高发问题（25/25 个样本）：Steps较低可能导致细节不足

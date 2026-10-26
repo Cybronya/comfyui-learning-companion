@@ -1,68 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_269
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.88425
-common_nodes: [CR Prompt Text, Float, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, SaveLatent, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.740111
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2 control控制_1966742439342059521.json, 视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json, 视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json, 视频生成/图生视频/（4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_1980273017576185857.json, 视频生成/文生视频/(KJ版)Wan2.2+Foley精调版文生视频V1_1970702549865164802.json, 视频生成/文生视频/Comfy挑战赛6（心跳）Wan2.2文生视频+音频_1971180956935720962.json]
+members: [视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json, 视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json, 视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json, 视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json, 视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json, 视频生成/文生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2087034230105792514.json, 视频生成/文生视频/【CommintAI】MINIMAX H3 工作流合集_2085882928617316354.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3工作流合集_2084259935344480258.json, 视频生成/文生视频/测试使用_2094631681096507394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_269
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2 control控制_1966742439342059521.json、视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json、视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json、视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json、视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json、视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json、视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
-- `SaveLatent`
-- `VAEEncode`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 7/8 个有
-- `HunyuanVideoFoley` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `text_mul_replace` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `LoadImage` —— 6/8 个有
-- `WanVideoImageToVideoEncode` —— 6/8 个有
-- `WanVideoEmptyEmbeds` —— 2/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `StringToFloatList` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
-- `WanVideoContextOptions` —— 1/8 个有
-- `WanVideoControlEmbeds` —— 1/8 个有
-- `WanVideoEncode` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 8/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `LoadImage` —— 6/9 个有
+- `LoadAudio` —— 5/9 个有
+- `UniBlockSwap` —— 5/9 个有
+- `RHLLMChatNode` —— 2/9 个有
+- `JjkText` —— 1/9 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/9 个有
+- `ShowText|fofo` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 

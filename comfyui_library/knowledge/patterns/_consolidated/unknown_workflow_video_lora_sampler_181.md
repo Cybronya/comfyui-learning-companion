@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_video_lora_sampler_181
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8705
-common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
+coverage: 0.789091
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json, 视频生成/图生视频/03-19-01-WAN2.1-扭曲艺术-Wanmove+Fill Nodes动与静轨迹控制_2000440766998736897.json, 视频生成/图生视频/Wan move指定轨迹运动-指引-图生视频版本1_1999398013804179457.json, 视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json, 视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json, 视频生成/图生视频/Wan-Move：编辑点轨迹控制动态和静态_1999823566369587201.json, 视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json, 视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999117926080933890.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999366459300212737.json]
+members: [图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json, 图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json, 视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（色调）_1950186803727876098.json, 视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（运动能力）_1950195066095714306.json, 视频生成/图生视频/DNR-WAN2.2 KJ 图生视频_1951706628657721345.json, 视频生成/图生视频/KJ流+KJ新版Lightx2v图生视频_1952379981454356482.json, 视频生成/图生视频/KJ流+图生视频 -恶灵骑士_1958329812857327618.json, 视频生成/图生视频/KJ版Wan2.2 图生视频超级加速+镜头切换V2版_1950822532939186177.json, 视频生成/图生视频/KJ版Wan2.2 图生视频超级加速+镜头切换_1950805737444417537.json, 视频生成/图生视频/SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json, 视频生成/图生视频/最新WAN2.2 KJ版 图生视频加速版工作流_1976954244421046273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_181
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json、视频生成/图生视频/03-19-01-WAN2.1-扭曲艺术-Wanmove+Fill Nodes动与静轨迹控制_2000440766998736897.json、视频生成/图生视频/Wan move指定轨迹运动-指引-图生视频版本1_1999398013804179457.json、视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json、视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json、图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json、视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（色调）_1950186803727876098.json、视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（运动能力）_1950195066095714306.json、视频生成/图生视频/DNR-WAN2.2 KJ 图生视频_1951706628657721345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `LoadImage`
+全部 11 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -39,29 +35,30 @@ source: knowledge_consolidation
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `WanVideoWanDrawWanMoveTracks`
 
 **可变部分**（部分 workflow 才有）：
-- `SplineEditor` —— 9/10 个有
-- `RepeatImageBatch` —— 8/10 个有
-- `INTConstant` —— 7/10 个有
-- `ImageConcanate` —— 7/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
-- `WanVideoTorchCompileSettings` —— 6/10 个有
-- `easy showAnything` —— 5/10 个有
-- `FL_PathAnimator` —— 3/10 个有
-- `ImageResizeKJv2` —— 3/10 个有
-- `Text Multiline` —— 3/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `Anything Everywhere3` —— 1/10 个有
-- `CR Text` —— 1/10 个有
-- `Getter` —— 1/10 个有
-- `HAIGC_VideoLoader` —— 1/10 个有
-- `ImpactSwitch` —— 1/10 个有
-- `Setter` —— 1/10 个有
-- `Text` —— 1/10 个有
+- `CR Prompt Text` —— 10/11 个有
+- `INTConstant` —— 9/11 个有
+- `WanVideoTorchCompileSettings` —— 9/11 个有
+- `GetImageSizeAndCount` —— 8/11 个有
+- `JWInteger` —— 8/11 个有
+- `LoadImage` —— 7/11 个有
+- `WanVideoImageToVideoEncode` —— 7/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `GetNode` —— 4/11 个有
+- `ImageFromBatch+` —— 4/11 个有
+- `LayerUtility: PurgeVRAM` —— 4/11 个有
+- `SetNode` —— 4/11 个有
+- `WanVideoEmptyEmbeds` —— 4/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `WanVideoEasyCache` —— 3/11 个有
+- `Int` —— 2/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `Seed_` —— 1/11 个有
+- `easy bookmark` —— 1/11 个有
+- `easy imageSize` —— 1/11 个有
+- `easy positive` —— 1/11 个有
 
 ## 典型参数
 

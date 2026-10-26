@@ -1,58 +1,74 @@
 ---
 name: unknown_workflow_video_sampler_vae_46
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.8197
-common_nodes: [BasicGuider, CLIPLoader, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, RandomNoise, SamplerCustomAdvanced, VAELoader, VHS_VideoCombine]
+coverage: 0.893889
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json, 视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json, 视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json, 视频生成/文生视频/MinimaxH3 全功能加速工作流_2086320789044944897.json, 视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json, 视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json]
+members: [数字人/数字人/API-数字人-InfiniteTalk-单人对口型工作流_2059537663195172866.json, 数字人/数字人/I2V-InfiniteTalk双人数字人_2002787606607872002.json, 数字人/数字人/InfiniteTalk 图片生成单人唱歌视频（不限生成时长、批次提示词）_1958583900547268610.json, 数字人/数字人/InfiniteTalk-多人无限时长数字人生成工作流_1957766648377831426.json, 数字人/数字人/InfiniteTalk对口型工作流 V1.0_2052269912881676289.json, 数字人/数字人/InfiniteTalk数字人图生语音视频_1964942874242633729.json, 数字人/数字人/双人多人对口型数字人（漫剧、短剧、电商）_2040688295524438018.json, 视频生成/图生视频/I2V-InfiniteTalk双人数字人_1985223003455823873.json, 视频生成/图生视频/InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_46
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json、视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json、视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/API-数字人-InfiniteTalk-单人对口型工作流_2059537663195172866.json、数字人/数字人/I2V-InfiniteTalk双人数字人_2002787606607872002.json、数字人/数字人/InfiniteTalk 图片生成单人唱歌视频（不限生成时长、批次提示词）_1958583900547268610.json、数字人/数字人/InfiniteTalk-多人无限时长数字人生成工作流_1957766648377831426.json、数字人/数字人/InfiniteTalk对口型工作流 V1.0_2052269912881676289.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAELoader`
+全部 9 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DualClockSamplerT8` —— 8/10 个有
-- `LoraLoaderBypassModelOnly` —— 7/10 个有
-- `UNETLoader` —— 7/10 个有
-- `LoadImage` —— 6/10 个有
-- `PrimitiveFloat` —— 6/10 个有
-- `ComfyMathExpression` —— 5/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `ResolutionSelector` —— 5/10 个有
-- `CR Prompt Text` —— 4/10 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 4/10 个有
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `MiniMaxH3HybridModelLoaderT8Advanced` —— 3/10 个有
-- `GetNode` —— 2/10 个有
-- `ModelAttentionBackend` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `VHS_LoadVideo` —— 2/10 个有
-- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/10 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/10 个有
-- `MiniMaxH3SigmaShift` —— 1/10 个有
-- `ModelPreviewOverrideKJ` —— 1/10 个有
+- `LoadImage` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `ImageResizeKJv2` —— 6/9 个有
+- `easy showAnything` —— 6/9 个有
+- `PreviewImage` —— 5/9 个有
+- `WanVideoLoraSelectMulti` —— 5/9 个有
+- `Audio Duration (mtb)` —— 4/9 个有
+- `PreviewAudio` —— 4/9 个有
+- `SimpleMath+` —— 4/9 个有
+- `VHS_LoadVideo` —— 4/9 个有
+- `WanVideoLoraSelect` —— 4/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `ToInt` —— 3/9 个有
+- `Getter` —— 2/9 个有
+- `Int` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `PrimitiveFloat` —— 2/9 个有
+- `QZ_ResolutionPreset` —— 2/9 个有
+- `RH_GetAudioDuration` —— 2/9 个有
+- `Setter` —— 2/9 个有
+- `AudioCombine` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `ImageFromBatch+` —— 1/9 个有
+- `LatentSyncNode` —— 1/9 个有
+- `VHS_VideoInfoLoaded` —— 1/9 个有
+- `VideoLengthAdjuster` —— 1/9 个有
 
 ## 典型参数
 

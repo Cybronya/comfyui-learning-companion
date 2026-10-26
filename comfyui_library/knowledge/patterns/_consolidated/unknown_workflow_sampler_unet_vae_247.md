@@ -2,69 +2,65 @@
 name: unknown_workflow_sampler_unet_vae_247
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.78925
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeAudio, VAELoader]
+level: strong
+coverage: 0.8305
+common_nodes: [CLIPLoader, CR Text, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json, 视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json, 视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json, 视频生成/图生视频/Minimax H3 多参打斗V2_2096763661741281282.json]
+members: [图片生成/图生图/【API】Qwen-Image2.1角色四视图_2111987076626468865.json, 图片生成/文生图/Qwen2.1摆拍美学文生图极致_2111870447930400769.json, 图片生成/文生图/摆拍美学文生图V1.1_2108522154689122305.json, 图片生成/文生图/摆拍美学文生图_2108391724740595714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_247
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json、视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json、视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json、视频生成/图生视频/Minimax H3 多参打斗V2_2096763661741281282.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【API】Qwen-Image2.1角色四视图_2111987076626468865.json、图片生成/文生图/Qwen2.1摆拍美学文生图极致_2111870447930400769.json、图片生成/文生图/摆拍美学文生图V1.1_2108522154689122305.json、图片生成/文生图/摆拍美学文生图_2108391724740595714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+- `CR Text`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `QwenImage21Cache`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `VAEDecode` —— 3/4 个有
-- `BasicGuider` —— 2/4 个有
-- `CFGGuider` —— 2/4 个有
-- `H3DistanceAttentionPatcher` —— 2/4 个有
-- `H3DynamicCFGScheduler` —— 2/4 个有
-- `ConditioningZeroOut` —— 1/4 个有
-- `LayerColor: Brightness & Contrast` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `QwenH3PromptLocal` —— 1/4 个有
-- `SplitSigmas` —— 1/4 个有
-- `VAEDecodeTiled` —— 1/4 个有
-- `YC_ShowText` —— 1/4 个有
-- `Yuan_H3Upscale3D` —— 1/4 个有
+- `CR Text Replace` —— 3/4 个有
+- `JDCN_StringToList` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `ProcessString` —— 3/4 个有
+- `PlaySound|pysssss` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
+- `llama_cpp_clean_states` —— 1/4 个有
+- `llama_cpp_unload_model` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 40 | 40 - 40 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
 
 ## 常见问题
 
@@ -72,4 +68,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 40，观测区间 40 - 40，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）

@@ -3,59 +3,44 @@ name: unknown_workflow_video_sampler_vae_116
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9448
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8974
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/b站开源二次元ani全能视频S视频模型_1945071960848257026.json, 视频生成/图生视频/lightx2v-720P-图到视频-rank128-rank32-FreeInit对比测试_1945761108445556738.json, 视频生成/图生视频/pose-sync1024_1921944895412699138.json, 视频生成/图生视频/万相Skyreels V2图生长视频_1915024014367227906.json, 视频生成/文生视频/Uni-DIT-720p-14B-pose_1917099381894615042.json]
+members: [视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json, 视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json, 视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json, 视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json, 视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_116
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/b站开源二次元ani全能视频S视频模型_1945071960848257026.json、视频生成/图生视频/lightx2v-720P-图到视频-rank128-rank32-FreeInit对比测试_1945761108445556738.json、视频生成/图生视频/pose-sync1024_1921944895412699138.json、视频生成/图生视频/万相Skyreels V2图生长视频_1915024014367227906.json、视频生成/文生视频/Uni-DIT-720p-14B-pose_1917099381894615042.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json、视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json、视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json、视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json、视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ImageResizeKJ`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 4/5 个有
+- `WanVideoBlockSwap` —— 4/5 个有
 - `WanVideoTeaCache` —— 4/5 个有
-- `LoadWanVideoClipTextEncoder` —— 3/5 个有
-- `WanVideoExperimentalArgs` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `CLIPVisionLoader` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `RH_Captioner` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `WanVideoFreeInitArgs` —— 2/5 个有
-- `WanVideoUniAnimatePoseInput` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `KepStringLiteral` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `TextInputBasic` —— 1/5 个有
-- `WanVideoMagCache` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `JjkText` —— 2/5 个有
+- `LayerUtility: DeepSeekAPI` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `WanVideoEnhanceAVideo` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

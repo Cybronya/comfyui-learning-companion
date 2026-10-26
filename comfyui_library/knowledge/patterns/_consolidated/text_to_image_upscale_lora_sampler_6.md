@@ -1,92 +1,76 @@
 ---
 name: text_to_image_upscale_lora_sampler_6
 type: Text To Image
-frequency: 15
-level: strong
-coverage: 0.874667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveImage, UNETLoader, VAEDecode, VAELoader, WujiUpscaler2, solarL_SaveImagesToZip]
+frequency: 17
+level: moderate
+coverage: 0.953
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwein-image2.1分镜专用空镜｜有人无人两版任选｜场景道具分镜素材库_2112090371961475074.json, 图片生成/图生图/Qwen Image 2.1加Vosr2加DLSS5角色定妆照文生图生工作流，角色一致性图生图方案_2108350922186387458.json, 图片生成/图生图/Qwen Image 2.1加Vosr2加DLSS5角色定妆照文生图生工作流，角色设计图生图方案_2108349378183385089.json, 图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107199232045314049.json, 图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107582359372656641.json, 图片生成/图生图/Qwen Image2.1+Vosr2+DLSS5角色定妆照｜文生图生写真双路线_2108011049596317697.json, 图片生成/图生图/Qwen image2.1加Vosr2加DLSS5角色定妆五视图 角色设定批量产出_2109709219686608898.json, 图片生成/图生图/Qwen image2.1零偏移单多图局部遮罩编辑重绘 精准控制改图_2109718676936155137.json, 图片生成/图生图/Qwen-image2.1+Vosr2+DLSS5九宫格写真｜影楼级角色一致性套图｜分镜出图_2112096726160076801.json, 图片生成/图生图/Qwen-image2.1+Vosr2+DLSS5图像反推｜反推提示词高清放大｜三模型强强联合_2112113920214388737.json, 图片生成/图生图/Qwen-image2.1+Vosr2+DLSS5角色定妆照｜文生图生双模式高清_2111274477005918209.json, 图片生成/图生图/Qwen-image2.1加Vosr2加DLSS5，角色定妆照文生图图生图_2111522943825174530.json, 图片生成/图生图/qwen-image2.1巨物专用多模式通用｜支持文生图与角色参考图生_2106921300936712193.json, 图片生成/图生图/分镜专用空镜有人无人两版，Qwein-image2.1场景道具出图_2112343437294002177.json, 视频生成/图生视频/qwen-image2.1巨物专用多模式通用｜支持文生图与角色参考图生_2107987558692122626.json]
+members: [图片生成/文生图/二次元人物生成_2088191460100362241.json, 图片生成/文生图/二次元真人(男生）_2088399659025911810.json, 图片生成/文生图/二次元真人_2088197741246767105.json, 图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json, 图片生成/文生图/千问优质生图快速工作流_1988895729412354050.json, 图片生成/文生图/千问文生图 高质量 高清晰_2097963267984543745.json, 图片生成/文生图/千问文生图-电商专用_2066788213078978561.json, 图片生成/文生图/千问文生图-电商专用_2108042168052043777.json, 图片生成/文生图/千问文生图-电商专用_2112373154172719105.json, 图片生成/文生图/千问文生图-电商专用_2113920181155225601.json, 图片生成/文生图/千问文生图_高质量_高清晰_2098219987013033986.json, 图片生成/文生图/千问文生图基础款_1985377282284003329.json, 图片生成/文生图/千问文生图电商产品_2090229875432050689.json, 图片生成/文生图/千问超写实文生图（AI仿真人漫剧资产制作）_2021440026743148546.json, 图片生成/文生图/千问（qwen2512最新版）文生图（加速+电影感）_1978855905909444610.json, 图片生成/文生图/文生图-人像生成写实风格_2087860545537011714.json, 图片生成/文生图/文生图-人像生成写实风格_2088186685191450626.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwein-image2.1分镜专用空镜｜有人无人两版任选｜场景道具分镜素材库_2112090371961475074.json、图片生成/图生图/Qwen Image 2.1加Vosr2加DLSS5角色定妆照文生图生工作流，角色一致性图生图方案_2108350922186387458.json、图片生成/图生图/Qwen Image 2.1加Vosr2加DLSS5角色定妆照文生图生工作流，角色设计图生图方案_2108349378183385089.json、图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107199232045314049.json、图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107582359372656641.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/二次元人物生成_2088191460100362241.json、图片生成/文生图/二次元真人(男生）_2088399659025911810.json、图片生成/文生图/二次元真人_2088197741246767105.json、图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json、图片生成/文生图/千问优质生图快速工作流_1988895729412354050.json…）
 
 - **类型**：Text To Image
-- **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CLIPLoader`
+全部 17 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
 - `SaveImage`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WujiUpscaler2`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImage21` —— 14/15 个有
-- `孤海注释` —— 14/15 个有
-- `RH_Screenwriter` —— 12/15 个有
-- `WujiImagePrompt` —— 12/15 个有
-- `ClownsharKSampler_Beta` —— 11/15 个有
-- `easy showAnything` —— 11/15 个有
-- `ManualSigmas` —— 8/15 个有
-- `QwenImage21SageAttentionT8` —— 8/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/15 个有
-- `PreviewImage` —— 7/15 个有
-- `ResolutionSelector` —— 7/15 个有
-- `WujiPromptEditor` —— 7/15 个有
-- `ConditioningKrea2Rebalance` —— 4/15 个有
-- `RH_LLMAPI_NODE` —— 3/15 个有
-- `WujiCleaner` —— 3/15 个有
-- `Image Comparer (rgthree)` —— 2/15 个有
-- `ImageScaleToTotalPixels` —— 2/15 个有
-- `AutoCropFaces` —— 1/15 个有
-- `ConditioningZeroOut` —— 1/15 个有
-- `EmptyImage` —— 1/15 个有
-- `QwenImage21EditTextEncode_EditUtils` —— 1/15 个有
-- `easy imageSize` —— 1/15 个有
+- `CFGNorm` —— 12/17 个有
+- `CLIPLoader` —— 12/17 个有
+- `PreviewImage` —— 9/17 个有
+- `CLIPLoaderGGUF` —— 5/17 个有
+- `KOOK_ImageCompression` —— 5/17 个有
+- `TextInputBasic` —— 5/17 个有
+- `Image Comparer (rgthree)` —— 2/17 个有
+- `MuyeTextEditOutput` —— 1/17 个有
+- `QwenImageLatentAspectRatio` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 15 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
-| 采样算法 | er_sde | - | 15 | 100% |
-| 调度器 | beta | - | 15 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 80 | 80 - 80 | 15 | 100% |
-| 高度 | 80 | 80 - 80 | 15 | 100% |
+| 宽度 | 1360 | 768 - 2304 | 17 | 66% |
+| 高度 | 1024 | 904 - 2048 | 17 | 68% |
+| 采样步数 | 8 | 4 - 12 | 17 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 17 | 89% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，15 个样本，一致性 100%
-- 调度器 最常用 beta，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高发问题（24/15 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1360，观测区间 768 - 2304，17 个样本
+- 高度 中位数 1024，观测区间 904 - 2048，17 个样本
+- 采样步数 中位数 8，观测区间 4 - 12，17 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，17 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 高发问题（11/17 个样本）：Steps较低可能导致细节不足

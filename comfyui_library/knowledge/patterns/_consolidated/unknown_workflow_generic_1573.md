@@ -3,46 +3,42 @@ name: unknown_workflow_generic_1573
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.786
-common_nodes: [AILab_ImagePreview, CR SDXL Aspect Ratio, DF_Text_Box, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleDownToSize, LoadImage, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, RH_Translator, SaveImage, SaveVideo, ShowText|pysssss, Text Multiline, TextCombinerTwo, easy ifElse, easy showAnything, workflow>FLUX-KONTEXT]
+coverage: 0.682
+common_nodes: [GetImageSize, ImageBatch, ImageBatchMulti, ImageCrop, ImageFromBatch, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveInt, RH_Nano_Banana2_Image2Image, ResizeAndPadImage, SaveImage, SimpleMath+]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1978505891551055873.json, 视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1987789640667172865.json]
+members: [图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json, 图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1573
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1978505891551055873.json、视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1987789640667172865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json、图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_ImagePreview`
-- `CR SDXL Aspect Ratio`
-- `DF_Text_Box`
-- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `ImageBatch`
+- `ImageBatchMulti`
+- `ImageCrop`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `ImageScaleDownToSize`
 - `LoadImage`
-- `PrimitiveBoolean`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Sora2_I2V`
-- `RH_Translator`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RH_Nano_Banana2_Image2Image`
+- `ResizeAndPadImage`
 - `SaveImage`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `Text Multiline`
-- `TextCombinerTwo`
-- `easy ifElse`
-- `easy showAnything`
-- `workflow>FLUX-KONTEXT`
+- `SimpleMath+`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

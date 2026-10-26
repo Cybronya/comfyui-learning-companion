@@ -3,37 +3,39 @@ name: unknown_workflow_generic_143
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.964583
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.857167
+common_nodes: [LoadImage, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json, 视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json, 视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json, 视频生成/图生视频/Seedance Mini 无缝循环动态壁纸_2071615448948494337.json, 视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json, 视频生成/图生视频/Seedance2.5 多模态视频生成_2085920194110771201.json, 视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100055319186595841.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100136230091575297.json, 视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json, 视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json, 视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json]
+members: [图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json, 图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json, 图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json, 图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json, 图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json, 图片生成/反推提示词/Qwen3.5 强悍的图像反推工作流_2035648568308015105.json, 图片生成/反推提示词/Qwen3.5--图像反推_2035655088227753985.json, 图片生成/反推提示词/gemma4出 jimen用文字_2044599371559342082.json, 图片生成/反推提示词/gemma4直出短剧漫剧分镜脚本_2043148693875990530.json, 图片生成/反推提示词/空白工作流_2043534147645349889.json, 图片生成/反推提示词/（N版）Gemma4图像反推工作流（31B Q8高质量）V1_2042595096012525569.json, 图片生成/图生图/Llama反推图像反推_2042150217411207169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_143
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json、视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json、视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json、视频生成/图生视频/Seedance Mini 无缝循环动态壁纸_2071615448948494337.json、视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json、图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json、图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json、图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json、图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 10/12 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 9/12 个有
-- `LoadAudio` —— 7/12 个有
-- `JjkText` —— 3/12 个有
-- `MuyeTextEditOutput` —— 3/12 个有
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
+- `PreviewAny` —— 11/12 个有
+- `SaveImage` —— 11/12 个有
+- `ShellAgentPluginOutputText` —— 11/12 个有
+- `SaveText|pysssss` —— 1/12 个有
+- `ShowText` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 

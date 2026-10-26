@@ -3,57 +3,55 @@ name: unknown_workflow_video_lora_sampler_841
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.8585
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, ImageConcanate, JWImageResizeToMegapixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2-Camera运镜控制_1968658740180340737.json, 视频生成/图生视频/wan2.2-首尾帧_1968548792750485506.json]
+members: [视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json, 视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_841
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2-Camera运镜控制_1968658740180340737.json、视频生成/图生视频/wan2.2-首尾帧_1968548792750485506.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json、视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `ImageConcanate`
+- `JWImageResizeToMegapixels`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `ViggleAnimateConditioning`
+- `ViggleTextCondLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `WanCameraEmbedding` —— 1/2 个有
-- `WanCameraImageToVideo` —— 1/2 个有
-- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `CustomSigmas` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,9 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

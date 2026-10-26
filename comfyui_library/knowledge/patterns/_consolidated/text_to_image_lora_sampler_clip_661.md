@@ -3,80 +3,68 @@ name: text_to_image_lora_sampler_clip_661
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9265
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, Getter, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Setter, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip, 忽略多组孤海]
+coverage: 0.873
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2091313148459577345.json, 视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2092296478197899265.json]
+members: [图片生成/图生图/编辑图超写实4K对比_2103674628471349249.json, 图片生成/文生图/Z-Image四种文生图（原版、真实幻想、BEYOND REALITY、红潮）_2019536292714909697.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_661
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2091313148459577345.json、视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2092296478197899265.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/编辑图超写实4K对比_2103674628471349249.json、图片生成/文生图/Z-Image四种文生图（原版、真实幻想、BEYOND REALITY、红潮）_2019536292714909697.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `Getter`
-- `H3SigmaRefiner`
-- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextLoadLatent`
-- `MiniMaxH3MotionContextSaveLatent`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3SigmaShift`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Setter`
-- `ShowText|pysssss`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `solarL_SaveImagesToZip`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/2 个有
+- `CR Prompt List` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `ReferenceLatent` —— 1/2 个有
+- `TextEncodeQwenImageEditPlus` —— 1/2 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
+- `easy seed` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
+| 宽度 | 1052 | - | 2 | 97% |
+| 高度 | 1728 | - | 2 | 89% |
+| 采样步数 | 8 | - | 2 | 75% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler_ancestral | - | 2 | 50% |
+| 调度器 | simple | - | 2 | 50% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -86,12 +74,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
+- 宽度 中位数 1052，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
+- 高度 中位数 1728，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 50%
+- 调度器 最常用 simple，2 个样本，一致性 50%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

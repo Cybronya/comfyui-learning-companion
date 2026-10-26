@@ -3,73 +3,85 @@ name: text_to_image_lora_sampler_clip_237
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.967375
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy seed]
+coverage: 0.8335
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028048520451723266.json, 图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028109823568519170.json, 图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028696139326820353.json, 图片生成/文生图/z-image-turbo flow dpo+Engineering v4文生图V_2027986503468584961.json, 图片生成/文生图/z-image-turbo flow dpo+Engineering v4文生图_2028108512752046081.json, 图片生成/文生图/z-image-turbo flow dpo版文生图V1_2026993376582701058.json, 图片生成/文生图/z-image-turbo 写实光影增强版_2027561008427962370.json, 图片生成/文生图/z-image-turbo-文生图（带情绪+批量）_2035611721599029249.json]
+members: [图片生成/图生图/13-尺码图生图工作流｜尺码类目专用微调，服装图出图更合身_2099550025155178497.json, 图片生成/图生图/2.0）EG-ImageNG分镜图（分镜生成出图图生图其它电商产品_2087120486856740865.json, 图片生成/图生图/G-Image 2.0分镜图｜分镜生成出图图生图电商产品_2090100494999048194.json, 图片生成/图生图/image2.0多图编辑低价版｜全能图像G四至十图处理_2095833243844169730.json, 图片生成/图生图/全能图片V2图生图｜低价渠道版海报图片处理_2095575437979246594.json, 图片生成/图生图/图生图低价渠道版｜全能图片V2海报制作处理_2095824943010369537.json, 图片生成/图生图/姿势迁移加P模特工作流，人体姿态迁移图生图电商模特方案_2103252702456279042.json, 图片生成/图生图/涂装模型车设计稿｜换装妆容风格迁移生成_2089428508715081729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_237
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028048520451723266.json、图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028109823568519170.json、图片生成/文生图/Z-image-turbo Qwen3 Engeneering&Flow Dpo智能提示词文生图_2028696139326820353.json、图片生成/文生图/z-image-turbo flow dpo+Engineering v4文生图V_2027986503468584961.json、图片生成/文生图/z-image-turbo flow dpo+Engineering v4文生图_2028108512752046081.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/13-尺码图生图工作流｜尺码类目专用微调，服装图出图更合身_2099550025155178497.json、图片生成/图生图/2.0）EG-ImageNG分镜图（分镜生成出图图生图其它电商产品_2087120486856740865.json、图片生成/图生图/G-Image 2.0分镜图｜分镜生成出图图生图电商产品_2090100494999048194.json、图片生成/图生图/image2.0多图编辑低价版｜全能图像G四至十图处理_2095833243844169730.json、图片生成/图生图/全能图片V2图生图｜低价渠道版海报图片处理_2095575437979246594.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy seed`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `CLIPLoaderGGUF` —— 5/8 个有
+- `CR Text` —— 7/8 个有
+- `RH_RhartImageG2ImageToImage` —— 7/8 个有
+- `RH_LLMAPI_Pro_Node` —— 4/8 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 4/8 个有
 - `easy showAnything` —— 4/8 个有
-- `CLIPLoader` —— 3/8 个有
-- `RH_LLMAPI_NODE` —— 3/8 个有
-- `LoadImage` —— 2/8 个有
-- `ProcessString` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `easy promptConcat` —— 1/8 个有
-- `easy promptLine` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/8 个有
+- `ShowText|pysssss` —— 3/8 个有
+- `CR Text Replace` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `Fast Bypasser (rgthree)` —— 1/8 个有
+- `HAIGC_SavePSD` —— 1/8 个有
+- `ImageAndMaskPreview` —— 1/8 个有
+- `LayerUtility: TextJoin` —— 1/8 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/8 个有
+- `RHLLMChatNode` —— 1/8 个有
+- `easy imageScaleDownToSize` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1024 - 1920 | 8 | 70% |
-| 高度 | 1920 | 1080 - 2048 | 8 | 74% |
-| 采样步数 | 10 | 8 - 10 | 8 | 93% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1024 - 1920，8 个样本
-- 高度 中位数 1920，观测区间 1080 - 2048，8 个样本
-- 采样步数 中位数 10，观测区间 8 - 10，8 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

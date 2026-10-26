@@ -3,36 +3,37 @@ name: unknown_workflow_sampler_37
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.94375
-common_nodes: [DF_Get_image_size, ImageStitch, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.975
+common_nodes: [LayerUtility: PurgeVRAM V2, PMRF, RH_Translator, RunningHub PosterCraft Pipeline, RunningHub PosterCraft Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json, 图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json, 图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json, 图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json]
+members: [图片生成/图生图/PosterCraft艺术海报设计_1940296206457421826.json, 图片生成/文生图/PosterCraft工作流_1942817505565937665.json, 图片生成/文生图/PosterCraft艺术海报及封面工作流（C站必备）_1938813861078487041.json, 图片生成/文生图/艺术海报_1938963434559954945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_37
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json、图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json、图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json、图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/PosterCraft艺术海报设计_1940296206457421826.json、图片生成/文生图/PosterCraft工作流_1942817505565937665.json、图片生成/文生图/PosterCraft艺术海报及封面工作流（C站必备）_1938813861078487041.json、图片生成/文生图/艺术海报_1938963434559954945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DF_Get_image_size`
-- `ImageStitch`
-- `LoadImage`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
+- `LayerUtility: PurgeVRAM V2`
+- `PMRF`
+- `RH_Translator`
+- `RunningHub PosterCraft Pipeline`
+- `RunningHub PosterCraft Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_Captioner` —— 2/4 个有
+- `JWInteger` —— 3/4 个有
+- `Bjornulf_ShowStringText` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
 
 ## 典型参数
 

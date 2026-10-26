@@ -1,69 +1,104 @@
 ---
 name: unknown_workflow_inpaint_upscale_sampler_4
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.81
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, CropWithPadInfo, Fast Groups Bypasser (rgthree), FluxKontextMultiReferenceLatentMethod, Image Comparer (rgthree), ImageAndMaskPreview, InpaintCrop, InpaintStitch, KSampler, LoadImage, PrimitiveStringMultiline, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, VAEDecode, WujiCleaner, WujiUpscaler]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: moderate
+coverage: 0.768833
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncodeFlux, CLIPVisionEncode, CLIPVisionLoader, DeepTranslatorTextNode, DifferentialDiffusion, FluxGuidance, GrowMaskWithBlur, INPAINT_InpaintWithModel, INPAINT_LoadInpaintModel, Image Blend by Mask, Image Comparer (rgthree), Image Power Noise, ImageMaskSwitch, ImagePadForOutpaintMasked, ImageScaleBy, InpaintModelConditioning, Int, KSamplerSelect, LoadImage, MaskToImage, MathExpression|pysssss, PreviewImage, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, Textbox, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移局部重绘遮罩精细化改图图像编辑_2004168242325299202.json, 图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2004148282525949953.json, 图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2097877408404828161.json, 图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2099411318628511745.json, 图片生成/图生图/局部重绘_2075453429752881154.json]
+members: [图片生成/图生图/flux扩图工作流 小白友好_1913607036645638146.json, 图片生成/图生图/扩图 _ 高级版（2张）_1915341673960767489.json, 图片生成/图生图/扩图_1923358810663284737.json, 图片生成/图生图/扩图_FLUX.filI_2042992092460359681.json, 图片生成/图生图/扩图_FLUX.fill_1896400597204008961.json, 图片生成/图生图/扩图·优化版 _ Nunchaku提速（2张）_1911225941106880514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_upscale_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移局部重绘遮罩精细化改图图像编辑_2004168242325299202.json、图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2004148282525949953.json、图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2097877408404828161.json、图片生成/图生图/Qwen-Eidt-2511+SeedVR2.5零偏移遮罩精细化改图局部重绘图像编辑_2099411318628511745.json、图片生成/图生图/局部重绘_2075453429752881154.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/flux扩图工作流 小白友好_1913607036645638146.json、图片生成/图生图/扩图 _ 高级版（2张）_1915341673960767489.json、图片生成/图生图/扩图_1923358810663284737.json、图片生成/图生图/扩图_FLUX.filI_2042992092460359681.json、图片生成/图生图/扩图_FLUX.fill_1896400597204008961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKontextMultiReferenceLatentMethod`
+全部 6 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPTextEncodeFlux`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DeepTranslatorTextNode`
+- `DifferentialDiffusion`
+- `FluxGuidance`
+- `GrowMaskWithBlur`
+- `INPAINT_InpaintWithModel`
+- `INPAINT_LoadInpaintModel`
+- `Image Blend by Mask`
 - `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `InpaintCrop`
-- `InpaintStitch`
-- `KSampler`
+- `Image Power Noise`
+- `ImageMaskSwitch`
+- `ImagePadForOutpaintMasked`
+- `ImageScaleBy`
+- `InpaintModelConditioning`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_Captioner`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `ShowText|pysssss`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `Textbox`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `WujiCleaner`
-- `WujiUpscaler`
+- `VAEEncode`
+- `VAELoader`
+- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `RepeatImageBatch` —— 5/6 个有
+- `CLIPTextEncode` —— 3/6 个有
+- `DualCLIPLoader` —— 3/6 个有
+- `ImageBatch` —— 3/6 个有
+- `JoinImageWithAlpha` —— 3/6 个有
+- `LayerUtility: ColorImage V2` —— 3/6 个有
+- `LayerUtility: ImageBlend` —— 3/6 个有
+- `LayerUtility: ImageMaskScaleAs` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `NunchakuFluxDiTLoader` —— 3/6 个有
+- `NunchakuFluxLoraLoader` —— 3/6 个有
+- `NunchakuTextEncoderLoader` —— 3/6 个有
+- `SamplerCustom` —— 3/6 个有
+- `UNETLoader` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `easy seed` —— 3/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `LayerUtility: BooleanOperator` —— 1/6 个有
+- `Note _O` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `PrimitiveString` —— 1/6 个有
+- `TextBox` —— 1/6 个有
+- `easy ifElse` —— 1/6 个有
+- `easy imageSizeBySide` —— 1/6 个有
+- `easy int` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

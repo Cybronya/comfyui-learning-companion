@@ -2,71 +2,69 @@
 name: unknown_workflow_sampler_clip_unet_44
 type: Unknown Workflow
 frequency: 17
-level: moderate
-coverage: 0.749471
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: weak
+coverage: 0.966294
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Flux 3_Image_Klein开源版-文生图_2111064999098671105.json, 图片生成/文生图/Flux-Kelin--文生图_2034949979520901121.json, 图片生成/文生图/Flux3 Image Klein distill t2i加速文生图_2110971162019848193.json, 图片生成/文生图/Flux3 Klein官方文生图_2112067434525061121.json, 图片生成/文生图/Flux3-Klein Text-to-Image 文生图工作流_2110954206533341186.json, 图片生成/文生图/Flux3-klein指定位置精准生成_2111266792965496834.json, 图片生成/文生图/Flux3-klein文生图PUP增强_2111479315035676674.json, 图片生成/文生图/MOSS SFT 文生图（Comfyui官方流）_2112379522267049985.json, 图片生成/文生图/MOSS SFT 文生图｜Comfyui官方流_2112066980613283842.json, 图片生成/文生图/MOSS sft Comfyui官方_2112031895180627969.json, 图片生成/文生图/MOSS sft Comfyui官方_2112119582155689986.json, 图片生成/文生图/MOSS sft Comfyui官方_2112423139555758082.json, 图片生成/文生图/MOSS sft Comfyui官方工作流文生图_2112510825444503554.json, 图片生成/文生图/MOSS-文生图-好_2112195416656793602.json, 图片生成/文生图/flux3 t2v 蒸馏版本_2111318527201341441.json, 图片生成/文生图/flux3_klein 文生图 base版本_2110956211372904449.json, 图片生成/文生图/文生图 角色设计 NB MOSS Sft_2112190645875068929.json]
+members: [图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json, 图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json, 图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json, 图片生成/文生图/ZImage女神_2063571918896328705.json, 图片生成/文生图/Z_image2512文生图_2055512539395567617.json, 图片生成/文生图/Z_image_tubf16全量模型出图_2055504260586065921.json, 图片生成/文生图/Z_image_turbo_文生图_1998723273162641410.json, 图片生成/文生图/Z_image_turbo出图_2055508247259435010.json, 图片生成/文生图/Z_image_turbo即梦生图免费版_1998032212584988673.json, 图片生成/文生图/Z_image_turbo工作流_1994234495897452546.json, 图片生成/文生图/Z_image文生图标准版_2064278139861299201.json, 图片生成/文生图/Zimage-Turbo文生图+写实光影+Engineer大师模式_2042080099603845121.json, 图片生成/文生图/Zimage文成图V1.0_2061670898217873409.json, 图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json, 图片生成/文生图/qwen-image 8步快速生图_1954932461516963842.json, 图片生成/文生图/qwen-image 极速生图_1956936946464296962.json, 图片生成/文生图/文生图+写实光影LORA+Engineer大师模式_2029093017558196225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_44
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/Flux 3_Image_Klein开源版-文生图_2111064999098671105.json、图片生成/文生图/Flux-Kelin--文生图_2034949979520901121.json、图片生成/文生图/Flux3 Image Klein distill t2i加速文生图_2110971162019848193.json、图片生成/文生图/Flux3 Klein官方文生图_2112067434525061121.json、图片生成/文生图/Flux3-Klein Text-to-Image 文生图工作流_2110954206533341186.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json、图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json、图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json、图片生成/文生图/ZImage女神_2063571918896328705.json、图片生成/文生图/Z_image2512文生图_2055512539395567617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `EmptySD3LatentImage`
 - `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 16/17 个有
-- `TextGenerate` —— 15/17 个有
-- `PreviewAny` —— 13/17 个有
-- `ResolutionSelector` —— 13/17 个有
-- `SkipLayerGuidanceDiTSimple` —— 8/17 个有
-- `ComfySwitchNode` —— 6/17 个有
-- `PreviewImage` —— 6/17 个有
-- `Ideogram4PromptBuilderKJ` —— 3/17 个有
-- `CreateBoundingBoxes` —— 2/17 个有
-- `FastGroupsBypassSwitch` —— 2/17 个有
-- `Flux3LayoutPrompt` —— 1/17 个有
-- `JjkText` —— 1/17 个有
-- `孤海注释` —— 1/17 个有
+- `CLIPLoader` —— 14/17 个有
+- `LoraLoaderModelOnly` —— 11/17 个有
+- `CR Text` —— 6/17 个有
+- `CR SDXL Aspect Ratio` —— 3/17 个有
+- `CLIPLoaderGGUF` —— 2/17 个有
+- `ClipLoaderGGUF` —— 1/17 个有
+- `Float` —— 1/17 个有
+- `Int` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `TTResolutionSelector` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 50 | 8 - 50 | 17 | 51% |
-| Prompt 约束强度(CFG) | 3 | 1 - 3.5 | 17 | 53% |
-| 采样算法 | er_sde | - | 17 | 65% |
-| 调度器 | simple | - | 17 | 100% |
+| 采样步数 | 8 | 4 - 30 | 17 | 33% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 17 | 29% |
+| 采样算法 | euler | - | 17 | 59% |
+| 调度器 | simple | - | 17 | 94% |
 | 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 8 - 50，17 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3.5，17 个样本
-- 采样算法 最常用 er_sde，17 个样本，一致性 65%
-- 调度器 最常用 simple，17 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 4 - 30，17 个样本，取值分散，一致性仅 33%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，17 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，17 个样本，一致性 59%
+- 调度器 最常用 simple，17 个样本，一致性 94%
 - 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 高发问题（12/17 个样本）：Steps较低可能导致细节不足

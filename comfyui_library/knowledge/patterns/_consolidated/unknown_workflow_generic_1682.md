@@ -3,35 +3,29 @@ name: unknown_workflow_generic_1682
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [HAIGC_LoadImagesFromZip, LoadImage, RunningHubRVCOneClickTrain, SaveImage, ShellAgentPluginOutputText, easy saveText]
+coverage: 1
+common_nodes: [LoadImage, RH_KlingO1_StartToEnd, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/RVC 训练工作流（RH版）_2099755820421570562.json, 音频生成/音频生成/训练你的声音模型-用于翻唱一切歌曲_2101690271791673345.json]
+members: [视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json, 视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1682
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/RVC 训练工作流（RH版）_2099755820421570562.json、音频生成/音频生成/训练你的声音模型-用于翻唱一切歌曲_2101690271791673345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json、视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HAIGC_LoadImagesFromZip`
 - `LoadImage`
-- `RunningHubRVCOneClickTrain`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy saveText`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
+- `RH_KlingO1_StartToEnd`
+- `SaveVideo`
 
 ## 典型参数
 

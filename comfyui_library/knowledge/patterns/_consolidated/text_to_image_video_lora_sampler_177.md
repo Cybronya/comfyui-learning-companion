@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_177
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.706333
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, solarL_SaveImagesToZip]
+coverage: 0.623333
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ResolutionSelector, SaveImage, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SCAIL2超快超长视频｜动作迁移加速生成_2095244285921812482.json, 视频生成/图生视频/pipiai-SCAIL2--超快超长视频 视频生视频 动作迁移_2082286551828094977.json, 视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json]
+members: [数字人/数字人/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2112813979277025282.json, 视频生成/图生视频/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2110491230802108418.json, 视频生成/图生视频/短视频复刻v3，视频生视频图生视频快速仿拍出片_2110520972825681922.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_177
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SCAIL2超快超长视频｜动作迁移加速生成_2095244285921812482.json、视频生成/图生视频/pipiai-SCAIL2--超快超长视频 视频生视频 动作迁移_2082286551828094977.json、视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2112813979277025282.json、视频生成/图生视频/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2110491230802108418.json、视频生成/图生视频/短视频复刻v3，视频生视频图生视频快速仿拍出片_2110520972825681922.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
@@ -26,36 +26,47 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `GetNode`
-- `ImageColorMatch+`
-- `ImageResizeKJv2`
-- `Int`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `SAM3_VideoTrack`
-- `SCAIL2SimpleVideo`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SaveImage`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
 - `SetNode`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
+- `AudioCrop` —— 2/3 个有
+- `ImageBatchExtendWithOverlap` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MiniMaxH3MotionContext` —— 2/3 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextTrim` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
 - `孤海注释` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 

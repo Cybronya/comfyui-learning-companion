@@ -3,66 +3,82 @@ name: unknown_workflow_video_lora_sampler_857
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5605
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageSmartSharpen+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy promptConcat, easy seed]
+coverage: 0.6925
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Text Concatenate, ComfyMathExpression, ExtractAndCombineLines, Fast Groups Bypasser (rgthree), ImageBatchMulti, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaGetNode, PixaromaLabel, PixaromaSetNode, PreviewAny, PreviewImage, PrimitiveFloat, ProcessString, RHHiddenNodes, RHLLMChatNode, RHSettingsNode, ResolutionSelector, ShowText|pysssss, Text, UNETLoader, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json, 视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json]
+members: [视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json, 视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_857
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json、视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json、视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `Float`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImageSmartSharpen+`
-- `JWInteger`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text Concatenate`
+- `ComfyMathExpression`
+- `ExtractAndCombineLines`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBatchMulti`
+- `JWFloatToString`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `PixaromaLabel`
+- `PixaromaSetNode`
+- `PreviewAny`
 - `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `SetNode`
+- `PrimitiveFloat`
+- `ProcessString`
+- `RHHiddenNodes`
+- `RHLLMChatNode`
+- `RHSettingsNode`
+- `ResolutionSelector`
+- `ShowText|pysssss`
+- `Text`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy seed`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `LayerFilter: FilmV2` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ExtendIntermediateSigmas` —— 1/2 个有
+- `MiniMaxH3AVDecodeT8` —— 1/2 个有
+- `MiniMaxH3SigmaShift` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `RandomNoise` —— 1/2 个有
+- `SamplerCustomAdvanced` —— 1/2 个有
+- `SelfLiftAvatarH3Sampler` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

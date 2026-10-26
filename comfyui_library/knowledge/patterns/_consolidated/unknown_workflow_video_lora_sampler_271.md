@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_271
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.89875
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.89525
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阿良绘】数字人讲话（图生视频）_高动态Infinite talk（Lightx2v+Rcm）_1960200175715299330.json, 视频生成/图生视频/不限时长生成 【Infinite Talk 支持多角度数字人完美口型 】_1978136142623203329.json, 视频生成/图生视频/优化版Infinite Talk口型高质量图生视频数字人_1979895392475189249.json, 视频生成/图生视频/凡工自用贞贞Infinite talk数字人_2039336418778030081.json, 视频生成/图生视频/动物或卡通角色数字人_2070755239396990978.json, 视频生成/图生视频/卡通动物说唱数字人_2071595025368182786.json, 视频生成/图生视频/最新版本数字人祝福视频漫剧电商服装分镜_2074655018262814722.json, 视频生成/图生视频/跨境电商数字人开口说话V2_2079398249361920002.json]
+members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json, 图片生成/图生图/H3高清快速出视频_2110660601948233729.json, 图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json, 视频生成/图生视频/H3工作流最优解_2104970789329133569.json, 视频生成/图生视频/Minimax H3视频 完美人物替换！_2109512582699769858.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_271
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/【阿良绘】数字人讲话（图生视频）_高动态Infinite talk（Lightx2v+Rcm）_1960200175715299330.json、视频生成/图生视频/不限时长生成 【Infinite Talk 支持多角度数字人完美口型 】_1978136142623203329.json、视频生成/图生视频/优化版Infinite Talk口型高质量图生视频数字人_1979895392475189249.json、视频生成/图生视频/凡工自用贞贞Infinite talk数字人_2039336418778030081.json、视频生成/图生视频/动物或卡通角色数字人_2070755239396990978.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json、图片生成/图生图/H3高清快速出视频_2110660601948233729.json、图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
@@ -23,50 +23,48 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `JWInteger` —— 7/8 个有
-- `JWFloat` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `1hew_AudioDuration` —— 4/8 个有
-- `PreviewAny` —— 4/8 个有
-- `PreviewAudio` —— 4/8 个有
-- `WanVideoBlockSwap` —— 4/8 个有
-- `easy mathInt` —— 4/8 个有
-- `easy showAnything` —— 4/8 个有
-- `GetImageSizeAndCount` —— 3/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
-- `Number to Int` —— 2/8 个有
-- `Text to Number` —— 2/8 个有
-- `WanVideoTorchCompileSettings` —— 2/8 个有
-- `Audio Duration (mtb)` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `DF_Float` —— 1/8 个有
-- `GetImageSize` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
-- `ImageConcatenate_UTK` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `SaveAudio` —— 1/8 个有
+- `ManualSigmas` —— 6/8 个有
+- `PreviewAny` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 6/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `CreateVideo` —— 2/8 个有
+- `ExtendIntermediateSigmas` —— 2/8 个有
+- `LTXVConcatAVLatent` —— 2/8 个有
+- `LTXVSeparateAVLatent` —— 2/8 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 2/8 个有
+- `MiniMaxH3SigmaShift` —— 2/8 个有
+- `RH_LLMAPI_Pro_Node` —— 2/8 个有
+- `SaveVideo` —— 2/8 个有
+- `llama_cpp_instruct_adv` —— 2/8 个有
+- `llama_cpp_model_loader` —— 2/8 个有
+- `llama_cpp_parameters` —— 2/8 个有
+- `JjkText` —— 1/8 个有
+- `LayerUtility: TextJoin` —— 1/8 个有
 
 ## 典型参数
 

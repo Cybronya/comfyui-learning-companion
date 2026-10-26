@@ -3,33 +3,34 @@ name: unknown_workflow_generic_911
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.819333
+common_nodes: [LoadAudio, LoadImage, RecordAudio, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/产品修图-布料去褶皱_2064733467665059841.json, 图片生成/图生图/光影增强_2055229927070420993.json, 图片生成/图生图/全能 image2（25宫格故事板生成）通用图生图工作流_2058929056028123137.json]
+members: [comfyui-workflow-templates-json/video_ltx2_3_ia2v.json, comfyui-workflow-templates-json/video_ltx2_3_id_lora.json, 视频生成/图生视频/Wan2.6数字人-唱歌对口型_2009223802286247937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_911
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品修图-布料去褶皱_2064733467665059841.json、图片生成/图生图/光影增强_2055229927070420993.json、图片生成/图生图/全能 image2（25宫格故事板生成）通用图生图工作流_2058929056028123137.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_3_ia2v.json、comfyui-workflow-templates-json/video_ltx2_3_id_lora.json、视频生成/图生视频/Wan2.6数字人-唱歌对口型_2009223802286247937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `RecordAudio`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 1/3 个有
-- `Textbox` —— 1/3 个有
+- `98ee9e5b-467b-40aa-a534-36033f27d0b4` —— 2/3 个有
+- `RH_Wan26_I2V` —— 1/3 个有
 
 ## 典型参数
 

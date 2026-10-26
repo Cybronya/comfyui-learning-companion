@@ -3,22 +3,22 @@ name: text_to_image_sampler_clip_unet_227
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8895
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy int, easy showAnything]
+coverage: 0.972
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, Krea2StyleReference, Krea2TwoStyleReferences, Krea2TwoStyleTransfer, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/新王炸！小钢炮！最新Z-image模型-文生图工作流_1993919513085280258.json, 图片生成/文生图/🚀 开源新王💯王炸💥Z-IMAGE系列 文生图+ 图生图_1993880222367940610.json]
+members: [图片生成/文生图/Krea2 双参考风格迁移_2073700191701655554.json, 图片生成/文生图/Krea2-双图风格融合_2073959943883022337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_227
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/新王炸！小钢炮！最新Z-image模型-文生图工作流_1993919513085280258.json、图片生成/文生图/🚀 开源新王💯王炸💥Z-IMAGE系列 文生图+ 图生图_1993880222367940610.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2 双参考风格迁移_2073700191701655554.json、图片生成/文生图/Krea2-双图风格融合_2073959943883022337.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
@@ -28,51 +28,49 @@ source: knowledge_consolidation
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
+- `Krea2StyleReference`
+- `Krea2TwoStyleReferences`
+- `Krea2TwoStyleTransfer`
 - `LoadImage`
-- `RH_Captioner`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `SaveLatent` —— 1/2 个有
-- `String Literal` —— 1/2 个有
-- `TT_img_enc_v2` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Krea2StyleTransfer` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ResolutionSelector` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
+| 采样算法 | euler_ancestral | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1536 | - | 2 | 100% |
+| 宽度 | 720 | - | 2 | 71% |
+| 高度 | 836 | - | 2 | 61% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 720，样本不足，未给区间，2 个样本
+- 高度 中位数 836，样本不足，未给区间，2 个样本
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

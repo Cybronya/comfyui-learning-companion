@@ -3,83 +3,60 @@ name: text_to_image_lora_sampler_clip_460
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.82975
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.73175
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, INTConstant, JjkText, KSampler, KSamplerAdvanced, LoraLoaderModelOnly, SaveImage, SetNode, Text Multiline, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/3合1集合工作流多模态视频生成首尾帧视频文生视频开源版MiniMax_2087435183631986689.json, 视频生成/文生视频/MiniMax H3海螺模型9种SKILL文生视频图生视频生成_2088191082780778497.json, 视频生成/文生视频/MiniMax H3海螺模型9种SKILL视频生成处理工作流_2101003222906400770.json, 视频生成/文生视频/文生视频首尾帧控制 MiniMax H3开源版多模态3合1集合工作流_2104829423152357378.json]
+members: [图片生成/图生图/智绘品牌秒出全案｜LOGO名片招牌工服多场景自动生成_2090089023988654082.json, 图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_460
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/3合1集合工作流多模态视频生成首尾帧视频文生视频开源版MiniMax_2087435183631986689.json、视频生成/文生视频/MiniMax H3海螺模型9种SKILL文生视频图生视频生成_2088191082780778497.json、视频生成/文生视频/MiniMax H3海螺模型9种SKILL视频生成处理工作流_2101003222906400770.json、视频生成/文生视频/文生视频首尾帧控制 MiniMax H3开源版多模态3合1集合工作流_2104829423152357378.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/智绘品牌秒出全案｜LOGO名片招牌工服多场景自动生成_2090089023988654082.json、图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `GetNode`
+- `INTConstant`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
-- `LoadImage`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `SaveImage`
+- `SetNode`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `ComfyMathExpression` —— 2/4 个有
-- `CreateVideo` —— 2/4 个有
-- `Fast Muter (rgthree)` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `MiniMaxChunkFeedForward` —— 2/4 个有
-- `MiniMaxH3AVDecodeT8` —— 2/4 个有
-- `MiniMaxLowVRAMAttention` —— 2/4 个有
-- `ModelPreviewOverrideKJ` —— 2/4 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `VAEDecodeAudio` —— 2/4 个有
-- `VHS_VideoCombine` —— 2/4 个有
-- `PixaromaLabel` —— 1/4 个有
-- `PixaromaResolution` —— 1/4 个有
+- `AILab_QwenVL` —— 3/4 个有
+- `CR Text` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `Text Concatenate` —— 3/4 个有
+- `孤海注释` —— 3/4 个有
+- `EmptyImage` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `JjkShowText` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `RH_RhartImageG2ImageToImage` —— 1/4 个有
+- `TextEncodeQwenImageEditPlus` —— 1/4 个有
+- `VAEEncode` —— 1/4 个有
 
 ## 典型参数
 
@@ -97,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -108,4 +85,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

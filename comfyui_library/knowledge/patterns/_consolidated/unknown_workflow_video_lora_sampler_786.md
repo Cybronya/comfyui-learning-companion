@@ -3,69 +3,73 @@ name: unknown_workflow_video_lora_sampler_786
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.859
-common_nodes: [ApplyFaceProcessor, AudioSeparation, CR Text, DownloadAndLoadWav2VecModel, FaceProcessorLoader, ImageResizeKJv2, JWInteger, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.8095
+common_nodes: [DF_Get_image_size, Float, GetImageSizeAndCount, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PDIMAGE_LongerSize, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Stand In+Vace+MultiTalk脸部参考姿势控制语音数字人V1_1956761919991287809.json, 视频生成/图生视频/吴京梗 _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频 V3_1985579275598417922.json]
+members: [图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json, 视频生成/图生视频/人物一致性SVI顶配版长视频生成_1985379890973319169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_786
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Stand In+Vace+MultiTalk脸部参考姿势控制语音数字人V1_1956761919991287809.json、视频生成/图生视频/吴京梗 _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频 V3_1985579275598417922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json、视频生成/图生视频/人物一致性SVI顶配版长视频生成_1985379890973319169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `AudioSeparation`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `FaceProcessorLoader`
+- `DF_Get_image_size`
+- `Float`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
+- `Int`
+- `JWImageResizeByLongerSide`
 - `JWInteger`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
+- `MathExpression|pysssss`
+- `PDIMAGE_LongerSize`
+- `RepeatImageBatch`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAddStandInLatent`
+- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy batchAnything`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioToFPS` —— 1/2 个有
-- `CM_FloatToInt` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `DrawViTPose` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `ColorMatch` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `OnnxDetectionModelLoader` —— 1/2 个有
-- `PoseAndFaceDetection` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoSetBlockSwap` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,56 +1,48 @@
 ---
 name: unknown_workflow_upscale_vae_14
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.82475
-common_nodes: [Image Comparer (rgthree), ImageResize+, ImageScaleBy, LayerUtility: PurgeVRAM, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, easy imageSize]
+coverage: 0.542
+common_nodes: [Image Comparer (rgthree), LoadImage, PlaySound|pysssss, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/8K高清放大  细节增强 极速修复 商业级大片  SeedVR2.5+TTP_2069588469764149250.json, 图片生成/图生图/TTP+seedVR2超分放大_2095679773157707777.json, 图片生成/图生图/TTP+seedVR2超分放大_2095690777207861249.json, 图片生成/图生图/TTP+seedVR2超分放大_2095743798902083585.json, 图片生成/图生图/亿万级像素_2086854199047970818.json, 图片生成/图生图/强大版 图片放大+FlashVSR+V1.1+SeedVR2_2062709441811800066.json, 图片生成/图生图/本地版_强大8K媲美商业级图片放大_FlashVSR_V1.1+SeedVR2.5_2096885620097507329.json, 图片生成/图生图/本地版_强大8K媲美商业级图片放大_FlashVSR_V1.1+SeedVR2.5_2097224470044954625.json]
+members: [图片生成/图生图/AI展示面制作_2038086599505874945.json, 图片生成/图生图/AI短剧-分镜设计、延展 4宫格剧情 林耀2.12_2021844416759078914.json, 图片生成/图生图/AI短剧-角色多视觉创作设计 林耀2.12_2021839888609447937.json, 图片生成/图生图/EitanStudio人物定格放大_2044629981107589122.json, 图片生成/图生图/Image2.0_六视图定妆照+剧情四分镜制作_2050498779417202689.json, 图片生成/图生图/Image2.0剧情分镜制作_2050425926537756674.json, 图片生成/图生图/MJ-全能影视设计_2022134966376734722.json, 图片生成/图生图/QXL短剧人物三视图0317_2034121430341787650.json, 图片生成/图生图/最新G image2 官方满血版 数字人剧照工作流高清版 V1.0_2051463449519112193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_14
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/8K高清放大  细节增强 极速修复 商业级大片  SeedVR2.5+TTP_2069588469764149250.json、图片生成/图生图/TTP+seedVR2超分放大_2095679773157707777.json、图片生成/图生图/TTP+seedVR2超分放大_2095690777207861249.json、图片生成/图生图/TTP+seedVR2超分放大_2095743798902083585.json、图片生成/图生图/亿万级像素_2086854199047970818.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI展示面制作_2038086599505874945.json、图片生成/图生图/AI短剧-分镜设计、延展 4宫格剧情 林耀2.12_2021844416759078914.json、图片生成/图生图/AI短剧-角色多视觉创作设计 林耀2.12_2021839888609447937.json、图片生成/图生图/EitanStudio人物定格放大_2044629981107589122.json、图片生成/图生图/Image2.0_六视图定妆照+剧情四分镜制作_2050498779417202689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `PreviewImage`
+- `PlaySound|pysssss`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `TTP_Image_Tile_Batch` —— 5/8 个有
-- `TTP_Tile_image_size` —— 5/8 个有
-- `FlashVSRNode` —— 4/8 个有
-- `ImageCASharpening+` —— 4/8 个有
-- `ImpactFloat` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
-- `easy int` —— 4/8 个有
-- `RHHiddenNodes` —— 3/8 个有
-- `VRAMReserver` —— 3/8 个有
-- `easy cleanGpuUsed` —— 3/8 个有
-- `easy showAnything` —— 3/8 个有
-- `LayerUtility: ImageScaleRestore` —— 1/8 个有
-- `LayerUtility: NumberCalculatorV2` —— 1/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `CR Text Concatenate` —— 8/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/9 个有
+- `TextInput_` —— 8/9 个有
+- `PreviewImage` —— 7/9 个有
+- `ImageScaleToTotalPixels` —— 5/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/9 个有
+- `easy showAnything` —— 5/9 个有
+- `LayerUtility: TextJoin` —— 4/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 3/9 个有
+- `Switch` —— 3/9 个有
+- `Label (rgthree)` —— 2/9 个有
 
 ## 典型参数
 

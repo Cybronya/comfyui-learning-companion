@@ -3,33 +3,40 @@ name: unknown_workflow_upscale_37
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Google-Gemini-PL, LoadImage, SaveImage]
+coverage: 0.683
+common_nodes: [BiRefNet_ModelLoader_Zho, BiRefNet_Zho, InspyrenetRembg, LayerMask: BiRefNetUltra, LayerMask: SegmentAnythingUltra V2, LoadImage, PreviewImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/Gemini 2.0 细节修改+高清放大_1904715758629519362.json, 图片生成/文生图/谷歌Gemini生图_1912139284466597890.json]
+members: [图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json, 图片生成/图生图/抠图_2062353508631928833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Gemini 2.0 细节修改+高清放大_1904715758629519362.json、图片生成/文生图/谷歌Gemini生图_1912139284466597890.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json、图片生成/图生图/抠图_2062353508631928833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Google-Gemini-PL`
+- `BiRefNet_ModelLoader_Zho`
+- `BiRefNet_Zho`
+- `InspyrenetRembg`
+- `LayerMask: BiRefNetUltra`
+- `LayerMask: SegmentAnythingUltra V2`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Upscale Model Loader` —— 1/2 个有
+- `YUAN_TXTConvertAny` —— 1/2 个有
 
 ## 典型参数
 

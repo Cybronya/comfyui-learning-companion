@@ -3,32 +3,35 @@ name: unknown_workflow_generic_1639
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, FL_CosyVoice3_CrossLingual, FL_CosyVoice3_ModelLoader, LoadAudio, PreviewAudio, SaveAudio]
+coverage: 0.875
+common_nodes: [Float, RH_RhartImageG2TextToImage, RTXVideoSuperResolution, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json, 音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json]
+members: [图片生成/文生图/地表最强-全能图片G-Image-2-文生图-高清直出-0.1元_次_2066174217036582914.json, 图片生成/文生图/地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047337678131175426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1639
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json、音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/地表最强-全能图片G-Image-2-文生图-高清直出-0.1元_次_2066174217036582914.json、图片生成/文生图/地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047337678131175426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FL_CosyVoice3_CrossLingual`
-- `FL_CosyVoice3_ModelLoader`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
+- `Float`
+- `RH_RhartImageG2TextToImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `FlashVSRNode` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

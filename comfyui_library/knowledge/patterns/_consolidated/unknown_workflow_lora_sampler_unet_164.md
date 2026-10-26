@@ -2,68 +2,68 @@
 name: unknown_workflow_lora_sampler_unet_164
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.634
-common_nodes: [CLIPLoader, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.84975
+common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, DapaoImageRatioLimitNode, EmptyLatentImage, FluxKontextImageScale, ImpactSwitch, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageConcat, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1 _身体替换_2108413083428417538.json, 图片生成/图生图/一键换头-qwen image2.1最新迁移_2107910635219668994.json, 图片生成/图生图/多角度转换-Qwen image2.1图像编辑_2108180448810725378.json, 图片生成/图生图/服装迁移-Qwen image2.1最新迁移工作流_2108227439682998273.json]
+members: [图片生成/图生图/002.Qwen编辑之王007.姿势迁移_2034556109385633793.json, 图片生成/图生图/Edit2511单图编辑版 + 4k放大_2026243013609005058.json, 图片生成/图生图/ai换姿势，指定任何姿势都可以换，AnyPose 姿势强力迁移_2016916134661984257.json, 图片生成/图生图/🪐千问姿势迁移AnyPose 姿势强力迁移_2008633672282411009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_164
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 _身体替换_2108413083428417538.json、图片生成/图生图/一键换头-qwen image2.1最新迁移_2107910635219668994.json、图片生成/图生图/多角度转换-Qwen image2.1图像编辑_2108180448810725378.json、图片生成/图生图/服装迁移-Qwen image2.1最新迁移工作流_2108227439682998273.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/002.Qwen编辑之王007.姿势迁移_2034556109385633793.json、图片生成/图生图/Edit2511单图编辑版 + 4k放大_2026243013609005058.json、图片生成/图生图/ai换姿势，指定任何姿势都可以换，AnyPose 姿势强力迁移_2016916134661984257.json、图片生成/图生图/🪐千问姿势迁移AnyPose 姿势强力迁移_2008633672282411009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DapaoImageRatioLimitNode`
 - `EmptyLatentImage`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageResizeKJv2`
+- `FluxKontextImageScale`
+- `ImpactSwitch`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `ResolutionSelector`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `SetNode`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `InvertMask` —— 2/4 个有
-- `JoinImageWithAlpha` —— 2/4 个有
-- `LoadBackgroundRemovalModel` —— 2/4 个有
-- `RemoveBackground` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `ttN concat` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `Text Concatenate` —— 3/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `DapaoSafeSaveImage` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `Qwen3VL_Advanced` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `SeedVR2LoadDiTModel` —— 1/4 个有
+- `SeedVR2LoadVAEModel` —— 1/4 个有
+- `SeedVR2VideoUpscaler` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 采样步数 | 8 | 8 - 40 | 4 | 13% |
+| 宽度 | 512 | 512 - 512 | 4 | 100% |
+| 高度 | 512 | 512 - 512 | 4 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | deis_2m | - | 4 | 50% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
@@ -71,15 +71,15 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 40，4 个样本，取值分散，一致性仅 13%
+- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis_2m，4 个样本，一致性 50%
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

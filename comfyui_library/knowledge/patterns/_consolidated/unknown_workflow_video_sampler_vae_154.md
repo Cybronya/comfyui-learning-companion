@@ -3,77 +3,58 @@ name: unknown_workflow_video_sampler_vae_154
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.629
-common_nodes: [Anything Everywhere, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, GetImageSizeAndCount, GetNode, ImageCASharpening+, ImageResize+, Int, LayerColor: Brightness & Contrast, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, OpenposePreprocessor, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.941333
+common_nodes: [DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, ImageResizeKJ, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json, 视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json, 视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json]
+members: [视频生成/图生视频/FantasyTalking数字人_1917046861591678978.json, 视频生成/图生视频/FantasyTalking数字人_1917159345606295553.json, 视频生成/图生视频/Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_1934084180739280897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_154
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json、视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json、视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FantasyTalking数字人_1917046861591678978.json、视频生成/图生视频/FantasyTalking数字人_1917159345606295553.json、视频生成/图生视频/Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_1934084180739280897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `ColorCorrectOfUtils`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `LayerColor: Brightness & Contrast`
+- `DownloadAndLoadWav2VecModel`
+- `FantasyTalkingModelLoader`
+- `FantasyTalkingWav2VecEmbeds`
+- `ImageResizeKJ`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `OpenposePreprocessor`
-- `SetNode`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Integer To String` —— 2/3 个有
-- `CR String To Number` —— 2/3 个有
-- `FluxResolutionNode` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `WanVideoSetBlockSwap` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
+- `Bjornulf_ShowInt` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `DF_Integer` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `LoadWanVideoClipTextEncoder` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `WanVideoSLG` —— 2/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `SeargeFloatConstant` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
 
 ## 典型参数
 

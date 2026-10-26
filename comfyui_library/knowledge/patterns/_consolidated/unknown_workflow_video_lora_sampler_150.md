@@ -1,96 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_150
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.665417
-common_nodes: [CLIPLoader, CLIPVisionLoader, DWPreprocessor, EmptySD3LatentImage, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, Text, Text Concatenate, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 13
+level: moderate
+coverage: 0.884385
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json, 视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json, 视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json, 视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json, 视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json, 视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json, 视频生成/图生视频/图生视频+双人跳舞！Animate V2！_2059808792103178241.json, 视频生成/图生视频/图生视频+双人跳舞！Animate+V2！_2064897106015510530.json, 视频生成/图生视频/超好用🔥图生视频+双人动作迁移_2062118089738776577.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2067052913171714049.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072208106070822914.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072484558993444865.json]
+members: [视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json, 视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json, 视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json, 视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json, 视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json, 视频生成/图生视频/（音频驱动-zs05）MiniMax H3数字人加速版V1_2092541557630136322.json, 视频生成/图生视频/（音频驱动-音乐MV-数字人）MiniMax H3加速_2105347148022894593.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099766391334330369.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099827196100694018.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099845520981323778.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2104909753217536002.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版_2099850720488017921.json, 视频生成/文生视频/Minimax4步lora+双时钟-超快速工作流_2085689486171787265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_150
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json、视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json、视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json、视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json、视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json、视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json、视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json、视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json、视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `EmptySD3LatentImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PixelPerfectResolution`
-- `PrimitiveInt`
-- `SetNode`
-- `SimpleMath+`
-- `Text`
-- `Text Concatenate`
-- `Text Multiline`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 11/12 个有
-- `VHS_VideoCombine` —— 11/12 个有
-- `CFGNorm` —— 1/12 个有
-- `ModelSamplingAuraFlow` —— 1/12 个有
-- `SaveImage` —— 1/12 个有
-- `TT_img_enc_v2` —— 1/12 个有
-- `easy cleanGpuUsed` —— 1/12 个有
+- `ModelAttentionBackend` —— 12/13 个有
+- `SolAttnMiniMax` —— 12/13 个有
+- `Float to Int` —— 2/13 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/13 个有
+- `R2T2GGUFLoader` —— 2/13 个有
+- `R2T2Transcribe` —— 2/13 个有
+- `StringConcatenate` —— 2/13 个有
+- `T8PerformanceDirectorConfig` —— 2/13 个有
+- `easy cleanGpuUsed` —— 2/13 个有
+- `easy showAnything` —— 2/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（12/12 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

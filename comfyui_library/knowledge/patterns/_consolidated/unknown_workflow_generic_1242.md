@@ -3,35 +3,29 @@ name: unknown_workflow_generic_1242
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [InstantCharacterGenerate, InstantCharacterLoadModel, LoadImage, RH_LLMAPI_NODE, RunningHub_Omini_Subject, SaveImage, TextBox, easy cleanGpuUsed, easy showAnything]
+coverage: 0.875
+common_nodes: [LoadImage, QuiverImageToSVGNode, SaveSVGNode]
 problems: []
 missing: []
-members: [图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json, 图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json]
+members: [comfyui-workflow-templates-json/api_quiver_arrow2_image_to_svg.json, comfyui-workflow-templates-json/api_quiver_image_to_svg.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1242
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json、图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_quiver_arrow2_image_to_svg.json、comfyui-workflow-templates-json/api_quiver_image_to_svg.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InstantCharacterGenerate`
-- `InstantCharacterLoadModel`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RunningHub_Omini_Subject`
-- `SaveImage`
-- `TextBox`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `QuiverImageToSVGNode`
+- `SaveSVGNode`
 
 ## 典型参数
 

@@ -1,50 +1,36 @@
 ---
 name: unknown_workflow_sampler_24
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6862
-common_nodes: [ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadQwenImageDiffSynthiPipe, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, RH_Captioner, SaveImage, SetControlArgs]
+coverage: 1
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen image Canny深度控制洗图_1956309859379675137.json, 图片生成/图生图/Qwen image Canny深度控制洗图工作流V1_1956163824573448193.json, 图片生成/图生图/Qwen image Canny线稿控制洗图_1956268870371823617.json, 图片生成/图生图/Qwen image Canny线稿控制洗图工作流V1_1956163852192894977.json, 图片生成/文生图/Qwen (千问) canny+depth 洗图_1956246979544272898.json]
+members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_24
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image Canny深度控制洗图_1956309859379675137.json、图片生成/图生图/Qwen image Canny深度控制洗图工作流V1_1956163824573448193.json、图片生成/图生图/Qwen image Canny线稿控制洗图_1956268870371823617.json、图片生成/图生图/Qwen image Canny线稿控制洗图工作流V1_1956163852192894977.json、图片生成/文生图/Qwen (千问) canny+depth 洗图_1956246979544272898.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
-- `RH_Captioner`
-- `SaveImage`
-- `SetControlArgs`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 4/5 个有
-- `JWInteger` —— 4/5 个有
-- `PDIMAGE_LongerSize` —— 4/5 个有
-- `DepthAnythingV2Preprocessor` —— 3/5 个有
-- `Canny` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CannyEdgePreprocessor` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `IndexTTSRun` —— 3/6 个有
+- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
+- `PreviewAudio` —— 1/6 个有
 
 ## 典型参数
 

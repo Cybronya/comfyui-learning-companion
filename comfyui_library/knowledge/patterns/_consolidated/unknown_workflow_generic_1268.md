@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1268
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6565
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.623
+common_nodes: [CLIPLoader, GetVideoComponents, LoadAudio, LoadImage, LoadVideo, PreviewAny, TextGenerate]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream-4.5 官网API调用 单图+多图方案(生图前请看指引）2026.4.4_1978000937056882689.json, 图片生成/图生图/万相 2.7 图像编辑-七合一在线工作流-支持单图-双图-多图编辑-产品融图_2042914472695697409.json]
+members: [comfyui-workflow-templates-json/llm_gemma4_text_gen.json, 图片生成/反推提示词/图片、视频、声音反推提示词_gemma4_2063052146509176834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1268
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream-4.5 官网API调用 单图+多图方案(生图前请看指引）2026.4.4_1978000937056882689.json、图片生成/图生图/万相 2.7 图像编辑-七合一在线工作流-支持单图-双图-多图编辑-产品融图_2042914472695697409.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_gemma4_text_gen.json、图片生成/反推提示词/图片、视频、声音反推提示词_gemma4_2063052146509176834.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `CLIPLoader`
+- `GetVideoComponents`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `LoadVideo`
+- `PreviewAny`
+- `TextGenerate`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27ImageEditPro` —— 1/2 个有
-- `Seedream45_ImageGeneration` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

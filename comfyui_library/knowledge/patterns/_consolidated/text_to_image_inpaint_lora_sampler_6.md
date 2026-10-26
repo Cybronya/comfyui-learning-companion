@@ -3,62 +3,56 @@ name: text_to_image_inpaint_lora_sampler_6
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.831
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, INTConstant, Image Comparer (rgthree), InpaintCropImproved, InpaintStitchImproved, JjkText, KSampler, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, SetLatentNoiseMask, SimpleMath+, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.907
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImagePadForOutpaint, InpaintModelConditioning, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen2.1美食摄影局部重绘，物品摄影产品图一键精修_2110469161540472833.json, 图片生成/图生图/自动COS原图直出版，局部重绘妆容精修图生图_2111893662941667329.json]
+members: [图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json, 图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_inpaint_lora_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/qwen2.1美食摄影局部重绘，物品摄影产品图一键精修_2110469161540472833.json、图片生成/图生图/自动COS原图直出版，局部重绘妆容精修图生图_2111893662941667329.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json、图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `InpaintCropImproved`
-- `InpaintStitchImproved`
+- `FluxGuidance`
+- `ImagePadForOutpaint`
+- `InpaintModelConditioning`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `SaveImage`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ComfySwitchNode` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `Node Collector (rgthree)` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `RH_RhartImageG25FlareImageToImage` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageComposite+` —— 1/2 个有
+- `KSamplerAdvanced` —— 1/2 个有
+- `LayerMask: MaskGrow` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `图像缩放范围孤海` —— 1/2 个有
 
 ## 典型参数
 

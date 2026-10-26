@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_159
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.751273
-common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.976167
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/人物一致性换装_2035897982054309889.json, 图片生成/图生图/全能图片Pro施工图读图实景改造_1999291673677099010.json, 图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜 Z-image+Flux2+qwen千问_1994648807474405378.json, 图片生成/图生图/全能图片V12Pro2图像编辑pro版本人物一致性_1991888033886654465.json, 图片生成/图生图/换装3.0全能图片V12Pro2图像编辑pro版本人物一致性_1996788824619589634.json, 图片生成/图生图/换装全能图片V12Pro2图像编辑pro版本人物一致性_2007467037655834626.json, 图片生成/图生图/漫画图生图一键生成全能图片V12Pro2图像编辑pro版本人物一致性_1994295265001668609.json, 图片生成/图生图/漫画图生图一键生成全能图片V12Pro香蕉2图像编辑pro版本人物一致性_2002271911587508226.json, 图片生成/图生图/老照片修复全能图片V12Pro2图像编辑pro版本人物一致性_1993564978536005634.json, 图片生成/图生图/超强换装3..3全能图片V12Pro香蕉2图像编辑pro版本人物一致性_1999084958817939458.json, 图片生成/文生图/换装3.0图像编辑 版本人物一致性_1998788705697587202.json]
+members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_159
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/人物一致性换装_2035897982054309889.json、图片生成/图生图/全能图片Pro施工图读图实景改造_1999291673677099010.json、图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜 Z-image+Flux2+qwen千问_1994648807474405378.json、图片生成/图生图/全能图片V12Pro2图像编辑pro版本人物一致性_1991888033886654465.json、图片生成/图生图/换装3.0全能图片V12Pro2图像编辑pro版本人物一致性_1996788824619589634.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `ImageConcanate`
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `ImageConcatMulti` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
+- `LoadAudio` —— 9/12 个有
+- `StringInput` —— 3/12 个有
+- `Text` —— 3/12 个有
 
 ## 典型参数
 

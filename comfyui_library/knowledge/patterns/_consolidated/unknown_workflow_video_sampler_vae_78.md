@@ -1,62 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_vae_78
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.884286
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.905833
+common_nodes: [VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json, 视频生成/图生视频/漫剧图生视频_2085003263367278593.json, 视频生成/图生视频/空中起舞_2097526794093158402.json, 视频生成/图生视频/美好的夏天_2097286565499330561.json, 视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json, 视频生成/图生视频/香水广告_2098035698040397826.json, 视频生成/文生视频/minimax_h3_i2v w4a8-超低显存-0810_2086689468593041410.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json, 图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json, 视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json, 视频生成/图生视频/phontom 多图参考_1928118108420980738.json, 视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json, 视频生成/图生视频/多参考一致性视频_Phantom_1927430164823564289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_78
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json、视频生成/图生视频/漫剧图生视频_2085003263367278593.json、视频生成/图生视频/空中起舞_2097526794093158402.json、视频生成/图生视频/美好的夏天_2097286565499330561.json、视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json、图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json、视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json、视频生成/图生视频/phontom 多图参考_1928118108420980738.json、视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 6 个 workflow 都包含：
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
-- `RH_Captioner` —— 5/7 个有
-- `Text` —— 5/7 个有
-- `TextConcatenate_UTK` —— 5/7 个有
-- `UNETLoader` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `LoraLoaderBypassModelOnly` —— 3/7 个有
-- `MiniMaxH3BlockCacheT8` —— 3/7 个有
-- `ResolutionSelector` —— 3/7 个有
-- `Display Any (rgthree)` —— 2/7 个有
-- `EnhancedLoadDiffusionModel` —— 2/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `SolAttnPatch` —— 1/7 个有
+- `LoadImage` —— 5/6 个有
+- `WanVideoEncode` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `WanVideoPhantomEmbeds` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `ImageResizeKJ` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `LoadWanVideoT5TextEncoder` —— 3/6 个有
+- `WanVideoSetBlockSwap` —— 3/6 个有
+- `WanVideoSetLoRAs` —— 3/6 个有
+- `WanVideoTextEncode` —— 3/6 个有
+- `WanVideoTextEncodeCached` —— 3/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/6 个有
+- `GIMMVFI_interpolate` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `easy imageRemBg` —— 2/6 个有
+- `ImagePadKJ` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `WanVideoEmptyEmbeds` —— 1/6 个有
+- `WanVideoVRAMManagement` —— 1/6 个有
 
 ## 典型参数
 

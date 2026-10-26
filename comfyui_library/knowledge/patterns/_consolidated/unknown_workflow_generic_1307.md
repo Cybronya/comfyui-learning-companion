@@ -3,38 +3,36 @@ name: unknown_workflow_generic_1307
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [AddMask, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, LoadImage, RemoveWatermarkNode, SAMModelLoader (segment anything), SaveImage]
+coverage: 0.7635
+common_nodes: [Joy_caption_two, Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/一键全自动去除图片水印_1902342370677960706.json, 图片生成/图生图/最强一键图片去水印_1934210404744912898.json]
+members: [图片生成/反推提示词/joy caption2 反推提示词_1904210529462951937.json, 图片生成/反推提示词/joy caption2 反推提示词工作流_1920866029717884930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1307
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键全自动去除图片水印_1902342370677960706.json、图片生成/图生图/最强一键图片去水印_1934210404744912898.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/joy caption2 反推提示词_1904210529462951937.json、图片生成/反推提示词/joy caption2 反推提示词工作流_1920866029717884930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AddMask`
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `GrowMaskWithBlur`
+- `Joy_caption_two`
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
 - `LoadImage`
-- `RemoveWatermarkNode`
-- `SAMModelLoader (segment anything)`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskToImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

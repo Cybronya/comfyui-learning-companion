@@ -1,74 +1,47 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_55
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.860667
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageResizeKJv2, ImageScaleBy, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.75225
+common_nodes: [CheckpointLoaderSimple, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveImage, ShowText|pysssss, WujiCleaner, WujiEditor, WujiSampler, WujiUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux.2-Klein-9b老照片修复照片去AI质感提升工作流 V1.0_2040773448196169729.json, 图片生成/图生图/flux.2-klein-9b老照片修复，照片去AI，质感提升_2028040297262882817.json, 图片生成/图生图/高清修复图像版升级优化_2062083713374187521.json]
+members: [图片生成/文生图/资产角色库_2042377850979885058.json, 图片生成/文生图/超好用🔥AI短剧漫剧专用超真实感角色库_2046554612219514882.json, 图片生成/文生图/超好用🔥自定义风格+肖像大师级手搓定妆照_2046800495590772738.json, 图片生成/文生图/超真实感定妆照文生图-邻家AI大女孩_2042458446934577153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_55
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux.2-Klein-9b老照片修复照片去AI质感提升工作流 V1.0_2040773448196169729.json、图片生成/图生图/flux.2-klein-9b老照片修复，照片去AI，质感提升_2028040297262882817.json、图片生成/图生图/高清修复图像版升级优化_2062083713374187521.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/资产角色库_2042377850979885058.json、图片生成/文生图/超好用🔥AI短剧漫剧专用超真实感角色库_2046554612219514882.json、图片生成/文生图/超好用🔥自定义风格+肖像大师级手搓定妆照_2046800495590772738.json、图片生成/文生图/超真实感定妆照文生图-邻家AI大女孩_2042458446934577153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
-- `LoadImage`
+全部 4 个 workflow 都包含：
+- `CheckpointLoaderSimple`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `ShowText|pysssss`
+- `WujiCleaner`
+- `WujiEditor`
+- `WujiSampler`
+- `WujiUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy clearCacheAll` —— 1/3 个有
-- `easy imageColorMatch` —— 1/3 个有
-- `easy imageScaleDownBy` —— 1/3 个有
+- `RHHiddenNodes` —— 3/4 个有
+- `WujiStyleSelector` —— 2/4 个有
+- `PortraitMaster_中文版` —— 1/4 个有
+- `WujiLLMPromptExpander` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 4 - 6 | 3 | 82% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,8 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，3 个样本，取值集中（一致性 82%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

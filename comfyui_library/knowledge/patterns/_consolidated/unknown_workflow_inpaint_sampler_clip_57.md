@@ -3,61 +3,68 @@ name: unknown_workflow_inpaint_sampler_clip_57
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8065
-common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, DifferentialDiffusion, Fast Groups Muter (rgthree), Flux2Scheduler, FluxKontextImageScale, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcatMulti, InpaintModelConditioning, KOOK_SaveJPGImage, KSamplerSelect, LayerMask: MaskPreview, LayerUtility: ExtendCanvasV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SolidMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+coverage: 0.9205
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DF_Image_scale_to_side, DepthAnythingV2Preprocessor, DifferentialDiffusion, DownloadAndLoadFlorence2Model, DualCLIPLoader, Florence2Run, FluxGuidance, InpaintCrop, InpaintModelConditioning, InpaintStitch, InstructPixToPixConditioning, KSampler, LoadImage, MaskPreview+, PreviewImage, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, workflow>redux, workflow>模特服装区域遮罩, workflow>白底图, workflow>自动扣图模特]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json, 图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json]
+members: [图片生成/图生图/FLUX精准风格迁移+换产品_1917172904092434434.json, 图片生成/图生图/电商服装换模特+换背景（保留服装）_1915630463606521857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_57
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json、图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX精准风格迁移+换产品_1917172904092434434.json、图片生成/图生图/电商服装换模特+换背景（保留服装）_1915630463606521857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DF_Image_scale_to_side`
+- `DepthAnythingV2Preprocessor`
 - `DifferentialDiffusion`
-- `Fast Groups Muter (rgthree)`
-- `Flux2Scheduler`
-- `FluxKontextImageScale`
-- `GetImageSize`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageConcatMulti`
+- `DownloadAndLoadFlorence2Model`
+- `DualCLIPLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `InpaintCrop`
 - `InpaintModelConditioning`
-- `KOOK_SaveJPGImage`
-- `KSamplerSelect`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ExtendCanvasV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `InpaintStitch`
+- `InstructPixToPixConditioning`
+- `KSampler`
 - `LoadImage`
+- `MaskPreview+`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SolidMask`
+- `ShowText|pysssss`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy int`
+- `workflow>redux`
+- `workflow>模特服装区域遮罩`
+- `workflow>白底图`
+- `workflow>自动扣图模特`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | normal | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -65,4 +72,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 normal，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

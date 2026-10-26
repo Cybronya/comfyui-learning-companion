@@ -1,61 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_314
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.913286
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.934875
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频添加背景音版_1951564879096434690.json, 视频生成/图生视频/Wan2.2图生视频稳定快速优化版长视频_2021217976392884225.json, 视频生成/图生视频/Wan2.2图生视频自动提示词_1974143667713781762.json, 视频生成/图生视频/Wan2.2图生视频自动添加音效_1974129823239024642.json, 视频生成/图生视频/Wan2.2图生视频（优化版）_2067174890066763778.json, 视频生成/图生视频/Wan2.2图生视频（最新优化版）_1987880762861137921.json, 视频生成/图生视频/发布Wan2.2图生视频——优化版_1983835133948174337.json]
+members: [视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json, 视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json, 视频生成/图生视频/双人对话对口型_1994221474806513665.json, 视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_2009633003546353665.json, 视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json, 视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_314
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频添加背景音版_1951564879096434690.json、视频生成/图生视频/Wan2.2图生视频稳定快速优化版长视频_2021217976392884225.json、视频生成/图生视频/Wan2.2图生视频自动提示词_1974143667713781762.json、视频生成/图生视频/Wan2.2图生视频自动添加音效_1974129823239024642.json、视频生成/图生视频/Wan2.2图生视频（优化版）_2067174890066763778.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json、视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json、视频生成/图生视频/双人对话对口型_1994221474806513665.json、视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json、视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `WanVideoSetBlockSwap` —— 6/7 个有
-- `WanVideoSetLoRAs` —— 6/7 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 5/7 个有
-- `ShowText|pysssss` —— 5/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `CM_IntToFloat` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `HunyuanVideoFoley` —— 1/7 个有
-- `MMAudioFeatureUtilsLoader` —— 1/7 个有
-- `MMAudioModelLoader` —— 1/7 个有
-- `MMAudioSampler` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `MaskPreview+` —— 7/8 个有
+- `SeparateMasks` —— 7/8 个有
+- `AudioCrop` —— 6/8 个有
+- `AudioSeparation` —— 6/8 个有
+- `INTConstant` —— 6/8 个有
+- `PreviewAudio` —— 6/8 个有
+- `WanVideoTextEncode` —— 6/8 个有
+- `WanVideoApplyNAG` —— 2/8 个有
+- `WanVideoExperimentalArgs` —— 2/8 个有
+- `WanVideoSLG` —— 2/8 个有
+- `WanVideoTextEncodeSingle` —— 2/8 个有
+- `EsesImageEffectBloom` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `Int2String` —— 1/8 个有
+- `Manual XY Entry Info` —— 1/8 个有
+- `MaskPreview` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

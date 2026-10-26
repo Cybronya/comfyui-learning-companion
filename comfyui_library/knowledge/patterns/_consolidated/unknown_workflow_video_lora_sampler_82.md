@@ -1,77 +1,115 @@
 ---
 name: unknown_workflow_video_lora_sampler_82
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.918412
-common_nodes: [CLIPVisionLoader, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
-problems: []
+frequency: 18
+level: strong
+coverage: 0.902333
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioInfo, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Evaluate Integers, ImageBatch, ImageFromBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchLoader, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_1945425557527961601.json, 视频生成/图生视频/AniWan专业动漫超高动态图生视频加速版V1_1944770056771260417.json, 视频生成/图生视频/EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756913665.json, 视频生成/图生视频/FastWan+Aniwan+LightX2V高质量图生视频V1_1949398182790365185.json, 视频生成/图生视频/Fusionx+lightx2v图生视频_1941647575110074369.json, 视频生成/图生视频/KJ版WAN2.1 GGUF Q8 LightX2V加速图生视频高质量版V1_1942759645448744961.json, 视频生成/图生视频/LightX2v Rank64极限质量+AniWan超高动态图生视频加速版V1_1945356910293917698.json, 视频生成/图生视频/MTV Crafter+FusionX 3D运动建模动态图生视频V1_1958913367148802050.json, 视频生成/图生视频/MTV Crafter+FusionX 3D运动建模动态图生视频V1_1960985740777852930.json, 视频生成/图生视频/MoviiGen+Free+LightX64+AniWan+最强万相wan2.1图生视频_1945462640925921281.json, 视频生成/图生视频/Moviigen & lightx2v 电影级图生视频｜高清4K_1936033018391990273.json, 视频生成/图生视频/RadialAttn加速模式图生视频范例工作流V2_1946266555401560066.json, 视频生成/图生视频/ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json, 视频生成/图生视频/【b站开源】ani全能视频S + fusionx 图生视频｜动漫友好_1946050505720164354.json, 视频生成/图生视频/动态表情包_原图控制增强版_2008939674751995905.json, 视频生成/图生视频/微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json, 视频生成/图生视频/电影级图生视频moviigen+lightx2v+自动扩词+运镜万相win2.1_1935149925716172801.json]
+members: [数字人/数字人/InfiniteTalk-ComfyUI官版自循环_2019259304406159362.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化-yun自用_2026705165088202753.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2032746856781979650.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2018972622758879233.json, 数字人/数字人/InfiniteTalk-anycom_2058890249543176193.json, 数字人/数字人/InfiniteTalk-官版双人数字人自循环版（质量不劣化）_2019674131742068737.json, 数字人/数字人/InfiniteTalk-数字人官方自循环_2019377383660326913.json, 数字人/数字人/InfiniteTalki官流 长视频无衰减自循环_2019342054777688065.json, 数字人/数字人/InfiniteTalk数字人MV_2076641541761880066.json, 数字人/数字人/新InfiniteTalk-Comfyui官方魔改多图无限长视频数字人_2028667164265291777.json, 视频生成/图生视频/InfiniteTalk- 高质量图生视频 数字人MV 超长时间视频生成_2025770017006030849.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版数字人MV_2019621453360013313.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化 +全节点注释_2056921656811147266.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2024713111399309314.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2019616198597550082.json, 视频生成/图生视频/InfiniteTalk-官版数字人MV_多图自动连帧直出_2019582542961188866.json, 视频生成/图生视频/[🛫书墨]infinitetalk(官方单图无限for循环自动计算版)_2018961391968849921.json, 视频生成/图生视频/[🛫书墨]infinitetalk官方无限多图平均帧for循环版_2019080494813552642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_82
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_1945425557527961601.json、视频生成/图生视频/AniWan专业动漫超高动态图生视频加速版V1_1944770056771260417.json、视频生成/图生视频/EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756913665.json、视频生成/图生视频/FastWan+Aniwan+LightX2V高质量图生视频V1_1949398182790365185.json、视频生成/图生视频/Fusionx+lightx2v图生视频_1941647575110074369.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/InfiniteTalk-ComfyUI官版自循环_2019259304406159362.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化-yun自用_2026705165088202753.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2032746856781979650.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2018972622758879233.json、数字人/数字人/InfiniteTalk-anycom_2058890249543176193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `JWInteger`
+全部 18 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioInfo`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `Evaluate Integers`
+- `ImageBatch`
+- `ImageFromBatch`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchLoader`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
+- `WanInfiniteTalkToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy int`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 16/17 个有
-- `WanVideoExperimentalArgs` —— 15/17 个有
-- `WanVideoSLG` —— 15/17 个有
-- `WanVideoFreeInitArgs` —— 12/17 个有
-- `WanVideoTextEncode` —— 9/17 个有
-- `WanVideoVRAMManagement` —— 9/17 个有
-- `RH_OneShot_Prompter` —— 8/17 个有
-- `SimpleMath+` —— 8/17 个有
-- `WanVideoApplyNAG` —— 8/17 个有
-- `WanVideoTextEncodeSingle` —— 8/17 个有
-- `WanVideoEasyCache` —— 6/17 个有
-- `WanVideoSetRadialAttention` —— 4/17 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/17 个有
-- `GIMMVFI_interpolate` —— 2/17 个有
-- `WanVideoTeaCache` —— 2/17 个有
-- `WanVideoTorchCompileSettings` —— 2/17 个有
-- `BackgroundEraseNetwork` —— 1/17 个有
-- `ImageConcanate` —— 1/17 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/17 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/17 个有
-- `PreviewImage` —— 1/17 个有
-- `WanVideoMagCache` —— 1/17 个有
+- `AudioTrim` —— 16/18 个有
+- `KSampler` —— 16/18 个有
+- `Text Multiline` —— 15/18 个有
+- `PreviewAudio` —— 12/18 个有
+- `easy showAnything` —— 12/18 个有
+- `Fast Bypasser (rgthree)` —— 8/18 个有
+- `Mute / Bypass Repeater (rgthree)` —— 8/18 个有
+- `GetImageSize` —— 5/18 个有
+- `JWFloat` —— 5/18 个有
+- `ImageBatchMulti` —— 4/18 个有
+- `MathExpression|pysssss` —— 4/18 个有
+- `PurgeVRAM_UTK` —— 3/18 个有
+- `RHHiddenNodes` —— 3/18 个有
+- `Any Switch (rgthree)` —— 2/18 个有
+- `BasicScheduler` —— 2/18 个有
+- `CFGGuider` —— 2/18 个有
+- `Fast Groups Muter (rgthree)` —— 2/18 个有
+- `KSamplerSelect` —— 2/18 个有
+- `RandomNoise` —— 2/18 个有
+- `SamplerCustomAdvanced` —— 2/18 个有
+- `AudioConcat` —— 1/18 个有
+- `AudioCrop` —— 1/18 个有
+- `AudioMerge` —— 1/18 个有
+- `BatchCount+` —— 1/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `Float` —— 1/18 个有
+- `Image Batch` —— 1/18 个有
+- `ImpactStringSelector` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 1/18 个有
+- `PreviewImage` —— 1/18 个有
+- `PrimitiveStringMultiline` —— 1/18 个有
+- `ProcessString` —— 1/18 个有
+- `ShowText|pysssss` —— 1/18 个有
+- `easy convertAnything` —— 1/18 个有
+- `easy ifElse` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 3 - 4 | 16 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 100% |
+| 调度器 | normal | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 32/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 3 - 4，16 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 100%
+- 调度器 最常用 normal，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 高发问题（32/18 个样本）：Steps较低可能导致细节不足

@@ -3,34 +3,42 @@ name: unknown_workflow_generic_711
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.729
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.9055
+common_nodes: [InsertAnythingImageProcessor, InsertAnythingInferencer, InsertAnythingLoader, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, MaskOption, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/服装模特换装-多图融合（官方稳定版）_2106681343634665473.json, 图片生成/文生图/全能图片G-2.0-文生图+图生图-官方稳定版_2047956107309617154.json, 图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json, 图片生成/文生图/全能图片G2_2048357607651414018.json]
+members: [图片生成/图生图/Nunchaku_InsertAnything电商产品展示_1922466510332428290.json, 图片生成/图生图/Nunchaku版本InsertAnything_1921815681019363330.json, 图片生成/图生图/万物迁移 insertAnything 蒙层_1922606419437129729.json, 图片生成/图生图/万物迁移新技术-insertAnything_1922639665013166081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_711
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/服装模特换装-多图融合（官方稳定版）_2106681343634665473.json、图片生成/文生图/全能图片G-2.0-文生图+图生图-官方稳定版_2047956107309617154.json、图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json、图片生成/文生图/全能图片G2_2048357607651414018.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nunchaku_InsertAnything电商产品展示_1922466510332428290.json、图片生成/图生图/Nunchaku版本InsertAnything_1921815681019363330.json、图片生成/图生图/万物迁移 insertAnything 蒙层_1922606419437129729.json、图片生成/图生图/万物迁移新技术-insertAnything_1922639665013166081.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `InsertAnythingImageProcessor`
+- `InsertAnythingInferencer`
+- `InsertAnythingLoader`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
+- `MaskOption`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialTextToImage` —— 3/4 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `LayerMask: MaskGrow` —— 2/4 个有
+- `MaskPreview+` —— 1/4 个有
 
 ## 典型参数
 

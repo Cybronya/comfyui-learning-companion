@@ -3,52 +3,73 @@ name: unknown_workflow_video_lora_sampler_866
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9425
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, SplineEditor, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.892
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, DownloadAndLoadWav2VecModel, GIMMVFI_interpolate, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveFloat, SimpleMath+, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json, 视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json]
+members: [视频生成/图生视频/Multitalk数字人_1938175701055115265.json, 视频生成/图生视频/图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_1937534979532591106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_866
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json、视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Multitalk数字人_1938175701055115265.json、视频生成/图生视频/图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_1937534979532591106.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `ImageResizeKJv2`
+- `DownloadAndLoadGIMMVFIModel`
+- `DownloadAndLoadWav2VecModel`
+- `GIMMVFI_interpolate`
+- `JWInteger`
+- `JWIntegerToString`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `SplineEditor`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveFloat`
+- `SimpleMath+`
+- `TextInput_`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `WanVideoATITracks` —— 1/2 个有
-- `WanVideoATITracksVisualize` —— 1/2 个有
-- `WanVideoAddWanMoveTracks` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeCached` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoWanDrawWanMoveTracks` —— 1/2 个有
+- `GetTextFromJson` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `LoadJsonFromText` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `ReplaceText` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `ShowText` —— 1/2 个有
+- `SongGeneration_Sampler` —— 1/2 个有
+- `SongGeneration_Stage1` —— 1/2 个有
+- `SongGeneration_Stage2` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

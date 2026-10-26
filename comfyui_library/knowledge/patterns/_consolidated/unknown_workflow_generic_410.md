@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_410
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, Preview3D, RunningHubPixal3DImageTo3D, RunningHubPixal3DModelLoader, RunningHubPixal3DSaveGLB]
+coverage: 0.961714
+common_nodes: [AudioCrop, AudioSeparation, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json, 图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json, 图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json, 图片生成/图生图/图片转3D模型_2059133516037844993.json, 图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json, 视频生成/文生视频/Pixal3D Image to 3D_2057792674358452225.json]
+members: [音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json, 音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json, 音频生成/音频生成/CosyVoice3_2085675869581963265.json, 音频生成/音频生成/高精度声音克隆：支持外语、老外普通话_2079952082660052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_410
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json、图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json、图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json、图片生成/图生图/图片转3D模型_2059133516037844993.json、图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json、音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json、音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `Preview3D`
-- `RunningHubPixal3DImageTo3D`
-- `RunningHubPixal3DModelLoader`
-- `RunningHubPixal3DSaveGLB`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `FL_CosyVoice3_ModelLoader`
+- `FL_CosyVoice3_ZeroShot`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 3/6 个有
-- `easy saveText` —— 3/6 个有
-- `InspyrenetRembg` —— 1/6 个有
-- `SaveText|pysssss` —— 1/6 个有
+- `MuyeTextEditOutput` —— 3/7 个有
+- `JjkText` —— 2/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

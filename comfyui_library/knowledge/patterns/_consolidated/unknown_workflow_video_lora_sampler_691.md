@@ -3,69 +3,63 @@ name: unknown_workflow_video_lora_sampler_691
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.513667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.460667
+common_nodes: [Any Switch (rgthree), AssembleLoopFrames, BatchCount+, BatchResizeWithLanczos, ColorMatch, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrepareLoopFrames, PrimitiveStringMultiline, RH_Captioner, RIFE VFI, RIFE_FPS_Resample, RollFrames, SetNode, StringConcatenate, TrimBatchEnds, UnrollFrames, VHS_VideoCombine, WanVideoAddExtraLatent, WanVideoDecode, WanVideoEasyCache, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, mxSlider]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3高质量全能参考图片音频视频api版本_2089609638827347969.json, 视频生成/文生视频/MiniMax H3 双采样_2089982231854018561.json, 视频生成/文生视频/心然·寻源-Minimax H3 多模态参考生视频（双采加速版）_2087734113288679426.json]
+members: [视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json, 视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json, 视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2012455177055379458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_691
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/H3高质量全能参考图片音频视频api版本_2089609638827347969.json、视频生成/文生视频/MiniMax H3 双采样_2089982231854018561.json、视频生成/文生视频/心然·寻源-Minimax H3 多模态参考生视频（双采加速版）_2087734113288679426.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json、视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json、视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2012455177055379458.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `Any Switch (rgthree)`
+- `AssembleLoopFrames`
+- `BatchCount+`
+- `BatchResizeWithLanczos`
+- `ColorMatch`
 - `GetNode`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PrepareLoopFrames`
+- `PrimitiveStringMultiline`
+- `RH_Captioner`
+- `RIFE VFI`
+- `RIFE_FPS_Resample`
+- `RollFrames`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
-- `VAELoader`
+- `StringConcatenate`
+- `TrimBatchEnds`
+- `UnrollFrames`
 - `VHS_VideoCombine`
+- `WanVideoAddExtraLatent`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `JWStringConcat` —— 1/3 个有
-- `JjkShowText` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `MinNode` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `RHLLMChatNode` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `图像缩放V2_孤海` —— 1/3 个有
+- `mxSlider`
 
 ## 典型参数
 

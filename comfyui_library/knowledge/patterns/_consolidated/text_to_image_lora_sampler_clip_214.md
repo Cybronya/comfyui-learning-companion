@@ -3,72 +3,53 @@ name: text_to_image_lora_sampler_clip_214
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.863111
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.879889
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/多元素参考生视频｜minimax h3图生视频直出_2092387092469993474.json, 视频生成/图生视频/多参格斗动作迁移背景替换8步加速 MiniMax-H3开源版视频生视频_2094024779476062210.json, 视频生成/图生视频/多参格斗动作迁移背景替换8步加速 MiniMax-H3开源版视频生视频_2097104058355113986.json, 视频生成/图生视频/多参格斗动作迁移背景替换｜MiniMax-H3开源8步加速_2093774376658366465.json, 视频生成/图生视频/多参格斗动作迁移背景替换｜MiniMax-H3开源8步加速_2094009514365374466.json, 视频生成/图生视频/多图参考生成视频｜图生视频多图融合一键出片_2093775806538534914.json, 视频生成/图生视频/导演台双采样全能工作流｜MiniMax H3图生视频_2092388355215552514.json, 视频生成/图生视频/格斗动作迁移背景替换8步加速 MiniMax-H3多参数图生视频方案_2093216713595768833.json, 视频生成/视频生视频/多参格斗动作迁移背景替换8步加速 MiniMax-H3开源版视频生视频_2106163123605561346.json]
+members: [图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json, 图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json, 图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json, 图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json, 图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json, 图片生成/图生图/qwen2.1去除卡片 图片元素精准移除_2104692967377293313.json, 图片生成/图生图/qwen2.1去除油腻｜图生图人像修图 AI感一扫自然出片_2104109391455809538.json, 图片生成/图生图/qwen2.1替换主体工作流｜产品模特随意换场景不翻车_2103712617431912449.json, 图片生成/图生图/画面去油腻 qwen2.1图片质感清爽优化_2104333923810635777.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_214
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/多元素参考生视频｜minimax h3图生视频直出_2092387092469993474.json、视频生成/图生视频/多参格斗动作迁移背景替换8步加速 MiniMax-H3开源版视频生视频_2094024779476062210.json、视频生成/图生视频/多参格斗动作迁移背景替换8步加速 MiniMax-H3开源版视频生视频_2097104058355113986.json、视频生成/图生视频/多参格斗动作迁移背景替换｜MiniMax-H3开源8步加速_2093774376658366465.json、视频生成/图生视频/多参格斗动作迁移背景替换｜MiniMax-H3开源8步加速_2094009514365374466.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json、图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json、图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json、图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json、图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 8/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `VHS_LoadVideo` —— 8/9 个有
-- `ImageResizeKJv2` —— 7/9 个有
-- `Int` —— 7/9 个有
-- `MiniMaxH3BlockCacheT8` —— 7/9 个有
-- `PrimitiveStringMultiline` —— 7/9 个有
-- `ResolutionSelector` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
-- `GetImageRangeFromBatch` —— 6/9 个有
-- `GetVideoComponents` —— 6/9 个有
-- `ImageConcatMulti` —— 6/9 个有
-- `PreviewImage` —— 6/9 个有
-- `RMBG` —— 6/9 个有
-- `VHS_GetImageCount` —— 6/9 个有
-- `VRAM_Debug` —— 6/9 个有
-- `PathchSageAttentionKJ` —— 3/9 个有
-- `LoadAudio` —— 2/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `SimpleMath+` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `PreviewImage` —— 8/9 个有
+- `Anything Everywhere3` —— 7/9 个有
+- `孤海注释` —— 7/9 个有
+- `Text` —— 6/9 个有
+- `ImageToMask` —— 5/9 个有
+- `PixaromaInpaintCrop` —— 5/9 个有
+- `PixaromaUncrop` —— 5/9 个有
+- `ImageColorMatch+` —— 3/9 个有
+- `EmptyImage` —— 2/9 个有
+- `Image Remove Alpha JK` —— 2/9 个有
+- `ResolutionSelector` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
 
 ## 典型参数
 

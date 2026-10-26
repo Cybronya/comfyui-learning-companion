@@ -1,79 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_245
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7965
-common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), ImageConcanate, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, Qwen3_VQA, SaveImage, TextEncodeQwenImageEditPlus, TextInput_, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.459333
+common_nodes: [BasicGuider, BlockSparseAttention, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Bypasser (rgthree), GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VRAM_Debug, easy ifElse, 布尔孤海]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Edit 2509，社区Lora，高清图像_1987514462464880642.json, 图片生成/图生图/Qwen动漫转真人，动漫仿真人剧必备！_2052317417342291970.json]
+members: [视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json, 视频生成/图生视频/MiniMax-H3 高速大动态 速度快 不模糊_2114541691175784450.json, 视频生成/图生视频/MiniMax-H3_高速大动态_无劣化抗形变模糊工作流_工作版_2113780111102271490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_245
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2509，社区Lora，高清图像_1987514462464880642.json、图片生成/图生图/Qwen动漫转真人，动漫仿真人剧必备！_2052317417342291970.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json、视频生成/图生视频/MiniMax-H3 高速大动态 速度快 不模糊_2114541691175784450.json、视频生成/图生视频/MiniMax-H3_高速大动态_无劣化抗形变模糊工作流_工作版_2113780111102271490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Bypasser (rgthree)`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `Qwen3_VQA`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `TextInput_`
+- `ManualSigmas`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
+- `VHS_LoadVideo`
+- `VRAM_Debug`
+- `easy ifElse`
+- `布尔孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Text Concatenate (JPS)` —— 1/2 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/2 个有
-- `TextEncodeQwenImageEdit_lrzjason` —— 1/2 个有
+- `EmptyImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 7 | - | 2 | 86% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

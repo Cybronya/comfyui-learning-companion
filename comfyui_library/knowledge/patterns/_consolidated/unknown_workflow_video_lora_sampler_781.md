@@ -3,58 +3,69 @@ name: unknown_workflow_video_lora_sampler_781
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9095
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.5795
+common_nodes: [AddLabel, Any Switch (rgthree), Bookmark (rgthree), EmptyImage, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize+, GetImageSizeAndCount, GetNode, GoogleTranslateTextNode, ImageConcatMulti, ImagePadKJ, JoinStrings, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskPreview+, MiniCPM_VQA_Polished, SetNode, String Literal, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json, 视频生成/图生视频/scail2再次进化！！！【拒绝面部崩坏】多条件控制与极简连线_2073067673981898754.json]
+members: [图片生成/图生图/Wan Vace 14B  视频扩图工作流_1923647335333548033.json, 视频生成/图生视频/Wan Vace 14B  扩充电影镜头_1923521881121746946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_781
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json、视频生成/图生视频/scail2再次进化！！！【拒绝面部崩坏】多条件控制与极简连线_2073067673981898754.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Wan Vace 14B  视频扩图工作流_1923647335333548033.json、视频生成/图生视频/Wan Vace 14B  扩充电影镜头_1923521881121746946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAELoader`
+- `AddLabel`
+- `Any Switch (rgthree)`
+- `Bookmark (rgthree)`
+- `EmptyImage`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GoogleTranslateTextNode`
+- `ImageConcatMulti`
+- `ImagePadKJ`
+- `JoinStrings`
+- `Label (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `MaskPreview+`
+- `MiniCPM_VQA_Polished`
+- `SetNode`
+- `String Literal`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `VHS_VideoInfoLoaded`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `SCAIL2AlignReferenceFaceToCrop` —— 1/2 个有
-- `SCAIL2ChunkKeyframeExtractor` —— 1/2 个有
-- `SCAIL2FaceCompositeBack` —— 1/2 个有
-- `SCAIL2HeadTrackCrop` —— 1/2 个有
-- `SCAIL2KeyframeMatrixViewer` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

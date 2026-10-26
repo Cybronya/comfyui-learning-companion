@@ -1,65 +1,84 @@
 ---
 name: unknown_workflow_video_sampler_clip_36
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.92875
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 14
+level: strong
+coverage: 0.767429
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleBy, JWInteger, KSamplerAdvanced, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Pick From Batch (mtb), PrimitiveStringMultiline, RIFE VFI, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [图片生成/图生图/扭扭弹弹跳舞_1904411310740905985.json, 图片生成/文生图/2025重磅更新WANX2.1模型，内含图生视频！文生视频，高清720p_1896112344349474817.json, 视频生成/图生视频/3D旋转+360度环旋+通义万相=艾橘溪_1900145552707809282.json, 视频生成/图生视频/5秒图生视频生成 - Wan2.1_1898064124872740866.json, 视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894658014006390785.json, 视频生成/图生视频/wan2.1图生视频，更新快速节点_1896816638631550978.json, 视频生成/图生视频/wan图生视频+超高清补帧_1903839569089826817.json, 视频生成/图生视频/特效合集，wan2.1图生视频，加速高清版_1899713009114107905.json, 视频生成/图生视频/🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389039617.json, 视频生成/图生视频/🦖大风车转呀转_1932255495774437378.json, 视频生成/图生视频/🦖浪花特效_1930816773925306370.json, 视频生成/文生视频/wan图生视频+超高清补帧_1904728293755813889.json]
+members: [视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json, 视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json, 视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json, 视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json, 视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_1987142608080318466.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_2059074218825965569.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频_1989368083322163201.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频（流畅如丝，内置补帧）_1984903672830312450.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_1979696533400621058.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013566157537681410.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013815011306643457.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，高质量生成_2006002817242447874.json, 视频生成/文生视频/Smooth+Mix+Wan+2.2：文生视频，高质量 流畅视频_2009979362870824961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/扭扭弹弹跳舞_1904411310740905985.json、图片生成/文生图/2025重磅更新WANX2.1模型，内含图生视频！文生视频，高清720p_1896112344349474817.json、视频生成/图生视频/3D旋转+360度环旋+通义万相=艾橘溪_1900145552707809282.json、视频生成/图生视频/5秒图生视频生成 - Wan2.1_1898064124872740866.json、视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894658014006390785.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json、视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json、视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json、视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json、视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：14
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+全部 14 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageScaleBy`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Pick From Batch (mtb)`
+- `PrimitiveStringMultiline`
+- `RIFE VFI`
+- `Seed (rgthree)`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 10/12 个有
-- `LayerUtility: PurgeVRAM` —— 9/12 个有
-- `WanVideoLoraSelect` —— 9/12 个有
-- `ImageUpscaleWithModel` —— 7/12 个有
-- `RIFE VFI` —— 7/12 个有
-- `UpscaleModelLoader` —— 7/12 个有
-- `WanVideoEnhanceAVideo` —— 7/12 个有
-- `WanVideoTeaCache` —— 7/12 个有
-- `ImageResizeAdvanced` —— 5/12 个有
-- `Int` —— 4/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
-- `TextInput_` —— 3/12 个有
-- `WanVideoEmptyEmbeds` —— 3/12 个有
-- `Text Multiline` —— 2/12 个有
-- `WanVideoSLG` —— 2/12 个有
-- `easy cleanGpuUsed` —— 2/12 个有
-- `ImageResizeKJ` —— 1/12 个有
-- `Note _O` —— 1/12 个有
-- `ResizeLongestToNode` —— 1/12 个有
-- `SaveLatent` —— 1/12 个有
+- `PreviewImage` —— 13/14 个有
+- `SaveImage` —— 13/14 个有
+- `ImpactSwitch` —— 12/14 个有
+- `RH_LLMAPI_NODE` —— 12/14 个有
+- `Text Concatenate` —— 12/14 个有
+- `Wan22PromptSelector` —— 12/14 个有
+- `WanImageToVideo` —— 12/14 个有
+- `Label (rgthree)` —— 8/14 个有
+- `LoadImage` —— 8/14 个有
+- `CLIPVisionEncode` —— 7/14 个有
+- `CLIPVisionLoader` —— 7/14 个有
+- `LogicGateNegateValue` —— 7/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/14 个有
+- `ShowText` —— 5/14 个有
+- `ImageResizeKJv2` —— 2/14 个有
+- `WanFirstLastFrameToVideo` —— 2/14 个有
+- `AudioAdjustVolume` —— 1/14 个有
+- `Bool` —— 1/14 个有
+- `ConvertAny2Float` —— 1/14 个有
+- `EmptyAudio` —— 1/14 个有
+- `HunyuanVideoFoley` —— 1/14 个有
+- `PreviewAudio` —— 1/14 个有
+- `RH_Translator` —— 1/14 个有
+- `easy ifElse` —— 1/14 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 14 | 50% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 14 | 100% |
+| 采样算法 | 1 | 1 - 1 | 14 | 100% |
+| 调度器 | euler_ancestral | - | 14 | 100% |
+| 重绘幅度 | simple | - | 14 | 100% |
 
 ## 常见问题
 
@@ -67,4 +86,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，14 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，14 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，14 个样本，一致性 100%
+- 重绘幅度 最常用 simple，14 个样本，一致性 100%

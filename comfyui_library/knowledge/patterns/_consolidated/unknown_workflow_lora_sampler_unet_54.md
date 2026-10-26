@@ -2,83 +2,76 @@
 name: unknown_workflow_lora_sampler_unet_54
 type: Unknown Workflow
 frequency: 10
-level: moderate
-coverage: 0.7026
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: strong
+coverage: 0.9612
+common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json, 图片生成/图生图/海螺H3标准工作流-01-首尾帧生视频_2093944374529974273.json, 图片生成/图生图/海螺H3标准工作流-02-单图生视频_2093940538071412737.json, 图片生成/图生图/海螺H3标准工作流-03-人物参考跳舞_2093911326912503810.json, 视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json, 视频生成/文生视频/MinimaxH3+音频驱动多参_2092941359513694209.json, 视频生成/文生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json]
+members: [图片生成/图生图/Aiwood-Qwen-image-edit基础工作流_1957714879070437378.json, 图片生成/图生图/Aiwood-Qwen-image-edit基础工作流_1988873891172986882.json, 图片生成/图生图/Qwen FP8 图像风格一键转绘_2015764180116185090.json, 图片生成/图生图/Qwen 单图片多视角转换_1961711028679675905.json, 图片生成/图生图/Qwen-Edit白模转材质效果图_1985594354335199233.json, 图片生成/图生图/Qwen-image-Edit去除猫咪_1958036285367758849.json, 图片生成/图生图/Qwen-image-edit单图编辑_1958178171315240962.json, 图片生成/图生图/Qwen-image-edit图片编辑基础工作流_1958527856827645953.json, 图片生成/图生图/图片扩充-竖转横专用工作流（Qwen-edit）_1961234314279239681.json, 图片生成/文生图/Qwen 单张图片多角度视图视角转换_1976907729967190018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json、图片生成/图生图/海螺H3标准工作流-01-首尾帧生视频_2093944374529974273.json、图片生成/图生图/海螺H3标准工作流-02-单图生视频_2093940538071412737.json、图片生成/图生图/海螺H3标准工作流-03-人物参考跳舞_2093911326912503810.json、视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Aiwood-Qwen-image-edit基础工作流_1957714879070437378.json、图片生成/图生图/Aiwood-Qwen-image-edit基础工作流_1988873891172986882.json、图片生成/图生图/Qwen FP8 图像风格一键转绘_2015764180116185090.json、图片生成/图生图/Qwen 单图片多视角转换_1961711028679675905.json、图片生成/图生图/Qwen-Edit白模转材质效果图_1985594354335199233.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `CreateVideo`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 9/10 个有
-- `MiniMaxH3SigmaShift` —— 9/10 个有
-- `ModelAttentionBackend` —— 9/10 个有
-- `PrimitiveInt` —— 9/10 个有
-- `VAEDecodeAudio` —— 9/10 个有
-- `easy anythingIndexSwitch` —— 9/10 个有
-- `easy int` —— 9/10 个有
-- `GetImageSizeAndCount` —— 8/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
-- `VHS_LoadVideo` —— 7/10 个有
-- `GetNode` —— 6/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/10 个有
-- `PlaySound|pysssss` —— 6/10 个有
-- `ResolutionSelector` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `VHS_VideoCombine` —— 6/10 个有
-- `VHS_VideoInfo` —— 6/10 个有
-- `Bookmark (rgthree)` —— 5/10 个有
-- `ComfyMathExpression` —— 5/10 个有
-- `Label (rgthree)` —— 5/10 个有
-- `PrimitiveFloat` —— 5/10 个有
-- `EmptyImage` —— 2/10 个有
-- `MiniMaxH3ImageToVideo` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `SaveImage` —— 2/10 个有
-- `Int` —— 1/10 个有
-- `LoadAudio` —— 1/10 个有
-- `SoundFlow_GetLength` —— 1/10 个有
-- `TrimAudioDuration` —— 1/10 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `ConditioningZeroOut` —— 8/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ImageConcanate` —— 6/10 个有
+- `ImageScaleToMegapixels` —— 6/10 个有
+- `CLIPTextEncode` —— 2/10 个有
+- `FluxKontextImageScale` —— 2/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `CM_IntBinaryOperation` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
+- `JWInteger` —— 1/10 个有
+- `LayerUtility: ExtendCanvas` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 12 | 10 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 12，10 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（13/10 个样本）：Steps较低可能导致细节不足

@@ -3,17 +3,17 @@ name: text_to_image_video_lora_sampler_205
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.871
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Concatenate, CR Text Replace, EmptyLatentImage, ImageResizeKJ, ImpactSwitch, JWInteger, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Primitive integer [Crystools], PrimitiveBoolean, RHHiddenNodes, RH_Captioner, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy ifElse, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8745
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageConcanate, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json, 视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json]
+members: [图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json, 数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_205
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json、视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json、数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json）
 
 - **类型**：Text To Image
 - **样本数**：2
@@ -25,35 +25,32 @@ source: knowledge_consolidation
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `CR Text Replace`
 - `EmptyLatentImage`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `JWInteger`
+- `ImageConcanate`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Primitive integer [Crystools]`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SimpleMath+`
-- `TextBox`
+- `RIFE VFI`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy ifElse`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `AdvancedLivePortrait` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `CR Value` —— 1/2 个有
+- `ExpressionEditor` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ReActorFaceSwap` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `VHS_VideoInfo` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

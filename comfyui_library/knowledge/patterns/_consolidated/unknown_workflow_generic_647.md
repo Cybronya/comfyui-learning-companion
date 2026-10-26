@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_generic_647
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7045
-common_nodes: [ImageScaleDownToSize, LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.6556
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Nano_全能图片V1 Pro谷歌最强一致性编辑模型_1960588119382851586.json, 图片生成/图生图/【 Nano 全能图片V1 】 100种玩法，陆续加入，谷歌最强一致性编辑模型_1962181505764278274.json, 图片生成/文生图/【  全能图片V1 】 从0到N，生成IP及周边，一条龙生成_1965949778922221569.json, 图片生成/文生图/谷歌最新香蕉模型_全能图片V1_1960839505970434049.json]
+members: [音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json, 音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json, 音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json, 音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json, 音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_647
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nano_全能图片V1 Pro谷歌最强一致性编辑模型_1960588119382851586.json、图片生成/图生图/【 Nano 全能图片V1 】 100种玩法，陆续加入，谷歌最强一致性编辑模型_1962181505764278274.json、图片生成/文生图/【  全能图片V1 】 从0到N，生成IP及周边，一条龙生成_1965949778922221569.json、图片生成/文生图/谷歌最新香蕉模型_全能图片V1_1960839505970434049.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json、音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json、音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json、音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json、音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageScaleDownToSize`
-- `LoadImage`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `Text Multiline`
-- `easy showAnything`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `SaveAudio`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 3/4 个有
-- `ImpactSwitch` —— 3/4 个有
-- `RH_Nano_Banana_Image2Image` —— 3/4 个有
-- `PreviewImage` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
+- `IndexTTS2Run` —— 4/5 个有
+- `VibeVoiceTTS` —— 1/5 个有
 
 ## 典型参数
 

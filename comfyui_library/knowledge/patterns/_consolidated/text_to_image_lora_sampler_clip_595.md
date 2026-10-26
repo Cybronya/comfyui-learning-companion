@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_595
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.835
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8235
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Muter (rgthree), JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图像扩展外补不改变原图，图生图扩图大版方案_2111253172189753345.json, 图片生成/图生图/追色图生图工作流｜色调迁移统一风格｜组图配色一步到位_2101933327929405441.json]
+members: [图片生成/反推提示词/提示词反推工作流合集，反推提示词多场景覆盖工具_2106523033115643905.json, 音频生成/音频生成/视频提示词反推工具｜看片自动拆解生成可复用描述_2103089392385609730.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_595
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像扩展外补不改变原图，图生图扩图大版方案_2111253172189753345.json、图片生成/图生图/追色图生图工作流｜色调迁移统一风格｜组图配色一步到位_2101933327929405441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/提示词反推工作流合集，反推提示词多场景覆盖工具_2106523033115643905.json、音频生成/音频生成/视频提示词反推工具｜看片自动拆解生成可复用描述_2103089392385609730.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
@@ -26,28 +26,33 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `Fast Groups Muter (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
+- `PreviewAny`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `FillMaskWithColor` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `ImagePadForOutpaint` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `ImitationHueNode` —— 1/2 个有
-- `InpaintCrop` —— 1/2 个有
-- `InpaintStitch` —— 1/2 个有
-- `RH_RhartImageNNb21ImageToImage` —— 1/2 个有
+- `LayerUtility: JoyCaption2ExtraOptions` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WD14Tagger|pysssss` —— 1/2 个有
 
 ## 典型参数
 

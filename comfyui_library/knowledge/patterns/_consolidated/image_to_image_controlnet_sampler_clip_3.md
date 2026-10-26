@@ -3,83 +3,85 @@ name: image_to_image_controlnet_sampler_clip_3
 type: Image To Image
 frequency: 8
 level: moderate
-coverage: 0.803375
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, FloatConstant, GetImageSize+, Image Comparer (rgthree), ImageAddNoise, ImageBlend, ImageSharpen, KSampler, LoadImage, MathExpression|pysssss, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy convertAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.72525
+common_nodes: [AILab_ImageToList, AIO_Preprocessor, CLIPTextEncode, CR Seed, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, DifferentialDiffusion, JanusImageUnderstanding, JanusModelLoader, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingDiscrete, ModelSamplingFlux, PreviewImage, SaveImage, ShowText|pysssss, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image 增加真实感_细节_纹理_2000242586008907778.json, 图片生成/图生图/Z-image 真实感模特_2001124938759237634.json, 图片生成/图生图/Z-image+增加真实感_细节_纹理_2001123346911723522.json, 图片生成/图生图/Zimage+增加真实感细节纹理_2045136330379759618.json, 图片生成/图生图/Zimage增加真实感细节纹理_2054148049051635714.json, 图片生成/图生图/Zimage增加真实感细节纹理_2057640412038385665.json, 图片生成/图生图/人像摄影-增加细节-Zimage_2003395244379049985.json, 图片生成/图生图/人物变胖工作流_2001332037065863169.json]
+members: [图片生成/反推提示词/Controlnet（图像控制）：涂鸦 颜色 TTPlanet_2056064184533700610.json, 图片生成/图生图/Controlnet图像控制_涂鸦_颜色_TTPlanet_2061994887289069570.json, 图片生成/图生图/Controlnet图像控制_涂鸦_颜色_TTPlanet_2063446628295593985.json, 图片生成/图生图/Controlnet图像控制涂鸦上颜色_2067050039389810690.json, 图片生成/图生图/Controlnet图像控制涂鸦上颜色_2067414914137944065.json, 图片生成/图生图/Controlnet图像控制涂鸦上颜色_2067509832881623042.json, 图片生成/图生图/Controlnet（图像控制）姿态与深度控制类_2055995843945222146.json, 图片生成/图生图/全新3.0简笔画动漫自动上色修改瑕疵_2064622748084826113.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Z-image 增加真实感_细节_纹理_2000242586008907778.json、图片生成/图生图/Z-image 真实感模特_2001124938759237634.json、图片生成/图生图/Z-image+增加真实感_细节_纹理_2001123346911723522.json、图片生成/图生图/Zimage+增加真实感细节纹理_2045136330379759618.json、图片生成/图生图/Zimage增加真实感细节纹理_2054148049051635714.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/Controlnet（图像控制）：涂鸦 颜色 TTPlanet_2056064184533700610.json、图片生成/图生图/Controlnet图像控制_涂鸦_颜色_TTPlanet_2061994887289069570.json、图片生成/图生图/Controlnet图像控制_涂鸦_颜色_TTPlanet_2063446628295593985.json、图片生成/图生图/Controlnet图像控制涂鸦上颜色_2067050039389810690.json、图片生成/图生图/Controlnet图像控制涂鸦上颜色_2067414914137944065.json…）
 
 - **类型**：Image To Image
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `AILab_ImageToList`
 - `AIO_Preprocessor`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `FloatConstant`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageAddNoise`
-- `ImageBlend`
-- `ImageSharpen`
+- `CR Seed`
+- `CheckpointLoaderSimple`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
+- `DifferentialDiffusion`
+- `JanusImageUnderstanding`
+- `JanusModelLoader`
 - `KSampler`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
+- `ModelSamplingDiscrete`
+- `ModelSamplingFlux`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `UNETLoader`
+- `ShowText|pysssss`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
-- `easy convertAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 4/8 个有
-- `SeedVR2LoadDiTModel` —— 4/8 个有
-- `SeedVR2LoadVAEModel` —— 4/8 个有
-- `SeedVR2VideoUpscaler` —— 4/8 个有
-- `CFGNorm` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `ModelSamplingAuraFlow` —— 1/8 个有
-- `TextEncodeQwenImageEditPlus` —— 1/8 个有
-- `easy imageSize` —— 1/8 个有
+- `Manga2Anime_LineArt_Preprocessor` —— 7/8 个有
+- `CLIPSetLastLayer` —— 1/8 个有
+- `CLIPVisionLoader` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `DWPreprocessor` —— 1/8 个有
+- `DepthAnythingV2Preprocessor` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `IPAdapterAdvanced` —— 1/8 个有
+- `IPAdapterModelLoader` —— 1/8 个有
+- `IPAdapterNoise` —— 1/8 个有
+- `Metric3D-DepthMapPreprocessor` —— 1/8 个有
+- `Metric3D-NormalMapPreprocessor` —— 1/8 个有
+- `OpenposePreprocessor` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 8 | 93% |
-| Prompt 约束强度(CFG) | 0.7 | 0.7 - 1 | 8 | 83% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | sgm_uniform | - | 8 | 75% |
-| 重绘幅度 | 0.25 | 0.2 - 1 | 8 | 26% |
+| 采样步数 | randomize | - | 8 | 88% |
+| Prompt 约束强度(CFG) | 40 | 3.5 - 40 | 8 | 66% |
+| 采样算法 | 3.5 | 3.5 - 3.5 | 7 | 100% |
+| 调度器 | dpmpp_2m_sde | - | 8 | 88% |
+| 重绘幅度 | karras | - | 8 | 88% |
+| ControlNet 权重 | 0.4 | 0.3 - 0.9 | 8 | 62% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，8 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 0.7，观测区间 0.7 - 1，8 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 sgm_uniform，8 个样本，一致性 75%
-- 重绘幅度 中位数 0.25，观测区间 0.2 - 1，8 个样本，取值分散，一致性仅 26%
-- 风险：Prompt 约束强度(CFG) 观测到 0.7，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 采样步数 最常用 randomize，8 个样本，一致性 88%
+- Prompt 约束强度(CFG) 中位数 40，观测区间 3.5 - 40，8 个样本
+- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m_sde，8 个样本，一致性 88%
+- 重绘幅度 最常用 karras，8 个样本，一致性 88%
+- ControlNet 权重 中位数 0.4，观测区间 0.3 - 0.9，8 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 40，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

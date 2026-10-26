@@ -3,34 +3,37 @@ name: unknown_workflow_generic_348
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.766857
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.854286
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 2 香蕉pro_1963614463550377986.json, 图片生成/图生图/全能图片V1 pro 圣诞特辑：化身精灵！一键解锁四宫格梦幻写真 🎄✨_2003443660811345922.json, 图片生成/图生图/全能图片V1 pro 圣诞特辑：甜度爆表警报！一键解锁 9 格限定大头贴 🎄🍭_2003623020310740993.json, 图片生成/图生图/全能图片V1 pro 多图 ZAI_1992817338791645185.json, 图片生成/图生图/全能图片V1 pro：品牌包装设计展示图，一张全景平面稿，定义专业蓝图！_2003446943344959489.json, 图片生成/图生图/全能图片V1 pro：女生铅笔素描画，一键定格，现实与艺术的双重奏！_2003443456561299457.json, 图片生成/图生图/全能图片V12游戏动画人物帧序列生成_1993247010220425217.json]
+members: [图片生成/图生图/+全能图片V1+谷歌顶级综合图像编辑_1976625373477736449.json, 图片生成/图生图/+全能图片V1单图转手办场景（无高清放大）_1965062073304666113.json, 图片生成/图生图/+全能图片V1双图重组融合工作流_1965074764886851585.json, 图片生成/图生图/+全能图片V1图像编辑的顶级理解_1980089098960539649.json, 图片生成/图生图/全能图片V1  图像编辑 全版本（附带30+创意提示词）_1962922953333780481.json, 图片生成/图生图/全能图片V1图像编辑【含单图，双图，三图】_1973227641526464514.json, 图片生成/文生图/全能图片V1图像编辑的顶级理解_1962730235911356417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_348
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2 香蕉pro_1963614463550377986.json、图片生成/图生图/全能图片V1 pro 圣诞特辑：化身精灵！一键解锁四宫格梦幻写真 🎄✨_2003443660811345922.json、图片生成/图生图/全能图片V1 pro 圣诞特辑：甜度爆表警报！一键解锁 9 格限定大头贴 🎄🍭_2003623020310740993.json、图片生成/图生图/全能图片V1 pro 多图 ZAI_1992817338791645185.json、图片生成/图生图/全能图片V1 pro：品牌包装设计展示图，一张全景平面稿，定义专业蓝图！_2003446943344959489.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/+全能图片V1+谷歌顶级综合图像编辑_1976625373477736449.json、图片生成/图生图/+全能图片V1单图转手办场景（无高清放大）_1965062073304666113.json、图片生成/图生图/+全能图片V1双图重组融合工作流_1965074764886851585.json、图片生成/图生图/+全能图片V1图像编辑的顶级理解_1980089098960539649.json、图片生成/图生图/全能图片V1  图像编辑 全版本（附带30+创意提示词）_1962922953333780481.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/7 个有
-- `Note _O` —— 1/7 个有
+- `PreviewImage` —— 5/7 个有
+- `ImageAndMaskPreview` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `easy bookmark` —— 1/7 个有
 
 ## 典型参数
 

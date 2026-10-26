@@ -3,32 +3,34 @@ name: unknown_workflow_generic_945
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.866667
-common_nodes: [RH_YouchuanTextToImageNiji7, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RHSettingsNode, SaveImage, StringConstant]
 problems: []
 missing: []
-members: [图片生成/图生图/悠船图生图-niji7_2080601433854013442.json, 图片生成/文生图/Youchuan_TextToImageNiji7_v7.0_2034593904493858817.json, 图片生成/文生图/动漫文生图工作流｜悠船 Niji 7 二次元专属模型_2100471577233149953.json]
+members: [图片生成/图生图/AI换装丨Wan2.7PRO_2077234172925661186.json, 图片生成/图生图/Wan2.7-服装改色_2078016586287509505.json, 图片生成/图生图/改色丨电商服装改色_2076540202029502465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_945
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-niji7_2080601433854013442.json、图片生成/文生图/Youchuan_TextToImageNiji7_v7.0_2034593904493858817.json、图片生成/文生图/动漫文生图工作流｜悠船 Niji 7 二次元专属模型_2100471577233149953.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI换装丨Wan2.7PRO_2077234172925661186.json、图片生成/图生图/Wan2.7-服装改色_2078016586287509505.json、图片生成/图生图/改色丨电商服装改色_2076540202029502465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_YouchuanTextToImageNiji7`
+- `LoadImage`
+- `RHSettingsNode`
 - `SaveImage`
+- `StringConstant`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_AlibabaWan27ImageEditPro` —— 2/3 个有
+- `RH_AlibabaWan27ImageEdit` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,89 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_unet_208
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.865333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 7
+level: weak
+coverage: 0.967429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux--Klein--产品精修高清放大_2054921194004074498.json, 图片生成/图生图/Flux-Klein-产品精修-高清放大_2055848149163495425.json, 图片生成/图生图/Flux-Klein产品精修高清放大（爆显用plus模式）_2055471694915096578.json, 图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json, 图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json, 图片生成/图生图/图像放大_2020915083957772290.json]
+members: [图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json, 图片生成/文生图/wan2.2超级加速文生视频_1957777125837303810.json, 视频生成/图生视频/wan2.2 优化2.0 文生视频14B_1950898146819899393.json, 视频生成/文生视频/Wan2.2文生视频-高质量_1994736642340556801.json, 视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json, 视频生成/文生视频/wan2.2文生视频（kj模型加速版）_1949875835437236226.json, 视频生成/文生视频/文生视频Holocine电影分镜工作流（自己测试吧）_1985283263507873793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_208
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux--Klein--产品精修高清放大_2054921194004074498.json、图片生成/图生图/Flux-Klein-产品精修-高清放大_2055848149163495425.json、图片生成/图生图/Flux-Klein产品精修高清放大（爆显用plus模式）_2055471694915096578.json、图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json、图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json、图片生成/文生图/wan2.2超级加速文生视频_1957777125837303810.json、视频生成/图生视频/wan2.2 优化2.0 文生视频14B_1950898146819899393.json、视频生成/文生视频/Wan2.2文生视频-高质量_1994736642340556801.json、视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `easy imageScaleDownToSize` —— 5/6 个有
-- `SeedVR2BlockSwap` —— 4/6 个有
-- `SeedVR2ExtraArgs` —— 4/6 个有
-- `AILab_QwenVL` —— 3/6 个有
-- `DF_Integer` —— 3/6 个有
-- `ImageScale` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `SeedVR2` —— 3/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `TTP_Image_Assy` —— 3/6 个有
-- `TTP_Image_Tile_Batch` —— 3/6 个有
-- `TTP_Tile_image_size` —— 3/6 个有
-- `easy imageBatchToImageList` —— 3/6 个有
-- `easy imageListToImageBatch` —— 3/6 个有
-- `easy imageSize` —— 3/6 个有
-- `easy imageSizeBySide` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `INTConstant` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `SeedVR2LoadDiTModel` —— 2/6 个有
-- `SeedVR2LoadVAEModel` —— 2/6 个有
-- `SeedVR2VideoUpscaler` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `ColorMatch` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `FlashVSRNode` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `ImageSharpen` —— 1/6 个有
-- `LayerUtility: ImageReel` —— 1/6 个有
-- `LayerUtility: ImageReelComposit` —— 1/6 个有
-- `Load Image From Url (mtb)` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `SeedVR2GGUF` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PathchSageAttentionKJ` —— 5/7 个有
+- `CreateVideo` —— 4/7 个有
+- `Int` —— 4/7 个有
+- `MathExpression|pysssss` —— 4/7 个有
+- `SaveVideo` —— 4/7 个有
+- `easy cleanGpuUsed` —— 4/7 个有
+- `ModelPatchTorchSettings` —— 3/7 个有
+- `VHS_VideoCombine` —— 3/7 个有
+- `INTConstant` —— 2/7 个有
+- `MuyeMathCalculator` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 10 | 6 - 20 | 7 | 51% |
+| 采样算法 | 1 | 1 - 3.5 | 7 | 40% |
+| 调度器 | euler | - | 7 | 86% |
+| 重绘幅度 | simple | - | 7 | 86% |
 
 ## 常见问题
 
@@ -91,4 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 6 - 20，7 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 40%
+- 调度器 最常用 euler，7 个样本，一致性 86%
+- 重绘幅度 最常用 simple，7 个样本，一致性 86%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

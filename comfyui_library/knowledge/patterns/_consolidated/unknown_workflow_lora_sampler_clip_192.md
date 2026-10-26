@@ -2,57 +2,72 @@
 name: unknown_workflow_lora_sampler_clip_192
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.912667
-common_nodes: [CLIPTextEncode, CR SDXL Aspect Ratio, DualCLIPLoader, FluxGuidance, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.697333
+common_nodes: [AILab_ImageResize, Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, ImageStitch, Int, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewAny, Qwen3VL_Chat, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Kontext Dev文生图-创意灯泡微缩场景_1948791649602871297.json, 图片生成/文生图/Kontext 文生图 加速版_1974142043784130562.json, 图片生成/文生图/flux基础工作流-古琴_1935657646269595649.json]
+members: [图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json, 图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json, 图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_192
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Kontext Dev文生图-创意灯泡微缩场景_1948791649602871297.json、图片生成/文生图/Kontext 文生图 加速版_1974142043784130562.json、图片生成/文生图/flux基础工作流-古琴_1935657646269595649.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json、图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json、图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AILab_ImageResize`
+- `Anything Everywhere3`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageStitch`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewAny`
+- `Qwen3VL_Chat`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetImageSize+` —— 2/3 个有
 - `PreviewImage` —— 2/3 个有
-- `TeaCache` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `DifferentialDiffusion` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `SUPIR_Upscale` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `QwenMultiangleCameraNode` —— 2/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
+- `TT_img_enc` —— 1/3 个有
+- `TT_img_enc_v2` —— 1/3 个有
+- `TextInputNode` —— 1/3 个有
+- `Textbox` —— 1/3 个有
+- `ZML_SwitchOutput` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `text_mul_Join` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 3 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

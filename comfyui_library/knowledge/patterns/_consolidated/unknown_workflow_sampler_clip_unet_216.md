@@ -3,17 +3,17 @@ name: unknown_workflow_sampler_clip_unet_216
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.8625
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LoadImage, MaraScottIsEmptyOrNone_v1, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy showAnything]
+coverage: 0.861167
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/文生图-Z-image-base-参考图_2039220224758648833.json, 图片生成/文生图/Z-image_-超实感文生图图返文_2026588864839688193.json, 图片生成/文生图/Z-image文生图洗图（增加图像随机性）_2000104489875013634.json, 图片生成/文生图/Z-image高清快速 文生图-_2006014329239584770.json, 图片生成/文生图/文生图-Z-image-base-参考图_2017398260050169857.json, 图片生成/文生图/文生图-Z-image-阿里造相-参考图_1993956921380192258.json]
+members: [图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json, 图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json, 图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json, 图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json, 图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json, 图片生成/图生图/脸部迁移+换头_2015404568665919489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_216
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/文生图-Z-image-base-参考图_2039220224758648833.json、图片生成/文生图/Z-image_-超实感文生图图返文_2026588864839688193.json、图片生成/文生图/Z-image文生图洗图（增加图像随机性）_2000104489875013634.json、图片生成/文生图/Z-image高清快速 文生图-_2006014329239584770.json、图片生成/文生图/文生图-Z-image-base-参考图_2017398260050169857.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json、图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json、图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json、图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json、图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,38 +23,49 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
 - `LoadImage`
-- `MaraScottIsEmptyOrNone_v1`
-- `RH_Captioner`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy ifElse`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `LatentColorMatch` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `ttN concat` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `SeedVR2LoadDiTModel` —— 3/6 个有
+- `SeedVR2LoadVAEModel` —— 3/6 个有
+- `SeedVR2VideoUpscaler` —— 3/6 个有
+- `RH_Translator` —— 2/6 个有
+- `Text` —— 2/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `QwenMultiangleCameraNode` —— 1/6 个有
+- `QwenMultiangleLightningNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 720 | 720 - 1024 | 6 | 85% |
-| 高度 | 1280 | 1280 - 1536 | 6 | 93% |
-| 采样步数 | fixed | - | 6 | 83% |
-| Prompt 约束强度(CFG) | 10 | 10 - 30 | 6 | 43% |
-| 采样算法 | 1 | 0.8 - 2.5 | 6 | 50% |
-| 调度器 | euler | - | 6 | 83% |
-| 重绘幅度 | simple | - | 6 | 83% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,11 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 720 - 1024，6 个样本，取值集中（一致性 85%）
-- 高度 中位数 1280，观测区间 1280 - 1536，6 个样本，取值集中（一致性 93%）
-- 采样步数 最常用 fixed，6 个样本，一致性 83%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 30，6 个样本，取值分散，一致性仅 43%
-- 采样算法 中位数 1，观测区间 0.8 - 2.5，6 个样本，取值分散，一致性仅 50%
-- 调度器 最常用 euler，6 个样本，一致性 83%
-- 重绘幅度 最常用 simple，6 个样本，一致性 83%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

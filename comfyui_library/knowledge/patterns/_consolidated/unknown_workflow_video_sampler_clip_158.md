@@ -2,56 +2,78 @@
 name: unknown_workflow_video_sampler_clip_158
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.9475
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.763
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningCombine, DWPreprocessor, EmptyImage, ImageBatch, ImageBatchMultiple+, ImageConcanate, ImageConcatFromBatch, ImageResize+, ImageResizeKJv2, KSampler, LoadImage, ModelSamplingSD3, PreviewImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanPhantomSubjectToVideo, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1_control_官方工作流-优化版_1930315905924808705.json, 视频生成/图生视频/wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json, 视频生成/图生视频/wan2.1图生视频 (分镜转视频剧本)_1986047852856168450.json, 视频生成/图生视频/分镜转视频_2025778542893604865.json]
+members: [视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json, 视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json, 视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json, 视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_158
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.1_control_官方工作流-优化版_1930315905924808705.json、视频生成/图生视频/wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json、视频生成/图生视频/wan2.1图生视频 (分镜转视频剧本)_1986047852856168450.json、视频生成/图生视频/分镜转视频_2025778542893604865.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json、视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json、视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json、视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+- `ConditioningCombine`
+- `DWPreprocessor`
+- `EmptyImage`
+- `ImageBatch`
+- `ImageBatchMultiple+`
+- `ImageConcanate`
+- `ImageConcatFromBatch`
+- `ImageResize+`
+- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
 - `ModelSamplingSD3`
+- `PreviewImage`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanPhantomSubjectToVideo`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `WanImageToVideo` —— 3/4 个有
-- `ConstrainImage|pysssss` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `SaveAnimatedWEBP` —— 2/4 个有
-- `easy imageSize` —— 2/4 个有
-- `AnimateDiffCombine` —— 1/4 个有
-- `CFGZeroStar` —— 1/4 个有
-- `WanFunControlToVideo` —— 1/4 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 2/4 个有
+- `CR Text Replace` —— 2/4 个有
+- `TextBox` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `Text Concatenate` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 15 | 10 - 20 | 4 | 67% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
-| 采样算法 | uni_pc | - | 4 | 100% |
+| 采样步数 | 12 | 12 - 12 | 4 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
@@ -61,8 +83,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 10 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 采样步数 中位数 12，观测区间 12 - 12，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

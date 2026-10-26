@@ -3,31 +3,33 @@ name: unknown_workflow_generic_444
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.9445
-common_nodes: [RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
+coverage: 0.9
+common_nodes: [LoadImage, RH_DLSS5Enhance, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json, 图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json, 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json, 视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json, 视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json, 视频生成/文生视频/文生视频 Seedance2.0 Mini_2075568851261153282.json]
+members: [图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json, 图片生成/图生图/Dlss5_2100083324332109826.json, 图片生成/图生图/Dlss5_2102590795344867329.json, 图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json, 图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json, 图片生成/图生图/千府AI-DLSS5洗图工作流_2101508878457462786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_444
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json、图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json、图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json、视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json、视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json、图片生成/图生图/Dlss5_2100083324332109826.json、图片生成/图生图/Dlss5_2102590795344867329.json、图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json、图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20MiniTextToVideo`
-- `SaveVideo`
+- `LoadImage`
+- `RH_DLSS5Enhance`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `ShunjingAIShade` —— 3/6 个有
 
 ## 典型参数
 

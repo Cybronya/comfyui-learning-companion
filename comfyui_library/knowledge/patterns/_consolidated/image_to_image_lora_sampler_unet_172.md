@@ -3,17 +3,17 @@ name: image_to_image_lora_sampler_unet_172
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.911
-common_nodes: [CFGNorm, CLIPLoader, CR Text, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, ImageConcanate, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RH_LLMAPI_NODE, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize, easy showAnything]
+coverage: 0.909
+common_nodes: [AutoCropFaces, CLIPLoader, CR Prompt Text, ConditioningZeroOut, Float, ImageRemoveAlpha_UTK, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingAuraFlow, PainterFluxImageEdit, PixelSmileConditioning, PreviewAny, PreviewImage, RMBG, ReplaceText, SaveImage, SolidMask, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy isMaskEmpty, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit双图模式+LLM大模型提示词（效果更加精准）_1958411317197619202.json, 图片生成/图生图/Qwen-Image-Edit双图模式（效果更加精准）_2072583528436555777.json, 图片生成/图生图/Qwen-edit 明星代言｜手持产品替换_1958455891425181697.json]
+members: [图片生成/反推提示词/02 face-image_2048185368096284674.json, 图片生成/图生图/换脸同时完美保留原图表情_2044370810437111810.json, 图片生成/图生图/换脸同时完美保留原图表情_2061059216772784129.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_172
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit双图模式+LLM大模型提示词（效果更加精准）_1958411317197619202.json、图片生成/图生图/Qwen-Image-Edit双图模式（效果更加精准）_2072583528436555777.json、图片生成/图生图/Qwen-edit 明星代言｜手持产品替换_1958455891425181697.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/02 face-image_2048185368096284674.json、图片生成/图生图/换脸同时完美保留原图表情_2044370810437111810.json、图片生成/图生图/换脸同时完美保留原图表情_2061059216772784129.json）
 
 - **类型**：Image To Image
 - **样本数**：3
@@ -23,42 +23,50 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGNorm`
+- `AutoCropFaces`
 - `CLIPLoader`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `ImageConcanate`
-- `ImageStitch`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `Float`
+- `ImageRemoveAlpha_UTK`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MaskPreview+`
 - `ModelSamplingAuraFlow`
+- `PainterFluxImageEdit`
+- `PixelSmileConditioning`
+- `PreviewAny`
 - `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `ReferenceLatent`
+- `RMBG`
+- `ReplaceText`
 - `SaveImage`
+- `SolidMask`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageSize`
+- `easy ifElse`
+- `easy isMaskEmpty`
 - `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEdit` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `easy imageScaleDownToSize` —— 1/3 个有
+- `FluxKontextImageScale` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| 采样步数 | 8 | 4 - 8 | 3 | 72% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
+| 采样算法 | res_multistep | - | 3 | 67% |
 | 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
@@ -66,13 +74,13 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 采样算法 最常用 res_multistep，3 个样本，一致性 67%
 - 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

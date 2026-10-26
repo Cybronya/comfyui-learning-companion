@@ -1,30 +1,28 @@
 ---
 name: unknown_workflow_video_lora_vae_3
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.790333
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9655
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/最强数字人InfiniteTalk_1986044446821285890.json, 视频生成/图生视频/最新最秀infinitetalk单人数字人_1958010362488565762.json, 视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json, 视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json, 视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json, 视频生成/图生视频/自制-MultiTalk v2 不运镜版_1941390808585236482.json]
+members: [数字人/数字人/Aiwood-首发Multitalk多人对话_1940854355119730690.json, 数字人/数字人/Multitalk多人对话（超级版）_1941152199026307073.json, 数字人/数字人/数字人图片对口型_2027596633734647810.json, 数字人/数字人/最强数字人InfiniteTalk_1981009825838546946.json, 数字人/数字人/超逼真多人对话数字人-KJ-MultiTalk_1940916699317354497.json, 视频生成/图生视频/Aiwood-infinitetalk双人对话_1957826997610446849.json, 视频生成/图生视频/INF双人对话_1971453748994359297.json, 视频生成/图生视频/InfiniteTalk-wan-双人-index tts_1958085210749415426.json, 视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json, 视频生成/图生视频/Multitalk双人对唱数字人_1941678134205038593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/最强数字人InfiniteTalk_1986044446821285890.json、视频生成/图生视频/最新最秀infinitetalk单人数字人_1958010362488565762.json、视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json、视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json、视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Aiwood-首发Multitalk多人对话_1940854355119730690.json、数字人/数字人/Multitalk多人对话（超级版）_1941152199026307073.json、数字人/数字人/数字人图片对口型_2027596633734647810.json、数字人/数字人/最强数字人InfiniteTalk_1981009825838546946.json、数字人/数字人/超逼真多人对话数字人-KJ-MultiTalk_1940916699317354497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
@@ -38,30 +36,33 @@ source: knowledge_consolidation
 - `WanVideoDecode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTalkWav2VecEmbeds` —— 5/6 个有
-- `WanVideoImageToVideoMultiTalk` —— 5/6 个有
-- `WanVideoSampler` —— 5/6 个有
-- `INTConstant` —— 4/6 个有
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `GetNode` —— 2/6 个有
-- `MaskPreview+` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `SeparateMasks` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `Bjornulf_ShowStringText` —— 1/6 个有
-- `FloatConstant` —— 1/6 个有
-- `Int2String` —— 1/6 个有
-- `JWFloatToString` —— 1/6 个有
-- `MaskPreview` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
+- `MultiTalkWav2VecEmbeds` —— 9/10 个有
+- `WanVideoImageToVideoMultiTalk` —— 9/10 个有
+- `WanVideoSampler` —— 9/10 个有
+- `SeparateMasks` —— 8/10 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `AudioCrop` —— 6/10 个有
+- `AudioSeparation` —— 6/10 个有
+- `MaskPreview+` —— 6/10 个有
+- `WanVideoTextEncode` —— 6/10 个有
+- `PreviewAudio` —— 4/10 个有
+- `SaveAudioMP3` —— 4/10 个有
+- `WanVideoApplyNAG` —— 4/10 个有
+- `WanVideoTextEncodeSingle` —— 4/10 个有
+- `EsesImageEffectBloom` —— 3/10 个有
+- `INTConstant` —— 2/10 个有
+- `MaskPreview` —— 2/10 个有
+- `MathExpression|pysssss` —— 2/10 个有
+- `IndexTTSNode` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `StringToInt` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
+- `WanVideoSetRadialAttention` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

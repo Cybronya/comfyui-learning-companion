@@ -3,70 +3,74 @@ name: unknown_workflow_lora_sampler_clip_150
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95225
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UnetLoaderGGUF, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.88275
+common_nodes: [Any Switch (rgthree), AspectRatio, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, ImageResize+, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly_Any, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TT_img_enc_v2, TwoWaySwitch, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json, 图片生成/文生图/LOGO生成器 Qwen-image Q8+4步Lora极速生成_1954712420105252865.json, 图片生成/文生图/Qwen image 汉字专用海报极速文生图+润色_1954718876200267778.json, 图片生成/文生图/一键LOGO极速生成_2034820251891798017.json]
+members: [图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json, 图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json, 图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json, 图片生成/文生图/Flux2 Klein 文生图 平替全能图片 9B 质量 _支持两种出图方式_2029393137902292993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_150
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json、图片生成/文生图/LOGO生成器 Qwen-image Q8+4步Lora极速生成_1954712420105252865.json、图片生成/文生图/Qwen image 汉字专用海报极速文生图+润色_1954718876200267778.json、图片生成/文生图/一键LOGO极速生成_2034820251891798017.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json、图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json、图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json、图片生成/文生图/Flux2 Klein 文生图 平替全能图片 9B 质量 _支持两种出图方式_2029393137902292993.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AspectRatio`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `CR Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `ImageResize+`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly_Any`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Multiline`
-- `UnetLoaderGGUF`
+- `TT_img_enc_v2`
+- `TwoWaySwitch`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 3/4 个有
-- `Text Concatenate` —— 3/4 个有
-- `SeedVR2` —— 2/4 个有
-- `SeedVR2BlockSwap` —— 2/4 个有
-- `CFGZeroStar` —— 1/4 个有
-- `CR SDXL Aspect Ratio` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
+- `LoadLoraOnly` —— 2/4 个有
+- `MergeLoraToModel` —— 2/4 个有
+- `easy prompt` —— 2/4 个有
+- `easy promptConcat` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `Textbox` —— 1/4 个有
+- `easy saveText` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
+- `llama_cpp_instruct_adv` —— 1/4 个有
+- `llama_cpp_model_loader` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 10 | 4 | 53% |
-| Prompt 约束强度(CFG) | 5 | 4 - 5 | 4 | 91% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 10，4 个样本
-- Prompt 约束强度(CFG) 中位数 5，观测区间 4 - 5，4 个样本，取值集中（一致性 91%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

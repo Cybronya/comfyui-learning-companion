@@ -3,39 +3,38 @@ name: unknown_workflow_generic_1385
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7275
-common_nodes: [CR Text, HAIGC_TextRelay, LoadImage, RH_LLMAPI_NODE, SaveImage, TextInput_, easy showAnything]
+coverage: 0.8335
+common_nodes: [ImageScaleToTotalPixels, LayerUtility: PurgeVRAM V2, LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/建筑-kimi2.5效果图提示词生成万能工作流_2044244712390926338.json, 图片生成/图生图/建筑-万能2天气变换工作流_2027365305361633281.json]
+members: [图片生成/图生图/LongCat Edit单图像编辑_1998251120273317890.json, 图片生成/文生图/LongCat-Image-Edit_2001209556254552066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1385
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/建筑-kimi2.5效果图提示词生成万能工作流_2044244712390926338.json、图片生成/图生图/建筑-万能2天气变换工作流_2027365305361633281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/LongCat Edit单图像编辑_1998251120273317890.json、图片生成/文生图/LongCat-Image-Edit_2001209556254552066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `HAIGC_TextRelay`
+- `ImageScaleToTotalPixels`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
-- `TextInput_`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `ShellAgentPluginOutputText` —— 1/2 个有
-- `easy promptReplace` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 

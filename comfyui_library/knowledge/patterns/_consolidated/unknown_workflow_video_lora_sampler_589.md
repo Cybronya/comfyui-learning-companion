@@ -1,100 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_589
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.814333
-common_nodes: [Bjornulf_IfElse, CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, ImageResizeKJv2, JWInteger, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch1way, LazySwitch2way, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy boolean, easy convertAnything, easy float, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.9305
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveFloat, PrimitiveInt, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/5分镜视频版（可选分镜时长_可选分镜生效_清晰度）_LTX2.3多帧参考_2044963252995629058.json, 视频生成/图生视频/ltx-2.3-图生视频-多图参考版_2038430942880079873.json, 视频生成/图生视频/ltx-2.3-数字人-多图参考版_2038885933809930241.json]
+members: [视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json, 视频生成/图生视频/首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写提示词_1972900147308990465.json, 视频生成/图生视频/首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_1968343084901781506.json, 视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_589
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/5分镜视频版（可选分镜时长_可选分镜生效_清晰度）_LTX2.3多帧参考_2044963252995629058.json、视频生成/图生视频/ltx-2.3-图生视频-多图参考版_2038430942880079873.json、视频生成/图生视频/ltx-2.3-数字人-多图参考版_2038885933809930241.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json、视频生成/图生视频/首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写提示词_1972900147308990465.json、视频生成/图生视频/首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_1968343084901781506.json、视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bjornulf_IfElse`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageRangeFromBatch`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Float`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
+- `Int`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
-- `LazySwitch1way`
-- `LazySwitch2way`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveFloat`
 - `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `RHHiddenNodes`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `easy boolean`
-- `easy convertAnything`
-- `easy float`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoGeminiInstructionZhenzhenNode` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `LTX2SamplingPreviewOverride` —— 2/3 个有
-- `LTXVAudioVAEDecode` —— 2/3 个有
-- `LTXVEmptyLatentAudio` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 2/3 个有
-- `VAELoader` —— 2/3 个有
-- `AudioCropProcessUTK` —— 1/3 个有
-- `CFGNorm` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `LTX2_NAG` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LTXVChunkFeedForward` —— 1/3 个有
-- `LTXVLatentUpsampler` —— 1/3 个有
-- `LatentUpscaleModelLoader` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `NormalizeAudioLoudness` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `CreateCFGScheduleFloatList` —— 2/4 个有
+- `PrimitiveString` —— 2/4 个有
+- `StringToFloatList` —— 2/4 个有
+- `WanVideoEasyCache` —— 2/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | - | 2 | 100% |
-| 高度 | 20 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -102,5 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 93，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

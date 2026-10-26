@@ -1,61 +1,65 @@
 ---
 name: unknown_workflow_sampler_unet_vae_158
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.911667
-common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.820286
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Boogu-Image 图片编辑_2068185847907835905.json, 图片生成/图生图/Boogu_Edit工作流_2067413961858965505.json, 图片生成/图生图/Boogu_Image_edit 单图编辑_2067731696430178305.json, 图片生成/图生图/boogu_edit_图像编辑-图生图_2069074867202383874.json, 图片生成/图生图/boogu_edit_图像编辑_2069391664145321986.json, 图片生成/文生图/boogu编辑图片_2067805061354446849.json]
+members: [图片生成/图生图/三图编辑（解禁模型）：Flux.2 Klein 9B_2051654833320542209.json, 图片生成/图生图/仅需四步，建筑效果图一键多风格_2030610127664979970.json, 图片生成/图生图/全能人物照片编辑头发人脸衣服服装更换变装变发型图生图升级版_2074339361214255106.json, 图片生成/图生图/动漫转写实cg Klein 9b 工作流_2015973646677843969.json, 图片生成/图生图/动漫转真人Klein 9b工作流_2032463178499624961.json, 图片生成/图生图/多图编辑换装电商人物添加人物物品装饰多图合一AI重绘_2074345357949104129.json, 图片生成/图生图/服装上身与场景生成_2060636969994113025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_158
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Boogu-Image 图片编辑_2068185847907835905.json、图片生成/图生图/Boogu_Edit工作流_2067413961858965505.json、图片生成/图生图/Boogu_Image_edit 单图编辑_2067731696430178305.json、图片生成/图生图/boogu_edit_图像编辑-图生图_2069074867202383874.json、图片生成/图生图/boogu_edit_图像编辑_2069391664145321986.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/三图编辑（解禁模型）：Flux.2 Klein 9B_2051654833320542209.json、图片生成/图生图/仅需四步，建筑效果图一键多风格_2030610127664979970.json、图片生成/图生图/全能人物照片编辑头发人脸衣服服装更换变装变发型图生图升级版_2074339361214255106.json、图片生成/图生图/动漫转写实cg Klein 9b 工作流_2015973646677843969.json、图片生成/图生图/动漫转真人Klein 9b工作流_2032463178499624961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/6 个有
-- `FluxKontextImageScale` —— 2/6 个有
-- `GetImageSize+` —— 2/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `Text` —— 2/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `JWStringConcat` —— 1/6 个有
-- `PDRatioSelector` —— 1/6 个有
-- `RH_Captioner` —— 1/6 个有
-- `图像缩放V2_孤海` —— 1/6 个有
+- `CLIPTextEncode` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `ReferenceLatent` —— 6/7 个有
+- `VAEEncode` —— 6/7 个有
+- `EmptyFlux2LatentImage` —— 5/7 个有
+- `GetImageSize` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `JjkText` —— 2/7 个有
+- `PlaySound|pysssss` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `AIO_Preprocessor` —— 1/7 个有
+- `FluxKontextImageScale` —— 1/7 个有
+- `ImageInvert` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `StringReplace` —— 1/7 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1280 | 1024 - 1536 | 6 | 84% |
-| 高度 | 1024 | 1024 - 1280 | 6 | 89% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1280，观测区间 1024 - 1536，6 个样本，取值集中（一致性 84%）
-- 高度 中位数 1024，观测区间 1024 - 1280，6 个样本，取值集中（一致性 89%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

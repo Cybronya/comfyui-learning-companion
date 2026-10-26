@@ -1,77 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_69
 type: Unknown Workflow
-frequency: 18
-level: moderate
-coverage: 0.664111
-common_nodes: [AudioSeparation, BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, DF_Int_to_Float, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_LoadAudioUpload, VHS_VideoCombine]
+frequency: 20
+level: strong
+coverage: 0.44735
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, FL_RIFE, Fast Groups Bypasser (rgthree), INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104530829451026433.json, 数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104531808976199681.json, 数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json, 数字人/数字人/kplei_scail.json_2109885347109883905.json, 视频生成/图生视频/H3 音频驱动 音乐数字人H3 Audio-Driven Music Avatars_2101838568909004801.json, 视频生成/图生视频/H3无限分段长视频 Music+Digital+Avatars+_2110904034117906434.json, 视频生成/图生视频/Minimax H3单图数字人（selflift无限分段长视频）2609_2106034159591444481.json, 视频生成/图生视频/Minimax-H3音乐数字人（无限分段长视频）_2101606771327594497.json, 视频生成/图生视频/Minimax-H3音乐数字人（无限分段长视频）_2101634155602866178.json, 视频生成/图生视频/MinimaxH3-音乐数字人【无限分段长视频】_2108721750065369089.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频_2110651688527941633.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频_2111370884236791810.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）-修复报错_2108876273467617281.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）_2102314156711038978.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）_2105100377552150529.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json, 视频生成/图生视频/无限分段长视频 H3 Music Digital Avatars_2108376326993432578.json, 视频生成/文生视频/MinimaxH3音乐数字人（无限分段长视频）-修复报错_2108758135392530433.json]
+members: [视频生成/图生视频/WAN2.2-万能视频生成器_2034182397939421186.json, 视频生成/图生视频/WAN2.2万能视频生成优化_2028858830699892737.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2037840738377015297.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2038834532652163073.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流图片加文字直出视频短剧电商带货视频生成_2038927668770512898.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作工作流_2033802610926428162.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作工作流_2033833847380516865.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作工作流_2057106642839359489.json, 视频生成/图生视频/wan2.2万能视频生成_2032814460473188353.json, 视频生成/图生视频/万能图生视频 WAN2.2细节精细 优化加速版_2029755512052523009.json, 视频生成/图生视频/万能好用的AI视频流，分镜单片视频生成，文字控制动作，稳定版_2031051792376668162.json, 视频生成/图生视频/万能视频生成器_自动细化提示词_2046398368800317441.json, 视频生成/图生视频/全自动 万能视频生成器 上手简单_2030287506285010945.json, 视频生成/图生视频/全自动-万能视频生成器-多图自用_2037447795740774401.json, 视频生成/图生视频/全自动-万能视频生成器-邻家AI大女孩_2043261466400268290.json, 视频生成/图生视频/全自动-万能视频生成器_2028729107403513858.json, 视频生成/图生视频/星宸3D视频生成_2031903395463827458.json, 视频生成/图生视频/自用-wan2.2优化版-万能视频生成器工作流_2037037456683442177.json, 视频生成/文生视频/WAN2.2全自动-万能视频生成器_2038992828327530498.json, 视频生成/文生视频/WAN2.2细节精细 万能图生视频 优化加速版_2029755034107383809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_69
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104530829451026433.json、数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104531808976199681.json、数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json、数字人/数字人/kplei_scail.json_2109885347109883905.json、视频生成/图生视频/H3 音频驱动 音乐数字人H3 Audio-Driven Music Avatars_2101838568909004801.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/WAN2.2-万能视频生成器_2034182397939421186.json、视频生成/图生视频/WAN2.2万能视频生成优化_2028858830699892737.json、视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2037840738377015297.json、视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2038834532652163073.json、视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流图片加文字直出视频短剧电商带货视频生成_2038927668770512898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：20
+- **可信度**：强结论
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `AudioSeparation`
-- `BasicScheduler`
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `DF_Int_to_Float`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `CLIPTextEncode`
+- `CR Text`
+- `FL_RIFE`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `SoundFlow_GetLength`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Compare` —— 15/18 个有
-- `Int` —— 15/18 个有
-- `InversionDemoLazySwitch` —— 15/18 个有
-- `ModelPreviewOverrideKJ` —— 15/18 个有
-- `PreviewImage` —— 15/18 个有
-- `PreviewAudio` —— 14/18 个有
-- `LoadAudio` —— 3/18 个有
-- `PreviewAny` —— 3/18 个有
-- `孤海注释` —— 2/18 个有
-- `FlashVSRNode` —— 1/18 个有
-- `JjkText` —— 1/18 个有
-- `LayerUtility: TextJoin` —— 1/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 17/20 个有
+- `RH_LLMAPI_Pro_Node` —— 17/20 个有
+- `Int` —— 16/20 个有
+- `PreviewAny` —— 16/20 个有
+- `GetImageSizeRatio` —— 3/20 个有
+- `Resize` —— 3/20 个有
+- `DWPreprocessor` —— 1/20 个有
+- `GetImageRangeFromBatch` —— 1/20 个有
+- `MathExpression|pysssss` —— 1/20 个有
+- `SaveImage` —— 1/20 个有
+- `ShowText|pysssss` —— 1/20 个有
+- `VHS_LoadVideo` —— 1/20 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 20 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 20 | 100% |
+| 采样算法 | 1 | 1 - 1 | 20 | 100% |
+| 调度器 | euler | - | 20 | 100% |
+| 重绘幅度 | normal | - | 20 | 95% |
 
 ## 常见问题
 
@@ -79,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，20 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，20 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，20 个样本，一致性 100%
+- 重绘幅度 最常用 normal，20 个样本，一致性 95%

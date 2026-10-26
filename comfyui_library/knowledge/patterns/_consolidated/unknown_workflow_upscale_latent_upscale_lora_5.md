@@ -1,92 +1,78 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_5
 type: Unknown Workflow
-frequency: 25
-level: strong
-coverage: 0.898
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
+frequency: 21
+level: moderate
+coverage: 0.723
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3文生视频【切镜头优化版4】_2072859139281342465.json, 视频生成/文生视频/LTX-2 文生视频官方版_2008956000639918082.json, 视频生成/文生视频/LTX-2 文生视频官方版_2073297832060211201.json, 视频生成/文生视频/LTX-2 文生视频运镜控制_2073298030320775169.json, 视频生成/文生视频/LTX-2文生视频ComfyUI官方流快速ltx2模型fp8加速模型带音效_2012003240623218689.json, 视频生成/文生视频/LTX-2文生视频Plus运行模式专用_2008537121744752642.json, 视频生成/文生视频/LTX2 文生视频_2008738820421853186.json, 视频生成/文生视频/LTX2 文生视频原版_2008509004686823425.json, 视频生成/文生视频/LTX2.0文生视频_2008728323093962754.json, 视频生成/文生视频/LTX2.0文生视频_2021110563987791873.json, 视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json, 视频生成/文生视频/LTX2.3文生视频_2059534082203283458.json, 视频生成/文生视频/LTX2.3文生视频_2065077242186788866.json, 视频生成/文生视频/LTX2.3文生视频_2072522403787399169.json, 视频生成/文生视频/LTX2.3文生视频【优化版3】_2056732469243760641.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2029959325606744066.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2056288371739287553.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2071227330307125249.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2065674485692461057.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2066698425961369602.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2071506679061106690.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2071853403160014850.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版】_2066428134618124289.json, 视频生成/文生视频/LTX2.3文生视频【根据时间写剧情】_2067564577201672194.json, 视频生成/文生视频/LTX2.3文生视频： ai提示词优化增强版 提示词ai优化版文生视频工作流_2030140893503692802.json]
+members: [视频生成/图生视频/H3高质量全能参考（二采加速版）_2088785262628397058.json, 视频生成/图生视频/MiniMax H3数字人视频带货！多图生视频_2102748591906451458.json, 视频生成/图生视频/MiniMax-H3 数字人视频带货-多图参考生视频_2096052002777288705.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108137283806392322.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108165309235548162.json, 视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货！_2095315877355937794.json, 视频生成/图生视频/MiniMax-H3_ 数字人视频带货！_2097134810035740673.json, 视频生成/图生视频/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2110655333088710658.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2097991965936799745.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2098027200141414401.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2104158521985163265.json, 视频生成/图生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频_2104200339196047362.json, 视频生成/图生视频/MiniMaxH3  数字人视频带货  H3多图生视频_2097942688929767426.json, 视频生成/图生视频/MiniMaxH3 图生视频！2K快速版！_2103052957838307329.json, 视频生成/图生视频/MiniMaxH3_MV采样器直出对嘴形_10+3高动态Latent_upscale_2091535367416664065.json, 视频生成/图生视频/minimax_h3_fast-清晰武戏-四图_2109487427214733314.json, 视频生成/图生视频/多图生视频，超强数字人视频带货！可用于多人场景视频制作_2103095600538546178.json, 视频生成/图生视频/小脸不崩！打斗不糊！H3 sigma强化+潜空间放大工作流（不油啦！）_2089513420025589761.json, 视频生成/图生视频/小脸不崩！打斗不糊！H3 sigma强化+潜空间放大工作流（不油啦！）_2114208903440453633.json, 视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json, 视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_5
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/LTX2.3文生视频【切镜头优化版4】_2072859139281342465.json、视频生成/文生视频/LTX-2 文生视频官方版_2008956000639918082.json、视频生成/文生视频/LTX-2 文生视频官方版_2073297832060211201.json、视频生成/文生视频/LTX-2 文生视频运镜控制_2073298030320775169.json、视频生成/文生视频/LTX-2文生视频ComfyUI官方流快速ltx2模型fp8加速模型带音效_2012003240623218689.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/H3高质量全能参考（二采加速版）_2088785262628397058.json、视频生成/图生视频/MiniMax H3数字人视频带货！多图生视频_2102748591906451458.json、视频生成/图生视频/MiniMax-H3 数字人视频带货-多图参考生视频_2096052002777288705.json、视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108137283806392322.json、视频生成/图生视频/MiniMax-H3_ Digital Avatars for Video E-co数字人视频带货_2108165309235548162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：21
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
+全部 21 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVScheduler` —— 23/25 个有
-- `easy cleanGpuUsed` —— 22/25 个有
-- `CR Text` —— 18/25 个有
-- `Int` —— 18/25 个有
-- `PIP_IntegerCalculator` —— 18/25 个有
-- `VHS_VideoCombine` —— 18/25 个有
-- `VRAMReserver` —— 18/25 个有
-- `easy convertAnything` —— 18/25 个有
-- `CheckpointLoaderSimple` —— 16/25 个有
-- `LTXAVTextEncoderLoader` —— 16/25 个有
-- `LTXVAudioVAELoader` —— 16/25 个有
-- `CreateVideo` —— 15/25 个有
-- `LTXVCropGuides` —— 15/25 个有
-- `SaveVideo` —— 15/25 个有
-- `DualCLIPLoader` —— 14/25 个有
-- `LTX2_NAG` —— 14/25 个有
-- `UNETLoader` —— 14/25 个有
-- `VAELoaderKJ` —— 14/25 个有
-- `CR String To Combo` —— 10/25 个有
-- `CR Text Concatenate` —— 10/25 个有
-- `Display Any (rgthree)` —— 10/25 个有
-- `ImpactSwitch` —— 10/25 个有
-- `LTXICLoRALoaderModelOnly` —— 10/25 个有
-- `RH_LLMAPI_NODE` —— 10/25 个有
-- `ttN concat` —— 10/25 个有
-- `BasicScheduler` —— 9/25 个有
-- `SaveAudio` —— 9/25 个有
-- `LTXVChunkFeedForward` —— 4/25 个有
-- `TextNode` —— 2/25 个有
-- `VideoSizePresetNode` —— 2/25 个有
-- `Fast Groups Muter (rgthree)` —— 1/25 个有
-- `ImpactStringSelector` —— 1/25 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/25 个有
-- `ModelscopeApiTextGenerationNode` —— 1/25 个有
+- `ResolutionSelector` —— 20/21 个有
+- `GetNode` —— 19/21 个有
+- `SetNode` —— 19/21 个有
+- `VHS_VideoCombine` —— 17/21 个有
+- `ManualSigmas` —— 16/21 个有
+- `JjkText` —— 14/21 个有
+- `MiniMaxH3SigmaShift` —— 8/21 个有
+- `PrimitiveStringMultiline` —— 8/21 个有
+- `ModelAttentionBackend` —— 7/21 个有
+- `ModelPreviewOverrideKJ` —— 6/21 个有
+- `SplitSigmas` —— 6/21 个有
+- `CreateVideo` —— 5/21 个有
+- `SaveVideo` —— 5/21 个有
+- `H3SigmaRefiner` —— 4/21 个有
+- `LoadAudio` —— 4/21 个有
+- `RHLLMChatNode` —— 3/21 个有
+- `BlockSparseAttention` —— 2/21 个有
+- `JjkShowText` —— 2/21 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/21 个有
+- `easy showAnything` —— 2/21 个有
+- `AudioCrop` —— 1/21 个有
+- `AudioInfoNode` —— 1/21 个有
+- `Float` —— 1/21 个有
+- `Int` —— 1/21 个有
+- `PreviewAudio` —— 1/21 个有
+- `QwenH3PromptLocal` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | 97 - 121 | 25 | 91% |
-| 高度 | 25 | 25 - 25 | 25 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,5 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 97 - 121，25 个样本，取值集中（一致性 91%）
-- 高度 中位数 25，观测区间 25 - 25，25 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

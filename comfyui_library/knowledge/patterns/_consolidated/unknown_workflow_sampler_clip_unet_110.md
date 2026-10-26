@@ -2,67 +2,67 @@
 name: unknown_workflow_sampler_clip_unet_110
 type: Unknown Workflow
 frequency: 10
-level: strong
-coverage: 0.9566
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.9466
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json, 图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json, 图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json, 图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json, 图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2045418640316567553.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2059103096625782786.json, 图片生成/文生图/ERNIE文生图_2048690063034294273.json, 图片生成/文生图/Erine Turbo文生图_2044755147204599809.json, 图片生成/文生图/F01.文生图标准流_2061325864108908545.json]
+members: [图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json, 图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json, 图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json, 图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json, 图片生成/图生图/Flux2 dev 多图编辑工作流 - 一致性_1994746929441542145.json, 图片生成/图生图/Flux2 dev 多图编辑能力_1994452506996510722.json, 图片生成/图生图/Flux2.DEV-三角色一场景图编辑_2018937350511923202.json, 图片生成/图生图/Flux2.DEV-多图编辑【一天王者】_1994920372749393922.json, 图片生成/图生图/Flux2DEV单图编辑_1994049571294822402.json, 图片生成/图生图/👾怪獸-FLUX.2多图编辑👾_1993639173827608577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_110
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json、图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json、图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json、图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json、图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json、图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json、图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json、图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json、图片生成/图生图/Flux2 dev 多图编辑工作流 - 一致性_1994746929441542145.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `UnetLoaderGGUF` —— 2/10 个有
-- `CR Text` —— 1/10 个有
-- `EasySizeSimpleSetting` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `RAMCleanup` —— 1/10 个有
+- `Flux2Scheduler` —— 6/10 个有
+- `FluxGuidance` —— 6/10 个有
+- `ImageScaleToTotalPixels` —— 6/10 个有
+- `ImageConcanate` —— 5/10 个有
+- `ManualSigmas` —— 4/10 个有
+- `PDIMAGE_LongerSize` —— 4/10 个有
+- `easy promptList` —— 3/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `Flux3PELoader` —— 2/10 个有
+- `Flux3PromptEnhance` —— 2/10 个有
+- `GetLatentSize` —— 2/10 个有
+- `Int` —— 2/10 个有
+- `PreviewAny` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `RH_LLMAPI_NODE` —— 2/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 10 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，10 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

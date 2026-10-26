@@ -1,45 +1,33 @@
 ---
 name: unknown_workflow_video_lora_sampler_217
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.749889
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveFloat, PrimitiveInt, SimpleMath+, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.892
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云_1998778583533412354.json, 视频生成/图生视频/MultiTalk+Aniwan单人KJ高质量加速稳定版V4（脸部一致性版）_1948782335715094529.json, 视频生成/图生视频/MultiTalk+UNI3C运镜_1986856996743876610.json, 视频生成/图生视频/MultiTalk+Wan2.2（高低噪）加速版数字人V1（人物不动版UNI3C运镜）_1955533790640836610.json, 视频生成/图生视频/MultiTalk_图生视频_1936815365949149186.json, 视频生成/图生视频/MultiTalk单人+Wan2.2(低)+Sigma调度KJ加速V4（全身动态版UNI3C运镜）_1955521619805421569.json]
+members: [视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！_1996567889761148929.json, 视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！_1997217286731796481.json, 视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！（企鹅的越狱实录）_1996051204809637889.json, 视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935019141126660097.json, 视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935258795541200897.json, 视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935559387752615938.json, 视频生成/图生视频/Aiwood-magref三图参考_1935019116438691841.json, 视频生成/图生视频/Aiwood-magref三图参考_1935263109068292098.json, 视频生成/图生视频/Aiwood-magref三图参考_1935557538790440962.json, 视频生成/图生视频/BindWeave-图生视频-高人物一致性-单角色（推荐）_1988930227843764225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_217
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json、视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json、视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json、视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云_1998778583533412354.json、视频生成/图生视频/MultiTalk+Aniwan单人KJ高质量加速稳定版V4（脸部一致性版）_1948782335715094529.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！_1996567889761148929.json、视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！_1997217286731796481.json、视频生成/图生视频/AI 3D破屏特效~当企鹅🐧打破次元壁来到现实！（企鹅的越狱实录）_1996051204809637889.json、视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935019141126660097.json、视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935258795541200897.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `JWInteger`
-- `JWIntegerToString`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `SimpleMath+`
-- `TextInput_`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -50,32 +38,26 @@ source: knowledge_consolidation
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 8/9 个有
-- `ImageResizeKJ` —— 6/9 个有
-- `VHS_LoadVideo` —— 6/9 个有
-- `WanVideoEncode` —— 6/9 个有
-- `WanVideoUni3C_ControlnetLoader` —— 6/9 个有
-- `WanVideoUni3C_embeds` —— 6/9 个有
-- `AddLabel` —— 2/9 个有
-- `CreateCFGScheduleFloatList` —— 2/9 个有
-- `EmptyImage` —— 2/9 个有
-- `GetImageSizeAndCount` —— 2/9 个有
-- `ImageConcatMulti` —— 2/9 个有
-- `WanVideoSLG` —— 2/9 个有
-- `WanVideoSetBlockSwap` —— 2/9 个有
-- `WanVideoSetLoRAs` —— 2/9 个有
-- `ColorMatch` —— 1/9 个有
-- `FloatToSigmas` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `StringToFloatList` —— 1/9 个有
-- `WanVideoEnhanceAVideo` —— 1/9 个有
-- `WanVideoExperimentalArgs` —— 1/9 个有
+- `ImageConcanate` —— 7/10 个有
+- `easy imageRemBg` —— 7/10 个有
+- `ImagePadKJ` —— 6/10 个有
+- `Int` —— 4/10 个有
+- `WanVideoSetBlockSwap` —— 4/10 个有
+- `WanVideoTorchCompileSettings` —— 4/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/10 个有
+- `GIMMVFI_interpolate` —— 3/10 个有
+- `GetImageSize+` —— 3/10 个有
+- `RH_Jimeng4_Image2Image` —— 3/10 个有
+- `Textbox` —— 3/10 个有
+- `CR Text` —— 1/10 个有
+- `InvertMask` —— 1/10 个有
+- `MaskPreview+` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `Seed Generator` —— 1/10 个有
+- `WanVideoAddBindweaveEmbeds` —— 1/10 个有
+- `WanVideoEncodeLatentBatch` —— 1/10 个有
 
 ## 典型参数
 

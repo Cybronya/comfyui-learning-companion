@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1301
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7225
-common_nodes: [LoadImage, MaskColorize, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.737
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, ShellAgentPluginOutputText, easy saveText, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json, 图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json]
+members: [图片生成/反推提示词/Qwen3.5 反推提示词+LTX2.3电影创作-文字部分--剧本、分镜、图片和视频提示词_2061350677313572865.json, 图片生成/文生图/电影剧本提示词 Qwen3.5反推提示词+LTX2.3电影创作剧本_2064208597747326977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1301
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json、图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen3.5 反推提示词+LTX2.3电影创作-文字部分--剧本、分镜、图片和视频提示词_2061350677313572865.json、图片生成/文生图/电影剧本提示词 Qwen3.5反推提示词+LTX2.3电影创作剧本_2064208597747326977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `MaskColorize`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Mute / Bypass Relay (rgthree)` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `ShellAgentPluginOutputText`
+- `easy saveText`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 ## 典型参数
 

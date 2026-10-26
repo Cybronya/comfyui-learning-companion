@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_198
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7417
-common_nodes: [SaveImage]
+coverage: 0.850545
+common_nodes: [HeartMuLa_Generate, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json, 图片生成/文生图/02_城市微缩切片_2056334605820719105.json, 图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json, 图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json, 图片生成/文生图/05_雾感极简石版画_2056336981935869953.json, 图片生成/文生图/【阡陌】全能图片G-2-文生图-官方稳定版Image 2_2049053252511076353.json, 图片生成/文生图/全能图像G image2.0文生图_官方稳定版_2049383994692734977.json, 图片生成/文生图/全能图像G image2.0文生图官方稳定版_2049313423787302914.json, 图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json, 图片生成/文生图/柏拉图全能图片G-image2_多图参考_图生图_2053818189842264066.json]
+members: [音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json, 音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2015044112218595329.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015241695201333249.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015242726865903618.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2056310053703086082.json, 音频生成/音频生成/（RL强化版）HeartMuLa音乐歌曲生成3B版V1_2014941704297648129.json, 音频生成/音频生成/🦖HeartMuLa音乐歌曲文生歌_2013889867830267905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_198
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json、图片生成/文生图/02_城市微缩切片_2056334605820719105.json、图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json、图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json、图片生成/文生图/05_雾感极简石版画_2056336981935869953.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json、音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json、音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `SaveImage`
+全部 11 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 9/10 个有
-- `LoadImage` —— 8/10 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 8/10 个有
-- `🙅GPT_image_2_综合@炮老师的小课堂` —— 2/10 个有
-- `PreviewImage` —— 1/10 个有
+- `CR Prompt Text` —— 9/11 个有
+- `LoadImage` —— 2/11 个有
+- `Text` —— 2/11 个有
 
 ## 典型参数
 

@@ -3,55 +3,67 @@ name: unknown_workflow_video_lora_sampler_652
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.949667
-common_nodes: [CR Text Replace, CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, EmptyImage, LoadWanVideoT5TextEncoder, RH_Prompter, SimpleMath+, TextBox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageSize, easy seed, easy showAnything]
+coverage: 0.881333
+common_nodes: [AudioSeparation, DWPreprocessor, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, ImagePadKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json, 视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json, 视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json]
+members: [数字人/数字人/Multitalk数字人+复刻视频动作及声音_1949328620750811138.json, 视频生成/图生视频/Aiwood-VACE复刻RunwayAct2_1949185140044570626.json, 视频生成/图生视频/VACE+Multitalk数字人加速版_1949385467585822721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_652
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json、视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json、视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Multitalk数字人+复刻视频动作及声音_1949328620750811138.json、视频生成/图生视频/Aiwood-VACE复刻RunwayAct2_1949185140044570626.json、视频生成/图生视频/VACE+Multitalk数字人加速版_1949385467585822721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text Replace`
-- `CogVideoEnhanceAVideo`
-- `CreateCFGScheduleFloatList`
-- `DF_Integer`
-- `EmptyImage`
+- `AudioSeparation`
+- `DWPreprocessor`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `ImagePadKJ`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RH_Prompter`
-- `SimpleMath+`
-- `TextBox`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy imageSize`
-- `easy seed`
-- `easy showAnything`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 1/3 个有
-- `StringToFloatList` —— 1/3 个有
+- `AddLabel` —— 2/3 个有
+- `EmptyImage` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `MaskPreview` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `WanVideoEasyCache` —— 1/3 个有
+- `WanVideoEnhanceAVideo` —— 1/3 个有
+- `WanVideoFreeInitArgs` —— 1/3 个有
 
 ## 典型参数
 

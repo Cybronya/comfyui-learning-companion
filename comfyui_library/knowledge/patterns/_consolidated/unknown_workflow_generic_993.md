@@ -3,30 +3,41 @@ name: unknown_workflow_generic_993
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.75
-common_nodes: [EmptyImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage]
+coverage: 0.871667
+common_nodes: [CR Text, EG_ZZ_TMTX, GrowMaskWithBlur, Int, LoadImage, RMBG, SaveImage, SimpleMath+]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098959046538780674.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2099070632343465986.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2100025785670266882.json]
+members: [图片生成/图生图/一键抠图_1991274179580506113.json, 图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json, 图片生成/图生图/自动抠图透明背景_1992102190592618497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_993
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098959046538780674.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2099070632343465986.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2100025785670266882.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键抠图_1991274179580506113.json、图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json、图片生成/图生图/自动抠图透明背景_1992102190592618497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EmptyImage`
-- `PreviewImage`
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
+- `CR Text`
+- `EG_ZZ_TMTX`
+- `GrowMaskWithBlur`
+- `Int`
+- `LoadImage`
+- `RMBG`
 - `SaveImage`
+- `SimpleMath+`
+
+**可变部分**（部分 workflow 才有）：
+- `Sa2VANodeTpl` —— 2/3 个有
+- `easy imageCropFromMask` —— 2/3 个有
+- `FastCanvas` —— 1/3 个有
+- `FastCanvasTool` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
 
 ## 典型参数
 

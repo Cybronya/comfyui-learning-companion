@@ -3,60 +3,64 @@ name: text_to_image_lora_sampler_clip_384
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.9052
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.808
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Muter (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, ShowText|pysssss, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, XB_BatchImages, easy boolean, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3 OpenVDN DMD8深度引导生视频｜动作运镜结构全迁移_2103660126132596738.json, 视频生成/文生视频/MiniMax H3 OpenVDN DMD8深度视频引导生成，动作运镜结构迁移方案_2103894634056478721.json, 视频生成/文生视频/MiniMax H3 PDD 8步参考生视频 文生视频多模态处理_2098697368001671170.json, 视频生成/文生视频/MiniMax H3动作自然度增强 本地DiT推理运动流畅不僵硬_2098644023186649089.json, 视频生成/视频生视频/MiniMax H3视频编辑视频翻拍二创与指定角色替换_视频生视频工具_2105712272248233985.json]
+members: [图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json, 图片生成/图生图/Qwen_Image_2.1文生图与图片编辑合一，电商产品图生图多场景适用_2105519436647190529.json, 图片生成/图生图/Qwen_Image_2.1文生图与图片编辑多合一，产品精修场景融合风格迁移全覆盖_2104735854735482881.json, 图片生成/文生图/Qwen Image 2.1文生图与图片编辑合一，电商产品图生图多场景适用_2102855288981377025.json, 图片生成/文生图/Qwen Image 2.1文生图与图片编辑多合一，产品精修场景融合风格迁移全覆盖_2102900918982369281.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_384
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 OpenVDN DMD8深度引导生视频｜动作运镜结构全迁移_2103660126132596738.json、视频生成/文生视频/MiniMax H3 OpenVDN DMD8深度视频引导生成，动作运镜结构迁移方案_2103894634056478721.json、视频生成/文生视频/MiniMax H3 PDD 8步参考生视频 文生视频多模态处理_2098697368001671170.json、视频生成/文生视频/MiniMax H3动作自然度增强 本地DiT推理运动流畅不僵硬_2098644023186649089.json、视频生成/视频生视频/MiniMax H3视频编辑视频翻拍二创与指定角色替换_视频生视频工具_2105712272248233985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json、图片生成/图生图/Qwen_Image_2.1文生图与图片编辑合一，电商产品图生图多场景适用_2105519436647190529.json、图片生成/图生图/Qwen_Image_2.1文生图与图片编辑多合一，产品精修场景融合风格迁移全覆盖_2104735854735482881.json、图片生成/文生图/Qwen Image 2.1文生图与图片编辑合一，电商产品图生图多场景适用_2102855288981377025.json、图片生成/文生图/Qwen Image 2.1文生图与图片编辑多合一，产品精修场景融合风格迁移全覆盖_2102900918982369281.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `EmptyLatentImage`
+- `Fast Groups Muter (rgthree)`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
+- `ResolutionSelector`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `XB_BatchImages`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `CreateVideo` —— 3/5 个有
-- `GetVideoComponents` —— 3/5 个有
-- `LoadVideo` —— 3/5 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 3/5 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 3/5 个有
-- `SaveVideo` —— 3/5 个有
-- `Video Slice` —— 3/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `LoraLoaderBypassModelOnly` —— 1/5 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/5 个有
-- `MiniMaxH3HybridModelLoaderT8Advanced` —— 1/5 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/5 个有
-- `MiniMaxH3PDD8StepSetupT8Advanced` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `ComfySwitchNode` —— 3/5 个有
+- `ImpactConditionalBranch` —— 3/5 个有
+- `孤海注释` —— 3/5 个有
+- `ComfySwitchNodeV2` —— 2/5 个有
+- `EmptyImage` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `Any To String (mtb)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `SaveImageAdvanced` —— 1/5 个有
+- `SetNode` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_499
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.861
-common_nodes: [ArgosTranslateTextNode, Bjornulf_ShowStringText, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.966167
+common_nodes: [IndexTTS2Run, LoadAudio, MultiLinePromptIndex, PreviewAudio, SaveAudioMP3, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json, 图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json, 图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json, 图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json, 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json]
+members: [数字人/数字人/index TTS2-1114_1990254945960120322.json, 数字人/数字人/index TTS2情绪控制_1977023883834466305.json, 数字人/数字人/index TTS2语音克隆，情绪语音克隆，多控制情绪克隆，双人对话情绪克隆，小说阅读，推文阅读。_1969042109099634690.json, 音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json, 音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json, 音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_499
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json、图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json、图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json、图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json、图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/index TTS2-1114_1990254945960120322.json、数字人/数字人/index TTS2情绪控制_1977023883834466305.json、数字人/数字人/index TTS2语音克隆，情绪语音克隆，多控制情绪克隆，双人对话情绪克隆，小说阅读，推文阅读。_1969042109099634690.json、音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json、音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ArgosTranslateTextNode`
-- `Bjornulf_ShowStringText`
-- `LoadImage`
-- `RH_ComfyFluxKontext`
+全部 6 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `MultiLinePromptIndex`
+- `PreviewAudio`
+- `SaveAudioMP3`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Stitch` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `Text` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `JjkText` —— 3/6 个有
+- `SaveAudio` —— 3/6 个有
 
 ## 典型参数
 

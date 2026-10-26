@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1554
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.833
-common_nodes: [LoadAudio, LoadImage, PrimitiveStringMultiline, SaveVideo, easy cleanGpuUsed]
+coverage: 0.727
+common_nodes: [GetImageSizeAndCount, Image Comparer (rgthree), ImageConcanate, ImageScaleBy, LoadImage, PreviewImage, PrimitiveFloat, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json, 视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json]
+members: [图片生成/图生图/生图-图放大-SeedVR_1983006976567312386.json, 图片生成/图生图/生图-图放大-SeedVR_2066055902777896960.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1554
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json、视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图放大-SeedVR_1983006976567312386.json、图片生成/图生图/生图-图放大-SeedVR_2066055902777896960.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `GetImageSizeAndCount`
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `ImageScaleBy`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `PreviewImage`
+- `PrimitiveFloat`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 ## 典型参数
 

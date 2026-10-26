@@ -1,54 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_336
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.968833
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.443143
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json, 视频生成/图生视频/WAN2.1 自定义场景运镜（大师版_1920649191725400066.json, 视频生成/图生视频/【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json, 视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json, 视频生成/图生视频/图生视频_1924271202037059586.json, 视频生成/图生视频/让照片说话【万相图生视频】_1914130917185548290.json]
+members: [数字人/数字人/LongCatAvatar_无限时长工作流_2006174789139959810.json, 数字人/数字人/LongCatAvatar丝滑全自动无限时长数字人_2021765346931249153.json, 数字人/数字人/LongCat数字人一键生成_2009171897438703617.json, 视频生成/图生视频/LongCat-Video-Avatar数字人_2005920919849758721.json, 视频生成/图生视频/LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json, 视频生成/图生视频/LongCatAvatar_audio_image_to_video_example_Kijai_2004028313129656322.json, 视频生成/图生视频/LongCatAvatar美团龙猫图片生成唱歌等数字人视频数字人图生视频_2003503610359103489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_336
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json、视频生成/图生视频/WAN2.1 自定义场景运镜（大师版_1920649191725400066.json、视频生成/图生视频/【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json、视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json、视频生成/图生视频/图生视频_1924271202037059586.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/LongCatAvatar_无限时长工作流_2006174789139959810.json、数字人/数字人/LongCatAvatar丝滑全自动无限时长数字人_2021765346931249153.json、数字人/数字人/LongCat数字人一键生成_2009171897438703617.json、视频生成/图生视频/LongCat-Video-Avatar数字人_2005920919849758721.json、视频生成/图生视频/LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `ReplaceVideoLatentFrames`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageClipEncode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `Int` —— 4/6 个有
-- `LayerUtility: PurgeVRAM` —— 3/6 个有
-- `WanVideoTeaCache` —— 3/6 个有
-- `Fast Bypasser (rgthree)` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 2/6 个有
-- `Seed Everywhere` —— 2/6 个有
-- `StringConstantMultiline` —— 2/6 个有
-- `LayerUtility: TextBox` —— 1/6 个有
-- `ReActorFaceSwapOpt` —— 1/6 个有
-- `TextBox` —— 1/6 个有
-- `Textbox` —— 1/6 个有
+- `TrimAudioDuration` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 4/7 个有
+- `Wav2VecModelLoader` —— 4/7 个有
+- `easy forLoopEnd` —— 4/7 个有
+- `easy forLoopStart` —— 4/7 个有
+- `Int` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `Audio Duration (mtb)` —— 1/7 个有
+- `CR SDXL Aspect Ratio` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `DF_Ceil` —— 1/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `Float` —— 1/7 个有
+- `FloorNode` —— 1/7 个有
+- `GetAudioDurationFromAudio` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `MemoryCleaner` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `TextInput_` —— 1/7 个有
+- `easy compare` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
+- `easy isNone` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

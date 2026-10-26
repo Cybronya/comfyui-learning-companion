@@ -3,57 +3,76 @@ name: unknown_workflow_sampler_clip_unet_308
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.867
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.88725
+common_nodes: [BiRefNetRMBG, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, GetNode, KSamplerSelect, LoadImage, RHLLMChatNode, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/SRPO VS KREA_1967227108663627778.json, 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json, 图片生成/文生图/SRPO-更细腻真实的图片生成模型-文生图工作流_1971799414320852993.json, 图片生成/文生图/文生图-SRPO直出+美学+超真实质感+加速-AIMJ_1968322626772979714.json]
+members: [图片生成/图生图/爆分游戏组件-卷轴_2084885638360428545.json, 图片生成/图生图/爆分游戏组件-数字_2085273251034517506.json, 图片生成/图生图/爆分游戏组件-横幅_2084518617588256769.json, 图片生成/图生图/爆分游戏组件-道具图标_2085295867472465922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_308
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/SRPO VS KREA_1967227108663627778.json、图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json、图片生成/文生图/SRPO-更细腻真实的图片生成模型-文生图工作流_1971799414320852993.json、图片生成/文生图/文生图-SRPO直出+美学+超真实质感+加速-AIMJ_1968322626772979714.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/爆分游戏组件-卷轴_2084885638360428545.json、图片生成/图生图/爆分游戏组件-数字_2085273251034517506.json、图片生成/图生图/爆分游戏组件-横幅_2084518617588256769.json、图片生成/图生图/爆分游戏组件-道具图标_2085295867472465922.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `BiRefNetRMBG`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
+- `LoadImage`
+- `RHLLMChatNode`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SeedVR2` —— 2/4 个有
-- `Bjornulf_FreeVRAM` —— 1/4 个有
-- `Joy_caption` —— 1/4 个有
-- `Joy_caption_load` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `TeaCache` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `PreviewTextNode` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `EmptyLatentImage` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `PreviewBridge` —— 2/4 个有
+- `Text Load Line From File` —— 2/4 个有
+- `ImageCompositeMasked` —— 1/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: ColorImage` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `YUAN_TXTParagraphSplitter` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 480 | - | 2 | 75% |
+| 高度 | 320 | - | 2 | 88% |
 
 ## 常见问题
 
@@ -61,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 480，样本不足，未给区间，2 个样本
+- 高度 中位数 320，样本不足，未给区间，2 个样本，取值集中（一致性 88%）

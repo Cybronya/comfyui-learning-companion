@@ -3,45 +3,42 @@ name: unknown_workflow_generic_1004
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.447333
-common_nodes: [CR Text, JjkText, PrimitiveInt, PrimitiveStringMultiline, RH_RhartImageG2TextToImage, RegexExtract, SaveImage, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, easy batchAnything, easy forLoopEnd, easy forLoopStart, sch_split_text]
+coverage: 0.874
+common_nodes: [HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, PromptBatchQueue, RHHiddenNodes, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/短剧拍档支持场景和角色V10.0(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2089746964190683137.json, 图片生成/文生图/短剧拍档支持场景和角色V11.1(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2094033413828337665.json, 图片生成/文生图/短剧拍档支持场景和角色V11.1一键生成全部资产（人物+道具+场景）+全节点注释_2097634936416202754.json]
+members: [图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json, 图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json, 图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1004
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/短剧拍档支持场景和角色V10.0(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2089746964190683137.json、图片生成/文生图/短剧拍档支持场景和角色V11.1(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2094033413828337665.json、图片生成/文生图/短剧拍档支持场景和角色V11.1一键生成全部资产（人物+道具+场景）+全节点注释_2097634936416202754.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json、图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json、图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RH_RhartImageG2TextToImage`
-- `RegexExtract`
+- `HAIGC_CombineUnits`
+- `HAIGC_Layer`
+- `HAIGC_SavePSD`
+- `LoadImage`
+- `PromptBatchQueue`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `sch_split_text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `YuanMultiImage` —— 2/3 个有
-- `孤海注释` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `CR Text Replace` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,52 +3,67 @@ name: unknown_workflow_sampler_clip_unet_444
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.92
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeHiDream, CR Hires Fix Process Switch, CR Text, CR Text Concatenate, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LayerUtility: PurgeVRAM, PortraitMaster, PortraitMasterStylePose, QuadrupleCLIPLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, easy clearCacheAll]
+coverage: 0.7815
+common_nodes: [Bjornulf_ShowInt, CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, KSampler, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/HiDream-I1-dev-bf16 文生图 肖像大师提示词节点_2056177783197446145.json, 图片生成/文生图/HiDream-I1文生图_1923756504455761922.json]
+members: [图片生成/图生图/批量洗图_1924828147878195202.json, 图片生成/图生图/洗图批量版本_1950345711335424001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_444
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/HiDream-I1-dev-bf16 文生图 肖像大师提示词节点_2056177783197446145.json、图片生成/文生图/HiDream-I1文生图_1923756504455761922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量洗图_1924828147878195202.json、图片生成/图生图/洗图批量版本_1950345711335424001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeHiDream`
-- `CR Hires Fix Process Switch`
-- `CR Text`
-- `CR Text Concatenate`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
-- `PortraitMaster`
-- `PortraitMasterStylePose`
-- `QuadrupleCLIPLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `Bjornulf_ShowInt`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `KSampler`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `ReduxAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextInput_`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy clearCacheAll`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPTextEncodeFlux` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `ImageScaleDownToSize` —— 1/2 个有
+- `LayerMask: LoadFlorence2Model` —— 1/2 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `StringFunction|pysssss` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 23 | - | 2 | 70% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -56,4 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 23，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,90 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_74
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: moderate
-coverage: 0.546833
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.770211
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json, 视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json, 视频生成/图生视频/Wan Animate2.2主体混合mix加速版V1_1969219198985662465.json, 视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json, 视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json, 视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json, 视频生成/图生视频/Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_1969116607094157313.json, 视频生成/图生视频/Wan Animate2.2动作迁移_2073212149740163073.json, 视频生成/图生视频/Wan2.2-Animate 视频换脸+动作迁移_1981706242731196418.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_1970283537297514497.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_2059310361421115394.json, 视频生成/图生视频/WanAnimate 场景九 多人视频精准替换_2044021235868241922.json, 视频生成/图生视频/WanAnimate 场景六 单独面部表情迁移_1970399426625892354.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加速版V1（无限时长）_1969355024180649986.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX骚操作去油提高一致性加速版V1（无限时长）_1969358943149563905.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_1969373357202436097.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本动物姿态Mix主体混合特别版V1_1974432637244805122.json]
+members: [视频生成/图生视频/IndexTTS2图生视频对口型_1958425733460815874.json, 视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2080536331532455937.json, 视频生成/图生视频/InfiniTetalk 对口型  超自然数字人情感口播 数字人_2082828282084548609.json, 视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091473947605946369.json, 视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091507985901244418.json, 视频生成/图生视频/InfiniTetalk 超自然数字人对口型 对口型 情感口播 数字人_2076605840307609602.json, 视频生成/图生视频/InfiniTetalk+美化lora数字人workflow_2101551649981554690.json, 视频生成/图生视频/InfiniTetalk+音频+图片数字人+配音必备神器_2046158426501287938.json, 视频生成/图生视频/InfiniTetalk数字人 对口型 情感口播  超自然数字人对口型_2079894310165766146.json, 视频生成/图生视频/InfiniTetalk数字人 对口型 情感口播  超自然数字人对口型_2080989129587908609.json, 视频生成/图生视频/InfiniTetalk数字人对口型 唱歌MV  超自然数字人对口型_2066129601021169666.json, 视频生成/图生视频/InfiniTetalk数字人对口型 唱歌MV  超自然数字人对口型_2082091396546252802.json, 视频生成/图生视频/InfiniTetalk数字人对口型音频驱动版本_2058786712498823169.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型_2043703040162668545.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型单人图像驱动_2013593490084597762.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型单人图像驱动_2039942750560325634.json, 视频生成/图生视频/InfiniTetalk超自然数字单人对口型_2015642487410401281.json, 视频生成/图生视频/InfiniteTalk 数字人对口型双人视频_2058430451295019009.json, 音频生成/音频生成/InfiniteTalk超自然视频对口型-单人_2015602473221758978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_74
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json、视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json、视频生成/图生视频/Wan Animate2.2主体混合mix加速版V1_1969219198985662465.json、视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json、视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/IndexTTS2图生视频对口型_1958425733460815874.json、视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2080536331532455937.json、视频生成/图生视频/InfiniTetalk 对口型  超自然数字人情感口播 数字人_2082828282084548609.json、视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091473947605946369.json、视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091507985901244418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `BlockifyMask`
+全部 19 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `Sam2Segmentation`
-- `SetNode`
-- `VHS_LoadVideo`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 17/18 个有
-- `FaceMaskFromPoseKeypoints` —— 17/18 个有
-- `ImageCropByMaskAndResize` —— 17/18 个有
-- `PixelPerfectResolution` —— 17/18 个有
-- `PointsEditor` —— 17/18 个有
-- `WanVideoContextOptions` —— 15/18 个有
-- `JWInteger` —— 13/18 个有
-- `CR Prompt Text` —— 12/18 个有
-- `WanVideoEncode` —— 10/18 个有
-- `WanVideoUni3C_ControlnetLoader` —— 10/18 个有
-- `WanVideoUni3C_embeds` —— 10/18 个有
-- `INTConstant` —— 5/18 个有
-- `EmptyImage` —— 3/18 个有
-- `LayerUtility: PurgeVRAM` —— 3/18 个有
-- `RH_Captioner` —— 2/18 个有
-- `ShowText` —— 2/18 个有
-- `easy promptConcat` —— 2/18 个有
-- `AnimalPosePreprocessor` —— 1/18 个有
-- `AudioCrop` —— 1/18 个有
-- `AudioSeparation` —— 1/18 个有
-- `DownloadAndLoadWav2VecModel` —— 1/18 个有
-- `ImageConcanate` —— 1/18 个有
-- `ImageListToImageBatch` —— 1/18 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 1/18 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 1/18 个有
-- `MultiTalkModelLoader` —— 1/18 个有
-- `MultiTalkWav2VecEmbeds` —— 1/18 个有
-- `PDIMAGE_LongerSize` —— 1/18 个有
-- `PreviewAny` —— 1/18 个有
-- `SDVN Image Repeat` —— 1/18 个有
-- `WanVideoCombineEmbeds` —— 1/18 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/18 个有
-- `easy cleanGpuUsed` —— 1/18 个有
-- `easy showAnything` —— 1/18 个有
+- `Audio Duration (mtb)` —— 18/19 个有
+- `GetImageRangeFromBatch` —— 18/19 个有
+- `GetNode` —— 18/19 个有
+- `LoadImage` —— 18/19 个有
+- `MathExpression|pysssss` —— 18/19 个有
+- `SetNode` —— 18/19 个有
+- `PlaySound|pysssss` —— 17/19 个有
+- `easy showAnything` —— 10/19 个有
+- `PreviewAudio` —— 9/19 个有
+- `easy int` —— 9/19 个有
+- `Anything Everywhere` —— 8/19 个有
+- `WanVideoTorchCompileSettings` —— 7/19 个有
+- `ColorCorrectOfUtils` —— 4/19 个有
+- `ImageCASharpening+` —— 4/19 个有
+- `Getter` —— 2/19 个有
+- `Setter` —— 2/19 个有
+- `CR Text` —— 1/19 个有
+- `GetAudioDurationFromAudio` —— 1/19 个有
+- `IndexTTS2Run` —— 1/19 个有
+- `Label (rgthree)` —— 1/19 个有
+- `LayerMask: MaskPreview` —— 1/19 个有
+- `PrimitiveString` —— 1/19 个有
+- `SaveAudio` —— 1/19 个有
+- `SeparateMasks` —— 1/19 个有
+- `SimpleMath+` —— 1/19 个有
+- `VHS_LoadVideo` —— 1/19 个有
+- `WanVideoEncode` —— 1/19 个有
 
 ## 典型参数
 

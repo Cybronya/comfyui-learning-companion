@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_315
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.715
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.7685
+common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2100136578931843074.json, 图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2101484241837191169.json, 图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2102213958852767746.json, 图片生成/图生图/G2.5 图生图 图像编辑sunburst_2097894315577139202.json, 图片生成/图生图/image2.5 图生图_2099771097632825345.json, 图片生成/图生图/image2.5全能编辑_2098751203986464769.json, 图片生成/图生图/全能图像局部重绘fast-4k_2039464094973038593.json]
+members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_315
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2100136578931843074.json、图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2101484241837191169.json、图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2102213958852767746.json、图片生成/图生图/G2.5 图生图 图像编辑sunburst_2097894315577139202.json、图片生成/图生图/image2.5 图生图_2099771097632825345.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LayerUtility: PurgeVRAM`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `JjkText` —— 5/7 个有
-- `PreviewImage` —— 2/7 个有
-- `FillMaskWithColor` —— 1/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/7 个有
+- `JWInteger` —— 7/8 个有
+- `LoadImage` —— 2/8 个有
 
 ## 典型参数
 

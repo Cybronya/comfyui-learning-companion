@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_video_lora_sampler_76
 type: Unknown Workflow
-frequency: 18
-level: moderate
-coverage: 0.653611
-common_nodes: [CLIPVisionLoader, GetNode, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+frequency: 19
+level: strong
+coverage: 0.892789
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json, 视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json, 视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json, 视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json, 视频生成/图生视频/scail多人动作迁移_2015612655679053825.json, 视频生成/图生视频/scail多人动作迁移_2031033766637998081.json, 视频生成/图生视频/wanvideo_SCAIL_basic_pose_control_workflow_2000760906177015810.json, 视频生成/图生视频/wanvideo_SCAIL_pose and camera_control_workflow_2000851201182793729.json, 视频生成/图生视频/【动迁】Wan_SCAIL动作迁移+Light2v加速_2005453601126445058.json, 视频生成/图生视频/【多人】SCAIL Video Multi-Character Motion Transfer V1_2002334338010234881.json, 视频生成/图生视频/动作迁移支持手部细节（单人）SCAIL支持丝滑转身_2000804833005367297.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）2.0_2001144706195222530.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）_2001092437491712001.json, 视频生成/图生视频/动作迁移（双人）SCAIL支持丝滑转身支持双人对打_2000796264725872641.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）2.0_2001142236438032385.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）_2001090043416543233.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2023998769439711234.json, 视频生成/图生视频/影视剧替换人物第二步：视频驱动图片（可多人）_2013510010877251586.json]
+members: [视频生成/图生视频/cosplay度量の広いお姉さん_2064553319145754626.json, 视频生成/图生视频/scail 多人跳舞_2008441362764537857.json, 视频生成/图生视频/【AI小王子】85.Scail+一键跳舞！骨骼完美驱动！(视频和图片需要选择自己本地的）_2048661829873831938.json, 视频生成/图生视频/【最推荐，完美动作迁移】Scail 一键跳舞！骨骼完美驱动！_2009625455447515138.json, 视频生成/图生视频/【最推荐，完美动作迁移，动态增强】Scail 一键跳舞！骨骼完美驱动！_2009854933348130817.json, 视频生成/图生视频/人类动作迁移到动物_2071446981473562626.json, 视频生成/图生视频/卡通人物动作迁移_2070753501143191553.json, 视频生成/图生视频/搞笑动物跳舞视频_2071262215709220866.json, 视频生成/图生视频/最新SCAIL动作迁移美女跳舞，支持双人对战_2001125534966874113.json, 视频生成/图生视频/本地开源免费，emergency_2054436990401171457.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2055881333670457346.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2055906585632878593.json, 视频生成/图生视频/本地开源免费，倒车请注意_2054373065324277762.json, 视频生成/图生视频/本地开源免费，倒车请注意_2055687460432171009.json, 视频生成/图生视频/本地开源免费，好汉歌_2055881301147824129.json, 视频生成/图生视频/本地开源免费，道士小曲_2056247693923672065.json, 视频生成/图生视频/适配各种风格也适合双人动作迁移丝滑_2002389202262212609.json, 视频生成/图生视频/🕺丝滑动作迁移-SCAIL无限人数版🕺_2001377941516845057.json, 视频生成/图生视频/🕺丝滑动作迁移-SCAIL适配各种风格也适合双人🕺_2000762623283036162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_76
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json、视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json、视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json、视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json、视频生成/图生视频/scail多人动作迁移_2015612655679053825.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/cosplay度量の広いお姉さん_2064553319145754626.json、视频生成/图生视频/scail 多人跳舞_2008441362764537857.json、视频生成/图生视频/【AI小王子】85.Scail+一键跳舞！骨骼完美驱动！(视频和图片需要选择自己本地的）_2048661829873831938.json、视频生成/图生视频/【最推荐，完美动作迁移】Scail 一键跳舞！骨骼完美驱动！_2009625455447515138.json、视频生成/图生视频/【最推荐，完美动作迁移，动态增强】Scail 一键跳舞！骨骼完美驱动！_2009854933348130817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **样本数**：19
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetNode`
+- `DownloadAndLoadNLFModel`
 - `ImageResizeKJv2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `NLFPredict`
 - `OnnxDetectionModelLoader`
 - `PoseDetectionVitPoseToDWPose`
 - `RenderNLFPoses`
-- `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAddSCAILPoseEmbeds`
@@ -41,54 +42,56 @@ source: knowledge_consolidation
 - `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSamplerExtraArgs`
 - `WanVideoSamplerv2`
 - `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadNLFModel` —— 17/18 个有
-- `ImageConcatMulti` —— 17/18 个有
-- `GetImageSizeAndCount` —— 16/18 个有
-- `WanVideoLoraSelect` —— 16/18 个有
-- `INTConstant` —— 15/18 个有
-- `WanVideoEncode` —— 14/18 个有
-- `WanVideoUni3C_ControlnetLoader` —— 14/18 个有
-- `WanVideoUni3C_embeds` —— 14/18 个有
-- `LoadWanVideoT5TextEncoder` —— 12/18 个有
-- `SimpleMath+` —— 12/18 个有
-- `WanVideoTextEncode` —— 12/18 个有
-- `FloatConstant` —— 11/18 个有
-- `WanVideoTorchCompileSettings` —— 11/18 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/18 个有
-- `Int` —— 7/18 个有
-- `CR Text` —— 6/18 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 6/18 个有
-- `DWPreprocessor` —— 6/18 个有
-- `MathExpression|pysssss` —— 6/18 个有
-- `PreviewImage` —— 6/18 个有
-- `SimpleCalculatorKJ` —— 6/18 个有
-- `WanVideoTextEncodeCached` —— 6/18 个有
-- `Label (rgthree)` —— 3/18 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/18 个有
-- `GIMMVFI_interpolate` —— 2/18 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/18 个有
-- `Text Multiline` —— 2/18 个有
-- `WanVideoLoraSelectMulti` —— 2/18 个有
-- `CR Prompt Text` —— 1/18 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
-- `ImpactSwitch` —— 1/18 个有
-- `LoadNLFModel` —— 1/18 个有
-- `PrimitiveInt` —— 1/18 个有
-- `PrimitiveStringMultiline` —— 1/18 个有
-- `easy showAnything` —— 1/18 个有
+- `WanVideoTorchCompileSettings` —— 16/19 个有
+- `INTConstant` —— 15/19 个有
+- `PreviewImage` —— 15/19 个有
+- `LayerUtility: PurgeVRAM V2` —— 11/19 个有
+- `FlashVSR_SM_KSampler` —— 9/19 个有
+- `FlashVSR_SM_Model` —— 9/19 个有
+- `GetImageRangeFromBatch` —— 9/19 个有
+- `GetImageSize` —— 9/19 个有
+- `JWInteger` —— 9/19 个有
+- `easy indexAnything` —— 9/19 个有
+- `FloatConstant` —— 8/19 个有
+- `GetImageSizeAndCount` —— 8/19 个有
+- `ImageConcatMulti` —— 8/19 个有
+- `CR Text` —— 4/19 个有
+- `WanVideoEncode` —— 4/19 个有
+- `WanVideoUni3C_ControlnetLoader` —— 4/19 个有
+- `WanVideoUni3C_embeds` —— 4/19 个有
+- `easy int` —— 4/19 个有
+- `GetNode` —— 3/19 个有
+- `SetNode` —— 3/19 个有
+- `Fast Bypasser (rgthree)` —— 2/19 个有
+- `LoadAudio` —— 2/19 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/19 个有
+- `Note Plus (mtb)` —— 2/19 个有
+- `HypernetworkLoader` —— 1/19 个有
+- `VHS_VideoInfo` —— 1/19 个有
+- `WanAnimatePlus LoraSelect` —— 1/19 个有
+- `WanVideoLoraSelectMulti` —— 1/19 个有
+- `easy showAnything` —— 1/19 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.12116e+09 | 2.80175e+08 - 1.91868e+09 | 9 | 56% |
+| Prompt 约束强度(CFG) | randomize | - | 9 | 100% |
+| 采样算法 | 2 | 2 - 2 | 9 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 9 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 9 | 100% |
 
 ## 常见问题
 
@@ -96,4 +99,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.12116e+09，观测区间 2.80175e+08 - 1.91868e+09，9 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，9 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，9 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，9 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，9 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.91868e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

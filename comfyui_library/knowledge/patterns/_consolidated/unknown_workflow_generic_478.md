@@ -3,35 +3,29 @@ name: unknown_workflow_generic_478
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.909
-common_nodes: [LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG25OfficialTokenFlareEdit, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json, 音频生成/音频生成/「Supermate」VoxCPM2 粤语基础工作流_2041927640814194690.json]
+members: [图片生成/图生图/全能图片G-image-2.5图生图极速版API专用_2098370555853500417.json, 图片生成/图生图/全能图片G-image-2.5图生图极速版API专用_2100296191065022465.json, 图片生成/图生图/全能图片G2.5（图片编辑-稳定版）_2097986941978501122.json, 图片生成/文生图/G- image-2.5图生图 极速版_2097964559540772865.json, 图片生成/文生图/全能图片-G-2.5图生图 极速版_2098465077404983297.json, 图片生成/文生图/极速版 image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5_2097958707484250114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_478
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json、音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json、音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图片G-image-2.5图生图极速版API专用_2098370555853500417.json、图片生成/图生图/全能图片G-image-2.5图生图极速版API专用_2100296191065022465.json、图片生成/图生图/全能图片G2.5（图片编辑-稳定版）_2097986941978501122.json、图片生成/文生图/G- image-2.5图生图 极速版_2097964559540772865.json、图片生成/文生图/全能图片-G-2.5图生图 极速版_2098465077404983297.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `Text` —— 1/6 个有
+- `LoadImage`
+- `RH_RhartImageG25OfficialTokenFlareEdit`
+- `SaveImage`
 
 ## 典型参数
 

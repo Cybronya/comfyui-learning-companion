@@ -1,78 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_134
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.946917
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, SamplerCustom, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 14
+level: moderate
+coverage: 0.838929
+common_nodes: [BasicGuider, CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-MSR 多图参考生成视频_2069424373089529858.json, 视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.json, 视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2069760326291247105.json, 视频生成/图生视频/LTX2.3-MSR全能参考自定义音频（参考图反推）_2069220320195731457.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2067263836763279362.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2070142023239290882.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2070424027285512193.json, 视频生成/图生视频/LTX2.3-MSR多图像参考数字人(自定义音频)_2086423602479591426.json, 视频生成/图生视频/【优化版】LTX2.3-MSR全能参考升级-支持自定义音频_2072216632251998209.json, 视频生成/图生视频/多参生视频 LTX2.3  MSR_2055525493520257026.json, 视频生成/图生视频/多图参考生成视频LTX2.3-MSR_2070338966414512130.json, 视频生成/文生视频/LTX2.3-MSR 多图参考生成视频_2069948331698249729.json]
+members: [视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json, 视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json, 视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json, 视频生成/文生视频/Minimax文生视频（Lightx2v正式版8步lora+双时钟）_2087718430937014273.json, 视频生成/文生视频/minimaxH3文生视频（light2v8步lora+双时钟）_2087529767288524801.json, 视频生成/文生视频/minimax三图工作流_2090738092591378434.json, 视频生成/文生视频/minimax三图工作流_2091847130888630274.json, 视频生成/文生视频/minimax九图工作流_2091582636920758274.json, 视频生成/文生视频/minimax九图工作流_2092593622448427010.json, 视频生成/文生视频/minimax九图工作流_2102148767163183105.json, 视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json, 视频生成/文生视频/极速版 MinimaxH3 文生视频 图生视频  T8版_2085912109149417474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_134
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-MSR 多图参考生成视频_2069424373089529858.json、视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.json、视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2069760326291247105.json、视频生成/图生视频/LTX2.3-MSR全能参考自定义音频（参考图反推）_2069220320195731457.json、视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2067263836763279362.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json、视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json、视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Float`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `SamplerCustom`
-- `SimpleMath+`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 5/12 个有
-- `LTXVAudioVAEEncode` —— 5/12 个有
-- `LoadAudio` —— 5/12 个有
-- `LoadAudioUI` —— 5/12 个有
-- `PrimitiveBoolean` —— 5/12 个有
-- `SetLatentNoiseMask` —— 5/12 个有
-- `SolidMask` —— 5/12 个有
-- `MathExpression|pysssss` —— 3/12 个有
-- `PrimitiveInt` —— 3/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `Textbox` —— 1/12 个有
-- `llama_cpp_instruct_adv` —— 1/12 个有
-- `llama_cpp_model_loader` —— 1/12 个有
-- `llama_cpp_parameters` —— 1/12 个有
-- `忽略多组孤海` —— 1/12 个有
+- `ComfyMathExpression` —— 13/14 个有
+- `MiniMaxH3DualClockSamplerT8` —— 13/14 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 13/14 个有
+- `ResolutionSelector` —— 13/14 个有
+- `CR Prompt Text` —— 12/14 个有
+- `LoadImage` —— 12/14 个有
+- `ModelAttentionBackend` —— 4/14 个有
+- `VHS_LoadVideo` —— 3/14 个有
+- `GetNode` —— 2/14 个有
+- `SetNode` —— 2/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `LoadAudio` —— 1/14 个有
+- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/14 个有
+- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/14 个有
+- `MiniMaxH3SigmaShift` —— 1/14 个有
+- `ModelPreviewOverrideKJ` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 241 | 241 - 241 | 12 | 100% |
-| 高度 | 50 | 24 - 50 | 12 | 85% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,5 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 241，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 50，观测区间 24 - 50，12 个样本，取值集中（一致性 85%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

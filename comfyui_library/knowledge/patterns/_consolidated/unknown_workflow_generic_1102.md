@@ -3,39 +3,36 @@ name: unknown_workflow_generic_1102
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.793333
-common_nodes: [CR Text, LoadAudio, MegaTTS3Run, SaveAudioMP3, VHS_LoadVideo]
+coverage: 0.698333
+common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceDesign, RH_LLMAPI_Pro_Node, SaveAudio, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json, 音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json, 音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json]
+members: [数字人/数字人/Qwen3 TTS设计任何声音-音色旁白配音_2048967046792220674.json, 音频生成/音频生成/Qwen3 TTS设计任何声音-音色旁白配音-Smile版_2017085717763072002.json, 音频生成/音频生成/Qwen3 TTS音色设计 + 出配音音色、旁白 + 音色库搭建_2046825672173166594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1102
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json、音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json、音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Qwen3 TTS设计任何声音-音色旁白配音_2048967046792220674.json、音频生成/音频生成/Qwen3 TTS设计任何声音-音色旁白配音-Smile版_2017085717763072002.json、音频生成/音频生成/Qwen3 TTS音色设计 + 出配音音色、旁白 + 音色库搭建_2046825672173166594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `MegaTTS3Run`
-- `SaveAudioMP3`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `FB_Qwen3TTSVoiceDesign`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `InversionDemoLazySwitch` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `ShellAgentPluginOutputText` —— 1/3 个有
 
 ## 典型参数
 

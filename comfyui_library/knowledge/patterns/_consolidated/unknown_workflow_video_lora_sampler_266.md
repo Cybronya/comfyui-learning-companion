@@ -1,77 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_266
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.97475
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, JWFloat, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.899667
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/live动图-图生视频_wan2.2_2095005372602994689.json, 视频生成/图生视频/图生视频极速版 人物表情真实自然 Wan2.2+All-in-one_2039525725417508865.json, 视频生成/图生视频/图生视频极速版+人物表情真实自然+Wan2.2+All-in-one_2046422966447116289.json, 视频生成/图生视频/图生视频极速版_2045034745590980609.json, 视频生成/图生视频/极速版图生视频 Wan2.2+All-in-one  人物模特表情真实自然_2039532814231670785.json, 视频生成/文生视频/Wan2.2+All-in-one 极速版 图生视频_2069595721451528193.json, 视频生成/文生视频/Wan2.2+All-in-one 极速版 图生视频_2070390350711189506.json, 视频生成/文生视频/极速版 图生视频Wan2.2+All-in-one_2044241810842718210.json]
+members: [视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json, 视频生成/图生视频/已做生图动画_1954716501561491457.json, 视频生成/图生视频/扭起来_1997179060881133570.json, 视频生成/图生视频/抖音坐着自拍_1959215164312727553.json, 视频生成/图生视频/抖音扭一扭_1957833676750159874.json, 视频生成/图生视频/抖音摇摆_1957824248537776130.json, 视频生成/图生视频/抖音涨粉利器真实跳舞抖胸_1979579693227741185.json, 视频生成/图生视频/抖音走路_1958894026126733314.json, 视频生成/图生视频/自拍2_1972314410939248641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_266
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/live动图-图生视频_wan2.2_2095005372602994689.json、视频生成/图生视频/图生视频极速版 人物表情真实自然 Wan2.2+All-in-one_2039525725417508865.json、视频生成/图生视频/图生视频极速版+人物表情真实自然+Wan2.2+All-in-one_2046422966447116289.json、视频生成/图生视频/图生视频极速版_2045034745590980609.json、视频生成/图生视频/极速版图生视频 Wan2.2+All-in-one  人物模特表情真实自然_2039532814231670785.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json、视频生成/图生视频/已做生图动画_1954716501561491457.json、视频生成/图生视频/扭起来_1997179060881133570.json、视频生成/图生视频/抖音坐着自拍_1959215164312727553.json、视频生成/图生视频/抖音扭一扭_1957833676750159874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `JWFloat`
+全部 9 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
 - `JWInteger`
-- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `VAEDecode`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JoinStrings` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `Qwen3_VQA` —— 1/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `TextInput_` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `CR Prompt Text` —— 8/9 个有
+- `LayerUtility: PurgeVRAM` —— 8/9 个有
+- `CR Text Concatenate` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 6/9 个有
+- `GIMMVFI_interpolate` —— 6/9 个有
+- `RHHiddenNodes` —— 6/9 个有
+- `GetImageSizeAndCount` —— 5/9 个有
+- `ImageUpscaleWithModel` —— 4/9 个有
+- `UpscaleModelLoader` —— 4/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `GetNode` —— 1/9 个有
+- `RH_Captioner` —— 1/9 个有
+- `RIFE VFI` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `ShowText` —— 1/9 个有
+- `StringReplace` —— 1/9 个有
+- `WanVideoContextOptions` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | sa_solver | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

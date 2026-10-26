@@ -3,50 +3,60 @@ name: unknown_workflow_video_lora_sampler_820
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9145
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FL_KsamplerPlus, FL_PathAnimator, GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, TorchCompileModelWanVideo, UNETLoader, VAELoader, VHS_DuplicateImages, VHS_VideoCombine, WanTrackToVideo]
+coverage: 0.674
+common_nodes: [AppendStringsToList, CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, SplineEditor, VHS_VideoCombine, WanVideoATITracks, WanVideoATITracksVisualize, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json, 视频生成/图生视频/WanTrackToVideo_2039588649964150785.json]
+members: [视频生成/图生视频/03-05-05-WAN2.1-运镜控制-ATI多点轨迹引导图生视频_1989933219632082946.json, 视频生成/图生视频/ATI轨迹控制_1929724832999489537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_820
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json、视频生成/图生视频/WanTrackToVideo_2039588649964150785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/03-05-05-WAN2.1-运镜控制-ATI多点轨迹引导图生视频_1989933219632082946.json、视频生成/图生视频/ATI轨迹控制_1929724832999489537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `AppendStringsToList`
 - `CLIPVisionLoader`
-- `FL_KsamplerPlus`
-- `FL_PathAnimator`
-- `GetImageSizeAndCount`
-- `ImageResizeKJ`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `TorchCompileModelWanVideo`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_DuplicateImages`
+- `LoadWanVideoT5TextEncoder`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `WanTrackToVideo`
+- `WanVideoATITracks`
+- `WanVideoATITracksVisualize`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioEncoderEncode` —— 1/2 个有
-- `AudioEncoderLoader` —— 1/2 个有
-- `WanSoundImageToVideo` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

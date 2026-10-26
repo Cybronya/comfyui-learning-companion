@@ -2,60 +2,66 @@
 name: unknown_workflow_lora_sampler_clip_45
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.845444
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ColorMatch, Fast Groups Muter (rgthree), ImageScaleToTotalPixels, Int, KSamplerAdvanced, LatentSwitch, LoraLoaderModelOnly, PreviewImage, QwenImageLatentAspectRatio, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: moderate
+coverage: 0.939444
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/AI视频文生图_2042991324063866882.json, 图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json, 图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085256281174138881.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085257479918804993.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085259061586653186.json, 图片生成/文生图/超强文生图，极致细节：Zimage系列底图，Klein高清修复_2018129430551465986.json]
+members: [图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json, 图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json, 图片生成/图生图/Klein 真实细节_2051257646812020737.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096041251173912578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096156283039735810.json, 图片生成/图生图/flux2_klein_图生图-老照片修复_2057843818355052546.json, 图片生成/图生图/动漫到真人转换_2056398938592342018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_45
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/AI视频文生图_2042991324063866882.json、图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json、图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json、图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json、图片生成/图生图/Klein 真实细节_2051257646812020737.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Anything Everywhere3`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
-- `Fast Groups Muter (rgthree)`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `KSamplerAdvanced`
-- `LatentSwitch`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImageLatentAspectRatio`
+- `RandomNoise`
 - `ReferenceLatent`
-- `SaveImage`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 8/9 个有
+- `GetImageSize` —— 8/9 个有
+- `SaveImage` —— 8/9 个有
+- `ConditioningZeroOut` —— 7/9 个有
+- `Image Comparer (rgthree)` —— 6/9 个有
+- `ImageScaleToTotalPixels` —— 6/9 个有
+- `SphereLightNode` —— 5/9 个有
+- `DF_Integer` —— 4/9 个有
+- `ImageResize+` —— 4/9 个有
+- `RHHiddenNodes` —— 4/9 个有
+- `easy imageColorMatch` —— 4/9 个有
+- `ImageConcatMulti` —— 3/9 个有
+- `Label (rgthree)` —— 3/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `CompressImages` —— 1/9 个有
+- `ImageResizeKJv2` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 89% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 89%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,81 +2,83 @@
 name: unknown_workflow_lora_sampler_clip_100
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.6432
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ComfyUI-Krea2T-Enhancer, ConditioningZeroOut, EmptySD3LatentImage, ImageGrid, ImpactStringSelector, KSampler, PixaromaLoraLoader, PixaromaRunTimer, PixaromaSeed, PixaromaTextJoinTwo, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RBG_Smart_Seed_Variance, SaveImage, StrToCombo, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.8562
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Krea2节点抽卡_2095691750642900994.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json, 图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json]
+members: [图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json, 图片生成/图生图/Klein高清重绘放大_2032838566539169794.json, 图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json, 图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json, 图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Krea2节点抽卡_2095691750642900994.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json、图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json、图片生成/图生图/Klein高清重绘放大_2032838566539169794.json、图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json、图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json、图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：64%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
-- `ComfyUI-Krea2T-Enhancer`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `ColorMatch`
 - `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `ImageGrid`
-- `ImpactStringSelector`
-- `KSampler`
-- `PixaromaLoraLoader`
-- `PixaromaRunTimer`
-- `PixaromaSeed`
-- `PixaromaTextJoinTwo`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RBG_Smart_Seed_Variance`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StrToCombo`
+- `Seed (rgthree)`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `JjkShowText` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `TTResolutionSelector` —— 1/5 个有
+- `Florence2ModelLoader` —— 2/5 个有
+- `Florence2Run` —— 2/5 个有
+- `FluxKVCache` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 1/5 个有
+- `Crop (mtb)` —— 1/5 个有
+- `DetailTransfer` —— 1/5 个有
+- `GetImageSize+` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SeedVR2LoadDiTModel` —— 1/5 个有
+- `SeedVR2LoadVAEModel` —— 1/5 个有
+- `SeedVR2VideoUpscaler` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

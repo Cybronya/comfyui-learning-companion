@@ -3,33 +3,38 @@ name: unknown_workflow_video_32
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.688
+common_nodes: [AILab_MiniCPM_4_V_Advanced, GetVideoComponents, HunyuanVideoFoley, LoadVideo, Text Multiline, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack 图生视频，时间可无限延长_1913032867973398529.json, 视频生成/图生视频/framepack 首尾帧视频生成_1915028070607089666.json, 视频生成/图生视频/【加强版】FramePack图生视频+插帧_1913880300890587137.json, 视频生成/图生视频/图生视频_1919307272097300482.json]
+members: [图片生成/反推提示词/混元Foley+MiniCPM-V4.5视频自动配音_1961795982843383809.json, 图片生成/反推提示词/混元Foley+MiniCPM视频自动配音_1961976315123580929.json, 音频生成/音频生成/混元Foley视频配音_1973296901665763329.json, 音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_32
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/FramePack 图生视频，时间可无限延长_1913032867973398529.json、视频生成/图生视频/framepack 首尾帧视频生成_1915028070607089666.json、视频生成/图生视频/【加强版】FramePack图生视频+插帧_1913880300890587137.json、视频生成/图生视频/图生视频_1919307272097300482.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/混元Foley+MiniCPM-V4.5视频自动配音_1961795982843383809.json、图片生成/反推提示词/混元Foley+MiniCPM视频自动配音_1961976315123580929.json、音频生成/音频生成/混元Foley视频配音_1973296901665763329.json、音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub_FramePack`
+- `AILab_MiniCPM_4_V_Advanced`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `LoadVideo`
+- `Text Multiline`
 - `VHS_VideoCombine`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/4 个有
-- `Primitive string [Crystools]` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
 
 ## 典型参数
 

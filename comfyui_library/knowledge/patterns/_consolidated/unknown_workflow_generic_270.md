@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_270
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.706875
-common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
+coverage: 0.688
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Index TTS声音克隆_2073344736039100417.json, 图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json, 音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
+members: [视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json, 视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json, 视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json, 视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json, 视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json, 视频生成/文生视频/全能视频S-卖护肤品+衣服+兵马俑_1977261430313492482.json, 视频生成/文生视频/全能视频S-图生视频-蛤蟆精_1994200651171299330.json, 视频生成/文生视频/全能视频S-文生视频-与小时候的自己一起玩耍_1978032008305717250.json, 视频生成/文生视频/全能视频S-文生视频-老鼠人_1990657346928074753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_270
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Index TTS声音克隆_2073344736039100417.json、图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json、音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json、音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json、视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json、视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json、视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json、视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `IndexTTSNode`
-- `JjkText`
-- `LoadAudio`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `RH_Sora2_T2V` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
 
 ## 典型参数
 

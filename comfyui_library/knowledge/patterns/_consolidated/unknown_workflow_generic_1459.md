@@ -3,31 +3,36 @@ name: unknown_workflow_generic_1459
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [RH_AlibabaQwenImage30ProTextToImage, SaveImage]
+coverage: 0.4915
+common_nodes: [Image Comparer (rgthree), LoadImage, MuyeTextEditOutput, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/AI 文生图工作流｜Qwen 3.0 Pro 一句话生成高清大图_2098058763180789762.json, 图片生成/文生图/Qwen Image 3.0 PRO 文生图_2081290948826460161.json]
+members: [图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json, 图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1459
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI 文生图工作流｜Qwen 3.0 Pro 一句话生成高清大图_2098058763180789762.json、图片生成/文生图/Qwen Image 3.0 PRO 文生图_2081290948826460161.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json、图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_AlibabaQwenImage30ProTextToImage`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
+- `workflow>核心节点` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

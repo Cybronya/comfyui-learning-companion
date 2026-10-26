@@ -3,68 +3,67 @@ name: unknown_workflow_lora_sampler_clip_273
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8305
-common_nodes: [Anything Everywhere, Anything Everywhere3, BasicGuider, BasicScheduler, CLIPSetLastLayer, CLIPTextEncode, CR Text, CR Text Concatenate, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, Int, KSamplerSelect, Lora Loader, LoraLoaderModelOnly, ModelSamplingFlux, PreviewImage, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.937
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, Image Batch, LTX2SamplingPreviewOverride, LTXVAddGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoader, ManualSigmas, Power Lora Loader (rgthree), PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SamplerEulerAncestral, SaveVideo, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux_lora测试_1964375837015425025.json, 图片生成/文生图/Flux_佗寂风--室内设计-文生图_1964596165473878018.json]
+members: [图片生成/图生图/ltx2.3首尾帧人物高一致流_2045519229465661441.json, 视频生成/图生视频/新LTX2.3首尾帧视频教学版_2045873770665086977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_273
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux_lora测试_1964375837015425025.json、图片生成/文生图/Flux_佗寂风--室内设计-文生图_1964596165473878018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ltx2.3首尾帧人物高一致流_2045519229465661441.json、视频生成/图生视频/新LTX2.3首尾帧视频教学版_2045873770665086977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Anything Everywhere3`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPSetLastLayer`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `Int`
-- `KSamplerSelect`
-- `Lora Loader`
-- `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `PreviewImage`
-- `RH_Translator`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `Image Batch`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAddGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `LoraLoader`
+- `ManualSigmas`
+- `Power Lora Loader (rgthree)`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SamplerEulerAncestral`
+- `SaveVideo`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `CR Float To String` —— 1/2 个有
-- `Create Grid Image from Batch` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImpactFloat` —— 1/2 个有
-- `ImpactMakeImageBatch` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `VAELoaderKJ`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 2 | 100% |
+| 高度 | 25 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -72,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

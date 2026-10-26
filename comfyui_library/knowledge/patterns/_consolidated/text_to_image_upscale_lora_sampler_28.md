@@ -1,91 +1,88 @@
 ---
 name: text_to_image_upscale_lora_sampler_28
 type: Text To Image
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.869429
-common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CR Text, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PixaromaLoraLoader, PixaromaTextJoinTwo, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.945875
+common_nodes: [CLIPTextEncode, CR Latent Batch Size, CR Latent Input Switch, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, ImageUpscaleWithModel, ImpactInt, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json, 图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json, 图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json, 图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json, 图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json, 图片生成/图生图/flux2局部重绘加放大 图片局部修改分辨率提升_2105114830226153474.json, 图片生成/图生图/flux2局部重绘加放大｜图生图二合一｜改完直接出高清_2104822887134875649.json]
+members: [图片生成/图生图/FLUX.1 Kontext商业级印花_纹理提取工作_2055163655582429186.json, 图片生成/图生图/印花提取_kontext_1955092292547874818.json, 图片生成/图生图/服装产品提取_kontext_1972140716925382657.json, 图片生成/图生图/服装提取_kontext_1955086376859570177.json, 图片生成/图生图/线稿提取_kontext_1955083266447609857.json, 图片生成/文生图/服装提取_1989951791611736065.json, 图片生成/文生图/服装提取_内部用_1967455597295702017.json, 数字人/数字人/服装提取_1990665799004282882.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json、图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json、图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json、图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json、图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext商业级印花_纹理提取工作_2055163655582429186.json、图片生成/图生图/印花提取_kontext_1955092292547874818.json、图片生成/图生图/服装产品提取_kontext_1972140716925382657.json、图片生成/图生图/服装提取_kontext_1955086376859570177.json、图片生成/图生图/线稿提取_kontext_1955083266447609857.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
+- `CR Latent Batch Size`
+- `CR Latent Input Switch`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `JjkText`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `ImageUpscaleWithModel`
+- `ImpactInt`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PixaromaLoraLoader`
-- `PixaromaTextJoinTwo`
-- `PreviewImage`
 - `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YC Color Match`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 6/7 个有
-- `FloatConstant` —— 4/7 个有
-- `FluxGuidance` —— 4/7 个有
-- `GrowMaskWithBlur` —— 3/7 个有
-- `Kontext Inpainting Conditioning` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `Text Multiline` —— 3/7 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 7/8 个有
+- `LayerUtility: CropByMask V2` —— 7/8 个有
+- `PreviewImage` —— 6/8 个有
+- `ResizeLongestToNode` —— 5/8 个有
+- `LayerUtility: PurgeVRAM` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `LayerUtility: ImageAutoCrop V2` —— 2/8 个有
+- `1hew_AnySwitchSelect` —— 1/8 个有
+- `ImageSaveNode_孤海` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `PurgeVRAM_UTK` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 采样步数 | 25 | 25 - 25 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 768 | 768 - 1440 | 8 | 71% |
+| 高度 | 1024 | 1024 - 1440 | 8 | 84% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 14/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（14/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1440，8 个样本
+- 高度 中位数 1024，观测区间 1024 - 1440，8 个样本，取值集中（一致性 84%）

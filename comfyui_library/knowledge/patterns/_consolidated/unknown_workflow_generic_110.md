@@ -3,36 +3,41 @@ name: unknown_workflow_generic_110
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.688286
-common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.946
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/场景背景复刻迁移产品+图像合成_2069959719518822402.json, 图片生成/图生图/王者驾临-全能图片 2 （极速版）_2027261640210649089.json, 图片生成/图生图/（RH版）全能图片2极速-单图编辑-电商、艺术、室内、平面等_2027402024060461058.json, 图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商-艺术-室内-平面_2028087143918211073.json, 图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商、艺术、室内、平面等_2027408195676803073.json, 图片生成/图生图/（RH版）全能图片2极速版图像编辑V1_2027091098656575490.json, 图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json, 图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json, 图片生成/文生图/全能图片2 文生图_2027577479132618754.json, 图片生成/文生图/全能图片2--文生图_2027189055745695745.json, 图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2083786920437571585.json, 图片生成/文生图/全能图片制作分镜_2027212222014951426.json, 图片生成/文生图/最新全能模型🍌2_极速生图_图像编辑_2027315921492119553.json]
+members: [图片生成/反推提示词/87单人语音克隆_2055928827238469634.json, 图片生成/反推提示词/88克隆语音，情绪控制_2055933374333767682.json, 图片生成/反推提示词/mikez试验语音_2061046702106308609.json, 数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json, 数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json, 数字人/数字人/IndexTTS2声音克隆IndexTTS2(单人)_2031259293445525506.json, 数字人/数字人/indextts2基础+情感_1972186995231485954.json, 数字人/数字人/indextts多人参考+情感_1972195833821261825.json, 数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json, 音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json, 音频生成/音频生成/IndexTTS2-有声书制作 多人声音克隆+情感参考_1998673212043055105.json, 音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json, 音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json, 音频生成/音频生成/声音克隆+情感参考（转跳爷）_2046777867777875970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_110
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/场景背景复刻迁移产品+图像合成_2069959719518822402.json、图片生成/图生图/王者驾临-全能图片 2 （极速版）_2027261640210649089.json、图片生成/图生图/（RH版）全能图片2极速-单图编辑-电商、艺术、室内、平面等_2027402024060461058.json、图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商-艺术-室内-平面_2028087143918211073.json、图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商、艺术、室内、平面等_2027408195676803073.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/87单人语音克隆_2055928827238469634.json、图片生成/反推提示词/88克隆语音，情绪控制_2055933374333767682.json、图片生成/反推提示词/mikez试验语音_2061046702106308609.json、数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json、数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 13/14 个有
-- `easy showAnything` —— 13/14 个有
-- `LoadImage` —— 11/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `RH_Captioner_Pro` —— 1/14 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/14 个有
+- `PreviewAudio` —— 10/14 个有
+- `easy indexTTSEmotionVector` —— 10/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/14 个有
+- `easy indexTTSEmotionAudio` —— 6/14 个有
+- `easy indexTTSEmotionMerge` —— 6/14 个有
+- `easy indexTTSAudioMerge` —— 4/14 个有
+- `CR Prompt Text` —— 3/14 个有
+- `LoadImage` —— 1/14 个有
+- `Textbox` —— 1/14 个有
 
 ## 典型参数
 

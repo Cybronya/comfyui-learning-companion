@@ -1,98 +1,80 @@
 ---
 name: unknown_workflow_sampler_vae_31
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.871667
-common_nodes: [CFGGuider, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask]
-problems: []
+frequency: 11
+level: strong
+coverage: 0.976545
+common_nodes: [EmptyLatentImage, GetImageSizeAndCount, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新的视频 适合爆款视频清洗_2070081600632741890.json, 视频生成/图生视频/LTX-2.3_MSR RV2V参考生视频_2073325475514114050.json, 视频生成/图生视频/LTX-2.3_MSR V2多参数字人_2078871582214279170.json, 视频生成/图生视频/LTX2.3数字人V2—支持双人，自动计算帧数_2073315948735586306.json, 视频生成/图生视频/LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json, 视频生成/图生视频/LTX2.3数字人—支持双人_2073313777977745410.json, 视频生成/图生视频/danotebook-ltx2.3-digital_2062522880226848770.json, 视频生成/图生视频/【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3工作流实测_2044766587655294977.json, 视频生成/图生视频/【LTX-2.3xinyao】_2070029372056231937.json]
+members: [图片生成/图生图/Qwen Edit 2511三图编辑V1_2004063684311826433.json, 图片生成/图生图/Qwen Edit 2511三图编辑_2007451400346804226.json, 图片生成/图生图/Qwen Edit 2511三图编辑_2013275595538440193.json, 图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004097691007238145.json, 图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004110460536406018.json, 图片生成/图生图/Qwen Edit 2511双图编辑V1（姿势迁移-高成功率版）_2003814602951540738.json, 图片生成/图生图/Qwen Edit 2511四视图草图化Lora对比_2004170555572035586.json, 图片生成/图生图/Qwen-Edit Aio V4模型双图编辑（姿势迁移）_1977742904007557121.json, 图片生成/图生图/Qwen-Edit Aio V5模型双图编辑（姿势迁移）_1978125750916243457.json, 图片生成/图生图/Qwen-Edit Aio V7模型双图编辑（姿势迁移）_1985328636607741953.json, 图片生成/图生图/Qwen动作迁移+SeedVR2_2031548094671753217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新的视频 适合爆款视频清洗_2070081600632741890.json、视频生成/图生视频/LTX-2.3_MSR RV2V参考生视频_2073325475514114050.json、视频生成/图生视频/LTX-2.3_MSR V2多参数字人_2078871582214279170.json、视频生成/图生视频/LTX2.3数字人V2—支持双人，自动计算帧数_2073315948735586306.json、视频生成/图生视频/LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2511三图编辑V1_2004063684311826433.json、图片生成/图生图/Qwen Edit 2511三图编辑_2007451400346804226.json、图片生成/图生图/Qwen Edit 2511三图编辑_2013275595538440193.json、图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004097691007238145.json、图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004110460536406018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 11 个 workflow 都包含：
+- `EmptyLatentImage`
+- `GetImageSizeAndCount`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `SaveImage`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlus`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 8/9 个有
-- `LTXVPreprocess` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `ResizeImagesByLongerEdge` —— 8/9 个有
-- `ComfyMathExpression` —— 7/9 个有
-- `LoadAudio` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 7/9 个有
-- `PrimitiveInt` —— 7/9 个有
-- `TrimAudioDuration` —— 7/9 个有
-- `CheckpointLoaderSimple` —— 6/9 个有
-- `LTXVImgToVideoInplace` —— 6/9 个有
-- `LTXVLatentUpsampler` —— 6/9 个有
-- `LatentUpscaleModelLoader` —— 6/9 个有
-- `ResizeImageMaskNode` —— 6/9 个有
-- `VAEDecodeTiled` —— 6/9 个有
-- `PrimitiveBoolean` —— 5/9 个有
-- `AudioInfo` —— 3/9 个有
-- `INTConstant` —— 3/9 个有
-- `LTX2_NAG` —— 3/9 个有
-- `LTXAddVideoICLoRAGuide` —— 3/9 个有
-- `LTXICLoRALoaderModelOnly` —— 3/9 个有
-- `LiconMSR` —— 3/9 个有
-- `LowVRAMCheckpointLoader` —— 3/9 个有
-- `PrimitiveFloat` —— 3/9 个有
-- `PromptRelayEncode` —— 3/9 个有
-- `VAEDecode` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `GetImageSize` —— 2/9 个有
-- `HeartMuLa_Generate` —— 2/9 个有
-- `HeartMuLa_Transcribe` —— 2/9 个有
-- `LTXVImgToVideoConditionOnly` —— 2/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `SaveAudio` —— 2/9 个有
-- `ShowText|pysssss` —— 2/9 个有
-- `Text _O` —— 2/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `ConditioningZeroOut` —— 1/9 个有
-- `MelBandRoFormerModelLoader` —— 1/9 个有
-- `MelBandRoFormerSampler` —— 1/9 个有
-- `PromptRelaySmartEncode` —— 1/9 个有
+- `CLIPLoader` —— 8/11 个有
+- `ImageConcatMulti` —— 8/11 个有
+- `LoraLoaderModelOnly` —— 8/11 个有
+- `UNETLoader` —— 8/11 个有
+- `VAELoader` —— 8/11 个有
+- `DWPreprocessor` —— 7/11 个有
+- `PDIMAGE_LongerSize` —— 7/11 个有
+- `CheckpointLoaderSimple` —— 3/11 个有
+- `PreviewImage` —— 3/11 个有
+- `AddLabel` —— 1/11 个有
+- `INTConstant` —— 1/11 个有
+- `Image Comparer (rgthree)` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `SeedVR2` —— 1/11 个有
+- `SeedVR2BlockSwap` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 73% |
+| 调度器 | beta57 | - | 11 | 64% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 768 | 768 - 768 | 11 | 100% |
+| 高度 | 768 | 768 - 768 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 73%
+- 调度器 最常用 beta57，11 个样本，一致性 64%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 768，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 768，观测区间 768 - 768，11 个样本，取值集中（一致性 100%）
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

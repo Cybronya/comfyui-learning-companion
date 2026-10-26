@@ -1,63 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_237
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.920375
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.789111
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Wan2.1单人对口型_2096760991131455490.json, 视频生成/图生视频/IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json, 视频生成/图生视频/Wan2.1+InfiniteTalk_单人_图片转数字人_1988813564645355522.json, 视频生成/图生视频/Wan2.1单人对口型_2064352779824623618.json, "视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json", 视频生成/图生视频/图加音频生视频_2016326225295314946.json, 视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json, 视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json]
+members: [数字人/数字人/MultiTalk数字人 加音色克隆_1948371393818832898.json, 数字人/数字人/Multitalk单人数字人_1950219733892251649.json, 数字人/数字人/multitalk_数字人_1964494594597638145.json, 数字人/数字人/multitalk数字人工作流-单人_1945780376977678338.json, 数字人/数字人/数字人对口型（超时长）_2000509474429431809.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json, 视频生成/图生视频/Multitalk 数字人运镜参考版｜稳定运行_1936961854306439170.json, 视频生成/图生视频/Multitalk最强数字人-灵动版_1953292063418814466.json, 视频生成/图生视频/工作流视频篇12-AI图生数字人加运镜参考_2018299977335840769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_237
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Wan2.1单人对口型_2096760991131455490.json、视频生成/图生视频/IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json、视频生成/图生视频/Wan2.1+InfiniteTalk_单人_图片转数字人_1988813564645355522.json、视频生成/图生视频/Wan2.1单人对口型_2064352779824623618.json、视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/MultiTalk数字人 加音色克隆_1948371393818832898.json、数字人/数字人/Multitalk单人数字人_1950219733892251649.json、数字人/数字人/multitalk_数字人_1964494594597638145.json、数字人/数字人/multitalk数字人工作流-单人_1945780376977678338.json、数字人/数字人/数字人对口型（超时长）_2000509474429431809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `ImageResizeKJv2`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 7/8 个有
-- `DownloadAndLoadWav2VecModel` —— 7/8 个有
-- `LoadAudio` —— 7/8 个有
-- `INTConstant` —— 5/8 个有
-- `WanVideoDecode` —— 5/8 个有
-- `Anything Everywhere` —— 4/8 个有
-- `AudioCrop` —— 4/8 个有
-- `GetImageSizeAndCount` —— 4/8 个有
-- `PreviewAny` —— 4/8 个有
-- `WanVideoPassImagesFromSamples` —— 3/8 个有
-- `Wav2VecModelLoader` —— 3/8 个有
-- `CR Text` —— 2/8 个有
-- `FancyTimerNode` —— 2/8 个有
-- `ImageScale` —— 2/8 个有
-- `easy getNode` —— 2/8 个有
-- `easy setNode` —— 2/8 个有
-- `IndexTTSNode` —— 1/8 个有
-- `VHS_LoadAudioUpload` —— 1/8 个有
+- `AudioCrop` —— 8/9 个有
+- `AudioSeparation` —— 8/9 个有
+- `WanVideoContextOptions` —— 8/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `WanVideoUni3C_ControlnetLoader` —— 7/9 个有
+- `SimpleMath+` —— 6/9 个有
+- `VHS_DuplicateImages` —— 6/9 个有
+- `WanVideoEncode` —— 6/9 个有
+- `WanVideoUni3C_embeds` —— 6/9 个有
+- `easy showAnything` —— 6/9 个有
+- `INTConstant` —— 5/9 个有
+- `ImageResizeKJ` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `ImageResizeKJv2` —— 4/9 个有
+- `JWIntegerToString` —— 4/9 个有
+- `PrimitiveInt` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `RH_Captioner` —— 3/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
+- `easy anythingIndexSwitch` —— 3/9 个有
+- `GetNode` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `Audio Duration (mtb)` —— 1/9 个有
+- `IndexTTSRun` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `Note _O` —— 1/9 个有
+- `PreviewAudio` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_GetAudioDuration` —— 1/9 个有
+- `String Literal` —— 1/9 个有
+- `WanVideoEnhanceAVideo` —— 1/9 个有
+- `WanVideoSLG` —— 1/9 个有
+- `easy convertAnything` —— 1/9 个有
 
 ## 典型参数
 

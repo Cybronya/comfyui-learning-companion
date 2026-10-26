@@ -3,56 +3,87 @@ name: text_to_image_inpaint_lora_sampler_5
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.907
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImagePadForOutpaint, InpaintModelConditioning, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9535
+common_nodes: [AddMask, BlendInpaint, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntBinaryOperation, CM_NumberToInt, CachePreviewBridge, ColorMatch, ConditioningZeroOut, CutForInpaint, DifferentialDiffusion, DownloadAndLoadFlorence2Model, EmptyLatentImage, Florence2Run, FluxGuidance, Get Image Size, GrowMaskWithBlur, ImageAndMaskPreview, ImageConcanate, ImageCrop+, ImageMaskSwitch, ImageScale, ImageToMask, ImpactInt, InpaintModelConditioning, Int Literal, IsMaskEmpty, JjkText, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskToImage, PreviewImage, RHHiddenNodes, RepeatLatentBatch, SaveImage, StyleModelApply, StyleModelLoader, SubtractMask, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageSize, easy mathInt, solarL_SaveImagesToZip, workflow>123, workflow>zz, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json, 图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json]
+members: [图片生成/图生图/Face Swap智能换脸｜支持眼镜妆容图生图生成_2095959250995601409.json, 图片生成/图生图/Face_Swap换脸新玩法｜眼镜妆容都能保住，换脸不毁妆细节_2099422220891287553.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_inpaint_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json、图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Face Swap智能换脸｜支持眼镜妆容图生图生成_2095959250995601409.json、图片生成/图生图/Face_Swap换脸新玩法｜眼镜妆容都能保住，换脸不毁妆细节_2099422220891287553.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AddMask`
+- `BlendInpaint`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CM_IntBinaryOperation`
+- `CM_NumberToInt`
+- `CachePreviewBridge`
+- `ColorMatch`
 - `ConditioningZeroOut`
+- `CutForInpaint`
 - `DifferentialDiffusion`
-- `DualCLIPLoader`
+- `DownloadAndLoadFlorence2Model`
 - `EmptyLatentImage`
+- `Florence2Run`
 - `FluxGuidance`
-- `ImagePadForOutpaint`
+- `Get Image Size`
+- `GrowMaskWithBlur`
+- `ImageAndMaskPreview`
+- `ImageConcanate`
+- `ImageCrop+`
+- `ImageMaskSwitch`
+- `ImageScale`
+- `ImageToMask`
+- `ImpactInt`
 - `InpaintModelConditioning`
+- `Int Literal`
+- `IsMaskEmpty`
 - `JjkText`
 - `KSampler`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskToImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RepeatLatentBatch`
 - `SaveImage`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `SubtractMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy mathInt`
 - `solarL_SaveImagesToZip`
+- `workflow>123`
+- `workflow>zz`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMaskWithBlur` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageComposite+` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
-- `图像缩放范围孤海` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
 
 ## 典型参数
 

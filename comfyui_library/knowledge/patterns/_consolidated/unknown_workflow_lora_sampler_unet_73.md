@@ -1,77 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_73
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.801125
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.898778
+common_nodes: [CFGNorm, CLIPLoader, CR Text, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json, 图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json, 图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json, 图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json, 图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json, 图片生成/图生图/Qwen-Edit一键生成字体海报_2003726936436318209.json, 图片生成/图生图/Qwen-创意涂鸦海报_2041395180921692161.json, 图片生成/图生图/图生图-产品创意海报_2040662642892742657.json]
+members: [图片生成/图生图/Qwen-Image-Edit-2509 下一个镜头_场景_2030202076516585473.json, 图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2003712604600213506.json, 图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2061627000284078082.json, 图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2094263287616720898.json, 图片生成/图生图/Qwen2511局部重绘(4K直出)——改字_改图_消除_2042052010853273601.json, 图片生成/图生图/Qwen2511局部重绘原图尺寸贴回——适用于SDPPP替代创成式填充_2073349898552041473.json, 图片生成/图生图/qwen2511局部重绘-改字_改图_无痕迹_2057305907763179521.json, 图片生成/图生图/qwen2511局部重绘-改字_改图_无痕迹_2067954497997074434.json, 图片生成/图生图/老孙AI Qwen2511局部重绘 原图贴回_2087044751177633794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json、图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json、图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json、图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json、图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit-2509 下一个镜头_场景_2030202076516585473.json、图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2003712604600213506.json、图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2061627000284078082.json、图片生成/图生图/Qwen2511——局部重绘(4K直出)-改字_改图_无痕迹_2094263287616720898.json、图片生成/图生图/Qwen2511局部重绘(4K直出)——改字_改图_消除_2042052010853273601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `CR Text`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `seed _O` —— 5/8 个有
-- `Text _O` —— 4/8 个有
-- `easy showAnything` —— 3/8 个有
-- `Fast Groups Muter (rgthree)` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `Seed (rgthree)` —— 2/8 个有
-- `TextCombinerTwo` —— 2/8 个有
-- `TextInput_` —— 2/8 个有
-- `EmptyLatentImage` —— 1/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `PDIMAGE_LongerSize` —— 1/8 个有
-- `easy imageConcat` —— 1/8 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `InpaintCropImproved` —— 8/9 个有
+- `InpaintModelConditioning` —— 8/9 个有
+- `InpaintStitchImproved` —— 8/9 个有
+- `MaskPreview+` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `PrimitiveFloat` —— 2/9 个有
+- `CR SDXL Aspect Ratio` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 50% |
-| 调度器 | simple | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 768 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 10 | 9 | 55% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 50%
-- 调度器 最常用 simple，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 10，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（7/9 个样本）：Steps较低可能导致细节不足

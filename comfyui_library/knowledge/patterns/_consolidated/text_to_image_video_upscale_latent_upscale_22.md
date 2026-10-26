@@ -3,71 +3,87 @@ name: text_to_image_video_upscale_latent_upscale_22
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.664
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.910333
+common_nodes: [AudioCrop, BasicGuider, Bjornulf_ShowFloat, CLIPLoader, CLIPTextEncode, CR Float To String, CR Prompt Text, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ConcatTextOfUtils, EmptyLatentImage, Float, GetNode, ImageBatchMultiV2, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PreviewAny, PreviewAudio, PrimitiveFloat, PurgeVRAM_UTK, RH_GetAudioDuration, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowAnything|Mie, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MinimaxH3全能参考电影质量V2｜潜空间放大视频生成_2097776188847648770.json, 视频生成/文生视频/全能参考漫剧工作流｜Minimax H3多参视频生成_2096306504000430082.json, 视频生成/文生视频/漫剧全能参考｜Minimax H3三模输入一键出片_2096587385604759554.json]
+members: [数字人/数字人/动漫MV人物唱歌专用 视频生成处理工具_2100645683492638722.json, 数字人/数字人/动漫MV人物唱歌专用For anime MV｜数字人角色表演一条龙，视频成片直接发布_2100462340885012481.json, 数字人/数字人/极速数字人MV制作 小白友好高清多模态视频生成_2098859053823905793.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考电影质量V2｜潜空间放大视频生成_2097776188847648770.json、视频生成/文生视频/全能参考漫剧工作流｜Minimax H3多参视频生成_2096306504000430082.json、视频生成/文生视频/漫剧全能参考｜Minimax H3三模输入一键出片_2096587385604759554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/动漫MV人物唱歌专用 视频生成处理工具_2100645683492638722.json、数字人/数字人/动漫MV人物唱歌专用For anime MV｜数字人角色表演一条龙，视频成片直接发布_2100462340885012481.json、数字人/数字人/极速数字人MV制作 小白友好高清多模态视频生成_2098859053823905793.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AudioCrop`
 - `BasicGuider`
-- `BasicScheduler`
+- `Bjornulf_ShowFloat`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Float To String`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `ConcatTextOfUtils`
 - `EmptyLatentImage`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
+- `Float`
 - `GetNode`
+- `ImageBatchMultiV2`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MinimaxH3LatentUpscaler3D`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `ModelAttentionBackend`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveFloat`
+- `PurgeVRAM_UTK`
+- `RH_GetAudioDuration`
+- `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
+- `ShowAnything|Mie`
+- `SolAttnMiniMax`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `FeiHouEasyH3RHLoraStack` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `RandomSeedNoise` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `MiniMaxH3BlockCacheT8` —— 1/3 个有
-- `MiniMaxH3SigmaShift` —— 1/3 个有
-- `ModelPreviewOverrideKJ` —— 1/3 个有
-- `RandomNoise` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
-- `UniBlockSwap` —— 1/3 个有
-- `VRAM_Debug` —— 1/3 个有
-- `easy clearCacheAll` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `LoadVideo` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
 
 ## 典型参数
 

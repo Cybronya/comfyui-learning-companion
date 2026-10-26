@@ -3,40 +3,33 @@ name: unknown_workflow_generic_585
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.579
-common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, VeoImage2Video, VeoQueryTask]
+coverage: 0.925
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/谷歌3.1首尾帧图生视频带货视频制作两图首尾图连续图片生成视频_2058489407870685185.json, 视频生成/图生视频/谷歌Ve03.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2016414667429646338.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1993215378560057346.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json]
+members: [图片生成/图生图/九宫格切割_2096402838879555586.json, 图片生成/图生图/九宫格切割_2096416075087962113.json, 图片生成/图生图/九宫格网格分镜裁切_2011355955564384258.json, 图片生成/图生图/多宫格图片拆分单图 _自定义格数多场景适用_2057642786119315458.json, 图片生成/图生图/电商修图之一键裁剪网格图片_2048283801813524482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_585
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/谷歌3.1首尾帧图生视频带货视频制作两图首尾图连续图片生成视频_2058489407870685185.json、视频生成/图生视频/谷歌Ve03.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2016414667429646338.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1993215378560057346.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/九宫格切割_2096402838879555586.json、图片生成/图生图/九宫格切割_2096416075087962113.json、图片生成/图生图/九宫格网格分镜裁切_2011355955564384258.json、图片生成/图生图/多宫格图片拆分单图 _自定义格数多场景适用_2057642786119315458.json、图片生成/图生图/电商修图之一键裁剪网格图片_2048283801813524482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `DownloadVideo`
 - `LoadImage`
-- `LoadVideoFromUrl_RH`
-- `PreviewAny`
-- `PrimitiveString`
-- `SaveVideo`
-- `UploadToImageHost`
-- `VeoImage2Video`
-- `VeoQueryTask`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `ShowAnything|Mie` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `1hew_ImageGridSplit` —— 4/5 个有
+- `ImageGridSplitter` —— 3/5 个有
+- `Int` —— 2/5 个有
 
 ## 典型参数
 

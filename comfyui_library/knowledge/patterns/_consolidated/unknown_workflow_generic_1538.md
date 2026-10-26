@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1538
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.685
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, SeedVR2, easy cleanGpuUsed, easy promptConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json, 视频生成/图生视频/Kling_V26StdMotionControl_v2.6_2033808851971088386.json]
+members: [图片生成/图生图/最新G image2  电商服装提取一键生成工作流 V2.0_2062466829485953025.json, 图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V2.0_2062118276230111234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1538
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json、视频生成/图生视频/Kling_V26StdMotionControl_v2.6_2033808851971088386.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新G image2  电商服装提取一键生成工作流 V2.0_2062466829485953025.json、图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V2.0_2062118276230111234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `SeedVR2`
+- `easy cleanGpuUsed`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_KlingV26ProMotionControl` —— 1/2 个有
-- `RH_KlingV26StdMotionControl` —— 1/2 个有
+- `GuHaiAutoImageSplit` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 

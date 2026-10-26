@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_834
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.778
-common_nodes: [GetImageSize, ImageCompare, LoadImage, ResizeImageMaskNode]
+coverage: 0.88375
+common_nodes: [LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_topaz_image_enhance.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json]
+members: [视频生成/图生视频/SoulX-Singer歌曲音色语种转换V1_2023023039541153794.json, 音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json, 音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json, 音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_834
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_topaz_image_enhance.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SoulX-Singer歌曲音色语种转换V1_2023023039541153794.json、音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json、音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json、音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
-- `ImageCompare`
-- `LoadImage`
-- `ResizeImageMaskNode`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `RunningHub SoulX-Singer Preprocess Pipeline`
+- `RunningHub SoulX-Singer Preprocessor`
+- `RunningHub SoulX-Singer SVS Loader`
+- `RunningHub SoulX-Singer SVS Processor`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `fd5d0097-8a1d-4dc2-86f2-1d5869b3f0eb` —— 2/3 个有
-- `SaveImageAdvanced` —— 1/3 个有
-- `TopazImageEnhanceV2` —— 1/3 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,57 +3,64 @@ name: unknown_workflow_video_lora_sampler_680
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.798667
-common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.829
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageResizeKJ, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/正在测试lora  -_1944651399730745345.json, 视频生成/图生视频/正在测试lora  -_1944662370163544065.json, 视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json]
+members: [视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json, 视频生成/图生视频/抖音网红AI视频_1867168400106569730.json, 视频生成/图生视频/抖音网红视频_1862018692308729857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_680
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/正在测试lora  -_1944651399730745345.json、视频生成/图生视频/正在测试lora  -_1944662370163544065.json、视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json、视频生成/图生视频/抖音网红AI视频_1867168400106569730.json、视频生成/图生视频/抖音网红视频_1862018692308729857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `SaveLatent`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `ModelSamplingFlux`
+- `RIFE VFI`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
+- `VideoCombine_Adv`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_TextConcatenate` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `LoadLatent` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy imageChooser` —— 2/3 个有
+- `Joy_caption` —— 1/3 个有
+- `Joy_caption_load` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,36 +3,42 @@ name: unknown_workflow_generic_1096
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.776333
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, LoadImage, SaveAudio]
+coverage: 0.951333
+common_nodes: [ACEStepEdit, ACEStepExtend, ACEStepGen, ACEStepRepainting, GenerationParameters, LoadAudio, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json, 音频生成/音频生成/声音克隆_1998644155763056642.json, 音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json]
+members: [数字人/数字人/ACE-Step一站式AI音乐生成_1920406779250020354.json, 音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json, 音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1096
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json、音频生成/音频生成/声音克隆_1998644155763056642.json、音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ACE-Step一站式AI音乐生成_1920406779250020354.json、音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json、音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
+- `ACEStepEdit`
+- `ACEStepExtend`
+- `ACEStepGen`
+- `ACEStepRepainting`
+- `GenerationParameters`
 - `LoadAudio`
-- `LoadImage`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `CR Text` —— 1/3 个有
 - `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,58 +3,61 @@ name: unknown_workflow_video_sampler_vae_63
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.88125
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, Primitive integer [Crystools], Primitive string [Crystools], SetNode, VHS_VideoCombine]
+coverage: 0.98425
+common_nodes: [CLIPVisionLoader, Compare, DWPreprocessor, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json, 视频生成/图生视频/图生视频 混元版_2041428749719179265.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版)_1903462104978853889.json, 视频生成/图生视频/屏幕伸手牵手3D互动抖音热点视频图生视频_2067422675328389122.json, 视频生成/图生视频/最新混元图生视频fixed版(KJ版)_1898335155923439618.json]
+members: [视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json, 视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2034480754176036865.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046249922785189889.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046394046041563138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_63
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json、视频生成/图生视频/图生视频 混元版_2041428749719179265.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json、视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json、视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
-- `GetImageSizeAndCount`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoGetClosestBucketSize`
-- `HyVideoI2VEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageScale`
+- `CLIPVisionLoader`
+- `Compare`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `INTConstant`
+- `If ANY execute A else B`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
 - `Primitive integer [Crystools]`
-- `Primitive string [Crystools]`
-- `SetNode`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `GroupExecutor` —— 5/8 个有
-- `ImageBatch` —— 5/8 个有
-- `ImageFromBatch` —— 5/8 个有
-- `LG_ImageReceiver` —— 5/8 个有
-- `LG_ImageSender` —— 5/8 个有
-- `MathExpression|pysssss` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `GetNode` —— 3/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `SaveImage` —— 1/8 个有
-- `TT_img_enc` —— 1/8 个有
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 ## 典型参数
 

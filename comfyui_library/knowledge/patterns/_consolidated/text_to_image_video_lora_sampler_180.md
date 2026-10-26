@@ -3,74 +3,78 @@ name: text_to_image_video_lora_sampler_180
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.887333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleBy, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3ConcatAVLatent, MiniMaxH3ContextIR, MiniMaxH3HybridLoader, MiniMaxH3ImageToVideo, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ReferenceToVideo, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, Minimax_H3_Context_IR, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.823333
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Concatenate, ComfyMathExpression, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelMemoryUsageFactorOverride, PT_H3ConcatAVLatent, PathchSageAttentionKJ, PixaromaResolution, PreviewImage, ProcessString, RHHiddenNodes, RandomNoise, ReferenceLatent, ResolutionSelector, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Switch any [Crystools], Text, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/开源MiniMax H3全能工作流，文生视频图生视频首尾帧参考生视频极速兼容_2103178748689477634.json, 视频生成/图生视频/开源版MiniMaxH3全能精品工作流｜文生图生参考极速生视频_2101930241441755137.json, 视频生成/图生视频/开源版MiniMaxH3全能精品｜文生图到参考视频极速一条龙_2103044074793160706.json]
+members: [视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json, 视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json, 视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_180
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/开源MiniMax H3全能工作流，文生视频图生视频首尾帧参考生视频极速兼容_2103178748689477634.json、视频生成/图生视频/开源版MiniMaxH3全能精品工作流｜文生图生参考极速生视频_2101930241441755137.json、视频生成/图生视频/开源版MiniMaxH3全能精品｜文生图到参考视频极速一条龙_2103044074793160706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json、视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json、视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `CR Text`
+- `CR Text Concatenate`
 - `ComfyMathExpression`
-- `CreateVideo`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ConcatAVLatent`
-- `MiniMaxH3ContextIR`
-- `MiniMaxH3HybridLoader`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceSplitter`
 - `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3ResolutionSelector`
-- `MiniMaxH3TurboLoRA`
-- `MiniMaxH3TurboSampler`
-- `MiniMaxH3UnifiedToVideo`
-- `Minimax_H3_Context_IR`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `ModelAttentionBackend`
+- `ModelMemoryUsageFactorOverride`
+- `PT_H3ConcatAVLatent`
+- `PathchSageAttentionKJ`
+- `PixaromaResolution`
+- `PreviewImage`
+- `ProcessString`
+- `RHHiddenNodes`
 - `RandomNoise`
+- `ReferenceLatent`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed (rgthree)`
+- `SaveImage`
+- `ShowText|pysssss`
+- `Switch any [Crystools]`
+- `Text`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAEEncode`
 - `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy boolean`
 - `easy cleanGpuUsed`
+- `easy imageListToImageBatch`
+- `easy promptLine`
 - `easy showAnything`
 - `llama_cpp_instruct_adv`
 - `llama_cpp_model_loader`
@@ -79,7 +83,15 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `MiniMaxChunkFeedForward` —— 1/3 个有
+- `MiniMaxLowVRAMAttention` —— 1/3 个有
+- `ModelPreviewOverrideKJ` —— 1/3 个有
+- `PixaromaGetNode` —— 1/3 个有
+- `PixaromaLabel` —— 1/3 个有
+- `PixaromaSetNode` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 
@@ -97,7 +109,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -108,4 +120,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足

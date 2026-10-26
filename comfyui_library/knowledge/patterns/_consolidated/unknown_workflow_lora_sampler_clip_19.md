@@ -1,71 +1,85 @@
 ---
 name: unknown_workflow_lora_sampler_clip_19
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.826357
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 16
+level: moderate
+coverage: 0.745938
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/文生图/Labubu（拉布布）生成器_1935575269891559426.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_1909968900275273729.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_2042435095121891330.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_2047558509369233409.json, 图片生成/文生图/SVDQ和官方FLUX对比_1910633207707172866.json, 图片生成/文生图/hidream_全系出图与FLUX对比_1917844166154321921.json, 图片生成/文生图/天才樱木花道_1925124635254267905.json, 图片生成/文生图/太乙真人工作流_1929399159059595265.json, 图片生成/文生图/汉服美女工生成作流_1931186440095641601.json, 图片生成/文生图/灌篮高手-三井寿_1926264181538910210.json, 图片生成/文生图/灌篮高手-宫城良田_1926262954042290178.json, 图片生成/文生图/灌篮高手-流川枫_1925427219194163201.json, 图片生成/文生图/灌篮高手-赤木刚宪_1926115550580338689.json, 图片生成/文生图/越前龙马工作流_1933821200713830402.json]
+members: [视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064287550000422914.json, 视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064563859888885761.json, 视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json, 视频生成/图生视频/LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_2079038691699412993.json, 视频生成/图生视频/LTX-2.3-MSR_2066734260651913217.json, 视频生成/图生视频/LTX-2.3-MSR_V2_Sample_workflow_2077298487875694594.json, 视频生成/图生视频/LTX-2.3-MSR多图参考视频生成V2_2079024443669696513.json, 视频生成/图生视频/LTX-2.3_MSR V2模型多参生视频（一致性及音频优化）_2078737111863353346.json, 视频生成/图生视频/LTX-2.3_MSRV2单采版优化_2081916685078061057.json, 视频生成/图生视频/LTX2.3 MSR V2 (多主体参考) 图生视频_2083493730379722754.json, 视频生成/图生视频/LTX2.3-MSR-workflow_2066907383061901313.json, 视频生成/图生视频/LTX2.3-MSR图生视频 全局参考  提示词扩写自动优化 数字人说话唱歌_2072516302538887169.json, 视频生成/图生视频/LTX2.3-MSR图生视频V2【全局参考】_2063611075953778689.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局参考】_2072510726874427393.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局参考】_2073281065932046336.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局多图参考】_2064168475052036098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_19
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Labubu（拉布布）生成器_1935575269891559426.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_1909968900275273729.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_2042435095121891330.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_2047558509369233409.json、图片生成/文生图/SVDQ和官方FLUX对比_1910633207707172866.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064287550000422914.json、视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064563859888885761.json、视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json、视频生成/图生视频/LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_2079038691699412993.json、视频生成/图生视频/LTX-2.3-MSR_2066734260651913217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
 - `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 10/14 个有
-- `JoinStrings` —— 9/14 个有
-- `PrimitiveString` —— 9/14 个有
-- `Text Multiline` —— 9/14 个有
-- `easy hiresFix` —— 9/14 个有
-- `CR Text` —— 4/14 个有
-- `NunchakuFluxDiTLoader` —— 4/14 个有
-- `NunchakuFluxLoraLoader` —— 4/14 个有
-- `NunchakuTextEncoderLoader` —— 4/14 个有
-- `Note Plus (mtb)` —— 2/14 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/14 个有
-- `KSampler` —— 1/14 个有
-- `ModelSamplingSD3` —— 1/14 个有
-- `QuadrupleCLIPLoader` —— 1/14 个有
+- `CreateVideo` —— 12/16 个有
+- `SaveVideo` —— 12/16 个有
+- `GetNode` —— 8/16 个有
+- `LTX2_NAG` —— 8/16 个有
+- `PromptRelayEncode` —— 8/16 个有
+- `SetNode` —— 8/16 个有
+- `LoraLoaderModelOnly` —— 7/16 个有
+- `CR Text` —— 6/16 个有
+- `MathExpression|pysssss` —— 6/16 个有
+- `CR Float To Integer` —— 5/16 个有
+- `CR Text Concatenate` —— 5/16 个有
+- `CR Value` —— 5/16 个有
+- `FloatConstant` —— 5/16 个有
+- `PreviewAny` —— 5/16 个有
+- `RH_LLMAPI_NODE` —— 5/16 个有
+- `SimpleMath+` —— 5/16 个有
+- `VHS_VideoCombine` —— 5/16 个有
+- `easy boolean` —— 5/16 个有
+- `easy convertAnything` —— 5/16 个有
+- `LTXVSetAudioRefTokens` —— 4/16 个有
+- `CR Prompt Text` —— 3/16 个有
+- `ComfyMathExpression` —— 3/16 个有
+- `LTXVAddGuideMulti` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LoadVideo` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024x1024 (1.0) | - | 2 | 100% |
-| 高度 | 1 | - | 2 | 100% |
-| 采样步数 | 28 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | lcm | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 宽度 | 241 | 145 - 241 | 16 | 83% |
+| 高度 | 24 | 24 - 50 | 16 | 64% |
 
 ## 常见问题
 
@@ -73,5 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 最常用 1024x1024 (1.0)，2 个样本，一致性 100%
-- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 241，观测区间 145 - 241，16 个样本，取值集中（一致性 83%）
+- 高度 中位数 24，观测区间 24 - 50，16 个样本

@@ -1,71 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_162
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.79275
-common_nodes: [CLIPLoader, EmptyImage, EmptyLatentImage, INTConstant, KSampler, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveImage, Text Multiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy seed]
+frequency: 5
+level: moderate
+coverage: 0.8228
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen 2.1超细节 洗图生图2合1工作流（Qwen3.5自由切换版）😼_2102236389680177153.json, 图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json, 图片生成/文生图/Qwen 2.1超细节 洗图生图2合1工作流（哈基米自由切换版）😼_2102228639399108609.json, 视频生成/图生视频/Qwen_2.1超细节_洗图生图2合1工作流哈基米自由切换版😼_2104044641724227586.json]
+members: [视频生成/文生视频/MiniMax H3｜TaoMate 3步加速 lora_2099873466462855169.json, 视频生成/文生视频/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2099681234111787009.json, 视频生成/文生视频/Minimax H3 加速双采 Self-Lift 工作流_2099332965401710594.json, 视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json, 视频生成/文生视频/满血版minimax h3黑科技加速内置双采-self-lift工作流_2097892303456260098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_162
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1超细节 洗图生图2合1工作流（Qwen3.5自由切换版）😼_2102236389680177153.json、图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json、图片生成/文生图/Qwen 2.1超细节 洗图生图2合1工作流（哈基米自由切换版）😼_2102228639399108609.json、视频生成/图生视频/Qwen_2.1超细节_洗图生图2合1工作流哈基米自由切换版😼_2104044641724227586.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜TaoMate 3步加速 lora_2099873466462855169.json、视频生成/文生视频/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2099681234111787009.json、视频生成/文生视频/Minimax H3 加速双采 Self-Lift 工作流_2099332965401710594.json、视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json、视频生成/文生视频/满血版minimax h3黑科技加速内置双采-self-lift工作流_2097892303456260098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyImage`
-- `EmptyLatentImage`
-- `INTConstant`
-- `KSampler`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImage21`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `Switch any [Crystools]` —— 3/4 个有
-- `TextGenerateLTX2Prompt` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `QwenImage21Cache` —— 1/4 个有
-- `llama_cpp_instruct_adv` —— 1/4 个有
-- `llama_cpp_model_loader` —— 1/4 个有
-- `llama_cpp_parameters` —— 1/4 个有
+- `H3SigmaRefiner` —— 4/5 个有
+- `LoadAudio` —— 4/5 个有
+- `MiniMaxChunkFeedForward` —— 4/5 个有
+- `MiniMaxLowVRAMAttention` —— 4/5 个有
+- `ModelPreviewOverrideKJ` —— 4/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/5 个有
+- `SaveVideo` —— 3/5 个有
+- `VHS_VideoCombine` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `LoraLoader` —— 1/5 个有
+- `LoraLoaderBypassModelOnly` —— 1/5 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/5 个有
+- `RH_Astra` —— 1/5 个有
+- `SaveVideoNode` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 采样步数 | 25 | 25 - 25 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 0.75 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -73,10 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

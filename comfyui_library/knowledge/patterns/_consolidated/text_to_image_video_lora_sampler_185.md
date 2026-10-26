@@ -3,82 +3,46 @@ name: text_to_image_video_lora_sampler_185
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.836333
-common_nodes: [CLIPLoader, CLIPTextEncode, DrawMaskOnImage, EmptyLatentImage, FillMaskWithColor, GetImageSizeAndCount, GetNode, GrowMask, ImageFromBatch, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, Int, InvertMask, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PointsEditor, PreviewImage, PrimitiveInt, RH_Captioner, RunningHub Deepcleaner, SeCModelLoader, SeCVideoSegmentation, SetNode, ShowText, Text, TextConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.589
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy float, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json, 视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json, 视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json]
+members: [视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json, 视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json, 视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_185
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json、视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json、视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json、视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json、视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DrawMaskOnImage`
 - `EmptyLatentImage`
-- `FillMaskWithColor`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `InspyrenetRembg`
-- `Int`
-- `InvertMask`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RH_Captioner`
-- `RunningHub Deepcleaner`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyMediaLoader`
+- `ModelPreviewOverrideKJ`
+- `RHHiddenNodes`
+- `SaveImage`
 - `SetNode`
-- `ShowText`
-- `Text`
-- `TextConcatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `easy float`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

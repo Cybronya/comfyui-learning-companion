@@ -2,83 +2,82 @@
 name: unknown_workflow_sampler_unet_vae_121
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.756125
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, Seed (rgthree), Text Multiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, XinbaoImageStandardizer]
-problems: []
+level: moderate
+coverage: 0.86
+common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡_2104462379441549314.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2104044741108260865.json, 图片生成/图生图/Qwen Image2.1，精准抠图，移除遮挡_2104438752583184386.json, 图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2105585484234838018.json, 图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2108372055283560450.json, 图片生成/图生图/qwen image2.1 电商主图编辑，提示词自动优化版_2105708075872247810.json, 图片生成/图生图/千问image2.1图像编辑-不偏移版-自动优化提示词-可以抠图_2103044555493961729.json]
+members: [图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json, 图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json, 图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json, 图片生成/图生图/Mad裂变资产-1_1989310590176948226.json, 图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json, 图片生成/图生图/Qwen-Edit-2511人物角色三视图3D国漫CG风格（图生图）_2083446869669277698.json, 图片生成/图生图/qwen2511生活照秒变精结婚照登记照片婚纱_2057652286989619201.json, 图片生成/图生图/qwen2511生活照秒变精结婚照登记照片婚纱_2061052010992070658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_121
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json、图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡_2104462379441549314.json、图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2104044741108260865.json、图片生成/图生图/Qwen Image2.1，精准抠图，移除遮挡_2104438752583184386.json、图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2105585484234838018.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json、图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json、图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json、图片生成/图生图/Mad裂变资产-1_1989310590176948226.json、图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `Seed (rgthree)`
-- `Text Multiline`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `XinbaoImageStandardizer`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 5/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `QwenPERewriteT8` —— 3/8 个有
-- `ShowText|pysssss` —— 3/8 个有
-- `忽略多组孤海` —— 3/8 个有
-- `GetNode` —— 2/8 个有
-- `SetNode` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `TextEncodeQwenImageEditPlus` —— 6/8 个有
+- `PreviewImage` —— 4/8 个有
+- `TextEncodeQwenImageEdit` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `Anything Everywhere3` —— 2/8 个有
+- `ImageStitch` —— 2/8 个有
+- `easy imageConcat` —— 2/8 个有
+- `CR Text Concatenate` —— 1/8 个有
 - `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `StringToAnyNode` —— 1/8 个有
-- `Text Concatenate` —— 1/8 个有
-- `easy boolean` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `GetImageSizeAndCount` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
 - `ttN concat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
-| 采样步数 | 25 | 25 - 25 | 8 | 100% |
+| 宽度 | 1360 | 768 - 1920 | 8 | 71% |
+| 高度 | 1024 | 720 - 1920 | 8 | 68% |
+| 采样步数 | 6 | 4 - 8 | 8 | 67% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 75% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 14/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1360，观测区间 768 - 1920，8 个样本
+- 高度 中位数 1024，观测区间 720 - 1920，8 个样本
+- 采样步数 中位数 6，观测区间 4 - 8，8 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 75%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（14/8 个样本）：Steps较低可能导致细节不足

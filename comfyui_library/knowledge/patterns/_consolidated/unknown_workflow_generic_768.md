@@ -3,39 +3,33 @@ name: unknown_workflow_generic_768
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.88975
-common_nodes: [LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.8435
+common_nodes: [LoadImage, PrimitiveStringMultiline, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json, 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json, 视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json, 视频生成/图生视频/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037721979842732034.json]
+members: [图片生成/图生图/图生图工作流｜即梦图片 4.6 多图参考融合_2100471563278700545.json, 图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2103664136193396738.json, 图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2104850053411196930.json, 图片生成/文生图/鸡皮提-Image-2(全能图片G  T8版)_2046522467862192129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_768
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json、视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json、视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json、视频生成/图生视频/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037721979842732034.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图生图工作流｜即梦图片 4.6 多图参考融合_2100471563278700545.json、图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2103664136193396738.json、图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2104850053411196930.json、图片生成/文生图/鸡皮提-Image-2(全能图片G  T8版)_2046522467862192129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `PrimitiveStringMultiline`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `JWInteger` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
+- `RH_BytedanceJimeng46ImageToImage` —— 3/4 个有
+- `Comfly_gpt_image_2` —— 1/4 个有
 
 ## 典型参数
 

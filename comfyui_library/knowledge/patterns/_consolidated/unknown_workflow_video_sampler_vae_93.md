@@ -1,50 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_vae_93
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.9005
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7232
+common_nodes: [CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, DualCLIPLoader, FramePackFindNearestBucket, FramePackSampler_F1, FramePackTimestampedTextEncode, GetImageSizeAndCount, GetNode, ImageResize+, LoadFramePackModel, SetNode, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json, 视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json, 视频生成/文生视频/wanvideo_T2V_文生视频kijai版_1894655158603677697.json, 视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json, 视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json, 视频生成/文生视频/阿里万象文生视频_1894633919931920385.json]
+members: [图片生成/文生图/framepack F1 Plus文生视频加速版（支持F1和普通混元视频LORA）_1932758777428856834.json, 视频生成/图生视频/Frame Pack F1 Plus稳定动态版首尾帧_1932772703088906241.json, 视频生成/图生视频/FramePack F1 Plus时间戳长视频加速工作流V1_1932516244178280449.json, 视频生成/图生视频/framepack F1 Plus图生视频加速版（支持F1和普通混元视频LORA）_1932763782831902721.json, 视频生成/图生视频/新FramePack F1 超长时间视频加速工作流_1932997763401650178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_93
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json、视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json、视频生成/文生视频/wanvideo_T2V_文生视频kijai版_1894655158603677697.json、视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json、视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/framepack F1 Plus文生视频加速版（支持F1和普通混元视频LORA）_1932758777428856834.json、视频生成/图生视频/Frame Pack F1 Plus稳定动态版首尾帧_1932772703088906241.json、视频生成/图生视频/FramePack F1 Plus时间戳长视频加速工作流V1_1932516244178280449.json、视频生成/图生视频/framepack F1 Plus图生视频加速版（支持F1和普通混元视频LORA）_1932763782831902721.json、视频生成/图生视频/新FramePack F1 超长时间视频加速工作流_1932997763401650178.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
+全部 5 个 workflow 都包含：
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DualCLIPLoader`
+- `FramePackFindNearestBucket`
+- `FramePackSampler_F1`
+- `FramePackTimestampedTextEncode`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResize+`
+- `LoadFramePackModel`
+- `SetNode`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 5/6 个有
-- `LayerUtility: PurgeVRAM` —— 3/6 个有
-- `WanVideoTeaCache` —— 3/6 个有
-- `JjkText` —— 2/6 个有
-- `WanVideoTorchCompileSettings` —— 2/6 个有
-- `LayerUtility: DeepSeekAPI` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `LoadImage` —— 4/5 个有
+- `Float` —— 3/5 个有
+- `FramePackLoraSelect` —— 3/5 个有
+- `JWInteger` —— 3/5 个有
+- `PrimitiveFloat` —— 2/5 个有
+- `Bjornulf_ShowStringText` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `SDXLEmptyLatentSizePicker+` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768x1280 (0.6) | - | 1 | 100% |
+| 高度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

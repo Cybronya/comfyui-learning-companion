@@ -3,33 +3,38 @@ name: unknown_workflow_generic_378
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.733429
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.740143
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json, 音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json, 音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json, 音频生成/音频生成/音乐生成--HeartMula让你写歌自由_2013804466218209282.json, 音频生成/音频生成/🎵HeartMuLa🎵最新最强开源音乐生成_2014297660701810690.json]
+members: [图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json, 图片生成/图生图/个人号洗4.0_2055233377527189506.json, 图片生成/图生图/个人号洗_2052376260571090945.json, 图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json, 图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json, 图片生成/图生图/简单的动作更改，不改变原图风格_1978322603704246273.json, 图片生成/文生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1977798578682953729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_378
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json、音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json、音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json、图片生成/图生图/个人号洗4.0_2055233377527189506.json、图片生成/图生图/个人号洗_2052376260571090945.json、图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json、图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/7 个有
-- `INTConstant` —— 1/7 个有
-- `SaveAudioMP3` —— 1/7 个有
+- `CR Text` —— 6/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `ResizeLongestToNode` —— 1/7 个有
 
 ## 典型参数
 

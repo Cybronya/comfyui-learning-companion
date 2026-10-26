@@ -2,60 +2,60 @@
 name: unknown_workflow_sampler_clip_unet_167
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.913875
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.840125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json, 图片生成/文生图/flux文生图(自用）_1891744030592774146.json, 图片生成/文生图/flux文生图_1896040375998414850.json, 图片生成/文生图/flux文生图_1896043053692092417.json, 图片生成/文生图/flux生图工作流_1946106579613609985.json, 图片生成/文生图/小红书生活FLUX一键生成极致逼真美女—comfyui工作流_1957765376640909314.json, 图片生成/文生图/文生四宫格图_1908149869620375554.json, 图片生成/文生图/文生四宫格图_2060284327476416514.json]
+members: [图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json, 图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json, 图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json, 图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json, 图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json, 图片生成/文生图/krea2横_2091833320878469121.json, 图片生成/文生图/krea2竖_2092094811011641346.json, 图片生成/文生图/东方美学制作流_2100541472004198401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_167
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json、图片生成/文生图/flux文生图(自用）_1891744030592774146.json、图片生成/文生图/flux文生图_1896040375998414850.json、图片生成/文生图/flux文生图_1896043053692092417.json、图片生成/文生图/flux生图工作流_1946106579613609985.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json、图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json、图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json、图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json、图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `PrimitiveInt`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `EmptyLatentImage` —— 5/8 个有
-- `FluxGuidance` —— 4/8 个有
-- `PreviewImage` —— 4/8 个有
-- `UnetLoaderGGUF` —— 3/8 个有
-- `CheckpointLoaderSimple` —— 2/8 个有
-- `EmptySD3LatentImage` —— 2/8 个有
-- `ModelSamplingFlux` —— 2/8 个有
-- `DualCLIPLoaderGGUF` —— 1/8 个有
-- `ImageCrop+` —— 1/8 个有
-- `RandomPrompt` —— 1/8 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/8 个有
-- `StringFunction|pysssss` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ConditioningKrea2Rebalance` —— 6/8 个有
+- `Lora Loader Stack (rgthree)` —— 6/8 个有
+- `LatentUpscaleBy` —— 3/8 个有
+- `PrimitiveFloat` —— 3/8 个有
+- `EmptyImage` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1448 | 5 | 70% |
-| 高度 | 1024 | 1 - 1920 | 6 | 38% |
+| 宽度 | 1088 | 1024 - 1920 | 8 | 73% |
+| 高度 | 1920 | 736 - 1920 | 8 | 69% |
+| 采样步数 | fixed | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 10 | 8 | 95% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -63,5 +63,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1448，5 个样本
-- 高度 中位数 1024，观测区间 1 - 1920，6 个样本，取值分散，一致性仅 38%
+- 宽度 中位数 1088，观测区间 1024 - 1920，8 个样本
+- 高度 中位数 1920，观测区间 736 - 1920，8 个样本
+- 采样步数 最常用 fixed，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 10，8 个样本，取值集中（一致性 95%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

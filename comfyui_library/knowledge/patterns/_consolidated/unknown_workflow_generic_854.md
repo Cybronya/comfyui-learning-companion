@@ -1,52 +1,38 @@
 ---
 name: unknown_workflow_generic_854
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.745
-common_nodes: [Bjornulf_ShowInt, CompressImages, ConstrainImage|pysssss, Fast Groups Bypasser (rgthree), ImageListToBatch_, Int, JjkText, PreviewImage, ProcessString, RHBatchImages:, RHExtractImage, RHUploadZip, RH_Nano_Banana2_Image2Image, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy promptLine, easy showAnything]
+coverage: 0.9225
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/AIGC批量处理底图_2020703649630003201.json, 图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json, 图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json]
+members: [视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json, 视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json, 视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_854
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AIGC批量处理底图_2020703649630003201.json、图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json、图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json、视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json、视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CompressImages`
-- `ConstrainImage|pysssss`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageListToBatch_`
-- `Int`
-- `JjkText`
-- `PreviewImage`
-- `ProcessString`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy promptLine`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `SDVN Menu Option` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
+- `PreviewAny` —— 3/4 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

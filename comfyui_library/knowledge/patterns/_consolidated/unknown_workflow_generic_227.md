@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_227
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.764778
-common_nodes: [LoadImage, PrimitiveStringMultiline, RH_SeedreamV5ProImageToImage, SaveImage]
+coverage: 1
+common_nodes: [CR Prompt Text, ConcatTextOfUtils, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json, 图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json, 图片生成/图生图/建筑效果图工作流｜草图毛坯照生成建筑外观效果图_2099314501794484225.json, 图片生成/图生图/指定姿势出图工作流｜姿势参考图控制人物动作_2099402203030188034.json, 图片生成/图生图/真人转动漫工作流｜照片一键变日系动漫风格_2099402191676207105.json, 图片生成/图生图/艺术风格转换工作流｜油画水彩素描卡通一键换_2099453299673096193.json, 图片生成/图生图/黑白照片上色工作流｜老照片智能上色还原_2099453304219721729.json]
+members: [视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json, 视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json, 视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json, 视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json, 视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json, 视频生成/图生视频/牛来版Seedance2.5片头（RH版）_2089590549220253697.json, 视频生成/图生视频/（新片头2-自用）Seedance2.5片头（RH版）_2097963487086600194.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099453313115836417.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099460900435611649.json, 视频生成/图生视频/（新片头4-自用-12图）Seedance2.5片头（RH版）_2102017601940578305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_227
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json、图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json、图片生成/图生图/建筑效果图工作流｜草图毛坯照生成建筑外观效果图_2099314501794484225.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json、视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json、视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json、视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json、视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
+- `ConcatTextOfUtils`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_SeedreamV5ProImageToImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner_Pro` —— 1/9 个有
-- `StringConcatenate` —— 1/9 个有
+- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 9/10 个有
+- `LoadAudio` —— 6/10 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/10 个有
 
 ## 典型参数
 

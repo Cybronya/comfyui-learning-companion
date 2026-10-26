@@ -3,31 +3,34 @@ name: unknown_workflow_generic_946
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.822333
-common_nodes: [RH_YouchuanTextToImageV61, SaveImage]
+coverage: 0.877667
+common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/悠船图生图-v61_2080588685870981121.json, 图片生成/文生图/Youchuan_TextToImageV61_v6.1_2034593996743380993.json, 图片生成/文生图/悠船文生图-v61_2080617587951620098.json]
+members: [图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json, 图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json, 图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_946
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v61_2080588685870981121.json、图片生成/文生图/Youchuan_TextToImageV61_v6.1_2034593996743380993.json、图片生成/文生图/悠船文生图-v61_2080617587951620098.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json、图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json、图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_YouchuanTextToImageV61`
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `JWImageResizeByLongerSide` —— 1/3 个有
 
 ## 典型参数
 

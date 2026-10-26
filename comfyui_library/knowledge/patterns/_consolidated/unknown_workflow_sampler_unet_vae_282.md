@@ -2,82 +2,69 @@
 name: unknown_workflow_sampler_unet_vae_282
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.967
-common_nodes: [BasicGuider, CLIPLoader, CreateVideo, GetImageSizeAndCount, GrowMask, ImageBlur, ImageCompositeMasked, ImageScaleToTotalPixels, ImageToMask, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoadVideoDepthAnythingModel, MaskToImage, MiniMaxH3ReferenceToVideo, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PointsEditor, RandomNoise, SamplerCustomAdvanced, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VideoDepthAnythingProcess]
-problems: []
+level: strong
+coverage: 0.772
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageSmartSharpen+, JoinImageWithAlpha, KSampler, Label (rgthree), LoadImage, PrimitiveFloat, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SplitImageWithAlpha, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json]
+members: [图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_282
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CreateVideo`
-- `GetImageSizeAndCount`
-- `GrowMask`
-- `ImageBlur`
-- `ImageCompositeMasked`
-- `ImageScaleToTotalPixels`
-- `ImageToMask`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageSmartSharpen+`
+- `JoinImageWithAlpha`
+- `KSampler`
+- `Label (rgthree)`
 - `LoadImage`
-- `LoadVideoDepthAnythingModel`
-- `MaskToImage`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3VDNExecutionPlanT8Advanced`
-- `MiniMaxH3VDNModelComposerT8Advanced`
-- `PointsEditor`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `PrimitiveFloat`
+- `ResizeImageMaskNode`
+- `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
+- `SplitImageWithAlpha`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VideoDepthAnythingProcess`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `VHS_VideoInfoLoaded` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `MiniMaxH3AVDecodeT8` —— 1/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
-- `MiniMaxH3AudioMixT8` —— 1/3 个有
-- `MiniMaxH3FaceRefineConditioningT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefinePlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineSamplerT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineStitchAuditT8Advanced` —— 1/3 个有
-- `MiniMaxH3OutputTrimT8` —— 1/3 个有
-- `MiniMaxH3SafeAVSaveT8Advanced` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1 | 1 - 1 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode

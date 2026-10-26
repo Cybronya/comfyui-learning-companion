@@ -1,84 +1,98 @@
 ---
 name: text_to_image_lora_sampler_clip_555
 type: Text To Image
-frequency: 2
+frequency: 3
 level: weak
-coverage: 0.9405
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.878
+common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GH_ImageVideoComparer, GetImageSize, ImageScaleToTotalPixels, ImageSharpen, JsonExtractString, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewAny, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, TTResolutionSelector, TextConcatenator, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAEEncode, VAELoader, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Beyond Reality Z-image人像写真换脸_2006760693088915457.json, 图片生成/图生图/角色壁纸-2511_2052886735515860993.json]
+members: [图片生成/文生图/Qwen_image2.1+Z_image+Krea2三模型文生图合集工作流_2104673944501575681.json, 图片生成/文生图/Qwen_image2.1、Z_image、Krea2_文生图工作流合集_2103746262452498433.json, 图片生成/文生图/Qwen_image2.1、Z_image、Krea2文生图合集｜三大模型一站式出图_2104485822958489602.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_555
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Beyond Reality Z-image人像写真换脸_2006760693088915457.json、图片生成/图生图/角色壁纸-2511_2052886735515860993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen_image2.1+Z_image+Krea2三模型文生图合集工作流_2104673944501575681.json、图片生成/文生图/Qwen_image2.1、Z_image、Krea2_文生图工作流合集_2103746262452498433.json、图片生成/文生图/Qwen_image2.1、Z_image、Krea2文生图合集｜三大模型一站式出图_2104485822958489602.json）
 
 - **类型**：Text To Image
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text Concatenate`
+- `ColorMatch`
 - `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
+- `GH_ImageVideoComparer`
+- `GetImageSize`
 - `ImageScaleToTotalPixels`
+- `ImageSharpen`
+- `JsonExtractString`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
+- `PreviewAny`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `Seed (rgthree)`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `TTResolutionSelector`
+- `TextConcatenator`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `FaceToMask` —— 1/2 个有
-- `GetImage` —— 1/2 个有
-- `ImageBlendResize` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LatentUpscaleBy` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `TextEncodeQwenImageEdit` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `scale` —— 1/2 个有
+- `JjkText` —— 2/3 个有
+- `solarL_SaveImagesToZip` —— 2/3 个有
+- `忽略多组孤海` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1372 | - | 2 | 79% |
-| 高度 | 1424 | - | 2 | 65% |
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 5 | - | 2 | 20% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 宽度 | 80 | 80 - 1024 | 3 | 0% |
+| 高度 | 80 | 80 - 1024 | 3 | 0% |
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
+| 采样算法 | er_sde | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1372，样本不足，未给区间，2 个样本
-- 高度 中位数 1424，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 5，样本不足，未给区间，2 个样本，取值分散，一致性仅 20%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
+- 采样算法 最常用 er_sde，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（8/3 个样本）：Steps较低可能导致细节不足

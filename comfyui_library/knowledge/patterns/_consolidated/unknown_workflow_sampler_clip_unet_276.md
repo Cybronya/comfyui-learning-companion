@@ -1,60 +1,49 @@
 ---
 name: unknown_workflow_sampler_clip_unet_276
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.96875
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8942
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.2-KLEIN-单图编辑-高清直出_2019989626764664833.json, 图片生成/图生图/FLUX.2-KLEIN-双图编辑-高清直出_2019989419784146946.json, 图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json, 图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json]
+members: [图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json, 图片生成/文生图/Flux3 Klein 提示词增强文生图_2113652586107727873.json, 图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json, 图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json, 视频生成/图生视频/Flux3加速版多图编辑V1_2110847111846780929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_276
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX.2-KLEIN-单图编辑-高清直出_2019989626764664833.json、图片生成/图生图/FLUX.2-KLEIN-双图编辑-高清直出_2019989419784146946.json、图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json、图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json、图片生成/文生图/Flux3 Klein 提示词增强文生图_2113652586107727873.json、图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json、图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json、视频生成/图生视频/Flux3加速版多图编辑V1_2110847111846780929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
 - `KSamplerSelect`
-- `LoadImage`
+- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `SeedVR2` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `ConcatTextOfUtils` —— 1/4 个有
-- `ImpactInt` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `LoadImage` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `ReferenceMultiLatent` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `ResolutionSelector` —— 2/5 个有
+- `TextGenerate` —— 2/5 个有
+- `GetImageSize` —— 1/5 个有
 
 ## 典型参数
 

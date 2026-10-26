@@ -1,81 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_573
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.836667
-common_nodes: [DownloadAndLoadWav2VecModel, GetNode, ImageConcatMulti, ImageFromBatch+, Int, JWInteger, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.926
+common_nodes: [Int, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json, 视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json, 视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json]
+members: [视频生成/图生视频/Wan2.1-图生视频_1949678146162446337.json, 视频生成/图生视频/Wan2.2图生视频-Kijai优化版-极速优化版_1950213842141929473.json, 视频生成/图生视频/Wan2.2图生视频-Kijai优化版_1950147247079079938.json, 视频生成/图生视频/Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_573
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json、视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json、视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1-图生视频_1949678146162446337.json、视频生成/图生视频/Wan2.2图生视频-Kijai优化版-极速优化版_1950213842141929473.json、视频生成/图生视频/Wan2.2图生视频-Kijai优化版_1950147247079079938.json、视频生成/图生视频/Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageFromBatch+`
+全部 4 个 workflow 都包含：
 - `Int`
-- `JWInteger`
-- `LoadAudio`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `AudioSeparation` —— 2/3 个有
-- `CR Integer To String` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `ImageResize+` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `SoundFlow_GetLength` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `ToInt` —— 2/3 个有
-- `Wan22PromptSelector` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `MelBandRoFormerModelLoader` —— 1/3 个有
-- `MelBandRoFormerSampler` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `VideoCombine_Adv` —— 1/3 个有
+- `ImageResize+` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `WanVideoSetBlockSwap` —— 3/4 个有
+- `WanVideoSetLoRAs` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `CreateCFGScheduleFloatList` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `StringToFloatList` —— 1/4 个有
+- `WanVideoApplyNAG` —— 1/4 个有
+- `WanVideoEasyCache` —— 1/4 个有
+- `WanVideoEnhanceAVideo` —— 1/4 个有
+- `WanVideoExperimentalArgs` —— 1/4 个有
+- `WanVideoSLG` —— 1/4 个有
+- `WanVideoTextEncodeSingle` —— 1/4 个有
 
 ## 典型参数
 

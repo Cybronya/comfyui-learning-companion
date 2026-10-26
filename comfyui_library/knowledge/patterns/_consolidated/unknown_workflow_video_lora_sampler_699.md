@@ -3,53 +3,59 @@ name: unknown_workflow_video_lora_sampler_699
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.782333
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.968
+common_nodes: [ColorMatch, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, RH_Translator, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视+提示词智能扩写_1951972629169295361.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json]
+members: [视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json, 视频生成/图生视频/最强模型FusionX加速高细节图生视频_1934634580886659073.json, 视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_699
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视+提示词智能扩写_1951972629169295361.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json、视频生成/图生视频/最强模型FusionX加速高细节图生视频_1934634580886659073.json、视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `ColorMatch`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `RH_Translator`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `LayerMask: LoadFlorence2Model` —— 2/3 个有
+- `LayerUtility: Florence2Image2Prompt` —— 2/3 个有
 - `ShowText|pysssss` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `Wan22PromptSelector` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoMagCache` —— 1/3 个有
+- `WanVideoVACEModelSelect` —— 1/3 个有
 
 ## 典型参数
 

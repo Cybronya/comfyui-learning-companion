@@ -3,34 +3,45 @@ name: unknown_workflow_generic_1677
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.626
-common_nodes: [PrimitiveStringMultiline, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.7445
+common_nodes: [CR Prompt Text, JjkText, LoadImage, PreviewAny, RH_Grok_Video3, RH_Sora2_I2V, RH_Sora2_I2V_PRO, RH_Veo3_Image2Video, SaveVideo, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json, 音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json]
+members: [视频生成/图生视频/4.视频生成_2031763163913392130.json, 视频生成/文生视频/AI动画 VIDEO - Workflow V1.0_2028430413558976513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1677
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json、音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/4.视频生成_2031763163913392130.json、视频生成/文生视频/AI动画 VIDEO - Workflow V1.0_2028430413558976513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `CR Prompt Text`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `RH_Grok_Video3`
+- `RH_Sora2_I2V`
+- `RH_Sora2_I2V_PRO`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Sora2_I2V_Realistic` —— 1/2 个有
 
 ## 典型参数
 

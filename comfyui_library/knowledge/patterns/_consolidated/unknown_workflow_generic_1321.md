@@ -3,42 +3,31 @@ name: unknown_workflow_generic_1321
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7885
-common_nodes: [CR Prompt Text, DF_Integer, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, RHHiddenNodes, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2TextToImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
+coverage: 0.667
+common_nodes: [JjkText, LoadImage, QWEN_TextDisplay, RHLLMChatNode, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能G2-Images 2.0文生图+图文生图工作流-二流合集_2046812229017804802.json, 图片生成/文生图/全能G2-Images 2.0文生图+八张图文生图工作流_2058924668106657794.json]
+members: [图片生成/反推提示词/漫剧对战打斗分镜脚本生成LLM_2109432771574849538.json, 图片生成/反推提示词/街头拳皇格斗对战SKILL-LLM_2110003190858076162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1321
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能G2-Images 2.0文生图+图文生图工作流-二流合集_2046812229017804802.json、图片生成/文生图/全能G2-Images 2.0文生图+八张图文生图工作流_2058924668106657794.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/漫剧对战打斗分镜脚本生成LLM_2109432771574849538.json、图片生成/反推提示词/街头拳皇格斗对战SKILL-LLM_2110003190858076162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `DF_Integer`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `JjkText`
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `QWEN_TextDisplay`
+- `RHLLMChatNode`
+- `easy saveText`
 
 ## 典型参数
 

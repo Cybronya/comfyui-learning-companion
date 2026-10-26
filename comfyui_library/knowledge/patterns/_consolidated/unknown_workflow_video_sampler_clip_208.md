@@ -2,59 +2,68 @@
 name: unknown_workflow_video_sampler_clip_208
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.852333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyHunyuanLatentVideo, ImageFromBatch+, KSamplerAdvanced, ModelSamplingSD3, PrimitiveInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.965333
+common_nodes: [AIO_Preprocessor, ImageResizeKJ, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json, 视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json, 视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json]
+members: [视频生成/图生视频/【跳舞视频 】最新wan2.1上传图片生成跳舞视频_1912765246451216385.json, 视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json, 视频生成/文生视频/WAN FAN首尾帧工作流_1906315512241131522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json、视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json、视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【跳舞视频 】最新wan2.1上传图片生成跳舞视频_1912765246451216385.json、视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json、视频生成/文生视频/WAN FAN首尾帧工作流_1906315512241131522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `EmptyHunyuanLatentVideo`
-- `ImageFromBatch+`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `AIO_Preprocessor`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `AILab_QwenVL` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `String` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `JanusImageUnderstanding` —— 2/3 个有
+- `JanusModelLoader` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `ImageBlend` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `KepStringLiteral` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1.1 | 3 | 95% |
-| 调度器 | uni_pc | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1.1，3 个样本，取值集中（一致性 95%）
-- 调度器 最常用 uni_pc，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

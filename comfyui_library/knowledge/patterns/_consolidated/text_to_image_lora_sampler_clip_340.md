@@ -1,84 +1,81 @@
 ---
 name: text_to_image_lora_sampler_clip_340
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9106
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8665
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ProcessString, SaveImage, Seed (rgthree), Text Concatenate, VAEDecode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2-Klein一键风格迁移｜真人转动漫高清修复放大图生图_2110704131907346433.json, 图片生成/图生图/Flux2-Klein真人转动漫神器｜风格迁移图生图高清放大修复_2110713762478125057.json, 图片生成/图生图/Krea2洗图流无需反推，图生图其它图片处理_2111602503593844737.json, 图片生成/图生图/一键无脑反推｜krea2美少女图生图提示词生成_2090227922404724738.json, 图片生成/图生图/无需反推洗图处理｜krea2图生图摄影图片优化_2095514803900084226.json]
+members: [图片生成/图生图/Z-Image DetailDeamonZ lora权重XYZ对比测试工作流V1_1999495076600479745.json, 图片生成/文生图/Red-Z-Image+Detail Deamon去网红感真实文生图(Pruned+Lora版)_1999788853470916609.json, 图片生成/文生图/Red-Z-Image+Detail Deamon去网红感真实文生图V1(Pruned+Lora版)_1999758914910646273.json, 图片生成/文生图/Red-Z-Image去网红感真实文生图V1(Pruned+Lora可调权重版)_1998475968048168961.json, 图片生成/文生图/Red-Z-Image去网红感真实文生图V1(满血版)_1998238134959767554.json, 图片生成/文生图/Z-image文生图_2035961089313214465.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_340
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein一键风格迁移｜真人转动漫高清修复放大图生图_2110704131907346433.json、图片生成/图生图/Flux2-Klein真人转动漫神器｜风格迁移图生图高清放大修复_2110713762478125057.json、图片生成/图生图/Krea2洗图流无需反推，图生图其它图片处理_2111602503593844737.json、图片生成/图生图/一键无脑反推｜krea2美少女图生图提示词生成_2090227922404724738.json、图片生成/图生图/无需反推洗图处理｜krea2图生图摄影图片优化_2095514803900084226.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Z-Image DetailDeamonZ lora权重XYZ对比测试工作流V1_1999495076600479745.json、图片生成/文生图/Red-Z-Image+Detail Deamon去网红感真实文生图(Pruned+Lora版)_1999788853470916609.json、图片生成/文生图/Red-Z-Image+Detail Deamon去网红感真实文生图V1(Pruned+Lora版)_1999758914910646273.json、图片生成/文生图/Red-Z-Image去网红感真实文生图V1(Pruned+Lora可调权重版)_1998475968048168961.json、图片生成/文生图/Red-Z-Image去网红感真实文生图V1(满血版)_1998238134959767554.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
-- `JjkText`
+- `JDCN_StringToList`
 - `KSampler`
-- `LoadImage`
+- `LayerUtility: PurgeVRAM`
 - `LoraLoaderModelOnly`
+- `ProcessString`
 - `SaveImage`
-- `UNETLoader`
+- `Seed (rgthree)`
+- `Text Concatenate`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/5 个有
-- `MuyeTextEditOutput` —— 3/5 个有
-- `VAEEncode` —— 3/5 个有
-- `GetImageSize` —— 2/5 个有
-- `PainterFluxImageEdit` —— 2/5 个有
-- `TextEncodeKrea2OstrisEdit` —— 2/5 个有
-- `easy cleanGpuUsed` —— 2/5 个有
-- `easy textIndexSwitch` —— 2/5 个有
-- `workflow>自定义采样器` —— 2/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `String Literal` —— 1/5 个有
-- `StringMergeNode` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `Float` —— 4/6 个有
+- `JWFloat` —— 3/6 个有
+- `AddLabel` —— 1/6 个有
+- `DF_Get_latent_size` —— 1/6 个有
+- `DuckHideNode` —— 1/6 个有
+- `EmptyImage` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `easy batchAnything` —— 1/6 个有
+- `easy forLoopEnd` —— 1/6 个有
+- `easy forLoopStart` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1080 | 1080 - 1080 | 6 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 6 | 100% |
+| 采样步数 | 10 | 10 - 10 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（9/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 1080 - 1080，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

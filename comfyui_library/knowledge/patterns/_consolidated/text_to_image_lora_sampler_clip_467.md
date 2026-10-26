@@ -1,128 +1,72 @@
 ---
 name: text_to_image_lora_sampler_clip_467
 type: Text To Image
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.528667
-common_nodes: [BasicScheduler, BatchCount+, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyLatentImage, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetNode, GetVideoComponents, H3AudioRefineSampler, H3FrozenVideoCache, ImageAddNoise, ImageBatchMulti, JjkText, KSampler, KSamplerSelect, LoadVideo, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SaveVideo, SetNode, StringReplace, Text Concatenate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy saveVideo, easy string, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.99525
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json, 图片生成/文生图/MiniMax H3超灵活导演台SelfLift双采无缝无色差超长视频2.0，图生视频方案_2107543879313612802.json, 视频生成/文生视频/MiniMax H3 超灵活导演台｜双采无缝衔接长视频+音频修复_2096893633508237313.json]
+members: [图片生成/文生图/Flux生态对比_1973765930620727297.json, 图片生成/文生图/flux  krea基础文生图工作流_1953071206398365698.json, 图片生成/文生图/krea 批量出图_1955652380474818561.json, 图片生成/文生图/基础Flux八步加速工作流_1950469653418184706.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_467
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json、图片生成/文生图/MiniMax H3超灵活导演台SelfLift双采无缝无色差超长视频2.0，图生视频方案_2107543879313612802.json、视频生成/文生视频/MiniMax H3 超灵活导演台｜双采无缝衔接长视频+音频修复_2096893633508237313.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux生态对比_1973765930620727297.json、图片生成/文生图/flux  krea基础文生图工作流_1953071206398365698.json、图片生成/文生图/krea 批量出图_1955652380474818561.json、图片生成/文生图/基础Flux八步加速工作流_1950469653418184706.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchCount+`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `ConditioningZeroOut`
-- `CreateVideo`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `ExtendIntermediateSigmas`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GetVideoComponents`
-- `H3AudioRefineSampler`
-- `H3FrozenVideoCache`
-- `ImageAddNoise`
-- `ImageBatchMulti`
-- `JjkText`
+- `FluxGuidance`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadVideo`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3AudioGuideFeather`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
-- `SetNode`
-- `StringReplace`
-- `Text Concatenate`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VideoFrameSample`
-- `VideoTemporalCrop`
-- `easy batchAnything`
-- `easy float`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy mergeVideosFromPaths`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
-- `easy promptLine`
-- `easy saveVideo`
-- `easy string`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorTransfer` —— 2/3 个有
-- `ComfySwitchNode` —— 2/3 个有
-- `SelfLiftH3Sampler` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `LTXVConcatAVLatent` —— 1/3 个有
-- `LTXVSeparateAVLatent` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
-- `RandomNoise` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
+- `FluxResolutionNode` —— 2/4 个有
+- `RH_Prompter` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `CR Seed` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 9 | 8 - 20 | 4 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1536 | 4 | 81% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1536，4 个样本，取值集中（一致性 81%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

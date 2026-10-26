@@ -2,84 +2,55 @@
 name: unknown_workflow_video_lora_sampler_675
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.649333
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSize, ImageCompositeMasked, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+level: strong
+coverage: 0.939
+common_nodes: [BerniniStudio, CLIPLoader, DapaoSmartMemoryOptimizerNode, ImageSharpen, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2075466870496522242.json, 视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2080060140501426177.json, 视频生成/文生视频/Scail2-动作迁移（单人+多人版）_2102405723132088321.json]
+members: [视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json, 视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json, 视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_675
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2075466870496522242.json、视频生成/图生视频/影视二创人物替换漫剧电商服装分镜真人_2080060140501426177.json、视频生成/文生视频/Scail2-动作迁移（单人+多人版）_2102405723132088321.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json、视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json、视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
+- `BerniniStudio`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `ImageCompositeMasked`
-- `Int`
-- `KSamplerSelect`
+- `DapaoSmartMemoryOptimizerNode`
+- `ImageSharpen`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PreviewImage`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `TensorLoopClose`
-- `TensorLoopOpen`
+- `RIFE VFI`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `easy int`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `ImageConcatenate_UTK` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `TextConcatenate_UTK` —— 2/3 个有
-- `VHS_VideoInfoSource` —— 2/3 个有
-- `easy imageCount` —— 2/3 个有
-- `easy mathInt` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `ResizeImageMaskNode` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | uni_pc | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -87,4 +58,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

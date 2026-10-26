@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_493
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8152
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_NODE, SaveImage, TextConcat, easy showAnything]
+coverage: 0.741667
+common_nodes: [BagelModelLoader, BagelTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json, 图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json, 图片生成/文生图/2 旅行手账生成器_2000243378887458818.json, 图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json, 图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json]
+members: [图片生成/文生图/Bagel Text To Image_1926938875837489153.json, 图片生成/文生图/Bagel 豆包文生图模型_1928431954796957698.json, 图片生成/文生图/Bagel7B文生图_1928300767013126146.json, 图片生成/文生图/Bagel多模态模型_文生图_1927208918051672066.json, 图片生成/文生图/Bagel文生图工作流V2（10倍加速版）_1926955291148255233.json, 图片生成/文生图/【老金驿站】字节最新BAGEL文生图工作流_1927344710791368706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_493
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json、图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json、图片生成/文生图/2 旅行手账生成器_2000243378887458818.json、图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json、图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Bagel Text To Image_1926938875837489153.json、图片生成/文生图/Bagel 豆包文生图模型_1928431954796957698.json、图片生成/文生图/Bagel7B文生图_1928300767013126146.json、图片生成/文生图/Bagel多模态模型_文生图_1927208918051672066.json、图片生成/文生图/Bagel文生图工作流V2（10倍加速版）_1926955291148255233.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadImage`
-- `RH_LLMAPI_NODE`
+全部 6 个 workflow 都包含：
+- `BagelModelLoader`
+- `BagelTextToImage`
 - `SaveImage`
-- `TextConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
-- `AILab_QwenVL` —— 2/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
+- `ShowText|pysssss` —— 4/6 个有
+- `PreviewImage` —— 1/6 个有
+- `SeargePromptText` —— 1/6 个有
 
 ## 典型参数
 

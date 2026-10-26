@@ -3,17 +3,17 @@ name: unknown_workflow_sampler_clip_unet_421
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.839
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DownloadAndLoadFlorence2Model, Florence2Run, ImageResizeKJv2, KSampler, LG_LoadImage, LG_Noise, LatentNoised, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, ModelSamplingZImage, PreviewImage, Prompts Everywhere, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.845
+common_nodes: [Anything Everywhere3, BasicGuider, CLIPLoader, CLIPTextEncode, CR Latent Input Switch, CR SDXL Aspect Ratio, CR Text, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, FluxGuidance, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/图生图/【LG】i2i图生图增加细节_2005988185987563522.json, 图片生成/文生图/【LG】i2i图生图增加细节_2006465608606552066.json]
+members: [图片生成/图生图/FLUX.2- klein单图图编辑_2012069959744098306.json, 图片生成/图生图/FLUX.2- klein好多图编辑_2011996211644993537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_421
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【LG】i2i图生图增加细节_2005988185987563522.json、图片生成/文生图/【LG】i2i图生图增加细节_2006465608606552066.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX.2- klein单图图编辑_2012069959744098306.json、图片生成/图生图/FLUX.2- klein好多图编辑_2011996211644993537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -24,50 +24,49 @@ source: knowledge_consolidation
 
 全部 2 个 workflow 都包含：
 - `Anything Everywhere3`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `ImageResizeKJv2`
-- `KSampler`
-- `LG_LoadImage`
-- `LG_Noise`
-- `LatentNoised`
+- `CR Latent Input Switch`
+- `CR SDXL Aspect Ratio`
+- `CR Text`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
 - `LayerUtility: ImageReel`
 - `LayerUtility: ImageReelComposit`
-- `ModelSamplingZImage`
-- `PreviewImage`
-- `Prompts Everywhere`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `FluxKontextImageScale` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `SDPoseOODLoader` —— 1/2 个有
+- `SDPoseOODProcessor` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 3 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.15 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（8/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

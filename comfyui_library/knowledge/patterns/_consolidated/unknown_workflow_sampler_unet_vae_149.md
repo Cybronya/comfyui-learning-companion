@@ -2,75 +2,68 @@
 name: unknown_workflow_sampler_unet_vae_149
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.955143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: strong
+coverage: 0.868286
+common_nodes: [Anything Everywhere3, CLIPLoader, Int Literal, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json, 图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成最新工作流_2093552366741180417.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成（多人）工作流_2095674532345499649.json]
+members: [图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json, 图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json, 图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json, 图片生成/图生图/产品精修_2018514606955700225.json, 图片生成/图生图/人物多角度_2018509506082250754.json, 图片生成/图生图/多角度视角转换 人物一致性 （单图）_2043566764419715074.json, 图片生成/图生图/多角度视角转换 人物一致性_2043568856052015105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_149
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json、图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json、图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json、图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json、图片生成/图生图/产品精修_2018514606955700225.json、图片生成/图生图/人物多角度_2018509506082250754.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `Anything Everywhere3`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `EasyCache`
-- `KSamplerSelect`
-- `LoadAudio`
+- `Int Literal`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
-- `CR Text` —— 5/7 个有
-- `ImageUpscaleWithModel` —— 5/7 个有
-- `LazySwitchKJ_UTK` —— 5/7 个有
-- `PrimitiveFloat` —— 5/7 个有
-- `TextConcatenate_UTK` —— 5/7 个有
-- `UpscaleModelLoader` —— 5/7 个有
-- `easy boolean` —— 5/7 个有
-- `Apply Whisper` —— 4/7 个有
-- `AudioCrop` —— 4/7 个有
-- `DF_Int_to_Float` —— 4/7 个有
-- `FB_Qwen3TTSDialogueInference` —— 4/7 个有
-- `FB_Qwen3TTSRoleBank` —— 4/7 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 4/7 个有
-- `ImpactSwitch` —— 4/7 个有
-- `VHS_VideoCombine` —— 4/7 个有
-- `CreateVideo` —— 3/7 个有
-- `SaveVideo` —— 3/7 个有
-- `VAEDecodeAudio` —— 3/7 个有
-- `ImageScaleBy` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `MemoryCleaner` —— 4/7 个有
+- `SeedVR2` —— 4/7 个有
+- `SeedVR2ExtraArgs` —— 4/7 个有
+- `QwenMultiangleCameraNode` —— 3/7 个有
+- `Text` —— 2/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 19/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（19/7 个样本）：Steps较低可能导致细节不足

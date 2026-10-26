@@ -3,34 +3,34 @@ name: unknown_workflow_generic_540
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9324
-common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.667
+common_nodes: [LoadImage, LoadVideo, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/微调模块_2057855758682902529.json, 图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json, 图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json, 图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json, 图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json]
+members: [图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json, 图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json, 图片生成/反推提示词/视频反推提示词_1971893542417264641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_540
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/微调模块_2057855758682902529.json、图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json、图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json、图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json、图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json、图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json、图片生成/反推提示词/视频反推提示词_1971893542417264641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `LoadVideo`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,35 +3,38 @@ name: unknown_workflow_video_54
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.902667
-common_nodes: [Int, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.846
+common_nodes: [CR Text, DrawMaskOnImage, ImageFromBatch, LayerMask: MaskGrow, MemoryCleaner, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy sam3GetObjectMask, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack 60s视频生成工作流【AI小王子】_1913162055489388545.json, 视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json, 视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json]
+members: [图片生成/图生图/sam3 人物提取，支持 text prompt，支持 选定人物_2037063812876083202.json, 图片生成/文生图/sam3 纯正_2037185503736373249.json, 视频生成/图生视频/sam3 人物提取，支持 text prompt，支持 选定人物_2037061914320179202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_54
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack 60s视频生成工作流【AI小王子】_1913162055489388545.json、视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json、视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/sam3 人物提取，支持 text prompt，支持 选定人物_2037063812876083202.json、图片生成/文生图/sam3 纯正_2037185503736373249.json、视频生成/图生视频/sam3 人物提取，支持 text prompt，支持 选定人物_2037061914320179202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Int`
-- `LoadImage`
-- `RunningHub_FramePack`
+- `CR Text`
+- `DrawMaskOnImage`
+- `ImageFromBatch`
+- `LayerMask: MaskGrow`
+- `MemoryCleaner`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `JjkText` —— 1/3 个有
+- `VHS_VideoInfo`
+- `easy sam3GetObjectMask`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
 
 ## 典型参数
 

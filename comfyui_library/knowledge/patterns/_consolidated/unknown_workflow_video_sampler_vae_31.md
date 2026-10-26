@@ -3,55 +3,50 @@ name: unknown_workflow_video_sampler_vae_31
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.934083
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.968917
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3快乐的小孩_2088616677788446722.json, 视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json, 视频生成/图生视频/video_minimax_h3_i2v_2084181095406456833.json, 视频生成/图生视频/创意无限_2087087580423741441.json, 视频生成/图生视频/吉他和狗狗_2090264859219947522.json, 视频生成/图生视频/图生视频_2086720339278647297.json, 视频生成/图生视频/最新mimimaxH3漫剧镜头T1_2084662928074174466.json, 视频生成/图生视频/空白工作流MinimaxH3首尾帧创意视频T1_2086623709909053442.json, 视频生成/图生视频/首尾帧创意电商广告_2087187752570933249.json, 视频生成/图生视频/首尾帧欢乐小狗_2087363013287432194.json, 视频生成/图生视频/首尾帧生成广告视频_2087173880573157377.json, 视频生成/图生视频/首尾帧视频生成_2086728278747996161.json]
+members: [视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json, 视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json, 视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json, 视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json, 视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json, 视频生成/文生视频/Wan2.1 FusionX文生视频极速版_1940968493145866242.json, 视频生成/文生视频/Wan2.1 日本美女主播直播带货视频讲解_1945637043122917377.json, 视频生成/文生视频/Wan2.1 美丽的日本歌舞表演风格的女人_1947907852955463682.json, 视频生成/文生视频/Wan2.1FusionX-超高清文生视频_1934584295552163842.json, 视频生成/文生视频/Wan2.1文生视频fusionX+NAG_1933775109922709506.json, 视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json, 视频生成/文生视频/龙明Wan2.1文生视频fusionX+NAG_1935006868597350401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/minimaxH3快乐的小孩_2088616677788446722.json、视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json、视频生成/图生视频/video_minimax_h3_i2v_2084181095406456833.json、视频生成/图生视频/创意无限_2087087580423741441.json、视频生成/图生视频/吉他和狗狗_2090264859219947522.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json、视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json、视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json、视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json、视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 11/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
-- `PrimitiveFloat` —— 11/12 个有
-- `RHHiddenNodes` —— 11/12 个有
-- `UNETLoader` —— 11/12 个有
-- `Text` —— 10/12 个有
-- `ImageResizeKJv2` —— 8/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/12 个有
-- `MiniMaxH3BlockCacheT8` —— 2/12 个有
-- `EnhancedLoadDiffusionModel` —— 1/12 个有
-- `GetImageSize` —— 1/12 个有
-- `ImageScaleToTotalPixels` —— 1/12 个有
-- `Int` —— 1/12 个有
-- `LoraLoaderBypassModelOnly` —— 1/12 个有
-- `easy showAnything` —— 1/12 个有
+- `ImageScaleToMegapixels` —— 11/12 个有
+- `UpscaleModelLoader` —— 11/12 个有
+- `WanVideoApplyNAG` —— 11/12 个有
+- `WanVideoSLG` —— 11/12 个有
+- `WanVideoTextEncodeSingle` —— 11/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `WanVideoLoraSelect` —— 5/12 个有
+- `LoadImageFromUrl` —— 2/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `WanVideoTextEncode` —— 1/12 个有
+- `WanVideoTorchCompileSettings` —— 1/12 个有
 
 ## 典型参数
 

@@ -3,75 +3,62 @@ name: unknown_workflow_video_upscale_lora_14
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.601
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SeargePromptText, SetNode, ShowText|pysssss, SimpleCondition+, VHS_VideoCombine, Video_Upscale_With_Model, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8135
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImageSizeAndCount, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Yuan_RTXVideoUpscaleH3, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json, 视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json, 视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json, 视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json]
+members: [视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json, 视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json, 视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json, 视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json、视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json、视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json、视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json、视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json、视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json、视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetNode`
-- `ImageResizeKJ`
-- `ImageSmartSharpen+`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetImageSizeAndCount`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SeargePromptText`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleCondition+`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Video_Upscale_With_Model`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `Yuan_RTXVideoUpscaleH3`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `WanVideoClipVisionEncode` —— 3/4 个有
-- `WanVideoFreeInitArgs` —— 3/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `WanVideoEasyCache` —— 2/4 个有
-- `WanVideoExperimentalArgs` —— 2/4 个有
-- `WanVideoSLG` —— 2/4 个有
-- `WanVideoSetRadialAttention` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `ADE_CameraPoseBasic` —— 1/4 个有
-- `CameraPoseVisualizer` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `LoadWanVideoClipTextEncoder` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `WanVideoFunCameraEmbeds` —— 1/4 个有
-- `WanVideoMagCache` —— 1/4 个有
-- `WanVideoTeaCache` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `MiniMaxH3HybridLoader` —— 2/4 个有
+- `MiniMaxH3ImageToVideo` —— 2/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `ImagePadForOutpaint` —— 1/4 个有
 
 ## 典型参数
 

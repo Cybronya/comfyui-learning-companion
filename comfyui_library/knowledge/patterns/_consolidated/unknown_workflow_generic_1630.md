@@ -3,38 +3,35 @@ name: unknown_workflow_generic_1630
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.733
-common_nodes: [AILab_QwenVL, Apply Whisper, CR Prompt Text, LayerUtility: PurgeVRAM, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, RunningHub SeedXPro Translator, SaveAudio, ShowText|pysssss, VHS_LoadVideo, easy saveText, easy showAnything]
+coverage: 0.8635
+common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--洗声音--反推声音特质-声音设计-_2018578275949350914.json, 音频生成/音频生成/一键洗声音--反推声音特质-声音设计_2032371769327226882.json]
+members: [图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json, 图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1630
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--洗声音--反推声音特质-声音设计-_2018578275949350914.json、音频生成/音频生成/一键洗声音--反推声音特质-声音设计_2032371769327226882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json、图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LayerUtility: PurgeVRAM`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `RunningHub SeedXPro Translator`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
-- `easy saveText`
-- `easy showAnything`
+- `LoadImage`
+- `RH_RhartImageG25FlareImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

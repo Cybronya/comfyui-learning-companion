@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_76
 type: Text To Image
 frequency: 15
 level: strong
-coverage: 0.8916
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.885533
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Moss-image局部重绘｜精准圈选区域修改画面细节无损_2112824699423121409.json, 图片生成/图生图/QWEN PANO360全景图生成工作流 360度全景画面直出_2109702845909000193.json, 图片生成/图生图/Qwe Image 2.1多维运镜构图变换｜附控制指南图生图_2110742888882724865.json, 图片生成/图生图/Qwen 2.1一键换脸换人，图生图角色替换人物身份无缝对齐_2112241514712756225.json, 图片生成/图生图/Qwen 2.1改头换面换头术 人物面部精准替换_2104991945562087425.json, 图片生成/图生图/Qwen 2.1改头换面换头术｜图生图精准换脸｜换头不换身效果自然_2104761533778718721.json, 图片生成/图生图/Qwen Image 2.1 Turbo人物角色替换 人物一致性更强_2109408658609238018.json, 图片生成/图生图/Qwen Image 2.1 Turbo人物角色替换 人物一致性更强_2109748589525295106.json, 图片生成/图生图/Qwen Image 2.1 Turbo多图像编辑8步快速出图 高效改图方案_2109334660395393026.json, 图片生成/图生图/Qwen Image 2.1 Turbo多图像编辑8步快速出图 高效改图方案_2109696542016884738.json, 图片生成/图生图/Qwen Image 2.1图片清晰度增强与细节修复V2 画质提升方案_2109180598479835138.json, 图片生成/图生图/Qwen Image 2.1图片清晰度增强与细节修复V2 画质提升方案_2109778326498926594.json, 图片生成/图生图/Qwen Image 2.1图片编辑工作流，简洁高效的图生图处理方案_2105792533245808642.json, 图片生成/图生图/Qwen Image 2.1文生编辑抠图透明图像工作流，图生图图像处理方案_2107196238646042626.json, 图片生成/图生图/Qwen image 2.1文生编辑抠图一体 透明图像处理方案_2110350738932191233.json]
+members: [图片生成/文生图/Image2.5 Seedance等API接入生图生视频，低成本文生图文生视频方案_2103934036086444034.json, 图片生成/文生图/Image2.5全能图像文生图 高品质文本到图像生成_2098269388993548289.json, 图片生成/文生图/Seedance2.0 mini图生视频，其它图片处理图生图_2111879230282887170.json, 图片生成/文生图/Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json, 图片生成/文生图/Seedance2.0 mini图生视频｜素材一键变动态大片_2111818999221800962.json, 图片生成/文生图/mini图生视频一键生成｜Seedance2.0图片转视频_2095874894868336642.json, 视频生成/图生视频/H3 Max Turbo图生视频首尾帧生成全节点注释_2100286294709596162.json, 视频生成/图生视频/MiniMax H3 Max Turbo极速版图生视频首尾帧处理工具_2102123247629332481.json, 视频生成/图生视频/MiniMax H3 Max Turbo极速版图生视频首尾帧，高速低成本流畅过渡方案_2103565859515101186.json, 视频生成/图生视频/首尾帧图生视频｜seedance2.5支持30秒长视频人物场景特效_2093082741544939522.json, 视频生成/图生视频/首尾帧图生视频｜seedance2.5支持30秒长视频生成_2093247372666167298.json, 视频生成/文生视频/H3 Max Turbo图生视频首尾帧生成 全节点注释_2099926302546550786.json, 视频生成/文生视频/Seedance 2.5图生视频处理生成工具_2102525837089263617.json, 视频生成/文生视频/Seedance2.5图生视频工作流，高质量图像到视频生成方案_2103542632843669506.json, 视频生成/文生视频/Seedance2.5图生视频工作流｜高质量图像驱动视频生成_2097761537908887554.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_76
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Moss-image局部重绘｜精准圈选区域修改画面细节无损_2112824699423121409.json、图片生成/图生图/QWEN PANO360全景图生成工作流 360度全景画面直出_2109702845909000193.json、图片生成/图生图/Qwe Image 2.1多维运镜构图变换｜附控制指南图生图_2110742888882724865.json、图片生成/图生图/Qwen 2.1一键换脸换人，图生图角色替换人物身份无缝对齐_2112241514712756225.json、图片生成/图生图/Qwen 2.1改头换面换头术 人物面部精准替换_2104991945562087425.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/Image2.5 Seedance等API接入生图生视频，低成本文生图文生视频方案_2103934036086444034.json、图片生成/文生图/Image2.5全能图像文生图 高品质文本到图像生成_2098269388993548289.json、图片生成/文生图/Seedance2.0 mini图生视频，其它图片处理图生图_2111879230282887170.json、图片生成/文生图/Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json、图片生成/文生图/Seedance2.0 mini图生视频｜素材一键变动态大片_2111818999221800962.json…）
 
 - **类型**：Text To Image
 - **样本数**：15
@@ -28,9 +28,7 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -38,28 +36,18 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImage21` —— 14/15 个有
-- `QwenImage21Cache` —— 13/15 个有
-- `Image Comparer (rgthree)` —— 9/15 个有
-- `CR Text` —— 8/15 个有
-- `ComfySwitchNode` —— 7/15 个有
-- `ResolutionSelector` —— 7/15 个有
-- `easy showAnything` —— 5/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/15 个有
-- `QwenPERewriteT8` —— 3/15 个有
-- `SaveImageAdvanced` —— 3/15 个有
-- `SeedNode` —— 3/15 个有
-- `SplitImageWithAlpha` —— 3/15 个有
-- `Change Channel Count` —— 2/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/15 个有
-- `PrimitiveBoolean` —— 2/15 个有
-- `QwenImagePromptOptimizer` —— 2/15 个有
-- `VOSR2ModelLoader` —— 2/15 个有
-- `VOSR2Upscale` —— 2/15 个有
-- `easy imageSave` —— 2/15 个有
-- `InpaintModelConditioning` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `Mask Fill Holes` —— 1/15 个有
+- `LoadImage` —— 14/15 个有
+- `SaveVideo` —— 13/15 个有
+- `SaveImage` —— 10/15 个有
+- `CR Text` —— 9/15 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 5/15 个有
+- `RH_MinimaxH3MaxTurboImageToVideo` —— 4/15 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 4/15 个有
+- `RH_RhartImageG25FlareTextToImage` —— 1/15 个有
+- `RH_Screenwriter` —— 1/15 个有
+- `WujiAPI` —— 1/15 个有
+- `WujiClosedSourceGenerator` —— 1/15 个有
+- `WujiUpscaler2` —— 1/15 个有
 
 ## 典型参数
 
@@ -77,7 +65,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 21/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -88,4 +76,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高发问题（21/15 个样本）：Steps较低可能导致细节不足
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

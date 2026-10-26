@@ -3,53 +3,49 @@ name: text_to_image_video_upscale_lora_6
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.921
-common_nodes: [BlockSparseAttention, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GH_AudioVideoMerger, GH_ImageVideoComparer, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.929
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyImage, EmptyLatentImage, GH_AudioVideoMerger, GH_ImageVideoComparer, JjkText, KSampler, LayerFilter: GaussianBlur, LoraLoaderModelOnly, PreviewImage, RH_DLSS5Enhance, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed, solarL_SaveImagesToZip, 图像缩放V2_孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3 Hybrid视频换人复刻，多段续接可选超分_2111264147215310849.json, 视频生成/图生视频/导演台合集最终完成版，复杂镜头全身转身切镜一镜到底长视频角色替换_2106819925250760705.json]
+members: [视频生成/图生视频/VOSR2+DLSS5视频超分放大处理生成工具_2102315334387724289.json, 视频生成/图生视频/VOSR2联合DLSS5视频超分放大，高清修复提升视频分辨率工作流_2105856991561338881.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_lora_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Hybrid视频换人复刻，多段续接可选超分_2111264147215310849.json、视频生成/图生视频/导演台合集最终完成版，复杂镜头全身转身切镜一镜到底长视频角色替换_2106819925250760705.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VOSR2+DLSS5视频超分放大处理生成工具_2102315334387724289.json、视频生成/图生视频/VOSR2联合DLSS5视频超分放大，高清修复提升视频分辨率工作流_2105856991561338881.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyImage`
 - `EmptyLatentImage`
 - `GH_AudioVideoMerger`
 - `GH_ImageVideoComparer`
 - `JjkText`
 - `KSampler`
+- `LayerFilter: GaussianBlur`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorFaceRefine`
-- `MiniMaxH3DirectorSelfLift`
-- `ModelAttentionBackend`
+- `PreviewImage`
+- `RH_DLSS5Enhance`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VOSR2ModelLoader`
 - `VOSR2Upscale`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerFilter: GaussianBlur` —— 1/2 个有
-- `RH_DLSS5Enhance` —— 1/2 个有
-- `图像缩放V2_孤海` —— 1/2 个有
+- `图像缩放V2_孤海`
 
 ## 典型参数
 

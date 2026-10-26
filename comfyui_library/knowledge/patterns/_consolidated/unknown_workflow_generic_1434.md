@@ -3,33 +3,34 @@ name: unknown_workflow_generic_1434
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [CR Text, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.757
+common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/角色一致性 图生图  全能图片 全能模型 最强开源_2085300776582344706.json, 图片生成/文生图/全能图片V1文生图_1980472653670735874.json]
+members: [图片生成/图生图/一图生多图_2074870551881015297.json, 图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1434
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/角色一致性 图生图  全能图片 全能模型 最强开源_2085300776582344706.json、图片生成/文生图/全能图片V1文生图_1980472653670735874.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一图生多图_2074870551881015297.json、图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `LoadImage`
 - `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
+- `RHHiddenNodes`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `YK_LoadImageFromURL` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `easy int` —— 1/2 个有
 
 ## 典型参数
 

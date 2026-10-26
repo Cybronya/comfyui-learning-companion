@@ -3,36 +3,34 @@ name: unknown_workflow_generic_976
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.649667
-common_nodes: [Comfly_api_set, SaveImage, Text, easy showAnything]
+coverage: 0.733333
+common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json, 图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json]
+members: [图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json, 图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json, 图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_976
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json、图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json、图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json、图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json、图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Comfly_api_set`
+- `LoadImage`
+- `RTXVideoSuperResolution`
 - `SaveImage`
-- `Text`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gpt_image_2_official` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `Comfly_nano_banana2_edit` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `NumberClamp` —— 1/3 个有
 
 ## 典型参数
 

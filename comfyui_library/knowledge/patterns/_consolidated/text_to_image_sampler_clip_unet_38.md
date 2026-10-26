@@ -1,75 +1,75 @@
 ---
 name: text_to_image_sampler_clip_unet_38
 type: Text To Image
-frequency: 13
+frequency: 14
 level: strong
-coverage: 0.960385
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.943214
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-极致艺术风格生成_2070006997050810370.json, 图片生成/文生图/Krea2-色彩HDR增强VAE-对比原版VAE效果_2074188352772984834.json, 图片生成/文生图/Krea2四视图生成流（文生图）2608_2096857346608816129.json, 图片生成/文生图/krea2 超真实人物生成2608_2096870221717000194.json, 图片生成/文生图/krea2-多风格手动文生图_2072150661021659138.json, 图片生成/文生图/krea2-多风格手动文生图_2085615556467716097.json, 图片生成/文生图/krea2-多风格手动文生图_2085620387404140546.json, 图片生成/文生图/krea2-多风格手动文生图_2085623883734020097.json, 图片生成/文生图/krea2-多风格手动文生图_2086705686548926466.json, 图片生成/文生图/krea2-多风格手动文生图_2086707015786786817.json, 图片生成/文生图/krea2-多风格手动文生图_2086728368371884033.json, 图片生成/文生图/krea2-多风格手动文生图_2086731072540336130.json, 视频生成/图生视频/Krea2-极致艺术风格生成_2070438497516875778.json]
+members: [图片生成/文生图/Z-image-turbo ControNet文生图姿势控制_2045229213636108290.json, 图片生成/文生图/Z-image-turbo-文生图（开源之王）_1997492012880433154.json, 图片生成/文生图/Z-image文生图_1993860574876467201.json, 图片生成/文生图/Z-image文生图_1993881668454907906.json, 图片生成/文生图/Z-image文生图_1993883811278684161.json, 图片生成/文生图/Z-image文生图_1993952320304201730.json, 图片生成/文生图/Z-image文生图_1994050196562706434.json, 图片生成/文生图/Z-image文生图_1994253056955138050.json, 图片生成/文生图/Z-image文生图_1994323420024422402.json, 图片生成/文生图/Z-image文生图——25年末的超级王炸_1994392372287053826.json, 图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json, 图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json, 图片生成/文生图/krea2 Lora文生图加英伟达rtx nodes高清放大_2074689431730221057.json, 图片生成/文生图/z-image超写实逼真人物生成_2031760767321640962.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_38
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Krea2-极致艺术风格生成_2070006997050810370.json、图片生成/文生图/Krea2-色彩HDR增强VAE-对比原版VAE效果_2074188352772984834.json、图片生成/文生图/Krea2四视图生成流（文生图）2608_2096857346608816129.json、图片生成/文生图/krea2 超真实人物生成2608_2096870221717000194.json、图片生成/文生图/krea2-多风格手动文生图_2072150661021659138.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Z-image-turbo ControNet文生图姿势控制_2045229213636108290.json、图片生成/文生图/Z-image-turbo-文生图（开源之王）_1997492012880433154.json、图片生成/文生图/Z-image文生图_1993860574876467201.json、图片生成/文生图/Z-image文生图_1993881668454907906.json、图片生成/文生图/Z-image文生图_1993883811278684161.json…）
 
 - **类型**：Text To Image
-- **样本数**：13
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
-- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 12/13 个有
-- `Label (rgthree)` —— 10/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/13 个有
-- `CR Text` —— 5/13 个有
-- `Text Multiline` —— 2/13 个有
-- `easy promptLine` —— 2/13 个有
-- `CR Text Concatenate` —— 1/13 个有
-- `easy imageConcat` —— 1/13 个有
-- `孤海注释` —— 1/13 个有
+- `ConditioningZeroOut` —— 13/14 个有
+- `PreviewImage` —— 4/14 个有
+- `LoadImage` —— 3/14 个有
+- `RTXVideoSuperResolution` —— 3/14 个有
+- `ModelPatchLoader` —— 2/14 个有
+- `QwenImageDiffsynthControlnet` —— 2/14 个有
+- `AIO_Preprocessor` —— 1/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `ImageScale` —— 1/14 个有
+- `ImageScaleToTotalPixels` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 1/14 个有
+- `SetUnionControlNetType` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 1024 | 13 | 69% |
-| 高度 | 512 | 512 - 1024 | 13 | 69% |
-| 采样步数 | 8 | 8 - 10 | 13 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 77% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 10 | 8 - 12 | 14 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 100% |
+| 调度器 | simple | - | 14 | 93% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1084 | 688 - 1920 | 14 | 70% |
+| 高度 | 1600 | 1080 - 1920 | 14 | 80% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1024，13 个样本
-- 高度 中位数 512，观测区间 512 - 1024，13 个样本
-- 采样步数 中位数 8，观测区间 8 - 10，13 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 77%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 高发问题（11/13 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 12，14 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 100%
+- 调度器 最常用 simple，14 个样本，一致性 93%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1084，观测区间 688 - 1920，14 个样本
+- 高度 中位数 1600，观测区间 1080 - 1920，14 个样本，取值集中（一致性 80%）

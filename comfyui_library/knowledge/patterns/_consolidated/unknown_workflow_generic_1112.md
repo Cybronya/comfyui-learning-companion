@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1112
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadAudio, SaveAudio, SparkTTSClone]
+coverage: 0.799
+common_nodes: [CR Text, LoadAudio, SaveAudio, SparkTTS_AdvVoiceClone]
 problems: []
 missing: []
-members: [音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json, 音频生成/音频生成/Spark TTS_2081270765382619137.json, 音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json]
+members: [数字人/数字人/🎤【轻松好玩】声音克隆！❤自己声音、周星驰、志玲姐姐、秋香、张柏芝、刘备任意演绎指定内容❤_1980546581722218497.json, 音频生成/音频生成/声音克隆！语音生成 声音一键克隆！_1952939847885459457.json, 音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1112
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json、音频生成/音频生成/Spark TTS_2081270765382619137.json、音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/🎤【轻松好玩】声音克隆！❤自己声音、周星驰、志玲姐姐、秋香、张柏芝、刘备任意演绎指定内容❤_1980546581722218497.json、音频生成/音频生成/声音克隆！语音生成 声音一键克隆！_1952939847885459457.json、音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
 - `SaveAudio`
-- `SparkTTSClone`
+- `SparkTTS_AdvVoiceClone`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `SparkTTS_VoiceCreator` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
 
 ## 典型参数
 

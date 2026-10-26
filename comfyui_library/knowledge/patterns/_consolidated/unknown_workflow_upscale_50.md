@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadVideo, RH_Upscale, SaveVideo]
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/RH Upscale双版本(RH币API版)视频极速高清放大_2105207523186929665.json, 视频生成/文生视频/RH Upscale视频极速高清放大_2105590429428310018.json]
+members: [数字人/数字人/专业视频超分 TopazLabs_2063138098481029122.json, 数字人/数字人/动作迁移·角色替换-AI视频换人_2093885220666822658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_50
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/RH Upscale双版本(RH币API版)视频极速高清放大_2105207523186929665.json、视频生成/文生视频/RH Upscale视频极速高清放大_2105590429428310018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/专业视频超分 TopazLabs_2063138098481029122.json、数字人/数字人/动作迁移·角色替换-AI视频换人_2093885220666822658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,12 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `LoadImage`
 - `LoadVideo`
-- `RH_Upscale`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoVideoUpscaler` —— 1/2 个有
+- `RHBerniniFullReferenceVideoToVideo` —— 1/2 个有
+- `RH_TopazLabs_VideoUpscale` —— 1/2 个有
 
 ## 典型参数
 

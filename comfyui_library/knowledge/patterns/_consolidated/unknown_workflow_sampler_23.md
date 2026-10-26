@@ -3,34 +3,38 @@ name: unknown_workflow_sampler_23
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.972167
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
+members: [视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json, 视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json, 视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json, 视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）林耀2.6_2019693859390885889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_23
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json、视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json、视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json、视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json、视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadImage`
+- `RunningHub FlashTalk Loader`
+- `RunningHub FlashTalk Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 3/6 个有
-- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
+- `JWInteger` —— 2/6 个有
 - `PreviewAudio` —— 1/6 个有
+- `TrimAudioDuration` —— 1/6 个有
+- `WujiCleaner` —— 1/6 个有
 
 ## 典型参数
 

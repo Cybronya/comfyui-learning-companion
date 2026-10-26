@@ -3,56 +3,60 @@ name: unknown_workflow_video_sampler_vae_175
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.945
-common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEmbedBridge, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
+coverage: 0.908
+common_nodes: [Any Switch (rgthree), BboxDetectorCombined_v2, Fast Groups Bypasser (rgthree), GrowMaskWithBlur, ImageCompositeMasked, ImageListToBatch+, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskToImage, SolidMask, UltralyticsDetectorProvider, VHS_LoadVideo, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [图片生成/图生图/Hunyuan Video Custom_1920756422236377089.json, 视频生成/图生视频/Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json]
+members: [图片生成/反推提示词/57shipinqushuiyin_2051294749801361410.json, 数字人/数字人/视频水印去除即梦 、可灵、豆包、全能视频V3 通用版（楚门的ai世界）11111111111_1990403314384867330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_175
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Hunyuan Video Custom_1920756422236377089.json、视频生成/图生视频/Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/57shipinqushuiyin_2051294749801361410.json、数字人/数字人/视频水印去除即梦 、可灵、豆包、全能视频V3 通用版（楚门的ai世界）11111111111_1990403314384867330.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTextEmbedBridge`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PreviewImage`
-- `TextEncodeHunyuanVideo_ImageToVideo`
-- `VHS_VideoCombine`
+- `Any Switch (rgthree)`
+- `BboxDetectorCombined_v2`
+- `Fast Groups Bypasser (rgthree)`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageListToBatch+`
+- `ImageToMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `SolidMask`
+- `UltralyticsDetectorProvider`
+- `VHS_LoadVideo`
+- `VHS_VideoInfo`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoMiniMaxRemoverEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `HunyuanVideoFresca` —— 1/2 个有
-- `HunyuanVideoSLG` —— 1/2 个有
-- `Image Crop Face` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `Images to RGB` —— 1/2 个有
-- `LayerMask: TransparentBackgroundUltra` —— 1/2 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
-- `LayerUtility: TextBox` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `DiffuEraserLoader` —— 1/2 个有
+- `DiffuEraserSampler` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `PreviewBridge` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_DuplicateMasks` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
 
 ## 典型参数
 

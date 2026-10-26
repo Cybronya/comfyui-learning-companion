@@ -1,90 +1,81 @@
 ---
 name: image_to_image_lora_sampler_clip_10
 type: Image To Image
-frequency: 14
+frequency: 13
 level: strong
-coverage: 0.798214
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), KSampler, LayerColor: ColorAdapter, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: NumberCalculatorV2, LoadImage, LoraLoaderModelOnly, PrimitiveInt, ReferenceLatent, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.946231
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/4K高清放大-kontext_hires_1965049280929087489.json, 图片生成/图生图/AI绘画_葫芦娃Kontext模型+汤团猪TTP高清放大工作流V1_1963594370137280514.json, 图片生成/图生图/Kontext__hires高清放大_1965035145029931010.json, 图片生成/图生图/Kontext_超分辨率_hires_1965724218900021250.json, 图片生成/图生图/Kontext高清放大_1977933593064472577.json, 图片生成/图生图/Kontext，葫芦娃极致放大_1963623455676780546.json, 图片生成/图生图/kontext_hires try_1963899464674267137.json, 图片生成/图生图/kontext_hires+TTP 4K高清放大_1965317062409244673.json, 图片生成/图生图/kontext_hires放大_2073049969321406465.json, 图片生成/图生图/kontext使用hires lora高清修复细节放大_1964562881654177794.json, 图片生成/图生图/kontext服装工作流_1963869080980901890.json, 图片生成/图生图/香蕉， Kontext，葫芦娃极致放大_1963615168336056321.json, 图片生成/图生图/高清放大 kontext 葫芦娃lora_1964938211141275650.json, 图片生成/图生图/高清放大Kontext（商用级）_1989122752181317633.json]
+members: [图片生成/图生图/PS专用溶图流_2080460737826344962.json, 图片生成/图生图/PS专用溶图流_2081930794498617346.json, 图片生成/图生图/PS专用溶图流_2081982051393302529.json, 图片生成/图生图/PS专用溶图流_2082013615124733954.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json, 图片生成/图生图/主图万物电商产品光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2072999532249567233.json, 图片生成/图生图/亚马逊光影融合1.0_2037456527702888450.json, 图片生成/图生图/溶图+打光_2098231532556210177.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096170592125939714.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096405298079686657.json, 图片生成/图生图/电商产品打光换背景光影溶图细节迁移保持细节尺寸不变_2073002986959364097.json, 图片生成/图生图/通道ID图2.0_2060658643808382978.json, 图片生成/文生图/产品融图打光（产品标贴一致性）_2037437084016844802.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_10
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/4K高清放大-kontext_hires_1965049280929087489.json、图片生成/图生图/AI绘画_葫芦娃Kontext模型+汤团猪TTP高清放大工作流V1_1963594370137280514.json、图片生成/图生图/Kontext__hires高清放大_1965035145029931010.json、图片生成/图生图/Kontext_超分辨率_hires_1965724218900021250.json、图片生成/图生图/Kontext高清放大_1977933593064472577.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/PS专用溶图流_2080460737826344962.json、图片生成/图生图/PS专用溶图流_2081930794498617346.json、图片生成/图生图/PS专用溶图流_2081982051393302529.json、图片生成/图生图/PS专用溶图流_2082013615124733954.json、图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json…）
 
 - **类型**：Image To Image
-- **样本数**：14
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
 - `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerColor: ColorAdapter`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ImageMaskScaleAs`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: NumberCalculatorV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
 - `ReferenceLatent`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageListToBatch+` —— 13/14 个有
-- `TeaCache` —— 13/14 个有
-- `LayerUtility: Seed` —— 12/14 个有
-- `ImpactImageBatchToImageList` —— 8/14 个有
-- `LayerUtility: ImageMaskScaleAs` —— 7/14 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 7/14 个有
-- `ImageBatchToList+` —— 6/14 个有
-- `PreviewImage` —— 4/14 个有
-- `EasyCache` —— 1/14 个有
-- `EmptySD3LatentImage` —— 1/14 个有
-- `FluxKontextImageScale` —— 1/14 个有
-- `INTConstant` —— 1/14 个有
-- `ImageListToImageBatch` —— 1/14 个有
-- `ImageStitch` —— 1/14 个有
-- `ImpactMinMax` —— 1/14 个有
-- `LayerUtility: GetImageSize` —— 1/14 个有
-- `MathExpression_UTK` —— 1/14 个有
-- `RepeatLatentBatch` —— 1/14 个有
-- `easy cleanGpuUsed` —— 1/14 个有
-- `easy imageSize` —— 1/14 个有
+- `LayerUtility: HLFrequencyDetailRestore` —— 12/13 个有
+- `ImpactInt` —— 7/13 个有
+- `FastCanvas` —— 2/13 个有
+- `FastCanvasTool` —— 2/13 个有
+- `ImageCropper` —— 2/13 个有
+- `easy imageRemBg` —— 2/13 个有
+- `Int` —— 1/13 个有
+- `LayerStyle: ColorOverlay V2` —— 1/13 个有
+- `MaskPreview+` —— 1/13 个有
+- `Preview from image [Crystools]` —— 1/13 个有
+- `Switch any [Crystools]` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 14 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 93% |
-| 调度器 | simple | - | 14 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 13 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 93%
-- 调度器 最常用 simple，14 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

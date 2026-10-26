@@ -3,36 +3,41 @@ name: unknown_workflow_generic_1372
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7205
-common_nodes: [Float, JjkText, LoadImage, RH_RhartImageG2ImageToImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.833
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), JoinStringMulti, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextJoin, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, ShowText|pysssss, easy outputToList, easy positive, easy promptLine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json, 图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json]
+members: [图片生成/图生图/H单图裂变_2061617581047508993.json, 图片生成/图生图/小红书-抖音-图文套图-单图裂变-超强一致性！_2045811057263910913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1372
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json、图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/H单图裂变_2061617581047508993.json、图片生成/图生图/小红书-抖音-图文套图-单图裂变-超强一致性！_2045811057263910913.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Float`
-- `JjkText`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `JoinStringMulti`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RTXVideoSuperResolution`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `FlashVSRNode` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `ShowText|pysssss`
+- `easy outputToList`
+- `easy positive`
+- `easy promptLine`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

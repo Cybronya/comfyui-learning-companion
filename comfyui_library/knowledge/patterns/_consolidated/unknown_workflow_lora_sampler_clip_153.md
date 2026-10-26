@@ -3,54 +3,64 @@ name: unknown_workflow_lora_sampler_clip_153
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.96
-common_nodes: [AdvancedLyingSigmaSampler, BasicScheduler, CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JoinStringMulti, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.812
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json, 图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json, 图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json, 图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json]
+members: [图片生成/图生图/电商洗图_1925833819461750786.json, 图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json, 图片生成/文生图/发光粒子衣服_1916014463953076225.json, 图片生成/文生图/最强joy3反推+Flux网红美女跑图工作流_1934549977387442177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_153
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json、图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json、图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json、图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/电商洗图_1925833819461750786.json、图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json、图片生成/文生图/发光粒子衣服_1916014463953076225.json、图片生成/文生图/最强joy3反推+Flux网红美女跑图工作流_1934549977387442177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AdvancedLyingSigmaSampler`
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `EmptyLatentImage`
-- `JoinStringMulti`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
+- `LoraLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Switch any [Crystools]` —— 2/4 个有
+- `CR Aspect Ratio SDXL` —— 3/4 个有
+- `EmptyLatentImage` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `RepeatLatentBatch` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `StringFunction|pysssss` —— 3/4 个有
+- `VAEEncode` —— 3/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `Float` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/4 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/4 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1004 | 928 - 1704 | 4 | 72% |
-| 高度 | 1664 | 1280 - 1920 | 4 | 86% |
+| LoRA 模型强度 | 0.6 | 0.1 - 1 | 4 | 39% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 800 | 800 - 800 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
@@ -58,5 +68,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1004，观测区间 928 - 1704，4 个样本
-- 高度 中位数 1664，观测区间 1280 - 1920，4 个样本，取值集中（一致性 86%）
+- LoRA 模型强度 中位数 0.6，观测区间 0.1 - 1，4 个样本，取值分散，一致性仅 39%
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 800，观测区间 800 - 800，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）

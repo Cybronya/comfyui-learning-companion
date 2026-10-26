@@ -1,60 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_474
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.95975
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.7286
+common_nodes: [Anything Everywhere, CreateCFGScheduleFloatList, GetNode, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Pipe from any [Crystools], Pipe to/edit any [Crystools], Seed Everywhere, SetNode, SimpleMath+, TextCombinerTwo, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json, 视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json, 视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json]
+members: [视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json, 视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json, 视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json, 视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json, 视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_474
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json、视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json、视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json、视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json、视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json、视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json、视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json、视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `INTConstant`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Pipe from any [Crystools]`
+- `Pipe to/edit any [Crystools]`
+- `Seed Everywhere`
+- `SetNode`
+- `SimpleMath+`
+- `TextCombinerTwo`
+- `Textbox`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 3/4 个有
-- `Int` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `ResolutionSelector` —— 2/4 个有
-- `WujiCleaner` —— 2/4 个有
-- `WujiImageLoader` —— 2/4 个有
-- `ExtendIntermediateSigmas` —— 1/4 个有
-- `H3SigmaRefiner` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `MiniMaxChunkFeedForward` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
-- `MiniMaxLowVRAMAttention` —— 1/4 个有
-- `RHMiniMaxH3PromptOptimizer` —— 1/4 个有
-- `SolAttnMiniMax` —— 1/4 个有
+- `CR Text Concatenate` —— 2/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LoadLatent` —— 1/5 个有
+- `SaveLatent` —— 1/5 个有
 
 ## 典型参数
 

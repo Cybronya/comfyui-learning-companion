@@ -1,55 +1,67 @@
 ---
 name: image_to_image_sampler_clip_unet_17
 type: Image To Image
-frequency: 12
+frequency: 13
 level: strong
-coverage: 0.993583
-common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.895846
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetImageSize, HAIGC_SavePSD, ImageScaleToTotalPixels, Int, KSampler, LatentCutToBatch, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-dev-fp8-图生图_2064238323991932929.json, 图片生成/图生图/Flux图生图工作流_1912803304072540161.json, 图片生成/图生图/Flux图生图工作流_1980482281401925633.json, 图片生成/图生图/Flux图生图工作流_1985262437538668545.json, 图片生成/图生图/Flux图生图工作流_1992168901211648002.json, 图片生成/图生图/Flux图生图工作流_2007730863437516801.json, 图片生成/图生图/Flux图生图工作流_2008831243256864770.json, 图片生成/图生图/Flux图生图工作流产品设计_1918558384063451138.json, 图片生成/图生图/Flux图生图工作流（RunningHub拖入一键运行)_2090772341793054722.json, 图片生成/图生图/lucas的一小步_1837523258856947713.json, 图片生成/图生图/图生图工作流_2106376021615403010.json, 图片生成/文生图/Flux.1-图生图工作流_2087420374983200769.json]
+members: [图片生成/图生图/一键详情页，ai详情页，小白一秒变大神，一张图15分钟一个详情页，可出psd分层_2020862036552458241.json, 图片生成/图生图/全品类电商视觉・主图详情页定制_2045548588943548418.json, 图片生成/图生图/全品类详情页定制_2046485204256165890.json, 图片生成/图生图/全能图片V1 Pro详情页生成PSD分层保存_2008049758597812226.json, 图片生成/图生图/分层工作流_2092101423088619522.json, 图片生成/图生图/千问Layered图像分层psd格式保存（图生图）_2002283462897856513.json, 图片生成/图生图/图像分层保存为psd_2007698589761409025.json, 图片生成/图生图/图片拆分PSD_2013458625578147841.json, 图片生成/图生图/梨梨AI-图片拆分PSD_2026603437491757058.json, 图片生成/图生图/电商详情页生成PSD分层_2019521290964574209.json, 图片生成/文生图/国内商品详情页生成（PSD分层保存）_2008783090499461121.json, 数字人/数字人/全能图片V1 Pro详情页生成PSD分层保存_2017171471071711233.json, 视频生成/图生视频/全能图片V1 Pro详情页生成PSD分层保存_2011639539646865410.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_17
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux-dev-fp8-图生图_2064238323991932929.json、图片生成/图生图/Flux图生图工作流_1912803304072540161.json、图片生成/图生图/Flux图生图工作流_1980482281401925633.json、图片生成/图生图/Flux图生图工作流_1985262437538668545.json、图片生成/图生图/Flux图生图工作流_1992168901211648002.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/一键详情页，ai详情页，小白一秒变大神，一张图15分钟一个详情页，可出psd分层_2020862036552458241.json、图片生成/图生图/全品类电商视觉・主图详情页定制_2045548588943548418.json、图片生成/图生图/全品类详情页定制_2046485204256165890.json、图片生成/图生图/全能图片V1 Pro详情页生成PSD分层保存_2008049758597812226.json、图片生成/图生图/分层工作流_2092101423088619522.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `GetImageSize`
+- `HAIGC_SavePSD`
+- `ImageScaleToTotalPixels`
+- `Int`
 - `KSampler`
+- `LatentCutToBatch`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `ModelSamplingAuraFlow`
+- `ReferenceLatent`
 - `SaveImage`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 10/12 个有
-- `JWImageResizeByLongerSide` —— 10/12 个有
-- `DF_Text_Box` —— 9/12 个有
-- `Image Comparer (rgthree)` —— 1/12 个有
-- `ImageScale` —— 1/12 个有
-- `easy positive` —— 1/12 个有
+- `HAIGC_Layer` —— 12/13 个有
+- `HAIGC_CombineUnits` —— 11/13 个有
+- `CR Text` —— 8/13 个有
+- `PromptBatchQueue` —— 8/13 个有
+- `RH_LLMAPI_Pro_Node` —— 8/13 个有
+- `RH_Nano_Banana2_Image2Image` —— 8/13 个有
+- `easy showAnything` —— 8/13 个有
+- `PreviewImage` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 30 | 12 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | dpmpp_2m | - | 12 | 83% |
-| 调度器 | sgm_uniform | - | 12 | 83% |
-| 重绘幅度 | 0.7 | 0.6 - 1 | 12 | 85% |
+| 采样步数 | 20 | 20 - 20 | 13 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 13 | 56% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
@@ -57,8 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 30，12 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，12 个样本，一致性 83%
-- 调度器 最常用 sgm_uniform，12 个样本，一致性 83%
-- 重绘幅度 中位数 0.7，观测区间 0.6 - 1，12 个样本，取值集中（一致性 85%）
+- 采样步数 中位数 20，观测区间 20 - 20，13 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，13 个样本
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）

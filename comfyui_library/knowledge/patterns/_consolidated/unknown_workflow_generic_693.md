@@ -3,44 +3,35 @@ name: unknown_workflow_generic_693
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.67975
-common_nodes: [CR Prompt Text, JDCN_StringToList, ProcessString, SaveImage, Text Multiline, easy promptLine, easy showAnything]
+coverage: 0.7375
+common_nodes: [GoohaiDisplayAny, JjkText, RHLLMChatNode, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（官方API）_1994092062255546369.json, 图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（贞贞AI工坊版）_1994054834863144962.json, 图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json, 图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json]
+members: [图片生成/反推提示词/唐诗宋词出视频脚本-LLM_2111660359823216641.json, 图片生成/反推提示词/视频反推出SKILL-LLM_2110891451528859650.json, 图片生成/文生图/视频反推出SKILL-LLM_2114642593916215298.json, 图片生成/文生图/视频反推出SKILL-LLM_2114647588673769473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_693
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（官方API）_1994092062255546369.json、图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（贞贞AI工坊版）_1994054834863144962.json、图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json、图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/唐诗宋词出视频脚本-LLM_2111660359823216641.json、图片生成/反推提示词/视频反推出SKILL-LLM_2110891451528859650.json、图片生成/文生图/视频反推出SKILL-LLM_2114642593916215298.json、图片生成/文生图/视频反推出SKILL-LLM_2114647588673769473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `JDCN_StringToList`
-- `ProcessString`
-- `SaveImage`
-- `Text Multiline`
-- `easy promptLine`
-- `easy showAnything`
+- `GoohaiDisplayAny`
+- `JjkText`
+- `RHLLMChatNode`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 3/4 个有
-- `Comfly_nano_banana2_edit` —— 3/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
-- `easy promptReplace` —— 2/4 个有
-- `Comfly_nano_banana` —— 1/4 个有
-- `Comfly_nano_banana_edit` —— 1/4 个有
-- `Gemini3ImageNode` —— 1/4 个有
+- `LoadVideo` —— 3/4 个有
+- `LoadImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

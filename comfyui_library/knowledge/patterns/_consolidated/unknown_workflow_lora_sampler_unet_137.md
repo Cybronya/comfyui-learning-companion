@@ -2,68 +2,66 @@
 name: unknown_workflow_lora_sampler_unet_137
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.845
-common_nodes: [CLIPLoader, Image Comparer (rgthree), ImageScaleToMaxDimension, ImageScaleToTotalPixels, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, QwenImageIntegratedKSampler, SaveImage, SeedVR2, SeedVR2BlockSwap, UNETLoader, VAEEncode, VAELoader, easy cleanGpuUsed, easy int]
-problems: []
+level: weak
+coverage: 0.9322
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen2511-丰胸神器（加强版）_2057705373263556610.json, 图片生成/图生图/Qwen2511丰胸神器，胸部增强编辑加强版_2054181669988519938.json, 图片生成/图生图/Qwen2511丰胸神器，胸部增强编辑加强版_2057650794018729985.json, 图片生成/图生图/qwen2511丰胸神器，胸部增强加强版变美！_2045056767100456962.json, 图片生成/图生图/qwen2511丰胸神器，胸部增强，即刻变美！_2036719881151848450.json]
+members: [图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063593099074560001.json, 图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063946262113767426.json, 图片生成/图生图/flux klein MC皮肤生成_2048078695188926466.json, 图片生成/图生图/换脸_换头_Flux2-Klein_2070314503065137153.json, 图片生成/图生图/换脸_换头_Flux2-Klein不但换脸直接给你换头发型也换了高级换脸多种参数色调可调_2037844279611101186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_137
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen2511-丰胸神器（加强版）_2057705373263556610.json、图片生成/图生图/Qwen2511丰胸神器，胸部增强编辑加强版_2054181669988519938.json、图片生成/图生图/Qwen2511丰胸神器，胸部增强编辑加强版_2057650794018729985.json、图片生成/图生图/qwen2511丰胸神器，胸部增强加强版变美！_2045056767100456962.json、图片生成/图生图/qwen2511丰胸神器，胸部增强，即刻变美！_2036719881151848450.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063593099074560001.json、图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063946262113767426.json、图片生成/图生图/flux klein MC皮肤生成_2048078695188926466.json、图片生成/图生图/换脸_换头_Flux2-Klein_2070314503065137153.json、图片生成/图生图/换脸_换头_Flux2-Klein不但换脸直接给你换头发型也换了高级换脸多种参数色调可调_2037844279611101186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `Image Comparer (rgthree)`
-- `ImageScaleToMaxDimension`
-- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `QwenImageIntegratedKSampler`
+- `PainterFluxImageEdit`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `Text` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `ImageSharpen` —— 4/5 个有
+- `ModelSamplingAuraFlow` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `RepeatLatentBatch` —— 3/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 图生图 image-to-image | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | 0 | 0 - 0 | 5 | 100% |
-| 调度器 | 0 | 0 - 0 | 5 | 100% |
-| 重绘幅度 | 3.56016e+14 | 1.93667e+14 - 9.19984e+14 | 5 | 37% |
+| 采样步数 | 8 | 8 - 20 | 5 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 5 | 11% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 图生图 image-to-image，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 0，观测区间 0 - 0，5 个样本，取值集中（一致性 100%）
-- 调度器 中位数 0，观测区间 0 - 0，5 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 3.56016e+14，观测区间 1.93667e+14 - 9.19984e+14，5 个样本，取值分散，一致性仅 37%
-- 风险：重绘幅度 观测到 9.19984e+14，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样步数 中位数 8，观测区间 8 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，5 个样本，取值分散，一致性仅 11%
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

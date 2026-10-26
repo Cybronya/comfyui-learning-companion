@@ -1,97 +1,81 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_17
 type: Text To Image
-frequency: 4
-level: strong
-coverage: 0.9235
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.821
+common_nodes: [AIO_Preprocessor, AnimaLLLiteApply, CLIPLoader, CLIPTextEncode, ClownsharKSampler_Beta, EmptyLatentImage, FluxResolutionNode, ImageScale, KSampler, LatentUpscaleBy, LoadImage, LoraLoaderModelOnly, NAGuidance, PreviewImage, SaveImage, Text, UNETLoader, VAEDecode, VAELoader, XB_UNetNameBroadcaster]
+problems: []
 missing: []
-members: [视频生成/文生视频/文戏不油武戏带感 MiniMax H3双采全能参考生视频V2_2104287266226139138.json, 视频生成/文生视频/文武双修均衡版｜MiniMax H3双采动漫短剧_2096624296683720706.json, 视频生成/文生视频/电影质感拉满｜MiniMax H3双采参考文武双修均衡_2096558764462792706.json, 视频生成/文生视频/高动态战斗专属｜BUNNY_H3双采放大FL2VA套件_2096632033136177153.json]
+members: [图片生成/文生图/Anima Aesthetic 1.1｜ControlNet精准控制_2078701779059036161.json, 图片生成/文生图/Anima+Aesthetic+1.1｜文生图+CN+修脸+修手_2078701786382290946.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_17
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/文戏不油武戏带感 MiniMax H3双采全能参考生视频V2_2104287266226139138.json、视频生成/文生视频/文武双修均衡版｜MiniMax H3双采动漫短剧_2096624296683720706.json、视频生成/文生视频/电影质感拉满｜MiniMax H3双采参考文武双修均衡_2096558764462792706.json、视频生成/文生视频/高动态战斗专属｜BUNNY_H3双采放大FL2VA套件_2096632033136177153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Anima Aesthetic 1.1｜ControlNet精准控制_2078701779059036161.json、图片生成/文生图/Anima+Aesthetic+1.1｜文生图+CN+修脸+修手_2078701786382290946.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 2 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `AnimaLLLiteApply`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ClownsharKSampler_Beta`
 - `EmptyLatentImage`
-- `JjkText`
+- `FluxResolutionNode`
+- `ImageScale`
 - `KSampler`
+- `LatentUpscaleBy`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `NAGuidance`
+- `PreviewImage`
+- `SaveImage`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `XB_UNetNameBroadcaster`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `SolAttnMiniMax` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `CR Load LoRA` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `FastGroupsBypassSwitch` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
+- `CLIPSetLastLayer` —— 1/2 个有
+- `FaceDetailer` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `SAMLoader` —— 1/2 个有
+- `Seed (rgthree)` —— 1/2 个有
+- `UltralyticsDetectorProvider` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 30 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2.88 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.55 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.88，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.55，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

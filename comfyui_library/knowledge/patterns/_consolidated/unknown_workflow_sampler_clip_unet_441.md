@@ -3,56 +3,54 @@ name: unknown_workflow_sampler_clip_unet_441
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7675
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.639
+common_nodes: [BasicScheduler, CLIPTextEncode, ConfigureModifiedFlux, DisableNoise, DualCLIPLoader, FlowEditGuider, FlowEditSampler, FluxGuidance, GetNode, INTConstant, ImageScale, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX-2-klein 文生图+图片编辑汇总_2012040681329532930.json, 图片生成/文生图/FLUX2-Klein多图编辑_2042101150391996418.json]
+members: [图片生成/图生图/利用FLUXEDIT文字改内容_1900533680509722625.json, 图片生成/图生图/洗图工作流，魔改设计_1923697376870264834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_441
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/FLUX-2-klein 文生图+图片编辑汇总_2012040681329532930.json、图片生成/文生图/FLUX2-Klein多图编辑_2042101150391996418.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/利用FLUXEDIT文字改内容_1900533680509722625.json、图片生成/图生图/洗图工作流，魔改设计_1923697376870264834.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ConfigureModifiedFlux`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FlowEditGuider`
+- `FlowEditSampler`
+- `FluxGuidance`
+- `GetNode`
+- `INTConstant`
+- `ImageScale`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImpactImageInfo` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
+- `Joy_caption_two` —— 1/2 个有
+- `Joy_caption_two_load` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy imageSize` —— 1/2 个有
 
 ## 典型参数
 

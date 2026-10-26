@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_vae_56
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.958
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.797
+common_nodes: [DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageFromBatch+, ImageMirror, ImageRepeat, ImageResizeKJ, ImpactSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, OpenposePreprocessor, VHS_LoadVideo, VHS_MergeImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/情歌对唱妹妹坐船头_1989787883399729154.json, 视频生成/图生视频/打大富翁_1990048687038623745.json, 视频生成/图生视频/数字人-InfiniteTalk-单人对口型工作流_2051262997816983554.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_2009633003546353665.json, 视频生成/文生视频/InfiniteTalk对口型_1963933041288728578.json, 视频生成/文生视频/数字人对口型深情歌唱_1989702067088486402.json, 视频生成/文生视频/最强数字人infinitetalk（图片唱歌图片说话）_1957952304787898369.json, 音频生成/音频生成/标准版图生单多人讲话工作流_2030914032869318658.json]
+members: [视频生成/图生视频/FusionX controlnet控制稳定双倍加速版视频转绘_1933785528938450945.json, 视频生成/图生视频/FusionX+VACE深度_姿势控制稳定双倍加速版视频转绘V1_1933557560941395970.json, 视频生成/图生视频/VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254456322.json, 视频生成/图生视频/VACE 14B图像参考双重引导姿势及深度控制视频生视频V2_1922710757258006529.json, 视频生成/图生视频/VACE图像参考双重引导姿势及深度控制视频生视频V1_1907443729060532226.json, 视频生成/图生视频/Wan2.1 FusionX-VACE动作迁移加速工作流_1933759507254435841.json, 视频生成/图生视频/Wan2.1-FusionX-VACE动作迁移_1933708885247352833.json, 视频生成/图生视频/视频动作迁移｜高清 720P｜深度+open pose 控制_1937848032371064834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_56
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/情歌对唱妹妹坐船头_1989787883399729154.json、视频生成/图生视频/打大富翁_1990048687038623745.json、视频生成/图生视频/数字人-InfiniteTalk-单人对口型工作流_2051262997816983554.json、视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json、视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_2009633003546353665.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX controlnet控制稳定双倍加速版视频转绘_1933785528938450945.json、视频生成/图生视频/FusionX+VACE深度_姿势控制稳定双倍加速版视频转绘V1_1933557560941395970.json、视频生成/图生视频/VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254456322.json、视频生成/图生视频/VACE 14B图像参考双重引导姿势及深度控制视频生视频V2_1922710757258006529.json、视频生成/图生视频/VACE图像参考双重引导姿势及深度控制视频生视频V1_1907443729060532226.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+全部 8 个 workflow 都包含：
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `ImageFromBatch+`
+- `ImageMirror`
+- `ImageRepeat`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `OpenposePreprocessor`
+- `VHS_LoadVideo`
+- `VHS_MergeImages`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 8/9 个有
-- `WanVideoLoraSelect` —— 8/9 个有
-- `AudioSeparation` —— 6/9 个有
-- `INTConstant` —— 4/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `PreviewAudio` —— 4/9 个有
-- `PreviewImage` —— 4/9 个有
-- `Anything Everywhere` —— 3/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `SeparateMasks` —— 3/9 个有
-- `AudioPlay` —— 2/9 个有
-- `MaskPreview+` —— 2/9 个有
-- `孤海图像缩放按像素` —— 2/9 个有
-- `MaskPreview` —— 1/9 个有
+- `PreviewImage` —— 7/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `WanVideoTeaCache` —— 6/8 个有
+- `DF_Integer` —— 5/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `Note Plus (mtb)` —— 4/8 个有
+- `WanVideoVACEModelSelect` —— 3/8 个有
+- `Blend` —— 2/8 个有
+- `Note _O` —— 2/8 个有
+- `WanVideoLoraSelect` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageBlend` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

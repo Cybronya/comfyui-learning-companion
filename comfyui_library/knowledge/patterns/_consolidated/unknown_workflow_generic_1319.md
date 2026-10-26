@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1319
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.636
-common_nodes: [EmptyImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, workflow>人物皮肤高清, workflow>克莱因高清]
+coverage: 0.809
+common_nodes: [CR Prompt Text, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, StringFunction|pysssss, easy saveText, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json, 图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json]
+members: [图片生成/反推提示词/推理-单图多分镜提示词-Qwen3VL_1999797119504482306.json, 图片生成/反推提示词/推理-单图多分镜提示词-RH_1999781948660871169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1319
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json、图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/推理-单图多分镜提示词-Qwen3VL_1999797119504482306.json、图片生成/反推提示词/推理-单图多分镜提示词-RH_1999781948660871169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
+- `CR Prompt Text`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `workflow>人物皮肤高清`
-- `workflow>克莱因高清`
+- `PrimitiveStringMultiline`
+- `StringFunction|pysssss`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Qwen3_VQA` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
 
 ## 典型参数
 

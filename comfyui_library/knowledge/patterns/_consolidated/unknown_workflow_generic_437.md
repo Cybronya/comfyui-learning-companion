@@ -3,33 +3,36 @@ name: unknown_workflow_generic_437
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [KOOK_SaveJPGImage, LoadImage, RH_RhartImageG2ImageToImage, Text Input [DVB]]
+coverage: 0.783
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/指定改3D_2064889231591436289.json, 图片生成/图生图/细节图-参考图_2072133270866845698.json, 图片生成/图生图/细节图-文案_2059821759330873345.json, 图片生成/图生图/裤子-换裤子_2059827667343597569.json, 图片生成/图生图/详情主图-方案1_2059815684909133826.json, 图片生成/图生图/详情主图-方案2，3，4_2059815701082361857.json]
+members: [图片生成/图生图/4+1_2059565424248967169.json, 图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json, 图片生成/图生图/DIY人物_1995858690374787074.json, 图片生成/图生图/产品精修_吊打一切_2049827708439412738.json, 图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json, 图片生成/图生图/分镜头时空裂变推演工作流_2040007421787119618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_437
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/指定改3D_2064889231591436289.json、图片生成/图生图/细节图-参考图_2072133270866845698.json、图片生成/图生图/细节图-文案_2059821759330873345.json、图片生成/图生图/裤子-换裤子_2059827667343597569.json、图片生成/图生图/详情主图-方案1_2059815684909133826.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/4+1_2059565424248967169.json、图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json、图片生成/图生图/DIY人物_1995858690374787074.json、图片生成/图生图/产品精修_吊打一切_2049827708439412738.json、图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `KOOK_SaveJPGImage`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `Text Input [DVB]`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JWStringConcat` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `InversionDemoLazyIndexSwitch` —— 1/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `Text Input [DVB]` —— 1/6 个有
 
 ## 典型参数
 

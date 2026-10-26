@@ -3,55 +3,56 @@ name: unknown_workflow_video_lora_sampler_896
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.963
-common_nodes: [CLIPVisionLoader, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.863
+common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler]
 problems: []
 missing: []
-members: [视频生成/图生视频/数字人音频驱动模型 Inifinte Talk  Wan 2.1 i2v 480p Worfklow_2011076540066439169.json, 视频生成/文生视频/卡通数字人_2086779135497687042.json]
+members: [视频生成/图生视频/Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json, 视频生成/图生视频/Wan2.2_14B_官方强推-图生视频（强烈推荐）_1956203344467558401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_896
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/数字人音频驱动模型 Inifinte Talk  Wan 2.1 i2v 480p Worfklow_2011076540066439169.json、视频生成/文生视频/卡通数字人_2086779135497687042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json、视频生成/图生视频/Wan2.2_14B_官方强推-图生视频（强烈推荐）_1956203344467558401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `LoadAudio`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `WanImageToVideo`
+- `WanMoeKSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration` —— 1/2 个有
-- `ComfyMathExpression` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LogicUtil_CeilNode` —— 1/2 个有
+- `ImageSharpen` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `TorchCompileModelWanVideoV2` —— 1/2 个有
+- `ttN int` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 6.5 | - | 2 | 46% |
+| 采样算法 | 2.5 | - | 2 | 40% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | euler | - | 2 | 100% |
 
 ## 常见问题
 
@@ -59,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
+- 采样算法 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

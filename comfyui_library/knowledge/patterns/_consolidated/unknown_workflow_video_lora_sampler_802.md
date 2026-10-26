@@ -3,56 +3,66 @@ name: unknown_workflow_video_lora_sampler_802
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9275
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed]
+coverage: 0.983
+common_nodes: [AudioBeforeAfterSilence, AudioToPath, ComfyMathExpression, ConcatVideos, GetImageRangeFromBatch, GetImageSize, ImageFromBatch, ImageResizeKJv2, ListAppendNode, ListCreateNode, LoadImage, LongCatAvatarWhisperEmbeds, ManualSigmas, MultiMergeVideos, PrimitiveString, RH_GetAudioDuration, ReplaceVideoLatentFrames, SP_DynamicCombo, SaveVideo, SystemUUIDGenerator, VHS_SelectFilename, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, YC Extract Number, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.json, 视频生成/图生视频/wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json]
+members: [数字人/数字人/LongCat 1.5 数字人口播｜5–180秒·三档分辨率_2112843247210033153.json, 数字人/数字人/LongCat 1.5 数字人口播｜省钱版·5–180秒_2113105068068270082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_802
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.json、视频生成/图生视频/wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/LongCat 1.5 数字人口播｜5–180秒·三档分辨率_2112843247210033153.json、数字人/数字人/LongCat 1.5 数字人口播｜省钱版·5–180秒_2113105068068270082.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `INTConstant`
+- `AudioBeforeAfterSilence`
+- `AudioToPath`
+- `ComfyMathExpression`
+- `ConcatVideos`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
+- `ListAppendNode`
+- `ListCreateNode`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LongCatAvatarWhisperEmbeds`
+- `ManualSigmas`
+- `MultiMergeVideos`
+- `PrimitiveString`
+- `RH_GetAudioDuration`
+- `ReplaceVideoLatentFrames`
+- `SP_DynamicCombo`
+- `SaveVideo`
+- `SystemUUIDGenerator`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanAnimatePlus BlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy globalSeed`
+- `WhisperModelLoader`
+- `YC Extract Number`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Wan22PromptSelector` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `VHS_LoadAudioUpload` —— 1/2 个有
 
 ## 典型参数
 

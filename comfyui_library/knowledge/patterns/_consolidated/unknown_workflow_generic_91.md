@@ -1,39 +1,46 @@
 ---
 name: unknown_workflow_generic_91
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.902867
-common_nodes: [DeepTranslatorTextNode, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.56425
+common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.1 Kontext多图参考融合_1928768548259401730.json, 图片生成/图生图/FLUX.1 Kontext最强图像编辑技术_1928419543075405826.json, 图片生成/图生图/Flux-Kontext 单图编辑- 一句修改图_1933163859874066433.json, 图片生成/图生图/Flux-Kontext多图融合 双图编辑-双人合影 一句修改图_1933162031539204098.json, 图片生成/图生图/Flux.1-Kontext双图融合生图_1934450178084728834.json, 图片生成/图生图/Kontext-pro一句话变素描_1937747476524744706.json, 图片生成/图生图/kontext 图像编辑---超燃多模态_1929776711196643330.json, 图片生成/图生图/kontext 图像编辑丨万物改图_1918718920348336129.json, 图片生成/图生图/kontext 图像编辑丨万物改图_1928494120128618497.json, 图片生成/图生图/kontext 图像编辑丨万物改图_多视图_1931186075497377794.json, 图片生成/图生图/kontext 图像编辑丨万物改图_多视图_1948268102069956610.json, 图片生成/图生图/产品一键融合背景，迁移万物（Kontext ）_1938120131203481601.json, 图片生成/文生图/Kontext-max一句话修改云文字_1936979411319050242.json, 图片生成/文生图/Kontext-pro一句话真人转绘青铜雕塑_1937014343026266114.json, 图片生成/文生图/一句话动漫转真人_1938480294855139329.json]
+members: [视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json, 视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频全球最低主页不断更新案例_1987413449342914561.json, 视频生成/图生视频/eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无水印8秒带货视频免会员无rh水印_2019985817179000833.json, 视频生成/图生视频/s0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印独家分享10-15秒_2013820039870287873.json, 视频生成/图生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json, 视频生成/图生视频/ve03谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法ve3.1_2016363121190899713.json, 视频生成/图生视频/仅4毛钱谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2000191170644934657.json, 视频生成/图生视频/全能视频S图生视频ai漫剧ai短剧全能视频S分镜漫画视频无水印高清免会员去rh水印独家分享_2004436071788277762.json, 视频生成/图生视频/全能视频S图生视频全能视频S分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家分享_1995142612589928449.json, 视频生成/图生视频/全能视频S图生视频全能视频S电商短视频带货无水印高清主页不断更新案例免会员去rh水印独家分享_1993194159827779586.json, 视频生成/图生视频/全能视频S高清无水印5分钱一次请求电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990473001458176001.json, 视频生成/图生视频/全能视频S高清无水印deepseek分镜提示词电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990478640083329026.json, 视频生成/图生视频/全能视频S高清无水印deepseek分镜提示词电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1994986824512811010.json, 视频生成/图生视频/谷歌3.1单图多图生视频文生视频带货视频短剧视频_2058489344364732417.json, 视频生成/文生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json, 视频生成/文生视频/全能视频Ss0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印10-15秒_2036314099788816386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_91
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext多图参考融合_1928768548259401730.json、图片生成/图生图/FLUX.1 Kontext最强图像编辑技术_1928419543075405826.json、图片生成/图生图/Flux-Kontext 单图编辑- 一句修改图_1933163859874066433.json、图片生成/图生图/Flux-Kontext多图融合 双图编辑-双人合影 一句修改图_1933162031539204098.json、图片生成/图生图/Flux.1-Kontext双图融合生图_1934450178084728834.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json、视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频全球最低主页不断更新案例_1987413449342914561.json、视频生成/图生视频/eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无水印8秒带货视频免会员无rh水印_2019985817179000833.json、视频生成/图生视频/s0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印独家分享10-15秒_2013820039870287873.json、视频生成/图生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `DeepTranslatorTextNode`
+全部 16 个 workflow 都包含：
+- `DownloadVideo`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+- `LoadVideoFromUrl_RH`
+- `PreviewAny`
+- `PrimitiveString`
+- `SaveVideo`
+- `UploadToImageHost`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 11/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/15 个有
-- `PreviewImage` —— 7/15 个有
-- `easy showAnything` —— 3/15 个有
-- `easy imageConcat` —— 1/15 个有
+- `SoraCreateVideo` —— 12/16 个有
+- `SoraQueryTask` —— 12/16 个有
+- `Text Multiline` —— 12/16 个有
+- `VeoImage2Video` —— 4/16 个有
+- `VeoQueryTask` —— 4/16 个有
+- `SoraPromptFromProduct` —— 2/16 个有
+- `String to Text` —— 2/16 个有
+- `MultiLinePromptIndex` —— 1/16 个有
 
 ## 典型参数
 

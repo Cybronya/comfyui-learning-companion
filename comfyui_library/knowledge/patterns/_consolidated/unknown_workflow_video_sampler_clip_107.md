@@ -3,50 +3,80 @@ name: unknown_workflow_video_sampler_clip_107
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.945
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.764
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/空白工作流_1899517701415456770.json, 视频生成/图生视频/美女飞翔+AI视频生成=艾橘溪_1899801104287150081.json, 视频生成/图生视频/羞羞的铁拳+人物拳击特效=艾橘溪_1899436993728696322.json, 视频生成/图生视频/通义万相WAN2.1 图生视频_1913599266676273153.json, 视频生成/文生视频/Wan2.1高质量图生视频_1894956774334595074.json, 视频生成/文生视频/【转身舞动】升级版WAN2.1 网红跳舞视频动画_1919571339177562113.json]
+members: [数字人/数字人/LTX--数字人（改了小豹老师原流的clip及采样参数）效果很好_2010141378457636865.json, 数字人/数字人/【Supermate 】 LTX--高清数字人_2010182339548160001.json, 视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json, 视频生成/图生视频/LTX2+对口型_2021873842758619137.json, 视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json, 视频生成/图生视频/LTX2.3+参考图片+参考音频（对口型+多人对话）_2034521088973082625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_107
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/空白工作流_1899517701415456770.json、视频生成/图生视频/美女飞翔+AI视频生成=艾橘溪_1899801104287150081.json、视频生成/图生视频/羞羞的铁拳+人物拳击特效=艾橘溪_1899436993728696322.json、视频生成/图生视频/通义万相WAN2.1 图生视频_1913599266676273153.json、视频生成/文生视频/Wan2.1高质量图生视频_1894956774334595074.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/LTX--数字人（改了小豹老师原流的clip及采样参数）效果很好_2010141378457636865.json、数字人/数字人/【Supermate 】 LTX--高清数字人_2010182339548160001.json、视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json、视频生成/图生视频/LTX2+对口型_2021873842758619137.json、视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 4/6 个有
-- `ImageScaleToTotalPixels` —— 3/6 个有
-- `LayerUtility: PurgeVRAM` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `easy imageSize` —— 3/6 个有
-- `WanVideoTeaCache` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
-- `TextWildcardList_AS` —— 1/6 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `ImageScaleBy` —— 5/6 个有
+- `LTXVLatentUpsampler` —— 5/6 个有
+- `LatentUpscaleModelLoader` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `INTConstant` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `MelBandRoFormerModelLoader` —— 3/6 个有
+- `MelBandRoFormerSampler` —— 3/6 个有
+- `PreviewAudio` —— 3/6 个有
+- `Float` —— 2/6 个有
+- `ImageUpscaleWithModel` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `Note Plus (mtb)` —— 2/6 个有
+- `UpscaleModelLoader` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `easy showTensorShape` —— 2/6 个有
+- `AudioSeparation` —— 1/6 个有
+- `CR Text` —— 1/6 个有
+- `ImpactInt` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LTXVGemmaCLIPModelLoader` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
 
 ## 典型参数
 

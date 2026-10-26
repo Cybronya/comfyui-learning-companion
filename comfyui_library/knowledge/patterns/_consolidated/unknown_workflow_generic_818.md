@@ -3,35 +3,34 @@ name: unknown_workflow_generic_818
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, PreviewAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.95
+common_nodes: [LoadAudio, SaveAudio, SparkTTSClone]
 problems: []
 missing: []
-members: [音频生成/音频生成/indextts基础款_2014667772751515650.json, 音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json, 音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/空白工作流_2063266975324921857.json]
+members: [数字人/数字人/懒羊羊语音_1908849898094272513.json, 音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json, 音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json, 音频生成/音频生成/万能声音模仿器_1909785195850203138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_818
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/indextts基础款_2014667772751515650.json、音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json、音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/空白工作流_2063266975324921857.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/懒羊羊语音_1908849898094272513.json、音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json、音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json、音频生成/音频生成/万能声音模仿器_1909785195850203138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `PreviewAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `SaveAudio`
+- `SparkTTSClone`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `Text Multiline` —— 2/4 个有
+- `TextBox` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

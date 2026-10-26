@@ -3,17 +3,17 @@ name: unknown_workflow_sampler_clip_unet_229
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.925
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.917667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/基础flux文生图1009_1976073946242093057.json, 图片生成/文生图/大家电场景图2.0_1943614394796568578.json, 图片生成/文生图/大家电场景图_1948667723191595009.json, 图片生成/文生图/室内建筑景观高质感文生图_2067220940961964033.json, 图片生成/文生图/沙雕动漫专用表情包快速生成_2043984326500556801.json, 图片生成/文生图/生成系列性服装设计_1884234765942538241.json]
+members: [图片生成/文生图/FLUX.2 [Klein] 多图编辑_2074481156397035521.json, 图片生成/文生图/FLUX.2-klein-最快生图工作流_2012044466873442306.json, 图片生成/文生图/FLUX2 Klein 9B Image Edit_2073301759640035330.json, 图片生成/文生图/Flux2 Klein 图像编辑4B版V1_2012131213674287106.json, 图片生成/文生图/Flux2 Klein 图像编辑_2070333019503808513.json, 图片生成/文生图/Flux2 Klein｜图像编辑（角色一致性，保留角色全身特征）+防色彩偏移_2046845762285346817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_229
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/基础flux文生图1009_1976073946242093057.json、图片生成/文生图/大家电场景图2.0_1943614394796568578.json、图片生成/文生图/大家电场景图_1948667723191595009.json、图片生成/文生图/室内建筑景观高质感文生图_2067220940961964033.json、图片生成/文生图/沙雕动漫专用表情包快速生成_2043984326500556801.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLUX.2 [Klein] 多图编辑_2074481156397035521.json、图片生成/文生图/FLUX.2-klein-最快生图工作流_2012044466873442306.json、图片生成/文生图/FLUX2 Klein 9B Image Edit_2073301759640035330.json、图片生成/文生图/Flux2 Klein 图像编辑4B版V1_2012131213674287106.json、图片生成/文生图/Flux2 Klein 图像编辑_2070333019503808513.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,37 +23,41 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/6 个有
-- `LoraLoader` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `LoraLoader|pysssss` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `Text` —— 1/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `GetImageSize` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `CR Text` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `Flux2KleinColorAnchor` —— 1/6 个有
+- `Flux2KleinRefLatentController` —— 1/6 个有
+- `Flux2KleinTextRefBalance` —— 1/6 个有
+- `FluxResolutionNode` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 964 | 720 - 2048 | 6 | 61% |
-| 高度 | 1392 | 1024 - 1536 | 6 | 87% |
-| LoRA 模型强度 | 0.6 | 0.6 - 1 | 3 | 74% |
-| LoRA 文本强度 | 1 | 1 - 1.02 | 3 | 99% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,7 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 964，观测区间 720 - 2048，6 个样本
-- 高度 中位数 1392，观测区间 1024 - 1536，6 个样本，取值集中（一致性 87%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 1，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1.02，3 个样本，取值集中（一致性 99%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

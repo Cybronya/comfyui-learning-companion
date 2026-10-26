@@ -3,55 +3,48 @@ name: unknown_workflow_video_sampler_clip_273
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.876
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.921
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVConditioning, LTXVImgToVideo, LTXVScheduler, LoadImage, SamplerCustom, TextInput_, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json]
+members: [视频生成/图生视频/最快的视频生成模型+LTX-Video+图生视频-StarAI_1898011763626201090.json, 视频生成/图生视频/🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_273
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json、视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/最快的视频生成模型+LTX-Video+图生视频-StarAI_1898011763626201090.json、视频生成/图生视频/🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageResizeKJv2`
+- `CheckpointLoaderSimple`
 - `KSamplerSelect`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
-- `VAEEncodeAudio`
-- `VAELoader`
+- `LTXVConditioning`
+- `LTXVImgToVideo`
+- `LTXVScheduler`
+- `LoadImage`
+- `SamplerCustom`
+- `TextInput_`
+- `VAEDecode`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Getter` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `MiniMaxH3Director` —— 1/2 个有
+- `ApplyFBCacheOnModel` —— 1/2 个有
+- `ArgosTranslateTextNode` —— 1/2 个有
+- `Bjornulf_ShowStringText` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PatchModelPatcherOrder` —— 1/2 个有
 - `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `Setter` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

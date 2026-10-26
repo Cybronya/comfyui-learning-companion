@@ -3,29 +3,38 @@ name: unknown_workflow_generic_1544
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_BytedanceSeedance20GlobalMiniImageToVideo, SaveVideo]
+coverage: 0.413
+common_nodes: [GetNode, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, SetNode, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json, 视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json]
+members: [图片生成/图生图/服装搭配2_2071162422261538818.json, 图片生成/文生图/一致性生图工作流（老程）_2019663643889111042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1544
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json、视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/服装搭配2_2071162422261538818.json、图片生成/文生图/一致性生图工作流（老程）_2019663643889111042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `GetNode`
 - `LoadImage`
-- `RH_BytedanceSeedance20GlobalMiniImageToVideo`
-- `SaveVideo`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `SetNode`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `MultiTextConcatenate` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `StringMergeNode` —— 1/2 个有
 
 ## 典型参数
 

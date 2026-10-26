@@ -3,55 +3,55 @@ name: unknown_workflow_lora_sampler_unet_250
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.737
-common_nodes: [AILab_QwenVL, CLIPLoader, CR SDXL Aspect Ratio, CR Text Concatenate, Evaluate Integers, Image Comparer (rgthree), KSampler, LayerMask: MaskInvert, LayerMask: MaskPreview, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RMBG, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+coverage: 1
+common_nodes: [AddBackgroundNode, CLIPLoader, CR Image Border, ConditioningZeroOut, ConstrainImage|pysssss, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, HivisionNode, ImageConcatMulti, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImageLam, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, ZHHivisionParamsNode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Edit-2511打光完美换背景_2012118734139297794.json, 图片生成/图生图/[🛫书墨]换背景、打光、任意尺寸零偏移一体机——Synvow书墨_2009090593338695682.json]
+members: [图片生成/反推提示词/04 ID photo_2048415772346683393.json, 图片生成/反推提示词/5iriywoptoa_2059682644950085634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_250
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511打光完美换背景_2012118734139297794.json、图片生成/图生图/[🛫书墨]换背景、打光、任意尺寸零偏移一体机——Synvow书墨_2009090593338695682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/04 ID photo_2048415772346683393.json、图片生成/反推提示词/5iriywoptoa_2059682644950085634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
+- `AddBackgroundNode`
 - `CLIPLoader`
-- `CR SDXL Aspect Ratio`
-- `CR Text Concatenate`
-- `Evaluate Integers`
-- `Image Comparer (rgthree)`
+- `CR Image Border`
+- `ConditioningZeroOut`
+- `ConstrainImage|pysssss`
+- `EmptyLatentImage`
+- `FluxKontextMultiReferenceLatentMethod`
+- `HivisionNode`
+- `ImageConcatMulti`
 - `KSampler`
-- `LayerMask: MaskInvert`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RMBG`
+- `PreviewImageLam`
 - `SaveImage`
-- `ShowText|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
-- `easy isMaskEmpty`
+- `ZHHivisionParamsNode`
+
+**可变部分**（部分 workflow 才有）：
+- `ShellAgentPluginOutputText` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 600 | - | 2 | 100% |
+| 高度 | 800 | - | 2 | 100% |
 | 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
@@ -66,6 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 600，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 800，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%

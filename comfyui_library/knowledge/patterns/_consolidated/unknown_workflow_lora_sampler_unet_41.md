@@ -2,64 +2,80 @@
 name: unknown_workflow_lora_sampler_unet_41
 type: Unknown Workflow
 frequency: 12
-level: weak
-coverage: 0.891583
-common_nodes: [CLIPLoader, Image Comparer (rgthree), LoadImage, LoraLoaderModelOnly, QwenImageIntegratedKSampler, SaveImage, UNETLoader, VAELoader]
-problems: []
+level: strong
+coverage: 0.6765
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit-2511简单工作流_2004484543145017346.json, 图片生成/图生图/Qwen-edit-2511 画风迁移_2076508022507139073.json, 图片生成/图生图/Qwen2511 五图编辑工作流_2087794231141298177.json, 图片生成/图生图/Qwen2511 双图OOTD每日穿搭_2087795213162078209.json, 图片生成/图生图/Qwen2511产品精准溶图打光工作流_2087792356438401026.json, 图片生成/图生图/Qwen2511产品精准溶图打光工作流_2088634640620933121.json, 图片生成/图生图/Qwen2511风格迁移工作流_2087790893486141442.json, 图片生成/图生图/Qwen换脸工作流（无需遮罩）_2088161494591696898.json, 图片生成/图生图/千问Qwen-Edit-2511-产品单图融图_2062791307294240770.json, 图片生成/图生图/千问Qwen-Edit-2511-产品重打光溶图_2062795573585080321.json, 图片生成/图生图/千问Qwen-Edit-2511-人物&产品重打光_2062801026117365762.json, 图片生成/图生图/千问Qwen-Edit-2511-风格迁移_2062797855227727874.json]
+members: [图片生成/图生图/QwenEdit2509真人风格转换_1991357384436088834.json, 图片生成/图生图/QwenEdit2511风格转写实（一致性）_2010967343677054977.json, 图片生成/图生图/QwenEditUtils 2.2 Optional Mask换装-(适合全身换)_1992103898848751617.json, 图片生成/图生图/Qwen换装-图生图-衣物迁移_1992841662271647746.json, 图片生成/图生图/qwen-edit-2511电商服饰替换_2093978256927182850.json, 图片生成/图生图/【全自动换装+超强一致性】_2040251598290558978.json, 图片生成/图生图/一键换装增强版：完美替换衣物，人物一致性_2086810156494577666.json, 图片生成/图生图/全自动换装+超强一致性_1994552832286134274.json, 图片生成/图生图/千问 无遮罩控制 全自动换装_2000220845391872001.json, 图片生成/图生图/千问2511高清4k换装，全自动换装+超强一致性（单图35Mb）_2026664684333568001.json, 图片生成/图生图/千问换装【全自动换装+超强一致性】_1990256833518596097.json, 图片生成/文生图/千问【全自动换装+超强一致性】_2000213218951917569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_41
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit-2511简单工作流_2004484543145017346.json、图片生成/图生图/Qwen-edit-2511 画风迁移_2076508022507139073.json、图片生成/图生图/Qwen2511 五图编辑工作流_2087794231141298177.json、图片生成/图生图/Qwen2511 双图OOTD每日穿搭_2087795213162078209.json、图片生成/图生图/Qwen2511产品精准溶图打光工作流_2087792356438401026.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/QwenEdit2509真人风格转换_1991357384436088834.json、图片生成/图生图/QwenEdit2511风格转写实（一致性）_2010967343677054977.json、图片生成/图生图/QwenEditUtils 2.2 Optional Mask换装-(适合全身换)_1992103898848751617.json、图片生成/图生图/Qwen换装-图生图-衣物迁移_1992841662271647746.json、图片生成/图生图/qwen-edit-2511电商服饰替换_2093978256927182850.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
 - `CLIPLoader`
-- `Image Comparer (rgthree)`
+- `ConditioningZeroOut`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImageIntegratedKSampler`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
-- `PreviewImage` —— 3/12 个有
-- `FastCanvas` —— 2/12 个有
-- `FastCanvasTool` —— 2/12 个有
-- `LayerMask: BiRefNetUltraV2` —— 2/12 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 2/12 个有
-- `GetImageSize+` —— 1/12 个有
+- `CropWithPadInfo` —— 10/12 个有
+- `Image Comparer (rgthree)` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `QwenEditAdaptiveLongestEdge` —— 9/12 个有
+- `GetNode` —— 8/12 个有
+- `ImageScaleBy` —— 8/12 个有
+- `SetNode` —— 8/12 个有
+- `Seed (rgthree)` —— 7/12 个有
+- `CFGNorm` —— 2/12 个有
+- `ImageScaleToTotalPixels` —— 2/12 个有
+- `ModelSamplingAuraFlow` —— 2/12 个有
+- `SeedVR2` —— 2/12 个有
+- `SeedVR2BlockSwap` —— 2/12 个有
+- `SeedVR2ExtraArgs` —— 2/12 个有
+- `ImageUpscaleWithModel` —— 1/12 个有
+- `UpscaleModelLoader` —— 1/12 个有
+- `easy imageConcat` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 图生图 image-to-image | - | 12 | 100% |
+| 采样步数 | 8 | 4 - 8 | 12 | 75% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | 0 | 0 - 1472 | 12 | 0% |
-| 调度器 | 0 | 0 - 1104 | 12 | 0% |
-| 重绘幅度 | 999 | 999 - 8.31118e+14 | 12 | 0% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | beta57 | - | 12 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 图生图 image-to-image，12 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 4 - 8，12 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 0，观测区间 0 - 1472，12 个样本，取值分散，一致性仅 0%
-- 调度器 中位数 0，观测区间 0 - 1104，12 个样本，取值分散，一致性仅 0%
-- 重绘幅度 中位数 999，观测区间 999 - 8.31118e+14，12 个样本，取值分散，一致性仅 0%
-- 风险：重绘幅度 观测到 8.31118e+14，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 beta57，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

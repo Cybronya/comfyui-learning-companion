@@ -1,73 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_27
 type: Unknown Workflow
-frequency: 15
-level: strong
-coverage: 0.978133
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 16
+level: moderate
+coverage: 0.902563
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxH3TurboLoRA, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_2018199405492441089.json, 图片生成/图生图/FireRed-Image-Edit 换装神器｜电商服装展示_2104411613049741314.json, 图片生成/图生图/Qwen Edit Plus 多图编辑_1970549322146344962.json, 图片生成/图生图/rick and morty_2002342394169311234.json, 图片生成/图生图/五图编辑-rh-Qwen-Edit-2511-模板_2014144550574493697.json, 图片生成/图生图/动漫短剧角色换装换动作 Qwen-image-edit2511多图参考图生图_2015042670699220994.json, 图片生成/图生图/单图编辑-rh-Qwen-Edit-2511-模板_2013616947384029186.json, 图片生成/图生图/去水印-Qwen-Edit-2511 图片去水印_2036840450740457474.json, 图片生成/图生图/去水印-图片去水印-Qwen-Edit-2511-图像编辑_2025387125960613889.json, 图片生成/图生图/去水印-图片去水印-Qwen-Edit-2511-图像编辑_2026918010535026689.json, 图片生成/图生图/叁图编辑-rh-Qwen-Edit-2511-模板_2013999350959054850.json, 图片生成/图生图/双图编辑-Qwen-Edit-2511-模板_2013899588947681282.json, 图片生成/图生图/四图编辑-rh-Qwen-Edit-2511-模板_2014144556878536705.json, 图片生成/图生图/图片去水印极速版-阿浩_2031530848842944514.json, 图片生成/图生图/老照片修复-Qwen-Edit-2511-图像编辑_2003754424059240449.json]
+members: [图片生成/图生图/AI视频模型转图像编辑_2089665130316525570.json, 图片生成/图生图/Minimax H3 图像编辑工作流（支持多图、带放大）_2091499168857681922.json, 图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2096876812314959874.json, 图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2097171139620589569.json, 图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093245449938489345.json, 图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093517263633731585.json, 图片生成/文生图/Minimax H3 文生图工作流（带放大、提示词模版）_2090801005020672001.json, 视频生成/图生视频/Minima H3 多图参考生视频工作流（极速15秒1080P）_2090769195763068930.json, 视频生成/图生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2096442093140008962.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2098632894154633217.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2102648250376482817.json, 视频生成/图生视频/Minimax H3 单图生视频工作流加速版_2106591527647662081.json, 视频生成/图生视频/Minimax H3 单图生视频工作流（极速15秒1080P）_2090716594468118530.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2090749193135681538.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2101259585813311489.json, 视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_27
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_2018199405492441089.json、图片生成/图生图/FireRed-Image-Edit 换装神器｜电商服装展示_2104411613049741314.json、图片生成/图生图/Qwen Edit Plus 多图编辑_1970549322146344962.json、图片生成/图生图/rick and morty_2002342394169311234.json、图片生成/图生图/五图编辑-rh-Qwen-Edit-2511-模板_2014144550574493697.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/AI视频模型转图像编辑_2089665130316525570.json、图片生成/图生图/Minimax H3 图像编辑工作流（支持多图、带放大）_2091499168857681922.json、图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2096876812314959874.json、图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2097171139620589569.json、图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093245449938489345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyModelAdapter`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3TurboLoRA`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 12/15 个有
-- `EmptySD3LatentImage` —— 10/15 个有
-- `Int` —— 7/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/15 个有
-- `SmartImageConcat` —— 4/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/15 个有
-- `PrimitiveStringMultiline` —— 2/15 个有
-- `Image Comparer (rgthree)` —— 1/15 个有
-- `JjkText` —— 1/15 个有
-- `Label (rgthree)` —— 1/15 个有
-- `SeedVR2GGUF` —— 1/15 个有
+- `LoadImage` —— 15/16 个有
+- `SpectrumApplyMiniMaxH3` —— 15/16 个有
+- `CreateVideo` —— 10/16 个有
+- `SaveVideo` —— 9/16 个有
+- `GetImagesFromBatchIndexed` —— 7/16 个有
+- `ImageUpscaleWithModel` —— 7/16 个有
+- `PreviewImage` —— 7/16 个有
+- `SaveImage` —— 7/16 个有
+- `UpscaleModelLoader` —— 7/16 个有
+- `PreviewAudio` —— 6/16 个有
+- `Image Comparer (rgthree)` —— 5/16 个有
+- `ExtendIntermediateSigmas` —— 4/16 个有
+- `LoadVideo` —— 3/16 个有
+- `LoadAudio` —— 2/16 个有
+- `PDGeminiAPIKey` —— 1/16 个有
+- `PreviewTextNode` —— 1/16 个有
+- `PrimitiveFloat` —— 1/16 个有
+- `PrimitiveInt` —— 1/16 个有
+- `PrimitiveStringMultiline` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 15 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | sa_solver | - | 15 | 67% |
-| 调度器 | simple | - | 15 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 14/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，15 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，15 个样本，一致性 67%
-- 调度器 最常用 simple，15 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（14/15 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

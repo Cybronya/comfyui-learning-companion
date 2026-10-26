@@ -3,33 +3,36 @@ name: unknown_workflow_sampler_97
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [LoadAudio, NTCosyVoiceZeroShotSampler, SaveAudio]
+coverage: 0.9285
+common_nodes: [LoadAudio, LoadImage, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Cute-Baby-Voice_1918683888908959745.json, 音频生成/音频生成/克隆声音极简版_1897973393327902722.json]
+members: [视频生成/图生视频/DreamId-Omni双参图Multi-RA2V视频生成V3_2033998163958304770.json, 视频生成/文生视频/Dreamid-Omni 音画同步 ComfyUI 工作流_2035627766984478722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_97
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Cute-Baby-Voice_1918683888908959745.json、音频生成/音频生成/克隆声音极简版_1897973393327902722.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/DreamId-Omni双参图Multi-RA2V视频生成V3_2033998163958304770.json、视频生成/文生视频/Dreamid-Omni 音画同步 ComfyUI 工作流_2035627766984478722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadAudio`
-- `NTCosyVoiceZeroShotSampler`
-- `SaveAudio`
+- `LoadImage`
+- `RunningHub DreamID-Omni Loader`
+- `RunningHub DreamID-Omni Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/2 个有
-- `ShellAgentPluginInputText` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

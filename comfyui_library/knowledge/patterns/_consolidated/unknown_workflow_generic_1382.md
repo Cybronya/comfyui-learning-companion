@@ -3,38 +3,35 @@ name: unknown_workflow_generic_1382
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9115
-common_nodes: [Image Comparer (rgthree), ImageComposite+, LayerMask: LoadSegmentAnythingModels, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.775
+common_nodes: [InspyrenetRembg, LoadImage, PreviewImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json, 图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json]
+members: [图片生成/图生图/Kontext一键快速三视图_1937358040310169602.json, 图片生成/图生图/kontext 万物迁移_1937833513100185602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1382
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json、图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext一键快速三视图_1937358040310169602.json、图片生成/图生图/kontext 万物迁移_1937833513100185602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageComposite+`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: MaskPreview`
-- `LayerMask: SegmentAnythingUltra V3`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `InspyrenetRembg`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
+- `PreviewImage`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Rembg (Remove Background)` —— 1/2 个有
+- `Image Stitch` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

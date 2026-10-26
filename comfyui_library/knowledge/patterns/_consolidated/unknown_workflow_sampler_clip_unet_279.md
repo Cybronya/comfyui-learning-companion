@@ -1,70 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_279
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9185
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.876
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein Euler_2034106354624897025.json, 图片生成/图生图/Flux2_Klein-PS扩图_无需参数白色填充_2087356447444258818.json, 图片生成/图生图/PS扩图 无需参数（个人原创）_2039171118006804482.json, 图片生成/图生图/设计工作流——鸟瞰设计_2018294277486419969.json]
+members: [图片生成/文生图/Qwen-2512文生图(Yihan AIGC)_2018677340422807553.json, 图片生成/文生图/Qwen千问文生图 测试_1952903251559649281.json, 图片生成/文生图/Z-Image-Base 文生图+高清放大 开源基础版_2016384209975255041.json, 图片生成/文生图/Z-Image-Base 新模型懂你，文生图 直出4K_2016563209741799426.json, 图片生成/文生图/Z-image-base 文生图_2016300269142806530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_279
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein Euler_2034106354624897025.json、图片生成/图生图/Flux2_Klein-PS扩图_无需参数白色填充_2087356447444258818.json、图片生成/图生图/PS扩图 无需参数（个人原创）_2039171118006804482.json、图片生成/图生图/设计工作流——鸟瞰设计_2018294277486419969.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen-2512文生图(Yihan AIGC)_2018677340422807553.json、图片生成/文生图/Qwen千问文生图 测试_1952903251559649281.json、图片生成/文生图/Z-Image-Base 文生图+高清放大 开源基础版_2016384209975255041.json、图片生成/文生图/Z-Image-Base 新模型懂你，文生图 直出4K_2016563209741799426.json、图片生成/文生图/Z-image-base 文生图_2016300269142806530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL_Advanced` —— 2/4 个有
-- `ConstrainImage|pysssss` —— 2/4 个有
-- `ImageResize+` —— 2/4 个有
-- `ImageUpscaleWithModel` —— 2/4 个有
-- `InspyrenetRembg` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `UpscaleModelLoader` —— 2/4 个有
-- `CR Simple Text Watermark` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_RhartImageG2ImageToImage` —— 1/4 个有
-- `Text Concatenate` —— 1/4 个有
-- `scale` —— 1/4 个有
-- `text_mul_Join` —— 1/4 个有
-- `text_mul_remove` —— 1/4 个有
-- `text_mul_replace` —— 1/4 个有
+- `CR Text` —— 4/5 个有
+- `ImageScaleBy` —— 4/5 个有
+- `ModelSamplingAuraFlow` —— 4/5 个有
+- `SeedVR2LoadDiTModel` —— 4/5 个有
+- `SeedVR2LoadVAEModel` —— 4/5 个有
+- `SeedVR2VideoUpscaler` —— 4/5 个有
+- `PreviewImage` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `easy cleanGpuUsed` —— 2/5 个有
+- `DapaoImageRatioLimitNode` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `Image Filter Adjustments` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `RH_Captioner_Pro` —— 1/5 个有
+- `SDXL Resolutions (JPS)` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 20 - 50 | 5 | 62% |
+| Prompt 约束强度(CFG) | 4 | 3 - 4 | 5 | 89% |
+| 采样算法 | euler | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -72,4 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 20 - 50，5 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 3 - 4，5 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -2,64 +2,56 @@
 name: unknown_workflow_sampler_unet_vae_183
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.788
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+level: strong
+coverage: 0.8305
+common_nodes: [DualCLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/A-3 MiniMax-H3 文生视频 开源版_2084541355501641730.json, 视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json, 视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json, 视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json, 视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json, 视频生成/文生视频/minimax_h3 多参考图+视频参考+sage加速_2089945454745313281.json]
+members: [图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json, 图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json, 图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json, 图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json, 图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json, 图片生成/文生图/flux模型canny细致线控制工作流_1988873413324312577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_183
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/A-3 MiniMax-H3 文生视频 开源版_2084541355501641730.json、视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json、视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json、视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json、视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json、图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json、图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json、图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json、图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `DualCLIPLoader`
+- `KSampler`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `LoadImage` —— 4/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `VHS_LoadVideo` —— 4/6 个有
-- `MiniMaxH3ImageToVideo` —— 3/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `VideoInfoLoaded` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Getter` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MiniMaxH3AVDecodeT8` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Setter` —— 1/6 个有
+- `CLIPTextEncode` —— 5/6 个有
+- `InstructPixToPixConditioning` —— 5/6 个有
+- `FluxGuidance` —— 4/6 个有
+- `Canny` —— 3/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `AIO_Preprocessor` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `CLIPTextEncodeFlux` —— 1/6 个有
+- `Flex2Conditioner` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 28 | 6 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | normal | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -67,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 28，6 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 normal，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

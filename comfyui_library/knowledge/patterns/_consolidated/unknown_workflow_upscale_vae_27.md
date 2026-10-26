@@ -3,27 +3,27 @@ name: unknown_workflow_upscale_vae_27
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7852
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.744
+common_nodes: [JoinImageWithAlpha, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/图片高清化（自带对比功能）_2055969759644135425.json, 图片生成/图生图/大碗有料整合-高清放大_2011030307218132993.json, 图片生成/图生图/超好用🔥seedvr2图像高清放大_2091080723422867458.json, 图片生成/图生图/阿清的seedvr2图像高清放大_2092155144925437953.json, 图片生成/图生图/高清放大，文字不乱码SeedVR2_2064877434528423937.json]
+members: [图片生成/图生图/SeedVR2.5_4K_图像4K高清放大_1997923965844750337.json, 图片生成/图生图/SeedVR2.5_图像4K高清放大_1997976745368281090.json, 图片生成/图生图/【阡陌】SeedVR 2.5 超高清放大工作流_2011339031476445185.json, 图片生成/图生图/印花级图案高清修复工作流 _ 无损放大 + 智能抠图 + 瑕疵修复_2078910452784001026.json, 图片生成/图生图/图像4K高清放大：SeedVR2.5_4K_image_upscale_1997861575845457921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/图片高清化（自带对比功能）_2055969759644135425.json、图片生成/图生图/大碗有料整合-高清放大_2011030307218132993.json、图片生成/图生图/超好用🔥seedvr2图像高清放大_2091080723422867458.json、图片生成/图生图/阿清的seedvr2图像高清放大_2092155144925437953.json、图片生成/图生图/高清放大，文字不乱码SeedVR2_2064877434528423937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2.5_4K_图像4K高清放大_1997923965844750337.json、图片生成/图生图/SeedVR2.5_图像4K高清放大_1997976745368281090.json、图片生成/图生图/【阡陌】SeedVR 2.5 超高清放大工作流_2011339031476445185.json、图片生成/图生图/印花级图案高清修复工作流 _ 无损放大 + 智能抠图 + 瑕疵修复_2078910452784001026.json、图片生成/图生图/图像4K高清放大：SeedVR2.5_4K_image_upscale_1997861575845457921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+- `JoinImageWithAlpha`
 - `LoadImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
@@ -31,9 +31,14 @@ source: knowledge_consolidation
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 1/5 个有
-- `JoinImageWithAlpha` —— 1/5 个有
-- `SeedVR2TorchCompileSettings` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `easy int` —— 4/5 个有
+- `ImageScaleRestore_UTK` —— 3/5 个有
+- `KOOK_ImageCompression` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `RMBG` —— 1/5 个有
 
 ## 典型参数
 

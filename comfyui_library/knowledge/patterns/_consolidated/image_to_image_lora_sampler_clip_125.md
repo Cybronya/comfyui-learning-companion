@@ -3,61 +3,51 @@ name: image_to_image_lora_sampler_clip_125
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.899
-common_nodes: [AddLabel, Anything Everywhere3, CLIPTextEncode, CR Image Grid Panel, CR Text Concatenate, CR Text List To String, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, ImageListToBatch+, ImageListToImageBatch, KSampler, LayerUtility: If , LoadImage, Lora Loader, Primitive integer [Crystools], ReferenceLatent, SaveImage, SomethingToString, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy isNone, easy rangeFloat, easy showAnything]
+coverage: 0.833
+common_nodes: [ApplyFBCacheOnModel, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GetNode, Image Comparer (rgthree), ImageResize+, ImpactInt, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SetNode, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy ifElse, easy mathString]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext Lora测试 - XY图表生成_1944576288520589313.json, 图片生成/图生图/Kontext lora测试（XY）工作流_1952012588777459713.json]
+members: [图片生成/图生图/F.1-Kontext 白天 ⇄ 夜晚（自动切换）_2087195460535668738.json, 图片生成/图生图/F.1-Kontext 自动转换 白天 ⇄ 夜晚_夜晚 ⇄ 白天_2109093477630959617.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_125
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext Lora测试 - XY图表生成_1944576288520589313.json、图片生成/图生图/Kontext lora测试（XY）工作流_1952012588777459713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/F.1-Kontext 白天 ⇄ 夜晚（自动切换）_2087195460535668738.json、图片生成/图生图/F.1-Kontext 自动转换 白天 ⇄ 夜晚_夜晚 ⇄ 白天_2109093477630959617.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AddLabel`
-- `Anything Everywhere3`
+- `ApplyFBCacheOnModel`
 - `CLIPTextEncode`
-- `CR Image Grid Panel`
-- `CR Text Concatenate`
-- `CR Text List To String`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `FluxKontextImageScale`
-- `ImageListToBatch+`
-- `ImageListToImageBatch`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImpactInt`
 - `KSampler`
-- `LayerUtility: If `
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `Lora Loader`
-- `Primitive integer [Crystools]`
+- `LoraLoaderModelOnly`
 - `ReferenceLatent`
 - `SaveImage`
-- `SomethingToString`
+- `SetNode`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy isNone`
-- `easy rangeFloat`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy mathString`
 
 ## 典型参数
 

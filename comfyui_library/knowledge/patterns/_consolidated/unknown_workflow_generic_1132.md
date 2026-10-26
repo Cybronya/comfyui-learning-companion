@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1132
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.944333
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.707
+common_nodes: [Comfly_sora2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/双人语音克隆-MegaTTS3_1963880808523321346.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1964945150801793025.json, 音频生成/音频生成/多人语音克隆-FireRedTTS_1970352088003846145.json]
+members: [视频生成/图生视频/【阡陌】全能视频S图生视频_1976510159512051713.json, 视频生成/文生视频/【阡陌】全能视频S文生视频_1976488773498310657.json, 视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1132
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/双人语音克隆-MegaTTS3_1963880808523321346.json、音频生成/音频生成/双人语音克隆-MegaTTS3_1964945150801793025.json、音频生成/音频生成/多人语音克隆-FireRedTTS_1970352088003846145.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S图生视频_1976510159512051713.json、视频生成/文生视频/【阡陌】全能视频S文生视频_1976488773498310657.json、视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `Comfly_sora2`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MegaTTS3Run` —— 2/3 个有
-- `FireRedTTS2_Dialogue` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

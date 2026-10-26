@@ -2,77 +2,88 @@
 name: unknown_workflow_lora_sampler_clip_42
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.858556
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.976
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EG_TC_Node, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Int, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image极致真实美女V3_1983588226168463361.json, 图片生成/文生图/Qwen-Image千问超美感人像 美女工作流_1966026218137096193.json, 图片生成/文生图/Qwen-Image极致真实美女V3_1983414394384228354.json, 图片生成/文生图/Qwen-Image极致真实美女V3版_1983878313116631041.json, 图片生成/文生图/Qwen-Image极致美感美女_1959887822478061569.json, 图片生成/文生图/Qwen-Image极致美感美女_1970348297275777025.json, 图片生成/文生图/QwenImage-RebalanceV1现实增强 VS 原版_1984151149953646593.json, 图片生成/文生图/qwenimage2512工作流_2006373077126483969.json, 图片生成/文生图/极致真实的人像质感(Qwen Image 文生图），三方案对比版_1984179316147847170.json]
+members: [图片生成/反推提示词/43yijianbatu_2050078089400602626.json, 图片生成/反推提示词/小红书人物多角度多姿势场景一致性_1927579469643681793.json, 图片生成/图生图/F1.极度真实日常生活照小红书超写实生活照3.0_1906155298510540801.json, 图片生成/图生图/人物换背景，多角度多姿势不同服装，小红书风格_1986367612152147969.json, 图片生成/图生图/小红书网感美女 双图融合  模特套图_2037782440806191106.json, 图片生成/图生图/小红书风格-人物换背景，多角度多姿势不同服装_2034538251595292674.json, 图片生成/文生图/人物多角度多姿势场景一致性（一次4张图）_1924977832982999041.json, 图片生成/文生图/小红书高质量美女图 网感美女 轻松涨粉_2034169411594100738.json, 图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_42
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-Image极致真实美女V3_1983588226168463361.json、图片生成/文生图/Qwen-Image千问超美感人像 美女工作流_1966026218137096193.json、图片生成/文生图/Qwen-Image极致真实美女V3_1983414394384228354.json、图片生成/文生图/Qwen-Image极致真实美女V3版_1983878313116631041.json、图片生成/文生图/Qwen-Image极致美感美女_1959887822478061569.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/43yijianbatu_2050078089400602626.json、图片生成/反推提示词/小红书人物多角度多姿势场景一致性_1927579469643681793.json、图片生成/图生图/F1.极度真实日常生活照小红书超写实生活照3.0_1906155298510540801.json、图片生成/图生图/人物换背景，多角度多姿势不同服装，小红书风格_1986367612152147969.json、图片生成/图生图/小红书网感美女 双图融合  模特套图_2037782440806191106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `DualCLIPLoader`
+- `EG_TC_Node`
+- `EmptyLatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `Int`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoader`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 8/9 个有
-- `LayerUtility: ImageReel` —— 7/9 个有
-- `LayerUtility: ImageReelComposit` —— 7/9 个有
-- `Text Multiline` —— 6/9 个有
-- `AILab_QwenVL` —— 5/9 个有
-- `LoadImage` —— 5/9 个有
+- `ArgosTranslateTextNode` —— 8/9 个有
+- `CR Text Replace` —— 5/9 个有
+- `DisableNoise` —— 5/9 个有
+- `Joy_caption_two` —— 5/9 个有
+- `Joy_caption_two_load` —— 5/9 个有
+- `LayerUtility: PurgeVRAM` —— 5/9 个有
 - `ShowText|pysssss` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
-- `Any Switch (rgthree)` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `Text Concatenate` —— 2/9 个有
-- `CustomAddLabel` —— 1/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `ImageBatchOneOrMore` —— 1/9 个有
-- `Seed` —— 1/9 个有
+- `SplitSigmasDenoise` —— 5/9 个有
+- `TextInput_` —— 5/9 个有
+- `Fast Bypasser (rgthree)` —— 4/9 个有
+- `ImageResize+` —— 4/9 个有
+- `LayerMask: BiRefNetUltraV2` —— 4/9 个有
+- `LayerMask: LoadBiRefNetModel` —— 4/9 个有
+- `LayerUtility: ImageBlendAdvance` —— 4/9 个有
+- `TeaCache` —— 4/9 个有
+- `ApplyPulidFlux` —— 1/9 个有
+- `FloatSlider` —— 1/9 个有
+- `PortraitMaster_中文版` —— 1/9 个有
+- `PulidFluxEvaClipLoader` —— 1/9 个有
+- `PulidFluxInsightFaceLoader` —— 1/9 个有
+- `PulidFluxModelLoader` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 6 - 30 | 9 | 63% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 9 | 63% |
-| 采样算法 | euler_ancestral | - | 9 | 78% |
-| 调度器 | simple | - | 9 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 512 | 512 - 512 | 9 | 100% |
+| 高度 | 512 | 512 - 512 | 9 | 100% |
+| LoRA 模型强度 | 0.5 | 0.2 - 0.5 | 9 | 59% |
+| LoRA 文本强度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 6 - 30，9 个样本
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，9 个样本
-- 采样算法 最常用 euler_ancestral，9 个样本，一致性 78%
-- 调度器 最常用 simple，9 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，9 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.5，观测区间 0.2 - 0.5，9 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

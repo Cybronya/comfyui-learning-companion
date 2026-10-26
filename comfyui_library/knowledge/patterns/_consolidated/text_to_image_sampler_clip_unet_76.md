@@ -1,80 +1,75 @@
 ---
 name: text_to_image_sampler_clip_unet_76
 type: Text To Image
-frequency: 8
-level: moderate
-coverage: 0.888125
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: weak
+coverage: 0.883889
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json, 图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json, 图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json, 图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json, 图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json, 图片生成/图生图/【电商仿图】Qwen海报设计图生图 电商产品平面设计编辑图片_1979055932632109058.json, 图片生成/图生图/洗图模仿海报风格，效果稳定_1992790546683064322.json, 图片生成/文生图/奶茶产品宣传图_1975922379924877314.json]
+members: [图片生成/文生图/LORA推荐第6期-MOSS IMAGE风格LORA_2114219762174746626.json, 图片生成/文生图/MJ风格工作流V2.0_2112169962583445506.json, 图片生成/文生图/MJ风格工作流V2.0_2113776644115746817.json, 图片生成/文生图/MJ风格工作流V2.0_2114196908800569346.json, 图片生成/文生图/Z-image text-to-image-文生图-超自然人像-20秒快速出图_1993970117180669953.json, 图片生成/文生图/Z-image text-to-image-文生图-超自然人像-20秒快速出图_2074311721812062209.json, 图片生成/文生图/Z-image text-to-image-文生图（完美支持中文字+超自然）​【Agent必备】_2088917231601278978.json, 图片生成/文生图/Z-image turbo D-OPSD文生图_2057063739513462785.json, 图片生成/文生图/电影级质感（图像） 一键生成_2113423908694224898.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_76
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json、图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json、图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json、图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json、图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/LORA推荐第6期-MOSS IMAGE风格LORA_2114219762174746626.json、图片生成/文生图/MJ风格工作流V2.0_2112169962583445506.json、图片生成/文生图/MJ风格工作流V2.0_2113776644115746817.json、图片生成/文生图/MJ风格工作流V2.0_2114196908800569346.json、图片生成/文生图/Z-image text-to-image-文生图-超自然人像-20秒快速出图_1993970117180669953.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 7/8 个有
-- `JanusImageUnderstanding` —— 6/8 个有
-- `JanusModelLoader` —— 6/8 个有
-- `ShowText|pysssss` —— 6/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `FluxResolutionNode` —— 2/8 个有
-- `RH_LLMAPI_NODE` —— 2/8 个有
-- `easy imageConcat` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `ImageUpscaleWithModel` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `UpscaleModelLoader` —— 1/8 个有
+- `CR Prompt Text` —— 8/9 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `LoraLoaderModelOnly` —— 6/9 个有
+- `ResolutionSelector` —— 5/9 个有
+- `ConditioningKrea2Rebalance` —— 4/9 个有
+- `GetNode` —— 4/9 个有
+- `Label (rgthree)` —— 4/9 个有
+- `easy promptLine` —— 4/9 个有
+- `PreviewImage` —— 3/9 个有
+- `EmptyImage` —— 2/9 个有
+- `Load Lora` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 768 | 8 | 84% |
-| 高度 | 1024 | 512 - 1024 | 8 | 75% |
-| 采样步数 | 35 | 8 - 35 | 8 | 72% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 8 | 73% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 1024 | 1024 - 1920 | 9 | 70% |
+| 高度 | 1024 | 1024 - 1920 | 9 | 73% |
+| 采样步数 | 10 | 8 - 50 | 9 | 5% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 9 | 49% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 768，8 个样本，取值集中（一致性 84%）
-- 高度 中位数 1024，观测区间 512 - 1024，8 个样本
-- 采样步数 中位数 35，观测区间 8 - 35，8 个样本
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1920，9 个样本
+- 高度 中位数 1024，观测区间 1024 - 1920，9 个样本
+- 采样步数 中位数 10，观测区间 8 - 50，9 个样本，取值分散，一致性仅 5%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，9 个样本，取值分散，一致性仅 49%
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

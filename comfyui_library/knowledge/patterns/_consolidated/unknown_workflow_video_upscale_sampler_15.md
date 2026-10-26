@@ -3,59 +3,64 @@ name: unknown_workflow_video_upscale_sampler_15
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.78
-common_nodes: [CLIPVisionLoader, CR Text Concatenate, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, JWInteger, JjkText, LoadImage, LoadWanVideoT5TextEncoder, PlaySound|pysssss, PreviewImage, RH_Captioner, RH_Prompter, RH_Translator, RIFE VFI, SimpleMath+, TextBox, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy showAnything, ttN concat]
+coverage: 0.889
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoT5TextEncoder, MimicMotionGetPoses, PlaySound|pysssss, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX_图生视频（手写+自动提示词优化）_1943848971993485314.json, 视频生成/图生视频/FusionX_图生视频（自动提示词优化）_1936709639767511041.json]
+members: [数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json, 视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FusionX_图生视频（手写+自动提示词优化）_1943848971993485314.json、视频生成/图生视频/FusionX_图生视频（自动提示词优化）_1936709639767511041.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json、视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CR Text Concatenate`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
 - `ImageScale`
 - `ImageUpscaleWithModel`
-- `JWInteger`
-- `JjkText`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MimicMotionGetPoses`
 - `PlaySound|pysssss`
 - `PreviewImage`
-- `RH_Captioner`
-- `RH_Prompter`
-- `RH_Translator`
 - `RIFE VFI`
-- `SimpleMath+`
-- `TextBox`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 - `easy showAnything`
-- `ttN concat`
+
+**可变部分**（部分 workflow 才有）：
+- `Florence2ModelLoader` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `OpenposePreprocessor` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
 
 ## 典型参数
 

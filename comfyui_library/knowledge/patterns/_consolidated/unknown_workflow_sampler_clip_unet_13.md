@@ -1,75 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_13
 type: Unknown Workflow
-frequency: 30
-level: moderate
-coverage: 0.7847
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 32
+level: weak
+coverage: 0.953125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/klein换头【可选  Bnanana pro】_2016044457656852482.json, 图片生成/图生图/pro_2026893876430118913.json, 图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json, 图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json, 图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json, 图片生成/图生图/万物迁移（产品替换）Flux2Klein9b版本_2070089591029321729.json, 图片生成/图生图/产品_人物 换背景 光源一致F2-klein-9B_2083078402935975937.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2084994836385583105.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2085888858398486529.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2088506065381052418.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2091712412654329858.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2091844027921555458.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2092618498466996226.json, 图片生成/图生图/产品人物换背景光源一致F2-Klein-9B工作流_2084119585300766722.json, 图片生成/图生图/全能万物迁移 换装换脸 服装全品类换装 真实自然服饰迁移展示多图融合_2061681345826480129.json, 图片生成/图生图/最强万物迁移 f2k_9b_anything change clothes_2026650952215826434.json, 图片生成/图生图/最强产品_人物_换背景_光源一致任务一致F2-klein-9B加高清输出1_2085198054378000385.json, 图片生成/图生图/最强产品_人物_换背景_光源一致任务一致F2-klein-9B加高清输出1_2085207763952689154.json, 图片生成/图生图/电商产品换背景_2078457535203471361.json, 图片生成/图生图/真人转动漫+极速版 卡通动画角色设定+flux2+klein+9B+漫画手绘卡通网剧_2055088378185560066.json, 图片生成/图生图/真人转动漫+极速版+flux2+klein+9B+漫画手绘卡通网剧 角色设定_2055090424590675969.json, 图片生成/图生图/真人转动漫+极速版+卡通动画角色设定+flux2+klein+9B+漫画手绘卡通网剧+_2066338826917867521.json, 图片生成/图生图/真人转动漫的 flux klein_2025977265284190209.json, 图片生成/图生图/美女模特身材优化 Flux-2-klein-9B+胸部放大_2062735798742634497.json, 图片生成/图生图/美女模特身材优化+丰胸效果+胸部增强+Flux-2-klein-9B+胸部放大_2052265166510804994.json, 图片生成/图生图/美女模特身材优化+丰胸效果+胸部增强+Flux-2-klein-9B+胸部放大_2052296310446936066.json, 图片生成/图生图/苗条身材优化 美女模特身材优化+Flux-2-klein-9B+胸部放大 身形美体_2063795605662687234.json, 图片生成/图生图/（极速）真人转动漫漫画漫剧flux2+klein_2056934489481371649.json, 图片生成/文生图/f2_klein_9b_胸部放大器2.0_2026093999936774146.json, 图片生成/文生图/产品人物换背景光源一致F2-Klein-9B工作流_2084105106571743234.json]
+members: [图片生成/文生图/Z-Image-Turbo高质量文生图_2021205123837468673.json, 图片生成/文生图/Z-ImageBase+4步加速+文生图_2021786374671704065.json, 图片生成/文生图/Z-ImageBase+8步加速+文生图_2021754201637916674.json, 图片生成/文生图/Z-ImageBase+文生图_2016327178299904002.json, 图片生成/文生图/Z-Image_BASE工作流_2066527774562668546.json, 图片生成/文生图/Z-Image_BASE造像完整版文生图_2019239958594199554.json, 图片生成/文生图/Z-Image_BASE造像模型完整版开源工作流_2049377951891853314.json, 图片生成/文生图/Z-Image_turbo文生图-又快又好_2100172337105690626.json, 图片生成/文生图/Z-Image_turbo文生图工作流_1995022387781492737.json, 图片生成/文生图/Z-Image_turbo文生图工作流_2032095488664670209.json, 图片生成/文生图/Z-Image基础文生图工作流_2016022338512359425.json, 图片生成/文生图/Z-Image文生图大模型：满血版的出图效果宣判封顶！_2016493247157243905.json, 图片生成/文生图/Z-image 文生图_2027351141612265474.json, 图片生成/文生图/Z-image-Turbo 文生图_2046797778214461441.json, 图片生成/文生图/comfyui教学第一期-文生图_2008024786936537089.json, 图片生成/文生图/qwen-image-2512工作流_2067229524982587394.json, 图片生成/文生图/qwen-文生图_2090010243379060737.json, 图片生成/文生图/qwen2512文生图工作流_2068284987354476546.json, 图片生成/文生图/qwen2512粗线条水墨_2082670662396760065.json, 图片生成/文生图/【Z-Image-Turbo LoRA 一站式炼丹教程】手把手教你训练自己的猫咪LoRA，让自家猫咪“出现”在世界各地！_2004888505304182785.json, 图片生成/文生图/千问Qwen_image文生图海报_fp8_官方版26125_2015389169786294274.json, 图片生成/文生图/手把手教你训练LORA，配合Qwen Image大模型，生图一致性达到99%！_1981265802265616385.json, 图片生成/文生图/批量文生图_2033573673789034498.json, 图片生成/文生图/文生图+LoRA_2014558730028851201.json, 图片生成/文生图/文生图-Q版森林_2087797265531498498.json, 图片生成/文生图/文生图-古瓷碗里的微景观_2114540826620678146.json, 图片生成/文生图/文生图-微景观-迷你朋克工坊_2084933542248804354.json, 图片生成/文生图/文生图-微景观桃园_2088147505304395778.json, 图片生成/文生图/文生图-微景观草莓园_2085177631280029697.json, 图片生成/文生图/文生图-手机里的微景观_2084940722343600130.json, 图片生成/文生图/文生图，中英文都可以，我自己用，出图快 且准确 质量高_2026835950390747137.json, 图片生成/文生图/超可爱的q版3d风格动画角色设计_2067581459497578498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/图生图/klein换头【可选  Bnanana pro】_2016044457656852482.json、图片生成/图生图/pro_2026893876430118913.json、图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json、图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json、图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/文生图/Z-Image-Turbo高质量文生图_2021205123837468673.json、图片生成/文生图/Z-ImageBase+4步加速+文生图_2021786374671704065.json、图片生成/文生图/Z-ImageBase+8步加速+文生图_2021754201637916674.json、图片生成/文生图/Z-ImageBase+文生图_2016327178299904002.json、图片生成/文生图/Z-Image_BASE工作流_2066527774562668546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：30
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：32
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 30 个 workflow 都包含：
-- `CFGGuider`
+全部 32 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 29/30 个有
-- `EmptyFlux2LatentImage` —— 29/30 个有
-- `LoraLoaderModelOnly` —— 29/30 个有
-- `easy imageScaleDownToSize` —— 28/30 个有
-- `Image Comparer (rgthree)` —— 26/30 个有
-- `GetNode` —— 24/30 个有
-- `SetNode` —— 24/30 个有
-- `LayerUtility: ImageReel` —— 23/30 个有
-- `LayerUtility: ImageReelComposit` —— 23/30 个有
-- `Fast Groups Bypasser (rgthree)` —— 14/30 个有
-- `easy cleanGpuUsed` —— 10/30 个有
-- `Int` —— 6/30 个有
-- `JWInteger` —— 5/30 个有
-- `ImageConcanate` —— 3/30 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/30 个有
-- `1hew_AnySwitchInt` —— 1/30 个有
-- `Anything Everywhere3` —— 1/30 个有
-- `DuckHideNode` —— 1/30 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/30 个有
-- `Text Multiline` —— 1/30 个有
+- `ModelSamplingAuraFlow` —— 28/32 个有
+- `LoraLoaderModelOnly` —— 22/32 个有
+- `ConditioningZeroOut` —— 13/32 个有
+- `Text` —— 4/32 个有
+- `Label (rgthree)` —— 3/32 个有
+- `LatentUpscaleBy` —— 2/32 个有
+- `JWInteger` —— 1/32 个有
+- `Seed Generator` —— 1/32 个有
+- `easy promptList` —— 1/32 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 50 | 32 | 22% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 32 | 29% |
+| 采样算法 | euler | - | 32 | 56% |
+| 调度器 | simple | - | 32 | 97% |
+| 重绘幅度 | 1 | 1 - 1 | 32 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 21/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 50，32 个样本，取值分散，一致性仅 22%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，32 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，32 个样本，一致性 56%
+- 调度器 最常用 simple，32 个样本，一致性 97%
+- 重绘幅度 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
+- 高发问题（21/32 个样本）：Steps较低可能导致细节不足

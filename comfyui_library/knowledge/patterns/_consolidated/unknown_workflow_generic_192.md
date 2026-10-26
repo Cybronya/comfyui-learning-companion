@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_192
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9284
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.925273
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedance2_0, Comfly_api_set, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json, 图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json, 图片生成/图生图/扣子用flash+pro_2065376363892264962.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json, 图片生成/图生图/👾怪獸-全能图片2&Pro进阶玩法指定人物、服装、姿势👾_2047643887178616833.json, 图片生成/文生图/(自用) 2&Pro_2028323439991328770.json, 图片生成/文生图/2030936263259332609.json, 图片生成/文生图/最强生图模型2&pro_2032269255114231810.json, 图片生成/文生图/角色站位图_2037123359535800321.json]
+members: [视频生成/图生视频/(贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043649059289829378.json, 视频生成/图生视频/(资产ID复用版)Seedance2.0满血版多参生视频V2（贞贞的AI工坊）_2043635164273713153.json, 视频生成/图生视频/(顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分组sd-global）_2044775674057072641.json, 视频生成/图生视频/(飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385674595377154.json, 视频生成/图生视频/(首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊）_2043147768188903425.json, 视频生成/图生视频/Gxx image V2+Seedance2.0多参生视频V1（贞贞的AI工坊-满血版）_2045043366005575681.json, 视频生成/图生视频/Seedance2.0多参生视频原生1080P（贞贞的AI工坊）_2046909844334055426.json, 视频生成/图生视频/（心动女生）)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2050051947612385281.json, 视频生成/文生视频/(最强满血版-支持真人)Seedance2.0多参生视频（贞贞工坊）_2061824732235919362.json, 视频生成/文生视频/Seedance2.0图+音频多参生视频（贞贞的AI工坊-满血版）_2043883680384421890.json, 视频生成/文生视频/Seedance2.0多参生视频V2（API-满血版）_2048760381065142274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_192
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json、图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json、图片生成/图生图/扣子用flash+pro_2065376363892264962.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/(贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043649059289829378.json、视频生成/图生视频/(资产ID复用版)Seedance2.0满血版多参生视频V2（贞贞的AI工坊）_2043635164273713153.json、视频生成/图生视频/(顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分组sd-global）_2044775674057072641.json、视频生成/图生视频/(飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385674595377154.json、视频生成/图生视频/(首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊）_2043147768188903425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+全部 11 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedance2_0`
+- `Comfly_api_set`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 9/10 个有
-- `CR Prompt Text` —— 8/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
-- `CR Text` —— 2/10 个有
-- `RH_LLMAPI_Pro_Node` —— 2/10 个有
-- `JjkConcat` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
+- `LoadImage` —— 9/11 个有
+- `LoadAudio` —— 3/11 个有
+- `Comfly_Doubao_Seedance2_0_AssetIdBundle` —— 2/11 个有
+- `Fast Bypasser (rgthree)` —— 1/11 个有
 
 ## 典型参数
 

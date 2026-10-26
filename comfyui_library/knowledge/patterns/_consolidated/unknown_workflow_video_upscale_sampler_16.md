@@ -3,55 +3,59 @@ name: unknown_workflow_video_upscale_sampler_16
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [ConvertAny2Float, GetNode, ImageUpscaleWithModel, Int, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Note Plus (mtb), PlaySound|pysssss, RIFE VFI, SeargePromptText, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.78
+common_nodes: [CLIPVisionLoader, CR Text Concatenate, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, JWInteger, JjkText, LoadImage, LoadWanVideoT5TextEncoder, PlaySound|pysssss, PreviewImage, RH_Captioner, RH_Prompter, RH_Translator, RIFE VFI, SimpleMath+, TextBox, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy showAnything, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json, 视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json]
+members: [视频生成/图生视频/FusionX_图生视频（手写+自动提示词优化）_1943848971993485314.json, 视频生成/图生视频/FusionX_图生视频（自动提示词优化）_1936709639767511041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json、视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FusionX_图生视频（手写+自动提示词优化）_1943848971993485314.json、视频生成/图生视频/FusionX_图生视频（自动提示词优化）_1936709639767511041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ConvertAny2Float`
-- `GetNode`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `ImageResizeKJv2`
+- `ImageScale`
 - `ImageUpscaleWithModel`
-- `Int`
+- `JWInteger`
+- `JjkText`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Note Plus (mtb)`
 - `PlaySound|pysssss`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_Prompter`
+- `RH_Translator`
 - `RIFE VFI`
-- `SeargePromptText`
-- `SetNode`
+- `SimpleMath+`
+- `TextBox`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `LoadWanVideoClipTextEncoder` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageClipEncode` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy showAnything`
+- `ttN concat`
 
 ## 典型参数
 

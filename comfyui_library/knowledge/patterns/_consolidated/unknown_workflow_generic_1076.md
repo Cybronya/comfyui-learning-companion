@@ -3,34 +3,31 @@ name: unknown_workflow_generic_1076
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.8
-common_nodes: [IndexTTS2BaseNode, SaveAudioMP3, Text _O, easy showAnything]
+coverage: 1
+common_nodes: [RH_AlibabaWan27TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/API - Index TTS_2066918383110680578.json, 音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json, 音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json]
+members: [图片生成/文生图/wan2.7 文生图_2056292498288504833.json, 图片生成/文生图/万相2.7-文生图_2040681642439741442.json, 图片生成/文生图/万相2.7文生图_2039986093302484994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1076
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/API - Index TTS_2066918383110680578.json、音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json、音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan2.7 文生图_2056292498288504833.json、图片生成/文生图/万相2.7-文生图_2040681642439741442.json、图片生成/文生图/万相2.7文生图_2039986093302484994.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `IndexTTS2BaseNode`
-- `SaveAudioMP3`
-- `Text _O`
-- `easy showAnything`
+- `RH_AlibabaWan27TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `LoadAudio` —— 1/3 个有
+- `PDRatioSelector` —— 1/3 个有
 
 ## 典型参数
 

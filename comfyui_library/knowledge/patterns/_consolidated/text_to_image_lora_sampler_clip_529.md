@@ -3,75 +3,58 @@ name: text_to_image_lora_sampler_clip_529
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.927
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, GetVideoComponents, JjkText, KSampler, LoadAudio, LoadVideo, LoraLoaderModelOnly, Qwen3ASRLoader, Qwen3ASRTranscribe, RH_HeyGemNode, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.955667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/HeyGem+IndexTTS2.5数字人｜视频生视频快速语音迁移_2096324334888509441.json, 数字人/数字人/数字人工作流2.0版本｜数字人口播视频轻松做_2100841377956458497.json, 数字人/数字人/数字人工作流3.0升级版｜数字人视频一站式生成_2100823288216903681.json]
+members: [图片生成/图生图/批量去水印v1.0_1997212139112828929.json, 图片生成/图生图/换角度（可以手动调角度）_2017499064656470018.json, 图片生成/图生图/角色四视图-FireRed_2084116890556919810.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_529
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/HeyGem+IndexTTS2.5数字人｜视频生视频快速语音迁移_2096324334888509441.json、数字人/数字人/数字人工作流2.0版本｜数字人口播视频轻松做_2100841377956458497.json、数字人/数字人/数字人工作流3.0升级版｜数字人视频一站式生成_2100823288216903681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/批量去水印v1.0_1997212139112828929.json、图片生成/图生图/换角度（可以手动调角度）_2017499064656470018.json、图片生成/图生图/角色四视图-FireRed_2084116890556919810.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `EmptyLatentImage`
-- `GetVideoComponents`
-- `JjkText`
 - `KSampler`
-- `LoadAudio`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RH_HeyGemNode`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 2/3 个有
-- `LTXVConcatAVLatent` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `ManualSigmas` —— 2/3 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 2/3 个有
-- `SamplerCustomAdvanced` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `SaveAudio` —— 1/3 个有
-- `SaveAudioMP3` —— 1/3 个有
-- `SoundFlow_TrimAudio` —— 1/3 个有
-- `WujiCleaner` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `QwenMultiangleCameraNode` —— 1/3 个有
+- `RHUploadZip_V2` —— 1/3 个有
+- `ResolutionSelector` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
+| 宽度 | 1440 | 1280 - 1664 | 3 | 89% |
+| 高度 | 928 | 720 - 1920 | 3 | 56% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
@@ -81,11 +64,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
+- 宽度 中位数 1440，观测区间 1280 - 1664，3 个样本，取值集中（一致性 89%）
+- 高度 中位数 928，观测区间 720 - 1920，3 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

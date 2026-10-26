@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1421
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [CR Text, LayerUtility: CropByMask, LoadImage, RH_RhartImageG2ImageToImage, RMBG, SaveImage, easy imageConcat, ttN concat]
+coverage: 0.9215
+common_nodes: [AILab_QwenVL, CR Text Concatenate, LayerUtility: TextJoin, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/电商主图设计-主图参考_image2低价版_2050633326385475586.json, 图片生成/文生图/电商主图设计-主图参考_i2_2053148327054725121.json]
+members: [图片生成/图生图/xiaochengxufengmian2_2098337796535705601.json, 图片生成/图生图/xiaochengxufengmian_2097996522347655169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1421
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图设计-主图参考_image2低价版_2050633326385475586.json、图片生成/文生图/电商主图设计-主图参考_i2_2053148327054725121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/xiaochengxufengmian2_2098337796535705601.json、图片生成/图生图/xiaochengxufengmian_2097996522347655169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: CropByMask`
+- `AILab_QwenVL`
+- `CR Text Concatenate`
+- `LayerUtility: TextJoin`
 - `LoadImage`
 - `RH_RhartImageG2ImageToImage`
-- `RMBG`
 - `SaveImage`
-- `easy imageConcat`
-- `ttN concat`
+- `Text`
 
 ## 典型参数
 

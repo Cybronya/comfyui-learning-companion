@@ -3,34 +3,40 @@ name: unknown_workflow_generic_94
 type: Unknown Workflow
 frequency: 15
 level: moderate
-coverage: 0.774867
-common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.763267
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.0----官方稳定版_2089645550072320002.json, 图片生成/图生图/全能图片G2.0----官方稳定版_2100495991307853826.json, 图片生成/图生图/全能图片G2.0语言+图像驱动 • 视觉生成引擎：让想象成为可计算的现实_图生图_2047857827712077826.json, 图片生成/图生图/剧情九宫格分镜（G-2稳定版）_2086248150104367106.json, 图片生成/图生图/局部改图_2093164310137753602.json, 图片生成/图生图/效果图分析_2098683480191361026.json, 图片生成/图生图/方汤圆稳定版Open G2_图生图_2048656784813985793.json, 图片生成/图生图/早安图优化_2080573432600813570.json, 图片生成/图生图/早安图优化测试_2080929418750545922.json, 图片生成/图生图/最新G image2 官方满血版电商批量全套Lookbook裂变工作流 V1.0_2051311784241446914.json, 图片生成/图生图/洗图（可洗测量图）_2081999861079175170.json, 图片生成/图生图/空白工作流_2081639907474366465.json, 图片生成/图生图/鸟瞰图测试_2081566136495333378.json, 图片生成/图生图/鸟瞰图生成_2083069804184956929.json, 图片生成/文生图/GS-生成6宫格图片及提示词_2062855749398781953.json]
+members: [图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json, 图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json, 图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json, 图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json, 图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json, 图片生成/图生图/G-Image+2.0 9宫格分镜图+洗图+低价_免费版 +全能编辑_2051865054261325826.json, 图片生成/图生图/GImage20分镜图超强_2060855586232815618.json, 图片生成/图生图/GXX V2图像编辑 4K高清 多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模_2047477649055948802.json, 图片生成/图生图/aidir-9宫格分镜图_2078380754589016065.json, 图片生成/图生图/aidir-角色加场景参考生成9宫格分镜图（G-Image 2.0）_2069593853795069953.json, 图片生成/图生图/image 2 - 九宫格分镜图_2049001762517950465.json, 图片生成/图生图/超好用🔥最高16宫格分镜图-可自行调整（G-Image 2.0）_2066384721466191874.json, 图片生成/文生图/9宫格分镜图 洗图 低价_免费版 G-Image 2.0 全能编辑_2049688552975372289.json, 图片生成/文生图/9宫格分镜图（G-Image 2.0）_2057092483150077953.json, 图片生成/文生图/G-Image 2.0  9宫格分镜图 洗图 全能编辑 低价_免费版_2049729755620052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_94
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0----官方稳定版_2089645550072320002.json、图片生成/图生图/全能图片G2.0----官方稳定版_2100495991307853826.json、图片生成/图生图/全能图片G2.0语言+图像驱动 • 视觉生成引擎：让想象成为可计算的现实_图生图_2047857827712077826.json、图片生成/图生图/剧情九宫格分镜（G-2稳定版）_2086248150104367106.json、图片生成/图生图/局部改图_2093164310137753602.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json、图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json、图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json、图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json、图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 14/15 个有
-- `PreviewAny` —— 2/15 个有
-- `RH_LLMAPI_Pro_Node` —— 1/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 14/15 个有
+- `CR Text` —— 13/15 个有
+- `RH_LLMAPI_Pro_Node` —— 13/15 个有
+- `RH_Nano_Banana2_Image2Image` —— 13/15 个有
+- `CR Prompt Text` —— 9/15 个有
+- `Comfly_api_set` —— 9/15 个有
+- `Comfly_gpt_image_2_official` —— 9/15 个有
+- `ttN concat` —— 2/15 个有
 
 ## 典型参数
 

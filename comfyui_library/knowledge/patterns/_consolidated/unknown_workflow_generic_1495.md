@@ -3,39 +3,38 @@ name: unknown_workflow_generic_1495
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.531
-common_nodes: [Any Switch (rgthree), CR Text, CR Text Replace, Fast Groups Bypasser (rgthree), LoadImage, MathExpression|pysssss, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage, easy int, easy promptLine, easy showAnything, easy textIndexSwitch]
+coverage: 0.799
+common_nodes: [LoadImage, PreviewAny, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-2.0 官方稳定版_2048698636799840257.json, 图片生成/文生图/全能图片G-2.0 官方稳定版_2058128888185839617.json]
+members: [图片生成/图生图/参考动作2_2064279257899159553.json, 图片生成/图生图/指定背景替换_2063893824946139137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1495
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G-2.0 官方稳定版_2048698636799840257.json、图片生成/文生图/全能图片G-2.0 官方稳定版_2058128888185839617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考动作2_2064279257899159553.json、图片生成/图生图/指定背景替换_2063893824946139137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CR Text`
-- `CR Text Replace`
-- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `MathExpression|pysssss`
+- `PreviewAny`
+- `RHLLMChatNode`
 - `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2OfficialTextToImage`
 - `SaveImage`
-- `easy int`
-- `easy promptLine`
-- `easy showAnything`
-- `easy textIndexSwitch`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ResizeAndPadImage` —— 1/2 个有
 
 ## 典型参数
 

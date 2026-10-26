@@ -3,29 +3,31 @@ name: unknown_workflow_generic_1229
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8125
-common_nodes: [LoadImage, RH_RhartImageG4ImageToImage, SaveImage]
+coverage: 0.7085
+common_nodes: [ByteDanceSeedAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/G4_ImageToImage_v4.0_2033739681766051841.json, 图片生成/文生图/图生图1r_次+4_image_to_image+全节点注释_2059599440641609730.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_t2a.json, comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_ta2a.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1229
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G4_ImageToImage_v4.0_2033739681766051841.json、图片生成/文生图/图生图1r_次+4_image_to_image+全节点注释_2059599440641609730.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_t2a.json、comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_ta2a.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG4ImageToImage`
-- `SaveImage`
+- `ByteDanceSeedAudio`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 1/2 个有
 
 ## 典型参数
 

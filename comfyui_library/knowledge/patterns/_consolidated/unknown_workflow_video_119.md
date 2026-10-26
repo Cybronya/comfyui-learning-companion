@@ -3,37 +3,34 @@ name: unknown_workflow_video_119
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.593
-common_nodes: [Fast Groups Bypasser (rgthree), GetVideoComponents, JjkText, LoadImage, RH_AlibabaHappyhorse10ReferenceToVideo, RH_AlibabaHappyhorse10TextToVideo, SaveVideo, VHS_VideoCombine]
+coverage: 0.9375
+common_nodes: [FlashVSRNode, LayerUtility: ImageScaleByAspectRatio V2, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/Happyhorse-快乐马-全家桶 文生视频+图生视频_2050756625010573313.json, 视频生成/文生视频/视频生成 Happyhorse-快乐马 文生视频+图生视频。_2050758785639174146.json]
+members: [视频生成/图生视频/【阡陌】FlashVSR视频超分辨率高清修复放大_1983077919813726210.json, 视频生成/文生视频/FlashVSR V1.1放大_2018310765513547778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_119
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Happyhorse-快乐马-全家桶 文生视频+图生视频_2050756625010573313.json、视频生成/文生视频/视频生成 Happyhorse-快乐马 文生视频+图生视频。_2050758785639174146.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【阡陌】FlashVSR视频超分辨率高清修复放大_1983077919813726210.json、视频生成/文生视频/FlashVSR V1.1放大_2018310765513547778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
-- `JjkText`
-- `LoadImage`
-- `RH_AlibabaHappyhorse10ReferenceToVideo`
-- `RH_AlibabaHappyhorse10TextToVideo`
-- `SaveVideo`
+- `FlashVSRNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 

@@ -2,56 +2,61 @@
 name: unknown_workflow_sampler_unet_vae_232
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.85875
-common_nodes: [CLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.92525
+common_nodes: [BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json, 图片生成/图生图/Qwen-image2.1-动作迁移_2112535992015089665.json, 图片生成/图生图/Qwen-image2.1-材质迁移_2102376704630149121.json, 图片生成/图生图/（五图编辑）Qwen-image-2.1-单图编辑_2104871202018914306.json]
+members: [图片生成/图生图/OmniGen2图像编辑_Comfy官方流_1938893412261093377.json, 图片生成/图生图/image_omnigen2_图片编辑工作流_1939951595721560065.json, 图片生成/图生图/【老金驿站】Qwen双图溶图4步极速工作流_1958780124068016129.json, 图片生成/图生图/角色正视图和三视图_2100255300451397633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_232
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json、图片生成/图生图/Qwen-image2.1-动作迁移_2112535992015089665.json、图片生成/图生图/Qwen-image2.1-材质迁移_2102376704630149121.json、图片生成/图生图/（五图编辑）Qwen-image-2.1-单图编辑_2104871202018914306.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/OmniGen2图像编辑_Comfy官方流_1938893412261093377.json、图片生成/图生图/image_omnigen2_图片编辑工作流_1939951595721560065.json、图片生成/图生图/【老金驿站】Qwen双图溶图4步极速工作流_1958780124068016129.json、图片生成/图生图/角色正视图和三视图_2100255300451397633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `BodyRatioMapperSDPoseRender` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 2/4 个有
-- `SDPoseKeypointExtractor` —— 2/4 个有
-- `Int` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `QwenImage21Cache` —— 1/4 个有
+- `CFGGuider` —— 3/4 个有
+- `CLIPTextEncode` —— 3/4 个有
+- `EmptySD3LatentImage` —— 3/4 个有
+- `GetImageSize` —— 3/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `DualCFGGuider` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImageStitch` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `EmptyFlux2LatentImage` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `JWImageResizeByLongerSide` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `TextEncodeQwenImageEdit` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 40 | 4 | 77% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 40，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

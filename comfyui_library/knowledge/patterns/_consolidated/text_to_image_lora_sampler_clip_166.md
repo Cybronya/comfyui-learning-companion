@@ -3,71 +3,53 @@ name: text_to_image_lora_sampler_clip_166
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.8798
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8583
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/LTX2.5导演台工作流文生视频图生视频全能生成，文生视频图生视频方案_2107583837348917250.json, 图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json, 数字人/数字人/LTX2.5商业级数字人｜口播数字人直出优化版_2095097464675201026.json, 数字人/数字人/LTX2.5商业级数字人｜目前最好的口播数字人直出_2091657124752482306.json, 数字人/数字人/LTX2.5商业级数字人｜目前最好的口播数字人直出_优化版_2094753534322503681.json, 数字人/数字人/商业级数字人之最｜LTX2.5高清数字人生成_2091824539599728641.json, 视频生成/图生视频/LTX2.5导演台图生数字人数字人图生视频生成_2088201956547448834.json, 视频生成/图生视频/剪辑台导演台2.5｜LTX2.5角色设计表演图生视频_2092594475766992898.json, 视频生成/文生视频/LTX2.5导演台工作流｜文生视频图生视频全能生成_2097116077540069378.json, 视频生成/文生视频/LTX2.5导演台文生数字人文生视频生成工作流_2088219152287887361.json]
+members: [图片生成/反推提示词/H3提示词增强器Qwen3.8本地版 提示词优化视频生成_2108652876636704769.json, 图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成处理工具_2101716520534630401.json, 图片生成/反推提示词/Qwen3.8提示词增强器｜MiniMax H3反推优化工作流_2097828819615965186.json, 图片生成/反推提示词/gemini-3.5图像反推｜提示词自动生成直出_2090921386087903233.json, 图片生成/反推提示词/文生视频分镜脚本自动QWEN3.8工作流，反推提示词分镜脚本生成工具_2107978653777883138.json, 图片生成/反推提示词/本地Qwen3.8提示词增强器｜H3反推提示词一键优化_2096276030314074114.json, 图片生成/图生图/MiniMax H3提示词增强器｜Qwen3.8-27B智能优化_2096315918623272961.json, 图片生成/图生图/提示词自动升级｜Qwen3.8-27B为MiniMax H3赋能_2096532589971591169.json, 数字人/数字人/H3提示词增强器 提示词优化智能扩展工具_2099927948383055874.json, 数字人/数字人/声音模型训练翻唱神器 全曲翻唱音频生成处理工具_2113371670797971458.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_166
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/LTX2.5导演台工作流文生视频图生视频全能生成，文生视频图生视频方案_2107583837348917250.json、图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json、数字人/数字人/LTX2.5商业级数字人｜口播数字人直出优化版_2095097464675201026.json、数字人/数字人/LTX2.5商业级数字人｜目前最好的口播数字人直出_2091657124752482306.json、数字人/数字人/LTX2.5商业级数字人｜目前最好的口播数字人直出_优化版_2094753534322503681.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/H3提示词增强器Qwen3.8本地版 提示词优化视频生成_2108652876636704769.json、图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成处理工具_2101716520534630401.json、图片生成/反推提示词/Qwen3.8提示词增强器｜MiniMax H3反推优化工作流_2097828819615965186.json、图片生成/反推提示词/gemini-3.5图像反推｜提示词自动生成直出_2090921386087903233.json、图片生成/反推提示词/文生视频分镜脚本自动QWEN3.8工作流，反推提示词分镜脚本生成工具_2107978653777883138.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirector` —— 8/10 个有
-- `LTXDirectorCropGuides` —— 8/10 个有
-- `LTXDirectorGuide` —— 8/10 个有
-- `BasicScheduler` —— 5/10 个有
-- `CFGGuider` —— 5/10 个有
-- `DiffusionModelLoaderKJ` —— 5/10 个有
-- `LTX2_NAG` —— 5/10 个有
-- `LTXVDualCFGGuider` —— 5/10 个有
-- `LTXVLatentUpsampler` —— 5/10 个有
-- `LatentUpscaleModelLoader` —— 5/10 个有
-- `LoadVideoUI` —— 5/10 个有
-- `ManualSigmas` —— 5/10 个有
-- `TTResolutionSelector` —— 5/10 个有
-- `VAELoaderKJ` —— 5/10 个有
-- `ConditioningZeroOut` —— 3/10 个有
-- `GetNode` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `SetNode` —— 3/10 个有
-- `Label (rgthree)` —— 2/10 个有
-- `YusuLTXDirector` —— 2/10 个有
-- `YusuLTXDirectorCropGuides` —— 2/10 个有
-- `YusuLTXDirectorGuide` —— 2/10 个有
+- `SaveImage` —— 9/10 个有
+- `MiniMaxH3PromptEnhancerT8` —— 8/10 个有
+- `PreviewAny` —— 8/10 个有
+- `easy saveText` —— 6/10 个有
+- `CR Prompt Text` —— 5/10 个有
+- `easy showAnything` —— 5/10 个有
+- `RH_Translator` —— 4/10 个有
+- `ShellAgentPluginOutputText` —— 2/10 个有
+- `CM_FloatToInt` —— 1/10 个有
+- `HAIGC_LoadImagesFromZip` —— 1/10 个有
+- `RH_Captioner_Pro` —— 1/10 个有
+- `RunningHubRVCOneClickTrain` —— 1/10 个有
+- `easy imageSave` —— 1/10 个有
 
 ## 典型参数
 
@@ -85,7 +67,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -96,4 +78,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（12/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

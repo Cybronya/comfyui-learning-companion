@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_480
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.531
-common_nodes: [CLIPVisionLoader, CM_FloatToInt, ComfyMathExpression, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, MinNode, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, 图像缩放V2_孤海]
+coverage: 0.5676
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CS-MultiImageLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, GetNode, ImageResizeKJv2, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveStringMultiline, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json, 视频生成/图生视频/动作迁移_2072250195357818881.json]
+members: [视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json, 视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json, 视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_480
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json、视频生成/图生视频/动作迁移_2072250195357818881.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json、视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json、视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CM_FloatToInt`
-- `ComfyMathExpression`
-- `DrawViTPose`
+- `CS-MultiImageLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GIMMVFI_interpolate`
 - `GetNode`
 - `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
-- `MinNode`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveStringMultiline`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
 - `SetNode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GIMMVFI_interpolate` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `InversionDemoLazySwitch` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `easy anythingIndexSwitch` —— 2/4 个有
+- `LoadImage` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `FilmGrain` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `PrimitiveBoolean` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 2/5 个有
+- `SCAIL2FaceCompositeBack` —— 2/5 个有
+- `SCAIL2HeadTrackCrop` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy ifElse` —— 2/5 个有
 
 ## 典型参数
 

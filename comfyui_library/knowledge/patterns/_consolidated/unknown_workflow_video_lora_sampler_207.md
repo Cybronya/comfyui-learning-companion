@@ -1,74 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_207
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.875556
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, easy promptLine]
+coverage: 0.9378
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json, 视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011765719033188353.json, 视频生成/图生视频/(循环-（自用）-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011775856401715201.json, 视频生成/图生视频/(（自用）肢体增强)SVI 2 Pro Smooth V2长视频动态强化版V1_2010976996687351810.json, 视频生成/图生视频/动漫专用-循环-长视频自动提示词-SVI 2 Pro Dasiwa V9_2012053341018263553.json]
+members: [数字人/数字人/Infinitetalk视频转数字人-V2V_2042509042618208258.json, 数字人/数字人/Infinitetalk视频转数字人-动态更强更自然_2043528487876694017.json, 数字人/数字人/WH-AI-Studio视频生视频数字人-视频对口型（带情感音频生成）_2022275473673297921.json, 数字人/数字人/【AI代码侠土豆】V2V-Infinitetalk视频转数字人_1990280525246066689.json, 数字人/数字人/数字人视频生视频_2004472334562066434.json, 数字人/数字人/数字人视频生视频_2041675802936352769.json, 数字人/数字人/🍐Infinitetalk视频转数字人🍐_2017760163519799298.json, 视频生成/图生视频/InfiniteTalk图像双人对口型_1971843495331819522.json, 视频生成/图生视频/Infinitetalk视频转数字人-动态更强更自然_2114345766474051586.json, 视频生成/图生视频/Infinitetalk视频转数字人｜动态更强更自然的图生视频方案_2114631993609773057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_207
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json、视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json、视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Infinitetalk视频转数字人-V2V_2042509042618208258.json、数字人/数字人/Infinitetalk视频转数字人-动态更强更自然_2043528487876694017.json、数字人/数字人/WH-AI-Studio视频生视频数字人-视频对口型（带情感音频生成）_2022275473673297921.json、数字人/数字人/【AI代码侠土豆】V2V-Infinitetalk视频转数字人_1990280525246066689.json、数字人/数字人/数字人视频生视频_2004472334562066434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `DiffusionModelLoaderKJ`
-- `ImageBatchExtendWithOverlap`
-- `Int`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `SimpleMath+`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+全部 10 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptLine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `> Text Replace` —— 4/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `CR Text Concatenate` —— 4/9 个有
-- `ProcessString` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `TextPreview` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `SomethingToString` —— 3/9 个有
-- `Split String` —— 3/9 个有
-- `DuckHideNode` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `TT_img_enc` —— 2/9 个有
-- `TT_img_enc_v2` —— 2/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `AudioCrop` —— 9/10 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `SimpleMath+` —— 9/10 个有
+- `PrimitiveInt` —— 7/10 个有
+- `Float to Int` —— 6/10 个有
+- `Getter` —— 6/10 个有
+- `ImageConcanate` —— 6/10 个有
+- `Setter` —— 6/10 个有
+- `SoundFlow_GetLength` —— 6/10 个有
+- `easy cleanGpuUsed` —— 6/10 个有
+- `CR Text` —— 5/10 个有
+- `GetImageSizeAndCount` —— 4/10 个有
+- `ImageFromBatch+` —— 4/10 个有
+- `Audio Duration (mtb)` —— 3/10 个有
+- `WanVideoTorchCompileSettings` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `PreviewAudio` —— 2/10 个有
+- `ImageResize+` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `IndexTTS2Run` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `JWFloat` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
+- `TwoWaySwitch` —— 1/10 个有
+- `VHS_VideoInfo` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 56% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
-| 采样算法 | 3.5 | 1 - 3.5 | 9 | 48% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,8 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 56%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

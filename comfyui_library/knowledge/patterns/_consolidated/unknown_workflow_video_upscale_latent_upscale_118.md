@@ -2,63 +2,99 @@
 name: unknown_workflow_video_upscale_latent_upscale_118
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [BasicGuider, BasicScheduler, ComfyMathExpression, ConditioningZeroOut, FloatConstant, INTConstant, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MMH3TemporalSplitParams, MMH3UltimateUpscale, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SolAttnMiniMax, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+level: strong
+coverage: 0.635667
+common_nodes: [Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SimpleMath+, SolidMask, TextGenerateLTX2Prompt, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json, 视频生成/文生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json, 视频生成/文生视频/低显存优化流（时间分块）（孤海）_2108578844885209090.json]
+members: [视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json, 视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json, 视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_118
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json、视频生成/文生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json、视频生成/文生视频/低显存优化流（时间分块）（孤海）_2108578844885209090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json、视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json、视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `FloatConstant`
-- `INTConstant`
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LoraLoaderBypassModelOnly`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `MMH3TemporalSplitParams`
-- `MMH3UltimateUpscale`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `Seed (rgthree)`
-- `SolAttnMiniMax`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `TextGenerateLTX2Prompt`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `H3KitSemanticBridge` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `SomethingToString` —— 1/3 个有
+- `TextInput_` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 121 - 121 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +102,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

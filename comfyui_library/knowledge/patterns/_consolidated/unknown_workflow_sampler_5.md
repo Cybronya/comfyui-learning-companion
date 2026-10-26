@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_5
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9306
+coverage: 0.928636
 common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, PDIMAGE_LongerSize, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json, 图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json, 图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json, 图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json, 图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json, 图片生成/图生图/USO双风格迁移一致性图生图V1_1962481064499363842.json, 图片生成/图生图/USO双风格迁移一致性图生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2038432905407504386.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962486590113202178.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962802231387009026.json, 图片生成/文生图/USO双风格迁移一致性文生图V1_1962487178385338370.json]
+members: [图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json, 图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json, 图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json, 图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json, 图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json, 图片生成/图生图/USO双风格迁移一致性图生图V1_1962481064499363842.json, 图片生成/图生图/USO双风格迁移一致性图生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2038432905407504386.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962486590113202178.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962802231387009026.json, 图片生成/文生图/USO双风格迁移一致性文生图V1_1962487178385338370.json, 数字人/数字人/USO单风格迁移一致性文生图V1_1977549738595753986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json、图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json、图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json、图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json、图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json、图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json、图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json、图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json、图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CR Prompt Text`
 - `ImageConcanate`
 - `JWInteger`
@@ -33,8 +33,8 @@ source: knowledge_consolidation
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 7/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
+- `PreviewImage` —— 8/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/11 个有
 
 ## 典型参数
 

@@ -3,31 +3,36 @@ name: unknown_workflow_generic_100
 type: Unknown Workflow
 frequency: 15
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
+coverage: 0.889667
+common_nodes: [LoadAudio, MegaTTS3Run, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json, 视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json, 视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json, 视频生成/文生视频/SK_txt2vid_2038875282374922242.json, 视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json, 视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json, 视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json, 视频生成/文生视频/Seedance2.0文生视频_2037013695364079618.json, 视频生成/文生视频/Seedance2.0文生视频_2037442624088449026.json, 视频生成/文生视频/Seedance2.0文生视频_2047295644854915074.json, 视频生成/文生视频/Seedance2.0文生视频测试_2089267259809296385.json, 视频生成/文生视频/Seedance2.0文生视频（RH版）_2054421287983951873.json, 视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051248121287593985.json]
+members: [图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json, 数字人/数字人/MegaTTS3单人语音迁移V2 多语言多英文混合克隆_1962942992338366466.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1965450428429254657.json, 音频生成/音频生成/商用版-最强语音克隆 单人克隆版_1998255017779978241.json, 音频生成/音频生成/最强MegaTTS3单人语音克隆_1964218831621246977.json, 音频生成/音频生成/最强MegaTTS3双人语音克隆_1964218900688850946.json, 音频生成/音频生成/最强语音克隆_MegaTTS3_1963165246057852929.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1964879017734193153.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1972202277962444801.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1964879052882460674.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1972203985589497858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_100
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json、视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json、视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json、视频生成/文生视频/SK_txt2vid_2038875282374922242.json、视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json、数字人/数字人/MegaTTS3单人语音迁移V2 多语言多英文混合克隆_1962942992338366466.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20TextToVideo`
-- `SaveVideo`
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/15 个有
+- `CR Prompt Text` —— 14/15 个有
+- `PreviewAudio` —— 10/15 个有
+- `SaveAudioMP3` —— 9/15 个有
+- `MultiLinePromptMG` —— 8/15 个有
+- `MegaTTS3` —— 2/15 个有
 
 ## 典型参数
 

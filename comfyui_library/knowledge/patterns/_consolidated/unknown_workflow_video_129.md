@@ -3,42 +3,33 @@ name: unknown_workflow_video_129
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [ConcatTextOfUtils, HunyuanVideoFoley, Images to RGB, RH_Captioner, RH_Translator, VHS_LoadVideo, VHS_SelectImages, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.778
+common_nodes: [GetImageRangeFromBatch, Image Comparer (rgthree), Int, SeedVR2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HunyuanFoley视频配音_1936704989333196801.json, 音频生成/音频生成/【Work-Fisher】HunyuanFoley自动配音_1962034465210044417.json]
+members: [视频生成/图生视频/视频放大，用很多目前这个最满意886666666666_1944672694811938818.json, 视频生成/图生视频/视频放大，用很多目前这个最满意_1944669713387671554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_129
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HunyuanFoley视频配音_1936704989333196801.json、音频生成/音频生成/【Work-Fisher】HunyuanFoley自动配音_1962034465210044417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频放大，用很多目前这个最满意886666666666_1944672694811938818.json、视频生成/图生视频/视频放大，用很多目前这个最满意_1944669713387671554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ConcatTextOfUtils`
-- `HunyuanVideoFoley`
-- `Images to RGB`
-- `RH_Captioner`
-- `RH_Translator`
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `Int`
+- `SeedVR2`
 - `VHS_LoadVideo`
-- `VHS_SelectImages`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `LayerUtility: TextBox` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `SoundFlow_Mixer` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

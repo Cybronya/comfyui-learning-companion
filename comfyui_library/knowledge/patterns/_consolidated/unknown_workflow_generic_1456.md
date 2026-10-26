@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1456
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [PD_JoinStringMultiLine, RH_RhartImageNProTextToImage, SaveImage, easy positive]
+coverage: 0.636
+common_nodes: [CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, QwenMultiangleCameraNode, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/04.14JJL工作流正面提示词_2043982678051000322.json, 图片生成/文生图/急急令工作流正负提示词_2041075531373879298.json]
+members: [图片生成/图生图/全能图片2+ Multiangle可视化任意角度编辑_2061835415950282753.json, 图片生成/图生图/全能图片G-Image2+ Multiangle可视化任意角度编辑_2061844719080132610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1456
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/04.14JJL工作流正面提示词_2043982678051000322.json、图片生成/文生图/急急令工作流正负提示词_2041075531373879298.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2+ Multiangle可视化任意角度编辑_2061835415950282753.json、图片生成/图生图/全能图片G-Image2+ Multiangle可视化任意角度编辑_2061844719080132610.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PD_JoinStringMultiLine`
-- `RH_RhartImageNProTextToImage`
+- `CR Text`
+- `CR Text Concatenate`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `easy positive`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy negative` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

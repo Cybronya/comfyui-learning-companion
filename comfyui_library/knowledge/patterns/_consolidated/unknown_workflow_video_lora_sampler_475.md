@@ -1,75 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_475
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.5075
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CM_IntToFloat, CR Text, CheckpointLoaderSimple, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveBoolean, RH_Translator, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, Switch any [Crystools], Text, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy boolean, easy imageRemBg, 忽略多组孤海]
+coverage: 0.6574
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/20260717更新！多人动作迁移、替换视频人物新王！支持多参 Scail 2_2066443352299622401.json, 视频生成/图生视频/2026_10_02_替换视频的人物和背景专用流_支持人物多参 _Scail 2_2105681606760550401.json, 视频生成/图生视频/261003单人动作迁移、替换视频人物 可多参 高质量极简版_2106393442275385346.json, 视频生成/图生视频/视频换人！人物替换新王！支持多参 Scail 2_20260724_2080301898942476289.json]
+members: [视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json, 视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json, 视频生成/图生视频/Stand-In+vace高度人物一致性_1956763019890057217.json, 视频生成/图生视频/wan2.1+stand-in视频人像换脸_1957279872316010498.json, 视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_475
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/20260717更新！多人动作迁移、替换视频人物新王！支持多参 Scail 2_2066443352299622401.json、视频生成/图生视频/2026_10_02_替换视频的人物和背景专用流_支持人物多参 _Scail 2_2105681606760550401.json、视频生成/图生视频/261003单人动作迁移、替换视频人物 可多参 高质量极简版_2106393442275385346.json、视频生成/图生视频/视频换人！人物替换新王！支持多参 Scail 2_20260724_2080301898942476289.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json、视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json、视频生成/图生视频/Stand-In+vace高度人物一致性_1956763019890057217.json、视频生成/图生视频/wan2.1+stand-in视频人像换脸_1957279872316010498.json、视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Text`
-- `CheckpointLoaderSimple`
+全部 5 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `RH_Translator`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
 - `SetNode`
-- `Switch any [Crystools]`
-- `Text`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
-- `easy boolean`
-- `easy imageRemBg`
-- `忽略多组孤海`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 3/4 个有
-- `ImageConcanate` —— 3/4 个有
-- `LoadVideoUI` —— 3/4 个有
-- `RH_RhartImageG2ImageToImage` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `InvertBoolean` —— 2/4 个有
-- `Fast Bypasser (rgthree)` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
-- `WanAnimatePlus LoraSelect` —— 1/4 个有
+- `WanVideoVACEEncode` —— 4/5 个有
+- `WanVideoVACEModelSelect` —— 4/5 个有
+- `FaceOnlyModeSwitch` —— 3/5 个有
+- `HfImageToRGB` —— 3/5 个有
+- `VideoFramePreprocessor` —— 3/5 个有
+- `VideoInputPreprocessor` —— 3/5 个有
+- `AIO_Preprocessor` —— 2/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `GetImageRangeFromBatch` —— 2/5 个有
+- `ImageCombine` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `MathExpression|pysssss` —— 2/5 个有
+- `RepeatImageBatch` —— 2/5 个有
+- `AudioSeparation` —— 1/5 个有
+- `CreateVideo` —— 1/5 个有
+- `DownloadAndLoadWav2VecModel` —— 1/5 个有
+- `MultiTalkModelLoader` —— 1/5 个有
+- `MultiTalkWav2VecEmbeds` —— 1/5 个有
+- `PreViewVideo` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `WanVideoEmptyEmbeds` —— 1/5 个有
+- `WanVideoVACEStartToEndFrame` —— 1/5 个有
 
 ## 典型参数
 

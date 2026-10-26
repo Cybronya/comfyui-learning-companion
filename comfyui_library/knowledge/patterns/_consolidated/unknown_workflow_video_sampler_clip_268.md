@@ -3,45 +3,55 @@ name: unknown_workflow_video_sampler_clip_268
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7915
-common_nodes: [ApplySageAttention, CLIPTextEncode, CheckpointLoaderSimple, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, PrimitiveStringMultiline, SimpleMath+, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy float, easy seed]
+coverage: 0.7625
+common_nodes: [Any To Any, ApplySageAttention, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, Qwen3_VQA, SaveImage, TT_img_enc_v2, Text Concatenate, VAEDecode, VHS_SelectFilename, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/极速版Wan2.2-Rapid-AIO-Mega V3图生视频_1971523053807190018.json, 视频生成/图生视频/极速版首尾帧Wan2.2 Rapid-AIO-Mega V3图生视频_1971536424413675521.json]
+members: [视频生成/图生视频/动作-手臂夹住-图生视频-全能-保护_2046085452221915138.json, 视频生成/图生视频/（自用）Wan2.2 Rapid-AIO-Mega V11模型Qwen3 VL自动图生视频极速版_1985338475329241089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_268
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/极速版Wan2.2-Rapid-AIO-Mega V3图生视频_1971523053807190018.json、视频生成/图生视频/极速版首尾帧Wan2.2 Rapid-AIO-Mega V3图生视频_1971536424413675521.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动作-手臂夹住-图生视频-全能-保护_2046085452221915138.json、视频生成/图生视频/（自用）Wan2.2 Rapid-AIO-Mega V11模型Qwen3 VL自动图生视频极速版_1985338475329241089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any To Any`
 - `ApplySageAttention`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `CheckpointLoaderSimple`
-- `Int`
+- `JWInteger`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `ModelSamplingSD3`
-- `PrimitiveStringMultiline`
-- `SimpleMath+`
+- `Qwen3_VQA`
+- `SaveImage`
+- `TT_img_enc_v2`
+- `Text Concatenate`
 - `VAEDecode`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
 - `WanVaceToVideo`
 - `WanVideoVACEStartToEndFrame`
-- `easy float`
-- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `TT_img_enc` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -49,7 +59,7 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | ipndm | - | 2 | 100% |
+| 采样算法 | euler_ancestral | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
@@ -63,7 +73,7 @@ source: knowledge_consolidation
 
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，2 个样本，一致性 100%
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足

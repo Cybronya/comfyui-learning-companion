@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_sampler_7
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.922333
-common_nodes: [LoadImage, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.905091
+common_nodes: [AudioPad, Get Size JK, ImageResizeKJv2, IndexTTSRun, LoadAudio, LoadImage, PrimitiveStringMultiline, ResizeImagesByShorterEdge, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveAudio, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json, 图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json, 图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json, 图片生成/图生图/USO多种风格参考_1962720773230182401.json, 图片生成/图生图/目前最强风格迁移（USO）_1962810979518136322.json, 图片生成/文生图/USO换风格+换背景工作流_1965031029104889857.json, 图片生成/文生图/USO风格迁移图生图_2073390240361959425.json]
+members: [数字人/数字人/FlashHead 极速数字人，图片+文字就好 简单上手效果好_2033484136492568578.json, 数字人/数字人/FlashHead极速数字人生成，只需图片+文字就好_2027210032944779265.json, 数字人/数字人/FlashHead极速数字人生成，图片+文字即刻生成_2037162777755783169.json, 数字人/数字人/极速数字人FlashHead（几十秒超低算力生成）_2027270802957148162.json, 视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json, 视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json, 视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json, 视频生成/图生视频/超自然FlashHead极速数字人 只需图片+文字_2032303580274761729.json, 视频生成/文生视频/FlashHead极速数字人生成，只需图片+文字就好_2033804221602074625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json、图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json、图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/FlashHead 极速数字人，图片+文字就好 简单上手效果好_2033484136492568578.json、数字人/数字人/FlashHead极速数字人生成，只需图片+文字就好_2027210032944779265.json、数字人/数字人/FlashHead极速数字人生成，图片+文字即刻生成_2037162777755783169.json、数字人/数字人/极速数字人FlashHead（几十秒超低算力生成）_2027270802957148162.json、视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `AudioPad`
+- `Get Size JK`
+- `ImageResizeKJv2`
+- `IndexTTSRun`
+- `LoadAudio`
 - `LoadImage`
-- `RH_Translator`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `DF_Get_image_size` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
+- `PrimitiveStringMultiline`
+- `ResizeImagesByShorterEdge`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveAudio`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -1,68 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_262
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.741333
-common_nodes: [BatchImagesNode, CLIPLoader, CR Text Concatenate, ComfySwitchNode, EmptySD3LatentImage, Int, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OpenposePreprocessor, PreviewAny, PreviewImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, kkGetImage]
-problems: []
+coverage: 0.80825
+common_nodes: [ConditioningZeroOut, DualCLIPLoader, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/Qwen_Image2.1丨姿势迁移_2110646296100032514.json, 图片生成/图生图/Qwen_Image2.1丨姿势迁移_2111276056136208386.json, 图片生成/图生图/（换姿势）QwenImage2.1 原生controlNet_2107976794220621826.json]
+members: [音频生成/音频生成/Acestep 1.5邪修翻唱Cover工作流V1_2042475834782523394.json, 音频生成/音频生成/使用Ace Step V1.5 XL 生成AI音乐_2051116011079909378.json, 音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json, 音频生成/音频生成/苏伦特ACE-step-1.5_2022764315853463554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_262
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen_Image2.1丨姿势迁移_2110646296100032514.json、图片生成/图生图/Qwen_Image2.1丨姿势迁移_2111276056136208386.json、图片生成/图生图/（换姿势）QwenImage2.1 原生controlNet_2107976794220621826.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Acestep 1.5邪修翻唱Cover工作流V1_2042475834782523394.json、音频生成/音频生成/使用Ace Step V1.5 XL 生成AI音乐_2051116011079909378.json、音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json、音频生成/音频生成/苏伦特ACE-step-1.5_2022764315853463554.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CR Text Concatenate`
-- `ComfySwitchNode`
-- `EmptySD3LatentImage`
-- `Int`
-- `JjkText`
+全部 4 个 workflow 都包含：
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `OpenposePreprocessor`
-- `PreviewAny`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `ModelSamplingAuraFlow`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `kkGetImage`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyAceStep1.5LatentAudio` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `Float` —— 2/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `ReferenceTimbreAudio` —— 1/4 个有
+- `VAEEncodeAudio` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 4 | 75% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，4 个样本
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode

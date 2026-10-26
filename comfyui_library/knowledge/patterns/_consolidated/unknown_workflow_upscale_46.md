@@ -3,37 +3,29 @@ name: unknown_workflow_upscale_46
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.778
-common_nodes: [GetImageSizeAndCount, Image Comparer (rgthree), ImageConcanate, ImpactFloat, LoadImage, PreviewImage, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_TopazlabsImageUpscaleHighFidelityV3, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-图放大-PMRF_1983045602609102849.json, 图片生成/图生图/生图-图放大快速-模型_1983043548167700481.json]
+members: [图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099321949850791938.json, 图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099666011086741505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_46
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图放大-PMRF_1983045602609102849.json、图片生成/图生图/生图-图放大快速-模型_1983043548167700481.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099321949850791938.json、图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099666011086741505.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImpactFloat`
 - `LoadImage`
-- `PreviewImage`
+- `RH_TopazlabsImageUpscaleHighFidelityV3`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 1/2 个有
-- `PMRF` —— 1/2 个有
 
 ## 典型参数
 

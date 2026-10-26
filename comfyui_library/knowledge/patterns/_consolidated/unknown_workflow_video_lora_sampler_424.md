@@ -1,66 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_424
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7644
-common_nodes: [GetNode, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy globalSeed]
+coverage: 0.8385
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json, 视频生成/图生视频/wan2.2-fun-镜头控制_1956984735042867201.json, 视频生成/文生视频/MiniCPM反推+Wan2.2文生视频_1963202515145822209.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速_1959889034724192257.json]
+members: [视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json, 视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json, 视频生成/图生视频/wanvideo_Stand-In_人脸一致性_1959331317118873601.json, 视频生成/图生视频/wanvideo_Stand-In角色一致性工作流_1956293638198362114.json, 视频生成/图生视频/角色一致性图生视频_1973164651716415490.json, 视频生成/文生视频/Wan2.2Stand-in视频面部交换实战_2004807686212513794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_424
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json、视频生成/图生视频/wan2.2-fun-镜头控制_1956984735042867201.json、视频生成/文生视频/MiniCPM反推+Wan2.2文生视频_1963202515145822209.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json、视频生成/文生视频/Wan2.2文生视频性价比极致加速_1959889034724192257.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json、视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json、视频生成/图生视频/wanvideo_Stand-In_人脸一致性_1959331317118873601.json、视频生成/图生视频/wanvideo_Stand-In角色一致性工作流_1956293638198362114.json、视频生成/图生视频/角色一致性图生视频_1973164651716415490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetNode`
+全部 6 个 workflow 都包含：
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `String Literal`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy globalSeed`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 4/5 个有
-- `StringToFloatList` —— 4/5 个有
-- `WanVideoContextOptions` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `WanVideoSetRadialAttention` —— 4/5 个有
-- `easy seed` —— 4/5 个有
-- `ImageResizeKJv2` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `WanVideoImageToVideoEncode` —— 3/5 个有
-- `WanVideoEmptyEmbeds` —— 2/5 个有
-- `ADE_CameraPoseAdvanced` —— 1/5 个有
-- `AILab_MiniCPM_4_V` —— 1/5 个有
-- `CameraPoseVisualizer` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `ShowText` —— 1/5 个有
-- `WanVideoFunCameraEmbeds` —— 1/5 个有
-- `WanVideoLoraSelectMulti` —— 1/5 个有
-- `WanVideoScheduler` —— 1/5 个有
-- `WanVideoSigmaToStep` —— 1/5 个有
+- `ApplyFaceProcessor` —— 5/6 个有
+- `FaceProcessorLoader` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `CreateCFGScheduleFloatList` —— 3/6 个有
+- `GetImageSizeAndCount` —— 3/6 个有
+- `WanVideoSetLoRAs` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `DrawMaskOnImage` —— 1/6 个有
+- `FaceOnlyModeSwitch` —— 1/6 个有
+- `GetImageSize+` —— 1/6 个有
+- `ImagePadKJ` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `InvertMask` —— 1/6 个有
+- `RMBG` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `VideoInputPreprocessor` —— 1/6 个有
 
 ## 典型参数
 

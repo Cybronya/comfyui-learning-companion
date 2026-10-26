@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [RunningHub ACE-Step Artist, RunningHub ACE-Step Creator, RunningHub ACE-Step Loader, SaveAudio]
+common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Ace-Audio1.5-纯音乐生成（RH）_2019753441559584770.json, 音频生成/音频生成/RH Ace Step 1.5一句话生成世界风格纯音乐_2019721409307615234.json]
+members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1634
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Ace-Audio1.5-纯音乐生成（RH）_2019753441559584770.json、音频生成/音频生成/RH Ace Step 1.5一句话生成世界风格纯音乐_2019721409307615234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,14 +23,9 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RunningHub ACE-Step Artist`
-- `RunningHub ACE-Step Creator`
-- `RunningHub ACE-Step Loader`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CR Text` —— 1/2 个有
+- `RH_SeedreamV5ProTextToImage`
+- `SaveImage`
+- `Text`
 
 ## 典型参数
 

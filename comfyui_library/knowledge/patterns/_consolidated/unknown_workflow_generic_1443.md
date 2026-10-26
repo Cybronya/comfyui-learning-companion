@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1443
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.986
+common_nodes: [CR Text, EcommercePromptGenerator, JDCN_ListToString, LoadImage, RH_Nano_Banana2_Image2Image_Batch, SaveImage, easy int, easy showAnything, easy string, list_ListSlice]
 problems: []
 missing: []
-members: [图片生成/图生图/香蕉 Banan图片编辑新王【单图_多图】_1960516997396180993.json, 图片生成/文生图/全能图片V1文生图_多图编辑_1987793454732390401.json]
+members: [图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json, 图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1443
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/香蕉 Banan图片编辑新王【单图_多图】_1960516997396180993.json、图片生成/文生图/全能图片V1文生图_多图编辑_1987793454732390401.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json、图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `EcommercePromptGenerator`
+- `JDCN_ListToString`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_Nano_Banana_Image2Image`
+- `RH_Nano_Banana2_Image2Image_Batch`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 1/2 个有
+- `easy int`
+- `easy showAnything`
+- `easy string`
+- `list_ListSlice`
 
 ## 典型参数
 

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [InstantCharacterGenerate, InstantCharacterLoadModel, LoadImage, SaveImage, SeargePromptText]
+common_nodes: [QuiverTextToSVGNode, SaveSVGNode]
 problems: []
 missing: []
-members: [图片生成/图生图/InstantCharacter 角色一致性_1914664136352169985.json, 图片生成/文生图/InstantCharacter 角色一致性_1914273950958874626.json]
+members: [comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json, comfyui-workflow-templates-json/api_quiver_text_to_svg.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1243
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/InstantCharacter 角色一致性_1914664136352169985.json、图片生成/文生图/InstantCharacter 角色一致性_1914273950958874626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json、comfyui-workflow-templates-json/api_quiver_text_to_svg.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,15 +23,8 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InstantCharacterGenerate`
-- `InstantCharacterLoadModel`
-- `LoadImage`
-- `SaveImage`
-- `SeargePromptText`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `QuiverTextToSVGNode`
+- `SaveSVGNode`
 
 ## 典型参数
 

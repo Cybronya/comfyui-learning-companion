@@ -1,53 +1,54 @@
 ---
 name: unknown_workflow_sampler_vae_52
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.922
-common_nodes: [CLIPLoader, CreateVideo, LoadImage, Lynx_Encode, Lynx_KSampler, Lynx_Model, SaveVideo, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.53
+common_nodes: [CreateVideo, EmptyImage, GetImageSize, GetNode, ImageResize+, ImageResizeKJv2, ImpactSwitch, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VALastFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo, SetNode, easy anythingIndexSwitch, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/LYNX字节跳动高保真人脸迁移视频生成_1972500268996882433.json, 视频生成/文生视频/Smthem版Lynx ID特征一致性Full版_1972855654023143425.json, 视频生成/文生视频/Smthem版Lynx ID特征一致性Lite版_1975547820323246081.json]
+members: [视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_52
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LYNX字节跳动高保真人脸迁移视频生成_1972500268996882433.json、视频生成/文生视频/Smthem版Lynx ID特征一致性Full版_1972855654023143425.json、视频生成/文生视频/Smthem版Lynx ID特征一致性Lite版_1975547820323246081.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CreateVideo`
+- `EmptyImage`
+- `GetImageSize`
+- `GetNode`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
 - `LoadImage`
-- `Lynx_Encode`
-- `Lynx_KSampler`
-- `Lynx_Model`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAFirstFrameCondition`
+- `RHMiniMaxH3FL2VALastFrameCondition`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
 - `SaveVideo`
-- `VAEDecode`
-- `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
+- `SetNode`
+- `easy anythingIndexSwitch`
+- `easy int`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 121 | 81 - 121 | 3 | 82% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | 2 | 2 - 2 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -55,9 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 121，观测区间 81 - 121，3 个样本，取值集中（一致性 82%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- 风险：重绘幅度 观测到 2，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,60 +3,61 @@ name: unknown_workflow_sampler_unet_vae_96
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8777
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9575
+common_nodes: [CLIPLoader, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/自动抠图 Qwen-image2.1_2112044955593166850.json, 图片生成/图生图/角色三视图_Qwen image 2.1_2107299006337601538.json, 图片生成/图生图/角色三视图__2112738425802682369.json, 图片生成/文生图/QWEN-IMAGE-2.1_2104540875895431170.json, 图片生成/文生图/Qwen Image 2.1_2102977844501639169.json, 图片生成/文生图/Qwen-Image-2.1-图生图_2101854452645978114.json, 图片生成/文生图/Qwen_image_2_1_多图编辑_2101885250807877634.json, 图片生成/文生图/qwen image  edit 2.1_2101931566393024514.json, 图片生成/文生图/qwen image 2.1文生图生_2101747084268498945.json, 图片生成/文生图/qwen2.1基础工作流  i2v  t2v_2102578292409847810.json]
+members: [图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（qwen版clip）_2012417850039869441.json, 图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（条件串联）_2012413491184930818.json, 图片生成/图生图/【遇见AI】FLUX2-klein-base-4b，图像编辑_2012012542809350145.json, 图片生成/图生图/【遇见AI】FLUX2-klein-base-9b，图像编辑_2012020744510775298.json, 图片生成/图生图/【遇见AI】FLUX2多图参考_1993593282003402754.json, 图片生成/图生图/【遇见AI】texture2albedo-v2光影移除lora，基于klein9b模型_2071132171263369217.json, 图片生成/图生图/【阡陌】FLUX-2-Klein 9B base版单图编辑工作流_2016508238623154177.json, 图片生成/图生图/一次出图100张 海量图生图 多角度 保持人物一致 Flux2 Klein 9B Klein  一图_2027279328433676290.json, 图片生成/图生图/一键高品质产品精修Klein_2014308186299310082.json, 图片生成/图生图/万物迁移工作流_2036348251548426241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_96
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/自动抠图 Qwen-image2.1_2112044955593166850.json、图片生成/图生图/角色三视图_Qwen image 2.1_2107299006337601538.json、图片生成/图生图/角色三视图__2112738425802682369.json、图片生成/文生图/QWEN-IMAGE-2.1_2104540875895431170.json、图片生成/文生图/Qwen Image 2.1_2102977844501639169.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（qwen版clip）_2012417850039869441.json、图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（条件串联）_2012413491184930818.json、图片生成/图生图/【遇见AI】FLUX2-klein-base-4b，图像编辑_2012012542809350145.json、图片生成/图生图/【遇见AI】FLUX2-klein-base-9b，图像编辑_2012020744510775298.json、图片生成/图生图/【遇见AI】FLUX2多图参考_1993593282003402754.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `Flux2Scheduler`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 9/10 个有
-- `SaveImageAdvanced` —— 6/10 个有
-- `ResolutionSelector` —— 5/10 个有
-- `CR Text` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `ImageScaleToTotalPixels` —— 2/10 个有
-- `ImageStitch` —— 2/10 个有
-- `LayerUtility: TextJoin` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
-- `孤海注释` —— 1/10 个有
+- `CLIPTextEncode` —— 9/10 个有
+- `ReferenceLatent` —— 9/10 个有
+- `BasicGuider` —— 6/10 个有
+- `FluxGuidance` —— 6/10 个有
+- `ImageScaleToTotalPixels` —— 5/10 个有
+- `CFGGuider` —— 4/10 个有
+- `EmptyFlux2LatentImage` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 4/10 个有
+- `ConditioningZeroOut` —— 3/10 个有
+- `GetImageSize` —— 3/10 个有
+- `ImpactImageInfo` —— 3/10 个有
+- `GetImageSizeAndCount` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 2/10 个有
+- `CR Prompt List` —— 1/10 个有
+- `ColorMatch` —— 1/10 个有
+- `TextEncodeQwenImageEditPlus` —— 1/10 个有
+- `easy imageSize` —— 1/10 个有
+- `easy promptLine` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1536 | 10 | 83% |
-| 高度 | 1024 | 1024 - 2048 | 10 | 72% |
-| 采样步数 | 25 | 25 - 50 | 10 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 10 | 40% |
-| 采样算法 | euler | - | 10 | 90% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,10 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1536，10 个样本，取值集中（一致性 83%）
-- 高度 中位数 1024，观测区间 1024 - 2048，10 个样本
-- 采样步数 中位数 25，观测区间 25 - 50，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，10 个样本，取值分散，一致性仅 40%
-- 采样算法 最常用 euler，10 个样本，一致性 90%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

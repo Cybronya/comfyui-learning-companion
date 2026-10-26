@@ -1,71 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_129
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8344
-common_nodes: [Any Switch (rgthree), CLIPLoader, Fast Groups Bypasser (rgthree), FastCanvas, FastCanvasTool, GetImageSize+, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, PainterFluxImageEdit, RH_Translator, RMBG, SaveImage, UNETLoader, VAEDecode, VAELoader, easy int, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: moderate
+coverage: 0.866167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜ 可控产品大小位置_2033938465968099329.json, 图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜ 可控产品大小位置_2087368260277850114.json, 图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2087384692252299266.json, 图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2096783273878970369.json, 图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2096884009337974786.json]
+members: [视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085286536706351105.json, 视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085553480567189505.json, 视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版_2087281024626683906.json, 视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版（自动反推版）_2087275070858289153.json, 视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版(自动反推版)_2087167230646775810.json, 视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版_2087271938422038530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_129
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜ 可控产品大小位置_2033938465968099329.json、图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜ 可控产品大小位置_2087368260277850114.json、图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2087384692252299266.json、图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2096783273878970369.json、图片生成/图生图/Flux_Klein_4步自适应光照溶图打光｜合并模式+分层模式｜_可控产品大小位置_2096884009337974786.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085286536706351105.json、视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085553480567189505.json、视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版_2087281024626683906.json、视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版（自动反推版）_2087275070858289153.json、视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版(自动反推版)_2087167230646775810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `FastCanvas`
-- `FastCanvasTool`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MuyeTextEditOutput`
-- `PainterFluxImageEdit`
-- `RH_Translator`
-- `RMBG`
-- `SaveImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy int`
-- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `CreateVideo` —— 4/6 个有
+- `SaveVideo` —— 4/6 个有
+- `UniBlockSwap` —— 4/6 个有
+- `VRAMReserver` —— 4/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `RHLLMChatNode` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `SaveVideoRGBA` —— 2/6 个有
+- `StringFunction|pysssss` —— 2/6 个有
+- `VHS_LoadVideo` —— 2/6 个有
+- `Vignette` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `BatchImagesNode` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

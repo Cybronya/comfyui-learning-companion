@@ -1,35 +1,31 @@
 ---
 name: unknown_workflow_generic_831
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.847
-common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
+coverage: 1
+common_nodes: [LoadImage, RH_KlingVideoO3ProImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
+members: [视频生成/图生视频/Kling_VideoO3ProImageToVideo_v3.0_2033816740311863297.json, 视频生成/图生视频/世界杯现场_2060746296159465473.json, 视频生成/图生视频/可灵O3PRO首尾帧视频_2058854588261953537.json, 视频生成/图生视频/棒球现场_2060739578461515777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_831
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Kling_VideoO3ProImageToVideo_v3.0_2033816740311863297.json、视频生成/图生视频/世界杯现场_2060746296159465473.json、视频生成/图生视频/可灵O3PRO首尾帧视频_2058854588261953537.json、视频生成/图生视频/棒球现场_2060739578461515777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `SaveSVGNode`
-
-**可变部分**（部分 workflow 才有）：
-- `RecraftV4TextToVectorNode` —— 2/3 个有
-- `RecraftTextToVectorNode` —— 1/3 个有
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_KlingVideoO3ProImageToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

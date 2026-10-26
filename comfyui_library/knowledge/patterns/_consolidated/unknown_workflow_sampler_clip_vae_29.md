@@ -2,65 +2,84 @@
 name: unknown_workflow_sampler_clip_vae_29
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.935857
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, KSampler, SaveImage, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+level: moderate
+coverage: 0.842857
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Integer To String, CR Split String, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, INTConstant, Int, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, StringToInt, Text Concatenate, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse]
+problems: []
 missing: []
-members: [图片生成/文生图/Flux 4K高清大图DyPE直出_2001499038975422465.json, 图片生成/文生图/Flux-双截棍 4K高清大图DyPE直出_2000808135889743873.json, 图片生成/文生图/flux1_krea_dev 很漂亮_1954159231169642497.json, 图片生成/文生图/flux1_krea_dev满血版出图_1951839776326537218.json, 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json, 图片生成/文生图/去掉flux的AI 味er  flux krea_1951281909651419137.json, 图片生成/文生图/独特的美学风格和自然细节，避免 AI 外观，提供真实的图像质量。_1947211070849110017.json]
+members: [图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json, 图片生成/图生图/Kontext单图编辑_1938411645796548610.json, 图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json, 图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json, 图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json, 图片生成/图生图/超强模型Kontext双图编辑Nunchaku+Lora双加速版_1950227095365533698.json, 图片生成/文生图/[Kontext]flux1-dev-kontext开源版本_1938374526730178562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_29
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux 4K高清大图DyPE直出_2001499038975422465.json、图片生成/文生图/Flux-双截棍 4K高清大图DyPE直出_2000808135889743873.json、图片生成/文生图/flux1_krea_dev 很漂亮_1954159231169642497.json、图片生成/文生图/flux1_krea_dev满血版出图_1951839776326537218.json、图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json、图片生成/图生图/Kontext单图编辑_1938411645796548610.json、图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json、图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json、图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CR Integer To String`
+- `CR Split String`
 - `DualCLIPLoader`
 - `EmptySD3LatentImage`
-- `KSampler`
+- `FluxGuidance`
+- `INTConstant`
+- `Int`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringToInt`
+- `Text Concatenate`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy compare`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 6/7 个有
-- `VAEDecode` —— 5/7 个有
-- `DyPE_FLUX` —— 2/7 个有
-- `Text Multiline` —— 2/7 个有
-- `VAEDecodeTiled` —— 2/7 个有
-- `LoadImage` —— 1/7 个有
-- `NunchakuFluxDiTLoader` —— 1/7 个有
-- `RH_Captioner` —— 1/7 个有
+- `UNETLoader` —— 5/7 个有
+- `ETN_ReferenceImage` —— 4/7 个有
+- `FluxResolutionNode` —— 4/7 个有
+- `GetImageSize` —— 4/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `DeepTranslatorTextNode` —— 3/7 个有
+- `FluxKontextImageScale` —— 3/7 个有
+- `GetImageSize+` —— 3/7 个有
+- `JWStringGetLine` —— 3/7 个有
+- `RH_LLMAPI_NODE` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `NunchakuFluxDiTLoader` —— 2/7 个有
+- `NunchakuFluxLoraLoader` —— 2/7 个有
+- `CLIPVisionLoader` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `StyleModelLoader` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 7 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 71% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 2/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 71%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

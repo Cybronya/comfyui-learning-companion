@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_upscale_vae_8
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.944857
+coverage: 0.809267
 common_nodes: [LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2VideoUpscaler高清放大+图像修复+全节点注释_2059548112611528705.json, 图片生成/图生图/SeedVR2图片放大【用于绘世comfyui批量管理系统】_2089201027370274818.json, 图片生成/图生图/SeedVR2图片无损放大_2031989838488014849.json, 图片生成/图生图/SeedVR2图片无损放大_2039967759467028481.json, 图片生成/图生图/seedvr_2_图像高清放大4K_2085011993844600834.json, 图片生成/图生图/seedvr_2_图像高清放大4K_2085185226254413825.json, 图片生成/图生图/专利高清放大-V1 (1)_2094371526341652482.json, 图片生成/图生图/图片放大_2017488355310702593.json, 图片生成/图生图/图片高清放大——SeedV2_2061488992226463746.json, 图片生成/图生图/图片高清放大——SeedV2_2061651275518922753.json, 图片生成/图生图/图片高清放大——SeedV2_2061984941205970946.json, 图片生成/图生图/电商水彩画类型专用_放大5900（T恤定制 300 DPI）_2078689075812454402.json, 图片生成/图生图/细节爆炸！让你的图片从“能看”到“震撼”！双重无损高清放大SeedVR2.5_2062500413340995585.json, 图片生成/图生图/高清放大-SeedVR2 Video Upscaler_2009264485617373185.json]
+members: [图片生成/图生图/SeedVR2保留细节_一键4K超清高清放大工作流_1999448839465693186.json, 图片生成/图生图/SeedVR2图像放大_2013201075800641538.json, 图片生成/图生图/SeedVR2图像放大_2062127657986379777.json, 图片生成/图生图/SeedVR2图片高清放大_2011376111472611329.json, 图片生成/图生图/seedvr 2 图像高清放大4K_2084865194706161666.json, 图片生成/图生图/seedvr2-效果、分析图A3文本4k放大工作流_2012001541628104706.json, 图片生成/图生图/seedvr2图像高清放大_2089915225989537794.json, 图片生成/图生图/seedvr2图像高清放大_2090697561052114945.json, 图片生成/图生图/seedvr2图像高清放大_2091719957255122946.json, 图片生成/图生图/seedvr2图像高清放大_2091729482674688002.json, 图片生成/图生图/seedvr2图像高清放大_2092217808426979329.json, 图片生成/图生图/seedvr2图像高清放大_2092433813359128578.json, 图片生成/图生图/seedvr2图像高清放大_2092866550570250242.json, 图片生成/图生图/图片高清修复_2035013789019545602.json, 图片生成/图生图/高清放大_2062421175283834882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/SeedVR2VideoUpscaler高清放大+图像修复+全节点注释_2059548112611528705.json、图片生成/图生图/SeedVR2图片放大【用于绘世comfyui批量管理系统】_2089201027370274818.json、图片生成/图生图/SeedVR2图片无损放大_2031989838488014849.json、图片生成/图生图/SeedVR2图片无损放大_2039967759467028481.json、图片生成/图生图/seedvr_2_图像高清放大4K_2085011993844600834.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/SeedVR2保留细节_一键4K超清高清放大工作流_1999448839465693186.json、图片生成/图生图/SeedVR2图像放大_2013201075800641538.json、图片生成/图生图/SeedVR2图像放大_2062127657986379777.json、图片生成/图生图/SeedVR2图片高清放大_2011376111472611329.json、图片生成/图生图/seedvr 2 图像高清放大4K_2084865194706161666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `LoadImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
@@ -30,11 +30,11 @@ source: knowledge_consolidation
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 5/14 个有
-- `easy int` —— 4/14 个有
-- `Image Comparer (rgthree)` —— 2/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/14 个有
-- `RHHiddenNodes` —— 1/14 个有
+- `Image Comparer (rgthree)` —— 14/15 个有
+- `PrimitiveInt` —— 2/15 个有
+- `easy cleanGpuUsed` —— 2/15 个有
+- `ImageScaleToTotalPixels` —— 1/15 个有
+- `Label (rgthree)` —— 1/15 个有
 
 ## 典型参数
 

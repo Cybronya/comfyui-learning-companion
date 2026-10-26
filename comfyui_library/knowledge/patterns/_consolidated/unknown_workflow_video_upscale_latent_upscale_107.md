@@ -3,69 +3,81 @@ name: unknown_workflow_video_upscale_latent_upscale_107
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.767333
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.754333
+common_nodes: [AudioCrop, Bjornulf_ShowFloat, Bjornulf_ShowInt, CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVReferenceAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression_UTK, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PainterAudioLength, PreviewImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SeedGenerator, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SimpleMath+, SolidMask, TTResolutionSelector, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2+对口型_2021873842758619137.json, 视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json, 视频生成/图生视频/LTX2.3+参考图片+参考音频（对口型+多人对话）_2034521088973082625.json]
+members: [视频生成/图生视频/LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json, 视频生成/图生视频/LTX2.3 单图mv ID-LoRA （增强人脸一致、口型准确、动态协调）_2046304725880016898.json, 音频生成/音频生成/LTX2.3 MV数字人（moss长音频加强面部一致性）_2049272954013360129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_107
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2+对口型_2021873842758619137.json、视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json、视频生成/图生视频/LTX2.3+参考图片+参考音频（对口型+多人对话）_2034521088973082625.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json、视频生成/图生视频/LTX2.3 单图mv ID-LoRA （增强人脸一致、口型准确、动态协调）_2046304725880016898.json、音频生成/音频生成/LTX2.3 MV数字人（moss长音频加强面部一致性）_2049272954013360129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
+- `AudioCrop`
+- `Bjornulf_ShowFloat`
+- `Bjornulf_ShowInt`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text`
 - `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
 - `GetNode`
 - `ImageResizeKJv2`
-- `ImageScaleBy`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
+- `LTX2_NAG`
 - `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
+- `LTXVReferenceAudio`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadAudio`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MathExpression_UTK`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PainterAudioLength`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SeedGenerator`
 - `SetLatentNoiseMask`
 - `SetNode`
+- `SimpleCalculatorKJ`
+- `SimpleMath+`
 - `SolidMask`
-- `TrimAudioDuration`
+- `TTResolutionSelector`
 - `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
+- `BasicScheduler` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `LTXVPreprocess` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `MossTTSModelLoader` —— 1/3 个有
+- `MossTTSVoiceDesign` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
 
 ## 典型参数
 

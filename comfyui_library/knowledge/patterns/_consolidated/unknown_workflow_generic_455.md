@@ -3,34 +3,34 @@ name: unknown_workflow_generic_455
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.919
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/【ws】分镜图全能视频S_1998655213177331713.json, 视频生成/图生视频/全能视频S 图生视频_1978700922345902081.json, 视频生成/图生视频/全能视频S 图生视频工作流 支持横_竖屏_1974997082266275841.json, 视频生成/图生视频/全能视频S 图生视频工作流_1996557884752281601.json, 视频生成/图生视频/全能视频S-图生视频_1994710293764841473.json, 视频生成/图生视频/全能视频S图生视频15s梭罗2图生视频0.08元每次_1983514033917763585.json]
+members: [图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json, 图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json, 视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json, 视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json, 视频生成/图生视频/SDM展款-九宫格图生视频_2061625263947079681.json, 视频生成/文生视频/SDM-图+脚本生视频_2061983483773407233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_455
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【ws】分镜图全能视频S_1998655213177331713.json、视频生成/图生视频/全能视频S 图生视频_1978700922345902081.json、视频生成/图生视频/全能视频S 图生视频工作流 支持横_竖屏_1974997082266275841.json、视频生成/图生视频/全能视频S 图生视频工作流_1996557884752281601.json、视频生成/图生视频/全能视频S-图生视频_1994710293764841473.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json、图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json、视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json、视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json、视频生成/图生视频/SDM展款-九宫格图生视频_2061625263947079681.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Text`
 - `LoadImage`
-- `RH_Sora2_I2V`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewTextNode` —— 1/6 个有
-- `ttN concat` —— 1/6 个有
+- `SaveImage` —— 4/6 个有
+- `RH_PixverseV6ImageToVideo` —— 3/6 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
 
 ## 典型参数
 

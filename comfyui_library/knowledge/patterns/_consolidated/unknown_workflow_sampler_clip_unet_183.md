@@ -2,65 +2,62 @@
 name: unknown_workflow_sampler_clip_unet_183
 type: Unknown Workflow
 frequency: 7
-level: weak
-coverage: 0.923286
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.861143
+common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, DualCLIPLoader, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/wan2.2-ti2v-5B图生图_1952197317170548738.json, 图片生成/文生图/WAN2.2文生图_1953166220825718786.json, 图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json, 图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json, 图片生成/文生图/数字CG风格，UES渲染，超广角构图，充满神秘感且细节繁复的云雾缭绕（文生图学员练习版）+全节点注释_2046180250597466114.json, 视频生成/图生视频/wan2.2-5B图生视频女人飞走_1951274276659867650.json, 视频生成/图生视频/wan2.2-ti2v-5B文生视频摆尾猫_1952539360614920193.json]
+members: [comfyui-workflow-templates-json/hunyuan_video_text_to_video.json, 图片生成/反推提示词/73wenshengshipws_2052614102392033282.json, 图片生成/文生图/文生视频加速版_1993105222903988226.json, 视频生成/文生视频/HunyuanVideo 1.5 480P 8步LightX2V文生视频加速版V1_1992951299952099329.json, 视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json, 视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json, 视频生成/文生视频/video_hunyuan_video_1.5_720p_t2v-混元Video1.5大模型——文生视频工作流_1994019108255629313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_183
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/wan2.2-ti2v-5B图生图_1952197317170548738.json、图片生成/文生图/WAN2.2文生图_1953166220825718786.json、图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json、图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json、图片生成/文生图/数字CG风格，UES渲染，超广角构图，充满神秘感且细节繁复的云雾缭绕（文生图学员练习版）+全节点注释_2046180250597466114.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/hunyuan_video_text_to_video.json、图片生成/反推提示词/73wenshengshipws_2052614102392033282.json、图片生成/文生图/文生视频加速版_1993105222903988226.json、视频生成/文生视频/HunyuanVideo 1.5 480P 8步LightX2V文生视频加速版V1_1992951299952099329.json、视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `KSampler`
+- `CreateVideo`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `SaveImage` —— 5/7 个有
-- `VHS_VideoCombine` —— 4/7 个有
-- `Wan22ImageToVideoLatent` —— 4/7 个有
-- `EmptySD3LatentImage` —— 3/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `PreviewImage` —— 1/7 个有
-- `RH_LLMAPI_NODE` —— 1/7 个有
+- `CFGGuider` —— 6/7 个有
+- `EmptyHunyuanVideo15Latent` —— 6/7 个有
+- `VAEDecodeTiled` —— 6/7 个有
+- `EasyCache` —— 4/7 个有
+- `JWInteger` —— 4/7 个有
+- `LoraLoaderModelOnly` —— 4/7 个有
+- `AddLabel` —— 1/7 个有
+- `BasicGuider` —— 1/7 个有
+- `EmptyHunyuanLatentVideo` —— 1/7 个有
+- `FluxGuidance` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `RTXVideoSuperResolution` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 6 - 30 | 7 | 54% |
-| Prompt 约束强度(CFG) | 5 | 1 - 5 | 7 | 52% |
-| 采样算法 | uni_pc | - | 7 | 57% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 0.3 - 1 | 7 | 73% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 6 - 30，7 个样本
-- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 5，7 个样本
-- 采样算法 最常用 uni_pc，7 个样本，一致性 57%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，7 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

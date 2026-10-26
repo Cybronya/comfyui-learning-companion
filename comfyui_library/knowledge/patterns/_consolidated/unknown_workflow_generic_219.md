@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_219
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.944444
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.9686
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/wan2.7首尾帧图生视频万相2.7-图生视频-首尾帧生视频_2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
+members: [图片生成/图生图/全能图片V12文生图🍌_1991516051691282433.json, 图片生成/图生图/多图参考去AI味 数字人角色脸型设计工作流 V1.0_2043973048876929025.json, 图片生成/图生图/多图构造Ten+picture+editor_2031188627916595201.json, 图片生成/图生图/多宫格生图_2032677490291904514.json, 图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json, 图片生成/图生图/影视剧角色脸型设计工作流 V1.0_2047610302040121345.json, 图片生成/图生图/换脸2.0完美换脸全能图片V12pro人物一致性_1996792747057192962.json, 图片生成/图生图/换脸完美换脸2pro人物一致性_2007470415756660738.json, 图片生成/文生图/XJ官方工作流_2027674347040677890.json, 图片生成/文生图/全能图片pro 单图_双图_多图编辑版本_2021946380721332226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_219
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图片V12文生图🍌_1991516051691282433.json、图片生成/图生图/多图参考去AI味 数字人角色脸型设计工作流 V1.0_2043973048876929025.json、图片生成/图生图/多图构造Ten+picture+editor_2031188627916595201.json、图片生成/图生图/多宫格生图_2032677490291904514.json、图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
-- `CR Text` —— 3/9 个有
-- `JjkText` —— 1/9 个有
-- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
+- `CR Text` —— 9/10 个有
+- `LoadImage` —— 9/10 个有
+- `ImageConcatMulti` —— 5/10 个有
+- `ImageStitch` —— 2/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `RH_RhartImageG2ImageToImage` —— 1/10 个有
 
 ## 典型参数
 

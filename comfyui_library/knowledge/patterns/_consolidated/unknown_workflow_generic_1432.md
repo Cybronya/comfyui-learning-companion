@@ -3,45 +3,36 @@ name: unknown_workflow_generic_1432
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.682
-common_nodes: [CR Text, Image Comparer (rgthree), LayerFilter: GaussianBlur, LoadImage, PreviewImage, RHLLMChatNode, RH_RhartImageG2ImageToImage, SaveImage, Seed (rgthree), StringFunction|pysssss, easy showAnything, 孤海注释]
+coverage: 0.7225
+common_nodes: [LoadImage, MaskColorize, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/脏图修复重绘｜消除多次生成残留噪点_2069604605264224257.json, 图片生成/图生图/脏图重绘还原【适合还原噪点过多或全能图片G多次重绘后噪点过多的图】_2069242537495326722.json]
+members: [图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json, 图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1432
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/脏图修复重绘｜消除多次生成残留噪点_2069604605264224257.json、图片生成/图生图/脏图重绘还原【适合还原噪点过多或全能图片G多次重绘后噪点过多的图】_2069242537495326722.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json、图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `LayerFilter: GaussianBlur`
 - `LoadImage`
+- `MaskColorize`
 - `PreviewImage`
-- `RHLLMChatNode`
-- `RH_RhartImageG2ImageToImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Seed (rgthree)`
-- `StringFunction|pysssss`
-- `easy showAnything`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AspectRatioSelect` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `孤海图像裁剪按比例` —— 1/2 个有
+- `Mute / Bypass Relay (rgthree)` —— 1/2 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
 
 ## 典型参数
 

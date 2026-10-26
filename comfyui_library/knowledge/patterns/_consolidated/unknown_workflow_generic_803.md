@@ -3,34 +3,30 @@ name: unknown_workflow_generic_803
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.97375
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text]
+coverage: 0.5
+common_nodes: [CR Text, PrimitiveInt, RH_SeedreamV5ProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json, 音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json, 音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json, 音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json]
+members: [图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json, 图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_803
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json、音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json、音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json、音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json、图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json、图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json、图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `Text`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Seed` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `CR Text`
+- `PrimitiveInt`
+- `RH_SeedreamV5ProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

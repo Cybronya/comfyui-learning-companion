@@ -1,61 +1,42 @@
 ---
 name: unknown_workflow_video_sampler_4
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.8807
-common_nodes: [AudioSeparation, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkWav2VecEmbeds, RHHiddenNodes, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode]
+coverage: 0.945667
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RunningHub_TurboDiffusion_TurboWan_Loader, RunningHub_TurboDiffusion_TurboWan_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk带动作数字人V2【动态增强版】_1981283367738138625.json, 视频生成/图生视频/Vox Infinity 任意IP唱歌【动态稳定版】_1988524870826901505.json, 视频生成/图生视频/WanVideo-唱歌数字人-02_1992836871027838977.json, 视频生成/图生视频/WanVideo-唱歌数字人_1990968064927801345.json, 视频生成/图生视频/【动态控制版】数字人_1991042926883053570.json, 视频生成/图生视频/【大炮】InfiniteTalk音乐数字人_1990657012549771265.json, 视频生成/图生视频/数字人对口型    动态一致_2003004392984965122.json, 视频生成/图生视频/数字人对口型+动态一致_2015428221566717953.json, 视频生成/图生视频/自带运镜！演唱会数字人V1.0【口型完美+自动运镜】_1984278301894131714.json, 音频生成/音频生成/MV音乐赛道专用，商用级_2046698333896445954.json]
+members: [数字人/数字人/RH TurboWan图生视频-48G_2022137034055356417.json, 数字人/数字人/RH TurboWan图生视频-48G_2030238252237590530.json, 数字人/数字人/RH TurboWan图生视频_2014536995703365634.json, 视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json, 视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json, 视频生成/图生视频/Wan 图生视频_2007995270973366274.json, 视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json, 视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json, 视频生成/图生视频/🦖TurboWan图生视频_2005914063492313090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk带动作数字人V2【动态增强版】_1981283367738138625.json、视频生成/图生视频/Vox Infinity 任意IP唱歌【动态稳定版】_1988524870826901505.json、视频生成/图生视频/WanVideo-唱歌数字人-02_1992836871027838977.json、视频生成/图生视频/WanVideo-唱歌数字人_1990968064927801345.json、视频生成/图生视频/【动态控制版】数字人_1991042926883053570.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/RH TurboWan图生视频-48G_2022137034055356417.json、数字人/数字人/RH TurboWan图生视频-48G_2030238252237590530.json、数字人/数字人/RH TurboWan图生视频_2014536995703365634.json、视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json、视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AudioSeparation`
-- `Int`
+全部 9 个 workflow 都包含：
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `MultiTalkWav2VecEmbeds`
-- `RHHiddenNodes`
-- `SimpleMath+`
-- `ToInt`
+- `MathExpression|pysssss`
+- `RunningHub_TurboDiffusion_TurboWan_Loader`
+- `RunningHub_TurboDiffusion_TurboWan_Sampler`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 9/10 个有
-- `RH_GetAudioDuration` —— 9/10 个有
-- `easy showAnything` —— 9/10 个有
-- `CLIPVisionLoader` —— 5/10 个有
-- `CreateVideo` —— 5/10 个有
-- `DownloadAndLoadWav2VecModel` —— 5/10 个有
-- `LoadWanVideoT5TextEncoder` —— 5/10 个有
-- `PreViewVideo` —— 5/10 个有
-- `WanVideoBlockSwap` —— 5/10 个有
-- `WanVideoVAELoader` —— 5/10 个有
-- `ToFloat` —— 3/10 个有
-- `JWFloat` —— 2/10 个有
-- `GetAudioDurationFromAudio` —— 1/10 个有
-- `GetNode` —— 1/10 个有
-- `MuyeTextEditOutput` —— 1/10 个有
-- `SetNode` —— 1/10 个有
+- `ShowAnything|Mie` —— 8/9 个有
+- `CR Prompt Text` —— 7/9 个有
+- `PrimitiveInt` —— 3/9 个有
+- `Int` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
 
 ## 典型参数
 

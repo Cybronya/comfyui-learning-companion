@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_197
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8406
-common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.754545
+common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [图片生成/图生图/景观-su生成竞赛风鸟瞰图工作流_2043282178926186497.json, 图片生成/图生图/景观-乡村旧路转完工后效果工作流_2042221961408946177.json, 图片生成/图生图/景观-模型图生成插画风效果图工作流_2042230827349708802.json, 图片生成/图生图/景观-模型图秒变线稿风剖透视图工作流_2043883097824960513.json, 图片生成/图生图/柔软蓬松的饮料罐（全能图像编辑）_2014895099309723649.json, 图片生成/图生图/汽车kv单人物替换_2016398480041840642.json, 图片生成/图生图/汽车kv多人物替换_2016397861474275330.json, 图片生成/图生图/规划-乡村改造轴测分析图工作流_2043562997389463554.json, 图片生成/文生图/服装上身一键穿搭不同姿势4张图_2065034750770900993.json, 图片生成/文生图/规划-生成SWOT分析图工作流_2042965652633292801.json]
+members: [视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频_1979082743093039105.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_197
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/景观-su生成竞赛风鸟瞰图工作流_2043282178926186497.json、图片生成/图生图/景观-乡村旧路转完工后效果工作流_2042221961408946177.json、图片生成/图生图/景观-模型图生成插画风效果图工作流_2042230827349708802.json、图片生成/图生图/景观-模型图秒变线稿风剖透视图工作流_2043883097824960513.json、图片生成/图生图/柔软蓬松的饮料罐（全能图像编辑）_2014895099309723649.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json、视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json、视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json、视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 11 个 workflow 都包含：
+- `PreviewAny`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoBanana2ZhenzhenNode` —— 6/10 个有
-- `CR Text` —— 2/10 个有
+- `Text _O` —— 1/11 个有
 
 ## 典型参数
 

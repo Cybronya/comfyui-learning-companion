@@ -3,45 +3,38 @@ name: unknown_workflow_upscale_vae_53
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8935
-common_nodes: [GetImageSize+, ImageResize+, ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed]
+coverage: 0.8
+common_nodes: [HAIGC_SaveImagesToZip, ImageScaleToTotalPixels, JoinImageWithAlpha, RHUploadZip_V2, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy imageSize, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/放大_2107022066804420610.json, 图片生成/文生图/百万像素超绝放大_2005617652724891650.json]
+members: [图片生成/图生图/批量放大4K—ZIP格式上传批量出图，稳定版_2016504245368918018.json, 图片生成/文生图/批量放大4K—ZIP格式下载_2015323229090488321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/放大_2107022066804420610.json、图片生成/文生图/百万像素超绝放大_2005617652724891650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量放大4K—ZIP格式上传批量出图，稳定版_2016504245368918018.json、图片生成/文生图/批量放大4K—ZIP格式下载_2015323229090488321.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSize+`
-- `ImageResize+`
-- `ImageScaleBy`
-- `LoadImage`
+- `HAIGC_SaveImagesToZip`
+- `ImageScaleToTotalPixels`
+- `JoinImageWithAlpha`
+- `RHUploadZip_V2`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SaveImageJPG_GH` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
+- `easy clearCacheAll`
+- `easy imageSize`
+- `easy int`
 
 ## 典型参数
 

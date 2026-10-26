@@ -3,37 +3,32 @@ name: unknown_workflow_generic_1222
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.618
-common_nodes: [CR Prompt Text, Comfly_api_set, ImageConcanate, LoadImage, SaveImage, easy showAnything]
+coverage: 0.857
+common_nodes: [Flux2ImageNode, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Max图像编辑（贞贞的AI工坊API）_2011374508204105729.json, 图片生成/图生图/全能图片G image 1.5图像编辑v1（贞贞的ai工坊版）_2001715416554717186.json]
+members: [comfyui-workflow-templates-json/api_bfl_flux2_max_sofa_swap.json, comfyui-workflow-templates-json/api_flux2.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1222
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2 Max图像编辑（贞贞的AI工坊API）_2011374508204105729.json、图片生成/图生图/全能图片G image 1.5图像编辑v1（贞贞的ai工坊版）_2001715416554717186.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux2_max_sofa_swap.json、comfyui-workflow-templates-json/api_flux2.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `ImageConcanate`
+- `Flux2ImageNode`
 - `LoadImage`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Flux_2_Max` —— 1/2 个有
-- `Comfly_gpt_image_1_edit` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
 
 ## 典型参数
 

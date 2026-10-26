@@ -1,91 +1,106 @@
 ---
 name: text_to_image_lora_sampler_clip_355
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9822
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.930167
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键提取服装白底图 Kontext_2103488451134967809.json, 图片生成/图生图/平铺服装_挂拍服装图转3D立体效果图_2104905928461086722.json, 图片生成/图生图/服装提取平铺图【电商必备】_2043953787542441986.json, 图片生成/图生图/服装提取平铺视图-直出4K-FLUX-Kontext_2097872977068126209.json, 图片生成/图生图/服装提取平铺视图-直出4K-FLUX-Kontext_2099409741830254594.json]
+members: [视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json, 视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json, 视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2110540152014729218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_355
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键提取服装白底图 Kontext_2103488451134967809.json、图片生成/图生图/平铺服装_挂拍服装图转3D立体效果图_2104905928461086722.json、图片生成/图生图/服装提取平铺图【电商必备】_2043953787542441986.json、图片生成/图生图/服装提取平铺视图-直出4K-FLUX-Kontext_2097872977068126209.json、图片生成/图生图/服装提取平铺视图-直出4K-FLUX-Kontext_2099409741830254594.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json、视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json、视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoader`
-- `ReferenceLatent`
-- `SaveImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3BlockCacheT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `SeedVR2LoadDiTModel` —— 4/5 个有
-- `SeedVR2LoadVAEModel` —— 4/5 个有
-- `SeedVR2VideoUpscaler` —— 4/5 个有
-- `easy int` —— 4/5 个有
-- `easy imageSize` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `CLIPLoader` —— 1/5 个有
-- `EmptyFlux2LatentImage` —— 1/5 个有
-- `LayerUtility: FluxKontextImageScale` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `UNETLoader` —— 1/5 个有
-- `YuanColorMatch` —— 1/5 个有
+- `AudioConcat` —— 5/6 个有
+- `BasicScheduler` —— 5/6 个有
+- `BatchImagesNode` —— 5/6 个有
+- `ComfySwitchNode` —— 5/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `Float` —— 5/6 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `SelfLiftAvatarH3Sampler` —— 5/6 个有
+- `TrimAudioDuration` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `easy compare` —— 5/6 个有
+- `easy forLoopEnd` —— 5/6 个有
+- `easy forLoopStart` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `RIFE VFI` —— 4/6 个有
+- `AuKAudioTrim` —— 1/6 个有
+- `BasicGuider` —— 1/6 个有
+- `EmptyImage` —— 1/6 个有
+- `ManualSigmas` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RandomNoise` —— 1/6 个有
+- `SamplerCustomAdvanced` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta57 | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta57，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

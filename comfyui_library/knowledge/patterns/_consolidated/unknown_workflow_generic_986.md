@@ -3,36 +3,36 @@ name: unknown_workflow_generic_986
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.691333
-common_nodes: [CR Text, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
+coverage: 0.818
+common_nodes: [ConstrainImage|pysssss, GoohaiUniversalSlider, LoadImage, PreviewImage, RH_Captioner_Pro, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json, 图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json, 图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json]
+members: [图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json, 图片生成/图生图/洗图  2.0_2094804532176965634.json, 图片生成/图生图/洗图 2.0_2095326743526727681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_986
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json、图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json、图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json、图片生成/图生图/洗图  2.0_2094804532176965634.json、图片生成/图生图/洗图 2.0_2095326743526727681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `RH_Nano_Banana2_Image2Image`
+- `ConstrainImage|pysssss`
+- `GoohaiUniversalSlider`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Captioner_Pro`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `TextBox` —— 2/3 个有
+- `忽略多组孤海`
 
 ## 典型参数
 

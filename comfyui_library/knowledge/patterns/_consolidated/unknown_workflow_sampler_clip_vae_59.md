@@ -2,97 +2,68 @@
 name: unknown_workflow_sampler_clip_vae_59
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.6885
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXFloatToInt, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SaveVideo]
-problems: []
+level: moderate
+coverage: 0.837
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, PrimitiveInt, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX2.3 多图参考图生成视频｜+多图参考图 LORA ｜IC-LoRA-Ingredients_2067412522302529537.json, 视频生成/图生视频/lix2.3图生视频（首帧）_2069607607387639810.json, 视频生成/文生视频/LTX2.3 In​gredients IC LORA全能参考_2070747298736463873.json, 视频生成/文生视频/LTX2.3 多图参考图生成视频-Ingredients简雨版_2067926181353189378.json]
+members: [图片生成/文生图/Worker Text2Image_1975809153623003138.json, 图片生成/文生图/Zimage-base_2016353825925373953.json, 图片生成/文生图/中国农村动画风格_1963594349245452289.json, 图片生成/文生图/千问image真实幻想V2文生图_1988091761648115713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_59
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 多图参考图生成视频｜+多图参考图 LORA ｜IC-LoRA-Ingredients_2067412522302529537.json、视频生成/图生视频/lix2.3图生视频（首帧）_2069607607387639810.json、视频生成/文生视频/LTX2.3 In​gredients IC LORA全能参考_2070747298736463873.json、视频生成/文生视频/LTX2.3 多图参考图生成视频-Ingredients简雨版_2067926181353189378.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Worker Text2Image_1975809153623003138.json、图片生成/文生图/Zimage-base_2016353825925373953.json、图片生成/文生图/中国农村动画风格_1963594349245452289.json、图片生成/文生图/千问image真实幻想V2文生图_1988091761648115713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：69%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXFloatToInt`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LoadImage`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `PrimitiveInt`
+- `SaveImage`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 3/4 个有
-- `GetVideoComponents` —— 3/4 个有
-- `LTXAddVideoICLoRAGuide` —— 3/4 个有
-- `LTXICLoRALoaderModelOnly` —— 3/4 个有
-- `LTXVAudioVAELoader` —— 3/4 个有
-- `LTXVCropGuides` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `RepeatImageBatch` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `SimpleCalculatorKJ` —— 2/4 个有
+- `CR Text` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `QwenEditResolution` —— 2/4 个有
 - `UNETLoader` —— 2/4 个有
-- `VAELoaderKJ` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ClownSampler_Beta` —— 1/4 个有
-- `DualCLIPLoaderGGUF` —— 1/4 个有
-- `GemmaAPITextEncode` —— 1/4 个有
-- `GuiderParameters` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageBatchMultiple+` —— 1/4 个有
-- `ImageConcatFromBatch` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LTXVScheduler` —— 1/4 个有
-- `MultimodalGuider` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `UnetLoaderGGUFAdvanced` —— 1/4 个有
-- `easy positive` —— 1/4 个有
+- `UnetLoaderGGUF` —— 2/4 个有
+- `ConcatTextOfUtils` —— 1/4 个有
+- `InversionDemoLazyIndexSwitch` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 24 | 24 - 25 | 4 | 98% |
+| 采样步数 | 20 | 8 - 50 | 4 | 37% |
+| Prompt 约束强度(CFG) | 3 | 1 - 4 | 4 | 58% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）
+- 采样步数 中位数 20，观测区间 8 - 50，4 个样本，取值分散，一致性仅 37%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，4 个样本
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

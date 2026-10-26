@@ -1,79 +1,77 @@
 ---
 name: image_to_image_lora_sampler_vae_5
 type: Image To Image
-frequency: 13
+frequency: 16
 level: strong
-coverage: 0.959154
-common_nodes: [ConditioningZeroOut, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.669063
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux Kontext-真人转动漫 Nunchaku加速版_1964121930297167874.json, 图片生成/图生图/Flux+Kontext-高清还原（Nunchaku）_1968246375500664834.json, 图片生成/图生图/Flux1-Kontext-去除图片中的文字_1949048598852972545.json, 图片生成/图生图/Flux1-Kontext人物换背景+背景参考_1948389692900290561.json, 图片生成/图生图/Flux1-Kontext人物换背景_1948386312018636802.json, 图片生成/图生图/Flux1-Kontext去人物_1948413311414075394.json, 图片生成/图生图/Flux1-Kontext去人物留背景+人物换背景_1948420688827822082.json, 图片生成/图生图/Flux1-Kontext去除图片中的文字-Nunchaku加速_1948884685205188609.json, 图片生成/图生图/Kontext扩图（扩下半身）_1968240084396978177.json, 图片生成/图生图/ani①-Kontext转真人_1945084253686386689.json, 图片生成/图生图/一键调整人物方向Flux+Kontext_2044605376926064641.json, 图片生成/文生图/Flux Kontext  人物模特镜头方向调整_1944642913160843265.json, 图片生成/文生图/Flux Kontext 人物方向调整_1942757866497617921.json]
+members: [图片生成/图生图/B6、图像编辑 千问2.5 GGUF - 和风_1992879635685855234.json, 图片生成/图生图/Ban_Qwen-动漫转写实真人V2版_1988231591057121281.json, 图片生成/图生图/Ban_Qwen-艺术摄影图片重打光_1988243660754042882.json, 图片生成/图生图/Edit-2509-光线迁移优化模型_2000043637197205506.json, 图片生成/图生图/FireRed-Image-Edit-1.0 老照片修复重新上色_2026822786328563714.json, 图片生成/图生图/NGS风格转bjd融光_2082671756535492609.json, 图片生成/图生图/NGS风格转bjd融光_2085195450470191106.json, 图片生成/图生图/Qwen 2511 史上最强-动漫转写实真人正式版_2013133142546194434.json, 图片生成/图生图/Qwen2511-真人转动漫_2014909381707567105.json, 图片生成/图生图/【推荐，动漫转真人快速版】动漫转写实真人2511-高还原_2017655194384867330.json, 图片生成/图生图/万物转厚涂梦幻动漫风格_2511（风格重绘）_2012103777167347714.json, 图片生成/图生图/动漫转真人高还原_2067296922406313986.json, 图片生成/图生图/史上最强-动漫转写实真人2511AnythingtoRealCharacters正式版-高还原_2088249983240851458.json, 图片生成/图生图/史上最强-动漫转写实真人2511（AnythingtoRealCharacters）正式版-高还原_2009527411641159681.json, 图片生成/图生图/小红书 FireRed image-Edit-1.1 老照片修复重新上色_2033805219217281026.json, 图片生成/图生图/效果最好-动漫转写实真人2511（高还原）_2014551974833819650.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Flux Kontext-真人转动漫 Nunchaku加速版_1964121930297167874.json、图片生成/图生图/Flux+Kontext-高清还原（Nunchaku）_1968246375500664834.json、图片生成/图生图/Flux1-Kontext-去除图片中的文字_1949048598852972545.json、图片生成/图生图/Flux1-Kontext人物换背景+背景参考_1948389692900290561.json、图片生成/图生图/Flux1-Kontext人物换背景_1948386312018636802.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/B6、图像编辑 千问2.5 GGUF - 和风_1992879635685855234.json、图片生成/图生图/Ban_Qwen-动漫转写实真人V2版_1988231591057121281.json、图片生成/图生图/Ban_Qwen-艺术摄影图片重打光_1988243660754042882.json、图片生成/图生图/Edit-2509-光线迁移优化模型_2000043637197205506.json、图片生成/图生图/FireRed-Image-Edit-1.0 老照片修复重新上色_2026822786328563714.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+全部 16 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
 - `KSampler`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `ReferenceLatent`
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 12/13 个有
-- `ImageStitch` —— 11/13 个有
-- `ImageConcanate` —— 10/13 个有
-- `CLIPTextEncode` —— 9/13 个有
-- `CR Prompt Text` —— 6/13 个有
-- `RHHiddenNodes` —— 6/13 个有
-- `GoogleTranslateTextNode` —— 5/13 个有
-- `PreviewImage` —— 5/13 个有
-- `LoadImageOutput` —— 4/13 个有
-- `EmptySD3LatentImage` —— 1/13 个有
-- `ImagePadForOutpaint` —— 1/13 个有
-- `LayerUtility: PurgeVRAM` —— 1/13 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/13 个有
-- `SUPIR_Upscale` —— 1/13 个有
-- `Text Multiline` —— 1/13 个有
-- `workflow>MaskColor` —— 1/13 个有
+- `ModelSamplingAuraFlow` —— 15/16 个有
+- `TextEncodeQwenImageEditPlus` —— 15/16 个有
+- `UNETLoader` —— 15/16 个有
+- `TextEncodeQwenImageEdit` —— 13/16 个有
+- `GetNode` —— 12/16 个有
+- `SetNode` —— 12/16 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 10/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/16 个有
+- `ImageScaleToTotalPixels` —— 6/16 个有
+- `Image Comparer (rgthree)` —— 3/16 个有
+- `ReferenceLatent` —— 2/16 个有
+- `Seed Generator` —— 2/16 个有
+- `Anything Everywhere` —— 1/16 个有
+- `Int` —— 1/16 个有
+- `Text` —— 1/16 个有
+- `UnetLoaderGGUF` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 13 | 83% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 4 | 4 - 9 | 16 | 64% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 100% |
+| 调度器 | simple | - | 16 | 88% |
+| 重绘幅度 | 1 | 0.8 - 1 | 16 | 93% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，13 个样本，取值集中（一致性 83%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 9，16 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 100%
+- 调度器 最常用 simple，16 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，16 个样本，取值集中（一致性 93%）
+- 高发问题（16/16 个样本）：Steps较低可能导致细节不足

@@ -3,54 +3,66 @@ name: text_to_image_lora_sampler_clip_672
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.904
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, LoadAudio, LongCatVoiceCloneTTS, LoraLoaderModelOnly, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PreviewAny, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7845
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, INTConstant, ImageScaleToTotalPixels, ImageSharpen, JjkText, KSampler, KSamplerAdvanced, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewAny, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/声音设计与克隆多合一｜音频生成工作流一键处理_2094758455860097025.json, 音频生成/音频生成/声音设计与声音克隆多合一整合｜高质量音频生成_2094539411865296898.json]
+members: [图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json, 图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_672
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/声音设计与克隆多合一｜音频生成工作流一键处理_2094758455860097025.json、音频生成/音频生成/声音设计与声音克隆多合一整合｜高质量音频生成_2094539411865296898.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json、图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Prompt Text`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
+- `ImageSharpen`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceVoiceDesignTTS`
+- `ModelSamplingAuraFlow`
 - `PreviewAny`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

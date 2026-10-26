@@ -1,81 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_clip_100
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.711833
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine]
+frequency: 7
+level: strong
+coverage: 0.977429
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json, 视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json, 视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json, 视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json, 视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json, 视频生成/图生视频/高动态音图生视频数字人LTX2 Ai2V_2009631227556405249.json]
+members: [视频生成/图生视频/通义万相Wan2.1图生视频GGUF量化16g显存可用_1895423724621529089.json, 视频生成/图生视频/通义万相Wan2.1图生视频_1895391021444497410.json, 视频生成/图生视频/（完成一半）怪兽抱抱WAN及PhotoDoodle视频工作流_1895732639271878658.json, 视频生成/文生视频/WAN2.1 万相图生视频，效果丝滑 拉布布360°旋转动画_1938037576559431682.json, 视频生成/文生视频/wan图片生成视频  视频动画_1922130213654708226.json, 视频生成/文生视频/熊猫快跑-视频动画_1933374904114786306.json, 视频生成/文生视频/通义万相ComfyuI原生图文转视频工作流-StarAI_1897394732773888001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json、视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json、视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json、视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json、视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/通义万相Wan2.1图生视频GGUF量化16g显存可用_1895423724621529089.json、视频生成/图生视频/通义万相Wan2.1图生视频_1895391021444497410.json、视频生成/图生视频/（完成一半）怪兽抱抱WAN及PhotoDoodle视频工作流_1895732639271878658.json、视频生成/文生视频/WAN2.1 万相图生视频，效果丝滑 拉布布360°旋转动画_1938037576559431682.json、视频生成/文生视频/wan图片生成视频  视频动画_1922130213654708226.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `CR Prompt Text` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `JWInteger` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `Int` —— 2/6 个有
-- `RH_LLMAPI_Pro_Node` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `AudioCrop` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerMask: MaskPreview` —— 1/6 个有
-- `RH_GetAudioDuration` —— 1/6 个有
-- `Textbox` —— 1/6 个有
-- `VRAMReserver` —— 1/6 个有
-- `easy float` —— 1/6 个有
+- `UNETLoader` —— 5/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `UnetLoaderGGUF` —— 2/7 个有
+- `EmptyHunyuanLatentVideo` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `Note _O` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `SaveWEBM` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 10 - 20 | 7 | 81% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
+| 采样算法 | uni_pc | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -83,4 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 10 - 20，7 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

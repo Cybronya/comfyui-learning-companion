@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1030
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.866667
-common_nodes: [LoadAudio, LoadImage, RH_Wan26_I2V, SaveVideo]
+coverage: 0.782
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json, 视频生成/图生视频/Wan2.6图生视频I2V_2007613994982445058.json, 视频生成/图生视频/图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001093556196569089.json]
+members: [图片生成/图生图/图像编辑工作流｜全能图片 2（Gemini 3.1）4K 精修_2099690025347805185.json, 图片生成/图生图/图片编辑2.0_2037119204968636417.json, 图片生成/文生图/性价比生图工作流！ RH全能图片2 gemini-3.1-flash-image_2048071421775056897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1030
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json、视频生成/图生视频/Wan2.6图生视频I2V_2007613994982445058.json、视频生成/图生视频/图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001093556196569089.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像编辑工作流｜全能图片 2（Gemini 3.1）4K 精修_2099690025347805185.json、图片生成/图生图/图片编辑2.0_2037119204968636417.json、图片生成/文生图/性价比生图工作流！ RH全能图片2 gemini-3.1-flash-image_2048071421775056897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
 - `LoadImage`
-- `RH_Wan26_I2V`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 2/3 个有
-- `CR Text` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `JjkText` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

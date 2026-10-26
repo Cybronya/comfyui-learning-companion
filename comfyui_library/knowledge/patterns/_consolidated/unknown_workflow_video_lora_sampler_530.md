@@ -2,93 +2,72 @@
 name: unknown_workflow_video_lora_sampler_530
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.895
-common_nodes: [BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, CropByBBoxes, ImageBatch, ImageFromBatch, ImageResizeKJv2, KSampler, LayerUtility: If , LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveBoolean, PrimitiveString, RTDETR_detect, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.7105
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/动作迁移（卡通形象）_wan2.2_2063784977329909762.json, 视频生成/图生视频/动作迁移（插帧流畅版）_wan2.2_2065044173270634498.json, 视频生成/图生视频/图生视频  动作迁移_2062727464236965889.json, 视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json]
+members: [数字人/数字人/04-06-03-WAN2.2-数字人-S2V-动作驱动无限长-kijai_1990969083397087234.json, 数字人/数字人/S2V动作驱动无限长数字人（kijai版全功能）楚门的AI世界_1961390638342279169.json, 视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json, 视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_530
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动作迁移（卡通形象）_wan2.2_2063784977329909762.json、视频生成/图生视频/动作迁移（插帧流畅版）_wan2.2_2065044173270634498.json、视频生成/图生视频/图生视频  动作迁移_2062727464236965889.json、视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/04-06-03-WAN2.2-数字人-S2V-动作驱动无限长-kijai_1990969083397087234.json、数字人/数字人/S2V动作驱动无限长数字人（kijai版全功能）楚门的AI世界_1961390638342279169.json、视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json、视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BodyRatioMapperProportionTransfer`
-- `BodyRatioMapperSDPoseRender`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CropByBBoxes`
-- `ImageBatch`
-- `ImageFromBatch`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
-- `KSampler`
-- `LayerUtility: If `
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `PrimitiveString`
-- `RTDETR_detect`
-- `SAM3_Detect`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
-- `TrimVideoLatent`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy showAnything`
+- `WanVideoAddAudioEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoaderGGUF` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `UnetLoaderGGUF` —— 3/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `FrameInterpolate` —— 1/4 个有
-- `FrameInterpolationModelLoader` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `VHS_SplitImages` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 5 | 4 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 5，4 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

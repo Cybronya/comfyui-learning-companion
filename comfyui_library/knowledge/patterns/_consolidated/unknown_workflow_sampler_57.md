@@ -2,66 +2,49 @@
 name: unknown_workflow_sampler_57
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.481667
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), GenerateSRT, GetNode, IndexTTS2BaseNode, IndexTTS2CacheControlNode, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MergeAudioMW, RH_LLMAPI_NODE, ReplaceText, SRTToAudio, SaveAudio, SaveSRTFromString, SetNode, TrimAudioDuration, VoiceBridgeASRLoader, VoiceBridgeASRTranscribe, VoiceBridgeTTSLoader, VoiceClonePrompt, easy showAnything, easy string]
+level: strong
+coverage: 0.705667
+common_nodes: [Anything Everywhere3, Efficient Loader, KSampler (Efficient), LoadImage, Prompts Everywhere, SaveImage]
 problems: []
-missing: [VoiceBridgeAudioListMergerBySRT, VoiceBridgeSRTSplitter]
-members: [音频生成/音频生成/AI翻译配音+字幕转音频+音频转字幕 多合一工作流 V3.1_2050059053363154946.json, 音频生成/音频生成/VoiceBridge workflow V2_2032102603814866945.json, 音频生成/音频生成/VoiceBridge 基础工作流 V2.1_2032633615116410882.json]
+missing: []
+members: [图片生成/文生图/一键运行：最简扩图 修复 局部重绘 新人必备_1951491900136173570.json, 图片生成/文生图/效率节点极简图生图新人必备_1950463623363792897.json, 图片生成/文生图/最简效率节点局部重绘工作流新人必备_1950483114151825409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI翻译配音+字幕转音频+音频转字幕 多合一工作流 V3.1_2050059053363154946.json、音频生成/音频生成/VoiceBridge workflow V2_2032102603814866945.json、音频生成/音频生成/VoiceBridge 基础工作流 V2.1_2032633615116410882.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键运行：最简扩图 修复 局部重绘 新人必备_1951491900136173570.json、图片生成/文生图/效率节点极简图生图新人必备_1950463623363792897.json、图片生成/文生图/最简效率节点局部重绘工作流新人必备_1950483114151825409.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `GenerateSRT`
-- `GetNode`
-- `IndexTTS2BaseNode`
-- `IndexTTS2CacheControlNode`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MergeAudioMW`
-- `RH_LLMAPI_NODE`
-- `ReplaceText`
-- `SRTToAudio`
-- `SaveAudio`
-- `SaveSRTFromString`
-- `SetNode`
-- `TrimAudioDuration`
-- `VoiceBridgeASRLoader`
-- `VoiceBridgeASRTranscribe`
-- `VoiceBridgeTTSLoader`
-- `VoiceClonePrompt`
-- `easy showAnything`
-- `easy string`
+- `Anything Everywhere3`
+- `Efficient Loader`
+- `KSampler (Efficient)`
+- `LoadImage`
+- `Prompts Everywhere`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `FishS2VoiceCloneTTS` —— 1/3 个有
-- `LongCatVoiceCloneTTS` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `RunningHub_VoxCPM_Generate` —— 1/3 个有
-- `RunningHub_VoxCPM_LoadModel` —— 1/3 个有
-- `SaveAudioMP3` —— 1/3 个有
-- `VoiceBridgeAudioListMergerBySRT` —— 1/3 个有
-- `VoiceBridgeSRTSplitter` —— 1/3 个有
+- `InpaintModelConditioning` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `ImagePadForOutpaint` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 7 | 7 - 7 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
 
 ## 常见问题
 
@@ -69,4 +52,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：VoiceBridgeAudioListMergerBySRT、VoiceBridgeSRTSplitter
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本

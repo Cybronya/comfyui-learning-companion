@@ -3,42 +3,36 @@ name: unknown_workflow_generic_914
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.874
-common_nodes: [HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, PromptBatchQueue, RHHiddenNodes, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
+coverage: 0.794333
+common_nodes: [JanusImageUnderstanding, JanusModelLoader, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json, 图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json, 图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json]
+members: [图片生成/反推提示词/Deep Seek高效提示词反推工作流_1923636452712697858.json, 图片生成/反推提示词/Janus-Pro 反推提示词基础工作流_1937843505886576642.json, 图片生成/反推提示词/Prompt反推_1969966801851457538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_914
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json、图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json、图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Deep Seek高效提示词反推工作流_1923636452712697858.json、图片生成/反推提示词/Janus-Pro 反推提示词基础工作流_1937843505886576642.json、图片生成/反推提示词/Prompt反推_1969966801851457538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HAIGC_CombineUnits`
-- `HAIGC_Layer`
-- `HAIGC_SavePSD`
+- `JanusImageUnderstanding`
+- `JanusModelLoader`
 - `LoadImage`
-- `PromptBatchQueue`
-- `RHHiddenNodes`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `easy showAnything`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `CR Text Replace` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `Save Text File` —— 1/3 个有
+- `Translate` —— 1/3 个有
 
 ## 典型参数
 

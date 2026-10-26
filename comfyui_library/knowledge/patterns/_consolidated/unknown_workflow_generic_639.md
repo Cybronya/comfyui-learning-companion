@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_639
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.75025
-common_nodes: [RH_Flux_2_Max_TextToImage, SaveImage]
+coverage: 0.9142
+common_nodes: [LoadImage, RH_Hailuo_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json, 图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json]
+members: [视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json, 视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json, 视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json, 视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json, 视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_639
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json、图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json、视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json、视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json、视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json、视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `RH_Flux_2_Max_TextToImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_Hailuo_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

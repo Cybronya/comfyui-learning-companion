@@ -1,64 +1,55 @@
 ---
 name: unknown_workflow_sampler_clip_unet_123
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.981444
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9846
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json, 图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json, 图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json, 图片生成/图生图/flux klein单图编辑_2085594588139581442.json, 图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json, 图片生成/图生图/flux klein双图编辑工作流_2105577595982143490.json, 图片生成/图生图/flux klein双图编辑工作流_2105650140253089794.json, 图片生成/图生图/一键拍立得_2077678322762473473.json, 图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json]
+members: [图片生成/文生图/Z-Image-base局部重绘_2016771278450991105.json, 图片生成/文生图/Z-Image_turbo造像模型文生图极速版_2049364318055043073.json, 图片生成/文生图/Z-Image（base）文生图_2016049580982407169.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2041531285021134849.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2041694117238939649.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2042149150724198401.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2042149662869692418.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2042468324331757569.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2042827110661758977.json, 图片生成/文生图/Z-image zimage 提示词反推 图生图 去AI味超真实感_2037758338104041474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_123
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json、图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json、图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json、图片生成/图生图/flux klein单图编辑_2085594588139581442.json、图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-Image-base局部重绘_2016771278450991105.json、图片生成/文生图/Z-Image_turbo造像模型文生图极速版_2049364318055043073.json、图片生成/文生图/Z-Image（base）文生图_2016049580982407169.json、图片生成/文生图/Z-image  zimage  文生图  工作流_2041531285021134849.json、图片生成/文生图/Z-image  zimage  文生图  工作流_2041694117238939649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
 - **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 8/9 个有
-- `GetImageSize` —— 7/9 个有
-- `ImagePadForOutpaint` —— 3/9 个有
-- `AILab_ImageStitch` —— 1/9 个有
-- `CheckpointLoaderSimple` —— 1/9 个有
-- `ColorMatch` —— 1/9 个有
-- `DrawMaskOnImage` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `LayerStyle: ColorOverlay` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `ResolutionMaster` —— 1/9 个有
-- `StringConcatenate` —— 1/9 个有
-- `StringConstant` —— 1/9 个有
-- `VRAMReserver` —— 1/9 个有
+- `EmptySD3LatentImage` —— 9/10 个有
+- `LoadImage` —— 4/10 个有
+- `DifferentialDiffusion` —— 1/10 个有
+- `InpaintModelConditioning` —— 1/10 个有
+- `MaskBlur+` —— 1/10 个有
+- `Qwen3_VQA` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 50 | 20 - 50 | 10 | 69% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 10 | 73% |
+| 采样算法 | res_multistep | - | 10 | 90% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 0.85 - 1 | 10 | 95% |
 
 ## 常见问题
 
@@ -66,4 +57,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 50，观测区间 20 - 50，10 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，10 个样本
+- 采样算法 最常用 res_multistep，10 个样本，一致性 90%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.85 - 1，10 个样本，取值集中（一致性 95%）

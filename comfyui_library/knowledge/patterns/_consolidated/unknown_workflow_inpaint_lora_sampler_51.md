@@ -3,61 +3,58 @@ name: unknown_workflow_inpaint_lora_sampler_51
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8955
-common_nodes: [ApplyPulidFlux, CLIPTextEncode, CLIPVisionLoader, CropFace, DifferentialDiffusion, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, ImageCrop+, InpaintModelConditioning, InspyrenetRembg, KSampler, LayerUtility: CropByMask V2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PulidFluxModelLoader, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
+coverage: 0.7665
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, GetImageSize+, GetNode, GrowMask, Image Blank, Image Comparer (rgthree), ImageCompositeMasked, ImageConcanate, ImageCrop, ImageResizeKJ, ImageToMask, InpaintModelConditioning, KSampler, LayerMask: SegformerB2ClothesUltra, LoadImage, LoraLoaderModelOnly, MaskPreview+, MaskToImage, MathExpression|pysssss, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux+Rudex万物迁移——完美解决人设固定：A图+B图_1915275990954872833.json, 图片生成/图生图/Q-人像迁移_1955974460753018882.json]
+members: [图片生成/图生图/Flux 一键换装_1899834764143255554.json, 图片生成/图生图/最新模特换装工作流【FLUX-Catvton】_1914603370890625025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_51
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux+Rudex万物迁移——完美解决人设固定：A图+B图_1915275990954872833.json、图片生成/图生图/Q-人像迁移_1955974460753018882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux 一键换装_1899834764143255554.json、图片生成/图生图/最新模特换装工作流【FLUX-Catvton】_1914603370890625025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyPulidFlux`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CropFace`
-- `DifferentialDiffusion`
 - `DualCLIPLoader`
-- `Florence2ModelLoader`
-- `Florence2Run`
 - `FluxGuidance`
-- `ImageCrop+`
+- `GetImageSize+`
+- `GetNode`
+- `GrowMask`
+- `Image Blank`
+- `Image Comparer (rgthree)`
+- `ImageCompositeMasked`
+- `ImageConcanate`
+- `ImageCrop`
+- `ImageResizeKJ`
+- `ImageToMask`
 - `InpaintModelConditioning`
-- `InspyrenetRembg`
 - `KSampler`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: SegformerB2ClothesUltra`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MaskPreview+`
+- `MaskToImage`
+- `MathExpression|pysssss`
 - `PreviewImage`
-- `PulidFluxModelLoader`
-- `ReduxAdvanced`
 - `SaveImage`
-- `StyleModelLoader`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `EcomIDEvaClipLoader` —— 1/2 个有
-- `InstantIDFaceAnalysis` —— 1/2 个有
-- `MaskPreview+` —— 1/2 个有
-- `PulidFluxEvaClipLoader` —— 1/2 个有
-- `PulidFluxInsightFaceLoader` —— 1/2 个有
-- `ttN concat` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

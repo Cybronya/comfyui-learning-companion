@@ -2,59 +2,66 @@
 name: text_to_image_sampler_clip_unet_181
 type: Text To Image
 frequency: 3
-level: moderate
-coverage: 0.888
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.855
+common_nodes: [CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/QWEN-IMAGE 海报生成_1957100875913289730.json, 图片生成/文生图/QWEN文生图【LLM辅助】_1952896951139430401.json, 图片生成/文生图/xingtong_base_2037099688356220930.json]
+members: [图片生成/图生图/kontxet双图潜空间编辑-dev_1965735074647994369.json, 图片生成/图生图/传图1键去水印_1938807262284861442.json, 图片生成/图生图/好用的kontxet多图参考全家桶-dev开源版_1938867994271666178.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_181
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/QWEN-IMAGE 海报生成_1957100875913289730.json、图片生成/文生图/QWEN文生图【LLM辅助】_1952896951139430401.json、图片生成/文生图/xingtong_base_2037099688356220930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/kontxet双图潜空间编辑-dev_1965735074647994369.json、图片生成/图生图/传图1键去水印_1938807262284861442.json、图片生成/图生图/好用的kontxet多图参考全家桶-dev开源版_1938867994271666178.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
-- `ModelSamplingAuraFlow`
+- `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
-- `Text Multiline`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `ClipLoaderGGUF` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `StringReplace` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
+- `Get resolution [Crystools]` —— 1/3 个有
+- `GetImageSize+` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1328 | 3 | 76% |
-| 高度 | 1328 | 1280 - 1920 | 3 | 81% |
-| 采样步数 | 20 | 10 - 50 | 3 | 36% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 3 | 53% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 904 | 512 - 1024 | 3 | 73% |
+| 高度 | 1024 | 512 - 1200 | 3 | 68% |
 
 ## 常见问题
 
@@ -62,10 +69,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1328，3 个样本
-- 高度 中位数 1328，观测区间 1280 - 1920，3 个样本，取值集中（一致性 81%）
-- 采样步数 中位数 20，观测区间 10 - 50，3 个样本，取值分散，一致性仅 36%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 904，观测区间 512 - 1024，3 个样本
+- 高度 中位数 1024，观测区间 512 - 1200，3 个样本

@@ -3,36 +3,36 @@ name: unknown_workflow_generic_146
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, T8_BreezeTTS_DesignRequest, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.869
+common_nodes: [RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Breeze TTS 2 声音设计02_2105860935498944514.json, 音频生成/音频生成/Breeze TTS 2 声音设计2608_2095529337591255041.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2095397290671427585.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2096210340668334081.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2098773117446475778.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2105767525727428610.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2108106530464821250.json, 音频生成/音频生成/Breeze+TTS+2+声音设计_2095446951604080641.json, 音频生成/音频生成/MUMU 短剧语音设计_2095538490858631169.json, 音频生成/音频生成/TTS Breeze 2 高质量声音设计｜世界第一开源_2096091514106630145.json, 音频生成/音频生成/breeze-tts声音设计_2095440166545608705.json, 音频生成/音频生成/声音生成_2103712405774753794.json]
+members: [图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json, 图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json, 图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json, 图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json, 图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json, 图片生成/图生图/Flux Kontext 明星手持产品｜代言海报_1932978465115344897.json, 图片生成/图生图/Flux Kontext 最简单人物换装_1930801597612228610.json, 图片生成/图生图/Flux Kontext 模特动作摆拍｜模特展示_1932619284621238273.json, 图片生成/图生图/Flux Kontext 模特手持产品图_1934783763614212097.json, 图片生成/图生图/kontext 图像编辑丨超便宜接口_1933925778687971330.json, 图片生成/图生图/kontext 对接扣子 _ 图像编辑丨超便宜接口_1933961441760468994.json, 图片生成/图生图/扣子接入Kontext图片编辑_1928687733341065217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_146
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/Breeze TTS 2 声音设计02_2105860935498944514.json、音频生成/音频生成/Breeze TTS 2 声音设计2608_2095529337591255041.json、音频生成/音频生成/Breeze TTS 2 声音设计_2095397290671427585.json、音频生成/音频生成/Breeze TTS 2 声音设计_2096210340668334081.json、音频生成/音频生成/Breeze TTS 2 声音设计_2098773117446475778.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json、图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json、图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json、图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json、图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `CR Prompt Text`
-- `T8_BreezeTTS_DesignRequest`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 11/12 个有
-- `PreviewAudio` —— 6/12 个有
-- `SaveAudioAdvanced` —— 1/12 个有
+- `LoadImage` —— 10/12 个有
+- `DeepTranslatorTextNode` —— 8/12 个有
+- `PreviewImage` —— 4/12 个有
+- `ReroutePrimitive|pysssss` —— 3/12 个有
+- `easy showAnything` —— 3/12 个有
+- `LoadImageFromUrl` —— 2/12 个有
 
 ## 典型参数
 

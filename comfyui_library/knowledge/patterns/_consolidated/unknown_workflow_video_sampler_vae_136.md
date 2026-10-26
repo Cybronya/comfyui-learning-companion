@@ -3,56 +3,58 @@ name: unknown_workflow_video_sampler_vae_136
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.82125
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.842
+common_nodes: [CLIPVisionLoader, CR Text, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，不带加速_2061018684998635522.json, 视频生成/图生视频/万象ATI视频轨迹控制_1931322403022897154.json, 视频生成/图生视频/新版ATI轨迹指引图生视频超级加速版V1_1941169318455570433.json, 视频生成/文生视频/ComfyUI Wan 2.1 可实现任意轨迹指令运动控制 AI 视频生成工作流_1928353858429566977.json]
+members: [视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json, 视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json, 视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json, 视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_136
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，不带加速_2061018684998635522.json、视频生成/图生视频/万象ATI视频轨迹控制_1931322403022897154.json、视频生成/图生视频/新版ATI轨迹指引图生视频超级加速版V1_1941169318455570433.json、视频生成/文生视频/ComfyUI Wan 2.1 可实现任意轨迹指令运动控制 AI 视频生成工作流_1928353858429566977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json、视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json、视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json、视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `ImageResizeKJv2`
+- `CR Text`
+- `ImpactInt`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SplineEditor` —— 3/4 个有
-- `WanVideoATITracks` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `AppendStringsToList` —— 2/4 个有
-- `WanVideoATITracksVisualize` —— 2/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `CLIPTextEncode` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `StringConstantMultiline` —— 1/4 个有
-- `WanVideoTextEmbedBridge` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `Qwen3VL_Advanced` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `LayerColor: ColorAdapter` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 1/4 个有
+- `WanVideoMagCache` —— 1/4 个有
+- `WanVideoTextEncode` —— 1/4 个有
+- `WanVideoVRAMManagement` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

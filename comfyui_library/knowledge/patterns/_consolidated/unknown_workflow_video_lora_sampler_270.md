@@ -1,65 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_270
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.9765
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.946556
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2图生视频kj版_1950852674944180226.json, 视频生成/图生视频/wan2.2图生视频kj版_1978672767467982850.json, 视频生成/图生视频/wan2.2首尾帧(KJ版)_1951645924265283586.json, 视频生成/图生视频/一键花瓣消散_1967820040437399554.json, 视频生成/图生视频/动态表情包_2005731300571049986.json, 视频生成/图生视频/变形金刚工作流_1959096828304240641.json, 视频生成/图生视频/图生视频（Wan2.2-V1）高质量加速版_1950432359721123842.json, 视频生成/图生视频/灵动传媒短视频生成（最新版）_1954808332802506754.json]
+members: [视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json, 视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json, 视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json, 视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998839138951168.json, 视频生成/文生视频/SCAIL-2 Single-Reference Long Video Edit_2072998856218157056.json, 视频生成/文生视频/SCAIL-2 Triple Character Motion Drive_2072998837192794112.json, 视频生成/文生视频/SCAIL-2 双人生物长视频驱动_2064973862177173505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_270
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频kj版_1950852674944180226.json、视频生成/图生视频/wan2.2图生视频kj版_1978672767467982850.json、视频生成/图生视频/wan2.2首尾帧(KJ版)_1951645924265283586.json、视频生成/图生视频/一键花瓣消散_1967820040437399554.json、视频生成/图生视频/动态表情包_2005731300571049986.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json、视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json、视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json、视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json、视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 9 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanSCAILToVideo`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy int`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 7/8 个有
-- `CreateCFGScheduleFloatList` —— 6/8 个有
-- `INTConstant` —— 6/8 个有
-- `JWInteger` —— 6/8 个有
-- `GetImageSizeAndCount` —— 5/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `ImageFromBatch+` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `ImageResizeKJv2` —— 2/8 个有
-- `LayerUtility: PurgeVRAM` —— 2/8 个有
-- `RIFE VFI` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `InversionDemoLazyIndexSwitch` —— 1/8 个有
-- `LayerUtility: TextJoinV2` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `RH_LLMAPI_NODE` —— 1/8 个有
-- `Random Number` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `EmptyImage` —— 4/9 个有
+- `ImageCompositeMasked` —— 4/9 个有
+- `SAM3_TrackToMask` —— 4/9 个有
+- `CLIPLoaderGGUF` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
 
 ## 典型参数
 

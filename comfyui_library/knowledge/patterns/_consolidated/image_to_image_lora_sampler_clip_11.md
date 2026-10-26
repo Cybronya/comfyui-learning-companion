@@ -1,38 +1,35 @@
 ---
 name: image_to_image_lora_sampler_clip_11
 type: Image To Image
-frequency: 13
+frequency: 12
 level: strong
-coverage: 0.946231
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8715
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/PS专用溶图流_2080460737826344962.json, 图片生成/图生图/PS专用溶图流_2081930794498617346.json, 图片生成/图生图/PS专用溶图流_2081982051393302529.json, 图片生成/图生图/PS专用溶图流_2082013615124733954.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json, 图片生成/图生图/主图万物电商产品光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2072999532249567233.json, 图片生成/图生图/亚马逊光影融合1.0_2037456527702888450.json, 图片生成/图生图/溶图+打光_2098231532556210177.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096170592125939714.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096405298079686657.json, 图片生成/图生图/电商产品打光换背景光影溶图细节迁移保持细节尺寸不变_2073002986959364097.json, 图片生成/图生图/通道ID图2.0_2060658643808382978.json, 图片生成/文生图/产品融图打光（产品标贴一致性）_2037437084016844802.json]
+members: [图片生成/图生图/Character Head and Face Swaps人物换头换脸_2100035107896774657.json, 图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2100209388236660737.json, 图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2101877910243209218.json, 图片生成/图生图/Face Swap Pro换脸pro+2.0完美换脸+写实人物一致性_2097490583530070017.json, 图片生成/图生图/Face Swaps klein-9B 双图编辑 换脸换装_2100037705118867457.json, 图片生成/图生图/Face Swap完美换脸+写实人物一致性_2099675578382245890.json, 图片生成/图生图/Face_Swaps_klein-9B_双图编辑_换脸换装_2100423150663196674.json, 图片生成/图生图/试衣换装Flux Klein 9b Edit的虚拟试穿LoRA，超精确_2026645785999319041.json, 图片生成/图生图/试衣换装flux-klein-9b-virtual-tryon_2026568259612446721.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora +3种模式值之一 -- 2_2092660020956721153.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora_+3种模式值之一_--_2_2093496064706965505.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora_+3种模式值之一_--_2_2093534787322605569.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_11
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/PS专用溶图流_2080460737826344962.json、图片生成/图生图/PS专用溶图流_2081930794498617346.json、图片生成/图生图/PS专用溶图流_2081982051393302529.json、图片生成/图生图/PS专用溶图流_2082013615124733954.json、图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Character Head and Face Swaps人物换头换脸_2100035107896774657.json、图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2100209388236660737.json、图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2101877910243209218.json、图片生成/图生图/Face Swap Pro换脸pro+2.0完美换脸+写实人物一致性_2097490583530070017.json、图片生成/图生图/Face Swaps klein-9B 双图编辑 换脸换装_2100037705118867457.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ImageMaskScaleAs`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ReferenceLatent`
@@ -43,39 +40,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: HLFrequencyDetailRestore` —— 12/13 个有
-- `ImpactInt` —— 7/13 个有
-- `FastCanvas` —— 2/13 个有
-- `FastCanvasTool` —— 2/13 个有
-- `ImageCropper` —— 2/13 个有
-- `easy imageRemBg` —— 2/13 个有
-- `Int` —— 1/13 个有
-- `LayerStyle: ColorOverlay V2` —— 1/13 个有
-- `MaskPreview+` —— 1/13 个有
-- `Preview from image [Crystools]` —— 1/13 个有
-- `Switch any [Crystools]` —— 1/13 个有
+- `RH_Nano_Banana2_Image2Image` —— 7/12 个有
+- `CR Text` —— 5/12 个有
+- `ImageConcatMulti` —— 5/12 个有
+- `CR Prompt Text` —— 3/12 个有
+- `EmptyImage` —— 3/12 个有
+- `PreviewImage` —— 3/12 个有
+- `RH_SeedreamV5ProImageToImage` —— 3/12 个有
+- `MuyeTextEditOutput` —— 2/12 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 13 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 4 | 4 - 5 | 12 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 高发问题（13/13 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 5，12 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（20/12 个样本）：Steps较低可能导致细节不足

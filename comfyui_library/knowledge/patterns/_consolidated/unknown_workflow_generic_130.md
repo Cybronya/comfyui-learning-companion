@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_130
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.780167
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.794385
+common_nodes: [LoadImage, PreviewAny, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/图生图/3D破框Instagram艺术大片（全能图像编辑）_2014947330235043842.json, 图片生成/图生图/4K Ultra HD Zoom4k超清放大_2097853452608167937.json, 图片生成/图生图/4k超清_2075463248249446401.json, 图片生成/图生图/4k高清放大 _ 全能图片模型 Gemini-3.1_2040787140287668226.json, 图片生成/图生图/AI人像皮肤纹理增强_2033455344285913089.json, 图片生成/图生图/AI修图_2052001758678921218.json, 图片生成/图生图/AI摄影，双人、多人合照换背景（香 Pro版）_2017132292409401346.json, 图片生成/图生图/一键打造时尚杂志风范肖像写真（全能图像编辑）_2014938043093884929.json, 图片生成/图生图/万物吐槽-看不惯任何东西，就怼！_1998645677880147969.json, 图片生成/图生图/万物融图 光影融合 溶图 电商产品_人物模特 2 & Pro 全能图片编辑2.0_2039507134903230466.json, 图片生成/图生图/万能电商主图-4连出-通用所有类目_2043885839838617601.json, 图片生成/图生图/发丝光 _ 逆光_2059560532918755330.json]
+members: [图片生成/反推提示词/Qwen3.5反推工作流_2029442960357593089.json, 图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2060646833801744386.json, 图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2061424925910585345.json, 图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2081263553671159809.json, 图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2102721234625720321.json, 图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2102722770957328386.json, 图片生成/反推提示词/qwen3.5 反推提示词_1893604884359364610.json, 图片生成/反推提示词/qwen3.5 反推提示词_2093708902130077698.json, 图片生成/反推提示词/qwen3.8-27B反推图片提示词_2103825737462673409.json, 图片生成/反推提示词/qwen3.8-27B反推图片提示词_2104868396172140545.json, 图片生成/反推提示词/全能提示词反推-Qwen3-VL模型NS-FW-base版本_2018202012059443201.json, 图片生成/图生图/qwen3.8-27B反推图片提示词_2108738295046959106.json, 图片生成/图生图/qwen3.8-27B反推图片提示词_2110185379461689345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_130
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/3D破框Instagram艺术大片（全能图像编辑）_2014947330235043842.json、图片生成/图生图/4K Ultra HD Zoom4k超清放大_2097853452608167937.json、图片生成/图生图/4k超清_2075463248249446401.json、图片生成/图生图/4k高清放大 _ 全能图片模型 Gemini-3.1_2040787140287668226.json、图片生成/图生图/AI人像皮肤纹理增强_2033455344285913089.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/Qwen3.5反推工作流_2029442960357593089.json、图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2060646833801744386.json、图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2061424925910585345.json、图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2081263553671159809.json、图片生成/反推提示词/qwen3.5 千问3.5 图片反推生成提示词文本工作流_2102721234625720321.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `PreviewAny`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 11/12 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 8/12 个有
-- `RH_Nano_Banana2_Image2Image` —— 7/12 个有
-- `MuyeTextEditOutput` —— 2/12 个有
-- `TextInputNode` —— 2/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `SetNode` —— 1/12 个有
+- `SaveImage` —— 4/13 个有
+- `JjkText` —— 2/13 个有
+- `ShowAnything|Mie` —— 1/13 个有
 
 ## 典型参数
 

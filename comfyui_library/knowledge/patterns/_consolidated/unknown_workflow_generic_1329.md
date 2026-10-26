@@ -3,36 +3,38 @@ name: unknown_workflow_generic_1329
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4915
-common_nodes: [Image Comparer (rgthree), LoadImage, MuyeTextEditOutput, PreviewImage, SaveImage]
+coverage: 0.889
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json, 图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json]
+members: [图片生成/图生图/-全能图片V12pro全面升级！多图闪电编辑，效率革命！图像编辑、服装上身、迁移、人物一致性_1966392130149232641.json, 图片生成/图生图/bnnn_2004179169615462401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1329
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json、图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/-全能图片V12pro全面升级！多图闪电编辑，效率革命！图像编辑、服装上身、迁移、人物一致性_1966392130149232641.json、图片生成/图生图/bnnn_2004179169615462401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `PreviewImage`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
-- `workflow>核心节点` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

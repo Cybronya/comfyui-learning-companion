@@ -3,65 +3,56 @@ name: unknown_workflow_video_sampler_clip_274
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.887
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptyHunyuanLatentVideo, Florence2ModelLoader, Florence2Run, FluxGuidance, GetImageSizeAndCount, HunyuanImageToVideo, ImageBatch, ImageFromBatch, KSamplerSelect, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, String, Text Concatenate, Text Find and Replace, TextEncodeHunyuanVideo_ImageToVideo, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.794
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PreviewImage, ProcessString, Qwen3_VQA, RIFE VFI, ShowText|pysssss, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905235717641916417.json, 视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905625750312259585.json]
+members: [视频生成/图生视频/最新二次元动漫图生视频DaSiWa8.1单图_2008091614845079553.json, 视频生成/图生视频/最新二次元动漫图生视频DaSiWa8.1单图_2072135152477761537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_274
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905235717641916417.json、视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905625750312259585.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/最新二次元动漫图生视频DaSiWa8.1单图_2008091614845079553.json、视频生成/图生视频/最新二次元动漫图生视频DaSiWa8.1单图_2072135152477761537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `EmptyHunyuanLatentVideo`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `GetImageSizeAndCount`
-- `HunyuanImageToVideo`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `MathExpression|pysssss`
+- `INTConstant`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ProcessString`
+- `Qwen3_VQA`
+- `RIFE VFI`
 - `ShowText|pysssss`
-- `String`
-- `Text Concatenate`
-- `Text Find and Replace`
-- `TextEncodeHunyuanVideo_ImageToVideo`
-- `TextInput_`
+- `SomethingToString`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveAnimatedWEBP` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

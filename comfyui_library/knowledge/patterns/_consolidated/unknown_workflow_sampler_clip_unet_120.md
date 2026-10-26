@@ -1,61 +1,52 @@
 ---
 name: unknown_workflow_sampler_clip_unet_120
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.908222
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9938
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2012409501634269185.json, 图片生成/图生图/flux-2-klein-9B 图像编辑_2013804472748744705.json, 图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json, 图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json, 图片生成/图生图/flux2多图编辑xingye（最多支持4图）_2013234040454782978.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2097502244789899265.json, 图片生成/图生图/【🛫书墨】FLUX2-klein-9b-一、二、三、四图自由切换工作流_2012025238783004673.json, 图片生成/图生图/白模手绘生成效果图_Flux.2-klein_2062790730405474306.json, 图片生成/图生图/老照片高清修复-FLUX.2-Klein_2014556898728611842.json]
+members: [图片生成/文生图/Flux Klein 9b FP8 文生图 极简工作流_2015298868837093378.json, 图片生成/文生图/Flux.2 Klein 9B_fp16文生图_2066061172897574913.json, 图片生成/文生图/Flux.2 Klein 9B二次元CG动漫_2025780362521088001.json, 图片生成/文生图/Flux.2 Klein 9B无限制文生图_2022518673075871745.json, 图片生成/文生图/Flux.2 Klein 9B满血版文生图_2066862519515435010.json, 图片生成/文生图/Flux.2+Klein+9B无限制文生图_2028848965118070785.json, 图片生成/文生图/Flux.2_Klein_9B文生图_2069068665672265729.json, 图片生成/文生图/Flux2文生图_1995379549791825922.json, 图片生成/文生图/Flux2文生图呀_2068421815818612737.json, 视频生成/文生视频/Flux.2 Klein 9B文生图_2066059765985406977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_120
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2012409501634269185.json、图片生成/图生图/flux-2-klein-9B 图像编辑_2013804472748744705.json、图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json、图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json、图片生成/图生图/flux2多图编辑xingye（最多支持4图）_2013234040454782978.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Flux Klein 9b FP8 文生图 极简工作流_2015298868837093378.json、图片生成/文生图/Flux.2 Klein 9B_fp16文生图_2066061172897574913.json、图片生成/文生图/Flux.2 Klein 9B二次元CG动漫_2025780362521088001.json、图片生成/文生图/Flux.2 Klein 9B无限制文生图_2022518673075871745.json、图片生成/文生图/Flux.2 Klein 9B满血版文生图_2066862519515435010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `ConditioningZeroOut` —— 6/9 个有
-- `Image Comparer (rgthree)` —— 6/9 个有
-- `FluxKontextImageScale` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 5/9 个有
-- `PlaySound|pysssss` —— 4/9 个有
-- `easy int` —— 4/9 个有
-- `CR Image Grid Panel` —— 3/9 个有
-- `Image Batch` —— 3/9 个有
-- `LayerUtility: ImageMaskScaleAs` —— 3/9 个有
-- `Any Switch (rgthree)` —— 2/9 个有
-- `CR SDXL Aspect Ratio` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `DifferentialDiffusion` —— 1/9 个有
+- `FluxGuidance` —— 9/10 个有
+- `CompressImages` —— 7/10 个有
+- `Int Literal` —— 7/10 个有
+- `CFGGuider` —— 1/10 个有
+- `DuckQREncodeNode` —— 1/10 个有
+- `EasyCache` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `ModelPatchTorchSettings` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
+- `WidthHeightPicker` —— 1/10 个有
 
 ## 典型参数
 

@@ -3,42 +3,36 @@ name: unknown_workflow_generic_1436
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.682
-common_nodes: [GetImageSize, ImageBatch, ImageBatchMulti, ImageCrop, ImageFromBatch, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveInt, RH_Nano_Banana2_Image2Image, ResizeAndPadImage, SaveImage, SimpleMath+]
+coverage: 0.786
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, ImageCompositeMasked, ImageGaussianBlur, ImageInvert, ImageToMask, LoadImage, MaskToImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json, 图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json]
+members: [图片生成/图生图/一键AI抠图_2086652389351841793.json, 图片生成/图生图/一键AI抠图_2090265768528269314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1436
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json、图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键AI抠图_2086652389351841793.json、图片生成/图生图/一键AI抠图_2090265768528269314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSize`
-- `ImageBatch`
-- `ImageBatchMulti`
-- `ImageCrop`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `ImageCompositeMasked`
+- `ImageGaussianBlur`
+- `ImageInvert`
+- `ImageToMask`
 - `LoadImage`
+- `MaskToImage`
 - `PreviewImage`
-- `PrimitiveInt`
-- `RH_Nano_Banana2_Image2Image`
-- `ResizeAndPadImage`
 - `SaveImage`
-- `SimpleMath+`
-
-**可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

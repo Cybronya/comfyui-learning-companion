@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1018
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.857
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/RhartVideoV31ProStartEndToVideo_2038487586699747330.json, 视频生成/图生视频/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2050237655522258945.json, 视频生成/图生视频/地表最强超能视频2.0-Fast图生视频-支持真人工作流_2037495235391000577.json]
+members: [图片生成/图生图/全能图片V1 -分镜出片_1964514664849788930.json, 图片生成/图生图/全能图片V1 一键生成美式证件照_1967506570152173570.json, 图片生成/图生图/全能图片V1合集_1960632354417049602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1018
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RhartVideoV31ProStartEndToVideo_2038487586699747330.json、视频生成/图生视频/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2050237655522258945.json、视频生成/图生视频/地表最强超能视频2.0-Fast图生视频-支持真人工作流_2037495235391000577.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1 -分镜出片_1964514664849788930.json、图片生成/图生图/全能图片V1 一键生成美式证件照_1967506570152173570.json、图片生成/图生图/全能图片V1合集_1960632354417049602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
 - `CR Prompt Text` —— 2/3 个有
-- `RH_RhartVideoV31ProStartEndToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 1/3 个有
+- `ImageStitch` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

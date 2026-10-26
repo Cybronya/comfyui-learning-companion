@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_263
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.75925
-common_nodes: [JjkText, LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
+coverage: 0.880889
+common_nodes: [CR Prompt Text, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Ai主图生成电商产品主图一键设计精修放大美化主图_2074298164005400578.json, 图片生成/图生图/nona全能图片一键生成电商主图_2088104979881086977.json, 图片生成/图生图/万物电商产品主图一键设计0抽卡_2059481124673511426.json, 图片生成/图生图/万物电商产品主图一键设计_2026174608528908289.json, 图片生成/图生图/万物电商产品主图一键设计_2053039123245608961.json, 图片生成/图生图/万物电商产品主图一键设计——全能图片V2_2067453219390971906.json, 图片生成/图生图/剧情九宫格分镜-V2_2086390826200031233.json, 图片生成/图生图/电商主图生成图生图优化精修主图_2074835425008635906.json]
+members: [图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json, "图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json", "图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json", 图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json, 图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json, 图片生成/文生图/全能图片G2文生图（RH版）_2056205569383518209.json, 图片生成/文生图/场景、道具图_2102679130457333761.json, 图片生成/文生图/自用版全能图片V2-文生图-低价渠道版_2064161571298955265.json, 图片生成/文生图/超好用全能图片G2文生图片电商海报产品文字说明放大好用_2073682298935013377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_263
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Ai主图生成电商产品主图一键设计精修放大美化主图_2074298164005400578.json、图片生成/图生图/nona全能图片一键生成电商主图_2088104979881086977.json、图片生成/图生图/万物电商产品主图一键设计0抽卡_2059481124673511426.json、图片生成/图生图/万物电商产品主图一键设计_2026174608528908289.json、图片生成/图生图/万物电商产品主图一键设计_2053039123245608961.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json、图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json、图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json、图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json、图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_RhartImageNG31FlashImageToImage`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 5/8 个有
-- `TT_img_enc` —— 1/8 个有
+- `ShowAnything|Mie` —— 6/9 个有
+- `PreviewImage` —— 1/9 个有
 
 ## 典型参数
 

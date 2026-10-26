@@ -1,72 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_706
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4665
-common_nodes: [CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, DrawViTPose, FlashVSRNode, GIMMVFI_interpolate, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ImageScale, InstructPixToPixConditioning, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/迁移_2095869972676440066.json, 视频生成/图生视频/Anim换脸_2046577984135503874.json]
+members: [视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json, 视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json, 视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_706
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/迁移_2095869972676440066.json、视频生成/图生视频/Anim换脸_2046577984135503874.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json、视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json、视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：47%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
-- `DrawViTPose`
-- `FlashVSRNode`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageScale`
+- `InstructPixToPixConditioning`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SamplerCustom`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `Mask Invert` —— 1/2 个有
-- `SAM3_TrackToMask` —— 1/2 个有
-- `SAM3_VideoTrack` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `DownloadAndLoadFlorence2Model` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Primitive string [Crystools]` —— 1/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
+- `Text Concatenate (JPS)` —— 1/3 个有
 
 ## 典型参数
 
@@ -78,4 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

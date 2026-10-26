@@ -1,74 +1,88 @@
 ---
 name: unknown_workflow_lora_sampler_unet_25
 type: Unknown Workflow
-frequency: 16
-level: moderate
-coverage: 0.902563
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxH3TurboLoRA, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 18
+level: strong
+coverage: 0.907222
+common_nodes: [CFGNorm, CLIPLoader, CR Text, CR Text Replace, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, ShowText|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI视频模型转图像编辑_2089665130316525570.json, 图片生成/图生图/Minimax H3 图像编辑工作流（支持多图、带放大）_2091499168857681922.json, 图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2096876812314959874.json, 图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2097171139620589569.json, 图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093245449938489345.json, 图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093517263633731585.json, 图片生成/文生图/Minimax H3 文生图工作流（带放大、提示词模版）_2090801005020672001.json, 视频生成/图生视频/Minima H3 多图参考生视频工作流（极速15秒1080P）_2090769195763068930.json, 视频生成/图生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2096442093140008962.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2098632894154633217.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2102648250376482817.json, 视频生成/图生视频/Minimax H3 单图生视频工作流加速版_2106591527647662081.json, 视频生成/图生视频/Minimax H3 单图生视频工作流（极速15秒1080P）_2090716594468118530.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2090749193135681538.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2101259585813311489.json, 视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json]
+members: [图片生成/图生图/FireRed-Image-Edit-1.1-小红书一键套图-模特套图-V3_2045152020759318530.json, 图片生成/图生图/FireRed-Image-Edit-1.1-小红书一键套图-模特套图_2042238014172172289.json, 图片生成/图生图/FireRed-Image-edit1.1电商模特出图_2031377996577251330.json, 图片生成/图生图/Qwen 多分镜多角度生成图片_2032477079954006017.json, 图片生成/图生图/一秒写真-人物多场景_2052908771151753218.json, 图片生成/图生图/一键买家秀_朋友圈_微博图，一张场景图AI多个姿态_2032867458738036737.json, 图片生成/图生图/一键套图  FireRed-Image-Edit 小红书专用  网红感 图生图_2041825511285985282.json, 图片生成/图生图/一键套图  FireRed-Image-Edit 小红书专用  网红感 图生图_2042526164039770114.json, 图片生成/图生图/一键套图  图生图 FireRed-Image-Edit 小红书专用  网红感_2042417087305490434.json, 图片生成/图生图/一键套图  图生图 FireRed-Image-Edit 小红书专用  网红感_2042825994603601922.json, 图片生成/图生图/一键套图  图生图 FireRed-Image-Edit 小红书专用  网红感_2042917048216457217.json, 图片生成/图生图/一键套图 9张不同模特姿势 图生图_2058599468710326273.json, 图片生成/图生图/一键套图 9张不同模特姿势 图生图_2059514134651297793.json, 图片生成/图生图/一键套图 9张不同模特姿势 图生图_2059913694108278786.json, 图片生成/图生图/一键姿势生成器   角色姿势  人物动作_2047595020592615425.json, 图片生成/图生图/一键摄影照（自动提示词）_2059009844501368833.json, 图片生成/图生图/一键生成专属写真照人物多场景写真生成器_2052620280123670530.json, 图片生成/图生图/一键生成专属写真照人物多场景写真生成器_2053355060582723585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_25
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/AI视频模型转图像编辑_2089665130316525570.json、图片生成/图生图/Minimax H3 图像编辑工作流（支持多图、带放大）_2091499168857681922.json、图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2096876812314959874.json、图片生成/图生图/Minimax_H3_图像编辑写实工作流支持多图、带放大_2097171139620589569.json、图片生成/图生图/Minimax_H3_图像编辑工作流支持多图、带放大_2093245449938489345.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-Edit-1.1-小红书一键套图-模特套图-V3_2045152020759318530.json、图片生成/图生图/FireRed-Image-Edit-1.1-小红书一键套图-模特套图_2042238014172172289.json、图片生成/图生图/FireRed-Image-edit1.1电商模特出图_2031377996577251330.json、图片生成/图生图/Qwen 多分镜多角度生成图片_2032477079954006017.json、图片生成/图生图/一秒写真-人物多场景_2052908771151753218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 18 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `KSamplerSelect`
+- `CR Text`
+- `CR Text Replace`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3TurboLoRA`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `ProcessString`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 15/16 个有
-- `SpectrumApplyMiniMaxH3` —— 15/16 个有
-- `CreateVideo` —— 10/16 个有
-- `SaveVideo` —— 9/16 个有
-- `GetImagesFromBatchIndexed` —— 7/16 个有
-- `ImageUpscaleWithModel` —— 7/16 个有
-- `PreviewImage` —— 7/16 个有
-- `SaveImage` —— 7/16 个有
-- `UpscaleModelLoader` —— 7/16 个有
-- `PreviewAudio` —— 6/16 个有
-- `Image Comparer (rgthree)` —— 5/16 个有
-- `ExtendIntermediateSigmas` —— 4/16 个有
-- `LoadVideo` —— 3/16 个有
-- `LoadAudio` —— 2/16 个有
-- `PDGeminiAPIKey` —— 1/16 个有
-- `PreviewTextNode` —— 1/16 个有
-- `PrimitiveFloat` —— 1/16 个有
-- `PrimitiveInt` —— 1/16 个有
-- `PrimitiveStringMultiline` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 17/18 个有
+- `GetImageSize` —— 15/18 个有
+- `JDCN_StringToList` —— 15/18 个有
+- `PreviewImage` —— 11/18 个有
+- `AutoCropFaces` —— 3/18 个有
+- `PrimitiveInt` —— 3/18 个有
+- `easy promptLine` —— 3/18 个有
+- `CustomAddLabel` —— 2/18 个有
+- `Int` —— 2/18 个有
+- `GetNode` —— 1/18 个有
+- `JWInteger` —— 1/18 个有
+- `MemoryCleaner` —— 1/18 个有
+- `MultiTextConcatenate` —— 1/18 个有
+- `RH_Utils` —— 1/18 个有
+- `SetNode` —— 1/18 个有
+- `Text` —— 1/18 个有
+- `easy textIndexSwitch` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 8 | 18 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 78% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 8，18 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 78%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（18/18 个样本）：Steps较低可能导致细节不足

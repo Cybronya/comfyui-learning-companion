@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_651
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933333
-common_nodes: [CLIPVisionLoader, FloatConstant, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewAnimation, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.928
+common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json, 视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json, 视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json]
+members: [数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json, 视频生成/图生视频/Wan2.1数字人_1951180458820313090.json, 视频生成/图生视频/数字人加运镜_1951224914336526338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_651
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json、视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json、视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json、视频生成/图生视频/Wan2.1数字人_1951180458820313090.json、视频生成/图生视频/数字人加运镜_1951224914336526338.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,59 +23,48 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `FloatConstant`
-- `INTConstant`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewAnimation`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadNLFModel` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
 - `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `Display Int (rgthree)` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `ImageBatchExtendWithOverlap` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `GetNode` —— 1/3 个有
 - `ImageConcatMulti` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `ImpactCompare` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `LoadNLFModel` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,47 +3,40 @@ name: unknown_workflow_upscale_vae_62
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5605
-common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, MuyeTextEditOutput, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.739
+common_nodes: [CR Prompt Text, Comfly_api_set, INTConstant, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G--image-2.0 RH平台廉价版api调用  0.1_次_2047868011910012930.json, 图片生成/文生图/全能图片G--image-2.0 官方稳定版 api 调用_2048948080573161474.json]
+members: [图片生成/文生图/13种比例gxx-image-2（5图）-支持4K（贞贞工坊分组：官方优质和Default）_2048029500130201602.json, 图片生成/文生图/顶级！全能图片G2-文生图-图生图+放大-贞贞的AI工坊_2046504582557212674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_62
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G--image-2.0 RH平台廉价版api调用  0.1_次_2047868011910012930.json、图片生成/文生图/全能图片G--image-2.0 官方稳定版 api 调用_2048948080573161474.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/13种比例gxx-image-2（5图）-支持4K（贞贞工坊分组：官方优质和Default）_2048029500130201602.json、图片生成/文生图/顶级！全能图片G2-文生图-图生图+放大-贞贞的AI工坊_2046504582557212674.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `INTConstant`
 - `LoadImage`
-- `MuyeTextEditOutput`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `Text`
-- `easy int`
 - `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `Comfly_gpt_image_2_S2A` —— 1/2 个有
+- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
+- `TextInputNode` —— 1/2 个有
 
 ## 典型参数
 

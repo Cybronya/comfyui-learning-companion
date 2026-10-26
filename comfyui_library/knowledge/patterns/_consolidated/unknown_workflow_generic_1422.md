@@ -3,32 +3,39 @@ name: unknown_workflow_generic_1422
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [CR Text, Int, LoadImage, RHHiddenNodes, SaveImage, 取色器_孤海]
+coverage: 0.976
+common_nodes: [CR Text, DapaoImageLayoutNode, DapaoRandomPromptLineExtractNode, DapaoSafeSaveImage, ImageListToBatch+, ImageStitch, ImpactInt, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json, 图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json]
+members: [图片生成/图生图/ye服装换装【0.1】_2045009545092665345.json, 图片生成/图生图/超微距服装带细节换装【API调用每次1毛】_2011332640250531841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1422
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json、图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ye服装换装【0.1】_2045009545092665345.json、图片生成/图生图/超微距服装带细节换装【API调用每次1毛】_2011332640250531841.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Text`
-- `Int`
+- `DapaoImageLayoutNode`
+- `DapaoRandomPromptLineExtractNode`
+- `DapaoSafeSaveImage`
+- `ImageListToBatch+`
+- `ImageStitch`
+- `ImpactInt`
 - `LoadImage`
-- `RHHiddenNodes`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `取色器_孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

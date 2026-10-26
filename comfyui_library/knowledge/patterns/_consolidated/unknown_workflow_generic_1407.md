@@ -3,32 +3,38 @@ name: unknown_workflow_generic_1407
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, ReActorFaceSwap, SaveImage]
+coverage: 0.889
+common_nodes: [Image Comparer (rgthree), ImageBatch, ImageResize+, ImageScaleToTotalPixels, ImageStitch, LoadImage, MathExpression|pysssss, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json, 图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json]
+members: [图片生成/图生图/hooli__全能图片V1_su截图转效果图_v1_1961665603679490049.json, 图片生成/图生图/yaoshuai__全能图片V1_su截图转效果图_v1_1982620769815543810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1407
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json、图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/hooli__全能图片V1_su截图转效果图_v1_1961665603679490049.json、图片生成/图生图/yaoshuai__全能图片V1_su截图转效果图_v1_1982620769815543810.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageBatch`
+- `ImageResize+`
+- `ImageScaleToTotalPixels`
+- `ImageStitch`
 - `LoadImage`
-- `ReActorFaceSwap`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ReActorRestoreFace` —— 1/2 个有
+- `Text Multiline`
+- `easy imageSize`
 
 ## 典型参数
 

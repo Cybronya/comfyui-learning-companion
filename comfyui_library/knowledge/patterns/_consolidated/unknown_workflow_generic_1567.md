@@ -3,36 +3,37 @@ name: unknown_workflow_generic_1567
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.808
-common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, RH_Kling25_Image2Video, RH_Sora2_I2V_Realistic, SaveVideo]
+coverage: 0.796
+common_nodes: [AspectRatioSelect, JjkText, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, String]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S梭罗真人版图生视频（RH真人版）_1988184484992475138.json, 视频生成/图生视频/图生视频 全能视频S2梭罗真人版图生视频 高清视频放大_2028293831325655042.json]
+members: [图片生成/图生图/美甲迁移4个角度机位批量生成_2035690133164396546.json, 图片生成/文生图/每日心灵鸡汤图片批量生成_2035199595067740162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1567
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S梭罗真人版图生视频（RH真人版）_1988184484992475138.json、视频生成/图生视频/图生视频 全能视频S2梭罗真人版图生视频 高清视频放大_2028293831325655042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/美甲迁移4个角度机位批量生成_2035690133164396546.json、图片生成/文生图/每日心灵鸡汤图片批量生成_2035199595067740162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `AspectRatioSelect`
+- `JjkText`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_Kling25_Image2Video`
-- `RH_Sora2_I2V_Realistic`
-- `SaveVideo`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `String`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `TextPreview` —— 1/2 个有
 
 ## 典型参数
 

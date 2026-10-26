@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_274
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.786375
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
+coverage: 0.914778
+common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/PRO镜头-2_2011543377090715649.json, 图片生成/图生图/全能图片V1 Pro 香蕉2角色创造、多视角、人物替换、动作迁移_1999454687160041474.json, 图片生成/图生图/全能图片V12 & Pro多图编辑最多十张图_1992511233532252161.json, 图片生成/图生图/影视二创一键多人替换_1997146827852038145.json, 图片生成/图生图/微剧专用资产生成（角色+场景+三宫图+九宫图）_2037400832890642434.json, 图片生成/图生图/香蕉PRO--一图多人物替换_1996366704236183554.json, 图片生成/图生图/香蕉Pro多人替换_1998737216866242561.json, 视频生成/图生视频/PRO-镜头_2003992526103191553.json]
+members: [音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json, 音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_274
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/PRO镜头-2_2011543377090715649.json、图片生成/图生图/全能图片V1 Pro 香蕉2角色创造、多视角、人物替换、动作迁移_1999454687160041474.json、图片生成/图生图/全能图片V12 & Pro多图编辑最多十张图_1992511233532252161.json、图片生成/图生图/影视二创一键多人替换_1997146827852038145.json、图片生成/图生图/微剧专用资产生成（角色+场景+三宫图+九宫图）_2037400832890642434.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json、音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json、音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json、音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageReel` —— 7/8 个有
-- `LayerUtility: ImageReelComposit` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 7/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `LoadImage` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
 
 ## 典型参数
 

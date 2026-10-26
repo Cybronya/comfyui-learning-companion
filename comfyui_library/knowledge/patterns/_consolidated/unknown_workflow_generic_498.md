@@ -1,43 +1,41 @@
 ---
 name: unknown_workflow_generic_498
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.792
-common_nodes: [ImageConcanate, ImageResizeKJv2, LoadImage, PreviewImage, RH_Captioner, SaveImage, ShowText|pysssss, Text Concatenate, Text Multiline, easy imageRemBg]
+coverage: 0.5
+common_nodes: [PrimitiveStringMultiline, SaveAudioAdvanced, YuE2Generate, YuE2Loader, YuE2SamplingConfig, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json, 图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json]
+members: [图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json, 图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json, 音频生成/音频生成/YuE2-翻唱-音乐生成_2100065012445437953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_498
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json、图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json、图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json、图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json、图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json、图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Captioner`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `easy imageRemBg`
+全部 6 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
+- `YuE2Generate`
+- `YuE2Loader`
+- `YuE2SamplingConfig`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub_DreamFit_Flux` —— 4/5 个有
-- `easy imageConcat` —— 3/5 个有
-- `RunningHub_DreamFit_SD` —— 1/5 个有
+- `EmptyImage` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `LoadAudio` —— 4/6 个有
+- `PreviewAny` —— 4/6 个有
+- `YuE2CoverTranscribe` —— 4/6 个有
 
 ## 典型参数
 

@@ -3,64 +3,72 @@ name: unknown_workflow_sampler_unet_vae_172
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.8305
-common_nodes: [DualCLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.794833
+common_nodes: [CLIPLoader, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json, 图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json, 图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json, 图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json, 图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json, 图片生成/文生图/flux模型canny细致线控制工作流_1988873413324312577.json]
+members: [图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json, 数字人/数字人/MiniMax Music 3_2095916117280772098.json, 数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json, 数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json, 视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json, 音频生成/音频生成/Mini max  music生成音乐_2088925873197117441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json、图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json、图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json、图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json、图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json、数字人/数字人/MiniMax Music 3_2095916117280772098.json、数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json、数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json、视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `DualCLIPLoader`
+- `CLIPLoader`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
+- `EmptyMiniMaxMusic3LatentAudio`
 - `KSampler`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `MiniMaxMusic3TextEncode`
+- `SaveAudioAdvanced`
+- `SeedNode`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEDecodeAudioTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 5/6 个有
-- `InstructPixToPixConditioning` —— 5/6 个有
-- `FluxGuidance` —— 4/6 个有
-- `Canny` —— 3/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `AIO_Preprocessor` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `CLIPTextEncodeFlux` —— 1/6 个有
-- `Flex2Conditioner` —— 1/6 个有
+- `PreviewAudio` —— 3/6 个有
+- `Float` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `ModelAttentionBackend` —— 1/6 个有
+- `PathchSageAttentionKJ` —— 1/6 个有
+- `PixaromaLabel` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `easy boolean` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 28 | 6 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | normal | - | 6 | 83% |
+| 采样步数 | 30 | 30 - 30 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 28，6 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 normal，6 个样本，一致性 83%
+- 采样步数 中位数 30，观测区间 30 - 30，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode

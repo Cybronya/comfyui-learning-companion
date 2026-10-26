@@ -3,34 +3,33 @@ name: unknown_workflow_sampler_76
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, ImageConcanate, ImageGetSize, LoadImage, PDIMAGE_LongerSize, ResizeLongestToNode, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.9
+common_nodes: [CR Prompt Text, ImageAndMaskPreview, ImageConcanate, LoadImage, PreviewImage, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/🦖USO单风格迁移（动漫）_1963800835993194498.json, 图片生成/文生图/🦖USO双风格迁移_1962782611250757633.json]
+members: [图片生成/图生图/OneReward最强重绘工作流V1_1965471656892317697.json, 图片生成/图生图/OneReward最强重绘工作流V1_1965599429275340801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_76
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖USO单风格迁移（动漫）_1963800835993194498.json、图片生成/文生图/🦖USO双风格迁移_1962782611250757633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OneReward最强重绘工作流V1_1965471656892317697.json、图片生成/图生图/OneReward最强重绘工作流V1_1965599429275340801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Prompt Text`
+- `ImageAndMaskPreview`
 - `ImageConcanate`
-- `ImageGetSize`
 - `LoadImage`
-- `PDIMAGE_LongerSize`
-- `ResizeLongestToNode`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
+- `PreviewImage`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
 - `SaveImage`
 
 ## 典型参数

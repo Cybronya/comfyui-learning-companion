@@ -2,68 +2,72 @@
 name: text_to_image_sampler_clip_checkpoint_17
 type: Text To Image
 frequency: 4
-level: strong
-coverage: 0.81325
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
-problems: []
+level: moderate
+coverage: 0.712
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, SaveImage, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/007.其他-功能风格008.XL二次元文生图工作流_2035405849501372417.json, 图片生成/文生图/Anima最新动漫文生图模型_2018993897048903682.json, 图片生成/文生图/真人视觉文生图-LORA-XL-SZ_1982645105960067073.json, 图片生成/文生图/真实视觉文生图SDXL-LORA-sz_1982665506299756546.json]
+members: [图片生成/文生图/Z-Image文生图支持LORA以及细节增强_2016028625149104130.json, 图片生成/文生图/z-image-turbo-aio-课程对应工作流____1998300993865547778.json, 图片生成/文生图/z-image-文生图_2013815667270619137.json, 图片生成/文生图/▶▷Krea2-高清生图AIO_2077747265082585089.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_checkpoint_17
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/007.其他-功能风格008.XL二次元文生图工作流_2035405849501372417.json、图片生成/文生图/Anima最新动漫文生图模型_2018993897048903682.json、图片生成/文生图/真人视觉文生图-LORA-XL-SZ_1982645105960067073.json、图片生成/文生图/真实视觉文生图SDXL-LORA-sz_1982665506299756546.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-Image文生图支持LORA以及细节增强_2016028625149104130.json、图片生成/文生图/z-image-turbo-aio-课程对应工作流____1998300993865547778.json、图片生成/文生图/z-image-文生图_2013815667270619137.json、图片生成/文生图/▶▷Krea2-高清生图AIO_2077747265082585089.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
 - `SaveImage`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `WD14Tagger|pysssss` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `LatentUpscaleBy` —— 3/4 个有
+- `LoraLoader` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 784 | 768 - 1024 | 4 | 87% |
-| 高度 | 1152 | 1024 - 1536 | 4 | 83% |
-| 采样步数 | 27.5 | 25 - 40 | 4 | 80% |
-| Prompt 约束强度(CFG) | 6.5 | 4.5 - 7 | 4 | 83% |
-| 采样算法 | euler_ancestral | - | 4 | 50% |
-| 调度器 | normal | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 6 | 3 - 10 | 4 | 48% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_multistep | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.775 | 0.55 - 1 | 4 | 71% |
+| 宽度 | 1152 | 768 - 1152 | 4 | 84% |
+| 高度 | 1736 | 1280 - 1736 | 4 | 88% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 784，观测区间 768 - 1024，4 个样本，取值集中（一致性 87%）
-- 高度 中位数 1152，观测区间 1024 - 1536，4 个样本，取值集中（一致性 83%）
-- 采样步数 中位数 27.5，观测区间 25 - 40，4 个样本
-- Prompt 约束强度(CFG) 中位数 6.5，观测区间 4.5 - 7，4 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 50%
-- 调度器 最常用 normal，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 3 - 10，4 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.775，观测区间 0.55 - 1，4 个样本
+- 宽度 中位数 1152，观测区间 768 - 1152，4 个样本，取值集中（一致性 84%）
+- 高度 中位数 1736，观测区间 1280 - 1736，4 个样本，取值集中（一致性 88%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

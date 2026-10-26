@@ -3,84 +3,52 @@ name: text_to_image_lora_sampler_clip_173
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.9269
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.8507
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax_H3单模双采放大工作流8G显存版，低显存笔记本也能跑方案_2109819079400968194.json, 视频生成/图生视频/双采样高清画质流｜H3图生视频画质增强直出_2092695582556114946.json, 视频生成/图生视频/角色替换生成｜H3图生视频一键处理工作流_2095096657456226306.json, 视频生成/文生视频/2K多参考精修｜MiniMax H3 Ref2VA三阶极致重绘视频_2089479421605539841.json, 视频生成/文生视频/2K生成式精修超分｜FL2VA三阶极致放大 MiniMax H3视频增强_2089474848572661761.json, 视频生成/文生视频/FL2VA 三阶极致放大｜MiniMax H3 2K生成式精修超分_2089246007983951873.json, 视频生成/文生视频/MiniMax H3 FL2VA三阶放大｜图生视频2K生成式精修_2089401431915851778.json, 视频生成/文生视频/MiniMax H3 Ref2VA二阶超清重绘｜视频生视频多参考精修_2089402927868899330.json, 视频生成/文生视频/MiniMax H3单模双采放大工作流8G显存版，低显存笔记本也能跑方案_2106866016801345537.json, 视频生成/文生视频/Ref2VA 二阶超清重绘｜MiniMax H3 多参考图像精修_2089247666336256002.json]
+members: [图片生成/图生图/全能图片G image2.5系列 文生图图生图单张成本低至7分钱_2098662218412941313.json, 图片生成/图生图/全能图片G-2.5低价版图片编辑｜角色设计与分镜生成出图，图生图成本打下来_2100423600812679170.json, 图片生成/图生图/全能图片G2.5图片编辑低价版 图生图处理工具_2100688455109009410.json, 图片生成/图生图/全能图片G2.5换装 虚拟试衣图生图处理工具_2099929509331034114.json, 图片生成/图生图/全能图片G2.5换装+虚拟试衣图生图处理工具_2101571060582928385.json, 图片生成/图生图/正面全身去头强制右侧高清特写面部特征文生图处理工具_2102164933382332417.json, 图片生成/图生图/精修图生图工作流，提升图片细节与质感的专业修图方案_2102889930006548481.json, 图片生成/文生图/全能图片G-2.5低价版｜文生图局部重绘图片编辑_2101197387636236289.json, 图片生成/文生图/全能图片G-image-2.5 文生图与图生图双模图像处理_2098633491339636738.json, 图片生成/文生图/全能图片G-image-2.5｜文生图图生图一应俱全_2098719464136204289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_173
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3单模双采放大工作流8G显存版，低显存笔记本也能跑方案_2109819079400968194.json、视频生成/图生视频/双采样高清画质流｜H3图生视频画质增强直出_2092695582556114946.json、视频生成/图生视频/角色替换生成｜H3图生视频一键处理工作流_2095096657456226306.json、视频生成/文生视频/2K多参考精修｜MiniMax H3 Ref2VA三阶极致重绘视频_2089479421605539841.json、视频生成/文生视频/2K生成式精修超分｜FL2VA三阶极致放大 MiniMax H3视频增强_2089474848572661761.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图片G image2.5系列 文生图图生图单张成本低至7分钱_2098662218412941313.json、图片生成/图生图/全能图片G-2.5低价版图片编辑｜角色设计与分镜生成出图，图生图成本打下来_2100423600812679170.json、图片生成/图生图/全能图片G2.5图片编辑低价版 图生图处理工具_2100688455109009410.json、图片生成/图生图/全能图片G2.5换装 虚拟试衣图生图处理工具_2099929509331034114.json、图片生成/图生图/全能图片G2.5换装+虚拟试衣图生图处理工具_2101571060582928385.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 9/10 个有
-- `H3SigmaRefiner` —— 8/10 个有
-- `MiniMaxH3SigmaShift` —— 8/10 个有
-- `MiniMaxLowVRAMAttention` —— 8/10 个有
-- `ModelAttentionBackend` —— 8/10 个有
-- `easy int` —— 8/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/10 个有
-- `VHS_VideoCombine` —— 7/10 个有
-- `GetImageSizeAndCount` —— 6/10 个有
-- `MiniMaxChunkFeedForward` —— 6/10 个有
-- `Yuan_RTXVideoUpscaleH3` —— 6/10 个有
-- `PathchSageAttentionKJ` —— 5/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/10 个有
-- `SaveImage` —— 4/10 个有
-- `SplitSigmas` —— 4/10 个有
-- `VAEEncode` —— 4/10 个有
-- `CreateVideo` —— 3/10 个有
-- `MiniMaxH3HybridLoader` —— 3/10 个有
-- `MiniMaxH3ImageToVideo` —— 3/10 个有
-- `SaveVideo` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `FlashVSRNode` —— 2/10 个有
-- `ModelPreviewOverrideKJ` —— 2/10 个有
-- `Sleep` —— 2/10 个有
-- `easy getNode` —— 2/10 个有
-- `easy loraStack` —— 2/10 个有
-- `easy loraStackApply` —— 2/10 个有
-- `easy setNode` —— 2/10 个有
-- `EmptyImage` —— 1/10 个有
-- `ImagePadForOutpaint` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `VHS_LoadVideo` —— 1/10 个有
+- `LoadImage` —— 9/10 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 8/10 个有
+- `RH_RhartImageG25FlareImageToImage` —— 5/10 个有
+- `RH_RhartImageG25FlareTextToImage` —— 5/10 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 5/10 个有
+- `Fast Groups Muter (rgthree)` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `MuyeTextEditOutput` —— 3/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `LLGPTImage25Generator` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PainterFluxImageEdit` —— 1/10 个有
 
 ## 典型参数
 

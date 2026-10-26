@@ -3,60 +3,70 @@ name: unknown_workflow_sampler_clip_unet_150
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.927375
-common_nodes: [CLIPLoader, CLIPTextEncode, ClownsharKSampler_Beta, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.873875
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Krea2 JSON Multi-Panel Storyboard_2073788024386838530.json, 图片生成/图生图/Krea2 JSON多宫格分镜_2073304573829275649.json, 图片生成/文生图/Anima Preview3文生图_2042205608601985025.json, 图片生成/文生图/Anima Preview3文生图_2042597269245009921.json, 图片生成/文生图/Anima生图_2084612056606666754.json, 图片生成/文生图/Krea2 Clownshark × WanVAE Cinematic Engine_2072998793915965440.json, 图片生成/文生图/Krea2新采样成片引擎｜Clownshark×WanVAE质感版_2072703853161705474.json, 视频生成/文生视频/Krea2 随机提示词创作_2074464834908942338.json]
+members: [图片生成/图生图/FluxKlein局部重绘_指定区域_人物替换加速高质量_2033369130442690561.json, 图片生成/图生图/Klein-一致性_2028302502973677570.json, 图片生成/图生图/Klein-马克笔转绘（清新日系）_2034116719706378241.json, 图片生成/图生图/Klein一致性加强_2030832629217497090.json, 图片生成/图生图/Klein人物一致性发型衣服换脸一致性增强换衣服换发色换脸_2029595679181508609.json, 图片生成/图生图/NEW　Flux2-Klein-9B双图编辑_2013810307679916034.json, 图片生成/图生图/SQ-效果图优化工作流_2112780528683409410.json, 图片生成/图生图/bg_2068900398752157698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_150
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2 JSON Multi-Panel Storyboard_2073788024386838530.json、图片生成/图生图/Krea2 JSON多宫格分镜_2073304573829275649.json、图片生成/文生图/Anima Preview3文生图_2042205608601985025.json、图片生成/文生图/Anima Preview3文生图_2042597269245009921.json、图片生成/文生图/Anima生图_2084612056606666754.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FluxKlein局部重绘_指定区域_人物替换加速高质量_2033369130442690561.json、图片生成/图生图/Klein-一致性_2028302502973677570.json、图片生成/图生图/Klein-马克笔转绘（清新日系）_2034116719706378241.json、图片生成/图生图/Klein一致性加强_2030832629217497090.json、图片生成/图生图/Klein人物一致性发型衣服换脸一致性增强换衣服换发色换脸_2029595679181508609.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ClownsharKSampler_Beta`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 6/8 个有
-- `PreviewImage` —— 6/8 个有
-- `FluxResolutionNode` —— 5/8 个有
-- `ComfyUI-Krea2T-Enhancer` —— 3/8 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/8 个有
-- `CreaPrompt` —— 1/8 个有
-- `CreaPrompt_1` —— 1/8 个有
-- `CreaPrompt_2` —— 1/8 个有
-- `CreaPrompt_3` —— 1/8 个有
-- `LatentUpscaleBy` —— 1/8 个有
-- `LoraLoader` —— 1/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `LayerUtility: ImageReel` —— 7/8 个有
+- `LayerUtility: ImageReelComposit` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `CR Text` —— 6/8 个有
+- `GetImageSize` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `JWFloat` —— 2/8 个有
+- `MaskToImage` —— 2/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `GrowMaskWithBlur` —— 1/8 个有
+- `ImageCompositeMasked` —— 1/8 个有
+- `InpaintModelConditioning` —— 1/8 个有
+- `InvertMask` —— 1/8 个有
+- `Mask Fill Holes` —— 1/8 个有
+- `MaskPreview` —— 1/8 个有
+- `SegmentV2` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 720 | 720 - 832 | 6 | 94% |
-| 高度 | 1280 | 1 - 1280 | 8 | 42% |
-| 采样步数 | beta57 | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 8 | 6 - 30 | 8 | 33% |
-| 采样算法 | -1 | -1 - -1 | 8 | 100% |
-| 调度器 | 1 | 0.45 - 1 | 8 | 80% |
-| 重绘幅度 | 1 | 1 - 3 | 8 | 45% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,12 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 720 - 832，6 个样本，取值集中（一致性 94%）
-- 高度 中位数 1280，观测区间 1 - 1280，8 个样本，取值分散，一致性仅 42%
-- 采样步数 最常用 beta57，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 30，8 个样本，取值分散，一致性仅 33%
-- 采样算法 中位数 -1，观测区间 -1 - -1，8 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 0.45 - 1，8 个样本，取值集中（一致性 80%）
-- 重绘幅度 中位数 1，观测区间 1 - 3，8 个样本，取值分散，一致性仅 45%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 风险：重绘幅度 观测到 3，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

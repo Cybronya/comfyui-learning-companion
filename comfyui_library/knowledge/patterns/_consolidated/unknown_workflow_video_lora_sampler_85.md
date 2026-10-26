@@ -1,78 +1,89 @@
 ---
 name: unknown_workflow_video_lora_sampler_85
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.656176
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.549056
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SteadyDancer视频动作迁移【1.0】_1995877090840961026.json, 视频生成/图生视频/steadydancer跳舞工作流_1996231020791873537.json, 视频生成/图生视频/wan22 wan2.2  动作迁移 SteadyDancer 角色替换_2042801321077641218.json, 视频生成/图生视频/wan22 动作迁移 SteadyDancer 角色替换_2041737868690853890.json, 视频生成/图生视频/wanvideo_SteadyDancer_1995382364060758018.json, 视频生成/图生视频/【推荐】SteadyDancer_骨骼迁移_不限时长版_2008549771673346050.json, 视频生成/图生视频/人物舞蹈 美女跳舞（10s+时间加长版）动作迁移   SteadDancer 2.0（支持动漫人物）_2041689230266601473.json, 视频生成/图生视频/动作迁移2.0SteadDancer 人物一致性_2026927442052521986.json, 视频生成/图生视频/动作迁移2.0_2044626494164574210.json, 视频生成/图生视频/动作迁移2.0（支持动漫）t人物一致性加强版（10s+）_2042133544960528385.json, 视频生成/图生视频/动作迁移2.0（支持动漫）人物一致性加强版_2047574668227383297.json, 视频生成/图生视频/动漫人物动作迁移2.0SteadDancer_2042111838783021057.json, 视频生成/图生视频/图生视频动作迁移SteadDancer2.0 支持动漫人物Q版动物 人物一致性加强版（10s+）_2076831167663394817.json, 视频生成/图生视频/超长时间10s+ 图生视频角色人物动作姿势迁移 支持动漫人物  模特一致性加强版_2062707841848406017.json, 视频生成/图生视频/（10s+时间加长版）动作迁移 人物舞蹈 美女跳舞 SteadDancer 2.0（支持动漫人物）_2041680923317506050.json, 视频生成/文生视频/10s+图生视频+时间加长版 人物舞蹈+美女跳舞 动作迁移+++SteadDancer+2.0（支持_2045730540698996738.json, 视频生成/文生视频/10s+图生视频+时间加长版 人物舞蹈+美女跳舞 动作迁移+++SteadDancer+2.0（支持_2045733887124447234.json]
+members: [视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json, 视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json, 视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json, 视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json, 视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json, 视频生成/图生视频/Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_1969116607094157313.json, 视频生成/图生视频/Wan Animate2.2动作迁移_2073212149740163073.json, 视频生成/图生视频/Wan2.2-Animate 视频换脸+动作迁移_1981706242731196418.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_1970283537297514497.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_2059310361421115394.json, 视频生成/图生视频/WanAnimate 场景九 多人视频精准替换_2044021235868241922.json, 视频生成/图生视频/WanAnimate 场景六 单独面部表情迁移_1970399426625892354.json, 视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加速版V1（无限时长）_1969355024180649986.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX骚操作去油提高一致性加速版V1（无限时长）_1969358943149563905.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_1969373357202436097.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本动物姿态Mix主体混合特别版V1_1974432637244805122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_85
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer视频动作迁移【1.0】_1995877090840961026.json、视频生成/图生视频/steadydancer跳舞工作流_1996231020791873537.json、视频生成/图生视频/wan22 wan2.2  动作迁移 SteadyDancer 角色替换_2042801321077641218.json、视频生成/图生视频/wan22 动作迁移 SteadyDancer 角色替换_2041737868690853890.json、视频生成/图生视频/wanvideo_SteadyDancer_1995382364060758018.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json、视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json、视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json、视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json、视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `GetImageRangeFromBatch`
+全部 18 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
 - `GetImageSizeAndCount`
 - `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `LoadImage`
+- `Sam2Segmentation`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 16/17 个有
-- `ImageConcatMulti` —— 16/17 个有
-- `OnnxDetectionModelLoader` —— 16/17 个有
-- `WanVideoBlockSwap` —— 16/17 个有
-- `WanVideoLoraSelect` —— 16/17 个有
-- `WanVideoScheduler` —— 16/17 个有
-- `WanVideoSetBlockSwap` —— 16/17 个有
-- `DrawViTPose` —— 14/17 个有
-- `PoseAndFaceDetection` —— 14/17 个有
-- `PreviewImage` —— 14/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/17 个有
-- `WanVideoTorchCompileSettings` —— 13/17 个有
-- `Int` —— 12/17 个有
-- `DF_Int_to_Float` —— 11/17 个有
-- `MathExpression|pysssss` —— 11/17 个有
-- `Text` —— 11/17 个有
-- `RH_Sora2_I2V` —— 10/17 个有
-- `easy getNode` —— 7/17 个有
-- `easy setNode` —— 7/17 个有
-- `PoseDetectionOneToAllAnimation` —— 3/17 个有
-- `CR Prompt Text` —— 2/17 个有
-- `ImpactInt` —— 1/17 个有
-- `RHHiddenNodes` —— 1/17 个有
-- `SimpleMath+` —— 1/17 个有
-- `TextInput_` —— 1/17 个有
-- `VHS_VideoInfo` —— 1/17 个有
-- `easy int` —— 1/17 个有
-- `easy positive` —— 1/17 个有
+- `DWPreprocessor` —— 17/18 个有
+- `FaceMaskFromPoseKeypoints` —— 17/18 个有
+- `ImageCropByMaskAndResize` —— 17/18 个有
+- `PixelPerfectResolution` —— 17/18 个有
+- `PointsEditor` —— 17/18 个有
+- `WanVideoContextOptions` —— 16/18 个有
+- `CR Prompt Text` —— 12/18 个有
+- `JWInteger` —— 12/18 个有
+- `WanVideoEncode` —— 10/18 个有
+- `WanVideoUni3C_ControlnetLoader` —— 10/18 个有
+- `WanVideoUni3C_embeds` —— 10/18 个有
+- `INTConstant` —— 6/18 个有
+- `EmptyImage` —— 3/18 个有
+- `LayerUtility: PurgeVRAM` —— 3/18 个有
+- `RH_Captioner` —— 2/18 个有
+- `ShowText` —— 2/18 个有
+- `easy promptConcat` —— 2/18 个有
+- `AnimalPosePreprocessor` —— 1/18 个有
+- `AudioCrop` —— 1/18 个有
+- `AudioSeparation` —— 1/18 个有
+- `DownloadAndLoadWav2VecModel` —— 1/18 个有
+- `ImageConcanate` —— 1/18 个有
+- `ImageListToImageBatch` —— 1/18 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/18 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/18 个有
+- `MultiTalkModelLoader` —— 1/18 个有
+- `MultiTalkWav2VecEmbeds` —— 1/18 个有
+- `PDIMAGE_LongerSize` —— 1/18 个有
+- `PreviewAny` —— 1/18 个有
+- `SDVN Image Repeat` —— 1/18 个有
+- `WanVideoCombineEmbeds` —— 1/18 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 

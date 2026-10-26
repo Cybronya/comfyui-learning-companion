@@ -3,46 +3,32 @@ name: unknown_workflow_generic_1398
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.758
-common_nodes: [CR Text, Image Comparer (rgthree), LayerMask: MaskGrow, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy imageDetailTransfer, easy imageRemBg, easy imageSize]
+coverage: 0.778
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), ImageConcatMulti, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/换背景_2045416894164901890.json, 图片生成/图生图/溶图_2012039867399675905.json]
+members: [图片生成/图生图/Seedream 5.0+Pro图像编辑 换脸换服装 换装换头换脸 双图三图多图编辑 +高清修复_2082674138115829762.json, 图片生成/图生图/Seedream+5.0+Pro图像编辑+ 换装换头换脸 Face Swap and Costume_2092433685390909441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1398
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/换背景_2045416894164901890.json、图片生成/图生图/溶图_2012039867399675905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0+Pro图像编辑 换脸换服装 换装换头换脸 双图三图多图编辑 +高清修复_2082674138115829762.json、图片生成/图生图/Seedream+5.0+Pro图像编辑+ 换装换头换脸 Face Swap and Costume_2092433685390909441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcatMulti`
 - `LoadImage`
-- `MaskPreview`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_SeedreamV5ProImageToImage`
 - `SaveImage`
-- `easy imageDetailTransfer`
-- `easy imageRemBg`
-- `easy imageSize`
-
-**可变部分**（部分 workflow 才有）：
-- `HAIGC_SavePSD` —— 1/2 个有
-- `LayerStyle: Stroke V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `取色器_孤海` —— 1/2 个有
 
 ## 典型参数
 

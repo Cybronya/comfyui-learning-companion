@@ -3,39 +3,31 @@ name: unknown_workflow_generic_1420
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.778
-common_nodes: [CR Text, CR Text Concatenate, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss, StringFunction|pysssss, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.902
+common_nodes: [ImageScale, LoadImage, RHSettingsNode, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/电商专用_产品海报复刻_一键产品海报_2034501002413481985.json, 图片生成/图生图/电商数码专用_产品海报复刻_一键产品海报_2071841900868497410.json]
+members: [图片生成/图生图/workflow_runninghub_NB2_amazon_product_i2i_2039189830973788161.json, 图片生成/图生图/workflow_runninghub_NB2_amazon_product_i5i_2041824553495699457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1420
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商专用_产品海报复刻_一键产品海报_2034501002413481985.json、图片生成/图生图/电商数码专用_产品海报复刻_一键产品海报_2071841900868497410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/workflow_runninghub_NB2_amazon_product_i2i_2039189830973788161.json、图片生成/图生图/workflow_runninghub_NB2_amazon_product_i5i_2041824553495699457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
+- `ImageScale`
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RHSettingsNode`
+- `RH_RhartImageNG31FlashOfficialImageToImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 ## 典型参数
 

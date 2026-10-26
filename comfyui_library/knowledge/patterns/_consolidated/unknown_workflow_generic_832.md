@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_832
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.820667
-common_nodes: [ByteDance2FirstLastFrameNode, LoadImage, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_0_flf2v.json, comfyui-workflow-templates-json/api_seedance2_0_flf2v_real_human.json, comfyui-workflow-templates-json/api_seedance2_5_flf2v.json]
+members: [视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json, 视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json, 视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json, 视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_832
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_flf2v.json、comfyui-workflow-templates-json/api_seedance2_0_flf2v_real_human.json、comfyui-workflow-templates-json/api_seedance2_5_flf2v.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json、视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json、视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json、视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ByteDance2FirstLastFrameNode`
+全部 4 个 workflow 都包含：
 - `LoadImage`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ByteDanceCreateImageAsset` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
+- `Text Multiline` —— 3/4 个有
+- `RH_CinematicVideoGenerator` —— 2/4 个有
+- `RH_Sora2_I2V_Batch` —— 2/4 个有
+- `RH_Veo3_I2V_Batch` —— 1/4 个有
 
 ## 典型参数
 

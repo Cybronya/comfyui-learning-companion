@@ -1,110 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_714
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6755
-common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, INTConstant, ImageResizeKJv2, Int, JoinStrings, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PainterI2V, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, ShowText|pysssss, SimpleMath+, SoundFlow_GetLength, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
+frequency: 3
+level: moderate
+coverage: 0.551333
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/For循环+旅行提示词-图生视频-V2V-Infinitetalk高动态数字人_1990794516057759745.json, 视频生成/图生视频/【Supermate】图生视频+V2V-Infinitetalk高动态数字人_1990442232287301633.json]
+members: [视频生成/图生视频/Wan2.2 Animate长视频——动作迁移稳定版_1978123000795029506.json, 视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json, 视频生成/图生视频/舞蹈动作迁移_2080278150566735874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_714
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/For循环+旅行提示词-图生视频-V2V-Infinitetalk高动态数字人_1990794516057759745.json、视频生成/图生视频/【Supermate】图生视频+V2V-Infinitetalk高动态数字人_1990442232287301633.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate长视频——动作迁移稳定版_1978123000795029506.json、视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json、视频生成/图生视频/舞蹈动作迁移_2080278150566735874.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
-- `INTConstant`
+- `DrawViTPose`
+- `GetNode`
 - `ImageResizeKJv2`
-- `Int`
-- `JoinStrings`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `JWInteger`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `Qwen3_VQA`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoAnimateEmbeds`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy mathInt`
 - `easy showAnything`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 1/2 个有
-- `CRTFirstLastFrameSelector` —— 1/2 个有
-- `Display Any (rgthree)` —— 1/2 个有
-- `Float to Int` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Getter` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `Setter` —— 1/2 个有
-- `Text Load Line From File` —— 1/2 个有
-- `WanMoeKSampler` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `CR Prompt Text` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `VHS_VideoInfoSource` —— 2/3 个有
+- `WanAnimatePlus BlockSwap` —— 2/3 个有
+- `BatchCount+` —— 1/3 个有
+- `CM_IntToFloat` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LazySwitch1way` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `WanVideoBlockSwap` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy compare` —— 1/3 个有
+- `easy forLoopEnd` —— 1/3 个有
+- `easy forLoopStart` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 12 | - | 2 | 33% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | euler | - | 2 | 50% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -112,9 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，样本不足，未给区间，2 个样本，取值分散，一致性仅 33%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler，2 个样本，一致性 50%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

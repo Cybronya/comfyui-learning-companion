@@ -1,41 +1,44 @@
 ---
 name: unknown_workflow_video_sampler_10
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.984833
-common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RunningHub_TurboDiffusion_TurboWan_Loader, RunningHub_TurboDiffusion_TurboWan_Sampler, VHS_VideoCombine]
+coverage: 0.991143
+common_nodes: [GetVideoComponents, LoadImage, LoadVideo, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json, 视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json, 视频生成/图生视频/Wan 图生视频_2007995270973366274.json, 视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json, 视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json, 视频生成/图生视频/🦖TurboWan图生视频_2005914063492313090.json]
+members: [数字人/数字人/DreamID-V 体验  Vvv-vsien_2010430951473553409.json, 数字人/数字人/DreamID-V视频换脸_2008974813620084738.json, 数字人/数字人/视频一键换脸 DreamID_1989358478957441026.json, 视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json, 视频生成/图生视频/DreamID-V视频换脸_2009145038378373122.json, 视频生成/图生视频/DreamID-V视频换脸_2009449357975756802.json, 视频生成/图生视频/DreamID-V视频换脸_2010268068085239809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json、视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json、视频生成/图生视频/Wan 图生视频_2007995270973366274.json、视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json、视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/DreamID-V 体验  Vvv-vsien_2010430951473553409.json、数字人/数字人/DreamID-V视频换脸_2008974813620084738.json、数字人/数字人/视频一键换脸 DreamID_1989358478957441026.json、视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json、视频生成/图生视频/DreamID-V视频换脸_2009145038378373122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 7 个 workflow 都包含：
+- `GetVideoComponents`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `RunningHub_TurboDiffusion_TurboWan_Loader`
-- `RunningHub_TurboDiffusion_TurboWan_Sampler`
+- `LoadVideo`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `Int` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
+- `CM_FloatToInt` —— 6/7 个有
+- `easy imageCount` —— 6/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `JWInteger` —— 4/7 个有
+- `MathExpression|pysssss` —— 4/7 个有
+- `RepeatImageBatch` —— 4/7 个有
+- `ColorMatch` —— 1/7 个有
+- `ToInt` —— 1/7 个有
 
 ## 典型参数
 

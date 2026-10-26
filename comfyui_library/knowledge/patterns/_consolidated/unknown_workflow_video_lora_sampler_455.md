@@ -1,77 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_455
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.59875
-common_nodes: [Any Switch (rgthree), AutoCropFaces, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImagesFromBatchIndexed, GetNode, GetVideoComponents, ImageConcatFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.4348
+common_nodes: [CLIPVisionLoader, DrawMaskOnImage, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json, 图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json, 图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json, 图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json]
+members: [图片生成/文生图/YJ-FAST-WanAnimate-服装迁移-abao-tmp2-测试-简易_2036362537280741377.json, 数字人/数字人/YJ-APP-WanAnimate-视频人物替换_2034926423135232002.json, 视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json, 视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json, 视频生成/图生视频/无线时长视频换人_2001302724798971906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_455
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json、图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json、图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json、图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/YJ-FAST-WanAnimate-服装迁移-abao-tmp2-测试-简易_2036362537280741377.json、数字人/数字人/YJ-APP-WanAnimate-视频人物替换_2034926423135232002.json、视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json、视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json、视频生成/图生视频/无线时长视频换人_2001302724798971906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AutoCropFaces`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Muter (rgthree)`
-- `GetImagesFromBatchIndexed`
-- `GetNode`
-- `GetVideoComponents`
-- `ImageConcatFromBatch`
-- `KSamplerSelect`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `ResizeImageMaskNode` —— 2/4 个有
-- `SeedVR2LoadDiTModel` —— 2/4 个有
-- `SeedVR2LoadVAEModel` —— 2/4 个有
-- `SeedVR2VideoUpscaler` —— 2/4 个有
-- `workflow>SeedVR放大节点` —— 2/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageScaleBy` —— 1/4 个有
-- `LayerUtility: SaveImagePlus` —— 1/4 个有
-- `SaveImageAdvanced` —— 1/4 个有
-- `VOSR2ModelLoader` —— 1/4 个有
-- `VOSR2Upscale` —— 1/4 个有
-- `easy float` —— 1/4 个有
-- `easy int` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `BlockifyMask` —— 4/5 个有
+- `DrawViTPose` —— 4/5 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `ImageFromBatch` —— 4/5 个有
+- `OnnxDetectionModelLoader` —— 4/5 个有
+- `PoseAndFaceDetection` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `GrowMaskWithBlur` —— 3/5 个有
+- `PointsEditor` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `SeCModelLoader` —— 3/5 个有
+- `SeCVideoSegmentation` —— 3/5 个有
+- `WanVideoContextOptions` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `JjkText` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `ImageToMask` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `RMBG` —— 1/5 个有
+- `RunningHub Deepcleaner` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `WujiCleaner` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy sam3ModelLoader` —— 1/5 个有
+- `easy sam3VideoSegmentation` —— 1/5 个有
 
 ## 典型参数
 

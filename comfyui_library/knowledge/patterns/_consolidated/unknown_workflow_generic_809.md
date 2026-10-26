@@ -3,38 +3,31 @@ name: unknown_workflow_generic_809
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.94375
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_Pronunciation]
+coverage: 0.875
+common_nodes: [SaveAudioMP3, SparkTTS_VoiceCreator]
 problems: []
 missing: []
-members: [音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json, 音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json, 音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json, 音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json]
+members: [数字人/数字人/AI声音生成器_1972181358317596673.json, 音频生成/音频生成/AI声音生成器_2014666051899891713.json, 音频生成/音频生成/AI声音生成器_2089691701567909890.json, 音频生成/音频生成/声音_2018550234237902850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_809
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json、音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json、音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json、音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/AI声音生成器_1972181358317596673.json、音频生成/音频生成/AI声音生成器_2014666051899891713.json、音频生成/音频生成/AI声音生成器_2089691701567909890.json、音频生成/音频生成/声音_2018550234237902850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_Pronunciation`
+- `SaveAudioMP3`
+- `SparkTTS_VoiceCreator`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
+- `SaveAudio` —— 2/4 个有
 
 ## 典型参数
 

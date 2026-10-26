@@ -3,34 +3,33 @@ name: unknown_workflow_generic_908
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.590333
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.611
+common_nodes: [ResolutionSelector, SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81]
 problems: []
 missing: []
-members: [图片生成/图生图/万物移除、局部重绘_1988813661798019073.json, 图片生成/图生图/万物移除、局部重绘，去掉路人_2096510184133849089.json, 图片生成/图生图/追色_2101601495178375170.json]
+members: [comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_908
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/万物移除、局部重绘_1988813661798019073.json、图片生成/图生图/万物移除、局部重绘，去掉路人_2096510184133849089.json、图片生成/图生图/追色_2101601495178375170.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
+- `ResolutionSelector`
 - `SaveImage`
+- `b0e5ca93-2731-42b9-8e0a-d28ea851ff81`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>秋风AI局部重绘` —— 2/3 个有
-- `ImitationHueNode` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

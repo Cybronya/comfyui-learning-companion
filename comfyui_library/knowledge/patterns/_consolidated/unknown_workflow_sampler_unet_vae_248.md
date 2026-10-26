@@ -2,67 +2,61 @@
 name: unknown_workflow_sampler_unet_vae_248
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.8415
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+level: strong
+coverage: 0.8705
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json, 视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json, 视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json, 视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json]
+members: [图片生成/图生图/【qwen2.1短剧资产】图生角色设定图（(目前只支持真人▏无PE）_2102180346572922881.json, 图片生成/图生图/【遇见AI】qwen image 2.1图生图和图片参考基础流_2101841464891367425.json, 图片生成/图生图/一键抠图背景移除-qwen image 2.1_2112444591415848961.json, 图片生成/图生图/换装-Qwen Image 2.1-图像编辑_2101859929576534017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_248
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json、视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json、视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json、视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【qwen2.1短剧资产】图生角色设定图（(目前只支持真人▏无PE）_2102180346572922881.json、图片生成/图生图/【遇见AI】qwen image 2.1图生图和图片参考基础流_2101841464891367425.json、图片生成/图生图/一键抠图背景移除-qwen image 2.1_2112444591415848961.json、图片生成/图生图/换装-Qwen Image 2.1-图像编辑_2101859929576534017.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `QwenImage21Cache`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `LoraLoaderBypassModelOnly` —— 3/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `ApplyFaceProcessor` —— 1/4 个有
 - `CR Prompt Text` —— 1/4 个有
-- `CompressImages` —— 1/4 个有
-- `FaceProcessorLoader` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RTXVideoSuperResolution` —— 1/4 个有
-- `ResizeImagesByLongerEdge` —— 1/4 个有
-- `SaveMP4` —— 1/4 个有
-- `SeedVR2` —— 1/4 个有
-- `SeedVR2BlockSwap` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `ImageCompare` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `easy boolean` —— 1/4 个有
+- `easy float` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 25 - 40 | 4 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
 
 ## 常见问题
 
@@ -70,4 +64,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）

@@ -2,75 +2,77 @@
 name: image_to_image_lora_sampler_unet_65
 type: Image To Image
 frequency: 9
-level: strong
-coverage: 0.892667
-common_nodes: [CLIPLoader, EmptySD3LatentImage, ImageScaleToTotalPixels, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.926333
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2改图_扩图多合一_2091494374692712449.json, 图片生成/图生图/Krea2改图_扩图多合一_2092613324746870785.json, 图片生成/图生图/Krea2改图_扩图多合一_2097137551667720194.json, 图片生成/图生图/Krea2改图_扩图多合一_2097232544029827074.json, 图片生成/图生图/krea2 turbo 图像扩展_2093702213427355650.json, 图片生成/图生图/krea2 单图编辑_2093346016568365057.json, 图片生成/图生图/krea2 双图编辑 换背景_换脸_换衣_2093702412547739650.json, 图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json, 图片生成/文生图/Krea2-图片扩展_超乎你想象_2089999274397495298.json]
+members: [图片生成/图生图/图像编辑四合一 Qwen-Image-Edit-2511完美改图_2003601727951675393.json, 图片生成/图生图/图片-人物提取衣服_1970397980127883265.json, 图片生成/图生图/图片去水印_2078417815333330946.json, 图片生成/图生图/图片去水印_优化版（速度不做高清放大）_2087830057820708866.json, 图片生成/图生图/图片快速转线稿_2087107562218016770.json, 图片生成/图生图/多角度打光，万能打光 qwen2511_2033554182464081922.json, 图片生成/图生图/自由打光，万能打光 Qwen_2033684576970739713.json, 图片生成/文生图/图像编辑四合一 Qwen-Image-Edit-2511完美改图_2079820923355615233.json, 图片生成/文生图/图像编辑四合一 Qwen-Image-Edit-2511完美改图_2079833773604171778.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_65
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Krea2改图_扩图多合一_2091494374692712449.json、图片生成/图生图/Krea2改图_扩图多合一_2092613324746870785.json、图片生成/图生图/Krea2改图_扩图多合一_2097137551667720194.json、图片生成/图生图/Krea2改图_扩图多合一_2097232544029827074.json、图片生成/图生图/krea2 turbo 图像扩展_2093702213427355650.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/图像编辑四合一 Qwen-Image-Edit-2511完美改图_2003601727951675393.json、图片生成/图生图/图片-人物提取衣服_1970397980127883265.json、图片生成/图生图/图片去水印_2078417815333330946.json、图片生成/图生图/图片去水印_优化版（速度不做高清放大）_2087830057820708866.json、图片生成/图生图/图片快速转线稿_2087107562218016770.json…）
 
 - **类型**：Image To Image
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `Image Comparer (rgthree)`
 - `ImageScaleToTotalPixels`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 8/9 个有
-- `DrawMaskOnImage` —— 7/9 个有
-- `ImagePadForOutpaint` —— 6/9 个有
-- `AnyBooleanSwitch` —— 4/9 个有
-- `ImpactConditionalBranch` —— 4/9 个有
-- `PrimitiveFloat` —— 4/9 个有
-- `easy boolean` —— 4/9 个有
-- `CompressImages` —— 3/9 个有
-- `Label (rgthree)` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `ResolutionSelector` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `TextEncodeQwenImageEditPlus` —— 7/9 个有
+- `DWPreprocessor` —— 3/9 个有
+- `InpaintModelConditioning` —— 3/9 个有
+- `Mask Fill Holes` —— 3/9 个有
+- `SDXLEmptyLatentSizePicker+` —— 3/9 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 2/9 个有
+- `QwenMultiangleLightningNode` —— 2/9 个有
+- `ShowText` —— 2/9 个有
+- `TextEncodeQwenImageEdit` —— 2/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 8 | 4 - 20 | 9 | 42% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 9 | 60% |
 | 采样算法 | euler | - | 9 | 100% |
 | 调度器 | simple | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 768x1280 (0.6) | - | 3 | 100% |
+| 高度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 20，9 个样本，取值分散，一致性仅 42%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，9 个样本
 - 采样算法 最常用 euler，9 个样本，一致性 100%
 - 调度器 最常用 simple，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 最常用 768x1280 (0.6)，3 个样本，一致性 100%
+- 高度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（17/9 个样本）：Steps较低可能导致细节不足

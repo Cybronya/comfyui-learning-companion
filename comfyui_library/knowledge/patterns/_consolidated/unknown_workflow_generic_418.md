@@ -1,43 +1,40 @@
 ---
 name: unknown_workflow_generic_418
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.7935
-common_nodes: [CR Draw Shape, GetImageSizeAndCount, Image Crop Location, ImageCompositeMasked, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, Mask Crop Region, MaskPreview+, SaveImage, SplitImageWithAlpha, TTP_Expand_And_Mask]
+coverage: 0.966286
+common_nodes: [CR Prompt Text, RunningHub Deepcleaner, SaveAudio, WooshLoadFlow, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json, 图片生成/图生图/一键抠图_2069242214223532033.json, 图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json, 图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json, 图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json, 图片生成/图生图/最强智能扣白底图，透明底，可以自定义各种底色，电商专用_2059924781755092993.json]
+members: [音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json, 音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json, 音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json, 音频生成/音频生成/Woosh音效生成_2044055803182714882.json, 音频生成/音频生成/文生音频音效（自用）_2067232351951867905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_418
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json、图片生成/图生图/一键抠图_2069242214223532033.json、图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json、图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json、图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json、音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json、音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json、音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json、音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Draw Shape`
-- `GetImageSizeAndCount`
-- `Image Crop Location`
-- `ImageCompositeMasked`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LoadImage`
-- `Mask Crop Region`
-- `MaskPreview+`
-- `SaveImage`
-- `SplitImageWithAlpha`
-- `TTP_Expand_And_Mask`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `RunningHub Deepcleaner`
+- `SaveAudio`
+- `WooshLoadFlow`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
+- `RH_Translator` —— 2/7 个有
+- `DeepTranslatorTextNode` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

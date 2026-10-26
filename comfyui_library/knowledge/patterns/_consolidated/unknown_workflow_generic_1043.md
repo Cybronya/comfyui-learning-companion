@@ -3,34 +3,37 @@ name: unknown_workflow_generic_1043
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveImage, SaveVideo]
+coverage: 0.789667
+common_nodes: [ConstrainImage|pysssss, ImageConcatMulti, JjkText, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频sd2.0 1元1秒_2073403634406223873.json, 视频生成/图生视频/全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd2.0工作流_2034847827666411522.json, 视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json]
+members: [图片生成/图生图/换脸换装 真实高度一致 多图编辑 加强版_2089531169330253825.json, 图片生成/图生图/换衣服换人脸 _ Qwen3.0Pro_2088504381816786946.json, 图片生成/图生图/服饰迁移 姿态克隆 替换人物与服装 洗图 指定模特姿势 动作迁移_2068854417989914626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1043
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频sd2.0 1元1秒_2073403634406223873.json、视频生成/图生视频/全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd2.0工作流_2034847827666411522.json、视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换脸换装 真实高度一致 多图编辑 加强版_2089531169330253825.json、图片生成/图生图/换衣服换人脸 _ Qwen3.0Pro_2088504381816786946.json、图片生成/图生图/服饰迁移 姿态克隆 替换人物与服装 洗图 指定模特姿势 动作迁移_2068854417989914626.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `ConstrainImage|pysssss`
+- `ImageConcatMulti`
+- `JjkText`
 - `LoadImage`
-- `RH_CinematicVideoGenerator`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
+- `RH_AlibabaQwenImage30ProImageEdit` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

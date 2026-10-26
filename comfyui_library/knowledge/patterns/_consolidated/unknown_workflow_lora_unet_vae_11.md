@@ -3,80 +3,52 @@ name: unknown_workflow_lora_unet_vae_11
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7465
-common_nodes: [CLIPLoader, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), Image Overlay, ImageScale, ImageToMask, Int, JjkText, LayerMask: MaskGrow, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PreviewImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.837
+common_nodes: [CLIPLoader, CreateVideo, GetImageSize, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, PlaySound|pysssss, PreviewAny, SaveImage, SaveVideo, UNETLoader, VAELoader, easy imageChooser, kkVideoFirstLastFrames]
 problems: []
 missing: []
-members: [图片生成/图生图/细节恢复 qwen_image_2.1_2107159669243473921.json, 图片生成/图生图/表情迁移 qwen_image_2.1_2105577290787807234.json]
+members: [视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json, 视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/细节恢复 qwen_image_2.1_2107159669243473921.json、图片生成/图生图/表情迁移 qwen_image_2.1_2105577290787807234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json、视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
+- `CreateVideo`
 - `GetImageSize`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `Image Overlay`
-- `ImageScale`
-- `ImageToMask`
-- `Int`
-- `JjkText`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: RestoreCropBox`
-- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `QwenImage21Cache`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `ModelAttentionBackend`
+- `PlaySound|pysssss`
+- `PreviewAny`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy imageChooser`
+- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `FaceAnalysisModels` —— 1/2 个有
-- `FaceBoundingBox` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `KuwaharaBlur` —— 1/2 个有
-- `LayerFilter: GaussianBlur` —— 1/2 个有
-- `LayerMask: MaskPreview` —— 1/2 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `Mask Fill Holes` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
-- `MaxNode` —— 1/2 个有
-- `PreviewBridge` —— 1/2 个有
-- `SamplerCustom` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Astra` —— 1/2 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/2 个有
+- `RH_Upscale` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

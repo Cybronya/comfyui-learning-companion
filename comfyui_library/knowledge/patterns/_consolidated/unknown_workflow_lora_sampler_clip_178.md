@@ -2,72 +2,69 @@
 name: unknown_workflow_lora_sampler_clip_178
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.697333
-common_nodes: [AILab_ImageResize, Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, ImageStitch, Int, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewAny, Qwen3VL_Chat, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.707667
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, ConstrainImage|pysssss, DualCLIPLoader, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json, 图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json, 图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json]
+members: [图片生成/图生图/FLUX 图生图 +Lora + joy自动反推提示词_1892548146520612865.json, 图片生成/图生图/FLUX图生图_超级实用_1920375666431430657.json, 图片生成/图生图/majicFlus 图生图_1884514047411343361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_178
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json、图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json、图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX 图生图 +Lora + joy自动反推提示词_1892548146520612865.json、图片生成/图生图/FLUX图生图_超级实用_1920375666431430657.json、图片生成/图生图/majicFlus 图生图_1884514047411343361.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_ImageResize`
-- `Anything Everywhere3`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetNode`
-- `ImageStitch`
-- `Int`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `ConstrainImage|pysssss`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewAny`
-- `Qwen3VL_Chat`
+- `LoraLoader`
 - `RandomNoise`
-- `ReferenceLatent`
+- `RepeatLatentBatch`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetImageSize+` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `QwenMultiangleCameraNode` —— 2/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `TT_img_enc` —— 1/3 个有
-- `TT_img_enc_v2` —— 1/3 个有
-- `TextInputNode` —— 1/3 个有
-- `Textbox` —— 1/3 个有
-- `ZML_SwitchOutput` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `text_mul_Join` —— 1/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `Joy_caption` —— 2/3 个有
+- `Joy_caption_load` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `Text Concatenate (JPS)` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy imageSize` —— 2/3 个有
+- `ArgosTranslateTextNode` —— 1/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `Joy_caption_two` —— 1/3 个有
+- `Joy_caption_two_load` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `ttN concat` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.8 | 0.8 - 0.8 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -75,4 +72,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 0.8，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

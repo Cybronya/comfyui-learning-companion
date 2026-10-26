@@ -1,30 +1,29 @@
 ---
 name: text_to_image_sampler_clip_vae_14
 type: Text To Image
-frequency: 10
-level: moderate
-coverage: 0.923
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: strong
+coverage: 0.901875
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Engineer-V4--文生图_2028091411702222850.json, 图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json, 图片生成/文生图/Z-Image-Turbo + Lora 文生图_2008180292552495105.json, 图片生成/文生图/Z-Image-Turbo D-OPSD（提示词自动化）_2062196278603378689.json, 图片生成/文生图/Z-image文生图_2035961089313214465.json, 图片生成/文生图/redimage量贩美女图（全自动，批量，极速）_1998274589451018242.json, 图片生成/文生图/z-image_一张图片一次性洗多张一致性图片_1996107207425114113.json, 图片生成/文生图/【dpmpp2msde+sgm】皮肤纹理质感细腻 Z-Image 美女自动扩写+文生图+高清_1994569376554754049.json, 图片生成/文生图/【阿良绘】Z_Image+D-OPSD文生图 _ 多维批量生图：新装版（加速出图）_2073289207604592640.json, 图片生成/文生图/【阿良绘】Z_Image+D-OPSD文生图 _ 批量生图🔧_2057395173566533634.json]
+members: [图片生成/文生图/16.tonnie-nunchaku文生图_1997621361398976513.json, 图片生成/文生图/FLUX 2 文生图_1993572229503975426.json, 图片生成/文生图/FLUX 2 电商文生图场景图_2043508628937777153.json, 图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json, 图片生成/文生图/FLUX Kontext 文生图工作流_1946442950954115073.json, 图片生成/文生图/FLUX Nunchaku 5倍噌噌噌加速工作流_1910971389912805378.json, 图片生成/文生图/Flux 文生图+放大_1946760909358555137.json, 图片生成/文生图/宝宝版 文生图_2009166166715011074.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_14
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-Image-Engineer-V4--文生图_2028091411702222850.json、图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json、图片生成/文生图/Z-Image-Turbo + Lora 文生图_2008180292552495105.json、图片生成/文生图/Z-Image-Turbo D-OPSD（提示词自动化）_2062196278603378689.json、图片生成/文生图/Z-image文生图_2035961089313214465.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/16.tonnie-nunchaku文生图_1997621361398976513.json、图片生成/文生图/FLUX 2 文生图_1993572229503975426.json、图片生成/文生图/FLUX 2 电商文生图场景图_2043508628937777153.json、图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json、图片生成/文生图/FLUX Kontext 文生图工作流_1946442950954115073.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
@@ -32,58 +31,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 9/10 个有
-- `CR Prompt Text` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `UNETLoader` —— 8/10 个有
-- `JDCN_StringToList` —— 7/10 个有
-- `ProcessString` —— 7/10 个有
-- `Text Concatenate` —— 7/10 个有
-- `LayerUtility: PurgeVRAM` —— 6/10 个有
-- `RH_LLMAPI_Pro_Node` —— 6/10 个有
-- `Seed (rgthree)` —— 6/10 个有
-- `CR Text Replace` —— 5/10 个有
-- `CR Text` —— 4/10 个有
-- `easy showAnything` —— 4/10 个有
-- `Any Switch (rgthree)` —— 2/10 个有
-- `CheckpointLoaderSimple` —— 2/10 个有
-- `KSamplerAdvanced` —— 2/10 个有
-- `LoadImage` —— 2/10 个有
-- `RunningHub Deepcleaner` —— 2/10 个有
-- `CLIPLoaderGGUF` —— 1/10 个有
-- `DuckHideNode` —— 1/10 个有
-- `GetNode` —— 1/10 个有
-- `ImpactInt` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
-- `Seed` —— 1/10 个有
-- `SeedVR2` —— 1/10 个有
-- `SetNode` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
+- `ConditioningZeroOut` —— 6/8 个有
+- `DualCLIPLoader` —— 6/8 个有
+- `FluxGuidance` —— 6/8 个有
+- `UNETLoader` —— 6/8 个有
+- `DeepTranslatorTextNode` —— 4/8 个有
+- `NunchakuFluxDiTLoader` —— 4/8 个有
+- `CLIPLoader` —— 3/8 个有
+- `PreviewImage` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
+- `PMRF` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1024 - 1240 | 10 | 95% |
-| 高度 | 1920 | 1664 - 1920 | 10 | 96% |
-| 采样步数 | 10 | 8 - 15 | 8 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 12 | 10 | 0% |
-| 采样算法 | euler | - | 10 | 50% |
-| 调度器 | simple | - | 10 | 50% |
+| 宽度 | 1024 | 800 - 1504 | 8 | 79% |
+| 高度 | 1392 | 504 - 1920 | 8 | 68% |
+| 采样步数 | 20 | 10 - 25 | 8 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 62% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1024 - 1240，10 个样本，取值集中（一致性 95%）
-- 高度 中位数 1920，观测区间 1664 - 1920，10 个样本，取值集中（一致性 96%）
-- 采样步数 中位数 10，观测区间 8 - 15，8 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 12，10 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，10 个样本，一致性 50%
-- 调度器 最常用 simple，10 个样本，一致性 50%
+- 宽度 中位数 1024，观测区间 800 - 1504，8 个样本
+- 高度 中位数 1392，观测区间 504 - 1920，8 个样本
+- 采样步数 中位数 20，观测区间 10 - 25，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 62%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

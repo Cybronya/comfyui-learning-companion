@@ -3,56 +3,60 @@ name: image_to_image_sampler_clip_unet_160
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.9155
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.934
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, KSampler, KSamplerSelect, LoadImage, ModelSamplingFlux, RH_Translator, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext、Qwen-Image、横向对比_1960985037900582914.json, 图片生成/图生图/千问编辑模型与kontext对比_1958722027479842818.json]
+members: [图片生成/图生图/Flux Kontext图像编辑开源高清版_1938411357861773313.json, 图片生成/图生图/Flux_Kontext用嘴改图(中文版)+高清放大_1938518384789094401.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_160
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext、Qwen-Image、横向对比_1960985037900582914.json、图片生成/图生图/千问编辑模型与kontext对比_1958722027479842818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Kontext图像编辑开源高清版_1938411357861773313.json、图片生成/图生图/Flux_Kontext用嘴改图(中文版)+高清放大_1938518384789094401.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
+- `EmptySD3LatentImage`
 - `FluxGuidance`
-- `ImageScaleToTotalPixels`
+- `FluxKontextImageScale`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
+- `ModelSamplingFlux`
 - `RH_Translator`
+- `RandomNoise`
 - `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SeedVR2`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 1/2 个有
-- `LayerUtility: ImageReel` —— 1/2 个有
-- `LayerUtility: ImageReelComposit` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `TextEncodeQwenImageEdit` —— 1/2 个有
-- `TextEncodeQwenImageEditEnhanced` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `ApplyFBCacheOnModel` —— 1/2 个有
+- `CR Simple Image Compare` —— 1/2 个有
+- `Florence2ModelLoader` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
 
 ## 典型参数
 
@@ -61,8 +65,8 @@ source: knowledge_consolidation
 | 采样步数 | 20 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 0.08 | - | 2 | 0% |
 
 ## 常见问题
 
@@ -73,6 +77,7 @@ source: knowledge_consolidation
 - 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 0.08，样本不足，未给区间，2 个样本，取值分散，一致性仅 0%
+- 风险：重绘幅度 观测到 0，低于常用下限 0.1（）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

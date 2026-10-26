@@ -1,72 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_125
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.499154
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+frequency: 14
+level: moderate
+coverage: 0.866143
+common_nodes: [CreateCFGScheduleFloatList, DF_Integer, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2_14B_i2v_SVI2_2007636774910173185.json, 视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json, 视频生成/图生视频/video_wan2_2_14B_i2v_lightX2V_1030_1983825079475838977.json, 视频生成/图生视频/video_wan2_2_14B_i2v_lightx2v-1030_1984268065183514625.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1991421095259631618.json, 视频生成/图生视频/video_wan2_2_14B_i2v_painteri2v_1988481476389945345.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi2-painterI2V_1997917830655934465.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi2_1997912298406731777.json, 视频生成/图生视频/video_wan2_2_14B_i2v_vbvr-model_2035400286210105346.json, 视频生成/图生视频/video_wan2_2_14B_i2v_vbvr_lora_2034928021357989889.json, 视频生成/图生视频/video_wan2_2_14B_i2v图生视频_1964155751138775041.json]
+members: [图片生成/文生图/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_2044313653356273666.json, 视频生成/图生视频/Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472962.json, 视频生成/图生视频/wan2.2 kj版_1955015931215822850.json, 视频生成/图生视频/wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.json, 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json, 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1955912718601650177.json, 视频生成/图生视频/wan2.2 图生视频 - 加速优化版_1957829417538088962.json, 视频生成/图生视频/wan2.2 图生视频_1953992101455548418.json, 视频生成/图生视频/wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json, 视频生成/图生视频/静态漫画视频生成ez_1995801916682670082.json, 视频生成/文生视频/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_1950600207669088257.json, 视频生成/文生视频/Wan2.2文生视频+KJ加速版+提示词自动优化_2055539394576166914.json, 视频生成/文生视频/Wan2.2文生视频+KJ加速版+提示词自动优化_2056240799226093570.json, 视频生成/文生视频/wan2.2 图生视频 -  超级加速晋级版_1967469611824373761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_125
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/Wan2.2_14B_i2v_SVI2_2007636774910173185.json、视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json、视频生成/图生视频/video_wan2_2_14B_i2v_lightX2V_1030_1983825079475838977.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Wan2.2 文生视频 - KJ加速版 - 提示词自动优化_2044313653356273666.json、视频生成/图生视频/Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472962.json、视频生成/图生视频/wan2.2 kj版_1955015931215822850.json、视频生成/图生视频/wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.json、视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：50%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
+全部 14 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_Translator`
+- `SimpleMath+`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 9/13 个有
-- `PreviewAny` —— 9/13 个有
-- `WanImageToVideo` —— 9/13 个有
-- `GetImageRangeFromBatch` —— 5/13 个有
-- `PainterI2V` —— 3/13 个有
-- `FlashVSRNode` —— 2/13 个有
-- `WanFirstLastFrameToVideo` —— 2/13 个有
-- `CR SDXL Aspect Ratio` —— 1/13 个有
-- `ColorMatch` —— 1/13 个有
-- `JWStringConcat` —— 1/13 个有
-- `PreviewImage` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `RH_Translator` —— 1/13 个有
+- `GetImageSizeAndCount` —— 13/14 个有
+- `PrimitiveBoolean` —— 13/14 个有
+- `ShowText|pysssss` —— 13/14 个有
+- `easy ifElse` —— 13/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/14 个有
+- `LoadImage` —— 8/14 个有
+- `WanVideoImageToVideoEncode` —— 8/14 个有
+- `RH_Captioner` —— 7/14 个有
+- `RH_LLMAPI_NODE` —— 7/14 个有
+- `string_util_StrReplace` —— 7/14 个有
+- `CR Text` —— 6/14 个有
+- `CR Text Concatenate` —— 6/14 个有
+- `RH_Prompter` —— 6/14 个有
+- `WanVideoEmptyEmbeds` —— 6/14 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/14 个有
+- `GIMMVFI_interpolate` —— 2/14 个有
+- `Display Int (rgthree)` —— 1/14 个有
+- `PreviewImage` —— 1/14 个有
+- `easy batchAnything` —— 1/14 个有
+- `easy cleanGpuUsed` —— 1/14 个有
+- `easy forLoopEnd` —— 1/14 个有
+- `easy forLoopStart` —— 1/14 个有
+- `easy imageIndexSwitch` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 13 | 62% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 13 | 87% |
-| 采样算法 | 1 | 1 - 1 | 13 | 100% |
-| 调度器 | lcm | - | 13 | 100% |
-| 重绘幅度 | simple | - | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,8 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，13 个样本，一致性 62%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，13 个样本，取值集中（一致性 87%）
-- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，13 个样本，一致性 100%
-- 重绘幅度 最常用 simple，13 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

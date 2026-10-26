@@ -2,89 +2,99 @@
 name: text_to_image_lora_sampler_clip_65
 type: Text To Image
 frequency: 16
-level: weak
-coverage: 0.846313
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyImage, EmptyLatentImage, INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, PrimitiveStringMultiline, ResolutionSelector, SaveImage, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy seed]
+level: strong
+coverage: 0.910938
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2超细节增强哈基米版 亚洲美人Lora加持画质提升_2098637955245101058.json, 图片生成/图生图/Krea2超细节增强洗图生图二合一 Qwen3.5自由切换构图控制_2098636397501575170.json, 图片生成/图生图/krea2 超细节增强-多样性洗图生图2合1工作流V2（哈基米自由切换版）😼_2095457143909605378.json, 图片生成/图生图/krea2 超细节增强-构图多样性 洗图生图2合1工作流V2（Qwen3.5自由切换版）😼_2095467409154072577.json, 图片生成/图生图/krea2多样性洗图生图2合1V2｜哈基米模型随心切_2098744493905375233.json, 图片生成/图生图/krea2超细节增强构图多样性｜洗图生图2合1工作流_2095573968009908226.json, 图片生成/图生图/krea2超细节增强洗图2合1V2｜Qwen3.5自由切换_2098740517784875009.json, 图片生成/图生图/krea2超细节增强｜哈基米洗图生图2合1工作流_2095578309022273537.json, 图片生成/图生图/构图多样性洗图生图2合1｜krea2超细节增强Qwen3.5切换版_2095823191347392514.json, 图片生成/文生图/Qwen 2.1超细节洗图生图二合一，支持Qwen 3.5自由切换的反推提示词工作流_2102878744355627010.json, 图片生成/文生图/krea2 超细节增强 洗图生图2合1工作流（自由切换版）_qwen3.5😼_2077340261931380738.json, 图片生成/文生图/krea2 风格之王 全能模型 Qwen3.5自动提示词文生图工作流（自由版）_2070756328192172034.json, 图片生成/文生图/krea2 风格之王 全能模型 deepseekV4自动提示词文生图工作流（自由版）_2070758812876894209.json, 图片生成/文生图/krea2 风格之王 全能模型 gemini自动提示词文生图工作流（自由版）_2070761173187907585.json, 图片生成/文生图/krea2超细节增强 洗图生图2合1工作流（自由切换版）_哈基米版😼_2077326567931473922.json, 视频生成/图生视频/Qwen_2.1超细节洗图生图二合一，支持Qwen_3.5自由切换的反推提示词工作流_2105120232384851969.json]
+members: [图片生成/文生图/图像编辑文生图图生图｜MIniMax-H3图片编辑工作流_2088336424029474818.json, 视频生成/图生视频/8步极速图生视频t8版｜Minimax海螺h3 高质量出片就是这么快_2105519643300548609.json, 视频生成/图生视频/8步极速海螺h3图生视频｜Minimax高质量加速优化版 角色设计在线_2105518161696223233.json, 视频生成/图生视频/8步高质量极速MiniMax H3开源版工作流，文生视频视频生视频图生视频_2106140143164936194.json, 视频生成/图生视频/8步高质量极速Minimax H3开源版｜图生视频高效出片_2108379019711438850.json, 视频生成/图生视频/Dasiwa-MiniMax H3动态最强｜单采参考生视频_2095225077049683969.json, 视频生成/图生视频/Dasiwa参考图生视频｜MinimaxH3一键生成直出_2092358488738586626.json, 视频生成/图生视频/H3双时钟采样4步无损加速图生视频 极速高质量_2098839241043304449.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样｜4步无损加速图生视频出片飞快_2099154403528896514.json, 视频生成/图生视频/MiniMax H3数字人加速版V1｜音频驱动打造音乐MV_2105223015419170818.json, 视频生成/图生视频/MiniMax H3音频驱动数字人 语音口型同步多人对话一键实现_2110352465429352449.json, 视频生成/图生视频/MiniMax H3音频驱动数字人加速版｜参考图生长视频直出_2103697575655333890.json, 视频生成/图生视频/MiniMax H3音频驱动数字人参考生视频长视频直出加速版，图生视频方案_2103992154782789634.json, 视频生成/图生视频/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具，数字人图生视频方案_2108327431890366466.json, 视频生成/图生视频/MiniMax_H3音频驱动数字人多人对话加速版长视频处理工具，数字人生成方案_2109462993590382594.json, 视频生成/图生视频/双时钟采样4步无损加速｜MiniMAX-H3-T8图生视频_2096272908212588545.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_65
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Krea2超细节增强哈基米版 亚洲美人Lora加持画质提升_2098637955245101058.json、图片生成/图生图/Krea2超细节增强洗图生图二合一 Qwen3.5自由切换构图控制_2098636397501575170.json、图片生成/图生图/krea2 超细节增强-多样性洗图生图2合1工作流V2（哈基米自由切换版）😼_2095457143909605378.json、图片生成/图生图/krea2 超细节增强-构图多样性 洗图生图2合1工作流V2（Qwen3.5自由切换版）😼_2095467409154072577.json、图片生成/图生图/krea2多样性洗图生图2合1V2｜哈基米模型随心切_2098744493905375233.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/图像编辑文生图图生图｜MIniMax-H3图片编辑工作流_2088336424029474818.json、视频生成/图生视频/8步极速图生视频t8版｜Minimax海螺h3 高质量出片就是这么快_2105519643300548609.json、视频生成/图生视频/8步极速海螺h3图生视频｜Minimax高质量加速优化版 角色设计在线_2105518161696223233.json、视频生成/图生视频/8步高质量极速MiniMax H3开源版工作流，文生视频视频生视频图生视频_2106140143164936194.json、视频生成/图生视频/8步高质量极速Minimax H3开源版｜图生视频高效出片_2108379019711438850.json…）
 
 - **类型**：Text To Image
 - **样本数**：16
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyImage`
 - `EmptyLatentImage`
-- `INTConstant`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Multiline`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy seed`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 14/16 个有
-- `LoadImage` —— 13/16 个有
-- `Switch any [Crystools]` —— 13/16 个有
-- `ConditioningKrea2Rebalance` —— 11/16 个有
-- `LatentUpscaleBy` —— 11/16 个有
-- `JjkText` —— 9/16 个有
-- `llama_cpp_instruct_adv` —— 9/16 个有
-- `llama_cpp_model_loader` —— 9/16 个有
-- `llama_cpp_parameters` —— 9/16 个有
-- `solarL_SaveImagesToZip` —— 9/16 个有
-- `孤海注释` —— 8/16 个有
-- `Label (rgthree)` —— 7/16 个有
-- `RH_LLMAPI_Pro_Node` —— 7/16 个有
-- `TextEncodeQwenImage21` —— 2/16 个有
-- `TextGenerateLTX2Prompt` —— 2/16 个有
-- `easy showAnything` —— 2/16 个有
-- `PreviewImage` —— 1/16 个有
+- `CR Prompt Text` —— 15/16 个有
+- `ComfyMathExpression` —— 15/16 个有
+- `LoraLoaderBypassModelOnly` —— 15/16 个有
+- `MiniMaxH3AVDecodeT8` —— 15/16 个有
+- `MiniMaxH3AudioConditioningT8` —— 15/16 个有
+- `PrimitiveFloat` —— 15/16 个有
+- `ResolutionSelector` —— 15/16 个有
+- `VHS_VideoCombine` —— 15/16 个有
+- `孤海注释` —— 15/16 个有
+- `ModelAttentionBackend` —— 10/16 个有
+- `SaveImage` —— 8/16 个有
+- `LoadAudio` —— 7/16 个有
+- `SolAttnMiniMax` —— 7/16 个有
+- `GetImageSize` —— 3/16 个有
+- `ImageScaleToTotalPixels` —— 3/16 个有
+- `easy int` —— 3/16 个有
+- `CM_IntToFloat` —— 2/16 个有
+- `PreviewImage` —— 2/16 个有
+- `DuckHideNode` —— 1/16 个有
+- `EmptyImage` —— 1/16 个有
+- `ImageConcanate` —— 1/16 个有
+- `MiniMaxH3StillConditioningT8` —— 1/16 个有
+- `MiniMaxH3StillDecodeT8` —— 1/16 个有
+- `MiniMaxH3StillPreflightT8` —— 1/16 个有
+- `PreviewAny` —— 1/16 个有
+- `PrimitiveStringMultiline` —— 1/16 个有
+- `TimbreAudioLoader` —— 1/16 个有
+- `WujiAudioLoader` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 16 | 5% |
-| 高度 | 80 | 80 - 1536 | 16 | 0% |
-| 采样步数 | 4 | 3 - 8 | 16 | 63% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 16 | 42% |
-| 采样算法 | er_sde | - | 16 | 56% |
-| 调度器 | beta | - | 16 | 56% |
-| 重绘幅度 | 1 | 0.4 - 1 | 16 | 85% |
+| 宽度 | 80 | 80 - 80 | 16 | 100% |
+| 高度 | 80 | 80 - 80 | 16 | 100% |
+| 采样步数 | 4 | 4 - 4 | 16 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 16 | 100% |
+| 采样算法 | er_sde | - | 16 | 100% |
+| 调度器 | beta | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 34/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，16 个样本，取值分散，一致性仅 5%
-- 高度 中位数 80，观测区间 80 - 1536，16 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 3 - 8，16 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，16 个样本，取值分散，一致性仅 42%
-- 采样算法 最常用 er_sde，16 个样本，一致性 56%
-- 调度器 最常用 beta，16 个样本，一致性 56%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，16 个样本，取值集中（一致性 85%）
-- 高发问题（34/16 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，16 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，16 个样本，一致性 100%
+- 调度器 最常用 beta，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 高发问题（19/16 个样本）：Steps较低可能导致细节不足

@@ -3,37 +3,39 @@ name: unknown_workflow_generic_1032
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.966667
-common_nodes: [LoadAudio, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.802333
+common_nodes: [CustomAddLabel, FlashVSRNode, Int, JjkText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/seedance2.0_2046509735351951362.json, 视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json, 视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json]
+members: [图片生成/图生图/地表最强-全能图片G-Image-2-图生图（多图版）-0.1元_次_2074036916235890690.json, 图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-官方稳定版_2048616546322358274.json, 图片生成/图生图/角色概念设计-GP-T-Image-2-地表最强-0.1元_次_2052345638221819906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1032
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/seedance2.0_2046509735351951362.json、视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json、视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/地表最强-全能图片G-Image-2-图生图（多图版）-0.1元_次_2074036916235890690.json、图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-官方稳定版_2048616546322358274.json、图片生成/图生图/角色概念设计-GP-T-Image-2-地表最强-0.1元_次_2052345638221819906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
+- `CustomAddLabel`
+- `FlashVSRNode`
+- `Int`
+- `JjkText`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RH_Veo3_Image2Video` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
 
 ## 典型参数
 

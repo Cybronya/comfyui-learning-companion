@@ -1,42 +1,39 @@
 ---
 name: unknown_workflow_generic_894
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.872333
-common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, easy int]
+coverage: 0.448
+common_nodes: [AudioCrop, CR Text, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2放大_1990990820545372161.json, 图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json, 图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json]
+members: [音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json, 音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_894
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2放大_1990990820545372161.json、图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json、图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json、音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `easy int`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `CR Text`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 1/3 个有
-- `Switch any [Crystools]` —— 1/3 个有
-- `easy compare` —— 1/3 个有
-- `easy imageSize` —— 1/3 个有
+- `IndexTTS2Run` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `RH_IndexTTS25_Loader` —— 2/4 个有
+- `RH_IndexTTS25_Synthesize` —— 2/4 个有
 
 ## 典型参数
 

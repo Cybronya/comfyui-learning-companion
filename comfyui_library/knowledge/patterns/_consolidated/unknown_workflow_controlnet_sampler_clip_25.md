@@ -1,67 +1,69 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_25
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8435
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, INTConstant, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.936
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, INTConstant, ImageConcanate, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, PreviewImage, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZImageFunControlnet, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/001.Z-image生图巅峰015.文件夹CN-批量洗图_2033748758348959745.json, 图片生成/文生图/节点系列11-图像拼接Image Stitch节点_2012816521986314241.json]
+members: [图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_1996867719981146113.json, 图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_2066055918607200256.json, 图片生成/图生图/生图-图生图遮罩区域重绘-Z_Image_2003301510870138881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/001.Z-image生图巅峰015.文件夹CN-批量洗图_2033748758348959745.json、图片生成/文生图/节点系列11-图像拼接Image Stitch节点_2012816521986314241.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_1996867719981146113.json、图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_2066055918607200256.json、图片生成/图生图/生图-图生图遮罩区域重绘-Z_Image_2003301510870138881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptySD3LatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetImageSizeAndCount`
 - `INTConstant`
+- `ImageConcanate`
 - `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `ModelPatchLoader`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `ZImageFunControlnet`
+- `easy anythingIndexSwitch`
+- `easy int`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 1/2 个有
-- `LoadImageListFromDir //Inspire` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `RB_SaveImages` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `RH_Captioner` —— 2/3 个有
+- `MaskToImage` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 10 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 2 | 50% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 67% |
 
 ## 常见问题
 
@@ -69,9 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，2 个样本，一致性 50%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 67%

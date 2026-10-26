@@ -1,87 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_489
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.85925
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, ImpactConditionalBranch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+frequency: 5
+level: moderate
+coverage: 0.8386
+common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, Display Int (rgthree), INTConstant, ImageConcanate, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewImage, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json, 视频生成/图生视频/LTX 2.3 剧情向工作流｜首尾帧 _ 转场 _ 双人对话 LoRA 全整合_2053296155462782978.json, 视频生成/文生视频/LTX2.3 PromptRelay 四合一全能音视频工作流_2054463722072092674.json, 视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json]
+members: [视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json, 视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json, 视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json, 视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json, 视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_489
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json、视频生成/图生视频/LTX 2.3 剧情向工作流｜首尾帧 _ 转场 _ 双人对话 LoRA 全整合_2053296155462782978.json、视频生成/文生视频/LTX2.3 PromptRelay 四合一全能音视频工作流_2054463722072092674.json、视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json、视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json、视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json、视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json、视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoaderGGUF`
-- `EmptyLTXVLatentVideo`
-- `ImpactConditionalBranch`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+全部 5 个 workflow 都包含：
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `DWPreprocessor`
+- `Display Int (rgthree)`
+- `INTConstant`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PreviewImage`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `ToInt`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVEnhanceAVideoKJ` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `GetImageSize` —— 2/4 个有
-- `KSamplerSelect` —— 2/4 个有
-- `LTXVAddGuide` —— 2/4 个有
-- `LTXVImgToVideoInplace` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LTXVReferenceAudio` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `PromptRelayEncodeTimeline` —— 2/4 个有
-- `ResizeImagesByLongerEdge` —— 2/4 个有
-- `SamplerEulerAncestral` —— 2/4 个有
-- `VHS_LoadAudioUpload` —— 2/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `TrimAudioDuration` —— 1/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
+- `GIMMVFI_interpolate` —— 4/5 个有
+- `ImageFlip+` —— 4/5 个有
+- `DepthAnythingPreprocessor` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `WanVideoLoraSelect` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,5 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,53 +2,58 @@
 name: unknown_workflow_sampler_clip_unet_220
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.858167
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxSamplerParams+, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.833167
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/高清放大4K_2092084125342724098.json, 图片生成/图生图/高清放大4K_2092528398777282562.json, 图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json, 图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json, 图片生成/文生图/高清放大4K_2015373674332823554.json, 图片生成/文生图/高清放大4K_2091148212773146625.json]
+members: [图片生成/图生图/Image_capybara_v0_1_image_edit_2027040053440024577.json, 图片生成/图生图/Image_capybara_v0_1_image_edit_fast_2027042674460594177.json, 图片生成/文生图/Image_capybara_v0_1_text_to_image_2026943093957730306.json, 图片生成/文生图/Image_capybara_v0_1_text_to_image_fast_2027038386724278274.json, 视频生成/图生视频/video_capybara_v0_1_image_to_video_2026952696527327234.json, 视频生成/图生视频/video_capybara_v0_1_image_to_video_fast_2027031167693754370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_220
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/高清放大4K_2092084125342724098.json、图片生成/图生图/高清放大4K_2092528398777282562.json、图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json、图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json、图片生成/文生图/高清放大4K_2015373674332823554.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Image_capybara_v0_1_image_edit_2027040053440024577.json、图片生成/图生图/Image_capybara_v0_1_image_edit_fast_2027042674460594177.json、图片生成/文生图/Image_capybara_v0_1_text_to_image_2026943093957730306.json、图片生成/文生图/Image_capybara_v0_1_text_to_image_fast_2027038386724278274.json、视频生成/图生视频/video_capybara_v0_1_image_to_video_2026952696527327234.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxSamplerParams+`
-- `SaveImage`
+- `KSamplerSelect`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 5/6 个有
-- `UltimateSDUpscale` —— 5/6 个有
-- `UpscaleModelLoader` —— 5/6 个有
+- `CLIPVisionEncode` —— 4/6 个有
+- `CLIPVisionLoader` —— 4/6 个有
+- `HunyuanVideo15ImageToVideo` —— 4/6 个有
 - `LoadImage` —— 4/6 个有
-- `PreviewImage` —— 2/6 个有
-- `LoraLoader` —— 1/6 个有
-- `Note _O` —— 1/6 个有
+- `SaveImage` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `CreateVideo` —— 2/6 个有
+- `EmptyHunyuanVideo15Latent` —— 2/6 个有
+- `GetImageSize` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `ResizeAndPadImage` —— 2/6 个有
+- `ResizeImageMaskNode` —— 2/6 个有
+- `SaveVideo` —— 2/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -56,5 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

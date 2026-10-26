@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_140
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.868286
-common_nodes: [Anything Everywhere3, CLIPLoader, Int Literal, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.878375
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json, 图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json, 图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json, 图片生成/图生图/产品精修_2018514606955700225.json, 图片生成/图生图/人物多角度_2018509506082250754.json, 图片生成/图生图/多角度视角转换 人物一致性 （单图）_2043566764419715074.json, 图片生成/图生图/多角度视角转换 人物一致性_2043568856052015105.json]
+members: [视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json, 视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json, "视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json", 视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json, 视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json, 视频生成/文生视频/DG_h3+ref2va+最大1280无加速lora高质量_2087798268825792513.json, 视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json, 视频生成/文生视频/DG_音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2085981571416416257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_140
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json、图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json、图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json、图片生成/图生图/产品精修_2018514606955700225.json、图片生成/图生图/人物多角度_2018509506082250754.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json、视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json、视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json、视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json、视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `Int Literal`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerSelect`
 - `LoadImage`
-- `PainterFluxImageEdit`
-- `SaveImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `MemoryCleaner` —— 4/7 个有
-- `SeedVR2` —— 4/7 个有
-- `SeedVR2ExtraArgs` —— 4/7 个有
-- `QwenMultiangleCameraNode` —— 3/7 个有
-- `Text` —— 2/7 个有
+- `AudioCrop` —— 7/8 个有
+- `LoadAudio` —— 7/8 个有
+- `PreviewAudio` —— 7/8 个有
+- `SoundFlow_GetLength` —— 7/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 7/8 个有
+- `ComfyMathExpression` —— 6/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/8 个有
+- `PrimitiveFloat` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 6/8 个有
+- `VHS_VideoCombine` —— 6/8 个有
+- `Getter` —— 4/8 个有
+- `ImageConcatMulti` —— 4/8 个有
+- `Setter` —— 4/8 个有
+- `CreateVideo` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `VHS_LoadVideo` —— 3/8 个有
+- `JjkText` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `easy showAnything` —— 2/8 个有
+- `EasyCache` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `MiniMaxH3AVDecodeT8` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `VAEDecodeAudio` —— 1/8 个有
+- `VideoInfoLoaded` —— 1/8 个有
+- `easy anythingIndexSwitch` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 19/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（19/7 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

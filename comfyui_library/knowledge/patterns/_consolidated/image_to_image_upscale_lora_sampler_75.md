@@ -3,61 +3,74 @@ name: image_to_image_upscale_lora_sampler_75
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.8695
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetImageSize+, Image Comparer (rgthree), ImagePadForOutpaint, ImagePadKJ, ImageResize+, ImageResizeKJv2, ImageScaleBy, ImpactFloat, ImpactInt, KSampler, LayerUtility: ImageScaleRestore, LayerUtility: NumberCalculatorV2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+coverage: 0.919
+common_nodes: [AdvancedLyingSigmaSampler, CFGNorm, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, FluxKontextImageScale, Image Comparer (rgthree), ImageResize+, ImageUpscaleWithModel, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, UltimateSDUpscaleCustomSample, Upscale Model Loader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy int]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image Edit 扩图编辑生成+ 高清放大工作流_2053184265336176642.json, 图片生成/图生图/Qwen_Image_Edit_扩图编辑生成+_高清放大工作流_2053323773025243138.json]
+members: [图片生成/图生图/FireRed-Image-edit1.1双图编辑（商业服装换装放大）_1978001893874171906.json, 图片生成/图生图/FireRed-Image-edit1.1批量换装_2031180219440177154.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image Edit 扩图编辑生成+ 高清放大工作流_2053184265336176642.json、图片生成/图生图/Qwen_Image_Edit_扩图编辑生成+_高清放大工作流_2053323773025243138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-edit1.1双图编辑（商业服装换装放大）_1978001893874171906.json、图片生成/图生图/FireRed-Image-edit1.1批量换装_2031180219440177154.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AdvancedLyingSigmaSampler`
 - `CFGNorm`
 - `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize+`
+- `FluxKontextImageScale`
 - `Image Comparer (rgthree)`
-- `ImagePadForOutpaint`
-- `ImagePadKJ`
 - `ImageResize+`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImpactFloat`
-- `ImpactInt`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LayerUtility: ImageScaleRestore`
-- `LayerUtility: NumberCalculatorV2`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `UltimateSDUpscaleCustomSample`
+- `Upscale Model Loader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageSize`
+- `easy cleanGpuUsed`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `Any Switch (rgthree)` —— 1/2 个有
+- `BatchCount+` —— 1/2 个有
+- `Display Int (rgthree)` —— 1/2 个有
+- `Get resolution [Crystools]` —— 1/2 个有
+- `ImageBatchMultiple+` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `TTP_Image_Assy` —— 1/2 个有
+- `TTP_Image_Tile_Batch` —— 1/2 个有
+- `TTP_Tile_image_size` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
 
 ## 典型参数
 

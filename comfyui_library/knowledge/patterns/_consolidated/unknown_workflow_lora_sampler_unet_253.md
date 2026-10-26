@@ -3,58 +3,62 @@ name: unknown_workflow_lora_sampler_unet_253
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.905
-common_nodes: [CLIPLoader, CR Prompt Text, Cut By Mask, Image Comparer (rgthree), InvertMask (segment anything), KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, MaskToImage, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UC_ImagePad, UNETLoader, VAEDecode, VAELoader, 图像缩放V2_孤海, 孤海注释]
+coverage: 0.821
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyLatentImage, Getter, ImageResizeKJv2, ImageScaleBy, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, QZ_ResolutionPreset, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, Setter, Text, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-2.1光影溶图_2104916372500340738.json, 图片生成/图生图/Qwen-Image-2.1纠正背景透视溶图_2106759126654218241.json]
+members: [图片生成/反推提示词/qwen-edit+eigen-全能图片V1_2002654969859829761.json, 图片生成/图生图/【ai代码侠土豆】qwen-edit+eigen-全能图片V1_1991807541174751234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_253
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-2.1光影溶图_2104916372500340738.json、图片生成/图生图/Qwen-Image-2.1纠正背景透视溶图_2106759126654218241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/qwen-edit+eigen-全能图片V1_2002654969859829761.json、图片生成/图生图/【ai代码侠土豆】qwen-edit+eigen-全能图片V1_1991807541174751234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Prompt Text`
-- `Cut By Mask`
-- `Image Comparer (rgthree)`
-- `InvertMask (segment anything)`
-- `KSamplerAdvanced`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `Getter`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `ImageStitch`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `QZ_ResolutionPreset`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `TextEncodeQwenImage21`
-- `UC_ImagePad`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `Setter`
+- `Text`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `图像缩放V2_孤海`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 26 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+| 宽度 | 1984 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -62,10 +66,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 26，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 26，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 1984，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

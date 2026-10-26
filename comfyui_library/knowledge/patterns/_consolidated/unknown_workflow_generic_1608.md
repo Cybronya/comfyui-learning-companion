@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CR Text, LoadImage, Preview from image [Crystools], RH_BytedanceSeedance20GlobalMultimodalVideo, RH_RhartImageG2ImageToImage, SaveVideo, easy imageSave]
+common_nodes: [RH_SeedanceV15ProTextToVideoFast, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/seedance2.0  视频工作流 十六宫格 可产品展示可跳舞 可故事短片_2050282335001690113.json, 视频生成/文生视频/【引流打窝视频】产品 拳皇争霸   上传产品 PK 竞品_2050981745251635201.json]
+members: [图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json, 视频生成/文生视频/SeedanceV15ProTextToVideoFast_2038487835606519810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1608
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/seedance2.0  视频工作流 十六宫格 可产品展示可跳舞 可故事短片_2050282335001690113.json、视频生成/文生视频/【引流打窝视频】产品 拳皇争霸   上传产品 PK 竞品_2050981745251635201.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json、视频生成/文生视频/SeedanceV15ProTextToVideoFast_2038487835606519810.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,17 +23,11 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `Preview from image [Crystools]`
-- `RH_BytedanceSeedance20GlobalMultimodalVideo`
-- `RH_RhartImageG2ImageToImage`
+- `RH_SeedanceV15ProTextToVideoFast`
 - `SaveVideo`
-- `easy imageSave`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
 
 ## 典型参数
 

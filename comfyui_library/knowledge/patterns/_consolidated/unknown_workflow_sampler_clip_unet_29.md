@@ -1,67 +1,81 @@
 ---
 name: unknown_workflow_sampler_clip_unet_29
 type: Unknown Workflow
-frequency: 23
+frequency: 21
 level: moderate
-coverage: 0.944043
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.795524
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Flux2 Klein 文生图 9B版，官方版_2015074255158910977.json, 图片生成/文生图/Flux2 Klein 文生图9B_10秒出图_2012086959107219458.json, 图片生成/文生图/Flux2 Klein 文生图9B版_2012014139270500354.json, 图片生成/文生图/Flux2 Klein 文生图9B版_极速10秒出图_2012051332127006722.json, 图片生成/文生图/Flux2 Klein 文生图_2020763009353785346.json, 图片生成/文生图/Flux2 Klein 文生图_2025932476836749314.json, 图片生成/文生图/Flux2 Klein 文生图_2028304337616769026.json, 图片生成/文生图/Flux2 Klein 文生图_2070321896603873281.json, 图片生成/文生图/Flux2 Klein 文生图_2070323795138801666.json, 图片生成/文生图/Flux2 Klein 文生图_2070331931929178114.json, 图片生成/文生图/Flux2_Klein 文生图9B版-官方版-4步_2012020314640748545.json, 图片生成/文生图/Flux2文生图工作流_1993530593369587713.json, 图片生成/文生图/Flux2文生图工作流_1993542491129446401.json, 图片生成/文生图/Flux3_Klein图像编辑工作流_2111476889922662402.json, 图片生成/文生图/danotebook-ernie-image-turbo_2062464622694854657.json, 图片生成/文生图/flux.2-4b-文生图-标准版-（必收藏）_2052387127085813761.json, 图片生成/文生图/flux2.0_1995304483615858689.json, 图片生成/文生图/【遇见AI】ernie-image-turbo文生图_2046172974834786305.json, 图片生成/文生图/【遇见AI】ernie-image文生图_2046172899383447554.json, 图片生成/文生图/最新ERNIE-Image-Turbo 文生图_2046566486847787009.json, 图片生成/文生图/治愈极简印象油画风｜日系氛围感风景插画｜温柔治愈扁平厚涂 CG 光影美学_2046565807789969410.json, 图片生成/文生图/鞋履_1914548552176205826.json, 图片生成/文生图/鞋履_2040302614029537281.json]
+members: [图片生成/图生图/ComfyUI电商换装：男女装一套流搞定，全节点注释喂饭级教学_2062768387176095745.json, 图片生成/图生图/DG_Flux2-klein单图+双图编辑工作流_2012101006372376578.json, 图片生成/图生图/F.2-klein-9B一键转漫画_2016138424301916161.json, 图片生成/图生图/F.2Klein9b专业证件照人像精修_2054409238532894721.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054205043909382146.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054363365077725186.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2057662197085589505.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致 图片换背景_2092964367598968834.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致_2083502820053049346.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致_2083532831615176705.json, 图片生成/图生图/F2-klein-9B_产品_人物_换背景_光源一致_图片换背景_2093514978438508546.json, 图片生成/图生图/F2-klein-9B万物溶图_2027384708258078721.json, 图片生成/图生图/F2-klein-9B万物迁移2.0_2025429156120498178.json, 图片生成/图生图/F2-klein-9B万物迁移2.0_2057717802529812481.json, 图片生成/图生图/F2-klein-9B产品精修2.0_2027658019277905921.json, 图片生成/图生图/F2-klein-9B换背景_2028738168064839682.json, 图片生成/图生图/F2k_9B_移除文字+高清放大_2019016429546246145.json, 图片生成/图生图/Flux2 Klein LoRA效果测试_2033882764415602689.json, 图片生成/图生图/Flux2-klein-提取服装_2023254759578279937.json, 图片生成/图生图/f2k-9B-产品精修_2020706793617362946.json, 图片生成/图生图/产品精修_2072889271643623426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_29
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/文生图/Flux2 Klein 文生图 9B版，官方版_2015074255158910977.json、图片生成/文生图/Flux2 Klein 文生图9B_10秒出图_2012086959107219458.json、图片生成/文生图/Flux2 Klein 文生图9B版_2012014139270500354.json、图片生成/文生图/Flux2 Klein 文生图9B版_极速10秒出图_2012051332127006722.json、图片生成/文生图/Flux2 Klein 文生图_2020763009353785346.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/ComfyUI电商换装：男女装一套流搞定，全节点注释喂饭级教学_2062768387176095745.json、图片生成/图生图/DG_Flux2-klein单图+双图编辑工作流_2012101006372376578.json、图片生成/图生图/F.2-klein-9B一键转漫画_2016138424301916161.json、图片生成/图生图/F.2Klein9b专业证件照人像精修_2054409238532894721.json、图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054205043909382146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 21 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 22/23 个有
-- `CR Text` —— 8/23 个有
-- `FluxGuidance` —— 5/23 个有
-- `LoadImage` —— 5/23 个有
-- `FlexLoraLoaderModelOnly` —— 2/23 个有
-- `Int` —— 2/23 个有
-- `ReferenceMultiLatent` —— 1/23 个有
+- `ConditioningZeroOut` —— 20/21 个有
+- `EmptyFlux2LatentImage` —— 20/21 个有
+- `CR Text` —— 19/21 个有
+- `LoraLoaderModelOnly` —— 19/21 个有
+- `Flux2Scheduler` —— 17/21 个有
+- `GetImageSize` —— 16/21 个有
+- `GetNode` —— 15/21 个有
+- `SetNode` —— 15/21 个有
+- `LayerUtility: ImageReel` —— 14/21 个有
+- `LayerUtility: ImageReelComposit` —— 14/21 个有
+- `Image Comparer (rgthree)` —— 13/21 个有
+- `easy imageScaleDownToSize` —— 13/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/21 个有
+- `ImageScaleToTotalPixels` —— 8/21 个有
+- `Int` —— 6/21 个有
+- `SeedVR2LoadDiTModel` —— 6/21 个有
+- `SeedVR2LoadVAEModel` —— 6/21 个有
+- `SeedVR2VideoUpscaler` —— 6/21 个有
+- `easy cleanGpuUsed` —— 6/21 个有
+- `BasicScheduler` —— 4/21 个有
+- `JWInteger` —— 4/21 个有
+- `easy promptConcat` —— 4/21 个有
+- `easy showAnything` —— 4/21 个有
+- `CR Index` —— 1/21 个有
+- `JWFloat` —— 1/21 个有
+- `Text` —— 1/21 个有
+- `easy anythingIndexSwitch` —— 1/21 个有
+- `easy imageSize` —— 1/21 个有
+- `easy int` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 22 | 23 | 48% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 23 | 46% |
-| 采样算法 | euler | - | 23 | 100% |
-| 调度器 | simple | - | 23 | 96% |
-| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 13/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 22，23 个样本，取值分散，一致性仅 48%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，23 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 euler，23 个样本，一致性 100%
-- 调度器 最常用 simple，23 个样本，一致性 96%
-- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 高发问题（13/23 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

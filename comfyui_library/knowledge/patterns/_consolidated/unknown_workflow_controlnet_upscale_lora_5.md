@@ -3,59 +3,69 @@ name: unknown_workflow_controlnet_upscale_lora_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.903
-common_nodes: [AIO_Preprocessor, APersonMaskGenerator, CLIPTextEncode, CR Apply LoRA Stack, CR Apply Multi-ControlNet, CR LoRA Stack, CR Multi-ControlNet Stack, CR Simple Image Compare, CheckpointLoaderSimple, ConstrainImage|pysssss, DetailerForEachDebugPipe, GrowMaskWithBlur, ImageCompositeMasked, ImageUpscaleWithModel, ImpactSimpleDetectorSEGS, LoadImage, MaskToSEGS, PreviewImage, SAMLoader, SEGSSwitch, SaveImage, ToBasicPipe, UltralyticsDetectorProvider, UpscaleModelLoader, VAELoader]
+coverage: 0.778
+common_nodes: [AILab_QwenVL, BasicScheduler, CFGGuider, CLIPLoader, CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, Image Comparer (rgthree), ImageBlur, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, RandomNoise, SamplerCustom, SamplerCustomAdvanced, SamplerEulerAncestral, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy cleanGpuUsed, easy positive, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json, 图片生成/图生图/一键纹身工作流_1894337929311879169.json]
+members: [图片生成/图生图/二维码美化防检测_2083209367024922626.json, 图片生成/文生图/SD1.5-艺术二维码-二维码美化_2026877662597222401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_lora_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json、图片生成/图生图/一键纹身工作流_1894337929311879169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/二维码美化防检测_2083209367024922626.json、图片生成/文生图/SD1.5-艺术二维码-二维码美化_2026877662597222401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `APersonMaskGenerator`
+- `AILab_QwenVL`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPSetLastLayer`
 - `CLIPTextEncode`
-- `CR Apply LoRA Stack`
-- `CR Apply Multi-ControlNet`
-- `CR LoRA Stack`
-- `CR Multi-ControlNet Stack`
-- `CR Simple Image Compare`
 - `CheckpointLoaderSimple`
-- `ConstrainImage|pysssss`
-- `DetailerForEachDebugPipe`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
-- `ImageUpscaleWithModel`
-- `ImpactSimpleDetectorSEGS`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
+- `Image Comparer (rgthree)`
+- `ImageBlur`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskToSEGS`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewAny`
 - `PreviewImage`
-- `SAMLoader`
-- `SEGSSwitch`
+- `RandomNoise`
+- `SamplerCustom`
+- `SamplerCustomAdvanced`
+- `SamplerEulerAncestral`
 - `SaveImage`
-- `ToBasicPipe`
-- `UltralyticsDetectorProvider`
-- `UpscaleModelLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAEEncodeTiled`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `AddMask` —— 1/2 个有
-- `SegsToCombinedMask` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy positive`
+- `easy promptConcat`
+- `easy showAnything`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| ControlNet 权重 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -63,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

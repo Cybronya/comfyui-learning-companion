@@ -1,92 +1,77 @@
 ---
 name: image_to_image_sampler_vae_19
 type: Image To Image
-frequency: 7
-level: strong
-coverage: 0.447714
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, GetNode, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.962125
+common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/动作模仿-人物一致性-10S出图_2001928140073103361.json, 图片生成/图生图/多角度-人物一致性_1997274319640268802.json, 图片生成/图生图/超级360°姿态生成生成各种朝向_1979064149919567874.json, 图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版 阿硕_1980485872774762497.json, 图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json, 图片生成/文生图/一张图生成人物全角度_2011206036333535234.json, 图片生成/文生图/人物全角度一致性-加速版 -邻家AI大女孩_2043564088546041858.json]
+members: [图片生成/图生图/LH-DMT版本-2.生图片类-023.Z_image_turbo图生图_2016484447947853825.json, 图片生成/图生图/Magic-Wan2.2-V2洗图工作流_1994768271901700098.json, 图片生成/图生图/Magic-Wan2.2-洗图工作流_1995468058045112322.json, 图片生成/图生图/Multiple-angles 一致性多角度_2073250359262404610.json, 图片生成/图生图/Qwen image edit plus和自己相拥_1970442909982093313.json, 图片生成/图生图/Qwen-Edit-2511 人物姿势模仿工作流_2091518524282990593.json, 图片生成/图生图/Qwen-Image-Edit 2509：冬日萌宠童话，一键入画，定格魔法瞬间！_1987879653480271873.json, 图片生成/文生图/人像数据集生成_2073290538132004866.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/动作模仿-人物一致性-10S出图_2001928140073103361.json、图片生成/图生图/多角度-人物一致性_1997274319640268802.json、图片生成/图生图/超级360°姿态生成生成各种朝向_1979064149919567874.json、图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版 阿硕_1980485872774762497.json、图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LH-DMT版本-2.生图片类-023.Z_image_turbo图生图_2016484447947853825.json、图片生成/图生图/Magic-Wan2.2-V2洗图工作流_1994768271901700098.json、图片生成/图生图/Magic-Wan2.2-洗图工作流_1995468058045112322.json、图片生成/图生图/Multiple-angles 一致性多角度_2073250359262404610.json、图片生成/图生图/Qwen image edit plus和自己相拥_1970442909982093313.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：45%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGNorm`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `GetNode`
-- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
-- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 6/7 个有
-- `PrimitiveString` —— 6/7 个有
-- `RHHiddenNodes` —— 6/7 个有
-- `ImageFlip` —— 5/7 个有
-- `Label (rgthree)` —— 5/7 个有
-- `Mute / Bypass Repeater (rgthree)` —— 5/7 个有
-- `Mute / Bypass Relay (rgthree)` —— 4/7 个有
-- `easy bookmark` —— 4/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `DWPreprocessor` —— 1/7 个有
-- `GroundingDinoModelLoader (segment anything2)` —— 1/7 个有
-- `NunchakuQwenImageDiTLoader` —— 1/7 个有
-- `NunchakuQwenImageLoraLoader` —— 1/7 个有
-- `SDPoseOODLoader` —— 1/7 个有
-- `SDPoseOODProcessor` —— 1/7 个有
-- `YOLOModelLoader` —— 1/7 个有
-- `孤海注释` —— 1/7 个有
+- `UNETLoader` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `ModelSamplingAuraFlow` —— 6/8 个有
+- `CFGNorm` —— 5/8 个有
+- `CLIPTextEncode` —— 5/8 个有
+- `TextEncodeQwenImageEditPlus` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `CR Prompt List` —— 2/8 个有
+- `CR Text` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `SaveImageKJ` —— 2/8 个有
+- `StringConcatenate` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `DWPreprocessor` —— 1/8 个有
+- `NunchakuQwenImageDiTLoader` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `TextEncodeQwenImageEdit` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 960 | 720 - 960 | 7 | 91% |
-| 高度 | 1304 | 1024 - 1304 | 7 | 92% |
+| 采样步数 | 6 | 4 - 9 | 8 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 50% |
+| 重绘幅度 | 1 | 0.23 - 1 | 8 | 59% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 90/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 960，观测区间 720 - 960，7 个样本，取值集中（一致性 91%）
-- 高度 中位数 1304，观测区间 1024 - 1304，7 个样本，取值集中（一致性 92%）
-- 高发问题（90/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 4 - 9，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 0.23 - 1，8 个样本
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

@@ -3,35 +3,37 @@ name: unknown_workflow_generic_684
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.82725
-common_nodes: [JjkText, LoadImage, SaveImage]
+coverage: 0.764
+common_nodes: [LoadAudio, LoadImage, PreviewAny, RH_FireRedAudioLoader, SaveImage, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0_2054867995964526594.json, 图片生成/图生图/全能图片Pro_2054847388522696706.json, 图片生成/文生图/全能图像2 3.1-flash-image 全能图片_2027228858046488578.json, 图片生成/文生图/全能图像V2 极速质量版_2027236295986122753.json]
+members: [图片生成/反推提示词/FireRed Audio ASR语音转译文字_2093559905507700737.json, 图片生成/反推提示词/Firered Audio Unstand语音理解_2093560835770769410.json, 音频生成/音频生成/FireRed Audio ASR语音转文字2608_2094001942090575874.json, 音频生成/音频生成/FireRed Audio语音理解2608_2094002011908956162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_684
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片2.0_2054867995964526594.json、图片生成/图生图/全能图片Pro_2054847388522696706.json、图片生成/文生图/全能图像2 3.1-flash-image 全能图片_2027228858046488578.json、图片生成/文生图/全能图像V2 极速质量版_2027236295986122753.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/FireRed Audio ASR语音转译文字_2093559905507700737.json、图片生成/反推提示词/Firered Audio Unstand语音理解_2093560835770769410.json、音频生成/音频生成/FireRed Audio ASR语音转文字2608_2094001942090575874.json、音频生成/音频生成/FireRed Audio语音理解2608_2094002011908956162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JjkText`
+- `LoadAudio`
 - `LoadImage`
+- `PreviewAny`
+- `RH_FireRedAudioLoader`
 - `SaveImage`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
-- `SetNode` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `RH_FireRedAudioASR` —— 2/4 个有
+- `RH_FireRedAudioUnderstand` —— 2/4 个有
 
 ## 典型参数
 

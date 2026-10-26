@@ -3,58 +3,59 @@ name: unknown_workflow_video_lora_sampler_544
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.52025
-common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.92325
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json, 视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json, 视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json, 视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json]
+members: [视频生成/图生视频/AI脑洞狮--图生视频_2035035563962671105.json, 视频生成/图生视频/Wan2.2_首尾帧视频_4步极速版_ComfyUI官方流_2017568784646672385.json, 视频生成/图生视频/Wan2.2首尾帧工作流ComfyUI官方流_2050472487972032513.json, 视频生成/图生视频/首尾帧图生视频工作流_2066470344814321666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_544
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json、视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json、视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json、视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI脑洞狮--图生视频_2035035563962671105.json、视频生成/图生视频/Wan2.2_首尾帧视频_4步极速版_ComfyUI官方流_2017568784646672385.json、视频生成/图生视频/Wan2.2首尾帧工作流ComfyUI官方流_2050472487972032513.json、视频生成/图生视频/首尾帧图生视频工作流_2066470344814321666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `CR SDXL Aspect Ratio` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `ImageResize+` —— 3/4 个有
+- `WanFirstLastFrameToVideo` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `Int` —— 2/4 个有
+- `ImpactImageInfo` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `VAEDecodeTiled` —— 1/4 个有
+- `WanImageToVideo` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 50% |
+| Prompt 约束强度(CFG) | 7 | 6 - 12 | 4 | 69% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -62,4 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 12，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

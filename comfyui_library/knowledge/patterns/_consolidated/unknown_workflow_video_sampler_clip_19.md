@@ -1,35 +1,44 @@
 ---
 name: unknown_workflow_video_sampler_clip_19
 type: Unknown Workflow
-frequency: 20
+frequency: 21
 level: strong
-coverage: 0.75835
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageConcatMulti, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.932238
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ColorMatch, GetImageSizeAndCount, ImageFromBatch, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, ModelPatchLoader, ModelSamplingSD3, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/动漫首尾帧_Wan2.2_DaSiWa8.1_2021468643665645570.json, 视频生成/图生视频/双图首尾帧+动漫真人通用-电影质感动漫DaSiWaV9_2013628693922455554.json, 视频生成/图生视频/图生视频 最强视频生成 首尾三图首尾帧_2031688685132976129.json, 视频生成/图生视频/图生视频-WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2070316679850188801.json, 视频生成/图生视频/图生视频-老照片动起来_2085169884861919234.json, 视频生成/图生视频/图生视频三图生成_2044969480081641474.json, 视频生成/图生视频/图生视频流-支持单图 _ 双图 _ 三图 出视频（最高支持五图）_1993305632644284418.json, 视频生成/图生视频/最强动漫图生视频DaSiWaV9_支持单图 _首尾帧 _三图_2026126514126852097.json, 视频生成/图生视频/最强动漫模型DaSiWa8.1视频流 浮云1.19_2013098243374190593.json, 视频生成/图生视频/最强动漫模型DaSiWa8.1视频流-支持单图 _双图 _ 三图 出视频_2007697248326520833.json, 视频生成/图生视频/最强动漫模型DaSiWa8.1首帧中间帧和尾帧出视频_2009925117761032194.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2012911713028415489.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2043636549258055682.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2051946371376267266.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2056991338461229058.json, 视频生成/图生视频/最强动漫视频生成DaSiWaV9：支持单图、首尾帧及三图首尾帧创作工作流_2019973370779013122.json, 视频生成/图生视频/最强动漫视频生成支持单图+首尾帧_2016351598326321154.json, 视频生成/图生视频/最强短剧 动漫视频 生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2017586752311005186.json, 视频生成/图生视频/最强短剧 动漫视频 生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2019702921687998465.json, 视频生成/图生视频/液体滴落到产品上_2001566408855154689.json]
+members: [数字人/数字人/Infinite Talk 首尾帧 数字人_2016883180711714818.json, 数字人/数字人/Infinite Talk首尾帧数字人_2017049425356525570.json, "数字人/数字人/首尾帧_对口型_数字人_Qwen3TTS,InfiniTetalk_2020864306186821634.json", 视频生成/图生视频/(无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_2018664165719674881.json, 视频生成/图生视频/Infinite Talk首尾帧+配音_2021116257344430081.json, 视频生成/图生视频/Infinite Talk首尾帧数字人V1_2015752366074634241.json, 视频生成/图生视频/Infinite Talk首尾帧数字人_2016752673365696514.json, 视频生成/图生视频/Infinite Talk首尾帧数字人_2033541040463941633.json, 视频生成/图生视频/Infinite Talk首尾帧数字人_2042479951521259521.json, 视频生成/图生视频/Infinite Talk首尾帧数字人_2073309220157607937.json, 视频生成/图生视频/Infinite Talk首尾帧数字人对口型 林耀_2016709781737709569.json, 视频生成/图生视频/Infinite Talk首尾帧数字人，高动态、一致性好！_2020750694147432450.json, 视频生成/图生视频/InfiniteTalk 首尾帧数字人_2019071015162224642.json, 视频生成/图生视频/Qwen3TTS   InfiniTetalk  对口型   数字人 首尾帧_2034894867540742145.json, 视频生成/图生视频/【音视一体】首尾帧生视频+对口型同步—Wan2.2 与 Qwen3TTS 的珠联璧合！_2042659956331122690.json, 视频生成/图生视频/数字人音频驱动 首尾帧图生视频 wan2.2 + Infinite Talk 首尾帧数字人_2017835237677469697.json, 视频生成/图生视频/给T8一个关注贞贞版V1（Infinite Talk首尾帧数字人）_2016520007626268673.json, 视频生成/图生视频/首尾帧+声音克隆=对口型数字人_2027630721145249794.json, 视频生成/图生视频/首尾帧双帧对口型数字人——Wan2.2 与 Qwen3TTS 的破壁合奏！_2016877597203894274.json, 音频生成/音频生成/Infinite+Talk首尾帧数字人_2021412401467367425.json, "音频生成/音频生成/首尾帧对口型数字人,Qwen3TTS,InfiniTetalk_2019627610392760322.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_19
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/动漫首尾帧_Wan2.2_DaSiWa8.1_2021468643665645570.json、视频生成/图生视频/双图首尾帧+动漫真人通用-电影质感动漫DaSiWaV9_2013628693922455554.json、视频生成/图生视频/图生视频 最强视频生成 首尾三图首尾帧_2031688685132976129.json、视频生成/图生视频/图生视频-WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2070316679850188801.json、视频生成/图生视频/图生视频-老照片动起来_2085169884861919234.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（数字人/数字人/Infinite Talk 首尾帧 数字人_2016883180711714818.json、数字人/数字人/Infinite Talk首尾帧数字人_2017049425356525570.json、数字人/数字人/首尾帧_对口型_数字人_Qwen3TTS,InfiniTetalk_2020864306186821634.json、视频生成/图生视频/(无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_2018664165719674881.json、视频生成/图生视频/Infinite Talk首尾帧+配音_2021116257344430081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：21
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 21 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageConcatMulti`
+- `ColorMatch`
+- `GetImageSizeAndCount`
+- `ImageFromBatch`
 - `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `ModelPatchTorchSettings`
+- `MathExpression|pysssss`
+- `ModelPatchLoader`
+- `ModelSamplingSD3`
+- `PainterAI2V`
+- `PainterAudioCut`
 - `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
@@ -37,43 +46,35 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 19/20 个有
-- `JoinStrings` —— 19/20 个有
-- `Qwen3_VQA` —— 19/20 个有
-- `RIFE VFI` —— 19/20 个有
-- `ShowText|pysssss` —— 19/20 个有
-- `TextInput_` —— 19/20 个有
-- `easy showAnything` —— 19/20 个有
-- `ImageBatchMulti` —— 18/20 个有
-- `ImageResizeKJv2` —— 18/20 个有
-- `PreviewImage` —— 18/20 个有
-- `WanMultiFrameRefToVideo` —— 18/20 个有
-- `INTConstant` —— 17/20 个有
-- `ModelSamplingSD3` —— 17/20 个有
-- `PrimitiveInt` —— 17/20 个有
-- `WanFirstLastFrameToVideo` —— 17/20 个有
-- `easy cleanGpuUsed` —— 16/20 个有
-- `PainterI2V` —— 15/20 个有
-- `SimpleMath+` —— 14/20 个有
-- `Fast Groups Muter (rgthree)` —— 11/20 个有
-- `GetImagesFromBatchIndexed` —— 6/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/20 个有
-- `LoraLoaderModelOnly` —— 2/20 个有
-- `RH_LLMAPI_NODE` —— 1/20 个有
-- `TextListSplit` —— 1/20 个有
-- `easy positive` —— 1/20 个有
-- `ttN seed` —— 1/20 个有
-- `wanBlockSwap` —— 1/20 个有
+- `CR Prompt Text` —— 20/21 个有
+- `ImageResizeKJv2` —— 20/21 个有
+- `PreviewAny` —— 20/21 个有
+- `ImageConcanate` —— 19/21 个有
+- `LoraLoaderModelOnly` —— 19/21 个有
+- `JWInteger` —— 18/21 个有
+- `Qwen3TTSModelLoader` —— 15/21 个有
+- `Qwen3TTSVoiceClone` —— 15/21 个有
+- `SaveAudioMP3` —— 15/21 个有
+- `PrimitiveStringMultiline` —— 12/21 个有
+- `AudioInfo` —— 4/21 个有
+- `ShowAnything|Mie` —— 4/21 个有
+- `easy showAnything` —— 3/21 个有
+- `Audio Duration (mtb)` —— 2/21 个有
+- `AudioSeparation` —— 2/21 个有
+- `JjkText` —— 2/21 个有
+- `ModelPatchTorchSettings` —— 2/21 个有
+- `PreviewImage` —— 2/21 个有
+- `wanBlockSwap` —— 2/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 20 | 70% |
-| Prompt 约束强度(CFG) | 6 | 4 - 6 | 20 | 80% |
-| 采样算法 | 1 | 1 - 1 | 20 | 100% |
-| 调度器 | euler | - | 20 | 100% |
-| 重绘幅度 | simple | - | 20 | 85% |
+| 采样步数 | randomize | - | 21 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 21 | 100% |
+| 采样算法 | 1 | 1 - 1 | 21 | 100% |
+| 调度器 | euler | - | 21 | 100% |
+| 重绘幅度 | simple | - | 21 | 100% |
 
 ## 常见问题
 
@@ -81,8 +82,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，20 个样本，一致性 70%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，20 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，20 个样本，一致性 100%
-- 重绘幅度 最常用 simple，20 个样本，一致性 85%
+- 采样步数 最常用 randomize，21 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，21 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，21 个样本，一致性 100%
+- 重绘幅度 最常用 simple，21 个样本，一致性 100%

@@ -2,95 +2,83 @@
 name: unknown_workflow_video_upscale_latent_upscale_52
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.743714
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+level: moderate
+coverage: 0.515571
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, H3SigmaRefiner, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, PT_H3ConcatAVLatent, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/2030338706959245314.json, 视频生成/图生视频/LTX2.3 三段采样+去字幕_2040113981662175234.json, 视频生成/图生视频/LTX2.3 完美人物一致性_2064713194668650497.json, 视频生成/图生视频/LTX2.3 自用优化版 I2V_2063969422162882561.json, 视频生成/图生视频/LTX2.3--高动态图生视频_2041388395624140802.json, 视频生成/图生视频/LTX2.3-三段采样-- 视频质感飙升秒变大片_2041110942255161346.json, 视频生成/图生视频/LTX2.3_图生视频_多帧_2045362870476607490.json]
+members: [数字人/数字人/MinimaxH3数字人&MV_2113933975927476225.json, 视频生成/图生视频/Minimax H3 二采首尾帧 + 参考音_2092200990517850113.json, 视频生成/图生视频/Minimax H3 参考生视频+高动态-自用版+可生成20s+视频_2107384460193918978.json, 视频生成/图生视频/Minimax H3 图_参考生视频+高动态_2095019320052117505.json, 视频生成/图生视频/Minimax H3 图生视频（二采）+1参考音【批量管理系统API用】_2093589690120228865.json, 视频生成/图生视频/Minimax H3 图生视频（无参考音）【批量管理系统api用】_2093586371775647745.json, 视频生成/图生视频/MinimaxH3 通用流_2111286575966539778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_52
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/2030338706959245314.json、视频生成/图生视频/LTX2.3 三段采样+去字幕_2040113981662175234.json、视频生成/图生视频/LTX2.3 完美人物一致性_2064713194668650497.json、视频生成/图生视频/LTX2.3 自用优化版 I2V_2063969422162882561.json、视频生成/图生视频/LTX2.3--高动态图生视频_2041388395624140802.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MinimaxH3数字人&MV_2113933975927476225.json、视频生成/图生视频/Minimax H3 二采首尾帧 + 参考音_2092200990517850113.json、视频生成/图生视频/Minimax H3 参考生视频+高动态-自用版+可生成20s+视频_2107384460193918978.json、视频生成/图生视频/Minimax H3 图_参考生视频+高动态_2095019320052117505.json、视频生成/图生视频/Minimax H3 图生视频（二采）+1参考音【批量管理系统API用】_2093589690120228865.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **可信度**：中等可信
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetNode`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `ManualSigmas`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 6/7 个有
-- `LTXVCropGuides` —— 6/7 个有
-- `ResizeImagesByLongerEdge` —— 6/7 个有
-- `ComfyMathExpression` —— 5/7 个有
-- `LTXVImgToVideoInplace` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `PrimitiveInt` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `ImageResizeKJv2` —— 4/7 个有
-- `LoraLoader` —— 4/7 个有
-- `GetNode` —— 3/7 个有
-- `LTX2_NAG` —— 3/7 个有
-- `LTXVChunkFeedForward` —— 3/7 个有
-- `ModelPatchTorchSettings` —— 3/7 个有
-- `PathchSageAttentionKJ` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `SetNode` —— 3/7 个有
-- `CM_FloatToInt` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `LTXTiledSampler` —— 2/7 个有
-- `LTXVImgToVideoConditionOnly` —— 2/7 个有
-- `LayerUtility: PurgeVRAM` —— 2/7 个有
-- `PromptRelayEncode` —— 2/7 个有
-- `VAELoader` —— 2/7 个有
-- `BOOLConstant` —— 1/7 个有
-- `Float` —— 1/7 个有
-- `LTX2SamplingPreviewOverride` —— 1/7 个有
-- `LTXAVTextEncoderLoader` —— 1/7 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `ResizeImageMaskNode` —— 1/7 个有
-- `TTResolutionSelector` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `math_calculate` —— 1/7 个有
+- `LoadAudio` —— 6/7 个有
+- `MiniMaxLowVRAMAttention` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `ResolutionSelector` —— 4/7 个有
+- `BlockSparseAttention` —— 3/7 个有
+- `SplitSigmas` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `FrameInterpolate` —— 2/7 个有
+- `FrameInterpolationModelLoader` —— 2/7 个有
+- `LayerColor: Brightness & Contrast` —— 2/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `LTXVAudioVAEEncode` —— 1/7 个有
+- `LTXVConcatAVLatent` —— 1/7 个有
+- `LayerUtility: BooleanOperator` —— 1/7 个有
+- `MiniMaxChunkFeedForward` —— 1/7 个有
+- `RTXVideoFrameGeneration` —— 1/7 个有
+- `RTXVideoSuperResolution` —— 1/7 个有
+- `SetLatentNoiseMask` —— 1/7 个有
+- `SolAttnPatch` —— 1/7 个有
+- `SolidMask` —— 1/7 个有
+- `SoundFlow_GetLength` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 25 | 25 - 44 | 7 | 72% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -98,7 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 44，7 个样本
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

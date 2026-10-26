@@ -1,51 +1,69 @@
 ---
 name: unknown_workflow_sampler_vae_27
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.9295
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
+coverage: 0.952167
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3-TVC成片_2085258608484376578.json, 视频生成/图生视频/MiniMax H3-TVC电商视频短片（自动写提示词）_2085616604645253121.json, 视频生成/图生视频/MiniMax H3-拼贴画_2085258588230086657.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-多图参考生视频_2110975883623354370.json, 视频生成/图生视频/MiniMax-H3-多图参考生视频_2084575868277575681.json, 视频生成/图生视频/MiniMax-H3多图参考工作流_2091527800783196161.json, 视频生成/图生视频/MiniMaxH3_多角色视频_场景_2084637312218128386.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098933038003613698.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098990768466776065.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2099666343804096513.json]
+members: [数字人/数字人/AI脱口秀_2064723957512757249.json, 数字人/数字人/AI脱口秀_2066018894162255874.json, 视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json, 视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json, 视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2056974345699942402.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2059911251098165250.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-大话西游版_2059273921228263425.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-歌曲《再见》_2060383965181202433.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-电商带货_2057720205580783618.json, 视频生成/图生视频/LTX2.3导演AI版的剪映版全能控制台-运镜分镜一网打进_2055283011867947010.json, 视频生成/图生视频/LTX导演工作流_2059458319999397889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-TVC成片_2085258608484376578.json、视频生成/图生视频/MiniMax H3-TVC电商视频短片（自动写提示词）_2085616604645253121.json、视频生成/图生视频/MiniMax H3-拼贴画_2085258588230086657.json、视频生成/图生视频/MiniMax+H3+FL2VA开源版-多图参考生视频_2110975883623354370.json、视频生成/图生视频/MiniMax-H3-多图参考生视频_2084575868277575681.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/AI脱口秀_2064723957512757249.json、数字人/数字人/AI脱口秀_2066018894162255874.json、视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json、视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json、视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CreateVideo`
-- `LoadImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3Ref2VAEncode`
-- `RHMiniMaxH3Ref2VAImageReference`
-- `RHMiniMaxH3Ref2VAModelLoader`
-- `RHMiniMaxH3Ref2VATarget`
-- `RHMiniMaxH3Ref2VATextEncoderLoader`
-- `RHMiniMaxH3Ref2VAVAELoader`
-- `SaveVideo`
+全部 12 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTXDirectorGuide`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/10 个有
-- `ImageConcanate` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `llama_cpp_instruct_adv` —— 3/10 个有
-- `llama_cpp_model_loader` —— 3/10 个有
-- `llama_cpp_parameters` —— 3/10 个有
-- `EmptyImage` —— 2/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `MuyeTextEditOutput` —— 1/10 个有
+- `CreateVideo` —— 11/12 个有
+- `LTXVAudioVAEDecode` —— 11/12 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `VAEDecodeTiled` —— 11/12 个有
+- `LTXDirector` —— 10/12 个有
+- `LTXVLatentUpsampler` —— 10/12 个有
+- `LatentUpscaleModelLoader` —— 10/12 个有
+- `LTX2SamplingPreviewOverride` —— 9/12 个有
+- `CheckpointLoaderSimple` —— 8/12 个有
+- `VHS_VideoCombine` —— 7/12 个有
+- `SaveVideo` —— 6/12 个有
+- `GetVideoComponents` —— 5/12 个有
+- `PrimitiveFloat` —— 5/12 个有
+- `SimpleMath+` —— 4/12 个有
+- `DiffusionModelLoaderKJ` —— 3/12 个有
+- `ModelPreviewOverrideKJ` —— 2/12 个有
+- `TTResolutionSelector` —— 2/12 个有
+- `UNETLoader` —— 2/12 个有
+- `Yusu-LTXDirector` —— 2/12 个有
+- `孤海注释` —— 2/12 个有
+- `LTXFloatToInt` —— 1/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `LayerUtility: ColorImage` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `VAEDecode` —— 1/12 个有
+- `easy imageSize` —— 1/12 个有
 
 ## 典型参数
 

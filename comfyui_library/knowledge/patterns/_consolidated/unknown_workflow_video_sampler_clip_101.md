@@ -1,58 +1,57 @@
 ---
 name: unknown_workflow_video_sampler_clip_101
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.990667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+frequency: 7
+level: weak
+coverage: 0.95
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json, 视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json, 视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json, 视频生成/图生视频/万相-Wan2.1-图生视频_1901974657921081346.json]
+members: [视频生成/文生视频/Wan2.2 smoothmix v2 文生视频+ 补帧_2064601257079296001.json, 视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json, 视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json, 视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json, 视频生成/文生视频/Wan2.2文生视频_2002368127193235457.json, 视频生成/文生视频/惊艳文生视频 Remix最新万相 Wan2.2-Remix-Comfy-T2V-文生视频_1998211525884174338.json, "视频生成/文生视频/纯净万相 Wan2.2-Remix-Comfy-T2V-文生视频 不带lora,带插帧丝滑_2042646743598243841.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_101
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json、视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json、视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json、视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json、视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 smoothmix v2 文生视频+ 补帧_2064601257079296001.json、视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json、视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json、视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json、视频生成/文生视频/Wan2.2文生视频_2002368127193235457.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 3/6 个有
-- `JanusImageUnderstanding` —— 1/6 个有
-- `JanusModelLoader` —— 1/6 个有
-- `ModelSamplingSD3` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `StringFunction|pysssss` —— 1/6 个有
-- `TeaCache` —— 1/6 个有
+- `INTConstant` —— 5/7 个有
+- `RIFE VFI` —— 2/7 个有
+- `Int` —— 1/7 个有
+- `ModelPatchTorchSettings` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `easy int` —— 1/7 个有
+- `孤海注释` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 6 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 6 | 86% |
-| 采样算法 | uni_pc | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | fixed | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 12 | 6 - 30 | 7 | 49% |
+| 采样算法 | 1 | 1 - 3.5 | 7 | 36% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -60,8 +59,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 86%）
-- 采样算法 最常用 uni_pc，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 6 - 30，7 个样本，取值分散，一致性仅 49%
+- 采样算法 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

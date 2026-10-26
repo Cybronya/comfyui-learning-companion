@@ -1,71 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_unet_46
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.730667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
+frequency: 7
+level: strong
+coverage: 0.912429
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyHunyuanLatentVideo, ImageResizeKJv2, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, PromptRelayEncodeTimeline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3文生视频，首尾帧+放大_2086693311015907329.json, 视频生成/文生视频/H3极速二采高质量图_文生视频(胸部大小可控)_2090731045871251457.json, 视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json, 视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json, 视频生成/文生视频/MINIMAXH3多图参考打斗全自动工作流_2099696081260081154.json, 视频生成/文生视频/MiniMax H3｜参考图生视频+Pass2 二采精修_2087873476030984194.json, 视频生成/文生视频/MinimaxH3全能参考（二采高清放大）4步加速_2091790956046667778.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3打斗专用全自动工作流_2087897093984837634.json, 视频生成/文生视频/一采lora1.0 turbo8 8步 0.5清晰度，match，二采8步0.3，int8，lanczos，crf16_2092168952892977153.json]
+members: [视频生成/图生视频/Wan2.2-Prompt Relay-单图参考精准控制-电商带货_2064248756870139905.json, 视频生成/图生视频/Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json, 视频生成/图生视频/Wan2.2_PromptRelay_2053855379406245890.json, 视频生成/图生视频/Wan2.2_PromptRelay_2058829735278497793.json, 视频生成/图生视频/Wan2.2_PromptRelay动作控制_2054887639500763138.json, 视频生成/图生视频/Wan2.2_PromptRelay图生视频（分镜提示词精准控制）_2059203324586577922.json, 视频生成/图生视频/重大进步2_Wan2.2_PromptRelay多段提示词精准控制_2054717028392546306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_46
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3文生视频，首尾帧+放大_2086693311015907329.json、视频生成/文生视频/H3极速二采高质量图_文生视频(胸部大小可控)_2090731045871251457.json、视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json、视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json、视频生成/文生视频/MINIMAXH3多图参考打斗全自动工作流_2099696081260081154.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Prompt Relay-单图参考精准控制-电商带货_2064248756870139905.json、视频生成/图生视频/Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json、视频生成/图生视频/Wan2.2_PromptRelay_2053855379406245890.json、视频生成/图生视频/Wan2.2_PromptRelay_2058829735278497793.json、视频生成/图生视频/Wan2.2_PromptRelay动作控制_2054887639500763138.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `EmptyHunyuanLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PromptRelayEncodeTimeline`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `LoadAudio` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
-- `ImageResizeKJv2` —— 6/9 个有
-- `MiniMaxH3AudioConditioningT8` —— 6/9 个有
-- `MiniMaxH3DualClockSamplerT8` —— 6/9 个有
-- `CR Prompt Text` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `PreviewAny` —— 3/9 个有
-- `PrimitiveStringMultiline` —— 3/9 个有
-- `RH_LLMAPI_Pro_Node` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `LoraLoaderModelOnly` —— 2/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `CLIPTextEncode` —— 1/9 个有
-- `H3SigmaRefiner` —— 1/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `MiniMaxH3ImageToVideo` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
+- `Int` —— 3/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `FlashVSRInitPipe` —— 1/7 个有
+- `FlashVSRNodeAdv` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `RIFE VFI` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 7 | 91% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | uni_pc | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -73,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，7 个样本，取值集中（一致性 91%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

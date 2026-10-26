@@ -2,67 +2,71 @@
 name: unknown_workflow_video_sampler_clip_212
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.561333
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, wanBlockSwap]
-problems: []
+level: moderate
+coverage: 0.912333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Wan2.2_Smooth Mix 文生视频_2049482366405582849.json, 视频生成/文生视频/Work-Fisher_Qwen3VL-视频反推+文生视频_1982353695629295618.json, 视频生成/文生视频/视频反推+文生视频_2005214263658643458.json]
+members: [视频生成/图生视频/电商首尾帧生图（高清稳定版）wan21 flf2v_2012067791884521474.json, 视频生成/图生视频/简单挤压捏爆工作流_1906949243003707394.json, 视频生成/图生视频/转身开枪射击+通义万相=艾橘溪_1900090706587967489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_212
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2_Smooth Mix 文生视频_2049482366405582849.json、视频生成/文生视频/Work-Fisher_Qwen3VL-视频反推+文生视频_1982353695629295618.json、视频生成/文生视频/视频反推+文生视频_2005214263658643458.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商首尾帧生图（高清稳定版）wan21 flf2v_2012067791884521474.json、视频生成/图生视频/简单挤压捏爆工作流_1906949243003707394.json、视频生成/图生视频/转身开枪射击+通义万相=艾橘溪_1900090706587967489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：56%
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `INTConstant`
-- `Int`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
+- `LoadImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `easy cleanGpuUsed`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `RIFE VFI` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `WanImageToVideo` —— 2/3 个有
+- `ImageResizeAdvanced` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `ModelSamplingSD3` —— 1/3 个有
+- `Seed Everywhere` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | euler_ancestral | - | 3 | 100% |
+| 采样步数 | 20 | 4 - 30 | 3 | 41% |
+| Prompt 约束强度(CFG) | 5 | 1 - 6 | 3 | 46% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，3 个样本，一致性 100%
+- 采样步数 中位数 20，观测区间 4 - 30，3 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 6，3 个样本，取值分散，一致性仅 46%
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_433
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.842
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.93
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, Florence2ModelLoader, Florence2Run, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: ["图片生成/图生图/老版三件套Flux,Redux,Clipvision双图融合加速可调权重工作流_1912460148080635906.json", 图片生成/文生图/Redux角色一致性_1901277660763275265.json]
+members: [图片生成/图生图/flux1-krea-dev 图生图_1951291484605722625.json, 图片生成/图生图/flux图片高清放大_1902298925074919425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_433
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/老版三件套Flux,Redux,Clipvision双图融合加速可调权重工作流_1912460148080635906.json、图片生成/文生图/Redux角色一致性_1901277660763275265.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/flux1-krea-dev 图生图_1951291484605722625.json、图片生成/图生图/flux图片高清放大_1902298925074919425.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
@@ -26,32 +26,30 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
 - `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `Florence2ModelLoader`
+- `Florence2Run`
 - `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingFlux`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StyleModelApply`
-- `StyleModelLoader`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `StyleModelAdvancedApply` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `RepeatLatentBatch` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

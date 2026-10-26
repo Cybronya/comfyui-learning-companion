@@ -3,31 +3,38 @@ name: unknown_workflow_generic_1513
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.818
-common_nodes: [AILab_QwenVL, CR Text, CR Text Concatenate, QWEN_TextDisplay, SaveImage]
+coverage: 0.9145
+common_nodes: [DeepTranslatorTextNode, ImageConcatMulti, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, PreviewImage, RunningHub DreamO, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/提示词润色工作流_2100519921724780546.json, 图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json]
+members: [图片生成/图生图/字节DreamO单图IP-图像插入_1926185937620070402.json, 图片生成/图生图/字节DreamO多图ID+IP 模特试衣_1926842299702218754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1513
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/提示词润色工作流_2100519921724780546.json、图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO单图IP-图像插入_1926185937620070402.json、图片生成/图生图/字节DreamO多图ID+IP 模特试衣_1926842299702218754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CR Text`
-- `CR Text Concatenate`
-- `QWEN_TextDisplay`
+- `DeepTranslatorTextNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `PreviewImage`
+- `RunningHub DreamO`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Get Image Size` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
 
 ## 典型参数
 

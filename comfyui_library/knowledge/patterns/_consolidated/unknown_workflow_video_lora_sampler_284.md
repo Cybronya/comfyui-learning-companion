@@ -1,85 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_284
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.446143
-common_nodes: [CLIPVisionLoader, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, ReplaceVideoLatentFrames, SetNode, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.636875
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
 problems: []
 missing: []
-members: [图片生成/图生图/LongCatAvatar_龙猫数字人-文生图_2002914137871118338.json, 图片生成/文生图/内部测试0001_2006740333874384898.json, 视频生成/图生视频/LongCat Video Avatar数字人图生视频V4_2002585439628345345.json, 视频生成/图生视频/LongCat+数字人对口型_2002677838857793538.json, 视频生成/图生视频/LongCat-Video-Avatar1.5多图分镜数字人_2059649854489583618.json, 视频生成/图生视频/LongCat-Video-Avatar1.5数字人视频_2059162387521032194.json, 视频生成/图生视频/内部测试0001_2006916502057918465.json]
+members: [数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流 (1)_2071423701639323649.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069615585679462402.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069666503523389441.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2070043341298954242.json, 视频生成/图生视频/Scail-2.0_2095776718383575042.json, 视频生成/图生视频/Scail-2_2095778171303059458.json, 视频生成/图生视频/pipiai-SCAIL2-超快超长视频_2071797776257732609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_284
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/LongCatAvatar_龙猫数字人-文生图_2002914137871118338.json、图片生成/文生图/内部测试0001_2006740333874384898.json、视频生成/图生视频/LongCat Video Avatar数字人图生视频V4_2002585439628345345.json、视频生成/图生视频/LongCat+数字人对口型_2002677838857793538.json、视频生成/图生视频/LongCat-Video-Avatar1.5多图分镜数字人_2059649854489583618.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流 (1)_2071423701639323649.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069615585679462402.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069666503523389441.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2070043341298954242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
+- `ImageColorMatch+`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `ReplaceVideoLatentFrames`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2SimpleVideo`
 - `SetNode`
-- `TrimAudioDuration`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `VHS_VideoInfoLoaded`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `DownloadAndLoadWav2VecModel` —— 5/7 个有
-- `INTConstant` —— 5/7 个有
-- `MultiTalkWav2VecEmbeds` —— 5/7 个有
-- `Float` —— 4/7 个有
-- `PreviewAudio` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `Int` —— 3/7 个有
-- `ForLoopClose` —— 2/7 个有
-- `ForLoopOpen` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `LongCatAvatarWhisperEmbeds` —— 2/7 个有
-- `MathExpression|pysssss` —— 2/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/7 个有
-- `SaveAudio` —— 2/7 个有
-- `SaveImage` —— 2/7 个有
-- `Text Load Line From File` —— 2/7 个有
-- `WhisperModelLoader` —— 2/7 个有
-- `ZML_ImageSelectorNode` —— 2/7 个有
-- `easy convertAnything` —— 2/7 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/7 个有
-- `easy indexTTSGenerateSimple` —— 2/7 个有
-- `ImageBatchMulti` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `RH_LLMAPI_NODE` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `VHS_GetImageCount` —— 1/7 个有
+- `PreviewAny` —— 7/8 个有
+- `WanChunkFeedForward` —— 5/8 个有
+- `AILab_QwenVL` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `ZML_MergeText` —— 2/8 个有
+- `Float to Int` —— 1/8 个有
+- `easy mathInt` —— 1/8 个有
 
 ## 典型参数
 

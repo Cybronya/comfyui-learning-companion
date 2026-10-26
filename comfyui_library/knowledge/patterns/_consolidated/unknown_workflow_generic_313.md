@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_313
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.901429
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.821375
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/11-设计解析_2094954460723372033.json, 图片生成/图生图/2-单次0.16_2064555494005633025.json, 图片生成/图生图/全能模型2海报制作_2027208756517412865.json, 图片生成/图生图/电商图片生成_2038477037366677505.json, 图片生成/图生图/街区立面更新改造工作流_2075399434468421633.json, 图片生成/图生图/高级感调色工作流_2088578741176983554.json, 图片生成/文生图/Gemini 3.1 API调用-文生图+图生图_2027300959487008770.json]
+members: [图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json, 图片生成/图生图/系统_提取印花_2069300103478865922.json, 图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json, 图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json, 图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json, 图片生成/文生图/全能图2 全家桶  Image2 文生图 + 图生图_2046939440123224066.json, 图片生成/文生图/现最强图像处理 全能图片 GP-T-Image-2  文生图 + 图像编辑_2046966083659239425.json, 数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_313
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/11-设计解析_2094954460723372033.json、图片生成/图生图/2-单次0.16_2064555494005633025.json、图片生成/图生图/全能模型2海报制作_2027208756517412865.json、图片生成/图生图/电商图片生成_2038477037366677505.json、图片生成/图生图/街区立面更新改造工作流_2075399434468421633.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json、图片生成/图生图/系统_提取印花_2069300103478865922.json、图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json、图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json、图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `LoadImageFromUrl` —— 2/7 个有
-- `RHLLMChatNode` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 3/8 个有
+- `PreviewImage` —— 3/8 个有
+- `RH_RhartImageG2TextToImage` —— 3/8 个有
+- `ttN seed` —— 1/8 个有
 
 ## 典型参数
 

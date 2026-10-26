@@ -3,35 +3,30 @@ name: unknown_workflow_generic_1575
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.944
-common_nodes: [CR Text, LoadImage, PreviewTextNode, RH_LLMAPI_Pro_Node, ShellAgentPluginOutputText, Text Multiline, TextPreview, easy saveText, easy showAnything]
+coverage: 1
+common_nodes: [LayerStyle: DropShadow, LayerUtility: SimpleTextImage, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/医疗科普短视频文案_分镜脚本工作流【超哥AIGC】_2045054526599729153.json, 视频生成/图生视频/超哥医疗科普短视频文案工作流_2043158105994829826.json]
+members: [图片生成/图生图/超好用🔥小红书封面制作-文字添加_2047178592441868289.json, 图片生成/文生图/【南光AIGC】小红书封面制作-文字添加(中英文)V8.0_2037566561506037761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1575
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/医疗科普短视频文案_分镜脚本工作流【超哥AIGC】_2045054526599729153.json、视频生成/图生视频/超哥医疗科普短视频文案工作流_2043158105994829826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/超好用🔥小红书封面制作-文字添加_2047178592441868289.json、图片生成/文生图/【南光AIGC】小红书封面制作-文字添加(中英文)V8.0_2037566561506037761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `LayerStyle: DropShadow`
+- `LayerUtility: SimpleTextImage`
 - `LoadImage`
-- `PreviewTextNode`
-- `RH_LLMAPI_Pro_Node`
-- `ShellAgentPluginOutputText`
-- `Text Multiline`
-- `TextPreview`
-- `easy saveText`
-- `easy showAnything`
+- `SaveImage`
 
 ## 典型参数
 

@@ -1,76 +1,66 @@
 ---
 name: unknown_workflow_video_sampler_clip_110
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.4946
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, ImageResizeKJv2, KSampler, LoadImage, MaskPreview+, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SetNode, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+coverage: 0.9735
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/self-forcing vace 14B 背景替换工作流_1935364522045800450.json, 视频生成/图生视频/VACE 首尾帧 超长视频 加速版_1984188715234967554.json, 视频生成/图生视频/fusionx+comfyui native vace 首尾帧工作流_1934269405759234050.json, 视频生成/图生视频/vace_native_start_end_lightx超长视频生成_1943205882685775873.json, 视频生成/图生视频/vace首尾帧超长视频加速版_1944340195523088386.json]
+members: [视频生成/图生视频/251223001-14.WanSmoothMix首尾帧-NF_2003138334044168194.json, 视频生成/图生视频/DaSiWaWan-V10-动漫首尾帧视频生成_2043155067376766978.json, 视频生成/图生视频/DaSiWaWan2.2-动漫视首尾帧_2007802630776561666.json, 视频生成/图生视频/DasiwaWAN-V10-动漫图生视频+自动提示词_2043133353490128897.json, 视频生成/图生视频/Wan2.2-Remix-V3.0-首尾帧视频_2034096736225988609.json, 视频生成/图生视频/Wan2.2-Remix-V3.0-首尾帧视频_2034470406807101441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_110
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/self-forcing vace 14B 背景替换工作流_1935364522045800450.json、视频生成/图生视频/VACE 首尾帧 超长视频 加速版_1984188715234967554.json、视频生成/图生视频/fusionx+comfyui native vace 首尾帧工作流_1934269405759234050.json、视频生成/图生视频/vace_native_start_end_lightx超长视频生成_1943205882685775873.json、视频生成/图生视频/vace首尾帧超长视频加速版_1944340195523088386.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/251223001-14.WanSmoothMix首尾帧-NF_2003138334044168194.json、视频生成/图生视频/DaSiWaWan-V10-动漫首尾帧视频生成_2043155067376766978.json、视频生成/图生视频/DaSiWaWan2.2-动漫视首尾帧_2007802630776561666.json、视频生成/图生视频/DasiwaWAN-V10-动漫图生视频+自动提示词_2043133353490128897.json、视频生成/图生视频/Wan2.2-Remix-V3.0-首尾帧视频_2034096736225988609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `KSampler`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `MaskPreview+`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `SetNode`
-- `TrimVideoLatent`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `RMBG` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `GetImageSizeAndCount` —— 3/5 个有
-- `ImageBatchMulti` —— 3/5 个有
-- `ImageColorMatch+` —— 3/5 个有
-- `ImageFromBatch` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `MaskPreview` —— 3/5 个有
-- `easy forLoopEnd` —— 3/5 个有
-- `easy forLoopStart` —— 3/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `TeaCache` —— 2/5 个有
-- `TorchCompileModelWanVideo` —— 2/5 个有
-- `UnetLoaderGGUFAdvanced` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `DWPreprocessor` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `CLIPVisionEncode` —— 5/6 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `ModelPatchTorchSettings` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `WanFirstLastFrameToVideo` —— 5/6 个有
+- `ComfyMathExpression` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `CR Text` —— 1/6 个有
+- `PainterI2V_Wan2_2` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `llama_cpp_instruct_adv` —— 1/6 个有
+- `llama_cpp_model_loader` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | lcm | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | randomize | - | 6 | 83% |
+| Prompt 约束强度(CFG) | 6 | 6 - 8 | 6 | 88% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 83% |
+| 重绘幅度 | simple | - | 6 | 50% |
 
 ## 常见问题
 
@@ -78,8 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 lcm，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，6 个样本，一致性 83%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 88%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 83%
+- 重绘幅度 最常用 simple，6 个样本，一致性 50%

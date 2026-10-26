@@ -1,59 +1,87 @@
 ---
 name: unknown_workflow_unet_vae_3
 type: Unknown Workflow
-frequency: 17
+frequency: 16
 level: moderate
-coverage: 0.848176
-common_nodes: [CLIPLoader, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, VAELoader]
-problems: []
+coverage: 0.873437
+common_nodes: [CLIPLoader, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3导演台长视频生成_段间引导_turbo_2088450232764944385.json, 视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json, 视频生成/图生视频/Minimax-H3 导演台 首尾帧生视频（加速版）_2087216505112059905.json, 视频生成/图生视频/Minimax-H3导演台 参考改视频（加速版）_2087208935521607681.json, 视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json, 视频生成/文生视频/MiniMax H3 AIMixer 导演台_2087791306260180994.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2091949246240092162.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2093187899088003073.json, 视频生成/文生视频/MiniMax H3 导演台工作流-fl2va_2091328355697250305.json, 视频生成/文生视频/MiniMax H3 导演台｜无限长视频玩法_2090426764001636354.json, 视频生成/文生视频/MiniMax H3 导演台｜无限长视频玩法_2092539959881322498.json, 视频生成/文生视频/MiniMax H3 电影级运镜全能导演台｜二采精修｜分镜合成｜加速版_2096009884130177025.json, 视频生成/文生视频/MiniMax H3 电影质感全能导演台｜二采放大｜分镜合成｜8步加速版_2100406933353226242.json, 视频生成/文生视频/MiniMax-H3_Director_导演台多参模式_2101083112175394817.json, 视频生成/文生视频/minimax_h3_director_二采+导演台_2089917916656525313.json, 视频生成/文生视频/minimax_h3_director_导演台全能工作流_2102965461339164674.json, 视频生成/文生视频/导演台全能工作流_2093548311629361154.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 PE 文生图_2102401855983808514.json, 图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json, 图片生成/图生图/BF16小字不崩-Qwen_image_2.1图片编辑_2104378058986844161.json, 图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2108752507940986881.json, 图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2110554314409332737.json, 图片生成/图生图/Qwen 2.1 图像编辑（4步加速）_2102704302576988161.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑-t8加速版_2105710865591922690.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑2609_2106042591421747201.json, 图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json, 图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json, 图片生成/图生图/多图编辑丨Qwen-Image 2.1丨T8加速_2113204332517748738.json, 图片生成/图生图/（最强T8版加速）Qwen Image 2.1 PE（Un） 图像编辑v2_2108627010334584834.json, 图片生成/文生图/AI人像编辑丨Qwen Image 2.1 Turbo_2110593367078952962.json, 图片生成/文生图/Qwen Image 2.1 t8加速PE+int8加速版_2109835098110648321.json, 图片生成/文生图/Qwen Image 2.1 t8加速PE+int8加速版_2110684372931268609.json, 图片生成/文生图/（最强T8版加速）Qwen Image 2.1 PE(Un) 文生图v2_2108631026816868353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3导演台长视频生成_段间引导_turbo_2088450232764944385.json、视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json、视频生成/图生视频/Minimax-H3 导演台 首尾帧生视频（加速版）_2087216505112059905.json、视频生成/图生视频/Minimax-H3导演台 参考改视频（加速版）_2087208935521607681.json、视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 PE 文生图_2102401855983808514.json、图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json、图片生成/图生图/BF16小字不崩-Qwen_image_2.1图片编辑_2104378058986844161.json、图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2108752507940986881.json、图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2110554314409332737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
-- `MiniMaxH3Director`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `CR Prompt Text`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 14/17 个有
-- `PathchSageAttentionKJ` —— 12/17 个有
-- `VHS_VideoCombine` —— 12/17 个有
-- `MiniMaxH3DirectorRefine` —— 11/17 个有
-- `UpscaleModelLoader` —— 10/17 个有
-- `PreviewAny` —— 7/17 个有
-- `CreateVideo` —— 6/17 个有
-- `SaveVideo` —— 6/17 个有
-- `BasicScheduler` —— 2/17 个有
-- `EmptyImage` —— 2/17 个有
-- `PreviewImage` —— 2/17 个有
-- `Label (rgthree)` —— 1/17 个有
-- `MiniMaxH3DirectorFaceRefine` —— 1/17 个有
-- `MiniMaxH3DirectorSelfLift` —— 1/17 个有
-- `easy sleep` —— 1/17 个有
+- `LoadImage` —— 14/16 个有
+- `QwenPERewriteT8` —— 14/16 个有
+- `easy cleanGpuUsed` —— 14/16 个有
+- `easy showAnything` —— 14/16 个有
+- `QwenImage21Cache` —— 12/16 个有
+- `QwenImage21SageAttentionT8` —— 12/16 个有
+- `KSampler` —— 10/16 个有
+- `LoraLoaderModelOnly` —— 9/16 个有
+- `QwenImage21BlockCacheT8` —— 8/16 个有
+- `QwenImage21SpectrumT8` —— 8/16 个有
+- `CFGGuider` —— 6/16 个有
+- `KSamplerSelect` —— 6/16 个有
+- `ManualSigmas` —— 6/16 个有
+- `RandomNoise` —— 6/16 个有
+- `SamplerCustomAdvanced` —— 6/16 个有
+- `ConcatTextOfUtils` —— 2/16 个有
+- `LoraLoaderBypassModelOnly` —— 2/16 个有
+- `SaveImageAdvanced` —— 2/16 个有
+- `孤海注释` —— 2/16 个有
+- `AIO_Preprocessor` —— 1/16 个有
+- `EmptyImage` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 40 | 4 - 50 | 10 | 34% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 1024 - 1152 | 16 | 97% |
+| 高度 | 1024 | 1024 - 2016 | 16 | 78% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 40，观测区间 4 - 50，10 个样本，取值分散，一致性仅 34%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1152，16 个样本，取值集中（一致性 97%）
+- 高度 中位数 1024，观测区间 1024 - 2016，16 个样本

@@ -1,62 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_306
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.846714
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.731
+common_nodes: [AIO_Preprocessor, AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json, 视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json, 视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json, 视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json, 视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json, 视频生成/文生视频/啊癫 黑科技加速双采-self-lift工作流_2097728195679309825.json, 视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json]
+members: [视频生成/图生视频/VACE14b-美女疯狂跳舞机V1_1923648831874134018.json, 视频生成/图生视频/图转视频0701_1939830629229830146.json, 视频生成/图生视频/新150帧高清美女跳舞机 （任何动作均可迁移）_1934886185854509058.json, 视频生成/图生视频/新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json, 视频生成/图生视频/新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.json, 视频生成/图生视频/最新美女跳舞机2K高清视频直接160帧V3_1930203972051832833.json, 视频生成/图生视频/视频动作迁移｜上传视频和图片｜_1962127053556531202.json, 视频生成/图生视频/视频动作迁移｜上传视频和图片｜深度+open pose 控制_1937838882719469569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_306
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json、视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json、视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json、视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json、视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/VACE14b-美女疯狂跳舞机V1_1923648831874134018.json、视频生成/图生视频/图转视频0701_1939830629229830146.json、视频生成/图生视频/新150帧高清美女跳舞机 （任何动作均可迁移）_1934886185854509058.json、视频生成/图生视频/新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json、视频生成/图生视频/新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `ResolutionSelector`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 8 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
-- `H3SigmaRefiner` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `VAEDecodeAudio` —— 5/7 个有
-- `LoadAudio` —— 4/7 个有
-- `PrimitiveFloat` —— 4/7 个有
-- `SelfLiftAvatarH3Sampler` —— 4/7 个有
-- `SelfLiftH3Sampler` —— 3/7 个有
-- `CreateVideo` —— 2/7 个有
-- `JWStringToFloat` —— 2/7 个有
-- `LTXVSeparateAVLatent` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `VHS_LoadVideo` —— 2/7 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/7 个有
-- `MiniMaxH3Unified` —— 1/7 个有
-- `TrimAudioDuration` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 7/8 个有
+- `WanVideoExperimentalArgs` —— 7/8 个有
+- `WanVideoVACEEncode` —— 7/8 个有
+- `ImageUpscaleWithModel` —— 6/8 个有
+- `RHHiddenNodes` —— 6/8 个有
+- `UpscaleModelLoader` —— 6/8 个有
+- `WanVideoModelLoader` —— 6/8 个有
+- `Bjornulf_ShowJson` —— 4/8 个有
+- `ColorMatch` —— 4/8 个有
+- `LayerUtility: PurgeVRAM` —— 4/8 个有
+- `RH_Translator` —— 4/8 个有
+- `WanVideoTeaCache` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `Note Plus (mtb)` —— 3/8 个有
+- `Text Concatenate` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `FILM VFI` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `WD14Tagger|pysssss` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

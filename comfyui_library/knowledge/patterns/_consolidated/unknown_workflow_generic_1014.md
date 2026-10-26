@@ -3,31 +3,39 @@ name: unknown_workflow_generic_1014
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.833333
-common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
+coverage: 0.737
+common_nodes: [EmptyImage, JjkText, LoadImage, MultiTextConcatenate, PreviewImage, PreviewTextNode, RH_RhartImageG2ImageToImage, SaveImage, Text, Text Multiline, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
+members: [图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1014
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_RhartVideoGTextToVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 1/3 个有
+- `EmptyImage`
+- `JjkText`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `PreviewImage`
+- `PreviewTextNode`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `Text`
+- `Text Multiline`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

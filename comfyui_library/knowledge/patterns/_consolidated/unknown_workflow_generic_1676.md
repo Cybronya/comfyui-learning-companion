@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1676
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.619
-common_nodes: [AudioAdjustVolume, PrimitiveStringMultiline, Qwen3TTSModelLoader, SaveAudioMP3]
+coverage: 0.5
+common_nodes: [LoadImage, LoadVideo, PrimitiveInt, RHBerniniFullReferenceVideoToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-Custom_Voice_2077982969565896705.json, 音频生成/音频生成/Qwen3-TTS-Voice_Design_2077982978361352193.json]
+members: [视频生成/图生视频/(满血版)Bernini-Full 参考+视频编辑V1_2067135489085366274.json, 视频生成/图生视频/Bernini-Full 参考图编辑视频_2067147092631572482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1676
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-Custom_Voice_2077982969565896705.json、音频生成/音频生成/Qwen3-TTS-Voice_Design_2077982978361352193.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/(满血版)Bernini-Full 参考+视频编辑V1_2067135489085366274.json、视频生成/图生视频/Bernini-Full 参考图编辑视频_2067147092631572482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioAdjustVolume`
-- `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `SaveAudioMP3`
+- `LoadImage`
+- `LoadVideo`
+- `PrimitiveInt`
+- `RHBerniniFullReferenceVideoToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSCustomVoice` —— 1/2 个有
-- `Qwen3TTSVoiceDesign` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

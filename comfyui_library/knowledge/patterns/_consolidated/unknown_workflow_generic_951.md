@@ -3,38 +3,33 @@ name: unknown_workflow_generic_951
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.762
-common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
+coverage: 0.952333
+common_nodes: [LoadImage, RunningHub DreamOmni2 Edit Pipeline, RunningHub DreamOmni2 Editor, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json, 图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json, 图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json]
+members: [图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json, 图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json, 图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_951
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json、图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json、图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json、图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json、图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `RunningHub DreamOmni2 Edit Pipeline`
+- `RunningHub DreamOmni2 Editor`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `easy imageConcat` —— 2/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `ttN text` —— 1/3 个有
 
 ## 典型参数
 

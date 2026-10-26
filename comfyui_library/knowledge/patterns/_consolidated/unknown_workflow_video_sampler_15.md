@@ -1,56 +1,43 @@
 ---
 name: unknown_workflow_video_sampler_15
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 1
-common_nodes: [CreateVideo, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageConcanate, ImageFromBatch+, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, SaveVideo, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.76975
+common_nodes: [CR Prompt Text, FlashVSRNode, GetVideoComponents, JWInteger, LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/(全能视频S 25S满血版)FlashVSR Smthem版视频模糊变高清V1_1981405858833809409.json, 视频生成/图生视频/(最高性价比方案)Seedance2.0 Fast 480P+FlashVSR多参生视频-贞贞工坊_2043194188241571841.json, 视频生成/图生视频/(最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清化（贞贞的AI工坊）_2043642349795942401.json]
+members: [视频生成/图生视频/MOVA音视频同步_2017541473100636162.json, 视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json, 视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json, 视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/(全能视频S 25S满血版)FlashVSR Smthem版视频模糊变高清V1_1981405858833809409.json、视频生成/图生视频/(最高性价比方案)Seedance2.0 Fast 480P+FlashVSR多参生视频-贞贞工坊_2043194188241571841.json、视频生成/图生视频/(最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清化（贞贞的AI工坊）_2043642349795942401.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MOVA音视频同步_2017541473100636162.json、视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json、视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json、视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateVideo`
-- `FlashVSR_SM_KSampler`
-- `FlashVSR_SM_Model`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `FlashVSRNode`
 - `GetVideoComponents`
-- `ImageConcanate`
-- `ImageFromBatch+`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `SaveVideo`
+- `LoadImage`
+- `RunningHub_MOVA_Loader`
+- `RunningHub_MOVA_Sampler`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `Comfly_Doubao_Seedance2_0` —— 2/3 个有
-- `Comfly_api_set` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `LoadAudio` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
+- `SimpleMath+` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1.04132e+09 | 6.30091e+08 - 1.98785e+09 | 3 | 53% |
-| Prompt 约束强度(CFG) | randomize | - | 3 | 100% |
-| 采样算法 | 2 | 2 - 2 | 3 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 3 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -58,10 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.04132e+09，观测区间 6.30091e+08 - 1.98785e+09，3 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，3 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.98785e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

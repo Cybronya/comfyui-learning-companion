@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_video_lora_sampler_163
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.717727
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.900167
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI动物说_2043873863750127617.json, 视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json, 视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作=InfiniTetalk=B站艾橘溪_1960951492805103618.json, 视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作_2065438787911639042.json, 视频生成/图生视频/AI女友对口型_1989024069318217729.json, 视频生成/图生视频/AI数字人对口型 角色 图片 说话唱歌 克隆动作 InfiniTetalk   内附音频生成_2006172526635917314.json, 视频生成/图生视频/Infinite Talk 人物对口型V2+图片说话唱歌+动作_2005908579766988801.json, 视频生成/图生视频/Infinitetalk_图片对口型_2046155816666927106.json, 视频生成/图生视频/Wanvideo_infinitetalk_图片对口型_单人工作流_1980220668019171330.json, 视频生成/图生视频/最新3.0AI动物说话（懒人版）_2065443186113339394.json, 视频生成/文生视频/AI动物说话=B站艾橘溪_1970041990975025153.json]
+members: [视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json, 视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json, 视频生成/图生视频/InfiniteTalk数字人+MegaTTS3语音克隆_1963516764331266050.json, 视频生成/图生视频/InfiniteTalk数字人动态加强版（对口型-唱歌）_2015692807259824129.json, 视频生成/图生视频/InfiniteTalk数字人唱歌口播长视频生成_1980248252606013441.json, 视频生成/图生视频/InfiniteTalk数字人长视频（唱歌-对口型）_1957840696807096321.json, 视频生成/图生视频/Y-InfiniteTalk单人图生视频_1958373813031485441.json, 视频生成/图生视频/数字人长视频（唱歌-对口型）_2028126776630710273.json, 视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V2.0_1968840482644217858.json, 音频生成/音频生成/InfiniteTalk单人视频到视频_1958736757212753921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_163
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AI动物说_2043873863750127617.json、视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json、视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作=InfiniTetalk=B站艾橘溪_1960951492805103618.json、视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作_2065438787911639042.json、视频生成/图生视频/AI女友对口型_1989024069318217729.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json、视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json、视频生成/图生视频/InfiniteTalk数字人+MegaTTS3语音克隆_1963516764331266050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
-- `GetNode`
 - `ImageResizeKJv2`
-- `Int`
 - `LoadAudio`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -47,21 +44,27 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 9/11 个有
-- `LayerUtility: PurgeVRAM` —— 9/11 个有
-- `Text Multiline` —— 9/11 个有
-- `AudioCrop` —— 6/11 个有
-- `PrimitiveString` —— 6/11 个有
-- `SimpleMath+` —— 5/11 个有
-- `easy cleanGpuUsed` —— 5/11 个有
-- `If ANY execute A else B` —— 4/11 个有
-- `Int2Any_AS` —— 4/11 个有
-- `PrimitiveInt` —— 4/11 个有
-- `SaveAudio` —— 4/11 个有
-- `SparkTTSClone` —— 4/11 个有
-- `ImageConcatMulti` —— 2/11 个有
-- `PreviewImage` —— 1/11 个有
-- `easy int` —— 1/11 个有
+- `LoadImage` —— 9/12 个有
+- `PrimitiveInt` —— 8/12 个有
+- `WanVideoTorchCompileSettings` —— 8/12 个有
+- `Audio Duration (mtb)` —— 6/12 个有
+- `CR Text` —— 6/12 个有
+- `SimpleMath+` —— 6/12 个有
+- `VHS_LoadVideo` —— 6/12 个有
+- `ImageFromBatch+` —— 5/12 个有
+- `JWInteger` —— 4/12 个有
+- `JWIntegerToString` —— 4/12 个有
+- `INTConstant` —— 3/12 个有
+- `Text Multiline` —— 3/12 个有
+- `CR Prompt Text` —— 2/12 个有
+- `WanVideoEncode` —— 2/12 个有
+- `WanVideoUni3C_ControlnetLoader` —— 2/12 个有
+- `WanVideoUni3C_embeds` —— 2/12 个有
+- `GetImageSizeAndCount` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `MegaTTS3Run` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `easy anythingIndexSwitch` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,47 +1,45 @@
 ---
 name: unknown_workflow_controlnet_video_lora_28
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5445
-common_nodes: [CLIPVisionLoader, CR Prompt Text, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: PurgeVRAM, PixelPerfectResolution, PreviewImage, SetNode, SimpleMath+, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.93725
+common_nodes: [CLIPVisionLoader, DWPreprocessor, DrawViTPose, GetImageSizeAndCount, ImageConcatMulti, JoinStrings, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PrimitiveStringMultiline, RH_Captioner, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy int]
+problems: []
 missing: []
-members: [视频生成/图生视频/Animate+QwenEdit视频场景编辑_2073284588327235586.json, 视频生成/图生视频/Animate+全能图片V1视频场景编辑_2073284165830795265.json]
+members: [数字人/数字人/bl动作_2017570006296436738.json, 视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json, 视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json, 视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_28
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Animate+QwenEdit视频场景编辑_2073284588327235586.json、视频生成/图生视频/Animate+全能图片V1视频场景编辑_2073284165830795265.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/bl动作_2017570006296436738.json、视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json、视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json、视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
+- `DrawViTPose`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM`
+- `JoinStrings`
+- `LayerUtility: ImageMaskScaleAsV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
 - `PixelPerfectResolution`
-- `PreviewImage`
-- `SetNode`
-- `SimpleMath+`
-- `Text Multiline`
+- `PoseAndFaceDetection`
+- `PrimitiveStringMultiline`
+- `RH_Captioner`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -50,44 +48,26 @@ source: knowledge_consolidation
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `CLIPLoader` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `LayerUtility: ColorImage V2` —— 2/4 个有
+- `LayerUtility: ImageBlend` —— 2/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | beta57 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

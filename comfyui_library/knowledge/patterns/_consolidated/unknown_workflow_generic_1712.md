@@ -3,48 +3,33 @@ name: unknown_workflow_generic_1712
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5875
-common_nodes: [CR Text, Float, Int, PrimitiveBoolean, RH_Suno_Lyrics, RunningHub ACE-Step Creator, RunningHub ACE-Step GenerationParams, RunningHub ACE-Step Loader, SaveAudioMP3, ShowText|pysssss, String, Text Multiline, easy ifElse]
+coverage: 1
+common_nodes: [LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【短剧主题曲制作】ACE-Step1.5文生音乐（RH破音修复版）_2019467965212663810.json, 音频生成/音频生成/歌曲生成 _ ACE-Step1.5_2021444202046955521.json]
+members: [视频生成/图生视频/全能视频S多任务并发文生视频，一次生成最大150s视频只要5-10分钟_1998962356308824066.json, 视频生成/文生视频/批量视频生成_2001610943249412097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1712
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【短剧主题曲制作】ACE-Step1.5文生音乐（RH破音修复版）_2019467965212663810.json、音频生成/音频生成/歌曲生成 _ ACE-Step1.5_2021444202046955521.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S多任务并发文生视频，一次生成最大150s视频只要5-10分钟_1998962356308824066.json、视频生成/文生视频/批量视频生成_2001610943249412097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Float`
-- `Int`
-- `PrimitiveBoolean`
-- `RH_Suno_Lyrics`
-- `RunningHub ACE-Step Creator`
-- `RunningHub ACE-Step GenerationParams`
-- `RunningHub ACE-Step Loader`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
-- `String`
-- `Text Multiline`
-- `easy ifElse`
+- `LoadImage`
+- `RH_Sora2_I2V_Batch`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_TextSelector` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `IO_input_any` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `ShellAgentPluginOutputText` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `TextListSelelct` —— 1/2 个有
+- `StringConstantMultiline` —— 1/2 个有
+- `TextBox3` —— 1/2 个有
 
 ## 典型参数
 

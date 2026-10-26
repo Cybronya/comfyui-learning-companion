@@ -3,61 +3,57 @@ name: unknown_workflow_video_sampler_vae_159
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.931333
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CM_FloatToInt, CR Prompt Text, ImageResize+, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PlaySound|pysssss, PreviewAudio, SoundFlow_GetLength, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
+coverage: 0.779667
+common_nodes: [ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/S2V-长视频数字人工作流_1983508119022149633.json, 视频生成/图生视频/S2V-长视频数字人工作流_1984410578229870594.json, 视频生成/图生视频/video_wan2_2_s2v口播_1981551177856892929.json]
+members: [视频生成/图生视频/SkyreelV3双图参考图生视频_2019967934935863297.json, 视频生成/图生视频/SkyreelV3多主体参考图生视频_2017514844987068418.json, 视频生成/图生视频/SkyreelV3多主体参考图生视频_2026233274720325634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_159
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/S2V-长视频数字人工作流_1983508119022149633.json、视频生成/图生视频/S2V-长视频数字人工作流_1984410578229870594.json、视频生成/图生视频/video_wan2_2_s2v口播_1981551177856892929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SkyreelV3双图参考图生视频_2019967934935863297.json、视频生成/图生视频/SkyreelV3多主体参考图生视频_2017514844987068418.json、视频生成/图生视频/SkyreelV3多主体参考图生视频_2026233274720325634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CM_FloatToInt`
-- `CR Prompt Text`
-- `ImageResize+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PlaySound|pysssss`
-- `PreviewAudio`
-- `SoundFlow_GetLength`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoAddAudioEmbeds`
-- `WanVideoContextOptions`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 2/3 个有
-- `PreviewImage` —— 1/3 个有
-- `WanVideoBlockSwap` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `WanVideoModelLoader` —— 1/3 个有
-- `WanVideoSetBlockSwap` —— 1/3 个有
-- `WanVideoSetLoRAs` —— 1/3 个有
-- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `Anything Everywhere` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 

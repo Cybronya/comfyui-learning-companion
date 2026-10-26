@@ -1,69 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_225
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.687889
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.8095
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json, 视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062715570117758978.json, 视频生成/图生视频/六宫格横屏1280导演台自动化工作流（固定15秒）_2070323766567194626.json, 视频生成/图生视频/短剧漫剧wan+九宫格横屏1280导演台自动化工作流（固定20秒）_2080658867448541185.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定18秒）_2067903674852134913.json]
+members: [视频生成/图生视频/ani，ani全能视频S自选这些的的wan2.1自用加速7步_1944806594343522306.json, 视频生成/图生视频/lightx2v加速24fps版高运动最高质量版图生视频V1_1934996455494983682.json, 视频生成/图生视频/【加速版】lightx2v 16fps 图生视频_1936041797762076674.json, 视频生成/图生视频/万能图生视频_Aniwan_1945716479117447170.json, 视频生成/图生视频/动漫图生视频 wan ani全能视频S_1945116426497871874.json, 视频生成/图生视频/图生视频 Wan I2V nightly_1913661782513385473.json, 视频生成/图生视频/图生视频 首尾帧 Wan FLF nightly_1913309276788719618.json, 视频生成/图生视频/生产级图生视频 Wan I2V API latent output_1917988631829745665.json, 视频生成/图生视频/生产级图生视频 Wan I2V API latent output_2050270690158358530.json, 视频生成/图生视频/视频转绘 Fun Control nightly_1922720148057198593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_225
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json、视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json、视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/ani，ani全能视频S自选这些的的wan2.1自用加速7步_1944806594343522306.json、视频生成/图生视频/lightx2v加速24fps版高运动最高质量版图生视频V1_1934996455494983682.json、视频生成/图生视频/【加速版】lightx2v 16fps 图生视频_1936041797762076674.json、视频生成/图生视频/万能图生视频_Aniwan_1945716479117447170.json、视频生成/图生视频/动漫图生视频 wan ani全能视频S_1945116426497871874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 10 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TTResolutionSelector` —— 7/9 个有
-- `LoadVideo` —— 6/9 个有
-- `Text Multiline` —— 6/9 个有
-- `LTXDirectorGuide` —— 5/9 个有
-- `SF-LTXDirectorGuide` —— 4/9 个有
-- `SF-LTXGridDirector` —— 4/9 个有
-- `CS-LTXGridDirector` —— 3/9 个有
-- `CS-LTXSixGridDirector` —— 2/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RH_RhartImageG2ImageToImage` —— 1/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
+- `WanVideoEnhanceAVideo` —— 9/10 个有
+- `WanVideoSLG` —— 8/10 个有
+- `LoadWanVideoClipTextEncoder` —— 7/10 个有
+- `WanVideoExperimentalArgs` —— 7/10 个有
+- `WanVideoTorchCompileSettings` —— 7/10 个有
+- `WanVideoVRAMManagement` —— 7/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 5/10 个有
+- `GIMMVFI_interpolate` —— 5/10 个有
+- `WanVideoTeaCache` —— 4/10 个有
+- `CLIPVisionLoader` —— 3/10 个有
+- `Text Multiline` —— 3/10 个有
+- `WanVideoFreeInitArgs` —— 3/10 个有
+- `ImageBlur` —— 2/10 个有
+- `JWInteger` —— 2/10 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `SaveLatent` —— 2/10 个有
+- `CR Value` —— 1/10 个有
+- `LayerUtility: PurgeVRAM` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
+- `WanVideoControlEmbeds` —— 1/10 个有
+- `WanVideoEasyCache` —— 1/10 个有
+- `WanVideoEncode` —— 1/10 个有
 
 ## 典型参数
 

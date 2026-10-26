@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1273
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.804
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadImage, MuyeTextEditOutput, RH_Captioner_Pro, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss, Text Concatenate]
+coverage: 0.6905
+common_nodes: [4c314f31-ecda-4b08-ae98-faaba1bf613f, GetImageSize, ImageScaleToTotalPixels, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/gemini3+ 全能图片_9宫格_25宫格_生图_融图_2090009048090505217.json, 图片生成/文生图/2031567861646364673.json]
+members: [comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json, comfyui-workflow-templates-json/video_minimax_h3_i2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1273
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/gemini3+ 全能图片_9宫格_25宫格_生图_融图_2090009048090505217.json、图片生成/文生图/2031567861646364673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json、comfyui-workflow-templates-json/video_minimax_h3_i2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
+- `4c314f31-ecda-4b08-ae98-faaba1bf613f`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `RH_Captioner_Pro`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `ResolutionSelector` —— 1/2 个有
 
 ## 典型参数
 

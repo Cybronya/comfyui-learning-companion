@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_400
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.813167
-common_nodes: [FlashVSRNode, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.585143
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json, 图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json, 图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json, 图片生成/图生图/flashVSR图片高清放大_2067075698631729154.json]
+members: [视频生成/图生视频/Soro2图生视频-10s_2006756552966934530.json, 视频生成/图生视频/一键漫剧视频15秒（0.15一次）_2013870474350039041.json, 视频生成/图生视频/全能视频S Image to Video_1973542685552283650.json, 视频生成/图生视频/全能视频S 图生视频 (10-15秒)_1996576897733640194.json, 视频生成/图生视频/全能视频S 图生视频_1984540951081271297.json, 视频生成/图生视频/全能视频S-带货视频_1977697978410565633.json, 视频生成/图生视频/全能视频S丨图生视频（15S）_1985573465543651330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_400
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json、图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json、图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Soro2图生视频-10s_2006756552966934530.json、视频生成/图生视频/一键漫剧视频15秒（0.15一次）_2013870474350039041.json、视频生成/图生视频/全能视频S Image to Video_1973542685552283650.json、视频生成/图生视频/全能视频S 图生视频 (10-15秒)_1996576897733640194.json、视频生成/图生视频/全能视频S 图生视频_1984540951081271297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `FlashVSRNode`
-- `Image Comparer (rgthree)`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `easy imageScaleDownToSize` —— 3/6 个有
-- `Int` —— 2/6 个有
+- `JjkText` —— 2/7 个有
+- `CR Seed` —— 1/7 个有
+- `ResizeLongestToNode` —— 1/7 个有
+- `easy imageScaleDownToSize` —— 1/7 个有
 
 ## 典型参数
 

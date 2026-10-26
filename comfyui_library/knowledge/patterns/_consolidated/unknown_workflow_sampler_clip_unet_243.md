@@ -1,77 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_243
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8664
-common_nodes: [BasicScheduler, CLIPTextEncode, Image Comparer (rgthree), KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
-problems: []
+coverage: 0.953833
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Kontext中文版提示词单图模式（开源版）_1938426067969314817.json, 图片生成/图生图/Kontext遮罩指哪打哪中文版提示词（开源版）_1939937892967817218.json, 图片生成/图生图/WAN2.2图像洗图放大（纯种WAN2.2）_1952371299358322690.json, 图片生成/图生图/即梦单图模式（1K放大版）_1968538127075815425.json, 图片生成/文生图/Kontext中文版提示词漫画转绘_1968667688585318402.json]
+members: [图片生成/文生图/造相 Z_image文生图123_2010647595311435778.json, 图片生成/文生图/阿里 Z-image 文生图 工作流 最强开源模型_2038257042820960257.json, 图片生成/文生图/阿里开源文生图模型Qwen-Image_1952836741905510402.json, 图片生成/文生图/（官方版）Qwen Image文生图V1_1952787828896952322.json, 图片生成/文生图/（官方版）Qwen Image文生图（媲美即梦）_1953287044091023361.json, 图片生成/文生图/（电商娱乐流）z image turbo 文生图基础工作流_2052286821991755777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_243
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext中文版提示词单图模式（开源版）_1938426067969314817.json、图片生成/图生图/Kontext遮罩指哪打哪中文版提示词（开源版）_1939937892967817218.json、图片生成/图生图/WAN2.2图像洗图放大（纯种WAN2.2）_1952371299358322690.json、图片生成/图生图/即梦单图模式（1K放大版）_1968538127075815425.json、图片生成/文生图/Kontext中文版提示词漫画转绘_1968667688585318402.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/造相 Z_image文生图123_2010647595311435778.json、图片生成/文生图/阿里 Z-image 文生图 工作流 最强开源模型_2038257042820960257.json、图片生成/文生图/阿里开源文生图模型Qwen-Image_1952836741905510402.json、图片生成/文生图/（官方版）Qwen Image文生图V1_1952787828896952322.json、图片生成/文生图/（官方版）Qwen Image文生图（媲美即梦）_1953287044091023361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 4/5 个有
-- `CLIPLoader` —— 4/5 个有
-- `DisableNoise` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `ModelSamplingSD3` —— 4/5 个有
-- `RH_Captioner` —— 4/5 个有
-- `SeedVR2` —— 4/5 个有
-- `SplitSigmas` —— 4/5 个有
-- `WanVideoNAG` —— 4/5 个有
-- `BasicGuider` —— 3/5 个有
-- `DualCLIPLoader` —— 3/5 个有
-- `FluxGuidance` —— 3/5 个有
-- `FluxKontextImageScale` —— 3/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `RH_Translator` —— 3/5 个有
-- `ReferenceLatent` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `MaskToImage` —— 1/5 个有
-- `Mix Color By Mask` —— 1/5 个有
-- `RH_Jimeng4_Image2Image` —— 1/5 个有
-- `SDXLPromptStyler` —— 1/5 个有
-- `UltimateSDUpscale` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `CLIPLoaderGGUF` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `UnetLoaderGGUF` —— 1/6 个有
+- `easy int` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 9 - 50 | 6 | 48% |
+| Prompt 约束强度(CFG) | 3 | 1 - 4 | 6 | 65% |
+| 采样算法 | euler | - | 6 | 50% |
+| 调度器 | simple | - | 6 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 9 - 50，6 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，6 个样本
+- 采样算法 最常用 euler，6 个样本，一致性 50%
+- 调度器 最常用 simple，6 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

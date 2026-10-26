@@ -1,75 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_unet_205
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.666667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+coverage: 0.680429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json, 图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json, 图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json, 图片生成/文生图/Flux2 Klein 9B 文生图_单图_双图编辑 工作流合集_2012152763832082434.json]
+members: [图片生成/文生图/flux3 t2v 蒸馏版本_2111318527201341441.json, 图片生成/文生图/flux3-image-klein（文生图）_2110956174114910210.json, 图片生成/文生图/flux3_image_klein文生图_2111012203712311297.json, 图片生成/文生图/flux3_klein 文生图 base版本_2110956211372904449.json, 图片生成/文生图/moss_image图像生成_2112202038108049409.json, 图片生成/文生图/moss文生图_2113583535255805954.json, 图片生成/文生图/（自用-贞贞版）Moss-image Sft Fixed文生图_2112438870972387329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_205
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json、图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json、图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/flux3 t2v 蒸馏版本_2111318527201341441.json、图片生成/文生图/flux3-image-klein（文生图）_2110956174114910210.json、图片生成/文生图/flux3_image_klein文生图_2111012203712311297.json、图片生成/文生图/flux3_klein 文生图 base版本_2110956211372904449.json、图片生成/文生图/moss_image图像生成_2112202038108049409.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptyFlux2LatentImage`
+- `KSampler`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SetNode`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `Any Switch (rgthree)` —— 4/6 个有
-- `Int` —— 4/6 个有
-- `MuyeTextEditOutput` —— 4/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `DapaoImagePadDirectionNode` —— 3/6 个有
-- `EmptyFlux2LatentImage` —— 3/6 个有
-- `ImageCompositorNode` —— 3/6 个有
-- `LayerUtility: ColorImage` —— 3/6 个有
-- `MaskFillHoles` —— 3/6 个有
-- `RHHiddenNodes` —— 3/6 个有
-- `RH_Translator` —— 3/6 个有
-- `Anything Everywhere` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `ColorMatch` —— 1/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `easy conditioningIndexSwitch` —— 1/6 个有
-- `easy imageIndexSwitch` —— 1/6 个有
+- `PreviewAny` —— 6/7 个有
+- `ComfySwitchNode` —— 5/7 个有
+- `ResolutionSelector` —— 5/7 个有
+- `PrimitiveBoolean` —— 2/7 个有
+- `SkipLayerGuidanceDiTSimple` —— 2/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
+- `CreateBoundingBoxes` —— 1/7 个有
+- `Ideogram4PromptBuilderKJ` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 15 - 50 | 7 | 56% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 3.5 | 7 | 52% |
+| 采样算法 | er_sde | - | 7 | 71% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -77,4 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 15 - 50，7 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 3.5，7 个样本
+- 采样算法 最常用 er_sde，7 个样本，一致性 71%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

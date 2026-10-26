@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_494
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7082
-common_nodes: [JjkText, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveImage]
+coverage: 0.633333
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/AI漫剧V2-第一步-角色卡制作_2067068756156833794.json, 图片生成/图生图/AI漫剧V2-第二步-分镜图制作_2051593724039311361.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json, 图片生成/文生图/AI漫剧V2-第二步-分镜图制作_2055505792694013953.json]
+members: [图片生成/文生图/GT-Image-2---文生图_2046759115384426497.json, 图片生成/文生图/gxx-image-2文生图（贞贞的AI工坊-Chat模式）_2046481114121904130.json, 图片生成/文生图/全能图片G-image-2图像编辑+文生图（贞贞的AI工坊-Chat模式）_2046589163054567425.json, 图片生成/文生图/新王者图像编辑 gxx-image-2 全能图像编辑（贞贞的AI工坊-Chat API模式）_2046817026815041538.json, 图片生成/文生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046836294315151362.json, 图片生成/文生图/（0.04积分）全能图片G V2文生图（贞贞的AI工坊-异步任务）_2046776565219987457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_494
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AI漫剧V2-第一步-角色卡制作_2067068756156833794.json、图片生成/图生图/AI漫剧V2-第二步-分镜图制作_2051593724039311361.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json、图片生成/文生图/AI漫剧V2-第二步-分镜图制作_2055505792694013953.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/GT-Image-2---文生图_2046759115384426497.json、图片生成/文生图/gxx-image-2文生图（贞贞的AI工坊-Chat模式）_2046481114121904130.json、图片生成/文生图/全能图片G-image-2图像编辑+文生图（贞贞的AI工坊-Chat模式）_2046589163054567425.json、图片生成/文生图/新王者图像编辑 gxx-image-2 全能图像编辑（贞贞的AI工坊-Chat API模式）_2046817026815041538.json、图片生成/文生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046836294315151362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2TextToImage` —— 3/5 个有
-- `JoinStrings` —— 2/5 个有
-- `RH_RhartImageG2ImageToImage` —— 2/5 个有
+- `Comfly_gpt_image_2` —— 4/6 个有
+- `Comfly_gpt_image_2_S2A` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_62
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.937769
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.789385
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein批量去除水印9B版_2012709119131652097.json, 图片生成/图生图/Flux2 Klein｜1 图像编辑（终极版V3：角色一致性，保留角色全身特征）_2052041548086427649.json, 图片生成/图生图/Flux2 klein kv高速图片编辑_2040977793638469634.json, 图片生成/图生图/Flux2+Klein9b服装提取3d+移除褶皱_2020468089401384961.json, 图片生成/图生图/Flux2-Klein-9B-人物换头_2012775113048989698.json, 图片生成/图生图/Flux2-Klein-9B-材质替换_2012772305113456641.json, 图片生成/图生图/Flux2-Klein-9B衣服迁移(偏色修正版)_2012342283487678465.json, 图片生成/图生图/Flux2-Klein-动作迁移_2012197021490356226.json, 图片生成/图生图/Flux2-Klein-衣服迁移_2012194675712593921.json, 图片生成/图生图/Flux2-Klein9b 万能提取服装_2025975423003271170.json, 图片生成/图生图/flux_特征转换iden_transfer_v3_2051150744098754562.json, 图片生成/图生图/产品图与美妆精修_2053373828482519041.json, 图片生成/图生图/任意图片转“手持自拍”_2052670657846099969.json]
+members: [图片生成/图生图/Flux2 Klein 单图编辑 测试_2013477246534684674.json, 图片生成/图生图/Flux2 Klein 多图编辑 加速版_1993654949070520322.json, 图片生成/图生图/Flux2 Klein全新一键换装加速版_2046867468991336449.json, 图片生成/图生图/Flux2Klein模特换装加速版_2058009325561540609.json, 图片生成/图生图/klein_SU模型图直接渲染效果图+高清放大_2015800051087450114.json, 图片生成/图生图/全新换装 Flux2 Klein 加速版_2019046680485695490.json, 图片生成/图生图/全新换装 Flux2 Klein 加速版！B站艾橘溪_2015984915837362177.json, 图片生成/图生图/庭院效果图洗图-高清放大_2055964480579874817.json, 图片生成/图生图/强行换装_2044612462158286849.json, 图片生成/图生图/模特换装 Flux2 Klein 加速版_2022514742631342082.json, 图片生成/图生图/模特换装Flux2Klein加速版_2050601223795032065.json, 图片生成/图生图/解说漫-Klein角色编辑_2070829957756047362.json, 图片生成/图生图/超强换装加速版_2057401238215553026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein批量去除水印9B版_2012709119131652097.json、图片生成/图生图/Flux2 Klein｜1 图像编辑（终极版V3：角色一致性，保留角色全身特征）_2052041548086427649.json、图片生成/图生图/Flux2 klein kv高速图片编辑_2040977793638469634.json、图片生成/图生图/Flux2+Klein9b服装提取3d+移除褶皱_2020468089401384961.json、图片生成/图生图/Flux2-Klein-9B-人物换头_2012775113048989698.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 单图编辑 测试_2013477246534684674.json、图片生成/图生图/Flux2 Klein 多图编辑 加速版_1993654949070520322.json、图片生成/图生图/Flux2 Klein全新一键换装加速版_2046867468991336449.json、图片生成/图生图/Flux2Klein模特换装加速版_2058009325561540609.json、图片生成/图生图/klein_SU模型图直接渲染效果图+高清放大_2015800051087450114.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
@@ -26,11 +26,9 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -41,21 +39,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 12/13 个有
-- `Image Comparer (rgthree)` —— 9/13 个有
-- `FluxKontextImageScale` —— 7/13 个有
-- `ImageScaleToTotalPixels` —— 6/13 个有
-- `LoraLoaderModelOnly` —— 4/13 个有
+- `ConditioningZeroOut` —— 12/13 个有
+- `EmptyFlux2LatentImage` —— 12/13 个有
+- `Int` —— 11/13 个有
+- `GetNode` —— 10/13 个有
+- `JjkText` —— 10/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/13 个有
+- `SetNode` —— 10/13 个有
+- `ImageConcanate` —— 8/13 个有
+- `easy imageRemBg` —— 8/13 个有
+- `ImageScaleToTotalPixels` —— 7/13 个有
+- `SeedVR2LoadDiTModel` —— 7/13 个有
+- `SeedVR2LoadVAEModel` —— 7/13 个有
+- `SeedVR2VideoUpscaler` —— 7/13 个有
 - `PreviewImage` —— 4/13 个有
-- `YC Color Match` —— 3/13 个有
-- `IdentityFeatureTransferV3` —— 2/13 个有
-- `FluxKVCache` —— 1/13 个有
-- `HAIGC_LoadImagesFromZip` —— 1/13 个有
-- `HAIGC_SaveImagesToZip` —— 1/13 个有
-- `ImageConcatenate_UTK` —— 1/13 个有
-- `ImageFromBatch+` —— 1/13 个有
-- `ImageListToBatch+` —— 1/13 个有
-- `OpenposePreprocessor` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 2/13 个有
+- `CustomAddLabel` —— 1/13 个有
+- `GetImageSize` —— 1/13 个有
+- `ImageConcatMulti` —— 1/13 个有
+- `PrimitiveInt` —— 1/13 个有
+- `Seed (rgthree)` —— 1/13 个有
 
 ## 典型参数
 

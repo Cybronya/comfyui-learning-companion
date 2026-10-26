@@ -3,45 +3,33 @@ name: unknown_workflow_generic_247
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.789444
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, ShowText|pysssss]
+coverage: 0.702444
+common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json, 视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json, 视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json, 视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json, 视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json, 视频生成/图生视频/服装带货—街拍服装带货短视频（全自动生成）_2095749153849700354.json, 视频生成/图生视频/红果短剧・短视频・AI全自动生成工作流_2081954189047066625.json, 视频生成/图生视频/街拍服装带货短视频（全自动生成）_2079176863691399170.json, 视频生成/文生视频/导演分镜故事板+SD2全自动短剧视频工作流_2076975761147383810.json]
+members: [图片生成/图生图/Index TTS声音克隆_2073344736039100417.json, 图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json, 数字人/数字人/克隆声音 _ Index-TTS 官方版📢_2073279320860225537.json, 音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_247
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json、视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json、视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json、视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json、视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Index TTS声音克隆_2073344736039100417.json、图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json、数字人/数字人/克隆声音 _ Index-TTS 官方版📢_2073279320860225537.json、音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `SaveVideo`
-- `ShowText|pysssss`
+- `IndexTTSNode`
+- `JjkText`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
-- `SaveImage` —— 8/9 个有
-- `PD_JoinStringMultiLine` —— 6/9 个有
-- `PreviewAny` —— 5/9 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/9 个有
+- `AudioCrop` —— 7/9 个有
 
 ## 典型参数
 

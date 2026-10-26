@@ -1,74 +1,67 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_36
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.830667
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DownloadAndLoadFlorence2Model, Florence2Run, ImageUpscaleWithModel, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+frequency: 4
+level: moderate
+coverage: 0.86125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Image Comparer (rgthree), KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/HiDream&TTP_1925414382111760386.json, 图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json, 图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json]
+members: [图片生成/文生图/Z-imagebase蛋挞Lora+放大_2026169943431057410.json, 图片生成/文生图/ainmap3反推画风选择放大_2044263221657341953.json, 图片生成/文生图/bangdream_mygo_2046920939073445889.json, 数字人/数字人/文生图v1_2049795277200084993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HiDream&TTP_1925414382111760386.json、图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json、图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-imagebase蛋挞Lora+放大_2026169943431057410.json、图片生成/文生图/ainmap3反推画风选择放大_2044263221657341953.json、图片生成/文生图/bangdream_mygo_2046920939073445889.json、数字人/数字人/文生图v1_2049795277200084993.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `ImageUpscaleWithModel`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `Image Comparer (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `Florence2ModelLoader` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageScaleBy` —— 1/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `QuadrupleCLIPLoader` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `llama_cpp_parameters` —— 2/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `LoraLoader` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.85 | - | 2 | 100% |
-| LoRA 文本强度 | 0.85 | - | 2 | 100% |
+| 采样步数 | 39 | 28 - 50 | 4 | 72% |
+| Prompt 约束强度(CFG) | 5 | 2.5 - 5 | 4 | 75% |
+| 采样算法 | res_multistep | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 0.6 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -76,5 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 39，观测区间 28 - 50，4 个样本
+- Prompt 约束强度(CFG) 中位数 5，观测区间 2.5 - 5，4 个样本
+- 采样算法 最常用 res_multistep，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

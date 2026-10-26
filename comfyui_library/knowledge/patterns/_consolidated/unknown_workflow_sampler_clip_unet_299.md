@@ -2,56 +2,58 @@
 name: unknown_workflow_sampler_clip_unet_299
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.807
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.92925
+common_nodes: [CLIPLoader, CLIPTextEncode, LanPaint_KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Comfy挑战赛7（不可能的菜肴）-SRPO自动创意文生图V1（四图）_1974009583997947905.json, 图片生成/文生图/Flux1-TeaCache加速工作流_1929847965068988417.json, 图片生成/文生图/Flux_Dev文生图官方工作流_1930161942738976770.json, 图片生成/文生图/（生图篇）MagCache新王登基_1933213412669173762.json]
+members: [图片生成/图生图/LanPaint- Z-Image局部重绘_2005240517799669761.json, 图片生成/图生图/Lens-局部重绘_2067225666583617538.json, 图片生成/图生图/Z-image-base-万能局部重绘_2026265970930622466.json, 图片生成/图生图/ernie-turbo-局部重绘_2067810134981697538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_299
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Comfy挑战赛7（不可能的菜肴）-SRPO自动创意文生图V1（四图）_1974009583997947905.json、图片生成/文生图/Flux1-TeaCache加速工作流_1929847965068988417.json、图片生成/文生图/Flux_Dev文生图官方工作流_1930161942738976770.json、图片生成/文生图/（生图篇）MagCache新王登基_1933213412669173762.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LanPaint- Z-Image局部重绘_2005240517799669761.json、图片生成/图生图/Lens-局部重绘_2067225666583617538.json、图片生成/图生图/Z-image-base-万能局部重绘_2026265970930622466.json、图片生成/图生图/ernie-turbo-局部重绘_2067810134981697538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LanPaint_KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `GoogleTranslator` —— 1/4 个有
-- `MagCache` —— 1/4 个有
-- `Note _O` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `TeaCache` —— 1/4 个有
-- `Text Concatenate` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `InpaintModelConditioning` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `ModelSamplingAuraFlow` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SetLatentNoiseMask` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `LanPaint_MaskBlend` —— 1/4 个有
+- `Mask Fill Holes` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 6 - 9 | 4 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -59,4 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 6 - 9，4 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

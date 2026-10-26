@@ -3,70 +3,75 @@ name: text_to_image_video_lora_sampler_120
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.728167
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.585667
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), Float, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ResolutionSelector, SetNode, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json, 视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json, 视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json, 视频生成/文生视频/人物角色文生视频｜MiniMax+H3角色设计一键生成_2094312279473999874.json, 视频生成/文生视频/开源文生视频｜MiniMax-H3战斗特效角色设计生成_2094797659730169857.json, 视频生成/文生视频/文生视频 MiniMax H3 可设时长分辨率比例快速出片_2094174814998192130.json]
+members: [视频生成/图生视频/MiniMax H3 SelfLift全能流V3 VOSR速度质量兼顾工具_2113402636207742978.json, 视频生成/图生视频/MiniMax H3打斗单采｜高质量图生视频生成_2095594939815129089.json, 视频生成/图生视频/MiniMax H3短剧公司版本 图生视频高效出片处理工具_2113715561371885570.json, 视频生成/图生视频/打斗单采图生视频｜AITUDOU-MiniMax H3生成_2095847355185717249.json, 视频生成/文生视频/AITUDOU-H3+SelfLift组合｜影视级情绪表达出片_2106620640190095361.json, 视频生成/文生视频/MiniMax_H3_SelfLift影视级情绪表达Skill工作流，文生视频图生视频_2108377073327894530.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_120
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json、视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json、视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json、视频生成/文生视频/人物角色文生视频｜MiniMax+H3角色设计一键生成_2094312279473999874.json、视频生成/文生视频/开源文生视频｜MiniMax-H3战斗特效角色设计生成_2094797659730169857.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 SelfLift全能流V3 VOSR速度质量兼顾工具_2113402636207742978.json、视频生成/图生视频/MiniMax H3打斗单采｜高质量图生视频生成_2095594939815129089.json、视频生成/图生视频/MiniMax H3短剧公司版本 图生视频高效出片处理工具_2113715561371885570.json、视频生成/图生视频/打斗单采图生视频｜AITUDOU-MiniMax H3生成_2095847355185717249.json、视频生成/文生视频/AITUDOU-H3+SelfLift组合｜影视级情绪表达出片_2106620640190095361.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `ResolutionSelector`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `VHS_LoadVideoFFmpeg` —— 5/6 个有
-- `LoadImage` —— 4/6 个有
-- `ModelAttentionBackend` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `Text` —— 3/6 个有
-- `ImageCrop+` —— 2/6 个有
-- `ImageScaleToTotalPixels` —— 2/6 个有
-- `Any Switch (rgthree)` —— 1/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `H3SigmaRefiner` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SolAttnPatch` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `H3SigmaRefiner` —— 5/6 个有
+- `ModelAttentionBackend` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `ConditioningZeroOut` —— 4/6 个有
+- `LoadAudio` —— 4/6 个有
+- `SelfLiftH3Sampler` —— 4/6 个有
+- `BasicGuider` —— 3/6 个有
+- `ExtendIntermediateSigmas` —— 3/6 个有
+- `RandomNoise` —— 3/6 个有
+- `SamplerCustomAdvanced` —— 3/6 个有
+- `SaveImage` —— 3/6 个有
+- `SolAttnMiniMax` —— 2/6 个有
+- `JWImageResizeByLongerSide` —— 1/6 个有
+- `LTXVSeparateAVLatent` —— 1/6 个有
+- `MiniMaxH3SigmaShift` —— 1/6 个有
+- `ModelPreviewOverrideKJ` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `QwenH3PromptLocal` —— 1/6 个有
+- `RIFE VFI` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
+- `VOSR2ModelLoader` —— 1/6 个有
+- `VOSR2Upscale` —— 1/6 个有
+- `easy imageSize` —— 1/6 个有
 
 ## 典型参数
 

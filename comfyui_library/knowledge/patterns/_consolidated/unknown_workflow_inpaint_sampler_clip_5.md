@@ -1,85 +1,67 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_5
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.831692
-common_nodes: [BasicGuider, BlockifyMask, Bool, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), ImageScale, ImpactMakeAnyList, ImpactNeg, InpaintCropImproved, Int, KSamplerSelect, LayerColor: BrightnessContrastV2, LayerMask: MaskGrow, LayerUtility: ColorImage V2, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, MaskPreview, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SmartColorMatch, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy imageSize, easy isMaskEmpty, 取色器_孤海, 图像接缝]
+frequency: 9
+level: strong
+coverage: 0.890333
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json, 图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json, 图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json, 图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053089255521570817.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2074896943041564674.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2082289012022267905.json, 图片生成/图生图/Klein万物迁移（零偏移）_2049015744599433217.json, 图片生成/图生图/一致性换装工作流klein局部换装_2047879539073748994.json, 图片生成/图生图/万物迁移-添加物品-局部重绘_2039149753463742465.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2053480818001104897.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2063909849330708481.json]
+members: [图片生成/图生图/4.flux-fill+seg去水印_1997528297493958657.json, 图片生成/图生图/FLUX FILL去水印_1906693352803250178.json, 图片生成/图生图/FLUX局部重绘无痕一键生成_1917067321331093506.json, 图片生成/图生图/FLUX局部重绘（无痕）_1901904713074548737.json, 图片生成/图生图/Flux-fill-Oneward万物移除工作流_1986678175293992961.json, 图片生成/图生图/FluxFillOneward万物移除-去掉neo机器人_1986905534173523969.json, 图片生成/图生图/flux_dev_fill_局部重绘_1960248886801674241.json, 图片生成/图生图/flux自动修手，不用画遮罩_2018505151610363906.json, 图片生成/图生图/【修手】FLUX手指手部超强修复_1953386504909410306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_5
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json、图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json、图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json、图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json、图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/4.flux-fill+seg去水印_1997528297493958657.json、图片生成/图生图/FLUX FILL去水印_1906693352803250178.json、图片生成/图生图/FLUX局部重绘无痕一键生成_1917067321331093506.json、图片生成/图生图/FLUX局部重绘（无痕）_1901904713074548737.json、图片生成/图生图/Flux-fill-Oneward万物移除工作流_1986678175293992961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicGuider`
-- `BlockifyMask`
-- `Bool`
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `ImageScale`
-- `ImpactMakeAnyList`
-- `ImpactNeg`
-- `InpaintCropImproved`
-- `Int`
-- `KSamplerSelect`
-- `LayerColor: BrightnessContrastV2`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageMaskScaleAs`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `InpaintModelConditioning`
+- `KSampler`
 - `LoadImage`
-- `Mask Fill Holes`
-- `MaskPreview`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SmartColorMatch`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageSize`
-- `easy isMaskEmpty`
-- `取色器_孤海`
-- `图像接缝`
 
 **可变部分**（部分 workflow 才有）：
-- `easy compare` —— 11/13 个有
-- `easy imageSizeBySide` —— 11/13 个有
-- `easy int` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/13 个有
-- `CR Text` —— 8/13 个有
-- `ConditioningRebalanceKrea2` —— 2/13 个有
-- `ImageConcatMulti` —— 2/13 个有
-- `LayerMask: MaskPreview` —— 2/13 个有
-- `LoraLoaderModelOnly` —— 2/13 个有
-- `Preview from image [Crystools]` —— 2/13 个有
-- `YuanColorMatch` —— 2/13 个有
-- `孤海注释` —— 2/13 个有
+- `DifferentialDiffusion` —— 8/9 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `ConditioningZeroOut` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `GrowMaskWithBlur` —— 3/9 个有
+- `ImageAndMaskPreview` —— 3/9 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 3/9 个有
+- `Mask Fill Holes` —— 3/9 个有
+- `RH_Translator` —— 3/9 个有
+- `CLIPTextEncode (NSP)` —— 2/9 个有
+- `MaskToImage` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `AddMask` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `MaskPreview+` —— 1/9 个有
+- `easy imageSize` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 10 - 28 | 9 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 44% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
@@ -87,4 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 10 - 28，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 44%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

@@ -2,73 +2,80 @@
 name: unknown_workflow_lora_sampler_clip_139
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.8505
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.87375
+common_nodes: [Bounded Image Crop, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Input Switch (4 way), ConditioningZeroOut, DF_Integer, EmptyFlux2LatentImage, Flux2Scheduler, Get Image Size, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, RandomNoise, ReferenceLatent, ResizeAndPadImage, ResizeImageMixlab, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageColorMatch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: []
 missing: []
-members: [图片生成/图生图/加背景  产品换背景  产品展示   电商图制作_2067167781539373058.json, 图片生成/图生图/加背景  电商图制作   产品展示   产品图换背景_2067118048594718722.json, 图片生成/图生图/千问编辑模型--漫画转真人快速实现_1959596505768341506.json, 图片生成/图生图/换背景-产品白底图自动匹配背景_1977027027687612418.json]
+members: [图片生成/图生图/Flux2修图打光_2070444065451233281.json, 图片生成/图生图/产品修图打光_2077941587761524737.json, 图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067061200311119873.json, 图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067170694919704578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_139
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/加背景  产品换背景  产品展示   电商图制作_2067167781539373058.json、图片生成/图生图/加背景  电商图制作   产品展示   产品图换背景_2067118048594718722.json、图片生成/图生图/千问编辑模型--漫画转真人快速实现_1959596505768341506.json、图片生成/图生图/换背景-产品白底图自动匹配背景_1977027027687612418.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2修图打光_2070444065451233281.json、图片生成/图生图/产品修图打光_2077941587761524737.json、图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067061200311119873.json、图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067170694919704578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Bounded Image Crop`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `CR Text`
+- `CR Text Input Switch (4 way)`
+- `ConditioningZeroOut`
+- `DF_Integer`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Get Image Size`
 - `GetImageSize`
-- `KSampler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `ReferenceLatent`
+- `ResizeAndPadImage`
+- `ResizeImageMixlab`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageColorMatch`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_MiniCPM_4_V` —— 3/4 个有
-- `CR Latent Input Switch` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `CR Text Concatenate` —— 3/4 个有
-- `FluxKontextImageScale` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
 - `ShowText|pysssss` —— 2/4 个有
-- `PreviewAny` —— 1/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `GrowMask` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `InvertMask` —— 1/4 个有
+- `JoinImageWithAlpha` —— 1/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
+- `Upscale Model Loader` —— 1/4 个有
+- `YUAN_TXTConvertAny` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,68 +3,81 @@ name: unknown_workflow_lora_sampler_clip_183
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.886667
-common_nodes: [Any Switch (rgthree), AspectRatio, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, ImageResize+, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly_Any, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TT_img_enc_v2, TwoWaySwitch, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.883
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy setNode]
 problems: []
 missing: []
-members: [图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json, 图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json, 图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json]
+members: [图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json, 图片生成/图生图/Klein极速全自动_2065004946201866242.json, 图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_183
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json、图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json、图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json、图片生成/图生图/Klein极速全自动_2065004946201866242.json、图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AspectRatio`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
 - `Flux2Scheduler`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
-- `Int`
+- `GetImageSize`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly_Any`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `TT_img_enc_v2`
-- `TwoWaySwitch`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadLoraOnly` —— 2/3 个有
-- `MergeLoraToModel` —— 2/3 个有
-- `easy prompt` —— 2/3 个有
-- `easy promptConcat` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `Textbox` —— 1/3 个有
-- `easy saveText` —— 1/3 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Anything Everywhere3` —— 2/3 个有
+- `AutoCropFaces` —— 2/3 个有
+- `DrawMaskOnImage` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LayerMask: MaskGrow` —— 2/3 个有
+- `LayerMask: PersonMaskUltra V2` —— 2/3 个有
+- `LayerUtility: ImageReel` —— 2/3 个有
+- `LayerUtility: ImageReelComposit` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `easy getNode` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `GetImageSize+` —— 1/3 个有
+- `KSamplerAdvanced` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `NuiKr.OpenPoseEditor` —— 1/3 个有
+- `Qwen3_VQA` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 - `easy showAnything` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 8 | - | 1 | 100% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | euler | - | 1 | 100% |
+| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 1 | 100% |
 
 ## 常见问题
 

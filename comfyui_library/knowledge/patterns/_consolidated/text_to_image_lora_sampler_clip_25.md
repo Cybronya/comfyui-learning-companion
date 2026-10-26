@@ -1,83 +1,84 @@
 ---
 name: text_to_image_lora_sampler_clip_25
 type: Text To Image
-frequency: 23
+frequency: 22
 level: strong
-coverage: 0.882652
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.876273
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/RH Upscale双版本视频放大，极速高清视频超分处理_2110500573517795329.json, 图片生成/图生图/RH Upscale双版本视频超分，极速高清放大处理_2110877348689170433.json, 图片生成/图生图/RH Upscale视频极速超分｜RH币版加api版双通道_2111134972022185985.json, 图片生成/图生图/SeedVR2zip批量放大｜多图一次导入批量超分出图_2106570411403206657.json, 图片生成/图生图/SeedVR2人像写真专用｜顶级画质高清放大不糊脸_2106568757719166978.json, 图片生成/图生图/SeedVR2材质细节增强｜图生图高清放大保留纹理_2106567237770502146.json, 图片生成/图生图/SeedVR2材质细节放大｜图生图修复纹理质感_2097231310170447874.json, 图片生成/图生图/Vosr2.0+RTX视频串联修复｜超高清画质增强工作流_2097831528368791553.json, 图片生成/图生图/zip多图打包批量处理｜SeedVR2图片高清放大流水线_2106559487606878210.json, 图片生成/图生图/全能图片G image 2.0图生图官方稳定版｜修图稳如老狗_2111833584133828610.json, 图片生成/图生图/全能图片G-2图生图 官方稳定版Image 2商品摄影_2098692462993829889.json, 图片生成/图生图/全能图片G2.0官方稳定版 图生图可靠直出方案_2110371560384192514.json, 图片生成/图生图/全能图片G2.0官方稳定版 图生图质量有保障_2104656322951208962.json, 图片生成/图生图/全能图片G2.0官方稳定版图生图处理生成工具_2101741663516450817.json, 图片生成/图生图/全能图片G2.0官方稳定版工作流，图生图多场景覆盖处理工具_2105762042266349569.json, 图片生成/图生图/全能图片G2.0官方稳定版，图生图多任务一个流程搞定_2112650204284542978.json, 图片生成/图生图/全能图片G2.0官方稳定版｜图生图一键直出_2089281828489355265.json, 图片生成/图生图/全能图片G2.0官方稳定版｜图生图全能编辑_2090083955017080833.json, 图片生成/图生图/全能图片G2.0官方稳定版｜图生图多场景通用的放心之选_2101572295738355714.json, 图片生成/图生图/全能图片G2.0官方稳定版｜图生图老牌优选｜稳定输出不翻车_2102582375585763330.json, 数字人/数字人/RH Upscale双版本RH币API版视频极速高清放大，视频超分工具_2105803495495524354.json, 数字人/数字人/视频高清RH Upscale双模式工作流，数字人视频生视频超分处理工具_2106869306951819265.json, 视频生成/图生视频/视频高清RH_Upscale双模式工作流，数字人视频生视频超分处理工具_2109815199111925761.json]
+members: [图片生成/图生图/H3_MAX智能运镜AI看图自动运镜图生图处理工作流_2101761496228388866.json, 图片生成/图生图/Image2.5高精度图生图处理生成工具_2100287923240398849.json, 图片生成/图生图/MOSS Text to Image 2K Turbo 文生图图生图极速工具_2114119482594648066.json, 图片生成/图生图/Moss-image 8步加速文生图，图生图辅助提速不等待_2112701805070213121.json, 图片生成/图生图/Moss-image 文生图8步加速版｜图生图洗图更高效_2112404734073204738.json, 图片生成/图生图/Moss-image 文生图提示词增强｜一句话出好图_2112406284036296705.json, 图片生成/图生图/Moss-image提示词增强文生图，图生图辅助出图更省心_2112620573389049858.json, 图片生成/文生图/Flux 3_Image_Klein开源版文生图｜角色设计写真一把好手_2111303591293177858.json, 图片生成/文生图/Flux3 Klein提示词增强文生图 创意直出高效处理工具_2113710948639924225.json, 图片生成/文生图/Flux3 Klein文生图提示词增强 创意直出省心生成工具_2113709466570022914.json, 图片生成/文生图/Flux3-klein提示词增强文生图｜创意画面直出更轻松省事_2113539868348469249.json, 图片生成/文生图/Flux3-klein文生图带提示词增强｜一键自动扩写出好图_2111269274059890689.json, 图片生成/文生图/Flux3-klein文生图提示词增强版｜创意出图省心利器_2114028428172292098.json, 图片生成/文生图/Flux3-klein文生图提示词增强，创意直出更省心_2111610313010401282.json, 图片生成/文生图/Flux3-klein文生图提示词增强，创意直出更省心_2113183047603539969.json, 图片生成/文生图/Flux3-klein文生图提示词增强，创意直出更省心_2113198789153615874.json, 图片生成/文生图/Flux3-klein文生图提示词增强，创意直出更省心_2113543215390482434.json, 图片生成/文生图/Flux3-klein文生图提示词增强，创意直出更省心_2113546638164848641.json, 图片生成/文生图/Flux3-klein文生图提示词增强｜创意直出更省心_2114072279226347522.json, 图片生成/文生图/Flux3-klein文生图提示词自动增强｜创意直出省心出图_2113538281471303681.json, 图片生成/文生图/MOSS SFT 文生图Comfyui官方流｜海报制作利器_2112476243789697025.json, 视频生成/文生视频/MOSS SFT ComfyUI官方版工作流，文生视频基础管线稳定可靠_2114560619595788289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/RH Upscale双版本视频放大，极速高清视频超分处理_2110500573517795329.json、图片生成/图生图/RH Upscale双版本视频超分，极速高清放大处理_2110877348689170433.json、图片生成/图生图/RH Upscale视频极速超分｜RH币版加api版双通道_2111134972022185985.json、图片生成/图生图/SeedVR2zip批量放大｜多图一次导入批量超分出图_2106570411403206657.json、图片生成/图生图/SeedVR2人像写真专用｜顶级画质高清放大不糊脸_2106568757719166978.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/H3_MAX智能运镜AI看图自动运镜图生图处理工作流_2101761496228388866.json、图片生成/图生图/Image2.5高精度图生图处理生成工具_2100287923240398849.json、图片生成/图生图/MOSS Text to Image 2K Turbo 文生图图生图极速工具_2114119482594648066.json、图片生成/图生图/Moss-image 8步加速文生图，图生图辅助提速不等待_2112701805070213121.json、图片生成/图生图/Moss-image 文生图8步加速版｜图生图洗图更高效_2112404734073204738.json…）
 
 - **类型**：Text To Image
-- **样本数**：23
+- **样本数**：22
 - **可信度**：强结论
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 22/23 个有
-- `SaveImage` —— 19/23 个有
-- `LoadImage` —— 15/23 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 11/23 个有
-- `LoadVideo` —— 6/23 个有
-- `RH_RhartVideoVideoUpscaler` —— 6/23 个有
-- `RH_Upscale` —— 6/23 个有
-- `SaveVideo` —— 5/23 个有
-- `SeedVR2` —— 5/23 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/23 个有
-- `GetVideoComponents` —— 2/23 个有
-- `RHUploadZip_V2` —— 2/23 个有
-- `VHS_VideoCombine` —— 2/23 个有
-- `EmptyImage` —— 1/23 个有
-- `PreviewAny` —— 1/23 个有
-- `PreviewImage` —— 1/23 个有
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 1/23 个有
+- `EmptyFlux2LatentImage` —— 20/22 个有
+- `PrimitiveStringMultiline` —— 20/22 个有
+- `ResolutionSelector` —— 20/22 个有
+- `TextGenerate` —— 18/22 个有
+- `孤海注释` —— 18/22 个有
+- `CR Prompt Text` —— 16/22 个有
+- `ConditioningZeroOut` —— 12/22 个有
+- `easy showAnything` —— 12/22 个有
+- `EmptyImage` —— 3/22 个有
+- `LoadImage` —— 2/22 个有
+- `SkipLayerGuidanceDiTSimple` —— 2/22 个有
+- `PreviewAny` —— 1/22 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/22 个有
+- `RH_MinimaxHailuoH3MaxImageToVideo` —— 1/22 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/22 个有
+- `SaveVideo` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 23 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 23 | 100% |
-| 采样算法 | er_sde | - | 23 | 100% |
-| 调度器 | beta | - | 23 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
-| 宽度 | 80 | 80 - 80 | 23 | 100% |
-| 高度 | 80 | 80 - 80 | 23 | 100% |
+| 采样步数 | 4 | 4 - 4 | 22 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 22 | 100% |
+| 采样算法 | er_sde | - | 22 | 100% |
+| 调度器 | beta | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 80 | 80 - 80 | 22 | 100% |
+| 高度 | 80 | 80 - 80 | 22 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 29/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，23 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，23 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，23 个样本，一致性 100%
-- 调度器 最常用 beta，23 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，23 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，23 个样本，取值集中（一致性 100%）
-- 高发问题（24/23 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，22 个样本，一致性 100%
+- 调度器 最常用 beta，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，22 个样本，取值集中（一致性 100%）
+- 高发问题（29/22 个样本）：Steps较低可能导致细节不足

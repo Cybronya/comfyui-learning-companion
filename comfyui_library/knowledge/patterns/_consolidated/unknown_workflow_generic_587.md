@@ -3,47 +3,33 @@ name: unknown_workflow_generic_587
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6568
-common_nodes: [CR Text Replace, ComfyMathExpression, JoinStrings, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8934
+common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
 problems: []
 missing: []
-members: [视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json]
+members: [图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json, 图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_587
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json、图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json、图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text Replace`
-- `ComfyMathExpression`
-- `JoinStrings`
-- `PrimitiveInt`
-- `SaveText`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `Text Multiline`
-- `easy positive`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `CR Prompt Text`
+- `SaveImage`
+- `Seedance_Config`
+- `Zhenzhen_Image_G25_Lowprice`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `LoadImagesFromFolderKJ` —— 2/5 个有
-- `Prompt_Edit` —— 1/5 个有
+- `LoadImage` —— 3/5 个有
 
 ## 典型参数
 

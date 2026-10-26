@@ -1,78 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_607
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.957667
-common_nodes: [BasicScheduler, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.59775
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json]
+members: [视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json, 视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json, 视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json, 视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_607
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json、视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json、视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json、视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json、视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json、视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `EmptyLTXVLatentVideo`
+全部 4 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
 - `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
-- `LTX2SamplingPreviewOverride`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SimpleCalculatorKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `LiconMSR` —— 2/3 个有
-- `PromptRelayEncode` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CLIPLoader` —— 1/3 个有
-- `LTXVDualCFGGuider` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `YuanCLIPTimeline` —— 1/3 个有
-- `YuanTool` —— 1/3 个有
+- `Float` —— 3/4 个有
+- `LayerMask: MaskInvert` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Setter` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `easy ifElse` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `PointsEditor` —— 2/4 个有
+- `DownloadAndLoadSAM2Model` —— 1/4 个有
+- `FloatConstant` —— 1/4 个有
+- `ImageBlend` —— 1/4 个有
+- `ImageRemoveBackground+` —— 1/4 个有
+- `JWImageExtractFromBatch` —— 1/4 个有
+- `LayerMask: SAM2VideoUltra` —— 1/4 个有
+- `RemBGSession+` —— 1/4 个有
+- `Sa2VANodeTpl` —— 1/4 个有
+- `Sam2Segmentation` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
+- `WanVideoContextOptions` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 241 | 241 - 241 | 3 | 100% |
-| 高度 | 24 | 24 - 24 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,5 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 241，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

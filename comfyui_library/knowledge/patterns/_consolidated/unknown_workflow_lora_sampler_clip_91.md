@@ -3,66 +3,62 @@ name: unknown_workflow_lora_sampler_clip_91
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.681
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ImageBatch, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
+coverage: 0.856833
+common_nodes: [BasicScheduler, BatchImagesNode, BerniniConditioning, CLIPLoader, CLIPTextEncode, CreateVideo, GetVideoComponents, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json, 视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json, 视频生成/图生视频/infinite_talker_multi_comfy_native_2018130782031716354.json, 视频生成/图生视频/infinite_talker_single_comfy_native_2018136601624317954.json, 视频生成/图生视频/商用infinite_talker_single_comfy_native-12段30秒-2K直出_2018500999857577985.json, 视频生成/图生视频/官方版InfineTalk长视频生成(无劣化)_2019387715191578626.json]
+members: [视频生成/图生视频/Bernini多模态视频编辑_2062112812658417666.json, 视频生成/图生视频/wan-Bernini 单人视频编辑+动作迁移 V4_2062167785479950338.json, 视频生成/图生视频/wan-Bernini 单人视频编辑+动作迁移 V4_2066715725934448641.json, 视频生成/图生视频/贝尔尼尼Bernini 视频编辑加速新版_2061852006909825025.json, 视频生成/图生视频/贝尔尼尼Bernini 视频编辑加速新版_2062526408332763137.json, 视频生成/图生视频/贝尔尼尼Bernini 视频编辑加速新版_2062779488521506817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_91
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json、视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json、视频生成/图生视频/infinite_talker_multi_comfy_native_2018130782031716354.json、视频生成/图生视频/infinite_talker_single_comfy_native_2018136601624317954.json、视频生成/图生视频/商用infinite_talker_single_comfy_native-12段30秒-2K直出_2018500999857577985.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Bernini多模态视频编辑_2062112812658417666.json、视频生成/图生视频/wan-Bernini 单人视频编辑+动作迁移 V4_2062167785479950338.json、视频生成/图生视频/wan-Bernini 单人视频编辑+动作迁移 V4_2066715725934448641.json、视频生成/图生视频/贝尔尼尼Bernini 视频编辑加速新版_2061852006909825025.json、视频生成/图生视频/贝尔尼尼Bernini 视频编辑加速新版_2062526408332763137.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
 - `BasicScheduler`
-- `CFGGuider`
+- `BatchImagesNode`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `ImageBatch`
-- `ImageFromBatch`
+- `CreateVideo`
+- `GetVideoComponents`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SaveVideo`
+- `SplitSigmas`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 4/6 个有
-- `CreateVideo` —— 3/6 个有
-- `SaveVideo` —— 3/6 个有
-- `VHS_VideoCombine` —— 3/6 个有
-- `GetNode` —— 2/6 个有
-- `ModelPatchTorchSettings` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `UnetLoaderGGUF` —— 2/6 个有
-- `AudioConcat` —— 1/6 个有
-- `CLIPVisionEncode` —— 1/6 个有
-- `CLIPVisionLoader` —— 1/6 个有
-- `FL_Audio_Crop` —— 1/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `FlashVSRInitPipe` —— 1/6 个有
-- `FlashVSRNodeAdv` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `BerniniPromptEnhancer` —— 3/6 个有
+- `ImageConcanate` —— 3/6 个有
+- `ImageResizeKJv2` —— 3/6 个有
+- `PreviewAny` —— 3/6 个有
+- `RHLLMChatNode` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `ImageFromBatch` —— 2/6 个有
+- `ImageScaleBy` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `RIFE VFI` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `ttN seed` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 

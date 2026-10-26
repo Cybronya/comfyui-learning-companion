@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_35
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.913
-common_nodes: [LayerUtility: PurgeVRAM V2, LoadImage, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, SaveAudio, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.91
+common_nodes: [CM_FloatToInt, Image2Video, ImageFromBatch+, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, 加载视频路径, 视频缩放]
 problems: []
 missing: []
-members: [音频生成/音频生成/MMaudio视频配音_1948634677694332930.json, 音频生成/音频生成/视频自动配对音效【Woosh+Qwen3】_2043733828946108418.json]
+members: [视频生成/图生视频/DreamID-V视频换脸_2009168696912125953.json, 视频生成/图生视频/字节DreamID-V视频换脸_2009174630229090305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/MMaudio视频配音_1948634677694332930.json、音频生成/音频生成/视频自动配对音效【Woosh+Qwen3】_2043733828946108418.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸_2009168696912125953.json、视频生成/图生视频/字节DreamID-V视频换脸_2009174630229090305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,21 +23,23 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: PurgeVRAM V2`
+- `CM_FloatToInt`
+- `Image2Video`
+- `ImageFromBatch+`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MMAudioFeatureUtilsLoader`
-- `MMAudioModelLoader`
-- `MMAudioSampler`
-- `SaveAudio`
+- `PrimitiveInt`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `VHS_VideoInfoSource`
+- `加载视频路径`
+- `视频缩放`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
 
 ## 典型参数

@@ -3,36 +3,39 @@ name: unknown_workflow_generic_1012
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.563
+common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), LoadImage, MultiTextConcatenate, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax 新一代H3视频模型文生视频_首尾视频_多模态视频工作流 V1.0_2083024782769090561.json, 视频生成/文生视频/Minimax H3_2083108762361098242.json, 视频生成/文生视频/minmax h3_2084101316028227586.json]
+members: [图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json, 图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json, 图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1012
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax 新一代H3视频模型文生视频_首尾视频_多模态视频工作流 V1.0_2083024782769090561.json、视频生成/文生视频/Minimax H3_2083108762361098242.json、视频生成/文生视频/minmax h3_2084101316028227586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json、图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json、图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Bookmark (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+- `MultiTextConcatenate`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
 - `RH_LLMAPI_Pro_Node` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

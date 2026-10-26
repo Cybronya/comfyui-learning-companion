@@ -1,76 +1,71 @@
 ---
 name: text_to_image_sampler_clip_unet_59
 type: Text To Image
-frequency: 10
-level: weak
-coverage: 0.9595
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: moderate
+coverage: 0.851818
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Anima aesthetic-v11-全底模test-测试工作流_2079220135235252226.json, 图片生成/图生图/Anima base-v11｜10步极速文生图_2079165843375738882.json, 图片生成/图生图/Qwen-厚涂插画_2005961463678337025.json, 图片生成/图生图/Z-image-base文生图-8步-加速版_2029109565865861122.json, 图片生成/图生图/慕沛灵粉红装扮)_1985298677944172546.json, 图片生成/图生图/梦幻孤独画风Qwen_2007044144136462337.json, 图片生成/文生图/2030225062405611521.json, 图片生成/文生图/Anima aesthetic-v11_2080189925386964993.json, 图片生成/文生图/Krea2 文生图_2071762623535861761.json, 图片生成/文生图/Nunchaku Z-Image文生图_2005466390012329986.json]
+members: [图片生成/文生图/Z-image-刘亦菲专用_1996450752195338242.json, 图片生成/文生图/Z-image-暗黑浮世绘_1997401855502258178.json, 图片生成/文生图/Z-image-神级文生图-20秒超快速出图TEXT TO IMAGE_1993958594863366145.json, 图片生成/文生图/Z-image文生图_1993860952581931009.json, 图片生成/文生图/Z-image文生图人像摄影2K版_1994574159525126145.json, 图片生成/文生图/Z-image文生图工作流_2009195465652314113.json, 图片生成/文生图/Z-image文生图（最新加速版）_1996623220235182081.json, 图片生成/文生图/Z-image文生图（非收敛-随机种子生效版）_1996582595745955841.json, 图片生成/文生图/z-image-turbo flow dpo版文生图 自用_2050564898463207426.json, 图片生成/文生图/森哥AI文生图-超自然人像-20秒快速出图_2051690409042161666.json, 图片生成/文生图/（Z-image）dpmpp-2m-sde对比euler-文生图_1995128750184574977.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_59
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Anima aesthetic-v11-全底模test-测试工作流_2079220135235252226.json、图片生成/图生图/Anima base-v11｜10步极速文生图_2079165843375738882.json、图片生成/图生图/Qwen-厚涂插画_2005961463678337025.json、图片生成/图生图/Z-image-base文生图-8步-加速版_2029109565865861122.json、图片生成/图生图/慕沛灵粉红装扮)_1985298677944172546.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Z-image-刘亦菲专用_1996450752195338242.json、图片生成/文生图/Z-image-暗黑浮世绘_1997401855502258178.json、图片生成/文生图/Z-image-神级文生图-20秒超快速出图TEXT TO IMAGE_1993958594863366145.json、图片生成/文生图/Z-image文生图_1993860952581931009.json、图片生成/文生图/Z-image文生图人像摄影2K版_1994574159525126145.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `ModelSamplingAuraFlow` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `FluxResolutionNode` —— 3/10 个有
-- `PDRatioSelector` —— 2/10 个有
-- `XB_UNetNameBroadcaster` —— 2/10 个有
-- `CFGNorm` —— 1/10 个有
-- `CR Latent Input Switch` —— 1/10 个有
-- `ConditioningZeroOut` —— 1/10 个有
-- `FlashVSRNode` —— 1/10 个有
-- `Image Comparer (rgthree)` —— 1/10 个有
-- `NunchakuZImageDiTLoader` —— 1/10 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `SaveImage` —— 10/11 个有
+- `CR Prompt Text` —— 8/11 个有
+- `easy promptLine` —— 7/11 个有
+- `GetNode` —— 6/11 个有
+- `SetNode` —— 6/11 个有
+- `LoraLoaderModelOnly` —— 5/11 个有
+- `easy seed` —— 3/11 个有
+- `LoadImage` —— 2/11 个有
+- `HAIGC_SaveImagesToZip` —— 1/11 个有
+- `ZML_ImageEncryption` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 10 | 55% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 10 | 34% |
-| 采样算法 | euler | - | 10 | 80% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 976 | 512 - 1664 | 10 | 63% |
-| 高度 | 824 | 248 - 1664 | 10 | 48% |
+| 采样步数 | 10 | 10 - 12 | 11 | 94% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 11 | 62% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 73% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1080 | 768 - 1920 | 11 | 65% |
+| 高度 | 1080 | 1024 - 1920 | 11 | 75% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，10 个样本，取值分散，一致性仅 34%
-- 采样算法 最常用 euler，10 个样本，一致性 80%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 976，观测区间 512 - 1664，10 个样本
-- 高度 中位数 824，观测区间 248 - 1664，10 个样本，取值分散，一致性仅 48%
-- 高发问题（9/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 12，11 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 73%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 768 - 1920，11 个样本
+- 高度 中位数 1080，观测区间 1024 - 1920，11 个样本

@@ -3,39 +3,35 @@ name: unknown_workflow_generic_922
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.563
-common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), LoadImage, MultiTextConcatenate, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text]
+coverage: 0.722333
+common_nodes: [LoadVideo, RH_RhartTextG3ProPreviewVideoToText, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json, 图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json, 图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json]
+members: [图片生成/反推提示词/RhartTextG3ProPreview_VideoToText_v3.0_2034592863199174657.json, 图片生成/反推提示词/wf13_qc_video_consistency_report_mirror_selfie_2041508421941334018.json, 图片生成/文生图/反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058446045159452673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_922
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json、图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json、图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/RhartTextG3ProPreview_VideoToText_v3.0_2034592863199174657.json、图片生成/反推提示词/wf13_qc_video_consistency_report_mirror_selfie_2041508421941334018.json、图片生成/文生图/反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058446045159452673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `Text`
+- `LoadVideo`
+- `RH_RhartTextG3ProPreviewVideoToText`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `easy positive` —— 2/3 个有
+- `LoadImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
 
 ## 典型参数
 

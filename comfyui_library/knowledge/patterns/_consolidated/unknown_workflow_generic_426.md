@@ -3,35 +3,36 @@ name: unknown_workflow_generic_426
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.861
-common_nodes: [LoadImage, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
+coverage: 0.837167
+common_nodes: [CR Prompt Text, LoadVideo, RH_LLMAPI_Pro_Node, SaveVideo, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json, 图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json, 图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json, 图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json, 图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json, 图片生成/文生图/竖屏九宫格直接出图（老程）_2016304604631277570.json]
+members: [图片生成/反推提示词/DG_视频拆析_2025467829289492481.json, 图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json, 图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json, 图片生成/反推提示词/视频反推-复刻爆款视频脚本分析输出提示词-超能视频2.0_2022603238289182722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_426
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json、图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json、图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json、图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json、图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/DG_视频拆析_2025467829289492481.json、图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json、图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadImage`
-- `PreviewAny`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `Text Multiline`
+- `CR Prompt Text`
+- `LoadVideo`
+- `RH_LLMAPI_Pro_Node`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 4/6 个有
-- `Qwen3VL_Chat` —— 2/6 个有
+- `easy showAnything` —— 5/6 个有
+- `LoadImage` —— 2/6 个有
+- `ShowText` —— 1/6 个有
 
 ## 典型参数
 

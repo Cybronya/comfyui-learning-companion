@@ -1,83 +1,82 @@
 ---
 name: text_to_image_sampler_clip_unet_29
 type: Text To Image
-frequency: 14
-level: moderate
-coverage: 0.987
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, scale]
+frequency: 15
+level: weak
+coverage: 0.907667
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/cheems大狗拆分-klein_2032421634149191681.json, 图片生成/图生图/cheems小狗拆分-klein_2032696662476460034.json, 图片生成/图生图/dnf立绘-klein_2094651972447199233.json, 图片生成/图生图/沙雕古风角色-klein_2083342088791486465.json, 图片生成/图生图/沙雕角色-klein_2032423622459006977.json, 图片生成/图生图/角色转cheems大狗-klein_2032694011659558914.json, 图片生成/图生图/角色转cheems小-klein_2033068803185184770.json, 图片生成/图生图/角色转dro-klein_2037310245491449857.json, 图片生成/图生图/金色法相-klein_2086299055189221378.json, 图片生成/文生图/传奇风格场景-klein_2083539437392318465.json, 图片生成/文生图/传奇风格场景制作｜klein文生图图生图_2091780106510491649.json, 图片生成/文生图/传奇风格场景生成｜klein文生图图生图直出_2091608413749993473.json, 图片生成/文生图/沙雕场景-klein_2083534277521793026.json, 图片生成/文生图/沙雕角色6-klein_2091476898760187905.json]
+members: [图片生成/图生图/Krea2+MuseByStable+单图文生图+批量文生图_2084187096876666882.json, 图片生成/文生图/Boogu Image 风格微调LoRA测试流 Base+Turbo_2073325674210877442.json, 图片生成/文生图/Boogu-Image VS Z-Image-Turbo VS Ernie-Image_2068170711595831297.json, 图片生成/文生图/Ernie-Image-Flex-V1_2058033549370028034.json, 图片生成/文生图/Ernie-Image-Turbo 4_8steps VS ErnieTurbo_extracted_lora VS Z-Image-Turbo_2045838209761939457.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2075851087260766210.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2084089644026781698.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2084098279272439810.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2084123057798598658.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2084159014056841218.json, 图片生成/文生图/Krea2 MuseByStable 单图文生图+批量文生图_2084160465382494209.json, 图片生成/文生图/VividMuse Ernie Image工作流_2044768393248641026.json, 图片生成/文生图/VividMuse Juggernaut Z-8steps VS Z-Image-8steps_2056009146180358146.json, 图片生成/文生图/VividMuse Krea2-Turbo VS Z-Image_2069775605947785218.json, 图片生成/文生图/VividMuse Z-Image-Engineer-V6-Workflow_2065785395203362818.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_29
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/cheems大狗拆分-klein_2032421634149191681.json、图片生成/图生图/cheems小狗拆分-klein_2032696662476460034.json、图片生成/图生图/dnf立绘-klein_2094651972447199233.json、图片生成/图生图/沙雕古风角色-klein_2083342088791486465.json、图片生成/图生图/沙雕角色-klein_2032423622459006977.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Krea2+MuseByStable+单图文生图+批量文生图_2084187096876666882.json、图片生成/文生图/Boogu Image 风格微调LoRA测试流 Base+Turbo_2073325674210877442.json、图片生成/文生图/Boogu-Image VS Z-Image-Turbo VS Ernie-Image_2068170711595831297.json、图片生成/文生图/Ernie-Image-Flex-V1_2058033549370028034.json、图片生成/文生图/Ernie-Image-Turbo 4_8steps VS ErnieTurbo_extracted_lora VS Z-Image-Turbo_2045838209761939457.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：15
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
-- `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `scale`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 8/14 个有
-- `LoraLoaderModelOnly` —— 6/14 个有
-- `easy anythingIndexSwitch` —— 6/14 个有
-- `HAIGC_SaveImagesToZip` —— 4/14 个有
-- `RMBG` —— 4/14 个有
-- `JjkText` —— 2/14 个有
-- `solarL_SaveImagesToZip` —— 2/14 个有
-- `孤海注释` —— 2/14 个有
-- `ImageScaleBy` —— 1/14 个有
-- `PIP_图像联结` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 14/15 个有
+- `Seed (rgthree)` —— 14/15 个有
+- `easy promptList` —— 14/15 个有
+- `PreviewImage` —— 12/15 个有
+- `LayerUtility: ImageReel` —— 8/15 个有
+- `LayerUtility: ImageReelComposit` —— 8/15 个有
+- `TTResolutionSelector` —— 8/15 个有
+- `HAIGC_SaveImagesToZip` —— 7/15 个有
+- `Label (rgthree)` —— 7/15 个有
+- `PrimitiveStringMultiline` —— 7/15 个有
+- `TextInputNode` —— 7/15 个有
+- `KSamplerAdvanced` —— 4/15 个有
+- `LayerColor: ColorAdapter` —— 2/15 个有
+- `ResolutionSelector` —— 2/15 个有
+- `ClipLoaderGGUF` —— 1/15 个有
+- `easy promptConcat` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 8 | 100% |
-| 采样步数 | 4 | 2 - 5 | 14 | 85% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 14 | 18% |
-| 采样算法 | euler | - | 14 | 86% |
-| 调度器 | simple | - | 14 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| 宽度 | 1024 | 80 - 1920 | 14 | 38% |
-| 高度 | 896 | 80 - 1200 | 14 | 53% |
+| 宽度 | 768 | 512 - 1728 | 15 | 66% |
+| 高度 | 1280 | 512 - 2304 | 15 | 72% |
+| 采样步数 | 10 | 4 - 50 | 15 | 14% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 15 | 18% |
+| 采样算法 | euler | - | 15 | 73% |
+| 调度器 | simple | - | 15 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 2 - 5，14 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，14 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 euler，14 个样本，一致性 86%
-- 调度器 最常用 simple，14 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 80 - 1920，14 个样本，取值分散，一致性仅 38%
-- 高度 中位数 896，观测区间 80 - 1200，14 个样本
-- 高发问题（17/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 512 - 1728，15 个样本
+- 高度 中位数 1280，观测区间 512 - 2304，15 个样本
+- 采样步数 中位数 10，观测区间 4 - 50，15 个样本，取值分散，一致性仅 14%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，15 个样本，取值分散，一致性仅 18%
+- 采样算法 最常用 euler，15 个样本，一致性 73%
+- 调度器 最常用 simple，15 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（16/15 个样本）：Steps较低可能导致细节不足

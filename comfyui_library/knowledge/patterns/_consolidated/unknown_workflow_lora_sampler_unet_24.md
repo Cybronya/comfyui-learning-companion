@@ -1,75 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_unet_24
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.853
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 18
+level: strong
+coverage: 0.641
+common_nodes: [Anything Everywhere3, CFGNorm, CLIPLoader, CR Text, GetNode, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, RH_LLMAPI_NODE, SaveImage, SetNode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax H3-360度视频生成_2108541709025112066.json, 视频生成/图生视频/Minimax H3-加速双采-self-lift工作流_2097544900240822273.json, 视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097641972067557378.json, 视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097665516235223042.json, 视频生成/图生视频/Minimax-h3-多参视频生成（不油、不偏色及一致性好）_2107461072583221250.json, 视频生成/图生视频/Minimax_H3-加速双采-self-lift工作流_2099777362543075329.json, 视频生成/图生视频/Minimax_H3-加速双采-self-lift工作流_2100037395591815170.json, 视频生成/图生视频/【开源】MiniMax-H3 加速双采-self-lift_2099618432286281730.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100021900394192897.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100184323868680193.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2101869698915856385.json, 视频生成/图生视频/参考图生视频｜Self-Lift 双采·5秒预检_2098678648126664705.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2100028907868213250.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2101556853078585345.json, 视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json, 视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json, 视频生成/图生视频/（修脸极速）黑科技加速minimax h3 self-lift双采多参生视频_2098223404263497730.json]
+members: [图片生成/图生图/FireRed-Image-Edit 1.1 上传图片一键分镜_2033173454689669122.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2053434132474150914.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2054157894966366210.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2073017193691963394.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2077016584656343041.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2083919554585128961.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2101264219399344129.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2111789094073360385.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2111795349353488385.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2046960867496960002.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2056914263595376641.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2057278935905431553.json, 图片生成/图生图/h3分镜图FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程去水印_2086670579725324289.json, 图片生成/图生图/一键分镜工作流V2（支持动漫和真人）_2031222012189872129.json, 图片生成/图生图/一键分镜工作流V2（支持动漫和真人）_2073952433583255554.json, 图片生成/图生图/圣诞气氛一键达_1995787953970483202.json, 图片生成/图生图/换装-圣诞氛围冬季换装_1996749447172431874.json, 图片生成/图生图/超好用🔥单图一键生成专业影视分镜与关键帧全流程提示词 新_2052579231091175425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_24
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/Minimax H3-360度视频生成_2108541709025112066.json、视频生成/图生视频/Minimax H3-加速双采-self-lift工作流_2097544900240822273.json、视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097641972067557378.json、视频生成/图生视频/Minimax-H3开源 黑科技加速双采-self-lift图生视频_2097665516235223042.json、视频生成/图生视频/Minimax-h3-多参视频生成（不油、不偏色及一致性好）_2107461072583221250.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-Edit 1.1 上传图片一键分镜_2033173454689669122.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2053434132474150914.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2054157894966366210.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2073017193691963394.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2077016584656343041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `BasicScheduler`
+全部 18 个 workflow 都包含：
+- `Anything Everywhere3`
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+- `CR Text`
+- `GetNode`
+- `JDCN_StringToList`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
+- `ModelSamplingAuraFlow`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxChunkFeedForward` —— 16/17 个有
-- `MiniMaxH3ReferenceToVideo` —— 16/17 个有
-- `MiniMaxLowVRAMAttention` —— 16/17 个有
-- `PrimitiveStringMultiline` —— 15/17 个有
-- `CreateVideo` —— 14/17 个有
-- `VHS_VideoCombine` —— 14/17 个有
-- `LoadAudio` —— 5/17 个有
-- `PreviewImage` —— 3/17 个有
-- `SaveVideo` —— 3/17 个有
-- `EmptyImage` —— 2/17 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/17 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/17 个有
-- `VHS_LoadVideo` —— 2/17 个有
-- `GetNode` —— 1/17 个有
-- `MiniMaxH3ImageToVideo` —— 1/17 个有
-- `MiniMaxH3SigmaShift` —— 1/17 个有
-- `SetNode` —— 1/17 个有
-- `Text` —— 1/17 个有
-- `easy float` —— 1/17 个有
+- `CustomAddLabel` —— 14/18 个有
+- `MultiTextConcatenate` —— 14/18 个有
+- `ttN concat` —— 14/18 个有
+- `JjkText` —— 13/18 个有
+- `easy showAnything` —— 13/18 个有
+- `llama_cpp_instruct_adv` —— 13/18 个有
+- `llama_cpp_model_loader` —— 13/18 个有
+- `llama_cpp_parameters` —— 13/18 个有
+- `Text` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 8 | 18 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 18 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 8，18 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，18 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（18/18 个样本）：Steps较低可能导致细节不足

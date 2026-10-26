@@ -3,40 +3,42 @@ name: unknown_workflow_video_sampler_28
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [DownloadAndLoadMimicMotionModel, ImageResize+, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.9665
+common_nodes: [CosyVoiceNode, LoadAudio, LoadImage, PreviewAudio, SONICSampler, SONICTLoader, SONIC_PreData, TextNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json, 视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json]
+members: [数字人/数字人/sonic+cosyvoice数字人_1911695872135000065.json, 视频生成/图生视频/带文字转语音最强照片数字人_1897654408816349185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json、视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/sonic+cosyvoice数字人_1911695872135000065.json、视频生成/图生视频/带文字转语音最强照片数字人_1897654408816349185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DownloadAndLoadMimicMotionModel`
-- `ImageResize+`
+- `CosyVoiceNode`
+- `LoadAudio`
 - `LoadImage`
-- `MimicMotionDecode`
-- `MimicMotionGetPoses`
-- `MimicMotionSampler`
-- `VHS_LoadVideo`
+- `PreviewAudio`
+- `SONICSampler`
+- `SONICTLoader`
+- `SONIC_PreData`
+- `TextNode`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_VideoResize` —— 1/2 个有
-- `ImageCASharpening+` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
+- `ImageOnlyCheckpointLoader` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `unCLIPCheckpointLoader` —— 1/2 个有
 
 ## 典型参数
 

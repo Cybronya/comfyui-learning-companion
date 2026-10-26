@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_unet_vae_69
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.825615
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.851917
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 开源版 多图参考生视频 加速版_2086403186247688193.json, 视频生成/文生视频/MiniMax H3图生视频6倍加速24GB通用版_2086411696771522561.json, 视频生成/文生视频/MiniMax H3图生视频6倍加速48GB高配版_2086411679377743873.json, 视频生成/文生视频/MiniMax H3图生视频6倍加速80GB满配版_2086411651821170689.json, 视频生成/文生视频/MiniMax H3图生视频（支持文生视频，首_尾帧生成）_2084161667742654466.json, 视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json, 视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json, 视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json, 视频生成/文生视频/MiniMax+H3+多图参考+官方提示词模板+提速40%无劣化+真人短剧剧情演绎_2095730598064250881.json, 视频生成/文生视频/MiniMaxH3满血无损加速1.0高清工作流ENGENG_2087108575725441026.json, 视频生成/文生视频/Minimax参考生视频 高质量 加速版_2086430508090744833.json, 视频生成/文生视频/Minimax图生视频高质量加速版_2087062490541813762.json, 视频生成/文生视频/minimax_阿里8步加速_文生视频_图生视频_全能参考三合一_2095489469662187522.json]
+members: [图片生成/文生图/超审！minimax_h3_it2v(参考生视频)  ！_2084667157266391041.json, 图片生成/文生图/超审！minimax_h3_it2v(图_文生视频) ！_2084665406370963457.json, 视频生成/图生视频/H3-参考生视频（全能参考）_2087759964113821697.json, 视频生成/图生视频/H3多参图生视频_2084177913167040514.json, 视频生成/图生视频/MINIMAX-H3-图片加音频参考生视频-有提示词模板-int8和fp8_2084515925415522306.json, 视频生成/图生视频/MINIMAX-H3_多图参考生视频_2084844223446208514.json, 视频生成/图生视频/MiniMax H3 4图生视频+音频接入_2090184072877395969.json, 视频生成/图生视频/MiniMax H3 ComfyUI多图（音视频）参考模板工作流（官方模板）_2085042609009020929.json, 视频生成/图生视频/MiniMax H3 R2V comfyorg_2085736828308643841.json, 视频生成/图生视频/MiniMax H3 参考生视频_2084543006513909761.json, 视频生成/图生视频/MiniMax H3 参考生视频_2085194930540077058.json, 视频生成/图生视频/MiniMax H3 参考生视频（Sage加速）2608_2085826399662854146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_69
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 开源版 多图参考生视频 加速版_2086403186247688193.json、视频生成/文生视频/MiniMax H3图生视频6倍加速24GB通用版_2086411696771522561.json、视频生成/文生视频/MiniMax H3图生视频6倍加速48GB高配版_2086411679377743873.json、视频生成/文生视频/MiniMax H3图生视频6倍加速80GB满配版_2086411651821170689.json、视频生成/文生视频/MiniMax H3图生视频（支持文生视频，首_尾帧生成）_2084161667742654466.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/超审！minimax_h3_it2v(参考生视频)  ！_2084667157266391041.json、图片生成/文生图/超审！minimax_h3_it2v(图_文生视频) ！_2084665406370963457.json、视频生成/图生视频/H3-参考生视频（全能参考）_2087759964113821697.json、视频生成/图生视频/H3多参图生视频_2084177913167040514.json、视频生成/图生视频/MINIMAX-H3-图片加音频参考生视频-有提示词模板-int8和fp8_2084515925415522306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
@@ -31,30 +31,34 @@ source: knowledge_consolidation
 - `LoadImage`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 12/13 个有
-- `CreateVideo` —— 11/13 个有
-- `PathchSageAttentionKJ` —— 11/13 个有
-- `SaveVideo` —— 11/13 个有
-- `ResolutionSelector` —— 10/13 个有
-- `EasyCache` —— 9/13 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/13 个有
-- `VHS_VideoCombine` —— 8/13 个有
-- `ImageResizeKJv2` —— 6/13 个有
-- `MiniMaxH3ImageToVideo` —— 6/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/13 个有
-- `LoraLoaderModelOnly` —— 5/13 个有
-- `ModelPatchTorchSettings` —— 4/13 个有
-- `UniBlockSwap` —— 4/13 个有
-- `PrimitiveInt` —— 3/13 个有
-- `MiniMaxH3BlockCacheT8` —— 2/13 个有
-- `DF_Int_to_Float` —— 1/13 个有
+- `MiniMaxH3ReferenceToVideo` —— 11/12 个有
+- `PrimitiveStringMultiline` —— 11/12 个有
+- `CreateVideo` —— 10/12 个有
+- `SaveVideo` —— 10/12 个有
+- `VAEDecode` —— 10/12 个有
+- `VAEDecodeAudio` —— 10/12 个有
+- `LoadAudio` —— 8/12 个有
+- `VHS_LoadVideo` —— 7/12 个有
+- `EasyCache` —— 3/12 个有
+- `PathchSageAttentionKJ` —— 3/12 个有
+- `JjkText` —— 2/12 个有
+- `LTXVSeparateAVLatent` —— 2/12 个有
+- `SaveImage` —— 2/12 个有
+- `SaveLatent` —— 2/12 个有
+- `CR Text` —— 1/12 个有
+- `FlashVSRInitPipe` —— 1/12 个有
+- `FlashVSRNodeAdv` —— 1/12 个有
+- `LayerMask: RemBgUltra` —— 1/12 个有
+- `MiniMaxH3ImageToVideo` —— 1/12 个有
+- `SolAttnPatch` —— 1/12 个有
+- `VHS_VideoCombine` —— 1/12 个有
+- `忽略多组孤海` —— 1/12 个有
 
 ## 典型参数
 

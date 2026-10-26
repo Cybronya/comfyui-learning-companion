@@ -1,51 +1,54 @@
 ---
 name: unknown_workflow_upscale_vae_13
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.5779
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextInput_]
+coverage: 0.78
+common_nodes: [ImageResize+, ImageScaleBy, LoadImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
 problems: []
 missing: []
-members: [图片生成/图生图/建筑-万能2季节变换工作流_2027984864250695681.json, 图片生成/图生图/建筑-万能2建筑立面改造比较工作流_2028008758630162433.json, 图片生成/图生图/建筑-万能2效果图加人物工作流_2027274610437263361.json, 图片生成/图生图/建筑-万能2生成建筑场地图底关系工作流_2029040005045297153.json, 图片生成/图生图/建筑-万能2设计风格比选工作流_2027336134858121217.json, 图片生成/图生图/建筑-万能pro建筑D5洗图工作流_2037153982149300225.json, 图片生成/图生图/建筑-万能pro建筑细部调整工作流_2039332200470024194.json, 图片生成/图生图/景观-万能2景观植物四季转换工作流_2029091448917860353.json, 图片生成/图生图/景观-万能pro模型转古画风效果图工作流_2041162321975840770.json, 图片生成/图生图/设计-万能pro平面设计海报工作流_2043710208907677697.json]
+members: [图片生成/图生图/8K极致高清放大（TTP+Seedvsr2）_2007683849572061185.json, 图片生成/图生图/AIGC人像系列04-人像超高清基于TTP+SeedVR2实现放大_2028739110755639297.json, 图片生成/图生图/B-LANSEDUONAOHE-SEEDVR2+TTP极速一亿像素放大_1992893002534244353.json, 图片生成/图生图/SeedVR2+TTP放大+0损耗压缩_2001611198548307969.json, 图片生成/图生图/九宫格电商详情高端产品分镜+放大(内置免费的全能图片通道)_2071905182362988545.json, 图片生成/图生图/动漫转真实，超低消耗_2071497174474645506.json, 图片生成/图生图/图片放大-rh-SeedVR2+TTP-模板_2013152289002885122.json, 图片生成/图生图/建筑_角色通用放大-seedvr2_2049762190231609346.json, 图片生成/图生图/建筑效果图套A0大板8k放大工作流_2011999694133665794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/建筑-万能2季节变换工作流_2027984864250695681.json、图片生成/图生图/建筑-万能2建筑立面改造比较工作流_2028008758630162433.json、图片生成/图生图/建筑-万能2效果图加人物工作流_2027274610437263361.json、图片生成/图生图/建筑-万能2生成建筑场地图底关系工作流_2029040005045297153.json、图片生成/图生图/建筑-万能2设计风格比选工作流_2027336134858121217.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/8K极致高清放大（TTP+Seedvsr2）_2007683849572061185.json、图片生成/图生图/AIGC人像系列04-人像超高清基于TTP+SeedVR2实现放大_2028739110755639297.json、图片生成/图生图/B-LANSEDUONAOHE-SEEDVR2+TTP极速一亿像素放大_1992893002534244353.json、图片生成/图生图/SeedVR2+TTP放大+0损耗压缩_2001611198548307969.json、图片生成/图生图/九宫格电商详情高端产品分镜+放大(内置免费的全能图片通道)_2071905182362988545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+全部 9 个 workflow 都包含：
+- `ImageResize+`
+- `ImageScaleBy`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TextInput_`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 9/10 个有
-- `HAIGC_TextRelay` —— 6/10 个有
-- `RH_LLMAPI_NODE` —— 6/10 个有
-- `easy showAnything` —— 6/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 4/10 个有
-- `easy promptReplace` —— 3/10 个有
-- `CR Text Concatenate` —— 2/10 个有
-- `ShowText|pysssss` —— 2/10 个有
-- `DapaoBanana2ZhenzhenNode` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `SaveImage` —— 8/9 个有
+- `GetImageSize+` —— 7/9 个有
+- `KOOK_ImageCompression` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `PreviewImage` —— 3/9 个有
+- `PrimitiveFloat` —— 3/9 个有
+- `easy int` —— 3/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `RHHiddenNodes` —— 2/9 个有
+- `easy imageSize` —— 2/9 个有
+- `KOOK_SaveJPGImage` —— 1/9 个有
+- `easy float` —— 1/9 个有
+- `easy mathInt` —— 1/9 个有
 
 ## 典型参数
 

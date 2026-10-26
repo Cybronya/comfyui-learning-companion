@@ -3,35 +3,36 @@ name: unknown_workflow_generic_955
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.87
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.941667
+common_nodes: [ImpactSwitch, Int, JoinStrings, LoadImage, RH_ComfyFluxKontext, SaveImage, String]
 problems: []
 missing: []
-members: [图片生成/图生图/服装换丰富_2064244845438390274.json, 图片生成/文生图/RH版：全能图片2极速版图像编辑-文生图-图生图_2027601398346555393.json, 图片生成/文生图/全能图片V2_2043885003909632001.json]
+members: [图片生成/图生图/Flux Kontext 人物换发型_1932754215452512258.json, 图片生成/图生图/女生换发型15款可选_1932617227214712833.json, 图片生成/图生图/女生简易发型选择更换_1932746481671491586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_955
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/服装换丰富_2064244845438390274.json、图片生成/文生图/RH版：全能图片2极速版图像编辑-文生图-图生图_2027601398346555393.json、图片生成/文生图/全能图片V2_2043885003909632001.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 人物换发型_1932754215452512258.json、图片生成/图生图/女生换发型15款可选_1932617227214712833.json、图片生成/图生图/女生简易发型选择更换_1932746481671491586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `ImpactSwitch`
+- `Int`
+- `JoinStrings`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
+- `String`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `TextInputBasic` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 

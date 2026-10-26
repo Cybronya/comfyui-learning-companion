@@ -2,83 +2,50 @@
 name: unknown_workflow_lora_sampler_unet_235
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.785333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, ExtractLinesByIndex, ImageFromBatch+, Int, JjkText, KSamplerSelect, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3SigmaShift, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SaveVideo, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
+level: strong
+coverage: 0.786
+common_nodes: [CLIPLoader, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, QwenImageIntegratedKSampler, SaveImage, UNETLoader, UnetLoaderGGUF, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/一键生成一分钟产品宣传视频 文字版 Minimax H3_2092214066478665730.json, 视频生成/图生视频/一键生成一分钟双人播客视频 Minimax H3_2091884900138962946.json, 视频生成/文生视频/一键生成一分钟MV视频  Minimax H3_2092618341969129473.json]
+members: [图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json, 图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json, 图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_235
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一键生成一分钟产品宣传视频 文字版 Minimax H3_2092214066478665730.json、视频生成/图生视频/一键生成一分钟双人播客视频 Minimax H3_2091884900138962946.json、视频生成/文生视频/一键生成一分钟MV视频  Minimax H3_2092618341969129473.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json、图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json、图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
+- **可信度**：强结论
 - **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExtractLinesByIndex`
-- `ImageFromBatch+`
-- `Int`
-- `JjkText`
-- `KSamplerSelect`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `QwenImageIntegratedKSampler`
 - `SaveImage`
-- `SaveVideo`
-- `ShowText|pysssss`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `UnetLoaderGGUF`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
-- `String to Float` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `Int Literal` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MiniMaxH3ImageToVideo` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `MiniMaxH3MotionContext` —— 1/3 个有
-- `MiniMaxH3MotionContextTrim` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `ToFloat` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
-- `easy saveVideo` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 图生图 image-to-image | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | 1472 | 1472 - 1472 | 3 | 100% |
+| 调度器 | 1104 | 1104 - 1104 | 3 | 100% |
+| 重绘幅度 | 1.05203e+15 | 9.21455e+14 - 1.06505e+15 | 3 | 94% |
 
 ## 常见问题
 
@@ -86,4 +53,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 图生图 image-to-image，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1472，观测区间 1472 - 1472，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1104，观测区间 1104 - 1104，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 1.05203e+15，观测区间 9.21455e+14 - 1.06505e+15，3 个样本，取值集中（一致性 94%）
+- 风险：重绘幅度 观测到 1.06505e+15，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

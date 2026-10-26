@@ -3,36 +3,34 @@ name: unknown_workflow_generic_260
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.955556
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.618222
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json, 音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json, 音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963033467900637185.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963596081664970754.json, 音频生成/音频生成/双人语音克隆，MegaTTS3，简单易用效果好_1963192083320377346.json, 音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）_1976612486625533953.json]
+members: [图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json, 图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101139696062648322.json, 视频生成/文生视频/RH_万相3.0-图生视频_2098945972377309186.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099058093874307074.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099682872125906946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_260
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json、音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json、音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json、图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json、图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MegaTTS3Run` —— 8/9 个有
-- `PreviewAudio` —— 7/9 个有
-- `LoadImage` —— 3/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `FireRedTTS2MonologueNode` —— 1/9 个有
+- `PIP_StringConcatenation` —— 6/9 个有
+- `easy positive` —— 6/9 个有
+- `EmptyImage` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
 
 ## 典型参数
 

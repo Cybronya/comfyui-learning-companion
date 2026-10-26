@@ -1,38 +1,46 @@
 ---
 name: unknown_workflow_generic_861
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.748667
-common_nodes: [CR Simple Image Compare, LoadImage, PrimitiveStringMultiline, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.83825
+common_nodes: [CR Prompt Text, LoadAudio, LoadImage, PreviewAny, PreviewAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, RunningHubAudio8ModelLoader, RunningHubAudio8Prompt, RunningHubAudio8Sampling, RunningHubAudio8TTS, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX KONTEXT 全能图像组合编辑_1930156170432954370.json, 图片生成/图生图/FLUX-KONTEXT  上下文完美一致性感知工作流_1970688994885464065.json, 图片生成/图生图/Flux kontext 输入文字修改图片_1930422545864933377.json]
+members: [音频生成/音频生成/Audio8 TTS语音克隆-自动翻译语言_2083906154077442049.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083775492569784321.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083854558199107585.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083911488225501186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_861
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX KONTEXT 全能图像组合编辑_1930156170432954370.json、图片生成/图生图/FLUX-KONTEXT  上下文完美一致性感知工作流_1970688994885464065.json、图片生成/图生图/Flux kontext 输入文字修改图片_1930422545864933377.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Audio8 TTS语音克隆-自动翻译语言_2083906154077442049.json、音频生成/音频生成/Audio8 TTS语音克隆_2083775492569784321.json、音频生成/音频生成/Audio8 TTS语音克隆_2083854558199107585.json、音频生成/音频生成/Audio8 TTS语音克隆_2083911488225501186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Simple Image Compare`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_ComfyFluxKontext`
+- `PreviewAny`
+- `PreviewAudio`
+- `Qwen3ASRLoader_DFT`
+- `Qwen3ASRTranscribe_DFT`
+- `RunningHubAudio8ModelLoader`
+- `RunningHubAudio8Prompt`
+- `RunningHubAudio8Sampling`
+- `RunningHubAudio8TTS`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Stitch` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy imageRemBg` —— 1/3 个有
+- `SaveAudioAdvanced` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `LayerUtility: TextJoin` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
 
 ## 典型参数
 

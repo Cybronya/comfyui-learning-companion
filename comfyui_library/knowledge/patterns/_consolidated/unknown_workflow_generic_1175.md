@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_1175
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5
-common_nodes: [83e6e004-48ea-408e-9024-eb49c3d7dc14, PreviewAny, ResolutionSelector, SaveImage, f5f04613-ee09-4cd9-9ada-a880360891d4]
+frequency: 3
+level: moderate
+coverage: 0.966667
+common_nodes: [CR Prompt Text, FireRedTTS2_Dialogue, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_ideogram4_t2i.json, comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json]
+members: [音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json, 音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json, 音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1175
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_ideogram4_t2i.json、comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json、音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json、音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `83e6e004-48ea-408e-9024-eb49c3d7dc14`
-- `PreviewAny`
-- `ResolutionSelector`
-- `SaveImage`
-- `f5f04613-ee09-4cd9-9ada-a880360891d4`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `FireRedTTS2_Dialogue`
+- `LoadAudio`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `FireRedTTS2MonologueNode` —— 1/3 个有
 
 ## 典型参数
 
@@ -39,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

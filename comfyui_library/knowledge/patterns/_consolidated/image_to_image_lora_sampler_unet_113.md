@@ -3,64 +3,66 @@ name: image_to_image_lora_sampler_unet_113
 type: Image To Image
 frequency: 6
 level: strong
-coverage: 0.890833
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.924333
+common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, FluxKontextMultiReferenceLatentMethod, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/千问3D手办_1989299261110145025.json, 图片生成/图生图/千问EDIT局部修改_2048292651706884097.json, 图片生成/图生图/千问edit局部修改工作流_1954950250534506497.json, 图片生成/图生图/图生图-真人转动漫 - 真人转卡通-  真人转漫画_2062456179342798850.json, 图片生成/图生图/服装消失qwen_1960328722777894913.json, 图片生成/文生图/qwen编辑 提示词合集_1959223893091364865.json]
+members: [图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json, 图片生成/图生图/多角度多视角批量出图_2011269248949161985.json, 图片生成/图生图/多角度镜头选择版本_2009891554516799489.json, 图片生成/图生图/手动控制镜头3d camera qwen 2511人物场景多角度镜头控制镜头选择10秒出图_2011705037017325569.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_113
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/千问3D手办_1989299261110145025.json、图片生成/图生图/千问EDIT局部修改_2048292651706884097.json、图片生成/图生图/千问edit局部修改工作流_1954950250534506497.json、图片生成/图生图/图生图-真人转动漫 - 真人转卡通-  真人转漫画_2062456179342798850.json、图片生成/图生图/服装消失qwen_1960328722777894913.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json、图片生成/图生图/多角度多视角批量出图_2011269248949161985.json、图片生成/图生图/多角度镜头选择版本_2009891554516799489.json…）
 
 - **类型**：Image To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxKontextMultiReferenceLatentMethod`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEdit`
+- `QwenMultiangleCameraNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `TextInput_` —— 3/6 个有
-- `ImpactInt` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `SetLatentNoiseMask` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
+- `SaveImage` —— 5/6 个有
+- `PreviewImage` —— 4/6 个有
+- `CompressImages` —— 3/6 个有
+- `easy promptList` —— 3/6 个有
+- `RHHiddenNodes` —— 2/6 个有
+- `Bookmark (rgthree)` —— 1/6 个有
 - `CR Prompt List` —— 1/6 个有
-- `EmptyLatentImage` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
-- `Power Lora Loader (rgthree)` —— 1/6 个有
-- `TextEncodeQwenImageEditPlus` —— 1/6 个有
-- `easy imageConcat` —— 1/6 个有
+- `ImageConcatMulti` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `ImageListToBatch+` —— 1/6 个有
+- `KOOK_SaveJPGImage` —— 1/6 个有
+- `LayerUtility: Collage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| 采样步数 | 8 | 5 - 8 | 6 | 85% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
 | 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 928 | - | 1 | 100% |
-| 高度 | 1664 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -70,9 +72,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 5 - 8，6 个样本，取值集中（一致性 85%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 高发问题（6/6 个样本）：Steps较低可能导致细节不足

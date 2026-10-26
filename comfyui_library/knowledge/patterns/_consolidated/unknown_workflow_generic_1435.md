@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1435
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.85
-common_nodes: [CR Text, CR Text Replace, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.9295
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, Textbox]
 problems: []
 missing: []
-members: [图片生成/图生图/详情图洗图改稿_2029131536821391361.json, 图片生成/图生图/详情页多图翻译｜支持中、英、日、韩、西、法、意、葡、越、泰、阿语_2042801710913036290.json]
+members: [图片生成/图生图/一致性+全能图片V1 双人人物合影_1971243555006169090.json, 图片生成/图生图/全能图片V1多图融合编辑2.0_1982503148055085058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1435
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/详情图洗图改稿_2029131536821391361.json、图片生成/图生图/详情页多图翻译｜支持中、英、日、韩、西、法、意、葡、越、泰、阿语_2042801710913036290.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一致性+全能图片V1 双人人物合影_1971243555006169090.json、图片生成/图生图/全能图片V1多图融合编辑2.0_1982503148055085058.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Replace`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `Repeater|pysssss` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `AnyLineArtPreprocessor_aux` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 

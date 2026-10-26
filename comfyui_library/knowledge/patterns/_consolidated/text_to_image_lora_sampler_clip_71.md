@@ -1,121 +1,102 @@
 ---
 name: text_to_image_lora_sampler_clip_71
 type: Text To Image
-frequency: 16
-level: strong
-coverage: 0.669875
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EasyCache, EmptyLatentImage, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, easy clearCacheAll, solarL_SaveImagesToZip]
+frequency: 15
+level: weak
+coverage: 0.842333
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), KSampler, LoraLoaderModelOnly, PreviewAny, ResizeImageMaskNode, SaveImage, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全功能疾速多参高清二采加速｜角色一致性视频生视频图生视频_2089701921434193922.json, 视频生成/图生视频/Minimax H3二采重绘效率流｜秒变清晰不丢一致性，出片效率起飞_2099519441183789057.json, 视频生成/图生视频/MinimaxH3全能参考提示词自动反推版！ENGENG开源视频模型真神！！_2087149888927780865.json, 视频生成/图生视频/单模型无编解码二采放大｜Minimax H3全能参考自动反推提示词 13 浏览 0 点赞 0 收藏_2092299427519225857.json, 视频生成/图生视频/双采高清人脸视频生成｜Minimax自动提示词加最新加速lora_2090470050162630658.json, 视频生成/图生视频/多参二采加速｜minimax-h3全功能疾速高清 鸭鸭图私密版直出_2089425542838841345.json, 视频生成/文生视频/0823修复横屏12秒｜万象+rh双模型二采放大视频_2091772010216124417.json, 视频生成/文生视频/0823修复竖屏12秒｜万象+rh双模型二采放大_2091770489449570306.json, 视频生成/文生视频/MiniMax H3 FL2VA单模型int8高清重绘｜9图3视频3音频文生视频_2090459732577439745.json, 视频生成/文生视频/万象rh双模型二采放大｜0823修复横屏12秒文生视频_2091600249746972673.json, 视频生成/文生视频/万象rh双模型二采放大｜0823修复竖屏12秒文生视频_2091598794503839745.json, 视频生成/文生视频/双模型二采+潜空间放大｜MinimaxH3自动提示词人脸修复视频_2090226427131154433.json, 视频生成/文生视频/双模型二采参考生视频｜万象+rh横屏16_9时长12秒_2090554080665104386.json, 视频生成/文生视频/双模型二采参考生视频｜万象+rh横屏16_9时长12秒_2090857572986343426.json, 视频生成/文生视频/双模型二采放大提示词反推｜0823修复文生视频直出_2091603200427253762.json, 视频生成/文生视频/双采高清人脸视频生成｜Minimax自动提示词加最新加速lora_2088767793599700993.json]
+members: [图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2081193864177733633.json, 图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2105591575370887170.json, 图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2108380827204800513.json, 图片生成/图生图/3-Krea2Turbo动漫真人3D互转 万能洗图 风格转绘V2 工作流-RH版_2092778942037057538.json, 图片生成/图生图/Krea2Turbo万能洗图V2｜风格转绘图生图RH版精修_2094742080018010114.json, 图片生成/图生图/Krea2Turbo万能洗图V2｜风格转绘图生图RH版精修_2095683831885029377.json, 图片生成/图生图/Krea2Turbo万能洗图V2｜风格转绘图生图RH版精修_2095692995998871553.json, 图片生成/图生图/Krea2Turbo动漫真人3D互转_万能洗图_风格转绘V2_工作流-RH版_2105591119143858177.json, 图片生成/图生图/Krea2Turbo动漫真人3D互转_万能洗图_风格转绘V2_工作流-RH版_2108380394591711234.json, 图片生成/图生图/Krea2Turbo动漫真人3D风格互转 万能洗图风格转绘_2098295680115765250.json, 图片生成/图生图/Krea2Turbo图生图风格转绘V2｜万能洗图精修_2094520552697458690.json, 图片生成/文生图/Krea2 Turbo 文生图利器｜风格参考巨物四视图V2升级版_2097881094573092866.json, 图片生成/文生图/Krea2Turbo四视图巨物｜风格参考文生图工作流V2_2093425905577316354.json, 图片生成/文生图/Krea2Turbo文生图V2工作流｜风格参考巨物美学四视图生成_2097751520233218050.json, 图片生成/文生图/风格参考巨物四视图｜Krea2Turbo文生图V2工作流_2093755784319553538.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_71
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全功能疾速多参高清二采加速｜角色一致性视频生视频图生视频_2089701921434193922.json、视频生成/图生视频/Minimax H3二采重绘效率流｜秒变清晰不丢一致性，出片效率起飞_2099519441183789057.json、视频生成/图生视频/MinimaxH3全能参考提示词自动反推版！ENGENG开源视频模型真神！！_2087149888927780865.json、视频生成/图生视频/单模型无编解码二采放大｜Minimax H3全能参考自动反推提示词 13 浏览 0 点赞 0 收藏_2092299427519225857.json、视频生成/图生视频/双采高清人脸视频生成｜Minimax自动提示词加最新加速lora_2090470050162630658.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2081193864177733633.json、图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2105591575370887170.json、图片生成/图生图/2-ZimageTurbo-控制文生图_洗图_漫转真人-V1_2108380827204800513.json、图片生成/图生图/3-Krea2Turbo动漫真人3D互转 万能洗图 风格转绘V2 工作流-RH版_2092778942037057538.json、图片生成/图生图/Krea2Turbo万能洗图V2｜风格转绘图生图RH版精修_2094742080018010114.json…）
 
 - **类型**：Text To Image
-- **样本数**：16
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：15
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `JjkText`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PreviewAny`
+- `ResizeImageMaskNode`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `easy clearCacheAll`
-- `solarL_SaveImagesToZip`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 15/16 个有
-- `ResizeShortestToNode` —— 15/16 个有
-- `SetNode` —— 15/16 个有
-- `LoraLoaderBypassModelOnly` —— 14/16 个有
-- `VHS_VideoCombine` —— 14/16 个有
-- `孤海注释` —— 14/16 个有
-- `ModelAttentionBackend` —— 12/16 个有
-- `TrimAudioDuration` —— 11/16 个有
-- `LTXVConcatAVLatent` —— 9/16 个有
-- `LTXVSeparateAVLatent` —— 9/16 个有
-- `RHLLMChatNode` —— 8/16 个有
-- `StringFunction|pysssss` —— 8/16 个有
-- `easy showAnything` —— 8/16 个有
-- `Label (rgthree)` —— 6/16 个有
-- `MinimaxH3LatentUpscaler3D` —— 6/16 个有
-- `PT_H3ConcatAVLatent` —— 6/16 个有
-- `VAEEncode` —— 6/16 个有
-- `VAEEncodeAudio` —— 6/16 个有
-- `LoadVideo` —— 5/16 个有
-- `AudioCrop` —— 4/16 个有
-- `PathchSageAttentionKJ` —— 4/16 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 3/16 个有
-- `SaveVideo` —— 3/16 个有
-- `DuckHideNode` —— 2/16 个有
-- `HAIGC_SaveImagesToZip` —— 2/16 个有
-- `SaveImage` —— 2/16 个有
-- `easy imageSize` —— 2/16 个有
-- `Any Switch (rgthree)` —— 1/16 个有
-- `GetImageRangeFromBatch` —— 1/16 个有
-- `MiniMaxH3BlockCacheT8` —— 1/16 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/16 个有
-- `SolAttnPatch` —— 1/16 个有
-- `SplitSigmas` —— 1/16 个有
-- `UniBlockSwap` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
+- `Any Switch (rgthree)` —— 12/15 个有
+- `MuyeTextEditOutput` —— 12/15 个有
+- `PrimitiveStringMultiline` —— 12/15 个有
+- `easy stylesSelector` —— 12/15 个有
+- `AILab_ImageCompare` —— 11/15 个有
+- `AIO_Preprocessor` —— 11/15 个有
+- `GetImageSize` —— 11/15 个有
+- `LoadImage` —— 11/15 个有
+- `PreviewImage` —— 11/15 个有
+- `ResizeImagesByLongerEdge` —— 11/15 个有
+- `JjkText` —— 9/15 个有
+- `solarL_SaveImagesToZip` —— 9/15 个有
+- `Krea2ControlApply` —— 8/15 个有
+- `Krea2ControlImageEncode` —— 8/15 个有
+- `Krea2ControlLoRALoader` —— 8/15 个有
+- `VAEEncode` —— 8/15 个有
+- `孤海注释` —— 7/15 个有
+- `Fast Bypasser (rgthree)` —— 6/15 个有
+- `SDXLEmptyLatentSizePicker+` —— 4/15 个有
+- `ModelPatchLoader` —— 3/15 个有
+- `ModelSamplingAuraFlow` —— 3/15 个有
+- `ZImageFunControlnet` —— 3/15 个有
+- `easy cleanGpuUsed` —— 3/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 16 | 100% |
-| 高度 | 80 | 80 - 80 | 16 | 100% |
-| 采样步数 | 4 | 4 - 4 | 16 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 16 | 100% |
-| 采样算法 | er_sde | - | 16 | 100% |
-| 调度器 | beta | - | 16 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
+| 采样步数 | 4 | 1 - 4 | 15 | 48% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 15 | 45% |
+| 采样算法 | er_sde | - | 15 | 60% |
+| 调度器 | beta | - | 15 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 宽度 | 80 | 80 - 512 | 15 | 16% |
+| 高度 | 80 | 80 - 512 | 15 | 16% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 54/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，16 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，16 个样本，一致性 100%
-- 调度器 最常用 beta，16 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 高发问题（16/16 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 1 - 4，15 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，15 个样本，取值分散，一致性仅 45%
+- 采样算法 最常用 er_sde，15 个样本，一致性 60%
+- 调度器 最常用 beta，15 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 512，15 个样本，取值分散，一致性仅 16%
+- 高度 中位数 80，观测区间 80 - 512，15 个样本，取值分散，一致性仅 16%
+- 高发问题（54/15 个样本）：Steps较低可能导致细节不足

@@ -1,97 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_118
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.862111
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, MaskToSEGS, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SEGSPreview, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.9552
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json, 图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json, 图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json, 图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json, 图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json, 图片生成/图生图/参考图生成卡通可爱四宫格漫画_1918124542395617281.json, 图片生成/图生图/拍立得照片卡通形象_1912392096207306754.json, 图片生成/图生图/拍立得照片卡通形象_1913231363498278913.json, 图片生成/图生图/真人转剪纸艺术工作流_1895381354098065410.json]
+members: [图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json, 图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json, 图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json, 图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json, 图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2059103096625782786.json, 图片生成/文生图/Ernie-Image-Turbo_2054569121966247938.json, 图片生成/文生图/F01.文生图标准流_2061325864108908545.json, 图片生成/文生图/Flux-2-klein-文生图_2081417549262184450.json, 图片生成/文生图/flux-2-klein-文生图标准流_2040040486324408321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_118
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json、图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json、图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json、图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json、图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json、图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json、图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json、图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json、图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LoadImage`
-- `MaskToSEGS`
-- `PreviewImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SEGSPreview`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 8/9 个有
-- `ShowText|pysssss` —— 8/9 个有
-- `easy cleanGpuUsed` —— 8/9 个有
-- `FluxResolutionNode` —— 7/9 个有
-- `JjkText` —— 7/9 个有
-- `LoraLoader` —— 7/9 个有
-- `TextCombinerTwo` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 4/9 个有
-- `ApplyFBCacheOnModel` —— 2/9 个有
-- `ImageResizeKJ` —— 2/9 个有
-- `ApplyFluxControlNet` —— 1/9 个有
-- `BaiduTranslateNode` —— 1/9 个有
-- `CR Text Concatenate` —— 1/9 个有
-- `ConditioningZeroOut` —— 1/9 个有
-- `ETN_Translate` —— 1/9 个有
-- `HEDPreprocessor` —— 1/9 个有
-- `HfImageToRGB` —— 1/9 个有
-- `Image Levels Adjustment` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
-- `LoadFluxControlNet` —— 1/9 个有
-- `MaskPreview+` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `PMRF` —— 1/9 个有
-- `VAEEncode` —— 1/9 个有
-- `XlabsSampler` —— 1/9 个有
-- `easy imageRemBg` —— 1/9 个有
-- `easy positive` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 9/10 个有
+- `UnetLoaderGGUF` —— 4/10 个有
+- `easy cleanGpuUsed` —— 4/10 个有
+- `CLIPLoaderGGUF` —— 2/10 个有
+- `EasySizeSimpleSetting` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
+- `RAMCleanup` —— 1/10 个有
+- `TTResolutionSelector` —— 1/10 个有
+- `Text` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 1024 | 9 | 87% |
-| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
-| LoRA 模型强度 | 0.85 | 0.7 - 1 | 7 | 86% |
-| LoRA 文本强度 | 0.8 | 0.7 - 1 | 7 | 85% |
+| 采样步数 | 7 | 6 - 8 | 10 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 10 | 97% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 1024，9 个样本，取值集中（一致性 87%）
-- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.85，观测区间 0.7 - 1，7 个样本，取值集中（一致性 86%）
-- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 1，7 个样本，取值集中（一致性 85%）
+- 采样步数 中位数 7，观测区间 6 - 8，10 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，10 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

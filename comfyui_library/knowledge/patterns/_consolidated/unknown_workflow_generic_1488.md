@@ -3,44 +3,37 @@ name: unknown_workflow_generic_1488
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.84
-common_nodes: [LoadImage, MuyeTextEditOutput, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline, easy saveText, easy showAnything]
+coverage: 0.3435
+common_nodes: [CR Text, GetNode, Image Comparer (rgthree), LoadImage, SaveImage, SetNode]
 problems: []
 missing: []
-members: [图片生成/文生图/一键成片嘎嘎地（提示词+图片）_2015786171237928962.json, 图片生成/文生图/广告宣传片图文工作流_2039013770806169602.json]
+members: [图片生成/图生图/升级版换装支持4K-Wan2.7-Image-Pro 模型一键快速换服装（人物和场景统一不变）_2043734766310137858.json, 图片生成/文生图/【119】全能图片G image 2.5 生成透明背景元素_2098789994289786882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1488
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键成片嘎嘎地（提示词+图片）_2015786171237928962.json、图片生成/文生图/广告宣传片图文工作流_2039013770806169602.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/升级版换装支持4K-Wan2.7-Image-Pro 模型一键快速换服装（人物和场景统一不变）_2043734766310137858.json、图片生成/文生图/【119】全能图片G image 2.5 生成透明背景元素_2098789994289786882.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：34%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `GetNode`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Text Multiline`
-- `easy saveText`
-- `easy showAnything`
+- `SetNode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `ShellAgentPluginOutputText` —— 1/2 个有
+- `RH_AlibabaWan27ImageEditPro` —— 1/2 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

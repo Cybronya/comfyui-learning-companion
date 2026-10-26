@@ -3,34 +3,37 @@ name: unknown_workflow_generic_1007
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.571333
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
+coverage: 0.777667
+common_nodes: [JjkText, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/（自定义API）全能图片2极速版文生图V1（同步转异步）_2028114029268439041.json, 图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json, 视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json]
+members: [图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json, 数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json, 视频生成/图生视频/S1-1 牛叉产品特效炸裂视频，参考十六宫格底图  产品特效_2050616496979755010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1007
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/（自定义API）全能图片2极速版文生图V1（同步转异步）_2028114029268439041.json、图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json、视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json、数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json、视频生成/图生视频/S1-1 牛叉产品特效炸裂视频，参考十六宫格底图  产品特效_2050616496979755010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+- `JjkText`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gemini_3_1_flash_image_edit_S2A` —— 2/3 个有
-- `Comfly_gpt_image_2_official_ratio` —— 1/3 个有
+- `ProcessString` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `RHHiddenNodes` —— 1/3 个有
 
 ## 典型参数
 

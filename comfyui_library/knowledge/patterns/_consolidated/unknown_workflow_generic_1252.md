@@ -3,39 +3,36 @@ name: unknown_workflow_generic_1252
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7625
-common_nodes: [ImageConcatMulti, LoadImage, PreviewImage, QwenImageModelLoader, RH_Captioner, RH_QwenImageGenerator, SaveImage, easy cleanGpuUsed, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, SaveGLB, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
 problems: []
 missing: []
-members: [图片生成/图生图/Landingpage落地页图生图洗图_1952646160060231681.json, 图片生成/文生图/通义千问反推图生图(可反推汉字)_1952614485590773761.json]
+members: [comfyui-workflow-templates-json/api_tripo_p1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p1_mv_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1252
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Landingpage落地页图生图洗图_1952646160060231681.json、图片生成/文生图/通义千问反推图生图(可反推汉字)_1952614485590773761.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo_p1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p1_mv_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
 - `LoadImage`
-- `PreviewImage`
-- `QwenImageModelLoader`
-- `RH_Captioner`
-- `RH_QwenImageGenerator`
-- `SaveImage`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `SaveGLB`
+- `TripoConversionNode`
+- `TripoRetargetNode`
+- `TripoRigNode`
+- `TripoTextureNodeV2`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 1/2 个有
-- `easy imageSize` —— 1/2 个有
+- `TripoP1ImageToModelNode` —— 1/2 个有
+- `TripoP1MultiviewToModelNode` —— 1/2 个有
 
 ## 典型参数
 

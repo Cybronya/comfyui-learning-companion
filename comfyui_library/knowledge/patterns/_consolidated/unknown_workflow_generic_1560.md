@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1560
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.9735
+common_nodes: [BiRefNet_Hugo, EmptyImage, GrowMask, ImageCompositeMasked, ImageScale, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json, 视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json]
+members: [图片生成/图生图/电商商品抠图换背景-BirefNet模型_2099054154370084866.json, 图片生成/图生图/电商商品抠图换背景-BirefNet模型_2101224673987088385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1560
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json、视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商商品抠图换背景-BirefNet模型_2099054154370084866.json、图片生成/图生图/电商商品抠图换背景-BirefNet模型_2101224673987088385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `BiRefNet_Hugo`
+- `EmptyImage`
+- `GrowMask`
+- `ImageCompositeMasked`
+- `ImageScale`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeReferenceToVideo` —— 1/2 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

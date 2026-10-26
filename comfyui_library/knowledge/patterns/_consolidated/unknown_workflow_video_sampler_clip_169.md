@@ -2,67 +2,62 @@
 name: unknown_workflow_video_sampler_clip_169
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.9525
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, INTConstant, KSampler, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VHS_VideoCombine, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.6305
+common_nodes: [Anything Everywhere, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/文生视频/MEGA AllInOne Wan2.2 文生视频_1968810261702483970.json, 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-文生视频_1968253797757792257.json, 视频生成/文生视频/MEGA V3 AllInOne_Wan2.2_文生视频_1969734360964472834.json, 视频生成/文生视频/MEGA_V2_AllInOne_Wan2.2_文生视频_1970012767400960001.json]
+members: [视频生成/图生视频/万相Wan2.1-i2v-图生视频放大补帧（详细讲解使用）_1908039126187450370.json, 视频生成/图生视频/万相Wan2.1-i2v-图生视频（详细讲解使用）_1907390680300154882.json, 视频生成/图生视频/通义万相2.1-图生视频-14B-720P_1910864267745161217.json, 视频生成/文生视频/万相wan2.1-T2v-文生视频放大补帧（详细讲解使用）_1907817176102019074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_169
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MEGA AllInOne Wan2.2 文生视频_1968810261702483970.json、视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-文生视频_1968253797757792257.json、视频生成/文生视频/MEGA V3 AllInOne_Wan2.2_文生视频_1969734360964472834.json、视频生成/文生视频/MEGA_V2_AllInOne_Wan2.2_文生视频_1970012767400960001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万相Wan2.1-i2v-图生视频放大补帧（详细讲解使用）_1908039126187450370.json、视频生成/图生视频/万相Wan2.1-i2v-图生视频（详细讲解使用）_1907390680300154882.json、视频生成/图生视频/通义万相2.1-图生视频-14B-720P_1910864267745161217.json、视频生成/文生视频/万相wan2.1-T2v-文生视频放大补帧（详细讲解使用）_1907817176102019074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Anything Everywhere`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `INTConstant`
-- `KSampler`
-- `ModelSamplingSD3`
-- `TrimVideoLatent`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 3/4 个有
-- `Wan22PromptSelector` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `workflow>3` —— 3/4 个有
+- `workflow>4` —— 3/4 个有
+- `workflow>5` —— 3/4 个有
+- `workflow>6` —— 3/4 个有
+- `CR Upscale Image` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RIFE VFI` —— 2/4 个有
+- `EmptyHunyuanLatentVideo` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `workflow>1` —— 1/4 个有
+- `workflow>2` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

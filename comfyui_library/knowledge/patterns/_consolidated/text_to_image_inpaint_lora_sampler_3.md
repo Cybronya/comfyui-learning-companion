@@ -3,102 +3,78 @@ name: text_to_image_inpaint_lora_sampler_3
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.781
-common_nodes: [AddMask, Bjornulf_ShowInt, BlockifyMask, CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, CR Aspect Ratio, CR Prompt Text, ConditioningZeroOut, CropByBBoxes, DrawMaskOnImage, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GrowMaskWithBlur, INPAINT_MaskBoundingBox, ImageResizeKJv2, InvertMask, JjkText, JoinStringMulti, KSampler, KSamplerSelect, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: PurgeVRAM V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, Mask To Image (mtb), MaskToImage, ModelSamplingAuraFlow, PreviewAny, PreviewImage, PrimitiveBoundingBox, PrimitiveStringMultiline, Qwen3VLProcessor, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, RandomNoise, ReferenceLatent, Sa2VANodeTpl, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.852667
+common_nodes: [BasicGuider, BlockifyMask, Bool, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, Image Comparer (rgthree), ImageScale, ImpactMakeAnyList, ImpactNeg, InpaintCropImproved, Int, JjkText, KSampler, KSamplerSelect, LayerColor: BrightnessContrastV2, LayerMask: MaskGrow, LayerUtility: ColorImage V2, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskPreview, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SmartColorMatch, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse, easy imageSize, easy imageSizeBySide, easy int, easy isMaskEmpty, solarL_SaveImagesToZip, 取色器_孤海, 图像接缝, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/抱枕与挂布处理优化版｜图生图电商家居素材一键出图_2101866062852747265.json, 图片生成/图生图/抱枕与挂布处理工作流｜图生图电商素材批量处理更省心_2101854700705509377.json, 图片生成/图生图/抱枕挂布素材处理｜图生图抠图去水印实用工具_2101134943521955842.json]
+members: [图片生成/图生图/Flux2-klein商品替换_2107419139630526466.json, 图片生成/图生图/Flux2-klein小批量万物迁移零偏移｜图生图商品替换电商产品_2090092327686729729.json, 图片生成/图生图/万物迁移零偏移｜Flux2-klein小批量商品替换图生图_2089803072192208898.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_inpaint_lora_sampler_3
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/抱枕与挂布处理优化版｜图生图电商家居素材一键出图_2101866062852747265.json、图片生成/图生图/抱枕与挂布处理工作流｜图生图电商素材批量处理更省心_2101854700705509377.json、图片生成/图生图/抱枕挂布素材处理｜图生图抠图去水印实用工具_2101134943521955842.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2-klein商品替换_2107419139630526466.json、图片生成/图生图/Flux2-klein小批量万物迁移零偏移｜图生图商品替换电商产品_2090092327686729729.json、图片生成/图生图/万物迁移零偏移｜Flux2-klein小批量商品替换图生图_2089803072192208898.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AddMask`
-- `Bjornulf_ShowInt`
+- `BasicGuider`
 - `BlockifyMask`
-- `CFGGuider`
-- `CFGNorm`
+- `Bool`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Aspect Ratio`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
-- `CropByBBoxes`
-- `DrawMaskOnImage`
 - `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `Flux2Scheduler`
-- `GrowMaskWithBlur`
-- `INPAINT_MaskBoundingBox`
-- `ImageResizeKJv2`
-- `InvertMask`
+- `Image Comparer (rgthree)`
+- `ImageScale`
+- `ImpactMakeAnyList`
+- `ImpactNeg`
+- `InpaintCropImproved`
+- `Int`
 - `JjkText`
-- `JoinStringMulti`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerColor: BrightnessContrastV2`
 - `LayerMask: MaskGrow`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: RestoreCropBox`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `Mask To Image (mtb)`
-- `MaskToImage`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
+- `Mask Fill Holes`
+- `MaskPreview`
 - `PreviewImage`
-- `PrimitiveBoundingBox`
-- `PrimitiveStringMultiline`
-- `Qwen3VLProcessor`
-- `QwenEditAdaptiveLongestEdge`
-- `QwenEditConfigPreparer`
 - `RandomNoise`
 - `ReferenceLatent`
-- `Sa2VANodeTpl`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `SmartColorMatch`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy compare`
+- `easy ifElse`
+- `easy imageSize`
+- `easy imageSizeBySide`
+- `easy int`
+- `easy isMaskEmpty`
 - `solarL_SaveImagesToZip`
+- `取色器_孤海`
+- `图像接缝`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowFloat` —— 2/3 个有
-- `Boolean To Int [Dream]` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `Image Blank` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `easy convertAnything` —— 2/3 个有
-- `math_calculate` —— 2/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `Image Rembg (Remove Background)` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `PromptEnhancerPreset` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `TTP_Expand_And_Mask` —— 1/3 个有
-- `XB_llamaPromptEnhancer` —— 1/3 个有
+- `CR Text` —— 2/3 个有
 
 ## 典型参数
 
@@ -116,7 +92,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -127,4 +103,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

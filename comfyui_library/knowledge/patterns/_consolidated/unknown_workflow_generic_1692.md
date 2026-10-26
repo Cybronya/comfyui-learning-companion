@@ -3,30 +3,34 @@ name: unknown_workflow_generic_1692
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.55
-common_nodes: [PrimitiveStringMultiline, SaveAudioMP3, YuE2Generate, YuE2Loader]
+coverage: 0.9
+common_nodes: [CR Text, LoadImage, SaveVideo, SetNode]
 problems: []
 missing: []
-members: [音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json, 音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json]
+members: [视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json, 视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1692
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json、音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json、视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `YuE2Generate`
-- `YuE2Loader`
+- `CR Text`
+- `LoadImage`
+- `SaveVideo`
+- `SetNode`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
 
 ## 典型参数
 

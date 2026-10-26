@@ -3,35 +3,34 @@ name: unknown_workflow_generic_921
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.926
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.718667
+common_nodes: [LoadImage, RH_LLMAPI_NODE, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json, 图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json, 图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json]
+members: [图片生成/反推提示词/RH-LLM 中文翻译成英文_1922295319269167106.json, 图片生成/反推提示词/图生视频提示词优化_1992742171172294657.json, 视频生成/图生视频/图生视频提示词优化_1989332533642973186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_921
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json、图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json、图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/RH-LLM 中文翻译成英文_1922295319269167106.json、图片生成/反推提示词/图生视频提示词优化_1992742171172294657.json、视频生成/图生视频/图生视频提示词优化_1989332533642973186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `GetRandomIntegerInRange` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
+- `easy imageConcat` —— 2/3 个有
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 

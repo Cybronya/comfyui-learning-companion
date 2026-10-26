@@ -3,56 +3,56 @@ name: image_to_image_lora_sampler_unet_228
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.862
+common_nodes: [BiRefNetRMBG, CLIPLoader, CR Text Concatenate, ConditioningZeroOut, FastCanvas, FastCanvasTool, Image Comparer (rgthree), KSampler, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RepeatLatentBatch, SaveImage, Text, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy ifElse, easy isMaskEmpty]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/一致性姿态与光影控制VNCCS Pose Studio+2511_2020409094468800513.json, 视频生成/图生视频/Qwen  2511 去水印_2039186389039845377.json]
+members: [图片生成/图生图/万物迁移，融图。Qwen，千问2509，put it here_1973741916841971713.json, 图片生成/文生图/Qwe千问2509万物迁移产品融图_1983735009850892289.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_228
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一致性姿态与光影控制VNCCS Pose Studio+2511_2020409094468800513.json、视频生成/图生视频/Qwen  2511 去水印_2039186389039845377.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/万物迁移，融图。Qwen，千问2509，put it here_1973741916841971713.json、图片生成/文生图/Qwe千问2509万物迁移产品融图_1983735009850892289.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
+- `BiRefNetRMBG`
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `FastCanvas`
+- `FastCanvasTool`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `Text`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `ImageResize` —— 1/2 个有
-- `JWStringConcat` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `String Literal` —— 1/2 个有
-- `VNCCS_PoseStudio` —— 1/2 个有
-- `image_scale_pixel_v2` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -66,7 +66,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

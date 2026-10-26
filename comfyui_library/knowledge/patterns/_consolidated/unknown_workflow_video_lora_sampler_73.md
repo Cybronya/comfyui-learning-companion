@@ -1,57 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_73
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: moderate
-coverage: 0.948944
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
+coverage: 0.906316
+common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageConcatMulti, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json, 视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json, 视频生成/图生视频/Wan2.1-胜利之舞_1902955748278571009.json, 视频生成/图生视频/Wan360度旋转-微波炉特效视频工作流_1899781896895881218.json, 视频生成/图生视频/Wan变身超级赛亚人_2079036262153023489.json, 视频生成/图生视频/Wan捏捏图生视频工作流_1899122164795133953.json, 视频生成/图生视频/Wan波动拳图生视频工作流_1899508208174809089.json, 视频生成/图生视频/wan2.1 图生视频-掀起衣服_1900918919576854530.json, 视频生成/图生视频/wan2.1万相图生视拔刀特效lora_1920904820126060546.json, 视频生成/图生视频/wan2.1万相图生视拖红影特效lora_1922514213686886402.json, 视频生成/图生视频/wan2.1图生视频-燃烧特效_1900758531451297794.json, 视频生成/图生视频/wan2.1图生视频特效走秀燃烧起火工作流_1920925508526346241.json, 视频生成/图生视频/wan2.1捏捏乐_1896450417918345217.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频_1909162790840639489.json, 视频生成/图生视频/双人2对打100wan2.1万相图生视视_1929451203611234306.json, 视频生成/图生视频/街舞单手倒立200确定_1928166272100352001.json, 视频生成/图生视频/街舞大风车176确认好的_1928158479809134593.json, 视频生成/图生视频/通义万相wan2.1万物旋转360度特效_1901238900759609346.json]
+members: [视频生成/图生视频/AI 短剧 表情迁移万相Aniwan2.1 FantasyPortrait InfiniteTalk_2009933373376040962.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_1957074909769949186.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2012855338562752513.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2013833454928007170.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2017131239425183745.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2047205643727147009.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2051915621100732418.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2056919279173455873.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2066892858690461697.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2100890914960007169.json, 视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2100931090323169281.json, 视频生成/图生视频/Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json, 视频生成/图生视频/AniWan+FantasyPortrait高动态表情追踪动作迁移V1_1956272186195673089.json, 视频生成/图生视频/Fantasy Portrait+Wan2.2非常规表情动作迁移工作流V2_1956253904029798402.json, 视频生成/图生视频/MultiTalk+AniWan+FantasyPortrait高动态表情追踪对口型数字人V1_1956275503990755329.json, 视频生成/图生视频/Wan2.1+FantasyPortrait表情动作迁移V1_1956269991735775234.json, 视频生成/图生视频/人物表情迁移数字人FantasyPortraitk_1957739014727237633.json, 视频生成/图生视频/表情迁移Aniwan2.1+FantasyPortrait+InfiniteTalk_2011700732822560770.json, 视频生成/图生视频/🥱表情复刻+对口型工作流【FantasyPortrait+Multitalk】🥱_1956623622469287937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_73
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json、视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json、视频生成/图生视频/Wan2.1-胜利之舞_1902955748278571009.json、视频生成/图生视频/Wan360度旋转-微波炉特效视频工作流_1899781896895881218.json、视频生成/图生视频/Wan变身超级赛亚人_2079036262153023489.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/AI 短剧 表情迁移万相Aniwan2.1 FantasyPortrait InfiniteTalk_2009933373376040962.json、视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_1957074909769949186.json、视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2012855338562752513.json、视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2013833454928007170.json、视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2017131239425183745.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 19 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddFantasyPortrait`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageClipEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTextEncode` —— 17/18 个有
-- `WanVideoBlockSwap` —— 16/18 个有
-- `WanVideoEnhanceAVideo` —— 14/18 个有
-- `ImageResizeKJ` —— 13/18 个有
-- `LayerUtility: PurgeVRAM` —— 9/18 个有
-- `Int` —— 8/18 个有
-- `DownloadAndLoadGIMMVFIModel` —— 6/18 个有
-- `GIMMVFI_interpolate` —— 6/18 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/18 个有
-- `Textbox` —— 4/18 个有
-- `TextInput_` —— 3/18 个有
-- `CR Upscale Image` —— 2/18 个有
-- `Note Plus (mtb)` —— 2/18 个有
-- `PreviewImage` —— 2/18 个有
-- `VHS_LoadVideo` —— 1/18 个有
-- `workflow>文本` —— 1/18 个有
+- `VHS_VideoInfo` —— 18/19 个有
+- `easy showAnything` —— 17/19 个有
+- `DownloadAndLoadWav2VecModel` —— 16/19 个有
+- `JWInteger` —— 16/19 个有
+- `MultiTalkModelLoader` —— 16/19 个有
+- `MultiTalkWav2VecEmbeds` —— 16/19 个有
+- `SimpleMath+` —— 16/19 个有
+- `SoundFlow_Fade` —— 16/19 个有
+- `SoundFlow_GetLength` —— 16/19 个有
+- `ToInt` —— 16/19 个有
+- `WanVideoTorchCompileSettings` —— 16/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/19 个有
+- `GetNode` —— 6/19 个有
+- `INTConstant` —— 6/19 个有
+- `SetNode` —— 5/19 个有
+- `AudioSeparation` —— 1/19 个有
+- `CR Prompt Text` —— 1/19 个有
+- `CR Text` —— 1/19 个有
+- `FloatToSigmas` —— 1/19 个有
+- `ImageFromBatch+` —— 1/19 个有
+- `ImpactInt` —— 1/19 个有
+- `Note Plus (mtb)` —— 1/19 个有
+- `StringToFloatList` —— 1/19 个有
 
 ## 典型参数
 

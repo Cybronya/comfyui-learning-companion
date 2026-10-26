@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1347
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.8945
+common_nodes: [CR Text, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2 图生图｜官方稳定版｜超强一致性_2093844161140183042.json, 图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json]
+members: [图片生成/图生图/API版图像扩充_2059526870571511810.json, 图片生成/图生图/香焦_2059261808040566785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1347
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2 图生图｜官方稳定版｜超强一致性_2093844161140183042.json、图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/API版图像扩充_2059526870571511810.json、图片生成/图生图/香焦_2059261808040566785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `CR Text`
 - `LoadImage`
 - `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashLiteImageToImage` —— 1/2 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/2 个有
+- `DapaoImagePadDirectionNode` —— 1/2 个有
+- `Primitive integer [Crystools]` —— 1/2 个有
 
 ## 典型参数
 

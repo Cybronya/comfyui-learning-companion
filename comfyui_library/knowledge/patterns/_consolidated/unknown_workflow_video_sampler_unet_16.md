@@ -1,75 +1,138 @@
 ---
 name: unknown_workflow_video_sampler_unet_16
 type: Unknown Workflow
-frequency: 22
-level: moderate
-coverage: 0.662636
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PreviewAudio, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
-problems: []
+frequency: 16
+level: weak
+coverage: 0.766625
+common_nodes: [ComfyMathExpression, DualCLIPLoader, EmptyImage, GetImagesFromBatchIndexed, GetNode, INTConstant, ImageAddMulti, ImageBatchMulti, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, ResizeImageMaskNode, ResizeImagesByLongerEdge, SetNode, UNETLoader, VAELoaderKJ, VHS_VideoCombine, easy convertAnything, easy imageRemBg, easy indexAnything, easy positive, easy promptLine, easy promptList, easy promptReplace]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: ["数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json", 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json, 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2096583276864561153.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版_2084824920000909313.json, 视频生成/图生视频/Audio-Driven Digital Characters音频驱动数字人说话唱歌对口型_2098213691744407554.json, 视频生成/图生视频/Image-to-Video 音频驱动+数字人_2093871304574332930.json, 视频生成/图生视频/MiniMaxH3 视频提取音频驱动数字人说话唱歌对口型！加速版！_2094060663554531330.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！_2093568717039955969.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2084875071205761025.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084968975238262785.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084996614002921473.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2086788983148859393.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090405103944683522.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090421468608946177.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2093316488181673986.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094746665759629313.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094757190883176450.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105254839331680258.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105266413794578434.json, 视频生成/图生视频/MiniMaxH3音频驱动+数字人说话唱歌对口型！加速版+_2086656794096660481.json, 视频生成/图生视频/加速版MiniMaxH3—音频驱动数字人说话唱歌对口型！_2090343540776853506.json, 视频生成/图生视频/音频驱动 MiniMaxH3数字人说话唱歌对口型！加速版_2085186020986941441.json]
+members: [视频生成/图生视频/LTX2.3 全栈式 短剧生成 最新版（参考生成版）_2039346074971807746.json, 视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2046808351366979586.json, 视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2055237155726864386.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V11_2046212690837774338.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V15.1_2052747730749009921.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V16.1(人物+场景)_2055880245324066818.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V6（参考图生成版）图生视频短剧版短剧分镜版_2037962228107845633.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V6（参考生成版）_2037870072148008962.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V7（参考生成版）_2038288723439263746.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考图生成版）图生视频短剧版短剧分镜版_2040445885619900417.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考图生成版）图生视频短剧版短剧分镜版_2064338058337673217.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考生成三采版）_2040059200792961026.json, 视频生成/图生视频/LTX2.3全栈式短剧生成（参考图生成版）图生视频短剧版短剧分镜版_2038110146437586946.json, 视频生成/图生视频/LTX2.3全栈式短剧生成（参考图生成版）图生视频短剧版短剧分镜版_2044736578437783554.json, 视频生成/图生视频/邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_16
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json、数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json、数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2096583276864561153.json、数字人/数字人/MinimaxH3音频驱动数字人单人版_2084824920000909313.json、视频生成/图生视频/Audio-Driven Digital Characters音频驱动数字人说话唱歌对口型_2098213691744407554.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 全栈式 短剧生成 最新版（参考生成版）_2039346074971807746.json、视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2046808351366979586.json、视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2055237155726864386.json、视频生成/图生视频/LTX2.3全栈式短剧生成V11_2046212690837774338.json、视频生成/图生视频/LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：16
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `AudioCrop`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 16 个 workflow 都包含：
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `INTConstant`
+- `ImageAddMulti`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAudio`
-- `PrimitiveFloat`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `RegexExtract`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `easy convertAnything`
+- `easy imageRemBg`
+- `easy indexAnything`
+- `easy positive`
+- `easy promptLine`
+- `easy promptList`
+- `easy promptReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `Any To String (mtb)` —— 21/22 个有
-- `GetNode` —— 21/22 个有
-- `ImageResizeKJv2` —— 21/22 个有
-- `LoadAudio` —— 21/22 个有
-- `PreviewImage` —— 21/22 个有
-- `PrimitiveInt` —— 21/22 个有
-- `SetNode` —— 21/22 个有
-- `PathchSageAttentionKJ` —— 19/22 个有
-- `AILab_QwenVL` —— 11/22 个有
-- `JjkText` —— 11/22 个有
-- `JoinStrings` —— 11/22 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/22 个有
-- `AudioSeparation` —— 8/22 个有
-- `LoraLoaderModelOnly` —— 8/22 个有
-- `EasyCache` —— 3/22 个有
-- `ResolutionSelector` —— 1/22 个有
-- `VHS_LoadVideo` —— 1/22 个有
+- `CFGGuider` —— 15/16 个有
+- `CLIPTextEncode` —— 15/16 个有
+- `EmptyLTXVLatentVideo` —— 15/16 个有
+- `LatentUpscaleModelLoader` —— 15/16 个有
+- `ManualSigmas` —— 15/16 个有
+- `RandomNoise` —— 15/16 个有
+- `SamplerCustomAdvanced` —— 15/16 个有
+- `VAEDecodeTiled` —— 15/16 个有
+- `PreviewImage` —— 14/16 个有
+- `ShowText|pysssss` —— 14/16 个有
+- `LTXVCropGuides` —— 13/16 个有
+- `LTXVLatentUpsampler` —— 13/16 个有
+- `LTXVImgToVideoInplace` —— 12/16 个有
+- `LoraLoaderModelOnly` —— 12/16 个有
+- `easy promptConcat` —— 12/16 个有
+- `TrimVideoLatent` —— 11/16 个有
+- `easy batchAnything` —— 11/16 个有
+- `easy forLoopEnd` —— 11/16 个有
+- `easy forLoopStart` —— 11/16 个有
+- `LTXAddVideoICLoRAGuideAdvanced` —— 8/16 个有
+- `LTXICLoRALoaderModelOnly` —— 8/16 个有
+- `LTXVAddGuideMulti` —— 8/16 个有
+- `LongTextToList` —— 7/16 个有
+- `ImageInvert` —— 4/16 个有
+- `LTXVEnhanceAVideoKJ` —— 4/16 个有
+- `CLIPLoader` —— 2/16 个有
+- `ModelSamplingSD3` —— 2/16 个有
+- `VAEDecode` —— 2/16 个有
+- `VAELoader` —— 2/16 个有
+- `AudioEncoderEncode` —— 1/16 个有
+- `AudioEncoderLoader` —— 1/16 个有
+- `BasicScheduler` —— 1/16 个有
+- `ColorMatch` —— 1/16 个有
+- `ConditioningZeroOut` —— 1/16 个有
+- `ContextWindowsManual` —— 1/16 个有
+- `GetImageRangeFromBatch` —— 1/16 个有
+- `KSampler` —— 1/16 个有
+- `KSamplerAdvanced` —— 1/16 个有
+- `LTXAddVideoICLoRAGuide` —— 1/16 个有
+- `PreviewAny` —— 1/16 个有
+- `PreviewAudio` —— 1/16 个有
+- `PromptRelayEncode` —— 1/16 个有
+- `RIFE VFI` —— 1/16 个有
+- `RTXVideoSuperResolution` —— 1/16 个有
+- `SamplerCustom` —— 1/16 个有
+- `Text Concatenate` —— 1/16 个有
+- `VAEEncode` —— 1/16 个有
+- `WanHuMoImageToVideo` —— 1/16 个有
+- `WanImageToVideo` —— 1/16 个有
+- `WanVideoNAG` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 385 | 16 | 39% |
+| 高度 | 25 | 24 - 25 | 16 | 99% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 385，16 个样本，取值分散，一致性仅 39%
+- 高度 中位数 25，观测区间 24 - 25，16 个样本，取值集中（一致性 99%）
+- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 调度器 最常用 simple，2 个样本，一致性 50%

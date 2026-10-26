@@ -1,60 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_288
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.946
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 8
+level: moderate
+coverage: 0.870125
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2文生视频4步极速版_2043282712538128386.json, 视频生成/图生视频/Wan2.2 14B 首尾帧_1968955228710133762.json, 视频生成/图生视频/Wan2.2_首尾帧视频_4步极速版_ComfyUI官方流_2017568784646672385.json, 视频生成/图生视频/Wan2.2首尾帧工作流ComfyUI官方流_2050472487972032513.json, 视频生成/图生视频/smooth首尾帧图生视频工作流_2067255627071709185.json, 视频生成/图生视频/首尾帧图生视频工作流_2066470344814321666.json, 视频生成/图生视频/首尾帧图生视频社区模型Smooth Mix i2V v2.0工作流_2050542650729746434.json]
+members: [数字人/数字人/唱歌MTV数字人infinitetalk优化版_2016107471126929409.json, 数字人/数字人/唱歌数字人infinitetalk优化版一比一支持_2050593317225807874.json, 视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json, 视频生成/图生视频/唱歌数字人infinitetalk优化版一比一支持_2023308778170490881.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1961790376648622081.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1964962986404270082.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1968298118544535553.json, 音频生成/音频生成/infinitetalk优化版一比一音色数字人_1958195688268054529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_288
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Wan2.2文生视频4步极速版_2043282712538128386.json、视频生成/图生视频/Wan2.2 14B 首尾帧_1968955228710133762.json、视频生成/图生视频/Wan2.2_首尾帧视频_4步极速版_ComfyUI官方流_2017568784646672385.json、视频生成/图生视频/Wan2.2首尾帧工作流ComfyUI官方流_2050472487972032513.json、视频生成/图生视频/smooth首尾帧图生视频工作流_2067255627071709185.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/唱歌MTV数字人infinitetalk优化版_2016107471126929409.json、数字人/数字人/唱歌数字人infinitetalk优化版一比一支持_2050593317225807874.json、视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json、视频生成/图生视频/唱歌数字人infinitetalk优化版一比一支持_2023308778170490881.json、视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1961790376648622081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 8 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/7 个有
-- `WanFirstLastFrameToVideo` —— 6/7 个有
-- `ImageResize+` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
-- `easy showAnything` —— 3/7 个有
-- `Int` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `CM_IntToFloat` —— 1/7 个有
-- `EmptyHunyuanLatentVideo` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `IndexTTSRun` —— 7/8 个有
+- `MultiLinePromptIndex` —— 7/8 个有
+- `SaveAudioMP3` —— 7/8 个有
+- `GetNode` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `CR String To Number` —— 1/8 个有
+- `ImageBatchExtendWithOverlap` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `PixaromaLabel` —— 1/8 个有
+- `PixaromaResolution` —— 1/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RH_GetAudioDuration` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 57% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 7 | 75% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 57%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，7 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

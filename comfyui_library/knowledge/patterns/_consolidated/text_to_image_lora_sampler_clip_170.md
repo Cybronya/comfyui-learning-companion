@@ -2,85 +2,86 @@
 name: text_to_image_lora_sampler_clip_170
 type: Text To Image
 frequency: 10
-level: weak
-coverage: 0.878
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+level: moderate
+coverage: 0.6953
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, ResolutionSelector, SaveImage, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/千问2.1文生图_2103829231951241218.json, 图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json, 图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json, 图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json, 图片生成/文生图/千问2.1白底商品图｜商业摄影级纯白底｜电商主图批量生成_2104808797784072193.json, 图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json, 数字人/数字人/Qwen 2.1透明背景抠图，一键生成PNG透明图生图工具_2102899365059846146.json, 数字人/数字人/Qwen Image 2.1文生图处理生成工具_2102554303809544193.json, 视频生成/图生视频/Qwen_2.1透明背景抠图，一键生成PNG透明图生图工具_2104737318635659265.json, 视频生成/图生视频/Qwen_Image_2.1透明背景抠图，PNG通道输出图生图专用工作流_2105508227860492289.json]
+members: [图片生成/图生图/Krea2_turbo_t2i_2070347845965803522.json, 图片生成/图生图/Krea2_turbo_t2i_2071412507268444161.json, 图片生成/图生图/image_krea2_optimizer_workflow_2073588797480198146.json, 图片生成/图生图/image_krea2_tourbo_lora_t2i_edit_2073947059031461889.json, 图片生成/文生图/K2模特级生成_2089374387597307906.json, 图片生成/文生图/Krea2_turbo_t2i_2069610463943553025.json, 图片生成/文生图/krea2-t2i_2101830220889288705.json, 图片生成/文生图/opsv-krea2_t2i_2074897972374097921.json, 图片生成/文生图/opsv-krea2_t2i_2086450223353778178.json, 数字人/数字人/krea2_文生图_2074796223978106881.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_170
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/千问2.1文生图_2103829231951241218.json、图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json、图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json、图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json、图片生成/文生图/千问2.1白底商品图｜商业摄影级纯白底｜电商主图批量生成_2104808797784072193.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2_turbo_t2i_2070347845965803522.json、图片生成/图生图/Krea2_turbo_t2i_2071412507268444161.json、图片生成/图生图/image_krea2_optimizer_workflow_2073588797480198146.json、图片生成/图生图/image_krea2_tourbo_lora_t2i_edit_2073947059031461889.json、图片生成/文生图/K2模特级生成_2089374387597307906.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 8/10 个有
-- `PreviewImage` —— 7/10 个有
-- `孤海注释` —— 7/10 个有
-- `FastGroupsBypassSwitch` —— 6/10 个有
-- `ResolutionSelector` —— 6/10 个有
-- `TextGenerateLTX2Prompt` —— 5/10 个有
-- `LoadImage` —— 3/10 个有
-- `QwenImage21Cache` —— 3/10 个有
-- `TextCombinerTwo` —— 3/10 个有
-- `CM_FloatToInt` —— 2/10 个有
-- `EmptyImage` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `CR Text` —— 1/10 个有
-- `ComfySwitchNode` —— 1/10 个有
-- `ImageConcatMulti` —— 1/10 个有
-- `SaveImageAdvanced` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
+- `FaceDetailer` —— 6/10 个有
+- `SAMLoader` —— 6/10 个有
+- `UltralyticsDetectorProvider` —— 6/10 个有
+- `RTXVideoSuperResolution` —— 5/10 个有
+- `CustomCombo` —— 4/10 个有
+- `PrimitiveInt` —— 4/10 个有
+- `RegexExtract` —— 4/10 个有
+- `StringReplace` —— 4/10 个有
+- `RH_Translator` —— 3/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `ConditioningKrea2Rebalance` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `VAEEncode` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 10 | 0% |
-| 高度 | 80 | 80 - 1024 | 10 | 0% |
-| 采样步数 | 4 | 4 - 50 | 10 | 0% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 10 | 75% |
-| 采样算法 | er_sde | - | 10 | 90% |
-| 调度器 | beta | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 2048 | 1024 - 2048 | 10 | 69% |
+| 高度 | 2048 | 1024 - 2048 | 10 | 69% |
+| 采样步数 | 5 | 2 - 8 | 10 | 40% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 50% |
+| 调度器 | simple | - | 10 | 50% |
+| 重绘幅度 | 0.475 | 0.2 - 1 | 10 | 34% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 50，10 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，10 个样本
-- 采样算法 最常用 er_sde，10 个样本，一致性 90%
-- 调度器 最常用 beta，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（11/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 2048，观测区间 1024 - 2048，10 个样本
+- 高度 中位数 2048，观测区间 1024 - 2048，10 个样本
+- 采样步数 中位数 5，观测区间 2 - 8，10 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 50%
+- 调度器 最常用 simple，10 个样本，一致性 50%
+- 重绘幅度 中位数 0.475，观测区间 0.2 - 1，10 个样本，取值分散，一致性仅 34%
+- 高发问题（15/10 个样本）：Steps较低可能导致细节不足

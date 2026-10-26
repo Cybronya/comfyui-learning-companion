@@ -1,78 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_399
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8832
-common_nodes: [CLIPVisionLoader, ImageBatchMulti, ImageResizeKJv2, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.844333
+common_nodes: [AppendStringsToList, CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, SplineEditor, VHS_VideoCombine, WanVideoATITracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json, 视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json, 视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json]
+members: [视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json, 视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版ATI_1929748784421703681.json, 视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版_1928747025259511810.json, 视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json, 视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json, 视频生成/图生视频/万相ATI轨迹控制_1928843752012681217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_399
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json、视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json、视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json、视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版ATI_1929748784421703681.json、视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版_1928747025259511810.json、视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json、视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AppendStringsToList`
 - `CLIPVisionLoader`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `InvertMask`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
+- `WanVideoATITracks`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `easy imageRemBg` —— 4/5 个有
-- `CLIPLoader` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `SolidMask` —— 3/5 个有
-- `TextImageEncodeQwenVL` —— 3/5 个有
-- `WanVideoSetLoRAs` —— 3/5 个有
-- `DrawMaskOnImage` —— 2/5 个有
-- `ImageRemoveBackground+` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `TextInput_` —— 2/5 个有
-- `TransparentBGSession+` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DF_Text_Box` —— 1/5 个有
-- `ImagePadKJ` —— 1/5 个有
-- `MaskPreview` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
-- `math_calculate` —— 1/5 个有
-- `ttN seed` —— 1/5 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `CreateShapeImageOnPath` —— 3/6 个有
+- `ImageCompositeMasked` —— 3/6 个有
+- `Text Multiline` —— 3/6 个有
+- `Primitive integer [Crystools]` —— 2/6 个有
+- `WanVideoATITracksVisualize` —— 2/6 个有
+- `GetNode` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `ImageConcanate` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `WanVideoTeaCache` —— 1/6 个有
 
 ## 典型参数
 

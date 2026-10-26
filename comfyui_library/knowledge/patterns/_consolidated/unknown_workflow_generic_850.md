@@ -1,48 +1,33 @@
 ---
 name: unknown_workflow_generic_850
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.486667
-common_nodes: [DebugTensorShape+, Float, ImageScaleBy, InvertMask, JWImageResizeByShorterSide, JoinImageWithAlpha, LayerMask: BiRefNetUltra, LayerMask: MaskPreview, LoadImage, PreviewImage, ResizeMask, SaveImage, easy imageSize, easy showAnything]
+coverage: 0.91675
+common_nodes: [RH_Grok_Video3, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/4K以上超清大图多阶段抠图工作流V1_1952200847826563074.json, 图片生成/图生图/BenUltra 4K抠图v1_2066126877932220418.json, 图片生成/图生图/（能力层调用）抠图v1_2065999798217564162.json]
+members: [视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json, 视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json, 视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json, 视频生成/文生视频/全能视频X文生视频_1998220916691755010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_850
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/4K以上超清大图多阶段抠图工作流V1_1952200847826563074.json、图片生成/图生图/BenUltra 4K抠图v1_2066126877932220418.json、图片生成/图生图/（能力层调用）抠图v1_2065999798217564162.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json、视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json、视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json、视频生成/文生视频/全能视频X文生视频_1998220916691755010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DebugTensorShape+`
-- `Float`
-- `ImageScaleBy`
-- `InvertMask`
-- `JWImageResizeByShorterSide`
-- `JoinImageWithAlpha`
-- `LayerMask: BiRefNetUltra`
-- `LayerMask: MaskPreview`
-- `LoadImage`
-- `PreviewImage`
-- `ResizeMask`
-- `SaveImage`
-- `easy imageSize`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `RH_Grok_Video3`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: BenUltra` —— 2/3 个有
-- `LayerMask: LoadBenModel` —— 2/3 个有
-- `LayerMask: RmBgUltra V2` —— 2/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

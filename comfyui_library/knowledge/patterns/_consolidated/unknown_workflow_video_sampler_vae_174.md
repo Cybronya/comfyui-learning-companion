@@ -3,52 +3,42 @@ name: unknown_workflow_video_sampler_vae_174
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.631333
-common_nodes: [AIO_Preprocessor, AddLabel, GetNode, ImageResizeKJv2, Int, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 1
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json]
+members: [视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json, 视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json, 视频生成/文生视频/阿里万象文生视频_1894633919931920385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json、视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json、视频生成/文生视频/阿里万象文生视频_1894633919931920385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
-- `JjkText`
-- `LayerUtility: PurgeVRAM`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RIFE VFI`
-- `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `CR Upscale Image` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
 
 ## 典型参数
 

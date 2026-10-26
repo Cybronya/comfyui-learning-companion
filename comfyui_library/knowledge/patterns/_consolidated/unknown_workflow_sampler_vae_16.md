@@ -1,79 +1,78 @@
 ---
 name: unknown_workflow_sampler_vae_16
 type: Unknown Workflow
-frequency: 16
-level: strong
-coverage: 0.989688
-common_nodes: [EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+frequency: 19
+level: moderate
+coverage: 0.874579
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Aio V18 单图编辑 +双图编辑 +三图编辑 系列合集_2005540173163233281.json, 图片生成/图生图/Qwen-Edit 2511 Aio V16侧视图编辑_2004423373528723457.json, 图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑 本地解码_2004493674581032961.json, 图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑_2004242718605930498.json, 图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑_2005517645359312898.json, 图片生成/图生图/Qwen-Edit 2511 Aio V18单图编辑_2005365205876043778.json, 图片生成/图生图/图片转换反推出图_2005475558886699010.json, 图片生成/图生图/服装模特姿势一键换姿势同步迁移动作_2066127241259606018.json, 图片生成/图生图/（自用）Qwen Edit 2511 Aio V16编辑V3（姿势迁移-sex tacular）_2004244864671907841.json, 图片生成/图生图/（自用）Qwen Edit 2511 Aio V18编辑V2（姿势迁移-sex tacular）_2004960067831169026.json, 图片生成/图生图/（自用）Qwen-Edit Aio V4模型双图编辑(姿势迁移)_1977756644379611138.json, 图片生成/图生图/（自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481.json, 图片生成/图生图/（自用）Qwen-Edit Aio V5.2模型双图编辑(姿势迁移)_1982145260451184641.json, 图片生成/图生图/（自用）Qwen-Edit Aio V5模型双图编辑(姿势迁移)_1978123448637644801.json, 图片生成/图生图/🦖Qwen Edit 2511姿势迁移(可本地解码)_2008042497682968578.json, 视频生成/图生视频/服装模特姿势一键换姿势同步迁移动作（懒人版）_2066565201717194754.json]
+members: [数字人/数字人/最新LTX2.3导演台多分镜音频长视频生成工作流 V1.0_2056916977213599745.json, 视频生成/图生视频/AI短剧导演剪辑工作台_2063503218805665793.json, 视频生成/图生视频/LTX 2.3直出TVC广告 娱乐版_2055655934248144898.json, 视频生成/图生视频/LTX Director v2_2059487866354495489.json, 视频生成/图生视频/LTX Director 导演剪辑节点 无缝转场版_2056642345248055297.json, 视频生成/图生视频/LTX Director 导演剪辑节点 无缝转场版_2064317651400347649.json, 视频生成/图生视频/LTX Director导演工作流_2068599191001190402.json, 视频生成/图生视频/LTX-2.3-Director+OmniNFT_2058028747135217666.json, 视频生成/图生视频/LTX2.3 Director Multi 1 分钟长视频工作流_2061320175995150338.json, 视频生成/图生视频/LTX2.3 Director 导演工作台_2069688109993910273.json, 视频生成/图生视频/LTX2.3 导演台 长视频工作流V2.0_2061986767871500289.json, 视频生成/图生视频/LTX2.3 导演台1分钟_2062332561078181889.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性_2056198664774791169.json, 视频生成/图生视频/LTX2.3-LTX Director_导演分镜工作流-二次采样_2073044076907294721.json, 视频生成/图生视频/LTX2.3导演台_自然切镜 分镜提示词  时间轴可视化_2059896575970861058.json, 视频生成/图生视频/opsv- 导演台_2061748200293355521.json, 视频生成/图生视频/opsv- 导演台_2069360572709298178.json, 视频生成/图生视频/导演分镜 全能编辑自由控制_2056712653120294914.json, 视频生成/图生视频/导演分镜 全能编辑自由控制_2059095149111767041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_16
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Qwen Aio V18 单图编辑 +双图编辑 +三图编辑 系列合集_2005540173163233281.json、图片生成/图生图/Qwen-Edit 2511 Aio V16侧视图编辑_2004423373528723457.json、图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑 本地解码_2004493674581032961.json、图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑_2004242718605930498.json、图片生成/图生图/Qwen-Edit 2511 Aio V16单图编辑_2005517645359312898.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（数字人/数字人/最新LTX2.3导演台多分镜音频长视频生成工作流 V1.0_2056916977213599745.json、视频生成/图生视频/AI短剧导演剪辑工作台_2063503218805665793.json、视频生成/图生视频/LTX 2.3直出TVC广告 娱乐版_2055655934248144898.json、视频生成/图生视频/LTX Director v2_2059487866354495489.json、视频生成/图生视频/LTX Director 导演剪辑节点 无缝转场版_2056642345248055297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：19
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
-- `KSampler`
-- `LoadImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `VAEDecode`
+全部 19 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 15/16 个有
-- `GetImageSizeAndCount` —— 15/16 个有
-- `Text Multiline` —— 15/16 个有
-- `CLIPLoader` —— 10/16 个有
-- `ImageConcanate` —— 10/16 个有
-- `CR Prompt Text` —— 9/16 个有
-- `DWPreprocessor` —— 9/16 个有
-- `TT_img_enc` —— 9/16 个有
-- `VAELoader` —— 9/16 个有
-- `LoraLoaderModelOnly` —— 8/16 个有
-- `TT_img_enc_v2` —— 6/16 个有
-- `DuckHideNode` —— 4/16 个有
-- `UNETLoader` —— 4/16 个有
-- `ImageConcatMulti` —— 2/16 个有
-- `AddLabel` —— 1/16 个有
-- `easy anythingIndexSwitch` —— 1/16 个有
+- `LTX2SamplingPreviewOverride` —— 18/19 个有
+- `VAEDecode` —— 18/19 个有
+- `LatentUpscaleModelLoader` —— 17/19 个有
+- `LoraLoaderModelOnly` —— 15/19 个有
+- `LTXVLatentUpsampler` —— 14/19 个有
+- `UNETLoader` —— 14/19 个有
+- `VHS_VideoCombine` —— 12/19 个有
+- `CreateVideo` —— 10/19 个有
+- `SaveVideo` —— 10/19 个有
+- `CheckpointLoaderSimple` —— 8/19 个有
+- `PathchSageAttentionKJ` —— 8/19 个有
+- `easy cleanGpuUsed` —— 7/19 个有
+- `GetNode` —— 6/19 个有
+- `SetNode` —— 6/19 个有
+- `UnetLoaderGGUF` —— 6/19 个有
+- `Anything Everywhere` —— 5/19 个有
+- `AudioConcatenate` —— 3/19 个有
+- `ImageBatchMulti` —— 3/19 个有
+- `Lora Loader Stack (rgthree)` —— 3/19 个有
+- `solarL_SaveImagesToZip` —— 3/19 个有
+- `CR Prompt Text` —— 2/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/19 个有
+- `RH_LLMAPI_Pro_Node` —— 2/19 个有
+- `VAEDecodeTiled` —— 1/19 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 10 | 16 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 38% |
-| 调度器 | beta | - | 16 | 56% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
-| 宽度 | 768 | 768 - 1024 | 16 | 92% |
-| 高度 | 768 | 768 - 1920 | 16 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 24/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 10，16 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 38%
-- 调度器 最常用 beta，16 个样本，一致性 56%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 1024，16 个样本，取值集中（一致性 92%）
-- 高度 中位数 768，观测区间 768 - 1920，16 个样本
-- 高发问题（24/16 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

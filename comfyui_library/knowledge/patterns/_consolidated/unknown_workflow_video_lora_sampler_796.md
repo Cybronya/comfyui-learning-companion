@@ -3,77 +3,89 @@ name: unknown_workflow_video_lora_sampler_796
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.706
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, PreviewImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.6925
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Prompt Text, CastAnyToIntStringFloat, ConditioningZeroOut, FB_Qwen3TTSVoiceClone, GetImageSizeAndCount, INTConstant, ImageFromBatch+, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, RH_GetAudioDuration, SaveAudio, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoMagCache, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, WhisperSTT, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan-Animate动作表情迁移遮罩_1969402248658907137.json, 视频生成/图生视频/wan 2.2 Animate 视频动作迁移，人物替换，图生视频，脸部参考，基础用法简单演示_1970498046612172801.json]
+members: [数字人/数字人/03-10-15-WAN2.1-数字人-多参融合-skyreels+infineteTalk_2019304591753482241.json, 视频生成/图生视频/多参跨模态音画同步脸部参考图生视频V1（全自动版）_2017489851356028929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_796
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan-Animate动作表情迁移遮罩_1969402248658907137.json、视频生成/图生视频/wan 2.2 Animate 视频动作迁移，人物替换，图生视频，脸部参考，基础用法简单演示_1970498046612172801.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/03-10-15-WAN2.1-数字人-多参融合-skyreels+infineteTalk_2019304591753482241.json、视频生成/图生视频/多参跨模态音画同步脸部参考图生视频V1（全自动版）_2017489851356028929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CastAnyToIntStringFloat`
+- `ConditioningZeroOut`
+- `FB_Qwen3TTSVoiceClone`
 - `GetImageSizeAndCount`
-- `ImageCropByMaskAndResize`
+- `INTConstant`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PreviewImage`
-- `Sam2Segmentation`
+- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `RH_GetAudioDuration`
+- `SaveAudio`
 - `SetNode`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoMagCache`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `WhisperSTT`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `Florence2toCoordinates` —— 1/2 个有
-- `GetImageSize+` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
 - `GetNode` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `Mix Color By Mask` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `RMBG` —— 1/2 个有
-- `Switch image [Crystools]` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 3 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | dpmpp_sde | - | 2 | 100% |
+| 重绘幅度 | normal | - | 2 | 100% |
 
 ## 常见问题
 
@@ -81,4 +93,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，2 个样本，一致性 100%
+- 重绘幅度 最常用 normal，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

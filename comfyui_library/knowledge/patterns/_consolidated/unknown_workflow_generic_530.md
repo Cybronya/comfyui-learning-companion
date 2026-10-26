@@ -3,33 +3,29 @@ name: unknown_workflow_generic_530
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8934
-common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
+coverage: 0.86
+common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json, 图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_530
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json、图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json、图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveImage`
-- `Seedance_Config`
-- `Zhenzhen_Image_G25_Lowprice`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/5 个有
+- `ByteDance2ReferenceNodeV2`
+- `LoadImage`
+- `SaveVideo`
 
 ## 典型参数
 

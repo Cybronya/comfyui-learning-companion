@@ -3,39 +3,39 @@ name: unknown_workflow_generic_1348
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.897
-common_nodes: [Image Comparer (rgthree), JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2, SeedVR2BlockSwap, easy int, 忽略多组孤海]
+coverage: 0.9545
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, ImageGenResolutionFromImage, LayerUtility: ColorImage, LayerUtility: ColorPicker, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2&PRO&全能图片G2_2089691221101998081.json, 图片生成/文生图/GP·T2.5&全能图片V2&GP·T2_1900092946795094018.json]
+members: [图片生成/图生图/BRIA RMBG一键抠图_抠像_去背景-透明背景_2020007942497509377.json, 图片生成/图生图/BRIA抠像_2052677009523912705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1348
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2&PRO&全能图片G2_2089691221101998081.json、图片生成/文生图/GP·T2.5&全能图片V2&GP·T2_1900092946795094018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/BRIA RMBG一键抠图_抠像_去背景-透明背景_2020007942497509377.json、图片生成/图生图/BRIA抠像_2052677009523912705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `JjkText`
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `ImageGenResolutionFromImage`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ColorPicker`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `easy int`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
+- `Image Overlay` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

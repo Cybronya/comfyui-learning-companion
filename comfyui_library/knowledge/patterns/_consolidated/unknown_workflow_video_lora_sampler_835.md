@@ -3,71 +3,80 @@ name: unknown_workflow_video_lora_sampler_835
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.52
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CreateCFGScheduleFloatList, DF_Int_to_Float, DownloadAndLoadWav2VecModel, GetNode, INTConstant, JWImageResize, LayerUtility: ImageScaleByAspectRatio, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, PreviewAudio, PreviewImage, RH_GetAudioDuration, SetNode, ShowAnything|Mie, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.541
+common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, FloatConstant, GIMMVFI_interpolate, GetNode, INTConstant, ImageBatchMulti, ImageCrop, ImageResizeKJv2, ImpactMakeAnyList, ImpactMakeImageList, ImpactSelectNthItemOfAnyList, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, PreviewAny, PreviewImage, SetNode, SolidMask, SomethingToString, StringConstantMultiline, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy promptLine, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan 21 Multi_InfiniteTalk 数字人 对口型_2044768518683500546.json, 视频生成/图生视频/wanvideo fantasy talking 对口型_2045415712142925826.json]
+members: [视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json, 视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_835
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan 21 Multi_InfiniteTalk 数字人 对口型_2044768518683500546.json、视频生成/图生视频/wanvideo fantasy talking 对口型_2045415712142925826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json、视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+- `AILab_Preview`
+- `BiRefNetRMBG`
+- `CLIPLoader`
 - `CLIPVisionLoader`
-- `CreateCFGScheduleFloatList`
-- `DF_Int_to_Float`
-- `DownloadAndLoadWav2VecModel`
+- `Display Int (rgthree)`
+- `DownloadAndLoadGIMMVFIModel`
+- `FloatConstant`
+- `GIMMVFI_interpolate`
 - `GetNode`
 - `INTConstant`
-- `JWImageResize`
-- `LayerUtility: ImageScaleByAspectRatio`
-- `LoadAudio`
+- `ImageBatchMulti`
+- `ImageCrop`
+- `ImageResizeKJv2`
+- `ImpactMakeAnyList`
+- `ImpactMakeImageList`
+- `ImpactSelectNthItemOfAnyList`
+- `InvertMask`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewAudio`
+- `MaskBatchMulti`
+- `PreviewAny`
 - `PreviewImage`
-- `RH_GetAudioDuration`
 - `SetNode`
-- `ShowAnything|Mie`
-- `SimpleMath+`
+- `SolidMask`
+- `SomethingToString`
+- `StringConstantMultiline`
+- `TextImageEncodeQwenVL`
 - `VHS_VideoCombine`
+- `WanVideoAddBindweaveEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelect`
+- `WanVideoEncodeLatentBatch`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy lengthAnything`
+- `easy promptLine`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `FantasyTalkingModelLoader` —— 1/2 个有
-- `FantasyTalkingWav2VecEmbeds` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `MultiTalkModelLoader` —— 1/2 个有
-- `MultiTalkWav2VecEmbeds` —— 1/2 个有
-- `VHS_DuplicateImages` —— 1/2 个有
-- `WanVideoEncode` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
-- `WanVideoUni3C_embeds` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `ResizeAndPadImage` —— 1/2 个有
+- `easy imageListToImageBatch` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
 
 ## 典型参数
 

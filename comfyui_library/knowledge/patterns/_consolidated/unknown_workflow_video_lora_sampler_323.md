@@ -1,64 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_323
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.69
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.989375
+common_nodes: [CLIPVisionLoader, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/全自动四宫格LTX2.3导演台_2068160315895934977.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2069405147431792641.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2074632138728763394.json, 视频生成/文生视频/万象+rh六宫格横屏1280导演台自动化工作流（固定15秒）_2069737985674928129.json, 视频生成/文生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2066856869905395714.json, 视频生成/文生视频/万象+rh四宫格竖屏1280导演台自动化工作流(固定12秒插件0707）_2074626267659456513.json, 视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json]
+members: [视频生成/图生视频/最强逼真版图生视频lightx2_1935209763875508226.json, 视频生成/图生视频/角色_物品360度旋转_1946542261884870657.json, 视频生成/图生视频/🦖AniWan 变成方块人_1945368042832371714.json, 视频生成/图生视频/🦖AniWan版首尾帧_1945027007760752641.json, 视频生成/图生视频/🦖AniWan版高质量高动态图生视频_1945016400298827777.json, 视频生成/图生视频/🦖极速展翅_1943493844422062081.json, 视频生成/图生视频/🦖极速展翅_1977981192005976065.json, 视频生成/图生视频/🦖极速版万物消散_1946134674865614850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_323
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/全自动四宫格LTX2.3导演台_2068160315895934977.json、视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2069405147431792641.json、视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2074632138728763394.json、视频生成/文生视频/万象+rh六宫格横屏1280导演台自动化工作流（固定15秒）_2069737985674928129.json、视频生成/文生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2066856869905395714.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/最强逼真版图生视频lightx2_1935209763875508226.json、视频生成/图生视频/角色_物品360度旋转_1946542261884870657.json、视频生成/图生视频/🦖AniWan 变成方块人_1945368042832371714.json、视频生成/图生视频/🦖AniWan版首尾帧_1945027007760752641.json、视频生成/图生视频/🦖AniWan版高质量高动态图生视频_1945016400298827777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `TTResolutionSelector` —— 6/7 个有
-- `LoadVideo` —— 5/7 个有
-- `Text Multiline` —— 5/7 个有
-- `SF-LTXDirectorGuide` —— 4/7 个有
-- `SF-LTXGridDirector` —— 4/7 个有
-- `CS-LTXDirectorGuide` —— 3/7 个有
-- `CS-LTXGridDirector` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `ImpactSwitch` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `WanVideoExperimentalArgs` —— 7/8 个有
+- `WanVideoFreeInitArgs` —— 7/8 个有
+- `WanVideoSLG` —— 7/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `ImageResize+` —— 4/8 个有
+- `MathExpression|pysssss` —— 4/8 个有
+- `WanVideoTeaCache` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `WanVideoVRAMManagement` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `ImageResizeKJ` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `WanVideoEasyCache` —— 1/8 个有
+- `WanVideoLoraSelectMulti` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 

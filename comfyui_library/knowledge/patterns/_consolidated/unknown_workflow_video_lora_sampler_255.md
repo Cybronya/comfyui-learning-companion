@@ -1,73 +1,102 @@
 ---
 name: unknown_workflow_video_lora_sampler_255
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.926375
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Unified, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.619333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy imageRemBg]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json, 视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json, 视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json, 视频生成/文生视频/minimaxH3全能黑科技工作流（10s只需5分钟）_2098047284964585473.json, 视频生成/文生视频/minimaxH3单采_双采工作流_2100606405177856002.json, 视频生成/文生视频/【变态加速高清版】MinMaxH3 全能参考-推荐_2098434067468476417.json]
+members: [视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json, 视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json, 视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json, 视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json, 视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json, 视频生成/图生视频/SCAIL2官方工作流_2067918393696669697.json, 视频生成/图生视频/Scail2动作舞蹈模仿！长视频生成！_2082692772032761857.json, 视频生成/图生视频/scail2社区官流（多参）动作替换 动作迁移_2073534746168217601.json, 视频生成/图生视频/短剧转绘——多人对话转绘scail2动作迁移_1995774153481392130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_255
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json、视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json、视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json、视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json、视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json、视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json、视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `KSamplerSelect`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Unified`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 7/8 个有
-- `MiniMaxChunkFeedForward` —— 6/8 个有
-- `MiniMaxLowVRAMAttention` —— 6/8 个有
-- `VAEDecode` —— 6/8 个有
-- `VAEDecodeAudio` —— 6/8 个有
-- `H3SigmaRefiner` —— 5/8 个有
-- `MiniMaxH3AVDecodeT8` —— 5/8 个有
-- `ConditioningZeroOut` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `SelfLiftH3Sampler` —— 3/8 个有
-- `SetNode` —— 3/8 个有
-- `VHS_SelectImages` —— 3/8 个有
-- `MemoryCleaner` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `ComfyMathExpression` —— 1/8 个有
-- `Float` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `ManualSigmas` —— 1/8 个有
+- `PrimitiveBoolean` —— 8/9 个有
+- `VHS_VideoInfoLoaded` —— 8/9 个有
+- `WanSCAILToVideo` —— 8/9 个有
+- `easy int` —— 8/9 个有
+- `ImageFromBatch` —— 7/9 个有
+- `SetNode` —— 7/9 个有
+- `VAEDecodeTiled` —— 7/9 个有
+- `WanContextWindowsManual` —— 7/9 个有
+- `GetNode` —— 6/9 个有
+- `PreviewImage` —— 6/9 个有
+- `VAEDecode` —— 6/9 个有
+- `easy getNode` —— 6/9 个有
+- `easy setNode` —— 6/9 个有
+- `easy showAnything` —— 6/9 个有
+- `ImpactConditionalBranch` —— 5/9 个有
+- `MuyeTextEditOutput` —— 5/9 个有
+- `Fast Groups Muter (rgthree)` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `easy float` —— 3/9 个有
+- `SimpleMath+` —— 2/9 个有
+- `ComfyMathExpression` —— 1/9 个有
+- `ComfyNumberConvert` —— 1/9 个有
+- `ComfySwitchNode` —— 1/9 个有
+- `CompressImages` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `ImageBatchMulti` —— 1/9 个有
+- `ImageFromBatch+` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `RTXVideoSuperResolution` —— 1/9 个有
+- `VHS_SelectFilename` —— 1/9 个有
+- `WanSCAILContextWindows` —— 1/9 个有
+- `WanSCAILToVideoMultiRef` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 8 | 9 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 3/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 8，9 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

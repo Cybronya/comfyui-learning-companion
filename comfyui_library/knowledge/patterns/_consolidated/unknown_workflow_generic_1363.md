@@ -3,38 +3,41 @@ name: unknown_workflow_generic_1363
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.799
-common_nodes: [LoadImage, PreviewAny, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage, Text Multiline]
+coverage: 0.383
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, MuyeTextEditOutput, PlaySound|pysssss, PreviewImage, RH_RhartImageG25OfficialTokenSunburstEdit, RH_RhartImageG25OfficialTokenSunburstTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage, 孤海注释]
 problems: []
 missing: []
-members: [图片生成/图生图/参考动作2_2064279257899159553.json, 图片生成/图生图/指定背景替换_2063893824946139137.json]
+members: [图片生成/图生图/GI2.5_Sunburst文生图+图生图集合流_2100553385689833474.json, 图片生成/文生图/GI2.5 _ Sunburst文生图+图生图集合流_2097679578172059650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1363
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考动作2_2064279257899159553.json、图片生成/图生图/指定背景替换_2063893824946139137.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GI2.5_Sunburst文生图+图生图集合流_2100553385689833474.json、图片生成/文生图/GI2.5 _ Sunburst文生图+图生图集合流_2097679578172059650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PreviewAny`
-- `RHLLMChatNode`
-- `RH_RhartImageG2OfficialImageToImage`
+- `MuyeTextEditOutput`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenSunburstEdit`
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
 - `SaveImage`
-- `Text Multiline`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ResizeAndPadImage` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
 
 ## 典型参数
 

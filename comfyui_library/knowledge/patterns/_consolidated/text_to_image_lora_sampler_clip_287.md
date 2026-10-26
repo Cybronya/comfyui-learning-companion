@@ -3,40 +3,37 @@ name: text_to_image_lora_sampler_clip_287
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.874143
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.829286
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, ReferenceMultiLatent, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/文生视频直出｜MiniMax H3官方工作流高清生成_2090155730023305218.json, 视频生成/文生视频/文生视频直出｜MiniMax H3高清一键生成_2089797615142658050.json, 视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速_2089249506813636609.json, 视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速刘神_2094117560072626177.json, 视频生成/文生视频/最新8步增速5分钟出10秒｜Minimax H3文生视频+视频放大_2089036367534845953.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色一致性表演生成_2093781650823012354.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色表演一致性_2093447912754860034.json]
+members: [图片生成/图生图/Flux 3_Image_Klein开源版多图参考生图｜局部重绘也拿捏_2111302012662018049.json, 图片生成/图生图/Flux3 Image Klein distill加速，t2i图生图双用_2111564003540557826.json, 图片生成/图生图/Flux3 Klein bf16 i2i蒸馏16步 官方原节点图生图工具_2113760127215030273.json, 图片生成/图生图/Flux3 Klein图生图，场景加人物与商品换背景双能力_2112277741444886529.json, 图片生成/图生图/Flux3 Klein局部编辑标准版 图生图标准流程工具_2114114798328832001.json, 图片生成/图生图/Flux3_Klein_i2i图生图｜场景添加人物商品换背景｜一键智能编辑出图_2112044474250653697.json, 图片生成/图生图/flux3 klein bf16 i2i蒸馏16步｜官方原节点图生图稳定版_2113521046228914177.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_287
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/文生视频直出｜MiniMax H3官方工作流高清生成_2090155730023305218.json、视频生成/文生视频/文生视频直出｜MiniMax H3高清一键生成_2089797615142658050.json、视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速_2089249506813636609.json、视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速刘神_2094117560072626177.json、视频生成/文生视频/最新8步增速5分钟出10秒｜Minimax H3文生视频+视频放大_2089036367534845953.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux 3_Image_Klein开源版多图参考生图｜局部重绘也拿捏_2111302012662018049.json、图片生成/图生图/Flux3 Image Klein distill加速，t2i图生图双用_2111564003540557826.json、图片生成/图生图/Flux3 Klein bf16 i2i蒸馏16步 官方原节点图生图工具_2113760127215030273.json、图片生成/图生图/Flux3 Klein图生图，场景加人物与商品换背景双能力_2112277741444886529.json、图片生成/图生图/Flux3 Klein局部编辑标准版 图生图标准流程工具_2114114798328832001.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PrimitiveStringMultiline`
+- `ReferenceMultiLatent`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -44,21 +41,26 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 6/7 个有
-- `KSamplerSelect` —— 6/7 个有
-- `VAEDecodeAudio` —— 6/7 个有
-- `CR Text` —— 4/7 个有
-- `CreateVideo` —— 4/7 个有
-- `SaveVideo` —— 4/7 个有
-- `LoraLoaderBypassModelOnly` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `PainterVRAM` —— 2/7 个有
-- `GetNode` —— 1/7 个有
-- `MiniMaxH3AVDecodeT8` —— 1/7 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/7 个有
-- `RunningHub Deepcleaner` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `BatchImagesNode` —— 6/7 个有
+- `ComfySwitchNode` —— 6/7 个有
+- `PreviewAny` —— 6/7 个有
+- `TextGenerate` —— 6/7 个有
+- `ResolutionSelector` —— 5/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `GetImageSize` —— 4/7 个有
+- `ImageScaleToTotalPixels` —— 4/7 个有
+- `ModelSamplingFlux` —— 4/7 个有
+- `PrimitiveFloat` —— 4/7 个有
+- `RepeatLatentBatch` —— 4/7 个有
+- `StringFormat` —— 4/7 个有
+- `CreateBoundingBoxes` —— 3/7 个有
+- `Flux3LayoutPrompt` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `Seed (rgthree)` —— 2/7 个有
+- `StringConcatenate` —— 2/7 个有
+- `StringContains` —— 2/7 个有
+- `StringTrim` —— 2/7 个有
+- `PreviewImage` —— 1/7 个有
 
 ## 典型参数
 

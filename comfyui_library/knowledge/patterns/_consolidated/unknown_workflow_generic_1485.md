@@ -3,37 +3,36 @@ name: unknown_workflow_generic_1485
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.903
-common_nodes: [CR Text, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, SaveImage, easy saveText]
+coverage: 0.882
+common_nodes: [CR Text, CR Text Concatenate, CR Text Replace, Display Any (rgthree), ImageTile+, LoadImage, PreviewImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/【4K _ 0.1】动作故事分镜设计【官方低价渠道】_2053407315327504385.json, 图片生成/文生图/一句话生成时尚大片广告海报_2029133261347229698.json]
+members: [图片生成/图生图/分镜九宫格_2025181878906523650.json, 图片生成/文生图/分镜九宫格三段式_2027341114012864513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1485
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【4K _ 0.1】动作故事分镜设计【官方低价渠道】_2053407315327504385.json、图片生成/文生图/一句话生成时尚大片广告海报_2029133261347229698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/分镜九宫格_2025181878906523650.json、图片生成/文生图/分镜九宫格三段式_2027341114012864513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `Display Any (rgthree)`
+- `ImageTile+`
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `easy saveText`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,28 +3,27 @@ name: unknown_workflow_upscale_vae_34
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7015
-common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.8495
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/sim_Z-Seed 人像修复放大_2093662606916673537.json, 图片生成/图生图/▶SeedVR2无损高清放大-新_2011468531019292673.json, 图片生成/图生图/▶SeedVR2无损高清放大-新_二次放大_2048366313147469826.json, 图片生成/图生图/▶SeedVR2无损高清放大-新（高清换为超清）_2019944447726854146.json]
+members: [图片生成/图生图/SeedVR2简单放大_2101433189830057985.json, 图片生成/图生图/Seedvr2高清工作流_2055454834110812162.json, 图片生成/图生图/seedVR2图片高清放大_2032355636960305154.json, 图片生成/图生图/seedvr2 放大_2074418010059788289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/sim_Z-Seed 人像修复放大_2093662606916673537.json、图片生成/图生图/▶SeedVR2无损高清放大-新_2011468531019292673.json、图片生成/图生图/▶SeedVR2无损高清放大-新_二次放大_2048366313147469826.json、图片生成/图生图/▶SeedVR2无损高清放大-新（高清换为超清）_2019944447726854146.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2简单放大_2101433189830057985.json、图片生成/图生图/Seedvr2高清工作流_2055454834110812162.json、图片生成/图生图/seedVR2图片高清放大_2032355636960305154.json、图片生成/图生图/seedvr2 放大_2074418010059788289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `LoadImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
@@ -32,14 +31,9 @@ source: knowledge_consolidation
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `CompressImages` —— 1/4 个有
-- `DuckHideNode` —— 1/4 个有
-- `HAIGC_LoadImagesFromZip` —— 1/4 个有
-- `HAIGC_SaveImagesToZip` —— 1/4 个有
-- `ImageSharpenKJ` —— 1/4 个有
-- `PurgeVRAM_UTK` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `ZML_DualInteger` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

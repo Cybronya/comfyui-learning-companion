@@ -3,36 +3,40 @@ name: unknown_workflow_generic_1056
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.791333
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 0.827
+common_nodes: [CR Text, LoadAudio, LoadImage, RHLLMChatNode, RH_RhartImageNG31FlashImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/API版Minimax H3多模态参考视频生成2k高清视频多图片参考生视频_2088281955417804801.json, 视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json, 视频生成/文生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json]
+members: [图片生成/图生图/网红爱人突破屏幕视频一键生成_2074462717573943298.json, 视频生成/图生视频/网红恋人破壁出镜（视频一键生成）_2078737060462161921.json, 视频生成/图生视频/网红爱人突破屏幕视频一键生成_2074036972875763714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1056
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/API版Minimax H3多模态参考视频生成2k高清视频多图片参考生视频_2088281955417804801.json、视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json、视频生成/文生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/网红爱人突破屏幕视频一键生成_2074462717573943298.json、视频生成/图生视频/网红恋人破壁出镜（视频一键生成）_2078737060462161921.json、视频生成/图生视频/网红爱人突破屏幕视频一键生成_2074036972875763714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `RHLLMChatNode`
+- `RH_RhartImageNG31FlashImageToImage`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `DapaoSafeSaveImage` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 - `孤海注释` —— 1/3 个有
 
 ## 典型参数

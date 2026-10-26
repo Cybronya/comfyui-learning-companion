@@ -3,37 +3,34 @@ name: unknown_workflow_generic_969
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.901
-common_nodes: [ColorMatch, ImageConcanate, ImageScaleBy, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PrimitiveFloat, SaveImage, SeedVR2, easy cleanGpuUsed]
+coverage: 1
+common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/高清修复+超清放大_1959455054111649793.json, 图片生成/图生图/高清修复+超清放大_1962145972216381442.json, 图片生成/文生图/高清修复（最新）_1943208890689609730.json]
+members: [图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json, 图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json, 图片生成/文生图/longcat-image-edit_1998293505271300098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_969
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/高清修复+超清放大_1959455054111649793.json、图片生成/图生图/高清修复+超清放大_1962145972216381442.json、图片生成/文生图/高清修复（最新）_1943208890689609730.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json、图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json、图片生成/文生图/longcat-image-edit_1998293505271300098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ColorMatch`
-- `ImageConcanate`
-- `ImageScaleBy`
-- `LayerUtility: ImageMaskScaleAs`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PrimitiveFloat`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
-- `SeedVR2`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Label (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,66 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_514
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.721
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CR Prompt Text, ColorMatch, DWPreprocessor, GetImageRangeFromBatch, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewAny, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch]
+coverage: 0.8802
+common_nodes: [CLIPVisionLoader, ImageResize+, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Captioner, RH_Translator, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V头部姿势控制数字人V2_1962391778080985089.json]
+members: [视频生成/图生视频/批次极速图生视频_1946537681393184769.json, 视频生成/图生视频/批次极速图生视频_2039519958744436737.json, 视频生成/图生视频/极速图生视频_1943565491653013505.json, 视频生成/图生视频/漫剧视频生成，图生视频，3-5分钟成片，文字控制动作剧情走向_2023381607255642114.json, 视频生成/文生视频/图生视频（极速版）_1952679298441408514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_514
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json、视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json、视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json、视频生成/图生视频/（KJ版）Wan2.2 S2V头部姿势控制数字人V2_1962391778080985089.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/批次极速图生视频_1946537681393184769.json、视频生成/图生视频/批次极速图生视频_2039519958744436737.json、视频生成/图生视频/极速图生视频_1943565491653013505.json、视频生成/图生视频/漫剧视频生成，图生视频，3-5分钟成片，文字控制动作剧情走向_2023381607255642114.json、视频生成/文生视频/图生视频（极速版）_1952679298441408514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CR Prompt Text`
-- `ColorMatch`
-- `DWPreprocessor`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResize+`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PreviewAny`
-- `VHS_LoadVideo`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_Captioner`
+- `RH_Translator`
+- `TextCombinerTwo`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/4 个有
-- `GetImageSizeAndCount` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `WanVideoContextOptions` —— 3/4 个有
-- `ACE_AudioCrop` —— 1/4 个有
+- `ImpactSwitch` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `Bjornulf_ShowInt` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `RHBatchImages:` —— 2/5 个有
+- `RHExtractImage` —— 2/5 个有
+- `RHUploadZip` —— 2/5 个有
+- `easy forLoopEnd` —— 2/5 个有
+- `easy forLoopStart` —— 2/5 个有
+- `easy imageCount` —— 2/5 个有
 
 ## 典型参数
 

@@ -3,74 +3,72 @@ name: unknown_workflow_lora_sampler_unet_230
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.870667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.636
+common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json, 视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json, 视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json]
+members: [图片生成/图生图/千问Qwen-Edit2509 双图融合_1999735236688740354.json, 图片生成/图生图/千问Qwen-Edit2509多图融合-多实例1.0-test_2000486442172284930.json, 图片生成/文生图/观行➡️qwen_image_edit_plus人物换装_1974486765111218177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_230
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json、视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json、视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问Qwen-Edit2509 双图融合_1999735236688740354.json、图片生成/图生图/千问Qwen-Edit2509多图融合-多实例1.0-test_2000486442172284930.json、图片生成/文生图/观行➡️qwen_image_edit_plus人物换装_1974486765111218177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LoadAudio`
+- `EmptySD3LatentImage`
+- `GetNode`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioInfoNode` —— 2/3 个有
-- `MiniMaxH3MotionContext` —— 2/3 个有
-- `MiniMaxH3MotionContextLoadLatent` —— 2/3 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 2/3 个有
-- `MiniMaxH3MotionContextTrim` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `VAEDecodeAudio` —— 2/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `H3SigmaRefiner` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `MiniMaxH3SigmaShift` —— 1/3 个有
-- `MmuuaiGroupBypass` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CR Seed` —— 2/3 个有
+- `FluxKontextImageScale` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy clearCacheAll` —— 2/3 个有
+- `GetImageSize+` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 4 - 30 | 3 | 43% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 3 | 53% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 4 - 30，3 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

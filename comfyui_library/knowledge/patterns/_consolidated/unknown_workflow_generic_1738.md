@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1738
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadAudio, SaveAudioMP3, Text Multiline]
+coverage: 0.732
+common_nodes: [JjkText, RH_Veo3_Text2Video, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/荒哥影视解说克隆配音专用_1978289352662999041.json, 音频生成/音频生成/长语音克隆_2030936664209625089.json]
+members: [视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json, 视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1738
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/荒哥影视解说克隆配音专用_1978289352662999041.json、音频生成/音频生成/长语音克隆_2030936664209625089.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json、视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudioMP3`
-- `Text Multiline`
+- `JjkText`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 1/2 个有
-- `VibeVoiceSingleSpeakerNode` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `TextCombinerTwo` —— 1/2 个有
 
 ## 典型参数
 

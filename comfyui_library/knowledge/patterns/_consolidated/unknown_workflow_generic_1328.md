@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [AnyBooleanSwitch, CR Text, LoadImage, SaveImage, easy boolean]
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedance2_0_Asset, Comfly_api_set, LoadImage, SaveImage, ShellAgentPluginOutputText, ShowAnything|Mie]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json, 图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json]
+members: [图片生成/反推提示词/（图像资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2042637519245807617.json, 图片生成/反推提示词/（音频资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2043143353923014658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1328
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json、图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/（图像资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2042637519245807617.json、图片生成/反推提示词/（音频资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2043143353923014658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,15 +23,17 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AnyBooleanSwitch`
-- `CR Text`
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedance2_0_Asset`
+- `Comfly_api_set`
 - `LoadImage`
 - `SaveImage`
-- `easy boolean`
+- `ShellAgentPluginOutputText`
+- `ShowAnything|Mie`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
 
 ## 典型参数
 

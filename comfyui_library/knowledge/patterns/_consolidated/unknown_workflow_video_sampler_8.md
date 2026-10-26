@@ -1,42 +1,94 @@
 ---
 name: unknown_workflow_video_sampler_8
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.989667
-common_nodes: [CM_FloatToInt, GetVideoComponents, LoadImage, LoadVideo, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine, easy imageCount]
+coverage: 0.64175
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, INTConstant, ImageCropByMaskAndResize, ImageResizeKJ, LoadImage, PixelPerfectResolution, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached, easy anythingIndexSwitch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json, 视频生成/图生视频/DreamID-V视频换脸_2009239491415908354.json, 视频生成/图生视频/DreamID-V视频换脸_2009449357975756802.json, 视频生成/图生视频/DreamID-V视频换脸_2010268068085239809.json, 视频生成/图生视频/DreamID-V视频换脸_2029470335698997249.json, 视频生成/图生视频/视频换脸_2013142770868822018.json]
+members: [视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json, 视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json, 视频生成/图生视频/Wan2.2 Animate（动作迁移稳定版）长视频循环48G_1999709871861792770.json, 视频生成/图生视频/Wan2.2-吸入漫画-后半部分工作流2_2011786789937221634.json, 视频生成/图生视频/最新视频换人技术！！！！-Wan Animate_1976525741590450177.json, 视频生成/图生视频/老赌替换工作流mm_1971065537902059521.json, 视频生成/图生视频/西洲 CHARM-角色替换+动作迁移+面部表情_1975054171986595841.json, 视频生成/图生视频/角色替换+动作迁移+面部表情-WanAnimate_1983153039076958210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json、视频生成/图生视频/DreamID-V视频换脸_2009239491415908354.json、视频生成/图生视频/DreamID-V视频换脸_2009449357975756802.json、视频生成/图生视频/DreamID-V视频换脸_2010268068085239809.json、视频生成/图生视频/DreamID-V视频换脸_2029470335698997249.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json、视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json、视频生成/图生视频/Wan2.2 Animate（动作迁移稳定版）长视频循环48G_1999709871861792770.json、视频生成/图生视频/Wan2.2-吸入漫画-后半部分工作流2_2011786789937221634.json、视频生成/图生视频/最新视频换人技术！！！！-Wan Animate_1976525741590450177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CM_FloatToInt`
-- `GetVideoComponents`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `INTConstant`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJ`
 - `LoadImage`
-- `LoadVideo`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
+- `PixelPerfectResolution`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
+- `ShowText|pysssss`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy imageCount`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `RepeatImageBatch` —— 2/6 个有
+- `BlockifyMask` —— 7/8 个有
+- `DownloadAndLoadFlorence2Model` —— 7/8 个有
+- `DownloadAndLoadSAM2Model` —— 7/8 个有
+- `DrawMaskOnImage` —— 7/8 个有
+- `Florence2Run` —— 7/8 个有
+- `Florence2toCoordinates` —— 7/8 个有
+- `GrowMask` —— 7/8 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `ImpactSwitch` —— 7/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
+- `PrimitiveString` —— 7/8 个有
+- `RH_Translator` —— 7/8 个有
+- `RMBG` —— 7/8 个有
+- `Sam2Segmentation` —— 7/8 个有
+- `SimpleMath+` —— 7/8 个有
+- `WanVideoSetBlockSwap` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `GetImageSizeAndCount` —— 6/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `WanVideoContextOptions` —— 6/8 个有
+- `PreviewImage` —— 5/8 个有
+- `PointsEditor` —— 4/8 个有
+- `ImageFromBatch` —— 2/8 个有
+- `WanVideoSLG` —— 2/8 个有
+- `WanVideoTeaCache` —— 2/8 个有
+- `BatchCount+` —— 1/8 个有
+- `If ANY execute A else B` —— 1/8 个有
+- `IfInnerExecute` —— 1/8 个有
+- `ImageBatchMulti` —— 1/8 个有
+- `OnnxDetectionModelLoader` —— 1/8 个有
+- `PoseAndFaceDetection` —— 1/8 个有
+- `RepeatImageBatch` —— 1/8 个有
+- `easy batchAnything` —— 1/8 个有
+- `easy compare` —— 1/8 个有
+- `easy forLoopEnd` —— 1/8 个有
+- `easy forLoopStart` —— 1/8 个有
+- `easy ifElse` —— 1/8 个有
+- `easy int` —— 1/8 个有
+- `easy mathInt` —— 1/8 个有
 
 ## 典型参数
 

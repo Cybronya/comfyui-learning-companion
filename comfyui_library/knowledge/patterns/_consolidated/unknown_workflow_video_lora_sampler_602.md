@@ -1,55 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_602
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.638
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, ComfyMathExpression, GetImageSize, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.784
+common_nodes: [DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3 视频图片参考vfx edit Lora 流 taomate加速_2111436148177457153.json, 视频生成/图生视频/H3 视频图片参考换脸Lora 流 taomate加速_2111425514496937985.json, 视频生成/图生视频/H3+视频角色替换+Lora+真实人物加速流_2111443719965732865.json]
+members: [视频生成/图生视频/翻跟头踢再过头万相图生视60---------_1942408642337386497.json, 视频生成/图生视频/跳连踢头万相图生视68_1942291396009332737.json, 视频生成/图生视频/踢飞001万相图生视60_1942258694929453057.json, 视频生成/文生视频/wan2.1 美女模特环绕360镜头_1948183432305225730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_602
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3 视频图片参考vfx edit Lora 流 taomate加速_2111436148177457153.json、视频生成/图生视频/H3 视频图片参考换脸Lora 流 taomate加速_2111425514496937985.json、视频生成/图生视频/H3+视频角色替换+Lora+真实人物加速流_2111443719965732865.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/翻跟头踢再过头万相图生视60---------_1942408642337386497.json、视频生成/图生视频/跳连踢头万相图生视68_1942291396009332737.json、视频生成/图生视频/踢飞001万相图生视60_1942258694929453057.json、视频生成/文生视频/wan2.1 美女模特环绕360镜头_1948183432305225730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImageSize`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 4 个 workflow 都包含：
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GIMMVFI_interpolate`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `VHS_LoadVideoFFmpeg` —— 1/3 个有
+- `Int` —— 3/4 个有
+- `LatentSyncNode` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `VideoLengthAdjuster` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `ImageScaleToMegapixels` —— 2/4 个有
+- `ImageSmartSharpen+` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `InspyrenetRembg` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 

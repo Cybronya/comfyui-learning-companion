@@ -1,73 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_unet_60
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.941556
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7978
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/2511单图参考编辑_bf16-基础工作流_2076904369496346625.json, 图片生成/图生图/FireRed-Image-Edit + OpenClaw：打造高考倒计时大屏，每天自动生成不重样！_2025468706289094658.json, 图片生成/图生图/Qwen Image Edit 2511-三图编辑_2004027345054932994.json, 图片生成/图生图/Qwen2511单图参考编辑-基础工作流_2077929626973855745.json, 图片生成/图生图/Qwen2511单图参考编辑-基础工作流_2078293379229773826.json, 图片生成/图生图/QwenEdit——2511_2004160555151728641.json, 图片生成/文生图/FireRed Image Edit 1.1三图输入编辑ComfyUI工作流_2033551521618599938.json, 图片生成/文生图/单图编辑_2003615026718121985.json, 图片生成/文生图/多图编辑_2003474271924043777.json]
+members: [图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json, 图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json, 视频生成/图生视频/H3+LightX2V+二采高清参考生视频_2087551828098633730.json, 视频生成/图生视频/MiniMax H3-全能参考  三图版+一视频_2094421879401574401.json, 视频生成/图生视频/Minimax H3 Veda 稀疏注意力8步极速版 参考生视频_2108491242530234370.json, 视频生成/图生视频/Minimax H3 参考图和参考视音频生成视频满血版_2105625287546462210.json, 视频生成/文生视频/MiniMax H3多合一｜Turbo4 + Sage + T8 Stable｜R2V Turbo6 EXP + 二采增强版｜B站UP主@好奇漫步_2086836147753410562.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜10Eros+LightX2V__2088301741266788353.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜LightX2V_v1_4Ste_2088301834657157121.json, 视频生成/文生视频/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2087029485995642882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_60
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2511单图参考编辑_bf16-基础工作流_2076904369496346625.json、图片生成/图生图/FireRed-Image-Edit + OpenClaw：打造高考倒计时大屏，每天自动生成不重样！_2025468706289094658.json、图片生成/图生图/Qwen Image Edit 2511-三图编辑_2004027345054932994.json、图片生成/图生图/Qwen2511单图参考编辑-基础工作流_2077929626973855745.json、图片生成/图生图/Qwen2511单图参考编辑-基础工作流_2078293379229773826.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json、图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json、视频生成/图生视频/H3+LightX2V+二采高清参考生视频_2087551828098633730.json、视频生成/图生视频/MiniMax H3-全能参考  三图版+一视频_2094421879401574401.json、视频生成/图生视频/Minimax H3 Veda 稀疏注意力8步极速版 参考生视频_2108491242530234370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGNorm`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `ResizeImagesByLongerEdge` —— 3/9 个有
-- `TTResolutionSelector` —— 3/9 个有
-- `UnetLoaderGGUF` —— 3/9 个有
-- `Seed (rgthree)` —— 2/9 个有
-- `CR SDXL Aspect Ratio` —— 1/9 个有
-- `ImpactImageInfo` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `Textbox` —— 1/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `ComfySwitchNode` —— 8/10 个有
+- `LoadAudio` —— 8/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `GetVideoComponents` —— 7/10 个有
+- `ImageResizeKJv2` —— 7/10 个有
+- `LoadVideo` —— 7/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/10 个有
+- `PT_H3ConcatAVLatent` —— 7/10 个有
+- `VAEEncode` —— 7/10 个有
+- `VAEEncodeAudio` —— 7/10 个有
+- `MiniMaxH3ImageToVideo` —— 6/10 个有
+- `LoraLoaderBypassModelOnly` —— 5/10 个有
+- `MiniMaxH3DualClockSamplerT8` —— 3/10 个有
+- `PrimitiveBoolean` —— 3/10 个有
+- `Get Date Time String (JPS)` —— 2/10 个有
+- `MiniMaxH3SigmaShift` —— 2/10 个有
+- `SaveText|pysssss` —— 2/10 个有
+- `ShowText|pysssss` —— 2/10 个有
+- `StringFunction|pysssss` —— 2/10 个有
+- `VHS_LoadVideo` —— 2/10 个有
+- `WidgetToString` —— 2/10 个有
+- `ModelAttentionBackend` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
+- `VedaSparseAttention` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 25 | 9 | 19% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 89% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 25，9 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 89%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（5/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,57 +2,60 @@
 name: unknown_workflow_video_sampler_clip_179
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.975333
-common_nodes: [AppendImageBatch, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ImageFromBatch+, ImageResizeKJv2, ImpactInt, JjkText, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, ProcessString, TurboDiffusionI2VSampler, TurboWanModelLoader, TurboWanVAELoader, VHS_VideoCombine, easy anythingIndexSwitch, easy forLoopEnd, easy forLoopStart, easy promptLine]
+level: strong
+coverage: 0.952333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, Note Plus (mtb), VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI漫剧工作流zip批量图生视频Turbodiffusion多角色同框管理系统-5_2023703390110355457.json, 视频生成/图生视频/多图视频w-a-n 2.2 自用-0-高品质探索_2037833466653450241.json, 视频生成/图生视频/多图视频w-a-n 2.2 自用_2037840182996639745.json]
+members: [图片生成/文生图/wan种子_1903369844585041921.json, 视频生成/图生视频/Wan2.1 GGUF 图生视频_1948299325481844738.json, 视频生成/图生视频/wan2.1 I2V 原生图生视频_1947841200348872705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI漫剧工作流zip批量图生视频Turbodiffusion多角色同框管理系统-5_2023703390110355457.json、视频生成/图生视频/多图视频w-a-n 2.2 自用-0-高品质探索_2037833466653450241.json、视频生成/图生视频/多图视频w-a-n 2.2 自用_2037840182996639745.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan种子_1903369844585041921.json、视频生成/图生视频/Wan2.1 GGUF 图生视频_1948299325481844738.json、视频生成/图生视频/wan2.1 I2V 原生图生视频_1947841200348872705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AppendImageBatch`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
 - `LoadImage`
-- `ProcessString`
-- `TurboDiffusionI2VSampler`
-- `TurboWanModelLoader`
-- `TurboWanVAELoader`
+- `ModelSamplingSD3`
+- `Note Plus (mtb)`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptLine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RHBatchImages:` —— 1/3 个有
-- `RHUploadZip` —— 1/3 个有
-- `easy imageCount` —— 1/3 个有
+- `LoadImageFromUrl` —— 2/3 个有
+- `SaveAnimatedWEBP` —— 2/3 个有
+- `SaveWEBM` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
+- `WanVideoTeaCacheKJ` —— 1/3 个有
+- `easy imageSize` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -60,4 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

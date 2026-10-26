@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_851
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [ImageCrop+, ImageTile+, LoadImage, SaveImage]
+coverage: 0.66475
+common_nodes: [CR Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudioMP3, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/6-宫格图拆分工作流_2038606289256845313.json, 图片生成/图生图/九宫格拆分成单图-标准版-（必收藏）_2052035279879450626.json, 图片生成/图生图/角色+场景+自动拆分单图_2054553084394778626.json]
+members: [视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json, 音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json, 音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json, 音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_851
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/6-宫格图拆分工作流_2038606289256845313.json、图片生成/图生图/九宫格拆分成单图-标准版-（必收藏）_2052035279879450626.json、图片生成/图生图/角色+场景+自动拆分单图_2054553084394778626.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json、音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json、音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json、音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageCrop+`
-- `ImageTile+`
-- `LoadImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudioMP3`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
+- `Qwen3ASRLoader` —— 3/4 个有
+- `Qwen3ASRTranscribe` —— 3/4 个有
+- `Apply Whisper` —— 1/4 个有
 
 ## 典型参数
 

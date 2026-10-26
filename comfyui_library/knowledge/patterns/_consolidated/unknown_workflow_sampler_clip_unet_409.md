@@ -1,68 +1,56 @@
 ---
 name: unknown_workflow_sampler_clip_unet_409
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8685
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageConcanate, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: moderate
+coverage: 0.983333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 双图编辑 极速4步模特换衣换装溶图光影融合_2014176840830685186.json, 图片生成/图生图/Flux2-Klein-9b(仅启用图片编辑，可转角度重打光）_2012726330126766082.json]
+members: [图片生成/文生图/美漫手绘故事FLUX + LORA 基础工作流_1955199580277280770.json, 图片生成/文生图/超高清  文生卡通图_1907499231920156674.json, 图片生成/文生图/风后文生图_1878760414459932673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_409
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 双图编辑 极速4步模特换衣换装溶图光影融合_2014176840830685186.json、图片生成/图生图/Flux2-Klein-9b(仅启用图片编辑，可转角度重打光）_2012726330126766082.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/美漫手绘故事FLUX + LORA 基础工作流_1955199580277280770.json、图片生成/文生图/超高清  文生卡通图_1907499231920156674.json、图片生成/文生图/风后文生图_1878760414459932673.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LoadImage`
-- `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BiRefNetRMBG` —— 1/2 个有
-- `DetailTransfer` —— 1/2 个有
-- `FastCanvas` —— 1/2 个有
-- `FastCanvasTool` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `LayerMask: MaskPreview` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `QwenMultiangleLightningNode` —— 1/2 个有
+- `EmptyLatentImage` —— 2/3 个有
+- `FluxGuidance` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ModelSamplingFlux` —— 2/3 个有
+- `CR SDXL Aspect Ratio` —— 1/3 个有
+- `ImageUpscaleWithModelBatched` —— 1/3 个有
+- `LatentToWidthHeight` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1052 | - | 2 | 97% |
+| 高度 | 1472 | - | 2 | 70% |
 
 ## 常见问题
 
@@ -70,4 +58,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1052，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
+- 高度 中位数 1472，样本不足，未给区间，2 个样本

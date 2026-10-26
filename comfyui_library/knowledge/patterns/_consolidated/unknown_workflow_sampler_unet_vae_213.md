@@ -2,78 +2,67 @@
 name: unknown_workflow_sampler_unet_vae_213
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.7678
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainPlan, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3SigmaShift, PixaromaSizes, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy mergeVideosFromPaths]
+level: strong
+coverage: 0.981
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json, 视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json, 视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json]
+members: [图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json, 图片生成/图生图/直播汉服写真_1913521276361633794.json, 图片生成/图生图/角色一致性_1938427878101155842.json, 图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json, 图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_213
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json、视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json、视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json、图片生成/图生图/直播汉服写真_1913521276361633794.json、图片生成/图生图/角色一致性_1938427878101155842.json、图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json、图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `ApplyPulidFlux`
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
+- `DualCLIPLoader`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ChainAssemble`
-- `MiniMaxH3ChainContext`
-- `MiniMaxH3ChainCurrent`
-- `MiniMaxH3ChainLoopEnd`
-- `MiniMaxH3ChainLoopStart`
-- `MiniMaxH3ChainPlan`
-- `MiniMaxH3ChainSegmentSave`
-- `MiniMaxH3LoopTrim`
-- `MiniMaxH3SigmaShift`
-- `PixaromaSizes`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy mergeVideosFromPaths`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ChainReview` —— 4/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `MiniMaxH3ChainScenePromptEditor` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `SolAttnPatch` —— 3/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `MiniMaxH3ImageToVideo` —— 2/5 个有
-- `MiniMaxH3ScheduledPictureReference` —— 2/5 个有
-- `MiniMaxH3ScheduledReferenceToVideo` —— 2/5 个有
-- `ModelAttentionBackend` —— 2/5 个有
-- `PrimitiveBoolean` —— 2/5 个有
-- `LoadVideo` —— 1/5 个有
-- `MiniMaxH3ChainPlanStudio` —— 1/5 个有
-- `MiniMaxH3ChainRichScenePromptEditor` —— 1/5 个有
-- `MiniMaxH3ChainRunManager` —— 1/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
-- `MiniMaxH3ReferenceVideoPrepare` —— 1/5 个有
-- `MiniMaxH3ScheduledAudioReference` —— 1/5 个有
-- `MiniMaxH3ScheduledVideoReference` —— 1/5 个有
+- `EmptySD3LatentImage` —— 4/5 个有
+- `CLIPTextEncodeFlux` —— 3/5 个有
+- `CLIPLoaderGGUF` —— 2/5 个有
+- `CLIPTextEncode` —— 2/5 个有
+- `FluxGuidance` —— 2/5 个有
+- `LoraLoader` —— 2/5 个有
+- `UnetLoaderGGUF` —— 2/5 个有
+- `VAEEncode` —— 2/5 个有
+- `CR SDXL Aspect Ratio` —— 1/5 个有
+- `EmptyLatentImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `PulidFluxFaceDetector` —— 1/5 个有
+- `PulidFluxOptions` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1576 | - | 1 | 100% |
+| LoRA 模型强度 | 0.9 | - | 2 | 89% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -81,4 +70,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

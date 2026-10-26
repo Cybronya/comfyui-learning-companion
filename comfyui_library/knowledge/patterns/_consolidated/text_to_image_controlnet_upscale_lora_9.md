@@ -1,92 +1,109 @@
 ---
 name: text_to_image_controlnet_upscale_lora_9
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.751667
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, GoogleTranslateTextNode, Image Comparer (rgthree), ImageConcanate, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PMRF, QwenImageDiffsynthControlnet, RH_Captioner, SaveImage, SetNode, ShowText|pysssss, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.81
+common_nodes: [AddLabel, Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ColorMatch, ControlNetApplyAdvanced, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageAndMaskPreview, ImageConcatMulti, ImagePadForOutpaint, ImageUpscaleWithModel, JjkText, KSampler, LayerMask: MaskPreview, LayerUtility: ImageBlend, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleRestore, LoadImage, LoraLoader, LoraLoaderModelOnly, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, PreviewImage, RHHiddenNodes, RH_Captioner, ResizeImageMixlab, SaveImage, SetLatentNoiseMask, ShowText|pysssss, SubtractMask, TextInput_, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageDetailTransfer, easy imageRemBg, solarL_SaveImagesToZip]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Zimage文生图动作迁移  ZImage_Merged_Optimized_2006238737826582529.json, 图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2006666537956020226.json, 图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2032349637339783169.json]
+members: [图片生成/图生图/100%不动服装生成式人物换背景局部重绘图片换背景_2087353262398853122.json, 图片生成/图生图/100%不动服装｜人物生成式换背景局部重绘_2092603971650281473.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_upscale_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Zimage文生图动作迁移  ZImage_Merged_Optimized_2006238737826582529.json、图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2006666537956020226.json、图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2032349637339783169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/100%不动服装生成式人物换背景局部重绘图片换背景_2087353262398853122.json、图片生成/图生图/100%不动服装｜人物生成式换背景局部重绘_2092603971650281473.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 2 个 workflow 都包含：
+- `AddLabel`
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
+- `CR Text Concatenate`
+- `ColorMatch`
+- `ControlNetApplyAdvanced`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `GoogleTranslateTextNode`
+- `FluxGuidance`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
+- `ImageAndMaskPreview`
+- `ImageConcatMulti`
+- `ImagePadForOutpaint`
 - `ImageUpscaleWithModel`
+- `JjkText`
 - `KSampler`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleRestore`
 - `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PMRF`
-- `QwenImageDiffsynthControlnet`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `RH_Captioner`
+- `ResizeImageMixlab`
 - `SaveImage`
-- `SetNode`
+- `SetLatentNoiseMask`
 - `ShowText|pysssss`
+- `SubtractMask`
+- `TextInput_`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageDetailTransfer`
+- `easy imageRemBg`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `CFGNorm` —— 2/3 个有
-- `ImageConcatMulti` —— 2/3 个有
-- `KSamplerAdvanced` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `PreviewBridge` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy imageSplitGrid` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 1 - 8 | 3 | 42% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
-| 宽度 | 720 | 720 - 1024 | 3 | 83% |
-| 高度 | 1280 | 1280 - 1536 | 3 | 91% |
+| ControlNet 权重 | 0.3 | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.5 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，3 个样本，取值分散，一致性仅 42%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
-- 宽度 中位数 720，观测区间 720 - 1024，3 个样本，取值集中（一致性 83%）
-- 高度 中位数 1280，观测区间 1280 - 1536，3 个样本，取值集中（一致性 91%）
+- ControlNet 权重 中位数 0.3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（6/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

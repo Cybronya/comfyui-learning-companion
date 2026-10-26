@@ -3,30 +3,38 @@ name: unknown_workflow_generic_721
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.4
-common_nodes: [JjkText, PrimitiveInt, RHBerniniFullTextToImage, SaveImage]
+coverage: 0.736
+common_nodes: [AILab_ImageStitch, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json, 图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json, 图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json, 图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json]
+members: [图片生成/图生图/WAN2.7换发型_2090702421868769281.json, 图片生成/图生图/溶图_2080663796917555202.json, 图片生成/图生图/老许_WAN2.7双图编辑_2047911845645787138.json, 图片生成/文生图/人物服装工作流_2054195893984874498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_721
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json、图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json、图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json、图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/WAN2.7换发型_2090702421868769281.json、图片生成/图生图/溶图_2080663796917555202.json、图片生成/图生图/老许_WAN2.7双图编辑_2047911845645787138.json、图片生成/文生图/人物服装工作流_2054195893984874498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：40%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JjkText`
-- `PrimitiveInt`
-- `RHBerniniFullTextToImage`
+- `AILab_ImageStitch`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `AILab_ImageResize` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `RH_AlibabaWan27ImageEdit` —— 3/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_Jimeng4_Image2Image` —— 1/4 个有
 
 ## 典型参数
 

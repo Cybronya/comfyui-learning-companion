@@ -1,98 +1,103 @@
 ---
 name: unknown_workflow_controlnet_video_lora_29
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.826
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR Prompt Text, ControlNetApplySD3, ControlNetLoader, EmptySD3LatentImage, INTConstant, ImageConcanate, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, JWInteger, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveLatent, SetUnionControlNetType, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.43
+common_nodes: [Any Switch (rgthree), Audio Cut (mtb), AudioSeparation, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetNode, ImageFromBatch+, ImageResizeKJ, Int, LoadImage, MultiTalkModelLoader, MultiTalkSilentEmbeds, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, SimpleMath+, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Comfy挑战赛4 Qwen image+Wan2.2 Fun Vace全身姿势控制V1_1966695132777099266.json, 视频生成/图生视频/Comfy挑战赛4 Qwen image+Wan2.2 Fun全身姿势控制V1_1965695977791344642.json]
+members: [视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json, 视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json, 视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_29
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Comfy挑战赛4 Qwen image+Wan2.2 Fun Vace全身姿势控制V1_1966695132777099266.json、视频生成/图生视频/Comfy挑战赛4 Qwen image+Wan2.2 Fun全身姿势控制V1_1965695977791344642.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json、视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json、视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
-- `EmptySD3LatentImage`
-- `INTConstant`
-- `ImageConcanate`
-- `ImageConcatMulti`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Audio Cut (mtb)`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `SaveLatent`
-- `SetUnionControlNetType`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ImageResizeKJ`
+- `Int`
+- `LoadImage`
+- `MultiTalkModelLoader`
+- `MultiTalkSilentEmbeds`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadAudioUpload`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadWanVideoT5TextEncoder` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `StringToFloatList` —— 1/2 个有
-- `WanVideoAddControlEmbeds` —— 1/2 个有
-- `WanVideoEncode` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
-- `WanVideoScheduler` —— 1/2 个有
-- `WanVideoSigmaToStep` —— 1/2 个有
-- `WanVideoTextEmbedBridge` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeCached` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoVACEEncode` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `FantasyPortraitFaceDetector` —— 2/3 个有
+- `FantasyPortraitModelLoader` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `ImageSmartSharpen+` —— 2/3 个有
+- `ImpactControlBridge` —— 2/3 个有
+- `LoadLynxResampler` —— 2/3 个有
+- `LoadWanVideoClipTextEncoder` —— 2/3 个有
+- `LoadWanVideoT5TextEncoder` —— 2/3 个有
+- `LynxEncodeFaceIP` —— 2/3 个有
+- `LynxInsightFaceCrop` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `WanVideoAddFantasyPortrait` —— 2/3 个有
+- `WanVideoAddLynxEmbeds` —— 2/3 个有
+- `WanVideoClipVisionEncode` —— 2/3 个有
+- `WanVideoExtraModelSelect` —— 2/3 个有
+- `WanVideoImageToVideoEncode` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `WanVideoTextEncodeSingle` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy imageRemBg` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `ApplyFaceProcessor` —— 1/3 个有
+- `BboxVisualize` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `FaceProcessorLoader` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `InpaintCropImproved` —— 1/3 个有
+- `LandmarksToImage` —— 1/3 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/3 个有
+- `OnnxDetectionModelLoader` —— 1/3 个有
+- `PoseDetectionOneToAllAnimation` —— 1/3 个有
+- `WanVideoAddStandInLatent` —— 1/3 个有
+- `WanVideoUniAnimatePoseInput` —— 1/3 个有
+- `WanVideoVACEEncode` —— 1/3 个有
+- `WanVideoVACEModelSelect` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 1 | - | 2 | 100% |
-| 采样步数 | 15 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_2s | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -100,10 +105,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 15，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

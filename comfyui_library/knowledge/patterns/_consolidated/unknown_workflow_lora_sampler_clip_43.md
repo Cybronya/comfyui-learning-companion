@@ -2,76 +2,80 @@
 name: unknown_workflow_lora_sampler_clip_43
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.918556
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.937222
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json, 图片生成/文生图/AI口播人物-文生图_2027299018845458433.json, 图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json, 图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079025904818409473.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079877016463171586.json, 图片生成/文生图/Z-image-base（如梦似幻+瑶光lora）文生图+高清放大_2063588760020930562.json]
+members: [图片生成/图生图/10秒一键漫画感工作流_1889889417681838082.json, 图片生成/图生图/flux-redux-创意迁移-logo设计_1950208575371173889.json, 图片生成/图生图/全能图片G 同款吉卜力风格_1909795874137145345.json, 图片生成/图生图/全能图片G-4o版吉卜力风格_1912018910508711937.json, 图片生成/图生图/全能图片G-4o版吉卜力风格_1914282497189052417.json, 图片生成/图生图/全能图片G4o同款一键定制吊卡公仔_1911777214587961345.json, 图片生成/图生图/抖音同款_治愈系儿童绘本_1914188492946010114.json, 图片生成/图生图/涂鸦手绘风格-图生图转绘_1943146154374946818.json, 图片生成/图生图/真人照片改漫画_1888207245665001474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_43
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json、图片生成/文生图/AI口播人物-文生图_2027299018845458433.json、图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/10秒一键漫画感工作流_1889889417681838082.json、图片生成/图生图/flux-redux-创意迁移-logo设计_1950208575371173889.json、图片生成/图生图/全能图片G 同款吉卜力风格_1909795874137145345.json、图片生成/图生图/全能图片G-4o版吉卜力风格_1912018910508711937.json、图片生成/图生图/全能图片G-4o版吉卜力风格_1914282497189052417.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 7/9 个有
-- `easy getNode` —— 7/9 个有
-- `easy setNode` —— 7/9 个有
-- `llama_cpp_instruct_adv` —— 7/9 个有
-- `llama_cpp_model_loader` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
-- `ModelSamplingAuraFlow` —— 6/9 个有
-- `SeedVR2LoadDiTModel` —— 6/9 个有
-- `SeedVR2LoadVAEModel` —— 6/9 个有
-- `SeedVR2VideoUpscaler` —— 6/9 个有
-- `ConditioningZeroOut` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `Qwen3_VQA_Plus` —— 1/9 个有
-- `RHHiddenNodes` —— 1/9 个有
+- `ApplyPulidFlux` —— 8/9 个有
+- `CLIPVisionEncode` —— 8/9 个有
+- `PulidEvaClipLoader` —— 8/9 个有
+- `PulidFluxModelLoader` —— 8/9 个有
+- `PulidInsightFaceLoader` —— 8/9 个有
+- `StyleModelApplySimple` —— 8/9 个有
+- `EmptyLatentImage` —— 5/9 个有
+- `FluxResolutionNode` —— 4/9 个有
+- `JjkText` —— 4/9 个有
+- `TextCombinerTwo` —— 4/9 个有
+- `LayerColor: Brightness & Contrast` —— 3/9 个有
+- `RH_Captioner` —— 3/9 个有
+- `ShowText|pysssss` —— 3/9 个有
+- `VAEEncode` —— 3/9 个有
+- `ImageResizeKJ` —— 2/9 个有
+- `DF_Get_image_size` —— 1/9 个有
+- `EmptySD3LatentImage` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `ModelSamplingFlux` —— 1/9 个有
+- `RH_Prompter` —— 1/9 个有
+- `YC_LG_Redux` —— 1/9 个有
+- `workflow/展示文本` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 1 - 9 | 9 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | res_multistep | - | 9 | 78% |
-| 调度器 | simple | - | 9 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 5 | 78% |
+| 高度 | 1280 | 512 - 1280 | 5 | 72% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 1 - 9，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，9 个样本，一致性 78%
-- 调度器 最常用 simple，9 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（10/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 512 - 1024，5 个样本
+- 高度 中位数 1280，观测区间 512 - 1280，5 个样本

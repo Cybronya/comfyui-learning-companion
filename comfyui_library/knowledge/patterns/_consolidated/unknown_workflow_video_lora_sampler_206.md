@@ -1,87 +1,91 @@
 ---
 name: unknown_workflow_video_lora_sampler_206
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.905556
-common_nodes: [AudioCropProcessUTK, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Float To Integer, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.7006
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, SimpleMath+, SoundFlow_GetLength, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+problems: []
 missing: []
-members: [视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json, 视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json, 视频生成/图生视频/WAN2.2 S2V -让图片会唱歌_1962685286419415042.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1961341007348568066.json, 视频生成/图生视频/Wan2.2+S2V数字人视频驱动视频工作流_1965758281866219521.json]
+members: [数字人/数字人/251229001.001🥳infinitetalk视频对口型_2005196834035433474.json, 数字人/数字人/Aiwood-改进版KJ-Infinitetalk视频对口型工作流_1958282916373676034.json, 数字人/数字人/Infinitetalk_2099404964316663810.json, 数字人/数字人/Infinitetalk视频对口型工作流-kj版_2004517190860767233.json, 数字人/数字人/KJ-Infinitetalk 对口型_1958371776206159873.json, 数字人/数字人/KJ-Infinitetalk_视频“对口型”工作流_1967963475878248449.json, 数字人/数字人/Z-Infinitetalk视频对口型_1991842373500203009.json, 数字人/数字人/视频对口型-rh-Infinitetalk-模板_1995321806267539457.json, 视频生成/图生视频/Infinite talk数字人_1986688355087937537.json, 视频生成/图生视频/KJ-Infinitetalk+wan2.1优化提速视频生成口播数字人唱歌数字人_1958763017179721730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_206
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json、视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/251229001.001🥳infinitetalk视频对口型_2005196834035433474.json、数字人/数字人/Aiwood-改进版KJ-Infinitetalk视频对口型工作流_1958282916373676034.json、数字人/数字人/Infinitetalk_2099404964316663810.json、数字人/数字人/Infinitetalk视频对口型工作流-kj版_2004517190860767233.json、数字人/数字人/KJ-Infinitetalk 对口型_1958371776206159873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Float To Integer`
-- `KSampler`
+全部 10 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `Display Int (rgthree)`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `SimpleMath+`
-- `VAEDecode`
-- `VAELoader`
+- `SoundFlow_GetLength`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `wanBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `VHS_LoadVideo` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `ContextWindowsManual` —— 5/9 个有
-- `ImageFromBatch+` —— 5/9 个有
-- `JWFloat` —— 5/9 个有
-- `JWInteger` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `Display Any (rgthree)` —— 3/9 个有
-- `SaveLatent` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `OpenposePreprocessor` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `GetNode` —— 9/10 个有
+- `ToInt` —— 9/10 个有
+- `INTConstant` —— 8/10 个有
+- `ImageBatchMulti` —— 8/10 个有
+- `ReverseImageBatch` —— 8/10 个有
+- `ImageConcatMulti` —— 7/10 个有
+- `BatchThief` —— 2/10 个有
+- `GetImageSize` —— 2/10 个有
+- `SDVN Any Show` —— 2/10 个有
+- `scale` —— 2/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
+- `FlashVSRNode` —— 1/10 个有
+- `GIMMVFI_interpolate` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `JWFloatToInteger` —— 1/10 个有
+- `JWIntegerToString` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `Text Multiline (Code Compatible)` —— 1/10 个有
+- `VHS_VideoInfoSource` —— 1/10 个有
+- `easy positive` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
+- `ttN int` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | uni_pc | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

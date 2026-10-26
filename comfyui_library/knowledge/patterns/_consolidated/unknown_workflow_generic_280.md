@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_280
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.565125
-common_nodes: [JjkText, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.955556
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2088508959744421889.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2096618980592152578.json, 图片生成/图生图/全能图片G-双图模式-支持PS插件_2047200668506656770.json]
+members: [音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json, 音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json, 音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963033467900637185.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963596081664970754.json, 音频生成/音频生成/双人语音克隆，MegaTTS3，简单易用效果好_1963192083320377346.json, 音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）_1976612486625533953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_280
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json、音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json、音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `JjkText`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `孤海注释` —— 4/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `YK_LoadImageFromURL` —— 1/8 个有
+- `MegaTTS3Run` —— 8/9 个有
+- `PreviewAudio` —— 7/9 个有
+- `LoadImage` —— 3/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `FireRedTTS2MonologueNode` —— 1/9 个有
 
 ## 典型参数
 

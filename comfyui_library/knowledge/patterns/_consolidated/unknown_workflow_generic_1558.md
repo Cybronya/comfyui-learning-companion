@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1558
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8285
-common_nodes: [LoadImage, RH_Veo3_Image2Video, SaveVideo]
+coverage: 0.9545
+common_nodes: [CR Text, Int, LoadImage, RHHiddenNodes, SaveImage, 取色器_孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阡陌】全能视频V3图生视频_1978841402350145537.json, 视频生成/图生视频/全能视频V3.1 图生视频_1979104385529712641.json]
+members: [图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json, 图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1558
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频V3图生视频_1978841402350145537.json、视频生成/图生视频/全能视频V3.1 图生视频_1979104385529712641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json、图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `Int`
 - `LoadImage`
-- `RH_Veo3_Image2Video`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `RHHiddenNodes`
+- `SaveImage`
+- `取色器_孤海`
 
 ## 典型参数
 

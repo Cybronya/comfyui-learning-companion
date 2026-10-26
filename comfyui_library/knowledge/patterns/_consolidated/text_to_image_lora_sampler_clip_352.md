@@ -1,83 +1,78 @@
 ---
 name: text_to_image_lora_sampler_clip_352
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8562
-common_nodes: [Anything Everywhere3, ApplyFBCacheOnModel, Bjornulf_FreeVRAM, CFGZeroStarAndInit, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Int, KSampler, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy seed, easy showAnything]
-problems: []
+coverage: 0.875667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/cos自拍_1919987623421743105.json, 图片生成/图生图/公孙离自拍_1920419864220209153.json, 图片生成/图生图/梦见月自拍_1920439776271601666.json, 图片生成/图生图/花火cos_1918976114239410178.json, 图片生成/图生图/躺地拍照2_1918867851929915393.json]
+members: [图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json, 图片生成/文生图/全能图片V2_2087481707606929409.json, 图片生成/文生图/全能图片文生图，多风格题材一workflow通吃_2112307328287596546.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json, 图片生成/文生图/文生图全能直出｜G-2图片生成 电商平面设计利器_2089464781400002562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_352
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/cos自拍_1919987623421743105.json、图片生成/图生图/公孙离自拍_1920419864220209153.json、图片生成/图生图/梦见月自拍_1920439776271601666.json、图片生成/图生图/花火cos_1918976114239410178.json、图片生成/图生图/躺地拍照2_1918867851929915393.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json、图片生成/文生图/全能图片V2_2087481707606929409.json、图片生成/文生图/全能图片文生图，多风格题材一workflow通吃_2112307328287596546.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere3`
-- `ApplyFBCacheOnModel`
-- `Bjornulf_FreeVRAM`
-- `CFGZeroStarAndInit`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `Int`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: TextJoin`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `Molmo7BDbnb` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/5 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/5 个有
+- `孤海注释` —— 5/6 个有
+- `RH_RhartImageG2TextToImage` —— 4/6 个有
+- `Float` —— 3/6 个有
+- `RTXVideoSuperResolution` —— 3/6 个有
+- `Text` —— 3/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/6 个有
+- `AspectRatioSelect` —— 1/6 个有
+- `EmptyImage` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1920 | 5 | 66% |
-| 高度 | 1920 | 1080 - 1920 | 5 | 77% |
-| 采样步数 | 35 | 35 - 35 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1920，5 个样本
-- 高度 中位数 1920，观测区间 1080 - 1920，5 个样本
-- 采样步数 中位数 35，观测区间 35 - 35，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_clip_unet_vae_2
 type: Unknown Workflow
-frequency: 18
-level: moderate
-coverage: 0.9115
+frequency: 22
+level: weak
+coverage: 0.964818
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/z_image_base+turbo_workflow_2018248328844156930.json, 图片生成/文生图/z_image_base_2016450301691174913.json, 图片生成/文生图/z_image_base_2019688358565384194.json, 图片生成/文生图/z_image_turbo-dog 宠物 狗狗 文生图 去AI_2069329755043876866.json, 图片生成/文生图/z_image_turbo_1994152061438722050.json, 图片生成/文生图/z_image_turbo_1994983879373152258.json, 图片生成/文生图/z_image_turbo_basic_文生图_v14.0_yaowanli_2079045413621026817.json, 图片生成/文生图/z_image_turbo_gap_focus_2015970628842557442.json, 图片生成/文生图/z_image_turbo_linlin 文生图 去AI_2066435120067858433.json, 图片生成/文生图/z_image_turbo_ultra_fast_1994239876770054145.json, 图片生成/文生图/z_image_turbo_专属美女_airy_2071200704718528513.json, 图片生成/文生图/z_image_turbo文生图_2011271534962286593.json, 图片生成/文生图/z_image_turbo文生图_2067946808487276545.json, 图片生成/文生图/z_image_turbo文生图透明_2067952553903611905.json, 图片生成/文生图/zimage-turbo-文生图工作流-lora人像_2048255863974010881.json, 图片生成/文生图/亚秒级生成！Zimage超快图片生成器官方工作流_2035604076301393921.json, 图片生成/文生图/千问Qwen_image文生图海报_fp8_官方版26125_2015389169786294274.json, 图片生成/文生图/千问文生图，极简加速版（Qwen4-8步））_1958431884814479361.json]
+members: [图片生成/文生图/002.Qwen编辑之王002.二次采样文生图_2034485126217863170.json, 图片生成/文生图/2030248533244256258.json, 图片生成/文生图/2030259700943560706.json, 图片生成/文生图/2030270553520607233.json, 图片生成/文生图/2030517261940822018.json, 图片生成/文生图/60.tonnie-Magic-Wan-Image文生图_2009063719375998977.json, 图片生成/文生图/Animate动漫出图Qwen工作流_2047157124668592129.json, 图片生成/文生图/Animate动漫出图Qwen工作流_2049757423077957634.json, 图片生成/文生图/Qwen-Image一键生成不知火舞真实版_2042047842927255553.json, 图片生成/文生图/Qwen2512腿精巨长腿背影杀腿部调节_2019638224775290882.json, 图片生成/文生图/Z-I-B道具快乐美女_2040453074061369345.json, 图片生成/文生图/Z-I-B长腿肉腿刺客美女_2056916021260410881.json, 图片生成/文生图/Z-Image-Base文生图亮亮丝袜美女_2018164986979295233.json, 图片生成/文生图/Z-Imgae一键生成大胸美女_2028683377297072130.json, 图片生成/文生图/Z-image一键美女文生图_2023344603134431233.json, 图片生成/文生图/Z-image大码瑜伽裤模特_2054817937000804354.json, 图片生成/文生图/Z-image真实文生图_2027593525369507841.json, 图片生成/文生图/Z-image真实文生图_2096478812799328257.json, 图片生成/文生图/Z-image真实文生图无限制_2021242393848188929.json, 图片生成/文生图/Z-image韩国美少女写真_2040461723756400642.json, 图片生成/文生图/Z-image高中女生校服丝袜写真_2025507598744690689.json, 图片生成/文生图/qwen2512文生图_2058014938349785090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/z_image_base+turbo_workflow_2018248328844156930.json、图片生成/文生图/z_image_base_2016450301691174913.json、图片生成/文生图/z_image_base_2019688358565384194.json、图片生成/文生图/z_image_turbo-dog 宠物 狗狗 文生图 去AI_2069329755043876866.json、图片生成/文生图/z_image_turbo_1994152061438722050.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/002.Qwen编辑之王002.二次采样文生图_2034485126217863170.json、图片生成/文生图/2030248533244256258.json、图片生成/文生图/2030259700943560706.json、图片生成/文生图/2030270553520607233.json、图片生成/文生图/2030517261940822018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：22
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptySD3LatentImage`
@@ -33,42 +33,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 17/18 个有
-- `ConditioningZeroOut` —— 6/18 个有
-- `LoraLoader` —— 4/18 个有
-- `LoraLoaderModelOnly` —— 4/18 个有
-- `PreviewImage` —— 4/18 个有
-- `BiRefNetRMBG` —— 1/18 个有
-- `KSamplerAdvanced` —— 1/18 个有
-- `RH_Translator` —— 1/18 个有
-- `ShowText` —— 1/18 个有
+- `KSampler` —— 21/22 个有
+- `LoraLoaderModelOnly` —— 21/22 个有
+- `CompressImages` —— 17/22 个有
+- `PathchSageAttentionKJ` —— 3/22 个有
+- `easy promptLine` —— 2/22 个有
+- `CheckpointLoaderSimple` —— 1/22 个有
+- `KSamplerAdvanced` —— 1/22 个有
+- `LatentUpscaleBy` —— 1/22 个有
+- `Primitive string multiline [Crystools]` —— 1/22 个有
+- `easy promptConcat` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 4 - 30 | 17 | 35% |
-| Prompt 约束强度(CFG) | 1 | 1 - 20 | 18 | 0% |
-| 采样算法 | euler | - | 18 | 56% |
-| 调度器 | simple | - | 18 | 94% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| LoRA 模型强度 | 0.835 | 0.6 - 0.95 | 4 | 84% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 8 | 4 - 30 | 21 | 35% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 22 | 28% |
+| 采样算法 | euler | - | 22 | 95% |
+| 调度器 | simple | - | 22 | 91% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 4 - 30，17 个样本，取值分散，一致性仅 35%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 20，18 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，18 个样本，一致性 56%
-- 调度器 最常用 simple，18 个样本，一致性 94%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.835，观测区间 0.6 - 0.95，4 个样本，取值集中（一致性 84%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 高发问题（11/18 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 30，21 个样本，取值分散，一致性仅 35%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，22 个样本，取值分散，一致性仅 28%
+- 采样算法 最常用 euler，22 个样本，一致性 95%
+- 调度器 最常用 simple，22 个样本，一致性 91%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 高发问题（18/22 个样本）：Steps较低可能导致细节不足

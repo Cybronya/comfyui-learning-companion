@@ -2,78 +2,84 @@
 name: image_to_image_sampler_clip_unet_55
 type: Image To Image
 frequency: 7
-level: moderate
-coverage: 0.821429
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.825714
+common_nodes: [ApplyPulidFlux, BboxDetectorSEGS, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, GrowMaskWithBlur, ImageResize+, KSampler, LoadImage, MaskToImage, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RepeatLatentBatch, SaveImage, SegsToCombinedMask, SetLatentNoiseMask, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-klein005.flux-2单-多图编辑_2026629947330142210.json, 图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json, 图片生成/图生图/F.2Kiein全类目产品精修真实感全类目_2103098660434305026.json, 图片生成/图生图/Flux-klein 9b 加速版三合一人物证件照工作流 V1.0_2038078453303484418.json, 图片生成/图生图/flux-klein 9b 人物证件照双方案生成 更新2026.3.22_2033449471559868418.json, 图片生成/图生图/▶flux-klein-单_多图编辑  附提示词范例_2014505883207737345.json]
+members: [图片生成/图生图/FLUX KERA+PULID+高清修复 最强换脸工作流_1968852750496878593.json, 图片生成/图生图/FLUX PULID换脸（可多人）_1963421660617510914.json, 图片生成/图生图/FLUX.1 Krea + PULID 人像换脸_1951530450911219713.json, 图片生成/图生图/Flux PULID 最强换脸_1914677873192464386.json, 图片生成/图生图/最强换脸 PULID + Flux 工作流_1915586150789222402.json, 图片生成/图生图/最强换脸 PULID + Flux 工作流_1927923154654773249.json, 图片生成/图生图/老牌最强换脸工具 PULID 和 Flux 生图_1915586739849592834.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_55
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-klein005.flux-2单-多图编辑_2026629947330142210.json、图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json、图片生成/图生图/F.2Kiein全类目产品精修真实感全类目_2103098660434305026.json、图片生成/图生图/Flux-klein 9b 加速版三合一人物证件照工作流 V1.0_2038078453303484418.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FLUX KERA+PULID+高清修复 最强换脸工作流_1968852750496878593.json、图片生成/图生图/FLUX PULID换脸（可多人）_1963421660617510914.json、图片生成/图生图/FLUX.1 Krea + PULID 人像换脸_1951530450911219713.json、图片生成/图生图/Flux PULID 最强换脸_1914677873192464386.json、图片生成/图生图/最强换脸 PULID + Flux 工作流_1915586150789222402.json…）
 
 - **类型**：Image To Image
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPLoader`
+- `ApplyPulidFlux`
+- `BboxDetectorSEGS`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `GrowMaskWithBlur`
+- `ImageResize+`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
+- `MaskToImage`
+- `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RepeatLatentBatch`
 - `SaveImage`
+- `SegsToCombinedMask`
+- `SetLatentNoiseMask`
 - `UNETLoader`
+- `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 6/7 个有
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `MuyeTextEditOutput` —— 3/7 个有
-- `GetImageSize` —— 2/7 个有
-- `HAIGC_SaveImagesToZip` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `ModelSamplingAuraFlow` —— 2/7 个有
-- `easy imageInsetCrop` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `RHUploadZip_V2` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `SUPIR_Upscale` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `ApplyTeaCachePatchAdvanced` —— 1/7 个有
+- `FluxForwardOverrider` —— 1/7 个有
+- `Image Crop Face` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `LP-TranslateToEN` —— 1/7 个有
+- `PulidFluxFaceDetector` —— 1/7 个有
+- `PulidFluxOptions` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `Seed (rgthree)` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 8 | 7 | 74% |
+| 采样步数 | 25 | 25 - 30 | 7 | 91% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
 | 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 71% |
-| 重绘幅度 | 1 | 0.25 - 1 | 7 | 57% |
+| 调度器 | normal | - | 7 | 100% |
+| 重绘幅度 | 0.7 | 0.7 - 0.7 | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 8，7 个样本
+- 采样步数 中位数 25，观测区间 25 - 30，7 个样本，取值集中（一致性 91%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 71%
-- 重绘幅度 中位数 1，观测区间 0.25 - 1，7 个样本
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 调度器 最常用 normal，7 个样本，一致性 100%
+- 重绘幅度 中位数 0.7，观测区间 0.7 - 0.7，7 个样本，取值集中（一致性 100%）

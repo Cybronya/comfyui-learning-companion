@@ -2,71 +2,60 @@
 name: unknown_workflow_lora_sampler_clip_48
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.813111
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, GetVideoComponents, ImageFromBatch, JWInteger, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, RHLLMChatNode, SamplerCustom, SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+level: strong
+coverage: 0.845444
+common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ColorMatch, Fast Groups Muter (rgthree), ImageScaleToTotalPixels, Int, KSamplerAdvanced, LatentSwitch, LoraLoaderModelOnly, PreviewImage, QwenImageLatentAspectRatio, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini视频换人+视频换装_2063038125223538690.json, 视频生成/图生视频/Bernini视频换人+视频换装_2063144841558708225.json, 视频生成/图生视频/Bernini视频编辑（角色替换）优化加速版_2065359403267739650.json, 视频生成/图生视频/Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次高清放大视频1080p_2063267448056541186.json, 视频生成/图生视频/最新加速bernini人物替换10S版_2062393408311873538.json, 视频生成/图生视频/（4步极速版-sd2.0平替）Bernini 视频编辑高质量加速优化版V4_2073466192983052289.json, 视频生成/图生视频/（sd2.0平替）Bernini 视频编辑高质量加速优化版V3_2061857100334194689.json, 视频生成/图生视频/（长时稳定版方案1）Bernini 视频编辑高质量加速优化版V4_2062007172694892545.json, 视频生成/图生视频/（长时稳定版方案2）Bernini 视频编辑高质量加速优化版Beta版V4_2062019836196249601.json]
+members: [图片生成/文生图/AI视频文生图_2042991324063866882.json, 图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json, 图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085256281174138881.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085257479918804993.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085259061586653186.json, 图片生成/文生图/超强文生图，极致细节：Zimage系列底图，Klein高清修复_2018129430551465986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_48
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Bernini视频换人+视频换装_2063038125223538690.json、视频生成/图生视频/Bernini视频换人+视频换装_2063144841558708225.json、视频生成/图生视频/Bernini视频编辑（角色替换）优化加速版_2065359403267739650.json、视频生成/图生视频/Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次高清放大视频1080p_2063267448056541186.json、视频生成/图生视频/最新加速bernini人物替换10S版_2062393408311873538.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/AI视频文生图_2042991324063866882.json、图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json、图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Prompt Text`
-- `GetVideoComponents`
-- `ImageFromBatch`
-- `JWInteger`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoadVideo`
+- `CheckpointLoaderSimple`
+- `ColorMatch`
+- `Fast Groups Muter (rgthree)`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `KSamplerAdvanced`
+- `LatentSwitch`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `RHLLMChatNode`
-- `SamplerCustom`
-- `SplitSigmas`
-- `StringReplace`
+- `PreviewImage`
+- `QwenImageLatentAspectRatio`
+- `ReferenceLatent`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniPromptEnhancer` —— 8/9 个有
-- `CreateVideo` —— 8/9 个有
-- `ImageConcanate` —— 8/9 个有
-- `SaveVideo` —— 8/9 个有
-- `VHS_VideoCombine` —— 8/9 个有
-- `Float` —— 7/9 个有
-- `BatchImagesNode` —— 6/9 个有
-- `MathExpression|pysssss` —— 5/9 个有
-- `easy batchAnything` —— 5/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `SeedVR2LoadDiTModel` —— 1/9 个有
-- `SeedVR2LoadVAEModel` —— 1/9 个有
-- `SeedVR2VideoUpscaler` —— 1/9 个有
-- `WanContextWindowsManual` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 9 | 89% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 9 | 100% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -74,4 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，9 个样本，一致性 89%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

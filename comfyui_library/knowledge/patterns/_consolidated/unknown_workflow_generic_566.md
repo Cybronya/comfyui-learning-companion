@@ -3,33 +3,33 @@ name: unknown_workflow_generic_566
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.86
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.813
+common_nodes: [LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json, 视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json, 视频生成/图生视频/Kling_V25TurboStdImageToVideo_v2.5_2033806236075954177.json, 视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json, 视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json]
+members: [图片生成/图生图/SeedReam_5.0_Pro 图片编辑_2079405024744132609.json, 图片生成/图生图/Seedream V5 Pro 图生图｜2K画质_2097867532454686721.json, 图片生成/图生图/Seedream-v5-pro-图生图_2073700294231420929.json, 图片生成/图生图/即梦seedream5.0pro图生图_2075104685031256066.json, 图片生成/文生图/Seedream V5 PRO图片编辑工作流+全节点注释_2075240918592081921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_566
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json、视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json、视频生成/图生视频/Kling_V25TurboStdImageToVideo_v2.5_2033806236075954177.json、视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json、视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedReam_5.0_Pro 图片编辑_2079405024744132609.json、图片生成/图生图/Seedream V5 Pro 图生图｜2K画质_2097867532454686721.json、图片生成/图生图/Seedream-v5-pro-图生图_2073700294231420929.json、图片生成/图生图/即梦seedream5.0pro图生图_2075104685031256066.json、图片生成/文生图/Seedream V5 PRO图片编辑工作流+全节点注释_2075240918592081921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxH3MaxTurboImageToVideo` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `RH_KlingV25TurboStdImageToVideo` —— 2/5 个有
+- `PreviewImage` —— 3/5 个有
+- `PreviewAny` —— 1/5 个有
 
 ## 典型参数
 

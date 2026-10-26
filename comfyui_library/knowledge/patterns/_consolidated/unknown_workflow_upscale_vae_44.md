@@ -3,52 +3,41 @@ name: unknown_workflow_upscale_vae_44
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7645
-common_nodes: [Fast Groups Bypasser (rgthree), IfInnerExecute, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleComparison+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageBatchToImageList, easy imageListToImageBatch]
+coverage: 0.775
+common_nodes: [Image Comparer (rgthree), LoadImage, PrimitiveFloat, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2+TTP无损高清放大8k（RH批量版）_2050833550534029314.json, 图片生成/图生图/SeedVR2+TTP无损高清放大_2045402007468511234.json]
+members: [图片生成/图生图/SeedVR2 高清修复放大_2112095231582760962.json, 图片生成/图生图/SeedVR2.5图片高清放大_2000567352251084802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_44
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2+TTP无损高清放大8k（RH批量版）_2050833550534029314.json、图片生成/图生图/SeedVR2+TTP无损高清放大_2045402007468511234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2 高清修复放大_2112095231582760962.json、图片生成/图生图/SeedVR2.5图片高清放大_2000567352251084802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `IfInnerExecute`
 - `Image Comparer (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PreviewImage`
+- `LoadImage`
+- `PrimitiveFloat`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SimpleComparison+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
+- `SimpleMath+`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowText` —— 1/2 个有
-- `HAIGC_LoadImagesFromZip` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `SelectImageList` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy imageCount` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImpactCompare` —— 1/2 个有
+- `LayerUtility: If ` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy imageSizeBySide` —— 1/2 个有
 
 ## 典型参数
 

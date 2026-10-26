@@ -1,78 +1,93 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_3
 type: Unknown Workflow
-frequency: 34
-level: moderate
-coverage: 0.421676
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 30
+level: strong
+coverage: 0.9251
+common_nodes: [AnyBooleanSwitch, CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, ImageScaleToTotalPixels, ImpactConditionalBranch, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, SimpleMath+, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy anythingIndexSwitch, easy boolean, easy getNode, easy int, easy seed, easy setNode, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 多图参考+二采+高清放大+去噪点+两倍提速_2090100666210537473.json, 视频生成/图生视频/MiniMax H3-图生视频_2103135562264834050.json, 视频生成/图生视频/MiniMax H3-多参考生视频 快速高质量_2098739556991455233.json, 视频生成/图生视频/MiniMax H3-多参考生视频-720p_2094616194417516546.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2094397865706737666.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108223200814518274.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108234638559899650.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2094419718181572610.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2111461486425100290.json, 视频生成/图生视频/MiniMax H3-多参考生视频-自用_2099876679551377409.json, 视频生成/图生视频/MiniMax H3-多参考生视频-高质量hybrid_2095884837700853761.json, 视频生成/图生视频/MiniMax H3多参生视频优化版_支持参考9图3音3视频_2094385613003911169.json, 视频生成/图生视频/MiniMax H3开源-多参考生视频-优化版_2094015909143867394.json, 视频生成/图生视频/MiniMax H3开源-多参考生视频-优化版_2094045987265404929.json, 视频生成/图生视频/MiniMax H3｜让每一帧，都有电影感_2099151915912359938.json, 视频生成/图生视频/MiniMax+H3-多参考生视频-优化版0909_2097580929232498689.json, 视频生成/图生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）_2101587742454009857.json, 视频生成/图生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）二采_2109901185510629378.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-_4步加速-一采二采双输出 工作流_2095689178364334082.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2099771867585409025.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2100032660772057090.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2096048331687555073.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2104154909896699906.json, 视频生成/文生视频/MiniMax H3-多参考生视频-最新优化版_2104888496719745025.json, 视频生成/文生视频/MiniMax H3-多参考生视频_2095195704401682433.json, 视频生成/文生视频/MiniMax H3-多图多音频视频参考生视频-无水印优化版_2095090395578462210.json, 视频生成/文生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）_2101587742454009857.json, 视频生成/文生视频/YZ金鱼-MiniMax H3-多参考生视频-优化版_2092878871120142337.json, 视频生成/文生视频/YZ金鱼-MiniMax H3-多参考生视频-优化版（自用）_2094632571828260866.json, 视频生成/文生视频/【去油人脸一致】MiniMax H3全能多参考潜空间放大_2094826523541983233.json, 视频生成/文生视频/咩咩咩 MiniMax H3-多参考生视频双采_2096479303428038658.json, 视频生成/文生视频/多参考生视频-优化版_2095077768978591746.json, 视频生成/文生视频/工作流lin_2099078938155896833.json, 视频生成/视频生视频/-MiniMax H3-多参考生视频-优化版_2106660994788446209.json]
+members: [视频生成/图生视频/+LTX2.3+-+图生视频+-+1080P_2071400203843887105.json, 视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2063510124647501826.json, 视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2067966236385955842.json, 视频生成/图生视频/LTX2.3  图生视频 - 1080P_2063514992204402689.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2063657847392653313.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2068269572532301826.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2069446019338825729.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2069450456006479874.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2070162122436341762.json, 视频生成/图生视频/LTX2.3 1080P - 图生视频_2063508578169868290.json, 视频生成/图生视频/LTX2.3 1080P - 图生视频_2066799541390757889.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057441075236786177.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057453427411734529.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057457317876158465.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2059892222568517633.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2062564997997350914.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2078533389237444610.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2D动漫循环动态壁纸_2049604629536710658.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2D动漫循环动态壁纸_2073419735643021314.json, 视频生成/图生视频/LTX2.3 动态循环动态壁纸_2075248716268793858.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频 (1)_2058740968471490562.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频 (2)_2066695460735246338.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频_2057276189835878401.json, 视频生成/图生视频/LTX2.3-1080P -50帧率图生视频_2064146119717900289.json, 视频生成/图生视频/LTX2.3图生视频 (2)_2068941546032029697.json, 视频生成/图生视频/LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_2068056046203133953.json, 视频生成/图生视频/LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_2089894207166173185.json, 视频生成/图生视频/图生视频-LTX2.3 1080P 50帧率_2063185673980563457.json, 视频生成/图生视频/极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2057730859171663873.json, 视频生成/图生视频/极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2058710235518427137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 多图参考+二采+高清放大+去噪点+两倍提速_2090100666210537473.json、视频生成/图生视频/MiniMax H3-图生视频_2103135562264834050.json、视频生成/图生视频/MiniMax H3-多参考生视频 快速高质量_2098739556991455233.json、视频生成/图生视频/MiniMax H3-多参考生视频-720p_2094616194417516546.json、视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2094397865706737666.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/图生视频/+LTX2.3+-+图生视频+-+1080P_2071400203843887105.json、视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2063510124647501826.json、视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2067966236385955842.json、视频生成/图生视频/LTX2.3  图生视频 - 1080P_2063514992204402689.json、视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2063657847392653313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：34
-- **可信度**：中等可信
-- **平均知识覆盖**：42%
+- **样本数**：30
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 34 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 30 个 workflow 都包含：
+- `AnyBooleanSwitch`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Text`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `ImpactConditionalBranch`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy boolean`
+- `easy getNode`
+- `easy int`
+- `easy seed`
+- `easy setNode`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 33/34 个有
-- `SetNode` —— 33/34 个有
-- `Text` —— 33/34 个有
-- `LoadAudio` —— 32/34 个有
-- `VHS_LoadVideo` —— 32/34 个有
-- `easy float` —— 32/34 个有
-- `忽略多组孤海` —— 32/34 个有
-- `孤海注释` —— 6/34 个有
-- `llama_cpp_instruct_adv` —— 4/34 个有
-- `llama_cpp_model_loader` —— 4/34 个有
-- `llama_cpp_parameters` —— 4/34 个有
-- `ShowText|pysssss` —— 3/34 个有
-- `easy cleanGpuUsed` —— 3/34 个有
-- `CR Text` —— 1/34 个有
-- `CreateVideo` —— 1/34 个有
-- `EmptyImage` —— 1/34 个有
-- `H3SigmaRefiner` —— 1/34 个有
-- `ImageScale` —— 1/34 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/34 个有
-- `PreviewAny` —— 1/34 个有
-- `PrimitiveBoolean` —— 1/34 个有
-- `easy showAnything` —— 1/34 个有
+- `LTXVTiledVAEDecode` —— 25/30 个有
+- `PrimitiveFloat` —— 25/30 个有
+- `SetReserveVRAM` —— 25/30 个有
+- `CM_BoolToInt` —— 5/30 个有
+- `CM_IntToFloat` —— 5/30 个有
+- `VAEDecode` —— 5/30 个有
+- `DuckHideNode` —— 1/30 个有
+- `SaveImage` —— 1/30 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 30 | 100% |
+| 高度 | 25 | 25 - 25 | 30 | 100% |
 
 ## 常见问题
 
@@ -80,4 +95,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，30 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，30 个样本，取值集中（一致性 100%）

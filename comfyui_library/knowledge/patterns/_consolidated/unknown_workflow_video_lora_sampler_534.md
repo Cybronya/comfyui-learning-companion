@@ -2,81 +2,91 @@
 name: unknown_workflow_video_lora_sampler_534
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.7305
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CM_IntToFloat, ComfyMathExpression, GetNode, INTConstant, ImageBatchMulti, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RH_GetAudioDuration, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy cleanGpuUsed, easy mathInt, easy seed, wanBlockSwap]
+level: moderate
+coverage: 0.75025
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json, 视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json]
+members: [数字人/数字人/SP503-动作迁移+动态运镜（wan2.2 Animate）_1970122062549426177.json, 数字人/数字人/SP503-视频换人+音频同步（wan2.2 Animate）_1969349828675313665.json, 数字人/数字人/最稳定的本地部署动作迁移 表情很ok_1987421383569420290.json, 视频生成/文生视频/🦖Wan Animate2.2换主体_1970311265270853633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_534
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json、视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/SP503-动作迁移+动态运镜（wan2.2 Animate）_1970122062549426177.json、数字人/数字人/SP503-视频换人+音频同步（wan2.2 Animate）_1969349828675313665.json、数字人/数字人/最稳定的本地部署动作迁移 表情很ok_1987421383569420290.json、视频生成/文生视频/🦖Wan Animate2.2换主体_1970311265270853633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：73%
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `ComfyMathExpression`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageLoader`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageSizeAndCount`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RH_GetAudioDuration`
-- `SetNode`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadImage`
+- `PixelPerfectResolution`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMultiFrameRefToVideo`
-- `easy cleanGpuUsed`
-- `easy mathInt`
-- `easy seed`
-- `wanBlockSwap`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiplePathsInput` —— 3/4 个有
-- `Qwen3_VQA` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LongCatTTS` —— 2/4 个有
-- `RunningHub SeedXPro Translator` —— 2/4 个有
+- `BlockifyMask` —— 3/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `DrawMaskOnImage` —— 3/4 个有
+- `GrowMask` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `PointsEditor` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `WanVideoEncode` —— 3/4 个有
+- `WanVideoUni3C_ControlnetLoader` —— 3/4 个有
+- `WanVideoUni3C_embeds` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `PlaySound|pysssss` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `easy convertAnything` —— 2/4 个有
+- `easy positive` —— 2/4 个有
+- `Bjornulf_ShowInt` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CR Text` —— 1/4 个有
 - `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `TT_img_enc` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `ImageGetSize` —— 1/4 个有
+- `ImageResize` —— 1/4 个有
+- `LayerUtility: GeminiV2` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `Qwen3_VQA` —— 1/4 个有
+- `ResizeLongestToNode` —— 1/4 个有
+- `Text Concatenate` —— 1/4 个有
+- `WanVideoTorchCompileSettings` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,8 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

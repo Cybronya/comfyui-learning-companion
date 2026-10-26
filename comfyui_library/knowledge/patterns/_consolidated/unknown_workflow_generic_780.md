@@ -3,45 +3,42 @@ name: unknown_workflow_generic_780
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80875
-common_nodes: [Bjornulf_IfElse, CR Text, ImpactSwitch, LazySwitch1way, LoadAudio, PreviewAny, RH_LLMAPI_NODE, RunningHub_VoxCPM_LoadModel, SaveAudio, easy boolean, easy int, ttN concat]
+coverage: 0.35825
+common_nodes: [CR Text, DapaoGPTImage2AllroundNode, LoadImage, Note Plus (mtb), PrimitiveString, SaveImage, Seed (rgthree), easy showAnything, 孤海注释]
 problems: []
 missing: []
-members: [音频生成/音频生成/-声音克隆_语音设计-多人-VoxCPM2【small-JJ小健健】_2043960563025321986.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人_多人整合版【small-JJ小健健】_2043612797136801793.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【small-JJ小健健】_2042886943972794370.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【老崔】_2062234010562154497.json]
+members: [图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2098970285230874626.json, 图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2100166199358349313.json, 图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json, 图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_780
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/-声音克隆_语音设计-多人-VoxCPM2【small-JJ小健健】_2043960563025321986.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人_多人整合版【small-JJ小健健】_2043612797136801793.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【small-JJ小健健】_2042886943972794370.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【老崔】_2062234010562154497.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2098970285230874626.json、图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2100166199358349313.json、图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json、图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Bjornulf_IfElse`
 - `CR Text`
-- `ImpactSwitch`
-- `LazySwitch1way`
-- `LoadAudio`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
-- `easy boolean`
-- `easy int`
-- `ttN concat`
+- `DapaoGPTImage2AllroundNode`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `PrimitiveString`
+- `SaveImage`
+- `Seed (rgthree)`
+- `easy showAnything`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub_VoxCPM_Generate` —— 3/4 个有
-- `CharacterCount` —— 2/4 个有
-- `RunningHub_VoxCPM_MultiSpeaker` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `easy compare` —— 1/4 个有
+- `DapaoBatchImageGrid` —— 3/4 个有
+- `DapaoDetailFlowPromptNode` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `DapaoVisualStylePromptNode` —— 1/4 个有
 
 ## 典型参数
 

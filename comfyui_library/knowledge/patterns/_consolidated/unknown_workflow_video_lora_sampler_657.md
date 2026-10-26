@@ -2,79 +2,79 @@
 name: unknown_workflow_video_lora_sampler_657
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.871333
-common_nodes: [CreateCFGScheduleFloatList, DF_Integer, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, RH_Translator, ShowText|pysssss, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, string_util_StrReplace]
-problems: []
+level: strong
+coverage: 0.771
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy clearCacheAll, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json, 视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json, 视频生成/图生视频/图生视频_1965606390897233921.json]
+members: [数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json, 视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json, 视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_657
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json、视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json、视频生成/图生视频/图生视频_1965606390897233921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json、视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json、视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `DF_Integer`
-- `GetImageSizeAndCount`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `Fast Groups Bypasser (rgthree)`
 - `INTConstant`
-- `JWInteger`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy int`
-- `string_util_StrReplace`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
+- `easy clearCacheAll`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `HunyuanVideoFoley` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `easy clearCacheAll` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `TorchCompileModelWanVideoV2` —— 2/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageColorMatch+` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `StringLength` —— 1/3 个有
+- `VHS_LoadVideoPath` —— 1/3 个有
+- `VHS_PruneOutputs` —— 1/3 个有
+- `VHS_SelectFilename` —— 1/3 个有
+- `VHS_SplitImages` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

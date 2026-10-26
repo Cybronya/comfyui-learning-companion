@@ -3,47 +3,32 @@ name: unknown_workflow_generic_1069
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.718
-common_nodes: [BreezeTTS2LoadModel, BreezeTTS2MultiSpeaker, BreezeTTS2Speaker, BreezeTTS2VoiceClone, BreezeTTS2VoiceDesign, BreezeTTS2VoiceDirection, Fast Groups Bypasser (rgthree), GetNode, LoadAudio, PreviewAudio, SaveAudioAdvanced, SetNode, ShowText|pysssss, Text Multiline, WhisperSTT, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.733333
+common_nodes: [CR Prompt Text, RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/001-brezze-tts2-智能创作助手_2095422714638069762.json, 音频生成/音频生成/001-brezze-tts2-智能创作助手v3.2_2096507341595299841.json, 音频生成/音频生成/001-brezze-tts2-智能创作助手v3.4_2097607239157768193.json]
+members: [图片生成/文生图/GT-Image2--官方文生图_2054092104946724866.json, 图片生成/文生图/全能图片G2 Images 2.0模型图片编辑+文生图_2061697098973794305.json, 图片生成/文生图/文生图-全能图片G2--RH官方稳定版--10比例-支持4K_2049692994122551297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1069
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/001-brezze-tts2-智能创作助手_2095422714638069762.json、音频生成/音频生成/001-brezze-tts2-智能创作助手v3.2_2096507341595299841.json、音频生成/音频生成/001-brezze-tts2-智能创作助手v3.4_2097607239157768193.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/GT-Image2--官方文生图_2054092104946724866.json、图片生成/文生图/全能图片G2 Images 2.0模型图片编辑+文生图_2061697098973794305.json、图片生成/文生图/文生图-全能图片G2--RH官方稳定版--10比例-支持4K_2049692994122551297.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BreezeTTS2LoadModel`
-- `BreezeTTS2MultiSpeaker`
-- `BreezeTTS2Speaker`
-- `BreezeTTS2VoiceClone`
-- `BreezeTTS2VoiceDesign`
-- `BreezeTTS2VoiceDirection`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Multiline`
-- `WhisperSTT`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `CR Prompt Text`
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
 
 ## 典型参数
 

@@ -1,67 +1,74 @@
 ---
 name: unknown_workflow_sampler_clip_unet_15
 type: Unknown Workflow
-frequency: 29
-level: moderate
-coverage: 0.897586
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 30
+level: weak
+coverage: 0.8486
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2090754065042067457.json, 图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2104751982484484098.json, 图片生成/图生图/krea2 i2i 一键洗图 快速生图_2091873720318124033.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2096205084123287553.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2105994124833943553.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2106023301272399873.json, 图片生成/图生图/krea2 i2i 一键洗图工作流_2091857020520591361.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2083858292392153089.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2087522709961011202.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2089309377919545345.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2096201820833144834.json, 图片生成/图生图/krea2 turbo图生图_2070403435148693505.json, 图片生成/图生图/krea2 turbo图生图_2070410400897781762.json, 图片生成/图生图/krea2 turbo图生图_2082371403587866626.json, 图片生成/图生图/krea2 turbo图生图_2083452651290849282.json, 图片生成/图生图/krea2 turbo图生图洗图_2070372340764078082.json, 图片生成/图生图/krea2 turbo图生图洗图_2070424965035421697.json, 图片生成/图生图/krea2_i2i_图生图+洗图工作流_2088256007804903425.json, 图片生成/图生图/krea2自用图生图_2090088764180885505.json, 图片生成/图生图/krea视频洗图工作流_2075031802141564930.json, 图片生成/图生图/图生图+洗图=krea2 i2i！艾橘溪_2083189890023518210.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2100409782829150209.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2101262934214275074.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2108737708976852993.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2108741957932642306.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2112736624135196673.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2112738893312380929.json, 图片生成/文生图/krea turbo洗图+seedvr2高清放大_2070404592160043010.json, 数字人/数字人/高清放大洗图krea2 +SeedVR+放大+图生图 直出4K_2088859290869264386.json]
+members: [comfyui-workflow-templates-json/hidream_i1_dev.json, comfyui-workflow-templates-json/hidream_i1_fast.json, comfyui-workflow-templates-json/hidream_i1_full.json, 图片生成/图生图/Z-Image_turbo文生图-又快又好_2101288087241445378.json, 图片生成/图生图/Z-image-base文生图（新国风浮世绘）_2016739215698038785.json, 图片生成/图生图/qwen2512粗线条水墨_2070337251640434689.json, 图片生成/文生图/Qwen-Image-2512-文生图-4步加速_2038974712612655106.json, 图片生成/文生图/Qwen-Image-2512-文生图-提示词优化_2007102360237117441.json, 图片生成/文生图/logo生成器+QwenImage=艾橘溪_1954145034784391169.json, 图片生成/文生图/qwen-image2512-q版风格动漫_2056048226654015490.json, 图片生成/文生图/qwen-image2512q版3d风格_2057869164727062530.json, 图片生成/文生图/qwen2512定格玩偶_2037359907288125442.json, 图片生成/文生图/qwen2512日系动漫素描_2032364402506211330.json, 图片生成/文生图/qwen2512水墨中式枯笔焦墨勾线插画_2062947076870336513.json, 图片生成/文生图/qwen2512水墨国风_2063805351761367042.json, 图片生成/文生图/qwen2512粗线条水墨_2067961144140197890.json, 图片生成/文生图/qwen2512粗线条水墨_2068857089002393601.json, 图片生成/文生图/qwen2512粗线条水墨_2069676975639326721.json, 图片生成/文生图/qwen2512粗线条水墨_2080477072551665665.json, 图片生成/文生图/qwen2512粗线条水墨_2080481494887391233.json, 图片生成/文生图/qwen2512粗线条水墨_2112167137883283458.json, 图片生成/文生图/qwen2512线条感动漫_2033458216113278977.json, 图片生成/文生图/qwen2512马克笔插画_2047576499305320449.json, 图片生成/文生图/qwen2512马克笔插画_2067421994693521410.json, 图片生成/文生图/qwen2512马克笔插画_2069671724421046273.json, 图片生成/文生图/qwen2512马克笔插画_2080470094504873985.json, 图片生成/文生图/qwen2512马克笔插画_2080472510591750146.json, 图片生成/文生图/qwen2512马克笔插画_2081934496953356289.json, 图片生成/文生图/手绘画本_2022488976958951425.json, 视频生成/图生视频/qwen-image2512q版3d风格_2067062569453576193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_15
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2090754065042067457.json、图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2104751982484484098.json、图片生成/图生图/krea2 i2i 一键洗图 快速生图_2091873720318124033.json、图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2096205084123287553.json、图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2105994124833943553.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（comfyui-workflow-templates-json/hidream_i1_dev.json、comfyui-workflow-templates-json/hidream_i1_fast.json、comfyui-workflow-templates-json/hidream_i1_full.json、图片生成/图生图/Z-Image_turbo文生图-又快又好_2101288087241445378.json、图片生成/图生图/Z-image-base文生图（新国风浮世绘）_2016739215698038785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：29
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：30
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 30 个 workflow 都包含：
 - `CLIPTextEncode`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 28/29 个有
-- `LoadImage` —— 28/29 个有
-- `PrimitiveInt` —— 28/29 个有
-- `ImageResizeKJv2` —— 19/29 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/29 个有
-- `Image Comparer (rgthree)` —— 8/29 个有
-- `SeedVR2LoadDiTModel` —— 2/29 个有
-- `SeedVR2LoadVAEModel` —— 2/29 个有
-- `SeedVR2VideoUpscaler` —— 2/29 个有
-- `ImageScaleToTotalPixels` —— 1/29 个有
-- `Int` —— 1/29 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/29 个有
-- `LoraLoaderModelOnly` —— 1/29 个有
-- `RBGImageStitchPlus` —— 1/29 个有
-- `RepeatLatentBatch` —— 1/29 个有
-- `VHS_LoadVideo` —— 1/29 个有
+- `CLIPLoader` —— 27/30 个有
+- `ModelSamplingAuraFlow` —— 26/30 个有
+- `LoraLoaderModelOnly` —— 25/30 个有
+- `Text Multiline` —— 25/30 个有
+- `Text Concatenate` —— 23/30 个有
+- `LatentUpscaleBy` —— 22/30 个有
+- `EG_K_LATENT` —— 6/30 个有
+- `ModelSamplingSD3` —— 3/30 个有
+- `QuadrupleCLIPLoader` —— 3/30 个有
+- `AddLabel` —— 2/30 个有
+- `Int` —— 2/30 个有
+- `easy showAnything` —— 2/30 个有
+- `LoraLoader` —— 1/30 个有
+- `RH_LLMAPI_NODE` —— 1/30 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 12 | 4 - 50 | 30 | 20% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 30 | 18% |
+| 采样算法 | euler_ancestral | - | 30 | 57% |
+| 调度器 | simple | - | 30 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 30 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/30 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 12，观测区间 4 - 50，30 个样本，取值分散，一致性仅 20%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，30 个样本，取值分散，一致性仅 18%
+- 采样算法 最常用 euler_ancestral，30 个样本，一致性 57%
+- 调度器 最常用 simple，30 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，30 个样本，取值集中（一致性 100%）

@@ -2,62 +2,70 @@
 name: unknown_workflow_sampler_clip_unet_361
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.814333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.758
+common_nodes: [Anything Everywhere, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ImageCASharpening+, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/角色设计-克莱因_2026973403596464130.json, 图片生成/文生图/StyleSculpt_角色设计(游戏角色设计、动画设定本)_2021892139688398850.json, 图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json]
+members: [图片生成/图生图/【字体风格模仿】Qwen图生图-8步加速（持续加更）_1954926788238458881.json, 图片生成/文生图/【即梦平替】Qwen-image文生图（基础流）_1953815039516004354.json, 图片生成/文生图/【超全字体设计】Qwen文生图-8步加速（持续加更）_1954331468988334082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_361
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/角色设计-克莱因_2026973403596464130.json、图片生成/文生图/StyleSculpt_角色设计(游戏角色设计、动画设定本)_2021892139688398850.json、图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【字体风格模仿】Qwen图生图-8步加速（持续加更）_1954926788238458881.json、图片生成/文生图/【即梦平替】Qwen-image文生图（基础流）_1953815039516004354.json、图片生成/文生图/【超全字体设计】Qwen文生图-8步加速（持续加更）_1954331468988334082.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
+- `Anything Everywhere`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `ImageCASharpening+`
 - `KSamplerSelect`
-- `LoadImage`
+- `ModelSamplingAuraFlow`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `JDCN_StringToList` —— 2/3 个有
-- `JWStringConcat` —— 2/3 个有
+- `CFGGuider` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `EmptyLatentImage` —— 2/3 个有
+- `FluxResolutionNode` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
 - `LoraLoaderModelOnly` —— 2/3 个有
-- `ProcessString` —— 2/3 个有
-- `Qwen3_VQA` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `ImagePadForOutpaint` —— 1/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `RH_Prompter` —— 2/3 个有
+- `easy textSwitch` —— 2/3 个有
+- `BasicGuider` —— 1/3 个有
+- `CR Text Replace` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 840 | - | 2 | 100% |
+| 高度 | 1216 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -65,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 840，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1216，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

@@ -2,125 +2,62 @@
 name: text_to_image_video_lora_sampler_138
 type: Text To Image
 frequency: 5
-level: moderate
-coverage: 0.737
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, EmptyLTXVLatentVideo, EmptyLatentImage, EnhancedLoadDiffusionModel, ExtractNFrames, FluxKontextMultiReferenceLatentMethod, GetNode, INTConstant, ImageResizeKJv2, ImageScaleToTotalPixels, Int, JWInteger, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LiconMSR, LoadImage, LoraLoaderModelOnly, LowVRAMCheckpointLoader, ManualSigmas, PreviewImage, RH_Captioner, RandomInt, RandomNoise, SamplerCustomAdvanced, SetNode, Split String by Commas, StringReplace, Text, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageCount, easy indexAnything, easy showAnything]
+level: strong
+coverage: 0.8988
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/ltx-animate联合图生视频漫剧电商服装分镜真人_2074464289334845442.json, 视频生成/图生视频/ltx-scail2联合多参图生视频漫剧电商服装分镜真人_2074449807627874305.json, 视频生成/图生视频/最新版 LTX 无API图生多参分镜视频漫剧打斗电商服装分镜真人_2073690383254646785.json, 视频生成/图生视频/最新版LTX-ANIMATE多参联合漫剧电商服装分镜真人_2074389976934080514.json, 视频生成/图生视频/最新版LTX-SCAIL2多参联合图生视频漫剧电商服装分镜真人_2073960338130817025.json]
+members: [数字人/数字人/seedvr2超分工作流｜数字人视频提清｜低清素材秒变高清_2104833908113235969.json, 视频生成/图生视频/MiniMax H3电影MV一键生成 图生视频创作工具_2098834260370219009.json, 视频生成/图生视频/MiniMaxH3全功能极简创作台 二采加速Lora武戏组合工具_2113394381523873794.json, 视频生成/图生视频/minimaxH3电影MV一键成片工作流｜图生视频直出大片质感_2099107946394378241.json, 视频生成/图生视频/minimaxh3全功能极简创作台｜二采加加速lora加武戏lora新组合_2113494658637713410.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_138
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ltx-animate联合图生视频漫剧电商服装分镜真人_2074464289334845442.json、视频生成/图生视频/ltx-scail2联合多参图生视频漫剧电商服装分镜真人_2074449807627874305.json、视频生成/图生视频/最新版 LTX 无API图生多参分镜视频漫剧打斗电商服装分镜真人_2073690383254646785.json、视频生成/图生视频/最新版LTX-ANIMATE多参联合漫剧电商服装分镜真人_2074389976934080514.json、视频生成/图生视频/最新版LTX-SCAIL2多参联合图生视频漫剧电商服装分镜真人_2073960338130817025.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/seedvr2超分工作流｜数字人视频提清｜低清素材秒变高清_2104833908113235969.json、视频生成/图生视频/MiniMax H3电影MV一键生成 图生视频创作工具_2098834260370219009.json、视频生成/图生视频/MiniMaxH3全功能极简创作台 二采加速Lora武戏组合工具_2113394381523873794.json、视频生成/图生视频/minimaxH3电影MV一键成片工作流｜图生视频直出大片质感_2099107946394378241.json、视频生成/图生视频/minimaxh3全功能极简创作台｜二采加加速lora加武戏lora新组合_2113494658637713410.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `EnhancedLoadDiffusionModel`
-- `ExtractNFrames`
-- `FluxKontextMultiReferenceLatentMethod`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `JWInteger`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LiconMSR`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `PreviewImage`
-- `RH_Captioner`
-- `RandomInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `Split String by Commas`
-- `StringReplace`
-- `Text`
-- `TextEncodeQwenImageEditPlus`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy indexAnything`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatenate_UTK` —— 4/5 个有
-- `CR Prompt Text` —— 3/5 个有
-- `DrawViTPose` —— 3/5 个有
-- `OnnxDetectionModelLoader` —— 3/5 个有
-- `PoseAndFaceDetection` —— 3/5 个有
-- `TextConcatenate_UTK` —— 3/5 个有
-- `WanAnimatePlus BlockSwap` —— 3/5 个有
-- `WanVideoAnimateEmbeds` —— 3/5 个有
-- `WanVideoClipVisionEncode` —— 3/5 个有
-- `WanVideoDecode` —— 3/5 个有
-- `WanVideoLoraSelectMulti` —— 3/5 个有
-- `WanVideoModelLoader` —— 3/5 个有
-- `WanVideoSampler` —— 3/5 个有
-- `WanVideoSetBlockSwap` —— 3/5 个有
-- `WanVideoSetLoRAs` —— 3/5 个有
-- `WanVideoTextEncodeCached` —— 3/5 个有
-- `WanVideoVAELoader` —— 3/5 个有
-- `BatchImagesNode` —— 2/5 个有
-- `CLIPVisionEncode` —— 2/5 个有
-- `CheckpointLoaderSimple` —— 2/5 个有
-- `DiffusionModelLoaderKJ` —— 2/5 个有
-- `ModelSamplingSD3` —— 2/5 个有
-- `SAM3_VideoTrack` —— 2/5 个有
-- `SCAIL2ColoredMask` —— 2/5 个有
-- `WanChunkFeedForward` —— 2/5 个有
-- `WanContextWindowsManual` —— 2/5 个有
-- `WanSCAILMultirefInfinity` —— 2/5 个有
-- `WanVideoMemoryEfficientSageAttentionPatch` —— 2/5 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/5 个有
-- `GIMMVFI_interpolate` —— 1/5 个有
+- `SaveImage` —— 3/5 个有
+- `NanFengH3MultiReferenceGeneratorV10` —— 2/5 个有
+- `WenWuMiniMaxH3Unified` —— 2/5 个有
+- `ImageScale` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `Vignette` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1280 | 241 - 1280 | 5 | 41% |
-| 高度 | 720 | 50 - 720 | 5 | 27% |
 
 ## 常见问题
 
@@ -130,11 +67,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1280，观测区间 241 - 1280，5 个样本，取值分散，一致性仅 41%
-- 高度 中位数 720，观测区间 50 - 720，5 个样本，取值分散，一致性仅 27%
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

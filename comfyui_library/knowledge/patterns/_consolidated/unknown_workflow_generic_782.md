@@ -3,38 +3,35 @@ name: unknown_workflow_generic_782
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.951
-common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, IndexTTS2Run, LoadAudio, PreviewAudio]
+coverage: 0.73325
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json, 音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json, 音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json, 音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json]
+members: [图片生成/图生图/高清放大工作流_2086423456144519169.json, 图片生成/图生图/高清放大（SeedVR2）_2014775599767752705.json, 图片生成/图生图/黑鹤-SeedVR2高清放大_2095521993763418113.json, 图片生成/图生图/黑鹤-SeedVR2高清放大_2100474974531309570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_782
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json、音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json、音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json、音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/高清放大工作流_2086423456144519169.json、图片生成/图生图/高清放大（SeedVR2）_2014775599767752705.json、图片生成/图生图/黑鹤-SeedVR2高清放大_2095521993763418113.json、图片生成/图生图/黑鹤-SeedVR2高清放大_2100474974531309570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `CR Text` —— 2/4 个有
+- `SeedVR2ExtraArgs` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 

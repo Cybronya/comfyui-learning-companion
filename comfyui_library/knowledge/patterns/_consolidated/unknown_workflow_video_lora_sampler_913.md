@@ -3,61 +3,73 @@ name: unknown_workflow_video_lora_sampler_913
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.643
-common_nodes: [GetImageRangeFromBatch, GetNode, GrowMask, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.5325
+common_nodes: [ApplyFaceProcessor, BlockifyMask, CLIPVisionLoader, ConvertAny2Float, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceProcessorLoader, FrameSelector, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewAudio, Sam2Segmentation, SetNode, SoundFlow_SetLength, Textbox, VHS_LoadVideo, VHS_VideoCombine, VideoInputPreprocessor, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, ttN float]
 problems: []
 missing: []
-members: [视频生成/图生视频/🦖Mocha角色替换_1980895212593659906.json, 视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json]
+members: ["视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json", 视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_913
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🦖Mocha角色替换_1980895212593659906.json、视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json、视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageRangeFromBatch`
+- `ApplyFaceProcessor`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `ConvertAny2Float`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `FaceProcessorLoader`
+- `FrameSelector`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `GrowMask`
-- `ImageConcanate`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskPreview`
-- `MochaEmbeds`
-- `PointsEditor`
-- `PreviewImage`
+- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewAudio`
+- `Sam2Segmentation`
 - `SetNode`
+- `SoundFlow_SetLength`
+- `Textbox`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VideoInputPreprocessor`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy showAnything`
+- `ttN float`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_ImageFaceCrop` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LynxInsightFaceCrop` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `SeCModelLoader` —— 1/2 个有
-- `SeCVideoSegmentation` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
 
 ## 典型参数
 

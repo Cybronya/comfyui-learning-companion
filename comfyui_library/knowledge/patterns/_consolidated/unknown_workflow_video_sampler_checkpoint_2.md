@@ -3,28 +3,27 @@ name: unknown_workflow_video_sampler_checkpoint_2
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.902375
-common_nodes: [ImageOnlyCheckpointLoader, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, VHS_VideoCombine]
+coverage: 0.947875
+common_nodes: [ImageOnlyCheckpointLoader, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Sonic图片数字人_1918866017932476417.json, 视频生成/图生视频/Sonic图片数字人_1999009654929772545.json, 视频生成/图生视频/Sonic对口型数字人_1922467727339094018.json, 视频生成/图生视频/Sonic数字人V1_1892161116607520769.json, 视频生成/图生视频/Sonic数字人_1943493647671173122.json, 视频生成/图生视频/Sonic无限制数字人_1915064259728834561.json, 视频生成/图生视频/Sonic真人_卡通数字人工作流_1905890438115692545.json, 视频生成/图生视频/啊癫 sonic数字人带货_1907741322999177217.json]
+members: [数字人/数字人/Sonic数字人解决方案，唱歌，口播无所不能！_1921799292338520065.json, 数字人/数字人/Sonic真人数字人_2066858697283956738.json, 数字人/数字人/sonic数字人_1904756089903321090.json, 数字人/数字人/sonic数字人_1925078177524477954.json, 数字人/数字人/数字人一键唱歌_1898634893637668866.json, 视频生成/图生视频/Sonic 数字人（可配置视频尺寸）_2104499076824920066.json, 视频生成/图生视频/Sonic数字人-Dawn_1909773433918451714.json, 视频生成/图生视频/图生视频-Sonic数字人唱歌对口型_1909784768551055362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_2
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Sonic图片数字人_1918866017932476417.json、视频生成/图生视频/Sonic图片数字人_1999009654929772545.json、视频生成/图生视频/Sonic对口型数字人_1922467727339094018.json、视频生成/图生视频/Sonic数字人V1_1892161116607520769.json、视频生成/图生视频/Sonic数字人_1943493647671173122.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Sonic数字人解决方案，唱歌，口播无所不能！_1921799292338520065.json、数字人/数字人/Sonic真人数字人_2066858697283956738.json、数字人/数字人/sonic数字人_1904756089903321090.json、数字人/数字人/sonic数字人_1925078177524477954.json、数字人/数字人/数字人一键唱歌_1898634893637668866.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `ImageOnlyCheckpointLoader`
-- `LoadAudio`
 - `LoadImage`
 - `SONICSampler`
 - `SONICTLoader`
@@ -32,12 +31,12 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 2/8 个有
-- `GetNode` —— 1/8 个有
-- `ImageScale` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `easy imageSize` —— 1/8 个有
+- `LoadAudio` —— 6/8 个有
+- `VHS_LoadAudioUpload` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `ImageResizeKJ` —— 2/8 个有
+- `PreviewImage` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
 
 ## 典型参数
 

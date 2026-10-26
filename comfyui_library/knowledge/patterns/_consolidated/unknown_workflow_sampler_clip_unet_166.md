@@ -2,75 +2,84 @@
 name: unknown_workflow_sampler_clip_unet_166
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.905625
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, SeedVR2, SeedVR2BlockSwap, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.72675
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualModelGuider, Ideogram4Scheduler, KSamplerSelect, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z_image_高清放大_2002351849619505154.json, 图片生成/文生图/Z_image告别图片单一性（蓝色多脑盒）_2000908501360799745.json, 图片生成/文生图/lora生图_2_2019229829660418050.json, 图片生成/文生图/lora生图_3_api_2019356189305348098.json, 图片生成/文生图/lora生图_4_api_2019591115476836353.json, 图片生成/文生图/lora生图_5_api_2019618073682124802.json, 图片生成/文生图/​动漫角色融合现实_2068958522259369986.json, 图片生成/文生图/女团生成器_Zimage_2003080375004012545.json]
+members: [图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json, 图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json, 图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json, 图片生成/文生图/[Ideogram 4 系列 01] Ideogram 4 第一课：官方 ComfyUI 工作流解析_2084558233645174785.json, 图片生成/文生图/[Ideogram 4 系列 02] Prompt Builder 解析_2084481304804024321.json, 图片生成/文生图/ideogram4_t2i文生图_2064543465328963586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_166
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Z_image_高清放大_2002351849619505154.json、图片生成/文生图/Z_image告别图片单一性（蓝色多脑盒）_2000908501360799745.json、图片生成/文生图/lora生图_2_2019229829660418050.json、图片生成/文生图/lora生图_3_api_2019356189305348098.json、图片生成/文生图/lora生图_4_api_2019591115476836353.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json、图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json、图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `Ideogram4Scheduler`
+- `KSamplerSelect`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `LoraLoader|pysssss` —— 3/8 个有
-- `SeedVR2ExtraArgs` —— 3/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `MultiLinePromptIndex` —— 1/8 个有
-- `StringConcatenate` —— 1/8 个有
+- `ComfyNumberConvert` —— 7/8 个有
+- `CustomCombo` —— 7/8 个有
+- `JsonExtractString` —— 7/8 个有
+- `StringReplace` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 6/8 个有
+- `PrimitiveInt` —— 6/8 个有
+- `ResolutionSelector` —— 6/8 个有
+- `ComfyMathExpression` —— 5/8 个有
+- `PreviewAny` —— 5/8 个有
+- `PreviewImage` —— 3/8 个有
+- `llama_cpp_instruct_adv` —— 3/8 个有
+- `llama_cpp_model_loader` —— 3/8 个有
+- `llama_cpp_parameters` —— 3/8 个有
+- `EmptyLatentImage` —— 2/8 个有
+- `GetNode` —— 2/8 个有
+- `Ideogram4PromptBuilderKJ` —— 2/8 个有
+- `JjkText` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `easy promptLine` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `InversionDemoLazySwitch` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
+- `ModelSamplingAuraFlow` —— 1/8 个有
+- `SimpleToggleNode` —— 1/8 个有
+- `StringSplitSelect` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 1 - 12 | 8 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | res_multistep | - | 8 | 50% |
-| 调度器 | simple | - | 8 | 62% |
-| 重绘幅度 | 1 | 0.8 - 1 | 8 | 93% |
-| LoRA 模型强度 | 1 | 0 - 1 | 3 | 29% |
-| LoRA 文本强度 | 1 | 0 - 1 | 3 | 29% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 1 - 12，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，8 个样本，一致性 50%
-- 调度器 最常用 simple，8 个样本，一致性 62%
-- 重绘幅度 中位数 1，观测区间 0.8 - 1，8 个样本，取值集中（一致性 93%）
-- LoRA 模型强度 中位数 1，观测区间 0 - 1，3 个样本，取值分散，一致性仅 29%
-- LoRA 文本强度 中位数 1，观测区间 0 - 1，3 个样本，取值分散，一致性仅 29%
-- 高发问题（9/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

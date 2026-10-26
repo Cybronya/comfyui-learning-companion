@@ -1,64 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_50
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.939875
-common_nodes: [ApplyDreamO, CLIPTextEncode, DreamOProcessorLoader, DreamORefEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.848667
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json, 图片生成/图生图/DreamO 官方急速版_1929981652209143809.json, 图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json, 图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json, 图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json, 图片生成/图生图/【极速版】DreamO图像编辑（1分钟出图）_1930877725429399554.json, 图片生成/图生图/和拉布布合影-DreamO_1928569169275658241.json, 图片生成/文生图/DreamO官方10秒加速_IP&ID&Try-On和Style轻松搞定_字节开源服装一致性_1931254643706540033.json]
+members: [图片生成/文生图/nunchaku-FLUX.1-Krea_1951667086886121474.json, 图片生成/文生图/nunchaku-flux.1(Lora加速与滤镜)-dev_1947113386972327938.json, 图片生成/文生图/文生图 — Flux 女孩二次元快速出图工作流 v 1.5_1915672810759589889.json, 图片生成/文生图/文生图 — Flux 女孩二次元快速出图工作流_1910229372215750657.json, 图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json, 图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流_1909854047942209538.json, 图片生成/文生图/文生图基础款V1_1910318940827123714.json, 图片生成/文生图/文生图基础款_1910140152096747522.json, 图片生成/文生图/最新Flux5秒文生图  Nunchaku_1914304383847231490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_50
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json、图片生成/图生图/DreamO 官方急速版_1929981652209143809.json、图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json、图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json、图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/nunchaku-FLUX.1-Krea_1951667086886121474.json、图片生成/文生图/nunchaku-flux.1(Lora加速与滤镜)-dev_1947113386972327938.json、图片生成/文生图/文生图 — Flux 女孩二次元快速出图工作流 v 1.5_1915672810759589889.json、图片生成/文生图/文生图 — Flux 女孩二次元快速出图工作流_1910229372215750657.json、图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ApplyDreamO`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `DreamOProcessorLoader`
-- `DreamORefEncode`
-- `DualCLIPLoader`
+- `EmptySD3LatentImage`
 - `FluxGuidance`
-- `KSampler`
-- `LoadImage`
-- `LoraLoaderModelOnly`
+- `KSamplerSelect`
+- `ModelSamplingFlux`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/8 个有
-- `EmptySD3LatentImage` —— 5/8 个有
-- `CR SDXL Aspect Ratio` —— 3/8 个有
-- `ImageConcanate` —— 3/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `RH_Translator` —— 2/8 个有
-- `Anything Everywhere3` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `ImageScaleDownToSize` —— 1/8 个有
-- `LayerUtility: TextBox` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
+- `PreviewImage` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `ClownOptions_DetailBoost_Beta` —— 1/9 个有
+- `ClownOptions_SwapSampler_Beta` —— 1/9 个有
+- `ClownsharKSampler_Beta` —— 1/9 个有
+- `LatentUpscaleBy` —— 1/9 个有
+- `SharkOptions_Beta` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 12 - 30 | 8 | 60% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | bong_tangent | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 10 | - | 1 | 100% |
+| 采样算法 | -1 | - | 1 | 100% |
+| 调度器 | -0.67 | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -66,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 12 - 30，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 风险：重绘幅度 观测到 1，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

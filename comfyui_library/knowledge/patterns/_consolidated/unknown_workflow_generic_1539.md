@@ -3,34 +3,32 @@ name: unknown_workflow_generic_1539
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7665
-common_nodes: [JjkText, LoadImage, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 1
+common_nodes: [GuHaiAutoImageSplit, ImageLoader, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2OfficialImageToImage, SaveImage, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3-地图旅游_2084246353793871874.json, 视频生成/图生视频/电商产品服装展示 多模态 minimax H3_2080142968727625730.json]
+members: [图片生成/图生图/最新G image2 官方满血版电商主图批量拍摄无需提示词工作流 V1.0_2051112978983993346.json, 图片生成/文生图/南音满血版，电商主图批量制作，电影级，_2092702282516361217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1539
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-地图旅游_2084246353793871874.json、视频生成/图生视频/电商产品服装展示 多模态 minimax H3_2080142968727625730.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方满血版电商主图批量拍摄无需提示词工作流 V1.0_2051112978983993346.json、图片生成/文生图/南音满血版，电商主图批量制作，电影级，_2092702282516361217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
+- `GuHaiAutoImageSplit`
+- `ImageLoader`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `ttN concat`
 
 ## 典型参数
 

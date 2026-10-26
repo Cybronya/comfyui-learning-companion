@@ -3,34 +3,36 @@ name: unknown_workflow_generic_358
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.762
-common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.868143
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageStitch, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/image two文生图_2060255026014150658.json, 图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json, 图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json, 图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json, 图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json, 图片生成/文生图/全能图像G2-文生图_2048754806386331650.json, 图片生成/文生图/角色资产创建（API）_2051982716761067521.json]
+members: [图片生成/图生图/FS-全能图片-单图编辑_2114606389468418050.json, 图片生成/图生图/FS-全能图片-多图编辑_2114608020033466370.json, 图片生成/图生图/全能图片Pro工作流合集_2002317492418670593.json, 图片生成/图生图/全能图片Pro工作流合集（自用）_2054091089384099842.json, 图片生成/图生图/全能图片Pro换装工作流_2029768552751833089.json, 图片生成/文生图/FS-全能图片-文生图_2114604849877831681.json, 图片生成/文生图/全能图片2.1工作流合集_2108886144699166722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_358
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/image two文生图_2060255026014150658.json、图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json、图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json、图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json、图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FS-全能图片-单图编辑_2114606389468418050.json、图片生成/图生图/FS-全能图片-多图编辑_2114608020033466370.json、图片生成/图生图/全能图片Pro工作流合集_2002317492418670593.json、图片生成/图生图/全能图片Pro工作流合集（自用）_2054091089384099842.json、图片生成/图生图/全能图片Pro换装工作流_2029768552751833089.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `RH_RhartImageG2TextToImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageStitch`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/7 个有
-- `PreviewImage` —— 4/7 个有
-- `LoadImage` —— 2/7 个有
-- `RH_RhartImageNProEdit` —— 1/7 个有
+- `RH_RhartImageNNb21ImageToImage` —— 4/7 个有
+- `RH_RhartImageNNb21TextToImage` —— 4/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/7 个有
 
 ## 典型参数
 

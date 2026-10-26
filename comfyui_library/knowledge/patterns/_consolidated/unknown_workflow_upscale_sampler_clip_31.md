@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_31
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.81275
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSamplerAdvanced, KSamplerSelect, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.7988
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/VividMuse真实人像摄影洗图V1_2017936931623018498.json, 图片生成/图生图/VividMuse真实人像摄影洗图V2_2036774382349066242.json, 图片生成/图生图/Z-image+FLUX.2 klein真实人像洗图流_2083187504395677698.json, 图片生成/文生图/VividMuse真实人像摄影V1_2015351994625564673.json]
+members: [图片生成/图生图/万物换背景（可手动控制位置） Klein Flux2 高清放大_2017792741320695809.json, 图片生成/图生图/万物融图，透明融图 Klein Flux2 高清放大。可手动控制位置_2017797048917041153.json, 图片生成/图生图/融图换背景（电商）-FLUX-Klein版_2015613997852135426.json, 图片生成/图生图/超强图片放大-去除ai感拒绝塑料感_2036681605707730945.json, 图片生成/文生图/最新FK2真实感图像高清重绘放大+seedvr2_2035635722681585665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/VividMuse真实人像摄影洗图V1_2017936931623018498.json、图片生成/图生图/VividMuse真实人像摄影洗图V2_2036774382349066242.json、图片生成/图生图/Z-image+FLUX.2 klein真实人像洗图流_2083187504395677698.json、图片生成/文生图/VividMuse真实人像摄影V1_2015351994625564673.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/万物换背景（可手动控制位置） Klein Flux2 高清放大_2017792741320695809.json、图片生成/图生图/万物融图，透明融图 Klein Flux2 高清放大。可手动控制位置_2017797048917041153.json、图片生成/图生图/融图换背景（电商）-FLUX-Klein版_2015613997852135426.json、图片生成/图生图/超强图片放大-去除ai感拒绝塑料感_2036681605707730945.json、图片生成/文生图/最新FK2真实感图像高清重绘放大+seedvr2_2035635722681585665.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Fast Groups Bypasser (rgthree)`
 - `Flux2Scheduler`
-- `GetImageSize+`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LoadImage`
 - `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
@@ -43,45 +43,39 @@ source: knowledge_consolidation
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 3/4 个有
-- `Florence2Run` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `LayerUtility: ImageReel` —— 3/4 个有
-- `LayerUtility: ImageReelComposit` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `WD14Tagger|pysssss` —— 3/4 个有
-- `easy imageColorMatch` —— 3/4 个有
-- `easy promptConcat` —— 3/4 个有
-- `BasicScheduler` —— 2/4 个有
-- `SigmasPreview` —— 2/4 个有
-- `easy promptReplace` —— 2/4 个有
-- `DF_Text_Box` —— 1/4 个有
-- `EmptyLatentImage` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
+- `GetImageSize+` —— 4/5 个有
+- `ImageResize+` —— 4/5 个有
+- `ImageScaleBy` —— 4/5 个有
+- `TTP_Image_Assy` —— 4/5 个有
+- `TTP_Image_Tile_Batch` —— 4/5 个有
+- `TTP_Tile_image_size` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `FastCanvas` —— 3/5 个有
+- `FastCanvasTool` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 3/5 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `ColorMatch` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `KOOK_ImageCompression` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `Note _O` —— 2/5 个有
+- `Seed (rgthree)` —— 2/5 个有
+- `ImpactInt` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 50% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 4 | 50% |
-| 宽度 | 1536 | - | 1 | 100% |
-| 高度 | 2048 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,8 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 50%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，4 个样本，一致性 50%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

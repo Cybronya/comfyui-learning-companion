@@ -3,31 +3,36 @@ name: unknown_workflow_generic_1359
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage, easy seed]
+coverage: 0.8695
+common_nodes: [CR Text, FancyTimerNode, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy promptReplace, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4.5豆包seedream4.5(单图) 0.25元_次_1997917482713251841.json, 图片生成/图生图/即梦4.5豆包seedream4.5(双图) 0.25元_次_1997841962361401345.json]
+members: [图片生成/图生图/G-2.0图像多视角参考生成单次0.02_2057306942430867457.json, 图片生成/文生图/全能G-2.0微缩景观图像生成_2061094467976912897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1359
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.5豆包seedream4.5(单图) 0.25元_次_1997917482713251841.json、图片生成/图生图/即梦4.5豆包seedream4.5(双图) 0.25元_次_1997841962361401345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G-2.0图像多视角参考生成单次0.02_2057306942430867457.json、图片生成/文生图/全能G-2.0微缩景观图像生成_2061094467976912897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Text`
+- `FancyTimerNode`
 - `LoadImage`
-- `RH_Jimeng4_Image2Image`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `easy seed`
+- `easy promptReplace`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `GptImage2` —— 1/2 个有
 
 ## 典型参数
 

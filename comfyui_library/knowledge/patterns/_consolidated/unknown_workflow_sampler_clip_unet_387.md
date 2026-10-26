@@ -3,30 +3,31 @@ name: unknown_workflow_sampler_clip_unet_387
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.920333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.819
+common_nodes: [CLIPLoader, CLIPTextEncode, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/klein-9B 文生图_2058031589531148289.json, 图片生成/文生图/扎染-小帽子lora测l试_2062536155131895810.json, 图片生成/文生图/珠宝文生效果图_2102930912613847041.json]
+members: [图片生成/文生图/Ideogram4--文生图_2063818428254875650.json, 图片生成/文生图/Ideogram4_开源平面设计工作流_2063995698990899201.json, 图片生成/文生图/【遇见AI】ideogram4 文生图，支持json结构化提示词，精准控图，电商海报专用_2063182834180911105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_387
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/klein-9B 文生图_2058031589531148289.json、图片生成/文生图/扎染-小帽子lora测l试_2062536155131895810.json、图片生成/文生图/珠宝文生效果图_2102930912613847041.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Ideogram4--文生图_2063818428254875650.json、图片生成/文生图/Ideogram4_开源平面设计工作流_2063995698990899201.json、图片生成/文生图/【遇见AI】ideogram4 文生图，支持json结构化提示词，精准控图，电商海报专用_2063182834180911105.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
 - `KSamplerSelect`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
@@ -36,14 +37,16 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `Primitive string multiline [Crystools]` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
-- `easy promptLine` —— 1/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `Ideogram4PromptBuilderKJ` —— 2/3 个有
+- `CFGOverride` —— 1/3 个有
+- `DuckHideNode` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `SplitSigmas` —— 1/3 个有
+- `StringConstantMultiline` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

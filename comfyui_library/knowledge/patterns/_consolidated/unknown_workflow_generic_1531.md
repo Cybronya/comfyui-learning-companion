@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1531
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [LoadImage, LoadVideo, PrimitiveInt, RHBerniniFullReferenceVideoToVideo, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/(满血版)Bernini-Full 参考+视频编辑V1_2067135489085366274.json, 视频生成/图生视频/Bernini-Full 参考图编辑视频_2067147092631572482.json]
+members: [图片生成/图生图/拆解_2061750263232425985.json, 图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2058466590206816257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1531
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/(满血版)Bernini-Full 参考+视频编辑V1_2067135489085366274.json、视频生成/图生视频/Bernini-Full 参考图编辑视频_2067147092631572482.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/拆解_2061750263232425985.json、图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2058466590206816257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `PrimitiveInt`
-- `RHBerniniFullReferenceVideoToVideo`
-- `SaveVideo`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `JjkText` —— 1/2 个有
+- `easy promptConcat` —— 1/2 个有
 
 ## 典型参数
 

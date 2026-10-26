@@ -3,83 +3,73 @@ name: text_to_image_lora_sampler_clip_211
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.793333
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.880556
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, QwenImage21Cache, RegexMatch, RegexReplace, SaveImage, SplitImageWithAlpha, StringFormat, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax数字人V3｜自动提词加速语音自驱图生视频数字人_2089690692552581121.json, 视频生成/图生视频/数字人V3流程｜Minimax自动提词加速 语音自驱图生视频_2089421450242514945.json, 视频生成/文生视频/minimaxH3数字人唱歌｜音频驱动口播视频生成_2095236856601468930.json, 视频生成/文生视频/minimaxH3数字人音频驱动｜音频生成口播视频工作流_2094870008924041217.json, 视频生成/文生视频/图片音频生成口播数字人｜MinimaxH3全节点注释_2091178749877379073.json, 视频生成/文生视频/数字人唱歌视频生成｜minimaxH3文生视频一键直出_2095506914233905153.json, 视频生成/文生视频/精准可控数字人升级版｜H3音频驱动+全能参考附整合包_2093760313689722881.json, 视频生成/文生视频/精准可控数字人升级版｜H3音频驱动+全能参考附整合包_2093991203292401665.json, 视频生成/文生视频/音频图片变口播数字人｜MinimaxH3全节点注释版_2090887027813343234.json]
+members: [图片生成/图生图/Qwen Image 2.1换装V1高一致性无偏移工作流，图生图换装处理工具_2107534818765533186.json, 图片生成/图生图/Qwen Image 2.1换装V2高一致性无偏移工作流，图生图换装处理工具_2107533328957132801.json, 图片生成/图生图/Qwen Image 2.1换装编辑后人物一致性无偏差服装光影匹配原图加LoRA工作流_2107917971644571650.json, 图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2107301997392257025.json, 图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2109522026326224898.json, 图片生成/图生图/Qwen-Image-2.1换装V2高一致性版｜服装替换无偏移不跑版型_2107300495013539841.json, 图片生成/图生图/Qwen-Image-2.1换装V2高一致性版｜服装替换无偏移不跑版型_2109522763051520001.json, 图片生成/图生图/Qwen-Image-2.1高一致性换装，服装展示商品替换自如_2110506858170642433.json, 图片生成/图生图/Qwen-Image-2.1高一致性换装，服装展示商品替换自如_2112347931742392321.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_211
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Minimax数字人V3｜自动提词加速语音自驱图生视频数字人_2089690692552581121.json、视频生成/图生视频/数字人V3流程｜Minimax自动提词加速 语音自驱图生视频_2089421450242514945.json、视频生成/文生视频/minimaxH3数字人唱歌｜音频驱动口播视频生成_2095236856601468930.json、视频生成/文生视频/minimaxH3数字人音频驱动｜音频生成口播视频工作流_2094870008924041217.json、视频生成/文生视频/图片音频生成口播数字人｜MinimaxH3全节点注释_2091178749877379073.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1换装V1高一致性无偏移工作流，图生图换装处理工具_2107534818765533186.json、图片生成/图生图/Qwen Image 2.1换装V2高一致性无偏移工作流，图生图换装处理工具_2107533328957132801.json、图片生成/图生图/Qwen Image 2.1换装编辑后人物一致性无偏差服装光影匹配原图加LoRA工作流_2107917971644571650.json、图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2107301997392257025.json、图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2109522026326224898.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AudioCrop`
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `PrimitiveBoolean`
+- `QwenImage21Cache`
+- `RegexMatch`
+- `RegexReplace`
+- `SaveImage`
+- `SplitImageWithAlpha`
+- `StringFormat`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/9 个有
-- `PrimitiveStringMultiline` —— 7/9 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 7/9 个有
-- `ModelAttentionBackend` —— 6/9 个有
-- `CreateVideo` —— 5/9 个有
-- `GetNode` —— 5/9 个有
-- `ModelPreviewOverrideKJ` —— 5/9 个有
-- `SaveVideo` —— 5/9 个有
-- `SetNode` —— 5/9 个有
-- `CR Text` —— 4/9 个有
-- `PreviewAudio` —— 4/9 个有
-- `VHS_VideoCombine` —— 4/9 个有
-- `PathchSageAttentionKJ` —— 3/9 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/9 个有
-- `RH_LLMAPI_Pro_Node` —— 2/9 个有
-- `RunningHub_VoxCPM_LoadModel` —— 2/9 个有
-- `RunningHub_VoxCPM_MultiSpeaker` —— 2/9 个有
-- `StringFunction|pysssss` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
+- `CR Text` —— 8/9 个有
+- `DF_Integer` —— 8/9 个有
+- `Image Compare (mtb)` —— 8/9 个有
+- `ImageScaleToTotalPixels` —— 8/9 个有
+- `JWImageResizeByLongerSide` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `SeedNode` —— 8/9 个有
+- `Text` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `EmptyImage` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
+- `JjkShowText` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
 | 采样步数 | 4 | 4 - 4 | 9 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
 | 采样算法 | er_sde | - | 9 | 100% |
 | 调度器 | beta | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
@@ -89,11 +79,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，9 个样本，一致性 100%
 - 调度器 最常用 beta，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高发问题（9/9 个样本）：Steps较低可能导致细节不足

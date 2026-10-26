@@ -3,97 +3,89 @@ name: text_to_image_upscale_lora_sampler_33
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.824
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KOOK_ImageCompression, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy float, easy seed, easy showAnything]
+coverage: 0.869429
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CR Text, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PixaromaLoraLoader, PixaromaTextJoinTwo, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen-2512 智能真实人像（8k）_2008818052183363585.json, 图片生成/文生图/Qwen-2512 真实人像洗图（8k）_2014237098886307842.json, 图片生成/文生图/Qwen-2512真实人像8K在线_2007642592116215810.json, 图片生成/文生图/Z-Image在线8K_2001940872809836545.json, 图片生成/文生图/Z-Image在线8K破🔞文生图_2048280410819399681.json, 图片生成/文生图/Z-Image极致真实图像反推洗图8K版_2003077062523068417.json, 图片生成/文生图/Z-Image直出8K_2016392283901403138.json]
+members: [图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json, 图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json, 图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json, 图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json, 图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json, 图片生成/图生图/flux2局部重绘加放大 图片局部修改分辨率提升_2105114830226153474.json, 图片生成/图生图/flux2局部重绘加放大｜图生图二合一｜改完直接出高清_2104822887134875649.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen-2512 智能真实人像（8k）_2008818052183363585.json、图片生成/文生图/Qwen-2512 真实人像洗图（8k）_2014237098886307842.json、图片生成/文生图/Qwen-2512真实人像8K在线_2007642592116215810.json、图片生成/文生图/Z-Image在线8K_2001940872809836545.json、图片生成/文生图/Z-Image在线8K破🔞文生图_2048280410819399681.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json、图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json、图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json、图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json、图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CR Text`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSize+`
-- `ImageResize+`
-- `ImageScaleBy`
-- `KOOK_ImageCompression`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PixaromaLoraLoader`
+- `PixaromaTextJoinTwo`
+- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy float`
-- `easy seed`
-- `easy showAnything`
+- `YC Color Match`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEEncode` —— 5/7 个有
-- `DuckHideNode` —— 4/7 个有
-- `HFEPostProcessor (lrzjason)` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `LoadImage` —— 4/7 个有
-- `Any Switch (rgthree)` —— 3/7 个有
-- `LatentFrequencyEnhancer_lrzjason` —— 3/7 个有
+- `Float` —— 6/7 个有
+- `FloatConstant` —— 4/7 个有
+- `FluxGuidance` —— 4/7 个有
+- `GrowMaskWithBlur` —— 3/7 个有
+- `Kontext Inpainting Conditioning` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
 - `Text Multiline` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `AILab_QwenVL` —— 2/7 个有
-- `CR Text` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RH_LLMAPI_Pro_Node` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `LayerUtility: ImageReel` —— 1/7 个有
-- `LayerUtility: ImageReelComposit` —— 1/7 个有
-- `Qwen3_VQA` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 57% |
-| 调度器 | sgm_uniform | - | 7 | 57% |
-| 重绘幅度 | 1 | 0.55 - 1 | 7 | 83% |
-| 宽度 | 1080 | 1080 - 1080 | 7 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 57%
-- 调度器 最常用 sgm_uniform，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 0.55 - 1，7 个样本，取值集中（一致性 83%）
-- 宽度 中位数 1080，观测区间 1080 - 1080，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高发问题（14/7 个样本）：Steps较低可能导致细节不足

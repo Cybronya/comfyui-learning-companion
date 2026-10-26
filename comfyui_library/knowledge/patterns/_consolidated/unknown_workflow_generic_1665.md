@@ -3,30 +3,34 @@ name: unknown_workflow_generic_1665
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [OmniVoiceVoiceDesignTTS, PreviewAudio, SaveAudio, Textbox]
+coverage: 0.875
+common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, SaveAudioAdvanced, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, 孤海注释]
 problems: []
 missing: []
-members: [音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json, 音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json]
+members: [数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json, 音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1665
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json、音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json、音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `OmniVoiceVoiceDesignTTS`
-- `PreviewAudio`
-- `SaveAudio`
-- `Textbox`
+- `AudioCrop`
+- `CR Prompt Text`
+- `LoadAudio`
+- `SaveAudioAdvanced`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_SamplingConfig`
+- `孤海注释`
 
 ## 典型参数
 

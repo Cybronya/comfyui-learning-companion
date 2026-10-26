@@ -3,38 +3,35 @@ name: unknown_workflow_generic_475
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.837333
-common_nodes: [LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.861
+common_nodes: [LoadImage, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json, 音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json, 音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json, 音频生成/音频生成/【遇见AI】SoulX-Podcast语音模型，支持方言_2052998915368210433.json]
+members: [图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json, 图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json, 图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json, 图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json, 图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json, 图片生成/文生图/竖屏九宫格直接出图（老程）_2016304604631277570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_475
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json、音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json、音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json、图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json、图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json、图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json、图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+- `LoadImage`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `Text Multiline` —— 4/6 个有
-- `LoadImage` —— 3/6 个有
-- `SaveAudio` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 4/6 个有
+- `Qwen3VL_Chat` —— 2/6 个有
 
 ## 典型参数
 

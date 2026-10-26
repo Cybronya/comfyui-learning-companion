@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1022
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.952333
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+coverage: 0.815
+common_nodes: [Fast Groups Bypasser (rgthree), ImageScale, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json, 视频生成/图生视频/Seedance2.0-Fast_多模态视频_2042721470069088257.json, 视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json]
+members: [图片生成/图生图/全能图片V1工作流V2_1964342391165603842.json, 图片生成/图生图/全能图片V1漫展 Coser 海报_1981983555289006081.json, 图片生成/图生图/漫展 coser 合照_1981985352799920129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1022
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json、视频生成/图生视频/Seedance2.0-Fast_多模态视频_2042721470069088257.json、视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1工作流V2_1964342391165603842.json、图片生成/图生图/全能图片V1漫展 Coser 海报_1981983555289006081.json、图片生成/图生图/漫展 coser 合照_1981985352799920129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageScale`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `SoundFlow_TrimAudio` —— 1/3 个有
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `easy imageSize`
 
 ## 典型参数
 

@@ -3,35 +3,33 @@ name: unknown_workflow_generic_204
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.9152
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.8525
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.7 参考生视频_2041457272768958466.json, 视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json, 视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json, 视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json, 视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json, 视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json, 视频生成/文生视频/Seedance2.0全能参考视频_2043901748414259202.json, 视频生成/文生视频/Seedance2.0全能参考（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051223810644430850.json, 视频生成/文生视频/seedance2.0_2043171204051247105.json, 视频生成/文生视频/万象AI+RH地表最强超能视频2.0_全能参考 生真人视频_2038582212496461825.json]
+members: [图片生成/图生图/BiRefNet 去背景模型对主体进行高精度抠图+全节点注释_2091780306507493377.json, 图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2096886637639847937.json, 图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2097225818744381442.json, 图片生成/图生图/BiRefNet_去背景模型对主体进行高精度抠图_2092450560543903745.json, 图片生成/图生图/抠图924版本_2103088572483063809.json, 图片生成/图生图/抠图_2061716570174476290.json, 图片生成/图生图/抠图_2086065866902429698.json, 图片生成/图生图/抠图工作流_2106752421392379906.json, 图片生成/图生图/电商一键换服装（超高清细节)_2113814151020761090.json, 图片生成/图生图/老孙AI 通用抠图_2085995059459223554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_204
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 参考生视频_2041457272768958466.json、视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json、视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json、视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json、视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/BiRefNet 去背景模型对主体进行高精度抠图+全节点注释_2091780306507493377.json、图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2096886637639847937.json、图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2097225818744381442.json、图片生成/图生图/BiRefNet_去背景模型对主体进行高精度抠图_2092450560543903745.json、图片生成/图生图/抠图924版本_2103088572483063809.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 9/10 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 3/10 个有
+- `BiRefNetRMBG` —— 9/10 个有
+- `PreviewImage` —— 3/10 个有
+- `RH_DolaSeedream50ProImageToImage` —— 1/10 个有
 
 ## 典型参数
 

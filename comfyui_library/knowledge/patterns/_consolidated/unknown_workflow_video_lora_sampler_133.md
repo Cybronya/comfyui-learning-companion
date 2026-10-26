@@ -1,66 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_133
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.73775
-common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.818786
+common_nodes: [BasicGuider, CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json, 视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956045555967381505.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956317081069342721.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2051923749418610689.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2052630555186999297.json, 视频生成/图生视频/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957641914193473538.json, 视频生成/图生视频/【FantasyPortrait】复刻钟馗怒目圆睁表情_1958352739837362177.json, 视频生成/图生视频/最新FantasyPortrait音频驱动表情迁移_1956951532585541633.json]
+members: [视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json, 视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2087878612149161985.json, 视频生成/文生视频/MiniMax H3多参生视频1(双时钟-8步高质量极速)_2085802445816553474.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2085917106452910082.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086006814721798145.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086021919471656961.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086316557814292482.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json, 视频生成/文生视频/Minimax H3 参考生成_2088114013229113346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_133
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json、视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json、视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json、视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `VHS_LoadVideo`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddFantasyPortrait`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoSetBlockSwap` —— 11/12 个有
-- `WanVideoSetLoRAs` —— 11/12 个有
-- `GetNode` —— 9/12 个有
-- `ImageConcatMulti` —— 9/12 个有
-- `SetNode` —— 9/12 个有
-- `Primitive integer [Crystools]` —— 6/12 个有
-- `INTConstant` —— 5/12 个有
-- `WanVideoContextOptions` —— 4/12 个有
-- `ImageConcanate` —— 2/12 个有
-- `LandmarksToImage` —— 2/12 个有
-- `PrimitiveInt` —— 2/12 个有
-- `VHS_VideoInfoLoaded` —— 2/12 个有
-- `Any Switch (rgthree)` —— 1/12 个有
-- `GetImageRangeFromBatch` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `easy cleanGpuUsed` —— 1/12 个有
+- `ComfyMathExpression` —— 13/14 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 13/14 个有
+- `ResolutionSelector` —— 13/14 个有
+- `PrimitiveFloat` —— 11/14 个有
+- `CR Prompt Text` —— 6/14 个有
+- `LoadImage` —— 6/14 个有
+- `CR Text` —— 4/14 个有
+- `LoadAudio` —— 4/14 个有
+- `easy showAnything` —— 4/14 个有
+- `PrimitiveStringMultiline` —— 3/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/14 个有
+- `Int` —— 2/14 个有
+- `PreviewAny` —— 2/14 个有
+- `RHHiddenNodes` —— 2/14 个有
+- `孤海注释` —— 2/14 个有
+- `Audio Cut (mtb)` —— 1/14 个有
+- `GetVideoComponents` —— 1/14 个有
+- `LoadVideo` —— 1/14 个有
 
 ## 典型参数
 

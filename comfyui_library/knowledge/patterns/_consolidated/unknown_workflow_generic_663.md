@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_663
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.87475
-common_nodes: [LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
+coverage: 0.8564
+common_nodes: [LoadAudio, SaveAudio, VibeVoiceTTS]
 problems: []
 missing: []
-members: [图片生成/图生图/flux-kontext-pro-api白嫖工作流_1958726160270127105.json, 图片生成/图生图/一张图转ip三视图 ip一致性超强 细节准确 flux kontext编辑模型_1930090148233646082.json, 图片生成/图生图/产品换背景 自动融合光影产品细节准确 flux kontext编辑模型_1929902452722581506.json, 图片生成/图生图/老照片修复 自动融合光影人像细节准确 flux kontext编辑模型_1930087133745201154.json]
+members: [音频生成/音频生成/VibeVoice 微软 能合成长达 90 分钟的语音，支持多达 4 位不同说话者_1967215782138613762.json, 音频生成/音频生成/VibeVoice单人长文本克隆_1964083564432211969.json, 音频生成/音频生成/VibeVoice多人声音克隆_1964085772519358466.json, 音频生成/音频生成/VibeVoice语音克隆_1949635786288320514.json, 音频生成/音频生成/vibevoice-声音克隆-多人对话_1963817321922007041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_663
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux-kontext-pro-api白嫖工作流_1958726160270127105.json、图片生成/图生图/一张图转ip三视图 ip一致性超强 细节准确 flux kontext编辑模型_1930090148233646082.json、图片生成/图生图/产品换背景 自动融合光影产品细节准确 flux kontext编辑模型_1929902452722581506.json、图片生成/图生图/老照片修复 自动融合光影人像细节准确 flux kontext编辑模型_1930087133745201154.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VibeVoice 微软 能合成长达 90 分钟的语音，支持多达 4 位不同说话者_1967215782138613762.json、音频生成/音频生成/VibeVoice单人长文本克隆_1964083564432211969.json、音频生成/音频生成/VibeVoice多人声音克隆_1964085772519358466.json、音频生成/音频生成/VibeVoice语音克隆_1949635786288320514.json、音频生成/音频生成/vibevoice-声音克隆-多人对话_1963817321922007041.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `VibeVoiceTTS`
 
 **可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 3/4 个有
-- `FluxKontextImageScale` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `Text` —— 2/5 个有
+- `AudioSeparation` —— 1/5 个有
 
 ## 典型参数
 

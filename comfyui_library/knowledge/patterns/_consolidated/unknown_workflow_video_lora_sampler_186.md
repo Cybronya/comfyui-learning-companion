@@ -1,74 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_186
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9123
-common_nodes: [CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.560091
+common_nodes: [CLIPVisionLoader, DrawViTPose, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Comfy挑战赛6（心跳）Wan2.2图生视频+音频_1971183114510864385.json, 视频生成/图生视频/Comfy挑战赛7（不可能的菜肴）-图生视频_1974013871881105409.json, 视频生成/图生视频/KJ版Wan2.2新版高噪模型V210s以上_2021029797077454850.json, 视频生成/图生视频/Lightx2v 1030 差异模型高低噪自动提示词图生视频V1_1984646206687232002.json, 视频生成/图生视频/Wan2.2 20秒长视频+音频生成（Comfy挑战赛5 无限飞行）_1976203994194427906.json, 视频生成/图生视频/Wan2.2 四段续写长视频_2073212221412438017.json, 视频生成/图生视频/Wan2.2文生视频+音频 (1)_2066681308595712001.json, 视频生成/图生视频/Wan2.2文生视频+音频_2055171452390912002.json, 视频生成/图生视频/无限飞行 视频+音频_2026898938053271554.json, 视频生成/文生视频/Comfy挑战赛5（无限飞行）Wan2.2 20秒长视频+音频生成（100美元奖金）V2_1968636624055750658.json]
+members: [视频生成/图生视频/4段变装+动作迁移+服装替换+人脸替换+（灵活分段版）_2087418361050390530.json, 视频生成/图生视频/KJ版+动作迁移_2046783552133533698.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108866123113525249.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108896219048271874.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2109578513186643969.json, 视频生成/图生视频/Wan 2.2 Animate 人物角色动作迁移_2040732393052573697.json, 视频生成/图生视频/Wan 2.2 Animate 动作迁移_2035583580633571330.json, 视频生成/图生视频/Wan 2.2 Animate 动作迁移_2038260225177817089.json, 视频生成/图生视频/人物跳舞_动作迁移-原图背景_2032081877015728130.json, 视频生成/图生视频/🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2026837951593844738.json, 视频生成/图生视频/🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2095534621269254145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_186
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Comfy挑战赛6（心跳）Wan2.2图生视频+音频_1971183114510864385.json、视频生成/图生视频/Comfy挑战赛7（不可能的菜肴）-图生视频_1974013871881105409.json、视频生成/图生视频/KJ版Wan2.2新版高噪模型V210s以上_2021029797077454850.json、视频生成/图生视频/Lightx2v 1030 差异模型高低噪自动提示词图生视频V1_1984646206687232002.json、视频生成/图生视频/Wan2.2 20秒长视频+音频生成（Comfy挑战赛5 无限飞行）_1976203994194427906.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/4段变装+动作迁移+服装替换+人脸替换+（灵活分段版）_2087418361050390530.json、视频生成/图生视频/KJ版+动作迁移_2046783552133533698.json、视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108866123113525249.json、视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108896219048271874.json、视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2109578513186643969.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Float`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
+全部 11 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/10 个有
-- `WanVideoTorchCompileSettings` —— 9/10 个有
-- `HunyuanVideoFoley` —— 8/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
-- `WanVideoImageToVideoEncode` —— 8/10 个有
-- `LoadImage` —— 7/10 个有
-- `SaveLatent` —— 7/10 个有
-- `VAEEncode` —— 7/10 个有
-- `VAELoader` —— 7/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/10 个有
-- `easy showAnything` —— 5/10 个有
-- `ImageFromBatch+` —— 4/10 个有
-- `StringToFloatList` —— 4/10 个有
-- `easy batchAnything` —— 4/10 个有
-- `text_mul_replace` —— 4/10 个有
-- `WanVideoEmptyEmbeds` —— 3/10 个有
-- `LayerUtility: PurgeVRAM` —— 2/10 个有
-- `AILab_MiniCPM_4_V` —— 1/10 个有
-- `AILab_QwenVL` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `GetVideoComponents` —— 1/10 个有
-- `LoadVideo` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `RH_LLMAPI_NODE` —— 1/10 个有
-- `ReplaceText` —— 1/10 个有
-- `ShowText` —— 1/10 个有
+- `GetNode` —— 10/11 个有
+- `ImageBatch` —— 10/11 个有
+- `ImageFromBatch` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `SimpleMath+` —— 10/11 个有
+- `WanVideoContextOptions` —— 10/11 个有
+- `WanVideoLoraSelect` —— 10/11 个有
+- `BatchCount+` —— 9/11 个有
+- `CR Text` —— 9/11 个有
+- `ImpactInt` —— 9/11 个有
+- `PurgeVRAM_UTK` —— 9/11 个有
+- `RepeatImageBatch` —— 9/11 个有
+- `Seed (rgthree)` —— 9/11 个有
+- `VHS_VideoInfo` —— 9/11 个有
+- `easy convertAnything` —— 9/11 个有
+- `easy int` —— 9/11 个有
+- `easy mathInt` —— 9/11 个有
+- `GetImageSizeAndCount` —— 2/11 个有
+- `Note Plus (mtb)` —— 2/11 个有
+- `Float` —— 1/11 个有
+- `FloatConstant` —— 1/11 个有
+- `INTConstant` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `MemoryCleaner` —— 1/11 个有
+- `PreviewAny` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,104 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_unet_197
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.442
-common_nodes: [BasicScheduler, BatchCount+, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetNode, GetVideoComponents, H3AudioRefineSampler, H3FrozenVideoCache, ImageAddNoise, ImageBatchMulti, KSamplerSelect, LoadVideo, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SaveVideo, SetNode, StringReplace, Text Concatenate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy saveVideo, easy string]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.945
+common_nodes: [CFGNorm, CLIPLoader, GetImageSizeAndCount, ImageLoader, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, MemoryCleaner, ModelSamplingAuraFlow, PreviewImage, Qwen3_VQA, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy imageConcat, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json, 图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json, 视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json]
+members: [图片生成/图生图/生图-三图编辑自动-qwen-Edit-2509-8步_1997651030190002178.json, 图片生成/图生图/生图-单图编辑自动-qwen-Edit-2509-8步_1997694987175399426.json, 图片生成/图生图/生图-双图编辑自动-qwen-Edit-2509-8步_1997651021717508097.json, 图片生成/图生图/生图-四图编辑自动-qwen-edit-2509-8步_1997900858333519873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_197
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json、图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json、视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/生图-三图编辑自动-qwen-Edit-2509-8步_1997651030190002178.json、图片生成/图生图/生图-单图编辑自动-qwen-Edit-2509-8步_1997694987175399426.json、图片生成/图生图/生图-双图编辑自动-qwen-Edit-2509-8步_1997651021717508097.json、图片生成/图生图/生图-四图编辑自动-qwen-edit-2509-8步_1997900858333519873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchCount+`
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `ExtendIntermediateSigmas`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GetVideoComponents`
-- `H3AudioRefineSampler`
-- `H3FrozenVideoCache`
-- `ImageAddNoise`
-- `ImageBatchMulti`
-- `KSamplerSelect`
-- `LoadVideo`
-- `LoraLoaderBypassModelOnly`
+- `GetImageSizeAndCount`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3AudioGuideFeather`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
-- `SetNode`
-- `StringReplace`
-- `Text Concatenate`
+- `MemoryCleaner`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `SaveImage`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VideoFrameSample`
-- `VideoTemporalCrop`
-- `easy batchAnything`
-- `easy float`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy mergeVideosFromPaths`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
-- `easy promptLine`
-- `easy saveVideo`
-- `easy string`
+- `easy anythingIndexSwitch`
+- `easy imageConcat`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SelfLiftH3Sampler` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `ColorTransfer` —— 1/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `LTXVConcatAVLatent` —— 1/3 个有
-- `LTXVSeparateAVLatent` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
-- `RandomNoise` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
+- `MultiplePathsInput` —— 3/4 个有
+- `NunchakuQwenImageDiTLoader` —— 3/4 个有
+- `TextEncodeQwenImageEditPlus` —— 3/4 个有
+- `VAEEncode` —— 3/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `Qwen3VL_Advanced` —— 2/4 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/4 个有
+- `MultiplePathsInputPlus` —— 1/4 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1258
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_PixverseV6ImageToVideo, RH_PixverseV6TextToVideo, SaveVideo]
+coverage: 0.7335
+common_nodes: [ImageScaleToTotalPixels, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/PixVerse V6 视频生成（图生视频+文生视频）_2043523053476384769.json, 视频生成/文生视频/PixVerse V6 视频生成（文生视频+图生视频）_2043494056445087745.json]
+members: [comfyui-workflow-templates-json/image_flux2.json, comfyui-workflow-templates-json/image_qwen_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1258
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/PixVerse V6 视频生成（图生视频+文生视频）_2043523053476384769.json、视频生成/文生视频/PixVerse V6 视频生成（文生视频+图生视频）_2043494056445087745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2.json、comfyui-workflow-templates-json/image_qwen_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_PixverseV6ImageToVideo`
-- `RH_PixverseV6TextToVideo`
-- `SaveVideo`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `74a8e1e2-9cb8-4112-978e-06ce1b5793f1` —— 1/2 个有
+- `7651d2ae-5471-47b0-b064-b34ee62343c1` —— 1/2 个有
 
 ## 典型参数
 

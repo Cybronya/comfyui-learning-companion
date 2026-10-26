@@ -1,138 +1,99 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_42
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: strong
-coverage: 0.490286
-common_nodes: [CFGGuider, CLIPTextEncode, ComfySwitchNode, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, VAEDecodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.874556
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/ACE-Step 1.5 + LTX-2：一键制作MV音乐视频！_2019398568087392257.json, 视频生成/图生视频/LTX-2 一键生成数字人制作表情口型同步视频 对口型对嘴型视频 图片生成数字人视频_2057324612706455554.json, 视频生成/图生视频/LTX-2 一键高效生成数字人制作实时口型同步视频对嘴型对口型音频图片生成数字人视频_2015670036052058114.json, 视频生成/图生视频/LTX-2.3-图-文-音频-生视频_2055521986851418114.json, 视频生成/图生视频/LTX-2.3图生视频MV工作流（双图）_2039169355828695041.json, 视频生成/图生视频/一键制作MV音乐视频！(ACE-Step 1.5 + LTX-2)_2020783511728295938.json, 视频生成/图生视频/高质量LTX-2.3图生视频MV制作工作流（无字幕））_2017813232496418818.json]
+members: [视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json, 视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json, 视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json, 视频生成/文生视频/MiniMax-H3 fl2v单模型二采无编解码放大_2093393143118000129.json, 视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json, 视频生成/文生视频/Minimax H3多参 Taomate 3 steplora 二采生视频_2100938444443832322.json, 视频生成/文生视频/Minimax-h3-文生、图生视频+双采+Lantent upscale放大_2091360806108745730.json, 视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json, 视频生成/文生视频/海螺H3-高效4步-脸部护持_2091172705780461570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_42
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/ACE-Step 1.5 + LTX-2：一键制作MV音乐视频！_2019398568087392257.json、视频生成/图生视频/LTX-2 一键生成数字人制作表情口型同步视频 对口型对嘴型视频 图片生成数字人视频_2057324612706455554.json、视频生成/图生视频/LTX-2 一键高效生成数字人制作实时口型同步视频对嘴型对口型音频图片生成数字人视频_2015670036052058114.json、视频生成/图生视频/LTX-2.3-图-文-音频-生视频_2055521986851418114.json、视频生成/图生视频/LTX-2.3图生视频MV工作流（双图）_2039169355828695041.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json、视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json、视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json、视频生成/文生视频/MiniMax-H3 fl2v单模型二采无编解码放大_2093393143118000129.json、视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfySwitchNode`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `VAEDecodeTiled`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoaderGGUF` —— 6/7 个有
-- `SimpleMath+` —— 6/7 个有
-- `TrimAudioDuration` —— 6/7 个有
-- `VAELoaderKJ` —— 6/7 个有
-- `LTXVChunkFeedForward` —— 5/7 个有
-- `LoadAudio` —— 5/7 个有
-- `PathchSageAttentionKJ` —— 5/7 个有
-- `VHS_VideoCombine` —— 5/7 个有
-- `ImageScaleBy` —— 4/7 个有
-- `UnetLoaderGGUF` —— 4/7 个有
-- `AudioCrop` —— 3/7 个有
-- `CheckpointLoaderSimple` —— 3/7 个有
-- `LTX2_NAG` —— 3/7 个有
-- `PrimitiveBoolean` —— 3/7 个有
-- `ResizeImageMaskNode` —— 3/7 个有
-- `UNETLoader` —— 3/7 个有
-- `easy showAnything` —— 3/7 个有
-- `1hew_AudioDuration` —— 2/7 个有
-- `CR Text` —— 2/7 个有
-- `ComfyMathExpression` —— 2/7 个有
-- `ConditioningZeroOut` —— 2/7 个有
-- `CreateVideo` —— 2/7 个有
-- `EmptyAceStep1.5LatentAudio` —— 2/7 个有
-- `KSampler` —— 2/7 个有
-- `ModelSamplingAuraFlow` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `SaveAudioMP3` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `TextEncodeAceStepAudio1.5` —— 2/7 个有
-- `VAEDecodeAudio` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `llama_cpp_parameters` —— 2/7 个有
-- `Audio Duration (mtb)` —— 1/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LTX2SamplingPreviewOverride` —— 1/7 个有
-- `LTXAVTextEncoderLoader` —— 1/7 个有
-- `LTXVAudioVAELoader` —— 1/7 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `LoadDiffusionModelShared //Inspire` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `MuyeTextEditOutput` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `Text Multiline` —— 1/7 个有
-- `easy imageConcat` —— 1/7 个有
+- `ModelPreviewOverrideKJ` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `BasicScheduler` —— 7/9 个有
+- `SplitSigmas` —— 7/9 个有
+- `ModelAttentionBackend` —— 6/9 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `ManualSigmas` —— 5/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 5/9 个有
+- `H3SigmaRefiner` —— 4/9 个有
+- `MiniMaxH3ImageToVideo` —— 4/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
+- `Text` —— 3/9 个有
+- `VHS_VideoCombine` —— 3/9 个有
+- `AudioCrop` —— 2/9 个有
+- `ClownsharKSampler_Beta` —— 2/9 个有
+- `ConditioningZeroOut` —— 2/9 个有
+- `LoadAudio` —— 2/9 个有
+- `SeedGenerator` —— 2/9 个有
+- `StringFunction|pysssss` —— 2/9 个有
+- `VHS_LoadVideo` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `FloatConstant` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `MiniMaxChunkFeedForward` —— 1/9 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/9 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/9 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/9 个有
+- `RHLLMChatNode` —— 1/9 个有
+- `SolAttnMiniMax` —— 1/9 个有
+- `忽略多组孤海` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 7 | 100% |
-| 高度 | 25 | 24 - 25 | 7 | 99% |
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| 采样步数 | simple | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
+| 采样算法 | 3 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，7 个样本，取值集中（一致性 99%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 采样步数 最常用 simple，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

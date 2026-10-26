@@ -3,33 +3,34 @@ name: unknown_workflow_video_92
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.634
+common_nodes: [LoadImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json, 视频生成/图生视频/framepack_首尾帧_1914526532704923650.json]
+members: [图片生成/图生图/照片视频换脸工作流_1888099813794447362.json, 图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_92
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json、视频生成/图生视频/framepack_首尾帧_1914526532704923650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/照片视频换脸工作流_1888099813794447362.json、图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageResizeKJ`
 - `LoadImage`
-- `RunningHub_FramePack`
+- `RHHiddenNodes`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `KepStringLiteral` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

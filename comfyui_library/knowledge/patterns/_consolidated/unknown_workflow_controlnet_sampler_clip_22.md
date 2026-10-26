@@ -3,67 +3,62 @@ name: unknown_workflow_controlnet_sampler_clip_22
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.936
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, INTConstant, ImageConcanate, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, PreviewImage, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZImageFunControlnet, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.877667
+common_nodes: [AIO_Preprocessor, ApplyFluxControlNet, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Image Comparer (rgthree), LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_1996867719981146113.json, 图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_2066055918607200256.json, 图片生成/图生图/生图-图生图遮罩区域重绘-Z_Image_2003301510870138881.json]
+members: [图片生成/图生图/一键解锁二次元 你的专属动漫滤镜_1916667244833869826.json, 图片生成/图生图/一键转卡通_1916440283846737922.json, 图片生成/图生图/室内设计毛坯房秒变效果图带lora快速出图Flux版_1899710160435105793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_1996867719981146113.json、图片生成/图生图/生图-图生图控制姿态2.1-Z_Image_2066055918607200256.json、图片生成/图生图/生图-图生图遮罩区域重绘-Z_Image_2003301510870138881.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键解锁二次元 你的专属动漫滤镜_1916667244833869826.json、图片生成/图生图/一键转卡通_1916440283846737922.json、图片生成/图生图/室内设计毛坯房秒变效果图带lora快速出图Flux版_1899710160435105793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `AIO_Preprocessor`
-- `CLIPLoader`
+- `ApplyFluxControlNet`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageConcanate`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `LoadFluxControlNet`
 - `LoadImage`
-- `ModelPatchLoader`
 - `PreviewImage`
 - `SaveImage`
-- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `ZImageFunControlnet`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
+- `XlabsSampler`
 
 **可变部分**（部分 workflow 才有）：
+- `ConditioningZeroOut` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ModelSamplingFlux` —— 2/3 个有
 - `RH_Captioner` —— 2/3 个有
-- `MaskToImage` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
+- `easy showAnything` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 67% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -71,8 +66,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）

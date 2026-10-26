@@ -3,83 +3,52 @@ name: unknown_workflow_video_upscale_latent_upscale_149
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5905
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CM_IntToFloat, CR Prompt Text, ComfyMathExpression, EasyCache, FloatConstant, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LiconMSR, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, ModelAttentionBackend, PathchSageAttentionKJ, PromptRelayEncode, PurgeVRAM_UTK, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringFunction|pysssss, StringLength, StringSubstring, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, string_util_StrFind]
+coverage: 0.963
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json, 视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json]
+members: [视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_149
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json、视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json、视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `EasyCache`
-- `FloatConstant`
-- `GetNode`
-- `INTConstant`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LiconMSR`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyMediaLoader`
+- `MiniMaxH3EasyOutput`
+- `MinimaxH3LatentUpscaler3D`
 - `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PromptRelayEncode`
-- `PurgeVRAM_UTK`
-- `RHLLMChatNode`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `StringFunction|pysssss`
-- `StringLength`
-- `StringSubstring`
-- `UNETLoader`
+- `SplitSigmas`
 - `VAEDecode`
 - `VAEDecodeAudio`
-- `VAEEncode`
-- `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `string_util_StrFind`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
+- `easy float` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

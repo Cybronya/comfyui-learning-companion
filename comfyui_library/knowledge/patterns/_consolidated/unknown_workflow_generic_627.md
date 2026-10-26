@@ -1,32 +1,35 @@
 ---
 name: unknown_workflow_generic_627
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.857
-common_nodes: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18, LoadImage, SaveImage]
+coverage: 0.83
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json]
+members: [视频生成/图生视频/Kling_V30ProImageToVideo_v3.0_2033808754747121665.json, 视频生成/图生视频/图生视频工作流｜可灵 3.0 Pro 多镜头 最长十五秒_2100471524372344833.json, 视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2103663191376089089.json, 视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2104850576906473473.json, 视频生成/图生视频/谷歌3.1 Fast图生视频工作流｜极速出片版_2099677228530487297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_627
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Kling_V30ProImageToVideo_v3.0_2033808754747121665.json、视频生成/图生视频/图生视频工作流｜可灵 3.0 Pro 多镜头 最长十五秒_2100471524372344833.json、视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2103663191376089089.json、视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2104850576906473473.json、视频生成/图生视频/谷歌3.1 Fast图生视频工作流｜极速出片版_2099677228530487297.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `65c22b29-59aa-496b-89c6-55a603658670`
-- `7b34ab90-36f9-45ba-a665-71d418f0df18`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `RH_KlingV30ProImageToVideo` —— 4/5 个有
+- `RH_Veo31_Fast_Image2Video_Official` —— 1/5 个有
 
 ## 典型参数
 

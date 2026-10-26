@@ -1,58 +1,50 @@
 ---
 name: unknown_workflow_sampler_clip_vae_68
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, FluxGuidance, KSampler, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, RH_Translator, SaveImage, VAEDecode, VAELoader, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.875
+common_nodes: [CLIPTextEncodeSDXLRefiner, EmptyLatentImage, KSampler, PreviewImage, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/Nunchaku FLUX图像编辑极速版_1930474412905238530.json, 图片生成/文生图/FLUX加速文生图_1929527506691375106.json]
+members: [图片生成/文生图/文生图工作流_2054883897737007106.json, 图片生成/文生图/文生图教学版_2054741592807878658.json, 图片生成/文生图/简易版文生图工作流_2053105946179715074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_68
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Nunchaku FLUX图像编辑极速版_1930474412905238530.json、图片生成/文生图/FLUX加速文生图_1929527506691375106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/文生图工作流_2054883897737007106.json、图片生成/文生图/文生图教学版_2054741592807878658.json、图片生成/文生图/简易版文生图工作流_2053105946179715074.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `FluxGuidance`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncodeSDXLRefiner`
+- `EmptyLatentImage`
 - `KSampler`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
-- `RH_Translator`
+- `PreviewImage`
 - `SaveImage`
 - `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Aspect Ratio` —— 1/2 个有
-- `ImageAndMaskResizeNode` —— 1/2 个有
-- `InpaintModelConditioning` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `ModelSamplingFlux` —— 1/2 个有
-- `NunchakuFluxLoraLoader` —— 1/2 个有
-- `easy imageSize` —— 1/2 个有
+- `CheckpointLoader` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | - | 2 | 89% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 3 | 72% |
+| 高度 | 1024 | 768 - 1024 | 3 | 87% |
+| 采样步数 | 25 | 20 - 30 | 3 | 84% |
+| Prompt 约束强度(CFG) | 5 | 5 - 8 | 3 | 76% |
+| 采样算法 | dpmpp_2m | - | 3 | 67% |
+| 调度器 | karras | - | 3 | 67% |
+| 重绘幅度 | 0.8 | 0.8 - 1 | 3 | 89% |
 
 ## 常见问题
 
@@ -60,9 +52,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 512 - 1024，3 个样本
+- 高度 中位数 1024，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）
+- 采样步数 中位数 25，观测区间 20 - 30，3 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 8，3 个样本
+- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 67%
+- 调度器 最常用 karras，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.8，观测区间 0.8 - 1，3 个样本，取值集中（一致性 89%）

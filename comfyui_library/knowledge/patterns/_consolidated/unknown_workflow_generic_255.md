@@ -3,38 +3,34 @@ name: unknown_workflow_generic_255
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.865556
-common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.733444
+common_nodes: [CR Prompt Text, LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json, 音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json, 音频生成/音频生成/indextts2基础+情感_2014670620402913282.json, 音频生成/音频生成/indextts2声音模仿+语气情感设置_1981744577625374722.json, 音频生成/音频生成/indextts多人参考+情感_2002383614916608001.json, 音频生成/音频生成/indextts多人参考+情感_2014670668457054209.json, 音频生成/音频生成/indextts多人声音参考+情感_1992213630209028098.json]
+members: [图片生成/图生图/全能图片 2极速版10并发图像编辑V1_2027302727545528322.json, 图片生成/图生图/全能图片2--图片编辑--10并发_2027250575376654338.json, 图片生成/图生图/双图编辑 GXT-image2-0.2元_次_2046943787045359617.json, 图片生成/图生图/图生图-0.1元RH渠道低价版-全能图片G2-10比例选择-1K、2K、4K_2049693023231025154.json, 图片生成/图生图/新王驾到，全能图片G V2图像编辑！_2046821399657979905.json, 图片生成/图生图/最强图片模型-GXT-image2=0.2元_次_2046871585562300417.json, 图片生成/图生图/电商：模特走秀分镜_四宫格_全能图像G _0.1_张_2054161110563074050.json, 图片生成/图生图/（RH版）全能图片 2极速版10并发图像编辑V1_2027091060861706242.json, 图片生成/文生图/四宫格分镜横板：全能图像G 低价渠道版_2049030508394319874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_255
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json、音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json、音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json、音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json、音频生成/音频生成/indextts2基础+情感_2014670620402913282.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图片 2极速版10并发图像编辑V1_2027302727545528322.json、图片生成/图生图/全能图片2--图片编辑--10并发_2027250575376654338.json、图片生成/图生图/双图编辑 GXT-image2-0.2元_次_2046943787045359617.json、图片生成/图生图/图生图-0.1元RH渠道低价版-全能图片G2-10比例选择-1K、2K、4K_2049693023231025154.json、图片生成/图生图/新王驾到，全能图片G V2图像编辑！_2046821399657979905.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `CR Prompt Text`
+- `LoadImage`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 7/9 个有
-- `easy indexTTSEmotionAudio` —— 7/9 个有
-- `easy indexTTSEmotionVector` —— 7/9 个有
-- `easy indexTTSEmotionMerge` —— 6/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `PreviewAudio` —— 3/9 个有
-- `SaveAudio` —— 3/9 个有
+- `RH_RhartImageG2ImageToImage` —— 6/9 个有
+- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 3/9 个有
 
 ## 典型参数
 

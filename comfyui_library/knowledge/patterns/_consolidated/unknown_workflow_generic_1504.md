@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 0.75
-common_nodes: [LoadImage, easy saveText, easy showAnything]
+common_nodes: [Image Comparer (rgthree), RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/反推-图提示词-Qwen3VL_1983497403464622081.json, 图片生成/文生图/反推-图提示词-RH_1972580188930375682.json]
+members: [图片生成/图生图/在线 -  全能图片V12-双图_1994391204693483522.json, 图片生成/文生图/全能图像编辑0410_2038887358690496513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1504
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/反推-图提示词-Qwen3VL_1983497403464622081.json、图片生成/文生图/反推-图提示词-RH_1972580188930375682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/在线 -  全能图片V12-双图_1994391204693483522.json、图片生成/文生图/全能图像编辑0410_2038887358690496513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `easy saveText`
-- `easy showAnything`
+- `Image Comparer (rgthree)`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `LoadImagesFromURL` —— 1/2 个有
 
 ## 典型参数
 

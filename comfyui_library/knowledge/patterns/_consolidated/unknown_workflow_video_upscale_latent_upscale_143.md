@@ -3,56 +3,91 @@ name: unknown_workflow_video_upscale_latent_upscale_143
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.963
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, 忽略多组孤海]
+coverage: 0.5805
+common_nodes: [AudioCrop, BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageBatchMulti, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, SimpleMath+, Text Concatenate, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json]
+members: [视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json, 视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_143
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json、视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json、视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `AudioCrop`
 - `BasicScheduler`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
+- `EmptyLTXVLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `GetNode`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXSequencer`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyOutput`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `SaveImage`
+- `SetNode`
+- `SimpleMath+`
+- `Text Concatenate`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `ModelPreviewOverrideKJ` —— 1/2 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
-- `easy float` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LTXVReferenceAudio` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `PainterAudioLength` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1 | - | 1 | 100% |
+| 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题
 

@@ -1,83 +1,84 @@
 ---
 name: image_to_image_lora_sampler_unet_14
 type: Image To Image
-frequency: 21
+frequency: 22
 level: strong
-coverage: 0.851286
-common_nodes: [CLIPLoader, FluxKontextImageScale, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+coverage: 0.972455
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/[🛫书墨]小红书FireRed-Image-edit1.1_一至三图任意切换_2029240103347949569.json, 图片生成/图生图/[🛬书墨]FireRed-Image-edit1.0全能1-3图自由切换编辑_2023016122932531202.json, 图片生成/图生图/小红书FireRed Image Edit 1.1 多图编辑加速版｜模特换装｜换场景｜换颜色_2049307280159547394.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 8步加速版图像编辑V1_2029246391024881666.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 8步加速版图像编辑V1_2029367604804067329.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 VS aio 2511 单图_2029491702288879617.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 VS aio 2511(化妆)_2029500931573817345.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 VS aio 2511（文字排版）_2029499925364482049.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 单图双图三图编辑_2029911022823280641.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 双图编辑（文字排版参考）_2029575105692573697.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 双图编辑（文字排版参考）_2030166401742282754.json, 图片生成/图生图/小红书FireRed-Image-edit1.1 文字排版_2029759015185551362.json, 图片生成/图生图/小红书FireRed-Image-edit1.1单图编辑（人像一致性）_2029575084368728065.json, 图片生成/图生图/小红书FireRed-Image-edit1.1单图编辑（人像一致性）_2029727437268979713.json, 图片生成/图生图/小红书FireRed-Image-edit1.1单图编辑（人像一致）_2029741910889336833.json, 图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑（换装）_2029575073815863298.json, 图片生成/图生图/小红书FireRed-Image-edit1.1图像编辑（妆容迁移）_2029575093277433858.json, 图片生成/图生图/小红书FireRed-Image-edit1.1妆容迁移_2029746671227248641.json, 图片生成/图生图/小红书FireRed批量换装_2046756130541539330.json, 图片生成/图生图/（好用）小红书FireRed-Image-edit1.1双图编辑（情趣换装）_2030162350132695041.json, 图片生成/文生图/2029537706899935234.json]
+members: [图片生成/图生图/F.2Klein提取3d立体服装_2053799596253556738.json, 图片生成/图生图/F.2Klein提取3d立体服装_2056216125565874178.json, 图片生成/图生图/F.2Klein提取3d立体服装_2057635695820369921.json, 图片生成/图生图/F.2Klein提取3d立体服装_2058364672834891778.json, 图片生成/图生图/F.2Klein提取3d立体服装_2058380006920904706.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2052228410910486530.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2059096605923565569.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2059435718690304002.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2061660098623262721.json, 图片生成/图生图/FireRed-Image-Edit1.1单图编辑换装_2031741074665902081.json, 图片生成/图生图/FireRed-Image-edit1.1单图_双图_三图编辑_2029806395092115457.json, 图片生成/图生图/FireRed-Image-edit1.1单图_双图_三图编辑_2030064414078017537.json, 图片生成/图生图/FireRed_Edit艺术字风格迁移设计_2069077798647586817.json, 图片生成/图生图/Flux2-Klein9b一键提取3d立体服装_2038251793729200129.json, 图片生成/图生图/Flux2-Klein一键提取3d立体服装_2038862090676473857.json, 图片生成/图生图/KINWING_白底图背景替换_Qwen edit_2046550050255413249.json, 图片生成/图生图/Qwenedit 2511 一键换衣_2004388430463332354.json, 图片生成/图生图/qwen 2511重新照明重打光_2059634574510092289.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2055844453260242946.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2056203314009780225.json, 图片生成/图生图/qwen2511去除光斑 移除光影_2043657856179769346.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2113526159744004098.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/[🛫书墨]小红书FireRed-Image-edit1.1_一至三图任意切换_2029240103347949569.json、图片生成/图生图/[🛬书墨]FireRed-Image-edit1.0全能1-3图自由切换编辑_2023016122932531202.json、图片生成/图生图/小红书FireRed Image Edit 1.1 多图编辑加速版｜模特换装｜换场景｜换颜色_2049307280159547394.json、图片生成/图生图/小红书FireRed-Image-edit1.1 8步加速版图像编辑V1_2029246391024881666.json、图片生成/图生图/小红书FireRed-Image-edit1.1 8步加速版图像编辑V1_2029367604804067329.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/F.2Klein提取3d立体服装_2053799596253556738.json、图片生成/图生图/F.2Klein提取3d立体服装_2056216125565874178.json、图片生成/图生图/F.2Klein提取3d立体服装_2057635695820369921.json、图片生成/图生图/F.2Klein提取3d立体服装_2058364672834891778.json、图片生成/图生图/F.2Klein提取3d立体服装_2058380006920904706.json…）
 
 - **类型**：Image To Image
-- **样本数**：21
+- **样本数**：22
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `FluxKontextImageScale`
-- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 20/21 个有
-- `CFGNorm` —— 20/21 个有
-- `ModelSamplingAuraFlow` —— 20/21 个有
-- `PreviewImage` —— 20/21 个有
-- `CR Prompt Text` —— 19/21 个有
-- `easy cleanGpuUsed` —— 16/21 个有
-- `Fast Groups Muter (rgthree)` —— 15/21 个有
-- `AddLabel` —— 7/21 个有
-- `CR Image Grid Panel` —— 7/21 个有
-- `Image Batch` —— 7/21 个有
-- `KOOK_SaveJPGImage` —— 7/21 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 7/21 个有
-- `CheckpointLoaderSimple` —— 4/21 个有
-- `CR SDXL Aspect Ratio` —— 2/21 个有
-- `PrimitiveStringMultiline` —— 2/21 个有
-- `HAIGC_LoadImagesFromZip` —— 1/21 个有
-- `RH_BatchImages` —— 1/21 个有
+- `CR Text` —— 15/22 个有
+- `TextEncodeQwenImageEditPlus` —— 15/22 个有
+- `ConditioningZeroOut` —— 14/22 个有
+- `Int` —— 14/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/22 个有
+- `Image Comparer (rgthree)` —— 10/22 个有
+- `FluxKontextImageScale` —— 8/22 个有
+- `Flux2KleinEditTextEncode_EditUtils` —— 7/22 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 6/22 个有
+- `ReferenceLatent` —— 5/22 个有
+- `easy cleanGpuUsed` —— 5/22 个有
+- `easy imageConcat` —— 5/22 个有
+- `CR Prompt Text` —— 4/22 个有
+- `EmptyLatentImage` —— 2/22 个有
+- `Fast Bypasser (rgthree)` —— 1/22 个有
+- `ImageConcatMulti` —— 1/22 个有
+- `PreviewImage` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 21 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 21 | 100% |
-| 采样算法 | euler | - | 21 | 81% |
-| 调度器 | simple | - | 21 | 76% |
-| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
+| 采样步数 | 4 | 4 - 20 | 22 | 41% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
+| 采样算法 | euler | - | 22 | 95% |
+| 调度器 | simple | - | 22 | 68% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 1920 | - | 2 | 100% |
+| 高度 | 1080 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 21/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 25/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，21 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，21 个样本，一致性 81%
-- 调度器 最常用 simple，21 个样本，一致性 76%
-- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
-- 高发问题（21/21 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 20，22 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，22 个样本，一致性 95%
+- 调度器 最常用 simple，22 个样本，一致性 68%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（25/22 个样本）：Steps较低可能导致细节不足

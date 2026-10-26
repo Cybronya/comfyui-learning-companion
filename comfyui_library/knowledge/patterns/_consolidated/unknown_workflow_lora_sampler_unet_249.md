@@ -1,76 +1,100 @@
 ---
 name: unknown_workflow_lora_sampler_unet_249
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.944
-common_nodes: [CLIPLoader, CR Prompt Text, EmptyLatentImage, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.902333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetVideoComponents, ImpactConditionalBranch, ImpactExecutionOrderController, ImpactQueueTrigger, ImpactSetWidgetValue, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxLowVRAMAttention, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImageKJ, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, easy indexAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Edit-2511多角色自动分镜_2041813094552309762.json, 图片生成/图生图/Qwen_Edit_2511-最强单图海报文字修改工作流_2005193976342872066.json]
+members: [视频生成/文生视频/H3分段参考生视频_Impact_V6_双采_整合提示词版本_2090022476851007490.json, 视频生成/文生视频/H3分段参考生视频导播台_2093263724256784386.json, 视频生成/文生视频/参考生视频_2090901194595196929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_249
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511多角色自动分镜_2041813094552309762.json、图片生成/图生图/Qwen_Edit_2511-最强单图海报文字修改工作流_2005193976342872066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/H3分段参考生视频_Impact_V6_双采_整合提示词版本_2090022476851007490.json、视频生成/文生视频/H3分段参考生视频导播台_2093263724256784386.json、视频生成/文生视频/参考生视频_2090901194595196929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `EmptyLatentImage`
-- `ImageStitch`
-- `KSampler`
-- `LoadImage`
+- `CreateVideo`
+- `GetVideoComponents`
+- `ImpactConditionalBranch`
+- `ImpactExecutionOrderController`
+- `ImpactQueueTrigger`
+- `ImpactSetWidgetValue`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextLoadLatent`
+- `MiniMaxH3MotionContextSaveLatent`
+- `MiniMaxH3MotionContextTrim`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxH3TurboLoRA`
+- `MiniMaxH3TurboSampler`
+- `MiniMaxLowVRAMAttention`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `PrimitiveInt`
+- `RTXVideoSuperResolution`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveImageKJ`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
+- `easy indexAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `ProcessString` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `ComfyMathExpression` —— 2/3 个有
+- `ImagePass` —— 2/3 个有
+- `JoinStrings` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `PrimitiveString` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `SomethingToString` —— 2/3 个有
+- `TextSplitByDelimiter` —— 2/3 个有
+- `easy blocker` —— 2/3 个有
+- `easy compare` —— 2/3 个有
+- `easy convertAnything` —— 2/3 个有
+- `easy isFileExist` —— 2/3 个有
+- `easy mathInt` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `SaveImage` —— 1/3 个有
+- `TheodoreDirector_CommitResult` —— 1/3 个有
+- `TheodoreDirector_H3Adapter` —— 1/3 个有
+- `TheodoreDirector_OutputPaths` —— 1/3 个有
+- `TheodoreDirector_PostprocessSecondPassSource` —— 1/3 个有
+- `TheodoreDirector_Project` —— 1/3 个有
+- `TheodoreDirector_SaveSecondPass` —— 1/3 个有
+- `TheodoreDirector_SelectShot` —— 1/3 个有
+- `VAEEncodeAudio` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | sa_solver | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1344 | - | 2 | 57% |
-| 高度 | 924 | - | 2 | 83% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1344，样本不足，未给区间，2 个样本
-- 高度 中位数 924，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

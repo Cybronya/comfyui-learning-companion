@@ -1,74 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_171
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.792
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DWPreprocessor, FluxKontextImageScale, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Translator, SaveImage, Text, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8825
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, RH_Captioner, TextBox, UNETLoader, VAEDecode, VAELoader, WanImageToVideo, easy ifElse, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Edit 千问图像编辑 小志版(不漂移)_1970849073911734273.json, 图片生成/图生图/即梦去水印，图片区水印_1986234802447810561.json, 图片生成/图生图/即梦去水印，图片水印去除_1985917271019331586.json]
+members: [视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json, 视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json, 视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json, 视频生成/图生视频/图生视频工作流_2013427076698742785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_171
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 千问图像编辑 小志版(不漂移)_1970849073911734273.json、图片生成/图生图/即梦去水印，图片区水印_1986234802447810561.json、图片生成/图生图/即梦去水印，图片水印去除_1985917271019331586.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json、视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json、视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json、视频生成/图生视频/图生视频工作流_2013427076698742785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DWPreprocessor`
-- `FluxKontextImageScale`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Text Replace`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RH_Translator`
-- `SaveImage`
-- `Text`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `TextBox`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `WanImageToVideo`
+- `easy ifElse`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `NunchakuQwenImageDiTLoader` —— 2/3 个有
-- `NunchakuQwenImageLoraStack` —— 2/3 个有
-- `UNETLoader` —— 1/3 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `ImpactSwitch` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `Primitive integer [Crystools]` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `VHS_VideoCombine` —— 3/4 个有
+- `ImageResizeKJ` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `CreateVideo` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LoadImagesFromURL` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | fixed | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 7 | 6 - 8 | 4 | 90% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 8，4 个样本，取值集中（一致性 90%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

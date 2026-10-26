@@ -3,17 +3,17 @@ name: unknown_workflow_upscale_26
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.923
-common_nodes: [CR Text, CR Text Replace, Fast Groups Bypasser (rgthree), ImageBatchMulti, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy imageInsetCrop, easy promptConcat, kkImageSplit, solarL_SaveImagesToZip]
+coverage: 0.916667
+common_nodes: [LoadImage, RH_TopazLabs_ImageUpscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/image2（低价渠道版）九宫格分镜生成_2058046274460536834.json, 图片生成/文生图/image2（低价渠道版）十二格分镜生成_2067120871927541761.json, 视频生成/图生视频/image2（低价渠道版）十二格分镜视频生成_2061269992653549569.json]
+members: [图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json, 图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json, 图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_26
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/image2（低价渠道版）九宫格分镜生成_2058046274460536834.json、图片生成/文生图/image2（低价渠道版）十二格分镜生成_2067120871927541761.json、视频生成/图生视频/image2（低价渠道版）十二格分镜视频生成_2061269992653549569.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json、图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json、图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,24 +23,9 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `CR Text Replace`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageBatchMulti`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `RH_TopazLabs_ImageUpscale`
 - `SaveImage`
-- `easy imageInsetCrop`
-- `easy promptConcat`
-- `kkImageSplit`
-- `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/3 个有
-- `ImageUpscaleWithModel` —— 1/3 个有
-- `PreviewVideoNode` —— 1/3 个有
-- `RH_Doubao_Seedance_1_5_Pro` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,69 +3,58 @@ name: unknown_workflow_sampler_clip_unet_153
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.814875
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.93275
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/ideogram4-文生图_2062877551839760386.json, 图片生成/文生图/Ideogram 4.0 精准排版工作流（自然语言输入 + 画面分区控制）_2063868933291204609.json, 图片生成/文生图/Ideogram 4文生图_2062771352070873090.json, 图片生成/文生图/Ideogram 4｜结构化视觉海报_文生图生成器_2092654375297708034.json, 图片生成/文生图/Ideogram4  KJ节点_文生图_2064149542085414914.json, 图片生成/文生图/Ideogram4  KJ节点_文生图（含案例）_2063967049952620546.json, 图片生成/文生图/Ideogram4 区域编辑文生图_2063261187504164866.json, 图片生成/文生图/ideogram4_t2i文生图+Ideogram 4 Prompt Builder KJ_2064175389697724418.json]
+members: [图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json, 数字人/数字人/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-VLOG版_2059146940713103362.json, 视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json, 视频生成/图生视频/LTX2.3-多图分镜、数字人工作流_2060633763377410049.json, 视频生成/图生视频/LTX2.3-导演台多图分镜、数字人工作流_2069942311760523265.json, 视频生成/图生视频/LTX2.3导演台原生音视频_2068943072121147394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_153
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/ideogram4-文生图_2062877551839760386.json、图片生成/文生图/Ideogram 4.0 精准排版工作流（自然语言输入 + 画面分区控制）_2063868933291204609.json、图片生成/文生图/Ideogram 4文生图_2062771352070873090.json、图片生成/文生图/Ideogram 4｜结构化视觉海报_文生图生成器_2092654375297708034.json、图片生成/文生图/Ideogram4  KJ节点_文生图_2064149542085414914.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json、数字人/数字人/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-VLOG版_2059146940713103362.json、视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGOverride`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `StringReplace`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `SamplerCustom`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/8 个有
-- `ConditioningZeroOut` —— 7/8 个有
-- `KSamplerSelect` —— 7/8 个有
-- `Ideogram4PromptBuilderKJ` —— 6/8 个有
-- `PreviewImage` —— 6/8 个有
-- `CustomCombo` —— 5/8 个有
-- `ResolutionSelector` —— 5/8 个有
-- `PreviewAny` —— 4/8 个有
-- `PrimitiveStringMultiline` —— 4/8 个有
-- `ShowText|pysssss` —— 4/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `LoadImage` —— 2/8 个有
-- `easy anythingIndexSwitch` —— 2/8 个有
-- `AILab_QwenVL` —— 1/8 个有
-- `ImageBlend` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `SDVN Any Show` —— 1/8 个有
-- `SamplerEulerAncestral` —— 1/8 个有
-- `TTResolutionSelector` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
-- `llama_cpp_instruct_adv` —— 1/8 个有
-- `llama_cpp_model_loader` —— 1/8 个有
+- `LTX2SamplingPreviewOverride` —— 6/8 个有
+- `LTXVCropGuides` —— 6/8 个有
+- `VHS_VideoCombine` —— 6/8 个有
+- `LTXDirector` —— 5/8 个有
+- `LTXDirectorGuide` —— 4/8 个有
+- `LoraLoaderModelOnly` —— 4/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `YusuLTXDirectorGuide` —— 4/8 个有
+- `YusuLTXDirector` —— 3/8 个有
+- `ComfySwitchNode` —— 2/8 个有
+- `CreateVideo` —— 2/8 个有
+- `PrimitiveBoolean` —— 2/8 个有
+- `SaveVideo` —— 2/8 个有
+- `TTResolutionSelector` —— 2/8 个有
+- `YusuLTXDirectorCropGuides` —— 2/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

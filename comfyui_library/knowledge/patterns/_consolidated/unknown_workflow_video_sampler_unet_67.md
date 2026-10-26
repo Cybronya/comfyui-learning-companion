@@ -3,76 +3,73 @@ name: unknown_workflow_video_sampler_unet_67
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.529
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CS-MultiImageLoader, ComfyMathExpression, ComfySwitchNode, GetImage, GetNode, INTConstant, KSamplerSelect, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, ShowText|pysssss, StringConcatenate, StringReplace, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTAppearanceOrder, YUAN_TXTConvertAny, YUAN_TXTListNumber, YUAN_TXTParagraphSplitter, YUAN_TXTReplace, YuanTool, easy positive]
+coverage: 0.716333
+common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, PathchSageAttentionKJ, PreviewImage, PromptRelayEncode, SamplerCustom, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json]
+members: [视频生成/图生视频/精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514.json, 视频生成/图生视频/重大进步_连贯动作长视频生成(Prompt_relay_ltx2.3)_2046880656696807426.json, 视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_67
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514.json、视频生成/图生视频/重大进步_连贯动作长视频生成(Prompt_relay_ltx2.3)_2046880656696807426.json、视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `CS-MultiImageLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `GetImage`
-- `GetNode`
-- `INTConstant`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `RegexExtract`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringConcatenate`
-- `StringReplace`
+- `PromptRelayEncode`
+- `SamplerCustom`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `YUAN_TXTAppearanceOrder`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTListNumber`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTReplace`
-- `YuanTool`
-- `easy positive`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `YUAN_TXTLength` —— 2/3 个有
-- `Yuan_MiniMaxH3Video` —— 2/3 个有
-- `ComfyAndNode` —— 1/3 个有
-- `ComfyNotNode` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `StringLength` —— 1/3 个有
-- `easy imagesSplitImage` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
+- `GetNode` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `PrimitiveString` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `ResizeImagesByLongerEdge` —— 1/3 个有
+- `SimpleCalculatorKJ` —— 1/3 个有
+- `StringReplace` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 241 | 241 - 489 | 3 | 64% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -80,4 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 241，观测区间 241 - 489，3 个样本
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

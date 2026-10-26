@@ -3,29 +3,31 @@ name: unknown_workflow_generic_1616
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [PrimitiveStringMultiline, RH_RhartVideoGTextToVideo, SaveVideo]
+coverage: 1
+common_nodes: [EmptyImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频X--文生图(低价渠道版)_2082452945412640770.json, 视频生成/文生视频/全能视频x文生视频低价版 6-30s 仅0.03元_秒_2055113564335157249.json]
+members: [图片生成/文生图/test_2052873184361369601.json, 数字人/数字人/-全能图片V1 文生图工作流_1979115603401281538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1616
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频X--文生图(低价渠道版)_2082452945412640770.json、视频生成/文生视频/全能视频x文生视频低价版 6-30s 仅0.03元_秒_2055113564335157249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/test_2052873184361369601.json、数字人/数字人/-全能图片V1 文生图工作流_1979115603401281538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `RH_RhartVideoGTextToVideo`
-- `SaveVideo`
+- `EmptyImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Nano_Banana_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_266
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.635
-common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage, Text Multiline]
+coverage: 0.529778
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext一键戴墨镜_1930432792331718657.json, 图片生成/图生图/一键变光头-黑森林FLUX.1 Kontext_1930941902059667458.json, 图片生成/图生图/多图融合人物合影-黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928658830333480962.json, 图片生成/图生图/老照片上色-黑森林FLUX.1 Kontext_1928828068817965057.json, 图片生成/图生图/自动擦除水印和文字-Kontext神器_1929707054347272194.json, 图片生成/图生图/薄荷色拉布布_1932552025219473410.json, 图片生成/图生图/黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928235200189480962.json, 图片生成/文生图/Kontext终结IP-Adapter风格完美迁移_1931705234769248258.json]
+members: [视频生成/图生视频/MiniMax海螺 V2.3图生视频（贞贞的ai工坊api）_2011374870608748546.json, 视频生成/图生视频/Vidu Q2多参视频V1(贞贞的AI工坊Api)_2011368468091772929.json, 视频生成/图生视频/全能视频G 1.5图生视频10S（贞贞工坊版-0.5积分，默认分组）_2065349201432764418.json, 视频生成/图生视频/全能视频G Video3 图生视频(Gensor AI)_2028695510948777986.json, 视频生成/图生视频/全能视频G 图生视频(自用版本)_2043572012957835266.json, 视频生成/图生视频/全能视频G 图生视频(贞贞的AI工坊API版) V2_1998603211751743489.json, 视频生成/图生视频/（基准1.6）MinMax海螺最新首尾帧API版（6秒和10秒版）_1961751814309875714.json, 视频生成/图生视频/（已修复支持真人-多图像参考）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033804502687555585.json, 视频生成/图生视频/（已修复支持真人-首尾帧）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033802990401888257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_266
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux Kontext一键戴墨镜_1930432792331718657.json、图片生成/图生图/一键变光头-黑森林FLUX.1 Kontext_1930941902059667458.json、图片生成/图生图/多图融合人物合影-黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928658830333480962.json、图片生成/图生图/老照片上色-黑森林FLUX.1 Kontext_1928828068817965057.json、图片生成/图生图/自动擦除水印和文字-Kontext神器_1929707054347272194.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax海螺 V2.3图生视频（贞贞的ai工坊api）_2011374870608748546.json、视频生成/图生视频/Vidu Q2多参视频V1(贞贞的AI工坊Api)_2011368468091772929.json、视频生成/图生视频/全能视频G 1.5图生视频10S（贞贞工坊版-0.5积分，默认分组）_2065349201432764418.json、视频生成/图生视频/全能视频G Video3 图生视频(Gensor AI)_2028695510948777986.json、视频生成/图生视频/全能视频G 图生视频(自用版本)_2043572012957835266.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
-- `Text Multiline`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageScaleDownToSize` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `ImageConcanate` —— 5/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `RH_Translator` —— 2/8 个有
+- `ComflyGrok3VideoApi` —— 6/9 个有
+- `Comfly_MiniMax_video` —— 2/9 个有
+- `Comfly_vidu_ref2video` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

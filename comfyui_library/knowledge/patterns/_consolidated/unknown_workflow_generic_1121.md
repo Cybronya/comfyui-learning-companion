@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1121
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.621
-common_nodes: [CLIPLoader, LoadAudio, PreviewAny, SaveImage, TextGenerate]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/llm_gemma4_text_gen666_2066543100402683905.json, 音频生成/音频生成/llm_gemma4_text_gen_2067373155886391297.json, 音频生成/音频生成/llm_gemma4_text_gen_2067600813530370049.json]
+members: [视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json, 视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json, 视频生成/图生视频/SeedanceV15ProImageToVideo_2038487746444009474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1121
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/llm_gemma4_text_gen666_2066543100402683905.json、音频生成/音频生成/llm_gemma4_text_gen_2067373155886391297.json、音频生成/音频生成/llm_gemma4_text_gen_2067600813530370049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json、视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json、视频生成/图生视频/SeedanceV15ProImageToVideo_2038487746444009474.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `LoadAudio`
-- `PreviewAny`
-- `SaveImage`
-- `TextGenerate`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_SaveImage` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `RH_SeedanceV15ProImageToVideo` —— 2/3 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,111 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_242
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.797
-common_nodes: [Anything Everywhere, Audio Remixer, AudioCombine, AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, GetNode, ImageResize+, Int, Load Audio Separation Model, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.905556
+common_nodes: [AudioCropProcessUTK, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Float To Integer, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/6G玩转MultiTalk数字人_1937067171614740482.json, 视频生成/图生视频/MultiTalk数字人｜FusionX加速｜大师级运镜_1936703364866674689.json, 视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json, 视频生成/图生视频/Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_1997551281285828610.json, 视频生成/图生视频/【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json, 视频生成/图生视频/【一键MV分镜成片】Wan2.2-infinitetalk数字人（图生视频）_1958770586971500546.json, 视频生成/图生视频/【港式经典对白】顶级MultiTalk数字人（一键成片）_1949215693187817474.json, 视频生成/图生视频/【王炸组合】MultiTalk数字人+FusionX加速+曲线运镜_1936453131641458689.json]
+members: [视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json, 视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json, 视频生成/图生视频/WAN2.2 S2V -让图片会唱歌_1962685286419415042.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1961341007348568066.json, 视频生成/图生视频/Wan2.2+S2V数字人视频驱动视频工作流_1965758281866219521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_242
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/6G玩转MultiTalk数字人_1937067171614740482.json、视频生成/图生视频/MultiTalk数字人｜FusionX加速｜大师级运镜_1936703364866674689.json、视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json、视频生成/图生视频/Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_1997551281285828610.json、视频生成/图生视频/【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json、视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Anything Everywhere`
-- `Audio Remixer`
-- `AudioCombine`
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Text`
-- `GetNode`
-- `ImageResize+`
-- `Int`
-- `Load Audio Separation Model`
+全部 9 个 workflow 都包含：
+- `AudioCropProcessUTK`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Float To Integer`
+- `KSampler`
 - `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewAudio`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SimpleMath+`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `WanSoundImageToVideo`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 7/8 个有
-- `CogVideoEnhanceAVideo` —— 7/8 个有
-- `DownloadAndLoadWav2VecModel` —— 7/8 个有
-- `LoadImage` —— 7/8 个有
-- `MultiTalkModelLoader` —— 7/8 个有
-- `MultiTalkWav2VecEmbeds` —— 7/8 个有
-- `RHHiddenNodes` —— 7/8 个有
-- `SaveAudio` —— 7/8 个有
-- `WanVideoClipVisionEncode` —— 7/8 个有
-- `WanVideoSLG` —— 7/8 个有
-- `WanVideoExperimentalArgs` —— 6/8 个有
-- `WanVideoImageToVideoEncode` —— 6/8 个有
-- `Audio Duration (mtb)` —— 5/8 个有
-- `ImpactSwitch` —— 5/8 个有
-- `ShowText|pysssss` —— 5/8 个有
-- `ImageCASharpening+` —— 4/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/8 个有
-- `WanVideoApplyNAG` —— 4/8 个有
-- `WanVideoTextEncode` —— 4/8 个有
-- `WanVideoTextEncodeSingle` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `ColorCorrectOfUtils` —— 3/8 个有
-- `JWInteger` —— 3/8 个有
-- `WanVideoContextOptions` —— 3/8 个有
-- `easy anythingIndexSwitch` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `CreateCFGScheduleFloatList` —— 2/8 个有
-- `IndexTTSRun` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `WanVideoEncode` —— 2/8 个有
-- `Audio Cut (mtb)` —— 1/8 个有
-- `AudioConcatenate` —— 1/8 个有
-- `AudioEncoderEncode` —— 1/8 个有
-- `AudioEncoderLoader` —— 1/8 个有
-- `AudioSegmentSelector` —— 1/8 个有
-- `CM_FloatToInt` —— 1/8 个有
-- `Float` —— 1/8 个有
-- `ImageBatchMultiple+` —— 1/8 个有
-- `ImageLoaderAdvanced` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `VADSplitter` —— 1/8 个有
-- `WanVideoAddAudioEmbeds` —— 1/8 个有
-- `WanVideoEmptyEmbeds` —— 1/8 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
-- `kkGetImage` —— 1/8 个有
+- `PreviewAudio` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `VHS_LoadVideo` —— 8/9 个有
+- `PreviewImage` —— 7/9 个有
+- `ContextWindowsManual` —— 5/9 个有
+- `ImageFromBatch+` —— 5/9 个有
+- `JWFloat` —— 5/9 个有
+- `JWInteger` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `ImageResizeKJv2` —— 4/9 个有
+- `Display Any (rgthree)` —— 3/9 个有
+- `SaveLatent` —— 3/9 个有
+- `CR Prompt Text` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `OpenposePreprocessor` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | uni_pc | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

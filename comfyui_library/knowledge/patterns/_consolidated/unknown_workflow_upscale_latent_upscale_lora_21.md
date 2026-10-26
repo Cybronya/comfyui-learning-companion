@@ -3,22 +3,22 @@ name: unknown_workflow_upscale_latent_upscale_lora_21
 type: Unknown Workflow
 frequency: 12
 level: strong
-coverage: 0.87225
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.885583
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, FloatConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049510722668859394.json, 图片生成/文生图/LTX2.3-transition-lora-丝滑转场-i2v视频-自动提示词_2040078621276114946.json, 视频生成/图生视频/3.0最新图生视频 （懒人版）你提想法帮你实现_2066087069847482370.json, 视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039704492752510977.json, 视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039914050452201474.json, 视频生成/图生视频/LTX2.3-transition-lora-丝滑转场-i2v-多图-自动提示词_2040291923272933378.json, 视频生成/图生视频/ltx2.3 图生视频_2042446425367257089.json, 视频生成/图生视频/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049507628333670402.json, 视频生成/图生视频/酱板鸭视频生成器（LTX-2.3版）：一键生成多国语言对话的酱板鸭视频，支持OpenClaw调用！_2037239092089458690.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成宠物播客视频_2030535698637398018.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成武打电影视频_2030549062293921794.json, 视频生成/文生视频/LTX2.3-transition-lora-丝滑转场-t2v视频-自动提示词_2040215269943021570.json]
+members: [图片生成/图生图/LTX2.3 _ 单图+简单提示词=快速出视频_2057674716944625665.json, 图片生成/图生图/中间帧 图生视频 首中尾帧 LTX2.3_2042479103651094529.json, 图片生成/图生图/二、三图（LTX2.3  Remix）_2056909754852794370.json, 图片生成/图生图/首尾帧图生视频   LTX2.3   丝滑lora版_2042477166348210177.json, 视频生成/图生视频/LTX2.3 --首尾帧双图生视频--全自动提示词--自由控制尾帧位置--超高出片率_2035325472770367490.json, 视频生成/图生视频/LTX2.3 中间帧+图生视频 三图-首中尾帧+优化版_2051164751694184449.json, 视频生成/图生视频/LTX2.3 全自动提示词--首中尾帧三图生视频_2035325465820405761.json, 视频生成/图生视频/LTX2.3-五图生视频10秒电商展示变装-全自动提示词_2051490555791720450.json, 视频生成/图生视频/LTX2.3-五图生视频15秒电商展示变装-全自动提示词_2051660543777361922.json, 视频生成/图生视频/LTX2.3首尾帧双图生视频-单镜头自动提示词版本_2051217425542201345.json, 视频生成/图生视频/LTX2.3首尾帧双图生视频-手动提示词版--注释含提示词模板_2051911216334942209.json, 视频生成/图生视频/全能图片G 2.0+LTX2.3文生图首尾帧生视频&自动提示词版本_2051654152509501441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_21
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049510722668859394.json、图片生成/文生图/LTX2.3-transition-lora-丝滑转场-i2v视频-自动提示词_2040078621276114946.json、视频生成/图生视频/3.0最新图生视频 （懒人版）你提想法帮你实现_2066087069847482370.json、视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039704492752510977.json、视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039914050452201474.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/LTX2.3 _ 单图+简单提示词=快速出视频_2057674716944625665.json、图片生成/图生图/中间帧 图生视频 首中尾帧 LTX2.3_2042479103651094529.json、图片生成/图生图/二、三图（LTX2.3  Remix）_2056909754852794370.json、图片生成/图生图/首尾帧图生视频   LTX2.3   丝滑lora版_2042477166348210177.json、视频生成/图生视频/LTX2.3 --首尾帧双图生视频--全自动提示词--自由控制尾帧位置--超高出片率_2035325472770367490.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -27,62 +27,67 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLTXVLatentVideo`
+- `FloatConstant`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SimpleMath+`
 - `VAEDecodeTiled`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVImgToVideoInplace` —— 11/12 个有
-- `LTXVPreprocess` —— 11/12 个有
 - `LoadImage` —— 11/12 个有
-- `ResizeImagesByLongerEdge` —— 11/12 个有
-- `PrimitiveBoolean` —— 10/12 个有
-- `PreviewAny` —— 9/12 个有
-- `PrimitiveInt` —— 9/12 个有
-- `PrimitiveStringMultiline` —— 8/12 个有
-- `ImageResizeKJv2` —— 7/12 个有
-- `CustomAddLabel` —— 5/12 个有
-- `Int` —— 5/12 个有
-- `Label (rgthree)` —— 5/12 个有
-- `RH_Utils` —— 5/12 个有
-- `ResizeImageMaskNode` —— 5/12 个有
-- `TTResolutionSelector` —— 5/12 个有
-- `CR Text` —— 4/12 个有
-- `SimpleMath+` —— 4/12 个有
-- `JWFloat` —— 3/12 个有
-- `LTX2_NAG` —— 3/12 个有
-- `StringReplace` —— 3/12 个有
-- `string_util_StrConcat` —— 3/12 个有
-- `ttN concat` —— 3/12 个有
-- `CR Text Concatenate` —— 2/12 个有
-- `Evaluate Integers` —— 2/12 个有
-- `JjkText` —— 2/12 个有
-- `MultiTextConcatenate` —— 2/12 个有
-- `SDVN Any Show` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `ImageStitch` —— 1/12 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/12 个有
-- `MathExpression|pysssss` —— 1/12 个有
-- `ShowAnything|Mie` —— 1/12 个有
+- `RH_LLMAPI_Pro_Node` —— 11/12 个有
+- `LTXVPreprocess` —— 10/12 个有
+- `CreateVideo` —— 9/12 个有
+- `ResizeImagesByLongerEdge` —— 9/12 个有
+- `SaveVideo` —— 9/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/12 个有
+- `CR Prompt Text` —— 7/12 个有
+- `DualCLIPLoader` —— 7/12 个有
+- `PreviewAny` —— 7/12 个有
+- `TextGenerateLTX2Prompt` —— 7/12 个有
+- `PrimitiveStringMultiline` —— 5/12 个有
+- `ImageResizeKJv2` —— 4/12 个有
+- `TextCombinerTwo` —— 4/12 个有
+- `VHS_VideoCombine` —— 4/12 个有
+- `easy int` —— 4/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
+- `ResizeImageMaskNode` —— 3/12 个有
+- `CLIPLoader` —— 1/12 个有
+- `CLIPVisionEncode` —— 1/12 个有
+- `CLIPVisionLoader` —— 1/12 个有
+- `CM_IntToFloat` —— 1/12 个有
+- `CR Text Concatenate` —— 1/12 个有
+- `INTConstant` —— 1/12 个有
+- `KSamplerAdvanced` —— 1/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
+- `ModelSamplingSD3` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `RH_RhartImageG2TextToImage` —— 1/12 个有
+- `UNETLoader` —— 1/12 个有
+- `VAEDecode` —— 1/12 个有
+- `VAELoader` —— 1/12 个有
+- `WanFirstLastFrameToVideo` —— 1/12 个有
 
 ## 典型参数
 
@@ -90,6 +95,11 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 97 | 12 | 100% |
 | 高度 | 25 | 25 - 25 | 12 | 100% |
+| 采样步数 | fixed | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 1 | 100% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | euler_ancestral | - | 1 | 100% |
+| 重绘幅度 | simple | - | 1 | 100% |
 
 ## 常见问题
 

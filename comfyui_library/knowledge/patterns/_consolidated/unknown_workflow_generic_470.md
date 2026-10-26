@@ -3,36 +3,39 @@ name: unknown_workflow_generic_470
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.965833
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.696667
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/INDEXTTS2语音克隆合集+情感控制三合一工作流_1966090623176667137.json, 音频生成/音频生成/IndexTTS2单人语音克隆+情感控制_1965815226509733889.json, 音频生成/音频生成/IndexTTS2音频克隆+音频参考情感控制_1965813801541087234.json, 音频生成/音频生成/IndexTTS双音频参考+多种方法情感控制_1965614386977099777.json, 音频生成/音频生成/Indextts2声音克隆_1966077984237064193.json, 音频生成/音频生成/最强克隆语音IndexTTS2_1967931893113040897.json]
+members: [图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json, 图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json, 图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json, 图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json, 图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json, 图片生成/文生图/万能图像编辑 gxx-image-2 image2 图生图 全能图像编辑 海报生成_2048941435507974146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_470
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/INDEXTTS2语音克隆合集+情感控制三合一工作流_1966090623176667137.json、音频生成/音频生成/IndexTTS2单人语音克隆+情感控制_1965815226509733889.json、音频生成/音频生成/IndexTTS2音频克隆+音频参考情感控制_1965813801541087234.json、音频生成/音频生成/IndexTTS双音频参考+多种方法情感控制_1965614386977099777.json、音频生成/音频生成/Indextts2声音克隆_1966077984237064193.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json、图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json、图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json、图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json、图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_gpt_image_2`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiLinePromptIndex` —— 5/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `SoundFlow_PreviewAudio` —— 4/6 个有
-- `Text` —— 3/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `JjkText` —— 4/6 个有
+- `RH_RhartImageG2ImageToImage` —— 4/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/6 个有
+- `RH_RhartImageG2TextToImage` —— 2/6 个有
 
 ## 典型参数
 

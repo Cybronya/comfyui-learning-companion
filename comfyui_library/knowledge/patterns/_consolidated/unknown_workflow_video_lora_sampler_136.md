@@ -1,68 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_136
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.94325
-common_nodes: [CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.736692
+common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, CreateCFGScheduleFloatList, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, Int, InversionDemoLazyIndexSwitch, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Multitalk多人对话极速优化版 数字人对口型_1952655521791819778.json, 视频生成/图生视频/Multitalk数字人一条龙加强_1954868813227593730.json, 视频生成/图生视频/Multitalk最强数字人运镜参考版 运行加强版_1952724785534070786.json, 视频生成/图生视频/【数字人说话】 语音克隆音频驱动对口型 对口型数字人sonic【图片+音频】_1979755261789376514.json, 视频生成/图生视频/声音克隆+文字引导+图片生成数字人对口型说话-阿浩_2026920860375851010.json, 视频生成/图生视频/👾【大炮数字人】MultiTalk双人对口型加速版👾_1941429442441015297.json, 视频生成/图生视频/💂_IndexTTS语音克隆+Multitalk数字人对口型💂__1954737241992118273.json, 视频生成/文生视频/视频数字人对口 IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1994301248816037890.json, 音频生成/音频生成/IndexTTS语音克隆+Multitalk数字人对口型_1954811221523390466.json, 音频生成/音频生成/Multitalk单人唱歌数字人_1952348321673359361.json, 音频生成/音频生成/【数字人说话】 语音克隆音频驱动对口型_1957341883464871937.json, 音频生成/音频生成/【文字转音频】IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1986588000891109378.json]
+members: [图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json, 图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json, 图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json, 图片生成/图生图/动态表情包定制_2007359970110607362.json, 图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json, 图片生成/文生图/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2072237916960677889.json, 视频生成/图生视频/Pro-wan2.2动态_2010899703377960962.json, 视频生成/图生视频/【动态表情包定制V2生成】 全能图片Pro-wan2.2动态_2067073649651306497.json, 视频生成/图生视频/【动态表情包定制V2生成】 全能图片Pro-wan2.2动态_2067075192274382849.json, 视频生成/图生视频/【表情包定制V2】 全能图片Pro-wan2.2动态_1991161112701829121.json, 视频生成/图生视频/表情包定制(可拆分)_2041003408856977412.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2058188130242621442.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2068868048580333570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_136
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Multitalk多人对话极速优化版 数字人对口型_1952655521791819778.json、视频生成/图生视频/Multitalk数字人一条龙加强_1954868813227593730.json、视频生成/图生视频/Multitalk最强数字人运镜参考版 运行加强版_1952724785534070786.json、视频生成/图生视频/【数字人说话】 语音克隆音频驱动对口型 对口型数字人sonic【图片+音频】_1979755261789376514.json、视频生成/图生视频/声音克隆+文字引导+图片生成数字人对口型说话-阿浩_2026920860375851010.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json、图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json、图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json、图片生成/图生图/动态表情包定制_2007359970110607362.json、图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPVisionLoader`
+- `CR String To Number`
 - `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `CogVideoEnhanceAVideo`
+- `ColorCorrectOfUtils`
+- `CreateCFGScheduleFloatList`
+- `FluxResolutionNode`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
+- `InversionDemoLazyIndexSwitch`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 11/12 个有
-- `WanVideoImageToVideoMultiTalk` —— 11/12 个有
-- `WanVideoTorchCompileSettings` —— 11/12 个有
-- `Audio Duration (mtb)` —— 9/12 个有
-- `ImpactInt` —— 9/12 个有
-- `IndexTTSRun` —— 8/12 个有
-- `MultiLinePromptIndex` —— 8/12 个有
-- `SaveAudioMP3` —— 8/12 个有
-- `AudioSeparation` —— 4/12 个有
-- `SaveAudio` —— 4/12 个有
-- `easy showAnything` —— 4/12 个有
-- `AudioCrop` —— 3/12 个有
-- `Int` —— 3/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/12 个有
-- `MaskPreview+` —— 3/12 个有
-- `SeparateMasks` —— 3/12 个有
-- `WanVideoContextOptions` —— 3/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `WanVideoImageToVideoEncode` —— 1/12 个有
-- `easy convertAnything` —— 1/12 个有
+- `SaveImage` —— 12/13 个有
+- `RHHiddenNodes` —— 11/13 个有
+- `RH_Nano_Banana2_Image2Image` —— 9/13 个有
+- `Fast Groups Muter (rgthree)` —— 5/13 个有
+- `ImageCropV2` —— 5/13 个有
+- `ImageResizeKJ` —— 5/13 个有
+- `ImageScale` —— 5/13 个有
+- `PrimitiveBoundingBox` —— 5/13 个有
+- `RH_LLMAPI_Pro_Node` —— 5/13 个有
+- `VHS_LoadVideo` —— 5/13 个有
+- `VHS_VideoInfo` —— 5/13 个有
+- `Any Switch (rgthree)` —— 4/13 个有
+- `Comfly_api_set` —— 4/13 个有
+- `Comfly_gpt_image_2_official_ratio` —— 4/13 个有
+- `RH_RhartImageG2ImageToImage` —— 4/13 个有
+- `EG_ZZ_TMTX` —— 1/13 个有
+- `Float` —— 1/13 个有
+- `GrowMaskWithBlur` —— 1/13 个有
+- `PreviewAny` —— 1/13 个有
+- `Qwen3_VQA_Plus` —— 1/13 个有
+- `RMBG` —— 1/13 个有
+- `Sa2VANodeTpl` —— 1/13 个有
+- `SimpleMath+` —— 1/13 个有
+- `TT_img_enc` —— 1/13 个有
+- `easy imageCropFromMask` —— 1/13 个有
 
 ## 典型参数
 

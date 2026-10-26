@@ -3,53 +3,56 @@ name: unknown_workflow_sampler_clip_unet_354
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.864333
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.883333
+common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPTextEncode, CustomAddLabel, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, Int, JjkText, KSamplerSelect, LayerUtility: PurgeVRAM V2, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/写实风格图生图_1905140867475378177.json, 图片生成/文生图/FLUX SRPO 文生图 _ Joy 3 反推文生图，腾讯开源新模型！真实性和美学质量提高超3倍！_1966878604049125377.json, 图片生成/文生图/WaveSpeed FLUX工作流加速神器_1879120968877830146.json]
+members: [图片生成/图生图/SRPO-image-generation-电影级皮肤质感-洗图_2025737603282112514.json, 图片生成/文生图/SRPO-image-generation-电影级皮肤质感-文生图-自动提示词_2025756081611345922.json, 图片生成/文生图/SRPO-image-generation-电影级皮肤质感-文生图_1973761942366064641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_354
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/写实风格图生图_1905140867475378177.json、图片生成/文生图/FLUX SRPO 文生图 _ Joy 3 反推文生图，腾讯开源新模型！真实性和美学质量提高超3倍！_1966878604049125377.json、图片生成/文生图/WaveSpeed FLUX工作流加速神器_1879120968877830146.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SRPO-image-generation-电影级皮肤质感-洗图_2025737603282112514.json、图片生成/文生图/SRPO-image-generation-电影级皮肤质感-文生图-自动提示词_2025756081611345922.json、图片生成/文生图/SRPO-image-generation-电影级皮肤质感-文生图_1973761942366064641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
+- `CustomAddLabel`
 - `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `Int`
+- `JjkText`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `ModelSamplingFlux`
+- `PreviewImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `FluxGuidance` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
 - `LoadImage` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `EnhancedCompileModel` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `Lora Loader Stack (rgthree)` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `SeedVR2` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `BatchTextReplace` —— 1/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
 
 ## 典型参数
 

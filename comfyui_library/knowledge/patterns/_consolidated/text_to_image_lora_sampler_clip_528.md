@@ -3,53 +3,50 @@ name: text_to_image_lora_sampler_clip_528
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.735
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, GetNode, INTConstant, Int, JjkText, KSampler, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SetNode, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.799
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json]
+members: [图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json, 图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json, 图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_528
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json、图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json、图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetNode`
-- `INTConstant`
-- `Int`
+- `Fast Groups Bypasser (rgthree)`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetNode`
-- `Text Concatenate`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 2/3 个有
-- `EmptyImage` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 2/3 个有
+- `RH_RhartImageNProOfficialEdit` —— 2/3 个有
+- `ColorMatchPro` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `InvertMask` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `区域颜色匹配` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_420
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.939167
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, RH_Translator, SaveImage]
+coverage: 0.985714
+common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/一键自动矫正裁剪-证件照-蓝白红自行调节_2067454386472841218.json, 图片生成/图生图/全能图片Pro_2044989873957900290.json, 图片生成/图生图/全能图片Pro双图编辑_2035949319622234114.json, 图片生成/图生图/全能图片Pro多图编辑_2035942456222556162.json, 图片生成/图生图/证件照 （蓝白红）（全能图像编辑）_2015052050962321410.json, 图片生成/图生图/证件照3.0_1979925264920645634.json]
+members: [音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json, 音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json, 音频生成/音频生成/语音音色克隆_2010759017274023937.json, 音频生成/音频生成/语音音色克隆（音频生音频）_1990429307434655745.json, 音频生成/音频生成/音频换音色_2029048391027658753.json, 音频生成/音频生成/音频转音色_1979826267300204545.json, 音频生成/音频生成/音频音色克隆-阿浩_2026923898918408193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_420
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键自动矫正裁剪-证件照-蓝白红自行调节_2067454386472841218.json、图片生成/图生图/全能图片Pro_2044989873957900290.json、图片生成/图生图/全能图片Pro双图编辑_2035949319622234114.json、图片生成/图生图/全能图片Pro多图编辑_2035942456222556162.json、图片生成/图生图/证件照 （蓝白红）（全能图像编辑）_2015052050962321410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json、音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json、音频生成/音频生成/语音音色克隆_2010759017274023937.json、音频生成/音频生成/语音音色克隆（音频生音频）_1990429307434655745.json、音频生成/音频生成/音频换音色_2029048391027658753.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `RH_Translator`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 3/6 个有
-- `TextCombinerTwo` —— 3/6 个有
+- `AudioSeparation` —— 5/7 个有
+- `Label (rgthree)` —— 3/7 个有
 
 ## 典型参数
 

@@ -1,70 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_599
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.829
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageResizeKJ, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, easy cleanGpuUsed]
+coverage: 0.9065
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, ResizeLongestToNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json, 视频生成/图生视频/抖音网红AI视频_1867168400106569730.json, 视频生成/图生视频/抖音网红视频_1862018692308729857.json]
+members: [视频生成/图生视频/子弹时间特效图生视频vogue时间暂停修复版（小软熊大佬）_2013186178811432961.json, 视频生成/图生视频/子弹时间特效图生视频工作流_2073390461141733378.json, 视频生成/图生视频/子弹时间特效图生视频工作流（小软熊大佬）_1989608453410836481.json, 视频生成/图生视频/🦖Wan2.2 极速高质量_1950004149220982785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_599
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json、视频生成/图生视频/抖音网红AI视频_1867168400106569730.json、视频生成/图生视频/抖音网红视频_1862018692308729857.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/子弹时间特效图生视频vogue时间暂停修复版（小软熊大佬）_2013186178811432961.json、视频生成/图生视频/子弹时间特效图生视频工作流_2073390461141733378.json、视频生成/图生视频/子弹时间特效图生视频工作流（小软熊大佬）_1989608453410836481.json、视频生成/图生视频/🦖Wan2.2 极速高质量_1950004149220982785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CogVideoDecode`
-- `CogVideoImageEncode`
-- `CogVideoSampler`
-- `CogVideoTextEncode`
-- `DownloadAndLoadCogVideoModel`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `Fast Groups Muter (rgthree)`
-- `FluxGuidance`
-- `ImageResizeKJ`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `RIFE VFI`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `ShowText|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ResizeLongestToNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VideoCombine_Adv`
-- `easy cleanGpuUsed`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy imageChooser` —— 2/3 个有
-- `Joy_caption` —— 1/3 个有
-- `Joy_caption_load` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `JjkText` —— 3/4 个有
+- `MuyeTextEditOutput` —— 3/4 个有
+- `RunningHub Deepcleaner` —— 3/4 个有
+- `ACE_ImageGetSize` —— 2/4 个有
+- `ImageGetSize` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 8 | 4 | 65% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 75% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -72,4 +64,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 75%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

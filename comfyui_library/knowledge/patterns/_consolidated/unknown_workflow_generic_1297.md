@@ -3,36 +3,29 @@ name: unknown_workflow_generic_1297
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6025
-common_nodes: [LoadAndResizeImage, RH_ComfyFluxKontext, RH_Translator, SaveImage, ShowText|pysssss]
+coverage: 1
+common_nodes: [LoadVideo, RH_PixverseV6Extend, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/【免费】Flux-Kontext图像编辑（一句话改图）_1928999736483942401.json, 图片生成/图生图/【电商模特产品展示】Flux Kontext图像编辑（免费）_1929214915087863809.json]
+members: [图片生成/反推提示词/PixVerse V6 视频续写（RH版）_2054421247181770753.json, 视频生成/图生视频/PixVerse+V6+视频续写 (1)_2051862644835008514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1297
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【免费】Flux-Kontext图像编辑（一句话改图）_1928999736483942401.json、图片生成/图生图/【电商模特产品展示】Flux Kontext图像编辑（免费）_1929214915087863809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/PixVerse V6 视频续写（RH版）_2054421247181770753.json、视频生成/图生视频/PixVerse+V6+视频续写 (1)_2051862644835008514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAndResizeImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
+- `LoadVideo`
+- `RH_PixverseV6Extend`
+- `easy saveText`
 
 ## 典型参数
 

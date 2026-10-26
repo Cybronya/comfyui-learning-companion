@@ -2,38 +2,57 @@
 name: unknown_workflow_video_sampler_16
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.793667
-common_nodes: [Echo_LoadModel, Echo_Sampler, ImageResizeAdvanced, LoadAudio, LoadImage, PreviewImage, VHS_VideoCombine]
+level: strong
+coverage: 0.961667
+common_nodes: [CreateVideo, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageConcanate, ImageFromBatch+, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json, 视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json, 视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json]
+members: [图片生成/图生图/(全能视频S 25S满血版)FlashVSR Smthem版视频模糊变高清V1_1981405858833809409.json, 数字人/数字人/数字人视频高清化+首尾帧提取取 V1.0_2021579573317607426.json, 视频生成/图生视频/图生视频+视频高清放大  最强王者！ Seedance1.5Pro 首尾帧图生视频_2021792060466008066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json、视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json、视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/(全能视频S 25S满血版)FlashVSR Smthem版视频模糊变高清V1_1981405858833809409.json、数字人/数字人/数字人视频高清化+首尾帧提取取 V1.0_2021579573317607426.json、视频生成/图生视频/图生视频+视频高清放大  最强王者！ Seedance1.5Pro 首尾帧图生视频_2021792060466008066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Echo_LoadModel`
-- `Echo_Sampler`
-- `ImageResizeAdvanced`
-- `LoadAudio`
-- `LoadImage`
-- `PreviewImage`
+- `CreateVideo`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `GetVideoComponents`
+- `ImageConcanate`
+- `ImageFromBatch+`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadVideo`
+- `SaveVideo`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSizeAndCount` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `RH_Doubao_Seedance_1_5_Pro` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.24392e+09 | 6.30091e+08 - 1.31404e+09 | 3 | 71% |
+| Prompt 约束强度(CFG) | randomize | - | 3 | 100% |
+| 采样算法 | 2 | 2 - 2 | 3 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 3 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 3 | 100% |
 
 ## 常见问题
 
@@ -41,4 +60,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.24392e+09，观测区间 6.30091e+08 - 1.31404e+09，3 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，3 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.31404e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

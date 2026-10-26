@@ -3,33 +3,41 @@ name: unknown_workflow_generic_174
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.850545
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.664545
+common_nodes: [CR Text Concatenate, ImageScale, JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, ShowAnything|Mie, easy promptList]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json, 音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2015044112218595329.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015241695201333249.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015242726865903618.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2056310053703086082.json, 音频生成/音频生成/（RL强化版）HeartMuLa音乐歌曲生成3B版V1_2014941704297648129.json, 音频生成/音频生成/🦖HeartMuLa音乐歌曲文生歌_2013889867830267905.json]
+members: [图片生成/图生图/Landing Page_2088148744884801538.json, 图片生成/图生图/Landing Page_2094980922335653890.json, 图片生成/图生图/Landing Page_2095445804625514497.json, 图片生成/图生图/Share Widget_2088163958049038338.json, 图片生成/图生图/Share Widget_2094984076674560002.json, 图片生成/图生图/Share Widget_2100890338922688513.json, 图片生成/图生图/check-in share image_2088162132742467585.json, 图片生成/图生图/check-in share image_2094986000056541186.json, 图片生成/图生图/check-in share image_2099410605252890626.json, 图片生成/图生图/luodixiangqingye_2095457838620565505.json, 图片生成/图生图/luodixiangqingye_2100892567083765762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_174
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json、音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json、音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Landing Page_2088148744884801538.json、图片生成/图生图/Landing Page_2094980922335653890.json、图片生成/图生图/Landing Page_2095445804625514497.json、图片生成/图生图/Share Widget_2088163958049038338.json、图片生成/图生图/Share Widget_2094984076674560002.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+- `CR Text Concatenate`
+- `ImageScale`
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `SaveImage`
+- `ShowAnything|Mie`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `LoadImage` —— 2/11 个有
-- `Text` —— 2/11 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 8/11 个有
+- `ImageBatchMultiple+` —— 5/11 个有
+- `ImageFromBatch+` —— 5/11 个有
+- `RH_RhartImageG25FlareImageToImage` —— 2/11 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,28 +1,28 @@
 ---
 name: image_to_image_sampler_clip_vae_6
 type: Image To Image
-frequency: 22
+frequency: 28
 level: strong
-coverage: 0.889364
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 1
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ModelSamplingFlux, NunchakuFluxDiTLoader, RH_Translator, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext超强去水印（numchaku10倍加速）_1941322884021383170.json, 图片生成/图生图/Flux kontext dev（三图版）极速电商万能融合王 指定动作换装换商品换背景_1945397369816981506.json, 图片生成/图生图/KONTEXT超级美颜，逼真皮肤纹理_1948333109749121025.json, 图片生成/图生图/Kontext Dev 人物妆容修改_1942405018597142529.json, 图片生成/图生图/Kontext Dev 模型｜重打光_1938996534883373057.json, 图片生成/图生图/Kontext Dev｜人物换衣服_1942404005945610241.json, 图片生成/图生图/Kontext [dev] 人像化妆｜一致性_1938548535325286402.json, 图片生成/图生图/Kontext [dev] 人物换衣服_1938897776589594626.json, 图片生成/图生图/Kontext [dev] 人物换装｜人物一致性_1938841329088843778.json, 图片生成/图生图/Kontext [dev] 人物表情编辑器_1939002140163821569.json, 图片生成/图生图/Kontext [dev] 卡通角色动作编辑_1938998476602855425.json, 图片生成/图生图/Kontext [dev] 图像编辑｜换背景_1938898561276764162.json, 图片生成/图生图/Kontext [dev] 图像编辑｜简易工作流_1938882018925334529.json, 图片生成/图生图/Kontext dev 人像美颜_1940743531990564865.json, 图片生成/图生图/Kontext dev 动漫转真人_1939855036945965058.json, 图片生成/图生图/Kontext dev 动漫转真人_1942399169807986689.json, 图片生成/图生图/Kontext dev 动漫转真人_1956572583183437826.json, 图片生成/图生图/Kontext 美剧恶搞之家风格_1946822314623426561.json, 图片生成/图生图/Kontext抖音图文快速版_1942169548500135937.json, 图片生成/图生图/Kontext（3D透明玻璃材质）_1946032275093942274.json, 图片生成/图生图/Kontext（国风刺绣风格）_1948667825243205633.json, 图片生成/图生图/毛线风格（Kontext Lora）_1949405488208326657.json]
+members: [图片生成/图生图/KontextNunchakuDevInpaintingRedux换装_1945000724100210689.json, 图片生成/图生图/KontextNunchakuDevLora万物美化_1943149163196669953.json, 图片生成/图生图/KontextNunchakuDevLora写实艺术风格_1943145435769036801.json, 图片生成/图生图/KontextNunchakuDevLora吉卜力风格_1943499828590485506.json, 图片生成/图生图/KontextNunchakuDevLora孤独的王者动漫风格_1943501453111816194.json, 图片生成/图生图/KontextNunchakuDevLora潦草彩铅线条插画风_1942783159161262082.json, 图片生成/图生图/KontextNunchakuDevLora火焰特效_1943526598106619905.json, 图片生成/图生图/KontextNunchakuDevLora鸟山明风格_1943504711444295681.json, 图片生成/图生图/KontextNunchakuDev万物彩铅风_1942781217336922113.json, 图片生成/图生图/KontextNunchakuDev万物毛茸茸_1942785932607033346.json, 图片生成/图生图/KontextNunchakuDev万物移除_1942788245061349377.json, 图片生成/图生图/KontextNunchakuDev喜剧复古动漫风格_1941339536565891074.json, 图片生成/图生图/KontextNunchakuDev极简主义插画_1942408948442140674.json, 图片生成/图生图/KontextNunchakuDev水粉画艺术风格_1942422462619652098.json, 图片生成/图生图/KontextNunchakuDev波普艺术风格_1942427162085625858.json, 图片生成/图生图/KontextNunchakuDev玻璃雕像_1942437081085849601.json, 图片生成/图生图/KontextNunchakuDev瑞克莫蒂动漫风格_1942412431219961857.json, 图片生成/图生图/KontextNunchakuDev立体派艺术风格_1942424438593761282.json, 图片生成/图生图/KontextNunchakuDev线条画风格_1942777046684905473.json, 图片生成/图生图/KontextNunchakuDev转绘低模_1941336591367565314.json, 图片生成/图生图/KontextNunchakuDev转绘幻想艺术_1941331496819179521.json, 图片生成/图生图/KontextNunchakuDev转绘等距艺术_1941333847969787906.json, 图片生成/图生图/KontextNunchakuDev转绘线艺_1941335193267683329.json, 图片生成/图生图/KontextNunchakuDev转绘霓虹_1941338008530612226.json, 图片生成/图生图/KontextNunchakuDev重新打光_1942783905021759489.json, 图片生成/图生图/KontextNunchakuDev铅笔素描艺术风格_1942410316838014978.json, 图片生成/图生图/KontextNunchakuDev黑白变彩色_1941328448780713986.json, 图片生成/图生图/KontextNunchakuDev黑胡桃木材质人像_1942421784010625026.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/Flux Kontext超强去水印（numchaku10倍加速）_1941322884021383170.json、图片生成/图生图/Flux kontext dev（三图版）极速电商万能融合王 指定动作换装换商品换背景_1945397369816981506.json、图片生成/图生图/KONTEXT超级美颜，逼真皮肤纹理_1948333109749121025.json、图片生成/图生图/Kontext Dev 人物妆容修改_1942405018597142529.json、图片生成/图生图/Kontext Dev 模型｜重打光_1938996534883373057.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/图生图/KontextNunchakuDevInpaintingRedux换装_1945000724100210689.json、图片生成/图生图/KontextNunchakuDevLora万物美化_1943149163196669953.json、图片生成/图生图/KontextNunchakuDevLora写实艺术风格_1943145435769036801.json、图片生成/图生图/KontextNunchakuDevLora吉卜力风格_1943499828590485506.json、图片生成/图生图/KontextNunchakuDevLora孤独的王者动漫风格_1943501453111816194.json…）
 
 - **类型**：Image To Image
-- **样本数**：22
+- **样本数**：28
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
+全部 28 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
@@ -30,6 +30,9 @@ source: knowledge_consolidation
 - `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
+- `ModelSamplingFlux`
+- `NunchakuFluxDiTLoader`
+- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
 - `VAEDecode`
@@ -37,46 +40,34 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 20/22 个有
-- `EmptySD3LatentImage` —— 19/22 个有
-- `UNETLoader` —— 19/22 个有
-- `LoadImageOutput` —— 18/22 个有
-- `PreviewImage` —— 18/22 个有
-- `LoraLoaderModelOnly` —— 4/22 个有
-- `TeaCache` —— 4/22 个有
-- `LayerUtility: ImageReel` —— 3/22 个有
-- `LayerUtility: ImageReelComposit` —— 3/22 个有
-- `NunchakuFluxDiTLoader` —— 3/22 个有
-- `CR Text` —— 2/22 个有
-- `ImpactSwitch` —— 2/22 个有
-- `RH_Translator` —— 2/22 个有
-- `easy cleanGpuUsed` —— 2/22 个有
-- `Bjornulf_ShowStringText` —— 1/22 个有
-- `CR Simple Image Compare` —— 1/22 个有
-- `ImageUpscaleWithModel` —— 1/22 个有
-- `RepeatLatentBatch` —— 1/22 个有
-- `UpscaleModelLoader` —— 1/22 个有
+- `LoraLoaderModelOnly` —— 22/28 个有
+- `SDXLPromptStyler` —— 15/28 个有
+- `ImageStitch` —— 2/28 个有
+- `CLIPVisionLoader` —— 1/28 个有
+- `EmptySD3LatentImage` —— 1/28 个有
+- `Kontext Inpainting Conditioning` —— 1/28 个有
+- `ReduxAdvanced` —— 1/28 个有
+- `StyleModelLoader` —— 1/28 个有
+- `easy imageRemBg` —— 1/28 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 22 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
-| 采样算法 | euler | - | 22 | 100% |
-| 调度器 | simple | - | 22 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 采样步数 | 20 | 20 - 20 | 28 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 28 | 100% |
+| 采样算法 | euler | - | 28 | 100% |
+| 调度器 | simple | - | 28 | 96% |
+| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，22 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，22 个样本，一致性 100%
-- 调度器 最常用 simple，22 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，28 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，28 个样本，一致性 100%
+- 调度器 最常用 simple，28 个样本，一致性 96%
+- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）

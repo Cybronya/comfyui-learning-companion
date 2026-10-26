@@ -3,84 +3,76 @@ name: unknown_workflow_sampler_clip_unet_250
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.794
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, KSamplerSelect, LayerUtility: TextJoin, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.8986
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, Joy_caption_two, Joy_caption_two_load, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键生成新年头像_1892845550293979138.json, 图片生成/图生图/宫崎骏吉卜力 Ghibli_1910150250202628098.json, 图片生成/图生图/生成专属 JelleyCat 毛绒玩具 一键生图系列_1908158686215155713.json, 图片生成/文生图/地标冰箱贴+全节点注释_2055980297757437953.json, 图片生成/文生图/宠物冰箱贴+全节点注释_2054823619720687618.json]
+members: [图片生成/图生图/Canny边缘图-JoyCaption提示词反推_1901884242941648898.json, 图片生成/图生图/FLUX_Depth风格迁移-提示词反推_1901994452205117441.json, 图片生成/图生图/FLUX深度控制（精准风格迁移）_1901904698792632322.json, 图片生成/图生图/新版Redux深度风格迁移_在线生图_2036269106093105153.json, 图片生成/图生图/新版Redux深度风格迁移_在线生图_2039978938105073665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_250
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键生成新年头像_1892845550293979138.json、图片生成/图生图/宫崎骏吉卜力 Ghibli_1910150250202628098.json、图片生成/图生图/生成专属 JelleyCat 毛绒玩具 一键生图系列_1908158686215155713.json、图片生成/文生图/地标冰箱贴+全节点注释_2055980297757437953.json、图片生成/文生图/宠物冰箱贴+全节点注释_2054823619720687618.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Canny边缘图-JoyCaption提示词反推_1901884242941648898.json、图片生成/图生图/FLUX_Depth风格迁移-提示词反推_1901994452205117441.json、图片生成/图生图/FLUX深度控制（精准风格迁移）_1901904698792632322.json、图片生成/图生图/新版Redux深度风格迁移_在线生图_2036269106093105153.json、图片生成/图生图/新版Redux深度风格迁移_在线生图_2039978938105073665.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPTextEncode`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `KSamplerSelect`
-- `LayerUtility: TextJoin`
+- `FluxGuidance`
+- `InstructPixToPixConditioning`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
+- `KSampler`
 - `LoadImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 4/5 个有
-- `LoraLoader` —— 4/5 个有
-- `MaskToSEGS` —— 4/5 个有
-- `ModelSamplingFlux` —— 4/5 个有
-- `SDXLAspectRatioSelector` —— 4/5 个有
-- `SEGSPreview` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `ConstrainImage|pysssss` —— 3/5 个有
-- `CR Text` —— 2/5 个有
-- `LoadImageFromUrl` —— 2/5 个有
-- `RH_Captioner` —— 2/5 个有
-- `Text _O` —— 2/5 个有
-- `JWStringMultiline` —— 1/5 个有
-- `Joy_caption` —— 1/5 个有
-- `Joy_caption_load` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `SaveImageAndMetadata_` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `PreviewImage` —— 4/5 个有
+- `CLIPVisionEncode` —— 3/5 个有
+- `CLIPVisionLoader` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `StyleModelApply` —— 3/5 个有
+- `StyleModelLoader` —— 3/5 个有
+- `DepthAnything_V2` —— 2/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `Canny` —— 1/5 个有
+- `DF_Image_scale_to_side` —— 1/5 个有
+- `DeepTranslatorTextNode` —— 1/5 个有
+- `DepthAnythingV2Preprocessor` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 832 | 768 - 832 | 5 | 97% |
-| 高度 | 1216 | 1024 - 1216 | 5 | 93% |
-| LoRA 模型强度 | 1 | 0.8 - 1 | 4 | 91% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 8 - 20 | 5 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | normal | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 832，观测区间 768 - 832，5 个样本，取值集中（一致性 97%）
-- 高度 中位数 1216，观测区间 1024 - 1216，5 个样本，取值集中（一致性 93%）
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，4 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 normal，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

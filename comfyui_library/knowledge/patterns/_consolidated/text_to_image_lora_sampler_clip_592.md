@@ -3,50 +3,75 @@ name: text_to_image_lora_sampler_clip_592
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.683
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Image Border, EmptyLatentImage, Fast Bypasser (rgthree), GuHai_IDPhotoCrop, Image Comparer (rgthree), JjkText, KSampler, LayerColor: ColorofShadowHighlightV2, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenMultiangleCameraNode, QwenMultiangleLightningNode, SaveImage, SingleImageLayoutNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, workflow>采样器, 孤海-自定义颜色, 孤海注释]
+coverage: 0.5435
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), FastUnsharpSharpen, GetImageSize, GetImagesFromBatchIndexed, GetNode, Image Comparer (rgthree), ImageScaleBy, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SaveVideo, SetNode, TextPreview, UNETLoader, VAEDecode, VAELoader, VRGDG_Music3ConditioningStrength, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, workflow>SeedVR2, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/单图生成证件照排版高可控，图生图角色一致性证件照制作_2112628284457574402.json, 图片生成/图生图/单图生证件照排版高可控｜附主页ai应用入口_2112430198967848961.json]
+members: [图片生成/反推提示词/MiniMax H3文生图图生图图像编辑三合一工作流，文生图图生图处理方案_2107220435418042370.json, 视频生成/图生视频/MiniMax_H3文生图图生图图像编辑三合一工作流，文生图图生图处理方案_2109449626859425794.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_592
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/单图生成证件照排版高可控，图生图角色一致性证件照制作_2112628284457574402.json、图片生成/图生图/单图生证件照排版高可控｜附主页ai应用入口_2112430198967848961.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3文生图图生图图像编辑三合一工作流，文生图图生图处理方案_2107220435418042370.json、视频生成/图生视频/MiniMax_H3文生图图生图图像编辑三合一工作流，文生图图生图处理方案_2109449626859425794.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Image Border`
+- `CR Text`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `Fast Bypasser (rgthree)`
-- `GuHai_IDPhotoCrop`
+- `Fast Groups Bypasser (rgthree)`
+- `FastUnsharpSharpen`
+- `GetImageSize`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
 - `Image Comparer (rgthree)`
+- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
-- `LayerColor: ColorofShadowHighlightV2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
 - `PreviewImage`
-- `QwenMultiangleCameraNode`
-- `QwenMultiangleLightningNode`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SingleImageLayoutNode`
+- `SaveVideo`
+- `SetNode`
+- `TextPreview`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VRGDG_Music3ConditioningStrength`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
-- `workflow>采样器`
-- `孤海-自定义颜色`
+- `workflow>SeedVR2`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,77 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_749
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5
-common_nodes: [Any Switch (rgthree), Anything Everywhere, AudioSeparation, CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LoadImage, LoadImageListFromDir //Inspire, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, TrimAudioDuration, VHS_LoadAudioUpload, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy isNone, easy seed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.957333
+common_nodes: [CR Text, DownloadAndLoadWav2VecModel, Float to Int, GetImageSizeAndCount, INTConstant, ImpactInt, IndexTTS2Run, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, RH_GetAudioDuration, SimpleMath+, Text, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json, 视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json]
+members: [视频生成/图生视频/加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_1958161496469549058.json, 视频生成/图生视频/图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_1966806156851154945.json, 视频生成/图生视频/户外口播_探店视频生成（MULITYTALK）_1989260751770710018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_749
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json、视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_1958161496469549058.json、视频生成/图生视频/图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_1966806156851154945.json、视频生成/图生视频/户外口播_探店视频生成（MULITYTALK）_1989260751770710018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Batch Images From List`
+全部 3 个 workflow 都包含：
+- `CR Text`
 - `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Muter (rgthree)`
-- `GetImageRangeFromBatch`
+- `Float to Int`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `INTConstant`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `InfiniteTalkEmbedsSlice`
-- `InfiniteTalkMultiImage`
+- `ImpactInt`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `LoadImageListFromDir //Inspire`
-- `MathExpression|pysssss`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `Mute / Bypass Repeater (rgthree)`
 - `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `TextInput_`
-- `TrimAudioDuration`
-- `VHS_LoadAudioUpload`
+- `RH_GetAudioDuration`
+- `SimpleMath+`
+- `Text`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelectMulti`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeSingle`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy isNone`
-- `easy seed`
+- `easy cleanGpuUsed`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `intToFloat _O` —— 1/3 个有
 
 ## 典型参数
 
@@ -83,4 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

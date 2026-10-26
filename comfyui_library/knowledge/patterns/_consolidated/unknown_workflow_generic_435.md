@@ -3,38 +3,36 @@ name: unknown_workflow_generic_435
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.901667
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text Concatenate, TextInput_, easy showAnything]
+coverage: 0.876667
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/小说剧本生成动漫分镜图工作流V1（gemini3pro+ 全能图片V1 Pro）_2001489830708211714.json, 图片生成/图生图/小说剧本生成动漫分镜图工作流V1（gemini3pro+ 单图V1 Pro）_2008386464240898049.json, 图片生成/文生图/Nano 全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2（by随风）_1994218812797026306.json, 图片生成/文生图/全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2_1999319726042083330.json, 图片生成/文生图/大山的漫剧剧本生成动漫分镜图工作流_1994635308102717442.json, 图片生成/文生图/小说剧本生成动漫分镜图工作流V4多人版（by随风）_2001516715257262082.json]
+members: [图片生成/反推提示词/爆款视频脚本优化二创洗稿-提示词反推_2020688652573089793.json, 图片生成/反推提示词/爆款视频脚本优化二创洗稿V2-提示词反推_2021901058301235202.json, 图片生成/反推提示词/爆款视频脚本优化二创洗稿V3-提示词反推_2021927836331806721.json, 图片生成/图生图/AI修图2.0_2064966501488218114.json, 图片生成/图生图/图片生成加反推2_2061748509363236865.json, 视频生成/文生视频/爆款视频脚本优化二创洗稿-提示词反推_2021922017947160577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_435
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/小说剧本生成动漫分镜图工作流V1（gemini3pro+ 全能图片V1 Pro）_2001489830708211714.json、图片生成/图生图/小说剧本生成动漫分镜图工作流V1（gemini3pro+ 单图V1 Pro）_2008386464240898049.json、图片生成/文生图/Nano 全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2（by随风）_1994218812797026306.json、图片生成/文生图/全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2_1999319726042083330.json、图片生成/文生图/大山的漫剧剧本生成动漫分镜图工作流_1994635308102717442.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/爆款视频脚本优化二创洗稿-提示词反推_2020688652573089793.json、图片生成/反推提示词/爆款视频脚本优化二创洗稿V2-提示词反推_2021901058301235202.json、图片生成/反推提示词/爆款视频脚本优化二创洗稿V3-提示词反推_2021927836331806721.json、图片生成/图生图/AI修图2.0_2064966501488218114.json、图片生成/图生图/图片生成加反推2_2061748509363236865.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `Text Concatenate`
-- `TextInput_`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 5/6 个有
-- `ZML_ImageSelectorNode` —— 2/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `Label (rgthree)` —— 4/6 个有
+- `CR Text Concatenate` —— 2/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/6 个有
 
 ## 典型参数
 

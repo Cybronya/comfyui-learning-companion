@@ -3,31 +3,39 @@ name: unknown_workflow_generic_305
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.753
-common_nodes: [RH_CinematicVideoGenerator, SaveVideo]
+coverage: 0.682125
+common_nodes: [CR Text, HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, PromptBatchQueue, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json, 视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json, 视频生成/文生视频/超能视频2.0 在线生成 自定义分辨率1080P，帧率30fps，时长10秒_2038429253519286274.json, 视频生成/文生视频/超能视频2.0 多图参考_2036032722329669634.json, 视频生成/文生视频/超能视频2.0已接入，不用排队（5s_10s_15s）_2035676995136266241.json]
+members: [图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json, 图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json, 图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json, 图片生成/图生图/全能图像G2.0详情页制作_2070059530897158145.json, 图片生成/图生图/全能图片V1 Pro详情页生成PSD格式保存_2008032417004658690.json, 图片生成/图生图/详情页生成器_2009996963613253634.json, 图片生成/文生图/TEMU跨境电商商品详情页生成(psd)_2009507733443190785.json, 图片生成/文生图/国内商品详情页生成(psd)_2008738737584345089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_305
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json、视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json、图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json、图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json、图片生成/图生图/全能图像G2.0详情页制作_2070059530897158145.json、图片生成/图生图/全能图片V1 Pro详情页生成PSD格式保存_2008032417004658690.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `RH_CinematicVideoGenerator`
-- `SaveVideo`
+- `CR Text`
+- `HAIGC_CombineUnits`
+- `HAIGC_Layer`
+- `HAIGC_SavePSD`
+- `LoadImage`
+- `PromptBatchQueue`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/8 个有
+- `RH_RhartImageG2ImageToImage` —— 4/8 个有
 
 ## 典型参数
 

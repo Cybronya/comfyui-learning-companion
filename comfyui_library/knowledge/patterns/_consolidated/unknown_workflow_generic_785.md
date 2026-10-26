@@ -3,36 +3,41 @@ name: unknown_workflow_generic_785
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8785
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerate]
+coverage: 0.8625
+common_nodes: [CR Split String, Primitive string multiline [Crystools], PrimitiveString, SaveImage, ShellAgentPluginInputText, StringLength, TextPreview, easy ifElse]
 problems: []
 missing: []
-members: [音频生成/音频生成/EasyIndexTTS2单音色克隆_1968261372826005505.json, 音频生成/音频生成/IndexTTS2合并音色克隆_1970367620912455681.json, 音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json, 音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json]
+members: [图片生成/文生图/G_P_T_2_0_可控_短剧_漫剧_全流程设计_批量生成_人物24张及场景20张_V3.0_增强版_2047592222928932866.json, 图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json, 图片生成/文生图/短剧全流程设计-Gemini模型24批量生成人物24张及场景20张v1.1_2044830827711827969.json, 图片生成/文生图/短剧全流程设计-Gemini模型64批量生成人物及场景v1.0_2044473129749188609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_785
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/EasyIndexTTS2单音色克隆_1968261372826005505.json、音频生成/音频生成/IndexTTS2合并音色克隆_1970367620912455681.json、音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json、音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/G_P_T_2_0_可控_短剧_漫剧_全流程设计_批量生成_人物24张及场景20张_V3.0_增强版_2047592222928932866.json、图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json、图片生成/文生图/短剧全流程设计-Gemini模型24批量生成人物24张及场景20张v1.1_2044830827711827969.json、图片生成/文生图/短剧全流程设计-Gemini模型64批量生成人物及场景v1.0_2044473129749188609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerate`
+- `CR Split String`
+- `Primitive string multiline [Crystools]`
+- `PrimitiveString`
+- `SaveImage`
+- `ShellAgentPluginInputText`
+- `StringLength`
+- `TextPreview`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `easy indexTTSEmotionVector` —— 2/4 个有
-- `easy indexTTSAudioMerge` —— 1/4 个有
-- `easy indexTTSEmotionMerge` —— 1/4 个有
+- `RH_RhartImageNG31FlashTextToImage` —— 3/4 个有
+- `StringMergeNode` —— 3/4 个有
+- `ZML_SplitText` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_RhartImageG2TextToImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,58 +3,62 @@ name: unknown_workflow_lora_sampler_clip_135
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.84575
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.919
+common_nodes: [BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningConcat, DisableNoise, FlowEditGuider, FlowEditSampler, FluxGuidance, Image Comparer (rgthree), LoraLoaderModelOnly, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键人物&背景分离-FLUX-2 Klein & RMBG 2.0 自动识别主体扣图_2089912037089566722.json, 图片生成/图生图/人脸纹理细节（自然，橙黄色版）_2070005207978827778.json, 图片生成/图生图/人脸纹理细节（超自然、轻纹理）_2072296887910232066.json, 图片生成/图生图/真实人脸纹理细节_2080879332058288129.json]
+members: [图片生成/图生图/FLUX照片转吉卜力风格Ghibli_1916495126468689921.json, 图片生成/图生图/全能图片G-4o 漫画头像转绘_1908423995211788289.json, 图片生成/图生图/吉卜力风格转绘_1912669503619301378.json, 图片生成/图生图/风格转绘（支持多人）_1937504241412149250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_135
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键人物&背景分离-FLUX-2 Klein & RMBG 2.0 自动识别主体扣图_2089912037089566722.json、图片生成/图生图/人脸纹理细节（自然，橙黄色版）_2070005207978827778.json、图片生成/图生图/人脸纹理细节（超自然、轻纹理）_2072296887910232066.json、图片生成/图生图/真实人脸纹理细节_2080879332058288129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX照片转吉卜力风格Ghibli_1916495126468689921.json、图片生成/图生图/全能图片G-4o 漫画头像转绘_1908423995211788289.json、图片生成/图生图/吉卜力风格转绘_1912669503619301378.json、图片生成/图生图/风格转绘（支持多人）_1937504241412149250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ConditioningConcat`
+- `DisableNoise`
+- `FlowEditGuider`
+- `FlowEditSampler`
+- `FluxGuidance`
 - `Image Comparer (rgthree)`
-- `Int`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 3/4 个有
-- `AILab_MaskOverlay` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `LayerMask: MaskGrow` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `ThresholdMask` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `ConfigureModifiedFlux` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `DualCLIPLoader` —— 2/4 个有
+- `DualCLIPLoaderGGUF` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LoadAndResizeImage` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `RepeatLatentBatch` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,49 +3,38 @@ name: unknown_workflow_lora_7
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [DeepTranslatorTextNode, EasyControlGenerate, EasyControlLoadFlux, EasyControlLoadLora, GetImageSize, LayerUtility: PurgeVRAM, LoadImage, PreviewImage, RH_Captioner, SaveImage, ShowText|pysssss, Text Concatenate (JPS), easy cleanGpuUsed]
+coverage: 1
+common_nodes: [EasyControlGenerate, EasyControlLoadFlux, EasyControlLoadLora, ImageConcanate, ImageResizeKJ, LoadImage, Note Plus (mtb), SaveImageAndMetadata_]
 problems: []
 missing: []
-members: [图片生成/文生图/EasyControlnet - pose_1909582155595378690.json, 图片生成/文生图/EasyControl吉卜力风格转绘_1911711182053670913.json]
+members: [图片生成/图生图/EasyCN-地面最强吉卜力图生图反推_1909927009089454082.json, 图片生成/图生图/EasyControl新版Subject物品改建工作流_1912195766746607618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/EasyControlnet - pose_1909582155595378690.json、图片生成/文生图/EasyControl吉卜力风格转绘_1911711182053670913.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/EasyCN-地面最强吉卜力图生图反推_1909927009089454082.json、图片生成/图生图/EasyControl新版Subject物品改建工作流_1912195766746607618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DeepTranslatorTextNode`
 - `EasyControlGenerate`
 - `EasyControlLoadFlux`
 - `EasyControlLoadLora`
-- `GetImageSize`
-- `LayerUtility: PurgeVRAM`
+- `ImageConcanate`
+- `ImageResizeKJ`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate (JPS)`
-- `easy cleanGpuUsed`
+- `Note Plus (mtb)`
+- `SaveImageAndMetadata_`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `EasyControlLoadMultiLora` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `InpaintPreprocessor` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
 
 ## 典型参数
 

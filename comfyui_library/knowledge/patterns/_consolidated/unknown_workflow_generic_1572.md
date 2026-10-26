@@ -3,32 +3,36 @@ name: unknown_workflow_generic_1572
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoGOfficialReferenceToVideo, SaveVideo]
+coverage: 0.85
+common_nodes: [CR Text, CR Text Replace, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频X-多图参考生视频-官方稳定版_2061761371209027585.json, 视频生成/图生视频/真人参考图生视频_2057788932141707265.json]
+members: [图片生成/图生图/详情图洗图改稿_2029131536821391361.json, 图片生成/图生图/详情页多图翻译｜支持中、英、日、韩、西、法、意、葡、越、泰、阿语_2042801710913036290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1572
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频X-多图参考生视频-官方稳定版_2061761371209027585.json、视频生成/图生视频/真人参考图生视频_2057788932141707265.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/详情图洗图改稿_2029131536821391361.json、图片生成/图生图/详情页多图翻译｜支持中、英、日、韩、西、法、意、葡、越、泰、阿语_2042801710913036290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `CR Text Replace`
 - `LoadImage`
-- `RH_RhartVideoGOfficialReferenceToVideo`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `Repeater|pysssss` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,31 +3,36 @@ name: unknown_workflow_generic_1506
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [PreviewAny, RHHiddenNodes, RH_LLMAPI_NODE, ShellAgentPluginInputText, easy saveText]
+coverage: 0.9
+common_nodes: [AddLabel, EmptyImage, Fast Groups Bypasser (rgthree), ImageConcanate, ImageConcatMulti, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json, 图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json]
+members: [图片生成/图生图/多图参考生图（Flux-Kontext）_1929708640507432961.json, 图片生成/图生图/多图参考生图（Flux-Kontext）_2045822064275230721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1506
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json、图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图参考生图（Flux-Kontext）_1929708640507432961.json、图片生成/图生图/多图参考生图（Flux-Kontext）_2045822064275230721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PreviewAny`
-- `RHHiddenNodes`
-- `RH_LLMAPI_NODE`
-- `ShellAgentPluginInputText`
-- `easy saveText`
+- `AddLabel`
+- `EmptyImage`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `LoadImage`
+- `PreviewImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
+- `SaveImage`
 
 ## 典型参数
 

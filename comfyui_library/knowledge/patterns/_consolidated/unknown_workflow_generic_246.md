@@ -3,35 +3,35 @@ name: unknown_workflow_generic_246
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.845
-common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo]
+coverage: 0.984111
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0-傲雪aigc_1980560171560779777.json, 视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json, 视频生成/图生视频/图生视频全能视频S.0（根叔）_1977231674360635394.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_1976172660042416130.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json, 视频生成/文生视频/全能视频S文生视频+图生视频-嘻哈男孩_1974250934685577218.json, 视频生成/文生视频/全能视频S文生视频+图生视频-小象吃香蕉_1974258869088161793.json, 视频生成/文生视频/全能视频S文生视频+图生视频-走红毯_1974255092520103937.json, 视频生成/文生视频/全能视频S文生视频+图生视频_1974247296890179585.json]
+members: [图片生成/图生图/Flux Kontext 生成企业形象照_1928578146331926529.json, 图片生成/图生图/Flux Kontext 老照片修复_1928594881076404226.json, 图片生成/图生图/明城墙明朝还原_1934872692094869506.json, 图片生成/图生图/明城墙明朝还原_1935178440431554561.json, 图片生成/文生图/Kontext-max一句话修改文字增加人物_1931560252347756545.json, 图片生成/文生图/Kontext-max一句话生成熊猫宝宝_1931553605239943170.json, 图片生成/文生图/Kontext-max一句话给橘子宝宝加耳朵_1931555932394684418.json, 图片生成/文生图/一句话换装发色加耳环_1931563283378319361.json, 视频生成/图生视频/kontext_flux技术测评_1928633296190652418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_246
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0-傲雪aigc_1980560171560779777.json、视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json、视频生成/图生视频/图生视频全能视频S.0（根叔）_1977231674360635394.json、视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_1976172660042416130.json、视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 生成企业形象照_1928578146331926529.json、图片生成/图生图/Flux Kontext 老照片修复_1928594881076404226.json、图片生成/图生图/明城墙明朝还原_1934872692094869506.json、图片生成/图生图/明城墙明朝还原_1935178440431554561.json、图片生成/文生图/Kontext-max一句话修改文字增加人物_1931560252347756545.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V`
-- `RH_Translator`
-- `SaveVideo`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_T2V` —— 6/9 个有
-- `easy showAnything` —— 4/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
+- `ImageConcanate` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `DeepTranslatorTextNode` —— 4/9 个有
+- `RHHiddenNodes` —— 4/9 个有
 
 ## 典型参数
 

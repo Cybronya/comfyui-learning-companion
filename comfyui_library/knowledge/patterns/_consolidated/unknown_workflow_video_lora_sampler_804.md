@@ -3,66 +3,57 @@ name: unknown_workflow_video_lora_sampler_804
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9045
-common_nodes: [BerniniPromptEnhancer, CreateVideo, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, Seed (rgthree), SimpleMath+, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 1
+common_nodes: [CR Prompt Text, ComfyMathExpression, ComfyNumberConvert, Float, ImageResizeKJv2, Int, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json, 视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json]
+members: [数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json, 视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_804
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json、视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json、视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BerniniPromptEnhancer`
-- `CreateVideo`
-- `INTConstant`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `Float`
 - `ImageResizeKJv2`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewAny`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `StringFunction|pysssss`
-- `VHS_LoadVideo`
+- `LongCatAvatarWhisperEmbeds`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus Bernini`
 - `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `ReplaceVideoLatentFrames` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
+- `easy indexAnything` —— 1/2 个有
+- `easy promptList` —— 1/2 个有
 
 ## 典型参数
 

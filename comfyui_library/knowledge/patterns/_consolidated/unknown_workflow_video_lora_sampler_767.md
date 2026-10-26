@@ -1,65 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_767
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.85
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageResizeKJv2, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.794333
+common_nodes: [ApplyFaceProcessor, CR Text, FaceProcessorLoader, GetNode, ImageConcanate, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json, 视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json]
+members: [视频生成/图生视频/👍最美最专角色姿态迁移+面部一致性视频生成工作流（VACE+stand-in）♥_1979202292152963074.json, 视频生成/图生视频/😍跳舞姿态迁移面部一致（VACE+stand-in）😍_1958798691941445634.json, 视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_767
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json、视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/👍最美最专角色姿态迁移+面部一致性视频生成工作流（VACE+stand-in）♥_1979202292152963074.json、视频生成/图生视频/😍跳舞姿态迁移面部一致（VACE+stand-in）😍_1958798691941445634.json、视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 3 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `CR Text`
+- `FaceProcessorLoader`
+- `GetNode`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadAudio`
+- `InspyrenetRembg`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CreateVideo` —— 1/2 个有
-- `ImpactConditionalBranch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `ResizeShortestToNode` —— 1/2 个有
-- `VAEEncodeAudio` —— 1/2 个有
-- `VAEEncodeTiled` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `获取视频信息` —— 1/2 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImpactInt` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `OpenposePreprocessor` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
+- `Wan22PromptSelector` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `easy imageScaleDownToSize` —— 1/3 个有
 
 ## 典型参数
 
@@ -71,4 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,91 +1,71 @@
 ---
 name: unknown_workflow_lora_sampler_clip_18
 type: Unknown Workflow
-frequency: 16
+frequency: 17
 level: moderate
-coverage: 0.745938
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
-problems: []
+coverage: 0.933765
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064287550000422914.json, 视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064563859888885761.json, 视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json, 视频生成/图生视频/LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_2079038691699412993.json, 视频生成/图生视频/LTX-2.3-MSR_2066734260651913217.json, 视频生成/图生视频/LTX-2.3-MSR_V2_Sample_workflow_2077298487875694594.json, 视频生成/图生视频/LTX-2.3-MSR多图参考视频生成V2_2079024443669696513.json, 视频生成/图生视频/LTX-2.3_MSR V2模型多参生视频（一致性及音频优化）_2078737111863353346.json, 视频生成/图生视频/LTX-2.3_MSRV2单采版优化_2081916685078061057.json, 视频生成/图生视频/LTX2.3 MSR V2 (多主体参考) 图生视频_2083493730379722754.json, 视频生成/图生视频/LTX2.3-MSR-workflow_2066907383061901313.json, 视频生成/图生视频/LTX2.3-MSR图生视频 全局参考  提示词扩写自动优化 数字人说话唱歌_2072516302538887169.json, 视频生成/图生视频/LTX2.3-MSR图生视频V2【全局参考】_2063611075953778689.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局参考】_2072510726874427393.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局参考】_2073281065932046336.json, 视频生成/图生视频/LTX2.3-MSR图生视频【全局多图参考】_2064168475052036098.json]
+members: [图片生成/文生图/剪纸风格-myshell_1967455683580923905.json, 图片生成/文生图/剪纸风格_1963167950662512641.json, 图片生成/文生图/动漫出图Qwen工作流_2019691912264945666.json, 图片生成/文生图/动漫出图Qwen工作流_2053018053553737730.json, 图片生成/文生图/千问-qwen-lora-文生图工作流_1960181642029641729.json, 图片生成/文生图/文生图 硕阳_2016782171092029441.json, 图片生成/文生图/文生图合集_2038775252657905666.json, 图片生成/文生图/文生图合集_2049394125358764034.json, 图片生成/文生图/文生图合集（3种风格）_2038265960213258242.json, 图片生成/文生图/简单手绘风格_1962501732217536513.json, 图片生成/文生图/红潮造相ZImage+LoRA文生图+VAE增加细节_2009818930566664194.json, 图片生成/文生图/赛博玄幻修仙者｜墨渊·文生图_2093285763407507458.json, 图片生成/文生图/赛博玄幻修仙者｜燕青·文生图_2093374844577599489.json, 图片生成/文生图/造相-Z-Image-Turbo-文生图工作流_2052340397992624130.json, 图片生成/文生图/阿清的AI模特文生图_2000461829648379906.json, 图片生成/文生图/陶器工作流_2071425077450727425.json, 图片生成/文生图/静帧画面工作流_2025778505488801793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_18
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064287550000422914.json、视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064563859888885761.json、视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json、视频生成/图生视频/LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_2079038691699412993.json、视频生成/图生视频/LTX-2.3-MSR_2066734260651913217.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/剪纸风格-myshell_1967455683580923905.json、图片生成/文生图/剪纸风格_1963167950662512641.json、图片生成/文生图/动漫出图Qwen工作流_2019691912264945666.json、图片生成/文生图/动漫出图Qwen工作流_2053018053553737730.json、图片生成/文生图/千问-qwen-lora-文生图工作流_1960181642029641729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CFGGuider`
+全部 17 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 12/16 个有
-- `SaveVideo` —— 12/16 个有
-- `GetNode` —— 8/16 个有
-- `LTX2_NAG` —— 8/16 个有
-- `PromptRelayEncode` —— 8/16 个有
-- `SetNode` —— 8/16 个有
-- `LoraLoaderModelOnly` —— 7/16 个有
-- `CR Text` —— 6/16 个有
-- `MathExpression|pysssss` —— 6/16 个有
-- `CR Float To Integer` —— 5/16 个有
-- `CR Text Concatenate` —— 5/16 个有
-- `CR Value` —— 5/16 个有
-- `FloatConstant` —— 5/16 个有
-- `PreviewAny` —— 5/16 个有
-- `RH_LLMAPI_NODE` —— 5/16 个有
-- `SimpleMath+` —— 5/16 个有
-- `VHS_VideoCombine` —— 5/16 个有
-- `easy boolean` —— 5/16 个有
-- `easy convertAnything` —— 5/16 个有
-- `LTXVSetAudioRefTokens` —— 4/16 个有
-- `CR Prompt Text` —— 3/16 个有
-- `ComfyMathExpression` —— 3/16 个有
-- `LTXVAddGuideMulti` —— 1/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
-- `LoadVideo` —— 1/16 个有
-- `PreviewImage` —— 1/16 个有
+- `LoraLoader` —— 2/17 个有
+- `PathchSageAttentionKJ` —— 2/17 个有
+- `ShellAgentPluginInputText` —— 1/17 个有
+- `ShellAgentPluginSaveImage` —— 1/17 个有
+- `StringFunction|pysssss` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 145 - 241 | 16 | 83% |
-| 高度 | 24 | 24 - 50 | 16 | 64% |
+| 采样步数 | 8 | 4 - 50 | 17 | 24% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 17 | 44% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 76% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| LoRA 模型强度 | 1.25 | - | 2 | 80% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 145 - 241，16 个样本，取值集中（一致性 83%）
-- 高度 中位数 24，观测区间 24 - 50，16 个样本
+- 采样步数 中位数 8，观测区间 4 - 50，17 个样本，取值分散，一致性仅 24%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，17 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 76%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1.25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（12/17 个样本）：Steps较低可能导致细节不足

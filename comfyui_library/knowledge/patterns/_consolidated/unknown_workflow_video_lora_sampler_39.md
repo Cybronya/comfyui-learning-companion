@@ -3,64 +3,75 @@ name: unknown_workflow_video_lora_sampler_39
 type: Unknown Workflow
 frequency: 24
 level: moderate
-coverage: 0.7215
-common_nodes: [AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.910208
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CM_FloatToInt, CM_IntToFloat, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, NormalizeAudioLoudness, Note _O, SDVN Any Show, SoundFlow_GetLength, Switch any [Crystools], VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy compare, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json, 视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089682284474626049.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093283049906728962.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093299021564694530.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095122234930192386.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095124960045002754.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099449159597256706.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099479925886636033.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107413361423114242.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107435386602606594.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111407548954931202.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111432463317815297.json, 视频生成/图生视频/MiniMax-H3，多图参考数字人唱歌，精准对话_2093892809693679617.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版 v3_2101695889109770242.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2091716104501682178.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2099140567518236674.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2101684520792707074.json, 视频生成/图生视频/MiniMax‑H3 数字人【自动】｜口播・说唱・唱歌・电商讲解_2090784930476421122.json, 视频生成/图生视频/【开源】MiniMax_H3 自动数字人加速版_2088997708009918465.json, 视频生成/文生视频/MiniMaxH3多图数字人_2094416704804839425.json]
+members: [图片生成/图生图/数字人-Wan2.2-S2V（音频驱动）_2023952492366663681.json, 数字人/数字人/Wan2.2-S2V数字人-对口型唱歌+语音克隆_1994802125362409473.json, 数字人/数字人/Wan2.2-S2V数字人-对口型唱歌_1976869794446299137.json, 数字人/数字人/Wan2.2-S2V数字人_1981607951481872386.json, 数字人/数字人/Wan2.2数字人-音频图片驱动-FromURL_2016457960070848514.json, 数字人/数字人/别吃这是淀粉肠_1985181233267228674.json, 数字人/数字人/数字人-文本驱动_1961392073905782786.json, 数字人/数字人/数字人-文本驱动_2057095773967437825.json, 数字人/数字人/数字人-玺宝月子中心_2009136683614212097.json, 数字人/数字人/数字人-音频驱动_1965966040717062145.json, 数字人/数字人/数字人-音频驱动_2042554021537390594.json, 视频生成/图生视频/Wan2.2-S2V数字人(低动态)_2003752068659724290.json, 视频生成/图生视频/Wan2.2-S2V数字人-对口型唱歌_1971380113747197954.json, 视频生成/图生视频/Wan2.2-S2V数字人-无限时长对口型唱歌数字人_1988644397879353346.json, 视频生成/图生视频/Wan2.2数字人-音频图片驱动_2016068921119477762.json, 视频生成/图生视频/✅换脸工程【HL01】Wan2.2-S2V数字人音频驱动_2016890272734515202.json, 视频生成/图生视频/数字人-Wan2.2-S2V（音频驱动）_2020045393261764609.json, 视频生成/图生视频/数字人-文本驱动-自定义克隆音_2094018779201228802.json, 视频生成/图生视频/数字人-文本驱动_1998289771141193729.json, 视频生成/图生视频/数字人-音频驱动_2092864098823397378.json, 视频生成/图生视频/数字人-音频驱动byDK_1998281834133880833.json, 视频生成/图生视频/数字人Wan2.2-S2V-音频驱动_1996395140036042753.json, 视频生成/文生视频/数字人-上传图片即可_2071492189078773761.json, 视频生成/文生视频/数字人-文本驱动_2059156347266097154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json、视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json、视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/数字人-Wan2.2-S2V（音频驱动）_2023952492366663681.json、数字人/数字人/Wan2.2-S2V数字人-对口型唱歌+语音克隆_1994802125362409473.json、数字人/数字人/Wan2.2-S2V数字人-对口型唱歌_1976869794446299137.json、数字人/数字人/Wan2.2-S2V数字人_1981607951481872386.json、数字人/数字人/Wan2.2数字人-音频图片驱动-FromURL_2016457960070848514.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 24 个 workflow 都包含：
-- `AudioSeparation`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CM_FloatToInt`
+- `CM_IntToFloat`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `NormalizeAudioLoudness`
+- `Note _O`
+- `SDVN Any Show`
+- `SoundFlow_GetLength`
+- `Switch any [Crystools]`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy compare`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 23/24 个有
-- `AudioCrop` —— 23/24 个有
-- `MathExpression|pysssss` —— 23/24 个有
-- `ShowText|pysssss` —— 23/24 个有
-- `ComfyMathExpression` —— 16/24 个有
-- `PrimitiveFloat` —— 16/24 个有
-- `GetNode` —— 15/24 个有
-- `SaveText` —— 15/24 个有
-- `SetNode` —— 15/24 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/24 个有
-- `easy float` —— 8/24 个有
-- `Text` —— 1/24 个有
-- `easy cleanGpuUsed` —— 1/24 个有
-- `easy showAnything` —— 1/24 个有
-- `孤海注释` —— 1/24 个有
+- `CR Prompt Text` —— 23/24 个有
+- `ImageResize+` —— 23/24 个有
+- `LoadImage` —— 23/24 个有
+- `AudioSeparation` —— 22/24 个有
+- `LoadAudio` —— 22/24 个有
+- `PreviewImage` —— 14/24 个有
+- `SaveAudio` —— 10/24 个有
+- `ImpactSwitch` —— 8/24 个有
+- `IndexTTS2Run` —— 8/24 个有
+- `RH_Translator` —— 7/24 个有
+- `Text Multiline` —— 7/24 个有
+- `easy cleanGpuUsed` —— 7/24 个有
+- `easy downloadIndexTTSAndLoadModel` —— 7/24 个有
+- `easy indexTTSEmotionText` —— 7/24 个有
+- `easy indexTTSGenerateSimple` —— 7/24 个有
+- `LoadImageFromUrl` —— 2/24 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/24 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/24 个有
+- `GIMMVFI_interpolate` —— 1/24 个有
+- `LoadAudioFromUrl` —— 1/24 个有
+- `VHS_LoadAudioUpload` —— 1/24 个有
 
 ## 典型参数
 

@@ -1,83 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_99
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.427
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.606625
+common_nodes: [AudioCrop, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail2视频角色替换_2065006346432503810.json, 视频生成/图生视频/Wan-SCAIL2 动作迁移_人物替换_2064423977212272642.json, 视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json, 视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json, 视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json, 视频生成/图生视频/Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_2064637391054397441.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_two_person_2064981162845622273.json, 视频生成/图生视频/Wan21_SCAIL2_replace_2064994418565931010.json, 视频生成/图生视频/Wan21_SCAIL2_replace_two_person_2064998971084468225.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人角色替换_2065258951524048898.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人（懒人版）_2067171226954584065.json, 视频生成/图生视频/全新走路跳舞动作模仿迁移复制转移 SCAIL2！单人or双人（懒人版）_2069078995290906625.json, 视频生成/图生视频/动作迁移 双人_单人视频换人 角色替换SCAIL2_2066697586874085378.json, 视频生成/图生视频/双人多人全新动作迁移复制对打_2065406697937657858.json]
+members: [数字人/数字人/AI代码侠土豆-情感表达高动效-单张图生成数字人_2007331723943612417.json, 数字人/数字人/AI代码侠土豆-超自然数字人-单张图生成数字人_2006237787544100866.json, 数字人/数字人/InfiniteTalk-GGUF.自用_1961661222749978625.json, 数字人/数字人/InfiniteTalk数字人-图片单人版_1963995655213563906.json, 数字人/数字人/InfiniteTalk数字人-基础视频生成_1997693369113579522.json, 数字人/数字人/InfiniteTalk数字人（AAA）_1962351398337888258.json, 数字人/数字人/单张图生成数字人-自然版_2012138583209021442.json, 数字人/数字人/单张图生成数字人-高情绪高动态_2012139784826789890.json, 数字人/数字人/情感表达-图生成数字人_2008995730203090945.json, 数字人/数字人/西洲 InfiniteTalk数字人长视频（唱歌-对口型）_1969409119033716738.json, 数字人/数字人/语音克隆、双人版wanvideo_infinitetalk_工作流_1960735901263564801.json, 数字人/数字人/超自然数字人-图生成数字人_2009002607687241730.json, 视频生成/图生视频/InfiniteTalk数字人-基础视频生成_1975057390238306306.json, 视频生成/图生视频/infiniteTalk（音色克隆+音频生成）_1970143422839463937.json, 视频生成/文生视频/图片唱歌_2007669635780448258.json, 音频生成/音频生成/infiniteTalk（音色克隆+音频生成）_1970169527449382913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_99
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Scail2视频角色替换_2065006346432503810.json、视频生成/图生视频/Wan-SCAIL2 动作迁移_人物替换_2064423977212272642.json、视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json、视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json、视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/AI代码侠土豆-情感表达高动效-单张图生成数字人_2007331723943612417.json、数字人/数字人/AI代码侠土豆-超自然数字人-单张图生成数字人_2006237787544100866.json、数字人/数字人/InfiniteTalk-GGUF.自用_1961661222749978625.json、数字人/数字人/InfiniteTalk数字人-图片单人版_1963995655213563906.json、数字人/数字人/InfiniteTalk数字人-基础视频生成_1997693369113579522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 16 个 workflow 都包含：
+- `AudioCrop`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `DiffusionModelLoaderKJ`
-- `GetImageRangeFromBatch`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 14/15 个有
-- `ImageConcatMulti` —— 14/15 个有
-- `SetNode` —— 14/15 个有
-- `PreviewImage` —— 13/15 个有
-- `ImageFromBatch` —— 12/15 个有
-- `WanChunkFeedForward` —— 9/15 个有
-- `GetImageSize` —— 6/15 个有
-- `PreviewAny` —— 6/15 个有
-- `PrimitiveInt` —— 6/15 个有
-- `SimpleMath+` —— 6/15 个有
-- `ttN int` —— 6/15 个有
-- `PrimitiveBoolean` —— 5/15 个有
-- `easy cleanGpuUsed` —— 5/15 个有
-- `JjkText` —— 4/15 个有
-- `AILab_QwenVL` —— 3/15 个有
-- `Seed` —— 3/15 个有
-- `easy imageRemBg` —— 3/15 个有
-- `MathExpression|pysssss` —— 2/15 个有
-- `ShowText|pysssss` —— 2/15 个有
-- `VHS_VideoInfoLoaded` —— 2/15 个有
-- `CR Text` —— 1/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
-- `INTConstant` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `InversionDemoLazySwitch` —— 1/15 个有
-- `PrimitiveStringMultiline` —— 1/15 个有
-- `SaveImage` —— 1/15 个有
-- `TT_img_enc` —— 1/15 个有
-- `easy forLoopEnd` —— 1/15 个有
-- `easy forLoopStart` —— 1/15 个有
+- `GetNode` —— 14/16 个有
+- `SetNode` —— 14/16 个有
+- `WanVideoTorchCompileSettings` —— 13/16 个有
+- `WanVideoTextEncodeCached` —— 12/16 个有
+- `Audio Duration (mtb)` —— 10/16 个有
+- `SimpleMath+` —— 10/16 个有
+- `AudioSeparation` —— 9/16 个有
+- `LayerUtility: PurgeVRAM V2` —— 9/16 个有
+- `Text` —— 8/16 个有
+- `QZ_ResolutionPreset` —— 7/16 个有
+- `CR Text` —— 5/16 个有
+- `GetImageSizeAndCount` —— 5/16 个有
+- `PreviewAudio` —— 5/16 个有
+- `LoadWanVideoT5TextEncoder` —— 4/16 个有
+- `WanVideoTextEncode` —— 4/16 个有
+- `INTConstant` —— 3/16 个有
+- `ImageFromBatch+` —— 3/16 个有
+- `PreviewAny` —— 3/16 个有
+- `ImpactSwitch` —— 2/16 个有
+- `IndexTTS2Run` —— 2/16 个有
+- `JWInteger` —— 2/16 个有
+- `MegaTTS3` —— 2/16 个有
+- `PrimitiveInt` —— 2/16 个有
+- `RH_Translator` —— 2/16 个有
+- `IndexTTSNode` —— 1/16 个有
 
 ## 典型参数
 

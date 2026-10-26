@@ -1,97 +1,91 @@
 ---
 name: text_to_image_upscale_lora_sampler_106
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.896
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Muter (rgthree), Fast Muter (rgthree), Image Comparer (rgthree), ImageNoiseAugmentation, ImageUpscaleWithModel, JjkShowText, JjkText, JoinImageWithAlpha, KSampler, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, ResizeImageMaskNode, ResizeImagesByLongerEdge, SaveImage, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SplitImageWithAlpha, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAEEncodeTiled, VAELoader, VOSR2ModelLoader, VOSR2Upscale, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+frequency: 3
+level: moderate
+coverage: 0.824667
+common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveStringMultiline, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2洗图重绘反推提示词图生图处理生成工具包_2101003764269412354.json, 图片生成/图生图/洗图重绘工作流｜KREA2图生图加反推提示词二合一_2100760709410934785.json]
+members: [图片生成/文生图/影视级场景资产工作流（开源版）_2048266987880587265.json, 图片生成/文生图/影视级角色资产工作流（开源版）_2047695377284993025.json, 图片生成/文生图/影视级道具资产工作流（开源版）_2049490901575143425.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_106
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Krea2洗图重绘反推提示词图生图处理生成工具包_2101003764269412354.json、图片生成/图生图/洗图重绘工作流｜KREA2图生图加反推提示词二合一_2100760709410934785.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/影视级场景资产工作流（开源版）_2048266987880587265.json、图片生成/文生图/影视级角色资产工作流（开源版）_2047695377284993025.json、图片生成/文生图/影视级道具资产工作流（开源版）_2049490901575143425.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AddLabel`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
-- `Fast Muter (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageNoiseAugmentation`
-- `ImageUpscaleWithModel`
-- `JjkShowText`
-- `JjkText`
-- `JoinImageWithAlpha`
 - `KSampler`
-- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SplitImageWithAlpha`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `ShowText|pysssss`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
+- `easy cleanGpuUsed`
 - `llama_cpp_instruct_adv`
 - `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVR2TemporalChunk` —— 1/2 个有
-- `SeedVR2TemporalMerge` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `AdaptiveLongestEdge_EditUtils` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `CropWithPadInfo_EditUtils` —— 1/3 个有
+- `EditTextEncode_EditUtils` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `Image Resize Factor (mtb)` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `QwenConfigPreparer_EditUtils` —— 1/3 个有
+- `QwenEditOutputExtractor_EditUtils` —— 1/3 个有
+- `QwenModelConfig_EditUtils` —— 1/3 个有
+- `ReferenceLatent` —— 1/3 个有
+- `SetNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 8 | 4 - 25 | 3 | 26% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 3 | 65% |
+| 采样算法 | res_multistep | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1920 | 1080 - 1920 | 3 | 76% |
+| 高度 | 1080 | 1080 - 1920 | 3 | 71% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（6/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 4 - 25，3 个样本，取值分散，一致性仅 26%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，3 个样本
+- 采样算法 最常用 res_multistep，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，观测区间 1080 - 1920，3 个样本
+- 高度 中位数 1080，观测区间 1080 - 1920，3 个样本
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

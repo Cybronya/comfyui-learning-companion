@@ -3,35 +3,32 @@ name: unknown_workflow_generic_1734
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.739
-common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), IndexTTS2_Emotion, LoadAudio, SaveAudio]
+coverage: 0.407
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2_chat, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json, 音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json]
+members: [视频生成/图生视频/（贞贞AI工坊）全能视频S Chat模式图生视频V1_1981428442048675842.json, 视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1734
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json、音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/（贞贞AI工坊）全能视频S Chat模式图生视频V1_1981428442048675842.json、视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `IndexTTS2_Emotion`
-- `LoadAudio`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2_chat`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
 
 ## 典型参数
 

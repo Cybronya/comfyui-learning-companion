@@ -3,38 +3,38 @@ name: unknown_workflow_generic_1108
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.767667
-common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, WhisperSTT]
+coverage: 0.939
+common_nodes: [CR Prompt Text, IndexTTSNode, LayerUtility: PurgeVRAM, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json, 音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json, 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json]
+members: [数字人/数字人/培训视频工作流_1937183270608257026.json, 视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json, "视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1108
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json、音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/培训视频工作流_1937183270608257026.json、视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json、视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceDesign`
+- `CR Prompt Text`
+- `IndexTTSNode`
+- `LayerUtility: PurgeVRAM`
 - `LoadAudio`
-- `RH_LLMAPI_Pro_Node`
+- `LoadVideo`
+- `RH_HeyGemNode`
 - `SaveAudio`
-- `WhisperSTT`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `IndexTTS2BaseNode` —— 1/3 个有
 
 ## 典型参数
 

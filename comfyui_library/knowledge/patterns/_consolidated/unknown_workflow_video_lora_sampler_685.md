@@ -3,73 +3,71 @@ name: unknown_workflow_video_lora_sampler_685
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.586667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedNode, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.659
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Primitive string multiline [Crystools], RH_GetAudioDuration, SaveAudio, SeargeIntegerConstant, SetNode, SimpleCondition+, SimpleMath+, ToInt, VHS_LoadVideoFFmpeg, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/（新）MinimaxH3_R2V-2Stage-VEDA 加速 视频生成工作流_2109325714523774977.json, 视频生成/文生视频/MinimaxH3_R2V-FaceRefinement-Basic （面部精修）图生视频工作流_2099479595887190018.json, 视频生成/视频生视频/Minimax_H3_Character_Swap 角色替换_参考到视频工作流_2106641143629959169.json]
+members: [视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json, 视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json, 视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_685
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/（新）MinimaxH3_R2V-2Stage-VEDA 加速 视频生成工作流_2109325714523774977.json、视频生成/文生视频/MinimaxH3_R2V-FaceRefinement-Basic （面部精修）图生视频工作流_2099479595887190018.json、视频生成/视频生视频/Minimax_H3_Character_Swap 角色替换_参考到视频工作流_2106641143629959169.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json、视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json、视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SeedNode`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Primitive string multiline [Crystools]`
+- `RH_GetAudioDuration`
+- `SaveAudio`
+- `SeargeIntegerConstant`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SimpleCondition+`
+- `SimpleMath+`
+- `ToInt`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/3 个有
-- `MMH3LatentUpscaleWithModelParams` —— 2/3 个有
-- `MMH3SpatialSplitParams` —— 2/3 个有
-- `MMH3TemporalSplitParams` —— 2/3 个有
-- `MMH3UltimateUpscale` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `StringConcatenate` —— 2/3 个有
-- `VAEDecodeTiled` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy clearCacheAll` —— 2/3 个有
-- `H3FaceStitch` —— 1/3 个有
-- `H3FaceTrackCrop` —— 1/3 个有
-- `H3InjectVideoLatent` —— 1/3 个有
-- `H3PerFrameDenoise` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `FantasyPortraitFaceDetector` —— 1/3 个有
+- `FantasyPortraitModelLoader` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
 - `LoadAudio` —— 1/3 个有
-- `Textbox` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VedaSparseAttention` —— 1/3 个有
+- `WanVideoAddFantasyPortrait` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
 
 ## 典型参数
 

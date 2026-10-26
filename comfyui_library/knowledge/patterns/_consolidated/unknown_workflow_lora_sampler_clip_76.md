@@ -2,80 +2,82 @@
 name: unknown_workflow_lora_sampler_clip_76
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.853833
-common_nodes: [AdaptiveLongestEdge_EditUtils, CLIPLoader, CLIPTextEncode, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+level: strong
+coverage: 0.861667
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CheckpointLoaderSimple, DualCLIPLoader, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 4B一致性lora 不偏色 不偏移_2033051077326671873.json, 图片生成/图生图/Flux2 Klein 9B 单图编辑_一致性_无偏移_2030877169433448450.json, 图片生成/图生图/Flux2 Klein kv_去除AI痕迹_2059503497468538881.json, 图片生成/图生图/Flux2任意画风快速转成高真实感照片 动漫 _ 插画转真人 _ 实景 草图 _ 线稿 → 写实效果_2021170999294693378.json, 图片生成/图生图/去除背景-klein_2042797681554235394.json, 图片生成/图生图/各种动漫风格转真实人物（Flux2 Klein 9B Anything2Real A ）_2018858828191768577.json]
+members: [图片生成/反推提示词/27removealimage_2049447688550223873.json, 图片生成/图生图/去AI感-增加皮肤质感_1956564091567525890.json, 图片生成/图生图/去AI感图像质感优化 加强脸部纹理_1954441094429863937.json, 图片生成/图生图/增加人物皮肤细节去AI感｜Flux krea_1986777700302057473.json, 图片生成/图生图/提升皮肤质感（精修人物皮肤去除AI味）_1990766340678033410.json, 图片生成/图生图/消除 AI 感人像皮肤 细腻皮肤｜一键生成_1933848354814087170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_76
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 4B一致性lora 不偏色 不偏移_2033051077326671873.json、图片生成/图生图/Flux2 Klein 9B 单图编辑_一致性_无偏移_2030877169433448450.json、图片生成/图生图/Flux2 Klein kv_去除AI痕迹_2059503497468538881.json、图片生成/图生图/Flux2任意画风快速转成高真实感照片 动漫 _ 插画转真人 _ 实景 草图 _ 线稿 → 写实效果_2021170999294693378.json、图片生成/图生图/去除背景-klein_2042797681554235394.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/27removealimage_2049447688550223873.json、图片生成/图生图/去AI感-增加皮肤质感_1956564091567525890.json、图片生成/图生图/去AI感图像质感优化 加强脸部纹理_1954441094429863937.json、图片生成/图生图/增加人物皮肤细节去AI感｜Flux krea_1986777700302057473.json、图片生成/图生图/提升皮肤质感（精修人物皮肤去除AI味）_1990766340678033410.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AdaptiveLongestEdge_EditUtils`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EditTextEncode_EditUtils`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `KSampler`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CropWithPadInfo_EditUtils` —— 5/6 个有
-- `Flux2KleinOutputExtractor_EditUtils` —— 5/6 个有
-- `ReferenceLatent` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `VAEDecode` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `PrimitiveInt` —— 3/6 个有
-- `Anything Everywhere3` —— 2/6 个有
-- `Seed (rgthree)` —— 2/6 个有
-- `VAEDecodeTiled` —— 2/6 个有
-- `easy imageSave` —— 2/6 个有
-- `string_util_StrConcat` —— 2/6 个有
-- `Float` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `RMBG` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `UpscaleModelLoader` —— 4/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `UltimateSDUpscale` —— 3/6 个有
+- `ImageResize+` —— 2/6 个有
+- `ImpactInt` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `LoraLoader` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `easy imageSize` —— 2/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageResizeKJ` —— 1/6 个有
+- `ImageUpscaleWithModel` —— 1/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
+- `SUPIR_tiles` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 4 - 20 | 6 | 33% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 模型强度 | 0.8 | - | 2 | 100% |
+| LoRA 文本强度 | 0.8 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 4 - 20，6 个样本，取值分散，一致性仅 33%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（3/6 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 0.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

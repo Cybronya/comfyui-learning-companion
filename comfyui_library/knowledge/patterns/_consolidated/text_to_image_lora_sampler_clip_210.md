@@ -3,71 +3,64 @@ name: text_to_image_lora_sampler_clip_210
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.872444
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.828111
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MINIMAX H3多参生视频，文生视频图生视频双模式_2110819887017975810.json, 视频生成/图生视频/MINIMAX H3多图参考生视频 多张参考图输入角色一致性更强_2104657812193370114.json, 视频生成/图生视频/MINIMAX H3多图参考生视频 多模态输入视频生成_2109333013833273345.json, 视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频处理方案_2108265068692598785.json, 视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频方案_2106813670759157761.json, 视频生成/图生视频/MINIMAX-H3多图参考生视频｜多图输入角色一致生成_2094860073762902017.json, 视频生成/图生视频/MINIMAX-H3多图参考生视频｜视频生视频图生视频_2090436400712863745.json, 视频生成/图生视频/MINIMAX-H3多图参考｜多张图片参考生成连贯视频_2101575258661806082.json, 视频生成/图生视频/MImax H3超强开源视频加速-图生视频工作流_2087344640801464322.json]
+members: [图片生成/图生图/Qwen Image 2.1 Turbo八步极速图像编辑 高效精准改图必备方案_2110370961915727874.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑工作流，指令式修图快速精准出图_2114565422858194945.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑，图生图局部重绘快人一步_2110788994064805889.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑｜图生图智能修图高效又省心_2114171798861475842.json, 图片生成/图生图/Qwen Image 2.1 Turbo多参考图加速版，文生图图生图高效出图_2114500964400066561.json, 图片生成/图生图/Qwen Image 2.1图像编辑二版｜局部重绘人物出图利器_2108074166527291393.json, 图片生成/图生图/image_qwen_image_2_1_turbo_多参考图加速版｜文生图图生图提速_2114311183372210178.json, 图片生成/图生图/林茜数字人Qwen 2.1换脸流｜图生图换脸数字人两不误_2112925117058736129.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图，创意形象快速直出_2110829189711622145.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_210
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3多参生视频，文生视频图生视频双模式_2110819887017975810.json、视频生成/图生视频/MINIMAX H3多图参考生视频 多张参考图输入角色一致性更强_2104657812193370114.json、视频生成/图生视频/MINIMAX H3多图参考生视频 多模态输入视频生成_2109333013833273345.json、视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频处理方案_2108265068692598785.json、视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频方案_2106813670759157761.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 Turbo八步极速图像编辑 高效精准改图必备方案_2110370961915727874.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑工作流，指令式修图快速精准出图_2114565422858194945.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑，图生图局部重绘快人一步_2110788994064805889.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑｜图生图智能修图高效又省心_2114171798861475842.json、图片生成/图生图/Qwen Image 2.1 Turbo多参考图加速版，文生图图生图高效出图_2114500964400066561.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `SaveImage` —— 5/9 个有
-- `ApplyFaceProcessor` —— 1/9 个有
-- `CompressImages` —— 1/9 个有
-- `FaceProcessorLoader` —— 1/9 个有
-- `GetVideoComponents` —— 1/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RH_Astra` —— 1/9 个有
-- `SaveMP4` —— 1/9 个有
-- `SeedVR2` —— 1/9 个有
-- `SeedVR2BlockSwap` —— 1/9 个有
-- `VHS_VideoCombine` —— 1/9 个有
-- `easy float` —— 1/9 个有
+- `ComfySwitchNode` —— 8/9 个有
+- `KSamplerSelect` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `ManualSigmas` —— 8/9 个有
+- `CFGGuider` —— 7/9 个有
+- `RandomNoise` —— 7/9 个有
+- `SamplerCustomAdvanced` —— 7/9 个有
+- `PreviewAny` —— 6/9 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `TextGenerate` —— 6/9 个有
+- `BatchImagesNode` —— 5/9 个有
+- `SaveImageAdvanced` —— 5/9 个有
+- `GetNode` —— 2/9 个有
+- `Image Comparer (rgthree)` —— 2/9 个有
+- `ImageCompare` —— 2/9 个有
+- `PathchSageAttentionKJ` —— 2/9 个有
+- `PrimitiveBoolean` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `ResolutionSelector` —— 1/9 个有
+- `SamplerCustom` —— 1/9 个有
 
 ## 典型参数
 
@@ -85,7 +78,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -96,4 +89,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（10/9 个样本）：Steps较低可能导致细节不足

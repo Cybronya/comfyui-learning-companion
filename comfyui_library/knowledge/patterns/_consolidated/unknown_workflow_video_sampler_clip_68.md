@@ -3,85 +3,71 @@ name: unknown_workflow_video_sampler_clip_68
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.853556
-common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVConditioning, LTXVPreprocess, LoadImage, ModelSamplingSD3, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.890444
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/YJ-LTX2.3-图生视频_2060617208614703105.json, 视频生成/图生视频/电商图生15秒视频 指定配音 Ltx2.3_2042797388833755137.json, 视频生成/图生视频/电商多图生15秒视频 保持人物一致性  Ltx2.3_2042139178611253249.json, 视频生成/图生视频/电商数字人图生15秒视频 指定说话音频 Ltx2.3_2043889875862163457.json, 视频生成/图生视频/空白工作流_2072161079689572354.json, 视频生成/图生视频/音画同步图生视频 LTX2.3图生视频KJ优化版_2032301702237392897.json, 视频生成/文生视频/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2083450669406711809.json, 视频生成/文生视频/LTX2.3图生视频-KJ版-参数化_2069425308750671874.json, 视频生成/文生视频/LTX2.3图生视频KJ优化版_2034072375746105345.json]
+members: [视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json, 视频生成/图生视频/Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945.json, 视频生成/图生视频/Wan2.1 AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1918543439799975938.json, 视频生成/图生视频/Wan2.1 图生视频首尾帧_1919623628906758146.json, 视频生成/图生视频/Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1994010084806164482.json, 视频生成/图生视频/Wan2.1图生视频首尾帧_1905464146912006145.json, 视频生成/图生视频/通义万相Wan2.1Fun首尾帧图生视频TC加速_1907738859516342273.json, 视频生成/图生视频/首尾帧生视频 _ wan2.1（KJ）_1902281686166740993.json, 视频生成/文生视频/视频首尾帧过渡工作流_1937406270641225729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_68
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/YJ-LTX2.3-图生视频_2060617208614703105.json、视频生成/图生视频/电商图生15秒视频 指定配音 Ltx2.3_2042797388833755137.json、视频生成/图生视频/电商多图生15秒视频 保持人物一致性  Ltx2.3_2042139178611253249.json、视频生成/图生视频/电商数字人图生15秒视频 指定说话音频 Ltx2.3_2043889875862163457.json、视频生成/图生视频/空白工作流_2072161079689572354.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json、视频生成/图生视频/Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945.json、视频生成/图生视频/Wan2.1 AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1918543439799975938.json、视频生成/图生视频/Wan2.1 图生视频首尾帧_1919623628906758146.json、视频生成/图生视频/Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1994010084806164482.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVConditioning`
-- `LTXVPreprocess`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SamplerCustom`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VAELoaderKJ`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `Int` —— 8/9 个有
-- `LTXVAudioVAEDecode` —— 8/9 个有
-- `LTXVConcatAVLatent` —— 8/9 个有
-- `LTXVEmptyLatentAudio` —— 8/9 个有
-- `LTXVImgToVideoInplaceKJ` —— 8/9 个有
-- `LTXVSeparateAVLatent` —— 8/9 个有
-- `PrimitiveInt` —— 8/9 个有
-- `SimpleMath+` —— 5/9 个有
-- `DF_Int_to_Float` —— 4/9 个有
-- `JjkText` —— 4/9 个有
-- `LoraLoaderModelOnly` —— 4/9 个有
-- `MathExpression|pysssss` —— 4/9 个有
-- `PathchSageAttentionKJ` —— 4/9 个有
-- `AILab_QwenVL_Advanced` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `ImageFromBatch+` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `ShowText|pysssss` —— 3/9 个有
-- `StringFunction|pysssss` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `easy positive` —— 2/9 个有
-- `LTXVAudioVAEEncode` —— 1/9 个有
-- `LTXVImgToVideoConditionOnly` —— 1/9 个有
-- `LoadAudio` —— 1/9 个有
-- `PrimitiveBoolean` —— 1/9 个有
-- `SetLatentNoiseMask` —— 1/9 个有
-- `SolidMask` —— 1/9 个有
-- `VRAMReserver` —— 1/9 个有
-- `easy getNode` —— 1/9 个有
-- `easy setNode` —— 1/9 个有
+- `WanVideoTorchCompileSettings` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `WanVideoEnhanceAVideo` —— 7/9 个有
+- `easy cleanGpuUsed` —— 7/9 个有
+- `easy imageSize` —— 7/9 个有
+- `CR Text` —— 6/9 个有
+- `EmptyImage` —— 6/9 个有
+- `LayerUtility: PurgeVRAM` —— 6/9 个有
+- `easy imageConcat` —— 6/9 个有
+- `CR Simple Image Compare` —— 5/9 个有
+- `ImageBatchRepeatInterleaving` —— 5/9 个有
+- `ImageConcanate` —— 5/9 个有
+- `WanVideoExperimentalArgs` —— 4/9 个有
+- `ImageResizeKJ` —— 3/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `RH_Captioner` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
+- `TextBox` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
+- `Textbox` —— 1/9 个有
+- `WanVideoFlowEdit` —— 1/9 个有
+- `WanVideoLoopArgs` —— 1/9 个有
+- `WanVideoVRAMManagement` —— 1/9 个有
+- `easy textSwitch` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 305 | 8 | 40% |
-| 高度 | 25 | 24 - 25 | 8 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,5 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 305，8 个样本，取值分散，一致性仅 40%
-- 高度 中位数 25，观测区间 24 - 25，8 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

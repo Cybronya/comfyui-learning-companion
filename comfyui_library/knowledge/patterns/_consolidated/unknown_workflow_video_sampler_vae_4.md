@@ -1,78 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_vae_4
 type: Unknown Workflow
-frequency: 29
+frequency: 35
 level: moderate
-coverage: 0.701897
-common_nodes: [AIO_Preprocessor, AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], SetNode, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.987714
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1933077979956215810.json, 视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1986080138964205570.json, 视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1989255304942596097.json, 视频生成/图生视频/160帧-舞蹈-超高拟态-直出1920高清-V2版本_1942202708122341377.json, 视频生成/图生视频/3-9步极速WanVACE_Pose迁移_1932617969560383490.json, 视频生成/图生视频/AccVid加速+VACE14B-极致完美动作姿势迁移_1927527393152634881.json, 视频生成/图生视频/FusionX_图生视频动作迁移_1947326478251872258.json, 视频生成/图生视频/Radial Attention提速20%-FusionX-舞蹈动作迁移v2_1943365680282693633.json, 视频生成/图生视频/Radial提速20%_FusionX_舞蹈动作迁移V3_1950083383838818305.json, 视频生成/图生视频/VACE14B-极致完美动作姿势迁移_1922696527037480962.json, 视频生成/图生视频/VACE14B-极致完美动作姿势迁移_1932273644485902337.json, 视频生成/图生视频/VACE14B万相吉卜力风格转绘_1923032081754935297.json, 视频生成/图生视频/VACE14B手绘线稿风格转绘_1923004449781182465.json, 视频生成/图生视频/VACE视频编辑（图片参考视频一致性跳舞视频转绘）工作流_1922996913308954625.json, 视频生成/图生视频/wan2.2数字人人物迁移动作一致性_1992633923415109634.json, 视频生成/图生视频/wan2.2数字人人物迁移动作一致性_1992639334528643074.json, 视频生成/图生视频/啊癫 视频跳舞 动作迁移  动作模仿 姿态迁移 美女跳舞_1966126625408675842.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移-直出1920P高清_2051825815473668098.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移-直出1920P高清_2051912300868710402.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移-直出1920P高清_2052572511736479746.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移-直出1920P高清_2052924055216504834.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移_2052197097281208321.json, 视频生成/图生视频/图生视频---150帧-跳舞-动作迁移_2054011411742896129.json, 视频生成/图生视频/图生跳舞视频-跳舞-动作迁移-出1920P高清_1996616325067849729.json, 视频生成/图生视频/舞蹈-超高拟态_1945365424944947201.json, 视频生成/图生视频/舞蹈-超高拟态_1946130631811055617.json, 视频生成/图生视频/超高拟态-直出1920高清-V2版本-循环版_1964248565730131970.json, 视频生成/图生视频/跳舞-动作迁移-直出高清_1971021623618899970.json, 视频生成/文生视频/160帧-舞蹈-超高拟态-直出1920高清_1949732964007059457.json]
+members: [视频生成/图生视频/【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.json, 视频生成/图生视频/【Wan2.1系列】图生视频工作流_1914283396808306690.json, 视频生成/图生视频/【人物特效】Strong Wind 大风吹 特效_1913412975162552322.json, 视频生成/图生视频/一键生成吻屏视频_2034885482387083266.json, 视频生成/图生视频/万相视频-万物切切乐_1936085964831772673.json, 视频生成/图生视频/万相视频-万物漏气 超级加速版快速生成_1936088683596648450.json, 视频生成/图生视频/万相视频-深情接吻 超级加速版快速生成_1936098801763405825.json, 视频生成/图生视频/刀切Labubu短视频生成 WAN2.1_1937498299152646145.json, 视频生成/图生视频/单图参考图生视频_2072861939096702977.json, 视频生成/图生视频/单图生成吻屏-MAGREF 图生视频_2029023080860884994.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1932593243689263106.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1935907722095157250.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1963139208418406401.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2067073325549051906.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2067543097009070082.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2069607660957298690.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2071484855296286721.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075211940145754113.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075529541229039617.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075529801041014786.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2076596033949360129.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2076614896099352578.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2077671450340839425.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2080534588438441986.json, 视频生成/图生视频/吻屏-MAGREF单图生视频_1995763601367502849.json, 视频生成/图生视频/吻屏视频生成器（图生视频）-MAGREF_2032000865069961218.json, 视频生成/图生视频/图生视频-wan2.1 法相魔法幻想 视觉特效_2035963740117540866.json, 视频生成/文生视频/wan2.1 MAGREF 天使张开翅膀动画_1935508018886791169.json, 视频生成/文生视频/wan2.1 人物华丽变身变装_1949634225363918849.json, 视频生成/文生视频/wan2.1 人物模特变身特效_1940219782467862530.json, 视频生成/文生视频/wan2.1 无人机航拍_1943534867973873665.json, 视频生成/文生视频/wan2.1 水下潜水动画_1937316067234758658.json, 视频生成/文生视频/wan2.1 法相魔法幻想 视觉特效_1935860061073760257.json, 视频生成/文生视频/wan2.1 美女举手跳舞热情舞蹈_1948914179688865793.json, 视频生成/文生视频/wan2.1 美女模特T台走猫步_1938411233160921090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1933077979956215810.json、视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1986080138964205570.json、视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1989255304942596097.json、视频生成/图生视频/160帧-舞蹈-超高拟态-直出1920高清-V2版本_1942202708122341377.json、视频生成/图生视频/3-9步极速WanVACE_Pose迁移_1932617969560383490.json…）
+> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（视频生成/图生视频/【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.json、视频生成/图生视频/【Wan2.1系列】图生视频工作流_1914283396808306690.json、视频生成/图生视频/【人物特效】Strong Wind 大风吹 特效_1913412975162552322.json、视频生成/图生视频/一键生成吻屏视频_2034885482387083266.json、视频生成/图生视频/万相视频-万物切切乐_1936085964831772673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：29
+- **样本数**：35
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
+全部 35 个 workflow 都包含：
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `SetNode`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 28/29 个有
-- `WanVideoSLG` —— 28/29 个有
-- `WanVideoTeaCache` —— 26/29 个有
-- `WanVideoExperimentalArgs` —— 25/29 个有
-- `ColorMatch` —— 23/29 个有
-- `easy cleanGpuUsed` —— 22/29 个有
-- `ImpactSwitch` —— 21/29 个有
-- `PreviewImage` —— 21/29 个有
-- `SimpleMath+` —— 21/29 个有
-- `WanVideoBlockSwap` —— 21/29 个有
-- `WanVideoModelLoader` —— 21/29 个有
-- `WanVideoTorchCompileSettings` —— 21/29 个有
-- `RHHiddenNodes` —— 19/29 个有
-- `WanVideoVACEModelSelect` —— 19/29 个有
-- `ShowText|pysssss` —— 17/29 个有
-- `WanVideoLoraSelect` —— 16/29 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/29 个有
-- `ImagePadKJ` —— 7/29 个有
-- `DepthAnything_V2` —— 6/29 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 6/29 个有
-- `GetImageRangeFromBatch` —— 6/29 个有
-- `ImageBlend` —— 5/29 个有
-- `easy seed` —— 5/29 个有
-- `WanVideoEasyCache` —— 2/29 个有
-- `WanVideoSetRadialAttention` —— 2/29 个有
-- `easy imageRemBg` —— 2/29 个有
-- `Joy_caption_two` —— 1/29 个有
-- `Joy_caption_two_load` —— 1/29 个有
+- `WanVideoBlockSwap` —— 34/35 个有
+- `WanVideoEnhanceAVideo` —— 34/35 个有
+- `WanVideoLoraSelect` —— 33/35 个有
+- `CLIPVisionLoader` —— 31/35 个有
+- `WanVideoTorchCompileSettings` —— 29/35 个有
+- `Primitive integer [Crystools]` —— 28/35 个有
+- `Text Multiline` —— 28/35 个有
+- `WanVideoVACEModelSelect` —— 26/35 个有
+- `LoadWanVideoClipTextEncoder` —— 4/35 个有
+- `Text` —— 3/35 个有
+- `ColorMatch` —— 1/35 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/35 个有
+- `ImageScaleToTotalPixels` —— 1/35 个有
+- `easy imageSize` —— 1/35 个有
 
 ## 典型参数
 

@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_161
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.643727
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveImage, easy showAnything]
+coverage: 0.889
+common_nodes: [RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2极速版图像编辑V1（贞贞工坊-需要gemini优质分组）_2028103786031489026.json, 图片生成/图生图/全能图片g image 1.5 & 图片修改 全能图片G-image-1.5 实测0.98每张_2001523979921833986.json, 图片生成/图生图/梦龙全能图片2K_2029064600263598082.json, 图片生成/图生图/贞贞全能图片编辑（单图）_2028479469140316162.json, 图片生成/图生图/（4K多图参考版）全能图片G-image2.0图像编辑（贞贞的AI工坊-要改分组）_2047502610575400962.json, 图片生成/图生图/（4K官方版）全能图片G V2图像编辑new（贞贞的AI工坊-需要改分组）_2047123691510697985.json, 图片生成/图生图/（自定义API）全能图片2极速版单图编辑V1（同步转异步）_2028119406806568961.json, 图片生成/图生图/（自定义API）全能图片2极速版双图编辑V1（同步转异步）_2028120888679337986.json, 图片生成/图生图/（贞贞工坊API）全能图片2极速-多图编辑_2028490685359329282.json, 图片生成/图生图/（贞贞工坊API）全能图片2极速版单图编辑V1（同步转异步）_2028102564104904706.json, 图片生成/文生图/gxx-image-2-原生4K-官方版（贞贞工坊分组：官方优质）_2046970970174398465.json]
+members: [视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json, 视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json, 视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json, 视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json, 视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json, 视频生成/文生视频/全能视频S文生视频-打太极+跳舞+对打_1974653948734869506.json, 视频生成/文生视频/全能视频S文生视频-直播卖货+日常vlog+遥遥领先_1974243774320783362.json, 视频生成/文生视频/全能视频S文生视频_1987477979272032258.json, 视频生成/文生视频/全能视频S文生视频_2001107406144892930.json, 视频生成/文生视频/全能视频S梭罗2文生视频_2002992476006805505.json, 视频生成/文生视频/全能视频S视频生成（新版）_1983079288096366594.json, 视频生成/文生视频/最简单的文生视频_1988203879588347906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_161
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/全能图片2极速版图像编辑V1（贞贞工坊-需要gemini优质分组）_2028103786031489026.json、图片生成/图生图/全能图片g image 1.5 & 图片修改 全能图片G-image-1.5 实测0.98每张_2001523979921833986.json、图片生成/图生图/梦龙全能图片2K_2029064600263598082.json、图片生成/图生图/贞贞全能图片编辑（单图）_2028479469140316162.json、图片生成/图生图/（4K多图参考版）全能图片G-image2.0图像编辑（贞贞的AI工坊-要改分组）_2047502610575400962.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json、视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json、视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json、视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json、视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveImage`
-- `easy showAnything`
+全部 12 个 workflow 都包含：
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gemini_3_1_flash_image_edit_S2A` —— 7/11 个有
-- `Comfly_gpt_image_2_official` —— 3/11 个有
-- `Comfly_gpt_image_1_edit` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `DF_Text_Box` —— 1/12 个有
 
 ## 典型参数
 

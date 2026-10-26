@@ -1,36 +1,40 @@
 ---
 name: image_to_image_controlnet_inpaint_sampler_2
 type: Image To Image
-frequency: 8
-level: strong
-coverage: 0.842125
-common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, ImageConcanate, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.795333
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, ImageAndMaskPreview, ImageConcanate, ImagePadForOutpaint, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image InstanX方案2超强一致性扩图V2（支持文字）_1966497493393584130.json, 图片生成/图生图/Qwen Image InstanX方案2超强局部重绘V1（支持文字）_1966505436751015937.json, 图片生成/图生图/Qwen Image InstanX超强局部重绘V1（支持文字）_1966206334339289089.json, 图片生成/图生图/Qwen Image InstanX超强扩图V1（支持文字）_1966211637923540993.json, 图片生成/图生图/Qwen Image 外扩_1969329744925913090.json, 图片生成/图生图/Qwen Image 局部重绘 手动遮罩_1968885539195822082.json, 图片生成/图生图/Qwen-Image-inpaint完美扩图_1966196008294281217.json, 图片生成/图生图/🦖超强局部重绘（支持文字）_1968137236959100929.json]
+members: [图片生成/图生图/Qwen按比例无损扩图-指定长宽_1997281629649453057.json, 图片生成/图生图/ai扩图应用版_1985252354868002817.json, 图片生成/图生图/一键无缝扩图_1985686454313594882.json, 图片生成/图生图/扩图Qwen Image InstanX_加速版_双节棍版本_1971387798001532929.json, 图片生成/图生图/扩图Qwen Image InstanX_加速版_双节棍版本_2090289911185362945.json, 图片生成/图生图/扩图Qwen_Image_InstanX_加速版_双节棍版本_2091708724745424897.json, 图片生成/图生图/扩图Qwen_Image_InstanX_加速版_双节棍版本_2091841005497700353.json, 图片生成/图生图/扩图Qwen_Image_InstanX_加速版_双节棍版本_2108764571812061186.json, 图片生成/图生图/扩图Qwen_Image_InstanX_加速版_双节棍版本_2110556288672428033.json, 图片生成/图生图/扩图加速版_双节棍版本Qwen Image InstanX__1996444349015670785.json, 图片生成/图生图/无限画布-扩图Qwen Image_2065988771551731713.json, 图片生成/图生图/🦖Qwen超强扩图 （可选比例）_1968202243537272833.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image InstanX方案2超强一致性扩图V2（支持文字）_1966497493393584130.json、图片生成/图生图/Qwen Image InstanX方案2超强局部重绘V1（支持文字）_1966505436751015937.json、图片生成/图生图/Qwen Image InstanX超强局部重绘V1（支持文字）_1966206334339289089.json、图片生成/图生图/Qwen Image InstanX超强扩图V1（支持文字）_1966211637923540993.json、图片生成/图生图/Qwen Image 外扩_1969329744925913090.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen按比例无损扩图-指定长宽_1997281629649453057.json、图片生成/图生图/ai扩图应用版_1985252354868002817.json、图片生成/图生图/一键无缝扩图_1985686454313594882.json、图片生成/图生图/扩图Qwen Image InstanX_加速版_双节棍版本_1971387798001532929.json、图片生成/图生图/扩图Qwen Image InstanX_加速版_双节棍版本_2090289911185362945.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ControlNetInpaintingAliMamaApply`
 - `ControlNetLoader`
+- `ImageAndMaskPreview`
 - `ImageConcanate`
+- `ImagePadForOutpaint`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -38,46 +42,42 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `GrowMaskWithBlur` —— 5/8 个有
-- `ImageAndMaskPreview` —— 5/8 个有
-- `ImagePadForOutpaint` —— 5/8 个有
-- `InpaintPreprocessor` —— 5/8 个有
-- `LayerUtility: PurgeVRAM` —— 5/8 个有
-- `PDIMAGE_LongerSize` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `SetLatentNoiseMask` —— 5/8 个有
-- `CFGNorm` —— 2/8 个有
-- `GetImageSize` —— 2/8 个有
-- `ImageScaleToTotalPixels` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `SolidMask` —— 2/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `LayerMask: MaskPreview` —— 1/8 个有
-- `LayerUtility: ImageBlend V2` —— 1/8 个有
-- `MaskPreview` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 11/12 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `NunchakuQwenImageDiTLoader` —— 10/12 个有
+- `Bjornulf_ShowInt` —— 2/12 个有
+- `ImageResize+` —— 2/12 个有
+- `MathExpression|pysssss` —— 2/12 个有
+- `PDIMAGE_LongerSize` —— 2/12 个有
+- `Convert Masks to Images` —— 1/12 个有
+- `FluxResolutionNode` —— 1/12 个有
+- `GetImageSizeAndCount` —— 1/12 个有
+- `Int` —— 1/12 个有
+- `PreviewAny` —— 1/12 个有
+- `SimpleMath+` —— 1/12 个有
+- `YCMaskComposite` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 8 | 79% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 8 | 79% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 8 | 8 - 20 | 12 | 55% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 55% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，8 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 20，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（10/12 个样本）：Steps较低可能导致细节不足

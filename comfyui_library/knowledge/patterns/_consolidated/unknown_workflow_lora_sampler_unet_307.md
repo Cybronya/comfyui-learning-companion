@@ -3,77 +3,83 @@ name: unknown_workflow_lora_sampler_unet_307
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
-problems: []
+coverage: 0.819
+common_nodes: [CLIPLoader, CR Overlay Text, CR Text, CR Text Replace, ConditioningZeroOut, GetTextFromJson, ImageConcatFromBatch, ImageFromBatch, ImageListToImageBatch, ImageLoader, ImageScaleToTotalPixels, ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadJsonFromText, LoraLoaderModelOnly, MultiplePathsInput, Qwen3_VQA, SDVM Image List Repeat, SaveImage, Text Concatenate, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageListToImageBatch, easy promptLine, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3 mask替换人物_2099484034475847682.json, 视频生成/图生视频/minimax   h3 最强动作迁移_2089285244263424001.json]
+members: [图片生成/图生图/悲伤文案人物一致性4宫格_1989130301244837889.json, 图片生成/图生图/🥨Qwen-Edit 悲伤文案人物一致性4宫格🥨_1985965824429236225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_307
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3 mask替换人物_2099484034475847682.json、视频生成/图生视频/minimax   h3 最强动作迁移_2089285244263424001.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/悲伤文案人物一致性4宫格_1989130301244837889.json、图片生成/图生图/🥨Qwen-Edit 悲伤文案人物一致性4宫格🥨_1985965824429236225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
+- `CR Overlay Text`
+- `CR Text`
+- `CR Text Replace`
+- `ConditioningZeroOut`
+- `GetTextFromJson`
+- `ImageConcatFromBatch`
+- `ImageFromBatch`
+- `ImageListToImageBatch`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `ImpactInt`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadJsonFromText`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
+- `SDVM Image List Repeat`
+- `SaveImage`
+- `Text Concatenate`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `easy imageListToImageBatch`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `CreateVideo` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImageAndMaskPreview` —— 1/2 个有
-- `MiniMaxH3AddGuide` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
-- `SAM3_TrackPreview` —— 1/2 个有
-- `SAM3_TrackToMask` —— 1/2 个有
-- `SAM3_VideoTrack` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `UniBlockSwapTE` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
-- `取色器_孤海` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta57 | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta57，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

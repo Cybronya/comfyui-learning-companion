@@ -3,42 +3,36 @@ name: unknown_workflow_video_36
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.85325
-common_nodes: [Int, Int To Bool (mtb), LoadImage, RH_Captioner, RunningHub_FramePack, ShowText|pysssss, Textbox, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, easy textSwitch]
+coverage: 0.95825
+common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json, 视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json, 视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json, 视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json]
+members: [数字人/数字人/LatentSync 1.6_2091491962556866562.json, 数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json, 数字人/数字人/LatentSync口型同步功能_1876327461943496706.json, 数字人/数字人/latentsync1.5数字人_1907685948761772033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_36
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json、视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json、视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json、视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6_2091491962556866562.json、数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json、数字人/数字人/LatentSync口型同步功能_1876327461943496706.json、数字人/数字人/latentsync1.5数字人_1907685948761772033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Int`
-- `Int To Bool (mtb)`
-- `LoadImage`
-- `RH_Captioner`
-- `RunningHub_FramePack`
-- `ShowText|pysssss`
-- `Textbox`
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `easy textSwitch`
+- `VideoLengthAdjuster`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `IndexTTSNode` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,41 +3,37 @@ name: unknown_workflow_generic_456
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.8625
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Sora2_I2V, SaveImage, SaveVideo, Text Concatenate]
+coverage: 1
+common_nodes: [LoadImage, Preview3D, RunningHubPixal3DImageTo3D, RunningHubPixal3DModelLoader, RunningHubPixal3DSaveGLB]
 problems: []
 missing: []
-members: [视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json, 视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json, 视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1996601719746347010.json]
+members: [图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json, 图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json, 图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json, 图片生成/图生图/图片转3D模型_2059133516037844993.json, 图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json, 视频生成/文生视频/Pixal3D Image to 3D_2057792674358452225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_456
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json、视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json、视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json、图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json、图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json、图片生成/图生图/图片转3D模型_2059133516037844993.json、图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Text`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Sora2_I2V`
-- `SaveImage`
-- `SaveVideo`
-- `Text Concatenate`
+- `Preview3D`
+- `RunningHubPixal3DImageTo3D`
+- `RunningHubPixal3DModelLoader`
+- `RunningHubPixal3DSaveGLB`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
-- `easy showAnything` —— 5/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `ShowText` —— 1/6 个有
+- `SaveImage` —— 3/6 个有
+- `easy saveText` —— 3/6 个有
+- `InspyrenetRembg` —— 1/6 个有
+- `SaveText|pysssss` —— 1/6 个有
 
 ## 典型参数
 

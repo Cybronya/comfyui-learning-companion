@@ -2,66 +2,72 @@
 name: unknown_workflow_lora_sampler_clip_144
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.82525
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
-problems: []
+level: strong
+coverage: 0.81375
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/真人转全能图片G-4o卡通3D玩偶_1913613624995446786.json, 图片生成/文生图/Chibify_1925114613338152962.json, 图片生成/文生图/Flux最强换脸_1894257044323500034.json, 图片生成/文生图/吉卜力风格换脸写真文生图工作流_1906942276495450113.json]
+members: [图片生成/图生图/zimageturbo反推洗图_2057473107635564545.json, 图片生成/图生图/zimageturbo反推洗图_2061040515281416194.json, 图片生成/图生图/蒜香卡普zimageturbo反推洗图_2050584989691064322.json, 图片生成/文生图/Qwen-Image-Lora4步带千问图片反推洗图_1987323968367603713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_144
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/真人转全能图片G-4o卡通3D玩偶_1913613624995446786.json、图片生成/文生图/Chibify_1925114613338152962.json、图片生成/文生图/Flux最强换脸_1894257044323500034.json、图片生成/文生图/吉卜力风格换脸写真文生图工作流_1906942276495450113.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/zimageturbo反推洗图_2057473107635564545.json、图片生成/图生图/zimageturbo反推洗图_2061040515281416194.json、图片生成/图生图/蒜香卡普zimageturbo反推洗图_2050584989691064322.json、图片生成/文生图/Qwen-Image-Lora4步带千问图片反推洗图_1987323968367603713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptySD3LatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `KSampler`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 3/4 个有
-- `Note Plus (mtb)` —— 3/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `Florence2ModelLoader` —— 2/4 个有
-- `Florence2Run` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `DualCLIPLoaderGGUF` —— 1/4 个有
+- `AspectRatioResolution_Warper` —— 3/4 个有
+- `RH_LLMAPI_Pro_Node` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `FusionText` —— 1/4 个有
+- `ZML_TextInput` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_multistep | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

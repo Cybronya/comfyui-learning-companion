@@ -1,66 +1,65 @@
 ---
 name: unknown_workflow_sampler_vae_18
 type: Unknown Workflow
-frequency: 14
+frequency: 19
 level: moderate
-coverage: 0.965643
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced]
+coverage: 0.811316
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx2.3导演分镜台视频生成 图生视频，首帧、中间帧、尾帧，_2059276164383985666.json, 视频生成/图生视频/ltx导演节点_2057350661624393729.json, 视频生成/图生视频/opsv- 导演台_2061748200293355521.json, 视频生成/图生视频/opsv- 导演台_2069360572709298178.json, 视频生成/图生视频/【阿良绘】LTX Director _ 导演工作流 V2_2064886980097429505.json, 视频生成/图生视频/【阿良绘】LTX Director _ 导演工作流 V2_2073289175195205632.json, 视频生成/图生视频/【阿良绘】LTX Director导演工作流_2059132036383858689.json, 视频生成/图生视频/万象AI+LTX2.3导演台工作流 -（分镜图+音频+提示词+视频时长随意控制）_2058003640417349634.json, 视频生成/图生视频/多图参考-LTX2.3导演界面_2056691705071620098.json, 视频生成/图生视频/好用的LTX2.3导演全能控制-运镜分镜一网打进_2055095279413669890.json, 视频生成/图生视频/超好玩LTX2.3导演控制台-运镜分镜-不传音频版v2.0_2056028640659427329.json, 视频生成/文生视频/LTX 2.3 Director 导演工作台 ComfyUI 在线工作流_2060986578205503489.json, 视频生成/文生视频/LTX Director导演台工作流_2066167001793515521.json, 视频生成/文生视频/LTX2.3导演分镜_2055938221086912513.json]
+members: [视频生成/图生视频/MinimaxH3视频人物替换_2095672328909836290.json, 视频生成/图生视频/MinimaxH3视频人物替换_2109569066229919746.json, 视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json, 视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json, 视频生成/图生视频/minimax_h3_全能参考生视频_2084112691525939201.json, 视频生成/图生视频/minimax_h3_全能参考视频_2084269876935479297.json, 视频生成/图生视频/minimax_h3_全能参考（参考视频输入）_2085193849571463169.json, 视频生成/图生视频/minimax多参考出视频_2084278095783227394.json, 视频生成/图生视频/video_minimax_h3_r2v-comfyui官方开源工作流_2084152065667981314.json, 视频生成/图生视频/video_minimax_h3_r2v_2084534320714313730.json, 视频生成/图生视频/全模态多图片生视频MiniMax H3_2084270450250702850.json, 视频生成/图生视频/加速升级版！ MiniMax-H3 图生视频！_2088799409717997570.json, 视频生成/图生视频/单图参考生视频 生产力版 MiniMax+H3+H25+Hybrid_2088526268315820034.json, 视频生成/图生视频/参考生视频_MiniMax H3_2084453784557809665.json, 视频生成/图生视频/多图参考生成视频_2093669173456105473.json, 视频生成/图生视频/电商4图参考考生视频  minimax h3 加速版_2089612691093676034.json, 视频生成/图生视频/电商双图参考考生视频  minimax h3 加速版_2088445593055219714.json, 视频生成/图生视频/雷霆运镜Minimax H3 最强视频参考，动作迁移，人物替换_2090101579029504002.json, 视频生成/文生视频/生产文字特效视频 minimax H3_2088261863363670018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/ltx2.3导演分镜台视频生成 图生视频，首帧、中间帧、尾帧，_2059276164383985666.json、视频生成/图生视频/ltx导演节点_2057350661624393729.json、视频生成/图生视频/opsv- 导演台_2061748200293355521.json、视频生成/图生视频/opsv- 导演台_2069360572709298178.json、视频生成/图生视频/【阿良绘】LTX Director _ 导演工作流 V2_2064886980097429505.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3视频人物替换_2095672328909836290.json、视频生成/图生视频/MinimaxH3视频人物替换_2109569066229919746.json、视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json、视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json、视频生成/图生视频/minimax_h3_全能参考生视频_2084112691525939201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 19 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 13/14 个有
-- `LTX2SamplingPreviewOverride` —— 13/14 个有
-- `LatentUpscaleModelLoader` —— 12/14 个有
-- `VAELoaderKJ` —— 12/14 个有
-- `CheckpointLoaderSimple` —— 11/14 个有
-- `CreateVideo` —— 11/14 个有
-- `LoraLoaderModelOnly` —— 11/14 个有
-- `LTXVLatentUpsampler` —— 10/14 个有
-- `SaveVideo` —— 10/14 个有
-- `VAEDecode` —— 10/14 个有
-- `UNETLoader` —— 7/14 个有
-- `VHS_VideoCombine` —— 6/14 个有
-- `PathchSageAttentionKJ` —— 5/14 个有
-- `VAEDecodeTiled` —— 4/14 个有
-- `CR Prompt Text` —— 2/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/14 个有
-- `LTXVAudioVAELoader` —— 2/14 个有
-- `Lora Loader Stack (rgthree)` —— 2/14 个有
-- `RH_LLMAPI_Pro_Node` —— 2/14 个有
-- `UnetLoaderGGUF` —— 2/14 个有
-- `solarL_SaveImagesToZip` —— 2/14 个有
-- `LTXAVTextEncoderLoader` —— 1/14 个有
-- `LoadImage` —— 1/14 个有
+- `LoadImage` —— 18/19 个有
+- `PrimitiveStringMultiline` —— 18/19 个有
+- `UNETLoader` —— 15/19 个有
+- `ResolutionSelector` —— 14/19 个有
+- `PathchSageAttentionKJ` —— 10/19 个有
+- `LoraLoaderModelOnly` —— 9/19 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/19 个有
+- `VHS_LoadVideo` —— 6/19 个有
+- `PrimitiveInt` —— 5/19 个有
+- `MiniMaxH3HybridLoader` —— 4/19 个有
+- `MiniMaxH3SigmaShift` —— 4/19 个有
+- `GetImageSize` —— 3/19 个有
+- `ImageConcanate` —— 3/19 个有
+- `ImageResizeKJv2` —— 3/19 个有
+- `PreviewAny` —— 3/19 个有
+- `SimpleMath+` —— 3/19 个有
+- `VHS_VideoCombine` —— 3/19 个有
+- `VHS_VideoInfo` —— 3/19 个有
+- `LoadAudio` —— 1/19 个有
+- `Text` —— 1/19 个有
+- `easy int` —— 1/19 个有
 
 ## 典型参数
 

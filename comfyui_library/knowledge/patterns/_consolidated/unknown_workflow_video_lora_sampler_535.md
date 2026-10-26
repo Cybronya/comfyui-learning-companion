@@ -3,64 +3,76 @@ name: unknown_workflow_video_lora_sampler_535
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8005
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, UniBlockSwap, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.63925
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json, 视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json, 视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json, 视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json]
+members: [数字人/数字人/minimax_h3_角色替换_2113147355452235777.json, 视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2113162325590102018.json, 视频生成/图生视频/H3 mask替换人物_2099484034475847682.json, 视频生成/图生视频/替换多人视频中的人物采用人物遮罩（简单提示词+h3_character_swap_mask）_2113250622324690946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_535
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json、视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json、视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json、视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/minimax_h3_角色替换_2113147355452235777.json、视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2113162325590102018.json、视频生成/图生视频/H3 mask替换人物_2099484034475847682.json、视频生成/图生视频/替换多人视频中的人物采用人物遮罩（简单提示词+h3_character_swap_mask）_2113250622324690946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
-- `CR Prompt Text`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
-- `EasyCache`
-- `Label (rgthree)`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
+- `SAM3_TrackPreview`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
 - `SamplerCustomAdvanced`
-- `SolAttnPatch`
-- `SpectrumApplyMiniMaxH3`
 - `UNETLoader`
-- `UniBlockSwap`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SolAttnMiniMax` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `BasicScheduler` —— 1/4 个有
-- `CS-MultiImageLoader` —— 1/4 个有
-- `KSamplerSelect` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
+- `BasicScheduler` —— 3/4 个有
+- `DrawBBoxes` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `KSamplerSelect` —— 3/4 个有
+- `LTXVConcatAVLatent` —— 3/4 个有
+- `MVEx_MaskCleanup` —— 3/4 个有
+- `MVEx_MaskToLatentSpace` —— 3/4 个有
+- `MVEx_SubjectCrop` —— 3/4 个有
+- `MVEx_SubjectUncrop` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `PreviewAnimation` —— 3/4 个有
+- `ResizeImageMaskNode` —— 3/4 个有
+- `SetLatentNoiseMask` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
+- `VAEEncode` —— 3/4 个有
+- `VAEEncodeAudio` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/4 个有
+- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/4 个有
+- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/4 个有
+- `取色器_孤海` —— 1/4 个有
 
 ## 典型参数
 

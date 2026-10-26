@@ -1,55 +1,52 @@
 ---
 name: unknown_workflow_sampler_vae_53
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.984
-common_nodes: [BasicGuider, BasicScheduler, CreateVideo, LoadAudio, LoadImage, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio]
+coverage: 0.818
+common_nodes: [CreateVideo, LoadAudio, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAAudioReference, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 一站式工作流_2110358590795108353.json, 视频生成/文生视频/MiniMax H3 真全能参考工作流_2085567946600046593.json, 视频生成/文生视频/MiniMax_H3_全能参考-即梦写法_2085624803662323714.json]
+members: [视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2084499175890317313.json, 视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2094970680646389762.json, 视频生成/图生视频/MiniMax H3 ref2va(图片+音频)开源版-多图参考生视频_2084117579903356930.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图像+音频参考生视频_2110975898894819330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 一站式工作流_2110358590795108353.json、视频生成/文生视频/MiniMax H3 真全能参考工作流_2085567946600046593.json、视频生成/文生视频/MiniMax_H3_全能参考-即梦写法_2085624803662323714.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2084499175890317313.json、视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2094970680646389762.json、视频生成/图生视频/MiniMax H3 ref2va(图片+音频)开源版-多图参考生视频_2084117579903356930.json、视频生成/图生视频/MiniMax+H3+FL2VA开源版-图像+音频参考生视频_2110975898894819330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CreateVideo`
 - `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3Ref2VAAudioReference`
+- `RHMiniMaxH3Ref2VAEncode`
+- `RHMiniMaxH3Ref2VAImageReference`
+- `RHMiniMaxH3Ref2VAModelLoader`
+- `RHMiniMaxH3Ref2VATarget`
+- `RHMiniMaxH3Ref2VATextEncoderLoader`
+- `RHMiniMaxH3Ref2VAVAELoader`
 - `SaveVideo`
-- `VAEDecode`
-- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `AudioAdjustVolume` —— 1/3 个有
-- `EasyCache` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxH3BlockCacheT8` —— 1/3 个有
-- `MiniMaxH3TurboLoRA` —— 1/3 个有
-- `MiniMaxH3TurboSampler` —— 1/3 个有
-- `SolAttnPatch` —— 1/3 个有
+- `GetNode` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
+- `easy boolean` —— 2/4 个有
+- `easy ifElse` —— 2/4 个有
+- `easy int` —— 2/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
 
 ## 典型参数
 

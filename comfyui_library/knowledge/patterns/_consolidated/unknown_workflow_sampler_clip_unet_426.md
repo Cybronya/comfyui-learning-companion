@@ -3,72 +3,67 @@ name: unknown_workflow_sampler_clip_unet_426
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8325
-common_nodes: [AILab_QwenVL, Bjornulf_ShowInt, CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.921
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/图生图/批量洗图自动化（Qwen2512大模型）_2093655624746889217.json, 图片生成/图生图/批量洗图自动化（Z-image）_2093654082945900546.json]
+members: [图片生成/图生图/Flux2-klein移除_局部重绘工作流_2013104344488480770.json, 图片生成/图生图/Klein单图像编辑（头发飘动版）_2052707351915966465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_426
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量洗图自动化（Qwen2512大模型）_2093655624746889217.json、图片生成/图生图/批量洗图自动化（Z-image）_2093654082945900546.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2-klein移除_局部重绘工作流_2013104344488480770.json、图片生成/图生图/Klein单图像编辑（头发飘动版）_2052707351915966465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `Bjornulf_ShowInt`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
+- `BlockifyMask` —— 1/2 个有
+- `LayerUtility: ColorImage V2` —— 1/2 个有
+- `LayerUtility: CropByMask V2` —— 1/2 个有
+- `LayerUtility: ImageBlend` —— 1/2 个有
+- `Mask Fill Holes` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `取色器_孤海` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8.5 | - | 2 | 94% |
-| Prompt 约束强度(CFG) | 1.25 | - | 2 | 80% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.925 | - | 2 | 92% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
-- Prompt 约束强度(CFG) 中位数 1.25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.925，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,85 +1,90 @@
 ---
 name: unknown_workflow_lora_sampler_unet_11
 type: Unknown Workflow
-frequency: 29
-level: moderate
-coverage: 0.749828
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
-problems: []
+frequency: 31
+level: strong
+coverage: 0.839935
+common_nodes: [CLIPLoader, ConditioningZeroOut, Flux2KleinEditTextEncode_EditUtils, GetImageSize, INTConstant, KSampler, LCSColorAnchor, LCSLoadData, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/8步高质量极速Minimax H3开源版_2108184548386365441.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105264487803740162.json, 视频生成/图生视频/Dasiwa HybirdturboV1混合版_2094425018229944321.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2092127662033686529.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2100150349800755202.json, 视频生成/图生视频/H3 音频驱动｜双采短片版_2098724093511159810.json, 视频生成/图生视频/H3_高动态双采放大_2102818737027117058.json, 视频生成/图生视频/H3_高动态双采放大_2106167971315011585.json, 视频生成/图生视频/H3双采多参加速格斗工作流-_2097995370008764418.json, 视频生成/图生视频/MiniMax H3 Dasiwa HybirdV1turboV1+600EMA参考生视频V1_2094425009153466370.json, 视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json, 视频生成/图生视频/MiniMax H3-动态最强-参考生视频-V1_2094782408347447298.json, 视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-电商带货-参考生视频_2102717112467943425.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-参考生视频_2098795077903671298.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-电商带货-二采_2102718883990958081.json, 视频生成/图生视频/MiniMax+H3双采全能工作流V2-音频驱动数字人-参考生视频_2111113734084190209.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100139084525166593.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2101871299831357442.json, 视频生成/图生视频/全网最强！Miniimax文戏工作流！！！！_2094332513748611073.json, 视频生成/文生视频/(10eros v5版)MiniMax H3双采参考生视频_2099438471583719426.json, 视频生成/文生视频/MINIMAX H3 双采全能参考_2094111351902924801.json, 视频生成/文生视频/MiniMax H3 全能文武戏工作流全能工作流-文戏不油 武戏动态强_2104228828628475905.json, 视频生成/文生视频/MiniMax H3-动态最强-文生视频-V1_2094749351989043201.json, 视频生成/文生视频/【MINIMAX H3】武戏-高动态_极速高清_ 全自动输出_2104519856463900674.json]
+members: [图片生成/图生图/4K零变形高清修复Klein+TTP+ 去除AI感_2081195988076810242.json, 图片生成/图生图/4K高清修复  Klein+TTP 去除AI塑料感_2075023047899303937.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2093321576824528898.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097162390164041730.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097502199990538242.json, 图片生成/图生图/HD Restoration图片高清放大变清晰分块放大SeedVR2.5+++TTP_2098214253705650177.json, 图片生成/图生图/High-Definition Restorati4K零变形高清修复Klein+TTP++去除AI感_2094242010805919745.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2061263969981124609.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2061390459804667905.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2064903373018714114.json, 图片生成/图生图/Klein+TTP 高清修复 4K_2060227055467450370.json, 图片生成/图生图/Klein+TTP+零变形高清修复+4K (1)_2067496500036464641.json, 图片生成/图生图/Klein+TTP+零变形高清修复+4K_2061256324096286722.json, 图片生成/图生图/Klein+TTP_零变形高清修复_4K_2060902117925277698.json, 图片生成/图生图/Klein+TTP_零变形高清修复_4K_2061257595431768066.json, 图片生成/图生图/TPP人像精修_2079206858736365570.json, 图片生成/图生图/TPP人像精修_2081983712404787202.json, 图片生成/图生图/TPP高清放大-人像精修_2082288270473523201.json, 图片生成/图生图/TPP高清放大-人像精修_2082295189032497154.json, 图片生成/图生图/klein+TTP放大_2066751659522478081.json, 图片生成/图生图/修到4K脸却变了？这套零变形方案，毛孔都清晰人还不走样_2060418252785934337.json, 图片生成/图生图/图片超清放大（ZLTD）_2069606120322330625.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2100194646679969793.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2100855956463767553.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2101126416896188418.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复+4K_2072593896399532034.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复+4K_2072950870114918402.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复4K_2073222622690758657.json, 图片生成/图生图/无变形高清修复 4K_2071616768271011842.json, 图片生成/图生图/超好用🔥零变形高清放大修复-4K-最新_2066457945453453314.json, 数字人/数字人/图片高清！ 去AI感去油！Klein+TTP！_2100028593916170242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/8步高质量极速Minimax H3开源版_2108184548386365441.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json…）
+> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/图生图/4K零变形高清修复Klein+TTP+ 去除AI感_2081195988076810242.json、图片生成/图生图/4K高清修复  Klein+TTP 去除AI塑料感_2075023047899303937.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2093321576824528898.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097162390164041730.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097502199990538242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：29
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：31
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `BasicGuider`
+全部 31 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `Flux2KleinEditTextEncode_EditUtils`
+- `GetImageSize`
+- `INTConstant`
+- `KSampler`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 28/29 个有
-- `ResolutionSelector` —— 28/29 个有
-- `VHS_VideoCombine` —— 27/29 个有
-- `CR Prompt Text` —— 26/29 个有
-- `ModelAttentionBackend` —— 24/29 个有
-- `SolAttnMiniMax` —— 23/29 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 21/29 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 21/29 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 21/29 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 21/29 个有
-- `GetNode` —— 13/29 个有
-- `LoraLoaderModelOnly` —— 13/29 个有
-- `SetNode` —— 13/29 个有
-- `Float` —— 12/29 个有
-- `LoadAudio` —— 11/29 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/29 个有
-- `孤海注释` —— 6/29 个有
-- `PreviewImage` —— 5/29 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/29 个有
-- `PrimitiveStringMultiline` —— 3/29 个有
-- `ConcatTextOfUtils` —— 2/29 个有
-- `CreateVideo` —— 2/29 个有
-- `DuckHideNode` —— 2/29 个有
-- `EmptyImage` —— 2/29 个有
-- `SaveImage` —— 2/29 个有
-- `SaveVideo` —— 2/29 个有
-- `ImpactConditionalBranch` —— 1/29 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/29 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/29 个有
-- `PreviewAny` —— 1/29 个有
-- `RH_LLMAPI_Pro_Node` —— 1/29 个有
-- `easy int` —— 1/29 个有
-- `布尔孤海` —— 1/29 个有
+- `GetNode` —— 30/31 个有
+- `Image Comparer (rgthree)` —— 30/31 个有
+- `MemoryCleaner` —— 30/31 个有
+- `PreviewImage` —— 30/31 个有
+- `SaveImage` —— 30/31 个有
+- `SetNode` —— 30/31 个有
+- `MathExpression|pysssss` —— 25/31 个有
+- `LCSSharpnessCalibrate` —— 11/31 个有
+- `LCSSharpnessIntervene` —— 11/31 个有
+- `GoohaiAnyExists` —— 2/31 个有
+- `EmptyImage` —— 1/31 个有
+- `JjkText` —— 1/31 个有
+- `KOOK_ImageCompression` —— 1/31 个有
+- `KOOK_SaveJPGImage` —— 1/31 个有
+- `RHHiddenNodes` —— 1/31 个有
+- `easy showAnything` —— 1/31 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 31 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 31 | 100% |
+| 采样算法 | euler | - | 31 | 90% |
+| 调度器 | simple | - | 31 | 84% |
+| 重绘幅度 | 1 | 1 - 1 | 31 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 31/31 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，31 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，31 个样本，一致性 90%
+- 调度器 最常用 simple，31 个样本，一致性 84%
+- 重绘幅度 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
+- 高发问题（31/31 个样本）：Steps较低可能导致细节不足

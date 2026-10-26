@@ -3,39 +3,33 @@ name: unknown_workflow_generic_1224
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8605
-common_nodes: [CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, LoadImage, RH_RhartImageG2ImageToImage, RegexReplace, SaveImage, easy promptConcat]
+coverage: 0.8
+common_nodes: [ImageCompare, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/G PT-image 2穿搭商品主图 自动提示词_2096107883325902850.json, 图片生成/图生图/服装pod-插画改印花图案_2094219839891140609.json]
+members: [comfyui-workflow-templates-json/api_bria_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream4.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1224
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G PT-image 2穿搭商品主图 自动提示词_2096107883325902850.json、图片生成/图生图/服装pod-插画改印花图案_2094219839891140609.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream4.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
+- `ImageCompare`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RegexReplace`
 - `SaveImage`
-- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_SaveImagesToZip` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BriaImageEditNode` —— 1/2 个有
+- `ByteDanceSeedreamNodeV3` —— 1/2 个有
 
 ## 典型参数
 

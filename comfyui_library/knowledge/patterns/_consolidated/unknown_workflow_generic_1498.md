@@ -3,31 +3,34 @@ name: unknown_workflow_generic_1498
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
+coverage: 0.6305
+common_nodes: [ExpressionEditor, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json, 图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json]
+members: [图片生成/图生图/各种表情制作（小白版）_1952717013137428482.json, 图片生成/图生图/表情精准控制，眼睛视线，头部等精确控制_1980907300577824770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1498
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json、图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/各种表情制作（小白版）_1952717013137428482.json、图片生成/图生图/表情精准控制，眼睛视线，头部等精确控制_1980907300577824770.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageG25FlareTextToImage`
+- `ExpressionEditor`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageScaleToMegapixels` —— 1/2 个有
 
 ## 典型参数
 

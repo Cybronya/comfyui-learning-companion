@@ -2,65 +2,81 @@
 name: unknown_workflow_video_lora_sampler_633
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.944
-common_nodes: [ColorMatch, ImageConcanate, ImageResizeKJ, LoadImage, LoadImageFromUrl, LoadWanVideoT5TextEncoder, Note Plus (mtb), PreviewImage, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.753333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, INTConstant, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.1 AccVideo vace 双图参考快速模型_1948689505176956929.json, 视频生成/图生视频/Wan2.1 VACE双图参考改进版_1948588073054535682.json, 视频生成/图生视频/Wan2.1 causvid vace 双图参考快速模型_1948684591906336769.json]
+members: [图片生成/图生图/动作迁移_1991086021146181634.json, 视频生成/图生视频/Animate_视频自动人物姿势动作迁移_2002231206848655361.json, 视频生成/图生视频/wan animate动作迁移_1972997136394661890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_633
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 AccVideo vace 双图参考快速模型_1948689505176956929.json、视频生成/图生视频/Wan2.1 VACE双图参考改进版_1948588073054535682.json、视频生成/图生视频/Wan2.1 causvid vace 双图参考快速模型_1948684591906336769.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/动作迁移_1991086021146181634.json、视频生成/图生视频/Animate_视频自动人物姿势动作迁移_2002231206848655361.json、视频生成/图生视频/wan animate动作迁移_1972997136394661890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ColorMatch`
-- `ImageConcanate`
-- `ImageResizeKJ`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `LoadImageFromUrl`
-- `LoadWanVideoT5TextEncoder`
-- `Note Plus (mtb)`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageRemBg` —— 2/3 个有
-- `ImageCompositeMasked` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `DWPreprocessor` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `PixelPerfectResolution` —— 2/3 个有
+- `DrawViTPose` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `OnnxDetectionModelLoader` —— 1/3 个有
+- `PoseAndFaceDetection` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足

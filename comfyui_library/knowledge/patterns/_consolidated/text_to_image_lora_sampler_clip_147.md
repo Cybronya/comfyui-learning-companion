@@ -3,53 +3,60 @@ name: text_to_image_lora_sampler_clip_147
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.886
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.909727
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json, 视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json, 视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json, 视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json, 视频生成/图生视频/Seedance 2.0图生视频｜首尾帧双参可调，生成视频自带音频_2099906662617407490.json, 视频生成/图生视频/Seedance2.0 Global图生视频｜首尾帧4K视频生成工作流_2097815419359940610.json, 视频生成/图生视频/Wan3.0多参生视频工作流｜全模态素材参考生成_2097845652163227650.json, 视频生成/图生视频/wan3.0多参考图生视频｜图生视频一键直出_2092045899554971650.json, 视频生成/图生视频/上下文参考视频融合运镜｜MiniMax H3角色一致性图生视频_2096676491013742593.json, 视频生成/图生视频/动作迁移角色替换AI视频换人｜免改骨架直接换主角｜图生视频_2101892897812606978.json, 视频生成/图生视频/视频修复增强｜去噪清晰化画质提升，老片翻新必备_2101226303985901570.json]
+members: [图片生成/图生图/Flux-3-Image-Klein多图编辑，图生图素材整合利器_2111560906680393729.json, 图片生成/图生图/Flux3加速版多图编辑写真向｜人像写真改图不吃力_2111333564863307778.json, 图片生成/图生图/Flux3加速版多图编辑，sd-in 量化提速电商图生图_2111513720408068097.json, 图片生成/图生图/Flux3加速版多图编辑，人像写真图生图快速出片_2111535026918744066.json, 图片生成/图生图/Flux3图像编辑邪修流，图生图黑科技玩法实测_2111184292708704257.json, 图片生成/图生图/Flux3多图编辑加速版，1到4张参考图自由组合_2112334139688050690.json, 图片生成/图生图/Flux3多图编辑加速版，写真图生图效率翻倍_2111544034245308417.json, 图片生成/图生图/Flux3多图编辑加速版，图生图批量出图效率翻倍_2111890689465339906.json, 图片生成/图生图/Flux3多图编辑加速版｜最多4图混合最少1张也能跑｜多图融合编辑省时间_2112061118301691906.json, 图片生成/图生图/flux_klien3图像编辑，电商平面设计图生图_2111557914212257793.json, 图片生成/文生图/FLUX3文生图sd-in 量化，提示词pe优化出图_2111939737857646594.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_147
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json、视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json、视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json、视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json、视频生成/图生视频/Seedance 2.0图生视频｜首尾帧双参可调，生成视频自带音频_2099906662617407490.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux-3-Image-Klein多图编辑，图生图素材整合利器_2111560906680393729.json、图片生成/图生图/Flux3加速版多图编辑写真向｜人像写真改图不吃力_2111333564863307778.json、图片生成/图生图/Flux3加速版多图编辑，sd-in 量化提速电商图生图_2111513720408068097.json、图片生成/图生图/Flux3加速版多图编辑，人像写真图生图快速出片_2111535026918744066.json、图片生成/图生图/Flux3图像编辑邪修流，图生图黑科技玩法实测_2111184292708704257.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 10/11 个有
-- `LoadImage` —— 8/11 个有
-- `PrimitiveStringMultiline` —— 6/11 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 4/11 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 4/11 个有
-- `EmptyImage` —— 3/11 个有
-- `LoadVideo` —— 3/11 个有
-- `PreviewImage` —— 3/11 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 2/11 个有
-- `RH_BytedanceSeedance20GlobalImageToVideo` —— 2/11 个有
-- `RH_TopazLabs_VideoUpscale` —— 2/11 个有
-- `SaveImage` —— 2/11 个有
-- `RHBerniniFullReferenceVideoToVideo` —— 1/11 个有
-- `RH_MinimaxHailuoH3ImageToVideo` —— 1/11 个有
+- `LoadImage` —— 10/11 个有
+- `ReferenceMultiLatent` —— 10/11 个有
+- `Text` —— 4/11 个有
+- `ResolutionSelector` —— 3/11 个有
+- `CR Prompt Text` —— 2/11 个有
+- `QwenPERewriteT8` —— 2/11 个有
+- `CR Text` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `Image Comparer (rgthree)` —— 1/11 个有
+- `ImageConcanate` —— 1/11 个有
+- `Latent Switch (JPS)` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 

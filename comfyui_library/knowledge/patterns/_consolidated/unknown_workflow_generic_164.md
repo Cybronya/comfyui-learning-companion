@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_164
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.987
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.939417
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json, 图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json, 图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json, 图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json, 图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json, 图片生成/文生图/-全能图片V1-pro_1991891403967975426.json, 图片生成/文生图/0201发布版：全能图片Pro_2020093603560820737.json, 图片生成/文生图/10合一超级全能图片香焦 bnana Pro_2019427181721554946.json, 图片生成/文生图/2029813681218916353.json, 图片生成/文生图/2029824177317875713.json, 图片生成/文生图/4k直出标注式服装款式图_2020845106500210689.json]
+members: [音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json, 音频生成/音频生成/IndexTTS 2.5语音克隆2608_2094635934229815298.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2094792849782042625.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2098246921596002306.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2087829131324116993.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088205542249558017.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088241722756259842.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2094792952475377666.json, 音频生成/音频生成/index tts2.5语音克隆_2090296819464105986.json, 音频生成/音频生成/啊癫 IndexTTS2.5语音克隆音频克隆_2092610497064558594.json, 音频生成/音频生成/让孩子随时都能听到你讲故事（AI语音克隆2.5）_2090440396223639553.json, 音频生成/音频生成/语音克隆IndexTTS 2.5-参考音频_2106028450975932418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_164
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json、图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json、图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json、图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json、图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json、音频生成/音频生成/IndexTTS 2.5语音克隆2608_2094635934229815298.json、音频生成/音频生成/IndexTTS 2.5语音克隆V3_2094792849782042625.json、音频生成/音频生成/IndexTTS 2.5语音克隆V3_2098246921596002306.json、音频生成/音频生成/IndexTTS 2.5语音克隆_2087829131324116993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 1/11 个有
-- `RMBG` —— 1/11 个有
+- `CR Prompt Text` —— 11/12 个有
+- `T8_IndexTTS25_SamplingConfig` —— 3/12 个有
+- `孤海注释` —— 3/12 个有
 
 ## 典型参数
 

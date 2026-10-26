@@ -1,48 +1,38 @@
 ---
 name: unknown_workflow_generic_123
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.837154
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, Text, easy promptConcat, easy promptLine]
+coverage: 0.969357
+common_nodes: [CreateVideo, LoadAudio, RH_HeyGemNode, SaveVideo, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json, 图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json, 图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json, 图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json, 图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2098981285736833026.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2099141290008080386.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2101488163675009025.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json, 图片生成/图生图/电商产品详情页一键生成6张_2064758435874430977.json, 图片生成/图生图/阿清的多张电商详情页生成_2092159694122082305.json, 图片生成/文生图/image2电商（主图+详情页）_2051119303629520897.json, 图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json]
+members: [数字人/数字人/HeyGem口播_2089232511313465346.json, 数字人/数字人/Heygem真人对口型情感口播数字人_2066750569318014978.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人_2060617064750080002.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人_2073722822106640385.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2080640604245155841.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json, 数字人/数字人/三七—视频驱动数字人（sanqi）_2059629171910995970.json, 数字人/数字人/数字人【视频对口型】超快速！_2079962207802183682.json, 数字人/数字人/视频驱动数字人(heygem)_2041716059153108994.json, 视频生成/图生视频/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2090756294016856066.json, 视频生成/图生视频/Heygem真人对口型，数字人工作流_1927204893608804354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_123
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json、图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json、图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json、图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json、图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/HeyGem口播_2089232511313465346.json、数字人/数字人/Heygem真人对口型情感口播数字人_2066750569318014978.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人_2060617064750080002.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人_2073722822106640385.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2080640604245155841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text`
-- `easy promptConcat`
-- `easy promptLine`
+全部 14 个 workflow 都包含：
+- `CreateVideo`
+- `LoadAudio`
+- `RH_HeyGemNode`
+- `SaveVideo`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_CombineUnits` —— 12/13 个有
-- `HAIGC_Layer` —— 12/13 个有
-- `HAIGC_SavePSD` —— 12/13 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 11/13 个有
-- `easy showAnything` —— 11/13 个有
-- `EmptyImage` —— 2/13 个有
-- `PreviewImage` —— 2/13 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/13 个有
-- `RH_RhartImageG2ImageToImage` —— 2/13 个有
-- `TT_img_enc` —— 1/13 个有
+- `PreviewVideoNode` —— 5/14 个有
+- `AudioCrop` —— 4/14 个有
+- `LoadImage` —— 1/14 个有
 
 ## 典型参数
 

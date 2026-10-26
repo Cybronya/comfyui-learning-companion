@@ -1,33 +1,39 @@
 ---
 name: unknown_workflow_generic_334
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage]
+coverage: 0.480875
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075085505724768257.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json, 图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json, 图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json, 图片生成/文生图/Seedream V5 Pro T2I 文生图_2077556986736111618.json, 图片生成/文生图/文生图  Seedream 5.0 Pro_2075504105182810113.json]
+members: [视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 10S文生视频V1_1993138025121120258.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新图生视频V1（可选横竖屏屏-基准价格1.7元）_1974925677256380418.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 25S新文生视频V1（可选横竖屏频-基准价格1.7元）_1979390287166476289.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S 普通版15S新文生视频V1（可选横竖屏频-基准价格0.1元）_1979417280096407554.json, 视频生成/文生视频/(新版0.1积分-支持真人)全能视频S新文生视频V1(贞贞工坊-令牌分组选default)_2036011299909410818.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1文生视频特价版（基准0.3元_8S）_1980613635166916610.json, 视频生成/文生视频/Comfy挑战赛9（云境创想）Grok+全能视频S自动多镜头视频15S视频API版_1986429748345794561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_334
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075085505724768257.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json、图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json、图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 10S文生视频V1_1993138025121120258.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新图生视频V1（可选横竖屏屏-基准价格1.7元）_1974925677256380418.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 25S新文生视频V1（可选横竖屏频-基准价格1.7元）_1979390287166476289.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S 普通版15S新文生视频V1（可选横竖屏频-基准价格0.1元）_1979417280096407554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/7 个有
+- `Comfly_sora2` —— 7/8 个有
+- `LoadImage` —— 6/8 个有
+- `SaveImage` —— 4/8 个有
+- `Comfly_Googel_Veo3` —— 1/8 个有
+- `RH_LLMAPI_NODE` —— 1/8 个有
 
 ## 典型参数
 

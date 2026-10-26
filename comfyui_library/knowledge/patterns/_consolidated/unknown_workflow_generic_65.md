@@ -3,33 +3,49 @@ name: unknown_workflow_generic_65
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.963889
-common_nodes: [SaveImage]
+coverage: 0.897056
+common_nodes: [Get Image Size, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch]
 problems: []
 missing: []
-members: [图片生成/图生图/sku图生图无文字_2068886938618257409.json, 图片生成/图生图/sku图生图有文字_2068934071400624129.json, 图片生成/图生图/【阡陌】gemini-3.1-flash全能图片2.0单图_多图图像编辑工作流_2029820857077473281.json, 图片生成/图生图/产品营销图_2030927728215592961.json, 图片生成/图生图/全能图片 2.0_2058541134623891458.json, 图片生成/图生图/全能图片 2.0_2k_2104861335333990401.json, 图片生成/图生图/全能图片2.0 生成四宫格多视图 4宫格 _ 人像四视图_2043529289177501697.json, 图片生成/图生图/全能图片2.0_2028076293710942210.json, 图片生成/图生图/全能图片2.0_2052683057173413890.json, 图片生成/图生图/全能图片2.0双图_2089666756385263618.json, 图片生成/图生图/全能图片2.0服装衣服换装_2016770404051853314.json, 图片生成/图生图/全能图片2图生图_2044954064257028098.json, 图片生成/图生图/全能图片3.0_2037496983321059330.json, 图片生成/图生图/图像缩放_2056935767573880833.json, 图片生成/图生图/系统剪裁_2069605976042467329.json, 图片生成/文生图/2029782063720697858.json, 图片生成/文生图/全能图片 文生图_2111909882592059393.json, 图片生成/文生图/全能图片2_2027195734507917313.json]
+members: [图片生成/图生图/TTP分块+SeedVR2放大_2095793233937920002.json, 图片生成/图生图/TTP分块+SeedVR2放大_2096150294785773569.json, 图片生成/图生图/seedVR2 万物4K超清放大（分块）_2041729291301429250.json, 图片生成/图生图/seedVR2 万物高清放大 TTP放大 增加皮肤纹理 超级细节修复 超真实 去AI塑料感 图生图_1996133909765275650.json, 图片生成/图生图/seedVR2 万物高清放大（分块） 超级细节修复 超真实_1984775476948385794.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2014990182071672833.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2054224790436761601.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2089192862389985282.json, 图片生成/图生图/seedVR2 万物高清放大（支持分块）_1976821726065704962.json, 图片生成/图生图/seedVR2 高清放大_1984149005791854594.json, 图片生成/图生图/seedVR2 高清放大工作流_2040689256242352129.json, 图片生成/图生图/seedVR2 高清放大工作流_2051931514862096386.json, 图片生成/图生图/seedVR2 高清放大（自用）_1996763680530472961.json, "图片生成/图生图/seedVR2-万物极速高清放大-最强分块版（支持4k,6k,8k）_1989502979894112257.json", "图片生成/图生图/seedVR2-万物高清放大-加强版支持文字 人像 物品等（支持4k,8k）_1989503162178523137.json", 图片生成/图生图/seedVR2_万物高清放大分块去噪声杂点_2094717893291368450.json, 图片生成/图生图/室内设计专属高清放大_2061811811082653698.json, 图片生成/图生图/无损放大-SeedVr2_1971040512591437825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_65
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/sku图生图无文字_2068886938618257409.json、图片生成/图生图/sku图生图有文字_2068934071400624129.json、图片生成/图生图/【阡陌】gemini-3.1-flash全能图片2.0单图_多图图像编辑工作流_2029820857077473281.json、图片生成/图生图/产品营销图_2030927728215592961.json、图片生成/图生图/全能图片 2.0_2058541134623891458.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/TTP分块+SeedVR2放大_2095793233937920002.json、图片生成/图生图/TTP分块+SeedVR2放大_2096150294785773569.json、图片生成/图生图/seedVR2 万物4K超清放大（分块）_2041729291301429250.json、图片生成/图生图/seedVR2 万物高清放大 TTP放大 增加皮肤纹理 超级细节修复 超真实 去AI塑料感 图生图_1996133909765275650.json、图片生成/图生图/seedVR2 万物高清放大（分块） 超级细节修复 超真实_1984775476948385794.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `SaveImage`
+- `Get Image Size`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImpactMinMax`
+- `LoadImage`
+- `SeedVR2`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 17/18 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 16/18 个有
-- `TextInput_` —— 5/18 个有
-- `ImageScale` —— 4/18 个有
+- `DF_Integer` —— 16/18 个有
+- `SaveImage` —— 16/18 个有
+- `easy cleanGpuUsed` —— 16/18 个有
+- `PreviewImage` —— 3/18 个有
+- `SeedVR2BlockSwap` —— 3/18 个有
+- `ConstrainImage|pysssss` —— 2/18 个有
+- `KOOK_SaveJPGImage` —— 2/18 个有
+- `SeedVR2ExtraArgs` —— 2/18 个有
+- `easy int` —— 2/18 个有
+- `Int` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 

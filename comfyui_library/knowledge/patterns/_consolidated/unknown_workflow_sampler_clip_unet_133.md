@@ -2,71 +2,74 @@
 name: unknown_workflow_sampler_clip_unet_133
 type: Unknown Workflow
 frequency: 9
-level: weak
-coverage: 0.945778
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.815556
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4PromptBuilderKJ, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen通义千问文生图（中文海报直出）_1953446698997743618.json, 图片生成/文生图/Z-IMAGE文生图--标准版--必收藏_2048436971835498497.json, 图片生成/文生图/Z-IMAGE文生图_2017069432048193538.json, 图片生成/文生图/Z-IMAGE文生图_2033075658359836674.json, 图片生成/文生图/Z-IMAGE文生图_2052276305177133058.json, 图片生成/文生图/Z-Image-Base文生图亮亮丝袜美女_2018164986979295233.json, 图片生成/文生图/Z-Image-Fun- Lora-Distill-4步、8步对比工作流-20倍提速_2025134419132026881.json, 图片生成/文生图/Z-Image-Fun- Lora-Distill-4步工作流-20倍提速-高清放大_2025147553636950017.json, 图片生成/文生图/Z-Image-Fun- Lora-Distill-8步工作流-速度极快-高清放大_2025157935407570946.json]
+members: [图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json, 图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json, 图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json, 图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json, 图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json, 图片生成/文生图/Ideogram4 文生图-写实摄影专用工作流_2066088865739399169.json, 图片生成/文生图/Ideogram4自定义文生图_超绝美感_2064900969019822082.json, 图片生成/文生图/ideogram4 文生图 精准写实摄影 数字人_2065236680147296257.json, 图片生成/文生图/ideogram4 文生图_1943017003487543298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_133
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Qwen通义千问文生图（中文海报直出）_1953446698997743618.json、图片生成/文生图/Z-IMAGE文生图--标准版--必收藏_2048436971835498497.json、图片生成/文生图/Z-IMAGE文生图_2017069432048193538.json、图片生成/文生图/Z-IMAGE文生图_2033075658359836674.json、图片生成/文生图/Z-IMAGE文生图_2052276305177133058.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json、图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json、图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json、图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json、图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4PromptBuilderKJ`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PrimitiveInt`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/9 个有
-- `Int` —— 4/9 个有
-- `ConditioningZeroOut` —— 3/9 个有
-- `CustomAddLabel` —— 3/9 个有
-- `JjkText` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
-- `SeedVR2` —— 2/9 个有
-- `CR Latent Input Switch` —— 1/9 个有
-- `CompressImages` —— 1/9 个有
-- `FluxResolutionNode` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
+- `CustomCombo` —— 5/9 个有
+- `CR Text` —— 4/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `BasicScheduler` —— 3/9 个有
+- `ModelSamplingAuraFlow` —— 3/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `GetObjectFromJson` —— 1/9 个有
+- `GetTextFromJson` —— 1/9 个有
+- `LayerColor: BrightnessContrastV2` —— 1/9 个有
+- `Light-Tool: DeserializeJsonString` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_Translator` —— 1/9 个有
+- `StringConstantMultiline` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 25 | 9 | 34% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 9 | 29% |
-| 采样算法 | euler | - | 9 | 44% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 25，9 个样本，取值分散，一致性仅 34%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，9 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，9 个样本，一致性 44%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（8/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

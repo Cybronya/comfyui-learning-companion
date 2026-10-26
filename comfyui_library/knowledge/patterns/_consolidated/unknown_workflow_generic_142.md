@@ -1,46 +1,43 @@
 ---
 name: unknown_workflow_generic_142
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.73925
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, easy showAnything]
+coverage: 0.866077
+common_nodes: [AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json, 数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json, 音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2050893627286663170.json, 音频生成/音频生成/LongCat-AudioDIT-语音克隆_2055595682752417794.json, 音频生成/音频生成/LongCat-AudioDiT+超真实语气+语音克隆工作流_2046995658002927618.json, 音频生成/音频生成/LongCat-TTS多人对话_2075504719178592258.json, 音频生成/音频生成/TTS语音音频克隆单人双人可以同时进行丝滑复制_2077303693199896577.json, 音频生成/音频生成/TTS超真实语气 语音克隆工作流 LAO   郑_2053183694545932289.json, 音频生成/音频生成/YZ-LongCat-AudioDIT-TTS_2041359894686732290.json, 音频生成/音频生成/YZ金鱼-LongCat-AudioDIT-TTS_2039380233228394497.json]
+members: [音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json, 音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json, 音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2015458205643575298.json, 音频生成/音频生成/qwentts-声音设计 声音克隆_2033750797955112961.json, 音频生成/音频生成/千问3TSS声音克隆_2069320475846725633.json, 音频生成/音频生成/千问3TTS声音设计语音克隆_2069311488371814401.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2014536001888198657.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2069313800293142530.json, 音频生成/音频生成/千问3TTS语音克隆-老祺-单克隆版_2097158002439704578.json, 音频生成/音频生成/千问3TTS语音克隆-音色设计-老祺_2028309603213123586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_142
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json、数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json、音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json、音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json、音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2050893627286663170.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json、音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json、音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `AudioCrop`
+- `CR Text`
 - `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
 - `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
-- `easy showAnything`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 11/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/12 个有
-- `LongCatMultiSpeakerTTS` —— 10/12 个有
-- `CR Prompt Text` —— 9/12 个有
-- `TextInput_` —— 3/12 个有
-- `Fast Groups Muter (rgthree)` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `TextInputNode` —— 1/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
+- `Qwen3TTSVoiceDesign` —— 11/13 个有
+- `WhisperSTT` —— 8/13 个有
+- `Label (rgthree)` —— 4/13 个有
+- `Qwen3TTSCustomVoice` —— 4/13 个有
+- `PreviewTextNode` —— 1/13 个有
 
 ## 典型参数
 

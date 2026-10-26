@@ -1,111 +1,87 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_41
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.609667
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, JoinStringMulti, KSamplerSelect, LTX2AttentionTunerPatch, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3HybridLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringConcatenate, StringLength, StringSubstring, ToString, UNETLoader, VAEDecode, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, string_util_StrFind]
+frequency: 10
+level: strong
+coverage: 0.9335
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, Display Any (rgthree), EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, ImpactSwitch, Int, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PIP_IntegerCalculator, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine, VRAMReserver, easy cleanGpuUsed, easy convertAnything, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3参考生视频-LTX2.5 MSR二采放大-音频参考-自动提示词优化-V1.1_2088533956374384642.json, 视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2100857766603747330.json, 视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2101128738648973314.json, 视频生成/图生视频/双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2100072493146005505.json, 视频生成/图生视频/双剑合并_MiniMax_H3_+_LTX2.5_多参视频生成_2100190663353655298.json, 视频生成/图生视频/双剑合并_MiniMax_H3_+_LTX2.5_多参视频生成_2100922356238733313.json, 视频生成/图生视频/双剑合璧_MiniMax_H3_+_LTX2.5_多参视频生成_2105108981030146049.json, 视频生成/文生视频/(SBAPI)MiniMaxH3+LTX25多参视频(三分镜角色包匹配)_2104882747050389505.json, 视频生成/文生视频/双剑合璧 MiniMax H3 + LTX2.5 多参视频生成_2102770042948644866.json]
+members: [视频生成/文生视频/LTX2.0文生视频_2008728323093962754.json, 视频生成/文生视频/LTX2.0文生视频_2021110563987791873.json, 视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json, 视频生成/文生视频/LTX2.3文生视频_2059534082203283458.json, 视频生成/文生视频/LTX2.3文生视频_2065077242186788866.json, 视频生成/文生视频/LTX2.3文生视频【优化版3】_2056732469243760641.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2029959325606744066.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2056288371739287553.json, 视频生成/文生视频/LTX2.3文生视频【优化版】_2071227330307125249.json, 视频生成/文生视频/LTX2.3文生视频： ai提示词优化增强版 提示词ai优化版文生视频工作流_2030140893503692802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_41
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3参考生视频-LTX2.5 MSR二采放大-音频参考-自动提示词优化-V1.1_2088533956374384642.json、视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2100857766603747330.json、视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2101128738648973314.json、视频生成/图生视频/双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2100072493146005505.json、视频生成/图生视频/双剑合并_MiniMax_H3_+_LTX2.5_多参视频生成_2100190663353655298.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/LTX2.0文生视频_2008728323093962754.json、视频生成/文生视频/LTX2.0文生视频_2021110563987791873.json、视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json、视频生成/文生视频/LTX2.3文生视频_2059534082203283458.json、视频生成/文生视频/LTX2.3文生视频_2065077242186788866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ExtendIntermediateSigmas`
-- `GetNode`
-- `JoinStringMulti`
+- `CR Text`
+- `CR Text Concatenate`
+- `Display Any (rgthree)`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
+- `ImpactSwitch`
+- `Int`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3HybridLoader`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
+- `PIP_IntegerCalculator`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `PromptRelayEncode`
-- `PurgeVRAM_UTK`
+- `PrimitiveInt`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `StringConcatenate`
-- `StringLength`
-- `StringSubstring`
-- `ToString`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `VAELoaderKJ`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `string_util_StrFind`
+- `VRAMReserver`
+- `easy cleanGpuUsed`
+- `easy convertAnything`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 8/9 个有
-- `LTXAddVideoICLoRAGuide` —— 8/9 个有
-- `LTXICLoRALoaderModelOnly` —— 8/9 个有
-- `LiconMSR` —— 8/9 个有
-- `EmptyImage` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `ComfyUILTX25MSRICLoRALoader` —— 1/9 个有
-- `ComfyUILTX25MSRMultiReferenceGuide` —— 1/9 个有
-- `DF_String_Concatenate` —— 1/9 个有
-- `DF_Text_Box` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `H3SigmaRefiner` —— 1/9 个有
-- `JWStringGetLine` —— 1/9 个有
-- `JjkConcat` —— 1/9 个有
-- `JjkShowText` —— 1/9 个有
-- `LTXVDualCFGGuider` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `ReplaceString` —— 1/9 个有
-- `StringConstant` —— 1/9 个有
-- `easy promptReplace` —— 1/9 个有
+- `CR String To Combo` —— 9/10 个有
+- `CheckpointLoaderSimple` —— 9/10 个有
+- `LTXAVTextEncoderLoader` —— 9/10 个有
+- `LTXVAudioVAELoader` —— 9/10 个有
+- `SaveAudio` —— 9/10 个有
+- `LTXVScheduler` —— 8/10 个有
+- `DualCLIPLoader` —— 6/10 个有
+- `LTX2_NAG` —— 6/10 个有
+- `UNETLoader` —— 6/10 个有
+- `VAELoaderKJ` —— 6/10 个有
+- `LTXVChunkFeedForward` —— 4/10 个有
+- `LTXICLoRALoaderModelOnly` —— 2/10 个有
+- `TextNode` —— 2/10 个有
+- `VideoSizePresetNode` —— 2/10 个有
+- `BasicScheduler` —— 1/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `ModelscopeApiTextGenerationNode` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 121 - 121 | 10 | 100% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
@@ -113,4 +89,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 121 - 121，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

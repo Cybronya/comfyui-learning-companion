@@ -3,68 +3,58 @@ name: unknown_workflow_video_lora_sampler_890
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.518
-common_nodes: [Any2ListNode, Audio Duration (mtb), AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, CreateVideo, GetNode, ImageFromBatch, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PreviewAny, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy int, easy lengthAnything, easy promptLine, easy showAnything]
+coverage: 0.7945
+common_nodes: [CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/官方新版数字人，全自动循环长视频数字人生成！_2019320483916812289.json, 视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json]
+members: [视频生成/图生视频/Wan 2.2 FFGo 多图参考图生视频_1992952460717342721.json, 视频生成/图生视频/wan22+uni3C运镜控制工作流，精准运镜控制_2014737203347333121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_890
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/官方新版数字人，全自动循环长视频数字人生成！_2019320483916812289.json、视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 FFGo 多图参考图生视频_1992952460717342721.json、视频生成/图生视频/wan22+uni3C运镜控制工作流，精准运镜控制_2014737203347333121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any2ListNode`
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ColorMatch`
-- `CreateVideo`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `ImageFromBatch`
-- `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
-- `PreviewAny`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `LoadWanVideoT5TextEncoder`
 - `SetNode`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy int`
-- `easy lengthAnything`
-- `easy promptLine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RMBG` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

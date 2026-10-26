@@ -1,66 +1,85 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_4
 type: Unknown Workflow
-frequency: 14
+frequency: 13
 level: moderate
-coverage: 0.9315
-common_nodes: [CLIPTextEncode, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.831692
+common_nodes: [BasicGuider, BlockifyMask, Bool, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), ImageScale, ImpactMakeAnyList, ImpactNeg, InpaintCropImproved, Int, KSamplerSelect, LayerColor: BrightnessContrastV2, LayerMask: MaskGrow, LayerUtility: ColorImage V2, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, MaskPreview, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SmartColorMatch, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy imageSize, easy isMaskEmpty, 取色器_孤海, 图像接缝]
 problems: []
 missing: []
-members: [图片生成/图生图/Z image-局部重绘_1996406494566432770.json, 图片生成/图生图/Z-image_局部重绘_1998016560675586050.json, 图片生成/图生图/Z-image局部重绘_1994770932847849474.json, 图片生成/图生图/Z-image局部重绘_1995667925262598145.json, 图片生成/图生图/Z-image局部重绘_1998549428036337666.json, 图片生成/图生图/Z-image局部重绘_2008078929575284737.json, 图片生成/图生图/Z-image局部重绘_2044248370755149826.json, 图片生成/图生图/Z-image局部重绘_2046509363543678977.json, 图片生成/图生图/Z-image开源-局部重绘【非edit模型】_1994233157631279106.json, 图片生成/图生图/[FLUX] 改变发型_1921732538652377090.json, 图片生成/图生图/flux fill 移除、局部重绘_2083238672299814914.json, 图片生成/图生图/一键移除工作流_2020033286864637954.json, 图片生成/图生图/完美遮罩移除功能 Removal 升级版_1983888624603332610.json, 图片生成/图生图/局部重绘 支持4K_1991035247468945410.json]
+members: [图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json, 图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json, 图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json, 图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053089255521570817.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2074896943041564674.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2082289012022267905.json, 图片生成/图生图/Klein万物迁移（零偏移）_2049015744599433217.json, 图片生成/图生图/一致性换装工作流klein局部换装_2047879539073748994.json, 图片生成/图生图/万物迁移-添加物品-局部重绘_2039149753463742465.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2053480818001104897.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2063909849330708481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Z image-局部重绘_1996406494566432770.json、图片生成/图生图/Z-image_局部重绘_1998016560675586050.json、图片生成/图生图/Z-image局部重绘_1994770932847849474.json、图片生成/图生图/Z-image局部重绘_1995667925262598145.json、图片生成/图生图/Z-image局部重绘_1998549428036337666.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json、图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json、图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json、图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json、图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `BasicGuider`
+- `BlockifyMask`
+- `Bool`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `InpaintModelConditioning`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `ImageScale`
+- `ImpactMakeAnyList`
+- `ImpactNeg`
+- `InpaintCropImproved`
+- `Int`
+- `KSamplerSelect`
+- `LayerColor: BrightnessContrastV2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `Mask Fill Holes`
+- `MaskPreview`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SmartColorMatch`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
+- `easy imageSize`
+- `easy isMaskEmpty`
+- `取色器_孤海`
+- `图像接缝`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 13/14 个有
-- `DifferentialDiffusion` —— 13/14 个有
-- `FluxGuidance` —— 12/14 个有
-- `MaskBlur+` —— 10/14 个有
-- `CLIPLoader` —— 9/14 个有
-- `Image Comparer (rgthree)` —— 6/14 个有
-- `DualCLIPLoader` —— 5/14 个有
-- `LoraLoaderModelOnly` —— 4/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/14 个有
-- `Mask Fill Holes` —— 3/14 个有
-- `GrowMaskWithBlur` —— 2/14 个有
-- `ImageResize+` —— 2/14 个有
-- `ImpactInt` —— 2/14 个有
-- `CR Text` —— 1/14 个有
-- `ColorCorrect` —— 1/14 个有
-- `ImageAndMaskPreview` —— 1/14 个有
-- `MaskPreview+` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `easy compare` —— 11/13 个有
+- `easy imageSizeBySide` —— 11/13 个有
+- `easy int` —— 11/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/13 个有
+- `CR Text` —— 8/13 个有
+- `ConditioningRebalanceKrea2` —— 2/13 个有
+- `ImageConcatMulti` —— 2/13 个有
+- `LayerMask: MaskPreview` —— 2/13 个有
+- `LoraLoaderModelOnly` —— 2/13 个有
+- `Preview from image [Crystools]` —— 2/13 个有
+- `YuanColorMatch` —— 2/13 个有
+- `孤海注释` —— 2/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | 10 - 25 | 14 | 57% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 86% |
-| 调度器 | simple | - | 14 | 64% |
-| 重绘幅度 | 0.85 | 0.75 - 1 | 14 | 91% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 25，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 86%
-- 调度器 最常用 simple，14 个样本，一致性 64%
-- 重绘幅度 中位数 0.85，观测区间 0.75 - 1，14 个样本，取值集中（一致性 91%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

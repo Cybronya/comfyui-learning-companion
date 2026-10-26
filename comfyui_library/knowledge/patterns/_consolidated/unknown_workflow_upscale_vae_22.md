@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_upscale_vae_22
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8492
-common_nodes: [ImageScaleBy, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.836571
+common_nodes: [HAIGC_LoadImagesFromZip, HAIGC_SaveImagesToZip, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2 高清放大(满血版)_2085993701389725698.json, 图片生成/图生图/SeedVR2 高清放大_2058824859437850625.json, 图片生成/图生图/SeedVR2 高清放大_2066866184934481922.json, 图片生成/图生图/SeedVR2 高清放大_2094591496115806210.json, 图片生成/图生图/小图无限放大_2005663574984982529.json]
+members: [图片生成/图生图/Seedvr2批量高清放大_2063510557872971777.json, 图片生成/图生图/Seedvr2批量高清放大_2070684485267582977.json, 图片生成/图生图/Seedvr2批量高清放大_2071069731196592129.json, 图片生成/图生图/Seedvr2批量高清放大_2071083263426392066.json, 图片生成/图生图/zip上传批量SeedVR2图像高清_2073996103153963010.json, 图片生成/图生图/zip上传批量SeedVR2图像高清_2075032371799351298.json, 图片生成/图生图/zip上传批量SeedVR2图像高清_2075034522688778241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_22
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2 高清放大(满血版)_2085993701389725698.json、图片生成/图生图/SeedVR2 高清放大_2058824859437850625.json、图片生成/图生图/SeedVR2 高清放大_2066866184934481922.json、图片生成/图生图/SeedVR2 高清放大_2094591496115806210.json、图片生成/图生图/小图无限放大_2005663574984982529.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedvr2批量高清放大_2063510557872971777.json、图片生成/图生图/Seedvr2批量高清放大_2070684485267582977.json、图片生成/图生图/Seedvr2批量高清放大_2071069731196592129.json、图片生成/图生图/Seedvr2批量高清放大_2071083263426392066.json、图片生成/图生图/zip上传批量SeedVR2图像高清_2073996103153963010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageScaleBy`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `HAIGC_LoadImagesFromZip`
+- `HAIGC_SaveImagesToZip`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 1/5 个有
-- `easy imageSizeBySide` —— 1/5 个有
-- `图像缩放V2_孤海` —— 1/5 个有
+- `PrimitiveInt` —— 4/7 个有
 
 ## 典型参数
 

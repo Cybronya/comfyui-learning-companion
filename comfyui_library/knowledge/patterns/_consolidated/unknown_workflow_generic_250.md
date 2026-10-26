@@ -3,33 +3,36 @@ name: unknown_workflow_generic_250
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.914778
-common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
+coverage: 0.724667
+common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json, 音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
+members: [图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json, 图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json, 图片生成/图生图/图像无损高清放大_1956239087894188033.json, 图片生成/图生图/图像无损高清放大_2059279536960917505.json, 图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json, 图片生成/图生图/最佳放大工作流：SeedVR2_bole_1956324968839741442.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1975560945038700545.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1997925676596494338.json, 图片生成/文生图/SeedVR2 高清无损放大_1965606007600762881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_250
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json、音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json、音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json、音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json、图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json、图片生成/图生图/图像无损高清放大_1956239087894188033.json、图片生成/图生图/图像无损高清放大_2059279536960917505.json、图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `Int` —— 2/9 个有
+- `PrimitiveInt` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_9
 type: Unknown Workflow
-frequency: 34
+frequency: 36
 level: moderate
-coverage: 0.928147
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageSharpen, KSamplerAdvanced, KSamplerSelect, LayerUtility: PurgeVRAM V2, ModelSamplingAuraFlow, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.925611
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Krea2三采-全自动文生图全模式_2074751859335716866.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2084535557341925377.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2084649386075836418.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2087389392309669889.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2091713906174676994.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2091845053529542658.json, 图片生成/图生图/Krea2三采流-全自动风格迁移_2092616031020871682.json, 图片生成/图生图/Krea2三采流-风格迁移_2070346463154098178.json, 图片生成/文生图/2030590276292583426.json, 图片生成/文生图/Dark Deco 暗黑装饰艺术 三采工作流（无反推模板）_2081052417982033921.json, 图片生成/文生图/Dark Deco 暗黑装饰艺术 全自动三采工作流_2081041992469012482.json, 图片生成/文生图/Krea2 双采样+Flux.2 Klein高清放大-自动提示词改写文生图_2071886759901884418.json, 图片生成/文生图/Krea2-文生图全模式_2074293554280751106.json, 图片生成/文生图/Krea2-文生图全自动风格迁移_2074293504108490754.json, 图片生成/文生图/Krea2三采-全自动文生图_2075218791964962818.json, 图片生成/文生图/Krea2三采-全自动文生图_2079754578903523329.json, 图片生成/文生图/Krea2三采-全自动文生图_2090250296709705730.json, 图片生成/文生图/Krea2三采-全自动文生图_2090254777090400258.json, 图片生成/文生图/Krea2三采-全自动文生图_2090303123905662977.json, 图片生成/文生图/Krea2三采-全自动文生图全模式_2071985841202880514.json, 图片生成/文生图/Krea2三采-文生图全模式_2089265262427205633.json, 图片生成/文生图/Krea2三采文生图_2076913794516869122.json, 图片生成/文生图/Krea2三采流-全自动文生图_2070323178886492161.json, 图片生成/文生图/Krea2三采流-全自动文生图全模式_2070098937662496769.json, 图片生成/文生图/Krea2三采流-全自动文生图全模式_2070336281514692609.json, 图片生成/文生图/Krea2三采流-全自动文生图全模式_2071434528807280641.json, 图片生成/文生图/Krea2三采流-全自动风格迁移_2070148898408198146.json, 图片生成/文生图/Krea2三采流-全自动风格迁移_2070376782905298945.json, 图片生成/文生图/Krea2三采流-全自动风格迁移_2082656076536836098.json, 图片生成/文生图/Krea2双采流+高清放大-全自动提示词文生图_2071838011926605825.json, 图片生成/文生图/Krea2文生图_三采_2074852704572239873.json, 图片生成/文生图/Krea2文生图美学感_风格化_2074430949265330178.json, 图片生成/文生图/Z image双采生图+Klein修复_2047201445694410754.json, 图片生成/文生图/全自动文生图Krea2_2101530861849104385.json]
+members: [图片生成/反推提示词/FLUX-Klein 图像反推分镜提示词+生成九宫格分镜图_2080913325776527362.json, 图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json, 图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json, 图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json, 图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json, 图片生成/图生图/FLUX2-Klein9B 九宫格 分镜一致性最强_2015216356542648321.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2013614452058361857.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2014954574523670529.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2021053646867275778.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2029746610879598594.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2033815837353709569.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2067832036592807938.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2042456007313465346.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2043916659529883649.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2065044099266342914.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2067883468247355393.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2081733709329424385.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2082447566196793345.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098380414594404353.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098398020718120961.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103810120902864898.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103834278789472257.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2026459848992366593.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2064992938723209217.json, 图片生成/图生图/FLUX2Klein一致性分镜生成_2044742361766436865.json, 图片生成/图生图/FLUXKlein超强分镜流_2058520639069319169.json, 图片生成/图生图/Flux2+Klein_9b最强动漫转写实真人_2023680510127513601.json, 图片生成/图生图/Flux2Klein9b最强动漫转写实真人_2044631862445875202.json, 图片生成/图生图/Flux2_Klein9B_无限分镜工作流_2067621889706643458.json, 图片生成/图生图/Klein文生图图生图脚本分镜一键生成_2015961543439028226.json, 图片生成/图生图/Klein超强分镜流 _  一致性超强九宫格 _  超强连贯性+超快速生成_2044341468541755394.json, 图片生成/图生图/WH-AI-Studio-FLUX2-Klein(自动反推一致性分镜图完美版)_2026691705298231297.json, 图片生成/图生图/klein9b镜头调度_2017785189434400769.json, 图片生成/图生图/opsv-klein9b镜头调度2_2075497084035358722.json, 图片生成/图生图/【灵感工具】影视动画剧情分镜延展_FLUX.2.0-Klein9B_2031248180645470210.json, 图片生成/文生图/opsv-klein9b镜头调度_2054774868142501890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（图片生成/图生图/Krea2三采-全自动文生图全模式_2074751859335716866.json、图片生成/图生图/Krea2三采流-全自动风格迁移_2084535557341925377.json、图片生成/图生图/Krea2三采流-全自动风格迁移_2084649386075836418.json、图片生成/图生图/Krea2三采流-全自动风格迁移_2087389392309669889.json、图片生成/图生图/Krea2三采流-全自动风格迁移_2091713906174676994.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（图片生成/反推提示词/FLUX-Klein 图像反推分镜提示词+生成九宫格分镜图_2080913325776527362.json、图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json、图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json、图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json、图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：34
+- **样本数**：36
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 34 个 workflow 都包含：
+全部 36 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `ImageSharpen`
-- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `ModelSamplingAuraFlow`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -46,43 +40,35 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 33/34 个有
-- `ImageScaleToTotalPixels` —— 33/34 个有
-- `INTConstant` —— 31/34 个有
-- `CR Prompt Text` —— 30/34 个有
-- `llama_cpp_instruct_adv` —— 30/34 个有
-- `llama_cpp_model_loader` —— 30/34 个有
-- `llama_cpp_parameters` —— 30/34 个有
-- `Int` —— 29/34 个有
-- `PreviewAny` —— 29/34 个有
-- `PreviewImage` —— 29/34 个有
-- `LoadImage` —— 14/34 个有
-- `LoraLoaderModelOnly` —— 4/34 个有
-- `Image Comparer (rgthree)` —— 3/34 个有
-- `RH_LLMAPI_Pro_Node` —— 3/34 个有
-- `easy showAnything` —— 3/34 个有
-- `GetNode` —— 2/34 个有
-- `PrimitiveStringMultiline` —— 2/34 个有
-- `SetNode` —— 2/34 个有
-- `TTResolutionSelector` —— 2/34 个有
-- `CLIPLoaderGGUF` —— 1/34 个有
-- `EmptySD3LatentImage` —— 1/34 个有
-- `Label (rgthree)` —— 1/34 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/34 个有
-- `easy saveText` —— 1/34 个有
-- `孤海注释` —— 1/34 个有
+- `CR Prompt Text` —— 34/36 个有
+- `easy promptLine` —— 34/36 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 33/36 个有
+- `GetImageSize` —— 32/36 个有
+- `Qwen3_VQA` —— 32/36 个有
+- `Text Multiline` —— 32/36 个有
+- `easy showAnything` —— 32/36 个有
+- `INTConstant` —— 31/36 个有
+- `JWStringConcat` —— 29/36 个有
+- `ConditioningZeroOut` —— 10/36 个有
+- `LoraLoaderModelOnly` —— 9/36 个有
+- `PreviewImage` —— 9/36 个有
+- `Int` —— 3/36 个有
+- `ResizeImagesByLongerEdge` —— 3/36 个有
+- `StringConcatenate` —— 3/36 个有
+- `DF_Get_image_size` —— 2/36 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/36 个有
+- `Anything Everywhere3` —— 1/36 个有
+- `CR Latent Input Switch` —— 1/36 个有
+- `HAIGC_SaveImagesToZip` —— 1/36 个有
+- `ImageScaleToTotalPixels` —— 1/36 个有
+- `PrimitiveInt` —— 1/36 个有
+- `easy getNode` —— 1/36 个有
+- `easy imageSize` —— 1/36 个有
+- `easy setNode` —— 1/36 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 33 | 88% |
-| 高度 | 1536 | 512 - 1536 | 33 | 83% |
-| 采样步数 | randomize | - | 34 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 12 | 34 | 33% |
-| 采样算法 | 2 | 1 - 2 | 34 | 81% |
-| 调度器 | euler | - | 34 | 97% |
-| 重绘幅度 | simple | - | 34 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,10 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，33 个样本，取值集中（一致性 88%）
-- 高度 中位数 1536，观测区间 512 - 1536，33 个样本，取值集中（一致性 83%）
-- 采样步数 最常用 randomize，34 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 12，34 个样本，取值分散，一致性仅 33%
-- 采样算法 中位数 2，观测区间 1 - 2，34 个样本，取值集中（一致性 81%）
-- 调度器 最常用 euler，34 个样本，一致性 97%
-- 重绘幅度 最常用 simple，34 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

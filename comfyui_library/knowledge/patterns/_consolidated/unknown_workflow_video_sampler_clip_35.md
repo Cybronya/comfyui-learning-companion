@@ -3,82 +3,110 @@ name: unknown_workflow_video_sampler_clip_35
 type: Unknown Workflow
 frequency: 14
 level: strong
-coverage: 0.767429
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleBy, JWInteger, KSamplerAdvanced, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Pick From Batch (mtb), PrimitiveStringMultiline, RIFE VFI, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
+coverage: 0.626643
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GuHaiAutoImageSplit, ImageFromBatch+, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, TTResolutionSelector, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy indexAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json, 视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json, 视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json, 视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json, 视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_1987142608080318466.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_2059074218825965569.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频_1989368083322163201.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频（流畅如丝，内置补帧）_1984903672830312450.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_1979696533400621058.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013566157537681410.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013815011306643457.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，高质量生成_2006002817242447874.json, 视频生成/文生视频/Smooth+Mix+Wan+2.2：文生视频，高质量 流畅视频_2009979362870824961.json]
+members: [视频生成/图生视频/AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050433781642866689.json, 视频生成/图生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2038477520076546049.json, 视频生成/图生视频/LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json, 视频生成/图生视频/LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.json, 视频生成/图生视频/LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_2058423071744282626.json, 视频生成/图生视频/LTX-2.3 多四宫格匹配提示词时长版_2060526792787718145.json, 视频生成/图生视频/LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2041690462200799233.json, 视频生成/图生视频/LTX-2.3批量化漫剧—五组四宫格 直出1分钟视频_2040686679291334658.json, 视频生成/图生视频/LTX2.3全自动漫剧工作流+全节点注释_2042137204117479425.json, 视频生成/图生视频/小华哥-LTX-2.3-20宫格-直出1分钟视频_2041291651959758850.json, 视频生成/图生视频/超好用🔥批量化漫剧-五组四宫格-直出1分钟视频_2056229432154705921.json, 视频生成/图生视频/超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json, 视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json, 视频生成/文生视频/LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2046021811200069633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_35
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json、视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json、视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json、视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json、视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050433781642866689.json、视频生成/图生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2038477520076546049.json、视频生成/图生视频/LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json、视频生成/图生视频/LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.json、视频生成/图生视频/LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_2058423071744282626.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ImageScaleBy`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Pick From Batch (mtb)`
-- `PrimitiveStringMultiline`
-- `RIFE VFI`
-- `Seed (rgthree)`
+- `CR Float To Integer`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GuHaiAutoImageSplit`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `TTResolutionSelector`
+- `Text`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `wanBlockSwap`
+- `easy indexAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `AudioConcat` —— 13/14 个有
+- `EmptyAudio` —— 13/14 个有
+- `INTConstant` —— 13/14 个有
+- `If ANY execute A else B` —— 13/14 个有
 - `PreviewImage` —— 13/14 个有
-- `SaveImage` —— 13/14 个有
-- `ImpactSwitch` —— 12/14 个有
-- `RH_LLMAPI_NODE` —— 12/14 个有
-- `Text Concatenate` —— 12/14 个有
-- `Wan22PromptSelector` —— 12/14 个有
-- `WanImageToVideo` —— 12/14 个有
-- `Label (rgthree)` —— 8/14 个有
-- `LoadImage` —— 8/14 个有
-- `CLIPVisionEncode` —— 7/14 个有
-- `CLIPVisionLoader` —— 7/14 个有
-- `LogicGateNegateValue` —— 7/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/14 个有
-- `ShowText` —— 5/14 个有
-- `ImageResizeKJv2` —— 2/14 个有
-- `WanFirstLastFrameToVideo` —— 2/14 个有
-- `AudioAdjustVolume` —— 1/14 个有
-- `Bool` —— 1/14 个有
-- `ConvertAny2Float` —— 1/14 个有
-- `EmptyAudio` —— 1/14 个有
-- `HunyuanVideoFoley` —— 1/14 个有
-- `PreviewAudio` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `SDVM Image List Repeat` —— 13/14 个有
+- `SimpleMath+` —— 13/14 个有
+- `easy batchAnything` —— 13/14 个有
+- `easy cleanGpuUsed` —— 13/14 个有
+- `easy forLoopEnd` —— 13/14 个有
+- `easy forLoopStart` —— 13/14 个有
+- `easy isNone` —— 13/14 个有
+- `easy promptList` —— 13/14 个有
+- `GetNode` —— 12/14 个有
+- `LatentUpscaleModelLoader` —— 12/14 个有
+- `SetNode` —— 12/14 个有
+- `ShowText|pysssss` —— 12/14 个有
+- `easy lengthAnything` —— 12/14 个有
+- `RH_LLMAPI_Pro_Node` —— 9/14 个有
+- `easy showAnything` —— 9/14 个有
+- `Int` —— 7/14 个有
+- `GetObjectFromJson` —— 5/14 个有
+- `GetTextFromJson` —— 5/14 个有
+- `Light-Tool: DeserializeJsonString` —— 5/14 个有
+- `LoraLoaderModelOnly` —— 5/14 个有
+- `PromptRelayEncode` —— 5/14 个有
+- `AILab_QwenVL_Advanced` —— 1/14 个有
+- `Bjornulf_ShowInt` —— 1/14 个有
+- `CR Text` —— 1/14 个有
+- `CR Text Concatenate` —— 1/14 个有
+- `Display Any (rgthree)` —— 1/14 个有
+- `IfInnerExecute` —— 1/14 个有
+- `ImageConcatMulti` —— 1/14 个有
+- `ImageListToImageBatch` —— 1/14 个有
+- `ImpactInt` —— 1/14 个有
+- `JjkText` —— 1/14 个有
+- `KOOK_SaveJPGImage` —— 1/14 个有
+- `LayerUtility: PurgeVRAM` —— 1/14 个有
+- `MathExpression|pysssss` —— 1/14 个有
+- `ProcessString` —— 1/14 个有
+- `PromptRelayEncodeTimeline` —— 1/14 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/14 个有
+- `ShowAnything|Mie` —— 1/14 个有
+- `easy compare` —— 1/14 个有
+- `easy imageConcat` —— 1/14 个有
+- `easy promptLine` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 14 | 50% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 14 | 100% |
-| 采样算法 | 1 | 1 - 1 | 14 | 100% |
-| 调度器 | euler_ancestral | - | 14 | 100% |
-| 重绘幅度 | simple | - | 14 | 100% |
+| 宽度 | 97 | 97 - 97 | 14 | 100% |
+| 高度 | 25 | 25 - 25 | 14 | 100% |
 
 ## 常见问题
 
@@ -86,8 +114,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，14 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，14 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，14 个样本，一致性 100%
-- 重绘幅度 最常用 simple，14 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 97，14 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，14 个样本，取值集中（一致性 100%）

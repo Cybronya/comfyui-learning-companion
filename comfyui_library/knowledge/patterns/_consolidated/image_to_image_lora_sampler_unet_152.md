@@ -3,61 +3,55 @@ name: image_to_image_lora_sampler_unet_152
 type: Image To Image
 frequency: 4
 level: strong
-coverage: 0.944
-common_nodes: [CFGNorm, CLIPLoader, CompressImages, EmptySD3LatentImage, FluxKontextMultiReferenceLatentMethod, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.95275
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json, 图片生成/图生图/任意角度更换_2019449492507992065.json]
+members: [图片生成/图生图/Qwen-Image-Edit实现编辑图片的一致性_1968953423150399489.json, 图片生成/图生图/Qwen-Image-Edit实现编辑图片的一致性_1970349247147241473.json, 图片生成/图生图/Qwen_产品多视角分镜场景_2017587044259733505.json, 图片生成/图生图/qwen-image-edit2511单图编辑--标准版--（必收藏）_2048729771428810754.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_152
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json、图片生成/图生图/任意角度更换_2019449492507992065.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit实现编辑图片的一致性_1968953423150399489.json、图片生成/图生图/Qwen-Image-Edit实现编辑图片的一致性_1970349247147241473.json、图片生成/图生图/Qwen_产品多视角分镜场景_2017587044259733505.json、图片生成/图生图/qwen-image-edit2511单图编辑--标准版--（必收藏）_2048729771428810754.json）
 
 - **类型**：Image To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `CompressImages`
-- `EmptySD3LatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
-- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `QwenMultiangleCameraNode`
-- `TextEncodeQwenImageEditPlus`
+- `SaveImage`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `CR Prompt List` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageFromBatch` —— 1/4 个有
-- `ImageListToBatch+` —— 1/4 个有
-- `KOOK_SaveJPGImage` —— 1/4 个有
-- `LayerUtility: Collage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `easy promptList` —— 1/4 个有
+- `GroupSwitcher` —— 2/4 个有
+- `ImageStitch` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `TextEncodeQwenImageEdit_lrzjason` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `easy int` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
@@ -67,13 +61,13 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

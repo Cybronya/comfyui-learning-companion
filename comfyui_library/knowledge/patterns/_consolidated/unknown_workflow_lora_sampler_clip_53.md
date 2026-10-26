@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_lora_sampler_clip_53
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.884625
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
+frequency: 9
+level: moderate
+coverage: 0.854778
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json, 视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json, 视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json, 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100051839176765442.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100132977069084673.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100931168920227841.json]
+members: [视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json, 视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json, 视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json, 视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json, 视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json, 视频生成/图生视频/aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2067788916261998594.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2073325205451268097.json, 视频生成/文生视频/LTX2.3 Licon-MSR 多图参考正式版_2067553179402854402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_53
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json、视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json、视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json、视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json、视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json、视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json、视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json、视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json、视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CreateVideo`
 - `EmptyLTXVLatentVideo`
 - `INTConstant`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
 - `LTXAddVideoICLoRAGuide`
 - `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
@@ -40,41 +39,39 @@ source: knowledge_consolidation
 - `LTXVSeparateAVLatent`
 - `LiconMSR`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
 - `ManualSigmas`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 6/8 个有
-- `RH_Captioner` —— 5/8 个有
-- `StringReplace` —— 5/8 个有
-- `VHS_VideoCombine` —— 5/8 个有
-- `easy showAnything` —— 5/8 个有
-- `PreviewImage` —— 4/8 个有
-- `RH_RhartImageG2ImageToImage` —— 4/8 个有
-- `TextConcatenate_UTK` —— 4/8 个有
-- `easy imageSplitGrid` —— 4/8 个有
-- `easy indexAnything` —— 4/8 个有
-- `CreateVideo` —— 3/8 个有
-- `SaveVideo` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `RH_LLMAPI_Pro_Node` —— 2/8 个有
-- `ShowText|pysssss` —— 2/8 个有
-- `EmptyImage` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GoogleTranslator` —— 1/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `LoadVideo` —— 1/8 个有
-- `Qwen3VL_Chat` —— 1/8 个有
+- `LTXAVTextEncoderLoader` —— 6/9 个有
+- `LTXVAudioVAELoader` —— 6/9 个有
+- `LowVRAMCheckpointLoader` —— 6/9 个有
+- `LTX2_NAG` —— 4/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `PromptRelayEncode` —— 4/9 个有
+- `DualCLIPLoader` —— 3/9 个有
+- `GetNode` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `UNETLoader` —— 3/9 个有
+- `VAELoader` —— 3/9 个有
+- `CM_IntToFloat` —— 2/9 个有
+- `ComfyMathExpression` —— 2/9 个有
+- `LTXVSetAudioRefTokens` —— 2/9 个有
+- `MuyeTextEditOutput` —— 2/9 个有
+- `SimpleCalculatorKJ` —— 2/9 个有
+- `AtSignCLIPTextEncode` —— 1/9 个有
+- `CR Text` —— 1/9 个有
+- `MultiIntFormula` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 241 - 241 | 8 | 100% |
-| 高度 | 50 | 40 - 50 | 8 | 93% |
+| 宽度 | 241 | 97 - 241 | 9 | 80% |
+| 高度 | 24 | 24 - 50 | 9 | 64% |
 
 ## 常见问题
 
@@ -82,5 +79,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 241，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 50，观测区间 40 - 50，8 个样本，取值集中（一致性 93%）
+- 宽度 中位数 241，观测区间 97 - 241，9 个样本
+- 高度 中位数 24，观测区间 24 - 50，9 个样本

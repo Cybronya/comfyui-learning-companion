@@ -2,77 +2,64 @@
 name: unknown_workflow_lora_sampler_unet_136
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.7878
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.8578
+common_nodes: [CFGGuider, CLIPLoader, Flux2Scheduler, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, RandomNoise, SamplerCustomAdvanced, SaveImage, SolidMask, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-edit-线稿参考生图（转绘）_2080838546805575681.json, 图片生成/图生图/Qwen-图像编辑-产品精修-批量_2082282335566917634.json, 图片生成/图生图/Qwen-图像编辑-产品精修-批量_2082295149513764866.json, 图片生成/图生图/Qwen-电商专用-产品海报图像模仿(洗图)_2082033056369692673.json, 图片生成/图生图/Qwen-编辑图像-模仿产品模特_2082053215369125889.json]
+members: [图片生成/图生图/Flux2-Klein-9b 无偏移换脸-换头_2016697396180291586.json, 图片生成/图生图/lth_2079975063083896833.json, 图片生成/图生图/换头换脸-Flux2-Klein-9B_2097870248031637505.json, 图片生成/图生图/换头换脸-Flux2-Klein-9B_2099409224215384065.json, 图片生成/图生图/终极一键换头+精细换脸lora版无大头超快速_2015997940753502209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_136
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen-edit-线稿参考生图（转绘）_2080838546805575681.json、图片生成/图生图/Qwen-图像编辑-产品精修-批量_2082282335566917634.json、图片生成/图生图/Qwen-图像编辑-产品精修-批量_2082295149513764866.json、图片生成/图生图/Qwen-电商专用-产品海报图像模仿(洗图)_2082033056369692673.json、图片生成/图生图/Qwen-编辑图像-模仿产品模特_2082053215369125889.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein-9b 无偏移换脸-换头_2016697396180291586.json、图片生成/图生图/lth_2079975063083896833.json、图片生成/图生图/换头换脸-Flux2-Klein-9B_2097870248031637505.json、图片生成/图生图/换头换脸-Flux2-Klein-9B_2099409224215384065.json、图片生成/图生图/终极一键换头+精细换脸lora版无大头超快速_2015997940753502209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGNorm`
+- `CFGGuider`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `PainterFluxImageEdit`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `ImageUpscaleWithModel` —— 4/5 个有
-- `ModelSamplingAuraFlow` —— 4/5 个有
-- `UpscaleModelLoader` —— 4/5 个有
-- `CR Text` —— 3/5 个有
-- `TextEncodeQwenImageEditPlusPro_lrzjason` —— 3/5 个有
-- `LayerUtility: LoadImagesFromPath` —— 2/5 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `CLIPTextEncode` —— 1/5 个有
-- `LineArtPreprocessor` —— 1/5 个有
-- `OpenposePreprocessor` —— 1/5 个有
-- `QwenImageLatentAspectRatio` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 3/5 个有
+- `CR Text` —— 2/5 个有
+- `LayerUtility: ImageReel` —— 2/5 个有
+- `LayerUtility: ImageReelComposit` —— 2/5 个有
+- `MaskFillHoles` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | 4 - 10 | 5 | 73% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 0.75 - 1 | 5 | 89% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 4 - 10，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.75 - 1，5 个样本，取值集中（一致性 89%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

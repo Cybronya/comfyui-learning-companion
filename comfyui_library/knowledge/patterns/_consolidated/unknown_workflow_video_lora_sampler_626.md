@@ -3,59 +3,69 @@ name: unknown_workflow_video_lora_sampler_626
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.968
-common_nodes: [ColorMatch, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, RH_Translator, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy int]
+coverage: 0.782333
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetNode, ImageConcanate, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json, 视频生成/图生视频/最强模型FusionX加速高细节图生视频_1934634580886659073.json, 视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json]
+members: [图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json, 图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json, 视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_626
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json、视频生成/图生视频/最强模型FusionX加速高细节图生视频_1934634580886659073.json、视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json、图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json、视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ColorMatch`
-- `LayerUtility: PurgeVRAM V2`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RH_Translator`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 2/3 个有
-- `ImageResize+` —— 2/3 个有
-- `ImageResizeKJ` —— 2/3 个有
-- `LayerMask: LoadFlorence2Model` —— 2/3 个有
-- `LayerUtility: Florence2Image2Prompt` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `WanVideoEnhanceAVideo` —— 2/3 个有
 - `WanVideoVACEStartToEndFrame` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
+- `AddLabel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `Float` —— 1/3 个有
 - `GetImageSizeAndCount` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `WanVideoMagCache` —— 1/3 个有
-- `WanVideoVACEModelSelect` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `InspyrenetRembg` —— 1/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

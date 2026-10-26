@@ -1,75 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_137
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.621
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 13
+level: moderate
+coverage: 0.930462
+common_nodes: [INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Qwen-VL自动反推-图生视频-comfyui官方流-自用_1981244475731337218.json, 视频生成/图生视频/WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_1982712132548599809.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_2038972688689008641.json, 视频生成/图生视频/WAN2.2图生视频_1999730211526766594.json, 视频生成/图生视频/WAN2.2图生视频终极版_2083953699881316354.json, 视频生成/图生视频/Wan2.2-LightX2V-I2V极致动态图生视频【高质量】_1981254959582928897.json, 视频生成/图生视频/Wan2.2_lightx2V_I2V图生视频fisher版_2001486989629288450.json, 视频生成/图生视频/Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1980300907424473089.json, 视频生成/图生视频/Work-Fisher_Qwen3VL-全自动图片反推+图生视频_1982359421470810113.json, 视频生成/图生视频/Work-Fisher_Qwen3VL-全自动首尾帧反推+图生视频_1982359410183946242.json, 视频生成/图生视频/fisher版Wan2.2_lightx2V_I2V_2001317113182777346.json, 视频生成/图生视频/wan2.2图生视频_2001269970967330818.json]
+members: [图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json, 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json, 视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json, 视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json, 视频生成/图生视频/WAN2.2图生快速流_1950145303941922817.json, 视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json, 视频生成/图生视频/WAN2.2最新图生视频_1960986981260038145.json, 视频生成/图生视频/Wan2.2 图生视频工作流_1991827663358849025.json, 视频生成/图生视频/Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1993179574894788609.json, 视频生成/图生视频/Wan2.2-图生视频_2064953118089113601.json, 视频生成/图生视频/Wan2.2图生视频_1986361069599916033.json, 视频生成/图生视频/Wan2.2图生视频_2007643731159162882.json, 视频生成/图生视频/[泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 可更换lora_1980795448254484481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_137
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Qwen-VL自动反推-图生视频-comfyui官方流-自用_1981244475731337218.json、视频生成/图生视频/WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_1982712132548599809.json、视频生成/图生视频/WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_2038972688689008641.json、视频生成/图生视频/WAN2.2图生视频_1999730211526766594.json、视频生成/图生视频/WAN2.2图生视频终极版_2083953699881316354.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json、视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json、视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json、视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json、视频生成/图生视频/WAN2.2图生快速流_1950145303941922817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 13 个 workflow 都包含：
 - `INTConstant`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 11/12 个有
-- `WanImageToVideo` —— 11/12 个有
-- `easy cleanGpuUsed` —— 11/12 个有
-- `RIFE VFI` —— 10/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/12 个有
-- `wanBlockSwap` —— 8/12 个有
-- `LoadImage` —— 7/12 个有
-- `ImageLoader` —— 5/12 个有
-- `Qwen3_VQA` —— 5/12 个有
-- `easy showAnything` —— 5/12 个有
-- `MultiplePathsInput` —— 4/12 个有
-- `CR Text` —— 2/12 个有
-- `SetNode` —— 2/12 个有
-- `easy seed` —— 2/12 个有
-- `Any To Any` —— 1/12 个有
-- `CompressImages` —— 1/12 个有
-- `CreateVideo` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `RHHiddenNodes` —— 1/12 个有
-- `VHS_SelectFilename` —— 1/12 个有
-- `WanFirstLastFrameToVideo` —— 1/12 个有
+- `CreateCFGScheduleFloatList` —— 12/13 个有
+- `GetImageSizeAndCount` —— 12/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/13 个有
+- `MathExpression|pysssss` —— 11/13 个有
+- `easy int` —— 10/13 个有
+- `DF_Integer` —— 9/13 个有
+- `JWInteger` —— 9/13 个有
+- `JjkText` —— 9/13 个有
+- `SimpleMath+` —— 9/13 个有
+- `WanVideoTorchCompileSettings` —— 4/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
+- `ImpactInt` —— 2/13 个有
+- `ImageScaleByAspectRatio_UTK` —— 1/13 个有
+- `PrimitiveStringMultiline` —— 1/13 个有
+- `PurgeVRAM_UTK` —— 1/13 个有
+- `RH_Captioner` —— 1/13 个有
+- `ShowText` —— 1/13 个有
+- `WanVideoTeaCache` —— 1/13 个有
+- `easy seed` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 12 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 12 | 100% |
-| 采样算法 | 1 | 1 - 1 | 12 | 100% |
-| 调度器 | euler | - | 12 | 100% |
-| 重绘幅度 | normal | - | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，12 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，12 个样本，一致性 100%
-- 重绘幅度 最常用 normal，12 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

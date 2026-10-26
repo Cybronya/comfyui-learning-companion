@@ -3,38 +3,36 @@ name: unknown_workflow_generic_173
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.956091
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.980818
+common_nodes: [CR Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json, 音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json, 音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json, 音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json, 音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json, 音频生成/音频生成/Index TTS2 声音克隆_2070816843719331841.json, 音频生成/音频生成/Index TTS2 声音克隆工作流_2051515883343888385.json, 音频生成/音频生成/indexTTS2-有声书制作 多角色声音_2064251607080071169.json, 音频生成/音频生成/乱神版-Easy IndexTTS2情感控制（单人）_2073213371335405569.json, 音频生成/音频生成/乱神版-超好用Easy IndexTTS2无限组合版(双人)_1970148854437998593.json, 音频生成/音频生成/声音克隆超好用Easy IndexTTS2无限组合版(双人)_1970161118201212929.json]
+members: [图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json, 图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json, 图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json, 图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json, 图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json, 图片生成/图生图/最新Gimage2图生图 Image2-图生图官方版-支持网址参考_2059136745282818049.json, 图片生成/图生图/空白工作流_2064887415608795138.json, 图片生成/图生图/空白工作流_2088587498250399746.json, 图片生成/文生图/HPimage2_2080558711264862209.json, 图片生成/文生图/IMAGE-2海报直出 可以网址参考_2049010707542319105.json, 图片生成/文生图/全能图像G2 官方版【更稳 更高清】_2047879397851537409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_173
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json、音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json、音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json、音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json、音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json、图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json、图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json、图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json、图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `CR Text`
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `PreviewAudio` —— 6/11 个有
-- `easy indexTTSAudioMerge` —— 5/11 个有
-- `easy indexTTSEmotionVector` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 1/11 个有
+- `StringFunction|pysssss` —— 9/11 个有
+- `Label (rgthree)` —— 6/11 个有
+- `Note Plus (mtb)` —— 2/11 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/11 个有
 
 ## 典型参数
 

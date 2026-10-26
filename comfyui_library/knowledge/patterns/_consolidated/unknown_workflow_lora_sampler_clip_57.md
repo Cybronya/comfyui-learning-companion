@@ -1,64 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_57
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.835143
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, FramePackFindNearestBucket, FramePackLoraSelect, FramePackSingleFrameSampler, ImageResize+, JWInteger, LoadFramePackModel, LoadImage, SaveImage, VAEDecodeTiled, VAEEncode, VAELoader]
-problems: []
+frequency: 8
+level: strong
+coverage: 0.923125
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FramePack 人物动作编辑_1933859523817820161.json, 图片生成/图生图/FramePack 图生图｜动漫换背景_1935152830489796610.json, 图片生成/图生图/FramePack单图动作编辑_1945759748434305026.json, 图片生成/图生图/FramePack图像编辑-单帧动作编辑V1_1932773456045821954.json, 图片生成/图生图/FramePack图像编辑（人物一致性多图动作参考）V1_1932773473997787138.json, 图片生成/图生图/非常好用！FramePack图像编辑-单帧动作编辑_1933156434433744898.json, 视频生成/图生视频/动漫换背景打光-FramePack单帧图编辑_1935136983549157377.json]
+members: [图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json, 图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json, 图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079025904818409473.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079877016463171586.json, 图片生成/文生图/Z-image-base（如梦似幻+瑶光lora）文生图+高清放大_2063588760020930562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_57
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FramePack 人物动作编辑_1933859523817820161.json、图片生成/图生图/FramePack 图生图｜动漫换背景_1935152830489796610.json、图片生成/图生图/FramePack单图动作编辑_1945759748434305026.json、图片生成/图生图/FramePack图像编辑-单帧动作编辑V1_1932773456045821954.json、图片生成/图生图/FramePack图像编辑（人物一致性多图动作参考）V1_1932773473997787138.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json、图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json、图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FramePackFindNearestBucket`
-- `FramePackLoraSelect`
-- `FramePackSingleFrameSampler`
-- `ImageResize+`
-- `JWInteger`
-- `LoadFramePackModel`
-- `LoadImage`
+- `CR Text`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 6/7 个有
-- `ImageConcatMulti` —— 6/7 个有
-- `FramePackTorchCompileSettings` —— 5/7 个有
-- `GetNode` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `Image Rembg (Remove Background)` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `ChinesePrompt_Mix` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `LayerUtility: PurgeVRAM` —— 7/8 个有
+- `easy getNode` —— 7/8 个有
+- `easy setNode` —— 7/8 个有
+- `llama_cpp_instruct_adv` —— 7/8 个有
+- `llama_cpp_model_loader` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
+- `SeedVR2LoadDiTModel` —— 6/8 个有
+- `SeedVR2LoadVAEModel` —— 6/8 个有
+- `SeedVR2VideoUpscaler` —— 6/8 个有
+- `ModelSamplingAuraFlow` —— 5/8 个有
+- `ConditioningZeroOut` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 1 - 8 | 8 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | res_multistep | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 1 - 8，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（9/8 个样本）：Steps较低可能导致细节不足

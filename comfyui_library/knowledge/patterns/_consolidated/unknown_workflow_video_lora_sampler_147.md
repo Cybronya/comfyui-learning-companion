@@ -1,79 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_147
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.541
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetNode, GrowMask, INTConstant, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.606769
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, GetNode, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, SimpleCalculatorKJ, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_1969709240275378178.json, 视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json, 视频生成/图生视频/动作迁移_2017571137424723969.json, 视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2042478976223940610.json, 视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2042488839909937154.json, 视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2044301999423889409.json, 视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2047561888975822849.json, 视频生成/图生视频/多人镜头替换工具-MM_1970004050341208065.json, 视频生成/图生视频/最新WanAnimate之视频换装_1971421860208558082.json, 视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json, 视频生成/图生视频/角色替换+动作参考_2000210160024944641.json, 视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_1969435322595635201.json]
+members: [视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json, 视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json, 视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json, 视频生成/图生视频/SCAIL动作迁移 单人_多人统一版_2073307615077163010.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2011341601720766466.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2041436850325295106.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2042104629911101442.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2054250246871494658.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人多动物同时跳舞_2048599310039785473.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈_2049441031812288514.json, 视频生成/图生视频/萌宠跳舞（高清版）需要48gPlus运行_2013817943620067329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_147
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_1969709240275378178.json、视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json、视频生成/图生视频/动作迁移_2017571137424723969.json、视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2042478976223940610.json、视频生成/图生视频/图生视频----WanAnimate角色替换+动作参考_2042488839909937154.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json、视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json、视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BlockifyMask`
+全部 13 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
+- `DownloadAndLoadNLFModel`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
-- `INTConstant`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
 - `LoadImage`
-- `PixelPerfectResolution`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
 - `SetNode`
-- `VHS_LoadVideo`
+- `SimpleCalculatorKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadSAM2Model` —— 11/12 个有
-- `GetImageSizeAndCount` —— 11/12 个有
-- `ImageConcatMulti` —— 11/12 个有
-- `PointsEditor` —— 11/12 个有
-- `Sam2Segmentation` —— 11/12 个有
-- `WanVideoTorchCompileSettings` —— 11/12 个有
-- `WanVideoContextOptions` —— 10/12 个有
-- `WanVideoTextEncodeCached` —— 10/12 个有
-- `AudioCropProcessUTK` —— 6/12 个有
-- `GetImageRangeFromBatch` —— 6/12 个有
-- `PreviewImage` —— 6/12 个有
-- `CLIPLoader` —— 2/12 个有
-- `CLIPTextEncode` —— 2/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `GetImageSize` —— 2/12 个有
-- `WanVideoTextEmbedBridge` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `InspyrenetRembgAdvanced` —— 1/12 个有
-- `PreviewAnimation` —— 1/12 个有
-- `RIFEInterpolation` —— 1/12 个有
-- `UNETLoader` —— 1/12 个有
-- `UltimateSDUpscaleNoUpscale` —— 1/12 个有
-- `VAELoader` —— 1/12 个有
-- `easy int` —— 1/12 个有
+- `INTConstant` —— 12/13 个有
+- `ImageResizeKJv2` —— 12/13 个有
+- `VHS_LoadVideo` —— 12/13 个有
+- `WanVideoEncode` —— 12/13 个有
+- `WanVideoUni3C_ControlnetLoader` —— 12/13 个有
+- `WanVideoUni3C_embeds` —— 12/13 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 10/13 个有
+- `DWPreprocessor` —— 10/13 个有
+- `ImageConcatMulti` —— 10/13 个有
+- `WanVideoTorchCompileSettings` —— 9/13 个有
+- `FloatConstant` —— 8/13 个有
+- `JjkText` —— 7/13 个有
+- `Int` —— 4/13 个有
+- `RHHiddenNodes` —— 4/13 个有
+- `intToFloat _O` —— 3/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/13 个有
+- `AddLabel` —— 1/13 个有
+- `CR Prompt Text` —— 1/13 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/13 个有
+- `ImpactSwitch` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `PixelPerfectResolution` —— 1/13 个有
+- `RIFE VFI` —— 1/13 个有
+- `SDPoseOODLoader` —— 1/13 个有
+- `SDPoseOODProcessor` —— 1/13 个有
+- `TwoWaySwitch` —— 1/13 个有
+- `VHS_LoadVideoFFmpeg` —— 1/13 个有
+- `VHS_VideoInfo` —— 1/13 个有
+- `YOLOModelLoader` —— 1/13 个有
+- `easy imageSize` —— 1/13 个有
+- `easy int` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
+- `ttN text` —— 1/13 个有
 
 ## 典型参数
 

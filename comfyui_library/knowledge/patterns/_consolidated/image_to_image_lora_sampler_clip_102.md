@@ -3,54 +3,59 @@ name: image_to_image_lora_sampler_clip_102
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.88
-common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, CLIPTextEncode, ConditioningZeroOut, DF_Integer, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageToMask, KSampler, Label (rgthree), LoadImage, LoraLoaderModelOnly, RHHiddenNodes, ReferenceLatent, ResizeAndPadImage, ResizeImageMixlab, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.868333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/konetext溶图打光_2092564839024648194.json, 图片生成/图生图/konetext溶图打光_2096797295307223041.json, 图片生成/图生图/konetext溶图打光_2097139850179858433.json]
+members: [图片生成/图生图/万物皆可涂鸦_1965395252951531521.json, 图片生成/图生图/人物去除+衣服提取+透明背景_1945018713423929346.json, 图片生成/图生图/胶囊小人_1957037893517545474.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_102
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/konetext溶图打光_2092564839024648194.json、图片生成/图生图/konetext溶图打光_2096797295307223041.json、图片生成/图生图/konetext溶图打光_2097139850179858433.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/万物皆可涂鸦_1965395252951531521.json、图片生成/图生图/人物去除+衣服提取+透明背景_1945018713423929346.json、图片生成/图生图/胶囊小人_1957037893517545474.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bounded Image Crop`
-- `Bounded Image Crop with Mask`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DF_Integer`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `ImageToMask`
+- `FluxKontextImageScale`
 - `KSampler`
-- `Label (rgthree)`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
+- `PreviewImage`
 - `ReferenceLatent`
-- `ResizeAndPadImage`
-- `ResizeImageMixlab`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
+**可变部分**（部分 workflow 才有）：
+- `ImageResizeKJv2` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `ChinesePrompt_Mix` —— 1/3 个有
+- `Evaluate Strings` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `StringConcatenate` —— 1/3 个有
+
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
 | 调度器 | simple | - | 3 | 100% |
@@ -62,7 +67,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
 - 调度器 最常用 simple，3 个样本，一致性 100%

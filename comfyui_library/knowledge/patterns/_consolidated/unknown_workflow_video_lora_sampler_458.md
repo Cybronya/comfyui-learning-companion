@@ -1,77 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_458
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.51725
-common_nodes: [CLIPVisionLoader, DF_Int_to_Float, GetNode, ImageFromBatch, ImageResizeKJv2, LoadImage, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, SimpleMath+, Text, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy boolean, easy float, easy int]
+coverage: 0.8136
+common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, GetImageSizeAndCount, ImageBatch, ImageFromBatch, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchLoader, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json, 图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json, 视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json, 视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json]
+members: [数字人/数字人/03-10-11-WAN2.1-数字人-InfiniteTalk-官方循环无限时长-单人_2019197247455498241.json, 视频生成/图生视频/新Infinite Talk无限时长极速版数字人 无重复动作_2019270368963338242.json, 视频生成/图生视频/（官方版-循环）Infinite Talk动作列表无限时长加速版单人数字人V1_2018734533960540162.json, 视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1 林耀2.6_2019704865835982849.json, 视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1_2018749675796434945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_458
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json、图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json、视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json、视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/03-10-11-WAN2.1-数字人-InfiniteTalk-官方循环无限时长-单人_2019197247455498241.json、视频生成/图生视频/新Infinite Talk无限时长极速版数字人 无重复动作_2019270368963338242.json、视频生成/图生视频/（官方版-循环）Infinite Talk动作列表无限时长加速版单人数字人V1_2018734533960540162.json、视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1 林耀2.6_2019704865835982849.json、视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1_2018749675796434945.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DF_Int_to_Float`
-- `GetNode`
+全部 5 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `ConditioningZeroOut`
+- `GetImageSizeAndCount`
+- `ImageBatch`
 - `ImageFromBatch`
-- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `MemoryCleaner`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchLoader`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
 - `SimpleMath+`
-- `Text`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy float`
-- `easy int`
+- `WanInfiniteTalkToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BBoxYOLO` —— 3/4 个有
-- `BlockifyMask` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `DrawMaskOnImage` —— 3/4 个有
-- `LayerMask: MaskGrow` —— 3/4 个有
-- `SDPoseDrawKeypoints` —— 3/4 个有
-- `SDPoseKeypointExtractor` —— 3/4 个有
-- `YOLOModelLoader` —— 3/4 个有
-- `easy sam3ModelLoader` —— 3/4 个有
-- `easy sam3VideoSegmentation` —— 3/4 个有
-- `VHS_VideoInfoLoaded` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `DrawViTPose` —— 1/4 个有
-- `If ANY execute A else B` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `Masks Combine Regions` —— 1/4 个有
-- `RunningHub Deepcleaner` —— 1/4 个有
-- `easy compare` —— 1/4 个有
+- `JWFloat` —— 4/5 个有
+- `JWInteger` —— 4/5 个有
+- `TrimAudioDuration` —— 4/5 个有
+- `easy promptLine` —— 3/5 个有
+- `AudioConcat` —— 2/5 个有
+- `PreviewAudio` —— 2/5 个有
+- `ShowAnything|Mie` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `AudioSeparation` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `SetNode` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,34 +3,31 @@ name: unknown_workflow_generic_1596
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7225
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 0.8335
+common_nodes: [RH_RhartImageG3TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json, 音频生成/音频生成/山东职业学生作业1_2073979029476171777.json]
+members: [图片生成/文生图/G3_TextToImage_v3.0_2033739292979236866.json, 图片生成/文生图/文生图1r_次 3_text_to_image+全节点注释_2059599731541762050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1596
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json、音频生成/音频生成/山东职业学生作业1_2073979029476171777.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/G3_TextToImage_v3.0_2033739292979236866.json、图片生成/文生图/文生图1r_次 3_text_to_image+全节点注释_2059599731541762050.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG3TextToImage`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `easy string` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

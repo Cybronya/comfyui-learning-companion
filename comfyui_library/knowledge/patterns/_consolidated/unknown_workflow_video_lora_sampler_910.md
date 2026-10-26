@@ -3,67 +3,62 @@ name: unknown_workflow_video_lora_sampler_910
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8375
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
+coverage: 0.5585
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/🍣视频转绘DITTO_--转你所想-无限时长版🍣_1981043696474931201.json, 视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json]
+members: [视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json, 视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_910
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🍣视频转绘DITTO_--转你所想-无限时长版🍣_1981043696474931201.json、视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json、视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
 - `SetNode`
-- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Int` —— 1/2 个有
+- `DrawViTPose` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
 - `JWInteger` —— 1/2 个有
-- `VHS_BatchManager` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `PoseAndFaceDetection` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
+- `WanVideoUni3C_embeds` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

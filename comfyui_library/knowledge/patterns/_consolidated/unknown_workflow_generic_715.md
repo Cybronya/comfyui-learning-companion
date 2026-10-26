@@ -3,38 +3,34 @@ name: unknown_workflow_generic_715
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.73225
-common_nodes: [LoadImage, MuyeTextEditOutput, PreviewImage, SaveImage]
+coverage: 0.87475
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LoadImage, SaveImage, preview_mask]
 problems: []
 missing: []
-members: [图片生成/图生图/谷歌全能图片V2高清修复放大流_2045135553544331266.json, 图片生成/图生图/贝尼尼_2037015094328041473.json, 图片生成/文生图/谷歌全能图片PRO+V2基础流_2055569187824775170.json, 视频生成/图生视频/全能pro视频封面制作-自用_2073312946041737218.json]
+members: [图片生成/图生图/RMBG一键抠图_2057714410445164545.json, 图片生成/图生图/RMBG一键抠图_2079022658536173569.json, 图片生成/图生图/RMBG一键抠图_2079402674667216898.json, 图片生成/图生图/RMBG抠图_2108788082693730305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_715
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/谷歌全能图片V2高清修复放大流_2045135553544331266.json、图片生成/图生图/贝尼尼_2037015094328041473.json、图片生成/文生图/谷歌全能图片PRO+V2基础流_2055569187824775170.json、视频生成/图生视频/全能pro视频封面制作-自用_2073312946041737218.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG一键抠图_2057714410445164545.json、图片生成/图生图/RMBG一键抠图_2079022658536173569.json、图片生成/图生图/RMBG一键抠图_2079402674667216898.json、图片生成/图生图/RMBG抠图_2108788082693730305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `PreviewImage`
 - `SaveImage`
+- `preview_mask`
 
 **可变部分**（部分 workflow 才有）：
-- `PlaySound|pysssss` —— 3/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 

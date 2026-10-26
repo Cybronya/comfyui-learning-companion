@@ -3,37 +3,39 @@ name: unknown_workflow_video_116
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.577
-common_nodes: [CR Text, DepthCrafter, DownloadAndLoadDepthCrafterModel, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.526
+common_nodes: [Anything Everywhere, DownloadAndLoadFlorence2Model, Florence2Run, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, RunningHub_FramePack, Seed Everywhere, SetNode, StringFunction|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频转深度视频素材+全节点注释_2082953986570809346.json, 视频生成/图生视频/视频转深度视频素材_2101558965585932289.json]
+members: [视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json, 视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_116
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频转深度视频素材+全节点注释_2082953986570809346.json、视频生成/图生视频/视频转深度视频素材_2101558965585932289.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json、视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `DepthCrafter`
-- `DownloadAndLoadDepthCrafterModel`
-- `VHS_LoadVideo`
+- `Anything Everywhere`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `GetNode`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `RunningHub_FramePack`
+- `Seed Everywhere`
+- `SetNode`
+- `StringFunction|pysssss`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-
-**可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

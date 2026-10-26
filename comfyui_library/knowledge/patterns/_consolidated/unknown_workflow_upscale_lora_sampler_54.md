@@ -1,84 +1,73 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_54
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.841667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Latent Batch Size, CR Text, CR Text Concatenate, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleBy, ImageUpscaleWithModel, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, MathExpression|pysssss, PrimitiveBoolean, RH_Captioner, RH_Prompter, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy float, easy ifElse, easy imageBatchToImageList, easy imageSize, easy int]
-problems: []
+coverage: 0.938
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, Fast Groups Muter (rgthree), Int, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusPro_lrzjason, UNETLoader, VAEDecode, VAELoader, WujiCleaner, easy imageBatchToImageList, easy imageListToImageBatch, easy promptList]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951155305814142977.json, 图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951568183708864514.json, 图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1961386334780854273.json]
+members: [图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2010525975804645378.json, 图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2010546950952718337.json, 图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2018175265825890306.json, 图片生成/图生图/美女模特分镜出图 一致性多角度 不同视角_2017480683370844161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_54
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951155305814142977.json、图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951568183708864514.json、图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1961386334780854273.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2010525975804645378.json、图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2010546950952718337.json、图片生成/图生图/图像多角度编辑Qwen-Edit-2511_2509二合一_2018175265825890306.json、图片生成/图生图/美女模特分镜出图 一致性多角度 不同视角_2017480683370844161.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CR Latent Batch Size`
-- `CR Text`
-- `CR Text Concatenate`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGNorm`
+- `CLIPLoader`
+- `Fast Groups Muter (rgthree)`
 - `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler`
 - `LoadImage`
-- `LoraLoader`
-- `MathExpression|pysssss`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `RH_Prompter`
-- `RH_Translator`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `Text Multiline`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusPro_lrzjason`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy float`
-- `easy ifElse`
+- `WujiCleaner`
 - `easy imageBatchToImageList`
-- `easy imageSize`
-- `easy int`
+- `easy imageListToImageBatch`
+- `easy promptList`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.6 | 0.6 - 0.6 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 0.6，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

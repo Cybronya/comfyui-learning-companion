@@ -3,37 +3,32 @@ name: unknown_workflow_generic_1737
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.926
-common_nodes: [AdjustAudio, AudioCombine, AudioConcatenate, AudioSeparation, LoadAudio, PrimitiveInt, SaveAudio, SeedVCRun]
+coverage: 1
+common_nodes: [CR Prompt Text, CR Text, JWInteger, RunningHubHeliosModelLoader, RunningHubHeliosT2V, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/歌曲音色克隆_1934522698573774849.json, 音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json]
+members: [视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json, 视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1737
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/歌曲音色克隆_1934522698573774849.json、音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json、视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdjustAudio`
-- `AudioCombine`
-- `AudioConcatenate`
-- `AudioSeparation`
-- `LoadAudio`
-- `PrimitiveInt`
-- `SaveAudio`
-- `SeedVCRun`
-
-**可变部分**（部分 workflow 才有）：
-- `TrimAudio` —— 1/2 个有
+- `CR Prompt Text`
+- `CR Text`
+- `JWInteger`
+- `RunningHubHeliosModelLoader`
+- `RunningHubHeliosT2V`
+- `SaveVideo`
 
 ## 典型参数
 

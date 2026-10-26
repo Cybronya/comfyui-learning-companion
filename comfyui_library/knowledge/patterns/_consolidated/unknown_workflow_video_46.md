@@ -1,38 +1,44 @@
 ---
 name: unknown_workflow_video_46
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [ImageScaleToTotalPixels, LoadImage, Note Plus (mtb), SaveImage, VHS_VideoCombine, workflow>参数设置, workflow>面部参考]
+coverage: 0.85325
+common_nodes: [Int, Int To Bool (mtb), LoadImage, RH_Captioner, RunningHub_FramePack, ShowText|pysssss, Textbox, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, easy textSwitch]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json, 图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json, 图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json]
+members: [视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json, 视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json, 视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json, 视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_46
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json、图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json、图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json、视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json、视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json、视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
+全部 4 个 workflow 都包含：
+- `Int`
+- `Int To Bool (mtb)`
 - `LoadImage`
-- `Note Plus (mtb)`
-- `SaveImage`
+- `RH_Captioner`
+- `RunningHub_FramePack`
+- `ShowText|pysssss`
+- `Textbox`
 - `VHS_VideoCombine`
-- `workflow>参数设置`
-- `workflow>面部参考`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>过度动画` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
 
 ## 典型参数
 

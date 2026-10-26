@@ -1,34 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_68
 type: Image To Image
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.859857
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.980333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, RH_Translator, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/万物溶图打光_Kontext_1993326331377156097.json, 图片生成/图生图/产品精修-金属类_1951522356852371458.json, 图片生成/图生图/图片快速去水印、高清放大工作流_2086265837211701250.json, 图片生成/图生图/图片快速去水印、高清放大工作流_2086272119310209025.json, 图片生成/图生图/大饼-Kontext 双肩包精修V1_2032361944446935042.json, 图片生成/图生图/服装提取器-言灵ru_1993295371319312385.json, 图片生成/图生图/模特图转实拍图3d图，修图磨面料高清2k_2016007638638661634.json]
+members: [图片生成/图生图/Flux Kontext Dev三图编辑_1940692934268448770.json, 图片生成/图生图/Flux Kontext Dev光线变换+放大_1939254602929774593.json, 图片生成/图生图/Flux Kontext Dev单图风格转绘及放大修复_1938565629152518145.json, 图片生成/图生图/Flux Kontext Dev卡通变真人加速版+放大（单图）_1939950003525689345.json, 图片生成/图生图/Flux Kontext Dev双图风格参考迁移+放大_1938914168588455937.json, 图片生成/图生图/Flux Kontext Dev双图风格参考迁移及放大修复_1938567521966415873.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_68
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/万物溶图打光_Kontext_1993326331377156097.json、图片生成/图生图/产品精修-金属类_1951522356852371458.json、图片生成/图生图/图片快速去水印、高清放大工作流_2086265837211701250.json、图片生成/图生图/图片快速去水印、高清放大工作流_2086272119310209025.json、图片生成/图生图/大饼-Kontext 双肩包精修V1_2032361944446935042.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Dev三图编辑_1940692934268448770.json、图片生成/图生图/Flux Kontext Dev光线变换+放大_1939254602929774593.json、图片生成/图生图/Flux Kontext Dev单图风格转绘及放大修复_1938565629152518145.json、图片生成/图生图/Flux Kontext Dev卡通变真人加速版+放大（单图）_1939950003525689345.json、图片生成/图生图/Flux Kontext Dev双图风格参考迁移+放大_1938914168588455937.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
+- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -37,45 +38,44 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/7 个有
-- `FluxKontextImageScale` —— 6/7 个有
-- `ImageUpscaleWithModel` —— 6/7 个有
-- `UpscaleModelLoader` —— 6/7 个有
-- `CR Latent Batch Size` —— 3/7 个有
-- `LoraLoader` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `CR Latent Input Switch` —— 2/7 个有
-- `EmptySD3LatentImage` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `ConstrainImage|pysssss` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/7 个有
-- `LayerMask: LoadBiRefNetModel` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `FluxKontextImageScale` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `PMRF` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `ImageStitch` —— 4/6 个有
+- `ShowText|pysssss` —— 2/6 个有
+- `CR Text Concatenate` —— 1/6 个有
+- `DF_Get_image_size` —— 1/6 个有
+- `ImageCrop+` —— 1/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `NunchakuFluxDiTLoader` —— 1/6 个有
+- `NunchakuFluxLoraLoader` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `TextInputBasic` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| 采样步数 | 20 | 20 - 25 | 7 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 20 | 8 - 20 | 6 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 25，7 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

@@ -1,38 +1,33 @@
 ---
 name: unknown_workflow_generic_386
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.667
-common_nodes: [LoadImage, PreviewAny, PrimitiveStringMultiline, SaveText]
+coverage: 0.928571
+common_nodes: [RH_YouchuanTextToImageV7, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_anthropic_claude_fable5.json, comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json, comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json, comfyui-workflow-templates-json/api_openai_gpt6_astra.json]
+members: [图片生成/图生图/悠船图生图V7_2080582721025433602.json, 图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json, 图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json, 图片生成/文生图/mj_min_04_neon_shake_ad_v7_2038878034027089921.json, 图片生成/文生图/悠船文生图-v7_2080614372568817665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_386
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/api_anthropic_claude_fable5.json、comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json、comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/悠船图生图V7_2080582721025433602.json、图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json、图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveText`
+全部 7 个 workflow 都包含：
+- `RH_YouchuanTextToImageV7`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ClaudeNode` —— 5/6 个有
-- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 4/6 个有
-- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 2/6 个有
-- `OpenAIChatNode` —— 1/6 个有
+- `LoadImage` —— 1/7 个有
 
 ## 典型参数
 

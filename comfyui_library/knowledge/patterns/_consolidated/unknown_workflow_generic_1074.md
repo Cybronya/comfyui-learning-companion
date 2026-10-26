@@ -3,39 +3,32 @@ name: unknown_workflow_generic_1074
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.946
-common_nodes: [AudioCrop, AudioSeparation, LoadAudio, PreviewAudio, SaveAudio, SaveAudioMP3, SparkTTS_AudioRecorder, SparkTTS_VoiceCreator, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 0.916667
+common_nodes: [CR Text, RH_RhartImageG25FlareTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json]
+members: [图片生成/文生图/RH全能图片G2.5文生图低价版_2049294338563248129.json, 图片生成/文生图/全能图像image2.5文生图_2097966221957361666.json, 图片生成/文生图/全能图片image2.5文生图_2099723409528811521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1074
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/RH全能图片G2.5文生图低价版_2049294338563248129.json、图片生成/文生图/全能图像image2.5文生图_2097966221957361666.json、图片生成/文生图/全能图片image2.5文生图_2099723409528811521.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `SparkTTS_AudioRecorder`
-- `SparkTTS_VoiceCreator`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+- `CR Text`
+- `RH_RhartImageG25FlareTextToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RHSettingsNode` —— 1/3 个有
 
 ## 典型参数
 

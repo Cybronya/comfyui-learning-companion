@@ -3,36 +3,37 @@ name: unknown_workflow_generic_807
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.97225
-common_nodes: [CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.81375
+common_nodes: [AuKGenerateEdit_Doc, AuKLlamaCppSettings_Doc, AuKModelsLoader_Doc, LoadAudio, PreviewAudio, SaveAudioAdvanced, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json, 音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json, 音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json]
+members: [图片生成/文生图/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2101869850456051714.json, 音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_807
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json、音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json、音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json、音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2101869850456051714.json、音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+- `AuKGenerateEdit_Doc`
+- `AuKLlamaCppSettings_Doc`
+- `AuKModelsLoader_Doc`
 - `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `MuyeLoadImage` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

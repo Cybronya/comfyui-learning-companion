@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_video_lora_sampler_86
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.954824
-common_nodes: [INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.887944
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频-植物生长蔓延-kijai版工作流_1959544112867389442.json, 视频生成/图生视频/Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角度v1.2_2005434183445086209.json, 视频生成/图生视频/Wan2.2超级首尾帧KJ版_1952197474423353346.json, 视频生成/图生视频/Wan2.2首尾帧KJ版_1952270588733804545.json, 视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2040755258175004674.json, 视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2044660138820247554.json, 视频生成/图生视频/Wan2.2首尾帧图视频720超清版加速出视频_1950913701371117569.json, 视频生成/图生视频/wan2.2图生视频-标准版-(必收藏)_2059069738726285313.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2042949137406103554.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2043184542202208257.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2044662528826941441.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2075046170388422658.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2047121992129712129.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048604067320045570.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048924949674463234.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2072871692606726146.json]
+members: [视频生成/图生视频/Wan2.2极速图生视频_1993142430524440578.json, 视频生成/图生视频/Wan2.2极速图生视频_1994312738337914882.json, 视频生成/图生视频/Wan2.2极速图生视频_1996499644534366210.json, 视频生成/图生视频/Wan2.2极速图生视频_2011412752325152769.json, 视频生成/图生视频/Wan2.2极速图生视频_2012112616382009345.json, 视频生成/图生视频/一键花瓣消散_1967820040437399554.json, 视频生成/图生视频/产品360度旋转展示工作流_2053672042368643074.json, 视频生成/图生视频/产品360度旋转展示电商工作流_2055116157123874818.json, 视频生成/图生视频/产品360度旋转展示电商工作流_2104518822836396034.json, 视频生成/图生视频/产品360度旋转展示电商工作流_2104568082445455362.json, 视频生成/图生视频/产品360度旋转工作流_2002715305803673601.json, 视频生成/图生视频/产品360度旋转工作流_2051581112060792834.json, 视频生成/图生视频/产品360度旋转工作流_2089693661624889346.json, 视频生成/图生视频/图生视频-Wan2.2（优化版）_1961871235888168961.json, 视频生成/图生视频/工作流视频篇2-Wan2.2图生视频创作_2018213623105064961.json, 视频生成/图生视频/首尾帧-图生视频-Wan2.2_1962385933666488322.json, 视频生成/文生视频/API - Wan2.2 文生视频_2066912966418722817.json, 视频生成/文生视频/【超清版】WAN2.2--图生视频（超清极速版）_1973229498395136001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_86
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频-植物生长蔓延-kijai版工作流_1959544112867389442.json、视频生成/图生视频/Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角度v1.2_2005434183445086209.json、视频生成/图生视频/Wan2.2超级首尾帧KJ版_1952197474423353346.json、视频生成/图生视频/Wan2.2首尾帧KJ版_1952270588733804545.json、视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2040755258175004674.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan2.2极速图生视频_1993142430524440578.json、视频生成/图生视频/Wan2.2极速图生视频_1994312738337914882.json、视频生成/图生视频/Wan2.2极速图生视频_1996499644534366210.json、视频生成/图生视频/Wan2.2极速图生视频_2011412752325152769.json、视频生成/图生视频/Wan2.2极速图生视频_2012112616382009345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `INTConstant`
-- `LoadImage`
+全部 18 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -39,24 +36,26 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 16/17 个有
-- `ImageResizeKJv2` —— 16/17 个有
-- `WanVideoTorchCompileSettings` —— 16/17 个有
-- `easy cleanGpuUsed` —— 12/17 个有
-- `Int` —— 11/17 个有
-- `MathExpression|pysssss` —— 11/17 个有
-- `easy clearCacheAll` —— 11/17 个有
-- `CR Text` —— 10/17 个有
-- `PrimitiveFloat` —— 10/17 个有
-- `LayerUtility: PurgeVRAM` —— 9/17 个有
-- `GetImageSizeAndCount` —— 6/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/17 个有
-- `easy seed` —— 2/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/17 个有
-- `PrimitiveString` —— 1/17 个有
-- `ShowText|pysssss` —— 1/17 个有
-- `easy promptReplace` —— 1/17 个有
-- `ttN text` —— 1/17 个有
+- `DF_Integer` —— 17/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 17/18 个有
+- `LoadImage` —— 17/18 个有
+- `SimpleMath+` —— 17/18 个有
+- `WanVideoImageToVideoEncode` —— 17/18 个有
+- `GetImageSizeAndCount` —— 16/18 个有
+- `JWInteger` —— 16/18 个有
+- `WanVideoLoraSelectMulti` —— 12/18 个有
+- `ImageUpscaleWithModel` —— 11/18 个有
+- `UpscaleModelLoader` —— 11/18 个有
+- `JjkText` —— 9/18 个有
+- `WanVideoLoraSelect` —— 5/18 个有
+- `INTConstant` —— 4/18 个有
+- `MathExpression|pysssss` —— 3/18 个有
+- `easy int` —— 3/18 个有
+- `Anything Everywhere` —— 2/18 个有
+- `WanVideoTorchCompileSettings` —— 2/18 个有
+- `RHHiddenNodes` —— 1/18 个有
+- `Text _O` —— 1/18 个有
+- `WanVideoEmptyEmbeds` —— 1/18 个有
 
 ## 典型参数
 

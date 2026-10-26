@@ -2,96 +2,73 @@
 name: unknown_workflow_lora_sampler_unet_221
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.587
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyLatentImage, FluxKontextImageScale, FluxResolutionNode, GetNode, Image Comparer (rgthree), ImpactSwitch, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveInt, RH_LLMAPI_NODE, SaveImage, SetNode, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.849333
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/千问Edit2511单图编辑-可加遮罩_2005168324533252097.json, 图片生成/图生图/千问Edit2511单图编辑_2003659663717638145.json, 图片生成/图生图/千问Edit2511图像编辑-旧照片修复_2003709054725857281.json]
+members: [图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json, 图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json, 图片生成/图生图/单图强一致性编辑_2078743919415873537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_221
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问Edit2511单图编辑-可加遮罩_2005168324533252097.json、图片生成/图生图/千问Edit2511单图编辑_2003659663717638145.json、图片生成/图生图/千问Edit2511图像编辑-旧照片修复_2003709054725857281.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json、图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json、图片生成/图生图/单图强一致性编辑_2078743919415873537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：59%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `FluxKontextImageScale`
-- `FluxResolutionNode`
-- `GetNode`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
 - `Image Comparer (rgthree)`
-- `ImpactSwitch`
-- `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Get Image Size` —— 2/3 个有
-- `ImageComposite+` —— 2/3 个有
-- `ImageCrop+` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `Is Mask Empty JK` —— 1/3 个有
-- `MaxNode` —— 1/3 个有
-- `QwenEditConfigPreparer` —— 1/3 个有
-- `ResizeMask` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 1/3 个有
-- `TextInputBasic` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
-- `workflow>面部修复` —— 1/3 个有
+- `AdaptiveLongestEdge_EditUtils` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `CR Value` —— 1/3 个有
+- `GrowMask` —— 1/3 个有
+- `ImpactConditionalBranch` —— 1/3 个有
+- `InpaintCrop` —— 1/3 个有
+- `InpaintStitch` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/3 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/3 个有
+- `MaskPreview+` —— 1/3 个有
+- `easy boolean` —— 1/3 个有
+- `easy imageColorMatch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

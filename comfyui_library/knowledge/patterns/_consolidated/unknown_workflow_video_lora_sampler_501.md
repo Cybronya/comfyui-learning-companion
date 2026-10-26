@@ -1,64 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_501
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.92125
-common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9174
+common_nodes: [CR SDXL Aspect Ratio, CR Text, Fast Groups Bypasser (rgthree), ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json, 视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json, 视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json, 视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json]
+members: [视频生成/图生视频/Wan2.2运镜控制(KJ)_1957349808384176130.json, 视频生成/图生视频/Wan2.2长视频生成(KJ)15秒以上_1957714010304249858.json, 视频生成/图生视频/Wan2.2长视频生成20秒以上_1970311632809304066.json, 视频生成/图生视频/Wan2.2长视频生成_1969679472318443521.json, 视频生成/图生视频/一键生成飞行长视频(30秒以上)_1960259311396139009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_501
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json、视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json、视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json、视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2运镜控制(KJ)_1957349808384176130.json、视频生成/图生视频/Wan2.2长视频生成(KJ)15秒以上_1957714010304249858.json、视频生成/图生视频/Wan2.2长视频生成20秒以上_1970311632809304066.json、视频生成/图生视频/Wan2.2长视频生成_1969679472318443521.json、视频生成/图生视频/一键生成飞行长视频(30秒以上)_1960259311396139009.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
+全部 5 个 workflow 都包含：
+- `CR SDXL Aspect Ratio`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
 - `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `PrimitiveInt`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `Qwen3_VQA` —— 1/4 个有
-- `WanVideoContextOptions` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `CLIPVisionLoader` —— 4/5 个有
+- `DF_Int_to_Float` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `ImageBatch` —— 4/5 个有
+- `ImageFromBatch+` —— 4/5 个有
+- `LoadAudio` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `RH_Translator` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `WanVideoClipVisionEncode` —— 4/5 个有
+- `WanVideoLoraSelectMulti` —— 4/5 个有
+- `ADE_CameraPoseBasic` —— 1/5 个有
+- `WanVideoFunCameraEmbeds` —— 1/5 个有
 
 ## 典型参数
 

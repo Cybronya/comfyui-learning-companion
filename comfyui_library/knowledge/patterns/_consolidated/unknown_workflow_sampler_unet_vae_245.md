@@ -3,58 +3,74 @@ name: unknown_workflow_sampler_unet_vae_245
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.83875
-common_nodes: [CLIPLoader, EmptyLatentImage, KSamplerSelect, ManualSigmas, ResolutionSelector, SamplerCustom, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+coverage: 0.79475
+common_nodes: [BlockifyMask, CLIPLoader, CropFace, DWPreprocessor, ImageColorMatch+, ImageScaleToTotalPixelsX, KSampler, LayerMask: MaskGrow, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LoadImage, MaskPreview, PainterFluxImageEdit, PreviewImage, RepeatLatentBatch, SAM3Segment, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, easy positive]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen image 2.1 turbo文生图 画质优化LoRA_2112091031368978433.json, 图片生成/文生图/Qwen image 2.1 turbo文生图_2109555458041270273.json, 图片生成/文生图/Qwen_Image_2.1_Turbo_官方8步_文生图_2109357397138567170.json, 图片生成/文生图/qwen image 2.1 rurbo 文生图_2072128381491171330.json]
+members: [图片生成/图生图/flux2klein指定人物替换指定姿势一致_2055459139777777665.json, 图片生成/图生图/flux2klein指定人物替换指定姿势一致_2059557503633027074.json, 图片生成/图生图/flux2klein指定人物替换指定姿势一致_2060391124791021569.json, 图片生成/图生图/flux2klein指定人物替换指定姿势一致_2064564763140648962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_245
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1 turbo文生图 画质优化LoRA_2112091031368978433.json、图片生成/文生图/Qwen image 2.1 turbo文生图_2109555458041270273.json、图片生成/文生图/Qwen_Image_2.1_Turbo_官方8步_文生图_2109357397138567170.json、图片生成/文生图/qwen image 2.1 rurbo 文生图_2072128381491171330.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux2klein指定人物替换指定姿势一致_2055459139777777665.json、图片生成/图生图/flux2klein指定人物替换指定姿势一致_2059557503633027074.json、图片生成/图生图/flux2klein指定人物替换指定姿势一致_2060391124791021569.json、图片生成/图生图/flux2klein指定人物替换指定姿势一致_2064564763140648962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `ManualSigmas`
-- `ResolutionSelector`
-- `SamplerCustom`
+- `CropFace`
+- `DWPreprocessor`
+- `ImageColorMatch+`
+- `ImageScaleToTotalPixelsX`
+- `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
+- `LoadImage`
+- `MaskPreview`
+- `PainterFluxImageEdit`
+- `PreviewImage`
+- `RepeatLatentBatch`
+- `SAM3Segment`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `TextGenerateLTX2Prompt` —— 3/4 个有
-- `SaveImageAdvanced` —— 2/4 个有
-- `JjkText` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

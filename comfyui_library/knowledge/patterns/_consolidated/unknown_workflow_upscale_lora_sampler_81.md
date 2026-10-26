@@ -1,77 +1,79 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_81
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.878
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch]
+frequency: 3
+level: moderate
+coverage: 0.687333
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSize+, ImageResize+, ImageScaleBy, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2+seedvr2高清放大_2043915810573389825.json, 图片生成/图生图/flux2klein 4K高清放大_2041033443819130881.json]
+members: [图片生成/文生图/Z-image D-OPSD文生图+高清修复_2059661332814852097.json, 图片生成/文生图/z-image BEYOND超越真实   文生图细节增强 噪声返回2次采样+seedvr2分块放大_2006269781057478658.json, 图片生成/文生图/zimage高级文生图，三阶段采样，带seedvr2+ttp放大，效果可达到商用级别_2004212112182439937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_81
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2+seedvr2高清放大_2043915810573389825.json、图片生成/图生图/flux2klein 4K高清放大_2041033443819130881.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image D-OPSD文生图+高清修复_2059661332814852097.json、图片生成/文生图/z-image BEYOND超越真实   文生图细节增强 噪声返回2次采样+seedvr2分块放大_2006269781057478658.json、图片生成/文生图/zimage高级文生图，三阶段采样，带seedvr2+ttp放大，效果可达到商用级别_2004212112182439937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `GetImageSize+`
+- `ImageResize+`
+- `ImageScaleBy`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageColorMatch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Set Value On Boolean` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `ImageBlur` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `easy compare` —— 1/2 个有
-- `easy getNode` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `EmptyLatentImage` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `KOOK_ImageCompression` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `CR SDXL Aspect Ratio` —— 1/3 个有
+- `Image to Noise` —— 1/3 个有
+- `ImageCASharpening+` —— 1/3 个有
+- `LatentBlend` —— 1/3 个有
+- `LatentColorMatch` —— 1/3 个有
+- `LayerColor: Brightness & Contrast` —— 1/3 个有
+- `MemoryCleaner` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 10 | 8 - 15 | 3 | 73% |
+| 采样算法 | 1 | 1 - 2 | 3 | 65% |
+| 调度器 | euler | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 67% |
+| 宽度 | 992 | - | 2 | 97% |
+| 高度 | 1480 | - | 2 | 86% |
 
 ## 常见问题
 
@@ -79,4 +81,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 15，3 个样本
+- 采样算法 中位数 1，观测区间 1 - 2，3 个样本
+- 调度器 最常用 euler，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 宽度 中位数 992，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
+- 高度 中位数 1480，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

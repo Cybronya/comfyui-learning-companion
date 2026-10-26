@@ -3,36 +3,32 @@ name: unknown_workflow_generic_1060
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.568333
-common_nodes: [PreviewAny, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.0 Fast 全素材+ID工作流_2059887943552167937.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Fast_2041707454861414402.json, 视频生成/文生视频/资产ID流 Seedance2.0 Fast_2059831058182524929.json]
+members: [图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json, 图片生成/文生图/全能图片2_2063784932719284225.json, 数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1060
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Fast 全素材+ID工作流_2059887943552167937.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Fast_2041707454861414402.json、视频生成/文生视频/资产ID流 Seedance2.0 Fast_2059831058182524929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json、图片生成/文生图/全能图片2_2063784932719284225.json、数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `PreviewAny`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveVideo`
+- `LoadImage`
+- `RH_RhartImageNG31FlashImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `LoadVideo` —— 2/3 个有
-- `RH_SparkVideoAssetIdsMerge` —— 2/3 个有
+- `KepStringLiteral` —— 1/3 个有
 
 ## 典型参数
 

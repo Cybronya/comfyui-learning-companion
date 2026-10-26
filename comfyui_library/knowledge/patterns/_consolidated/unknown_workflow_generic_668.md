@@ -3,33 +3,37 @@ name: unknown_workflow_generic_668
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [InspyrenetRembg, LoadImage, SaveImage]
+coverage: 0.712
+common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json, 图片生成/图生图/一键抠图_2026831606878572545.json, 图片生成/图生图/一键抠图_2070166368229609474.json, 图片生成/图生图/快速抠像_2052668485251149826.json]
+members: [comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json, comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_668
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json、图片生成/图生图/一键抠图_2026831606878572545.json、图片生成/图生图/一键抠图_2070166368229609474.json、图片生成/图生图/快速抠像_2052668485251149826.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json、comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `InspyrenetRembg`
+- `ImageCompare`
 - `LoadImage`
-- `SaveImage`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageCombineAlpha` —— 2/4 个有
-- `preview_mask` —— 1/4 个有
+- `CreateBoundingBoxes` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `BuildJsonPromptIdeogram` —— 2/4 个有
+- `Flux3ImageNode` —— 2/4 个有
+- `IdeogramEditApi` —— 1/4 个有
+- `IdeogramPreciseEditApi` —— 1/4 个有
 
 ## 典型参数
 

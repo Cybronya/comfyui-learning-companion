@@ -1,79 +1,82 @@
 ---
 name: text_to_image_lora_sampler_clip_254
 type: Text To Image
-frequency: 7
-level: moderate
-coverage: 0.928143
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.903125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FireRed_Edit图像编辑与扩图重绘_2026977014363721729.json, 图片生成/图生图/fireRed_edit_workflow_2025984865023299586.json, 图片生成/图生图/fireRed_edit_workflow_2029377409757224961.json, 图片生成/图生图/qwen_image_edit_2509动作姿势参考_1971944011525189634.json, 图片生成/图生图/qwen_image_edit_2509封面文字包装专用_1971771856065851394.json, 图片生成/图生图/qwen_image_edit_2509封面文字包装专用_1979943851597139969.json, 图片生成/图生图/qwen_image_edit_2509编辑图像对齐解决版_1970873027892256769.json]
+members: [图片生成/图生图/Qwen Image 2512商业商品摄影Lora 单品棚拍电商主图生成_2098659266436616193.json, 图片生成/图生图/Qwen image 2.1角色表生成 角色设定图生图处理工具_2113695669427982338.json, 图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2104686784390197250.json, 图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2105067914251554817.json, 图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2105446415681024002.json, 图片生成/图生图/Qwen-image2.1人像多角度生成｜图生图一套多机位素材_2104545126759620610.json, 图片生成/图生图/Qwen-image2.1最佳换头换脸｜图生图精准换脸不崩脸_2104521060145258498.json, 图片生成/图生图/qwen image 2.1角色表生成｜角色设定图批量产出参考模板_2113500742152708097.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_254
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FireRed_Edit图像编辑与扩图重绘_2026977014363721729.json、图片生成/图生图/fireRed_edit_workflow_2025984865023299586.json、图片生成/图生图/fireRed_edit_workflow_2029377409757224961.json、图片生成/图生图/qwen_image_edit_2509动作姿势参考_1971944011525189634.json、图片生成/图生图/qwen_image_edit_2509封面文字包装专用_1971771856065851394.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2512商业商品摄影Lora 单品棚拍电商主图生成_2098659266436616193.json、图片生成/图生图/Qwen image 2.1角色表生成 角色设定图生图处理工具_2113695669427982338.json、图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2104686784390197250.json、图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2105067914251554817.json、图片生成/图生图/Qwen image2.1人像多角度生成 同一角色多姿态批量出图_2105446415681024002.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `GetImageSize`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 4/7 个有
-- `FluxKontextImageScale` —— 4/7 个有
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `ImageScaleToTotalPixels` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RH_LLMAPI_NODE` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `DrawMaskOnImage` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `ImagePadForOutpaint` —— 1/7 个有
-- `easy imageConcat` —— 1/7 个有
+- `LoadImage` —— 7/8 个有
+- `TextEncodeQwenImage21` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `QwenMultiangleCameraNode` —— 4/8 个有
+- `easy promptList` —— 4/8 个有
+- `easy showAnything` —— 4/8 个有
+- `QwenImage21Cache` —— 2/8 个有
+- `easy promptLine` —— 2/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `EmptySD3LatentImage` —— 1/8 个有
+- `LoraLoader` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 7 | 55% |
-| Prompt 约束强度(CFG) | 1.5 | 1 - 1.5 | 7 | 81% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1920 | 720 - 1920 | 7 | 58% |
-| 高度 | 1080 | 1080 - 1280 | 7 | 92% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，7 个样本
-- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 1.5，7 个样本，取值集中（一致性 81%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1920，观测区间 720 - 1920，7 个样本
-- 高度 中位数 1080，观测区间 1080 - 1280，7 个样本，取值集中（一致性 92%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高发问题（11/8 个样本）：Steps较低可能导致细节不足

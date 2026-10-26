@@ -3,43 +3,42 @@ name: unknown_workflow_video_sampler_checkpoint_13
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9275
-common_nodes: [Audio Duration (mtb), AudioCombine, AudioCrop, AudioSeparation, ImageOnlyCheckpointLoader, ImageScaleDownToSize, LoadAudio, LoadImage, MathExpression|pysssss, Primitive string [Crystools], SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SeedVCRun, VHS_VideoCombine, easy showAnything]
+coverage: 1
+common_nodes: [ImageOnlyCheckpointLoader, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SeedVCRun, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/数字人歌曲翻唱_2080560951681708034.json, 音频生成/音频生成/数字人歌曲翻唱_1932404847331438594.json]
+members: [数字人/数字人/一键AI翻唱数字人SeedVc V2+Sonic_2029594346034569218.json, 音频生成/音频生成/一键AI翻唱数字人SeedVc V2+Sonic_1932990691872215042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_13
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/数字人歌曲翻唱_2080560951681708034.json、音频生成/音频生成/数字人歌曲翻唱_1932404847331438594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/一键AI翻唱数字人SeedVc V2+Sonic_2029594346034569218.json、音频生成/音频生成/一键AI翻唱数字人SeedVc V2+Sonic_1932990691872215042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCombine`
-- `AudioCrop`
-- `AudioSeparation`
 - `ImageOnlyCheckpointLoader`
-- `ImageScaleDownToSize`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `Primitive string [Crystools]`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
 - `SaveAudio`
 - `SeedVCRun`
 - `VHS_VideoCombine`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioSeparation` —— 1/2 个有
+- `MergeAudioNode` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
 
 ## 典型参数
 

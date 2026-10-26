@@ -2,69 +2,59 @@
 name: unknown_workflow_video_sampler_clip_67
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.880111
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageLoader, ImageResize+, KSamplerAdvanced, ModelSamplingSD3, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
+level: moderate
+coverage: 0.900889
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_1988486488964947969.json, 视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json, 视频生成/图生视频/Wan2.2-Remix-V2-I2V 图生视频工作流_1988479150342193154.json, 视频生成/图生视频/Wan2.2RemixV2图生视频_2057468310819786754.json, 视频生成/图生视频/wan2.2图生视频_2100280347178135554.json, 视频生成/图生视频/wan2.2图生视频_2101483714801913858.json, 视频生成/图生视频/wan2.2图生视频_2102213428411715585.json, 视频生成/图生视频/图生视频-rh-Wan2.2-Remix-I2V-提示词优化-模板_1986819504288296962.json, 视频生成/图生视频/图生视频-rh-任意时长-Wan2.2-Remix-I2V-提示词优化-模板_2021849082557370369.json]
+members: [视频生成/图生视频/KJ纯净版_图生视频_480p_1919644489483223042.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果强悍！_1910561597662920706.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果强悍！_1912679086651834369.json, 视频生成/图生视频/wan2.1万象图生视频跳舞大摆锤+lora+放大补帧_1911803069842292737.json, 视频生成/图生视频/wan2.1图生视频(cache加速版)_1954434539328290817.json, 视频生成/图生视频/万物生花特效_1924715221024501762.json, 视频生成/图生视频/万相1080P60帧图生视频360度旋转（360°旋转lora）_1900153764635095042.json, 视频生成/图生视频/电商产品旋转展示_1927224699863072769.json, 视频生成/文生视频/【大摆锤跳舞】最新图生视频动画wan2.1+放大补帧_1918185073190047746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_1988486488964947969.json、视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json、视频生成/图生视频/Wan2.2-Remix-V2-I2V 图生视频工作流_1988479150342193154.json、视频生成/图生视频/Wan2.2RemixV2图生视频_2057468310819786754.json、视频生成/图生视频/wan2.2图生视频_2100280347178135554.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/KJ纯净版_图生视频_480p_1919644489483223042.json、视频生成/图生视频/WAN2.1 万相图生视频，效果强悍！_1910561597662920706.json、视频生成/图生视频/WAN2.1 万相图生视频，效果强悍！_1912679086651834369.json、视频生成/图生视频/wan2.1万象图生视频跳舞大摆锤+lora+放大补帧_1911803069842292737.json、视频生成/图生视频/wan2.1图生视频(cache加速版)_1954434539328290817.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `ImageLoader`
-- `ImageResize+`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `Seed (rgthree)`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `wanBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFEInterpolation` —— 5/9 个有
-- `GetNode` —— 4/9 个有
-- `Int` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `SetNode` —— 4/9 个有
+- `WanVideoBlockSwap` —— 8/9 个有
+- `WanVideoLoraSelect` —— 6/9 个有
+- `CR Upscale Image` —— 5/9 个有
+- `ImageResizeKJ` —— 5/9 个有
+- `RIFE VFI` —— 5/9 个有
+- `WanVideoTeaCache` —— 5/9 个有
+- `WanVideoEnhanceAVideo` —— 4/9 个有
+- `WanVideoTorchCompileSettings` —— 4/9 个有
 - `easy cleanGpuUsed` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `CR Text Concatenate` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `MultiplePathsInput` —— 2/9 个有
-- `RIFE VFI` —— 2/9 个有
-- `Text Multiline (Code Compatible)` —— 2/9 个有
-- `IntToText` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `ttN concat` —— 1/9 个有
+- `GetImageSizeAndCount` —— 3/9 个有
+- `ImageResizeAdvanced` —— 2/9 个有
+- `WanVideoContextOptions` —— 2/9 个有
+- `WanVideoExperimentalArgs` —— 2/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `JjkText` —— 1/9 个有
+- `Primitive integer [Crystools]` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 56% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 56%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

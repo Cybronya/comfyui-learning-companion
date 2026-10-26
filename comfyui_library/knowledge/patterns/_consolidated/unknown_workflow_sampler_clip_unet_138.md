@@ -2,81 +2,61 @@
 name: unknown_workflow_sampler_clip_unet_138
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.777222
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
+level: moderate
+coverage: 0.936556
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.5图生视频（提示词指南）_2087560099316453378.json, 视频生成/图生视频/LTX-2.5首尾帧生视频（提示词指南）_2087552277501530114.json, 视频生成/图生视频/LTX2.5首尾帧_2087368525567582209.json, 视频生成/图生视频/LTX2.5首尾帧_2087526366265827329.json, 视频生成/图生视频/LTX2.5首尾帧_2088696578835046402.json, 视频生成/图生视频/LTX2.5首尾帧生视频2608_2095393045469556738.json, 视频生成/图生视频/LTX2_5_flf2v_2092797961985159170.json, 视频生成/图生视频/video_ltx2_5_flf2v_2087422059310833666.json, 视频生成/图生视频/【开源】LTX2.5 首尾帧生视频_2087467308766814210.json]
+members: [图片生成/文生图/FLUX文生图 大  快   不崩【中文输入】_1926971761274093569.json, 图片生成/文生图/FLUX文生图工作流+3LORA（一键运行）_1926928747302166529.json, 图片生成/文生图/FLUX文生图工作流+双LORA（中文输入）_1917149291704418305.json, 图片生成/文生图/Flux Schnell模型4步快速生图工作流_1896880774707093505.json, 图片生成/文生图/Flux Text-to-Image Workflow_2062531622062346242.json, 图片生成/文生图/Flux_人物一致性【小红书风美女lora】_1917393981133754370.json, 图片生成/文生图/Fluxmania-legacy 真实美图质感_1982900132742070274.json, 图片生成/文生图/Flux基础文生图_1904702749529845761.json, 图片生成/文生图/flux文生图标准版_在线生图_1892886267414392834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_138
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5图生视频（提示词指南）_2087560099316453378.json、视频生成/图生视频/LTX-2.5首尾帧生视频（提示词指南）_2087552277501530114.json、视频生成/图生视频/LTX2.5首尾帧_2087368525567582209.json、视频生成/图生视频/LTX2.5首尾帧_2087526366265827329.json、视频生成/图生视频/LTX2.5首尾帧_2088696578835046402.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/FLUX文生图 大  快   不崩【中文输入】_1926971761274093569.json、图片生成/文生图/FLUX文生图工作流+3LORA（一键运行）_1926928747302166529.json、图片生成/文生图/FLUX文生图工作流+双LORA（中文输入）_1917149291704418305.json、图片生成/文生图/Flux Schnell模型4步快速生图工作流_1896880774707093505.json、图片生成/文生图/Flux Text-to-Image Workflow_2062531622062346242.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `RandomNoise`
-- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAddGuide` —— 8/9 个有
-- `LTXVCropGuides` —— 8/9 个有
-- `LTXVDualCFGGuider` —— 8/9 个有
-- `ComfySwitchNode` —— 7/9 个有
-- `GetImageSize` —— 7/9 个有
-- `PrimitiveBoolean` —— 7/9 个有
-- `SamplerEulerAncestral` —— 7/9 个有
-- `TextGenerateLTX2Prompt` —— 7/9 个有
-- `CreateVideo` —— 6/9 个有
-- `PreviewAny` —— 6/9 个有
-- `SaveVideo` —— 6/9 个有
-- `VHS_VideoCombine` —— 3/9 个有
-- `DF_Get_image_size` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `KSamplerSelect` —— 2/9 个有
-- `LTXFloatToInt` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `PrimitiveFloat` —— 2/9 个有
-- `CFGGuider` —— 1/9 个有
-- `FlashVSRNode` —— 1/9 个有
-- `LTXVImgToVideoInplace` —— 1/9 个有
-- `ResolutionSelector` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `LoraLoader` —— 5/9 个有
+- `PreviewImage` —— 4/9 个有
+- `DetailDaemonSamplerNode` —— 2/9 个有
+- `FluxGuidance` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `RH_Translator` —— 2/9 个有
+- `Text Multiline` —— 2/9 个有
+- `ArgosTranslateTextNode` —— 1/9 个有
+- `NunchakuFluxDiTLoader` —— 1/9 个有
+- `PatchModelAddDownscale` —— 1/9 个有
+- `Text Concatenate` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 9 | 90% |
-| 高度 | 25 | 25 - 25 | 9 | 100% |
+| LoRA 模型强度 | 1 | 0.4 - 1 | 5 | 68% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 600 - 1536 | 9 | 75% |
+| 高度 | 1024 | 720 - 2048 | 9 | 67% |
 
 ## 常见问题
 
@@ -84,5 +64,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，9 个样本，取值集中（一致性 90%）
-- 高度 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 0.4 - 1，5 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 600 - 1536，9 个样本
+- 高度 中位数 1024，观测区间 720 - 2048，9 个样本

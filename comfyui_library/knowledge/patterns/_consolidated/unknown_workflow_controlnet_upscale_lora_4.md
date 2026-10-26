@@ -3,111 +3,59 @@ name: unknown_workflow_controlnet_upscale_lora_4
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.588
-common_nodes: [ArgosTranslateTextNode, BasicGuider, BasicScheduler, BboxDetectorSEGS, CLIPTextEncode, CR Text Concatenate, CR Text Replace, CR Upscale Image, ConditioningZeroOut, ControlNetLoader, CoreMLDetailerHookProvider, DepthAnythingPreprocessor, DetailerForEach, DisableNoise, DualCLIPLoader, EmptySD3LatentImage, FS: Crop Image Into Even Pieces, Fast Groups Muter (rgthree), Float, FluxGuidance, GetNode, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactSegsAndMask, ImpactSwitch, Int, KSamplerSelect, LayerFilter: FilmV2, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingFlux, PlaySound|pysssss, PreviewImage, RH_Captioner, RandomNoise, SAMDetectorCombined, SAMLoader, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, SplitSigmasDenoise, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TeaCache, UNETLoader, UltralyticsDetectorProvider, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy globalSeed, easy imageBatchToImageList, easy imageSize, easy positive, easy promptConcat, easy promptReplace, easy showAnything]
+coverage: 0.903
+common_nodes: [AIO_Preprocessor, APersonMaskGenerator, CLIPTextEncode, CR Apply LoRA Stack, CR Apply Multi-ControlNet, CR LoRA Stack, CR Multi-ControlNet Stack, CR Simple Image Compare, CheckpointLoaderSimple, ConstrainImage|pysssss, DetailerForEachDebugPipe, GrowMaskWithBlur, ImageCompositeMasked, ImageUpscaleWithModel, ImpactSimpleDetectorSEGS, LoadImage, MaskToSEGS, PreviewImage, SAMLoader, SEGSSwitch, SaveImage, ToBasicPipe, UltralyticsDetectorProvider, UpscaleModelLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX网红美女批量制造机_1920761055910232066.json, 图片生成/图生图/人物一致性，不同pose制造（衣服背景相似，有换脸和放大修复）_1904583752117616642.json]
+members: [图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json, 图片生成/图生图/一键纹身工作流_1894337929311879169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX网红美女批量制造机_1920761055910232066.json、图片生成/图生图/人物一致性，不同pose制造（衣服背景相似，有换脸和放大修复）_1904583752117616642.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json、图片生成/图生图/一键纹身工作流_1894337929311879169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ArgosTranslateTextNode`
-- `BasicGuider`
-- `BasicScheduler`
-- `BboxDetectorSEGS`
+- `AIO_Preprocessor`
+- `APersonMaskGenerator`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `CR Upscale Image`
-- `ConditioningZeroOut`
-- `ControlNetLoader`
-- `CoreMLDetailerHookProvider`
-- `DepthAnythingPreprocessor`
-- `DetailerForEach`
-- `DisableNoise`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FS: Crop Image Into Even Pieces`
-- `Fast Groups Muter (rgthree)`
-- `Float`
-- `FluxGuidance`
-- `GetNode`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
+- `CR Apply LoRA Stack`
+- `CR Apply Multi-ControlNet`
+- `CR LoRA Stack`
+- `CR Multi-ControlNet Stack`
+- `CR Simple Image Compare`
+- `CheckpointLoaderSimple`
+- `ConstrainImage|pysssss`
+- `DetailerForEachDebugPipe`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
 - `ImageUpscaleWithModel`
-- `ImpactSegsAndMask`
-- `ImpactSwitch`
-- `Int`
-- `KSamplerSelect`
-- `LayerFilter: FilmV2`
+- `ImpactSimpleDetectorSEGS`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskPreview+`
-- `ModelSamplingFlux`
-- `PlaySound|pysssss`
+- `MaskToSEGS`
 - `PreviewImage`
-- `RH_Captioner`
-- `RandomNoise`
-- `SAMDetectorCombined`
 - `SAMLoader`
-- `SamplerCustomAdvanced`
+- `SEGSSwitch`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `SplitSigmasDenoise`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TeaCache`
-- `UNETLoader`
+- `ToBasicPipe`
 - `UltralyticsDetectorProvider`
 - `UpscaleModelLoader`
-- `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy globalSeed`
-- `easy imageBatchToImageList`
-- `easy imageSize`
-- `easy positive`
-- `easy promptConcat`
-- `easy promptReplace`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyIPAdapterFlux` —— 1/2 个有
-- `CLIPVisionEncode` —— 1/2 个有
-- `CLIPVisionLoader` —— 1/2 个有
-- `ControlNetApplySD3` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `IPAdapterFluxLoader` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `ReActorBuildFaceModel` —— 1/2 个有
-- `ReActorFaceBoost` —— 1/2 个有
-- `ReActorFaceSwap` —— 1/2 个有
-- `StyleModelApply` —— 1/2 个有
-- `StyleModelLoader` —— 1/2 个有
+- `AddMask` —— 1/2 个有
+- `SegsToCombinedMask` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

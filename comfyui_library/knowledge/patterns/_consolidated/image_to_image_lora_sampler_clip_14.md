@@ -1,88 +1,84 @@
 ---
 name: image_to_image_lora_sampler_clip_14
 type: Image To Image
-frequency: 12
-level: strong
-coverage: 0.897167
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 11
+level: moderate
+coverage: 0.808727
+common_nodes: [CLIPLoader, CLIPTextEncode, Canny, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json, 图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json, 图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json, 图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1969909066803933185.json, 图片生成/图生图/Kontext-DEV模特换衣_1940636003080056834.json, 图片生成/图生图/Kontext-DEV模特换衣_1948210585455460353.json, 图片生成/图生图/Kontext-电商可用万物迁移（融图）_1946483138434621441.json, 图片生成/图生图/人物换头写真_无需PS深度溶图Kontext-LORA_1945817066031247361.json, 图片生成/图生图/人物换头换脸_深度溶图Kontext-LORA_1946849452919545857.json, 图片生成/图生图/换头_1950809310471331842.json]
+members: [图片生成/图生图/Qwen Image Union Control多重控制V1_1959993171348500482.json, 图片生成/图生图/Qwen Image Union Control多重控制V1_2038786081507774465.json, 图片生成/图生图/qwen_image联合控制工作流_1991719993102512130.json, 图片生成/图生图/千问_Canny_重绘（画风一致）_1999855817111334914.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_1971187587396341761.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_2022602222256791554.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_2060578205039423490.json, 图片生成/图生图/图生图Qwen-Image_InstantX_Union_ControlNet线稿_深度_姿态_2096884116947030017.json, 图片生成/图生图/图生图Qwen-Image_InstantX_Union_ControlNet线稿_深度_姿态_2097175006064238593.json, "图片生成/文生图/InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json", 图片生成/文生图/Qwen Image Contro控制_1960239683160715266.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json、图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json、图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json、图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json、图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Image Union Control多重控制V1_1959993171348500482.json、图片生成/图生图/Qwen Image Union Control多重控制V1_2038786081507774465.json、图片生成/图生图/qwen_image联合控制工作流_1991719993102512130.json、图片生成/图生图/千问_Canny_重绘（画风一致）_1999855817111334914.json、图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_1971187587396341761.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `Canny`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
-- `RepeatLatentBatch`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 11/12 个有
-- `GoogleTranslateTextNode` —— 11/12 个有
-- `PreviewImage` —— 11/12 个有
-- `ShowText|pysssss` —— 11/12 个有
-- `Text Multiline` —— 10/12 个有
-- `ImageStitch` —— 9/12 个有
-- `RMBG` —— 9/12 个有
-- `FastCanvas` —— 7/12 个有
-- `FastCanvasTool` —— 7/12 个有
-- `ImageScaleDownToSize` —— 7/12 个有
-- `EmptySD3LatentImage` —— 4/12 个有
-- `GetImageSizeAndCount` —— 4/12 个有
-- `SaveLatent` —— 4/12 个有
-- `LayerMask: PersonMaskUltra V2` —— 3/12 个有
-- `LayerUtility: CropByMask V2` —— 3/12 个有
-- `Note Plus (mtb)` —— 3/12 个有
-- `Image Rembg (Remove Background)` —— 2/12 个有
-- `CR Text` —— 1/12 个有
-- `ConditioningCombine` —— 1/12 个有
-- `Image Comparer (rgthree)` —— 1/12 个有
-- `Images to RGB` —— 1/12 个有
-- `LoadImageFromUrl` —— 1/12 个有
-- `RH_Translator` —— 1/12 个有
-- `TeaCache` —— 1/12 个有
-- `Text _O` —— 1/12 个有
+- `ImageScaleToTotalPixels` —— 10/11 个有
+- `VAEDecode` —— 10/11 个有
+- `DepthAnything_V2` —— 9/11 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 9/11 个有
+- `ControlNetApplyAdvanced` —— 6/11 个有
+- `ControlNetLoader` —— 6/11 个有
+- `DWPreprocessor` —— 6/11 个有
+- `ControlNetInpaintingAliMamaApply` —— 5/11 个有
+- `ImagePadForOutpaint` —— 5/11 个有
+- `ReferenceLatent` —— 5/11 个有
+- `MiDaS-NormalMapPreprocessor` —— 3/11 个有
+- `OpenposePreprocessor` —— 3/11 个有
+- `ImpactSwitch` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `PDImageResizeV2` —— 1/11 个有
+- `VAEDecodeTiled` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 8 | 4 - 22 | 11 | 43% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 11 | 53% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| ControlNet 权重 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 32/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 1/11 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 22，11 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（32/11 个样本）：Steps较低可能导致细节不足

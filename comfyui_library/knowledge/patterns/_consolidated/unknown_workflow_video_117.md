@@ -3,57 +3,56 @@ name: unknown_workflow_video_117
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8085
-common_nodes: [ACEStepGen, AudioCrop, Fast Groups Bypasser (rgthree), FloatProcess, GenerationParameters, GetTextFromJson, LayerUtility: PurgeVRAM, LoadAudio, LoadFloatModels, LoadImage, LoadJsonFromText, MultiLineLyrics, MultiLinePromptACES, PrimitiveFloat, RH_LLMAPI_NODE, ReplaceText, SaveAudio, ShowText, Text Concatenate, Text Multiline, VHS_VideoCombine]
+coverage: 0.747
+common_nodes: [ACEStepGen, AudioSeparation, CR Text, Float, GenerationParameters, GetNode, ImageCASharpening+, ImpactSwitch, Int, LoadAudio, LoadImage, MultiLineLyrics, MultiLinePromptACES, PreviewAudio, RH_Translator, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, workflow>1]
 problems: []
 missing: []
-members: [视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json, 视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json]
+members: [视频生成/图生视频/【强强联合】ACE-Step音乐生成+SONIC数字人（精准对口型）_1922477274111868929.json, 视频生成/图生视频/【音轨分离重组】ACE-Step音乐生成+Float数字人（精准对口型）_1919189623304818689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_117
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json、视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【强强联合】ACE-Step音乐生成+SONIC数字人（精准对口型）_1922477274111868929.json、视频生成/图生视频/【音轨分离重组】ACE-Step音乐生成+Float数字人（精准对口型）_1919189623304818689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `ACEStepGen`
-- `AudioCrop`
-- `Fast Groups Bypasser (rgthree)`
-- `FloatProcess`
+- `AudioSeparation`
+- `CR Text`
+- `Float`
 - `GenerationParameters`
-- `GetTextFromJson`
-- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImpactSwitch`
+- `Int`
 - `LoadAudio`
-- `LoadFloatModels`
 - `LoadImage`
-- `LoadJsonFromText`
 - `MultiLineLyrics`
 - `MultiLinePromptACES`
-- `PrimitiveFloat`
-- `RH_LLMAPI_NODE`
-- `ReplaceText`
+- `PreviewAudio`
+- `RH_Translator`
 - `SaveAudio`
-- `ShowText`
-- `Text Concatenate`
-- `Text Multiline`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `workflow>1`
 
 **可变部分**（部分 workflow 才有）：
-- `Add Subtitles To Frames` —— 1/2 个有
-- `Apply Whisper` —— 1/2 个有
-- `DF_Int_to_Float` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
+- `FloatProcess` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `LoadFloatModels` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SONICSampler` —— 1/2 个有
+- `SONICTLoader` —— 1/2 个有
+- `SONIC_PreData` —— 1/2 个有
+- `unCLIPCheckpointLoader` —— 1/2 个有
 
 ## 典型参数
 

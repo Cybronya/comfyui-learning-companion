@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1394
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LayerMask: SegmentAnythingUltra V2, LoadImage, SaveImage]
+coverage: 0.889
+common_nodes: [LoadImage, ReActorFaceBoost, ReActorFaceSwapOpt, ReActorOptions, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图_2038543335949869057.json, 图片生成/图生图/语音分割抠图升级版本+SegmentAnything Ultra V2+全节点注释_2056029346262994945.json]
+members: [图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json, 图片生成/图生图/ReActo简易换脸_2022177926304763906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1394
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/抠图_2038543335949869057.json、图片生成/图生图/语音分割抠图升级版本+SegmentAnything Ultra V2+全节点注释_2056029346262994945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json、图片生成/图生图/ReActo简易换脸_2022177926304763906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerMask: SegmentAnythingUltra V2`
 - `LoadImage`
+- `ReActorFaceBoost`
+- `ReActorFaceSwapOpt`
+- `ReActorOptions`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
-- `TransparentImage` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ReActorMaskHelper` —— 1/2 个有
 
 ## 典型参数
 

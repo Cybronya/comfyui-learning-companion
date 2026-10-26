@@ -3,34 +3,36 @@ name: unknown_workflow_upscale_vae_56
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.778
-common_nodes: [ImageScaleBy, LoadImage, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+]
+coverage: 1
+common_nodes: [CR Text, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/花型设计图高清_2108474871826182146.json, 图片生成/图生图/花型高清_2111753801672773634.json]
+members: [图片生成/图生图/电商三件套一键生成电商主图_2053330420904804353.json, 图片生成/图生图/超好用🔥电商三件套一键生成电商主图-只需一张产品图_2054878019872927746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_56
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/花型设计图高清_2108474871826182146.json、图片生成/图生图/花型高清_2111753801672773634.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商三件套一键生成电商主图_2053330420904804353.json、图片生成/图生图/超好用🔥电商三件套一键生成电商主图-只需一张产品图_2054878019872927746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScaleBy`
+- `CR Text`
 - `LoadImage`
-- `PrimitiveInt`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SimpleMath+`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

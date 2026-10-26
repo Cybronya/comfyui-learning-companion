@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_video_29
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
 coverage: 1
-common_nodes: [SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine]
+common_nodes: [LoadImage, RunningHub_FramePack_F1, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2视频放大工作流_2021463683360104449.json, 数字人/数字人/seedvr2超分_2104485159268605953.json, 视频生成/图生视频/SeedVR2视频高清放大_1999045310397734913.json, 视频生成/图生视频/视频高清放大_2083505713627877378.json]
+members: [视频生成/图生视频/一分钟图生视频_2038508118556020738.json, 视频生成/图生视频/图生视频--FramePack_1930833546175250433.json, 视频生成/图生视频/最新图生视频_2048952108606562305.json, 视频生成/图生视频/最新图生视频_2052286643062755330.json, 视频生成/图生视频/🦖最新稳定FramePack-F1_1919582733343850497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_29
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2视频放大工作流_2021463683360104449.json、数字人/数字人/seedvr2超分_2104485159268605953.json、视频生成/图生视频/SeedVR2视频高清放大_1999045310397734913.json、视频生成/图生视频/视频高清放大_2083505713627877378.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/一分钟图生视频_2038508118556020738.json、视频生成/图生视频/图生视频--FramePack_1930833546175250433.json、视频生成/图生视频/最新图生视频_2048952108606562305.json、视频生成/图生视频/最新图生视频_2052286643062755330.json、视频生成/图生视频/🦖最新稳定FramePack-F1_1919582733343850497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `VHS_LoadVideo`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub_FramePack_F1`
+- `SeargePromptText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 3/4 个有
-- `ImageScale` —— 2/4 个有
-- `SeedVR2ExtraArgs` —— 2/4 个有
-- `VHS_VideoInfo` —— 2/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 3/5 个有
 
 ## 典型参数
 

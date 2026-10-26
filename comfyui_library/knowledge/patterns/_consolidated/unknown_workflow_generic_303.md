@@ -3,37 +3,44 @@ name: unknown_workflow_generic_303
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.480875
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveVideo, easy showAnything]
+coverage: 0.68875
+common_nodes: [CR Text Concatenate, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 10S文生视频V1_1993138025121120258.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新图生视频V1（可选横竖屏屏-基准价格1.7元）_1974925677256380418.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 25S新文生视频V1（可选横竖屏频-基准价格1.7元）_1979390287166476289.json, 视频生成/文生视频/(Ai贞贞工坊版)全能视频S 普通版15S新文生视频V1（可选横竖屏频-基准价格0.1元）_1979417280096407554.json, 视频生成/文生视频/(新版0.1积分-支持真人)全能视频S新文生视频V1(贞贞工坊-令牌分组选default)_2036011299909410818.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1文生视频特价版（基准0.3元_8S）_1980613635166916610.json, 视频生成/文生视频/Comfy挑战赛9（云境创想）Grok+全能视频S自动多镜头视频15S视频API版_1986429748345794561.json]
+members: [图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json, 图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json, 图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json, 图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json, 图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json, 图片生成/图生图/图生图9宫格分镜图_2100548658549837825.json, 图片生成/图生图/图生图9宫格分镜图_2101492586950254593.json, 图片生成/图生图/图生图9宫格分镜图_2102306879014785025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_303
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 10S文生视频V1_1993138025121120258.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新图生视频V1（可选横竖屏屏-基准价格1.7元）_1974925677256380418.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 25S新文生视频V1（可选横竖屏频-基准价格1.7元）_1979390287166476289.json、视频生成/文生视频/(Ai贞贞工坊版)全能视频S 普通版15S新文生视频V1（可选横竖屏频-基准价格0.1元）_1979417280096407554.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json、图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json、图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json、图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json、图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `SaveVideo`
-- `easy showAnything`
+- `CR Text Concatenate`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_sora2` —— 7/8 个有
-- `LoadImage` —— 6/8 个有
-- `SaveImage` —— 4/8 个有
-- `Comfly_Googel_Veo3` —— 1/8 个有
-- `RH_LLMAPI_NODE` —— 1/8 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `Crop (mtb)` —— 1/8 个有
+- `EmptyImage` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageBatchMultiple+` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
 
 ## 典型参数
 

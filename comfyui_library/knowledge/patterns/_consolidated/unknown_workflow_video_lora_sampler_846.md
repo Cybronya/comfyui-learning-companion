@@ -3,64 +3,70 @@ name: unknown_workflow_video_lora_sampler_846
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8685
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+coverage: 0.574
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, IndexTTS2Run, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2官方版图生视频_1992405756192550914.json, 视频生成/图生视频/图生视频 _ 高动态 _ wan 1030_1988897566454591490.json]
+members: [视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json, 视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_846
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2官方版图生视频_1992405756192550914.json、视频生成/图生视频/图生视频 _ 高动态 _ wan 1030_1988897566454591490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json、视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `AudioToFPS` —— 1/2 个有
 - `CR Text` —— 1/2 个有
 - `INTConstant` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
+- `ImpactConditionalBranch` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `easy int` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
-- `wanBlockSwap` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,9 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

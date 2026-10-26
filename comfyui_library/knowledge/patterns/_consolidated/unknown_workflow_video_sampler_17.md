@@ -3,47 +3,33 @@ name: unknown_workflow_video_sampler_17
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.848667
-common_nodes: [ColorMatch, GetImagesFromBatchIndexed, Image Comparer (rgthree), ImageBatchRepeatInterleaving, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveFloat, RH_Captioner, SaveImage, WanVideoAddFlashVSRInput, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoFlashVSRDecoderLoader, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, easy showAnything]
+coverage: 0.793667
+common_nodes: [Echo_LoadModel, Echo_Sampler, ImageResizeAdvanced, LoadAudio, LoadImage, PreviewImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/图像高清修复Flash VSR_1978691986666442753.json, 图片生成/图生图/高清修复图像高清放大修复_1979750668695146497.json, 图片生成/图生图/高清修复图像高清放大修复（快速版）_2035195294815621122.json]
+members: [图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json, 视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json, 视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像高清修复Flash VSR_1978691986666442753.json、图片生成/图生图/高清修复图像高清放大修复_1979750668695146497.json、图片生成/图生图/高清修复图像高清放大修复（快速版）_2035195294815621122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json、视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json、视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ColorMatch`
-- `GetImagesFromBatchIndexed`
-- `Image Comparer (rgthree)`
-- `ImageBatchRepeatInterleaving`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Echo_LoadModel`
+- `Echo_Sampler`
+- `ImageResizeAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveFloat`
-- `RH_Captioner`
-- `SaveImage`
-- `WanVideoAddFlashVSRInput`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoExtraModelSelect`
-- `WanVideoFlashVSRDecoderLoader`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `easy showAnything`
+- `PreviewImage`
+- `VHS_VideoCombine`
 
 ## 典型参数
 

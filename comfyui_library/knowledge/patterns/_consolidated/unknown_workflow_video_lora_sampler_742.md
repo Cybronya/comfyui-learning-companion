@@ -1,53 +1,55 @@
 ---
 name: unknown_workflow_video_lora_sampler_742
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8585
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, ImageConcanate, JWImageResizeToMegapixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader]
+frequency: 3
+level: moderate
+coverage: 0.447
+common_nodes: [FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageColorMatch+, ImageRepeat, ImageResizeKJv2, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json, 视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json]
+members: [视频生成/图生视频/【周杰伦同款】首尾帧+时光机效果_1946036968394289154.json, 视频生成/图生视频/【周杰伦同款】首尾帧视频 + 时光机 人物变化_1946043472392712193.json, 视频生成/图生视频/偶像出道时光机穿梭视频制作指南，开源首尾帧方案盖过即梦生成效果_1943291621532463106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_742
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json、视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【周杰伦同款】首尾帧+时光机效果_1946036968394289154.json、视频生成/图生视频/【周杰伦同款】首尾帧视频 + 时光机 人物变化_1946043472392712193.json、视频生成/图生视频/偶像出道时光机穿梭视频制作指南，开源首尾帧方案盖过即梦生成效果_1943291621532463106.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `ImageConcanate`
-- `JWImageResizeToMegapixels`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `FloatConstant`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `INTConstant`
+- `ImageColorMatch+`
+- `ImageRepeat`
+- `ImageResizeKJv2`
+- `Label (rgthree)`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `ViggleAnimateConditioning`
-- `ViggleTextCondLoader`
-
-**可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `CustomSigmas` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 ## 典型参数
 
@@ -59,4 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

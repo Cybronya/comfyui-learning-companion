@@ -1,108 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_187
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8434
-common_nodes: [AudioCrop, AudioCropProcessUTK, CLIPVisionLoader, CM_FloatUnaryOperation, CM_IntToFloat, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, HuMoEmbeds, INTConstant, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PrimitiveString, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy int, easy showAnything]
+coverage: 0.912091
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json, 视频生成/图生视频/humo+infinite长视频转场数字人_1999689343231029250.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO-3_1980829225919926273.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO_1973235123128807426.json, 视频生成/图生视频/数字人-图生视频-多分镜-HUMO1号_1991795582006145025.json, 视频生成/图生视频/精准嘴型校正，长视频转场数字人MV_1995394218111774721.json, 视频生成/图生视频/迄今超强精准嘴型校正可选4张照片智能全自动提示词作分镜humo+infinite长视频转场数字人MV_1956547537161388033.json]
+members: [视频生成/图生视频/MINIMAX多参官方加速工作流_2085378301211799553.json, 视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json, 视频生成/图生视频/Minimax H3三图参考+2参考音_2089300447696871426.json, 视频生成/图生视频/Minimax H3三图参考+三参考音_2089302046485864449.json, 视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json, 视频生成/图生视频/Minimax H3单图参考+1参考音_2089270431596507137.json, 视频生成/图生视频/Minimax H3双图参考(无参考音)_2089281585597210625.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【口播用】_2090260648876920833.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【批量管理系统api用】_2093664402544353282.json, 视频生成/图生视频/Minimax H3双图参考+2参考音_2089282022698213377.json, 视频生成/图生视频/minimax H3酷炫街舞_2085366057304412161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_187
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json、视频生成/图生视频/humo+infinite长视频转场数字人_1999689343231029250.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MINIMAX多参官方加速工作流_2085378301211799553.json、视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json、视频生成/图生视频/Minimax H3三图参考+2参考音_2089300447696871426.json、视频生成/图生视频/Minimax H3三图参考+三参考音_2089302046485864449.json、视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AudioCrop`
-- `AudioCropProcessUTK`
-- `CLIPVisionLoader`
-- `CM_FloatUnaryOperation`
-- `CM_IntToFloat`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `HuMoEmbeds`
-- `INTConstant`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
-- `PrimitiveString`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoCombineEmbeds`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 9/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 9/10 个有
-- `ImageBatch` —— 7/10 个有
-- `LazySwitch1way` —— 7/10 个有
-- `SoundFlow_Concatenator` —— 7/10 个有
-- `easy boolean` —— 7/10 个有
-- `ImpactSwitch` —— 6/10 个有
-- `easy compare` —— 6/10 个有
-- `ControlNextGetPoses` —— 3/10 个有
-- `LayerUtility: Seed` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `Primitive integer [Crystools]` —— 3/10 个有
-- `RHHiddenNodes` —— 3/10 个有
-- `RH_Captioner` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `WanVideoApplyNAG` —— 3/10 个有
-- `WanVideoControlEmbeds` —— 3/10 个有
-- `WanVideoEncode` —— 3/10 个有
-- `WanVideoImageToVideoEncode` —— 3/10 个有
-- `WanVideoSLG` —— 3/10 个有
-- `WanVideoTextEncodeSingle` —— 3/10 个有
-- `WanVideoVACEModelSelect` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `easy clearCacheAll` —— 3/10 个有
-- `ttN concat` —— 3/10 个有
-- `Anything Everywhere` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `Fast Groups Muter (rgthree)` —— 2/10 个有
-- `FlashVSRNode` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `SeedVR2BlockSwap` —— 2/10 个有
-- `SeedVR2ExtraArgs` —— 2/10 个有
-- `SeedVR2GGUF` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `VideoTransitionNode` —— 2/10 个有
-- `MuterSwitcher` —— 1/10 个有
-- `🎈GroupDetector` —— 1/10 个有
-- `🎈StateTransfer` —— 1/10 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 10/11 个有
+- `PrimitiveFloat` —— 10/11 个有
+- `PrimitiveStringMultiline` —— 10/11 个有
+- `INTConstant` —— 9/11 个有
+- `LoadAudio` —— 6/11 个有
+- `Display Any (rgthree)` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `MiniMaxH3ImageToVideo` —— 1/11 个有
+- `SimpleCalculatorKJ` —— 1/11 个有
+- `StringReplace` —— 1/11 个有
+- `TextGenerate` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 

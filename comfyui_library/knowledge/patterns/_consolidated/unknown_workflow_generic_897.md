@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [CR Image Border, ImageConcanate, ImageScale, LoadImage, SaveImage, ZML_ColorPicker]
+common_nodes: [GrokImageNode, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json, 图片生成/图生图/拼图_九宫格_1916440388461334530.json, 图片生成/图生图/拼图_四宫格_1916482426011320322.json]
+members: [comfyui-workflow-templates-json/api_grok_imagine_image_quality_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_quality_image_generation.json, comfyui-workflow-templates-json/api_grok_text_to_image.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_897
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json、图片生成/图生图/拼图_九宫格_1916440388461334530.json、图片生成/图生图/拼图_四宫格_1916482426011320322.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_imagine_image_quality_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_quality_image_generation.json、comfyui-workflow-templates-json/api_grok_text_to_image.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,18 +23,8 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Image Border`
-- `ImageConcanate`
-- `ImageScale`
-- `LoadImage`
+- `GrokImageNode`
 - `SaveImage`
-- `ZML_ColorPicker`
-
-**可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `CR Overlay Text` —— 1/3 个有
-- `easy imageInsetCrop` —— 1/3 个有
 
 ## 典型参数
 

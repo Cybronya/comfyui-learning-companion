@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_generic_1192
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage, 忽略多组孤海]
+frequency: 3
+level: moderate
+coverage: 0.892667
+common_nodes: [LoadAudio, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, ShowText|pysssss, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json, 图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json, 音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1192
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json、图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json、音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json、音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
-- `SaveImage`
-- `忽略多组孤海`
+全部 3 个 workflow 都包含：
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
+- `ShowText|pysssss`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 1/2 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `LongCatVoiceCloneTTS` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `LongCatMultiSpeakerTTS` —— 1/3 个有
+- `SaveAudio` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

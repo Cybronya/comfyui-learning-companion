@@ -1,79 +1,91 @@
 ---
 name: unknown_workflow_video_lora_clip_6
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.8505
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, ImpactSwitch, JjkText, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy clearCacheAll, easy float, easy int, easy showAnything]
-problems: []
+frequency: 8
+level: moderate
+coverage: 0.424875
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, PrimitiveInt, SAM3_VideoTrack, SCAIL2ColoredMask, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan MoE KSampler_万相_Wan2.2 图生视频加速 官方版_1956004146719719426.json, 视频生成/图生视频/万相_Wan2.2图生视频官方版 基础工作流 旧版lightx2v加速_1953334432444895233.json, 视频生成/文生视频/Wan MoE KSampler_万相_Wan2.2 文生视频加速 官方版_1955876808312979457.json, 视频生成/文生视频/万相_Wan2.2文生视频官方版 基础工作流 旧版lightx2v加速_1953684315559395330.json]
+members: [数字人/数字人/Scail2_v01_2096895345262424066.json, 数字人/数字人/Scail2多参工作流_2096877747174989825.json, 数字人/数字人/一键复刻爆款视频_2097251150608297986.json, 视频生成/图生视频/SCAIL2 动作迁移_角色替换 加强循环流_2073324810372993026.json, 视频生成/图生视频/Scail2_多参_无劣化_2098259674410868737.json, 视频生成/图生视频/Scail2动作迁移_for循环（一键模仿）_2089320207121731586.json, 视频生成/图生视频/Scail2多参工作流_2090458654913941506.json, 视频生成/图生视频/Scail2多参工作流_2093511775273705474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan MoE KSampler_万相_Wan2.2 图生视频加速 官方版_1956004146719719426.json、视频生成/图生视频/万相_Wan2.2图生视频官方版 基础工作流 旧版lightx2v加速_1953334432444895233.json、视频生成/文生视频/Wan MoE KSampler_万相_Wan2.2 文生视频加速 官方版_1955876808312979457.json、视频生成/文生视频/万相_Wan2.2文生视频官方版 基础工作流 旧版lightx2v加速_1953684315559395330.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Scail2_v01_2096895345262424066.json、数字人/数字人/Scail2多参工作流_2096877747174989825.json、数字人/数字人/一键复刻爆款视频_2097251150608297986.json、视频生成/图生视频/SCAIL2 动作迁移_角色替换 加强循环流_2073324810372993026.json、视频生成/图生视频/Scail2_多参_无劣化_2098259674410868737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImpactSwitch`
-- `JjkText`
-- `LayerUtility: PurgeVRAM`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `PrimitiveInt`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy float`
-- `easy int`
-- `easy showAnything`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 3/4 个有
-- `EmptyHunyuanLatentVideo` —— 2/4 个有
-- `KSamplerAdvanced` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `ModelSamplingSD3` —— 2/4 个有
-- `WanImageToVideo` —— 2/4 个有
-- `WanMoeKSampler` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `easy seed` —— 2/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `TorchCompileModelWanVideoV2` —— 1/4 个有
+- `BasicScheduler` —— 7/8 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `GetImageRangeFromBatch` —— 7/8 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `KSamplerSelect` —— 7/8 个有
+- `SamplerCustom` —— 7/8 个有
+- `SingleBooleanTrigger` —— 7/8 个有
+- `easy batchAnything` —— 7/8 个有
+- `easy forLoopEnd` —— 7/8 个有
+- `easy forLoopStart` —— 7/8 个有
+- `easy imageRemBg` —— 7/8 个有
+- `ComfySwitchNode` —— 5/8 个有
+- `Float` —— 5/8 个有
+- `ImageBatchMultiple+` —— 5/8 个有
+- `ImageFromBatch` —— 5/8 个有
+- `Label (rgthree)` —— 5/8 个有
+- `Int` —— 2/8 个有
+- `SaveVideoRGBA` —— 2/8 个有
+- `BatchImagesNode` —— 1/8 个有
+- `KSampler` —— 1/8 个有
+- `PrimitiveBoolean` —— 1/8 个有
+- `PrimitiveString` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `WanContextWindowsManual` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 50% |
-| Prompt 约束强度(CFG) | 11.5 | 8 - 15 | 4 | 70% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | uni_pc | - | 4 | 50% |
+| 采样步数 | 6 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 11.5，观测区间 8 - 15，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 uni_pc，4 个样本，一致性 50%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

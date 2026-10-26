@@ -2,23 +2,23 @@
 name: unknown_workflow_inpaint_sampler_clip_53
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.854
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageCrop+, ImageToMask, InpaintModelConditioning, InpaintStitch, KSampler, LoadImage, MaskToImage, PreviewImage, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.829333
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, EmptyImage, FluxGuidance, GrowMaskWithBlur, ImageConcanate, ImageCrop+, ImageToMask, InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, LayerMask: MaskPreview, LoadImage, MaskToImage, PreviewImage, SaveImage, StyleModelApply, StyleModelLoader, VAEDecode, VAELoader, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/图生图/换脸换发型工作流V2.0_1928219088726966273.json, 图片生成/图生图/超强万物迁移_1915340896831733762.json, 图片生成/图生图/遮罩局部参考重绘_1989320919707471874.json]
+members: [图片生成/图生图/生图-图换装手动遮罩-flux_fill_nunchaku_1983512677819588609.json, 图片生成/图生图/生图-图换装自动遮罩-flux_fill_nunchaku_1972659750909485057.json, 图片生成/图生图/省心，不用画遮罩。换装_1907723273931792385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_53
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换脸换发型工作流V2.0_1928219088726966273.json、图片生成/图生图/超强万物迁移_1915340896831733762.json、图片生成/图生图/遮罩局部参考重绘_1989320919707471874.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-图换装手动遮罩-flux_fill_nunchaku_1983512677819588609.json、图片生成/图生图/生图-图换装自动遮罩-flux_fill_nunchaku_1972659750909485057.json、图片生成/图生图/省心，不用画遮罩。换装_1907723273931792385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
@@ -28,51 +28,47 @@ source: knowledge_consolidation
 - `CLIPVisionLoader`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
+- `EmptyImage`
 - `FluxGuidance`
+- `GrowMaskWithBlur`
 - `ImageConcanate`
 - `ImageCrop+`
 - `ImageToMask`
+- `InpaintCrop`
 - `InpaintModelConditioning`
 - `InpaintStitch`
 - `KSampler`
+- `LayerMask: MaskPreview`
 - `LoadImage`
 - `MaskToImage`
 - `PreviewImage`
 - `SaveImage`
 - `StyleModelApply`
 - `StyleModelLoader`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Blank` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
 - `Image Comparer (rgthree)` —— 2/3 个有
 - `ImageResize+` —— 2/3 个有
-- `InpaintCrop` —— 2/3 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `easy imageSize` —— 2/3 个有
-- `DF_Image_scale_to_side` —— 1/3 个有
-- `EmptyImage` —— 1/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `LayerUtility: ColorImage` —— 1/3 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LayerUtility: ImageScaleRestore V2` —— 1/3 个有
-- `Mask Fill Holes` —— 1/3 个有
-- `MaskPreview+` —— 1/3 个有
-- `ReduxAdvanced` —— 1/3 个有
-- `SUPIR_Upscale` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy imageCropFromMask` —— 1/3 个有
+- `Int` —— 2/3 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `NunchakuFluxDiTLoader` —— 2/3 个有
+- `CR Upscale Image` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 28 | 3 | 83% |
+| 采样步数 | 20 | 20 - 50 | 3 | 53% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
 | 调度器 | simple | - | 3 | 100% |
@@ -84,7 +80,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 28，3 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 20，观测区间 20 - 50，3 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
 - 调度器 最常用 simple，3 个样本，一致性 100%

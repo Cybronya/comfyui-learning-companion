@@ -3,72 +3,76 @@ name: unknown_workflow_video_upscale_sampler_19
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8685
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, PreviewImage, PrimitiveInt, RIFE VFI, UpscaleModelLoader, VAEDecodeTiled, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.941
+common_nodes: [AIO_Preprocessor, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJ, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2图生视频-扣子api调用_1964008268450418690.json, 视频生成/图生视频/图片转手办视频_1968609377198514177.json]
+members: [视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json, 视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频-扣子api调用_1964008268450418690.json、视频生成/图生视频/图片转手办视频_1968609377198514177.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json、视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+- `AIO_Preprocessor`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `ImageUpscaleWithModel`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RIFE VFI`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `ReActorFaceSwap`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `VHS_LoadVideo`
+- `VHS_SplitImages`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `VHS_VideoInfoLoaded`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `Bbox (mtb)` —— 1/2 个有
+- `INPAINT_ExpandMask` —— 1/2 个有
+- `ImageCrop` —— 1/2 个有
+- `LayerMask: MaskBoxDetect` —— 1/2 个有
+- `LayerUtility: ColorImage V2` —— 1/2 个有
+- `LayerUtility: ColorPicker` —— 1/2 个有
+- `LoadImageFromUrl` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `Uncrop (mtb)` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
+- `easy indexAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

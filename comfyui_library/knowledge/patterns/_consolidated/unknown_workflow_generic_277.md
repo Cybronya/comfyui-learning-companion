@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_277
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.797
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.978778
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
 problems: []
 missing: []
-members: [图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json, 图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json, 图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json, 图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json, 图片生成/图生图/全能图片V1多图融合_1962420011333718018.json, 图片生成/图生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1961127751719784449.json, 图片生成/图生图/🍌香蕉 _Banan最强一致性编辑工作流 V1.0_1960400731750674434.json, 图片生成/文生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1962390591537549313.json]
+members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_277
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json、图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json、图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json、图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json、图片生成/图生图/全能图片V1多图融合_1962420011333718018.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_DialogueGenerate`
+- `T8_IndexTTS25_DialogueScript`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_RoleLibrary`
+- `T8_IndexTTS25_VoiceProfile`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleDownToSize` —— 6/8 个有
-- `easy imageConcat` —— 5/8 个有
-- `PIP_图像联结` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `Text Multiline` —— 3/8 个有
+- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
+- `Text` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 

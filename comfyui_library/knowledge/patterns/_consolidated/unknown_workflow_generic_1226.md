@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1226
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8695
-common_nodes: [CR Text, FancyTimerNode, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy promptReplace, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/G-2.0图像多视角参考生成单次0.02_2057306942430867457.json, 图片生成/文生图/全能G-2.0微缩景观图像生成_2061094467976912897.json]
+members: [comfyui-workflow-templates-json/api_bria_video_replace_background.json, comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1226
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G-2.0图像多视角参考生成单次0.02_2057306942430867457.json、图片生成/文生图/全能G-2.0微缩景观图像生成_2061094467976912897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_video_replace_background.json、comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `FancyTimerNode`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `easy promptReplace`
-- `easy showAnything`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GptImage2` —— 1/2 个有
+- `BriaVideoReplaceBackground` —— 1/2 个有
+- `HappyHorseVideoEditApi` —— 1/2 个有
 
 ## 典型参数
 

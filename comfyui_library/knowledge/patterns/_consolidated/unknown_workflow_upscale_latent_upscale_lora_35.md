@@ -1,87 +1,99 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_35
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.883667
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8656
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json, 视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json, 视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json, 视频生成/文生视频/MiniMax_H3_REF2VA-Upscale 双采样视频生成工作流_2092581047509807105.json, 视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json, 视频生成/文生视频/Minimax H3多参 Taomate 3 steplora 二采生视频_2100938444443832322.json, 视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json, 视频生成/文生视频/人物真实低动态H3+sigma强化+潜空间放大工作流 双采_2096114490512330753.json, 视频生成/文生视频/海螺H3-高效4步-脸部护持_2091172705780461570.json]
+members: [视频生成/图生视频/danotebook-ltx2.3-digital_2062522880226848770.json, 视频生成/图生视频/danotebook-ltx2.3-ff2v_2062486746893471745.json, 视频生成/图生视频/danotebook-ltx2.3-flf2v_2062515403225649154.json, 视频生成/图生视频/fast图生视频_2053653678917206018.json, 视频生成/图生视频/full图生视频_2053653864032813058.json, 视频生成/图生视频/ltx2.3图生视频-官方版_2057789192654123010.json, 视频生成/图生视频/【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3工作流实测_2044766587655294977.json, 视频生成/图生视频/【LTX-2.3xinyao】_2070029372056231937.json, 视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json, 视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_35
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json、视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json、视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json、视频生成/文生视频/MiniMax_H3_REF2VA-Upscale 双采样视频生成工作流_2092581047509807105.json、视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/danotebook-ltx2.3-digital_2062522880226848770.json、视频生成/图生视频/danotebook-ltx2.3-ff2v_2062486746893471745.json、视频生成/图生视频/danotebook-ltx2.3-flf2v_2062515403225649154.json、视频生成/图生视频/fast图生视频_2053653678917206018.json、视频生成/图生视频/full图生视频_2053653864032813058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
 - `CreateVideo`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SaveVideo`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3SigmaShift` —— 8/9 个有
-- `SaveVideo` —— 8/9 个有
-- `BasicScheduler` —— 7/9 个有
-- `SplitSigmas` —— 7/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/9 个有
-- `ModelAttentionBackend` —— 6/9 个有
-- `ModelPreviewOverrideKJ` —— 6/9 个有
-- `ManualSigmas` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 5/9 个有
-- `H3SigmaRefiner` —— 4/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `MiniMaxH3ImageToVideo` —— 3/9 个有
-- `Text` —— 3/9 个有
-- `VHS_VideoCombine` —— 3/9 个有
-- `AudioCrop` —— 2/9 个有
-- `ClownsharKSampler_Beta` —— 2/9 个有
-- `ConditioningZeroOut` —— 2/9 个有
-- `LoadAudio` —— 2/9 个有
-- `SeedGenerator` —— 2/9 个有
-- `StringFunction|pysssss` —— 2/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `FloatConstant` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `MiniMaxChunkFeedForward` —— 1/9 个有
-- `RHLLMChatNode` —— 1/9 个有
-- `忽略多组孤海` —— 1/9 个有
+- `LTXVImgToVideoInplace` —— 8/10 个有
+- `ResizeImagesByLongerEdge` —— 8/10 个有
+- `PrimitiveBoolean` —— 7/10 个有
+- `PrimitiveStringMultiline` —— 7/10 个有
+- `LTXVAudioVAEEncode` —— 5/10 个有
+- `LTXVEmptyLatentAudio` —— 5/10 个有
+- `LoadAudio` —— 5/10 个有
+- `PrimitiveFloat` —— 5/10 个有
+- `SetLatentNoiseMask` —— 5/10 个有
+- `SolidMask` —— 5/10 个有
+- `TrimAudioDuration` —— 5/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/10 个有
+- `Label (rgthree)` —— 4/10 个有
+- `SaveAudio` —— 4/10 个有
+- `RH_LLMAPI_Pro_Node` —— 3/10 个有
+- `HeartMuLa_Generate` —— 2/10 个有
+- `HeartMuLa_Transcribe` —— 2/10 个有
+- `LTXVAddGuide` —— 2/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
+- `PreviewAudio` —— 2/10 个有
+- `SamplerEulerAncestral` —— 2/10 个有
+- `ShowText|pysssss` —— 2/10 个有
+- `SongGeneration_Loader` —— 2/10 个有
+- `SongGeneration_Sampler` —— 2/10 个有
+- `SongGeneration_Stage1` —— 2/10 个有
+- `SongGeneration_Stage2` —— 2/10 个有
+- `Text _O` —— 2/10 个有
+- `ComfySwitchNode` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `LoraLoader` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `TextGenerateLTX2Prompt` —— 1/10 个有
+- `TextInput_` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | simple | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
-| 采样算法 | 3 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 97 | 97 - 97 | 5 | 100% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -89,8 +101,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 simple，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

@@ -1,35 +1,43 @@
 ---
 name: unknown_workflow_generic_508
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8582
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.8625
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Sora2_I2V, SaveImage, SaveVideo, Text Concatenate]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream V4 图生图｜4K画质_2097875367498440705.json, 图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json, 图片生成/图生图/SeedreamV45_ImageToImage_v4.5_2034593511152033794.json, 图片生成/图生图/SeedreamV4_ImageToImage_v4.0_2034593355295891458.json, 图片生成/文生图/06豆包_SeedreamV4_图生图+全节点注释_2058545121876070401.json]
+members: [视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json, 视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json, 视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1996601719746347010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_508
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Seedream V4 图生图｜4K画质_2097875367498440705.json、图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json、图片生成/图生图/SeedreamV45_ImageToImage_v4.5_2034593511152033794.json、图片生成/图生图/SeedreamV4_ImageToImage_v4.0_2034593355295891458.json、图片生成/文生图/06豆包_SeedreamV4_图生图+全节点注释_2058545121876070401.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json、视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json、视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
+- `RH_LLMAPI_NODE`
+- `RH_Sora2_I2V`
 - `SaveImage`
+- `SaveVideo`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV4ImageToImage` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_SeedreamV45ImageToImage` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `ShowText` —— 1/6 个有
 
 ## 典型参数
 

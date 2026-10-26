@@ -3,34 +3,34 @@ name: unknown_workflow_upscale_31
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.944333
-common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.691667
+common_nodes: [DF_Image_scale_to_side, LoadImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/普通放大--不透明1011_2109121126667476994.json, 图片生成/图生图/超分+加噪声增加真实度_1981305628402638849.json, 图片生成/图生图/高清放大_基础版_2068227997240479746.json]
+members: [图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json, 图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json, 图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_31
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/普通放大--不透明1011_2109121126667476994.json、图片生成/图生图/超分+加噪声增加真实度_1981305628402638849.json、图片生成/图生图/高清放大_基础版_2068227997240479746.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json、图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json、图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageUpscaleWithModel`
+- `DF_Image_scale_to_side`
 - `LoadImage`
+- `SUPIR_Upscale`
 - `SaveImage`
-- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerFilter: AddGrain` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
 
 ## 典型参数
 

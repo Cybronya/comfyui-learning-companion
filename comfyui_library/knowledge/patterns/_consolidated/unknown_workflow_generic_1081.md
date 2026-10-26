@@ -3,36 +3,35 @@ name: unknown_workflow_generic_1081
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.926667
-common_nodes: [CR Prompt Text, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
+coverage: 0.563333
+common_nodes: [Comfly_api_set, Comfly_gpt_image_1, LoadImage, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice3 27种语言克隆_2015752927113121794.json, 音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2016067577495162882.json, 音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2021765327427735553.json]
+members: [图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json, 图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json, 图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1081
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 27种语言克隆_2015752927113121794.json、音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2016067577495162882.json、音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2021765327427735553.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json、图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json、图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `FL_CosyVoice3_ModelLoader`
-- `FL_CosyVoice3_ZeroShot`
-- `LoadAudio`
-- `SaveAudio`
+- `Comfly_api_set`
+- `Comfly_gpt_image_1`
+- `LoadImage`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `easy showAnything` —— 2/3 个有
+- `RH_GPT_Image15` —— 1/3 个有
 
 ## 典型参数
 

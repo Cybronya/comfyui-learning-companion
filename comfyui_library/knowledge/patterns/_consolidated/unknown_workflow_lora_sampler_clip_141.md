@@ -3,54 +3,57 @@ name: unknown_workflow_lora_sampler_clip_141
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.951
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, ColorCorrect, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Image Comparer (rgthree), ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAELoader, 取色器_孤海]
+coverage: 0.911
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageConcanate, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json, 图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json]
+members: [图片生成/图生图/Qwen-image2512 最强海报洗图工作流V2（图中中文都能直出） 林耀_2013655374624202754.json, 图片生成/图生图/Qwen-image最强海报洗图工作流V2（图中中文都能直出）_2013258985658388481.json, 图片生成/图生图/Qwen-image海报洗稿工作流V3_2013830516214079489.json, 图片生成/文生图/Qwen-image2512海报洗图工作流_2013414892811853825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_141
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json、图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-image2512 最强海报洗图工作流V2（图中中文都能直出） 林耀_2013655374624202754.json、图片生成/图生图/Qwen-image最强海报洗图工作流V2（图中中文都能直出）_2013258985658388481.json、图片生成/图生图/Qwen-image海报洗稿工作流V3_2013830516214079489.json、图片生成/文生图/Qwen-image2512海报洗图工作流_2013414892811853825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `ColorCorrect`
-- `EditTextEncode_EditUtils`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
+- `EmptySD3LatentImage`
+- `ImageConcanate`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MuyeTextEditOutput`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
+- `RH_Captioner`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `取色器_孤海`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `MaraScottIsEmptyOrNone_v1` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `easy ifElse` —— 3/4 个有
+- `RH_Captioner_Pro` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
@@ -62,9 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 高发问题（4/4 个样本）：Steps较低可能导致细节不足

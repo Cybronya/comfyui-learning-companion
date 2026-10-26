@@ -3,49 +3,61 @@ name: unknown_workflow_lora_sampler_clip_298
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.938
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, CompressImages, ConditioningZeroOut, EmptySD3LatentImage, Float, Int, KSampler, LoraLoaderModelOnly, PlaySound|pysssss, VAEDecode, VAELoader]
+coverage: 0.483
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, INTConstant, ImageScaleToTotalPixels, ImpactControlBridge, ImpactNeg, Int, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PrimitiveBoolean, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZML_AnyTypeSwitchFive, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/文生图/文生图_2049685637300752385.json, 图片生成/文生图/让思想裸奔之写实摄影_文生图_2025791240985387010.json]
+members: [图片生成/文生图/Flux2-Klein-9B&KV一键切换工作流_2033089304238497794.json, 图片生成/文生图/Flux2-Klein_All-In-One工作流_2033169323140845570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_298
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/文生图_2049685637300752385.json、图片生成/文生图/让思想裸奔之写实摄影_文生图_2025791240985387010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B&KV一键切换工作流_2033089304238497794.json、图片生成/文生图/Flux2-Klein_All-In-One工作流_2033169323140845570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `CompressImages`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `Float`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
+- `ImpactControlBridge`
+- `ImpactNeg`
 - `Int`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
+- `KSamplerSelect`
+- `LoadImage`
+- `Lora Loader Stack (rgthree)`
+- `PrimitiveBoolean`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
+- `Text Multiline`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `ZML_AnyTypeSwitchFive`
+- `easy ifElse`
+
+**可变部分**（部分 workflow 才有）：
+- `Logic Comparison AND` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -53,9 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

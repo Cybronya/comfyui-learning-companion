@@ -2,78 +2,83 @@
 name: unknown_workflow_sampler_clip_unet_147
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.9445
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: strong
+coverage: 0.811875
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, GetNode, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json, 图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json, 图片生成/图生图/Flux2 Klein去除水印9B版_2012705879501574145.json, 图片生成/图生图/Flux2 Klein图像编辑-9B版官方版（单图编辑）_2012123953627668482.json, 图片生成/图生图/Flux2-Klein+一键扩图_2013231626309869570.json, 图片生成/图生图/Flux2-klein 【扩图&局部重绘】_2013840320462594049.json, 图片生成/图生图/Flux2-klein 扩图&局部重绘_2013122024448729089.json, 图片生成/图生图/Flux2-klein 扩图_局部重绘_2013083035629002753.json]
+members: [图片生成/图生图/Flux.2-Kelin9b服装花纹图案材质迁移_2059551610786893826.json, 图片生成/图生图/Flux.2-Kelin9b服装花纹图案材质迁移_2064562636724981762.json, 图片生成/图生图/Flux.2-Kelin服装材质花纹替换_2055455131566649345.json, 图片生成/图生图/Flux.2-Kelin服装材质花纹替换_2060199934435094530.json, 图片生成/图生图/flux2-klein提取线稿_2039330469845671938.json, 图片生成/图生图/一键提取线稿，无像素偏移_2039123243243675650.json, 图片生成/图生图/一键提取线稿，无像素偏移_2039168210997616642.json, 图片生成/文生图/Klein——材质替换_2047863366642835457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_147
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json、图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json、图片生成/图生图/Flux2 Klein去除水印9B版_2012705879501574145.json、图片生成/图生图/Flux2 Klein图像编辑-9B版官方版（单图编辑）_2012123953627668482.json、图片生成/图生图/Flux2-Klein+一键扩图_2013231626309869570.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux.2-Kelin9b服装花纹图案材质迁移_2059551610786893826.json、图片生成/图生图/Flux.2-Kelin9b服装花纹图案材质迁移_2064562636724981762.json、图片生成/图生图/Flux.2-Kelin服装材质花纹替换_2055455131566649345.json、图片生成/图生图/Flux.2-Kelin服装材质花纹替换_2060199934435094530.json、图片生成/图生图/flux2-klein提取线稿_2039330469845671938.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RandomNoise`
+- `ModelSamplingAuraFlow`
 - `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/8 个有
-- `GetImageSize` —— 6/8 个有
-- `ImageConcanate` —— 6/8 个有
-- `ColorMatch` —— 4/8 个有
-- `ImagePadForOutpaint` —— 4/8 个有
-- `PreviewImage` —— 4/8 个有
-- `DrawMaskOnImage` —— 3/8 个有
-- `easy seed` —— 3/8 个有
-- `CR Text` —— 2/8 个有
-- `JWFloat` —— 2/8 个有
-- `easy imageSize` —— 2/8 个有
-- `BasicScheduler` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `ImageSharpen` —— 1/8 个有
-- `ImageUpscaleWithModel` —— 1/8 个有
-- `JWInteger` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `LayerFilter: Sharp & Soft` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `MaskColorize` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `UpscaleModelLoader` —— 1/8 个有
-- `图像缩放V2_孤海` —— 1/8 个有
+- `CR Prompt Text` —— 5/8 个有
+- `Image Input Switch` —— 5/8 个有
+- `ImageUpscaleWithModel` —— 5/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `UpscaleModelLoader` —— 5/8 个有
+- `ZML_ArithmeticComparison` —— 5/8 个有
+- `easy imageSizeByLongerSide` —— 5/8 个有
+- `easy int` —— 5/8 个有
+- `ttN concat` —— 5/8 个有
+- `Int` —— 4/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 7 | 8 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.3 | 8 | 87% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 7，8 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.3，8 个样本，取值集中（一致性 87%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

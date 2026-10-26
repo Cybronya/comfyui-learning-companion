@@ -3,97 +3,73 @@ name: text_to_image_video_upscale_latent_upscale_25
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.614
-common_nodes: [Any Switch (rgthree), Apply Whisper, AudioAdjustVolume, CFGGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, GroupSwitcher, ImageFromBatch, ImageResizeKJv2, ImageScaleBy, JjkText, KSampler, KSamplerSelect, LTX2LoraLoaderAdvanced, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXLatentAnchorAware, LTXTextAttentionAmplifier, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVLatentUpsamplerTiled, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, RandomNoise, STGGuiderAdvanced, SamplerCustomAdvanced, SaveAudioAdvanced, SetLatentNoiseMask, SetNode, ShowText|pysssss, Sigmas Easing, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy float, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.947
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, EmptyLatentImage, Float, GetImageSizeAndCount, Int, JjkText, KSampler, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSetAudioRefTokens, LTXVTiledVAEDecode, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ManualSigmas, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/口播数字人｜LTX2.3 Eros首尾帧一致V1.3 高清直出_2089766191563894785.json, 数字人/数字人/数字人LTX2.3 Eros首尾帧一致_2092114420569825281.json]
+members: [数字人/数字人/lipdub真人对口型｜Ltx2.3数字人视频生视频_2095804952722628610.json, 数字人/数字人/真人对口型Ltx2.3 lipdub｜口型同步视频生成_2095569587948576770.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_25
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/口播数字人｜LTX2.3 Eros首尾帧一致V1.3 高清直出_2089766191563894785.json、数字人/数字人/数字人LTX2.3 Eros首尾帧一致_2092114420569825281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/lipdub真人对口型｜Ltx2.3数字人视频生视频_2095804952722628610.json、数字人/数字人/真人对口型Ltx2.3 lipdub｜口型同步视频生成_2095569587948576770.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Apply Whisper`
-- `AudioAdjustVolume`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `GroupSwitcher`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
+- `Float`
+- `GetImageSizeAndCount`
+- `Int`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTX2LoraLoaderAdvanced`
 - `LTX2SamplingPreviewOverride`
 - `LTXAVTextEncoderLoader`
-- `LTXLatentAnchorAware`
-- `LTXTextAttentionAmplifier`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
-- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
 - `LTXVLatentUpsampler`
-- `LTXVLatentUpsamplerTiled`
 - `LTXVSeparateAVLatent`
+- `LTXVSetAudioRefTokens`
+- `LTXVTiledVAEDecode`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
 - `RandomNoise`
-- `STGGuiderAdvanced`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveAudioAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `ShowText|pysssss`
-- `Sigmas Easing`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy float`
-- `easy showAnything`
+- `VHS_VideoInfo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadVideoUI` —— 1/2 个有
 
 ## 典型参数
 
@@ -101,8 +77,6 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 宽度 | 80 | - | 2 | 100% |
 | 高度 | 80 | - | 2 | 100% |
-| LoRA 模型强度 | 0.58 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
 | 采样算法 | er_sde | - | 2 | 100% |
@@ -119,8 +93,6 @@ source: knowledge_consolidation
 
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.58，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%

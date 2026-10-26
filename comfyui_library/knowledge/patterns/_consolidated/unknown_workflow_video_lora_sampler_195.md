@@ -1,68 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_195
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8095
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.515818
+common_nodes: [GetNode, ImpactSwitch, LoadWanVideoT5TextEncoder, PrimitiveInt, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy negative, easy positive]
 problems: []
 missing: []
-members: [视频生成/图生视频/ani，ani全能视频S自选这些的的wan2.1自用加速7步_1944806594343522306.json, 视频生成/图生视频/lightx2v加速24fps版高运动最高质量版图生视频V1_1934996455494983682.json, 视频生成/图生视频/【加速版】lightx2v 16fps 图生视频_1936041797762076674.json, 视频生成/图生视频/万能图生视频_Aniwan_1945716479117447170.json, 视频生成/图生视频/动漫图生视频 wan ani全能视频S_1945116426497871874.json, 视频生成/图生视频/图生视频 Wan I2V nightly_1913661782513385473.json, 视频生成/图生视频/图生视频 首尾帧 Wan FLF nightly_1913309276788719618.json, 视频生成/图生视频/生产级图生视频 Wan I2V API latent output_1917988631829745665.json, 视频生成/图生视频/生产级图生视频 Wan I2V API latent output_2050270690158358530.json, 视频生成/图生视频/视频转绘 Fun Control nightly_1922720148057198593.json]
+members: [视频生成/图生视频/wan2.2真实动态首尾帧新玩法_1969269601903276034.json, 视频生成/图生视频/图生视频-Wan2.2(KJ)_1953403318607511553.json, 视频生成/图生视频/图生视频-Wan2.2(极致效果)_1952225607566438401.json, 视频生成/图生视频/图生视频-Wan2.2(极致效果)_1967507218427994113.json, 视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1953348116592427010.json, 视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1955836777492725762.json, 视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1967511175430803457.json, 视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1976833467906506754.json, 视频生成/图生视频/首尾帧视频-Wan2.2｜高清一致性_1955508156764864513.json, 视频生成/文生视频/文生视频-Wan2.2(极致效果)_1952262575440474114.json, 视频生成/文生视频/文生视频-Wan2.2(极致效果)_1966334312981442561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_195
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/ani，ani全能视频S自选这些的的wan2.1自用加速7步_1944806594343522306.json、视频生成/图生视频/lightx2v加速24fps版高运动最高质量版图生视频V1_1934996455494983682.json、视频生成/图生视频/【加速版】lightx2v 16fps 图生视频_1936041797762076674.json、视频生成/图生视频/万能图生视频_Aniwan_1945716479117447170.json、视频生成/图生视频/动漫图生视频 wan ani全能视频S_1945116426497871874.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/wan2.2真实动态首尾帧新玩法_1969269601903276034.json、视频生成/图生视频/图生视频-Wan2.2(KJ)_1953403318607511553.json、视频生成/图生视频/图生视频-Wan2.2(极致效果)_1952225607566438401.json、视频生成/图生视频/图生视频-Wan2.2(极致效果)_1967507218427994113.json、视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1953348116592427010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+全部 11 个 workflow 都包含：
+- `GetNode`
+- `ImpactSwitch`
 - `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy negative`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 9/10 个有
-- `WanVideoSLG` —— 8/10 个有
-- `LoadWanVideoClipTextEncoder` —— 7/10 个有
-- `WanVideoExperimentalArgs` —— 7/10 个有
-- `WanVideoTorchCompileSettings` —— 7/10 个有
-- `WanVideoVRAMManagement` —— 7/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 5/10 个有
-- `GIMMVFI_interpolate` —— 5/10 个有
-- `WanVideoTeaCache` —— 4/10 个有
-- `CLIPVisionLoader` —— 3/10 个有
-- `Text Multiline` —— 3/10 个有
-- `WanVideoFreeInitArgs` —— 3/10 个有
-- `ImageBlur` —— 2/10 个有
-- `JWInteger` —— 2/10 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 2/10 个有
-- `SaveImage` —— 2/10 个有
-- `SaveLatent` —— 2/10 个有
-- `CR Value` —— 1/10 个有
-- `LayerUtility: PurgeVRAM` —— 1/10 个有
-- `LayerUtility: TextBox` —— 1/10 个有
-- `VHS_LoadVideo` —— 1/10 个有
-- `WanVideoControlEmbeds` —— 1/10 个有
-- `WanVideoEasyCache` —— 1/10 个有
-- `WanVideoEncode` —— 1/10 个有
+- `GetBoolFromJson` —— 10/11 个有
+- `GetFloatFromJson` —— 10/11 个有
+- `GetIntFromJson` —— 10/11 个有
+- `LoadJsonFromText` —— 10/11 个有
+- `easy ifElse` —— 10/11 个有
+- `easy mathInt` —— 10/11 个有
+- `Int` —— 9/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
+- `LoadImage` —— 9/11 个有
+- `WanVideoImageToVideoEncode` —— 9/11 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 6/11 个有
+- `JWStringSplit` —— 2/11 个有
+- `PrimitiveString` —— 2/11 个有
+- `WanVideoEmptyEmbeds` —— 2/11 个有
+- `easy convertAnything` —— 2/11 个有
+- `LoadWanVideoClipTextEncoder` —— 1/11 个有
+- `WanVideoClipVisionEncode` —— 1/11 个有
 
 ## 典型参数
 

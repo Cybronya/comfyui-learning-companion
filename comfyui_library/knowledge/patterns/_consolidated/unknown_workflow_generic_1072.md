@@ -3,36 +3,28 @@ name: unknown_workflow_generic_1072
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.733333
-common_nodes: [ACEStepGen, GenerationParameters, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
+coverage: 0.889
+common_nodes: [RH_RhartImageNG31FlashOfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step Lyrics AI歌曲创作工作流_1923027778944626689.json, 音频生成/音频生成/ACE-Step 中英文歌曲创作_1955984833115815937.json, 音频生成/音频生成/ACE-Step 中英文歌曲创作_1972274089572429826.json]
+members: [图片生成/文生图/NG31Flash_OfficialTextToImage_v3.1_2033838502181343233.json, 图片生成/文生图/全能图片V2-文生图-官方稳定版 API专用_2082360330495287298.json, 图片生成/文生图/全能图片V2-文生图-官方稳定版_2061684643153408002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1072
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/ACE-Step Lyrics AI歌曲创作工作流_1923027778944626689.json、音频生成/音频生成/ACE-Step 中英文歌曲创作_1955984833115815937.json、音频生成/音频生成/ACE-Step 中英文歌曲创作_1972274089572429826.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/NG31Flash_OfficialTextToImage_v3.1_2033838502181343233.json、图片生成/文生图/全能图片V2-文生图-官方稳定版 API专用_2082360330495287298.json、图片生成/文生图/全能图片V2-文生图-官方稳定版_2061684643153408002.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ACEStepGen`
-- `GenerationParameters`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CR Text` —— 1/3 个有
+- `RH_RhartImageNG31FlashOfficialTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

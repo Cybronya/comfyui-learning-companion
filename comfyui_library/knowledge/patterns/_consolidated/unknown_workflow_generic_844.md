@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_844
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.835667
-common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
+coverage: 0.68
+common_nodes: [CR Text, LoadImage, RH_Sora2_I2V_PRO, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
+members: [视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json, 视频生成/图生视频/电商图生视频_2032120133279293442.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_844
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json、视频生成/图生视频/电商图生视频_2032120133279293442.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 4 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `MiniMaxH3PromptEnhancerT8`
-- `PreviewAny`
-- `RH_Translator`
-- `easy saveText`
+- `RH_Sora2_I2V_PRO`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `easy imageSave` —— 1/3 个有
+- `ImpactSwitch` —— 2/4 个有
+- `RH_Sora2_I2V` —— 2/4 个有
+- `easy string` —— 2/4 个有
 
 ## 典型参数
 

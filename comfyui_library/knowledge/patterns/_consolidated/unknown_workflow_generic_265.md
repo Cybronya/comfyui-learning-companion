@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_265
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.68025
-common_nodes: [FishS2MultiSpeakerTTS, FishS2VoiceCloneTTS, PrimitiveStringMultiline, RHHiddenNodes, SaveAudioMP3, ShowText|pysssss, WujiAudioLoader, WujiCleaner]
+coverage: 0.972222
+common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json, 音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json, 音频生成/音频生成/单人_双人语音 复制情绪生成音频 FishAudio S2 TTS自适应情绪跨语言音频克隆_2041317897536016386.json, 音频生成/音频生成/自适应情绪跨语言音频克隆（单人or双人）_2045491676369657858.json, 音频生成/音频生成/（单人or双人）FishAudio S2 TTS自适应情绪跨语言音频克隆工作流_2040380303071514627.json]
+members: [视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json, 视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json, 视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json, 视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json, 视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json, 视频生成/图生视频/支持多图生视频全能视频SD2.0 (体验版)_2035937654084214786.json, 视频生成/图生视频/豆包seedance2.0_2036359930034262018.json, 视频生成/图生视频/超能视频2.0，不排队_2035380351849209858.json, 视频生成/文生视频/(支持真人)超能视频2.0视频生成_2034258331358994434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_265
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json、音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json、视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json、视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json、视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json、视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `FishS2MultiSpeakerTTS`
-- `FishS2VoiceCloneTTS`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
-- `WujiAudioLoader`
-- `WujiCleaner`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_CinematicVideoGenerator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `LoadImage` —— 1/8 个有
+- `CR Text` —— 2/9 个有
+- `easy seed` —— 1/9 个有
 
 ## 典型参数
 

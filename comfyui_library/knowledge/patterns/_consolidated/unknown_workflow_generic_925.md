@@ -3,37 +3,37 @@ name: unknown_workflow_generic_925
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.692
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss]
+coverage: 0.874333
+common_nodes: [LoadImage, RHLLMChatNode, SaveImage, ShowText|pysssss, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json, 图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json, 图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json]
+members: [图片生成/反推提示词/api直接反推_2063883890095382530.json, 图片生成/反推提示词/故事板出视频提示词_2069276070452482050.json, 图片生成/图生图/出故事板+故事板提示词_2069265955523485698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_925
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json、图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json、图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/api直接反推_2063883890095382530.json、图片生成/反推提示词/故事板出视频提示词_2069276070452482050.json、图片生成/图生图/出故事板+故事板提示词_2069265955523485698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `RHLLMChatNode`
 - `SaveImage`
 - `ShowText|pysssss`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `RH_RhartImageG2ImageToImage` —— 2/3 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 2/3 个有
-- `RH_RhartImageG2TextToImage` —— 1/3 个有
+- `Save Text File` —— 2/3 个有
+- `RHSettingsNode` —— 1/3 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/3 个有
+- `SaveText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,68 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_9
 type: Unknown Workflow
-frequency: 23
+frequency: 24
 level: strong
-coverage: 0.855304
-common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.721208
+common_nodes: [CLIPLoader, DF_Text_Box, GoohaiRatioAndResolution, GoohaiRouteBlocker, KSampler, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, RestoreQwenImage21GH, SaveImage, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/千问2.1图像编辑工作流｜多图参考精准修改_2104511260204290049.json, 图片生成/图生图/千问_2104563424893161474.json, 图片生成/图生图/千问image2.1三图编辑_2101912050518814722.json, 图片生成/图生图/千问image2.1单图编辑_2101910795029409794.json, 图片生成/图生图/千问image2.1双图编辑_2101908220829851649.json, 图片生成/图生图/千问工作流_2102311506384867330.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2102556544050225153.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105647767073935362.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105680844940734465.json, 图片生成/图生图/开源最强图片模型 Qwen-image2.1  qwen2.1图生图，图像编辑_2112866530273882114.json, 图片生成/图生图/开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json, 图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102152565902368769.json, 图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2104737905183903746.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2105235774793928705.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2105274061088706562.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2111625667644317697.json, 图片生成/图生图/换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2102936104516280321.json, 图片生成/图生图/模特换装 Model Outfit Changes Qwen+Image+2.1+图片换装_2105094118673309698.json, 图片生成/文生图/Qwen Image 2.1多图编辑多人合成合照单人合成_2108894186039762945.json, 图片生成/文生图/千问 qwen image 2.1 多图编辑 图片编辑 +全节点注释_2101953245253033985.json, 视频生成/图生视频/Qwen_Image_2.1图片透明分层！_生成透明图层_2104453762017484802.json, 视频生成/图生视频/换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2102960653840510977.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json, 图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json, 图片生成/图生图/AI图像创作丨Qwen Image 2.1丨文生图 _ 图像编辑_2112739173701607425.json, 图片生成/图生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2111365987026169857.json, 图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2110913318310469634.json, 图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2111733672293519361.json, 图片生成/图生图/Qwen Image 2.1 图像扩展_2107511073355161601.json, 图片生成/图生图/Qwen Image 2.1 图像编辑API测试_2113833350678011906.json, 图片生成/图生图/Qwen Image 2.1 图像编辑、多图编辑_2109090992728137730.json, 图片生成/图生图/Qwen Image 2.1 局部修改_2107669259315924994.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2111080180189061121.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2113277852639653890.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2113870876239286274.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json, 图片生成/图生图/Qwen Image 2.1 文生、多图像编辑一体化_2105870849386573825.json, 图片生成/图生图/Qwen Image 2.1 文生图_单图编辑、多图编辑图像编辑一体化_2105160468577996801.json, 图片生成/图生图/Qwen-Image-2.1_T8加速简洁版中文繁体招牌王_2114260404120678402.json, 图片生成/图生图/Qwen_Image_2.1_局部修改_2111275285760012290.json, 图片生成/图生图/服装迁移图像编辑Clothing Transfer Image Editing Qwen  2.1_2111978235830562818.json, 图片生成/图生图/服装迁移图像编辑一体化Qwen Image 2.1_2110580002868781057.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2108120997114245121.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2110936615257464834.json, 图片生成/文生图/Qwen Image 2.1 文生+图像编辑一体化_2105178276711976962.json, 图片生成/文生图/Qwen-Image-2.1 T8加速简洁版（中文繁体招牌王）_2111331245375451137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/千问2.1图像编辑工作流｜多图参考精准修改_2104511260204290049.json、图片生成/图生图/千问_2104563424893161474.json、图片生成/图生图/千问image2.1三图编辑_2101912050518814722.json、图片生成/图生图/千问image2.1单图编辑_2101910795029409794.json、图片生成/图生图/千问image2.1双图编辑_2101908220829851649.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json、图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json、图片生成/图生图/AI图像创作丨Qwen Image 2.1丨文生图 _ 图像编辑_2112739173701607425.json、图片生成/图生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2111365987026169857.json、图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2110913318310469634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：24
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 24 个 workflow 都包含：
 - `CLIPLoader`
+- `DF_Text_Box`
+- `GoohaiRatioAndResolution`
+- `GoohaiRouteBlocker`
 - `KSampler`
-- `LoadImage`
+- `QwenImage21BlockCacheT8`
+- `QwenImage21SageAttentionT8`
+- `QwenImage21SpectrumT8`
+- `QwenImagePromptOptimizer`
+- `RestoreQwenImage21GH`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21GH`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 22/23 个有
-- `EmptyLatentImage` —— 22/23 个有
-- `QwenImage21Cache` —— 22/23 个有
-- `ResolutionSelector` —— 19/23 个有
-- `TextGenerateLTX2Prompt` —— 15/23 个有
-- `BatchImagesNode` —— 13/23 个有
-- `JjkText` —— 12/23 个有
-- `CR Text` —— 9/23 个有
-- `easy imageConcat` —— 4/23 个有
-- `孤海注释` —— 4/23 个有
-- `EmptyImage` —— 3/23 个有
-- `Note Plus (mtb)` —— 3/23 个有
-- `PreviewImage` —— 3/23 个有
-- `Anything Everywhere3` —— 1/23 个有
-- `CR Prompt Text` —— 1/23 个有
-- `PreviewAny` —— 1/23 个有
-- `Text Multiline` —— 1/23 个有
-- `TextCombinerSix` —— 1/23 个有
+- `LoadImageGoohai` —— 22/24 个有
+- `Image Comparer (rgthree)` —— 21/24 个有
+- `LoadImage` —— 21/24 个有
+- `忽略多组孤海` —— 21/24 个有
+- `ShowText|pysssss` —— 20/24 个有
+- `GetNode` —— 19/24 个有
+- `SetNode` —— 19/24 个有
+- `孤海注释` —— 17/24 个有
+- `ComfySwitchNode` —— 5/24 个有
+- `PrimitiveBoolean` —— 5/24 个有
+- `GoohaiAnyExists` —— 4/24 个有
+- `GoohaiDisplayAny` —— 4/24 个有
+- `LoraLoaderModelOnly` —— 4/24 个有
+- `easy ifElse` —— 4/24 个有
+- `CM_FloatToInt` —— 1/24 个有
+- `PreviewImage` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 50 | 20 - 50 | 23 | 68% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 23 | 71% |
-| 采样算法 | euler | - | 23 | 96% |
-| 调度器 | simple | - | 23 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 22 | 100% |
-| 高度 | 1024 | 1024 - 1624 | 22 | 88% |
+| 采样步数 | 30 | 30 - 30 | 24 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 24 | 100% |
+| 采样算法 | euler | - | 24 | 100% |
+| 调度器 | simple | - | 24 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
 
 ## 常见问题
 
@@ -70,10 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 20 - 50，23 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，23 个样本
-- 采样算法 最常用 euler，23 个样本，一致性 96%
-- 调度器 最常用 simple，23 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，22 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1624，22 个样本，取值集中（一致性 88%）
+- 采样步数 中位数 30，观测区间 30 - 30，24 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，24 个样本，一致性 100%
+- 调度器 最常用 simple，24 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）

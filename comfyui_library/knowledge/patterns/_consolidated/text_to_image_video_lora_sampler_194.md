@@ -1,83 +1,99 @@
 ---
 name: text_to_image_video_lora_sampler_194
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8745
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageConcanate, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+frequency: 3
+level: strong
+coverage: 0.874667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json, 数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json]
+members: [视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json, 视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json, 视频生成/视频生视频/MiniMax H3视频参考生视频加速版开源工作流_视频生视频方案_2106143392806821889.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_194
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json、数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json、视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json、视频生成/视频生视频/MiniMax H3视频参考生视频加速版开源工作流_视频生视频方案_2106143392806821889.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：强结论
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `ImageConcanate`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RIFE VFI`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AdvancedLivePortrait` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CR Value` —— 1/2 个有
-- `ExpressionEditor` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReActorFaceSwap` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `EasyCache` —— 2/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `JWFloatToString` —— 1/3 个有
+- `LoadVideoUI` —— 1/3 个有
+- `MiniMaxH3SigmaShift` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `NotifyPixaroma` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RHLLMChatNode` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SolAttnPatch` —— 1/3 个有
+- `TextCombinerTwo` —— 1/3 个有
+- `VHS_LoadAudioUpload` —— 1/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
+- `easy getNode` —— 1/3 个有
+- `easy setNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

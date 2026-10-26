@@ -3,72 +3,82 @@ name: text_to_image_video_lora_sampler_88
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.853111
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.636222
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, ControlNextGetPoses, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJ, ImageResizeKJv2, ImpactSwitch, Int, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive float [Crystools], Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoSLG, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json, 视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json, 视频生成/图生视频/视频换背景提示词编辑｜MiniMaxH3视频生视频场景一键替换_2090468441949036546.json, 视频生成/图生视频/视频换背景支持参考图｜MiniMaxH3视频编辑实战_2101143111773802497.json, 视频生成/图生视频/视频换背景编辑｜MiniMaxH3人物特效动作迁移处理_2094593810511781890.json, 视频生成/图生视频/视频换背景随意换｜MiniMaxH3 视频编辑动作迁移_2096263348093542402.json, 视频生成/图生视频/视频编辑MiniMax H3视频换背景工作流，人物类特效视频运镜图生视频方案_2108448538760933377.json, 视频生成/图生视频/视频编辑换装动作迁移｜MiniMaxH3全节点注释版_2090911739268390914.json, 视频生成/视频生视频/MiniMax H3视频换背景视频编辑工作流_人物特效视频生视频处理工具_2106155529885282305.json]
+members: [视频生成/图生视频/30秒整条视频一键复刻｜Wan2.2动作迁移真实度拉满图生视频_2092135573669629954.json, 视频生成/图生视频/Wan2.2动作迁移30s复刻｜整条视频一键操作真实度拉满_2089492438435065857.json, 视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2089707963748540418.json, 视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2092133210959466497.json, 视频生成/图生视频/Wan2.2动作迁移单次复刻30s｜整条视频一键真实度拉满_2095127512291565569.json, 视频生成/图生视频/Wan2.2单次复刻30秒时长｜动作迁移整条视频一键真实度拉满_2092005020848971778.json, 视频生成/图生视频/wan2.2动作迁移打造真实感视频 真人级动作复刻效果_2094816106904113154.json, 视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json, 视频生成/图生视频/真实感动作迁移｜wan2.2图生视频一键生成_2092165775426674689.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json、视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json、视频生成/图生视频/视频换背景提示词编辑｜MiniMaxH3视频生视频场景一键替换_2090468441949036546.json、视频生成/图生视频/视频换背景支持参考图｜MiniMaxH3视频编辑实战_2101143111773802497.json、视频生成/图生视频/视频换背景编辑｜MiniMaxH3人物特效动作迁移处理_2094593810511781890.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/30秒整条视频一键复刻｜Wan2.2动作迁移真实度拉满图生视频_2092135573669629954.json、视频生成/图生视频/Wan2.2动作迁移30s复刻｜整条视频一键操作真实度拉满_2089492438435065857.json、视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2089707963748540418.json、视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2092133210959466497.json、视频生成/图生视频/Wan2.2动作迁移单次复刻30s｜整条视频一键真实度拉满_2095127512291565569.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `ColorMatch`
+- `ControlNextGetPoses`
 - `EmptyLatentImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `Int`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `Primitive float [Crystools]`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoBlockSwap`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 8/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
-- `VRAM_Debug` —— 8/9 个有
-- `孤海注释` —— 8/9 个有
-- `VAEDecodeAudio` —— 7/9 个有
-- `GetNode` —— 6/9 个有
-- `ImageConcanate` —— 6/9 个有
-- `SetNode` —— 6/9 个有
-- `LoadImage` —— 4/9 个有
-- `CR Text` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `AddLabel` —— 1/9 个有
-- `EasyCache` —— 1/9 个有
-- `GetCurrentTimeNode` —— 1/9 个有
-- `GetImageSize` —— 1/9 个有
-- `LazySwitch1way` —— 1/9 个有
-- `ModelPreviewOverrideKJ` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `PurgeVRAM_UTK` —— 1/9 个有
-- `SomethingToString` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 7/9 个有
+- `ImageBatchMulti` —— 7/9 个有
+- `RepeatImageBatch` —— 7/9 个有
+- `easy forLoopEnd` —— 7/9 个有
+- `easy forLoopStart` —— 7/9 个有
+- `easy showAnything` —— 7/9 个有
+- `WanVideoSetBlockSwap` —— 2/9 个有
 
 ## 典型参数
 

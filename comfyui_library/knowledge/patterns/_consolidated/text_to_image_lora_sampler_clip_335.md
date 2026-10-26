@@ -1,88 +1,84 @@
 ---
 name: text_to_image_lora_sampler_clip_335
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.7982
-common_nodes: [CLIPLoader, CLIPTextEncode, ConstrainImage|pysssss, EmptyLatentImage, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleBy, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy joinImageBatch, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8635
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/2K高清分镜切割机｜图生图一键拆分镜帧出图_2092142854641635329.json, 图片生成/图生图/分镜切割机-2k_2087408324949139457.json, 图片生成/图生图/新春贺岁变身相机｜表情包人像写真妆容图生图_2092161264884731906.json, 图片生成/图生图/新春贺岁表情包变身相机人像写真妆容图生图_2087414745233186817.json, 图片生成/图生图/表情包变身相机 一键新春贺岁妆容人像写真生成_2110350405938012162.json]
+members: [图片生成/图生图/Qwen image2.1人物写真套图，图生图批量出多角度写真_2112287252721262594.json, 图片生成/图生图/Qwen image2.1人物写真套图｜同角色多场景成套出图｜写真集批量生产_2112093588367691778.json, 图片生成/图生图/Qwen image2.1换头换脸｜注释自带模型LORA下载链接_2111328917192798209.json, 图片生成/图生图/Qwen2.1多图编辑工作流 多张输入精准改图_2105364467491106818.json, 图片生成/图生图/Qwen2.1多图编辑工作流｜局部重绘抠图样样精通_2105245280928092162.json, 图片生成/图生图/Qwenimage2.1漫转真加换头加写真 动漫转真人方案_2109717052633206786.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_335
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2K高清分镜切割机｜图生图一键拆分镜帧出图_2092142854641635329.json、图片生成/图生图/分镜切割机-2k_2087408324949139457.json、图片生成/图生图/新春贺岁变身相机｜表情包人像写真妆容图生图_2092161264884731906.json、图片生成/图生图/新春贺岁表情包变身相机人像写真妆容图生图_2087414745233186817.json、图片生成/图生图/表情包变身相机 一键新春贺岁妆容人像写真生成_2110350405938012162.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1人物写真套图，图生图批量出多角度写真_2112287252721262594.json、图片生成/图生图/Qwen image2.1人物写真套图｜同角色多场景成套出图｜写真集批量生产_2112093588367691778.json、图片生成/图生图/Qwen image2.1换头换脸｜注释自带模型LORA下载链接_2111328917192798209.json、图片生成/图生图/Qwen2.1多图编辑工作流 多张输入精准改图_2105364467491106818.json、图片生成/图生图/Qwen2.1多图编辑工作流｜局部重绘抠图样样精通_2105245280928092162.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConstrainImage|pysssss`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Get Image Size`
 - `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RHHiddenNodes`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy joinImageBatch`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/5 个有
-- `easy anythingIndexSwitch` —— 3/5 个有
-- `CR Image Grid Panel` —— 2/5 个有
-- `ImageListToBatch+` —— 2/5 个有
+- `PreviewImage` —— 4/6 个有
+- `ResolutionSelector` —— 4/6 个有
+- `Anything Everywhere3` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `ProcessString` —— 3/6 个有
+- `RHLLMChatNode` —— 3/6 个有
+- `easy promptLine` —— 3/6 个有
+- `RH_DLSS5Enhance` —— 2/6 个有
+- `VOSR2ModelLoader` —— 2/6 个有
+- `VOSR2Upscale` —— 2/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

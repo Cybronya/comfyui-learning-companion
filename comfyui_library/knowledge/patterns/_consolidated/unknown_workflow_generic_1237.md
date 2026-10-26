@@ -3,38 +3,28 @@ name: unknown_workflow_generic_1237
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [AIO_Preprocessor, Gemini3ImageNode, Gemini_Image_API, ImageBatchConcatNode, LoadImage, NanoBananaAIO, NanoBananaBatchProcessor, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage, Text]
+coverage: 1
+common_nodes: [KlingOmniProTextToVideoNode, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json, 图片生成/文生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json]
+members: [comfyui-workflow-templates-json/api_kling_o3_t2v.json, comfyui-workflow-templates-json/api_kling_omni_t2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1237
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json、图片生成/文生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_o3_t2v.json、comfyui-workflow-templates-json/api_kling_omni_t2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `Gemini3ImageNode`
-- `Gemini_Image_API`
-- `ImageBatchConcatNode`
-- `LoadImage`
-- `NanoBananaAIO`
-- `NanoBananaBatchProcessor`
-- `PreviewImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_Nano_Banana2_Gemini31Flash_Batch`
-- `SaveImage`
-- `Text`
+- `KlingOmniProTextToVideoNode`
+- `SaveVideo`
 
 ## 典型参数
 

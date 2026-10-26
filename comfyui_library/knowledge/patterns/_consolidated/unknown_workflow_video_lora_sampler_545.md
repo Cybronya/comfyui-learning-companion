@@ -3,64 +3,68 @@ name: unknown_workflow_video_lora_sampler_545
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.84925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.938
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MINIMAX-H3 多参+二采2K直出-官方API_2086843177985732610.json, 视频生成/文生视频/MINIMAX-H3 多参+高清2采工作流_2084593623919845377.json, 视频生成/文生视频/MiniMax+H3+多参考生视频双采放大高清流+Multi_Ref+Video+Gen_2087401084498309122.json, 视频生成/文生视频/MiniMax+H3+文生_图生视频_首尾帧+双采高清加速版+_2087401112684027906.json]
+members: [视频生成/图生视频/Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966481669362495490.json, 视频生成/图生视频/WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json, 视频生成/图生视频/Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.json, 视频生成/图生视频/Wan2.2_Fun-VACE_首尾帧+动作控制+视频角色替换_1967688435714711553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_545
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3 多参+二采2K直出-官方API_2086843177985732610.json、视频生成/文生视频/MINIMAX-H3 多参+高清2采工作流_2084593623919845377.json、视频生成/文生视频/MiniMax+H3+多参考生视频双采放大高清流+Multi_Ref+Video+Gen_2087401084498309122.json、视频生成/文生视频/MiniMax+H3+文生_图生视频_首尾帧+双采高清加速版+_2087401112684027906.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966481669362495490.json、视频生成/图生视频/WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json、视频生成/图生视频/Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.json、视频生成/图生视频/Wan2.2_Fun-VACE_首尾帧+动作控制+视频角色替换_1967688435714711553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `VAEEncode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
+- `DWPreprocessor` —— 3/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `ImageCompositeMasked` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `MaskToImage` —— 3/4 个有
+- `PointsEditor` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
 - `VHS_LoadVideo` —— 3/4 个有
-- `DiffusionModelLoaderKJ` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `RunningHub Deepcleaner` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `UniBlockSwap` —— 2/4 个有
-- `VAEDecode` —— 2/4 个有
-- `VAEEncodeAudio` —— 2/4 个有
-- `CS-MultiImageLoader` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `RH_MinimaxHailuoH3RegenerationMultimodalToVideo` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
+- `VHS_VideoInfo` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,31 +3,35 @@ name: unknown_workflow_generic_1075
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.916667
-common_nodes: [SaveAudioMP3, SparkTTS_VoiceCreator]
+coverage: 0.869
+common_nodes: [EmptyImage, JWInteger, LoadVideo, PreviewImage, RH_Astra, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI声音创造（男女各25种声音）_1981387566542929921.json, 音频生成/音频生成/AI声音生成器_2014666051899891713.json, 音频生成/音频生成/声音_2018550234237902850.json]
+members: [图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json, 视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json, 视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1075
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI声音创造（男女各25种声音）_1981387566542929921.json、音频生成/音频生成/AI声音生成器_2014666051899891713.json、音频生成/音频生成/声音_2018550234237902850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json、视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json、视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `SaveAudioMP3`
-- `SparkTTS_VoiceCreator`
+- `EmptyImage`
+- `JWInteger`
+- `LoadVideo`
+- `PreviewImage`
+- `RH_Astra`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 2/3 个有
 
 ## 典型参数
 

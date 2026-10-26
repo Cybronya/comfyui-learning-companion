@@ -1,57 +1,37 @@
 ---
 name: unknown_workflow_generic_488
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.809
-common_nodes: [DF_Integer, ImageCASharpening+, ImageConcatMulti, ImageListToImageBatch, ImpactMinMax, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PreviewImage, RH_Translator, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed, easy clearCacheAll, easy imageBatchToImageList, easy imageSize]
+coverage: 0.824
+common_nodes: [LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V12 4k服装上身_1991771005792235522.json, 图片生成/图生图/FluxKontext pro+高清放大（超高效）_1962366519088910337.json, 图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物多图编辑+可选4k高清放大_1960610141710278658.json, 图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物超多图编辑+可选4k高清放大_1961249181384032258.json, 图片生成/图生图/迄今超强全能图片2极速出图_Pro谷歌大香蕉一句话对图像编辑万物单_双图编辑+可选4k高清放大_1960707128661094401.json]
+members: [图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json, 图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json, 图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json, 图片生成/文生图/image2文生图节点_2080482425800577025.json, 图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json, 图片生成/文生图/全能图片GGPPTT-image2.5-文生图+图片编辑_2097495837743075330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_488
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/-全能图片V12 4k服装上身_1991771005792235522.json、图片生成/图生图/FluxKontext pro+高清放大（超高效）_1962366519088910337.json、图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物多图编辑+可选4k高清放大_1960610141710278658.json、图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物超多图编辑+可选4k高清放大_1961249181384032258.json、图片生成/图生图/迄今超强全能图片2极速出图_Pro谷歌大香蕉一句话对图像编辑万物单_双图编辑+可选4k高清放大_1960707128661094401.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json、图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json、图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json、图片生成/文生图/image2文生图节点_2080482425800577025.json、图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DF_Integer`
-- `ImageCASharpening+`
-- `ImageConcatMulti`
-- `ImageListToImageBatch`
-- `ImpactMinMax`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `MathExpression|pysssss`
 - `PreviewImage`
-- `RH_Translator`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageBatchToImageList`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 4/5 个有
-- `RH_LLMAPI_NODE` —— 4/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `RH_Nano_Banana_Image2Image` —— 3/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `RH_ComfyFluxKontext` —— 1/5 个有
+- `RH_RhartImageG2TextToImage` —— 5/6 个有
+- `LayerUtility: TextBox` —— 3/6 个有
+- `CR Prompt Text` —— 1/6 个有
 
 ## 典型参数
 

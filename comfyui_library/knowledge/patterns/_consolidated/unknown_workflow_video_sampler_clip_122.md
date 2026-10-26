@@ -2,70 +2,87 @@
 name: unknown_workflow_video_sampler_clip_122
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.9558
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, UNETLoader, VAELoader, VHS_VideoCombine]
-problems: [发现KSampler但没有VAEDecode]
+level: strong
+coverage: 0.5666
+common_nodes: [CLIPLoader, CLIPTextEncode, FloatConstant, GetNode, INTConstant, ImageFromBatch+, JjkShowText, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, Primitive string multiline [Crystools], SetNode, SimpleCondition+, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, easy seed]
+problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754343938.json, 视频生成/图生视频/Wan2.1-ComfyUI-阿里万相-最强开源图生视频_1894918771771572226.json, 视频生成/图生视频/通义万相-图生视频-快速工作流_1896444966992478209.json, 视频生成/文生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_2053727976885366786.json, 视频生成/文生视频/满血MoviiGen+LLM_仅需主题词一键生成电影级视频镜头_1923170079112876033.json]
+members: [图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本图生视频_1981975406876213250.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json, 视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json, 视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_122
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754343938.json、视频生成/图生视频/Wan2.1-ComfyUI-阿里万相-最强开源图生视频_1894918771771572226.json、视频生成/图生视频/通义万相-图生视频-快速工作流_1896444966992478209.json、视频生成/文生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_2053727976885366786.json、视频生成/文生视频/满血MoviiGen+LLM_仅需主题词一键生成电影级视频镜头_1923170079112876033.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json、视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本图生视频_1981975406876213250.json、视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json、视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json、视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **可信度**：强结论
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch+`
+- `JjkShowText`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Primitive string multiline [Crystools]`
+- `SetNode`
+- `SimpleCondition+`
+- `SimpleMath+`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 4/5 个有
-- `EmptyHunyuanLatentVideo` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `Primitive integer [Crystools]` —— 4/5 个有
-- `VAEDecodeTiled` —— 4/5 个有
-- `CLIPVisionEncode` —— 2/5 个有
-- `CLIPVisionLoader` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `VAEDecode` —— 2/5 个有
-- `WanImageToVideo` —— 2/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `ShowText` —— 1/5 个有
+- `CLIPVisionEncode` —— 4/5 个有
+- `CLIPVisionLoader` —— 4/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
+- `GIMMVFI_interpolate` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `Int` —— 3/5 个有
+- `RH_LLMAPI_NODE` —— 3/5 个有
+- `WanImageToVideo` —— 3/5 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 2/5 个有
+- `ImageBatchMultiple+` —— 2/5 个有
+- `ModelPatchTorchSettings` —— 2/5 个有
+- `Power Lora Loader (rgthree)` —— 2/5 个有
+- `WanFirstLastFrameToVideo` —— 2/5 个有
+- `wanBlockSwap` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 10 - 30 | 5 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 5 | 88% |
-| 采样算法 | uni_pc | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler_ancestral | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 3/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 10 - 30，5 个样本
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，5 个样本，取值集中（一致性 88%）
-- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（3/5 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

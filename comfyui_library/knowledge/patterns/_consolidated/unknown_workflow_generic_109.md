@@ -3,34 +3,31 @@ name: unknown_workflow_generic_109
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.8425
-common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.900571
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json, 图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json, 图片生成/图生图/全能图片3.0_2056901771477479426.json, 图片生成/图生图/全能图片3.0_2058578600839966721.json, 图片生成/图生图/全能图片SSS_2055150764548476929.json, 图片生成/图生图/全身白底制作：人物头部 + 3 套服装参考_2075031506845786114.json, 图片生成/图生图/南音-模特换背景-全能图片2.0_2054883303676760065.json, 图片生成/图生图/双人版穿搭场景复刻工作流（荔枝云客））_2038626848879415298.json, 图片生成/图生图/哈哈哈 全能图片2.0_2040710630193238018.json, 图片生成/图生图/国风古装风格-美女生成_2053645023501144065.json, 图片生成/图生图/图片裂变 白底背景 人物多姿势  多角度+自定义姿势+批量生图  根据图片风格随机变换姿势_2085179465243648002.json, 图片生成/图生图/换脸换装换人人物一致性全能图片2.0_2027953621379321858.json, 图片生成/图生图/服装行业-模特换装（全能图片2）_2017250254978027522.json, 图片生成/图生图/模特换背景-全能图片2.0_2031176888189722626.json]
+members: [comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json, comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json, 图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json, 图片生成/图生图/plus-template_2090730241135304705.json, 图片生成/图生图/ultra-template_2090730690630471681.json, 图片生成/文生图/Test-不要运行_1967141889277353985.json, 图片生成/文生图/听雪楼占位工作流_2102078588089622529.json, 数字人/数字人/复现问题工作流_2089642846738538497.json, 数字人/数字人/空白工作流_2054899208875978754.json, 视频生成/图生视频/人物替换视频换装娱乐版180帧 动作迁移图生视频换装方案_2091174606882304001.json, 视频生成/文生视频/Anima-2.9B｜三阶高质量渲染_2089668746540572673.json, 视频生成/文生视频/Anima-2.9B｜文生图+修脸+修手_2089672439675580417.json, 视频生成/文生视频/Qwen 2.0测试效果及提示词_2021915762851586049.json, 视频生成/文生视频/全能参考生视频｜海螺H3极速6分钟10秒标准模式_2092159573208682498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_109
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json、图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json、图片生成/图生图/全能图片3.0_2056901771477479426.json、图片生成/图生图/全能图片3.0_2058578600839966721.json、图片生成/图生图/全能图片SSS_2055150764548476929.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json、comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json、图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json、图片生成/图生图/plus-template_2090730241135304705.json、图片生成/图生图/ultra-template_2090730690630471681.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 5/14 个有
-- `Repeater|pysssss` —— 1/14 个有
+- `LoadImage` —— 13/14 个有
+- `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` —— 2/14 个有
 
 ## 典型参数
 

@@ -1,91 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_212
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.390889
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, GetNode, INTConstant, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PreviewAudio, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.811
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018680802581684225.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018684694845460482.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减版，需要更多长度直接复制采样即可！_2027300224661721090.json, 视频生成/图生视频/InfiniteTalk长视频-官流循环改进版_2025036533815844865.json, 视频生成/图生视频/【阿良绘】数字人长视频无衰减（分段生成）InfiniteTalk_2020782430164094977.json, 视频生成/图生视频/新InfiniteTalk-Comfyui官方流多段组合无限长视频数字人_2018872300161998849.json, 视频生成/图生视频/最新infinite模型长视频无色差 20s视频只要12分钟_2018523773288321026.json]
+members: [数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json, 数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json, 视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json, 视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json, 视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json, 视频生成/图生视频/Wan-Scail2-多图姿势迁移_2066001113731649537.json, 视频生成/图生视频/scail2 多参人物图动作模仿工作流_2066378010617540610.json, 视频生成/图生视频/scail2 多参工作流-多图参考-动作迁移_2073343102223470594.json, 视频生成/图生视频/scail2 多参工作流动作迁移保持人物多角度不崩_2065965062183018498.json, 视频生成/图生视频/史上最强的scail2 多图参考工作流_2066889873231015938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_212
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018680802581684225.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018684694845460482.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减版，需要更多长度直接复制采样即可！_2027300224661721090.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json、数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json、视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json、视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json、视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：39%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `GetNode`
-- `INTConstant`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSampler`
-- `LoadAudio`
+- `CheckpointLoaderSimple`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `ImageBatchMulti`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelSamplingSD3`
-- `PreviewAudio`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 8/9 个有
-- `Compare` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `JjkText` —— 1/9 个有
-- `LongTextToList` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `VRGDG_AudioCropTime` —— 1/9 个有
-- `easy forLoopEnd` —— 1/9 个有
-- `easy forLoopStart` —— 1/9 个有
-- `easy ifElse` —— 1/9 个有
-- `easy indexAnything` —— 1/9 个有
-- `ttN float` —— 1/9 个有
+- `WanAnimatePlus ContextOptions` —— 9/10 个有
+- `Int` —— 5/10 个有
+- `JjkText` —— 4/10 个有
+- `easy boolean` —— 3/10 个有
+- `Text` —— 2/10 个有
+- `ToBoolNode` —— 2/10 个有
+- `VHS_VideoInfo` —— 2/10 个有
+- `easy showAnything` —— 2/10 个有
+- `CLIPVisionLoader` —— 1/10 个有
+- `If ANY execute A else B` —— 1/10 个有
+- `ImpactNeg` —— 1/10 个有
+- `PrimitiveBoolean` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `WanAnimatePlus ClipVisionEncode` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 53/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（53/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

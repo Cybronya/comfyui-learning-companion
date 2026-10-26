@@ -3,37 +3,36 @@ name: unknown_workflow_generic_1607
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.822
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, RunningHub Ovi Text to Video, SaveVideo]
+coverage: 0.866
+common_nodes: [CR Prompt Text, HAIGC_LoadImagesFromZip, Int, RunningHubRVCOneClickTrain, ShellAgentPluginOutputText, easy saveText]
 problems: []
 missing: []
-members: [视频生成/文生视频/ovi音频视频一起生成v1（英语音频）小全能视频S_1974990263888293889.json, 视频生成/文生视频/【gen全能视频Si】ovi文_图生视频-开源版小“全能视频s”_1976508685440651266.json]
+members: [图片生成/文生图/RVC模型训练器_2101876081258229762.json, 音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1607
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/ovi音频视频一起生成v1（英语音频）小全能视频S_1974990263888293889.json、视频生成/文生视频/【gen全能视频Si】ovi文_图生视频-开源版小“全能视频s”_1976508685440651266.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RVC模型训练器_2101876081258229762.json、音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RunningHub Ovi Image to Video`
-- `RunningHub Ovi Model Loader`
-- `RunningHub Ovi Text to Video`
-- `SaveVideo`
+- `HAIGC_LoadImagesFromZip`
+- `Int`
+- `RunningHubRVCOneClickTrain`
+- `ShellAgentPluginOutputText`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

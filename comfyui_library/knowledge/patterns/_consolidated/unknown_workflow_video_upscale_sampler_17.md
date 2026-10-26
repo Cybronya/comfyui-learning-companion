@@ -3,17 +3,17 @@ name: unknown_workflow_video_upscale_sampler_17
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.941
-common_nodes: [AIO_Preprocessor, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJ, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9415
+common_nodes: [FILM VFI, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json, 视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json]
+members: [视频生成/图生视频/WAN2.1图生视频开源之光_1912762337353265153.json, 视频生成/图生视频/啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json、视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频开源之光_1912762337353265153.json、视频生成/图生视频/啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,47 +23,34 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+- `FILM VFI`
+- `ImageScale`
 - `ImageUpscaleWithModel`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `ReActorFaceSwap`
 - `UpscaleModelLoader`
-- `VHS_LoadVideo`
-- `VHS_SplitImages`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoControlEmbeds`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Bbox (mtb)` —— 1/2 个有
-- `INPAINT_ExpandMask` —— 1/2 个有
-- `ImageCrop` —— 1/2 个有
-- `LayerMask: MaskBoxDetect` —— 1/2 个有
-- `LayerUtility: ColorImage V2` —— 1/2 个有
-- `LayerUtility: ColorPicker` —— 1/2 个有
-- `LoadImageFromUrl` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Uncrop (mtb)` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
-- `easy indexAnything` —— 1/2 个有
+- `Image Aspect Ratio` —— 1/2 个有
+- `ImageFromBatch+` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Logic Boolean` —— 1/2 个有
+- `Number to Float` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
 
 ## 典型参数
 

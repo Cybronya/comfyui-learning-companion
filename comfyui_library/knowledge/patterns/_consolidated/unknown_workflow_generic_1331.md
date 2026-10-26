@@ -3,38 +3,38 @@ name: unknown_workflow_generic_1331
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.806
-common_nodes: [CR Text, Fast Groups Muter (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, ShowText|pysssss, easy promptConcat]
+coverage: 0.889
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json, 图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json]
+members: [图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1960913348382666753.json, 图片生成/图生图/全能图片V1-单图或多图生成_1980093386386477057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1331
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json、图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1960913348382666753.json、图片生成/图生图/全能图片V1-单图或多图生成_1980093386386477057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Muter (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageConcatMulti`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `ShowText|pysssss`
-- `easy promptConcat`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_186
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.889455
+common_nodes: [LayerUtility: TextJoin, LoadImage, PrimitiveInt, SaveImage, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/Seedream V5 Pro I2I图生图_2077553660804026369.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json, 图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json, 图片生成/图生图/全能图片G-2.5图生图高品质版  电商图PAI工作流自动生图专用_2112834236523831298.json, 图片生成/图生图/全能图片G-2.5图生图高品质版_2097868541360955394.json, 图片生成/文生图/G- image-2.5图生图高品质版_2098043807114813441.json, 图片生成/文生图/image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5+全_2097936915642281985.json, 图片生成/文生图/全能图片G-2.5图生图高品质版  5毛_2100116129564942337.json]
+members: [图片生成/图生图/女童运动背心批量附图_2062715383810977793.json, 图片生成/图生图/女装附图 -运动款_2057636245613932545.json, 图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json, 图片生成/图生图/男装附图_2064181021381316609.json, 图片生成/图生图/童装批量生图_2061286729377734657.json, 图片生成/图生图/童装附图_2064255951846338562.json, 图片生成/图生图/衣服换色_2053020912231960578.json, 图片生成/图生图/衣服换色_2064174361678008322.json, 图片生成/图生图/鞋子附图_2054442284216791042.json, 图片生成/图生图/饰品批量附图_2056998025419116545.json, 图片生成/图生图/饰品批量附图_2061653260913696769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_186
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/Seedream V5 Pro I2I图生图_2077553660804026369.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json、图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/女童运动背心批量附图_2062715383810977793.json、图片生成/图生图/女装附图 -运动款_2057636245613932545.json、图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json、图片生成/图生图/男装附图_2064181021381316609.json、图片生成/图生图/童装批量生图_2061286729377734657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `LayerUtility: TextJoin`
 - `LoadImage`
+- `PrimitiveInt`
 - `SaveImage`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 6/10 个有
-- `RH_SeedreamV5ProImageToImage` —— 4/10 个有
-- `Text` —— 4/10 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 9/11 个有
+- `Text` —— 7/11 个有
+- `CR Text` —— 4/11 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/11 个有
 
 ## 典型参数
 

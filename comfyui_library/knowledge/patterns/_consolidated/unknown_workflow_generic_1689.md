@@ -3,35 +3,29 @@ name: unknown_workflow_generic_1689
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, PreviewAudio, Primitive string [Crystools], SaveAudio, StepAudioClone, StepAudioRun, Text Multiline, VHS_LoadVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_BytedanceSeedance20GlobalMiniImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Step-Audio-TTS语音克隆_1893185897196892162.json, 音频生成/音频生成/Step-Audio-TTS语音克隆_1911600771115249665.json]
+members: [视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json, 视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1689
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Step-Audio-TTS语音克隆_1893185897196892162.json、音频生成/音频生成/Step-Audio-TTS语音克隆_1911600771115249665.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json、视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `PreviewAudio`
-- `Primitive string [Crystools]`
-- `SaveAudio`
-- `StepAudioClone`
-- `StepAudioRun`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `RH_BytedanceSeedance20GlobalMiniImageToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

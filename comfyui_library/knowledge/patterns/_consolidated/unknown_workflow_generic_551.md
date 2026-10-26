@@ -3,33 +3,37 @@ name: unknown_workflow_generic_551
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7034
-common_nodes: [SaveImage]
+coverage: 0.324
+common_nodes: [Any Switch (rgthree), DF_Text_Box, GetNode, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, SetNode, 孤海注释, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json, 图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json, 图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json, 图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json, 图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json]
+members: [图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json, 图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json, 图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_551
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json、图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json、图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json、图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json、图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json、图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json、图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：32%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `DF_Text_Box`
+- `GetNode`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/5 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/5 个有
-- `RHLLMChatNode` —— 3/5 个有
-- `RH_RhartImageG2TextToImage` —— 2/5 个有
+- `SetNode`
+- `孤海注释`
+- `忽略多组孤海`
 
 ## 典型参数
 

@@ -1,65 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_332
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.911667
-common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.510714
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json, 图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json, 视频生成/图生视频/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+提示词_2065244368470106114.json]
+members: [图片生成/图生图/minimax_h3_singularity_V2_r2va_2113800800932818945.json, 数字人/数字人/MiNimax超写实颜值赛道起号神器_2112333375519420418.json, 数字人/数字人/极速生视频 Fast_h3_omini_latent_upscale精品_2114537045958942722.json, 视频生成/图生视频/Minimax H3 Singularity V2 + 8步加速 + 人脸修复 Face Refin_2113835488653168641.json, 视频生成/图生视频/fast_h3_omini_latent_upscale_2114522676265050114.json, 视频生成/图生视频/minimax_h3_singularity_V2_face_refine_2113475613863538689.json, 视频生成/图生视频/minimax_h3_singularity_V2_r2va_2113488913896660994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_332
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json、图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json、图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json、图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json、图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/minimax_h3_singularity_V2_r2va_2113800800932818945.json、数字人/数字人/MiNimax超写实颜值赛道起号神器_2112333375519420418.json、数字人/数字人/极速生视频 Fast_h3_omini_latent_upscale精品_2114537045958942722.json、视频生成/图生视频/Minimax H3 Singularity V2 + 8步加速 + 人脸修复 Face Refin_2113835488653168641.json、视频生成/图生视频/fast_h3_omini_latent_upscale_2114522676265050114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageResizeKJv2`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SelfLiftH3Sampler`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/6 个有
-- `WanVideoVACEEncode` —— 4/6 个有
-- `WanVideoVACEModelSelect` —— 4/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `AIO_Preprocessor` —— 2/6 个有
-- `CLIPVisionLoader` —— 2/6 个有
-- `MaskPreview+` —— 2/6 个有
-- `VHS_VideoInfo` —— 2/6 个有
-- `WanVideoClipVisionEncode` —— 2/6 个有
-- `WanVideoImageToVideoEncode` —— 2/6 个有
-- `Image Overlay` —— 1/6 个有
-- `ImageScale` —— 1/6 个有
-- `InpaintPreprocessor` —— 1/6 个有
-- `InvertMask` —— 1/6 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 1/6 个有
-- `LayerMask: RmBgUltra V2` —— 1/6 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 1/6 个有
-- `easy makeImageForICLora` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
+- `GetNode` —— 5/7 个有
+- `SetNode` —— 5/7 个有
+- `MiniMaxH3SigmaShift` —— 3/7 个有
+- `H3FaceStitch` —— 2/7 个有
+- `H3FaceTrackCrop` —— 2/7 个有
+- `PreviewAny` —— 2/7 个有
+- `VOSR2ModelLoader` —— 2/7 个有
+- `VOSR2Upscale` —— 2/7 个有
+- `EmptyImage` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `MiniMaxChunkFeedForward` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `QwenH3PromptLocal` —— 1/7 个有
+- `StringFormat` —— 1/7 个有
 
 ## 典型参数
 

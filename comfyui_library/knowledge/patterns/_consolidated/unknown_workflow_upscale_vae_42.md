@@ -3,39 +3,48 @@ name: unknown_workflow_upscale_vae_42
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.731667
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.886
+common_nodes: [PrimitiveInt, RHBatchImages:, RHExtractImage, RHUploadZip, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy batchAnything, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy imageCount]
 problems: []
 missing: []
-members: [图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json, 图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json, 图片生成/图生图/（Seedvr2分块）万物高清放大修复不改变原细节V8.0_2042398439320854530.json]
+members: [图片生成/图生图/批量SeedVR2图像放大_2070317807069392897.json, 图片生成/图生图/批量放大高清重绘_2013299056503693314.json, 图片生成/图生图/批量高清图像放大_2080825158469775362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json、图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json、图片生成/图生图/（Seedvr2分块）万物高清放大修复不改变原细节V8.0_2042398439320854530.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/批量SeedVR2图像放大_2070317807069392897.json、图片生成/图生图/批量放大高清重绘_2013299056503693314.json、图片生成/图生图/批量高清图像放大_2080825158469775362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `PrimitiveInt`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `easy batchAnything`
+- `easy clearCacheAll`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_LoadImagesFromZip` —— 1/3 个有
-- `PIP_图像联结` —— 1/3 个有
-- `RH_BatchImages` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `HAIGC_SaveImagesToZip` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `AspectRatio` —— 1/3 个有
+- `CompressImages` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SaveImagePlus` —— 1/3 个有
+- `easy imageListToImageBatch` —— 1/3 个有
 
 ## 典型参数
 

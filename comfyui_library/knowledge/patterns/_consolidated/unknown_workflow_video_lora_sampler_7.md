@@ -1,78 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_7
 type: Unknown Workflow
-frequency: 56
+frequency: 65
 level: moderate
-coverage: 0.604964
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.840262
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SteadyDancer_动作迁移_2006750635965812737.json, 视频生成/图生视频/SteadyDancer_动作迁移_2010972602436685825.json, 视频生成/图生视频/SteadyDancer_动作迁移_2037770591301804034.json, 视频生成/图生视频/SteadyDancer_动作迁移_2046393095314477058.json, 视频生成/图生视频/SteadyDancer_动作迁移_2055193205628514306.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2057001718025641986.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2064279641464066050.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2065426639923802113.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104169238754844673.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104188287391977474.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2107018826129960962.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版 API_2007586660388708354.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_1999147645648109569.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2013157114394447873.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2034010993549910018.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2095327962378887170.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2051166636400496641.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2069752465066643458.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2082818312530124802.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096551354021015553.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096582434203725826.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_（只需上传骨骼视频）_2002599529096572930.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移 不限时长版  表情复刻_2057305596684234753.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移 不限时长版  表情复刻_2079929209409069057.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2058381995545284610.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2058471840317788161.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2060364466436534274.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2060774599557738498.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2066792796987682818.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2066799489494638593.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2013945228213882882.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2014180561027342337.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105653555704188930.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105658223234740225.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗跳舞视频图生视频 骨骼迁移 不限时长版_2013887886935990273.json, 视频生成/图生视频/SteadyDancer人物动作1：1还原_2014591625648939009.json, 视频生成/图生视频/SteadyDancer人物动物 动作迁移  表情复刻 不限时长版_2061977258608381954.json, 视频生成/图生视频/SteadyDancer动作迁移 V2_2073292515553402882.json, 视频生成/图生视频/SteadyDancer动作迁移+_2082290282867023873.json, 视频生成/图生视频/SteadyDancer动作迁移-_1999406405557907458.json, 视频生成/图生视频/SteadyDancer动作迁移-_2045041013768589313.json, 视频生成/图生视频/SteadyDancer动作迁移-单人跳舞_2014994165557370881.json, 视频生成/图生视频/SteadyDancer动作迁移-流畅性好_2020680054753206273.json, 视频生成/图生视频/SteadyDancer动作迁移-让照片动起来_2022143730123280386.json, 视频生成/图生视频/SteadyDancer动作迁移Q版、真人等-舞蹈带货Motion Transfer_1999018425617932289.json, 视频生成/图生视频/SteadyDancer动作迁移V1（卡通版）_1995693634018217985.json, 视频生成/图生视频/SteadyDancer动作迁移V1（实验版）_1995735712467128322.json, 视频生成/图生视频/SteadyDancer动作迁移V1（最高质量版-视线修复）_1998614255215763457.json, 视频生成/图生视频/SteadyDancer动作迁移V1（测试版）_1995720940271054850.json, 视频生成/图生视频/SteadyDancer动作迁移V1（真人版）_1995709694230532098.json, 视频生成/图生视频/SteadyDancer动作迁移V1（高质量版）_1995712878860701698.json, 视频生成/图生视频/SteadyDancer动作迁移V1（高质量版）_1997197731166883841.json, 视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json, 视频生成/图生视频/SteadyDancer动作迁移_1998741214134423553.json, 视频生成/图生视频/SteadyDancer动作迁移_2025728943478808578.json, 视频生成/文生视频/SteadyDancer动作表情迁移：一键生成动物小猫小狗人物单人跳舞_2017476660358025217.json]
+members: [数字人/数字人/wanvideo_infinitetalk_小宝_2017971113397067777.json, 数字人/数字人/南瓜瓜数字人专用_2075564402044137473.json, 数字人/数字人/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2092517680044658690.json, 数字人/数字人/口播数字人_2063667632280268801.json, 数字人/数字人/商用版-最强数字人视频对口型_1973158648119734274.json, 数字人/数字人/图片数字人-z_2103458494379814913.json, 数字人/数字人/外部输入语音生成数字人_2051840324212936706.json, 数字人/数字人/外部输入语音生成数字人_2057661703101435905.json, 数字人/数字人/外部输入语音生成数字人_2057703138341249025.json, 数字人/数字人/对口型 mv唱歌  数字人 InfiniTetalk 超自然数字人对口型_2089756106502529026.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2074169723331366913.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2082533784599228417.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2089916243682877441.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2092260355593560065.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2100264026080104449.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103048752205488130.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103743133040332802.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103806861056241665.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2108852311643746305.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2111016982731644929.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2111864889517105153.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2111875014525014018.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112048406960099329.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112049990683156481.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112065847870189569.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112066873079717890.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112124241826115586.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112138364517437441.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112254738078195713.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112256871104073729.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112426059449851906.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112430793481080833.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112433141037232130.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112433985828777986.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112597406096379905.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112605101943779330.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112607344139001858.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112743744721219586.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112783138702323713.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112971225386536962.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112983185930932226.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113166960778371074.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113178124946071553.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113342338213957634.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113347793531265026.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113356710520901633.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113546138916835330.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113551130713223170.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2113873647415939073.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2114397010022453250.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2114440288927309826.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2114674725870985218.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2114689431956447233.json, 数字人/数字人/对口型_情感口播_数字人_InfiniTetalk_超自然数字人对口型_2100930385105473538.json, 数字人/数字人/对口型数字人_2028737367670001666.json, 数字人/数字人/庄庄数字人专用_2072618983462891521.json, 数字人/数字人/影声同驱数字人_2059563685034680322.json, 数字人/数字人/数字人  对口型  图生视频 1080_2079401274549817346.json, 数字人/数字人/数字人  对口型  图生视频_2079392621344153601.json, 数字人/数字人/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2085410347422408705.json, 数字人/数字人/数字人 对口型 情感口播 InfiniTetalk 超自然数字人对口型_2113542502052618242.json, 数字人/数字人/数字人_2073585855591182337.json, 数字人/数字人/数字人一键式生成InfiniTetalk+QwenTTS+Wan2.1_2036661162607120386.json, 数字人/数字人/数字人对口型+音频+图片数字人+配音必备神器_2076634810386309122.json, 数字人/数字人/视频测试1_2014238001576022017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 56 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer_动作迁移_2006750635965812737.json、视频生成/图生视频/SteadyDancer_动作迁移_2010972602436685825.json、视频生成/图生视频/SteadyDancer_动作迁移_2037770591301804034.json、视频生成/图生视频/SteadyDancer_动作迁移_2046393095314477058.json、视频生成/图生视频/SteadyDancer_动作迁移_2055193205628514306.json…）
+> 由 `engine/knowledge_consolidation` 从 65 个 workflow 归纳得出（数字人/数字人/wanvideo_infinitetalk_小宝_2017971113397067777.json、数字人/数字人/南瓜瓜数字人专用_2075564402044137473.json、数字人/数字人/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2092517680044658690.json、数字人/数字人/口播数字人_2063667632280268801.json、数字人/数字人/商用版-最强数字人视频对口型_1973158648119734274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：56
+- **样本数**：65
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 56 个 workflow 都包含：
+全部 65 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `DownloadAndLoadWav2VecModel`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `OnnxDetectionModelLoader` —— 55/56 个有
-- `WanVideoDecode` —— 55/56 个有
-- `Int` —— 54/56 个有
-- `ImageConcatMulti` —— 53/56 个有
-- `PoseDetectionOneToAllAnimation` —— 48/56 个有
-- `PreviewImage` —— 46/56 个有
-- `TextInput_` —— 36/56 个有
-- `WanVideoBlockSwap` —— 20/56 个有
-- `WanVideoSetBlockSwap` —— 20/56 个有
-- `WanVideoTorchCompileSettings` —— 18/56 个有
-- `CR Prompt Text` —— 16/56 个有
-- `DrawViTPose` —— 10/56 个有
-- `PoseAndFaceDetection` —— 10/56 个有
-- `SimpleMath+` —— 10/56 个有
-- `PrimitiveFloat` —— 9/56 个有
-- `easy convertAnything` —— 9/56 个有
-- `AILab_QwenVL` —— 1/56 个有
-- `CR Combine Prompt` —— 1/56 个有
-- `DeepTranslatorTextNode` —— 1/56 个有
-- `LayerUtility: TextBox` —— 1/56 个有
-- `PreviewAny` —— 1/56 个有
-- `RunningHub Deepcleaner` —— 1/56 个有
-- `SaveImage` —— 1/56 个有
-- `SaveLatent` —— 1/56 个有
-- `TT_img_enc` —— 1/56 个有
-- `easy showAnything` —— 1/56 个有
+- `AudioSeparation` —— 64/65 个有
+- `LoadAudio` —— 64/65 个有
+- `Audio Duration (mtb)` —— 63/65 个有
+- `GetImageRangeFromBatch` —— 63/65 个有
+- `MathExpression|pysssss` —— 63/65 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 62/65 个有
+- `LoadImage` —— 62/65 个有
+- `PlaySound|pysssss` —— 62/65 个有
+- `AudioCrop` —— 60/65 个有
+- `GetNode` —— 60/65 个有
+- `SetNode` —— 60/65 个有
+- `PreviewAudio` —— 10/65 个有
+- `easy int` —— 10/65 个有
+- `easy showAnything` —— 10/65 个有
+- `Anything Everywhere` —— 6/65 个有
+- `WanVideoTorchCompileSettings` —— 6/65 个有
+- `VHS_LoadVideo` —— 3/65 个有
+- `ColorCorrectOfUtils` —— 2/65 个有
+- `INTConstant` —— 2/65 个有
+- `ImageCASharpening+` —— 2/65 个有
+- `ImageResizeKJv2` —— 2/65 个有
+- `CR Text` —— 1/65 个有
+- `EmptyImage` —— 1/65 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/65 个有
+- `ImageResizeKJ` —— 1/65 个有
+- `LoadAudioFromUrl` —— 1/65 个有
+- `LoadImageFromUrl` —— 1/65 个有
+- `LogicUtil_SleepNodeAny` —— 1/65 个有
+- `MuyeLoadImage` —— 1/65 个有
+- `PreviewImage` —— 1/65 个有
+- `Qwen3TTSModelLoader` —— 1/65 个有
+- `Qwen3TTSVoiceClone` —— 1/65 个有
+- `WanVideoEncode` —— 1/65 个有
 
 ## 典型参数
 

@@ -1,0 +1,67 @@
+---
+name: unknown_workflow_video_lora_sampler_1007
+type: Unknown Workflow
+frequency: 2
+level: weak
+coverage: 0.936
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+problems: []
+missing: []
+members: [视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json, 视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_video_lora_sampler_1007
+
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json、视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
+
+## 共有节点
+
+全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `RHMiniMaxH3PromptOptimizerCompact` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `floatToInt _O` —— 1/2 个有
+
+## 典型参数
+
+无可统计的参数。
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

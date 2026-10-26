@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_34
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8935
-common_nodes: [Float, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, ImageResizeKJv2, JWInteger, LoadImage, LoadVideo, MathExpression|pysssss, PreviewImage, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine, easy indexAnything]
+coverage: 0.8915
+common_nodes: [AniCrafterLoader, AniCrafterPreImage, AniCrafterPreText, AniCrafterPreVideo, AniCrafterSampler, LoadImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json, 视频生成/图生视频/高质量视频换脸术_2075400573410697217.json]
+members: [视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json, 视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json、视频生成/图生视频/高质量视频换脸术_2075400573410697217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json、视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,26 +23,20 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Float`
-- `Float to Int`
-- `GetVideoComponents`
-- `ImageConcatenate_UTK`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `AniCrafterLoader`
+- `AniCrafterPreImage`
+- `AniCrafterPreText`
+- `AniCrafterPreVideo`
+- `AniCrafterSampler`
 - `LoadImage`
-- `LoadVideo`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy indexAnything`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Get_image_size` —— 1/2 个有
-- `GradientImage` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PDIMAGE_LongerSize` —— 1/2 个有
 
 ## 典型参数
 

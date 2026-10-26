@@ -2,57 +2,64 @@
 name: unknown_workflow_sampler_clip_unet_145
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.95225
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, ManualSigmas, RandomNoise, ReferenceMultiLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.827875
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatchToReference, ConditioningZeroOut, Image Comparer (rgthree), LoadImage, ReferenceLatent, SZ_KleinTiledKSampler, SaveImage, Seed (rgthree), SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX3 KLEIN--工作流合集_2111157512895549441.json, 图片生成/图生图/FLUX3.0Klein文生图单双多图编辑全套工作流_2110917466762338306.json, 图片生成/图生图/Flux3 Amumu 图像编辑邪修_2110875194008096769.json, 图片生成/图生图/Flux3加速版多图编辑-sd-int8_2111151836345491457.json, 图片生成/图生图/Flux3多图编辑加速版_2111354552862728193.json, 图片生成/图生图/（4图 可以上满4张最少可以上传1张）Flux3多图编辑加速版_2111603711633092609.json, 图片生成/文生图/FLUX3 KLEIN--工作流合集_2111003999917924353.json, 图片生成/文生图/FLUX3.0 Klein 全套工作流精品_2112068071841157122.json]
+members: [图片生成/图生图/F.2Klein极限超分增加细节 小图变大图_2062158009069031426.json, 图片生成/图生图/Flux.2-Klein9b极限超分增加细节 模糊变高清_2064348600515256322.json, 图片生成/图生图/Klein-一键修复模糊图像变高清_2061427632968921089.json, 图片生成/图生图/Klein-一键修复模糊图像变高清_2081264986487349249.json, 图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063571810217713666.json, 图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063948736388227073.json, 图片生成/图生图/修复模糊图像变高清-Klein_2060651278337925121.json, 图片生成/图生图/🐳Klein 图像急速修复 模糊变高清🐳_2059941498447290370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_145
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FLUX3 KLEIN--工作流合集_2111157512895549441.json、图片生成/图生图/FLUX3.0Klein文生图单双多图编辑全套工作流_2110917466762338306.json、图片生成/图生图/Flux3 Amumu 图像编辑邪修_2110875194008096769.json、图片生成/图生图/Flux3加速版多图编辑-sd-int8_2111151836345491457.json、图片生成/图生图/Flux3多图编辑加速版_2111354552862728193.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/F.2Klein极限超分增加细节 小图变大图_2062158009069031426.json、图片生成/图生图/Flux.2-Klein9b极限超分增加细节 模糊变高清_2064348600515256322.json、图片生成/图生图/Klein-一键修复模糊图像变高清_2061427632968921089.json、图片生成/图生图/Klein-一键修复模糊图像变高清_2081264986487349249.json、图片生成/图生图/Klein-图片快速修复-图片高清修复-细节修复-模糊变高清_2063571810217713666.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSamplerSelect`
+- `ColorMatchToReference`
+- `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `ReferenceMultiLatent`
-- `SamplerCustomAdvanced`
+- `ReferenceLatent`
+- `SZ_KleinTiledKSampler`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 5/8 个有
-- `MuyeTextEditOutput` —— 4/8 个有
-- `忽略多组孤海` —— 4/8 个有
-- `ResolutionSelector` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
-- `llama_cpp_instruct_adv` —— 2/8 个有
-- `llama_cpp_model_loader` —— 2/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `QwenPERewriteT8` —— 1/8 个有
+- `ImpactInt` —— 6/8 个有
+- `孤海注释` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/8 个有
+- `GetNode` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `Int` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | res_2s | - | 8 | 75% |
+| 调度器 | bong_tangent | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -60,4 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，8 个样本，一致性 75%
+- 调度器 最常用 bong_tangent，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

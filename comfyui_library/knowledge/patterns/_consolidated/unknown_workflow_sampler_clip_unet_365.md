@@ -3,61 +3,64 @@ name: unknown_workflow_sampler_clip_unet_365
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.733
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.822
+common_nodes: [Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ConstrainImage|pysssss, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImagePadForOutpaint, ImageResize+, ImitationHueNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Image2Image, RH_RhartImageG2OfficialImageToImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/2030050170984992770.json, 图片生成/文生图/flux klein9B 工作流批量跑 浮云1.20_2013513081648848897.json, 图片生成/文生图/节点系列07-Add Label节点添加标签-已发布_2012172737220976641.json]
+members: [图片生成/图生图/全能图像G_pro_2_Klein扩图 (1)_2056196485427023874.json, 图片生成/图生图/全能图像G_pro_2_Klein扩图_2053046553874579458.json, 视频生成/图生视频/全能图像_Klein优质扩图_2054734665826750466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_365
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/2030050170984992770.json、图片生成/文生图/flux klein9B 工作流批量跑 浮云1.20_2013513081648848897.json、图片生成/文生图/节点系列07-Add Label节点添加标签-已发布_2012172737220976641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图像G_pro_2_Klein扩图 (1)_2056196485427023874.json、图片生成/图生图/全能图像G_pro_2_Klein扩图_2053046553874579458.json、视频生成/图生视频/全能图像_Klein优质扩图_2054734665826750466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `ConstrainImage|pysssss`
+- `Fast Groups Bypasser (rgthree)`
 - `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImagePadForOutpaint`
+- `ImageResize+`
+- `ImitationHueNode`
 - `KSamplerSelect`
-- `PrimitiveInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2OfficialImageToImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Seed (rgthree)` —— 2/3 个有
-- `easy batchAnything` —— 2/3 个有
-- `easy forLoopEnd` —— 2/3 个有
-- `easy forLoopStart` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `Int2String` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `ProcessString` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `YANC.ConcatStrings` —— 1/3 个有
-- `easy convertAnything` —— 1/3 个有
+- `Int to String` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `StringToAnyNode` —— 2/3 个有
+- `TextConcatenate` —— 2/3 个有
+- `easy string` —— 2/3 个有
 
 ## 典型参数
 

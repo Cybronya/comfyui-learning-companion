@@ -3,39 +3,34 @@ name: unknown_workflow_video_102
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.526
-common_nodes: [Anything Everywhere, DownloadAndLoadFlorence2Model, Florence2Run, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, RunningHub_FramePack, Seed Everywhere, SetNode, StringFunction|pysssss, VHS_VideoCombine]
+coverage: 1
+common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json, 视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json]
+members: [视频生成/图生视频/FramePack 超级首尾帧带同步生成背景音乐_1914163211577323522.json, 视频生成/图生视频/【稳定高清】首尾帧 FramePack 图生视频_1914609595644608513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_102
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json、视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack 超级首尾帧带同步生成背景音乐_1914163211577323522.json、视频生成/图生视频/【稳定高清】首尾帧 FramePack 图生视频_1914609595644608513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetNode`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `RunningHub_FramePack`
-- `Seed Everywhere`
-- `SetNode`
-- `StringFunction|pysssss`
+- `SeargePromptText`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

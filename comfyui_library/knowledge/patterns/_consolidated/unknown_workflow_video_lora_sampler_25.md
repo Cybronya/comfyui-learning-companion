@@ -2,87 +2,78 @@
 name: unknown_workflow_video_lora_sampler_25
 type: Unknown Workflow
 frequency: 28
-level: moderate
-coverage: 0.611107
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.985857
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SteadDancer动作迁移_2017466618615439361.json, 视频生成/图生视频/SteadDancer动作迁移（支持动漫人物）长视频一致性加强版_2011405479620124674.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json, 视频生成/图生视频/SteadDancer视频姿势参考（KJ）_1996528847946399745.json, 视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2077823494326415362.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2078124326972383233.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2087040327587815426.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2021045146128748546.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2021050493052657665.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2037367887756795905.json, 视频生成/图生视频/SteadyDancer 动作迁移_2012744356666544130.json, 视频生成/图生视频/SteadyDancer_动作迁移-顶级人类版_1999132133182631937.json, 视频生成/图生视频/SteadyDancer动作迁移_2037135094128844802.json, 视频生成/图生视频/SteadyDancer动作迁移_2037136001059000321.json, 视频生成/图生视频/SteadyDancer动作迁移_2037136442165563394.json, 视频生成/图生视频/SteadyDancer动作迁移_2043176583862689794.json, 视频生成/图生视频/SteadyDancer动作迁移_2073284965781032961.json, 视频生成/图生视频/SteadyDancer动作迁移_2074671640511868929.json, 视频生成/图生视频/SteadyDancer动作迁移_2080329957112377345.json, 视频生成/图生视频/SteadyDancer动作迁移_2080680922562781186.json, 视频生成/图生视频/SteadyDancer动作迁移_2084530681153146881.json, 视频生成/图生视频/口播 跳舞 带货皆可用 SteadyDancer动作迁移-_1999419556877791233.json, 视频生成/图生视频/视频二创-单人动作模仿_2019289437926068225.json, 视频生成/图生视频/跳舞_2020035033687396353.json, 视频生成/图生视频/（KJ版）SteadDancer视频姿势参考（新增骨骼绑定）_1995843794539098113.json]
+members: [图片生成/文生图/live动图-图生视频_起号神器_wan2.2_2092082949134053377.json, 视频生成/图生视频/Wan2.2  彩图解码版_1992982649104957441.json, 视频生成/图生视频/Wan2.2 极速 All-in-one｜图生视频_2089372780319035394.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2071113609022885889.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2071129553375944706.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2071500994327965698.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2072199531965542401.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2073056519012306946.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2073072648741015553.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2075260707406442498.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2079226151834316802.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2079972635341058049.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2093357480247119873.json, 视频生成/图生视频/Wan2.2+All-in-one+极速版+图生视频_2089535977193820162.json, 视频生成/图生视频/Wan2.2+All-in-one图生视频极速版_2019656477216088065.json, 视频生成/图生视频/live动图-图生视频_起号神器_wan2.2_2038320886633209857.json, 视频生成/图生视频/人物表情真实自然+Wan2.2_2039989765587607554.json, 视频生成/图生视频/图生视频-Wan2.2-极速版_2069950709994442753.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one_2044586130233888770.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one急速稳定专用版本_2042866151662821378.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_1983515933761314818.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2041324315588698113.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2069791627677356033.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2099699527749038082.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2099791658589188097.json, 视频生成/图生视频/图生视频Wan2.2_2046033851276857346.json, 视频生成/图生视频/图生视频Wan2.2_空挡braless_2062575894211948546.json, 视频生成/图生视频/图生视频Wan2.2稳定专用版本_2044590119671304193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/SteadDancer动作迁移_2017466618615439361.json、视频生成/图生视频/SteadDancer动作迁移（支持动漫人物）长视频一致性加强版_2011405479620124674.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/文生图/live动图-图生视频_起号神器_wan2.2_2092082949134053377.json、视频生成/图生视频/Wan2.2  彩图解码版_1992982649104957441.json、视频生成/图生视频/Wan2.2 极速 All-in-one｜图生视频_2089372780319035394.json、视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2071113609022885889.json、视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2071129553375944706.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：28
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 28 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `JWInteger`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 27/28 个有
-- `SetNode` —— 27/28 个有
-- `WanVideoLoraSelect` —— 27/28 个有
-- `WanVideoScheduler` —— 27/28 个有
-- `GetImageSizeAndCount` —— 26/28 个有
-- `WanVideoSetBlockSwap` —— 26/28 个有
-- `ImageConcatMulti` —— 22/28 个有
-- `PoseDetectionOneToAllAnimation` —— 22/28 个有
-- `PreviewImage` —— 20/28 个有
-- `WanVideoTorchCompileSettings` —— 20/28 个有
-- `Int` —— 17/28 个有
-- `CR Prompt Text` —— 16/28 个有
-- `SimpleMath+` —— 15/28 个有
-- `DrawViTPose` —— 12/28 个有
-- `PoseAndFaceDetection` —— 12/28 个有
-- `PrimitiveFloat` —— 10/28 个有
-- `easy convertAnything` —— 9/28 个有
-- `INTConstant` —— 4/28 个有
-- `PrimitiveInt` —— 3/28 个有
-- `CR Text` —— 2/28 个有
-- `Fast Groups Muter (rgthree)` —— 2/28 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/28 个有
-- `Anything Everywhere3` —— 1/28 个有
-- `ImageConcanate` —— 1/28 个有
-- `ImpactInt` —— 1/28 个有
-- `Label (rgthree)` —— 1/28 个有
-- `MathExpression|pysssss` —— 1/28 个有
-- `ToFloat` —— 1/28 个有
-- `WanVideoLoraSelectMulti` —— 1/28 个有
+- `JWFloat` —— 27/28 个有
+- `MathExpression|pysssss` —— 27/28 个有
+- `LoadLatent` —— 13/28 个有
+- `VAELoader` —— 13/28 个有
+- `SaveImage` —— 11/28 个有
+- `Int` —— 2/28 个有
+- `TT_img_enc_v2` —— 2/28 个有
+- `TwoWaySwitch` —— 2/28 个有
+- `DuckHideNode` —— 1/28 个有
+- `PrimitiveBoolean` —— 1/28 个有
+- `ZML_SwitchOutput` —— 1/28 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 28 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 28 | 100% |
+| 采样算法 | sa_solver | - | 28 | 100% |
+| 调度器 | beta | - | 28 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 28/28 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，28 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，28 个样本，一致性 100%
+- 调度器 最常用 beta，28 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 高发问题（28/28 个样本）：Steps较低可能导致细节不足

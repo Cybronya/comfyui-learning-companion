@@ -3,35 +3,40 @@ name: unknown_workflow_generic_988
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.649
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, MuyeTextEditOutput, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.966
+common_nodes: [LayerFilter: GaussianBlur, LayerUtility: ImageAutoCrop, LoadImage, PreviewImage, RHLLMChatNode, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Image2Image, RH_RhartImageG2ImageToImage, RelayLLMText, SaveImage, ShowText|pysssss, StringMergeNode, Text, 图像缩放V2_孤海]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片1+2+pro 三版合集 _多图编辑+功能开关+自由控制_2047124776375816194.json, 图片生成/文生图/全能图片1+2+pro 多图编辑三版本合集 （RH平台api调用）26年.4.13更新_1998636784001122306.json, 图片生成/文生图/🍌 全能图片V1 2  Pro多图编辑，图生图，_1993299750527188993.json]
+members: [图片生成/图生图/co和秋水换脸新1_2099870244985720833.json, 图片生成/图生图/co和秋水换脸新_2099668031206154242.json, 图片生成/图生图/换脸_2093619731990405121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_988
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片1+2+pro 三版合集 _多图编辑+功能开关+自由控制_2047124776375816194.json、图片生成/文生图/全能图片1+2+pro 多图编辑三版本合集 （RH平台api调用）26年.4.13更新_1998636784001122306.json、图片生成/文生图/🍌 全能图片V1 2  Pro多图编辑，图生图，_1993299750527188993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/co和秋水换脸新1_2099870244985720833.json、图片生成/图生图/co和秋水换脸新_2099668031206154242.json、图片生成/图生图/换脸_2093619731990405121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `LayerFilter: GaussianBlur`
+- `LayerUtility: ImageAutoCrop`
 - `LoadImage`
-- `MuyeTextEditOutput`
+- `PreviewImage`
+- `RHLLMChatNode`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2ImageToImage`
+- `RelayLLMText`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `RH_Nano_Banana_Image2Image` —— 2/3 个有
+- `ShowText|pysssss`
+- `StringMergeNode`
+- `Text`
+- `图像缩放V2_孤海`
 
 ## 典型参数
 

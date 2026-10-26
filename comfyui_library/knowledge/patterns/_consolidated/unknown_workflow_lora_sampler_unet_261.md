@@ -3,60 +3,67 @@ name: unknown_workflow_lora_sampler_unet_261
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.87
-common_nodes: [CLIPLoader, EmptyLatentImage, GetImageSize, ImageScaleToTotalPixels, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy float]
+coverage: 0.701
+common_nodes: [1hew_TextListToString, CLIPLoader, ConditioningZeroOut, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenMultiangleCameraNode, SaveImage, SetNode, Text List Concatenate, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy promptList, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen_Edit_2511-新版双图编辑姿势迁移工作流_2005190961670090753.json, 图片生成/图生图/Qwen_Edit_2511-新版双图编辑模特换装工作流_2005192162713239554.json]
+members: [图片生成/图生图/QIANSUI+Qwen2511+多角度镜头控制_2027623266839437314.json, 图片生成/图生图/Qwen2511 可控多角度图生成_2015755427060912130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_261
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen_Edit_2511-新版双图编辑姿势迁移工作流_2005190961670090753.json、图片生成/图生图/Qwen_Edit_2511-新版双图编辑模特换装工作流_2005192162713239554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QIANSUI+Qwen2511+多角度镜头控制_2027623266839437314.json、图片生成/图生图/Qwen2511 可控多角度图生成_2015755427060912130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `1hew_TextListToString`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `ImageStitch`
+- `ConditioningZeroOut`
+- `GetNode`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `PrimitiveStringMultiline`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `SetNode`
+- `Text List Concatenate`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy float`
+- `easy promptLine`
+- `easy promptList`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
+- `CompressImages` —— 1/2 个有
+- `ImageListToBatch_` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SeedVR2` —— 1/2 个有
+- `SeedVR2BlockSwap` —— 1/2 个有
+- `SeedVR2ExtraArgs` —— 1/2 个有
 - `easy cleanGpuUsed` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 768 | - | 2 | 100% |
-| 采样步数 | 6 | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
@@ -67,12 +74,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

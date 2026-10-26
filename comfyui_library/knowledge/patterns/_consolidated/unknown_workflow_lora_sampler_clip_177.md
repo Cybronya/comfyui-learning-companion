@@ -2,67 +2,71 @@
 name: unknown_workflow_lora_sampler_clip_177
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.915667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), JoinStrings, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+level: strong
+coverage: 0.627667
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, EmptySD3LatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSampler, Label (rgthree), LoadImage, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, ReduxAdvanced, SaveImage, SetNode, StyleModelLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键参考渲染_2035713942202359809.json, 图片生成/图生图/庭院手绘转照片_2038555710916661249.json, 图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json]
+members: [图片生成/图生图/2025-04-15-flux-redux-nunchaku-dev_1912071465557028865.json, 图片生成/图生图/2025-04-16 性价比最高的换装流程_1912393569443770370.json, 图片生成/图生图/Nunchaku+Redux换装流程_1917662224092172290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_177
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键参考渲染_2035713942202359809.json、图片生成/图生图/庭院手绘转照片_2038555710916661249.json、图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2025-04-15-flux-redux-nunchaku-dev_1912071465557028865.json、图片生成/图生图/2025-04-16 性价比最高的换装流程_1912393569443770370.json、图片生成/图生图/Nunchaku+Redux换装流程_1917662224092172290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **可信度**：强结论
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `JoinStrings`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `CLIPVisionLoader`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `KSampler`
+- `Label (rgthree)`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `Qwen3_VQA`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ModelSamplingFlux`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
+- `ReduxAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextInput_`
-- `UNETLoader`
+- `SetNode`
+- `StyleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `VRAMReserver` —— 2/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `MuyeLoadImage` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `GroundingDinoModelLoader (segment anything2)` —— 2/3 个有
+- `GroundingDinoSAM2Segment (segment anything2)` —— 2/3 个有
+- `GrowMaskWithBlur` —— 2/3 个有
+- `ImageScaleToMegapixels` —— 2/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `SAM2ModelLoader (segment anything2)` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 30 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -70,4 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

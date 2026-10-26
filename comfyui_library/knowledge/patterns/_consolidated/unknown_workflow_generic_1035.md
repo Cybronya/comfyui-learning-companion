@@ -3,35 +3,39 @@ name: unknown_workflow_generic_1035
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Sora2_I2V_PRO, RH_Translator, SaveVideo]
+coverage: 0.732333
+common_nodes: [Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, Int, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
 problems: []
 missing: []
-members: [视频生成/图生视频/三图 RH 全能视频S image to Video_1991826845723152385.json, 视频生成/图生视频/两图全能视频S pro 25秒_2003738278027247617.json, 视频生成/图生视频/四图生成视频_2009157494186184706.json]
+members: [图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2063824519722258433.json, 图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2064895248429576193.json, 图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2092527712081629185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1035
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/三图 RH 全能视频S image to Video_1991826845723152385.json、视频生成/图生视频/两图全能视频S pro 25秒_2003738278027247617.json、视频生成/图生视频/四图生成视频_2009157494186184706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2063824519722258433.json、图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2064895248429576193.json、图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2092527712081629185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Fast Groups Bypasser (rgthree)`
+- `GuHaiAutoImageSplit`
+- `ImageScaleToTotalPixels`
+- `Int`
 - `LoadImage`
-- `RH_Sora2_I2V_PRO`
-- `RH_Translator`
-- `SaveVideo`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `孤海注释` —— 2/3 个有
 
 ## 典型参数
 

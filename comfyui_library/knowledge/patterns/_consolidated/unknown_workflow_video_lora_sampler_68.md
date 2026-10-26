@@ -1,58 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_68
 type: Unknown Workflow
-frequency: 18
+frequency: 20
 level: moderate
-coverage: 0.619667
-common_nodes: [BasicGuider, GetNode, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse, 孤海注释]
+coverage: 0.6515
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json, 图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json, 视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104381990047932417.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104842146724532225.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2099775303945121794.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2100034930007953410.json, 视频生成/图生视频/MiniMax-H3_孤海 V3_2104490856966348801.json, 视频生成/文生视频/MiniMax-H3   4K直出_2098005527233126402.json, 视频生成/文生视频/MiniMax-H3  二采分块 2K 4K直出_2100785082779918337.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出 改进_2098968521681235969.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2096756610927517697.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2097566364851597314.json, 视频生成/文生视频/MiniMax-H3 智能创作平台+二采+分块 4K直出_2097563335922376706.json, 视频生成/文生视频/啊癫 MiniMax-H3  二采分块 4K直出_2097351601014001665.json, 视频生成/文生视频/孤海 - MiniMax - H3 智能一体化视频创作 V3_2097904013336473601.json]
+members: [视频生成/图生视频/SteadyDancer视频动作迁移【1.0】_1995877090840961026.json, 视频生成/图生视频/steadydancer跳舞工作流_1996231020791873537.json, 视频生成/图生视频/wan22 wan2.2  动作迁移 SteadyDancer 角色替换_2042801321077641218.json, 视频生成/图生视频/wan22 动作迁移 SteadyDancer 角色替换_2041737868690853890.json, 视频生成/图生视频/wanvideo_SteadyDancer_1995382364060758018.json, 视频生成/图生视频/【推荐】SteadyDancer_骨骼迁移_不限时长版_2008549771673346050.json, 视频生成/图生视频/人物舞蹈 美女跳舞（10s+时间加长版）动作迁移   SteadDancer 2.0（支持动漫人物）_2041689230266601473.json, 视频生成/图生视频/动作迁移2.0SteadDancer 人物一致性_2026927442052521986.json, 视频生成/图生视频/动作迁移2.0_2044626494164574210.json, 视频生成/图生视频/动作迁移2.0（支持动漫）t人物一致性加强版（10s+）_2042133544960528385.json, 视频生成/图生视频/动作迁移2.0（支持动漫）人物一致性加强版_2047574668227383297.json, 视频生成/图生视频/动漫人物动作迁移2.0SteadDancer_2042111838783021057.json, 视频生成/图生视频/图生视频动作迁移SteadDancer2.0 支持动漫人物Q版动物 人物一致性加强版（10s+）_2076831167663394817.json, 视频生成/图生视频/超好用🔥一键复刻跳舞视频-动作迁移-不限时长版-表情复刻-最新_2057722585600843777.json, 视频生成/图生视频/超长时间10s+ 图生视频角色人物动作姿势迁移 支持动漫人物  模特一致性加强版_2062707841848406017.json, 视频生成/图生视频/骨骼迁移_不限时长版_2021769557274271746.json, 视频生成/图生视频/（10s+时间加长版）动作迁移 人物舞蹈 美女跳舞 SteadDancer 2.0（支持动漫人物）_2041680923317506050.json, 视频生成/图生视频/（KJ版）SteadDancer视频姿势参考（新增骨骼绑定）_1995843794539098113.json, 视频生成/文生视频/10s+图生视频+时间加长版 人物舞蹈+美女跳舞 动作迁移+++SteadDancer+2.0（支持_2045730540698996738.json, 视频生成/文生视频/10s+图生视频+时间加长版 人物舞蹈+美女跳舞 动作迁移+++SteadDancer+2.0（支持_2045733887124447234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_68
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json、图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json、视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json、视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer视频动作迁移【1.0】_1995877090840961026.json、视频生成/图生视频/steadydancer跳舞工作流_1996231020791873537.json、视频生成/图生视频/wan22 wan2.2  动作迁移 SteadyDancer 角色替换_2042801321077641218.json、视频生成/图生视频/wan22 动作迁移 SteadyDancer 角色替换_2041737868690853890.json、视频生成/图生视频/wanvideo_SteadyDancer_1995382364060758018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `BasicGuider`
+全部 20 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8GH`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `SetNode`
-- `UNETLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy ifElse`
-- `孤海注释`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorCorrect` —— 17/18 个有
-- `GoohaiAnyExists` —— 17/18 个有
-- `GoohaiMinimaxH3LatentUpscalerGH` —— 17/18 个有
-- `GoohaiMinimaxH3TiledSampler` —— 17/18 个有
-- `GoohaiUniversalSlider` —— 17/18 个有
-- `SplitSigmas` —— 17/18 个有
-- `忽略多组孤海` —— 17/18 个有
-- `EmptyImage` —— 2/18 个有
-- `PreviewImage` —— 2/18 个有
-- `CM_FloatToInt` —— 1/18 个有
-- `PrimitiveFloat` —— 1/18 个有
-- `easy int` —— 1/18 个有
+- `CLIPVisionLoader` —— 19/20 个有
+- `ImageConcatMulti` —— 19/20 个有
+- `OnnxDetectionModelLoader` —— 19/20 个有
+- `WanVideoLoraSelect` —— 19/20 个有
+- `WanVideoScheduler` —— 19/20 个有
+- `PreviewImage` —— 17/20 个有
+- `WanVideoBlockSwap` —— 17/20 个有
+- `WanVideoSetBlockSwap` —— 17/20 个有
+- `DrawViTPose` —— 14/20 个有
+- `Int` —— 14/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/20 个有
+- `PoseAndFaceDetection` —— 14/20 个有
+- `WanVideoTorchCompileSettings` —— 14/20 个有
+- `DF_Int_to_Float` —— 11/20 个有
+- `MathExpression|pysssss` —— 11/20 个有
+- `Text` —— 11/20 个有
+- `RH_Sora2_I2V` —— 10/20 个有
+- `easy getNode` —— 7/20 个有
+- `easy setNode` —— 7/20 个有
+- `PoseDetectionOneToAllAnimation` —— 6/20 个有
+- `TextInput_` —— 3/20 个有
+- `CR Prompt Text` —— 2/20 个有
+- `ImpactInt` —— 2/20 个有
+- `INTConstant` —— 1/20 个有
+- `RHHiddenNodes` —— 1/20 个有
+- `SimpleMath+` —— 1/20 个有
+- `VHS_VideoInfo` —— 1/20 个有
+- `easy int` —— 1/20 个有
+- `easy positive` —— 1/20 个有
 
 ## 典型参数
 

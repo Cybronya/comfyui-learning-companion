@@ -3,50 +3,57 @@ name: unknown_workflow_sampler_clip_unet_455
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8085
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.951
+common_nodes: [AspectRatio, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, LayerUtility: PurgeVRAM V2, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/flux2-Klein-自动文生图（4B）_2012021202050617346.json, 图片生成/文生图/基础工作流系列14-百度ERNIE文生图工作流_2048740264847613954.json]
+members: [图片生成/文生图/ERNIE-image-turbo 自动生成多种风格海报_2046403789548163073.json, 图片生成/文生图/ERNIE-image-turbo+Qwen-3.5多图自动反推生图_2046415970218020865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_455
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux2-Klein-自动文生图（4B）_2012021202050617346.json、图片生成/文生图/基础工作流系列14-百度ERNIE文生图工作流_2048740264847613954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/ERNIE-image-turbo 自动生成多种风格海报_2046403789548163073.json、图片生成/文生图/ERNIE-image-turbo+Qwen-3.5多图自动反推生图_2046415970218020865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AspectRatio`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `SaveImage`
+- `Seed (rgthree)`
+- `ShowText|pysssss`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `HAIGC_SaveImagesToZip` —— 1/2 个有
 - `JDCN_StringToList` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
+- `孤海图像组合批次` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 13 | - | 2 | 46% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
@@ -59,8 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 13，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

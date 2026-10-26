@@ -1,83 +1,77 @@
 ---
 name: image_to_image_sampler_clip_unet_7
 type: Image To Image
-frequency: 22
-level: strong
-coverage: 0.896545
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 23
+level: weak
+coverage: 0.923043
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一年前的老照片修复技术_1942854549231349761.json, 图片生成/图生图/一张图片生成 3D Chibi可爱风格_2027185278074494977.json, 图片生成/图生图/一键三视图_Kontext-DEV图像编辑_1939142169158410241.json, 图片生成/图生图/一键人像精修_Kontext-dev_1944091800334139394.json, 图片生成/图生图/万物国画风格转绘_Kontext-dev_1943327017553043458.json, 图片生成/图生图/万物大理石雕塑_Kontext-DEV-LORA_1946494072476299266.json, 图片生成/图生图/万物折纸风格_Kontext-DEV-LORA_1946488692631302145.json, 图片生成/图生图/万物擦除_Kontext-DEV图像编辑_1938902253212520450.json, 图片生成/图生图/万物擦除之Kontext-DEV精准区域编辑_1940637803657015297.json, 图片生成/图生图/万物玩偶_Kontext-DEV-LORA_1946577691345580034.json, 图片生成/图生图/人物换背景_Kontext-DEV图像编辑_1938939080438636546.json, 图片生成/图生图/图像局部修改_服装_家具_人物Kontext-DEV开源官方版_1938894823174950914.json, 图片生成/图生图/图像局部修改_服装编辑_Kontext-DEV开源ComfyUI官方版_1938389852155215873.json, 图片生成/图生图/夜景到白天变化_Kontext-DEV-LORA_1947252443596886018.json, 图片生成/图生图/家具布置迁移_Kontext溶图V4_1947327031031779330.json, 图片生成/图生图/手持商品迁移-加强版_Kontext溶图V4_1947477043904663554.json, 图片生成/图生图/手镯万物穿戴迁移_Kontext溶图V4_1947266108937113602.json, 图片生成/图生图/服装迁移迁移_Kontext溶图V4_1947332767635886082.json, 图片生成/图生图/电商商品演示_Kontext-DEV稳定多图编辑_1939373760153624578.json, 图片生成/图生图/电商手持商品-无需PS无痕溶图_1970991890646634498.json, 图片生成/图生图/电商手持商品-无需PS无痕溶图_Kontext-LORA_1945709848204025858.json, 图片生成/图生图/电商手持商品-溶图_Kontext-LORA_1946852736198406146.json]
+members: [图片生成/反推提示词/Moss Image SFT 重绘洗图｜文生图｜自动反推提示词_2113926001603465218.json, 图片生成/反推提示词/Moss Image SFT 重绘洗图｜自动反推提示词_2112895526298537985.json, 图片生成/图生图/F2_klein图洗图_2056009934218768386.json, 图片生成/图生图/F2_klein图洗图_2056577800190119938.json, 图片生成/图生图/Flux2-Klein-单图编辑 （转真实lora）_2091149910098927618.json, 图片生成/图生图/Flux2-Klein-单图编辑_2087938968968060930.json, 图片生成/图生图/Flux2-Klein-多图编辑_2087940335677825026.json, 图片生成/图生图/FluxKlein白模建筑渲染参考图_2055240069711187969.json, 图片生成/图生图/FluxKlein白模建筑渲染参考图_2059528047891673089.json, 图片生成/图生图/FluxKlein白模建筑渲染参考图_2059824343596756993.json, 图片生成/图生图/FluxKlein白模建筑渲染参考图风格_2064561651784970241.json, 图片生成/图生图/Klein完美一致性分镜图制作_2021413605844979714.json, 图片生成/图生图/Moss Image SFT 重绘洗图｜自动反推提示词_2113063852601602050.json, 图片生成/图生图/Moss Image SFT 重绘洗图｜自动反推提示词_2113091690352435201.json, 图片生成/图生图/工业级产品精修Flux2-klein_2018881806765920258.json, 图片生成/图生图/扩图-Kelin 无痕扩图 真实自然_2070011625867927553.json, 图片生成/图生图/扩图-Kelin_2031616716182134786.json, 图片生成/图生图/扩图-Kelin_2033562314321960961.json, 图片生成/图生图/扩图-Klein_2034187314091528194.json, 图片生成/图生图/扩图-Klein_2035293200839090178.json, 图片生成/图生图/扩图-Klein_2039522371379400706.json, 图片生成/图生图/蒜香卡普-Klein-9b_ 扩图-亚秒级无缝扩图_2034222233765289986.json, 图片生成/图生图/超细节-工业级产品精修_2068953091722010626.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/一年前的老照片修复技术_1942854549231349761.json、图片生成/图生图/一张图片生成 3D Chibi可爱风格_2027185278074494977.json、图片生成/图生图/一键三视图_Kontext-DEV图像编辑_1939142169158410241.json、图片生成/图生图/一键人像精修_Kontext-dev_1944091800334139394.json、图片生成/图生图/万物国画风格转绘_Kontext-dev_1943327017553043458.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/反推提示词/Moss Image SFT 重绘洗图｜文生图｜自动反推提示词_2113926001603465218.json、图片生成/反推提示词/Moss Image SFT 重绘洗图｜自动反推提示词_2112895526298537985.json、图片生成/图生图/F2_klein图洗图_2056009934218768386.json、图片生成/图生图/F2_klein图洗图_2056577800190119938.json、图片生成/图生图/Flux2-Klein-单图编辑 （转真实lora）_2091149910098927618.json…）
 
 - **类型**：Image To Image
-- **样本数**：22
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：23
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
+全部 23 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
-- `ShowText|pysssss`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 21/22 个有
-- `ImageStitch` —— 21/22 个有
-- `PreviewImage` —— 21/22 个有
-- `LoraLoaderModelOnly` —— 20/22 个有
-- `GoogleTranslateTextNode` —— 14/22 个有
-- `ImageConcatMulti` —— 14/22 个有
-- `RepeatLatentBatch` —— 9/22 个有
-- `FastCanvas` —— 8/22 个有
-- `FastCanvasTool` —— 8/22 个有
-- `ImageScaleDownToSize` —— 8/22 个有
-- `Image Padding` —— 4/22 个有
-- `Image Rembg (Remove Background)` —— 4/22 个有
-- `RMBG` —— 4/22 个有
-- `TeaCache` —— 4/22 个有
-- `EmptySD3LatentImage` —— 3/22 个有
-- `GetImageSizeAndCount` —— 3/22 个有
-- `LoaderGGUF` —— 2/22 个有
-- `ImageAndMaskPreview` —— 1/22 个有
-- `ImagePadKJ` —— 1/22 个有
-- `Images to RGB` —— 1/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 21/23 个有
+- `EmptyFlux2LatentImage` —— 19/23 个有
+- `Image Comparer (rgthree)` —— 18/23 个有
+- `ReferenceLatent` —— 17/23 个有
+- `Int` —— 10/23 个有
+- `LoraLoaderModelOnly` —— 10/23 个有
+- `ConditioningZeroOut` —— 9/23 个有
+- `FillMaskWithColor` —— 7/23 个有
+- `ImagePadForOutpaint` —— 7/23 个有
+- `Float` —— 6/23 个有
+- `llama_cpp_instruct_adv` —— 4/23 个有
+- `llama_cpp_model_loader` —— 4/23 个有
+- `孤海注释` —— 4/23 个有
+- `CR Prompt Text` —— 2/23 个有
+- `ColorMatch` —— 1/23 个有
+- `easy promptLine` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 22 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
-| 采样算法 | euler | - | 22 | 100% |
-| 调度器 | simple | - | 22 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 采样步数 | 4 | 4 - 50 | 23 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 23 | 25% |
+| 采样算法 | euler | - | 23 | 100% |
+| 调度器 | simple | - | 23 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 23 | 83% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 19/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，22 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，22 个样本，一致性 100%
-- 调度器 最常用 simple，22 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 50，23 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，23 个样本，取值分散，一致性仅 25%
+- 采样算法 最常用 euler，23 个样本，一致性 100%
+- 调度器 最常用 simple，23 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，23 个样本，取值集中（一致性 83%）
+- 高发问题（19/23 个样本）：Steps较低可能导致细节不足

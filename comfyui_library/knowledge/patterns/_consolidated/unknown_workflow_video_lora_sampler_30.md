@@ -3,73 +3,65 @@ name: unknown_workflow_video_lora_sampler_30
 type: Unknown Workflow
 frequency: 26
 level: moderate
-coverage: 0.757385
-common_nodes: [CreateCFGScheduleFloatList, JjkText, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.723846
+common_nodes: [AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/360度旋转-图生视频-wan2.2_1962130657587695617.json, 视频生成/图生视频/576×1024-测试-AI短剧图生视频Wan2.2-14B_1955939150006550529.json, 视频生成/图生视频/720×1280-测试-AI短剧图生视频Wan2.2-14B_1955946689876119554.json, 视频生成/图生视频/AI-Wan2.2-14B 图生视频-极速版_1959887723270189057.json, 视频生成/图生视频/AI站-Wan2.2-14B+图生视频-极速版_1958725154522165249.json, 视频生成/图生视频/CN-Wan2.2-14B 图生视频-极速版_1959809531566043137.json, 视频生成/图生视频/Wan2.2-14B 图生视频 效果炸裂_1976918780821573633.json, 视频生成/图生视频/Wan2.2-14B 图生视频-极速版_1950424438283091970.json, 视频生成/图生视频/Wan2.2-14B 图生视频_1950150331004010497.json, 视频生成/图生视频/Wan2.2-14B 图生视频_1956368575927910401.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2004200391954886657.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2009154616046395394.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2014625691811192833.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2037457877417332737.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2044320478889775106.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2054086706290282498.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2054117320213180418.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2110660986368774146.json, 视频生成/图生视频/Wan2.2-14B 图生视频_高清极速版_1999781370018791426.json, 视频生成/图生视频/Wan2.2-14B+图生视频+高清_2021553233977679873.json, 视频生成/图生视频/图生视频高清版+KJ极速版 Wan2.2 14B 可切换图生视频(升级优化版)_2014248417769295873.json, 视频生成/图生视频/图生视频高清版+KJ极速版 Wan2.2 14B 可切换图生视频(升级优化版)_2080914609724284930.json, 视频生成/图生视频/超高清版图生视频V3_2003625393506689026.json, 视频生成/文生视频/Wan2.2-14B 图生视频RH平台示例工作流_2049013071271694337.json, 视频生成/文生视频/Wan2.2图生视频_2010913412934537218.json, 视频生成/文生视频/千问2.5图生视频，极速版_2016217069779427330.json]
+members: [图片生成/图生图/MiniMax-H3开源-数字人-唱歌_说唱_口播_虚拟主播_电商产品讲解_自动版_2114253264417026050.json, 数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json, "数字人/数字人/MiniMaxH3,最新多图数字人唱歌、口播-JANNY_2112016897540714498.json", 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json, 视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089682284474626049.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093283049906728962.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093299021564694530.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095122234930192386.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095124960045002754.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099449159597256706.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099479925886636033.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107413361423114242.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107435386602606594.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111407548954931202.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111432463317815297.json, 视频生成/图生视频/MiniMax-H3，多图参考数字人唱歌，精准对话_2093892809693679617.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版 v3_2101695889109770242.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2091716104501682178.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2099140567518236674.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2101684520792707074.json, 视频生成/图生视频/MiniMax‑H3 数字人【自动】｜口播・说唱・唱歌・电商讲解_2090784930476421122.json, 视频生成/图生视频/【开源】MiniMax_H3 自动数字人加速版_2088997708009918465.json, 视频生成/文生视频/MiniMaxH3多图数字人_2094416704804839425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_30
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/360度旋转-图生视频-wan2.2_1962130657587695617.json、视频生成/图生视频/576×1024-测试-AI短剧图生视频Wan2.2-14B_1955939150006550529.json、视频生成/图生视频/720×1280-测试-AI短剧图生视频Wan2.2-14B_1955946689876119554.json、视频生成/图生视频/AI-Wan2.2-14B 图生视频-极速版_1959887723270189057.json、视频生成/图生视频/AI站-Wan2.2-14B+图生视频-极速版_1958725154522165249.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3开源-数字人-唱歌_说唱_口播_虚拟主播_电商产品讲解_自动版_2114253264417026050.json、数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json、数字人/数字人/MiniMaxH3,最新多图数字人唱歌、口播-JANNY_2112016897540714498.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 26 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `JjkText`
-- `LoadWanVideoT5TextEncoder`
+- `AudioSeparation`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 25/26 个有
-- `Int` —— 25/26 个有
-- `JWInteger` —— 25/26 个有
-- `LoadImage` —— 25/26 个有
+- `Audio Duration (mtb)` —— 25/26 个有
+- `AudioCrop` —— 25/26 个有
 - `MathExpression|pysssss` —— 25/26 个有
-- `PreviewImage` —— 25/26 个有
-- `ImpactSwitch` —— 23/26 个有
-- `RH_Captioner` —— 23/26 个有
-- `RH_Prompter` —— 23/26 个有
-- `RH_Translator` —— 23/26 个有
-- `TextCombinerTwo` —— 23/26 个有
-- `easy anythingIndexSwitch` —— 23/26 个有
-- `easy showAnything` —— 23/26 个有
-- `easy cleanGpuUsed` —— 21/26 个有
-- `Bjornulf_ShowInt` —— 19/26 个有
-- `CR Text Concatenate` —— 19/26 个有
-- `CreateVideo` —— 19/26 个有
-- `ImageFromBatch+` —— 19/26 个有
-- `ImageResizeKJv2` —— 19/26 个有
-- `JjkShowText` —— 19/26 个有
-- `RH_LLMAPI_NODE` —— 19/26 个有
-- `RunningHub ThinkSound` —— 19/26 个有
-- `SaveVideo` —— 19/26 个有
-- `ShowText` —— 19/26 个有
-- `Fast Groups Muter (rgthree)` —— 17/26 个有
-- `WanVideoBlockSwap` —— 7/26 个有
-- `WanVideoSetBlockSwap` —— 7/26 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/26 个有
-- `Anything Everywhere` —— 1/26 个有
-- `DF_Integer` —— 1/26 个有
-- `Load Image From Url (mtb)` —— 1/26 个有
-- `SimpleMath+` —— 1/26 个有
-- `String` —— 1/26 个有
+- `ShowText|pysssss` —— 25/26 个有
+- `ComfyMathExpression` —— 17/26 个有
+- `PrimitiveFloat` —— 17/26 个有
+- `GetNode` —— 16/26 个有
+- `SaveText` —— 16/26 个有
+- `SetNode` —— 16/26 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/26 个有
+- `easy float` —— 9/26 个有
+- `PreviewImage` —— 1/26 个有
+- `Text` —— 1/26 个有
+- `easy cleanGpuUsed` —— 1/26 个有
+- `easy showAnything` —— 1/26 个有
+- `孤海注释` —— 1/26 个有
 
 ## 典型参数
 

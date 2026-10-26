@@ -1,86 +1,69 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_4
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.893083
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+frequency: 16
+level: moderate
+coverage: 0.782125
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json, 图片生成/图生图/FLUX超级高清放大修复_1911254476370706434.json, 图片生成/图生图/Flux-tile产品放大_1907653000217653250.json, 图片生成/图生图/Flux-图片降噪_1985551366481498113.json, 图片生成/图生图/flux图片高清放大_1915659288834932737.json, 图片生成/图生图/flux高清放大+Lora_1952609311073742849.json, 图片生成/图生图/flux高清放大-在线生图4K-标准版 (1)_1929345768141000706.json, 图片生成/图生图/flux高清放大-在线生图_1974848985930272769.json, 图片生成/图生图/flux高清放大-在线生图_1982986890833997825.json, 图片生成/图生图/flux高清放大-细节加强_2016726353726414850.json, 图片生成/图生图/「全网最强升级版」flux无损放大放大+修复_1882767903618486274.json, 图片生成/图生图/【人物一致多角度】FLUX完美三视图不同视角IP角色创建_1916057498137333761.json]
+members: [图片生成/图生图/Image Replication洗图姿势动作迁移 SeedVR+高清放大_2100745991401070594.json, 图片生成/图生图/Pose Transfer + krea2 + turbo （洗图）姿势动作迁移_2097150626210869250.json, 图片生成/图生图/Z-IMAGE去除人像AI感+高清放大+最新皮肤质感LORA_1995317634671554561.json, 图片生成/图生图/krea turbo洗图+seedvr2高清放大_2070375917419061249.json, 图片生成/图生图/krea turbo洗图+seedvr2高清放大_2070406276529614850.json, 图片生成/图生图/krea turbo洗图+seedvr2高清放大_2070423895731171330.json, 图片生成/图生图/krea turbo洗图+seedvr2高清放大_2083870836859166721.json, 图片生成/图生图/krea2 turbo + SeedVR 放大+图生图（洗图）=直出4K_2071475400043229185.json, 图片生成/图生图/krea2 turbo + SeedVR 放大+图生图（洗图）=直出4K_2071516612934586369.json, 图片生成/图生图/krea2 turbo SeedVR+高清放大+图生图（重绘洗图） 去油腻修复皮肤质感+高清放大修复_2074290818332061697.json, 图片生成/图生图/万物精修-一致性保持_klein精修工作流_2068396367621484545.json, 图片生成/图生图/图生图（洗图）姿势动作迁移 krea2 turbo SeedVR+高清放大+ 直出4K_2071766159808094209.json, 图片生成/图生图/姿态复制 姿势动作迁移 图生图（洗图） krea2 turbo SeedVR+高清放大+ 直出4K_2071776268462415874.json, 图片生成/图生图/开源参数猛兽FLUX2系列 — 多图组合生图_1993637280518782978.json, 图片生成/图生图/开源参数猛兽FLUX2系列 —— 单图生图片_1993627343866494977.json, 图片生成/文生图/开源参数猛兽FLUX2系列 —— 文字生图片_1993607069964107777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json、图片生成/图生图/FLUX超级高清放大修复_1911254476370706434.json、图片生成/图生图/Flux-tile产品放大_1907653000217653250.json、图片生成/图生图/Flux-图片降噪_1985551366481498113.json、图片生成/图生图/flux图片高清放大_1915659288834932737.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Image Replication洗图姿势动作迁移 SeedVR+高清放大_2100745991401070594.json、图片生成/图生图/Pose Transfer + krea2 + turbo （洗图）姿势动作迁移_2097150626210869250.json、图片生成/图生图/Z-IMAGE去除人像AI感+高清放大+最新皮肤质感LORA_1995317634671554561.json、图片生成/图生图/krea turbo洗图+seedvr2高清放大_2070375917419061249.json、图片生成/图生图/krea turbo洗图+seedvr2高清放大_2070406276529614850.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
 - `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 11/12 个有
-- `UNETLoader` —— 11/12 个有
-- `ImageResizeKJ` —— 9/12 个有
-- `Joy_caption_two` —— 5/12 个有
-- `Joy_caption_two_load` —— 5/12 个有
-- `PreviewImage` —— 4/12 个有
-- `StringFunction|pysssss` —— 3/12 个有
-- `CLIPTextEncodeFlux` —— 2/12 个有
-- `ConditioningCombine` —— 2/12 个有
-- `ImageResize+` —— 2/12 个有
-- `Joy_caption` —— 2/12 个有
-- `Joy_caption_load` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `Anything Everywhere3` —— 1/12 个有
-- `ControlNetApplySD3` —— 1/12 个有
-- `ControlNetLoader` —— 1/12 个有
-- `DWPreprocessor` —— 1/12 个有
-- `EmptySD3LatentImage` —— 1/12 个有
-- `Fast Groups Muter (rgthree)` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `LoraLoaderModelOnly` —— 1/12 个有
-- `ModelSamplingFlux` —— 1/12 个有
-- `Simple String` —— 1/12 个有
-- `UltimateSDUpscale` —— 1/12 个有
-- `VAEDecode` —— 1/12 个有
-- `workflow/model` —— 1/12 个有
+- `LoadImage` —— 15/16 个有
+- `VAEEncode` —— 15/16 个有
+- `AILab_QwenVL` —— 12/16 个有
+- `BasicScheduler` —— 12/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/16 个有
+- `PrimitiveInt` —— 11/16 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/16 个有
+- `Int` —— 7/16 个有
+- `ImageScaleBy` —— 5/16 个有
+- `EmptyFlux2LatentImage` —— 4/16 个有
+- `Flux2Scheduler` —— 4/16 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/16 个有
+- `CR Text` —— 3/16 个有
+- `FluxGuidance` —— 3/16 个有
+- `ImpactInt` —— 3/16 个有
+- `ReferenceLatent` —— 3/16 个有
+- `ImageScaleToTotalPixels` —— 2/16 个有
+- `LoraLoaderModelOnly` —— 2/16 个有
+- `GetImageSize` —— 1/16 个有
+- `LyingSigmaSampler` —— 1/16 个有
+- `PreviewAny` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.8 - 1 | 11 | 94% |
-| LoRA 文本强度 | 1 | 1 - 1 | 11 | 100% |
-| ControlNet 权重 | 0.75 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -88,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，11 个样本，取值集中（一致性 94%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

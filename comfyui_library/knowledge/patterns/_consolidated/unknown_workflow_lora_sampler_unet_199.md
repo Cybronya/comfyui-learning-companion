@@ -1,60 +1,67 @@
 ---
 name: unknown_workflow_lora_sampler_unet_199
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.908333
-common_nodes: [Canny, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.76675
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/F.1通过线稿，生成室内效果图+放大_1908319381733187585.json, 图片生成/图生图/F.1通过线稿，生成室内效果图_1908530217424400386.json, 图片生成/图生图/FLUX+CN丨canny+Depth丨深度 线稿 lora_1898940711260082177.json]
+members: [视频生成/图生视频/MinimaxH3 4steps 九宫格漫剧工作流_2084470766388736001.json, 视频生成/图生视频/MinimaxH3 4steps 多参视频工作流_2084301091453362177.json, 视频生成/图生视频/MinimaxH3 4步加速故事板九宫格分镜多参考图视频工作流_2084506449723617282.json, 视频生成/图生视频/MinimaxH3-「电商」-多参生视频_2091522221620686850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_199
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/F.1通过线稿，生成室内效果图+放大_1908319381733187585.json、图片生成/图生图/F.1通过线稿，生成室内效果图_1908530217424400386.json、图片生成/图生图/FLUX+CN丨canny+Depth丨深度 线稿 lora_1898940711260082177.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 4steps 九宫格漫剧工作流_2084470766388736001.json、视频生成/图生视频/MinimaxH3 4steps 多参视频工作流_2084301091453362177.json、视频生成/图生视频/MinimaxH3 4步加速故事板九宫格分镜多参考图视频工作流_2084506449723617282.json、视频生成/图生视频/MinimaxH3-「电商」-多参生视频_2091522221620686850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Canny`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `InstructPixToPixConditioning`
-- `KSampler`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 2/3 个有
-- `ImageResize` —— 2/3 个有
-- `ArgosTranslateTextNode` —— 1/3 个有
-- `BaiduTranslateNode` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DepthAnythingPreprocessor` —— 1/3 个有
+- `CR Prompt Text` —— 2/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `RHMiniMaxH3PromptOptimizer` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `LazySwitch1way` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy boolean` —— 1/4 个有
+- `easy promptConcat` —— 1/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 20 - 28 | 3 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 28，3 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

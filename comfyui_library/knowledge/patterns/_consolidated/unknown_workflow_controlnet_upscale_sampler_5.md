@@ -3,80 +3,76 @@ name: unknown_workflow_controlnet_upscale_sampler_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7735
-common_nodes: [Anything Everywhere, ApplyPulidFlux, BasicGuider, BasicScheduler, BiRefNet_Hugo, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, DualCLIPLoader, EmptySD3LatentImage, ExpressionEditor, Fast Groups Bypasser (rgthree), FluxGuidance, GridImageSplitter, GrowMask, Image Overlay, ImageFromBatch+, ImageResize+, ImageUpscaleWithModel, InvertMask, KSamplerSelect, LoadImage, ModelSamplingFlux, PreviewImage, Prompts Everywhere, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SeargeIntegerConstant, ShowText|pysssss, TextCombinerTwo, UltimateSDUpscale, UnetLoaderGGUF, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageInsetCrop, easy positive, easy seed]
+coverage: 0.864
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, Image Comparer (rgthree), KSamplerAdvanced, LoadImage, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【AI由北】人物一致性（电商统一模特）_1917191770050854913.json, 图片生成/图生图/自定义人物【一致性】_1919046530878345217.json]
+members: [图片生成/图生图/Z-lmage-Turbo 一键老建筑换新居所_2030933528707338242.json, 图片生成/文生图/Z-Image-Turbo ControlNet_2057628633455484929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【AI由北】人物一致性（电商统一模特）_1917191770050854913.json、图片生成/图生图/自定义人物【一致性】_1919046530878345217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z-lmage-Turbo 一键老建筑换新居所_2030933528707338242.json、图片生成/文生图/Z-Image-Turbo ControlNet_2057628633455484929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
-- `BiRefNet_Hugo`
+- `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `ExpressionEditor`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GridImageSplitter`
-- `GrowMask`
-- `Image Overlay`
-- `ImageFromBatch+`
-- `ImageResize+`
-- `ImageUpscaleWithModel`
-- `InvertMask`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ModelSamplingFlux`
+- `ModelPatchLoader`
 - `PreviewImage`
-- `Prompts Everywhere`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RH_Captioner`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `SeargeIntegerConstant`
-- `ShowText|pysssss`
-- `TextCombinerTwo`
-- `UltimateSDUpscale`
-- `UnetLoaderGGUF`
-- `UpscaleModelLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageInsetCrop`
-- `easy positive`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `ImpactImageBatchToImageList` —— 1/2 个有
+- `LayerUtility: If ` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/2 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `SimpleComparison+` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.85 | - | 2 | 100% |
+| 宽度 | 1024 | - | 2 | 50% |
+| 高度 | 1280 | - | 2 | 40% |
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 10 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | simple | - | 2 | 50% |
 
 ## 常见问题
 
@@ -84,5 +80,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本
+- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 50%
+- 重绘幅度 最常用 simple，2 个样本，一致性 50%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

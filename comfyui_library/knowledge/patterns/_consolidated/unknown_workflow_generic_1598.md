@@ -3,31 +3,31 @@ name: unknown_workflow_generic_1598
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_SeedanceV15ProTextToVideo, SaveVideo]
+coverage: 0.8335
+common_nodes: [RH_RhartImageGTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 1.5 Pro  文生视频｜支持1080P_2097525926488797186.json, 视频生成/文生视频/SeedanceV15ProTextToVideo_2038487801091592193.json]
+members: [图片生成/文生图/GSeries_TextToImage_v1.0_2033744913476624386.json, 图片生成/文生图/文生图4.2_text_to_image+全节点注释_2059600835008618498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1598
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Seedance 1.5 Pro  文生视频｜支持1080P_2097525926488797186.json、视频生成/文生视频/SeedanceV15ProTextToVideo_2038487801091592193.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/GSeries_TextToImage_v1.0_2033744913476624386.json、图片生成/文生图/文生图4.2_text_to_image+全节点注释_2059600835008618498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_SeedanceV15ProTextToVideo`
-- `SaveVideo`
+- `RH_RhartImageGTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

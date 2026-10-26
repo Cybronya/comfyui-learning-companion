@@ -3,33 +3,34 @@ name: unknown_workflow_upscale_44
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [ImageUpscaleWithModelBatched, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.8
+common_nodes: [Image Comparer (rgthree), LoadImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json, 图片生成/图生图/炒粉工作流_1977977937079193601.json]
+members: [图片生成/图生图/水彩放大_2062547319521898497.json, 图片生成/图生图/矢量级放大 无损_1950225257456164865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_44
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json、图片生成/图生图/炒粉工作流_1977977937079193601.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/水彩放大_2062547319521898497.json、图片生成/图生图/矢量级放大 无损_1950225257456164865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageUpscaleWithModelBatched`
+- `Image Comparer (rgthree)`
 - `LoadImage`
+- `SUPIR_Upscale`
 - `SaveImage`
-- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
+- `ResizeImagesByLongerEdge` —— 1/2 个有
+- `easy imageScaleDownToSize` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,41 +3,31 @@ name: unknown_workflow_generic_1629
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.801
-common_nodes: [CR Text, ImageScaleToTotalPixels, LayerUtility: PurgeVRAM, LoadImage, Qwen3_VQA, SaveAudio, easy saveText, easy showAnything]
+coverage: 1
+common_nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--图生声音--自动反推Qwen3TTS声音设计--抽（声音）卡！_2017627896218656769.json, 音频生成/音频生成/图生声音！VoxCPM2声音设计+Qwen3图片反推_2042769705978568706.json]
+members: [图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json, 图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1629
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--图生声音--自动反推Qwen3TTS声音设计--抽（声音）卡！_2017627896218656769.json、音频生成/音频生成/图生声音！VoxCPM2声音设计+Qwen3图片反推_2042769705978568706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json、图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImageScaleToTotalPixels`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `Qwen3_VQA`
-- `SaveAudio`
-- `easy saveText`
-- `easy showAnything`
+- `RH_RhartImageG25FlareTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `Qwen3TTSVoiceDesign` —— 1/2 个有
-- `RunningHub_VoxCPM_Generate` —— 1/2 个有
-- `RunningHub_VoxCPM_LoadModel` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

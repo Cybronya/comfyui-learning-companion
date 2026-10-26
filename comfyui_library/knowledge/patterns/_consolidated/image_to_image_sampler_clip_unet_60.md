@@ -2,90 +2,76 @@
 name: image_to_image_sampler_clip_unet_60
 type: Image To Image
 frequency: 7
-level: moderate
-coverage: 0.777857
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.739143
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2031931837576122370.json, 图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2044302454275186690.json, 图片生成/图生图/Klein图生图+洗图+线稿=B站艾橘溪_2028089884472254465.json, 图片生成/图生图/WH-AI-Studio电商产品海报自动生成器_2022617947113529346.json, 图片生成/图生图/指定人脸+Flux2 klein图生图工作流_2038164410010705921.json, 图片生成/图生图/指定人脸+Klein图生图=B站艾橘溪_2012373696018653186.json, 图片生成/图生图/最新指定人脸换脸高清补光影+Klein图生图＋高清写实 2_2099689034640617474.json]
+members: [图片生成/图生图/Upscaler-jasperai _Flux-高清修复+放大_1960569499613298689.json, 图片生成/图生图/kontext 风格转绘 225 种_2019645428148473857.json, 图片生成/图生图/人物改变动作_1958379196533915649.json, 图片生成/图生图/图片打光-kontext光影增强_1992859522335305730.json, 图片生成/图生图/打光工作流-kontext光影增强-SeedVR2放大_1998573391600844802.json, 图片生成/图生图/打光工作流-kontext光影增强_1951336253025366018.json, 图片生成/图生图/自然光场重建工作流_1994974310416703489.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_60
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2031931837576122370.json、图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2044302454275186690.json、图片生成/图生图/Klein图生图+洗图+线稿=B站艾橘溪_2028089884472254465.json、图片生成/图生图/WH-AI-Studio电商产品海报自动生成器_2022617947113529346.json、图片生成/图生图/指定人脸+Flux2 klein图生图工作流_2038164410010705921.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Upscaler-jasperai _Flux-高清修复+放大_1960569499613298689.json、图片生成/图生图/kontext 风格转绘 225 种_2019645428148473857.json、图片生成/图生图/人物改变动作_1958379196533915649.json、图片生成/图生图/图片打光-kontext光影增强_1992859522335305730.json、图片生成/图生图/打光工作流-kontext光影增强-SeedVR2放大_1998573391600844802.json…）
 
 - **类型**：Image To Image
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **可信度**：强结论
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetNode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleDownToSize` —— 6/7 个有
-- `Int` —— 6/7 个有
-- `PainterFluxImageEdit` —— 6/7 个有
-- `Qwen3_VQA` —— 6/7 个有
-- `ShowText|pysssss` —— 6/7 个有
-- `LayerMask: PersonMaskUltra V2` —— 3/7 个有
-- `LayerUtility: CropBoxResolve` —— 3/7 个有
-- `LayerUtility: CropByMask V2` —— 3/7 个有
-- `SolidMask` —— 3/7 个有
-- `easy mathInt` —— 3/7 个有
-- `RHHiddenNodes` —— 2/7 个有
-- `easy imageConcat` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `GetImageSize` —— 1/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageScale` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `ModelSamplingAuraFlow` —— 1/7 个有
-- `PhotoShakeNode` —— 1/7 个有
+- `Anything Everywhere3` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `ReferenceLatent` —— 6/7 个有
+- `ConstrainImage|pysssss` —— 5/7 个有
+- `JjkText` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `CR Text Input Switch (4 way)` —— 4/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `Anything Everywhere` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `ControlNetApplySD3` —— 1/7 个有
+- `ControlNetLoader` —— 1/7 个有
+- `ImageScaleBy` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `SeedVR2` —— 1/7 个有
+- `easy stylesSelector` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5 | 5 - 8 | 7 | 77% |
+| 采样步数 | 30 | 20 - 30 | 7 | 81% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 86% |
+| 采样算法 | euler | - | 7 | 100% |
 | 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 0.3 - 1 | 7 | 73% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| ControlNet 权重 | 0.7 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 5，观测区间 5 - 8，7 个样本
+- 采样步数 中位数 30，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
 - 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，7 个样本
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

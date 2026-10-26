@@ -1,81 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_754
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5565
-common_nodes: [BasicGuider, CLIPTextEncode, CR Float To Integer, DiffusionModelLoaderKJ, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, GetNode, ImpactInt, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SetNode, SimpleMath+, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.888
+common_nodes: [ImageResizeKJv2, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3多图参考视频工作流_2030663945266139137.json, 视频生成/图生视频/LTX2无限分镜头_2026308466846994434.json]
+members: [视频生成/图生视频/图生视频加运镜_1951201282436571137.json, 视频生成/图生视频/图生视频（WanFusionX）（魔方）_1948023695982899201.json, 视频生成/图生视频/首+尾帧视频转绘（FusionX_VACE无V）(魔方)_1945823469433221121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_754
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3多图参考视频工作流_2030663945266139137.json、视频生成/图生视频/LTX2无限分镜头_2026308466846994434.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频加运镜_1951201282436571137.json、视频生成/图生视频/图生视频（WanFusionX）（魔方）_1948023695982899201.json、视频生成/图生视频/首+尾帧视频转绘（FusionX_VACE无V）(魔方)_1945823469433221121.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPTextEncode`
-- `CR Float To Integer`
-- `DiffusionModelLoaderKJ`
-- `DualCLIPLoaderGGUF`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImpactInt`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+全部 3 个 workflow 都包含：
+- `ImageResizeKJv2`
+- `JWInteger`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SetNode`
-- `SimpleMath+`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LTXVAudioVAEEncode` —— 1/2 个有
-- `LTXVNormalizingSampler` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
-- `SolidMask` —— 1/2 个有
-- `TimbreAudioLoader` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `PreviewImage` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `WanVideoImageToVideoEncode` —— 2/3 个有
+- `WanVideoMagCache` —— 2/3 个有
+- `WanVideoSLG` —— 2/3 个有
+- `WanVideoVACEModelSelect` —— 2/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoSetRadialAttention` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
+- `WanVideoVACEEncode` —— 1/3 个有
+- `WanVideoVACEStartToEndFrame` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,6 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,81 +1,76 @@
 ---
 name: image_to_image_lora_sampler_unet_9
 type: Image To Image
-frequency: 26
+frequency: 27
 level: strong
-coverage: 0.922769
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.889185
+common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/QWEN-2511 ｜ 一致性｜多角度九宫格｜自定义角度_2021655546507567106.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版+全节点注释_2052231197274714113.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2009868534964297730.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2042118585144840193.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2009865153323470849.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2020733052619591682.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2011317131958296578.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2013097150955134978.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2085038097712111618.json, 图片生成/图生图/Qwen-Image-Edit-2511模型多角度摄像控制（96种机位选择）+直观便捷操作一键生成_2049404246746992642.json, 图片生成/图生图/Qwen2511多角度可视化控制_2010534612233097218.json, 图片生成/图生图/Qwen2511多角度可视化控制流_2009809050485133313.json, 图片生成/图生图/Qwen2511多角度可视化控制流_2011993469119631362.json, 图片生成/图生图/Qwen_Multiangle_多角度一致性分镜工作流_2085543629942255618.json, 图片生成/图生图/Qwen_Multiangle_多角度一致性分镜工作流_2085562380796383233.json, 图片生成/图生图/qwen2511多角度提示词控制_2059192086624296961.json, 图片生成/图生图/qwen多角度_2009920085019856897.json, 图片生成/图生图/多角度多机位拍摄模特人物+自由变更机位便捷操作_2066874522317447170.json, 图片生成/图生图/多角度工作流_2038655919210369025.json, 图片生成/图生图/多角度控制拍摄_2010308549825536001.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2009893150126514178.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2011827730614067202.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2036733513197690881.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2055634329270792194.json, 图片生成/图生图/🦖Qwen2511一键多角度_2010558215834046465.json, 图片生成/文生图/一键多角度摄像控制（96种机位选择）+直观便捷操作 V1.0_2011111925689618434.json]
+members: [图片生成/图生图/AI漫剧参考图生四视图工作流_2097324354634862593.json, 图片生成/图生图/FZ-MinimaxH3-krea2参考图生成四视图_2096847232858415105.json, 图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2086448288496177153.json, 图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流【短剧必备】_2088923554007048194.json, 图片生成/图生图/KREA-2-EDIT-Two-image- 多图参考生新图V2_2102619986266251266.json, 图片生成/图生图/KREA-2-EDIT-Two-image- 多图编辑工作流_2079959470469378049.json, 图片生成/图生图/Krea2 角色设定表（四视图）-zip_2086873606709145602.json, 图片生成/图生图/Krea2 角色设定表（四视图）_2083733558660780033.json, 图片生成/图生图/Krea2 角色资产一致性生图（四视图）_2084820992232345602.json, 图片生成/图生图/Krea2 角色（四视图）_2089596718005444609.json, 图片生成/图生图/Krea2 角色（四视图）_2100871748366462977.json, 图片生成/图生图/Krea2 角色（四视图）_2103015116215242753.json, 图片生成/图生图/Krea2 资产库角色（三视图_新版）_解决远景脸崩坏_2095060849907036162.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2083808615709892610.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2093933329925103618.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2094677282794332162.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2094699092713754626.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2095072638539493378.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2096838930321723393.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2098207233946509314.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2105196770774052865.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2110253402931421186.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2112439275240386561.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2112727576572686338.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2113583498320764929.json, 图片生成/图生图/Krea2 资产库角色（四视图）_2113588533079400449.json, 图片生成/图生图/Krea2_角色设定表四视图_2087388265870614530.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/QWEN-2511 ｜ 一致性｜多角度九宫格｜自定义角度_2021655546507567106.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版+全节点注释_2052231197274714113.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2009868534964297730.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2042118585144840193.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2009865153323470849.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/AI漫剧参考图生四视图工作流_2097324354634862593.json、图片生成/图生图/FZ-MinimaxH3-krea2参考图生成四视图_2096847232858415105.json、图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2086448288496177153.json、图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流【短剧必备】_2088923554007048194.json、图片生成/图生图/KREA-2-EDIT-Two-image- 多图参考生新图V2_2102619986266251266.json…）
 
 - **类型**：Image To Image
-- **样本数**：26
+- **样本数**：27
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `CFGNorm`
+全部 27 个 workflow 都包含：
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
+- `EmptySD3LatentImage`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KepStringList` —— 22/26 个有
-- `easy showAnything` —— 22/26 个有
-- `EmptySD3LatentImage` —— 16/26 个有
-- `Text Concatenate` —— 15/26 个有
-- `easy string` —— 15/26 个有
-- `Int` —— 13/26 个有
-- `PreviewAny` —— 3/26 个有
-- `CR Text` —— 1/26 个有
-- `Getter` —— 1/26 个有
-- `ImageGetter` —— 1/26 个有
-- `Kep_JoinListAny` —— 1/26 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/26 个有
-- `Setter` —— 1/26 个有
-- `TT_img_enc` —— 1/26 个有
+- `GetImageSize` —— 25/27 个有
+- `ImageResizeKJv2` —— 23/27 个有
+- `PreviewImage` —— 23/27 个有
+- `AddLabel` —— 21/27 个有
+- `ImageConcatMulti` —— 21/27 个有
+- `ImageScaleBy` —— 4/27 个有
+- `ResizeImageMaskNode` —— 4/27 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/27 个有
+- `Textbox` —— 2/27 个有
+- `HAIGC_SaveImagesToZip` —— 1/27 个有
+- `JjkText` —— 1/27 个有
+- `solarL_SaveImagesToZip` —— 1/27 个有
+- `孤海注释` —— 1/27 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 26 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 26 | 100% |
-| 采样算法 | euler | - | 26 | 100% |
-| 调度器 | simple | - | 26 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 26 | 100% |
+| 采样步数 | 10 | 8 - 10 | 27 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 27 | 100% |
+| 采样算法 | euler | - | 27 | 100% |
+| 调度器 | simple | - | 27 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 27 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 26/26 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/27 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，26 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，26 个样本，一致性 100%
-- 调度器 最常用 simple，26 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
-- 高发问题（26/26 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 10，27 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，27 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，27 个样本，一致性 100%
+- 调度器 最常用 simple，27 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，27 个样本，取值集中（一致性 100%）

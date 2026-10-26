@@ -1,71 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_741
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9115
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.781667
+common_nodes: [CLIPLoader, CLIPTextEncode, Compare, GetImageSize, GetNode, ImageResize+, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RHHiddenNodes, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy batchAnything, easy cleanGpuUsed, easy ifElse, easy imageListToImageBatch, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3加速方式对比_2087392191630106625.json, 视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json]
+members: [视频生成/图生视频/【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1989325404936826881.json, 视频生成/图生视频/【五镜联动·一键制作】分镜_关键帧联动_1989305168229486593.json, 视频生成/图生视频/【五镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1988497511591665666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_741
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3加速方式对比_2087392191630106625.json、视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1989325404936826881.json、视频生成/图生视频/【五镜联动·一键制作】分镜_关键帧联动_1989305168229486593.json、视频生成/图生视频/【五镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1988497511591665666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `EasyCache`
-- `KSamplerSelect`
-- `Label (rgthree)`
+- `CLIPTextEncode`
+- `Compare`
+- `GetImageSize`
+- `GetNode`
+- `ImageResize+`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SetNode`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
+- `WanFirstMiddleLastFrameToVideo`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy imageListToImageBatch`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 1/2 个有
-- `MiniMaxH3BlockCacheT8` —— 1/2 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `easy string` —— 1/2 个有
-- `string_util_StrConcat` —— 1/2 个有
+- `ColorMatch` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -73,4 +75,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

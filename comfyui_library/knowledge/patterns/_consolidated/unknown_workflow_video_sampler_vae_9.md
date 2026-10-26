@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_vae_9
 type: Unknown Workflow
-frequency: 24
+frequency: 21
 level: moderate
-coverage: 0.888
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.577238
+common_nodes: [CogVideoEnhanceAVideo, GetNode, ImageResize+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json, 视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json, 视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json, 视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json, 视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T1_2085350214604513281.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T2_2085358927612563457.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T3_2085391641258582017.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T4_2085391626901475329.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T5_2085411686395236353.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T6_2085444171992748033.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T7_2102928115411542018.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T7_2104380315761471490.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T8_2085676923673464834.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T9_2085718493915336705.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词_2086276081564344321.json, 视频生成/图生视频/minimaxh3多参官方指南自动扩展提示词T1_2085348535347802114.json, 视频生成/图生视频/人物微表情变化_2097294907064012801.json, 视频生成/图生视频/人物表情变化动作_2097300292181258241.json, 视频生成/图生视频/人物表情语言变化_2098063808349696001.json, 视频生成/图生视频/双姝_2098043624184434690.json, 视频生成/图生视频/古装美女扮相_2098413882426609665.json, 视频生成/图生视频/快乐的小猫咪_2092480218379411457.json, 视频生成/图生视频/摘松果的松鼠_2091046140023234562.json]
+members: [图片生成/图生图/【动态追踪运镜】wan2.1图生视频（全自动）_2044340242756407298.json, 图片生成/图生图/【希区柯克运镜】wan2.1图生视频（全自动）_2044340400877473794.json, 图片生成/图生图/【高速跟随运镜】wan2.1图生视频（全自动）_2044359735259959297.json, 视频生成/图生视频/360°运镜无缝转场_1989163247343382530.json, 视频生成/图生视频/Fusionx首尾帧视频生成_1941491329644052481.json, 视频生成/图生视频/Wan2.1 VACE14B 图生视频 电商产品服装展示_1926239959831769089.json, 视频生成/图生视频/wan2.1电影级运镜·图生视频自动版_1943217386050764801.json, 视频生成/图生视频/【360°环绕运镜】wan2.1图生视频（全自动）_1930416683494621185.json, 视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频（全自动）_1932144473588101122.json, 视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频｜自动补全_1932777687310372865.json, 视频生成/图生视频/【Fusion X】VACE-14B首尾帧动画（基础流）_1935089059322896386.json, 视频生成/图生视频/【Fusion X首尾帧】360°运镜无缝转场_1935147311754321921.json, 视频生成/图生视频/【Fusion+X首尾帧】无缝转场_2039609556543741954.json, 视频生成/图生视频/【产品360旋转】wan2.1图生视频（全自动）_1931512352187809794.json, 视频生成/图生视频/【动态追踪运镜】wan2.1图生视频（全自动）_1931191683562536961.json, 视频生成/图生视频/【希区柯克运镜】wan2.1图生视频（全自动）_1931298489089896450.json, 视频生成/图生视频/【弧线围绕运镜】wan2.1图生视频（全自动）_1931133040167157762.json, 视频生成/图生视频/【红毯运镜】高级运镜 wan2.1图生视频_1934219687129735170.json, 视频生成/图生视频/【高速跟随运镜】wan2.1图生视频（全自动）_1930913690252718081.json, 视频生成/图生视频/运镜效果wan2.1图生视频_2050075485417295874.json, 视频生成/图生视频/运镜无缝转场_1935937299358081025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json、视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json、视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json、视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json、视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/【动态追踪运镜】wan2.1图生视频（全自动）_2044340242756407298.json、图片生成/图生图/【希区柯克运镜】wan2.1图生视频（全自动）_2044340400877473794.json、图片生成/图生图/【高速跟随运镜】wan2.1图生视频（全自动）_2044359735259959297.json、视频生成/图生视频/360°运镜无缝转场_1989163247343382530.json、视频生成/图生视频/Fusionx首尾帧视频生成_1941491329644052481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：24
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+全部 21 个 workflow 都包含：
+- `CogVideoEnhanceAVideo`
+- `GetNode`
+- `ImageResize+`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Text`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 19/24 个有
-- `ResolutionSelector` —— 17/24 个有
-- `easy showAnything` —— 17/24 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 16/24 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 14/24 个有
-- `ImageConcatenateMulti_UTK` —— 13/24 个有
-- `PreviewImage` —— 13/24 个有
-- `RHHiddenNodes` —— 12/24 个有
-- `RH_Captioner` —— 11/24 个有
-- `TextConcatenate_UTK` —— 11/24 个有
-- `MiniMaxH3ImageToVideo` —— 10/24 个有
-- `LoadAudio` —— 9/24 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/24 个有
-- `EnhancedLoadDiffusionModel` —— 5/24 个有
-- `LoraLoaderBypassModelOnly` —— 5/24 个有
-- `MiniMaxH3BlockCacheT8` —— 5/24 个有
-- `ExtractSubstring` —— 2/24 个有
-- `JWStringToFloat` —— 2/24 个有
-- `CreateVideo` —— 1/24 个有
-- `ImageFromBatch` —— 1/24 个有
-- `ImageResizeKJv2` —— 1/24 个有
-- `LoadVideoUI` —— 1/24 个有
-- `ModelAttentionBackend` —— 1/24 个有
-- `PD_Extract_Image` —— 1/24 个有
-- `RH_Translator` —— 1/24 个有
-- `SaveVideo` —— 1/24 个有
-- `easy indexAnything` —— 1/24 个有
+- `Anything Everywhere` —— 20/21 个有
+- `WanVideoLoraSelect` —— 19/21 个有
+- `CLIPVisionLoader` —— 18/21 个有
+- `RHHiddenNodes` —— 18/21 个有
+- `ShowText|pysssss` —— 18/21 个有
+- `WanVideoClipVisionEncode` —— 16/21 个有
+- `WanVideoImageToVideoEncode` —— 16/21 个有
+- `ImageCASharpening+` —— 15/21 个有
+- `JWInteger` —— 15/21 个有
+- `WanVideoTeaCache` —— 15/21 个有
+- `WanVideoTextEncode` —— 15/21 个有
+- `Int` —— 6/21 个有
+- `MathExpression|pysssss` —— 6/21 个有
+- `WanVideoApplyNAG` —— 6/21 个有
+- `WanVideoTextEncodeSingle` —— 6/21 个有
+- `WanVideoVACEEncode` —— 5/21 个有
+- `ImageConcanate` —— 4/21 个有
+- `CR Text Concatenate` —— 3/21 个有
+- `WanVideoVACEModelSelect` —— 3/21 个有
+- `WanVideoVACEStartToEndFrame` —— 3/21 个有
+- `GetImageSizeAndCount` —— 2/21 个有
+- `RH_Translator` —— 2/21 个有
+- `Note _O` —— 1/21 个有
+- `Text Multiline` —— 1/21 个有
 
 ## 典型参数
 

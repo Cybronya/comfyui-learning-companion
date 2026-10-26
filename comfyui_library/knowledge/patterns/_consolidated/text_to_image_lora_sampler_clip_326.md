@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_326
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.903
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.896333
+common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SelfLift优化加速视频_2111462433582833666.json, 视频生成/图生视频/SelfLift优化速度流 视频生成加速方案_2108986698486079490.json, 视频生成/文生视频/Minimax H3加速双采｜Self-Lift工作流提速出片两不误_2101510468241289218.json, 视频生成/文生视频/Minimax H3满血版黑科技加速 Self-lift双采工作流_2098704152372277249.json, 视频生成/文生视频/海螺H3融合模型加速双采｜self-lift文生视频工作流_2097819718035001346.json, 视频生成/文生视频/黑科技加速双采self-lift工作流｜文生视频快速生成_2097773293859328001.json]
+members: [图片生成/图生图/Flux2 Klein 9B图像编辑+Lora-单图 浮云2.9_2020706923749842945.json, 图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json, 图片生成/图生图/Flux2 Klein 图像编辑对比-单图_2012134645369933826.json, 图片生成/图生图/Flux2 Klein 图像编辑对比-多图_2012149655513075714.json, 图片生成/图生图/千问2511 图像编辑对比-单图 浮云2.7_2020065708322856962.json, 图片生成/文生图/Flux2-Klein文生图_单图编辑_多图融合工作流合集_2014665385068466178.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_326
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/SelfLift优化加速视频_2111462433582833666.json、视频生成/图生视频/SelfLift优化速度流 视频生成加速方案_2108986698486079490.json、视频生成/文生视频/Minimax H3加速双采｜Self-Lift工作流提速出片两不误_2101510468241289218.json、视频生成/文生视频/Minimax H3满血版黑科技加速 Self-lift双采工作流_2098704152372277249.json、视频生成/文生视频/海螺H3融合模型加速双采｜self-lift文生视频工作流_2097819718035001346.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 9B图像编辑+Lora-单图 浮云2.9_2020706923749842945.json、图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json、图片生成/图生图/Flux2 Klein 图像编辑对比-单图_2012134645369933826.json、图片生成/图生图/Flux2 Klein 图像编辑对比-多图_2012149655513075714.json、图片生成/图生图/千问2511 图像编辑对比-单图 浮云2.7_2020065708322856962.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
@@ -23,79 +23,76 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
+- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `H3SigmaRefiner`
-- `JjkText`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `ModelSamplingAuraFlow`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `CreateVideo` —— 4/6 个有
-- `LoadAudio` —— 4/6 个有
-- `SelfLiftH3Sampler` —— 4/6 个有
-- `ImageFromBatch` —— 2/6 个有
-- `ImageScaleBy` —— 2/6 个有
-- `LTXVConcatAVLatent` —— 2/6 个有
-- `SelfLiftAvatarH3Sampler` —— 2/6 个有
-- `SetLatentNoiseMask` —— 2/6 个有
-- `SolidMask` —— 2/6 个有
-- `VAEEncodeAudio` —— 2/6 个有
-- `VOSR2ModelLoader` —— 2/6 个有
-- `VOSR2Upscale` —— 2/6 个有
-- `VedaSparseAttention` —— 2/6 个有
-- `AudioCrop` —— 1/6 个有
-- `LoraLoaderBypassModelOnly` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 5/6 个有
+- `FluxResolutionNode` —— 5/6 个有
+- `ImpactInt` —— 5/6 个有
+- `ImpactSwitch` —— 5/6 个有
+- `KOOK_ImageCompression` —— 5/6 个有
+- `RH_LLMAPI_NODE` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `TextEncodeQwenImageEditPlus` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `LayerUtility: PurgeVRAM` —— 3/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
+| 宽度 | 616 | 512 - 720 | 6 | 83% |
+| 高度 | 896 | 512 - 1280 | 6 | 57% |
+| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
+- 宽度 中位数 616，观测区间 512 - 720，6 个样本，取值集中（一致性 83%）
+- 高度 中位数 896，观测区间 512 - 1280，6 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/6 个样本）：Steps较低可能导致细节不足

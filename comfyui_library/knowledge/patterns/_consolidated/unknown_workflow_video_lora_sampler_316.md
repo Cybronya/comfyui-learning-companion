@@ -1,70 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_316
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.929857
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
+frequency: 8
+level: strong
+coverage: 0.49225
+common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json, 视频生成/图生视频/WanMove图生视频动作编辑_1999827613361242114.json, 视频生成/图生视频/WanMove运动轨迹控制V1（创意玩法）_2000263694896558082.json, 视频生成/图生视频/Wanmove+Fill Nodes 动与静轨迹控制 【 1.0 】_1999310460828647425.json, 视频生成/图生视频/Wanmove+Fill Nodes动与静轨迹控制V1（扭曲艺术）_1999117506138828801.json, 视频生成/图生视频/Wanmove+Fill+Nodes轨迹控制V1_1999165322026418177.json, 视频生成/图生视频/Wanmove多点轨迹运动指引图生视频V1_1999110831537258497.json]
+members: [视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1991421095259631618.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2012485583641255937.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2013095948842438657.json, 视频生成/图生视频/首尾帧视频_2005138908902031361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_316
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json、视频生成/图生视频/WanMove图生视频动作编辑_1999827613361242114.json、视频生成/图生视频/WanMove运动轨迹控制V1（创意玩法）_2000263694896558082.json、视频生成/图生视频/Wanmove+Fill Nodes 动与静轨迹控制 【 1.0 】_1999310460828647425.json、视频生成/图生视频/Wanmove+Fill Nodes动与静轨迹控制V1（扭曲艺术）_1999117506138828801.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1991421095259631618.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddWanMoveTracks`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
-- `WanVideoWanDrawWanMoveTracks`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `LoadWanVideoT5TextEncoder` —— 6/7 个有
-- `RepeatImageBatch` —— 6/7 个有
-- `WanVideoSetBlockSwap` —— 6/7 个有
-- `WanVideoSetLoRAs` —— 6/7 个有
-- `WanVideoTextEncode` —— 6/7 个有
-- `INTConstant` —— 5/7 个有
-- `ImageConcanate` —— 5/7 个有
-- `SplineEditor` —— 5/7 个有
-- `CR Prompt Text` —— 4/7 个有
-- `FL_PathAnimator` —— 4/7 个有
-- `GetNode` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `LazySwitchKJ` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `SeedVR2` —— 1/7 个有
-- `SeedVR2BlockSwap` —— 1/7 个有
-- `SeedVR2ExtraArgs` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `WanVideoTextEncodeCached` —— 1/7 个有
+- `INTConstant` —— 6/8 个有
+- `DuckHideNode` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/8 个有
+- `SaveImage` —— 5/8 个有
+- `easy saveText` —— 5/8 个有
+- `ColorMatch` —— 4/8 个有
+- `PainterI2V` —— 4/8 个有
+- `WanFirstLastFrameToVideo` —— 4/8 个有
+- `RunningHub Deepcleaner` —— 3/8 个有
+- `Textbox` —— 3/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `MultiLinePromptMG` —— 2/8 个有
+- `TT_img_enc_v2` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 8 | 62% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | lcm | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -72,4 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，8 个样本，一致性 62%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

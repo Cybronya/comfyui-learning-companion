@@ -3,88 +3,65 @@ name: unknown_workflow_upscale_lora_sampler_117
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.802
-common_nodes: [AILab_QwenVL, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DetailDaemonSamplerNode, DyPE_FLUX, EmptyImage, EmptyLatentImage, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewBridge, PreviewImage, SamplerCustom, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy cleanGpuUsed, easy imageSize, easy positive, easy promptConcat, easy showAnything]
+coverage: 0.64
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/qwen-image-2512-手机壁纸生成-最纯粹的文生图-批量生成_2026156357417701377.json, 图片生成/文生图/z-image-造像-壁纸生成-批量生成-v2_1998251373164658690.json]
+members: [图片生成/文生图/Z-Image-turb可出真实感多图_2076105517755363330.json, 图片生成/文生图/熟颜世绘-日系轻熟御姐人像_2072120581000097793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_117
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/qwen-image-2512-手机壁纸生成-最纯粹的文生图-批量生成_2026156357417701377.json、图片生成/文生图/z-image-造像-壁纸生成-批量生成-v2_1998251373164658690.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image-turb可出真实感多图_2076105517755363330.json、图片生成/文生图/熟颜世绘-日系轻熟御姐人像_2072120581000097793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DetailDaemonSamplerNode`
-- `DyPE_FLUX`
-- `EmptyImage`
 - `EmptyLatentImage`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewBridge`
 - `PreviewImage`
-- `SamplerCustom`
 - `SaveImage`
-- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageSize`
-- `easy positive`
-- `easy promptConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `BasicGuider` —— 1/2 个有
-- `CFGNorm` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `ImpactMakeAnyList` —— 1/2 个有
-- `JDCN_StringToList` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `ProcessString` —— 1/2 个有
-- `Qwen2.5` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SamplerEulerAncestral` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy imageSizeBySide` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `LazySwitch1way` —— 1/2 个有
+- `MemoryCleaner` —— 1/2 个有
+- `ModelPassThrough` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy boolean` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | - | 2 | 67% |
-| 高度 | 768 | - | 2 | 67% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 19 | - | 2 | 42% |
+| 采样算法 | 2 | - | 2 | 50% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | simple | - | 2 | 100% |
+| 宽度 | 1040 | - | 2 | 96% |
+| 高度 | 1912 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -92,6 +69,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，样本不足，未给区间，2 个样本
-- 高度 中位数 768，样本不足，未给区间，2 个样本
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 19，样本不足，未给区间，2 个样本，取值分散，一致性仅 42%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本
+- 调度器 最常用 euler，2 个样本，一致性 50%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 宽度 中位数 1040，样本不足，未给区间，2 个样本，取值集中（一致性 96%）
+- 高度 中位数 1912，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

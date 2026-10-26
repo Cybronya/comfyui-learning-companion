@@ -3,100 +3,84 @@ name: unknown_workflow_controlnet_video_lora_7
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.4542
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), FastUnsharpSharpen, GetNode, GrowMaskWithBlur, INTConstant, ImageBlend, ImageConcatMulti, ImageFlip, ImageResizeKJv2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PlaySound|pysssss, PoseAndFaceDetection, PreviewAny, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, Seed (rgthree), SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader, easy framesEditor, easy sam3GetObjectIds, easy sam3GetObjectMask, easy sam3ModelLoader, easy sam3VideoModelExtraConfig, easy sam3VideoSegmentation, easy sam3Visualization]
+coverage: 0.885
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2012171919730151426.json, 视频生成/图生视频/0219人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2024420468635209729.json, 视频生成/图生视频/GS-人物替换姿态迁移_2058803362686136321.json, 视频生成/图生视频/WanAnimate Sam3+SD-Pose  人物替换+姿态迁移_2078667744270180354.json, 视频生成/图生视频/WanAnimate+Sam3+SD-Pose+物替换&姿态迁移+最强工作流!!+_2064168504852566018.json, 视频生成/图生视频/人物替换&姿态迁移 WanAnimate Sam3+SD-Pose_2015028362657406978.json, 视频生成/图生视频/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2064313461764612097.json, 视频生成/图生视频/人物替换&姿态迁移_2044048131473547266.json, 视频生成/图生视频/自用 人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2026672367019237377.json, 视频生成/图生视频/舞蹈迁移-自用_2062211912280137730.json]
+members: [图片生成/图生图/Multitalk数字人图片唱歌（kj加速升级版）_1937093293593251841.json, 图片生成/图生图/Wanvideo_Multitalk_Kijai_1936153809884205058.json, 数字人/数字人/MultiTalk-最强数字人_1936721152276353025.json, 数字人/数字人/MultiTalk弹唱数字人（加速版）_1948018639694901249.json, 数字人/数字人/MultiTalk数字人·K歌极速版-阿浩_2027218966384484354.json, 视频生成/图生视频/25到29秒长视频唱歌_1945316434345959426.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk全民K唱歌数字人_1936094319805648897.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk全民K唱歌数字人：智能AI唱歌软件工作流_2015642745657892866.json, 视频生成/图生视频/Multitalk万能数字人- 真人-卡通- 动物--生成超长视频_1939669350049878017.json, 视频生成/图生视频/图生高清唱歌视频--25到29秒长视频唱歌_1996612956362260482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2012171919730151426.json、视频生成/图生视频/0219人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2024420468635209729.json、视频生成/图生视频/GS-人物替换姿态迁移_2058803362686136321.json、视频生成/图生视频/WanAnimate Sam3+SD-Pose  人物替换+姿态迁移_2078667744270180354.json、视频生成/图生视频/WanAnimate+Sam3+SD-Pose+物替换&姿态迁移+最强工作流!!+_2064168504852566018.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Multitalk数字人图片唱歌（kj加速升级版）_1937093293593251841.json、图片生成/图生图/Wanvideo_Multitalk_Kijai_1936153809884205058.json、数字人/数字人/MultiTalk-最强数字人_1936721152276353025.json、数字人/数字人/MultiTalk弹唱数字人（加速版）_1948018639694901249.json、数字人/数字人/MultiTalk数字人·K歌极速版-阿浩_2027218966384484354.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BlockifyMask`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FastUnsharpSharpen`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageBlend`
-- `ImageConcatMulti`
-- `ImageFlip`
-- `ImageResizeKJv2`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
-- `MaskToImage`
-- `OnnxDetectionModelLoader`
-- `PlaySound|pysssss`
-- `PoseAndFaceDetection`
-- `PreviewAny`
-- `PreviewImage`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `Seed (rgthree)`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `YOLOModelLoader`
-- `easy framesEditor`
-- `easy sam3GetObjectIds`
-- `easy sam3GetObjectMask`
-- `easy sam3ModelLoader`
-- `easy sam3VideoModelExtraConfig`
-- `easy sam3VideoSegmentation`
-- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 9/10 个有
-- `WanVideoContextOptions` —— 8/10 个有
-- `Label (rgthree)` —— 3/10 个有
-- `LamCommonPrint` —— 3/10 个有
-- `孤海注释` —— 2/10 个有
-- `DF_Int_to_Float` —— 1/10 个有
-- `ImageResizeKJ` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `ImpactConditionalBranch` —— 1/10 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `MathExpression|pysssss` —— 9/10 个有
+- `VHS_LoadVideo` —— 9/10 个有
+- `INTConstant` —— 8/10 个有
+- `Text Multiline` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `Primitive integer [Crystools]` —— 7/10 个有
+- `SaveAudio` —— 7/10 个有
+- `VHS_DuplicateImages` —— 7/10 个有
+- `RH_Captioner` —— 6/10 个有
+- `Text Concatenate` —— 6/10 个有
+- `CreateCFGScheduleFloatList` —— 5/10 个有
+- `easy anythingIndexSwitch` —— 3/10 个有
+- `Audio Cut (mtb)` —— 2/10 个有
+- `CR Text` —— 2/10 个有
+- `ColorMatch` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
+- `RHHiddenNodes` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `WanVideoSLG` —— 2/10 个有
+- `Audio Duration (mtb)` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
 - `Int` —— 1/10 个有
-- `JWInteger` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
-- `RHHiddenNodes` —— 1/10 个有
-- `RH_Captioner` —— 1/10 个有
-- `SaveImage` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `TT_img_enc` —— 1/10 个有
-- `Text Concatenate` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `UpscaleModelLoader` —— 1/10 个有
-- `easy compare` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `LayerUtility: PurgeVRAM` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `PreviewAudio` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `WanVideoEnhanceAVideo` —— 1/10 个有
+- `WanVideoMagCache` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 

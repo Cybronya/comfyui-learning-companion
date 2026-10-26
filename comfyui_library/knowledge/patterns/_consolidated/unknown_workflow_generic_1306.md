@@ -3,43 +3,38 @@ name: unknown_workflow_generic_1306
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.811
-common_nodes: [CR Text, HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, PromptBatchQueue, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.643
+common_nodes: [ComfyMathExpression, PreviewAny, PrimitiveStringMultiline, StringReplace, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键产品生成详情主图_2046506767437275138.json, 图片生成/图生图/一键生成产品详情页_2030177329959407617.json]
+members: [图片生成/反推提示词/ideogram提示词生成t2t_2074360852504993794.json, 图片生成/反推提示词/图片反推json提示词（用于Ideogram4.0）工作流_2074046331919884290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1306
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键产品生成详情主图_2046506767437275138.json、图片生成/图生图/一键生成产品详情页_2030177329959407617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/ideogram提示词生成t2t_2074360852504993794.json、图片生成/反推提示词/图片反推json提示词（用于Ideogram4.0）工作流_2074046331919884290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `HAIGC_CombineUnits`
-- `HAIGC_Layer`
-- `HAIGC_SavePSD`
-- `LoadImage`
-- `PromptBatchQueue`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `ComfyMathExpression`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `StringReplace`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
-- `CR Text Replace` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `IntToString` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `ResolutionSelector` —— 1/2 个有
 
 ## 典型参数
 

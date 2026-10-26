@@ -1,89 +1,91 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_12
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.832
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
-problems: []
+frequency: 9
+level: moderate
+coverage: 0.803556
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KSampler, LatentPixelScale, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/分块高清放大工作流_1934782777130688514.json, 图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json, 图片生成/图生图/图片超级高清放大_1915403255067639810.json, 图片生成/图生图/场景图8K高清修复放大_2071474028497428482.json, 图片生成/图生图/放大-F.1_1942192673929498626.json, 图片生成/图生图/高清放大_1902741134769074178.json, 图片生成/图生图/高清放大工作流（TRANCE）_1925847949354422273.json, 图片生成/文生图/文生图或图放大（4k）_1901839602184036353.json]
+members: [图片生成/文生图/qwen2511-千万级像素文生图，终极高清放大版本_2004848765221695489.json, 图片生成/文生图/万亿级像素文生图 - 文生图Z-image+SeedVR2.5.1 定义超高清影像新标准高_2034249664538611713.json, 图片生成/文生图/亿级像素+超清细节放大-Z-Image+SeedVR2_2001658897922441218.json, 图片生成/文生图/文生图Z-image+SeedVR2.5.1 万亿级像素文生图，细节纤毫毕现，定义超高清影像新标准高_2033734929732870146.json, 图片生成/文生图/文生图_2075454482460274690.json, 图片生成/文生图/最新亿级像素文生图，细节纤毫毕现，超高清影像，高清放大_2046458596510142465.json, 图片生成/文生图/真实视界 • Z-image 亿级像素现场造像师：定格物理级现实的快门瞬间_2043616304438976514.json, 图片生成/文生图/真实视界 • Z-image 亿级像素现场造像师：定格物理级现实的快门瞬间_2057075322029436930.json, 数字人/数字人/Z-Image：亿级像素文生图_许老师_1998643485869793282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/分块高清放大工作流_1934782777130688514.json、图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json、图片生成/图生图/图片超级高清放大_1915403255067639810.json、图片生成/图生图/场景图8K高清修复放大_2071474028497428482.json、图片生成/图生图/放大-F.1_1942192673929498626.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/qwen2511-千万级像素文生图，终极高清放大版本_2004848765221695489.json、图片生成/文生图/万亿级像素文生图 - 文生图Z-image+SeedVR2.5.1 定义超高清影像新标准高_2034249664538611713.json、图片生成/文生图/亿级像素+超清细节放大-Z-Image+SeedVR2_2001658897922441218.json、图片生成/文生图/文生图Z-image+SeedVR2.5.1 万亿级像素文生图，细节纤毫毕现，定义超高清影像新标准高_2033734929732870146.json、图片生成/文生图/文生图_2075454482460274690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `ImageUpscaleWithModel`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `GetImageSize+`
+- `ImageResize+`
+- `ImageScaleBy`
+- `KSampler`
+- `LatentPixelScale`
+- `PreviewImage`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
+- `VAEDecode`
 - `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `Image Comparer (rgthree)` —— 5/8 个有
-- `ImageResize+` —— 5/8 个有
-- `ImageScaleToTotalPixels` —— 5/8 个有
-- `LoraLoader` —— 5/8 个有
-- `Florence2ModelLoader` —— 4/8 个有
-- `Florence2Run` —— 4/8 个有
-- `ImageListToImageBatch` —— 3/8 个有
-- `easy imageListToImageBatch` —— 3/8 个有
-- `Constant Number` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ImageListToBatch+` —— 2/8 个有
-- `ShowText|pysssss` —— 2/8 个有
-- `Text Find and Replace` —— 2/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `easy imageInsetCrop` —— 2/8 个有
-- `CLIPTextEncodeFlux` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
-- `EmptyLatentImage` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `NunchakuFluxDiTLoader` —— 1/8 个有
-- `VAEDecode` —— 1/8 个有
+- `JjkText` —— 8/9 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `Image Comparer (rgthree)` —— 7/9 个有
+- `easy cleanGpuUsed` —— 7/9 个有
+- `LayerUtility: ImageReel` —— 6/9 个有
+- `LayerUtility: ImageReelComposit` —— 6/9 个有
+- `RH_LLMAPI_NODE` —— 6/9 个有
+- `LoadImage` —— 3/9 个有
+- `KOOK_ImageCompression` —— 2/9 个有
+- `RH_LLMAPI_Pro_Node` —— 2/9 个有
+- `RunningHub Deepcleaner` —— 2/9 个有
+- `CFGNorm` —— 1/9 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/9 个有
+- `HAIGC_SaveImagesToZip` —— 1/9 个有
+- `ModelSamplingAuraFlow` —— 1/9 个有
+- `PlaySound|pysssss` —— 1/9 个有
+- `easy imageScaleDownBy` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.8 - 1 | 5 | 92% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+| 采样步数 | 10 | 4 - 12 | 9 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | gradient_estimation | - | 9 | 44% |
+| 调度器 | sgm_uniform | - | 9 | 78% |
+| 重绘幅度 | 1 | 0.2 - 1 | 9 | 50% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 4 - 12，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 gradient_estimation，9 个样本，一致性 44%
+- 调度器 最常用 sgm_uniform，9 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 0.2 - 1，9 个样本，取值分散，一致性仅 50%

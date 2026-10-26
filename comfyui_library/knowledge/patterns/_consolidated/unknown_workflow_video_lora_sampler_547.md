@@ -3,61 +3,72 @@ name: unknown_workflow_video_lora_sampler_547
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.678
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadImage, SetNode, SimpleComparison+, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader, easy ifElse, easy int]
+coverage: 0.49
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json, 视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json, 视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json, 视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json]
+members: [视频生成/图生视频/Animate影视二创（单人版）V1.0_2037017744700346369.json, 视频生成/图生视频/Animate影视二创（单人面部参考版）V1.1_2037029152141877249.json, 视频生成/图生视频/Animate影视二创（多人版）V1.0_2037063850230550530.json, 视频生成/图生视频/Animate替换人物_2043495684220915714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_547
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json、视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json、视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json、视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Animate影视二创（单人版）V1.0_2037017744700346369.json、视频生成/图生视频/Animate影视二创（单人面部参考版）V1.1_2037029152141877249.json、视频生成/图生视频/Animate影视二创（多人版）V1.0_2037063850230550530.json、视频生成/图生视频/Animate替换人物_2043495684220915714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
 - `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
 - `ImageResizeKJv2`
 - `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
-- `SimpleComparison+`
-- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEmbedBridge`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy ifElse`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `List of any [Crystools]` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `easy forLoopEnd` —— 2/4 个有
-- `easy forLoopStart` —— 2/4 个有
-- `easy indexAnything` —— 2/4 个有
-- `easy lengthAnything` —— 2/4 个有
+- `Bookmark (rgthree)` —— 3/4 个有
+- `PlaySound|pysssss` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `DrawMaskOnImage` —— 2/4 个有
+- `ResizeImageMaskNode` —— 2/4 个有
+- `easy framesEditor` —— 2/4 个有
+- `easy imageSizeBySide` —— 2/4 个有
+- `easy sam3ModelLoader` —— 2/4 个有
+- `easy sam3VideoModelExtraConfig` —— 2/4 个有
+- `easy sam3VideoSegmentation` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `DrawViTPose` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GrowMask` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `SDPoseOODLoader` —— 1/4 个有
+- `SDPoseOODProcessor` —— 1/4 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `YOLOModelLoader` —— 1/4 个有
 
 ## 典型参数
 

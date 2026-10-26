@@ -1,86 +1,80 @@
 ---
 name: text_to_image_sampler_clip_unet_19
 type: Text To Image
-frequency: 17
-level: weak
-coverage: 0.897
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 20
+level: moderate
+coverage: 0.72475
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, PreviewAny, PrimitiveStringMultiline, SaveImage, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2基础图生图（图像反推提示词）_2070531152993153026.json, 图片生成/文生图/Krea2 文生图_2096503316002983938.json, 图片生成/文生图/Krea2 文生图｜简洁好用出图稳定的新选择_2096849879007059970.json, 图片生成/文生图/Krea2-全能一键出神图文生图2K直出-MJ平替_2070119686372675586.json, 图片生成/文生图/Krea2-全能一键出神图文生图2K直出-MJ平替_2083146964568469505.json, 图片生成/文生图/Krea2-全能一键出神图文生图2K直出-MJ平替工作流_2070135569459539969.json, 图片生成/文生图/Krea2-全能文生图2K直出-MJ平替_2069630824286347266.json, 图片生成/文生图/Krea2-全能文生图2K直出-MJ平替_2073595533018808320.json, 图片生成/文生图/Krea2-全能文生图2K直出-MJ平替_2096072679521603585.json, 图片生成/文生图/Krea2-全能文生图2K直出-油画风格_2079461576461086722.json, 图片生成/文生图/Krea2-文生图（ Kroma完整还原原版微调模型能力）_2083852283707748353.json, 图片生成/文生图/Krea2-文生图（写实增强）2K直出_2076180135027499010.json, 图片生成/文生图/Krea2全能文生图2K直出｜MJ平替高质量图像生成_2096319734013845505.json, 图片生成/文生图/Krea2全能文生图简单版_2096511693064065026.json, 图片生成/文生图/Krea2模型文生图工作流，高质量文本到图像生成方案_2102885318025371650.json, 图片生成/文生图/Krea2模型文生图工作流，高质量文本到图像生成方案_2105111992758530050.json, 图片生成/文生图/两K直出不缩水｜Krea2全能文生图MJ平替_2096585844239982594.json]
+members: [图片生成/文生图/Krea2 Instagram 摄影风格文生图_2087916354635649025.json, 图片生成/文生图/Krea2 Raw文生图V1_2069649846545506305.json, 图片生成/文生图/Krea2 Raw文生图V1_2069955897165697025.json, 图片生成/文生图/Krea2 Raw版-文生图-v1.0_2070040927531528193.json, 图片生成/文生图/Krea2 Turbo Realism Engineer V2文生图_2072187241404911618.json, 图片生成/文生图/Krea2 Turbo Realism Engineer V2文生图_2072504382511476738.json, 图片生成/文生图/Krea2 Turbo Realism Engineer文生图_2072366906035761153.json, 图片生成/文生图/Krea2 Turbo 单色水墨风格文生图_2078458901254725633.json, 图片生成/文生图/Krea2 Turbo 文生图 极速写实摄影工作流_2072318540417425410.json, 图片生成/文生图/Krea2 Turbo 柔和极简素描风格文生图_2078480779449032705.json, 图片生成/文生图/Krea2 Turbo 真实感写实风格文生图_2078379281394257921.json, 图片生成/文生图/Krea2 Turbo 空灵闪耀光风格文生图_2078478130687336450.json, 图片生成/文生图/Krea2 Turbo 青绿色水彩插画风格文生图_2078398716591042562.json, 图片生成/文生图/Krea2 Turbo文生图(wlop）lora_2070665195122413570.json, 图片生成/文生图/Krea2 Turbo文生图+全节点注释_2072663092810575873.json, 图片生成/文生图/极速美学版-Krea2 Turbo-文生图-美学不错_2070037389308944386.json, 图片生成/文生图/（Zhen style风格模型）Krea2 Turbo文生图V1_2071136461566599169.json, 图片生成/文生图/（图图版）Krea2 Turbo文生图V1_2072524020372828162.json, 图片生成/文生图/（贞贞版-Raw Lora 1000步）Krea2 Turbo文生图V1_2073809636901351425.json, 图片生成/文生图/（贞贞版）Krea2 Turbo文生图V1_2070539771801325570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_19
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Krea2基础图生图（图像反推提示词）_2070531152993153026.json、图片生成/文生图/Krea2 文生图_2096503316002983938.json、图片生成/文生图/Krea2 文生图｜简洁好用出图稳定的新选择_2096849879007059970.json、图片生成/文生图/Krea2-全能一键出神图文生图2K直出-MJ平替_2070119686372675586.json、图片生成/文生图/Krea2-全能一键出神图文生图2K直出-MJ平替_2083146964568469505.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Krea2 Instagram 摄影风格文生图_2087916354635649025.json、图片生成/文生图/Krea2 Raw文生图V1_2069649846545506305.json、图片生成/文生图/Krea2 Raw文生图V1_2069955897165697025.json、图片生成/文生图/Krea2 Raw版-文生图-v1.0_2070040927531528193.json、图片生成/文生图/Krea2 Turbo Realism Engineer V2文生图_2072187241404911618.json…）
 
 - **类型**：Text To Image
-- **样本数**：17
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：20
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
 - `SaveImage`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 16/17 个有
-- `LoraLoaderModelOnly` —— 16/17 个有
-- `PreviewAny` —— 16/17 个有
-- `easy cleanGpuUsed` —— 16/17 个有
-- `TTResolutionSelector` —— 11/17 个有
-- `DF_Latent_Scale_to_side` —— 6/17 个有
-- `JjkText` —— 6/17 个有
-- `ResolutionSelector` —— 6/17 个有
-- `solarL_SaveImagesToZip` —— 6/17 个有
-- `孤海注释` —— 4/17 个有
-- `CR Text Concatenate` —— 1/17 个有
-- `EmptyImage` —— 1/17 个有
-- `LoadImage` —— 1/17 个有
-- `MuyeTextEditOutput` —— 1/17 个有
-- `PreviewImage` —— 1/17 个有
-- `StringConcatenate` —— 1/17 个有
-- `easy showAnything` —— 1/17 个有
+- `ConditioningZeroOut` —— 16/20 个有
+- `LoraLoaderModelOnly` —— 16/20 个有
+- `ResolutionSelector` —— 14/20 个有
+- `JWInteger` —— 6/20 个有
+- `CR Prompt Text` —— 5/20 个有
+- `TextConcat` —— 5/20 个有
+- `ImageConcanate` —— 3/20 个有
+- `LoadImage` —— 3/20 个有
+- `CR Text` —— 1/20 个有
+- `easy promptLine` —— 1/20 个有
+- `easy showAnything` —— 1/20 个有
+- `孤海注释` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 80 - 512 | 17 | 49% |
-| 高度 | 512 | 80 - 512 | 17 | 49% |
-| 采样步数 | 8 | 4 - 8 | 17 | 73% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 17 | 21% |
-| 采样算法 | er_sde | - | 17 | 94% |
-| 调度器 | simple | - | 17 | 71% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 20 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 20 | 100% |
+| 采样步数 | 8 | 8 - 28 | 20 | 39% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 20 | 35% |
+| 采样算法 | euler | - | 20 | 100% |
+| 调度器 | simple | - | 20 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 23/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 80 - 512，17 个样本，取值分散，一致性仅 49%
-- 高度 中位数 512，观测区间 80 - 512，17 个样本，取值分散，一致性仅 49%
-- 采样步数 中位数 8，观测区间 4 - 8，17 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，17 个样本，取值分散，一致性仅 21%
-- 采样算法 最常用 er_sde，17 个样本，一致性 94%
-- 调度器 最常用 simple，17 个样本，一致性 71%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 高发问题（23/17 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1024，20 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，20 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 28，20 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，20 个样本，取值分散，一致性仅 35%
+- 采样算法 最常用 euler，20 个样本，一致性 100%
+- 调度器 最常用 simple，20 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（15/20 个样本）：Steps较低可能导致细节不足

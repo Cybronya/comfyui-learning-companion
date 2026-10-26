@@ -1,64 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_618
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.551
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.5045
+common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetNode, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json, 视频生成/图生视频/Minimax-H3多参-人物自然_2092153269014589441.json, 视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json]
+members: [视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json, 视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json, 视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json, 视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_618
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json、视频生成/图生视频/Minimax-H3多参-人物自然_2092153269014589441.json、视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json、视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json、视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json、视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Fast Groups Muter (rgthree)`
 - `GetNode`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PrimitiveString`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `StringConcatenate`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `H3SigmaRefiner` —— 2/3 个有
-- `LayerColor: Brightness & Contrast` —— 2/3 个有
-- `MiniMaxH3SigmaShift` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `SolAttnPatch` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `FrameInterpolate` —— 1/3 个有
-- `FrameInterpolationModelLoader` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `MiniMaxH3AddGuide` —— 1/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
+- `Bookmark (rgthree)` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `WanVideoVRAMManagement` —— 3/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `WanVideoApplyNAG` —— 1/4 个有
+- `WanVideoTextEncodeSingle` —— 1/4 个有
 
 ## 典型参数
 

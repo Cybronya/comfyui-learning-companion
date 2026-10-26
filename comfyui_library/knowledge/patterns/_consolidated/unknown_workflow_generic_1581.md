@@ -3,41 +3,35 @@ name: unknown_workflow_generic_1581
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8395
-common_nodes: [GetVideoComponents, ImageFromBatch, LoadVideo, PreviewAny, RHHiddenNodes, RH_RhartTextG3ProPreviewVideoToText, RH_RhartVideoSImageToVideo, RunningHub Deepcleaner, SaveVideo, ShellAgentPluginOutputText, ShowText|pysssss, easy saveText]
+coverage: 0.571
+common_nodes: [Fast Groups Bypasser (rgthree), JjkText, LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenFlareEdit, RH_RhartImageG25OfficialTokenFlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/爆款复刻_反推到全能视频s2_上传对标视频一键爆款复刻_2034923500376428545.json, 视频生成/图生视频/爆款复刻反推到全能视频S2：上传对标视频一键实现爆款复刻全流程工作流_2034962984606375938.json]
+members: [图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json, 数字人/数字人/全能图片G Image 2.5 全家桶 文生图 图像编辑_2097856587611332609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1581
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/爆款复刻_反推到全能视频s2_上传对标视频一键爆款复刻_2034923500376428545.json、视频生成/图生视频/爆款复刻反推到全能视频S2：上传对标视频一键实现爆款复刻全流程工作流_2034962984606375938.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json、数字人/数字人/全能图片G Image 2.5 全家桶 文生图 图像编辑_2097856587611332609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `ImageFromBatch`
-- `LoadVideo`
-- `PreviewAny`
-- `RHHiddenNodes`
-- `RH_RhartTextG3ProPreviewVideoToText`
-- `RH_RhartVideoSImageToVideo`
-- `RunningHub Deepcleaner`
-- `SaveVideo`
-- `ShellAgentPluginOutputText`
-- `ShowText|pysssss`
-- `easy saveText`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenFlareEdit`
+- `RH_RhartImageG25OfficialTokenFlareTextToImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

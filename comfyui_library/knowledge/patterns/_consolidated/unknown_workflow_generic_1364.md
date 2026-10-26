@@ -3,38 +3,47 @@ name: unknown_workflow_generic_1364
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.981
-common_nodes: [CR Text, JjkShowText, LayerUtility: TextJoin, LoadImage, RHSettingsNode, RH_LLMAPI_Pro_Node, SaveImage]
+coverage: 0.71
+common_nodes: [Any To String (mtb), CR String To Combo, Fast Groups Bypasser (rgthree), ImageLoader, MultiTextConcatenate, PDRatioSelector, PreviewAny, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RTXVideoSuperResolution, SaveImage, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat]
 problems: []
 missing: []
-members: [图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json, 图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json]
+members: [图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程_2059838391201652738.json, 图片生成/图生图/全能图片G2-GP-T2.0一键生成专业影视分镜与关键帧全流程提示词_2064283735096385538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1364
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json、图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程_2059838391201652738.json、图片生成/图生图/全能图片G2-GP-T2.0一键生成专业影视分镜与关键帧全流程提示词_2064283735096385538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `JjkShowText`
-- `LayerUtility: TextJoin`
-- `LoadImage`
-- `RHSettingsNode`
-- `RH_LLMAPI_Pro_Node`
+- `Any To String (mtb)`
+- `CR String To Combo`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageLoader`
+- `MultiTextConcatenate`
+- `PDRatioSelector`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RTXVideoSuperResolution`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/2 个有
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `ttN concat`
 
 ## 典型参数
 

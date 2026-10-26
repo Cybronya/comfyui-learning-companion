@@ -1,66 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_129
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.937667
-common_nodes: [INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 14
+level: strong
+coverage: 0.792357
+common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json, 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json, 视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json, 视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json, 视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json, 视频生成/图生视频/WAN2.2最新图生视频_1960986981260038145.json, 视频生成/图生视频/Wan2.2 图生视频工作流_1991827663358849025.json, 视频生成/图生视频/Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1993179574894788609.json, 视频生成/图生视频/Wan2.2-图生视频_2064953118089113601.json, 视频生成/图生视频/Wan2.2图生视频_1986361069599916033.json, 视频生成/图生视频/Wan2.2图生视频_2007643731159162882.json, 视频生成/图生视频/[泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 可更换lora_1980795448254484481.json]
+members: [视频生成/图生视频/(文生视频)Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046802828332634114.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2057262111021158401.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_2059827902316900354.json, 视频生成/图生视频/KJ版+图生视频时间分段剪辑++逻辑控制PromptRe (1)_2063798363463704577.json, 视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json, 视频生成/图生视频/LTX2.3-时间线分镜-PromptRelay-图生视频_2054823248579317761.json, 视频生成/图生视频/LTX2.3图生视频PromptRelay Timeline_2050993375851106306.json, 视频生成/图生视频/Ltx2.3_2052745658586677250.json, 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json, 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay_2046957180640829441.json, 视频生成/图生视频/图生视频 节奏控制 Ltx2.3 -PromptRelay Timeline可视化控制 V2_2050043137099350017.json, 视频生成/图生视频/图生视频Ltx2.3+-PromptRelay_2047122187932409857.json, 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_129
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json、视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json、视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json、视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json、视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/(文生视频)Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046802828332634114.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2057262111021158401.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_2059827902316900354.json、视频生成/图生视频/KJ版+图生视频时间分段剪辑++逻辑控制PromptRe (1)_2063798363463704577.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：14
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `INTConstant`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+全部 14 个 workflow 都包含：
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 11/12 个有
-- `GetImageSizeAndCount` —— 11/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
-- `MathExpression|pysssss` —— 10/12 个有
-- `easy int` —— 10/12 个有
-- `DF_Integer` —— 9/12 个有
-- `JWInteger` —— 9/12 个有
-- `JjkText` —— 9/12 个有
-- `SimpleMath+` —— 9/12 个有
-- `WanVideoTorchCompileSettings` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/12 个有
-- `ImpactInt` —— 1/12 个有
-- `PurgeVRAM_UTK` —— 1/12 个有
-- `RH_Captioner` —— 1/12 个有
-- `ShowText` —— 1/12 个有
-- `WanVideoTeaCache` —— 1/12 个有
-- `easy seed` —— 1/12 个有
+- `GetNode` —— 13/14 个有
+- `JWInteger` —— 13/14 个有
+- `LTXVPreprocess` —— 13/14 个有
+- `LoadImage` —— 13/14 个有
+- `SetNode` —— 13/14 个有
+- `UNETLoader` —— 13/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/14 个有
+- `PreviewAny` —— 9/14 个有
+- `PromptRelayEncode` —— 9/14 个有
+- `RH_LLMAPI_Pro_Node` —— 9/14 个有
+- `RegexExtract` —— 9/14 个有
+- `CM_IntToFloat` —— 8/14 个有
+- `SimpleMath+` —— 8/14 个有
+- `Text` —— 8/14 个有
+- `PreviewImage` —— 6/14 个有
+- `CR Prompt Text` —— 5/14 个有
+- `PromptRelayEncodeTimeline` —— 5/14 个有
+- `AudioCrop` —— 1/14 个有
+- `INTConstant` —— 1/14 个有
+- `LTXVAudioVAEEncode` —— 1/14 个有
+- `LoadAudio` —— 1/14 个有
+- `SetLatentNoiseMask` —— 1/14 个有
+- `SolidMask` —— 1/14 个有
+- `UnetLoaderGGUF` —— 1/14 个有
+- `easy cleanGpuUsed` —— 1/14 个有
+- `easy ifElse` —— 1/14 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 409 - 489 | 14 | 96% |
+| 高度 | 25 | 25 - 25 | 14 | 100% |
 
 ## 常见问题
 
@@ -68,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 409 - 489，14 个样本，取值集中（一致性 96%）
+- 高度 中位数 25，观测区间 25 - 25，14 个样本，取值集中（一致性 100%）

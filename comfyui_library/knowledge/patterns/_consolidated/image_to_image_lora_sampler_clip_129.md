@@ -3,55 +3,61 @@ name: image_to_image_lora_sampler_clip_129
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.8285
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, ShowText|pysssss, TextCombinerSix, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.899
+common_nodes: [AddLabel, Anything Everywhere3, CLIPTextEncode, CR Image Grid Panel, CR Text Concatenate, CR Text List To String, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, ImageListToBatch+, ImageListToImageBatch, KSampler, LayerUtility: If , LoadImage, Lora Loader, Primitive integer [Crystools], ReferenceLatent, SaveImage, SomethingToString, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy isNone, easy rangeFloat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext溶图_1959246613887791106.json, 图片生成/图生图/溶图_1960358802564575234.json]
+members: [图片生成/图生图/Kontext Lora测试 - XY图表生成_1944576288520589313.json, 图片生成/图生图/Kontext lora测试（XY）工作流_1952012588777459713.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_129
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext溶图_1959246613887791106.json、图片生成/图生图/溶图_1960358802564575234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext Lora测试 - XY图表生成_1944576288520589313.json、图片生成/图生图/Kontext lora测试（XY）工作流_1952012588777459713.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AddLabel`
+- `Anything Everywhere3`
 - `CLIPTextEncode`
+- `CR Image Grid Panel`
+- `CR Text Concatenate`
+- `CR Text List To String`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `Image Comparer (rgthree)`
+- `FluxKontextImageScale`
+- `ImageListToBatch+`
+- `ImageListToImageBatch`
 - `KSampler`
+- `LayerUtility: If `
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
+- `Lora Loader`
+- `Primitive integer [Crystools]`
 - `ReferenceLatent`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextCombinerSix`
+- `SomethingToString`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy anythingIndexSwitch`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy isNone`
+- `easy rangeFloat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `InpaintCrop` —— 1/2 个有
-- `InpaintStitch` —— 1/2 个有
-- `Mask Fill Holes` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 - `RH_Translator` —— 1/2 个有
-- `ResizeLongestToNode` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

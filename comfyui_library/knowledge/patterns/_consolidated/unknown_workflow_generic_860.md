@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_860
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.952333
-common_nodes: [LoadImage, RunningHub DreamOmni2 Edit Pipeline, RunningHub DreamOmni2 Editor, SaveImage]
+coverage: 1
+common_nodes: [CosyVoiceNode, SaveAudio, TextNode]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json, 图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json, 图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json]
+members: [音频生成/音频生成/3秒音频 克隆声音_1943645470461718529.json, 音频生成/音频生成/CosyVoice语音克隆_1919562511933177858.json, 音频生成/音频生成/录制音色文本转语音_1820299106379018241.json, 音频生成/音频生成/文本生成语音 text-speech cosyvoice_1877623042963664897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_860
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json、图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json、图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/3秒音频 克隆声音_1943645470461718529.json、音频生成/音频生成/CosyVoice语音克隆_1919562511933177858.json、音频生成/音频生成/录制音色文本转语音_1820299106379018241.json、音频生成/音频生成/文本生成语音 text-speech cosyvoice_1877623042963664897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub DreamOmni2 Edit Pipeline`
-- `RunningHub DreamOmni2 Editor`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CosyVoiceNode`
+- `SaveAudio`
+- `TextNode`
 
 **可变部分**（部分 workflow 才有）：
-- `ttN text` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,81 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_728
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5375
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, Power Lora Loader (rgthree), PreviewImage, ProcessString, SetNode, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy promptLine, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.932333
+common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/AI代码侠土豆 图片控制分镜镜头+首尾帧视频_1985971814922891266.json, 视频生成/图生视频/短片1.0（工作流套装）_1988448828670001154.json]
+members: [视频生成/图生视频/bernini全能工作流_2081973710835240961.json, 视频生成/图生视频/贝尔尼尼工作流 Bernini+Studio 12种模式_2074037576872316929.json, 视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_728
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆 图片控制分镜镜头+首尾帧视频_1985971814922891266.json、视频生成/图生视频/短片1.0（工作流套装）_1988448828670001154.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/bernini全能工作流_2081973710835240961.json、视频生成/图生视频/贝尔尼尼工作流 Bernini+Studio 12种模式_2074037576872316929.json、视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BerniniStudio`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `KSampler`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `Power Lora Loader (rgthree)`
-- `PreviewImage`
-- `ProcessString`
-- `SetNode`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `easy promptLine`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `QZ_ResolutionPreset` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `WanFirstLastFrameToVideo` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `Int` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `TTResolutionSelector` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 22% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1.5 | 3 | 80% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 22%
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.5，3 个样本
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

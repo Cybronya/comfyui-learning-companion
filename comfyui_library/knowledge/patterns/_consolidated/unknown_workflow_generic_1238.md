@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1238
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.845
+common_nodes: [BatchImagesNode, KlingOmniProEditVideoNode, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/HYPIR一键4K高清放大_1951879855451353089.json, 图片生成/图生图/HYPIR极速高清放大｜8K高清放大｜适合静物放大_2078322517764300801.json]
+members: [comfyui-workflow-templates-json/api_kling_o3_video_edit.json, comfyui-workflow-templates-json/api_kling_omni_edit_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1238
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/HYPIR一键4K高清放大_1951879855451353089.json、图片生成/图生图/HYPIR极速高清放大｜8K高清放大｜适合静物放大_2078322517764300801.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_o3_video_edit.json、comfyui-workflow-templates-json/api_kling_omni_edit_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HYPIRImageRestoration`
-- `Image Comparer (rgthree)`
+- `BatchImagesNode`
+- `KlingOmniProEditVideoNode`
 - `LoadImage`
-- `SaveImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 

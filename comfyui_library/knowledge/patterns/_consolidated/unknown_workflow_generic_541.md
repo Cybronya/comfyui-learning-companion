@@ -3,42 +3,34 @@ name: unknown_workflow_generic_541
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8282
-common_nodes: [AddMask, CR Text, ChinesePrompt_Mix, GrowMaskWithBlur, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V2, LoadImage, Mask Invert, MaskPreview+, PreviewImage, RMBG, SDMatteApply, SaveImage]
+coverage: 0.7312
+common_nodes: [LoadImage, RH_Captioner_Pro, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json, 图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json]
+members: [图片生成/反推提示词/全能图片G5图片反推提示词（0.02元一次）保存txt-csv格式_1979765979641188353.json, 图片生成/反推提示词/智普GLM4.5V图片反推提示词（0.02元一次）保存TXT-CSV格式_1979789269592084481.json, 图片生成/反推提示词/谷歌Gemini-Pro图片反推提示词（0.02元一次）保存TXT-CSV格式_1979793045749141505.json, 图片生成/反推提示词/谷歌Gemini-flash图片反推提示词（0.02元一次）保存TXT-CSV格式_1979794645259554817.json, 图片生成/反推提示词/豆包Seed1.6Vision图片反推提示词（0.02元一次）保存TXT-CSV格式_1979760698370723842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_541
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json、图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/全能图片G5图片反推提示词（0.02元一次）保存txt-csv格式_1979765979641188353.json、图片生成/反推提示词/智普GLM4.5V图片反推提示词（0.02元一次）保存TXT-CSV格式_1979789269592084481.json、图片生成/反推提示词/谷歌Gemini-Pro图片反推提示词（0.02元一次）保存TXT-CSV格式_1979793045749141505.json、图片生成/反推提示词/谷歌Gemini-flash图片反推提示词（0.02元一次）保存TXT-CSV格式_1979794645259554817.json、图片生成/反推提示词/豆包Seed1.6Vision图片反推提示词（0.02元一次）保存TXT-CSV格式_1979760698370723842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AddMask`
-- `CR Text`
-- `ChinesePrompt_Mix`
-- `GrowMaskWithBlur`
-- `JoinImageWithAlpha`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: MaskPreview`
-- `LayerMask: SegmentAnythingUltra V2`
 - `LoadImage`
-- `Mask Invert`
-- `MaskPreview+`
-- `PreviewImage`
-- `RMBG`
-- `SDMatteApply`
-- `SaveImage`
+- `RH_Captioner_Pro`
+- `ShowText|pysssss`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/5 个有
+- `CR Text Concatenate` —— 1/5 个有
 
 ## 典型参数
 

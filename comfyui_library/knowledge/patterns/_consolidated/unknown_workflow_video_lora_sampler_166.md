@@ -1,105 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_166
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.499909
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSize, ImageCompositeMasked, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.761083
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json, 视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json, 视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json, 视频生成/图生视频/Scail2 动作迁移（长视频）_2077364440512688130.json, 视频生成/图生视频/Scail2-人物360度动作迁移_2067529633486168065.json, 视频生成/图生视频/Scail2-动作迁移（单人+多人版）_2065351817646661633.json, 视频生成/图生视频/Scail2全自动单人角色替换工作流_2065037170393575426.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换_2067503598057123841.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换自动版_2067564547317264386.json, 视频生成/图生视频/scail 2双人互动异步动作迁移_2067087693439397890.json, 视频生成/图生视频/scail2带货视频 电商带货，人货互动_2067282833252634625.json]
+members: [视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json, 视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json, 视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json, 视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-3图1音_2102289015847350274.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-4图1音_2102284106150273026.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-5图1音_2108825320408309761.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-6图1音_2108828857859141634.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流_2097859473883881474.json, 视频生成/图生视频/（修脸极速）黑科技加速minimax h3 self-lift双采多参生视频_2098223404263497730.json, 视频生成/文生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json, 视频生成/视频生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_166
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json、视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json、视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json、视频生成/图生视频/Scail2 动作迁移（长视频）_2077364440512688130.json、视频生成/图生视频/Scail2-人物360度动作迁移_2067529633486168065.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json、视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json、视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json、视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json、视频生成/图生视频/黑科技加速双采-self-lift工作流-3图1音_2102289015847350274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicScheduler`
-- `BatchImagesNode`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `ImageCompositeMasked`
-- `ImageResizeKJv2`
+- `ConditioningZeroOut`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PreviewImage`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `TensorLoopClose`
-- `TensorLoopOpen`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/11 个有
-- `PrimitiveInt` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/11 个有
-- `RH_Captioner` —— 7/11 个有
-- `VHS_VideoInfoSource` —— 7/11 个有
-- `easy imageCount` —— 7/11 个有
-- `easy showAnything` —— 7/11 个有
-- `JWInteger` —— 6/11 个有
-- `Text` —— 6/11 个有
-- `ImageConcatMulti` —— 5/11 个有
-- `ResizeImageMaskNode` —— 5/11 个有
-- `easy indexAnything` —— 5/11 个有
-- `DrawMaskOnImage` —— 4/11 个有
-- `Int` —— 4/11 个有
-- `InvertMask` —— 4/11 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 4/11 个有
-- `TextConcatenate_UTK` —— 4/11 个有
-- `1hew_MaskMathOps` —— 2/11 个有
-- `ColorPickerMW` —— 2/11 个有
-- `FillMaskWithColor` —— 2/11 个有
-- `Switch` —— 2/11 个有
-- `Text Multiline` —— 2/11 个有
-- `easy mathInt` —— 2/11 个有
-- `Bjornulf_ShowInt` —— 1/11 个有
-- `ComfySwitchNode` —— 1/11 个有
-- `ImageCrop` —— 1/11 个有
-- `ImageFromBatch` —— 1/11 个有
-- `ImageStitch` —— 1/11 个有
-- `JjkText` —— 1/11 个有
-- `PointsEditor` —— 1/11 个有
-- `PrimitiveBoolean` —— 1/11 个有
-- `RH_Translator` —— 1/11 个有
-- `ReActorFaceSwap` —— 1/11 个有
-- `RemoveWatermarks_LoadModel` —— 1/11 个有
-- `RemoveWatermarks_Run` —— 1/11 个有
-- `SeCModelLoader` —— 1/11 个有
-- `SeCVideoSegmentation` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
-- `easy cleanGpuUsed` —— 1/11 个有
-- `string_util_StrConcat` —— 1/11 个有
+- `ComfyMathExpression` —— 11/12 个有
+- `MiniMaxH3ReferenceToVideo` —— 11/12 个有
+- `PrimitiveFloat` —— 11/12 个有
+- `ResolutionSelector` —— 11/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `VAEDecodeAudio` —— 10/12 个有
+- `CreateVideo` —— 9/12 个有
+- `SelfLiftH3Sampler` —— 9/12 个有
+- `LoadImage` —— 7/12 个有
+- `LoadAudio` —— 5/12 个有
+- `Int` —— 4/12 个有
+- `SDVN Load Image Url` —— 4/12 个有
+- `VHS_LoadAudio` —— 4/12 个有
+- `VHS_LoadVideo` —— 4/12 个有
+- `GetNode` —— 3/12 个有
+- `SelfLiftAvatarH3Sampler` —— 3/12 个有
+- `SetNode` —— 3/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `LTXVSeparateAVLatent` —— 2/12 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 2/12 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 2/12 个有
+- `MiniMaxH3VAEDecodeFast` —— 2/12 个有
+- `RunningHub Deepcleaner` —— 2/12 个有
+- `SaveVideo` —— 2/12 个有
+- `VHS_VideoInfoLoaded` —— 2/12 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/12 个有
+- `easy showAnything` —— 2/12 个有
+- `MiniMaxH3SigmaShift` —— 1/12 个有
+- `MiniMaxH3Unified` —— 1/12 个有
+- `TrimAudioDuration` —— 1/12 个有
+- `easy float` —— 1/12 个有
 
 ## 典型参数
 

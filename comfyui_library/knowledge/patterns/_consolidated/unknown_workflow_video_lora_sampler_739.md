@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_739
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.55
-common_nodes: [DWPreprocessor, DepthAnythingV2Preprocessor, GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResize+, ImageResizeKJ, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LayerMask: LoadFlorence2Model, LayerMask: LoadSegmentAnythingModels, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, Mix Color By Mask, RH_Captioner, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.871333
+common_nodes: [CreateCFGScheduleFloatList, DF_Integer, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, RH_Translator, ShowText|pysssss, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, string_util_StrReplace]
 problems: []
 missing: []
-members: [视频生成/图生视频/F+VACE+动+迁_1938493424595042306.json, 视频生成/图生视频/FusionX-VACE视频动作迁移_1934648294230695938.json]
+members: [视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json, 视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json, 视频生成/图生视频/图生视频_1965606390897233921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_739
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/F+VACE+动+迁_1938493424595042306.json、视频生成/图生视频/FusionX-VACE视频动作迁移_1934648294230695938.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json、视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json、视频生成/图生视频/图生视频_1965606390897233921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DWPreprocessor`
-- `DepthAnythingV2Preprocessor`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GrowMaskWithBlur`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `ImageResizeKJ`
-- `Int`
-- `JjkConcat`
-- `LTXVPromptEnhancer`
-- `LTXVPromptEnhancerLoader`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
-- `LayerMask: SegmentAnythingUltra V3`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `Mix Color By Mask`
-- `RH_Captioner`
-- `SetNode`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy int`
+- `string_util_StrReplace`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveBoolean` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `HunyuanVideoFoley` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `LoadVideo` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
+- `easy clearCacheAll` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -76,4 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,92 +1,90 @@
 ---
 name: unknown_workflow_video_lora_sampler_465
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.707
-common_nodes: [CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatch, ImageListToImageBatch, ImageResizeKJv2, ImpactExecutionOrderController, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LayerUtility: BooleanOperatorV2, LoadImage, LoadImageListFromDir //Inspire, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, SaveAudio, SetNode, ShowText|pysssss, SimpleMath+, String Replace (mtb), StringReplace, Text Concatenate (JPS), TextInput_, VHS_DuplicateImages, VHS_LoadAudioUpload, VHS_VideoCombine, VideoFromPathsAndAudio, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy boolean, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy showAnything]
+frequency: 5
+level: strong
+coverage: 0.8986
+common_nodes: [CLIPTextEncode, CM_BoolToInt, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadImage, Lora Loader Stack (rgthree), PathchSageAttentionKJ, PreviewImage, SamplerCustom, SimpleMath+, Switch image [Crystools], UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy isNone, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/（多图版）InfiniteTalk循环数字人（音乐MV）V2_2035644315086622722.json, 视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV  低显存版本 24G 可跑无限_2000967114590650369.json, 视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV_1999117473494560769.json, 视频生成/图生视频/（多图版）InfiniteTalk循环数字人（音乐MV）V2_1999823638662610945.json]
+members: [数字人/数字人/ltx23-lock 多人对话_2105153996301365249.json, 视频生成/图生视频/LTX2.3多人对话_2055168345057570818.json, 视频生成/图生视频/LTX2.3多人对话_2056562094497161218.json, 视频生成/文生视频/LTX2.3 Single Sample V1.0（文生视频_图生视频_首尾帧视频）_2052259370225942529.json, 视频生成/文生视频/LTX2.3 Single Sample V2.0（文生视频_图生视频_首尾帧视频_数字人对口型）_2052670475729424385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_465
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/（多图版）InfiniteTalk循环数字人（音乐MV）V2_2035644315086622722.json、视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV  低显存版本 24G 可跑无限_2000967114590650369.json、视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV_1999117473494560769.json、视频生成/图生视频/（多图版）InfiniteTalk循环数字人（音乐MV）V2_1999823638662610945.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/ltx23-lock 多人对话_2105153996301365249.json、视频生成/图生视频/LTX2.3多人对话_2055168345057570818.json、视频生成/图生视频/LTX2.3多人对话_2056562094497161218.json、视频生成/文生视频/LTX2.3 Single Sample V1.0（文生视频_图生视频_首尾帧视频）_2052259370225942529.json、视频生成/文生视频/LTX2.3 Single Sample V2.0（文生视频_图生视频_首尾帧视频_数字人对口型）_2052670475729424385.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CR Batch Images From List`
-- `DownloadAndLoadWav2VecModel`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
+全部 5 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CM_BoolToInt`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
 - `INTConstant`
-- `ImageBatch`
-- `ImageListToImageBatch`
 - `ImageResizeKJv2`
-- `ImpactExecutionOrderController`
-- `InfiniteTalkEmbedsSlice`
-- `InfiniteTalkMultiImage`
-- `LayerUtility: BooleanOperatorV2`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadImageListFromDir //Inspire`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `Lora Loader Stack (rgthree)`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
+- `SamplerCustom`
 - `SimpleMath+`
-- `String Replace (mtb)`
-- `StringReplace`
-- `Text Concatenate (JPS)`
-- `TextInput_`
-- `VHS_DuplicateImages`
-- `VHS_LoadAudioUpload`
+- `Switch image [Crystools]`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VideoFromPathsAndAudio`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy boolean`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy lengthAnything`
+- `easy isNone`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_ListCustomString` —— 2/4 个有
-- `ListCustomString` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `WanVideoBlockSwap` —— 1/4 个有
+- `BasicScheduler` —— 3/5 个有
+- `ManualSigmas` —— 3/5 个有
+- `VisualizeSigmasKJ` —— 3/5 个有
+- `CreateVideo` —— 2/5 个有
+- `DualCLIPLoaderGGUF` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `LTXVAudioVAEEncode` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `NormalizeAudioLoudness` —— 2/5 个有
+- `PlaySound|pysssss` —— 2/5 个有
+- `SaveVideo` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `UnetLoaderGGUF` —— 2/5 个有
+- `VHS_SelectImages` —— 2/5 个有
+- `AudioConcat` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `MelBandRoFormerModelLoader` —— 1/5 个有
+- `MelBandRoFormerSampler` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
+- `SolidMask` —— 1/5 个有
+- `TrimAudioDuration` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 361 - 361 | 5 | 100% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
 
 ## 常见问题
 
@@ -94,4 +92,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 361 - 361，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

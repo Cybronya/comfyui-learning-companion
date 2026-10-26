@@ -1,65 +1,56 @@
 ---
 name: unknown_workflow_sampler_clip_unet_238
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.946
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.886333
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/KLEIN 深度控制_2030614146588352514.json, 图片生成/图生图/Klein -通道主图2_2041417376184410114.json, 图片生成/图生图/Klein -通道主图3_2041804986694242306.json, 图片生成/图生图/Klein单图编辑_2014887219860869122.json, 图片生成/图生图/一致性换脸工作流_2043924693551423490.json]
+members: [图片生成/文生图/flux2+gemma4自动写提示词文生图工作流_2053683049765851138.json, 图片生成/文生图/flux2-klein基础文生图工作流_2033541606950834177.json, 图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json, 图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-4b，文生图_2012011674202546178.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-9b，文生图_2012019877464248321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_238
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KLEIN 深度控制_2030614146588352514.json、图片生成/图生图/Klein -通道主图2_2041417376184410114.json、图片生成/图生图/Klein -通道主图3_2041804986694242306.json、图片生成/图生图/Klein单图编辑_2014887219860869122.json、图片生成/图生图/一致性换脸工作流_2043924693551423490.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/flux2+gemma4自动写提示词文生图工作流_2053683049765851138.json、图片生成/文生图/flux2-klein基础文生图工作流_2033541606950834177.json、图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json、图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json、图片生成/文生图/【遇见AI】FLUX2-klein-base-4b，文生图_2012011674202546178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `DuckHideNode` —— 2/5 个有
-- `ImageScaleToTotalPixels` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `HAIGC_LoadImagesFromZip` —— 1/5 个有
-- `MultiTextConcatenate` —— 1/5 个有
-- `RH_BatchImages` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `EmptyLatentImage` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `ShowAnything|Mie` —— 1/6 个有
+- `llama_cpp_instruct_adv` —— 1/6 个有
+- `llama_cpp_model_loader` —— 1/6 个有
+- `llama_cpp_parameters` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1008 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 

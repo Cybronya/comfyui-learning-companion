@@ -3,34 +3,34 @@ name: unknown_workflow_generic_453
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.7825
-common_nodes: [LoadImage, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, LoadOmniGen2Model, OmniGen2, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan3.0多参生视频_2097673792867880961.json, 视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json, 视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json, 视频生成/图生视频/wan3.0多参考图生视频_2091793954902732801.json, 视频生成/图生视频/参考生视频工作流｜万相 2.7 多图多视频参考_2099689996813955073.json, 视频生成/图生视频/参考生视频工作流｜万相 3.0 多图多视频参考_2100471493141549057.json]
+members: [图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json, 图片生成/图生图/OmniGen2_1936534944283807746.json, 图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json, 图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json, 图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json, 图片生成/文生图/OmniGen2-万能改图_1956247216224698370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_453
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan3.0多参生视频_2097673792867880961.json、视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json、视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json、视频生成/图生视频/wan3.0多参考图生视频_2091793954902732801.json、视频生成/图生视频/参考生视频工作流｜万相 2.7 多图多视频参考_2099689996813955073.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json、图片生成/图生图/OmniGen2_1936534944283807746.json、图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json、图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json、图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `LoadOmniGen2Model`
+- `OmniGen2`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ReferenceToVideo` —— 5/6 个有
-- `LoadVideo` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 1/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
 
 ## 典型参数
 

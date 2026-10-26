@@ -3,61 +3,59 @@ name: unknown_workflow_video_sampler_vae_110
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8244
-common_nodes: [JWInteger, JjkText, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9448
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE 14B-图生视频+自动提示词_1923028261134397442.json, 视频生成/文生视频/VACE 14B-9步超级加速文生视频(全自动扩写提示词)_1923557148746240001.json, 视频生成/文生视频/【完美高质量】Wan2.1 VACE 14B-可自定时长图生视频_1929380593648439297.json, 视频生成/文生视频/【文生视频】可换lora wan2.1 I2V 14Bi2v美女走路背影_1929785774303252482.json, 视频生成/文生视频/核爆炸VACE 14B-3-9步超级加速文生视频(全自动扩写提示词)_1924303085684838402.json]
+members: [视频生成/图生视频/b站开源二次元ani全能视频S视频模型_1945071960848257026.json, 视频生成/图生视频/lightx2v-720P-图到视频-rank128-rank32-FreeInit对比测试_1945761108445556738.json, 视频生成/图生视频/pose-sync1024_1921944895412699138.json, 视频生成/图生视频/万相Skyreels V2图生长视频_1915024014367227906.json, 视频生成/文生视频/Uni-DIT-720p-14B-pose_1917099381894615042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_110
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/VACE 14B-图生视频+自动提示词_1923028261134397442.json、视频生成/文生视频/VACE 14B-9步超级加速文生视频(全自动扩写提示词)_1923557148746240001.json、视频生成/文生视频/【完美高质量】Wan2.1 VACE 14B-可自定时长图生视频_1929380593648439297.json、视频生成/文生视频/【文生视频】可换lora wan2.1 I2V 14Bi2v美女走路背影_1929785774303252482.json、视频生成/文生视频/核爆炸VACE 14B-3-9步超级加速文生视频(全自动扩写提示词)_1924303085684838402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/b站开源二次元ani全能视频S视频模型_1945071960848257026.json、视频生成/图生视频/lightx2v-720P-图到视频-rank128-rank32-FreeInit对比测试_1945761108445556738.json、视频生成/图生视频/pose-sync1024_1921944895412699138.json、视频生成/图生视频/万相Skyreels V2图生长视频_1915024014367227906.json、视频生成/文生视频/Uni-DIT-720p-14B-pose_1917099381894615042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `JWInteger`
-- `JjkText`
+- `ImageResizeKJ`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `FluxResolutionNode` —— 3/5 个有
-- `Int` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `RH_Prompter` —— 3/5 个有
-- `TextCombinerTwo` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `easy int` —— 3/5 个有
-- `ImageResize+` —— 2/5 个有
-- `InversionDemoLazyIndexSwitch` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `ColorMatch` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `easy textSwitch` —— 1/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `WanVideoTeaCache` —— 4/5 个有
+- `LoadWanVideoClipTextEncoder` —— 3/5 个有
+- `WanVideoExperimentalArgs` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `CLIPVisionLoader` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `RH_Captioner` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `WanVideoFreeInitArgs` —— 2/5 个有
+- `WanVideoUniAnimatePoseInput` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `KepStringLiteral` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `TextInputBasic` —— 1/5 个有
+- `WanVideoMagCache` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 

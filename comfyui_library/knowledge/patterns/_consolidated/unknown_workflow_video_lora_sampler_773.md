@@ -1,63 +1,40 @@
 ---
 name: unknown_workflow_video_lora_sampler_773
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.923
+common_nodes: [BasicGuider, CLIPLoader, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3HybridModelLoaderT8Advanced, MiniMaxH3LoRACompatibilityLoaderT8Advanced, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json, 视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json]
+members: [视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_773
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json、视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3HybridModelLoaderT8Advanced`
+- `MiniMaxH3LoRACompatibilityLoaderT8Advanced`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddAudioEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VHS_SplitImages` —— 1/2 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
 
 ## 典型参数
 
@@ -69,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

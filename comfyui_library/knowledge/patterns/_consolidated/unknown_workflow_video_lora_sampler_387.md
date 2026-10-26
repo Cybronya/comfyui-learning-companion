@@ -1,72 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_387
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7154
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, GetNode, INTConstant, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.911667
+common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json, 数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json, 视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json, 视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json, 视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json, 图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json, 视频生成/图生视频/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+提示词_2065244368470106114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_387
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json、数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json、视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json、视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json、视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json、图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json、图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json、图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json、图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 6 个 workflow 都包含：
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MultiTextConcatenate`
-- `MuyeTextEditOutput`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 4/5 个有
-- `RHLLMChatNode` —— 4/5 个有
-- `VAEDecodeAudio` —— 4/5 个有
-- `easy int` —— 4/5 个有
-- `忽略多组孤海` —— 4/5 个有
-- `ComfyMathExpression` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageBatchMultiV2` —— 1/5 个有
-- `LTXVAudioVAEEncode` —— 1/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LTXVSeparateAVLatent` —— 1/5 个有
-- `LayerUtility: TextJoin` —— 1/5 个有
-- `SetLatentNoiseMask` —— 1/5 个有
-- `SolidMask` —— 1/5 个有
-- `SoundFlow_GetLength` —— 1/5 个有
-- `llama_cpp_instruct_adv` —— 1/5 个有
-- `llama_cpp_model_loader` —— 1/5 个有
-- `llama_cpp_parameters` —— 1/5 个有
+- `PreviewImage` —— 4/6 个有
+- `WanVideoVACEEncode` —— 4/6 个有
+- `WanVideoVACEModelSelect` —— 4/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `AIO_Preprocessor` —— 2/6 个有
+- `CLIPVisionLoader` —— 2/6 个有
+- `MaskPreview+` —— 2/6 个有
+- `VHS_VideoInfo` —— 2/6 个有
+- `WanVideoClipVisionEncode` —— 2/6 个有
+- `WanVideoImageToVideoEncode` —— 2/6 个有
+- `Image Overlay` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `InpaintPreprocessor` —— 1/6 个有
+- `InvertMask` —— 1/6 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/6 个有
+- `LayerMask: RmBgUltra V2` —— 1/6 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/6 个有
+- `easy makeImageForICLora` —— 1/6 个有
 
 ## 典型参数
 

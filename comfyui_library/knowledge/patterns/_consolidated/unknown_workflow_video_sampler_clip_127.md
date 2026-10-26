@@ -2,58 +2,64 @@
 name: unknown_workflow_video_sampler_clip_127
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.8924
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.9038
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, ImageResize+, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json, 视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json, 视频生成/图生视频/直播子弹时间特效_1927650029039960065.json, 视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json, 视频生成/图生视频/直播戏服变身_1926859927644704769.json]
+members: [视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1985359491870900226.json, 视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1986821092411174914.json, 视频生成/图生视频/Smooth Mix 3图多帧控制_2073253543934517249.json, 视频生成/图生视频/Smooth Mix 首尾帧_2073252663759818754.json, 视频生成/图生视频/Smooth Mix 首尾视频衔接_2073301344374575105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_127
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json、视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json、视频生成/图生视频/直播子弹时间特效_1927650029039960065.json、视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json、视频生成/图生视频/直播戏服变身_1926859927644704769.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1985359491870900226.json、视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1986821092411174914.json、视频生成/图生视频/Smooth Mix 3图多帧控制_2073253543934517249.json、视频生成/图生视频/Smooth Mix 首尾帧_2073252663759818754.json、视频生成/图生视频/Smooth Mix 首尾视频衔接_2073301344374575105.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `ImageResize+`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 4/5 个有
-- `JjkText` —— 4/5 个有
-- `WanVideoExperimentalArgs` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `WanVideoSLG` —— 2/5 个有
-- `CR Upscale Image` —— 1/5 个有
-- `ImageSizeAndBatchSize` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `LoadImage` —— 4/5 个有
+- `ColorMatch` —— 3/5 个有
+- `WanFirstMiddleLastFrameToVideo` —— 3/5 个有
+- `WanFirstLastFrameToVideo` —— 2/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
+- `easy batchAnything` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 5 | 80% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler_ancestral | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -61,4 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，5 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

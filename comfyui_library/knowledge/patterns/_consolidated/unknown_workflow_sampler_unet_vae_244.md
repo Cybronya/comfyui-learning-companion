@@ -2,62 +2,80 @@
 name: unknown_workflow_sampler_unet_vae_244
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.841
-common_nodes: [CLIPLoader, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: strong
+coverage: 0.7925
+common_nodes: [CM_IntToFloat, ComfyMathExpression, Image Size to Number, ImageMergeTileList, KSampler, LoadImage, Number Operation, PrimitiveInt, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SimpleMath+, SplitImageToTileList, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 PE 文生图（优化版）_2102388624821153793.json, 图片生成/文生图/千问2.1文生图工作流｜官方原生架构一键出图_2104510217215111169.json, 图片生成/文生图/千问2.1白底商品图工作流｜纯白底商业摄影级_2104514790235402242.json, 图片生成/文生图/文字生成图片（Qwen-Image 2.1）_2107738529978732546.json]
+members: [图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097158324331573250.json, 图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097498595476987905.json, 图片生成/图生图/SeedVR2放大_官方流_质量极高_2099307171841400833.json, 图片生成/图生图/SeedVR2放大_官方流_质量极高_2099661268289409025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_244
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 PE 文生图（优化版）_2102388624821153793.json、图片生成/文生图/千问2.1文生图工作流｜官方原生架构一键出图_2104510217215111169.json、图片生成/文生图/千问2.1白底商品图工作流｜纯白底商业摄影级_2104514790235402242.json、图片生成/文生图/文字生成图片（Qwen-Image 2.1）_2107738529978732546.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097158324331573250.json、图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097498595476987905.json、图片生成/图生图/SeedVR2放大_官方流_质量极高_2099307171841400833.json、图片生成/图生图/SeedVR2放大_官方流_质量极高_2099661268289409025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
+- `CM_IntToFloat`
+- `ComfyMathExpression`
+- `Image Size to Number`
+- `ImageMergeTileList`
 - `KSampler`
+- `LoadImage`
+- `Number Operation`
+- `PrimitiveInt`
+- `ResizeImageMaskNode`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
+- `SimpleMath+`
+- `SplitImageToTileList`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 2/4 个有
-- `EmptyLatentImage` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `QwenPECanvasT8` —— 1/4 个有
-- `QwenPERewriteT8` —— 1/4 个有
+- `GetNode` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `LayerFilter: GaussianBlur` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `easy imageConcat` —— 2/4 个有
+- `easy int` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 20 - 25 | 4 | 89% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 4 | 57% |
+| 采样步数 | 1 | 1 - 1 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 20 - 25，4 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，4 个样本
+- 采样步数 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode

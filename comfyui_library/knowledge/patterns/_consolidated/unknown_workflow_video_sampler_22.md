@@ -3,57 +3,42 @@ name: unknown_workflow_video_sampler_22
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.938333
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VHS_VideoCombine]
+coverage: 0.829667
+common_nodes: [CR Prompt Text, Float, Float to Int, GetVideoComponents, ImageConcatMulti, JWInteger, LoadAudio, LoadImage, MathExpression|pysssss, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SaveVideo, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json, 视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json, 视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json]
+members: [视频生成/图生视频/DreamId-Omni单图参考RA2V生视频V3（人脸强化版）_2034146059324231682.json, 视频生成/图生视频/DreamId-Omni单图参考RA2V生视频V3（人脸强化版）_2034440411502092290.json, 视频生成/图生视频/DreamId-Omni单图参考RA2V生视频_2035177080291332097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json、视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json、视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/DreamId-Omni单图参考RA2V生视频V3（人脸强化版）_2034146059324231682.json、视频生成/图生视频/DreamId-Omni单图参考RA2V生视频V3（人脸强化版）_2034440411502092290.json、视频生成/图生视频/DreamId-Omni单图参考RA2V生视频_2035177080291332097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR Prompt Text`
+- `Float`
+- `Float to Int`
+- `GetVideoComponents`
+- `ImageConcatMulti`
+- `JWInteger`
+- `LoadAudio`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `RunningHub DreamID-Omni Loader`
+- `RunningHub DreamID-Omni Sampler`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
+- `SaveVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `LTXVAudioVAEDecode` —— 2/3 个有
-- `LTXVLatentUpsampler` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `LatentUpscaleModelLoader` —— 2/3 个有
-- `VAEDecodeTiled` —— 2/3 个有
-- `VAELoaderKJ` —— 2/3 个有
-- `CLIPLoader` —— 1/3 个有
-- `LTXVChunkFeedForward` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `Power Lora Loader (rgthree)` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

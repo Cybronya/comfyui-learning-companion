@@ -1,90 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_8
 type: Unknown Workflow
-frequency: 55
+frequency: 64
 level: moderate
-coverage: 0.562873
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.721781
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Animate人物替换（不限长度）_2015018676868616194.json, 视频生成/图生视频/Wan2.2  Wan22 角色替换   动作迁移  二创首选_2042132086164819970.json, 视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042176153171009537.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042932527039516674.json, 视频生成/图生视频/Wan2.2  二创首选 角色替换 动作模仿 图生视频_2041872588984557569.json, 视频生成/图生视频/Wan2.2  人物替换_角色替换_动作模仿_二创首选_2039518740357844993.json, 视频生成/图生视频/Wan2.2  角色替换_动作模仿_图生视频_2039615736561274882.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选_2021541718369247233.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选工作流_2088990764796825602.json, 视频生成/图生视频/Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.json, 视频生成/图生视频/Wan2.2 角色替换   动作迁移  二创首选_2039620407292076033.json, 视频生成/图生视频/kitten practicing kung fu_2084182943492300802.json, 视频生成/图生视频/kitten practicing kung fu_2091771507398762498.json, 视频生成/图生视频/人物替换     角色替换    二创首选  Wan2.2 wan22_2061909733405188097.json, 视频生成/图生视频/人物替换    角色替换   二创首选  Wan2.2 wan22_2061714173691785218.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045436584266309633.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045756399656898561.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2047879824609386498.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2048374565356707842.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052077583671541761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052089396547072002.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2053480599746293761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061717483219931137.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061732736808873986.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046446441639448578.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2061517996736208897.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2061703653236502530.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2025383055673794562.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2046490215514120193.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2054545413268615170.json, 视频生成/图生视频/双向引导人物主体替换2.2+sec_1984107698880970753.json, 视频生成/图生视频/女装穿搭原图转全身动态短视频 MoCap 动作迁移带货工作流_2077919550741499905.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2041820466159034370.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2044048099055771650.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061522776120446978.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061720298134786049.json, 视频生成/图生视频/角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061525825463341057.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061706268229857282.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿  动作迁移  二创首选_2039303290109825025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2039983104382734337.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047944109041651714.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047960672364929025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2048361532148420610.json, 视频生成/图生视频/角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2039898768174223362.json, 视频生成/图生视频/角色替换  Wan2.2  图生视频_2042073520565391361.json, 视频生成/图生视频/角色替换  人物替换  Wan2.2   动作模仿 动作迁移 二创首选_2047907869110050818.json, 视频生成/图生视频/角色替换 人物替换 动作模仿 动作迁移 二创首选 Wan2.2_2053516783939801089.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2043513913018421250.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2044060077488873474.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052436872852459521.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052759183916843010.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2053154685997068289.json]
+members: [视频生成/图生视频/动作完美迁移-Wan Video_2009487877079568385.json, 视频生成/图生视频/动作模仿  动作迁移   wan2.2_2058467606604111873.json, 视频生成/图生视频/动作模仿  动作迁移   wan2.2_2062267802035253249.json, 视频生成/图生视频/动作模仿  动作迁移  SteadyDancer_2079497212211585026.json, 视频生成/图生视频/动作模仿  动作迁移  wan2.2_2058626047352070146.json, 视频生成/图生视频/动作模仿-动作迁移-和谐连贯的人像动画与首帧保留_1996439442132975617.json, 视频生成/图生视频/动作迁移 wan22 wan2.2 SteadyDancer 角色替换_2041796686720274433.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2042065496551464962.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2042132307506634753.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2043214843913707521.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2043550053435969538.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2043574604777656322.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2043973328846725122.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2045029868080996354.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2045827374817742849.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2_2080951206196899842.json, 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2_2081641783875952641.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2046492973260611586.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2046851592153993217.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2046910304046551041.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2047145459982012417.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2047160236468867073.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2047231351606222849.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2047249835761344514.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2047904280446771201.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2052439073482129409.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2052755424847384578.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2052818320541396994.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2053175665918267393.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2053496869547982849.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2053511681703198721.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2054254654485221377.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2054257054595993602.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2057737815768784897.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058284247890350082.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058284795267997698.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058286374553473025.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058444480587583489.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058481096018452482.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058639989411500034.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058649283943026689.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2058772271212359682.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2059550701113659394.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2064427874249166849.json, 视频生成/图生视频/动作迁移 动作模仿  wan2.2_2064996546147602434.json, 视频生成/图生视频/动作迁移 动作模仿  wan22  wan2.2_2047497091395624961.json, 视频生成/图生视频/动作迁移 动作模仿  wan22  wan2.2_2047889744532606978.json, 视频生成/图生视频/动作迁移_动作模仿_视频动作迁移_SteadyDancer_wan wan2.2_2042172500133548033.json, 视频生成/图生视频/动作迁移_动作模仿_视频动作迁移_SteadyDancer_wan_2039232054755332098.json, 视频生成/图生视频/动作迁移_动作模仿_视频动作迁移_SteadyDancer_wan_2042121574215589889.json, 视频生成/图生视频/动作迁移_动作模仿_视频动作迁移_SteadyDancer_wan_2043974994291593217.json, 视频生成/图生视频/动作迁移_骨骼迁移_不限时长版_2020736841799962625.json, 视频生成/图生视频/动作迁移工作流改版 动作模仿 SteadyDancer   wan_2078749088413212673.json, 视频生成/图生视频/动作迁移新版  动作模仿  SteadyDancer_2079073056659689473.json, 视频生成/图生视频/动作迁移（不限时长版）_2004423126941401089.json, 视频生成/图生视频/动漫人物跳舞 动作迁移 动作模仿  wan2.2_2047269838766215170.json, 视频生成/图生视频/口播 跳舞 带货皆可用 SteadyDancer动作迁移-_1999419556877791233.json, 视频生成/图生视频/图生视频-SteadyDancer动作迁移_2081535585252110337.json, 视频生成/图生视频/姿势参考生视频 动作迁移 超长视频时长生成_2033430407915511809.json, 视频生成/图生视频/无限时长SteadyDancer快速生成跳舞视频动作迁移舞蹈模仿骨骼迁移不限时间舞蹈视频生成_2013167617183326209.json, 视频生成/图生视频/最新3.0动漫人物跳舞 动作迁移 动作模仿_2064360573986492418.json, 视频生成/图生视频/最新SteadyDancer动作迁移美女跳舞_1995812205289410562.json, 视频生成/图生视频/最新优化SteadyDancer版动作精准迁移工作流_2039288865713823746.json, 视频生成/图生视频/💃人物跳舞专版优化 熊部_人物动态增强💃_2009443481458057217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 55 个 workflow 归纳得出（视频生成/图生视频/Animate人物替换（不限长度）_2015018676868616194.json、视频生成/图生视频/Wan2.2  Wan22 角色替换   动作迁移  二创首选_2042132086164819970.json、视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json、视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042176153171009537.json、视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042932527039516674.json…）
+> 由 `engine/knowledge_consolidation` 从 64 个 workflow 归纳得出（视频生成/图生视频/动作完美迁移-Wan Video_2009487877079568385.json、视频生成/图生视频/动作模仿  动作迁移   wan2.2_2058467606604111873.json、视频生成/图生视频/动作模仿  动作迁移   wan2.2_2062267802035253249.json、视频生成/图生视频/动作模仿  动作迁移  SteadyDancer_2079497212211585026.json、视频生成/图生视频/动作模仿  动作迁移  wan2.2_2058626047352070146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：55
+- **样本数**：64
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 55 个 workflow 都包含：
-- `BlockifyMask`
+全部 64 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
+- `GetImageRangeFromBatch`
 - `GetNode`
 - `ImageResizeKJv2`
 - `LoadImage`
 - `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 54/55 个有
-- `GetImageSizeAndCount` —— 54/55 个有
-- `GrowMask` —— 54/55 个有
-- `INTConstant` —— 54/55 个有
-- `ImageConcanate` —— 54/55 个有
-- `InvertMask` —— 54/55 个有
-- `LayerUtility: ImageBlend` —— 54/55 个有
-- `MaskToImage` —— 54/55 个有
-- `VHS_VideoInfo` —— 54/55 个有
-- `PointsEditor` —— 53/55 个有
-- `ImageFromBatch+` —— 52/55 个有
-- `PreviewImage` —— 52/55 个有
-- `easy cleanGpuUsed` —— 51/55 个有
-- `JWInteger` —— 45/55 个有
-- `ImageFromBatch` —— 3/55 个有
-- `ImageScaleToTotalPixels` —— 2/55 个有
-- `IndexTTSNode` —— 2/55 个有
-- `MemoryCleaner` —— 2/55 个有
-- `SeedVR2LoadDiTModel` —— 2/55 个有
-- `SeedVR2LoadVAEModel` —— 2/55 个有
-- `SeedVR2VideoUpscaler` —— 2/55 个有
-- `Text Multiline` —— 2/55 个有
-- `WanVideoTorchCompileSettings` —— 2/55 个有
-- `easy framesEditor` —— 2/55 个有
-- `GetImageSize` —— 1/55 个有
-- `GrowMaskWithBlur` —— 1/55 个有
-- `ImpactConditionalBranch` —— 1/55 个有
-- `Int` —— 1/55 个有
-- `LayerMask: MaskPreview` —— 1/55 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/55 个有
-- `PrimitiveInt` —— 1/55 个有
-- `PrimitiveStringMultiline` —— 1/55 个有
-- `WanVideoContextOptions` —— 1/55 个有
-- `easy compare` —— 1/55 个有
-- `easy int` —— 1/55 个有
+- `GetImageSizeAndCount` —— 63/64 个有
+- `WanVideoContextOptions` —— 63/64 个有
+- `ImageConcatMulti` —— 60/64 个有
+- `PoseDetectionOneToAllAnimation` —— 60/64 个有
+- `PreviewImage` —— 60/64 个有
+- `WanVideoBlockSwap` —— 58/64 个有
+- `WanVideoSetBlockSwap` —— 57/64 个有
+- `CR Prompt Text` —— 51/64 个有
+- `Int` —— 8/64 个有
+- `DrawViTPose` —— 5/64 个有
+- `PoseAndFaceDetection` —— 5/64 个有
+- `TextInput_` —— 5/64 个有
+- `SimpleMath+` —— 4/64 个有
+- `easy cleanGpuUsed` —— 3/64 个有
+- `easy int` —— 3/64 个有
+- `CR Text` —— 2/64 个有
+- `CR Text Concatenate` —— 2/64 个有
+- `WanVideoTorchCompileSettings` —— 2/64 个有
+- `DF_Int_to_Float` —— 1/64 个有
+- `MathExpression|pysssss` —— 1/64 个有
+- `Note Plus (mtb)` —— 1/64 个有
+- `PrimitiveFloat` —— 1/64 个有
+- `ShowAnything|Mie` —— 1/64 个有
+- `VHS_VideoInfoLoaded` —— 1/64 个有
+- `WanVideoImageResizeToClosest` —— 1/64 个有
+- `easy clearCacheAll` —— 1/64 个有
+- `easy convertAnything` —— 1/64 个有
+- `easy showAnything` —— 1/64 个有
 
 ## 典型参数
 

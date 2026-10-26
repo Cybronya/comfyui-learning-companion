@@ -1,34 +1,34 @@
 ---
 name: image_to_image_sampler_unet_vae_34
 type: Image To Image
-frequency: 7
-level: strong
-coverage: 0.825143
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 6
+level: moderate
+coverage: 0.655167
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux Kontext  保持风格一键Teache加速扩图_1961480141107085314.json, 图片生成/图生图/Flux Kontext本地图片编辑王者_1938601592583344129.json, 图片生成/图生图/Flux+Kontext老照片修复_1949376700114731009.json, 图片生成/图生图/Flux-Kontext-Dev单图编辑极速工作流_1938581341325680641.json, 图片生成/图生图/KonText一句话P图！提示词改图=开源版=艾橘溪_1928485579321909249.json, 图片生成/图生图/KonText一句话改图，技术有限，创意无限！_1941126778633273346.json, 图片生成/图生图/flux_kontext图像编辑_万物玻璃_1961470553272029186.json]
+members: [图片生成/图生图/Qwen-edit 胸部增强 丰胸神器 1.0_1994406310353510401.json, 图片生成/图生图/Qwen-动漫转写实真人_1987456609242779650.json, 图片生成/图生图/Qwen_Image_Edit 超强编辑 _ 万物可改 _ 开源可部署_1959226946603397122.json, 图片生成/图生图/Qwen图片编辑模型Plus版本_1970454036820488193.json, 图片生成/图生图/qwen_image_edit多图编辑_1970660738824105985.json, 图片生成/文生图/FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux Kontext  保持风格一键Teache加速扩图_1961480141107085314.json、图片生成/图生图/Flux Kontext本地图片编辑王者_1938601592583344129.json、图片生成/图生图/Flux+Kontext老照片修复_1949376700114731009.json、图片生成/图生图/Flux-Kontext-Dev单图编辑极速工作流_1938581341325680641.json、图片生成/图生图/KonText一句话P图！提示词改图=开源版=艾橘溪_1928485579321909249.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-edit 胸部增强 丰胸神器 1.0_1994406310353510401.json、图片生成/图生图/Qwen-动漫转写实真人_1987456609242779650.json、图片生成/图生图/Qwen_Image_Edit 超强编辑 _ 万物可改 _ 开源可部署_1959226946603397122.json、图片生成/图生图/Qwen图片编辑模型Plus版本_1970454036820488193.json、图片生成/图生图/qwen_image_edit多图编辑_1970660738824105985.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+全部 6 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,44 +36,46 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/7 个有
-- `CLIPTextEncode` —— 5/7 个有
-- `FluxKontextImageScale` —— 5/7 个有
-- `ImageStitch` —— 4/7 个有
-- `RH_Translator` —— 3/7 个有
-- `TeaCache` —— 3/7 个有
-- `CLIPTextEncodeFlux` —— 2/7 个有
-- `EmptySD3LatentImage` —— 2/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `ShowText|pysssss` —— 2/7 个有
-- `Bjornulf_ShowStringText` —— 1/7 个有
-- `ImagePadKJ` —— 1/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
-- `RMBG` —— 1/7 个有
+- `GetNode` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `TextEncodeQwenImageEditPlus` —— 5/6 个有
+- `TextEncodeQwenImageEdit` —— 4/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `DWPreprocessor` —— 2/6 个有
+- `EmptySD3LatentImage` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `CLIPTextEncode` —— 1/6 个有
+- `DualCLIPLoader` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `ImageStitch` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 7 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 71% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 6 | 1 - 8 | 6 | 51% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 71%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 1 - 8，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（10/6 个样本）：Steps较低可能导致细节不足

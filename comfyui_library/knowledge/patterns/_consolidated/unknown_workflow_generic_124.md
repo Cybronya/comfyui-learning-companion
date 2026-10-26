@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_124
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.809
-common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.851214
+common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V1 2标准版文生图，1K分辨率每日前5次免费，只扣RH点数_1994263602983092225.json, 图片生成/文生图/全能图片V1 Pro文生图_1996082688178241538.json, 图片生成/文生图/全能图片V1 pro&2-text to image文生图1k-4k_1993157671071268865.json, 图片生成/文生图/全能图片V12 & Pro_1997142573481410561.json, 图片生成/文生图/全能图片V12 & Pro最强文本到图像生成_1992475992325419010.json, 图片生成/文生图/全能图片V12文生图_1991527043806478338.json, 图片生成/文生图/单点文生图_2015404463237898241.json, 图片生成/文生图/谷歌全能图片V12文生图_1991538118333513730.json, 图片生成/文生图/趣味工作流_01_卧室闪光回忆_9x16_2038171306025291778.json, 图片生成/文生图/趣味工作流_02_列车窗边回眸_3x4_2038172583274749953.json, 图片生成/文生图/趣味工作流_03_居酒屋抓拍闪光_3x4_2038173333719617537.json, 图片生成/文生图/趣味工作流_04_复古警服酒吧叙事_3x4_2038178540432134146.json, 图片生成/文生图/🍌文生图_2040074913238749186.json]
+members: [视频生成/图生视频/Happy horse图生视频_2048729768073367554.json, 视频生成/图生视频/Happy horse图生视频_2048930713545744385.json, 视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json, 视频生成/图生视频/Happyhorse 视频新王图生视频_2048674844094504962.json, 视频生成/图生视频/happy horse图生视频_2048976027916967937.json, 视频生成/图生视频/happyhores图生视频_2050538420602195970.json, 视频生成/图生视频/happyhorse-1.0 快乐马+图生视频_2048746487852572674.json, 视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json, 视频生成/图生视频/happyhorse图生视频_时间定格➕一巴掌_2050467288574377986.json, 视频生成/图生视频/happyhorse图生视频（快乐马）_2048769410881556481.json, 视频生成/图生视频/快乐马_图生视频 Happyhorse_I2V_2048700129443581953.json, 视频生成/图生视频/视频丨阿里happyhorse快乐小马图生视频_2054193821549907970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_124
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/全能图片V1 2标准版文生图，1K分辨率每日前5次免费，只扣RH点数_1994263602983092225.json、图片生成/文生图/全能图片V1 Pro文生图_1996082688178241538.json、图片生成/文生图/全能图片V1 pro&2-text to image文生图1k-4k_1993157671071268865.json、图片生成/文生图/全能图片V12 & Pro_1997142573481410561.json、图片生成/文生图/全能图片V12 & Pro最强文本到图像生成_1992475992325419010.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Happy horse图生视频_2048729768073367554.json、视频生成/图生视频/Happy horse图生视频_2048930713545744385.json、视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 14 个 workflow 都包含：
+- `LoadImage`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/13 个有
-- `RH_Translator` —— 1/13 个有
+- `JjkText` —— 7/14 个有
+- `PreviewAny` —— 1/14 个有
+- `SaveImage` —— 1/14 个有
 
 ## 典型参数
 

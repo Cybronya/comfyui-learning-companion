@@ -1,56 +1,55 @@
 ---
 name: unknown_workflow_video_lora_sampler_511
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.926
-common_nodes: [Int, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.9332
+common_nodes: [LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1-图生视频_1949678146162446337.json, 视频生成/图生视频/Wan2.2图生视频-Kijai优化版-极速优化版_1950213842141929473.json, 视频生成/图生视频/Wan2.2图生视频-Kijai优化版_1950147247079079938.json, 视频生成/图生视频/Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json]
+members: [视频生成/图生视频/【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json, 视频生成/图生视频/【遇见AI】wan2.1文生视频不同加速lora对比_2062115572657254402.json, 视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json, 视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 文生视频_2070787856590786562.json, 视频生成/文生视频/【遇见AI】wan2.1 Skyreels V2 文生视频，支持超过81帧_2067520501110632450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_511
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1-图生视频_1949678146162446337.json、视频生成/图生视频/Wan2.2图生视频-Kijai优化版-极速优化版_1950213842141929473.json、视频生成/图生视频/Wan2.2图生视频-Kijai优化版_1950147247079079938.json、视频生成/图生视频/Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json、视频生成/图生视频/【遇见AI】wan2.1文生视频不同加速lora对比_2062115572657254402.json、视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json、视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 文生视频_2070787856590786562.json、视频生成/文生视频/【遇见AI】wan2.1 Skyreels V2 文生视频，支持超过81帧_2067520501110632450.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Int`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `WanVideoSetBlockSwap` —— 3/4 个有
-- `WanVideoSetLoRAs` —— 3/4 个有
-- `WanVideoTextEncode` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `CreateCFGScheduleFloatList` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `StringToFloatList` —— 1/4 个有
-- `WanVideoApplyNAG` —— 1/4 个有
-- `WanVideoEasyCache` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoExperimentalArgs` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
-- `WanVideoTextEncodeSingle` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 3/5 个有
+- `GetImageSize+` —— 2/5 个有
+- `MaskPreview+` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `WanVideoVACEEncode` —— 2/5 个有
+- `WanVideoVACEModelSelect` —— 2/5 个有
+- `WanVideoVACEStartToEndFrame` —— 2/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `WanVideoVRAMManagement` —— 1/5 个有
 
 ## 典型参数
 

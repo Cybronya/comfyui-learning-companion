@@ -2,74 +2,76 @@
 name: unknown_workflow_sampler_unet_vae_178
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.747
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+level: strong
+coverage: 0.862167
+common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, CropWithPadInfo, Image Comparer (rgthree), KSampler, LoadImage, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json, 视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json, 视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json, 视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json, 视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json, 视频生成/文生视频/Minimax-H3-✅文生长视频-原版-736p直出_2101978013062746113.json]
+members: [图片生成/图生图/Qwen-image-Edit-2511图像编辑不偏移+万物移除-增加物体 V1.0_2008472523880538113.json, 图片生成/图生图/单图编辑背景无偏移_2008730411949625346.json, 图片生成/图生图/口述改图 零偏移 无偏移 0偏移  Qwen Edit 2511_2013903660815749122.json, 图片生成/图生图/高斯泼溅任意角度编辑 林耀_2013640884365037570.json, 图片生成/文生图/Qwen Edit 2511小志版0漂移_2073296578672160769.json, 图片生成/文生图/高斯泼溅任意角度编辑_2073302227107803137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_178
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json、视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json、视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json、视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json、视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-image-Edit-2511图像编辑不偏移+万物移除-增加物体 V1.0_2008472523880538113.json、图片生成/图生图/单图编辑背景无偏移_2008730411949625346.json、图片生成/图生图/口述改图 零偏移 无偏移 0偏移  Qwen Edit 2511_2013903660815749122.json、图片生成/图生图/高斯泼溅任意角度编辑 林耀_2013640884365037570.json、图片生成/文生图/Qwen Edit 2511小志版0漂移_2073296578672160769.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `CR Text`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LoadImage`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `ModelAttentionBackend` —— 4/6 个有
-- `CreateVideo` —— 3/6 个有
-- `LoadAudio` —— 3/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
-- `GetImagesFromBatchIndexed` —— 2/6 个有
-- `GetVideoComponents` —— 2/6 个有
-- `LoadVideoUI` —— 2/6 个有
-- `MiniMaxH3ImageToVideo` —— 2/6 个有
-- `MiniMaxH3MotionContext` —— 2/6 个有
-- `MiniMaxH3MotionContextTrim` —— 2/6 个有
-- `MiniMaxH3SigmaShift` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `BlockSparseAttention` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
-- `UniBlockSwap` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy int` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `LoadSharpModel` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SharpPredict` —— 2/6 个有
+- `YCGaussianPreview` —— 2/6 个有
+- `EasyCache` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `Power Lora Loader (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | beta57 | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 beta57，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

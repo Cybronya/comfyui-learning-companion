@@ -3,64 +3,79 @@ name: image_to_image_upscale_sampler_clip_33
 type: Image To Image
 frequency: 3
 level: moderate
-coverage: 0.920333
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ImageUpscaleWithModel, KSampler, LoadImage, PreviewImage, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode]
-problems: []
+coverage: 0.877667
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageListToImageBatch, ImageUpscaleWithModel, KSampler, LoadImage, ModelSamplingSD3, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一张图的百变风格_1805176859603755010.json, 图片生成/图生图/图生图+高清修复_1865926491224621057.json, 图片生成/图生图/图生图+高清修复_2030924373321846786.json]
+members: [图片生成/图生图/wan高清写实放大api_1957979462142935041.json, 图片生成/图生图/万相2.2高清放大TTP放大_1946954453464952834.json, 图片生成/图生图/（高清放大）Wan2.2 - 14B - 加速版 -  图片高清放大_1977811440935600129.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_33
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一张图的百变风格_1805176859603755010.json、图片生成/图生图/图生图+高清修复_1865926491224621057.json、图片生成/图生图/图生图+高清修复_2030924373321846786.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/wan高清写实放大api_1957979462142935041.json、图片生成/图生图/万相2.2高清放大TTP放大_1946954453464952834.json、图片生成/图生图/（高清放大）Wan2.2 - 14B - 加速版 -  图片高清放大_1977811440935600129.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `ImageListToImageBatch`
 - `ImageUpscaleWithModel`
 - `KSampler`
 - `LoadImage`
-- `PreviewImage`
+- `ModelSamplingSD3`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `RepeatLatentBatch` —— 2/3 个有
-- `CannyEdgePreprocessor` —— 1/3 个有
-- `ControlNetApply` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `DepthAnythingPreprocessor` —— 1/3 个有
-- `SDXLPromptStyler` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `ConstrainImage|pysssss` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `LayerUtility: BooleanOperatorV2` —— 1/3 个有
+- `LayerUtility: If ` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `easy imageScaleDownToSize` —— 1/3 个有
+- `easy int` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 3 | 87% |
-| 采样算法 | euler_ancestral | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 100% |
-| 重绘幅度 | 0.45 | 0.15 - 0.8 | 3 | 43% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
+| 采样步数 | 10 | 5 - 10 | 3 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | heun | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 0.1 | 0.1 - 0.2 | 3 | 65% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 100%
-- 重绘幅度 中位数 0.45，观测区间 0.15 - 0.8，3 个样本，取值分散，一致性仅 43%
+- 采样步数 中位数 10，观测区间 5 - 10，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 heun，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.1，观测区间 0.1 - 0.2，3 个样本

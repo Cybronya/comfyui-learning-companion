@@ -1,67 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_311
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.989
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+frequency: 8
+level: weak
+coverage: 0.948875
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频-极速版_1950032039593558017.json, 视频生成/图生视频/Wan2.2 图生视频_1950814134864642049.json, 视频生成/图生视频/wan2.2-360旋转_1955685244381773826.json, 视频生成/图生视频/wan2.2图生视频加速流_1950004160121978881.json, 视频生成/图生视频/恶灵骑士wan2.2_1954715963700736001.json, 视频生成/图生视频/角色Lora训练素材生成_1963220175883571201.json, 视频生成/文生视频/wan 2.2-图生视频-360°环绕一圈_1987014980908290050.json]
+members: [视频生成/图生视频/Wan2.2_ Motion调整运动速度_2007040869337145346.json, 视频生成/图生视频/Wan2.2_14B_图生视频 (4步加速)_1955097122862350338.json, 视频生成/图生视频/Wan2.2_14B_图生视频 (8步加速)_1966753554679705601.json, 视频生成/图生视频/Wan2.2_图生视频_4步极速版_ComfyUI官方流_2017158021029306369.json, 视频生成/图生视频/Wan2.2_图生视频_4步极速版_ComfyUI官方流_2044039756232790017.json, 视频生成/图生视频/Wan2.2图生视频超级加速_1955793674186604546.json, 视频生成/文生视频/WAN22运动性3xKsampler高速工作流_1959177557772021762.json, 视频生成/文生视频/【老金驿站】提升WAN22运动性3xKsampler高速工作流_1965219730770546689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_311
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频-极速版_1950032039593558017.json、视频生成/图生视频/Wan2.2 图生视频_1950814134864642049.json、视频生成/图生视频/wan2.2-360旋转_1955685244381773826.json、视频生成/图生视频/wan2.2图生视频加速流_1950004160121978881.json、视频生成/图生视频/恶灵骑士wan2.2_1954715963700736001.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2_ Motion调整运动速度_2007040869337145346.json、视频生成/图生视频/Wan2.2_14B_图生视频 (4步加速)_1955097122862350338.json、视频生成/图生视频/Wan2.2_14B_图生视频 (8步加速)_1966753554679705601.json、视频生成/图生视频/Wan2.2_图生视频_4步极速版_ComfyUI官方流_2017158021029306369.json、视频生成/图生视频/Wan2.2_图生视频_4步极速版_ComfyUI官方流_2044039756232790017.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 5/7 个有
-- `CR Text` —— 4/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `easy int` —— 4/7 个有
-- `CR Text Concatenate` —— 2/7 个有
-- `ImageResize+` —— 2/7 个有
-- `ImpactInt` —— 2/7 个有
-- `SaveImage` —— 2/7 个有
-- `Seed Generator` —— 2/7 个有
-- `CLIPVisionEncode` —— 1/7 个有
-- `CLIPVisionLoader` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `ModelSamplingSD3` —— 7/8 个有
+- `UNETLoader` —— 6/8 个有
+- `PathchSageAttentionKJ` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/8 个有
+- `PrimitiveFloat` —— 3/8 个有
+- `SimpleMath+` —— 3/8 个有
+- `UnetLoaderGGUF` —— 3/8 个有
+- `PrimitiveInt` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `CLIPLoaderGGUF` —— 1/8 个有
+- `CR SDXL Aspect Ratio` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `PrimitiveString` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `WanMotionScale` —— 1/8 个有
+- `WanVideoVACEStartToEndFrame` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 71% |
-| Prompt 约束强度(CFG) | 12 | 6 - 14 | 7 | 74% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | lcm | - | 7 | 57% |
-| 重绘幅度 | simple | - | 7 | 100% |
+| 采样步数 | fixed | - | 8 | 88% |
+| Prompt 约束强度(CFG) | 6.5 | 4 - 8 | 8 | 81% |
+| 采样算法 | 1 | 1 - 3.5 | 8 | 37% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -69,9 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 71%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 6 - 14，7 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，7 个样本，一致性 57%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 最常用 fixed，8 个样本，一致性 88%
+- Prompt 约束强度(CFG) 中位数 6.5，观测区间 4 - 8，8 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 37%
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

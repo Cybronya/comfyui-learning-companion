@@ -1,64 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_clip_226
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.783
-common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, GrowMaskWithBlur, KSamplerSelect, LayerMask: MaskPreview, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.836
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyHunyuanLatentVideo, Image Comparer (rgthree), ImpactInt, KSamplerAdvanced, LoraLoaderModelOnly, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux一键修手（自动+手动）_1905570787984871426.json, 图片生成/图生图/Flux修手（手动）_1905597707249963010.json]
+members: [图片生成/文生图/wan2-2+seedvr高清放大超级真实质感文生图_2043161931514646530.json, 图片生成/文生图/wan2-2文生图 超级真实质感工作流_1964175572664467458.json, 图片生成/文生图/🏇wan2-2超级真实质感 文生图🏇_1961625719518511105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_226
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux一键修手（自动+手动）_1905570787984871426.json、图片生成/图生图/Flux修手（手动）_1905597707249963010.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan2-2+seedvr高清放大超级真实质感文生图_2043161931514646530.json、图片生成/文生图/wan2-2文生图 超级真实质感工作流_1964175572664467458.json、图片生成/文生图/🏇wan2-2超级真实质感 文生图🏇_1961625719518511105.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `GrowMaskWithBlur`
-- `KSamplerSelect`
-- `LayerMask: MaskPreview`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `CR Text Concatenate`
+- `EmptyHunyuanLatentVideo`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddMask` —— 1/2 个有
-- `BlendInpaint` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `CutForInpaint` —— 1/2 个有
-- `GroundingDinoModelLoader (segment anything)` —— 1/2 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 1/2 个有
-- `ImageAndMaskPreview` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `PreviewBridge` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
-- `SAMLoader` —— 1/2 个有
-- `easy imageChooser` —— 1/2 个有
+- `SeedVR2BlockSwap` —— 2/3 个有
+- `SeedVR2GGUF` —— 2/3 个有
+- `INTConstant` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SeedVR2LoadDiTModel` —— 1/3 个有
+- `SeedVR2LoadVAEModel` —— 1/3 个有
+- `SeedVR2VideoUpscaler` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | res_2s | - | 3 | 100% |
+| 重绘幅度 | bong_tangent | - | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 res_2s，3 个样本，一致性 100%
+- 重绘幅度 最常用 bong_tangent，3 个样本，一致性 100%

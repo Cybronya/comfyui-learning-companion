@@ -1,63 +1,44 @@
 ---
 name: unknown_workflow_video_lora_sampler_736
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.541
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, FloatConstant, GIMMVFI_interpolate, GetNode, INTConstant, ImageBatchMulti, ImageCrop, ImageResizeKJv2, ImpactMakeAnyList, ImpactMakeImageList, ImpactSelectNthItemOfAnyList, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, PreviewAny, PreviewImage, SetNode, SolidMask, SomethingToString, StringConstantMultiline, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy promptLine, easy seed]
+frequency: 3
+level: moderate
+coverage: 0.675667
+common_nodes: [CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, RH_Prompter, SetNode, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json, 视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json]
+members: [视频生成/图生视频/wan2.2图像到视频_1950019769790545922.json, 视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1950922029769891841.json, 视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1956166218438901761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_736
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json、视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2图像到视频_1950019769790545922.json、视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1950922029769891841.json、视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1956166218438901761.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
-- `CLIPLoader`
-- `CLIPVisionLoader`
-- `Display Int (rgthree)`
-- `DownloadAndLoadGIMMVFIModel`
-- `FloatConstant`
-- `GIMMVFI_interpolate`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageCrop`
 - `ImageResizeKJv2`
-- `ImpactMakeAnyList`
-- `ImpactMakeImageList`
-- `ImpactSelectNthItemOfAnyList`
-- `InvertMask`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
-- `PreviewAny`
-- `PreviewImage`
+- `RH_Captioner`
+- `RH_Prompter`
 - `SetNode`
-- `SolidMask`
-- `SomethingToString`
-- `StringConstantMultiline`
-- `TextImageEncodeQwenVL`
+- `TextCombinerTwo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
 - `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -65,18 +46,21 @@ source: knowledge_consolidation
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy lengthAnything`
-- `easy promptLine`
-- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `ResizeAndPadImage` —— 1/2 个有
-- `easy imageListToImageBatch` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `JjkText` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `LayerColor: Brightness & Contrast` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `Primitive integer [Crystools]` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TextBox` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 
@@ -88,4 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_unet_62
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8035
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.91925
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/图生视频/VOSR2图像高清化_快速H3-04-i2v_一条龙_2099518036637208578.json, 视频生成/图生视频/h3-图生视频-加速版_2086591917021810690.json, 视频生成/图生视频/h3-文生视频-加速版_2089908211922067457.json, 视频生成/图生视频/h3-首尾帧-加速版_2086593854702182401.json]
+members: [视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/VOSR2图像高清化_快速H3-04-i2v_一条龙_2099518036637208578.json、视频生成/图生视频/h3-图生视频-加速版_2086591917021810690.json、视频生成/图生视频/h3-文生视频-加速版_2089908211922067457.json、视频生成/图生视频/h3-首尾帧-加速版_2086593854702182401.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
@@ -26,36 +26,37 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CR Prompt Text`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `FlashVSRNode` —— 3/4 个有
-- `LoraLoaderBypassModelOnly` —— 3/4 个有
-- `Sleep` —— 3/4 个有
-- `EasyCache` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `SLAAttention` —— 1/4 个有
-- `SolAttnPatch` —— 1/4 个有
-- `VOSR2ModelLoader` —— 1/4 个有
-- `VOSR2Upscale` —— 1/4 个有
+- `AudioCrop` —— 3/4 个有
+- `MiniMaxChunkFeedForward` —— 2/4 个有
+- `MiniMaxLowVRAMAttention` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `PixaromaLabel` —— 2/4 个有
+- `AudioConcat` —— 1/4 个有
+- `EmptyAudio` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
 
 ## 典型参数
 

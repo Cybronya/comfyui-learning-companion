@@ -1,76 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_140
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.914125
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.964
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/3.扩展图片_2050623451928510466.json, 图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json, 图片生成/图生图/FLUX2-Klein Flux-2-Klein-9B 多图编辑  电商产品场景 万能迁移 光影一致_2025034756479524865.json, 图片生成/图生图/FLUX2-Klein扩图_2044259641374281729.json, 图片生成/图生图/FLUX2Klein 单图编辑_2026497012299993090.json, 图片生成/图生图/FLUX2Klein一次性批量扩图_2053020098847354882.json, 图片生成/图生图/flux 2 klein 无缝扩图+局部重绘_2017924280838791170.json, 图片生成/图生图/一键扩图工作流_2095410279856300033.json]
+members: [图片生成/文生图/qwen2512-qwen-水彩画-文生图工作流_2011342788499087361.json, 图片生成/文生图/qwen_image2512+lora8步_2009428030506143746.json, 图片生成/文生图/qwen_image文生图+lora8步_1955214645163278337.json, 图片生成/文生图/zimage-base文生图_2039943203540967425.json, 图片生成/文生图/zimage-turbo-文生图工作流-lora人像_2048255863974010881.json, 图片生成/文生图/亚秒级生成！Zimage超快图片生成器官方工作流_2035604076301393921.json, 图片生成/文生图/文生图-Qwen2512-6步-模板_2023584055270313986.json, 图片生成/文生图/自己用小i文生图：Qwen+Lora_2021825579867185154.json, 数字人/数字人/文生图-Qwen2512-6步-模板_2026856696487878658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_140
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/3.扩展图片_2050623451928510466.json、图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json、图片生成/图生图/FLUX2-Klein Flux-2-Klein-9B 多图编辑  电商产品场景 万能迁移 光影一致_2025034756479524865.json、图片生成/图生图/FLUX2-Klein扩图_2044259641374281729.json、图片生成/图生图/FLUX2Klein 单图编辑_2026497012299993090.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/qwen2512-qwen-水彩画-文生图工作流_2011342788499087361.json、图片生成/文生图/qwen_image2512+lora8步_2009428030506143746.json、图片生成/文生图/qwen_image文生图+lora8步_1955214645163278337.json、图片生成/文生图/zimage-base文生图_2039943203540967425.json、图片生成/文生图/zimage-turbo-文生图工作流-lora人像_2048255863974010881.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `ImagePadForOutpaint` —— 6/8 个有
-- `ColorMatch` —— 4/8 个有
-- `DrawMaskOnImage` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `ImageScaleToTotalPixels` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
-- `easy seed` —— 2/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `CustomAddLabel` —— 1/8 个有
-- `ImageConcanate` —— 1/8 个有
-- `ImpactMakeAnyList` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `MuyeTextEditOutput` —— 1/8 个有
-- `ResizeImagesByLongerEdge` —— 1/8 个有
-- `TY360Pasteback` —— 1/8 个有
-- `TY360Preview` —— 1/8 个有
-- `TY360Roundtrip` —— 1/8 个有
+- `LoraLoader` —— 7/9 个有
+- `ModelSamplingAuraFlow` —— 7/9 个有
+- `ConditioningZeroOut` —— 3/9 个有
+- `RH_LLMAPI_NODE` —— 2/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `TextConcat` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 6 - 50 | 9 | 9% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 9 | 37% |
+| 采样算法 | dpmpp_2m | - | 9 | 33% |
+| 调度器 | simple | - | 9 | 44% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| LoRA 模型强度 | 1 | 0.95 - 1 | 7 | 98% |
+| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 6 - 50，9 个样本，取值分散，一致性仅 9%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，9 个样本，取值分散，一致性仅 37%
+- 采样算法 最常用 dpmpp_2m，9 个样本，一致性 33%
+- 调度器 最常用 simple，9 个样本，一致性 44%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 0.95 - 1，7 个样本，取值集中（一致性 98%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（6/9 个样本）：Steps较低可能导致细节不足

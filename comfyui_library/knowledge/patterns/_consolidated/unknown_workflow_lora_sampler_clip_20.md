@@ -1,79 +1,114 @@
 ---
 name: unknown_workflow_lora_sampler_clip_20
 type: Unknown Workflow
-frequency: 14
-level: weak
-coverage: 0.896429
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SDXLEmptyLatentSizePicker+, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 15
+level: strong
+coverage: 0.918067
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTX2AttentionTunerPatch, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json, 图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json, 图片生成/文生图/多风格绘本_2004518809287491586.json, 图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json, 图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json, 图片生成/文生图/沙雕动漫修仙道具_1975850526229311490.json, 图片生成/文生图/沙雕动漫修仙道具_1977868579548844034.json, 图片生成/文生图/沙雕动漫游戏8090都市人物开高清放大_1960893369214013442.json, 图片生成/文生图/沙雕动漫表情包沙雕动漫超火表情包_1965258449992994817.json, 图片生成/文生图/沙雕动漫都市道具专用工作流_2075022458377293825.json, 图片生成/文生图/沙雕动漫都市道具超清qwen加速版_1960894339947933698.json, 图片生成/文生图/沙雕动画场景-简笔画超清_2024368744855773185.json, 图片生成/文生图/沙雕动画道具—超清加速_2024381279193538562.json, 图片生成/文生图/简笔画都市场景图超清_1965638195176198145.json]
+members: [视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json, 视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2053052230592409601.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2051614845358886913.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2052714455703801858.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2074073783828307970.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2075903253178572801.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版V2（新版模型）_2043901634517929985.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版（转自T8大佬）_2044013454645796866.json, 视频生成/图生视频/Ltx+2.3_Dasiwa图生视频+高清_2051956185665949698.json, 视频生成/图生视频/【阿良绘】Ltx 2.3图生视频 _ 自动提示词 改进版V2（新版模型）_2047130634124005377.json, 视频生成/图生视频/电商Ltx 2.3 Dasiwa V3最强人脸一致性-图生视频-自动提示词_2071794248864845826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json、图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json、图片生成/文生图/多风格绘本_2004518809287491586.json、图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json、图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json、视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json、视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPLoader`
+全部 15 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
+- `CM_FloatToInt`
+- `CR Text`
+- `EmptyLTXVLatentVideo`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SDXLEmptyLatentSizePicker+`
-- `SaveImage`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 13/14 个有
-- `ConditioningZeroOut` —— 12/14 个有
-- `UpscaleModelLoader` —— 12/14 个有
-- `ImageUpscaleWithModel` —— 10/14 个有
-- `easy cleanGpuUsed` —— 10/14 个有
-- `easy promptConcat` —— 6/14 个有
-- `Anything Everywhere3` —— 5/14 个有
-- `CR Text Concatenate` —— 5/14 个有
-- `PreviewImage` —— 4/14 个有
-- `SaveLatent` —— 4/14 个有
-- `UltimateSDUpscale` —— 2/14 个有
-- `easy showAnything` —— 2/14 个有
-- `CR Text` —— 1/14 个有
+- `CR Prompt Text` —— 14/15 个有
+- `ConcatTextOfUtils` —— 14/15 个有
+- `RH_LLMAPI_Pro_Node` —— 14/15 个有
+- `VHS_VideoCombine` —— 14/15 个有
+- `easy cleanGpuUsed` —— 14/15 个有
+- `CreateVideo` —— 13/15 个有
+- `LTXVPreprocess` —— 13/15 个有
+- `LatentUpscaleModelLoader` —— 13/15 个有
+- `SaveVideo` —— 13/15 个有
+- `FlashVSR_SM_KSampler` —— 12/15 个有
+- `FlashVSR_SM_Model` —— 12/15 个有
+- `Float` —— 12/15 个有
+- `ImageFromBatch+` —— 12/15 个有
+- `LTXVLatentUpsampler` —— 12/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/15 个有
+- `GetNode` —— 2/15 个有
+- `Int` —— 2/15 个有
+- `LTXICLoRALoaderModelOnly` —— 2/15 个有
+- `SetNode` —— 2/15 个有
+- `SimpleMath+` —— 2/15 个有
+- `孤海注释` —— 2/15 个有
+- `GetImageSize` —— 1/15 个有
+- `ImageScaleBy` —— 1/15 个有
+- `PreviewAny` —— 1/15 个有
+- `Qwen3_VQA` —— 1/15 个有
+- `ShowAnything|Mie` —— 1/15 个有
+- `TextListSplit` —— 1/15 个有
+- `easy promptConcat` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024x1024 (1.0) | - | 14 | 57% |
-| 高度 | 1 | 1 - 4 | 14 | 36% |
-| 采样步数 | 8 | 4 - 15 | 14 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 14 | 36% |
-| 采样算法 | euler | - | 14 | 93% |
-| 调度器 | simple | - | 14 | 71% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 97 | 97 - 97 | 15 | 100% |
+| 高度 | 25 | 25 - 25 | 15 | 100% |
+| 采样步数 | 1.59005e+09 | 1.01555e+07 - 2.01633e+09 | 12 | 41% |
+| Prompt 约束强度(CFG) | randomize | - | 12 | 100% |
+| 采样算法 | 2 | 2 - 2 | 12 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 12 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 12 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 最常用 1024x1024 (1.0)，14 个样本，一致性 57%
-- 高度 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 36%
-- 采样步数 中位数 8，观测区间 4 - 15，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 euler，14 个样本，一致性 93%
-- 调度器 最常用 simple，14 个样本，一致性 71%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（9/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 97，观测区间 97 - 97，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，15 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 1.59005e+09，观测区间 1.01555e+07 - 2.01633e+09，12 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 最常用 randomize，12 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，12 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，12 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，12 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.01633e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

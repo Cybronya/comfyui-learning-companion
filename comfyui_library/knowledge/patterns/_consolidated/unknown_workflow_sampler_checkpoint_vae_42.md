@@ -3,49 +3,46 @@ name: unknown_workflow_sampler_checkpoint_vae_42
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.625
-common_nodes: [AILab_QwenVL, CheckpointLoaderSimple, ComfyNumberConvert, ConditioningZeroOut, EmptyYuE2LatentAudio, JWStringSplit, KSampler, ModelAttentionBackend, PreviewAny, PrimitiveInt, PrimitiveStringMultiline, SaveAudio, SaveText, Seed (rgthree), SomethingToString, StringConcatenate, StringReplace, StringTrim, VAEDecodeAudio, YuE2GenerateABC, YuE2GenerateMusic, easy cleanGpuUsed, easy showAnything]
+coverage: 0.819667
+common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, Fast Groups Bypasser (rgthree), JWStringToFloat, KSampler, LoadAudio, PreviewAudio, PrimitiveStringMultiline, RH_Screenwriter, SaveAudioAdvanced, ShowText|pysssss, VAEDecodeAudio, WujiYue2Lyricist, YuE2GenerateMusic, YuE2ModelLoader, YuE2ReferenceVoiceCover]
 problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成一句话_2100390333661147138.json, 音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成一句话_2100415196908052482.json, 音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成（一句话）_2099778654258688002.json]
+members: [音频生成/音频生成/Yue2AI歌曲制作_2104410641921568770.json, 音频生成/音频生成/Yue2最强AI歌曲制作四合一（文生、翻唱、改词）_2101922999753596930.json, 音频生成/音频生成/Yue2最强AI歌曲制作多合一（文生、翻唱、改词）_2102605880918368258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成一句话_2100390333661147138.json、音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成一句话_2100415196908052482.json、音频生成/音频生成/音乐生成-YuE2-官流-歌曲生成（一句话）_2099778654258688002.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Yue2AI歌曲制作_2104410641921568770.json、音频生成/音频生成/Yue2最强AI歌曲制作四合一（文生、翻唱、改词）_2101922999753596930.json、音频生成/音频生成/Yue2最强AI歌曲制作多合一（文生、翻唱、改词）_2102605880918368258.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
 - `CheckpointLoaderSimple`
-- `ComfyNumberConvert`
 - `ConditioningZeroOut`
 - `EmptyYuE2LatentAudio`
-- `JWStringSplit`
+- `Fast Groups Bypasser (rgthree)`
+- `JWStringToFloat`
 - `KSampler`
-- `ModelAttentionBackend`
-- `PreviewAny`
-- `PrimitiveInt`
+- `LoadAudio`
+- `PreviewAudio`
 - `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveText`
-- `Seed (rgthree)`
-- `SomethingToString`
-- `StringConcatenate`
-- `StringReplace`
-- `StringTrim`
+- `RH_Screenwriter`
+- `SaveAudioAdvanced`
+- `ShowText|pysssss`
 - `VAEDecodeAudio`
-- `YuE2GenerateABC`
+- `WujiYue2Lyricist`
 - `YuE2GenerateMusic`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `YuE2ModelLoader`
+- `YuE2ReferenceVoiceCover`
+
+**可变部分**（部分 workflow 才有）：
+- `ShowText|fofo` —— 1/3 个有
 
 ## 典型参数
 

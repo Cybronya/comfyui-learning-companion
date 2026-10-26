@@ -2,69 +2,54 @@
 name: unknown_workflow_video_sampler_clip_121
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.76
-common_nodes: [ImageResize+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.962
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LoadAudio, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModelWanVideoV2, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 Fun FLF2V 首尾帧生视频 Kijai_1930856714751684610.json, 视频生成/图生视频/Wan2.1_首尾帧视频_kijai_1925042033008779266.json, 视频生成/图生视频/Wan首尾帧视频生成-kijai版_1904901928008994817.json, 视频生成/图生视频/wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json, 视频生成/图生视频/wan2.1图生视频480KJ稳定版_1912043048983851010.json]
+members: [图片生成/文生图/S2V官流双采样文生视频_2039896508253868033.json, 视频生成/图生视频/S2V官流双采样文生视频 (1)_2065232096980987906.json, 视频生成/文生视频/S2V官流双采样文生视频_1960817006654238721.json, 视频生成/文生视频/S2V官流双采样文生视频_2039961005249273857.json, 视频生成/文生视频/Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_121
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Fun FLF2V 首尾帧生视频 Kijai_1930856714751684610.json、视频生成/图生视频/Wan2.1_首尾帧视频_kijai_1925042033008779266.json、视频生成/图生视频/Wan首尾帧视频生成-kijai版_1904901928008994817.json、视频生成/图生视频/wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json、视频生成/图生视频/wan2.1图生视频480KJ稳定版_1912043048983851010.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/S2V官流双采样文生视频_2039896508253868033.json、视频生成/图生视频/S2V官流双采样文生视频 (1)_2065232096980987906.json、视频生成/文生视频/S2V官流双采样文生视频_1960817006654238721.json、视频生成/文生视频/S2V官流双采样文生视频_2039961005249273857.json、视频生成/文生视频/Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ImageResize+`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `INTConstant`
+- `KSamplerAdvanced`
+- `LoadAudio`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `TorchCompileModelWanVideoV2`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `SetNode` —— 4/5 个有
-- `AddLabel` —— 3/5 个有
-- `CLIPLoader` —— 3/5 个有
-- `CLIPTextEncode` —— 3/5 个有
-- `CLIPVisionLoader` —— 3/5 个有
-- `EmptyImage` —— 3/5 个有
-- `GetImageSizeAndCount` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `WanVideoTextEmbedBridge` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `WanVideoVRAMManagement` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/5 个有
-- `GIMMVFI_interpolate` —— 1/5 个有
-- `Get resolution [Crystools]` —— 1/5 个有
-- `ImageResizeKJ` —— 1/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `WanSoundImageToVideo`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 5 | 100% |
+| 采样算法 | 6 | 6 - 6 | 5 | 100% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -72,4 +57,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

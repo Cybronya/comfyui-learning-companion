@@ -3,67 +3,61 @@ name: unknown_workflow_video_sampler_vae_54
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.713
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.948333
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/vace阔图_1925382654517030913.json, 视频生成/图生视频/vace首尾帧_1925399301634109442.json, 视频生成/图生视频/wanvideo_1_3B_VACE_examples_02_1913467020191461377.json, 视频生成/图生视频/【10秒生成】Causvid模型实现AI跳舞视频_1926507512189624322.json, 视频生成/图生视频/【VACE系列】Causvid模型实现10秒生成AI跳舞视频_1926119230994018305.json, 视频生成/图生视频/【VACE系列】首尾帧工作流初体验_1925182598413545473.json, 视频生成/图生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924743024252022785.json, 视频生成/图生视频/极速视频编辑 Self-Forcing + VACE nightly_1928359146670964738.json, 视频生成/文生视频/万相控制视频 VACE nightly_1923433916261126146.json]
+members: [视频生成/图生视频/情歌对唱妹妹坐船头_1989787883399729154.json, 视频生成/图生视频/打大富翁_1990048687038623745.json, 视频生成/图生视频/数字人-InfiniteTalk-单人对口型工作流_2051262997816983554.json, 视频生成/图生视频/数字人-InfiniteTalk-多人对口型工作流_2051497728395489282.json, 视频生成/文生视频/图生视频 数字人 InfiniteTalk 多人对口型 动作模仿_2044640516272295938.json, 视频生成/文生视频/数字人对口型深情歌唱_1989702067088486402.json, 音频生成/音频生成/数字人-InfiniteTalk-视频对口型工作流_2051512102539538434.json, 音频生成/音频生成/标准版图生单多人讲话工作流_2030914032869318658.json, 音频生成/音频生成/视频单人对口型_2029818322556035074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_54
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/vace阔图_1925382654517030913.json、视频生成/图生视频/vace首尾帧_1925399301634109442.json、视频生成/图生视频/wanvideo_1_3B_VACE_examples_02_1913467020191461377.json、视频生成/图生视频/【10秒生成】Causvid模型实现AI跳舞视频_1926507512189624322.json、视频生成/图生视频/【VACE系列】Causvid模型实现10秒生成AI跳舞视频_1926119230994018305.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/情歌对唱妹妹坐船头_1989787883399729154.json、视频生成/图生视频/打大富翁_1990048687038623745.json、视频生成/图生视频/数字人-InfiniteTalk-单人对口型工作流_2051262997816983554.json、视频生成/图生视频/数字人-InfiniteTalk-多人对口型工作流_2051497728395489282.json、视频生成/文生视频/图生视频 数字人 InfiniteTalk 多人对口型 动作模仿_2044640516272295938.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `WanVideoVACEStartToEndFrame` —— 8/9 个有
-- `GetNode` —— 7/9 个有
-- `SetNode` —— 7/9 个有
-- `VHS_LoadVideo` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `DepthAnything_V2` —— 6/9 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 6/9 个有
-- `ImageResizeKJv2` —— 6/9 个有
-- `MaskPreview` —— 6/9 个有
-- `GetImageRangeFromBatch` —— 5/9 个有
-- `ImagePadKJ` —— 5/9 个有
-- `ImageResizeKJ` —— 3/9 个有
-- `MaskPreview+` —— 3/9 个有
-- `WanVideoEnhanceAVideo` —— 3/9 个有
-- `WanVideoLoraSelect` —— 3/9 个有
-- `ImageFromBatch+` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Fast Groups Muter (rgthree)` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
-- `MimicMotionGetPoses` —— 1/9 个有
+- `AudioCrop` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `LoadImage` —— 7/9 个有
+- `AudioSeparation` —— 6/9 个有
+- `PreviewAudio` —— 6/9 个有
+- `PreviewImage` —— 6/9 个有
+- `WanVideoLoraSelect` —— 5/9 个有
+- `WanVideoLoraSelectMulti` —— 4/9 个有
+- `Anything Everywhere` —— 3/9 个有
+- `SeparateMasks` —— 3/9 个有
+- `AudioPlay` —— 2/9 个有
+- `ImageConcanate` —— 2/9 个有
+- `LayerMask: MaskPreview` —— 2/9 个有
+- `VHS_LoadVideo` —— 2/9 个有
+- `WanVideoEncode` —— 2/9 个有
+- `孤海图像缩放按像素` —— 2/9 个有
+- `MaskPreview` —— 1/9 个有
 
 ## 典型参数
 

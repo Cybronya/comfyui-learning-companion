@@ -3,38 +3,28 @@ name: unknown_workflow_generic_1083
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.853333
-common_nodes: [CR Text, LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 1
+common_nodes: [RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy-IndexTTS单人语音克隆_1970719747069386754.json, 音频生成/音频生成/Easy-IndexTTS双人语音克隆_1970731598771613698.json, 音频生成/音频生成/TTS1与TTS2 声音克隆_2002005150199889922.json]
+members: [图片生成/文生图/全能图片G-image-2.5文生图高品质版API专用_2098380524124467201.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2097863739885318145.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098300617105166337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1083
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Easy-IndexTTS单人语音克隆_1970719747069386754.json、音频生成/音频生成/Easy-IndexTTS双人语音克隆_1970731598771613698.json、音频生成/音频生成/TTS1与TTS2 声音克隆_2002005150199889922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-image-2.5文生图高品质版API专用_2098380524124467201.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2097863739885318145.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098300617105166337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `SaveAudioMP3` —— 2/3 个有
-- `easy indexTTSAudioMerge` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

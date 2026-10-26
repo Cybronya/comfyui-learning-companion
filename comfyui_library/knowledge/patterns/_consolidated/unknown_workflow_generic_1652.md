@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1652
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.619
-common_nodes: [CR Text, CR Text Concatenate, Fast Groups Bypasser (rgthree), HeartMuLa_Generate, LayerUtility: TextBox, RH_LLMAPI_Pro_Node, SaveAudio, ThinkRemover_UTK, easy showAnything]
+coverage: 0.5835
+common_nodes: [LoadImage, PreviewAny, RHHiddenNodes, TextInput_, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMula最强开源歌曲生成。手动自动一键切换_2012878019400048641.json, 音频生成/音频生成/最强开源歌曲生成 HeartMula (手动_自动一键切)_2014218093291118593.json]
+members: [图片生成/文生图/首尾帧视频提示词生成+全节点注释_2057462783775694850.json, 视频生成/图生视频/图片自动生成视频提示词__提示词优化  扩写提示词_2018232190584229890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1652
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeartMula最强开源歌曲生成。手动自动一键切换_2012878019400048641.json、音频生成/音频生成/最强开源歌曲生成 HeartMula (手动_自动一键切)_2014218093291118593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/首尾帧视频提示词生成+全节点注释_2057462783775694850.json、视频生成/图生视频/图片自动生成视频提示词__提示词优化  扩写提示词_2018232190584229890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `Fast Groups Bypasser (rgthree)`
-- `HeartMuLa_Generate`
-- `LayerUtility: TextBox`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ThinkRemover_UTK`
-- `easy showAnything`
+- `LoadImage`
+- `PreviewAny`
+- `RHHiddenNodes`
+- `TextInput_`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
 
 ## 典型参数
 

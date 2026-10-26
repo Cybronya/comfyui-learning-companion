@@ -3,33 +3,44 @@ name: unknown_workflow_generic_170
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.754545
-common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
+coverage: 0.936636
+common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText, Text, easy promptConcat, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频_1979082743093039105.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json]
+members: [图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json, 图片生成/图生图/AI全自动电商详情页生成 V3直出10张图片（可指定语言）_2049340038172905473.json, 图片生成/图生图/产品美化详情电商详情页生成 V3.2（可指定语言）直出10张_2070338019034488834.json, 图片生成/图生图/电商详情页工作流_2033566260109250561.json, 图片生成/图生图/电商详情页生成 V3（可指定语言）直出10张_2008473559898791937.json, 图片生成/图生图/电商详情页生成 V3（可指定语言）直出10张_2041424383369023490.json, 图片生成/图生图/电商详情页生成 V3（可指定语言）直出10张_2114546613661298690.json, 图片生成/图生图/电商详情页生成+V3（可指定语言）直出10张_2055121691730292738.json, 图片生成/图生图/电商详情页生成_V3可指定语言直出10张_2088961392580841474.json, 图片生成/图生图/电商详情页生成_V3可指定语言直出10张_2098983742420373505.json, 图片生成/图生图/电商详情页生成_V3可指定语言直出10张_2100161541793476610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_170
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json、视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json、视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json、视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json、图片生成/图生图/AI全自动电商详情页生成 V3直出10张图片（可指定语言）_2049340038172905473.json、图片生成/图生图/产品美化详情电商详情页生成 V3.2（可指定语言）直出10张_2070338019034488834.json、图片生成/图生图/电商详情页工作流_2033566260109250561.json、图片生成/图生图/电商详情页生成 V3（可指定语言）直出10张_2008473559898791937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `PreviewAny`
-- `RH_Veo3_Text2Video`
-- `SaveVideo`
-- `ShellAgentPluginOutputText`
+- `LoadImage`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `ShowText`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text _O` —— 1/11 个有
+- `RH_Nano_Banana2_Image2Image` —— 9/11 个有
+- `EmptyImage` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `PrimitiveString` —— 1/11 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/11 个有
+- `SimplePromptBatcher` —— 1/11 个有
+- `easy saveText` —— 1/11 个有
 
 ## 典型参数
 

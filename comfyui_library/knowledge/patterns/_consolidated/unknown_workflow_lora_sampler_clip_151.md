@@ -2,88 +2,69 @@
 name: unknown_workflow_lora_sampler_clip_151
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.83575
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VHS_LoadVideo]
-problems: []
+level: strong
+coverage: 0.951
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, ColorCorrect, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Image Comparer (rgthree), ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAELoader, 取色器_孤海]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json, 图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json, 视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json, 视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json]
+members: [图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json, 图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_151
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json、图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json、视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json、视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json、图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `CR Text Replace`
+- `ColorCorrect`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `VAEDecodeTiled`
-- `VHS_LoadVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `ToggleAnyNode` —— 3/4 个有
-- `BlockifyMask` —— 2/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `EmptyImage` —— 2/4 个有
-- `EmptyLTXVLatentVideo` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `GrowMaskWithBlur` —— 2/4 个有
-- `ImageCompositeFromMaskBatch+` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `ResizeImagesByLongerEdge` —— 2/4 个有
-- `SAM3Segment` —— 2/4 个有
-- `StringConcatenate` —— 2/4 个有
-- `TextGenerate` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `MaskToImage` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `MuyeTextEditOutput`
+- `ReferenceLatent`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `取色器_孤海`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

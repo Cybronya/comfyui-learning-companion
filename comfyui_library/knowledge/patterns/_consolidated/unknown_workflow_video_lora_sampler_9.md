@@ -1,83 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_9
 type: Unknown Workflow
-frequency: 46
+frequency: 56
 level: moderate
-coverage: 0.777043
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.843643
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Minimax_H3_4图参考生视频-双时钟采样-8步极速版_2087145478369660929.json, 图片生成/图生图/Minimax图生视频V2(双时钟-8步高质量极速）_2087465694903492610.json, 图片生成/图生图/基础 MiniMaxH3单图单采工作流_2087793260977803266.json, 图片生成/文生图/INT8 Turbo 4 步加速版_2103075017385922562.json, 图片生成/文生图/Minimax H3快速版 短剧漫剧 创意视频文生视频（新加速LORA）_2111076319747465217.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2106734702446075906.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）_2106724867256176641.json, 数字人/数字人/音频驱动-Dasiwa V1-MiniMax H3数字人-加速版_2095011177205166081.json, 视频生成/图生视频/(10Eros Beta3)Minimax H3+加速+Lantent Upscaler参考生视频_2092293690407608321.json, 视频生成/图生视频/(10Eros Beta4)Minimax H3+加速+Lantent Upscaler参考生视频_2094320080652955649.json, 视频生成/图生视频/(10Eros Beta4混合)Minimax H3双采参考生视频_2094328552576610305.json, 视频生成/图生视频/(10Eros Hybird beta3高动态)MiniMax H3参考生视频V1_2093191846565601282.json, 视频生成/图生视频/(10Eros Hybird beta4)MiniMax H3参考生视频V1_2094319313758023682.json, 视频生成/图生视频/(10Eros Hybird beta4混合动态)MiniMax H3参考生视频V1_2094336180065230850.json, 视频生成/图生视频/(10eros v5版)MiniMax H3双采参考生视频_2098950255189512194.json, 视频生成/图生视频/(Remix)Rinimax H3双时钟+双采+加速+Lantent Upscaler参考生视频v2_2091937296735096833.json, 视频生成/图生视频/(Remix-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092155026201468929.json, 视频生成/图生视频/(Remix文戏版)Minimax H3+加速+Upscaler参考生视频_2093205066412027905.json, 视频生成/图生视频/(Remix文戏版)Minimax H3开源 数字人 图生视频_2094734413266509826.json, 视频生成/图生视频/(Remix文戏版)Minimax H3开源 数字人 图生视频_2094763035796787202.json, 视频生成/图生视频/(Remix文戏版)Minimax H3数字人_2094460741041606657.json, 视频生成/图生视频/(极速高清新版-文武双修均衡版)MiniMax H3双采参考生视频V3_2097927936006508545.json, 视频生成/图生视频/(极速高清版最佳动态-新版战斗V3)MiniMax H3参考生视频_2097923195235037186.json, 视频生成/图生视频/(标准版-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092167827083059201.json, 视频生成/图生视频/(标准版-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092211115441876994.json, 视频生成/图生视频/(电影感10Eros Beta3)Minimax H3+加速+Upscaler参考生视频_2092886587163103234.json, 视频生成/图生视频/(电影感10Eros Beta3)Minimax H3+加速+Upscaler参考生视频_2093705074655719426.json, 视频生成/图生视频/(电影感10Eros Beta4)Minimax H3+加速+Upscaler参考生视频_2094464753698693121.json, 视频生成/图生视频/(电影感10Eros Beta4)Minimax H3混合版参考生视频_2094425050387664898.json, 视频生成/图生视频/(电影感Dasiwa)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092887183597334529.json, 视频生成/图生视频/(电影感Dasiwa+lightx2v 1.0 768P新版)Minimax H3_2093219014523834369.json, 视频生成/图生视频/(真人变卡通专用)MiniMax H3双采参考生视频_2100226734883958785.json, 视频生成/图生视频/(语义桥-枪战-文武双修均衡版V3)MiniMax H3双采参考生视频_2100787934323625986.json, 视频生成/图生视频/MINIMAX H3 -高动态武戏-全自动-极速高清输出_2104934302449491970.json, 视频生成/图生视频/MiniMax H3 电商带货-双采全能工作流_2107862335695183874.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频_2105138065181339649.json, 视频生成/图生视频/MiniMax H3双采参考生视频支持参考音频和视频_2102401654355218433.json, 视频生成/图生视频/MiniMax H3双采参考生视频格莱美慢镜头_2103902789440196610.json, 视频生成/图生视频/Minima-H3-武戏工作流_2108453082106515458.json, 视频生成/图生视频/minimax H3 文戏工作流（急速版）_2106909033222459394.json, 视频生成/图生视频/minimaxh3高动文武双修工作流_2110566903226916866.json, 视频生成/图生视频/minimaxh3高动文武双修工作流_2111010562334355457.json, 视频生成/图生视频/【MINIMAX H3】武戏-高动态_极速高清_2107175289238409217.json, 视频生成/文生视频/9月30日目前最强武戏-高动态_极速高清_ 自动提示词+手动提示词2选1_2104942695335682050.json, 视频生成/文生视频/minimax H3 文戏工作流（急速版）_2106909033222459394.json, 视频生成/文生视频/minimaxh3高动文武双修工作流_2106006102767915010.json]
+members: [视频生成/图生视频/infintetalk合成唱歌视频_1990334829420007425.json, 视频生成/图生视频/mv  唱歌  对口型  数字人 InfiniTetalk 超自然数字人对口型_2067838359027929089.json, 视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json, 视频生成/图生视频/个人MV  唱歌  对口型  数字人 InfiniTetalk_2059562023511482369.json, 视频生成/图生视频/动漫对口型  数字人 InfiniTetalk 超自然数字人对口型_2080630602679803906.json, 视频生成/图生视频/口播  带货  对口型 数字人 InfiniTetalk 超自然数字人对口型_2061461382494769153.json, 视频生成/图生视频/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2061456753035923458.json, 视频生成/图生视频/口播带货  对口型  数字人 InfiniTetalk 超自然数字人对口型_2076965188426878978.json, 视频生成/图生视频/口播数字人   带货数字人   对口型 InfiniTetalk_2061428743545114626.json, 视频生成/图生视频/唱歌  MV  对口型   数字人 InfiniTetalk 超自然数字人对口型_2059627314367000578.json, 视频生成/图生视频/对口型  MV唱歌  口播  带货  数字人 InfiniTetalk_2062259761919389698.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2061443939252658178.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2061900190105296898.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2062077051816996865.json, 视频生成/图生视频/对口型  口播  带货 数字人 InfiniTetalk 超自然数字人对口型_2061449421505785858.json, 视频生成/图生视频/对口型  口播  带货 数字人 InfiniTetalk 超自然数字人对口型_2062974222888161282.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2047903645135540226.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2047947713005756417.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2048060838690426881.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2051608621456338946.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052447982326427649.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052799112306798594.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052802860856954882.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052806835282952194.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052808058136481793.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052816701720408065.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053488993953693698.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053505031214776322.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053632378748325889.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053865924784082946.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054911632928722945.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054940993836855298.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054946696412581889.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054962935566479362.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054967217581764610.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054971133497233410.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2058286679080914945.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059241608138280962.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059250723224899586.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059339620311195650.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059723732867969026.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2060798577915551745.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2061902418593533954.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062244524826652674.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk 超自然数字人对口型_2047552745707675650.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2044667020356100098.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045755091919048705.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045759320435986434.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045878553421549569.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2047210506183778306.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058279397274247169.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058292932507160577.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058449030316908545.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2059243415086395394.json, 视频生成/图生视频/对口型 唱歌 KTV 宠物_2058836866820034562.json, 音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 46 个 workflow 归纳得出（图片生成/图生图/Minimax_H3_4图参考生视频-双时钟采样-8步极速版_2087145478369660929.json、图片生成/图生图/Minimax图生视频V2(双时钟-8步高质量极速）_2087465694903492610.json、图片生成/图生图/基础 MiniMaxH3单图单采工作流_2087793260977803266.json、图片生成/文生图/INT8 Turbo 4 步加速版_2103075017385922562.json、图片生成/文生图/Minimax H3快速版 短剧漫剧 创意视频文生视频（新加速LORA）_2111076319747465217.json…）
+> 由 `engine/knowledge_consolidation` 从 56 个 workflow 归纳得出（视频生成/图生视频/infintetalk合成唱歌视频_1990334829420007425.json、视频生成/图生视频/mv  唱歌  对口型  数字人 InfiniTetalk 超自然数字人对口型_2067838359027929089.json、视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json、视频生成/图生视频/个人MV  唱歌  对口型  数字人 InfiniTetalk_2059562023511482369.json、视频生成/图生视频/动漫对口型  数字人 InfiniTetalk 超自然数字人对口型_2080630602679803906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：46
+- **样本数**：56
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 46 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 56 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 45/46 个有
-- `LoadImage` —— 45/46 个有
-- `MiniMaxH3AVDecodeT8` —— 45/46 个有
-- `ResolutionSelector` —— 45/46 个有
-- `ModelAttentionBackend` —— 43/46 个有
-- `SolAttnMiniMax` —— 41/46 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 38/46 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 38/46 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 38/46 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 38/46 个有
-- `LoraLoaderModelOnly` —— 18/46 个有
-- `ConcatTextOfUtils` —— 17/46 个有
-- `Float` —— 17/46 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 13/46 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 13/46 个有
-- `Fast Groups Bypasser (rgthree)` —— 11/46 个有
-- `GetNode` —— 11/46 个有
-- `SetNode` —— 11/46 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/46 个有
-- `PreviewImage` —— 9/46 个有
-- `PreviewAny` —— 8/46 个有
-- `RH_LLMAPI_Pro_Node` —— 8/46 个有
-- `easy anythingIndexSwitch` —— 7/46 个有
-- `LoadAudio` —— 6/46 个有
-- `VAEDecode` —— 6/46 个有
-- `VAEDecodeAudio` —— 6/46 个有
-- `easy cleanGpuUsed` —— 5/46 个有
-- `孤海注释` —— 5/46 个有
-- `VHS_LoadVideo` —— 4/46 个有
-- `Fast Muter (rgthree)` —— 1/46 个有
-- `ImageCrop` —— 1/46 个有
-- `ImageFromBatch` —— 1/46 个有
-- `ImpactSwitch` —— 1/46 个有
-- `Int` —— 1/46 个有
-- `MiniMaxChunkFeedForward` —— 1/46 个有
-- `MiniMaxLowVRAMAttention` —— 1/46 个有
-- `ModelPreviewOverrideKJ` —— 1/46 个有
-- `PrimitiveInt` —— 1/46 个有
-- `Text Multiline` —— 1/46 个有
-- `TrimAudioDuration` —— 1/46 个有
+- `Audio Duration (mtb)` —— 53/56 个有
+- `AudioCrop` —— 53/56 个有
+- `GetImageRangeFromBatch` —— 53/56 个有
+- `MathExpression|pysssss` —— 53/56 个有
+- `PlaySound|pysssss` —— 53/56 个有
+- `easy int` —— 50/56 个有
+- `PreviewAudio` —— 49/56 个有
+- `easy showAnything` —— 49/56 个有
+- `Float` —— 3/56 个有
+- `PrimitiveStringMultiline` —— 3/56 个有
+- `Any Switch (rgthree)` —— 2/56 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/56 个有
+- `Qwen3_VQA` —— 2/56 个有
+- `SaveAudio` —— 2/56 个有
+- `SoulXPodcastGenerate` —— 2/56 个有
+- `SoulXPodcastInputParser` —— 2/56 个有
+- `SoulXPodcastLoader` —— 2/56 个有
+- `StringConcatenate` —— 2/56 个有
 
 ## 典型参数
 

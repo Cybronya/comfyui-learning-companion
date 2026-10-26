@@ -1,84 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_clip_95
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8398
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), KSampler, LoraLoaderModelOnly, ResizeImageMaskNode, SDXLEmptyLatentSizePicker+, SaveImage, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.526167
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveVideo, SetNode, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, WanVaceToVideo]
+problems: []
 missing: []
-members: [图片生成/图生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2105592050908483585.json, 图片生成/图生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2108381886581141505.json, 图片生成/文生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2092107358351745026.json, 图片生成/文生图/krea2文生图工作流_2095508049963343873.json, 图片生成/文生图/文生图+风格参考+巨物+四视图工作流_2101553952839004162.json]
+members: [视频生成/图生视频/video_wan2_2_14B_t2v_vace_主体参考_1950134671634030593.json, 视频生成/图生视频/video_wan2_2_14B_t2v_vace_主体参考_1950440194634858497.json, 视频生成/图生视频/video_wan2_2_14B_t2v_vace_视频到视频_1950138726648299522.json, 视频生成/图生视频/video_wan2_2_14B_t2v_vace_首尾帧控制_1950138479567134721.json, 视频生成/图生视频/video_wan2_2_14B_vace_图生视频_1950130788953145346.json, 视频生成/图生视频/video_wan2_2_14B_vace_图生视频_1950436641396670465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_95
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2105592050908483585.json、图片生成/图生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2108381886581141505.json、图片生成/文生图/1-Krea2Turbo-文生图+风格参考+巨物+四视图工作流V2_2092107358351745026.json、图片生成/文生图/krea2文生图工作流_2095508049963343873.json、图片生成/文生图/文生图+风格参考+巨物+四视图工作流_2101553952839004162.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_t2v_vace_主体参考_1950134671634030593.json、视频生成/图生视频/video_wan2_2_14B_t2v_vace_主体参考_1950440194634858497.json、视频生成/图生视频/video_wan2_2_14B_t2v_vace_视频到视频_1950138726648299522.json、视频生成/图生视频/video_wan2_2_14B_t2v_vace_首尾帧控制_1950138479567134721.json、视频生成/图生视频/video_wan2_2_14B_vace_图生视频_1950130788953145346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `KSampler`
+- `CreateVideo`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResizeImageMaskNode`
-- `SDXLEmptyLatentSizePicker+`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveVideo`
+- `SetNode`
+- `TrimVideoLatent`
+- `UnetLoaderGGUF`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 4/5 个有
-- `Fast Bypasser (rgthree)` —— 4/5 个有
-- `MuyeTextEditOutput` —— 4/5 个有
-- `PreviewAny` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `easy stylesSelector` —— 4/5 个有
-- `llama_cpp_instruct_adv` —— 4/5 个有
-- `llama_cpp_model_loader` —— 4/5 个有
-- `llama_cpp_parameters` —— 4/5 个有
+- `Label (rgthree)` —— 4/6 个有
+- `AILab_ColorInput` —— 3/6 个有
+- `RMBG` —— 2/6 个有
+- `DepthAnythingPreprocessor` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `WanVideoVACEStartToEndFrame` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024x1024 (1.0) | - | 5 | 100% |
-| 高度 | 1 | 1 - 1 | 5 | 100% |
-| 采样步数 | 8 | 1 - 8 | 5 | 58% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | fixed | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | lcm | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 15/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 最常用 1024x1024 (1.0)，5 个样本，一致性 100%
-- 高度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 1 - 8，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（15/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%

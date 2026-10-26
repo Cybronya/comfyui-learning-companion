@@ -3,102 +3,88 @@ name: text_to_image_video_lora_sampler_136
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8312
-common_nodes: [AnySwitch, AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Bypasser (rgthree), GetImageRangeFromBatch, GetVideoComponents, Int, JjkText, KSampler, KSamplerSelect, LoadImage, LongTextToList, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3BlockCacheT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, Multi Text Merge, PreviewAny, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SDVN Any Show, SamplerCustomAdvanced, SaveVideo, String Replace (mtb), TTP_text_mix, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, string_util_StrLen, 孤海注释]
+coverage: 0.5534
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetImageRangeFromBatch, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3语音驱动数字人 VSA加速无限时长生成_2098299600871444481.json, 视频生成/图生视频/MiniMax-H3 ref2v无限长视频｜音频生成图生视频_2090433511164567553.json, 视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频图生视频生成_2090157020346413058.json, 视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频生成图生视频_2090535641066065922.json, 视频生成/图生视频/二采放大无限长视频生成 MiniMax H3 视频生视频图生视频_2094164202637320193.json]
+members: [图片生成/图生图/人物替换工作流 角色一致性更强精准替换方案_2108985171918811138.json, 数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json, 数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json, 视频生成/图生视频/SCAIL-2双人动作模仿迁移｜双人同框动作复制视频生成_2113524373717086210.json, 视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_136
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3语音驱动数字人 VSA加速无限时长生成_2098299600871444481.json、视频生成/图生视频/MiniMax-H3 ref2v无限长视频｜音频生成图生视频_2090433511164567553.json、视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频图生视频生成_2090157020346413058.json、视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频生成图生视频_2090535641066065922.json、视频生成/图生视频/二采放大无限长视频生成 MiniMax H3 视频生视频图生视频_2094164202637320193.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人物替换工作流 角色一致性更强精准替换方案_2108985171918811138.json、数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json、数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json、视频生成/图生视频/SCAIL-2双人动作模仿迁移｜双人同框动作复制视频生成_2113524373717086210.json、视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AnySwitch`
-- `AudioConcat`
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
-- `Fast Bypasser (rgthree)`
 - `GetImageRangeFromBatch`
-- `GetVideoComponents`
-- `Int`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
-- `LongTextToList`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `Multi Text Merge`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SDVN Any Show`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `String Replace (mtb)`
-- `TTP_text_mix`
-- `Text Multiline`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `WanSCAILToVideo`
 - `solarL_SaveImagesToZip`
-- `string_util_StrLen`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 4/5 个有
-- `LoadAudio` —— 4/5 个有
-- `MiniMaxH3ImageToVideo` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `SpectrumApplyMiniMaxH3` —— 4/5 个有
-- `TrimAudioDuration` —— 4/5 个有
-- `Yuan_H3MotionContext` —— 4/5 个有
-- `LoadVideo` —— 3/5 个有
-- `MiniMaxH3ChainContext` —— 3/5 个有
-- `MiniMaxH3ChainExternalVideo` —— 3/5 个有
-- `Video Slice` —— 3/5 个有
-- `Yuan_H3MotionContextTrim` —— 3/5 个有
-- `EmptySD3LatentImage` —— 1/5 个有
-- `GetImageSize` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `Krea2EditGroundedEncode` —— 1/5 个有
-- `Krea2EditModelPatch` —— 1/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LTXVSeparateAVLatent` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/5 个有
-- `Qwen3VL_Advanced` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `easy forLoopEnd` —— 4/5 个有
+- `easy forLoopStart` —— 4/5 个有
+- `ComfyMathExpression` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `SaveImage` —— 3/5 个有
+- `SingleBooleanTrigger` —— 3/5 个有
+- `easy batchAnything` —— 3/5 个有
+- `easy imageRemBg` —— 3/5 个有
+- `BatchImagesNode` —— 2/5 个有
+- `ColorTransfer` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `WanChunkFeedForward` —— 2/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `Context (rgthree)` —— 1/5 个有
+- `Context Switch (rgthree)` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `LayerMask: RemBgUltra` —— 1/5 个有
+- `RMBG` —— 1/5 个有
+- `SDVN Fast Groups Bypasser` —— 1/5 个有
+- `SaveVideoNode` —— 1/5 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
 - `VAEEncode` —— 1/5 个有
-- `VRAM_Debug` —— 1/5 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/5 个有
+- `VHS_GetImageCount` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

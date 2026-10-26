@@ -3,43 +3,38 @@ name: unknown_workflow_sampler_87
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.824
-common_nodes: [Fast Groups Bypasser (rgthree), Image Batch, ImageResize+, Int, JjkText, LoadAudio, LoadImage, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo, SoundFlow_TrimAudio, easy getNode, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.9545
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/DreamID Omni 单人音画参考生视频 qwen3.5提示词强化 Omini_2036330038517305345.json, 视频生成/图生视频/DreamID Omni 双人音画参考生视频 qwen3.5提示词强化 Omini_2036269847654440962.json]
+members: [图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json, 音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_87
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/DreamID Omni 单人音画参考生视频 qwen3.5提示词强化 Omini_2036330038517305345.json、视频生成/图生视频/DreamID Omni 双人音画参考生视频 qwen3.5提示词强化 Omini_2036269847654440962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json、音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Batch`
-- `ImageResize+`
-- `Int`
-- `JjkText`
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSVoiceClone`
+- `FB_Qwen3TTSVoiceDesign`
 - `LoadAudio`
-- `LoadImage`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `SaveVideo`
-- `SoundFlow_TrimAudio`
-- `easy getNode`
-- `easy setNode`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `PreviewAudio`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Apply Whisper` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

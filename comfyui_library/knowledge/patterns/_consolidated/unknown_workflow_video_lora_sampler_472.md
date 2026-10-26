@@ -1,111 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_472
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.85875
-common_nodes: [ACE_AudioCrop, AdjustAudio, Any To Any, Audio Add Silence, AudioCombine, AudioEncoderEncode, AudioEncoderLoader, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, CreateVideo, DF_Get_image_size, Float, GetVideoComponents, HunyuanVideoFoley, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, Qwen3_VQA, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveVideo, StringReplace, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+frequency: 5
+level: strong
+coverage: 0.8184
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/(4步加速版)Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V3_2073466718235746306.json, 视频生成/图生视频/Bernini导演台多参音效语音克隆嘴型同步完整版V2（乱神-循环版）_2065355953679196162.json, 视频生成/图生视频/Bernini导演台多参音效语音克隆嘴型同步完整版_2065634636939751425.json, 视频生成/图生视频/Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V2_2064382860404019201.json]
+members: [视频生成/图生视频/005.LTX2.3音视融合001.LTX2.3首帧图生视频_2035345217242537985.json, 视频生成/图生视频/005.LTX2.3音视融合004.LTX2.3全自动—图生_文生视频_2035366235172507650.json, 视频生成/图生视频/AIGC-KOC视角批量_2042424344898445313.json, 视频生成/图生视频/AIGC-LTX-产品动图_2043902028618932226.json, 视频生成/图生视频/AIGC-黄金产品素材C流_2039873028493938689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_472
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/(4步加速版)Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V3_2073466718235746306.json、视频生成/图生视频/Bernini导演台多参音效语音克隆嘴型同步完整版V2（乱神-循环版）_2065355953679196162.json、视频生成/图生视频/Bernini导演台多参音效语音克隆嘴型同步完整版_2065634636939751425.json、视频生成/图生视频/Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V2_2064382860404019201.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/005.LTX2.3音视融合001.LTX2.3首帧图生视频_2035345217242537985.json、视频生成/图生视频/005.LTX2.3音视融合004.LTX2.3全自动—图生_文生视频_2035366235172507650.json、视频生成/图生视频/AIGC-KOC视角批量_2042424344898445313.json、视频生成/图生视频/AIGC-LTX-产品动图_2043902028618932226.json、视频生成/图生视频/AIGC-黄金产品素材C流_2039873028493938689.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ACE_AudioCrop`
-- `AdjustAudio`
-- `Any To Any`
-- `Audio Add Silence`
-- `AudioCombine`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `DF_Get_image_size`
-- `Float`
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `CM_FloatToInt`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
-- `PainterAV2V`
-- `PainterAudioCut`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveVideo`
-- `StringReplace`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_SelectFilename`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 3/4 个有
-- `AudioAdjustVolume` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `EmptyAudio` —— 2/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `JWInteger` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `SaveAudio` —— 2/4 个有
-- `SimpleMath+` —— 2/4 个有
-- `easy batchAnything` —— 2/4 个有
-- `easy forLoopEnd` —— 2/4 个有
-- `easy forLoopStart` —— 2/4 个有
-- `easy imagesSplitImage` —— 2/4 个有
-- `easy mergeVideosFromPaths` —— 2/4 个有
-- `easy promptLine` —— 2/4 个有
-- `easy timelineEditor` —— 2/4 个有
-- `easy timelineInfoOutput` —— 2/4 个有
-- `easy timelineSegmentCount` —— 2/4 个有
-- `easy timelineSegmentOutput` —— 2/4 个有
-- `Any To String (mtb)` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `JWFloatToString` —— 1/4 个有
-- `MaxNode` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `StringConcatenate` —— 1/4 个有
-- `VHS_GetImageCount` —— 1/4 个有
-- `VRAM_Debug` —— 1/4 个有
+- `INTConstant` —— 4/5 个有
+- `LTXVLatentUpsampler` —— 4/5 个有
+- `LatentUpscaleModelLoader` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `Text` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `JjkText` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 2/5 个有
+- `RH_RhartVideoGImageToVideo` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `SaveVideo` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `TextCombinerTwo` —— 2/5 个有
+- `DapaoImageAspectRatioResizeNode` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Qwen3VL_Chat` —— 1/5 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/5 个有
+- `RH_RhartVideoV31FastImageToVideo` —— 1/5 个有
+- `Seed (rgthree)` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 10 | 4 | 36% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | dpmpp_sde | - | 4 | 75% |
-| 重绘幅度 | normal | - | 4 | 75% |
+| 宽度 | 97 | 97 - 97 | 5 | 100% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
 
 ## 常见问题
 
@@ -113,8 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 10，4 个样本，取值分散，一致性仅 36%
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_sde，4 个样本，一致性 75%
-- 重绘幅度 最常用 normal，4 个样本，一致性 75%
+- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

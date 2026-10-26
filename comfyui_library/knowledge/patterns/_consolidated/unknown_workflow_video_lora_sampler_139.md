@@ -1,85 +1,107 @@
 ---
 name: unknown_workflow_video_lora_sampler_139
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.549833
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
-problems: []
+frequency: 13
+level: strong
+coverage: 0.618538
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, ImageResizeKJv2, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_1991192921735278594.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043632215732523009.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043636277030948866.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景_1974719882828845058.json, 视频生成/图生视频/V2 Wan2.3 Animate 超自然动作迁移_2008454973708832769.json, 视频生成/图生视频/V2 Wan2.5 Animate 超自然动作迁移 视频换人_2064595765720346625.json, 视频生成/图生视频/V2+Wan2.2+Animate+动作迁移_2016043271843225601.json, 视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json, 视频生成/图生视频/Wan2.5  超自然动作迁移，视频换人_2034527249550020609.json, 视频生成/图生视频/动作迁移  V2 Wan2.2 Animate_2030254367873441794.json]
+members: [图片生成/图生图/真人视频转动漫风格_1996554877067214849.json, 视频生成/图生视频/SteadDancer大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿_2011517668532162561.json, 视频生成/图生视频/SteadDancer真人视频转3D可爱风格_2064169491482894338.json, 视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json, 视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json, 视频生成/图生视频/SteadyDancer动作迁移_2073284965781032961.json, 视频生成/图生视频/动物跳舞_1997949647484256258.json, 视频生成/图生视频/图生视频 _ 专业舞蹈_ 自动姿态矫正 _ SteadyDancer_1996237432284651521.json, 视频生成/图生视频/真人视频真人转动漫风格 真人转动画视频3.0_2068694345024360450.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer=B站艾橘溪_1996110517959868418.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer，超丝滑顺畅！值得推荐_2037499475232559105.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer，超丝滑顺畅！值得推荐_2049292828706086913.json, 视频生成/图生视频/真人视频转动漫风格=SteadDancer_1996562415049383938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_139
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json、视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_1991192921735278594.json、视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043632215732523009.json、视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043636277030948866.json、视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/真人视频转动漫风格_1996554877067214849.json、视频生成/图生视频/SteadDancer大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿_2011517668532162561.json、视频生成/图生视频/SteadDancer真人视频转3D可爱风格_2064169491482894338.json、视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json、视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BlockifyMask`
+全部 13 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
 - `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GrowMask`
-- `INTConstant`
+- `GetImageRangeFromBatch`
 - `ImageResizeKJv2`
-- `LoadImage`
 - `OnnxDetectionModelLoader`
-- `PointsEditor`
 - `PoseAndFaceDetection`
-- `Sam2Segmentation`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 11/12 个有
-- `GetNode` —— 11/12 个有
-- `ImageConcanate` —— 11/12 个有
-- `SetNode` —— 11/12 个有
-- `WanVideoLoraSelectMulti` —— 11/12 个有
-- `JjkText` —— 10/12 个有
-- `MuyeLoadImage` —— 2/12 个有
-- `CR Prompt Text` —— 1/12 个有
-- `Float to Int` —— 1/12 个有
-- `PreviewAny` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `Primitive integer [Crystools]` —— 1/12 个有
-- `SimpleMath+` —— 1/12 个有
-- `VHS_LoadVideoPath` —— 1/12 个有
-- `WanVideoLoraSelect` —— 1/12 个有
-- `WanVideoTeaCache` —— 1/12 个有
+- `GetImageSizeAndCount` —— 12/13 个有
+- `GetNode` —— 12/13 个有
+- `SetNode` —— 12/13 个有
+- `JWInteger` —— 10/13 个有
+- `WanVideoTorchCompileSettings` —— 10/13 个有
+- `LayerUtility: PurgeVRAM` —— 9/13 个有
+- `PrimitiveInt` —— 9/13 个有
+- `SimpleMath+` —— 9/13 个有
+- `ttN float` —— 9/13 个有
+- `CheckpointLoaderSimple` —— 8/13 个有
+- `EmptyLatentImage` —— 8/13 个有
+- `ImageConcatMulti` —— 8/13 个有
+- `KSampler` —— 8/13 个有
+- `TextEncodeQwenImageEditPlus` —— 8/13 个有
+- `VAEDecode` —— 8/13 个有
+- `ImageFromBatch+` —— 7/13 个有
+- `JjkText` —— 7/13 个有
+- `LoraLoaderModelOnly` —— 7/13 个有
+- `SaveImage` —— 7/13 个有
+- `LoadImage` —— 6/13 个有
+- `Text` —— 4/13 个有
+- `Text Concatenate` —— 4/13 个有
+- `Text Multiline` —— 4/13 个有
+- `easy anythingIndexSwitch` —— 4/13 个有
+- `DF_Int_to_Float` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
+- `TT_img_enc` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 720 | 720 - 768 | 8 | 98% |
+| 高度 | 1280 | 768 - 1280 | 8 | 86% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 720，观测区间 720 - 768，8 个样本，取值集中（一致性 98%）
+- 高度 中位数 1280，观测区间 768 - 1280，8 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/13 个样本）：Steps较低可能导致细节不足

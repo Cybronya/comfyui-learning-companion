@@ -3,33 +3,37 @@ name: unknown_workflow_video_108
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, LoadImage, RH_RhartVideoGOfficialImageToVideo, SaveVideo, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
+coverage: 0.875
+common_nodes: [Florence2ModelLoader, Florence2Run, ImageResizeKJ, Int, LoadImage, ShowText|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频X1.5官方版_2062059083481567234.json, 视频生成/图生视频/全能视频X1.5官方版_2066345476372623360.json]
+members: [视频生成/图生视频/FramepackF1图生视频提示词反推工作流_1919225782781018113.json, 视频生成/图生视频/framepack混元图生视频提示词反推_1913104906453221377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_108
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频X1.5官方版_2062059083481567234.json、视频生成/图生视频/全能视频X1.5官方版_2066345476372623360.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramepackF1图生视频提示词反推工作流_1919225782781018113.json、视频生成/图生视频/framepack混元图生视频提示词反推_1913104906453221377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
-- `RH_RhartVideoGOfficialImageToVideo`
-- `SaveVideo`
-- `VHS_LoadVideo`
+- `ShowText|pysssss`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
+
+**可变部分**（部分 workflow 才有）：
+- `RunningHub_FramePack` —— 1/2 个有
+- `RunningHub_FramePack_F1` —— 1/2 个有
 
 ## 典型参数
 

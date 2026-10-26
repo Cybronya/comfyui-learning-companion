@@ -3,39 +3,36 @@ name: unknown_workflow_generic_421
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.696667
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, easy showAnything]
+coverage: 0.667
+common_nodes: [LoadImage, PreviewAny, PrimitiveStringMultiline, SaveText]
 problems: []
 missing: []
-members: [图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json, 图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json, 图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json, 图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json, 图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json, 图片生成/文生图/万能图像编辑 gxx-image-2 image2 图生图 全能图像编辑 海报生成_2048941435507974146.json]
+members: [comfyui-workflow-templates-json/api_anthropic_claude_fable5.json, comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json, comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json, comfyui-workflow-templates-json/api_openai_gpt6_astra.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_421
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json、图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json、图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json、图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json、图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/api_anthropic_claude_fable5.json、comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json、comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_gpt_image_2`
-- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `SaveImage`
-- `easy showAnything`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `SaveText`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/6 个有
-- `RH_RhartImageG2ImageToImage` —— 4/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/6 个有
-- `RH_RhartImageG2TextToImage` —— 2/6 个有
+- `ClaudeNode` —— 5/6 个有
+- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 4/6 个有
+- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 2/6 个有
+- `OpenAIChatNode` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,117 +1,117 @@
 ---
 name: text_to_image_video_lora_sampler_93
 type: Text To Image
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.9155
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.940889
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), H3DistanceAttentionPatcher, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3SigmaRefiner, H3TimeSmear, H3V2VInit, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MotionContextSaveLatent, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PlaySound|pysssss, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug, easy int, easy seed, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速开源版｜MiniMax H3角色设计人物类特效图生视频_2088339977326383106.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速开源｜MiniMax H3人物类特效角色设计图生视频_2088325534035042306.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速版MiniMax H3开源版图生视频_2088371949490761729.json, 视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json, 视频生成/文生视频/H3官流终极版工作流，文生视频视频生视频图生视频全覆盖方案_2105809880144769025.json, 视频生成/文生视频/MiniMax H3数字人单人版｜文生视频口播生成_2094854429622231041.json, 视频生成/文生视频/单人版数字人生成｜MiniMax H3文生视频0901版_2095072554628239362.json]
+members: [视频生成/图生视频/MiniMax H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2106876832036515842.json, 视频生成/图生视频/MiniMax_H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2109444477218807809.json, 视频生成/文生视频/MiniMax H3单采全功能，视频延长与残影修复及双重去油远景优化合一_2102830394193301506.json, 视频生成/文生视频/MiniMax H3单采全功能｜细节残影修复视频延长｜双重去油远景优化_2102617056968531970.json, 视频生成/文生视频/MiniMax H3双采全功能再上线｜残影细节修复双重去油｜远景优化一步到位_2102602330863661057.json, 视频生成/文生视频/MiniMax H3双采全功能工作流，细节残影修复与双重去油及远景优化_2102825546802618370.json, 视频生成/文生视频/MiniMax H3双采全功能｜细节残影修复加双重去油｜远景画质再进化_2102576207878512642.json, 视频生成/视频生视频/MiniMax_H3单采全功能，视频延长与残影修复及双重去油远景优化合一_2106175322394816514.json, 视频生成/视频生视频/MiniMax_H3双采全功能工作流，细节残影修复与双重去油及远景优化_2106182433518481409.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_93
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json、视频生成/图生视频/去油版数字人口播唱歌MV加速开源版｜MiniMax H3角色设计人物类特效图生视频_2088339977326383106.json、视频生成/图生视频/去油版数字人口播唱歌MV加速开源｜MiniMax H3人物类特效角色设计图生视频_2088325534035042306.json、视频生成/图生视频/去油版数字人口播唱歌MV加速版MiniMax H3开源版图生视频_2088371949490761729.json、视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2106876832036515842.json、视频生成/图生视频/MiniMax_H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2109444477218807809.json、视频生成/文生视频/MiniMax H3单采全功能，视频延长与残影修复及双重去油远景优化合一_2102830394193301506.json、视频生成/文生视频/MiniMax H3单采全功能｜细节残影修复视频延长｜双重去油远景优化_2102617056968531970.json、视频生成/文生视频/MiniMax H3双采全功能再上线｜残影细节修复双重去油｜远景优化一步到位_2102602330863661057.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
+- `CR Text`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `H3DistanceAttentionPatcher`
+- `H3ExactRecover`
+- `H3InjectSchedule`
+- `H3JerkHeatmap`
+- `H3JerkOracle`
+- `H3SigmaRefiner`
+- `H3TimeSmear`
+- `H3V2VInit`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MotionContextSaveLatent`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PlaySound|pysssss`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
+- `VHS_LoadAudioUpload`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VRAM_Debug`
+- `easy int`
+- `easy seed`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AVDecodeT8` —— 7/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
-- `CreateVideo` —— 5/8 个有
-- `KSamplerSelect` —— 5/8 个有
-- `LTXVConcatAVLatent` —— 5/8 个有
-- `LTXVSeparateAVLatent` —— 5/8 个有
-- `LoraLoaderBypassModelOnly` —— 5/8 个有
-- `ManualSigmas` —— 5/8 个有
-- `MiniMaxH3AudioConditioningT8` —— 5/8 个有
-- `MiniMaxH3DualClockSamplerT8` —— 5/8 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 5/8 个有
-- `PreviewAny` —— 5/8 个有
-- `SaveVideo` —— 5/8 个有
-- `ModelPreviewOverrideKJ` —— 4/8 个有
-- `SolAttnMiniMax` —— 4/8 个有
-- `Any To String (mtb)` —— 3/8 个有
-- `BasicScheduler` —— 3/8 个有
-- `JoinStringMulti` —— 3/8 个有
-- `MiniMaxH3PromptEnhancerT8` —— 3/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
-- `StringConcatenate` —— 3/8 个有
-- `AudioCrop` —— 2/8 个有
-- `BatchImagesNode` —— 2/8 个有
-- `MiniMaxH3BlockCacheT8` —— 2/8 个有
-- `PathchSageAttentionKJ` —— 2/8 个有
-- `Qwen3ASRLoader` —— 2/8 个有
-- `Qwen3ASRTranscribe` —— 2/8 个有
-- `RunningHub_VoxCPM_Generate` —— 2/8 个有
-- `RunningHub_VoxCPM_LoadModel` —— 2/8 个有
-- `SoundFlow_GetLength` —— 2/8 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/8 个有
-- `llama_cpp_instruct_adv` —— 2/8 个有
-- `llama_cpp_model_loader` —— 2/8 个有
-- `llama_cpp_parameters` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `MiniMaxH3HybridLoader` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `VAEDecodeAudio` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
+- `LTXVConcatAVLatent` —— 6/9 个有
+- `LTXVSeparateAVLatent` —— 6/9 个有
+- `ManualSigmas` —— 6/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 6/9 个有
+- `SaveImage` —— 6/9 个有
+- `SplitSigmas` —— 6/9 个有
+- `easy float` —— 6/9 个有
+- `孤海注释` —— 6/9 个有
+- `EmptyImage` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `AudioConcat` —— 3/9 个有
+- `MiniMaxH3MotionContext` —— 3/9 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 3/9 个有
+- `MiniMaxH3MotionContextTrim` —— 3/9 个有
+- `VHS_MergeImages` —— 3/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高发问题（11/9 个样本）：Steps较低可能导致细节不足

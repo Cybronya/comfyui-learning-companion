@@ -3,40 +3,34 @@ name: unknown_workflow_generic_248
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.965556
-common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.944444
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json, 音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json, 音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计_2056660403781984257.json, 音频生成/音频生成/VoxCPM2语音克隆_2090280073604718593.json, 音频生成/音频生成/VoxCPM2语音极限克隆V1  企财盈6.17_2067072588702113793.json, 音频生成/音频生成/vox cpm2语音克隆_2056202036819046401.json]
+members: [图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/wan2.7首尾帧图生视频万相2.7-图生视频-首尾帧生视频_2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_248
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json、音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json、音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `AudioCrop` —— 1/9 个有
-- `AudioSeparation` —— 1/9 个有
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 1/9 个有
-- `ShowAnything|Mie` —— 1/9 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
+- `CR Text` —— 3/9 个有
+- `JjkText` —— 1/9 个有
+- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,77 +1,75 @@
 ---
 name: text_to_image_sampler_clip_unet_88
 type: Text To Image
-frequency: 7
-level: strong
-coverage: 0.865143
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 8
+level: moderate
+coverage: 0.95175
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-image-edit-plus-2509-lora-文生图工作流-触发词：maozhan_1979394793413447682.json, 图片生成/图生图/Qwen-image-edit-plus-2509-lora-毛毡效果V2.0-图生图-触发词：maozhan_1995315430677995522.json, 图片生成/图生图/Qwen-image-edit-plus-2509-单图编辑_1991506158217338882.json, 图片生成/图生图/Qwen-image-edit-plus-2509-更改色调_1973677046226358273.json, 图片生成/图生图/Qwen-image-edit-plus-2509_1971563492245499905.json, 图片生成/图生图/qwen_image_多图合一-图片编辑_1970819754611118082.json, 图片生成/文生图/Qwen-image-edit-2059图像编辑_1973209775687208961.json]
+members: [图片生成/文生图/Z-IMAGE-TURBO：文生图 （api 专用）_2034271324402622466.json, 图片生成/文生图/Z-Image Re-Turbo_2073289018476941314.json, 图片生成/文生图/Z-Image Turbo VS De-Turbo VS Re-Turbo对比_2073390583678332930.json, 图片生成/文生图/Z-Image-Base文生图批量生图_2018255513896624130.json, 图片生成/文生图/Z-Image-Base高质量多细节文生图_2015636535781101570.json, 图片生成/文生图/Z-image-Base文生图（turbo对比)_2018000039255216130.json, 图片生成/文生图/Z-image-distall-patch文生图_2002052529569579010.json, 图片生成/文生图/Z-image-distall-patch（文生图）写实性lora_2004006107569897473.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_88
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-image-edit-plus-2509-lora-文生图工作流-触发词：maozhan_1979394793413447682.json、图片生成/图生图/Qwen-image-edit-plus-2509-lora-毛毡效果V2.0-图生图-触发词：maozhan_1995315430677995522.json、图片生成/图生图/Qwen-image-edit-plus-2509-单图编辑_1991506158217338882.json、图片生成/图生图/Qwen-image-edit-plus-2509-更改色调_1973677046226358273.json、图片生成/图生图/Qwen-image-edit-plus-2509_1971563492245499905.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Z-IMAGE-TURBO：文生图 （api 专用）_2034271324402622466.json、图片生成/文生图/Z-Image Re-Turbo_2073289018476941314.json、图片生成/文生图/Z-Image Turbo VS De-Turbo VS Re-Turbo对比_2073390583678332930.json、图片生成/文生图/Z-Image-Base文生图批量生图_2018255513896624130.json、图片生成/文生图/Z-Image-Base高质量多细节文生图_2015636535781101570.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 5/7 个有
-- `AIO_Preprocessor` —— 3/7 个有
-- `ImageStitch` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `Int` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
+- `ConditioningZeroOut` —— 6/8 个有
+- `LayerUtility: PurgeVRAM` —— 4/8 个有
+- `LoraLoaderModelOnly` —— 4/8 个有
+- `easy promptLine` —— 4/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `ModelSamplingAuraFlow` —— 3/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LayerUtility: ImageReel` —— 1/8 个有
+- `LayerUtility: ImageReelComposit` —— 1/8 个有
+- `SeedGenerator` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 20 | 20 - 20 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1.5 | 1.5 - 1.5 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1864 | 768 - 1920 | 7 | 69% |
-| 高度 | 1280 | 1024 - 1920 | 7 | 74% |
+| 采样步数 | 10 | 8 - 30 | 8 | 41% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 8 | 45% |
+| 采样算法 | euler | - | 8 | 62% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 1144 | 1024 - 1920 | 8 | 73% |
+| 高度 | 1472 | 1024 - 1920 | 8 | 79% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1.5 - 1.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1864，观测区间 768 - 1920，7 个样本
-- 高度 中位数 1280，观测区间 1024 - 1920，7 个样本
+- 采样步数 中位数 10，观测区间 8 - 30，8 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，8 个样本，取值分散，一致性仅 45%
+- 采样算法 最常用 euler，8 个样本，一致性 62%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1144，观测区间 1024 - 1920，8 个样本
+- 高度 中位数 1472，观测区间 1024 - 1920，8 个样本

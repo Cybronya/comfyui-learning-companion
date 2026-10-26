@@ -3,37 +3,41 @@ name: unknown_workflow_generic_1448
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, ImageScaleToTotalPixels, LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
+coverage: 0.717
+common_nodes: [CR Combine Prompt, Image Comparer (rgthree), LoadImage, Qwen3_VQA, RH_Nano_Banana2_Image2Image, SaveImage, ShowText|pysssss, Text, ToString]
 problems: []
 missing: []
-members: [图片生成/图生图/（自用）LongCat Edit单图像编辑（换装前置）_1997711874340925441.json, 图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json]
+members: [图片生成/图生图/产品替换工作流（+反推固定产品规格）_2038602585648668673.json, 图片生成/图生图/软包产品材质替换_2027554475094839298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1448
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/（自用）LongCat Edit单图像编辑（换装前置）_1997711874340925441.json、图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/产品替换工作流（+反推固定产品规格）_2038602585648668673.json、图片生成/图生图/软包产品材质替换_2027554475094839298.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageScaleToTotalPixels`
+- `CR Combine Prompt`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `LongCatImageEdit`
-- `LongCatImageModelLoader`
+- `Qwen3_VQA`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `ShowText|pysssss`
+- `Text`
+- `ToString`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
-- `TT_img_enc_v2` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `Qwen3VL_Chat` —— 1/2 个有
+- `SeargePromptCombiner` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
 
 ## 典型参数
 

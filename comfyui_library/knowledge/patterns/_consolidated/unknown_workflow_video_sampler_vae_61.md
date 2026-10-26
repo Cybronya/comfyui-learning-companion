@@ -3,69 +3,58 @@ name: unknown_workflow_video_sampler_vae_61
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.71825
-common_nodes: [GetNode, Int, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
+coverage: 0.88125
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, Primitive integer [Crystools], Primitive string [Crystools], SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json, 视频生成/图生视频/VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json, 视频生成/图生视频/VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json, 视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json, 视频生成/图生视频/Wan2.1_大摆锤舞蹈（胸部抖动优化版）_1948012879831269378.json, 视频生成/图生视频/多人大胸舞蹈自然胸部抖动优化版_2041108387424899074.json, 视频生成/图生视频/视频动作迁移-更适合动漫版（FusionX+Vace）_1959825451453722625.json, 视频生成/图生视频/视频动作迁移（FusionX+Vace））_1957430449545080834.json]
+members: [视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json, 视频生成/图生视频/图生视频 混元版_2041428749719179265.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版)_1903462104978853889.json, 视频生成/图生视频/屏幕伸手牵手3D互动抖音热点视频图生视频_2067422675328389122.json, 视频生成/图生视频/最新混元图生视频fixed版(KJ版)_1898335155923439618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_61
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json、视频生成/图生视频/VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json、视频生成/图生视频/VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json、视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json、视频生成/图生视频/Wan2.1_大摆锤舞蹈（胸部抖动优化版）_1948012879831269378.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json、视频生成/图生视频/图生视频 混元版_2041428749719179265.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json、视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `GetNode`
-- `Int`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoGetClosestBucketSize`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageScale`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Primitive string [Crystools]`
 - `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 7/8 个有
-- `RHHiddenNodes` —— 7/8 个有
-- `JjkText` —— 6/8 个有
-- `ColorMatch` —— 5/8 个有
-- `GetImageSizeAndCount` —— 5/8 个有
-- `WanVideoLoraSelect` —— 5/8 个有
-- `WanVideoVACEStartToEndFrame` —— 5/8 个有
-- `AIO_Preprocessor` —— 4/8 个有
-- `VHS_LoadVideo` —— 4/8 个有
-- `DepthAnything_V2` —— 3/8 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/8 个有
-- `ImageBlur` —— 3/8 个有
-- `RH_Captioner` —— 3/8 个有
-- `RH_Prompter` —— 3/8 个有
-- `VHS_VideoInfoLoaded` —— 3/8 个有
-- `WanVideoExperimentalArgs` —— 3/8 个有
-- `WanVideoSLG` —— 3/8 个有
-- `CM_IntBinaryOperation` —— 2/8 个有
-- `Florence2ModelLoader` —— 2/8 个有
-- `Florence2Run` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `JWInteger` —— 2/8 个有
-- `LayerColor: ColorAdapter` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `ZipNode` —— 1/8 个有
+- `GroupExecutor` —— 5/8 个有
+- `ImageBatch` —— 5/8 个有
+- `ImageFromBatch` —— 5/8 个有
+- `LG_ImageReceiver` —— 5/8 个有
+- `LG_ImageSender` —— 5/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `GetNode` —— 3/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `SaveImage` —— 1/8 个有
+- `TT_img_enc` —— 1/8 个有
 
 ## 典型参数
 

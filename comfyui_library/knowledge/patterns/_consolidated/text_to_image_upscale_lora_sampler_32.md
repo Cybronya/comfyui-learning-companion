@@ -2,85 +2,105 @@
 name: text_to_image_upscale_lora_sampler_32
 type: Text To Image
 frequency: 7
-level: moderate
-coverage: 0.932429
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, easy int]
+level: weak
+coverage: 0.844571
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageSize]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-双采样latent放大直出4K超清-自动扩写提示词_2075861775614038018.json, 图片生成/文生图/Krea2-双采样latent放大直出4K超清_2075937369521475586.json, 图片生成/文生图/Krea2-手动提示词+seedVr2超清8K放大_2071971991279718401.json, 图片生成/文生图/Krea2-提示词自动扩写（汉服电影）+seedVr2超清8K放大_2072005157788930050.json, 图片生成/文生图/Krea2-提示词自动扩写（通用）+seedVr2超清8K放大_2071983007401074690.json, 图片生成/文生图/Krea2-深度控制洗图+二次采样极致细节-controlnet图生图-二采直出4K_2075582967837192194.json, 图片生成/文生图/krea2-深度控制洗图-图生图-动作迁移-controlnet-画风互转_2075498402560954369.json]
+members: [图片生成/图生图/3采样无限裂变｜Krea2图生图4K高清批量产出_2089070522083663874.json, 图片生成/图生图/4K高清图生图无限裂变｜Krea2三采样画质增强批量出图_2088727564708831234.json, 图片生成/图生图/Krea2 图生图无限裂变（3采样）4K高清_2085266353233158146.json, 图片生成/图生图/Qwen-Image-2.1 写实照片转动漫｜二次元风格化_2112483717431255042.json, 图片生成/图生图/Qwen_image_2.1高清修复流程，老图一键放大到4K_2113105105196249089.json, 图片生成/文生图/Krea2 图生图无限裂变（3采样）4K高清_2074851653878112257.json, 图片生成/文生图/Qwen Image 2.1文生图图生视频高清工作流合集处理工具_2102497280900296705.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Krea2-双采样latent放大直出4K超清-自动扩写提示词_2075861775614038018.json、图片生成/文生图/Krea2-双采样latent放大直出4K超清_2075937369521475586.json、图片生成/文生图/Krea2-手动提示词+seedVr2超清8K放大_2071971991279718401.json、图片生成/文生图/Krea2-提示词自动扩写（汉服电影）+seedVr2超清8K放大_2072005157788930050.json、图片生成/文生图/Krea2-提示词自动扩写（通用）+seedVr2超清8K放大_2071983007401074690.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/3采样无限裂变｜Krea2图生图4K高清批量产出_2089070522083663874.json、图片生成/图生图/4K高清图生图无限裂变｜Krea2三采样画质增强批量出图_2088727564708831234.json、图片生成/图生图/Krea2 图生图无限裂变（3采样）4K高清_2085266353233158146.json、图片生成/图生图/Qwen-Image-2.1 写实照片转动漫｜二次元风格化_2112483717431255042.json、图片生成/图生图/Qwen_image_2.1高清修复流程，老图一键放大到4K_2113105105196249089.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy int`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `ConditioningKrea2Rebalance` —— 3/7 个有
-- `DisTorchPurgeVRAMV2` —— 3/7 个有
-- `LatentUpscaleBy` —— 3/7 个有
-- `RHLLMChatNode` —— 3/7 个有
-- `TTResolutionSelector` —— 3/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `DepthAnythingV2Preprocessor` —— 2/7 个有
-- `Krea2ControlApply` —— 2/7 个有
-- `Krea2ControlImageEncode` —— 2/7 个有
-- `Krea2ControlLoRALoader` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `LoadImage` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `Qwen3_VQA` —— 2/7 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `LayerUtility: PurgeVRAM` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `JjkText` —— 5/7 个有
+- `solarL_SaveImagesToZip` —— 5/7 个有
+- `ConditioningZeroOut` —— 4/7 个有
+- `ConstrainImage|pysssss` —— 4/7 个有
+- `Get Image Size` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `PurgeVRAM_UTK` —— 4/7 个有
+- `RMBG` —— 4/7 个有
+- `RTXVideoSuperResolution` —— 4/7 个有
+- `TTResolutionSelector` —— 4/7 个有
+- `TextEncodeQwenImageEditPlus` —— 4/7 个有
+- `VAEEncode` —— 4/7 个有
+- `孤海注释` —— 4/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `GetNode` —— 3/7 个有
+- `ResolutionSelector` —— 3/7 个有
+- `SetNode` —— 3/7 个有
+- `TextEncodeQwenImage21` —— 3/7 个有
+- `QwenImage21Cache` —— 2/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageConcanate` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `Latent Switch (JPS)` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 7 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 0.4 - 1 | 7 | 77% |
-| 宽度 | 1024 | 512 - 1080 | 7 | 67% |
-| 高度 | 1536 | 512 - 1920 | 7 | 49% |
+| 宽度 | 80 | 80 - 512 | 7 | 4% |
+| 高度 | 80 | 80 - 512 | 7 | 4% |
+| 采样步数 | 4 | 2 - 4 | 7 | 74% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 7 | 55% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 71% |
+| 重绘幅度 | 1 | 0.3 - 1 | 7 | 60% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，7 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，7 个样本
-- 宽度 中位数 1024，观测区间 512 - 1080，7 个样本
-- 高度 中位数 1536，观测区间 512 - 1920，7 个样本，取值分散，一致性仅 49%
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 512，7 个样本，取值分散，一致性仅 4%
+- 高度 中位数 80，观测区间 80 - 512，7 个样本，取值分散，一致性仅 4%
+- 采样步数 中位数 4，观测区间 2 - 4，7 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，7 个样本
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 71%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，7 个样本
+- 高发问题（18/7 个样本）：Steps较低可能导致细节不足

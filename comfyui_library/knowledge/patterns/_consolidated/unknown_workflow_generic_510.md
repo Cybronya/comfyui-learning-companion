@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_510
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.935
-common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, RunningHub_Step1XEdit, SaveImage]
+coverage: 0.8155
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json, 图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json, 图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json]
+members: [视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083133964038008833.json, 视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083411318568210433.json, 视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json, 视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json, 视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json, 视频生成/文生视频/Seedance 2.5 多模态全能视频生成_2088191547308339201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_510
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json、图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json、图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json、图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json、图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083133964038008833.json、视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083411318568210433.json、视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json、视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json、视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageConcanate`
-- `JWInteger`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub_Step1XEdit`
-- `SaveImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 2/5 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 1/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,55 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_131
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7512
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader, easy ifElse, easy seed]
+coverage: 0.795167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax H3 双人对话_2094800053436243969.json, 音频生成/音频生成/MiniMax H3 TTS _ 文生音频 _ 音频克隆 _ 开源版SeedAudio_2086469576803569665.json, 音频生成/音频生成/MiniMax_H3_双人对话_2100869700593999874.json, 音频生成/音频生成/MiniMax_H3_双人对话_2101136318687436802.json, 音频生成/音频生成/minimax-H3-纯文生语音_2099494195999371266.json]
+members: [视频生成/图生视频/Minimax H3-SelfLift双采对比普通双采_2101283145361481729.json, 视频生成/图生视频/Minimax H3-lightx2v不同版加速lora测试_2096422700070817794.json, 视频生成/图生视频/Minimax-H3-多参图生视频+双采+Lantent upscale放大_2091376603443064833.json, 视频生成/图生视频/Minimaxh3双采浅空间放大_2092523112779837442.json, 视频生成/图生视频/minimaxh3的selflift+二采+音频参考_2105937177262772225.json, 视频生成/文生视频/minimaxh3的selflift+二采_2101192695308963842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_131
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 双人对话_2094800053436243969.json、音频生成/音频生成/MiniMax H3 TTS _ 文生音频 _ 音频克隆 _ 开源版SeedAudio_2086469576803569665.json、音频生成/音频生成/MiniMax_H3_双人对话_2100869700593999874.json、音频生成/音频生成/MiniMax_H3_双人对话_2101136318687436802.json、音频生成/音频生成/minimax-H3-纯文生语音_2099494195999371266.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax H3-SelfLift双采对比普通双采_2101283145361481729.json、视频生成/图生视频/Minimax H3-lightx2v不同版加速lora测试_2096422700070817794.json、视频生成/图生视频/Minimax-H3-多参图生视频+双采+Lantent upscale放大_2091376603443064833.json、视频生成/图生视频/Minimaxh3双采浅空间放大_2092523112779837442.json、视频生成/图生视频/minimaxh3的selflift+二采+音频参考_2105937177262772225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveAudioAdvanced`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `easy ifElse`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `MiniMaxH3AudioConditioningT8` —— 4/5 个有
-- `easy isNone` —— 4/5 个有
-- `StringReplace` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 5/6 个有
+- `LTXVSeparateAVLatent` —— 5/6 个有
+- `MinimaxH3LatentUpscaler3D` —— 5/6 个有
+- `ModelPreviewOverrideKJ` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `H3SigmaRefiner` —— 4/6 个有
+- `MiniMaxChunkFeedForward` —— 4/6 个有
+- `MiniMaxLowVRAMAttention` —— 4/6 个有
+- `SaveVideo` —— 4/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `GetNode` —— 3/6 个有
+- `SetNode` —— 3/6 个有
+- `SplitSigmas` —— 3/6 个有
+- `AddLabel` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `MiniMaxH3SigmaShift` —— 2/6 个有
+- `PlaySound|pysssss` —— 2/6 个有
+- `SelfLiftAvatarH3Sampler` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `MiniMaxH3BlockCacheT8` —— 1/6 个有
+- `SelfLiftH3Sampler` —— 1/6 个有
+- `SolAttnMiniMax` —— 1/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 

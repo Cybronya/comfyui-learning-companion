@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_167
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.846
-common_nodes: [ApplyPuLIDFlux2, BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, ImageScale, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PuLIDEVACLIPLoader, PuLIDInsightFaceLoader, PuLIDModelLoader, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.66225
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CreateVideo, ImageBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Pulid脸部参考文生图V3_2038131436229763073.json, 图片生成/图生图/flux2klein 文生图身份一致_2078463797093822466.json, 图片生成/文生图/Flux2 Pulid脸部参考文生图V3_2036724647751852034.json]
+members: [数字人/数字人/infinitalk-数字人唱歌对口型-无限时长_2060296846307844097.json, 视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json, 视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json, 视频生成/图生视频/官方版InfineTalk长视频生成(无劣化)_2019387715191578626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_167
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2 Pulid脸部参考文生图V3_2038131436229763073.json、图片生成/图生图/flux2klein 文生图身份一致_2078463797093822466.json、图片生成/文生图/Flux2 Pulid脸部参考文生图V3_2036724647751852034.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/infinitalk-数字人唱歌对口型-无限时长_2060296846307844097.json、视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json、视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json、视频生成/图生视频/官方版InfineTalk长视频生成(无劣化)_2019387715191578626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ApplyPuLIDFlux2`
-- `BasicGuider`
+全部 4 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxGuidance`
-- `ImageScale`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PuLIDEVACLIPLoader`
-- `PuLIDInsightFaceLoader`
-- `PuLIDModelLoader`
+- `ModelPatchLoader`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
+- `SaveVideo`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 2/3 个有
-- `Float` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `FaceAnalysisModels` —— 1/3 个有
-- `FaceBoundingBox` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `CLIPVisionEncode` —— 2/4 个有
+- `CLIPVisionLoader` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `ModelPatchTorchSettings` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `FL_Audio_Crop` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `ImageScaleToMaxDimension` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
+- `WujiAudioLoader` —— 1/4 个有
+- `忽略多组孤海` —— 1/4 个有
 
 ## 典型参数
 

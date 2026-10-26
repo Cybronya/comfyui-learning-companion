@@ -1,75 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_576
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.904333
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, ImageFromBatch, Int, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
+frequency: 4
+level: strong
+coverage: 0.485
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, FL_RIFE, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPassThrough, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PlaySound|pysssss, PreviewAny, PreviewAudio, PreviewImage, SetNode, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, WujiAudioLoader, easy cleanGpuUsed, easy getNode, easy int, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model]
 problems: []
 missing: []
-members: [图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json, 视频生成/图生视频/wan2.2-极速图生视频-超长视频-精准控制动作_1950632434528374786.json, 视频生成/图生视频/wan2.2-超长视频-一镜到底（VQA+WAN2.2）_1989316745833967618.json]
+members: [视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102709527157231617.json, 视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102729176808775681.json, 视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频_2103038735767138305.json, 视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频「9.19」_2050600975479648258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_576
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json、视频生成/图生视频/wan2.2-极速图生视频-超长视频-精准控制动作_1950632434528374786.json、视频生成/图生视频/wan2.2-超长视频-一镜到底（VQA+WAN2.2）_1989316745833967618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102709527157231617.json、视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102729176808775681.json、视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频_2103038735767138305.json、视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频「9.19」_2050600975479648258.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetImageSizeAndCount`
-- `ImageFromBatch`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM V2`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `FL_RIFE`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
+- `ModelPassThrough`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `PainterI2V`
 - `PathchSageAttentionKJ`
+- `PlaySound|pysssss`
+- `PreviewAny`
+- `PreviewAudio`
 - `PreviewImage`
-- `Text Load Line From File`
-- `Text Multiline`
+- `SetNode`
+- `SomethingToString`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `WanMoeKSampler`
+- `WujiAudioLoader`
+- `easy cleanGpuUsed`
+- `easy getNode`
+- `easy int`
+- `easy setNode`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageSmartSharpen+` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `CLIPVisionEncode` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CR Model Input Switch` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `ConditionalTextOutput` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Qwen3_VQA_Plus` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy convertAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_unload_model`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 2.5 | 3 | 53% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | 1 | 1 - 1 | 4 | 100% |
+| 重绘幅度 | res_multistep | - | 4 | 100% |
 
 ## 常见问题
 
@@ -77,8 +79,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 res_multistep，4 个样本，一致性 100%

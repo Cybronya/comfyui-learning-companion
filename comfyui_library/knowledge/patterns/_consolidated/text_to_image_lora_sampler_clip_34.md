@@ -3,64 +3,89 @@ name: text_to_image_lora_sampler_clip_34
 type: Text To Image
 frequency: 21
 level: strong
-coverage: 0.883667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.811333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/G image2图像编辑单图模式-全能图片图生图工作流_2087371568707096578.json, 图片生成/图生图/G-2.5全能图片图生图 高品质图像编辑版本_2098287173207420930.json, 图片生成/图生图/G-2.5全能图片图生图极速版 快速高效图像处理_2098291440265809921.json, 图片生成/图生图/G-image-2.5图生图极速API｜批量重绘快人一步_2098743047059230722.json, 图片生成/图生图/G-image-2.5图生图高品质API｜重绘质感不掉线_2098739267697733633.json, 图片生成/图生图/G-image2.0低价渠道一号｜图生图省钱跑量必收藏_2103736051213885441.json, 图片生成/图生图/G-image2.0低价渠道二号｜图生图批量出图成本打下来_2103740749375426562.json, 图片生成/图生图/G-image2低价版图生图｜低成本高质量出图方案_2098715664189054978.json, 图片生成/图生图/G2图像编辑低价官方版-图生图工作流_2087389684388425730.json, 图片生成/图生图/G2图生图处理生成工具包集_2100669057442869249.json, 图片生成/图生图/H3人物三视图和场景图生成优化版V3工具-参考双图_2101865637562904577.json, 图片生成/图生图/MiniMax H3人物三视图可生成场景图生图处理工具_2102137579343794177.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成 超清优化版_2105125698879975425.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成超清优化版 角色设定批量产出_2109367390558580737.json, 图片生成/图生图/人物三视图场景图｜Minimax H3超清优化版图生图_2092918394403250177.json, 图片生成/图生图/全能图片G Image2.5图生图 高质量改图方案_2110368621951279106.json, 图片生成/图生图/单图模式图像编辑image2ENG全能图片G_2087115444502220802.json, 图片生成/图生图/商用版人物介绍产品四宫格 全能图片2图生图排版_2094236619254616065.json, 图片生成/图生图/商用版全能图片2｜人物介绍产品四宫格图生图生成_2094355396973649921.json, 图片生成/图生图/超清优化人物三视图场景图｜Minimax H3图生图生成_2092718678612729857.json, 图片生成/文生图/H3人物三视图和场景图生成优化版V3工具_2100664259473657857.json]
+members: [视频生成/图生视频/MiniMax H3多模态参考数字人对口型图生视频处理工具_2101006638630129665.json, 视频生成/图生视频/MiniMax H3开源加速版，音频驱动图片跳舞人物特效_2110843023394435074.json, 视频生成/图生视频/MiniMax H3开源加速版｜音频驱动图片跳舞人物特效出片_2110731793975570434.json, 视频生成/图生视频/MiniMax H3开源图片跳舞加速｜音频驱动角色设计图生视频_2110734968224837633.json, 视频生成/图生视频/MiniMax H3开源音频驱动图片跳舞｜加速版人物特效_2094874446220840962.json, 视频生成/图生视频/MiniMax H3开源音频驱动图片跳舞｜加速版角色表演_2094881447520858113.json, 视频生成/图生视频/MiniMax H3视频换背景编辑支持参考图视频处理工具_2101414264681615362.json, 视频生成/图生视频/MiniMax h3开源加速版 海螺多参文生视频图生视频音频参考_2085303974785273857.json, 视频生成/图生视频/MiniMax-H3视频编辑神器｜一键视频换背景人物类特效_2107652623632519170.json, 视频生成/图生视频/MiniMaxH3视频换背景编辑，视频生视频人物特效处理_2113101437289984001.json, 视频生成/图生视频/MiniMaxH3视频换背景编辑｜人物特效+运镜图生视频处理_2108372748677500929.json, 视频生成/图生视频/MiniMaxH3视频换背景，人物类特效视频生视频编辑器_2111274575668531202.json, 视频生成/图生视频/MiniMaxH3视频换背景｜视频编辑动作迁移生成_2095972447886598146.json, 视频生成/图生视频/MiniMaxH3视频背景替换编辑，其它视频处理全能手_2111278750330605570.json, 视频生成/图生视频/MiniMax_H3动作迁移图生视频_自定义背景人物全能参考_2101088561767473154.json, 视频生成/图生视频/MiniMax_H3视频换背景视频编辑工作流，人物类特效视频生视频处理工具_2109456422231699458.json, 视频生成/图生视频/MiniMax_H3视频换背景视频编辑工作流，人物类特效视频生视频处理方案_2109457359675412482.json, 视频生成/图生视频/图片跳舞｜MiniMax H3开源加速版，音频驱动角色表演_2099882356789301249.json, 视频生成/图生视频/心然寻源MiniMax H3多模态参考数字人对口型｜图生视频_2100764134798352386.json, 视频生成/图生视频/改版1｜数字人视频生成利器，老牌工作流焕新升级再战_2107327256866676738.json, 视频生成/图生视频/改版1｜数字人视频生成利器，老牌工作流焕新升级再战_2107440188136972289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_34
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/G image2图像编辑单图模式-全能图片图生图工作流_2087371568707096578.json、图片生成/图生图/G-2.5全能图片图生图 高品质图像编辑版本_2098287173207420930.json、图片生成/图生图/G-2.5全能图片图生图极速版 快速高效图像处理_2098291440265809921.json、图片生成/图生图/G-image-2.5图生图极速API｜批量重绘快人一步_2098743047059230722.json、图片生成/图生图/G-image-2.5图生图高品质API｜重绘质感不掉线_2098739267697733633.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3多模态参考数字人对口型图生视频处理工具_2101006638630129665.json、视频生成/图生视频/MiniMax H3开源加速版，音频驱动图片跳舞人物特效_2110843023394435074.json、视频生成/图生视频/MiniMax H3开源加速版｜音频驱动图片跳舞人物特效出片_2110731793975570434.json、视频生成/图生视频/MiniMax H3开源图片跳舞加速｜音频驱动角色设计图生视频_2110734968224837633.json、视频生成/图生视频/MiniMax H3开源音频驱动图片跳舞｜加速版人物特效_2094874446220840962.json…）
 
 - **类型**：Text To Image
 - **样本数**：21
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 21 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `GetNode`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 13/21 个有
-- `CR Prompt Text` —— 11/21 个有
-- `CR Text Concatenate` —— 9/21 个有
-- `KOOK_SaveJPGImage` —— 9/21 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/21 个有
-- `Text` —— 3/21 个有
-- `Label (rgthree)` —— 2/21 个有
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 2/21 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 2/21 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 2/21 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/21 个有
+- `PrimitiveFloat` —— 19/21 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 18/21 个有
+- `PrimitiveStringMultiline` —— 18/21 个有
+- `PathchSageAttentionKJ` —— 16/21 个有
+- `LayerUtility: PurgeVRAM V2` —— 15/21 个有
+- `VRAM_Debug` —— 15/21 个有
+- `孤海注释` —— 14/21 个有
+- `LoadImage` —— 13/21 个有
+- `LoadAudio` —— 12/21 个有
+- `VHS_LoadVideo` —— 11/21 个有
+- `VHS_VideoCombine` —— 11/21 个有
+- `CreateVideo` —— 10/21 个有
+- `SaveVideo` —— 10/21 个有
+- `ImageConcanate` —— 9/21 个有
+- `PreviewImage` —— 9/21 个有
+- `EmptyImage` —— 8/21 个有
+- `SaveImage` —— 8/21 个有
+- `PainterVRAM` —— 6/21 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 6/21 个有
+- `CR Prompt Text` —— 3/21 个有
+- `Float` —— 2/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/21 个有
+- `MiniMaxH3SLAPrecisionV2T8Advanced` —— 2/21 个有
+- `MiniMaxH3SigmaShift` —— 2/21 个有
+- `PreviewAudio` —— 2/21 个有
+- `SigmasGraph` —— 2/21 个有
+- `ZNGB_AudioCrop` —— 2/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 21 | 100% |
-| 高度 | 80 | 80 - 80 | 21 | 100% |
 | 采样步数 | 4 | 4 - 4 | 21 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 21 | 100% |
 | 采样算法 | er_sde | - | 21 | 100% |
 | 调度器 | beta | - | 21 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
+| 宽度 | 80 | 80 - 80 | 21 | 100% |
+| 高度 | 80 | 80 - 80 | 21 | 100% |
 
 ## 常见问题
 
@@ -70,11 +95,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，21 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，21 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，21 个样本，一致性 100%
 - 调度器 最常用 beta，21 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
 - 高发问题（21/21 个样本）：Steps较低可能导致细节不足

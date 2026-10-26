@@ -1,66 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_428
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.967
-common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoUniAnimateDWPoseDetector, WanVideoUniAnimatePoseInput, WanVideoVAELoader]
+frequency: 6
+level: strong
+coverage: 0.500333
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/WanVideoUniAnimate动作迁移_1957361531111534593.json, 视频生成/图生视频/unianimate-dit(wan)动物拟人化跳舞_1917049756479328258.json, 视频生成/图生视频/图生视频-unianimate动画_2038418404205400065.json, 视频生成/图生视频/图生视频-unianimate动画_2046127380867059713.json, 视频生成/图生视频/视频转绘工作流（UniAnimate-DiT）_1913589244055515137.json]
+members: [视频生成/图生视频/单图出高动态音画视频加对口型_2031370411778248706.json, 视频生成/图生视频/短剧对白生成 图片转视频音频同步支持单图首尾帧_2020844422413422593.json, 视频生成/图生视频/首尾帧出高动态音画视频加对口型_2031577434885197826.json, 视频生成/图生视频/高动态对口型图生视频_2029600384762781697.json, 视频生成/图生视频/高动态音画视频口型一条龙-支持单图、首尾帧_2017232753040822273.json, 视频生成/文生视频/高动态音画同步图生视频_支持单图、首尾帧_2046419746307973122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_428
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/WanVideoUniAnimate动作迁移_1957361531111534593.json、视频生成/图生视频/unianimate-dit(wan)动物拟人化跳舞_1917049756479328258.json、视频生成/图生视频/图生视频-unianimate动画_2038418404205400065.json、视频生成/图生视频/图生视频-unianimate动画_2046127380867059713.json、视频生成/图生视频/视频转绘工作流（UniAnimate-DiT）_1913589244055515137.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/单图出高动态音画视频加对口型_2031370411778248706.json、视频生成/图生视频/短剧对白生成 图片转视频音频同步支持单图首尾帧_2020844422413422593.json、视频生成/图生视频/首尾帧出高动态音画视频加对口型_2031577434885197826.json、视频生成/图生视频/高动态对口型图生视频_2029600384762781697.json、视频生成/图生视频/高动态音画视频口型一条龙-支持单图、首尾帧_2017232753040822273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJ`
+全部 6 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `ColorMatch`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `ModelPatchTorchSettings`
+- `PainterAI2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoUniAnimateDWPoseDetector`
-- `WanVideoUniAnimatePoseInput`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Bjornulf_FreeVRAM` —— 1/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `NunchakuFluxDiTLoader` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
-- `VHS_VideoInfoLoaded` —— 1/5 个有
-- `WanVideoApplyNAG` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `WanVideoLoraSelectMulti` —— 1/5 个有
-- `WanVideoTextEncodeSingle` —— 1/5 个有
+- `JoinStrings` —— 5/6 个有
+- `PreviewAudio` —— 5/6 个有
+- `Qwen3_VQA` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `SomethingToString` —— 5/6 个有
+- `TextInput_` —— 5/6 个有
+- `AudioSeparation` —— 4/6 个有
+- `SaveAudio` —— 4/6 个有
+- `TDQwen3TTSDefineSpeaker` —— 4/6 个有
+- `TDQwen3TTSModelLoader` —— 4/6 个有
+- `TDQwen3TTSMultiDialog` —— 4/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `RIFE VFI` —— 2/6 个有
+- `Float` —— 1/6 个有
+- `GetImagesFromBatchIndexed` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 6 | 83% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 83% |
 
 ## 常见问题
 
@@ -68,4 +84,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，6 个样本，取值集中（一致性 83%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 83%

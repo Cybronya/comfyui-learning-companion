@@ -3,38 +3,34 @@ name: unknown_workflow_generic_383
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.966286
-common_nodes: [CR Prompt Text, RunningHub Deepcleaner, SaveAudio, WooshLoadFlow, WooshSample, WooshTextEncode]
+coverage: 0.880857
+common_nodes: [CR Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json, 音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json, 音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json, 音频生成/音频生成/Woosh音效生成_2044055803182714882.json, 音频生成/音频生成/文生音频音效（自用）_2067232351951867905.json]
+members: [图片生成/图生图/全能图片V1谷歌大香蕉丨多图编辑工作流_1980103881453637634.json, 图片生成/图生图/甲方说_要这种感觉_？如果你也被折磨过，这个参考图生图就是你的救命稻草！！可输入参考风格配色排版等等_2066505829871874050.json, 图片生成/图生图/谷歌-全能图片V1双图编辑_1974122267359711233.json, 图片生成/图生图/谷歌-全能图片V1图像编辑_1974116602469814273.json, 图片生成/文生图/image2 参考图片风格迁移+全节点注释_2056268076668252162.json, 图片生成/文生图/全能图片每日5次免费，促销价只要5分_次+全节点注释_2081548760219480066.json, 数字人/数字人/全能图片V1 图片编辑-多图模式_1979105520432877570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_383
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json、音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json、音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json、音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json、音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图片V1谷歌大香蕉丨多图编辑工作流_1980103881453637634.json、图片生成/图生图/甲方说_要这种感觉_？如果你也被折磨过，这个参考图生图就是你的救命稻草！！可输入参考风格配色排版等等_2066505829871874050.json、图片生成/图生图/谷歌-全能图片V1双图编辑_1974122267359711233.json、图片生成/图生图/谷歌-全能图片V1图像编辑_1974116602469814273.json、图片生成/文生图/image2 参考图片风格迁移+全节点注释_2056268076668252162.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `RunningHub Deepcleaner`
-- `SaveAudio`
-- `WooshLoadFlow`
-- `WooshSample`
-- `WooshTextEncode`
+- `CR Text`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/7 个有
-- `DeepTranslatorTextNode` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `RH_Nano_Banana_Image2Image` —— 5/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `RH_RhartImageG2ImageToImage` —— 2/7 个有
 
 ## 典型参数
 

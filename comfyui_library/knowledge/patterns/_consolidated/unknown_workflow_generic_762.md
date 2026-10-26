@@ -3,34 +3,29 @@ name: unknown_workflow_generic_762
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.88325
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartVideoV31FastOfficialImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/与喔嘟嘟海边漫步_2069411071865217025.json, 视频生成/图生视频/参考人物换装_2061797146860539906.json, 视频生成/图生视频/参考人物游戏载入界面_2062919579176882178.json, 视频生成/图生视频/喔嘟嘟共舞_2069401480947396610.json]
+members: [图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2114636391509487618.json, 视频生成/图生视频/RhartVideoV31FastOfficialImageToVideo_2038486995583897602.json, 视频生成/图生视频/全能视频V3.1-fast-图生视频-官方稳定版_2028703097123512321.json, 视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_762
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/与喔嘟嘟海边漫步_2069411071865217025.json、视频生成/图生视频/参考人物换装_2061797146860539906.json、视频生成/图生视频/参考人物游戏载入界面_2062919579176882178.json、视频生成/图生视频/喔嘟嘟共舞_2069401480947396610.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2114636391509487618.json、视频生成/图生视频/RhartVideoV31FastOfficialImageToVideo_2038486995583897602.json、视频生成/图生视频/全能视频V3.1-fast-图生视频-官方稳定版_2028703097123512321.json、视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `RH_RhartVideoV31FastOfficialImageToVideo`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
-- `RH_KlingVideoO3ProImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

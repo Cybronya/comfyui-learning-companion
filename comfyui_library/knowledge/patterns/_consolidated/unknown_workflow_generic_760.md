@@ -3,37 +3,35 @@ name: unknown_workflow_generic_760
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.82825
-common_nodes: [LoadImage, LoadVideo, PreviewAny, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.7595
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json, 视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json, 视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json]
+members: [图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2103398671529373698.json, 图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106001411757666306.json, 图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106003062849630209.json, 图片生成/图生图/衣服上身_2106305057271668737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_760
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json、视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json、视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2103398671529373698.json、图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106001411757666306.json、图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106003062849630209.json、图片生成/图生图/衣服上身_2106305057271668737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `PreviewAny`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `CR Text` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
+- `PreviewAny` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `RHLLMChatNode` —— 3/4 个有
+- `ResizeLongestToNode` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,42 +3,37 @@ name: unknown_workflow_generic_371
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.747571
-common_nodes: [Apply Whisper, Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.581429
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json, 音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json, 音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2069787707148161026.json, 音频生成/音频生成/声音设计，声音克隆，Qwen3-TTS全家桶_2014550098763583489.json]
+members: [图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json, 图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json, 图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json, 图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json, 图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json, 图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_371
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json、音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json、音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json、图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json、图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json、图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json、图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Apply Whisper`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedream_4_5`
+- `Comfly_api_set`
+- `LoadImage`
+- `SaveImage`
 - `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSVoiceDesign` —— 6/7 个有
-- `Qwen3TTSCustomVoice` —— 5/7 个有
-- `TextInputBasic` —— 3/7 个有
-- `easy seed` —— 3/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `RunningHub SeedXPro Translator` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `JWImageResizeByLongerSide` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
 
 ## 典型参数
 

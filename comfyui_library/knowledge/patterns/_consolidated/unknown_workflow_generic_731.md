@@ -3,31 +3,33 @@ name: unknown_workflow_generic_731
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.571
-common_nodes: [CR Text, LayerUtility: RoundedRectangle, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 1
+common_nodes: [InspyrenetRembg, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json]
+members: [图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json, 图片生成/图生图/一键抠图_2026831606878572545.json, 图片生成/图生图/一键抠图_2070166368229609474.json, 图片生成/图生图/快速抠像_2052668485251149826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_731
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json、图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json、图片生成/图生图/一键抠图_2026831606878572545.json、图片生成/图生图/一键抠图_2070166368229609474.json、图片生成/图生图/快速抠像_2052668485251149826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: RoundedRectangle`
-- `PrimitiveInt`
-- `RH_RhartImageG2TextToImage`
+- `InspyrenetRembg`
+- `LoadImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: ImageCombineAlpha` —— 2/4 个有
+- `preview_mask` —— 1/4 个有
 
 ## 典型参数
 

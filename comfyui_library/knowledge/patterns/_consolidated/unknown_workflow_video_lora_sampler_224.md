@@ -1,61 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_224
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.901
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3Unified, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.4367
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json, 视频生成/文生视频/H3生成视频_2095427697911615489.json, 视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json, 视频生成/文生视频/MinimaxH3l全功能加速工作流（lightx2V版加速lora）_2086063010979864577.json, 视频生成/文生视频/MinimaxH3全功能加速工作流（lightx2V加速版）V3_2090441419977740290.json, 视频生成/文生视频/MinimaxH3双采样V2版本_2090098483830284290.json, 视频生成/文生视频/MinimaxH3文生视频_双采样加速版！_2089969403751391233.json, 视频生成/文生视频/minimaxH3超级加速全能工作流_2094944471640264705.json, 视频生成/文生视频/拳打LTX！脚踢WAN！MinimaxH3双采样V2版本！_2089708812528865282.json]
+members: [视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json, 视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json, 视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json, 视频生成/图生视频/Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_2064637391054397441.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_two_person_2064981162845622273.json, 视频生成/图生视频/Wan21_SCAIL2_replace_2064994418565931010.json, 视频生成/图生视频/Wan21_SCAIL2_replace_two_person_2064998971084468225.json, 视频生成/图生视频/【尺素】Scail2人物替换-低配15秒畅跑简约版_2066063514803986434.json, 视频生成/图生视频/完美动作迁移-SCAIL2_多参考图_2071761838928384001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_224
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json、视频生成/文生视频/H3生成视频_2095427697911615489.json、视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json、视频生成/文生视频/MinimaxH3l全功能加速工作流（lightx2V版加速lora）_2086063010979864577.json、视频生成/文生视频/MinimaxH3全功能加速工作流（lightx2V加速版）V3_2090441419977740290.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json、视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json、视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json、视频生成/图生视频/Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json、视频生成/图生视频/Wan21_SCAIL2_no_replace_2064637391054397441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `GetImageRangeFromBatch`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3Unified`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
-- `Label (rgthree)` —— 7/9 个有
-- `ModelPreviewOverrideKJ` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
-- `H3SigmaRefiner` —— 6/9 个有
-- `ModelAttentionBackend` —— 6/9 个有
-- `MiniMaxH3SigmaShift` —— 5/9 个有
-- `SolAttnMiniMax` —— 5/9 个有
-- `LTXVConcatAVLatent` —— 3/9 个有
-- `LTXVSeparateAVLatent` —— 3/9 个有
-- `PathchSageAttentionKJ` —— 3/9 个有
-- `SplitSigmas` —— 3/9 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/9 个有
-- `LoadImage` —— 1/9 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/9 个有
+- `BatchImagesNode` —— 9/10 个有
+- `ColorTransfer` —— 9/10 个有
+- `GetNode` —— 9/10 个有
+- `SetNode` —— 9/10 个有
+- `GetImageSize` —— 6/10 个有
+- `ImageFromBatch` —— 6/10 个有
+- `PrimitiveBoolean` —— 5/10 个有
+- `MathExpression|pysssss` —— 3/10 个有
+- `VHS_VideoInfoLoaded` —— 3/10 个有
+- `WanChunkFeedForward` —— 3/10 个有
+- `easy forLoopEnd` —— 2/10 个有
+- `easy forLoopStart` —— 2/10 个有
+- `easy imageRemBg` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `ImageBatchMulti` —— 1/10 个有
+- `ImpactConditionalBranch` —— 1/10 个有
+- `JWInteger` —— 1/10 个有
+- `MuyeTextEditOutput` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `easy batchAnything` —— 1/10 个有
+- `easy int` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

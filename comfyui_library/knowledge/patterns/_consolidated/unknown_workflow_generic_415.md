@@ -1,39 +1,41 @@
 ---
 name: unknown_workflow_generic_415
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.422833
-common_nodes: [CR Text Concatenate, JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage, ShowText, easy anythingIndexSwitch]
+coverage: 0.874286
+common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/jimeng多图_1990594104864247809.json, 图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json, 图片生成/图生图/广告产品 改图_1984200074525818882.json, 图片生成/图生图/漫剧场景 改图_1991480238735630337.json, 图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json, 图片生成/文生图/漫剧角色 改图_1991415445890813953.json]
+members: [音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json, 音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json, 音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json, 音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json, 音频生成/音频生成/声音克隆&声音设计_2061665723885383682.json, 音频生成/音频生成/🦖QwenTTS 语音克隆 音色设计🦖 2_2014631013019815937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_415
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/jimeng多图_1990594104864247809.json、图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json、图片生成/图生图/广告产品 改图_1984200074525818882.json、图片生成/图生图/漫剧场景 改图_1991480238735630337.json、图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json、音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json、音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json、音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json、音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：42%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text Concatenate`
-- `JjkText`
-- `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
-- `ShowText`
-- `easy anythingIndexSwitch`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `easy seed` —— 2/6 个有
-- `PrimitiveInt` —— 1/6 个有
+- `CR Text` —— 6/7 个有
+- `Qwen3TTSVoiceDesign` —— 6/7 个有
+- `HeartMuLa_Transcribe` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `WhisperTurboRun` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

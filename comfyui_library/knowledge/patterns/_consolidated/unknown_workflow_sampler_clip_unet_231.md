@@ -3,53 +3,61 @@ name: unknown_workflow_sampler_clip_unet_231
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.91
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSampler, LoadImage, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader, Wan22ImageToVideoLatent]
+coverage: 0.779667
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, JjkText, KSamplerSelect, RH_Prompter, RandomNoise, SamplerCustomAdvanced, SaveImage, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/ComfyUI官网版Wan2.2 5B图生视频_1949854984923996162.json, 视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json, 视频生成/文生视频/video_wan2_2_5B_ti2v_1954455270426603522.json, 视频生成/文生视频/wan2.2 5B_ti2v官方工作流_1950005929661087745.json, 视频生成/文生视频/万相wan2.2 5B文、图生视频官方工作流_1950178934676701186.json, 视频生成/文生视频/万相wan2.2 5B文图生视频官方工作流_1950766450359324674.json]
+members: [图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json, 图片生成/文生图/Flux文生图-1_1_1940662965035233282.json, 图片生成/文生图/Flux文生图_1819583592967110658.json, 图片生成/文生图/Flux文生图_1938488997612027905.json, 图片生成/文生图/Flux文生图_1976282578619637762.json, 图片生成/文生图/Flux文生图（JC自用）_1952547805221064706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_231
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ComfyUI官网版Wan2.2 5B图生视频_1949854984923996162.json、视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json、视频生成/文生视频/video_wan2_2_5B_ti2v_1954455270426603522.json、视频生成/文生视频/wan2.2 5B_ti2v官方工作流_1950005929661087745.json、视频生成/文生视频/万相wan2.2 5B文、图生视频官方工作流_1950178934676701186.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json、图片生成/文生图/Flux文生图-1_1_1940662965035233282.json、图片生成/文生图/Flux文生图_1819583592967110658.json、图片生成/文生图/Flux文生图_1938488997612027905.json、图片生成/文生图/Flux文生图_1976282578619637762.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `JjkText`
+- `KSamplerSelect`
+- `RH_Prompter`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `Wan22ImageToVideoLatent`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `VHS_VideoCombine` —— 1/6 个有
+- `FluxResolutionNode` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `Bjornulf_ShowStringText` —— 3/6 个有
+- `CR Text Input Switch (4 way)` —— 3/6 个有
+- `ImpactSwitch` —— 3/6 个有
+- `RH_Translator` —— 3/6 个有
+- `PreviewImage` —— 2/6 个有
+- `ArgosTranslateTextNode` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `ShowText` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 6 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 6 | 100% |
-| 采样算法 | uni_pc | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1280 | 1280 - 1280 | 6 | 100% |
 
 ## 常见问题
 
@@ -57,8 +65,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，观测区间 1280 - 1280，6 个样本，取值集中（一致性 100%）

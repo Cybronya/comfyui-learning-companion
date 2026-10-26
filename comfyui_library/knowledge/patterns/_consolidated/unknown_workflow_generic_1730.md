@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1730
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [Fast Groups Bypasser (rgthree), HeartMuLa_Generate, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, ShowText, text_mul_Split]
+coverage: 0.925
+common_nodes: [GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, StringFunction|pysssss, easy imageConcat, easy int, easy positive, easy seed]
 problems: []
 missing: []
-members: [音频生成/音频生成/开源版SUNO-HeartMuLa_2015490868731453442.json, 音频生成/音频生成/开源版SUNO-HeartMuLa：一句话生成一首歌_2014987354955583489.json]
+members: [视频生成/图生视频/生图-单图编辑-全能图片V1_1980898924502368257.json, 视频生成/图生视频/生图-双图编辑-全能图片V1_1980903173223268353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1730
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/开源版SUNO-HeartMuLa_2015490868731453442.json、音频生成/音频生成/开源版SUNO-HeartMuLa：一句话生成一首歌_2014987354955583489.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/生图-单图编辑-全能图片V1_1980898924502368257.json、视频生成/图生视频/生图-双图编辑-全能图片V1_1980903173223268353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `HeartMuLa_Generate`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ShowText`
-- `text_mul_Split`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `StringFunction|pysssss`
+- `easy imageConcat`
+- `easy int`
+- `easy positive`
+- `easy seed`
 
 ## 典型参数
 

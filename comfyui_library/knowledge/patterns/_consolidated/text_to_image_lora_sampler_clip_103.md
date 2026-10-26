@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_103
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.880385
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.905846
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/VOSR2图像高清放大工作流_图片超分辨率增强_2101214595330433025.json, 图片生成/图生图/VOSR2图像高清放大工作流_图片超分辨率增强_2101452460052279297.json, 图片生成/图生图/VOSR2文字海报放大工作流，图生图高清保留文字细节不模糊_2102896144153145345.json, 图片生成/图生图/VOSR2文字海报放大工作流，图生图高清保留文字细节不模糊_2104740265851449345.json, 图片生成/图生图/VOSR2高保真高清放大工作流不脑部处理保留原始细节，图生图高清放大工具_2107574604486238209.json, 图片生成/图生图/VOSR2高保真高清放大工作流，不脑部处理保留原始细节_2106918565352919042.json, 图片生成/图生图/VOSR2高清放大方案，图生图画质增强超分一步到位_2110869502345961474.json, 图片生成/图生图/Vosr_2图像高清化神器｜10秒冲上4K分辨率，老素材直接救活_2099546801169854466.json, 图片生成/图生图/全能图片G-2.5图生图高品质版｜老图翻新不糊边，质感直接上一档_2099482216635129857.json, 图片生成/图生图/全能图片G_image2.5sunburst图生图｜图片模型直出，质感不掉档_2099476469230690305.json, 图片生成/图生图/文字高清修复工作流｜模糊文字一键变清晰｜图生图细节增强实用款_2112070421783863298.json, 图片生成/图生图/文字高清图生图修复，模糊字迹照片一键锐化变清晰_2112337165173743618.json, 数字人/数字人/图像高清放大工作流｜Vosr2数字人图片画质增强_2097525104493293570.json]
+members: [图片生成/图生图/Moss_Image_EDIT图像编辑工作流｜图生图改图不伤原图_2114238030822338562.json, 图片生成/图生图/QWEN PANO360全景图生成工作流 360度全景画面直出_2109702845909000193.json, 图片生成/图生图/Qwe Image 2.1多维运镜构图变换｜附控制指南图生图_2110742888882724865.json, 图片生成/图生图/Qwen 2.1一键换脸换人，图生图角色替换人物身份无缝对齐_2112241514712756225.json, 图片生成/图生图/Qwen 2.1姿势迁移工作流，原图姿势参考图一键置换图生图工具_2106172512919965697.json, 图片生成/图生图/Qwen 2.1姿势迁移工作流，参考姿势图生图人体姿态迁移工具_2103979610072506370.json, 图片生成/图生图/Qwen 2.1姿势迁移工作流｜原图姿势参考图一键置换图生图_2103661816684568577.json, 图片生成/图生图/Qwen 2.1姿势迁移工作流｜原图姿势参考图一键置换图生图_2105634379556020226.json, 图片生成/图生图/Qwen Image 2.1参考人物姿势，图生图姿势参考生成工具_2103585753916862466.json, 图片生成/图生图/Qwen Image 2.1图像编辑加速版，高效图生图处理工具_2103579830016102401.json, 图片生成/文生图/Qwen 2.1文生图4步加速版｜快节奏出图不影响质量_2103063918653558786.json, 图片生成/文生图/Qwen Image 2.1 PE多宫格生图｜一张出九宫排版素材_2103032143940243457.json, 图片生成/文生图/Qwen Image 2.1 PE文生图，提示词增强高质量文本到图像生成工作流_2103222827108364290.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_103
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/VOSR2图像高清放大工作流_图片超分辨率增强_2101214595330433025.json、图片生成/图生图/VOSR2图像高清放大工作流_图片超分辨率增强_2101452460052279297.json、图片生成/图生图/VOSR2文字海报放大工作流，图生图高清保留文字细节不模糊_2102896144153145345.json、图片生成/图生图/VOSR2文字海报放大工作流，图生图高清保留文字细节不模糊_2104740265851449345.json、图片生成/图生图/VOSR2高保真高清放大工作流不脑部处理保留原始细节，图生图高清放大工具_2107574604486238209.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Moss_Image_EDIT图像编辑工作流｜图生图改图不伤原图_2114238030822338562.json、图片生成/图生图/QWEN PANO360全景图生成工作流 360度全景画面直出_2109702845909000193.json、图片生成/图生图/Qwe Image 2.1多维运镜构图变换｜附控制指南图生图_2110742888882724865.json、图片生成/图生图/Qwen 2.1一键换脸换人，图生图角色替换人物身份无缝对齐_2112241514712756225.json、图片生成/图生图/Qwen 2.1姿势迁移工作流，原图姿势参考图一键置换图生图工具_2106172512919965697.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
@@ -28,27 +28,34 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `VOSR2ModelLoader` —— 11/13 个有
-- `VOSR2Upscale` —— 11/13 个有
-- `PreviewImage` —— 9/13 个有
-- `孤海注释` —— 9/13 个有
-- `EmptyImage` —— 6/13 个有
-- `Image Comparer (rgthree)` —— 6/13 个有
-- `Int` —— 2/13 个有
-- `PrimitiveInt` —— 2/13 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 2/13 个有
-- `PDIMAGE_LongerSize` —— 1/13 个有
-- `easy saveText` —— 1/13 个有
-- `图像缩放范围孤海` —— 1/13 个有
+- `TextEncodeQwenImage21` —— 12/13 个有
+- `QwenImage21Cache` —— 11/13 个有
+- `LoadImage` —— 10/13 个有
+- `ResolutionSelector` —— 9/13 个有
+- `easy cleanGpuUsed` —— 9/13 个有
+- `AIO_Preprocessor` —— 5/13 个有
+- `CR Prompt Text` —— 5/13 个有
+- `ComfySwitchNode` —— 5/13 个有
+- `GetImageSize` —— 5/13 个有
+- `QwenPERewriteT8` —— 5/13 个有
+- `easy showAnything` —— 5/13 个有
+- `CR Text` —— 1/13 个有
+- `FluxKontextImageScale` —— 1/13 个有
+- `MOSSImageOstrisEditModelPatch` —— 1/13 个有
+- `PathchSageAttentionKJ` —— 1/13 个有
+- `SeedNode` —— 1/13 个有
+- `SkipLayerGuidanceDiTSimple` —— 1/13 个有
+- `SplitImageWithAlpha` —— 1/13 个有
+- `TextEncodeMOSSImageOstrisEdit` —— 1/13 个有
 
 ## 典型参数
 
@@ -66,7 +73,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,4 +84,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
-- 高发问题（14/13 个样本）：Steps较低可能导致细节不足
+- 高发问题（16/13 个样本）：Steps较低可能导致细节不足

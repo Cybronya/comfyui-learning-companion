@@ -3,35 +3,28 @@ name: unknown_workflow_generic_1073
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.875
-common_nodes: [ACEStepGen, GenerationParameters, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
+coverage: 0.889
+common_nodes: [RH_RhartImageNProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step-gen 音乐AI标准流_1920154706222448642.json, 音频生成/音频生成/ACE-Step音乐歌曲生成增强版_1927228330880434178.json, 音频生成/音频生成/最强开源ACE-step音乐生成_1920433571150888961.json]
+members: [图片生成/文生图/NPro_TextToImage_v1.0_2033838783015165953.json, 图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json, 图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1073
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/ACE-Step-gen 音乐AI标准流_1920154706222448642.json、音频生成/音频生成/ACE-Step音乐歌曲生成增强版_1927228330880434178.json、音频生成/音频生成/最强开源ACE-step音乐生成_1920433571150888961.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/NPro_TextToImage_v1.0_2033838783015165953.json、图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json、图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ACEStepGen`
-- `GenerationParameters`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
+- `RH_RhartImageNProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

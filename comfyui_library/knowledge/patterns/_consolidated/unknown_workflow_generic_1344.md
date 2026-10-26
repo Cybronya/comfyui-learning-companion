@@ -3,33 +3,35 @@ name: unknown_workflow_generic_1344
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [MuyeTextEditOutput, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.793
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LayerUtility: TextJoin, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, ShowText|pysssss, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 Pro_1996148150660448258.json, 图片生成/文生图/竖屏分镜工作流_2019773828372631553.json]
+members: [图片生成/图生图/AA--四宫格-分镜设计--场景设计_2026958885080272897.json, 图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1344
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro_1996148150660448258.json、图片生成/文生图/竖屏分镜工作流_2019773828372631553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AA--四宫格-分镜设计--场景设计_2026958885080272897.json、图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `RH_Nano_Banana2_Image2Image`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Load Image From Url (mtb)` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `ShellAgentPluginOutputText`
+- `ShowText|pysssss`
+- `easy showAnything`
 
 ## 典型参数
 

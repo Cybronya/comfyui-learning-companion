@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_229
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.8596
+common_nodes: [LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/2029799611912687617.json, 图片生成/文生图/2029845513067040769.json, 图片生成/文生图/三图缝合（2个参考图）一个分镜图_2005203215652188161.json, 图片生成/文生图/全能图片 Pro大模型2.0_2069401083256070145.json, 图片生成/文生图/全能图片2.0 默认无图版_2041449632311549954.json, 图片生成/文生图/全能图片2.0_2051570691555774466.json, 图片生成/文生图/全能图片2.0双图 2毛版_2091809107366989826.json, 图片生成/文生图/双图拼接缝合_2001537601662271489.json, 图片生成/文生图/最新全能图片2_2027206679972024322.json]
+members: [音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json, 音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json, 音频生成/音频生成/FishAudio S2 TTS多人语音克隆【对话版】_2034897039745622017.json, 音频生成/音频生成/FishAudio S2 双人对话配音工作流（克隆与情感对话）_2083510070012366849.json, 音频生成/音频生成/FishAudio S2多人对话配音模仿音色生成器_2035736179924013057.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆-支持粤语-上海话-成都话等等）_1983796918008651777.json, 音频生成/音频生成/【3月】FishAudio S2TTS双人对话音色克隆_2033545964560060418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_229
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/2029799611912687617.json、图片生成/文生图/2029845513067040769.json、图片生成/文生图/三图缝合（2个参考图）一个分镜图_2005203215652188161.json、图片生成/文生图/全能图片 Pro大模型2.0_2069401083256070145.json、图片生成/文生图/全能图片2.0 默认无图版_2041449632311549954.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json、音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 7/9 个有
-- `ImageStitch` —— 3/9 个有
+- `FishS2MultiSpeakerTTS` —— 9/10 个有
+- `CR Prompt Text` —— 7/10 个有
+- `LoadImage` —— 2/10 个有
+- `VoxCPM_TTS` —— 1/10 个有
 
 ## 典型参数
 

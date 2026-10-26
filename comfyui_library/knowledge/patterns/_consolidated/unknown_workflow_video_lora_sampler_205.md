@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_205
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.943333
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7847
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/超清数字人对口型音乐_2098282192836317186.json, 视频生成/图生视频/Wan Video InfiniteTalk  双人对话_1988149592183234562.json, 视频生成/图生视频/infinitetalk单人图像对口型_1983851965690056706.json, 视频生成/图生视频/infinitetalk单人图像数字人_1987800864440168449.json, 视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json, 视频生成/图生视频/infinitetalk单人数字人_1961786018880012290.json, 视频生成/图生视频/infinitetalk双人对话（自动识别人物）_2035945836609277954.json, 视频生成/图生视频/infinitetalk图生视频数字人口播_2080575708149145601.json, 视频生成/图生视频/infinitetalk多段mv生成_1968146725170982914.json]
+members: [图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json, 数字人/数字人/慕斯AI_InfiniteTalk_数字人口播_图生视频_2112165352271597570.json, 视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json, 视频生成/图生视频/I2V-林小茶_2047141901102489601.json, 视频生成/图生视频/V4.1（demo2）_2051961839407386625.json, 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json, 视频生成/图生视频/手串替换_2054096337670557697.json, 视频生成/图生视频/手串生活方式短视频不露脸稳定版_2060540846868619266.json, 视频生成/图生视频/手串生活版_v5.2_原稿精准字幕版_2062041921597562882.json, 视频生成/图生视频/鸿茅药酒志_2054799806060605442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_205
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/超清数字人对口型音乐_2098282192836317186.json、视频生成/图生视频/Wan Video InfiniteTalk  双人对话_1988149592183234562.json、视频生成/图生视频/infinitetalk单人图像对口型_1983851965690056706.json、视频生成/图生视频/infinitetalk单人图像数字人_1987800864440168449.json、视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json、数字人/数字人/慕斯AI_InfiniteTalk_数字人口播_图生视频_2112165352271597570.json、视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json、视频生成/图生视频/I2V-林小茶_2047141901102489601.json、视频生成/图生视频/V4.1（demo2）_2051961839407386625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoDecode`
 - `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 8/9 个有
-- `RH_GetAudioDuration` —— 8/9 个有
-- `SimpleMath+` —— 8/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `easy showAnything` —— 7/9 个有
-- `Int` —— 5/9 个有
-- `ToInt` —— 5/9 个有
-- `AudioCrop` —— 4/9 个有
-- `PreviewAudio` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `SoundFlow_TrimAudio` —— 2/9 个有
-- `CR Float To Integer` —— 1/9 个有
-- `CR SDXL Aspect Ratio` —— 1/9 个有
-- `Display Int (rgthree)` —— 1/9 个有
-- `ImageBatchMulti` —— 1/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `ImpactFloat` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PrimitiveFloat` —— 1/9 个有
-- `RHHiddenNodes` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
+- `MelBandRoFormerModelLoader` —— 9/10 个有
+- `MelBandRoFormerSampler` —— 9/10 个有
+- `WanVideoPassImagesFromSamples` —— 9/10 个有
+- `FB_Qwen3TTSVoiceClone` —— 8/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ResizeImagesByLongerEdge` —— 8/10 个有
+- `Text` —— 8/10 个有
+- `GetNode` —— 6/10 个有
+- `PreviewAny` —— 6/10 个有
+- `SetNode` —— 6/10 个有
+- `WanVideoTorchCompileSettings` —— 6/10 个有
+- `Wav2VecModelLoader` —— 5/10 个有
+- `PreviewAudio` —— 4/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
+- `GIMMVFI_interpolate` —— 1/10 个有
+- `HAIGC_VideoSubtitleTimestampPro` —— 1/10 个有
+- `ImageUpscaleWithModel` —— 1/10 个有
+- `IndexTTS2Run` —— 1/10 个有
+- `SaveAudio` —— 1/10 个有
+- `UpscaleModelLoader` —— 1/10 个有
+- `WanVideoDecode` —— 1/10 个有
+- `ZML_TextInput` —— 1/10 个有
 
 ## 典型参数
 

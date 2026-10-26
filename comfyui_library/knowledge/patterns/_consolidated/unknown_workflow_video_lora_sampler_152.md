@@ -3,78 +3,65 @@ name: unknown_workflow_video_lora_sampler_152
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.806167
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.981583
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/图生视频V1_2047405386377990145.json, 视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json, 视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json, 视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json, 视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json, 视频生成/图生视频/百组动态！Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V2_1960048260402589698.json, 视频生成/图生视频/稳定的唱歌对口型_2029971317079937026.json, 视频生成/图生视频/视频-图生视频+数字人对口型_1960792886629601281.json, 视频生成/图生视频/音色克隆 对口型数字人Infinite+Talk 带语气情感_2041353094105141250.json, 视频生成/图生视频/（再说一遍）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1971615313714475009.json, 视频生成/图生视频/（别读博版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1961304716842045442.json, 音频生成/音频生成/对口型数字人Infinite+Talk_1977882176555470849.json]
+members: [图片生成/反推提示词/59tsspws_2052395707415441409.json, 数字人/数字人/wan2.2图生视频+丝袜美女转圈=艾橘溪_2039691203502940162.json, 视频生成/图生视频/004.Wan视频之源005.首尾关键帧_2035336872209162242.json, 视频生成/图生视频/360度旋转版本(Wan2.2万相)工作流_2014940591578157057.json, 视频生成/图生视频/wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json, 视频生成/图生视频/wan2.2图生视频+双模出图(结构+细节)_2052404579370848257.json, 视频生成/图生视频/wan2.2图生视频+美女转圈_2075491553438683138.json, 视频生成/图生视频/wan2.2图生视频+美女转圈。绝绝子，好用！_2031551233101664258.json, 视频生成/图生视频/wan2.2图生视频+美女转圈。绝绝子，好用！_2043583359116382210.json, 视频生成/图生视频/wan2.2图生视频_2080097509229293570.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高低噪声双lora在线本地通用_补帧_1952913426868858882.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952709897437777921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_152
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/图生视频V1_2047405386377990145.json、视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json、视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json、视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json、视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/59tsspws_2052395707415441409.json、数字人/数字人/wan2.2图生视频+丝袜美女转圈=艾橘溪_2039691203502940162.json、视频生成/图生视频/004.Wan视频之源005.首尾关键帧_2035336872209162242.json、视频生成/图生视频/360度旋转版本(Wan2.2万相)工作流_2014940591578157057.json、视频生成/图生视频/wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `JWInteger`
-- `LoadAudio`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
-- `PreviewAny` —— 11/12 个有
-- `CLIPTextEncode` —— 1/12 个有
-- `ConcatTextOfUtils` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `ImageBatch` —— 1/12 个有
-- `ImageFromBatch` —— 1/12 个有
-- `KSampler` —— 1/12 个有
-- `VAEDecode` —— 1/12 个有
-- `VRGDG_AudioCropTime` —— 1/12 个有
-- `WanInfiniteTalkToVideo` —— 1/12 个有
-- `easy indexAnything` —— 1/12 个有
+- `GetImageSizeAndCount` —— 11/12 个有
+- `Int` —— 11/12 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `WanVideoTorchCompileSettings` —— 11/12 个有
+- `LayerUtility: PurgeVRAM` —— 8/12 个有
+- `SimpleMath+` —— 8/12 个有
+- `Fast Groups Muter (rgthree)` —— 3/12 个有
+- `RIFE VFI` —— 3/12 个有
+- `CreateVideo` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `RTXVideoSuperResolution` —— 1/12 个有
+- `SaveVideo` —— 1/12 个有
+- `WanVideoLoraSelectMulti` —— 1/12 个有
+- `WanVideoSLG` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 

@@ -1,72 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_126
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.9945
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, EnhancedLoadDiffusionModel, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.681357
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2101303792682749953.json, 视频生成/动作迁移/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087445019107090434.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速_2087442235926335490.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087941851805470722.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2099789060956053506.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2100044654115905537.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2087477812772036610.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2091802269355433986.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2100063481834852353.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2100141839650217986.json, 视频生成/图生视频/MinimaxH3八步加速极速版T2_2088826644688629762.json, 视频生成/图生视频/高清图生视频_2087823632620937217.json]
+members: [数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_2014641499442515970.json, 数字人/数字人/Infinitetalk视频对口型_1998680361062293506.json, 数字人/数字人/infiniteTalk单人v2v_2005939130049724418.json, 数字人/数字人/infiniteTalk多人图单人说话_2008829722586783746.json, 数字人/数字人/zy1736_2015662602763898882.json, 数字人/数字人/zy_2014586051662192641.json, 数字人/数字人/改进版KJ-Infinitetalk视频对口型工作流_1959936098648666113.json, 数字人/数字人/最新Infinitetalk优化版视频数字人_1958342598316474369.json, 数字人/数字人/视频对口型 1_2080489097541537793.json, 数字人/数字人/视频对口型_2032501393390571522.json, 数字人/数字人/视频对口型_2036369932333617153.json, 数字人/数字人/🌙最强视频对口型数字人 infinitetalk 真王炸  ⭐_1977899307464622081.json, 数字人/数字人/🥳infinitetalk地表最强数字人 视频对口型 真王炸🐟_1968680206921814017.json, 数字人/数字人/🥳真人视频对口型数字人🐟_2069607155229093890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_126
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2101303792682749953.json、视频生成/动作迁移/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087445019107090434.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速_2087442235926335490.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087941851805470722.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2099789060956053506.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_2014641499442515970.json、数字人/数字人/Infinitetalk视频对口型_1998680361062293506.json、数字人/数字人/infiniteTalk单人v2v_2005939130049724418.json、数字人/数字人/infiniteTalk多人图单人说话_2008829722586783746.json、数字人/数字人/zy1736_2015662602763898882.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `EnhancedLoadDiffusionModel`
-- `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Text`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 14 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 11/12 个有
-- `DF_Get_image_size` —— 7/12 个有
-- `FlashVSR_SM_KSampler` —— 7/12 个有
-- `FlashVSR_SM_Model` —— 7/12 个有
-- `GetImageRangeFromBatch` —— 7/12 个有
-- `JWInteger` —— 7/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/12 个有
-- `CreateVideo` —— 5/12 个有
-- `SaveVideo` —— 5/12 个有
-- `AnyBooleanSwitch` —— 1/12 个有
-- `ComfyMathExpression` —— 1/12 个有
-- `EmptyImage` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `PrimitiveFloat` —— 1/12 个有
+- `DownloadAndLoadWav2VecModel` —— 13/14 个有
+- `AudioSeparation` —— 12/14 个有
+- `LoadAudio` —— 12/14 个有
+- `SimpleMath+` —— 12/14 个有
+- `WanVideoTorchCompileSettings` —— 12/14 个有
+- `PreviewAny` —— 11/14 个有
+- `AudioCrop` —— 10/14 个有
+- `Display Int (rgthree)` —— 9/14 个有
+- `SoundFlow_GetLength` —— 9/14 个有
+- `ToInt` —— 9/14 个有
+- `easy int` —— 9/14 个有
+- `ImageBatchMulti` —— 8/14 个有
+- `ReverseImageBatch` —— 8/14 个有
+- `ImageConcatMulti` —— 7/14 个有
+- `CR Text` —— 6/14 个有
+- `ImpactInt` —— 6/14 个有
+- `INTConstant` —— 5/14 个有
+- `JWIntegerToString` —— 5/14 个有
+- `VHS_LoadAudioUpload` —— 2/14 个有
+- `VHS_VideoInfo` —— 2/14 个有
+- `Wav2VecModelLoader` —— 2/14 个有
+- `image_scale_pixel_v2` —— 2/14 个有
+- `Bjornulf_ShowInt` —— 1/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `GetAudioDurationFromAudio` —— 1/14 个有
+- `Int` —— 1/14 个有
+- `JjkText` —— 1/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
+- `LoadImage` —— 1/14 个有
+- `MaskPreview` —— 1/14 个有
+- `Sa2VANodeTpl` —— 1/14 个有
+- `SaveAudioMP3` —— 1/14 个有
+- `ShowText|pysssss` —— 1/14 个有
+- `easy mathInt` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 2.73608e+08 | 7.7008e+07 - 1.25877e+09 | 7 | 18% |
-| Prompt 约束强度(CFG) | randomize | - | 7 | 100% |
-| 采样算法 | 2 | 2 - 2 | 7 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 7 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,10 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 2.73608e+08，观测区间 7.7008e+07 - 1.25877e+09，7 个样本，取值分散，一致性仅 18%
-- Prompt 约束强度(CFG) 最常用 randomize，7 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，7 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，7 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.25877e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

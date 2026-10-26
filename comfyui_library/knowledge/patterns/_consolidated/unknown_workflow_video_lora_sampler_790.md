@@ -3,53 +3,48 @@ name: unknown_workflow_video_lora_sampler_790
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.692
-common_nodes: [Anything Everywhere, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, EmptyHunyuanLatentVideo, ImageCASharpening+, ImageScale, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LoadImage, LoraLoaderModelOnly, OpenposePreprocessor, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanFunControlToVideo, easy cleanGpuUsed, workflow>1]
+coverage: 0.9535
+common_nodes: [DWPreprocessor, ImageResizeKJv2, Int, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json, 视频生成/图生视频/wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.json]
+members: [图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json, 视频生成/图生视频/Wan2.1图生视频+视频转绘_1949722105333075970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_790
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json、视频生成/图生视频/wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json、视频生成/图生视频/Wan2.1图生视频+视频转绘_1949722105333075970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `EmptyHunyuanLatentVideo`
-- `ImageCASharpening+`
-- `ImageScale`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `OpenposePreprocessor`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `DWPreprocessor`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFunControlToVideo`
-- `easy cleanGpuUsed`
-- `workflow>1`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `ImageBlend` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

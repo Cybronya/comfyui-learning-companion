@@ -3,39 +3,36 @@ name: unknown_workflow_generic_459
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.830833
-common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.979167
+common_nodes: [ImageConcanate, ImageScaleDownToSize, LoadImage, RunningHub_Step1XEdit, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json, 视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json, 视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json, 视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0(已支持原生1080p！可真人，审核宽松！_2048398173965651969.json]
+members: [图片生成/图生图/Step1X-Edit 图片编辑工作流，平替全能图片G4o_1917616941236948993.json, 图片生成/图生图/Step1X-Edit优化版_动动嘴完成图像编辑(全能图片G-4O风格图像编辑开源替代)_1916461984563265538.json, 图片生成/图生图/Step1X-Edit图像编辑全能图片G-4O风格开源替代_1916465937715757058.json, 图片生成/图生图/Step1X-Edit：提示词图像编辑 = 全能图片G4o_1917949035653562370.json, 图片生成/图生图/开源动嘴改图平替全能图片G4o(Step1X-Edit优化版)_1917809742465667074.json, 图片生成/文生图/step1x-edit：多模态图像编辑，全能图片G4o替代方案，言出法随_1916863539250925570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_459
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json、视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json、视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json、视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json、视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Step1X-Edit 图片编辑工作流，平替全能图片G4o_1917616941236948993.json、图片生成/图生图/Step1X-Edit优化版_动动嘴完成图像编辑(全能图片G-4O风格图像编辑开源替代)_1916461984563265538.json、图片生成/图生图/Step1X-Edit图像编辑全能图片G-4O风格开源替代_1916465937715757058.json、图片生成/图生图/Step1X-Edit：提示词图像编辑 = 全能图片G4o_1917949035653562370.json、图片生成/图生图/开源动嘴改图平替全能图片G4o(Step1X-Edit优化版)_1917809742465667074.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
+- `ImageConcanate`
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RunningHub_Step1XEdit`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `ShowAnything|Mie` —— 4/6 个有
-- `PreviewAny` —— 1/6 个有
-- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 1/6 个有
-- `忽略多组孤海` —— 1/6 个有
+- `Text Multiline` —— 5/6 个有
+- `CR Text` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
 
 ## 典型参数
 

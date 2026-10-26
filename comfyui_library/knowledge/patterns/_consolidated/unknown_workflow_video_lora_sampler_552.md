@@ -3,53 +3,65 @@ name: unknown_workflow_video_lora_sampler_552
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.94
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.73875
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3PromptEnhancerT8, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetNode, T8LLMProviderConfig, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json, 视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json, 视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json, 视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json]
+members: [视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json, 视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json, 视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json, 视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_552
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json、视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json、视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json、视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json、视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json、视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json、视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3PromptEnhancerT8`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `T8LLMProviderConfig`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `ImageToMask` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `WanVideoAddTTMLatents` —— 1/4 个有
-- `WanVideoEncode` —— 1/4 个有
-- `easy globalSeed` —— 1/4 个有
+- `JjkText` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SaveLatent` —— 3/4 个有
+- `VAEDecodeAudio` —— 3/4 个有
+- `Any To String (mtb)` —— 2/4 个有
+- `AudioCrop` —— 2/4 个有
+- `LTXVAudioVAEEncode` —— 2/4 个有
+- `LTXVConcatAVLatent` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `MiniMaxH3SigmaShift` —— 2/4 个有
+- `SaveAudioAdvanced` —— 2/4 个有
+- `SetLatentNoiseMask` —— 2/4 个有
+- `SolidMask` —— 2/4 个有
+- `SoundFlow_GetLength` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `SaveAudio` —— 1/4 个有
 
 ## 典型参数
 

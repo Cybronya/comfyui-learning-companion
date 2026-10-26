@@ -2,71 +2,68 @@
 name: unknown_workflow_sampler_clip_unet_126
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.927
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: strong
+coverage: 0.965
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json, 图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json, 图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json, 图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json, 图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json, 图片生成/图生图/人物换装-Klein-9B-工作流_2041526824202674177.json, 图片生成/图生图/漫反射图案提取（klein2）_2077593751765209090.json, 图片生成/图生图/真人转赛璐璐风格编辑_2068932411035045890.json, 图片生成/图生图/设计工作流——双图迁移_2013146117600448514.json]
+members: [comfyui-workflow-templates-json/flux_schnell_full_text_to_image.json, 图片生成/图生图/OneReward Fill局部重绘工作流_2068347330910310401.json, 图片生成/图生图/OneReward Fill扩图工作流_2068355013654695937.json, 图片生成/图生图/OneReward_Fill局部重绘、扩图工作流_2038613347419033601.json, 图片生成/图生图/OneReward_Fill局部重绘工作流_2008781795990446082.json, 图片生成/图生图/OneReward_Fill扩图工作流_2008787024437841921.json, 图片生成/图生图/flux-扩图_1977705117887725570.json, 图片生成/图生图/tonnie-flux-fill扩图_1992516908226506754.json, 图片生成/文生图/00.flux生成脸模_许老师专用_1976289488496402434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_126
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json、图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json、图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json、图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json、图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（comfyui-workflow-templates-json/flux_schnell_full_text_to_image.json、图片生成/图生图/OneReward Fill局部重绘工作流_2068347330910310401.json、图片生成/图生图/OneReward Fill扩图工作流_2068355013654695937.json、图片生成/图生图/OneReward_Fill局部重绘、扩图工作流_2038613347419033601.json、图片生成/图生图/OneReward_Fill局部重绘工作流_2008781795990446082.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 8/9 个有
-- `Flux2Scheduler` —— 7/9 个有
-- `PreviewImage` —— 5/9 个有
-- `CR Text Concatenate` —— 4/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
-- `CR Text` —— 3/9 个有
-- `GetImageSize` —— 3/9 个有
-- `ModelSamplingAuraFlow` —— 3/9 个有
-- `easy int` —— 3/9 个有
-- `BasicScheduler` —— 2/9 个有
-- `Image Comparer (rgthree)` —— 2/9 个有
-- `JjkText` —— 2/9 个有
-- `ResizeImagesByLongerEdge` —— 2/9 个有
-- `AILab_QwenVL_Advanced` —— 1/9 个有
-- `ConditioningZeroOut` —— 1/9 个有
-- `ImageConcanate` —— 1/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `Seed (rgthree)` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
+- `InpaintModelConditioning` —— 7/9 个有
+- `LoadImage` —— 7/9 个有
+- `ImagePadForOutpaint` —— 5/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `EmptySD3LatentImage` —— 2/9 个有
+- `RH_Translator` —— 2/9 个有
+- `DifferentialDiffusion` —— 1/9 个有
+- `FluxGuidance` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 4 - 25 | 9 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 78% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 4 - 25，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

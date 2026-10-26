@@ -1,35 +1,46 @@
 ---
 name: unknown_workflow_generic_1201
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.769
-common_nodes: [AddLabel, AddNode, LoadImage, MathExpression|pysssss, SaveImage, String, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.827
+common_nodes: [CR Prompt Text, CR Text Replace, LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/0点抽奖MyShell2.0激活码工作流_1948770721422614529.json, 图片生成/文生图/0点抽奖Lovart激活码工作流_1924472070841749505.json]
+members: [音频生成/音频生成/SoulX-Podcast支持方言和副语言的声音模型_1984454643352813570.json, 音频生成/音频生成/SoulX语音克隆普通话方言 情绪_1985301912859852802.json, 音频生成/音频生成/声音克隆新模型支持方言和情绪（SouIX-Podcast）_1984786847484231682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1201
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/0点抽奖MyShell2.0激活码工作流_1948770721422614529.json、图片生成/文生图/0点抽奖Lovart激活码工作流_1924472070841749505.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast支持方言和副语言的声音模型_1984454643352813570.json、音频生成/音频生成/SoulX语音克隆普通话方言 情绪_1985301912859852802.json、音频生成/音频生成/声音克隆新模型支持方言和情绪（SouIX-Podcast）_1984786847484231682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AddLabel`
-- `AddNode`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `SaveImage`
-- `String`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `CR Text Replace`
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text Multiline`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `IndexTTS2Run` —— 2/3 个有
+- `MegaTTS3Run` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `ProcessString` —— 1/3 个有
+- `Qwen3_VQA` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,37 +3,33 @@ name: unknown_workflow_generic_1517
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8375
-common_nodes: [CR Text, MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, Select Image Indices, easy saveText]
+coverage: 0.8
+common_nodes: [LoadImage, SaveImage, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/文生图/群总AI漫剧工作流_改造版_2038962022624268289.json, 视频生成/图生视频/群总AI漫剧工作流_改造版_2039261486618517506.json]
+members: [图片生成/图生图/布尔_1950429219898703873.json, 图片生成/图生图/测试_1962111350992474113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1517
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/群总AI漫剧工作流_改造版_2038962022624268289.json、视频生成/图生视频/群总AI漫剧工作流_改造版_2039261486618517506.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/布尔_1950429219898703873.json、图片生成/图生图/测试_1962111350992474113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `LoadImage`
 - `SaveImage`
-- `Select Image Indices`
-- `easy saveText`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Doubao_Seedance_1_5_Pro` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `easy boolean` —— 1/2 个有
 
 ## 典型参数
 

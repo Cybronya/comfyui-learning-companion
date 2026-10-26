@@ -3,34 +3,37 @@ name: unknown_workflow_generic_1345
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9165
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.691
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, SetNode, Text, TextCombinerTwo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1-单图编辑_1976916044315070466.json, 图片生成/图生图/全能图片V1单图编辑1.0_1980977373631954946.json]
+members: [图片生成/图生图/AIGC-详情页-场景_2042518087542509570.json, 图片生成/图生图/宝瑞雅-AIGC详情页 风格套用_2041358701080092674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1345
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1-单图编辑_1976916044315070466.json、图片生成/图生图/全能图片V1单图编辑1.0_1980977373631954946.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AIGC-详情页-场景_2042518087542509570.json、图片生成/图生图/宝瑞雅-AIGC详情页 风格套用_2041358701080092674.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `SetNode`
+- `Text`
+- `TextCombinerTwo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

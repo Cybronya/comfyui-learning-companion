@@ -1,101 +1,81 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_45
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.813375
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int, easy showAnything]
+frequency: 9
+level: moderate
+coverage: 0.894889
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, ManualSigmas, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json, 视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json, 视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json, 视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2068898654504706050.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2069966527956344833.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2075040945753640962.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2095739123867938818.json]
+members: [视频生成/图生视频/MinimaxH3高清打斗_2092544929284317185.json, 视频生成/图生视频/minimax_h3_r2v_story_board_2091816381816860674.json, 视频生成/图生视频/minimax_h3_r2v_video_edit_2092169538497503233.json, 视频生成/图生视频/minmax潜空间放大姿势迁移_2097668196026372098.json, 视频生成/图生视频/参考故事版生成视频 minimax H3_2092780996881113090.json, 视频生成/文生视频/（0825）二采放大1080P12秒-提示词未自动优化_2092123279141195777.json, 视频生成/文生视频/（0826）万象二采放大1080P横屏12秒-提示词未自动优化（增加动态lora）_2092578809114619905.json, 视频生成/文生视频/（0826）万象二采放大1080P竖屏12秒-提示词未自动优化（增加动态lora）_2092617053390856194.json, 视频生成/视频生视频/Minimax+H3+多参角色替换Lora，二采放大_2106244704005345281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_45
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json、视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json、视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json、视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json、视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2068898654504706050.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3高清打斗_2092544929284317185.json、视频生成/图生视频/minimax_h3_r2v_story_board_2091816381816860674.json、视频生成/图生视频/minimax_h3_r2v_video_edit_2092169538497503233.json、视频生成/图生视频/minmax潜空间放大姿势迁移_2097668196026372098.json、视频生成/图生视频/参考故事版生成视频 minimax H3_2092780996881113090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `SplitSigmas`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `CM_IntUnaryCondition` —— 7/8 个有
-- `CR Prompt Text` —— 7/8 个有
-- `CR String To Boolean` —— 7/8 个有
-- `ImpactConditionalBranch` —— 7/8 个有
-- `IndexTTS2Run` —— 7/8 个有
-- `JoinStrings` —— 7/8 个有
-- `LTXVTiledVAEDecode` —— 7/8 个有
-- `PrimitiveFloat` —— 7/8 个有
-- `easy anythingIndexSwitch` —— 7/8 个有
-- `ModelSamplingSD3` —— 6/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `JoinStringMulti` —— 1/8 个有
-- `LTX2SamplingPreviewOverride` —— 1/8 个有
-- `LTXVLatentUpsampler` —— 1/8 个有
-- `LTXVScheduler` —— 1/8 个有
-- `ManualSigmas` —— 1/8 个有
-- `ResolutionSelector` —— 1/8 个有
-- `VAEDecode` —— 1/8 个有
-- `easy float` —— 1/8 个有
+- `ComfyMathExpression` —— 8/9 个有
+- `PrimitiveFloat` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 7/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `ImageResizeKJv2` —— 3/9 个有
+- `Text` —— 2/9 个有
+- `VHS_LoadVideo` —— 2/9 个有
+- `CreateVideo` —— 1/9 个有
+- `DF_Get_image_size` —— 1/9 个有
+- `FlashVSR_SM_KSampler` —— 1/9 个有
+- `FlashVSR_SM_Model` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 1/9 个有
+- `JWInteger` —— 1/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `MiniMaxH3TurboLoRA` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `SaveVideo` —— 1/9 个有
+- `VideoCombineV2` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 8 | 100% |
-| 高度 | 25 | 25 - 25 | 8 | 100% |
+| 采样步数 | 1.81296e+09 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | randomize | - | 1 | 100% |
+| 采样算法 | 2 | - | 1 | 100% |
+| 调度器 | 3.5 | - | 1 | 100% |
+| 重绘幅度 | 11 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -103,5 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.81296e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

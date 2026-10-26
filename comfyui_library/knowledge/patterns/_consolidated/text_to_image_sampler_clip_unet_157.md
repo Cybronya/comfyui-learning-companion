@@ -2,23 +2,23 @@
 name: text_to_image_sampler_clip_unet_157
 type: Text To Image
 frequency: 4
-level: moderate
-coverage: 0.842
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: strong
+coverage: 0.87225
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImpactSwitch, Int, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image-Base文生图（turbo对比)_2018000039255216130.json, 图片生成/文生图/Z-image-base文生图洗图自动化_2016501851377639425.json, 图片生成/文生图/Z-image文生图洗图自动化_1993872494906064897.json, 图片生成/文生图/阿里z-image文生图，洗图_1993976067994091521.json]
+members: [图片生成/图生图/QWEN3反推提示词+Z-image生图_仿图_洗图_2002384500183166978.json, 图片生成/文生图/AI知识分享宝库丨Z-image文生图（优化出图比例）_1993874811084619777.json, 图片生成/文生图/Z-IMAGE 文生图_2020752365468520449.json, 图片生成/文生图/Z-image 基础文生图 V1（优化出图比例）_2003120005589999618.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_157
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image-Base文生图（turbo对比)_2018000039255216130.json、图片生成/文生图/Z-image-base文生图洗图自动化_2016501851377639425.json、图片生成/文生图/Z-image文生图洗图自动化_1993872494906064897.json、图片生成/文生图/阿里z-image文生图，洗图_1993976067994091521.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/QWEN3反推提示词+Z-image生图_仿图_洗图_2002384500183166978.json、图片生成/文生图/AI知识分享宝库丨Z-image文生图（优化出图比例）_1993874811084619777.json、图片生成/文生图/Z-IMAGE 文生图_2020752365468520449.json、图片生成/文生图/Z-image 基础文生图 V1（优化出图比例）_2003120005589999618.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -27,49 +27,50 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `ImpactSwitch`
+- `Int`
 - `KSampler`
+- `LoadImage`
 - `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `MaraScottIsEmptyOrNone_v1` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `easy ifElse` —— 3/4 个有
-- `LayerUtility: ImageReel` —— 2/4 个有
-- `LayerUtility: ImageReelComposit` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `ModelSamplingAuraFlow` —— 2/4 个有
-- `easy int` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Anything Everywhere3` —— 1/4 个有
-- `SeedGenerator` —— 1/4 个有
+- `ImpactInt` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `easy positive` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `Display Any (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 30 | 4 | 50% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 3 | 4 | 52% |
-| 采样算法 | euler | - | 4 | 75% |
+| 采样步数 | 10 | 8 - 10 | 4 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1024 | 1024 - 1144 | 4 | 95% |
-| 高度 | 1536 | 1472 - 1536 | 4 | 98% |
+| 宽度 | 1920 | 1152 - 1920 | 4 | 81% |
+| 高度 | 1080 | 1080 - 1536 | 4 | 83% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 30，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 3，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 采样步数 中位数 10，观测区间 8 - 10，4 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1144，4 个样本，取值集中（一致性 95%）
-- 高度 中位数 1536，观测区间 1472 - 1536，4 个样本，取值集中（一致性 98%）
+- 宽度 中位数 1920，观测区间 1152 - 1920，4 个样本，取值集中（一致性 81%）
+- 高度 中位数 1080，观测区间 1080 - 1536，4 个样本，取值集中（一致性 83%）

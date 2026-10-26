@@ -3,31 +3,39 @@ name: unknown_workflow_generic_144
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.880583
-common_nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
+coverage: 0.761917
+common_nodes: [LoadImage, MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, SaveImage, easy saveText]
 problems: []
 missing: []
-members: [视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json, 视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json, 视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json, 视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037034972783058946.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037444767545561089.json, 视频生成/文生视频/Seedance2.0 Fast文生视频（RH版）_2054421311123927041.json, 视频生成/文生视频/seeddance2.0 文生视频_2040952630356217857.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-纯文本生视频】工作流_2037776749177610242.json, 视频生成/文生视频/地表最强超能视频2.0-Fast_文生视频_2037432927675490306.json]
+members: [图片生成/反推提示词/04人物设计（生成系统提示词）_2031615060098949122.json, 图片生成/反推提示词/07脱敏工作流_2031687953164013569.json, 图片生成/反推提示词/AI工具画面的视频生成提示词_2038622267197886466.json, 图片生成/反推提示词/AI短片编剧 分段脚本_2038609334787121153.json, 图片生成/反推提示词/AI设定图提示词专家（人物 场景 关键剧情首帧）_2038620022884536322.json, 图片生成/反推提示词/分镜头运镜大师（优化版）_2041297250986500097.json, 图片生成/反推提示词/图片反推MJ提示词_2084677335114141698.json, 图片生成/反推提示词/（修改后1）小说转分镜脚本_2039165697045045249.json, 图片生成/文生图/2..2 剧本___分镜_2031708136834342914.json, 图片生成/文生图/赤鸟拆分-漫剧1_2_2016651413073432577.json, 视频生成/文生视频/2.3文字分镜  拆分（6分镜_组）_2031712043270672386.json, 视频生成/文生视频/2.4.风格——提示词_2031716954544807938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_144
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json、视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json、视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json、视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json、视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/04人物设计（生成系统提示词）_2031615060098949122.json、图片生成/反推提示词/07脱敏工作流_2031687953164013569.json、图片生成/反推提示词/AI工具画面的视频生成提示词_2038622267197886466.json、图片生成/反推提示词/AI短片编剧 分段脚本_2038609334787121153.json、图片生成/反推提示词/AI设定图提示词专家（人物 场景 关键剧情首帧）_2038620022884536322.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20FastTextToVideo`
-- `SaveVideo`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/12 个有
+- `PreviewImage` —— 11/12 个有
+- `CR Text` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `RH_YouchuanTextToImageV81` —— 1/12 个有
+- `RH_YouchuanTextToImageV82` —— 1/12 个有
 
 ## 典型参数
 

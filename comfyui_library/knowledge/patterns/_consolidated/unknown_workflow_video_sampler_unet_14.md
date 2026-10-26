@@ -1,55 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_unet_14
 type: Unknown Workflow
-frequency: 22
+frequency: 19
 level: moderate
-coverage: 0.872955
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.614368
+common_nodes: [BasicGuider, GetNode, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/图生图/Minimax_H3二采优化速度-self_lift-多参考_2100933071129370625.json, 视频生成/图生视频/Minimax H3 高质量高速度全能参考｜Self-lift 双采 + Sage加速_2109787600222515201.json, 视频生成/图生视频/Minimax H3 高质量高速度全能参考｜Self-lift 双采｜Sage加速_2109751193818984450.json, 视频生成/图生视频/Minimax H3二采优化速度-self lift-多参考_2100096995984756738.json, 视频生成/文生视频/Minimax H3-self lift-五图音频数字人-15秒广告v0.1版_2098822905328128001.json, 视频生成/文生视频/Minimax H3二采数字人-self lift-单图三人音频参考_2098822938328915970.json, 视频生成/文生视频/Minimax H3二采数字人-self lift-单图单人音频_2098822916216541186.json, 视频生成/文生视频/Minimax H3二采数字人-self lift-单图双人音频参考_2098822926341599234.json, 视频生成/文生视频/Minimax+H3-self-lift双采-仅sage加速-25步max质量_2098041547420954626.json, 视频生成/文生视频/selfift双采BF16max-多宫格单图专用-三音色参考_2105995712277344257.json, 视频生成/文生视频/selfift双采BF16max-多宫格单图专用-单音色参考_2106002184415567874.json, 视频生成/文生视频/selfift双采BF16max-多宫格单图专用-双音色参考_2106002191558463489.json, 视频生成/文生视频/高质量打斗Minimax H3-self-lift双采-BF16+sage加速25步max_2098058673221361666.json, 视频生成/文生视频/高质量打斗Minimax+H3-self-lift双采-BF16+sage+4步加速lora_2098058645392154625.json, 视频生成/文生视频/高质量打斗Minimax+H3-self-lift双采-BF16+sage+8步加速lora_2098058666183315458.json, 视频生成/文生视频/高质量高速度Minimax H3-self-lift双采-BF16+sage加速25步max_2098043041310404610.json, 视频生成/文生视频/高质量高速度Minimax+H3-self-lift双采-BF16+sage+4步加速lora_2098043805441286146.json, 视频生成/文生视频/高质量高速度Minimax+H3-self-lift双采-BF16+sage+8步加速lora_2098043798923333634.json, 视频生成/文生视频/高速度低显存Minimax+H3-self-lift双采-4步lora-6步-均衡版_2097983381266067458.json, 视频生成/文生视频/高速度低显存Minimax+H3-self-lift双采-4步lora-8步-质量版_2097983391957340162.json, 视频生成/文生视频/高速度低显存Minimax+H3-self-lift双采-8步lora-10步-均衡版_2097983402602491905.json, 视频生成/文生视频/高速度低显存Minimax+H3-self-lift双采-8步lora-12步-质量版_2097983412752703489.json]
+members: [视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json, 视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json, 视频生成/图生视频/平面图生效果图 minimax h3_2095379110083252226.json, 视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json, 视频生成/文生视频/30s 生成 加速版全能版！MinimaxH3！开源免费版！GH版_2088252312514031618.json, 视频生成/文生视频/FZ-MiniMaxH3-智能一体化视频创作（显存优化）_2100213011712667650.json, 视频生成/文生视频/FZ-MinimaxH3-智能一体化视频生成_2096847617182486529.json, 视频生成/文生视频/H3 极简视频工作台_2091386301621825537.json, 视频生成/文生视频/Lingke - H3 智能一体化视频创作_2094241756031315970.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2086579374731649025.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2093143247815266305.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094320306113564674.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094322556294746113.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090444935400083457.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090445520996233218.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090455986980089857.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作工作流_2091420444334313474.json, 视频生成/文生视频/MiniMax - H3 视频智能创作台_2088681824125014018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/Minimax_H3二采优化速度-self_lift-多参考_2100933071129370625.json、视频生成/图生视频/Minimax H3 高质量高速度全能参考｜Self-lift 双采 + Sage加速_2109787600222515201.json、视频生成/图生视频/Minimax H3 高质量高速度全能参考｜Self-lift 双采｜Sage加速_2109751193818984450.json、视频生成/图生视频/Minimax H3二采优化速度-self lift-多参考_2100096995984756738.json、视频生成/文生视频/Minimax H3-self lift-五图音频数字人-15秒广告v0.1版_2098822905328128001.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json、视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json、视频生成/图生视频/平面图生效果图 minimax h3_2095379110083252226.json、视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+全部 19 个 workflow 都包含：
+- `BasicGuider`
+- `GetNode`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAELoader`
 - `VHS_VideoCombine`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxChunkFeedForward` —— 14/22 个有
-- `MiniMaxLowVRAMAttention` —— 14/22 个有
-- `LoadAudio` —— 11/22 个有
-- `LoraLoaderModelOnly` —— 10/22 个有
-- `EmptyImage` —— 1/22 个有
-- `LoraLoaderBypassModelOnly` —— 1/22 个有
-- `PreviewImage` —— 1/22 个有
+- `LoraLoaderBypassModelOnly` —— 18/19 个有
+- `MiniMaxH3DualClockT8GH` —— 18/19 个有
+- `easy anythingIndexSwitch` —— 18/19 个有
+- `MiniMaxH3AVDecodeT8GH` —— 17/19 个有
+- `孤海注释` —— 17/19 个有
+- `ImpactSleep` —— 4/19 个有
+- `SaveVideo` —— 4/19 个有
+- `LoadVideoNode` —— 3/19 个有
+- `MiniMaxH3AVDecodeT8` —— 3/19 个有
+- `LoadImage` —— 2/19 个有
+- `Label (rgthree)` —— 1/19 个有
+- `LoraLoaderModelOnly` —— 1/19 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/19 个有
 
 ## 典型参数
 

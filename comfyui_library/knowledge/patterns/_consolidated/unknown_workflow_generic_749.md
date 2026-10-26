@@ -3,33 +3,36 @@ name: unknown_workflow_generic_749
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [GetVideoComponents, ImageFromBatch+, JWImageBatchCount, LoadImage, RH_Grok_Video3, SaveImage, SaveVideo]
+coverage: 0.6165
+common_nodes: [LoadImage, PrimitiveString, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/Grok 3 图生视频(0.2元_次）_1999024701823406081.json, 视频生成/图生视频/Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json, 视频生成/图生视频/Grok Video3 图生视频(API版0.2元)_1998442283479498754.json, 视频生成/文生视频/Grok Video3 文生视频(API版0.2元)_1998465105186684929.json]
+members: [图片生成/图生图/全能图片2.0单图修改：最新版本图像工作流_2028668292306571266.json, 图片生成/图生图/全能图片2.0多图修改：最新版本图像工作流_2028447474674835458.json, 图片生成/图生图/谷歌最新nana全能图片2-单图修改分镜生成图片生成2pro_2058489563697467393.json, 图片生成/文生图/全能图片GImage2-all文生图图编辑无水印直出随便改不到几分几毛一张_2058468722846818305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_749
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Grok 3 图生视频(0.2元_次）_1999024701823406081.json、视频生成/图生视频/Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json、视频生成/图生视频/Grok Video3 图生视频(API版0.2元)_1998442283479498754.json、视频生成/文生视频/Grok Video3 文生视频(API版0.2元)_1998465105186684929.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片2.0单图修改：最新版本图像工作流_2028668292306571266.json、图片生成/图生图/全能图片2.0多图修改：最新版本图像工作流_2028447474674835458.json、图片生成/图生图/谷歌最新nana全能图片2-单图修改分镜生成图片生成2pro_2058489563697467393.json、图片生成/文生图/全能图片GImage2-all文生图图编辑无水印直出随便改不到几分几毛一张_2058468722846818305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetVideoComponents`
-- `ImageFromBatch+`
-- `JWImageBatchCount`
 - `LoadImage`
-- `RH_Grok_Video3`
+- `PrimitiveString`
 - `SaveImage`
-- `SaveVideo`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `NanoBananaAIO` —— 3/4 个有
+- `ShowAnything|Mie` —— 2/4 个有
+- `GPTImage2AllGenerate` —— 1/4 个有
+- `UploadToImageHost` —— 1/4 个有
 
 ## 典型参数
 

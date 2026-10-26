@@ -1,46 +1,65 @@
 ---
 name: unknown_workflow_video_sampler_vae_95
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.958333
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.733
+common_nodes: [ADE_CameraPoseBasic, GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/【自定义Wan2.1万相】文生视频_1901660787495346177.json, 视频生成/文生视频/【遇见AI】wan2.1文生视频基础流，不带加速_2061012769037701122.json, 视频生成/文生视频/万相2.1文生视频，可控性超强_1907671581512855554.json, 视频生成/文生视频/通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.json, 视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json, 视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json]
+members: [视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json, 视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json, 视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_95
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/【自定义Wan2.1万相】文生视频_1901660787495346177.json、视频生成/文生视频/【遇见AI】wan2.1文生视频基础流，不带加速_2061012769037701122.json、视频生成/文生视频/万相2.1文生视频，可控性超强_1907671581512855554.json、视频生成/文生视频/通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.json、视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json、视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json、视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json、视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json、视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `ADE_CameraPoseBasic`
+- `GetNode`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoFunCameraEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 5/6 个有
-- `RIFE VFI` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `CR Upscale Image` —— 1/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `CameraPoseVisualizer` —— 3/5 个有
+- `INTConstant` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `ColorMatch` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `MathExpression|pysssss` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `Text` —— 2/5 个有
+- `WanVideoLoraSelect` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 

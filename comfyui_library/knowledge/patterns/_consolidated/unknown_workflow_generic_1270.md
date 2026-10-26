@@ -3,38 +3,33 @@ name: unknown_workflow_generic_1270
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7595
-common_nodes: [CR Text, ImpactSwitch, Int, LoadImage, Note Plus (mtb), SaveImage]
+coverage: 0.875
+common_nodes: [010af74f-5a21-43f4-b520-14374608c312, GrokImageNode, ImageCompare, LoadImage, PreviewAny, SaveImage, c19ae9b8-d43c-40d3-8ae7-eea7d345a587]
 problems: []
 missing: []
-members: [图片生成/图生图/Step1X-Edit图像编辑-全能图片G4o平替版-StarAI_1916790021335224322.json, 图片生成/图生图/全能图片V1最强图像编辑模型，单双图模型随意切换，提示词润色+格式自动整理-StarAI_1960779393322946561.json]
+members: [comfyui-workflow-templates-json/template_rob_realistic_2k_images_quick_variations.json, comfyui-workflow-templates-json/templates_rob_realistic_2k_images_quick_variations.app.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1270
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Step1X-Edit图像编辑-全能图片G4o平替版-StarAI_1916790021335224322.json、图片生成/图生图/全能图片V1最强图像编辑模型，单双图模型随意切换，提示词润色+格式自动整理-StarAI_1960779393322946561.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_rob_realistic_2k_images_quick_variations.json、comfyui-workflow-templates-json/templates_rob_realistic_2k_images_quick_variations.app.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImpactSwitch`
-- `Int`
+- `010af74f-5a21-43f4-b520-14374608c312`
+- `GrokImageNode`
+- `ImageCompare`
 - `LoadImage`
-- `Note Plus (mtb)`
+- `PreviewAny`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `RunningHub_Step1XEdit` —— 1/2 个有
+- `c19ae9b8-d43c-40d3-8ae7-eea7d345a587`
 
 ## 典型参数
 

@@ -1,86 +1,73 @@
 ---
 name: unknown_workflow_video_upscale_lora_4
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.464
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, Yuan_RTXVideoUpscaleH3]
+coverage: 0.737833
+common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, ClownsharKSampler_Beta, EmptyHunyuanLatentVideo, ImageScaleBy, ImageUpscaleWithModel, LayerFilter: AddGrain, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), SaveImage, String, StringConcatenate, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json, 视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json, 视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json, 视频生成/图生视频/全栈式短剧生成MiniMax-H3V4.2_2088427778122280962.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成16.10修复_2089992232983162882.json]
+members: [图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json, 图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json, 图片生成/文生图/Wan2.2超真实摄影-Instareal+Lenovo【LORA】_1960338805641441282.json, 图片生成/文生图/商K-真实摄影Wan2.2_1982596622628593665.json, 数字人/数字人/Wan2.2真实摄影-Instareal+Lenovo_1979374680974987266.json, 视频生成/图生视频/Wan2.2真实摄影-Instareal+Lenovo_1958396927266209793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json、视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json、视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json、图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json、图片生成/文生图/Wan2.2超真实摄影-Instareal+Lenovo【LORA】_1960338805641441282.json、图片生成/文生图/商K-真实摄影Wan2.2_1982596622628593665.json、数字人/数字人/Wan2.2真实摄影-Instareal+Lenovo_1979374680974987266.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImage`
-- `GetNode`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
+- `CLIPTextEncode`
+- `ClownsharKSampler_Beta`
+- `EmptyHunyuanLatentVideo`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `LayerFilter: AddGrain`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Power Lora Loader (rgthree)`
+- `SaveImage`
+- `String`
+- `StringConcatenate`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_H3MotionContext`
-- `Yuan_H3MotionContextLoadLatent`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_MiniMaxH3Video`
-- `Yuan_RTXVideoUpscaleH3`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 6/7 个有
-- `INTConstant` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `RegexExtract` —— 6/7 个有
-- `StringConcatenate` —— 6/7 个有
-- `StringReplace` —— 6/7 个有
-- `YUAN_TXTAppearanceOrder` —— 6/7 个有
-- `YUAN_TXTListNumber` —— 6/7 个有
-- `YUAN_TXTReplace` —— 6/7 个有
-- `LoadImage` —— 1/7 个有
-- `MemoryCleaner` —— 1/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
-- `ResolutionSelector` —— 1/7 个有
-- `YUAN_TXTShotReplace` —— 1/7 个有
-- `YuanAudioList` —— 1/7 个有
-- `YuanAudioSplit` —— 1/7 个有
-- `YuanPrimitive` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy clearCacheAll` —— 1/7 个有
+- `CR SDXL Aspect Ratio` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `Int` —— 1/6 个有
+- `Joy_caption_two` —— 1/6 个有
+- `Joy_caption_two_load` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `easy textSwitch` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | beta57 | - | 6 | 83% |
+| Prompt 约束强度(CFG) | 12 | 3 - 12 | 6 | 68% |
+| 采样算法 | 4 | -1 - 4 | 6 | 41% |
+| 调度器 | 1 | 0.3 - 1 | 6 | 70% |
+| 重绘幅度 | 3.5 | 2 - 3.5 | 6 | 83% |
 
 ## 常见问题
 
@@ -88,4 +75,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 beta57，6 个样本，一致性 83%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 3 - 12，6 个样本
+- 采样算法 中位数 4，观测区间 -1 - 4，6 个样本，取值分散，一致性仅 41%
+- 调度器 中位数 1，观测区间 0.3 - 1，6 个样本
+- 重绘幅度 中位数 3.5，观测区间 2 - 3.5，6 个样本，取值集中（一致性 83%）
+- 风险：重绘幅度 观测到 3.5，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

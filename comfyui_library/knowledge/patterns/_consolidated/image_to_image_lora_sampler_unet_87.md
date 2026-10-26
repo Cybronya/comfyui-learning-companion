@@ -3,36 +3,36 @@ name: image_to_image_lora_sampler_unet_87
 type: Image To Image
 frequency: 7
 level: strong
-coverage: 0.767429
-common_nodes: [CFGNorm, CLIPLoader, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.861286
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Comfyui节点系列60-Qwen Multiangle Camera_2056593331202912258.json, 图片生成/图生图/Qwen-Edit-2511 新多角度_2010907366249734146.json, 图片生成/图生图/Qwen-Edit-2511 新多角度_2010947423933304834.json, 图片生成/图生图/Qwen2511编辑+ Multiangle -镜头控制_2010585733614018561.json, 图片生成/图生图/qwen  精准镜头控制器 图生图 多视角  Qwen Multiangle Camera_2041768515669069826.json, 图片生成/图生图/qwen  精准镜头控制器 多视角套图  镜头选择_2041695143425744897.json, 图片生成/图生图/qwen  精准镜头控制器 模特套图  镜头选择_2039528560959950849.json]
+members: [图片生成/图生图/Qwen-2511图像编辑_2013521690571051010.json, 图片生成/图生图/Qwen-Edit-2511 单图、多图编辑工作流_2091504533078888449.json, 图片生成/图生图/Qwen-Edit-2511 溶图打光工作流_2091511848628740097.json, 图片生成/图生图/Qwen-Edit-2511_单图、多图编辑工作流_2096512805334769666.json, 图片生成/图生图/Qwen-Edit-2511_单图、多图编辑工作流_2096870533769027586.json, 图片生成/图生图/QwenEdit2511多图编辑工作流_2058767665044480001.json, 图片生成/图生图/漫剧必备-一键生成人物四视图_2077374977283813377.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Comfyui节点系列60-Qwen Multiangle Camera_2056593331202912258.json、图片生成/图生图/Qwen-Edit-2511 新多角度_2010907366249734146.json、图片生成/图生图/Qwen-Edit-2511 新多角度_2010947423933304834.json、图片生成/图生图/Qwen2511编辑+ Multiangle -镜头控制_2010585733614018561.json、图片生成/图生图/qwen  精准镜头控制器 图生图 多视角  Qwen Multiangle Camera_2041768515669069826.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-2511图像编辑_2013521690571051010.json、图片生成/图生图/Qwen-Edit-2511 单图、多图编辑工作流_2091504533078888449.json、图片生成/图生图/Qwen-Edit-2511 溶图打光工作流_2091511848628740097.json、图片生成/图生图/Qwen-Edit-2511_单图、多图编辑工作流_2096512805334769666.json、图片生成/图生图/Qwen-Edit-2511_单图、多图编辑工作流_2096870533769027586.json…）
 
 - **类型**：Image To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `GetNode`
+- `FluxKontextImageScale`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `QwenMultiangleCameraNode`
+- `PreviewImage`
 - `SaveImage`
-- `SetNode`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
@@ -40,25 +40,23 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `ImageScaleToTotalPixels` —— 5/7 个有
-- `easy showAnything` —— 4/7 个有
-- `ImpactMakeAnyList` —— 3/7 个有
-- `FluxKontextImageScale` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `ConditioningZeroOut` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `EmptySD3LatentImage` —— 3/7 个有
+- `EmptyImage` —— 2/7 个有
 - `DapaoImageAspectRatioResizeNode` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `QWEN_TextDisplay` —— 1/7 个有
-- `VNCCS_VisualPositionControl` —— 1/7 个有
-- `easy promptLine` —— 1/7 个有
+- `Fast Bypasser (rgthree)` —— 1/7 个有
+- `GetImageSize+` —— 1/7 个有
+- `ImageCompositeMasked` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/7 个有
+- `OlmDragCrop` —— 1/7 个有
+- `SUPIR_Upscale` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 7 | 69% |
+| 采样步数 | 8 | 4 - 8 | 7 | 80% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
 | 采样算法 | euler | - | 7 | 100% |
 | 调度器 | simple | - | 7 | 100% |
@@ -68,7 +66,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,4 +75,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 euler，7 个样本，一致性 100%
 - 调度器 最常用 simple，7 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（17/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

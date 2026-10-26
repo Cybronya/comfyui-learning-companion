@@ -1,52 +1,78 @@
 ---
 name: unknown_workflow_video_sampler_vae_32
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.968917
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.842545
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json, 视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json, 视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json, 视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json, 视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json, 视频生成/文生视频/Wan2.1 FusionX文生视频极速版_1940968493145866242.json, 视频生成/文生视频/Wan2.1 日本美女主播直播带货视频讲解_1945637043122917377.json, 视频生成/文生视频/Wan2.1 美丽的日本歌舞表演风格的女人_1947907852955463682.json, 视频生成/文生视频/Wan2.1FusionX-超高清文生视频_1934584295552163842.json, 视频生成/文生视频/Wan2.1文生视频fusionX+NAG_1933775109922709506.json, 视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json, 视频生成/文生视频/龙明Wan2.1文生视频fusionX+NAG_1935006868597350401.json]
+members: [图片生成/图生图/分镜小工具 _ 图生视频_1940804451999629313.json, 视频生成/图生视频/B2-wan2.1 720p- MagCache加速版图生视频FusionX+NAG_1934577756585795586.json, 视频生成/图生视频/B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json, 视频生成/图生视频/FX超级图生视频_1934656036613595137.json, 视频生成/图生视频/FusionX VACE首尾帧视频_1943184080722944001.json, 视频生成/图生视频/MAGEF+FusionX VACE强一致性控尾帧图生视频万相wan2.1_1943311960978956289.json, 视频生成/图生视频/极致首中尾帧万相wan2.1+FusionX+VACE图生视频_1934272711260856322.json, 视频生成/图生视频/首中尾帧万相wan2.1+VACE+FlashVSR高清丝滑变身图生视频_1981344492861169666.json, 视频生成/图生视频/🈚尾帧-kj版 图生视频（倒推首帧）_1943209482220691457.json, 视频生成/图生视频/🈚️尾帧-kj版本-wan+LIGHTX2V+VACE i2v-图生视频 尾帧倒推首帧_1943184983563657218.json, 视频生成/图生视频/🈚️首中尾帧-首尾帧插入中间帧-kj版本-wan+Lightx2v+VACE 图生视频_1934978229164023809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json、视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json、视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json、视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json、视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/分镜小工具 _ 图生视频_1940804451999629313.json、视频生成/图生视频/B2-wan2.1 720p- MagCache加速版图生视频FusionX+NAG_1934577756585795586.json、视频生成/图生视频/B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json、视频生成/图生视频/FX超级图生视频_1934656036613595137.json、视频生成/图生视频/FusionX VACE首尾帧视频_1943184080722944001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+全部 11 个 workflow 都包含：
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEnhanceAVideo`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToMegapixels` —— 11/12 个有
-- `UpscaleModelLoader` —— 11/12 个有
-- `WanVideoApplyNAG` —— 11/12 个有
-- `WanVideoSLG` —— 11/12 个有
-- `WanVideoTextEncodeSingle` —— 11/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
-- `WanVideoLoraSelect` —— 5/12 个有
-- `LoadImageFromUrl` —— 2/12 个有
-- `Note Plus (mtb)` —— 2/12 个有
-- `WanVideoTextEncode` —— 1/12 个有
-- `WanVideoTorchCompileSettings` —— 1/12 个有
+- `ImageResizeKJ` —— 10/11 个有
+- `DownloadAndLoadGIMMVFIModel` —— 7/11 个有
+- `GIMMVFI_interpolate` —— 7/11 个有
+- `GetImageSizeAndCount` —— 7/11 个有
+- `PreviewImage` —— 7/11 个有
+- `WanVideoVACEEncode` —— 7/11 个有
+- `WanVideoVACEStartToEndFrame` —— 7/11 个有
+- `GetImageRangeFromBatch` —— 6/11 个有
+- `Int` —— 6/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/11 个有
+- `PrimitiveStringMultiline` —— 6/11 个有
+- `WanVideoExperimentalArgs` —— 6/11 个有
+- `WanVideoMagCache` —— 6/11 个有
+- `WanVideoLoraSelect` —— 5/11 个有
+- `WanVideoVACEModelSelect` —— 5/11 个有
+- `WanVideoImageToVideoEncode` —— 4/11 个有
+- `GetNode` —— 3/11 个有
+- `ImageBatchMulti` —— 3/11 个有
+- `ImageSmartSharpen+` —— 3/11 个有
+- `MaskBatchMulti` —— 3/11 个有
+- `SetNode` —— 3/11 个有
+- `CR Upscale Image` —— 2/11 个有
+- `WanVideoEasyCache` —— 2/11 个有
+- `WanVideoFreeInitArgs` —— 2/11 个有
+- `WanVideoSetRadialAttention` —— 2/11 个有
+- `FlashVSRNode` —— 1/11 个有
+- `ImageResizeKJv2` —— 1/11 个有
+- `Manual XY Entry Info` —— 1/11 个有
+- `PMRF` —— 1/11 个有
+- `RHHiddenNodes` —— 1/11 个有
+- `SeedVR2` —— 1/11 个有
+- `SimpleMath+` —— 1/11 个有
+- `Video_Upscale_With_Model` —— 1/11 个有
+- `WanVideoExtraModelSelect` —— 1/11 个有
+- `WanVideoTeaCache` —— 1/11 个有
+- `easy imageSize` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,64 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_61
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.636857
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.884625
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/图生视频（解禁模型）：Wan2.2_Remix_2052630486182309890.json, 视频生成/图生视频/Wan2.2 14B I2V 图生视频工作流示例_1950475750447173633.json, 视频生成/图生视频/Wan2.2 14B图生视频_2053342015286460418.json, 视频生成/图生视频/wan2.2图生视频_2067963714497765378.json, 视频生成/图生视频/wan2.2图生视频工作流-官方版_2060327159524323330.json, 视频生成/文生视频/Wan2.2 14B文生视频_2053351928163258369.json, 视频生成/文生视频/wan2.2图生视频工作流_2034905327635795970.json]
+members: [视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json, 视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json, 视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json, 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100051839176765442.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100132977069084673.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100931168920227841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_61
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生视频（解禁模型）：Wan2.2_Remix_2052630486182309890.json、视频生成/图生视频/Wan2.2 14B I2V 图生视频工作流示例_1950475750447173633.json、视频生成/图生视频/Wan2.2 14B图生视频_2053342015286460418.json、视频生成/图生视频/wan2.2图生视频_2067963714497765378.json、视频生成/图生视频/wan2.2图生视频工作流-官方版_2060327159524323330.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json、视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json、视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json、视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json、视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SaveVideo`
-- `UNETLoader`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `WanImageToVideo` —— 6/7 个有
-- `ComfyMathExpression` —— 4/7 个有
-- `EmptyHunyuanLatentVideo` —— 1/7 个有
-- `GetImageSize` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `ResizeImagesByLongerEdge` —— 1/7 个有
-- `SetNode` —— 1/7 个有
+- `Text` —— 6/8 个有
+- `RH_Captioner` —— 5/8 个有
+- `StringReplace` —— 5/8 个有
+- `VHS_VideoCombine` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `PreviewImage` —— 4/8 个有
+- `RH_RhartImageG2ImageToImage` —— 4/8 个有
+- `TextConcatenate_UTK` —— 4/8 个有
+- `easy imageSplitGrid` —— 4/8 个有
+- `easy indexAnything` —— 4/8 个有
+- `CreateVideo` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `RH_LLMAPI_Pro_Node` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `GoogleTranslator` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `LoadVideo` —— 1/8 个有
+- `Qwen3VL_Chat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 86% |
-| Prompt 约束强度(CFG) | 4 | 4 - 15 | 7 | 31% |
-| 采样算法 | 1 | 1 - 2 | 7 | 69% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+| 宽度 | 241 | 241 - 241 | 8 | 100% |
+| 高度 | 50 | 40 - 50 | 8 | 93% |
 
 ## 常见问题
 
@@ -66,9 +82,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 86%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 15，7 个样本，取值分散，一致性仅 31%
-- 采样算法 中位数 1，观测区间 1 - 2，7 个样本
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 241，观测区间 241 - 241，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 50，观测区间 40 - 50，8 个样本，取值集中（一致性 93%）

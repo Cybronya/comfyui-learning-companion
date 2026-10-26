@@ -3,34 +3,44 @@ name: unknown_workflow_generic_757
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.67975
+common_nodes: [CR Prompt Text, JDCN_StringToList, ProcessString, SaveImage, Text Multiline, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json, 视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json, 视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json, 视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json]
+members: [图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（官方API）_1994092062255546369.json, 图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（贞贞AI工坊版）_1994054834863144962.json, 图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json, 图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_757
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json、视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json、视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json、视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（官方API）_1994092062255546369.json、图片生成/图生图/全能图片V1 Pro+Gemini 3 Pro PPT生成大师V3（贞贞AI工坊版）_1994054834863144962.json、图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json、图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+- `CR Prompt Text`
+- `JDCN_StringToList`
+- `ProcessString`
+- `SaveImage`
+- `Text Multiline`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `RH_Sora2_I2V_Realistic` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/4 个有
+- `Comfly_api_set` —— 3/4 个有
+- `Comfly_nano_banana2_edit` —— 3/4 个有
+- `RH_LLMAPI_NODE` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `easy promptReplace` —— 2/4 个有
+- `Comfly_nano_banana` —— 1/4 个有
+- `Comfly_nano_banana_edit` —— 1/4 个有
+- `Gemini3ImageNode` —— 1/4 个有
 
 ## 典型参数
 

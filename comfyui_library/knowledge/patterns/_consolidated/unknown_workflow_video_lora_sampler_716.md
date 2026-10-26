@@ -1,76 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_716
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.753
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, ExtendIntermediateSigmas, GH_ImageVideoComparer, GetImageSizeAndCount, GoohaiRatioAndResolution, ImageBatchMulti, ImageFromBatch, ImageFromBatch+, Int, KSamplerSelect, LazySwitchKJ, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, MultiplicationNode, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SimpleMath+, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, YusuLoadVideoUI, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.909
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageCompositeMasked, ImageConcatMulti, ImageRemoveBackground+, InvertMask, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskPreview, MaskToImage, PreviewImage, SolidMask, StringToFloatList, TransparentBGSession+, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json, 数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json]
+members: [视频生成/图生视频/Wan2.2 Fun Vace视频主体参考替换_1967228508000935938.json, 视频生成/图生视频/Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json, 视频生成/图生视频/Wan2.2 Fun Vace魔改版高质量视频主体参考替换V1_1966548561380978690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_716
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json、数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Fun Vace视频主体参考替换_1967228508000935938.json、视频生成/图生视频/Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json、视频生成/图生视频/Wan2.2 Fun Vace魔改版高质量视频主体参考替换V1_1966548561380978690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExtendIntermediateSigmas`
-- `GH_ImageVideoComparer`
-- `GetImageSizeAndCount`
-- `GoohaiRatioAndResolution`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `Int`
-- `KSamplerSelect`
-- `LazySwitchKJ`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `MultiplicationNode`
-- `PreviewAudio`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Float`
+- `INTConstant`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageRemoveBackground+`
+- `InvertMask`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `MaskPreview`
+- `MaskToImage`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `SolAttnMiniMax`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideoPath`
-- `VHS_SelectFilename`
+- `SolidMask`
+- `StringToFloatList`
+- `TransparentBGSession+`
+- `VHS_DuplicateMasks`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `YusuLoadVideoUI`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/3 个有
+- `PDIMAGE_LongerSize` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
 
 ## 典型参数
 
@@ -82,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

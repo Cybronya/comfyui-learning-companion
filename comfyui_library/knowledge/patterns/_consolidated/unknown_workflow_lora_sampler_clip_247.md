@@ -3,77 +3,77 @@ name: unknown_workflow_lora_sampler_clip_247
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.771
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Input Switch, CheckpointLoaderSimple, ConditioningZeroOut, FluxGuidance, GetImageSize, GetNode, Image Comparer (rgthree), ImageScale, ImageScaleToTotalPixels, KSamplerAdvanced, LanPaint_KSampler, LoadImage, LoraLoaderModelOnly, MaskPreview, PrimitiveFloat, ReferenceLatent, ResizeImageMaskNode, SaveImage, SetLatentNoiseMask, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.833
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageConcanate, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PDIMAGE_LongerSize, SaveImage, ScaleROPE, UNETLoader, VAEDecode, VAELoader, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/kinghere-klein局部重绘+改图+面部精修+抠图v3_2041831795703943169.json, 图片生成/图生图/kinghere-klein局部重绘+改图+面部精修v2_2041460608687673346.json]
+members: [图片生成/图生图/Choro Edit时间戳图像编辑改良版工作流V1（高成功率）_1987188717729329153.json, 图片生成/图生图/Chrono Edit图像编辑V1_1985640227198967809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_247
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/kinghere-klein局部重绘+改图+面部精修+抠图v3_2041831795703943169.json、图片生成/图生图/kinghere-klein局部重绘+改图+面部精修v2_2041460608687673346.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Choro Edit时间戳图像编辑改良版工作流V1（高成功率）_1987188717729329153.json、图片生成/图生图/Chrono Edit图像编辑V1_1985640227198967809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Input Switch`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `FluxGuidance`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScale`
-- `ImageScaleToTotalPixels`
-- `KSamplerAdvanced`
-- `LanPaint_KSampler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageConcanate`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskPreview`
-- `PrimitiveFloat`
-- `ReferenceLatent`
-- `ResizeImageMaskNode`
+- `ModelSamplingSD3`
+- `PDIMAGE_LongerSize`
 - `SaveImage`
-- `SetLatentNoiseMask`
-- `SetNode`
+- `ScaleROPE`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetImageSize+` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageScaleToMaxDimension` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MathExpression_UTK` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 22% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 22%
-- 调度器 最常用 simple，2 个样本，一致性 50%
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

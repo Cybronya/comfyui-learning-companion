@@ -3,69 +3,58 @@ name: unknown_workflow_video_upscale_lora_35
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [Batch Make (mtb), CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageUpscaleWithModelBatched, KEEP_ModelLoader, KEEP_ProcessImageSequence, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, PreviewAny, RH_LLMAPI_NODE, RIFE VFI, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.39
+common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, Fast Groups Bypasser (rgthree), FloatConstant, GetNode, GrowMask, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RIFE VFI, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [视频生成/图生视频/Worker I2V2_1977031736406233089.json, 视频生成/文生视频/Worker T2V2_1977028133595553793.json]
+members: [视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json, 视频生成/图生视频/人物替换x凡人二创_2002281060912230402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Worker I2V2_1977031736406233089.json、视频生成/文生视频/Worker T2V2_1977028133595553793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json、视频生成/图生视频/人物替换x凡人二创_2002281060912230402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Batch Make (mtb)`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
+- `FloatConstant`
 - `GetNode`
+- `GrowMask`
 - `INTConstant`
-- `ImageUpscaleWithModelBatched`
-- `KEEP_ModelLoader`
-- `KEEP_ProcessImageSequence`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `RIFE VFI`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `SetNode`
-- `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-
-**可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PDImageResizeV3` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RMBG` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
 
 ## 典型参数
 

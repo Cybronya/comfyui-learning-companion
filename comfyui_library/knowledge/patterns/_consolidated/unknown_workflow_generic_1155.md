@@ -1,31 +1,34 @@
 ---
 name: unknown_workflow_generic_1155
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadImage, LtxApi25ImageToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.777667
+common_nodes: [LoadImage, RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_ltx2_5_flf2v.json, comfyui-workflow-templates-json/api_ltx2_5_i2v.json]
+members: [视频生成/文生视频/RH 全能视频S Text to Video文生视频_1988598374855262209.json, 视频生成/文生视频/【阡陌】全能视频S高清文生视频每日免费5次，超过0.05元_次_1976562597690515457.json, 视频生成/文生视频/文生视频-RH 全能视频S Text to Video_1993696214761799682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1155
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_ltx2_5_flf2v.json、comfyui-workflow-templates-json/api_ltx2_5_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频S Text to Video文生视频_1988598374855262209.json、视频生成/文生视频/【阡陌】全能视频S高清文生视频每日免费5次，超过0.05元_次_1976562597690515457.json、视频生成/文生视频/文生视频-RH 全能视频S Text to Video_1993696214761799682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `LtxApi25ImageToVideo`
+- `RH_Sora2_T2V`
 - `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `TextInput_` —— 1/3 个有
 
 ## 典型参数
 
@@ -37,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

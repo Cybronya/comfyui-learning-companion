@@ -3,43 +3,32 @@ name: unknown_workflow_generic_1338
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.476
-common_nodes: [Any Switch (rgthree), CR Text Replace, CustomCombo, Fast Groups Bypasser (rgthree), Int2String, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveImage, Text Find and Replace, easy showAnything]
+coverage: 0.697
+common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, TextEncodeQwenImageEditPlus, workflow>2511angleset, workflow>seedver2 fix]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.0一键生成专业影视分镜与关键帧全流程提示词-双图版_低价_2104883463651414017.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-双图版_2104758765747789825.json]
+members: [图片生成/图生图/2511+fix_2018565884213727234.json, 图片生成/文生图/2511+fix（4angle）_2029115038375612418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1338
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0一键生成专业影视分镜与关键帧全流程提示词-双图版_低价_2104883463651414017.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-双图版_2104758765747789825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2511+fix_2018565884213727234.json、图片生成/文生图/2511+fix（4angle）_2029115038375612418.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CR Text Replace`
-- `CustomCombo`
-- `Fast Groups Bypasser (rgthree)`
-- `Int2String`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `Text Find and Replace`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `PreviewImage`
+- `TextEncodeQwenImageEditPlus`
+- `workflow>2511angleset`
+- `workflow>seedver2 fix`
 
 ## 典型参数
 

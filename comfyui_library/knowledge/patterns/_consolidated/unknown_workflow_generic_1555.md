@@ -3,47 +3,34 @@ name: unknown_workflow_generic_1555
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9575
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan27ImageEdit, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ImageToVideo, RH_AlibabaWan27ReferenceToVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_Wan25_I2V, RH_Wan25_T2V, RH_Wan26_I2V, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan26_T2V, SaveImage, SaveVideo]
+coverage: 0.65
+common_nodes: [LoadImage, PreviewImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json, 视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json]
+members: [图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json, 图片生成/图生图/电商修图之一键去背景_2047286262729543682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1555
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json、视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json、图片生成/图生图/电商修图之一键去背景_2047286262729543682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `RH_AlibabaWan27ImageEdit`
-- `RH_AlibabaWan27ImageEditPro`
-- `RH_AlibabaWan27ImageToVideo`
-- `RH_AlibabaWan27ReferenceToVideo`
-- `RH_AlibabaWan27TextToImage`
-- `RH_AlibabaWan27TextToImagePro`
-- `RH_AlibabaWan27TextToVideo`
-- `RH_AlibabaWan27VideoEdit`
-- `RH_AlibabaWan27VideoExtend`
-- `RH_Wan25_I2V`
-- `RH_Wan25_T2V`
-- `RH_Wan26_I2V`
-- `RH_Wan26_I2V_Flash`
-- `RH_Wan26_I2V_Flash_Custom`
-- `RH_Wan26_T2V`
+- `PreviewImage`
 - `SaveImage`
-- `SaveVideo`
+- `easy imageRemBg`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcatMulti` —— 1/2 个有
+- `MaskPreview` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,66 +3,53 @@ name: unknown_workflow_video_sampler_vae_152
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.773333
-common_nodes: [CLIPVisionLoader, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 1
+common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_1917274525388705794.json, 视频生成/图生视频/FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_1917039782952632322.json, 视频生成/图生视频/终极数字人 FantasyTalking_1933459219561500673.json]
+members: [视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json, 视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json, 视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_152
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_1917274525388705794.json、视频生成/图生视频/FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_1917039782952632322.json、视频生成/图生视频/终极数字人 FantasyTalking_1933459219561500673.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json、视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json、视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CreateCFGScheduleFloatList`
-- `DownloadAndLoadWav2VecModel`
-- `FantasyTalkingModelLoader`
-- `FantasyTalkingWav2VecEmbeds`
-- `GetNode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `AIO_Preprocessor`
+- `GetImageSizeAndCount`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/3 个有
-- `NTCosyVoiceCrossLingualSampler` —— 2/3 个有
-- `NTCosyVoiceInstruct2Sampler` —— 2/3 个有
-- `NTCosyVoiceZeroShotSampler` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `WanVideoEnhanceAVideo` —— 2/3 个有
-- `WanVideoExperimentalArgs` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `LayerUtility: TextBox` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
-- `WanVideoSLG` —— 1/3 个有
-- `WanVideoTorchCompileSettings` —— 1/3 个有
-- `WanVideoVRAMManagement` —— 1/3 个有
-- `easy textSwitch` —— 1/3 个有
+- `INTConstant` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `ColorMatch` —— 1/3 个有
+- `ImageSmartSharpen+` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `WanVideoSetLoRAs` —— 1/3 个有
 
 ## 典型参数
 

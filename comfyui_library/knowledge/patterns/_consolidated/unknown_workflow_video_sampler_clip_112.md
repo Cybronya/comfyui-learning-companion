@@ -1,79 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_clip_112
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.5666
-common_nodes: [CLIPLoader, CLIPTextEncode, FloatConstant, GetNode, INTConstant, ImageFromBatch+, JjkShowText, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, Primitive string multiline [Crystools], SetNode, SimpleCondition+, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, easy seed]
+frequency: 6
+level: moderate
+coverage: 0.916
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本图生视频_1981975406876213250.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json, 视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json, 视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json]
+members: [视频生成/图生视频/Wan图生视频工作流-KJ版_1894765402319159298.json, 视频生成/图生视频/Wan图生视频特效版（捏捏、挤压、切片）-KJ版_1899884316468600834.json, 视频生成/图生视频/wan镜头拉近到眼睛_1915835994845941761.json, 视频生成/图生视频/【抖音同款】抖胸舞_1922170035954188290.json, 视频生成/图生视频/【简易版】万物捏捏乐 ， 图片挤压捏爆视频特效- StarAi_1900639314223448065.json, 视频生成/图生视频/抖起来_1997177362523570178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_112
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json、视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本图生视频_1981975406876213250.json、视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json、视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json、视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan图生视频工作流-KJ版_1894765402319159298.json、视频生成/图生视频/Wan图生视频特效版（捏捏、挤压、切片）-KJ版_1899884316468600834.json、视频生成/图生视频/wan镜头拉近到眼睛_1915835994845941761.json、视频生成/图生视频/【抖音同款】抖胸舞_1922170035954188290.json、视频生成/图生视频/【简易版】万物捏捏乐 ， 图片挤压捏爆视频特效- StarAi_1900639314223448065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：57%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `FloatConstant`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch+`
-- `JjkShowText`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Primitive string multiline [Crystools]`
-- `SetNode`
-- `SimpleCondition+`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy seed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 4/5 个有
-- `CLIPVisionLoader` —— 4/5 个有
-- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
-- `GIMMVFI_interpolate` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `Int` —— 3/5 个有
-- `RH_LLMAPI_NODE` —— 3/5 个有
-- `WanImageToVideo` —— 3/5 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 2/5 个有
-- `ImageBatchMultiple+` —— 2/5 个有
-- `ModelPatchTorchSettings` —— 2/5 个有
-- `Power Lora Loader (rgthree)` —— 2/5 个有
-- `WanFirstLastFrameToVideo` —— 2/5 个有
-- `wanBlockSwap` —— 2/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `easy int` —— 1/5 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `WanVideoTeaCache` —— 4/6 个有
+- `easy imageSize` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `CR Text Replace` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `CropFace` —— 1/6 个有
+- `HyVideoEnhanceAVideo` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler_ancestral | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

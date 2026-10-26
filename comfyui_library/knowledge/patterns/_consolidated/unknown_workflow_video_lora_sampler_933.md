@@ -3,61 +3,54 @@ name: unknown_workflow_video_lora_sampler_933
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9245
-common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, Int, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy showAnything]
+coverage: 0.717
+common_nodes: [FloatToSigmas, GetNode, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/SmoothMixWan22T2V2.0+SIMGA精准调度+LLM自动扩词最强文生视频_1972294263423889410.json, 视频生成/文生视频/Wan2.2文生视频万相2.2+Lightx64+Fastwan+自动扩词_1950891540908548097.json]
+members: [视频生成/图生视频/wan2.2-fun-镜头控制_1956984735042867201.json, 视频生成/图生视频/首尾帧-Wan2_2-Fun_1954777743701491714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_933
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/SmoothMixWan22T2V2.0+SIMGA精准调度+LLM自动扩词最强文生视频_1972294263423889410.json、视频生成/文生视频/Wan2.2文生视频万相2.2+Lightx64+Fastwan+自动扩词_1950891540908548097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2-fun-镜头控制_1956984735042867201.json、视频生成/图生视频/首尾帧-Wan2_2-Fun_1954777743701491714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
+- `FloatToSigmas`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RHHiddenNodes`
-- `SimpleMath+`
+- `StringToFloatList`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `WanVideoEasyCache` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
-- `WanVideoScheduler` —— 1/2 个有
-- `WanVideoSigmaToStep` —— 1/2 个有
+- `ADE_CameraPoseAdvanced` —— 1/2 个有
+- `CameraPoseVisualizer` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `String Literal` —— 1/2 个有
+- `WanVideoFunCameraEmbeds` —— 1/2 个有
+- `easy globalSeed` —— 1/2 个有
 
 ## 典型参数
 

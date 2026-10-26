@@ -3,34 +3,34 @@ name: unknown_workflow_generic_753
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.8605
+common_nodes: [LoadImage, MuyeTextEditOutput, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json, 视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json, 视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json, 视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json]
+members: [图片生成/图生图/全能图片G-2故事板_2053029482843389954.json, 图片生成/图生图/全能图片G单图参考_2056631162113708033.json, 图片生成/图生图/全能图片G双图参考_2056637728506343425.json, 图片生成/文生图/全能图片G三图参考_2056668234644021250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_753
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json、视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json、视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json、视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-2故事板_2053029482843389954.json、图片生成/图生图/全能图片G单图参考_2056631162113708033.json、图片生成/图生图/全能图片G双图参考_2056637728506343425.json、图片生成/文生图/全能图片G三图参考_2056668234644021250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `MuyeTextEditOutput`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 3/4 个有
-- `RH_CinematicVideoGenerator` —— 2/4 个有
-- `RH_Sora2_I2V_Batch` —— 2/4 个有
-- `RH_Veo3_I2V_Batch` —— 1/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/4 个有
 
 ## 典型参数
 

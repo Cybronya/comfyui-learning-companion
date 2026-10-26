@@ -3,17 +3,17 @@ name: unknown_workflow_sampler_unet_vae_253
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.7485
-common_nodes: [CLIPLoader, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 0.7465
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/audio_minimax_music_3_2103383216622231553.json, 音频生成/音频生成/audio_minimax_music_3_Comfy官方工作流_2088632634527277058.json, 音频生成/音频生成/audio_minimax_music_3带时长参数控制_2088062682548232193.json, 音频生成/音频生成/minimax music3 文生音乐_2088358998398558210.json]
+members: [图片生成/文生图/Qwen image2.1 文生图_2099195780748890113.json, 图片生成/文生图/Qwen-Image-2.1透明图层（文生图）_2109536947332014082.json, 图片生成/文生图/Qwen2.1文生图_2102393926710816769.json, 图片生成/文生图/千问 qwen image 2.1 文生图+全节点注释_2101953220728938497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_253
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/audio_minimax_music_3_2103383216622231553.json、音频生成/音频生成/audio_minimax_music_3_Comfy官方工作流_2088632634527277058.json、音频生成/音频生成/audio_minimax_music_3带时长参数控制_2088062682548232193.json、音频生成/音频生成/minimax music3 文生音乐_2088358998398558210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen image2.1 文生图_2099195780748890113.json、图片生成/文生图/Qwen-Image-2.1透明图层（文生图）_2109536947332014082.json、图片生成/文生图/Qwen2.1文生图_2102393926710816769.json、图片生成/文生图/千问 qwen image 2.1 文生图+全节点注释_2101953220728938497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -24,49 +24,51 @@ source: knowledge_consolidation
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
+- `EmptyLatentImage`
 - `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeAudio`
-- `VAEDecodeAudioTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `JjkText` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `Anything Everywhere3` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `QwenImage21Cache` —— 2/4 个有
+- `Seed (rgthree)` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `TextGenerateLTX2Prompt` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 - `RHLLMChatNode` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 25 | 8 - 40 | 4 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 8 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode

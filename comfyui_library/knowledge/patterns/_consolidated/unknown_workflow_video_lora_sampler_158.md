@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_158
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.720909
-common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.6485
+common_nodes: [GetNode, ImageConcatMulti, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json, 视频生成/图生视频/KJ版 wan2.2-Fun-VACE动作迁移-美女跳舞_1968454947522138113.json, 视频生成/图生视频/wan2.2 Fun VACE 图生视频 KJ_1967866937906724865.json, 视频生成/图生视频/wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json, 视频生成/图生视频/wan2.2 Fun VACE首尾帧 KJ工作流_1967823701351739393.json, 视频生成/图生视频/wan2.2-Fun-VACE动作迁移-KJ_1967789727392890881.json, 视频生成/图生视频/wan2.2-Fun-VACE动作迁移-KJ_1968381285397868546.json, 视频生成/图生视频/wan2.2-Fun-VACE单图生视频-KJ版_1968419088865349633.json, 视频生成/图生视频/wan2.2-Fun-VACE突击侦查动作迁移-KJ_1967232757493534722.json, 视频生成/图生视频/wan2.2-Fun-VACE舞蹈动作迁移-KJ_1967220964087959554.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967848289393606658.json]
+members: [图片生成/文生图/AI大宗主人物一致性文生视频_2013973664265408514.json, 视频生成/图生视频/Wan2.1_T2V_lynx文生视频人物一致性_1976624751336660994.json, 视频生成/图生视频/wanvideo_T2V_14B_Lynx免训练ID一致性文生视频Lite版V2(横版)_1977298137419272194.json, 视频生成/图生视频/wanvideo_T2V_14B_lynx_1975848455060983809.json, 视频生成/图生视频/wanvideo_T2V_14B_lynx人物一致性_1977061045816709121.json, 视频生成/图生视频/【极速生成】指定美女图生视频 wanvideo_T2V_14B_lynx 动作流畅自然_1980064272694808577.json, 视频生成/图生视频/人物ID一致性 Lynx 文生视频 高效版_1978799084448419842.json, 视频生成/文生视频/Wan2.1_T2V_lynx文生视频人物一致性_1976486490379296769.json, 视频生成/文生视频/Wan2.1_T2V_lynx文生视频人物一致性_2070426739108564994.json, 视频生成/文生视频/【真实高清】Wan 万相 T2V_lynx文生视频人物一致性_1976851496895758338.json, 视频生成/文生视频/文加图生视频人物一致性（超还原）Wan2.1_T2V_2032378252462919682.json, 视频生成/文生视频/视频-文生视频-固定人脸Wan2.1_T2V_1977715877644750849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_158
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json、视频生成/图生视频/KJ版 wan2.2-Fun-VACE动作迁移-美女跳舞_1968454947522138113.json、视频生成/图生视频/wan2.2 Fun VACE 图生视频 KJ_1967866937906724865.json、视频生成/图生视频/wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json、视频生成/图生视频/wan2.2 Fun VACE首尾帧 KJ工作流_1967823701351739393.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/AI大宗主人物一致性文生视频_2013973664265408514.json、视频生成/图生视频/Wan2.1_T2V_lynx文生视频人物一致性_1976624751336660994.json、视频生成/图生视频/wanvideo_T2V_14B_Lynx免训练ID一致性文生视频Lite版V2(横版)_1977298137419272194.json、视频生成/图生视频/wanvideo_T2V_14B_lynx_1975848455060983809.json、视频生成/图生视频/wanvideo_T2V_14B_lynx人物一致性_1977061045816709121.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `GetNode`
-- `INTConstant`
 - `ImageConcatMulti`
-- `ImageResizeKJv2`
 - `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
 - `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoScheduler` —— 9/11 个有
-- `CreateCFGScheduleFloatList` —— 7/11 个有
-- `LayerUtility: TextJoin` —— 7/11 个有
-- `RH_Captioner` —— 7/11 个有
-- `DWPreprocessor` —— 6/11 个有
-- `GetImageSizeAndCount` —— 6/11 个有
-- `ImageBlend` —— 6/11 个有
-- `VHS_LoadVideo` —— 6/11 个有
-- `Zoe-DepthMapPreprocessor` —— 6/11 个有
-- `WanVideoVACEStartToEndFrame` —— 5/11 个有
-- `Text Multiline` —— 4/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
-- `PrimitiveFloat` —— 2/11 个有
-- `RH_Translator` —— 2/11 个有
-- `easy cleanGpuUsed` —— 2/11 个有
-- `ImageStitch` —— 1/11 个有
-- `LayerUtility: TextJoinV2` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
+- `PreviewImage` —— 11/12 个有
+- `CR Text` —— 7/12 个有
+- `ImageFromBatch+` —— 7/12 个有
+- `ImpactSwitch` —— 7/12 个有
+- `JWInteger` —— 7/12 个有
+- `RH_LLMAPI_NODE` —— 7/12 个有
+- `Text Concatenate` —— 7/12 个有
+- `Wan22PromptSelector` —— 7/12 个有
+- `WanVideoTorchCompileSettings` —— 7/12 个有
+- `MathExpression|pysssss` —— 6/12 个有
+- `easy showAnything` —— 6/12 个有
+- `CR Prompt Text` —— 1/12 个有
+- `FancyTimerNode` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `Joy_caption` —— 1/12 个有
+- `Joy_caption_load` —— 1/12 个有
+- `Primitive integer [Crystools]` —— 1/12 个有
+- `RHHiddenNodes` —— 1/12 个有
+- `SeedVR2` —— 1/12 个有
+- `SeedVR2BlockSwap` —— 1/12 个有
+- `ShowText|pysssss` —— 1/12 个有
+- `SimpleMath+` —— 1/12 个有
 
 ## 典型参数
 

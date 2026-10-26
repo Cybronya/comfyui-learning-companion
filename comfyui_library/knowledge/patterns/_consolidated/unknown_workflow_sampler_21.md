@@ -3,36 +3,38 @@ name: unknown_workflow_sampler_21
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncode, SaveImage]
+coverage: 0.8365
+common_nodes: [ImageConcanate, LoadImage, RunningHub ICCustom Loader, RunningHub ICCustom Sampler, SaveImage, Text Multiline, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/文生图/BitDance字节-文生图_2026930242924843010.json, 图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json, 图片生成/文生图/BitDance文生图V1_2026616770223677442.json, 图片生成/文生图/BitDance文生图_2026827350784086018.json, 图片生成/文生图/BitDance文生图_2027273573546594306.json, 图片生成/文生图/字节跳动 BitDance 文生图_2028002596664905730.json]
+members: [图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json, 图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json, 图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json, 图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json, 图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json, 图片生成/图生图/首饰产品迁移-AI模特佩戴产品首饰_1991829889062072321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_21
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/BitDance字节-文生图_2026930242924843010.json、图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json、图片生成/文生图/BitDance文生图V1_2026616770223677442.json、图片生成/文生图/BitDance文生图_2026827350784086018.json、图片生成/文生图/BitDance文生图_2027273573546594306.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json、图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json、图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json、图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json、图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BitDanceDecode`
-- `BitDanceLoader`
-- `BitDanceResolution`
-- `BitDanceSampler`
-- `BitDanceTextEncode`
+- `ImageConcanate`
+- `LoadImage`
+- `RunningHub ICCustom Loader`
+- `RunningHub ICCustom Sampler`
 - `SaveImage`
+- `Text Multiline`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/6 个有
-- `Text` —— 1/6 个有
+- `ImageAndMaskPreview` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

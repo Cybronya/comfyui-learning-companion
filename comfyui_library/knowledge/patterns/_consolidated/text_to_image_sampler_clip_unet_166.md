@@ -1,78 +1,75 @@
 ---
 name: text_to_image_sampler_clip_unet_166
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.892
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.84525
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux Kontext SingalImage_单图修改_Borges_1951605887653851137.json, 图片生成/图生图/Kontext 单图编辑_1954835404466774017.json, 图片生成/图生图/kontext _ 22种风格切换合集_1940781888825147394.json]
+members: [图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json, 图片生成/文生图/Krea2文生图_2095904097835765761.json, 图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json, 图片生成/文生图/krea2-场景图_2094627383453241346.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_166
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext SingalImage_单图修改_Borges_1951605887653851137.json、图片生成/图生图/Kontext 单图编辑_1954835404466774017.json、图片生成/图生图/kontext _ 22种风格切换合集_1940781888825147394.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json、图片生成/文生图/Krea2文生图_2095904097835765761.json、图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json、图片生成/文生图/krea2-场景图_2094627383453241346.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
-- `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageResize+` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `FluxResolutionNode` —— 1/3 个有
-- `GoogleTranslateTextNode` —— 1/3 个有
-- `Image Padding` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `ModelSamplingFlux` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `RMBG` —— 1/3 个有
-- `Text String` —— 1/3 个有
+- `ResolutionSelector` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `Seed (rgthree)` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `easy stylesSelector` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 12 - 20 | 3 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | 512 - 1080 | 3 | 71% |
-| 高度 | 1280 | 512 - 1920 | 3 | 53% |
+| 宽度 | 680 | 512 - 768 | 4 | 85% |
+| 高度 | 1120 | 512 - 1280 | 4 | 69% |
+| 采样步数 | 9 | 8 - 10 | 4 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 12 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 512 - 1080，3 个样本
-- 高度 中位数 1280，观测区间 512 - 1920，3 个样本
+- 宽度 中位数 680，观测区间 512 - 768，4 个样本，取值集中（一致性 85%）
+- 高度 中位数 1120，观测区间 512 - 1280，4 个样本
+- 采样步数 中位数 9，观测区间 8 - 10，4 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

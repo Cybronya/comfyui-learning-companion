@@ -1,65 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_203
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.900444
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.9141
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SplineEditor, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
 problems: []
 missing: []
-members: [数字人/数字人/Infinitetalk视频转数字人-动态更强更自然_2043528487876694017.json, 视频生成/图生视频/InfiniteTalk数字人 _ 视频生视频-自动对口型（支持唱歌_说话）高动态_1992841755221618690.json, 视频生成/图生视频/数字人口播_2006243874485833729.json, 视频生成/图生视频/超强视频对口型（唱歌数字人））_2000589265400721409.json, 视频生成/图生视频/超自然对口型+视频数字人_2000608709594185729.json, 音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100410279401181185.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100497922336055297.json, 音频生成/音频生成/超自然对口型 视频数字人_2000587001097224194.json]
+members: [图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json, 数字人/数字人/Wanmove轨迹控制运动_1999275955468238849.json, 视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json, 视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json, 视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json, 视频生成/图生视频/Wanmove轨迹控制_2000380802502455298.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999041056794628098.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999430361350275074.json, 视频生成/图生视频/Wanmove轨迹控制运动视频_2007414676862279682.json, 视频生成/图生视频/图生视频 轨迹控制 稳定好玩~【wan2.1】_1999451312800624642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_203
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Infinitetalk视频转数字人-动态更强更自然_2043528487876694017.json、视频生成/图生视频/InfiniteTalk数字人 _ 视频生视频-自动对口型（支持唱歌_说话）高动态_1992841755221618690.json、视频生成/图生视频/数字人口播_2006243874485833729.json、视频生成/图生视频/超强视频对口型（唱歌数字人））_2000589265400721409.json、视频生成/图生视频/超自然对口型+视频数字人_2000608709594185729.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json、数字人/数字人/Wanmove轨迹控制运动_1999275955468238849.json、视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json、视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json、视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
 - `ImageResizeKJv2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
+- `SplineEditor`
 - `VHS_VideoCombine`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `WanVideoWanDrawWanMoveTracks`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 8/9 个有
-- `Anything Everywhere` —— 7/9 个有
-- `INTConstant` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `easy int` —— 7/9 个有
-- `Float to Int` —— 2/9 个有
-- `SimpleMath+` —— 2/9 个有
-- `SoundFlow_GetLength` —— 2/9 个有
-- `Getter` —— 1/9 个有
-- `ImageConcanate` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `LoadImage` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `Setter` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `INTConstant` —— 5/10 个有
+- `easy showAnything` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `SimpleMath+` —— 2/10 个有
+- `CR SDXL Aspect Ratio` —— 1/10 个有
+- `FL_PathAnimator` —— 1/10 个有
+- `Getter` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `Setter` —— 1/10 个有
+- `Text` —— 1/10 个有
 
 ## 典型参数
 

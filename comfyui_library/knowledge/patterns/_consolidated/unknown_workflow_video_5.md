@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_video_5
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 1
-common_nodes: [GrowMask, INTConstant, ImageBatch, ImageCompositeMasked, ImageResizeKJv2, ImageToMask, InvertMask, LayerColor: BrightnessContrastV2, LoadAudio, LoadImage, LoadImageMask, MaskBlur+, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.9889
+common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/vlog滑屏转场_2013490499956514818.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2050882588805480449.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2057267742750892033.json, 视频生成/图生视频/滑屏转场视频_2059150379807494146.json, 视频生成/文生视频/抖音剪映同款滑屏转场视频_1961976286589730817.json]
+members: [视频生成/图生视频/FramePack图生视频-RH基础版_1914875199035011073.json, 视频生成/图生视频/FramePack图生视频-低显存可运行_1934422805393928194.json, 视频生成/图生视频/FramePack图生视频_1913506137017384962.json, 视频生成/图生视频/FramePack图生视频工作流_1913021378956853250.json, 视频生成/图生视频/FramePack官方工作流-I2V-图片生视频_1930284577410158593.json, 视频生成/图生视频/FramePack支持首尾帧_1914187489505148930.json, 视频生成/图生视频/FramePack视频生成_1913018448966840321.json, 视频生成/图生视频/FramePack首尾帧工作流_1914170222801055745.json, 视频生成/图生视频/一次生成60秒视频FramePack最新开源工作流（强大到可怕）_1913061683646951426.json, 视频生成/图生视频/龙明FramePack图生视频_1928682725493084162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_5
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/vlog滑屏转场_2013490499956514818.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频-RH基础版_1914875199035011073.json、视频生成/图生视频/FramePack图生视频-低显存可运行_1934422805393928194.json、视频生成/图生视频/FramePack图生视频_1913506137017384962.json、视频生成/图生视频/FramePack图生视频工作流_1913021378956853250.json、视频生成/图生视频/FramePack官方工作流-I2V-图片生视频_1930284577410158593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `GrowMask`
-- `INTConstant`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `InvertMask`
-- `LayerColor: BrightnessContrastV2`
-- `LoadAudio`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `LoadImageMask`
-- `MaskBlur+`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `easy int` —— 5/10 个有
+- `LayerUtility: PurgeVRAM` —— 1/10 个有
 
 ## 典型参数
 

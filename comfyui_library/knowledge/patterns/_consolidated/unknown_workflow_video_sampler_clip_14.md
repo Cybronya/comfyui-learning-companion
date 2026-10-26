@@ -1,96 +1,84 @@
 ---
 name: unknown_workflow_video_sampler_clip_14
 type: Unknown Workflow
-frequency: 24
-level: strong
-coverage: 0.364708
-common_nodes: [Any2ListNode, AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageBatch, ImageFromBatch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, ModelPatchLoader, PreviewAny, PrimitiveFloat, SetNode, TextInput_, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy indexAnything, easy int, easy promptLine, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 23
+level: moderate
+coverage: 0.522696
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json, 数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json, 数字人/数字人/数字人对口型_2093326224767672322.json, 数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json, 视频生成/图生视频/1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json, 视频生成/图生视频/InfiniteTalk-comfui官方版工作流_2032340272989872130.json, 视频生成/图生视频/InfiniteTalk图片数字人对口型_2033825767792054274.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2016086037126189058.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2110324012046966785.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流 (1)_2058730777491369986.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2054726545402548226.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2056896899143262209.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2059550534989864961.json, 视频生成/图生视频/单人InfiniteTalk官方版电商工作流_2071583964170641410.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2040337221068263426.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2074322051434901506.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2074419354204196865.json, 视频生成/图生视频/图生视频-单人InfiniteTalk官方版工作流_2066133635832565762.json, 视频生成/图生视频/数字人口播工作流最长25秒 生产力版_2096966156518248449.json, 视频生成/图生视频/无限时长视频-InfiniteTalk数字人_2019751062122536962.json, 视频生成/图生视频/无限时长音频+超自然数字人_2052234366641815554.json, 视频生成/图生视频/电商带货版 InfiniteTalk 单人数字人官方版_2050130108794580993.json, 视频生成/图生视频/震撼！效果太牛了！超真实感数字人口播 虚拟人口播 短视频运营利器_2039859675247677441.json, 视频生成/文生视频/直播搭建带货数字人，_2073822907255578625.json]
+members: [视频生成/图生视频/Qwen-VL自动反推-图生视频-comfyui官方流-自用_1981244475731337218.json, 视频生成/图生视频/Supermate 推荐=Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1981353708422348802.json, 视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_1996506562493554690.json, 视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_2009254393203396610.json, 视频生成/图生视频/WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_1982712132548599809.json, 视频生成/图生视频/WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_2038972688689008641.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V图生视频_2038989882521030658.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2009543545169907714.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2047592882332241922.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2051628991756419074.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2070382789744218114.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧视频_1987169484022681602.json, 视频生成/图生视频/WAN2.2-RemixV2__I2V首尾帧视频_2000107947743211522.json, 视频生成/图生视频/WAN2.2-RemixV2__I2V首尾帧视频_2014511689311461377.json, 视频生成/图生视频/WAN2.2图生视频_1999730211526766594.json, 视频生成/图生视频/WAN2.2高动态图生视频_2005870552181080066.json, 视频生成/图生视频/Wan2.2 Smooth + Qwen VL3 双参自动丝滑首尾帧V2_1982684734805426178.json, 视频生成/图生视频/Wan2.2+Qwen3VL+Foley模拟多模态全自动-图-视频-声音_1987069561856004097.json, 视频生成/图生视频/Wan2.2+Qwen3VL+Foley模拟多模态全自动-图-首尾帧-声音_1987091319136956418.json, 视频生成/图生视频/Work-Fisher_Qwen3VL-全自动图片反推+图生视频_1982359421470810113.json, 视频生成/图生视频/Work-Fisher_Qwen3VL-全自动首尾帧反推+图生视频_1982359410183946242.json, 视频生成/图生视频/wan2.2 remix2.1动态增强版，图生视频，首尾帧_2016050718058221570.json, 视频生成/图生视频/wan2.2+foley 图生视频自动音效_2004446974457901057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json、数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json、数字人/数字人/数字人对口型_2093326224767672322.json、数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json、视频生成/图生视频/1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/Qwen-VL自动反推-图生视频-comfyui官方流-自用_1981244475731337218.json、视频生成/图生视频/Supermate 推荐=Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1981353708422348802.json、视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_1996506562493554690.json、视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_2009254393203396610.json、视频生成/图生视频/WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_1982712132548599809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：24
-- **可信度**：强结论
-- **平均知识覆盖**：36%
+- **样本数**：23
+- **可信度**：中等可信
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
-- `Any2ListNode`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+全部 23 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSampler`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `ModelPatchLoader`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `SetNode`
-- `TextInput_`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy indexAnything`
-- `easy int`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 21/24 个有
-- `MathExpression|pysssss` —— 21/24 个有
-- `PreviewAudio` —— 21/24 个有
-- `PreviewImage` —— 21/24 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/24 个有
-- `Any To String (mtb)` —— 1/24 个有
-- `Apply Whisper` —— 1/24 个有
-- `IndexTTS2Run` —— 1/24 个有
-- `Label (rgthree)` —— 1/24 个有
-- `MelBandRoFormerModelLoader` —— 1/24 个有
-- `MelBandRoFormerSampler` —— 1/24 个有
-- `PrimitiveStringMultiline` —— 1/24 个有
-- `SaveAudio` —— 1/24 个有
-- `ZML_ImageEncryption` —— 1/24 个有
+- `INTConstant` —— 22/23 个有
+- `Int` —— 22/23 个有
+- `ModelPatchTorchSettings` —— 22/23 个有
+- `PreviewImage` —— 22/23 个有
+- `wanBlockSwap` —— 22/23 个有
+- `RIFE VFI` —— 21/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 19/23 个有
+- `easy cleanGpuUsed` —— 18/23 个有
+- `ImageResizeKJv2` —— 16/23 个有
+- `ImageLoader` —— 14/23 个有
+- `WanImageToVideo` —— 12/23 个有
+- `WanFirstLastFrameToVideo` —— 11/23 个有
+- `LoadImage` —— 10/23 个有
+- `LoraLoaderModelOnly` —— 8/23 个有
+- `MultiplePathsInput` —— 8/23 个有
+- `Qwen3_VQA` —— 8/23 个有
+- `easy showAnything` —— 8/23 个有
+- `Any To Any` —— 4/23 个有
+- `VHS_SelectFilename` —— 4/23 个有
+- `HunyuanVideoFoley` —— 3/23 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/23 个有
+- `easy float` —— 2/23 个有
+- `Float` —— 1/23 个有
+- `PainterI2V` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 24 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 24 | 100% |
-| 采样算法 | euler | - | 24 | 100% |
-| 调度器 | normal | - | 24 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
+| 采样步数 | fixed | - | 23 | 61% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 23 | 31% |
+| 采样算法 | 1 | 1 - 1 | 23 | 100% |
+| 调度器 | euler | - | 23 | 100% |
+| 重绘幅度 | normal | - | 23 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 157/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，24 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，24 个样本，一致性 100%
-- 调度器 最常用 normal，24 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
-- 高发问题（157/24 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，23 个样本，一致性 61%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，23 个样本，取值分散，一致性仅 31%
+- 采样算法 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，23 个样本，一致性 100%
+- 重绘幅度 最常用 normal，23 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

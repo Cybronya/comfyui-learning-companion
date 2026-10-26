@@ -1,46 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_25
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8915
-common_nodes: [AniCrafterLoader, AniCrafterPreImage, AniCrafterPreText, AniCrafterPreVideo, AniCrafterSampler, LoadImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 3
+level: strong
+coverage: 0.854667
+common_nodes: [CreateVideo, DiffuEraserLoader, DiffuEraserSampler, Fast Groups Bypasser (rgthree), FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, MaskToImage, RepeatImageBatch, SAM3Segment, SaveVideo, VHS_LoadVideo, VHS_SelectImages, VHS_SelectMasks, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json, 视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json]
+members: [视频生成/图生视频/豆包视频去水印 V2+超分放大至 1080p_2073321857784311809.json, 视频生成/图生视频/超能视频2.0 去水印+超分放大至 1080p_2073310744208302081.json, 视频生成/图生视频/超能视频2.0 去水印+超分放大至 1080p_2073310943253192705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json、视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/豆包视频去水印 V2+超分放大至 1080p_2073321857784311809.json、视频生成/图生视频/超能视频2.0 去水印+超分放大至 1080p_2073310744208302081.json、视频生成/图生视频/超能视频2.0 去水印+超分放大至 1080p_2073310943253192705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AniCrafterLoader`
-- `AniCrafterPreImage`
-- `AniCrafterPreText`
-- `AniCrafterPreVideo`
-- `AniCrafterSampler`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `CreateVideo`
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `Fast Groups Bypasser (rgthree)`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `GetVideoComponents`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `MaskToImage`
+- `RepeatImageBatch`
+- `SAM3Segment`
+- `SaveVideo`
 - `VHS_LoadVideo`
+- `VHS_SelectImages`
+- `VHS_SelectMasks`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `ImageBatch` —— 2/3 个有
+- `Masks Add` —— 2/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8.26797e+08 | 3.21812e+08 - 1.62062e+09 | 3 | 42% |
+| Prompt 约束强度(CFG) | randomize | - | 3 | 100% |
+| 采样算法 | 2 | 2 - 2 | 3 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 3 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 3 | 100% |
 
 ## 常见问题
 
@@ -48,4 +64,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8.26797e+08，观测区间 3.21812e+08 - 1.62062e+09，3 个样本，取值分散，一致性仅 42%
+- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，3 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.62062e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

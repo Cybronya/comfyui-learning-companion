@@ -3,29 +3,33 @@ name: unknown_workflow_generic_777
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.429
-common_nodes: [CR Text, RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
+coverage: 0.9335
+common_nodes: [AILab_ImageCrop, GetImageSize, ImageScale, KOOK_SaveJPGImage, LoadImage, MathExpression|pysssss, PreviewAny]
 problems: []
 missing: []
-members: [视频生成/文生视频/seedance2.0mini文生视频_2069928407701479425.json, 视频生成/文生视频/seedance2.0mini文生视频_2070007888021639169.json, 视频生成/文生视频/seedance2.0mini文生视频_2070008937939816450.json, 视频生成/文生视频/seedance2.0nimi文生视频_2070005577903853569.json]
+members: [图片生成/图生图/电商上衣无头剪裁_2057287428645412865.json, 图片生成/图生图/电商上衣无头剪裁成不同比例_2060181116883128322.json, 图片生成/图生图/电商上衣有头剪裁成不同比例_2056558971993026561.json, 图片生成/图生图/电商裤子剪裁成不同比例_2056182394398494721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_777
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/seedance2.0mini文生视频_2069928407701479425.json、视频生成/文生视频/seedance2.0mini文生视频_2070007888021639169.json、视频生成/文生视频/seedance2.0mini文生视频_2070008937939816450.json、视频生成/文生视频/seedance2.0nimi文生视频_2070005577903853569.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/电商上衣无头剪裁_2057287428645412865.json、图片生成/图生图/电商上衣无头剪裁成不同比例_2060181116883128322.json、图片生成/图生图/电商上衣有头剪裁成不同比例_2056558971993026561.json、图片生成/图生图/电商裤子剪裁成不同比例_2056182394398494721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartVideoSparkvideo20MiniTextToVideo`
-- `SaveVideo`
+- `AILab_ImageCrop`
+- `GetImageSize`
+- `ImageScale`
+- `KOOK_SaveJPGImage`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `PreviewAny`
 
 ## 典型参数
 

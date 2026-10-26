@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_1191
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.697
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CR Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, SaveAudioMP3]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan_vace_inpainting.json, 图片生成/图生图/Vidu广告专业级系列视频模型_2100411832715530241.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json, 音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json, 音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1191
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_vace_inpainting.json、图片生成/图生图/Vidu广告专业级系列视频模型_2100411832715530241.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json、音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json、音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `LLViduQ3` —— 1/2 个有
-- `bd7f73a0-ec67-4f46-8671-17088d8e31b7` —— 1/2 个有
+- `Apply Whisper` —— 2/3 个有
+- `TrimAudioDuration` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

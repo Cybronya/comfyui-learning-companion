@@ -2,72 +2,82 @@
 name: unknown_workflow_sampler_clip_unet_185
 type: Unknown Workflow
 frequency: 7
-level: weak
-coverage: 0.929143
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.868286
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, ModelPatchLoader, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/星绘-Z-image-base-Z-Image-tuber对比整合_2016355882694615042.json, 图片生成/文生图/2031214053871329282.json, 图片生成/文生图/HeGenAI-N8N-QWEN-基础文生图_1968571302049140738.json, 图片生成/文生图/Nunchaku Qwen-Image和官版8步对比_1964982995616677890.json, 图片生成/文生图/Qwen-Image 8步和4步对比_1955342392250417153.json, 图片生成/文生图/Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json, 图片生成/文生图/qwen-image加速生图4步8步20步对比工作流_1954915934088544258.json]
+members: [图片生成/反推提示词/Z-Image ControlNet、Qwen3-VL，支持姿势_深度_边缘控制生图_1997645811326586881.json, 图片生成/图生图/59.tonnie-ZImage-CN控制_2009057459750572033.json, 图片生成/图生图/66.tonnie-Zimage controlnet2.1深度洗图_2009444441521659906.json, 图片生成/图生图/Z-IMAGE+Controlnet_2004837379913515010.json, 图片生成/图生图/Z-Image+CN2.0洗图神器_2000462790190133250.json, 图片生成/图生图/Z-Image+CN2.1All In One_2003517827271303169.json, 图片生成/文生图/快速生图三剑客：Z-Image、ControlNet、Qwen3-VL，支持姿势_深度_边缘控制生图_1996753267008884738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_185
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/星绘-Z-image-base-Z-Image-tuber对比整合_2016355882694615042.json、图片生成/文生图/2031214053871329282.json、图片生成/文生图/HeGenAI-N8N-QWEN-基础文生图_1968571302049140738.json、图片生成/文生图/Nunchaku Qwen-Image和官版8步对比_1964982995616677890.json、图片生成/文生图/Qwen-Image 8步和4步对比_1955342392250417153.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Z-Image ControlNet、Qwen3-VL，支持姿势_深度_边缘控制生图_1997645811326586881.json、图片生成/图生图/59.tonnie-ZImage-CN控制_2009057459750572033.json、图片生成/图生图/66.tonnie-Zimage controlnet2.1深度洗图_2009444441521659906.json、图片生成/图生图/Z-IMAGE+Controlnet_2004837379913515010.json、图片生成/图生图/Z-Image+CN2.0洗图神器_2000462790190133250.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
+- `LoadImage`
+- `ModelPatchLoader`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `LayerUtility: ImageReel` —— 5/7 个有
-- `LayerUtility: ImageReelComposit` —— 5/7 个有
-- `PreviewImage` —— 4/7 个有
-- `CR Text` —— 2/7 个有
-- `INTConstant` —— 2/7 个有
-- `CR SDXL Aspect Ratio` —— 1/7 个有
-- `ConditioningZeroOut` —— 1/7 个有
-- `DF_Get_image_size` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `NunchakuQwenImageDiTLoader` —— 1/7 个有
-- `StringConcatenate` —— 1/7 个有
+- `ModelSamplingAuraFlow` —— 6/7 个有
+- `QwenImageDiffsynthControlnet` —— 6/7 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `AILab_QwenVL` —— 4/7 个有
+- `Label (rgthree)` —— 4/7 个有
+- `PreviewAny` —— 4/7 个有
+- `GetImageSize` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `Canny` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `PixelPerfectResolution` —— 2/7 个有
+- `Qwen3_VQA` —— 2/7 个有
+- `ShowText|pysssss` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `ImageSharpen` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `ZImageFunControlnet` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 25 | 7 | 38% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 32% |
-| 采样算法 | euler | - | 7 | 71% |
-| 调度器 | simple | - | 7 | 100% |
+| 采样步数 | 9 | 9 - 10 | 7 | 95% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | res_multistep | - | 7 | 57% |
+| 调度器 | simple | - | 7 | 86% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 25，7 个样本，取值分散，一致性仅 38%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 32%
-- 采样算法 最常用 euler，7 个样本，一致性 71%
-- 调度器 最常用 simple，7 个样本，一致性 100%
+- 采样步数 中位数 9，观测区间 9 - 10，7 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，7 个样本，一致性 57%
+- 调度器 最常用 simple，7 个样本，一致性 86%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（11/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

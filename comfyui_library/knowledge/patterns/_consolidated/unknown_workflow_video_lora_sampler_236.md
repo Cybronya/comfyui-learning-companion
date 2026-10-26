@@ -1,59 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_236
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.636875
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
+coverage: 0.833333
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流 (1)_2071423701639323649.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069615585679462402.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069666503523389441.json, 视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2070043341298954242.json, 视频生成/图生视频/Scail-2.0_2095776718383575042.json, 视频生成/图生视频/Scail-2_2095778171303059458.json, 视频生成/图生视频/pipiai-SCAIL2-超快超长视频_2071797776257732609.json]
+members: [数字人/数字人/HuMo单音频数字人工作流_1971596152221200385.json, 数字人/数字人/HuMo数字人工作流_1971185989165162498.json, 数字人/数字人/WanVideo21_HuMo数字人_1968481829999267842.json, 数字人/数字人/双图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967086191713587201.json, 数字人/数字人/🤖AI数字人新玩法！HuMo模型+IndexTTS2生成自定义口播视频｜ComfyUI全流程教程_1968012276299104257.json, 视频生成/图生视频/IndexTTS2音频生成+Humo数字人_1957726679996399618.json, 视频生成/图生视频/单图+语音-字节HuMo数字人(提示+图+音频驱动)含双图流_1968378350089719809.json, 视频生成/图生视频/单图-数字人-HuMo多模态+TTS数字人(提示+图+音频驱动)_1968155104769617921.json, 音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_236
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流 (1)_2071423701639323649.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069615585679462402.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2069666503523389441.json、视频生成/图生视频/SCAIL2-人物替换_动作迁移-超长视频急速流_2070043341298954242.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/HuMo单音频数字人工作流_1971596152221200385.json、数字人/数字人/HuMo数字人工作流_1971185989165162498.json、数字人/数字人/WanVideo21_HuMo数字人_1968481829999267842.json、数字人/数字人/双图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967086191713587201.json、数字人/数字人/🤖AI数字人新玩法！HuMo模型+IndexTTS2生成自定义口播视频｜ComfyUI全流程教程_1968012276299104257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageColorMatch+`
-- `ImageResizeKJv2`
-- `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2SimpleVideo`
-- `SetNode`
-- `VAELoader`
-- `VHS_LoadVideo`
+全部 9 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 7/8 个有
-- `WanChunkFeedForward` —— 5/8 个有
-- `AILab_QwenVL` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ZML_MergeText` —— 2/8 个有
-- `Float to Int` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `WanVideoSetLoRAs` —— 8/9 个有
+- `ImageBatchMulti` —— 7/9 个有
+- `PreviewImage` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `GetNode` —— 6/9 个有
+- `INTConstant` —— 6/9 个有
+- `IndexTTS2Run` —— 6/9 个有
+- `PreviewAudio` —— 6/9 个有
+- `SetNode` —— 6/9 个有
+- `ImageConcatMulti` —— 5/9 个有
+- `PrimitiveInt` —— 4/9 个有
+- `Text Multiline` —— 3/9 个有
+- `Audio Duration (mtb)` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `PrimitiveString` —— 2/9 个有
+- `SaveAudio` —— 2/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `easy imageRemBg` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `ttN text` —— 2/9 个有
+- `AudioToFPS` —— 1/9 个有
+- `EmptyImage` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
 
 ## 典型参数
 

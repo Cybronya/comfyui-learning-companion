@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1125
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.675333
-common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex, SaveAudioMP3]
+coverage: 0.730333
+common_nodes: [JjkText, LoadImage, RH_RhartVideoSparkvideo20ImageToVideo, RH_RhartVideoSparkvideo20MiniImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【遇见AI】indexTTS2语音模型，声音克隆，带情绪，多人对话_2052663528166834177.json, 音频生成/音频生成/单人说话不带情绪+全节点注释_2052264557875343361.json, 音频生成/音频生成/单人说话带情绪用向量（数字）控制+全节点注释_2052273736602136578.json]
+members: [视频生成/图生视频/Seedance2.0 图生视频_1946943476031188994.json, 视频生成/图生视频/首尾帧生视频 最新Seedance   最强图生视频_2070382291490263041.json, 视频生成/文生视频/最新最强Seedance2.0 图生视频_2070305071950295042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1125
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/【遇见AI】indexTTS2语音模型，声音克隆，带情绪，多人对话_2052663528166834177.json、音频生成/音频生成/单人说话不带情绪+全节点注释_2052264557875343361.json、音频生成/音频生成/单人说话带情绪用向量（数字）控制+全节点注释_2052273736602136578.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 图生视频_1946943476031188994.json、视频生成/图生视频/首尾帧生视频 最新Seedance   最强图生视频_2070382291490263041.json、视频生成/文生视频/最新最强Seedance2.0 图生视频_2070305071950295042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
+- `JjkText`
 - `LoadImage`
-- `MultiLinePromptIndex`
-- `SaveAudioMP3`
+- `RH_RhartVideoSparkvideo20ImageToVideo`
+- `RH_RhartVideoSparkvideo20MiniImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
 
 ## 典型参数
 

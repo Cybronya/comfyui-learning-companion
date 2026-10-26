@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_357
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.996
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Float to Int, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, RHHiddenNodes, RH_GetAudioDuration, SimpleMath+, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner]
+frequency: 7
+level: moderate
+coverage: 0.722429
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, CR Text Replace, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017919302799724546.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017944917347147778.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2018324382791245826.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2026965800891981825.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2027307352143171585.json, 视频生成/图生视频/Wan2.2+RCM+Infinite+Talk官方对口型工作流图生数字人_2019421530488315905.json]
+members: [视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json, 视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json, 视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json, 视频生成/图生视频/Minimax_H3 Mv 开场和间奏画面制作_2088633195758702594.json, 视频生成/文生视频/开源版MinimaxH3完美口播带货数字人参考音频数字人短视频带货_2086540418640076801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_357
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017919302799724546.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017944917347147778.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2018324382791245826.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2026965800891981825.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2027307352143171585.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json、视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json、视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
 - `CR Text`
-- `ColorMatch`
-- `Float to Int`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `CR Text Replace`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `RHHiddenNodes`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `SomethingToString`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WujiCleaner`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 6/7 个有
+- `PreviewAny` —— 6/7 个有
+- `StringToInt` —— 6/7 个有
+- `ttN concat` —— 6/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `IntToString` —— 1/7 个有
+- `LazySwitch1way` —— 1/7 个有
+- `ModelAttentionBackend` —— 1/7 个有
+- `MultiTextConcatenate` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PrimitiveBoolean` —— 1/7 个有
+- `ShowAnything|Mie` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
+- `floatToInt _O` —— 1/7 个有
+- `sanmi Float` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,39 +3,33 @@ name: unknown_workflow_generic_1617
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8535
-common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_RhartVideoGOfficialEditVideo, RH_RhartVideoGOfficialTextToVideo, SaveVideo]
+coverage: 0.8705
+common_nodes: [LoadImage, Preview from image [Crystools], RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频X-官方版_2065777235130413058.json, 视频生成/文生视频/全能视频X-视频编辑（官方版）_2075867234102235138.json]
+members: [图片生成/文生图/xj_2033491347738464257.json, 图片生成/文生图/真人过审_2063974293893115905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1617
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频X-官方版_2065777235130413058.json、视频生成/文生视频/全能视频X-视频编辑（官方版）_2075867234102235138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/xj_2033491347738464257.json、图片生成/文生图/真人过审_2063974293893115905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoGOfficialEditVideo`
-- `RH_RhartVideoGOfficialTextToVideo`
-- `SaveVideo`
+- `Preview from image [Crystools]`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGOfficialImageToVideo` —— 1/2 个有
-- `RH_RhartVideoGOfficialImageToVideoV15` —— 1/2 个有
-- `RH_RhartVideoGOfficialReferenceToVideo` —— 1/2 个有
-- `RH_RhartVideoGOfficialVideoExtend` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

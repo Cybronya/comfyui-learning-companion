@@ -3,33 +3,34 @@ name: unknown_workflow_video_64
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
+coverage: 0.963
+common_nodes: [AudioCrop, AudioSeparation, LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [视频生成/图生视频/一分钟视频_1913101835836583938.json, 视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json, 视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json]
+members: [数字人/数字人/余温-音频参考对口型工作流_2114373807736713217.json, 数字人/数字人/余温-音频参考驱动对口型数字人工作流｜口型同步视频生视频_2114626685239910401.json, 数字人/数字人/视频口型同步_latentsync1.6_1941464262185480193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_64
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一分钟视频_1913101835836583938.json、视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json、视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/余温-音频参考对口型工作流_2114373807736713217.json、数字人/数字人/余温-音频参考驱动对口型数字人工作流｜口型同步视频生视频_2114626685239910401.json、数字人/数字人/视频口型同步_latentsync1.6_1941464262185480193.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub_FramePack`
-- `SeargePromptText`
+- `AudioCrop`
+- `AudioSeparation`
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `VHS_VideoInfo`
+- `VideoLengthAdjuster`
 
 ## 典型参数
 

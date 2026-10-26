@@ -3,28 +3,27 @@ name: unknown_workflow_generic_1257
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, PMRF, SaveImage]
+coverage: 0.5835
+common_nodes: [03921aea-a70e-44b4-bc77-f6bda10f2120, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/PMRF无损高清放大_1923636997112721410.json, 图片生成/图生图/PMRF极速高清放大_1931874084928290817.json]
+members: [comfyui-workflow-templates-json/image_ernie_image.json, comfyui-workflow-templates-json/image_ernie_image_turbo.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1257
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/PMRF无损高清放大_1923636997112721410.json、图片生成/图生图/PMRF极速高清放大_1931874084928290817.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_ernie_image.json、comfyui-workflow-templates-json/image_ernie_image_turbo.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `PMRF`
+- `03921aea-a70e-44b4-bc77-f6bda10f2120`
 - `SaveImage`
 
 ## 典型参数

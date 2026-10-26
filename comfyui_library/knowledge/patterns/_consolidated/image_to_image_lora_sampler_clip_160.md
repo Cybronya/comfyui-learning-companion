@@ -3,60 +3,63 @@ name: image_to_image_lora_sampler_clip_160
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.8855
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, Get Image Size, Image Comparer (rgthree), ImageResize+, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SeedVR2, SeedVR2BlockSwap, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy compare, easy ifElse]
+coverage: 0.669
+common_nodes: [CLIPTextEncode, CR String To Combo, ConditioningZeroOut, DualCLIPLoader, Fast Groups Muter (rgthree), FluxGuidance, FluxKontextImageScale, Image Comparer (rgthree), ImagePadKJ, ImageScaleBy, ImpactStringSelector, ImpactSwitch, Int, JWInteger, KSampler, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PrimitiveFloat, PrimitiveString, ReferenceLatent, SaveImage, SeedVR2, TeaCache, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/图片变亮_1950617826384089090.json, 图片生成/图生图/美女自拍_1996189259780538369.json]
+members: [图片生成/图生图/图像外扩 _ Kontext（目前最新_最佳扩图）_1945307582477082625.json, 图片生成/图生图/图像外扩 _ Kontext（目前最新_最佳扩图）_1945349861682159618.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_160
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片变亮_1950617826384089090.json、图片生成/图生图/美女自拍_1996189259780538369.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像外扩 _ Kontext（目前最新_最佳扩图）_1945307582477082625.json、图片生成/图生图/图像外扩 _ Kontext（目前最新_最佳扩图）_1945349861682159618.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CR String To Combo`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
+- `Fast Groups Muter (rgthree)`
 - `FluxGuidance`
-- `Get Image Size`
+- `FluxKontextImageScale`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
+- `ImagePadKJ`
+- `ImageScaleBy`
+- `ImpactStringSelector`
+- `ImpactSwitch`
+- `Int`
+- `JWInteger`
 - `KSampler`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
+- `PrimitiveString`
 - `ReferenceLatent`
 - `SaveImage`
 - `SeedVR2`
-- `SeedVR2BlockSwap`
-- `UNETLoader`
+- `TeaCache`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `LayerColor: ColorAdapter` —— 1/2 个有
-- `LayerUtility: ImageBlend` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `TeaCache` —— 1/2 个有
-- `Text _O` —— 1/2 个有
-- `UltimateSDUpscale` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `easy imageSize` —— 1/2 个有
 
 ## 典型参数
 

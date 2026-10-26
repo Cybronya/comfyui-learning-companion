@@ -1,37 +1,37 @@
 ---
 name: unknown_workflow_video_6
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.83225
-common_nodes: [LoadImage, RunningHub_FramePack_F1, SeargePromptText, VHS_VideoCombine]
+coverage: 0.941889
+common_nodes: [AdvancedLivePortrait, ExpressionEditor, LoadImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack-F1 升级版最新_1922092746830462977.json, 视频生成/图生视频/FramePack-F1 图生视频_1922933753155567618.json, 视频生成/图生视频/FramePack-F1 图生视频_1934186177635508226.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_1919190486836514818.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048940562320986114.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048957662095740930.json, 视频生成/图生视频/FramePack-F1新版图生视频（幅度更大）_1921901998256373762.json, 视频生成/图生视频/fp2_1922512428700155905.json]
+members: [数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json, 视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json, 视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json, 视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json, 视频生成/图生视频/最强大的人物表情编辑器_2044605432366374913.json, 视频生成/图生视频/最强大的人物表情编辑器_2047499828749406209.json, 视频生成/图生视频/最简单好用的人物表情编辑器_2027544531457019906.json, 视频生成/图生视频/表情编辑器（表情图生视频）_1925149915092033537.json, 视频生成/图生视频/表情编辑器（表情图生视频）_1938199316035211265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_6
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1 升级版最新_1922092746830462977.json、视频生成/图生视频/FramePack-F1 图生视频_1922933753155567618.json、视频生成/图生视频/FramePack-F1 图生视频_1934186177635508226.json、视频生成/图生视频/FramePack-F1敏神最新算法图生视频_1919190486836514818.json、视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048940562320986114.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json、视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json、视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json、视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json、视频生成/图生视频/最强大的人物表情编辑器_2044605432366374913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `AdvancedLivePortrait`
+- `ExpressionEditor`
 - `LoadImage`
-- `RunningHub_FramePack_F1`
-- `SeargePromptText`
-- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 6/8 个有
-- `ImageFromBatch+` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
+- `SaveImage` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `VHS_LoadVideo` —— 5/9 个有
+- `PreviewImage` —— 2/9 个有
 
 ## 典型参数
 

@@ -2,22 +2,22 @@
 name: text_to_image_lora_sampler_clip_66
 type: Text To Image
 frequency: 16
-level: moderate
-coverage: 0.918813
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageBatchMulti, KSampler, LoadImage, LoraLoaderModelOnly, RunningHub_ImageQwenI2L_Loader(Style), RunningHub_ImageQwenI2L_LoraGenerator, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+level: strong
+coverage: 0.91825
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen I2L风格化（手绘）_2000864734511591426.json, 图片生成/图生图/Qwen I2L风格迁移(素描)_2000754601685024769.json, 图片生成/图生图/Qwen I2L风格迁移V1（抽象矢量）_1999455955618234370.json, 图片生成/图生图/Qwen I2L风格迁移V1（潦草手绘）_1999446540601131010.json, 图片生成/图生图/Qwen I2L风格迁移V1（素描画）_1999456220161470466.json, 图片生成/图生图/Qwen I2L风格迁移V1（蓝底扁平）_1999459545154023425.json, 图片生成/图生图/Qwen I2L风格迁移模仿-两分钟风格lora炼制_2000809836424163330.json, 图片生成/图生图/Qwen i2L-风格迁移模仿-两分钟炼风格lora_2000851690133782529.json, 图片生成/图生图/Qwen i2L-风格迁移模仿-两分钟炼风格lora_2046393246267482114.json, 图片生成/图生图/Qwen+i2L-风格迁移模仿-lora_2016779197426962433.json, 图片生成/图生图/Qwen-Image-i2L(图生Lora)_1999351494661074945.json, 图片生成/图生图/Qwen-Image-i2L风格迁移融图_1999494754196914178.json, 图片生成/图生图/RH_ImageQwenI2L图生Lora体验_1999336956502962178.json, 图片生成/图生图/imageqwenI2l图生lora_1999628296188985346.json, 图片生成/图生图/【gen全能视频Si】 qwen-image i2l参考图出风格lora_1999771864371167233.json, 图片生成/文生图/RH_ImageQwenI2L图生Lora_1999263590009929729.json]
+members: [图片生成/文生图/视频超分工作流_2101989284810153986.json, 数字人/数字人/AI视频换人动作迁移 角色替换数字人视频生成_2094258030903906306.json, 数字人/数字人/AI视频换人神器｜动作迁移加角色替换一键完成_2106586431224377346.json, 数字人/数字人/DLSS5视频图片超分辨率 Video Image Super Resolution增强_2098709137747169282.json, 数字人/数字人/数字人口播Pro高清形象视频｜专业级形象生成工作流_2097037549385633794.json, 数字人/数字人/数字人口播Pro高清版｜形象视频清晰度再上一档_2097216696036708353.json, 视频生成/图生视频/Wan3.0参考生视频｜数字人动作迁移图生视频_2092056807425531906.json, 视频生成/图生视频/Wan3万相多模态全参工作流｜图生视频视频生视频双模式_2108017535508639745.json, 视频生成/图生视频/Wan3多模态全参工作流 文生视频图生视频全能创作_2099201072412848129.json, 视频生成/图生视频/Wan3多模态全参工作流 文生视频图生视频全能创作_2099599137611272193.json, 视频生成/图生视频/Wan3多模态全参工作流 视频生视频图生视频处理工具_2113376426140454913.json, 视频生成/图生视频/Wan3多模态全参工作流_2109966575624351745.json, 视频生成/图生视频/Wan3多模态全参工作流，视频生视频图生视频全覆盖方案_2106855204628025346.json, 视频生成/图生视频/Wan3多模态全参工作流，视频生视频图生视频全覆盖方案_2110206029798662146.json, 视频生成/图生视频/Wan3多模态全参工作流｜视频生视频图生视频_2095092856275951617.json, 视频生成/图生视频/Wan3多模态全参工作流｜视频生视频图生视频多模态上阵_2114247022919376897.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_66
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Qwen I2L风格化（手绘）_2000864734511591426.json、图片生成/图生图/Qwen I2L风格迁移(素描)_2000754601685024769.json、图片生成/图生图/Qwen I2L风格迁移V1（抽象矢量）_1999455955618234370.json、图片生成/图生图/Qwen I2L风格迁移V1（潦草手绘）_1999446540601131010.json、图片生成/图生图/Qwen I2L风格迁移V1（素描画）_1999456220161470466.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/视频超分工作流_2101989284810153986.json、数字人/数字人/AI视频换人动作迁移 角色替换数字人视频生成_2094258030903906306.json、数字人/数字人/AI视频换人神器｜动作迁移加角色替换一键完成_2106586431224377346.json、数字人/数字人/DLSS5视频图片超分辨率 Video Image Super Resolution增强_2098709137747169282.json、数字人/数字人/数字人口播Pro高清形象视频｜专业级形象生成工作流_2097037549385633794.json…）
 
 - **类型**：Text To Image
 - **样本数**：16
-- **可信度**：中等可信
+- **可信度**：强结论
 - **平均知识覆盖**：92%
 
 ## 共有节点
@@ -26,54 +26,57 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `ImageBatchMulti`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RunningHub_ImageQwenI2L_Loader(Style)`
-- `RunningHub_ImageQwenI2L_LoraGenerator`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/16 个有
-- `ImageConcatMulti` —— 10/16 个有
-- `PDIMAGE_LongerSize` —— 10/16 个有
-- `PreviewImage` —— 4/16 个有
-- `Text Multiline` —— 4/16 个有
-- `ConditioningZeroOut` —— 1/16 个有
-- `ImageResizeKJv2` —— 1/16 个有
-- `PreviewAny` —— 1/16 个有
-- `PrimitiveStringMultiline` —— 1/16 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/16 个有
+- `LoadImage` —— 15/16 个有
+- `LoadVideo` —— 13/16 个有
+- `孤海注释` —— 13/16 个有
+- `LoadAudio` —— 12/16 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 10/16 个有
+- `Text` —— 9/16 个有
+- `SaveImage` —— 8/16 个有
+- `RHBerniniFullReferenceVideoToVideo` —— 2/16 个有
+- `RH_KlingV2AiAvatarProImageAudioToVideo` —— 2/16 个有
+- `EmptyImage` —— 1/16 个有
+- `Image Comparer (rgthree)` —— 1/16 个有
+- `JWInteger` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
+- `RH_Astra` —— 1/16 个有
+- `RH_DLSS5Enhance` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 16 | 79% |
-| Prompt 约束强度(CFG) | 8 | 1 - 8 | 16 | 68% |
-| 采样算法 | euler | - | 16 | 100% |
-| 调度器 | simple | - | 16 | 100% |
+| 宽度 | 80 | 80 - 80 | 16 | 100% |
+| 高度 | 80 | 80 - 80 | 16 | 100% |
+| 采样步数 | 4 | 4 - 4 | 16 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 16 | 100% |
+| 采样算法 | er_sde | - | 16 | 100% |
+| 调度器 | beta | - | 16 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
-| 宽度 | 848 | 720 - 1280 | 16 | 76% |
-| 高度 | 1280 | 768 - 1664 | 16 | 75% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，16 个样本
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，16 个样本
-- 采样算法 最常用 euler，16 个样本，一致性 100%
-- 调度器 最常用 simple，16 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，16 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，16 个样本，一致性 100%
+- 调度器 最常用 beta，16 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 宽度 中位数 848，观测区间 720 - 1280，16 个样本
-- 高度 中位数 1280，观测区间 768 - 1664，16 个样本
+- 高发问题（16/16 个样本）：Steps较低可能导致细节不足

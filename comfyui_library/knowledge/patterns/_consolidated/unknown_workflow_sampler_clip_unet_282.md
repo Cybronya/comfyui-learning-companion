@@ -1,64 +1,55 @@
 ---
 name: unknown_workflow_sampler_clip_unet_282
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.79925
-common_nodes: [Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.864
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DPRandomGenerator, EmptyLatentImage, FlowMatchEulerDiscreteScheduler (Custom), KSamplerSelect, ModelSamplingAuraFlow, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy mathInt]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein 换脸【基础流】_2017112299043037185.json, 图片生成/图生图/Klein 转写实【基础流】_2018227045939023874.json, 图片生成/图生图/Klein+LLM极速扩图【效果强】_2016684919459680257.json, 图片生成/图生图/Klein9b扩图工作流_(只支持2K尺寸)_2064244174521724929.json]
+members: [图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_浴缸写真_2005950136666779650.json, 图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_清冷古装_2005664737729933313.json, 图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_雨巷旗袍_2005949064745287682.json, 图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_黑白气质美女_2005667147495993346.json, 图片生成/文生图/一键写真z_image_turbo_官方调度器_2005298289731928066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_282
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Klein 换脸【基础流】_2017112299043037185.json、图片生成/图生图/Klein 转写实【基础流】_2018227045939023874.json、图片生成/图生图/Klein+LLM极速扩图【效果强】_2016684919459680257.json、图片生成/图生图/Klein9b扩图工作流_(只支持2K尺寸)_2064244174521724929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_浴缸写真_2005950136666779650.json、图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_清冷古装_2005664737729933313.json、图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_雨巷旗袍_2005949064745287682.json、图片生成/文生图/z_image_turbo_官方调度器_随机Prompt_黑白气质美女_2005667147495993346.json、图片生成/文生图/一键写真z_image_turbo_官方调度器_2005298289731928066.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
+- `DPRandomGenerator`
+- `EmptyLatentImage`
+- `FlowMatchEulerDiscreteScheduler (Custom)`
 - `KSamplerSelect`
-- `LoadImage`
+- `ModelSamplingAuraFlow`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `ImagePadForOutpaint` —— 2/4 个有
-- `ImageResize+` —— 2/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `ShowText` —— 2/4 个有
-- `ImageColorMatch+` —— 1/4 个有
-- `ImitationHueNode` —— 1/4 个有
-- `LayerMask: HumanPartsUltra` —— 1/4 个有
-- `LayerMask: MaskGrow` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `SetLatentNoiseMask` —— 1/4 个有
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy mathInt`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1080 | 1080 - 1080 | 5 | 100% |
+| 高度 | 1920 | 1080 - 1920 | 5 | 74% |
 
 ## 常见问题
 
@@ -66,4 +57,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1080，观测区间 1080 - 1080，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1080 - 1920，5 个样本

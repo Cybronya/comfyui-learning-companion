@@ -3,36 +3,43 @@ name: unknown_workflow_generic_1308
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LayerMask: BenUltra, LayerMask: LoadBenModel, LayerUtility: ImageRemoveAlpha, LoadImageFromURL, SaveImage]
+coverage: 0.749
+common_nodes: [CXH_DownloadAndLoadFlorence2Model, CXH_Florence2Run, FaceAnalysisModels, FaceBoundingBox, ImageResizeKJ, JoinStrings, PreviewImage, RHBatchImages:, RHUploadZip, SaveImage, ShowText|pysssss, String, ttN textOutput]
 problems: []
 missing: []
-members: [图片生成/图生图/一键去背景-白底_1964606168800874497.json, 图片生成/图生图/一键去背景-通用_1975817031788441601.json]
+members: [图片生成/反推提示词/lora训练工具之三：炼丹图片批量打标工作流V2_1956208905728786433.json, 图片生成/反推提示词/lora训练工具之三：炼丹图片批量打标工作流_1954687992571031554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1308
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键去背景-白底_1964606168800874497.json、图片生成/图生图/一键去背景-通用_1975817031788441601.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/lora训练工具之三：炼丹图片批量打标工作流V2_1956208905728786433.json、图片生成/反推提示词/lora训练工具之三：炼丹图片批量打标工作流_1954687992571031554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerMask: BenUltra`
-- `LayerMask: LoadBenModel`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImageFromURL`
+- `CXH_DownloadAndLoadFlorence2Model`
+- `CXH_Florence2Run`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `ImageResizeKJ`
+- `JoinStrings`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHUploadZip`
 - `SaveImage`
+- `ShowText|pysssss`
+- `String`
+- `ttN textOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: If ` —— 1/2 个有
-- `LayerUtility: StringCondition` —— 1/2 个有
-- `easy string` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
 
 ## 典型参数
 

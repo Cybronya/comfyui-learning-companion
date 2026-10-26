@@ -1,66 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_289
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.690571
-common_nodes: [ADE_CameraPoseCombo, CameraPoseVisualizer, GetNode, ImageResizeKJv2, LoadImage, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.811375
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/YJ-APP-Wan2.2-Fun-Camera运镜控制_2038822958365413377.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_1956348088506089473.json, 视频生成/图生视频/WH-AI-Studio-wan2.2官方专用运镜模型图生视频_2015621060615475201.json, 视频生成/图生视频/Wan2.2 运镜特效_2004051872707166210.json, 视频生成/图生视频/Wan2.2-ControlCamera镜头控制_2004354618245214209.json, 视频生成/图生视频/Wan2.2-Fun-Camera运镜控制_1956308864335532034.json, 视频生成/图生视频/【gen全能视频Si】wan2.2-fun-camera运镜控制_1963766587461439490.json]
+members: [数字人/数字人/更好用的InfiniteTalk对口型说话_唱歌数字人-稳定动态+强引导+色彩还原_2060438227680583681.json, 数字人/数字人/电商数字人infinitetalk_1988491410166996993.json, 数字人/数字人/老炮infinitetalk_1959555573828235265.json, 视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json, 视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json, 视频生成/图生视频/infinitetalk-数字人口播对口型V1_2054541988237717506.json, 视频生成/图生视频/高清数字人-稳定加强V2.0版(对口型、口播、唱歌）最强AI数字人高清InfiniteTalk单人口_2075038609807339522.json, 音频生成/音频生成/AA--声音克隆数字人-InfiniteTalk对口型图生视频（情感控制）_2030212385763495938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_289
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/YJ-APP-Wan2.2-Fun-Camera运镜控制_2038822958365413377.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_1956348088506089473.json、视频生成/图生视频/WH-AI-Studio-wan2.2官方专用运镜模型图生视频_2015621060615475201.json、视频生成/图生视频/Wan2.2 运镜特效_2004051872707166210.json、视频生成/图生视频/Wan2.2-ControlCamera镜头控制_2004354618245214209.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/更好用的InfiniteTalk对口型说话_唱歌数字人-稳定动态+强引导+色彩还原_2060438227680583681.json、数字人/数字人/电商数字人infinitetalk_1988491410166996993.json、数字人/数字人/老炮infinitetalk_1959555573828235265.json、视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json、视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ADE_CameraPoseCombo`
-- `CameraPoseVisualizer`
-- `GetNode`
-- `ImageResizeKJv2`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 6/7 个有
-- `ImageConcatMulti` —— 5/7 个有
-- `Text Multiline` —— 5/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `ImpactInt` —— 2/7 个有
-- `CLIPLoader` —— 1/7 个有
-- `CLIPTextEncode` —— 1/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `CreateVideo` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `JWInteger` —— 1/7 个有
-- `PreViewVideo` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
-- `Switch` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `WanVideoTextEmbedBridge` —— 1/7 个有
+- `AudioCrop` —— 6/8 个有
+- `AudioSeparation` —— 6/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `CR Text` —— 4/8 个有
+- `SoundFlow_GetLength` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `Float to Int` —— 3/8 个有
+- `Int` —— 3/8 个有
+- `ToInt` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `ImpactInt` —— 2/8 个有
+- `JWIntegerToString` —— 2/8 个有
+- `RH_GetAudioDuration` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `1hew_AudioDuration` —— 1/8 个有
+- `Bjornulf_ShowInt` —— 1/8 个有
+- `CM_IntToFloat` —— 1/8 个有
+- `IndexTTS2Run` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `SaveAudio` —— 1/8 个有
+- `easy float` —— 1/8 个有
 
 ## 典型参数
 

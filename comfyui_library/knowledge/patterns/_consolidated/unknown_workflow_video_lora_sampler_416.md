@@ -1,80 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_416
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5572
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.710333
+common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json, 视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json, 视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json, 视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json, 视频生成/图生视频/wan2.2 animate视频换头视频换脸工作流_1977864752590454786.json]
+members: [视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json, 视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json, 视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json, 视频生成/文生视频/SVI-Wan22-1207超长视频生成工作流-课程同步工作流_1998388912689176577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_416
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json、视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json、视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json、视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json、视频生成/图生视频/wan2.2 animate视频换头视频换脸工作流_1977864752590454786.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json、视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json、视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
+全部 6 个 workflow 都包含：
 - `GetImageSizeAndCount`
 - `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
+- `ImageBatchMulti`
+- `InvertMask`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
 - `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 4/5 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/5 个有
-- `GIMMVFI_interpolate` —— 3/5 个有
-- `GrowMaskWithBlur` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `GrowMask` —— 2/5 个有
-- `ImageBlend` —— 2/5 个有
-- `SimpleMath+` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `WanVideoContextOptions` —— 2/5 个有
-- `Bookmark (rgthree)` —— 1/5 个有
-- `FloatConstant` —— 1/5 个有
-- `GetImageRangeFromBatch` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `WanVideoExperimentalArgs` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoScheduler` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `CR Text` —— 2/6 个有
+- `DF_Int_to_Float` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `IndexTTSRun` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `MultiLinePromptIndex` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `SaveAudioMP3` —— 1/6 个有
 
 ## 典型参数
 

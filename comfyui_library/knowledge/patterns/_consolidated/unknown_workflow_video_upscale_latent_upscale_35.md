@@ -2,83 +2,65 @@
 name: unknown_workflow_video_upscale_latent_upscale_35
 type: Unknown Workflow
 frequency: 10
-level: strong
-coverage: 0.8547
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+level: moderate
+coverage: 0.795
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/图&文生视频-LTX2.3-自动提示词-稳定优化版_2030497638990225409.json, 视频生成/文生视频/文生视频  开源（2）_2046762687073357825.json, 视频生成/文生视频/最强优化  LTX2.3  图 _ 文 生视频合并版_2030179257439227905.json, 视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039869978068914177.json, 视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039873268945002497.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频-邻家AI大女孩_2043235520297312257.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频_2029868442429427713.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频_2047737799259983873.json, 视频生成/文生视频/最新LTX2.3 图生&文生合并版全面优化版 V2.0_2036310266039771138.json, 视频生成/文生视频/画音同步-LTX2.3全自动-图生+文生视频-优化版_2031929220158464002.json]
+members: [数字人/数字人/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2104547320967815169.json, 视频生成/图生视频/MinimaxH3 视频生成工作台可@图片_2096967852254392322.json, 视频生成/图生视频/MinimaxH3_极简版多合一工作流_2099786890349203458.json, 视频生成/图生视频/MinimaxH3_极简版多合一工作流_2100042754997964802.json, 视频生成/图生视频/MinimaxH3工作流多合一极简版精品_2105107966503505921.json, 视频生成/图生视频/MinimaxH3工作流多合一极简精品工作流_2105194557800538113.json, 视频生成/图生视频/YZ金鱼-MinimaxH3 极简版多合一工作流_2087545206135672833.json, 视频生成/文生视频/0916台词再也不乱说话MinimaxH3工作流多合一极简版_2100075667680481281.json, 视频生成/文生视频/0925H3提示词skillsV2.5优化台词再也不乱说话多合一极简版_2103345223605772290.json, 视频生成/文生视频/MinimaxH3 极简版多合一0830_2095028307212455937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_35
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/图&文生视频-LTX2.3-自动提示词-稳定优化版_2030497638990225409.json、视频生成/文生视频/文生视频  开源（2）_2046762687073357825.json、视频生成/文生视频/最强优化  LTX2.3  图 _ 文 生视频合并版_2030179257439227905.json、视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039869978068914177.json、视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039873268945002497.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2104547320967815169.json、视频生成/图生视频/MinimaxH3 视频生成工作台可@图片_2096967852254392322.json、视频生成/图生视频/MinimaxH3_极简版多合一工作流_2099786890349203458.json、视频生成/图生视频/MinimaxH3_极简版多合一工作流_2100042754997964802.json、视频生成/图生视频/MinimaxH3工作流多合一极简版精品_2105107966503505921.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `BasicGuider`
+- `BasicScheduler`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `MinimaxH3LatentUpscaler3D`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SplitSigmas`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 9/10 个有
-- `CR Text` —— 9/10 个有
-- `PrimitiveFloat` —— 9/10 个有
-- `PrimitiveInt` —— 9/10 个有
-- `PreviewAny` —— 7/10 个有
-- `RH_LLMAPI_Pro_Node` —— 7/10 个有
-- `GetNode` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `AILab_QwenVL` —— 1/10 个有
-- `CM_IntToFloat` —— 1/10 个有
-- `FancyTimerNode` —— 1/10 个有
-- `JoinStrings` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `VRAMReserver` —— 1/10 个有
-- `easy int` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `LoadImage` —— 8/10 个有
+- `LoadVideo` —— 8/10 个有
+- `ModelPreviewOverrideKJ` —— 6/10 个有
+- `GetNode` —— 5/10 个有
+- `LoadAudio` —— 5/10 个有
+- `MiniMaxH3EasyMediaLoader` —— 5/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
+- `ModelAttentionBackend` —— 5/10 个有
+- `SetNode` —— 5/10 个有
+- `忽略多组孤海` —— 5/10 个有
+- `Text` —— 4/10 个有
+- `EmptyImage` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `SaveImage` —— 1/10 个有
+- `workflow>声音` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 10 | 100% |
-| 高度 | 25 | 25 - 25 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -86,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

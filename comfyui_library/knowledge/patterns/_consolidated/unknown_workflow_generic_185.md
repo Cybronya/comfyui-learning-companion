@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_185
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.8
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance 2.0 图生视频｜首尾帧视频_2095369520776048642.json, 图片生成/文生图/万相2.7-参考生视频 大峰_2042185330912141314.json, 视频生成/图生视频/SK_img2vid_2038867308285796354.json, 视频生成/图生视频/Seedance 2.0 图生视频-真人参考_2046119417926389762.json, 视频生成/图生视频/Seedance2.0图生视频_2037036284312559617.json, 视频生成/图生视频/Seedance2.0图生视频_2039910706035822593.json, 视频生成/图生视频/地表最强超能视频2.0_图生视频_2037443315422994434.json, 视频生成/图生视频/首帧图生视频2_2042070638961102849.json, 视频生成/图生视频/（支持真人）地表最强超能视频2.0_图生视频_2037432989239484418.json, 视频生成/文生视频/WAN2.7 多参考生视频_2041482681619320833.json]
+members: [图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json, 图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json, 图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json, 图片生成/图生图/建筑效果图工作流｜草图毛坯照生成建筑外观效果图_2099314501794484225.json, 图片生成/图生图/指定姿势出图工作流｜姿势参考图控制人物动作_2099402203030188034.json, 图片生成/图生图/真人转动漫工作流｜照片一键变日系动漫风格_2099402191676207105.json, 图片生成/图生图/艺术风格转换工作流｜油画水彩素描卡通一键换_2099453299673096193.json, 图片生成/图生图/黑白照片上色工作流｜老照片智能上色还原_2099453304219721729.json, 图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_185
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Seedance 2.0 图生视频｜首尾帧视频_2095369520776048642.json、图片生成/文生图/万相2.7-参考生视频 大峰_2042185330912141314.json、视频生成/图生视频/SK_img2vid_2038867308285796354.json、视频生成/图生视频/Seedance 2.0 图生视频-真人参考_2046119417926389762.json、视频生成/图生视频/Seedance2.0图生视频_2037036284312559617.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json、图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json、图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 8/10 个有
-- `MuyeTextEditOutput` —— 2/10 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 9/11 个有
+- `RH_SeedreamV5ProImageToImage` —— 8/11 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 3/11 个有
 
 ## 典型参数
 

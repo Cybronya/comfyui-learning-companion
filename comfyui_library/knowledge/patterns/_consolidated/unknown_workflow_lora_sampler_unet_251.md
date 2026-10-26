@@ -3,51 +3,54 @@ name: unknown_workflow_lora_sampler_unet_251
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.908
-common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, DepthAnythingV2Preprocessor, DrawViTPose, KSampler, LayerUtility: ColorImage V2, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAsV2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageSize, easy int, easy seed]
+coverage: 0.776
+common_nodes: [CFGNorm, CLIPLoader, CR Index, CR Text, ConditioningZeroOut, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, MuyeTextEditOutput, QwenEditConfigPreparer, SaveImage, Seed (rgthree), SetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy imageScaleDownToSize, easy int]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Eidt大动态姿态迁移，人物一致性套图生成工作流_1980900408317100033.json, 图片生成/图生图/人物一致性高难度Qwen-Eidt姿态迁移_1984224430169669633.json]
+members: [图片生成/反推提示词/28photoretouching_2049469543893962754.json, 图片生成/图生图/qwen-edit-图片精修-深度优化版4.0_2013194815093084162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_251
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Eidt大动态姿态迁移，人物一致性套图生成工作流_1980900408317100033.json、图片生成/图生图/人物一致性高难度Qwen-Eidt姿态迁移_1984224430169669633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/28photoretouching_2049469543893962754.json、图片生成/图生图/qwen-edit-图片精修-深度优化版4.0_2013194815093084162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
+- `CR Index`
 - `CR Text`
 - `ConditioningZeroOut`
-- `DepthAnythingV2Preprocessor`
-- `DrawViTPose`
+- `GetNode`
 - `KSampler`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageMaskScaleAsV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
+- `MuyeTextEditOutput`
+- `QwenEditConfigPreparer`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `Seed (rgthree)`
+- `SetNode`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageSize`
+- `easy anythingIndexSwitch`
+- `easy imageScaleDownToSize`
 - `easy int`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageConcat` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
 
 ## 典型参数
 
@@ -55,8 +58,8 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| 采样算法 | euler_ancestral | - | 2 | 100% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
@@ -69,8 +72,8 @@ source: knowledge_consolidation
 
 - 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

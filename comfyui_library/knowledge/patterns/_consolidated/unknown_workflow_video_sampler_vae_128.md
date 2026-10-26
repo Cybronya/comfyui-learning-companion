@@ -3,66 +3,65 @@ name: unknown_workflow_video_sampler_vae_128
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.679
-common_nodes: [AddLabel, DownloadAndLoadFlorence2Model, Florence2Run, GetImageRangeFromBatch, LoadWanVideoT5TextEncoder, PreviewImage, ReCamMasterPoseVisualizer, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoReCamMasterCameraEmbed, WanVideoReCamMasterDefaultCamera, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WidgetToString]
+coverage: 0.81175
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json, 视频生成/图生视频/ReCamMaster视频运镜工作流_1911342097738465281.json, 视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json, 视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json]
+members: [视频生成/图生视频/B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.json, 视频生成/图生视频/FusionX VACE 最丝滑的首尾帧过度效果-全自动极速版-StarAI_1936424375866281985.json, 视频生成/图生视频/VACE+FusioniX视频_1934580873092079617.json, 视频生成/文生视频/🦁FusionX 最强首尾帧  超清加速版🦁_1935319269842550786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_128
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json、视频生成/图生视频/ReCamMaster视频运镜工作流_1911342097738465281.json、视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json、视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.json、视频生成/图生视频/FusionX VACE 最丝滑的首尾帧过度效果-全自动极速版-StarAI_1936424375866281985.json、视频生成/图生视频/VACE+FusioniX视频_1934580873092079617.json、视频生成/文生视频/🦁FusionX 最强首尾帧  超清加速版🦁_1935319269842550786.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `AddLabel`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetImageRangeFromBatch`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `ReCamMasterPoseVisualizer`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoReCamMasterCameraEmbed`
-- `WanVideoReCamMasterDefaultCamera`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `WidgetToString`
 
 **可变部分**（部分 workflow 才有）：
 - `GetNode` —— 3/4 个有
-- `ImageResizeKJ` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `WanVideoVRAMManagement` —— 3/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `CLIPTextEncode` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `WanVideoMagCache` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `MaskPreview` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `easy int` —— 2/4 个有
+- `ImpactInt` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
 - `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
-- `WanVideoTextEmbedBridge` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
+- `WanVideoVACEModelSelect` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

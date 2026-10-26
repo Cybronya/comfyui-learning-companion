@@ -3,33 +3,33 @@ name: unknown_workflow_video_106
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadImage, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/一键图片转视频_1890497294351900674.json, 视频生成/图生视频/啊癫 视频加水印_1965065634449080322.json]
+members: [视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json, 视频生成/图生视频/framepack_首尾帧_1914526532704923650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_106
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/一键图片转视频_1890497294351900674.json、视频生成/图生视频/啊癫 视频加水印_1965065634449080322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json、视频生成/图生视频/framepack_首尾帧_1914526532704923650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
-- `workflow/视频` —— 1/2 个有
+- `KepStringLiteral` —— 1/2 个有
 
 ## 典型参数
 

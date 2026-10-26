@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_512
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+common_nodes: [RH_BytedanceSeedance25TokenTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json, 图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json, 图片生成/图生图/xxx-image2_2053839405277827073.json, 图片生成/图生图/提取头部_2095356769915727873.json, 图片生成/图生图/道具图生成_2094712567414476802.json]
+members: [视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json, 视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json, 视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json, 视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json, 视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json, 视频生成/文生视频/Seedance2.5文生视频｜视频运镜控制自如_2097929543557406721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_512
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json、图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json、图片生成/图生图/xxx-image2_2053839405277827073.json、图片生成/图生图/提取头部_2095356769915727873.json、图片生成/图生图/道具图生成_2094712567414476802.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json、视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json、视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json、视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json、视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text`
+全部 6 个 workflow 都包含：
+- `RH_BytedanceSeedance25TokenTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `TextConcatenator` —— 3/5 个有
-- `ratio_selector` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

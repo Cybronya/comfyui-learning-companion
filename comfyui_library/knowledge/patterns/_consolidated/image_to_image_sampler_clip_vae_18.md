@@ -2,75 +2,65 @@
 name: image_to_image_sampler_clip_vae_18
 type: Image To Image
 frequency: 10
-level: strong
-coverage: 0.9269
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.9168
+common_nodes: [CLIPTextEncode, KSampler, LoadImage, SaveImage, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [图片生成/图生图/kontext人物_2085922992378441729.json, 图片生成/图生图/kontext人物编辑_2085656932387475457.json, 图片生成/图生图/kontext单图_1938771721912508418.json, 图片生成/图生图/kontext单图_1981602295718789122.json, 图片生成/图生图/kontext官方工作流 双图编辑模式_1938780307606982657.json, 图片生成/图生图/丰乳肥臀工作流_1948441682168676354.json, 图片生成/图生图/去除图像水印_2018512334502760449.json, 图片生成/图生图/文化墙一键生成展示效果图_2039158309990699009.json, 图片生成/图生图/文化墙设计图一键应用墙体展示效果_1948774790761984001.json, 图片生成/图生图/比中指_1953770429464891394.json]
+members: [图片生成/图生图/图生图训练模板_2042065010142224385.json, 图片生成/图生图/工作流基础篇-3-基础图生图工作流（写实和动漫双风格）_2012422631575785474.json, 图片生成/图生图/接力帧净化_SD图生图_3050低显存_2061824613121880066.json, 图片生成/图生图/洗图去AI感_2050522040632913922.json, 图片生成/图生图/清透水润写实图生图+LORA_1982124639554019330.json, 图片生成/图生图/自动化妆2_Automatic makeup2_img2img_1911604879872225281.json, 图片生成/图生图/自动化妆_细节增强器_1896904379117772802.json, 图片生成/图生图/高清画质特写_2049892403997364226.json, 图片生成/图生图/麦橘写实图生图基础版-shure_1982102747661123585.json, 视频生成/文生视频/国风女孩_2055307573456326657.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/kontext人物_2085922992378441729.json、图片生成/图生图/kontext人物编辑_2085656932387475457.json、图片生成/图生图/kontext单图_1938771721912508418.json、图片生成/图生图/kontext单图_1981602295718789122.json、图片生成/图生图/kontext官方工作流 双图编辑模式_1938780307606982657.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图生图训练模板_2042065010142224385.json、图片生成/图生图/工作流基础篇-3-基础图生图工作流（写实和动漫双风格）_2012422631575785474.json、图片生成/图生图/接力帧净化_SD图生图_3050低显存_2061824613121880066.json、图片生成/图生图/洗图去AI感_2050522040632913922.json、图片生成/图生图/清透水润写实图生图+LORA_1982124639554019330.json…）
 
 - **类型**：Image To Image
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `NunchakuFluxDiTLoader` —— 7/10 个有
-- `NunchakuFluxLoraLoader` —— 6/10 个有
-- `PreviewImage` —— 6/10 个有
-- `UNETLoader` —— 5/10 个有
-- `ImageStitch` —— 4/10 个有
-- `RH_Translator` —— 4/10 个有
-- `ConstrainImage|pysssss` —— 3/10 个有
-- `LoadLatentEXR` —— 2/10 个有
-- `SaveLatent` —— 2/10 个有
-- `ttN text` —— 2/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `easy imageConcat` —— 1/10 个有
+- `CheckpointLoaderSimple` —— 9/10 个有
+- `LoraLoader` —— 5/10 个有
+- `PreviewImage` —— 4/10 个有
+- `ConditioningAverage` —— 2/10 个有
+- `RepeatLatentBatch` —— 2/10 个有
+- `CheckpointLoaderSimple_Any` —— 1/10 个有
+- `Image Compare (mtb)` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 25 | 10 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 20 | 20 - 25 | 10 | 91% |
+| Prompt 约束强度(CFG) | 8 | 7 - 8 | 10 | 96% |
+| 采样算法 | dpmpp_2m | - | 10 | 50% |
+| 调度器 | karras | - | 10 | 60% |
+| 重绘幅度 | 0.515 | 0.22 - 1 | 10 | 50% |
+| LoRA 模型强度 | 0.25 | 0 - 1 | 5 | 15% |
+| LoRA 文本强度 | 0.54 | 0.27 - 1 | 5 | 58% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 25，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 25，10 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 7 - 8，10 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 dpmpp_2m，10 个样本，一致性 50%
+- 调度器 最常用 karras，10 个样本，一致性 60%
+- 重绘幅度 中位数 0.515，观测区间 0.22 - 1，10 个样本
+- LoRA 模型强度 中位数 0.25，观测区间 0 - 1，5 个样本，取值分散，一致性仅 15%
+- LoRA 文本强度 中位数 0.54，观测区间 0.27 - 1，5 个样本

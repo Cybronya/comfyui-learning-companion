@@ -3,54 +3,71 @@ name: unknown_workflow_video_lora_sampler_831
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.834
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.907
+common_nodes: [Bjornulf_ShowStringText, GetImageSizeAndCount, INTConstant, ImageResizeKJ, ImageResizeKJv2, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, TTP_text_mix, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json, 视频生成/图生视频/scail2视频角色替换TTP多图参考版_2071865157709557762.json]
+members: [视频生成/图生视频/AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最长6分镜连续_1954097242955235330.json, 视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_831
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json、视频生成/图生视频/scail2视频角色替换TTP多图参考版_2071865157709557762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最长6分镜连续_1954097242955235330.json、视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+- `Bjornulf_ShowStringText`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
+- `Int`
+- `JjkConcat`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `TTP_text_mix`
+- `TextInput_`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `DiffusionModelLoaderKJ` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CreateCFGScheduleFloatList` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ForLoopClose` —— 1/2 个有
+- `ForLoopOpen` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GridStrings` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Int2String` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
 
 ## 典型参数
 

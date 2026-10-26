@@ -3,37 +3,40 @@ name: unknown_workflow_generic_1516
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.846
-common_nodes: [CustomAddLabel, Float, LayerUtility: PurgeVRAM V2, PreviewAny, RH_RhartImageG2TextToImage, RTXVideoSuperResolution, SaveImage, Text, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.9715
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), ImageBatchMulti, ImageConcatMulti, LayerUtility: TextJoin, LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage_Batch, RH_RhartImageG2OfficialImageToImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047708528244170754.json, 图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2058545849621372930.json]
+members: [图片生成/图生图/家清详情页_2069299106266304513.json, 图片生成/图生图/居家——原文详情页_2069011307801698306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1516
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047708528244170754.json、图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2058545849621372930.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/家清详情页_2069299106266304513.json、图片生成/图生图/居家——原文详情页_2069011307801698306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CustomAddLabel`
-- `Float`
-- `LayerUtility: PurgeVRAM V2`
-- `PreviewAny`
-- `RH_RhartImageG2TextToImage`
-- `RTXVideoSuperResolution`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBatchMulti`
+- `ImageConcatMulti`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage_Batch`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageNG31FlashImageToImage`
 - `SaveImage`
-- `Text`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

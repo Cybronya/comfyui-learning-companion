@@ -3,47 +3,42 @@ name: unknown_workflow_upscale_vae_32
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.613
-common_nodes: [CR Text, Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PlaySound|pysssss, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.77775
+common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/Lora 角色素材收集 工作流：全能图像版（0.16_张）_2040781327082987521.json, 图片生成/图生图/【CQ808】数字人多角度设计_2056562035852402689.json, 图片生成/图生图/未来大师和建筑大师在大师的成名作前合影_2017771137635196930.json, 视频生成/图生视频/YZ金鱼-Z-image Lora训练集生成补全、人物单图转多视角图像_1993591544808751105.json]
+members: [图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_2008398304526209026.json, 图片生成/图生图/SeedVR2-高清放大_2057666509887074306.json, 图片生成/图生图/SeedVR2高清放大工作流_1991362449412829185.json, 图片生成/图生图/图像无损高清放大4K工作流_2050512834345349121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Lora 角色素材收集 工作流：全能图像版（0.16_张）_2040781327082987521.json、图片生成/图生图/【CQ808】数字人多角度设计_2056562035852402689.json、图片生成/图生图/未来大师和建筑大师在大师的成名作前合影_2017771137635196930.json、视频生成/图生视频/YZ金鱼-Z-image Lora训练集生成补全、人物单图转多视角图像_1993591544808751105.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_2008398304526209026.json、图片生成/图生图/SeedVR2-高清放大_2057666509887074306.json、图片生成/图生图/SeedVR2高清放大工作流_1991362449412829185.json、图片生成/图生图/图像无损高清放大4K工作流_2050512834345349121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
 - `Image Comparer (rgthree)`
 - `ImageScaleToTotalPixels`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
 - `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `easy imageIndexSwitch` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
 - `easy int` —— 2/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `easy promptReplace` —— 1/4 个有
-- `easy textIndexSwitch` —— 1/4 个有
+- `ColorMatch` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

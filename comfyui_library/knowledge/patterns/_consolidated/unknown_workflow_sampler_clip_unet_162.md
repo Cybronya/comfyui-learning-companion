@@ -3,34 +3,34 @@ name: unknown_workflow_sampler_clip_unet_162
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.72675
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualModelGuider, Ideogram4Scheduler, KSamplerSelect, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8935
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json, 图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json, 图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json, 图片生成/文生图/[Ideogram 4 系列 01] Ideogram 4 第一课：官方 ComfyUI 工作流解析_2084558233645174785.json, 图片生成/文生图/[Ideogram 4 系列 02] Prompt Builder 解析_2084481304804024321.json, 图片生成/文生图/ideogram4_t2i文生图_2064543465328963586.json]
+members: [图片生成/文生图/5 图 18 分钟炼 LoRA，任意场景秒换不换脸_2012576047841157121.json, 图片生成/文生图/ComfyUI官方示例11：Flux.1文生图工作流 _ ComfyUI从入门到精通_1932779421604401154.json, 图片生成/文生图/FLUX SRPO真实感文生图_1966782963511930881.json, 图片生成/文生图/FLUX 官方工作流 （教学用）_1955933159051460609.json, 图片生成/文生图/FLUX模型基础工作流_1891394911315333122.json, 图片生成/文生图/Flux+Lora控制角色一致生图-Base_1916028810548936705.json, 图片生成/文生图/人物一致性6宫格小红书风格_1894278785376890882.json, 视频生成/文生视频/古风场景_1930226449242865665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_162
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json、图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json、图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/5 图 18 分钟炼 LoRA，任意场景秒换不换脸_2012576047841157121.json、图片生成/文生图/ComfyUI官方示例11：Flux.1文生图工作流 _ ComfyUI从入门到精通_1932779421604401154.json、图片生成/文生图/FLUX SRPO真实感文生图_1966782963511930881.json、图片生成/文生图/FLUX 官方工作流 （教学用）_1955933159051460609.json、图片生成/文生图/FLUX模型基础工作流_1891394911315333122.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGOverride`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualModelGuider`
-- `Ideogram4Scheduler`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `PrimitiveStringMultiline`
+- `ModelSamplingFlux`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -39,41 +39,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyNumberConvert` —— 7/8 个有
-- `CustomCombo` —— 7/8 个有
-- `JsonExtractString` —— 7/8 个有
-- `StringReplace` —— 7/8 个有
-- `EmptyFlux2LatentImage` —— 6/8 个有
-- `PrimitiveInt` —— 6/8 个有
-- `ResolutionSelector` —— 6/8 个有
-- `ComfyMathExpression` —— 5/8 个有
-- `PreviewAny` —— 5/8 个有
-- `PreviewImage` —— 3/8 个有
-- `llama_cpp_instruct_adv` —— 3/8 个有
-- `llama_cpp_model_loader` —— 3/8 个有
-- `llama_cpp_parameters` —— 3/8 个有
-- `EmptyLatentImage` —— 2/8 个有
-- `GetNode` —— 2/8 个有
-- `Ideogram4PromptBuilderKJ` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `easy promptLine` —— 2/8 个有
-- `EmptyImage` —— 1/8 个有
-- `InversionDemoLazySwitch` —— 1/8 个有
+- `DisableNoise` —— 3/8 个有
+- `InjectLatentNoise+` —— 3/8 个有
+- `LoraLoader` —— 3/8 个有
+- `SplitSigmasDenoise` —— 3/8 个有
+- `UltimateSDUpscale` —— 3/8 个有
+- `Upscale Model Loader` —— 3/8 个有
+- `BetterFilmGrain` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `ApplyFBCacheOnModel` —— 1/8 个有
+- `CheckpointLoaderSimple` —— 1/8 个有
+- `ExpressionEditor` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
 - `LoadImage` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `ModelSamplingAuraFlow` —— 1/8 个有
-- `SimpleToggleNode` —— 1/8 个有
-- `StringSplitSelect` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `Simple String` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| LoRA 模型强度 | 0.9 | 0.7 - 0.9 | 3 | 89% |
+| LoRA 文本强度 | 0.9 | 0.7 - 0.9 | 3 | 89% |
 
 ## 常见问题
 
@@ -81,5 +71,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.9，观测区间 0.7 - 0.9，3 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 0.9，观测区间 0.7 - 0.9，3 个样本，取值集中（一致性 89%）

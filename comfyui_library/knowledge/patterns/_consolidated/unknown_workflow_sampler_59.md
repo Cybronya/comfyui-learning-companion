@@ -3,50 +3,35 @@ name: unknown_workflow_sampler_59
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.939
-common_nodes: [Apply Whisper, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM V2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.933333
+common_nodes: [LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json, 音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json, 音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json]
+members: [视频生成/图生视频/MOVA_2018226394521673729.json, 视频生成/图生视频/MOVA图生音画视频_2017069831840866305.json, 视频生成/图生视频/国产开源大模型MOVA实测：一键生成带台词配音的AI视频！_2017593075475947522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_59
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json、音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json、音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MOVA_2018226394521673729.json、视频生成/图生视频/MOVA图生音画视频_2017069831840866305.json、视频生成/图生视频/国产开源大模型MOVA实测：一键生成带台词配音的AI视频！_2017593075475947522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `LoadImage`
+- `RunningHub_MOVA_Loader`
+- `RunningHub_MOVA_Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
 - `CR Text` —— 2/3 个有
-- `Qwen3TTSCustomVoice` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `VRAMReserver` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

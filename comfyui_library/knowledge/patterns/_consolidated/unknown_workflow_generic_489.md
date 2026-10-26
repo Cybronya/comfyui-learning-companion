@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_489
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8304
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.829167
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1大香蕉模型api调用体验！-v1.1_1969604275020197889.json, 图片生成/图生图/-全能图片V1大香蕉模型api调用体验！_1960496054321950722.json, 图片生成/图生图/全能图片V1AI手办玩具生成_1960629408413474817.json, 图片生成/文生图/全能图片 单图编辑 双图融合 多图融合参考_2046485093807562753.json, 图片生成/文生图/全能图片v1大模型-支持单图-多图编辑_2056674867377954818.json]
+members: [图片生成/图生图/（Fal稳定版）全能图片G-image-2-fal_2055874343908986881.json, 图片生成/文生图/0.04积分全能图片G V2文生图（API申请看简介）+全节点注释_2047282365352906754.json, 图片生成/文生图/image2.0_2046839485811396609.json, 图片生成/文生图/全能图片G IMAGE2 6宫格图片生成_2093233039366246401.json, 图片生成/文生图/全能图片G IMAGE2 人物替换_2073926699695296513.json, 图片生成/文生图/👾怪獸-全能G-image2图像编辑+文生图👾_2047265774842155010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_489
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/-全能图片V1大香蕉模型api调用体验！-v1.1_1969604275020197889.json、图片生成/图生图/-全能图片V1大香蕉模型api调用体验！_1960496054321950722.json、图片生成/图生图/全能图片V1AI手办玩具生成_1960629408413474817.json、图片生成/文生图/全能图片 单图编辑 双图融合 多图融合参考_2046485093807562753.json、图片生成/文生图/全能图片v1大模型-支持单图-多图编辑_2056674867377954818.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/（Fal稳定版）全能图片G-image-2-fal_2055874343908986881.json、图片生成/文生图/0.04积分全能图片G V2文生图（API申请看简介）+全节点注释_2047282365352906754.json、图片生成/文生图/image2.0_2046839485811396609.json、图片生成/文生图/全能图片G IMAGE2 6宫格图片生成_2093233039366246401.json、图片生成/文生图/全能图片G IMAGE2 人物替换_2073926699695296513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `PreviewImage` —— 3/5 个有
-- `Image_Resize` —— 1/5 个有
+- `Comfly_api_set` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `Comfly_gpt_image_2_S2A` —— 3/6 个有
+- `RH_RhartImageG2ImageToImage` —— 3/6 个有
+- `CR Text` —— 1/6 个有
+- `Comfly_gpt_image_2` —— 1/6 个有
+- `Comfly_gpt_image_2_fal` —— 1/6 个有
 
 ## 典型参数
 

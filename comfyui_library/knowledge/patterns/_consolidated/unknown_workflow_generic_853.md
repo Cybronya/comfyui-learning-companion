@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_853
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.785667
-common_nodes: [LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
+coverage: 0.9475
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/9宫格随机表情_2040824805951279105.json, 图片生成/图生图/nano 全能图片V12双图编辑，创意无限_1991536814521532417.json, 图片生成/图生图/动作不变表情Q2_2040813073866432514.json]
+members: [视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json, 视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json, 视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json, 视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_853
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/9宫格随机表情_2040824805951279105.json、图片生成/图生图/nano 全能图片V12双图编辑，创意无限_1991536814521532417.json、图片生成/图生图/动作不变表情Q2_2040813073866432514.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json、视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json、视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json、视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `easy showAnything`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `CR Text` —— 1/3 个有
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 3/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

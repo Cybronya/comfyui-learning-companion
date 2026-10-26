@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_873
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.592
-common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.733
+common_nodes: [GetVideoComponents, ImageFromBatch+, ImpactSwitch, JjkShowText, LoadVideo, PreviewImage, RH_LLMAPI_NODE, RH_Translator, RunningHub ThinkSound, SaveVideo, Text Multiline, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json, 图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json, 图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json]
+members: [音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json, 音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json, 音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json, 音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_873
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json、图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json、图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json、音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json、音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json、音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `HYPIRImageRestoration`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `FluxKontextImageScale` —— 1/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
+全部 4 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageFromBatch+`
+- `ImpactSwitch`
+- `JjkShowText`
+- `LoadVideo`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `RunningHub ThinkSound`
+- `SaveVideo`
+- `Text Multiline`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 

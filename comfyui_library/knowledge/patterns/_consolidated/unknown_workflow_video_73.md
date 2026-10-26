@@ -3,37 +3,38 @@ name: unknown_workflow_video_73
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.579333
-common_nodes: [CR Text, RH_Sora2_T2V, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.984
+common_nodes: [CustomAddLabel, GetVideoComponents, LoadAudio, LoadImage, LoadVideo, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977367937801691138.json, 视频生成/文生视频/全能视频S文生视频批量版_1976663867738800130.json, 视频生成/文生视频/全能视频S文生视频无水印更新横竖屏可选_1973425254745944066.json]
+members: [视频生成/图生视频/Seedance2.0 Fast 全能参考视频-不用排队（真人支持）_2048450015756029954.json, 视频生成/图生视频/Seedance2.0 全能参考视频-不用排队（真人支持）_2048445714136567810.json, 视频生成/图生视频/地表最强超能视频2.0-视频编辑模式-不用排队（真人支持）_2037865481549389825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977367937801691138.json、视频生成/文生视频/全能视频S文生视频批量版_1976663867738800130.json、视频生成/文生视频/全能视频S文生视频无水印更新横竖屏可选_1973425254745944066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast 全能参考视频-不用排队（真人支持）_2048450015756029954.json、视频生成/图生视频/Seedance2.0 全能参考视频-不用排队（真人支持）_2048445714136567810.json、视频生成/图生视频/地表最强超能视频2.0-视频编辑模式-不用排队（真人支持）_2037865481549389825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `RH_Sora2_T2V`
+- `CustomAddLabel`
+- `GetVideoComponents`
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
-- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/3 个有
+- `JjkText` —— 1/3 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
 
 ## 典型参数
 

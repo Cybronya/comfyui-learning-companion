@@ -3,31 +3,33 @@ name: unknown_workflow_generic_764
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.75025
-common_nodes: [RH_Sora2_T2V_PRO, SaveVideo]
+coverage: 0.6
+common_nodes: [JjkText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json, 视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json, 视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json, 视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json]
+members: [图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_764
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json、视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json、视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json、视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json、图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `RH_Sora2_T2V_PRO`
-- `SaveVideo`
+- `JjkText`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
+- `RH_SeedreamV45ImageToImage` —— 3/4 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/4 个有
 
 ## 典型参数
 

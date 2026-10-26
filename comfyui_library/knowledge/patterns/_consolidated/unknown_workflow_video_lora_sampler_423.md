@@ -1,93 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_423
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.487
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Seed, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, KSamplerAdvanced, Label (rgthree), LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, SetNode, TorchCompileModel, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy showAnything]
+coverage: 0.836167
+common_nodes: [CR Text Replace, CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SimpleMath+, Text Multiline, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json, 视频生成/图生视频/Wan2.2图生视频无限版_1967394231394373634.json, 视频生成/图生视频/大楠—无限生成视频-wan2.2-i2v-三采样-for循环_1966805388979056641.json, 视频生成/图生视频/最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰减完整版_1964217924158373889.json, 视频生成/文生视频/AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教程_1966178940819771393.json]
+members: [视频生成/图生视频/wan2.2 Image 2 Video _ Kijia_1956657065885143042.json, 视频生成/图生视频/wan2.2 图生视频 _ KJ加速优化版_1956615670723170306.json, 视频生成/图生视频/wan2.2图生视频加速优化_1959880278208622594.json, 视频生成/文生视频/0902wan2.2 文生视频 _ KJ加速优化版_1962918424819240961.json, 视频生成/文生视频/wan2.2 Text 2 Video _ Kijia_1957729616544854018.json, 视频生成/文生视频/wan2.2 文生视频 _ KJ加速优化版_1957701596052385794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_423
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json、视频生成/图生视频/Wan2.2图生视频无限版_1967394231394373634.json、视频生成/图生视频/大楠—无限生成视频-wan2.2-i2v-三采样-for循环_1966805388979056641.json、视频生成/图生视频/最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰减完整版_1964217924158373889.json、视频生成/文生视频/AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教程_1966178940819771393.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/wan2.2 Image 2 Video _ Kijia_1956657065885143042.json、视频生成/图生视频/wan2.2 图生视频 _ KJ加速优化版_1956615670723170306.json、视频生成/图生视频/wan2.2图生视频加速优化_1959880278208622594.json、视频生成/文生视频/0902wan2.2 文生视频 _ KJ加速优化版_1962918424819240961.json、视频生成/文生视频/wan2.2 Text 2 Video _ Kijia_1957729616544854018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Seed`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `Label (rgthree)`
-- `LoadImage`
-- `LoraLoaderModelOnly`
+全部 6 个 workflow 都包含：
+- `CR Text Replace`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SetNode`
-- `TorchCompileModel`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_GetImageCount`
+- `SimpleMath+`
+- `Text Multiline`
+- `Textbox`
 - `VHS_VideoCombine`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy int`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerColor: BrightnessContrastV2` —— 4/5 个有
-- `RIFE VFI` —— 4/5 个有
-- `WanImageToVideo` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `PrimitiveFloat` —— 3/5 个有
-- `easy promptLine` —— 3/5 个有
-- `ImpactInt` —— 2/5 个有
-- `RH_Captioner` —— 2/5 个有
-- `Text Concatenate` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `UnetLoaderGGUF` —— 2/5 个有
-- `easy seed` —— 2/5 个有
-- `wanBlockSwap` —— 2/5 个有
-- `CR Prompt List` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `Display Any (rgthree)` —— 1/5 个有
-- `FromListGet1String` —— 1/5 个有
-- `ImageColorMatch+` —— 1/5 个有
-- `LoadUpscalerTensorrtModel` —— 1/5 个有
-- `ShowText` —— 1/5 个有
-- `UpscalerTensorrt` —— 1/5 个有
-- `WanFirstLastFrameToVideo` —— 1/5 个有
-- `string_util_StrSplit` —— 1/5 个有
+- `PrimitiveBoolean` —— 5/6 个有
+- `RH_LLMAPI_NODE` —— 5/6 个有
+- `easy ifElse` —— 5/6 个有
+- `EmptyImage` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `RHHiddenNodes` —— 3/6 个有
+- `WanVideoEmptyEmbeds` —— 3/6 个有
+- `WanVideoImageToVideoEncode` —— 3/6 个有
+- `easy imageSize` —— 3/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
-| 采样算法 | 1 | 1 - 4 | 5 | 25% |
-| 调度器 | euler | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -95,8 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
-- 调度器 最常用 euler，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,36 +3,36 @@ name: unknown_workflow_generic_423
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.791667
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text Multiline]
+coverage: 0.7335
+common_nodes: [LoadImage, RH_LLMAPI_NODE, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/主图测试3_2041756149850050562.json, 图片生成/图生图/主图测试v2_2044657832632524802.json, 图片生成/图生图/全能图片V2_ 主图测试2_2041347813430267906.json, 图片生成/图生图/娃娃买家秀（全能v2-4k）_2048706255878889473.json, 图片生成/文生图/低价版全能图片V2-阿浩_2041061411165573122.json, 图片生成/文生图/全能图片V2_ 图生图-低价渠道版图生图工作流_2027194474086014978.json]
+members: [图片生成/反推提示词/103图片反推提示词_2058789812529881090.json, 图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（ai贞贞工坊-gemini-3-pro版）_1992188875172892674.json, 图片生成/反推提示词/分镜反推工作流-Kimi2.5版视频分镜及画面三宫格提示词生成仅做提示词生成不是图片_2019991888387907586.json, 图片生成/反推提示词/（贞贞AI工坊成API）Kimi2.5版视频分镜及画面三宫格提示词生成_2019861408355196929.json, 图片生成/反推提示词/（贞贞AI工坊）Gemini 3 Pro图像超级反推API_1991188464685154305.json, 图片生成/反推提示词/（贞贞AI工坊）Grok图像反推API V2_1985746002089058305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_423
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/主图测试3_2041756149850050562.json、图片生成/图生图/主图测试v2_2044657832632524802.json、图片生成/图生图/全能图片V2_ 主图测试2_2041347813430267906.json、图片生成/图生图/娃娃买家秀（全能v2-4k）_2048706255878889473.json、图片生成/文生图/低价版全能图片V2-阿浩_2041061411165573122.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/103图片反推提示词_2058789812529881090.json、图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（ai贞贞工坊-gemini-3-pro版）_1992188875172892674.json、图片生成/反推提示词/分镜反推工作流-Kimi2.5版视频分镜及画面三宫格提示词生成仅做提示词生成不是图片_2019991888387907586.json、图片生成/反推提示词/（贞贞AI工坊成API）Kimi2.5版视频分镜及画面三宫格提示词生成_2019861408355196929.json、图片生成/反推提示词/（贞贞AI工坊）Gemini 3 Pro图像超级反推API_1991188464685154305.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `Text Multiline`
+- `RH_LLMAPI_NODE`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `MultiTextConcatenate` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
+- `CR Prompt Text` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `JjkText` —— 2/6 个有
+- `easy saveText` —— 1/6 个有
 
 ## 典型参数
 

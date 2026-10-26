@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_78
 type: Text To Image
 frequency: 15
-level: moderate
-coverage: 0.8978
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+level: strong
+coverage: 0.892467
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen2.1单图编辑工作流，风格化图生图单图编辑处理工具_2107594764458745858.json, 图片生成/图生图/Qwen2.1双图组合工作流，风格化图生图双图融合处理工具_2107593203762417666.json, 图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2107293954797555714.json, 图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2109523834180292610.json, 图片生成/图生图/Qwen2.1透明抠图工作流，图生图抠图背景移除处理工具_2107591647239426050.json, 图片生成/图生图/Qwen2.1透明抠图｜一键抠出透明背景素材，电商设计抠图必备神器_2107290862001680386.json, 图片生成/图生图/Qwen2.1透明抠图｜一键抠出透明背景素材，电商设计抠图必备神器_2109524566442856449.json, 图片生成/图生图/Qwen_Image_2.1一键抠图PNG通道输出，透明背景图生图工具_2105110544796708866.json, 图片生成/图生图/Qwen_Image_2.1精准抠图工作流，指哪扣哪的交互式图生图体验_2106553795676303362.json, 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json, 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，支持三视图参考的图生图工作流_2104738814660014082.json, 图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json, 图片生成/图生图/（6图编辑）QwenImage2.1 turbo专用工作流 高效改图方案_2111592341713801218.json, 图片生成/文生图/Qwen-image 2.1 Turbo文生图，图生图高效出片_2110863379169636354.json, 图片生成/文生图/QwenImage2.1 turbo专用工作流 高效改图方案_2109710779971891202.json]
+members: [图片生成/文生图/剧情生成天花板｜故事板一键产出SD2绘图声纹参考全套_2089839351608991746.json, 数字人/数字人/HeyGem视频换声工作流｜语音迁移保留原画面_2106623816477794305.json, 数字人/数字人/HeyGem语音迁移换声｜视频配音一键替换原声_2097222877983625217.json, 数字人/数字人/Heygem真人对口型数字人｜口播长视频快速生成书评国学情感_2110692840987783169.json, 视频生成/图生视频/Seedance 2.0支持留空真人全参视频处理工作流_2102163252150099970.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空支持真人视频生成_2100302038222598146.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空真人，图生视频视频生视频全能力覆盖_2103230482023538689.json, 视频生成/图生视频/Seedance2.0全参工作流｜支持留空真人视频生视频生成_2097408085110386689.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流，支持提示词留空与真人视频生成_2114418486465359873.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流｜支持提示词留空与真人视频生成_2108012548770582530.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流｜支持留空支持真人视频生视频_2114241488833048578.json, 视频生成/图生视频/地表最强Seedance2.0支持留空支持真人全参工作流，视频生视频图生视频方案_2108261699794063362.json, 视频生成/图生视频/留空真人全参工作流｜Seedance2.0地表最强视频生成_2093481519183654913.json, 视频生成/图生视频/真人对口型口播｜Heygem书评国学情感数字人超长视频_2091209074963730434.json, 视频生成/文生视频/MiniMax H3多模态视频生成 超低成本每秒两毛钱_2098276360841162754.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_78
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwen2.1单图编辑工作流，风格化图生图单图编辑处理工具_2107594764458745858.json、图片生成/图生图/Qwen2.1双图组合工作流，风格化图生图双图融合处理工具_2107593203762417666.json、图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2107293954797555714.json、图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2109523834180292610.json、图片生成/图生图/Qwen2.1透明抠图工作流，图生图抠图背景移除处理工具_2107591647239426050.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/剧情生成天花板｜故事板一键产出SD2绘图声纹参考全套_2089839351608991746.json、数字人/数字人/HeyGem视频换声工作流｜语音迁移保留原画面_2106623816477794305.json、数字人/数字人/HeyGem语音迁移换声｜视频配音一键替换原声_2097222877983625217.json、数字人/数字人/Heygem真人对口型数字人｜口播长视频快速生成书评国学情感_2110692840987783169.json、视频生成/图生视频/Seedance 2.0支持留空真人全参视频处理工作流_2102163252150099970.json…）
 
 - **类型**：Text To Image
 - **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -28,34 +28,28 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 10/15 个有
-- `RandomNoise` —— 10/15 个有
-- `SamplerCustomAdvanced` —— 10/15 个有
-- `QwenImage21Cache` —— 8/15 个有
-- `EmptyImage` —— 7/15 个有
-- `PreviewImage` —— 7/15 个有
-- `QwenImage21FunPDDLoader` —— 7/15 个有
-- `孤海注释` —— 7/15 个有
-- `ComfySwitchNode` —— 6/15 个有
-- `PrimitiveInt` —— 6/15 个有
-- `PrimitiveStringMultiline` —— 5/15 个有
-- `ResolutionSelector` —— 5/15 个有
-- `SaveImageAdvanced` —— 5/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/15 个有
-- `KSamplerSelect` —— 3/15 个有
-- `ManualSigmas` —— 3/15 个有
-- `PrimitiveBoolean` —— 3/15 个有
-- `CR Text` —— 1/15 个有
+- `LoadVideo` —— 12/15 个有
+- `LoadImage` —— 11/15 个有
+- `PreviewAny` —— 10/15 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 10/15 个有
+- `SaveImage` —— 7/15 个有
+- `RH_HeyGemNode` —— 4/15 个有
+- `AudioCrop` —— 2/15 个有
+- `CR Prompt Text` —— 2/15 个有
+- `CreateVideo` —— 2/15 个有
+- `VHS_LoadVideo` —— 2/15 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/15 个有
+- `忽略多组孤海` —— 1/15 个有
 
 ## 典型参数
 
@@ -66,8 +60,8 @@ source: knowledge_consolidation
 | 采样算法 | er_sde | - | 15 | 100% |
 | 调度器 | beta | - | 15 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 80 | 80 - 1024 | 15 | 0% |
-| 高度 | 80 | 80 - 1024 | 15 | 0% |
+| 宽度 | 80 | 80 - 80 | 15 | 100% |
+| 高度 | 80 | 80 - 80 | 15 | 100% |
 
 ## 常见问题
 
@@ -82,6 +76,6 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，15 个样本，一致性 100%
 - 调度器 最常用 beta，15 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，15 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，15 个样本，取值分散，一致性仅 0%
+- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
 - 高发问题（15/15 个样本）：Steps较低可能导致细节不足

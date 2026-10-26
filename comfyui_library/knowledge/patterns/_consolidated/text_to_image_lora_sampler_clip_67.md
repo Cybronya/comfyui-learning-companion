@@ -3,59 +3,69 @@ name: text_to_image_lora_sampler_clip_67
 type: Text To Image
 frequency: 16
 level: strong
-coverage: 0.903813
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.882812
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1自动换头术图像编辑工作流，人像写真图生图处理工具_2108454879172849665.json, 图片生成/图生图/Qwen Image 2.1角色三视图BF16展开版，可选择保留背景图生图工具_2106504632108408834.json, 图片生成/图生图/Qwen Image2.1图生图三套夏装｜多套服装一键试穿_2108077360229732354.json, 图片生成/图生图/Qwen Image2.1自动换头术｜图像编辑换脸局部重绘利器_2108034758382018561.json, 图片生成/图生图/Qwen image 2.1图像编辑通用版｜图生图指令改图｜听懂人话好上手_2102285690850598914.json, 图片生成/图生图/Qwen image 2.1图片编辑 局部修改指令式操作_2105111897447157762.json, 图片生成/图生图/Qwen image 2.1图片编辑一号版｜图生图轻量改图首选_2112880073996062721.json, 图片生成/图生图/Qwen image 2.1图片编辑多面手｜图片换背景其它处理全包｜图生图顺手_2102252322154962946.json, 图片生成/图生图/Qwen image 2.1图片编辑轻量版｜小改动不求人｜抠字改背景都行_2102650761531445250.json, 图片生成/图生图/Qwen image 2.1图片编辑，海报制作场景特效全能_2112335625205669889.json, 图片生成/图生图/Qwen image 2.1多图编辑int8版｜自带提示词增强｜图生图低显存友好_2102210466104832001.json, 图片生成/图生图/Qwen image 2.1多图编辑人物面部加全身三视图角色表V2_2109341094629699586.json, 图片生成/图生图/Qwen image 2.1多图编辑｜图生图多参考融合｜改图精准不跑偏_2104827606054035458.json, 图片生成/图生图/qwen image2.1多图编辑 换装场景道具一键替换_2104284093109334017.json, 图片生成/图生图/qwen image2.1多图编辑进阶版｜文生图图生图自由切换｜批量改图高效_2102257321794695170.json, 图片生成/图生图/多图编辑qwen image2.1｜场景道具换装 图生图多图协同编辑_2104110886465130498.json]
+members: [视频生成/图生视频/图生视频高质量生成｜MiniMax H3画面细节增强_2096700949896196098.json, 视频生成/图生视频/多主体生视Minimax_H3频ENG海螺_2087146580276244481.json, 视频生成/图生视频/多主体生视频｜海螺Minimax_H3图生视频生成_2092178321030336513.json, 视频生成/图生视频/多参工作流｜minimax h3图生视频一键生成_2095085442826850306.json, 视频生成/图生视频/开源参考生视频｜Minimax-H3短剧漫剧创意视频_2092025540294303746.json, 视频生成/图生视频/开源参考生视频｜Minimax-H3短剧漫剧角色设计生成_2094785389037965314.json, 视频生成/图生视频/开源版Minimax H3视频全功能加速-turbo4步图片参考短视频生成_2087388416773283842.json, 视频生成/图生视频/海螺H3图生视频｜8步极速加速优化t8版，角色表演流畅_2099887065814093826.json, 视频生成/图生视频/海螺h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086452080943919106.json, 视频生成/图生视频/稳定加速5参考图版｜MiniMax H3全能参考自定义音频_2091200766919925762.json, 视频生成/图生视频/稳定加速版全能参考｜MiniMax H3五参考图音频自定义_2090900087277973505.json, 视频生成/图生视频/稳定加速版全能参考｜MiniMax H3开源支持自定义音频_2091271985484623874.json, 视频生成/图生视频/稳定加速版全能参考｜MiniMax H3支持自定义音频_2092396498217689090.json, 视频生成/图生视频/稳定加速版｜MiniMax H3 全能参考4步加速_2089295207438307330.json, 视频生成/文生视频/4步lora 1.0+sage双重加速｜MinimaxH3双bf16满血版视频生成_2089461776118280193.json, 视频生成/文生视频/minimax开源版中文锁定语音H3稳定4步lora加速版优化版图生视频_2086411021345972225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1自动换头术图像编辑工作流，人像写真图生图处理工具_2108454879172849665.json、图片生成/图生图/Qwen Image 2.1角色三视图BF16展开版，可选择保留背景图生图工具_2106504632108408834.json、图片生成/图生图/Qwen Image2.1图生图三套夏装｜多套服装一键试穿_2108077360229732354.json、图片生成/图生图/Qwen Image2.1自动换头术｜图像编辑换脸局部重绘利器_2108034758382018561.json、图片生成/图生图/Qwen image 2.1图像编辑通用版｜图生图指令改图｜听懂人话好上手_2102285690850598914.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/图生视频高质量生成｜MiniMax H3画面细节增强_2096700949896196098.json、视频生成/图生视频/多主体生视Minimax_H3频ENG海螺_2087146580276244481.json、视频生成/图生视频/多主体生视频｜海螺Minimax_H3图生视频生成_2092178321030336513.json、视频生成/图生视频/多参工作流｜minimax h3图生视频一键生成_2095085442826850306.json、视频生成/图生视频/开源参考生视频｜Minimax-H3短剧漫剧创意视频_2092025540294303746.json…）
 
 - **类型**：Text To Image
 - **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3AudioConditioningT8`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 15/16 个有
-- `ComfySwitchNode` —— 10/16 个有
-- `TextGenerateLTX2Prompt` —— 10/16 个有
-- `easy showAnything` —— 10/16 个有
-- `BatchImagesNode` —— 9/16 个有
-- `ResolutionSelector` —— 8/16 个有
-- `SaveImageAdvanced` —— 8/16 个有
-- `CR Text` —— 4/16 个有
-- `ImageConcatMulti` —— 3/16 个有
-- `JDCN_StringToList` —— 3/16 个有
-- `PrimitiveStringMultiline` —— 3/16 个有
-- `ImageCompare` —— 2/16 个有
-- `PrimitiveBoolean` —— 2/16 个有
-- `WujiCleaner` —— 2/16 个有
-- `WujiUpscaler2` —— 2/16 个有
-- `Image Compare (mtb)` —— 1/16 个有
-- `easy int` —— 1/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 15/16 个有
+- `VHS_VideoCombine` —— 15/16 个有
+- `孤海注释` —— 14/16 个有
+- `LoraLoaderBypassModelOnly` —— 13/16 个有
+- `MiniMaxH3DualClockSamplerT8` —— 12/16 个有
+- `MiniMaxH3AVDecodeT8` —— 10/16 个有
+- `PrimitiveStringMultiline` —— 10/16 个有
+- `BasicScheduler` —— 7/16 个有
+- `CreateVideo` —— 7/16 个有
+- `SaveVideo` —— 7/16 个有
+- `KSamplerSelect` —— 6/16 个有
+- `VAEDecodeAudio` —— 6/16 个有
+- `CR Prompt Text` —— 5/16 个有
+- `LoadAudio` —— 5/16 个有
+- `ModelAttentionBackend` —— 3/16 个有
+- `SolAttnMiniMax` —— 3/16 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/16 个有
+- `CR Text` —— 1/16 个有
+- `GetImageSize` —— 1/16 个有
+- `ImageResizeKJv2` —— 1/16 个有
+- `Label (rgthree)` —— 1/16 个有
+- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/16 个有
+- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/16 个有
 
 ## 典型参数
 
@@ -73,7 +83,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -84,4 +94,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
-- 高发问题（18/16 个样本）：Steps较低可能导致细节不足
+- 高发问题（16/16 个样本）：Steps较低可能导致细节不足

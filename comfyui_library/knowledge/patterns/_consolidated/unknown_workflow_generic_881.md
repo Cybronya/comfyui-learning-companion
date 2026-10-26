@@ -1,43 +1,45 @@
 ---
 name: unknown_workflow_generic_881
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.821
-common_nodes: [FaceAnalysisModels, FaceEmbedDistance, InsertAnythingImageProcessor, InsertAnythingInferencer, InsertAnythingLoader, LayerMask: PersonMaskUltra V2, LoadImage, MaskOption, PreviewImage, SaveImage]
+coverage: 1
+common_nodes: [AudioSeparation, CR Prompt Text, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText]
 problems: []
 missing: []
-members: [图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json, 图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json, 图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json]
+members: [音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_881
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json、图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json、图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FaceAnalysisModels`
-- `FaceEmbedDistance`
-- `InsertAnythingImageProcessor`
-- `InsertAnythingInferencer`
-- `InsertAnythingLoader`
-- `LayerMask: PersonMaskUltra V2`
-- `LoadImage`
-- `MaskOption`
-- `PreviewImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `AudioSeparation`
+- `CR Prompt Text`
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `PreviewMask_` —— 1/3 个有
+- `Apply Whisper` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `AudioCrop` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `ShowAnything|Mie` —— 1/4 个有
 
 ## 典型参数
 

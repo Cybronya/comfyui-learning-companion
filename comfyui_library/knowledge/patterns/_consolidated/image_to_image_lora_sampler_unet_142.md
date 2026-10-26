@@ -2,79 +2,69 @@
 name: image_to_image_lora_sampler_unet_142
 type: Image To Image
 frequency: 5
-level: weak
-coverage: 0.9362
-common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.9814
+common_nodes: [CLIPLoader, EmptySD3LatentImage, ImageResizeKJv2, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/建筑立面迁移_泛化 qwen_image_edit_2511_2010382464266543105.json, 图片生成/图生图/替换物品，人物，让人物穿上你想要的衣服，鞋子_1998034291772784642.json, 图片生成/图生图/自动加模特，换背景_2053030897783459841.json, 图片生成/图生图/自用多角度生成_1990694149127114754.json, 图片生成/图生图/自由打光QwenImageEdit2511_1995384002708168706.json]
+members: [图片生成/图生图/生图-一键四视图白底图-Krea2_2097677926920712194.json, 图片生成/图生图/角色四视图辅助生成_2096880673448615937.json, 图片生成/文生图/krea2-人物四视图_2094627103068217345.json, 数字人/数字人/MiniMaxH3辅助四视图生成-k2_2094815406618927106.json, 数字人/数字人/多面部参考融合生成人物四视图_2098589358654844929.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_142
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/建筑立面迁移_泛化 qwen_image_edit_2511_2010382464266543105.json、图片生成/图生图/替换物品，人物，让人物穿上你想要的衣服，鞋子_1998034291772784642.json、图片生成/图生图/自动加模特，换背景_2053030897783459841.json、图片生成/图生图/自用多角度生成_1990694149127114754.json、图片生成/图生图/自由打光QwenImageEdit2511_1995384002708168706.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/生图-一键四视图白底图-Krea2_2097677926920712194.json、图片生成/图生图/角色四视图辅助生成_2096880673448615937.json、图片生成/文生图/krea2-人物四视图_2094627103068217345.json、数字人/数字人/MiniMaxH3辅助四视图生成-k2_2094815406618927106.json、数字人/数字人/多面部参考融合生成人物四视图_2098589358654844929.json）
 
 - **类型**：Image To Image
 - **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGNorm`
 - `CLIPLoader`
-- `ImageScaleToTotalPixels`
+- `EmptySD3LatentImage`
+- `ImageResizeKJv2`
 - `KSampler`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `AIO_Preprocessor` —— 2/5 个有
-- `ControlNetApplyAdvanced` —— 2/5 个有
-- `ControlNetLoader` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `SetUnionControlNetType` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/5 个有
-- `ImitationHueNode` —— 1/5 个有
-- `PIP_StringConcatenation` —— 1/5 个有
-- `QwenMultiangleLightningNode` —— 1/5 个有
-- `easy bookmark` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `GetImageSizeAndCount` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `StringFunction|pysssss` —— 1/5 个有
+- `easy positive` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 5 | 47% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 37% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 80% |
+| 采样步数 | 10 | 10 - 12 | 5 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| ControlNet 权重 | 0.4 | - | 2 | 50% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 47%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 37%
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 80%
+- 采样步数 中位数 10，观测区间 10 - 12，5 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.4，样本不足，未给区间，2 个样本
-- 高发问题（11/5 个样本）：Steps较低可能导致细节不足

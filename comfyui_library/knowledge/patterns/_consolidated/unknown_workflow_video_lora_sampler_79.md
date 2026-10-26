@@ -1,80 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_79
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.340176
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.593167
+common_nodes: [Audio Duration (mtb), BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMask, ImageCropByMaskAndResize, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, VHS_LoadVideo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan Animate_Mix_KJ版_正式版 最强人物替换 动作迁移_2012510535283118082.json, 视频生成/图生视频/Wan Animate_Mix_KJ版_人物迁移视频_1996047658001317889.json, 视频生成/图生视频/Wan Animate_Mix_KJ版_正式版 最强人物替换 动作迁移_2011070672583270401.json, 视频生成/图生视频/Wan Animate_Mix_KJ版_正式版_1998677074959327233.json, 视频生成/图生视频/Wan Animate_Mix_KJ版_正式版_2004430696947085313.json, 视频生成/图生视频/Wan Animate_Mix_KJ版_正式版最强视频人物替换、动作迁移_2059530149854539777.json, 视频生成/图生视频/Wan Animate_Mix_KJ版动作迁移 v2_2043972881754890241.json, 视频生成/图生视频/Wan Animate_Mix_KJ版动作迁移_1997150814663819266.json, 视频生成/图生视频/Wan Animate_彩图破解_2002706494028169217.json, 视频生成/图生视频/Wan animate升级版 影视二创_1997671860680765442.json, 视频生成/图生视频/Wan+Animate_8807_2009294068987203586.json, 视频生成/图生视频/Wan2.2-Animate 影视二创+多人动作迁移_2000494185805381633.json, 视频生成/图生视频/YZ金鱼-Wan Animate_Mix_KJ版_正式版_1994708135476596738.json, 视频生成/图生视频/【Work-Fisher】影视二创多人版_1997210149284679681.json, 视频生成/图生视频/人物替换（自用）_2015831314653515777.json, 视频生成/图生视频/影视 二创 多人版 上手简单 效果好_2009265008735162370.json, 视频生成/图生视频/角色替换_Wan Animate_2003406585529573378.json]
+members: [图片生成/反推提示词/test11_2017053406745075714.json, 数字人/数字人/已知最强视频换脸模型 Animate Wan2.2_2007046777135964161.json, 视频生成/图生视频/Animate Wan2.2 人物视频换装V2_2005855972839092225.json, 视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2082828374803832834.json, 视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2101148000168005634.json, 视频生成/图生视频/Animate+Wan2.2+最强视频换脸+换头_2005836350404395009.json, 视频生成/图生视频/AnimateWan2.2 视频换人V2+单人多人_2005891179520688129.json, 视频生成/图生视频/Wan animate视频人物替换 效果极佳_2009640204046442497.json, 视频生成/图生视频/Wan+animate视频人物替换+效果极佳_2010983716067217410.json, 视频生成/图生视频/sam语义分割 最强视频换脸+换头_2014336980489871362.json, 视频生成/图生视频/旅拍视频模板换脸-Wan高质量版-VideoFaceSwap_2071227855530455041.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2_2009317533723136001.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2_2021386632020103169.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2_2041848671586750465.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2（懒人版）_2067973490745106434.json, 视频生成/图生视频/最强视频换脸换头不换背景适合平台美女跳舞动作迁移复刻动作一致_2073689074594050049.json, 视频生成/图生视频/第一种最强视频换脸+换头_2041849392579219457.json, 视频生成/图生视频/视频换头_2041098212999700482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_79
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Wan Animate_Mix_KJ版_正式版 最强人物替换 动作迁移_2012510535283118082.json、视频生成/图生视频/Wan Animate_Mix_KJ版_人物迁移视频_1996047658001317889.json、视频生成/图生视频/Wan Animate_Mix_KJ版_正式版 最强人物替换 动作迁移_2011070672583270401.json、视频生成/图生视频/Wan Animate_Mix_KJ版_正式版_1998677074959327233.json、视频生成/图生视频/Wan Animate_Mix_KJ版_正式版_2004430696947085313.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/test11_2017053406745075714.json、数字人/数字人/已知最强视频换脸模型 Animate Wan2.2_2007046777135964161.json、视频生成/图生视频/Animate Wan2.2 人物视频换装V2_2005855972839092225.json、视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2082828374803832834.json、视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2101148000168005634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：34%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DrawViTPose`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `GrowMask`
+- `ImageCropByMaskAndResize`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+- `PixelPerfectResolution`
+- `PrimitiveInt`
 - `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
-- `VHS_VideoCombine`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 16/17 个有
-- `ImageBlend` —— 16/17 个有
-- `PlaySound|pysssss` —— 16/17 个有
-- `RHHiddenNodes` —— 16/17 个有
-- `RIFE VFI` —— 16/17 个有
-- `SDPoseOODLoader` —— 16/17 个有
-- `SDPoseOODProcessor` —— 16/17 个有
-- `INTConstant` —— 15/17 个有
-- `PrimitiveFloat` —— 15/17 个有
-- `WanVideoLoraSelectMulti` —— 14/17 个有
-- `BlockifyMask` —— 13/17 个有
-- `DrawMaskOnImage` —— 13/17 个有
-- `GrowMask` —— 13/17 个有
-- `ImageFromBatch` —— 13/17 个有
-- `PointsEditor` —— 13/17 个有
-- `PrimitiveInt` —— 13/17 个有
-- `CoordinatePlotter` —— 12/17 个有
-- `SeCModelLoader_Ultra-Fast` —— 12/17 个有
-- `SeCVideoSegmentation_Ultra-Fast` —— 12/17 个有
-- `easy showAnything` —— 4/17 个有
-- `MemoryCleaner` —— 3/17 个有
-- `VHS_VideoInfo` —— 3/17 个有
-- `YOLOModelLoader` —— 3/17 个有
-- `easy int` —— 2/17 个有
-- `SaveImage` —— 1/17 个有
-- `SeCModelLoader` —— 1/17 个有
-- `SeCVideoSegmentation` —— 1/17 个有
-- `TT_img_enc_v2` —— 1/17 个有
+- `DownloadAndLoadGIMMVFIModel` —— 17/18 个有
+- `GIMMVFI_interpolate` —— 17/18 个有
+- `VHS_VideoCombine` —— 17/18 个有
+- `JjkText` —— 16/18 个有
+- `Int` —— 15/18 个有
+- `MaskToImage` —— 14/18 个有
+- `CM_IntToFloat` —— 4/18 个有
+- `VHS_VideoInfo` —— 4/18 个有
+- `easy showAnything` —— 4/18 个有
+- `SaveImage` —— 2/18 个有
+- `TT_img_enc` —— 2/18 个有
+- `Text` —— 2/18 个有
+- `WanVideoTorchCompileSettings` —— 2/18 个有
+- `AutoCropFaces` —— 1/18 个有
+- `FlashVSRNode` —— 1/18 个有
+- `PreviewImage` —— 1/18 个有
+- `RIFE VFI` —— 1/18 个有
+- `TextOverlay` —— 1/18 个有
 
 ## 典型参数
 

@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_332
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.913143
-common_nodes: [CR Prompt Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
+coverage: 0.825
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json, 图片生成/图生图/（RH版）即梦4.0图像编辑单图V1_1965514036240633858.json, 图片生成/图生图/（RH版）即梦4.0图像编辑双图V1_1965516818934808577.json]
+members: [视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json, 视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json, 视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json, 视频生成/图生视频/图生视频 修改局部_1991867400045875201.json, 视频生成/图生视频/开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_1998420316537913346.json, 视频生成/图生视频/最新即梦图生视频3.0 PRO 图生视频 API调用 无水印_1994588476685361153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_332
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json、图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json、图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json、图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json、图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json、视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json、视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json、视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json、视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/7 个有
-- `ImageConcanate` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `PDIMAGE_LongerSize` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `RH_Jimeng_Image2Video_V2` —— 5/8 个有
+- `RH_RhartVideoGImageToVideo` —— 3/8 个有
 
 ## 典型参数
 

@@ -3,34 +3,48 @@ name: unknown_workflow_generic_1704
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [CR Text, RH_Suno_Single, SaveAudio, SaveAudioMP3, String]
+coverage: 0.667
+common_nodes: [ImageRGBChannel, Int, LayerColor: Levels, LoadImage, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_Utils, SaveImage, SaveVideo, TextInput_, ttN concat]
 problems: []
 missing: []
-members: [音频生成/音频生成/suno音乐V5自动唱-手动歌词（一首0.5元）_1976205231614771201.json, 音频生成/音频生成/suno音乐V5（手动歌词版）_1973008055413641218.json]
+members: [视频生成/图生视频/【榨干了低价性能】电商带货视频  九宫格  低价版本 一个视频 几毛钱_2076951260879745026.json, 视频生成/图生视频/剧情电商带货  seedance mini 版本   1080p 0.88元_S  效果可以_2071176299367981057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1704
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/suno音乐V5自动唱-手动歌词（一首0.5元）_1976205231614771201.json、音频生成/音频生成/suno音乐V5（手动歌词版）_1973008055413641218.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【榨干了低价性能】电商带货视频  九宫格  低价版本 一个视频 几毛钱_2076951260879745026.json、视频生成/图生视频/剧情电商带货  seedance mini 版本   1080p 0.88元_S  效果可以_2071176299367981057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_Suno_Single`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `String`
+- `ImageRGBChannel`
+- `Int`
+- `LayerColor: Levels`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
+- `RH_Utils`
+- `SaveImage`
+- `SaveVideo`
+- `TextInput_`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_RhartVideoGImageToVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

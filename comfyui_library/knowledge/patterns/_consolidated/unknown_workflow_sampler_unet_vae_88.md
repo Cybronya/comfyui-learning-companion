@@ -2,78 +2,72 @@
 name: unknown_workflow_sampler_unet_vae_88
 type: Unknown Workflow
 frequency: 11
-level: moderate
-coverage: 0.836273
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+level: weak
+coverage: 0.803091
+common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json, 视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json, 视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json, 视频生成/图生视频/Minimax参考生视频-(8步加速-768P)_2085357536189960194.json, 视频生成/图生视频/aidir-Minimax_h3_多参考图生视频_2087056895474491393.json, 视频生成/图生视频/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）_2084269573662142465.json, 视频生成/图生视频/minMax H3 多参考生视频+加速_2090270612068585473.json, 视频生成/图生视频/minimax h3多元素参考 生视频工作流_2084531165620432897.json, 视频生成/文生视频/MINIMAX-H3 多参工作流_2084509251074093057.json, 视频生成/文生视频/MiniMaxH3地表最强阿里3步加速Lora 全能参考速度起飞_2099733663037607937.json, 视频生成/文生视频/minimaxH3UltraFastestTrue4_v80LightningSpeed_2098097827569295361.json]
+members: [音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json, 音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json, 音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json, 音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json, 音频生成/音频生成/Ace-Step1.5X工作流(打造你的专属音乐)_2054411129350311938.json, 音频生成/音频生成/Acestep1.5音乐制作_2043518374143070209.json, 音频生成/音频生成/ace-step 1.5 _ 音乐生成最佳搭档_2075297299286286338.json, 音频生成/音频生成/多人合唱-音乐生成-ACE-STEP1.5XL_2045332746666516482.json, 音频生成/音频生成/方格智联-ACE-1.5音乐_2086670840938192898.json, 音频生成/音频生成/无限画布ACE-Step 1.5 XL Turbo音乐生成工作流_2074758959570968577.json, 音频生成/音频生成/音乐生成-ACE-STEP1.5XL_2045321458674573313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_88
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json、视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json、视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json、视频生成/图生视频/Minimax参考生视频-(8步加速-768P)_2085357536189960194.json、视频生成/图生视频/aidir-Minimax_h3_多参考图生视频_2087056895474491393.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json、音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json、音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json、音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json、音频生成/音频生成/Ace-Step1.5X工作流(打造你的专属音乐)_2054411129350311938.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyAceStep1.5LatentAudio`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEDecodeAudio`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 10/11 个有
-- `LoadAudio` —— 9/11 个有
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `ComfyMathExpression` —— 8/11 个有
-- `LoraLoaderModelOnly` —— 8/11 个有
-- `CreateVideo` —— 6/11 个有
-- `VHS_VideoCombine` —— 6/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/11 个有
-- `SaveVideo` —— 5/11 个有
-- `VHS_LoadVideo` —— 5/11 个有
-- `PathchSageAttentionKJ` —— 4/11 个有
-- `Int` —— 3/11 个有
-- `CR Prompt Text` —— 2/11 个有
-- `EasyCache` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `Label (rgthree)` —— 2/11 个有
-- `PainterVRAM` —— 2/11 个有
-- `RTXVideoSuperResolution` —— 2/11 个有
-- `SpectrumApplyMiniMaxH3` —— 2/11 个有
-- `LTX_lora_loader` —— 1/11 个有
-- `LoraLoaderBypassModelOnly` —— 1/11 个有
-- `MiniMaxH3AddGuide` —— 1/11 个有
-- `MiniMaxH3SigmaShift` —— 1/11 个有
-- `ModelAttentionBackend` —— 1/11 个有
-- `ModelPreviewOverrideKJ` —— 1/11 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
+- `VAELoader` —— 10/11 个有
+- `PrimitiveInt` —— 8/11 个有
+- `Int` —— 6/11 个有
+- `CR Text` —— 5/11 个有
+- `Float` —— 5/11 个有
+- `JjkText` —— 2/11 个有
+- `PrimitiveFloat` —— 2/11 个有
+- `PrimitiveStringMultiline` —— 2/11 个有
+- `AV_VAELoader` —— 1/11 个有
+- `Text` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 50 | 11 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 7 | 11 | 0% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 11/11 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 10/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 50，11 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，11 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（11/11 个样本）：发现KSampler但没有VAEDecode
+- 高发问题（10/11 个样本）：Steps较低可能导致细节不足

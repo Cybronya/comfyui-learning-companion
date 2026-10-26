@@ -3,64 +3,68 @@ name: unknown_workflow_video_lora_sampler_655
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.675667
-common_nodes: [CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, RH_Prompter, SetNode, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.579667
+common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, GetNode, INTConstant, ImageBatch, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2图像到视频_1950019769790545922.json, 视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1950922029769891841.json, 视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1956166218438901761.json]
+members: [数字人/数字人/Wan2.1+Infinitetalk 数字人唱歌(官流单人) FOR循环长视频_2019441819301449730.json, 数字人/数字人/速度更快！质量更好！Wan2.1 _Infinite Talk_ comfyUI官方版-单人版-视频对口型_2018534268313538561.json, 视频生成/图生视频/杰洛特+Infinitetalk 数字人唱歌(官流单人) FOR循环长视频v2_2049693705786929154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_655
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2图像到视频_1950019769790545922.json、视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1950922029769891841.json、视频生成/图生视频/wan2.2图生视频（超快超稳定_KJ版）_1956166218438901761.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Wan2.1+Infinitetalk 数字人唱歌(官流单人) FOR循环长视频_2019441819301449730.json、数字人/数字人/速度更快！质量更好！Wan2.1 _Infinite Talk_ comfyUI官方版-单人版-视频对口型_2018534268313538561.json、视频生成/图生视频/杰洛特+Infinitetalk 数字人唱歌(官流单人) FOR循环长视频v2_2049693705786929154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `Int`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RH_Captioner`
-- `RH_Prompter`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `TextCombinerTwo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `LayerColor: Brightness & Contrast` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `Primitive integer [Crystools]` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `TextBox` —— 1/3 个有
-- `easy anythingIndexSwitch` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `AudioSeparation` —— 2/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `Display Any (rgthree)` —— 2/3 个有
+- `FloatConstant` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `easy forLoopEnd` —— 2/3 个有
+- `easy forLoopStart` —— 2/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `CustomAddLabel` —— 1/3 个有
+- `FlashVSRNode` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 

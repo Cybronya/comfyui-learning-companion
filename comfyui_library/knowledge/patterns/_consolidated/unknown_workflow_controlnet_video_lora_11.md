@@ -1,93 +1,104 @@
 ---
 name: unknown_workflow_controlnet_video_lora_11
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.776286
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, SimpleMath+, VHS_DuplicateImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.439444
+common_nodes: [BBoxYOLO, BlockifyMask, BodyRatioMapperSDPoseRender, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, INTConstant, ImageBlend, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PlaySound|pysssss, PoseAndFaceDetection, PreviewImage, SAM3_Detect, SDPoseKeypointExtractor, Seed (rgthree), SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1电商带货商品展示数字人口播商用运镜版3.0_1989961958185160706.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json, 视频生成/图生视频/MV制作——Multitalk 声音驱动视频生成_1949675886216925185.json, 视频生成/图生视频/Multitalk 数字人运镜参考版｜稳定运行_1936961854306439170.json, 视频生成/图生视频/Multitalk最强数字人-灵动版_1953292063418814466.json, 视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json, 音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json]
+members: [数字人/数字人/人物替换&背景替换 Wan2.2 Animate 姿态对齐+Sam3.1+SDPose最强工作流V4_2058009686561087490.json, 视频生成/图生视频/720p 四图直出！效果炸裂-wan animate最新动作迁移_2063268215194742785.json, 视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Animate 分段队列_2061263344446828545.json, 视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+ (1)_2063811846200713218.json, 视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+ (1)_2064236484089171969.json, 视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+ (1)_2064605018237530113.json, 视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+_2062733771589373954.json, 视频生成/图生视频/【丝滑变装】+【动作迁移】+【人物替换】Wan2.2 Animate 分段队列 王炸工作流_2069037364332294145.json, 视频生成/图生视频/高质量人物替换_2063449521627160577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1电商带货商品展示数字人口播商用运镜版3.0_1989961958185160706.json、视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json、视频生成/图生视频/MV制作——Multitalk 声音驱动视频生成_1949675886216925185.json、视频生成/图生视频/Multitalk 数字人运镜参考版｜稳定运行_1936961854306439170.json、视频生成/图生视频/Multitalk最强数字人-灵动版_1953292063418814466.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/人物替换&背景替换 Wan2.2 Animate 姿态对齐+Sam3.1+SDPose最强工作流V4_2058009686561087490.json、视频生成/图生视频/720p 四图直出！效果炸裂-wan animate最新动作迁移_2063268215194742785.json、视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Animate 分段队列_2061263344446828545.json、视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+ (1)_2063811846200713218.json、视频生成/图生视频/【丝滑变装】&【动作迁移】&【人物替换】Wan2.2+Animate+分段队列+ (1)_2064236484089171969.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 9 个 workflow 都包含：
+- `BBoxYOLO`
+- `BlockifyMask`
+- `BodyRatioMapperSDPoseRender`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `CheckpointLoaderSimple`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageBlend`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `SimpleMath+`
-- `VHS_DuplicateImages`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PlaySound|pysssss`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SAM3_Detect`
+- `SDPoseKeypointExtractor`
+- `Seed (rgthree)`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
+- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `MultiTalkWav2VecEmbeds` —— 6/7 个有
-- `WanVideoContextOptions` —— 6/7 个有
-- `WanVideoEncode` —— 6/7 个有
-- `WanVideoTextEncode` —— 6/7 个有
-- `easy showAnything` —— 6/7 个有
-- `CR Text` —— 5/7 个有
-- `INTConstant` —— 5/7 个有
-- `JWIntegerToString` —— 5/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/7 个有
-- `VHS_LoadVideo` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `easy anythingIndexSwitch` —— 5/7 个有
-- `ImageResizeKJ` —— 4/7 个有
-- `RH_Captioner` —— 4/7 个有
-- `WanVideoEnhanceAVideo` —— 4/7 个有
-- `WanVideoSLG` —— 4/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `ImageScale` —— 2/7 个有
-- `ImageUpscaleWithModel` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `MathExpression|pysssss` —— 2/7 个有
-- `PlaySound|pysssss` —— 2/7 个有
-- `PrimitiveInt` —— 2/7 个有
-- `RH_GetAudioDuration` —— 2/7 个有
-- `RH_Translator` —— 2/7 个有
-- `RIFE VFI` —— 2/7 个有
-- `Text Concatenate` —— 2/7 个有
-- `UpscaleModelLoader` —— 2/7 个有
-- `WanVideoExperimentalArgs` —— 2/7 个有
-- `easy compare` —— 2/7 个有
-- `easy ifElse` —— 2/7 个有
-- `easy imageScaleDownToSize` —— 2/7 个有
-- `easy imageSize` —— 2/7 个有
-- `GetNode` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `ImpactInt` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `easy convertAnything` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `WanVideoSamplerFromSettings` —— 8/9 个有
+- `WanVideoSamplerSettings` —— 8/9 个有
+- `SegmentQueueRunner` —— 7/9 个有
+- `ImpactSwitch` —— 3/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `Any Switch (rgthree)` —— 2/9 个有
+- `BatchCount+` —— 2/9 个有
+- `BodyRatioMapperProportionTransfer` —— 2/9 个有
+- `CR Text` —— 2/9 个有
+- `ChangeImageBatchSize //Inspire` —— 2/9 个有
+- `ComfySwitchNode` —— 2/9 个有
+- `Image Blank` —— 2/9 个有
+- `ImageBatchMulti` —— 2/9 个有
+- `ImageCompositeMasked` —— 2/9 个有
+- `ImpactConditionalBranch` —— 2/9 个有
+- `ImpactImageInfo` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `PointsEditor` —— 2/9 个有
+- `PoseJSONToPoseKeypoint` —— 2/9 个有
+- `PoseKeypointPreview` —— 2/9 个有
+- `PreviewAny` —— 2/9 个有
+- `PrimitiveBoolean` —— 2/9 个有
+- `RepeatImageBatch` —— 2/9 个有
+- `ReverseImageBatch` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `easy mathInt` —— 2/9 个有
+- `Bjornulf_ShowInt` —— 1/9 个有
+- `DF_Float` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `WanVideoSampler` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 

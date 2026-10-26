@@ -3,62 +3,51 @@ name: unknown_workflow_video_sampler_vae_109
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.696
-common_nodes: [CR Text, GetImageSizeAndCount, GetNode, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.9614
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json, 视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json, 视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json]
+members: [视频生成/图生视频/Wan2.1文生视频fusionX+NAG_1936289706663399425.json, 视频生成/文生视频/B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json, 视频生成/文生视频/B1-Wan2.1文生视频fusionX+NAG_1934499736151871490.json, 视频生成/文生视频/CG迷-FusionX文生视频、图生视频工作流（KJ版本）_1936061298029285377.json, 视频生成/文生视频/Wan2.1文生视频fusionX+NAG+视频放大_1942109815802118145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_109
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json、视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json、视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1文生视频fusionX+NAG_1936289706663399425.json、视频生成/文生视频/B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json、视频生成/文生视频/B1-Wan2.1文生视频fusionX+NAG_1934499736151871490.json、视频生成/文生视频/CG迷-FusionX文生视频、图生视频工作流（KJ版本）_1936061298029285377.json、视频生成/文生视频/Wan2.1文生视频fusionX+NAG+视频放大_1942109815802118145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 4/5 个有
-- `WanVideoVACEModelSelect` —— 4/5 个有
-- `RHHiddenNodes` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `ColorMatch` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `ImageRepeat` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
+- `ImageUpscaleWithModel` —— 2/5 个有
+- `UpscaleModelLoader` —— 2/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `RIFE VFI` —— 1/5 个有
+- `WanVideoImageToVideoEncode` —— 1/5 个有
+- `WanVideoMagCache` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy clearCacheAll` —— 1/5 个有
 
 ## 典型参数
 

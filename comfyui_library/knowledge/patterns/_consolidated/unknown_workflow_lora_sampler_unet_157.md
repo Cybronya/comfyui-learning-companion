@@ -1,80 +1,90 @@
 ---
 name: unknown_workflow_lora_sampler_unet_157
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.7875
-common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.9458
+common_nodes: [AudioConcat, BasicScheduler, BatchImagesNode, CLIPLoader, ComfyMathExpression, ComfySwitchNode, ConditioningZeroOut, CreateVideo, Float, GetImageRangeFromBatch, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart]
+problems: []
 missing: []
-members: [图片生成/图生图/011.首饰穿戴_2005413026578792450.json, 图片生成/图生图/02-01-01-QwenEdit-基础修图-单图_1987548763893993473.json, 图片生成/图生图/Qwen Edit 2511满血版 - 图像编辑 - 双图版_2055202374033133569.json, 图片生成/图生图/Qwen Edit Plus 姿势复刻_1970451985361235970.json]
+members: [数字人/数字人/MiniMax_H3无限时长极速音频驱动数字人1015_2114186078939869185.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json, 视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_157
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/011.首饰穿戴_2005413026578792450.json、图片生成/图生图/02-01-01-QwenEdit-基础修图-单图_1987548763893993473.json、图片生成/图生图/Qwen Edit 2511满血版 - 图像编辑 - 双图版_2055202374033133569.json、图片生成/图生图/Qwen Edit Plus 姿势复刻_1970451985361235970.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/MiniMax_H3无限时长极速音频驱动数字人1015_2114186078939869185.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json、视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGNorm`
+全部 5 个 workflow 都包含：
+- `AudioConcat`
+- `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `ImageScaleToTotalPixels`
-- `KSampler`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `Float`
+- `GetImageRangeFromBatch`
+- `Int`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `Get resolution [Crystools]` —— 2/4 个有
-- `GetImageSize+` —— 2/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `> Text Replace` —— 1/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageStitch` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `TextBox` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
+- `BasicGuider` —— 3/5 个有
+- `BlockSparseAttention` —— 3/5 个有
+- `ExtendIntermediateSigmas` —— 3/5 个有
+- `MiniMaxH3BlockCacheT8` —— 3/5 个有
+- `MiniMaxH3SigmaShift` —— 3/5 个有
+- `ModelAttentionBackend` —— 3/5 个有
+- `PathchSageAttentionKJ` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `RIFE VFI` —— 3/5 个有
+- `RandomNoise` —— 3/5 个有
+- `SamplerCustomAdvanced` —— 3/5 个有
+- `PlaySound|pysssss` —— 2/5 个有
+- `SelfLiftAvatarH3Sampler` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `MiniMaxH3Unified` —— 1/5 个有
+- `ModelPreviewOverrideKJ` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SaveAudioAdvanced` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 16 | 4 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 16，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

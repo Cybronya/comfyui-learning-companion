@@ -1,71 +1,67 @@
 ---
 name: unknown_workflow_lora_sampler_unet_159
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.717
-common_nodes: [AdaptiveLongestEdge_EditUtils, CFGGuider, CLIPLoader, CM_FloatToInt, CM_IntToNumber, CM_NumberBinaryOperation, CM_NumberToInt, ConditioningZeroOut, CropWithPadInfo_EditUtils, Display Any (rgthree), EditTextEncode_EditUtils, Fast Groups Bypasser (rgthree), Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageListToImageBatch, ImageResize+, ImageScaleBy, ImpactImageBatchToImageList, Int, KSamplerSelect, LayerUtility: ExtendCanvasV2, LoadImage, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy float, easy imageColorMatch]
+coverage: 0.9182
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json, 图片生成/图生图/Flux2Klein9b超自然无缝扩图_2050014192501047298.json, 图片生成/图生图/Klein-超自然无缝扩图_2046423963668058114.json, 图片生成/图生图/Klein超自然无缝扩图_2051234698155835393.json]
+members: [视频生成/图生视频/MiniMaxH3爆图工作流，参考图（一次15图）_2093213612537110530.json, 视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次15图）_2092562660834496514.json, 视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次45图）_2093285352231497729.json, 视频生成/图生视频/MinimaxH3 女友ASMR_2091175012479881217.json, 视频生成/图生视频/MinimaxH3 数字人（文字版）_2084533534718517250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_159
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json、图片生成/图生图/Flux2Klein9b超自然无缝扩图_2050014192501047298.json、图片生成/图生图/Klein-超自然无缝扩图_2046423963668058114.json、图片生成/图生图/Klein超自然无缝扩图_2051234698155835393.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3爆图工作流，参考图（一次15图）_2093213612537110530.json、视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次15图）_2092562660834496514.json、视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次45图）_2093285352231497729.json、视频生成/图生视频/MinimaxH3 女友ASMR_2091175012479881217.json、视频生成/图生视频/MinimaxH3 数字人（文字版）_2084533534718517250.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AdaptiveLongestEdge_EditUtils`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CM_FloatToInt`
-- `CM_IntToNumber`
-- `CM_NumberBinaryOperation`
-- `CM_NumberToInt`
-- `ConditioningZeroOut`
-- `CropWithPadInfo_EditUtils`
-- `Display Any (rgthree)`
-- `EditTextEncode_EditUtils`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Flux2KleinOutputExtractor_EditUtils`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageResize+`
-- `ImageScaleBy`
-- `ImpactImageBatchToImageList`
-- `Int`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LayerUtility: ExtendCanvasV2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `SetNode`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy float`
-- `easy imageColorMatch`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Int` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `ExtractStoryboards_xuhuan1024` —— 3/5 个有
+- `LTXVConcatAVLatent` —— 3/5 个有
+- `LTXVSeparateAVLatent` —— 3/5 个有
+- `LoadImage` —— 3/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `SaveImage` —— 3/5 个有
+- `SplitSigmas` —— 3/5 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `CharacterCount` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `MiniMaxH3ImageToVideo` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `VAEDecodeAudio` —— 2/5 个有
+- `easy convertAnything` —— 2/5 个有
+- `DF_Float` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
 
 ## 典型参数
 

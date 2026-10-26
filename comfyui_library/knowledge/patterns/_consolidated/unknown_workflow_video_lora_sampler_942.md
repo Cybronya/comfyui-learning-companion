@@ -3,67 +3,76 @@ name: unknown_workflow_video_lora_sampler_942
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.682
-common_nodes: [CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, QwenLoader, SetNode, ShowText|pysssss, SimpleMath+, Text, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
+coverage: 0.5135
+common_nodes: [CLIPVisionLoader, DWPreprocessor, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json, 视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json]
+members: [视频生成/图生视频/wan_animate+KJ版+长视频动作迁移+分辨率、帧率选择，首尾帧丢弃选择_1970700408228376577.json, 视频生成/图生视频/wan_animate+长视频不限时长人物替换_1970265248752148481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_942
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json、视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan_animate+KJ版+长视频动作迁移+分辨率、帧率选择，首尾帧丢弃选择_1970700408228376577.json、视频生成/图生视频/wan_animate+长视频不限时长人物替换_1970265248752148481.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `Fast Groups Muter (rgthree)`
+- `DWPreprocessor`
+- `EmptyImage`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
 - `ImageConcatMulti`
-- `ImagePadKJ`
-- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `ImpactInt`
+- `ImpactSwitch`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `QwenLoader`
+- `MathExpression|pysssss`
+- `PixelPerfectResolution`
+- `PreviewAny`
 - `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
-- `WanVideoPromptExtender`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
+- `easy batchAnything`
 - `easy cleanGpuUsed`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `BlockifyMask` —— 1/2 个有
+- `ConvertAny2Int` —— 1/2 个有
+- `Display Int (rgthree)` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `DrawMaskOnImage` —— 1/2 个有
+- `FaceMaskFromPoseKeypoints` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `Florence2toCoordinates` —— 1/2 个有
+- `GrowMask` —— 1/2 个有
+- `ImageCropByMaskAndResize` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `Switch any [Crystools]` —— 1/2 个有
+- `easy float` —— 1/2 个有
 
 ## 典型参数
 

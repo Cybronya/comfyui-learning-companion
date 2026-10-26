@@ -3,59 +3,40 @@ name: unknown_workflow_video_sampler_37
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.806
-common_nodes: [Any To Any, CR Prompt Text, Fast Groups Bypasser (rgthree), Float, GoogleTranslateTextNode, HunyuanVideoFoley, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, MathExpression|pysssss, Qwen3_VQA, RH_Translator, RunningHub Deepcleaner, SaveAudio, SaveAudioMP3, ShowAnything|Mie, Text, VHS_LoadVideo, VHS_SelectFilename, VHS_VideoCombine, VHS_VideoInfo, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode, easy showAnything, easy textSwitch]
+coverage: 1
+common_nodes: [DownloadAndLoadMimicMotionModel, ImageResize+, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/一键视频音效合集 Woosh+Foley+MMAudio +文生音效_2043589644633247745.json, 音频生成/音频生成/音效全家桶  文生音效 视频音效 Woosh Foley MMAudio_2043812317204320257.json]
+members: [视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json, 视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/一键视频音效合集 Woosh+Foley+MMAudio +文生音效_2043589644633247745.json、音频生成/音频生成/音效全家桶  文生音效 视频音效 Woosh Foley MMAudio_2043812317204320257.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json、视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any To Any`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
-- `GoogleTranslateTextNode`
-- `HunyuanVideoFoley`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
-- `MMAudioFeatureUtilsLoader`
-- `MMAudioModelLoader`
-- `MMAudioSampler`
-- `MathExpression|pysssss`
-- `Qwen3_VQA`
-- `RH_Translator`
-- `RunningHub Deepcleaner`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `ShowAnything|Mie`
-- `Text`
+- `DownloadAndLoadMimicMotionModel`
+- `ImageResize+`
+- `LoadImage`
+- `MimicMotionDecode`
+- `MimicMotionGetPoses`
+- `MimicMotionSampler`
 - `VHS_LoadVideo`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WooshLoadFlow`
-- `WooshLoadVideo`
-- `WooshSample`
-- `WooshTextEncode`
-- `easy showAnything`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
+- `HAIGC_VideoResize` —— 1/2 个有
+- `ImageCASharpening+` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
 
 ## 典型参数
 

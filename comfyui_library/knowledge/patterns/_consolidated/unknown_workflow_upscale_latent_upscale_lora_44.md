@@ -1,86 +1,75 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_44
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.853857
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled]
+coverage: 0.52175
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json, 视频生成/图生视频/【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超自然数字人 含提示词扩写模板_2034460297049677825.json, 视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json, 视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json, 视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json, 视频生成/文生视频/LTX-2.3配音术升级版：输入台词就能生成短剧！FishAudio S2 + LTX-2.3实战_2034068608220930049.json, 视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json]
+members: [图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2098949863919673345.json, 图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2099061501553373185.json, 数字人/数字人/Minmax h3文戏——Reminx_10Eros模型_2094475274502103042.json, 视频生成/图生视频/MINIMAX-H3文戏工作流_2102802402159194114.json, 视频生成/图生视频/MINIMAX-H3文戏工作流_2106920065542213634.json, 视频生成/图生视频/MINIMAXH3-武戏高动态二采工作流_Aiforly_2110713376044314626.json, 视频生成/图生视频/MINIMAXH3武戏高动态二采工作流_Aiforly｜高动态武戏专用_2114686173607190530.json, 视频生成/图生视频/Minima-H3-武戏工作流_2108453082106515458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_44
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json、视频生成/图生视频/【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超自然数字人 含提示词扩写模板_2034460297049677825.json、视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json、视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json、视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2098949863919673345.json、图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2099061501553373185.json、数字人/数字人/Minmax h3文戏——Reminx_10Eros模型_2094475274502103042.json、视频生成/图生视频/MINIMAX-H3文戏工作流_2102802402159194114.json、视频生成/图生视频/MINIMAX-H3文戏工作流_2106920065542213634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `ModelAttentionBackend`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `SetNode`
+- `SolAttnMiniMax`
+- `UNETLoader`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `SaveAudio` —— 6/7 个有
-- `FishS2MultiSpeakerTTS` —— 4/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `RH_LLMAPI_Pro_Node` —— 2/7 个有
-- `SongGeneration_Loader` —— 2/7 个有
-- `SongGeneration_Sampler` —— 2/7 个有
-- `SongGeneration_Stage1` —— 2/7 个有
-- `SongGeneration_Stage2` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `Float` —— 1/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
-- `LoadWhisperModel_` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `WhisperTranscribe_` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `忽略多组孤海` —— 4/8 个有
+- `ConcatTextOfUtils` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `MiniMaxChunkFeedForward` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 3/8 个有
+- `MiniMaxLowVRAMAttention` —— 3/8 个有
+- `EmptyImage` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `CreateVideo` —— 1/8 个有
+- `ModelPreviewOverrideKJ` —— 1/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `SaveVideo` —— 1/8 个有
+- `easy imageChooser` —— 1/8 个有
+- `kkVideoFirstLastFrames` —— 1/8 个有
 
 ## 典型参数
 

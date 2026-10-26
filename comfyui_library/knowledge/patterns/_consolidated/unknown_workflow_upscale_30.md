@@ -3,34 +3,35 @@ name: unknown_workflow_upscale_30
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.691667
-common_nodes: [DF_Image_scale_to_side, LoadImage, SUPIR_Upscale, SaveImage]
+coverage: 0.904667
+common_nodes: [AddBackgroundNode, HivisionNode, LoadImage, SaveImage, ZHHivisionParamsNode]
 problems: []
 missing: []
-members: [图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json, 图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json, 图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json]
+members: [图片生成/图生图/各类证件照极速制作_2034153371266981890.json, 图片生成/图生图/各类证件照极速制作_2034163222676246530.json, 图片生成/图生图/红底报名证件照_1922119851543035906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_30
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json、图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json、图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/各类证件照极速制作_2034153371266981890.json、图片生成/图生图/各类证件照极速制作_2034163222676246530.json、图片生成/图生图/红底报名证件照_1922119851543035906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DF_Image_scale_to_side`
+- `AddBackgroundNode`
+- `HivisionNode`
 - `LoadImage`
-- `SUPIR_Upscale`
 - `SaveImage`
+- `ZHHivisionParamsNode`
 
 **可变部分**（部分 workflow 才有）：
+- `WujiUpscaler` —— 2/3 个有
 - `PreviewImage` —— 1/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
 
 ## 典型参数
 

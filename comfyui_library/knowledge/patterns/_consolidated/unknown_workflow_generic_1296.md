@@ -3,39 +3,35 @@ name: unknown_workflow_generic_1296
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.56
-common_nodes: [FlashVSRNode, GetNode, Image Comparer (rgthree), LoadImage, ResizeImageMaskNode, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, easy anythingIndexSwitch, easy cleanGpuUsed, easy int]
+coverage: 0.6905
+common_nodes: [PreviewAny, RHUploadPdf, RunningHub DeepSeekOCR Infer(Pdf), SaveImage, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/【专业双模型版】4K图片高清放大，图像高清修复，无损图片放大，FlashVsr_&_SeedVr2_2091355159627653121.json, 图片生成/图生图/【专业双模型版】4K图片高清放大，图像高清修复，无损图片放大，FlashVsr_&_SeedVr2_2091830975260094465.json]
+members: [图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json, 视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1296
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【专业双模型版】4K图片高清放大，图像高清修复，无损图片放大，FlashVsr_&_SeedVr2_2091355159627653121.json、图片生成/图生图/【专业双模型版】4K图片高清放大，图像高清修复，无损图片放大，FlashVsr_&_SeedVr2_2091830975260094465.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json、视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FlashVSRNode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `ResizeImageMaskNode`
+- `PreviewAny`
+- `RHUploadPdf`
+- `RunningHub DeepSeekOCR Infer(Pdf)`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
-- `easy int`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

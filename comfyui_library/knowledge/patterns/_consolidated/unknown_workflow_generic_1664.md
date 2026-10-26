@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1664
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
+coverage: 0.8995
+common_nodes: [JjkText, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json, 音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json]
+members: [数字人/数字人/全能图片 Pro_2013623319089647618.json, 视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1664
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json、音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/全能图片 Pro_2013623319089647618.json、视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `PreviewAudio`
-- `SaveAudio`
+- `JjkText`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `RH_RhartImageNProEdit` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

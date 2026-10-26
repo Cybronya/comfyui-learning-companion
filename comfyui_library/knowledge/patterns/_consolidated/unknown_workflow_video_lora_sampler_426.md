@@ -1,61 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_426
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9502
-common_nodes: [INTConstant, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.6595
+common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2首尾帧工作流—Kj加速版_1962882725575364609.json, 视频生成/图生视频/Wan2.2首尾帧工作流—课程使用_1972581199266906114.json, 视频生成/图生视频/Wan2_2_i2v_KJ工作流_blockexample_1962483006248235010.json, 视频生成/图生视频/wan2.2图生视频_1961798280172781569.json, 视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json]
+members: [视频生成/图生视频/【升级版】Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1972907220843302914.json, 视频生成/图生视频/动作迁移-Wan2.2-深度图控制版本_1955886992418590722.json, 视频生成/图生视频/极致真人舞蹈视频迁移(Wan2.2-FunControl)_1954879516944601090.json, 视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json, 视频生成/文生视频/Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778.json, 视频生成/文生视频/Wan2.2美女舞蹈视频动作迁移_1964248050468274178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_426
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2首尾帧工作流—Kj加速版_1962882725575364609.json、视频生成/图生视频/Wan2.2首尾帧工作流—课程使用_1972581199266906114.json、视频生成/图生视频/Wan2_2_i2v_KJ工作流_blockexample_1962483006248235010.json、视频生成/图生视频/wan2.2图生视频_1961798280172781569.json、视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【升级版】Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1972907220843302914.json、视频生成/图生视频/动作迁移-Wan2.2-深度图控制版本_1955886992418590722.json、视频生成/图生视频/极致真人舞蹈视频迁移(Wan2.2-FunControl)_1954879516944601090.json、视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json、视频生成/文生视频/Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `INTConstant`
+全部 6 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 4/5 个有
-- `ImageResize+` —— 3/5 个有
-- `WanVideoApplyNAG` —— 3/5 个有
-- `CreateCFGScheduleFloatList` —— 2/5 个有
-- `GetImageSizeAndCount` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `LayerUtility: ImageScaleRestore V2` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `TT_img_enc` —— 1/5 个有
-- `Textbox` —— 1/5 个有
-- `WanVideoLoraBlockEdit` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `DWPreprocessor` —— 5/6 个有
+- `DepthAnything_V2` —— 5/6 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
+- `GetNode` —— 5/6 个有
+- `ImageBlend` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `Zoe-DepthMapPreprocessor` —— 5/6 个有
+- `PrimitiveInt` —— 4/6 个有
+- `WanVideoEmptyEmbeds` —— 4/6 个有
+- `GetImageRangeFromBatch` —— 1/6 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/6 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
 
 ## 典型参数
 

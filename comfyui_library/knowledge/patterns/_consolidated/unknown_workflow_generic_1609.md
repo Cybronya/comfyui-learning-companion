@@ -3,29 +3,37 @@ name: unknown_workflow_generic_1609
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, RH_BytedanceSeedance25TokenTextToVideo, SaveVideo]
+coverage: 0.73
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/seedance2.5(支持30秒长视频)_文生视频_2085900767650729985.json, 视频生成/文生视频/文生视频30秒｜seedance2.5长视频人物场景特效_2093249026572505089.json]
+members: [图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json, 图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1609
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/seedance2.5(支持30秒长视频)_文生视频_2085900767650729985.json、视频生成/文生视频/文生视频30秒｜seedance2.5长视频人物场景特效_2093249026572505089.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json、图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_BytedanceSeedance25TokenTextToVideo`
-- `SaveVideo`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Label (rgthree)` —— 1/2 个有
+- `RH_SeedreamV5ProTextToImage` —— 1/2 个有
 
 ## 典型参数
 

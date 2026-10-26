@@ -1,105 +1,76 @@
 ---
 name: text_to_image_upscale_lora_sampler_76
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 0.890667
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, ComfyUI-Krea2T-Enhancer, EmptyLatentImage, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, JjkText, JoinStringMulti, KOOK_SaveJPGImage, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RunningHub Deepcleaner, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy positive, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+frequency: 4
+level: moderate
+coverage: 0.8955
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/K2-90SuYing图生图洗图｜小红书抖音通用 人像写真美少女出片_2104078434745020417.json, 图片生成/图生图/K2-90SuYing网络图洗图 小红书抖音美女人像写真化_2104458649627348994.json, 图片生成/文生图/K2超现实感文生图，手机拍摄风格90SuYing写实网感图生成方案_2103886432678010881.json]
+members: [图片生成/文生图/Krea2-turbo-文生图_2070088731339612162.json, 图片生成/文生图/Krea2-turbo-文生图_2073296094896939010.json, 图片生成/文生图/anima文生图_2080943871458107394.json, 图片生成/文生图/anima文生图_2081302154224168962.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_76
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/K2-90SuYing图生图洗图｜小红书抖音通用 人像写真美少女出片_2104078434745020417.json、图片生成/图生图/K2-90SuYing网络图洗图 小红书抖音美女人像写真化_2104458649627348994.json、图片生成/文生图/K2超现实感文生图，手机拍摄风格90SuYing写实网感图生成方案_2103886432678010881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2-turbo-文生图_2070088731339612162.json、图片生成/文生图/Krea2-turbo-文生图_2073296094896939010.json、图片生成/文生图/anima文生图_2080943871458107394.json、图片生成/文生图/anima文生图_2081302154224168962.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyUI-Krea2T-Enhancer`
 - `EmptyLatentImage`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `JjkText`
-- `JoinStringMulti`
-- `KOOK_SaveJPGImage`
+- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `RunningHub Deepcleaner`
 - `SaveImage`
-- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy positive`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AddNoise` —— 2/3 个有
-- `BasicScheduler` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LatentUpscaleBy` —— 2/3 个有
-- `LayerColor: AutoAdjustV2` —— 2/3 个有
-- `LayerColor: Exposure` —— 2/3 个有
-- `LayerFilter: SoftLight` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RandomNoise` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `easy imageColorMatch` —— 2/3 个有
+- `Int` —— 2/4 个有
+- `KOOK_ImageCompression` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `TextBoxMira` —— 2/4 个有
+- `YC_ShowText` —— 2/4 个有
+- `easy promptConcat` —— 2/4 个有
+- `easy promptLine` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 宽度 | 1112 | 1024 - 1200 | 4 | 92% |
+| 高度 | 1728 | 1536 - 1920 | 4 | 89% |
+| 采样步数 | 19 | 8 - 30 | 4 | 42% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 4 | 40% |
+| 采样算法 | euler_ancestral | - | 4 | 50% |
+| 调度器 | sgm_uniform | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1112，观测区间 1024 - 1200，4 个样本，取值集中（一致性 92%）
+- 高度 中位数 1728，观测区间 1536 - 1920，4 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 19，观测区间 8 - 30，4 个样本，取值分散，一致性仅 42%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，4 个样本，取值分散，一致性仅 40%
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 50%
+- 调度器 最常用 sgm_uniform，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

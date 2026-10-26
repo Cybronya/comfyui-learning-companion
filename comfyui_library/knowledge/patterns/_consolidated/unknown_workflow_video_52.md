@@ -1,45 +1,43 @@
 ---
 name: unknown_workflow_video_52
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.817667
-common_nodes: [DownloadAndLoadMimicMotionModel, GetImageSizeAndCount, ImageCASharpening+, ImageScale, LoadImage, MimicMotionGetPoses, RIFE VFI, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.85875
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI图片跳舞！美女跳舞=艾橘溪=MimicMotion_1886593147164610561.json, 视频生成/图生视频/AI图片跳舞！美女跳舞MimicMotion_2043500616089079810.json, 视频生成/图生视频/一键美女视频跳舞机V9_1894254277496340482.json]
+members: [音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json, 音频生成/音频生成/Woosh音效生成_2049036424091013121.json, 音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json, 音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_52
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI图片跳舞！美女跳舞=艾橘溪=MimicMotion_1886593147164610561.json、视频生成/图生视频/AI图片跳舞！美女跳舞MimicMotion_2043500616089079810.json、视频生成/图生视频/一键美女视频跳舞机V9_1894254277496340482.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json、音频生成/音频生成/Woosh音效生成_2049036424091013121.json、音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json、音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadMimicMotionModel`
-- `GetImageSizeAndCount`
-- `ImageCASharpening+`
-- `ImageScale`
-- `LoadImage`
-- `MimicMotionGetPoses`
-- `RIFE VFI`
+全部 4 个 workflow 都包含：
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WooshLoadFlow`
+- `WooshLoadVideo`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `workflow>MimicMotion Sampler` —— 2/3 个有
-- `workflow>图像缩放` —— 2/3 个有
-- `workflow/MimicMotion Sampler` —— 1/3 个有
-- `workflow/图像缩放` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `YC_ShowText` —— 1/4 个有
 
 ## 典型参数
 

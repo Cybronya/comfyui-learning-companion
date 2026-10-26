@@ -1,91 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_287
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.525857
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetNode, ImageCompositeMasked, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, PrimitiveInt, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.747
+common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/动作迁移2_2092576578264977410.json, 视频生成/图生视频/CG迷-Scail2超强角色替换工作流_2070766031924191234.json, 视频生成/图生视频/SCAIL2_人物转绘替换_打光_2079863299176484866.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频_2086402055798870018.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频！—转载阿硕_2092973975054934018.json, 视频生成/图生视频/练习舞蹈工作流_2081699626717114369.json, 视频生成/文生视频/Wan 视频编辑-Scail2 V1-支持长视频_2095009418013405186.json]
+members: [数字人/数字人/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957329197184249857.json, 数字人/数字人/直播视频表情模仿_1956705772944986113.json, 数字人/数字人/表情迁移 - Wan2.1_1966784793595850754.json, 视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json, 视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json, 视频生成/图生视频/最新FantasyPortrait音频驱动表情迁移_1956951532585541633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_287
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/动作迁移2_2092576578264977410.json、视频生成/图生视频/CG迷-Scail2超强角色替换工作流_2070766031924191234.json、视频生成/图生视频/SCAIL2_人物转绘替换_打光_2079863299176484866.json、视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频_2086402055798870018.json、视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频！—转载阿硕_2092973975054934018.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957329197184249857.json、数字人/数字人/直播视频表情模仿_1956705772944986113.json、数字人/数字人/表情迁移 - Wan2.1_1966784793595850754.json、视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json、视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `SetNode`
-- `TensorLoopClose`
-- `TensorLoopOpen`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoAddFantasyPortrait`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 6/7 个有
-- `Bookmark (rgthree)` —— 5/7 个有
-- `GetImageSizeAndCount` —— 5/7 个有
-- `LayerUtility: CropByMask V2` —— 5/7 个有
-- `Mask Fill Holes` —— 5/7 个有
-- `PlaySound|pysssss` —— 5/7 个有
-- `PrimitiveBoolean` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `Switch any [Crystools]` —— 5/7 个有
-- `ToBinaryMask` —— 5/7 个有
-- `easy ifElse` —— 5/7 个有
-- `easy int` —— 5/7 个有
-- `easy isMaskEmpty` —— 5/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `GetImageSize` —— 2/7 个有
-- `ResizeImageMaskNode` —— 2/7 个有
-- `Int` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `RH_LLMAPI_NODE` —— 1/7 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/7 个有
-- `ShowAnything|Mie` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 7/8 个有
+- `GetNode` —— 6/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `INTConstant` —— 5/8 个有
+- `WanVideoContextOptions` —— 4/8 个有
+- `Primitive integer [Crystools]` —— 3/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `Anything Everywhere` —— 1/8 个有
+- `LandmarksToImage` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `LoadWanVideoT5TextEncoder` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `TrimVideoLatent` —— 1/8 个有
+- `WanVideoTextEncode` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

@@ -2,54 +2,91 @@
 name: unknown_workflow_video_sampler_clip_93
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.940571
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.650429
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, Fast Groups Bypasser (rgthree), GetNode, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, RIFE VFI, SetNode, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json, 视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json, 视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json, 视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json, 视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json, 视频生成/图生视频/通义万相之图片捏捏乐_1940715917842214913.json, 视频生成/图生视频/🦖wan2.1 变玩偶捏捏_1925461590995292161.json]
+members: [视频生成/图生视频/DasiwaV10 _ 直出质感 I2V工作流 无AI感手持跟拍 原生拍摄氛围_2055728891322486786.json, 视频生成/图生视频/DasiwaV81 _ 最佳动漫视频 12v动态增强 漫剧搭子 氛围短片 wan2.2_2056085171165769729.json, 视频生成/图生视频/Wan2.2-DaSiWa8.1-最强动漫模型-图生视频-插帧放大-自动提示词_2010940564040060929.json, 视频生成/图生视频/图生视频Wan2.2动漫模型DaSiWa_2048449800865058818.json, 视频生成/图生视频/最强Wan2.2动漫模型DaSiWa8.1-图生视频_2008384521632227329.json, 视频生成/图生视频/首尾帧 · 幻影引擎 _ Wan2.2双模型首尾帧视频生成工作流_2059769555181985793.json, 视频生成/图生视频/首尾帧 · 幻影引擎 _ Wan2.2双模型首尾帧视频生成工作流_2064594591789174785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_93
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json、视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json、视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json、视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json、视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/DasiwaV10 _ 直出质感 I2V工作流 无AI感手持跟拍 原生拍摄氛围_2055728891322486786.json、视频生成/图生视频/DasiwaV81 _ 最佳动漫视频 12v动态增强 漫剧搭子 氛围短片 wan2.2_2056085171165769729.json、视频生成/图生视频/Wan2.2-DaSiWa8.1-最强动漫模型-图生视频-插帧放大-自动提示词_2010940564040060929.json、视频生成/图生视频/图生视频Wan2.2动漫模型DaSiWa_2048449800865058818.json、视频生成/图生视频/最强Wan2.2动漫模型DaSiWa8.1-图生视频_2008384521632227329.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `SetNode`
+- `TextInput_`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `Image Batch` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `Note _O` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
-- `WanVideoTorchCompileSettings` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PainterI2V` —— 5/7 个有
+- `Text Concatenate` —— 5/7 个有
+- `CheckpointLoaderSimple` —— 4/7 个有
+- `ImageScaleToTotalPixels` —— 4/7 个有
+- `Int` —— 4/7 个有
+- `MathExpression_UTK` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `SeedVR2` —— 4/7 个有
+- `SeedVR2BlockSwap` —— 4/7 个有
+- `SeedVR2ExtraArgs` —— 4/7 个有
+- `Text` —— 4/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `VHS_VideoInfoSource` —— 4/7 个有
+- `FlashVSRNode` —— 3/7 个有
+- `ImpactSwitch` —— 3/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
+- `Wan22PromptSelector` —— 3/7 个有
+- `Fast Bypasser (rgthree)` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `ImageResizeKJ` —— 2/7 个有
+- `Images to RGB` —— 2/7 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/7 个有
+- `WanFirstLastFrameToVideo` —— 2/7 个有
+- `easy textSwitch` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `LoadVideo` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1.6 | 7 | 81% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -57,4 +94,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.6，7 个样本，取值集中（一致性 81%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

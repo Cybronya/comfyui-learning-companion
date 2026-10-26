@@ -1,61 +1,42 @@
 ---
 name: unknown_workflow_upscale_clip_checkpoint_2
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.868
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Image Comparer (rgthree), ImageResize+, ImageUpscaleWithModel, LoadImage, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
+coverage: 0.8
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Fast Groups Muter (rgthree), Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, SaveImage, UltimateSDUpscale, UpscaleModelLoader, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.Krea半身模糊变清晰_1937332253624049665.json, 图片生成/图生图/高清放大_修复_2038651650352619521.json, 图片生成/图生图/🦁【实用工具】人像皮肤4K超清放大流🦁_1944938430025617409.json]
+members: [图片生成/反推提示词/千问Qwen反推+SD放大工作流_2057722827129843714.json, 图片生成/图生图/Qwen反推+SD放大工作流_2066818308095168514.json, 图片生成/图生图/Qwen反推+SD放大工作流_2067060715948695554.json, 图片生成/图生图/自用SD放大工作流_2004864597557477377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_clip_checkpoint_2
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX.Krea半身模糊变清晰_1937332253624049665.json、图片生成/图生图/高清放大_修复_2038651650352619521.json、图片生成/图生图/🦁【实用工具】人像皮肤4K超清放大流🦁_1944938430025617409.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/千问Qwen反推+SD放大工作流_2057722827129843714.json、图片生成/图生图/Qwen反推+SD放大工作流_2066818308095168514.json、图片生成/图生图/Qwen反推+SD放大工作流_2067060715948695554.json、图片生成/图生图/自用SD放大工作流_2004864597557477377.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `Fast Groups Muter (rgthree)`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SUPIR_conditioner`
-- `SUPIR_decode`
-- `SUPIR_encode`
-- `SUPIR_first_stage`
-- `SUPIR_model_loader_v2`
-- `SUPIR_sample`
+- `PreviewAny`
 - `SaveImage`
 - `UltimateSDUpscale`
 - `UpscaleModelLoader`
-- `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `UltimateSDUpscaleNoUpscale` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `CLIPTextEncodeFlux` —— 1/3 个有
-- `ColorMatch` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImitationHueNode` —— 1/3 个有
-- `NunchakuFluxDiTLoader` —— 1/3 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SUPIR_Upscale` —— 1/3 个有
-- `easy anythingIndexSwitch` —— 1/3 个有
-- `easy imageColorMatch` —— 1/3 个有
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

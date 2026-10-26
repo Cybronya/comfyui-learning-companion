@@ -3,70 +3,56 @@ name: unknown_workflow_video_sampler_vae_130
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.445
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoImageToVideoSkyreelsv3_audio, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.88025
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJ, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json, 视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json]
+members: [视频生成/图生视频/SkyReel 混元 图生视频    up 楚门的AI世界_1891816391639740418.json, 视频生成/图生视频/SkyReel混元视频_1892941621485580289.json, 视频生成/图生视频/Skyreel混元图生视频_1892483487939923969.json, 视频生成/图生视频/混元图生视频提示词反推加速版_1900195867180281858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_130
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json、视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SkyReel 混元 图生视频    up 楚门的AI世界_1891816391639740418.json、视频生成/图生视频/SkyReel混元视频_1892941621485580289.json、视频生成/图生视频/Skyreel混元图生视频_1892483487939923969.json、视频生成/图生视频/混元图生视频提示词反推加速版_1900195867180281858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageResizeKJ`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoImageToVideoSkyreelsv3_audio`
-- `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 2/4 个有
-- `DownloadAndLoadWav2VecModel` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `AudioCrop` —— 1/4 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `Qwen3ASRLoader` —— 1/4 个有
-- `Qwen3ASRTranscribe` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
+- `ColorMatch` —— 3/4 个有
+- `HyVideoCFG` —— 3/4 个有
+- `HyVideoEnhanceAVideo` —— 3/4 个有
+- `HyVideoTextEncode` —— 3/4 个有
+- `DownloadAndLoadFlorence2Model` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `HyVideoLoraSelect` —— 2/4 个有
+- `HyVideoTeaCache` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `StringFunction|pysssss` —— 2/4 个有
+- `HyVideoI2VEncode` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `String Replace (mtb)` —— 1/4 个有
 - `TextInput_` —— 1/4 个有
-- `Textbox` —— 1/4 个有
-- `TrimAudioDuration` —— 1/4 个有
 
 ## 典型参数
 

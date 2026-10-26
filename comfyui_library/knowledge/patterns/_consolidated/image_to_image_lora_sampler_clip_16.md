@@ -1,84 +1,73 @@
 ---
 name: image_to_image_lora_sampler_clip_16
 type: Image To Image
-frequency: 12
-level: moderate
-coverage: 0.801333
-common_nodes: [CLIPLoader, CLIPTextEncode, Canny, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 11
+level: strong
+coverage: 0.892091
+common_nodes: [CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, RH_Sora2_I2V, ReferenceLatent, SaveImage, SaveVideo, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Image Union Control多重控制V1_1959993171348500482.json, 图片生成/图生图/Qwen Image Union Control多重控制V1_2038786081507774465.json, 图片生成/图生图/qwen_image联合控制工作流_1991719993102512130.json, 图片生成/图生图/千问_Canny_重绘（画风一致）_1999855817111334914.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_1971187587396341761.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_2022602222256791554.json, 图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_2060578205039423490.json, 图片生成/图生图/图生图Qwen-Image_InstantX_Union_ControlNet线稿_深度_姿态_2096884116947030017.json, 图片生成/图生图/图生图Qwen-Image_InstantX_Union_ControlNet线稿_深度_姿态_2097175006064238593.json, "图片生成/文生图/InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json", 图片生成/文生图/Qwen Image Contro控制_1960239683160715266.json, 图片生成/文生图/qwen image instant union_1960550214228672513.json]
+members: [图片生成/图生图/全能视频S 突破真人图像加载hd高清版_1976967687794499585.json, 视频生成/图生视频/全能视频S 真人图片带货视频高清修复版支持hd高清竖版横板seedvr2二次高清视频_1979019890944282626.json, 视频生成/图生视频/全能视频S 真人版丨突破真人限制高清图生视频！！！_1980175140845686785.json, 视频生成/图生视频/全能视频S 真人版带货版突破真人限制无水印带货视频直出_1981394099058155522.json, 视频生成/图生视频/全能视频S 真人突破高清修复版支持hd高清竖版横板_1976662868592676865.json, 视频生成/图生视频/全能视频S+真人突破高清修复版支持hd高清竖版横板_1987128422977703937.json, 视频生成/图生视频/全能视频S真人图片直出视频二次高清版图生视频支持竖版9_16和横版16_9及hd版真人视频_1974791386690097154.json, 视频生成/图生视频/全能视频S真人图片直出视频二次高清版图生视频支持竖版9_16和横版16_9及hd版真人视频_1977406898737684481.json, 视频生成/图生视频/顶配 全能视频S 真人突破版hd高清竖版横板_1976679775987290113.json, 视频生成/文生视频/全能视频S  突破真人_1987944719135256577.json, 视频生成/文生视频/全能视频S 突破真人，高清版_1984183574075211778.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_16
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen Image Union Control多重控制V1_1959993171348500482.json、图片生成/图生图/Qwen Image Union Control多重控制V1_2038786081507774465.json、图片生成/图生图/qwen_image联合控制工作流_1991719993102512130.json、图片生成/图生图/千问_Canny_重绘（画风一致）_1999855817111334914.json、图片生成/图生图/图生图Qwen-Image InstantX Union ControlNet（线稿_深度_姿态）_1971187587396341761.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/全能视频S 突破真人图像加载hd高清版_1976967687794499585.json、视频生成/图生视频/全能视频S 真人图片带货视频高清修复版支持hd高清竖版横板seedvr2二次高清视频_1979019890944282626.json、视频生成/图生视频/全能视频S 真人版丨突破真人限制高清图生视频！！！_1980175140845686785.json、视频生成/图生视频/全能视频S 真人版带货版突破真人限制无水印带货视频直出_1981394099058155522.json、视频生成/图生视频/全能视频S 真人突破高清修复版支持hd高清竖版横板_1976662868592676865.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
 - `CLIPTextEncode`
-- `Canny`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
+- `RH_Sora2_I2V`
+- `ReferenceLatent`
 - `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 11/12 个有
-- `VAEDecode` —— 11/12 个有
-- `DepthAnything_V2` —— 10/12 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 10/12 个有
-- `ControlNetApplyAdvanced` —— 7/12 个有
-- `ControlNetLoader` —— 7/12 个有
-- `DWPreprocessor` —— 6/12 个有
-- `ControlNetInpaintingAliMamaApply` —— 5/12 个有
-- `ImagePadForOutpaint` —— 5/12 个有
-- `ReferenceLatent` —— 5/12 个有
-- `MiDaS-NormalMapPreprocessor` —— 3/12 个有
-- `OpenposePreprocessor` —— 3/12 个有
-- `ImpactSwitch` —— 1/12 个有
-- `Int` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `PDImageResizeV2` —— 1/12 个有
-- `VAEDecodeTiled` —— 1/12 个有
+- `easy cleanGpuUsed` —— 10/11 个有
+- `easy showAnything` —— 10/11 个有
+- `VHS_LoadVideoPath` —— 7/11 个有
+- `VHS_VideoCombine` —— 7/11 个有
+- `SeedVR2` —— 6/11 个有
+- `Bookmark (rgthree)` —— 2/11 个有
+- `SeedVR2GGUF` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 22 | 12 | 45% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 54% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| ControlNet 权重 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 30 | 30 - 30 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | beta | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 32/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 22，12 个样本，取值分散，一致性仅 45%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（32/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 30 - 30，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 beta，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_99
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9396
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, ManualSigmas, RandomNoise, ReferenceMultiLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: moderate
+coverage: 0.821545
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-3-Image-Klein 多图编辑_2110969114528403457.json, 图片生成/图生图/Flux-3-Image-Klein 多图编辑_2111237868306911233.json, 图片生成/图生图/Flux-3平面图转彩平图_2111287781887668226.json, 图片生成/图生图/Flux3加速版多图编辑_2111040326122164225.json, 图片生成/图生图/Flux3加速版多图编辑_2111060681888976898.json, 图片生成/图生图/flux_klien3图像编辑_2110985829039558657.json, 图片生成/图生图/户型平面图转成3D軸测空间框模型图_2111292703928573954.json, 图片生成/图生图/（双图）Flux-3-Image-Klein 多图编辑_2111219534840549378.json, 图片生成/文生图/Flux-3-Image-Klein 多图编辑_2111347095805452290.json, 图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json]
+members: [图片生成/文生图/FLUX2 Klein 文生图工作流_2091474310002200578.json, 图片生成/文生图/FLUX2 klein-9B 【文生图】_2013859086563024897.json, 图片生成/文生图/FLUX2 klein-9B 文生图_2013123316474716162.json, 图片生成/文生图/FLUX2-KLEIN 4B快速文生图_2012166692574601217.json, 图片生成/文生图/FLUX2-KLEIN-文生图_2086265051199135746.json, 图片生成/文生图/FLUX2-Klein文生图_2039582984268943361.json, 图片生成/文生图/Flux.2-Klein 文生图-模板_2090689443601666049.json, 图片生成/文生图/Flux.2-Klein 文生图_2012020733546860545.json, 图片生成/文生图/Flux2 Klein 文生图_2012770598530846721.json, 图片生成/文生图/Flux2-Klein 9B文生图+ 提示词扩写_2012402078878011394.json, 图片生成/文生图/建筑 室内 文字生成图片上传_2043882512698576897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_99
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux-3-Image-Klein 多图编辑_2110969114528403457.json、图片生成/图生图/Flux-3-Image-Klein 多图编辑_2111237868306911233.json、图片生成/图生图/Flux-3平面图转彩平图_2111287781887668226.json、图片生成/图生图/Flux3加速版多图编辑_2111040326122164225.json、图片生成/图生图/Flux3加速版多图编辑_2111060681888976898.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/FLUX2 Klein 文生图工作流_2091474310002200578.json、图片生成/文生图/FLUX2 klein-9B 【文生图】_2013859086563024897.json、图片生成/文生图/FLUX2 klein-9B 文生图_2013123316474716162.json、图片生成/文生图/FLUX2-KLEIN 4B快速文生图_2012166692574601217.json、图片生成/文生图/FLUX2-KLEIN-文生图_2086265051199135746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
+全部 11 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `LoadImage`
-- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceMultiLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
@@ -38,25 +37,21 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/10 个有
-- `CR Text` —— 6/10 个有
-- `EmptyLatentImage` —— 6/10 个有
-- `Image Comparer (rgthree)` —— 6/10 个有
-- `Latent Switch (JPS)` —— 6/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
-- `GetImageSize` —— 2/10 个有
-- `ImageConcanate` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `JjkText` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `RH_RhartImageG2ImageToImage` —— 1/10 个有
+- `PrimitiveInt` —— 8/11 个有
+- `PrimitiveStringMultiline` —— 8/11 个有
+- `ConditioningZeroOut` —— 5/11 个有
+- `PlaySound|pysssss` —— 4/11 个有
+- `CR SDXL Aspect Ratio` —— 2/11 个有
+- `FluxResolutionNode` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `ImpactSwitch` —— 1/11 个有
+- `RH_LLMAPI_NODE` —— 1/11 个有
+- `SetNode` —— 1/11 个有
+- `ShowText|pysssss` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,5 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

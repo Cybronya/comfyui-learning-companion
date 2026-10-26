@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_167
 type: Text To Image
 frequency: 10
-level: weak
-coverage: 0.8934
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.85
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/MJ风格工作流V2.0_2112169962583445506.json, 图片生成/文生图/MJ风格工作流V2.0｜美学一键复刻_2112481146184486913.json, 图片生成/文生图/Qwen Image 2.1 透明素材生成｜文生图直出透明PNG_2112462903986180098.json, 图片生成/文生图/Qwen Image 2.1一体化文生图工作流，7B模型2K高清RGBA透明直出方案_2103624543020601346.json, 图片生成/文生图/Qwen Image 2.1写实文生图 高质量画面一键直出_2104277798167859202.json, 图片生成/文生图/Qwen Image 2.1写实文生图｜图生图双模式 文生图质感稳定在线_2104101053124931586.json, 图片生成/文生图/Qwen Image 2.1文生图 官方模板，原生2K高清文本到图像方案_2103550536535601154.json, 图片生成/文生图/Qwen Image 2.1文生图处理生成工作流_2102103619591036930.json, 图片生成/文生图/Qwen Image 2.1文生图纯净官流40步无PE工作流，文生图高质量文本到图像_2107569921352884226.json, 图片生成/文生图/Qwen_Image_2.1文生图工作流｜零门槛直出创意画面_2110761065725382658.json]
+members: [图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json, 图片生成/图生图/BF16精度Qwen Image 2.1图片编辑，小字不崩的图生图处理方案_2102871104883879938.json, 图片生成/图生图/Qwen Image 2.1一致性保持加图像编辑 角色一致性更强_2109344093791940610.json, 图片生成/图生图/Qwen Image 2.1单图编辑产品展示图生图处理工具_2102489354336821249.json, 图片生成/图生图/Qwen Image 2.1单图编辑流｜局部修改想改哪里改哪里_2108081920897806338.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2104763014581940225.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜一张图也能精修到位_2108523054933561346.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜图生图局部修改｜想修哪里修哪里_2107745036996800513.json, 图片生成/图生图/Qwen Image 2.1图像编辑利器｜图生图局部修改一句话搞定_2110685195149074434.json, 图片生成/图生图/Qwen Image 2.1多图编辑｜多参考图融合修改｜批量改图效率翻倍_2104764482592534530.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_167
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/MJ风格工作流V2.0_2112169962583445506.json、图片生成/文生图/MJ风格工作流V2.0｜美学一键复刻_2112481146184486913.json、图片生成/文生图/Qwen Image 2.1 透明素材生成｜文生图直出透明PNG_2112462903986180098.json、图片生成/文生图/Qwen Image 2.1一体化文生图工作流，7B模型2K高清RGBA透明直出方案_2103624543020601346.json、图片生成/文生图/Qwen Image 2.1写实文生图 高质量画面一键直出_2104277798167859202.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json、图片生成/图生图/BF16精度Qwen Image 2.1图片编辑，小字不崩的图生图处理方案_2102871104883879938.json、图片生成/图生图/Qwen Image 2.1一致性保持加图像编辑 角色一致性更强_2109344093791940610.json、图片生成/图生图/Qwen Image 2.1单图编辑产品展示图生图处理工具_2102489354336821249.json、图片生成/图生图/Qwen Image 2.1单图编辑流｜局部修改想改哪里改哪里_2108081920897806338.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -26,40 +26,52 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `QwenImage21Cache`
 - `ResolutionSelector`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 9/10 个有
-- `solarL_SaveImagesToZip` —— 9/10 个有
 - `孤海注释` —— 9/10 个有
-- `TextEncodeQwenImage21` —— 8/10 个有
-- `PrimitiveStringMultiline` —— 6/10 个有
-- `SaveImageAdvanced` —— 5/10 个有
-- `ModelAttentionBackend` —— 3/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `ConditioningKrea2Rebalance` —— 2/10 个有
-- `ConditioningZeroOut` —— 2/10 个有
+- `CR Prompt Text` —— 8/10 个有
+- `ComfySwitchNode` —— 8/10 个有
+- `ShowText|pysssss` —— 8/10 个有
+- `Anything Everywhere3` —— 6/10 个有
+- `Seed (rgthree)` —— 6/10 个有
+- `CR Text Concatenate` —— 5/10 个有
+- `ResizeLongestToNode` —— 5/10 个有
+- `TextGenerate` —— 5/10 个有
+- `GetNode` —— 2/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `SaveImageAdvanced` —— 2/10 个有
 - `SetNode` —— 2/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `MaskToImage` —— 1/10 个有
-- `SplitImageWithAlpha` —— 1/10 个有
+- `BatchImagesNode` —— 1/10 个有
+- `CompressImages` —— 1/10 个有
+- `GetImageSize` —— 1/10 个有
+- `QwenPERewriteT8` —— 1/10 个有
+- `RHLLMChatNode` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
+- `TextGenerateLTX2Prompt` —— 1/10 个有
+- `XinbaoImageStandardizer` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 10 | 0% |
-| 高度 | 80 | 80 - 1024 | 10 | 0% |
-| 采样步数 | 4 | 4 - 8 | 10 | 73% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 10 | 75% |
-| 采样算法 | er_sde | - | 10 | 90% |
-| 调度器 | beta | - | 10 | 90% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
@@ -70,11 +82,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，10 个样本
-- 采样算法 最常用 er_sde，10 个样本，一致性 90%
-- 调度器 最常用 beta，10 个样本，一致性 90%
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
 - 高发问题（11/10 个样本）：Steps较低可能导致细节不足

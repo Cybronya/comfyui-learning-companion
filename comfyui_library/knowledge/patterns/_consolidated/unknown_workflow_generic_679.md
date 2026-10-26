@@ -3,33 +3,33 @@ name: unknown_workflow_generic_679
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.74175
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.6
+common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
 problems: []
 missing: []
-members: [图片生成/图生图/光影优化-给图片添加自然光影_2053001754442252289.json, 图片生成/图生图/光影优化V3（个人原创）_2037109850139795457.json, 图片生成/图生图/图像调色_2070485998890471426.json, 图片生成/图生图/照片滤镜迁移(颜色匹配)_1909648618620682242.json]
+members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json, 图片生成/反推提示词/图像反推提示词_qwen3.5_2063048577647202305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_679
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/光影优化-给图片添加自然光影_2053001754442252289.json、图片生成/图生图/光影优化V3（个人原创）_2037109850139795457.json、图片生成/图生图/图像调色_2070485998890471426.json、图片生成/图生图/照片滤镜迁移(颜色匹配)_1909648618620682242.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json、图片生成/反推提示词/图像反推提示词_qwen3.5_2063048577647202305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `SaveImage`
+- `CLIPLoader`
+- `PreviewAny`
+- `TextGenerate`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 2/4 个有
-- `workflow>光影优化V3` —— 2/4 个有
+- `LoadImage` —— 3/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 

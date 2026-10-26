@@ -3,59 +3,58 @@ name: unknown_workflow_video_upscale_lora_13
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.87975
-common_nodes: [GetImageRangeFromBatch, ImageResizeKJ, ImageUpscaleWithModel, ImpactFloat, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, easy int]
+coverage: 0.96475
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PreviewImage, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json, 视频生成/图生视频/Wan图生视频-FUSION版本_1933959648057675777.json, 视频生成/图生视频/Wan图生视频急速版_1935194153187999746.json, 视频生成/图生视频/【趣味】三味真火！_1934811553910693889.json]
+members: [视频生成/图生视频/万相图生视频国风变装-戏服_1915350081669894146.json, 视频生成/图生视频/图生视频_大摆锤舞蹈_1952209693416566785.json, 视频生成/图生视频/图生视频_大摆锤舞蹈_1955172596662898690.json, 视频生成/文生视频/图生视频_大摆锤舞蹈_1965243729651093506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_13
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json、视频生成/图生视频/Wan图生视频-FUSION版本_1933959648057675777.json、视频生成/图生视频/Wan图生视频急速版_1935194153187999746.json、视频生成/图生视频/【趣味】三味真火！_1934811553910693889.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万相图生视频国风变装-戏服_1915350081669894146.json、视频生成/图生视频/图生视频_大摆锤舞蹈_1952209693416566785.json、视频生成/图生视频/图生视频_大摆锤舞蹈_1955172596662898690.json、视频生成/文生视频/图生视频_大摆锤舞蹈_1965243729651093506.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `ImageResizeKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `ImageUpscaleWithModel`
-- `ImpactFloat`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `RIFE VFI`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `WanVideoApplyNAG` —— 2/4 个有
-- `WanVideoMagCache` —— 2/4 个有
-- `WanVideoTextEncode` —— 2/4 个有
-- `WanVideoTextEncodeSingle` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Display Any (rgthree)` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `Text Find and Replace` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
+- `ImageResize+` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `CLIPVisionLoader` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `ImageSmartSharpen+` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
 - `WanVideoExperimentalArgs` —— 1/4 个有
 - `WanVideoSLG` —— 1/4 个有
+- `WanVideoVRAMManagement` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 

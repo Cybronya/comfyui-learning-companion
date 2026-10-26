@@ -3,40 +3,36 @@ name: unknown_workflow_generic_1101
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.927
-common_nodes: [LoadAudio, MossTTSDialogue, MossTTSModelLoader, SaveAudioMP3, Text, WhisperSTT, easy cleanGpuUsed]
+coverage: 0.452333
+common_nodes: [ImpactSwitch, JjkText, PrimitiveInt, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, ShowText]
 problems: []
 missing: []
-members: [音频生成/音频生成/MOSS-TTS工作流合集_2042152716146843649.json, 音频生成/音频生成/Moss TTS双人对话_2071776447680827393.json, 音频生成/音频生成/【Supermate】MOSS-TTS工作流合集（赚钱秘籍版）_2046297799846793218.json]
+members: [数字人/数字人/Qwen3 TTS 声音设计_2030575107957067777.json, 数字人/数字人/自用tts2_2042080182118391810.json, 数字人/数字人/自用tts3_2050925956700876802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1101
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MOSS-TTS工作流合集_2042152716146843649.json、音频生成/音频生成/Moss TTS双人对话_2071776447680827393.json、音频生成/音频生成/【Supermate】MOSS-TTS工作流合集（赚钱秘籍版）_2046297799846793218.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Qwen3 TTS 声音设计_2030575107957067777.json、数字人/数字人/自用tts2_2042080182118391810.json、数字人/数字人/自用tts3_2050925956700876802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `MossTTSDialogue`
-- `MossTTSModelLoader`
-- `SaveAudioMP3`
-- `Text`
-- `WhisperSTT`
-- `easy cleanGpuUsed`
+- `ImpactSwitch`
+- `JjkText`
+- `PrimitiveInt`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `ShowText`
 
 **可变部分**（部分 workflow 才有）：
-- `MossTTSGenerate` —— 2/3 个有
-- `MossTTSSoundEffect` —— 2/3 个有
-- `MossTTSVoiceDesign` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
 
 ## 典型参数
 

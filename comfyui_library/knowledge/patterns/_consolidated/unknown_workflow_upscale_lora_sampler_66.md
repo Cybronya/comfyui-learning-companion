@@ -2,77 +2,63 @@
 name: unknown_workflow_upscale_lora_sampler_66
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.633667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DetailDaemonSamplerNode, DualCLIPLoader, FluxGuidance, GetNode, ImageSmartSharpen+, InjectLatentNoise+, KSamplerSelect, LatentPixelScale, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoaderV2, RandomNoise, RebatchLatents, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, UpscaleModelLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.844
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler (Efficient), LayerFilter: HDREffects, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, StringFunction|pysssss, UNETLoader, VAELoader, easy stylesSelector]
 problems: []
 missing: []
-members: [图片生成/图生图/🈚️flux.1 nunchakun i2i-基础图生图_洗图-4bit加速_1929169338916356098.json, 图片生成/文生图/🈚️flux.1 nunchakun-基础 文生图-4bit加速文生图_1928883725826953218.json, 图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json]
+members: [图片生成/图生图/一键运行：Z-IMAGE CN 控制Controlnet-Union 图像控制。、修改_1997556295177801729.json, 图片生成/文生图/一键运行：z-imgae 最简文生图 洗图  高清放大_1997558973375135745.json, 图片生成/文生图/一键运行：z_image 文生图最简放大_1997189042540331009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_66
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/🈚️flux.1 nunchakun i2i-基础图生图_洗图-4bit加速_1929169338916356098.json、图片生成/文生图/🈚️flux.1 nunchakun-基础 文生图-4bit加速文生图_1928883725826953218.json、图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键运行：Z-IMAGE CN 控制Controlnet-Union 图像控制。、修改_1997556295177801729.json、图片生成/文生图/一键运行：z-imgae 最简文生图 洗图  高清放大_1997558973375135745.json、图片生成/文生图/一键运行：z_image 文生图最简放大_1997189042540331009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DetailDaemonSamplerNode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `GetNode`
-- `ImageSmartSharpen+`
-- `InjectLatentNoise+`
-- `KSamplerSelect`
-- `LatentPixelScale`
-- `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoaderV2`
-- `RandomNoise`
-- `RebatchLatents`
-- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `KSampler (Efficient)`
+- `LayerFilter: HDREffects`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `UpscaleModelLoader`
-- `VAEDecode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `StringFunction|pysssss`
+- `UNETLoader`
 - `VAELoader`
+- `easy stylesSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `CR Text Concatenate` —— 2/3 个有
-- `EnhanceDetail` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `RepeatLatentBatch` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `CLIPVisionEncode` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CR Aspect Ratio` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `JanusImage2Text` —— 1/3 个有
-- `LayerUtility: TextJoin` —— 1/3 个有
-- `LoadJanusModel` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `StyleModelApply` —— 1/3 个有
-- `StyleModelLoader` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `ModelPatchLoader` —— 1/3 个有
+- `QwenImageDiffsynthControlnet` —— 1/3 个有
+- `easy imageChooser` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | 728 - 768 | 3 | 98% |
+| 高度 | 1024 | 1024 - 1200 | 3 | 92% |
+| 采样步数 | 6 | 6 - 6 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -80,4 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 768，观测区间 728 - 768，3 个样本，取值集中（一致性 98%）
+- 高度 中位数 1024，观测区间 1024 - 1200，3 个样本，取值集中（一致性 92%）
+- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

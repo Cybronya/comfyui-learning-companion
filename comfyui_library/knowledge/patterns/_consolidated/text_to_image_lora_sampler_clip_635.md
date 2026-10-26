@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_635
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9095
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ProcessString, RH_Captioner, RH_LLMAPI_Pro_Node, SaveImage, Seed (rgthree), Text Concatenate, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.9085
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Flux2Scheduler, ImageConcanate, ImageScaleToTotalPixels, JWFloat, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image全功能+网红美女爆图工作流_1995507321415598081.json, 图片生成/文生图/美女模特 反推提示词 图片裂变 9宫格分镜图 洗图  Z-Image-Turbo D-OPSD_2056920485178462210.json]
+members: [图片生成/图生图/WH-AI-Studio电商换脸(Qwen+Fulx2-klein二阶脸部细节修复版)_2022518114780454913.json, 图片生成/图生图/多图编辑换头｜Flux2Klein写实换脸4B加速版_2090845255133392898.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_635
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image全功能+网红美女爆图工作流_1995507321415598081.json、图片生成/文生图/美女模特 反推提示词 图片裂变 9宫格分镜图 洗图  Z-Image-Turbo D-OPSD_2056920485178462210.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/WH-AI-Studio电商换脸(Qwen+Fulx2-klein二阶脸部细节修复版)_2022518114780454913.json、图片生成/图生图/多图编辑换头｜Flux2Klein写实换脸4B加速版_2090845255133392898.json）
 
 - **类型**：Text To Image
 - **样本数**：2
@@ -23,66 +23,71 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `CR Text`
-- `CR Text Replace`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JDCN_StringToList`
+- `Flux2Scheduler`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
+- `JWFloat`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ProcessString`
-- `RH_Captioner`
-- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DifferentialDiffusion` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `InpaintModelConditioning` —— 1/2 个有
-- `MaskBlur+` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
+- `Crop Face` —— 1/2 个有
+- `FluxKontextImageScale` —— 1/2 个有
+- `GetImage` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
+- `Load RetinaFace` —— 1/2 个有
+- `MaskColorize` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
+- `solarL_SaveImagesToZip` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.925 | - | 2 | 92% |
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
+| 宽度 | 580 | - | 2 | 14% |
+| 高度 | 1000 | - | 2 | 8% |
+| 采样步数 | 6 | - | 2 | 67% |
+| Prompt 约束强度(CFG) | 3 | - | 2 | 50% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.925，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 580，样本不足，未给区间，2 个样本，取值分散，一致性仅 14%
+- 高度 中位数 1000，样本不足，未给区间，2 个样本，取值分散，一致性仅 8%
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

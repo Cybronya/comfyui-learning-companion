@@ -3,34 +3,31 @@ name: unknown_workflow_generic_1662
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.7335
+common_nodes: [OmniVoiceVoiceDesignTTS, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json, 音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json]
+members: [数字人/数字人/omnivoice-tts声音设计_2041705594066833410.json, 音频生成/音频生成/OmniVoice Voice声音设计_2041995381118083073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1662
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json、音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/omnivoice-tts声音设计_2041705594066833410.json、音频生成/音频生成/OmniVoice Voice声音设计_2041995381118083073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `OmniVoiceVoiceDesignTTS`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `NormalizeAudioLoudness` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
 
 ## 典型参数
 

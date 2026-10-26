@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_controlnet_video_lora_12
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.936857
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.951667
+common_nodes: [CR Prompt Text, ImageConcanate, ImageResizeKJ, JWInteger, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/PT娃导单图运镜控制串联版_1941554640133767170.json, 视频生成/图生视频/PT娃导单图运镜控制流单节点版_1941548722545442818.json, 视频生成/图生视频/WAN2.1+数字人运镜控制+视频放大_1947456088879828994.json, 视频生成/图生视频/WAN2.2_multitalk数字人（动作幅度较大）_1953061353666899969.json, 视频生成/图生视频/wanvideo_multitalk_test_01_1936354882708475905.json, 视频生成/图生视频/wanvideo_multitalk_test_01g_1936629963053256706.json, 视频生成/图生视频/图片+音频驱动数字人（PT单图运镜控制数字人自由运镜）_1942053669372379138.json]
+members: [视频生成/图生视频/LightX2V Rank64+AniWan+Uni3C人物快速转圈图生视频V1_1945410798665572353.json, 视频生成/图生视频/Uni3C 视频转绘（对称_非对称）动作控制图生视频V1（4倍加速）_1928986648586129410.json, 视频生成/图生视频/Uni3C 运镜控制图生视频V1（4倍加速）_1928871989627273218.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_1929015446484238338.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_2000739633522671617.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版_1929133519367475202.json, 视频生成/图生视频/万相极速Uni3C 运镜控制图生视频_1957795522704764930.json, 视频生成/图生视频/🦖Uni3C 吉卜力风格转绘加速版_1931247339858493442.json, 视频生成/图生视频/🦖Uni3C 跳舞视频转吉卜力风格转绘加速版_1931944580948930561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/PT娃导单图运镜控制串联版_1941554640133767170.json、视频生成/图生视频/PT娃导单图运镜控制流单节点版_1941548722545442818.json、视频生成/图生视频/WAN2.1+数字人运镜控制+视频放大_1947456088879828994.json、视频生成/图生视频/WAN2.2_multitalk数字人（动作幅度较大）_1953061353666899969.json、视频生成/图生视频/wanvideo_multitalk_test_01_1936354882708475905.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LightX2V Rank64+AniWan+Uni3C人物快速转圈图生视频V1_1945410798665572353.json、视频生成/图生视频/Uni3C 视频转绘（对称_非对称）动作控制图生视频V1（4倍加速）_1928986648586129410.json、视频生成/图生视频/Uni3C 运镜控制图生视频V1（4倍加速）_1928871989627273218.json、视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_1929015446484238338.json、视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_2000739633522671617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `JWInteger`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
@@ -45,31 +38,30 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PT_KeyframeCamera` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `RepeatImageBatch` —— 4/7 个有
-- `CreateCFGScheduleFloatList` —— 3/7 个有
-- `VHS_DuplicateImages` —— 3/7 个有
-- `Audio Duration (mtb)` —— 1/7 个有
-- `GetImagesFromBatchIndexed` —— 1/7 个有
-- `ImageBatch` —— 1/7 个有
-- `ImageResizeKJ` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `JWInteger` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
-- `WanVideoSetBlockSwap` —— 1/7 个有
-- `WanVideoSetLoRAs` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `PreviewImage` —— 7/9 个有
+- `LoadImage` —— 6/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `RunningHub OmniConsistency LoraLoader` —— 3/9 个有
+- `RunningHub OmniConsistency Sampler` —— 3/9 个有
+- `SaveImage` —— 3/9 个有
+- `ColorCorrect` —— 2/9 个有
+- `EasyControlGenerate` —— 2/9 个有
+- `EasyControlLoadFlux` —— 2/9 个有
+- `EasyControlLoadLora` —— 2/9 个有
+- `GetImageRangeFromBatch` —— 2/9 个有
+- `LayerUtility: PurgeVRAM` —— 2/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `WanVideoEasyCache` —— 1/9 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/9 个有
+- `WanVideoUniAnimatePoseInput` —— 1/9 个有
+- `easy promptConcat` —— 1/9 个有
 
 ## 典型参数
 

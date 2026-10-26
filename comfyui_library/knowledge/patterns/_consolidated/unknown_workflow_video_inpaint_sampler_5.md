@@ -3,70 +3,94 @@ name: unknown_workflow_video_inpaint_sampler_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8175
-common_nodes: [Fast Groups Bypasser (rgthree), GrowMaskWithBlur, ImageConcanate, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
-problems: []
+coverage: 0.715
+common_nodes: [AILab_ImageCombiner, CLIPTextEncode, CM_IntToFloat, CheckpointLoaderSimple, DWPreprocessor, GrowMaskWithBlur, INTConstant, ImageFromBatch+, ImageResizeKJv2, InpaintPreprocessor, Int, InvertMask (segment anything), JjkText, KSampler, LayerColor: Brightness & Contrast, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2VideoUltra, LoadImage, MaskPreview+, MaskToImage, ModelSamplingSD3, PreviewImage, PrimitiveStringMultiline, PurgeVRAM_UTK, RMBG, SimpleMath+, TrimVideoLatent, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, 孤海-图像与遮罩描边]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json, 视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json]
+members: [数字人/数字人/匹配姿势换人不换产品跟场景V2_1974675469649973250.json, 数字人/数字人/姿势匹配换人换场景保留产品V1_1975129335843696641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json、视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/匹配姿势换人不换产品跟场景V2_1974675469649973250.json、数字人/数字人/姿势匹配换人换场景保留产品V1_1975129335843696641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `AILab_ImageCombiner`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CheckpointLoaderSimple`
+- `DWPreprocessor`
 - `GrowMaskWithBlur`
-- `ImageConcanate`
-- `ImageResizeKJ`
+- `INTConstant`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
 - `InpaintPreprocessor`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
+- `Int`
+- `InvertMask (segment anything)`
+- `JjkText`
+- `KSampler`
+- `LayerColor: Brightness & Contrast`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2VideoUltra`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MaskPreview+`
 - `MaskToImage`
+- `ModelSamplingSD3`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
+- `PurgeVRAM_UTK`
+- `RMBG`
+- `SimpleMath+`
+- `TrimVideoLatent`
+- `VAEDecode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
-- `easy imageRemBg`
+- `WanVaceToVideo`
+- `孤海-图像与遮罩描边`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `Compositor3` —— 1/2 个有
-- `CompositorConfig3` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Images to RGB` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `GetImageSize+` —— 1/2 个有
+- `ImageCompositeMasked` —— 1/2 个有
+- `ImageToMask` —— 1/2 个有
+- `InspyrenetRembg` —— 1/2 个有
+- `LayerUtility: ImageBlend` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `VHS_DuplicateMasks` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
+- `preview_mask` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

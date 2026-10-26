@@ -3,32 +3,36 @@ name: unknown_workflow_generic_967
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.808333
-common_nodes: [LoadImage, RH_SeedreamV45ImageToImage, SaveImage]
+coverage: 0.598667
+common_nodes: [Image Comparer (rgthree), LoadImage, RHHiddenNodes, SaveImage, easy imageColorMatch]
 problems: []
 missing: []
-members: [图片生成/图生图/衣柜更换门板造型_2066077148108120066.json, 图片生成/文生图/04豆包_SeedreamV45_图生图+全节点注释_2058543411359211521.json, 图片生成/文生图/白底证件照_2078363316103237633.json]
+members: [图片生成/图生图/LEON_原位编辑_2100067579481124865.json, 图片生成/图生图/LEON_原位编辑_2101082450964344833.json, 图片生成/图生图/flux2-klein高清修复放大_2015398664495177729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_967
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/衣柜更换门板造型_2066077148108120066.json、图片生成/文生图/04豆包_SeedreamV45_图生图+全节点注释_2058543411359211521.json、图片生成/文生图/白底证件照_2078363316103237633.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LEON_原位编辑_2100067579481124865.json、图片生成/图生图/LEON_原位编辑_2101082450964344833.json、图片生成/图生图/flux2-klein高清修复放大_2015398664495177729.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_SeedreamV45ImageToImage`
+- `RHHiddenNodes`
 - `SaveImage`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/3 个有
+- `PreviewImage` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `EmptyImage` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,34 +3,33 @@ name: unknown_workflow_generic_675
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.968
-common_nodes: [LoadImage, Power Prompt (rgthree), RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.9
+common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/两张图生成莱森鹿_2039612191237742594.json, 图片生成/图生图/林利1970s换logo_2086032388383133697.json, 图片生成/图生图/林利主图替换_2080928144965591041.json, 视频生成/图生视频/xx店铺xx主图_2044318599816421378.json]
+members: [comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json, comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json, comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json, comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_675
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/两张图生成莱森鹿_2039612191237742594.json、图片生成/图生图/林利1970s换logo_2086032388383133697.json、图片生成/图生图/林利主图替换_2080928144965591041.json、视频生成/图生视频/xx店铺xx主图_2044318599816421378.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json、comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json、comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json、comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `ImageCompare`
 - `LoadImage`
-- `Power Prompt (rgthree)`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/4 个有
-- `SmartImageConcat` —— 1/4 个有
+- `GeminiNanoBanana2V2` —— 2/4 个有
+- `TopazImageEnhanceV2` —— 2/4 个有
 
 ## 典型参数
 

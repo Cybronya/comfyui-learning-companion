@@ -3,31 +3,38 @@ name: unknown_workflow_generic_1668
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.286
-common_nodes: [JjkText, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, SaveAudio]
+coverage: 0.783
+common_nodes: [Fast Groups Bypasser (rgthree), ImageBatch, Int, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerUtility: CropByMask V2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 自定义预设声音_2014525596830797826.json, 音频生成/音频生成/多角色声音预设 Qwen3 TTS 自定义预设声音  训练专属声音模板_2022854958600687617.json]
+members: [数字人/数字人/抖音服装带货，男装女穿反差版_2010679924067147777.json, 数字人/数字人/抖音服装带货，真实感抓拍版_2010671488147398657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1668
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 自定义预设声音_2014525596830797826.json、音频生成/音频生成/多角色声音预设 Qwen3 TTS 自定义预设声音  训练专属声音模板_2022854958600687617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/抖音服装带货，男装女穿反差版_2010679924067147777.json、数字人/数字人/抖音服装带货，真实感抓拍版_2010671488147398657.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：29%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `SaveAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBatch`
+- `Int`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_463
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.86225
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.85425
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/通义万相文生视频｜Wan2.1人物角色设计生成_2091233285505642498.json, 音频生成/音频生成/AI配音工作流｜一句话描述音色自动生成创意玩法_2100831844735471617.json, 音频生成/音频生成/FireRed TTS语音克隆｜参考音色复刻工作流_2094566446364979201.json, 音频生成/音频生成/FireRed语音理解AI问答｜听音识别智能对话_2094565126929215490.json]
+members: [图片生成/图生图/透明抠图一键导出｜AI透明背景图像提取图生图_2093833685442326529.json, 图片生成/图生图/透明抠图一键快速生成｜老孙AI图生图高清处理_2094043648282415105.json, 图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json, 图片生成/文生图/全能图片G image 2.5文生图｜最强生图模型直出高清_2110691325665439746.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_463
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/通义万相文生视频｜Wan2.1人物角色设计生成_2091233285505642498.json、音频生成/音频生成/AI配音工作流｜一句话描述音色自动生成创意玩法_2100831844735471617.json、音频生成/音频生成/FireRed TTS语音克隆｜参考音色复刻工作流_2094566446364979201.json、音频生成/音频生成/FireRed语音理解AI问答｜听音识别智能对话_2094565126929215490.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/透明抠图一键导出｜AI透明背景图像提取图生图_2093833685442326529.json、图片生成/图生图/透明抠图一键快速生成｜老孙AI图生图高清处理_2094043648282415105.json、图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json、图片生成/文生图/全能图片G image 2.5文生图｜最强生图模型直出高清_2110691325665439746.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -29,6 +29,7 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -36,18 +37,15 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `RH_FireRedAudioLoader` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `EmptyHunyuanLatentVideo` —— 1/4 个有
-- `RH_FireRedAudioTTS` —— 1/4 个有
-- `RH_FireRedAudioUnderstand` —— 1/4 个有
-- `RH_FireRedAudioVoiceDesign` —— 1/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `SaveText` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
-- `WanVideoTeaCacheKJ` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Anything Everywhere` —— 2/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 2/4 个有
+- `LayerMask: MaskPreview` —— 2/4 个有
+- `Mute / Bypass Relay (rgthree)` —— 2/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
+- `RH_RhartImageG25FlareTextToImage` —— 2/4 个有
 
 ## 典型参数
 

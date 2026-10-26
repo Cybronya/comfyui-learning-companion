@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_126
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.982308
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.966786
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json, 视频生成/图生视频/SD2.0_多模态视频_2037079726090625025.json, 视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json, 视频生成/图生视频/Seedance2.0_API版-全能参考视频_2111086748641087490.json, 视频生成/图生视频/Seedance2.0全能参考视频_2042556695511048193.json, 视频生成/图生视频/Seedance2.0全能参考视频_2054429466671230977.json, 视频生成/图生视频/Seedance2.0全能参考视频_2074327543133593602.json, 视频生成/图生视频/Seedance2.0全能短剧_影视视频_短视频_游戏角色设计_视频生成利器_2045034837869858818.json, 视频生成/图生视频/sd2全参生视频_2037777093508997122.json, 视频生成/图生视频/全能参考_2039398080948211714.json, 视频生成/图生视频/自动化工作流seedance2.0全参_2060303603629387777.json, 视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json, 视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json]
+members: [视频生成/文生视频/人声克隆 + 情感克隆 Index TTS 2_1971255216429580290.json, 音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json, 音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json, 音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json, 音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json, 音频生成/音频生成/IndexTTS2语音克隆_1967824167414411265.json, 音频生成/音频生成/IndexTTs2双人对话（可以参考两个人的参考音频，可控制情绪）_2109803189796167681.json, 音频生成/音频生成/Worker IndexTTS2_1976172533944860674.json, 音频生成/音频生成/单人_双人 音频生成 Indextts2.0声音克隆 音色情绪复制  语音克隆  情感向量_文本描述_2043490627521875969.json, 音频生成/音频生成/单人、双人声音克隆+情绪控制+自定义台词_2072693468299878401.json, 音频生成/音频生成/单人音频克隆+情绪控制_1995674428849709057.json, 音频生成/音频生成/庄庄TTS2声音克隆_2072614949343547394.json, 音频生成/音频生成/音频生成Indextts2.0声音克隆 情绪复制 支持双人对话+情感向量_文本描述音色迁移_2043490508206514178.json, 音频生成/音频生成/（情绪控制）IndexTTS2_语音_音色_克隆_情绪自定义_2089690131623137281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_126
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json、视频生成/图生视频/SD2.0_多模态视频_2037079726090625025.json、视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json、视频生成/图生视频/Seedance2.0_API版-全能参考视频_2111086748641087490.json、视频生成/图生视频/Seedance2.0全能参考视频_2042556695511048193.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/人声克隆 + 情感克隆 Index TTS 2_1971255216429580290.json、音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json、音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json、音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json、音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 14 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 12/13 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 12/13 个有
-- `LoadAudio` —— 10/13 个有
-- `JjkText` —— 1/13 个有
-- `Primitive string multiline [Crystools]` —— 1/13 个有
-- `RH_KlingV30ProMotionControl` —— 1/13 个有
+- `PreviewAudio` —— 13/14 个有
+- `Text Multiline` —— 13/14 个有
+- `CR Text` —— 8/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
+- `JjkText` —— 1/14 个有
 
 ## 典型参数
 

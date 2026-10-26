@@ -3,66 +3,74 @@ name: unknown_workflow_video_upscale_latent_upscale_131
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.496
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, Pipe from any [Crystools], Pipe to/edit any [Crystools], PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SimpleMath+, SolAttnMiniMax, SplitSigmas, UNETLoader, VAELoader, VHS_VideoCombine, easy blocker, easy boolean, easy ifElse]
+coverage: 0.9295
+common_nodes: [BasicGuider, BasicScheduler, BatchImagesNode, CLIPLoader, CR String To Number, ComfyMathExpression, GuHaiAutoImageSplit, ImageBatchMulti, ImageFromBatch+, ImageResizeKJv2, Int, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ExtendCanvasV2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, SplitSigmas, StringConcatenate, StringSubstring, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mathInt, easy showAnything, easy sleep]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3_多参生视频_2108931656911507457.json, 视频生成/图生视频/minimax_H3_多参_2108804190872096769.json]
+members: [图片生成/图生图/comfyui 工作流_2109468418498981890.json, 视频生成/图生视频/comfyui 工作流_2114318472292429826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_131
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3_多参生视频_2108931656911507457.json、视频生成/图生视频/minimax_H3_多参_2108804190872096769.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/comfyui 工作流_2109468418498981890.json、视频生成/图生视频/comfyui 工作流_2114318472292429826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
-- `CR Text`
+- `CR String To Number`
 - `ComfyMathExpression`
-- `ExtendIntermediateSigmas`
-- `GetNode`
+- `GuHaiAutoImageSplit`
+- `ImageBatchMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
-- `LoadAudio`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ExtendCanvasV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SemanticBridgeApplyT8`
-- `MiniMaxH3SemanticBridgeConfigT8`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
 - `ModelAttentionBackend`
-- `Pipe from any [Crystools]`
-- `Pipe to/edit any [Crystools]`
-- `PrimitiveBoolean`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `SimpleMath+`
-- `SolAttnMiniMax`
 - `SplitSigmas`
+- `StringConcatenate`
+- `StringSubstring`
+- `Text Load Line From File`
+- `Text Multiline`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy blocker`
-- `easy boolean`
-- `easy ifElse`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy mathInt`
+- `easy showAnything`
+- `easy sleep`
 
 ## 典型参数
 

@@ -3,32 +3,40 @@ name: unknown_workflow_generic_773
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8125
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioMP3]
+coverage: 0.76675
+common_nodes: [GuHaiAutoImageSplit, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json, 音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json, 音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json, 音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json]
+members: [图片生成/图生图/最新G image2  电商服装多视角模特主图一键生成_2090781182903541761.json, 图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2060897927165468674.json, 图片生成/图生图/最新G image2 图生图工作流 V1.0_2046750923770302465.json, 图片生成/文生图/最新G image2 官方满血版电商批量生产模特工作流 V1.0_2051270382862254081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_773
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json、音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json、音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json、音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最新G image2  电商服装多视角模特主图一键生成_2090781182903541761.json、图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2060897927165468674.json、图片生成/图生图/最新G image2 图生图工作流 V1.0_2046750923770302465.json、图片生成/文生图/最新G image2 官方满血版电商批量生产模特工作流 V1.0_2051270382862254081.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudioMP3`
+- `GuHaiAutoImageSplit`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
+- `JjkText` —— 3/4 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 3/4 个有
+- `easy promptConcat` —— 3/4 个有
+- `Text` —— 2/4 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/4 个有
 
 ## 典型参数
 

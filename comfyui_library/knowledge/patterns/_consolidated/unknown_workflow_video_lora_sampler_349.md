@@ -1,76 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_349
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.5815
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
+frequency: 7
+level: strong
+coverage: 0.918
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageConcanate, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json, 视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json, 视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json, 视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json, 视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
+members: [视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940674.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json, 视频生成/图生视频/【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.json, 视频生成/图生视频/（官方版）Wan Fun Control深度控制IP2V动作复刻V1_1956389723734507522.json, 视频生成/图生视频/（官方版）视频风格迁移Wan Fun Control线稿IP2V动作复刻V1_1956395513753030657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_349
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json、视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json、视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json、视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json、视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json、视频生成/图生视频/(官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940674.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json、视频生成/图生视频/【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
+- `ImageConcanate`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/6 个有
-- `GetNode` —— 4/6 个有
-- `LTXVAddGuideMulti` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `llama_cpp_instruct_adv` —— 2/6 个有
-- `llama_cpp_model_loader` —— 2/6 个有
-- `llama_cpp_parameters` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
+- `CR Prompt Text` —— 6/7 个有
+- `JWInteger` —— 6/7 个有
+- `PDIMAGE_LongerSize` —— 6/7 个有
+- `CreateVideo` —— 4/7 个有
+- `GetVideoComponents` —— 4/7 个有
+- `LoadVideo` —— 4/7 个有
+- `SaveVideo` —— 4/7 个有
+- `Wan22FunControlToVideo` —— 4/7 个有
+- `Canny` —— 3/7 个有
+- `SaveImage` —— 3/7 个有
+- `WanFunInpaintToVideo` —— 3/7 个有
+- `DWPreprocessor` —— 2/7 个有
+- `DepthAnything_V2` —— 1/7 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 145 | 145 - 241 | 6 | 74% |
-| 高度 | 24 | 24 - 50 | 6 | 62% |
+| 采样步数 | fixed | - | 7 | 86% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -78,5 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 145，观测区间 145 - 241，6 个样本
-- 高度 中位数 24，观测区间 24 - 50，6 个样本
+- 采样步数 最常用 fixed，7 个样本，一致性 86%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

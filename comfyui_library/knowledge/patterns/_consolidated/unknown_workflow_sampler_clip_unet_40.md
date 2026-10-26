@@ -1,95 +1,82 @@
 ---
 name: unknown_workflow_sampler_clip_unet_40
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.891765
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 18
+level: strong
+coverage: 0.836444
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 商业级人像精修｜超强一致性_2085535726921404417.json, 图片生成/图生图/Flux2 Klein_转精致3D建模风格_2041871546448351234.json, 图片生成/图生图/Flux2 Klein_转精致3D建模风格_2042590574431182849.json, 图片生成/图生图/Flux2 Sun Direction LoRA 精确控制‌图片光影_2087880030058795010.json, 图片生成/图生图/Flux2 klein 单图编辑_2062060544747728897.json, 图片生成/图生图/Flux2 klein 双图编辑_2062063724688658433.json, 图片生成/图生图/Flux2 klein 图生图+高清放大_2062043788545191938.json, 图片生成/图生图/Flux2 klein 多图编辑_2062073276687540225.json, 图片生成/图生图/Flux2+Klein9b全能图像编辑：超强一致性全能图像模型_2031926623477436417.json, 图片生成/图生图/Flux2_Klein_商业级人像精修｜超强一致性_2085908338545614849.json, 图片生成/图生图/Flux2_Klein_商业级人像精修｜超强一致性_2085926483779997698.json, 图片生成/图生图/Flux2_klein_图生图+高清放大_2072851483212734466.json, 图片生成/图生图/flux2洗图+放大_2101535680026464257.json, 图片生成/图生图/klein_SU模型图直接渲染效果图+高清放大_2015800051087450114.json, 图片生成/图生图/klein（黑兽BFS）换脸_2039927828656951298.json, 图片生成/图生图/klein（黑兽BFS）换脸_2052845813335904258.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein CN+提示词洗图+Z image修复+TTP&seed VR2放大_2017033094146039809.json]
+members: [视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json, 视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json, 视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json, 视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json, 视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json, 视频生成/图生视频/ltx2.5图生视频_2087607964956979202.json, 视频生成/图生视频/video_ltx2_5_i2v-comfyui_2087443808706457602.json, 视频生成/图生视频/video_ltx2_5_i2v_2087366084356820993.json, 视频生成/图生视频/【开源】LTX2.5 图生视频_2087455802314547201.json, 视频生成/图生视频/图生视频  极速  LTX2.5 音画同出_2087530924060798978.json, 视频生成/图生视频/极速图生视频音画同出   LTX2.5_2095738668177780738.json, 视频生成/文生视频/A-8 LTX-2.5 文生视频（T2V）· 音画同步生成_2087369134014291970.json, 视频生成/文生视频/A-8_LTX-2.5_文生视频T2V·_音画同步生成_2104390729396211714.json, 视频生成/文生视频/LTX-2.5 文生视频_2089155568840830977.json, 视频生成/文生视频/LTX-2.5_文生视频T2V·_音画同步生成_2102690657440718849.json, 视频生成/文生视频/LTX-2.5_文生视频T2V·_音画同步生成_2104492526324510722.json, 视频生成/文生视频/LTX2.5 二采高清（图生+文生视频）_2087733249475956738.json, 视频生成/文生视频/LTX2.5 视频生成 I 提示词强化_2087468290628214785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_40
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 商业级人像精修｜超强一致性_2085535726921404417.json、图片生成/图生图/Flux2 Klein_转精致3D建模风格_2041871546448351234.json、图片生成/图生图/Flux2 Klein_转精致3D建模风格_2042590574431182849.json、图片生成/图生图/Flux2 Sun Direction LoRA 精确控制‌图片光影_2087880030058795010.json、图片生成/图生图/Flux2 klein 单图编辑_2062060544747728897.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json、视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json、视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json、视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json、视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CFGGuider`
+全部 18 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LoadImage`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVDualCFGGuider`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 16/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 15/17 个有
-- `EmptyFlux2LatentImage` —— 14/17 个有
-- `Image Comparer (rgthree)` —— 12/17 个有
-- `SeedVR2LoadDiTModel` —— 12/17 个有
-- `SeedVR2LoadVAEModel` —— 12/17 个有
-- `SeedVR2VideoUpscaler` —— 12/17 个有
-- `GetImageSize` —— 10/17 个有
-- `CR Text` —— 9/17 个有
-- `ImageScaleToTotalPixels` —— 9/17 个有
-- `LoraLoaderModelOnly` —— 9/17 个有
-- `easy int` —— 7/17 个有
-- `GetImageSize+` —— 6/17 个有
-- `Anything Everywhere` —— 5/17 个有
-- `easy cleanGpuUsed` —— 4/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/17 个有
-- `Fast Groups Muter (rgthree)` —— 3/17 个有
-- `ImageCASharpening+` —— 3/17 个有
-- `ImageResize+` —— 3/17 个有
-- `ImageScaleBy` —— 3/17 个有
-- `Int` —— 3/17 个有
-- `PreviewImage` —— 3/17 个有
-- `TTP_Image_Assy` —— 3/17 个有
-- `TTP_Image_Tile_Batch` —— 3/17 个有
-- `TTP_Tile_image_size` —— 3/17 个有
-- `easy showAnything` —— 3/17 个有
-- `Any Switch (rgthree)` —— 1/17 个有
-- `CannyEdgePreprocessor` —— 1/17 个有
-- `DWPreprocessor` —— 1/17 个有
-- `DepthAnythingV2Preprocessor` —— 1/17 个有
-- `GetNode` —— 1/17 个有
-- `KSamplerAdvanced` —— 1/17 个有
-- `ModelSamplingAuraFlow` —— 1/17 个有
-- `PreviewAny` —— 1/17 个有
-- `PrimitiveFloat` —— 1/17 个有
-- `RunningHub Deepcleaner` —— 1/17 个有
-- `SetNode` —— 1/17 个有
-- `SphereLightNode` —— 1/17 个有
-- `llama_cpp_instruct_adv` —— 1/17 个有
-- `llama_cpp_model_loader` —— 1/17 个有
-- `llama_cpp_parameters` —— 1/17 个有
+- `ComfySwitchNode` —— 17/18 个有
+- `PrimitiveBoolean` —— 17/18 个有
+- `PrimitiveStringMultiline` —— 17/18 个有
+- `ResolutionSelector` —— 17/18 个有
+- `LTXVLatentUpsampler` —— 16/18 个有
+- `LatentUpscaleModelLoader` —— 16/18 个有
+- `PreviewAny` —— 15/18 个有
+- `CreateVideo` —— 14/18 个有
+- `SaveVideo` —— 14/18 个有
+- `LTXVImgToVideoInplace` —— 13/18 个有
+- `LoadImage` —— 13/18 个有
+- `ResizeImageMaskNode` —— 13/18 个有
+- `LTXVPreprocess` —— 12/18 个有
+- `VHS_VideoCombine` —— 9/18 个有
+- `ImageFromBatch` —— 5/18 个有
+- `SaveAudio` —— 5/18 个有
+- `SaveImage` —— 5/18 个有
+- `ImageResizeKJv2` —— 2/18 个有
+- `PurgeVRAM_UTK` —— 2/18 个有
+- `StringConcatenate` —— 2/18 个有
+- `JjkText` —— 1/18 个有
+- `LTX2AttentionTunerPatch` —— 1/18 个有
+- `PathchSageAttentionKJ` —— 1/18 个有
+- `Text` —— 1/18 个有
+- `easy cleanGpuUsed` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 1 | 100% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | euler | - | 1 | 100% |
-| 重绘幅度 | beta57 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 18 | 100% |
+| 高度 | 25 | 24 - 25 | 18 | 99% |
 
 ## 常见问题
 
@@ -97,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，18 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，18 个样本，取值集中（一致性 99%）

@@ -3,57 +3,56 @@ name: image_to_image_lora_sampler_unet_158
 type: Image To Image
 frequency: 4
 level: strong
-coverage: 0.954
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.75425
+common_nodes: [CLIPLoader, EmptySD3LatentImage, ImageScaleToTotalPixels, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/成图以后再次bfs edit qwen 2511换脸_2034920099492143105.json, 图片生成/图生图/简单极速图片去水印_2027576063118811138.json, 图片生成/图生图/🔥Qwen Image Edit多角度相机控制：拖拽手柄即可生成96种摄像机角度_2010767191389507586.json, 图片生成/文生图/可视化多角度摄像头控制2511_2010974579350577153.json]
+members: [图片生成/图生图/krea2-风格扩展流_2107466786307403778.json, 图片生成/图生图/krea2_identity_edit_单图双图编辑_2080481946932695041.json, 图片生成/图生图/krea2_identity_edit_单图双图编辑_2080938734081626114.json, 视频生成/文生视频/Krea2-单图编辑_完美一致性_2089920204829716481.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_158
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/成图以后再次bfs edit qwen 2511换脸_2034920099492143105.json、图片生成/图生图/简单极速图片去水印_2027576063118811138.json、图片生成/图生图/🔥Qwen Image Edit多角度相机控制：拖拽手柄即可生成96种摄像机角度_2010767191389507586.json、图片生成/文生图/可视化多角度摄像头控制2511_2010974579350577153.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/krea2-风格扩展流_2107466786307403778.json、图片生成/图生图/krea2_identity_edit_单图双图编辑_2080481946932695041.json、图片生成/图生图/krea2_identity_edit_单图双图编辑_2080938734081626114.json、视频生成/文生视频/Krea2-单图编辑_完美一致性_2089920204829716481.json）
 
 - **类型**：Image To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGNorm`
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
+- `EmptySD3LatentImage`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `QwenMultiangleCameraNode` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `RH_Nano_Banana_Image2Image` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `SeargePreviewImage` —— 1/4 个有
-- `easy promptLine` —— 1/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `GetImageSize+` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `JoinStrings` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
+- `SeedNode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 4 | 65% |
+| 采样步数 | 10 | 10 - 10 | 4 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
@@ -61,15 +60,12 @@ source: knowledge_consolidation
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，4 个样本
+- 采样步数 中位数 10，观测区间 10 - 10，4 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

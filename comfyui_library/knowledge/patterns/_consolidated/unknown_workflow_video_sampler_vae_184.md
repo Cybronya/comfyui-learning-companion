@@ -3,54 +3,67 @@ name: unknown_workflow_video_sampler_vae_184
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.971
-common_nodes: [BasicMath, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, StringConcatenate, ToFloat, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.906
+common_nodes: [CR Text, DF_Integer, ImageResizeKJ, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, ShowText|pysssss, SimpleMath+, StringToInt, Text Multiline, TextSwitchCase, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352449.json, 视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧+Multitalk口型视频生成_2033775049777352706.json]
+members: [视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json, 视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_184
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352449.json、视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧+Multitalk口型视频生成_2033775049777352706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json、视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicMath`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `FloatConstant`
-- `INTConstant`
-- `LoadAudio`
+- `CR Text`
+- `DF_Integer`
+- `ImageResizeKJ`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `StringConcatenate`
-- `ToFloat`
-- `ToInt`
+- `RH_LLMAPI_NODE`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `StringToInt`
+- `Text Multiline`
+- `TextSwitchCase`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `DepthAnything_V2` —— 1/2 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
 
 ## 典型参数
 

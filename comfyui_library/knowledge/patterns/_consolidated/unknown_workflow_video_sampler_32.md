@@ -3,49 +3,53 @@ name: unknown_workflow_video_sampler_32
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.688
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, Fast Groups Muter (rgthree), FlashVSRNode, ImageConcanate, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VHS_VideoInfoLoaded, easy compare, easy ifElse, easy showAnything]
+coverage: 1
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedance2_0, Comfly_api_set, CreateVideo, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageConcanate, ImageFromBatch+, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json, 视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json]
+members: [视频生成/图生视频/(最高性价比方案)Seedance2.0 Fast 480P+FlashVSR多参生视频-贞贞工坊_2043194188241571841.json, 视频生成/图生视频/(最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清化（贞贞的AI工坊）_2043642349795942401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json、视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/(最高性价比方案)Seedance2.0 Fast 480P+FlashVSR多参生视频-贞贞工坊_2043194188241571841.json、视频生成/图生视频/(最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清化（贞贞的AI工坊）_2043642349795942401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `Fast Groups Muter (rgthree)`
-- `FlashVSRNode`
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedance2_0`
+- `Comfly_api_set`
+- `CreateVideo`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `GetVideoComponents`
 - `ImageConcanate`
-- `ImageResizeKJv2`
-- `Int`
+- `ImageFromBatch+`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MaskToImage`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
+- `SaveVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `VHS_VideoInfoLoaded`
-- `easy compare`
-- `easy ifElse`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.51458e+09 | - | 2 | 69% |
+| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | 3.5 | - | 2 | 100% |
+| 重绘幅度 | 11 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -53,4 +57,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 1.51458e+09，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.98785e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

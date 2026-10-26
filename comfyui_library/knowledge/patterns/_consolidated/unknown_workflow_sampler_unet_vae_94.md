@@ -2,79 +2,81 @@
 name: unknown_workflow_sampler_unet_vae_94
 type: Unknown Workflow
 frequency: 10
-level: strong
-coverage: 0.8808
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.8748
+common_nodes: [CLIPLoader, CR Prompt Text, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen image 2.1-图生图-V1_2101853390769840130.json, 图片生成/图生图/Qwen image 2.1-图生图-角色四视图-V1_2101831881938522113.json, 图片生成/图生图/Qwen image 2.1-多宫格分镜图-V2.2_2101933499191222274.json, 图片生成/图生图/Qwen image 2.1图片编辑_2101946565576454146.json, 图片生成/图生图/Qwen image 2.1图片编辑_2101981525330976770.json, 图片生成/图生图/Qwen image 2.1图片编辑_2102013628437319682.json, 图片生成/图生图/Qwen image 2.1图片编辑_2102212076977606658.json, 图片生成/图生图/Qwen image 2.1图片编辑_2102302751672848386.json, 图片生成/图生图/QwenImage2.1-图像编辑换头_2101872643862523905.json, 图片生成/图生图/Qwenimage2.1 图像编辑工作流_2101869615268847617.json]
+members: [图片生成/图生图/Qwen Image 2.1 Fix修复图像编辑_2103711535771250690.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2109541250159435778.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112360202447187970.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112365438872154113.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 汉服美学_2110739133755912194.json, 图片生成/文生图/Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2114257373773778946.json, 图片生成/文生图/Qwen-Image-2.1-Turbo_汉服美学_2114258449633726466.json, 数字人/数字人/（8步lora）Qwen Image 2.1 PE 图像编辑_2104628708102467585.json, 视频生成/图生视频/Qwen_Image_2.1_PE_图像编辑_2104045367338823681.json, 视频生成/图生视频/Qwen_Image_2.1_参考人物姿势_2102963142430126082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_94
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1-图生图-V1_2101853390769840130.json、图片生成/图生图/Qwen image 2.1-图生图-角色四视图-V1_2101831881938522113.json、图片生成/图生图/Qwen image 2.1-多宫格分镜图-V2.2_2101933499191222274.json、图片生成/图生图/Qwen image 2.1图片编辑_2101946565576454146.json、图片生成/图生图/Qwen image 2.1图片编辑_2101981525330976770.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 Fix修复图像编辑_2103711535771250690.json、图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2109541250159435778.json、图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112360202447187970.json、图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112365438872154113.json、图片生成/文生图/Qwen-Image-2.1-Turbo 汉服美学_2110739133755912194.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfySwitchNode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
 - `ResolutionSelector`
 - `SaveImage`
 - `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `ComfySwitchNode` —— 9/10 个有
 - `QwenImage21Cache` —— 9/10 个有
-- `easy showAnything` —— 9/10 个有
-- `BatchImagesNode` —— 8/10 个有
-- `SaveImageAdvanced` —— 7/10 个有
-- `ImageConcatMulti` —— 4/10 个有
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `StringConcatenate` —— 4/10 个有
-- `PrimitiveBoolean` —— 2/10 个有
-- `ZNGB_ImageBatchMulti` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `GetImageSize` —— 1/10 个有
-- `NanFengH3LimitImageLongEdge` —— 1/10 个有
-- `RHLLMChatNode` —— 1/10 个有
-- `Text` —— 1/10 个有
-- `TextInput_` —— 1/10 个有
+- `QwenPERewriteT8` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `LoraLoaderModelOnly` —— 7/10 个有
+- `Color Grading JK` —— 6/10 个有
+- `LoadImage` —— 6/10 个有
+- `PreviewImage` —— 4/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `EmptyImage` —— 2/10 个有
+- `AIO_Preprocessor` —— 1/10 个有
+- `APG` —— 1/10 个有
+- `FreSca` —— 1/10 个有
+- `JWDatetimeString` —— 1/10 个有
+- `Lora Loader Stack (rgthree)` —— 1/10 个有
+- `SeedNode` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 50 | 30 - 50 | 10 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
+| 宽度 | 1024 | 1024 - 1200 | 10 | 95% |
+| 高度 | 1024 | 1024 - 1600 | 10 | 84% |
+| 采样步数 | 8 | 7 - 40 | 10 | 13% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 10 | 50% |
+| 采样算法 | euler | - | 10 | 90% |
 | 调度器 | simple | - | 10 | 90% |
 | 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 10 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 30 - 50，10 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 1024 - 1200，10 个样本，取值集中（一致性 95%）
+- 高度 中位数 1024，观测区间 1024 - 1600，10 个样本，取值集中（一致性 84%）
+- 采样步数 中位数 8，观测区间 7 - 40，10 个样本，取值分散，一致性仅 13%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，10 个样本
+- 采样算法 最常用 euler，10 个样本，一致性 90%
 - 调度器 最常用 simple，10 个样本，一致性 90%
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
+- 高发问题（7/10 个样本）：Steps较低可能导致细节不足

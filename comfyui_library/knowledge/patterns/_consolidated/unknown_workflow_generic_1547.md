@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1547
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [CR Text, LoadImage, SaveVideo, SetNode]
+coverage: 0.95
+common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json, 视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json]
+members: [图片生成/图生图/果味GW-图像高清修复_2017936048059322369.json, 图片生成/图生图/王泽荣耀-全能生图PRO_2046409071376470018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1547
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json、视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/果味GW-图像高清修复_2017936048059322369.json、图片生成/图生图/王泽荣耀-全能生图PRO_2046409071376470018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `ImageConcanate`
 - `LoadImage`
-- `SaveVideo`
-- `SetNode`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `FluxKontextImageScale` —— 1/2 个有
 
 ## 典型参数
 

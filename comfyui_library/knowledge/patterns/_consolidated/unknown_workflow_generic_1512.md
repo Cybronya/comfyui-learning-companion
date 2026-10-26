@@ -3,33 +3,39 @@ name: unknown_workflow_generic_1512
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7735
-common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.9475
+common_nodes: [DF_Get_image_size, Fast Groups Bypasser (rgthree), ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHub DreamO, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json, 图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json]
+members: [图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json, "图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1512
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json、图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json、图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartImageG2TextToImage`
+- `DF_Get_image_size`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RunningHub DreamO`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GenericAPILLMNode` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

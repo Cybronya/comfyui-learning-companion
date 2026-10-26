@@ -1,49 +1,52 @@
 ---
 name: unknown_workflow_video_sampler_checkpoint_9
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.767
-common_nodes: [Anything Everywhere, Anything Everywhere3, CM_IntToFloat, CR Float To Integer, ImageCASharpening+, ImageResize+, JjkText, LoadAudio, LoadImage, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SparkTTSClone, VHS_VideoCombine, easy anythingIndexSwitch, easy int, easy mathInt, easy showAnything, unCLIPCheckpointLoader]
+coverage: 0.956
+common_nodes: [FloatProcess, GenerationParameters, ImageOnlyCheckpointLoader, LayerUtility: PurgeVRAM, LoadAudio, LoadFloatModels, LoadImage, MultiLineLyrics, MultiLinePromptACES, Note Plus (mtb), Note _O, PrimitiveFloat, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/图片开口说话_1935006990957486081.json, 视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json, 视频生成/图生视频/爆改动画侍女图_1930578408680640513.json]
+members: [音频生成/音频生成/AceStep声音、音乐局部编辑+数字人V1_1920523899745013761.json, 音频生成/音频生成/AceStep声音、音乐局部重绘+数字人V1_1920523940387819522.json, 音频生成/音频生成/AceStep声音、音乐扩展+数字人V1_1920523923002163201.json, 音频生成/音频生成/AceStep音乐生成稳定版+数字人V1_1920523877670391809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_9
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图片开口说话_1935006990957486081.json、视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json、视频生成/图生视频/爆改动画侍女图_1930578408680640513.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AceStep声音、音乐局部编辑+数字人V1_1920523899745013761.json、音频生成/音频生成/AceStep声音、音乐局部重绘+数字人V1_1920523940387819522.json、音频生成/音频生成/AceStep声音、音乐扩展+数字人V1_1920523923002163201.json、音频生成/音频生成/AceStep音乐生成稳定版+数字人V1_1920523877670391809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `Anything Everywhere3`
-- `CM_IntToFloat`
-- `CR Float To Integer`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `JjkText`
+全部 4 个 workflow 都包含：
+- `FloatProcess`
+- `GenerationParameters`
+- `ImageOnlyCheckpointLoader`
+- `LayerUtility: PurgeVRAM`
 - `LoadAudio`
+- `LoadFloatModels`
 - `LoadImage`
-- `RH_GetAudioDuration`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `Note Plus (mtb)`
+- `Note _O`
+- `PrimitiveFloat`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
 - `SaveAudio`
-- `SparkTTSClone`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy mathInt`
-- `easy showAnything`
-- `unCLIPCheckpointLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `ACEStepEdit` —— 1/4 个有
+- `ACEStepExtend` —— 1/4 个有
+- `ACEStepGen` —— 1/4 个有
+- `ACEStepRepainting` —— 1/4 个有
+- `TrimAudio` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,83 +1,99 @@
 ---
 name: unknown_workflow_lora_sampler_clip_168
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.883
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy setNode]
+coverage: 0.7165
+common_nodes: [BasicScheduler, BerniniPromptEnhancer, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, CreateVideo, Display Any (rgthree), DualCLIPLoader, GetNode, GetVideoComponents, ImageScaleToMaxDimension, ImpactSwitch, JWInteger, KSamplerAdvanced, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchMemoryCleaner, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, StringReplace, Text, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VAELoaderKJ, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json, 图片生成/图生图/Klein极速全自动_2065004946201866242.json, 图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json]
+members: [视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_168
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json、图片生成/图生图/Klein极速全自动_2065004946201866242.json、图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniPromptEnhancer`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `CreateVideo`
+- `Display Any (rgthree)`
+- `DualCLIPLoader`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageScaleToMaxDimension`
+- `ImpactSwitch`
+- `JWInteger`
+- `KSamplerAdvanced`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVideoMask`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `ModelPatchMemoryCleaner`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
+- `SetNode`
+- `StringReplace`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `easy setNode`
+- `VAELoaderKJ`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `Anything Everywhere3` —— 2/3 个有
-- `AutoCropFaces` —— 2/3 个有
-- `DrawMaskOnImage` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LayerMask: MaskGrow` —— 2/3 个有
-- `LayerMask: PersonMaskUltra V2` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `easy getNode` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `NuiKr.OpenPoseEditor` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `BerniniConditioningReferenceSlots` —— 3/4 个有
+- `FrameInterpolate` —— 3/4 个有
+- `FrameInterpolationModelLoader` —— 3/4 个有
+- `HAIGC_VideoLastFrame` —— 3/4 个有
+- `RTXVideoSuperResolution` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `BatchImagesNode` —— 1/4 个有
+- `BerniniConditioning` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 1 | 100% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | euler | - | 1 | 100% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 1 | 100% |
+| 宽度 | 258 | 129 - 258 | 4 | 75% |
+| 高度 | 30 | 24 - 30 | 4 | 91% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 7 | 4 - 10 | 4 | 57% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -85,4 +101,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 258，观测区间 129 - 258，4 个样本
+- 高度 中位数 30，观测区间 24 - 30，4 个样本，取值集中（一致性 91%）
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 10，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

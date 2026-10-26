@@ -2,61 +2,61 @@
 name: unknown_workflow_video_lora_sampler_277
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.973125
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo]
+level: moderate
+coverage: 0.983625
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/首尾帧SmoothMix-V2.0_1977014698942046209.json, 视频生成/图生视频/首尾帧_多帧视频生成_SmoothMix2.0_2020439963401195521.json, 视频生成/图生视频/首尾帧图生视频流畅版_2079086796184571905.json, 视频生成/图生视频/首尾帧整理版  wan2.2 wan22  图生视频   视频生成_2078764896707244034.json, 视频生成/图生视频/首尾帧整理版  wan2.2 wan22  图生视频   视频生成_2087965953232556033.json, 视频生成/图生视频/首尾帧新版本   wan2.2 wan22  图生视频   视频生成_2078441258510536706.json, 视频生成/图生视频/首尾帧视频生成_多帧视频生成_SmoothMix2.0_2020867158913323009.json, 视频生成/图生视频/首尾帧视频生成_多帧视频生成_SmoothMix2.0_2046411920428769281.json]
+members: [图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json, 图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json, 图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json, 视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json, 视频生成/图生视频/Wan2.2 图生视频一键工作流_2032825101573431298.json, 视频生成/图生视频/【VBVR+KJ】最强参考Wan2.2图生视频_分块处理低显存版_2038129014153420801.json, 视频生成/图生视频/安-Wan2.2 首尾帧频工作流_1965415363951382530.json, 视频生成/文生视频/🐳wan2.2 文生视频 超清臻享版🦋【KJ模型】_1950063356758638593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_277
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/首尾帧SmoothMix-V2.0_1977014698942046209.json、视频生成/图生视频/首尾帧_多帧视频生成_SmoothMix2.0_2020439963401195521.json、视频生成/图生视频/首尾帧图生视频流畅版_2079086796184571905.json、视频生成/图生视频/首尾帧整理版  wan2.2 wan22  图生视频   视频生成_2078764896707244034.json、视频生成/图生视频/首尾帧整理版  wan2.2 wan22  图生视频   视频生成_2087965953232556033.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json、图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json、图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json、视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json、视频生成/图生视频/Wan2.2 图生视频一键工作流_2032825101573431298.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `easy float` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `LoadImage` —— 7/8 个有
+- `WanVideoImageToVideoEncode` —— 7/8 个有
+- `WanVideoLoraSelect` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `SimpleMath+` —— 5/8 个有
+- `ImpactInt` —— 4/8 个有
+- `CR Text` —— 2/8 个有
+- `Note Plus (mtb)` —— 2/8 个有
+- `WanVideoContextOptions` —— 2/8 个有
+- `WanVideoLoraSelectMulti` —— 2/8 个有
+- `easy convertAnything` —— 2/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `WanVideoEmptyEmbeds` —— 1/8 个有
+- `WanVideoTorchCompileSettings` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 50% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 50%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

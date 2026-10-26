@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_411
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.826167
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.753
+common_nodes: [DramaBoxLoader, DramaBoxTTS, JjkText, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json, 图片生成/图生图/Seedvr高清放大_1993206227960266753.json, 图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json, 图片生成/图生图/seedvr2高清放大_1959466074016264193.json, 图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json, 图片生成/图生图/放大_2081305934164480002.json]
+members: [音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2056283924774612993.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2057834156830322690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_411
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json、图片生成/图生图/Seedvr高清放大_1993206227960266753.json、图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json、图片生成/图生图/seedvr2高清放大_1959466074016264193.json、图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 7 个 workflow 都包含：
+- `DramaBoxLoader`
+- `DramaBoxTTS`
+- `JjkText`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `SeedVR2ExtraArgs` —— 4/6 个有
-- `ImageScaleBy` —— 3/6 个有
-- `GetNode` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `DramaBoxAudioPreview` —— 6/7 个有
+- `DramaBoxVoiceClone` —— 4/7 个有
+- `LoadAudio` —— 4/7 个有
+- `PrimitiveFloat` —— 2/7 个有
 
 ## 典型参数
 

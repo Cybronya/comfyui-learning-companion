@@ -3,85 +3,86 @@ name: text_to_image_lora_sampler_clip_422
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.9205
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, RH_Nano_Banana2_Image2Image, SaveImage, Text, Text Concatenate, TextBox1, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.831
+common_nodes: [AutoCropFaces, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), Image Paste Crop, ImageAndMaskPreview, ImageConcanate, ImageFlip+, ImageResizeKJv2, ImpactInt, KSampler, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageRemoveAlpha, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, Seed (rgthree), TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键生成对镜展示图-阿浩_2037097638784409602.json, 图片生成/图生图/一键生成电梯女装对镜自拍带货图片抖音小红书女装图文带货涨粉_2039909522357100545.json, 图片生成/图生图/换装强度拉满完全产品一致性_2039982905287516162.json, 图片生成/文生图/即梦（4.0-4.5-5.0）图生图_文生图_2029382803242098690.json]
+members: [图片生成/图生图/2026Z-image人物换脸，超真实两种预览图像_2021387892832079874.json, 图片生成/图生图/Z-image_ 图生图 + 换脸 2025-12-01_1995429280454729730.json, 图片生成/图生图/图片通过文生图换脸_1999859296542261249.json, 图片生成/文生图/小钢炮最强Z-image 文生图换脸_1994240289994899457.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_422
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键生成对镜展示图-阿浩_2037097638784409602.json、图片生成/图生图/一键生成电梯女装对镜自拍带货图片抖音小红书女装图文带货涨粉_2039909522357100545.json、图片生成/图生图/换装强度拉满完全产品一致性_2039982905287516162.json、图片生成/文生图/即梦（4.0-4.5-5.0）图生图_文生图_2029382803242098690.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2026Z-image人物换脸，超真实两种预览图像_2021387892832079874.json、图片生成/图生图/Z-image_ 图生图 + 换脸 2025-12-01_1995429280454729730.json、图片生成/图生图/图片通过文生图换脸_1999859296542261249.json、图片生成/文生图/小钢炮最强Z-image 文生图换脸_1994240289994899457.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AILab_QwenVL`
+- `AutoCropFaces`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
+- `Image Paste Crop`
+- `ImageAndMaskPreview`
+- `ImageConcanate`
+- `ImageFlip+`
+- `ImageResizeKJv2`
+- `ImpactInt`
 - `KSampler`
+- `LayerMask: SegformerB2ClothesUltra`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `QwenEditAdaptiveLongestEdge`
-- `QwenEditConfigPreparer`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Text`
-- `Text Concatenate`
-- `TextBox1`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `Seed (rgthree)`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
 - `CR Text` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `RH_Jimeng4_Image2Image` —— 2/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
-- `Repeater|pysssss` —— 2/4 个有
-- `Label (rgthree)` —— 1/4 个有
+- `FaceAlign` —— 2/4 个有
+- `FaceAnalysisModels` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 768 | 4 | 100% |
-| 高度 | 1344 | 1344 - 1344 | 4 | 100% |
-| 采样步数 | 28 | 28 - 28 | 4 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 100% |
-| 重绘幅度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
+| 宽度 | 720 | 720 - 720 | 4 | 100% |
+| 高度 | 1280 | 1280 - 1280 | 4 | 100% |
+| 采样步数 | 9 | 9 - 9 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_2s | - | 4 | 100% |
+| 调度器 | bong_tangent | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 768，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1344，观测区间 1344 - 1344，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 28，观测区间 28 - 28，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 720，观测区间 720 - 720，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，观测区间 1280 - 1280，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 9，观测区间 9 - 9，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，4 个样本，一致性 100%
+- 调度器 最常用 bong_tangent，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

@@ -1,90 +1,120 @@
 ---
 name: unknown_workflow_video_lora_sampler_392
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8986
-common_nodes: [CLIPTextEncode, CM_BoolToInt, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadImage, Lora Loader Stack (rgthree), PathchSageAttentionKJ, PreviewImage, SamplerCustom, SimpleMath+, Switch image [Crystools], UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy isNone, easy showAnything]
+frequency: 6
+level: moderate
+coverage: 0.568
+common_nodes: [Any Switch (rgthree), BlockifyMask, Bookmark (rgthree), CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageBatch, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageToMask, Label (rgthree), LayerMask: DrawBBoxMaskV2, LayerMask: MaskGrow, LayerMask: ObjectDetectorMask, LayerMask: SegformerB2ClothesUltra, LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PowerVisionObjectDetection, PowerVisionQwenModelLoader, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, RepeatImageBatch, ResizeMask, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, StringConcatenate, Switch any [Crystools], ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy sam3ModelLoader, easy sam3VideoSegmentation, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/ltx23-lock 多人对话_2105153996301365249.json, 视频生成/图生视频/LTX2.3多人对话_2055168345057570818.json, 视频生成/图生视频/LTX2.3多人对话_2056562094497161218.json, 视频生成/文生视频/LTX2.3 Single Sample V1.0（文生视频_图生视频_首尾帧视频）_2052259370225942529.json, 视频生成/文生视频/LTX2.3 Single Sample V2.0（文生视频_图生视频_首尾帧视频_数字人对口型）_2052670475729424385.json]
+members: [数字人/数字人/V5.2-PRO（遮罩20 开启人脸检测）_2034257190483140609.json, 数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json, 视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json, 视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json, 视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json, 视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_392
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/ltx23-lock 多人对话_2105153996301365249.json、视频生成/图生视频/LTX2.3多人对话_2055168345057570818.json、视频生成/图生视频/LTX2.3多人对话_2056562094497161218.json、视频生成/文生视频/LTX2.3 Single Sample V1.0（文生视频_图生视频_首尾帧视频）_2052259370225942529.json、视频生成/文生视频/LTX2.3 Single Sample V2.0（文生视频_图生视频_首尾帧视频_数字人对口型）_2052670475729424385.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/V5.2-PRO（遮罩20 开启人脸检测）_2034257190483140609.json、数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json、视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json、视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json、视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CM_BoolToInt`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+全部 6 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BlockifyMask`
+- `Bookmark (rgthree)`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageBatch`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
+- `ImageToMask`
+- `Label (rgthree)`
+- `LayerMask: DrawBBoxMaskV2`
+- `LayerMask: MaskGrow`
+- `LayerMask: ObjectDetectorMask`
+- `LayerMask: SegformerB2ClothesUltra`
+- `LayerUtility: CropByMask V2`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `PathchSageAttentionKJ`
+- `LoadWanVideoT5TextEncoder`
+- `Mask Fill Holes`
+- `MaskToImage`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `PowerVisionObjectDetection`
+- `PowerVisionQwenModelLoader`
 - `PreviewImage`
-- `SamplerCustom`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RH_Translator`
+- `RMBG`
+- `RepeatImageBatch`
+- `ResizeMask`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
 - `SimpleMath+`
-- `Switch image [Crystools]`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `StringConcatenate`
+- `Switch any [Crystools]`
+- `ToBinaryMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy isNone`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy compare`
+- `easy ifElse`
+- `easy int`
+- `easy isMaskEmpty`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy seed`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 3/5 个有
-- `ManualSigmas` —— 3/5 个有
-- `VisualizeSigmasKJ` —— 3/5 个有
-- `CreateVideo` —— 2/5 个有
-- `DualCLIPLoaderGGUF` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `LTXVAudioVAEEncode` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `NormalizeAudioLoudness` —— 2/5 个有
-- `PlaySound|pysssss` —— 2/5 个有
-- `SaveVideo` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `UnetLoaderGGUF` —— 2/5 个有
-- `VHS_SelectImages` —— 2/5 个有
-- `AudioConcat` —— 1/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `MelBandRoFormerModelLoader` —— 1/5 个有
-- `MelBandRoFormerSampler` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `SetLatentNoiseMask` —— 1/5 个有
-- `SolidMask` —— 1/5 个有
-- `TrimAudioDuration` —— 1/5 个有
+- `AddLabel` —— 4/6 个有
+- `ImpactIfNone` —— 4/6 个有
+- `Note Plus (mtb)` —— 4/6 个有
+- `PointsEditor` —— 4/6 个有
+- `easy framesEditor` —— 4/6 个有
+- `DownloadAndLoadSAM2Model` —— 2/6 个有
+- `Sam2Segmentation` —— 2/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 361 | 361 - 361 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -92,5 +122,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 361 - 361，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

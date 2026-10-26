@@ -1,47 +1,43 @@
 ---
 name: unknown_workflow_video_upscale_vae_4
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.847333
-common_nodes: [CM_FloatToInt, CM_IntToFloat, Fast Groups Bypasser (rgthree), FlashVSRNode, ImageScaleToTotalPixels, RTXVideoSuperResolution, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
+frequency: 2
+level: weak
+coverage: 0.8535
+common_nodes: [FlashVSRNode, GetImageRangeFromBatch, Image Comparer (rgthree), Int, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/【极速视频放大】FlashVR 工业级短视频生产流水线视频放大_2032402915746390017.json, 视频生成/图生视频/【视频放大——遗珍重塑】SeedVR 语义级超清视频放大修复大片_2033193391764283393.json, 视频生成/图生视频/【视频放大硬件之光】NVIDIA RTX VSR 底层硬件级视界增强视频放大_2033193385128894465.json]
+members: [图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json, 图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【极速视频放大】FlashVR 工业级短视频生产流水线视频放大_2032402915746390017.json、视频生成/图生视频/【视频放大——遗珍重塑】SeedVR 语义级超清视频放大修复大片_2033193391764283393.json、视频生成/图生视频/【视频放大硬件之光】NVIDIA RTX VSR 底层硬件级视界增强视频放大_2033193385128894465.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json、图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CM_FloatToInt`
-- `CM_IntToFloat`
-- `Fast Groups Bypasser (rgthree)`
+全部 2 个 workflow 都包含：
 - `FlashVSRNode`
-- `ImageScaleToTotalPixels`
-- `RTXVideoSuperResolution`
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `Int`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 2/3 个有
-- `ShowAnything|Mie` —— 2/3 个有
-- `easy ifElse` —— 1/3 个有
 
 ## 典型参数
 
@@ -53,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

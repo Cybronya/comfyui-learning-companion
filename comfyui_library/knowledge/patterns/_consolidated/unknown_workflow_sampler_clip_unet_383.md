@@ -2,57 +2,65 @@
 name: unknown_workflow_sampler_clip_unet_383
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.91
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.649
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, FluxKontextMultiReferenceLatentMethod, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json, 图片生成/文生图/z_image二采_2093223736949432322.json, 图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json]
+members: [图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json, 图片生成/文生图/yxmys-遗物生成_2039166117398192130.json, 图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_383
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json、图片生成/文生图/z_image二采_2093223736949432322.json、图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json、图片生成/文生图/yxmys-遗物生成_2039166117398192130.json、图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxKontextMultiReferenceLatentMethod`
+- `KSamplerSelect`
+- `ModelSamplingAuraFlow`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentColorMatch` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `AV_LoraLoader` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `MultiTextConcatenate` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `ReferenceLatent` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 10 | 3 - 20 | 3 | 37% |
-| 采样算法 | 1 | 1 - 3 | 3 | 43% |
-| 调度器 | gradient_estimation | - | 3 | 33% |
-| 重绘幅度 | sgm_uniform | - | 3 | 67% |
-| 宽度 | 896 | 720 - 1024 | 3 | 86% |
-| 高度 | 1152 | 1024 - 1280 | 3 | 91% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -60,11 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 3 - 20，3 个样本，取值分散，一致性仅 37%
-- 采样算法 中位数 1，观测区间 1 - 3，3 个样本，取值分散，一致性仅 43%
-- 调度器 最常用 gradient_estimation，3 个样本，一致性 33%
-- 重绘幅度 最常用 sgm_uniform，3 个样本，一致性 67%
-- 宽度 中位数 896，观测区间 720 - 1024，3 个样本，取值集中（一致性 86%）
-- 高度 中位数 1152，观测区间 1024 - 1280，3 个样本，取值集中（一致性 91%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

@@ -3,54 +3,30 @@ name: unknown_workflow_generic_1318
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.653
-common_nodes: [CR Text Input Switch (4 way), Compare, DetailTransfer, EG_ZZ_TMTX, GetImageSize+, ImageToMask, ImpactGaussianBlurMask, Int, InvertMask, JjkText, LayerColor: AutoBrightness, LayerColor: Brightness & Contrast, LayerColor: Levels, LayerFilter: SkinBeauty, LayerMask: Shadow & Highlight Mask, LayerStyle: ColorOverlay V2, LayerUtility: ColorImage, LayerUtility: ImageBlend, LayerUtility: ImageBlendAdvance V2, LayerUtility: ImageChannelSplit, LoadImage, MaskPreview+, PreviewImage, SaveImage, Unary Image Op, Whitening_Node, easy ab, 孤海-取色器]
+coverage: 0.5
+common_nodes: [JjkText, PreviewAny, RHLLMChatNode, SaveText]
 problems: []
 missing: []
-members: [图片生成/图生图/人像写真调色+美白祛油_牛奶肌_自然提亮照片_2040316631427063810.json, 图片生成/图生图/人像调色    自然提亮照片   美白祛油   牛奶肌_2028743856811941889.json]
+members: [图片生成/反推提示词/小说剧本转标准JSON预处理剧本+搭配全栈式短剧生成V4.2.1使用_2088987931473170433.json, 图片生成/反推提示词/小说剧本转标准JSON预处理剧本+搭配全栈式短剧生成使用_2097639035853434882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1318
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人像写真调色+美白祛油_牛奶肌_自然提亮照片_2040316631427063810.json、图片生成/图生图/人像调色    自然提亮照片   美白祛油   牛奶肌_2028743856811941889.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/小说剧本转标准JSON预处理剧本+搭配全栈式短剧生成V4.2.1使用_2088987931473170433.json、图片生成/反推提示词/小说剧本转标准JSON预处理剧本+搭配全栈式短剧生成使用_2097639035853434882.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Input Switch (4 way)`
-- `Compare`
-- `DetailTransfer`
-- `EG_ZZ_TMTX`
-- `GetImageSize+`
-- `ImageToMask`
-- `ImpactGaussianBlurMask`
-- `Int`
-- `InvertMask`
 - `JjkText`
-- `LayerColor: AutoBrightness`
-- `LayerColor: Brightness & Contrast`
-- `LayerColor: Levels`
-- `LayerFilter: SkinBeauty`
-- `LayerMask: Shadow & Highlight Mask`
-- `LayerStyle: ColorOverlay V2`
-- `LayerUtility: ColorImage`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageBlendAdvance V2`
-- `LayerUtility: ImageChannelSplit`
-- `LoadImage`
-- `MaskPreview+`
-- `PreviewImage`
-- `SaveImage`
-- `Unary Image Op`
-- `Whitening_Node`
-- `easy ab`
-- `孤海-取色器`
+- `PreviewAny`
+- `RHLLMChatNode`
+- `SaveText`
 
 ## 典型参数
 

@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_333
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.581429
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
+coverage: 1
+common_nodes: [RH_Doubao_Seedance_1_5_Pro, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json, 图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json, 图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json, 图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json, 图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json, 图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json]
+members: [视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004068802759434242.json, 视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json, 视频生成/图生视频/豆包 Seedance 1.5 Pro 首尾帧图生视频_2005581003802505218.json, 视频生成/文生视频/文生视频豆包+Seedance+1.5+Pro_2031924626279895041.json, 视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004066004755988481.json, 视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004402427434598402.json, 视频生成/文生视频/豆包 最新-Seedance 1.5 Pro 图生视频_2004227379792936962.json, 视频生成/文生视频/豆包1.5Pro_文生视频+音画同步_2019242735152144386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_333
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json、图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json、图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json、图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json、图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004068802759434242.json、视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json、视频生成/图生视频/豆包 Seedance 1.5 Pro 首尾帧图生视频_2005581003802505218.json、视频生成/文生视频/文生视频豆包+Seedance+1.5+Pro_2031924626279895041.json、视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004066004755988481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_Doubao_Seedream_4_5`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveImage`
-- `ShowText|pysssss`
+全部 8 个 workflow 都包含：
+- `RH_Doubao_Seedance_1_5_Pro`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 5/7 个有
-- `JWImageResizeByLongerSide` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `LoadImage` —— 4/8 个有
 
 ## 典型参数
 

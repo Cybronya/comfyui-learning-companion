@@ -1,77 +1,97 @@
 ---
 name: unknown_workflow_video_lora_sampler_184
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9133
-common_nodes: [Any To Any, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, MultiplePathsInput, PathchSageAttentionKJ, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy showAnything, wanBlockSwap]
+frequency: 11
+level: moderate
+coverage: 0.602818
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, JoinStringMulti, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SetNode, StringConcatenate, ToString, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/3图丝滑首尾帧(自动提示词)_1985339190529376257.json, 视频生成/图生视频/Comfy挑战赛10（时光的回响）-3图稳定版多帧首尾帧V4_1995446964584165378.json, 视频生成/图生视频/Qwen3 VL+3图多帧首尾帧V5_1983126528336797697.json, 视频生成/图生视频/Wan2.2三图多帧首尾帧视频（首、中、尾帧）支持Qwen3 VL_1985878683623796737.json, 视频生成/图生视频/wan2.2智能多帧_3帧效果较好_1990766383455744002.json, 视频生成/图生视频/智能多帧首尾帧 多图长视频  最新  效果较好  --骏马新程·创作新生·2026参赛工作流_2026240892415250433.json, 视频生成/图生视频/（一致性强化版-无闪烁超稳定）9图版智能多帧首尾帧V1_1987740278771658754.json, 视频生成/图生视频/（无闪烁超稳定）5图版智能多帧首尾帧V1_1987576515279958018.json, 视频生成/图生视频/（无闪烁超稳定）7图版智能多帧首尾帧V1_1987598878985883650.json, 视频生成/图生视频/（无闪烁超稳定）9图版智能多帧首尾帧V1_1987598888204963842.json]
+members: [数字人/数字人/【自用】minimaxh3首尾帧 加速版D2_2114197460557058049.json, 视频生成/图生视频/MiniMax H3 Ref2VA 自用多图参考_2092052345797570562.json, 视频生成/图生视频/MiniMax H3 参考生视频 1080P高清版-9图+3音频参考-自动提示词优化-V1.6_2086990183689445377.json, 视频生成/图生视频/MiniMax H3 参考生视频-8步加速-自动提示词优化-V2_2085675916306509826.json, 视频生成/图生视频/MiniMax H3 参考生视频-lightx2v 4步加速-自动提示词优化-V1.3_2085749432846479361.json, 视频生成/图生视频/MiniMax H3 参考生视频完美版本 1080P高清-多图+多音频参考-自动提示词优化-V1.2_2091401181330501633.json, 视频生成/图生视频/绘影 - MiniMax H3参考生视频 1080P高清版-V2_2095314550949240833.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-fl2va-bf16-720P-V2_2102641646197366785.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-fl2va-int8-720P-V2_2102641358329700353.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-ref2va-int8-720P-V2_2100107761043460098.json, 视频生成/文生视频/MiniMax H3 Ref2VA 多参考素材生视频 1080P高清版-9图+3音频参考带自动提示词_2091171246720503809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_184
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/3图丝滑首尾帧(自动提示词)_1985339190529376257.json、视频生成/图生视频/Comfy挑战赛10（时光的回响）-3图稳定版多帧首尾帧V4_1995446964584165378.json、视频生成/图生视频/Qwen3 VL+3图多帧首尾帧V5_1983126528336797697.json、视频生成/图生视频/Wan2.2三图多帧首尾帧视频（首、中、尾帧）支持Qwen3 VL_1985878683623796737.json、视频生成/图生视频/wan2.2智能多帧_3帧效果较好_1990766383455744002.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/【自用】minimaxh3首尾帧 加速版D2_2114197460557058049.json、视频生成/图生视频/MiniMax H3 Ref2VA 自用多图参考_2092052345797570562.json、视频生成/图生视频/MiniMax H3 参考生视频 1080P高清版-9图+3音频参考-自动提示词优化-V1.6_2086990183689445377.json、视频生成/图生视频/MiniMax H3 参考生视频-8步加速-自动提示词优化-V2_2085675916306509826.json、视频生成/图生视频/MiniMax H3 参考生视频-lightx2v 4步加速-自动提示词优化-V1.3_2085749432846479361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Any To Any`
+全部 11 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `JoinStringMulti`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `MultiplePathsInput`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `PurgeVRAM_UTK`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `StringConcatenate`
+- `ToString`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
 - `easy showAnything`
-- `wanBlockSwap`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 9/10 个有
-- `ImageConcatMulti` —— 9/10 个有
-- `ImageScaleBy` —— 9/10 个有
-- `Float` —— 8/10 个有
-- `GetImageRangeFromBatch` —— 6/10 个有
-- `LayerUtility: PurgeVRAM` —— 6/10 个有
-- `easy batchAnything` —— 6/10 个有
-- `RunningHub Deepcleaner` —— 4/10 个有
-- `ImageConcanate` —— 3/10 个有
-- `ImageFromBatch+` —— 3/10 个有
-- `MathExpression|pysssss` —— 3/10 个有
-- `Fast Groups Muter (rgthree)` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `Text Concatenate` —— 1/10 个有
-- `easy int` —— 1/10 个有
-- `easy positive` —— 1/10 个有
+- `H3SigmaRefiner` —— 9/11 个有
+- `MiniMaxH3SigmaShift` —— 9/11 个有
+- `ModelAttentionBackend` —— 9/11 个有
+- `ZNGB_ImageBatchMulti` —— 9/11 个有
+- `Int` —— 7/11 个有
+- `ratio_selector` —— 7/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/11 个有
+- `PDRatioSelector` —— 6/11 个有
+- `ConvertAny2Int` —— 5/11 个有
+- `LTXVConcatAVLatent` —— 5/11 个有
+- `LTXVSeparateAVLatent` —— 5/11 个有
+- `MinimaxH3LatentUpscaler3D` —— 5/11 个有
+- `SplitSigmas` —— 5/11 个有
+- `MiniMaxChunkFeedForward` —— 4/11 个有
+- `MiniMaxLowVRAMAttention` —— 4/11 个有
+- `ModelPreviewOverrideKJ` —— 4/11 个有
+- `ResolutionSelector` —— 4/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `SolAttnMiniMax` —— 3/11 个有
+- `BatchImagesNode` —— 1/11 个有
+- `ComfyNumberConvert` —— 1/11 个有
+- `ComfySwitchNode` —— 1/11 个有
+- `Compare` —— 1/11 个有
+- `CreateVideo` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 1/11 个有
+- `SaveVideo` —— 1/11 个有
+- `SetReserveVRAM` —— 1/11 个有
+- `SplitStringByDelimiter` —— 1/11 个有
+- `TrimAudioDuration` —— 1/11 个有
+- `easy ifElse` —— 1/11 个有
+- `workflow>2` —— 1/11 个有
+- `workflow>3` —— 1/11 个有
+- `孤海注释` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 10 | 90% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 10 | 100% |
-| 采样算法 | 1 | 1 - 1 | 10 | 100% |
-| 调度器 | euler | - | 10 | 100% |
-| 重绘幅度 | simple | - | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -79,8 +99,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，10 个样本，一致性 90%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，10 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，10 个样本，一致性 100%
-- 重绘幅度 最常用 simple，10 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

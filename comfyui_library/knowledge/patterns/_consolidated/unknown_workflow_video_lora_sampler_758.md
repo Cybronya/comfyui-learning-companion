@@ -1,77 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_758
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.796
-common_nodes: [> Text Replace, Any To Any, CFGGuider, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VHS_SelectFilename, VHS_VideoCombine, VRAMReserver, VisualizeSigmasKJ, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.823333
+common_nodes: [BerniniStudio, CLIPLoader, CLIPTextEncode, GetNode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, RH_Captioner, SetNode, Text, TextConcatenate_UTK, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ltx2多帧首尾帧运动强化版V1_2010552640517705729.json, 视频生成/图生视频/多图首尾帧视频-Ltx2-V20260112(48g)_2010704583722536962.json]
+members: [视频生成/图生视频/最新bernini-flashvideo加速版漫剧电商服装分镜_2074655037963460609.json, 视频生成/图生视频/最新bernini加速版r2v_2074532825533075457.json, 视频生成/图生视频/最新bernini加速版r2v漫剧电商服装分镜真人_2074550169936420866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_758
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Ltx2多帧首尾帧运动强化版V1_2010552640517705729.json、视频生成/图生视频/多图首尾帧视频-Ltx2-V20260112(48g)_2010704583722536962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/最新bernini-flashvideo加速版漫剧电商服装分镜_2074655037963460609.json、视频生成/图生视频/最新bernini加速版r2v_2074532825533075457.json、视频生成/图生视频/最新bernini加速版r2v漫剧电商服装分镜真人_2074550169936420866.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `> Text Replace`
-- `Any To Any`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `BerniniStudio`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MultiplePathsInput`
 - `PathchSageAttentionKJ`
 - `PreviewImage`
-- `Qwen3_VQA`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RH_Captioner`
 - `SetNode`
-- `VAEDecodeTiled`
-- `VHS_SelectFilename`
+- `Text`
+- `TextConcatenate_UTK`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VRAMReserver`
-- `VisualizeSigmasKJ`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `FlashVSR_SM_KSampler` —— 2/3 个有
+- `FlashVSR_SM_Model` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `GoogleTranslator` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `GoogleTranslateTextNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 采样步数 | 1.05822e+09 | - | 2 | 92% |
+| Prompt 约束强度(CFG) | randomize | - | 3 | 67% |
+| 采样算法 | 2 | 1 - 2 | 3 | 72% |
+| 调度器 | 3.5 | - | 2 | 100% |
+| 重绘幅度 | 11 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -79,6 +68,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 1.05822e+09，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 67%
+- 采样算法 中位数 2，观测区间 1 - 2，3 个样本
+- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.14318e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

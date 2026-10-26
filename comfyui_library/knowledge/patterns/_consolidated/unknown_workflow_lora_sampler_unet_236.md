@@ -3,89 +3,81 @@ name: unknown_workflow_lora_sampler_unet_236
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.902333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetVideoComponents, ImpactConditionalBranch, ImpactExecutionOrderController, ImpactQueueTrigger, ImpactSetWidgetValue, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxLowVRAMAttention, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImageKJ, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, easy indexAnything]
+coverage: 0.429333
+common_nodes: [BasicScheduler, CLIPLoader, CM_IntUnaryOperation, ConditioningZeroOut, EmptyImage, GetImageSizeAndCount, GetNode, H3SigmaRefiner, ImageLoader, ImageResizeKJv2, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, Make Image Batch, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ResolutionSelector, SelfLiftAvatarH3Sampler, SetNode, SimpleMath+, StringFunction|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3分段参考生视频_Impact_V6_双采_整合提示词版本_2090022476851007490.json, 视频生成/文生视频/H3分段参考生视频导播台_2093263724256784386.json, 视频生成/文生视频/参考生视频_2090901194595196929.json]
+members: [图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-Minnimax-H3-官方_2100965690554544129.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Minnimax-H3-官方_2100964513884495873.json, 视频生成/图生视频/视频-任意数量参考生视频-Minnimax-H3-官方_2084309352525164546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_236
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/H3分段参考生视频_Impact_V6_双采_整合提示词版本_2090022476851007490.json、视频生成/文生视频/H3分段参考生视频导播台_2093263724256784386.json、视频生成/文生视频/参考生视频_2090901194595196929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-Minnimax-H3-官方_2100965690554544129.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Minnimax-H3-官方_2100964513884495873.json、视频生成/图生视频/视频-任意数量参考生视频-Minnimax-H3-官方_2084309352525164546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CreateVideo`
-- `GetVideoComponents`
-- `ImpactConditionalBranch`
-- `ImpactExecutionOrderController`
-- `ImpactQueueTrigger`
-- `ImpactSetWidgetValue`
+- `CM_IntUnaryOperation`
+- `ConditioningZeroOut`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `H3SigmaRefiner`
+- `ImageLoader`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `Make Image Batch`
+- `MemoryCleaner`
 - `MiniMaxChunkFeedForward`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextLoadLatent`
-- `MiniMaxH3MotionContextSaveLatent`
-- `MiniMaxH3MotionContextTrim`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxH3TurboLoRA`
-- `MiniMaxH3TurboSampler`
 - `MiniMaxLowVRAMAttention`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RTXVideoSuperResolution`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveImageKJ`
-- `SaveVideo`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `SimpleMath+`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
-- `VAEEncode`
 - `VAELoader`
-- `easy indexAnything`
+- `easy anythingIndexSwitch`
+- `easy anythingInversedSwitch`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `ImagePass` —— 2/3 个有
-- `JoinStrings` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `PrimitiveString` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `ImageFromBatch` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
 - `PrimitiveStringMultiline` —— 2/3 个有
-- `SomethingToString` —— 2/3 个有
-- `TextSplitByDelimiter` —— 2/3 个有
-- `easy blocker` —— 2/3 个有
-- `easy compare` —— 2/3 个有
-- `easy convertAnything` —— 2/3 个有
-- `easy isFileExist` —— 2/3 个有
-- `easy mathInt` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `SaveImage` —— 1/3 个有
-- `TheodoreDirector_CommitResult` —— 1/3 个有
-- `TheodoreDirector_H3Adapter` —— 1/3 个有
-- `TheodoreDirector_OutputPaths` —— 1/3 个有
-- `TheodoreDirector_PostprocessSecondPassSource` —— 1/3 个有
-- `TheodoreDirector_Project` —— 1/3 个有
-- `TheodoreDirector_SaveSecondPass` —— 1/3 个有
-- `TheodoreDirector_SelectShot` —— 1/3 个有
-- `VAEEncodeAudio` —— 1/3 个有
+- `SaveImage` —— 2/3 个有
+- `VOSR2ModelLoader` —— 2/3 个有
+- `VOSR2Upscale` —— 2/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `ImpactFloat` —— 1/3 个有
+- `JWFloatToString` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
 
 ## 典型参数
 

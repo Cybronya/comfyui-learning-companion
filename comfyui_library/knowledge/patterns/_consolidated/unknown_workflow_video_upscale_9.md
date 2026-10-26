@@ -3,43 +3,39 @@ name: unknown_workflow_video_upscale_9
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.464
-common_nodes: [DisplayText_Zho, GetNode, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiplyNode, Primitive integer [Crystools], PrimitiveInt, RH_Captioner, RH_Translator, RIFE VFI, RunningHub_FramePack_F1, SetNode, Text, UpscaleModelLoader, VHS_VideoCombine, easy textSwitch]
+coverage: 0.757
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiplyNode, PrimitiveInt, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, ttN text]
 problems: []
 missing: []
-members: [视频生成/图生视频/Framepack F1图生视频_1925752612090777601.json, 视频生成/文生视频/RunningHub专用节点 Framepack F1图生视频【高清放大+补帧】工作流V2优化版_1920492525130551297.json]
+members: [视频生成/图生视频/Framepack F1图生视频(高清放大+补帧)_1919981556402950146.json, 视频生成/图生视频/敏神framepack首尾帧(高清放大+补帧)_1916132186154799106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_9
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Framepack F1图生视频_1925752612090777601.json、视频生成/文生视频/RunningHub专用节点 Framepack F1图生视频【高清放大+补帧】工作流V2优化版_1920492525130551297.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Framepack F1图生视频(高清放大+补帧)_1919981556402950146.json、视频生成/图生视频/敏神framepack首尾帧(高清放大+补帧)_1916132186154799106.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DisplayText_Zho`
-- `GetNode`
 - `ImageUpscaleWithModel`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `MultiplyNode`
-- `Primitive integer [Crystools]`
 - `PrimitiveInt`
-- `RH_Captioner`
-- `RH_Translator`
 - `RIFE VFI`
-- `RunningHub_FramePack_F1`
-- `SetNode`
-- `Text`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `easy textSwitch`
+- `ttN text`
+
+**可变部分**（部分 workflow 才有）：
+- `RunningHub_FramePack` —— 1/2 个有
+- `RunningHub_FramePack_F1` —— 1/2 个有
 
 ## 典型参数
 

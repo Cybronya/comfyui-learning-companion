@@ -3,56 +3,61 @@ name: image_to_image_lora_sampler_unet_194
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.654
-common_nodes: [CLIPLoader, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.760333
+common_nodes: [CFGNorm, CLIPLoader, CR Prompt Text, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/krea2 edit turbo 文改图工作流_2080951422828503042.json, 图片生成/文生图/单图生成三视图完整工作流（模版一）消耗积分：KREA-2-EDIT版本_2088932692376248322.json, 图片生成/文生图/单图生成人物资产三视图完整工作流_2095809006400004097.json]
+members: [图片生成/图生图/一张图生成多模特姿势电商小红书抖音_2067435931765927938.json, 图片生成/图生图/手动改变图片角度和镜头2511_2109842555734151170.json, 图片生成/图生图/用一张图生成16张写真姿势图片_1995057637274345474.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_194
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/krea2 edit turbo 文改图工作流_2080951422828503042.json、图片生成/文生图/单图生成三视图完整工作流（模版一）消耗积分：KREA-2-EDIT版本_2088932692376248322.json、图片生成/文生图/单图生成人物资产三视图完整工作流_2095809006400004097.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一张图生成多模特姿势电商小红书抖音_2067435931765927938.json、图片生成/图生图/手动改变图片角度和镜头2511_2109842555734151170.json、图片生成/图生图/用一张图生成16张写真姿势图片_1995057637274345474.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
+- `CR Prompt Text`
+- `JDCN_StringToList`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `ProcessString`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `ResizeImageMaskNode` —— 2/3 个有
-- `Textbox` —— 2/3 个有
-- `EmptyLatentImage` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `Text Concatenate` —— 2/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| 采样步数 | 8 | 4 - 8 | 3 | 72% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
+| 采样算法 | res_2m | - | 3 | 67% |
+| 调度器 | sgm_uniform | - | 3 | 67% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
@@ -63,9 +68,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
+- 采样算法 最常用 res_2m，3 个样本，一致性 67%
+- 调度器 最常用 sgm_uniform，3 个样本，一致性 67%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

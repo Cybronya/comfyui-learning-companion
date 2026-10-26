@@ -3,72 +3,79 @@ name: unknown_workflow_video_lora_sampler_698
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.918333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageToMask, JoinImageWithAlpha, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.523333
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GODMT_SplitString, GetNode, INTConstant, ImageResizeKJv2, ImpactInt, Int, KSamplerAdvanced, LoraLoaderModelOnly, SetNode, SimpleMath+, TextListSelelct, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, seed _O]
+problems: []
 missing: []
-members: [视频生成/文生视频/Wan文生透明gif动态表情_1975150708154568706.json, 视频生成/文生视频/透明视频生成_1974339364606054402.json, 视频生成/文生视频/透明视频素材制作_1978705872639692801.json]
+members: [视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json, 视频生成/图生视频/SVI2.0PRO视频延长_2073295687021846529.json, 视频生成/图生视频/SVI2.0PRO长视频循环流_2073295137563828226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_698
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan文生透明gif动态表情_1975150708154568706.json、视频生成/文生视频/透明视频生成_1974339364606054402.json、视频生成/文生视频/透明视频素材制作_1978705872639692801.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json、视频生成/图生视频/SVI2.0PRO视频延长_2073295687021846529.json、视频生成/图生视频/SVI2.0PRO长视频循环流_2073295137563828226.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `ImageToMask`
-- `JoinImageWithAlpha`
-- `KSampler`
+- `DiffusionModelLoaderKJ`
+- `GODMT_SplitString`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `Int`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
+- `SetNode`
+- `SimpleMath+`
+- `TextListSelelct`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideoSVIPro`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `seed _O`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `CR Text Concatenate` —— 2/3 个有
-- `InvertMask` —— 2/3 个有
-- `SaveVideoRGBA` —— 2/3 个有
-- `ImageFromBatch+` —— 1/3 个有
-- `InvertMask (segment anything)` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `String` —— 1/3 个有
+- `ImageBatchExtendWithOverlap` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageListToBatch+` —— 1/3 个有
+- `IntToText` —— 1/3 个有
+- `SDVM Image List Repeat` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VHS_SelectImages` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 3 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

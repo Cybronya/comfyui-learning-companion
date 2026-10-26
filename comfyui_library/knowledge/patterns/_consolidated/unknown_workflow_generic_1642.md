@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1642
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8165
-common_nodes: [IndexTTS2_ModelManager, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.7735
+common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json, 音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json]
+members: [图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json, 图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1642
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json、音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json、图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_ModelManager`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `CR Text`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 1/2 个有
-- `IndexTTS2_EmotionVoiceMultiTalk` —— 1/2 个有
+- `GenericAPILLMNode` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

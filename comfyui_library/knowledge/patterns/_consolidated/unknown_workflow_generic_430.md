@@ -3,36 +3,39 @@ name: unknown_workflow_generic_430
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.868333
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.848167
+common_nodes: [Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 2（多图）_1991694487644745730.json, 图片生成/图生图/全能图片V12产品精修+商品图_1991698531685855233.json, 图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json, 图片生成/图生图/换脸2.0完美换脸全能图片V12pro人物一致性_1996792747057192962.json, 图片生成/图生图/换脸完美换脸2pro人物一致性_2007470415756660738.json, 图片生成/图生图/服装一键穿搭 -最强一致性-模特裂变_2007659155338829825.json]
+members: [图片生成/反推提示词/一键自动生成超能视频2.0爆款视频脚本_2022293700851798018.json, 图片生成/反推提示词/爆款视频一键复刻！Seedance 2.0模型的视频分镜脚本_2095544015277084673.json, 图片生成/反推提示词/爆款视频反推 - 视频提示词反推_2050152352849641474.json, 图片生成/反推提示词/爆款视频反推-提示词分析-视频脚本反推_2020689025664815105.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2051484759532027906.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2053679480492834817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_430
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2（多图）_1991694487644745730.json、图片生成/图生图/全能图片V12产品精修+商品图_1991698531685855233.json、图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json、图片生成/图生图/换脸2.0完美换脸全能图片V12pro人物一致性_1996792747057192962.json、图片生成/图生图/换脸完美换脸2pro人物一致性_2007470415756660738.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/一键自动生成超能视频2.0爆款视频脚本_2022293700851798018.json、图片生成/反推提示词/爆款视频一键复刻！Seedance 2.0模型的视频分镜脚本_2095544015277084673.json、图片生成/反推提示词/爆款视频反推 - 视频提示词反推_2050152352849641474.json、图片生成/反推提示词/爆款视频反推-提示词分析-视频脚本反推_2020689025664815105.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2051484759532027906.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `Label (rgthree)`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `ImageConcatMulti` —— 4/6 个有
-- `Fast Groups Muter (rgthree)` —— 3/6 个有
-- `GeminiImage2Node` —— 1/6 个有
-- `Image Comparer (rgthree)` —— 1/6 个有
+- `CR Prompt Text` —— 5/6 个有
+- `LoadVideo` —— 5/6 个有
+- `easy saveText` —— 2/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SaveText` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
 
 ## 典型参数
 

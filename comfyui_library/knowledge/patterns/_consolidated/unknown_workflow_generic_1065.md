@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 0.889
-common_nodes: [RH_Wan26_T2V, SaveVideo]
+common_nodes: [RH_SeedreamV45TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json, 视频生成/文生视频/wan2.6 t2v_2000818374349385729.json, 视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json]
+members: [图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json, 图片生成/文生图/2031456151346356226.json, 图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1065
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json、视频生成/文生视频/wan2.6 t2v_2000818374349385729.json、视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json、图片生成/文生图/2031456151346356226.json、图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,11 +23,11 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_Wan26_T2V`
-- `SaveVideo`
+- `RH_SeedreamV45TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,83 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_169
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.660091
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.95925
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-Animate-视频换脸+换装+动作模仿+迁移跳舞_1993696432154755073.json, 视频生成/图生视频/Wan2.2Animate+DWPose动作模仿工作流！墙裂推荐！表情精准迁移_2038302872932192257.json, 视频生成/图生视频/Wan2.2图生视频人物替换动作迁移_2028365300059611138.json, 视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052450080971603969.json, 视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052663395060600834.json, 视频生成/图生视频/Wan2.7+视频换脸  换头换发型+真实自然+视频换脸+人物角色替换+虚拟美女模特_2061612628442705921.json, 视频生成/图生视频/人物换脸 图生视频_2001188538823606273.json, 视频生成/图生视频/人物替换，SAM3自动分割_2046159964988776450.json, 视频生成/图生视频/人物角色替换_2062336789762895874.json, 视频生成/图生视频/动作模仿动作迁移图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上）_1988865006097797121.json, 视频生成/图生视频/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换 (1)_2069968810341396482.json]
+members: [视频生成/图生视频/wan2.2 lora_1996855253331058690.json, 视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json, 视频生成/图生视频/wan2.2图生视频-标准版-(必收藏)_2059069738726285313.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2042949137406103554.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2043184542202208257.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2044662528826941441.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2075046170388422658.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2047121992129712129.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048604067320045570.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048924949674463234.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2072871692606726146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_169
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Animate-视频换脸+换装+动作模仿+迁移跳舞_1993696432154755073.json、视频生成/图生视频/Wan2.2Animate+DWPose动作模仿工作流！墙裂推荐！表情精准迁移_2038302872932192257.json、视频生成/图生视频/Wan2.2图生视频人物替换动作迁移_2028365300059611138.json、视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052450080971603969.json、视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052663395060600834.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/wan2.2 lora_1996855253331058690.json、视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json、视频生成/图生视频/wan2.2图生视频-标准版-(必收藏)_2059069738726285313.json、视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json、视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2042949137406103554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM`
+全部 12 个 workflow 都包含：
 - `LoadImage`
-- `PixelPerfectResolution`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 10/11 个有
-- `DrawMaskOnImage` —— 10/11 个有
-- `GrowMask` —— 10/11 个有
-- `JWInteger` —— 10/11 个有
-- `WanVideoLoraSelectMulti` —— 10/11 个有
-- `CR Text` —— 9/11 个有
-- `ImageConcatMulti` —— 9/11 个有
-- `Int` —— 9/11 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 9/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `MathExpression|pysssss` —— 9/11 个有
-- `PreviewImage` —— 9/11 个有
-- `VHS_VideoInfo` —— 9/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 8/11 个有
-- `MemoryCleaner` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `LoadVideo` —— 1/11 个有
-- `RH_AlibabaWan27VideoEdit` —— 1/11 个有
-- `RMBG` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
-- `SaveVideo` —— 1/11 个有
-- `TT_img_enc_v2` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `VHS_VideoInfoLoaded` —— 1/11 个有
-- `WanVideoLoraSelect` —— 1/11 个有
-- `easy framesEditor` —— 1/11 个有
-- `easy sam3ModelLoader` —— 1/11 个有
-- `easy sam3VideoModelExtraConfig` —— 1/11 个有
-- `easy sam3VideoSegmentation` —— 1/11 个有
-- `easy sam3Visualization` —— 1/11 个有
+- `CreateCFGScheduleFloatList` —— 11/12 个有
+- `INTConstant` —— 11/12 个有
+- `MathExpression|pysssss` —— 11/12 个有
+- `ImageResizeKJv2` —— 10/12 个有
+- `PrimitiveFloat` —— 10/12 个有
+- `WanVideoTorchCompileSettings` —— 10/12 个有
+- `easy cleanGpuUsed` —— 10/12 个有
+- `CR Text` —— 9/12 个有
+- `Int` —— 9/12 个有
+- `LayerUtility: PurgeVRAM` —— 9/12 个有
+- `easy clearCacheAll` —— 9/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/12 个有
+- `LoadAudio` —— 1/12 个有
+- `Primitive integer [Crystools]` —— 1/12 个有
+- `RIFE VFI` —— 1/12 个有
+- `easy seed` —— 1/12 个有
 
 ## 典型参数
 

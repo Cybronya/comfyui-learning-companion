@@ -3,72 +3,70 @@ name: unknown_workflow_lora_sampler_unet_88
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.761
-common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.843
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3全能插件+双采1080p高清（8步加速）_2090022090694021122.json, 视频生成/文生视频/MiniMax H3全能插件+音频设计_2097244728222896129.json, 视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json, 视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json, 视频生成/文生视频/MiniMax H3新版8步768p加速（单采高质量）_2094009829802205186.json, 视频生成/文生视频/MiniMax-H3 fl2v单模型二采无编解码放大_2093393143118000129.json, 视频生成/文生视频/MiniMax-H3 极限复杂大动态与人脸去油腻工作流_2096278728602112001.json, 视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json]
+members: [图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json, 图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json, 图片生成/图生图/klein模型提示词改车色_2063839522978361346.json, 图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json, 图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json, 图片生成/图生图/一键无缝融图——Klein_2090628254876131329.json, 图片生成/图生图/仅精修车身光影_2061258794776227841.json, 图片生成/图生图/压暗车窗_2064320626726363138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_88
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3全能插件+双采1080p高清（8步加速）_2090022090694021122.json、视频生成/文生视频/MiniMax H3全能插件+音频设计_2097244728222896129.json、视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json、视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json、视频生成/文生视频/MiniMax H3新版8步768p加速（单采高质量）_2094009829802205186.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json、图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json、图片生成/图生图/klein模型提示词改车色_2063839522978361346.json、图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json、图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
+- `CFGGuider`
 - `CLIPLoader`
+- `ConditioningZeroOut`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
-- `Label (rgthree)` —— 6/8 个有
-- `VHS_VideoCombine` —— 6/8 个有
-- `LTXVConcatAVLatent` —— 5/8 个有
-- `LTXVSeparateAVLatent` —— 5/8 个有
-- `LoadImage` —— 5/8 个有
-- `MiniMaxH3Unified` —— 5/8 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/8 个有
-- `SplitSigmas` —— 5/8 个有
-- `ComfyMathExpression` —— 4/8 个有
-- `CreateVideo` —— 3/8 个有
-- `H3SigmaRefiner` —— 3/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
-- `SaveVideo` —— 3/8 个有
-- `GetNode` —— 2/8 个有
-- `ManualSigmas` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
-- `ExtendIntermediateSigmas` —— 1/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `CropWithPadInfo_EditUtils` —— 6/8 个有
+- `Flux2KleinOutputExtractor_EditUtils` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 6/8 个有
+- `Text` —— 6/8 个有
+- `AdaptiveLongestEdge_EditUtils` —— 4/8 个有
+- `DF_Get_image_size` —— 4/8 个有
+- `GetImageSize` —— 4/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `CheckpointLoaderSimple` —— 3/8 个有
+- `InpaintCropImproved` —— 3/8 个有
+- `InpaintStitchImproved` —— 3/8 个有
+- `RH_Translator` —— 3/8 个有
+- `SAM3_Detect` —— 3/8 个有
+- `easy promptReplace` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `Int` —— 2/8 个有
+- `LayerMask: MaskPreview` —— 2/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `DapaoImagePadDirectionNode` —— 1/8 个有
 - `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `MiniMaxChunkFeedForward` —— 1/8 个有
-- `MiniMaxH3ImageToVideo` —— 1/8 个有
-- `UniBlockSwap` —— 1/8 个有
-- `VRAM_Debug` —— 1/8 个有
-- `布尔孤海` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

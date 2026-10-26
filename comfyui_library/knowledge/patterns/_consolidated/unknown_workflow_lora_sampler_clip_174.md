@@ -3,61 +3,70 @@ name: unknown_workflow_lora_sampler_clip_174
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.919333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.689667
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CM_FloatToInt, DiffusionModelLoaderKJ, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, Float, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAudio, PreviewImage, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_LoadAudioUpload, VisualizeSigmasKJ, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/klein图像风格互转_真人转动漫风格_动漫风格转真人_2054440839576866818.json, 图片生成/图生图/人物换发型_2036784926481190914.json, 图片生成/图生图/净化截图_2059612411639980033.json]
+members: [图片生成/反推提示词/78singsong_2052695235456712706.json, 视频生成/图生视频/LTX2.3极速超级数字人图生视频_2061333260944367617.json, 视频生成/图生视频/LTX2.3极速超级数字人首尾帧生视频_2061445369535483905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/klein图像风格互转_真人转动漫风格_动漫风格转真人_2054440839576866818.json、图片生成/图生图/人物换发型_2036784926481190914.json、图片生成/图生图/净化截图_2059612411639980033.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/78singsong_2052695235456712706.json、视频生成/图生视频/LTX2.3极速超级数字人图生视频_2061333260944367617.json、视频生成/图生视频/LTX2.3极速超级数字人首尾帧生视频_2061445369535483905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `CM_FloatToInt`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoaderGGUF`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewAudio`
 - `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
+- `VHS_LoadAudioUpload`
+- `VisualizeSigmasKJ`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LayerColor: ColorAdapter` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `FillMaskedArea_UTK` —— 1/3 个有
-- `GrowMask` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/3 个有
-- `Model Input Switch` —— 1/3 个有
-- `ModelPatchLoader` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `QwenImageDiffsynthControlnet` —— 1/3 个有
-- `StringConcatenate` —— 1/3 个有
+- `LTXVImgToVideoInplace` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `VHS_SelectImages` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `CM_IntToFloat` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `LTXVAddGuideMulti` —— 1/3 个有
+- `LTXVCropGuides` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,69 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_unet_53
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.844286
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.740167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/xinlingjitang_2095332464360251393.json, 视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！单人！_2085606167941832706.json, 视频生成/图生视频/数字人对口型MinimaxH3音频驱动数字人单人版 (1)_2085206685513240577.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人加速开源版_2084869370685247490.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人语音克隆加速开源版_2084910413048795137.json, 视频生成/图生视频/海螺H3(minimax H3)数字人双人语音克隆（可多人）加速开源版_2084897123694366722.json, 视频生成/文生视频/fengjing_2095750565702750210.json]
+members: [视频生成/图生视频/h3-角色人物场景生成视频_2094058724343246849.json, 视频生成/图生视频/电商产品展示 图片参考生视频 minimax h3_2085356615661875201.json, 视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json, 视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json, 视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json, 视频生成/文生视频/MiniMaxH3满血无损加速1.0高清工作流ENGENG_2087108575725441026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_53
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/xinlingjitang_2095332464360251393.json、视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！单人！_2085606167941832706.json、视频生成/图生视频/数字人对口型MinimaxH3音频驱动数字人单人版 (1)_2085206685513240577.json、视频生成/图生视频/海螺H3(minimax H3)数字人单人加速开源版_2084869370685247490.json、视频生成/图生视频/海螺H3(minimax H3)数字人单人语音克隆加速开源版_2084910413048795137.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/h3-角色人物场景生成视频_2094058724343246849.json、视频生成/图生视频/电商产品展示 图片参考生视频 minimax h3_2085356615661875201.json、视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json、视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json、视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioCrop`
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadAudio`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/7 个有
-- `PreviewAudio` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `PrimitiveString` —— 2/7 个有
-- `Qwen3TTSModelLoader` —— 2/7 个有
-- `Qwen3TTSVoiceClone` —— 2/7 个有
-- `SaveAudio` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `WhisperSTT` —— 2/7 个有
-- `ZML_MergeText` —— 2/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
-- `AudioConcat` —— 1/7 个有
-- `EasyCache` —— 1/7 个有
-- `EmptyAudio` —— 1/7 个有
-- `PainterVRAM` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
+- `CreateVideo` —— 5/6 个有
+- `EasyCache` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `ModelPatchTorchSettings` —— 4/6 个有
+- `SaveVideo` —— 4/6 个有
+- `UniBlockSwap` —— 4/6 个有
+- `JjkText` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `FlashVSRNode` —— 1/6 个有
+- `GetImagesFromBatchIndexed` —— 1/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `ModelAttentionBackend` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `Sleep` —— 1/6 个有
 
 ## 典型参数
 

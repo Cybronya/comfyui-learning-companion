@@ -3,56 +3,71 @@ name: unknown_workflow_sampler_clip_unet_151
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.9215
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.718375
+common_nodes: [CFGOverride, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PreviewAny, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json, 图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json, 图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json, 图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json, 图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json, 图片生成/图生图/flux2_klein_图生图_基础工作流_2030890083406057474.json, 图片生成/图生图/flux单图v2_2103034191372963842.json, 图片生成/图生图/自拍照+服装参考图一键生成证件照_2020047100834226178.json]
+members: [图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json, 图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json, 图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json, 图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json, 图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json, 图片生成/文生图/Ideogram 图生图参考潜空间重构_2064321322360074241.json, 图片生成/文生图/Ideogram_4+Prompt_Builder_中文提示词自动文生图_2069068754293710850.json, 视频生成/图生视频/Ideogram+4+Prompt+Builder+中文提示词自动文生图_2089969723621593090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_151
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json、图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json、图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json、图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json、图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json、图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json、图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json、图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json、图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `CFGOverride`
 - `CLIPTextEncode`
+- `ComfyNumberConvert`
+- `DualModelGuider`
 - `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
 - `KSamplerSelect`
-- `LoadImage`
+- `PreviewAny`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `ComfyMathExpression` —— 7/8 个有
 - `ConditioningZeroOut` —— 7/8 个有
-- `GetImageSize` —— 4/8 个有
-- `ImageScaleToTotalPixels` —— 4/8 个有
-- `PrimitiveStringMultiline` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `PrimitiveString` —— 2/8 个有
-- `StringReplace` —— 2/8 个有
-- `FluxKVCache` —— 1/8 个有
-- `ImageBatch` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `CLIPLoader` —— 6/8 个有
+- `easy showAnything` —— 6/8 个有
+- `ResolutionSelector` —— 5/8 个有
+- `llama_cpp_instruct_adv` —— 5/8 个有
+- `llama_cpp_model_loader` —— 5/8 个有
+- `LoadImage` —— 4/8 个有
+- `Ideogram4PromptBuilderKJ` —— 3/8 个有
+- `RHLLMChatNode` —— 3/8 个有
+- `llama_cpp_parameters` —— 3/8 个有
+- `CLIPLoaderGGUF` —— 2/8 个有
+- `CustomCombo` —— 2/8 个有
+- `DisTorchPurgeVRAMV2` —— 2/8 个有
+- `Float` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy saveText` —— 2/8 个有
+- `image_scale_pixel_v2` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `Ideogram4OptimizationsKJ` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
+- `JjkText` —— 1/8 个有
 - `PreviewImage` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `easy boolean` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
+- `SplitSigmasDenoise` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
 
 ## 典型参数
 

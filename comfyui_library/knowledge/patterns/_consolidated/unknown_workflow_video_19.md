@@ -1,51 +1,38 @@
 ---
 name: unknown_workflow_video_19
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5348
-common_nodes: [Fast Groups Bypasser (rgthree), FlashVSRNode, GetNode, Image Comparer (rgthree), ImageConcanate, ImageScaleToTotalPixels, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
+coverage: 0.794667
+common_nodes: [AudioSeparation, LoadAudio, SeedVCRun, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2&FlashVSR图像&视频高清修复放大工作流 V2.0_2034467052739633153.json, 图片生成/图生图/图像及视频高清修复-SeedVR2&FlashVSR二合一版_1985213076855267330.json, 图片生成/图生图/最强图像&视频高清修复放大SeedVR2 & FlashVSR_2057740469056135170.json, 图片生成/图生图/最强图像高清修复_2001622321746067457.json, 图片生成/图生图/高清修复-SeedVR2&FlashVSR二合一02_1988196857996296194.json]
+members: [视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json, 音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json, 音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json, 音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json, 音频生成/音频生成/视频人物音色替换_2105883053682937858.json, 音频生成/音频生成/青松换音色_2050078680013131778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_19
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2&FlashVSR图像&视频高清修复放大工作流 V2.0_2034467052739633153.json、图片生成/图生图/图像及视频高清修复-SeedVR2&FlashVSR二合一版_1985213076855267330.json、图片生成/图生图/最强图像&视频高清修复放大SeedVR2 & FlashVSR_2057740469056135170.json、图片生成/图生图/最强图像高清修复_2001622321746067457.json、图片生成/图生图/高清修复-SeedVR2&FlashVSR二合一02_1988196857996296194.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json、音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json、音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json、音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json、音频生成/音频生成/视频人物音色替换_2105883053682937858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `FlashVSRNode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
+全部 6 个 workflow 都包含：
+- `AudioSeparation`
+- `LoadAudio`
+- `SeedVCRun`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 3/5 个有
-- `GetImageRangeFromBatch` —— 2/5 个有
-- `Note _O` —— 1/5 个有
+- `SaveAudioMP3` —— 4/6 个有
+- `孤海注释` —— 4/6 个有
 
 ## 典型参数
 

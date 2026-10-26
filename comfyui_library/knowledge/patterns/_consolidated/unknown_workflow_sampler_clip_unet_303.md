@@ -2,66 +2,56 @@
 name: unknown_workflow_sampler_clip_unet_303
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.85725
-common_nodes: [CLIPTextEncode, CR SDXL Aspect Ratio, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, ModelSamplingSD3, QuadrupleCLIPLoader, SaveImage, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.91925
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/HiDream-I1文生图_1915582741268594690.json, 图片生成/文生图/HiDream吉卜力风格_1917590380785897473.json, 图片生成/文生图/HiDream线稿手绘风(LORA)_1916785448868581378.json, 图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json]
+members: [图片生成/图生图/【最新】Flux 局部重绘技术_1915011533284306945.json, 图片生成/文生图/FLUX批量生成小红书涨粉美女_1884421093896372225.json, 图片生成/文生图/flux文生图 小白友好_1913620524503891969.json, 图片生成/文生图/【FLUX一键批量生成】【小红书涨粉美女 】_1909203282877624322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_303
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/HiDream-I1文生图_1915582741268594690.json、图片生成/文生图/HiDream吉卜力风格_1917590380785897473.json、图片生成/文生图/HiDream线稿手绘风(LORA)_1916785448868581378.json、图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【最新】Flux 局部重绘技术_1915011533284306945.json、图片生成/文生图/FLUX批量生成小红书涨粉美女_1884421093896372225.json、图片生成/文生图/flux文生图 小白友好_1913620524503891969.json、图片生成/文生图/【FLUX一键批量生成】【小红书涨粉美女 】_1909203282877624322.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `QuadrupleCLIPLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkShowText` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `Text Multiline` —— 3/4 个有
-- `TeaCache` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `Joy_caption_two` —— 1/4 个有
-- `Joy_caption_two_load` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/4 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `scale` —— 1/4 个有
+- `EmptySD3LatentImage` —— 2/4 个有
+- `LoraLoader|pysssss` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `DifferentialDiffusion` —— 1/4 个有
+- `ImpactGaussianBlurMask` —— 1/4 个有
+- `InpaintModelConditioning` —— 1/4 个有
+- `LoadAndResizeImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 39 | 28 - 50 | 4 | 72% |
-| Prompt 约束强度(CFG) | 3 | 1 - 5 | 4 | 33% |
-| 采样算法 | lcm | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1.72 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,8 +59,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 39，观测区间 28 - 50，4 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 5，4 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 lcm，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1.72，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

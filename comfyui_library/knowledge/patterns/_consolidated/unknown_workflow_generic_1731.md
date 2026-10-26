@@ -3,35 +3,37 @@ name: unknown_workflow_generic_1731
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.854
-common_nodes: [PreviewAudio, SaveAudioMP3, WooshLoadFlow, WooshSample, WooshTextEncode]
+coverage: 0.613
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_mj_video, LoadImage, SaveImage, SaveVideo, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/影视_短视频必备：一键文字生成逼真音效（Woosh）_2076229994212319234.json, 音频生成/音频生成/🔥 剪辑师救星：丢进视频，AI 自动生成踩点音效！_2076261491841523713.json]
+members: [视频生成/图生视频/超强MJ图生视频FAST模式9延长特价版（基准价格2.8元_4视频）_1948434004792999937.json, 视频生成/图生视频/超强MJ图生视频FAST模式特价版（基准价格1.4元_4视频）_1948426422999232514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1731
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/影视_短视频必备：一键文字生成逼真音效（Woosh）_2076229994212319234.json、音频生成/音频生成/🔥 剪辑师救星：丢进视频，AI 自动生成踩点音效！_2076261491841523713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/超强MJ图生视频FAST模式9延长特价版（基准价格2.8元_4视频）_1948434004792999937.json、视频生成/图生视频/超强MJ图生视频FAST模式特价版（基准价格1.4元_4视频）_1948426422999232514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PreviewAudio`
-- `SaveAudioMP3`
-- `WooshLoadFlow`
-- `WooshSample`
-- `WooshTextEncode`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_mj_video`
+- `LoadImage`
+- `SaveImage`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 1/2 个有
-- `WooshLoadVideo` —— 1/2 个有
+- `Comfly_mj_video_extend` —— 1/2 个有
 
 ## 典型参数
 

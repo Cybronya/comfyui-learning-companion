@@ -1,117 +1,83 @@
 ---
 name: text_to_image_lora_sampler_clip_116
 type: Text To Image
-frequency: 12
-level: strong
-coverage: 0.67725
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip]
+frequency: 13
+level: moderate
+coverage: 0.879077
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, SaveImage, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/MiniMax H3终极篇文武双全｜战斗特效打斗场面一步到位_2111056774492147714.json, 图片生成/图生图/MiniMax H3终极篇，文武双全战斗特效_2111257793977217026.json, 图片生成/文生图/H3官流终极版工作流，文生视频图生视频全覆盖方案_2106884457763532802.json, 图片生成/文生图/MINIMAX H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2106896826518560769.json, 图片生成/文生图/MINIMax H3短剧神器｜全功能加速文生图图生图_2106595105699360770.json, 视频生成/图生视频/H3 SelfLift参考生视频，双采单采加速任选模式_2110850789378977793.json, 视频生成/图生视频/MINIMAX_H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2108736968589926402.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采加单采参考生视频 视频生成加速_2109348613032861697.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采单采，参考生视频提速版_2110810539428499457.json, 视频生成/文生视频/H3全功能多重加速V2短剧神器 视频生成处理工具_2100689948386091009.json, 视频生成/文生视频/海螺H3全功能多重加速V2短剧神器｜minimax h3文生视频图生视频数字人通吃_2100444550102872066.json, 视频生成/文生视频/海螺H3全功能文生视频工作流h3多重加速V2短剧神器minimax_2087334573154856962.json]
+members: [图片生成/文生图/Qwen 千问文生图_2000589481319202818.json, 图片生成/文生图/Qwen-Image 4步文生图【极速版v2】_1956241572574756865.json, 图片生成/文生图/Qwen-Image8步加速Lora4倍加速文生图支持中文输出堪比Seedream，简直不要太强啦_1953340351912312834.json, 图片生成/文生图/Qwen-文生图+中文字体LORA-极速版_1955571767731523585.json, 图片生成/文生图/Qwen-文生图+中文字体LORA-极速版_1993314920903147522.json, 图片生成/文生图/Qwen千问文生图-动漫短剧_1979863423804674049.json, 图片生成/文生图/光影织就的半透明 3D 模型（小红书爆款头像）_2065372132481265665.json, 图片生成/文生图/文生图+饮品海报LORA-懒人版_2066105345424060418.json, 图片生成/文生图/文生图+饮品海报LORA-懒人版_2069068593173721090.json, 图片生成/文生图/最新书法字Qwen_1959956985607303170.json, 图片生成/文生图/水果文生图的半透明 3D 模型_2069601709332197377.json, 图片生成/文生图/海报_1994037125291114497.json, 图片生成/文生图/火锅海报：漫锅烟火_1970876758574698497.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_116
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/MiniMax H3终极篇文武双全｜战斗特效打斗场面一步到位_2111056774492147714.json、图片生成/图生图/MiniMax H3终极篇，文武双全战斗特效_2111257793977217026.json、图片生成/文生图/H3官流终极版工作流，文生视频图生视频全覆盖方案_2106884457763532802.json、图片生成/文生图/MINIMAX H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2106896826518560769.json、图片生成/文生图/MINIMax H3短剧神器｜全功能加速文生图图生图_2106595105699360770.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Qwen 千问文生图_2000589481319202818.json、图片生成/文生图/Qwen-Image 4步文生图【极速版v2】_1956241572574756865.json、图片生成/文生图/Qwen-Image8步加速Lora4倍加速文生图支持中文输出堪比Seedream，简直不要太强啦_1953340351912312834.json、图片生成/文生图/Qwen-文生图+中文字体LORA-极速版_1955571767731523585.json、图片生成/文生图/Qwen-文生图+中文字体LORA-极速版_1993314920903147522.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：68%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicScheduler`
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `UNETLoader`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `SaveImage`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `solarL_SaveImagesToZip`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 11/12 个有
-- `BasicGuider` —— 10/12 个有
-- `PrimitiveStringMultiline` —— 10/12 个有
-- `RandomNoise` —— 10/12 个有
-- `SamplerCustomAdvanced` —— 10/12 个有
-- `Any Switch (rgthree)` —— 9/12 个有
-- `CreateVideo` —— 9/12 个有
-- `Fast Groups Muter (rgthree)` —— 9/12 个有
-- `LoadAudio` —— 9/12 个有
-- `ModelAttentionBackend` —— 9/12 个有
-- `SaveVideo` —— 9/12 个有
-- `BlockSparseAttention` —— 8/12 个有
-- `GetNode` —— 8/12 个有
-- `SaveImage` —— 8/12 个有
-- `SetNode` —— 8/12 个有
-- `Bookmark (rgthree)` —— 6/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
-- `MiniMaxH3ImageToVideo` —— 6/12 个有
-- `ModelPreviewOverrideKJ` —— 6/12 个有
-- `Mute / Bypass Relay (rgthree)` —— 6/12 个有
-- `Mute / Bypass Repeater (rgthree)` —— 6/12 个有
-- `PlaySound|pysssss` —— 6/12 个有
-- `SetReserveVRAM` —— 6/12 个有
-- `easy int` —— 6/12 个有
-- `ConditioningZeroOut` —— 5/12 个有
-- `SelfLiftH3Sampler` —— 5/12 个有
-- `ManualSigmas` —— 4/12 个有
-- `EasyCache` —— 3/12 个有
-- `ExtendIntermediateSigmas` —— 3/12 个有
-- `MiniMaxChunkFeedForward` —— 3/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/12 个有
-- `MiniMaxLowVRAMAttention` —— 3/12 个有
-- `VHS_VideoCombine` —— 3/12 个有
-- `GoohaiUniversalSlider` —— 2/12 个有
-- `ImageScale` —— 2/12 个有
-- `MiniMaxH3SigmaShift` —— 2/12 个有
-- `Text` —— 2/12 个有
-- `EmptyImage` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `LoraLoaderBypassModelOnly` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `easy showAnything` —— 1/12 个有
+- `JjkText` —— 12/13 个有
+- `LoraLoader` —— 12/13 个有
+- `ImpactSwitch` —— 11/13 个有
+- `Int` —— 11/13 个有
+- `UNETLoader` —— 11/13 个有
+- `CR Text Concatenate` —— 5/13 个有
+- `PreviewImage` —— 2/13 个有
+- `TextCombinerTwo` —— 2/13 个有
+- `UnetLoaderGGUF` —— 2/13 个有
+- `CR SDXL Aspect Ratio` —— 1/13 个有
+- `DF_Text_Box` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 12 | 100% |
-| 高度 | 80 | 80 - 80 | 12 | 100% |
-| 采样步数 | 4 | 4 - 4 | 12 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
-| 采样算法 | er_sde | - | 12 | 100% |
-| 调度器 | beta | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| LoRA 模型强度 | 0.8 | 0.4 - 1 | 12 | 81% |
+| LoRA 文本强度 | 0.8 | 0.4 - 1 | 12 | 76% |
+| 采样步数 | 4 | 4 - 8 | 13 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 85% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 512 | 512 - 800 | 13 | 82% |
+| 高度 | 512 | 512 - 1200 | 13 | 64% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，12 个样本，一致性 100%
-- 调度器 最常用 beta，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（13/12 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 0.8，观测区间 0.4 - 1，12 个样本，取值集中（一致性 81%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.4 - 1，12 个样本
+- 采样步数 中位数 4，观测区间 4 - 8，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 85%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 800，13 个样本，取值集中（一致性 82%）
+- 高度 中位数 512，观测区间 512 - 1200，13 个样本
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

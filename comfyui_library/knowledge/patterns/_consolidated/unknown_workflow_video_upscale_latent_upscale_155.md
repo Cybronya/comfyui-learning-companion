@@ -3,56 +3,83 @@ name: unknown_workflow_video_upscale_latent_upscale_155
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [BasicGuider, CLIPLoader, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3LatentUpscaleBy32T8, PathchSageAttentionKJ, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.5905
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CM_IntToFloat, CR Prompt Text, ComfyMathExpression, EasyCache, FloatConstant, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LiconMSR, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, ModelAttentionBackend, PathchSageAttentionKJ, PromptRelayEncode, PurgeVRAM_UTK, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringFunction|pysssss, StringLength, StringSubstring, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, string_util_StrFind]
 problems: []
 missing: []
-members: [视频生成/文生视频/长视频_2096817182402502658.json, 视频生成/文生视频/（9.8）MiniMax H3 导演台全能工作流_2096955930675073026.json]
+members: [视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json, 视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_155
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/长视频_2096817182402502658.json、视频生成/文生视频/（9.8）MiniMax H3 导演台全能工作流_2096955930675073026.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json、视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
-- `CreateVideo`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LiconMSR`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3LatentUpscaleBy32T8`
+- `MiniMaxH3ImageToVideo`
+- `ModelAttentionBackend`
 - `PathchSageAttentionKJ`
+- `PromptRelayEncode`
+- `PurgeVRAM_UTK`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `StringFunction|pysssss`
+- `StringLength`
+- `StringSubstring`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAEEncode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy showAnything`
+- `string_util_StrFind`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `JZL_MiniMaxAssetManager` —— 1/2 个有
-- `MiniMaxH3Director` —— 1/2 个有
-- `MiniMaxH3DirectorRefine` —— 1/2 个有
 - `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `XB_ReferenceAny` —— 1/2 个有
-- `XB_Sage_BlockSwap` —— 1/2 个有
 
 ## 典型参数
 

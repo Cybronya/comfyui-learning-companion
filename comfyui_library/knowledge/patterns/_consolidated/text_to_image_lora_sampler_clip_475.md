@@ -1,90 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_475
 type: Text To Image
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.894333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageFromBatch, ImageStitch, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPatchTorchSettings, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringConcatenate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.892
+common_nodes: [Anything Everywhere, Anything Everywhere3, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/MinimaxH3角色六视图自动版｜图生图多角度角色设定_2090409369983864834.json, 图片生成/图生图/角色六视图自动生成｜MinimaxH3多角度图生图设定_2090551576799825921.json, 视频生成/图生视频/人物三视图生成｜MinimaxH3老金驿站高细节工作流_2090834916031426562.json]
+members: [图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json, 图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json, 图片生成/文生图/Wan2.2 文生图_1954164943279013889.json, 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_475
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/MinimaxH3角色六视图自动版｜图生图多角度角色设定_2090409369983864834.json、图片生成/图生图/角色六视图自动生成｜MinimaxH3多角度图生图设定_2090551576799825921.json、视频生成/图生视频/人物三视图生成｜MinimaxH3老金驿站高细节工作流_2090834916031426562.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json、图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json、图片生成/文生图/Wan2.2 文生图_1954164943279013889.json、图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
 - **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `Anything Everywhere`
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `ImageFromBatch`
-- `ImageStitch`
-- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPatchTorchSettings`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `SaveImage`
-- `StringConcatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `LTX_lora_loader` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `RHLLMChatNode` —— 2/3 个有
-- `AILab_QwenVL` —— 1/3 个有
-- `CreateVideo` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
+- `Fast Bypasser (rgthree)` —— 3/4 个有
+- `JjkText` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `Text Concatenate (JPS)` —— 3/4 个有
+- `LayerUtility: JoyCaptionBeta1` —— 2/4 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/4 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/4 个有
+- `RH_Captioner_Pro` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_2s | - | 4 | 100% |
+| 调度器 | bong_tangent | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 60/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，4 个样本，一致性 100%
+- 调度器 最常用 bong_tangent，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
+- 高发问题（60/4 个样本）：Steps较低可能导致细节不足

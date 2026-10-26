@@ -3,33 +3,33 @@ name: unknown_workflow_generic_613
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9428
-common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.96
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json, 音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json, 音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json, 音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json, 音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json]
+members: [图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json, 音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_613
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json、音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json、音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json、音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json、音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json、音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `Text` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

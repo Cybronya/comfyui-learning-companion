@@ -3,35 +3,40 @@ name: unknown_workflow_generic_960
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.803667
-common_nodes: [EcommercePromptGenerator, ImpactSwitch, Int, JjkShowText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, String, Text Input [Dream]]
+coverage: 0.846
+common_nodes: [CR Prompt Text, Comfly_api_set, GoogleTranslateTextNode, ImageConcanate, LoadImage, Note _O, PDIMAGE_LongerSize, PMRF, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/电商详情页眼镜案例_2098984516898611202.json, 图片生成/图生图/电商详情页眼镜案例_2100162321741074434.json, 图片生成/图生图/电商详情页（眼镜案例）_2015765538475085825.json]
+members: [图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json, 图片生成/图生图/森系绿圆API_1942827456606703618.json, 图片生成/图生图/透明绿圆API_1942832550396276737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_960
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/电商详情页眼镜案例_2098984516898611202.json、图片生成/图生图/电商详情页眼镜案例_2100162321741074434.json、图片生成/图生图/电商详情页（眼镜案例）_2015765538475085825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json、图片生成/图生图/森系绿圆API_1942827456606703618.json、图片生成/图生图/透明绿圆API_1942832550396276737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EcommercePromptGenerator`
-- `ImpactSwitch`
-- `Int`
-- `JjkShowText`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `GoogleTranslateTextNode`
+- `ImageConcanate`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `Note _O`
+- `PDIMAGE_LongerSize`
+- `PMRF`
 - `SaveImage`
-- `String`
-- `Text Input [Dream]`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Comfly_Flux_Kontext_Edit` —— 2/3 个有
+- `Comfly_Flux_Kontext` —— 1/3 个有
 
 ## 典型参数
 

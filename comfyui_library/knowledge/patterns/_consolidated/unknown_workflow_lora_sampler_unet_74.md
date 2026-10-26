@@ -1,77 +1,97 @@
 ---
 name: unknown_workflow_lora_sampler_unet_74
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.975
-common_nodes: [CFGNorm, CLIPLoader, CR Prompt Text, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.824333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/FireRed 局部重绘改图_2083841089588523009.json, 图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2053381577794699265.json, 图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2056041789731164161.json, 图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑_2033156894868639745.json, 图片生成/图生图/小红书人物换装 双图编辑_2034550287024791553.json, 图片生成/图生图/小红书人物换装+局部变大+双图编辑_2034677242252496898.json, 图片生成/图生图/小红书开源模型FireRed-Image-edit1.1局部重绘改图p图改字_2029809441138286593.json, 图片生成/图生图/超好用🔥人物一键换装-双图编辑_2063984968640061441.json]
+members: [图片生成/图生图/一键生成15-45S MV视频！效果非常好！_2096496210461945858.json, 图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json, 数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json, 视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json, 视频生成/图生视频/ONE SHOT STORY｜MiniMax H3 一图生成15秒品牌短片_2087898553539710978.json, 视频生成/图生视频/一键MV_2095144928673357825.json, 视频生成/文生视频/Minimax H3 全自动短片（要配合提示词skill使用）林耀_2091930702962057218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_74
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FireRed 局部重绘改图_2083841089588523009.json、图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2053381577794699265.json、图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2056041789731164161.json、图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑_2033156894868639745.json、图片生成/图生图/小红书人物换装 双图编辑_2034550287024791553.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/一键生成15-45S MV视频！效果非常好！_2096496210461945858.json、图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json、数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json、视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGNorm`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextTrim`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `easy cleanGpuUsed`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptConcat`
+- `easy saveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/8 个有
-- `EmptyLatentImage` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `InpaintModelConditioning` —— 4/8 个有
-- `Int` —— 3/8 个有
-- `MaskFillHoles` —— 3/8 个有
-- `easy int` —— 1/8 个有
+- `LoadAudio` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `Text To Image (mtb)` —— 8/9 个有
+- `easy batchAnything` —— 8/9 个有
+- `ExtractLinesByIndex` —— 7/9 个有
+- `Int Literal` —— 7/9 个有
+- `ShowText|pysssss` —— 7/9 个有
+- `Text String Truncate` —— 6/9 个有
+- `DF_Float` —— 4/9 个有
+- `ACE_AudioCrop` —— 2/9 个有
+- `ASRMW` —— 2/9 个有
+- `CR Text Concatenate` —— 2/9 个有
+- `GetAudioDurationFromAudio` —— 2/9 个有
+- `LTXVConcatAVLatent` —— 2/9 个有
+- `LTXVSeparateAVLatent` —— 2/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/9 个有
+- `PreviewAudio` —— 2/9 个有
+- `PrimitiveStringMultiline` —— 2/9 个有
+- `RH_LLMAPI_Pro_Node` —— 2/9 个有
+- `SplitSigmas` —— 2/9 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/9 个有
+- `easy clearCacheAll` —— 2/9 个有
+- `ttN concat` —— 2/9 个有
+- `CreateVideo` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `LoraLoaderBypassModelOnly` —— 1/9 个有
+- `ModelAttentionBackend` —— 1/9 个有
+- `SaveVideo` —— 1/9 个有
+- `easy MiniMaxH3MotionContextHard` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

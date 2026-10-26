@@ -3,56 +3,72 @@ name: unknown_workflow_video_lora_sampler_895
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.658
-common_nodes: [AudioSeparation, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, LongCatVoiceCloneTTS, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PreviewAudio, ReplaceVideoLatentFrames, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader, easy cleanGpuUsed]
+coverage: 0.767
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageScaleBy, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, RIFE VFI, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy clearCacheAll, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/数字人longcat-Avatar_2054160233651548161.json, 视频生成/图生视频/数字人手持产品口播_2076667831231533057.json]
+members: [视频生成/图生视频/Wan2.2 Remix 电商服装展示视频_2047589071815446530.json, 视频生成/图生视频/电商服装展示视频模特走秀视频_2065831471654457346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_895
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/数字人longcat-Avatar_2054160233651548161.json、视频生成/图生视频/数字人手持产品口播_2076667831231533057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Remix 电商服装展示视频_2047589071815446530.json、视频生成/图生视频/电商服装展示视频模特走秀视频_2065831471654457346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioSeparation`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `Fast Groups Muter (rgthree)`
 - `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageScaleBy`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LongCatVoiceCloneTTS`
-- `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
-- `ReplaceVideoLatentFrames`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `RIFE VFI`
 - `SetNode`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `WanImageToVideo`
 - `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveImage` —— 1/2 个有
+- `TT_img_enc` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | beta | - | 2 | 100% |
 
 ## 常见问题
 
@@ -60,4 +76,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 beta，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

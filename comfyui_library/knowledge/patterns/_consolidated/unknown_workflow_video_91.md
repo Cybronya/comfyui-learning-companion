@@ -3,35 +3,38 @@ name: unknown_workflow_video_91
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9165
-common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
+coverage: 0.4835
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHUploadZip, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack_1913093088577843201.json, 视频生成/文生视频/当前多模态视频生成SOTA！FramePack长视频生成_1913067858023383042.json]
+members: [图片生成/图生图/批量上传图片进行预览-拓宽视野_1979151893966524417.json, 视频生成/图生视频/批量图片合成视频_1979131311141064706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_91
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack_1913093088577843201.json、视频生成/文生视频/当前多模态视频生成SOTA！FramePack长视频生成_1913067858023383042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量上传图片进行预览-拓宽视野_1979151893966524417.json、视频生成/图生视频/批量图片合成视频_1979131311141064706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageResizeKJ`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RunningHub_FramePack`
-- `SeargePromptText`
-- `VHS_VideoCombine`
+- `PreviewImage`
+- `RHUploadZip`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVPromptEnhancer` —— 1/2 个有
-- `LTXVPromptEnhancerLoader` —— 1/2 个有
+- `CM_IntToFloat` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
 
 ## 典型参数
 

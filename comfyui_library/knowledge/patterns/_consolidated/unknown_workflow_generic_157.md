@@ -1,36 +1,44 @@
 ---
 name: unknown_workflow_generic_157
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.670455
-common_nodes: [LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
+coverage: 0.927917
+common_nodes: [CR Prompt Text, SaveAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【闭源】全能图片G2.5（经济版-图片编辑）_2098371909300867074.json, 图片生成/图生图/全能G2.5-sunbrust图像编辑_2098243739906043906.json, 图片生成/图生图/全能图像G2.5图生图 高质量版_2097976779142160385.json, 图片生成/图生图/全能图片 G-PT  Image 2.5 Sunburst 图生图_2097953864036212738.json, 图片生成/图生图/全能图片_G-PT_Image_2.5_Sunburst_图生图_2098218274612932610.json, 图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json, 图片生成/图生图/六种户型彩平图_2105320989470060545.json, 图片生成/图生图/图片艺术处理3_2104930329265004545.json, 图片生成/图生图/图片转艺术风格插画六宫图-G-2.5_2101627808400371714.json, 图片生成/图生图/效果图四种光影渲染（G-2.5)_2108730203576029185.json, 图片生成/图生图/照片重新渲染六种风格-G-2.5_2101498062207279105.json]
+members: [数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json, 数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json, 音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json, 音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json, 音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json, 音频生成/音频生成/Breeze TTS 2 声音再设计_2096223350476599297.json, 音频生成/音频生成/Breeze TTS 2 声音再设计（非常好高保真还原原声 读取文字）_2109829100578885633.json, 音频生成/音频生成/Breeze TTS 2 声音导演2608_2096515625681244161.json, 音频生成/音频生成/Breeze TTS 2 声音导演_2095397305070473217.json, 音频生成/音频生成/Breeze TTS 2 声音设计 （自用）_2108146608234909698.json, 音频生成/音频生成/Breeze TTS2_自动情绪_音频克隆_设计_2098331150149308417.json, 音频生成/音频生成/【aide】Breeze TTS2_自动情绪_音频克隆_设计_2099749651778985986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_157
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/【闭源】全能图片G2.5（经济版-图片编辑）_2098371909300867074.json、图片生成/图生图/全能G2.5-sunbrust图像编辑_2098243739906043906.json、图片生成/图生图/全能图像G2.5图生图 高质量版_2097976779142160385.json、图片生成/图生图/全能图片 G-PT  Image 2.5 Sunburst 图生图_2097953864036212738.json、图片生成/图生图/全能图片_G-PT_Image_2.5_Sunburst_图生图_2098218274612932610.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json、数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json、音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json、音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json、音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG25SunburstImageToImage`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `CR Prompt Text`
+- `SaveAudio`
+- `T8_BreezeTTS_Generate`
+- `T8_BreezeTTS_GenerationSettings`
+- `T8_BreezeTTS_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 9/11 个有
-- `PreviewImage` —— 2/11 个有
-- `MuyeTextEditOutput` —— 1/11 个有
+- `Apply Whisper` —— 10/12 个有
+- `LoadAudio` —— 10/12 个有
+- `PreviewAudio` —— 10/12 个有
+- `T8_BreezeTTS_DirectionRequest` —— 7/12 个有
+- `T8_BreezeTTS_DesignRequest` —— 4/12 个有
+- `T8_BreezeTTS_CloneRequest` —— 3/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `RHLLMChatNode` —— 2/12 个有
+- `easy showAnything` —— 2/12 个有
 
 ## 典型参数
 

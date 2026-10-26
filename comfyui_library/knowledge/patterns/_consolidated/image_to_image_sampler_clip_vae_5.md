@@ -1,73 +1,84 @@
 ---
 name: image_to_image_sampler_clip_vae_5
 type: Image To Image
-frequency: 33
+frequency: 34
 level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, RH_Translator, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.979441
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, FluxGuidance, FluxKontextImageScale, ImageConcatMulti, KSampler, LoadImage, ReferenceLatent, SaveImage, Text Multiline, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/KontextNunchakuDevLora万物皮克斯风格_1944262455931338753.json, 图片生成/图生图/KontextNunchakuDevLora万物美化_1943149163196669953.json, 图片生成/图生图/KontextNunchakuDevLora人物三视图_1944263357543120898.json, 图片生成/图生图/KontextNunchakuDevLora写实艺术风格_1943145435769036801.json, 图片生成/图生图/KontextNunchakuDevLora发光粒子素描风格_1943525207695126529.json, 图片生成/图生图/KontextNunchakuDevLora吉卜力风格_1943499828590485506.json, 图片生成/图生图/KontextNunchakuDevLora孤独的王者动漫风格_1943501453111816194.json, 图片生成/图生图/KontextNunchakuDevLora拍立得相片_1944265400445992961.json, 图片生成/图生图/KontextNunchakuDevLora潦草彩铅线条插画风_1942783159161262082.json, 图片生成/图生图/KontextNunchakuDevLora火焰特效_1943526598106619905.json, 图片生成/图生图/KontextNunchakuDevLora鸟山明风格_1943504711444295681.json, 图片生成/图生图/KontextNunchakuDev万物彩铅风_1942781217336922113.json, 图片生成/图生图/KontextNunchakuDev万物毛茸茸_1942785932607033346.json, 图片生成/图生图/KontextNunchakuDev万物移除_1942788245061349377.json, 图片生成/图生图/KontextNunchakuDev喜剧复古动漫风格_1941339536565891074.json, 图片生成/图生图/KontextNunchakuDev极简主义插画_1942408948442140674.json, 图片生成/图生图/KontextNunchakuDev水粉画艺术风格_1942422462619652098.json, 图片生成/图生图/KontextNunchakuDev波普艺术风格_1942427162085625858.json, 图片生成/图生图/KontextNunchakuDev玻璃雕像_1942437081085849601.json, 图片生成/图生图/KontextNunchakuDev瑞克莫蒂动漫风格_1942412431219961857.json, 图片生成/图生图/KontextNunchakuDev立体派艺术风格_1942424438593761282.json, 图片生成/图生图/KontextNunchakuDev线条画风格_1942777046684905473.json, 图片生成/图生图/KontextNunchakuDev转绘低模_1941336591367565314.json, 图片生成/图生图/KontextNunchakuDev转绘幻想艺术_1941331496819179521.json, 图片生成/图生图/KontextNunchakuDev转绘等距艺术_1941333847969787906.json, 图片生成/图生图/KontextNunchakuDev转绘线艺_1941335193267683329.json, 图片生成/图生图/KontextNunchakuDev转绘霓虹_1941338008530612226.json, 图片生成/图生图/KontextNunchakuDev重新打光_1942783905021759489.json, 图片生成/图生图/KontextNunchakuDev铅笔素描艺术风格_1942410316838014978.json, 图片生成/图生图/KontextNunchakuDev黑白变彩色_1941328448780713986.json, 图片生成/图生图/KontextNunchakuDev黑胡桃木材质人像_1942421784010625026.json, 图片生成/图生图/flux kontext 三联图_1939285901316956162.json, 图片生成/图生图/kontextnunchakudevlora全能图片G4o同款icon头像_1943141910594666498.json]
+members: [图片生成/图生图/FLUX2Klein_写实风格转真人3DCG质感风格_极速出图_2041643301173989378.json, 图片生成/图生图/Flux Kontext Dev 开源主体换背景电商工作流_1939119172565524481.json, 图片生成/图生图/Flux Kontext Dev 开源提取线稿_1938935399077044226.json, 图片生成/图生图/Flux Kontext Dev 开源线稿上色_1938867678918725634.json, 图片生成/图生图/Flux Kontext Dev-3D建模风格加速版+放大_1944571710064742401.json, 图片生成/图生图/Flux Kontext Dev-Q版人物变写实加速版+放大（单图）_1941085269749874690.json, 图片生成/图生图/Flux Kontext Dev-一句话换装加速版+放大_1941651089550950402.json, 图片生成/图生图/Flux Kontext Dev-万物拍立得风格加速版+放大_1944571779916419073.json, 图片生成/图生图/Flux Kontext Dev-万物法相加速版+放大_1944571766952087554.json, 图片生成/图生图/Flux Kontext Dev-万物转充气玩偶加速版+放大_1944571747574140930.json, 图片生成/图生图/Flux Kontext Dev-动漫转手绘风格加速版+放大_1943475948014759938.json, 图片生成/图生图/Flux Kontext Dev-动漫转现实风格加速版+放大_1943124583442497537.json, 图片生成/图生图/Flux Kontext Dev-卡通转真人加速版+放大_1943665908873302017.json, 图片生成/图生图/Flux Kontext Dev-图像转皮克斯风格加速版+放大_1944927820898553857.json, 图片生成/图生图/Flux Kontext Dev-图片添加特效加速版+放大_1944016908414779394.json, 图片生成/图生图/Flux Kontext Dev-电影胶片质感+放大_1943661527230713858.json, 图片生成/图生图/Flux Kontext Dev-素描转真人加速版+放大_1946911282425683969.json, 图片生成/图生图/Flux Kontext Dev-线稿上色加速版+放大_1943666773826633729.json, 图片生成/图生图/Flux Kontext Dev-转粘土动漫风格加速版+放大_1948939899769630722.json, 图片生成/图生图/Flux Kontext Dev-转黑白老旧照片加速版+放大_1947228789387501569.json, 图片生成/图生图/Flux Kontext Dev-风景变漫画风格加速版+放大（单图）_1941103747567403009.json, 图片生成/图生图/Flux Kontext Dev-饰品珠宝金属精修加速版+放大_1944315412693569537.json, 图片生成/图生图/Flux Kontext Dev-马赛克消除加速版+放大_1943467504184270849.json, 图片生成/图生图/Flux Kontext Dev-高品质绘画风格转变加速版+放大_1947113753634189314.json, 图片生成/图生图/Flux Kontext Dev-黑白漫画转3D彩色漫画加速版+放大_1943957498988728321.json, 图片生成/图生图/Flux Kontext Dev一句话图像编辑V3（单图）_1938371380234620929.json, 图片生成/图生图/Flux Kontext Dev一句话图像编辑V3（双图）_1938399471682387969.json, 图片生成/图生图/Flux Kontext Dev一句话图生图+放大（双图）_1938849049141563393.json, 图片生成/图生图/Flux Kontext Dev一句话图生图加速版+放大（单图）_1939584231284645890.json, 图片生成/图生图/Flux Kontext Dev一句话图生图加速版+放大（双图）_1939560347982544897.json, 图片生成/图生图/Flux Kontext Dev万物消除加速版+放大（单图）_1940257498471288833.json, 图片生成/图生图/Flux Kontext Dev双人互动脸部一致性增强加速版V0.5_1940000386315096066.json, 图片生成/图生图/Flux Kontext Dev图片变机械风格加速版+放大（单图）_1940935206633369601.json, 图片生成/图生图/Flux1 Kontext put it v4.2_1971140729403805698.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/KontextNunchakuDevLora万物皮克斯风格_1944262455931338753.json、图片生成/图生图/KontextNunchakuDevLora万物美化_1943149163196669953.json、图片生成/图生图/KontextNunchakuDevLora人物三视图_1944263357543120898.json、图片生成/图生图/KontextNunchakuDevLora写实艺术风格_1943145435769036801.json、图片生成/图生图/KontextNunchakuDevLora发光粒子素描风格_1943525207695126529.json…）
+> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（图片生成/图生图/FLUX2Klein_写实风格转真人3DCG质感风格_极速出图_2041643301173989378.json、图片生成/图生图/Flux Kontext Dev 开源主体换背景电商工作流_1939119172565524481.json、图片生成/图生图/Flux Kontext Dev 开源提取线稿_1938935399077044226.json、图片生成/图生图/Flux Kontext Dev 开源线稿上色_1938867678918725634.json、图片生成/图生图/Flux Kontext Dev-3D建模风格加速版+放大_1944571710064742401.json…）
 
 - **类型**：Image To Image
-- **样本数**：33
+- **样本数**：34
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
+全部 34 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `FluxGuidance`
 - `FluxKontextImageScale`
+- `ImageConcatMulti`
 - `KSampler`
 - `LoadImage`
-- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
+- `Text Multiline`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingFlux` —— 32/33 个有
-- `NunchakuFluxDiTLoader` —— 32/33 个有
-- `LoraLoaderModelOnly` —— 26/33 个有
-- `SDXLPromptStyler` —— 19/33 个有
-- `EmptySD3LatentImage` —— 6/33 个有
-- `ArtistsImage_Zho` —— 4/33 个有
-- `JoinStringMulti` —— 4/33 个有
-- `ImageStitch` —— 2/33 个有
-- `Get Image Size` —— 1/33 个有
-- `UnetLoaderGGUF` —— 1/33 个有
-- `easy imageScaleDownBy` —— 1/33 个有
+- `DualCLIPLoader` —— 33/34 个有
+- `RH_Translator` —— 33/34 个有
+- `ImageStitch` —— 31/34 个有
+- `UNETLoader` —— 31/34 个有
+- `PMRF` —— 29/34 个有
+- `NunchakuFluxDiTLoader` —— 25/34 个有
+- `NunchakuFluxLoraLoader` —— 25/34 个有
+- `LoraLoaderModelOnly` —— 15/34 个有
+- `UnetLoaderGGUF` —— 12/34 个有
+- `ShowText|pysssss` —— 8/34 个有
+- `MagCache` —— 6/34 个有
+- `TeaCache` —— 6/34 个有
+- `CR Prompt Text` —— 3/34 个有
+- `CLIPLoader` —— 1/34 个有
+- `FastCanvas` —— 1/34 个有
+- `FastCanvasTool` —— 1/34 个有
+- `GoogleTranslateTextNode` —— 1/34 个有
+- `Image Comparer (rgthree)` —— 1/34 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/34 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 33 | 96% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 33 | 100% |
-| 采样算法 | euler | - | 33 | 100% |
-| 调度器 | simple | - | 33 | 85% |
-| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
+| 采样步数 | 14 | 8 - 20 | 34 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 34 | 100% |
+| 采样算法 | euler | - | 34 | 100% |
+| 调度器 | simple | - | 34 | 100% |
+| 重绘幅度 | 1 | 0.99 - 1 | 34 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，33 个样本，取值集中（一致性 96%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，33 个样本，一致性 100%
-- 调度器 最常用 simple，33 个样本，一致性 85%
-- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 14，观测区间 8 - 20，34 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，34 个样本，一致性 100%
+- 调度器 最常用 simple，34 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.99 - 1，34 个样本，取值集中（一致性 100%）
+- 高发问题（17/34 个样本）：Steps较低可能导致细节不足

@@ -1,65 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_614
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.438
-common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, GetNode, GoohaiUniversalSlider, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, SetNode, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, 忽略多组孤海]
+coverage: 0.90125
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 终极视频生成 （多模态+提示词加强 高清加速工作流）_2111249057271336962.json, 视频生成/图生视频/自己用的_2110993734681841665.json, 视频生成/图生视频/自用YZ金鱼-MiniMax H3 终极篇-文武双全_2110932091864174593.json]
+members: [视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json, 视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json, 视频生成/文生视频/StandIn人物一致性_1959187908609650689.json, 视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_614
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 终极视频生成 （多模态+提示词加强 高清加速工作流）_2111249057271336962.json、视频生成/图生视频/自己用的_2110993734681841665.json、视频生成/图生视频/自用YZ金鱼-MiniMax H3 终极篇-文武双全_2110932091864174593.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json、视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json、视频生成/文生视频/StandIn人物一致性_1959187908609650689.json、视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `GetNode`
-- `GoohaiUniversalSlider`
-- `KSamplerSelect`
-- `LoadAudio`
+全部 4 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `SetNode`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `忽略多组孤海`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `MiniMaxChunkFeedForward` —— 1/3 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/3 个有
-- `ShowAnything|Mie` —— 1/3 个有
-- `T8SpeechReference` —— 1/3 个有
-- `ZNGB_AudioConcatMulti` —— 1/3 个有
+- `Int` —— 2/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `RH_Prompter` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

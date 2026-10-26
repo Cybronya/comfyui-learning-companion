@@ -3,32 +3,38 @@ name: unknown_workflow_generic_770
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.87075
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+coverage: 0.695
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_AlibabaHappyhorse10ImageToVideo, RH_AlibabaHappyhorse10ReferenceToVideo, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json, 视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json, 视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json]
+members: [图片生成/图生图/多图参考视频生成_2064592013978324994.json, 视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json, 视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json, 视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_770
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json、视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json、视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/多图参考视频生成_2064592013978324994.json、视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json、视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json、视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `RH_AlibabaHappyhorse10ReferenceToVideo`
+- `RH_AlibabaHappyhorse10TextToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 2/4 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
 
 ## 典型参数
 

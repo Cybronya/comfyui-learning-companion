@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_884
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.741333
-common_nodes: [PreviewAny, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.94375
+common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_Pronunciation]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen3.5 反推图片+视频工作流_2040610012187332609.json, 图片生成/图生图/Qwen3.5 反推工作流_2035976986505519106.json, 音频生成/音频生成/视频提示词反推_2102688801117265922.json]
+members: [音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json, 音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json, 音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json, 音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_884
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen3.5 反推图片+视频工作流_2040610012187332609.json、图片生成/图生图/Qwen3.5 反推工作流_2035976986505519106.json、音频生成/音频生成/视频提示词反推_2102688801117265922.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json、音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json、音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json、音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `PreviewAny`
-- `VHS_LoadVideo`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_Pronunciation`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `T8_IndexTTS25_EmotionControl` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
+- `SaveAudioAdvanced` —— 1/4 个有
 
 ## 典型参数
 

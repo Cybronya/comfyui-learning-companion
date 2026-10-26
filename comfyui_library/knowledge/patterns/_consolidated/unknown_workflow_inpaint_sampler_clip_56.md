@@ -3,68 +3,57 @@ name: unknown_workflow_inpaint_sampler_clip_56
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [AdvancedLyingSigmaSampler, BasicGuider, BasicScheduler, CLIPTextEncode, Colored Image (mtb), FaceParse(FaceParsing), FaceParsingModelLoader(FaceParsing), FaceParsingProcessorLoader(FaceParsing), FaceParsingResultsParser(FaceParsing), Image Comparer (rgthree), ImageToMask, ImpactGaussianBlurMask, InpaintModelConditioning, KSamplerSelect, LayerUtility: ImageBlendAdvance, LoadImage, MaskPreview+, MaskToImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader, easy imageSize]
+coverage: 0.8065
+common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, DifferentialDiffusion, Fast Groups Muter (rgthree), Flux2Scheduler, FluxKontextImageScale, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcatMulti, InpaintModelConditioning, KOOK_SaveJPGImage, KSamplerSelect, LayerMask: MaskPreview, LayerUtility: ExtendCanvasV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SolidMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.krea真实皮肤质感_1971483655719862274.json, 图片生成/图生图/Flux2-klein+zimage单图人像编辑去ai感_2012155674465144834.json]
+members: [图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json, 图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_56
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX.krea真实皮肤质感_1971483655719862274.json、图片生成/图生图/Flux2-klein+zimage单图人像编辑去ai感_2012155674465144834.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json、图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdvancedLyingSigmaSampler`
-- `BasicGuider`
-- `BasicScheduler`
+- `Any Switch (rgthree)`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `Colored Image (mtb)`
-- `FaceParse(FaceParsing)`
-- `FaceParsingModelLoader(FaceParsing)`
-- `FaceParsingProcessorLoader(FaceParsing)`
-- `FaceParsingResultsParser(FaceParsing)`
+- `DifferentialDiffusion`
+- `Fast Groups Muter (rgthree)`
+- `Flux2Scheduler`
+- `FluxKontextImageScale`
+- `GetImageSize`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageToMask`
-- `ImpactGaussianBlurMask`
+- `ImageConcatMulti`
 - `InpaintModelConditioning`
+- `KOOK_SaveJPGImage`
 - `KSamplerSelect`
-- `LayerUtility: ImageBlendAdvance`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ExtendCanvasV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskPreview+`
-- `MaskToImage`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SolidMask`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy imageSize`
-
-**可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 1/2 个有
-- `CLIPLoader` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `EmptyFlux2LatentImage` —— 1/2 个有
-- `Flux2Scheduler` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LayerMask: MaskPreview` —— 1/2 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
-- `NunchakuFluxDiTLoader` —— 1/2 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
+- `easy int`
 
 ## 典型参数
 

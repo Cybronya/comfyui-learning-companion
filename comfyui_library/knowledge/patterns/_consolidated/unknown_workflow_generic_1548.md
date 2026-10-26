@@ -3,33 +3,46 @@ name: unknown_workflow_generic_1548
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_ViduReferenceToVideoQ2, SaveVideo]
+coverage: 0.866
+common_nodes: [CR Text, ImageCrop+, ImageScale, JjkText, LoadImage, RH_Captioner_Pro, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, ShowText|pysssss, easy imageSplitGrid]
 problems: []
 missing: []
-members: [视频生成/图生视频/ViduReferenceToVideoQ2_2038488597191462913.json, 视频生成/图生视频/对镜头自拍_2044681213067141122.json]
+members: [图片生成/图生图/柏辰电商-宠物服装卖点生成工作流V1_2016301967601045505.json, 图片生成/图生图/柏辰电商-宠物服装卖点生成工作流V2-自定义品种_2016759236046364673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1548
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ViduReferenceToVideoQ2_2038488597191462913.json、视频生成/图生视频/对镜头自拍_2044681213067141122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/柏辰电商-宠物服装卖点生成工作流V1_2016301967601045505.json、图片生成/图生图/柏辰电商-宠物服装卖点生成工作流V2-自定义品种_2016759236046364673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `ImageCrop+`
+- `ImageScale`
+- `JjkText`
 - `LoadImage`
-- `RH_ViduReferenceToVideoQ2`
-- `SaveVideo`
+- `RH_Captioner_Pro`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `ShowText|pysssss`
+- `easy imageSplitGrid`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `ShowText` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `CR Text Replace` —— 1/2 个有
+- `ImageCombine` —— 1/2 个有
+- `LoadImagesFromURL` —— 1/2 个有
+- `MultiTextConcatenate` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

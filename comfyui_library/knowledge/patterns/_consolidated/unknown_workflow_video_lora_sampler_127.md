@@ -1,71 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_127
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.814167
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, JWStringConcat, LoadWanVideoT5TextEncoder, ShowText|pysssss, TextConcat, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+coverage: 0.467786
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetImageRangeFromBatch, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/wan2.2图生视频自主prompt＋AI扩写＋API指令融合_1955216249916571650.json, 图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_1950813995445977090.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1950934552208416770.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1950823826609348610.json, 视频生成/图生视频/(KJ版4步版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1953756753928355841.json, 视频生成/图生视频/(本地解码KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1954077934976061442.json, 视频生成/图生视频/(（自用）KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1952585965787385858.json, 视频生成/图生视频/Comfy挑战赛第一期自动化视频猫猫转身（每周100美金）_1958457023132286977.json, 视频生成/图生视频/Wan2.2 6步差异模型Sigma调度3迭代图生视频动态加速版V3_1956010463471566849.json, 视频生成/图生视频/图生视频（Wan2.2-V2）高动态加速版_1956567836586070018.json, 视频生成/文生视频/（自用）Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1952587209671159809.json]
+members: [数字人/数字人/SCAIL-2替换人物_动作迁移_2065095439338270721.json, 数字人/数字人/SCAIL2人物替换_2064916188177719298.json, 数字人/数字人/scail动作迁移_2004737349160497153.json, 数字人/数字人/女装带货_2089734181499789314.json, 数字人/数字人/视频动作模仿迁移SCAIL2-循环长视频_2065350192374837250.json, 视频生成/图生视频/Alan测-SCAIL2-循环长视频_2065033315945631746.json, 视频生成/图生视频/SCAIL2 全自动循环流+替换人物+动作模仿_2067092376300122114.json, 视频生成/图生视频/SCAIL2视频人物替换无限时长替换人物动作迁移人物替换_2065218467845988354.json, 视频生成/图生视频/Scail2-动作迁移-AIGC大赏_2065273440239710209.json, 视频生成/图生视频/Scail2-动作迁移-AIGC大赏_2065316694119510016.json, 视频生成/图生视频/新王驾到 SCAIL2-人物替换，极速循环长视频_2065696343452110850.json, 视频生成/图生视频/新王驾到 SCAIL2-动作迁移，极速循环长视频_2065580332925145090.json, 视频生成/图生视频/最新SCAIL2动作迁移+人物替换极速工作流_2064927798959104002.json, 视频生成/图生视频/最新SCAIL2多人动作迁移+人物替换极速工作流_2065259619429212162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_127
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/wan2.2图生视频自主prompt＋AI扩写＋API指令融合_1955216249916571650.json、图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_1950813995445977090.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1950934552208416770.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1950823826609348610.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/SCAIL-2替换人物_动作迁移_2065095439338270721.json、数字人/数字人/SCAIL2人物替换_2064916188177719298.json、数字人/数字人/scail动作迁移_2004737349160497153.json、数字人/数字人/女装带货_2089734181499789314.json、数字人/数字人/视频动作模仿迁移SCAIL2-循环长视频_2065350192374837250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `JWStringConcat`
-- `LoadWanVideoT5TextEncoder`
-- `ShowText|pysssss`
-- `TextConcat`
+全部 14 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DiffusionModelLoaderKJ`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `SamplerCustom`
+- `SetNode`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 11/12 个有
-- `RH_LLMAPI_NODE` —— 11/12 个有
-- `Wan22PromptSelector` —— 11/12 个有
-- `JWInteger` —— 10/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/12 个有
-- `LayerUtility: PurgeVRAM` —— 10/12 个有
-- `RH_Captioner` —— 10/12 个有
-- `WanVideoImageToVideoEncode` —— 10/12 个有
-- `WanVideoTorchCompileSettings` —— 10/12 个有
-- `GetImageSizeAndCount` —— 9/12 个有
-- `ImageFromBatch+` —— 9/12 个有
-- `FloatToSigmas` —— 3/12 个有
-- `LoadLatent` —— 3/12 个有
-- `SaveImage` —— 3/12 个有
-- `StringToFloatList` —— 3/12 个有
-- `Int` —— 2/12 个有
-- `MathExpression|pysssss` —— 2/12 个有
-- `SaveLatent` —— 2/12 个有
-- `WanVideoEmptyEmbeds` —— 2/12 个有
-- `GLM_Text_Chat` —— 1/12 个有
-- `JjkText` —— 1/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
-- `LoadVideo` —— 1/12 个有
+- `CheckpointLoaderSimple` —— 13/14 个有
+- `ImageResizeKJv2` —— 13/14 个有
+- `Int` —— 13/14 个有
+- `PreviewImage` —— 13/14 个有
+- `SAM3_VideoTrack` —— 13/14 个有
+- `SCAIL2ColoredMask` —— 13/14 个有
+- `easy batchAnything` —— 13/14 个有
+- `easy forLoopEnd` —— 13/14 个有
+- `easy forLoopStart` —— 13/14 个有
+- `easy imageRemBg` —— 13/14 个有
+- `ModelSamplingSD3` —— 12/14 个有
+- `MathExpression|pysssss` —— 11/14 个有
+- `VHS_VideoInfoLoaded` —— 11/14 个有
+- `ImageConcatMulti` —— 10/14 个有
+- `ImpactConditionalBranch` —— 9/14 个有
+- `Fast Groups Muter (rgthree)` —— 8/14 个有
+- `Mute / Bypass Relay (rgthree)` —— 8/14 个有
+- `Mute / Bypass Repeater (rgthree)` —— 8/14 个有
+- `PrimitiveBoolean` —— 8/14 个有
+- `easy showAnything` —— 6/14 个有
+- `CR Text` —— 4/14 个有
+- `TTResolutionSelector` —— 4/14 个有
+- `SimpleMath+` —— 3/14 个有
+- `ComfyMathExpression` —— 2/14 个有
+- `DF_Int_to_Float` —— 2/14 个有
+- `PathchSageAttentionKJ` —— 2/14 个有
+- `SaveImage` —— 2/14 个有
+- `TT_img_enc_v2` —— 2/14 个有
+- `VHS_VideoInfo` —— 2/14 个有
+- `ArchAi3D_HighPass_Blend` —— 1/14 个有
+- `BatchImagesNode` —— 1/14 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/14 个有
+- `GIMMVFI_interpolate` —— 1/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
+- `LoadImageGoohai` —— 1/14 个有
+- `Primitive integer [Crystools]` —— 1/14 个有
+- `WanChunkFeedForward` —— 1/14 个有
+- `easy boolean` —— 1/14 个有
 
 ## 典型参数
 

@@ -3,65 +3,51 @@ name: unknown_workflow_video_lora_sampler_863
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.755
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, CR Prompt Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, InsertLatentToIndexed, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewAny, SaveAudio, VHS_SplitImages, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.6985
+common_nodes: [BasicScheduler, ConditioningZeroOut, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, ModelPreviewOverrideKJ, RunningHub Deepcleaner, SelfLiftAvatarH3Sampler, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V数字人无限长视频工作流V1_1961069392614330370.json]
+members: [视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json, 视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_863
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json、视频生成/图生视频/（KJ版）Wan2.2 S2V数字人无限长视频工作流V1_1961069392614330370.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json、视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `InsertLatentToIndexed`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PreviewAny`
-- `SaveAudio`
-- `VHS_SplitImages`
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHLoader`
+- `FeiHouEasyH3RHOutput`
+- `GetNode`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RunningHub Deepcleaner`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoAddAudioEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `LoraLoaderBypassModelOnly` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
 
 ## 典型参数
 

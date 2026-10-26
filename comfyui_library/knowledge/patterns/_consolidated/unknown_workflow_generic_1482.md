@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1482
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, Text]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json, 图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json]
+members: [图片生成/图生图/全能图片pro-六宫格一键生成-短剧分镜制作_2024430711658258434.json, 图片生成/图生图/全能图片编辑演示-单图_2029742452126523393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1482
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json、图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片pro-六宫格一键生成-短剧分镜制作_2024430711658258434.json、图片生成/图生图/全能图片编辑演示-单图_2029742452126523393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Text`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
-- `RH_RhartImageNProTextToImage` —— 1/2 个有
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `CustomAddLabel` —— 1/2 个有
 
 ## 典型参数
 

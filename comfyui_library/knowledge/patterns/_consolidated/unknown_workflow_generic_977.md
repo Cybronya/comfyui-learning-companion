@@ -3,32 +3,37 @@ name: unknown_workflow_generic_977
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.733333
-common_nodes: [CR Prompt Text, RH_RhartImageG2OfficialTextToImage, SaveImage]
+coverage: 0.785667
+common_nodes: [CR Text, DeepTranslatorTextNode, LoadImage, SaveImage, easy sam3ImageSegmentation, easy sam3ModelLoader]
 problems: []
 missing: []
-members: [图片生成/文生图/GT-Image2--官方文生图_2054092104946724866.json, 图片生成/文生图/全能图片G2 Images 2.0模型图片编辑+文生图_2061697098973794305.json, 图片生成/文生图/文生图-全能图片G2--RH官方稳定版--10比例-支持4K_2049692994122551297.json]
+members: [图片生成/图生图/SAM-3语义分割抠图 - 接入SD-PPP实现 自动抠图选择主体_2073641773594923009.json, 图片生成/图生图/SAM3-一键抠图_抠像_去背景-透明背景-语义分割_2020048805160292353.json, 图片生成/文生图/电商做图效率翻10倍：SAM3语义分割抠图，背景再乱也不怕+全节点注释_2074043067904122881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_977
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/GT-Image2--官方文生图_2054092104946724866.json、图片生成/文生图/全能图片G2 Images 2.0模型图片编辑+文生图_2061697098973794305.json、图片生成/文生图/文生图-全能图片G2--RH官方稳定版--10比例-支持4K_2049692994122551297.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SAM-3语义分割抠图 - 接入SD-PPP实现 自动抠图选择主体_2073641773594923009.json、图片生成/图生图/SAM3-一键抠图_抠像_去背景-透明背景-语义分割_2020048805160292353.json、图片生成/文生图/电商做图效率翻10倍：SAM3语义分割抠图，背景再乱也不怕+全节点注释_2074043067904122881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG2OfficialTextToImage`
+- `CR Text`
+- `DeepTranslatorTextNode`
+- `LoadImage`
 - `SaveImage`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
 - `easy showAnything` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `MaskPreview` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,37 +3,36 @@ name: unknown_workflow_generic_1087
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.5
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.75
+common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveVideo, Text Concatenate]
 problems: []
-missing: [TextBox|fofo]
-members: [音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json, 音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json]
+missing: []
+members: [图片生成/文生图/全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json, 图片生成/文生图/最新全能视频S文生视频（史上最便宜）_2067317730839187458.json, 视频生成/文生视频/全能视频S文生视频0.05元_次_1973500244770033666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1087
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json、音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json、音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json、图片生成/文生图/最新全能视频S文生视频（史上最便宜）_2067317730839187458.json、视频生成/文生视频/全能视频S文生视频0.05元_次_1973500244770033666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `CR Prompt Text`
+- `RH_Sora2_T2V`
+- `SaveVideo`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextBox|fofo` —— 1/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `ShowText` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：TextBox|fofo
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

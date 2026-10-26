@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1533
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8255
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_Sora2_I2V, RH_Sora2_I2V_PRO, SaveVideo]
+coverage: 0.656
+common_nodes: [ImageResizeKJv2, ImageScaleToTotalPixels, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI漫剧视频生成-盯盯盯_2027720489086492673.json, 视频生成/图生视频/全能视频s图生视频工作流_2030902147759476737.json]
+members: [图片生成/图生图/提取姿势_2103116858198155265.json, 图片生成/文生图/节点系列02-resize_v2节点_2010905425004208129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1533
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI漫剧视频生成-盯盯盯_2027720489086492673.json、视频生成/图生视频/全能视频s图生视频工作流_2030902147759476737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/提取姿势_2103116858198155265.json、图片生成/文生图/节点系列02-resize_v2节点_2010905425004208129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_Sora2_I2V`
-- `RH_Sora2_I2V_PRO`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
+- `AIO_Preprocessor` —— 1/2 个有
+- `ConstrainResolution` —— 1/2 个有
 
 ## 典型参数
 

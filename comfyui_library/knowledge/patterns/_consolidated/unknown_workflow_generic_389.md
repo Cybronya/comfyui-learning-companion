@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_389
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveImage, easy imageRemBg]
+coverage: 0.952429
+common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json, 图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json, 图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json, 图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json, 图片生成/图生图/抠图_1961729963818991618.json, 图片生成/图生图/抠图（超牛）_2017208972964536322.json]
+members: [图片生成/文生图/NG31Flash_TextToImage_v3.1_2033838530295762945.json, 图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json, 图片生成/文生图/全能图片V2-文生_2065069414512422913.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json, 图片生成/文生图/全能图片V2-文生图_2066896721665417218.json, 图片生成/文生图/文生图-全能图片V2_2067782403392888833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_389
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json、图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json、图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json、图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json、图片生成/图生图/抠图_1961729963818991618.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/NG31Flash_TextToImage_v3.1_2033838530295762945.json、图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json、图片生成/文生图/全能图片V2-文生_2065069414512422913.json、图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json、图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
+全部 7 个 workflow 都包含：
+- `RH_RhartImageNG31FlashTextToImage`
 - `SaveImage`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskToImage` —— 3/6 个有
-- `Label (rgthree)` —— 1/6 个有
+- `Text _O` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_846
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.842
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, TextInput_]
+coverage: 0.82425
+common_nodes: [LoadImage, RH_Translator, RH_Veo3_Image2Video, SaveVideo, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1打字P图双图版_1964937780558184449.json, 图片生成/图生图/Nano-全能图片V1打字p图_1960874962720624641.json, 图片生成/文生图/-全能图片V1谷歌gemini中文修图最强_1961695535503708162.json]
+members: [视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json, 视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json, 视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json, 视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_846
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/-全能图片V1打字P图双图版_1964937780558184449.json、图片生成/图生图/Nano-全能图片V1打字p图_1960874962720624641.json、图片生成/文生图/-全能图片V1谷歌gemini中文修图最强_1961695535503708162.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json、视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json、视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json、视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `TextInput_`
+- `RH_Translator`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 

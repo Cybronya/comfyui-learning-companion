@@ -1,72 +1,92 @@
 ---
 name: image_to_image_sampler_vae_21
 type: Image To Image
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.962333
-common_nodes: [FluxGuidance, KSampler, LoadImage, NunchakuFluxDiTLoader, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.447714
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, GetNode, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【阡陌】Nunchaku 8倍加速 flux 图生图_1944739551309123585.json, 图片生成/图生图/单图-kontext-nunchaku_1952297107749285889.json, 图片生成/图生图/双截棍-kontext（dev）_1938464979685433345.json, 图片生成/图生图/最好用的 nunchaku flux kontext 去水印_2053752457087467522.json, 图片生成/图生图/穆寒_2072683428708966401.json, 图片生成/图生图/超强去水印工作流Kontext_2095027681485217794.json]
+members: [图片生成/图生图/动作模仿-人物一致性-10S出图_2001928140073103361.json, 图片生成/图生图/多角度-人物一致性_1997274319640268802.json, 图片生成/图生图/超级360°姿态生成生成各种朝向_1979064149919567874.json, 图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版 阿硕_1980485872774762497.json, 图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json, 图片生成/文生图/一张图生成人物全角度_2011206036333535234.json, 图片生成/文生图/人物全角度一致性-加速版 -邻家AI大女孩_2043564088546041858.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae_21
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【阡陌】Nunchaku 8倍加速 flux 图生图_1944739551309123585.json、图片生成/图生图/单图-kontext-nunchaku_1952297107749285889.json、图片生成/图生图/双截棍-kontext（dev）_1938464979685433345.json、图片生成/图生图/最好用的 nunchaku flux kontext 去水印_2053752457087467522.json、图片生成/图生图/穆寒_2072683428708966401.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/动作模仿-人物一致性-10S出图_2001928140073103361.json、图片生成/图生图/多角度-人物一致性_1997274319640268802.json、图片生成/图生图/超级360°姿态生成生成各种朝向_1979064149919567874.json、图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版 阿硕_1980485872774762497.json、图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `FluxGuidance`
+全部 7 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGNorm`
+- `CLIPLoader`
+- `EmptyLatentImage`
+- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `SaveImage`
+- `SetNode`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `DualCLIPLoader` —— 5/6 个有
-- `ReferenceLatent` —— 5/6 个有
-- `CLIPTextEncode` —— 4/6 个有
-- `FluxKontextImageScale` —— 4/6 个有
-- `DeepTranslatorTextNode` —— 2/6 个有
-- `EmptySD3LatentImage` —— 2/6 个有
-- `ArgosTranslateCLIPTextEncodeNode` —— 1/6 个有
-- `CLIPTextEncodeFlux` —— 1/6 个有
-- `ConstrainImage|pysssss` —— 1/6 个有
-- `Image Comparer (rgthree)` —— 1/6 个有
-- `LayerUtility: GetImageSize` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `NunchakuFluxLoraLoader` —— 1/6 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/6 个有
+- `ModelPatchTorchSettings` —— 6/7 个有
+- `PrimitiveString` —— 6/7 个有
+- `RHHiddenNodes` —— 6/7 个有
+- `ImageFlip` —— 5/7 个有
+- `Label (rgthree)` —— 5/7 个有
+- `Mute / Bypass Repeater (rgthree)` —— 5/7 个有
+- `Mute / Bypass Relay (rgthree)` —— 4/7 个有
+- `easy bookmark` —— 4/7 个有
+- `Anything Everywhere` —— 1/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `GroundingDinoModelLoader (segment anything2)` —— 1/7 个有
+- `NunchakuQwenImageDiTLoader` —— 1/7 个有
+- `NunchakuQwenImageLoraLoader` —— 1/7 个有
+- `SDPoseOODLoader` —— 1/7 个有
+- `SDPoseOODProcessor` —— 1/7 个有
+- `YOLOModelLoader` —— 1/7 个有
+- `孤海注释` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 20 | 6 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 0.7 - 1 | 6 | 88% |
+| 采样步数 | 8 | 8 - 8 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 960 | 720 - 960 | 7 | 91% |
+| 高度 | 1304 | 1024 - 1304 | 7 | 92% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 90/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.7 - 1，6 个样本，取值集中（一致性 88%）
+- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 960，观测区间 720 - 960，7 个样本，取值集中（一致性 91%）
+- 高度 中位数 1304，观测区间 1024 - 1304，7 个样本，取值集中（一致性 92%）
+- 高发问题（90/7 个样本）：Steps较低可能导致细节不足

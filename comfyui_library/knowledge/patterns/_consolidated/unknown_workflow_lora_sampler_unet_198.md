@@ -1,67 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_unet_198
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.858333
-common_nodes: [AdaptiveLongestEdge_EditUtils, CFGGuider, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.66725
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetVideoComponents, ImageAddNoise, ImageBatchMulti, KSamplerSelect, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop]
 problems: []
 missing: []
-members: [图片生成/图生图/2026.04最强换装工作流-bole_2047349240950689794.json, 图片生成/图生图/FK2一致性-批量编辑_2073291622103740418.json, 图片生成/图生图/[Klein] 虚拟试衣与商品局部精准替换 _ 电商换装  _ 图像局部编辑_2063183070840320002.json]
+members: [视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采(简易版)_2105615690806939649.json, 视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采，无放大模型(简易整理版)_2108935950406610946.json, 视频生成/图生视频/MiniMax H3 真·无缝无色差上下文长视频，适配快速动作武戏，SelfLift双采(简易版)_2113128832604659713.json, 视频生成/文生视频/MiniMax H3 SelfLift双采_2100249506242711553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_198
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2026.04最强换装工作流-bole_2047349240950689794.json、图片生成/图生图/FK2一致性-批量编辑_2073291622103740418.json、图片生成/图生图/[Klein] 虚拟试衣与商品局部精准替换 _ 电商换装  _ 图像局部编辑_2063183070840320002.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采(简易版)_2105615690806939649.json、视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采，无放大模型(简易整理版)_2108935950406610946.json、视频生成/图生视频/MiniMax H3 真·无缝无色差上下文长视频，适配快速动作武戏，SelfLift双采(简易版)_2113128832604659713.json、视频生成/文生视频/MiniMax H3 SelfLift双采_2100249506242711553.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AdaptiveLongestEdge_EditUtils`
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
+- `ComfyMathExpression`
 - `ConditioningZeroOut`
-- `CropWithPadInfo_EditUtils`
-- `EditTextEncode_EditUtils`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
+- `CreateVideo`
+- `ExtendIntermediateSigmas`
+- `GetImageRangeFromBatch`
+- `GetVideoComponents`
+- `ImageAddNoise`
+- `ImageBatchMulti`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AudioGuideFeather`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
 - `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VideoFrameSample`
+- `VideoTemporalCrop`
 
 **可变部分**（部分 workflow 才有）：
-- `Flux2KleinOutputExtractor_EditUtils` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageToURL` —— 1/3 个有
-- `JjkShowText` —— 1/3 个有
-- `Qwen3VL_Chat` —— 1/3 个有
-- `ReferenceLatent` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
-- `ShowAnything|Mie` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ColorTransfer` —— 3/4 个有
+- `ComfySwitchNode` —— 3/4 个有
+- `PrimitiveBoolean` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `easy float` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `VideoConcatenate` —— 1/4 个有
+- `忽略多组孤海` —— 1/4 个有
 
 ## 典型参数
 

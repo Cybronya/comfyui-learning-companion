@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1468
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [CR Prompt Text, SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceDesign]
+coverage: 0.607
+common_nodes: [EmptyImage, JjkText, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/N06-Qwen3TTS音频创造_2102308187058823169.json, 音频生成/音频生成/N06-Qwen3TTS音频创造_2101875104526454786.json]
+members: [图片生成/图生图/全能图片G2.0----官方稳定版_2113797260382392322.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100189843883122689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1468
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/N06-Qwen3TTS音频创造_2102308187058823169.json、音频生成/音频生成/N06-Qwen3TTS音频创造_2101875104526454786.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0----官方稳定版_2113797260382392322.json、图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100189843883122689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveAudio`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceDesign`
+- `EmptyImage`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `RH_SeedreamV45ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

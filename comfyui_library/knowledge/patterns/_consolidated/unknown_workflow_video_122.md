@@ -3,46 +3,34 @@ name: unknown_workflow_video_122
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.705
-common_nodes: [CoordinatePlotter, DrawMaskOnImage, ImageConcatMulti, ImageFromBatch, PointsEditor, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 1
+common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/SecNodes+Sam2丝滑稳定视频遮罩V2 (切镜版)_1976951725854728193.json, 视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json]
+members: [视频生成/图生视频/全能视频Spro版25秒超清视频+电商带货视频+图生视频_1990790899842101250.json, 视频生成/图生视频/全能视频图生嗦罗2Spro25秒高清无水印_2013448553946943489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_122
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/SecNodes+Sam2丝滑稳定视频遮罩V2 (切镜版)_1976951725854728193.json、视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频Spro版25秒超清视频+电商带货视频+图生视频_1990790899842101250.json、视频生成/图生视频/全能视频图生嗦罗2Spro25秒高清无水印_2013448553946943489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CoordinatePlotter`
-- `DrawMaskOnImage`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Sora2_I2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `VHS_PruneOutputs` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
 
 ## 典型参数
 

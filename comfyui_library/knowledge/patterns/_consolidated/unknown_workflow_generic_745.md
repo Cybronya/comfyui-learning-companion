@@ -3,37 +3,34 @@ name: unknown_workflow_generic_745
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.89725
-common_nodes: [Apply Whisper, BreezeTTS2LoadModel, CR Text, LoadAudio, NormalizeAudioLoudness, PreviewAudio, SaveAudioAdvanced]
+coverage: 0.9375
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json, 数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json, 音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json, 音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json]
+members: [图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json, 图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json, 图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json, 图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_745
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json、数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json、音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json、音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json、图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json、图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json、图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Apply Whisper`
-- `BreezeTTS2LoadModel`
-- `CR Text`
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `BreezeTTS2VoiceDirection` —— 3/4 个有
-- `BreezeTTS2VoiceClone` —— 1/4 个有
+- `SeargePromptText` —— 2/4 个有
+- `AddLabel` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

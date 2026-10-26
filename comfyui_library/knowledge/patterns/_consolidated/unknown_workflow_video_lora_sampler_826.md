@@ -3,54 +3,65 @@ name: unknown_workflow_video_lora_sampler_826
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7235
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.726
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/ditto视频风格转绘工作流_1980897835057106945.json, 视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json]
+members: [视频生成/图生视频/AA--自动图生视频-wan2.2 加速+Qwen-VL反推提示词_1999529632661729281.json, 视频生成/图生视频/AA--自动图生视频-wan2.2 加速+flashVSR超清视频放大_2006622024633950209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_826
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ditto视频风格转绘工作流_1980897835057106945.json、视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AA--自动图生视频-wan2.2 加速+Qwen-VL反推提示词_1999529632661729281.json、视频生成/图生视频/AA--自动图生视频-wan2.2 加速+flashVSR超清视频放大_2006622024633950209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `FlashVSRNode` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `VHS_VideoInfo` —— 1/2 个有
+- `easy float` —— 1/2 个有
+- `easy int` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 50% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | lcm | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -58,4 +69,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 fixed，2 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

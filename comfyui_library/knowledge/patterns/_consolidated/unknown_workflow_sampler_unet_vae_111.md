@@ -2,61 +2,76 @@
 name: unknown_workflow_sampler_unet_vae_111
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.819889
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.736333
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json, 图片生成/文生图/incontext-controlnet-home_1914936305506287617.json, 图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json, 图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json, 图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json, 图片生成/文生图/一键微电影分镜-flux完全人物一致+自动裁剪-三分镜_1911275546050002945.json, 图片生成/文生图/国漫美女生成器_1965956635371941889.json, 图片生成/文生图/国漫美女生成器_2059552047061626882.json, 图片生成/文生图/赤木晴子生成工作流_1923305531946299393.json]
+members: [视频生成/图生视频/DsiwaV2 小脸高动态selflift_2100417664513568770.json, 视频生成/图生视频/FastH3 V2 SelfLift 1080P_2100495010562134018.json, 视频生成/图生视频/Mini  max  H3视频小脸不崩坏_2098335113011613698.json, 视频生成/图生视频/MiniMax H3 黑科技加速双采-self-lift工作流_2098836942896062465.json, 视频生成/图生视频/Minimax H3 + Self-lift双采快速超长工作流_2104549240100970498.json, 视频生成/图生视频/Minimax H3 最佳动作视频生成 Ref2V 工作流_2112874707992276993.json, 视频生成/图生视频/qwen文武_2113903502299852801.json, 视频生成/图生视频/qwen文武_2113913807365033985.json, 视频生成/图生视频/改至YZ金鱼-MiniMax H3 终极篇-文武双全_2111027801062203393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_111
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json、图片生成/文生图/incontext-controlnet-home_1914936305506287617.json、图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json、图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json、图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/DsiwaV2 小脸高动态selflift_2100417664513568770.json、视频生成/图生视频/FastH3 V2 SelfLift 1080P_2100495010562134018.json、视频生成/图生视频/Mini  max  H3视频小脸不崩坏_2098335113011613698.json、视频生成/图生视频/MiniMax H3 黑科技加速双采-self-lift工作流_2098836942896062465.json、视频生成/图生视频/Minimax H3 + Self-lift双采快速超长工作流_2104549240100970498.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `DualCLIPLoader`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `ResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `ModelSamplingFlux` —— 8/9 个有
-- `LoraLoader` —— 7/9 个有
-- `CLIPTextEncode` —— 5/9 个有
-- `PreviewImage` —— 5/9 个有
-- `CLIPTextEncodeFlux` —— 4/9 个有
-- `FluxGuidance` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `EmptyLatentImage` —— 1/9 个有
-- `ImageCrop+` —— 1/9 个有
-- `ImpactInt` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `ModelAttentionBackend` —— 8/9 个有
+- `SelfLiftH3Sampler` —— 7/9 个有
+- `CreateVideo` —— 6/9 个有
+- `H3SigmaRefiner` —— 6/9 个有
+- `MiniMaxH3SigmaShift` —— 6/9 个有
+- `BlockSparseAttention` —— 5/9 个有
+- `MiniMaxChunkFeedForward` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 5/9 个有
+- `VHS_VideoCombine` —— 5/9 个有
+- `LoadAudio` —— 4/9 个有
+- `SaveVideo` —— 4/9 个有
+- `SetNode` —— 4/9 个有
+- `Text` —— 4/9 个有
+- `忽略多组孤海` —— 4/9 个有
+- `GetNode` —— 3/9 个有
+- `MiniMaxLowVRAMAttention` —— 3/9 个有
+- `QwenH3PromptLocal` —— 3/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
+- `easy showAnything` —— 3/9 个有
+- `GoohaiUniversalSlider` —— 2/9 个有
+- `SelfLiftAvatarH3Sampler` —— 2/9 个有
+- `easy seed` —— 2/9 个有
+- `ComfySwitchNode` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LoraLoaderBypassModelOnly` —— 1/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/9 个有
+- `easy loraStack` —— 1/9 个有
+- `easy loraStackApply` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.8 - 1 | 7 | 90% |
-| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1536 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,5 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，7 个样本，取值集中（一致性 90%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

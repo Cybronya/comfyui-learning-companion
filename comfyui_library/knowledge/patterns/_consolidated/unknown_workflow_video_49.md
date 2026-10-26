@@ -1,38 +1,48 @@
 ---
 name: unknown_workflow_video_49
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
+coverage: 0.5015
+common_nodes: [AudioCrop, CR Text Replace, DottedWaveformVisualizer, ImpactSwitch, IndexTTS2Run, IndexTTSNode, JjkText, LoadAudio, MathExpression|pysssss, PrimitiveBoolean, PrimitiveFloat, PrimitiveString, SaveAudio, Textbox, VHS_VideoCombine, easy blocker, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/LatentSync 1.6_2091491962556866562.json, 视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json, 视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json]
+members: [音频生成/音频生成/Dubbing Tool _ Index-TTS2.0 Optimized workflow📢_1965757047688069121.json, 音频生成/音频生成/文字配音+克隆神器优化 _ Index-TTS2.0_1972211711941996545.json, 音频生成/音频生成/语音克隆_ Index-TTS2.0 优化版📢_2009429797432201217.json, 音频生成/音频生成/配音神器 _ Index-TTS2.0 优化版📢_1965612048245735425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_49
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6_2091491962556866562.json、视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json、视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Dubbing Tool _ Index-TTS2.0 Optimized workflow📢_1965757047688069121.json、音频生成/音频生成/文字配音+克隆神器优化 _ Index-TTS2.0_1972211711941996545.json、音频生成/音频生成/语音克隆_ Index-TTS2.0 优化版📢_2009429797432201217.json、音频生成/音频生成/配音神器 _ Index-TTS2.0 优化版📢_1965612048245735425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LatentSyncNode`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `CR Text Replace`
+- `DottedWaveformVisualizer`
+- `ImpactSwitch`
+- `IndexTTS2Run`
+- `IndexTTSNode`
+- `JjkText`
 - `LoadAudio`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveString`
+- `SaveAudio`
+- `Textbox`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
+- `easy blocker`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSNode` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `SaveAudioMP3` —— 1/4 个有
 
 ## 典型参数
 

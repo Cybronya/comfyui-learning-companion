@@ -3,58 +3,80 @@ name: text_to_image_video_lora_sampler_186
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.918
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, FlashVSR_SM_KSampler, FlashVSR_SM_Model, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RHHiddenNodes, SelfLiftAvatarH3Sampler, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.554333
+common_nodes: [AudioConcatenate, BasicScheduler, CLIPLoader, CLIPTextEncode, CM_FloatBinaryOperation, CM_IntBinaryOperation, CM_IntToFloat, ConditioningZeroOut, CreateVideo, EmptyLatentImage, FloatConstant, GetImageSize, H3SigmaRefiner, INTConstant, ImageBatch, ImageExpandBatch+, ImageFromBatch+, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy mathInt, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/高清去油版MinimaxH3-T1｜图生视频去油提质必备款_2106256459884486658.json, 视频生成/图生视频/高清去油版MinimaxH3-T2｜去油腻感出片干净又有质感_2106253463087828994.json, 视频生成/图生视频/高清去油版MinimaxH3-T3｜图生视频画质通透细节清晰_2106252001981067265.json]
+members: [视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json, 视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json, 视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_186
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/高清去油版MinimaxH3-T1｜图生视频去油提质必备款_2106256459884486658.json、视频生成/图生视频/高清去油版MinimaxH3-T2｜去油腻感出片干净又有质感_2106253463087828994.json、视频生成/图生视频/高清去油版MinimaxH3-T3｜图生视频画质通透细节清晰_2106252001981067265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json、视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json、视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AudioConcatenate`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CM_FloatBinaryOperation`
+- `CM_IntBinaryOperation`
+- `CM_IntToFloat`
 - `ConditioningZeroOut`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `FlashVSR_SM_KSampler`
-- `FlashVSR_SM_Model`
+- `FloatConstant`
+- `GetImageSize`
 - `H3SigmaRefiner`
+- `INTConstant`
+- `ImageBatch`
+- `ImageExpandBatch+`
+- `ImageFromBatch+`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
-- `SelfLiftAvatarH3Sampler`
-- `Text`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SelfLiftH3Sampler`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy mathInt`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageFromBatch` —— 2/3 个有
+- `MiniMaxH3AddGuide` —— 2/3 个有
+- `ModelPreviewOverrideKJ` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `MiniMaxH3MotionContext` —— 1/3 个有
+- `MiniMaxH3MotionContextTrim` —— 1/3 个有
 
 ## 典型参数
 

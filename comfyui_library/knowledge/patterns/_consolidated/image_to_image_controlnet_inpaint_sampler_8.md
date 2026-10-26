@@ -3,95 +3,79 @@ name: image_to_image_controlnet_inpaint_sampler_8
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.911
-common_nodes: [ApplyInstantID, CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, ControlNetApplyAdvanced, ControlNetLoader, CropFace, CropFaces, DetectFaces, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageFromBatch, ImpactMakeImageBatch, ImpactSEGSToMaskBatch, ImpactSimpleDetectorSEGS, InpaintModelConditioning, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LayerMask: MaskPreview, LayerMask: MaskStroke, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Invert, MaskListSelect(FaceParsing), MaskToImage, PreviewImage, SAMLoader, SEGSPreview, SaveImage, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader, WarpFacesBack, easy forLoopEnd, easy forLoopStart, easy imageCount]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7955
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, ControlNetInpaintingAliMamaApply, ControlNetLoader, DualCLIPLoader, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcanate, InpaintCrop, InpaintStitch, JjkText, KSampler, LayerMask: MaskPreview, LoadImage, PreviewImage, RH_Translator, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/双人_多人 换脸 Two-Person_Multi-Person Face Swap_2094613249026256898.json, 图片生成/图生图/换脸（双人_多人）工作流_自动识别_2010276401114521602.json]
+members: [图片生成/图生图/flux1-阿里妈妈Inpainting重绘-手动蒙版_1950801543312375810.json, 图片生成/图生图/flux1-阿里妈妈Inpainting重绘-自动识别蒙版_1950755239324504066.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/双人_多人 换脸 Two-Person_Multi-Person Face Swap_2094613249026256898.json、图片生成/图生图/换脸（双人_多人）工作流_自动识别_2010276401114521602.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/flux1-阿里妈妈Inpainting重绘-手动蒙版_1950801543312375810.json、图片生成/图生图/flux1-阿里妈妈Inpainting重绘-自动识别蒙版_1950755239324504066.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyInstantID`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
-- `ControlNetApplyAdvanced`
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `ControlNetInpaintingAliMamaApply`
 - `ControlNetLoader`
-- `CropFace`
-- `CropFaces`
-- `DetectFaces`
-- `DifferentialDiffusion`
 - `DualCLIPLoader`
-- `FluxGuidance`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImpactMakeImageBatch`
-- `ImpactSEGSToMaskBatch`
-- `ImpactSimpleDetectorSEGS`
-- `InpaintModelConditioning`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
+- `ImageConcanate`
+- `InpaintCrop`
+- `InpaintStitch`
+- `JjkText`
 - `KSampler`
 - `LayerMask: MaskPreview`
-- `LayerMask: MaskStroke`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `Mask Invert`
-- `MaskListSelect(FaceParsing)`
-- `MaskToImage`
 - `PreviewImage`
-- `SAMLoader`
-- `SEGSPreview`
+- `RH_Translator`
 - `SaveImage`
+- `SetLatentNoiseMask`
 - `UNETLoader`
-- `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `WarpFacesBack`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `BBoxesToSAM2` —— 1/2 个有
+- `DownloadAndLoadQwenModel` —— 1/2 个有
+- `InpaintResize` —— 1/2 个有
+- `LayerMask: LoadFlorence2Model` —— 1/2 个有
+- `LayerMask: ObjectDetectorFL2` —— 1/2 个有
+- `LayerMask: SAM2Ultra` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `QwenVLDetection` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.5 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
+| 采样步数 | 20 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| 调度器 | normal | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 调度器 最常用 normal，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

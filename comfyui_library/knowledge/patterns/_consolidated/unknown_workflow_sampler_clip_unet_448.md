@@ -3,65 +3,96 @@ name: unknown_workflow_sampler_clip_unet_448
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.895
-common_nodes: [AILab_QwenVL_Advanced, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.839
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Latent Batch Size, ConstrainImage|pysssss, DepthAnythingV2Preprocessor, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LayerFilter: FilmV2, LayerFilter: HDREffects, LayerUtility: TextJoin, LoadImage, PortraitMaster, PortraitMasterMakeup, PortraitMasterSkinDetails, PortraitMasterStylePose, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen3vl_Z_image_Seedvr2高清放大_1995065632569929729.json, 图片生成/文生图/图片反推提示词&提示词生图&图片高清放大_2054096541509537794.json]
+members: [图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json, 图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_448
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3vl_Z_image_Seedvr2高清放大_1995065632569929729.json、图片生成/文生图/图片反推提示词&提示词生图&图片高清放大_2054096541509537794.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json、图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL_Advanced`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Latent Batch Size`
+- `ConstrainImage|pysssss`
+- `DepthAnythingV2Preprocessor`
+- `DualCLIPLoader`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LayerFilter: FilmV2`
+- `LayerFilter: HDREffects`
+- `LayerUtility: TextJoin`
 - `LoadImage`
+- `PortraitMaster`
+- `PortraitMasterMakeup`
+- `PortraitMasterSkinDetails`
+- `PortraitMasterStylePose`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2`
+- `ShowText|pysssss`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ArgosTranslateTextNode` —— 1/2 个有
+- `Batch_joy_caption_two_advanced` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ControlNetApplyAdvanced` —— 1/2 个有
+- `ControlNetLoader` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `EmptyLatentImage` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `Joy_caption_two` —— 1/2 个有
+- `Joy_caption_two_load` —— 1/2 个有
+- `Joy_extra_options` —— 1/2 个有
+- `LayerFilter: AddGrain` —— 1/2 个有
+- `LayerFilter: MotionBlur` —— 1/2 个有
+- `LoraLoader` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `SetUnionControlNetType` —— 1/2 个有
+- `StringFunction|pysssss` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.5 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| ControlNet 权重 | 0.3 | - | 1 | 100% |
+| 宽度 | 768 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

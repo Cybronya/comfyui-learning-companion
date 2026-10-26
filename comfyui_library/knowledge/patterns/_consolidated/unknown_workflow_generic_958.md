@@ -3,36 +3,38 @@ name: unknown_workflow_generic_958
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.714
-common_nodes: [ConstrainImage|pysssss, ImageNoiseAugmentation, Int, KuwaharaBlur, LoadImage, PreviewImage, RH_Captioner_Pro, RH_RhartImageG25SunburstImageToImage, SaveImage, easy showAnything]
+coverage: 0.952667
+common_nodes: [ImageConcatMulti, LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json, 图片生成/图生图/洗图2.5_2105303692416217089.json, 图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json]
+members: [图片生成/图生图/Flux Kontext多图参考模式（电商特供）_1930843229246435330.json, 图片生成/图生图/Flux Kontext多图编辑模式_1929170174723919873.json, 图片生成/图生图/电商产品展示商品替换-产品人像融合_1941683234705195009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_958
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json、图片生成/图生图/洗图2.5_2105303692416217089.json、图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext多图参考模式（电商特供）_1930843229246435330.json、图片生成/图生图/Flux Kontext多图编辑模式_1929170174723919873.json、图片生成/图生图/电商产品展示商品替换-产品人像融合_1941683234705195009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `ImageNoiseAugmentation`
-- `Int`
-- `KuwaharaBlur`
+- `ImageConcatMulti`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner_Pro`
-- `RH_RhartImageG25SunburstImageToImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
 - `SaveImage`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RMBG` —— 1/3 个有
 
 ## 典型参数
 

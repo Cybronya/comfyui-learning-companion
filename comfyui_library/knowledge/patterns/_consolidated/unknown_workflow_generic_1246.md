@@ -3,41 +3,30 @@ name: unknown_workflow_generic_1246
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8515
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.833
+common_nodes: [RecraftColorRGB, RecraftControls, RecraftV4TextToImageNode, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/KR_image2图像编辑（4号流）_2048600998565908481.json, 图片生成/文生图/全能图片G2.0 你懂的_2047299239650271234.json]
+members: [comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json, comfyui-workflow-templates-json/api_recraft_v4_t2i.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1246
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KR_image2图像编辑（4号流）_2048600998565908481.json、图片生成/文生图/全能图片G2.0 你懂的_2047299239650271234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json、comfyui-workflow-templates-json/api_recraft_v4_t2i.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2OfficialTextToImage`
-- `RH_RhartImageG2TextToImage`
+- `RecraftColorRGB`
+- `RecraftControls`
+- `RecraftV4TextToImageNode`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 1/2 个有
-- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

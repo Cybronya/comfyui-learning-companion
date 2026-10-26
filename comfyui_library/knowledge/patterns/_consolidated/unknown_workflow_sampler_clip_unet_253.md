@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_253
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.962
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9342
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, INTConstant, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/根据参考图修改图片_2016313387927478274.json, 图片生成/图生图/线稿_2016078729386139649.json, 图片生成/文生图/AI换脸丨Flux2-Klein丨参考图生成_2100837158843146242.json, 图片生成/文生图/YJ-FAST-flux2klein为模特更换衣服裤子-jianan-tmp1-step1_2034278138842193922.json, 视频生成/图生视频/换脸Flux2Klein多图编辑9B加速版Flux2Klein多图编辑9B加速版+_2102351446854426626.json]
+members: [图片生成/图生图/FLUX2-Klein _ 一致性｜九宫格｜自定义角度 _ 一键出图_2022376852790190082.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑_2033421207898431489.json, 图片生成/图生图/FLUX2-Klein-9b自动批量出图_2052346406085644290.json, 图片生成/图生图/产品换背景批量出图_2098992386100785154.json, 图片生成/图生图/星绘-FLUX2-Klein版一键多机位角度调整_2013878236958171138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_253
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/根据参考图修改图片_2016313387927478274.json、图片生成/图生图/线稿_2016078729386139649.json、图片生成/文生图/AI换脸丨Flux2-Klein丨参考图生成_2100837158843146242.json、图片生成/文生图/YJ-FAST-flux2klein为模特更换衣服裤子-jianan-tmp1-step1_2034278138842193922.json、视频生成/图生视频/换脸Flux2Klein多图编辑9B加速版Flux2Klein多图编辑9B加速版+_2102351446854426626.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein _ 一致性｜九宫格｜自定义角度 _ 一键出图_2022376852790190082.json、图片生成/图生图/FLUX2-Klein-9b图像编辑_2033421207898431489.json、图片生成/图生图/FLUX2-Klein-9b自动批量出图_2052346406085644290.json、图片生成/图生图/产品换背景批量出图_2098992386100785154.json、图片生成/图生图/星绘-FLUX2-Klein版一键多机位角度调整_2013878236958171138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
@@ -26,10 +26,12 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
+- `GetImageSize`
+- `INTConstant`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
@@ -41,18 +43,19 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `1hew_TextListToString` —— 1/5 个有
-- `DF_String_Concatenate` —— 1/5 个有
+- `CR Latent Batch Size` —— 2/5 个有
+- `QwenMultiangleCameraNode` —— 2/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `easy promptLine` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `Getter` —— 1/5 个有
 - `Image Comparer (rgthree)` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `PurgeVRAM_UTK` —— 1/5 个有
-- `Qwen3_VQA` —— 1/5 个有
-- `TextToLowercase` —— 1/5 个有
+- `ImageGetter` —— 1/5 个有
+- `KepStringList` —— 1/5 个有
+- `Kep_JoinListAny` —— 1/5 个有
+- `Setter` —— 1/5 个有
+- `easy promptList` —— 1/5 个有
 
 ## 典型参数
 

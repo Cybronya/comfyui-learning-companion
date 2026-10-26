@@ -3,34 +3,36 @@ name: unknown_workflow_generic_776
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.89725
-common_nodes: [LoadImage, RH_BytedanceSeedance25TokenMultimodalVideo, SaveVideo]
+coverage: 0.714
+common_nodes: [ConstrainImage|pysssss, ImageNoiseAugmentation, Int, KuwaharaBlur, LoadImage, PreviewImage, RH_Captioner_Pro, RH_RhartImageG25SunburstImageToImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json, 视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json]
+members: [图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json, 图片生成/图生图/洗图2.5_2105303692416217089.json, 图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json, 图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2113462212210814977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_776
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json、视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json、图片生成/图生图/洗图2.5_2105303692416217089.json、图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json、图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2113462212210814977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `ConstrainImage|pysssss`
+- `ImageNoiseAugmentation`
+- `Int`
+- `KuwaharaBlur`
 - `LoadImage`
-- `RH_BytedanceSeedance25TokenMultimodalVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 3/4 个有
-- `Text` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
+- `PreviewImage`
+- `RH_Captioner_Pro`
+- `RH_RhartImageG25SunburstImageToImage`
+- `SaveImage`
+- `easy showAnything`
 
 ## 典型参数
 

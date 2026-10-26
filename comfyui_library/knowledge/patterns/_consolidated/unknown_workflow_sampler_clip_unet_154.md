@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_154
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.936
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.986875
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json, 图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json, 图片生成/图生图/【flux2-klein】动漫人物转真人_2018492884374261761.json, 图片生成/图生图/【flux2-klein】手绘漫画风格_2018497479477567489.json, 图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json, 图片生成/图生图/【阡陌】FLUX-2-Klein 9B base版单图编辑工作流_2016508238623154177.json, 图片生成/图生图/一次出图100张 海量图生图 多角度 保持人物一致 Flux2 Klein 9B Klein  一图_2027279328433676290.json, 图片生成/图生图/告别等待：FLUX.2 [klein] 开启“实时视觉合成”新时代_2012151475887149058.json]
+members: [图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json, 图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json, 图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json, 图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json, 图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json, 图片生成/图生图/flux2-Klein-最快换脸_2012192553822593025.json, 图片生成/图生图/flux2.klein一键高清换装_2077230946503446529.json, 图片生成/图生图/kleinface 换头换脸工作流 Flux2-Klein-9B 人物换头AI智能面部替换高清换头脸_2016848786680713218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_154
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json、图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json、图片生成/图生图/【flux2-klein】动漫人物转真人_2018492884374261761.json、图片生成/图生图/【flux2-klein】手绘漫画风格_2018497479477567489.json、图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json、图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json、图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json、图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json、图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
@@ -26,34 +26,34 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ReferenceLatent` —— 7/8 个有
-- `VAEEncode` —— 7/8 个有
-- `ConditioningZeroOut` —— 5/8 个有
-- `CR Text` —— 3/8 个有
+- `SaveImage` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 6/8 个有
+- `FluxKontextImageScale` —— 6/8 个有
+- `GetImageSize` —— 6/8 个有
 - `Image Comparer (rgthree)` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `easy imageConcat` —— 2/8 个有
-- `CR Prompt List` —— 1/8 个有
-- `ConditioningAddImageReference` —— 1/8 个有
-- `JWInteger` —— 1/8 个有
-- `Load Lora` —— 1/8 个有
-- `TextCombinerTwo` —— 1/8 个有
-- `easy promptLine` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 2/8 个有
+- `YC Color Match` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `DuckHideNode` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImageSmartSharpen+` —— 1/8 个有
+- `QwenMultiangleCameraNode` —— 1/8 个有
+- `SaveImageAndMetadata_` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `easy promptList` —— 1/8 个有
 
 ## 典型参数
 

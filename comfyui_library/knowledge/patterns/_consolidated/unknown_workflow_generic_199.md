@@ -1,34 +1,41 @@
 ---
 name: unknown_workflow_generic_199
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7467
-common_nodes: [RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.856909
+common_nodes: [Audio To Text (mtb), CR Prompt Text, Load Whisper (mtb), LoadAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/文生图/海螺Hailuo H3文生视频_2083156802023284737.json, 视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json, 视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083540113329577985.json, 视频生成/文生视频/Minimax H3 文生视频工作流（2K视频直出）_2083093802167922689.json, 视频生成/文生视频/Minimax H3-文生图_2083243371103084546.json, 视频生成/文生视频/海螺H3(minimax H3)文生视频_2083372577329864705.json, 视频生成/文生视频/海螺Hailuo H3文生视频（RH版）_2083013266611204097.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039309185434783746.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039694725573255170.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039215676392480769.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039696306108633089.json, 音频生成/音频生成/单人语音克隆TTS_2044697057641897985.json, 音频生成/音频生成/双人语音克隆对话_2044482244785475586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_199
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/海螺Hailuo H3文生视频_2083156802023284737.json、视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json、视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json、视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json、视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+全部 11 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `CR Prompt Text`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/10 个有
-- `Label (rgthree)` —— 1/10 个有
+- `SaveAudio` —— 10/11 个有
+- `NormalizeAudioLoudness` —— 9/11 个有
+- `LongCatVoiceCloneTTS` —— 8/11 个有
+- `LongCatMultiSpeakerTTS` —— 3/11 个有
+- `TrimAudioDuration` —— 2/11 个有
+- `TDQwen3TTSDefineSpeaker` —— 1/11 个有
 
 ## 典型参数
 

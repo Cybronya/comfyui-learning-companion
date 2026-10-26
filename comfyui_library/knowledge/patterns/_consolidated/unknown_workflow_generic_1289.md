@@ -3,31 +3,35 @@ name: unknown_workflow_generic_1289
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.902
-common_nodes: [ImageScale, LoadImage, RHSettingsNode, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage]
+coverage: 0.8
+common_nodes: [DeepTranslatorTextNode, Joy_caption_two, Joy_caption_two_load, LoadImage, PreviewTextNode, Save Text File, SaveImage, ShowText|pysssss, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/workflow_runninghub_NB2_amazon_product_i2i_2039189830973788161.json, 图片生成/图生图/workflow_runninghub_NB2_amazon_product_i5i_2041824553495699457.json]
+members: [图片生成/反推提示词/Joy_Caption_two图像反推提示词_2074042573961912322.json, 图片生成/反推提示词/Joy_Caption_two图像反推提示词_2074051739069800449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1289
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/workflow_runninghub_NB2_amazon_product_i2i_2039189830973788161.json、图片生成/图生图/workflow_runninghub_NB2_amazon_product_i5i_2041824553495699457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Joy_Caption_two图像反推提示词_2074042573961912322.json、图片生成/反推提示词/Joy_Caption_two图像反推提示词_2074051739069800449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScale`
+- `DeepTranslatorTextNode`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
 - `LoadImage`
-- `RHSettingsNode`
-- `RH_RhartImageNG31FlashOfficialImageToImage`
+- `PreviewTextNode`
+- `Save Text File`
 - `SaveImage`
+- `ShowText|pysssss`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

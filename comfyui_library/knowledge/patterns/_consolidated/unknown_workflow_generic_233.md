@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_233
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.880889
-common_nodes: [CR Prompt Text, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.8535
+common_nodes: [Apply Whisper, AudioCrop, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json, "图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json", "图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json", 图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json, 图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json, 图片生成/文生图/全能图片G2文生图（RH版）_2056205569383518209.json, 图片生成/文生图/场景、道具图_2102679130457333761.json, 图片生成/文生图/自用版全能图片V2-文生图-低价渠道版_2064161571298955265.json, 图片生成/文生图/超好用全能图片G2文生图片电商海报产品文字说明放大好用_2073682298935013377.json]
+members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json, 音频生成/音频生成/Qwen3 TTS 声音完美克隆_2014978379094695938.json, 音频生成/音频生成/Qwen3 TTS 最强语音合成_2103005053178179586.json, 音频生成/音频生成/Qwen3 TTS 语音克隆_2018696714370158594.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2014828028999766018.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2026220914022555650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_233
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json、图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json、图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json、图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json、图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json、音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json、音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 6/9 个有
-- `PreviewImage` —— 1/9 个有
+- `LoadAudio` —— 9/10 个有
+- `ShowText|pysssss` —— 9/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `Text _O` —— 1/10 个有
+- `VHS_LoadAudioUpload` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,80 +1,62 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_38
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.4494
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerAdvanced, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, PlaySound|pysssss, PreviewImage, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, VAEDecode]
+coverage: 0.991667
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, FlowMatchEulerDiscreteScheduler (Custom), KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Z-image+文生图+洗图&高清修复v2_2058410169129848833.json, 图片生成/图生图/z-image 双采样 Controlnet洗图 （三种模型快捷切换）2026.4.17_2000750675543851009.json, 图片生成/文生图/Z_image-文生图&洗图&高清修复v2_1998028391066558466.json, 图片生成/文生图/Z_image-文生图&洗图&高清修复v2王改革。_2001957068246532098.json, 图片生成/文生图/🦄Z image2026出图🎯天下无腰_2025194956939337729.json]
+members: [图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json, 图片生成/文生图/凌波_2104236095805419521.json, 图片生成/文生图/含章plus pro max v7_2094807352477315073.json, 图片生成/文生图/含章plus pro max决定版_2101643981267488770.json, 图片生成/文生图/鱼龙百变_2106036449396215809.json, 图片生成/文生图/鱼龙百变_2114525151864901634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z-image+文生图+洗图&高清修复v2_2058410169129848833.json、图片生成/图生图/z-image 双采样 Controlnet洗图 （三种模型快捷切换）2026.4.17_2000750675543851009.json、图片生成/文生图/Z_image-文生图&洗图&高清修复v2_1998028391066558466.json、图片生成/文生图/Z_image-文生图&洗图&高清修复v2王改革。_2001957068246532098.json、图片生成/文生图/🦄Z image2026出图🎯天下无腰_2025194956939337729.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json、图片生成/文生图/凌波_2104236095805419521.json、图片生成/文生图/含章plus pro max v7_2094807352477315073.json、图片生成/文生图/含章plus pro max决定版_2101643981267488770.json、图片生成/文生图/鱼龙百变_2106036449396215809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: PurgeVRAM V2`
+- `FlowMatchEulerDiscreteScheduler (Custom)`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `Qwen3_VQA`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 4/5 个有
-- `CR SDXL Aspect Ratio` —— 4/5 个有
-- `CheckpointLoaderSimple` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `ModelPatchLoader` —— 4/5 个有
-- `QwenImageDiffsynthControlnet` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `easy seed` —— 4/5 个有
-- `ConditioningSetTimestepRange` —— 3/5 个有
-- `KSampler` —— 3/5 个有
-- `CLIPLoader` —— 2/5 个有
-- `UNETLoader` —— 2/5 个有
-- `VAELoader` —— 2/5 个有
-- `CR Aspect Ratio` —— 1/5 个有
-- `DWPreprocessor` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `LatentColorMatch` —— 1/5 个有
-- `easy int` —— 1/5 个有
+- `BasicGuider` —— 5/6 个有
+- `CR Prompt Text` —— 5/6 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `LayerColor: BrightnessContrastV2` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `TextConcat` —— 5/6 个有
+- `CFGGuider` —— 1/6 个有
+- `EmptyLatentImage` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 14 | 5 | 0% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1080 | - | 1 | 100% |
+| 高度 | 1920 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -82,9 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 14，5 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

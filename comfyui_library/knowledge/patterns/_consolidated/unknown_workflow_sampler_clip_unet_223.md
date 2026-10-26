@@ -3,67 +3,71 @@ name: unknown_workflow_sampler_clip_unet_223
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.779667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, JjkText, KSamplerSelect, RH_Prompter, RandomNoise, SamplerCustomAdvanced, SaveImage, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.89
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, Krea2SizePreset, Krea2StyleReference, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json, 图片生成/文生图/Flux文生图-1_1_1940662965035233282.json, 图片生成/文生图/Flux文生图_1819583592967110658.json, 图片生成/文生图/Flux文生图_1938488997612027905.json, 图片生成/文生图/Flux文生图_1976282578619637762.json, 图片生成/文生图/Flux文生图（JC自用）_1952547805221064706.json]
+members: [图片生成/图生图/Krea2风格参考_2073729211445108737.json, 图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json, 图片生成/图生图/[Krea_2_·_08.2]_双图风格迁移_两张参考图，如何控制各自影响？_2098214446819799041.json, 图片生成/文生图/Krea2 风格参考_2073576483880259585.json, 图片生成/文生图/Krea2-风格参考_2073836086790541314.json, 图片生成/文生图/Krea2双图-风格参考-融合-迁移Style Reference_2074414607590060034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_223
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json、图片生成/文生图/Flux文生图-1_1_1940662965035233282.json、图片生成/文生图/Flux文生图_1819583592967110658.json、图片生成/文生图/Flux文生图_1938488997612027905.json、图片生成/文生图/Flux文生图_1976282578619637762.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Krea2风格参考_2073729211445108737.json、图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json、图片生成/图生图/[Krea_2_·_08.2]_双图风格迁移_两张参考图，如何控制各自影响？_2098214446819799041.json、图片生成/文生图/Krea2 风格参考_2073576483880259585.json、图片生成/文生图/Krea2-风格参考_2073836086790541314.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `JjkText`
-- `KSamplerSelect`
-- `RH_Prompter`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `KSampler`
+- `Krea2SizePreset`
+- `Krea2StyleReference`
+- `LoadImage`
 - `SaveImage`
-- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `Bjornulf_ShowStringText` —— 3/6 个有
-- `CR Text Input Switch (4 way)` —— 3/6 个有
-- `ImpactSwitch` —— 3/6 个有
-- `RH_Translator` —— 3/6 个有
-- `PreviewImage` —— 2/6 个有
-- `ArgosTranslateTextNode` —— 1/6 个有
+- `Krea2TwoStyleReferences` —— 5/6 个有
+- `Krea2TwoStyleTransfer` —— 5/6 个有
+- `Krea2StyleTransfer` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `Anything Everywhere` —— 1/6 个有
 - `GetNode` —— 1/6 个有
+- `PathchSageAttentionKJ` —— 1/6 个有
 - `SetNode` —— 1/6 个有
-- `ShowText` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1280 | 1280 - 1280 | 6 | 100% |
+| 采样步数 | 8 | 8 - 10 | 6 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler_ancestral | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1280，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 10，6 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

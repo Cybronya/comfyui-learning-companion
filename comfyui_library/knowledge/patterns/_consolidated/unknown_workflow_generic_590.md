@@ -3,35 +3,38 @@ name: unknown_workflow_generic_590
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8054
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.8488
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json, 视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json]
+members: [图片生成/图生图/全能图片V1谷歌大香蕉图片编辑工作流_1976582772619874306.json, 图片生成/图生图/最新王者 全能图片V1编辑工作流_1960543275885166593.json, 图片生成/图生图/谷歌Gemini__全能图片V1AI手办玩具生成_1961608181988397057.json, 图片生成/文生图/RH__全能图片V1_1981300934502506497.json, 数字人/数字人/「HM」布鲁大师产品添加_1971075000247717889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_590
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json、视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json、视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json、视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片V1谷歌大香蕉图片编辑工作流_1976582772619874306.json、图片生成/图生图/最新王者 全能图片V1编辑工作流_1960543275885166593.json、图片生成/图生图/谷歌Gemini__全能图片V1AI手办玩具生成_1961608181988397057.json、图片生成/文生图/RH__全能图片V1_1981300934502506497.json、数字人/数字人/「HM」布鲁大师产品添加_1971075000247717889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 4/5 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 3/5 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/5 个有
-- `Text` —— 1/5 个有
+- `RH_Translator` —— 3/5 个有
+- `ImageResizePresetNode` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `CR Text Replace` —— 1/5 个有
+- `ImageResize+` —— 1/5 个有
+- `MaskColorize` —— 1/5 个有
 
 ## 典型参数
 

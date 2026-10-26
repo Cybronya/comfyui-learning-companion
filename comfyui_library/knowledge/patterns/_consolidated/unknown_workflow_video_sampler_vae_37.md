@@ -3,63 +3,66 @@ name: unknown_workflow_video_sampler_vae_37
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8455
-common_nodes: [CreateCFGScheduleFloatList, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7167
+common_nodes: [CR Text, GetNode, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/图生视频  Wan2.2_1972296101548191746.json, 视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2017911981818253314.json, 视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2046206194833952769.json, 视频生成/图生视频/WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.json, 视频生成/图生视频/wan2.2-KJ图生视频_首尾帧_2036380526440878082.json, 视频生成/图生视频/基础图生视频  WAN2.2_1988338285892255745.json, 视频生成/图生视频/首尾帧 Wan2.2_1972327481543946241.json, 视频生成/图生视频/🐳Wan2.2 图生视频 高动态高细节 邪修增强版v2🐳_1972843772218396673.json, 视频生成/文生视频/Wan2.2 图生视频 高动态高细节_1972673116709298177.json, 视频生成/文生视频/🐳Wan2.2 图生视频 高动态高细节 邪修增强版🐳_1972199974152957954.json]
+members: [视频生成/图生视频/Aniwan 最强首尾帧产品特效_2009184858895028226.json, 视频生成/图生视频/FusionX图生视频1280高清终究完美方案_1934118211120226306.json, 视频生成/图生视频/Wan2.1高速图生视频_1951680460374134786.json, 视频生成/图生视频/【KJ版】Wan2.2-8步首尾帧_1954815922643058689.json, 视频生成/图生视频/【KJ版】Wan2.2-Lightning4步首尾帧_1954845153740546050.json, 视频生成/图生视频/【动漫专用】AniWan图生视频1280高清方案_1945842759951413249.json, 视频生成/图生视频/最强首尾帧工作流，动态效果拉满_1946835698130251777.json, 视频生成/文生视频/AniWan图生视频1280高清_2069686480091570177.json, 视频生成/文生视频/AniWan图生视频1280高清_2072935689649483778.json, 视频生成/文生视频/wan2.2图生视频V3.0（4步加速lora+kj版本）_1954108847948480514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图生视频  Wan2.2_1972296101548191746.json、视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2017911981818253314.json、视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2046206194833952769.json、视频生成/图生视频/WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.json、视频生成/图生视频/wan2.2-KJ图生视频_首尾帧_2036380526440878082.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Aniwan 最强首尾帧产品特效_2009184858895028226.json、视频生成/图生视频/FusionX图生视频1280高清终究完美方案_1934118211120226306.json、视频生成/图生视频/Wan2.1高速图生视频_1951680460374134786.json、视频生成/图生视频/【KJ版】Wan2.2-8步首尾帧_1954815922643058689.json、视频生成/图生视频/【KJ版】Wan2.2-Lightning4步首尾帧_1954845153740546050.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Text`
+- `GetNode`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/10 个有
-- `ImpactInt` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `SimpleMath+` —— 6/10 个有
-- `WanVideoLoraSelectMulti` —— 6/10 个有
-- `WanVideoLoraSelect` —— 4/10 个有
-- `CR Text` —— 3/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/10 个有
-- `GIMMVFI_interpolate` —— 3/10 个有
-- `Seed (rgthree)` —— 3/10 个有
-- `Text` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `ImageResize+` —— 2/10 个有
-- `Note Plus (mtb)` —— 2/10 个有
-- `UpscaleModelLoader` —— 2/10 个有
-- `Anything Everywhere` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `ImageScaleToMegapixels` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `Int` —— 1/10 个有
-- `LayerUtility: PurgeVRAM` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
+- `MathExpression|pysssss` —— 9/10 个有
+- `WanVideoLoraSelect` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `ImpactSwitch` —— 8/10 个有
+- `RH_LLMAPI_NODE` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `WanVideoApplyNAG` —— 7/10 个有
+- `WanVideoTextEncodeSingle` —— 7/10 个有
+- `WanVideoEnhanceAVideo` —— 6/10 个有
+- `WanVideoSLG` —— 6/10 个有
+- `WanVideoEasyCache` —— 5/10 个有
+- `WanVideoExperimentalArgs` —— 5/10 个有
+- `ImageConcanate` —— 4/10 个有
+- `ImageResizeKJ` —— 4/10 个有
+- `LoadWanVideoClipTextEncoder` —— 4/10 个有
+- `WanVideoClipVisionEncode` —— 4/10 个有
+- `Primitive integer [Crystools]` —— 3/10 个有
+- `WanVideoSetBlockSwap` —— 3/10 个有
+- `WanVideoSetLoRAs` —— 3/10 个有
+- `WanVideoTextEncode` —— 3/10 个有
+- `FloatToSigmas` —— 2/10 个有
+- `StringToFloatList` —— 2/10 个有
+- `CreateCFGScheduleFloatList` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
 
 ## 典型参数
 

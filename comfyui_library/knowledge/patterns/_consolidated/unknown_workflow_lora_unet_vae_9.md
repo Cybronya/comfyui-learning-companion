@@ -1,53 +1,87 @@
 ---
 name: unknown_workflow_lora_unet_vae_9
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.73
-common_nodes: [CLIPLoader, CreateVideo, EmptyLatentImage, ImageBatchMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveInt, RHHiddenNodes, SaveImage, SaveVideo, UNETLoader, VAELoader, easy imageListToImageBatch, easy indexAnything, workflow>千问图像生成]
+frequency: 3
+level: moderate
+coverage: 0.531667
+common_nodes: [CLIPLoader, CM_BoolToInt, CR Prompt Text, ComfyMathExpression, CreateVideo, ExecutionBlocker, FloatToText, GetCurrentTimeNode, GetImageSize, GetNode, ImageScaleToTotalPixels, ImpactNeg, Int, IntConditions, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3PromptEnhancerT8, PreviewAny, PrimitiveBoolean, PrimitiveFloat, RHLLMChatNode, RandomNoise, SaveAudioAdvanced, SaveLatent, SaveVideo, SetNode, StringReplace, UNETLoader, VAEEncode, VAELoader, easy anythingIndexSwitch, easy mathString, ttN concat, 孤海注释, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen 2509 人物多角度视图生成_2009308960213442562.json, 图片生成/文生图/Qwen 2509 提示词多角度视图生成_1999448126555553794.json]
+members: [视频生成/图生视频/MiniMax+VDN+selflift 快速参考生视频_2097697625758846978.json, 视频生成/图生视频/MiniMax+VDN+selflift_快速参考生视频_2100927216665321474.json, 视频生成/图生视频/MiniMax-H3-VDN 快速参考生视频_2096530698105614337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen 2509 人物多角度视图生成_2009308960213442562.json、图片生成/文生图/Qwen 2509 提示词多角度视图生成_1999448126555553794.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax+VDN+selflift 快速参考生视频_2097697625758846978.json、视频生成/图生视频/MiniMax+VDN+selflift_快速参考生视频_2100927216665321474.json、视频生成/图生视频/MiniMax-H3-VDN 快速参考生视频_2096530698105614337.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
+- `CM_BoolToInt`
+- `CR Prompt Text`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `EmptyLatentImage`
-- `ImageBatchMulti`
+- `ExecutionBlocker`
+- `FloatToText`
+- `GetCurrentTimeNode`
+- `GetImageSize`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `ImpactNeg`
+- `Int`
+- `IntConditions`
+- `JjkText`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RHHiddenNodes`
-- `SaveImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3PromptEnhancerT8`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `SaveAudioAdvanced`
+- `SaveLatent`
 - `SaveVideo`
+- `SetNode`
+- `StringReplace`
 - `UNETLoader`
+- `VAEEncode`
 - `VAELoader`
-- `easy imageListToImageBatch`
-- `easy indexAnything`
-- `workflow>千问图像生成`
+- `easy anythingIndexSwitch`
+- `easy mathString`
+- `ttN concat`
+- `孤海注释`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicScheduler` —— 2/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `H3SigmaRefiner` —— 2/3 个有
+- `KSamplerSelect` —— 2/3 个有
+- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 2/3 个有
+- `SelfLiftH3Sampler` —— 2/3 个有
+- `BasicGuider` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/3 个有
+- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SamplerCustomAdvanced` —— 1/3 个有
+- `SolAttnMiniMax` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -55,6 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

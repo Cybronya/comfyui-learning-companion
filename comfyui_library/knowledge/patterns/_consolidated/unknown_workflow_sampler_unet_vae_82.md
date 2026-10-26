@@ -3,73 +3,73 @@ name: unknown_workflow_sampler_unet_vae_82
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.704727
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, PreviewImage, PrimitiveStringMultiline, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.584455
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2108811508326166529.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109545902754066433.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109573850085281794.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2111996327927312386.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112074578649509889.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112076292018495489.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112081176390361090.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112091885144727554.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112093934708150274.json, 图片生成/文生图/Qwen_Image_2.1_文生图_6步加速无PE_2107979311847399426.json, 图片生成/文生图/Qwen_Image_2.1_文生图_纯净官流40步无PE_2107976735823323137.json]
+members: [视频生成/图生视频/MiniMax H3 长视频  音频驱动（数字人）唱歌30s_1分钟 切换_2099343389337673730.json, 视频生成/图生视频/MiniMax H3 音频驱动（数字人）唱歌视频_2084544809620041730.json, 视频生成/图生视频/MiniMax H3全能参考生视频_2084114253300199425.json, 视频生成/图生视频/MiniMax H3全能参考生视频（LightX2V加速LORA）_2087383302742298625.json, 视频生成/图生视频/MiniMax H3全能参考生视频（LightX2V加速LORA）（9参考图3视频）_2087443247135281154.json, 视频生成/图生视频/MiniMax H3全能参考生视频（自定义背景+自定义人物+动作迁移）​_2088807649155567617.json, 视频生成/图生视频/MiniMax H3全能参考生视频，图片、视频。音频参考（动作迁移）_2085606340298366977.json, 视频生成/图生视频/h3自定义背景人物换视频背景人物全能参考 MiniMax H3动作迁移图生视频工作流_2092949782200414209.json, 视频生成/图生视频/h3自定义背景换视频背景人物全能参考 MiniMax H3动作迁移图生视频工作流_2092910196111794178.json, 视频生成/图生视频/自定义背景人物全能参考 MiniMax H3动作迁移图生视频工作流_2091761423037853697.json, 视频生成/文生视频/MiniMax H3全能参考生视频（动作迁移）_2084473001717878785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_82
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2108811508326166529.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109545902754066433.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109573850085281794.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2111996327927312386.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112074578649509889.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 长视频  音频驱动（数字人）唱歌30s_1分钟 切换_2099343389337673730.json、视频生成/图生视频/MiniMax H3 音频驱动（数字人）唱歌视频_2084544809620041730.json、视频生成/图生视频/MiniMax H3全能参考生视频_2084114253300199425.json、视频生成/图生视频/MiniMax H3全能参考生视频（LightX2V加速LORA）_2087383302742298625.json、视频生成/图生视频/MiniMax H3全能参考生视频（LightX2V加速LORA）（9参考图3视频）_2087443247135281154.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `GetNode` —— 10/11 个有
+- `LoadAudio` —— 10/11 个有
 - `LoraLoaderModelOnly` —— 10/11 个有
-- `ComfySwitchNode` —— 9/11 个有
-- `PrimitiveBoolean` —— 9/11 个有
-- `QwenImage21_T2IPromptRewrite` —— 9/11 个有
-- `RH_QwenImagePromptEnhancer` —— 9/11 个有
-- `SaveImageAdvanced` —— 9/11 个有
-- `easy showAnything` —— 9/11 个有
-- `EmptyImage` —— 2/11 个有
+- `SetNode` —— 10/11 个有
+- `CR Prompt Text` —— 9/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/11 个有
+- `VHS_LoadVideo` —— 8/11 个有
+- `MiniMaxH3SigmaShift` —— 2/11 个有
+- `PrimitiveStringMultiline` —— 2/11 个有
+- `TrimAudioDuration` —— 2/11 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/11 个有
+- `AudioConcat` —— 1/11 个有
+- `EasyCache` —— 1/11 个有
+- `ImageBatch` —— 1/11 个有
+- `MiniMaxH3AddGuide` —— 1/11 个有
+- `SelectImages` —— 1/11 个有
+- `SolAttnPatch` —— 1/11 个有
+- `忽略多组孤海` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 40 | 11 | 14% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 11 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 40，11 个样本，取值分散，一致性仅 14%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，11 个样本，取值集中（一致性 100%）
-- 高发问题（10/11 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

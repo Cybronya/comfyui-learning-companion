@@ -3,54 +3,60 @@ name: unknown_workflow_video_sampler_vae_70
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.946
-common_nodes: [Fast Groups Bypasser (rgthree), ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.753571
+common_nodes: [ADE_CameraPoseBasic, CameraPoseVisualizer, INTConstant, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1923954890496724994.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1924435018246967297.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE多图参考视频加速版_1923980705343131649.json, 视频生成/图生视频/CausVid极速VACE图生视频加速版_1925147806623801346.json, 视频生成/图生视频/VACE14B  多图参考生成视频_1922926453934145538.json, 视频生成/图生视频/VACE14B之多图参考(电商带货_图像融合)_1922811355408076801.json, 视频生成/图生视频/VACE14B｜多图参考生成视频_1923648311860129794.json]
+members: [视频生成/图生视频/WAN2.1 万相阿里Fun图生视频运镜控制_1918948189318086658.json, 视频生成/图生视频/Wan2.1 Control Camera 运镜_1948615689729912833.json, 视频生成/图生视频/图生视频--Wan2.1 Control Camera 运镜_2056987771079839745.json, 视频生成/图生视频/图生视频运镜控制（通义万相wan2.1Fun控制技术）_1917872549827645442.json, 视频生成/图生视频/镜头控制-Wan2.1-Fun-V1.1-Control-Camera_1918288864719339522.json, 视频生成/图生视频/阿里Fun图生视频运镜控制(Wan2.1)_1917430916426170370.json, 视频生成/图生视频/阿里Fun图生视频运镜控制(Wan2.1)_2043872324994207745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_70
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1923954890496724994.json、视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1924435018246967297.json、视频生成/图生视频/CausVid仅需3-9步极速VACE多图参考视频加速版_1923980705343131649.json、视频生成/图生视频/CausVid极速VACE图生视频加速版_1925147806623801346.json、视频生成/图生视频/VACE14B  多图参考生成视频_1922926453934145538.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/WAN2.1 万相阿里Fun图生视频运镜控制_1918948189318086658.json、视频生成/图生视频/Wan2.1 Control Camera 运镜_1948615689729912833.json、视频生成/图生视频/图生视频--Wan2.1 Control Camera 运镜_2056987771079839745.json、视频生成/图生视频/图生视频运镜控制（通义万相wan2.1Fun控制技术）_1917872549827645442.json、视频生成/图生视频/镜头控制-Wan2.1-Fun-V1.1-Control-Camera_1918288864719339522.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJ`
+- `ADE_CameraPoseBasic`
+- `CameraPoseVisualizer`
+- `INTConstant`
+- `ImageConcatMulti`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoFunCameraEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 5/7 个有
-- `ColorMatch` —— 4/7 个有
-- `WanVideoLoraSelect` —— 4/7 个有
-- `PreviewImage` —— 3/7 个有
-- `WanVideoTeaCache` —— 3/7 个有
-- `WanVideoVACEStartToEndFrame` —— 3/7 个有
-- `RH_Captioner` —— 1/7 个有
-- `ShowText` —— 1/7 个有
-- `Text Concatenate` —— 1/7 个有
+- `GetNode` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `ImageResizeKJ` —— 5/7 个有
+- `WanVideoBlockSwap` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 5/7 个有
+- `Primitive integer [Crystools]` —— 4/7 个有
+- `Text Multiline` —— 4/7 个有
+- `ImageResizeKJv2` —— 2/7 个有
+- `LoadImageFromUrl` —— 2/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `Florence2ModelLoader` —— 1/7 个有
+- `Florence2Run` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `WanVideoEnhanceAVideo` —— 1/7 个有
+- `WanVideoSLG` —— 1/7 个有
 
 ## 典型参数
 

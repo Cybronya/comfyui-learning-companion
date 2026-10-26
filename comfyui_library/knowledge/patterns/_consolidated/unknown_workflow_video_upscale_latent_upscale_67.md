@@ -1,108 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_67
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.6582
-common_nodes: [AudioCrop, Bjornulf_ShowInt, CFGGuider, CLIPTextEncode, CM_IntToFloat, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PainterAudioLength, PathchSageAttentionKJ, PreviewAudio, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
+frequency: 6
+level: strong
+coverage: 0.584667
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/LTX2.3 _不变脸超自然数字人MV完美版_2037499415048495105.json, 视频生成/图生视频/MV间奏画面生成，ltx2.3 2i2v_2034984738728972289.json, 视频生成/图生视频/老胡超自然完美音乐数字人_2037219153244856322.json, 视频生成/图生视频/超自然人物唱歌：不变脸！：LTX2.3 _超自然数字人MV完美（发布版）_2035706238415151105.json, 音频生成/音频生成/超自然人物唱歌：不变脸！：_2046937022413152258.json]
+members: [视频生成/图生视频/ltx2.3_无导演台-参考音频_纯参数_2085178800698118146.json, 视频生成/图生视频/ltx2.3_无导演台_纯参数_2076920722613686273.json, 视频生成/图生视频/ltx单视频_2061788937559040002.json, 视频生成/图生视频/四宫格_2050405484393447425.json, 视频生成/图生视频/小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_2037892741253832706.json, 视频生成/图生视频/短剧制作，图生视频，四宫格+ Ltx2.3 Prompt Relay V3版本_2052550289055596546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_67
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/LTX2.3 _不变脸超自然数字人MV完美版_2037499415048495105.json、视频生成/图生视频/MV间奏画面生成，ltx2.3 2i2v_2034984738728972289.json、视频生成/图生视频/老胡超自然完美音乐数字人_2037219153244856322.json、视频生成/图生视频/超自然人物唱歌：不变脸！：LTX2.3 _超自然数字人MV完美（发布版）_2035706238415151105.json、音频生成/音频生成/超自然人物唱歌：不变脸！：_2046937022413152258.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ltx2.3_无导演台-参考音频_纯参数_2085178800698118146.json、视频生成/图生视频/ltx2.3_无导演台_纯参数_2076920722613686273.json、视频生成/图生视频/ltx单视频_2061788937559040002.json、视频生成/图生视频/四宫格_2050405484393447425.json、视频生成/图生视频/小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_2037892741253832706.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_ShowInt`
+全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
 - `GetNode`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PainterAudioLength`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PrimitiveInt`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleMath+`
-- `SolidMask`
+- `UNETLoader`
 - `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 4/5 个有
-- `ImageAndMaskResizeNode` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `MathExpression_UTK` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `CR Text Replace` —— 3/5 个有
-- `HeartMuLa_Transcribe` —— 3/5 个有
-- `Text` —— 2/5 个有
-- `workflow>1` —— 2/5 个有
-- `Audio To Text (mtb)` —— 1/5 个有
-- `Bjornulf_ShowFloat` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `GetImageRangeFromBatch` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `LTX2_NAG` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `Load Whisper (mtb)` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `MelBandRoFormerModelLoader` —— 1/5 个有
-- `MelBandRoFormerSampler` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
-- `RH_LLMAPI_Pro_Node` —— 1/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `Resize` —— 1/5 个有
-- `ResizeImagesByLongerEdge` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `TTP_text_mix` —— 1/5 个有
-- `TTResolutionSelector` —— 1/5 个有
+- `CR Float To Integer` —— 5/6 个有
+- `LTXVEmptyLatentAudio` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `GuHaiAutoImageSplit` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `ImageFromBatch+` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `TTResolutionSelector` —— 4/6 个有
+- `Text` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
+- `Int` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `PromptRelayEncode` —— 3/6 个有
+- `RH_LLMAPI_Pro_Node` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `BasicScheduler` —— 2/6 个有
+- `Float` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `LTXVAudioVAEEncode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `SetLatentNoiseMask` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `GetObjectFromJson` —— 1/6 个有
+- `GetTextFromJson` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `LTXICLoRALoaderModelOnly` —— 1/6 个有
+- `Light-Tool: DeserializeJsonString` —— 1/6 个有
+- `PromptRelayEncodeTimeline` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SaveVideoNode` —— 1/6 个有
+- `TwoWaySwitch` —— 1/6 个有
+- `easy indexAnything` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 5 | 100% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
 
 ## 常见问题
 
@@ -110,4 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

@@ -3,79 +3,103 @@ name: unknown_workflow_video_lora_sampler_807
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.655
-common_nodes: [AdaptiveWanVideoAnimateEmbeds, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Muter (rgthree), Flux2Scheduler, GetImageSize, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, RandomNoise, ReferenceLatent, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, SaveImage, SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader]
+coverage: 0.639
+common_nodes: [AIO_Preprocessor, ApplyFaceProcessor, AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, DWPreprocessor, DownloadAndLoadWav2VecModel, EsesImageEffectLevels, FaceProcessorLoader, FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageBlend, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, MaskToImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SaveAudioMP3, SetNode, VHS_GetImageCount, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json, 视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json]
+members: [数字人/数字人/WAN-VACE+MultiTalk+Stand-In移动人物位置，添加自定义人物，同台演唱_1957556428611448834.json, 音频生成/音频生成/WAN-VACE+MultiTalk+Stand-In完美复刻舞蹈唱歌_1955906696134754305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_807
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json、视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/WAN-VACE+MultiTalk+Stand-In移动人物位置，添加自定义人物，同台演唱_1957556428611448834.json、音频生成/音频生成/WAN-VACE+MultiTalk+Stand-In完美复刻舞蹈唱歌_1955906696134754305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdaptiveWanVideoAnimateEmbeds`
-- `CFGGuider`
+- `AIO_Preprocessor`
+- `ApplyFaceProcessor`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Muter (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetImageSizeAndCount`
+- `DWPreprocessor`
+- `DownloadAndLoadWav2VecModel`
+- `EsesImageEffectLevels`
+- `FaceProcessorLoader`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
 - `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageBlend`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `SaveAudioMP3`
 - `SetNode`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadAudioUpload`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSLG`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEmbedBridge`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `YOLOModelLoader`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DuckHideNode` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `Florence2toCoordinates` —— 1/2 个有
+- `LayerMask: BBoxJoin` —— 1/2 个有
+- `LayerMask: MaskGrow` —— 1/2 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
+- `LayerUtility: LaMa` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `Masks Combine Regions` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `PreviewAnimation` —— 1/2 个有
+- `ProPainterInpaint` —— 1/2 个有
+- `RMBG` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `SeedVR2` —— 1/2 个有
+- `SeedVR2BlockSwap` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `VHS_VideoInfoSource` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 

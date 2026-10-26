@@ -2,69 +2,108 @@
 name: unknown_workflow_sampler_clip_unet_108
 type: Unknown Workflow
 frequency: 10
-level: weak
-coverage: 0.8574
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.7497
+common_nodes: [BasicScheduler, CLIPTextEncode, DF_Int_to_Float, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ModelSamplingSD3, SamplerCustom, SetNode, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VisualizeSigmasKJ, easy positive]
+problems: []
 missing: []
-members: [图片生成/图生图/电商线稿生成效果图 千问_1959246058834571266.json, 图片生成/文生图/2031595764664770561.json, 图片生成/文生图/QWEN FP8文生图8步快速工作流_1966317820562878466.json, 图片生成/文生图/Qwen Image 4步加速 文生图_1967372243183525890.json, 图片生成/文生图/Qwen Image 8步加速 文生图_1967367971867910145.json, 图片生成/文生图/Qwen Image封面生成-日拱一卒_1958095012225495041.json, 图片生成/文生图/Qwen Image文生图_1954799878556704770.json, 图片生成/文生图/【老金驿站】4步Qwen2512极速lighiting出图工作流_2006643426929938433.json, 图片生成/文生图/【老金驿站】Z-imageBase真实系列Lora工作流_2037516112421720066.json, 图片生成/文生图/【老金驿站】Z-imageBase高质量稳定直出工作流_2016671045016625154.json]
+members: [图片生成/反推提示词/107 LTX2.3图生视频_2035341548103147521.json, 图片生成/反推提示词/60nvmotedaihuo_2052393354213773314.json, 图片生成/反推提示词/63tushengshiping(kuai)_2045718888305922049.json, 图片生成/反推提示词/77tusspyhtb_2052669860135616514.json, 图片生成/反推提示词/LTX2.3图生视频音画同步_面部稳定_真人短剧电商带货视频工作流_2070027521416060929.json, 图片生成/图生图/LTX2.3图生视频-带语音生成-摇动版_2047251943105503234.json, 图片生成/文生图/LTX2.3解说漫对口型_2052615269197066241.json, 数字人/数字人/LTX2.3 双人对话！图生视频音画同步 自用_2050188003259236354.json, 视频生成/图生视频/LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-蒸馏稳定版_2047878626800050178.json, 视频生成/图生视频/LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-蒸馏稳定版_2052289650873651201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_108
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/电商线稿生成效果图 千问_1959246058834571266.json、图片生成/文生图/2031595764664770561.json、图片生成/文生图/QWEN FP8文生图8步快速工作流_1966317820562878466.json、图片生成/文生图/Qwen Image 4步加速 文生图_1967372243183525890.json、图片生成/文生图/Qwen Image 8步加速 文生图_1967367971867910145.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/107 LTX2.3图生视频_2035341548103147521.json、图片生成/反推提示词/60nvmotedaihuo_2052393354213773314.json、图片生成/反推提示词/63tushengshiping(kuai)_2045718888305922049.json、图片生成/反推提示词/77tusspyhtb_2052669860135616514.json、图片生成/反推提示词/LTX2.3图生视频音画同步_面部稳定_真人短剧电商带货视频工作流_2070027521416060929.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `SaveImage`
+- `DF_Int_to_Float`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `SamplerCustom`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `CFGNorm` —— 6/10 个有
+- `LTXVAudioVAEDecode` —— 9/10 个有
+- `LTXVEmptyLatentAudio` —— 9/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `ConditioningZeroOut` —— 7/10 个有
+- `StringFunction|pysssss` —— 7/10 个有
+- `VHS_VideoCombine` —— 7/10 个有
+- `AILab_QwenVL_Advanced` —— 6/10 个有
 - `JjkText` —— 6/10 个有
-- `LoadImage` —— 5/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `PreviewImage` —— 2/10 个有
-- `ModelPatchLoader` —— 1/10 个有
-- `QwenImageDiffsynthControlnet` —— 1/10 个有
-- `easy imageSize` —— 1/10 个有
+- `LayerUtility: BooleanOperatorV2` —— 6/10 个有
+- `LayerUtility: If ` —— 6/10 个有
+- `LayerUtility: NumberCalculatorV2` —— 6/10 个有
+- `LoraLoaderModelOnly` —— 6/10 个有
+- `PathchSageAttentionKJ` —— 6/10 个有
+- `Text` —— 4/10 个有
+- `easy cleanGpuUsed` —— 4/10 个有
+- `CreateVideo` —— 3/10 个有
+- `JoinStrings` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `RTXVideoSuperResolution` —— 3/10 个有
+- `SaveVideo` —— 3/10 个有
+- `SeedGeneratorMira` —— 3/10 个有
+- `TTResolutionSelector` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `llama_cpp_instruct_adv` —— 3/10 个有
+- `llama_cpp_model_loader` —— 3/10 个有
+- `llama_cpp_parameters` —— 3/10 个有
+- `CustomAddLabel` —— 2/10 个有
+- `LTXVAudioVAEEncode` —— 1/10 个有
+- `LoadAudio` —— 1/10 个有
+- `LoraLoader|pysssss` —— 1/10 个有
+- `RH_LLMAPI_Pro_Node` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
+- `Switch` —— 1/10 个有
+- `TT_img_enc_v2` —— 1/10 个有
+- `TrimAudioDuration` —— 1/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 25 | 10 | 41% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 10 | 37% |
-| 采样算法 | euler | - | 10 | 90% |
-| 调度器 | normal | - | 10 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 305 | 305 - 305 | 9 | 100% |
+| 高度 | 24 | 24 - 24 | 9 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 25，10 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，10 个样本，取值分散，一致性仅 37%
-- 采样算法 最常用 euler，10 个样本，一致性 90%
-- 调度器 最常用 normal，10 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（6/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 305，观测区间 305 - 305，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，9 个样本，取值集中（一致性 100%）

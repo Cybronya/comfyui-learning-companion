@@ -3,64 +3,41 @@ name: unknown_workflow_upscale_lora_sampler_115
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.771
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, GetImageSizeAndCount, KSamplerSelect, LayerUtility: JoyCaption2, LayerUtility: JoyCaption2ExtraOptions, LoadImage, LoraLoader, Preview Chooser, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed Everywhere, ShowText|pysssss, Text Concatenate, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+coverage: 0.917
+common_nodes: [CR Text, CheckpointLoaderSimple, LoraLoaderModelOnly, ModelSamplingAuraFlow, RHHiddenNodes, SaveImage, WujiCleaner, WujiSampler, WujiSuperEditor, WujiUpscaler, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/flux现代都市女_1995513478788079618.json, 图片生成/文生图/flux现代都市男_1995533970475515906.json]
+members: [图片生成/文生图/SeeDance 2.0AI短剧漫剧专用超真实感资产道具库QwenRapidAIO_2026534890396721154.json, 图片生成/文生图/SeeDance 2.0AI短剧漫剧专用超真实感资产道具库QwenRapidAIO_2026573733703458817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_115
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux现代都市女_1995513478788079618.json、图片生成/文生图/flux现代都市男_1995533970475515906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/SeeDance 2.0AI短剧漫剧专用超真实感资产道具库QwenRapidAIO_2026534890396721154.json、图片生成/文生图/SeeDance 2.0AI短剧漫剧专用超真实感资产道具库QwenRapidAIO_2026573733703458817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GetImageSizeAndCount`
-- `KSamplerSelect`
-- `LayerUtility: JoyCaption2`
-- `LayerUtility: JoyCaption2ExtraOptions`
-- `LoadImage`
-- `LoraLoader`
-- `Preview Chooser`
-- `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `RHHiddenNodes`
 - `SaveImage`
-- `Seed Everywhere`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
-- `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
+- `WujiCleaner`
+- `WujiSampler`
+- `WujiSuperEditor`
+- `WujiUpscaler`
+- `easy showAnything`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

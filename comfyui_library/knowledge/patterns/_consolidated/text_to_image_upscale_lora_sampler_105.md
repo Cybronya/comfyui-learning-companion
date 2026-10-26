@@ -1,88 +1,122 @@
 ---
 name: text_to_image_upscale_lora_sampler_105
 type: Text To Image
-frequency: 2
+frequency: 3
 level: weak
-coverage: 0.8685
-common_nodes: [Blur, CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, Int, JjkText, KSampler, LayerUtility: BooleanOperatorV2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, SaveImageJPG_GH, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAELoader, easy boolean, easy cleanGpuUsed, easy ifElse, easy imageSizeByLongerSide, easy imageSizeBySide, solarL_SaveImagesToZip, 孤海注释, 数学运算_孤海]
+coverage: 0.691
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Seed, CR Upscale Image, CheckpointLoaderSimple, ConditioningAverage, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Florence2ModelLoader, Florence2Run, Flux2Scheduler, GenerateNoise, GetImageSize, GetImageSize+, GetNode, Image Comparer (rgthree), ImageCompositeMasked, ImageScaleToTotalPixels, Int, KSampler, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LGNoiseInjectionLatent, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, ResizeMask, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, UltimateSDUpscaleNoUpscale, VAEDecode, VAEEncode, VAELoader, VRAM_Debug, easy sam3ImageSegmentation, easy sam3ModelLoader, 孤海注释, 忽略多组孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/8K放大修复｜SeedVR2高清还原图质细节一步到位_2101545770318131202.json, 图片生成/图生图/8K放大升级版｜seedVR2高清修复图生图精修_2093825267004428290.json]
+members: [图片生成/文生图/三采专业洗图｜Krea 2+Flux2+zimage真实度提升版_2090941537101369346.json, 图片生成/文生图/自用版 Krea 2 +Flux2 图像高清放大修复工作流V2.0提高图_2089243311126179841.json, 图片生成/文生图/高清放大修复V2.0｜Krea 2+Flux2自用版图像画质提高_2089480954074193922.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_105
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/8K放大修复｜SeedVR2高清还原图质细节一步到位_2101545770318131202.json、图片生成/图生图/8K放大升级版｜seedVR2高清修复图生图精修_2093825267004428290.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/三采专业洗图｜Krea 2+Flux2+zimage真实度提升版_2090941537101369346.json、图片生成/文生图/自用版 Krea 2 +Flux2 图像高清放大修复工作流V2.0提高图_2089243311126179841.json、图片生成/文生图/高清放大修复V2.0｜Krea 2+Flux2自用版图像画质提高_2089480954074193922.json）
 
 - **类型**：Text To Image
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Blur`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Integer`
+- `CR Seed`
+- `CR Upscale Image`
+- `CheckpointLoaderSimple`
+- `ConditioningAverage`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `Flux2Scheduler`
+- `GenerateNoise`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetNode`
 - `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageResize+`
+- `ImageCompositeMasked`
+- `ImageScaleToTotalPixels`
 - `Int`
-- `JjkText`
 - `KSampler`
-- `LayerUtility: BooleanOperatorV2`
-- `LoadImage`
+- `KSamplerSelect`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LCSSharpnessCalibrate`
+- `LCSSharpnessIntervene`
+- `LGNoiseInjectionLatent`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `SaveImageJPG_GH`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ReferenceLatent`
+- `ResizeMask`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
 - `UNETLoader`
+- `UltimateSDUpscaleNoUpscale`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageSizeByLongerSide`
-- `easy imageSizeBySide`
-- `solarL_SaveImagesToZip`
+- `VRAM_Debug`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
 - `孤海注释`
-- `数学运算_孤海`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 2/3 个有
+- `ConditioningKrea2Rebalance` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `solarL_SaveImagesToZip` —— 2/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `EditTextEncode_EditUtils` —— 1/3 个有
+- `Krea2EditApply_EditUtils` —— 1/3 个有
+- `Krea2ModelConfig_EditUtils` —— 1/3 个有
+- `LayerUtility: ImageReel` —— 1/3 个有
+- `LayerUtility: ImageReelComposit` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `QwenConfigPreparer_EditUtils` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy promptConcat` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 1280 | 3 | 0% |
+| 高度 | 80 | 80 - 720 | 3 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1280，3 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 720，3 个样本，取值分散，一致性仅 0%
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

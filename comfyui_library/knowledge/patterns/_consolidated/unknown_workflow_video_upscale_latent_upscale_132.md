@@ -3,81 +3,100 @@ name: unknown_workflow_video_upscale_latent_upscale_132
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.595
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.7425
+common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, CreateVideo, DF_Int_to_Float, DrawMaskOnImage, DualCLIPLoader, GetImageSize, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, ImageScaleBy, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, QZ_ResolutionPreset, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3社区模型工作流高质量加速版-0902_2087768558020423681.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏(修改版）_2103351056783728641.json]
+members: [图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json, 视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_132
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3社区模型工作流高质量加速版-0902_2087768558020423681.json、视频生成/图生视频/【MINIMAX-H3】八月最强文戏(修改版）_2103351056783728641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json、视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+- `BlockifyMask`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CreateVideo`
+- `DF_Int_to_Float`
+- `DrawMaskOnImage`
+- `DualCLIPLoader`
+- `GetImageSize`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `QZ_ResolutionPreset`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `SetNode`
-- `SolAttnMiniMax`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LTXVConcatAVLatent` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
-- `LoraLoaderBypassModelOnly` —— 1/2 个有
-- `MiniMaxH3Easy` —— 1/2 个有
-- `MiniMaxH3EasyLoader` —— 1/2 个有
-- `MiniMaxH3EasyOutput` —— 1/2 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
-- `ModelPreviewOverrideKJ` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `VAEEncodeAudio` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `ImageCompositeFromMaskBatch+` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageInvert` —— 1/2 个有
+- `LTX2_NAG` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LTXVReferenceAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ModelMemoryUsageFactorOverride` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `SAM3Segment` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 116 | - | 1 | 100% |
+| 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题
 

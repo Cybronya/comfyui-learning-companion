@@ -2,83 +2,63 @@
 name: unknown_workflow_sampler_unet_vae_207
 type: Unknown Workflow
 frequency: 5
-level: weak
-coverage: 0.856
-common_nodes: [CFGGuider, ComfyMathExpression, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+level: moderate
+coverage: 0.8026
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/LTX2.3 多图控制 提示词分段中继流_2073319635222618113.json, 视频生成/图生视频/LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json, 视频生成/图生视频/万象AI+LTX2.3 首中尾3帧转场特效+去字幕lora+自动提示词优化版_2040976928861069314.json, 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json, 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json]
+members: [图片生成/图生图/Qwen image 2.1图片编辑+角色定妆照_2103068698557902850.json, 图片生成/图生图/Qwen image 2.1图片编辑-1_2112506837907099650.json, 图片生成/图生图/QwenImage2.1 千问图像2.1 任意姿态生成_2103489835767001089.json, 图片生成/图生图/QwenImage2.1图像编辑_2101863711043579906.json, 图片生成/图生图/▶Qwen-image21-图像编辑（无位移）_2112039096406331394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_207
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/LTX2.3 多图控制 提示词分段中继流_2073319635222618113.json、视频生成/图生视频/LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json、视频生成/图生视频/万象AI+LTX2.3 首中尾3帧转场特效+去字幕lora+自动提示词优化版_2040976928861069314.json、视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json、视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1图片编辑+角色定妆照_2103068698557902850.json、图片生成/图生图/Qwen image 2.1图片编辑-1_2112506837907099650.json、图片生成/图生图/QwenImage2.1 千问图像2.1 任意姿态生成_2103489835767001089.json、图片生成/图生图/QwenImage2.1图像编辑_2101863711043579906.json、图片生成/图生图/▶Qwen-image21-图像编辑（无位移）_2112039096406331394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `CLIPLoader`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAddGuideMulti` —— 4/5 个有
-- `LTXVImgToVideoInplace` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `CLIPTextEncode` —— 3/5 个有
-- `Int` —— 3/5 个有
-- `LTXVLatentUpsampler` —— 3/5 个有
-- `LTXVPreprocess` —— 3/5 个有
-- `LatentUpscaleModelLoader` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `ManualSigmas` —— 3/5 个有
-- `RH_LLMAPI_Pro_Node` —— 3/5 个有
-- `ResizeImagesByLongerEdge` —— 3/5 个有
-- `SimpleMath+` —— 3/5 个有
-- `BasicScheduler` —— 2/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `GuHaiAutoImageSplit` —— 2/5 个有
-- `ImageFromBatch` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `PromptRelayEncodeTimeline` —— 2/5 个有
-- `QZ_ResolutionPreset` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `AspectRatio` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ConcatTextOfUtils` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `ResolutionSelector` —— 3/5 个有
+- `Seed (rgthree)` —— 3/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `easy loraStack` —— 2/5 个有
+- `easy loraStackApply` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 601 | 5 | 10% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+| 采样步数 | 25 | 25 - 50 | 5 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 16 - 1536 | 5 | 46% |
+| 高度 | 1024 | 1024 - 2048 | 5 | 67% |
 
 ## 常见问题
 
@@ -86,5 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 601，5 个样本，取值分散，一致性仅 10%
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 50，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 16 - 1536，5 个样本，取值分散，一致性仅 46%
+- 高度 中位数 1024，观测区间 1024 - 2048，5 个样本

@@ -1,82 +1,99 @@
 ---
 name: image_to_image_sampler_vae_13
 type: Image To Image
-frequency: 10
-level: moderate
-coverage: 0.907
-common_nodes: [CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAEEncode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.408667
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, GetNode, ImageScaleToTotalPixels, KSampler, LoadImage, ModelPatchTorchSettings, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader, easy bookmark]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_2073059743991681026.json, 图片生成/图生图/Nunchaku-Qwen-Image-Edit_1965891895425699842.json, 图片生成/图生图/QWen-Image 局部重绘_1966848954535174146.json, 图片生成/图生图/Qwen Edit 4步 加速 图像编辑_1967372813134913537.json, 图片生成/图生图/Qwen Edit 8步加速 图像编辑_1967376109622976514.json, 图片生成/图生图/Qwen Edit 图像编辑 Canny 控制_1968183874985537537.json, 图片生成/图生图/Qwen Edit 图像编辑 Depth 控制_1968182929035788290.json, 图片生成/图生图/Qwen Edit 图像编辑 OpenPose 控制_1968011303954579458.json, 图片生成/图生图/Qwen Edit+姿势-图像精准编辑控制V1_1961275242461249538.json, 图片生成/图生图/Qwen Edit+深度精准编辑控制V1_1961284446211215362.json]
+members: [图片生成/图生图/AIRix 短剧二创 一致性人物V2_1998447779892617217.json, 图片生成/图生图/AIRix-短剧二创-一致性人物V2_1987918335201447937.json, 图片生成/图生图/Qwen-Edit-2509 IP角色多视图工作流_2091500667302146049.json, 图片生成/图生图/Qwen-Edit-2509 人物角色多视图工作流_2091492663307624449.json, 图片生成/图生图/Qwen-一张图出人物全角度_1978412285632860161.json, 图片生成/图生图/V2人物全角度生成器（高度一致性）_2032291719257006082.json, 图片生成/图生图/多视角非循环（女版）_1988907373530066946.json, 图片生成/图生图/多视角非循环（男版）_1999392680000057346.json, 图片生成/文生图/一张图出人物全角度V1-人物一致性-阿硕_1978121708173451266.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_2073059743991681026.json、图片生成/图生图/Nunchaku-Qwen-Image-Edit_1965891895425699842.json、图片生成/图生图/QWen-Image 局部重绘_1966848954535174146.json、图片生成/图生图/Qwen Edit 4步 加速 图像编辑_1967372813134913537.json、图片生成/图生图/Qwen Edit 8步加速 图像编辑_1967376109622976514.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AIRix 短剧二创 一致性人物V2_1998447779892617217.json、图片生成/图生图/AIRix-短剧二创-一致性人物V2_1987918335201447937.json、图片生成/图生图/Qwen-Edit-2509 IP角色多视图工作流_2091500667302146049.json、图片生成/图生图/Qwen-Edit-2509 人物角色多视图工作流_2091492663307624449.json、图片生成/图生图/Qwen-一张图出人物全角度_1978412285632860161.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGNorm`
 - `CLIPLoader`
+- `EmptyLatentImage`
+- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
+- `ModelPatchTorchSettings`
 - `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
 - `SaveImage`
+- `SetNode`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy bookmark`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 9/10 个有
-- `CFGNorm` —— 8/10 个有
-- `TextEncodeQwenImageEdit` —— 8/10 个有
-- `UNETLoader` —— 8/10 个有
-- `ControlNetLoader` —— 7/10 个有
-- `ControlNetApplySD3` —— 5/10 个有
-- `JjkText` —— 5/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `SetUnionControlNetType` —— 5/10 个有
-- `ImageConcanate` —— 4/10 个有
-- `ImageConcatMulti` —— 3/10 个有
-- `CLIPTextEncode` —— 2/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `ControlNetInpaintingAliMamaApply` —— 2/10 个有
-- `NunchakuQwenImageDiTLoader` —— 2/10 个有
-- `OpenposePreprocessor` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `CannyEdgePreprocessor` —— 1/10 个有
-- `DepthAnythingV2Preprocessor` —— 1/10 个有
-- `DepthAnything_V2` —— 1/10 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/10 个有
+- `RHHiddenNodes` —— 8/9 个有
+- `ImageFlip` —— 7/9 个有
+- `Label (rgthree)` —— 5/9 个有
+- `Mute / Bypass Repeater (rgthree)` —— 5/9 个有
+- `Anything Everywhere3` —— 4/9 个有
+- `CheckpointLoaderSimple` —— 4/9 个有
+- `CompressImages` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `ImageBatchMulti` —— 4/9 个有
+- `LoraLoader` —— 4/9 个有
+- `Mute / Bypass Relay (rgthree)` —— 4/9 个有
+- `PreviewAny` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `PurgeVRAM_UTK` —— 4/9 个有
+- `UNETLoader` —— 4/9 个有
+- `Fast Groups Muter (rgthree)` —— 3/9 个有
+- `GeminiImageNode` —— 2/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 30 | 10 | 46% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 10 | 61% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| ControlNet 权重 | 1.5 | 1.5 - 2 | 5 | 88% |
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 960 | 720 - 960 | 9 | 86% |
+| 高度 | 1304 | 1024 - 1384 | 9 | 88% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 0.8 | 0.6 - 0.8 | 4 | 88% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 132/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 30，10 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，10 个样本
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1.5，观测区间 1.5 - 2，5 个样本，取值集中（一致性 88%）
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 960，观测区间 720 - 960，9 个样本，取值集中（一致性 86%）
+- 高度 中位数 1304，观测区间 1024 - 1384，9 个样本，取值集中（一致性 88%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.6 - 0.8，4 个样本，取值集中（一致性 88%）
+- 高发问题（132/9 个样本）：Steps较低可能导致细节不足

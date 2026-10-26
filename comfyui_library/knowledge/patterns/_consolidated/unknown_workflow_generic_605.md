@@ -3,34 +3,33 @@ name: unknown_workflow_generic_605
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, FB_Qwen3TTSCustomVoice, PreviewAudio, SaveAudio]
+coverage: 0.9028
+common_nodes: [LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS北京话（男）_2015759360391127041.json, 音频生成/音频生成/Qwen3 TTS四川话（男）_2015757098444922882.json, 音频生成/音频生成/（Smile版）Qwen3 TTS自定义声音_2015076760647376897.json, 音频生成/音频生成/（贞贞-中文语音模型版）Qwen3 TTS声音生成（自用）_2017266395846811650.json, 音频生成/音频生成/🎵 Qwen3-TTS CustomVoice-自定义声音_2015363721840828417.json]
+members: [图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json, 视频生成/图生视频/VibeVoice微软多人语音克隆_1961064362083598338.json, 音频生成/音频生成/VibeVoice 四人对话_1961890862311608322.json, 音频生成/音频生成/comfyui-VibeVoice_1.5B+7B_1964016590247313410.json, 音频生成/音频生成/vibevoice多人对话工作流_1963268030979616769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_605
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS北京话（男）_2015759360391127041.json、音频生成/音频生成/Qwen3 TTS四川话（男）_2015757098444922882.json、音频生成/音频生成/（Smile版）Qwen3 TTS自定义声音_2015076760647376897.json、音频生成/音频生成/（贞贞-中文语音模型版）Qwen3 TTS声音生成（自用）_2017266395846811650.json、音频生成/音频生成/🎵 Qwen3-TTS CustomVoice-自定义声音_2015363721840828417.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json、视频生成/图生视频/VibeVoice微软多人语音克隆_1961064362083598338.json、音频生成/音频生成/VibeVoice 四人对话_1961890862311608322.json、音频生成/音频生成/comfyui-VibeVoice_1.5B+7B_1964016590247313410.json、音频生成/音频生成/vibevoice多人对话工作流_1963268030979616769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `FB_Qwen3TTSCustomVoice`
-- `PreviewAudio`
+- `LoadAudio`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
+- `VibeVoiceTTS` —— 4/5 个有
+- `Text Multiline` —— 2/5 个有
+- `DiffRhythmRun` —— 1/5 个有
 
 ## 典型参数
 

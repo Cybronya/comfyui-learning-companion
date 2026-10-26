@@ -3,36 +3,39 @@ name: unknown_workflow_generic_694
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.90175
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.65425
+common_nodes: [CR Prompt Text, Comfly_api_set, ImageConcanate, JWInteger, LoadImage, PDIMAGE_LongerSize, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 pro&2-多图编辑-10张图版本（1k-4k）_1992869116912488450.json, 图片生成/图生图/美术设定集+角色风格统一_香交2线稿重渲染_2042487174494429185.json, 图片生成/文生图/XJ官方工作流_2027674347040677890.json, 图片生成/文生图/全能图片pro 单图_双图_多图编辑版本_2021946380721332226.json]
+members: [图片生成/图生图/(贞贞AI工坊)Flux2 Flex图像自定义编辑（约官方价格的77折）_1995111644210638849.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO单图参考（约官方价格的77折）_1995102914823774209.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995098453489410049.json, 图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995107938727604226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_694
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1 pro&2-多图编辑-10张图版本（1k-4k）_1992869116912488450.json、图片生成/图生图/美术设定集+角色风格统一_香交2线稿重渲染_2042487174494429185.json、图片生成/文生图/XJ官方工作流_2027674347040677890.json、图片生成/文生图/全能图片pro 单图_双图_多图编辑版本_2021946380721332226.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/(贞贞AI工坊)Flux2 Flex图像自定义编辑（约官方价格的77折）_1995111644210638849.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO单图参考（约官方价格的77折）_1995102914823774209.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995098453489410049.json、图片生成/图生图/(贞贞AI工坊)Flux2 PRO双图参考（约官方价格的77折）_1995107938727604226.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `ImageConcanate`
+- `JWInteger`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `PDIMAGE_LongerSize`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `ImageStitch` —— 2/4 个有
-- `easy imageConcat` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Comfly_Flux_2_Pro` —— 3/4 个有
+- `Comfly_Flux_2_Flex` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,29 +3,53 @@ name: unknown_workflow_generic_1057
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
+coverage: 0.843667
+common_nodes: [AddMask, ColorMatchPro, GetImageSize, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, Image Paste Crop by Location, ImageCompositeMasked, ImageCropV2, ImageScale, InvertMask, LayerMask: MaskPreview, LayerUtility: ImageAutoCrop, LoadImage, PreviewImage, PrimitiveBoundingBox, RH_Nano_Banana2_Gemini31Flash, ResolutionSelector, SAMLoader, SaveImage, SegmentV2, SimpleMath+, StringMergeNode, Text, YCMaskDirectionExpand, 图像缩放V2_孤海, 孤海图像裁剪按比例]
 problems: []
 missing: []
-members: [视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json, 视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json, 视频生成/文生视频/happyhores图片视频_2063141843059175426.json]
+members: [图片生成/图生图/自动化换脸1_2104075933199192066.json, 图片生成/图生图/自动化换脸2_2104181850368466946.json, 图片生成/图生图/自动化换脸3_2104186362273550337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1057
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json、视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json、视频生成/文生视频/happyhores图片视频_2063141843059175426.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/自动化换脸1_2104075933199192066.json、图片生成/图生图/自动化换脸2_2104181850368466946.json、图片生成/图生图/自动化换脸3_2104186362273550337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AddMask`
+- `ColorMatchPro`
+- `GetImageSize`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMaskWithBlur`
+- `Image Paste Crop by Location`
+- `ImageCompositeMasked`
+- `ImageCropV2`
+- `ImageScale`
+- `InvertMask`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageAutoCrop`
 - `LoadImage`
-- `RH_AlibabaHappyhorse10ImageToVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `PrimitiveBoundingBox`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `ResolutionSelector`
+- `SAMLoader`
+- `SaveImage`
+- `SegmentV2`
+- `SimpleMath+`
+- `StringMergeNode`
+- `Text`
+- `YCMaskDirectionExpand`
+- `图像缩放V2_孤海`
+- `孤海图像裁剪按比例`
 
 ## 典型参数
 

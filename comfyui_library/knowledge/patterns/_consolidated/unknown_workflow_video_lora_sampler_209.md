@@ -1,73 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_209
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.839
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 10
+level: strong
+coverage: 0.545
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json, 视频生成/图生视频/INF图片数字人对口型多动态_1982787027227803649.json, 视频生成/图生视频/Inf-Talk_1976659195296727041.json, 视频生成/图生视频/Infinite Talk 数字人（对口型）_1980462262907527170.json, 视频生成/图生视频/Infinite Talk 音频驱动图说话唱歌，提示词调度多动作_1958946563538235394.json, 视频生成/图生视频/Infinite Talk单图+音频+提示词=数字人无限MV_1981723961920757761.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV_1960989551487594497.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人_1958729195713097730.json, 视频生成/图生视频/跨模态仿OVI无限时长图生视频含配音数字人工作流V1（支持中文）_1974878137764982786.json]
+members: [数字人/数字人/Wan2.2 I2V FFGO电商视频生成产品介绍_2001583427876974593.json, 视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json, 视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json, 视频生成/图生视频/video_wan2_2_14B_i2v图生视频_1964155751138775041.json, 视频生成/图生视频/三帧流转视频_1996195758498004994.json, 视频生成/图生视频/人物-场景-道具 多图生视频 Wan2_2_14B_i2v_FFGO_basic_2018679573021462530.json, 视频生成/图生视频/超能视频2.0-丐版Wan22-FFGO（参考生视频）_2030310808810430466.json, 视频生成/文生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_2050153435672129537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_209
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json、视频生成/图生视频/INF图片数字人对口型多动态_1982787027227803649.json、视频生成/图生视频/Inf-Talk_1976659195296727041.json、视频生成/图生视频/Infinite Talk 数字人（对口型）_1980462262907527170.json、视频生成/图生视频/Infinite Talk 音频驱动图说话唱歌，提示词调度多动作_1958946563538235394.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Wan2.2 I2V FFGO电商视频生成产品介绍_2001583427876974593.json、视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json、视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 8/9 个有
-- `SaveAudio` —— 2/9 个有
-- `Audio To Text (mtb)` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `GetAudioDurationFromAudio` —— 1/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `Load Whisper (mtb)` —— 1/9 个有
-- `LongCatVoiceCloneTTS` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `NormalizeAudioLoudness` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `SaveAudioMP3` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
-- `WanVideoTorchCompileSettings` —— 1/9 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/9 个有
-- `easy indexTTSGenerateSimple` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 9/10 个有
+- `INTConstant` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `ImageStitch` —— 8/10 个有
+- `PainterI2V` —— 8/10 个有
+- `RMBG` —— 8/10 个有
+- `TrimVideoLatent` —— 8/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `RIFE VFI` —— 2/10 个有
+- `WanImageToVideo` —— 2/10 个有
+- `AILab_ImageStitch` —— 1/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `CR SDXL Aspect Ratio` —— 1/10 个有
+- `ImageRotate` —— 1/10 个有
+- `PrimitiveFloat` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `easy promptConcat` —— 1/10 个有
+- `llama_cpp_instruct_adv` —— 1/10 个有
+- `llama_cpp_model_loader` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 10 | 90% |
+| Prompt 约束强度(CFG) | 6 | 4 - 8 | 10 | 85% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | lcm | - | 10 | 90% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
@@ -75,4 +83,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，10 个样本，一致性 90%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，10 个样本，取值集中（一致性 85%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，10 个样本，一致性 90%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%

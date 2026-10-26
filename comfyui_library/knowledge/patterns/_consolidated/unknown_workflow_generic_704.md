@@ -3,33 +3,38 @@ name: unknown_workflow_generic_704
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8435
-common_nodes: [LoadImage, PrimitiveStringMultiline, SaveImage]
+coverage: 0.8025
+common_nodes: [ImageConcanate, LoadImage, PMRF, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/图生图工作流｜即梦图片 4.6 多图参考融合_2100471563278700545.json, 图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2103664136193396738.json, 图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2104850053411196930.json, 图片生成/文生图/鸡皮提-Image-2(全能图片G  T8版)_2046522467862192129.json]
+members: [图片生成/图生图/Flux Kontext单图像编辑+放大极速版_1932786343355584514.json, 图片生成/图生图/Kontext — 与Labubu合影_1934796224849453058.json, 图片生成/图生图/电商带货-Flux Kontext双图编辑高清优化版V3_1932299231665844226.json, 图片生成/图生图/电商直播带货Flux Kontext双图融合优化版V5_1932354190117339137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_704
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图生图工作流｜即梦图片 4.6 多图参考融合_2100471563278700545.json、图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2103664136193396738.json、图片生成/图生图/图生图工作流｜即梦图片_4.6_多图参考融合_2104850053411196930.json、图片生成/文生图/鸡皮提-Image-2(全能图片G  T8版)_2046522467862192129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux Kontext单图像编辑+放大极速版_1932786343355584514.json、图片生成/图生图/Kontext — 与Labubu合影_1934796224849453058.json、图片生成/图生图/电商带货-Flux Kontext双图编辑高清优化版V3_1932299231665844226.json、图片生成/图生图/电商直播带货Flux Kontext双图融合优化版V5_1932354190117339137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `ImageConcanate`
 - `LoadImage`
-- `PrimitiveStringMultiline`
+- `PMRF`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceJimeng46ImageToImage` —— 3/4 个有
-- `Comfly_gpt_image_2` —— 1/4 个有
+- `PDIMAGE_LongerSize` —— 3/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
 
 ## 典型参数
 

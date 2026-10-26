@@ -3,64 +3,81 @@ name: unknown_workflow_sampler_clip_unet_313
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.859
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.97825
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LayerUtility: PurgeVRAM V2, ModelSamplingFlux, RandomNoise, SDXLEmptyLatentSizePicker+, SamplerCustomAdvanced, SaveImage, String Literal, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/ZImage turbo极致人感_1994819859462676481.json, 图片生成/文生图/boogu turbo文生图加速版工作流（附提示词工程）_2067891090774126594.json, 图片生成/文生图/flux3-image-klein（文生图）_2111219542662930433.json, 图片生成/文生图/【文生图】Flux.2.0_Klein9B_2030309405933182978.json]
+members: [图片生成/文生图/FLUX Krea和FLUX Dev对比测试_1951256026706333697.json, 图片生成/文生图/HiDream VS Flux 对比测试_1910919824812507138.json, 图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json, 图片生成/文生图/Qwen-Image+Krea-refiner_1952978061257076737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_313
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/ZImage turbo极致人感_1994819859462676481.json、图片生成/文生图/boogu turbo文生图加速版工作流（附提示词工程）_2067891090774126594.json、图片生成/文生图/flux3-image-klein（文生图）_2111219542662930433.json、图片生成/文生图/【文生图】Flux.2.0_Klein9B_2030309405933182978.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FLUX Krea和FLUX Dev对比测试_1951256026706333697.json、图片生成/文生图/HiDream VS Flux 对比测试_1910919824812507138.json、图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json、图片生成/文生图/Qwen-Image+Krea-refiner_1952978061257076737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `KSampler`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `SDXLEmptyLatentSizePicker+`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `String Literal`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `EmptyFlux2LatentImage` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `Anything Everywhere3` —— 1/4 个有
-- `CR SDXL Aspect Ratio` —— 1/4 个有
-- `ResolutionMaster` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `AddLabel` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `KSampler` —— 3/4 个有
+- `easy seed` —— 3/4 个有
+- `CLIPLoader` —— 2/4 个有
+- `QwenImageModelLoader` —— 2/4 个有
+- `RH_QwenImageGenerator` —— 2/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `HiDreamSampler` —— 1/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `ModelSamplingSD3` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `VAEEncode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 4 - 20 | 4 | 50% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 3 | 54% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
+| 宽度 | 1280x768 (1.67) | - | 4 | 75% |
+| 高度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 4 - 20，4 个样本，取值分散，一致性仅 50%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
+- 宽度 最常用 1280x768 (1.67)，4 个样本，一致性 75%
+- 高度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

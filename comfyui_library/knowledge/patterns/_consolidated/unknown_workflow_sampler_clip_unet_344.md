@@ -2,61 +2,68 @@
 name: unknown_workflow_sampler_clip_unet_344
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.981333
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.904
+common_nodes: [ApplyFBCacheOnModel, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, Flex2Conditioner, FlexGuidance, ImpactInt, KSampler, LayerUtility: PurgeVRAM, LoadImage, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/flux图生图标准版_在线生图_1892985856808927233.json, 图片生成/图生图/超强FLUX洗图神器FLUX.1_1906179257314234370.json, 图片生成/图生图/高质量洗图 -去除杂质、去油光、修复瑕疵_1914989945994342402.json]
+members: [图片生成/图生图/Flex.2+DEEPSEEK图片反推洗图专用工作流_1925012752870350849.json, 图片生成/图生图/Flex.2+LORA图片反推洗图专用工作流_1917435411239735297.json, 图片生成/图生图/Flex.2图片反推洗图工作流_1916314155664740353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_344
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/flux图生图标准版_在线生图_1892985856808927233.json、图片生成/图生图/超强FLUX洗图神器FLUX.1_1906179257314234370.json、图片生成/图生图/高质量洗图 -去除杂质、去油光、修复瑕疵_1914989945994342402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flex.2+DEEPSEEK图片反推洗图专用工作流_1925012752870350849.json、图片生成/图生图/Flex.2+LORA图片反推洗图专用工作流_1917435411239735297.json、图片生成/图生图/Flex.2图片反推洗图工作流_1916314155664740353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `ApplyFBCacheOnModel`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `Flex2Conditioner`
+- `FlexGuidance`
+- `ImpactInt`
+- `KSampler`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RH_Captioner`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Latent Batch Size` —— 2/3 个有
-- `ImageResize+` —— 2/3 个有
-- `Joy_caption_two` —— 2/3 个有
-- `Joy_caption_two_load` —— 2/3 个有
-- `Bjornulf_ShowStringText` —— 1/3 个有
-- `ImitationHueNode` —— 1/3 个有
-- `Joy_caption` —— 1/3 个有
-- `Joy_caption_load` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RepeatLatentBatch` —— 1/3 个有
+- `GoogleTranslateTextNode` —— 2/3 个有
+- `ImageUpscaleWithModel` —— 2/3 个有
+- `LoraLoader` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `UpscaleModelLoader` —— 2/3 个有
+- `JWImageResizeByLongerSide` —— 1/3 个有
+- `JanusImageUnderstanding` —— 1/3 个有
+- `JanusModelLoader` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.5 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 25 | 25 - 25 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | deis | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,4 +71,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 deis，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

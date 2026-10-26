@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_82
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.47125
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Float, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression_UTK, ModelSamplingSD3, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
+coverage: 0.80925
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Groups Bypasser (rgthree), INTConstant, Int, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2021958481347088386.json, 视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2046470504948703234.json, 视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2054012165388021762.json, 视频生成/图生视频/动漫视频 图生视频：DasiwaV10&Qwen3.5_2046953828343353345.json, 视频生成/图生视频/动漫首尾帧生视频：DasiwaV10+Qwen3.5_2022333235971235842.json, 视频生成/图生视频/最强动漫首尾帧生视频_2034099796876726273.json, 视频生成/图生视频/超强质感，动漫视频生成（自动提示词）DasiwaV10_2043578904195108866.json, 视频生成/图生视频/首尾帧生视频DasiwaV10+Qwen3.5（动漫优化）_2046075077883600898.json]
+members: [视频生成/图生视频/Wan2.2_Smooth Mix I2V图生视频_2014967936171118594.json, 视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json, 视频生成/图生视频/Wan2.2_Smooth_I2V_1978100410332372994.json, 视频生成/图生视频/Work-Fisher_Wan2.2_Smooth Mix I2V_1977733586520526849.json, 视频生成/图生视频/painterI2V_Smooth-Mix-I2V-动态强度可调版_1991393474855677954.json, 视频生成/图生视频/升帧率版！视频更流畅！SmoothMix图生视频工作流_2041940547862011906.json, 视频生成/图生视频/图生视频三合一_1989202915321589761.json, 视频生成/图生视频/首尾帧_图生视频四合一_1992859603580899330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_82
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2021958481347088386.json、视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2046470504948703234.json、视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2054012165388021762.json、视频生成/图生视频/动漫视频 图生视频：DasiwaV10&Qwen3.5_2046953828343353345.json、视频生成/图生视频/动漫首尾帧生视频：DasiwaV10+Qwen3.5_2022333235971235842.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2_Smooth Mix I2V图生视频_2014967936171118594.json、视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json、视频生成/图生视频/Wan2.2_Smooth_I2V_1978100410332372994.json、视频生成/图生视频/Work-Fisher_Wan2.2_Smooth Mix I2V_1977733586520526849.json、视频生成/图生视频/painterI2V_Smooth-Mix-I2V-动态强度可调版_1991393474855677954.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
@@ -27,41 +27,48 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `Float`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
 - `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression_UTK`
-- `ModelSamplingSD3`
-- `Text`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `WanMoeKSampler`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `llama_cpp_instruct_adv` —— 7/8 个有
-- `llama_cpp_model_loader` —— 7/8 个有
-- `llama_cpp_parameters` —— 7/8 个有
-- `PainterI2V` —— 5/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `WanFirstLastFrameToVideo` —— 3/8 个有
-- `Qwen3_VQA_Plus` —— 1/8 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `RIFE VFI` —— 7/8 个有
+- `WanImageToVideo` —— 6/8 个有
+- `wanBlockSwap` —— 6/8 个有
+- `DF_Integer` —— 5/8 个有
+- `SimpleMath+` —— 5/8 个有
+- `WanFirstLastFrameToVideo` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `FL_RIFE` —— 2/8 个有
+- `KSamplerAdvanced` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `ModelSamplingSD3` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `ImageLoader` —— 1/8 个有
+- `PainterI2V` —— 1/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
+| 采样步数 | fixed | - | 8 | 50% |
+| Prompt 约束强度(CFG) | 6 | 4 - 8 | 8 | 79% |
 | 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 调度器 | 1 | 1 - 1 | 6 | 100% |
+| 重绘幅度 | euler_ancestral | - | 8 | 75% |
 
 ## 常见问题
 
@@ -69,8 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，8 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，8 个样本
 - 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 调度器 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler_ancestral，8 个样本，一致性 75%

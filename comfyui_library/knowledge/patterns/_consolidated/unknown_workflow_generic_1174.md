@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_1174
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7335
-common_nodes: [ImageScaleToTotalPixels, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.974333
+common_nodes: [DramaBoxLoader, DramaBoxTTS, DramaBoxVoiceClone, LoadAudio, Textbox]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2.json, comfyui-workflow-templates-json/image_qwen_image_edit.json]
+members: [音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json, 音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json, 音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1174
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2.json、comfyui-workflow-templates-json/image_qwen_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json、音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json、音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `DramaBoxLoader`
+- `DramaBoxTTS`
+- `DramaBoxVoiceClone`
+- `LoadAudio`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `74a8e1e2-9cb8-4112-978e-06ce1b5793f1` —— 1/2 个有
-- `7651d2ae-5471-47b0-b064-b34ee62343c1` —— 1/2 个有
+- `SaveAudio` —— 2/3 个有
+- `SaveAudioMP3` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

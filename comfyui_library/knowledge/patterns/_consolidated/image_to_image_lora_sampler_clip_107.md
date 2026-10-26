@@ -2,66 +2,62 @@
 name: image_to_image_lora_sampler_clip_107
 type: Image To Image
 frequency: 3
-level: strong
-coverage: 0.926333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+level: moderate
+coverage: 0.879333
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/动漫转真实V2 - Qwen-edit+Flux2-Klein 双采样_2029160705575882754.json, 图片生成/图生图/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2019762691333693441.json, 图片生成/图生图/动漫转真实V3 Boogu_edit 采样&微调_2077168741405777922.json]
+members: [图片生成/图生图/动漫转写实真人2511（零偏移_高还原）工作流_2013182174513602561.json, 图片生成/图生图/千问Qwen-image-2512-fp8-洗图、图生图工作流_2061646116659228674.json, 图片生成/图生图/史上最强-动漫转写实真人2511（AnythingtoRealCharacters）+去除横纹_2012875763338448897.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_107
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/动漫转真实V2 - Qwen-edit+Flux2-Klein 双采样_2029160705575882754.json、图片生成/图生图/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2019762691333693441.json、图片生成/图生图/动漫转真实V3 Boogu_edit 采样&微调_2077168741405777922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/动漫转写实真人2511（零偏移_高还原）工作流_2013182174513602561.json、图片生成/图生图/千问Qwen-image-2512-fp8-洗图、图生图工作流_2061646116659228674.json、图片生成/图生图/史上最强-动漫转写实真人2511（AnythingtoRealCharacters）+去除横纹_2012875763338448897.json）
 
 - **类型**：Image To Image
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 2/3 个有
-- `CR Image Input Switch` —— 2/3 个有
-- `ImageColorMatch+` —— 2/3 个有
-- `ImageSharpen` —— 2/3 个有
-- `TextEncodeQwenImageEditPlus` —— 2/3 个有
-- `workflow>自定义采样器` —— 2/3 个有
-- `TextEncodeBooguEdit` —— 1/3 个有
-- `easy imageColorMatch` —— 1/3 个有
-- `workflow>自定义采样` —— 1/3 个有
+- `KSamplerAdvanced` —— 2/3 个有
+- `ModelSamplingAuraFlow` —— 2/3 个有
+- `RunningHub Deepcleaner` —— 2/3 个有
+- `Seed (rgthree)` —— 2/3 个有
+- `Easy_QwenEdit2509` —— 1/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `TextEncodeQwenImageEdit` —— 1/3 个有
+- `TextEncodeQwenImageEditPlus` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 8 | 1 - 8 | 3 | 42% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | dpmpp_2m | - | 3 | 33% |
+| 重绘幅度 | exponential | - | 3 | 33% |
 
 ## 常见问题
 
@@ -71,9 +67,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，3 个样本，取值分散，一致性仅 42%
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m，3 个样本，一致性 33%
+- 重绘幅度 最常用 exponential，3 个样本，一致性 33%
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

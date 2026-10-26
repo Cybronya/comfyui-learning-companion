@@ -2,65 +2,73 @@
 name: text_to_image_controlnet_sampler_clip_19
 type: Text To Image
 frequency: 3
-level: moderate
-coverage: 0.644667
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, GetNode, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.897
+common_nodes: [AIO_Preprocessor, CLIPTextEncode, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/千问图生图 【小即梦你懂的~】_1959580226474946562.json, 图片生成/文生图/Controlnet 控制 Z-image_2018207991035596801.json, 图片生成/文生图/Z-IMAGE_ControlNet控制_1996388619596210177.json]
+members: [图片生成/图生图/写实唯美风参考动作生成图片洗图_1929105091276521473.json, 图片生成/图生图/毛坯房一键出图（可换风格）_1920152104714047490.json, 图片生成/文生图/01_参考生图_2074230063763116033.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_19
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问图生图 【小即梦你懂的~】_1959580226474946562.json、图片生成/文生图/Controlnet 控制 Z-image_2018207991035596801.json、图片生成/文生图/Z-IMAGE_ControlNet控制_1996388619596210177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/写实唯美风参考动作生成图片洗图_1929105091276521473.json、图片生成/图生图/毛坯房一键出图（可换风格）_1920152104714047490.json、图片生成/文生图/01_参考生图_2074230063763116033.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `AIO_Preprocessor`
 - `CLIPTextEncode`
-- `CR Text`
+- `ConditioningZeroOut`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `GetNode`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ModelPatchLoader`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `LoraLoader` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `SetUnionControlNetType` —— 2/3 个有
+- `UltimateSDUpscale` —— 2/3 个有
+- `UpscaleModelLoader` —— 2/3 个有
+- `DF_Image_scale_to_side` —— 1/3 个有
+- `DifferentialDiffusion` —— 1/3 个有
+- `FaceDetailer` —— 1/3 个有
+- `ImageGenResolutionFromImage` —— 1/3 个有
+- `LayerMask: LoadFlorence2Model` —— 1/3 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/3 个有
+- `UltralyticsDetectorProvider` —— 1/3 个有
+- `easy imageScaleDownToSize` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1536 | 512 - 1536 | 3 | 60% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
-| 采样步数 | 10 | 10 - 20 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 3 | 53% |
-| 采样算法 | euler_ancestral | - | 3 | 67% |
-| 调度器 | bong_tangent | - | 3 | 33% |
+| 宽度 | 800 | 768 - 1024 | 3 | 87% |
+| 高度 | 1024 | 512 - 1368 | 3 | 64% |
+| 采样步数 | 25 | 20 - 30 | 3 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 3 | 65% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| ControlNet 权重 | 0.8 | 0.7 - 0.8 | 3 | 94% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,10 +76,13 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1536，观测区间 512 - 1536，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 采样步数 中位数 10，观测区间 10 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，3 个样本
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 67%
-- 调度器 最常用 bong_tangent，3 个样本，一致性 33%
+- 宽度 中位数 800，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 512 - 1368，3 个样本
+- 采样步数 中位数 25，观测区间 20 - 30，3 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

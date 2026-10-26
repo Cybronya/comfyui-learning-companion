@@ -1,31 +1,38 @@
 ---
 name: unknown_workflow_generic_1182
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6
-common_nodes: [9b9009e4-2d3d-445f-9be5-6063f465757e, ResolutionSelector, SaveImageAdvanced]
+frequency: 3
+level: moderate
+coverage: 0.794667
+common_nodes: [AudioSeparation, IndexTTS2Run, LoadAudio, SaveAudio, String, Text Multiline]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_z_image.json, comfyui-workflow-templates-json/image_z_image_int8.json]
+members: [音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json, 音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json, 音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1182
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_z_image.json、comfyui-workflow-templates-json/image_z_image_int8.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json、音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json、音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `9b9009e4-2d3d-445f-9be5-6063f465757e`
-- `ResolutionSelector`
-- `SaveImageAdvanced`
+全部 3 个 workflow 都包含：
+- `AudioSeparation`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
+- `String`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -37,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

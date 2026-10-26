@@ -3,36 +3,29 @@ name: unknown_workflow_generic_1262
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.889
-common_nodes: [LoadImage, ReActorFaceBoost, ReActorFaceSwapOpt, ReActorOptions, SaveImage]
+coverage: 0.6
+common_nodes: [LoadImage, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
 problems: []
 missing: []
-members: [图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json, 图片生成/图生图/ReActo简易换脸_2022177926304763906.json]
+members: [comfyui-workflow-templates-json/image_mage_flow_edit_int8.json, comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1262
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json、图片生成/图生图/ReActo简易换脸_2022177926304763906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_edit_int8.json、comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `ReActorFaceBoost`
-- `ReActorFaceSwapOpt`
-- `ReActorOptions`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReActorMaskHelper` —— 1/2 个有
+- `SaveImageAdvanced`
+- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
 ## 典型参数
 

@@ -2,38 +2,32 @@
 name: image_to_image_sampler_clip_unet_143
 type: Image To Image
 frequency: 3
-level: strong
-coverage: 0.899667
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Latent Input Switch, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.977667
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/flux2-klein-万物提取白底图_2081290693993132033.json, 图片生成/图生图/flux2-klein-人物动作九宫格_2080520633963859969.json, 图片生成/文生图/flux-2-klein-文生图+图生图单图多图工作流_2047155183376928770.json]
+members: [图片生成/图生图/flux-风格重绘_1977744193269497858.json, 图片生成/图生图/图生图修复_1914984999924264962.json, 图片生成/文生图/图生图修复_1930828932625399809.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/flux2-klein-万物提取白底图_2081290693993132033.json、图片生成/图生图/flux2-klein-人物动作九宫格_2080520633963859969.json、图片生成/文生图/flux-2-klein-文生图+图生图单图多图工作流_2047155183376928770.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/flux-风格重绘_1977744193269497858.json、图片生成/图生图/图生图修复_1914984999924264962.json、图片生成/文生图/图生图修复_1930828932625399809.json）
 
 - **类型**：Image To Image
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Latent Input Switch`
-- `CR Text`
+- `CLIPTextEncodeFlux`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `DualCLIPLoader`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PrimitiveInt`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -41,35 +35,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `SizeSelector` —— 2/3 个有
-- `DimensionMultiplierNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `StringReplace` —— 1/3 个有
-- `TextInputNode` —— 1/3 个有
-- `easy imageColorMatch` —— 1/3 个有
+- `RepeatLatentBatch` —— 2/3 个有
+- `CLIPVisionEncode` —— 1/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `StyleModelApply` —— 1/3 个有
+- `StyleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 3 | 80% |
+| 采样步数 | 20 | 20 - 30 | 3 | 80% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | normal | - | 3 | 67% |
+| 重绘幅度 | 0.45 | 0.45 - 1 | 3 | 59% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，3 个样本
+- 采样步数 中位数 20，观测区间 20 - 30，3 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 调度器 最常用 normal，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.45，观测区间 0.45 - 1，3 个样本

@@ -3,38 +3,39 @@ name: unknown_workflow_generic_615
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7794
-common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTSRun, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
+members: [数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json, 数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json, 视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json, 视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json, 音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_615
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json、数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json、视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json、视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json、音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTSRun`
 - `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `Apply Whisper` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `SaveAudioMP3` —— 1/5 个有
+- `SaveAudio` —— 3/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `JWStringReplace` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 

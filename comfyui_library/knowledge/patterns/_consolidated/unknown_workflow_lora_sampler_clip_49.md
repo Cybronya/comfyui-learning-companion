@@ -2,82 +2,67 @@
 name: unknown_workflow_lora_sampler_clip_49
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.854778
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
-problems: []
+level: weak
+coverage: 0.904556
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json, 视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json, 视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json, 视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json, 视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json, 视频生成/图生视频/aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2067788916261998594.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2073325205451268097.json, 视频生成/文生视频/LTX2.3 Licon-MSR 多图参考正式版_2067553179402854402.json]
+members: [图片生成/文生图/Qwen-Image-8步和4步对比_1955503632722661377.json, 图片生成/文生图/Qwen-Image-GGUF-Q4KS-4步极速生图_1955586331033288705.json, 图片生成/文生图/Qwen-Image-GGUF-Q4KS-4步极速生图_1970690059521454082.json, 图片生成/文生图/Z-image-base+lora文生图工作流_2016716307059707905.json, 图片生成/文生图/Z-image-base+lora文生图工作流_2058729767695904769.json, 图片生成/文生图/danotebook-qwen-image-2512_2062470910413725697.json, 图片生成/文生图/image_qwen_image2512_2006758711385133057.json, 图片生成/文生图/image_qwen_image2512_grid_scene_2006770240398565377.json, 图片生成/文生图/z-image滑块系列文生图_2057114517376688130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_49
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json、视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json、视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json、视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json、视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-8步和4步对比_1955503632722661377.json、图片生成/文生图/Qwen-Image-GGUF-Q4KS-4步极速生图_1955586331033288705.json、图片生成/文生图/Qwen-Image-GGUF-Q4KS-4步极速生图_1970690059521454082.json、图片生成/文生图/Z-image-base+lora文生图工作流_2016716307059707905.json、图片生成/文生图/Z-image-base+lora文生图工作流_2058729767695904769.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `SaveImage`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXAVTextEncoderLoader` —— 6/9 个有
-- `LTXVAudioVAELoader` —— 6/9 个有
-- `LowVRAMCheckpointLoader` —— 6/9 个有
-- `LTX2_NAG` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `PromptRelayEncode` —— 4/9 个有
-- `DualCLIPLoader` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `UNETLoader` —— 3/9 个有
-- `VAELoader` —— 3/9 个有
-- `CM_IntToFloat` —— 2/9 个有
-- `ComfyMathExpression` —— 2/9 个有
-- `LTXVSetAudioRefTokens` —— 2/9 个有
-- `MuyeTextEditOutput` —— 2/9 个有
-- `SimpleCalculatorKJ` —— 2/9 个有
-- `AtSignCLIPTextEncode` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `MultiIntFormula` —— 1/9 个有
+- `ModelSamplingAuraFlow` —— 8/9 个有
+- `UNETLoader` —— 7/9 个有
+- `easy seed` —— 4/9 个有
+- `INTConstant` —— 2/9 个有
+- `String Literal` —— 2/9 个有
+- `UnetLoaderGGUF` —— 2/9 个有
+- `AddLabel` —— 1/9 个有
+- `ImageConcanate` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 97 - 241 | 9 | 80% |
-| 高度 | 24 | 24 - 50 | 9 | 64% |
+| 采样步数 | 8 | 4 - 28 | 9 | 12% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 9 | 12% |
+| 采样算法 | euler | - | 9 | 78% |
+| 调度器 | simple | - | 9 | 78% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 27/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 97 - 241，9 个样本
-- 高度 中位数 24，观测区间 24 - 50，9 个样本
+- 采样步数 中位数 8，观测区间 4 - 28，9 个样本，取值分散，一致性仅 12%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，9 个样本，取值分散，一致性仅 12%
+- 采样算法 最常用 euler，9 个样本，一致性 78%
+- 调度器 最常用 simple，9 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（27/9 个样本）：Steps较低可能导致细节不足

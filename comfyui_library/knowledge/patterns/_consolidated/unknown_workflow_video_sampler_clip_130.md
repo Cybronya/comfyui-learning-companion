@@ -2,66 +2,51 @@
 name: unknown_workflow_video_sampler_clip_130
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.4886
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetNode, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, Qwen3_VQA, RIFE VFI, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+level: moderate
+coverage: 0.865
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【洋洋】-DasiwaV9图生视频自动提示词_2017055688299651074.json, 视频生成/图生视频/漫剧-DasiwaV9单图生视频（高动效）_2008405529701388289.json, 视频生成/图生视频/漫剧-DasiwaV9单图生视频（高动效）_2050908544660197378.json, 视频生成/图生视频/漫剧-三图首中尾帧DasiwaV9 图生视频（高动效）_2013245533510438913.json, 视频生成/图生视频/漫剧-双图首尾帧DasiwaV9 图生视频（高动效）_2013236610988515330.json]
+members: [视频生成/图生视频/Wan2.1图生视频_1992496405681950721.json, 视频生成/图生视频/【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json, 视频生成/图生视频/通义万象-kijai_1894784892549398529.json, 视频生成/图生视频/通宵全力搭建！最新ai视频生成王炸！！万相2.1 图生视频工作流_1895025130055794689.json, 视频生成/图生视频/阿里万象图生视频_1894625480669069313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_130
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/【洋洋】-DasiwaV9图生视频自动提示词_2017055688299651074.json、视频生成/图生视频/漫剧-DasiwaV9单图生视频（高动效）_2008405529701388289.json、视频生成/图生视频/漫剧-DasiwaV9单图生视频（高动效）_2050908544660197378.json、视频生成/图生视频/漫剧-三图首中尾帧DasiwaV9 图生视频（高动效）_2013245533510438913.json、视频生成/图生视频/漫剧-双图首尾帧DasiwaV9 图生视频（高动效）_2013236610988515330.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1图生视频_1992496405681950721.json、视频生成/图生视频/【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json、视频生成/图生视频/通义万象-kijai_1894784892549398529.json、视频生成/图生视频/通宵全力搭建！最新ai视频生成王炸！！万相2.1 图生视频工作流_1895025130055794689.json、视频生成/图生视频/阿里万象图生视频_1894625480669069313.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：49%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `JoinStrings`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `Qwen3_VQA`
-- `RIFE VFI`
-- `SetNode`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `Text` —— 4/5 个有
-- `CLIPVisionEncode` —— 3/5 个有
-- `PainterI2V` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `INTConstant` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `WanFirstLastFrameToVideo` —— 1/5 个有
-- `WanFirstMiddleLastFrameToVideo` —— 1/5 个有
+- `WanVideoImageClipEncode` —— 4/5 个有
+- `FILM VFI` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageCASharpening+` —— 1/5 个有
+- `ImageResize+` —— 1/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `WanVideoSEImageClipEncode` —— 1/5 个有
+- `WanVideoTorchCompileSettings` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +54,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

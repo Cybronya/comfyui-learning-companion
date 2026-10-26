@@ -3,60 +3,50 @@ name: text_to_image_lora_sampler_clip_442
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.658
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything, ki_宫格拼图简易版, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip]
+coverage: 0.86375
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json, 图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json, 图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json, 视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json]
+members: [图片生成/图生图/SGM2.5抠图测试版 图生图精准人物分割处理_2098717634647908353.json, 图片生成/图生图/SeedVR2 7B分块渲染8K放大｜无损高清增强_2098764691500785665.json, 图片生成/图生图/Seedream V5 Pro图生图 2K高清画质输出_2098290095404183554.json, 图片生成/图生图/sgm2.5智能抠图测试流｜图生图主体精准分离_2098708507670433794.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_442
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json、图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json、图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json、视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SGM2.5抠图测试版 图生图精准人物分割处理_2098717634647908353.json、图片生成/图生图/SeedVR2 7B分块渲染8K放大｜无损高清增强_2098764691500785665.json、图片生成/图生图/Seedream V5 Pro图生图 2K高清画质输出_2098290095404183554.json、图片生成/图生图/sgm2.5智能抠图测试流｜图生图主体精准分离_2098708507670433794.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImage21Cache`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
-- `ki_宫格拼图简易版`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 3/4 个有
-- `EmptyImage` —— 1/4 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 2/4 个有
+- `LayerUtility: ImageCombineAlpha` —— 2/4 个有
+- `LayerUtility: ImageRemoveAlpha` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `RH_SeedreamV5ProImageToImage` —— 1/4 个有
+- `SeedVR2TilingUpscaler` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,74 +3,57 @@ name: unknown_workflow_lora_sampler_clip_70
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.97
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
+coverage: 0.917857
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, KSamplerSelect, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx2.3多图参考生视频_2070392828198481921.json, 视频生成/图生视频/全能参考_2066143110995992578.json, 视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-落水漫剧电商服装分镜真人_2072573274269241345.json, 视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-追逐漫剧电商服装分镜真人_2072526155609104386.json, 视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json, 视频生成/图生视频/（高帧率）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063464652104884226.json, 视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json]
+members: [图片生成/文生图/nunchaku-Flux超快加速文生图_1909949768628666370.json, 图片生成/文生图/nunchaku-flux.1-dev flux秒出图_1910558383181656066.json, 图片生成/文生图/nunchaku-flux.1-dev 个人加速工作流V1_2028335440100597762.json, 图片生成/文生图/nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json, 图片生成/文生图/nunchaku-flux.1-dev-8步快速出图_1942467291403464705.json, 图片生成/文生图/nunchaku-flux.1-dev_1929809956793434113.json, 图片生成/文生图/推文工作流_1923351389630885890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_70
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/ltx2.3多图参考生视频_2070392828198481921.json、视频生成/图生视频/全能参考_2066143110995992578.json、视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-落水漫剧电商服装分镜真人_2072573274269241345.json、视频生成/图生视频/最新版 LTX 漫剧多参分镜视频-追逐漫剧电商服装分镜真人_2072526155609104386.json、视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/nunchaku-Flux超快加速文生图_1909949768628666370.json、图片生成/文生图/nunchaku-flux.1-dev flux秒出图_1910558383181656066.json、图片生成/文生图/nunchaku-flux.1-dev 个人加速工作流V1_2028335440100597762.json、图片生成/文生图/nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json、图片生成/文生图/nunchaku-flux.1-dev-8步快速出图_1942467291403464705.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAudioVAELoader` —— 6/7 个有
-- `CreateVideo` —— 4/7 个有
-- `SaveVideo` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `RH_LLMAPI_Pro_Node` —— 3/7 个有
-- `ShowText|pysssss` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RHHiddenNodes` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `CR Float To Integer` —— 1/7 个有
-- `LTXVAddGuideMulti` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `TT_img_enc` —— 1/7 个有
-- `VAELoaderKJ` —— 1/7 个有
-- `easy indexAnything` —— 1/7 个有
+- `EmptySD3LatentImage` —— 6/7 个有
+- `FluxGuidance` —— 6/7 个有
+- `ModelSamplingFlux` —— 6/7 个有
+- `EmptyLatentImage` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `Note _O` —— 1/7 个有
+- `RH_LLMAPI_NODE` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `Upscale Model Loader` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 145 - 241 | 7 | 85% |
-| 高度 | 50 | 24 - 50 | 7 | 80% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1536 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -78,5 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 145 - 241，7 个样本，取值集中（一致性 85%）
-- 高度 中位数 50，观测区间 24 - 50，7 个样本，取值集中（一致性 80%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,75 +1,75 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_80
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.751
-common_nodes: [Any Switch (rgthree), Anything Everywhere, BasicScheduler, Bjornulf_ShowInt, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSizeAndCount, INTConstant, Image Comparer (rgthree), Image H264 Compression (mtb), ImagePass, ImageScale, ImageSmartSharpen+, KSamplerSelect, LayerFilter: FilmV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, RebatchLatents, ReferenceLatent, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TilePreprocessor, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.844
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageListToImageBatch, ImageScaleBy, ImageUpscaleWithModel, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, PrimitiveBoolean, RH_Prompter, RH_Translator, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy ifElse, easy imageBatchToImageList, easy imageSize, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux.2 klein + seedvr2.5 Upscaler 参考图像超清放大_2012982565870772226.json, 图片生成/图生图/图片质感恢复及放大 01_2033577334225248258.json]
+members: [图片生成/文生图/Wan2.2 文生图 + 提示词润色+TTP高清放大_1950913071642509313.json, 图片生成/文生图/Wan2.2 文生图 + 提示词润色+TTP高清放大_1954735113898749953.json, 图片生成/文生图/Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_80
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux.2 klein + seedvr2.5 Upscaler 参考图像超清放大_2012982565870772226.json、图片生成/图生图/图片质感恢复及放大 01_2033577334225248258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Wan2.2 文生图 + 提示词润色+TTP高清放大_1950913071642509313.json、图片生成/文生图/Wan2.2 文生图 + 提示词润色+TTP高清放大_1954735113898749953.json、图片生成/文生图/Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
-- `BasicScheduler`
-- `Bjornulf_ShowInt`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `GetImageSizeAndCount`
-- `INTConstant`
+- `CR Text`
+- `CR Text Concatenate`
+- `EmptyHunyuanLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
-- `Image H264 Compression (mtb)`
-- `ImagePass`
-- `ImageScale`
-- `ImageSmartSharpen+`
-- `KSamplerSelect`
-- `LayerFilter: FilmV2`
+- `ImageListToImageBatch`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `KSampler`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `RebatchLatents`
-- `ReferenceLatent`
-- `RepeatLatentBatch`
-- `SamplerCustomAdvanced`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `RH_Prompter`
+- `RH_Translator`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TilePreprocessor`
+- `ShowText|pysssss`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `Text Multiline`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImpactControlBridge` —— 1/2 个有
-- `LG_Color_Match_V2` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy imageColorMatch` —— 1/2 个有
+- `easy ifElse`
+- `easy imageBatchToImageList`
+- `easy imageSize`
+- `easy int`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 20 | 3 | 0% |
+| 采样算法 | heun | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 0.1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -77,4 +77,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 20，3 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 heun，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

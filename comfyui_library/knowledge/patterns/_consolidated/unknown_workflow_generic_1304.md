@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1304
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9295
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, Textbox]
+coverage: 0.875
+common_nodes: [Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/一致性+全能图片V1 双人人物合影_1971243555006169090.json, 图片生成/图生图/全能图片V1多图融合编辑2.0_1982503148055085058.json]
+members: [图片生成/反推提示词/Uncensor图像反推（无限制版）v3_1972570968969375746.json, 图片生成/图生图/图像反推Uncensor_1986331615280463874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1304
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一致性+全能图片V1 双人人物合影_1971243555006169090.json、图片生成/图生图/全能图片V1多图融合编辑2.0_1982503148055085058.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Uncensor图像反推（无限制版）v3_1972570968969375746.json、图片生成/图生图/图像反推Uncensor_1986331615280463874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `Textbox`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AnyLineArtPreprocessor_aux` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 

@@ -2,77 +2,78 @@
 name: unknown_workflow_upscale_lora_sampler_76
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.771
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, FloatConstant, GetImageSize, INTConstant, Image Comparer (rgthree), ImageScaleToTotalPixels, JoinStrings, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RunningHub Deepcleaner, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, Text, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, WujiCleaner, ttN seed]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.976
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader_Any, CLIPTextEncode, ImageScaleBy, ImageScaleToTotalPixels, ImageScaleToTotalPixelsX, ImageUpscaleWithModel, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImageJPG_GH, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader_Any, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader_Any, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/文生图/【楚心钟陌】Zimage base lora 另外一个少女_2034684945469284353.json, 图片生成/文生图/【楚心钟陌】Zimage base lora 好看的少女_2034022373820735489.json, 图片生成/文生图/【楚心钟陌】Zimage base lora 这个脸不错，这个脸确实不错_2034708254667841537.json]
+members: [图片生成/文生图/MOSS模型文生图加真实人物质感_2113812843035455490.json, 视频生成/图生视频/flux2-klein-TTP分块放大+_+轻量版 (1)_2088069964401041409.json, 视频生成/图生视频/flux2-klein-TTP分块放大+_+轻量版 (1)_2088143314515226625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_76
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/【楚心钟陌】Zimage base lora 另外一个少女_2034684945469284353.json、图片生成/文生图/【楚心钟陌】Zimage base lora 好看的少女_2034022373820735489.json、图片生成/文生图/【楚心钟陌】Zimage base lora 这个脸不错，这个脸确实不错_2034708254667841537.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/MOSS模型文生图加真实人物质感_2113812843035455490.json、视频生成/图生视频/flux2-klein-TTP分块放大+_+轻量版 (1)_2088069964401041409.json、视频生成/图生视频/flux2-klein-TTP分块放大+_+轻量版 (1)_2088143314515226625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader_Any`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `FloatConstant`
-- `GetImageSize`
-- `INTConstant`
-- `Image Comparer (rgthree)`
+- `ImageScaleBy`
 - `ImageScaleToTotalPixels`
-- `JoinStrings`
-- `KSampler`
+- `ImageScaleToTotalPixelsX`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RunningHub Deepcleaner`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMath+`
-- `Text`
-- `UNETLoader`
-- `UltimateSDUpscale`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImageJPG_GH`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `UNETLoader_Any`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAELoader`
-- `WujiCleaner`
-- `ttN seed`
+- `VAEEncode`
+- `VAELoader_Any`
+- `easy imageBatchToImageList`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
+- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `EmptyFlux2LatentImage` —— 1/3 个有
+- `KSampler` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `SkipLayerGuidanceDiTSimple` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `VAELoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler_ancestral_cfg_pp | - | 3 | 100% |
-| 调度器 | bong_tangent | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 50 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 3 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | sgm_uniform | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral_cfg_pp，3 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

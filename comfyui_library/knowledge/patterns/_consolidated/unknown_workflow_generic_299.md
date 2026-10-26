@@ -3,33 +3,39 @@ name: unknown_workflow_generic_299
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.946375
-common_nodes: [LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo]
+coverage: 0.9355
+common_nodes: [CR Prompt Text, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json, 视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json, 视频生成/图生视频/全能视频V3.1-首尾帧视频-低价版_2049857854470934530.json, 视频生成/图生视频/超好用🔥全能视频V3.1-首尾帧生视频-价低效果超棒_2047202620065980418.json, 视频生成/文生视频/角色发现镜头，对镜头做互动动作，添加人群噪音、体育场灯光和动态摄像机角度。+全节点注释_2054074849928196098.json]
+members: [图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075391736549044226.json, 图片生成/图生图/即梦5-换装-公司用_2081671570501754881.json, 图片生成/图生图/即梦5pro-换装，细节多图参考还原版-公司用_2081984727237615617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_299
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json、视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RH_RhartVideoV31FastStartEndToVideo`
-- `SaveVideo`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31ProStartEndToVideo` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `ImageConcatMulti` —— 5/8 个有
+- `Int` —— 3/8 个有
+- `孤海注释` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ColorMatch` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
 
 ## 典型参数
 

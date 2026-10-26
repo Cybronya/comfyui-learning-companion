@@ -2,68 +2,74 @@
 name: unknown_workflow_video_lora_sampler_229
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.740333
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, ImageBatchExtendWithOverlap, ImageFromBatch+, JDCN_StringToList, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SetNode, Text, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy indexAnything]
+level: moderate
+coverage: 0.868333
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/漫剧分镜视频1_2028866399321460738.json, 视频生成/图生视频/漫剧分镜视频2_2028877052505497602.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206599869206529.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027227746778226690.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027240499706335233.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027250620972929026.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027258275158302721.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027266835749543937.json]
+members: [图片生成/反推提示词/19digitaaivideosing_2046947336139579394.json, 数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json, 数字人/数字人/Infinite Talk数字人视频生视频流双人版_2073262552674557954.json, 数字人/数字人/Infinite Talk超自然无限长度视频生视频数字人（单人）_1958011933066768385.json, 数字人/数字人/Infinitetalk--视频对口型-完美复刻动作，保持原视频动作一致_1992505491098062850.json, 数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_1961018358189723649.json, 数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_1972208046057385986.json, 数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_2011358802314010626.json, 数字人/数字人/infinitetalk-音频+视频数字人_1960547223945773057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_229
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/漫剧分镜视频1_2028866399321460738.json、视频生成/图生视频/漫剧分镜视频2_2028877052505497602.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206599869206529.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027227746778226690.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/19digitaaivideosing_2046947336139579394.json、数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json、数字人/数字人/Infinite Talk数字人视频生视频流双人版_2073262552674557954.json、数字人/数字人/Infinite Talk超自然无限长度视频生视频数字人（单人）_1958011933066768385.json、数字人/数字人/Infinitetalk--视频对口型-完美复刻动作，保持原视频动作一致_1992505491098062850.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageFromBatch+`
-- `JDCN_StringToList`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `Text`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy indexAnything`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoaderGGUF` —— 2/9 个有
-- `Load3D` —— 1/9 个有
-- `LoadEXR` —— 1/9 个有
-- `LoadSRT` —— 1/9 个有
-- `Loader` —— 1/9 个有
-- `load_GGUF` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 8/9 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `WanVideoEncode` —— 8/9 个有
+- `GetImageSizeAndCount` —— 6/9 个有
+- `easy int` —— 6/9 个有
+- `GetNode` —— 5/9 个有
+- `SetNode` —— 5/9 个有
+- `SaveAudio` —— 4/9 个有
+- `INTConstant` —— 3/9 个有
+- `WanVideoTorchCompileSettings` —— 3/9 个有
+- `Anything Everywhere` —— 2/9 个有
+- `CR Prompt Text` —— 2/9 个有
+- `JWInteger` —— 2/9 个有
+- `AudioCombine` —— 1/9 个有
+- `CreateVideo` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `ImageBatchMulti` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `ReverseImageBatch` —— 1/9 个有
+- `SaveVideo` —— 1/9 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/9 个有
+- `WanVideoUni3C_embeds` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

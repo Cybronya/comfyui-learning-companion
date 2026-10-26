@@ -3,63 +3,55 @@ name: text_to_image_lora_sampler_clip_246
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.8275
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, EmptyYuE2LatentAudio, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveAudioAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YuE2GenerateMusic, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.900375
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/YuE2 AI歌曲制作四合一文生翻唱改词音频处理工具_2102538511558729729.json, 音频生成/音频生成/YuE2音乐翻唱 音频生成方案高质量稳定_2109370620222992385.json, 音频生成/音频生成/YuE2音乐翻唱 音频生成方案高质量稳定_2109375224738308098.json, 音频生成/音频生成/YuE2音乐翻唱堪比闭源模型的开源工作流，音频生成音乐翻唱工具_2107551333124497410.json, 音频生成/音频生成/YuE2音乐翻唱音频生成方案高质量稳定 音频生成方案_2109757822031450113.json, 音频生成/音频生成/Yue2 AI歌曲制作多合一，文生歌曲翻唱改词音频生成工作流_2103240173130706945.json, 音频生成/音频生成/Yue2最强AI歌曲制作四合一，文生翻唱改词音频生成工作流_2103904945815773186.json, 音频生成/音频生成/Yue2最强AI歌曲四合一工作站｜文生翻唱改词音频一步到位_2103683344578990082.json]
+members: [图片生成/图生图/Krea2局部重绘PS版工作流｜提示词反推写实图生图_2097491218342178818.json, 图片生成/图生图/LEON 产品精修｜图生图商品图一键出高级感 商详必备_2097581380665438210.json, 图片生成/图生图/LEON 无损放大｜细节恢复加肌理强化 图生图画质起飞_2097573526676000770.json, 图片生成/图生图/Qwen Image 2.1图像编辑最新版 透明抠图换背景工具_2113383323958595585.json, 图片生成/图生图/Qwen Image 2.1图片清晰度增强与细节修复V2 画质提升方案_2109180598479835138.json, 图片生成/图生图/Qwen Image 2.1图片清晰度增强与细节修复V2 画质提升方案_2109778326498926594.json, 图片生成/图生图/Qwen Image 2.1清晰度增强V2 细节修复画质提升_2110251910526754817.json, 图片生成/图生图/Qwen Image 2.1清晰度增强V2 细节修复画质提升_2110366228245204993.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_246
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/YuE2 AI歌曲制作四合一文生翻唱改词音频处理工具_2102538511558729729.json、音频生成/音频生成/YuE2音乐翻唱 音频生成方案高质量稳定_2109370620222992385.json、音频生成/音频生成/YuE2音乐翻唱 音频生成方案高质量稳定_2109375224738308098.json、音频生成/音频生成/YuE2音乐翻唱堪比闭源模型的开源工作流，音频生成音乐翻唱工具_2107551333124497410.json、音频生成/音频生成/YuE2音乐翻唱音频生成方案高质量稳定 音频生成方案_2109757822031450113.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2局部重绘PS版工作流｜提示词反推写实图生图_2097491218342178818.json、图片生成/图生图/LEON 产品精修｜图生图商品图一键出高级感 商详必备_2097581380665438210.json、图片生成/图生图/LEON 无损放大｜细节恢复加肌理强化 图生图画质起飞_2097573526676000770.json、图片生成/图生图/Qwen Image 2.1图像编辑最新版 透明抠图换背景工具_2113383323958595585.json、图片生成/图生图/Qwen Image 2.1图片清晰度增强与细节修复V2 画质提升方案_2109180598479835138.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptyYuE2LatentAudio`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `YuE2GenerateMusic`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioEncoderLoader` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
-- `PreviewAny` —— 4/8 个有
-- `PreviewAudio` —— 4/8 个有
-- `RH_Screenwriter` —— 4/8 个有
+- `CR Text` —— 5/8 个有
+- `QwenImage21Cache` —— 5/8 个有
+- `TextEncodeQwenImage21` —— 5/8 个有
 - `SeedNode` —— 4/8 个有
-- `SheetSage2AudioToABC` —— 4/8 个有
-- `ShowText|pysssss` —— 4/8 个有
-- `YuE2ReferenceVoiceCover` —— 4/8 个有
-- `JWStringToFloat` —— 3/8 个有
-- `WujiYue2Lyricist` —— 3/8 个有
-- `YuE2ModelLoader` —— 3/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `WujiLyricist3` —— 1/8 个有
-- `YuE2CoverTranscribe` —— 1/8 个有
-- `YuE2GenerateABC` —— 1/8 个有
+- `SplitImageWithAlpha` —— 4/8 个有
+- `RHHiddenNodes` —— 3/8 个有
+- `ConditioningZeroOut` —— 1/8 个有
+- `GoogleTranslator` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `KSamplerAdvanced` —— 1/8 个有
+- `TextInput_` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
+- `ttN int` —— 1/8 个有
 
 ## 典型参数
 
@@ -77,7 +69,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -88,4 +80,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（9/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（13/8 个样本）：Steps较低可能导致细节不足

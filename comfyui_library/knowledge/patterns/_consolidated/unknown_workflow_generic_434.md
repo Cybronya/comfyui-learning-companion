@@ -3,34 +3,38 @@ name: unknown_workflow_generic_434
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.904167
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.852833
+common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/室内-万能2餐桌灵感方案设计工作流_2046229893125513218.json, 图片生成/图生图/建筑-万能2一键生多角度工作流_2045816845814472705.json, 图片生成/图生图/建筑-万能2一键生多角度工作流_2067894865257652225.json, 图片生成/图生图/建筑-万能2效果图转AO白模工作流_2045810589003419650.json, 图片生成/图生图/建筑-万能2空间节点分析工作流_2046227433711472641.json, 图片生成/图生图/模型 全能光影融合_溶图_融图_高清_2071837114425233409.json]
+members: [图片生成/反推提示词/推理-角色-RH_1972588816584355842.json, 图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json, 图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json, 数字人/数字人/剧本与分镜脚本_2093149535890661378.json, 视频生成/图生视频/推理-图生视频提示词-R H_1972214627054645249.json, 视频生成/图生视频/推理-图生视频提示词-qwen3VL_1982736072637595650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_434
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/室内-万能2餐桌灵感方案设计工作流_2046229893125513218.json、图片生成/图生图/建筑-万能2一键生多角度工作流_2045816845814472705.json、图片生成/图生图/建筑-万能2一键生多角度工作流_2067894865257652225.json、图片生成/图生图/建筑-万能2效果图转AO白模工作流_2045810589003419650.json、图片生成/图生图/建筑-万能2空间节点分析工作流_2046227433711472641.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/推理-角色-RH_1972588816584355842.json、图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json、图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json、数字人/数字人/剧本与分镜脚本_2093149535890661378.json、视频生成/图生视频/推理-图生视频提示词-R H_1972214627054645249.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoBanana2ZhenzhenNode` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 4/6 个有
+- `RH_LLMAPI_NODE` —— 4/6 个有
+- `LoadImage` —— 2/6 个有
+- `Text Multiline` —— 2/6 个有
+- `AILab_QwenVL` —— 1/6 个有
+- `Qwen3_VQA` —— 1/6 个有
 
 ## 典型参数
 

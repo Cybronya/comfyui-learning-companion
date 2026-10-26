@@ -3,89 +3,64 @@ name: unknown_workflow_video_inpaint_lora_13
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6065
-common_nodes: [Any Switch (rgthree), ClothesSegment, FaceSegment, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, INPAINT_MaskedFill, ImageFromBatch, ImageResize+, ImageResizeKJ, InvertMask, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewImage, PrimitiveStringMultiline, RMBG, ResizeMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy seed]
+coverage: 0.588
+common_nodes: [BlockifyMask, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, INPAINT_MaskedFill, InvertMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PointsEditor, PreviewAny, PreviewImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1 视频编辑重绘 多功能遮罩版（单独换脸、服装、动作、背景、或自定义遮罩）_1981001980585840642.json, 视频生成/图生视频/wan2.1VACE+Lightx2v换服装_2007176668045123586.json]
+members: [数字人/数字人/VACE局部替换视频替换人物服装赞助商LOGO修复_2067260822749007874.json, 数字人/数字人/视频局部重绘 参考重绘Wan2.1_2056966345102807041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_13
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1 视频编辑重绘 多功能遮罩版（单独换脸、服装、动作、背景、或自定义遮罩）_1981001980585840642.json、视频生成/图生视频/wan2.1VACE+Lightx2v换服装_2007176668045123586.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/VACE局部替换视频替换人物服装赞助商LOGO修复_2067260822749007874.json、数字人/数字人/视频局部重绘 参考重绘Wan2.1_2056966345102807041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `ClothesSegment`
-- `FaceSegment`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSize+`
+- `BlockifyMask`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
 - `GetImageSizeAndCount`
 - `GetNode`
 - `GrowMask`
 - `INPAINT_MaskedFill`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageResizeKJ`
 - `InvertMask`
-- `Label (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
+- `PointsEditor`
+- `PreviewAny`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RMBG`
-- `ResizeMask`
+- `Sam2Segmentation`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy int`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `BBoxesToSAM2` —— 1/2 个有
-- `Bookmark (rgthree)` —— 1/2 个有
-- `DownloadAndLoadQwenModel` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: DrawBBoxMaskV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `LayerMask: ObjectDetectorMask` —— 1/2 个有
-- `LayerMask: SAM2VideoUltra` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `QwenVLDetection` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageCropByMask` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerMask: BiRefNetUltra` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

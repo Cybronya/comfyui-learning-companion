@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_unet_vae_106
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.8072
+coverage: 0.6497
 common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
 problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json, 音频生成/音频生成/Munimax+Music+_2095313021102026754.json, 音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json, 音频生成/音频生成/audio_minimax_music_3_2088057881949196289.json, 音频生成/音频生成/audio_minimax_music_3_2088165410591035394.json, 音频生成/音频生成/audio_minimax_music_3_2089996070670655489.json, 音频生成/音频生成/minimax-music-3_2088169557298077698.json, 音频生成/音频生成/minimax音乐生成_2090253540622168065.json, 音频生成/音频生成/格式化音乐生成MiniMax-music3_2092316113559441410.json, 音频生成/音频生成/音乐生成器：minimax_music_3音乐生成_2092150851132542977.json]
+members: [音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json, 音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json, 音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json, 音频生成/音频生成/minimax_music_3_Peanut_2095822548951977985.json, 音频生成/音频生成/minimax_music_3_音乐生成_2103479152505610241.json, 音频生成/音频生成/方格智联-MINI音乐生成_2089370163186593793.json, 音频生成/音频生成/歌曲生成 MiniMax Music 3_2088109341151944705.json, 音频生成/音频生成/海螺MiniMaxMusic3 文生音乐歌曲音频_2088563341122949122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_106
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json、音频生成/音频生成/Munimax+Music+_2095313021102026754.json、音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json、音频生成/音频生成/audio_minimax_music_3_2088057881949196289.json、音频生成/音频生成/audio_minimax_music_3_2088165410591035394.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json、音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json、音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
@@ -34,15 +34,17 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedNode` —— 9/10 个有
-- `ComfySwitchNode` —— 8/10 个有
-- `VAEDecodeAudioTiled` —— 8/10 个有
-- `PrimitiveFloat` —— 3/10 个有
-- `JjkText` —— 2/10 个有
-- `FloatConstant` —— 1/10 个有
-- `MuyeTextEditOutput` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `Textbox` —— 1/10 个有
+- `ComfySwitchNode` —— 6/10 个有
+- `SeedNode` —— 6/10 个有
+- `VAEDecodeAudioTiled` —— 6/10 个有
+- `JjkText` —— 4/10 个有
+- `PreviewAudio` —— 4/10 个有
+- `CR Text` —— 3/10 个有
+- `LoadImage` —— 2/10 个有
+- `PrimitiveFloat` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `easy seed` —— 1/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 

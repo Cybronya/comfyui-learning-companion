@@ -3,59 +3,34 @@ name: unknown_workflow_generic_244
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.740889
-common_nodes: [1hew_TextListToString, CR Text, CR Text Replace, ExtractSubstring, GetTextFromJson, ImageFromBatch, ImageListToBatch+, List of strings [Crystools], LoadJsonFromText, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, RH_RhartVideoSparkvideo20MultimodalVideo, RunningHub Deepcleaner, SaveImage, SaveVideo, String, StringFunction|pysssss, easy convertAnything, easy promptLine, easy showAnything]
+coverage: 0.865556
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频-自由角色版_2046142791364907010.json, 视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频——自由角色版_2044773028768256001.json, 视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043164738057670657.json, 视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043539865706434561.json, 视频生成/图生视频/漫剧一键生成流（自动角色+剧本+视频）_2041820143440891906.json, 视频生成/图生视频/🦄一站式漫剧全流程 角色+剧本+视频【自由角色版】🦄 26-04-08_2041675359040577538.json, 视频生成/图生视频/🦄一站式漫剧全流程 角色+剧本+视频【自由角色版】🦄 26_2059242519535378433.json, 视频生成/文生视频/傻瓜式一键生成漫剧【全自动】_2044421706512605185.json, 视频生成/文生视频/漫剧一键生成流（自动角色+剧本+视频）_2049460328357961730.json]
+members: [图片生成/图生图/Banan图片编辑新王_1960530321286623233.json, 图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json, 图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json, 图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json, 图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json, 图片生成/图生图/全能图片V1自拍照_1991483937440669698.json, 图片生成/图生图/文玩2.0付费版（自用）_1965327877933776897.json, 图片生成/文生图/nano 全能图片V1史诗级 改图神器_1960889176243802113.json, 图片生成/文生图/图片生成_2018542793328697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_244
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频-自由角色版_2046142791364907010.json、视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频——自由角色版_2044773028768256001.json、视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043164738057670657.json、视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043539865706434561.json、视频生成/图生视频/漫剧一键生成流（自动角色+剧本+视频）_2041820143440891906.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Banan图片编辑新王_1960530321286623233.json、图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json、图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json、图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json、图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `1hew_TextListToString`
-- `CR Text`
-- `CR Text Replace`
-- `ExtractSubstring`
-- `GetTextFromJson`
-- `ImageFromBatch`
-- `ImageListToBatch+`
-- `List of strings [Crystools]`
-- `LoadJsonFromText`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RunningHub Deepcleaner`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `SaveVideo`
-- `String`
-- `StringFunction|pysssss`
-- `easy convertAnything`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoBatchImageGrid` —— 7/9 个有
-- `DapaoImageSplitNode` —— 7/9 个有
-- `DapaoMakeImageBatchNode` —— 7/9 个有
-- `LoadImage` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `Image Batch` —— 2/9 个有
-- `Text` —— 2/9 个有
-- `easy imageBatchToImageList` —— 2/9 个有
-- `easy imageSplitGrid` —— 2/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `ImageConcanate` —— 4/9 个有
+- `ImageStitch` —— 1/9 个有
 
 ## 典型参数
 

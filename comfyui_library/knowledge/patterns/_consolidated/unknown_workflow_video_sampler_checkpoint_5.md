@@ -1,47 +1,52 @@
 ---
 name: unknown_workflow_video_sampler_checkpoint_5
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.91425
-common_nodes: [ImageOnlyCheckpointLoader, ImpactSwitch, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.7556
+common_nodes: [Anything Everywhere, CM_IntToFloat, CR Float To Integer, ImageCASharpening+, ImageResize+, JjkText, LoadAudio, LoadImage, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SparkTTSClone, VHS_VideoCombine, easy mathInt, easy showAnything, unCLIPCheckpointLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Sonic数字人+Index TTS 1.5语音克隆工作流V3（修复炸显存）_1924481030601043969.json, 视频生成/图生视频/最强Sonic数字人+IndexTTS语音克隆-优化高效版_1928741923505258497.json, 视频生成/图生视频/最强Sonic数字人+IndexTTS语音克隆-优化高效版_1932324749186072578.json, 视频生成/文生视频/【语音驱动】Sonic数字人+Index TTS_1933029746223579138.json]
+members: [数字人/数字人/Hedra平替·开口即人设-讲话数字人_1924294411784474625.json, 数字人/数字人/SONIC+TTS 数字人口播视频优化版_1954127655819984898.json, 视频生成/图生视频/图片开口说话_1935006990957486081.json, 视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json, 视频生成/图生视频/爆改动画侍女图_1930578408680640513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_5
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Sonic数字人+Index TTS 1.5语音克隆工作流V3（修复炸显存）_1924481030601043969.json、视频生成/图生视频/最强Sonic数字人+IndexTTS语音克隆-优化高效版_1928741923505258497.json、视频生成/图生视频/最强Sonic数字人+IndexTTS语音克隆-优化高效版_1932324749186072578.json、视频生成/文生视频/【语音驱动】Sonic数字人+Index TTS_1933029746223579138.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Hedra平替·开口即人设-讲话数字人_1924294411784474625.json、数字人/数字人/SONIC+TTS 数字人口播视频优化版_1954127655819984898.json、视频生成/图生视频/图片开口说话_1935006990957486081.json、视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json、视频生成/图生视频/爆改动画侍女图_1930578408680640513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageOnlyCheckpointLoader`
-- `ImpactSwitch`
-- `LayerUtility: PurgeVRAM`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CM_IntToFloat`
+- `CR Float To Integer`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `JjkText`
 - `LoadAudio`
 - `LoadImage`
+- `RH_GetAudioDuration`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
 - `SaveAudio`
+- `SparkTTSClone`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `easy mathInt`
+- `easy showAnything`
+- `unCLIPCheckpointLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Note _O` —— 3/4 个有
-- `AnimateDiffCombine` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `IndexTTSNode` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
+- `Anything Everywhere3` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 3/5 个有
+- `easy int` —— 3/5 个有
+- `ImpactSwitch` —— 2/5 个有
 
 ## 典型参数
 

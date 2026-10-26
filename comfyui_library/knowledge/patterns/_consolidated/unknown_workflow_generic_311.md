@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_311
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.685
-common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.983125
+common_nodes: [LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json, 图片生成/图生图/11_2038431448486649858.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2064558042129195010.json]
+members: [图片生成/图生图/复杂背景抠图工作流_2096872684587143169.json, 图片生成/图生图/复杂背景抠图工作流_2097165064066392065.json, 图片生成/图生图/抠图-BiRefNet商品主体_2096866902932021249.json, 图片生成/图生图/抠图-Birefnet_1981185562751262721.json, 图片生成/图生图/抠图工作流-Birefnet_2029467670369804289.json, 图片生成/图生图/抠图工作流-Birefnet_2033499327313743874.json, 图片生成/图生图/抠图工作流_1987833650836385793.json, 图片生成/图生图/生成透明背景图片和绿幕图片_1968573871228112897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_311
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/复杂背景抠图工作流_2096872684587143169.json、图片生成/图生图/复杂背景抠图工作流_2097165064066392065.json、图片生成/图生图/抠图-BiRefNet商品主体_2096866902932021249.json、图片生成/图生图/抠图-Birefnet_1981185562751262721.json、图片生成/图生图/抠图工作流-Birefnet_2029467670369804289.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 8 个 workflow 都包含：
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/7 个有
-- `CR Text` —— 5/7 个有
-- `Image Compare (mtb)` —— 1/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
+- `PrimitiveBoolean` —— 4/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `LayerUtility: ColorImage V2` —— 1/8 个有
+- `LayerUtility: ImageBlend` —— 1/8 个有
 
 ## 典型参数
 

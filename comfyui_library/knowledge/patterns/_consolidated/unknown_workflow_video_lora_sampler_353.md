@@ -1,54 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_353
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.901333
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.725857
+common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/RadialSage+Lightx2V-20%提速图生视频工作流_1948953733947371521.json, 视频生成/图生视频/Wan图生视频radial attention加速优化版_1949101004231979010.json, 视频生成/图生视频/ani全能视频S动画图生视频工作流_1946509129076891649.json, 视频生成/图生视频/万相图生视频工作流Radial 提速20%_1947243498794815490.json, 视频生成/文生视频/【加速版】 万相图生视频工作流_1947564947329982466.json, 视频生成/文生视频/🌟【大炮视频】Wan图生视频radial attention加速 急速优化版🌟_1948615375945641985.json]
+members: [视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956045555967381505.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956317081069342721.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2051923749418610689.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2052630555186999297.json, 视频生成/图生视频/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957641914193473538.json, 视频生成/图生视频/【FantasyPortrait】复刻钟馗怒目圆睁表情_1958352739837362177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_353
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RadialSage+Lightx2V-20%提速图生视频工作流_1948953733947371521.json、视频生成/图生视频/Wan图生视频radial attention加速优化版_1949101004231979010.json、视频生成/图生视频/ani全能视频S动画图生视频工作流_1946509129076891649.json、视频生成/图生视频/万相图生视频工作流Radial 提速20%_1947243498794815490.json、视频生成/文生视频/【加速版】 万相图生视频工作流_1947564947329982466.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956045555967381505.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956317081069342721.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2051923749418610689.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2052630555186999297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddFantasyPortrait`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoSetRadialAttention` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `TextInput_` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `ImageResizeKJ` —— 2/6 个有
-- `Seed (rgthree)` —— 2/6 个有
-- `easy int` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `ttN int` —— 1/6 个有
+- `WanVideoSetBlockSwap` —— 6/7 个有
+- `WanVideoSetLoRAs` —— 6/7 个有
+- `GetNode` —— 5/7 个有
+- `SetNode` —— 5/7 个有
+- `ImageConcatMulti` —— 4/7 个有
+- `Primitive integer [Crystools]` —— 3/7 个有
+- `INTConstant` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `PrimitiveInt` —— 2/7 个有
+- `VHS_VideoInfoLoaded` —— 2/7 个有
+- `WanVideoContextOptions` —— 2/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `LandmarksToImage` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
 
 ## 典型参数
 

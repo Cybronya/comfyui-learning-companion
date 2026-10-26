@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_399
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.865833
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.971429
+common_nodes: [LoadImage, RH_Vidu_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamFit Flux_1923377996378329090.json, 图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json, 图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json, 图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json, 图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json, 图片生成/文生图/超强生图2.0_2049852572097363970.json]
+members: [视频生成/图生视频/RH Viduq2 图生视频_1988300769243873282.json, 视频生成/图生视频/Vidu Q2 首尾帧视频_1985000426129035266.json, 视频生成/图生视频/Viduq2图生视频_1982776323204624385.json, 视频生成/图生视频/Viduq2首尾帧图生视频_1982781218146136065.json, 视频生成/图生视频/一镜到底，图生视频嵌入文本与图像_2018320184095805441.json, 视频生成/图生视频/图生视频流程_2060592796674908161.json, 视频生成/文生视频/RH Viduq2 图生视频_1986437827120558081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_399
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DreamFit Flux_1923377996378329090.json、图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json、图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json、图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json、图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/RH Viduq2 图生视频_1988300769243873282.json、视频生成/图生视频/Vidu Q2 首尾帧视频_1985000426129035266.json、视频生成/图生视频/Viduq2图生视频_1982776323204624385.json、视频生成/图生视频/Viduq2首尾帧图生视频_1982781218146136065.json、视频生成/图生视频/一镜到底，图生视频嵌入文本与图像_2018320184095805441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `RH_Vidu_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 4/6 个有
-- `PreviewImage` —— 2/6 个有
-- `RunningHub_DreamFit_Flux` —— 2/6 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
 
 ## 典型参数
 

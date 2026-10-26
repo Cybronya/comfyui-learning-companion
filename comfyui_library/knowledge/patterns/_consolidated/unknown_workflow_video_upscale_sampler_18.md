@@ -3,50 +3,55 @@ name: unknown_workflow_video_upscale_sampler_18
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.957
-common_nodes: [GetImageSizeAndCount, ImageResize+, ImageScaleToMegapixels, Int, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.769
+common_nodes: [ConvertAny2Float, GetNode, ImageUpscaleWithModel, Int, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Note Plus (mtb), PlaySound|pysssss, RIFE VFI, SeargePromptText, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json, 视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json]
+members: [视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json, 视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json、视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json、视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageResize+`
-- `ImageScaleToMegapixels`
+- `ConvertAny2Float`
+- `GetNode`
+- `ImageUpscaleWithModel`
 - `Int`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Note Plus (mtb)`
+- `PlaySound|pysssss`
 - `RIFE VFI`
+- `SeargePromptText`
+- `SetNode`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 1/2 个有
-- `MaskBatchMulti` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `LoadWanVideoClipTextEncoder` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoImageClipEncode` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_395
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.816667
-common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
+coverage: 0.910143
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Bagel Image edit_1926942217695318017.json, 图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json, 图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json, 图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json, 图片生成/图生图/Bagel图片编辑_1926994181229805569.json, 图片生成/图生图/字节 BaGEL 图像编辑模型｜一致性_1928680125632778241.json]
+members: [数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json, 视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json, 视频生成/图生视频/MiniMax H3-TVC成片_2084238094596919298.json, 视频生成/图生视频/MiniMax H3-拼贴画_2084241565920350210.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083019872191213570.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100060414972350466.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100139807161798657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_395
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Bagel Image edit_1926942217695318017.json、图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json、图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json、图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json、图片生成/图生图/Bagel图片编辑_1926994181229805569.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json、视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json、视频生成/图生视频/MiniMax H3-TVC成片_2084238094596919298.json、视频生成/图生视频/MiniMax H3-拼贴画_2084241565920350210.json、视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083019872191213570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BagelImageEdit`
-- `BagelModelLoader`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/6 个有
-- `ShowText|pysssss` —— 3/6 个有
-- `Bjornulf_ShowStringText` —— 2/6 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 2/7 个有
+- `RH_Doubao_Seedance_1_5_Pro` —— 1/7 个有
 
 ## 典型参数
 

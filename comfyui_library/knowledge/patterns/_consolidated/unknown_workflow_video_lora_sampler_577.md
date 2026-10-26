@@ -1,61 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_577
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.894
-common_nodes: [CR Text, DWPreprocessor, Fast Groups Muter (rgthree), GetImageSizeAndCount, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM V2, LoadImage, LoadLynxResampler, LoadWanVideoT5TextEncoder, LynxEncodeFaceIP, LynxInsightFaceCrop, PrimitiveString, RHHiddenNodes, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy clearCacheAll, easy showAnything]
+coverage: 0.91175
+common_nodes: [CreateCFGScheduleFloatList, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/文生图/反推复刻视频强一致性文生视频换脸及服装动作参考_1985589432625639425.json, 视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_1976558909701885953.json, 视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_2053000425640611842.json]
+members: [视频生成/图生视频/Wan2.2-14B 图生视频人流穿梭_1968572252335812609.json, 视频生成/图生视频/Wan2.2-14B 精简稳定版_2071155047878193153.json, 视频生成/图生视频/Wan2.2图生视频，支持首尾帧_1979152204013670402.json, 视频生成/文生视频/Wan2.2-14B 图生视频360度后空翻123_2001304184546881538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_577
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/反推复刻视频强一致性文生视频换脸及服装动作参考_1985589432625639425.json、视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_1976558909701885953.json、视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_2053000425640611842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-14B 图生视频人流穿梭_1968572252335812609.json、视频生成/图生视频/Wan2.2-14B 精简稳定版_2071155047878193153.json、视频生成/图生视频/Wan2.2图生视频，支持首尾帧_1979152204013670402.json、视频生成/文生视频/Wan2.2-14B 图生视频360度后空翻123_2001304184546881538.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `DWPreprocessor`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
+全部 4 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `JWInteger`
 - `LoadImage`
-- `LoadLynxResampler`
 - `LoadWanVideoT5TextEncoder`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PrimitiveString`
-- `RHHiddenNodes`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddLynxEmbeds`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExtraModelSelect`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageFromBatch+` —— 3/4 个有
+- `ImageResize+` —— 3/4 个有
+- `Bjornulf_ShowInt` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `ShowText` —— 2/4 个有
+- `DF_Int_to_Float` —— 1/4 个有
+- `DF_Integer` —— 1/4 个有
+- `DF_Text_Box` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 

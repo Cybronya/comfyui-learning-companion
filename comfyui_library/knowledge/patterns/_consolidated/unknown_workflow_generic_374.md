@@ -3,37 +3,48 @@ name: unknown_workflow_generic_374
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.961714
-common_nodes: [AudioCrop, AudioSeparation, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
+coverage: 0.711571
+common_nodes: [PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json, 音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json, 音频生成/音频生成/CosyVoice3_2085675869581963265.json, 音频生成/音频生成/高精度声音克隆：支持外语、老外普通话_2079952082660052993.json]
+members: [图片生成/图生图/ZIP批量上传图片，for循环处理多张图片演示实例_1937380001987633154.json, 图片生成/图生图/光影色彩复制_1979028901223632897.json, 图片生成/图生图/全能图片V1 批量图生图_1951955999404052481.json, 图片生成/图生图/全能图片V1图像编辑批量版_1980671977885188098.json, 图片生成/图生图/全能图片V1批量光影及色彩调整_1977651576317845506.json, 图片生成/图生图/图片批量换脸_1993511250852331522.json, 图片生成/图生图/图片换背景-单图或者批量_1968613096191401985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_374
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json、音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json、音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/ZIP批量上传图片，for循环处理多张图片演示实例_1937380001987633154.json、图片生成/图生图/光影色彩复制_1979028901223632897.json、图片生成/图生图/全能图片V1 批量图生图_1951955999404052481.json、图片生成/图生图/全能图片V1图像编辑批量版_1980671977885188098.json、图片生成/图生图/全能图片V1批量光影及色彩调整_1977651576317845506.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `FL_CosyVoice3_ModelLoader`
-- `FL_CosyVoice3_ZeroShot`
-- `LoadAudio`
-- `SaveAudio`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `SaveImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 3/7 个有
-- `JjkText` —— 2/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
+- `Bjornulf_ShowInt` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `RH_Nano_Banana_Image2Image` —— 5/7 个有
+- `ImageScaleDownToSize` —— 3/7 个有
+- `RH_Translator` —— 2/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `ReActorFaceSwap` —— 1/7 个有
+- `easy imageRemBg` —— 1/7 个有
 
 ## 典型参数
 

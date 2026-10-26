@@ -3,49 +3,33 @@ name: unknown_workflow_upscale_vae_60
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8405
-common_nodes: [ImageFromBatch+, ImageScaleToTotalPixels, ImageTile+, JoinImageWithAlpha, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy imageSize, easy int]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json, 视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json]
+members: [图片生成/图生图/详情图到白底图+高清_2065104369812590593.json, 图片生成/图生图/详情图到白底图+高清_2067519776129372161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json、视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/详情图到白底图+高清_2065104369812590593.json、图片生成/图生图/详情图到白底图+高清_2067519776129372161.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageFromBatch+`
-- `ImageScaleToTotalPixels`
-- `ImageTile+`
-- `JoinImageWithAlpha`
 - `LoadImage`
-- `PreviewImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageSize`
-- `easy int`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `easy imageInsetCrop` —— 1/2 个有
+- `easy imageRemBg`
 
 ## 典型参数
 

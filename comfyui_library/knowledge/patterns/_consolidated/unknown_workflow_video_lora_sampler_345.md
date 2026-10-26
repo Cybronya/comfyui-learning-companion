@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_video_lora_sampler_345
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.748667
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.899714
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2007804749827022850.json, 视频生成/图生视频/Infinite Talk数字人唱歌（无限时长+高动态）_1969431253688721410.json, 视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json, 视频生成/图生视频/Infinite+talk数字人动态加强版_2001621659876507649.json, 视频生成/图生视频/数字人对口型唱歌-Infinite Talk_2050200100416311298.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
+members: [数字人/数字人/数字人-图片对口型唱歌_口播（infinitetalk）_1988257488845889538.json, 数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json, 视频生成/图生视频/CCC的InfiniteTalk数字人_2026963272511000578.json, 视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json, 视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json, 视频生成/图生视频/Infinite Talk数字人_2069716627356217345.json, 视频生成/图生视频/蓝天AI口播工作流_2080617453847138306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_345
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2007804749827022850.json、视频生成/图生视频/Infinite Talk数字人唱歌（无限时长+高动态）_1969431253688721410.json、视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json、视频生成/图生视频/Infinite+talk数字人动态加强版_2001621659876507649.json、视频生成/图生视频/数字人对口型唱歌-Infinite Talk_2050200100416311298.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/数字人-图片对口型唱歌_口播（infinitetalk）_1988257488845889538.json、数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json、视频生成/图生视频/CCC的InfiniteTalk数字人_2026963272511000578.json、视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json、视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
 - `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
@@ -43,34 +42,30 @@ source: knowledge_consolidation
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `LoadAudio` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `ToInt` —— 5/6 个有
-- `Display Int (rgthree)` —— 4/6 个有
-- `SoundFlow_GetLength` —— 4/6 个有
-- `Float` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `Int` —— 3/6 个有
-- `JWInteger` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `AddLabel` —— 2/6 个有
-- `JWFloat` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `CM_FloatToInt` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_GetAudioDuration` —— 1/6 个有
-- `TTResolutionSelector` —— 1/6 个有
-- `VHS_LoadAudioUpload` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy int` —— 1/6 个有
-- `easy mathInt` —— 1/6 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `ToInt` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `Audio Duration (mtb)` —— 3/7 个有
+- `RH_GetAudioDuration` —— 3/7 个有
+- `SaveAudio` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `IndexTTS2_Emotion` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `CM_IntToFloat` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SeedVR2` —— 1/7 个有
+- `SeedVR2BlockSwap` —— 1/7 个有
+- `Upscale Model Loader` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
 
 ## 典型参数
 

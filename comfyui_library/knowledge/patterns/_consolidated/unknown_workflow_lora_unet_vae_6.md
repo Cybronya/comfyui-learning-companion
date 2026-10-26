@@ -1,55 +1,73 @@
 ---
 name: unknown_workflow_lora_unet_vae_6
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.819
-common_nodes: [BasicScheduler, CLIPLoader, CreateVideo, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, PreviewAny, SaveVideo, UNETLoader, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.8965
+common_nodes: [CFGNorm, CLIPLoader, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/秋明山自用去油导演台_2100484002187669506.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本Ref2va_2097293667320029186.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本T2V&FL&I2V修复版_2097354274782138370.json]
+members: [图片生成/图生图/qwen edit 2511  室内设计线稿转效果图_1985150836387057666.json, 图片生成/文生图/兵马俑LoRA——Qwen-Image-Edit应用_1963214327899721729.json, 视频生成/图生视频/千问多图融合编辑_1982020667237384193.json, 视频生成/图生视频/手办LoRA——Qwen-Image-Edit应用_1961983511181856769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/秋明山自用去油导演台_2100484002187669506.json、视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本Ref2va_2097293667320029186.json、视频生成/文生视频/MiniMax H3 导演台全能工作流 满血版本T2V&FL&I2V修复版_2097354274782138370.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/qwen edit 2511  室内设计线稿转效果图_1985150836387057666.json、图片生成/文生图/兵马俑LoRA——Qwen-Image-Edit应用_1963214327899721729.json、视频生成/图生视频/千问多图融合编辑_1982020667237384193.json、视频生成/图生视频/手办LoRA——Qwen-Image-Edit应用_1961983511181856769.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CreateVideo`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorRefine`
-- `PreviewAny`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UpscaleModelLoader` —— 2/3 个有
-- `BlockSparseAttention` —— 1/3 个有
-- `EasyCache` —— 1/3 个有
-- `MiniMaxLowVRAMAttention` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
+- `EmptyLatentImage` —— 3/4 个有
+- `KSampler` —— 3/4 个有
+- `FSampler` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `TextEncodeQwenImageEditPlus` —— 1/4 个有
+- `VAEEncode` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1024 | 768 - 1024 | 3 | 87% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

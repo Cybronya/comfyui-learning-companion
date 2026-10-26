@@ -1,63 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_770
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9115
-common_nodes: [Any To String (mtb), CLIPLoader, CLIPTextEncode, INTConstant, ImageResize+, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Qwen3_VQA, Seed (rgthree), ShowText|pysssss, Textbox, UNETLoader, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy textSwitch]
+frequency: 3
+level: moderate
+coverage: 0.914667
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, Compare, DF_Get_image_size, DiffuEraserLoader, DiffuEraserSampler, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Float, GetImageRangeFromBatch, GetImageSizeAndCount, If ANY execute A else B, ImageFromBatch+, ImageResizeKJv2, ImpactSwitch, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch2way, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveBoolean, RH_Sora2_I2V, RH_Sora2_T2V, RepeatImageBatch, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy float, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json, 视频生成/文生视频/大凯辰光-Qwen3自动提示词+wan2.2图生视频_2008174845816741889.json]
+members: [视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json, 视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json, 视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_770
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json、视频生成/文生视频/大凯辰光-Qwen3自动提示词+wan2.2图生视频_2008174845816741889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json、视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json、视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `ImageResize+`
-- `KSamplerAdvanced`
+全部 3 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `Compare`
+- `DF_Get_image_size`
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `If ANY execute A else B`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `Int`
+- `JWImageResizeByLongerSide`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LazySwitch2way`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `Qwen3_VQA`
-- `Seed (rgthree)`
-- `ShowText|pysssss`
-- `Textbox`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveBoolean`
+- `RH_Sora2_I2V`
+- `RH_Sora2_T2V`
+- `RepeatImageBatch`
+- `SaveVideo`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy cleanGpuUsed`
-- `easy textSwitch`
+- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy float`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveLatent` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
+- `Text Concatenate` —— 2/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 12 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,9 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

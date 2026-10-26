@@ -3,60 +3,66 @@ name: unknown_workflow_video_sampler_vae_181
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [Any Switch (rgthree), Anything Everywhere, Anything Everywhere3, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchMulti, ImageResizeKJv2, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, ReplaceImagesInBatch, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy int, easy showAnything]
+coverage: 0.764
+common_nodes: [Anything Everywhere, Anything Everywhere3, Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, Seed Everywhere, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json, 视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json]
+members: [数字人/数字人/数字人(单人)-Infinitetalk_1970726121132204033.json, 数字人/数字人/电商带货数字人对口型_1997359205885612034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_181
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json、视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/数字人(单人)-Infinitetalk_1970726121132204033.json、数字人/数字人/电商带货数字人对口型_1997359205885612034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
 - `Anything Everywhere`
 - `Anything Everywhere3`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `LayerUtility: ColorImage`
+- `Audio Duration (mtb)`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
-- `ReplaceImagesInBatch`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `Seed Everywhere`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
-- `easy int`
-- `easy showAnything`
+- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadWanVideoT5TextEncoder` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PrimitiveString` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `SparkTTSRun` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoLoraSelectMulti` —— 1/2 个有
+- `WanVideoTextEncode` —— 1/2 个有
+- `WanVideoTextEncodeCached` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

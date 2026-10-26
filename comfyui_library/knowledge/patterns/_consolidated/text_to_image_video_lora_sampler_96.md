@@ -1,40 +1,50 @@
 ---
 name: text_to_image_video_lora_sampler_96
 type: Text To Image
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.71225
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3面部修复图生视频处理生成工具_2101749405769625602.json, 视频生成/图生视频/Minimax H3 Singularity中远景脸部精修 反油光质感图生视频_2098647053638393858.json, 视频生成/图生视频/Minimax H3 高动态打斗模型｜更稳更有冲击力_2096914596027260929.json, 视频生成/图生视频/Minimax H3图生视频脸部精修 80 优化版工作流_2098648439998476289.json, 视频生成/图生视频/Minimax H3多图参考生视频Singularity武斗专属模型加4步急速加放大加双重人脸精修工_2108324433835413505.json, 视频生成/图生视频/全能参考二采放大｜MiniMax H3视频图生视频_2092362550968147969.json, 视频生成/图生视频/全能参考二采放大｜MiniMax H3视频生视频图生视频_2092619898299179010.json, 视频生成/文生视频/MiniMax H3文生图生视频FastH3 8步急速加放大加人脸精修，FL2VA模型方案_2103575208023117825.json]
+members: [视频生成/图生视频/Minimax H3参考生视频+高动态｜图生视频生成_2095268329618497537.json, 视频生成/图生视频/Minimax H3参考生视频自用版｜高动态可出20s长片_2107687775708475394.json, 视频生成/图生视频/Minimax H3参考生视频高动态自用版可生成20秒以上视频工作流，图生视频方案_2107905533574471681.json, 视频生成/图生视频/MinimaxH3长视频生成｜高清不劣化图生视频_2095576583376556034.json, 视频生成/图生视频/二采首尾帧+参考音｜Minimax H3图生视频生成_2092586326188191745.json, 视频生成/图生视频/二采首尾帧参考音｜Minimax H3图生视频直出_2092337325798940674.json, 视频生成/图生视频/单采打戏流畅出片｜Minimax 图生视频动作拉满_2096266436170838018.json, 视频生成/图生视频/图生视频二采+1参考音｜Minimax H3批量API用_2094054081001250817.json, 视频生成/图生视频/长视频一键生成｜MinimaxH3图生视频续写_2095819929332314113.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_96
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3面部修复图生视频处理生成工具_2101749405769625602.json、视频生成/图生视频/Minimax H3 Singularity中远景脸部精修 反油光质感图生视频_2098647053638393858.json、视频生成/图生视频/Minimax H3 高动态打斗模型｜更稳更有冲击力_2096914596027260929.json、视频生成/图生视频/Minimax H3图生视频脸部精修 80 优化版工作流_2098648439998476289.json、视频生成/图生视频/Minimax H3多图参考生视频Singularity武斗专属模型加4步急速加放大加双重人脸精修工_2108324433835413505.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Minimax H3参考生视频+高动态｜图生视频生成_2095268329618497537.json、视频生成/图生视频/Minimax H3参考生视频自用版｜高动态可出20s长片_2107687775708475394.json、视频生成/图生视频/Minimax H3参考生视频高动态自用版可生成20秒以上视频工作流，图生视频方案_2107905533574471681.json、视频生成/图生视频/MinimaxH3长视频生成｜高清不劣化图生视频_2095576583376556034.json、视频生成/图生视频/二采首尾帧+参考音｜Minimax H3图生视频生成_2092586326188191745.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `GetNode`
+- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -44,64 +54,54 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/8 个有
-- `PrimitiveFloat` —— 7/8 个有
-- `ResolutionSelector` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/8 个有
-- `MiniMaxH3SigmaShift` —— 6/8 个有
-- `ModelAttentionBackend` —— 6/8 个有
-- `PrimitiveStringMultiline` —— 6/8 个有
-- `GetNode` —— 5/8 个有
-- `H3FaceStitch` —— 5/8 个有
-- `H3FaceTrackCrop` —— 5/8 个有
-- `H3InjectVideoLatent` —— 5/8 个有
-- `H3PerFrameDenoise` —— 5/8 个有
-- `SaveImage` —— 5/8 个有
-- `VOSR2ModelLoader` —— 5/8 个有
-- `VOSR2Upscale` —— 5/8 个有
-- `LTXVConcatAVLatent` —— 4/8 个有
-- `LTXVSeparateAVLatent` —— 4/8 个有
-- `MiniMaxH3NativeAudioLock` —— 4/8 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/8 个有
-- `ModelPreviewOverrideKJ` —— 4/8 个有
-- `SplitSigmas` —— 4/8 个有
-- `BlockSparseAttention` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `GetImageRangeFromBatch` —— 2/8 个有
-- `MiniMaxH3ImageToVideo` —— 2/8 个有
-- `PreviewAny` —— 2/8 个有
-- `ImageConcanate` —— 1/8 个有
-- `ManualSigmas` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 8/9 个有
+- `LTXVSeparateAVLatent` —— 6/9 个有
+- `LayerColor: Brightness & Contrast` —— 6/9 个有
+- `MiniMaxLowVRAMAttention` —— 6/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 6/9 个有
+- `PT_H3ConcatAVLatent` —— 6/9 个有
+- `LoadAudio` —— 5/9 个有
+- `SolAttnPatch` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
+- `ResolutionSelector` —— 3/9 个有
+- `SplitSigmas` —— 3/9 个有
+- `TrimAudioDuration` —— 3/9 个有
+- `easy showAnything` —— 3/9 个有
+- `BlockSparseAttention` —— 2/9 个有
+- `FrameInterpolate` —— 2/9 个有
+- `FrameInterpolationModelLoader` —— 2/9 个有
+- `ImageFromBatch` —— 2/9 个有
+- `MiniMaxChunkFeedForward` —— 2/9 个有
+- `MiniMaxH3AddGuide` —— 2/9 个有
+- `GetImageRangeFromBatch` —— 1/9 个有
+- `RTXVideoSuperResolution` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

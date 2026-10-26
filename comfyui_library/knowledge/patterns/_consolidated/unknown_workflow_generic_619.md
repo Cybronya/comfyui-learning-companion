@@ -1,35 +1,44 @@
 ---
 name: unknown_workflow_generic_619
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.78025
-common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
+coverage: 0.8816
+common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
+members: [数字人/数字人/QwenTTS 语音克隆_2035317122842234882.json, 数字人/数字人/声音克隆Qwen3+TTS（支持多国语言）_2043359522479149058.json, 音频生成/音频生成/QWEN3 TTS 声音设计、克隆_2014873824315056129.json, 音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json, 音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_619
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/QwenTTS 语音克隆_2035317122842234882.json、数字人/数字人/声音克隆Qwen3+TTS（支持多国语言）_2043359522479149058.json、音频生成/音频生成/QWEN3 TTS 声音设计、克隆_2014873824315056129.json、音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json、音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ByteDanceSeedreamNodeV3`
-- `SaveImageAdvanced`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `Painter` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `Apply Whisper` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `SaveAudioMP3` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `AudioCrop` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `Qwen3TTSVoiceDesign` —— 2/5 个有
+- `Text` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 

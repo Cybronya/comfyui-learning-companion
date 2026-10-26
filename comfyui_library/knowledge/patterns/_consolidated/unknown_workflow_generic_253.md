@@ -3,38 +3,34 @@ name: unknown_workflow_generic_253
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.978778
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.991444
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
+members: [图片生成/图生图/全新全能图片_3.1_多图_单图_电商专用_2045899981818699777.json, 图片生成/图生图/全能图片2封面设计_2046131474440658945.json, 图片生成/图生图/图生图全能图片工作流_2079831413137952770.json, 图片生成/文生图/2 全能文生图_图生图_2059092157759311874.json, 图片生成/文生图/2 全能文生图_图生图_2059094207280803842.json, 图片生成/文生图/万能电商主图-10连出-通用所有类目_2027664142831722497.json, 图片生成/文生图/全能图片2封面设计_2068405006365192194.json, 图片生成/文生图/全能图片2封面设计_2073355328347004929.json, 图片生成/文生图/👾怪獸-全能图片2&Pro👾_2042513074086748161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_253
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全新全能图片_3.1_多图_单图_电商专用_2045899981818699777.json、图片生成/图生图/全能图片2封面设计_2046131474440658945.json、图片生成/图生图/图生图全能图片工作流_2079831413137952770.json、图片生成/文生图/2 全能文生图_图生图_2059092157759311874.json、图片生成/文生图/2 全能文生图_图生图_2059094207280803842.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
-- `Text` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `LoadImage` —— 8/9 个有
+- `TextInputNode` —— 8/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/9 个有
+- `MuyeLoadImage` —— 1/9 个有
 
 ## 典型参数
 

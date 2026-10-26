@@ -3,41 +3,36 @@ name: unknown_workflow_generic_964
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.827
-common_nodes: [CR Text, LoadAudio, LoadImage, RHLLMChatNode, RH_RhartImageNG31FlashImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, easy showAnything]
+coverage: 0.592
+common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/网红爱人突破屏幕视频一键生成_2074462717573943298.json, 视频生成/图生视频/网红恋人破壁出镜（视频一键生成）_2078737060462161921.json, 视频生成/图生视频/网红爱人突破屏幕视频一键生成_2074036972875763714.json]
+members: [图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json, 图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json, 图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_964
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/网红爱人突破屏幕视频一键生成_2074462717573943298.json、视频生成/图生视频/网红恋人破壁出镜（视频一键生成）_2078737060462161921.json、视频生成/图生视频/网红爱人突破屏幕视频一键生成_2074036972875763714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json、图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json、图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
+- `HYPIRImageRestoration`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RHLLMChatNode`
-- `RH_RhartImageNG31FlashImageToImage`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `SaveVideo`
-- `easy showAnything`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoSafeSaveImage` —— 2/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `FluxKontextImageScale` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
 
 ## 典型参数
 

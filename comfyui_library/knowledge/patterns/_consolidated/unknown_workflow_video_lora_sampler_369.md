@@ -1,69 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_369
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.6595
-common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.901143
+common_nodes: [Any To Any, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, CreateVideo, GetVideoComponents, HunyuanVideoFoley, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, RHLLMChatNode, StringReplace, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【升级版】Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1972907220843302914.json, 视频生成/图生视频/动作迁移-Wan2.2-深度图控制版本_1955886992418590722.json, 视频生成/图生视频/极致真人舞蹈视频迁移(Wan2.2-FunControl)_1954879516944601090.json, 视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json, 视频生成/文生视频/Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778.json, 视频生成/文生视频/Wan2.2美女舞蹈视频动作迁移_1964248050468274178.json]
+members: [视频生成/图生视频/Wan22-Bernini单参考图生视频（自动音效 _ 双模式提示词）_2069963218600161282.json, 视频生成/图生视频/Wan22-Bernini双参考图生视频（自动音效 _ 双模式提示词）_2069956423366307842.json, 视频生成/图生视频/Wan22-Bernini多参考图生视频（自动音效 _ 双模式提示词）_2069779286491484161.json, 视频生成/文生视频/Bernini文生视频+音效v3_2064182065469415426.json, 视频生成/文生视频/Bernin文生视频+音效v3_2065034781892636673.json, 视频生成/文生视频/开源最强 全模态图生视频V3 单音效版：Bernini_2073747005947604994.json, 视频生成/文生视频/（4步加速版）Bernini文生视频+音效v3_2073465929488490497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_369
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【升级版】Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1972907220843302914.json、视频生成/图生视频/动作迁移-Wan2.2-深度图控制版本_1955886992418590722.json、视频生成/图生视频/极致真人舞蹈视频迁移(Wan2.2-FunControl)_1954879516944601090.json、视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json、视频生成/文生视频/Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan22-Bernini单参考图生视频（自动音效 _ 双模式提示词）_2069963218600161282.json、视频生成/图生视频/Wan22-Bernini双参考图生视频（自动音效 _ 双模式提示词）_2069956423366307842.json、视频生成/图生视频/Wan22-Bernini多参考图生视频（自动音效 _ 双模式提示词）_2069779286491484161.json、视频生成/文生视频/Bernini文生视频+音效v3_2064182065469415426.json、视频生成/文生视频/Bernin文生视频+音效v3_2065034781892636673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
+全部 7 个 workflow 都包含：
+- `Any To Any`
+- `BerniniConditioning`
+- `BerniniPromptEnhancer`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CreateVideo`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
+- `RHLLMChatNode`
+- `StringReplace`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoControlEmbeds`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 5/6 个有
-- `DepthAnything_V2` —— 5/6 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
-- `GetNode` —— 5/6 个有
-- `ImageBlend` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `Zoe-DepthMapPreprocessor` —— 5/6 个有
-- `PrimitiveInt` —— 4/6 个有
-- `WanVideoEmptyEmbeds` —— 4/6 个有
-- `GetImageRangeFromBatch` —— 1/6 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/6 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/6 个有
-- `LayerUtility: PurgeVRAM` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
+- `SaveVideo` —— 6/7 个有
+- `CR Prompt Text` —— 4/7 个有
+- `ImageResizeKJv2` —— 4/7 个有
+- `LoadImage` —— 4/7 个有
+- `SimpleMath+` —— 4/7 个有
+- `Text` —— 4/7 个有
+- `Any Switch (rgthree)` —— 3/7 个有
+- `CR Text` —— 3/7 个有
+- `DF_Int_to_Float` —— 3/7 个有
+- `DF_Integer` —— 3/7 个有
+- `Fast Groups Muter (rgthree)` —— 3/7 个有
+- `Image Batch` —— 3/7 个有
+- `MaxNode` —— 3/7 个有
+- `PrimitiveInt` —— 3/7 个有
+- `easy int` —— 3/7 个有
+- `BatchImagesNode` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `intToFloat _O` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 10 | 4 - 10 | 7 | 67% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -71,4 +83,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，7 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

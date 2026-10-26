@@ -3,64 +3,71 @@ name: unknown_workflow_sampler_unet_vae_316
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9025
-common_nodes: [AddLabel, CLIPLoader, INTConstant, Image Comparer (rgthree), ImageConcatMulti, KSampler, KSamplerSelect, ManualSigmas, SamplerCustom, SaveImage, StringConstantMultiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.6785
+common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImagesFromBatchIndexed, GetVideoComponents, HAIGC_SaveImagesToZip, ImageGrid, KSamplerSelect, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy clearCacheAll]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen2.1 文生图 turbo vs fusal vs 原生_2109541021666332674.json, 图片生成/文生图/Qwen2.1Edit 原图vs原生vsTurbo三图对比_2109843408683618306.json]
+members: [图片生成/图生图/h3 角色四视图设计-批量_2098362835725279234.json, 图片生成/图生图/h3 角色四视图设计_2094059970831675394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_316
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen2.1 文生图 turbo vs fusal vs 原生_2109541021666332674.json、图片生成/文生图/Qwen2.1Edit 原图vs原生vsTurbo三图对比_2109843408683618306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/h3 角色四视图设计-批量_2098362835725279234.json、图片生成/图生图/h3 角色四视图设计_2094059970831675394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AddLabel`
+- `AILab_QwenVL`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `ImageConcatMulti`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImagesFromBatchIndexed`
+- `GetVideoComponents`
+- `HAIGC_SaveImagesToZip`
+- `ImageGrid`
 - `KSamplerSelect`
-- `ManualSigmas`
-- `SamplerCustom`
+- `MiniMaxH3ReferenceToVideo`
+- `MultiTextConcatenate`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringConstantMultiline`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
+- `AutoCropFaces` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
 - `LoadImage` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `ResolutionSelector` —— 1/2 个有
-- `StringConstant` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RHBatchImages:` —— 1/2 个有
+- `RHExtractImage` —— 1/2 个有
+- `RHUploadZip` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `ZML_PreviewImage` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
+- `easy imageCount` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,9 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

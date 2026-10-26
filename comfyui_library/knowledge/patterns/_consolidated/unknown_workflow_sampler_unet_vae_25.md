@@ -1,74 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_25
 type: Unknown Workflow
-frequency: 18
-level: strong
-coverage: 0.947889
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine]
-problems: [Steps较低可能导致细节不足]
+frequency: 17
+level: moderate
+coverage: 0.893588
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit-2509模型，人物多角度分镜图工作流_2048404931266220034.json, 图片生成/图生图/Qwen2511多角度生成_2017774842988204034.json, 图片生成/图生图/Qwen_Edit  场景多角度 短剧场景_2034517083853168642.json, 图片生成/图生图/Qwen_Edit  漫剧场景  多角度  漫剧分镜生成_2034549914549620737.json, 图片生成/图生图/Qwen_Edit_2509多角度（短剧专用）_1998642600527691778.json, 图片生成/图生图/Qwen_Edit_2511   IP角色多视图 多视角 三视图_2039344004965343234.json, 图片生成/图生图/Qwen_Edit_2511 套图  IP角色多视图 多视角 三视图 模特分镜_2042415935906123777.json, 图片生成/图生图/Qwen_Edit_2511多角度角色场景（短剧专用）_2054122507342491650.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用）_2014417657260417025.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用）_2016154463576264705.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用），真的很好用！_2037330464716886017.json, 图片生成/图生图/Qwen_Edit_2511镜头多角度_2017108823558852610.json, 图片生成/图生图/Qwen分镜图生图  多视图  多角度 Qwen_Edit_2511_2067422630306734081.json, 图片生成/图生图/opsv-Qwen_Edit_2511多角度_2080275632545685506.json, 图片生成/图生图/opsv-Qwen_edit2511-场景角色合成3refs_2080279327953997825.json, 图片生成/图生图/opsv-qwen2511-2refs_2080315109892771842.json, 图片生成/图生图/人物一致性多角度分镜直出-制造分镜 Next Scene-v2_2003501812189700097.json, 图片生成/图生图/多角度分镜直出-制造分镜 4.0_1985154261069828098.json]
+members: [图片生成/图生图/MiniMax H3 图片编辑！多图编辑！B站艾橘溪_2086814028822827009.json, 图片生成/图生图/MiniMax H3 多图编辑!效果比肩G-2.0_2087007203873091586.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087122607928864770.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087156363926532098.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2089321212186021890.json, 图片生成/图生图/MiniMax_H3图片视频图片编辑_2087427695289397250.json, 图片生成/图生图/MiniMax_H3开源版_图片编辑_多图编辑_图片换背景_创意生图_2087429903057772545.json, 图片生成/图生图/MiniMax_H3开源版_图片编辑_多图编辑_图片换背景_创意生图_2096887206345527297.json, 图片生成/图生图/Minimax H3：双图编辑_2087112328516030466.json, 图片生成/文生图/MiniMax-H3 文生图片+全节点注释_2085181492325601281.json, 图片生成/文生图/MiniMaxH3 文生图文生图文生图文生图不是视频！2K加速版_2088278482991280130.json, 图片生成/文生图/MiniMaxH3 文生图！2K加速版！_2085238969377316866.json, 图片生成/文生图/MiniMaxH3开源 文生图文生图文生图 2K加速版_2088565003669557250.json, 图片生成/文生图/MiniMaxH3开源 文生图文生图文生图 2K加速版_2090436462390108161.json, 图片生成/文生图/MiniMaxH3开源版 文生图 2K加速版_2085323844386123777.json, 图片生成/文生图/MiniMaxH3开源版 文生图 2K加速版_2085326821125615617.json, 图片生成/文生图/MiniMax_H3 文生图-2K_2085311261709000706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit-2509模型，人物多角度分镜图工作流_2048404931266220034.json、图片生成/图生图/Qwen2511多角度生成_2017774842988204034.json、图片生成/图生图/Qwen_Edit  场景多角度 短剧场景_2034517083853168642.json、图片生成/图生图/Qwen_Edit  漫剧场景  多角度  漫剧分镜生成_2034549914549620737.json、图片生成/图生图/Qwen_Edit_2509多角度（短剧专用）_1998642600527691778.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 图片编辑！多图编辑！B站艾橘溪_2086814028822827009.json、图片生成/图生图/MiniMax H3 多图编辑!效果比肩G-2.0_2087007203873091586.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087122607928864770.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087156363926532098.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2089321212186021890.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `CFGNorm`
+全部 17 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
+- `KSamplerSelect`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 16/18 个有
-- `GetNode` —— 3/18 个有
-- `PreviewImage` —— 3/18 个有
-- `SetNode` —— 3/18 个有
-- `easy showAnything` —— 3/18 个有
-- `RHHiddenNodes` —— 2/18 个有
-- `RMBG` —— 2/18 个有
-- `Seed (rgthree)` —— 2/18 个有
-- `HAIGC_SaveImagesToZip` —— 1/18 个有
+- `EasyCache` —— 16/17 个有
+- `ImageFromBatch` —— 16/17 个有
+- `JjkText` —— 16/17 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 16/17 个有
+- `LoadImage` —— 10/17 个有
+- `MiniMaxH3ReferenceToVideo` —— 9/17 个有
+- `LayerUtility: ImageReel` —— 8/17 个有
+- `LayerUtility: ImageReelComposit` —— 8/17 个有
+- `MiniMaxH3ImageToVideo` —— 8/17 个有
+- `孤海注释` —— 1/17 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 1 - 8 | 18 | 79% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 100% |
-| 调度器 | simple | - | 18 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 1 - 8，18 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 100%
-- 调度器 最常用 simple，18 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

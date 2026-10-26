@@ -3,39 +3,33 @@ name: unknown_workflow_generic_589
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6954
-common_nodes: [CR Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudioMP3, ShowText|pysssss]
+coverage: 0.8642
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json, 音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json, 音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json, 音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json, 音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json]
+members: [图片生成/图生图/全能图片K Max 多图编辑_2008822643360796673.json, 图片生成/图生图/多图融合编辑工作流｜Kontext Max 最多四图_2099690030104145921.json, 图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100388993618763777.json, 图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100413285022658561.json, 图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_589
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json、音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json、音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json、音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json、音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片K Max 多图编辑_2008822643360796673.json、图片生成/图生图/多图融合编辑工作流｜Kontext Max 最多四图_2099690030104145921.json、图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100388993618763777.json、图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100413285022658561.json、图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3ASRLoader` —— 3/5 个有
-- `Qwen3ASRTranscribe` —— 3/5 个有
-- `Apply Whisper` —— 2/5 个有
-- `PreviewAny` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `RH_Flux_Kontext_Max_Multi` —— 4/5 个有
+- `RH_Midjourney` —— 1/5 个有
 
 ## 典型参数
 

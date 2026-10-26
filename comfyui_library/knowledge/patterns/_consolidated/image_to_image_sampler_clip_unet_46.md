@@ -2,31 +2,34 @@
 name: image_to_image_sampler_clip_unet_46
 type: Image To Image
 frequency: 8
-level: moderate
-coverage: 0.8885
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.8705
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/ComfyUI_qwen_image姿势控制自动穿戴_1971197174509977602.json, 图片生成/图生图/F2_klein单图改图_2056203791569039361.json, 图片生成/图生图/F2_klein图洗图_2056009934218768386.json, 图片生成/图生图/F2_klein图洗图_2056577800190119938.json, 图片生成/图生图/F2_klein指定区域重绘_2056253513142988802.json, 图片生成/图生图/FLUX2-Klein指定区域重绘编辑工作流_2015965598240477186.json, 图片生成/图生图/FLUX2-Klein指定区域重绘编辑工作流_2068640783539982338.json, 图片生成/图生图/Flux-2-klein-多图精准控制编辑工作流-万能贴_2016050666283732994.json]
+members: [图片生成/图生图/Kontext-生成产品背景_1943184610207686657.json, 图片生成/图生图/Kontext-生成产品背景_1971036089194553346.json, 图片生成/图生图/Kontext一句话转换风格（主体特征不变）_1942037287171735554.json, 图片生成/图生图/Kontext一键转为动漫风格（主体特征不变）_1991802548898328578.json, 图片生成/图生图/Kontext图像万能编辑_1962166621970305026.json, 图片生成/图生图/Kontext图像编辑_1957981327398203394.json, 图片生成/图生图/ai性别大反转男生转女生_1944259274073604097.json, 图片生成/图生图/flux_kontext 脸部去油，去AI感，真实皮肤_1946634107703947266.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_46
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/ComfyUI_qwen_image姿势控制自动穿戴_1971197174509977602.json、图片生成/图生图/F2_klein单图改图_2056203791569039361.json、图片生成/图生图/F2_klein图洗图_2056009934218768386.json、图片生成/图生图/F2_klein图洗图_2056577800190119938.json、图片生成/图生图/F2_klein指定区域重绘_2056253513142988802.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Kontext-生成产品背景_1943184610207686657.json、图片生成/图生图/Kontext-生成产品背景_1971036089194553346.json、图片生成/图生图/Kontext一句话转换风格（主体特征不变）_1942037287171735554.json、图片生成/图生图/Kontext一键转为动漫风格（主体特征不变）_1991802548898328578.json、图片生成/图生图/Kontext图像万能编辑_1962166621970305026.json…）
 
 - **类型**：Image To Image
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -34,43 +37,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/8 个有
-- `EmptyFlux2LatentImage` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `ReferenceLatent` —— 5/8 个有
-- `GetImageSize` —— 4/8 个有
-- `ImageCompositeMasked` —— 3/8 个有
-- `ImageScaleToTotalPixels` —— 3/8 个有
-- `LayerUtility: ColorImage` —— 3/8 个有
-- `取色器_孤海` —— 3/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `BiRefNetRMBG` —— 1/8 个有
-- `FastCanvas` —— 1/8 个有
-- `FastCanvasTool` —— 1/8 个有
-- `OpenposePreprocessor` —— 1/8 个有
-- `TextEncodeQwenImageEditPlus` —— 1/8 个有
+- `PreviewImage` —— 6/8 个有
+- `FluxKontextImageScale` —— 5/8 个有
+- `easy imageConcat` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `GoogleTranslateTextNode` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `LayerUtility: ImageReel` —— 1/8 个有
+- `LayerUtility: ImageReelComposit` —— 1/8 个有
+- `LayerUtility: ImageScaleRestore V2` —— 1/8 个有
+- `TeaCache` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 7 | 6 - 20 | 8 | 48% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 8 | 84% |
+| 采样步数 | 20 | 8 - 20 | 8 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
 | 采样算法 | euler | - | 8 | 100% |
 | 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 0.5 - 1 | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 7，观测区间 6 - 20，8 个样本，取值分散，一致性仅 48%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，8 个样本，取值集中（一致性 84%）
+- 采样步数 中位数 20，观测区间 8 - 20，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，8 个样本，一致性 100%
 - 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，8 个样本
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

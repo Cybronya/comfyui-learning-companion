@@ -3,38 +3,42 @@ name: unknown_workflow_generic_1003
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.330667
-common_nodes: [AILab_QwenVL, ConstrainImage|pysssss, JWStringGetLine, LoadImage, SaveImage, ShowText|pysssss]
+coverage: 0.529333
+common_nodes: [CR Text, Float, HAIGC_VideoSubtitleEnhanced, ImpactConditionalBranch, LayerMask: MaskBoxDetect, LoadImage, MultiMaskSelectorNode, PrimitiveBoolean, SaveImage, 孤海-取色器]
 problems: []
 missing: []
-members: [图片生成/文生图/男装女装电商带货+全能图片2 & 10并发+模特姿势裂变+全节点注释_2059132311383400450.json, 图片生成/文生图/男装女装电商带货+全能图片G 2 &10并发+模特姿势裂变+全节点注释_2059132701772439553.json, 图片生成/文生图/男装女装电商带货+全能图片十并发+模特姿势裂变+全节点注释_2058917673177800706.json]
+members: [图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json, 图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json, 图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1003
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/男装女装电商带货+全能图片2 & 10并发+模特姿势裂变+全节点注释_2059132311383400450.json、图片生成/文生图/男装女装电商带货+全能图片G 2 &10并发+模特姿势裂变+全节点注释_2059132701772439553.json、图片生成/文生图/男装女装电商带货+全能图片十并发+模特姿势裂变+全节点注释_2058917673177800706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json、图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json、图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：33%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
-- `ConstrainImage|pysssss`
-- `JWStringGetLine`
+- `CR Text`
+- `Float`
+- `HAIGC_VideoSubtitleEnhanced`
+- `ImpactConditionalBranch`
+- `LayerMask: MaskBoxDetect`
 - `LoadImage`
+- `MultiMaskSelectorNode`
+- `PrimitiveBoolean`
 - `SaveImage`
-- `ShowText|pysssss`
+- `孤海-取色器`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 1/3 个有
-- `RH_Nano_Banana_Image2Image_Batch` —— 1/3 个有
-- `RH_RhartImageG2ImageToImage_Batch` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `MaskPreview` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

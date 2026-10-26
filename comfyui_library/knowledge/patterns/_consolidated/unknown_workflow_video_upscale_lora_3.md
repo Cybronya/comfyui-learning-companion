@@ -1,46 +1,82 @@
 ---
 name: unknown_workflow_video_upscale_lora_3
 type: Unknown Workflow
-frequency: 14
+frequency: 7
 level: moderate
-coverage: 0.709214
-common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.464
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, Yuan_RTXVideoUpscaleH3]
 problems: []
 missing: []
-members: [图片生成/图生图/H3图生视频-高清版_2099775777192636418.json, 图片生成/文生图/Dasiwa-MiniMax H3 导演台全能工作流-文生视频-人物去油_2110210924484325378.json, 视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-参考生视频_2095363717016932353.json, 视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频-人物去油_2110344332875231233.json, 视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频_2095485189106528257.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091439273353502722.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091560395537469442.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2092514631167336450.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2090764338553516034.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2091278066034241538.json, 视频生成/文生视频/Dasiwa-MiniMax H3 导演台全能工作流-文生视频_2095312937933164545.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v-文生视频_2092254280576225281.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-人物去油_2096232593627897857.json, 视频生成/文生视频/MiniMax H3 漫剧导演台_2097478155698262018.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json, 视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json, 视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json, 视频生成/图生视频/全栈式短剧生成MiniMax-H3V4.2_2088427778122280962.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成16.10修复_2089992232983162882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/H3图生视频-高清版_2099775777192636418.json、图片生成/文生图/Dasiwa-MiniMax H3 导演台全能工作流-文生视频-人物去油_2110210924484325378.json、视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-参考生视频_2095363717016932353.json、视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频-人物去油_2110344332875231233.json、视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频_2095485189106528257.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json、视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json、视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
+- `GetImage`
+- `GetNode`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3DirectorRefine`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `ShowText|pysssss`
 - `UNETLoader`
-- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_H3MotionContext`
+- `Yuan_H3MotionContextLoadLatent`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_MiniMaxH3Video`
+- `Yuan_RTXVideoUpscaleH3`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 13/14 个有
-- `MiniMaxH3Director` —— 12/14 个有
-- `孤海注释` —— 11/14 个有
-- `CreateVideo` —— 6/14 个有
-- `LoraLoaderBypassModelOnly` —— 6/14 个有
-- `ModelAttentionBackend` —— 6/14 个有
-- `SaveVideo` —— 5/14 个有
-- `ComfyMiniMaxH3Director` —— 2/14 个有
+- `ComfySwitchNode` —— 6/7 个有
+- `INTConstant` —— 6/7 个有
+- `PrimitiveBoolean` —— 6/7 个有
+- `RegexExtract` —— 6/7 个有
+- `StringConcatenate` —— 6/7 个有
+- `StringReplace` —— 6/7 个有
+- `YUAN_TXTAppearanceOrder` —— 6/7 个有
+- `YUAN_TXTListNumber` —— 6/7 个有
+- `YUAN_TXTReplace` —— 6/7 个有
+- `LoadImage` —— 1/7 个有
+- `MemoryCleaner` —— 1/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
+- `YUAN_TXTShotReplace` —— 1/7 个有
+- `YuanAudioList` —— 1/7 个有
+- `YuanAudioSplit` —— 1/7 个有
+- `YuanPrimitive` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
 
 ## 典型参数
 

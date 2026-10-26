@@ -3,67 +3,61 @@ name: unknown_workflow_video_sampler_vae_178
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.906
-common_nodes: [CR Text, DF_Integer, ImageResizeKJ, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, ShowText|pysssss, SimpleMath+, StringToInt, Text Multiline, TextSwitchCase, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy textSwitch]
+coverage: 0.667
+common_nodes: [ImageConcatMulti, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json, 视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json]
+members: [图片生成/文生图/03-13-02-WAN2.1-元素融合生成视频-phantom_14B_1990781927823187970.json, 视频生成/图生视频/phantom加速60%稳定版视频编辑工作流_1916898231614111746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_178
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json、视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/03-13-02-WAN2.1-元素融合生成视频-phantom_14B_1990781927823187970.json、视频生成/图生视频/phantom加速60%稳定版视频编辑工作流_1916898231614111746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `DF_Integer`
+- `ImageConcatMulti`
+- `ImagePadKJ`
 - `ImageResizeKJ`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RH_LLMAPI_NODE`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `StringToInt`
-- `Text Multiline`
-- `TextSwitchCase`
-- `VHS_LoadVideo`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `DepthAnything_V2` —— 1/2 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
 - `EmptyImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LayerMask: RemBgUltra` —— 1/2 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoMagCache` —— 1/2 个有
 
 ## 典型参数
 

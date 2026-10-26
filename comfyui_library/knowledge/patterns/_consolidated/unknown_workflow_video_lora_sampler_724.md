@@ -1,79 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_724
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.616
-common_nodes: [AudioEvenSplitNode, AudioSelectNode, AudioSplitNode, Display Int (rgthree), GetImageRangeFromBatch, GetNode, HuMoEmbeds, ImageStringBatch, JWDatetimeString, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, PreviewImage, PrimitiveStringMultiline, RandomPrompt, SelectImageString, SetNode, ShowText|pysssss, SoundFlow_GetLength, SoundFlow_TrimAudio, Text, VHS_VideoCombine, VideoTransitionNode, WanVideoBlockSwap, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader, WhisperModelLoader, easy batchAnything, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy int, easy textSwitch]
+frequency: 3
+level: moderate
+coverage: 0.857
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, ImageFromBatch+, JWInteger, JWStringConcat, LayerColor: Brightness & Contrast, LoadWanVideoT5TextEncoder, MathExpression|pysssss, ShowText|pysssss, TextConcat, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/50. 智能分割音频 多张照片提示词引作分镜  humo+infinite 长视频转场MV_1985906370425827330.json, 视频生成/图生视频/数字人humo+infinite-长视频+转场_1986239863164993538.json]
+members: [视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json, 视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json, 视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_724
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/50. 智能分割音频 多张照片提示词引作分镜  humo+infinite 长视频转场MV_1985906370425827330.json、视频生成/图生视频/数字人humo+infinite-长视频+转场_1986239863164993538.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json、视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json、视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioEvenSplitNode`
-- `AudioSelectNode`
-- `AudioSplitNode`
-- `Display Int (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `HuMoEmbeds`
-- `ImageStringBatch`
-- `JWDatetimeString`
-- `LoadAudio`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `ImageFromBatch+`
+- `JWInteger`
+- `JWStringConcat`
+- `LayerColor: Brightness & Contrast`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomPrompt`
-- `SelectImageString`
-- `SetNode`
 - `ShowText|pysssss`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `Text`
+- `TextConcat`
 - `VHS_VideoCombine`
-- `VideoTransitionNode`
+- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
-- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
-- `WhisperModelLoader`
-- `easy batchAnything`
-- `easy clearCacheAll`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy textSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GODMT_AnyCast` —— 1/2 个有
-- `Int2Any_AS` —— 1/2 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `CreateVideo` —— 1/3 个有
+- `FluxResolutionNode` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RunningHub ThinkSound` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `String` —— 1/3 个有
+- `easy mathInt` —— 1/3 个有
 
 ## 典型参数
 
@@ -85,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

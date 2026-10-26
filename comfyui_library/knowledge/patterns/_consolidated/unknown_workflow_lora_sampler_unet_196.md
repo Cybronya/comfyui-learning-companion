@@ -2,72 +2,70 @@
 name: unknown_workflow_lora_sampler_unet_196
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.84925
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+level: strong
+coverage: 0.9185
+common_nodes: [CLIPLoader, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RH_LLMAPI_NODE, SaveImage, ShowText|pysssss, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/58.MiniMax H3 全能参考加速极简_2087136892977504257.json, 视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json, 视频生成/文生视频/【Gensor-AI】MINIMAX-H3工作流合集【加速版】_2085550246054162433.json, 视频生成/文生视频/【遇见AI】minimax H3 高动态打斗场景武术动作二采修复+提示词skill工作流_2095684866888257537.json]
+members: [图片生成/图生图/模特套图工作流_1987890764711661569.json, 图片生成/图生图/模特套图工作流升级款_1995150525064785922.json, 图片生成/图生图/模特套图，一张可以生成9张不同姿势_2058598930799222786.json, 视频生成/图生视频/图生视频IP一致性 真实自然_2004525590436868097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_196
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/58.MiniMax H3 全能参考加速极简_2087136892977504257.json、视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json、视频生成/文生视频/【Gensor-AI】MINIMAX-H3工作流合集【加速版】_2085550246054162433.json、视频生成/文生视频/【遇见AI】minimax H3 高动态打斗场景武术动作二采修复+提示词skill工作流_2095684866888257537.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/模特套图工作流_1987890764711661569.json、图片生成/图生图/模特套图工作流升级款_1995150525064785922.json、图片生成/图生图/模特套图，一张可以生成9张不同姿势_2058598930799222786.json、视频生成/图生视频/图生视频IP一致性 真实自然_2004525590436868097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `JDCN_StringToList`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 3/4 个有
-- `KSamplerSelect` —— 3/4 个有
-- `LoadAudio` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `DisableNoise` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
-- `SpectrumSDXL` —— 1/4 个有
-- `SplitSigmas` —— 1/4 个有
-- `TextInput` —— 1/4 个有
+- `AILab_QwenVL` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `EmptySD3LatentImage` —— 1/4 个有
+- `ProcessString` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 4 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta57 | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta57，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

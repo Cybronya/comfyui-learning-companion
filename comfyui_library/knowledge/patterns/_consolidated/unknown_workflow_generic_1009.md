@@ -3,44 +3,39 @@ name: unknown_workflow_generic_1009
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.865333
-common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LongCatVoiceCloneTTS, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PreviewAny, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.793333
+common_nodes: [ImageConcanate, LoadImage, PreviewImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/声音设计（用于短剧多角色声音一致性）_2090434415913689090.json, 音频生成/音频生成/声音设计+声音克隆多_2069722323015524354.json, 音频生成/音频生成/声音设计+声音克隆多合一工作流（Qwen3+OmniVoice+Longcat）_2059986652633849857.json]
+members: [图片生成/图生图/全能图片   双图一致性编辑，融图_1960553335965253633.json, 图片生成/图生图/全能图片V1 最强语言编辑单图_1960867255657664513.json, 图片生成/图生图/全能图片V1， 完美换装_1961015020459114498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1009
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/声音设计（用于短剧多角色声音一致性）_2090434415913689090.json、音频生成/音频生成/声音设计+声音克隆多_2069722323015524354.json、音频生成/音频生成/声音设计+声音克隆多合一工作流（Qwen3+OmniVoice+Longcat）_2059986652633849857.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片   双图一致性编辑，融图_1960553335965253633.json、图片生成/图生图/全能图片V1 最强语言编辑单图_1960867255657664513.json、图片生成/图生图/全能图片V1， 完美换装_1961015020459114498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
+- `ImageConcanate`
 - `LoadImage`
-- `LongCatVoiceCloneTTS`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceVoiceDesignTTS`
-- `PreviewAny`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `FluxKontextImageScale` —— 2/3 个有
+- `Note _O` —— 2/3 个有
+- `easy textSwitch` —— 2/3 个有
 
 ## 典型参数
 

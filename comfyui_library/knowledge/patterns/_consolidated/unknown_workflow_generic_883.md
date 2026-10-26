@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_883
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.878667
-common_nodes: [LoadImage, QwenImageModelLoader, RH_Captioner, RH_QwenImageGenerator, SaveImage, Textbox]
+coverage: 0.948
+common_nodes: [HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json, 图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json, 图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json]
+members: [音频生成/音频生成/Qwen3-TTS-声音克隆_2014679169786974209.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_语音生成 御姐风（想要什么风格自己写）_2081266377532465154.json, 音频生成/音频生成/QwenTTS 语音克隆_2027637688173596674.json, 音频生成/音频生成/QwenTTS 语音生成+音色替换_2028043732737593346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_883
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json、图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json、图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-声音克隆_2014679169786974209.json、音频生成/音频生成/QwenTTS 语音克隆 音色设计_语音生成 御姐风（想要什么风格自己写）_2081266377532465154.json、音频生成/音频生成/QwenTTS 语音克隆_2027637688173596674.json、音频生成/音频生成/QwenTTS 语音生成+音色替换_2028043732737593346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `QwenImageModelLoader`
-- `RH_Captioner`
-- `RH_QwenImageGenerator`
-- `SaveImage`
-- `Textbox`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `easy imageSize` —— 2/3 个有
-- `PMRF` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `Qwen3TTSVoiceDesign` —— 2/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `SaveAudioMP3` —— 1/4 个有
+- `SeedVCRun` —— 1/4 个有
 
 ## 典型参数
 

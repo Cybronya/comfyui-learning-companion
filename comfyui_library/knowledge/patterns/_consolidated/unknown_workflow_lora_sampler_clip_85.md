@@ -3,62 +3,59 @@ name: unknown_workflow_lora_sampler_clip_85
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.9225
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8795
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/2030969082719248385.json, 图片生成/文生图/2030992571719229442.json, 图片生成/文生图/2512+2.8D单采_2063254991854456834.json, 图片生成/文生图/2512+zit双采_2063147565729800194.json, 图片生成/文生图/KREA2—文生图_2090377366865539073.json, 图片生成/文生图/amumu_Zimage_真实人像_2014304505898209281.json]
+members: [图片生成/文生图/Lora+提示词=风格化图片_1952911676233478146.json, 图片生成/文生图/像素风格插画_1912796321265217537.json, 图片生成/文生图/泡泡液态金属字体_2047922074966036481.json, 图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json, 图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json, 图片生成/文生图/黏土风icon_1955200823770976258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_85
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/2030969082719248385.json、图片生成/文生图/2030992571719229442.json、图片生成/文生图/2512+2.8D单采_2063254991854456834.json、图片生成/文生图/2512+zit双采_2063147565729800194.json、图片生成/文生图/KREA2—文生图_2090377366865539073.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Lora+提示词=风格化图片_1952911676233478146.json、图片生成/文生图/像素风格插画_1912796321265217537.json、图片生成/文生图/泡泡液态金属字体_2047922074966036481.json、图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json、图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
+- `KSamplerSelect`
+- `LoraLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 5/6 个有
-- `INTConstant` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `VAEEncode` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImageScaleBy` —— 1/6 个有
-- `RunningHub Deepcleaner` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `FluxResolutionNode` —— 5/6 个有
+- `JjkText` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `TextCombinerTwo` —— 5/6 个有
+- `Label (rgthree)` —— 3/6 个有
+- `DeepTranslatorTextNode` —— 2/6 个有
+- `CR String To Combo` —— 1/6 个有
+- `Primitive string [Crystools]` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 9 | 8 - 10 | 6 | 89% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 50% |
-| 重绘幅度 | simple | - | 6 | 50% |
-| 宽度 | 1024 | 1024 - 2048 | 6 | 69% |
-| 高度 | 1536 | 1536 - 2048 | 6 | 88% |
+| 宽度 | 1024 | 768 - 1024 | 6 | 90% |
+| 高度 | 1280 | 1024 - 1536 | 6 | 88% |
+| LoRA 模型强度 | 1 | 0.45 - 1.2 | 6 | 75% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -66,10 +63,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 8 - 10，6 个样本，取值集中（一致性 89%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 50%
-- 重绘幅度 最常用 simple，6 个样本，一致性 50%
-- 宽度 中位数 1024，观测区间 1024 - 2048，6 个样本
-- 高度 中位数 1536，观测区间 1536 - 2048，6 个样本，取值集中（一致性 88%）
+- 宽度 中位数 1024，观测区间 768 - 1024，6 个样本，取值集中（一致性 90%）
+- 高度 中位数 1280，观测区间 1024 - 1536，6 个样本，取值集中（一致性 88%）
+- LoRA 模型强度 中位数 1，观测区间 0.45 - 1.2，6 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

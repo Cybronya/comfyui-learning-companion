@@ -2,84 +2,71 @@
 name: image_to_image_sampler_clip_unet_6
 type: Image To Image
 frequency: 24
-level: strong
-coverage: 0.915833
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, ImageStitch, KSampler, LoadImage, ReferenceLatent, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.926667
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/05Kontext动漫风格转绘（新海诚风格）_1947092181813485569.json, 图片生成/图生图/20250711-教程版3种方式去马赛克对比工作流_1943272337959493633.json, 图片生成/图生图/360度全景图-3D旋转预览_Kontext-DEV-LORA_1940463300813680641.json, 图片生成/图生图/3D Chibi可爱风格转绘_1941419070581587970.json, 图片生成/图生图/3D+Chibi可爱风格转绘_2015676038226907138.json, 图片生成/图生图/3视图_Kontext-DEV-LORA_1940674502839742465.json, 图片生成/图生图/Emoji风格_Kontext-DEV-LORA_1951666575273308162.json, 图片生成/图生图/Flux Kontext Dev一句话图生图+放大（双图）_1938849049141563393.json, 图片生成/图生图/Flux Kontext Dev主体变色及放大修复（角色_物品）_1938524454505111554.json, 图片生成/图生图/Flux Kontext Dev主体换背景及放大修复（角色_物品_电商）_1938527176453218306.json, 图片生成/图生图/Flux Kontext Dev主体文字消除（可去水印）_1938524674248605698.json, 图片生成/图生图/Flux Kontext Dev主体新增及放大修复（角色_物品）_1938514358500810754.json, 图片生成/图生图/Flux Kontext Dev主体旋转多视图及放大修复（物品，角色）_1938545325747720193.json, 图片生成/图生图/Flux Kontext Dev主体移除及放大修复（角色_物品）_1938525727098601473.json, 图片生成/图生图/Flux Kontext Dev二阶段三图融合及修复放大_1938597675900325889.json, 图片生成/图生图/Flux Kontext Dev二阶段破损老照片修复上色及放大_1938580086860009473.json, 图片生成/图生图/Flux Kontext Dev图像扩展及放大修复_1938545690908020737.json, 图片生成/图生图/Kontext Presets 官方预设词｜图生图_1945761686198558722.json, 图片生成/图生图/Kontext官方预设13种提示词并自动优化_1944538008895016962.json, 图片生成/图生图/Line线稿提取_Kontext-DEV-LORA_1948603383413374977.json, 图片生成/图生图/MinimalSketchStyle线稿提取_Kontext-DEV-LORA_1948602505090478081.json, 图片生成/图生图/kontext去水印_1948707962933129217.json, 图片生成/图生图/黑森林官方Kontext Presets预设模板_Janus7B精准图像编辑_1944320832053104642.json, 图片生成/图生图/黑森林官方Kontext Presets预设模板_LLM-API精准图像编辑_1943859932489744385.json]
+members: [图片生成/图生图/ernie图生图_2045061338401087489.json, 图片生成/图生图/丝绸珠宝陈列LoRA图生图-穿戴甲产品图工作流_2094783879763808258.json, 图片生成/图生图/城市夜景Flux2-Klein真实人像质感御姐美女_2040749920210128898.json, 图片生成/图生图/婚纱美女Flux2-Klein真实人像质感御姐美女_2040752758709555201.json, 图片生成/图生图/学生妹Flux2-Klein真实人像质感御姐美女_2040755363972128770.json, 图片生成/图生图/居家美女Flux2-Klein真实人像质感御姐美女_2040768972542447617.json, 图片生成/图生图/巷子印花少女Flux2-Klein真实人像质感御姐美女_2040771105161482241.json, 图片生成/图生图/异域风情雪山Flux2-Klein真实人像质感御姐美女_2040747316449124353.json, 图片生成/图生图/性感女讲师Flux2-Klein真实人像质感御姐美女_2040763565157654529.json, 图片生成/图生图/性感有韵味Flux2-Klein真实人像质感御姐美女_2040761141458116610.json, 图片生成/图生图/成熟有气质Flux2-Klein真实人像质感御姐美女_2040715025081438209.json, 图片生成/图生图/旗袍系列Flux2-Klein图生图真实人像质感御姐美女_2051608781892661250.json, 图片生成/图生图/昏暗灯光Flux2-Klein真实人像质感御姐美女_2040744156737310722.json, 图片生成/图生图/晚礼服Flux2-Klein真实人像质感御姐美女_2040741370549248002.json, 图片生成/图生图/欧式美女Flux2-Klein真实人像质感御姐美女_2040718407485628417.json, 图片生成/图生图/泳装系列Flux2-Klein真实人像质感御姐美女_2040441076468682754.json, 图片生成/图生图/现代客厅美女Flux2-Klein真实人像质感御姐美女_2040738759880216577.json, 图片生成/图生图/真实人像质感御姐美女_2040672256346562561.json, 图片生成/图生图/短裤Flux2-Klein真实人像质感御姐美女_2040682552553381889.json, 图片生成/图生图/立体立绘Flux2-Klein真实人像质感御姐美女_2040764640174542850.json, 图片生成/图生图/粉色长发Flux2-Klein真实人像质感御姐美女_2040766562637975553.json, 图片生成/图生图/系列Flux2-Klein真实人像质感御姐美女_2040668510103277570.json, 图片生成/图生图/美女写真图Flux2-Klein真实人像质感御姐美女_2040710445329289217.json, 图片生成/图生图/蕾丝内衣Flux2-Klein真实人像质感御姐美女_2040700533031309313.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_6
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/05Kontext动漫风格转绘（新海诚风格）_1947092181813485569.json、图片生成/图生图/20250711-教程版3种方式去马赛克对比工作流_1943272337959493633.json、图片生成/图生图/360度全景图-3D旋转预览_Kontext-DEV-LORA_1940463300813680641.json、图片生成/图生图/3D Chibi可爱风格转绘_1941419070581587970.json、图片生成/图生图/3D+Chibi可爱风格转绘_2015676038226907138.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/ernie图生图_2045061338401087489.json、图片生成/图生图/丝绸珠宝陈列LoRA图生图-穿戴甲产品图工作流_2094783879763808258.json、图片生成/图生图/城市夜景Flux2-Klein真实人像质感御姐美女_2040749920210128898.json、图片生成/图生图/婚纱美女Flux2-Klein真实人像质感御姐美女_2040752758709555201.json、图片生成/图生图/学生妹Flux2-Klein真实人像质感御姐美女_2040755363972128770.json…）
 
 - **类型**：Image To Image
 - **样本数**：24
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 24 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `ImageStitch`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 22/24 个有
-- `ImageConcatMulti` —— 20/24 个有
-- `LoraLoaderModelOnly` —— 14/24 个有
-- `PreviewImage` —— 14/24 个有
-- `PMRF` —— 11/24 个有
-- `RH_Translator` —— 11/24 个有
-- `EmptySD3LatentImage` —— 7/24 个有
-- `GetImageSizeAndCount` —— 7/24 个有
-- `ImageScaleDownToSize` —— 5/24 个有
-- `LoadKontextPresets` —— 5/24 个有
-- `easy showAnything` —— 5/24 个有
-- `Image Padding` —— 4/24 个有
-- `RH_LLMAPI_NODE` —— 4/24 个有
-- `TeaCache` —— 4/24 个有
-- `CR Simple Image Compare` —— 3/24 个有
-- `Text Concatenate` —— 3/24 个有
-- `CR SDXL Aspect Ratio` —— 1/24 个有
-- `JanusImageUnderstanding` —— 1/24 个有
-- `JanusModelLoader` —— 1/24 个有
-- `PanoramaViewerNode` —— 1/24 个有
-- `easy imageRemBg` —— 1/24 个有
+- `LoraLoader` —— 23/24 个有
+- `ConditioningZeroOut` —— 22/24 个有
+- `scale` —— 22/24 个有
+- `Float` —— 1/24 个有
+- `RH_Captioner_Pro` —— 1/24 个有
+- `TextBox` —— 1/24 个有
+- `ttN concat` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 24 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 24 | 100% |
-| 采样算法 | euler | - | 24 | 100% |
-| 调度器 | simple | - | 24 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
+| 采样步数 | 4 | 4 - 20 | 23 | 31% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 23 | 46% |
+| 采样算法 | euler | - | 23 | 100% |
+| 调度器 | beta | - | 23 | 96% |
+| 重绘幅度 | 0.3 | 0.3 - 0.35 | 23 | 97% |
+| LoRA 模型强度 | 0.8 | 0.8 - 1 | 23 | 95% |
+| LoRA 文本强度 | 1 | 1 - 1 | 23 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 22/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，24 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，24 个样本，一致性 100%
-- 调度器 最常用 simple，24 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 20，23 个样本，取值分散，一致性仅 31%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，23 个样本，取值分散，一致性仅 46%
+- 采样算法 最常用 euler，23 个样本，一致性 100%
+- 调度器 最常用 beta，23 个样本，一致性 96%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 0.35，23 个样本，取值集中（一致性 97%）
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，23 个样本，取值集中（一致性 95%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
+- 高发问题（22/24 个样本）：Steps较低可能导致细节不足

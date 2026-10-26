@@ -3,72 +3,57 @@ name: unknown_workflow_video_sampler_clip_145
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95375
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.92875
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAddGuide, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVScheduler, LoadImage, SamplerCustom, TextInput_, VAEDecodeTiled, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/03-02-01-WAN2.1-图生视频-原生_1989951203440291842.json, 视频生成/图生视频/FusionX图生视频量化版_1935875055609896962.json, 视频生成/图生视频/WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_1898354232771170306.json, 视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json]
+members: [图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json, 视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_145
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/03-02-01-WAN2.1-图生视频-原生_1989951203440291842.json、视频生成/图生视频/FusionX图生视频量化版_1935875055609896962.json、视频生成/图生视频/WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_1898354232771170306.json、视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json、视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAddGuide`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LoadImage`
-- `VAEDecode`
-- `VAELoader`
+- `SamplerCustom`
+- `TextInput_`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 3/4 个有
-- `UnetLoaderGGUF` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `WanVideoTeaCacheKJ` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `EG_FX_BDAPI` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `RIFE VFI` —— 1/4 个有
-- `SaveAnimatedWEBP` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `UNETLoader` —— 1/4 个有
+- `ApplyFBCacheOnModel` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PatchModelPatcherOrder` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 16 | 5 - 20 | 4 | 56% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 16，观测区间 5 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

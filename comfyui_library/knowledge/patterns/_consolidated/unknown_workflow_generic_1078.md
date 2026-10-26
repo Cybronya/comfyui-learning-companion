@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1078
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.622333
-common_nodes: [AudioOmni_LoadModel, CR Prompt Text, JWInteger, SaveAudioMP3]
+coverage: 0.691333
+common_nodes: [CR Text, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
 problems: []
-missing: [AudioOmni_LoadModel, AudioOmni_TextToAudio, AudioOmni_TextToSpeech]
-members: [音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json, 音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json, 音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json]
+missing: []
+members: [图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json, 图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json, 图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1078
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json、音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json、音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json、图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json、图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioOmni_LoadModel`
-- `CR Prompt Text`
-- `JWInteger`
-- `SaveAudioMP3`
+- `CR Text`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioOmni_TextToAudio` —— 2/3 个有
-- `AudioOmni_TextToSpeech` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `TextBox` —— 2/3 个有
 
 ## 典型参数
 
@@ -43,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：AudioOmni_LoadModel、AudioOmni_TextToAudio、AudioOmni_TextToSpeech
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

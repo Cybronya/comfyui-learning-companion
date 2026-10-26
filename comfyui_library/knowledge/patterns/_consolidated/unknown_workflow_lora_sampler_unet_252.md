@@ -3,55 +3,73 @@ name: unknown_workflow_lora_sampler_unet_252
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.902
-common_nodes: [CFGGuider, CLIPLoader, KSamplerSelect, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, RandomNoise, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.4125
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), FastUnsharpSharpen, GetImageSize, GetImagesFromBatchIndexed, GetNode, Image Comparer (rgthree), ImageScaleBy, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SaveVideo, SetNode, TextPreview, UNETLoader, VAEDecode, VAELoader, VRGDG_Music3ConditioningStrength, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, workflow>SeedVR2]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-2.1-一键抠图_图层拆分_2112447865481162754.json, 图片生成/文生图/Qwen image 2.1多参考生图工作流（短剧分镜制作、8步加速）_2112531337080037378.json]
+members: [图片生成/反推提示词/MinimaxH3 文生图、图生图、图像编辑三合一工作流（ByCC菜）_2106814779062054913.json, 视频生成/图生视频/MinimaxH3_文生图、图生图、图像编辑三合一工作流ByCC菜_2110204533308739585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_252
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-2.1-一键抠图_图层拆分_2112447865481162754.json、图片生成/文生图/Qwen image 2.1多参考生图工作流（短剧分镜制作、8步加速）_2112531337080037378.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/MinimaxH3 文生图、图生图、图像编辑三合一工作流（ByCC菜）_2106814779062054913.json、视频生成/图生视频/MinimaxH3_文生图、图生图、图像编辑三合一工作流ByCC菜_2110204533308739585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `FastUnsharpSharpen`
+- `GetImageSize`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `SaveVideo`
+- `SetNode`
+- `TextPreview`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VRGDG_Music3ConditioningStrength`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `workflow>SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `CustomSigmas` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `ExtendIntermediateSigmas` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `QwenImage21SageAttentionT8` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1440 | - | 1 | 100% |
-| 高度 | 1920 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

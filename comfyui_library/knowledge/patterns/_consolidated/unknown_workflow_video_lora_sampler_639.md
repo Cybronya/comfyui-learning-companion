@@ -3,57 +3,67 @@ name: unknown_workflow_video_lora_sampler_639
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.929667
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.646
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageResizeKJv2, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Smooth Mix高动态 文生视频_1979029148482048001.json, 视频生成/图生视频/Wan2_2_I2V_A14B_高质量加速工作流_1980926100463337474.json, 视频生成/图生视频/wan2.2 图生视频+首尾帧_1956285826319699969.json]
+members: [图片生成/文生图/MiniMax H3 四合一二采高清版_2086559082231713794.json, 视频生成/图生视频/H3极速二采高质量参考生视频_2086495362298236929.json, 视频生成/文生视频/minimax h3 二采高清工作流_2089238048839131137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_639
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Smooth Mix高动态 文生视频_1979029148482048001.json、视频生成/图生视频/Wan2_2_I2V_A14B_高质量加速工作流_1980926100463337474.json、视频生成/图生视频/wan2.2 图生视频+首尾帧_1956285826319699969.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 四合一二采高清版_2086559082231713794.json、视频生成/图生视频/H3极速二采高质量参考生视频_2086495362298236929.json、视频生成/文生视频/minimax h3 二采高清工作流_2089238048839131137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `Primitive integer [Crystools]` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
-- `WanVideoScheduler` —— 1/3 个有
-- `WanVideoSigmaToStep` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy float` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `GetNode` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoadVideo` —— 2/3 个有
+- `MiniMaxH3AVDecodeT8` —— 2/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VAEEncodeAudio` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/3 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `TT_img_enc_v2` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `VAEDecodeAudio` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 

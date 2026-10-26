@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1461
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8125
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, easy saveText, easy showAnything]
+coverage: 0.806
+common_nodes: [CR Text, Fast Groups Muter (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, ShowText|pysssss, easy promptConcat]
 problems: []
 missing: []
-members: [图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json, 数字人/数字人/视频提示词反推 g 3.5 参考提示词提取_2088789079856074753.json]
+members: [图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json, 图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1461
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json、数字人/数字人/视频提示词反推 g 3.5 参考提示词提取_2088789079856074753.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json、图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,14 +23,18 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
-- `easy showAnything`
+- `CR Text`
+- `Fast Groups Muter (rgthree)`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+- `ShowText|pysssss`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ShowText` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 
 ## 典型参数
 

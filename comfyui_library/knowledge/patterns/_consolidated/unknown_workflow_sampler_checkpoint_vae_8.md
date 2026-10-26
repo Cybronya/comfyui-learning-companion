@@ -1,74 +1,67 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae_8
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.947333
-common_nodes: [CLIPVisionEncode, EmptyLatentHunyuan3Dv2, ImageOnlyCheckpointLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveGLB, VAEDecodeHunyuan3D, VoxelToMesh]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 10
+level: strong
+coverage: 1
+common_nodes: [CR Text, CheckpointLoaderSimple, ConditioningZeroOut, KSampler, LoadImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/3d_hunyuan3d-v2.1.json, comfyui-workflow-templates-json/3d_hunyuan3d_image_to_model.json, comfyui-workflow-templates-json/3d_hunyuan3d_multiview_to_model.json, comfyui-workflow-templates-json/3d_hunyuan3d_multiview_to_model_turbo.json, 图片生成/图生图/006.Hunyuan模型创建001.3D模型生成+录制_2035382715473731585.json, 图片生成/图生图/Hunyuan-图像转3D_2044021314901516290.json, 图片生成/图生图/Qwen_2509镜头精准控制之一混元图片转GLB模型_1990428919314735105.json, 图片生成/图生图/Qwen镜头精准控制-图片转GLB模型_1991895134199672833.json, 图片生成/图生图/混元-2d转3d_1964850814063886338.json]
+members: [图片生成/反推提示词/29itifast_2049490245002993665.json, 图片生成/反推提示词/92dantucy_2056714574065393665.json, 图片生成/图生图/Qwen-Rapid-AIO_2047923784266555393.json, 图片生成/图生图/图生图一键工作_2001323637812625410.json, 图片生成/图生图/图生图一键工作_2045091323006427138.json, 图片生成/图生图/图生图工作流_2037530314460893185.json, 图片生成/文生图/Qwen-Rapid-AIO_2054565798374584322.json, 图片生成/文生图/YYEMOJI 图生图一键工作_2056537190146076674.json, 图片生成/文生图/图生图一键工作_2049476537925242881.json, 图片生成/文生图/通义千问文生图_2064587610374361089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（comfyui-workflow-templates-json/3d_hunyuan3d-v2.1.json、comfyui-workflow-templates-json/3d_hunyuan3d_image_to_model.json、comfyui-workflow-templates-json/3d_hunyuan3d_multiview_to_model.json、comfyui-workflow-templates-json/3d_hunyuan3d_multiview_to_model_turbo.json、图片生成/图生图/006.Hunyuan模型创建001.3D模型生成+录制_2035382715473731585.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/29itifast_2049490245002993665.json、图片生成/反推提示词/92dantucy_2056714574065393665.json、图片生成/图生图/Qwen-Rapid-AIO_2047923784266555393.json、图片生成/图生图/图生图一键工作_2001323637812625410.json、图片生成/图生图/图生图一键工作_2045091323006427138.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `EmptyLatentHunyuan3Dv2`
-- `ImageOnlyCheckpointLoader`
+全部 10 个 workflow 都包含：
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SaveGLB`
-- `VAEDecodeHunyuan3D`
-- `VoxelToMesh`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `Hunyuan3Dv2Conditioning` —— 7/9 个有
-- `easy imageRemBg` —— 5/9 个有
-- `HfSaveImage` —— 4/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `Load3D` —— 3/9 个有
-- `Hunyuan3Dv2ConditioningMultiView` —— 2/9 个有
-- `FluxGuidance` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 9/10 个有
+- `easy cleanGpuUsed` —— 9/10 个有
+- `easy clearCacheAll` —— 9/10 个有
+- `CompressImages` —— 6/10 个有
+- `SaveImage` —— 6/10 个有
+- `SaveLatent` —— 5/10 个有
+- `RTXVideoSuperResolution` —— 2/10 个有
+- `TT_img_enc` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 9 | 85% |
-| Prompt 约束强度(CFG) | 8 | 4 - 8 | 9 | 80% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | normal | - | 9 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 5000 | 3072 - 8000 | 9 | 60% |
-| 高度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 10 | 73% |
+| 采样算法 | er_sde | - | 10 | 50% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 9/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，9 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 8，9 个样本
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 normal，9 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 5000，观测区间 3072 - 8000，9 个样本
-- 高度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，10 个样本
+- 采样算法 最常用 er_sde，10 个样本，一致性 50%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

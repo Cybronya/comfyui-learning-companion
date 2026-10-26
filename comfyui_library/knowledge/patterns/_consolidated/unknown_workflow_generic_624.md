@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_624
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.7302
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json, comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json, comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json, comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json]
+members: [视频生成/图生视频/(支持真人)超能视频2.0动作模仿RV2V（1秒1元）_2034225183669620738.json, 视频生成/图生视频/地表最强超能视频2.0-Fast全能参考图生视频-支持真人工作流_2037507739894685697.json, 视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json, 视频生成/文生视频/全能视频生成 图像+视频参考+语音驱动 支持真人 地表最强超能视频2.0 全能参考_2038435414712782850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_624
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json、comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json、comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json、comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/(支持真人)超能视频2.0动作模仿RV2V（1秒1元）_2034225183669620738.json、视频生成/图生视频/地表最强超能视频2.0-Fast全能参考图生视频-支持真人工作流_2037507739894685697.json、视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json、视频生成/文生视频/全能视频生成 图像+视频参考+语音驱动 支持真人 地表最强超能视频2.0 全能参考_2038435414712782850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageCompare`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `SaveImageAdvanced`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GeminiNanoBanana2V2` —— 2/4 个有
-- `TopazImageEnhanceV2` —— 2/4 个有
+- `CR Prompt Text` —— 4/5 个有
+- `LoadVideo` —— 4/5 个有
+- `LoadAudio` —— 3/5 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/5 个有
 
 ## 典型参数
 

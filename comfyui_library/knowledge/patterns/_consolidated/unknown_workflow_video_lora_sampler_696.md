@@ -3,53 +3,57 @@ name: unknown_workflow_video_lora_sampler_696
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.961667
-common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, QwenLoader, ShowText|pysssss, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.733333
+common_nodes: [BasicScheduler, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json, 视频生成/文生视频/wan2.2文生视频_自动润色提示词_1951121604451442689.json, 视频生成/文生视频/wan2.2文生视频_自动润色提示词_1955825453995999233.json]
+members: [视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json, 视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json, 视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_696
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json、视频生成/文生视频/wan2.2文生视频_自动润色提示词_1951121604451442689.json、视频生成/文生视频/wan2.2文生视频_自动润色提示词_1955825453995999233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json、视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json、视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM`
-- `LoadWanVideoT5TextEncoder`
-- `QwenLoader`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `GetLatentSizeAndCount`
+- `GetNode`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `SelfLiftH3Sampler`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoPromptExtender`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `WanVideoScheduler` —— 2/3 个有
-- `WanVideoSigmaToStep` —— 2/3 个有
+- `GH_AudioVideoMerger` —— 1/3 个有
+- `GH_ImageVideoComparer` —— 1/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
+- `RH_DLSS5Enhance` —— 1/3 个有
+- `VOSR2ModelLoader` —— 1/3 个有
+- `VOSR2Upscale` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

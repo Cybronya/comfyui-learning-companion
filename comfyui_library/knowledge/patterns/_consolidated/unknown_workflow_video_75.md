@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [HunyuanVideoFoley, VHS_LoadVideo, VHS_VideoCombine]
+common_nodes: [NanFengH3MultiReferenceGeneratorV10, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/comfyui-foley_1963862742736277506.json, 音频生成/音频生成/comfyui-foley_1970182744674365441.json, 音频生成/音频生成/混元Foley-无声视频配音_1962360285673754626.json]
+members: [视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json, 视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json, 视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_75
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/comfyui-foley_1963862742736277506.json、音频生成/音频生成/comfyui-foley_1970182744674365441.json、音频生成/音频生成/混元Foley-无声视频配音_1962360285673754626.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json、视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json、视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,13 +23,8 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HunyuanVideoFoley`
-- `VHS_LoadVideo`
+- `NanFengH3MultiReferenceGeneratorV10`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 

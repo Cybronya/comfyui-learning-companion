@@ -3,37 +3,38 @@ name: unknown_workflow_generic_298
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.46325
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.847125
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧components版（基准0.3_8S）_1980581515803447298.json, 视频生成/图生视频/调用T8的api 全能视频V3.1 首尾帧（4-5毛_8S）_2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
+members: [图片生成/图生图/Seedance2.0角色过审多视图_2051159980925042690.json, 图片生成/图生图/人物角色三视图_九视图_多视图（seedance真人可过审）_2038535357179891713.json, 图片生成/图生图/人物角色三视图（AI仿真人漫剧资产制作）_2046503440838299650.json, 图片生成/图生图/全能图片Pro风格迁移融合场景_2059464168880824321.json, 图片生成/图生图/全能图片Pro风格迁移融合场景_2059464777260429313.json, 图片生成/图生图/手机壳详情页_主图_海报_SKU图1.0_2008447531130294274.json, 图片生成/文生图/Seedance2.0角色过审多视图_2027226931736879106.json, 图片生成/文生图/Seedance2.0过审六宫格_2043525282723799041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_298
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedance2.0角色过审多视图_2051159980925042690.json、图片生成/图生图/人物角色三视图_九视图_多视图（seedance真人可过审）_2038535357179891713.json、图片生成/图生图/人物角色三视图（AI仿真人漫剧资产制作）_2046503440838299650.json、图片生成/图生图/全能图片Pro风格迁移融合场景_2059464168880824321.json、图片生成/图生图/全能图片Pro风格迁移融合场景_2059464777260429313.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
 - `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Googel_Veo3` —— 5/8 个有
-- `Comfly_vidu_img2video` —— 2/8 个有
-- `Comfly_vidu_start-end2video` —— 1/8 个有
-- `HfSaveImage` —— 1/8 个有
+- `RH_Translator` —— 7/8 个有
+- `CR Text` —— 6/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `ImageResize+` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `CR Text Replace` —— 1/8 个有
+- `Fast Bypasser (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

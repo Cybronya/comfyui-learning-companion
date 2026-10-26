@@ -3,37 +3,37 @@ name: unknown_workflow_generic_1454
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7845
-common_nodes: [GODMT_SplitString, RH_LLMAPI_Pro_Node, SaveImage, TextInput_, easy indexAnything, easy showAnything]
+coverage: 0.695
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_nano_banana2_edit, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json, 图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json]
+members: [图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json, 图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1454
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json、图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json、图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GODMT_SplitString`
-- `RH_LLMAPI_Pro_Node`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_nano_banana2_edit`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
 - `SaveImage`
-- `TextInput_`
-- `easy indexAnything`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `Comfly_nano_banana` —— 1/2 个有
 - `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 

@@ -2,95 +2,86 @@
 name: unknown_workflow_upscale_lora_sampler_65
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.745
-common_nodes: [AutoCropFaces, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GGUFLoaderKJ, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveBoolean, PrimitiveStringMultiline, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAELoader, easy ifElse]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+level: strong
+coverage: 0.894333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CheckpointLoaderSimple, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, RandomNoise, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/脸部生成全身照Qwen Image Edit AIO 版_2075080327214755842.json, 图片生成/图生图/脸部生成全身照洗图版_2075078074802196482.json, 图片生成/图生图/高还原度换脸 Qwen Image Edit F2P lora_2075075662355980290.json]
+members: [图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json, 图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json, 图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/脸部生成全身照Qwen Image Edit AIO 版_2075080327214755842.json、图片生成/图生图/脸部生成全身照洗图版_2075078074802196482.json、图片生成/图生图/高还原度换脸 Qwen Image Edit F2P lora_2075075662355980290.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json、图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json、图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AutoCropFaces`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `GGUFLoaderKJ`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `CFGNorm` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `Float` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `VAEDecodeTiled` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `DifferentialDiffusion` —— 1/3 个有
-- `DrawMaskOnImage` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageRemoveAlpha+` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `InpaintModelConditioning` —— 1/3 个有
-- `LayerMask: HumanPartsUltra` —— 1/3 个有
-- `LayerMask: MaskGrow` —— 1/3 个有
-- `LayerMask: MaskPreview` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
+- `ColorMatch` —— 2/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `CR Upscale Image` —— 1/3 个有
+- `ImageListToImageBatch` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `ImpactImageBatchToImageList` —— 1/3 个有
+- `Joy_caption_two` —— 1/3 个有
+- `Joy_caption_two_load` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `TTP_Image_Assy` —— 1/3 个有
+- `TTP_Image_Tile_Batch` —— 1/3 个有
+- `TTP_Tile_image_size` —— 1/3 个有
+- `UltimateSDUpscaleNoUpscale` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | beta | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.7 - 1 | 3 | 84% |
+| LoRA 模型强度 | 0.8 | 0.7 - 0.8 | 3 | 94% |
+| LoRA 文本强度 | 0.8 | 0.7 - 0.8 | 3 | 94% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 beta，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.7 - 1，3 个样本，取值集中（一致性 84%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/3 个样本）：发现KSampler但没有VAEDecode
+- LoRA 模型强度 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）

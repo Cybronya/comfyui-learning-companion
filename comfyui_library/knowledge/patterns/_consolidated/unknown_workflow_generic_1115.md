@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1115
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [Fast Groups Muter (rgthree), IndexTTSNode, IndexTTSRun, LoadAudio, PreviewAudio, SaveAudio, Text]
+coverage: 1
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json, 音频生成/音频生成/情感语音克隆tts_2037712113489158146.json, 音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json]
+members: [视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json, 视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1115
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json、音频生成/音频生成/情感语音克隆tts_2037712113489158146.json、音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json、视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json、视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `IndexTTSNode`
-- `IndexTTSRun`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_KlingO1_VideoEdit` —— 2/3 个有
+- `RH_KlingV26ProMotionControl` —— 1/3 个有
 
 ## 典型参数
 

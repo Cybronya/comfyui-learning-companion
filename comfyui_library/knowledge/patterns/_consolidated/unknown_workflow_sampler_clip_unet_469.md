@@ -3,55 +3,56 @@ name: unknown_workflow_sampler_clip_unet_469
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.93
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9085
+common_nodes: [AILab_QwenVL, BatchTextReplace, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, PrimitiveBoolean, SaveImage, ShowText, Text, UNETLoader, VAEDecode, VAELoader, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/文生图/电商产品场景图生成_2065142735723646978.json, 图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json]
+members: [图片生成/文生图/Z-image-base-极具画面感-自动提示词-文生图_2017137036016226305.json, 图片生成/文生图/Z-image-base文生图自动提示词_2017225082980016130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_469
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/电商产品场景图生成_2065142735723646978.json、图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image-base-极具画面感-自动提示词-文生图_2017137036016226305.json、图片生成/文生图/Z-image-base文生图自动提示词_2017225082980016130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `AILab_QwenVL`
+- `BatchTextReplace`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `PrimitiveBoolean`
 - `SaveImage`
+- `ShowText`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `Qwen2.5` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
+- `CustomAddLabel` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 50 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
+| 采样算法 | res_multistep | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -59,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 50，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

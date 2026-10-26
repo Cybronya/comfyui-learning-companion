@@ -2,70 +2,87 @@
 name: image_to_image_lora_sampler_unet_107
 type: Image To Image
 frequency: 6
-level: strong
-coverage: 0.834
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: weak
+coverage: 0.936667
+common_nodes: [CFGNorm, CLIPLoader, CR Text, CR Text Concatenate, FluxKontextMultiReferenceLatentMethod, JDCN_StringToList, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MemoryCleaner, ModelSamplingAuraFlow, PreviewImage, QwenMultiangleCameraNode, SaveImage, Text Concatenate, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/krea2多风格单图编辑_2089324196953419777.json, 图片生成/图生图/krea2多风格双图编辑_2089324222073106433.json, 图片生成/图生图/【遇见AI】Krea2图像编辑krea2edit版单图双图_2075397825843781633.json, 图片生成/图生图/四视图生成_2108697971570335746.json, 图片生成/图生图/角色四视图-krea2_2083577037486379009.json, 图片生成/文生图/单图编辑 ( Krea 2 Identity Edit v1.2 ）_2079889925343891458.json]
+members: [图片生成/图生图/Qwen-2511-multi-angle可视化角度编辑_2010333717948014593.json, 图片生成/图生图/Qwen-2511-multi-angle可视化角度编辑_2056037843239219201.json, 图片生成/图生图/Qwen-2511-多角度相机控制_2010019754605551618.json, 图片生成/图生图/Qwen-Image-Edit-2511-Multiple-Angles-LoRA 任意角度-3D交互_2013984068286812161.json, 图片生成/图生图/Qwen_2511_多角度相机控制_2051509626218270722.json, 图片生成/图生图/图片视角转变V2_2012096474175250433.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_107
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/krea2多风格单图编辑_2089324196953419777.json、图片生成/图生图/krea2多风格双图编辑_2089324222073106433.json、图片生成/图生图/【遇见AI】Krea2图像编辑krea2edit版单图双图_2075397825843781633.json、图片生成/图生图/四视图生成_2108697971570335746.json、图片生成/图生图/角色四视图-krea2_2083577037486379009.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-2511-multi-angle可视化角度编辑_2010333717948014593.json、图片生成/图生图/Qwen-2511-multi-angle可视化角度编辑_2056037843239219201.json、图片生成/图生图/Qwen-2511-多角度相机控制_2010019754605551618.json、图片生成/图生图/Qwen-Image-Edit-2511-Multiple-Angles-LoRA 任意角度-3D交互_2013984068286812161.json、图片生成/图生图/Qwen_2511_多角度相机控制_2051509626218270722.json…）
 
 - **类型**：Image To Image
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `CR Text`
+- `CR Text Concatenate`
+- `FluxKontextMultiReferenceLatentMethod`
+- `JDCN_StringToList`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MemoryCleaner`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
+- `Text Concatenate`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/6 个有
-- `ResolutionSelector` —— 3/6 个有
-- `ConditioningKrea2Rebalance` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `ResizeImageMaskNode` —— 2/6 个有
-- `easy stylesSelector` —— 2/6 个有
-- `JjkText` —— 1/6 个有
+- `CLIPTextEncode` —— 3/6 个有
+- `ModelSamplingSD3` —— 3/6 个有
+- `SeedVR2` —— 3/6 个有
+- `SeedVR2BlockSwap` —— 3/6 个有
+- `SeedVR2ExtraArgs` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `AddLabel` —— 2/6 个有
+- `ImageScaleBy` —— 2/6 个有
+- `KSamplerAdvanced` —— 2/6 个有
+- `PrimitiveFloat` —— 2/6 个有
+- `RH_Captioner` —— 2/6 个有
+- `RunningHub Deepcleaner` —— 2/6 个有
+- `easy promptList` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 6 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 4 | 4 - 6 | 4 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 6 | 1% |
+| 采样算法 | euler | - | 6 | 50% |
+| 调度器 | simple | - | 6 | 50% |
+| 重绘幅度 | 1 | 0.2 - 1 | 4 | 57% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，6 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 6，4 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，6 个样本，取值分散，一致性仅 1%
+- 采样算法 最常用 euler，6 个样本，一致性 50%
+- 调度器 最常用 simple，6 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 0.2 - 1，4 个样本
+- 高发问题（13/6 个样本）：Steps较低可能导致细节不足

@@ -3,76 +3,89 @@ name: unknown_workflow_video_upscale_latent_upscale_153
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8795
-common_nodes: [CFGGuider, CLIPTextEncode, CR Value, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SimpleCalculatorKJ, String Literal, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.513
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, Float, GetNode, ImageScaleBy, Int, Int to String, InversionDemoLazySwitch, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetNode, StringFunction|pysssss, Text, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/ltx2_i2v去蒸馏图到视频一致性60帧1080p_2019396485409939457.json, 视频生成/文生视频/ltx2_i2v蒸馏图到视频一致性60帧1080p_2019439198570287106.json]
+members: [视频生成/图生视频/图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qwen3.5_2054885295354589185.json, 视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_153
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/ltx2_i2v去蒸馏图到视频一致性60帧1080p_2019396485409939457.json、视频生成/文生视频/ltx2_i2v蒸馏图到视频一致性60帧1080p_2019439198570287106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qwen3.5_2054885295354589185.json、视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Value`
-- `DualCLIPLoader`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `Float`
+- `GetNode`
+- `ImageScaleBy`
+- `Int`
+- `Int to String`
+- `InversionDemoLazySwitch`
 - `KSamplerSelect`
 - `LTX2_NAG`
-- `LTXVAudioVAEDecode`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LTXVSpatioTemporalTiledVAEDecode`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SimpleCalculatorKJ`
-- `String Literal`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VAELoaderKJ`
+- `Seed (rgthree)`
+- `SetNode`
+- `StringFunction|pysssss`
+- `Text`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `ImageLoader` —— 1/2 个有
-- `LTXVScheduler` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `AudioInfo` —— 1/2 个有
+- `CM_FloatToInt` —— 1/2 个有
+- `LTXFloatToInt` —— 1/2 个有
+- `LTXVAudioVAEDecode` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MathExpression_UTK` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 宽度 | 97 | - | 1 | 100% |
+| 高度 | 25 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -80,6 +93,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

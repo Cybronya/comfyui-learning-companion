@@ -3,56 +3,67 @@ name: unknown_workflow_sampler_clip_unet_115
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.9419
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9188
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-4采极致细节_2044603720377311233.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2037904618847473665.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2072122771399864322.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2072127037019611138.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2072848197558554626.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2077553813770293249.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2077559193019699201.json, 图片生成/文生图/Z-Image-turb随机性出图多张_2081938785293651969.json, 图片生成/文生图/Z-image，文生图_2009572089073766402.json, 图片生成/文生图/krea2文生图二采放大_2078759847776051201.json]
+members: [图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json, 图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json, 图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json, 图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json, 图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json, 图片生成/图生图/flux2_klein_图生图_基础工作流_2030890083406057474.json, 图片生成/图生图/flux2klein 扩图_2013515335466487809.json, 图片生成/图生图/flux2klein 重绘_2013530157360877570.json, 图片生成/图生图/一键扩图工作流_2095410279856300033.json, 图片生成/图生图/扩图-自定义尺寸_klein极速版_2027967998400663553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_115
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-4采极致细节_2044603720377311233.json、图片生成/文生图/Z-Image-turb随机性出图多张_2037904618847473665.json、图片生成/文生图/Z-Image-turb随机性出图多张_2072122771399864322.json、图片生成/文生图/Z-Image-turb随机性出图多张_2072127037019611138.json、图片生成/文生图/Z-Image-turb随机性出图多张_2072848197558554626.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json、图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json、图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json、图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json、图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `ConditioningZeroOut` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `Int` —— 8/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `CR Seed` —— 1/10 个有
-- `LatentUpscaleBy` —— 1/10 个有
-- `PlaySound|pysssss` —— 1/10 个有
-- `ttN text` —— 1/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ImageScaleToTotalPixels` —— 6/10 个有
+- `ColorMatch` —— 4/10 个有
+- `DrawMaskOnImage` —— 3/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `ImagePadForOutpaint` —— 2/10 个有
+- `FluxKVCache` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `ImagePadForOutpaintMasked_UTK` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `PrimitiveString` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `StringReplace` —— 1/10 个有
+- `easy boolean` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 10 | 90% |
-| Prompt 约束强度(CFG) | 8 | 8 - 20 | 10 | 62% |
-| 采样算法 | 1 | 1 - 1 | 10 | 100% |
-| 调度器 | euler | - | 10 | 100% |
-| 重绘幅度 | simple | - | 10 | 90% |
-| 宽度 | 1536 | 1080 - 2064 | 10 | 85% |
-| 高度 | 2048 | 720 - 2048 | 10 | 79% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,11 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，10 个样本，一致性 90%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 20，10 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，10 个样本，一致性 100%
-- 重绘幅度 最常用 simple，10 个样本，一致性 90%
-- 宽度 中位数 1536，观测区间 1080 - 2064，10 个样本，取值集中（一致性 85%）
-- 高度 中位数 2048，观测区间 720 - 2048，10 个样本
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,37 +3,49 @@ name: unknown_workflow_video_sampler_14
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.76975
-common_nodes: [CR Prompt Text, FlashVSRNode, GetVideoComponents, JWInteger, LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, VHS_VideoCombine]
+coverage: 0.72275
+common_nodes: [DiffuEraserLoader, DiffuEraserSampler, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MOVA音视频同步_2017541473100636162.json, 视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json, 视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json, 视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json]
+members: [图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json, 视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json, 视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json, 视频生成/图生视频/视频去水印_1977048593158807553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MOVA音视频同步_2017541473100636162.json、视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json、视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json、视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json、视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json、视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json、视频生成/图生视频/视频去水印_1977048593158807553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `FlashVSRNode`
-- `GetVideoComponents`
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `ImageResizeKJv2`
 - `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RunningHub_MOVA_Loader`
-- `RunningHub_MOVA_Sampler`
+- `MaskToImage`
+- `RepeatImageBatch`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 2/4 个有
+- `PreviewImage` —— 3/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `CustomAddLabel` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 

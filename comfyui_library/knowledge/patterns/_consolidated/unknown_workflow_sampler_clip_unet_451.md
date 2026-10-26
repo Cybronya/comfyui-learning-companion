@@ -3,69 +3,81 @@ name: unknown_workflow_sampler_clip_unet_451
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6015
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetNode, KSampler, ModelSamplingAuraFlow, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.747
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CM_FloatToInt, CM_FloatUnaryOperation, CM_IntToFloat, CR Prompt Text, EmptyFlux2LatentImage, FL_ImageBatchToGrid, Flux2Scheduler, GetImageSizeAndCount, ImageListToBatch+, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, RH_LLMAPI_NODE, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy saveText, easy seed, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-image-base文生图12步_2058131292830650370.json, 图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json]
+members: [图片生成/图生图/生图-单图多分镜自动-FLUX2-Klein_2017907866056794114.json, 图片生成/图生图/生图-单图循环生成多分镜-FLUX2-Klein_2017907859081666562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_451
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image-base文生图12步_2058131292830650370.json、图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-单图多分镜自动-FLUX2-Klein_2017907866056794114.json、图片生成/图生图/生图-单图循环生成多分镜-FLUX2-Klein_2017907859081666562.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `GetNode`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `CM_FloatToInt`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Prompt Text`
+- `EmptyFlux2LatentImage`
+- `FL_ImageBatchToGrid`
+- `Flux2Scheduler`
+- `GetImageSizeAndCount`
+- `ImageListToBatch+`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
 - `ConditioningZeroOut` —— 1/2 个有
-- `DF_Text` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `GetLatentRangeFromBatch` —— 1/2 个有
+- `GetLatentSizeAndCount` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `IntMath` —— 1/2 个有
+- `JWIntegerToString` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ProcessString` —— 1/2 个有
+- `Qwen3_VQA_Plus` —— 1/2 个有
+- `ToString` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
+- `easy promptLine` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10.5 | - | 2 | 86% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10.5，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（8/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

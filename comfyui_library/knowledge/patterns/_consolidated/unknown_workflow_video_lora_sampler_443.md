@@ -3,53 +3,76 @@ name: unknown_workflow_video_lora_sampler_443
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9666
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.5942
+common_nodes: [Any Switch (rgthree), AutoCropFaces, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImagesFromBatchIndexed, GetNode, GetVideoComponents, ImageConcatFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/动漫_真人 图生视频（超级加速版）_1949636462812778497.json, 视频生成/图生视频/手办360度产品展示(wan2.1图生视频5s)_1900406595552014337.json, 视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_1930526505158496258.json, 视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_2018170301388955650.json, 视频生成/图生视频/（真人_动漫）图生视频（加速稳定版）_1949494090500579330.json]
+members: [图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json, 图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json, 图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json, 图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json, 图片生成/图生图/角色高一致性-人物四视图 Minimax h3_2114600944641069058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_443
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/动漫_真人 图生视频（超级加速版）_1949636462812778497.json、视频生成/图生视频/手办360度产品展示(wan2.1图生视频5s)_1900406595552014337.json、视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_1930526505158496258.json、视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_2018170301388955650.json、视频生成/图生视频/（真人_动漫）图生视频（加速稳定版）_1949494090500579330.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json、图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json、图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json、图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json、图片生成/图生图/角色高一致性-人物四视图 Minimax h3_2114600944641069058.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AutoCropFaces`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageConcatFromBatch`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `WanVideoSLG` —— 4/5 个有
-- `WanVideoTeaCache` —— 3/5 个有
-- `CR Text` —— 2/5 个有
-- `CR Upscale Image` —— 2/5 个有
-- `ImageSizeAndBatchSize` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `WanVideoMagCache` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `ResizeImageMaskNode` —— 3/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `SeedVR2LoadDiTModel` —— 2/5 个有
+- `SeedVR2LoadVAEModel` —— 2/5 个有
+- `SeedVR2VideoUpscaler` —— 2/5 个有
+- `workflow>SeedVR放大节点` —— 2/5 个有
+- `39de0e19-7117-42df-9b3d-b677b1d4bf50` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `LayerUtility: SaveImagePlus` —— 1/5 个有
+- `SaveImageAdvanced` —— 1/5 个有
+- `VOSR2ModelLoader` —— 1/5 个有
+- `VOSR2Upscale` —— 1/5 个有
+- `easy float` —— 1/5 个有
+- `easy int` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 

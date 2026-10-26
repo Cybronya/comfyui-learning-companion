@@ -1,43 +1,41 @@
 ---
 name: unknown_workflow_generic_524
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6838
-common_nodes: [AddBackgroundNode, HivisionLayOutNode, HivisionNode, LaterProcessNode, LoadImage, PreviewImage, SaveImage]
+coverage: 0.804667
+common_nodes: [Apply Whisper, AudioSeparation, LoadAudio, SaveAudio, SoundFlow_TrimAudio, VoxCPM_TTS]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json, 图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json, 图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json, 图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json, 图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json]
+members: [音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json, 音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json, 音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json, 音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json, 音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_524
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json、图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json、图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json、图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json、图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json、音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json、音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json、音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json、音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AddBackgroundNode`
-- `HivisionLayOutNode`
-- `HivisionNode`
-- `LaterProcessNode`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioSeparation`
+- `LoadAudio`
+- `SaveAudio`
+- `SoundFlow_TrimAudio`
+- `VoxCPM_TTS`
 
 **可变部分**（部分 workflow 才有）：
-- `AddWaterMarkNode` —— 4/5 个有
-- `ZHHivisionParamsNode` —— 3/5 个有
-- `ENHivisionParamsNode` —— 2/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `SetNode` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `PreviewAudio` —— 4/6 个有
+- `LayerUtility: TextBox` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
 
 ## 典型参数
 

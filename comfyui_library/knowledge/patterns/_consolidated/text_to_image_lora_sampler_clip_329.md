@@ -3,53 +3,69 @@ name: text_to_image_lora_sampler_clip_329
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.869667
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMiniMaxH3Director, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.904333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, DF_Text_Box, EmptyLatentImage, Flux2Scheduler, GH_CropRestore, GH_MaskCropV2, GetImageSize+, GuHaiMaskDetect, Image Comparer (rgthree), JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, Mask Invert, RandomNoise, ReferenceLatent, SAM3Segment, SamplerCustomAdvanced, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, solarL_SaveImagesToZip, 图像缩放V2_孤海, 孤海-遮罩混合运算, 孤海遮罩分析, 布尔孤海, 数学运算_孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/导演台任意数量参考生视频｜MiniMax H3官方版_2095963275925213185.json, 视频生成/文生视频/4步极速版｜Fast H3文生视频快速生成工作流_2095122682907029505.json, 视频生成/文生视频/Fast H3四步极速版｜文生视频快速生成_2095132261908832257.json, 视频生成/文生视频/MiniMax H3全能导演台｜文生图生视频三合一_2092044499680845826.json, 视频生成/文生视频/Minimax导演台工作流｜文生视频视频生视频图生视频_2090461248403107841.json, 视频生成/文生视频/导演台工作流｜MINIMAX-H3三模视频生成_2092584889517432833.json]
+members: [图片生成/图生图/Klein换发型V2 单人多人全身换发型处理工具_2099950966194921473.json, 图片生成/图生图/Klein换发型V2_单人多人全身换发型处理工具_2100514929504768001.json, 图片生成/图生图/Klein换发型V2处理工具｜单人多人全身换发型_2100853756182224898.json, 图片生成/图生图/klein换发型换头工作流｜图生图换脸快速出图_2100821675100164098.json, 图片生成/图生图/双人照片一键影棚合影｜Klein 9B全家福合成工作流_2096329930433974274.json, 图片生成/图生图/换发型V2-klein版来了｜头发替换自然服帖，发色发型随便试_2099437858925928449.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_329
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/导演台任意数量参考生视频｜MiniMax H3官方版_2095963275925213185.json、视频生成/文生视频/4步极速版｜Fast H3文生视频快速生成工作流_2095122682907029505.json、视频生成/文生视频/Fast H3四步极速版｜文生视频快速生成_2095132261908832257.json、视频生成/文生视频/MiniMax H3全能导演台｜文生图生视频三合一_2092044499680845826.json、视频生成/文生视频/Minimax导演台工作流｜文生视频视频生视频图生视频_2090461248403107841.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein换发型V2 单人多人全身换发型处理工具_2099950966194921473.json、图片生成/图生图/Klein换发型V2_单人多人全身换发型处理工具_2100514929504768001.json、图片生成/图生图/Klein换发型V2处理工具｜单人多人全身换发型_2100853756182224898.json、图片生成/图生图/klein换发型换头工作流｜图生图换脸快速出图_2100821675100164098.json、图片生成/图生图/双人照片一键影棚合影｜Klein 9B全家福合成工作流_2096329930433974274.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMiniMaxH3Director`
-- `CreateVideo`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DF_Text_Box`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
+- `GetImageSize+`
+- `GuHaiMaskDetect`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `Mask Fill Holes`
+- `Mask Invert`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SAM3Segment`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
+- `图像缩放V2_孤海`
+- `孤海-遮罩混合运算`
+- `孤海遮罩分析`
+- `布尔孤海`
+- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DirectorRefine` —— 3/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `GetImageSizeAndCount` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `LoraLoaderBypassModelOnly` —— 1/6 个有
-- `MemoryCleaner` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `StringFunction|pysssss` —— 1/6 个有
-- `easy positive` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `孤海注释` —— 5/6 个有
+- `EmptyImage` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
 
 ## 典型参数
 
@@ -67,7 +83,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -78,4 +94,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

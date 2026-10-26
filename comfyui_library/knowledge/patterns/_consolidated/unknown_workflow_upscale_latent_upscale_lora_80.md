@@ -3,78 +3,83 @@ name: unknown_workflow_upscale_latent_upscale_lora_80
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.927
-common_nodes: [CFGGuider, CLIPTextEncode, CM_IntToFloat, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetLatentSizeAndCount, ImageFromBatch, Image_Resize_longsize, Int, JjkText, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveBoolean, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed Everywhere, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VRAMReserver, easy cleanGpuUsed, image_scale_pixel_v2]
+coverage: 0.6955
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RH_LLMAPI_NODE, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, Text Multiline, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/V4_2053030948815548417.json, 视频生成/图生视频/电商生成双人对话视频 Ltx2.3bcx_2049061989212758018.json]
+members: [视频生成/图生视频/005.LTX2.3音视融合003.LTX2.3多图引导生视频_2035357780827185153.json, 视频生成/图生视频/LTX2.3多图关键帧生视频_2042630779330633730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_80
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/V4_2053030948815548417.json、视频生成/图生视频/电商生成双人对话视频 Ltx2.3bcx_2049061989212758018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/005.LTX2.3音视融合003.LTX2.3多图引导生视频_2035357780827185153.json、视频生成/图生视频/LTX2.3多图关键帧生视频_2042630779330633730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
+- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
-- `GetLatentSizeAndCount`
-- `ImageFromBatch`
-- `Image_Resize_longsize`
-- `Int`
-- `JjkText`
+- `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoConditionOnly`
+- `LTXVImgToVideoInplaceKJ`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PromptRelayEncode`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed Everywhere`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
+- `SetNode`
+- `Text Multiline`
 - `VAEDecodeTiled`
-- `VRAMReserver`
-- `easy cleanGpuUsed`
-- `image_scale_pixel_v2`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LTXVScheduler` —— 1/2 个有
+- `MaxNode` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `Qwen3VL_Chat` —— 1/2 个有
+- `RIFEInterpolation` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `ShowText` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
 - `Text` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 169 | - | 2 | 57% |
+| 高度 | 24.5 | - | 2 | 98% |
 
 ## 常见问题
 
@@ -82,4 +87,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 169，样本不足，未给区间，2 个样本
+- 高度 中位数 24.5，样本不足，未给区间，2 个样本，取值集中（一致性 98%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,38 +3,34 @@ name: unknown_workflow_generic_617
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8172
-common_nodes: [CR Text, SaveAudio, Text Multiline]
+coverage: 0.6364
+common_nodes: [LoadAudio, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json, 音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json, 音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json]
+members: [数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json, 数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json, 音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json, 音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json, 音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_617
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json、音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json、音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json、数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json、音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json、音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json、音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `Qwen3TTSModelLoader` —— 4/5 个有
-- `Qwen3TTSVoiceClone` —— 3/5 个有
-- `Qwen3TTSVoiceDesign` —— 3/5 个有
-- `easy seed` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `FishS2VoiceCloneTTS` —— 1/5 个有
+- `SaveAudioMP3` —— 3/5 个有
+- `SaveAudioAdvanced` —— 2/5 个有
 
 ## 典型参数
 

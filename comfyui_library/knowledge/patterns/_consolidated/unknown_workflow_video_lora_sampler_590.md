@@ -1,73 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_590
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.712
-common_nodes: [ApplyFaceProcessor, FaceOnlyModeSwitch, FaceProcessorLoader, GetNode, HfImageToRGB, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VideoFramePreprocessor, VideoInputPreprocessor, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.92225
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json, 视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json, 视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json]
+members: [视频生成/图生视频/wan2.2官方 VACE 视频人物替换电商版3.0_1968972312815026177.json, 视频生成/图生视频/极简——KJ版 wan2.2模型VACE 视频人物替换_1968955207906385921.json, 视频生成/文生视频/Wan2_2_Fun_VACE_画遮罩替换视频人物工作流_1968705709867192321.json, 视频生成/文生视频/【AI小兵哥】Wan2_2_Fun_VACE_参考人物进行姿势迁移工作流_1968471614218227713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_590
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json、视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json、视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.2官方 VACE 视频人物替换电商版3.0_1968972312815026177.json、视频生成/图生视频/极简——KJ版 wan2.2模型VACE 视频人物替换_1968955207906385921.json、视频生成/文生视频/Wan2_2_Fun_VACE_画遮罩替换视频人物工作流_1968705709867192321.json、视频生成/文生视频/【AI小兵哥】Wan2_2_Fun_VACE_参考人物进行姿势迁移工作流_1968471614218227713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceOnlyModeSwitch`
-- `FaceProcessorLoader`
-- `GetNode`
-- `HfImageToRGB`
+全部 4 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VideoFramePreprocessor`
-- `VideoInputPreprocessor`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 2/3 个有
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `ImageCombine` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `RepeatImageBatch` —— 2/3 个有
-- `WanVideoVACEEncode` —— 2/3 个有
-- `WanVideoVACEModelSelect` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `CreateVideo` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `PreViewVideo` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `ImageCompositeMasked` —— 3/4 个有
+- `LayerMask: SAM2VideoUltra` —— 3/4 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 3/4 个有
+- `MaskToImage` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
+- `VHS_VideoInfo` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `CM_FloatToInt` —— 2/4 个有
+- `ImageFromBatch+` —— 2/4 个有
+- `ImpactInt` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `easy mathInt` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `DWPreprocessor` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `StringToFloatList` —— 1/4 个有
+- `WanVideoImageResizeToClosest` —— 1/4 个有
 
 ## 典型参数
 

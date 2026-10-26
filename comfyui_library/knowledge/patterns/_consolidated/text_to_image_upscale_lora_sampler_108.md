@@ -3,77 +3,71 @@ name: text_to_image_upscale_lora_sampler_108
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.889
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GrowMask, Image Comparer (rgthree), ImageUpscaleWithModel, InvertMask, JjkText, JoinImageWithAlpha, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, Upscale Model Loader, VAEDecode, VAELoader, YUAN_TXTConvertAny, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8685
+common_nodes: [Blur, CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, Int, JjkText, KSampler, LayerUtility: BooleanOperatorV2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, SaveImageJPG_GH, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAELoader, easy boolean, easy cleanGpuUsed, easy ifElse, easy imageSizeByLongerSide, easy imageSizeBySide, solarL_SaveImagesToZip, 孤海注释, 数学运算_孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json, 图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json]
+members: [图片生成/图生图/8K放大修复｜SeedVR2高清还原图质细节一步到位_2101545770318131202.json, 图片生成/图生图/8K放大升级版｜seedVR2高清修复图生图精修_2093825267004428290.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_108
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json、图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/8K放大修复｜SeedVR2高清还原图质细节一步到位_2101545770318131202.json、图片生成/图生图/8K放大升级版｜seedVR2高清修复图生图精修_2093825267004428290.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Blur`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `DF_Integer`
 - `EmptyLatentImage`
-- `GrowMask`
 - `Image Comparer (rgthree)`
-- `ImageUpscaleWithModel`
-- `InvertMask`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
 - `JjkText`
-- `JoinImageWithAlpha`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: BooleanOperatorV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
+- `MathExpression|pysssss`
+- `SaveImageJPG_GH`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 - `UNETLoader`
-- `Upscale Model Loader`
 - `VAEDecode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy imageSizeByLongerSide`
+- `easy imageSizeBySide`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 1/2 个有
-- `DF_Integer` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageInvert` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LG_Color_Match_V2` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `ResolutionSelector` —— 1/2 个有
-- `SaveImageAdvanced` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `TextEncodeQwenImage21` —— 1/2 个有
+- `数学运算_孤海`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
 | 采样算法 | er_sde | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -83,12 +77,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

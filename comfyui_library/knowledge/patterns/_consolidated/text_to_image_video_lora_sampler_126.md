@@ -3,67 +3,82 @@ name: text_to_image_video_lora_sampler_126
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.842
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.5495
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, PrimitiveInt, SAM3_VideoTrack, SCAIL2ColoredMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy imageRemBg, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMaxH3图生视频场景特效直出_2093415902871121922.json, 视频生成/文生视频/MiniMaxH3多图数字人生成｜文生视频多图驱动_2094504932195000321.json, 视频生成/文生视频/minimax阿里8步加速三合一｜文生视频图生视频全能参考_2095568310212587522.json, 视频生成/文生视频/像素幻想Lab出品｜MiniMaxH3图生视频场景特效_2093741804817567745.json, 视频生成/文生视频/多图数字人生成｜MiniMaxH3文生图生视频工作流_2094729429032464385.json, 视频生成/文生视频/文生图生视频全能参考三合一｜minimax阿里8步加速_2095811801366745089.json]
+members: [视频生成/图生视频/SCAIL2多参考动作迁移 人物替换长时间不劣化处理工具_2113061558434746370.json, 视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json, 视频生成/图生视频/Scail2多参工作流｜图生视频角色动作驱动_2090932731508256770.json, 视频生成/图生视频/Scail2多参无劣化动作迁移 默认DPO Lora关闭按需开启_2098657872681979905.json, 视频生成/图生视频/多参动作迁移 Scail2 人物特效视频运镜图生视频_2094184722862796802.json, 视频生成/图生视频/运镜多参两不误｜Scail2人物特效视频生成_2096594560544759809.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_126
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/MiniMaxH3图生视频场景特效直出_2093415902871121922.json、视频生成/文生视频/MiniMaxH3多图数字人生成｜文生视频多图驱动_2094504932195000321.json、视频生成/文生视频/minimax阿里8步加速三合一｜文生视频图生视频全能参考_2095568310212587522.json、视频生成/文生视频/像素幻想Lab出品｜MiniMaxH3图生视频场景特效_2093741804817567745.json、视频生成/文生视频/多图数字人生成｜MiniMaxH3文生图生视频工作流_2094729429032464385.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/SCAIL2多参考动作迁移 人物替换长时间不劣化处理工具_2113061558434746370.json、视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json、视频生成/图生视频/Scail2多参工作流｜图生视频角色动作驱动_2090932731508256770.json、视频生成/图生视频/Scail2多参无劣化动作迁移 默认DPO Lora关闭按需开启_2098657872681979905.json、视频生成/图生视频/多参动作迁移 Scail2 人物特效视频运镜图生视频_2094184722862796802.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `PrimitiveInt`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
+- `easy imageRemBg`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
+- `ComfySwitchNode` —— 5/6 个有
+- `Float` —— 5/6 个有
+- `ImageBatchMultiple+` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `SingleBooleanTrigger` —— 5/6 个有
+- `BasicScheduler` —— 4/6 个有
 - `ComfyMathExpression` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `MiniMaxH3ImageToVideo` —— 4/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/6 个有
-- `PrimitiveFloat` —— 4/6 个有
-- `ShowText|pysssss` —— 4/6 个有
-- `VAEDecodeAudio` —— 4/6 个有
-- `llama_cpp_instruct_adv` —— 4/6 个有
-- `llama_cpp_model_loader` —— 4/6 个有
-- `llama_cpp_parameters` —— 4/6 个有
-- `Audio Duration (mtb)` —— 2/6 个有
-- `AudioCrop` —— 2/6 个有
-- `AudioSeparation` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
-- `ModelAttentionBackend` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/6 个有
-- `easy float` —— 2/6 个有
+- `KSamplerSelect` —— 4/6 个有
+- `SamplerCustom` —— 4/6 个有
+- `GetImageRangeFromBatch` —— 3/6 个有
+- `SaveImage` —— 3/6 个有
+- `WanContextWindowsManual` —— 3/6 个有
+- `easy batchAnything` —— 3/6 个有
+- `easy forLoopEnd` —— 3/6 个有
+- `easy forLoopStart` —— 3/6 个有
+- `VAEDecodeTiled` —— 2/6 个有
+- `CR Trigger` —— 1/6 个有
+- `FrameInterpolate` —— 1/6 个有
+- `FrameInterpolationModelLoader` —— 1/6 个有
+- `ImpactConditionalBranch` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `Lora Loader Stack (rgthree)` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `SQRScail2ReferenceBatchSplit` —— 1/6 个有
+- `VHS_VideoInfoLoaded` —— 1/6 个有
+- `WanSQRMultiReference` —— 1/6 个有
 
 ## 典型参数
 
@@ -81,7 +96,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -92,4 +107,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（9/6 个样本）：Steps较低可能导致细节不足

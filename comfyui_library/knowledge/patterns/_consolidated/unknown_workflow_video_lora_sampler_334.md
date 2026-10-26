@@ -1,70 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_334
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.588667
-common_nodes: [AudioEncoderEncode, ColorMatch, DWPreprocessor, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.673571
+common_nodes: [DownloadAndLoadSAM2Model, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, PreviewImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/替换视频里的产品 替换电商带货视频的商品 替换物体S2V wan2.2_2067536808447135745.json, 视频生成/图生视频/AI瞬间把你变成小酒馆民谣歌手， 全能图片V1 + Wan2.2 S2V教程_1964737438142840834.json, 视频生成/图生视频/🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json, 视频生成/图生视频/🔥wan2.2 s2v ai一键换模特+换装+口型！【gen全能视频Si】_1966080494343458817.json, 视频生成/文生视频/KJ-Wan2.2-S2v_1962055822404685826.json, 视频生成/文生视频/wan2.2S2V+香蕉模型=批量爆款二创视频（AI带货+模型换装+唱歌跳舞）_1973620998547353601.json]
+members: [数字人/数字人/AI换人术再升级！MoCha模型一键替换视频主角，ComfyUI详细教程来啦！_1981244039615905794.json, 数字人/数字人/Mocha一键人物替换，快速_1981583280208265218.json, 数字人/数字人/mocha视频角色替换人物替换更换人物更换任意角色工作流_2003477047525711873.json, 视频生成/图生视频/mocha视频角色替换人物替换更换人物更换任意角色工作流_2055888329194917889.json, 视频生成/图生视频/视频人物替换 Mocha_1979526023647760386.json, 视频生成/图生视频/（单参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980912658343968770.json, 视频生成/文生视频/（双参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980845806502760449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_334
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/替换视频里的产品 替换电商带货视频的商品 替换物体S2V wan2.2_2067536808447135745.json、视频生成/图生视频/AI瞬间把你变成小酒馆民谣歌手， 全能图片V1 + Wan2.2 S2V教程_1964737438142840834.json、视频生成/图生视频/🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json、视频生成/图生视频/🔥wan2.2 s2v ai一键换模特+换装+口型！【gen全能视频Si】_1966080494343458817.json、视频生成/文生视频/KJ-Wan2.2-S2v_1962055822404685826.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/AI换人术再升级！MoCha模型一键替换视频主角，ComfyUI详细教程来啦！_1981244039615905794.json、数字人/数字人/Mocha一键人物替换，快速_1981583280208265218.json、数字人/数字人/mocha视频角色替换人物替换更换人物更换任意角色工作流_2003477047525711873.json、视频生成/图生视频/mocha视频角色替换人物替换更换人物更换任意角色工作流_2055888329194917889.json、视频生成/图生视频/视频人物替换 Mocha_1979526023647760386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `ColorMatch`
-- `DWPreprocessor`
+全部 7 个 workflow 都包含：
+- `DownloadAndLoadSAM2Model`
 - `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PreviewAny`
+- `MaskPreview`
+- `MochaEmbeds`
+- `PointsEditor`
+- `PreviewImage`
+- `Sam2Segmentation`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioEncoderLoader` —— 5/6 个有
-- `MelBandRoFormerModelLoader` —— 5/6 个有
-- `MelBandRoFormerSampler` —— 5/6 个有
-- `NormalizeAudioLoudness` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `WanVideoLoraSelectMulti` —— 5/6 个有
-- `WanVideoModelLoader` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `RH_Nano_Banana_Image2Image` —— 4/6 个有
-- `RH_Translator` —— 4/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `LayerMask: RemBgUltra` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MergeAudioMW` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `VHS_LoadAudio` —— 1/6 个有
+- `RMBG` —— 6/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `Crop Face` —— 4/7 个有
+- `GrowMask` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `Load RetinaFace` —— 4/7 个有
+- `VHS_VideoInfo` —— 4/7 个有
+- `GrowMaskWithBlur` —— 3/7 个有
+- `PDIMAGE_LongerSize` —— 3/7 个有
+- `WanVideoSetBlockSwap` —— 3/7 个有
+- `WanVideoTorchCompileSettings` —— 3/7 个有
+- `Anything Everywhere` —— 2/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `JWInteger` —— 2/7 个有
+- `SaveImage` —— 2/7 个有
+- `easy int` —— 2/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

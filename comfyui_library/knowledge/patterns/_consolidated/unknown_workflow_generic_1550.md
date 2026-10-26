@@ -3,41 +3,36 @@ name: unknown_workflow_generic_1550
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.913
-common_nodes: [AudioCrop, Bjornulf_AnythingToText, LoadAudio, MathExpression|pysssss, PreviewImage, SaveImage, SaveVideo, VHS_LoadVideoPath, VHS_SelectImages]
+coverage: 0.757
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971449141417164802.json, 视频生成/文生视频/Wan2.5 Preview 文生视频，保存尾帧，可连续生成长视频_1971617651434909698.json]
+members: [图片生成/图生图/洗图与裂 广告宣传图 电商产品海报生成  主图 详情页 sku_2072113053721780226.json, 图片生成/文生图/全能图片2工作流合集_2027202301286424578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1550
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971449141417164802.json、视频生成/文生视频/Wan2.5 Preview 文生视频，保存尾帧，可连续生成长视频_1971617651434909698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗图与裂 广告宣传图 电商产品海报生成  主图 详情页 sku_2072113053721780226.json、图片生成/文生图/全能图片2工作流合集_2027202301286424578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_AnythingToText`
-- `LoadAudio`
-- `MathExpression|pysssss`
-- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
-- `VHS_SelectImages`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_Wan25_I2V` —— 1/2 个有
-- `RH_Wan25_T2V` —— 1/2 个有
-- `ShellAgentPluginInputText` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
 
 ## 典型参数
 

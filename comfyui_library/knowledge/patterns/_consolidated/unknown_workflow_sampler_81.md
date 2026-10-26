@@ -3,38 +3,41 @@ name: unknown_workflow_sampler_81
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, PreviewAudio, SaveAudio]
+coverage: 0.6845
+common_nodes: [Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), LoadImage, PreviewImage, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json, 音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json]
+members: [图片生成/图生图/自己用：USO  3D转2D_1968914270236889090.json, 图片生成/图生图/风格迁移 USO_1962502380937953281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_81
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json、音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自己用：USO  3D转2D_1968914270236889090.json、图片生成/图生图/风格迁移 USO_1962502380937953281.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceDesign`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Translator`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CR SDXL Aspect Ratio` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

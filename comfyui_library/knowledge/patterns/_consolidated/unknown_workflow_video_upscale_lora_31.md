@@ -3,72 +3,62 @@ name: unknown_workflow_video_upscale_lora_31
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.383
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, Fast Groups Bypasser (rgthree), GetImage, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanImageGridComposite, YuanLoadImageOutput, YuanMultiImage, YuanPrimitive, YuanTool, Yuan_H3MotionContextTrim, Yuan_H3ProgressiveSampler, Yuan_MiniMaxH3Video]
+coverage: 0.8905
+common_nodes: [AILab_ImageStitch, Anything Everywhere3, CLIPVisionLoader, FastUnsharpSharpen, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResize+, ImageUpscaleWithModel, LoadImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json]
+members: [视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json, 视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_31
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json、视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImage`
-- `GetNode`
-- `KSamplerSelect`
+- `AILab_ImageStitch`
+- `Anything Everywhere3`
+- `CLIPVisionLoader`
+- `FastUnsharpSharpen`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageResize+`
+- `ImageUpscaleWithModel`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `SetNode`
-- `StringConcatenate`
-- `UNETLoader`
-- `VAELoader`
+- `RIFE VFI`
+- `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTJsonSwitch`
-- `YUAN_TXTPreviewContent`
-- `YUAN_TXTShotDurations`
-- `YuanAudioList`
-- `YuanAudioLoad`
-- `YuanAudioSplit`
-- `YuanImageGridComposite`
-- `YuanLoadImageOutput`
-- `YuanMultiImage`
-- `YuanPrimitive`
-- `YuanTool`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_H3ProgressiveSampler`
-- `Yuan_MiniMaxH3Video`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy clearCacheAll` —— 1/2 个有
+- `LayerColor: ColorAdapter` —— 1/2 个有
+- `OnnxDetectionModelLoader` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `SDPoseOODLoader` —— 1/2 个有
+- `SDPoseOODProcessor` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

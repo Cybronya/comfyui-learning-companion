@@ -3,54 +3,79 @@ name: unknown_workflow_sampler_clip_unet_352
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.951667
-common_nodes: [CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.821667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScale, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
 problems: []
 missing: []
-members: [图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json, 图片生成/图生图/快速万物消除 擦除 去水印_2102605007383261185.json, 图片生成/文生图/flux2图像修复_2064329697353359361.json]
+members: [图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json, 图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json, 图片生成/图生图/图像放大_2020915083957772290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_352
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json、图片生成/图生图/快速万物消除 擦除 去水印_2102605007383261185.json、图片生成/文生图/flux2图像修复_2064329697353359361.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json、图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json、图片生成/图生图/图像放大_2020915083957772290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScale`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
+- `easy imageSize`
+- `easy imageSizeBySide`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `CFGGuider` —— 1/3 个有
-- `FluxGuidance` —— 1/3 个有
-- `InpaintCropImproved` —— 1/3 个有
-- `InpaintModelConditioning` —— 1/3 个有
-- `InpaintStitchImproved` —— 1/3 个有
-- `LayerColor: Brightness & Contrast` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PiDTextPrompt` —— 1/3 个有
-- `RepeatLatentBatch` —— 1/3 个有
-- `image_scale_pixel_v2` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy imageScaleDownToSize` —— 2/3 个有
+- `ColorMatch` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `FlashVSRNode` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `ImageSharpen` —— 1/3 个有
+- `LayerUtility: ImageReel` —— 1/3 个有
+- `LayerUtility: ImageReelComposit` —— 1/3 个有
+- `Load Image From Url (mtb)` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 1/3 个有
+- `SeedVR2ExtraArgs` —— 1/3 个有
+- `SeedVR2GGUF` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,35 +3,31 @@ name: unknown_workflow_generic_1232
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.882
-common_nodes: [EmptyImage, JjkText, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG2ImageToImage, SaveImage, 忽略多组孤海]
+coverage: 1
+common_nodes: [GeminiNanoBanana2V2, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098915963252072450.json, 图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098973770894635009.json]
+members: [comfyui-workflow-templates-json/api_google_nano_banana2_image_edit.json, comfyui-workflow-templates-json/api_google_nano_banana2_text_to_image.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1232
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098915963252072450.json、图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098973770894635009.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_nano_banana2_image_edit.json、comfyui-workflow-templates-json/api_google_nano_banana2_text_to_image.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyImage`
-- `JjkText`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartImageG25SunburstImageToImage`
-- `RH_RhartImageG2ImageToImage`
+- `GeminiNanoBanana2V2`
 - `SaveImage`
-- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

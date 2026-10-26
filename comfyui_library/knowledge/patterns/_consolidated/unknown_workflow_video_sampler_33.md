@@ -3,39 +3,71 @@ name: unknown_workflow_video_sampler_33
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [Anything Everywhere, AudioCombine, GetNode, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, RHHiddenNodes, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.6665
+common_nodes: [BlockifyMask, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PointsEditor, RHHiddenNodes, Sam2Segmentation, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached]
 problems: []
 missing: []
-members: [视频生成/图生视频/小说多角色配音结构化文本_1935602236280209409.json, 音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json]
+members: [视频生成/图生视频/12月27日新-wan animate-带蒙版_2004896290372808705.json, 视频生成/图生视频/wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/小说多角色配音结构化文本_1935602236280209409.json、音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/12月27日新-wan animate-带蒙版_2004896290372808705.json、视频生成/图生视频/wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `AudioCombine`
+- `BlockifyMask`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `MMAudioFeatureUtilsLoader`
-- `MMAudioModelLoader`
-- `MMAudioSampler`
+- `GrowMask`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
 - `RHHiddenNodes`
-- `SaveAudio`
+- `Sam2Segmentation`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
 - `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+
+**可变部分**（部分 workflow 才有）：
+- `ConvertOpenPoseKeypointsToDWPose` —— 1/2 个有
+- `DownloadAndLoadNLFModel` —— 1/2 个有
+- `DrawViTPose` —— 1/2 个有
+- `FaceMaskFromPoseKeypoints` —— 1/2 个有
+- `ImageCropByMaskAndResize` —— 1/2 个有
+- `LayerMask: MaskGrow` —— 1/2 个有
+- `NLFPredict` —— 1/2 个有
+- `PixelPerfectResolution` —— 1/2 个有
+- `PoseAndFaceDetection` —— 1/2 个有
+- `PoseDetectionVitPoseToDWPose` —— 1/2 个有
+- `RenderNLFPoses` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy framesEditor` —— 1/2 个有
+- `easy sam3ModelLoader` —— 1/2 个有
+- `easy sam3VideoSegmentation` —— 1/2 个有
 
 ## 典型参数
 

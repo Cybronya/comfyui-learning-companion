@@ -2,102 +2,64 @@
 name: unknown_workflow_upscale_latent_upscale_sampler_13
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.8865
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, QZ_ResolutionPreset, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+level: moderate
+coverage: 0.941125
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, HunyuanVideo15LatentUpscaleWithModel, HunyuanVideo15SuperResolution, KSamplerSelect, LatentUpscaleModelLoader, ModelSamplingSD3, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3 3阶生成，QWEN TTS+FISH AUDIO+ID LORA工作流合集_2040662756164116482.json, 视频生成/文生视频/Ltx2.3数字人唱歌6.9_2064342443386032129.json, 视频生成/文生视频/Ltx2.3数字人唱歌_2039181216796123137.json, 视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流-v2_2040424730452303873.json, 视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流_2040214667628384257.json, 视频生成/文生视频/ltx2.3 +fish audio 多人对话 工作流_2039992569207201794.json, 视频生成/文生视频/ltx2.3 多人对话工作流-宠物对话_2039689143625719809.json, 视频生成/文生视频/ltx2.3 多人对话工作流_2039300843228372993.json]
+members: [视频生成/图生视频/HUNYUAN 1.5 I2V SR_2073280696038289410.json, 视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json, 视频生成/图生视频/workflow_2073289414930944001.json, 视频生成/图生视频/混元1.5I2V+超分-Aiwood_1992198526646153217.json, 视频生成/图生视频/混元1.5_图生视频_场景推进画面首选_1997913784465391617.json, 视频生成/文生视频/HunyuanVideo_1.5加速图生视频1080p_1993246112486195202.json, 视频生成/文生视频/HunyuanVideo_1.5加速图生视频1080p（熊叔版）_1993572660164706305.json, 视频生成/文生视频/HunyuanVideo_1.5加速文生视频1080p_1993277000070660097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_13
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/LTX2.3 3阶生成，QWEN TTS+FISH AUDIO+ID LORA工作流合集_2040662756164116482.json、视频生成/文生视频/Ltx2.3数字人唱歌6.9_2064342443386032129.json、视频生成/文生视频/Ltx2.3数字人唱歌_2039181216796123137.json、视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流-v2_2040424730452303873.json、视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流_2040214667628384257.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/HUNYUAN 1.5 I2V SR_2073280696038289410.json、视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json、视频生成/图生视频/workflow_2073289414930944001.json、视频生成/图生视频/混元1.5I2V+超分-Aiwood_1992198526646153217.json、视频生成/图生视频/混元1.5_图生视频_场景推进画面首选_1997913784465391617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
-- `Int`
+- `HunyuanVideo15LatentUpscaleWithModel`
+- `HunyuanVideo15SuperResolution`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadImage`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `QZ_ResolutionPreset`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SimpleMath+`
-- `TrimAudioDuration`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/8 个有
-- `PrimitiveInt` —— 7/8 个有
-- `SaveVideo` —— 7/8 个有
-- `CM_FloatToInt` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `LTXVAudioVAEEncode` —— 6/8 个有
-- `LoadAudio` —— 6/8 个有
-- `PreviewAudio` —— 6/8 个有
-- `RH_LLMAPI_Pro_Node` —— 6/8 个有
-- `SetLatentNoiseMask` —— 6/8 个有
-- `SolidMask` —— 6/8 个有
-- `SoundFlow_GetLength` —— 6/8 个有
-- `easy cleanGpuUsed` —— 6/8 个有
-- `easy showAnything` —— 6/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `CR Text` —— 4/8 个有
-- `ConcatTextOfUtils` —— 4/8 个有
-- `LTX2_NAG` —— 4/8 个有
-- `FB_Qwen3TTSDialogueInference` —— 3/8 个有
-- `FB_Qwen3TTSRoleBank` —— 3/8 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 3/8 个有
-- `FB_Qwen3TTSVoiceDesign` —— 3/8 个有
-- `LTXVEmptyLatentAudio` —— 3/8 个有
-- `LTXVReferenceAudio` —— 3/8 个有
-- `ModelMemoryUsageFactorOverride` —— 3/8 个有
-- `ShowAnything|Mie` —— 3/8 个有
-- `ResizeImageMaskNode` —— 2/8 个有
-- `1hew_SaveVideo` —— 1/8 个有
-- `Audio To Text (mtb)` —— 1/8 个有
-- `DF_Int_to_Float` —— 1/8 个有
-- `Fast Groups Muter (rgthree)` —— 1/8 个有
-- `FishS2MultiSpeakerTTS` —— 1/8 个有
-- `LTXVPreprocess` —— 1/8 个有
-- `Load Whisper (mtb)` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `TrimAudio` —— 1/8 个有
-- `ttN text` —— 1/8 个有
+- `CLIPVisionEncode` —— 7/8 个有
+- `CLIPVisionLoader` —— 7/8 个有
+- `HunyuanVideo15ImageToVideo` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `VAEDecode` —— 6/8 个有
+- `VAEDecodeTiled` —— 5/8 个有
+- `VHS_VideoCombine` —— 5/8 个有
+- `CreateVideo` —— 3/8 个有
+- `DisableNoise` —— 3/8 个有
+- `GetImageSize` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `SplitSigmas` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `ResizeLongestToNode` —— 2/8 个有
+- `EmptyHunyuanVideo15Latent` —— 1/8 个有
+- `ResizeImagesByLongerEdge` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -105,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

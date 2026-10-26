@@ -1,79 +1,84 @@
 ---
 name: image_to_image_sampler_unet_vae_20
 type: Image To Image
-frequency: 10
-level: weak
-coverage: 0.8662
-common_nodes: [CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.834625
+common_nodes: [CLIPLoader, CR Text, GetImageSize, GetNode, GrowMaskWithBlur, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview+, PainterFluxImageEdit, ReferenceLatent, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageConcat, 孤海-遮罩混合运算]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen2511_单图编辑_2013164817997107201.json, 图片生成/图生图/qwen_Edit_2511多图编辑工作流_2077225997874847745.json, 图片生成/图生图/qwen_edit_2511单图编辑_2077221456840314881.json, 图片生成/图生图/三图编辑_2067961763567591425.json, 图片生成/图生图/全量qwen edit 2512多图编辑工作流_2068333416139026434.json, 图片生成/图生图/千问图像编辑_产品材质更换工作流_2106390652362772481.json, 图片生成/图生图/单图编辑_2067956866138857473.json, 图片生成/图生图/小红书换装_2075185550822301697.json, 图片生成/图生图/漫剧必备-一键生成人物四视图_2077374977283813377.json, 图片生成/图生图/角色转视角_2009539978879049729.json]
+members: [图片生成/图生图/Flux2产品换背景_自由调整位置_2089149943289307137.json, 图片生成/图生图/产品背景合成+融图打光（自动版）_2022663606793408513.json, 图片生成/图生图/合成打光-场景融合-flux2 klein产品场景合成_2020204898721206274.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2021815536040026114.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2096807788579213314.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2097153012191031297.json, 图片生成/图生图/电商产品溶图合成打光-flux2最新全流程_2029363862591512577.json, 图片生成/图生图/电商换背景_flux2最新溶图工作流_2031610323630825473.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_20
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/qwen2511_单图编辑_2013164817997107201.json、图片生成/图生图/qwen_Edit_2511多图编辑工作流_2077225997874847745.json、图片生成/图生图/qwen_edit_2511单图编辑_2077221456840314881.json、图片生成/图生图/三图编辑_2067961763567591425.json、图片生成/图生图/全量qwen edit 2512多图编辑工作流_2068333416139026434.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2产品换背景_自由调整位置_2089149943289307137.json、图片生成/图生图/产品背景合成+融图打光（自动版）_2022663606793408513.json、图片生成/图生图/合成打光-场景融合-flux2 klein产品场景合成_2020204898721206274.json、图片生成/图生图/溶图合成打光-flux2最新全流程_2021815536040026114.json、图片生成/图生图/溶图合成打光-flux2最新全流程_2096807788579213314.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Text`
+- `GetImageSize`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
+- `MaskPreview+`
+- `PainterFluxImageEdit`
+- `ReferenceLatent`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageConcat`
+- `孤海-遮罩混合运算`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `FluxKontextImageScale` —— 8/10 个有
-- `CFGNorm` —— 7/10 个有
-- `PreviewImage` —— 7/10 个有
-- `Image Comparer (rgthree)` —— 4/10 个有
-- `Text Multiline` —— 3/10 个有
-- `DF_Image_scale_to_side` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `Image Save` —— 2/10 个有
-- `EmptyImage` —— 1/10 个有
-- `ImageBatchMultiple+` —— 1/10 个有
-- `ImageSharpen` —— 1/10 个有
-- `SUPIR_Upscale` —— 1/10 个有
-- `Text Concatenate` —— 1/10 个有
-- `Text Load Line From File` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
+- `JoinStrings` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `RH_Captioner` —— 7/8 个有
+- `SolidMask` —— 7/8 个有
+- `easy imageDetailTransfer` —— 7/8 个有
+- `CR Color Panel` —— 6/8 个有
+- `FastCanvas` —— 6/8 个有
+- `FastCanvasTool` —— 6/8 个有
+- `easy imageRemBg` —— 6/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 10 | 20% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 10 | 31% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，10 个样本，取值分散，一致性仅 20%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，10 个样本，取值分散，一致性仅 31%
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（9/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（16/8 个样本）：Steps较低可能导致细节不足

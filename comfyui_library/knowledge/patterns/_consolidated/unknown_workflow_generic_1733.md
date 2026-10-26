@@ -3,34 +3,45 @@ name: unknown_workflow_generic_1733
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, RHHiddenNodes, SDVN Slider 100, SaveAudio, SaveAudioMP3]
+coverage: 0.68
+common_nodes: [DF_Text_Box, Fast Groups Muter (rgthree), LoadAudio, LoadImage, PreviewAny, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Translator, SaveVideo, ShowText|pysssss, TextCombinerTwo, VHS_LoadVideoFFmpeg, WhisperSTT, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强声音克隆TTS2-带情绪控制_1966305650101882882.json, 音频生成/音频生成/最强声音克隆TTS2-带情绪控制_1970621571612221441.json]
+members: [视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒_1991792893413388289.json, 视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒（10并发版）_2000383536815370241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1733
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强声音克隆TTS2-带情绪控制_1966305650101882882.json、音频生成/音频生成/最强声音克隆TTS2-带情绪控制_1970621571612221441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒_1991792893413388289.json、视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒（10并发版）_2000383536815370241.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
+- `DF_Text_Box`
+- `Fast Groups Muter (rgthree)`
 - `LoadAudio`
-- `RHHiddenNodes`
-- `SDVN Slider 100`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `LoadImage`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `SaveVideo`
+- `ShowText|pysssss`
+- `TextCombinerTwo`
+- `VHS_LoadVideoFFmpeg`
+- `WhisperSTT`
+- `easy ifElse`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Sora2_I2V` —— 1/2 个有
+- `RH_Sora2_I2V_Batch` —— 1/2 个有
 
 ## 典型参数
 

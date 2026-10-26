@@ -1,64 +1,69 @@
 ---
 name: unknown_workflow_video_upscale_lora_17
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8135
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImageSizeAndCount, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Yuan_RTXVideoUpscaleH3, easy int]
+coverage: 0.492667
+common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageScaleToMegapixels, ImpactControlBridge, ImpactInt, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadJsonFromText, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_Captioner, RH_LLMAPI_NODE, Seed (rgthree), SetNode, StringFunction|pysssss, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoVAELoader, easy ifElse, easy mathInt, easy negative, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json, 视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json, 视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json, 视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json]
+members: [视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json, 视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json, 视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_17
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json、视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json、视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json、视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json、视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json、视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImageSizeAndCount`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `ImageScaleToMegapixels`
+- `ImpactControlBridge`
+- `ImpactInt`
+- `ImpactSwitch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadJsonFromText`
+- `LoadWanVideoT5TextEncoder`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
+- `Seed (rgthree)`
+- `SetNode`
+- `StringFunction|pysssss`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `Yuan_RTXVideoUpscaleH3`
-- `easy int`
+- `WanVideoApplyNAG`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVAELoader`
+- `easy ifElse`
+- `easy mathInt`
+- `easy negative`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3HybridLoader` —— 2/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `ImagePadForOutpaint` —— 1/4 个有
+- `GLM_Vision_ImageToPrompt` —— 2/3 个有
+- `ImageCASharpening+` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

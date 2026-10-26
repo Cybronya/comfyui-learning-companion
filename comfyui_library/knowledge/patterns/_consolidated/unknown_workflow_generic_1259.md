@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1259
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [CR Text Concatenate, Fast Groups Muter (rgthree), ImagePass, LoadImage, Notif-PlaySound, RH_Nano_Banana2_Image2Image, SaveImage, TextInput_]
+coverage: 0.5
+common_nodes: [83e6e004-48ea-408e-9024-eb49c3d7dc14, PreviewAny, ResolutionSelector, SaveImage, f5f04613-ee09-4cd9-9ada-a880360891d4]
 problems: []
 missing: []
-members: [图片生成/图生图/Qiyu_图片编辑_2025920137546698754.json, 图片生成/文生图/Qiyu_十图参考_2025920174733398017.json]
+members: [comfyui-workflow-templates-json/image_ideogram4_t2i.json, comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1259
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qiyu_图片编辑_2025920137546698754.json、图片生成/文生图/Qiyu_十图参考_2025920174733398017.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_ideogram4_t2i.json、comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `Fast Groups Muter (rgthree)`
-- `ImagePass`
-- `LoadImage`
-- `Notif-PlaySound`
-- `RH_Nano_Banana2_Image2Image`
+- `83e6e004-48ea-408e-9024-eb49c3d7dc14`
+- `PreviewAny`
+- `ResolutionSelector`
 - `SaveImage`
-- `TextInput_`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `f5f04613-ee09-4cd9-9ada-a880360891d4`
 
 ## 典型参数
 

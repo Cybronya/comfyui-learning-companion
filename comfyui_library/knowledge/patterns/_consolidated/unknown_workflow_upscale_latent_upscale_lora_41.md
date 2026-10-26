@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_41
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: strong
-coverage: 0.905714
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.874
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled]
+problems: []
 missing: []
-members: [数字人/数字人/（生产环境）LTX2.3图生视频_2045796352663228418.json, 视频生成/图生视频/20260113LTX2.0 图生视频工作流（48G）_2010979976224448513.json, 视频生成/图生视频/LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json, 视频生成/图生视频/LTX-2 数字人对口型720P_2073311336997675009.json, 视频生成/图生视频/LTX-2 数字人对口型蒸馏版1080P_2073311138300911617.json, 视频生成/图生视频/ltx-2极速图生视频数字人视频高清数字人视频照片生成ai数字人高清对口型数字人视频工（48G）_2011488577225494530.json, 视频生成/图生视频/【Supermate】优化LTX-2 图生视频 （Plus会员版）_2008554221829885954.json]
+members: [视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json, 视频生成/图生视频/最新版本LTX2.3 图像音频生视频 口型同步 V2.0_2031381886173450241.json, 视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json, 视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json, 视频生成/图生视频/（1图 1音频）LTX2.3 图 + 音频数字人对口型_2111327625162612737.json, 视频生成/图生视频/🐱video_LTX2.3_I2V自定义音频图像生视频_2031928367213187074.json, 视频生成/文生视频/LTX-2.3-Image Audio to Video Workflow_2033716721021886465.json, 视频生成/文生视频/LTX-2.3配音术升级版：输入台词就能生成短剧！FishAudio S2 + LTX-2.3实战_2034068608220930049.json, 视频生成/文生视频/LTX2.3-文本音频生视频(口型同步)_2031312855026376705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_41
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/（生产环境）LTX2.3图生视频_2045796352663228418.json、视频生成/图生视频/20260113LTX2.0 图生视频工作流（48G）_2010979976224448513.json、视频生成/图生视频/LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json、视频生成/图生视频/LTX-2 数字人对口型720P_2073311336997675009.json、视频生成/图生视频/LTX-2 数字人对口型蒸馏版1080P_2073311138300911617.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json、视频生成/图生视频/最新版本LTX2.3 图像音频生视频 口型同步 V2.0_2031381886173450241.json、视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json、视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json、视频生成/图生视频/（1图 1音频）LTX2.3 图 + 音频数字人对口型_2111327625162612737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptyImage`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
@@ -42,61 +42,56 @@ source: knowledge_consolidation
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVScheduler` —— 6/7 个有
-- `ManualSigmas` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `VAEDecode` —— 5/7 个有
-- `LTXVAudioVAEDecode` —— 4/7 个有
-- `LTXVEmptyLatentAudio` —— 4/7 个有
-- `VHS_VideoCombine` —— 4/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `CreateVideo` —— 3/7 个有
-- `LTXVAudioVAEEncode` —— 3/7 个有
-- `LoadAudio` —— 3/7 个有
-- `MelBandRoFormerModelLoader` —— 3/7 个有
-- `MelBandRoFormerSampler` —— 3/7 个有
-- `SaveVideo` —— 3/7 个有
-- `SetLatentNoiseMask` —— 3/7 个有
-- `SolidMask` —— 3/7 个有
-- `TrimAudioDuration` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `VAEDecodeTiled` —— 2/7 个有
-- `GetNode` —— 1/7 个有
-- `KSampler` —— 1/7 个有
-- `PreviewAudio` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `SimpleCalculatorKJ` —— 1/7 个有
-- `ToInt` —— 1/7 个有
-- `easy int` —— 1/7 个有
-- `easy mathInt` —— 1/7 个有
+- `PrimitiveInt` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `ResizeImageMaskNode` —— 8/9 个有
+- `FishS2MultiSpeakerTTS` —— 4/9 个有
+- `LoraLoader` —— 4/9 个有
+- `PreviewAny` —— 4/9 个有
+- `SaveAudio` —— 4/9 个有
+- `TextGenerateLTX2Prompt` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
+- `SimpleMath+` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `LayerUtility: PurgeVRAM` —— 1/9 个有
+- `LoadWhisperModel_` —— 1/9 个有
+- `Qwen3ASRLoader_DFT` —— 1/9 个有
+- `Qwen3ASRTranscribe_DFT` —— 1/9 个有
+- `RH_LLMAPI_Pro_Node` —— 1/9 个有
+- `WhisperTranscribe_` —— 1/9 个有
+- `easy int` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 0.35 | - | 1 | 100% |
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

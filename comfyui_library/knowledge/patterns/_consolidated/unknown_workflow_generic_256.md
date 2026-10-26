@@ -3,38 +3,36 @@ name: unknown_workflow_generic_256
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.945444
-common_nodes: [IndexTTS2Run, LoadAudio, PreviewAudio, SaveAudio, Text Multiline]
+coverage: 0.683778
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json, 音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json, 音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json, 音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json, 音频生成/音频生成/IndexTTS2声音克隆_音色_情感模仿_2066476662186930178.json, 音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json, 音频生成/音频生成/IndexTTS2音频克隆_1980212143188512770.json]
+members: [图片生成/图生图/全能图片 pro_2041696902638477314.json, 图片生成/图生图/去除万物_2041389430241497089.json, 图片生成/图生图/双图简单物品替换_2041382208111386626.json, 图片生成/图生图/图_2112740577002479618.json, 图片生成/图生图/室内一键夜景_2025210900440944641.json, 图片生成/文生图/全能图片V1-阿浩_2041058701087350785.json, 数字人/数字人/【测试1.0】数字人姿势生成_2046898289869590530.json, 数字人/数字人/【测试】数字人姿势生成_2046787149315444737.json, 数字人/数字人/数字人姿势生成_2046427092161667074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_256
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json、音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json、音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图片 pro_2041696902638477314.json、图片生成/图生图/去除万物_2041389430241497089.json、图片生成/图生图/双图简单物品替换_2041382208111386626.json、图片生成/图生图/图_2112740577002479618.json、图片生成/图生图/室内一键夜景_2025210900440944641.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `SaveAudioMP3` —— 1/9 个有
+- `JjkText` —— 5/9 个有
+- `ShowText|pysssss` —— 5/9 个有
+- `SetNode` —— 3/9 个有
+- `CM_PromptCombine_JK` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,85 +3,54 @@ name: text_to_image_lora_sampler_clip_171
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.8632
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MotionContext, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Text Multiline, Text To Image (mtb), UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy batchAnything, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9001
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图直出｜Minimax H3全自动小短片智能生成_2089824260796801025.json, 视频生成/图生视频/Minimax H3全自动一键小短片图生视频生成_2088180357941260289.json, 视频生成/图生视频/一键MV视频生成 图生视频快速创作处理工具_2099908541107752961.json, 视频生成/图生视频/一键MV音乐视频制作图生视频处理生成工具包_2101377930248146945.json, 视频生成/图生视频/一键MV音乐视频生成｜图生视频自动剪辑制作_2096300169238241282.json, 视频生成/图生视频/一键出MV大片｜图生视频音乐短片自动生成_2096563753335746561.json, 视频生成/图生视频/全自动小短片直出｜MiniMax H3一键生成成片_2089768190795669506.json, 视频生成/图生视频/图生视频｜一键生成专属MV大片，音乐视频零门槛搞定_2099851688155897857.json, 视频生成/文生视频/1分钟短片全自动｜MiniMax H3动漫短剧自动循环延长_2089814390295064578.json, 视频生成/文生视频/动漫短剧全自动V5｜海螺MinimaxH3自动循环延长直出_2089781259865255938.json]
+members: [图片生成/图生图/Topaz Video星光放大工作流，视频超分高清增强方案_2103590475516174338.json, 图片生成/图生图/Topaz Video高清放大5分钟搞定｜30秒视频4k超分，视频超分性价比之选_2100468705477091329.json, 图片生成/图生图/Topaz Video高清放大工作流非星光版，视频超分分辨率提升方案_2103591945984634882.json, 图片生成/图生图/Topaz星光高清放大模型数毛党最爱地表最强放大模型，视频超分高清工具_2107545542661328897.json, 图片生成/图生图/Topaz星光高清放大模型视频超分处理工作流_2101390536962830338.json, 图片生成/图生图/Topaz星光高清放大模型｜数毛党最爱地表最强，视频超分拉满_2107366759350235137.json, 图片生成/图生图/VOSR 2.0视频高清放大 分辨率提升画质增强_2104993429301321729.json, 图片生成/图生图/VOSR 2.0视频高清放大｜视频超分画质翻倍｜老片修复清晰可见_2104769134167945217.json, 图片生成/图生图/VOSR 2.0视频高清放大｜超分修复一步到位_2097892476068646913.json, 图片生成/文生图/VOSR2超分放大 文生图高清增强处理工具_2098709966747160578.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_171
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/文生图直出｜Minimax H3全自动小短片智能生成_2089824260796801025.json、视频生成/图生视频/Minimax H3全自动一键小短片图生视频生成_2088180357941260289.json、视频生成/图生视频/一键MV视频生成 图生视频快速创作处理工具_2099908541107752961.json、视频生成/图生视频/一键MV音乐视频制作图生视频处理生成工具包_2101377930248146945.json、视频生成/图生视频/一键MV音乐视频生成｜图生视频自动剪辑制作_2096300169238241282.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Topaz Video星光放大工作流，视频超分高清增强方案_2103590475516174338.json、图片生成/图生图/Topaz Video高清放大5分钟搞定｜30秒视频4k超分，视频超分性价比之选_2100468705477091329.json、图片生成/图生图/Topaz Video高清放大工作流非星光版，视频超分分辨率提升方案_2103591945984634882.json、图片生成/图生图/Topaz星光高清放大模型数毛党最爱地表最强放大模型，视频超分高清工具_2107545542661328897.json、图片生成/图生图/Topaz星光高清放大模型视频超分处理工作流_2101390536962830338.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `Text Multiline`
-- `Text To Image (mtb)`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptConcat`
-- `easy saveVideo`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `MiniMaxH3MotionContextTrim` —— 8/10 个有
-- `Text String Truncate` —— 6/10 个有
-- `ACE_AudioCrop` —— 5/10 个有
-- `ASRMW` —— 5/10 个有
-- `CR Text Concatenate` —— 5/10 个有
-- `DF_Float` —— 5/10 个有
-- `ExtractLinesByIndex` —— 5/10 个有
-- `GetAudioDurationFromAudio` —— 5/10 个有
-- `Int Literal` —— 5/10 个有
-- `PreviewAudio` —— 5/10 个有
-- `PrimitiveStringMultiline` —— 5/10 个有
-- `RH_LLMAPI_Pro_Node` —— 5/10 个有
-- `ShowText|pysssss` —— 5/10 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 5/10 个有
-- `easy clearCacheAll` —— 5/10 个有
-- `ttN concat` —— 5/10 个有
-- `ModelAttentionBackend` —— 2/10 个有
-- `RHHiddenNodes` —— 2/10 个有
-- `easy MiniMaxH3MotionContextHard` —— 1/10 个有
+- `LoadVideo` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `RH_Astra` —— 6/10 个有
+- `RunningHub Deepcleaner` —— 5/10 个有
+- `CreateVideo` —— 4/10 个有
+- `GetVideoComponents` —— 4/10 个有
+- `VOSR2ModelLoader` —— 4/10 个有
+- `VOSR2Upscale` —— 4/10 个有
+- `DF_Integer` —— 3/10 个有
+- `JWInteger` —— 3/10 个有
+- `QZ_ResolutionPreset` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `VHS_LoadVideo` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `VHS_VideoInfoLoaded` —— 2/10 个有
 
 ## 典型参数
 

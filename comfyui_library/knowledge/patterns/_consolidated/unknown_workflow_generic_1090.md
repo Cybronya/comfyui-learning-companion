@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1090
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.794667
-common_nodes: [AudioSeparation, IndexTTS2Run, LoadAudio, SaveAudio, String, Text Multiline]
+coverage: 0.8
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json, 音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json, 音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json]
+members: [图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json, 图片生成/文生图/文生图_2043222598250668034.json, 图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1090
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json、音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json、音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json、图片生成/文生图/文生图_2043222598250668034.json、图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioSeparation`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
-- `String`
-- `Text Multiline`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `easy showAnything` —— 1/3 个有
+- `ttN text3BOX_3WAYconcat` —— 1/3 个有
 
 ## 典型参数
 

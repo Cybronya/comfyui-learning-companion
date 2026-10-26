@@ -3,35 +3,29 @@ name: unknown_workflow_upscale_40
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SUPIR_Upscale, SaveImage]
+coverage: 1
+common_nodes: [LoadVideo, RH_TopazlabsVideoUpscale, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json, 图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json]
+members: [图片生成/图生图/TopazlabsVideoUpscale_2038488332732211201.json, 视频生成/图生视频/Topazai-视频超分_2062335525075382274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_40
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json、图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/TopazlabsVideoUpscale_2038488332732211201.json、视频生成/图生视频/Topazai-视频超分_2062335525075382274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：40%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `SUPIR_Upscale`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `LoadVideo`
+- `RH_TopazlabsVideoUpscale`
+- `SaveVideo`
 
 ## 典型参数
 

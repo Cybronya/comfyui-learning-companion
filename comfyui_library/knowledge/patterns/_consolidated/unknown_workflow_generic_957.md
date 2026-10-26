@@ -3,38 +3,38 @@ name: unknown_workflow_generic_957
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.783
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
+coverage: 0.769333
+common_nodes: [ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/汽车脚垫类构图 for minimax h3-许总专用_2092903841497960449.json, 图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json, 视频生成/图生视频/seedance2.0超能视频生成全流程发布_2034535724053172225.json]
+members: [图片生成/图生图/Flux Kontext三图模式_1938500281393176578.json, 图片生成/图生图/Flux Kontext双图模式_1937089697271173121.json, 图片生成/图生图/flux Kontext三图模式_1937094945591185409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_957
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/汽车脚垫类构图 for minimax h3-许总专用_2092903841497960449.json、图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json、视频生成/图生视频/seedance2.0超能视频生成全流程发布_2034535724053172225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext三图模式_1938500281393176578.json、图片生成/图生图/Flux Kontext双图模式_1937089697271173121.json、图片生成/图生图/flux Kontext三图模式_1937094945591185409.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
+- `ImageConcanate`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `PreviewImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `JoinStringMulti` —— 1/3 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
+- `LayerUtility: CropByMask V2` —— 2/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 2/3 个有
+- `RMBG` —— 2/3 个有
 
 ## 典型参数
 

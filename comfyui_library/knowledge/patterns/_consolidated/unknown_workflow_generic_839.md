@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_839
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.802333
-common_nodes: [ImageCompare, ImageScaleBy, LoadImage, SaveImage]
+coverage: 0.95
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json, comfyui-workflow-templates-json/utility_interpolation_image_upscale.json, comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json]
+members: [视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json, 视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json, 视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json, 视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_839
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json、comfyui-workflow-templates-json/utility_interpolation_image_upscale.json、comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json、视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json、视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json、视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageCompare`
-- `ImageScaleBy`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `TopazImageEnhance` —— 1/3 个有
-- `TopazImageEnhanceV2` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `RH_Sora2_I2V_Realistic` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

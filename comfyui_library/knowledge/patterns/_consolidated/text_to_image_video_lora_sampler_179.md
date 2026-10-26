@@ -3,17 +3,17 @@ name: text_to_image_video_lora_sampler_179
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.887333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, RHHiddenNodes, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.886333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json, 视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json]
+members: [视频生成/图生视频/360度旋转视频｜Wan2.1图生视频+Lora 3D卡通_2091231823711002625.json, 视频生成/文生视频/南风电影工作流｜文生图生视频生视频三模电影感大片生成_2092610385722564609.json, 视频生成/文生视频/通义万相文生视频｜Wan2.1人物角色设计生成_2091233285505642498.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json、视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/360度旋转视频｜Wan2.1图生视频+Lora 3D卡通_2091231823711002625.json、视频生成/文生视频/南风电影工作流｜文生图生视频生视频三模电影感大片生成_2092610385722564609.json、视频生成/文生视频/通义万相文生视频｜Wan2.1人物角色设计生成_2091233285505642498.json）
 
 - **类型**：Text To Image
 - **样本数**：3
@@ -25,35 +25,26 @@ source: knowledge_consolidation
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageFromBatch`
-- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy forLoopEnd`
-- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `WanVideoTeaCacheKJ` —— 2/3 个有
+- `CLIPVisionEncode` —— 1/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `EmptyHunyuanLatentVideo` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `NanFengH3MultiReferenceGeneratorV81` —— 1/3 个有
+- `WanImageToVideo` —— 1/3 个有
 
 ## 典型参数
 

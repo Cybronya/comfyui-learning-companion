@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_922
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8445
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PixaromaLabel, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, Switch any [Crystools], UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.7755
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageScaleToTotalPixelsX, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3  Fl2va 双时钟采样 Turbo LORA 工作流_2089383100567605249.json, 视频生成/文生视频/MiniMax H3 双时钟采样 Turbo LORA 双采集多模态工作流_2087545682738630657.json]
+members: [视频生成/图生视频/minimax-h3-首尾无缝循环视频_2085721665069211650.json, 视频生成/图生视频/poster animation_2108798159089651714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_922
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3  Fl2va 双时钟采样 Turbo LORA 工作流_2089383100567605249.json、视频生成/文生视频/MiniMax H3 双时钟采样 Turbo LORA 双采集多模态工作流_2087545682738630657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax-h3-首尾无缝循环视频_2085721665069211650.json、视频生成/图生视频/poster animation_2108798159089651714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
@@ -26,33 +26,25 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `ImageScaleToTotalPixelsX`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3ImageToVideo`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
+- `MiniMaxH3SigmaShift`
 - `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PT_H3ConcatAVLatent`
-- `PixaromaLabel`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `Switch any [Crystools]`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `llama_cpp_instruct_adv`
@@ -60,18 +52,18 @@ source: knowledge_consolidation
 - `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `LoadVideoUI` —— 1/2 个有
-- `MiniMaxH3ImageToVideo` —— 1/2 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
-- `Primitive boolean [Crystools]` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEEncodeAudio` —— 1/2 个有
-- `easy boolean` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `GetVideoComponents` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LayerUtility: TextJoin` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_SplitImages` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

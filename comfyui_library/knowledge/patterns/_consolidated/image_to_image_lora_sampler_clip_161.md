@@ -3,17 +3,17 @@ name: image_to_image_lora_sampler_clip_161
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.792
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ColorMatch, Fast Groups Bypasser (rgthree), FluxKontextMultiReferenceLatentMethod, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, KSamplerAdvanced, LatentSwitch, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, QwenMultiangleCameraNode, ReferenceLatent, SaveImage, TextCombinerTwo, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptList, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.789
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Simple Image Compare, FastFilmGrain, GetNode, ImageSharpen, ImpactFloat, JWImageResizeByLongerSide, KSampler, LoadImage, LoraLoader, ModelSamplingSD3, PatchModelPatcherOrder, PathchSageAttentionKJ, RH_Captioner, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy clearCacheAll, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/多角度，自由调整，变清晰，色调修正，极速版 multipleangles_2009957796439134210.json, "图片生成/图生图/最强多视角，任意角度，任意优化，变清晰，色调修正, 滑动柯基版。multiangles_2009962056258166785.json"]
+members: [图片生成/图生图/图片一键增加真实感_1979357472601313282.json, 图片生成/图生图/🥪【大炮摄影】WAN单帧洗图 图片一键增加真实感🥪_1946392997475807234.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_161
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多角度，自由调整，变清晰，色调修正，极速版 multipleangles_2009957796439134210.json、图片生成/图生图/最强多视角，任意角度，任意优化，变清晰，色调修正, 滑动柯基版。multiangles_2009962056258166785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片一键增加真实感_1979357472601313282.json、图片生成/图生图/🥪【大炮摄影】WAN单帧洗图 图片一键增加真实感🥪_1946392997475807234.json）
 
 - **类型**：Image To Image
 - **样本数**：2
@@ -23,56 +23,54 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKontextMultiReferenceLatentMethod`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `JjkText`
+- `CR Simple Image Compare`
+- `FastFilmGrain`
+- `GetNode`
+- `ImageSharpen`
+- `ImpactFloat`
+- `JWImageResizeByLongerSide`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentSwitch`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `QwenMultiangleCameraNode`
-- `ReferenceLatent`
+- `LoraLoader`
+- `ModelSamplingSD3`
+- `PatchModelPatcherOrder`
+- `PathchSageAttentionKJ`
+- `RH_Captioner`
 - `SaveImage`
-- `TextCombinerTwo`
-- `TextEncodeQwenImageEditPlus`
+- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptList`
+- `easy clearCacheAll`
 - `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 0.25 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

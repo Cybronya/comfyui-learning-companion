@@ -3,38 +3,34 @@ name: unknown_workflow_generic_732
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.82325
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2_official_ratio, SaveImage]
+coverage: 0.65625
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-image2 -文生图（贞贞版）_2049480689837412354.json, 图片生成/文生图/全能图片G-image2跑图（贞贞工坊API）_2052200484747915265.json, 图片生成/文生图/文生图超强工具工作流3.0升级版文字输出图片_2069458080454242305.json, 图片生成/文生图/自用_2051621105437294593.json]
+members: [图片生成/图生图/一键发型生成器_2016788282524311553.json, 图片生成/图生图/人物+卡通形象同框_2021392001899438081.json, 图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json, 图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_732
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G-image2 -文生图（贞贞版）_2049480689837412354.json、图片生成/文生图/全能图片G-image2跑图（贞贞工坊API）_2052200484747915265.json、图片生成/文生图/文生图超强工具工作流3.0升级版文字输出图片_2069458080454242305.json、图片生成/文生图/自用_2051621105437294593.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键发型生成器_2016788282524311553.json、图片生成/图生图/人物+卡通形象同框_2021392001899438081.json、图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json、图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_gpt_image_2_official_ratio`
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `LoadImage` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `RH_RhartImageNProEdit` —— 1/4 个有
-- `TT_img_enc` —— 1/4 个有
+- `Image Stitch` —— 1/4 个有
+- `JjkConcat` —— 1/4 个有
 
 ## 典型参数
 

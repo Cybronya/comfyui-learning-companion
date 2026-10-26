@@ -1,87 +1,102 @@
 ---
 name: image_to_image_sampler_clip_unet_2
 type: Image To Image
-frequency: 33
-level: moderate
-coverage: 0.981758
-common_nodes: [CLIPTextEncode, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 80
+level: strong
+coverage: 0.6761
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CropWithPadInfo_EditUtils, FlowMatchEulerDiscreteScheduler (Custom), ImpactExecutionOrderController, JjkText, JoinStrings, KSampler, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, QwenEditOutputExtractor_EditUtils, QwenEditTextEncode_EditUtils, SamplerCustom, SplitSigmasDenoise, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX -Kontext开源版-万物产品设计线稿上色_1941704882602852354.json, 图片生成/图生图/FLUX Kontext-DEV开源单图参考_1938430563936047106.json, 图片生成/图生图/FLUX.1Kontext.dev-单多图测试_1939156551691067393.json, 图片生成/图生图/FLUX2Klein_写实风格转真人3DCG质感风格_极速出图_2041643301173989378.json, 图片生成/图生图/Flux Kontext De-摄影灯光调节加速版+放大（单图）_1941107885030195202.json, 图片生成/图生图/Flux Kontext Dev 开源主体换背景电商工作流_1939119172565524481.json, 图片生成/图生图/Flux Kontext Dev 开源提取线稿_1938935399077044226.json, 图片生成/图生图/Flux Kontext Dev 开源线稿上色_1938867678918725634.json, 图片生成/图生图/Flux Kontext Dev-3D建模风格加速版+放大_1944571710064742401.json, 图片生成/图生图/Flux Kontext Dev-Q版人物变写实加速版+放大（单图）_1941085269749874690.json, 图片生成/图生图/Flux Kontext Dev-一句话换装加速版+放大_1941651089550950402.json, 图片生成/图生图/Flux Kontext Dev-万物拍立得风格加速版+放大_1944571779916419073.json, 图片生成/图生图/Flux Kontext Dev-万物法相加速版+放大_1944571766952087554.json, 图片生成/图生图/Flux Kontext Dev-万物转充气玩偶加速版+放大_1944571747574140930.json, 图片生成/图生图/Flux Kontext Dev-动漫转手绘风格加速版+放大_1943475948014759938.json, 图片生成/图生图/Flux Kontext Dev-动漫转现实风格加速版+放大_1943124583442497537.json, 图片生成/图生图/Flux Kontext Dev-卡通转真人加速版+放大_1943665908873302017.json, 图片生成/图生图/Flux Kontext Dev-图像转皮克斯风格加速版+放大_1944927820898553857.json, 图片生成/图生图/Flux Kontext Dev-图片添加特效加速版+放大_1944016908414779394.json, 图片生成/图生图/Flux Kontext Dev-电影胶片质感+放大_1943661527230713858.json, 图片生成/图生图/Flux Kontext Dev-素描转真人加速版+放大_1946911282425683969.json, 图片生成/图生图/Flux Kontext Dev-线稿上色加速版+放大_1943666773826633729.json, 图片生成/图生图/Flux Kontext Dev-转粘土动漫风格加速版+放大_1948939899769630722.json, 图片生成/图生图/Flux Kontext Dev-转黑白老旧照片加速版+放大_1947228789387501569.json, 图片生成/图生图/Flux Kontext Dev-风景变漫画风格加速版+放大（单图）_1941103747567403009.json, 图片生成/图生图/Flux Kontext Dev-饰品珠宝金属精修加速版+放大_1944315412693569537.json, 图片生成/图生图/Flux Kontext Dev-马赛克消除加速版+放大_1943467504184270849.json, 图片生成/图生图/Flux Kontext Dev-高品质绘画风格转变加速版+放大_1947113753634189314.json, 图片生成/图生图/Flux Kontext Dev-黑白漫画转3D彩色漫画加速版+放大_1943957498988728321.json, 图片生成/图生图/Flux Kontext Dev一句话图生图加速版+放大（单图）_1939584231284645890.json, 图片生成/图生图/Flux Kontext Dev一句话图生图加速版+放大（双图）_1939560347982544897.json, 图片生成/图生图/Flux Kontext Dev万物消除加速版+放大（单图）_1940257498471288833.json, 图片生成/图生图/Flux Kontext Dev图片变机械风格加速版+放大（单图）_1940935206633369601.json]
+members: [图片生成/图生图/(转生)动漫转真人ZI洗图改（Z-image+FlowMatch+加密）_2003734540910772225.json, 图片生成/图生图/(转生)动漫转真人ZI洗图改（Z-image+FlowMatch+加密）_2073399824072065024.json, 图片生成/图生图/Z-image漫转真_2052766840354549761.json, 图片生成/图生图/Z-image超真实动漫转真人_2045013231713914882.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2020742565858910210.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2028994603617095681.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2034542831737511937.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2037778712611000321.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2038537190786994177.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2038549922110246914.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2039993924848197633.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2042079457392988161.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2042119386886053889.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2043858233428811778.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046048781807919106.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046124747448127489.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046389860121972738.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046415353332375553.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046467127493791746.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2046490075462111233.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2047114824982732801.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2047570107924226049.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2047602877002158081.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2048683550781739010.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2049649107152674817.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2049654164933890049.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2049657069137088513.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2049762158044520449.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2051854784205991938.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2051936134632091650.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2052670434998538241.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2053648085028487170.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2053995010219094017.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2053998238864289794.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2054090409218977793.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2054100902990106626.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2054104271280459777.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2054107361773670401.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2054369138969194498.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2055189824977555457.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2061243272831528962.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2061737418767814657.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2061999757316415489.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2062015154451206145.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2062058479946395649.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2062779042985766913.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2062793582628655105.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2063793522964258818.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2063868226160914433.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2064544431746932737.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2064557971157377025.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2064959980515708929.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2065369054801645569.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2065713882869616641.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2066396483338985474.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2066404115391008769.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2066686362606194689.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2067055338666418178.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2067059051892142082.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2067064840711131138.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2067794788367290369.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2068893303428435969.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2068982546326708225.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2070037021296513025.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2070416551760719873.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2071478792383717377.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2071876269809168385.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2080094971117531138.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2089230693682475009.json, 图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2096858815613460481.json, 图片生成/图生图/动漫转真人ZIT_2061728138257850370.json, 图片生成/图生图/动漫转真人ZIT自选lora_2061732223900020738.json, 图片生成/图生图/动漫转真人ZI洗图改（Z-image+FlowMatch）_2048364671035510785.json, 图片生成/图生图/动漫转真人Zimage洗图改（Z-image+FlowMatch+加密）_2048227814469537794.json, 图片生成/图生图/古风杂志美女，去AI感Zip格式_2062832779217432577.json, 图片生成/图生图/异域风情一键换装，去AI感Zip格式_2062774066376962049.json, 图片生成/图生图/韩系清冷辣妹头像免费生成，去AI感Zip格式_2062373084283359233.json, 图片生成/图生图/韩系清冷辣妹头像免费生成，去AI感Zip格式_2062417341190852610.json, 图片生成/文生图/Z-image超真实动漫转真人，去AI感Zip格式_2062022489542320129.json, 图片生成/文生图/动漫脸秒变真人，AI感全消，Z-image工作流直接拿+全节点注释_2055215300777398274.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/FLUX -Kontext开源版-万物产品设计线稿上色_1941704882602852354.json、图片生成/图生图/FLUX Kontext-DEV开源单图参考_1938430563936047106.json、图片生成/图生图/FLUX.1Kontext.dev-单多图测试_1939156551691067393.json、图片生成/图生图/FLUX2Klein_写实风格转真人3DCG质感风格_极速出图_2041643301173989378.json、图片生成/图生图/Flux Kontext De-摄影灯光调节加速版+放大（单图）_1941107885030195202.json…）
+> 由 `engine/knowledge_consolidation` 从 80 个 workflow 归纳得出（图片生成/图生图/(转生)动漫转真人ZI洗图改（Z-image+FlowMatch+加密）_2003734540910772225.json、图片生成/图生图/(转生)动漫转真人ZI洗图改（Z-image+FlowMatch+加密）_2073399824072065024.json、图片生成/图生图/Z-image漫转真_2052766840354549761.json、图片生成/图生图/Z-image超真实动漫转真人_2045013231713914882.json、图片生成/图生图/Z-image超真实动漫转真人，去AI感Zip格式_2020742565858910210.json…）
 
 - **类型**：Image To Image
-- **样本数**：33
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：80
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
+全部 80 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
+- `FlowMatchEulerDiscreteScheduler (Custom)`
+- `ImpactExecutionOrderController`
+- `JjkText`
+- `JoinStrings`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `ReferenceLatent`
-- `SaveImage`
+- `ModelSamplingAuraFlow`
+- `QwenEditOutputExtractor_EditUtils`
+- `QwenEditTextEncode_EditUtils`
+- `SamplerCustom`
+- `SplitSigmasDenoise`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 32/33 个有
-- `DualCLIPLoader` —— 32/33 个有
-- `ImageConcatMulti` —— 31/33 个有
-- `RH_Translator` —— 31/33 个有
-- `ImageStitch` —— 30/33 个有
-- `Text Multiline` —— 30/33 个有
-- `PMRF` —— 29/33 个有
-- `NunchakuFluxDiTLoader` —— 26/33 个有
-- `NunchakuFluxLoraLoader` —— 26/33 个有
-- `LoraLoaderModelOnly` —— 11/33 个有
-- `UnetLoaderGGUF` —— 8/33 个有
-- `ShowText|pysssss` —— 5/33 个有
-- `TeaCache` —— 5/33 个有
-- `CR Prompt Text` —— 3/33 个有
-- `MagCache` —— 3/33 个有
-- `ImageResizeKJv2` —— 2/33 个有
-- `CLIPLoader` —— 1/33 个有
-- `ETN_Translate` —— 1/33 个有
-- `GoogleTranslateTextNode` —— 1/33 个有
-- `Image Comparer (rgthree)` —— 1/33 个有
-- `PreviewImage` —— 1/33 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/33 个有
+- `GetNode` —— 79/80 个有
+- `SetNode` —— 79/80 个有
+- `llama_cpp_instruct_adv` —— 76/80 个有
+- `llama_cpp_model_loader` —— 76/80 个有
+- `llama_cpp_parameters` —— 76/80 个有
+- `llama_cpp_unload_model` —— 76/80 个有
+- `CompressImages` —— 75/80 个有
+- `LoraLoaderModelOnly` —— 74/80 个有
+- `Fast Bypasser (rgthree)` —— 73/80 个有
+- `easy loraStack` —— 7/80 个有
+- `easy loraStackApply` —— 7/80 个有
+- `SaveImage` —— 6/80 个有
+- `Dapao_LlamaCaption` —— 3/80 个有
+- `Image Filter Adjustments` —— 3/80 个有
+- `PrimitiveBoolean` —— 3/80 个有
+- `LoraLoader` —— 2/80 个有
+- `RHHiddenNodes` —— 2/80 个有
+- `TT_img_enc_v2` —— 2/80 个有
+- `ZML_SwitchOutput` —— 2/80 个有
+- `easy saveText` —— 2/80 个有
+- `Dapao_LlamaChat` —— 1/80 个有
+- `easy ifElse` —— 1/80 个有
+- `workflow>1` —— 1/80 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 30 | 33 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 33 | 100% |
-| 采样算法 | euler | - | 33 | 100% |
-| 调度器 | simple | - | 33 | 100% |
-| 重绘幅度 | 1 | 0.99 - 1 | 33 | 100% |
-| 宽度 | 832x1216 (0.68) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 8 | 80 | 85% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 80 | 100% |
+| 采样算法 | euler | - | 80 | 100% |
+| 调度器 | beta | - | 80 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 80 | 100% |
+| LoRA 模型强度 | 0.5 | - | 2 | 100% |
+| LoRA 文本强度 | 0.5 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 80/80 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 30，33 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，33 个样本，一致性 100%
-- 调度器 最常用 simple，33 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.99 - 1，33 个样本，取值集中（一致性 100%）
-- 高发问题（18/33 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，80 个样本，取值集中（一致性 85%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，80 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，80 个样本，一致性 100%
+- 调度器 最常用 beta，80 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，80 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（80/80 个样本）：Steps较低可能导致细节不足

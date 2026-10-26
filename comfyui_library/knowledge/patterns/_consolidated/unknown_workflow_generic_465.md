@@ -3,34 +3,34 @@ name: unknown_workflow_generic_465
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.746833
-common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S文生视频15秒_2014504346054041601.json, 视频生成/文生视频/全能视频S文生视频15秒（0.2元_次）_1979231948419796994.json, 视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json, 视频生成/文生视频/全能视频S文生视频_1973998944743198722.json, 视频生成/文生视频/全能视频S文生视频openai最新模型0.5元_次（国庆前5次免费）_1973577884017233922.json, 视频生成/文生视频/最新全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973574689153003522.json]
+members: [图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json, 图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json, 图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json, 图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json, 图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json, 图片生成/图生图/建筑灯光改造（全能图像编辑）_2015618296388784130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_465
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频15秒_2014504346054041601.json、视频生成/文生视频/全能视频S文生视频15秒（0.2元_次）_1979231948419796994.json、视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json、视频生成/文生视频/全能视频S文生视频_1973998944743198722.json、视频生成/文生视频/全能视频S文生视频openai最新模型0.5元_次（国庆前5次免费）_1973577884017233922.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json、图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json、图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json、图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json、图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Sora2_T2V`
-- `SaveVideo`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/6 个有
-- `Text Concatenate` —— 2/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `CR Text` —— 4/6 个有
+- `ImageConcanate` —— 4/6 个有
+- `CR Text Concatenate` —— 1/6 个有
 
 ## 典型参数
 

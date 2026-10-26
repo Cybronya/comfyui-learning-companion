@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_281
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.813375
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.982889
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json, 图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json, 图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json, 图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json, 图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json, 图片生成/文生图/全能图片G-image-2_2047136798891057153.json, 图片生成/文生图/鸡皮提 Image 2.0图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046794740380733442.json, 图片生成/文生图/鸡皮提 Image 2.0文生图_图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046786207207657473.json]
+members: [音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json, 音频生成/音频生成/双人对话tts_2070409633616982018.json, 音频生成/音频生成/双人对话语音克隆_2063192858802343937.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_1932106715766882305.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_2004380097404698625.json, 音频生成/音频生成/声音克隆_1993713525206040578.json, 音频生成/音频生成/视频生成-生成配音-情绪_2014166227136028673.json, 音频生成/音频生成/视频生成-生成配音_2012397133353193473.json, 音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_281
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json、图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json、图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json、图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json、图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json、音频生成/音频生成/双人对话tts_2070409633616982018.json、音频生成/音频生成/双人对话语音克隆_2063192858802343937.json、音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_1932106715766882305.json、音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_2004380097404698625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `孤海注释` —— 5/8 个有
-- `CR Text` —— 4/8 个有
-- `RH_RhartImageG2TextToImage` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `忽略多组孤海` —— 1/8 个有
+- `PreviewAudio` —— 3/9 个有
+- `AudioSeparation` —— 1/9 个有
 
 ## 典型参数
 

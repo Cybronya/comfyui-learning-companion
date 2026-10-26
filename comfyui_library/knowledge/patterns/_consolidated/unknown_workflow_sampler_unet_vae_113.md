@@ -3,61 +3,58 @@ name: unknown_workflow_sampler_unet_vae_113
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.819
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ImageScaleToTotalPixels, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.750111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_minimax_h3_i2v_2087451619603603457.json, 视频生成/图生视频/video_minimax_h3_i2v_RH_2096548199573049346.json, 视频生成/图生视频/video_minimax_h3_i2v_fast_2085261516613443585.json, 视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2086152939638452226.json, 视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2sampling_2086306419887923201.json, 视频生成/图生视频/【开源】minimax_h3 图生视频_2084171369004232706.json, 视频生成/图生视频/【老金驿站】MinimaxH3首尾帧视频工作流_2084263524121014274.json, 视频生成/图生视频/电商尾帧生视频  minimax h3 加速版_2085731924324216833.json, 视频生成/图生视频/电商尾帧生视频  minimax h3 加速版_2087164469729386498.json]
+members: [视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084634965546987521.json, 视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084974736878161922.json, 视频生成/图生视频/MiniMaxH3 首尾帧生视频！加速版！艾橘溪_2084497876612370434.json, 视频生成/图生视频/MiniMaxH3+首尾帧生视频！加速版_2085236338848260097.json, 视频生成/图生视频/MiniMax_H3_i2v_2088871530771083265.json, 视频生成/图生视频/Minimax-h3-图生视频-首尾帧生视频_2084880407887179778.json, 视频生成/图生视频/首尾帧生视频 MiniMaxH3+！加速版_2086649496523591681.json, 视频生成/文生视频/Minimax-h3-文生视频_2084913245437128706.json, 视频生成/文生视频/MinimaxH3-文生视频（高质量）_2085617922352963586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_113
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/video_minimax_h3_i2v_2087451619603603457.json、视频生成/图生视频/video_minimax_h3_i2v_RH_2096548199573049346.json、视频生成/图生视频/video_minimax_h3_i2v_fast_2085261516613443585.json、视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2086152939638452226.json、视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2sampling_2086306419887923201.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084634965546987521.json、视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084974736878161922.json、视频生成/图生视频/MiniMaxH3 首尾帧生视频！加速版！艾橘溪_2084497876612370434.json、视频生成/图生视频/MiniMaxH3+首尾帧生视频！加速版_2085236338848260097.json、视频生成/图生视频/MiniMax_H3_i2v_2088871530771083265.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ImageScaleToTotalPixels`
+- `CreateVideo`
 - `KSamplerSelect`
 - `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `BasicGuider` —— 7/9 个有
-- `GetImageSize` —— 7/9 个有
-- `ResolutionSelector` —— 6/9 个有
-- `PathchSageAttentionKJ` —— 5/9 个有
-- `VHS_VideoCombine` —— 5/9 个有
-- `CreateVideo` —— 4/9 个有
-- `SaveVideo` —— 4/9 个有
-- `EasyCache` —— 3/9 个有
-- `SolAttnPatch` —— 3/9 个有
-- `CFGGuider` —— 2/9 个有
-- `ConditioningZeroOut` —— 2/9 个有
-- `JjkText` —— 2/9 个有
-- `LoraLoaderModelOnly` —— 2/9 个有
-- `PreviewAny` —— 2/9 个有
-- `RH_Translator` —— 2/9 个有
-- `DisableNoise` —— 1/9 个有
-- `SplitSigmas` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `YK_LoadImageFromURL` —— 1/9 个有
+- `GetNode` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `LoadImage` —— 7/9 个有
+- `PathchSageAttentionKJ` —— 7/9 个有
+- `ImageResizeKJv2` —— 6/9 个有
+- `AILab_QwenVL_Advanced` —— 5/9 个有
+- `Image Stitch` —— 5/9 个有
+- `ImageScaleDownToSize` —— 5/9 个有
+- `LayerUtility: PurgeVRAM` —— 5/9 个有
+- `easy positive` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 3/9 个有
+- `EasyCache` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Seed (rgthree)` —— 1/9 个有
 
 ## 典型参数
 

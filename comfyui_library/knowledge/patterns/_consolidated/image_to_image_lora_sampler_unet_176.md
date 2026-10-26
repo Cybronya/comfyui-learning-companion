@@ -3,34 +3,33 @@ name: image_to_image_lora_sampler_unet_176
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.893333
-common_nodes: [CLIPLoader, ConditioningZeroOut, Float, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PixelSmileConditioning, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.853667
+common_nodes: [CFGNorm, CLIPLoader, CR Text, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Score All method-最强人物表情控制-PixelSmile-图像编辑工作流_2041512614269820929.json, 图片生成/图生图/人物表情控制_PixelSmile图像编辑_2040037124291956738.json, 图片生成/图生图/人物表情控制_PixelSmile图像编辑_2079842315992125442.json]
+members: [图片生成/图生图/AI口播人物-编辑_2026997964123676674.json, 图片生成/图生图/Edit2511产品多角度转换（配批量提示词）_2009552317019856898.json, 图片生成/图生图/Qianwen Edit 2511  单图新年贺卡编辑稳定版_2011353251496599553.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_176
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Score All method-最强人物表情控制-PixelSmile-图像编辑工作流_2041512614269820929.json、图片生成/图生图/人物表情控制_PixelSmile图像编辑_2040037124291956738.json、图片生成/图生图/人物表情控制_PixelSmile图像编辑_2079842315992125442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI口播人物-编辑_2026997964123676674.json、图片生成/图生图/Edit2511产品多角度转换（配批量提示词）_2009552317019856898.json、图片生成/图生图/Qianwen Edit 2511  单图新年贺卡编辑稳定版_2011353251496599553.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `Float`
+- `CR Text`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `PixelSmileConditioning`
 - `SaveImage`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
@@ -39,23 +38,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `CustomAddLabel` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `PromptBatchQueue` —— 1/3 个有
+- `Qwen3_VQA_Plus` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `TextEncodeQwenImageEdit` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| 采样步数 | 6 | 5 - 8 | 3 | 80% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | res_multistep | - | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
 | 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
@@ -67,9 +69,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 5 - 8，3 个样本，取值集中（一致性 80%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，3 个样本，一致性 100%
+- 采样算法 最常用 euler，3 个样本，一致性 100%
 - 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

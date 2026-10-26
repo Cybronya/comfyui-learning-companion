@@ -1,68 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_308
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.563286
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+frequency: 8
+level: moderate
+coverage: 0.555125
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json, 视频生成/图生视频/SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json, 视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2007322836368625665.json, 视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json, 视频生成/图生视频/SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作流讲解_2006246427911000065.json, 视频生成/图生视频/SVI全自动长视频生成工作流_2005886076633968641.json, 视频生成/图生视频/Wan 2.2 SVI 2.0 PRO 长视频最新版！_2005892831866744833.json]
+members: [视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json, 视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json, 视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json, 视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json, 视频生成/图生视频/Wan2.2 Animate 角色替换视频动作迁移 KJ加速版-StarAI_1969526770116554754.json, 视频生成/图生视频/Wan2.2 Animate人物迁移 单_多人舞蹈影视替换 （点编辑器遮罩）_1971057186338152449.json, 视频生成/图生视频/多人镜头替换工具-MM_1970004050341208065.json, 视频生成/图生视频/超精准多人视频替换(支持3DCG和真人)_20251014_1976173547762647041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_308
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json、视频生成/图生视频/SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json、视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2007322836368625665.json、视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json、视频生成/图生视频/SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作流讲解_2006246427911000065.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json、视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json、视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json、视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json、视频生成/图生视频/Wan2.2 Animate 角色替换视频动作迁移 KJ加速版-StarAI_1969526770116554754.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
+- **样本数**：8
+- **可信度**：中等可信
 - **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `KSamplerAdvanced`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `PixelPerfectResolution`
 - `SetNode`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `ShowText|pysssss` —— 4/7 个有
-- `easy indexAnything` —— 4/7 个有
-- `easy promptLine` —— 4/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `CM_IntToFloat` —— 1/7 个有
-- `CRT_StringSplitter` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `RH_LLMAPI_Pro_Node` —— 1/7 个有
-- `easy mathInt` —— 1/7 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `BlockifyMask` —— 5/8 个有
+- `DrawMaskOnImage` —— 5/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `Int` —— 5/8 个有
+- `JWInteger` —— 5/8 个有
+- `GrowMask` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `CR Text` —— 3/8 个有
+- `DownloadAndLoadSAM2Model` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `LayerUtility: PurgeVRAM` —— 3/8 个有
+- `PointsEditor` —— 3/8 个有
+- `Sam2Segmentation` —— 3/8 个有
+- `VHS_VideoInfo` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `INTConstant` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `WanVideoContextOptions` —— 2/8 个有
+- `easy showAnything` —— 2/8 个有
+- `AILab_MiniCPM_4_V` —— 1/8 个有
+- `DilateErodeMask` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `LayerMask: LoadFlorence2Model` —— 1/8 个有
+- `LayerMask: ObjectDetectorFL2` —— 1/8 个有
+- `LayerMask: SAM2VideoUltra` —— 1/8 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 1/8 个有
+- `Mask Invert` —— 1/8 个有
+- `MaskSmooth+` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `OpenDWPose_JK` —— 1/8 个有
+- `OpenposePreprocessor` —— 1/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `Seed_` —— 1/8 个有
+- `ToFloat` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 86% |
-| Prompt 约束强度(CFG) | 8 | 8 - 14 | 7 | 76% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,9 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 86%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 14，7 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

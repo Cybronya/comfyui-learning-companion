@@ -1,96 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_462
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.474
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, EmptySD3LatentImage, Evaluate Integers, FluxKontextMultiReferenceLatentMethod, GetNode, INTConstant, ImageBatch, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, SetNode, SimpleMath+, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy cleanGpuUsed, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.9036
+common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/人物对口型V3加速版！_2039986432743317505.json, 视频生成/图生视频/Ai女友对口型60秒版！InfiniteTalkV3升级！B站艾橘溪_2018195510116491266.json, 视频生成/文生视频/图生视频超长60秒  Ai女友对口型 InfiniteTalk 升级版_2059436711733719042.json, 视频生成/文生视频/指定人物动作 全能图生视频新版 超长时间视频生成_2061322291950211073.json]
+members: [数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json, 视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json, 视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json, 视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json, 视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_462
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物对口型V3加速版！_2039986432743317505.json、视频生成/图生视频/Ai女友对口型60秒版！InfiniteTalkV3升级！B站艾橘溪_2018195510116491266.json、视频生成/文生视频/图生视频超长60秒  Ai女友对口型 InfiniteTalk 升级版_2059436711733719042.json、视频生成/文生视频/指定人物动作 全能图生视频新版 超长时间视频生成_2061322291950211073.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json、视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json、视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json、视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json、视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：47%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CFGNorm`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `Evaluate Integers`
-- `FluxKontextMultiReferenceLatentMethod`
-- `GetNode`
-- `INTConstant`
-- `ImageBatch`
-- `ImageFromBatch`
+全部 5 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `JjkText`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
 - `PreviewImage`
-- `PrimitiveInt`
-- `SetNode`
-- `SimpleMath+`
-- `TextEncodeQwenImageEditPlus`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `RH_RhartVideoGImageToVideo` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `Qwen3_VQA` —— 2/5 个有
+- `WanVideoTorchCompileSettings` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `WanVideoContextOptions` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 44/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（44/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,60 +3,48 @@ name: image_to_image_lora_sampler_clip_85
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.716333
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CLIPTextEncode, CR Latent Input Switch, CR Text Concatenate, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), FastCanvas, FastCanvasTool, ImageConcatMulti, ImageScaleToMegapixels, Int, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, Lora Loader Stack (rgthree), ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, SaveImage, SeedVR2GGUF, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageConcat, easy imageRemBg]
+coverage: 0.927333
+common_nodes: [AnimaLLLiteApply, CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PreviewImage, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI短剧角色站位-Qwen-image-edit2509 Plus自动or手动调整位置 多图融合生图_1961293749953433602.json, 图片生成/图生图/AI短剧角色站位-Qwen-image-edit2509 Plus自动or手动调整位置 多图融合生图_2010366718249537538.json, 图片生成/图生图/电商模特商品展示（可任意调整人物、物品位置大小）Qwen-image-edit2509_1993354492504637442.json]
+members: [图片生成/图生图/Anima -动漫局部重绘_2061789555824615425.json, 图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json, 图片生成/图生图/Anima-动漫局部重绘+图像反推_2069046278197174274.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_85
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI短剧角色站位-Qwen-image-edit2509 Plus自动or手动调整位置 多图融合生图_1961293749953433602.json、图片生成/图生图/AI短剧角色站位-Qwen-image-edit2509 Plus自动or手动调整位置 多图融合生图_2010366718249537538.json、图片生成/图生图/电商模特商品展示（可任意调整人物、物品位置大小）Qwen-image-edit2509_1993354492504637442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Anima -动漫局部重绘_2061789555824615425.json、图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json、图片生成/图生图/Anima-动漫局部重绘+图像反推_2069046278197174274.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGNorm`
+- `AnimaLLLiteApply`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Latent Input Switch`
-- `CR Text Concatenate`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `FastCanvas`
-- `FastCanvasTool`
-- `ImageConcatMulti`
-- `ImageScaleToMegapixels`
-- `Int`
-- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `ModelSamplingAuraFlow`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SeedVR2GGUF`
-- `TextEncodeQwenImageEditPlus`
+- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageConcat`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Wuji360Panorama` —— 1/3 个有
+- `Mask Fill Holes` —— 2/3 个有
+- `MaskFillHoles` —— 1/3 个有
+- `ToriiGateT8_GroundingBuilder` —— 1/3 个有
+- `ToriiGateT8_LlamaCppVisionGenerate` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -64,8 +52,8 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 采样步数 | 8 | 8 - 8 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
@@ -78,7 +66,7 @@ source: knowledge_consolidation
 
 - 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

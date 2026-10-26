@@ -1,36 +1,46 @@
 ---
 name: unknown_workflow_generic_655
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.764
-common_nodes: [DoubaoImageGenerator, DoubaoSizePreset, LoadImage, SaveImage]
+coverage: 0.9866
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 4.0 API_1984104731574501378.json, 图片生成/图生图/豆包Seedream 4.0超强文生图工作流_1988913135945920513.json, 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json, 图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json]
+members: [音频生成/音频生成/Qwen3 TTS 多功能配音工具_2017199745453789186.json, 音频生成/音频生成/Qwen3 TTS配音自由，一键实现剧情对话、多人对话+声音克隆+声音设计_1953194744458506242.json, 音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2053368851294896130.json, 音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2068528520090963969.json, 音频生成/音频生成/👾怪獸-Qwen3 TTS多人对话+声音克隆+声音设计👾_2058092957093416961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_655
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 API_1984104731574501378.json、图片生成/图生图/豆包Seedream 4.0超强文生图工作流_1988913135945920513.json、图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json、图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 多功能配音工具_2017199745453789186.json、音频生成/音频生成/Qwen3 TTS配音自由，一键实现剧情对话、多人对话+声音克隆+声音设计_1953194744458506242.json、音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2053368851294896130.json、音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2068528520090963969.json、音频生成/音频生成/👾怪獸-Qwen3 TTS多人对话+声音克隆+声音设计👾_2058092957093416961.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DoubaoImageGenerator`
-- `DoubaoSizePreset`
-- `LoadImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `TextBox` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,113 +3,67 @@ name: unknown_workflow_lora_sampler_clip_38
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.7558
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveStringMultiline, PromptRelaySmartEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoader, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int, easy lengthAnything, easy timelineEditor, easy timelineInfoOutput, easy timelineSegmentOutput]
+coverage: 0.5478
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 单段R2V多图参考_2063654070711312385.json, 视频生成/图生视频/LTX2.3 多图参考_2079411345166004225.json, 视频生成/图生视频/LTX2.3 多图参考循环版，平替即梦Seedance2.0_2079411679590445058.json, 视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2054441916867063810.json, 视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2063617666866302978.json, 视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2064600495154618369.json, 视频生成/图生视频/LTX2.3 时间轴+全能参考多功能工作流_2063620743581229058.json, 视频生成/图生视频/LTX2.3 时间轴+数字人多功能工作流_2068353923278270465.json, 视频生成/图生视频/LTX2.3 时间轴+数字人多功能工作流_2072320192541192193.json, 视频生成/图生视频/LTX2.3多图参考（生视频）_2076688851497742338.json]
+members: [数字人/数字人/Berinini版-无限时长-带货数字人替换_2074707187401838593.json, 视频生成/图生视频/Bernini 角色替换_2069319914443333634.json, 视频生成/图生视频/video_wan2_2_bernini_rv2v_add_2064247414655115266.json, 视频生成/图生视频/video_wan2_2_bernini_rv2v_replace_2064232122084319234.json, 视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json, 视频生成/文生视频/video_wan2_2_bernini_i2i_2064270918700060673.json, 视频生成/文生视频/video_wan2_2_bernini_multi_r2v_2064268091416207362.json, 视频生成/文生视频/video_wan2_2_bernini_r2v_2064265816681570306.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_change_style_2064258770699636737.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_changebg_2064251615900688385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 单段R2V多图参考_2063654070711312385.json、视频生成/图生视频/LTX2.3 多图参考_2079411345166004225.json、视频生成/图生视频/LTX2.3 多图参考循环版，平替即梦Seedance2.0_2079411679590445058.json、视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2054441916867063810.json、视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2063617666866302978.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Berinini版-无限时长-带货数字人替换_2074707187401838593.json、视频生成/图生视频/Bernini 角色替换_2069319914443333634.json、视频生成/图生视频/video_wan2_2_bernini_rv2v_add_2064247414655115266.json、视频生成/图生视频/video_wan2_2_bernini_rv2v_replace_2064232122084319234.json、视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
 - `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
-- `PromptRelaySmartEncode`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy int`
-- `easy lengthAnything`
-- `easy timelineEditor`
-- `easy timelineInfoOutput`
-- `easy timelineSegmentOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 8/10 个有
-- `LTXAddVideoICLoRAGuide` —— 8/10 个有
-- `LTXVMakeRefVideo` —— 8/10 个有
-- `PreviewAny` —— 8/10 个有
-- `PrimitiveInt` —— 8/10 个有
-- `SimpleMath+` —— 8/10 个有
-- `StringReplace` —— 8/10 个有
-- `easy batchAnything` —— 8/10 个有
-- `easy compare` —— 8/10 个有
-- `easy indexAnything` —— 8/10 个有
-- `easy mergeVideosFromPaths` —— 8/10 个有
-- `easy promptLine` —— 8/10 个有
-- `easy saveVideo` —— 8/10 个有
-- `easy string` —— 8/10 个有
-- `easy timelineSegmentCount` —— 8/10 个有
-- `LTX2SamplingPreviewOverride` —— 7/10 个有
-- `VAELoaderKJ` —— 7/10 个有
-- `1hew_MultiStringJoin` —— 6/10 个有
-- `GetImageRangeFromBatch` —— 5/10 个有
-- `LoadImage` —— 5/10 个有
-- `easy makeImageList` —— 5/10 个有
-- `Anything Everywhere` —— 3/10 个有
-- `ComfyMathExpression` —— 3/10 个有
-- `GetNode` —— 3/10 个有
-- `LTXVChunkFeedForward` —— 3/10 个有
-- `MelBandRoFormerModelLoader` —— 3/10 个有
-- `MelBandRoFormerSampler` —— 3/10 个有
-- `ModelPatchTorchSettings` —— 3/10 个有
-- `SetNode` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `LTX2_NAG` —— 2/10 个有
-- `LTXFaceDetector` —— 2/10 个有
-- `LTXLatentAnchorAware` —— 2/10 个有
-- `LTXLikenessAnchor` —— 2/10 个有
-- `LTXLikenessGuide` —— 2/10 个有
-- `LTXTiledSampler` —— 2/10 个有
-- `LTXVImgToVideoInplace` —— 2/10 个有
-- `LTXVLatentUpsamplerTiled` —— 2/10 个有
-- `LatentUpscaleModelLoader` —— 2/10 个有
-- `LoadAudio` —— 2/10 个有
-- `MathExpression|pysssss` —— 2/10 个有
-- `Text Concatenate` —— 2/10 个有
-- `easy makeAudioList` —— 2/10 个有
-- `Any Switch (rgthree)` —— 1/10 个有
+- `BerniniConditioning` —— 9/10 个有
+- `ModelSamplingSD3` —— 9/10 个有
+- `VHS_LoadVideo` —— 9/10 个有
+- `VHS_VideoCombine` —— 9/10 个有
+- `WanVideoNAG` —— 9/10 个有
+- `CFGZeroStar` —— 8/10 个有
+- `CLIPVisionLoader` —— 8/10 个有
+- `GetNode` —— 8/10 个有
+- `SetNode` —— 8/10 个有
+- `BatchImagesNode` —— 7/10 个有
+- `CLIPVisionEncode` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `VHS_VideoInfoLoaded` —— 1/10 个有
+- `WanContextWindowsManual` —— 1/10 个有
+- `WanImageToVideo` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 10 | 100% |
-| 高度 | 24 | 24 - 24 | 10 | 100% |
+| 采样步数 | fixed | - | 10 | 70% |
+| Prompt 约束强度(CFG) | 6 | 6 - 10 | 10 | 81% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | lcm | - | 10 | 80% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
@@ -117,5 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，10 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，10 个样本，一致性 70%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 10，10 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，10 个样本，一致性 80%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%

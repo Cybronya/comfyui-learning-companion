@@ -1,32 +1,32 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_38
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.845
-common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 1
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/模特局部修改-Flux_1958484921721503746.json, 图片生成/图生图/灵弦无痕扩图工作流_1932358260127690753.json, 图片生成/图生图/电商图片扩图 FluxOneReward_1992130460604231682.json, 图片生成/图生图/👾怪獸-OneReward局部重绘👾_2014683004244860930.json]
+members: [图片生成/图生图/41.tonnie-One Reward换脸（不如重绘像）_2004262619282370562.json, 图片生成/图生图/7.tonnie-flux-fill扩图_1992165551143276545.json, 图片生成/图生图/FLUX 超强扩图_1910955503214653442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/模特局部修改-Flux_1958484921721503746.json、图片生成/图生图/灵弦无痕扩图工作流_1932358260127690753.json、图片生成/图生图/电商图片扩图 FluxOneReward_1992130460604231682.json、图片生成/图生图/👾怪獸-OneReward局部重绘👾_2014683004244860930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/41.tonnie-One Reward换脸（不如重绘像）_2004262619282370562.json、图片生成/图生图/7.tonnie-flux-fill扩图_1992165551143276545.json、图片生成/图生图/FLUX 超强扩图_1910955503214653442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
-- `FluxGuidance`
 - `InpaintModelConditioning`
 - `KSampler`
 - `LoadImage`
@@ -36,26 +36,25 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `ImagePadForOutpaint` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `ImageAndMaskPreview` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `ImagePadForOutpaint` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `ApplyPulidFlux` —— 1/3 个有
+- `EcomIDFaceAnalysis` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `Mask Fill Holes` —— 1/3 个有
+- `PulidFluxEvaClipLoader` —— 1/3 个有
+- `PulidFluxModelLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 10 - 30 | 3 | 59% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 33% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -63,8 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 10 - 30，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 33%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

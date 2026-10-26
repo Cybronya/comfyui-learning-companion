@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1261
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [CR Combine Prompt, Image Compare (mtb), JjkText, LoadImage, PreviewAny, Qwen3VL_Chat, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.8335
+common_nodes: [ImageCompare, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen3+详情页翻译+替换logo_2082724510691844097.json, 图片生成/图生图/详情页翻译+替换logo_2042436320231956481.json]
+members: [comfyui-workflow-templates-json/image_longcat_image_edit.json, comfyui-workflow-templates-json/utility_bria_remove_image_background.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1261
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen3+详情页翻译+替换logo_2082724510691844097.json、图片生成/图生图/详情页翻译+替换logo_2042436320231956481.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_longcat_image_edit.json、comfyui-workflow-templates-json/utility_bria_remove_image_background.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Combine Prompt`
-- `Image Compare (mtb)`
-- `JjkText`
+- `ImageCompare`
 - `LoadImage`
-- `PreviewAny`
-- `Qwen3VL_Chat`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `338a94d3-1c81-48c8-9edd-9907114ba7e7` —— 1/2 个有
+- `BriaRemoveImageBackground` —— 1/2 个有
 
 ## 典型参数
 

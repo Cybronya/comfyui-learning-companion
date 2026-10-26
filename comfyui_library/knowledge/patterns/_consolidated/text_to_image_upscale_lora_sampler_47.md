@@ -1,117 +1,99 @@
 ---
 name: text_to_image_upscale_lora_sampler_47
 type: Text To Image
-frequency: 5
-level: weak
-coverage: 0.5374
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelPreviewOverrideKJ, PathchSageAttentionKJ, PlaySound|pysssss, ProcessString, QwenImage21Cache, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SomethingToString, TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy int, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 6
+level: moderate
+coverage: 0.8455
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, ConstrainImage|pysssss, EmptyLatentImage, Fast Groups Bypasser (rgthree), Get Image Size, Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEDecode, easy imageSize]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/❼「写真V2」Qwen2.1分镜+Z修复+TTP-HD「10.9」_2108567666360414210.json, 图片生成/图生图/写真V2 Qwen2.1分镜加Z修复加TTP HD 人像写真批量生成_2109079609693261826.json, 图片生成/文生图/Z加Qwen2.1写真分镜方案，文生图反推提示词出片_2110508368321409025.json, 图片生成/文生图/④「写真V0」Z+Qwen2.1写真分镜10.9｜分镜写真一站出_2111787573340368897.json, 图片生成/文生图/写真V0方案Z加Qwen2.1，写真分镜反推提示词图生图_2111914346568830977.json]
+members: [图片生成/文生图/Z-Image-AIO版-文生图+SeedVR高清放大_2060974165913587713.json, 图片生成/文生图/Z-Image-Turbo _ PiD高清4K直出版 - 更快_2060968816380833794.json, 图片生成/文生图/Z-Image-Turbo+_+PiD高清4K直出版+-+更快_2070635052102414338.json, 图片生成/文生图/ZImageTurbo+PiD高清4K直出版更快_2065947456470347778.json, 图片生成/文生图/姿势复制 动作迁移 洗图 模特角色替换 Z-Image 高清4K   高清放大 SeedVR2_2063427520002879490.json, 图片生成/文生图/高清4K直出更快｜ZImageTurbo+PiD文生图_2092931963811352578.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_47
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/❼「写真V2」Qwen2.1分镜+Z修复+TTP-HD「10.9」_2108567666360414210.json、图片生成/图生图/写真V2 Qwen2.1分镜加Z修复加TTP HD 人像写真批量生成_2109079609693261826.json、图片生成/文生图/Z加Qwen2.1写真分镜方案，文生图反推提示词出片_2110508368321409025.json、图片生成/文生图/④「写真V0」Z+Qwen2.1写真分镜10.9｜分镜写真一站出_2111787573340368897.json、图片生成/文生图/写真V0方案Z加Qwen2.1，写真分镜反推提示词图生图_2111914346568830977.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-Image-AIO版-文生图+SeedVR高清放大_2060974165913587713.json、图片生成/文生图/Z-Image-Turbo _ PiD高清4K直出版 - 更快_2060968816380833794.json、图片生成/文生图/Z-Image-Turbo+_+PiD高清4K直出版+-+更快_2070635052102414338.json、图片生成/文生图/ZImageTurbo+PiD高清4K直出版更快_2065947456470347778.json、图片生成/文生图/姿势复制 动作迁移 洗图 模特角色替换 Z-Image 高清4K   高清放大 SeedVR2_2063427520002879490.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `ConstrainImage|pysssss`
 - `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `Get Image Size`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelPreviewOverrideKJ`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `ProcessString`
-- `QwenImage21Cache`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SetNode`
-- `SomethingToString`
-- `TextEncodeQwenImage21`
-- `UNETLoader`
-- `UpscaleModelLoader`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy promptLine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/5 个有
-- `solarL_SaveImagesToZip` —— 4/5 个有
-- `孤海注释` —— 4/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `EmptySD3LatentImage` —— 3/5 个有
-- `GetImageSize` —— 3/5 个有
-- `ImageScaleBy` —— 3/5 个有
-- `LayerUtility: TextBox` —— 3/5 个有
-- `PrimitiveString` —— 3/5 个有
-- `StringConcatenate` —— 3/5 个有
-- `ColorMatchV2` —— 2/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `ImageScale` —— 2/5 个有
-- `ModelSamplingAuraFlow` —— 2/5 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `ResolutionSelector` —— 2/5 个有
-- `TTP_Image_Assy` —— 2/5 个有
-- `TTP_Image_Tile_Batch` —— 2/5 个有
-- `TTP_Tile_image_size` —— 2/5 个有
-- `VAEEncode` —— 2/5 个有
-- `easy imageSize` —— 2/5 个有
-- `easy imageSizeBySide` —— 2/5 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `PiDFinalize` —— 5/6 个有
+- `PiDKSamplerCapture` —— 5/6 个有
+- `PiDPrepare` —— 5/6 个有
+- `PiDSample` —— 5/6 个有
+- `PiDTextPrompt` —— 5/6 个有
+- `VAEDecodeTiled` —— 5/6 个有
+- `Label (rgthree)` —— 3/6 个有
+- `CLIPLoader` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_Captioner` —— 1/6 个有
+- `SeedVR2` —— 1/6 个有
+- `SeedVR2BlockSwap` —— 1/6 个有
+- `SeedVR2ExtraArgs` —— 1/6 个有
+- `UNETLoader` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
+- `solarL_SaveImagesToZip` —— 1/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 5 | 0% |
-| 高度 | 80 | 80 - 1024 | 5 | 0% |
-| 采样步数 | 4 | 4 - 8 | 5 | 67% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 5 | 63% |
-| 采样算法 | er_sde | - | 5 | 80% |
-| 调度器 | beta | - | 5 | 80% |
-| 重绘幅度 | 1 | 0.15 - 1 | 5 | 59% |
+| 采样步数 | 9 | 4 - 9 | 6 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 6 | 18% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | beta | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 80 - 1024 | 6 | 59% |
+| 高度 | 1536 | 80 - 1536 | 6 | 58% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，5 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，5 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，5 个样本
-- 采样算法 最常用 er_sde，5 个样本，一致性 80%
-- 调度器 最常用 beta，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 0.15 - 1，5 个样本
-- 高发问题（9/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 4 - 9，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，6 个样本，取值分散，一致性仅 18%
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 beta，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 80 - 1024，6 个样本
+- 高度 中位数 1536，观测区间 80 - 1536，6 个样本

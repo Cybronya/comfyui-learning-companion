@@ -1,59 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_715
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9435
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 3
+level: moderate
+coverage: 0.715667
+common_nodes: [AIO_Preprocessor, CR Text, CreateCFGScheduleFloatList, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, GetImageSizeAndCount, GetNode, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json, 数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json]
+members: [视频生成/图生视频/Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json, 视频生成/图生视频/视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json, 视频生成/图生视频/通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_1967206218295074817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_715
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json、数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json、视频生成/图生视频/视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json、视频生成/图生视频/通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_1967206218295074817.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PreviewImage`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `AddLabel` —— 2/3 个有
+- `EmptyImage` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
@@ -65,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

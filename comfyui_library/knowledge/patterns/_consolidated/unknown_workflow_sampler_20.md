@@ -3,38 +3,38 @@ name: unknown_workflow_sampler_20
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.8365
-common_nodes: [ImageConcanate, LoadImage, RunningHub ICCustom Loader, RunningHub ICCustom Sampler, SaveImage, Text Multiline, easy imageRemBg]
+coverage: 0.924
+common_nodes: [ImageConcanate, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json, 图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json, 图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json, 图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json, 图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json, 图片生成/图生图/首饰产品迁移-AI模特佩戴产品首饰_1991829889062072321.json]
+members: [图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json, 图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json, 图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json, 图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json, 图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json, 图片生成/图生图/极速版-UniWorld吉卜力风格转绘工作流_1931046093231206402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json、图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json、图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json、图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json、图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json、图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json、图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json、图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json、图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `ImageConcanate`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RunningHub ICCustom Loader`
-- `RunningHub ICCustom Sampler`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
-- `Text Multiline`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageAndMaskPreview` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 1/6 个有
+- `CR Prompt Text` —— 5/6 个有
+- `PDIMAGE_LongerSize` —— 5/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
 
 ## 典型参数
 

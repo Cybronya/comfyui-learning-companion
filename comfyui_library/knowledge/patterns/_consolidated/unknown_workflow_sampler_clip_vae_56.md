@@ -2,63 +2,62 @@
 name: unknown_workflow_sampler_clip_vae_56
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.82425
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.8625
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/JOY3和JOY2对比_1924342937822687234.json, 图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_1943500030101626881.json, 图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_2017595939619344385.json, 图片生成/文生图/图片反推提示词实用工作流图生文字对比提示词图片_2069460878025650177.json]
+members: [图片生成/文生图/Flux.2溶图_1995426699946995714.json, 图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json, 图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json, 图片生成/文生图/flux.2量化+SageAttention加速图像编辑（单图）_1994854140247465985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_56
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/JOY3和JOY2对比_1924342937822687234.json、图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_1943500030101626881.json、图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_2017595939619344385.json、图片生成/文生图/图片反推提示词实用工作流图生文字对比提示词图片_2069460878025650177.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux.2溶图_1995426699946995714.json、图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json、图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json、图片生成/文生图/flux.2量化+SageAttention加速图像编辑（单图）_1994854140247465985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `FluxGuidance`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `NunchakuFluxDiTLoader` —— 3/4 个有
-- `RH_Translator` —— 3/4 个有
-- `CR Simple Image Compare` —— 1/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `UNETLoader` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `UNETLoader` —— 2/4 个有
+- `Compositor3` —— 1/4 个有
+- `CompositorConfig3` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `InspyrenetRembg` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `easy promptLine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 768 | 768 - 768 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 768，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

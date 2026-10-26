@@ -3,67 +3,59 @@ name: text_to_image_video_lora_sampler_188
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.780333
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.706333
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/ComfyUI多轮对话Skill加载｜配合MiniMax-H3智能工作台_2092077272688844801.json, 视频生成/文生视频/H3极简视频工作台｜文生音频图生视频三合一_2091666153218334722.json, 视频生成/文生视频/智能一体化视频创作｜MiniMax H3优化版文生图生视频_2090533006632116225.json]
+members: [视频生成/图生视频/SCAIL2超快超长视频｜动作迁移加速生成_2095244285921812482.json, 视频生成/图生视频/pipiai-SCAIL2--超快超长视频 视频生视频 动作迁移_2082286551828094977.json, 视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_188
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/ComfyUI多轮对话Skill加载｜配合MiniMax-H3智能工作台_2092077272688844801.json、视频生成/文生视频/H3极简视频工作台｜文生音频图生视频三合一_2091666153218334722.json、视频生成/文生视频/智能一体化视频创作｜MiniMax H3优化版文生图生视频_2090533006632116225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SCAIL2超快超长视频｜动作迁移加速生成_2095244285921812482.json、视频生成/图生视频/pipiai-SCAIL2--超快超长视频 视频生视频 动作迁移_2082286551828094977.json、视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
 - `GetNode`
-- `JjkText`
+- `ImageColorMatch+`
+- `ImageResizeKJv2`
+- `Int`
 - `KSampler`
-- `LoraLoaderBypassModelOnly`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8GH`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PreviewAny`
+- `SAM3_VideoTrack`
+- `SCAIL2SimpleVideo`
 - `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy ifElse`
+- `VHS_VideoInfoLoaded`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoAPIChatMaterialLibraryNode` —— 1/3 个有
-- `DapaoAPIChatSettingsNode` —— 1/3 个有
-- `DapaoAPILLMConfigNode` —— 1/3 个有
-- `DapaoAPIMultiTurnChatNode` —— 1/3 个有
-- `DapaoAPISkillLoaderNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `LoadVideoNode` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `JjkText` —— 2/3 个有
+- `孤海注释` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
 
 ## 典型参数
 

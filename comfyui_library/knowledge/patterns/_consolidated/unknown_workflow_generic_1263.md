@@ -3,40 +3,29 @@ name: unknown_workflow_generic_1263
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.902
-common_nodes: [ImageConcatMulti, ImageRemoveBackground+, JWImageResizeByLongerSide, LayerMask: SegmentAnythingUltra V2, LoadImage, MaskPreview+, PreviewImage, ReLight, RemBGSession+, SaveImage, Switch any [Crystools]]
+coverage: 0.6
+common_nodes: [ResolutionSelector, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
 problems: []
 missing: []
-members: [图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json, 图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json]
+members: [comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json, comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1263
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json、图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json、comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
-- `ImageRemoveBackground+`
-- `JWImageResizeByLongerSide`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LoadImage`
-- `MaskPreview+`
-- `PreviewImage`
-- `ReLight`
-- `RemBGSession+`
-- `SaveImage`
-- `Switch any [Crystools]`
-
-**可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
+- `ResolutionSelector`
+- `SaveImageAdvanced`
+- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
 ## 典型参数
 

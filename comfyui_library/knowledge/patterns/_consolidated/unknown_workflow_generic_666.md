@@ -1,40 +1,42 @@
 ---
 name: unknown_workflow_generic_666
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.574
-common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, easy promptList]
+coverage: 0.6958
+common_nodes: [CR Prompt Text, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text Concatenate]
 problems: []
 missing: []
-members: [图片生成/图生图/image_gemini.json_2082301956990791681.json, 图片生成/图生图/image_gemini.json_2098290683168780289.json, 图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
+members: [音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json, 音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json, 音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json, 音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json, 音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_666
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image_gemini.json_2082301956990791681.json、图片生成/图生图/image_gemini.json_2098290683168780289.json、图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json、音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json、音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json、音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json、音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `LoadImage`
-- `SaveImage`
-- `easy promptList`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
-- `ShowAnything|Mie` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
+- `Text` —— 4/5 个有
+- `PreviewAny` —— 1/5 个有
+- `StringReplace` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,78 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_47
 type: Unknown Workflow
-frequency: 17
-level: strong
-coverage: 0.817824
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
+frequency: 16
+level: moderate
+coverage: 0.922687
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json, 视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json, 视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json, 视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json, 视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json, 视频生成/文生视频/LTX2.5文生视频-自动扩写提示词-高质量直出1K_2087739530110660610.json, 视频生成/文生视频/LTX2.5文生视频-高质量直出1K_2087559289287303170.json, 视频生成/文生视频/LTX2.5文生视频2608_2095392989672722433.json, 视频生成/文生视频/LTX2.5文生视频_2087332158187859970.json, 视频生成/文生视频/LTX2.5文生视频_2087393833666568193.json, 视频生成/文生视频/LTX2.5文生视频_2087526329527922689.json, 视频生成/文生视频/LTX2.5文生视频_2087539582974906369.json, 视频生成/文生视频/LTX2.5文生视频减油版v1_2087405116231081985.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087431365884207105.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087443856160804866.json, 视频生成/文生视频/LTX2.5文生视频（原生支持4K高清）_2087436136628187138.json, 视频生成/文生视频/LTX2.5文生视频（速度快、像素高）_2087530677137928194.json]
+members: [图片生成/图生图/FLUX.2多图编辑工作流_2035290550059929602.json, 图片生成/图生图/Flux-Klein-9b图片编辑_2078379352756146178.json, 图片生成/图生图/Flux.2 Klein 细节增强_2053519932205355010.json, 图片生成/图生图/Flux.2 Klein 细节增强_2058818588181622785.json, 图片生成/图生图/Flux.2 Klein 细节增强_2065718342186520578.json, 图片生成/图生图/Flux.2 Klein 细节增强_2067146753337544705.json, 图片生成/图生图/Flux.2 Klein 细节增强_2086293216298618882.json, 图片生成/图生图/Flux.2 [Klein]：图片编辑4B ComfyUI官方流_2012038832811675650.json, 图片生成/图生图/Flux.2 [Klein]：多图编辑4B ComfyUI官方流_2012024295991549954.json, 图片生成/图生图/Flux.2-Klein-图像编辑_2012002471639523329.json, 图片生成/图生图/Flux2 Klein 9B Klein 海量 一图生多图 保持人物一致 多角度_2055163523919032321.json, 图片生成/图生图/Flux2 Klein 9B Klein 海量 一图生多图 保持人物一致 多角度_2059923401174765569.json, 图片生成/图生图/Flux2Klein细节增强真实皮肤质感_2064503315794321409.json, 图片生成/图生图/Klein9b产品渲染精修_2048198461790621698.json, 图片生成/图生图/净化截图_2059612411639980033.json, 图片生成/图生图/图像编辑：超强一致性比肩某全能图像模型！Flux2 Klein_2030101405222047745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_47
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json、视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json、视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json、视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json、视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/FLUX.2多图编辑工作流_2035290550059929602.json、图片生成/图生图/Flux-Klein-9b图片编辑_2078379352756146178.json、图片生成/图生图/Flux.2 Klein 细节增强_2053519932205355010.json、图片生成/图生图/Flux.2 Klein 细节增强_2058818588181622785.json、图片生成/图生图/Flux.2 Klein 细节增强_2065718342186520578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVDualCFGGuider` —— 16/17 个有
-- `LTXVLatentUpsampler` —— 16/17 个有
-- `LatentUpscaleModelLoader` —— 16/17 个有
-- `PrimitiveStringMultiline` —— 16/17 个有
-- `ResolutionSelector` —— 16/17 个有
-- `CreateVideo` —— 14/17 个有
-- `SaveVideo` —— 14/17 个有
-- `TextGenerateLTX2Prompt` —— 13/17 个有
-- `ComfySwitchNode` —— 12/17 个有
-- `PreviewAny` —— 11/17 个有
-- `PrimitiveBoolean` —— 10/17 个有
-- `VHS_VideoCombine` —— 4/17 个有
-- `easy showAnything` —— 4/17 个有
-- `LoraLoaderModelOnly` —— 3/17 个有
-- `RH_LLMAPI_Pro_Node` —— 2/17 个有
-- `CFGGuider` —— 1/17 个有
-- `CR Prompt Text` —— 1/17 个有
-- `CR Text` —— 1/17 个有
-- `FlashVSRNode` —— 1/17 个有
-- `Int` —— 1/17 个有
-- `LTXFloatToInt` —— 1/17 个有
-- `PrimitiveFloat` —— 1/17 个有
-- `ShellAgentPluginOutputText` —— 1/17 个有
-- `孤海注释` —— 1/17 个有
+- `ReferenceLatent` —— 15/16 个有
+- `VAEEncode` —— 15/16 个有
+- `ConditioningZeroOut` —— 14/16 个有
+- `GetImageSize` —— 14/16 个有
+- `ImageScaleToTotalPixels` —— 12/16 个有
+- `CR Text` —— 10/16 个有
+- `LoraLoaderModelOnly` —— 10/16 个有
+- `PreviewImage` —— 9/16 个有
+- `Image Comparer (rgthree)` —— 8/16 个有
+- `Int` —— 7/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/16 个有
+- `CR Prompt List` —— 2/16 个有
+- `easy promptLine` —— 2/16 个有
+- `Anything Everywhere` —— 1/16 个有
+- `ConditioningAddImageReferenceDual` —— 1/16 个有
+- `FluxKontextImageScale` —— 1/16 个有
+- `ImageScale` —— 1/16 个有
+- `ImageScaleToMaxDimension` —— 1/16 个有
+- `LayerColor: ColorAdapter` —— 1/16 个有
+- `PrimitiveInt` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 17 | 94% |
-| 高度 | 25 | 25 - 25 | 17 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，17 个样本，取值集中（一致性 94%）
-- 高度 中位数 25，观测区间 25 - 25，17 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

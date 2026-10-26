@@ -3,52 +3,52 @@ name: unknown_workflow_video_sampler_clip_59
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.9656
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8353
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, ManualSigmas, PainterLTXVtoVideo, PainterSamplerLTXV, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.json, 视频生成/图生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1930215748042657793.json, 视频生成/图生视频/【人物服装运镜展示】360度产品场景旋转展示视频动画wan2.1_1919937999688372225.json, 视频生成/图生视频/【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json, 视频生成/图生视频/万相图生视频_1894632581118472194.json, 视频生成/图生视频/人物生气特效｜Wan2.1_1938851754044018689.json, 视频生成/图生视频/捏捏乐，WAN2.1万相LORA工作流_1899052254505385985.json, 视频生成/文生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1918935323899006978.json, 视频生成/文生视频/【大摆锤跳舞】最新图生视频动画wan2.1+放大补帧_1918185073190047746.json, 视频生成/文生视频/【放大+补帧】最新万相Wan2.1图生视频_1898157679490060290.json]
+members: [视频生成/图生视频/(贞贞lora 11000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011647638386515970.json, 视频生成/图生视频/(贞贞lora 17000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011652891991351298.json, 视频生成/图生视频/(贞贞lora 20000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011690335805644802.json, 视频生成/图生视频/ComfyUI-PainterLTXV2 基础流_2009113089257508866.json, 视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json, 视频生成/图生视频/Ltx2高动态图生视频V1(工作流精简版)_2009226239936040962.json, 视频生成/文生视频/(贞贞lora 4000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011451482868027393.json, 视频生成/文生视频/15-01-03-LTX2.0-文生视频+人物Lora_2012023530224885761.json, 视频生成/文生视频/LTX2.0-文生音视频_2009460170920824833.json, 视频生成/文生视频/Ltx2高动态智能扩写文生视频V1(Painter精简版)_2009218927821332481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_59
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.json、视频生成/图生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1930215748042657793.json、视频生成/图生视频/【人物服装运镜展示】360度产品场景旋转展示视频动画wan2.1_1919937999688372225.json、视频生成/图生视频/【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json、视频生成/图生视频/万相图生视频_1894632581118472194.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/(贞贞lora 11000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011647638386515970.json、视频生成/图生视频/(贞贞lora 17000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011652891991351298.json、视频生成/图生视频/(贞贞lora 20000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011690335805644802.json、视频生成/图生视频/ComfyUI-PainterLTXV2 基础流_2009113089257508866.json、视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `ManualSigmas`
+- `PainterLTXVtoVideo`
+- `PainterSamplerLTXV`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 6/10 个有
-- `RIFE VFI` —— 6/10 个有
-- `WanVideoLoraSelect` —— 6/10 个有
-- `WanVideoTorchCompileSettings` —— 5/10 个有
-- `ImageResizeKJ` —— 2/10 个有
-- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `CR Prompt Text` —— 9/10 个有
+- `RH_LLMAPI_Pro_Node` —— 9/10 个有
+- `JWInteger` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `ShowAnything|Mie` —— 8/10 个有
+- `easy anythingIndexSwitch` —— 7/10 个有
+- `LoraLoaderModelOnly` —— 5/10 个有
+- `ConcatTextOfUtils` —— 4/10 个有
 - `GetNode` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
-- `Primitive string [Crystools]` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
 - `SetNode` —— 1/10 个有
-- `String` —— 1/10 个有
-- `String Literal` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

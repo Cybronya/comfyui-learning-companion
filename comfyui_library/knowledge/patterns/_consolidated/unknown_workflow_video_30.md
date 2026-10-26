@@ -1,43 +1,48 @@
 ---
 name: unknown_workflow_video_30
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9085
-common_nodes: [BiRefNet_Hugo, InspyrenetRembg, LoadImage, MaskPreview+, MaskToImage, PreviewImage, SaveImage, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.7452
+common_nodes: [Bjornulf_AnythingToText, CR String To Number, GetImageSizeAndCount, LoadAudio, RH_GetAudioDuration, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything, easy textSwitch]
 problems: []
 missing: []
-members: [图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079019985149714434.json, 图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079876944308563969.json, 图片生成/图生图/抠图扣视频｜细到发丝_2088152155160137730.json, 图片生成/图生图/抠图扣视频｜细到发丝_2088172223516463106.json]
+members: [音频生成/音频生成/单个多个视频音频合并_2015258006027505666.json, 音频生成/音频生成/视频+Index-TTS单人语音克隆配音_1955599067427454978.json, 音频生成/音频生成/视频+Index-TTS双人语音克隆配音_1955596246850289665.json, 音频生成/音频生成/视频+音频合并工具_1955594689191841793.json, 音频生成/音频生成/视频音频合并_2015278447341346818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_30
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079019985149714434.json、图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079876944308563969.json、图片生成/图生图/抠图扣视频｜细到发丝_2088152155160137730.json、图片生成/图生图/抠图扣视频｜细到发丝_2088172223516463106.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/单个多个视频音频合并_2015258006027505666.json、音频生成/音频生成/视频+Index-TTS单人语音克隆配音_1955599067427454978.json、音频生成/音频生成/视频+Index-TTS双人语音克隆配音_1955596246850289665.json、音频生成/音频生成/视频+音频合并工具_1955594689191841793.json、音频生成/音频生成/视频音频合并_2015278447341346818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BiRefNet_Hugo`
-- `InspyrenetRembg`
-- `LoadImage`
-- `MaskPreview+`
-- `MaskToImage`
-- `PreviewImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `Bjornulf_AnythingToText`
+- `CR String To Number`
+- `GetImageSizeAndCount`
+- `LoadAudio`
+- `RH_GetAudioDuration`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `BiRefNet_ModelLoader_Zho` —— 2/4 个有
-- `BiRefNet_Zho` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `YK_LoadImageFromURL` —— 2/4 个有
+- `LoadImage` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `IndexTTSRun` —— 2/5 个有
+- `SaveAudio` —— 2/5 个有
+- `Save_Audio` —— 2/5 个有
+- `ImageBatchMultiple+` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 

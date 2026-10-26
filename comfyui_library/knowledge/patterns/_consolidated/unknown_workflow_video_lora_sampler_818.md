@@ -3,77 +3,69 @@ name: unknown_workflow_video_lora_sampler_818
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.546
-common_nodes: [Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Prompt Text, Display Any (rgthree), DrawMaskOnImage, DrawViTPose, Evaluate Integers, GetImageSize, GetNode, ImageBatch, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, Int, JWImageExtractFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveFloat, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization]
+coverage: 0.8475
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json, 视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json]
+members: [视频生成/图生视频/(无限流)运镜加自动指导动作_超清不限时长唱歌讲话，Wan I2V_ InfiniteTalk_1975505020466671617.json, 视频生成/图生视频/InfiniteTalk数字人（图片+音频）_1957992360850468865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_818
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json、视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/(无限流)运镜加自动指导动作_超清不限时长唱歌讲话，Wan I2V_ InfiniteTalk_1975505020466671617.json、视频生成/图生视频/InfiniteTalk数字人（图片+音频）_1957992360850468865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BlockifyMask`
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `Display Any (rgthree)`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Evaluate Integers`
-- `GetImageSize`
-- `GetNode`
-- `ImageBatch`
-- `ImageConcatMulti`
-- `ImageFromBatch+`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
-- `Int`
-- `JWImageExtractFromBatch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RepeatImageBatch`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy sam3Visualization`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Manual XY Entry Info` —— 1/2 个有
-- `MathExpressionNode` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `ZML_IntegerFloatConverter` —— 1/2 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CR Text Input Switch` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `GLM_Vision_ImageToPrompt` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `JWIntegerToString` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `VHS_LoadAudio` —— 1/2 个有
 
 ## 典型参数
 

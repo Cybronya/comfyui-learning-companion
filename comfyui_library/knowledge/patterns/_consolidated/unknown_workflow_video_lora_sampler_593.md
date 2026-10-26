@@ -1,54 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_593
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.562
-common_nodes: [BasicScheduler, BerniniStudio, CLIPLoader, GetNode, INTConstant, Int, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, Seed (rgthree), SetNode, SimpleMath+, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.67875
+common_nodes: [GetImageSizeAndCount, GetNode, ImageResizeKJ, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2076512997073313793.json, 视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2079802404345827330.json, 视频生成/文生视频/Berinini Studio x Remix LoRA 图生视频工作流_2079090473137950721.json]
+members: [视频生成/图生视频/万象VACE 14B视频扩展-加速版_1923359866998411265.json, 视频生成/图生视频/万象VACE 14B视频驱动图片-加速版_1923351461173129217.json, 视频生成/图生视频/万象加速时代-ACCVID_1927701391375253506.json, 视频生成/图生视频/（自用）Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1952583718227652610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_593
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2076512997073313793.json、视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2079802404345827330.json、视频生成/文生视频/Berinini Studio x Remix LoRA 图生视频工作流_2079090473137950721.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万象VACE 14B视频扩展-加速版_1923359866998411265.json、视频生成/图生视频/万象VACE 14B视频驱动图片-加速版_1923351461173129217.json、视频生成/图生视频/万象加速时代-ACCVID_1927701391375253506.json、视频生成/图生视频/（自用）Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1952583718227652610.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniStudio`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `Int`
-- `KSamplerSelect`
-- `Label (rgthree)`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SamplerCustom`
-- `Seed (rgthree)`
+- `ImageResizeKJ`
+- `LoadWanVideoT5TextEncoder`
 - `SetNode`
-- `SimpleMath+`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `LoadImage` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `AIO_Preprocessor` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `WanVideoTeaCache` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 1/4 个有
+- `ImageBlend` —— 1/4 个有
+- `ImagePadKJ` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LoadLatent` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SaveLatent` —— 1/4 个有
+- `WanVideoVACEStartToEndFrame` —— 1/4 个有
 
 ## 典型参数
 

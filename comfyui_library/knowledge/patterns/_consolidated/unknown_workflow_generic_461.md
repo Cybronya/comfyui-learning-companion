@@ -3,39 +3,38 @@ name: unknown_workflow_generic_461
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.878
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, MultiLinePromptIndex, SaveAudioMP3, SaveImage]
+coverage: 0.921
+common_nodes: [CR Simple Image Compare, CR Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json, 音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json, 音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json, 音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json, 音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json, 音频生成/音频生成/🐲 IndexTTS 单_双 语音克隆 效果稳定 极速出效果🐲_1963526521779736578.json]
+members: [图片生成/图生图/b-最强2双图编辑全能图片pro图生图_2009591611319128065.json, 图片生成/图生图/一键新年写真_2005939908176998402.json, 图片生成/图生图/一键新年四宫格写真_2005963264137854978.json, 图片生成/图生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2027286197722161154.json, 图片生成/文生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2028422472437080065.json, 图片生成/文生图/最新全能图片编辑模型v2文生图gemini-3.1-flash_2027275384085028866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_461
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json、音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json、音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json、音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json、音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/b-最强2双图编辑全能图片pro图生图_2009591611319128065.json、图片生成/图生图/一键新年写真_2005939908176998402.json、图片生成/图生图/一键新年四宫格写真_2005963264137854978.json、图片生成/图生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2027286197722161154.json、图片生成/文生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2028422472437080065.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `MultiLinePromptIndex`
-- `SaveAudioMP3`
+- `CR Simple Image Compare`
+- `CR Text`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 4/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `IndexTTSRun` —— 3/6 个有
-- `JjkText` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `SaveAudio` —— 3/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `CR Text Replace` —— 3/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
+- `SeargeIntegerConstant` —— 1/6 个有
 
 ## 典型参数
 

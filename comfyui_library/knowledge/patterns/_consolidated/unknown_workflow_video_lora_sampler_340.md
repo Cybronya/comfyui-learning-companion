@@ -1,64 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_340
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.902833
-common_nodes: [CR Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, PrimitiveString, RHHiddenNodes, ShowText|pysssss, SimpleMath+, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch]
+coverage: 0.948571
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频可控动态特效_1972840899115982849.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1978395931462750209.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1983384271719178241.json, 视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1997296684856184833.json, 视频生成/图生视频/【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（超清极速版）上传图像 描述提示词 选择时_1986614260161802241.json, 视频生成/图生视频/超高清动态可控+图生视频_2000608188644851714.json]
+members: [数字人/数字人/Wan2.2+Multitalk数字人工作流_1952579748809641986.json, 数字人/数字人/空白工作流_1942131715920052225.json, 视频生成/图生视频/(KJ版)Wan2.2+multitalk 单人说话_1951530771968372737.json, 视频生成/图生视频/Digital Avatars for E-commerce InfiniteTalk +数字人带货_2095704577696948225.json, 视频生成/图生视频/InfiniteTalk+IndexTTS+Kontext数字人带货_1958084173951094786.json, 视频生成/图生视频/MultiTalk+IndexTTS+Kontext数字人带货_1937830211084029954.json, 音频生成/音频生成/InfiniteTalk+数字人口播带货_1973224776535814145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_340
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频可控动态特效_1972840899115982849.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1978395931462750209.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1983384271719178241.json、视频生成/图生视频/Wan22+SIMGA精准调度+LLM超高动态可控图生视频KJ版_1997296684856184833.json、视频生成/图生视频/【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（超清极速版）上传图像 描述提示词 选择时_1986614260161802241.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Wan2.2+Multitalk数字人工作流_1952579748809641986.json、数字人/数字人/空白工作流_1942131715920052225.json、视频生成/图生视频/(KJ版)Wan2.2+multitalk 单人说话_1951530771968372737.json、视频生成/图生视频/Digital Avatars for E-commerce InfiniteTalk +数字人带货_2095704577696948225.json、视频生成/图生视频/InfiniteTalk+IndexTTS+Kontext数字人带货_1958084173951094786.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `Float`
-- `GetImageSizeAndCount`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `INTConstant`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
-- `PrimitiveString`
-- `RHHiddenNodes`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 5/6 个有
-- `GIMMVFI_interpolate` —— 5/6 个有
-- `WanVideoLoraSelect` —— 5/6 个有
-- `WanVideoLoraSelectMulti` —— 1/6 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `IndexTTSRun` —— 5/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `String Literal` —— 5/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `RH_ComfyFluxKontext` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `SaveImage` —— 4/7 个有
+- `WanVideoImageToVideoEncode` —— 4/7 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/7 个有
+- `CR Integer To String` —— 2/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `CreateCFGScheduleFloatList` —— 2/7 个有
+- `GetImageSizeAndCount` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `WanVideoSetBlockSwap` —— 2/7 个有
+- `WanVideoSetLoRAs` —— 2/7 个有
+- `easy seed` —— 2/7 个有
+- `Int` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `SaveLatent` —— 1/7 个有
+- `ttN int` —— 1/7 个有
 
 ## 典型参数
 

@@ -2,58 +2,65 @@
 name: unknown_workflow_lora_sampler_clip_89
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 1
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2SimpleVideo, VAELoader, VHS_LoadVideo, WanChunkFeedForward]
+level: strong
+coverage: 0.9865
+common_nodes: [BasicScheduler, CLIPTextEncode, CM_FloatToInt, CR Text, DualCLIPLoader, ImageConcanate, KSamplerSelect, LTXVAddGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ai 数字人_2086011335233589249.json, 视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2064999318582546433.json, 视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2083912499828715522.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2085596899859582977.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2086658199561789442.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2087087255763644418.json]
+members: [视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json, 视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json, 视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json, 视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json, 视频生成/图生视频/图生视频重要_2053455525341343746.json, 视频生成/图生视频/视频生视频 高清版_2054000800241856513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_89
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Ai 数字人_2086011335233589249.json、视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2064999318582546433.json、视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2083912499828715522.json、视频生成/图生视频/SCAIL2超强一致性动作迁移_2085596899859582977.json、视频生成/图生视频/SCAIL2超强一致性动作迁移_2086658199561789442.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json、视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json、视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json、视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json、视频生成/图生视频/图生视频重要_2053455525341343746.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+- `CM_FloatToInt`
+- `CR Text`
+- `DualCLIPLoader`
+- `ImageConcanate`
 - `KSamplerSelect`
-- `LoadImage`
+- `LTXVAddGuide`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2FitVideo`
-- `SCAIL2SimpleVideo`
-- `VAELoader`
+- `SamplerCustom`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoaderKJ`
 - `VHS_LoadVideo`
-- `WanChunkFeedForward`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
 - `VHS_VideoCombine` —— 5/6 个有
-- `Int` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `ComfySwitchNodeV2` —— 1/6 个有
-- `CreateVideo` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `RH_HeyGemNode` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
+- `DuckHideNode` —— 1/6 个有
+- `Float to Int` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `TT_img_enc` —— 1/6 个有
+- `TT_img_enc_v2` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -61,4 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

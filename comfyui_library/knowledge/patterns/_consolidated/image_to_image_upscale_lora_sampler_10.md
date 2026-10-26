@@ -1,116 +1,104 @@
 ---
 name: image_to_image_upscale_lora_sampler_10
 type: Image To Image
-frequency: 14
-level: strong
-coverage: 0.588786
-common_nodes: [Any Switch (rgthree), CLIPLoader, ColorConverterGuhai, ConditioningZeroOut, GetImageSize+, GetNode, GoohaiUniversalSlider, GuHai_IDPhotoCrop, IDPhotoClothingSelector_孤海, Image Comparer (rgthree), ImageComposite+, ImageResize+, ImageScaleBy, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RMBG, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text Concatenate, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy seed, 孤海-取色器, 孤海-自定义颜色, 布尔孤海, 忽略多组孤海]
+frequency: 15
+level: weak
+coverage: 0.8114
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Float, FluxGuidance, Image Comparer (rgthree), ImageUpscaleWithModel, ImpactInt, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ReferenceLatent, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy promptConcat]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/F.2Klein9B一键证件照侧脸转正换服装换背景高清排版_2065959891482800130.json, 图片生成/图生图/F.2Klein9B高清证件照换服装可选服装发型_2066644516085526530.json, 图片生成/图生图/一键证件照 侧脸转正 换服装 换背景_2068971920250462209.json, 图片生成/图生图/一键证件照 侧脸转正 换服装 换背景_2068974225230229506.json, 图片生成/图生图/一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2066008119477624834.json, 图片生成/图生图/一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2086068191733833729.json, 图片生成/图生图/一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2093895977299173377.json, 图片生成/图生图/端容正影一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2087796823166644226.json, 图片生成/图生图/老孙AI 一键证件照 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2087376995108876289.json, 图片生成/文生图/一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2084721379785662466.json, 图片生成/文生图/一键转正_2087118370360614914.json, 图片生成/文生图/自用版  ai 蛮子 一键证件照工作流V1.0_2080866662601023489.json, 数字人/数字人/一键证件照  自选服饰 发型 背景_2108399463449583618.json, 数字人/数字人/一键证件照生成(侧脸转正换服装换背景换发型高清自动排版）_2095041911152275457.json]
+members: [图片生成/图生图/Product Retouching 产品精修+万能产品修图_2093154645987389441.json, 图片生成/图生图/Transparent PNG image Product Retouching 产品精修_2106912090878464002.json, 图片生成/图生图/Transparent_PNG_image_Product_Retouching_产品精修_2107651060654493698.json, 图片生成/图生图/flux2全能产品精修，适合所有类型产品，4k直出_2060581652212043777.json, 图片生成/图生图/万能产品修图 美妆产品精修+支持瓶子 罐子 电商产品商业级修复打光_2067298785688113154.json, 图片生成/图生图/万能产品修图_Flux-2-Klein-9B_美妆产品精修_+支持瓶子_罐子_电商产品商业级修复打光_2060903281194524673.json, 图片生成/图生图/万能产品修图_Flux-2-Klein-9B_美妆产品精修_+支持瓶子_罐子_电商产品商业级修复打光_2061261459555971074.json, 图片生成/图生图/个人化妆品玻璃精修_2063358356420644865.json, 图片生成/图生图/个人塑料精修_2063338549637902337.json, 图片生成/图生图/产品精修 电商皮革纹理类产品精修 加强实用版_2088419890930741250.json, 图片生成/图生图/产品精修（标贴会变形，需要去标贴）_2034941844886396930.json, 图片生成/图生图/全能产品精修——适用于金属、饰品、化妆品、服装_2040979371816656897.json, 图片生成/图生图/商业级人像精修，增加皮肤质感、去AI感，4K直出，影楼专用_2033135017852932098.json, 图片生成/图生图/服装精修，衣服去皱，版型整理_2033166281683247106.json, 图片生成/图生图/电商网店首饰精修-图生图_2066321366307139585.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/F.2Klein9B一键证件照侧脸转正换服装换背景高清排版_2065959891482800130.json、图片生成/图生图/F.2Klein9B高清证件照换服装可选服装发型_2066644516085526530.json、图片生成/图生图/一键证件照 侧脸转正 换服装 换背景_2068971920250462209.json、图片生成/图生图/一键证件照 侧脸转正 换服装 换背景_2068974225230229506.json、图片生成/图生图/一键证件照V2 _ 侧脸转正 _ 换服装 _ 换背景 _ 高清 _ 排版_2066008119477624834.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Product Retouching 产品精修+万能产品修图_2093154645987389441.json、图片生成/图生图/Transparent PNG image Product Retouching 产品精修_2106912090878464002.json、图片生成/图生图/Transparent_PNG_image_Product_Retouching_产品精修_2107651060654493698.json、图片生成/图生图/flux2全能产品精修，适合所有类型产品，4k直出_2060581652212043777.json、图片生成/图生图/万能产品修图 美妆产品精修+支持瓶子 罐子 电商产品商业级修复打光_2067298785688113154.json…）
 
 - **类型**：Image To Image
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：59%
+- **样本数**：15
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
-- `ColorConverterGuhai`
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `GetImageSize+`
-- `GetNode`
-- `GoohaiUniversalSlider`
-- `GuHai_IDPhotoCrop`
-- `IDPhotoClothingSelector_孤海`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `FluxGuidance`
 - `Image Comparer (rgthree)`
-- `ImageComposite+`
-- `ImageResize+`
-- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `ImpactInt`
+- `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RMBG`
+- `MathExpression|pysssss`
+- `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `Text Concatenate`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy ifElse`
-- `easy seed`
-- `孤海-取色器`
-- `孤海-自定义颜色`
-- `布尔孤海`
-- `忽略多组孤海`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 13/14 个有
-- `ColorCorrect` —— 13/14 个有
-- `EditTextEncode_EditUtils` —— 13/14 个有
-- `Flux2KleinConfigPreparer_EditUtils` —— 13/14 个有
-- `Flux2KleinModelConfig_EditUtils` —— 13/14 个有
-- `ImageBlur` —— 13/14 个有
-- `ImageCASharpening+` —— 13/14 个有
-- `ReferenceLatent` —— 13/14 个有
-- `TextInput_` —— 13/14 个有
-- `easy imageColorMatch` —— 13/14 个有
-- `easy showAnything` —— 13/14 个有
-- `图像缩放V2_孤海` —— 13/14 个有
-- `SingleImageLayoutNode` —— 12/14 个有
-- `孤海-图像添加水印` —— 11/14 个有
-- `孤海注释` —— 7/14 个有
-- `CR String To Combo` —— 1/14 个有
-- `GrowMaskWithBlur` —— 1/14 个有
-- `ImageSaveNode_孤海` —— 1/14 个有
-- `PrimitiveStringMultiline` —— 1/14 个有
-- `QwenEditConfigPreparer` —— 1/14 个有
-- `RemoveBackgroundWithMask` —— 1/14 个有
-- `SAM3Segment` —— 1/14 个有
-- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 1/14 个有
-- `VRAM_Debug` —— 1/14 个有
-- `easy imageRemBg` —— 1/14 个有
+- `GrowMask` —— 14/15 个有
+- `InvertMask` —— 14/15 个有
+- `JoinImageWithAlpha` —— 14/15 个有
+- `LayerMask: BiRefNetUltraV2` —— 14/15 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 14/15 个有
+- `ImageListToImageBatch` —— 11/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/15 个有
+- `ModelSamplingSD3` —— 11/15 个有
+- `TTP_Image_Assy` —— 11/15 个有
+- `TTP_Image_Tile_Batch` —— 11/15 个有
+- `TTP_Tile_image_size` —— 11/15 个有
+- `Text _O` —— 11/15 个有
+- `easy cleanGpuUsed` —— 11/15 个有
+- `easy imageBatchToImageList` —— 11/15 个有
+- `PreviewImage` —— 8/15 个有
+- `Image Filter Adjustments` —— 7/15 个有
+- `LayerColor: Brightness & Contrast` —— 7/15 个有
+- `LayerColor: ColorTemperature` —— 7/15 个有
+- `FluxKontextImageScale` —— 4/15 个有
+- `GetImageSize+` —— 4/15 个有
+- `ImpactSwitch` —— 4/15 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/15 个有
+- `AnyBooleanSwitch` —— 3/15 个有
+- `孤海注释` —— 3/15 个有
+- `EmptyImage` —— 1/15 个有
+- `ExecutionBlocker` —— 1/15 个有
+- `PrimitiveBoolean` —— 1/15 个有
+- `RHHiddenNodes` —— 1/15 个有
+- `workflow>加密节点` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 14 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler_ancestral | - | 14 | 86% |
-| 调度器 | simple | - | 14 | 93% |
-| 重绘幅度 | 0.86 | 0.8 - 1 | 14 | 95% |
+| 采样步数 | 10 | 4 - 10 | 15 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
+| 采样算法 | heun | - | 15 | 67% |
+| 调度器 | beta | - | 15 | 67% |
+| 重绘幅度 | 0.1 | 0.1 - 1 | 15 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 28/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 25/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，14 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，14 个样本，一致性 86%
-- 调度器 最常用 simple，14 个样本，一致性 93%
-- 重绘幅度 中位数 0.86，观测区间 0.8 - 1，14 个样本，取值集中（一致性 95%）
-- 高发问题（28/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 4 - 10，15 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 heun，15 个样本，一致性 67%
+- 调度器 最常用 beta，15 个样本，一致性 67%
+- 重绘幅度 中位数 0.1，观测区间 0.1 - 1，15 个样本，取值分散，一致性仅 0%
+- 高发问题（25/15 个样本）：Steps较低可能导致细节不足

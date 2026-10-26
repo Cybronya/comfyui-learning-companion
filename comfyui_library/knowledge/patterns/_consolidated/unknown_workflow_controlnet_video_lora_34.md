@@ -3,75 +3,63 @@ name: unknown_workflow_controlnet_video_lora_34
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4915
-common_nodes: [CLIPVisionLoader, CR Prompt Text, GetNode, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SDPoseOODLoader, SDPoseOODProcessor, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader]
+coverage: 0.9565
+common_nodes: [Audio Duration (mtb), CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJ, ImageResizeKJv2, IndexTTS2Run, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MaxNode, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveStringMultiline, SaveAudio, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json, 视频生成/图生视频/animate动作迁移_1983367608349171713.json]
+members: [数字人/数字人/图生数字人、动物、MultiTalk + IndexTTS2语音克隆_2004539486237327361.json, 视频生成/图生视频/图生数字人、动物、角色--MultiTalk+IndexTTS2语音克隆_1936336489322041346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json、视频生成/图生视频/animate动作迁移_1983367608349171713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/图生数字人、动物、MultiTalk + IndexTTS2语音克隆_2004539486237327361.json、视频生成/图生视频/图生数字人、动物、角色--MultiTalk+IndexTTS2语音克隆_1936336489322041346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Audio Duration (mtb)`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `GetNode`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `JWInteger`
+- `IndexTTS2Run`
+- `Int`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MaxNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveStringMultiline`
+- `SaveAudio`
+- `VHS_LoadAudioUpload`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `YOLOModelLoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
-- `TT_img_enc_v2` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
-- `easy boolean` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `WanVideoTeaCache` —— 1/2 个有
 
 ## 典型参数
 

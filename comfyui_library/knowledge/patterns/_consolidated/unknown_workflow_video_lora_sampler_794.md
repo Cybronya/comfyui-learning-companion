@@ -3,52 +3,70 @@ name: unknown_workflow_video_lora_sampler_794
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9675
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, ImpactSwitch, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SeargePromptText, ShowText, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.703
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageResizeKJv2, JjkText, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, SaveAudioMP3, SetNode, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Switch, Text Concatenate, VHS_LoadVideo, VHS_VideoCombine, VoxCPM_TTS, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json, 视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json]
+members: [数字人/数字人/03-10-01-WAN2.1-数字人-InfiniteTalk_单人_1989933509160693761.json, 数字人/数字人/03-10-10-WAN2.1-数字人-InfiniteTalk_小香加速lora_2019178024100433921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_794
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json、视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/03-10-01-WAN2.1-数字人-InfiniteTalk_单人_1989933509160693761.json、数字人/数字人/03-10-10-WAN2.1-数字人-InfiniteTalk_小香加速lora_2019178024100433921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `ImpactSwitch`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `JjkText`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `RH_LLMAPI_NODE`
-- `SeargePromptText`
-- `ShowText`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudioMP3`
+- `SetNode`
+- `ShowText|pysssss`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Switch`
+- `Text Concatenate`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VoxCPM_TTS`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `JWFloat` —— 1/2 个有
 
 ## 典型参数
 

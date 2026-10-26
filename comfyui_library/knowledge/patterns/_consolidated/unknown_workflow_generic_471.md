@@ -3,40 +3,36 @@ name: unknown_workflow_generic_471
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.92
-common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.791667
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
+members: [图片生成/图生图/主图测试3_2041756149850050562.json, 图片生成/图生图/主图测试v2_2044657832632524802.json, 图片生成/图生图/全能图片V2_ 主图测试2_2041347813430267906.json, 图片生成/图生图/娃娃买家秀（全能v2-4k）_2048706255878889473.json, 图片生成/文生图/低价版全能图片V2-阿浩_2041061411165573122.json, 图片生成/文生图/全能图片V2_ 图生图-低价渠道版图生图工作流_2027194474086014978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_471
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/主图测试3_2041756149850050562.json、图片生成/图生图/主图测试v2_2044657832632524802.json、图片生成/图生图/全能图片V2_ 主图测试2_2041347813430267906.json、图片生成/图生图/娃娃买家秀（全能v2-4k）_2048706255878889473.json、图片生成/文生图/低价版全能图片V2-阿浩_2041061411165573122.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `LongCatVoiceCloneTTS` —— 4/6 个有
-- `NormalizeAudioLoudness` —— 4/6 个有
-- `LongCatMultiSpeakerTTS` —— 3/6 个有
-- `PreviewAny` —— 2/6 个有
-- `SaveAudio` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `MultiTextConcatenate` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
 
 ## 典型参数
 

@@ -1,65 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_389
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6208
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
+coverage: 0.721833
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/video_wan2_2_14B_t2i_halftone_1990239408819499010.json, 图片生成/文生图/video_wan2_2_数字人工作流1-生成_1953391990853521409.json, 图片生成/文生图/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json, 图片生成/文生图/wan2.2文生图和视频古典美女lora工作流-美女一致性和让wan2.2人物可控性更好_1970462683160080385.json, 图片生成/文生图/wan2.2文生图和视频美女lora工作流-美女保持完美一致性_1961428825634750466.json]
+members: [数字人/数字人/04-06-02-WAN2.2-数字人-S2V-姿势控制数字人-kijai_1990969037591093249.json, 数字人/数字人/s2v姿势控制数字人视频生成_1963631931462225922.json, 视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V头部姿势控制数字人V2_1962391778080985089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_389
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/video_wan2_2_14B_t2i_halftone_1990239408819499010.json、图片生成/文生图/video_wan2_2_数字人工作流1-生成_1953391990853521409.json、图片生成/文生图/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json、图片生成/文生图/wan2.2文生图和视频古典美女lora工作流-美女一致性和让wan2.2人物可控性更好_1970462683160080385.json、图片生成/文生图/wan2.2文生图和视频美女lora工作流-美女保持完美一致性_1961428825634750466.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/04-06-02-WAN2.2-数字人-S2V-姿势控制数字人-kijai_1990969037591093249.json、数字人/数字人/s2v姿势控制数字人视频生成_1963631931462225922.json、视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json、视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json、视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `GetNode`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `WanVideoNAG`
+全部 6 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `DWPreprocessor`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `JWStringMultiline` —— 3/5 个有
-- `JoinStringMulti` —— 3/5 个有
-- `String` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `VAEUtils_CustomVAELoader` —— 1/5 个有
-- `VAEUtils_VAEDecodeTiled` —— 1/5 个有
+- `AudioCrop` —— 5/6 个有
+- `ColorMatch` —— 5/6 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `WanVideoLoraSelectMulti` —— 5/6 个有
+- `easy anythingIndexSwitch` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `GetNode` —— 4/6 个有
+- `JWInteger` —— 4/6 个有
+- `WanVideoContextOptions` —— 4/6 个有
+- `WanVideoTextEncodeCached` —— 4/6 个有
+- `GetImageSizeAndCount` —— 3/6 个有
+- `ImageConcatMulti` —— 3/6 个有
+- `LoadWanVideoT5TextEncoder` —— 2/6 个有
+- `WanVideoTextEncode` —— 2/6 个有
+- `ACE_AudioCrop` —— 1/6 个有
+- `Anything Everywhere` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `JWString` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `WanVideoLoraSelect` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
-| 采样算法 | 2.5 | 1 - 2.5 | 5 | 61% |
-| 调度器 | ddim | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,8 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2.5，观测区间 1 - 2.5，5 个样本
-- 调度器 最常用 ddim，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

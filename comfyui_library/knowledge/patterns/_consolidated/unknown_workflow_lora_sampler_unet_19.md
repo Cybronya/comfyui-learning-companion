@@ -1,83 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_unet_19
 type: Unknown Workflow
-frequency: 19
-level: moderate
-coverage: 0.837158
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+frequency: 20
+level: strong
+coverage: 0.725
+common_nodes: [CLIPLoader, EmptySD3LatentImage, GetNode, ImageResizeKJv2, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PrimitiveInt, SaveImage, SetNode, Text Multiline, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI生成你的前世今生_2041434675314429954.json, 图片生成/图生图/AI生成你的前世今生_2087720266213449729.json, 图片生成/图生图/FireRed Image Edit一键换装_+换衣电商服装系列_2061592741133508609.json, 图片生成/图生图/FireRed-Edit 最强开源模型_2026883018471772161.json, 图片生成/图生图/FireRed-Image-Edit  人物换装换衣_2079505468896141314.json, 图片生成/图生图/FireRed-Image-Edit 1.1图片编辑模型，最多三图_2026952933660696578.json, 图片生成/图生图/FireRed-Image-Edit 1.1多图片编辑模型_2029858512251133954.json, 图片生成/图生图/FireRed-Image-Edit 小红书  一键换衣_2041757058877366274.json, 图片生成/图生图/FireRed-Image-Edit 小红书 换衣服 一键换衣_2035953103727501314.json, 图片生成/图生图/FireRed-Image-Edit 小红书 换衣服 一键换衣_2039363350714392578.json, 图片生成/图生图/FireRed-Image-Edit 小红书一键换衣_2038123021789044738.json, 图片生成/图生图/FireRed-Image-Edit一键换装  电商服装快速换装换衣_2059284766104580098.json, 图片生成/图生图/FireRed-Image-Edit合集_2030966569660063746.json, 图片生成/图生图/FireRed-Image-Edit换装 换衣  电商服装展示 小红书  快速变装_2074472541913174018.json, 图片生成/图生图/qwen+image+2511单图编辑工作流x_2016850738546221057.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2003625082419355650.json, 图片生成/图生图/千问Edit2511配合lora-单图-马克笔效果图转换手绘_2016700485247438849.json, 图片生成/图生图/最新千问Qwen-Edit2511多图编辑_2003688693493841921.json, 视频生成/图生视频/最新千问Qwen-Edit2511单图编辑_2003688668789391361.json]
+members: [图片生成/图生图/Qwen 自动换装 效果炸裂 Qwen Edit Plus_1993935360845692930.json, 图片生成/图生图/Qwen自动换装=Qwen Edit Plus=艾橘溪_1971919377803243522.json, 图片生成/图生图/Qwen自动换装=Qwen Edit Plus_2049691407861944322.json, 图片生成/图生图/Qwen自动换装=Qwen Edit Plus_2050774538560000001.json, 图片生成/图生图/Qwen自动换装=Qwen Edit Plus。Nice!快来实现你的服装自由~_2019614697393229825.json, 图片生成/图生图/Qwen自动换装=Qwen+Edit+Plus_2016404512042393601.json, 图片生成/图生图/Qwen自动换装=Qwen+Edit+Plus_2043573551764082689.json, 图片生成/图生图/Qwen自动换装=Qwen+Edit_2037913702409707521.json, 图片生成/图生图/一键超丝滑人物换装_2018251027530649601.json, 图片生成/图生图/人物变装_2001536253583605761.json, 图片生成/图生图/人物换装V2_1998660901823766529.json, 图片生成/图生图/双图合成 Qwen Edit Plus=艾橘溪_1972242738039156738.json, 图片生成/图生图/双图合成 Qwen Edit Plus_2079453732571541505.json, 图片生成/图生图/超丝滑一键人物换装_2044658402135117826.json, 图片生成/图生图/超丝滑一键人物换装_2057004893273157633.json, 图片生成/图生图/超丝滑一键人物换装_2063903458717159425.json, 图片生成/图生图/超丝滑一键人物换装_2066404608926371842.json, 图片生成/文生图/Qwen Edit Plus 2image_2005489054781243393.json, 数字人/数字人/Qwen Edit Plus 1image_2005518397213470722.json, 视频生成/图生视频/图生图  简单易操作  Qwen自动换装=Qwen Edit Plus_2029100909296361474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_19
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/AI生成你的前世今生_2041434675314429954.json、图片生成/图生图/AI生成你的前世今生_2087720266213449729.json、图片生成/图生图/FireRed Image Edit一键换装_+换衣电商服装系列_2061592741133508609.json、图片生成/图生图/FireRed-Edit 最强开源模型_2026883018471772161.json、图片生成/图生图/FireRed-Image-Edit  人物换装换衣_2079505468896141314.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/Qwen 自动换装 效果炸裂 Qwen Edit Plus_1993935360845692930.json、图片生成/图生图/Qwen自动换装=Qwen Edit Plus=艾橘溪_1971919377803243522.json、图片生成/图生图/Qwen自动换装=Qwen Edit Plus_2049691407861944322.json、图片生成/图生图/Qwen自动换装=Qwen Edit Plus_2050774538560000001.json、图片生成/图生图/Qwen自动换装=Qwen Edit Plus。Nice!快来实现你的服装自由~_2019614697393229825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：20
+- **可信度**：强结论
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `GetNode`
+- `ImageResizeKJv2`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PrimitiveInt`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `SetNode`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 16/19 个有
-- `Image Comparer (rgthree)` —— 14/19 个有
-- `FluxKontextImageScale` —— 7/19 个有
-- `EmptyLatentImage` —— 6/19 个有
-- `Text Multiline` —— 5/19 个有
-- `ImpactSwitch` —— 4/19 个有
-- `Anything Everywhere3` —— 3/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/19 个有
-- `FluxResolutionNode` —— 3/19 个有
-- `RH_LLMAPI_NODE` —— 3/19 个有
-- `easy showAnything` —— 3/19 个有
-- `Text` —— 2/19 个有
-- `easy promptLine` —— 2/19 个有
-- `AIO_Preprocessor` —— 1/19 个有
-- `Int` —— 1/19 个有
+- `VAELoader` —— 18/20 个有
+- `ConditioningZeroOut` —— 16/20 个有
+- `ImageConcatMulti` —— 16/20 个有
+- `ImageStitch` —— 16/20 个有
+- `CFGNorm` —— 4/20 个有
+- `ModelSamplingAuraFlow` —— 4/20 个有
+- `TextEncodeQwenImageEdit` —— 4/20 个有
+- `CheckpointLoaderSimple` —— 2/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 15 | 19 | 46% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 19 | 100% |
-| 采样算法 | euler | - | 19 | 100% |
-| 调度器 | simple | - | 19 | 63% |
-| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
-| 宽度 | 896 | 512 - 1504 | 6 | 54% |
-| 高度 | 756 | 512 - 1280 | 6 | 59% |
+| 采样步数 | 8 | 8 - 8 | 20 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
+| 采样算法 | euler | - | 20 | 100% |
+| 调度器 | simple | - | 20 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 15，19 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，19 个样本，一致性 100%
-- 调度器 最常用 simple，19 个样本，一致性 63%
-- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，观测区间 512 - 1504，6 个样本
-- 高度 中位数 756，观测区间 512 - 1280，6 个样本
-- 高发问题（20/19 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，20 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，20 个样本，一致性 100%
+- 调度器 最常用 simple，20 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（20/20 个样本）：Steps较低可能导致细节不足

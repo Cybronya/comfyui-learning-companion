@@ -3,49 +3,48 @@ name: unknown_workflow_upscale_vae_10
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.812462
-common_nodes: [GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
+coverage: 0.872462
+common_nodes: [SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2模糊+变高清v2+支持4k8K出图_2044796576966643714.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054196306217840642.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054368025943519234.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054411504459501570.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️——TTP+seed VR2放大（亿级像素）_2008476095489777666.json, 图片生成/图生图/一亿像素极速放大【seedvr2分块放大】_1993128037634031617.json, 图片生成/图生图/图像8K放大-不变形_2004662548261728258.json, 图片生成/图生图/图片高清放大_SeedVR2放大_2077948514235142145.json, 图片生成/图生图/无损8k放大_2095771047361605633.json, 图片生成/图生图/无损8k放大_2096064513807306754.json, 图片生成/图生图/星绘-超清SeedVR2+无损耗压缩_2015623404509990914.json, 图片生成/图生图/模糊+变高清v2 支持4k_8K出图_2015651335382769666.json, 图片生成/图生图/（超好用！）SeedVR2+TTP一亿像素极限放大+0损耗压缩_2004539129138475009.json]
+members: [图片生成/图生图/21   永青  图片改4K高清_2016788848201699330.json, 图片生成/图生图/SeedVR2.5图片快速高清放大_2083459672052428802.json, 图片生成/图生图/SeedVR2.5图片快速高清放大_2086055129912008706.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2034162075945144322.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2087433746885734401.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2096806094365614081.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2097152097107136514.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2029828633174482946.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2099052252437766146.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2099424441473261569.json, 图片生成/图生图/食杂素材批量高清放大处理【压缩包上传+压缩包下载】_2014306372078280706.json, 图片生成/图生图/（电商流工具流）SeedVR2单图高清4K_2028382443518038017.json, 图片生成/文生图/Image2低价版+4K放大器_2048305204277284866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/SeedVR2模糊+变高清v2+支持4k8K出图_2044796576966643714.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054196306217840642.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054368025943519234.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054411504459501570.json、图片生成/图生图/⭐️⭐️⭐️⭐️⭐️——TTP+seed VR2放大（亿级像素）_2008476095489777666.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/21   永青  图片改4K高清_2016788848201699330.json、图片生成/图生图/SeedVR2.5图片快速高清放大_2083459672052428802.json、图片生成/图生图/SeedVR2.5图片快速高清放大_2086055129912008706.json、图片生成/图生图/SeedVR2.5最新版高清放大工作流_2034162075945144322.json、图片生成/图生图/SeedVR2.5最新版高清放大工作流_2087433746885734401.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `LoadImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/13 个有
-- `PreviewImage` —— 7/13 个有
-- `Float` —— 6/13 个有
-- `KOOK_ImageCompression` —— 5/13 个有
-- `easy cleanGpuUsed` —— 5/13 个有
-- `easy clearCacheAll` —— 5/13 个有
-- `easy imageScaleDownBy` —— 5/13 个有
-- `easy showAnything` —— 5/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 12/13 个有
+- `LoadImage` —— 12/13 个有
+- `ImageScaleToTotalPixels` —— 7/13 个有
+- `easy imageSize` —— 7/13 个有
+- `JoinImageWithAlpha` —— 6/13 个有
+- `ResizeImagesByLongerEdge` —— 6/13 个有
+- `CompressImages` —— 4/13 个有
+- `ImageListToBatch_` —— 4/13 个有
+- `PreviewImage` —— 2/13 个有
+- `MuyeTextEditOutput` —— 1/13 个有
+- `RHUploadZip_V2` —— 1/13 个有
+- `RH_RhartImageG2ImageToImage` —— 1/13 个有
+- `RH_RhartImageG2TextToImage` —— 1/13 个有
 
 ## 典型参数
 

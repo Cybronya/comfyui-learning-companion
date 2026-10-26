@@ -3,63 +3,67 @@ name: unknown_workflow_inpaint_sampler_clip_59
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.633
-common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FloatConstant, FluxGuidance, GetNode, GrowMaskWithBlur, ImageCompositeMasked, ImageCrop, ImageResizeKJ, ImageToMask, InpaintModelConditioning, KSampler, LoadImage, Mask Crop Region, MaskPreview+, MaskToImage, PreviewImage, SaveImage, SetNode, SimpleMathBoolean+, Text Multiline, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.75
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, EmptyImage, FeatherMask, FluxGuidance, GetNode, ImageConcanate, ImageCrop, ImageToMask, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: ColorPicker, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, SaveImage, SetNode, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/图生图/FiLL修手修一切万物均可修（烂图修复神器）_1923560566143840258.json, 图片生成/图生图/万物修复 - 可处理各种AI生图的bug的方法 comfyui 工作流_1923006903839092737.json]
+members: [图片生成/图生图/Flii+redux 万物迁移工作流_1921718199556177921.json, 图片生成/图生图/万物洗稿工作流_1920707930499518465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_59
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FiLL修手修一切万物均可修（烂图修复神器）_1923560566143840258.json、图片生成/图生图/万物修复 - 可处理各种AI生图的bug的方法 comfyui 工作流_1923006903839092737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flii+redux 万物迁移工作流_1921718199556177921.json、图片生成/图生图/万物洗稿工作流_1920707930499518465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
-- `FloatConstant`
+- `EmptyImage`
+- `FeatherMask`
 - `FluxGuidance`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
+- `ImageConcanate`
 - `ImageCrop`
-- `ImageResizeKJ`
 - `ImageToMask`
 - `InpaintModelConditioning`
 - `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ColorPicker`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `Mask Crop Region`
-- `MaskPreview+`
 - `MaskToImage`
 - `PreviewImage`
 - `SaveImage`
 - `SetNode`
-- `SimpleMathBoolean+`
-- `Text Multiline`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `BiRefNet_ModelLoader_Zho` —— 1/2 个有
+- `BiRefNet_Zho` —— 1/2 个有
+- `InspyrenetRembg` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
+| 采样步数 | 25 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -71,7 +75,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

@@ -1,80 +1,87 @@
 ---
 name: unknown_workflow_lora_sampler_vae_5
 type: Unknown Workflow
-frequency: 13
+frequency: 9
 level: strong
-coverage: 0.898538
-common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
+coverage: 0.976667
+common_nodes: [DWPreprocessor, EmptyLatentImage, GetImageSizeAndCount, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, VAEDecode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Eidt-2511-Simple三图参考图生图.json_2057396945701924866.json, 图片生成/图生图/qwen2511单手美甲迁移_1977666067403366401.json, 图片生成/图生图/qwen2511去除ai感_2013073387723165697.json, 图片生成/图生图/qwen2511图案提取_1996890196249571329.json, 图片生成/图生图/一键多图千问改图2511_2005940642993893377.json, 图片生成/图生图/三图参考合成新图 智能描述快速合成_2039164588914118657.json, 图片生成/图生图/三图参考图生图-邻家AI大女孩_2043619272265568257.json, 图片生成/图生图/升级版三图合成新图V2_2006167893603520514.json, 图片生成/图生图/图生图 三图参考人物一致性 智能描述极速版_2010646379785363457.json, 图片生成/图生图/图生图(3图参考)-分镜图-Qwen-Eidt+SeedVR_2052204516816236546.json, 图片生成/图生图/图生图(3图参考)-分镜图-Qwen-Eidt+SeedVR_2062450638046449665.json, 图片生成/图生图/恶搞神器-三图生神图-Qwen-Eidt-2511+SeedVR_2031255189180649474.json, 图片生成/图生图/皮雕一键生成_2060225712279343106.json]
+members: [图片生成/图生图/( NSF W本地解码)Qwen Edit 2511 Aio V16编辑（姿势迁移-sex tacular）_2007708424666095618.json, 图片生成/图生图/(（自用）-F2P一致性版)Qwen-Edit Aio V7.1模型双图编辑(姿势迁移)_1985320686849769473.json, 图片生成/图生图/Qwen Edit 2511 +CN+F2P新图比例双参姿势控制V1_2007451297615712258.json, 图片生成/图生图/Qwen Edit 2511 Aio V18编辑V1（姿势迁移）_2007475103805739010.json, 图片生成/图生图/Qwen Edit 2511 Union Control姿势编辑V1(动作弱控制)_2004949901496774657.json, 图片生成/图生图/Qwen Edit 2511 Union Control姿势编辑V1(强控制)_2004946550256271362.json, 图片生成/图生图/Qwen Edit 2511 Union Control姿势编辑_2005190245438160898.json, 图片生成/图生图/QwenEdit 2511+CN+F2P 原比例PAD扩展版姿势控制V1_2007453446366040066.json, 图片生成/图生图/【阿良绘】单人+多人双流：Qwen Edit 2511+Union姿势编辑控制V1.0_2006242000118489089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Qwen-Eidt-2511-Simple三图参考图生图.json_2057396945701924866.json、图片生成/图生图/qwen2511单手美甲迁移_1977666067403366401.json、图片生成/图生图/qwen2511去除ai感_2013073387723165697.json、图片生成/图生图/qwen2511图案提取_1996890196249571329.json、图片生成/图生图/一键多图千问改图2511_2005940642993893377.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/( NSF W本地解码)Qwen Edit 2511 Aio V16编辑（姿势迁移-sex tacular）_2007708424666095618.json、图片生成/图生图/(（自用）-F2P一致性版)Qwen-Edit Aio V7.1模型双图编辑(姿势迁移)_1985320686849769473.json、图片生成/图生图/Qwen Edit 2511 +CN+F2P新图比例双参姿势控制V1_2007451297615712258.json、图片生成/图生图/Qwen Edit 2511 Aio V18编辑V1（姿势迁移）_2007475103805739010.json、图片生成/图生图/Qwen Edit 2511 Union Control姿势编辑V1(动作弱控制)_2004949901496774657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPLoader`
-- `CR Text`
-- `ConditioningZeroOut`
+全部 9 个 workflow 都包含：
+- `DWPreprocessor`
 - `EmptyLatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
+- `GetImageSizeAndCount`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
+- `Text Multiline`
 - `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 12/13 个有
-- `UNETLoader` —— 12/13 个有
-- `ImageConcanate` —— 11/13 个有
-- `PreviewImage` —— 11/13 个有
-- `SeedVR2LoadDiTModel` —— 9/13 个有
-- `SeedVR2LoadVAEModel` —— 9/13 个有
-- `SeedVR2VideoUpscaler` —— 9/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/13 个有
-- `Fast Groups Muter (rgthree)` —— 8/13 个有
-- `ImageConcatMulti` —— 7/13 个有
-- `Int` —— 1/13 个有
-- `UnetLoaderGGUF` —— 1/13 个有
+- `CLIPLoader` —— 8/9 个有
+- `VAELoader` —— 8/9 个有
+- `CR Prompt Text` —— 7/9 个有
+- `ImageConcanate` —— 7/9 个有
+- `TT_img_enc` —— 7/9 个有
+- `TT_img_enc_v2` —— 7/9 个有
+- `ControlNetApplySD3` —— 6/9 个有
+- `ControlNetLoader` —— 6/9 个有
+- `DuckHideNode` —— 6/9 个有
+- `SetUnionControlNetType` —— 6/9 个有
+- `UNETLoader` —— 6/9 个有
+- `CheckpointLoaderSimple` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `Anything Everywhere` —— 1/9 个有
+- `DF_Get_image_size` —— 1/9 个有
+- `DepthAnything_V2` —— 1/9 个有
+- `Float` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 13 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
-| 宽度 | 720 | 720 - 1280 | 13 | 76% |
-| 高度 | 1280 | 720 - 1280 | 13 | 83% |
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 89% |
+| 调度器 | beta57 | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 768 | 512 - 768 | 9 | 85% |
+| 高度 | 768 | 512 - 768 | 9 | 85% |
+| ControlNet 权重 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，13 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 宽度 中位数 720，观测区间 720 - 1280，13 个样本
-- 高度 中位数 1280，观测区间 720 - 1280，13 个样本，取值集中（一致性 83%）
-- 高发问题（13/13 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 89%
+- 调度器 最常用 beta57，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 512 - 768，9 个样本，取值集中（一致性 85%）
+- 高度 中位数 768，观测区间 512 - 768，9 个样本，取值集中（一致性 85%）
+- ControlNet 权重 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（10/9 个样本）：Steps较低可能导致细节不足

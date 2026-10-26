@@ -3,70 +3,107 @@ name: image_to_image_controlnet_sampler_clip_10
 type: Image To Image
 frequency: 4
 level: strong
-coverage: 0.9425
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SaveImage, VAEDecode, VAEEncode]
-problems: []
+coverage: 0.80525
+common_nodes: [ApplyInstantIDAdvanced, ApplyPulid, Bounded Image Blend, Bounded Image Crop with Mask, CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, ControlNetLoader, DifferentialDiffusion, ImageRandomTransform+, ImageToMask, ImpactMakeImageBatch, InstantIDFaceAnalysis, InstantIDModelLoader, JWImageResizeByLongerSide, JWMaskResize, KSampler, LayerMask: MaskEdgeUltraDetail V2, LayerMask: MaskGrow, LoadImage, Mask Fill Holes, MaskToImage, PreviewImage, PulidEvaClipLoader, PulidInsightFaceLoader, PulidModelLoader, ReActorFaceSwap, RemapMaskRange, SaveImage, SetLatentNoiseMask, VAEDecode, VAEEncode, easy imageSize, easy int, easy seed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/LABUBU转绘3D立体插画_1937034572326424578.json, 图片生成/图生图/LABUBU转绘动漫游戏二次元_1936653899098935298.json, 图片生成/图生图/SD1.5 ControlNet+智能锐化 1.0_2098206538765783041.json, 图片生成/图生图/真人转绘3D立体插画_1937038246817746946.json]
+members: [图片生成/图生图/InstantID+Pulid换脸-人物背景姿势不变-v1.0_1953071498035720193.json, 图片生成/图生图/无损高质量换脸 一键生图系列_1917029740136566785.json, 图片生成/图生图/精准完美换脸三合一 _ ReActor+InstantID+Pulid 终极融合方案_1956683504673284097.json, 图片生成/图生图/高质量换脸急速版_1907053889483333633.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_sampler_clip_10
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LABUBU转绘3D立体插画_1937034572326424578.json、图片生成/图生图/LABUBU转绘动漫游戏二次元_1936653899098935298.json、图片生成/图生图/SD1.5 ControlNet+智能锐化 1.0_2098206538765783041.json、图片生成/图生图/真人转绘3D立体插画_1937038246817746946.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/InstantID+Pulid换脸-人物背景姿势不变-v1.0_1953071498035720193.json、图片生成/图生图/无损高质量换脸 一键生图系列_1917029740136566785.json、图片生成/图生图/精准完美换脸三合一 _ ReActor+InstantID+Pulid 终极融合方案_1956683504673284097.json、图片生成/图生图/高质量换脸急速版_1907053889483333633.json）
 
 - **类型**：Image To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
+- `ApplyInstantIDAdvanced`
+- `ApplyPulid`
+- `Bounded Image Blend`
+- `Bounded Image Crop with Mask`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ControlNetApplyAdvanced`
+- `ColorMatch`
 - `ControlNetLoader`
+- `DifferentialDiffusion`
+- `ImageRandomTransform+`
+- `ImageToMask`
+- `ImpactMakeImageBatch`
+- `InstantIDFaceAnalysis`
+- `InstantIDModelLoader`
+- `JWImageResizeByLongerSide`
+- `JWMaskResize`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: MaskEdgeUltraDetail V2`
+- `LayerMask: MaskGrow`
 - `LoadImage`
+- `Mask Fill Holes`
+- `MaskToImage`
 - `PreviewImage`
+- `PulidEvaClipLoader`
+- `PulidInsightFaceLoader`
+- `PulidModelLoader`
+- `ReActorFaceSwap`
+- `RemapMaskRange`
 - `SaveImage`
+- `SetLatentNoiseMask`
 - `VAEDecode`
 - `VAEEncode`
+- `easy imageSize`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 3/4 个有
-- `ConditioningZeroOut` —— 3/4 个有
-- `IPAdapterAdvanced` —— 3/4 个有
-- `IPAdapterModelLoader` —— 3/4 个有
-- `PrepImageForClipVision` —— 3/4 个有
-- `WD14Tagger|pysssss` —— 3/4 个有
-- `IPAdapterNoise` —— 2/4 个有
-- `ImageSmartSharpen+` —— 1/4 个有
-- `Morphology` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `BboxDetectorSEGS` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `LayerMask: MaskPreview` —— 2/4 个有
+- `LayerMask: PersonMaskUltra V2` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `LoraLoader` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `PMRF` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `SAMDetectorCombined` —— 2/4 个有
+- `SAMLoader` —— 2/4 个有
+- `SeedVR2` —— 2/4 个有
+- `UltralyticsDetectorProvider` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `FaceAnalysisModels` —— 1/4 个有
+- `FaceEmbedDistance` —— 1/4 个有
+- `SUPIR_Upscale` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 25 | 4 | 91% |
-| Prompt 约束强度(CFG) | 7 | 7 - 7 | 4 | 100% |
-| 采样算法 | dpmpp_2m | - | 4 | 75% |
-| 调度器 | karras | - | 4 | 75% |
-| 重绘幅度 | 1 | 0.1 - 1 | 4 | 50% |
-| ControlNet 权重 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1.4 | 1.4 - 1.5 | 4 | 97% |
+| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 调度器 | sgm_uniform | - | 4 | 100% |
+| 重绘幅度 | 0.44 | 0.44 - 0.5 | 4 | 94% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 25，4 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，4 个样本，一致性 75%
-- 调度器 最常用 karras，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 0.1 - 1，4 个样本，取值分散，一致性仅 50%
-- ControlNet 权重 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.4，观测区间 1.4 - 1.5，4 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.44，观测区间 0.44 - 0.5，4 个样本，取值集中（一致性 94%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

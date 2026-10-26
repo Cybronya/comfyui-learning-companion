@@ -3,38 +3,36 @@ name: unknown_workflow_generic_1697
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.839
-common_nodes: [CR Prompt Text, CR Text, Fast Groups Bypasser (rgthree), LayerUtility: TextJoin, LoadAudio, RH_LLMAPI_Pro_Node, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio, SaveText|pysssss, easy showAnything]
+coverage: 1
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan30PrimeImageToVideo, SaveVideo, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 单人声音克隆生成音频_2042817341829947394.json, 音频生成/音频生成/方言和跨语言克隆之神！VoxCPM2 声音设计_声音控制克隆_多人克隆（设计）--强效6合一_2042438737400963074.json]
+members: [视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1697
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 单人声音克隆生成音频_2042817341829947394.json、音频生成/音频生成/方言和跨语言克隆之神！VoxCPM2 声音设计_声音控制克隆_多人克隆（设计）--强效6合一_2042438737400963074.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: TextJoin`
 - `LoadAudio`
-- `RH_LLMAPI_Pro_Node`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `SaveAudio`
-- `SaveText|pysssss`
-- `easy showAnything`
+- `LoadImage`
+- `LoadVideo`
+- `RH_AlibabaWan30PrimeImageToVideo`
+- `SaveVideo`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_AlibabaWan30PrimeReferenceToVideo` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

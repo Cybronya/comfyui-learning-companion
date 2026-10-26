@@ -1,115 +1,84 @@
 ---
 name: unknown_workflow_video_lora_sampler_115
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.576615
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, GrowMask, ImageBlend, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewImage, PrimitiveFloat, SetNode, TorchCompileModelWanVideoV2, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 15
+level: moderate
+coverage: 0.924533
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/【视频换人】Animate +Sec扣图换人_1978713604222554114.json, 图片生成/文生图/Animate 动作迁移 人物替换 终极整合官方版 新遮罩 更精准_1978479937873137665.json, 视频生成/图生视频/Animate +Sec扣图节点 --动作迁移、人物替换 -- 想换哪里换哪里_1979733703280726017.json, 视频生成/图生视频/Animate 动作迁移 人物替换 终极整合官方版 新遮罩 更精准_1977883468296245249.json, 视频生成/图生视频/AnimateV2遮罩升级版SeC人物替换_1977328876730896386.json, 视频生成/图生视频/Wan-Animatev2.2_1971886781874499586.json, 视频生成/图生视频/Wan-Animate全自动版_1976469755416715266.json, 视频生成/图生视频/WanAnimateV2SEC自动遮罩_1978107415881211906.json, 视频生成/图生视频/Work-Fisher_Wan-Animate全自动版_1969348581830389761.json, 视频生成/图生视频/YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json, 视频生成/图生视频/动作迁移+角色替换二合一官方工作流（小显存、速度快、质量好）_2077716276075651074.json, 视频生成/图生视频/最新Wan Animate 动作迁移+人物替换  新遮罩SEC 更精准 想换哪换哪_1980798178817654785.json, 视频生成/图生视频/视频主体替换可切镜头Wan-Animate_1974073338375090178.json]
+members: [数字人/数字人/Infinitetalk双人图片对口型_1982771829699936258.json, 数字人/数字人/Infinitetalk图片对口型数字人_1958846854899380226.json, 数字人/数字人/infinitetalk图片数字人_2007300808861294593.json, 数字人/数字人/单人版InfiniteTalk超自然无限长度图生视频数字人_1965336268190138370.json, 数字人/数字人/工作流视频篇9-AI图生数字人-infinitetalk，快速简答_2014241032635944961.json, 数字人/数字人/数字人_音画同步_对口型 Infinite Talk_2007786312845238273.json, 数字人/数字人/数字人_音画同步_对口型 Infinite Talk_2009303457294979073.json, 数字人/数字人/数字人_音画同步_对口型 Infinite Talk_2032822478120161282.json, 数字人/数字人/猴哥祝福视频_2037888478544928770.json, 数字人/数字人/甜妹数字人2_2040481209309995009.json, 数字人/数字人/甜妹数字人_2040481232697430017.json, 视频生成/图生视频/动物或卡通角色数字人_2070755239396990978.json, 视频生成/图生视频/卡通动物说唱数字人_2071595025368182786.json, 视频生成/图生视频/最新版本数字人祝福视频漫剧电商服装分镜_2074655018262814722.json, 视频生成/图生视频/跨境电商数字人开口说话V2_2079398249361920002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_115
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/【视频换人】Animate +Sec扣图换人_1978713604222554114.json、图片生成/文生图/Animate 动作迁移 人物替换 终极整合官方版 新遮罩 更精准_1978479937873137665.json、视频生成/图生视频/Animate +Sec扣图节点 --动作迁移、人物替换 -- 想换哪里换哪里_1979733703280726017.json、视频生成/图生视频/Animate 动作迁移 人物替换 终极整合官方版 新遮罩 更精准_1977883468296245249.json、视频生成/图生视频/AnimateV2遮罩升级版SeC人物替换_1977328876730896386.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/Infinitetalk双人图片对口型_1982771829699936258.json、数字人/数字人/Infinitetalk图片对口型数字人_1958846854899380226.json、数字人/数字人/infinitetalk图片数字人_2007300808861294593.json、数字人/数字人/单人版InfiniteTalk超自然无限长度图生视频数字人_1965336268190138370.json、数字人/数字人/工作流视频篇9-AI图生数字人-infinitetalk，快速简答_2014241032635944961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **样本数**：15
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 15 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetNode`
-- `GrowMask`
-- `ImageBlend`
-- `ImageResizeKJv2`
-- `KSampler`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
-- `wanBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UnetLoaderGGUF` —— 10/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/13 个有
-- `INTConstant` —— 8/13 个有
-- `ImageConcatMulti` —— 8/13 个有
-- `easy showAnything` —— 8/13 个有
-- `PlaySound|pysssss` —— 7/13 个有
-- `SeCModelLoader` —— 7/13 个有
-- `SeCVideoSegmentation` —— 7/13 个有
-- `EmptyImage` —— 6/13 个有
-- `ImageRemoveBackground+` —— 6/13 个有
-- `PointsEditor` —— 6/13 个有
-- `RemBGSession+` —— 6/13 个有
-- `UNETLoader` —— 6/13 个有
-- `CR Model Input Switch` —— 5/13 个有
-- `DownloadAndLoadGIMMVFIModel` —— 5/13 个有
-- `Fast Bypasser (rgthree)` —— 5/13 个有
-- `GIMMVFI_interpolate` —— 5/13 个有
-- `ImpactInt` —— 5/13 个有
-- `LayerUtility: PurgeVRAM` —— 5/13 个有
-- `Mute / Bypass Repeater (rgthree)` —— 5/13 个有
-- `SimpleMath+` —— 5/13 个有
-- `easy convertAnything` —— 5/13 个有
-- `easy int` —— 5/13 个有
-- `GGUFLoaderKJ` —— 3/13 个有
-- `JjkText` —— 2/13 个有
-- `RIFE VFI` —— 2/13 个有
-- `easy cleanGpuUsed` —— 2/13 个有
-- `ImageFromBatch` —— 1/13 个有
-- `ImageResizeKJ` —— 1/13 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/13 个有
-- `Note Plus (mtb)` —— 1/13 个有
-- `SaveImage` —— 1/13 个有
-- `TT_img_enc_v2` —— 1/13 个有
+- `AudioCrop` —— 14/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/15 个有
+- `WanVideoBlockSwap` —— 13/15 个有
+- `CR Prompt Text` —— 11/15 个有
+- `JWInteger` —— 11/15 个有
+- `LoadWanVideoT5TextEncoder` —— 10/15 个有
+- `WanVideoTextEncode` —— 10/15 个有
+- `PreviewImage` —— 8/15 个有
+- `easy mathInt` —— 7/15 个有
+- `1hew_AudioDuration` —— 6/15 个有
+- `JWFloat` —— 6/15 个有
+- `easy showAnything` —— 6/15 个有
+- `GetImageSizeAndCount` —— 5/15 个有
+- `WanVideoTextEncodeCached` —— 5/15 个有
+- `INTConstant` —— 4/15 个有
+- `PreviewAudio` —— 4/15 个有
+- `WanVideoTorchCompileSettings` —— 4/15 个有
+- `ImageResizeKJv2` —— 3/15 个有
+- `VRGDG_AudioCropTime` —— 3/15 个有
+- `Anything Everywhere` —— 2/15 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/15 个有
+- `Number to Int` —— 2/15 个有
+- `Text to Number` —— 2/15 个有
+- `ImageConcatenate_UTK` —— 1/15 个有
+- `MaskFix+` —— 1/15 个有
+- `MaskToImage` —— 1/15 个有
+- `QuadMaskWarper` —— 1/15 个有
+- `SaveAudio` —— 1/15 个有
+- `SeparateMasks` —— 1/15 个有
+- `easy int` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 13 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | sa_solver | - | 13 | 100% |
-| 调度器 | beta | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，13 个样本，一致性 100%
-- 调度器 最常用 beta，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 高发问题（13/13 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,85 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_190
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8266
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.618545
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版V2（大幅度增加时长）_1936304565509607426.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版（UNI3C运镜版）_1936341490123837441.json, 视频生成/图生视频/MultiTalk对口型（万相实现）+uni3C运镜控制_1937801479434735618.json, 视频生成/图生视频/MultiTalk数字人口播单人版_1940606353897402370.json, 视频生成/图生视频/MultiTalk最强数字人插件16G可玩，音频+图片=王炸数字人_1937864518498455553.json, 视频生成/图生视频/MultiTalk：超6倍加速，超逼真顶流K歌数字人_1936605606658625537.json, 视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json, 视频生成/图生视频/Multitalk数字人（极速版）_1937674986381295618.json, 视频生成/图生视频/💂‍【大炮数字人】音乐自动生成+数字人对口型💂‍_1937733481621557249.json]
+members: [视频生成/图生视频/SteadyDancer动作迁移视频生视频_1996042760450981890.json, 视频生成/图生视频/SteadyDancer动作迁移视频生视频_2069666439010807809.json, 视频生成/图生视频/SteadyDancer动作迁移高级版_1996065856805355521.json, 视频生成/图生视频/SteadyDancer跳舞动作迁移_2051153118703955970.json, 视频生成/图生视频/SteadyDancer骨骼迁移~不限时长版，绝！_2049307460728524802.json, 视频生成/图生视频/SteadyDancer骨骼迁移~不限时长版，绝！_2049678404324208642.json, 视频生成/图生视频/SteadyDancer（最高质量版-视线完美）所有参数清楚明白_2009099537780056065.json, 视频生成/图生视频/SteadyDance最强人物一致性迁移工作流_1999779350897717249.json, 视频生成/图生视频/WAN SteadyDancer  舞蹈生成 动作姿态迁移 （不限时长版）_2004915777457319937.json, 视频生成/图生视频/Wan+SteadyDancer+卡通姿势复刻_1995897801131409409.json, 视频生成/图生视频/Wan_SteadyDancer_视频动作迁移(单人)_2006239451319635970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_190
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json、视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版V2（大幅度增加时长）_1936304565509607426.json、视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版（UNI3C运镜版）_1936341490123837441.json、视频生成/图生视频/MultiTalk对口型（万相实现）+uni3C运镜控制_1937801479434735618.json、视频生成/图生视频/MultiTalk数字人口播单人版_1940606353897402370.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer动作迁移视频生视频_1996042760450981890.json、视频生成/图生视频/SteadyDancer动作迁移视频生视频_2069666439010807809.json、视频生成/图生视频/SteadyDancer动作迁移高级版_1996065856805355521.json、视频生成/图生视频/SteadyDancer跳舞动作迁移_2051153118703955970.json、视频生成/图生视频/SteadyDancer骨骼迁移~不限时长版，绝！_2049307460728524802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 11 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 9/10 个有
-- `WanVideoBlockSwap` —— 9/10 个有
-- `WanVideoClipVisionEncode` —— 9/10 个有
-- `JWIntegerToString` —— 8/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
-- `PrimitiveInt` —— 7/10 个有
-- `easy cleanGpuUsed` —— 7/10 个有
-- `Audio Duration (mtb)` —— 6/10 个有
-- `PrimitiveFloat` —— 6/10 个有
-- `TextInput_` —— 6/10 个有
-- `easy showAnything` —— 6/10 个有
-- `JWInteger` —— 5/10 个有
-- `LayerUtility: PurgeVRAM` —— 5/10 个有
-- `VHS_LoadVideo` —— 5/10 个有
-- `WanVideoEncode` —— 5/10 个有
-- `WanVideoUni3C_ControlnetLoader` —— 5/10 个有
-- `WanVideoUni3C_embeds` —— 5/10 个有
-- `ImageResizeKJ` —— 4/10 个有
-- `WanVideoContextOptions` —— 4/10 个有
-- `WanVideoTorchCompileSettings` —— 4/10 个有
-- `ImageResizeKJv2` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `CreateCFGScheduleFloatList` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `INTConstant` —— 2/10 个有
-- `CR Text Concatenate` —— 1/10 个有
-- `DF_Integer` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
-- `RH_Captioner` —— 1/10 个有
-- `RH_LLMAPI_NODE` —— 1/10 个有
-- `SaveAudio` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
-- `SongGeneration_Sampler` —— 1/10 个有
-- `SongGeneration_Stage1` —— 1/10 个有
-- `SongGeneration_Stage2` —— 1/10 个有
-- `Text` —— 1/10 个有
-- `VHS_DuplicateImages` —— 1/10 个有
-- `easy anythingIndexSwitch` —— 1/10 个有
+- `GetImageSizeAndCount` —— 10/11 个有
+- `WanVideoScheduler` —— 10/11 个有
+- `WanVideoSetLoRAs` —— 9/11 个有
+- `Int` —— 8/11 个有
+- `PoseDetectionOneToAllAnimation` —— 8/11 个有
+- `WanVideoBlockSwap` —— 8/11 个有
+- `ImageConcatMulti` —— 7/11 个有
+- `DrawViTPose` —— 6/11 个有
+- `PoseAndFaceDetection` —— 6/11 个有
+- `WanVideoSetBlockSwap` —— 6/11 个有
+- `PreviewImage` —— 5/11 个有
+- `WanVideoTorchCompileSettings` —— 4/11 个有
+- `CR Prompt Text` —— 3/11 个有
+- `INTConstant` —— 3/11 个有
+- `TextInput_` —— 3/11 个有
+- `easy cleanGpuUsed` —— 3/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/11 个有
+- `SimpleMath+` —— 2/11 个有
+- `easy clearCacheAll` —— 2/11 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/11 个有
+- `GIMMVFI_interpolate` —— 1/11 个有
+- `Label (rgthree)` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
+- `Text` —— 1/11 个有
+- `Text Multiline` —— 1/11 个有
+- `WanVideoLoraSelectMulti` —— 1/11 个有
+- `easy convertAnything` —— 1/11 个有
+- `ttN text` —— 1/11 个有
 
 ## 典型参数
 

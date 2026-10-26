@@ -3,39 +3,43 @@ name: unknown_workflow_generic_1029
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.914
-common_nodes: [CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, LoadImage, RegexReplace, SaveVideo, easy promptConcat, easy showAnything]
+coverage: 0.781667
+common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageBatchGet, ImageToMask, LayerUtility: LaMa, LoadImage, MaskToImage, PreviewImage, SAMModelLoader (segment anything), SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json, 视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json, 视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json]
+members: [图片生成/图生图/图像去水印+放大_1942480718805274626.json, 图片生成/图生图/图像去水印（全自动）_1915291152122318850.json, 图片生成/图生图/图片去水印-稳定高效版_1931584333021118465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1029
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json、视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json、视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像去水印+放大_1942480718805274626.json、图片生成/图生图/图像去水印（全自动）_1915291152122318850.json、图片生成/图生图/图片去水印-稳定高效版_1931584333021118465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `ImageBatchGet`
+- `ImageToMask`
+- `LayerUtility: LaMa`
 - `LoadImage`
-- `RegexReplace`
-- `SaveVideo`
-- `easy promptConcat`
-- `easy showAnything`
+- `MaskToImage`
+- `PreviewImage`
+- `SAMModelLoader (segment anything)`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewReferenceToVideo` —— 1/3 个有
+- `SetNode` —— 2/3 个有
+- `VHS_DuplicateMasks` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `PMRF` —— 1/3 个有
 
 ## 典型参数
 

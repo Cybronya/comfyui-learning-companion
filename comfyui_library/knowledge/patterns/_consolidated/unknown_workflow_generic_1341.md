@@ -3,34 +3,46 @@ name: unknown_workflow_generic_1341
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25FlareTextToImage, SaveImage]
+coverage: 0.965
+common_nodes: [DisplayImageFromURL, GetImageSize, ImageScaleBy, ImageToMask, LayerUtility: CropByMask, LayerUtility: ImageBlendAdvance V3, LayerUtility: TextImage, MaskToImage, MathExpression|pysssss, ResizeImageMaskNode, SaveImage, easy imageConcat]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-图生图_2101540406692503554.json, 图片生成/文生图/全能图片G+IMAGE2.5图片生成经济版_2100128306459926530.json]
+members: [图片生成/图生图/7502图片_2089208656658259969.json, 图片生成/图生图/二拼主图_2093954787669798913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1341
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-图生图_2101540406692503554.json、图片生成/文生图/全能图片G+IMAGE2.5图片生成经济版_2100128306459926530.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/7502图片_2089208656658259969.json、图片生成/图生图/二拼主图_2093954787669798913.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG25FlareTextToImage`
+- `DisplayImageFromURL`
+- `GetImageSize`
+- `ImageScaleBy`
+- `ImageToMask`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageBlendAdvance V3`
+- `LayerUtility: TextImage`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `ResizeImageMaskNode`
 - `SaveImage`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `CR Split String` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Crop (mtb)` —— 1/2 个有
+- `LayerUtility: RoundedRectangle` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

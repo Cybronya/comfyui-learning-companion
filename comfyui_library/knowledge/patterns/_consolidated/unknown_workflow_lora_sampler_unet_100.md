@@ -2,88 +2,95 @@
 name: unknown_workflow_lora_sampler_unet_100
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.891
-common_nodes: [CFGGuider, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuidesFromBatchIndexes, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PrimitiveBoolean, PromptRelaySmartEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SimpleMath+, SolidMask, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, easy ifElse, easy saveVideo, easy timelineEditor, easy timelineInfoOutput]
-problems: []
+level: weak
+coverage: 0.685286
+common_nodes: [CFGNorm, CLIPLoader, CropWithPadInfo, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleBy, KSampler, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, MaskPreview, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/(智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_2063189005126168577.json, 视频生成/图生视频/(智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_2063442671171104770.json, 视频生成/图生视频/(智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652813313.json, 视频生成/图生视频/(首尾帧) Ltx2.3 Singularity+EasyMedia导演工作台V3_2063140222006808577.json, 视频生成/图生视频/LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json, 视频生成/图生视频/Ltx2.3 Singularity+EasyMedia导演工作台(乱神版)V3_2063129511406952450.json, 视频生成/图生视频/开源版seedance2.0(智能多参)+Ltx2.3+Singularity+Licon-MSR_2063514127636717569.json]
+members: [图片生成/图生图/Qwen 2511 局部角色替换工作流_2042594620185513986.json, 图片生成/图生图/Qwen2511+Sam3.1万物迁移-精准迁移_2056243822400729090.json, 图片生成/图生图/Qwen2511+Sam3.1局部重绘-精准重绘_2056243804398772226.json, 图片生成/文生图/2511无痕换头重绘贴回大师版_2027381547103424514.json, 图片生成/文生图/重绘贴回-2511局部重绘-万物迁移_2017885601479004162.json, 图片生成/文生图/重绘贴回-2511局部重绘_2018213964676603905.json, 视频生成/文生视频/Qwen 2511 局部角色替换工作流_2041678315030843394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_100
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_2063189005126168577.json、视频生成/图生视频/(智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_2063442671171104770.json、视频生成/图生视频/(智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652813313.json、视频生成/图生视频/(首尾帧) Ltx2.3 Singularity+EasyMedia导演工作台V3_2063140222006808577.json、视频生成/图生视频/LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen 2511 局部角色替换工作流_2042594620185513986.json、图片生成/图生图/Qwen2511+Sam3.1万物迁移-精准迁移_2056243822400729090.json、图片生成/图生图/Qwen2511+Sam3.1局部重绘-精准重绘_2056243804398772226.json、图片生成/文生图/2511无痕换头重绘贴回大师版_2027381547103424514.json、图片生成/文生图/重绘贴回-2511局部重绘-万物迁移_2017885601479004162.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAddGuidesFromBatchIndexes`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `CFGNorm`
+- `CLIPLoader`
+- `CropWithPadInfo`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PromptRelaySmartEncode`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
+- `MaskPreview`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
-- `easy ifElse`
-- `easy saveVideo`
-- `easy timelineEditor`
-- `easy timelineInfoOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 4/7 个有
-- `LTXVMakeRefVideo` —— 4/7 个有
-- `easy timelineSegmentOutput` —— 4/7 个有
-- `ConditioningZeroOut` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `LTXVImgToVideoInplace` —— 3/7 个有
-- `LTXVLatentUpsampler` —— 3/7 个有
-- `LatentUpscaleModelLoader` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `SimpleMathDual+` —— 3/7 个有
-- `easy indexAnything` —— 3/7 个有
-- `PreviewImage` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `LayerUtility: ImageReel` —— 6/7 个有
+- `LayerUtility: ImageReelComposit` —— 6/7 个有
+- `MaskToImage` —— 6/7 个有
+- `QwenEditAny2Image` —— 6/7 个有
+- `QwenEditListExtractor` —— 6/7 个有
+- `TTP_Expand_And_Mask` —— 6/7 个有
+- `Image Rembg (Remove Background)` —— 5/7 个有
+- `Mask To Image (mtb)` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `PrimitiveInt` —— 5/7 个有
+- `CLIPTextEncode` —— 3/7 个有
+- `Any Switch (rgthree)` —— 2/7 个有
+- `CheckpointLoaderSimple` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `SAM3_Detect` —— 2/7 个有
+- `JWImageExtractFromBatch` —— 1/7 个有
+- `RMBG` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 - `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 24 | 24 - 24 | 7 | 100% |
+| 采样步数 | 4 | 4 - 25 | 7 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 7 | 57% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | sgm_uniform | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 25，7 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（6/7 个样本）：Steps较低可能导致细节不足

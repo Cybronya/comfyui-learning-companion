@@ -1,73 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_50
 type: Unknown Workflow
-frequency: 16
-level: moderate
-coverage: 0.913125
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 15
+level: strong
+coverage: 0.991067
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_IntToFloat, EmptyHunyuanLatentVideo, KSampler, Primitive integer [Crystools], UNETLoader, VAEDecodeTiled, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/Z-image base开源 文生图_2016345667848900609.json, 图片生成/文生图/Z-image 文生图  工作流_2041789971740233730.json, 图片生成/文生图/Z-image 文生图工作流 超真实感 去AI感_2037780063164309505.json, 图片生成/文生图/Z-image 文生图工作流 超真实感 去AI感_2039198359260504065.json, 图片生成/文生图/Z-image 文生图工作流_1995511350388523010.json, 图片生成/文生图/Z-image-base  文生图_2016315853096099842.json, 图片生成/文生图/Z-image-base文生图_2028736606961672194.json, 图片生成/文生图/Z-image-base文生图_2034907693407805441.json, 图片生成/文生图/Z-image-base蛋挞质感增强_2026161469645135874.json, 图片生成/文生图/Z-image-base造相完全体模型_2016501183799631873.json, 图片生成/文生图/Z-image真实文生图_2020214420164583425.json, 图片生成/文生图/千问Qwen-文生图工作流_2059617428597989377.json, 图片生成/文生图/千问文生图工作流_2050531241618882561.json, 图片生成/文生图/去AI感_美女lora7_2050555417696194561.json, 图片生成/文生图/小腰精_01_2037141728938958849.json, 图片生成/文生图/小腰精_胸部_2103720016867848193.json]
+members: [图片生成/反推提示词/64wsspwsb_2052437910317748225.json, 视频生成/图生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754343938.json, 视频生成/文生视频/Wan2.1 文生视频工作流_1991075086629314562.json, 视频生成/文生视频/Wan2.1(阿里万相)-文生视频_Comfyui工作流_1904365052583907330.json, 视频生成/文生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_2053727976885366786.json, 视频生成/文生视频/Wan2.1文生视频_1985682376623828994.json, 视频生成/文生视频/Wan2.1文生视频_2008116883312087041.json, 视频生成/文生视频/文生视频 开源版_2046758506686058497.json, 视频生成/文生视频/文生视频+开源版 我的刀盾_2048961068537487362.json, 视频生成/文生视频/文生视频+开源版_2047284865078398977.json, 视频生成/文生视频/文生视频+开源版_2047564573158412289.json, 视频生成/文生视频/文生视频+开源版_2048571010336694273.json, 视频生成/文生视频/文生视频_1990234180640534529.json, 视频生成/文生视频/文生视频_2046503819072249858.json, 视频生成/文生视频/文生视频_Comfyui工作流_1958378106241368066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_50
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/Z-image base开源 文生图_2016345667848900609.json、图片生成/文生图/Z-image 文生图  工作流_2041789971740233730.json、图片生成/文生图/Z-image 文生图工作流 超真实感 去AI感_2037780063164309505.json、图片生成/文生图/Z-image 文生图工作流 超真实感 去AI感_2039198359260504065.json、图片生成/文生图/Z-image 文生图工作流_1995511350388523010.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/64wsspwsb_2052437910317748225.json、视频生成/图生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754343938.json、视频生成/文生视频/Wan2.1 文生视频工作流_1991075086629314562.json、视频生成/文生视频/Wan2.1(阿里万相)-文生视频_Comfyui工作流_1904365052583907330.json、视频生成/文生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_2053727976885366786.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_IntToFloat`
+- `EmptyHunyuanLatentVideo`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `Primitive integer [Crystools]`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 15/16 个有
-- `LoraLoader` —— 7/16 个有
-- `PreviewImage` —— 6/16 个有
-- `CR Text` —— 3/16 个有
-- `TextInput_` —— 2/16 个有
-- `DapaoImageRatioLimitNode` —— 1/16 个有
-- `Note Plus (mtb)` —— 1/16 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/16 个有
+- `VHS_VideoCombine` —— 14/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/15 个有
+- `CreateVideo` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `RTXVideoSuperResolution` —— 1/15 个有
+- `SaveVideo` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 27.5 | 8 - 50 | 16 | 38% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 16 | 50% |
-| 采样算法 | res_multistep | - | 16 | 56% |
-| 调度器 | simple | - | 16 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
-| LoRA 模型强度 | 0.8 | 0.3 - 1 | 7 | 68% |
-| LoRA 文本强度 | 1 | 0.7 - 1 | 7 | 89% |
-| 宽度 | 768x1344 (0.57) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+| 采样步数 | 30 | 30 - 30 | 15 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 15 | 100% |
+| 采样算法 | uni_pc | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 15/15 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 27.5，观测区间 8 - 50，16 个样本，取值分散，一致性仅 38%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，16 个样本，取值分散，一致性仅 50%
-- 采样算法 最常用 res_multistep，16 个样本，一致性 56%
-- 调度器 最常用 simple，16 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.3 - 1，7 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.7 - 1，7 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 30，观测区间 30 - 30，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：发现KSampler但没有VAEDecode

@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1131
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, IndexTTS2EmotionVectorNode, LoadAudio, SaveAudio, SaveAudioMP3]
+coverage: 0.933333
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/单人声音克隆_2042997567839014913.json, 音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json, 音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json]
+members: [视频生成/图生视频/wan2.7首尾帧生视频_2041780403811389441.json, 视频生成/图生视频/万相2.7首尾帧生视频 数字人说话唱歌 WAN 2.7图生视频_2041040423262621698.json, 视频生成/图生视频/全能视频S.0 Image 2 Video_1977635390700048386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1131
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/单人声音克隆_2042997567839014913.json、音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json、音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.7首尾帧生视频_2041780403811389441.json、视频生成/图生视频/万相2.7首尾帧生视频 数字人说话唱歌 WAN 2.7图生视频_2041040423262621698.json、视频生成/图生视频/全能视频S.0 Image 2 Video_1977635390700048386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2EmotionVectorNode`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 2/3 个有
-- `IndexTTSNode` —— 2/3 个有
-- `IndexTTS2BaseNode` —— 1/3 个有
+- `RH_AlibabaWan27ImageToVideo` —— 2/3 个有
+- `Textbox` —— 2/3 个有
+- `RH_Sora2_I2V` —— 1/3 个有
 
 ## 典型参数
 

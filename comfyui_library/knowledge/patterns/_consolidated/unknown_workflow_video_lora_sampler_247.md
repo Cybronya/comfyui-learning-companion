@@ -1,59 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_247
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.53975
-common_nodes: [BasicGuider, BasicScheduler, ComfyMathExpression, GetNode, JWImageResizeToMegapixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader]
+coverage: 0.87
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewImage, SamplerCustom, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105263212156514306.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105989505089101826.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2107504505440002049.json, 视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2110281046800551937.json, 视频生成/图生视频/H3+Viggle免提示词动作迁移【画质强化版】_2105133693995151361.json, 视频生成/图生视频/minimax-H3+Viggle  动作迁移强化版 免提示词_2109956166884356097.json, 视频生成/图生视频/minimax-H3+Viggle  动作迁移强化版 免提示词_2109987503527784449.json, 视频生成/图生视频/动作迁移美女跳舞minimax-H3+Viggle （ 免提示词 超级简化版）_2110005406293643265.json]
+members: [视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2064190064883757058.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪，电商产品宣传_2070140251913412610.json, 视频生成/图生视频/LTX2.3-最新导演台_2063451462600052737.json, 视频生成/图生视频/导演台LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2077620703326728194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_247
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105263212156514306.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2105989505089101826.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2107504505440002049.json、视频生成/图生视频/H3+Viggle 免提示词 【动作迁移强化版】_2110281046800551937.json、视频生成/图生视频/H3+Viggle免提示词动作迁移【画质强化版】_2105133693995151361.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json、视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
+全部 9 个 workflow 都包含：
 - `BasicScheduler`
-- `ComfyMathExpression`
-- `GetNode`
-- `JWImageResizeToMegapixels`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `GuHaiAutoImageSplit`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `PreviewImage`
+- `SamplerCustom`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `ViggleAnimateConditioning`
-- `ViggleTextCondLoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Value` —— 7/8 个有
-- `GH_AudioVideoMerger` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `MuyeTextEditOutput` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `SeedVR2LoadDiTModel` —— 1/8 个有
-- `SeedVR2LoadVAEModel` —— 1/8 个有
-- `SeedVR2VideoUpscaler` —— 1/8 个有
+- `LTXDirectorGuide` —— 7/9 个有
+- `YusuLTXDirector` —— 6/9 个有
+- `CheckpointLoaderSimple` —— 5/9 个有
+- `CreateVideo` —— 5/9 个有
+- `GetVideoComponents` —— 5/9 个有
+- `UNETLoader` —— 4/9 个有
+- `孤海注释` —— 3/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `Yusu-LTXDirector` —— 2/9 个有
+- `YusuLTXDirectorGuide` —— 2/9 个有
+- `CS-LTXGridDirector` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,48 +1,41 @@
 ---
 name: unknown_workflow_generic_868
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.745667
-common_nodes: [Bjornulf_ShowInt, CR Overlay Text, CR Text, FLUXTextGenerate, FLUXTextLoad, Float, GetImageSize, ImageCropMerge, ImageScale, ImageScaleBy, Int, LayerColor: Brightness & Contrast, LayerMask: MaskBoxDetect, LayerUtility: ColorImage V2, LoadImage, MaskToImage, PreviewImage, SaveImage, SimpleMath+, easy cleanGpuUsed]
+coverage: 0.97725
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json, 图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json, 图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json]
+members: [音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_868
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json、图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json、图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CR Overlay Text`
-- `CR Text`
-- `FLUXTextGenerate`
-- `FLUXTextLoad`
-- `Float`
-- `GetImageSize`
-- `ImageCropMerge`
-- `ImageScale`
-- `ImageScaleBy`
-- `Int`
-- `LayerColor: Brightness & Contrast`
-- `LayerMask: MaskBoxDetect`
-- `LayerUtility: ColorImage V2`
-- `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
-- `SaveImage`
-- `SimpleMath+`
-- `easy cleanGpuUsed`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_DialogueGenerate`
+- `T8_IndexTTS25_DialogueScript`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_RoleLibrary`
+- `T8_IndexTTS25_VoiceProfile`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
+- `easy indexTTSGenerateSimple` —— 1/4 个有
 
 ## 典型参数
 

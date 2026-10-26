@@ -3,66 +3,74 @@ name: unknown_workflow_video_lora_sampler_538
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.502
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.875
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, JWFloatToInteger, JWImageExtractFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SimpleMath+, SoundFlow_GetLength, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json, 视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json, 视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json, 视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json]
+members: [数字人/数字人/图片对口型_2001210433275035650.json, 视频生成/图生视频/图片对口型_1966494606252814337.json, 视频生成/图生视频/图片对口型全自动多动态无限长度-单人 (Infinite talk）_1958863725044379649.json, 视频生成/图生视频/视频_图片对口型全自动无限长度-单人 (Infinite talk）_1957922626649911298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_538
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json、视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json、视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json、视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/图片对口型_2001210433275035650.json、视频生成/图生视频/图片对口型_1966494606252814337.json、视频生成/图生视频/图片对口型全自动多动态无限长度-单人 (Infinite talk）_1958863725044379649.json、视频生成/图生视频/视频_图片对口型全自动无限长度-单人 (Infinite talk）_1957922626649911298.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `JWFloatToInteger`
+- `JWImageExtractFromBatch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `WanVideoLoraSelectMulti` —— 3/4 个有
-- `CR Text` —— 2/4 个有
+- `CM_IntBinaryOperation` —— 3/4 个有
+- `LoadWanVideoT5TextEncoder` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `Any Switch (rgthree)` —— 2/4 个有
+- `AudioCrop` —— 2/4 个有
+- `Bool` —— 2/4 个有
+- `ImpactSwitch` —— 2/4 个有
 - `Int` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `LayerMask: LoadFlorence2Model` —— 1/4 个有
-- `LayerUtility: Florence2Image2Prompt` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `WanVideoContextOptions` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
+- `LoadAudio` —— 2/4 个有
+- `PrimitiveString` —— 2/4 个有
+- `SaveAudio` —— 2/4 个有
+- `ToBool` —— 2/4 个有
+- `VHS_LoadAudioUpload` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `easy ifElse` —— 2/4 个有
+- `Note _O` —— 1/4 个有
+- `WanVideoImageToVideoEncode` —— 1/4 个有
+- `WanVideoTextEncodeCached` —— 1/4 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/4 个有
+- `WanVideoUni3C_embeds` —— 1/4 个有
 
 ## 典型参数
 

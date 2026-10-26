@@ -3,50 +3,47 @@ name: unknown_workflow_video_128
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.868
-common_nodes: [ACEStepGen, GenerationParameters, GetTextFromJson, IndexTTSRun, JWStringReplace, LayerUtility: PurgeVRAM, LoadAudio, LoadJsonFromText, LoadVideo, MultiLineLyrics, MultiLinePromptACES, PrimitiveStringMultiline, RH_HeyGemNode, RH_LLMAPI_NODE, ReplaceText, SaveAudio, SaveVideo, ShowText, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, easy saveText, easy showAnything]
+coverage: 0.7
+common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageBatchGet, ImageToMask, LayerUtility: LaMa, MaskToImage, PreviewImage, SAMModelLoader (segment anything), VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeyGem音乐数字人_仅需主题2分钟生成长视频数字人_1925690454367490050.json, 音频生成/音频生成/Index声音克隆+heygem视频数字人强强联合_1925755292515274753.json]
+members: [视频生成/图生视频/视频去水印全自动识别_1982367593988276225.json, 视频生成/图生视频/视频去水印（全自动）_1915249937083469825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_128
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeyGem音乐数字人_仅需主题2分钟生成长视频数字人_1925690454367490050.json、音频生成/音频生成/Index声音克隆+heygem视频数字人强强联合_1925755292515274753.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频去水印全自动识别_1982367593988276225.json、视频生成/图生视频/视频去水印（全自动）_1915249937083469825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACEStepGen`
-- `GenerationParameters`
-- `GetTextFromJson`
-- `IndexTTSRun`
-- `JWStringReplace`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
-- `LoadJsonFromText`
-- `LoadVideo`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `PrimitiveStringMultiline`
-- `RH_HeyGemNode`
-- `RH_LLMAPI_NODE`
-- `ReplaceText`
-- `SaveAudio`
-- `SaveVideo`
-- `ShowText`
-- `Text Concatenate`
-- `Text Multiline`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `ImageBatchGet`
+- `ImageToMask`
+- `LayerUtility: LaMa`
+- `MaskToImage`
+- `PreviewImage`
+- `SAMModelLoader (segment anything)`
+- `VHS_DuplicateMasks`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy saveText`
-- `easy showAnything`
+- `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
 
 ## 典型参数
 

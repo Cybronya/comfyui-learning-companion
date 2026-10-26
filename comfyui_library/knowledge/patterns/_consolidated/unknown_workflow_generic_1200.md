@@ -1,35 +1,45 @@
 ---
 name: unknown_workflow_generic_1200
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [ImageToMask, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.577333
+common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json, 图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json]
+members: [音频生成/音频生成/Qwen3TTS-声音克隆—剪辑后期补救小助手_2079779281244344321.json, 音频生成/音频生成/【阿良绘】LongCat语音克隆 _（适合短语音克隆）_2063169655795179521.json, 音频生成/音频生成/三七-（sanqi）语音克隆_2062100898129731586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1200
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json、图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3TTS-声音克隆—剪辑后期补救小助手_2079779281244344321.json、音频生成/音频生成/【阿良绘】LongCat语音克隆 _（适合短语音克隆）_2063169655795179521.json、音频生成/音频生成/三七-（sanqi）语音克隆_2062100898129731586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageToMask`
-- `LoadImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `CR Prompt Text`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 1/2 个有
-- `LayerUtility: LaMa` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LongCatMultiSpeakerTTS` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

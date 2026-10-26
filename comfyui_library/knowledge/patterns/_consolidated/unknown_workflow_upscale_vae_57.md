@@ -3,33 +3,36 @@ name: unknown_workflow_upscale_vae_57
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy imageRemBg]
+coverage: 0.9
+common_nodes: [LayerUtility: PurgeVRAM V2, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/详情图到白底图+高清_2065104369812590593.json, 图片生成/图生图/详情图到白底图+高清_2067519776129372161.json]
+members: [图片生成/图生图/电商水彩画类型专用_放大5900（T恤定制 300 DPI）_2078689075812454402.json, 图片生成/图生图/细节爆炸！让你的图片从“能看”到“震撼”！双重无损高清放大SeedVR2.5_2062500413340995585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_57
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/详情图到白底图+高清_2065104369812590593.json、图片生成/图生图/详情图到白底图+高清_2067519776129372161.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商水彩画类型专用_放大5900（T恤定制 300 DPI）_2078689075812454402.json、图片生成/图生图/细节爆炸！让你的图片从“能看”到“震撼”！双重无损高清放大SeedVR2.5_2062500413340995585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy imageRemBg`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1549
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.606
-common_nodes: [Comfly_Googel_Veo3, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 1
+common_nodes: [SaveImage, SeedVR2, SeedVR2ExtraArgs]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json, 视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json]
+members: [图片生成/图生图/模糊图片变高清_2011377317892857857.json, "图片生成/文生图/全能G工作流｜一键生成电影级图像,4K超清直出_2047296945349201922.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1549
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json、视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/模糊图片变高清_2011377317892857857.json、图片生成/文生图/全能G工作流｜一键生成电影级图像,4K超清直出_2047296945349201922.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_Googel_Veo3`
-- `LoadImage`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `SeedVR2`
+- `SeedVR2ExtraArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_kling_videoPreview` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
+- `ImageURLLoader` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
 
 ## 典型参数
 

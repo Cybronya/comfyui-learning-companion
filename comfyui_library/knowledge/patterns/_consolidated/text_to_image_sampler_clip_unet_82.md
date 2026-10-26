@@ -3,26 +3,27 @@ name: text_to_image_sampler_clip_unet_82
 type: Text To Image
 frequency: 8
 level: moderate
-coverage: 0.991125
-common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.899
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图 Qwen2512  领军模型 完美中文_2065251202434158594.json, 图片生成/文生图/文生图 Qwen2512  领军模型 完美中文_2091791668021387265.json, 图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2069706999738232833.json, 图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2069712042256322562.json, 图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2074652970565853186.json, 图片生成/文生图/文生图-Qwen3_2054442703181631489.json, 图片生成/文生图/文生图-krea2_2069932258559086593.json, 图片生成/文生图/文生图-人像生成写实风格_2091172485961175041.json]
+members: [图片生成/文生图/2031033876067393537.json, 图片生成/文生图/2031306114851147777.json, 图片生成/文生图/251225001.013. Z image_v3升级版更强提示词理解_2004252074999246849.json, 图片生成/文生图/87time 造相-Z-Image-Turbo_1992926870398238721.json, 图片生成/文生图/9 个 Krea 2 LoRA 测试_2069657247956946945.json, 图片生成/文生图/Krea2双相成片术｜RAW起稿×Turbo收束_2072657822646624257.json, 图片生成/文生图/Krea2合并模型实现_2072942696737632257.json, 图片生成/文生图/Krea2质感解锁核心流｜条件控制增强版_2072681347575017474.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_82
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/文生图 Qwen2512  领军模型 完美中文_2065251202434158594.json、图片生成/文生图/文生图 Qwen2512  领军模型 完美中文_2091791668021387265.json、图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2069706999738232833.json、图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2069712042256322562.json、图片生成/文生图/文生图+Qwen2512++领军模型+完美中文_2074652970565853186.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/2031033876067393537.json、图片生成/文生图/2031306114851147777.json、图片生成/文生图/251225001.013. Z image_v3升级版更强提示词理解_2004252074999246849.json、图片生成/文生图/87time 造相-Z-Image-Turbo_1992926870398238721.json、图片生成/文生图/9 个 Krea 2 LoRA 测试_2069657247956946945.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
@@ -32,39 +33,44 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 7/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `ImageUpscaleWithModel` —— 2/8 个有
-- `KOOK_ImageCompression` —— 2/8 个有
-- `UpscaleModelLoader` —— 2/8 个有
-- `CLIPLoaderGGUF` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
+- `ConditioningZeroOut` —— 6/8 个有
+- `FluxResolutionNode` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `ComfyUI-Krea2T-Enhancer` —— 2/8 个有
+- `ConditioningKrea2Rebalance` —— 2/8 个有
+- `AnyAspectRatio` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `LoraLoader` —— 1/8 个有
+- `Power Lora Loader (rgthree)` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 8 - 25 | 8 | 61% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 8 | 49% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
+| 宽度 | 1052 | 832 - 1920 | 8 | 73% |
+| 高度 | 1452 | 720 - 1920 | 8 | 73% |
+| 采样步数 | 9 | 7 - 30 | 8 | 43% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 32% |
+| 采样算法 | euler | - | 8 | 62% |
+| 调度器 | simple | - | 8 | 75% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1080 | 768 - 1920 | 8 | 63% |
-| 高度 | 1080 | 1024 - 1536 | 8 | 86% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 25，8 个样本
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，8 个样本，取值分散，一致性仅 49%
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
+- 宽度 中位数 1052，观测区间 832 - 1920，8 个样本
+- 高度 中位数 1452，观测区间 720 - 1920，8 个样本
+- 采样步数 中位数 9，观测区间 7 - 30，8 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 32%
+- 采样算法 最常用 euler，8 个样本，一致性 62%
+- 调度器 最常用 simple，8 个样本，一致性 75%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 768 - 1920，8 个样本
-- 高度 中位数 1080，观测区间 1024 - 1536，8 个样本，取值集中（一致性 86%）
+- 高发问题（12/8 个样本）：Steps较低可能导致细节不足

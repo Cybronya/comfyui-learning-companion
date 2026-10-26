@@ -1,54 +1,64 @@
 ---
 name: unknown_workflow_sampler_unet_vae_297
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.864
-common_nodes: [BasicScheduler, CLIPLoader, CR Text, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SamplerCustom, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.721667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/V3 Boogu-Image 批量电商主图  本地可跑 适合于 情趣 养生 等类目_2068702253560717313.json, 图片生成/图生图/V3 Boogu-Image 批量详情 10张  开源本地可跑_2068718937306652673.json]
+members: [视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json, 视频生成/图生视频/迄今超强MiniMax-H3开源版  多图or最多9分镜图全能参考 图生视频数字人口播产品带货AI漫剧，仿真人剧福音-2倍速！量化加速版_1953694457269026818.json, 视频生成/文生视频/MiniMax+H3+多图参考+官方提示词模板+提速40%无劣化+真人短剧剧情演绎_2095730598064250881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_297
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/V3 Boogu-Image 批量电商主图  本地可跑 适合于 情趣 养生 等类目_2068702253560717313.json、图片生成/图生图/V3 Boogu-Image 批量详情 10张  开源本地可跑_2068718937306652673.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json、视频生成/图生视频/迄今超强MiniMax-H3开源版  多图or最多9分镜图全能参考 图生视频数字人口播产品带货AI漫剧，仿真人剧福音-2倍速！量化加速版_1953694457269026818.json、视频生成/文生视频/MiniMax+H3+多图参考+官方提示词模板+提速40%无劣化+真人短剧剧情演绎_2095730598064250881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
+- `CreateVideo`
 - `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
-- `SamplerCustom`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy promptLine`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ComfyMathExpression` —— 2/3 个有
+- `EasyCache` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy mathInt` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1152 | - | 2 | 78% |
-| 高度 | 1500 | - | 2 | 93% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -56,6 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1152，样本不足，未给区间，2 个样本
-- 高度 中位数 1500，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

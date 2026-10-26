@@ -1,95 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_155
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.533909
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, Int, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader]
+coverage: 0.814167
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, JWStringConcat, LoadWanVideoT5TextEncoder, ShowText|pysssss, TextConcat, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Scail-2-多参工作流。原创：肥猴和WUWU_2070429204839223298.json, 视频生成/图生视频/SCAIL2！动作迁移！角色替换！多图参考！影视二创！_2070337569765814273.json, 视频生成/图生视频/Scail-2   动作替换版_2073277807773446146.json, 视频生成/图生视频/Scail-2 高阶工作流Plus V3版【一键长视频 + 多图参考 + 动作迁移 + 背景替换】_2068175109889806337.json, 视频生成/图生视频/Scail-2 高阶工作流Plus V3版【一键长视频 + 多图参考 + 动作迁移 + 背景替换】_2068602751445200897.json, 视频生成/图生视频/Scail-2 高阶工作流Plus V3版肥猴【多图参考 + 动作迁移 + 背景替换】_2068667240626614274.json, 视频生成/图生视频/Scail-2 高阶工作流Plus版 v1.5 【多图 + 多角色参考 + 动作迁移 + 背景替换】_2067873915053101058.json, 视频生成/图生视频/Scail-2-工作流。动作迁移_2073070381749063682.json, 视频生成/图生视频/scail2-动作迁移，单_多图参考_2070686802167549953.json, 视频生成/图生视频/【阿良绘】多角色替换 _ Scail2高级工作流 （长视频+动作捕捉+多角色替换）_2074674360849354753.json, 视频生成/图生视频/阿良绘Scail2测试-长视频071_2073289160070545408.json]
+members: [图片生成/图生图/wan2.2图生视频自主prompt＋AI扩写＋API指令融合_1955216249916571650.json, 图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_1950813995445977090.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1950934552208416770.json, 视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1950823826609348610.json, 视频生成/图生视频/(KJ版4步版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1953756753928355841.json, 视频生成/图生视频/(本地解码KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1954077934976061442.json, 视频生成/图生视频/(（自用）KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1952585965787385858.json, 视频生成/图生视频/Comfy挑战赛第一期自动化视频猫猫转身（每周100美金）_1958457023132286977.json, 视频生成/图生视频/Wan2.2 6步差异模型Sigma调度3迭代图生视频动态加速版V3_1956010463471566849.json, 视频生成/图生视频/图生视频（Wan2.2-V2）高动态加速版_1956567836586070018.json, 视频生成/文生视频/（自用）Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1952587209671159809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_155
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Scail-2-多参工作流。原创：肥猴和WUWU_2070429204839223298.json、视频生成/图生视频/SCAIL2！动作迁移！角色替换！多图参考！影视二创！_2070337569765814273.json、视频生成/图生视频/Scail-2   动作替换版_2073277807773446146.json、视频生成/图生视频/Scail-2 高阶工作流Plus V3版【一键长视频 + 多图参考 + 动作迁移 + 背景替换】_2068175109889806337.json、视频生成/图生视频/Scail-2 高阶工作流Plus V3版【一键长视频 + 多图参考 + 动作迁移 + 背景替换】_2068602751445200897.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/wan2.2图生视频自主prompt＋AI扩写＋API指令融合_1955216249916571650.json、图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_1950813995445977090.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1950934552208416770.json、视频生成/图生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写图生视频加速版V1_1950823826609348610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `VHS_LoadVideo`
+全部 12 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `JWStringConcat`
+- `LoadWanVideoT5TextEncoder`
+- `ShowText|pysssss`
+- `TextConcat`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConvertOpenPoseKeypointsToDWPose` —— 10/11 个有
-- `ImageBatchMulti` —— 10/11 个有
-- `LoadNLFModel` —— 10/11 个有
-- `NLFPredict` —— 10/11 个有
-- `OnnxDetectionModelLoader` —— 10/11 个有
-- `PoseDetectionVitPoseToDWPose` —— 10/11 个有
-- `PrimitiveBoolean` —— 10/11 个有
-- `RenderNLFPoses` —— 10/11 个有
-- `SDPoseKeypointExtractor` —— 10/11 个有
-- `WanAnimatePlus ClipVisionEncode V2` —— 10/11 个有
-- `AutoRefCollage` —— 9/11 个有
-- `ComfySwitchNodeV2` —— 9/11 个有
-- `FastGroupsBypassSwitch` —— 9/11 个有
-- `GetNode` —— 9/11 个有
-- `INTConstant` —— 9/11 个有
-- `ImageBatchMultiV2` —— 9/11 个有
-- `Seed (rgthree)` —— 9/11 个有
-- `SetNode` —— 9/11 个有
-- `WanVideoTextEncodeCached` —— 9/11 个有
-- `WanVideoTorchCompileSettings` —— 8/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
-- `InvertBoolean` —— 7/11 个有
-- `PlaySound|pysssss` —— 7/11 个有
-- `Label (rgthree)` —— 5/11 个有
-- `Any Switch (rgthree)` —— 3/11 个有
-- `GetImageSize` —— 3/11 个有
-- `CR Text` —— 2/11 个有
-- `ImageFromBatch` —— 2/11 个有
-- `JjkText` —— 2/11 个有
-- `SimpleMath+` —— 2/11 个有
-- `WanAnimatePlus TextEncodeCached` —— 2/11 个有
-- `easy int` —— 2/11 个有
-- `easy seed` —— 2/11 个有
-- `Image Blank` —— 1/11 个有
-- `ImageCompositeMasked` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `RepeatImageBatch` —— 1/11 个有
-- `SAM3_TrackToMask` —— 1/11 个有
-- `WanAnimatePlus ClipVisionEncode` —— 1/11 个有
-- `WanAnimatePlus ContextOptions` —— 1/11 个有
-- `WanVideoContextOptions` —— 1/11 个有
-- `easy ifElse` —— 1/11 个有
-- `孤海注释` —— 1/11 个有
+- `LoadImage` —— 11/12 个有
+- `RH_LLMAPI_NODE` —— 11/12 个有
+- `Wan22PromptSelector` —— 11/12 个有
+- `JWInteger` —— 10/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/12 个有
+- `LayerUtility: PurgeVRAM` —— 10/12 个有
+- `RH_Captioner` —— 10/12 个有
+- `WanVideoImageToVideoEncode` —— 10/12 个有
+- `WanVideoTorchCompileSettings` —— 10/12 个有
+- `GetImageSizeAndCount` —— 9/12 个有
+- `ImageFromBatch+` —— 9/12 个有
+- `FloatToSigmas` —— 3/12 个有
+- `LoadLatent` —— 3/12 个有
+- `SaveImage` —— 3/12 个有
+- `StringToFloatList` —— 3/12 个有
+- `Int` —— 2/12 个有
+- `MathExpression|pysssss` —— 2/12 个有
+- `SaveLatent` —— 2/12 个有
+- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `GLM_Text_Chat` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
+- `LoadVideo` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,71 +1,89 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_13
 type: Text To Image
-frequency: 5
-level: strong
-coverage: 0.6706
-common_nodes: [CLIPTextEncode, CR Apply LoRA Stack, CR LoRA Stack, CheckpointLoaderSimple, EmptyLatentImage, ImageScaleBy, Int, KSampler, LatentUpscale, SaveImage, VAEDecode, VAELoader]
-problems: []
+frequency: 3
+level: weak
+coverage: 0.854333
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, INTConstant, KSampler, LatentUpscaleBy, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SaveImage, SimpleMathDual+, TTResolutionSelector, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/fgo风格_2089616207459741697.json, 图片生成/文生图/文生图+LoRA (1) (2) (1) (1)_1998630071667712001.json, 图片生成/文生图/文生图+LoRA 1.2.1.1_2041680191671508994.json, 图片生成/文生图/文生图+LoRA 1.2.1.1_2047562720291065858.json, 图片生成/文生图/武内脸图片生成_1963212956588814337.json]
+members: [图片生成/文生图/K2双采文生图批量出图 自动SD放大风格强化开源追MJ_2104761502413713409.json, 图片生成/文生图/【K2-双采V2】图生图_洗图专用_可批量_自动2K放大_风格强化_2104659775685488641.json, 图片生成/文生图/【K2-双采】文生图_可批量_自动SD放大_风格强化_开源也想追上MJ！_2104243273622708225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_13
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/fgo风格_2089616207459741697.json、图片生成/文生图/文生图+LoRA (1) (2) (1) (1)_1998630071667712001.json、图片生成/文生图/文生图+LoRA 1.2.1.1_2041680191671508994.json、图片生成/文生图/文生图+LoRA 1.2.1.1_2047562720291065858.json、图片生成/文生图/武内脸图片生成_1963212956588814337.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/K2双采文生图批量出图 自动SD放大风格强化开源追MJ_2104761502413713409.json、图片生成/文生图/【K2-双采V2】图生图_洗图专用_可批量_自动2K放大_风格强化_2104659775685488641.json、图片生成/文生图/【K2-双采】文生图_可批量_自动SD放大_风格强化_开源也想追上MJ！_2104243273622708225.json）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：3
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Apply LoRA Stack`
-- `CR LoRA Stack`
-- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageScaleBy`
-- `Int`
+- `GetImageSize+`
+- `INTConstant`
 - `KSampler`
-- `LatentUpscale`
+- `LatentUpscaleBy`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `SaveImage`
-- `VAEDecode`
+- `SimpleMathDual+`
+- `TTResolutionSelector`
+- `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `LayerUtility: TextJoinV2` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `ConditioningCombine` —— 2/5 个有
+- `MemoryCleaner` —— 2/3 个有
+- `ImageSmartSharpen+` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `easy positive` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
+- `solarL_SaveImagesToZip` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 5 | 100% |
-| 高度 | 512 | 512 - 512 | 5 | 100% |
-| 采样步数 | 30 | 25 - 30 | 5 | 93% |
-| Prompt 约束强度(CFG) | 3 | 3 - 7 | 5 | 60% |
-| 采样算法 | euler_ancestral | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 4 - 11 | 3 | 63% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 3 | 24% |
+| 采样算法 | er_sde | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 0.58 - 1 | 3 | 77% |
+| 宽度 | 1024 | 80 - 1024 | 3 | 37% |
+| 高度 | 1024 | 80 - 1024 | 3 | 37% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，观测区间 25 - 30，5 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 7，5 个样本
-- 采样算法 最常用 euler_ancestral，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 11，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，3 个样本，取值分散，一致性仅 24%
+- 采样算法 最常用 er_sde，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 0.58 - 1，3 个样本
+- 宽度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
+- 高度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/3 个样本）：发现KSampler但没有VAEDecode

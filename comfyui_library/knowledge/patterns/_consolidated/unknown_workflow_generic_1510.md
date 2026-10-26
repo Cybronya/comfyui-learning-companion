@@ -3,32 +3,35 @@ name: unknown_workflow_generic_1510
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RHHiddenNodes, SaveImage]
+coverage: 0.9535
+common_nodes: [CR Text, LoadImage, MultiTextConcatenate, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/多姿多角度多场景_2010969412634939394.json, 图片生成/文生图/空白工作流_2000896983772561410.json]
+members: [图片生成/图生图/字体设计_全能图片G_2054030361105059841.json, 图片生成/图生图/车辆多角度展示图_2062497651697999873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1510
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/多姿多角度多场景_2010969412634939394.json、图片生成/文生图/空白工作流_2000896983772561410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字体设计_全能图片G_2054030361105059841.json、图片生成/图生图/车辆多角度展示图_2062497651697999873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `RHHiddenNodes`
+- `MultiTextConcatenate`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 1/2 个有
+- `RH_RhartImageG25FlareImageToImage` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

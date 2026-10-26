@@ -2,67 +2,63 @@
 name: unknown_workflow_video_sampler_7
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.85175
-common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode]
+level: strong
+coverage: 0.86875
+common_nodes: [DiffuEraserLoader, DiffuEraserSampler, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, RepeatImageBatch, SaveImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423615982297089.json, 视频生成/图生视频/动态变装_2000450911669452801.json, 视频生成/图生视频/动态变装（支持首尾帧）_2016320506777051137.json, 视频生成/图生视频/动态变装（支持首尾帧）_2044848219955400706.json, 视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2031909424805187585.json, 视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2034804172817702913.json, 视频生成/图生视频/王炸自动反推首尾换装 Wan2.2-Insight_1982023011672956929.json, 视频生成/图生视频/首尾帧视频最新创意玩法（自动反推）_1982343398008995841.json]
+members: [图片生成/图生图/4.19号版本豆包（9_16竖版）seedance2.0水印去除+高清化V3_2045782308111785985.json, 图片生成/图生图/全能视频S横版视频动态水印消除V5（支持音频）_1974464932060205057.json, 数字人/数字人/即梦官方版seedance2.0水印去除+高清化V2（16_9横版）_2020194791643947010.json, 数字人/数字人/小云雀seedance2.0水印去除+高清化V2（16_9横版）_2020301691408617474.json, 数字人/数字人/小云雀seedance2.0水印去除+高清化V2（9_16竖版）_2020200908319100929.json, 视频生成/图生视频/4.19横版16_9豆包官方版seedance2.0水印去除+高清化V3_2045784226385104897.json, 视频生成/图生视频/Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json, 视频生成/图生视频/即梦官方版seedance2.0水印去除+高清化V2（9_16竖版）_2020315533945606146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423615982297089.json、视频生成/图生视频/动态变装_2000450911669452801.json、视频生成/图生视频/动态变装（支持首尾帧）_2016320506777051137.json、视频生成/图生视频/动态变装（支持首尾帧）_2044848219955400706.json、视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2031909424805187585.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/4.19号版本豆包（9_16竖版）seedance2.0水印去除+高清化V3_2045782308111785985.json、图片生成/图生图/全能视频S横版视频动态水印消除V5（支持音频）_1974464932060205057.json、数字人/数字人/即梦官方版seedance2.0水印去除+高清化V2（16_9横版）_2020194791643947010.json、数字人/数字人/小云雀seedance2.0水印去除+高清化V2（16_9横版）_2020301691408617474.json、数字人/数字人/小云雀seedance2.0水印去除+高清化V2（9_16竖版）_2020200908319100929.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImpactSwitch`
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `ImageConcanate`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
 - `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `RHHiddenNodes`
-- `RIFE VFI`
-- `SetNode`
+- `MaskToImage`
+- `PreviewImage`
+- `RepeatImageBatch`
+- `SaveImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `CreateVideo` —— 7/8 个有
+- `FlashVSR_SM_KSampler` —— 7/8 个有
+- `FlashVSR_SM_Model` —— 7/8 个有
+- `GetVideoComponents` —— 7/8 个有
 - `LayerUtility: PurgeVRAM V2` —— 7/8 个有
-- `LoadWanVideoT5TextEncoder` —— 7/8 个有
-- `WanVideoSetBlockSwap` —— 7/8 个有
-- `WanVideoVAELoader` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
-- `Text Concatenate` —— 6/8 个有
-- `AILab_QwenVL` —— 2/8 个有
-- `CR Text Concatenate` —— 2/8 个有
-- `ImageConcanate` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `RH_Nano_Banana_Image2Image` —— 2/8 个有
-- `RH_Translator` —— 2/8 个有
-- `SaveImage` —— 2/8 个有
-- `ShowText|pysssss` —— 2/8 个有
-- `RH_LLMAPI_NODE` —— 1/8 个有
+- `MathExpression|pysssss` —— 7/8 个有
+- `SaveVideo` —— 4/8 个有
+- `RunningHub Deepcleaner` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.07249e+09 | 3.54411e+08 - 1.84687e+09 | 7 | 55% |
+| Prompt 约束强度(CFG) | randomize | - | 7 | 100% |
+| 采样算法 | 2 | 2 - 2 | 7 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 7 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 7 | 100% |
 
 ## 常见问题
 
@@ -70,4 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.07249e+09，观测区间 3.54411e+08 - 1.84687e+09，7 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，7 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，7 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，7 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，7 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.84687e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

@@ -3,81 +3,69 @@ name: unknown_workflow_video_lora_sampler_883
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.678
-common_nodes: [Any To Any, Any To String (mtb), CR Prompt Text, CR Text, CR Text Concatenate, CreateCFGScheduleFloatList, Display Any (rgthree), DownloadAndLoadWav2VecModel, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, GODMT_SplitString, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, ImpactInt, Int, JjkText, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SDVM Image List Repeat, SaveAudio, SetNode, SimpleMath+, Text List, TextListSelelct, VHS_SelectImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WujiCleaner, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy showAnything, seed _O]
+coverage: 0.904
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageBatchMulti, ImageFromBatch+, KSampler, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Note Plus (mtb), UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/半分钟口型配音高动态短剧首选五图片生成长视频+生成配音声音_2017085757592182786.json, 视频生成/图生视频/半分钟口型配音高动态短剧首选五图片生成长视频+生成配音声音_2017275269727395842.json]
+members: [视频生成/图生视频/T8_二阶段-贞贞微笑看镜头+飞走了WAN加速图生视频_1900190550727995394.json, 视频生成/图生视频/贞贞一言不合就开大二阶段组合波动拳图生视频_1899689345941684226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_883
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/半分钟口型配音高动态短剧首选五图片生成长视频+生成配音声音_2017085757592182786.json、视频生成/图生视频/半分钟口型配音高动态短剧首选五图片生成长视频+生成配音声音_2017275269727395842.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/T8_二阶段-贞贞微笑看镜头+飞走了WAN加速图生视频_1900190550727995394.json、视频生成/图生视频/贞贞一言不合就开大二阶段组合波动拳图生视频_1899689345941684226.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any To Any`
-- `Any To String (mtb)`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `DownloadAndLoadWav2VecModel`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `GODMT_SplitString`
-- `GetNode`
-- `INTConstant`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `Int`
-- `JjkText`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageBatchMulti`
+- `ImageFromBatch+`
+- `KSampler`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `RH_GetAudioDuration`
-- `SDVM Image List Repeat`
-- `SaveAudio`
-- `SetNode`
-- `SimpleMath+`
-- `Text List`
-- `TextListSelelct`
-- `VHS_SelectImages`
+- `Note Plus (mtb)`
+- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WujiCleaner`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy lengthAnything`
-- `easy showAnything`
-- `seed _O`
+
+**可变部分**（部分 workflow 才有）：
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `Note _O` —— 1/2 个有
+- `Textbox` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -85,4 +73,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

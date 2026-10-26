@@ -1,49 +1,43 @@
 ---
 name: unknown_workflow_video_sampler_checkpoint_10
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.846
-common_nodes: [Audio Duration (mtb), AudioCombine, AudioCrop, AudioSeparation, CR Text, ImageResize+, ImpactSwitch, Int, LoadAudio, LoadImage, MathExpression|pysssss, PreviewAudio, PreviewImage, SONICSampler, SONICTLoader, SONIC_PreData, SeedVCRun, VHS_LoadVideo, VHS_VideoCombine, easy showAnything, unCLIPCheckpointLoader]
+frequency: 3
+level: moderate
+coverage: 0.516
+common_nodes: [GetNode, ImageOnlyCheckpointLoader, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/ACT-STEP+视频音频自动合成_1955959245231587330.json, 视频生成/图生视频/【歌曲翻唱】SeedVC V2+SONIC数字人_1948908892105973762.json]
+members: [数字人/数字人/sonic数字人带货-测试版，_2047593415470223361.json, 视频生成/图生视频/Sonic 数字人，一键对口型_1891727710027206657.json, 视频生成/图生视频/啊癫 sonic数字人带货_1907741322999177217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_10
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ACT-STEP+视频音频自动合成_1955959245231587330.json、视频生成/图生视频/【歌曲翻唱】SeedVC V2+SONIC数字人_1948908892105973762.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/sonic数字人带货-测试版，_2047593415470223361.json、视频生成/图生视频/Sonic 数字人，一键对口型_1891727710027206657.json、视频生成/图生视频/啊癫 sonic数字人带货_1907741322999177217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCombine`
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Text`
-- `ImageResize+`
-- `ImpactSwitch`
-- `Int`
+全部 3 个 workflow 都包含：
+- `GetNode`
+- `ImageOnlyCheckpointLoader`
 - `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PreviewAudio`
-- `PreviewImage`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
-- `SeedVCRun`
-- `VHS_LoadVideo`
+- `SetNode`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `unCLIPCheckpointLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy float` —— 1/3 个有
 
 ## 典型参数
 
@@ -55,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

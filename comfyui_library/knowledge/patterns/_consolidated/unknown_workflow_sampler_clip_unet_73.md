@@ -3,65 +3,73 @@ name: unknown_workflow_sampler_clip_unet_73
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.968417
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.889917
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json, 图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json, 图片生成/图生图/图片编辑（对比）_2094024830000656386.json, 图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056907377747783682.json, 图片生成/图生图/常用_图片_flux2_单图_2037742922816299009.json, 图片生成/图生图/建筑、室内 flux2-klein3图 编辑_2039312458275364866.json, 图片生成/图生图/更用好的换脸工作流 DarkBeast（黑兽）风格-Klein9b-BFS_2039134741198282753.json, 图片生成/图生图/最强换面流-Klein9b-BFS_2029175273211564034.json, 图片生成/图生图/贼好用的换脸-Klein9b-BFS_2087457438445424641.json, 图片生成/文生图/人像换脸丨Flux2-Klein 9B丨面部发型替换_2105644038434152450.json]
+members: [comfyui-workflow-templates-json/image_qwen_image_2512_with_2steps_lora.json, 图片生成/反推提示词/4bjs_2052395586623684609.json, 图片生成/反推提示词/50pptmake_2051255545180499970.json, 图片生成/反推提示词/72wstzs_2052609391525933058.json, 图片生成/反推提示词/79manhuawst_2053041688037347330.json, 图片生成/图生图/Z 文生图（厨房模型）_2000808844013993985.json, 图片生成/文生图/Qwen2512文生图工作流_2026224981025234945.json, 图片生成/文生图/Y-Z-Image-turbo+lenovo lora-workflow_1995640202892861441.json, 图片生成/文生图/Y-Z-Image-turbo+zit-flow-dpo-lora-workflow_2029147456390303745.json, 图片生成/文生图/Z 手持质感 文生图_2021145496873607169.json, 图片生成/文生图/Z_image告别图片单一性（蓝色多脑盒）_2000908501360799745.json, 图片生成/文生图/女团生成器_Zimage_2003080375004012545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json、图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json、图片生成/图生图/图片编辑（对比）_2094024830000656386.json、图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json、图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_2512_with_2steps_lora.json、图片生成/反推提示词/4bjs_2052395586623684609.json、图片生成/反推提示词/50pptmake_2051255545180499970.json、图片生成/反推提示词/72wstzs_2052609391525933058.json、图片生成/反推提示词/79manhuawst_2053041688037347330.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 11/12 个有
-- `GetImageSize` —— 11/12 个有
-- `SaveImage` —— 11/12 个有
-- `ConditioningZeroOut` —— 10/12 个有
-- `Image Comparer (rgthree)` —— 6/12 个有
-- `ImageScaleToTotalPixels` —— 6/12 个有
-- `ImageResize+` —— 4/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/12 个有
-- `Seed (rgthree)` —— 4/12 个有
-- `Preview from image [Crystools]` —— 1/12 个有
-- `PrimitiveStringMultiline` —— 1/12 个有
-- `RMBG` —— 1/12 个有
-- `ResizeImageNode` —— 1/12 个有
-- `SaveImageAndMetadata_` —— 1/12 个有
-- `ttN text` —— 1/12 个有
+- `ModelSamplingAuraFlow` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `easy cleanGpuUsed` —— 6/12 个有
+- `ConditioningZeroOut` —— 5/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `RTXVideoSuperResolution` —— 4/12 个有
+- `SeedVR2` —— 4/12 个有
+- `SeedVR2BlockSwap` —— 4/12 个有
+- `SeedVR2ExtraArgs` —— 4/12 个有
+- `Image Comparer (rgthree)` —— 2/12 个有
+- `SDXLAspectRatio` —— 2/12 个有
+- `DuckHideNode` —— 1/12 个有
+- `LoraLoader` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 1 - 10 | 12 | 55% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 64% |
+| 采样算法 | euler | - | 12 | 58% |
+| 调度器 | simple | - | 12 | 75% |
+| 重绘幅度 | 1 | 0.8 - 1 | 12 | 94% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 1 - 10，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 58%
+- 调度器 最常用 simple，12 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，12 个样本，取值集中（一致性 94%）
+- 高发问题（11/12 个样本）：Steps较低可能导致细节不足

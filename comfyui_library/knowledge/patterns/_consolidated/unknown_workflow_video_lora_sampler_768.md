@@ -1,75 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_768
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.892
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, DownloadAndLoadWav2VecModel, GIMMVFI_interpolate, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveFloat, SimpleMath+, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.726667
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Multitalk数字人_1938175701055115265.json, 视频生成/图生视频/图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_1937534979532591106.json]
+members: [视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_768
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Multitalk数字人_1938175701055115265.json、视频生成/图生视频/图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_1937534979532591106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
+全部 3 个 workflow 都包含：
 - `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
+- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
-- `GIMMVFI_interpolate`
-- `JWInteger`
-- `JWIntegerToString`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `MathExpression|pysssss`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `PrimitiveFloat`
-- `SimpleMath+`
-- `TextInput_`
+- `PreviewAny`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExtraModelSelect`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetTextFromJson` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `LoadJsonFromText` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `ReplaceText` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `SongGeneration_Sampler` —— 1/2 个有
-- `SongGeneration_Stage1` —— 1/2 个有
-- `SongGeneration_Stage2` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/3 个有
+- `easy indexTTSGenerateSimple` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Audio Duration (mtb)` —— 1/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `JWIntegerToString` —— 1/3 个有
+- `LoadWanVideoT5TextEncoder` —— 1/3 个有
+- `WanVideoTextEncode` —— 1/3 个有
 
 ## 典型参数
 
@@ -81,4 +88,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

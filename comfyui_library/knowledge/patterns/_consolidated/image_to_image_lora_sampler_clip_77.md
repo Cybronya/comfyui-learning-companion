@@ -2,71 +2,75 @@
 name: image_to_image_lora_sampler_clip_77
 type: Image To Image
 frequency: 4
-level: weak
-coverage: 0.905
-common_nodes: [CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.9715
+common_nodes: [CLIPTextEncode, CR Text Concatenate, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2洗图(单图)_1975814294828879873.json, 图片生成/图生图/人像去Ai油腻真实表现工作流_1964510532202020866.json, 图片生成/图生图/去除AI味重绘流_2085202651817533441.json, 图片生成/图生图/去除AI味重绘流_2085207804310282242.json]
+members: [图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json, 图片生成/图生图/最强真实老照片修复_1947226707453497346.json, 图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json, 图片生成/图生图/老照片修复，一键修复_2029503656806064129.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_77
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Wan2.2洗图(单图)_1975814294828879873.json、图片生成/图生图/人像去Ai油腻真实表现工作流_1964510532202020866.json、图片生成/图生图/去除AI味重绘流_2085202651817533441.json、图片生成/图生图/去除AI味重绘流_2085207804310282242.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json、图片生成/图生图/最强真实老照片修复_1947226707453497346.json、图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json、图片生成/图生图/老照片修复，一键修复_2029503656806064129.json）
 
 - **类型**：Image To Image
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `Image Comparer (rgthree)`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `PDIMAGE_LongerSize` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `easy stylesSelector` —— 1/4 个有
+- `CR Text` —— 3/4 个有
+- `FilmGrain` —— 3/4 个有
+- `LayerColor: Brightness & Contrast` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `RH_Translator` —— 3/4 个有
+- `DF_Image_scale_by_ratio` —— 1/4 个有
+- `KontextArchPresetMain` —— 1/4 个有
+- `NunchakuFluxDiTLoader` —— 1/4 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 4 | 33% |
-| 采样算法 | euler | - | 4 | 75% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 0.8 | 0.8 - 1 | 4 | 90% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 0.02 | 0.01 - 0.2 | 4 | 0% |
+| 重绘幅度 | 0.95 | 0.5 - 0.95 | 4 | 77% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 0.8，观测区间 0.8 - 1，4 个样本，取值集中（一致性 90%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.02，观测区间 0.01 - 0.2，4 个样本，取值分散，一致性仅 0%
-- 风险：重绘幅度 观测到 0.01，低于常用下限 0.1（）
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 重绘幅度 中位数 0.95，观测区间 0.5 - 0.95，4 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 0.8，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

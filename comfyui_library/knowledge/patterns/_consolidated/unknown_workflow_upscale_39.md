@@ -3,33 +3,35 @@ name: unknown_workflow_upscale_39
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [KEEP_FaceUpscaleImage, KEEP_ModelLoader, LoadImage, SaveImage]
+coverage: 0.4
+common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json, 图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json]
+members: [图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json, 图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_39
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json、图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json、图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `KEEP_FaceUpscaleImage`
-- `KEEP_ModelLoader`
+- `Image Comparer (rgthree)`
 - `LoadImage`
+- `PreviewImage`
+- `SUPIR_Upscale`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

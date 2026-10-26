@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_401
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.906
-common_nodes: [LayerUtility: TextBox, LoadImage, RH_RhartImageNProEdit, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json, 图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json, 图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json, 图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json, 图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json, 图片生成/图生图/全能图片g-image2去脏去噪修复_2098791212693155841.json]
+members: [视频生成/图生视频/WAN2.5图生视频_1970775618499584001.json, 视频生成/图生视频/Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json, 视频生成/图生视频/Wan2.5Preview图生视频_1978791620122447873.json, 视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1970790621206245377.json, 视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1976114306217545729.json, 视频生成/图生视频/Wan2.5图生视频API_1970643756695363586.json, 视频生成/图生视频/wan2.5图生视频_1971058917423882242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_401
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json、图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json、图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json、图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json、图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/WAN2.5图生视频_1970775618499584001.json、视频生成/图生视频/Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json、视频生成/图生视频/Wan2.5Preview图生视频_1978791620122447873.json、视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1970790621206245377.json、视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1976114306217545729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayerUtility: TextBox`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_RhartImageNProEdit`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `ImageCompare` —— 3/6 个有
-- `孤海注释` —— 1/6 个有
+- `RH_Wan25_I2V` —— 6/7 个有
+- `RH_Wan26_I2V` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
 
 ## 典型参数
 

@@ -2,55 +2,63 @@
 name: unknown_workflow_sampler_clip_unet_114
 type: Unknown Workflow
 frequency: 10
-level: moderate
-coverage: 0.8312
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.8053
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/WH-AI-Studio（Flux2-Klein完美文生图）_2026681586271391745.json, 图片生成/文生图/flux-2-klein 文生图_2013532963312504833.json, 图片生成/文生图/flux-2-klein-9b（文生图）_2012052794068443137.json, 图片生成/文生图/flux2 klein文生图9B_2073301542874206209.json, 图片生成/文生图/flux2-klein文生图工作流_2012032539350798337.json, 图片生成/文生图/flux2.klein官方文生图工作流_2042509850478907393.json, 图片生成/文生图/flux2_klein文生图_2051855653928480769.json, 图片生成/文生图/【阡陌】FLUX-2-Klein 9B base版文生图工作流_2016491648590553089.json, 图片生成/文生图/【阡陌】FLUX-2-Klein 9B 蒸馏版4步极速文生图工作流_2016500518138421250.json, 视频生成/文生视频/flux klein4B 工作流 浮云1.17_2012350472430034946.json]
+members: [图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json, 图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json, 图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json, 图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json, 图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json, 图片生成/文生图/中文字体设计 - 媲美即梦 -  Qwen-Image图生图_1953067660055613442.json, 图片生成/文生图/中秋节文字一键生成 - Qwen-Image文生图_1970162502074068993.json, 图片生成/文生图/双11大促活动字体一键生成 Qwen-Image文生图_1973238135855386626.json, 图片生成/文生图/双11年终大促+-+活动字体一键成_1970152346649063426.json, 图片生成/文生图/高级感艺术字生成（自带提示词模板）_1972314392975110146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_114
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/WH-AI-Studio（Flux2-Klein完美文生图）_2026681586271391745.json、图片生成/文生图/flux-2-klein 文生图_2013532963312504833.json、图片生成/文生图/flux-2-klein-9b（文生图）_2012052794068443137.json、图片生成/文生图/flux2 klein文生图9B_2073301542874206209.json、图片生成/文生图/flux2-klein文生图工作流_2012032539350798337.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json、图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json、图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json、图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json、图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 6/10 个有
-- `ConditioningZeroOut` —— 4/10 个有
-- `LoadImage` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `Int` —— 1/10 个有
-- `JjkText` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
+- `Int` —— 9/10 个有
+- `easy showAnything` —— 9/10 个有
+- `ImpactSwitch` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `PrimitiveBoolean` —— 8/10 个有
+- `RH_Captioner` —— 8/10 个有
+- `easy ifElse` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `CR Text Replace` —— 4/10 个有
+- `FluxResolutionNode` —— 4/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `Prompt_Text` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 10 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
@@ -58,4 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

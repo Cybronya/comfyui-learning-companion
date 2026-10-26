@@ -3,74 +3,60 @@ name: unknown_workflow_video_lora_sampler_684
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.579
-common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
+coverage: 0.954
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json]
+members: [视频生成/图生视频/InfiniteTalk+Lynx人脸一致性_无限长音频驱动数字人_20251117_1990595971572785153.json, 视频生成/图生视频/InfiniteTalk无限长音频驱动数字人_20251117_1990339469129732098.json, 视频生成/图生视频/祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_684
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json、视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json、视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk+Lynx人脸一致性_无限长音频驱动数字人_20251117_1990595971572785153.json、视频生成/图生视频/InfiniteTalk无限长音频驱动数字人_20251117_1990339469129732098.json、视频生成/图生视频/祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Text`
-- `DrawMaskOnImage`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `FaceMaskFromPoseKeypoints` —— 1/3 个有
-- `ImageCropByMaskAndResize` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `PixelPerfectResolution` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `Frames Slice` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `JWFloat` —— 1/3 个有
+- `LoadLynxResampler` —— 1/3 个有
+- `LynxEncodeFaceIP` —— 1/3 个有
+- `LynxInsightFaceCrop` —— 1/3 个有
+- `WanVideoAddLynxEmbeds` —— 1/3 个有
+- `WanVideoBlockSwap` —— 1/3 个有
+- `WanVideoExtraModelSelect` —— 1/3 个有
 
 ## 典型参数
 

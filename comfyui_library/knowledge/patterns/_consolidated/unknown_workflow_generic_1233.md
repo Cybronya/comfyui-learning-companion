@@ -3,29 +3,29 @@ name: unknown_workflow_generic_1233
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8125
-common_nodes: [LoadImage, RH_RhartImageGImageToImage, SaveImage]
+coverage: 1
+common_nodes: [HappyHorseImageToVideoApi, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/GSeries_ImageToImage_v1.0_2033743055894880258.json, 图片生成/文生图/图生图4.2_image_to_image+全节点注释_2059599990904942594.json]
+members: [comfyui-workflow-templates-json/api_happyhorse1_0_i2v.json, comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1233
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GSeries_ImageToImage_v1.0_2033743055894880258.json、图片生成/文生图/图生图4.2_image_to_image+全节点注释_2059599990904942594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_happyhorse1_0_i2v.json、comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `HappyHorseImageToVideoApi`
 - `LoadImage`
-- `RH_RhartImageGImageToImage`
-- `SaveImage`
+- `SaveVideo`
 
 ## 典型参数
 

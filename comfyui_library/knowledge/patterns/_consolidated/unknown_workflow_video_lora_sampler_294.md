@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_video_lora_sampler_294
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.784143
-common_nodes: [CLIPVisionLoader, CR Prompt Text, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkSilentEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.99075
+common_nodes: [CLIPVisionLoader, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/03-10-09-WAN2.1-无限时长分镜头控制-infinitetalk_2006714011445895170.json, 视频生成/图生视频/100秒长视频直出！Wan2.2超级魔改图生视频_1967041274844995586.json, 视频生成/图生视频/Wan+Inifinte Talk无限时长+动作分段控制视频生成（闭嘴版）_1968534429834588161.json, 视频生成/图生视频/大明动画风格 长视频 强制闭嘴_1970454402555408386.json, 视频生成/图生视频/（闭嘴版）Wan+Inifinte Talk无限时长+动作分段控制视频生成V1_1965504800706187266.json, 视频生成/图生视频/（非SVI）手搓Wan无限时长分镜头控制极速版图生视频V1_2005591443018317826.json, 音频生成/音频生成/数字人对口型Wan+Inifinte Talk无限时长_1967102112964468737.json]
+members: [视频生成/图生视频/AI数字人-动物_2084929827878031362.json, 视频生成/图生视频/Unipus-AI数字人_2071856835908427777.json, 视频生成/图生视频/Unipus-AI数字人_2072507975016738818.json, 视频生成/图生视频/Unipus-AI数字人_2072619753109278721.json, 视频生成/图生视频/Unipus-AI数字人_2074016139532918786.json, 视频生成/图生视频/写实数字人_2073956730425401346.json, 视频生成/图生视频/数字人音频驱动模型 Inifinte Talk  Wan 2.1 i2v 480p Worfklow_2011076540066439169.json, 视频生成/文生视频/卡通数字人_2086779135497687042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_294
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/03-10-09-WAN2.1-无限时长分镜头控制-infinitetalk_2006714011445895170.json、视频生成/图生视频/100秒长视频直出！Wan2.2超级魔改图生视频_1967041274844995586.json、视频生成/图生视频/Wan+Inifinte Talk无限时长+动作分段控制视频生成（闭嘴版）_1968534429834588161.json、视频生成/图生视频/大明动画风格 长视频 强制闭嘴_1970454402555408386.json、视频生成/图生视频/（闭嘴版）Wan+Inifinte Talk无限时长+动作分段控制视频生成V1_1965504800706187266.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/AI数字人-动物_2084929827878031362.json、视频生成/图生视频/Unipus-AI数字人_2071856835908427777.json、视频生成/图生视频/Unipus-AI数字人_2072507975016738818.json、视频生成/图生视频/Unipus-AI数字人_2072619753109278721.json、视频生成/图生视频/Unipus-AI数字人_2074016139532918786.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `GetImageSizeAndCount`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
-- `MultiTalkSilentEmbeds`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -38,19 +36,18 @@ source: knowledge_consolidation
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 6/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `ConcatTextOfUtils` —— 1/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
+- `Audio Duration` —— 7/8 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `LogicUtil_CeilNode` —— 5/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

@@ -3,48 +3,35 @@ name: unknown_workflow_generic_794
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9515
-common_nodes: [LoadAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.61175
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, MuyeTextEditOutput, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json, 音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json, 音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json, 音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json]
+members: [图片生成/文生图/全能图片1+2+pro 三版合集 _多图编辑+功能开关+自由控制_2047124776375816194.json, 图片生成/文生图/全能图片1+2+pro 多图编辑三版本合集 （RH平台api调用）26年.4.13更新_1998636784001122306.json, 图片生成/文生图/🍌 全能图片V1 2  Pro多图编辑，图生图，_1993299750527188993.json, 数字人/数字人/自用api_2012527070118678529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_794
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json、音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json、音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json、音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片1+2+pro 三版合集 _多图编辑+功能开关+自由控制_2047124776375816194.json、图片生成/文生图/全能图片1+2+pro 多图编辑三版本合集 （RH平台api调用）26年.4.13更新_1998636784001122306.json、图片生成/文生图/🍌 全能图片V1 2  Pro多图编辑，图生图，_1993299750527188993.json、数字人/数字人/自用api_2012527070118678529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `NormalizeAudioLoudness` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `T8_IndexTTS25_Pronunciation` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioNode` —— 1/4 个有
-- `T8_IndexTTS25_SamplingConfig` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `RH_Nano_Banana_Image2Image` —— 3/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
 
 ## 典型参数
 

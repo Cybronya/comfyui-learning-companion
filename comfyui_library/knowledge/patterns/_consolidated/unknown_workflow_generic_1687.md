@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadAudio, RHUploadMidi, RunningHub SoulX-Singer MIDI Saver, RunningHub SoulX-Singer MIDI To Metadata, RunningHub SoulX-Singer Metadata Saver, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio]
+common_nodes: [LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveVideo, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Soulx-Singer Midi歌词修改魔改音乐V1_2028816599980969986.json, 音频生成/音频生成/Soulx-Singer 歌唱克隆（支持粤语中文）_2029079456408670210.json]
+members: [视频生成/图生视频/S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json, 视频生成/图生视频/S1-3  产品特效展示视频 快乐马_2050934091385720833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1687
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Soulx-Singer Midi歌词修改魔改音乐V1_2028816599980969986.json、音频生成/音频生成/Soulx-Singer 歌唱克隆（支持粤语中文）_2029079456408670210.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json、视频生成/图生视频/S1-3  产品特效展示视频 快乐马_2050934091385720833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,16 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RHUploadMidi`
-- `RunningHub SoulX-Singer MIDI Saver`
-- `RunningHub SoulX-Singer MIDI To Metadata`
-- `RunningHub SoulX-Singer Metadata Saver`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
-- `SaveAudio`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `SaveVideo`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_AlibabaHappyhorse10ImageToVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

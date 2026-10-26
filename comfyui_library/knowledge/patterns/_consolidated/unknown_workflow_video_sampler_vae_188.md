@@ -3,72 +3,60 @@ name: unknown_workflow_video_sampler_vae_188
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.696
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PointsEditor, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, RMBG, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UnloadModel, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.8
+common_nodes: [Any Switch (rgthree), Anything Everywhere, Anything Everywhere3, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchMulti, ImageResizeKJv2, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, ReplaceImagesInBatch, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/指定人物替换-手动遮罩替换多人视频中的指定人物+WanAnimate_2064955834492342273.json, 视频生成/图生视频/电商带货 直播带货 短视频_2043943018939551745.json]
+members: [视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json, 视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_188
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/指定人物替换-手动遮罩替换多人视频中的指定人物+WanAnimate_2064955834492342273.json、视频生成/图生视频/电商带货 直播带货 短视频_2043943018939551745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json、视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
+- `Any Switch (rgthree)`
+- `Anything Everywhere`
+- `Anything Everywhere3`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
+- `INTConstant`
+- `ImageBatchMulti`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `ImageToMask`
+- `LayerUtility: ColorImage`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RMBG`
-- `SetNode`
-- `ShowText|pysssss`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
+- `ReplaceImagesInBatch`
 - `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
-- `UnloadModel`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy imageRemBg`
+- `easy int`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `SeCModelLoader` —— 1/2 个有
-- `SeCVideoSegmentation` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
 
 ## 典型参数
 

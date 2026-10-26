@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_upscale_22
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.755667
-common_nodes: [ImageCompare, LoadImage, SaveImage]
+coverage: 0.66475
+common_nodes: [LoadAudio, LoadImage, MuyeTextEditOutput, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/utility_recraft_crisp_image_upscale.json, comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_image.json, comfyui-workflow-templates-json/utility_seedvr2_7b_int8_upscale_image.json]
+members: [视频生成/文生视频/Seedance2.0真人版_2037782641453305858.json, 视频生成/文生视频/Seedance2.0真人版_2039165340579532801.json, 视频生成/文生视频/超能视频 Seedance 2.0 完全体工作流_2038220498269642754.json, 视频生成/文生视频/超能视频+Seedance+2.0+完全体工作流_小白注释版_2038549322068926466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_recraft_crisp_image_upscale.json、comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_image.json、comfyui-workflow-templates-json/utility_seedvr2_7b_int8_upscale_image.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0真人版_2037782641453305858.json、视频生成/文生视频/Seedance2.0真人版_2039165340579532801.json、视频生成/文生视频/超能视频 Seedance 2.0 完全体工作流_2038220498269642754.json、视频生成/文生视频/超能视频+Seedance+2.0+完全体工作流_小白注释版_2038549322068926466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageCompare`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
+- `MuyeTextEditOutput`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `1970dcb4-982a-4c01-a373-4d239a3041e4` —— 2/3 个有
-- `RecraftCrispUpscaleNode` —— 1/3 个有
+- `LoadVideo` —— 2/4 个有
+- `RH_SparkVideoAssetQuery` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `RH_TopazLabs_VideoUpscale` —— 1/4 个有
 
 ## 典型参数
 

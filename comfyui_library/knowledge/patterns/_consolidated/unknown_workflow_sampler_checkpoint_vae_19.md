@@ -3,59 +3,58 @@ name: unknown_workflow_sampler_checkpoint_vae_19
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.613
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, KSampler, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SeedNode, VAEDecodeAudio, YuE2GenerateMusic]
+coverage: 0.729
+common_nodes: [AudioEncoderLoader, CheckpointLoaderSimple, EmptyYuE2LatentAudio, KSampler, LoadAudio, PreviewAny, SaveAudioAdvanced, SheetSage2AudioToABC, VAEDecodeAudio, VAEDecodeAudioTiled, YuE2GenerateABC, YuE2GenerateMusic]
 problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本(非常好 好听)_2109834100810018818.json, 音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2100799504231526401.json, 音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2101632211412938753.json, 音频生成/音频生成/YuE2-音乐翻唱-ComfyUI官方版本_2100774608726216705.json, 音频生成/音频生成/YuE2文生音乐官方_2103060900860223490.json, 音频生成/音频生成/audio_yue2_music_cover_2104470509722365954.json]
+members: [数字人/数字人/yue2超级好听音乐生成工作流_2109992085842653186.json, 音频生成/音频生成/YUE2 comfyui  音乐生成  工作流_2102020803935162369.json, 音频生成/音频生成/YUE2.0 完整版_2099410162128875521.json, 音频生成/音频生成/yue2-音乐生成（支持翻唱）_2099318373120303106.json, 音频生成/音频生成/yue2_comfyui_音乐生成工作流_2099872918548344833.json, 音频生成/音频生成/yue2_comfyui_音频参考修改乐谱版-音乐生成工作流_2100547233820270594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本(非常好 好听)_2109834100810018818.json、音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2100799504231526401.json、音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2101632211412938753.json、音频生成/音频生成/YuE2-音乐翻唱-ComfyUI官方版本_2100774608726216705.json、音频生成/音频生成/YuE2文生音乐官方_2103060900860223490.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/yue2超级好听音乐生成工作流_2109992085842653186.json、音频生成/音频生成/YUE2 comfyui  音乐生成  工作流_2102020803935162369.json、音频生成/音频生成/YUE2.0 完整版_2099410162128875521.json、音频生成/音频生成/yue2-音乐生成（支持翻唱）_2099318373120303106.json、音频生成/音频生成/yue2_comfyui_音乐生成工作流_2099872918548344833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `AudioEncoderLoader`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
 - `EmptyYuE2LatentAudio`
 - `KSampler`
+- `LoadAudio`
 - `PreviewAny`
-- `PrimitiveStringMultiline`
 - `SaveAudioAdvanced`
-- `SeedNode`
+- `SheetSage2AudioToABC`
 - `VAEDecodeAudio`
+- `VAEDecodeAudioTiled`
+- `YuE2GenerateABC`
 - `YuE2GenerateMusic`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 5/6 个有
-- `PrimitiveBoolean` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `PrimitiveString` —— 4/6 个有
-- `YuE2GenerateABC` —— 4/6 个有
-- `Audio Duration (mtb)` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `RepeatImageBatch` —— 3/6 个有
-- `VHS_VideoCombine` —— 3/6 个有
-- `AudioEncoderLoader` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `SheetSage2AudioToABC` —— 2/6 个有
+- `Any Switch (rgthree)` —— 4/6 个有
+- `Textbox` —— 4/6 个有
+- `TrimAudioDuration` —— 4/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `1hew_AnySwitchSelect` —— 1/6 个有
+- `DF_Text_Box` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 采样步数 | 32 | 32 - 32 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 6 | 95% |
 | 采样算法 | dpm_2 | - | 6 | 100% |
 | 调度器 | sgm_uniform | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
@@ -69,7 +68,7 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 采样步数 中位数 32，观测区间 32 - 32，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，6 个样本，取值集中（一致性 95%）
 - 采样算法 最常用 dpm_2，6 个样本，一致性 100%
 - 调度器 最常用 sgm_uniform，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

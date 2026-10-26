@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_651
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.87475
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LoadImage, SaveImage, preview_mask]
+coverage: 1
+common_nodes: [CR Prompt Text, LoadAudio, NormalizeAudioLoudness, SaveAudioMP3, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/RMBG一键抠图_2057714410445164545.json, 图片生成/图生图/RMBG一键抠图_2079022658536173569.json, 图片生成/图生图/RMBG一键抠图_2079402674667216898.json, 图片生成/图生图/RMBG抠图_2108788082693730305.json]
+members: [音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_651
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG一键抠图_2057714410445164545.json、图片生成/图生图/RMBG一键抠图_2079022658536173569.json、图片生成/图生图/RMBG一键抠图_2079402674667216898.json、图片生成/图生图/RMBG抠图_2108788082693730305.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json、音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `LoadImage`
-- `SaveImage`
-- `preview_mask`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `SaveAudioMP3`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
+- `Float` —— 3/5 个有
+- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
+- `T8_IndexTTS25_SamplingConfig` —— 1/5 个有
 
 ## 典型参数
 

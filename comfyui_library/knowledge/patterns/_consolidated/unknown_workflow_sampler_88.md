@@ -3,36 +3,38 @@ name: unknown_workflow_sampler_88
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [LoadAudio, LoadImage, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo]
+coverage: 0.95
+common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/DreamId-Omni双参图Multi-RA2V视频生成V3_2033998163958304770.json, 视频生成/文生视频/Dreamid-Omni 音画同步 ComfyUI 工作流_2035627766984478722.json]
+members: [图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json, 音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/DreamId-Omni双参图Multi-RA2V视频生成V3_2033998163958304770.json、视频生成/文生视频/Dreamid-Omni 音画同步 ComfyUI 工作流_2035627766984478722.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json、音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Apply Whisper`
+- `CR Prompt Text`
 - `LoadAudio`
-- `LoadImage`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `SaveVideo`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

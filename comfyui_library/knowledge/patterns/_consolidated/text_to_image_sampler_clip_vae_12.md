@@ -1,29 +1,28 @@
 ---
 name: text_to_image_sampler_clip_vae_12
 type: Text To Image
-frequency: 11
+frequency: 9
 level: strong
-coverage: 0.983455
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
+coverage: 0.892444
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-Image-Turbo 基础 11.27_1997561858070614017.json, 图片生成/文生图/Z-Image-Turbo文生图_1993942538386161666.json, 图片生成/文生图/Z-Image-turbo-人物角色定像_2032331811874938881.json, 图片生成/文生图/Z-Image_1996570015086297090.json, 图片生成/文生图/Z-image+lora人像更换_2007628288839127041.json, 图片生成/文生图/Z-image基础文生图工作流（含放大）_2001871745982296066.json, 图片生成/文生图/Z-image文生图-网图生成器（超快）_2029000243047567361.json, 图片生成/文生图/Z-image文生图-（超快）_2056293996040900610.json, 图片生成/文生图/Z-image，文生图，10秒出图zip_2048723569391181825.json, 图片生成/文生图/Z-image，新王登基，Flux2退散_1993500745689481218.json, 图片生成/文生图/女装工作流_2009116986424430593.json]
+members: [图片生成/反推提示词/krea-小红书 超逼真 网图制作_1973625565053890561.json, 图片生成/图生图/图像自动反推+图生图_1973015122102849538.json, 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json, 图片生成/文生图/F.1 在线生图-文生图_1873981103047315457.json, 图片生成/文生图/F.1 在线生图-文生图_2043506086015143938.json, 图片生成/文生图/F.1 在线生图-文生图_2043856469157748737.json, 图片生成/文生图/【阡陌】FLUX krea 反推提示词文生图工作流_1951531387230826497.json, 图片生成/文生图/【阡陌】FLUX+LORA+Joy Caption 反推提示词文生图_1942186080890204162.json, 图片生成/文生图/【阡陌】Nunchaku8倍加速 flux joy反推文生图_1944743997447524354.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_12
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Z-Image-Turbo 基础 11.27_1997561858070614017.json、图片生成/文生图/Z-Image-Turbo文生图_1993942538386161666.json、图片生成/文生图/Z-Image-turbo-人物角色定像_2032331811874938881.json、图片生成/文生图/Z-Image_1996570015086297090.json、图片生成/文生图/Z-image+lora人像更换_2007628288839127041.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/krea-小红书 超逼真 网图制作_1973625565053890561.json、图片生成/图生图/图像自动反推+图生图_1973015122102849538.json、图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json、图片生成/文生图/F.1 在线生图-文生图_1873981103047315457.json、图片生成/文生图/F.1 在线生图-文生图_2043506086015143938.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
@@ -32,43 +31,48 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 10/11 个有
-- `ImageUpscaleWithModel` —— 9/11 个有
-- `UpscaleModelLoader` —— 9/11 个有
-- `ConditioningZeroOut` —— 8/11 个有
-- `ImageSharpen` —— 8/11 个有
-- `CompressImages` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `Load Lora` —— 1/11 个有
-- `LoraLoader` —— 1/11 个有
-- `UnetLoaderGGUF` —— 1/11 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `DualCLIPLoader` —— 8/9 个有
+- `FluxGuidance` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `LoraLoaderModelOnly` —— 7/9 个有
+- `LayerUtility: JoyCaptionBeta1` —— 6/9 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 6/9 个有
+- `LoadImage` —— 6/9 个有
+- `Anything Everywhere3` —— 5/9 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 5/9 个有
+- `ShowText|pysssss` —— 4/9 个有
+- `JjkText` —— 3/9 个有
+- `DeepTranslatorTextNode` —— 2/9 个有
+- `NunchakuFluxDiTLoader` —— 1/9 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 768 - 1920 | 11 | 74% |
-| 高度 | 1920 | 768 - 1920 | 11 | 76% |
-| 采样步数 | 10 | 8 - 10 | 11 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 82% |
-| 调度器 | simple | - | 11 | 91% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| LoRA 模型强度 | 0.5 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 8 - 30 | 9 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 89% |
+| 调度器 | simple | - | 9 | 56% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 1024 | 768 - 1024 | 9 | 89% |
+| 高度 | 1536 | 1024 - 1536 | 9 | 83% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 768 - 1920，11 个样本
-- 高度 中位数 1920，观测区间 768 - 1920，11 个样本
-- 采样步数 中位数 10，观测区间 8 - 10，11 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 82%
-- 调度器 最常用 simple，11 个样本，一致性 91%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 30，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 89%
+- 调度器 最常用 simple，9 个样本，一致性 56%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 768 - 1024，9 个样本，取值集中（一致性 89%）
+- 高度 中位数 1536，观测区间 1024 - 1536，9 个样本，取值集中（一致性 83%）

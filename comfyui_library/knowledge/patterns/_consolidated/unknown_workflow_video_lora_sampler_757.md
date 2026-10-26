@@ -1,59 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_757
 type: Unknown Workflow
-frequency: 2
+frequency: 3
 level: weak
-coverage: 0.9325
-common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+coverage: 1
+common_nodes: [CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, INTConstant, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, PatchModelPatcherOrder, TorchCompileModelWanVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo, WanVideoEnhanceAVideoKJ]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json, 视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json]
+members: [视频生成/图生视频/控制+参考-Wan2.1-VACE-Native_1924845181453934593.json, 视频生成/文生视频/VACE原生文生视频(CausVid与AccVideo10步对比)_1928042156554862594.json, 视频生成/文生视频/文生视频-Wan2.1-VACE-Native_1924863840855465985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_757
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json、视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/控制+参考-Wan2.1-VACE-Native_1924845181453934593.json、视频生成/文生视频/VACE原生文生视频(CausVid与AccVideo10步对比)_1928042156554862594.json、视频生成/文生视频/文生视频-Wan2.1-VACE-Native_1924863840855465985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `CFGZeroStarAndInit`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `INTConstant`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PatchModelPatcherOrder`
+- `TorchCompileModelWanVideo`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
+- `WanVideoEnhanceAVideoKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `Florence2ModelLoader` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | 5 - 20 | 3 | 47% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，观测区间 5 - 20，3 个样本，取值分散，一致性仅 47%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

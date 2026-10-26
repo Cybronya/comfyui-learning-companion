@@ -1,0 +1,442 @@
+---
+key: 数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json
+name: Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json
+hash: c5f682956aa19ca7
+coverage: 0.368564
+learned_at: 2026-10-26 01:54:13
+nodes: [CLIPTextEncode, VAELoader, SetNode, SetNode, GetNode, CLIPVisionEncode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, Any2ListNode, SetNode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, KSampler, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, WanInfiniteTalkToVideo, GetNode, GetNode, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, WanInfiniteTalkToVideo, PreviewImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, GetNode, Reroute, GetNode, GetNode, GetNode, GetNode, CLIPVisionLoader, easy promptLine, WanInfiniteTalkToVideo, VAEDecode, VAEDecode, ImageFromBatch, WanInfiniteTalkToVideo, GetNode, ImageFromBatch, ImageBatch, KSampler, ImageBatch, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, GetNode, GetNode, VAEDecode, ImageBatch, ImageFromBatch, Reroute, GetNode, GetNode, CLIPLoader, easy showAnything, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, SetNode, easy int, PrimitiveFloat, easy int, SetNode, AudioEncoderEncode, ModelPatchLoader, AudioEncoderLoader, GetNode, GetNode, GetNode, GetNode, WanInfiniteTalkToVideo, CLIPTextEncode, easy indexAnything, CLIPTextEncode, easy indexAnything, CLIPTextEncode, easy indexAnything, CLIPTextEncode, easy indexAnything, CLIPTextEncode, easy indexAnything, CLIPTextEncode, easy indexAnything, Reroute, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Reroute, Reroute, GetNode, VAEDecode, ImageFromBatch, KSampler, ImageBatch, GetNode, GetNode, GetNode, GetNode, easy indexAnything, Reroute, WanInfiniteTalkToVideo, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Reroute, GetNode, VAEDecode, ImageFromBatch, KSampler, ImageBatch, GetNode, GetNode, GetNode, GetNode, easy indexAnything, CLIPTextEncode, Reroute, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ImageFromBatch, KSampler, ImageBatch, GetNode, GetNode, GetNode, GetNode, WanInfiniteTalkToVideo, Reroute, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Reroute, Reroute, GetNode, VAEDecode, ImageFromBatch, KSampler, GetNode, GetNode, GetNode, GetNode, easy indexAnything, CLIPTextEncode, Reroute, VHS_VideoCombine, Reroute, GetNode, DiffusionModelLoaderKJ, MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, WanInfiniteTalkToVideo, WanInfiniteTalkToVideo, easy indexAnything, CLIPTextEncode, Reroute, Reroute, WanInfiniteTalkToVideo, ImageBatch, GetNode, GetNode, ImageBatch, ImageFromBatch, VAEDecode, GetNode, ImageFromBatch, Reroute, VHS_VideoCombine, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, Reroute, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, CLIPTextEncode, PreviewAny, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Reroute, Reroute, VAEDecode, ImageFromBatch, KSampler, ImageBatch, GetNode, GetNode, GetNode, GetNode, easy indexAnything, CLIPTextEncode, WanInfiniteTalkToVideo, GetNode, ImageBatch, Reroute, VHS_VideoCombine, GetNode, SetNode, VHS_VideoCombine, Bjornulf_ShowInt, GetNode, PreviewAudio, SetNode, AudioSeparation, GetNode, SetNode, GetNode, GetNode, Audio Duration (mtb), MathExpression|pysssss, MathExpression|pysssss, SetNode, easy int, CR Prompt Text, LoadImage, CR Prompt Text, CR Prompt Text, Reroute, PlaySound|pysssss, LayerUtility: PurgeVRAM, SetNode, Audio To Text (mtb), ShowText|pysssss, Load Whisper (mtb), MarkdownNote, MarkdownNote, CR Prompt Text, CR Prompt Text, CR Prompt Text, FishS2VoiceCloneTTS, PreviewAudio, LoadVideo, CR Prompt Text, MarkdownNote, CR Prompt Text, LoadAudio, TextInput_, TextInput_, MarkdownNote]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "normal", "seed": 151575577669257, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json
+
+> 来源文件 `comfyui_library/workflows/数字人/数字人/Fishaudio+单人InfiniteTalk官方版工作流东源自然数字人长视频_2033511522793693185.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（369 个）：
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPVisionEncode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Any2ListNode`
+- `SetNode`
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `WanInfiniteTalkToVideo`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `WanInfiniteTalkToVideo`
+- `PreviewImage`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `easy promptLine`
+- `WanInfiniteTalkToVideo`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `WanInfiniteTalkToVideo`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageBatch`
+- `KSampler` ★核心
+- `ImageBatch`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ImageBatch`
+- `ImageFromBatch`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `CLIPLoader`
+- `easy showAnything`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `easy int`
+- `PrimitiveFloat`
+- `easy int`
+- `SetNode`
+- `AudioEncoderEncode`
+- `ModelPatchLoader`
+- `AudioEncoderLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanInfiniteTalkToVideo`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `KSampler` ★核心
+- `ImageBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `Reroute`
+- `WanInfiniteTalkToVideo`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `KSampler` ★核心
+- `ImageBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `KSampler` ★核心
+- `ImageBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanInfiniteTalkToVideo`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `KSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `VHS_VideoCombine`
+- `Reroute`
+- `GetNode`
+- `DiffusionModelLoaderKJ`
+- `MarkdownNote`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `WanInfiniteTalkToVideo`
+- `WanInfiniteTalkToVideo`
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `Reroute`
+- `WanInfiniteTalkToVideo`
+- `ImageBatch`
+- `GetNode`
+- `GetNode`
+- `ImageBatch`
+- `ImageFromBatch`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ImageFromBatch`
+- `Reroute`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `Reroute`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `KSampler` ★核心
+- `ImageBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `WanInfiniteTalkToVideo`
+- `GetNode`
+- `ImageBatch`
+- `Reroute`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `Bjornulf_ShowInt`
+- `GetNode`
+- `PreviewAudio`
+- `SetNode`
+- `AudioSeparation`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Audio Duration (mtb)`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `SetNode`
+- `easy int`
+- `CR Prompt Text`
+- `LoadImage`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `Reroute`
+- `PlaySound|pysssss`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `Audio To Text (mtb)`
+- `ShowText|pysssss`
+- `Load Whisper (mtb)`
+- `MarkdownNote`
+- `MarkdownNote`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `FishS2VoiceCloneTTS`
+- `PreviewAudio`
+- `LoadVideo`
+- `CR Prompt Text`
+- `MarkdownNote`
+- `CR Prompt Text`
+- `LoadAudio`
+- `TextInput_`
+- `TextInput_`
+- `MarkdownNote`
+
+## 关键参数
+
+- `seed` = `151575577669257`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **37%**（136/369）
+
+**有卡**：`CLIPTextEncode`、`VAELoader`、`CLIPVisionEncode`、`Any2ListNode`、`VAEDecode`、`KSampler`、`WanInfiniteTalkToVideo`、`CLIPVisionLoader`、`easy promptLine`、`ImageFromBatch`、`ImageBatch`、`CLIPLoader`、`easy int`、`AudioEncoderEncode`、`ModelPatchLoader`、`AudioEncoderLoader`、`easy indexAnything`、`VHS_VideoCombine`、`DiffusionModelLoaderKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`Bjornulf_ShowInt`、`PreviewAudio`、`AudioSeparation`、`Audio Duration (mtb)`、`MathExpression|pysssss`、`CR Prompt Text`、`LoadImage`、`PlaySound|pysssss`、`LayerUtility: PurgeVRAM`、`Audio To Text (mtb)`、`Load Whisper (mtb)`、`FishS2VoiceCloneTTS`、`LoadVideo`、`LoadAudio`、`TextInput_`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、AudioEncoderLoader、CLIPVisionEncode
+
+## 参数体检
+
+发现 11 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

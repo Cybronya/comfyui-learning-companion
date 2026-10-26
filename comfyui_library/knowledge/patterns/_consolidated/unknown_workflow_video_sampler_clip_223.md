@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_clip_223
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.928
-common_nodes: [ApplyFBCacheOnModel, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWImageResizeByLongerSide, KSamplerSelect, LTXVApplySTG, LTXVPreprocess, LTXVScheduler, LayerUtility: PurgeVRAM, LoadImage, Note Plus (mtb), PatchModelPatcherOrder, PathchSageAttentionKJ, RH_Captioner, RandomNoise, STGGuider, SamplerCustomAdvanced, String Replace (mtb), StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
+coverage: 0.9335
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy convertAnything, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSGenerateSimple, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json, 视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json]
+members: [图片生成/反推提示词/LTX2.3人物动作迁移V1_2031355634699997185.json, 视频生成/图生视频/LTX2.3人物动作迁移V2_2031367576470687746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_223
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json、视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LTX2.3人物动作迁移V1_2031355634699997185.json、视频生成/图生视频/LTX2.3人物动作迁移V2_2031367576470687746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,40 +23,65 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFBCacheOnModel`
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `JWImageResizeByLongerSide`
+- `CR Text`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `KSamplerSelect`
-- `LTXVApplySTG`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVPreprocess`
-- `LTXVScheduler`
-- `LayerUtility: PurgeVRAM`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `Note Plus (mtb)`
-- `PatchModelPatcherOrder`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `RH_Captioner`
+- `PreviewAudio`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `STGGuider`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `String Replace (mtb)`
-- `StringFunction|pysssss`
+- `SetLatentNoiseMask`
+- `ShowText|pysssss`
+- `SolidMask`
+- `UNETLoader`
 - `VAEDecodeTiled`
+- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `VHS_VideoInfoLoaded`
+- `easy cleanGpuUsed`
+- `easy convertAnything`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionAudio`
+- `easy indexTTSGenerateSimple`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLTXVLatentVideo` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `LTXVAddGuide` —— 1/2 个有
-- `LTXVConditioning` —— 1/2 个有
-- `LTXVCropGuides` —— 1/2 个有
-- `LTXVImgToVideo` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `LTXAddVideoICLoRAGuide` —— 1/2 个有
+- `LTXICLoRALoaderModelOnly` —— 1/2 个有
+- `LTXVAddGuideMulti` —— 1/2 个有
+- `LTXVImgToVideoConditionOnly` —— 1/2 个有
+- `Qwen3ASRLoader` —— 1/2 个有
+- `Qwen3ASRTranscribe` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
+- `easy imageSizeBySide` —— 1/2 个有
 
 ## 典型参数
 

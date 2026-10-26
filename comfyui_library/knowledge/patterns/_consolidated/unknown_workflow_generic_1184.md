@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_generic_1184
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4375
-common_nodes: [PrimitiveStringMultiline, SaveImage, StringConcatenate]
+frequency: 3
+level: moderate
+coverage: 0.798667
+common_nodes: [Audio Cut (mtb), LoadAudio, MathExpression|pysssss, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudioAdvanced, easy int]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json, 图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json]
+members: [音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json, 音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json, 音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1184
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json、图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json、音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json、音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Audio Cut (mtb)`
+- `LoadAudio`
+- `MathExpression|pysssss`
 - `PrimitiveStringMultiline`
-- `SaveImage`
-- `StringConcatenate`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
+- `SaveAudioAdvanced`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `c3c58f7e-2004-43ae-8b06-a956294bf7f4` —— 1/2 个有
-- `workflow>krea2` —— 1/2 个有
+- `ImpactSwitch` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `easy string` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

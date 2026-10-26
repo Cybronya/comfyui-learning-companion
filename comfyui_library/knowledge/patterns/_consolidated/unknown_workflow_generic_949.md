@@ -3,41 +3,39 @@ name: unknown_workflow_generic_949
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.893667
-common_nodes: [Compare, ImageConcanate, ImpactSwitch, Int, InversionDemoLazySwitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Multi Text Merge, RHHiddenNodes, SaveImage, TextInput_, easy showAnything]
+coverage: 1
+common_nodes: [Preview3D, SaveImage, Trellis2ExportMesh, Trellis2LoadModel, Trellis2MeshWithVoxelGenerator, Trellis2PostProcessAndUnWrapAndRasterizer, Trellis2SimplifyMesh]
 problems: []
 missing: []
-members: [图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json, 图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json, 图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json]
+members: [图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json, 图片生成/图生图/Trellis2 3D_2005307477589716994.json, 数字人/数字人/3d建模2_2030208153794650114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_949
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json、图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json、图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json、图片生成/图生图/Trellis2 3D_2005307477589716994.json、数字人/数字人/3d建模2_2030208153794650114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Compare`
-- `ImageConcanate`
-- `ImpactSwitch`
-- `Int`
-- `InversionDemoLazySwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `Multi Text Merge`
-- `RHHiddenNodes`
+- `Preview3D`
 - `SaveImage`
-- `TextInput_`
-- `easy showAnything`
+- `Trellis2ExportMesh`
+- `Trellis2LoadModel`
+- `Trellis2MeshWithVoxelGenerator`
+- `Trellis2PostProcessAndUnWrapAndRasterizer`
+- `Trellis2SimplifyMesh`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Overlay Text` —— 1/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `easy imageRemBg` —— 2/3 个有
+- `Trellis2LoadImageWithTransparency` —— 1/3 个有
 
 ## 典型参数
 

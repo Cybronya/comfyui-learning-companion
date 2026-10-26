@@ -3,17 +3,17 @@ name: unknown_workflow_generic_468
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.875
-common_nodes: [FishS2TTS, SaveAudio]
+coverage: 0.880167
+common_nodes: [AudioSeparation, LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json, 音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json, 音频生成/音频生成/情感标签-文本转语音-FishAudio S2 TTS_2033180769274830850.json]
+members: [图片生成/图生图/workflow_2073301151344324610.json, 图片生成/文生图/黑鲸千帆-音色_2011327990680002561.json, 音频生成/音频生成/Seed VC 音频换音色_2033059587288469506.json, 音频生成/音频生成/语音音色克隆(音频到音频STS)_1932367217512345602.json, 音频生成/音频生成/语音音色克隆STS_2074124382586359809.json, 音频生成/音频生成/音色迁移_2026843563522265089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_468
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json、音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/workflow_2073301151344324610.json、图片生成/文生图/黑鲸千帆-音色_2011327990680002561.json、音频生成/音频生成/Seed VC 音频换音色_2033059587288469506.json、音频生成/音频生成/语音音色克隆(音频到音频STS)_1932367217512345602.json、音频生成/音频生成/语音音色克隆STS_2074124382586359809.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,11 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `FishS2TTS`
+- `AudioSeparation`
+- `LoadAudio`
 - `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `ImpactSwitch` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

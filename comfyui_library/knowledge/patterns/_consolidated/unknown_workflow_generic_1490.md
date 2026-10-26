@@ -3,43 +3,36 @@ name: unknown_workflow_generic_1490
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9855
-common_nodes: [CR Text, ImageBatchMulti, JjkConcat, LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageNProEdit, RH_RhartTextG3ProPreviewImageToText, SaveImage, ShowText, easy anythingIndexSwitch]
+coverage: 0.6845
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4, Comfly_api_set, ImageConcanate, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/专业广告设计工作流-_2057363552155037697.json, 图片生成/文生图/专业广告设计工作流_2056635157515423745.json]
+members: [图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json, 图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1490
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/专业广告设计工作流-_2057363552155037697.json、图片生成/文生图/专业广告设计工作流_2056635157515423745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json、图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImageBatchMulti`
-- `JjkConcat`
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedream_4`
+- `Comfly_api_set`
+- `ImageConcanate`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageNProEdit`
-- `RH_RhartTextG3ProPreviewImageToText`
 - `SaveImage`
-- `ShowText`
-- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 1/2 个有
-- `RH_Captioner_Pro` —— 1/2 个有
-- `RH_RhartTextG3FlashPreviewTextToText` —— 1/2 个有
-- `SaveText` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
+- `PDIMAGE_LongerSize` —— 1/2 个有
 
 ## 典型参数
 

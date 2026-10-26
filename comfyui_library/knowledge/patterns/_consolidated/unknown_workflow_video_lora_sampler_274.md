@@ -2,86 +2,74 @@
 name: unknown_workflow_video_lora_sampler_274
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.47525
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, DirectorAudioFrameCalc, DirectorAudioScriptLoader, DirectorCasting, DirectorFinalRender, DirectorOrderGate, DirectorSceneIterator, DirectorStreamSaver, DirectorVideoPromptLoader, DirectorVisualStoryboardLoader, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, INTConstant, JoinStringMulti, KSamplerAdvanced, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2VAdvanced, PathchSageAttentionKJ, PreviewAudio, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SetNode, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSDefineSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+level: moderate
+coverage: 0.861375
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAny, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/全自动版！漫剧自动生成—自定义角色+_+音色+_+分镜+_+台词+_+视频_2027602453616660482.json, 视频生成/图生视频/半手动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2026683306535817218.json, 视频生成/图生视频/手动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2036343808945823745.json, 视频生成/图生视频/真全自动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2021176958817673218.json, 视频生成/文生视频/半手动版 _ 动态漫自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2065336611218481154.json, 视频生成/文生视频/半手动版本 _ 动态AI漫剧自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频一键生成_2062869621941817346.json, 视频生成/文生视频/半手动版本动态AI漫剧自定义角色+音色+分镜+台词+视频一键生成_2065351903407591425.json, 视频生成/文生视频/空白工作流_2083489604925214722.json]
+members: [图片生成/图生图/AI音乐MV数字人ngualarith+Minimax_H3_Selflift新二采_2114182229957103617.json, 数字人/数字人/AI音乐MV数字人新二采Separate_AV_Latent+Minimax_H3_Selflift_2113457299879714817.json, 数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json, 数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2101970168657309697.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json, 视频生成/图生视频/AI音乐MV数字人新二采（Separate AV Latent+Minimax H3 Selflift）_2102301279543447554.json, 视频生成/图生视频/Minimax_H3_Selflift数字人_2101084450963681281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_274
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/全自动版！漫剧自动生成—自定义角色+_+音色+_+分镜+_+台词+_+视频_2027602453616660482.json、视频生成/图生视频/半手动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2026683306535817218.json、视频生成/图生视频/手动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2036343808945823745.json、视频生成/图生视频/真全自动版！动态漫—自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2021176958817673218.json、视频生成/文生视频/半手动版 _ 动态漫自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2065336611218481154.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/AI音乐MV数字人ngualarith+Minimax_H3_Selflift新二采_2114182229957103617.json、数字人/数字人/AI音乐MV数字人新二采Separate_AV_Latent+Minimax_H3_Selflift_2113457299879714817.json、数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json、数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json、视频生成/图生视频/AI音乐MV数字人工作流API_2101970168657309697.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：48%
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `DirectorAudioFrameCalc`
-- `DirectorAudioScriptLoader`
-- `DirectorCasting`
-- `DirectorFinalRender`
-- `DirectorOrderGate`
-- `DirectorSceneIterator`
-- `DirectorStreamSaver`
-- `DirectorVideoPromptLoader`
-- `DirectorVisualStoryboardLoader`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetNode`
-- `INTConstant`
-- `JoinStringMulti`
-- `KSamplerAdvanced`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PainterI2VAdvanced`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSDefineSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewAny`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 2/8 个有
+- `PreviewImage` —— 4/8 个有
+- `ModelPreviewOverrideKJ` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `EmptyImage` —— 2/8 个有
+- `PrimitiveFloat` —— 2/8 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/8 个有
+- `Textbox` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PreviewAudio` —— 1/8 个有
+- `QwenH3PromptLocal` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | normal | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 normal，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

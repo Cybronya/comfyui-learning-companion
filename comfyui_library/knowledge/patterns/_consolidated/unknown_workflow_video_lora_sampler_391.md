@@ -1,116 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_391
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5692
-common_nodes: [Any Switch (rgthree), BlockifyMask, Bookmark (rgthree), CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageBatch, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageToMask, Label (rgthree), LayerMask: DrawBBoxMaskV2, LayerMask: MaskGrow, LayerMask: ObjectDetectorMask, LayerMask: SegformerB2ClothesUltra, LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PowerVisionObjectDetection, PowerVisionQwenModelLoader, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, RepeatImageBatch, ResizeMask, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, StringConcatenate, Switch any [Crystools], ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy sam3ModelLoader, easy sam3VideoSegmentation, easy seed, easy showAnything]
+coverage: 0.5325
+common_nodes: [FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, MathExpression|pysssss, PreviewAudio, ReplaceVideoLatentFrames, SetNode, SimpleMath+, Text Multiline, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, easy forLoopEnd, easy forLoopStart, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json, 视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json, 视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json, 视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json, 视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json]
+members: [数字人/数字人/Long.720_2084992456046768130.json, 数字人/数字人/LongCat-1.5数字人720_1280_2084861521263419394.json, 数字人/数字人/LongCat-1.5数字人全自动循环长视频_2059847488579923970.json, 数字人/数字人/LongCat-1.5数字人全自动循环长视频_2063816328166862849.json, 数字人/数字人/LongCat1.5数字人长视频_2061379607533801473.json, 视频生成/图生视频/LongCat-1.5主播数字人精准口型全自动循环长视频_2100856928686657538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_391
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json、视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json、视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json、视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json、视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/Long.720_2084992456046768130.json、数字人/数字人/LongCat-1.5数字人720_1280_2084861521263419394.json、数字人/数字人/LongCat-1.5数字人全自动循环长视频_2059847488579923970.json、数字人/数字人/LongCat-1.5数字人全自动循环长视频_2063816328166862849.json、数字人/数字人/LongCat1.5数字人长视频_2061379607533801473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BlockifyMask`
-- `Bookmark (rgthree)`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
+全部 6 个 workflow 都包含：
+- `FloatConstant`
 - `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetImageSize+`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `Label (rgthree)`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: MaskGrow`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: CropByMask V2`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `PowerVisionObjectDetection`
-- `PowerVisionQwenModelLoader`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_Translator`
-- `RMBG`
-- `RepeatImageBatch`
-- `ResizeMask`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `LongCatAvatarWhisperEmbeds`
+- `MathExpression|pysssss`
+- `PreviewAudio`
+- `ReplaceVideoLatentFrames`
 - `SetNode`
 - `SimpleMath+`
-- `StringConcatenate`
-- `Switch any [Crystools]`
-- `ToBinaryMask`
-- `VHS_LoadVideo`
+- `Text Multiline`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy isMaskEmpty`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy seed`
+- `WhisperModelLoader`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PointsEditor` —— 4/5 个有
-- `AddLabel` —— 3/5 个有
-- `ImpactIfNone` —— 3/5 个有
-- `Note Plus (mtb)` —— 3/5 个有
-- `easy framesEditor` —— 3/5 个有
-- `DownloadAndLoadSAM2Model` —— 2/5 个有
-- `Sam2Segmentation` —— 2/5 个有
+- `孤海注释` —— 2/6 个有
+- `CM_IntToFloat` —— 1/6 个有
+- `Float` —— 1/6 个有
+- `GetAudioDurationFromAudio` —— 1/6 个有
 
 ## 典型参数
 

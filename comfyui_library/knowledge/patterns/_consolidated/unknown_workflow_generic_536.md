@@ -3,33 +3,38 @@ name: unknown_workflow_generic_536
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9666
-common_nodes: [LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
+coverage: 0.7916
+common_nodes: [LoadImage, PreviewAny, SaveImage, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/图生图/六宫格图像生成_2062724357385965570.json, 图片生成/图生图/图片编辑-全能图片2_1991690438390411266.json, 图片生成/图生图/广角+低角度应用_2053484863348588546.json, 图片生成/图生图/日系二次元角色设定参考图_2054468374251483137.json, 图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json]
+members: [图片生成/反推提示词/Llama-cpp本地图片提示词反推_2100759282450001922.json, 图片生成/反推提示词/Qwen 3.5反推提示词_2071901170687365122.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜图片反推智能解析_2031694652381859842.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频剧情生成器_2031707148383690754.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频反推智能解析_2031700361131593729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_536
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/六宫格图像生成_2062724357385965570.json、图片生成/图生图/图片编辑-全能图片2_1991690438390411266.json、图片生成/图生图/广角+低角度应用_2053484863348588546.json、图片生成/图生图/日系二次元角色设定参考图_2054468374251483137.json、图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Llama-cpp本地图片提示词反推_2100759282450001922.json、图片生成/反推提示词/Qwen 3.5反推提示词_2071901170687365122.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜图片反推智能解析_2031694652381859842.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频剧情生成器_2031707148383690754.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频反推智能解析_2031700361131593729.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageNG31FlashImageToImage`
+- `PreviewAny`
 - `SaveImage`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `KepStringLiteral` —— 1/5 个有
-- `TextInputNode` —— 1/5 个有
+- `llama_cpp_parameters` —— 4/5 个有
+- `easy saveText` —— 3/5 个有
+- `JjkText` —— 1/5 个有
+- `PromptEnhancerPreset` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

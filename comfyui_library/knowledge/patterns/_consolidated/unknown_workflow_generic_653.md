@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_653
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+coverage: 0.8532
+common_nodes: [CR Prompt Text, MossTTSModelLoader, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json, 图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json, 图片生成/图生图/seedream5.0-pro 换装_2082447847693312001.json]
+members: [音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json, 音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json, 音频生成/音频生成/Moss TTS音效生成V2模型_2076262987660357634.json, 音频生成/音频生成/Moss TTS音效生成_2076493543895560193.json, 音频生成/音频生成/moss音效生成_2076557226864635906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_653
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json、图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json、图片生成/图生图/seedream5.0-pro 换装_2082447847693312001.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json、音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json、音频生成/音频生成/Moss TTS音效生成V2模型_2076262987660357634.json、音频生成/音频生成/Moss TTS音效生成_2076493543895560193.json、音频生成/音频生成/moss音效生成_2076557226864635906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CR Prompt Text`
-- `LoadImage`
-- `SaveImage`
+- `MossTTSModelLoader`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV5ProImageToImage` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `LoadVideo` —— 1/4 个有
+- `MossSoundEffectV2Generate` —— 3/5 个有
+- `MossTTSVoiceDesign` —— 2/5 个有
 
 ## 典型参数
 

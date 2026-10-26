@@ -3,46 +3,33 @@ name: unknown_workflow_video_27
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7452
-common_nodes: [Bjornulf_AnythingToText, CR String To Number, GetImageSizeAndCount, LoadAudio, RH_GetAudioDuration, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything, easy textSwitch]
+coverage: 0.9156
+common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/单个多个视频音频合并_2015258006027505666.json, 音频生成/音频生成/视频+Index-TTS单人语音克隆配音_1955599067427454978.json, 音频生成/音频生成/视频+Index-TTS双人语音克隆配音_1955596246850289665.json, 音频生成/音频生成/视频+音频合并工具_1955594689191841793.json, 音频生成/音频生成/视频音频合并_2015278447341346818.json]
+members: [视频生成/图生视频/FramePack_官方工作流_FLF2V_1930285624970919938.json, 视频生成/图生视频/FramePack图生视频_1913759215695949826.json, 视频生成/图生视频/FramePack张吕敏开源图生视频模型RH平台独家_1913122843595370497.json, 视频生成/图生视频/FramePack首尾帧_1914968107276824577.json, 视频生成/图生视频/frame pack 一键生成60秒视频_1912926110097833985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_27
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/单个多个视频音频合并_2015258006027505666.json、音频生成/音频生成/视频+Index-TTS单人语音克隆配音_1955599067427454978.json、音频生成/音频生成/视频+Index-TTS双人语音克隆配音_1955596246850289665.json、音频生成/音频生成/视频+音频合并工具_1955594689191841793.json、音频生成/音频生成/视频音频合并_2015278447341346818.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FramePack_官方工作流_FLF2V_1930285624970919938.json、视频生成/图生视频/FramePack图生视频_1913759215695949826.json、视频生成/图生视频/FramePack张吕敏开源图生视频模型RH平台独家_1913122843595370497.json、视频生成/图生视频/FramePack首尾帧_1914968107276824577.json、视频生成/图生视频/frame pack 一键生成60秒视频_1912926110097833985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Bjornulf_AnythingToText`
-- `CR String To Number`
-- `GetImageSizeAndCount`
-- `LoadAudio`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `IndexTTSRun` —— 2/5 个有
-- `SaveAudio` —— 2/5 个有
-- `Save_Audio` —— 2/5 个有
-- `ImageBatchMultiple+` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

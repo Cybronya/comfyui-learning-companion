@@ -1,67 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_603
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.598667
-common_nodes: [CR Prompt Text, GetNode, HuMoEmbeds, ImageBatchMulti, ImageResizeKJv2, Int, JWFloat, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, SoundFlow_GetLength, SoundFlow_TrimAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.46375
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, GetNode, GoohaiUniversalSlider, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/Humo+InfiniteTalk+Lynx三分镜MV-大幅提升人物一致性_20251109_1990237934462881793.json, 视频生成/图生视频/Humo+InfiniteTalk三分镜MV_20251109_1985880552534355969.json, 视频生成/图生视频/Humo三镜头MV_20251104_1985702595668975618.json]
+members: [视频生成/图生视频/自用文武双全音频驱动_2112933738454802433.json, 视频生成/文生视频/MiniMax H3 终极篇-文生视频_2113466253888282626.json, 视频生成/文生视频/MiniMax H3生成视频_2113923437487026177.json, 视频生成/文生视频/YZ金鱼-MiniMax+H3+终极篇-文武双全_2113310444478877698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_603
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Humo+InfiniteTalk+Lynx三分镜MV-大幅提升人物一致性_20251109_1990237934462881793.json、视频生成/图生视频/Humo+InfiniteTalk三分镜MV_20251109_1985880552534355969.json、视频生成/图生视频/Humo三镜头MV_20251104_1985702595668975618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/自用文武双全音频驱动_2112933738454802433.json、视频生成/文生视频/MiniMax H3 终极篇-文生视频_2113466253888282626.json、视频生成/文生视频/MiniMax H3生成视频_2113923437487026177.json、视频生成/文生视频/YZ金鱼-MiniMax+H3+终极篇-文武双全_2113310444478877698.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `GetNode`
-- `HuMoEmbeds`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `Int`
-- `JWFloat`
-- `LoadAudio`
+- `GoohaiUniversalSlider`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `ResolutionSelector`
 - `SetNode`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTalkModelLoader` —— 2/3 个有
-- `MultiTalkWav2VecEmbeds` —— 2/3 个有
-- `WanVideoCombineEmbeds` —— 2/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 2/3 个有
-- `Wav2VecModelLoader` —— 2/3 个有
-- `LoadLynxResampler` —— 1/3 个有
-- `LynxEncodeFaceIP` —— 1/3 个有
-- `LynxInsightFaceCrop` —— 1/3 个有
-- `WanVideoAddLynxEmbeds` —— 1/3 个有
-- `WanVideoExtraModelSelect` —— 1/3 个有
-- `WanVideoSetBlockSwap` —— 1/3 个有
-- `WanVideoSetLoRAs` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `MiniMaxChunkFeedForward` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SelfLiftH3Sampler` —— 3/4 个有
+- `VAEDecodeAudio` —— 3/4 个有
+- `LoadAudioFromUrl` —— 1/4 个有
+- `MiniMaxH3AddGuide` —— 1/4 个有
+- `SelfLiftAvatarH3Sampler` —— 1/4 个有
+- `SoundFlow_GetLength` —— 1/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/4 个有
 
 ## 典型参数
 

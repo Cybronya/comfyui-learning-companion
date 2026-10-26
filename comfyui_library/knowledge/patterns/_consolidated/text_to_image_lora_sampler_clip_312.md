@@ -1,77 +1,102 @@
 ---
 name: text_to_image_lora_sampler_clip_312
 type: Text To Image
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.875667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.873
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, RHLLMChatNode, RHSettingsNode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMathDual+, UNETLoader, UniBlockSwap, VAEDecode, VAEDecodeAudio, VAELoader, easy blocker, easy ifElse, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy seed, easy splitImages, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/SFT图像编辑｜SenseNova 1.5局部重绘换背景_2093781245145731073.json, 图片生成/图生图/全能图片G image 2.5图生图，最强生图模型实测_2110838624374845441.json, 图片生成/图生图/全能图片G image 2.5图生图｜最强生图模型一站直出_2111080841748242433.json, 图片生成/图生图/全能图片G image 2.5图生图｜最强生图模型质感天花板_2110688249055367169.json, 图片生成/图生图/全能图片G2.5视觉重构图生图 风格迁移多维局部重绘_2099223557640380417.json, 图片生成/图生图/全能图片G2.5视觉重构图生图 风格迁移多维局部重绘_2099592794041049089.json]
+members: [视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091305280138211329.json, 视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091883064552148994.json, 视频生成/图生视频/MiniMax 短剧创作导演台_1080P 双采图生视频_2089609241664507906.json, 视频生成/图生视频/MiniMax短剧创作导演台1080P双采｜图生视频高清生成_2090458408708296706.json, 视频生成/图生视频/导演台短剧创作｜MiniMax 1080P双采图生视频_2090186981660782594.json, 视频生成/图生视频/短剧创作Ⅱ双采更新｜MiniMax 1080P质量更佳图生视频_2090213941472481281.json, 视频生成/图生视频/短剧创作Ⅱ导演台｜MiniMax 1080P双采图生视频质量升级_2089037699893260289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_312
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SFT图像编辑｜SenseNova 1.5局部重绘换背景_2093781245145731073.json、图片生成/图生图/全能图片G image 2.5图生图，最强生图模型实测_2110838624374845441.json、图片生成/图生图/全能图片G image 2.5图生图｜最强生图模型一站直出_2111080841748242433.json、图片生成/图生图/全能图片G image 2.5图生图｜最强生图模型质感天花板_2110688249055367169.json、图片生成/图生图/全能图片G2.5视觉重构图生图 风格迁移多维局部重绘_2099223557640380417.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091305280138211329.json、视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091883064552148994.json、视频生成/图生视频/MiniMax 短剧创作导演台_1080P 双采图生视频_2089609241664507906.json、视频生成/图生视频/MiniMax短剧创作导演台1080P双采｜图生视频高清生成_2090458408708296706.json、视频生成/图生视频/导演台短剧创作｜MiniMax 1080P双采图生视频_2090186981660782594.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CreateVideo`
 - `EmptyLatentImage`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelPreviewOverrideKJ`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RHLLMChatNode`
+- `RHSettingsNode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SimpleMathDual+`
 - `UNETLoader`
+- `UniBlockSwap`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `easy blocker`
+- `easy ifElse`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
+- `easy seed`
+- `easy splitImages`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25FlareImageToImage` —— 5/6 个有
-- `EmptySenseNovaLatentImage` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `SenseNovaReferenceImage` —— 1/6 个有
-- `SenseNovaSamplingOptions` —— 1/6 个有
-- `SenseNovaU15Loader` —— 1/6 个有
+- `孤海注释` —— 6/7 个有
+- `PT_H3ConcatAVLatent` —— 5/7 个有
+- `VAEEncode` —— 5/7 个有
+- `VAEEncodeAudio` —— 5/7 个有
+- `BasicScheduler` —— 4/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `ExtendIntermediateSigmas` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `ManualSigmas` —— 3/7 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

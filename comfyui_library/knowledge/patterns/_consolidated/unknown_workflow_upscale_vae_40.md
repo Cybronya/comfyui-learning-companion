@@ -3,48 +3,48 @@ name: unknown_workflow_upscale_vae_40
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.677667
-common_nodes: [GetImageSize+, ImageResize+, ImageScaleBy, KOOK_ImageCompression, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy showAnything]
+coverage: 0.951
+common_nodes: [DF_Integer, Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2高清出图(2K单图编辑版)_2029008964146434050.json, 图片生成/图生图/全能图片2高清出图(2K多图编辑版)_2029179596117118978.json, 图片生成/图生图/图片放大-rh-SeedVR2+TTP-模板_2013152289002885122.json]
+members: [图片生成/图生图/seedVR2 高清放大（TTP）_2014722740112072705.json, 图片生成/图生图/自用seedVR2.5_2003502446167113729.json, 图片生成/图生图/详情图到白底图+高清_2061726060374487042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_40
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片2高清出图(2K单图编辑版)_2029008964146434050.json、图片生成/图生图/全能图片2高清出图(2K多图编辑版)_2029179596117118978.json、图片生成/图生图/图片放大-rh-SeedVR2+TTP-模板_2013152289002885122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/seedVR2 高清放大（TTP）_2014722740112072705.json、图片生成/图生图/自用seedVR2.5_2003502446167113729.json、图片生成/图生图/详情图到白底图+高清_2061726060374487042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GetImageSize+`
+- `DF_Integer`
+- `Get Image Size`
+- `ImageCASharpening+`
 - `ImageResize+`
-- `ImageScaleBy`
-- `KOOK_ImageCompression`
+- `ImpactMinMax`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `SimpleMath+`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
 - `LoadImage` —— 2/3 个有
-- `PainterNode` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `LoadAndResizeImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/3 个有
+- `easy imageRemBg` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_514
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8996
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.896
+common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceDesign, PreviewAny, PreviewAudio, RH_LLMAPI_Pro_Node, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/b-汽车小红书涂鸦风格_1998563105565237250.json, 图片生成/图生图/云雾v10_2049162619633799169.json, 图片生成/图生图/服装上身RH_V2_2052194715839279106.json, 图片生成/图生图/随机裂变 _ 景别、视角、姿态 _  全能图片V1 2_1945324800808243202.json, 图片生成/文生图/一键生成分镜图（适配短剧创作）_2047159465799061505.json]
+members: [音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2034082246776332290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_514
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/b-汽车小红书涂鸦风格_1998563105565237250.json、图片生成/图生图/云雾v10_2049162619633799169.json、图片生成/图生图/服装上身RH_V2_2052194715839279106.json、图片生成/图生图/随机裂变 _ 景别、视角、姿态 _  全能图片V1 2_1945324800808243202.json、图片生成/文生图/一键生成分镜图（适配短剧创作）_2047159465799061505.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `FB_Qwen3TTSVoiceDesign`
+- `PreviewAny`
+- `PreviewAudio`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 4/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CR Prompt List` —— 1/5 个有
-- `RandomPrompt` —— 1/5 个有
+- `ConcatTextOfUtils` —— 2/6 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/6 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
 
 ## 典型参数
 

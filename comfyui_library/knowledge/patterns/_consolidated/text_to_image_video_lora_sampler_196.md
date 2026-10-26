@@ -1,88 +1,110 @@
 ---
 name: text_to_image_video_lora_sampler_196
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8655
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DisableNoise, EmptyLatentImage, Image Comparer (rgthree), KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG, easy cleanGpuUsed]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.836333
+common_nodes: [CLIPLoader, CLIPTextEncode, DrawMaskOnImage, EmptyLatentImage, FillMaskWithColor, GetImageSizeAndCount, GetNode, GrowMask, ImageFromBatch, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, Int, InvertMask, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PointsEditor, PreviewImage, PrimitiveInt, RH_Captioner, RunningHub Deepcleaner, SeCModelLoader, SeCVideoSegmentation, SetNode, ShowText, Text, TextConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/通义千问+WAN2.2反推图生图_1956263880253210626.json, 图片生成/文生图/Z-image 1K反推出图_1993986224063004673.json]
+members: [视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json, 视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json, 视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_196
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/通义千问+WAN2.2反推图生图_1956263880253210626.json、图片生成/文生图/Z-image 1K反推出图_1993986224063004673.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json、视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json、视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DisableNoise`
+- `DrawMaskOnImage`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `FillMaskWithColor`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `Int`
+- `InvertMask`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `PointsEditor`
 - `PreviewImage`
+- `PrimitiveInt`
 - `RH_Captioner`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SplitSigmas`
+- `RunningHub Deepcleaner`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `ShowText`
+- `Text`
+- `TextConcatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `WanVideoNAG`
-- `easy cleanGpuUsed`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SDXLPromptStyler` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `UltimateSDUpscale` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

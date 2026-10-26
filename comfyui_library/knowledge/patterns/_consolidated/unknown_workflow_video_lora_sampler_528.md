@@ -2,89 +2,69 @@
 name: unknown_workflow_video_lora_sampler_528
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.7905
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, ImageFromBatch, ImageScale, KSampler, KSamplerSelect, LoadAudio, LoraLoader, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelSamplingAuraFlow, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.91825
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/九宫格动态视频_2097982356224307201.json, 视频生成/图生视频/几何色窗动态海报_2098589237993107457.json, 视频生成/图生视频/动态头像_2098349606944993281.json, 视频生成/文生视频/Z-Image角色_MiniMaxH3原生节点MV_LoRA版1分钟版_2095424931935899650.json]
+members: [图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json, 图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json, 视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json, 视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_528
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/九宫格动态视频_2097982356224307201.json、视频生成/图生视频/几何色窗动态海报_2098589237993107457.json、视频生成/图生视频/动态头像_2098349606944993281.json、视频生成/文生视频/Z-Image角色_MiniMaxH3原生节点MV_LoRA版1分钟版_2095424931935899650.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json、图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json、视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json、视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `ImageFromBatch`
-- `ImageScale`
-- `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoraLoader`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelSamplingAuraFlow`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `SeedVR2` —— 2/4 个有
-- `SeedVR2BlockSwap` —— 2/4 个有
-- `SeedVR2ExtraArgs` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `StringConcatenate` —— 1/4 个有
+- `AILab_ImageStitch` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `ImageFromBatch+` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `RMBG` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_Nano_Banana_Image2Image` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_multistep | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 模型强度 | 0.6 | 0.6 - 0.6 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 0.6，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（6/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,30 +3,35 @@ name: unknown_workflow_generic_1104
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.944333
-common_nodes: [CR Text, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, SaveAudio]
+coverage: 0.744
+common_nodes: [AudioCleanupNode, CR Prompt Text, IndexTTSNode, JWInteger, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/QWEN3 TTS声音预设_2015077846502346754.json, 音频生成/音频生成/Qwen3 TTS-自定义声音_2060681341087338498.json, 音频生成/音频生成/方言语音（qwen3-tts）_2014719044716335105.json]
+members: [数字人/数字人/ani②-indextts语音克隆_1945084103429431297.json, "音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json", 音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1104
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/QWEN3 TTS声音预设_2015077846502346754.json、音频生成/音频生成/Qwen3 TTS-自定义声音_2060681341087338498.json、音频生成/音频生成/方言语音（qwen3-tts）_2014719044716335105.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ani②-indextts语音克隆_1945084103429431297.json、音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json、音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
+- `AudioCleanupNode`
+- `CR Prompt Text`
+- `IndexTTSNode`
+- `JWInteger`
+- `LoadAudio`
 - `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 2/3 个有
 
 ## 典型参数
 

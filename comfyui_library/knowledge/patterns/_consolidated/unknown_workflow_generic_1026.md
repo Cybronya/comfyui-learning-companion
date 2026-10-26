@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1026
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.972333
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.863
+common_nodes: [LoadImage, PrimitiveInt, RH_RhartImageG2ImageToImage, SaveImage, TextInput_, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json, 视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json, 视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json]
+members: [图片生成/图生图/参考背景风格种草图_2064594198262804482.json, 图片生成/图生图/种草图生成_2047193652753080321.json, 图片生成/图生图/种草图生成_2061636648290578433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1026
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json、视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json、视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/参考背景风格种草图_2064594198262804482.json、图片生成/图生图/种草图生成_2047193652753080321.json、图片生成/图生图/种草图生成_2061636648290578433.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
-- `TextBoxMira` —— 1/3 个有
+- `PrimitiveInt`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `TextInput_`
+- `easy promptLine`
 
 ## 典型参数
 

@@ -1,74 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_508
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.702
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ComfySwitchNode, ConditioningZeroOut, CreateVideo, CustomCombo, ImageFromBatch, KSamplerSelect, LatentCutToBatch, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RebatchImages, RegexExtract, ResizeImageMaskNode, SamplerCustom, SamplerCustomAdvanced, SaveVideo, SkipLayerGuidanceDiTSimple, StringConcatenate, StringReplace, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanDancerEncodeAudio, WanDancerPadKeyframesList, WanDancerVideo]
+coverage: 0.7224
+common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Dancer阿里音乐跳舞模型舞蹈视频dancer优化版多种舞蹈选择_2078404185879568386.json, 视频生成/图生视频/Wan Dancer阿里音乐跳舞模型舞蹈视频dancer优化版多种舞蹈选择_2078450867975577602.json, 视频生成/图生视频/Wan-Dancer舞蹈视频生成org版_2078051444011393026.json, 视频生成/图生视频/WanDancer！7月最新开源！根据音频生成舞蹈动作_2078397900996038658.json]
+members: [视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json, 视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json, 视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_508
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan Dancer阿里音乐跳舞模型舞蹈视频dancer优化版多种舞蹈选择_2078404185879568386.json、视频生成/图生视频/Wan Dancer阿里音乐跳舞模型舞蹈视频dancer优化版多种舞蹈选择_2078450867975577602.json、视频生成/图生视频/Wan-Dancer舞蹈视频生成org版_2078051444011393026.json、视频生成/图生视频/WanDancer！7月最新开源！根据音频生成舞蹈动作_2078397900996038658.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json、视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json、视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `CustomCombo`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `LatentCutToBatch`
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `RebatchImages`
-- `RegexExtract`
-- `ResizeImageMaskNode`
-- `SamplerCustom`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SkipLayerGuidanceDiTSimple`
-- `StringConcatenate`
-- `StringReplace`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanDancerEncodeAudio`
-- `WanDancerPadKeyframesList`
-- `WanDancerVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 3/4 个有
-- `1hew_AnySwitchSelect` —— 1/4 个有
-- `Int` —— 1/4 个有
+- `Text Multiline` —— 4/5 个有
+- `WanVideoScheduler` —— 4/5 个有
+- `ColorMatch` —— 2/5 个有
+- `CreateCFGScheduleFloatList` —— 2/5 个有
+- `ImageStitch` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: TextJoinV2` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `Textbox` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

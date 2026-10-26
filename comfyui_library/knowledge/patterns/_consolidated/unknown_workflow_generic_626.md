@@ -1,30 +1,34 @@
 ---
 name: unknown_workflow_generic_626
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
 coverage: 1
-common_nodes: [ByteDance2TextToVideoNode, SaveVideo]
+common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json, comfyui-workflow-templates-json/api_seedance2_0_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json]
+members: [视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json, 视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json, 视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json, 视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json, 视频生成/图生视频/可灵图生视频 V2.5 Turbo-Std(0.21_秒)_2039889505292914690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_626
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json、comfyui-workflow-templates-json/api_seedance2_0_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json、视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json、视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json、视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json、视频生成/图生视频/可灵图生视频 V2.5 Turbo-Std(0.21_秒)_2039889505292914690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ByteDance2TextToVideoNode`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_Kling25_Image2Video`
 - `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `GetRandomIntegerInRange` —— 1/5 个有
 
 ## 典型参数
 

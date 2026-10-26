@@ -3,55 +3,59 @@ name: text_to_image_lora_sampler_clip_643
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.806
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyLatentImage, FastFilmGrain, KSampler, LayerColor: BrightnessContrastV2, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, SaveImage, StringFunction|pysssss, Text, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.933
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PIP_图像联结, ReActorFaceSwap, SaveImage, SeedVR2, Text, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageConcat]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/一键生成自媒体封面V2_2036289953994383361.json, 图片生成/文生图/自媒体封面设计平面海报设计 RH工作流+应用封面生成_2044600478033518593.json]
+members: [图片生成/图生图/与IP合照_2020696703266988033.json, 图片生成/图生图/我和疯狂动物城合照-I took a photo with Zootopia_1995758961028632578.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_643
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键生成自媒体封面V2_2036289953994383361.json、图片生成/文生图/自媒体封面设计平面海报设计 RH工作流+应用封面生成_2044600478033518593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/与IP合照_2020696703266988033.json、图片生成/图生图/我和疯狂动物城合照-I took a photo with Zootopia_1995758961028632578.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
 - `EmptyLatentImage`
-- `FastFilmGrain`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerColor: BrightnessContrastV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RH_LLMAPI_Pro_Node`
+- `ModelSamplingAuraFlow`
+- `PIP_图像联结`
+- `ReActorFaceSwap`
 - `SaveImage`
-- `StringFunction|pysssss`
+- `SeedVR2`
 - `Text`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy imageConcat`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
+| 采样步数 | 6 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_2s | - | 2 | 100% |
-| 调度器 | bong_tangent | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 920 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 100% |
+| 宽度 | 1920 | - | 2 | 100% |
+| 高度 | 1600 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -61,12 +65,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，2 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，2 个样本，一致性 100%
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1600，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

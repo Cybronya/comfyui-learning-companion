@@ -3,46 +3,63 @@ name: unknown_workflow_video_sampler_vae_170
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.929667
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_LLMAPI_Pro_Node, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart]
+coverage: 0.558
+common_nodes: [AddLabel, Bjornulf_CombineTexts, CR Text Input Switch, DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, Florence2ModelLoader, Florence2Run, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive string multiline [Crystools], SetNode, VHS_LoadVideoFFmpeg, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy promptReplace, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/动态表情包_2010321814848806914.json, 视频生成/图生视频/动态表情包_2011337809822490625.json, 视频生成/图生视频/美女拜年动态表情包_2017051301229629442.json]
+members: [视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_170
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态表情包_2010321814848806914.json、视频生成/图生视频/动态表情包_2011337809822490625.json、视频生成/图生视频/美女拜年动态表情包_2017051301229629442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json、视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json、视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `AddLabel`
+- `Bjornulf_CombineTexts`
+- `CR Text Input Switch`
+- `DWPreprocessor`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetNode`
 - `INTConstant`
-- `ImageFromBatch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `Primitive string multiline [Crystools]`
+- `SetNode`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy boolean`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy promptReplace`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,39 +3,34 @@ name: unknown_workflow_generic_923
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.737
-common_nodes: [EmptyImage, JjkText, LoadImage, MultiTextConcatenate, PreviewImage, PreviewTextNode, RH_RhartImageG2ImageToImage, SaveImage, Text, Text Multiline, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.811
+common_nodes: [CR Prompt Text, PreviewAny, RH_LLMAPI_Pro_Node, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json]
+members: [图片生成/反推提示词/Seedance 2.0 爆款脚本洗稿_2021055358214606850.json, 图片生成/反推提示词/WOX最强视频反推直出提示词_2114642015366508545.json, 图片生成/反推提示词/爆款视频反推提示词_2057854651298566145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_923
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Seedance 2.0 爆款脚本洗稿_2021055358214606850.json、图片生成/反推提示词/WOX最强视频反推直出提示词_2114642015366508545.json、图片生成/反推提示词/爆款视频反推提示词_2057854651298566145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EmptyImage`
-- `JjkText`
-- `LoadImage`
-- `MultiTextConcatenate`
-- `PreviewImage`
-- `PreviewTextNode`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text`
-- `Text Multiline`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `CR Prompt Text`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadVideo` —— 2/3 个有
+- `StringFormat` —— 1/3 个有
 
 ## 典型参数
 

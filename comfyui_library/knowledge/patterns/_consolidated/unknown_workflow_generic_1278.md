@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1278
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7635
-common_nodes: [ImageScale, ImageStitch, JjkText, LoadImage, PreviewImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.765
+common_nodes: [CR Prompt Text, CR Text, CR Text Replace, JDCN_StringToList, LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Seed (rgthree), ShellAgentPluginOutputText, Text Concatenate, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/kontext 一键双人合影生成_1938146335730372610.json, 图片生成/图生图/kontext 万物迁移 （优化版）_1938089963911319554.json]
+members: [图片生成/反推提示词/(自用)Ai绘画提示词自动生成50组（g3p）_2006365523214344193.json, 图片生成/文生图/Ai绘画提示词自动生成50组V2（g3p）_2017610183333126145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1278
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/kontext 一键双人合影生成_1938146335730372610.json、图片生成/图生图/kontext 万物迁移 （优化版）_1938089963911319554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/(自用)Ai绘画提示词自动生成50组（g3p）_2006365523214344193.json、图片生成/文生图/Ai绘画提示词自动生成50组V2（g3p）_2017610183333126145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,18 +23,18 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScale`
-- `ImageStitch`
-- `JjkText`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Replace`
+- `JDCN_StringToList`
 - `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `Seed (rgthree)`
+- `ShellAgentPluginOutputText`
+- `Text Concatenate`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -2,73 +2,85 @@
 name: unknown_workflow_lora_sampler_unet_121
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.866167
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+level: strong
+coverage: 0.802167
+common_nodes: [CLIPLoader, FluxKontextImageScale, KSampler, LayerMask: MaskInvert, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085286536706351105.json, 视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085553480567189505.json, 视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版_2087281024626683906.json, 视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版（自动反推版）_2087275070858289153.json, 视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版(自动反推版)_2087167230646775810.json, 视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版_2087271938422038530.json]
+members: [图片生成/图生图/Qwen-Edit-2511超级扩图_2012115418680397825.json, 图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2012078904898494465.json, 图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2013902159636602881.json, 图片生成/图生图/[🛫书墨]Qwen-Edit-2511-极限扩图测试_2003854957788995586.json, 图片生成/图生图/[🛫书墨]小红书fireRed-image-edit超比例扩图_2026578402613923842.json, 图片生成/图生图/【🛫书墨】人物换装、换背景_2011647468227792898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_121
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085286536706351105.json、视频生成/图生视频/(8步加速-768P)Minimax图生视频V1_2085553480567189505.json、视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版_2087281024626683906.json、视频生成/图生视频/(fl)Minimax-H3官方8步极速工作流-V1正式版（自动反推版）_2087275070858289153.json、视频生成/图生视频/(ref)Minimax-H3官方8步极速工作流-V1正式版(自动反推版)_2087167230646775810.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511超级扩图_2012115418680397825.json、图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2012078904898494465.json、图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2013902159636602881.json、图片生成/图生图/[🛫书墨]Qwen-Edit-2511-极限扩图测试_2003854957788995586.json、图片生成/图生图/[🛫书墨]小红书fireRed-image-edit超比例扩图_2026578402613923842.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `FluxKontextImageScale`
+- `KSampler`
+- `LayerMask: MaskInvert`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `PreviewImage`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/6 个有
-- `SaveVideo` —— 4/6 个有
-- `UniBlockSwap` —— 4/6 个有
-- `VRAMReserver` —— 4/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `GetImageRangeFromBatch` —— 2/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `RHLLMChatNode` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `SaveVideoRGBA` —— 2/6 个有
-- `StringFunction|pysssss` —— 2/6 个有
-- `VHS_LoadVideo` —— 2/6 个有
-- `Vignette` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `BatchImagesNode` —— 1/6 个有
+- `EmptyLatentImage` —— 5/6 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 5/6 个有
+- `LayerMask: MaskPreview` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `InpaintModelConditioning` —— 4/6 个有
+- `Any Switch (rgthree)` —— 3/6 个有
+- `ClothesSegment` —— 3/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `Fast Groups Muter (rgthree)` —— 3/6 个有
+- `GetImageSize` —— 3/6 个有
+- `LayerUtility: ExtendCanvasV2` —— 3/6 个有
+- `LayerUtility: ImageRemoveAlpha` —— 3/6 个有
+- `SolidMask` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `GrowMaskWithBlur` —— 1/6 个有
+- `easy imageConcat` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 50% |
+| 调度器 | simple | - | 6 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 512 | 512 - 512 | 5 | 100% |
+| 高度 | 512 | 512 - 512 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 50%
+- 调度器 最常用 simple，6 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

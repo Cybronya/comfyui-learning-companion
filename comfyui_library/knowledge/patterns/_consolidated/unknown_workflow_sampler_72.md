@@ -3,38 +3,38 @@ name: unknown_workflow_sampler_72
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9165
-common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, Note Plus (mtb), RunningHub_UNO_Loadmodel, RunningHub_UNO_Sampler, SaveImage]
+coverage: 0.8465
+common_nodes: [ImageConcanate, JjkText, LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/UNO双图融合主题一致性工作流V1_1910340168090615809.json, 图片生成/图生图/Uno单图主题编辑一致性工作流_1910317954465001473.json]
+members: [图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json, 图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_72
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/UNO双图融合主题一致性工作流V1_1910340168090615809.json、图片生成/图生图/Uno单图主题编辑一致性工作流_1910317954465001473.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json、图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
 - `ImageConcanate`
-- `JWInteger`
+- `JjkText`
 - `LoadImage`
-- `Note Plus (mtb)`
-- `RunningHub_UNO_Loadmodel`
-- `RunningHub_UNO_Sampler`
+- `RH_Translator`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `ImagePadForOutpaintMasked` —— 1/2 个有
+- `LayerMask: MaskPreview` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

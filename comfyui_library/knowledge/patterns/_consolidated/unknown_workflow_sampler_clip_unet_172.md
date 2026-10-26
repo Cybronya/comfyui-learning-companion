@@ -3,56 +3,59 @@ name: unknown_workflow_sampler_clip_unet_172
 type: Unknown Workflow
 frequency: 8
 level: weak
-coverage: 0.953875
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.913875
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/UnifiedReward-Flex LoRA-Wan2.2-动作优化-文生视频_2031576870059249666.json, 视频生成/文生视频/Wan2.2文生视频工作流（个人调试最佳版）_1950412197002436609.json, 视频生成/文生视频/wan2.2-加速lora-4步极速-官方-文生视频_1956007153972727810.json, 视频生成/文生视频/wan2.2最新加速文生图250928-dyno损失小_1972558589065949185.json, 视频生成/文生视频/【阡陌】wan2.2 GGUF+light4步加速lora文生视频工作流_1967793949974867969.json, 视频生成/文生视频/【阡陌】wan2.2+light4步加速lora文生视频工作流_1967560743048581122.json, 视频生成/文生视频/文生视频（解禁模型）：Wan2.2_Remix_2053378746035515394.json, 视频生成/文生视频/文生视频（解禁模型）：Wan2.2_Remix_2068556222554533890.json]
+members: [图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json, 图片生成/文生图/flux文生图(自用）_1891744030592774146.json, 图片生成/文生图/flux文生图_1896040375998414850.json, 图片生成/文生图/flux文生图_1896043053692092417.json, 图片生成/文生图/flux生图工作流_1946106579613609985.json, 图片生成/文生图/小红书生活FLUX一键生成极致逼真美女—comfyui工作流_1957765376640909314.json, 图片生成/文生图/文生四宫格图_1908149869620375554.json, 图片生成/文生图/文生四宫格图_2060284327476416514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_172
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/UnifiedReward-Flex LoRA-Wan2.2-动作优化-文生视频_2031576870059249666.json、视频生成/文生视频/Wan2.2文生视频工作流（个人调试最佳版）_1950412197002436609.json、视频生成/文生视频/wan2.2-加速lora-4步极速-官方-文生视频_1956007153972727810.json、视频生成/文生视频/wan2.2最新加速文生图250928-dyno损失小_1972558589065949185.json、视频生成/文生视频/【阡陌】wan2.2 GGUF+light4步加速lora文生视频工作流_1967793949974867969.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json、图片生成/文生图/flux文生图(自用）_1891744030592774146.json、图片生成/文生图/flux文生图_1896040375998414850.json、图片生成/文生图/flux文生图_1896043053692092417.json、图片生成/文生图/flux生图工作流_1946106579613609985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `Int` —— 2/8 个有
-- `LoadImage` —— 2/8 个有
-- `SimpleMath+` —— 2/8 个有
-- `CustomAddLabel` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
-- `VHS_VideoCombine` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `EmptyLatentImage` —— 5/8 个有
+- `FluxGuidance` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `UnetLoaderGGUF` —— 3/8 个有
+- `CheckpointLoaderSimple` —— 2/8 个有
+- `EmptySD3LatentImage` —— 2/8 个有
+- `ModelSamplingFlux` —— 2/8 个有
+- `DualCLIPLoaderGGUF` —— 1/8 个有
+- `ImageCrop+` —— 1/8 个有
+- `RandomPrompt` —— 1/8 个有
+- `SDXLEmptyLatentSizePicker+` —— 1/8 个有
+- `StringFunction|pysssss` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 75% |
-| Prompt 约束强度(CFG) | 4 | 4 - 20 | 8 | 16% |
-| 采样算法 | 1 | 1 - 3.5 | 8 | 37% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 宽度 | 1024 | 512 - 1448 | 5 | 70% |
+| 高度 | 1024 | 1 - 1920 | 6 | 38% |
 
 ## 常见问题
 
@@ -60,9 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，8 个样本，取值分散，一致性仅 16%
-- 采样算法 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 37%
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 1024，观测区间 512 - 1448，5 个样本
+- 高度 中位数 1024，观测区间 1 - 1920，6 个样本，取值分散，一致性仅 38%

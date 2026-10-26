@@ -3,69 +3,52 @@ name: unknown_workflow_video_upscale_lora_20
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.829333
-common_nodes: [CR Text, CR Text Concatenate, CreateCFGScheduleFloatList, INTConstant, ImageUpscaleWithModel, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Prompter, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.627
+common_nodes: [Anything Everywhere, LoadWanVideoT5TextEncoder, RIFE VFI, SetNode, Text Prompt (JPS), UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 14B 图生视频（自动优化提示词+2K出图）_1961117011273256962.json, 视频生成/图生视频/Wan2.2-14B 图生视频_1951128399853068289.json, 视频生成/文生视频/Wan2.2 14B 文生视频1080P版_1950444010021240833.json]
+members: [视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json, 视频生成/图生视频/文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.json, 视频生成/文生视频/[免费课程对应工作流] Wrapper-SelfForcing-TextToVideo-60FPS_1937520782014595074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_20
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 14B 图生视频（自动优化提示词+2K出图）_1961117011273256962.json、视频生成/图生视频/Wan2.2-14B 图生视频_1951128399853068289.json、视频生成/文生视频/Wan2.2 14B 文生视频1080P版_1950444010021240833.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json、视频生成/图生视频/文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.json、视频生成/文生视频/[免费课程对应工作流] Wrapper-SelfForcing-TextToVideo-60FPS_1937520782014595074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageUpscaleWithModel`
-- `JWInteger`
-- `JjkText`
+- `Anything Everywhere`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_Prompter`
-- `SimpleMath+`
+- `RIFE VFI`
+- `SetNode`
+- `Text Prompt (JPS)`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `RIFE VFI` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `ttN concat` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `WanVideoBlockSwap` —— 2/3 个有
+- `WanVideoEmptyEmbeds` —— 2/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
 - `GetNode` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `Seed_` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
-- `WanVideoEnhanceAVideo` —— 1/3 个有
-- `WanVideoSLG` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `WanVideoImageClipEncode` —— 1/3 个有
 
 ## 典型参数
 

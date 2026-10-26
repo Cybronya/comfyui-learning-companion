@@ -3,56 +3,59 @@ name: unknown_workflow_video_lora_sampler_924
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.936
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.537
+common_nodes: [CM_FloatToInt, GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy float, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json, 视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json]
+members: [视频生成/图生视频/mocha_指定人物_1990430709800198145.json, 视频生成/图生视频/mocha单人物替换，无需标点_1983354803063562242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_924
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json、视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/mocha_指定人物_1990430709800198145.json、视频生成/图生视频/mocha单人物替换，无需标点_1983354803063562242.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `CM_FloatToInt`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `MaskPreview`
+- `MochaEmbeds`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RHMiniMaxH3PromptOptimizerCompact` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
-- `SeedVR2LoadDiTModel` —— 1/2 个有
-- `SeedVR2LoadVAEModel` —— 1/2 个有
-- `SeedVR2VideoUpscaler` —— 1/2 个有
-- `ShowAnything|Mie` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `floatToInt _O` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `Sa2VANodeTpl` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,47 +3,55 @@ name: unknown_workflow_video_sampler_clip_81
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.957125
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.79275
+common_nodes: [ImageResize+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/产品图片_360度旋转工作流_2016158718987079682.json, 视频生成/图生视频/地标建筑飞天特效_1900090091270987777.json, 视频生成/图生视频/室内设计图生视频工作流_2034129372994605057.json, 视频生成/图生视频/捏爆特效 捏扁特效---通义万相wan2.1 图生视频新玩儿法_1899003016236941314.json, 视频生成/图生视频/电商产品360展示    UP楚门的AI世界_1899792108687863809.json, 视频生成/图生视频/通义万相wan2.1 图生视频 720P高清版_1894738389084602370.json, 视频生成/图生视频/阿里万象捏爆特效视频_1899083552049512450.json, 视频生成/文生视频/通义万相wan2.1 图生视频 720P高清版 UP楚门的AI世界_1894616411644538881.json]
+members: [视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json, 视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json, 视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json, 视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json, 视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json, 视频生成/文生视频/CG迷-WAN fun首尾帧视频动画工作流_1927317975609806849.json, 视频生成/文生视频/CG迷-Wan视频升级版720P精度首尾帧FLF2V_1927010943581192194.json, 视频生成/文生视频/首尾帧图像稳定全自动稳定输出视频丨自动生成_1946379105648697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_81
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/产品图片_360度旋转工作流_2016158718987079682.json、视频生成/图生视频/地标建筑飞天特效_1900090091270987777.json、视频生成/图生视频/室内设计图生视频工作流_2034129372994605057.json、视频生成/图生视频/捏爆特效 捏扁特效---通义万相wan2.1 图生视频新玩儿法_1899003016236941314.json、视频生成/图生视频/电商产品360展示    UP楚门的AI世界_1899792108687863809.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json、视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json、视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json、视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json、视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `ImageResize+`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageClipEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 7/8 个有
-- `WanVideoBlockSwap` —— 7/8 个有
-- `WanVideoTextEncode` —— 7/8 个有
-- `Int` —— 6/8 个有
-- `WanVideoLoraSelect` —— 6/8 个有
-- `TextInput_` —— 4/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `SaveAnimatedWEBP` —— 1/8 个有
-- `WanVideoSetBlockSwap` —— 1/8 个有
-- `WanVideoTextEncodeCached` —— 1/8 个有
-- `WanVideoTorchCompileSettings` —— 1/8 个有
+- `SetNode` —— 7/8 个有
+- `WanVideoSLG` —— 7/8 个有
+- `WanVideoBlockSwap` —— 6/8 个有
+- `AddLabel` —— 5/8 个有
+- `EmptyImage` —— 5/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `GetNode` —— 5/8 个有
+- `ImageConcatMulti` —— 5/8 个有
+- `WanVideoExperimentalArgs` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `Anything Everywhere` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RIFE VFI` —— 2/8 个有
+- `WanVideoVRAMManagement` —— 2/8 个有
 
 ## 典型参数
 

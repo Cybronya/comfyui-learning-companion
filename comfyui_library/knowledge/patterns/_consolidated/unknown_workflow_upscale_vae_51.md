@@ -3,36 +3,47 @@ name: unknown_workflow_upscale_vae_51
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7855
-common_nodes: [LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.776
+common_nodes: [GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, JjkText, LoadImage, RHLLMChatNode, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed, easy promptList, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/快速人像表情迁移模仿_2004547165496242177.json, 图片生成/文生图/SeedVR2图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057708544862023682.json]
+members: [图片生成/图生图/室内设计-辅助出图-最强全能图片Image2-8K高清图_2066460051233136641.json, 图片生成/图生图/室内设计生成分析图_2070787214996496385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_51
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/快速人像表情迁移模仿_2004547165496242177.json、图片生成/文生图/SeedVR2图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057708544862023682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/室内设计-辅助出图-最强全能图片Image2-8K高清图_2066460051233136641.json、图片生成/图生图/室内设计生成分析图_2070787214996496385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `GetImageSize+`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScaleBy`
+- `JjkText`
 - `LoadImage`
+- `RHLLMChatNode`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `easy cleanGpuUsed`
+- `easy promptList`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ExpressionEditor` —— 1/2 个有
-- `GetImage` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

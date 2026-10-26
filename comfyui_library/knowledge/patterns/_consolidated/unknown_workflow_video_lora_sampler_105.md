@@ -1,63 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_105
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.8508
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 16
+level: strong
+coverage: 0.870313
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/04-01-02-WAN2.2-文生视频-kijai_1990967408930267138.json, 视频生成/文生视频/CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json, 视频生成/文生视频/KJ流+官方新版LightX2V文生视频_1952405030194360321.json, 视频生成/文生视频/Wan2.2 Dyno文生视频加速版V2(KJ版)_1974801904645574658.json, 视频生成/文生视频/Wan2.2 Smooth Mix高动态文生视频V2（KJ版）_1979020058171183105.json, 视频生成/文生视频/文生视频（Wan2.2）高质量加速版_1952329679653023745.json, 视频生成/文生视频/最新WAN2.2 KJ版 T2V 文生视频加速版工作流_1977042886363631618.json, 视频生成/文生视频/最新万相wan2.2-14B文生视频KJ极速版，效果炸裂_1950109522175115265.json, 视频生成/文生视频/（4+4步高质量高速度）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978818783190093825.json, 视频生成/文生视频/（4+4步）Wan2.2 HoloCine电影多镜头文生视频（KJ版-目前效果不佳）_1982404928775831554.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json, 视频生成/文生视频/（6+4步最佳质量）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978813759940628482.json, 视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2模型高低噪同模型高动态文生视频V1（KJ版）_1979736664522264578.json]
+members: [视频生成/图生视频/kone专属图生视频_2007088250229366786.json, 视频生成/图生视频/wan2.2 图生视频_2030667044726771713.json, 视频生成/图生视频/wan2_2_14B_I2V _4步加速_1998388818095013889.json, 视频生成/图生视频/wan2_2_14B_I2V图生视频加速工作流_1969634228759633922.json, 视频生成/图生视频/wan2_2_子弹时间 极速版_1984472483812229122.json, 视频生成/图生视频/【图生视频】Wan2.2 14B LightX2V_1953391288357978113.json, 视频生成/图生视频/一键生成超顶AI动漫视频！WAN2.2大模型太强了！_1951120660623990785.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2053500201926705153.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2054607136101027841.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063711056727461890.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063712287315292162.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063714093613281281.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063914082952114178.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2072973666828251138.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2083074284628566017.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2_2048315037026099202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_105
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/04-01-02-WAN2.2-文生视频-kijai_1990967408930267138.json、视频生成/文生视频/CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json、视频生成/文生视频/KJ流+官方新版LightX2V文生视频_1952405030194360321.json、视频生成/文生视频/Wan2.2 Dyno文生视频加速版V2(KJ版)_1974801904645574658.json、视频生成/文生视频/Wan2.2 Smooth Mix高动态文生视频V2（KJ版）_1979020058171183105.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/kone专属图生视频_2007088250229366786.json、视频生成/图生视频/wan2.2 图生视频_2030667044726771713.json、视频生成/图生视频/wan2_2_14B_I2V _4步加速_1998388818095013889.json、视频生成/图生视频/wan2_2_14B_I2V图生视频加速工作流_1969634228759633922.json、视频生成/图生视频/wan2_2_子弹时间 极速版_1984472483812229122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：16
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `LoadWanVideoT5TextEncoder`
+全部 16 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 14/15 个有
-- `CR Prompt Text` —— 13/15 个有
-- `GetImageSizeAndCount` —— 13/15 个有
-- `JWInteger` —— 13/15 个有
-- `WanVideoTorchCompileSettings` —— 12/15 个有
-- `ImageFromBatch+` —— 9/15 个有
-- `GetNode` —— 2/15 个有
-- `SetNode` —— 2/15 个有
-- `WanVideoEasyCache` —— 2/15 个有
-- `JjkText` —— 1/15 个有
-- `LayerUtility: PurgeVRAM` —— 1/15 个有
-- `SaveImage` —— 1/15 个有
-- `TT_img_enc` —— 1/15 个有
-- `WanVideoContextOptions` —— 1/15 个有
-- `WanVideoLoraSelectMulti` —— 1/15 个有
-- `easy seed` —— 1/15 个有
+- `ImageResizeKJv2` —— 15/16 个有
+- `ModelPatchTorchSettings` —— 14/16 个有
+- `UNETLoader` —— 11/16 个有
+- `GetNode` —— 10/16 个有
+- `INTConstant` —— 10/16 个有
+- `SetNode` —— 10/16 个有
+- `SimpleMath+` —— 9/16 个有
+- `WanFirstMiddleLastFrameToVideo` —— 9/16 个有
+- `WanImageToVideo` —— 7/16 个有
+- `UnetLoaderGGUF` —— 5/16 个有
+- `LayerUtility: PurgeVRAM` —— 2/16 个有
+- `PreviewImage` —— 2/16 个有
+- `Label (rgthree)` —— 1/16 个有
+- `MathExpression|pysssss` —— 1/16 个有
+- `SaveImage` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 16 | 69% |
+| Prompt 约束强度(CFG) | 6 | 4 - 10 | 16 | 76% |
+| 采样算法 | 1 | 1 - 1 | 16 | 100% |
+| 调度器 | euler | - | 16 | 94% |
+| 重绘幅度 | simple | - | 16 | 56% |
 
 ## 常见问题
 
@@ -65,4 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，16 个样本，一致性 69%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 10，16 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，16 个样本，一致性 94%
+- 重绘幅度 最常用 simple，16 个样本，一致性 56%

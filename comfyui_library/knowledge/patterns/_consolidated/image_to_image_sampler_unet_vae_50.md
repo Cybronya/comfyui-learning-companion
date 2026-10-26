@@ -3,71 +3,67 @@ name: image_to_image_sampler_unet_vae_50
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.732667
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), GetNode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingFlux, SaveImage, SetNode, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy getNode, easy setNode]
+coverage: 0.521
+common_nodes: [CLIPLoader, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, ResolutionSelector, SaveAudio, SaveImage, SetNode, StringConcatenate, StringReplace, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTPreviewContent, YUAN_TXTReplace, YuanCustomCombo]
 problems: []
 missing: []
-members: [图片生成/图生图/1.tonnie-flux-美容_1992164436458926081.json, 图片生成/图生图/2.tonnie-flux-洗图+反推_1992162924227784705.json, 图片生成/图生图/3.tonnie-flux-redux洗图+反推_1992519039715004418.json]
+members: [图片生成/图生图/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2114636164119490562.json, 图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json, 音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/1.tonnie-flux-美容_1992164436458926081.json、图片生成/图生图/2.tonnie-flux-洗图+反推_1992162924227784705.json、图片生成/图生图/3.tonnie-flux-redux洗图+反推_1992519039715004418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2114636164119490562.json、图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json、音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `FB_Qwen3TTSVoiceDesign`
 - `Fast Groups Bypasser (rgthree)`
 - `GetNode`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingFlux`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RegexExtract`
+- `ResolutionSelector`
+- `SaveAudio`
 - `SaveImage`
 - `SetNode`
-- `StringFunction|pysssss`
+- `StringConcatenate`
+- `StringReplace`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy getNode`
-- `easy setNode`
-
-**可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 2/3 个有
-- `FluxGuidance` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `WD14Tagger|pysssss` —— 2/3 个有
-- `ApplyPulidFlux` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PulidFluxEvaClipLoader` —— 1/3 个有
-- `PulidFluxInsightFaceLoader` —— 1/3 个有
-- `PulidFluxModelLoader` —— 1/3 个有
-- `ReduxAdvanced` —— 1/3 个有
-- `StyleModelLoader` —— 1/3 个有
+- `YUAN_TXTConvertAny`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTReplace`
+- `YuanCustomCombo`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 3 | 89% |
+| 宽度 | 1088 | 1088 - 1088 | 3 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
+| 采样步数 | 25 | 25 - 25 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 0.6 | 0.4 - 0.6 | 3 | 82% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -75,8 +71,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，3 个样本，取值集中（一致性 89%）
+- 宽度 中位数 1088，观测区间 1088 - 1088，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 0.6，观测区间 0.4 - 0.6，3 个样本，取值集中（一致性 82%）
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

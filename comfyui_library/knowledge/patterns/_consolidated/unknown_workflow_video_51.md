@@ -1,48 +1,54 @@
 ---
 name: unknown_workflow_video_51
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.441
-common_nodes: [Fast Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageScaleToTotalPixels, Int, MathExpression_UTK, Mute / Bypass Repeater (rgthree), PreviewImage, RIFE VFI, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy showAnything]
+coverage: 0.8695
+common_nodes: [Any To Any, CR Prompt Text, GetImageSizeAndCount, GetVideoComponents, LayerUtility: PurgeVRAM V2, LoadVideo, MathExpression|pysssss, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/图片放大自用_2085968508910919682.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json]
+members: [音频生成/音频生成/Woosh+Qwen3 VL视频自动音效-自动提示词_2043709526666387458.json, 音频生成/音频生成/Woosh+Qwen3 VL视频自动音效V1_2043499448038334465.json, 音频生成/音频生成/Woosh+Qwen3+VL视频自动音效V1_2043983264049795073.json, 音频生成/音频生成/Woosh视频配音效（提示词增强）_2054759772985012225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_51
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/图片放大自用_2085968508910919682.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Woosh+Qwen3 VL视频自动音效-自动提示词_2043709526666387458.json、音频生成/音频生成/Woosh+Qwen3 VL视频自动音效V1_2043499448038334465.json、音频生成/音频生成/Woosh+Qwen3+VL视频自动音效V1_2043983264049795073.json、音频生成/音频生成/Woosh视频配音效（提示词增强）_2054759772985012225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
+- `Any To Any`
+- `CR Prompt Text`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `MathExpression_UTK`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewImage`
-- `RIFE VFI`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `VHS_LoadVideo`
+- `GetVideoComponents`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadVideo`
+- `MathExpression|pysssss`
+- `Qwen3_VQA`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
+- `WooshLoadFlow`
+- `WooshLoadVideo`
+- `WooshSample`
+- `WooshTextEncode`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
+- `PreviewAudio` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
+- `CustomAddLabel` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `ResizeImagesByLongerEdge` —— 1/4 个有
+- `RunningHub Deepcleaner` —— 1/4 个有
 
 ## 典型参数
 

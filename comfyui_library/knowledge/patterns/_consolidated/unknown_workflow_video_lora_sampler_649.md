@@ -3,65 +3,77 @@ name: unknown_workflow_video_lora_sampler_649
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.838
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.937
+common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DF_Int_to_Float, DualCLIPLoader, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VRAMReserver, VisualizeSigmasKJ, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json, 视频生成/图生视频/minimax_h3_多参_单图版注意力再加速_2105908156558823425.json, 视频生成/图生视频/minimax_h3_多参_短剧批量专用（支持90个角色、场景、道具）_2101317527325470722.json]
+members: [数字人/数字人/LTX2.3视频扩展_2051830363772731393.json, 视频生成/文生视频/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2083450669406711809.json, 视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_649
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json、视频生成/图生视频/minimax_h3_多参_单图版注意力再加速_2105908156558823425.json、视频生成/图生视频/minimax_h3_多参_短剧批量专用（支持90个角色、场景、道具）_2101317527325470722.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/LTX2.3视频扩展_2051830363772731393.json、视频生成/文生视频/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2083450669406711809.json、视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DF_Int_to_Float`
+- `DualCLIPLoader`
+- `Int`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `SamplerCustom`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VRAMReserver`
+- `VisualizeSigmasKJ`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `ManualSigmas` —— 2/3 个有
-- `MiniMaxChunkFeedForward` —— 2/3 个有
-- `ki_MiniMaxH3ReferenceToVideo` —— 2/3 个有
-- `ExtendIntermediateSigmas` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/3 个有
-- `MiniMaxH3TurboSampler` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SolAttnPatch` —— 1/3 个有
-- `ki_宫格拼图高阶版` —— 1/3 个有
+- `CM_IntToFloat` —— 2/3 个有
+- `LTXVAudioVAEEncode` —— 2/3 个有
+- `LTXVAudioVideoMask` —— 2/3 个有
+- `VAEEncodeTiled` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `VHS_VideoInfoLoaded` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `EmptyLTXVLatentVideo` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LTXVEmptyLatentAudio` —— 1/3 个有
+- `LTXVImgToVideoConditionOnly` —— 1/3 个有
+- `LTXVPreprocess` —— 1/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 1 | 100% |
+| 高度 | 25 | - | 1 | 100% |
 
 ## 常见问题
 

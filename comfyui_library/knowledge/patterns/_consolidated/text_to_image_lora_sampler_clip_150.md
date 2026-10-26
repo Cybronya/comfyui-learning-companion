@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_150
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.869
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.871091
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3六步文生视频短片预检版 开源加速采样工作流_2098840495605764097.json, 视频生成/文生视频/H3六步文生视频短片预检版｜六步走完从想法到成片_2099146163709628418.json, 视频生成/文生视频/H3文生视频加速版 官方Turbo加速出片_2099594371384561665.json, 视频生成/文生视频/H3高动态打斗场景武术动作二采修复 提示词增强工作流_2099919995085086722.json, 视频生成/文生视频/LightX2V Turbo加速｜MiniMax H3文生图生视频生视频工作流_2087187099337445378.json, 视频生成/文生视频/MiniMax H3 Easy Hybrid全能参考极简多合一工作流，文生视频图生视频方案_2105737236565282818.json, 视频生成/文生视频/MiniMax H3 Easy hybrid｜全能参考极简多合一 出片so easy_2105560151372681218.json, 视频生成/文生视频/MiniMax H3 FL2VA文生首尾帧全能视频｜文生视频视频生视频图生视频_2090423722896347138.json, 视频生成/文生视频/低动态真实感人物视频｜H3 sigma强化潜空间双采_2096336928575680513.json, 视频生成/文生视频/多参数视频生成768p｜Minimax H3加速LoRA两步_2095964673219846146.json, 视频生成/文生视频/多合一生视频V3.0｜Minimax H3文生首尾图参二采高清放大_2090209607414276097.json]
+members: [图片生成/图生图/Qwen Image 2.1图像编辑修复版，角色一致性图生图抠图多场景工具_2103593422190899202.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102548100928856066.json, 图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json, 图片生成/图生图/Qwen Image 2.1图像编辑工作流，图生图图像处理方案_2107519626568622081.json, 图片生成/图生图/Qwen Image 2.1图像编辑流｜局部重绘换装一键搞定_2108041550201708545.json, 图片生成/图生图/Qwen Image 2.1图生图工作流图片编辑，商品替换换装多场景工具_2103607408328273922.json, 图片生成/图生图/Qwen Image 2.1图生图工作流图片编辑，商品替换换装多场景工具_2103971820344004609.json, 图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102105087035400194.json, 图片生成/图生图/Qwen image 2.1图片编辑｜图生图改图如此简单 指哪改哪_2105534138802593793.json, 图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json, 图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_150
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/H3六步文生视频短片预检版 开源加速采样工作流_2098840495605764097.json、视频生成/文生视频/H3六步文生视频短片预检版｜六步走完从想法到成片_2099146163709628418.json、视频生成/文生视频/H3文生视频加速版 官方Turbo加速出片_2099594371384561665.json、视频生成/文生视频/H3高动态打斗场景武术动作二采修复 提示词增强工作流_2099919995085086722.json、视频生成/文生视频/LightX2V Turbo加速｜MiniMax H3文生图生视频生视频工作流_2087187099337445378.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑修复版，角色一致性图生图抠图多场景工具_2103593422190899202.json、图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102548100928856066.json、图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json、图片生成/图生图/Qwen Image 2.1图像编辑工作流，图生图图像处理方案_2107519626568622081.json、图片生成/图生图/Qwen Image 2.1图像编辑流｜局部重绘换装一键搞定_2108041550201708545.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
@@ -23,63 +23,40 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/11 个有
-- `PrimitiveStringMultiline` —— 8/11 个有
-- `ComfyMathExpression` —— 7/11 个有
-- `PrimitiveFloat` —— 7/11 个有
-- `ResolutionSelector` —— 7/11 个有
-- `LoadImage` —— 6/11 个有
-- `MiniMaxH3SigmaShift` —— 6/11 个有
-- `PathchSageAttentionKJ` —— 5/11 个有
-- `ImageResizeKJv2` —— 4/11 个有
-- `LTXVConcatAVLatent` —— 4/11 个有
-- `LTXVSeparateAVLatent` —— 4/11 个有
-- `MiniMaxH3Easy` —— 4/11 个有
-- `MiniMaxH3EasyLoader` —— 4/11 个有
-- `MiniMaxH3EasyOutput` —— 4/11 个有
-- `MiniMaxH3ImageToVideo` —— 4/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/11 个有
-- `SaveImage` —— 4/11 个有
-- `SplitSigmas` —— 4/11 个有
-- `H3SigmaRefiner` —— 3/11 个有
-- `ModelAttentionBackend` —— 3/11 个有
-- `MiniMaxH3EasyMediaLoader` —— 2/11 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/11 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 2/11 个有
-- `ModelPreviewOverrideKJ` —— 2/11 个有
-- `Any Switch (rgthree)` —— 1/11 个有
-- `DisableNoise` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `GetNode` —— 1/11 个有
-- `GetVideoComponents` —— 1/11 个有
-- `LoadVideo` —— 1/11 个有
-- `MiniMaxH3HybridLoader` —— 1/11 个有
-- `Seed (rgthree)` —— 1/11 个有
-- `SetNode` —— 1/11 个有
-- `SolAttnPatch` —— 1/11 个有
-- `easy cleanGpuUsed` —— 1/11 个有
-- `忽略多组孤海` —— 1/11 个有
+- `ComfySwitchNode` —— 10/11 个有
+- `QwenImage21Cache` —— 10/11 个有
+- `LoadImage` —— 9/11 个有
+- `ResolutionSelector` —— 8/11 个有
+- `PrimitiveStringMultiline` —— 6/11 个有
+- `SaveImageAdvanced` —— 6/11 个有
+- `TextGenerate` —— 5/11 个有
+- `PreviewAny` —— 4/11 个有
+- `BatchImagesNode` —— 3/11 个有
+- `CR Prompt Text` —— 3/11 个有
+- `CR Text` —— 2/11 个有
+- `ImageCompare` —— 2/11 个有
+- `PrimitiveBoolean` —— 2/11 个有
+- `PrimitiveInt` —— 2/11 个有
+- `CM_FloatToInt` —— 1/11 个有
+- `QwenPERewriteT8` —— 1/11 个有
+- `Text` —— 1/11 个有
+- `TextConcatenator` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 
@@ -97,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -108,4 +85,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

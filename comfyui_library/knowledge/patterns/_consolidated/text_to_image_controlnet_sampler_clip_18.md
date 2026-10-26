@@ -2,71 +2,58 @@
 name: text_to_image_controlnet_sampler_clip_18
 type: Text To Image
 frequency: 3
-level: strong
-coverage: 0.897
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 1
+common_nodes: [ApplyInstantID, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, EmptyLatentImage, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LoadImage, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/写实唯美风参考动作生成图片洗图_1929105091276521473.json, 图片生成/图生图/毛坯房一键出图（可换风格）_1920152104714047490.json, 图片生成/文生图/01_参考生图_2074230063763116033.json]
+members: [图片生成/图生图/【遇见AI】换脸之InstantID_2019297726940323842.json, 图片生成/图生图/参考人物手办设计——任意人像转手办工作流_1923624171220496386.json, 图片生成/图生图/手办设计——任意人像转手办工作流_1923642776616169474.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_18
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/写实唯美风参考动作生成图片洗图_1929105091276521473.json、图片生成/图生图/毛坯房一键出图（可换风格）_1920152104714047490.json、图片生成/文生图/01_参考生图_2074230063763116033.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【遇见AI】换脸之InstantID_2019297726940323842.json、图片生成/图生图/参考人物手办设计——任意人像转手办工作流_1923624171220496386.json、图片生成/图生图/手办设计——任意人像转手办工作流_1923642776616169474.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
+- `ApplyInstantID`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `ControlNetApplyAdvanced`
+- `CheckpointLoaderSimple`
 - `ControlNetLoader`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
+- `InstantIDFaceAnalysis`
+- `InstantIDModelLoader`
 - `KSampler`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
 - `LoraLoader` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `SetUnionControlNetType` —— 2/3 个有
-- `UltimateSDUpscale` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `DF_Image_scale_to_side` —— 1/3 个有
-- `DifferentialDiffusion` —— 1/3 个有
-- `FaceDetailer` —— 1/3 个有
-- `ImageGenResolutionFromImage` —— 1/3 个有
-- `LayerMask: LoadFlorence2Model` —— 1/3 个有
-- `LayerUtility: Florence2Image2Prompt` —— 1/3 个有
-- `UltralyticsDetectorProvider` —— 1/3 个有
-- `easy imageScaleDownToSize` —— 1/3 个有
+- `PMRF` —— 2/3 个有
+- `VAELoader` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `easy imageInterrogator` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 800 | 768 - 1024 | 3 | 87% |
-| 高度 | 1024 | 512 - 1368 | 3 | 64% |
-| 采样步数 | 25 | 20 - 30 | 3 | 84% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 3 | 65% |
-| 采样算法 | euler | - | 3 | 100% |
+| 宽度 | 896 | 896 - 1024 | 3 | 94% |
+| 高度 | 1152 | 1024 - 1152 | 3 | 95% |
+| 采样步数 | 25 | 15 - 30 | 3 | 73% |
+| Prompt 约束强度(CFG) | 4 | 2 - 7.95 | 3 | 47% |
+| 采样算法 | dpmpp_2m | - | 3 | 67% |
 | 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| ControlNet 权重 | 0.8 | 0.7 - 0.8 | 3 | 94% |
+| 重绘幅度 | 1 | 0.7 - 1 | 3 | 84% |
 | LoRA 模型强度 | 1 | - | 2 | 100% |
 | LoRA 文本强度 | 1 | - | 2 | 100% |
 
@@ -76,13 +63,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 800，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）
-- 高度 中位数 1024，观测区间 512 - 1368，3 个样本
-- 采样步数 中位数 25，观测区间 20 - 30，3 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 宽度 中位数 896，观测区间 896 - 1024，3 个样本，取值集中（一致性 94%）
+- 高度 中位数 1152，观测区间 1024 - 1152，3 个样本，取值集中（一致性 95%）
+- 采样步数 中位数 25，观测区间 15 - 30，3 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 2 - 7.95，3 个样本，取值分散，一致性仅 47%
+- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 67%
 - 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）
+- 重绘幅度 中位数 1，观测区间 0.7 - 1，3 个样本，取值集中（一致性 84%）
 - LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

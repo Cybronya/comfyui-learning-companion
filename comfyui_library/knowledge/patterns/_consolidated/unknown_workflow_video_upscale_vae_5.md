@@ -3,41 +3,44 @@ name: unknown_workflow_video_upscale_vae_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8535
-common_nodes: [FlashVSRNode, GetImageRangeFromBatch, Image Comparer (rgthree), Int, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.5405
+common_nodes: [Fast Groups Bypasser (rgthree), FlashVSRNode, INTConstant, ImageScaleToTotalPixels, JWInteger, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json, 图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json]
+members: ["图片生成/图生图/三笔成书-最强视频修复合集 支持SeedVR2.5,FlashVSR_2008344998995038210.json", 数字人/数字人/视频高清放大  SeedVR2.5  + FlashVSR   视频补帧_2049019887674204161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json、图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/三笔成书-最强视频修复合集 支持SeedVR2.5,FlashVSR_2008344998995038210.json、数字人/数字人/视频高清放大  SeedVR2.5  + FlashVSR   视频补帧_2049019887674204161.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `FlashVSRNode`
-- `GetImageRangeFromBatch`
-- `Image Comparer (rgthree)`
-- `Int`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `RIFE VFI` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `intToFloat _O` —— 1/2 个有
 
 ## 典型参数
 

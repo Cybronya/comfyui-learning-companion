@@ -3,54 +3,45 @@ name: unknown_workflow_inpaint_sampler_clip_77
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.923
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadFlorence2Model, DualCLIPLoaderGGUF, Florence2Run, FluxGuidance, GrowMask, ImageScale, InpaintModelConditioning, JoinImageWithAlpha, KSampler, LayerMask: SegmentAnythingUltra V2, LoadImage, PreviewImage, ReduxAdvanced, SaveImage, ShowText|pysssss, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, DifferentialDiffusion, DrawMaskOnImage, DualCLIPLoader, FluxGuidance, GrowMask, Image Comparer (rgthree), InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SAM3_Detect, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/服装材质迁移_1910490609034166274.json, 图片生成/图生图/服装材质迁移电商换服装_1919553999291219970.json]
+members: [图片生成/图生图/无痕去水印_自动精准定位与智能修补_2055111697836322818.json, 图片生成/图生图/无痕去水印_自动精准定位与智能修补_2055462741342736386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_77
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/服装材质迁移_1910490609034166274.json、图片生成/图生图/服装材质迁移电商换服装_1919553999291219970.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/无痕去水印_自动精准定位与智能修补_2055111697836322818.json、图片生成/图生图/无痕去水印_自动精准定位与智能修补_2055462741342736386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadFlorence2Model`
-- `DualCLIPLoaderGGUF`
-- `Florence2Run`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `DifferentialDiffusion`
+- `DrawMaskOnImage`
+- `DualCLIPLoader`
 - `FluxGuidance`
 - `GrowMask`
-- `ImageScale`
+- `Image Comparer (rgthree)`
 - `InpaintModelConditioning`
-- `JoinImageWithAlpha`
 - `KSampler`
-- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `PreviewImage`
-- `ReduxAdvanced`
+- `SAM3_Detect`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
 
 ## 典型参数
 
@@ -61,7 +52,6 @@ source: knowledge_consolidation
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | normal | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 0.6 | - | 1 | 100% |
 
 ## 常见问题
 

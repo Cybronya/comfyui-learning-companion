@@ -3,39 +3,33 @@ name: unknown_workflow_generic_670
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.952
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LayerMask: MaskPreview, LayerUtility: ImageCombineAlpha, LoadImage, SaveImage]
+coverage: 0.78025
+common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图-透明背景_2069258206609760257.json, 图片生成/图生图/一键抠图-透明背景_2071503241636044802.json, 图片生成/图生图/五虎素材透明底图_2046146651005390849.json, 图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_670
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键抠图-透明背景_2069258206609760257.json、图片生成/图生图/一键抠图-透明背景_2071503241636044802.json、图片生成/图生图/五虎素材透明底图_2046146651005390849.json、图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageCombineAlpha`
-- `LoadImage`
-- `SaveImage`
+- `ByteDanceSeedreamNodeV3`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
-- `JWStringConcat` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `Text Input [Dream]` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `Painter` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

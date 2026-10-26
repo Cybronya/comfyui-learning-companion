@@ -3,107 +3,75 @@ name: text_to_image_video_upscale_lora_9
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.79
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Replace, ColorMatch, ConditioningZeroOut, EmptyLatentImage, FlashVSRNode, GetImageRangeFromBatch, GetImageSize, GetNode, ImageBatchSplitter //Inspire, ImageConcatMulti, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactInt, Int, JDCN_StringToList, JWInteger, JjkText, JoinStrings, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, MuyeTextEditOutput, PathchSageAttentionKJ, PreviewImage, ProcessString, Qwen3VL_Chat, Qwen3_VQA, RH_Captioner_Pro, RH_LLMAPI_NODE, SaveImage, Seed (rgthree), SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SetNode, ShellAgentPluginOutputText, ShowText|pysssss, Text Concatenate, TextEncodeQwenImageEditPlus, TextInput_, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy batchAnything, easy cleanGpuUsed, easy imageListToImageBatch, easy promptLine, easy showAnything, wanBlockSwap]
+coverage: 0.918
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, CLIPTextEncode, EmptyLatentImage, ExtendIntermediateSigmas, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorGroupsCombine, MiniMaxH3DirectorRefine, MiniMaxH3DirectorSelfLift, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveStringMultiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/【九镜联动】Z-image一致性+Gemini3反推九图故事分镜-Wan2.2 视频+FlashVSRt放大自用_1997586587758301186.json, 视频生成/图生视频/【九镜联动】Z-image主体一致性+Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频+FlashVSR Ultra-Fast放大最终自用_1995678393033166849.json]
+members: [视频生成/图生视频/允希V8.2闭唇正脸一秒轻触首尾帧｜单图外接口播版_2111330532469600258.json, 视频生成/图生视频/允希V8.2闭唇正脸主体参考版｜单图外接一秒轻触_2111335218408943617.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【九镜联动】Z-image一致性+Gemini3反推九图故事分镜-Wan2.2 视频+FlashVSRt放大自用_1997586587758301186.json、视频生成/图生视频/【九镜联动】Z-image主体一致性+Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频+FlashVSR Ultra-Fast放大最终自用_1995678393033166849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/允希V8.2闭唇正脸一秒轻触首尾帧｜单图外接口播版_2111330532469600258.json、视频生成/图生视频/允希V8.2闭唇正脸主体参考版｜单图外接一秒轻触_2111335218408943617.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Replace`
-- `ColorMatch`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FlashVSRNode`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetNode`
-- `ImageBatchSplitter //Inspire`
-- `ImageConcatMulti`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `ImpactInt`
-- `Int`
-- `JDCN_StringToList`
-- `JWInteger`
+- `ExtendIntermediateSigmas`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `MuyeTextEditOutput`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorGroupsCombine`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `ProcessString`
-- `Qwen3VL_Chat`
-- `Qwen3_VQA`
-- `RH_Captioner_Pro`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
-- `SetNode`
-- `ShellAgentPluginOutputText`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `TextEncodeQwenImageEditPlus`
-- `TextInput_`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `VHS_Unbatch`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy imageListToImageBatch`
-- `easy promptLine`
-- `easy showAnything`
-- `wanBlockSwap`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactConditionalBranch` —— 1/2 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/2 个有
-- `easy boolean` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `MiniMaxH3DirectorGroupImageToVideo` —— 1/2 个有
+- `MiniMaxH3DirectorGroupReferenceToVideo` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 100% |
-| 重绘幅度 | beta57 | - | 2 | 100% |
-| 宽度 | 1080 | - | 1 | 100% |
-| 高度 | 960.5 | - | 2 | 0% |
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -113,11 +81,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta57，2 个样本，一致性 100%
-- 高度 中位数 960.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 0%
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

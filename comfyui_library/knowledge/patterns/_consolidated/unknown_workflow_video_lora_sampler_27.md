@@ -1,87 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_27
 type: Unknown Workflow
-frequency: 27
-level: moderate
-coverage: 0.854556
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+frequency: 28
+level: strong
+coverage: 0.775107
+common_nodes: [BasicScheduler, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json, 图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json, 图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json, 图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-文生视频_2104537651679420418.json, 数字人/数字人/（28秒）MiniMax H3双采参考生视频V1_2104395488899461122.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2103209639994281986.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2104379461897637889.json, 视频生成/图生视频/(Dasiwa v3长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423400968318978.json, 视频生成/图生视频/(Hybird-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107064053121249282.json, 视频生成/图生视频/(Hybird全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107076455174856705.json, 视频生成/图生视频/(Hybird长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423021081812993.json, 视频生成/图生视频/(Remex0.8全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107078168841637889.json, 视频生成/图生视频/(Remix0.8-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107054072120565762.json, 视频生成/图生视频/(双桥)MiniMax H3双采生视频_2109246069212270593.json, 视频生成/图生视频/(四宫格图生视频-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104730210489946113.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104238128981700610.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104528106504675330.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104571196426768386.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2109822260604395522.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2110560337710895106.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104440079388340226.json, 视频生成/图生视频/MiniMax H3 长视频直出（双采 多参）_2105338608524812290.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-视频复刻-高清直出_2109641176335863810.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-文生视频-长视频-高清有直出_2106198509325217793.json, 视频生成/文生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-高清有直出_2106353568906301442.json]
+members: [视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json, 视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json, 视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json, 视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json, 视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054471149064597506.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054525634252165121.json, 视频生成/图生视频/Ltx2.3 Dasiwa V3+Prompt Relay精准图生视频（最强人脸一致性）_2070413005359243266.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制V2_2054480431743021058.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2054510424275595265.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2055122108715413506.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2104521975828934658.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制-去字幕_2053633709424820226.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制V1_2052624355913420802.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制_2058542604932968449.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json, 视频生成/图生视频/Ltx2.3 Prompt Relay最强人脸一致性_数字人_2072098418612326401.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay分段提示词微动作_2054758964251897857.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay极致微表情图生视频_2054743040564178946.json, 视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json, 视频生成/图生视频/Ltx2.3 图生视频精准控制 Prompt Relay Smart + VBVR_2052684073478434818.json, 视频生成/图生视频/Ltx2.3+Prompt+Relay+Smart+++VBVR+390K单图参考精准控制V2_2059634224981958657.json, 视频生成/图生视频/Ltx2.3--Sulphur2--VBVR--图生视频_2055899428757753858.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）0506_2051845619093909505.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）_2052580214886154241.json, 视频生成/图生视频/Ltx2.3单图生视频精准运镜Prompt Relay Smart + VBVR_2053103007134429186.json, 视频生成/图生视频/Ltx2.3（单图）时间精准控制+逻辑控制PromptRelay+VBVR（KJ版）_2047231171125317633.json, 视频生成/图生视频/精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608971849729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_27
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json、图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json、图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json、图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json、图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json、视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json、视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json、视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json、视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：28
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+全部 28 个 workflow 都包含：
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 26/27 个有
-- `SolAttnMiniMax` —— 26/27 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 25/27 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 25/27 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 25/27 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 25/27 个有
-- `Float` —— 24/27 个有
-- `LoraLoaderModelOnly` —— 24/27 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 22/27 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 22/27 个有
-- `easy anythingIndexSwitch` —— 22/27 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 21/27 个有
-- `RunningHub Deepcleaner` —— 21/27 个有
-- `easy cleanGpuUsed` —— 21/27 个有
-- `Astra` —— 17/27 个有
-- `CreateVideo` —— 17/27 个有
-- `SaveVideo` —— 17/27 个有
-- `GetNode` —— 6/27 个有
-- `SetNode` —— 6/27 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 5/27 个有
-- `VAEDecode` —— 5/27 个有
-- `孤海注释` —— 5/27 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/27 个有
-- `ImpactFloat` —— 3/27 个有
-- `Int` —— 3/27 个有
-- `SimpleMath+` —— 3/27 个有
-- `MiniMaxH3ActivationChunkT8Advanced` —— 2/27 个有
-- `MiniMaxH3OutputTrimT8` —— 2/27 个有
-- `ConcatTextOfUtils` —— 1/27 个有
-- `GetVideoComponents` —— 1/27 个有
-- `LoadAudio` —— 1/27 个有
-- `LoadVideo` —— 1/27 个有
-- `MiniMaxH3SemanticBridgeComposeT8` —— 1/27 个有
-- `SaveImage` —— 1/27 个有
-- `Vignette` —— 1/27 个有
-- `忽略多组孤海` —— 1/27 个有
+- `CR Prompt Text` —— 27/28 个有
+- `GetNode` —— 27/28 个有
+- `PreviewImage` —— 27/28 个有
+- `SetNode` —— 27/28 个有
+- `VisualizeSigmasKJ` —— 27/28 个有
+- `UNETLoader` —— 26/28 个有
+- `ConditioningZeroOut` —— 25/28 个有
+- `PromptRelaySmartEncode` —— 20/28 个有
+- `JWInteger` —— 19/28 个有
+- `Int` —— 9/28 个有
+- `SimpleMath+` —— 9/28 个有
+- `CLIPTextEncode` —— 8/28 个有
+- `PromptRelayEncode` —— 7/28 个有
+- `easy showAnything` —— 7/28 个有
+- `RH_LLMAPI_Pro_Node` —— 5/28 个有
+- `Float` —— 3/28 个有
+- `CheckpointLoaderSimple` —— 2/28 个有
+- `easy seed` —— 2/28 个有
+- `DF_Integer` —— 1/28 个有
+- `Float to Int` —— 1/28 个有
+- `MathExpression|pysssss` —— 1/28 个有
+- `PrimitiveBoolean` —— 1/28 个有
+- `PrimitiveFloat` —— 1/28 个有
+- `easy getNode` —— 1/28 个有
+- `easy ifElse` —— 1/28 个有
+- `easy positive` —— 1/28 个有
+- `easy setNode` —— 1/28 个有
+- `ttN float` —— 1/28 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 489 - 489 | 28 | 100% |
+| 高度 | 25 | 25 - 30 | 28 | 96% |
 
 ## 常见问题
 
@@ -89,4 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 489 - 489，28 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 30，28 个样本，取值集中（一致性 96%）

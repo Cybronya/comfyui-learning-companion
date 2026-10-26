@@ -1,71 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_346
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.770833
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 7
+level: moderate
+coverage: 0.735
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SparkTTSClone, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Infinite Talk视频对口型_2073309420112662529.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2064514546374631425.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2075412859504390145.json, 视频生成/图生视频/视频换脸 图生视频+脸部参考替换+InfiniteTalk+视频+数字人对口型_2078010993078263809.json, 音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json, 音频生成/音频生成/Digital Avatars Lip-Syncing数字人对口型_2097153340940574722.json]
+members: [数字人/数字人/数字人-音频_文本驱动（带音色模拟功能）支持动物_2004212445377953794.json, 视频生成/图生视频/AI动物说_2043873863750127617.json, 视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json, 视频生成/图生视频/最新3.0AI动物说话（懒人版）_2065443186113339394.json, 视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json, 视频生成/文生视频/AI动物说话=B站艾橘溪_1970041990975025153.json, 音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_346
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk视频对口型_2073309420112662529.json、视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2064514546374631425.json、视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2075412859504390145.json、视频生成/图生视频/视频换脸 图生视频+脸部参考替换+InfiniteTalk+视频+数字人对口型_2078010993078263809.json、音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/数字人-音频_文本驱动（带音色模拟功能）支持动物_2004212445377953794.json、视频生成/图生视频/AI动物说_2043873863750127617.json、视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json、视频生成/图生视频/最新3.0AI动物说话（懒人版）_2065443186113339394.json、视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: PurgeVRAM`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PainterAV2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SaveAudio`
+- `SetNode`
+- `SparkTTSClone`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `ImageConcatMulti` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `ColorMatch` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `ImpactSwitch` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `If ANY execute A else B` —— 4/7 个有
+- `Int2Any_AS` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `Any Switch (rgthree)` —— 3/7 个有
+- `CR String To Number` —— 3/7 个有
+- `CR Text` —— 3/7 个有
+- `Fast Groups Muter (rgthree)` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `easy anythingIndexSwitch` —— 3/7 个有
+- `CR Integer To String` —— 2/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `IndexTTS2Run` —— 2/7 个有
+- `JWInteger` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `Random Number` —— 2/7 个有
+- `ShowText|pysssss` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | dpmpp_sde | - | 6 | 83% |
-| 重绘幅度 | normal | - | 6 | 83% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,8 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_sde，6 个样本，一致性 83%
-- 重绘幅度 最常用 normal，6 个样本，一致性 83%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

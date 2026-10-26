@@ -3,48 +3,34 @@ name: unknown_workflow_upscale_vae_58
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.625
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), FloatSlider, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImpactMinMax, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Seed_, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy boolean, easy int]
+coverage: 0.778
+common_nodes: [ImageScaleBy, LoadImage, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+]
 problems: []
 missing: []
-members: [图片生成/图生图/谷迹一键通道图（免费测试带水印版）_2037352343645200386.json, 图片生成/图生图/谷迹终极一键效果图（免费测试带水印版）_2036272527160381442.json]
+members: [图片生成/图生图/花型设计图高清_2108474871826182146.json, 图片生成/图生图/花型高清_2111753801672773634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_58
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/谷迹一键通道图（免费测试带水印版）_2037352343645200386.json、图片生成/图生图/谷迹终极一键效果图（免费测试带水印版）_2036272527160381442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/花型设计图高清_2108474871826182146.json、图片生成/图生图/花型高清_2111753801672773634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `FloatSlider`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
 - `ImageScaleBy`
-- `ImpactMinMax`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `PrimitiveInt`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `Seed_`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy boolean`
-- `easy int`
+- `SimpleMath+`
 
 ## 典型参数
 

@@ -3,40 +3,36 @@ name: unknown_workflow_generic_906
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.494667
-common_nodes: [Any Switch (rgthree), CR Text, CR Text Replace, Fast Groups Bypasser (rgthree), GetNode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, SetNode]
+coverage: 0.778
+common_nodes: [GetImageSize, ImageCompare, LoadImage, ResizeImageMaskNode]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成用于seedance2.0的人物_角色可视化AI短剧角色卡资产_2061644160330981378.json, 图片生成/图生图/人物_角色可视化AI短剧角色卡资产_2089673848122859522.json, 图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的可视化故事板（视频导演适用）_1996495795576782850.json]
+members: [comfyui-workflow-templates-json/api_topaz_image_enhance.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_906
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键生成用于seedance2.0的人物_角色可视化AI短剧角色卡资产_2061644160330981378.json、图片生成/图生图/人物_角色可视化AI短剧角色卡资产_2089673848122859522.json、图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的可视化故事板（视频导演适用）_1996495795576782850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_topaz_image_enhance.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CR Text`
-- `CR Text Replace`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetImageSize`
+- `ImageCompare`
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `SaveImage`
-- `SetNode`
+- `ResizeImageMaskNode`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveImage` —— 2/3 个有
+- `fd5d0097-8a1d-4dc2-86f2-1d5869b3f0eb` —— 2/3 个有
+- `SaveImageAdvanced` —— 1/3 个有
+- `TopazImageEnhanceV2` —— 1/3 个有
 
 ## 典型参数
 

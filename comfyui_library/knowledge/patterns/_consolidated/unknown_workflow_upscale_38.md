@@ -3,40 +3,33 @@ name: unknown_workflow_upscale_38
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.683
-common_nodes: [BiRefNet_ModelLoader_Zho, BiRefNet_Zho, InspyrenetRembg, LayerMask: BiRefNetUltra, LayerMask: SegmentAnythingUltra V2, LoadImage, PreviewImage, SaveImage, easy imageRemBg]
+coverage: 1
+common_nodes: [KEEP_FaceUpscaleImage, KEEP_ModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json, 图片生成/图生图/抠图_2062353508631928833.json]
+members: [图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json, 图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_38
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json、图片生成/图生图/抠图_2062353508631928833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json、图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BiRefNet_ModelLoader_Zho`
-- `BiRefNet_Zho`
-- `InspyrenetRembg`
-- `LayerMask: BiRefNetUltra`
-- `LayerMask: SegmentAnythingUltra V2`
+- `KEEP_FaceUpscaleImage`
+- `KEEP_ModelLoader`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Upscale Model Loader` —— 1/2 个有
-- `YUAN_TXTConvertAny` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
 
 ## 典型参数
 

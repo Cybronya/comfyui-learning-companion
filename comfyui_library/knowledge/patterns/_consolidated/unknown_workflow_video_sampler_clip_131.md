@@ -2,99 +2,89 @@
 name: unknown_workflow_video_sampler_clip_131
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.4984
-common_nodes: [Any2ListNode, Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ColorMatch, Float, GetNode, ImageFromBatch, Int, KSampler, LoadAudio, LoadImage, ModelPatchLoader, PainterAudioCut, PreviewAny, SetNode, SimpleMath+, Text, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy promptLine, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+level: weak
+coverage: 0.7348
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RIFE VFI, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/克隆自己_克隆他人声音做数字人长视频（官流稳定版）_2026533442996932609.json, 视频生成/图生视频/图生对口型-rh-全自动循环-数字人-模板_2019209695591927810.json, 视频生成/图生视频/高质量图片对口型数字人（电商、带货、短剧等实用场景）_2036376532473614337.json, 视频生成/文生视频/图生对口型-全自动循环-数字人-模板_2039982412008005633.json, 视频生成/文生视频/图生对口型-全自动循环-数字人-模板_2065338337707253762.json]
+members: [视频生成/图生视频/Wan2.2 DaSiWa8.1 最强动漫模型视频流-单图版+补帧_2008070467520827394.json, 视频生成/图生视频/Wan2.2 DaSiWa8.1 最强动漫模型视频流-双图版+补帧_2008456378490298370.json, 视频生成/图生视频/[发布版]DaSiWa-WAN2.2场景首尾帧生视频_2033880906871611394.json, 视频生成/图生视频/[发布版]aSiWa-WAN2.2景物类单图生视频带推理_2033525595593773057.json, 视频生成/图生视频/zfl图生视频流-支持单图 _ 双图 _ 出视频 5.0_2031581531424165889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_131
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/克隆自己_克隆他人声音做数字人长视频（官流稳定版）_2026533442996932609.json、视频生成/图生视频/图生对口型-rh-全自动循环-数字人-模板_2019209695591927810.json、视频生成/图生视频/高质量图片对口型数字人（电商、带货、短剧等实用场景）_2036376532473614337.json、视频生成/文生视频/图生对口型-全自动循环-数字人-模板_2039982412008005633.json、视频生成/文生视频/图生对口型-全自动循环-数字人-模板_2065338337707253762.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 DaSiWa8.1 最强动漫模型视频流-单图版+补帧_2008070467520827394.json、视频生成/图生视频/Wan2.2 DaSiWa8.1 最强动漫模型视频流-双图版+补帧_2008456378490298370.json、视频生成/图生视频/[发布版]DaSiWa-WAN2.2场景首尾帧生视频_2033880906871611394.json、视频生成/图生视频/[发布版]aSiWa-WAN2.2景物类单图生视频带推理_2033525595593773057.json、视频生成/图生视频/zfl图生视频流-支持单图 _ 双图 _ 出视频 5.0_2031581531424165889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：50%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Any2ListNode`
-- `Audio Duration (mtb)`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ColorMatch`
-- `Float`
-- `GetNode`
-- `ImageFromBatch`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
 - `Int`
-- `KSampler`
-- `LoadAudio`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelPatchLoader`
-- `PainterAudioCut`
-- `PreviewAny`
-- `SetNode`
-- `SimpleMath+`
-- `Text`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `RIFE VFI`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy promptLine`
+- `easy cleanGpuUsed`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `ImageResizeKJv2` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
+- `GetImagesFromBatchIndexed` —— 4/5 个有
+- `JoinStrings` —— 4/5 个有
+- `PainterI2V` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `SimpleMath+` —— 3/5 个有
+- `TextInput_` —— 3/5 个有
 - `UNETLoader` —— 3/5 个有
-- `DiffusionModelLoaderKJ` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `VHS_AudioToVHSAudio` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `VHS_VHSAudioToAudio` —— 1/5 个有
-- `WhisperSTT` —— 1/5 个有
+- `VAELoader` —— 3/5 个有
+- `WanFirstLastFrameToVideo` —— 3/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `JjkText` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `easy convertAnything` —— 2/5 个有
+- `CR Integer To String` —— 1/5 个有
+- `CR Text Replace` —— 1/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `ImageLoader` —— 1/5 个有
+- `MultiplePathsInput` —— 1/5 个有
+- `Switch string [Crystools]` —— 1/5 个有
+- `ZML_BooleanSwitch` —— 1/5 个有
+- `ttN concat` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 5 | 11% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 60% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，5 个样本，取值分散，一致性仅 11%
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 60%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -3,75 +3,67 @@ name: unknown_workflow_lora_sampler_clip_251
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8865
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RepeatImageBatch, SaveImage, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.783
+common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, GrowMaskWithBlur, KSamplerSelect, LayerMask: MaskPreview, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/人物姿势控制 wan2.1_1947206110869659649.json, 图片生成/图生图/电商视频人物同姿势替换_1949738146482274305.json]
+members: [图片生成/图生图/Flux一键修手（自动+手动）_1905570787984871426.json, 图片生成/图生图/Flux修手（手动）_1905597707249963010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_251
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物姿势控制 wan2.1_1947206110869659649.json、图片生成/图生图/电商视频人物同姿势替换_1949738146482274305.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux一键修手（自动+手动）_1905570787984871426.json、图片生成/图生图/Flux修手（手动）_1905597707249963010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `JjkText`
-- `KSampler`
+- `Anything Everywhere`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `GrowMaskWithBlur`
+- `KSamplerSelect`
+- `LayerMask: MaskPreview`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RepeatImageBatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TrimVideoLatent`
+- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `INPAINT_MaskedFill` —— 1/2 个有
-- `ImageRemoveAlpha+` —— 1/2 个有
-- `ImageRepeat` —— 1/2 个有
-- `ImageToMask` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
+- `AddMask` —— 1/2 个有
+- `BlendInpaint` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `CutForInpaint` —— 1/2 个有
+- `GroundingDinoModelLoader (segment anything)` —— 1/2 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 1/2 个有
+- `ImageAndMaskPreview` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `PreviewBridge` —— 1/2 个有
+- `RepeatLatentBatch` —— 1/2 个有
+- `SAMLoader` —— 1/2 个有
+- `easy imageChooser` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | uni_pc | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

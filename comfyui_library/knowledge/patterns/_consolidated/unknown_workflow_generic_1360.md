@@ -3,39 +3,37 @@ name: unknown_workflow_generic_1360
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [Display Any (rgthree), FluxKontextImageScale, ImageStitch, ImpactSwitch, LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy int]
+coverage: 1
+common_nodes: [LayerUtility: ImageScaleByAspectRatio, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveImage, TextBox, string_util_StrSplit]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json, 图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json]
+members: [图片生成/图生图/G-Image-2+全套主图和详情长图+海报(非服装类)_2054742644487671809.json, 图片生成/图生图/自动化全套主图和详情长图+可指定模特(服装类)_2053487359806722049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1360
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json、图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G-Image-2+全套主图和详情长图+海报(非服装类)_2054742644487671809.json、图片生成/图生图/自动化全套主图和详情长图+可指定模特(服装类)_2053487359806722049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Display Any (rgthree)`
-- `FluxKontextImageScale`
-- `ImageStitch`
-- `ImpactSwitch`
+- `LayerUtility: ImageScaleByAspectRatio`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `Text Multiline`
-- `easy int`
+- `TextBox`
+- `string_util_StrSplit`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng4_Image2Image` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

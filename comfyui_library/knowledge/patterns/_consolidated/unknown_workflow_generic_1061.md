@@ -3,40 +3,37 @@ name: unknown_workflow_generic_1061
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.804
-common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_BytedanceSeedance20GlobalFastMultimodalVideo, RH_BytedanceSeedance20GlobalFastTextToVideo, RH_BytedanceSeedance20GlobalMiniImageToVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
+coverage: 0.901
+common_nodes: [ColorMatch, ImageConcanate, ImageScaleBy, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PrimitiveFloat, SaveImage, SeedVR2, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.0 Mini 多模态视频生成-短视频制作_2075511899470524417.json, 视频生成/文生视频/Seedance2.0 Mini 多模态视频生成（Globa全球版）_2075820621400989698.json, 视频生成/文生视频/Seedance2.0 Mini 文生视频-短视频制作_2075815909545046017.json]
+members: [图片生成/图生图/高清修复+超清放大_1959455054111649793.json, 图片生成/图生图/高清修复+超清放大_1962145972216381442.json, 图片生成/文生图/高清修复（最新）_1943208890689609730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1061
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Mini 多模态视频生成-短视频制作_2075511899470524417.json、视频生成/文生视频/Seedance2.0 Mini 多模态视频生成（Globa全球版）_2075820621400989698.json、视频生成/文生视频/Seedance2.0 Mini 文生视频-短视频制作_2075815909545046017.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/高清修复+超清放大_1959455054111649793.json、图片生成/图生图/高清修复+超清放大_1962145972216381442.json、图片生成/文生图/高清修复（最新）_1943208890689609730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
+- `ColorMatch`
+- `ImageConcanate`
+- `ImageScaleBy`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo`
-- `RH_BytedanceSeedance20GlobalFastTextToVideo`
-- `RH_BytedanceSeedance20GlobalMiniImageToVideo`
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `RH_RhartVideoSparkvideo20MiniTextToVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/3 个有
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
+- `SaveImage`
+- `SeedVR2`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

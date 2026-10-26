@@ -1,59 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_93
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9688
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: moderate
+coverage: 0.938545
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_to_video_wan.json, comfyui-workflow-templates-json/text_to_video_wan.json, comfyui-workflow-templates-json/video_wan2.1_fun_camera_v1.1_1.3B.json, comfyui-workflow-templates-json/video_wan2.1_fun_camera_v1.1_14B.json, 视频生成/图生视频/Wan2.1_Fun_V1.1_Control_Camera_1.3B_I2V_2038456404972933122.json, 视频生成/图生视频/wan2.1-图生视频-发光的身体_1905817606274879490.json, 视频生成/图生视频/【AI由北】Wan2.1 图生视频 全能版本_1928340598107815937.json, 视频生成/图生视频/【Wan2.1图生视频】小红书抖音_美女爆款视频生成_1904560347657777154.json, 视频生成/图生视频/图生视频_2046059182419353601.json, 视频生成/文生视频/图生视频WAN2.1开源_2093540211702718466.json]
+members: [图片生成/图生图/Flux2.Klein图像编辑与扩图重绘_2014617059883225089.json, 图片生成/图生图/Flux2Klein 单图编辑 指定画面比例_2013884566422949890.json, 图片生成/图生图/Flux2Klein 单图编辑_2012572910803755010.json, 图片生成/图生图/Flux2Klein 去水印马赛克_2013545657268703234.json, 图片生成/图生图/Flux2Klein 高清化_2013543196827066370.json, 图片生成/图生图/Flux2Klein图像编辑终极版角色一致性_2060283231865495553.json, 图片生成/图生图/Flux2Klein图像编辑终极版角色一致性_2062072605993168898.json, 图片生成/图生图/Flux2_Klein_9B印花提取_2104442102175322114.json, 图片生成/图生图/Flux2_Klein_9B模特换脸工作流_2019648494549602305.json, 图片生成/图生图/【去文字】flux-2-klein-9b_2104893740522491906.json, 图片生成/图生图/扩图工作流（FK2）_2091708039295496194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_93
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（comfyui-workflow-templates-json/image_to_video_wan.json、comfyui-workflow-templates-json/text_to_video_wan.json、comfyui-workflow-templates-json/video_wan2.1_fun_camera_v1.1_1.3B.json、comfyui-workflow-templates-json/video_wan2.1_fun_camera_v1.1_14B.json、视频生成/图生视频/Wan2.1_Fun_V1.1_Control_Camera_1.3B_I2V_2038456404972933122.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux2.Klein图像编辑与扩图重绘_2014617059883225089.json、图片生成/图生图/Flux2Klein 单图编辑 指定画面比例_2013884566422949890.json、图片生成/图生图/Flux2Klein 单图编辑_2012572910803755010.json、图片生成/图生图/Flux2Klein 去水印马赛克_2013545657268703234.json、图片生成/图生图/Flux2Klein 高清化_2013543196827066370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 9/10 个有
-- `CLIPVisionLoader` —— 9/10 个有
-- `LoadImage` —— 9/10 个有
-- `ModelSamplingSD3` —— 8/10 个有
-- `CreateVideo` —— 6/10 个有
-- `SaveVideo` —— 6/10 个有
-- `SaveAnimatedWEBP` —— 5/10 个有
-- `WanImageToVideo` —— 5/10 个有
-- `SaveImage` —— 4/10 个有
-- `WanCameraEmbedding` —— 4/10 个有
-- `WanCameraImageToVideo` —— 4/10 个有
-- `SaveWEBM` —— 2/10 个有
-- `EmptyHunyuanLatentVideo` —— 1/10 个有
+- `ImageScaleToTotalPixels` —— 8/11 个有
+- `ConditioningZeroOut` —— 4/11 个有
+- `Image Comparer (rgthree)` —— 4/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/11 个有
+- `PreviewImage` —— 4/11 个有
+- `ImagePadForOutpaint` —— 3/11 个有
+- `LoraLoaderModelOnly` —— 3/11 个有
+- `DifferentialDiffusion` —— 2/11 个有
+- `DrawMaskOnImage` —— 2/11 个有
+- `IdentityFeatureTransferV3` —— 2/11 个有
+- `AdjustBrightnessContrastSaturationNode` —— 1/11 个有
+- `ColorMatchV2` —— 1/11 个有
+- `EmptyUnitGenerator_UTK` —— 1/11 个有
+- `Fast Groups Muter (rgthree)` —— 1/11 个有
+- `ImageStitch` —— 1/11 个有
+- `InpaintModelConditioning` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 1/11 个有
+- `easy imageConcat` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 10 | 86% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 10 | 100% |
-| 采样算法 | uni_pc | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,8 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，10 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,29 +3,36 @@ name: unknown_workflow_generic_1537
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_KlingO1_StartToEnd, SaveVideo]
+coverage: 0.604
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json, 视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json]
+members: [图片生成/图生图/最新G IMG2一键生成电商产品场景图4K 工作流V1.0_2047802294460227585.json, 图片生成/图生图/详情页专用_2051985831904198658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1537
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json、视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新G IMG2一键生成电商产品场景图4K 工作流V1.0_2047802294460227585.json、图片生成/图生图/详情页专用_2051985831904198658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_KlingO1_StartToEnd`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

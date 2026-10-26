@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_323
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.632143
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage]
+coverage: 0.922
+common_nodes: [AudioSeparation, LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/GImage20印花图案提取全能图单图编辑_2060136328410525697.json, 图片生成/图生图/GImage20印花图案提取全能图单图编辑_2061654187380924417.json, 图片生成/图生图/全能图片G-2.0-图生图（单图编辑）官方稳定版_2047994425145561089.json, 图片生成/图生图/全能图片G-2.0-图生图（双图编辑）官方稳定版_2047987972443738114.json, 图片生成/图生图/全能图片G2（文生图+图生图）_2051199537619976193.json, 图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json, 图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json]
+members: [数字人/数字人/SeedVc V2 AI翻唱-克隆音色_2082392996959576066.json, 数字人/数字人/音色克隆应用版_1996831002053988354.json, 数字人/数字人/音色克隆（Seed-VC）_2057728338495623169.json, 音频生成/音频生成/SeedVc V2 AI翻唱-克隆音色_2029535637270958082.json, 音频生成/音频生成/歌曲翻唱-音色克隆-声音迁移（Seed-VC）-速度快_2059875835561209857.json, 音频生成/音频生成/歌曲翻唱、音色克隆（Seed-VC）_2037442165676183553.json, 音频生成/音频生成/歌曲翻唱（Seed-VC）_2088224244693032961.json, 音频生成/音频生成/歌曲音色翻唱_1952653834147573762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_323
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/GImage20印花图案提取全能图单图编辑_2060136328410525697.json、图片生成/图生图/GImage20印花图案提取全能图单图编辑_2061654187380924417.json、图片生成/图生图/全能图片G-2.0-图生图（单图编辑）官方稳定版_2047994425145561089.json、图片生成/图生图/全能图片G-2.0-图生图（双图编辑）官方稳定版_2047987972443738114.json、图片生成/图生图/全能图片G2（文生图+图生图）_2051199537619976193.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/SeedVc V2 AI翻唱-克隆音色_2082392996959576066.json、数字人/数字人/音色克隆应用版_1996831002053988354.json、数字人/数字人/音色克隆（Seed-VC）_2057728338495623169.json、音频生成/音频生成/SeedVc V2 AI翻唱-克隆音色_2029535637270958082.json、音频生成/音频生成/歌曲翻唱-音色克隆-声音迁移（Seed-VC）-速度快_2059875835561209857.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2OfficialTextToImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `AudioSeparation`
+- `LoadAudio`
+- `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/7 个有
-- `JjkText` —— 2/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/7 个有
+- `AudioCombine` —— 6/8 个有
+- `AudioCrop` —— 5/8 个有
+- `MergeAudioNode` —— 2/8 个有
+- `孤海注释` —— 2/8 个有
+- `PreviewAudio` —— 1/8 个有
 
 ## 典型参数
 

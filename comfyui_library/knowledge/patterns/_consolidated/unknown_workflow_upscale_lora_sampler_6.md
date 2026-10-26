@@ -3,77 +3,86 @@ name: unknown_workflow_upscale_lora_sampler_6
 type: Unknown Workflow
 frequency: 18
 level: strong
-coverage: 0.771111
-common_nodes: [CLIPSetLastLayer, CLIPTextEncode, ImageScaleBy, ImageUpscaleWithModel, ImpactStringSelector, Int, JjkConcat, JjkText, KSampler, PrimitiveFloat, SaveImage, StringConcatenate, TextRandomMultiline, UpscaleModelLoader, VAEDecode, easy loraStack, easy loraStackApply, easy showAnything, easy textSwitch, math_calculate, workflow>MainLoad]
-problems: []
+coverage: 0.778333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json, 图片生成/文生图/Illustrious一键生成清纯女友_2042810792273252354.json, 图片生成/文生图/Illustrious亚洲女性写实_2050896068455485442.json, 图片生成/文生图/Illustrious文生图_无限制_2042480186519719937.json, 图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json, 图片生成/文生图/Illustrious文生瑟图_2035035529380634626.json, 图片生成/文生图/Illustrious新世界_2035673216508764161.json, 图片生成/文生图/Illustrious无限制动漫-3D-大雷_2037095349076103170.json, 图片生成/文生图/Illustrious混音文生图_一键生成美女_2039291235839512578.json, 图片生成/文生图/Illustrious科幻机甲_2050905003711311874.json, 图片生成/文生图/Illustrious超越2.5D_2031655086094557186.json, 图片生成/文生图/SDXL文生图_无限制_2026919557071376386.json, 图片生成/文生图/SDXL文生美图_2026534975964712961.json, 图片生成/文生图/SDXL文生美图_2033772089961877506.json, 图片生成/文生图/SDXL文生美图无限制_2040632487734419458.json, 图片生成/文生图/WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json, 图片生成/文生图/WAI Illustrious文生瑟图_二次元_动漫_2023677640929972226.json, 图片生成/文生图/一键生成日本美女壁纸_2036112611254734850.json]
+members: [图片生成/图生图/【 Banan老照片修复】香蕉图像编辑-TTP高清放大_1965854119267340289.json, 图片生成/图生图/【Nano Banan单人写真定制】香蕉图像编辑-TTP高清放大_1968281148851933185.json, 图片生成/图生图/【Nano Banan手办定制】香蕉图像编辑-TTP高清放大_1968220824744374273.json, 图片生成/图生图/【老照片修复V2】全能图片pro-TTP高清放大_1993420879201763329.json, 图片生成/图生图/【表情包定制】 Banan-TTP高清放大_2040783870953529345.json, 图片生成/图生图/【表情包定制】全能图片V1+一键生成表情包+照片一键制作卡通动物表情包+生成+九宫格+表情包_2019319522431340546.json, 图片生成/图生图/【表情包定制】高清放大_2016317444448591873.json, 图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜Qwen-Image TTP拆分+Seed_1994603666466349057.json, 图片生成/图生图/卡通头像  一键表情包_2067204909480632322.json, 图片生成/图生图/卡通头像一键生成表情包_2069954852985335810.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】Banan高清放大_2067054099513823233.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】Banan高清放大_2068202060545351682.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2069224450087804930.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2071766464339726338.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2072861657474359297.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2076464180277899265.json, 图片生成/图生图/生成卡通头像一键表情包生成真人动漫都可用【表情包定制】_2067313367072727042.json, 图片生成/文生图/【自定义静态表情包定制】 Banan-TTP高清放大_2065150014434930689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json、图片生成/文生图/Illustrious一键生成清纯女友_2042810792273252354.json、图片生成/文生图/Illustrious亚洲女性写实_2050896068455485442.json、图片生成/文生图/Illustrious文生图_无限制_2042480186519719937.json、图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/【 Banan老照片修复】香蕉图像编辑-TTP高清放大_1965854119267340289.json、图片生成/图生图/【Nano Banan单人写真定制】香蕉图像编辑-TTP高清放大_1968281148851933185.json、图片生成/图生图/【Nano Banan手办定制】香蕉图像编辑-TTP高清放大_1968220824744374273.json、图片生成/图生图/【老照片修复V2】全能图片pro-TTP高清放大_1993420879201763329.json、图片生成/图生图/【表情包定制】 Banan-TTP高清放大_2040783870953529345.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `CLIPSetLastLayer`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
 - `ImageScaleBy`
 - `ImageUpscaleWithModel`
-- `ImpactStringSelector`
-- `Int`
-- `JjkConcat`
-- `JjkText`
 - `KSampler`
-- `PrimitiveFloat`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
 - `SaveImage`
-- `StringConcatenate`
-- `TextRandomMultiline`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecode`
-- `easy loraStack`
-- `easy loraStackApply`
-- `easy showAnything`
-- `easy textSwitch`
-- `math_calculate`
-- `workflow>MainLoad`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
+- `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CompressImages` —— 17/18 个有
-- `DuckHideNode` —— 17/18 个有
-- `RandomInt` —— 17/18 个有
-- `easy batchAnything` —— 17/18 个有
-- `easy forLoopEnd` —— 17/18 个有
-- `easy forLoopStart` —— 17/18 个有
-- `easy mathInt` —— 17/18 个有
-- `CR Split String` —— 1/18 个有
-- `PrimitiveString` —— 1/18 个有
+- `Anything Everywhere3` —— 17/18 个有
+- `ImageResize+` —— 17/18 个有
+- `RH_Nano_Banana_Image2Image` —— 16/18 个有
+- `CR Text` —— 15/18 个有
+- `RHHiddenNodes` —— 15/18 个有
+- `RH_Translator` —— 3/18 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/18 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/18 个有
+- `CR Text Concatenate` —— 1/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `ImpactSwitch` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `TT_img_enc` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 18 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 18 | 100% |
-| 采样算法 | euler_ancestral | - | 18 | 94% |
-| 调度器 | normal | - | 18 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | 2 | 2 - 2 | 18 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | karras | - | 18 | 100% |
+| 重绘幅度 | 0.3 | 0.3 - 0.45 | 18 | 89% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 18/18 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，18 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，18 个样本，一致性 94%
-- 调度器 最常用 normal，18 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 2，观测区间 2 - 2，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 karras，18 个样本，一致性 100%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 0.45，18 个样本，取值集中（一致性 89%）
+- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/18 个样本）：发现KSampler但没有VAEDecode

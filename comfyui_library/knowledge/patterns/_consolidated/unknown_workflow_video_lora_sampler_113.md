@@ -1,95 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_113
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.641
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.778667
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ContextWindowsManual, GetImageRangeFromBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SamplerCustom, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimate2Cache, WanAnimate2ToVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json, 图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json, 视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json, 视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json, 视频生成/图生视频/Wan Animate KJ V2版+Sec稳定自动遮罩视频换装_1977311321710567425.json, 视频生成/图生视频/视频换装稳定版，可切镜头V3_1990353025669754881.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版+Sec稳定遮罩Mix视频V3（换装前置）_1977639019339239426.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版Move模式视频V2（换装前置）_1977660761738739714.json, 视频生成/文生视频/Wan Animate KJ V2版+Sec稳定遮罩视频换装V3_1976929662687420417.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Mix主体混合版V2_1974413564041670657.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移Uni3c运镜版V1_1974430400560893954.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移V1_1974423112462766082.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本非人类一致性优化Mix主体混合版V1_1974415771805855745.json]
+members: [数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114691557663264769.json, 视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json, 视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移15秒内_2087549782628847618.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097276416403533826.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097297241835921409.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114671698929872898.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长V1_2086760732246499329.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长加速版_2087045861942579202.json, 视频生成/图生视频/wan-animate2动作姿势模仿_2087054631615680514.json, 视频生成/文生视频/Animate2动作迁移_2104741113713217538.json, 视频生成/文生视频/Wan animate2 视频编辑 循环流V1_2086206809366421506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_113
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json、图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json、视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json、视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json、视频生成/图生视频/Wan Animate KJ V2版+Sec稳定自动遮罩视频换装_1977311321710567425.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114691557663264769.json、视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BlockifyMask`
+全部 15 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `ComfyMathExpression`
+- `ContextWindowsManual`
+- `GetImageRangeFromBatch`
+- `ImageFromBatch`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanAnimate2Cache`
+- `WanAnimate2ToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_ImageFaceCrop` —— 12/13 个有
-- `GetImageSizeAndCount` —— 12/13 个有
-- `GrowMask` —— 12/13 个有
-- `JWInteger` —— 12/13 个有
-- `PointsEditor` —— 12/13 个有
-- `CR Prompt Text` —— 11/13 个有
-- `DownloadAndLoadSAM2Model` —— 11/13 个有
-- `GetNode` —— 11/13 个有
-- `PoseRetargetPromptHelper` —— 11/13 个有
-- `Sam2Segmentation` —— 11/13 个有
-- `SetNode` —— 11/13 个有
-- `WanVideoEncode` —— 11/13 个有
-- `WanVideoUni3C_ControlnetLoader` —— 11/13 个有
-- `WanVideoUni3C_embeds` —— 11/13 个有
-- `easy showAnything` —— 11/13 个有
-- `WanVideoContextOptions` —— 10/13 个有
-- `WanVideoTorchCompileSettings` —— 10/13 个有
-- `EmptyImage` —— 7/13 个有
-- `ImageFromBatch` —— 7/13 个有
-- `PreviewImage` —— 7/13 个有
-- `PrimitiveInt` —— 7/13 个有
-- `SeCModelLoader` —— 7/13 个有
-- `SeCVideoSegmentation` —— 7/13 个有
-- `ClothesSegment` —— 6/13 个有
-- `PDIMAGE_LongerSize` —— 6/13 个有
-- `VHS_VideoInfo` —— 6/13 个有
-- `ImageConcanate` —— 5/13 个有
-- `SaveImage` —— 3/13 个有
-- `segformer_b2_clothes` —— 3/13 个有
-- `TT_img_enc_v2` —— 2/13 个有
-- `CoordinatePlotter` —— 1/13 个有
-- `GrowMaskWithBlur` —— 1/13 个有
-- `INTConstant` —— 1/13 个有
-- `ImageUpscaleWithModel` —— 1/13 个有
-- `LayerMask: MaskPreview` —— 1/13 个有
-- `PoseDetectionOneToAllAnimation` —— 1/13 个有
-- `RH_Captioner` —— 1/13 个有
-- `ShowText` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
-- `UpscaleModelLoader` —— 1/13 个有
-- `easy anythingIndexSwitch` —— 1/13 个有
-- `easy cleanGpuUsed` —— 1/13 个有
-- `easy promptConcat` —— 1/13 个有
+- `GetImageSizeAndCount` —— 14/15 个有
+- `ImageResizeKJv2` —— 14/15 个有
+- `ResizeImageMaskNode` —— 14/15 个有
+- `VHS_VideoInfo` —— 14/15 个有
+- `easy int` —— 14/15 个有
+- `GetImageSize` —— 13/15 个有
+- `PrimitiveStringMultiline` —— 13/15 个有
+- `TensorLoopClose` —— 13/15 个有
+- `TensorLoopOpen` —— 13/15 个有
+- `ComfySwitchNode` —— 12/15 个有
+- `GetNode` —— 12/15 个有
+- `JWInteger` —— 12/15 个有
+- `ImageConcatMulti` —— 11/15 个有
+- `PrimitiveBoolean` —— 11/15 个有
+- `easy showAnything` —— 10/15 个有
+- `SetNode` —— 3/15 个有
+- `easy forLoopEnd` —— 2/15 个有
+- `easy forLoopStart` —— 2/15 个有
+- `Bookmark (rgthree)` —— 1/15 个有
+- `DF_Int_to_Float` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `Label (rgthree)` —— 1/15 个有
+- `MathExpression|pysssss` —— 1/15 个有
+- `Note Plus (mtb)` —— 1/15 个有
+- `PlaySound|pysssss` —— 1/15 个有
+- `ShowAnything|Mie` —— 1/15 个有
+- `SimpleMath+` —— 1/15 个有
 
 ## 典型参数
 

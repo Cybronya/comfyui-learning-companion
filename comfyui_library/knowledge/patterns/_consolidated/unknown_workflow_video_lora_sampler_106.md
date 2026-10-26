@@ -1,65 +1,89 @@
 ---
 name: unknown_workflow_video_lora_sampler_106
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.801
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7345
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2 文生视频加速KJ版+提示词选取_1951130910374699010.json, 视频生成/文生视频/Wan2.2 文生视频加速KJ版+运镜_1950408991886196738.json, 视频生成/文生视频/Wan2.2 文生视频加速KJ版_1950100642577694721.json, 视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json, 视频生成/文生视频/Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_1957481859263426562.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1(贞贞版2000步)_1951167781284851713.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V4(高质量横屏720P贞贞版)_1951179698393034754.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V4(高质量竖屏720P贞贞版)_1953444312275144706.json, 视频生成/文生视频/t2vV3_1956721780875300866.json, 视频生成/文生视频/wan2.2palingenesis智能提示词文生视频横屏版（包含自训练脸模lora保持角色一致性）_1973017295171751938.json, 视频生成/文生视频/wan2.2智能提示词文生视频竖屏版直出2k（包含自训练脸模lora保持角色一致性）_1968733813188829186.json, 视频生成/文生视频/✅Wan2.2-Lightx-文生视频-KJ版-720p_1950738636969021442.json, 视频生成/文生视频/（1+3四步版本）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V5_1972112233536876545.json, 视频生成/文生视频/（KJ版2+2极速）Wan2.2自动镜头新版lightning0928文生视频V3_1972282645650534402.json, 视频生成/文生视频/（电影质感版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V5_1972106036679208961.json]
+members: [视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_2003025271127175169.json, 视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json, 视频生成/图生视频/【遇见AI】SCAIL-Pose姿势迁移，支持丝滑转身，支持双人对打_2000492359223832578.json, 视频生成/图生视频/一键SCAIL多只宠物跳舞_2014755319490023425.json, 视频生成/图生视频/丝滑动作迁移-SCAIL无限人数版_2001543214261780482.json, 视频生成/图生视频/动作迁移-丝滑转身-SCAIL_2001524857722531841.json, 视频生成/图生视频/动作迁移SCAIL-48G_2004839644334354433.json, 视频生成/图生视频/动作迁移支持手部细节（单人）SCAIL支持丝滑转身_2000804833005367297.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）2.0_2001144706195222530.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）_2001092437491712001.json, 视频生成/图生视频/动作迁移（双人）SCAIL支持丝滑转身支持双人对打_2000796264725872641.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）2.0_2001142236438032385.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）_2001090043416543233.json, 视频生成/图生视频/支持丝滑转身_2003660932444266497.json, 视频生成/图生视频/最新SCAIL动作迁移美女跳舞，支持双人对战_2000446117890359297.json, 视频生成/文生视频/SCAIL 动物多人跳舞小猫小狗人物跳舞视频工作流 scaila 多人跳舞跨物种舞蹈模仿单人跳舞_2015990564986036225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_106
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 文生视频加速KJ版+提示词选取_1951130910374699010.json、视频生成/文生视频/Wan2.2 文生视频加速KJ版+运镜_1950408991886196738.json、视频生成/文生视频/Wan2.2 文生视频加速KJ版_1950100642577694721.json、视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json、视频生成/文生视频/Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_1957481859263426562.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_2003025271127175169.json、视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json、视频生成/图生视频/【遇见AI】SCAIL-Pose姿势迁移，支持丝滑转身，支持双人对打_2000492359223832578.json、视频生成/图生视频/一键SCAIL多只宠物跳舞_2014755319490023425.json、视频生成/图生视频/丝滑动作迁移-SCAIL无限人数版_2001543214261780482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+全部 16 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 14/15 个有
-- `ShowText|pysssss` —— 13/15 个有
-- `INTConstant` —— 12/15 个有
-- `JWStringConcat` —— 12/15 个有
-- `RH_LLMAPI_NODE` —— 12/15 个有
-- `Wan22PromptSelector` —— 12/15 个有
-- `WanVideoTorchCompileSettings` —— 12/15 个有
-- `easy showAnything` —— 12/15 个有
-- `JWInteger` —— 11/15 个有
-- `TextConcat` —— 11/15 个有
-- `ImageFromBatch+` —— 3/15 个有
-- `Bjornulf_ShowInt` —— 2/15 个有
-- `SimpleMath+` —— 2/15 个有
-- `CR Text` —— 1/15 个有
-- `GetNode` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `JWFloat` —— 1/15 个有
-- `KepStringLiteral` —— 1/15 个有
-- `SetNode` —— 1/15 个有
-- `TTResolutionSelector` —— 1/15 个有
-- `easy seed` —— 1/15 个有
+- `GetImageSizeAndCount` —— 15/16 个有
+- `WanVideoEncode` —— 15/16 个有
+- `WanVideoUni3C_ControlnetLoader` —— 15/16 个有
+- `WanVideoUni3C_embeds` —— 15/16 个有
+- `NLFPredict` —— 14/16 个有
+- `OnnxDetectionModelLoader` —— 14/16 个有
+- `PoseDetectionVitPoseToDWPose` —— 14/16 个有
+- `RenderNLFPoses` —— 14/16 个有
+- `DownloadAndLoadNLFModel` —— 13/16 个有
+- `FloatConstant` —— 13/16 个有
+- `ImageConcatMulti` —— 13/16 个有
+- `LoadWanVideoT5TextEncoder` —— 13/16 个有
+- `SimpleMath+` —— 13/16 个有
+- `WanVideoTextEncode` —— 13/16 个有
+- `WanVideoTorchCompileSettings` —— 13/16 个有
+- `GetNode` —— 12/16 个有
+- `INTConstant` —— 12/16 个有
+- `SetNode` —— 12/16 个有
+- `CR Text` —— 9/16 个有
+- `Int` —— 8/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/16 个有
+- `MathExpression|pysssss` —— 7/16 个有
+- `PreviewImage` —— 3/16 个有
+- `WanVideoTextEncodeCached` —— 3/16 个有
+- `Bookmark (rgthree)` —— 2/16 个有
+- `MemoryCleaner` —— 2/16 个有
+- `easy cleanGpuUsed` —— 2/16 个有
+- `easy int` —— 2/16 个有
+- `Amage Text` —— 1/16 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 1/16 个有
+- `DWPreprocessor` —— 1/16 个有
+- `Display Any (rgthree)` —— 1/16 个有
+- `JWInteger` —— 1/16 个有
+- `LoadNLFModel` —— 1/16 个有
+- `Seed` —— 1/16 个有
+- `SimpleCalculatorKJ` —— 1/16 个有
+- `VHS_VideoInfoSource` —— 1/16 个有
+- `easy boolean` —— 1/16 个有
+- `ttN seed` —— 1/16 个有
 
 ## 典型参数
 

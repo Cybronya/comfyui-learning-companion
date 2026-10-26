@@ -1,80 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_60
 type: Unknown Workflow
-frequency: 19
+frequency: 20
 level: moderate
-coverage: 0.754
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.8392
+common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/123_2107820492894855170.json, 视频生成/图生视频/CGDselflift+2xVAE+锐化放大模型工作流_2110638154041618433.json, 视频生成/图生视频/CGD加电影lora_2104927511938428929.json, 视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json, 视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json, 视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json, 视频生成/图生视频/MICAS西游：Camera 3_2103441968356483073.json, 视频生成/图生视频/MiniMax H3_selflift+2xVAE+锐化放大工作流_2105110415595364353.json, 视频生成/图生视频/Minimax H3 + Self-lift双采快速超长工作流_2104549240100970498.json, 视频生成/图生视频/Minimax-H3_2109624727416430594.json, 视频生成/图生视频/MinimaxH3-图生视频-高清2K_2105896544250720257.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104877137932148737.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104929413359030273.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104933693600129025.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2110566290069999618.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2111010022284161026.json, 视频生成/文生视频/MimaxH3锐化高清放大采样工作流_2105086382539624449.json, 视频生成/文生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json, 视频生成/视频生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json]
+members: [图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json, 视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json, 视频生成/图生视频/Bernini Studio-图生视频（超级加速）_2073592310989942786.json, 视频生成/图生视频/Bernini Studio-视频编辑（超级加速）_2073584193665331202.json, 视频生成/图生视频/Bernini Studio图生视频工作流_2065400514141048833.json, 视频生成/图生视频/Bernini Studio多图参考工作流_2081577097444810753.json, 视频生成/图生视频/Bernini Studio贝尔尼尼_2075050205141094402.json, 视频生成/图生视频/Bernini-4步加速-图生视频_2074045202817437698.json, 视频生成/图生视频/Wan Bernini Studio 加速版工作流_2073577575993139202.json, 视频生成/图生视频/多功能视频处理，图生视频  视频编辑 Bernini Studio 加速版_2063147705244930049.json, 视频生成/图生视频/视频编辑，图生视频 Bernini Studio 贝尔尼尼 急速版_2064931292038385665.json, 视频生成/图生视频/调试Bernini Studio工作流-4步lora_rv2v_2102665904747270146.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora-双参考图_2073745061728313345.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora_2073682935554854913.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082366639907102721.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082437380983844866.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082454463452893186.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082456967376883713.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流_2074035799124955138.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流自动反推_2064238678511280130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_60
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/123_2107820492894855170.json、视频生成/图生视频/CGDselflift+2xVAE+锐化放大模型工作流_2110638154041618433.json、视频生成/图生视频/CGD加电影lora_2104927511938428929.json、视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json、视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json、视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json、视频生成/图生视频/Bernini Studio-图生视频（超级加速）_2073592310989942786.json、视频生成/图生视频/Bernini Studio-视频编辑（超级加速）_2073584193665331202.json、视频生成/图生视频/Bernini Studio图生视频工作流_2065400514141048833.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `BasicScheduler`
+全部 20 个 workflow 都包含：
+- `BerniniStudio`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `ResolutionSelector`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 16/19 个有
-- `LTXVSeparateAVLatent` —— 13/19 个有
-- `MiniMaxH3VAEDecodeFast` —— 13/19 个有
-- `QwenH3PromptLocal` —— 13/19 个有
-- `RunningHub Deepcleaner` —— 13/19 个有
-- `SelfLiftAvatarH3Sampler` —— 12/19 个有
-- `PreviewAny` —— 11/19 个有
-- `Fast Groups Muter (rgthree)` —— 9/19 个有
-- `PrimitiveStringMultiline` —— 8/19 个有
-- `Image Comparer (rgthree)` —— 7/19 个有
-- `ImageFromBatch` —— 7/19 个有
-- `SelfLiftH3Sampler` —— 7/19 个有
-- `CreateVideo` —— 6/19 个有
-- `LoadAudio` —— 4/19 个有
-- `easy showAnything` —— 4/19 个有
-- `GetNode` —— 3/19 个有
-- `SetNode` —— 3/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/19 个有
-- `JjkText` —— 2/19 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 2/19 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 2/19 个有
-- `SaveVideo` —— 2/19 个有
-- `VHS_LoadVideo` —— 2/19 个有
-- `VHS_VideoInfoLoaded` —— 2/19 个有
-- `CR Text` —— 1/19 个有
-- `Text` —— 1/19 个有
-- `忽略多组孤海` —— 1/19 个有
+- `GetNode` —— 18/20 个有
+- `SetNode` —— 18/20 个有
+- `VHS_LoadVideo` —— 17/20 个有
+- `RTXVideoSuperResolution` —— 16/20 个有
+- `ImageConcatMulti` —— 15/20 个有
+- `Int` —— 12/20 个有
+- `SimpleMath+` —— 10/20 个有
+- `ComfyNumberConvert` —— 2/20 个有
+- `VHS_VideoInfo` —— 2/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
+- `ShowAnything|Mie` —— 1/20 个有
+- `Text` —— 1/20 个有
+- `easy showAnything` —— 1/20 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 20 | 75% |
+| Prompt 约束强度(CFG) | 4 | 4 - 8 | 20 | 72% |
+| 采样算法 | 1 | 1 - 1.5 | 20 | 89% |
+| 调度器 | euler | - | 20 | 100% |
+| 重绘幅度 | simple | - | 20 | 100% |
 
 ## 常见问题
 
@@ -82,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，20 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，20 个样本
+- 采样算法 中位数 1，观测区间 1 - 1.5，20 个样本，取值集中（一致性 89%）
+- 调度器 最常用 euler，20 个样本，一致性 100%
+- 重绘幅度 最常用 simple，20 个样本，一致性 100%

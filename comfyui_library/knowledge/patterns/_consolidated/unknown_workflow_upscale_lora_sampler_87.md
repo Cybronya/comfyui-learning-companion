@@ -3,82 +3,78 @@ name: unknown_workflow_upscale_lora_sampler_87
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4245
-common_nodes: [AIO_Preprocessor, Anything Everywhere, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FlashVSRNode, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LayerColor: Brightness & Contrast, LayerColor: BrightnessContrastV2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, ShowText|pysssss, TextEncodeQwenImageEditPlusPro_lrzjason, UnetLoaderGGUF, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageRemBg, llama_cpp_instruct_adv, llama_cpp_model_loader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.751
+common_nodes: [Any Switch (rgthree), Anything Everywhere, BasicScheduler, Bjornulf_ShowInt, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSizeAndCount, INTConstant, Image Comparer (rgthree), Image H264 Compression (mtb), ImagePass, ImageScale, ImageSmartSharpen+, KSamplerSelect, LayerFilter: FilmV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, RebatchLatents, ReferenceLatent, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TilePreprocessor, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Edit-2511-照片质感转换&重打光_2069983182677700610.json, 图片生成/图生图/YZ金鱼-Qwen-Edit-2509-进阶高清修复&照片质感转换&重打光_1990318149092429825.json]
+members: [图片生成/图生图/Flux.2 klein + seedvr2.5 Upscaler 参考图像超清放大_2012982565870772226.json, 图片生成/图生图/图片质感恢复及放大 01_2033577334225248258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_87
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511-照片质感转换&重打光_2069983182677700610.json、图片生成/图生图/YZ金鱼-Qwen-Edit-2509-进阶高清修复&照片质感转换&重打光_1990318149092429825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux.2 klein + seedvr2.5 Upscaler 参考图像超清放大_2012982565870772226.json、图片生成/图生图/图片质感恢复及放大 01_2033577334225248258.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：42%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
+- `Any Switch (rgthree)`
 - `Anything Everywhere`
+- `BasicScheduler`
+- `Bjornulf_ShowInt`
+- `CFGGuider`
 - `CLIPLoader`
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `FlashVSRNode`
-- `GetNode`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSampler`
-- `LayerColor: Brightness & Contrast`
-- `LayerColor: BrightnessContrastV2`
+- `Image H264 Compression (mtb)`
+- `ImagePass`
+- `ImageScale`
+- `ImageSmartSharpen+`
+- `KSamplerSelect`
+- `LayerFilter: FilmV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
-- `PreviewImage`
+- `RandomNoise`
+- `RebatchLatents`
+- `ReferenceLatent`
+- `RepeatLatentBatch`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SetNode`
-- `ShowText|pysssss`
-- `TextEncodeQwenImageEditPlusPro_lrzjason`
-- `UnetLoaderGGUF`
+- `TilePreprocessor`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy imageRemBg`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageConcat` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImpactControlBridge` —— 1/2 个有
+- `LG_Color_Match_V2` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy imageColorMatch` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

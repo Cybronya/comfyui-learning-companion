@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_128
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.866077
-common_nodes: [AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.883929
+common_nodes: [CR Prompt Text, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json, 音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json, 音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2015458205643575298.json, 音频生成/音频生成/qwentts-声音设计 声音克隆_2033750797955112961.json, 音频生成/音频生成/千问3TSS声音克隆_2069320475846725633.json, 音频生成/音频生成/千问3TTS声音设计语音克隆_2069311488371814401.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2014536001888198657.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2069313800293142530.json, 音频生成/音频生成/千问3TTS语音克隆-老祺-单克隆版_2097158002439704578.json, 音频生成/音频生成/千问3TTS语音克隆-音色设计-老祺_2028309603213123586.json]
+members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice声音设计_2041434123331440641.json, 音频生成/音频生成/(600种语言-支持方言)OmniVoice声音设计_2109897262976552961.json, 音频生成/音频生成/LongCat AudioDiT语音TTS_2039217024664080385.json, 音频生成/音频生成/LongCat AudioDiT语音TTS_2039687124450025474.json, 音频生成/音频生成/LongCat AudioDiT语音生成_2039891675463557122.json, 音频生成/音频生成/LongCat--AudioDiT--语音生成_2039312900317253634.json, 音频生成/音频生成/OmniVoice- tts 声音设计  方言版 方言生成 东北话 河南话 陕西话_2041520440455204866.json, 音频生成/音频生成/OmniVoice声音设计(支持600种语言-支持方言)_2041478095194034177.json, 音频生成/音频生成/OmniVoice声音设计_2044611508440666114.json, 音频生成/音频生成/OmniVoice声音设计_2046456811632467970.json, 音频生成/音频生成/OmniVoice声音设计（添加具体标签）_2042515968903090177.json, 音频生成/音频生成/OmniVoice文本到语音（TTS）模型_2041678882755059714.json, 音频生成/音频生成/OmniVoice文本到语音（TTS）模型_2041709902388793345.json, "音频生成/音频生成/OmniVoice语音生成声音设计(支持方言),跨境克隆，omnivoice声音克隆，语音生成_2042056999722029057.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_128
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json、音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json、音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice声音设计_2041434123331440641.json、音频生成/音频生成/(600种语言-支持方言)OmniVoice声音设计_2109897262976552961.json、音频生成/音频生成/LongCat AudioDiT语音TTS_2039217024664080385.json、音频生成/音频生成/LongCat AudioDiT语音TTS_2039687124450025474.json、音频生成/音频生成/LongCat AudioDiT语音生成_2039891675463557122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `AudioCrop`
-- `CR Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
+全部 14 个 workflow 都包含：
+- `CR Prompt Text`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `Qwen3TTSVoiceDesign` —— 11/13 个有
-- `WhisperSTT` —— 8/13 个有
-- `Label (rgthree)` —— 4/13 个有
-- `Qwen3TTSCustomVoice` —— 4/13 个有
-- `PreviewTextNode` —— 1/13 个有
+- `PreviewAudio` —— 13/14 个有
+- `OmniVoiceVoiceDesignTTS` —— 10/14 个有
+- `LongCatTTS` —— 4/14 个有
+- `Text Multiline` —— 1/14 个有
 
 ## 典型参数
 

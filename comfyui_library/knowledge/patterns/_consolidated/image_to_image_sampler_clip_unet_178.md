@@ -3,31 +3,31 @@ name: image_to_image_sampler_clip_unet_178
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.9665
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 1
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Image反推-文生图_1953618426814189570.json, 图片生成/文生图/方案B Step2 — 精修2511输出为二番剧风格_2019257770100396033.json]
+members: [图片生成/图生图/图生图_1912269070673113089.json, 图片生成/图生图/图生图kontext_1950688427077472258.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_178
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen-Image反推-文生图_1953618426814189570.json、图片生成/文生图/方案B Step2 — 精修2511输出为二番剧风格_2019257770100396033.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图生图_1912269070673113089.json、图片生成/图生图/图生图kontext_1950688427077472258.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -35,36 +35,32 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `ConditioningZeroOut` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
 - `ImageScaleDownToSize` —— 1/2 个有
-- `JanusImage2Text` —— 1/2 个有
-- `LoadJanusModel` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Joy_caption` —— 1/2 个有
+- `Joy_caption_load` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | - | 2 | 57% |
+| 采样步数 | 20 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 0.7 | - | 2 | 57% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.65 | - | 2 | 77% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，样本不足，未给区间，2 个样本
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.7，样本不足，未给区间，2 个样本
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

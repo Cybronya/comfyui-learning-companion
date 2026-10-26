@@ -1,78 +1,87 @@
 ---
 name: unknown_workflow_video_sampler_clip_99
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSampler, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.84
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, JWInteger, KSamplerAdvanced, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, RH_LLMAPI_NODE, RIFE VFI, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy showAnything, wanBlockSwap]
+problems: []
 missing: []
-members: [视频生成/图生视频/004.Wan视频之源003.文生视频_2035333116356726786.json, 视频生成/图生视频/004.Wan视频之源004.图生视频_2035335136459362305.json, 视频生成/图生视频/Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997950428413353986.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频极速版V2 (支持本地解码)_1967057981361807361.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版_1965245831030915073.json]
+members: [视频生成/图生视频/文生视频+高动态++Remix+Wan2.2 (2)_2054361569718489089.json, 视频生成/图生视频/文生视频+高动态++Smooth+Mix+Wan2.2 (1)_2052573232586346497.json, 视频生成/图生视频/文生视频+高动态+高遵循_2053725147890241538.json, 视频生成/图生视频/高动态，超强理解，Wan2.2 图生视频_1981000332023042050.json, 视频生成/图生视频/（lora版）WAN2.2-LightX2V-I2V图生视频最强动态搭配_1980995649351061505.json, 视频生成/文生视频/Wan2.2 Smooth Mix文生视频（高动态）_1979519177214038018.json, 视频生成/文生视频/Wan2.2 文生视频 Smooth Mix 动态丝滑_1979834834325508097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_99
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/004.Wan视频之源003.文生视频_2035333116356726786.json、视频生成/图生视频/004.Wan视频之源004.图生视频_2035335136459362305.json、视频生成/图生视频/Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997950428413353986.json、视频生成/图生视频/Wan2.2 All-in-one V10图生视频极速版V2 (支持本地解码)_1967057981361807361.json、视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/文生视频+高动态++Remix+Wan2.2 (2)_2054361569718489089.json、视频生成/图生视频/文生视频+高动态++Smooth+Mix+Wan2.2 (1)_2052573232586346497.json、视频生成/图生视频/文生视频+高动态+高遵循_2053725147890241538.json、视频生成/图生视频/高动态，超强理解，Wan2.2 图生视频_1981000332023042050.json、视频生成/图生视频/（lora版）WAN2.2-LightX2V-I2V图生视频最强动态搭配_1980995649351061505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Text`
 - `JWInteger`
-- `KSampler`
+- `KSamplerAdvanced`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
+- `RH_LLMAPI_NODE`
+- `RIFE VFI`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SeedVR2GGUF`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 5/6 个有
-- `CLIPVisionLoader` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `WanImageToVideo` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `ImageFromBatch+` —— 3/6 个有
-- `wanBlockSwap` —— 3/6 个有
-- `CLIPLoader` —— 2/6 个有
-- `ModelPatchTorchSettings` —— 2/6 个有
-- `CreateVideo` —— 1/6 个有
-- `EmptyHunyuanLatentVideo` —— 1/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
-- `PreViewVideo` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SaveLatent` —— 1/6 个有
-- `TT_img_enc` —— 1/6 个有
+- `GetNode` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `Text Concatenate` —— 6/7 个有
+- `Wan22PromptSelector` —— 6/7 个有
+- `CR Text Input Switch (4 way)` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `ImpactSwitch` —— 3/7 个有
+- `CLIPVisionEncode` —— 2/7 个有
+- `CLIPVisionLoader` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `LoadImage` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `CR Text Input Switch` —— 1/7 个有
+- `ImageConcanate` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | sa_solver | - | 6 | 83% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | randomize | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler_ancestral | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，6 个样本，一致性 83%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

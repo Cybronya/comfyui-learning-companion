@@ -1,91 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_559
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.394667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, TTResolutionSelector, VAEDecodeTiled, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy boolean, easy imageRemBg]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 4
+level: moderate
+coverage: 0.49025
+common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Scail-2 官方千帧长视频一键生成+单图 _ 多图参考 +动作迁移+角色替换_2069089123285164033.json, 图片生成/图生图/【寄语秋歌】Scail-2-官方一键长视频+动作迁移+角色替换_2068402819106959361.json, 视频生成/图生视频/Scail2超强快速视频动作迁移_2093289454571180034.json]
+members: [视频生成/图生视频/LongCat-Video-I2V全自动循环长视频_1986678094163542018.json, 视频生成/图生视频/LongCat_I2V_full_automatic_1985530198026297346.json, 视频生成/图生视频/LongCat图生视频（长视频）_1988142072014266369.json, 视频生成/文生视频/LongCat_T2V_full_automatic_1985535936635224065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_559
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Scail-2 官方千帧长视频一键生成+单图 _ 多图参考 +动作迁移+角色替换_2069089123285164033.json、图片生成/图生图/【寄语秋歌】Scail-2-官方一键长视频+动作迁移+角色替换_2068402819106959361.json、视频生成/图生视频/Scail2超强快速视频动作迁移_2093289454571180034.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LongCat-Video-I2V全自动循环长视频_1986678094163542018.json、视频生成/图生视频/LongCat_I2V_full_automatic_1985530198026297346.json、视频生成/图生视频/LongCat图生视频（长视频）_1988142072014266369.json、视频生成/文生视频/LongCat_T2V_full_automatic_1985535936635224065.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：39%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+全部 4 个 workflow 都包含：
+- `FloatConstant`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `INTConstant`
-- `ImageConcanate`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `KSampler`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
+- `ImageBatchExtendWithOverlap`
 - `SetNode`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanContextWindowsManual`
-- `WanSCAILToVideo`
-- `easy boolean`
-- `easy imageRemBg`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 2/3 个有
-- `ImpactConditionalBranch` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AILab_QwenVL` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `easy forLoopEnd` —— 3/4 个有
+- `easy forLoopStart` —— 3/4 个有
+- `easy promptLine` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `ToString` —— 1/4 个有
+- `WanVideoTorchCompileSettings` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

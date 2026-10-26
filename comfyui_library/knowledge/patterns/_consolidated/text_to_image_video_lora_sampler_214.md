@@ -3,72 +3,91 @@ name: text_to_image_video_lora_sampler_214
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.639
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, FL_RIFE, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPassThrough, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PlaySound|pysssss, PreviewAny, PreviewAudio, PreviewImage, SetNode, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, WujiAudioLoader, easy cleanGpuUsed, easy getNode, easy int, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.6095
+common_nodes: [AudioConcat, BasicGuider, BlockSparseAttention, CLIPLoader, CLIPTextEncode, CM_FloatToInt, ColorTransfer, ComfyMathExpression, ComfySwitchNode, CreateVideo, EmptyAudio, EmptyLatentImage, Float, GetNode, GetVideoComponents, ImageAddNoise, ImageBatchMulti, ImageFromBatch, Int, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, MemoryManager, MiniMaxH3AddGuide, MiniMaxH3PromptEnhancerT8, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaDropdown, PreviewAny, PreviewAudio, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, RandomNoise, RepeatImageBatch, ResizeShortestToNode, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringMergeNode, StringToNumber, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VideoFrameSample, VideoTemporalCrop, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.2自动反推Remix3.0图生视频处理工作流_2101727233776902146.json, 视频生成/图生视频/Wan2.2自动反推图生视频｜Remix3.0人物特效一键出片_2103065382646018049.json]
+members: [数字人/数字人/MiniMaxH3综合工作流 数字人替换动作迁移长视频工具_2113707746108461057.json, 数字人/数字人/MinimaxH3综合工作流｜数字人人物替换动作迁移断点续接_2113536562838466562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_214
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2自动反推Remix3.0图生视频处理工作流_2101727233776902146.json、视频生成/图生视频/Wan2.2自动反推图生视频｜Remix3.0人物特效一键出片_2103065382646018049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MiniMaxH3综合工作流 数字人替换动作迁移长视频工具_2113707746108461057.json、数字人/数字人/MinimaxH3综合工作流｜数字人人物替换动作迁移断点续接_2113536562838466562.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AudioConcat`
+- `BasicGuider`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
+- `CM_FloatToInt`
+- `ColorTransfer`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `EmptyAudio`
 - `EmptyLatentImage`
-- `FL_RIFE`
-- `Fast Groups Bypasser (rgthree)`
+- `Float`
 - `GetNode`
-- `ImageResizeKJv2`
+- `GetVideoComponents`
+- `ImageAddNoise`
+- `ImageBatchMulti`
+- `ImageFromBatch`
+- `Int`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPassThrough`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
+- `ManualSigmas`
+- `MemoryManager`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3PromptEnhancerT8`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaDropdown`
 - `PreviewAny`
 - `PreviewAudio`
-- `PreviewImage`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeShortestToNode`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `SomethingToString`
+- `SolidMask`
+- `StringMergeNode`
+- `StringToNumber`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `WujiAudioLoader`
-- `easy cleanGpuUsed`
-- `easy getNode`
-- `easy int`
-- `easy setNode`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `llama_cpp_unload_model`
+- `VideoFrameSample`
+- `VideoTemporalCrop`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
 - `SaveImage` —— 1/2 个有
 
 ## 典型参数

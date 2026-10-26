@@ -1,80 +1,71 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_62
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9715
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, CreateVideo, EmptyImage, FluxResolutionNode, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXDirector, LTXDirectorGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, image_scale_pixel_v2]
+coverage: 0.927
+common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ComfyMathExpression, ConditioningZeroOut, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json, 视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json, 视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json, 视频生成/文生视频/导演综合流3.0｜OmniNFT+Relay+蒸馏1.1｜短片双人首尾帧_2057744531994537985.json]
+members: [视频生成/图生视频/LTX2.3导演台-全自动宫格-双采版_2066915488357249026.json, 视频生成/图生视频/导演台-全自动4-6-9宫格-文本-音频-素材图都可单独编辑_2066375964539572225.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2064568765139996673.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_62
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json、视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json、视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json、视频生成/文生视频/导演综合流3.0｜OmniNFT+Relay+蒸馏1.1｜短片双人首尾帧_2057744531994537985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3导演台-全自动宫格-双采版_2066915488357249026.json、视频生成/图生视频/导演台-全自动4-6-9宫格-文本-音频-素材图都可单独编辑_2066375964539572225.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2064568765139996673.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicScheduler`
 - `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CS-LTXGridDirector`
+- `ComfyMathExpression`
 - `ConditioningZeroOut`
 - `CreateVideo`
-- `EmptyImage`
-- `FluxResolutionNode`
+- `DualCLIPLoader`
+- `GetImageRangeFromBatch`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXDirector`
+- `LTX2SamplingPreviewOverride`
 - `LTXDirectorGuide`
-- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `VAEDecodeTiled`
-- `image_scale_pixel_v2`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `STGGuiderAdvanced` —— 3/4 个有
-- `Sigmas Easing` —— 3/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `CS-LTXGridDirector` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `Image To Mask` —— 1/4 个有
-- `LTX2SamplingPreviewOverride` —— 1/4 个有
-- `LTXAddVideoICLoRAGuide` —— 1/4 个有
-- `LTXVImgToVideoConditionOnly` —— 1/4 个有
-- `LTXVPreprocess` —— 1/4 个有
-- `LayerUtility: ColorImage` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `RepeatImageBatch` —— 1/4 个有
-- `VAEEncodeForInpaint` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
-- `easy imageCount` —— 1/4 个有
-- `easy imageSize` —— 1/4 个有
+- `Label (rgthree)` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GuHaiAutoImageSplit` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RHLLMChatNode` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
+- `SeedVR2ExtraArgs` —— 1/5 个有
 
 ## 典型参数
 

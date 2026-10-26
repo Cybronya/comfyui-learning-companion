@@ -2,74 +2,83 @@
 name: unknown_workflow_lora_sampler_clip_161
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.8825
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, RH_Captioner, TextBox, UNETLoader, VAEDecode, VAELoader, WanImageToVideo, easy ifElse, easy showAnything]
+level: moderate
+coverage: 0.83575
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VHS_LoadVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json, 视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json, 视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json, 视频生成/图生视频/图生视频工作流_2013427076698742785.json]
+members: [图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json, 图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json, 视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json, 视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_161
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json、视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json、视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json、视频生成/图生视频/图生视频工作流_2013427076698742785.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json、图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json、视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json、视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `TextBox`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `WanImageToVideo`
-- `easy ifElse`
-- `easy showAnything`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `ImpactSwitch` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `Primitive integer [Crystools]` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `ImageResizeKJ` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `ImpactInt` —— 1/4 个有
-- `LoadImagesFromURL` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `LoadAudio` —— 3/4 个有
+- `ToggleAnyNode` —— 3/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `CLIPLoader` —— 2/4 个有
+- `EmptyImage` —— 2/4 个有
+- `EmptyLTXVLatentVideo` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 2/4 个有
+- `GrowMaskWithBlur` —— 2/4 个有
+- `ImageCompositeFromMaskBatch+` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `LTXVLatentUpsampler` —— 2/4 个有
+- `LatentUpscaleModelLoader` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `ResizeImagesByLongerEdge` —— 2/4 个有
+- `SAM3Segment` —— 2/4 个有
+- `StringConcatenate` —— 2/4 个有
+- `TextGenerate` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `MaskToImage` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 7 | 6 - 8 | 4 | 90% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 8，4 个样本，取值集中（一致性 90%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

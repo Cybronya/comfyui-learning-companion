@@ -1,102 +1,122 @@
 ---
 name: text_to_image_video_lora_sampler_103
 type: Text To Image
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.914
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.83025
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, GetNode, JWInteger, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, SamplerCustom, SetNode, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json, 数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json, 视频生成/图生视频/唱歌MV数字人｜H3音频驱动多参视频生成对口型_2093102730167541762.json, 视频生成/图生视频/音频驱动唱歌MV｜H3数字人多参视频生成_2093260475822854145.json, 视频生成/文生视频/H3音频驱动数字人加速版参考生视频超长时长处理工具_2100639863480606722.json]
+members: [视频生成/图生视频/Gemma4本地自动化｜LTX2.3最新图生视频运行_2094471635867885569.json, 视频生成/图生视频/LTX2.3+Gemma4本地自动化运行 图生视频最新组合_2094201577295933442.json, 视频生成/图生视频/LTX2.3+Gemma4本地自动化运行｜图生视频新组合_2097923039580213250.json, 视频生成/图生视频/LTX2.3加Gemma4本地自动化运行工作流，图生视频高效创作方案_2105752871810719746.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart｜VBVR 390K单图精准控制｜参考生视频稳_2104801534893711362.json, 视频生成/图生视频/Ltx2.3多镜头长时间KJ版｜时间分段剪辑加逻辑控制PromptRe｜图生视频_2099155859929649154.json, 视频生成/图生视频/ltx-bernini人物多角度参考｜最新加速图生视频生成_2097758585924182017.json, 视频生成/图生视频/ltx-bernini最新加速｜人物多角度参考视频生视频_2090346710928281601.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_103
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json、数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json、视频生成/图生视频/唱歌MV数字人｜H3音频驱动多参视频生成对口型_2093102730167541762.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Gemma4本地自动化｜LTX2.3最新图生视频运行_2094471635867885569.json、视频生成/图生视频/LTX2.3+Gemma4本地自动化运行 图生视频最新组合_2094201577295933442.json、视频生成/图生视频/LTX2.3+Gemma4本地自动化运行｜图生视频新组合_2097923039580213250.json、视频生成/图生视频/LTX2.3加Gemma4本地自动化运行工作流，图生视频高效创作方案_2105752871810719746.json、视频生成/图生视频/Ltx2.3 Prompt Relay Smart｜VBVR 390K单图精准控制｜参考生视频稳_2104801534893711362.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
+- `GetNode`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
-- `TrimAudioDuration`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `SamplerCustom`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VisualizeSigmasKJ`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 6/7 个有
-- `SaveImage` —— 5/7 个有
-- `AudioConcat` —— 4/7 个有
-- `BatchImagesNode` —— 4/7 个有
-- `ComfySwitchNode` —— 4/7 个有
-- `GetImageRangeFromBatch` —— 4/7 个有
-- `ImageBlur` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `RIFE VFI` —— 4/7 个有
-- `SoundFlow_GetLength` —— 4/7 个有
-- `VAEEncode` —— 4/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `easy compare` —— 4/7 个有
-- `easy forLoopEnd` —— 4/7 个有
-- `easy forLoopStart` —— 4/7 个有
-- `CR Combine Prompt` —— 3/7 个有
-- `PreviewAudio` —— 3/7 个有
-- `ImageBatchRepeatInterleaving` —— 2/7 个有
+- `PromptRelayEncode` —— 7/8 个有
+- `LTX2SamplingPreviewOverride` —— 6/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `PreviewAny` —— 6/8 个有
+- `RegexExtract` —— 6/8 个有
+- `StringReplace` —— 6/8 个有
+- `Text` —— 6/8 个有
+- `easy mathInt` —— 6/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `FlashVSR_SM_KSampler` —— 4/8 个有
+- `FlashVSR_SM_Model` —— 4/8 个有
+- `GetImageRangeFromBatch` —— 4/8 个有
+- `GetImageSize` —— 4/8 个有
+- `llama_cpp_instruct_adv` —— 4/8 个有
+- `llama_cpp_model_loader` —— 4/8 个有
+- `llama_cpp_parameters` —— 4/8 个有
+- `SaveImage` —— 3/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `BerniniConditioning` —— 2/8 个有
+- `BerniniPromptEnhancer` —— 2/8 个有
+- `CreateVideo` —— 2/8 个有
+- `GetVideoComponents` —— 2/8 个有
+- `ImageFromBatch` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `RHLLMChatNode` —— 2/8 个有
+- `RH_Captioner` —— 2/8 个有
+- `SaveVideo` —— 2/8 个有
+- `SplitSigmas` —— 2/8 个有
+- `easy batchAnything` —— 2/8 个有
+- `easy showAnything` —— 2/8 个有
+- `PromptRelaySmartEncode` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

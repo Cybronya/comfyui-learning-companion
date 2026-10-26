@@ -1,93 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_15
 type: Unknown Workflow
-frequency: 37
-level: moderate
-coverage: 0.782865
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DF_Integer, INTConstant, ImageResizeKJv2, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy promptLine, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 45
+level: strong
+coverage: 0.874556
+common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, Float, HunyuanVideoFoley, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, Text, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy mathInt, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2008567222695890946.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2012074616008744962.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2042813608714838018.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2056898489606561793.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057016107042697217.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057018113778077697.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057018408075612162.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057383574705369089.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2060337488744501249.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2060351206266068994.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2064895380512399362.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2066034905758396417.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2066035028651499522.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2067983928933306370.json, 图片生成/图生图/Qwen3VL+Next+Scene（自动分镜）+视频生成+V2版_2019605249354375169.json, 图片生成/图生图/Qwen3VL+NextScene（自动分镜）+视频生成V3版_2029376489484984322.json, 图片生成/图生图/z-image分镜+itov_2005154445770063873.json, 图片生成/图生图/动漫短剧AI视频制作神器_2027947657850785793.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2049378628063989761.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2049387817570148353.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2079760812440383490.json, 图片生成/图生图/图生图---Work-Fisher-Edit Next Scene（自动分镜）-V1版_2049385218078937090.json, 图片生成/图生图/图生图（自动分镜）电影级+视频生成_2074200565537656834.json, 图片生成/图生图/自动分镜_2064182736386088962.json, 图片生成/图生图/超好用🔥自动分镜+视频生成-最新版_2056557118894989314.json, 图片生成/文生图/Qwen3VL+Next Scene（自动分镜_1985901390851710978.json, 视频生成/图生视频/Edit V5版全能自动分镜（视频加首尾）_1979025771903750146.json, 视频生成/图生视频/Qwen Edit+Next Scene（自动分镜）wan2.2 图生视频 人物模特全视图  人物角_2009447313822982146.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜图）+自动视频生成 工作流_2049416361801158657.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2009894943287939073.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2064716899979718657.json, 视频生成/图生视频/Work-Fisher-Edit Next Scene（自动分镜）-V1版_1978804615628099585.json, 视频生成/图生视频/分镜出图 wan2.2 图生视频 首尾帧生视频+人物多角度生成 Qwen3VL+Next Scene_2009509747891904514.json, 视频生成/图生视频/自动分镜+wan2.2首尾帧视频生成_2062483360198516737.json, 视频生成/图生视频/超好用🔥自动分镜+视频生成-最新版_2056237842430480386.json, 视频生成/文生视频/AI视频制作神器 自动连续分镜Next Scene V1.0版_1979224907714301953.json, 视频生成/文生视频/动漫短剧AI视频制作神器——自动连续分镜Next Scene-V1版_1978956982134673409.json]
+members: [视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json, 视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json, 视频生成/图生视频/bernini人物卡通漫剧多分镜视频生成_2079216311300878337.json, 视频生成/图生视频/bernini图生视频2_2076678007443509249.json, 视频生成/图生视频/bernini多分镜自动扩展提示词_2079559170201837570.json, 视频生成/图生视频/bernini多分镜自动提示词_2076486473653776385.json, 视频生成/图生视频/bernini漫剧图生视频1_2077297515594076162.json, 视频生成/图生视频/bernini自动扩展提示词图生视频_2076302783288008706.json, 视频生成/图生视频/bernini高画质图生视频_2081017151829397505.json, 视频生成/图生视频/人物卡通漫剧图生视频_2081212413805940737.json, 视频生成/图生视频/俏皮少女素材1_2080456381441859585.json, 视频生成/图生视频/俏皮少女素材2_2080483813427343362.json, 视频生成/图生视频/俏皮少女素材3_2080457429132857345.json, 视频生成/图生视频/俏皮少女素材4_2080516332377952258.json, 视频生成/图生视频/叮叮的飞吻_2083468110757187585.json, 视频生成/图生视频/周末愉快_2083807638411894785.json, 视频生成/图生视频/哈哈，好看的裙子，哈哈，很有曲线美_2083501855832895490.json, 视频生成/图生视频/图生视频人物场景漫剧_2081230151186210817.json, 视频生成/图生视频/图生视频漫剧_2080522658558595074.json, 视频生成/图生视频/图生视频鲨喵_2081243950228267010.json, 视频生成/图生视频/多分镜提示词生成视频_2080891153406316545.json, 视频生成/图生视频/多参分镜自动扩展提示词·卡通漫剧_2080857100208664577.json, 视频生成/图生视频/快速高清图生视频_2080244665965699073.json, 视频生成/图生视频/无API手动多分镜自动扩展提示词_2079557430773637122.json, 视频生成/图生视频/最新漫剧自动提示词扩展图到视频_2077431585602891778.json, 视频生成/图生视频/最新自动扩展提示词图生视频1_2077420333774237698.json, 视频生成/图生视频/最新自动扩展提示词图生视频2_2077430810310955010.json, 视频生成/图生视频/漫剧俯拍长镜头_2083497022388269057.json, 视频生成/图生视频/漫剧图生视频_2081693338629140481.json, 视频生成/图生视频/漫剧多参分镜图生视频_2077710494714130434.json, 视频生成/图生视频/漫剧梦幻异世界_2079571585241014274.json, 视频生成/图生视频/漫剧素材奇幻场景1_2079963275604877314.json, 视频生成/图生视频/漫剧素材奇幻场景2_2080167337260568577.json, 视频生成/图生视频/漫剧素材奇幻场景3_2080203702916444161.json, 视频生成/图生视频/漫剧素材奇幻场景4_2080262167093399553.json, 视频生成/图生视频/漫剧素材奇幻场景5_2080279967212064769.json, 视频生成/图生视频/漫剧长镜头图书馆场景_2083527540001566722.json, 视频生成/图生视频/漫剧风格化图像转视频_2083521242224750594.json, 视频生成/图生视频/电商商品拍摄TEST1_2083809381015187458.json, 视频生成/图生视频/电商商品拍摄TEST2_2083816642307514369.json, 视频生成/图生视频/电商商品拍摄TEST3_2083816654127067138.json, 视频生成/图生视频/电商服装时尚大片_2077445647162236930.json, 视频生成/图生视频/高动态漫剧图生视频1_2082704275330920450.json, 视频生成/图生视频/高动态漫剧图生视频_2082719576378400770.json, 视频生成/图生视频/高动态漫剧图生视频_2082730576058081281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 37 个 workflow 归纳得出（图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2008567222695890946.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2012074616008744962.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2042813608714838018.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2056898489606561793.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057016107042697217.json…）
+> 由 `engine/knowledge_consolidation` 从 45 个 workflow 归纳得出（视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json、视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json、视频生成/图生视频/bernini人物卡通漫剧多分镜视频生成_2079216311300878337.json、视频生成/图生视频/bernini图生视频2_2076678007443509249.json、视频生成/图生视频/bernini多分镜自动扩展提示词_2079559170201837570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：37
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：45
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 37 个 workflow 都包含：
+全部 45 个 workflow 都包含：
+- `Any To Any`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DF_Integer`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `Float`
+- `HunyuanVideoFoley`
 - `Int`
-- `KSampler`
+- `JWInteger`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `SaveImage`
-- `SimpleMath+`
+- `Qwen3_VQA`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanImageToVideo`
-- `WanMoeKSampler`
 - `easy cleanGpuUsed`
-- `easy promptLine`
-- `wanBlockSwap`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 36/37 个有
-- `Fast Groups Bypasser (rgthree)` —— 36/37 个有
-- `RIFE VFI` —— 36/37 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 36/37 个有
-- `CR Prompt Text` —— 31/37 个有
-- `JWStringConcat` —— 31/37 个有
-- `ProcessString` —— 31/37 个有
-- `Qwen3_VQA` —— 31/37 个有
-- `Text Multiline` —— 31/37 个有
-- `easy clearCacheAll` —— 31/37 个有
-- `easy showAnything` —— 31/37 个有
-- `DifferentialDiffusion` —— 30/37 个有
-- `EmptySD3LatentImage` —— 1/37 个有
-- `ModelSamplingAuraFlow` —— 1/37 个有
+- `RH_Captioner` —— 39/45 个有
+- `TextConcatenate_UTK` —— 39/45 个有
+- `PreviewImage` —— 33/45 个有
+- `RH_Translator` —— 26/45 个有
+- `GoogleTranslateTextNode` —— 13/45 个有
+- `ImageResizeKJv2` —— 12/45 个有
+- `ImageConcatMulti` —— 11/45 个有
+- `ImageConcatenate_UTK` —— 9/45 个有
+- `JDCN_StringToList` —— 9/45 个有
+- `StringReplace` —— 9/45 个有
+- `easy indexAnything` —— 9/45 个有
+- `RHHiddenNodes` —— 6/45 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 34 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 37 | 3% |
-| 采样算法 | sa_solver | - | 37 | 92% |
-| 调度器 | beta | - | 37 | 92% |
-| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
+| 采样步数 | randomize | - | 45 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 45 | 100% |
+| 采样算法 | 1 | 1 - 1 | 45 | 100% |
+| 调度器 | euler | - | 45 | 100% |
+| 重绘幅度 | simple | - | 45 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 36/37 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，34 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，37 个样本，取值分散，一致性仅 3%
-- 采样算法 最常用 sa_solver，37 个样本，一致性 92%
-- 调度器 最常用 beta，37 个样本，一致性 92%
-- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
-- 高发问题（36/37 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，45 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，45 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，45 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，45 个样本，一致性 100%
+- 重绘幅度 最常用 simple，45 个样本，一致性 100%

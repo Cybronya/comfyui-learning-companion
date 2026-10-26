@@ -1,69 +1,96 @@
 ---
 name: unknown_workflow_video_lora_sampler_171
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.946
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+frequency: 12
+level: strong
+coverage: 0.665417
+common_nodes: [CLIPLoader, CLIPVisionLoader, DWPreprocessor, EmptySD3LatentImage, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, Text, Text Concatenate, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json, 视频生成/图生视频/gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json, 视频生成/图生视频/kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json, 视频生成/图生视频/wan 2.2 冰冻视频特效_1953012198424702978.json, 视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json, 视频生成/图生视频/wan2.2图生视频首尾帧（KJ版）_1955148796940488705.json, 视频生成/图生视频/wan2.2图生视频（KJ流）加速_1950178102964084737.json, 视频生成/图生视频/冰天雪地视频特效_2004446571733417986.json, 视频生成/图生视频/视频-Wan2.2首尾帧+过渡帧_1978365294227906562.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高低噪声双lora在线本地通用_补帧_1952913426868858882.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952709897437777921.json]
+members: [视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json, 视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json, 视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json, 视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json, 视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json, 视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json, 视频生成/图生视频/图生视频+双人跳舞！Animate V2！_2059808792103178241.json, 视频生成/图生视频/图生视频+双人跳舞！Animate+V2！_2064897106015510530.json, 视频生成/图生视频/超好用🔥图生视频+双人动作迁移_2062118089738776577.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2067052913171714049.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072208106070822914.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072484558993444865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_171
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json、视频生成/图生视频/gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json、视频生成/图生视频/kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json、视频生成/图生视频/wan 2.2 冰冻视频特效_1953012198424702978.json、视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json、视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json、视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json、视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json、视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `EmptySD3LatentImage`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
+- `LoraLoaderModelOnly`
+- `PixelPerfectResolution`
+- `PrimitiveInt`
+- `SetNode`
+- `SimpleMath+`
+- `Text`
+- `Text Concatenate`
+- `Text Multiline`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 10/11 个有
-- `ImageResizeKJv2` —— 10/11 个有
-- `WanVideoSetBlockSwap` —— 10/11 个有
-- `WanVideoSetLoRAs` —— 10/11 个有
-- `WanVideoTorchCompileSettings` —— 9/11 个有
-- `Int` —— 4/11 个有
-- `RIFE VFI` —— 4/11 个有
-- `CLIPVisionLoader` —— 2/11 个有
-- `Fast Groups Muter (rgthree)` —— 2/11 个有
-- `RH_Translator` —— 2/11 个有
-- `ShowText|pysssss` —— 2/11 个有
-- `WanVideoClipVisionEncode` —— 2/11 个有
-- `WanVideoContextOptions` —— 2/11 个有
-- `WanVideoEncodeLatentBatch` —— 2/11 个有
-- `WanVideoTeaCache` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `PreviewImage` —— 11/12 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `CFGNorm` —— 1/12 个有
+- `ModelSamplingAuraFlow` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
+- `TT_img_enc_v2` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

@@ -3,70 +3,71 @@ name: unknown_workflow_sampler_clip_unet_221
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.9525
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9185
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/FLSampler (BSS) 画质提升-ZImage_2062006258563108866.json, 图片生成/文生图/Flux2.0-Dev _ 文生图_1993501652189642754.json, 图片生成/文生图/Flux2文生图_1993378851996844034.json, 图片生成/文生图/Flux2文生图官方版_1993503885006405633.json, 图片生成/文生图/Qwen千问文生图+Z-image真实感洗图_1994294742995369986.json, 图片生成/文生图/千问文生图+Z-image增强真实感强强联合_1993897697482571778.json]
+members: [图片生成/图生图/KLEIN 深度控制_2030614146588352514.json, 图片生成/图生图/Klein -通道主图2_2041417376184410114.json, 图片生成/图生图/Klein -通道主图3_2041804986694242306.json, 图片生成/图生图/Klein单图编辑_2014887219860869122.json, 图片生成/图生图/WH-AI-Studio超强FLUX2-Klein单图语义修改器_2053315100181835777.json, 图片生成/图生图/WH-AI-Studio（超强FLUX2-Klein单图语义修改器）_2026674751833378817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_221
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLSampler (BSS) 画质提升-ZImage_2062006258563108866.json、图片生成/文生图/Flux2.0-Dev _ 文生图_1993501652189642754.json、图片生成/文生图/Flux2文生图_1993378851996844034.json、图片生成/文生图/Flux2文生图官方版_1993503885006405633.json、图片生成/文生图/Qwen千问文生图+Z-image真实感洗图_1994294742995369986.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/KLEIN 深度控制_2030614146588352514.json、图片生成/图生图/Klein -通道主图2_2041417376184410114.json、图片生成/图生图/Klein -通道主图3_2041804986694242306.json、图片生成/图生图/Klein单图编辑_2014887219860869122.json、图片生成/图生图/WH-AI-Studio超强FLUX2-Klein单图语义修改器_2053315100181835777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `ModelSamplingAuraFlow` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `VAEEncode` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `FLS_SamplerV4` —— 1/6 个有
-- `LoadImage` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `Int` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `DuckHideNode` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `RH_LLMAPI_Pro_Node` —— 2/6 个有
+- `AIO_Preprocessor` —— 1/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `MultiTextConcatenate` —— 1/6 个有
+- `RH_Captioner` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `TextImage` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 15 | 8 - 20 | 6 | 63% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 0.4 - 1 | 6 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 8 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，6 个样本
-- 高发问题（3/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

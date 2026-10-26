@@ -2,66 +2,85 @@
 name: unknown_workflow_video_lora_sampler_631
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.889
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ImageScale, InstructPixToPixConditioning, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+level: strong
+coverage: 0.890667
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, RH_Captioner, RandomNoise, SDXLPromptStyler, SamplerCustomAdvanced, SaveImage, SeedVR2, SplitSigmas, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json, 视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json, 视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json]
+members: [图片生成/图生图/产品展示（人物迁移+场景迁移+产品)_1978473664150704130.json, 图片生成/图生图/产品放到参考场景中（Redux+ 全能图片V1)_1974158869893091330.json, 图片生成/图生图/未来世界概念场景_1954458866765459457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_631
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json、视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json、视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品展示（人物迁移+场景迁移+产品)_1978473664150704130.json、图片生成/图生图/产品放到参考场景中（Redux+ 全能图片V1)_1974158869893091330.json、图片生成/图生图/未来世界概念场景_1954458866765459457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
+- **可信度**：强结论
 - **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageScale`
-- `InstructPixToPixConditioning`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
 - `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `SamplerCustom`
+- `PreviewImage`
+- `RH_Captioner`
+- `RandomNoise`
+- `SDXLPromptStyler`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SeedVR2`
 - `SplitSigmas`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `ImageResizeKJ` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `DepthAnythingV2Preprocessor` —— 1/3 个有
-- `DownloadAndLoadFlorence2Model` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `Primitive string [Crystools]` —— 1/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `TeaCache` —— 1/3 个有
-- `Text Concatenate (JPS)` —— 1/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `CombinationText` —— 2/3 个有
+- `ConditioningCombine` —— 2/3 个有
+- `ConditioningSetAreaStrength` —— 2/3 个有
+- `DF_Get_image_size` —— 2/3 个有
+- `MirroredImage` —— 2/3 个有
+- `ModelSamplingFlux` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `RH_Nano_Banana_Image2Image` —— 2/3 个有
+- `ReduxAdvanced` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `AdvancedVisionLoader` —— 1/3 个有
+- `CLIPVisionEncode` —— 1/3 个有
+- `Image Blank` —— 1/3 个有
+- `ImagePaste` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `SeargePromptCombiner` —— 1/3 个有
+- `ShowText` —— 1/3 个有
+- `StyleModelApply` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.5 | 0.3 - 0.5 | 3 | 78% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -69,4 +88,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.5，观测区间 0.3 - 0.5，3 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -2,92 +2,69 @@
 name: unknown_workflow_upscale_lora_sampler_35
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.899167
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.825
+common_nodes: [CLIPLoader, CR Prompt Text, CR Text Concatenate, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, 孤海注释]
+problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json, 图片生成/文生图/Wan2.2文生图+TTP放大_1951143607715737601.json, 图片生成/文生图/Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json, 图片生成/文生图/Wan2.2质量文生图+TTP高阶放大（全网ID ：楚门的AI世界）_1950100592413818881.json, 图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json, 图片生成/文生图/wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json]
+members: [图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1-手动版_2108103051025403905.json, 图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1-手动版_2112437243515334657.json, 图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2108018565587750914.json, 图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2108450514630430721.json, 图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2110565599368794114.json, 图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2111009497987768321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_35
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json、图片生成/文生图/Wan2.2文生图+TTP放大_1951143607715737601.json、图片生成/文生图/Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json、图片生成/文生图/Wan2.2质量文生图+TTP高阶放大（全网ID ：楚门的AI世界）_1950100592413818881.json、图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1-手动版_2108103051025403905.json、图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1-手动版_2112437243515334657.json、图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2108018565587750914.json、图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2108450514630430721.json、图片生成/图生图/万能电商商品溶图-Qwen-Image-2.1_2110565599368794114.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageListToImageBatch`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `Image Comparer (rgthree)`
 - `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `KSampler`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `EmptyHunyuanLatentVideo` —— 4/6 个有
-- `KSamplerAdvanced` —— 4/6 个有
-- `SaveAnimatedWEBP` —— 3/6 个有
-- `Anything Everywhere3` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `RH_Prompter` —— 2/6 个有
-- `RH_Translator` —— 2/6 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/6 个有
-- `easy seed` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `easy getNode` —— 1/6 个有
-- `easy setNode` —— 1/6 个有
+- `FastCanvas` —— 4/6 个有
+- `FastCanvasTool` —— 4/6 个有
+- `InspyrenetRembg` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 6 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | heun | - | 6 | 83% |
-| 调度器 | beta | - | 6 | 83% |
-| 重绘幅度 | 0.1 | 0.06 - 1 | 6 | 0% |
-| 宽度 | 768x1280 (0.6) | - | 2 | 50% |
-| 高度 | 1 | - | 2 | 100% |
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 40 | 40 - 40 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，6 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 heun，6 个样本，一致性 83%
-- 调度器 最常用 beta，6 个样本，一致性 83%
-- 重绘幅度 中位数 0.1，观测区间 0.06 - 1，6 个样本，取值分散，一致性仅 0%
-- 宽度 最常用 768x1280 (0.6)，2 个样本，一致性 50%
-- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：重绘幅度 观测到 0.06，低于常用下限 0.1（）
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 40，观测区间 40 - 40，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 40，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

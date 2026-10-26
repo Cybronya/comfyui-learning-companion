@@ -3,117 +3,112 @@ name: unknown_workflow_video_upscale_latent_upscale_93
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.57825
-common_nodes: [AudioCrop, CFGGuider, CLIPTextEncode, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SimpleMath+, SolidMask, TrimAudioDuration, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy int, easy showAnything]
-problems: []
+coverage: 0.7765
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, INTConstant, KSampler, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAudio, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/LTX2.3低显存提速版—超强高质量画音同步+图生视频+MV数字人_2034220843508703234.json, 视频生成/图生视频/迄今超强高质量画音同步LTX2.3-KJ版低显存提速版图生视频支持竖屏MV数字人制作工作流_1897892598386741250.json, 视频生成/图生视频/迄今超强高质量画音同步LTX2.3低显存提速版图生视频上传多分镜图制作万物数字人（无限时长）可超长MV制作循环工作流_1959793923826855938.json, 视频生成/文生视频/迄今超强高质量画音同步LTX2.3 KJ版低显存提速版文+音频生MV视频分镜支持横竖屏自定义分镜时间_1955807480933597185.json]
+members: [视频生成/图生视频/LTX2.3【雄舟天文馆高清直出版V1.5】仅首帧+音色克隆_2047993632803786754.json, 视频生成/图生视频/LTX2.3【雄舟天文馆高清直出版V1.5】首尾帧+音色克隆_2047229271873163265.json, 视频生成/图生视频/音频驱动 LTX2.3 数字人_2074873407807778817.json, 视频生成/文生视频/LTX2.3【雄舟天文馆高清直出版】首尾帧+音色克隆_2046116731281739777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_93
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3低显存提速版—超强高质量画音同步+图生视频+MV数字人_2034220843508703234.json、视频生成/图生视频/迄今超强高质量画音同步LTX2.3-KJ版低显存提速版图生视频支持竖屏MV数字人制作工作流_1897892598386741250.json、视频生成/图生视频/迄今超强高质量画音同步LTX2.3低显存提速版图生视频上传多分镜图制作万物数字人（无限时长）可超长MV制作循环工作流_1959793923826855938.json、视频生成/文生视频/迄今超强高质量画音同步LTX2.3 KJ版低显存提速版文+音频生MV视频分镜支持横竖屏自定义分镜时间_1955807480933597185.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3【雄舟天文馆高清直出版V1.5】仅首帧+音色克隆_2047993632803786754.json、视频生成/图生视频/LTX2.3【雄舟天文馆高清直出版V1.5】首尾帧+音色克隆_2047229271873163265.json、视频生成/图生视频/音频驱动 LTX2.3 数字人_2074873407807778817.json、视频生成/文生视频/LTX2.3【雄舟天文馆高清直出版】首尾帧+音色克隆_2046116731281739777.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
-- `DualCLIPLoader`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
 - `GetNode`
-- `ImageScaleBy`
+- `INTConstant`
+- `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
+- `LTXVCropGuides`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
+- `PrimitiveBoolean`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
 - `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleCalculatorKJ`
 - `SimpleMath+`
 - `SolidMask`
-- `TrimAudioDuration`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy int`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioEvenSplitNode` —— 1/4 个有
-- `AudioSelectNode` —— 1/4 个有
-- `CR Text` —— 1/4 个有
-- `EmptyImage` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `ImageStringBatch` —— 1/4 个有
-- `ImpactMinMax` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `LTXAVTextEncoderLoader` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `LoadDiffusionModelShared //Inspire` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `Qwen3_VQA` —— 1/4 个有
-- `Qwen3_VQA_Plus` —— 1/4 个有
-- `SelectImageString` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `SoundFlow_GetLength` —— 1/4 个有
-- `Text Concatenate` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
-- `easy convertAnything` —— 1/4 个有
-- `easy forLoopEnd` —— 1/4 个有
-- `easy forLoopStart` —— 1/4 个有
+- `Apply Whisper` —— 3/4 个有
+- `AudioDuration_wan` —— 3/4 个有
+- `AudioPad` —— 3/4 个有
+- `GetImageSize` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `InversionDemoLazySwitch` —— 3/4 个有
+- `LTXVFirstLastFrameControl_TTP` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `Qwen3TTSModelLoader` —— 3/4 个有
+- `Qwen3TTSVoiceClone` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `Text Concatenate` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `GetImageSize+` —— 1/4 个有
+- `LTXVPreprocess` —— 1/4 个有
+- `PainterAudioLength` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.4 | 0.4 - 0.4 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.4，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode

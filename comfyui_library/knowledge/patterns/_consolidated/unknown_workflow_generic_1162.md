@@ -1,32 +1,31 @@
 ---
 name: unknown_workflow_generic_1162
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [RecraftColorRGB, RecraftControls, RecraftV4TextToImageNode, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.667
+common_nodes: [PrimitiveStringMultiline, RH_RhartVideoFlux3TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json, comfyui-workflow-templates-json/api_recraft_v4_t2i.json]
+members: [视频生成/文生视频/文生视频工作流｜Flux 3 最长二十秒 带音频_2099690007215828993.json, 视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100393450754633729.json, 视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100425069351751681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1162
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json、comfyui-workflow-templates-json/api_recraft_v4_t2i.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/文生视频工作流｜Flux 3 最长二十秒 带音频_2099690007215828993.json、视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100393450754633729.json、视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100425069351751681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `RecraftV4TextToImageNode`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `RH_RhartVideoFlux3TextToVideo`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -38,4 +37,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1223
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.619
-common_nodes: [JjkText, MuyeLoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.833
+common_nodes: [ImageCompare, LoadImage, Painter, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/G - Image 2.0 - 图生图_2047509589276495873.json, 图片生成/文生图/G-PT Image 2.0-多宫格图生图+放大两倍节点_2057298454157815809.json]
+members: [comfyui-workflow-templates-json/api_bria_eraser.json, comfyui-workflow-templates-json/api_bria_genfill.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1223
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G - Image 2.0 - 图生图_2047509589276495873.json、图片生成/文生图/G-PT Image 2.0-多宫格图生图+放大两倍节点_2057298454157815809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_eraser.json、comfyui-workflow-templates-json/api_bria_genfill.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `MuyeLoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `ImageCompare`
+- `LoadImage`
+- `Painter`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
+- `BriaEraser` —— 1/2 个有
+- `BriaGenFill` —— 1/2 个有
 
 ## 典型参数
 

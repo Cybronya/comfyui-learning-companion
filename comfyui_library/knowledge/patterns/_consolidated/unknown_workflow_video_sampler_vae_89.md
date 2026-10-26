@@ -1,81 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_vae_89
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.667833
-common_nodes: [CLIPVisionLoader, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatch, ImageBatchMulti, ImageBatchRepeatInterleaving, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8924
+common_nodes: [DrawViTPose, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json, 视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json, 视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json, 视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json, 视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json, 视频生成/图生视频/最新王炸Wan2.1+SkyReels  自定义角色+物体+背景  超高还原_1911449763139547137.json]
+members: [图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json, 视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json, 视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json, 视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json, 视频生成/图生视频/视频替换_跟随动作二合一 wan animate v2 工作流_1975214578143465474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_89
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json、视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json、视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json、视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json、视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json、视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json、视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json、视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json、视频生成/图生视频/视频替换_跟随动作二合一 wan animate v2 工作流_1975214578143465474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatch`
-- `ImageBatchMulti`
-- `ImageBatchRepeatInterleaving`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+全部 5 个 workflow 都包含：
+- `DrawViTPose`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SetNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 5/6 个有
-- `INTConstant` —— 5/6 个有
-- `ImageRemoveBackground+` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `TransparentBGSession+` —— 5/6 个有
-- `ImageCompositeMasked` —— 4/6 个有
-- `Note Plus (mtb)` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `ImagePadKJ` —— 2/6 个有
-- `LayerUtility: ImageBlendAdvance V3` —— 2/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 2/6 个有
-- `LoadImageFromUrl` —— 2/6 个有
-- `WanVideoVRAMManagement` —— 2/6 个有
-- `CLIPLoader` —— 1/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `DF_Integer` —— 1/6 个有
-- `Evaluate Integers` —— 1/6 个有
-- `JWImageResizeByLongerSide` —— 1/6 个有
-- `LayerMask: RmBgUltra V2` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `WanVideoEnhanceAVideo` —— 1/6 个有
-- `WanVideoTextEmbedBridge` —— 1/6 个有
-- `easy getNode` —— 1/6 个有
-- `easy imageScaleDownToSize` —— 1/6 个有
-- `easy setNode` —— 1/6 个有
+- `BlockifyMask` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `DownloadAndLoadSAM2Model` —— 4/5 个有
+- `DrawMaskOnImage` —— 4/5 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `GrowMaskWithBlur` —— 4/5 个有
+- `ImageFromBatch+` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `Sam2Segmentation` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `VHS_VideoInfo` —— 4/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `CLIPVisionLoader` —— 2/5 个有
+- `WanVideoClipVisionEncode` —— 2/5 个有
+- `Int` —— 1/5 个有
+- `LG_LoadImage` —— 1/5 个有
+- `Switch any [Crystools]` —— 1/5 个有
+- `Text` —— 1/5 个有
+- `WanVideoLoraSelectMulti` —— 1/5 个有
+- `WanVideoSetLoRAs` —— 1/5 个有
+- `easy boolean` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,58 +3,98 @@ name: image_to_image_lora_sampler_vae_23
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.941
-common_nodes: [EmptyLatentImage, ImageScale, KSampler, LayerColor: BrightnessContrastV2, LayerFilter: AddGrain, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, Seed (rgthree), TTResolutionSelector, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode]
+coverage: 0.7085
+common_nodes: [AIO_Preprocessor, BasicScheduler, CLIPLoader, CM_IntBinaryCondition, CR Integer To String, CR Text, Canny, ConditioningZeroOut, DiffusionModelLoaderKJ, EG_TX_SFBLS, Fast Bypasser (rgthree), GetImageSize+, GetNode, GrowMask, Image Crop Face, ImageComposite+, ImageScaleBy, ImageSmartSharpen+, ImageToMask, ImpactInt, ImpactSwitch, KSampler, KSamplerSelect, Latent Noise Injection, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: If , LayerUtility: ImageBlend, LoadImage, LoraLoaderModelOnly, LoraNames_, MaskBlur+, NoiseFromImage+, PathchSageAttentionKJ, PrimitiveString, ResizeImageMixlab, SamplerCustom, SaveImage, SetNode, SimpleMath+, StringContains, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageSize, easy showAnything, easy textIndexSwitch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2_动漫转真人🌸低显存版🌸INT8 A卡专用6G版_2110215134198198273.json, 图片生成/图生图/Krea2🌸动漫转真人🌸免提示词版_2110225472079618050.json]
+members: [图片生成/图生图/klein万能工作流1.1_2019058259008688129.json, 图片生成/图生图/全能版klein工作流_2015085041012969473.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_vae_23
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Krea2_动漫转真人🌸低显存版🌸INT8 A卡专用6G版_2110215134198198273.json、图片生成/图生图/Krea2🌸动漫转真人🌸免提示词版_2110225472079618050.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/klein万能工作流1.1_2019058259008688129.json、图片生成/图生图/全能版klein工作流_2015085041012969473.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyLatentImage`
-- `ImageScale`
+- `AIO_Preprocessor`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CM_IntBinaryCondition`
+- `CR Integer To String`
+- `CR Text`
+- `Canny`
+- `ConditioningZeroOut`
+- `DiffusionModelLoaderKJ`
+- `EG_TX_SFBLS`
+- `Fast Bypasser (rgthree)`
+- `GetImageSize+`
+- `GetNode`
+- `GrowMask`
+- `Image Crop Face`
+- `ImageComposite+`
+- `ImageScaleBy`
+- `ImageSmartSharpen+`
+- `ImageToMask`
+- `ImpactInt`
+- `ImpactSwitch`
 - `KSampler`
-- `LayerColor: BrightnessContrastV2`
-- `LayerFilter: AddGrain`
+- `KSamplerSelect`
+- `Latent Noise Injection`
+- `LayerUtility: CropBoxResolve`
+- `LayerUtility: CropByMask`
+- `LayerUtility: If `
+- `LayerUtility: ImageBlend`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `LoraNames_`
+- `MaskBlur+`
+- `NoiseFromImage+`
+- `PathchSageAttentionKJ`
+- `PrimitiveString`
+- `ResizeImageMixlab`
+- `SamplerCustom`
 - `SaveImage`
-- `Seed (rgthree)`
-- `TTResolutionSelector`
-- `TextEncodeQwenImageEditPlus`
+- `SetNode`
+- `SimpleMath+`
+- `StringContains`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
+- `VAELoader`
+- `easy imageSize`
+- `easy showAnything`
+- `easy textIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `Bounded Image Crop` —— 1/2 个有
+- `Bounded Image Crop with Mask` —— 1/2 个有
+- `CFGZeroStar` —— 1/2 个有
+- `DyPE_FLUX` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `ResizeAndPadImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy imageCropFromMask` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
+| 采样步数 | 5 | - | 2 | 80% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.575 | - | 2 | 96% |
+| 采样算法 | euler_ancestral | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,12 +104,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1088，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.575，样本不足，未给区间，2 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,31 +3,38 @@ name: unknown_workflow_generic_730
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.91675
-common_nodes: [RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.574
+common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, easy promptList]
 problems: []
 missing: []
-members: [图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json, 图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json]
+members: [图片生成/图生图/image_gemini.json_2082301956990791681.json, 图片生成/图生图/image_gemini.json_2098290683168780289.json, 图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_730
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json、图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json、图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image_gemini.json_2082301956990791681.json、图片生成/图生图/image_gemini.json_2098290683168780289.json、图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `RH_RhartImageG25SunburstTextToImage`
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
 - `SaveImage`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `ShowAnything|Mie` —— 2/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
 
 ## 典型参数
 

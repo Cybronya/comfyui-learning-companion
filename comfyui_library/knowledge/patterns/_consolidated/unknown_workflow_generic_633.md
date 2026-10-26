@@ -1,51 +1,39 @@
 ---
 name: unknown_workflow_generic_633
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.904
-common_nodes: [InspyrenetRembgAdvanced, JoinImageWithAlpha, LayerMask: BenUltra, LayerMask: BiRefNetUltraV2, LayerMask: LoadBenModel, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskPreview, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview+, SaveImage]
+coverage: 0.8068
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/5种主流抠图工具联用（1次5图选1）_1952199306679930881.json, 图片生成/图生图/6种主流抠图工具联用V2（1次6图选1，含SDmatte）_1956211154316132354.json, 图片生成/图生图/多种抠图工具_1952572230473584641.json, 图片生成/图生图/🦖最新多合一抠图工具_1893862736365813762.json]
+members: [视频生成/图生视频/SoulX-Podcast 语音克隆 (Json格式-方言)_1985868258882592770.json, 音频生成/音频生成/AI 语音克隆方言版 （四川 河南 粤语）_1985973742637592578.json, 音频生成/音频生成/SoulX-podcas声音克隆_1986779112427696130.json, 音频生成/音频生成/TTS克隆多人对话音频支持方言_2007750625056006146.json, 音频生成/音频生成/声音克隆TTS2_双人对话+背景音_可以模仿情人电话粥了_2005650839295455233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_633
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/5种主流抠图工具联用（1次5图选1）_1952199306679930881.json、图片生成/图生图/6种主流抠图工具联用V2（1次6图选1，含SDmatte）_1956211154316132354.json、图片生成/图生图/多种抠图工具_1952572230473584641.json、图片生成/图生图/🦖最新多合一抠图工具_1893862736365813762.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/SoulX-Podcast 语音克隆 (Json格式-方言)_1985868258882592770.json、音频生成/音频生成/AI 语音克隆方言版 （四川 河南 粤语）_1985973742637592578.json、音频生成/音频生成/SoulX-podcas声音克隆_1986779112427696130.json、音频生成/音频生成/TTS克隆多人对话音频支持方言_2007750625056006146.json、音频生成/音频生成/声音克隆TTS2_双人对话+背景音_可以模仿情人电话粥了_2005650839295455233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `InspyrenetRembgAdvanced`
-- `JoinImageWithAlpha`
-- `LayerMask: BenUltra`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBenModel`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `MaskPreview+`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `InvertMask` —— 3/4 个有
-- `Mask Batch` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ResizeMask` —— 3/4 个有
-- `easy imageSize` —— 3/4 个有
-- `BackgroundEraseNetwork` —— 2/4 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 2/4 个有
-- `Mask Invert` —— 2/4 个有
-- `SDMatteApply` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
+- `CR Prompt Text` —— 3/5 个有
+- `JjkText` —— 1/5 个有
+- `SoundFlow_Mixer` —— 1/5 个有
+- `Text Concatenate` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,47 +1,38 @@
 ---
 name: unknown_workflow_generic_1219
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.796
-common_nodes: [CR Integer To String, CR Text, FluxKontextImageScale, FluxResolutionNode, GetImageSize+, ImageConcanate, Int, JoinStrings, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_LLMAPI_NODE, RH_Translator, SaveImage, easy compare, easy ifElse]
+frequency: 3
+level: moderate
+coverage: 0.747333
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext Pro_Max单图模式_1949739835357618178.json, 图片生成/图生图/Flux Kontext Pro_Max双图模式_1949765475255410689.json]
+members: [音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json, 音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json, 音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1219
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Pro_Max单图模式_1949739835357618178.json、图片生成/图生图/Flux Kontext Pro_Max双图模式_1949765475255410689.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json、音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json、音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Integer To String`
-- `CR Text`
-- `FluxKontextImageScale`
-- `FluxResolutionNode`
-- `GetImageSize+`
-- `ImageConcanate`
-- `Int`
-- `JoinStrings`
-- `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `SaveImage`
-- `easy compare`
-- `easy ifElse`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Display Any (rgthree)` —— 1/2 个有
+- `FL_Audio_Separation` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `Note _O` —— 1/3 个有
 
 ## 典型参数
 
@@ -53,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

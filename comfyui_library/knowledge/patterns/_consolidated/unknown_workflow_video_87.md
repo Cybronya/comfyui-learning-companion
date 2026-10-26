@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_video_87
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9675
-common_nodes: [FloatProcess, ImageConcatMulti, LoadAudio, LoadFloatModels, LoadImage, PrimitiveFloat, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.765
+common_nodes: [AILab_MiniCPM_4_V_Advanced, CR Text Replace, GetVideoComponents, HunyuanVideoFoley, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, PreviewAudio, PrimitiveBoolean, TextBox, VHS_VideoCombine, easy cleanGpuUsed, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/FLOAT图片转多表情说话数字人_1921013177109385217.json, 视频生成/图生视频/FLOAT图生数字人8种表情_1920712821791719425.json]
+members: [音频生成/音频生成/混元Foley 视频配音_1983827091751903234.json, 音频生成/音频生成/混元Foley+MiniCPM-V-4.5视频反推配音_1965991942389665793.json, 音频生成/音频生成/混元Foley+MiniCPM-V-4.5视频反推配音_1982750896880795649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_87
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FLOAT图片转多表情说话数字人_1921013177109385217.json、视频生成/图生视频/FLOAT图生数字人8种表情_1920712821791719425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/混元Foley 视频配音_1983827091751903234.json、音频生成/音频生成/混元Foley+MiniCPM-V-4.5视频反推配音_1965991942389665793.json、音频生成/音频生成/混元Foley+MiniCPM-V-4.5视频反推配音_1982750896880795649.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `FloatProcess`
-- `ImageConcatMulti`
-- `LoadAudio`
-- `LoadFloatModels`
-- `LoadImage`
-- `PrimitiveFloat`
+全部 3 个 workflow 都包含：
+- `AILab_MiniCPM_4_V_Advanced`
+- `CR Text Replace`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadVideo`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `TextBox`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `SeargePromptText` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy showAnything`
 
 ## 典型参数
 
@@ -46,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

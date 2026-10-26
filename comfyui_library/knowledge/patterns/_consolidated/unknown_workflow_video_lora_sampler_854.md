@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_854
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.932
-common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9325
+common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wanunianimate舞蹈动作迁移_1913868726649978882.json, 视频生成/图生视频/可灵同款泼水变装特效_1935726272695689217.json]
+members: [视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json, 视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_854
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wanunianimate舞蹈动作迁移_1913868726649978882.json、视频生成/图生视频/可灵同款泼水变装特效_1935726272695689217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json、视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,37 +23,28 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJ`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

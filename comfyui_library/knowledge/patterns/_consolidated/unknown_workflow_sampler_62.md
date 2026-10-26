@@ -3,50 +3,34 @@ name: unknown_workflow_sampler_62
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.774333
-common_nodes: [AudioCrop, Bjornulf_FreeVRAM, HeartMuLa_Transcribe, IndexTTS2_Basic, JWStringConcat, JjkText, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3_VQA, SaveAudio, ShowText|pysssss, Text Concatenate, Text Multiline, easy saveText, easy showAnything]
+coverage: 0.833333
+common_nodes: [SaveAudio, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
 problems: []
 missing: []
-members: [音频生成/音频生成/多国语言音频翻译_2033365420601774081.json, 音频生成/音频生成/语音翻译！Ai音频传译！B站艾橘溪_2014338264907386881.json, 音频生成/音频生成/语音翻译！Ai音频传译！_2109826567848415233.json]
+members: [音频生成/音频生成/AI歌曲生成_1950367419039662082.json, 音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json, 音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/多国语言音频翻译_2033365420601774081.json、音频生成/音频生成/语音翻译！Ai音频传译！B站艾橘溪_2014338264907386881.json、音频生成/音频生成/语音翻译！Ai音频传译！_2109826567848415233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI歌曲生成_1950367419039662082.json、音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json、音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_FreeVRAM`
-- `HeartMuLa_Transcribe`
-- `IndexTTS2_Basic`
-- `JWStringConcat`
-- `JjkText`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Qwen3_VQA`
 - `SaveAudio`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `easy saveText`
-- `easy showAnything`
+- `SongGeneration_Sampler`
+- `SongGeneration_Stage1`
+- `SongGeneration_Stage2`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio To Text (mtb)` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `FishS2VoiceCloneTTS` —— 1/3 个有
-- `Load Whisper (mtb)` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RunningHub SeedXPro Translator` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

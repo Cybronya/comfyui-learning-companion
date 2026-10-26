@@ -1,75 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_420
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.5724
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, WanVideoNAG]
+coverage: 0.944667
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_2006374874046009346.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_final_2006035355308400642.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_smoothremix_2008049171638521858.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_video_extend_2005944550638186497.json]
+members: [视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json, 视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json, 视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json, 视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json, 视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json, 视频生成/图生视频/💃LTX2.3 图生视频 人物一致性优化版💃_2030439938361135105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_420
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_2006374874046009346.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_final_2006035355308400642.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_smoothremix_2008049171638521858.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_video_extend_2005944550638186497.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json、视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json、视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json、视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json、视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `PrimitiveBoolean`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `easy forLoopEnd` —— 3/5 个有
-- `easy forLoopStart` —— 3/5 个有
-- `easy promptLine` —— 3/5 个有
-- `PreviewAny` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DF_Int_to_Float` —— 1/5 个有
-- `GODMT_ListGetByIndex` —— 1/5 个有
-- `GODMT_SplitString` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `StringToInt` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WWAA-LineCount` —— 1/5 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `Seed (rgthree)` —— 4/6 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
+- `RH_LLMAPI_Pro_Node` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `DF_Int_to_Float` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImpactInt` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LatentUpscaleModelLoader` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `ResizeImageMaskNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `ShowText` —— 1/6 个有
+- `TextBox` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 5 | 88% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | lcm | - | 5 | 80% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -77,8 +90,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，5 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，5 个样本，一致性 80%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

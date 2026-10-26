@@ -1,28 +1,28 @@
 ---
 name: text_to_image_lora_sampler_clip_50
 type: Text To Image
-frequency: 18
+frequency: 17
 level: strong
-coverage: 0.862222
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.888882
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/2.FireRed 四视图_2083463075734319105.json, 图片生成/图生图/FireRed-Image-Edit 1.1 +Qwen2511图片编辑工作流-高清直出_2036793276518375425.json, 图片生成/图生图/FireRed-Image-Edit 1.1-[人像] 原生肌理·去AI·去塑料-电影感-高清直出_2045102299755847682.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清出图_2073975079939174402.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2045792387779272705.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2072023589460733953.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2073677104536965122.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2101942874756698113.json, 图片生成/图生图/FireRed-Image-Edit 1.1-人物面部三视图-高清直出_2079070655621976066.json, 图片生成/图生图/FireRed-Image-Edit 1.1-场景一致性_2045840113577500674.json, 图片生成/图生图/FireRed-Image-Edit 1.1-室内全景图-高清直出_2045816852143673345.json, 图片生成/图生图/FireRed-Image-Edit 1.1-户外全景图-高清直出_2045819047106846721.json, 图片生成/图生图/FireRed-Image-Edit 1.1-材质优化提升-高清直出_2045093509073473537.json, 图片生成/图生图/FireRed-Image-Edit 1.1-面部三视图-高清直出_2045087093600292865.json, 图片生成/图生图/FireRed-Image-Edit_1.1-人物面部+全身三视图-高清直出_2105120165930295297.json, 图片生成/图生图/FireRed-Image-Edit_1.1-人物面部+全身三视图-高清直出_2105497558364807170.json, 图片生成/图生图/FireRed-Image图片编辑工作流-高清直出_2038431463573561346.json, 图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-FireRed-Image-Edit 1.1_2036801337580589057.json]
+members: [图片生成/图生图/Qwen Image 2.1一键融图｜透视光影让产品自然融入背景_2111096424543903746.json, 图片生成/图生图/Qwen Image 2.1一键透视光影融图产品完美融入背景 产品图融合方案_2109742070738014209.json, 图片生成/图生图/Qwen Image 2.1一键透视光影融图产品完美融入背景 产品图融合方案_2109776737675595778.json, 图片生成/图生图/Qwen Image 2.1人物姿势图转白模工作流，人物角色图生图处理工具_2108305851978182657.json, 图片生成/图生图/Qwen Image 2.1人物姿势图转白模｜角色动作参考一键转换_2108021000834215937.json, 图片生成/图生图/Qwen Image 2.1人物转白模工作流，图生图人物白模处理工具_2108284091366989826.json, 图片生成/图生图/Qwen Image 2.1动作迁移2工作流，图生图动作迁移处理工具_2107952880333443074.json, 图片生成/图生图/Qwen Image 2.1动漫转真人工作流，图生图动漫风格转换处理工具_2108307387378659329.json, 图片生成/图生图/Qwen Image 2.1动漫转真人｜二次元角色写实化一秒落地_2108031740731289601.json, 图片生成/图生图/Qwen Image 2.1单图编辑4步加速版，高效图生图处理工具_2103183698848993281.json, 图片生成/图生图/Qwen Image 2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2106859828982407170.json, 图片生成/图生图/Qwen Image 2.1单图编辑｜4步加速版出图快人一步_2103053267889639426.json, 图片生成/图生图/Qwen Image 2.1参考图融合编辑ref2i，多图参考身份保持图生图方案_2103215198285946882.json, 图片生成/图生图/Qwen Image 2.1图生图处理生成工具_2102468898800095234.json, 图片生成/图生图/Qwen Image 2.1角色多视图生成，角色一致性设计分镜出图工具_2106135600075202562.json, 图片生成/图生图/Qwen Image 2.1超细节多图像编辑，最多十一张参考图局部重绘风格化_2102875534593183745.json, 图片生成/图生图/Qwen_Image_2.1超细节多图像编辑，最多十一张参考图局部重绘风格化_2105123251163848705.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_50
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/2.FireRed 四视图_2083463075734319105.json、图片生成/图生图/FireRed-Image-Edit 1.1 +Qwen2511图片编辑工作流-高清直出_2036793276518375425.json、图片生成/图生图/FireRed-Image-Edit 1.1-[人像] 原生肌理·去AI·去塑料-电影感-高清直出_2045102299755847682.json、图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清出图_2073975079939174402.json、图片生成/图生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2045792387779272705.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1一键融图｜透视光影让产品自然融入背景_2111096424543903746.json、图片生成/图生图/Qwen Image 2.1一键透视光影融图产品完美融入背景 产品图融合方案_2109742070738014209.json、图片生成/图生图/Qwen Image 2.1一键透视光影融图产品完美融入背景 产品图融合方案_2109776737675595778.json、图片生成/图生图/Qwen Image 2.1人物姿势图转白模工作流，人物角色图生图处理工具_2108305851978182657.json、图片生成/图生图/Qwen Image 2.1人物姿势图转白模｜角色动作参考一键转换_2108021000834215937.json…）
 
 - **类型**：Text To Image
-- **样本数**：18
+- **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 17 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -31,52 +31,56 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `SeedVR2`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 14/18 个有
-- `RunningHub Deepcleaner` —— 12/18 个有
-- `GetImageSize` —— 6/18 个有
-- `ImageScaleToTotalPixels` —— 6/18 个有
-- `easy cleanGpuUsed` —— 5/18 个有
-- `PreviewImage` —— 4/18 个有
-- `DrawMaskOnImage` —— 1/18 个有
-- `DuckHideNode` —— 1/18 个有
-- `ImagePadForOutpaint` —— 1/18 个有
-- `Label (rgthree)` —— 1/18 个有
-- `PlaySound|pysssss` —— 1/18 个有
-- `SeedVR2BlockSwap` —— 1/18 个有
-- `孤海注释` —— 1/18 个有
+- `孤海注释` —— 16/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
+- `Image Comparer (rgthree)` —— 8/17 个有
+- `PreviewImage` —— 8/17 个有
+- `ResolutionSelector` —— 6/17 个有
+- `ImpactInt` —— 5/17 个有
+- `easy seed` —— 5/17 个有
+- `KSampler (Efficient)` —— 3/17 个有
+- `Text Multiline` —— 3/17 个有
+- `Anything Everywhere3` —— 2/17 个有
+- `EmptyImage` —— 2/17 个有
+- `INTConstant` —— 2/17 个有
+- `QwenImage21Cache` —— 2/17 个有
+- `ComfySwitchNode` —— 1/17 个有
+- `Int` —— 1/17 个有
+- `LayerUtility: ImageReel` —— 1/17 个有
+- `LayerUtility: ImageReelComposit` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1920 | 720 - 2048 | 18 | 74% |
-| 高度 | 1080 | 1024 - 1280 | 18 | 93% |
-| 采样步数 | 8 | 4 - 8 | 18 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 94% |
-| 调度器 | simple | - | 18 | 94% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | 4 | 4 - 4 | 17 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 17 | 100% |
+| 采样算法 | er_sde | - | 17 | 100% |
+| 调度器 | beta | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 宽度 | 80 | 80 - 80 | 17 | 100% |
+| 高度 | 80 | 80 - 80 | 17 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1920，观测区间 720 - 2048，18 个样本
-- 高度 中位数 1080，观测区间 1024 - 1280，18 个样本，取值集中（一致性 93%）
-- 采样步数 中位数 8，观测区间 4 - 8，18 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 94%
-- 调度器 最常用 simple，18 个样本，一致性 94%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（20/18 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，17 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，17 个样本，一致性 100%
+- 调度器 最常用 beta，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
+- 高发问题（19/17 个样本）：Steps较低可能导致细节不足

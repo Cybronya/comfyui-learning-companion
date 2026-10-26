@@ -1,52 +1,42 @@
 ---
 name: unknown_workflow_generic_339
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.554143
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.853
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/banan图片V1 2  Pro（简便操作版）_2036271306152353794.json, 图片生成/图生图/banan多角度不断改进图_2038436343981805570.json, 图片生成/图生图/全能图片G-2.0 增强板_2039291427972190209.json, 图片生成/图生图/全能图片V1 2  Pro（简便操作版）_1996645945498640386.json, 图片生成/图生图/全能图片V1 2 Pro（简便操作版）_2046402961106018305.json, "图片生成/文生图/Chat全能图片G-2.5 高级版,适用于资产调整，海报设计，资产设计_2110642752408080386.json", 图片生成/文生图/全能图片G-2.5 高级版_2100848705426518018.json]
+members: [音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json, 音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json, 音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json, 音频生成/音频生成/OmniVoice语音克隆，omnivoice声音克隆，跨境声音，电商语音克隆_2042050604117266433.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041470375313281025.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041935163369721858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_339
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/banan图片V1 2  Pro（简便操作版）_2036271306152353794.json、图片生成/图生图/banan多角度不断改进图_2038436343981805570.json、图片生成/图生图/全能图片G-2.0 增强板_2039291427972190209.json、图片生成/图生图/全能图片V1 2  Pro（简便操作版）_1996645945498640386.json、图片生成/图生图/全能图片V1 2 Pro（简便操作版）_2046402961106018305.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json、音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json、音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 6/7 个有
-- `MathExpression|pysssss` —— 6/7 个有
-- `easy int` —— 6/7 个有
-- `easy promptLine` —— 6/7 个有
-- `easy showAnything` —— 6/7 个有
-- `easy textIndexSwitch` —— 6/7 个有
-- `ImpactSwitch` —— 4/7 个有
-- `ProcessString` —— 4/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 4/7 个有
-- `Any Switch (rgthree)` —— 3/7 个有
-- `Image Comparer (rgthree)` —— 3/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/7 个有
-- `RH_RhartImageG25FlareImageToImage` —— 2/7 个有
-- `RH_RhartImageG25FlareTextToImage` —— 2/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `RH_RhartImageG2TextToImage` —— 1/7 个有
+- `OmniVoiceVoiceCloneTTS` —— 6/8 个有
+- `PreviewAny` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `OmniVoiceVoiceDesignTTS` —— 3/8 个有
+- `SaveAudioMP3` —— 3/8 个有
+- `OmniVoiceMultiSpeakerTTS` —— 2/8 个有
+- `SaveAudioOpus` —— 2/8 个有
 
 ## 典型参数
 

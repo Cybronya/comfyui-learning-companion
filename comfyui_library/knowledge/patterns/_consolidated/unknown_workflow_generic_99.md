@@ -3,33 +3,33 @@ name: unknown_workflow_generic_99
 type: Unknown Workflow
 frequency: 15
 level: moderate
-coverage: 0.96
-common_nodes: [QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
+coverage: 0.943333
+common_nodes: [ExpressionEditor, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/qwen-image 完全版满血生图_1955074728886091778.json, 图片生成/文生图/【最强图片文字】通义千问 Qwen-image_1952681933023154177.json, 图片生成/文生图/千问文生图~国产开源之光_1952737017799053314.json, 图片生成/文生图/海报一件设计_1952725024588427266.json, 图片生成/文生图/通义千问Qwen-image 1分钟出图_1952554142764085249.json, 图片生成/文生图/通义千问Qwen-image 会写汉字的生图模型生图_1952542727718277122.json, 图片生成/文生图/通义千问Qwen-image 文生图_1952901917544484865.json, 图片生成/文生图/通义千问Qwen-image_1952536297061724162.json, 图片生成/文生图/通义千问Qwen-image_1952621651601108994.json, 图片生成/文生图/通义千问Qwen-image_1953303943247032322.json, 图片生成/文生图/通义千问Qwen-image_1953308645888094209.json, 图片生成/文生图/通义千问Qwen-image_1956942854700589057.json, 图片生成/文生图/通义千问Qwen-image基础工作流_1952670044088152065.json, 图片生成/文生图/通义千问文生图_1952578725361717250.json, 图片生成/文生图/🥨Qwen 千问文生图~效果等同即梦！国产开源之光🥨_1952634626944765953.json]
+members: [图片生成/图生图/Flux.真人表情包——一键上传参考图操作_1915277572496621570.json, 图片生成/图生图/NNW_表情编辑_Expression+Editor_20250613_1933467494525091841.json, 图片生成/图生图/【RICK】人物表情调整(支持真人和动漫)_1906524268967170049.json, 图片生成/图生图/一键微调表情一致性_1895404347084177409.json, 图片生成/图生图/一键控制模特表情_1915219222262120450.json, 图片生成/图生图/最新定制人物表情  只需一个节点_1909632213166817282.json, 图片生成/图生图/表情编辑器_1895030427646296066.json, 图片生成/图生图/表情迁移，表情调节_1900132599463931906.json, 图片生成/图生图/超写实人物表情编辑器-可自行调节任意表情_2011352550611619841.json, 图片生成/图生图/超写实表情编辑器_1923612466931298306.json, 图片生成/图生图/面部表情工作流_1927322256328777729.json, 数字人/数字人/人物表情修改_1970662182843260930.json, 数字人/数字人/人物表情控制，表情迁移，简易表情控制器plus加强_2031386476444917761.json, 数字人/数字人/表情修改(可实现闭眼改睁眼，微笑，搞怪表情等)_1932363892964139009.json, 数字人/数字人/表情编辑_1988454897383292930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_99
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/qwen-image 完全版满血生图_1955074728886091778.json、图片生成/文生图/【最强图片文字】通义千问 Qwen-image_1952681933023154177.json、图片生成/文生图/千问文生图~国产开源之光_1952737017799053314.json、图片生成/文生图/海报一件设计_1952725024588427266.json、图片生成/文生图/通义千问Qwen-image 1分钟出图_1952554142764085249.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Flux.真人表情包——一键上传参考图操作_1915277572496621570.json、图片生成/图生图/NNW_表情编辑_Expression+Editor_20250613_1933467494525091841.json、图片生成/图生图/【RICK】人物表情调整(支持真人和动漫)_1906524268967170049.json、图片生成/图生图/一键微调表情一致性_1895404347084177409.json、图片生成/图生图/一键控制模特表情_1915219222262120450.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `QwenImageModelLoader`
-- `RH_QwenImageGenerator`
+- `ExpressionEditor`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/15 个有
-- `PrimitiveInt` —— 1/15 个有
+- `Image Comparer (rgthree)` —— 2/15 个有
+- `Concat Images (mtb)` —— 1/15 个有
 
 ## 典型参数
 

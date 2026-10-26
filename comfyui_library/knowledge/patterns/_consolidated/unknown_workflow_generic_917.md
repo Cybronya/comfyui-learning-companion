@@ -3,34 +3,34 @@ name: unknown_workflow_generic_917
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy promptConcat]
+coverage: 0.768667
+common_nodes: [JjkText, LoadImage, Qwen3_VQA, SaveImage, VHS_LoadVideo, VideoLoaderPlus, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图像G2.0老照片修复_2087741372626456578.json, 图片生成/图生图/全能图像G2.0老照片修复_2087746707365912577.json, 图片生成/图生图/全能图像G2.0老照片修复_2087782062148374529.json]
+members: [图片生成/反推提示词/Huihui-Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063872215459917826.json, 图片生成/反推提示词/Qwen3 VL-4B-爆款视频反推V2-提示词分析-视频脚本反推_2063861093998612481.json, 图片生成/反推提示词/Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063865484524744705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_917
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图像G2.0老照片修复_2087741372626456578.json、图片生成/图生图/全能图像G2.0老照片修复_2087746707365912577.json、图片生成/图生图/全能图像G2.0老照片修复_2087782062148374529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Huihui-Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063872215459917826.json、图片生成/反推提示词/Qwen3 VL-4B-爆款视频反推V2-提示词分析-视频脚本反推_2063861093998612481.json、图片生成/反推提示词/Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063865484524744705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+- `JjkText`
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
+- `Qwen3_VQA`
 - `SaveImage`
-- `easy promptConcat`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `VHS_LoadVideo`
+- `VideoLoaderPlus`
+- `easy saveText`
+- `easy showAnything`
 
 ## 典型参数
 

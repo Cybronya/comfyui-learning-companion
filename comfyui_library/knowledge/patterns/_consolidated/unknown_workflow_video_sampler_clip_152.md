@@ -3,89 +3,71 @@ name: unknown_workflow_video_sampler_clip_152
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.87225
-common_nodes: [CLIPTextEncode, CR Text, JWInteger, KSamplerAdvanced, LoadImage, MathExpression|pysssss, RIFE VFI, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, VAEDecode, VHS_VideoCombine, WanImageToVideo, easy showAnything]
-problems: []
+coverage: 0.89575
+common_nodes: [ApplySageAttention, CLIPTextEncode, CheckpointLoaderSimple, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SimpleMath+, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Smooth Mix+Wan2.2 图生视频（自动提示词）_1982274042864517122.json, 视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1979813439872864257.json, 视频生成/图生视频/图生视频，Wan2.2高动态，超强语义遵循_1981008328186806273.json, 视频生成/图生视频/高动态，超强理解，Wan2.2 图生视频_1981000332023042050.json]
+members: [视频生成/图生视频/50.tonnie-Wan2.2 AiO图生视频_2007607946225651714.json, 视频生成/图生视频/Wan2.2-Rapid-AiO图生视频_1987337054050824194.json, 视频生成/图生视频/极速版Wan2.2-Rapid-AIO-Mega V3图生视频_1971523053807190018.json, 视频生成/图生视频/极速版首尾帧Wan2.2 Rapid-AIO-Mega V3图生视频_1971536424413675521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_152
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Smooth Mix+Wan2.2 图生视频（自动提示词）_1982274042864517122.json、视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1979813439872864257.json、视频生成/图生视频/图生视频，Wan2.2高动态，超强语义遵循_1981008328186806273.json、视频生成/图生视频/高动态，超强理解，Wan2.2 图生视频_1981000332023042050.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/50.tonnie-Wan2.2 AiO图生视频_2007607946225651714.json、视频生成/图生视频/Wan2.2-Rapid-AiO图生视频_1987337054050824194.json、视频生成/图生视频/极速版Wan2.2-Rapid-AIO-Mega V3图生视频_1971523053807190018.json、视频生成/图生视频/极速版首尾帧Wan2.2 Rapid-AIO-Mega V3图生视频_1971536424413675521.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `ApplySageAttention`
 - `CLIPTextEncode`
-- `CR Text`
-- `JWInteger`
-- `KSamplerAdvanced`
+- `CheckpointLoaderSimple`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `RIFE VFI`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
+- `ModelSamplingSD3`
+- `SimpleMath+`
 - `VAEDecode`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy showAnything`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `CLIPVisionEncode` —— 3/4 个有
-- `CLIPVisionLoader` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `ModelPatchTorchSettings` —— 3/4 个有
-- `ModelSamplingSD3` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `VAELoader` —— 3/4 个有
-- `wanBlockSwap` —— 3/4 个有
-- `AILab_QwenVL` —— 2/4 个有
-- `CR Text Input Switch` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `ImageScale` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `LayerUtility: BooleanOperatorV2` —— 2/4 个有
-- `LayerUtility: If ` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `easy imageScaleDownToSize` —— 2/4 个有
-- `easy int` —— 2/4 个有
-- `GetNode` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `workflow>SMOOTH MIX-WAN2.2` —— 1/4 个有
+- `INTConstant` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `LayerUtility: TextJoin` —— 2/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `Wan22PromptSelector` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `easy seed` —— 2/4 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler_ancestral | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 50% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 50%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

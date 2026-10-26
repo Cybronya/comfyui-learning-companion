@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_173
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.589
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy float, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.916667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json, 视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json, 视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json]
+members: [图片生成/图生图/FlashVSR Full原生引擎｜视频4倍超分放大v1实测_2107642841806761986.json, 图片生成/图生图/RTX VSR视频放大工作流v1｜视频超分高清画质增强_2108460929519276034.json, 图片生成/图生图/Real-ESRGAN&SPAN视频放大v1｜视频超分清晰度提升_2108459459268927489.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json、视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json、视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FlashVSR Full原生引擎｜视频4倍超分放大v1实测_2107642841806761986.json、图片生成/图生图/RTX VSR视频放大工作流v1｜视频超分高清画质增强_2108460929519276034.json、图片生成/图生图/Real-ESRGAN&SPAN视频放大v1｜视频超分清晰度提升_2108459459268927489.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
@@ -26,35 +26,38 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `ModelPreviewOverrideKJ`
-- `RHHiddenNodes`
-- `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy float`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `FlashVSRInitPipe` —— 1/3 个有
+- `FlashVSRNodeAdv` —— 1/3 个有
+- `ImageConcatenate_UTK` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `UpscaleImageByUsingModel` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 | 采样步数 | 4 | 4 - 4 | 3 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
 | 采样算法 | er_sde | - | 3 | 100% |
 | 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
@@ -64,11 +67,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，3 个样本，一致性 100%
 - 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

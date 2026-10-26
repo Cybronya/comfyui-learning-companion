@@ -1,62 +1,82 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_17
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.929
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, InpaintModelConditioning, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9148
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CR Color Panel, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, ImageCompositeMasked, ImageCrop+, InpaintCrop, InpaintModelConditioning, InpaintStitch, Int, KSamplerSelect, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: CropByMask V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskPreview+, ModelSamplingFlux, PreviewImage, RMBG, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
 problems: []
 missing: []
-members: [图片生成/图生图/【遇见AI】ACE++ local editing 重绘_2049429912020328450.json, 图片生成/图生图/【遇见AI】ACE++ logo标志印刷_2049436152981098497.json, 图片生成/图生图/【遇见AI】ACE++ logo标志展示_2049436131527233537.json, 图片生成/图生图/【遇见AI】ACE++换脸，Fill，Redux_2049433784042393602.json, 图片生成/图生图/【遇见AI】ACE++，Fill，Redux，面部参考_2049431631588495361.json, 图片生成/图生图/【遇见AI】ACE++，Full，Redux，万物迁移，模特换装换衣服_2049438626995507202.json]
+members: [图片生成/图生图/Flux 万物迁移_1983079864918024194.json, 图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json, 图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】ACE++ local editing 重绘_2049429912020328450.json、图片生成/图生图/【遇见AI】ACE++ logo标志印刷_2049436152981098497.json、图片生成/图生图/【遇见AI】ACE++ logo标志展示_2049436131527233537.json、图片生成/图生图/【遇见AI】ACE++换脸，Fill，Redux_2049433784042393602.json、图片生成/图生图/【遇见AI】ACE++，Fill，Redux，面部参考_2049431631588495361.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux 万物迁移_1983079864918024194.json、图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json、图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPTextEncodeFlux`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CR Color Panel`
 - `ConditioningZeroOut`
+- `DifferentialDiffusion`
 - `DualCLIPLoader`
+- `FluxGuidance`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageCrop+`
+- `InpaintCrop`
 - `InpaintModelConditioning`
+- `InpaintStitch`
+- `Int`
 - `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerMask: MaskPreview`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageBlendAdvance`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
+- `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskPreview+`
 - `ModelSamplingFlux`
+- `PreviewImage`
+- `RMBG`
 - `RandomNoise`
+- `ReduxAdvanced`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 5/6 个有
-- `MaskPreview+` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `ReduxAdvanced` —— 5/6 个有
-- `StyleModelLoader` —— 5/6 个有
-- `easy makeImageForICLora` —— 5/6 个有
-- `EmptyImage` —— 2/6 个有
-- `GetImageSizeAndCount` —— 2/6 个有
-- `easy humanSegmentation` —— 1/6 个有
+- `Get Image Size` —— 4/5 个有
+- `IsMaskEmpty` —— 4/5 个有
+- `LayerUtility: ImageReel` —— 4/5 个有
+- `LayerUtility: ImageReelComposit` —— 4/5 个有
+- `Seed (rgthree)` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 4/5 个有
+- `easy convertAnything` —— 4/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `LayerUtility: CropByMask` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,5 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,56 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_255
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.914667
-common_nodes: [BasicScheduler, CLIPLoader, EmptySD3LatentImage, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.78925
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniGen2图像编辑_Comfy官方流_1938893412261093377.json, 图片生成/图生图/image_omnigen2_图片编辑工作流_1939951595721560065.json, 图片生成/图生图/【老金驿站】Qwen双图溶图4步极速工作流_1958780124068016129.json]
+members: [视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json, 视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json, 视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json, 视频生成/图生视频/Minimax H3 多参打斗V2_2096763661741281282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_255
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/OmniGen2图像编辑_Comfy官方流_1938893412261093377.json、图片生成/图生图/image_omnigen2_图片编辑工作流_1939951595721560065.json、图片生成/图生图/【老金驿站】Qwen双图溶图4步极速工作流_1958780124068016129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json、视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json、视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json、视频生成/图生视频/Minimax H3 多参打斗V2_2096763661741281282.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `ImageScaleToTotalPixels`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
 - `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ReferenceLatent`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 2/3 个有
-- `CLIPTextEncode` —— 2/3 个有
-- `DualCFGGuider` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `ImageStitch` —— 2/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `TextEncodeQwenImageEdit` —— 1/3 个有
+- `CLIPTextEncode` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `VAEDecode` —— 3/4 个有
+- `BasicGuider` —— 2/4 个有
+- `CFGGuider` —— 2/4 个有
+- `H3DistanceAttentionPatcher` —— 2/4 个有
+- `H3DynamicCFGScheduler` —— 2/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `LayerColor: Brightness & Contrast` —— 1/4 个有
+- `ModelPreviewOverrideKJ` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `QwenH3PromptLocal` —— 1/4 个有
+- `SplitSigmas` —— 1/4 个有
+- `VAEDecodeTiled` —— 1/4 个有
+- `YC_ShowText` —— 1/4 个有
+- `Yuan_H3Upscale3D` —— 1/4 个有
 
 ## 典型参数
 

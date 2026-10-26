@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_202
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.876
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.851333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Get Image Size, ImageMergeTileList, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PrimitiveInt, SaveImage, SeedVR2, SplitImageToTileList, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/心然·寻源Qwen2.1文生图｜文生图图生图双模式｜出图稳定值得收藏_2102218247461490690.json, 图片生成/文生图/Bkz人像摄影应用｜krea2-turbo-bf16人物特效文生图_2095790317579620353.json, 图片生成/文生图/Krea2人像摄影应用｜turbo-bf16写实人像生成_2095562706337230850.json, 图片生成/文生图/Qwen Image 2.1文生图处理生成工作流_2102097450449326081.json, 图片生成/文生图/Qwen Image 2.1文生图标准版｜一句话生成好图｜写实插画都能驾驭_2102638633646907393.json, 图片生成/文生图/Qwen Image 2.1空间折叠流太虚生成，简洁连线文生图傻瓜操作方案_2103612146377641986.json, 图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2104764071617851393.json, 图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2105438700263006209.json, 图片生成/文生图/Qwen2.1文图生图提示词增强工作流，文生图人像写真图生图处理方案_2107586964294815746.json]
+members: [图片生成/图生图/907一阶段放大不缩尺寸｜透明背景高清输出_2097151874083414018.json, 图片生成/图生图/913-VO+SE不透明版图生图｜913当天调试成品，参数锁定即取即用_2099529599943270402.json, 图片生成/图生图/913-VO+SE透明板版本｜透明通道保留完整，图生图后期好接手_2099531547643830273.json, 图片生成/图生图/999-vo+se不透明版图生图｜参数调好的成品流，导入即用不折腾_2099507003130466305.json, 图片生成/图生图/VO+SE不透明版图生图 视频叠加不透明效果处理_2099206060946051073.json, 图片生成/图生图/VO+SE透明版图生图 视频叠加透明效果处理工具_2099207580798251009.json, 图片生成/图生图/一阶段放大不缩小透明处理｜907图生图高清增强_2097095626621280258.json, 图片生成/图生图/图生图｜1.5到4倍无损放大，海分专用画质增强_2099889777045753857.json, 图片生成/图生图/透明背景放大3倍处理｜ESR高清画质增强图生图_2096706574864703489.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_202
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/心然·寻源Qwen2.1文生图｜文生图图生图双模式｜出图稳定值得收藏_2102218247461490690.json、图片生成/文生图/Bkz人像摄影应用｜krea2-turbo-bf16人物特效文生图_2095790317579620353.json、图片生成/文生图/Krea2人像摄影应用｜turbo-bf16写实人像生成_2095562706337230850.json、图片生成/文生图/Qwen Image 2.1文生图处理生成工作流_2102097450449326081.json、图片生成/文生图/Qwen Image 2.1文生图标准版｜一句话生成好图｜写实插画都能驾驭_2102638633646907393.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/907一阶段放大不缩尺寸｜透明背景高清输出_2097151874083414018.json、图片生成/图生图/913-VO+SE不透明版图生图｜913当天调试成品，参数锁定即取即用_2099529599943270402.json、图片生成/图生图/913-VO+SE透明板版本｜透明通道保留完整，图生图后期好接手_2099531547643830273.json、图片生成/图生图/999-vo+se不透明版图生图｜参数调好的成品流，导入即用不折腾_2099507003130466305.json、图片生成/图生图/VO+SE不透明版图生图 视频叠加不透明效果处理_2099206060946051073.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -26,10 +26,17 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `Get Image Size`
+- `ImageMergeTileList`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `PrimitiveInt`
 - `SaveImage`
+- `SeedVR2`
+- `SplitImageToTileList`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -37,23 +44,21 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 8/9 个有
-- `TextEncodeQwenImage21` —— 7/9 个有
-- `ConditioningZeroOut` —— 6/9 个有
-- `StringConstantMultiline` —— 4/9 个有
-- `TextGenerate` —— 4/9 个有
-- `easy clearCacheAll` —— 3/9 个有
-- `GetNode` —— 2/9 个有
-- `KSamplerAdvanced` —— 2/9 个有
-- `LatentUpscaleBy` —— 2/9 个有
-- `ModelSamplingAuraFlow` —— 2/9 个有
-- `SetNode` —— 2/9 个有
-- `ImpactInt` —— 1/9 个有
-- `LoadImage` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
+- `ImpactMinMax` —— 7/9 个有
+- `Int` —— 7/9 个有
+- `LayerUtility: BooleanOperatorV2` —— 7/9 个有
+- `easy ifElse` —— 7/9 个有
+- `JoinImageWithAlpha` —— 6/9 个有
+- `VOSR2ModelLoader` —— 5/9 个有
+- `VOSR2Upscale` —— 5/9 个有
+- `孤海-图像添加水印` —— 4/9 个有
+- `ImageResize+` —— 3/9 个有
+- `ImageUpscaleWithModel` —— 3/9 个有
+- `LayerUtility: PurgeVRAM` —— 3/9 个有
+- `UpscaleModelLoader` —— 3/9 个有
+- `easy boolean` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
 - `PreviewImage` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `easy saveText` —— 1/9 个有
 
 ## 典型参数
 
@@ -71,7 +76,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -82,4 +87,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，9 个样本，一致性 100%
 - 调度器 最常用 beta，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（10/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

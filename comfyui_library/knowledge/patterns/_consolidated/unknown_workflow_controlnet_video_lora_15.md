@@ -1,73 +1,79 @@
 ---
 name: unknown_workflow_controlnet_video_lora_15
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.5894
-common_nodes: [CR Prompt Text, GetNode, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveInt, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.7945
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJ, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, SimpleMath+, VHS_DuplicateImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/03-05-04-WAN2.1-运镜控制-Uni3C+Omniconsistency风格转绘_1989933159632564226.json, 视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json, 视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json, 视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json, 视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json]
+members: [视频生成/图生视频/电商带货商品展示数字人口播商用运镜版2.0【可切换】_1962734249734483970.json, 视频生成/图生视频/电商带货商品展示数字人口播商用运镜版2.0【可切换】_1971581572791136257.json, 视频生成/图生视频/音乐+数字人_1942210266623053825.json, 视频生成/图生视频/💂‍【大炮数字人】音乐自动生成+数字人对口型💂‍_1937733481621557249.json, 视频生成/图生视频/🥳infinitetalk最强数字人 运镜参考版【可切换】🐟_1958430229331132417.json, 视频生成/文生视频/Multitalk最强数字人运镜参考版 运行稳定版【8月6日日修复】_1936951987776704514.json, 视频生成/文生视频/最强数字人运镜_1947944588175650817.json, 视频生成/文生视频/💂‍Multitalk最强数字人 新手直出版 可出动物💂‍_1937688906760654850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_15
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/03-05-04-WAN2.1-运镜控制-Uni3C+Omniconsistency风格转绘_1989933159632564226.json、视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json、视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json、视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json、视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/电商带货商品展示数字人口播商用运镜版2.0【可切换】_1962734249734483970.json、视频生成/图生视频/电商带货商品展示数字人口播商用运镜版2.0【可切换】_1971581572791136257.json、视频生成/图生视频/音乐+数字人_1942210266623053825.json、视频生成/图生视频/💂‍【大炮数字人】音乐自动生成+数字人对口型💂‍_1937733481621557249.json、视频生成/图生视频/🥳infinitetalk最强数字人 运镜参考版【可切换】🐟_1958430229331132417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetNode`
+全部 8 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJ`
-- `LayerUtility: PurgeVRAM`
+- `JWIntegerToString`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SetNode`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `SimpleMath+`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 4/5 个有
-- `CreateCFGScheduleFloatList` —— 4/5 个有
-- `FloatConstant` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `ImageConcanate` —— 4/5 个有
-- `Seed (rgthree)` —— 4/5 个有
-- `WanVideoScheduler` —— 4/5 个有
-- `WanVideoSetBlockSwap` —— 4/5 个有
-- `WanVideoSetLoRAs` —— 4/5 个有
-- `WanVideoSigmaToStep` —— 4/5 个有
-- `Qwen3_VQA` —— 2/5 个有
-- `RunningHub OmniConsistency LoraLoader` —— 2/5 个有
-- `RunningHub OmniConsistency Sampler` —— 2/5 个有
-- `Text Multiline (Code Compatible)` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `RH_Jimeng_Image2Video_V2` —— 1/5 个有
-- `SaveVideo` —— 1/5 个有
-- `VideoLoader` —— 1/5 个有
+- `CR Text` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `VHS_LoadVideo` —— 7/8 个有
+- `easy anythingIndexSwitch` —— 7/8 个有
+- `MultiTalkWav2VecEmbeds` —— 6/8 个有
+- `WanVideoContextOptions` —— 6/8 个有
+- `WanVideoEncode` —— 6/8 个有
+- `WanVideoTextEncode` —— 6/8 个有
+- `WanVideoTorchCompileSettings` —— 6/8 个有
+- `PrimitiveInt` —— 5/8 个有
+- `ImageFromBatch+` —— 3/8 个有
+- `ImpactInt` —— 3/8 个有
+- `easy int` —— 3/8 个有
+- `Int` —— 2/8 个有
+- `RHHiddenNodes` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `RH_Captioner` —— 1/8 个有
+- `RH_LLMAPI_NODE` —— 1/8 个有
+- `SaveAudio` —— 1/8 个有
+- `SongGeneration_Sampler` —— 1/8 个有
+- `SongGeneration_Stage1` —— 1/8 个有
+- `SongGeneration_Stage2` —— 1/8 个有
 
 ## 典型参数
 

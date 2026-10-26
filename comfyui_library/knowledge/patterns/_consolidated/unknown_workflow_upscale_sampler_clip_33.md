@@ -2,32 +2,43 @@
 name: unknown_workflow_upscale_sampler_clip_33
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.82425
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, ImageResize+, ImageScaleBy, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.81275
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSamplerAdvanced, KSamplerSelect, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Base 文生图+高清放大+全节点注释_2055591595319275522.json, 图片生成/文生图/Zimage-Cc-风情万种_2020170940788772866.json, 图片生成/文生图/（贞贞-Ai Toolkit 3W步）Z-Image-Base文生图V1_2036432332558704642.json, 图片生成/文生图/（贞贞版-15W步-none）Z-image-base文生图高清版_2036429688607875074.json]
+members: [图片生成/图生图/VividMuse真实人像摄影洗图V1_2017936931623018498.json, 图片生成/图生图/VividMuse真实人像摄影洗图V2_2036774382349066242.json, 图片生成/图生图/Z-image+FLUX.2 klein真实人像洗图流_2083187504395677698.json, 图片生成/文生图/VividMuse真实人像摄影V1_2015351994625564673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_33
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-Image-Base 文生图+高清放大+全节点注释_2055591595319275522.json、图片生成/文生图/Zimage-Cc-风情万种_2020170940788772866.json、图片生成/文生图/（贞贞-Ai Toolkit 3W步）Z-Image-Base文生图V1_2036432332558704642.json、图片生成/文生图/（贞贞版-15W步-none）Z-image-base文生图高清版_2036429688607875074.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/VividMuse真实人像摄影洗图V1_2017936931623018498.json、图片生成/图生图/VividMuse真实人像摄影洗图V2_2036774382349066242.json、图片生成/图生图/Z-image+FLUX.2 klein真实人像洗图流_2083187504395677698.json、图片生成/文生图/VividMuse真实人像摄影V1_2015351994625564673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
 - `ImageResize+`
 - `ImageScaleBy`
-- `KSampler`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
@@ -37,47 +48,49 @@ source: knowledge_consolidation
 - `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `GetImageSize+` —— 3/4 个有
-- `ImageCASharpening+` —— 3/4 个有
+- `DownloadAndLoadFlorence2Model` —— 3/4 个有
+- `Florence2Run` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `LayerUtility: ImageReel` —— 3/4 个有
+- `LayerUtility: ImageReelComposit` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
 - `LoraLoaderModelOnly` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `KOOK_SaveJPGImage` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `RunningHub Deepcleaner` —— 2/4 个有
-- `CLIPLoaderGGUF` —— 1/4 个有
-- `ConstrainImage|pysssss` —— 1/4 个有
-- `Get Image Size` —— 1/4 个有
-- `Image Filter Adjustments` —— 1/4 个有
-- `JWFloat` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
+- `SetNode` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `WD14Tagger|pysssss` —— 3/4 个有
+- `easy imageColorMatch` —— 3/4 个有
+- `easy promptConcat` —— 3/4 个有
+- `BasicScheduler` —— 2/4 个有
+- `SigmasPreview` —— 2/4 个有
+- `easy promptReplace` —— 2/4 个有
+- `DF_Text_Box` —— 1/4 个有
+- `EmptyLatentImage` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 27.5 | 8 - 30 | 4 | 61% |
-| Prompt 约束强度(CFG) | 1.5 | 1 - 3 | 4 | 57% |
-| 采样算法 | res_multistep | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 50% |
+| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 4 | 50% |
+| 宽度 | 1536 | - | 1 | 100% |
+| 高度 | 2048 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 27.5，观测区间 8 - 30，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 3，4 个样本
-- 采样算法 最常用 res_multistep，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 50%
+- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，4 个样本，一致性 50%

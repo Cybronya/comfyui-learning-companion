@@ -3,44 +3,34 @@ name: unknown_workflow_generic_928
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.81
-common_nodes: [CR Text, JjkText, LoadImage, RH_LLMAPI_NODE, SaveImage, ShowText, Text Concatenate, easy promptLine]
+coverage: 0.718667
+common_nodes: [AILab_QwenVL, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜_2003449397524504578.json, 图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜优化版_2004050804808007682.json, 图片生成/图生图/角色一致性、场景一致性、动作一致性_1999841783662211073.json]
+members: [图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085592824753512450.json, 图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085920153820295170.json, 图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085931991177973761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_928
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜_2003449397524504578.json、图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜优化版_2004050804808007682.json、图片生成/图生图/角色一致性、场景一致性、动作一致性_1999841783662211073.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085592824753512450.json、图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085920153820295170.json、图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085931991177973761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
+- `AILab_QwenVL`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `ShowText`
-- `Text Concatenate`
-- `easy promptLine`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 2/3 个有
-- `Comfly_nano_banana2_edit_S2A` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `RH_Nano_Banana_Image2Image` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
 
 ## 典型参数
 

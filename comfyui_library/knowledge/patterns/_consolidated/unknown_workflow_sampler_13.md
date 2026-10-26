@@ -1,46 +1,42 @@
 ---
 name: unknown_workflow_sampler_13
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.856
-common_nodes: [EligenArgsConcat, LoadImage, LoadQwenImageDiffSynthiPipe, MaskToImage, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetEligenArgs]
+coverage: 0.91075
+common_nodes: [AudioConcat, EmptyAudio, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json, 图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json, 图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json, 图片生成/文生图/Qwen千问Eligen自由设计画布_1954024086618066945.json, 图片生成/文生图/指哪画哪！Qwen-Image自由画布eligen_1955738055426674689.json]
+members: [数字人/数字人/FlashTalk Head数字人V2_2027598784703766529.json, 数字人/数字人/SoulX-FlashHead 数字人_2027580524998430721.json, 数字人/数字人/数字人-FlashTalk-Head-V3-适合做口播，速度快！_2027730831661338625.json, 视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json, 视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json, 视频生成/图生视频/FlashTalk Head数字人_2027563123820994562.json, 视频生成/图生视频/FlashTalk Head数字人说话ai视频数字人说话头部说话图片说话工作流_2029234850993016833.json, 视频生成/图生视频/FlashTalk Head数字人：说话ai视频数字人说话头部说话图片说话工作流_2029413413356572674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_13
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json、图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json、图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/FlashTalk Head数字人V2_2027598784703766529.json、数字人/数字人/SoulX-FlashHead 数字人_2027580524998430721.json、数字人/数字人/数字人-FlashTalk-Head-V3-适合做口播，速度快！_2027730831661338625.json、视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json、视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `EligenArgsConcat`
+全部 8 个 workflow 都包含：
+- `AudioConcat`
+- `EmptyAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `MaskToImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
-- `SaveImage`
-- `SetEligenArgs`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImageRatio2Size` —— 6/7 个有
-- `LoadQwenImageDiffSynthLora` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `CR Text` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `SetMultiEligenArgs` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `JWInteger` —— 6/8 个有
+- `SaveAudio` —— 5/8 个有
+- `AudioCrop` —— 3/8 个有
+- `CustomAddLabel` —— 1/8 个有
 
 ## 典型参数
 

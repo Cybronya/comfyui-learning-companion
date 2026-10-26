@@ -3,35 +3,34 @@ name: unknown_workflow_generic_595
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.623
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.7224
+common_nodes: [JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMula写歌自由_2013510932797857794.json, 音频生成/音频生成/HeartMula写歌自由_2043629399446130690.json, 音频生成/音频生成/HeartMula开源版SUNO免费音乐生成器-歌词提取器_2072273015613775873.json, 音频生成/音频生成/开源AI音乐创作-输入歌词，内置20种参考风格_2046661538991316993.json, 音频生成/音频生成/自由写歌 创意无限 一分钟音频_2019579092227596290.json]
+members: [图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json, 图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json, 图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json, 图片生成/图生图/阿华抽图工作流_1970000592376655874.json, 图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_595
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMula写歌自由_2013510932797857794.json、音频生成/音频生成/HeartMula写歌自由_2043629399446130690.json、音频生成/音频生成/HeartMula开源版SUNO免费音乐生成器-歌词提取器_2072273015613775873.json、音频生成/音频生成/开源AI音乐创作-输入歌词，内置20种参考风格_2046661538991316993.json、音频生成/音频生成/自由写歌 创意无限 一分钟音频_2019579092227596290.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json、图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json、图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json、图片生成/图生图/阿华抽图工作流_1970000592376655874.json、图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `JjkText`
+- `LoadImage`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
 
 ## 典型参数
 

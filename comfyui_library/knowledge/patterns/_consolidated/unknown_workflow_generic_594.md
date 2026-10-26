@@ -3,38 +3,38 @@ name: unknown_workflow_generic_594
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6558
-common_nodes: [CR Text, CR Text Concatenate, HeartMuLa_Generate, RH_LLMAPI_Pro_Node, SaveAudio, ShowText|pysssss]
+coverage: 0.8534
+common_nodes: [AILab_QwenVL, LoadImage, RH_RhartImageG2TextToImage, SaveImage, ShowAnything|Mie, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa模型音乐生成手动填歌词版本ai智能创作生成流行摇滚古典民谣爵士乡村蓝调说唱等音乐_2015025303659220994.json, 音频生成/音频生成/HeartMuLa音乐生成手动歌词版（开源最强）_2013520887751905281.json, 音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2013470680741842946.json, 音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2014250098347220993.json, 音频生成/音频生成/HeartMuLa音乐自动歌词（小suno）_2014027397196156930.json]
+members: [图片生成/图生图/千禧记忆2.0_2060285625940668418.json, 图片生成/图生图/千禧记忆3.0_2060291603901804545.json, 图片生成/图生图/千禧记忆4.0_2060336919338373122.json, 图片生成/图生图/千禧记忆_2057448789543309313.json, 图片生成/图生图/千禧记忆_2060185952689156097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_594
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa模型音乐生成手动填歌词版本ai智能创作生成流行摇滚古典民谣爵士乡村蓝调说唱等音乐_2015025303659220994.json、音频生成/音频生成/HeartMuLa音乐生成手动歌词版（开源最强）_2013520887751905281.json、音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2013470680741842946.json、音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2014250098347220993.json、音频生成/音频生成/HeartMuLa音乐自动歌词（小suno）_2014027397196156930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/千禧记忆2.0_2060285625940668418.json、图片生成/图生图/千禧记忆3.0_2060291603901804545.json、图片生成/图生图/千禧记忆4.0_2060336919338373122.json、图片生成/图生图/千禧记忆_2057448789543309313.json、图片生成/图生图/千禧记忆_2060185952689156097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `HeartMuLa_Generate`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `AILab_QwenVL`
+- `LoadImage`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+- `ShowAnything|Mie`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `RH_LLMAPI_NODE` —— 3/5 个有
-- `easy saveText` —— 3/5 个有
-- `Any Switch (rgthree)` —— 1/5 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 3/5 个有
+- `io-text-save` —— 2/5 个有
+- `preview_text` —— 2/5 个有
 
 ## 典型参数
 

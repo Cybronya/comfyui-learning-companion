@@ -3,65 +3,79 @@ name: unknown_workflow_video_lora_sampler_453
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7936
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8226
+common_nodes: [DownloadAndLoadWav2VecModel, ImageFromBatch+, Int, JWInteger, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json, 视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json, 视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json, 视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json, 音频生成/音频生成/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100058854255063042.json]
+members: [图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json, 数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json, 数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json, 视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json, 视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_453
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json、视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json、视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json、视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json、音频生成/音频生成/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100058854255063042.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json、数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json、数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json、视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json、视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
-- `UNETLoader`
-- `VAELoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageFromBatch+`
+- `Int`
+- `JWInteger`
+- `LoadAudio`
+- `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 4/5 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 4/5 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 4/5 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 4/5 个有
-- `PrimitiveFloat` —— 4/5 个有
-- `LoadAudio` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `孤海注释` —— 2/5 个有
-- `AudioCrop` —— 1/5 个有
-- `ConcatTextOfUtils` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `GetNode` —— 1/5 个有
+- `AudioCrop` —— 4/5 个有
+- `AudioSeparation` —— 4/5 个有
+- `CR Integer To String` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `ImageResize+` —— 4/5 个有
+- `ImpactSwitch` —— 4/5 个有
+- `RH_LLMAPI_NODE` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `SoundFlow_GetLength` —— 4/5 个有
+- `Text Concatenate` —— 4/5 个有
+- `ToInt` —— 4/5 个有
+- `Wan22PromptSelector` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
 - `ImageResizeKJv2` —— 1/5 个有
-- `JWStringToFloat` —— 1/5 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/5 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `MelBandRoFormerModelLoader` —— 1/5 个有
+- `MelBandRoFormerSampler` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `VideoCombine_Adv` —— 1/5 个有
 
 ## 典型参数
 

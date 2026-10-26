@@ -1,49 +1,40 @@
 ---
 name: unknown_workflow_generic_417
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.747833
-common_nodes: [ImageScale, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
+coverage: 0.802857
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 GGUF版本（低显存且放大参数高于6k时使用）——适用于高清的增加细节+全节点注释_2054878600821788673.json, 图片生成/图生图/seedVR2 原模分块版本（放大参数高于4k时使用）——适用于不清晰的+全节点注释_2054878680249315330.json, 图片生成/图生图/seedVR2_原模分块版本放大参数高于4k时使用-适用于不清晰的_2055544526051266562.json, 图片生成/图生图/seedvr2 超高清无损放大_1967443133325828098.json, 图片生成/图生图/seedvr2放大_1986367857825087490.json, 图片生成/图生图/啊癫 SeedVR2图像高清放大流_1971202743803297794.json]
+members: [音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json, 音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json, 音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json, 音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1984116301922795522.json, 音频生成/音频生成/音频克隆 单双人SoulX_1984268792450662401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_417
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/seedVR2 GGUF版本（低显存且放大参数高于6k时使用）——适用于高清的增加细节+全节点注释_2054878600821788673.json、图片生成/图生图/seedVR2 原模分块版本（放大参数高于4k时使用）——适用于不清晰的+全节点注释_2054878680249315330.json、图片生成/图生图/seedVR2_原模分块版本放大参数高于4k时使用-适用于不清晰的_2055544526051266562.json、图片生成/图生图/seedvr2 超高清无损放大_1967443133325828098.json、图片生成/图生图/seedvr2放大_1986367857825087490.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json、音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json、音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json、音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json、音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageScale`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy imageSizeBySide`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `PlaySound|pysssss` —— 3/6 个有
-- `SeedVR2` —— 3/6 个有
-- `SeedVR2GGUF` —— 3/6 个有
-- `PreviewImage` —— 1/6 个有
+- `PreviewAudio` —— 5/7 个有
+- `JjkText` —— 2/7 个有
+- `TextConcatenator` —— 2/7 个有
+- `Note _O` —— 1/7 个有
 
 ## 典型参数
 

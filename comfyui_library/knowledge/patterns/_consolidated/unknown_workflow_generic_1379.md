@@ -3,39 +3,37 @@ name: unknown_workflow_generic_1379
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9475
-common_nodes: [DF_Get_image_size, Fast Groups Bypasser (rgthree), ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHub DreamO, SaveImage]
+coverage: 0.778
+common_nodes: [CR Image Input Switch, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PromptBatchQueue, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy imageRemBg, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json, "图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json"]
+members: [图片生成/图生图/KR_提取白底图分裂细节图（1号工作流）_2063253990929948674.json, 图片生成/图生图/LETA转换白底_2084829818100731906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1379
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json、图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KR_提取白底图分裂细节图（1号工作流）_2063253990929948674.json、图片生成/图生图/LETA转换白底_2084829818100731906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DF_Get_image_size`
+- `CR Image Input Switch`
+- `CR Prompt Text`
 - `Fast Groups Bypasser (rgthree)`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `ImageScaleDownToSize`
 - `LoadImage`
-- `RunningHub DreamO`
+- `PromptBatchQueue`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `easy imageRemBg`
+- `easy promptConcat`
+- `easy showAnything`
 
 ## 典型参数
 

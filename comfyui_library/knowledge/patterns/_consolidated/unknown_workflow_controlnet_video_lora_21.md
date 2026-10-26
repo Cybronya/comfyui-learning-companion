@@ -1,99 +1,87 @@
 ---
 name: unknown_workflow_controlnet_video_lora_21
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.43
-common_nodes: [Any Switch (rgthree), Audio Cut (mtb), AudioSeparation, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetNode, ImageFromBatch+, ImageResizeKJ, Int, LoadImage, MultiTalkModelLoader, MultiTalkSilentEmbeds, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, SimpleMath+, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy seed, easy showAnything]
+coverage: 0.5276
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoVAELoader, easy int, easy positive]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json, 视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json, 视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json]
+members: [数字人/数字人/自用数字人「I2V模式」_1951202960044961793.json, 视频生成/图生视频/multitalk最稳定数字人_1938467765139496961.json, 视频生成/图生视频/数字人对口型_2020045552515289089.json, 视频生成/图生视频/音乐数字人 multitalk超越闭源的数字人！_1937584753665032193.json, 视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json、视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json、视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/自用数字人「I2V模式」_1951202960044961793.json、视频生成/图生视频/multitalk最稳定数字人_1938467765139496961.json、视频生成/图生视频/数字人对口型_2020045552515289089.json、视频生成/图生视频/音乐数字人 multitalk超越闭源的数字人！_1937584753665032193.json、视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Cut (mtb)`
+全部 5 个 workflow 都包含：
 - `AudioSeparation`
+- `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
-- `Int`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkSilentEmbeds`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
 - `SetNode`
 - `SimpleMath+`
-- `VHS_LoadAudioUpload`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
-- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
-- `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy seed`
-- `easy showAnything`
+- `easy int`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `FantasyPortraitFaceDetector` —— 2/3 个有
-- `FantasyPortraitModelLoader` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `ImageSmartSharpen+` —— 2/3 个有
-- `ImpactControlBridge` —— 2/3 个有
-- `LoadLynxResampler` —— 2/3 个有
-- `LoadWanVideoClipTextEncoder` —— 2/3 个有
-- `LoadWanVideoT5TextEncoder` —— 2/3 个有
-- `LynxEncodeFaceIP` —— 2/3 个有
-- `LynxInsightFaceCrop` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `WanVideoAddFantasyPortrait` —— 2/3 个有
-- `WanVideoAddLynxEmbeds` —— 2/3 个有
-- `WanVideoClipVisionEncode` —— 2/3 个有
-- `WanVideoExtraModelSelect` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `WanVideoTextEncodeCached` —— 2/3 个有
-- `WanVideoTextEncodeSingle` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy imageRemBg` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `ApplyFaceProcessor` —— 1/3 个有
-- `BboxVisualize` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `FaceProcessorLoader` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `InpaintCropImproved` —— 1/3 个有
-- `LandmarksToImage` —— 1/3 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/3 个有
-- `OnnxDetectionModelLoader` —— 1/3 个有
-- `PoseDetectionOneToAllAnimation` —— 1/3 个有
-- `WanVideoAddStandInLatent` —— 1/3 个有
-- `WanVideoUniAnimatePoseInput` —— 1/3 个有
-- `WanVideoVACEEncode` —— 1/3 个有
-- `WanVideoVACEModelSelect` —— 1/3 个有
+- `Any Switch (rgthree)` —— 4/5 个有
+- `Audio Cut (mtb)` —— 4/5 个有
+- `AudioCrop` —— 4/5 个有
+- `MultiTalkModelLoader` —— 4/5 个有
+- `PreviewAudio` —— 4/5 个有
+- `PrimitiveString` —— 4/5 个有
+- `StringConcatenate` —— 4/5 个有
+- `VHS_DuplicateImages` —— 4/5 个有
+- `VHS_LoadVideo` —— 4/5 个有
+- `WanVideoEncode` —— 4/5 个有
+- `WanVideoModelLoader` —— 4/5 个有
+- `WanVideoUni3C_embeds` —— 4/5 个有
+- `WanVideoVRAMManagement` —— 4/5 个有
+- `easy seed` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `Bookmark (rgthree)` —— 3/5 个有
+- `Fast Groups Muter (rgthree)` —— 3/5 个有
+- `Label (rgthree)` —— 3/5 个有
+- `Mute / Bypass Repeater (rgthree)` —— 3/5 个有
+- `WanVideoContextOptions` —— 3/5 个有
+- `GoogleTranslateTextNode` —— 2/5 个有
+- `Mute / Bypass Relay (rgthree)` —— 2/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `RH_Translator` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
 
 ## 典型参数
 

@@ -2,69 +2,58 @@
 name: unknown_workflow_lora_sampler_unet_208
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.578333
-common_nodes: [CLIPLoader, CLIPVisionLoader, ComfySwitchNode, CreateCameraInfo, EmptyLatentImage, GetImageSize, GetNode, InvertMask, JoinImageWithAlpha, KSampler, LoadBackgroundRemovalModel, LoadImage, LoraLoaderModelOnly, PreviewGaussianSplat, PreviewImage, QwenImage21Cache, RemoveBackground, RenderMesh, SaveImage, SetNode, SplatToFile3D, SplatToMesh, TextEncodeQwenImage21, TripoSplatConditioning, TripoSplatPreprocessImage, TripoSplatSamplingPreview, UNETLoader, VAEDecode, VAEDecodeTripoSplat, VAELoader]
+level: moderate
+coverage: 0.651
+common_nodes: [CFGGuider, CLIPLoader, CR Prompt Text, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, Load Lora, LoadImage, LoraLoaderModelOnly, MultiTextConcatenate, PainterFluxImageEdit, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen2.1 Triposplat + AnyAngles-T 角色任意角度图像生成工作流_2108161798909284353.json, 图片生成/图生图/Qwen2.1_Triposplat_+_AnyAngles-T_角色任意角度图像生成工作流_2110646897986859010.json, 图片生成/图生图/Qwen2.1_Triposplat_+_AnyAngles-T_角色任意角度图像生成工作流_2111276552355930113.json]
+members: [图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2096882637192388610.json, 图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2097174326075289602.json, 图片生成/文生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2067154895031066625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen2.1 Triposplat + AnyAngles-T 角色任意角度图像生成工作流_2108161798909284353.json、图片生成/图生图/Qwen2.1_Triposplat_+_AnyAngles-T_角色任意角度图像生成工作流_2110646897986859010.json、图片生成/图生图/Qwen2.1_Triposplat_+_AnyAngles-T_角色任意角度图像生成工作流_2111276552355930113.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2096882637192388610.json、图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2097174326075289602.json、图片生成/文生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2067154895031066625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `CLIPVisionLoader`
-- `ComfySwitchNode`
-- `CreateCameraInfo`
-- `EmptyLatentImage`
+- `CR Prompt Text`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `GetImageSize`
 - `GetNode`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `KSampler`
-- `LoadBackgroundRemovalModel`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `Load Lora`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewGaussianSplat`
+- `MultiTextConcatenate`
+- `PainterFluxImageEdit`
 - `PreviewImage`
-- `QwenImage21Cache`
-- `RemoveBackground`
-- `RenderMesh`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SetNode`
-- `SplatToFile3D`
-- `SplatToMesh`
-- `TextEncodeQwenImage21`
-- `TripoSplatConditioning`
-- `TripoSplatPreprocessImage`
-- `TripoSplatSamplingPreview`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTripoSplat`
 - `VAELoader`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 3 | 100% |
-| 采样算法 | dpmpp_2m | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,10 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

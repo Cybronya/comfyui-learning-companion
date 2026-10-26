@@ -1,74 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_244
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.672625
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.894
+common_nodes: [CLIPVisionLoader, ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
 problems: []
 missing: []
-members: [视频生成/图生视频/Best_Wan2.2_图片跳舞指定动作_1973849425091104769.json, 视频生成/图生视频/SP503-表情迁移（wan2.2 Animate）加速版视频表情迁移_1969386195249733634.json, 视频生成/图生视频/SP504-视频换装换脸（wan2.2 Animate）_1970147620683476994.json, 视频生成/图生视频/WAN2.2Animate美女图片跳舞工作流【动作，表情迁移】_1971382412112510978.json, 视频生成/图生视频/Wan Animate2.2动作迁移Move加速版V1_1969195120677580801.json, 视频生成/图生视频/最强视频换装+Animate+Wan2.2_1985660962449629185.json, 视频生成/图生视频/视频换装 Animate Wan2.2_1976261739643838466.json, 视频生成/文生视频/Animate+Wan2.2 视频换装 模特服装更换_1970644180198453250.json]
+members: [视频生成/图生视频/03-19-01-WAN2.1-扭曲艺术-Wanmove+Fill Nodes动与静轨迹控制_2000440766998736897.json, 视频生成/图生视频/Wan move指定轨迹运动-指引-图生视频版本1_1999398013804179457.json, 视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json, 视频生成/图生视频/Wan-Move：编辑点轨迹控制动态和静态_1999823566369587201.json, 视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json, 视频生成/图生视频/WanMove运动轨迹控制V1（创意玩法）_2000263694896558082.json, 视频生成/图生视频/Wanmove+Fill Nodes 动与静轨迹控制 【 1.0 】_1999310460828647425.json, 视频生成/图生视频/Wanmove+Fill Nodes动与静轨迹控制V1（扭曲艺术）_1999117506138828801.json, 视频生成/图生视频/Wanmove+Fill+Nodes轨迹控制V1_1999165322026418177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_244
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Best_Wan2.2_图片跳舞指定动作_1973849425091104769.json、视频生成/图生视频/SP503-表情迁移（wan2.2 Animate）加速版视频表情迁移_1969386195249733634.json、视频生成/图生视频/SP504-视频换装换脸（wan2.2 Animate）_1970147620683476994.json、视频生成/图生视频/WAN2.2Animate美女图片跳舞工作流【动作，表情迁移】_1971382412112510978.json、视频生成/图生视频/Wan Animate2.2动作迁移Move加速版V1_1969195120677580801.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/03-19-01-WAN2.1-扭曲艺术-Wanmove+Fill Nodes动与静轨迹控制_2000440766998736897.json、视频生成/图生视频/Wan move指定轨迹运动-指引-图生视频版本1_1999398013804179457.json、视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json、视频生成/图生视频/Wan-Move：编辑点轨迹控制动态和静态_1999823566369587201.json、视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `ImageConcanate`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `WanVideoWanDrawWanMoveTracks`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/8 个有
-- `ImageConcatMulti` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `VHS_VideoInfo` —— 5/8 个有
-- `easy cleanGpuUsed` —— 5/8 个有
-- `BlockifyMask` —— 4/8 个有
-- `DrawMaskOnImage` —— 4/8 个有
-- `GrowMask` —— 4/8 个有
-- `LayerUtility: PurgeVRAM` —— 4/8 个有
-- `GetImageSizeAndCount` —— 3/8 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 3/8 个有
-- `ImageFromBatch` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `MathExpression|pysssss` —— 2/8 个有
-- `Note Plus (mtb)` —— 2/8 个有
-- `PlaySound|pysssss` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `WanVideoTorchCompileSettings` —— 2/8 个有
-- `easy convertAnything` —— 2/8 个有
-- `easy positive` —— 2/8 个有
-- `Anything Everywhere` —— 1/8 个有
-- `LayerMask: SegformerClothesPipelineLoader` —— 1/8 个有
-- `LayerMask: SegformerUltraV2` —— 1/8 个有
+- `FL_PathAnimator` —— 6/9 个有
+- `INTConstant` —— 6/9 个有
+- `RepeatImageBatch` —— 6/9 个有
+- `SplineEditor` —— 6/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `GetNode` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `easy showAnything` —— 2/9 个有
+- `HAIGC_VideoLoader` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `ImpactSwitch` —— 1/9 个有
+- `LazySwitchKJ` —— 1/9 个有
+- `Primitive integer [Crystools]` —— 1/9 个有
+- `SeedVR2` —— 1/9 个有
+- `SeedVR2BlockSwap` —— 1/9 个有
+- `SeedVR2ExtraArgs` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `WanVideoTorchCompileSettings` —— 1/9 个有
 
 ## 典型参数
 

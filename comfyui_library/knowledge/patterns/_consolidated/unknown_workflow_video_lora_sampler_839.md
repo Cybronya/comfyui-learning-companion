@@ -3,59 +3,63 @@ name: unknown_workflow_video_lora_sampler_839
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6705
-common_nodes: [Bjornulf_AnythingToText, Bjornulf_ShowInt, Bjornulf_ShowStringText, CLIPTextEncode, CR String To Boolean, CR String To Number, CR Text Input Switch (4 way), GetNode, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Note _O, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement]
+coverage: 0.9455
+common_nodes: [AIO_Preprocessor, CR Text Concatenate, ColorMatch, GetImageSizeAndCount, ImageResizeKJ, JWInteger, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json, 视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json]
+members: [视频生成/图生视频/F+万相简简单单的动作迁移_1938243040110903297.json, 视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_839
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json、视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/F+万相简简单单的动作迁移_1938243040110903297.json、视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_AnythingToText`
-- `Bjornulf_ShowInt`
-- `Bjornulf_ShowStringText`
-- `CLIPTextEncode`
-- `CR String To Boolean`
-- `CR String To Number`
-- `CR Text Input Switch (4 way)`
-- `GetNode`
-- `ImpactSwitch`
-- `Int`
-- `JjkText`
+- `AIO_Preprocessor`
+- `CR Text Concatenate`
+- `ColorMatch`
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
+- `JWInteger`
+- `LayerMask: LoadFlorence2Model`
+- `LayerUtility: Florence2Image2Prompt`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `Note _O`
-- `SetNode`
+- `MathExpression|pysssss`
+- `RH_Translator`
+- `ShowText|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
+- `WanVideoMagCache`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
+- `easy int`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
+- `GIMMVFI_interpolate` —— 1/2 个有
+- `ImageScaleToMegapixels` —— 1/2 个有
+- `ImageSmartSharpen+` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
 
 ## 典型参数
 

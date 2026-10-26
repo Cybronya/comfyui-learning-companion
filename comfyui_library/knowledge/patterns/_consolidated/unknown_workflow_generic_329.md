@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_329
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.924
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadOmniGen2Model, OmniGen2, PMRF, RH_Translator, SaveImage]
+coverage: 0.7595
+common_nodes: [CR Prompt Text, ImpactSwitch, LoadImage, RH_Sora2_I2V, SaveVideo, Text Concatenate, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniGen2一致性编辑媲美Kontext_1936973220929245185.json, 图片生成/图生图/OmniGen2主体增加物品+高清化V1_1936647673447370753.json, 图片生成/图生图/OmniGen2换背景+高清化V1_1936621728108023809.json, 图片生成/图生图/OmniGen2风格转化+高清化V1_1936622137207853057.json, 图片生成/图生图/Omnigen2主体颜色编辑+高清化V1_1936625546971238402.json, 图片生成/图生图/Omnigen2双人编辑+高清化实验版V1_1936622124867964929.json, 图片生成/图生图/Omnigen2擦除物体+高清化实验版V1_1936626557861662722.json]
+members: [视频生成/图生视频/0元生成15s的全能视频S带货视频_2004804181263351810.json, 视频生成/图生视频/全能视频S图生视频0.05元_次_1973502975085817858.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976197006022574081.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1978398824693698561.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1998406614531080193.json, 视频生成/图生视频/全能视频S图生视频（前5次免费，后5分钱一次）_1973712515601403905.json, 视频生成/文生视频/全能视频S一键黑白线稿生成广告视频（api版本）0.05_10秒_1981939164268634113.json, 视频生成/文生视频/全能视频S图生视频-RH API版-国庆0.05元_10秒-测试运行十分钟耗费117rh币_1973736551656108033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_329
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/OmniGen2一致性编辑媲美Kontext_1936973220929245185.json、图片生成/图生图/OmniGen2主体增加物品+高清化V1_1936647673447370753.json、图片生成/图生图/OmniGen2换背景+高清化V1_1936621728108023809.json、图片生成/图生图/OmniGen2风格转化+高清化V1_1936622137207853057.json、图片生成/图生图/Omnigen2主体颜色编辑+高清化V1_1936625546971238402.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/0元生成15s的全能视频S带货视频_2004804181263351810.json、视频生成/图生视频/全能视频S图生视频0.05元_次_1973502975085817858.json、视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976197006022574081.json、视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1978398824693698561.json、视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1998406614531080193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImpactSwitch`
 - `LoadImage`
-- `LoadOmniGen2Model`
-- `OmniGen2`
-- `PMRF`
-- `RH_Translator`
-- `SaveImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+- `Text Concatenate`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 6/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `Text Multiline` —— 1/7 个有
+- `SaveText|pysssss` —— 4/8 个有
+- `ShowText` —— 4/8 个有
+- `PrimitiveString` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

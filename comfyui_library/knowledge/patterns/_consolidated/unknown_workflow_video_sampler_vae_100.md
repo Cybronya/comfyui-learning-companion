@@ -3,71 +3,54 @@ name: unknown_workflow_video_sampler_vae_100
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.853
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.857
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, LoadImage, Note _O, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/infinitetalk数字人_2084490925362999297.json, 视频生成/图生视频/INFINITE talk，实现无限时长、口型精准的视频配音_1972120402749222914.json, 视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json, 视频生成/图生视频/InfiniteTalk图像双人对口型_1971843495331819522.json, 视频生成/图生视频/视频对口型_1971064636227391489.json]
+members: [视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json, 视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json, 视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json, 视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json, 视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_100
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/infinitetalk数字人_2084490925362999297.json、视频生成/图生视频/INFINITE talk，实现无限时长、口型精准的视频配音_1972120402749222914.json、视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json、视频生成/图生视频/InfiniteTalk图像双人对口型_1971843495331819522.json、视频生成/图生视频/视频对口型_1971064636227391489.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json、视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json、视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json、视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json、视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `VHS_LoadVideo`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `LoadImage`
+- `Note _O`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 4/5 个有
-- `Audio Duration (mtb)` —— 3/5 个有
-- `AudioCrop` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `INTConstant` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `JWIntegerToString` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `WanVideoLoraSelectMulti` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `JWFloat` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `easy int` —— 1/5 个有
+- `Image Resize` —— 4/5 个有
+- `LayerUtility: PurgeVRAM` —— 4/5 个有
+- `Note Plus (mtb)` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `HyVideoLoraSelect` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `JWImageResizeByLongerSide` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

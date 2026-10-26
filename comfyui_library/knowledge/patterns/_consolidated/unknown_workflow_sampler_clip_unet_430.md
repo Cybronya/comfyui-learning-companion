@@ -3,91 +3,56 @@ name: unknown_workflow_sampler_clip_unet_430
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.839
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Latent Batch Size, ConstrainImage|pysssss, DepthAnythingV2Preprocessor, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LayerFilter: FilmV2, LayerFilter: HDREffects, LayerUtility: TextJoin, LoadImage, PortraitMaster, PortraitMasterMakeup, PortraitMasterSkinDetails, PortraitMasterStylePose, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8835
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json, 图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json]
+members: [图片生成/图生图/Qwen-image最强反推洗图~洗文字，洗海报！无所不洗！_1954009993588690946.json, 图片生成/文生图/Qwen-Image文字海报生成（含图像提示词反推）_1953630061981257729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_430
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json、图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-image最强反推洗图~洗文字，洗海报！无所不洗！_1954009993588690946.json、图片生成/文生图/Qwen-Image文字海报生成（含图像提示词反推）_1953630061981257729.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Latent Batch Size`
-- `ConstrainImage|pysssss`
-- `DepthAnythingV2Preprocessor`
-- `DualCLIPLoader`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LayerFilter: FilmV2`
-- `LayerFilter: HDREffects`
-- `LayerUtility: TextJoin`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoadImage`
-- `PortraitMaster`
-- `PortraitMasterMakeup`
-- `PortraitMasterSkinDetails`
-- `PortraitMasterStylePose`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `RH_Captioner`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StyleModelApply`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ArgosTranslateTextNode` —— 1/2 个有
-- `Batch_joy_caption_two_advanced` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `Joy_caption_two` —— 1/2 个有
-- `Joy_caption_two_load` —— 1/2 个有
-- `Joy_extra_options` —— 1/2 个有
-- `LayerFilter: AddGrain` —— 1/2 个有
-- `LayerFilter: MotionBlur` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `FluxKontextImageScale` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.5 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
-| ControlNet 权重 | 0.3 | - | 1 | 100% |
-| 宽度 | 768 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 3.25 | - | 2 | 77% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -95,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3.25，样本不足，未给区间，2 个样本
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

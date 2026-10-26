@@ -1,80 +1,103 @@
 ---
 name: text_to_image_lora_sampler_clip_579
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.735
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, ImageLoader, JoinStringMulti, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, Qwen3_VQA, SaveImage, SetNode, ShowText|pysssss, String, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy convertAnything]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.939333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CannyEdgePreprocessor, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, DWPreprocessor, EmptyLTXVLatentVideo, EmptyLatentImage, GemmaAPITextEncode, GetImageSize, GetVideoComponents, ImageScale, ImageToMask, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVDilateVideoMask, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLaplacianPyramidBlend, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, MaskToImage, PrimitiveBoolean, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMath+, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image美女一致性自动洗图和自动去水印工作流，适合抖音、快手等自媒体平台大量出图_2012830979110473729.json, 图片生成/图生图/黛玉妹妹Z-IMAGE-lora-图生图，适合抖音快手头条等平台_2019998492009172994.json]
+members: [视频生成/图生视频/LTX2.3图生视频人物动作迁移 高精度视频角色动态转换方案_2092548572561633282.json, 视频生成/图生视频/人物动作迁移视频LTX2.3图生视频工作流_2088387000385761281.json, 视频生成/图生视频/人物动作迁移视频｜LTX2.3图生视频工作流_2088357506513985538.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_579
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z-image美女一致性自动洗图和自动去水印工作流，适合抖音、快手等自媒体平台大量出图_2012830979110473729.json、图片生成/图生图/黛玉妹妹Z-IMAGE-lora-图生图，适合抖音快手头条等平台_2019998492009172994.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3图生视频人物动作迁移 高精度视频角色动态转换方案_2092548572561633282.json、视频生成/图生视频/人物动作迁移视频LTX2.3图生视频工作流_2088387000385761281.json、视频生成/图生视频/人物动作迁移视频｜LTX2.3图生视频工作流_2088357506513985538.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CannyEdgePreprocessor`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DWPreprocessor`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageLoader`
-- `JoinStringMulti`
+- `GemmaAPITextEncode`
+- `GetImageSize`
+- `GetVideoComponents`
+- `ImageScale`
+- `ImageToMask`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXFloatToInt`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVDilateVideoMask`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVLaplacianPyramidBlend`
+- `LTXVSeparateAVLatent`
+- `LTXVTiledVAEDecode`
+- `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `Qwen3_VQA`
-- `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `String`
+- `ManualSigmas`
+- `MaskToImage`
+- `PrimitiveBoolean`
+- `PrimitiveString`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `TextEncodeQwenImageEdit` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1500 | - | 2 | 72% |
-| 高度 | 1500 | - | 2 | 72% |
-| 采样步数 | 15 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1.75 | - | 2 | 57% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1500，样本不足，未给区间，2 个样本
-- 高度 中位数 1500，样本不足，未给区间，2 个样本
-- 采样步数 中位数 15，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，样本不足，未给区间，2 个样本
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

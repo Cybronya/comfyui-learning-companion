@@ -1,69 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_unet_89
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.994571
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.803125
+common_nodes: [CLIPLoader, ConditioningZeroOut, ImageScaleBy, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI漫剧角色三视图-盯盯盯-V2.0云端+本地三个版本_2026321552664432641.json, 图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json, 图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json, 图片生成/图生图/三视图-Qwen2511-高度一致性_2071975841445269506.json, 图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511-保持高度一致性_2023398149548675073.json, 图片生成/图生图/即梦、小云雀、豆包、seedance2.0真人过审核方法-Qwen-2511_2036336291356352513.json, 图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-Qwen-2511_2034590390044598273.json]
+members: [图片生成/图生图/Qwen Edit 2509图像编辑 浮云2.3_2018594385880944642.json, 图片生成/图生图/Qwen Edit 2511 单图、双图、三图 编辑_2017210536177438721.json, 图片生成/图生图/Qwen Edit 2511图像编辑V1-单图编辑_2003668776639995905.json, 图片生成/图生图/Qwen Edit 2511图像编辑V2（一致性加强版）_2003550580272447490.json, 图片生成/图生图/Qwen Edit 2511图像编辑_2003784726580240385.json, 图片生成/图生图/Qwen Edit 2511多图像编辑（一致性加强版）_2003696893463019521.json, 图片生成/图生图/Qwen+Edit+2511图像编辑V1-单图编辑_2003717023706300417.json, 图片生成/图生图/【新版】动漫转真人_1988926427942760450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_89
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI漫剧角色三视图-盯盯盯-V2.0云端+本地三个版本_2026321552664432641.json、图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json、图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json、图片生成/图生图/三视图-Qwen2511-高度一致性_2071975841445269506.json、图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511-保持高度一致性_2023398149548675073.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2509图像编辑 浮云2.3_2018594385880944642.json、图片生成/图生图/Qwen Edit 2511 单图、双图、三图 编辑_2017210536177438721.json、图片生成/图生图/Qwen Edit 2511图像编辑V1-单图编辑_2003668776639995905.json、图片生成/图生图/Qwen Edit 2511图像编辑V2（一致性加强版）_2003550580272447490.json、图片生成/图生图/Qwen Edit 2511图像编辑_2003784726580240385.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `EmptySD3LatentImage`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `MuyeTextEditOutput` —— 1/7 个有
-- `PainterFluxImageEdit` —— 1/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
+- `CropWithPadInfo` —— 7/8 个有
+- `PreviewAny` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `QwenEditOutputExtractor` —— 7/8 个有
+- `ImageConcanate` —— 6/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `EmptyLatentImage` —— 2/8 个有
+- `easy imageConcat` —— 2/8 个有
+- `FluxResolutionNode` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `TextEncodeQwenImageEditPlus` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | sa_solver | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | beta57 | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 768 | - | 2 | 67% |
+| 高度 | 1108 | - | 2 | 46% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（12/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 beta57，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，样本不足，未给区间，2 个样本
+- 高度 中位数 1108，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
+- 高发问题（10/8 个样本）：Steps较低可能导致细节不足

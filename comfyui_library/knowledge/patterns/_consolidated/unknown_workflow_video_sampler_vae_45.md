@@ -1,61 +1,69 @@
 ---
 name: unknown_workflow_video_sampler_vae_45
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9748
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.688667
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频——SmoothMix_1978778369921847298.json, 视频生成/图生视频/Wan2.2图生视频（KJ版）_1950839891598966785.json, 视频生成/图生视频/Wan2.2首尾帧_1972692156160888834.json, 视频生成/图生视频/Wan2.2首尾帧加速版_1959587431169339394.json, 视频生成/图生视频/Wan2.2首尾帧图片生视频_1955274783857393666.json, 视频生成/图生视频/Wan2.2首尾帧视频_1954784687051857922.json, 视频生成/图生视频/Wan2_2_I2V_720p_2071492329428570114.json, 视频生成/图生视频/表情包动起来_2019289555643408385.json, 视频生成/图生视频/静态生成动态图生视频动态表情包_2067311490910220289.json, 视频生成/图生视频/首尾帧图生视频加速版V2.0（Wan2.2）_1964951415749791746.json]
+members: [图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json, 视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json, 视频生成/图生视频/LightX2V人物变装视频首尾帧特效版V1_1945679647550132225.json, 视频生成/图生视频/LightX2V首尾帧特效版_1945794498888658946.json, 视频生成/图生视频/Q版人物跳舞_1934473934488162306.json, 视频生成/图生视频/Q版动漫小人跳舞工作流_1925467982229590018.json, 视频生成/图生视频/Q版动漫小人跳舞工作流_1932748571013697538.json, 视频生成/图生视频/VACE-14B首尾视频生成_1922637708198559745.json, 视频生成/图生视频/VACE-14B首尾视频生成_1922829567898304514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_45
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频——SmoothMix_1978778369921847298.json、视频生成/图生视频/Wan2.2图生视频（KJ版）_1950839891598966785.json、视频生成/图生视频/Wan2.2首尾帧_1972692156160888834.json、视频生成/图生视频/Wan2.2首尾帧加速版_1959587431169339394.json、视频生成/图生视频/Wan2.2首尾帧图片生视频_1955274783857393666.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json、视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json、视频生成/图生视频/LightX2V人物变装视频首尾帧特效版V1_1945679647550132225.json、视频生成/图生视频/LightX2V首尾帧特效版_1945794498888658946.json、视频生成/图生视频/Q版人物跳舞_1934473934488162306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+全部 9 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
-- `INTConstant`
+- `ImageConcatMulti`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 9/10 个有
-- `WanVideoLoraSelect` —— 9/10 个有
-- `WanVideoTextEncode` —— 9/10 个有
-- `WanVideoSetBlockSwap` —— 8/10 个有
-- `WanVideoSetLoRAs` —— 8/10 个有
-- `WanVideoTorchCompileSettings` —— 8/10 个有
-- `ImageResizeKJv2` —— 5/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
-- `CR Prompt Text` —— 4/10 个有
-- `JWInteger` —— 4/10 个有
-- `WanVideoSetRadialAttention` —— 2/10 个有
-- `CM_IntToFloat` —— 1/10 个有
-- `GetImageSize` —— 1/10 个有
-- `LazySwitch2way` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `WanVideoTextEncodeCached` —— 1/10 个有
-- `easy compare` —— 1/10 个有
-- `easy imageSize` —— 1/10 个有
-- `easy int` —— 1/10 个有
-- `easy seed` —— 1/10 个有
+- `GetNode` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `WanVideoTeaCache` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `WanVideoVACEModelSelect` —— 7/9 个有
+- `ImageResizeKJ` —— 6/9 个有
+- `MaskPreview+` —— 6/9 个有
+- `PreviewImage` —— 6/9 个有
+- `WanVideoLoraSelect` —— 5/9 个有
+- `Bookmark (rgthree)` —— 3/9 个有
+- `ImageResizeKJv2` —— 3/9 个有
+- `Label (rgthree)` —— 3/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
+- `ImageBatchMulti` —— 2/9 个有
+- `JWImageExtractFromBatch` —— 2/9 个有
+- `JjkText` —— 2/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `PrimitiveInt` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `easy batchAnything` —— 2/9 个有
+- `easy forLoopEnd` —— 2/9 个有
+- `easy forLoopStart` —— 2/9 个有
 
 ## 典型参数
 

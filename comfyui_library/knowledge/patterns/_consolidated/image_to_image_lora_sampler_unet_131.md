@@ -3,55 +3,49 @@ name: image_to_image_lora_sampler_unet_131
 type: Image To Image
 frequency: 5
 level: strong
-coverage: 0.8916
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.7606
+common_nodes: [CFGNorm, CLIPLoader, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen编辑局部重绘_1962045337357762561.json, 图片生成/图生图/Qwen随机改变姿势_1961283635229999105.json, 图片生成/图生图/next-scene_test_1979439856705245185.json, 图片生成/图生图/qwen edit 双图编辑_1960219194140864513.json, 图片生成/图生图/qwen edit双图融合_1957907689856757762.json]
+members: [图片生成/图生图/一键 “人物多姿势” 自定义姿势+批量生产+打包下载！艾橘溪_2080545133489119234.json, 图片生成/图生图/一键 （人物多姿势 ）自定义姿势+批量生产+打包下载_2080966257117061122.json, 图片生成/图生图/人物多姿势 图片裂变 多角度+自定义姿势+批量生图_2081180606368665601.json, 图片生成/图生图/超好用🔥人物多角度出图-角度按需自调-超低价_2056578309579952129.json, 图片生成/文生图/一键 “人物多姿势” 自定义姿势_2083012547086737410.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_131
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen编辑局部重绘_1962045337357762561.json、图片生成/图生图/Qwen随机改变姿势_1961283635229999105.json、图片生成/图生图/next-scene_test_1979439856705245185.json、图片生成/图生图/qwen edit 双图编辑_1960219194140864513.json、图片生成/图生图/qwen edit双图融合_1957907689856757762.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键 “人物多姿势” 自定义姿势+批量生产+打包下载！艾橘溪_2080545133489119234.json、图片生成/图生图/一键 （人物多姿势 ）自定义姿势+批量生产+打包下载_2080966257117061122.json、图片生成/图生图/人物多姿势 图片裂变 多角度+自定义姿势+批量生图_2081180606368665601.json、图片生成/图生图/超好用🔥人物多角度出图-角度按需自调-超低价_2056578309579952129.json、图片生成/文生图/一键 “人物多姿势” 自定义姿势_2083012547086737410.json）
 
 - **类型**：Image To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 4/5 个有
+- `HAIGC_SaveImagesToZip` —— 4/5 个有
 - `JjkText` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
 - `TextEncodeQwenImageEdit` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `ImageStitch` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `TextEncodeQwenImageEditPlus` —— 2/5 个有
-- `easy cleanGpuUsed` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `BatchCropFromMaskAdvanced` —— 1/5 个有
-- `BboxVisualize` —— 1/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `RandomPrompt` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
+- `easy compare` —— 4/5 个有
+- `easy ifElse` —— 4/5 个有
+- `easy promptLine` —— 4/5 个有
 
 ## 典型参数
 

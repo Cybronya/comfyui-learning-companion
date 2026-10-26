@@ -1,79 +1,52 @@
 ---
 name: unknown_workflow_video_lora_sampler_320
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.820429
-common_nodes: [AudioSeparation, BasicScheduler, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, HAIGC_TimestampTextReplace, HAIGC_VideoSubtitleTimestampPro, ImageResizeKJv2, ImageScaleToTotalPixels, JjkText, JoinStrings, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, SubtitleOptimizer, TranscribeConfig, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, VideoTranscribe, easy showAnything]
+coverage: 0.918375
+common_nodes: [Float, ImpactInt, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, PreviewAudio, RH_Translator, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/kklplei_scail.json_2077561006401875969.json, 视频生成/图生视频/lalalalala_2077647085960261634.json, 视频生成/图生视频/lalalalala_2077655340002402306.json, 视频生成/图生视频/lplei_scail.json_2077566823591145473.json, 视频生成/图生视频/wdigital_combination.json_2077592725263839233.json, 视频生成/图生视频/zhishi_scail.json_2077579473330982913.json, 视频生成/图生视频/zhishi_scail.json_2077586586442752001.json]
+members: [视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json, 视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json, 视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2054447841707347969.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2056272340383789058.json, 视频生成/图生视频/解压切水果小说配视频-图生视频+wan2.1+lora_2031988264575438849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_320
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/kklplei_scail.json_2077561006401875969.json、视频生成/图生视频/lalalalala_2077647085960261634.json、视频生成/图生视频/lalalalala_2077655340002402306.json、视频生成/图生视频/lplei_scail.json_2077566823591145473.json、视频生成/图生视频/wdigital_combination.json_2077592725263839233.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json、视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json、视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioSeparation`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `HAIGC_TimestampTextReplace`
-- `HAIGC_VideoSubtitleTimestampPro`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
+全部 8 个 workflow 都包含：
+- `Float`
+- `ImpactInt`
 - `JjkText`
-- `JoinStrings`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
-- `LoadAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `SubtitleOptimizer`
-- `TranscribeConfig`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAELoader`
-- `VAELoaderKJ`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `MMAudioFeatureUtilsLoader`
+- `MMAudioModelLoader`
+- `MMAudioSampler`
+- `PreviewAudio`
+- `RH_Translator`
+- `String`
 - `VHS_VideoCombine`
-- `VideoTranscribe`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `GoogleTranslateTextNode` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 5/7 个有
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

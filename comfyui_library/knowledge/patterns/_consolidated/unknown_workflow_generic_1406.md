@@ -3,32 +3,38 @@ name: unknown_workflow_generic_1406
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [Image Comparer (rgthree), ImageConcanate, JWInteger, LoadImage, SaveImage, SeedVR2]
+coverage: 0.8385
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), ImageEditAPINode, LoadImage, SaveImage, String, Text Concatenate, UniversalAPINode, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json, 图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json]
+members: [图片生成/图生图/gemini3香蕉全家桶通吃_1994045867745361922.json, 图片生成/文生图/😽降伏gemini通吃全能图片V1全系功能comfyui通吃攻略😽_1993181415974125570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1406
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json、图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/gemini3香蕉全家桶通吃_1994045867745361922.json、图片生成/文生图/😽降伏gemini通吃全能图片V1全系功能comfyui通吃攻略😽_1993181415974125570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `JWInteger`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageEditAPINode`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
+- `String`
+- `Text Concatenate`
+- `UniversalAPINode`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

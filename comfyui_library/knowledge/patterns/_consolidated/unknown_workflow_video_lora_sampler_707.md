@@ -1,79 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_707
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8095
-common_nodes: [DF_Get_image_size, Float, GetImageSizeAndCount, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PDIMAGE_LongerSize, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.711667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ConditioningZeroOut, DiffusionModelLoaderKJ, ImageFromBatch, KSamplerAdvanced, LatentCutToBatch, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RebatchImages, SkipLayerGuidanceDiTSimple, TrimAudioDuration, VAEDecode, VAELoader, VHS_VideoCombine, WanDancerEncodeAudio, WanDancerPadKeyframesList, WanDancerVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json, 视频生成/图生视频/人物一致性SVI顶配版长视频生成_1985379890973319169.json]
+members: [视频生成/图生视频/Wan-Dancer 音乐生成舞蹈视频_2082813510517616641.json, 视频生成/图生视频/Wan-Dancer 音生视频 _  一键生成舞蹈视频_2078147776503959554.json, 视频生成/图生视频/wan2.2+dancer音频驱动跳舞_2082031766499586050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_707
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json、视频生成/图生视频/人物一致性SVI顶配版长视频生成_1985379890973319169.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan-Dancer 音乐生成舞蹈视频_2082813510517616641.json、视频生成/图生视频/Wan-Dancer 音生视频 _  一键生成舞蹈视频_2078147776503959554.json、视频生成/图生视频/wan2.2+dancer音频驱动跳舞_2082031766499586050.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DF_Get_image_size`
-- `Float`
-- `GetImageSizeAndCount`
-- `ImageConcanate`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `Int`
-- `JWImageResizeByLongerSide`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PDIMAGE_LongerSize`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `DiffusionModelLoaderKJ`
+- `ImageFromBatch`
+- `KSamplerAdvanced`
+- `LatentCutToBatch`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `RebatchImages`
+- `SkipLayerGuidanceDiTSimple`
+- `TrimAudioDuration`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy showAnything`
+- `WanDancerEncodeAudio`
+- `WanDancerPadKeyframesList`
+- `WanDancerVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageBatchMulti` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoSetBlockSwap` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `CM_IntToFloat` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `StringConcatenate` —— 2/3 个有
+- `ComfyNumberConvert` —— 1/3 个有
+- `ExtractSpecificLines` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `KepStringLiteral` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `ProcessString` —— 1/3 个有
+- `easy seed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -81,4 +85,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

@@ -3,56 +3,51 @@ name: unknown_workflow_video_lora_sampler_941
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7765
-common_nodes: [CreateCFGScheduleFloatList, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, INTConstant, ImageFromBatch, ImageListToImageBatch, Int, LoadWanVideoT5TextEncoder, RIFE VFI, SaveImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8795
+common_nodes: [ImageConcatMulti, ImageResizeKJv2, Int, LoadImage, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2 文生视频高动态质量--(Palingenesis版)_1972223829290446850.json, 视频生成/文生视频/Work-Fisher_Wan2.2-T2V增强版_1971802147362893826.json]
+members: [视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json, 视频生成/文生视频/wan2_2_fun_vace_文生视频-KJ_1971908206685515778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_941
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 文生视频高动态质量--(Palingenesis版)_1972223829290446850.json、视频生成/文生视频/Work-Fisher_Wan2.2-T2V增强版_1971802147362893826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json、视频生成/文生视频/wan2_2_fun_vace_文生视频-KJ_1971908206685515778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageListToImageBatch`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `Int`
-- `LoadWanVideoT5TextEncoder`
-- `RIFE VFI`
-- `SaveImage`
+- `LoadImage`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/2 个有
 - `GetNode` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 - `SetNode` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
 - `Text` —— 1/2 个有
-- `WanVideoScheduler` —— 1/2 个有
-- `WanVideoSigmaToStep` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
 
 ## 典型参数
 

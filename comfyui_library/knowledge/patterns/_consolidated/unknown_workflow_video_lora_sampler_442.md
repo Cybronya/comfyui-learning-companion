@@ -3,71 +3,52 @@ name: unknown_workflow_video_lora_sampler_442
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.81
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SeparateMasks, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+coverage: 0.6296
+common_nodes: [CR Text, CreateCFGScheduleFloatList, FastUnsharpSharpen, INTConstant, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression_UTK, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json, 视频生成/图生视频/😙infinitetalk 迎接双人有灵魂的AI对话，音色、情绪无缝切换【支持长时间语音】🌙_1978989792249679873.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_1964871891532005378.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_2001550158074658818.json, 音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json]
+members: [图片生成/反推提示词/40itovhighquality_2050024590105165826.json, 视频生成/图生视频/图生视频（适合Lora搭配）_Wan2.2_2039231092691050497.json, 视频生成/图生视频/图生视频（适合Lora搭配）_Wan2.2_KJ_2021871450138873858.json, 视频生成/图生视频/高质量图生视频1分钟出片_2038783452375420929.json, 视频生成/文生视频/文生视频+图生视频_2039879136067461122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_442
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json、视频生成/图生视频/😙infinitetalk 迎接双人有灵魂的AI对话，音色、情绪无缝切换【支持长时间语音】🌙_1978989792249679873.json、视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_1964871891532005378.json、视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_2001550158074658818.json、音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/40itovhighquality_2050024590105165826.json、视频生成/图生视频/图生视频（适合Lora搭配）_Wan2.2_2039231092691050497.json、视频生成/图生视频/图生视频（适合Lora搭配）_Wan2.2_KJ_2021871450138873858.json、视频生成/图生视频/高质量图生视频1分钟出片_2038783452375420929.json、视频生成/文生视频/文生视频+图生视频_2039879136067461122.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
 - `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
+- `CreateCFGScheduleFloatList`
+- `FastUnsharpSharpen`
+- `INTConstant`
+- `ImpactInt`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskPreview+`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `SeparateMasks`
-- `SetNode`
+- `MathExpression_UTK`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `GetImageSizeAndCount` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `MegaTTS3Run` —— 2/5 个有
-- `Note Plus (mtb)` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `SaveAudio` —— 2/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `VoxCPM_TTS` —— 2/5 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/5 个有
-- `easy indexTTSAudioMerge` —— 2/5 个有
-- `easy indexTTSGenerateSimple` —— 2/5 个有
-- `IndexTTS2Run` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
 
 ## 典型参数
 

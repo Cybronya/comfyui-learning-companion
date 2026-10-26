@@ -2,66 +2,66 @@
 name: unknown_workflow_sampler_clip_unet_222
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.878
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.977667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2文生图工作流--直出2K_1926661482686353410.json, 图片生成/文生图/Flux2韩国小姐姐8步加速文生图（Lora版）_2006072352236376065.json, 图片生成/文生图/flux2-dev-fp8-mixed 基础文生图_2006245362121580545.json, 图片生成/文生图/image_flux2_1999252927225229314.json, 图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json, 图片生成/文生图/最强开源 FLUX2系列合集_1993708586574479361.json]
+members: [图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json, 图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json, 图片生成/图生图/klein 单图参考_2048402694292901891.json, 图片生成/图生图/klein 双图编辑_2048417433756639234.json, 图片生成/图生图/一键拍立得_2077678322762473473.json, 图片生成/图生图/一键生成婚纱照_2045753551078559745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_222
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Flux2文生图工作流--直出2K_1926661482686353410.json、图片生成/文生图/Flux2韩国小姐姐8步加速文生图（Lora版）_2006072352236376065.json、图片生成/文生图/flux2-dev-fp8-mixed 基础文生图_2006245362121580545.json、图片生成/文生图/image_flux2_1999252927225229314.json、图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json、图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json、图片生成/图生图/klein 单图参考_2048402694292901891.json、图片生成/图生图/klein 双图编辑_2048417433756639234.json、图片生成/图生图/一键拍立得_2077678322762473473.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `FluxGuidance`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ReferenceLatent` —— 5/6 个有
-- `ImageScaleToTotalPixels` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `ModelPatchTorchSettings` —— 3/6 个有
-- `VAEEncode` —— 3/6 个有
-- `ApplySageAttention` —— 2/6 个有
-- `UnetLoaderGGUF` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `EasyCache` —— 1/6 个有
-- `ImpactInt` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
+- `ConditioningZeroOut` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `EmptyFlux2LatentImage` —— 3/6 个有
+- `EmptyLatentImage` —— 2/6 个有
+- `ImagePadForOutpaint` —— 2/6 个有
+- `AILab_ImageStitch` —— 1/6 个有
+- `GetImageSize` —— 1/6 个有
+- `LayerStyle: ColorOverlay` —— 1/6 个有
+- `Multi Text Merge` —— 1/6 个有
 - `PreviewImage` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy int` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `PrimitiveString` —— 1/6 个有
+- `ResolutionMaster` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `StringConstant` —— 1/6 个有
+- `VRAMReserver` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,4 +69,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

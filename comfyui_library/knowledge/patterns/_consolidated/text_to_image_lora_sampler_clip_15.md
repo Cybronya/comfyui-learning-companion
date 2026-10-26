@@ -1,109 +1,78 @@
 ---
 name: text_to_image_lora_sampler_clip_15
 type: Text To Image
-frequency: 29
+frequency: 32
 level: strong
-coverage: 0.807724
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.903438
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/FL2VA开源动作迁移｜MiniMax H3生成视频工作流_2094056951331254274.json, 视频生成/图生视频/FL2VA开源单图生视频｜MiniMax H3图生视频工作流_2093094312534962178.json, 视频生成/图生视频/FastVideo FastH3图生视频 8步加速视频生成工具_2100636893338759170.json, 视频生成/图生视频/FastVideo FastH3图生视频工作流，图生视频高效视频生成方案_2107904076905275394.json, 视频生成/图生视频/FastVideo FastH3图生视频｜快速通道高效产出视频_2107686292824879105.json, 视频生成/图生视频/H3图生视频 官方通用视频生成处理工具_2100635406244081666.json, 视频生成/图生视频/MiniMax H3 FL2VA开源人物模仿，动作迁移图生视频_2110821478810873857.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版 用动作迁移直接生成视频_2095072427146571777.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版 用动作迁移直接生成视频_2097466631751561218.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版工作流 视频动作迁移人物图生视频方案_2094031469198008322.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版工作流 视频动作迁移人物图生视频方案_2097111204803203073.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版工作流 视频动作迁移人物图生视频方案_2098922083215564801.json, 视频生成/图生视频/MiniMax H3全能参考三图版｜三图输入视频生成_2094516324448948226.json, 视频生成/图生视频/MiniMax H3全能参考双图版｜双图输入视频生成_2094519227574218754.json, 视频生成/图生视频/MiniMax H3全能参考四图版｜多图输入视频生成_2094508021375397889.json, 视频生成/图生视频/MiniMax H3参考生视频 官方全能多模态创作工具_2098824046145269762.json, 视频生成/图生视频/MiniMax H3参考生视频加速版图生视频处理工具_2101358023905206274.json, 视频生成/图生视频/MiniMax H3参考生视频图生视频多模态处理工具_2101356055950356482.json, 视频生成/图生视频/MiniMax H3参考生视频｜多图参考保持主角一致性稳定输出_2099169349520150529.json, 视频生成/图生视频/MiniMax H3图生视频 官方全模态立体声视频生成_2098814736157728769.json, 视频生成/图生视频/MiniMax H3图生视频fastH3基础版 trim加速快速直出_2110253662495928321.json, 视频生成/图生视频/MiniMax H3图生视频fastH3基础版 trim加速快速直出_2110368880341377026.json, 视频生成/图生视频/Minimax H3 Veda稀疏注意力8步极速版参考生视频 快速出片_2108988281630314498.json, 视频生成/图生视频/Minimax H3参考图和参考视音频生成视频满血版 多模态输入_2105039400945147906.json, 视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2106873837555113985.json, 视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2109810746019373058.json, 视频生成/图生视频/Minimax图生视频I2V工作流，图生视频官方图生视频处理工具_2107908610960486402.json, 视频生成/图生视频/Minimax图生视频I2V方案，图生视频高效直出_2111192151311872002.json, 视频生成/图生视频/Minimax图生视频I2V方案｜图片动起来就这么简单_2107697471907516418.json]
+members: [图片生成/文生图/Z-Image Turbo文生图 动漫角色设计快速生成工具_2114138338432208897.json, 图片生成/文生图/Z-Image Turbo文生图快速高质量处理工具_2101047351329771521.json, 图片生成/文生图/Z-Image-Turbo文生图｜高速出图质量在线新体验_2105251524116041729.json, 图片生成/文生图/Z-Image基本文生图处理生成工作流工具包_2101786053643431937.json, 图片生成/文生图/Z-image文生图 多风格高质量图片生成_2098860674293260290.json, 图片生成/文生图/Z-image真实文生图｜人像写真美少女高质量生成_2096726231373930498.json, 图片生成/文生图/ZIT基础文生图工作流，高质量文本到图像生成方案_2106810710041911298.json, 图片生成/文生图/Zimage 4步极速文生图 基础图像快速生成处理工具_2113045816763043842.json, 图片生成/文生图/z-image文生图工作流｜轻量出图响应快，日常配图随手就能出_2099545132960935937.json, 图片生成/文生图/云璃动漫角色cos｜Krea2美少女文生图生成_2095942825870446593.json, 图片生成/文生图/动漫角色cos制作｜Krea2星美少女文生图生成_2095934426793463809.json, 图片生成/文生图/千问Qwen Image 2.1文生图工作流，人像写真美少女风格出图_2114504263949963266.json, 图片生成/文生图/千问Qwen-Image-2.1文生图 中文提示词图像生成工具_2113397688858398722.json, 图片生成/文生图/千问qwen image 2.1文生图官方架构一键出图 高质量画面直出_2108706393980227586.json, 图片生成/文生图/千问qwen image 2.1文生图工作流 高质量画面直出_2104994907697012737.json, 图片生成/文生图/性感长腿美女写真｜Krea2文生图人像一键生成_2095088388851458050.json, 图片生成/文生图/手机摄影随地大小拍v2｜真实感lora暗光噪点文生图对抗单反感_2088759074585407489.json, 图片生成/文生图/手机随手拍质感文生图 随地大小拍v3模拟生活化摄影_2104273094792802306.json, 图片生成/文生图/手机随拍感文生图｜随地大小拍写实图片生成工作流_2087230285426548737.json, 图片生成/文生图/手机随拍感真实质感lora｜随地大小拍对抗单反完美感文生图_2088762070585143297.json, 图片生成/文生图/没有AI味文生图｜Z-image Turbo真实模型工作流_2093450819793408001.json, 图片生成/文生图/没有AI味的模型｜Z-image Tubro文生图一键生成_2093784427087360002.json, 图片生成/文生图/游戏角色cos生成｜Krea2遐蝶皮肤美少女文生图_2095989394669924353.json, 图片生成/文生图/知更鸟cos一键出图｜Krea2 文生图美少女动漫角色_2096224926444384258.json, 图片生成/文生图/知更鸟动漫角色cos｜Krea2美少女文生图_2095937603731279873.json, 图片生成/文生图/美少女人像写真｜Krea2更多姿势动作文生图_2094001067771121666.json, 图片生成/文生图/逼真美女人像写真美少女文生图 Krea2 高清质感_2094223594124566529.json, 图片生成/文生图/逼真美女人像写真｜Krea2文生图美少女生成_2094345828281438210.json, 图片生成/文生图/逼真美女人像写真｜Krea2文生图美少女生成_2094581026407407618.json, 图片生成/文生图/长腿模特人像写真美少女文生图 Krea2 身材比例优化_2094214837135036417.json, 图片生成/文生图/随地大小拍手机摄影v2文生图写真创作工作流_2081761338916954114.json, 图片生成/文生图/随地大小拍手机摄影v3｜文生图出大片 手机随手拍质感拉满_2104084816416305153.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_15
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/FL2VA开源动作迁移｜MiniMax H3生成视频工作流_2094056951331254274.json、视频生成/图生视频/FL2VA开源单图生视频｜MiniMax H3图生视频工作流_2093094312534962178.json、视频生成/图生视频/FastVideo FastH3图生视频 8步加速视频生成工具_2100636893338759170.json、视频生成/图生视频/FastVideo FastH3图生视频工作流，图生视频高效视频生成方案_2107904076905275394.json、视频生成/图生视频/FastVideo FastH3图生视频｜快速通道高效产出视频_2107686292824879105.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/文生图/Z-Image Turbo文生图 动漫角色设计快速生成工具_2114138338432208897.json、图片生成/文生图/Z-Image Turbo文生图快速高质量处理工具_2101047351329771521.json、图片生成/文生图/Z-Image-Turbo文生图｜高速出图质量在线新体验_2105251524116041729.json、图片生成/文生图/Z-Image基本文生图处理生成工作流工具包_2101786053643431937.json、图片生成/文生图/Z-image文生图 多风格高质量图片生成_2098860674293260290.json…）
 
 - **类型**：Text To Image
-- **样本数**：29
+- **样本数**：32
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 32 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 28/29 个有
-- `CreateVideo` —— 27/29 个有
-- `SaveVideo` —— 27/29 个有
-- `ComfySwitchNode` —— 24/29 个有
-- `PrimitiveBoolean` —— 24/29 个有
-- `PrimitiveInt` —— 24/29 个有
-- `VAEDecodeAudio` —— 22/29 个有
-- `GetImageSize` —— 18/29 个有
-- `ResolutionSelector` —— 18/29 个有
-- `MiniMaxH3ReferenceToVideo` —— 16/29 个有
-- `SaveImage` —— 16/29 个有
-- `MiniMaxH3ImageToVideo` —— 13/29 个有
-- `LoadAudio` —— 11/29 个有
-- `PrimitiveStringMultiline` —— 11/29 个有
-- `ImageScaleToTotalPixels` —— 10/29 个有
-- `GetVideoComponents` —— 9/29 个有
-- `LoadVideo` —— 9/29 个有
-- `ImageScale` —— 8/29 个有
-- `SetNode` —— 7/29 个有
-- `Video Slice` —— 7/29 个有
-- `VideoFrameSample` —— 7/29 个有
-- `BlockSparseAttention` —— 6/29 个有
-- `MiniMaxH3SigmaShift` —— 6/29 个有
-- `ModelAttentionBackend` —— 6/29 个有
-- `AudioCrop` —— 5/29 个有
-- `GetNode` —— 5/29 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/29 个有
-- `easy minimaxH3AudioLock` —— 3/29 个有
-- `MiniMaxH3AudioLock` —— 2/29 个有
-- `VHS_VideoCombine` —— 2/29 个有
-- `CR Text` —— 1/29 个有
-- `EmptyImage` —— 1/29 个有
-- `MiniMaxH3SaveLatent` —— 1/29 个有
-- `PreviewImage` —— 1/29 个有
-- `VedaSparseAttention` —— 1/29 个有
+- `孤海注释` —— 31/32 个有
+- `ModelSamplingAuraFlow` —— 18/32 个有
+- `ConditioningZeroOut` —— 17/32 个有
+- `ResolutionSelector` —— 17/32 个有
+- `EmptySD3LatentImage` —— 14/32 个有
+- `CompressImages` —— 12/32 个有
+- `PreviewImage` —— 9/32 个有
+- `CLIPLoaderGGUF` —— 6/32 个有
+- `EmptyImage` —— 1/32 个有
+- `Text` —— 1/32 个有
+- `TextEncodeZITSystemPrompt` —— 1/32 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 29 | 100% |
-| 高度 | 80 | 80 - 80 | 29 | 100% |
-| 采样步数 | 4 | 4 - 4 | 29 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 29 | 100% |
-| 采样算法 | er_sde | - | 29 | 100% |
-| 调度器 | beta | - | 29 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 29 | 100% |
+| 宽度 | 80 | 80 - 80 | 32 | 100% |
+| 高度 | 80 | 80 - 80 | 32 | 100% |
+| 采样步数 | 4 | 4 - 4 | 32 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 32 | 100% |
+| 采样算法 | er_sde | - | 32 | 100% |
+| 调度器 | beta | - | 32 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 32 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 30/29 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 67/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，29 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，29 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，29 个样本，一致性 100%
-- 调度器 最常用 beta，29 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，29 个样本，取值集中（一致性 100%）
-- 高发问题（30/29 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，32 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，32 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，32 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，32 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，32 个样本，一致性 100%
+- 调度器 最常用 beta，32 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
+- 高发问题（67/32 个样本）：Steps较低可能导致细节不足

@@ -3,43 +3,38 @@ name: unknown_workflow_video_41
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.789
-common_nodes: [GODMT_GetLength, GetImagesFromBatchIndexed, GetVideoComponents, Int2String, LayerUtility: PurgeVRAM V2, LoadVideo, MathExpression|pysssss, MiniCPM_VQA_Polished, PrimitiveString, ShowText|pysssss, Text Concatenate]
+coverage: 0.2675
+common_nodes: [GetNode, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SetNode, VHS_VideoCombine, easy float]
 problems: []
 missing: []
-members: [音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json, 音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json]
+members: [视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json, 视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113795833912193026.json, 视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113806356401713153.json, 视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_41
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json、音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json、视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113795833912193026.json、视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113806356401713153.json、视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：27%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GODMT_GetLength`
-- `GetImagesFromBatchIndexed`
-- `GetVideoComponents`
-- `Int2String`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadVideo`
-- `MathExpression|pysssss`
-- `MiniCPM_VQA_Polished`
-- `PrimitiveString`
-- `ShowText|pysssss`
-- `Text Concatenate`
+- `GetNode`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyMediaLoader`
+- `ModelPreviewOverrideKJ`
+- `RHHiddenNodes`
+- `SetNode`
+- `VHS_VideoCombine`
+- `easy float`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub ThinkSound` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `HunyuanVideoFoley` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
 
 ## 典型参数
 

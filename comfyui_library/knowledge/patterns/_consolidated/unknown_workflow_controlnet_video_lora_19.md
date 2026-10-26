@@ -1,85 +1,83 @@
 ---
 name: unknown_workflow_controlnet_video_lora_19
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.5195
-common_nodes: [Any Switch (rgthree), Audio Cut (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoVAELoader, easy int, easy positive, easy showAnything]
+coverage: 0.898833
+common_nodes: [Any Switch (rgthree), Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader, easy float, easy framesEditor, easy getNode, easy int, easy sam3ModelLoader, easy sam3VideoModelExtraConfig, easy sam3VideoSegmentation, easy sam3Visualization, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/multitalk最稳定数字人_1938467765139496961.json, 视频生成/图生视频/数字人对口型_2020045552515289089.json, 视频生成/图生视频/音乐数字人 multitalk超越闭源的数字人！_1937584753665032193.json, 视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json]
+members: [视频生成/图生视频/2.22Animate进阶版 动作迁移+角色替换+换头+换身体，支持长视频、运镜_2025560069735194626.json, 视频生成/图生视频/4.13_动作迁移+角色替换+换头+换身体，支持长视频、运镜_2042608499846287361.json, 视频生成/图生视频/Animate动作迁移角色替换换头换身体长视频运镜_2057464822907887617.json, 视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044943790498123778.json, 视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2061275051634286593.json, 视频生成/图生视频/动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044662499303231490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_19
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/multitalk最稳定数字人_1938467765139496961.json、视频生成/图生视频/数字人对口型_2020045552515289089.json、视频生成/图生视频/音乐数字人 multitalk超越闭源的数字人！_1937584753665032193.json、视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2.22Animate进阶版 动作迁移+角色替换+换头+换身体，支持长视频、运镜_2025560069735194626.json、视频生成/图生视频/4.13_动作迁移+角色替换+换头+换身体，支持长视频、运镜_2042608499846287361.json、视频生成/图生视频/Animate动作迁移角色替换换头换身体长视频运镜_2057464822907887617.json、视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044943790498123778.json、视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2061275051634286593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `Any Switch (rgthree)`
-- `Audio Cut (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+- `Anything Everywhere`
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `GetNode`
+- `CR Text`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GrowMask`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `SetNode`
-- `SimpleMath+`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
+- `YOLOModelLoader`
+- `easy float`
+- `easy framesEditor`
+- `easy getNode`
 - `easy int`
-- `easy positive`
-- `easy showAnything`
+- `easy sam3ModelLoader`
+- `easy sam3VideoModelExtraConfig`
+- `easy sam3VideoSegmentation`
+- `easy sam3Visualization`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `PrimitiveString` —— 3/4 个有
-- `StringConcatenate` —— 3/4 个有
-- `VHS_DuplicateImages` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `WanVideoEncode` —— 3/4 个有
-- `WanVideoUni3C_embeds` —— 3/4 个有
-- `WanVideoVRAMManagement` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `Bookmark (rgthree)` —— 2/4 个有
-- `GoogleTranslateTextNode` —— 2/4 个有
-- `Mute / Bypass Relay (rgthree)` —— 2/4 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `WanVideoContextOptions` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Int` —— 1/4 个有
+- `ImpactSwitch` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `easy anythingIndexSwitch` —— 2/6 个有
+- `easy mathInt` —— 2/6 个有
+- `Primitive integer [Crystools]` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
 
 ## 典型参数
 

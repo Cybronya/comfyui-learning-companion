@@ -2,79 +2,94 @@
 name: text_to_image_lora_sampler_clip_545
 type: Text To Image
 frequency: 3
-level: strong
-coverage: 0.837
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+level: moderate
+coverage: 0.836333
+common_nodes: [AddLabel, CFGOverride, CLIPLoader, CLIPTextEncode, CR Prompt Text, ClipLoaderGGUF, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, EmptyLatentImage, EmptySD3LatentImage, Ideogram4Scheduler, ImageConcatMulti, JsonExtractString, KSampler, KSamplerSelect, LoraLoaderModelOnly, PreviewAny, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy seed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音克隆音色定制多角色对话工作流，音频生成工具_2106882898350665730.json, 音频生成/音频生成/Qwen3_TTS语音克隆音色定制多角色对话工作流，音频生成工具_2109438647207550978.json, 音频生成/音频生成/多人对话声音克隆Qwen3 TTS 音色复刻方案_2109771873901961217.json]
+members: [图片生成/文生图/Krea2-多种模型生图对比_2070056239719084034.json, 图片生成/文生图/Krea2多模型对比_2069651388786896898.json, 图片生成/文生图/boogu 多模型对比_2067840542964281346.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_545
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆音色定制多角色对话工作流，音频生成工具_2106882898350665730.json、音频生成/音频生成/Qwen3_TTS语音克隆音色定制多角色对话工作流，音频生成工具_2109438647207550978.json、音频生成/音频生成/多人对话声音克隆Qwen3 TTS 音色复刻方案_2109771873901961217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2-多种模型生图对比_2070056239719084034.json、图片生成/文生图/Krea2多模型对比_2069651388786896898.json、图片生成/文生图/boogu 多模型对比_2067840542964281346.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：强结论
+- **可信度**：中等可信
 - **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AddLabel`
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ClipLoaderGGUF`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `JjkText`
+- `EmptySD3LatentImage`
+- `Ideogram4Scheduler`
+- `ImageConcatMulti`
+- `JsonExtractString`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveAudio`
+- `PreviewAny`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSCustomVoice` —— 2/3 个有
-- `FB_Qwen3TTSVoiceClone` —— 2/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `WhisperSTT` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `StringConcatenate` —— 2/3 个有
+- `TextGenerate` —— 2/3 个有
+- `easy promptLine` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
+| 采样步数 | 28 | 8 - 50 | 3 | 40% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 3 | 56% |
+| 采样算法 | res_multistep | - | 3 | 33% |
+| 调度器 | simple | - | 3 | 67% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 宽度 | 1024 | 720 - 1280 | 3 | 77% |
+| 高度 | 1024 | 720 - 1280 | 3 | 77% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
+- 采样步数 中位数 28，观测区间 8 - 50，3 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，3 个样本
+- 采样算法 最常用 res_multistep，3 个样本，一致性 33%
+- 调度器 最常用 simple，3 个样本，一致性 67%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 720 - 1280，3 个样本
+- 高度 中位数 1024，观测区间 720 - 1280，3 个样本
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

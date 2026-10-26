@@ -3,69 +3,68 @@ name: unknown_workflow_video_sampler_unet_78
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, ColorMatch, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, ImageFromBatch, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TeaCache, TextEncodeHunyuanVideo_ImageToVideo, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
+coverage: 0.8915
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Display Any (rgthree), EasyCache, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleToMaxDimension, KSamplerSelect, Label (rgthree), LoadImage, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/混元VS通义万相图生视频，对比测试_1897863153332473857.json, 视频生成/图生视频/混元图生视频+TeaCache+放大_1897894399383425025.json]
+members: [视频生成/文生视频/MiniMax H3 Turbo加速优化-文生视频_九宫格_四视图生视频_视频全能编辑_2086440255061839873.json, 视频生成/文生视频/MiniMax H3全功能-文生视频_九宫格_四视图生视频_视频全能编辑_2084907936194842625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_78
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/混元VS通义万相图生视频，对比测试_1897863153332473857.json、视频生成/图生视频/混元图生视频+TeaCache+放大_1897894399383425025.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Turbo加速优化-文生视频_九宫格_四视图生视频_视频全能编辑_2086440255061839873.json、视频生成/文生视频/MiniMax H3全功能-文生视频_九宫格_四视图生视频_视频全能编辑_2084907936194842625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ColorMatch`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `HunyuanImageToVideo`
-- `ImageFromBatch`
+- `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `Display Any (rgthree)`
+- `EasyCache`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToMaxDimension`
 - `KSamplerSelect`
+- `Label (rgthree)`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `TeaCache`
-- `TextEncodeHunyuanVideo_ImageToVideo`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadAudioUpload`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `String Literal` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
-- `WanVideoTeaCacheKJ` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
 - `easy cleanGpuUsed` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 6 | - | 1 | 100% |
-| 采样算法 | uni_pc | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

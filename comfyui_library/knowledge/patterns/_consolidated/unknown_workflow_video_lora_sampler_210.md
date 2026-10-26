@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_210
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.87
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewImage, SamplerCustom, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.5395
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2064190064883757058.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪，电商产品宣传_2070140251913412610.json, 视频生成/图生视频/LTX2.3-最新导演台_2063451462600052737.json, 视频生成/图生视频/导演台LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2077620703326728194.json]
+members: [数字人/数字人/wanvideo_WanAnimate_V2_1974837982966493186.json, 数字人/数字人/wanvideo_WanAnimate_角色替换工作流_1969720507606200322.json, 数字人/数字人/视频人物替换-Wan Animate_V2版_1976639386127343617.json, 数字人/数字人/长视频 人物替换动作迁移wan2.2-Animate_1976989855852961793.json, 视频生成/图生视频/1280P Wan2.2 Animate人物替换【无限时长，跟随运镜】_1981708744444780545.json, 视频生成/图生视频/1280P高清Wan2.2 Animate人物替换加速版（无限时长）_1981690387544842241.json, 视频生成/图生视频/Wan Animate2.2人物融合(Mix)V2增强版_2073214426706173954.json, 视频生成/图生视频/Wan Animate2.2动作迁移V2(Move)增强版_2073218471797805057.json, 视频生成/图生视频/Wan2.2 Animate人物替换加速版（无限时长）_1969270955216412673.json, 视频生成/图生视频/WanAnimate -超级版视频换人换背景_1971495725483933698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_210
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json、视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/wanvideo_WanAnimate_V2_1974837982966493186.json、数字人/数字人/wanvideo_WanAnimate_角色替换工作流_1969720507606200322.json、数字人/数字人/视频人物替换-Wan Animate_V2版_1976639386127343617.json、数字人/数字人/长视频 人物替换动作迁移wan2.2-Animate_1976989855852961793.json、视频生成/图生视频/1280P Wan2.2 Animate人物替换【无限时长，跟随运镜】_1981708744444780545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GuHaiAutoImageSplit`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 10 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SamplerCustom`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `Sam2Segmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirectorGuide` —— 7/9 个有
-- `YusuLTXDirector` —— 6/9 个有
-- `CheckpointLoaderSimple` —— 5/9 个有
-- `CreateVideo` —— 5/9 个有
-- `GetVideoComponents` —— 5/9 个有
-- `UNETLoader` —— 4/9 个有
-- `孤海注释` —— 3/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `Yusu-LTXDirector` —— 2/9 个有
-- `YusuLTXDirectorGuide` —— 2/9 个有
-- `CS-LTXGridDirector` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
+- `GrowMask` —— 7/10 个有
+- `PointsEditor` —— 7/10 个有
+- `PoseAndFaceDetection` —— 6/10 个有
+- `DWPreprocessor` —— 5/10 个有
+- `DrawViTPose` —— 5/10 个有
+- `INTConstant` —— 5/10 个有
+- `JWInteger` —— 5/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/10 个有
+- `OnnxDetectionModelLoader` —— 5/10 个有
+- `FaceMaskFromPoseKeypoints` —— 4/10 个有
+- `ImageCropByMaskAndResize` —— 4/10 个有
+- `PixelPerfectResolution` —— 4/10 个有
+- `easy cleanGpuUsed` —— 4/10 个有
+- `easy int` —— 4/10 个有
+- `GrowMaskWithBlur` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `ACE_ImageFaceCrop` —— 2/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `ConvertAny2Int` —— 2/10 个有
+- `LayerUtility: PurgeVRAM` —— 2/10 个有
+- `RHHiddenNodes` —— 2/10 个有
+- `Text` —— 2/10 个有
+- `easy float` —— 2/10 个有
+- `WanVideoContextOptions` —— 1/10 个有
+- `WanVideoTorchCompileSettings` —— 1/10 个有
 
 ## 典型参数
 

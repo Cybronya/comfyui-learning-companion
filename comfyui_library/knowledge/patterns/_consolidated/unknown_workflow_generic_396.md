@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_396
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.814
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.940714
+common_nodes: [Int, JjkText, LoadAudio, Note _O, SaveAudio, SparkTTSClone, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json, 图片生成/图生图/产品更换_2057689275629654017.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json, 图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json, 图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json, 图片生成/图生图/自用全能图片_2040318979763347458.json]
+members: [数字人/数字人/Spark TTS Run文本转语音_克隆语音_2073276172070375426.json, 音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json, 音频生成/音频生成/文本转语音-克隆_1944291353318555649.json, 音频生成/音频生成/语音克隆_文本转语音工作流-两个功能_2040153394723168257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_396
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json、图片生成/图生图/产品更换_2057689275629654017.json、图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json、图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json、图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Spark TTS Run文本转语音_克隆语音_2073276172070375426.json、音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `Int`
+- `JjkText`
+- `LoadAudio`
+- `Note _O`
+- `SaveAudio`
+- `SparkTTSClone`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
-- `RH_Nano_Banana_Image2Image` —— 2/6 个有
-- `LayerUtility: TextJoin` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `TextInputNode` —— 1/6 个有
+- `SparkTTSRun` —— 6/7 个有
+- `Preview from image [Crystools]` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

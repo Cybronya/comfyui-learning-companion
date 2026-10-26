@@ -2,62 +2,58 @@
 name: unknown_workflow_sampler_clip_unet_372
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.876667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.87
+common_nodes: [Anything Everywhere, Anything Everywhere3, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DepthAnythingPreprocessor, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, LoadImage, RHHiddenNodes, SaveImage, StyleModelAdvancedApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2_klein4B&9B文生图_图生图_图像编辑合集_2012078185009127425.json, 图片生成/文生图/Klein 9b base文生图&编辑  工作流_2014242527360065538.json, 图片生成/文生图/Klein 9b 文生图&编辑  工作流_2013047540010192898.json]
+members: [图片生成/图生图/服装换材质丨Flux.1 Depth＋Redux丨面料纹理迁移_2100137522218229761.json, 图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2101210273989357570.json, 图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_372
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2_klein4B&9B文生图_图生图_图像编辑合集_2012078185009127425.json、图片生成/文生图/Klein 9b base文生图&编辑  工作流_2014242527360065538.json、图片生成/文生图/Klein 9b 文生图&编辑  工作流_2013047540010192898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/服装换材质丨Flux.1 Depth＋Redux丨面料纹理迁移_2100137522218229761.json、图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2101210273989357570.json、图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `Anything Everywhere`
+- `Anything Everywhere3`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
+- `DepthAnythingPreprocessor`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `InstructPixToPixConditioning`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: TextBox`
 - `LoadImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `RHHiddenNodes`
 - `SaveImage`
+- `StyleModelAdvancedApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LoraLoaderModelOnly_Any` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | sgm_uniform | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,4 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

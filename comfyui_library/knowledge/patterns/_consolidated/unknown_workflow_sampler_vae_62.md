@@ -3,63 +3,50 @@ name: unknown_workflow_sampler_vae_62
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6695
-common_nodes: [DualCLIPLoader, DyPE_Condition, DyPE_Encode, DyPE_KSampler, DyPE_Model, ImpactSwitch, JWInteger, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewImage, RH_Translator, SaveImage, ShowText|pysssss, VAEDecode, VAELoader]
+coverage: 0.881
+common_nodes: [BasicGuider, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RHFibo2EditConditioning, RHFibo2ModelLoader, RHFibo2Scheduler, RHFibo2TextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【 DyPE 】 FLUX - Krea  2 - 4 K 高清直出，文生图 + 图片反推_1984807816806481922.json, 图片生成/文生图/【 DyPE 】 FLUX - SRPO  2 - 4 K 高清直出 文生图 + 图片反推_1987345787942277122.json]
+members: [图片生成/图生图/Fibo2工作流修改图片_2111991292468228098.json, 图片生成/图生图/pandy-FIBO2-Turbo4步图像编辑_2114251172331741186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_62
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【 DyPE 】 FLUX - Krea  2 - 4 K 高清直出，文生图 + 图片反推_1984807816806481922.json、图片生成/文生图/【 DyPE 】 FLUX - SRPO  2 - 4 K 高清直出 文生图 + 图片反推_1987345787942277122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Fibo2工作流修改图片_2111991292468228098.json、图片生成/图生图/pandy-FIBO2-Turbo4步图像编辑_2114251172331741186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DualCLIPLoader`
-- `DyPE_Condition`
-- `DyPE_Encode`
-- `DyPE_KSampler`
-- `DyPE_Model`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `BasicGuider`
+- `EmptyFlux2LatentImage`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Translator`
+- `RHFibo2EditConditioning`
+- `RHFibo2ModelLoader`
+- `RHFibo2Scheduler`
+- `RHFibo2TextEncoderLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DyPE_FLUX` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RHFibo2KeepOutsideMask` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 28 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | res_2s | - | 1 | 100% |
-| 调度器 | beta57 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

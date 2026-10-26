@@ -3,60 +3,61 @@ name: unknown_workflow_video_sampler_vae_62
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.970625
-common_nodes: [GetImageSizeAndCount, INTConstant, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.948875
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN-VACE（首尾帧）_1909172301974089729.json, 视频生成/图生视频/图生视频---WAN-VACE（首尾帧）_2043935340162981889.json, 视频生成/图生视频/开源Sota级3图首尾帧组合（Phantom+VACE）_1934543155603644418.json, 视频生成/图生视频/开源Sota级首尾帧组合（Phantom+VACE）_1934460404364111874.json, 视频生成/图生视频/极速生成 --图生视频---WAN-VACE（首尾帧）_2044216380353945602.json, 视频生成/图生视频/超级多模态万物消失特效_1937073203258773506.json, 视频生成/图生视频/首尾帧 图生视频_2044595167281291265.json, 视频生成/图生视频/首尾帧图生视频_2044749490703310849.json]
+members: [视频生成/图生视频/wan数字人对口型工作流_2065613874346418178.json, 视频生成/文生视频/InfiniteTalk对口型_1963933041288728578.json, 视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json, 视频生成/文生视频/最强数字人infinitetalk（图片唱歌图片说话）_1957952304787898369.json, 音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100410279401181185.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100497922336055297.json, 音频生成/音频生成/超自然对口型 视频数字人_2000587001097224194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_62
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/WAN-VACE（首尾帧）_1909172301974089729.json、视频生成/图生视频/图生视频---WAN-VACE（首尾帧）_2043935340162981889.json、视频生成/图生视频/开源Sota级3图首尾帧组合（Phantom+VACE）_1934543155603644418.json、视频生成/图生视频/开源Sota级首尾帧组合（Phantom+VACE）_1934460404364111874.json、视频生成/图生视频/极速生成 --图生视频---WAN-VACE（首尾帧）_2044216380353945602.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan数字人对口型工作流_2065613874346418178.json、视频生成/文生视频/InfiniteTalk对口型_1963933041288728578.json、视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json、视频生成/文生视频/最强数字人infinitetalk（图片唱歌图片说话）_1957952304787898369.json、音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJ`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `String Literal`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/8 个有
-- `MaskPreview+` —— 5/8 个有
-- `WanVideoSLG` —— 3/8 个有
-- `WanVideoTeaCache` —— 3/8 个有
-- `WanVideoVACEModelSelect` —— 3/8 个有
-- `GetImageRangeFromBatch` —— 2/8 个有
-- `ImageBatchMulti` —— 2/8 个有
-- `MaskBatchMulti` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `LoadWanVideoClipTextEncoder` —— 1/8 个有
-- `WanVideoImageClipEncode` —— 1/8 个有
-- `WanVideoLoraSelect` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `AudioCrop` —— 7/8 个有
+- `AudioSeparation` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `MultiTalkModelLoader` —— 7/8 个有
+- `WanVideoLoraSelect` —— 6/8 个有
+- `Anything Everywhere` —— 5/8 个有
+- `LoadImage` —— 5/8 个有
+- `WanVideoTextEncodeCached` —— 5/8 个有
+- `GetImageRangeFromBatch` —— 4/8 个有
+- `WanVideoEncode` —— 4/8 个有
+- `easy int` —— 4/8 个有
+- `LoadWanVideoT5TextEncoder` —— 3/8 个有
+- `VHS_LoadVideo` —— 3/8 个有
+- `WanVideoTextEncode` —— 3/8 个有
+- `AudioCropProcessUTK` —— 1/8 个有
+- `MelBandRoFormerModelLoader` —— 1/8 个有
+- `MelBandRoFormerSampler` —— 1/8 个有
+- `PreviewAudio` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
 
 ## 典型参数
 

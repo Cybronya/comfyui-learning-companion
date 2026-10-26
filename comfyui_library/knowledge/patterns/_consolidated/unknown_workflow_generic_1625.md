@@ -3,41 +3,30 @@ name: unknown_workflow_generic_1625
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.825
-common_nodes: [AudioAdjustVolume, AudioMerge, AudioSeparation, LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor]
+coverage: 0.8335
+common_nodes: [CR Prompt Text, LoadImage, RH_GPT_Image15, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/44号特工：五音不全式+搞怪恶搞式翻唱+SoulX-Singer_2096129900108410882.json, 音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json]
+members: [图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json, 图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1625
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/44号特工：五音不全式+搞怪恶搞式翻唱+SoulX-Singer_2096129900108410882.json、音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json、图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioAdjustVolume`
-- `AudioMerge`
-- `AudioSeparation`
-- `LoadAudio`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `SaveAudioAdvanced` —— 1/2 个有
-- `SaveAudioNode` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_GPT_Image15`
+- `SaveImage`
 
 ## 典型参数
 

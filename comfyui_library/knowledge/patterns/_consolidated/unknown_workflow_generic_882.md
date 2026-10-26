@@ -1,45 +1,38 @@
 ---
 name: unknown_workflow_generic_882
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.846667
-common_nodes: [Apply Whisper, AudioSeparation, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadAudio, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceDesignTTS, OmniVoiceWhisperLoader, SaveAudio]
+coverage: 0.97225
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniVoice语音克隆_语音设计-多人对话、600+语言_2073318401031888898.json, 音频生成/音频生成/OmniVoice多合一工作流语音克隆_语音设计-多人对话、600+语言_2042807161117478913.json, 音频生成/音频生成/OmniVoice语音克隆_语音设计-多人对话   企财盈5.26_2059213979955847169.json]
+members: [音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json, 音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json, 音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_882
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/OmniVoice语音克隆_语音设计-多人对话、600+语言_2073318401031888898.json、音频生成/音频生成/OmniVoice多合一工作流语音克隆_语音设计-多人对话、600+语言_2042807161117478913.json、音频生成/音频生成/OmniVoice语音克隆_语音设计-多人对话   企财盈5.26_2059213979955847169.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json、音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json、音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json、音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioSeparation`
+全部 4 个 workflow 都包含：
 - `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
 - `LoadAudio`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceDesignTTS`
-- `OmniVoiceWhisperLoader`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_LLm_API` —— 1/3 个有
-- `LayerUtility: TextJoin` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
-- `RH_LLMAPI_Pro_Node` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AudioSeparation` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `MuyeLoadImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,35 +3,32 @@ name: unknown_workflow_video_sampler_29
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7445
-common_nodes: [ImageResizeKJv2, LoadImage, RunningHub VideoAsPrompt Loader, RunningHub VideoAsPrompt Sampler(CogVideoX), VHS_LoadVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [LoadAudio, LoadImage, RHHiddenNodes, VHS_VideoCombine, WanVideoDecode, WanVideoSampler]
 problems: []
 missing: []
-members: [视频生成/图生视频/Video-As-Prompt视频特效迁移大模型_1986433188270665729.json, 视频生成/图生视频/Video-As-Prompt，视频lora终结者？？？_1978743309952765954.json]
+members: [数字人/数字人/使用中_packed_横板_1990325968747286529.json, 数字人/数字人/使用中_packed_男_冷静版_1990325986870915074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Video-As-Prompt视频特效迁移大模型_1986433188270665729.json、视频生成/图生视频/Video-As-Prompt，视频lora终结者？？？_1978743309952765954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/使用中_packed_横板_1990325968747286529.json、数字人/数字人/使用中_packed_男_冷静版_1990325986870915074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub VideoAsPrompt Loader`
-- `RunningHub VideoAsPrompt Sampler(CogVideoX)`
-- `VHS_LoadVideo`
+- `RHHiddenNodes`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
+- `WanVideoDecode`
+- `WanVideoSampler`
 
 ## 典型参数
 

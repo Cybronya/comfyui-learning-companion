@@ -3,37 +3,29 @@ name: unknown_workflow_generic_1227
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LayerUtility: ImageScaleByAspectRatio, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveImage, TextBox, string_util_StrSplit]
+coverage: 0.9
+common_nodes: [ByteDanceFirstLastFrameNode, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/G-Image-2+全套主图和详情长图+海报(非服装类)_2054742644487671809.json, 图片生成/图生图/自动化全套主图和详情长图+可指定模特(服装类)_2053487359806722049.json]
+members: [comfyui-workflow-templates-json/api_bytedance_flf2v.json, comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1227
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G-Image-2+全套主图和详情长图+海报(非服装类)_2054742644487671809.json、图片生成/图生图/自动化全套主图和详情长图+可指定模特(服装类)_2053487359806722049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_flf2v.json、comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio`
+- `ByteDanceFirstLastFrameNode`
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `TextBox`
-- `string_util_StrSplit`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `SaveVideo`
 
 ## 典型参数
 

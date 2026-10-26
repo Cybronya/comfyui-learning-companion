@@ -1,83 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_169
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.921
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, GemmaAPITextEncode, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadVideo, LoraLoaderModelOnly, ManualSigmas, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+frequency: 4
+level: moderate
+coverage: 0.802
+common_nodes: [AudioCrop, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadAudio, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/LTX2.3动作迁移优化_2083394351262158850.json, 视频生成/图生视频/LTX2.3人物动作迁移（视频）_2083198650917941249.json, 音频生成/音频生成/LTX-2.3_ICLoRA_Lipdub V2V 口型同步工作流_2054609608710344705.json]
+members: [视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json, 视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json, 视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json, 视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_169
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LTX2.3动作迁移优化_2083394351262158850.json、视频生成/图生视频/LTX2.3人物动作迁移（视频）_2083198650917941249.json、音频生成/音频生成/LTX-2.3_ICLoRA_Lipdub V2V 口型同步工作流_2054609608710344705.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json、视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json、视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json、视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `AudioCrop`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GemmaAPITextEncode`
-- `GetVideoComponents`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXFloatToInt`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LoadVideo`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveString`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UnetLoaderGGUF`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CannyEdgePreprocessor` —— 2/3 个有
-- `DWPreprocessor` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `ImageToMask` —— 2/3 个有
-- `LTXVDilateVideoMask` —— 2/3 个有
-- `LTXVImgToVideoConditionOnly` —— 2/3 个有
-- `LTXVLaplacianPyramidBlend` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LTXVLatentUpsampler` —— 1/3 个有
-- `LTXVSetAudioRefTokens` —— 1/3 个有
-- `LatentUpscaleModelLoader` —— 1/3 个有
-- `ResizeImageMaskNode` —— 1/3 个有
+- `CreateVideo` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `SaveVideo` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `LTXVImgToVideoInplace` —— 2/4 个有
+- `LTXVLatentUpsampler` —— 2/4 个有
+- `LTXVPreprocess` —— 2/4 个有
+- `LatentUpscaleModelLoader` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `LTX2_NAG` —— 1/4 个有
+- `MaskPreview` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

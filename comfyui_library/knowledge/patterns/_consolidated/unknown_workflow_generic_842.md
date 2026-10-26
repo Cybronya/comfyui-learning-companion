@@ -1,45 +1,36 @@
 ---
 name: unknown_workflow_generic_842
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.744
-common_nodes: [BatchImagesNode, ComfyMathExpression, CreateVideo, GetImageSize, GetVideoComponents, LoadImage, LoadVideo, PreviewAny, SaveVideo]
+coverage: 0.88325
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan21_scail2_character_replacement.json, comfyui-workflow-templates-json/video_wan21_scail2_character_replacement_int8.json, comfyui-workflow-templates-json/video_wan_animate2_distilled.json]
+members: [视频生成/图生视频/与喔嘟嘟海边漫步_2069411071865217025.json, 视频生成/图生视频/参考人物换装_2061797146860539906.json, 视频生成/图生视频/参考人物游戏载入界面_2062919579176882178.json, 视频生成/图生视频/喔嘟嘟共舞_2069401480947396610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_842
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan21_scail2_character_replacement.json、comfyui-workflow-templates-json/video_wan21_scail2_character_replacement_int8.json、comfyui-workflow-templates-json/video_wan_animate2_distilled.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/与喔嘟嘟海边漫步_2069411071865217025.json、视频生成/图生视频/参考人物换装_2061797146860539906.json、视频生成/图生视频/参考人物游戏载入界面_2062919579176882178.json、视频生成/图生视频/喔嘟嘟共舞_2069401480947396610.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BatchImagesNode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetImageSize`
-- `GetVideoComponents`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `PreviewAny`
+- `RH_RhartImageG2ImageToImage`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `56bf150b-bd14-4513-8e03-335e1972ba62` —— 2/3 个有
-- `d1ab1953-6167-4827-b44e-b4108cea5702` —— 2/3 个有
-- `11706f8a-428d-4ef9-b24f-863f651c1b0b` —— 1/3 个有
-- `79280513-53b2-4417-93f8-f3e116bb6736` —— 1/3 个有
-- `7aac4913-f6e2-463e-9ca4-7f9f18363819` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `PreviewImage` —— 3/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
+- `RH_KlingVideoO3ProImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

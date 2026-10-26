@@ -3,56 +3,65 @@ name: unknown_workflow_sampler_clip_unet_301
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95425
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.798
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX-标准文生图（灵魂出窍）_1949732974748672001.json, 图片生成/文生图/Flux完整版文生图-在线生图【中文输入】【SirenYi】_1907048220537544706.json, 图片生成/文生图/Flux文生图快速出图版_1896542920525406210.json, 图片生成/文生图/全能图片G-4o卡通3D盲盒生成器_1911385397333585922.json]
+members: [图片生成/图生图/flux2 klein一键无损放大+细节增强_2082363830050578433.json, 图片生成/图生图/flux_特征转换iden_transfer_v3_2051150744098754562.json, 图片生成/图生图/klein单图编辑_图像修复_2018568599132184578.json, 图片生成/文生图/图片生成和编辑_Flux-2-Klein_2012115517577891842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_301
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FLUX-标准文生图（灵魂出窍）_1949732974748672001.json、图片生成/文生图/Flux完整版文生图-在线生图【中文输入】【SirenYi】_1907048220537544706.json、图片生成/文生图/Flux文生图快速出图版_1896542920525406210.json、图片生成/文生图/全能图片G-4o卡通3D盲盒生成器_1911385397333585922.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux2 klein一键无损放大+细节增强_2082363830050578433.json、图片生成/图生图/flux_特征转换iden_transfer_v3_2051150744098754562.json、图片生成/图生图/klein单图编辑_图像修复_2018568599132184578.json、图片生成/文生图/图片生成和编辑_Flux-2-Klein_2012115517577891842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TeaCache` —— 3/4 个有
-- `ImageUpscaleWithModel` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `Lora Loader Stack (rgthree)` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `Upscale Model Loader` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `ColorMatch` —— 1/4 个有
+- `IdentityFeatureTransferV3` —— 1/4 个有
+- `ImageLoader` —— 1/4 个有
+- `ImageSharpen` —— 1/4 个有
+- `ImageStitch` —— 1/4 个有
+- `JWImageResizeByLongerSide` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `ResizeImagesByLongerEdge` —— 1/4 个有
+- `TTP_text_mix` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1024 | 4 | 88% |
-| 高度 | 1280 | 1024 - 1536 | 4 | 80% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1024，4 个样本，取值集中（一致性 88%）
-- 高度 中位数 1280，观测区间 1024 - 1536，4 个样本，取值集中（一致性 80%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

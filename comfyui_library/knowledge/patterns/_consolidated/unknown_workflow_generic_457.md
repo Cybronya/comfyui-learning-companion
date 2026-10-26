@@ -3,34 +3,39 @@ name: unknown_workflow_generic_457
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.909
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.826167
+common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/低价视频模型批量生成无压力_2065988254968668162.json, 视频生成/图生视频/全能最强生视频2.0_全能参考 生视频_2037331623179460609.json, 视频生成/图生视频/全能视频PRO 2.0-Fast极速版_全能参考 生视频_2037343534818267137.json, 视频生成/图生视频/地表最强超能视频2.0全能参考-支持真人工作流_2037503939075121154.json, 视频生成/图生视频/（支持真人）地表最强超能视频2.0_全能参考_2037433012568203266.json, 视频生成/文生视频/低价视频模型批量生成无压力_2065988254968668162.json]
+members: [图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json, 图片生成/图生图/Seedvr高清放大_1993206227960266753.json, 图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json, 图片生成/图生图/seedvr2高清放大_1959466074016264193.json, 图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json, 图片生成/图生图/放大_2081305934164480002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_457
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/低价视频模型批量生成无压力_2065988254968668162.json、视频生成/图生视频/全能最强生视频2.0_全能参考 生视频_2037331623179460609.json、视频生成/图生视频/全能视频PRO 2.0-Fast极速版_全能参考 生视频_2037343534818267137.json、视频生成/图生视频/地表最强超能视频2.0全能参考-支持真人工作流_2037503939075121154.json、视频生成/图生视频/（支持真人）地表最强超能视频2.0_全能参考_2037433012568203266.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json、图片生成/图生图/Seedvr高清放大_1993206227960266753.json、图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json、图片生成/图生图/seedvr2高清放大_1959466074016264193.json、图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 4/6 个有
-- `LLQuerenGrok` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `SeedVR2ExtraArgs` —— 4/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `GetNode` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 

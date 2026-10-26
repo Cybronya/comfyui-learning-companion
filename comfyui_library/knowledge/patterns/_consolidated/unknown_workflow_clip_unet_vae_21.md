@@ -1,53 +1,57 @@
 ---
 name: unknown_workflow_clip_unet_vae_21
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.960667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, SaveAnimatedWEBP, SaveImage, SaveWEBM, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.835
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImpactSwitch, PreviewAny, RHHiddenNodes, RH_LLMAPI_NODE, SaveImage, Text, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/text_to_video_wan22_14B官方优化版_1950503480169517058.json, 视频生成/文生视频/【AI由北】Wan2.1 文生视频 全能版_1927645156290215937.json, 视频生成/文生视频/通义万相WAN2.1文生视频基础工作流_1924310147001143297.json]
+members: [图片生成/图生图/文生图 Z-Image，AI 视觉生成新选择_2018922072969318402.json, 图片生成/文生图/Z-Image + 文生图 + qwen3 + 图片高清放大_2037536709897887745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/text_to_video_wan22_14B官方优化版_1950503480169517058.json、视频生成/文生视频/【AI由北】Wan2.1 文生视频 全能版_1927645156290215937.json、视频生成/文生视频/通义万相WAN2.1文生视频基础工作流_1924310147001143297.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/文生图 Z-Image，AI 视觉生成新选择_2018922072969318402.json、图片生成/文生图/Z-Image + 文生图 + qwen3 + 图片高清放大_2037536709897887745.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `SaveAnimatedWEBP`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `ImpactSwitch`
+- `PreviewAny`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SaveWEBM`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 2/3 个有
-- `ModelSamplingSD3` —— 2/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
+- `FluxResolutionNode` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 20 | 3 | 38% |
-| 采样算法 | uni_pc | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1920 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -55,9 +59,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 20，3 个样本，取值分散，一致性仅 38%
-- 采样算法 最常用 uni_pc，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

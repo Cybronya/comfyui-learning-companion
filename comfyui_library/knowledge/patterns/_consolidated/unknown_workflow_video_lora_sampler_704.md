@@ -1,49 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_704
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Text, GetImageSize, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, VHS_SelectImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.888333
+common_nodes: [CreateCFGScheduleFloatList, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy float, easy int, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json, 视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json]
+members: [视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json, 视频生成/图生视频/【24帧强动态】万相_wan2.2图生视频KJ版_1952243502325420034.json, 视频生成/文生视频/万相_wan2.2文生视频KJ版 基础工作流 旧版lightx2v加速_1951199136504852481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_704
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json、视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json、视频生成/图生视频/【24帧强动态】万相_wan2.2图生视频KJ版_1952243502325420034.json、视频生成/文生视频/万相_wan2.2文生视频KJ版 基础工作流 旧版lightx2v加速_1951199136504852481.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetImageSize`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `JjkText`
+- `LayerUtility: PurgeVRAM`
 - `LoadWanVideoT5TextEncoder`
-- `SaveImage`
-- `VHS_SelectImages`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageResizeToClosest`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy float`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `ImpactFloat` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `WanVideoImageToVideoEncode` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `easy clearCacheAll` —— 1/3 个有
 
 ## 典型参数
 
@@ -55,4 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

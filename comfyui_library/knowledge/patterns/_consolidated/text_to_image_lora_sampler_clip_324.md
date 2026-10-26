@@ -3,85 +3,78 @@ name: text_to_image_lora_sampler_clip_324
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.872167
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.888333
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3动作迁移 参考视频动作迁移角色一致性生成_2099923089667747842.json, 视频生成/图生视频/MINIMAX-H3动作迁移-角色一致性图生视频工作流_2087345943531311106.json, 视频生成/图生视频/多图生视频+音频+视频接入｜MiniMax H3场景特效_2092205364438720514.json, 视频生成/图生视频/多图生视频音频视频接入｜MiniMax H3场景特效生成_2092018470065106945.json, 视频生成/图生视频/海螺MiniMax-H3开源版图片开口说话数字人-图像音频参考图生视频_2087385959053742082.json, 视频生成/文生视频/MinimaxH3开源版参考生视频｜9-3-3高质量生成_2095584855844278273.json]
+members: [图片生成/图生图/FLUX3加速版图像编辑写真级｜上传图就改不动手修_2111338389898354689.json, 图片生成/图生图/Fibo2单图多图编辑 局部重绘换背景图生图处理工具_2113706040213725186.json, 图片生成/图生图/Fibo2单图多图编辑双模式｜局部重绘换背景图生图全行_2113533013467422721.json, 图片生成/图生图/Fibo2单图编辑工作流，一张图搞定指令修图局部替换快速出图_2114465611718942722.json, 图片生成/图生图/Fibo2工作流图片修改 精修文生图处理生成工具_2113745561978490881.json, 图片生成/图生图/单图编辑FLUX3-Klein in 加速，电商图生图提速_2111607229198721025.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_324
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/H3动作迁移 参考视频动作迁移角色一致性生成_2099923089667747842.json、视频生成/图生视频/MINIMAX-H3动作迁移-角色一致性图生视频工作流_2087345943531311106.json、视频生成/图生视频/多图生视频+音频+视频接入｜MiniMax H3场景特效_2092205364438720514.json、视频生成/图生视频/多图生视频音频视频接入｜MiniMax H3场景特效生成_2092018470065106945.json、视频生成/图生视频/海螺MiniMax-H3开源版图片开口说话数字人-图像音频参考图生视频_2087385959053742082.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX3加速版图像编辑写真级｜上传图就改不动手修_2111338389898354689.json、图片生成/图生图/Fibo2单图多图编辑 局部重绘换背景图生图处理工具_2113706040213725186.json、图片生成/图生图/Fibo2单图多图编辑双模式｜局部重绘换背景图生图全行_2113533013467422721.json、图片生成/图生图/Fibo2单图编辑工作流，一张图搞定指令修图局部替换快速出图_2114465611718942722.json、图片生成/图生图/Fibo2工作流图片修改 精修文生图处理生成工具_2113745561978490881.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `GetVideoComponents` —— 4/6 个有
-- `LoadAudio` —— 4/6 个有
-- `LoadVideo` —— 4/6 个有
-- `JoinStrings` —— 3/6 个有
-- `AILab_ImageStitch` —— 2/6 个有
-- `CM_IntToFloat` —— 2/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
-- `RHHiddenNodes` —— 2/6 个有
-- `easy int` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `AILab_QwenVL` —— 1/6 个有
-- `AudioCrop` —— 1/6 个有
-- `ShellAgentPluginOutputText` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy anythingIndexSwitch` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `llama_cpp_instruct_adv` —— 1/6 个有
-- `llama_cpp_model_loader` —— 1/6 个有
-- `llama_cpp_parameters` —— 1/6 个有
+- `RHFibo2EditConditioning` —— 4/6 个有
+- `RHFibo2ModelLoader` —— 4/6 个有
+- `RHFibo2Scheduler` —— 4/6 个有
+- `RHFibo2TextEncoderLoader` —— 4/6 个有
+- `Anything Everywhere3` —— 3/6 个有
+- `LayerMask: PersonMaskUltra` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `Anything Everywhere` —— 2/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `PDIMAGE_LongerSize` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `ReferenceLatent` —— 2/6 个有
+- `VAEEncode` —— 2/6 个有
+- `ImageConcanate` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `RHFibo2KeepOutsideMask` —— 1/6 个有
+- `ResolutionSelector` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `easy imageConcat` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 | 采样步数 | 4 | 4 - 4 | 6 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
 | 采样算法 | er_sde | - | 6 | 100% |
 | 调度器 | beta | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
@@ -91,11 +84,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，6 个样本，一致性 100%
 - 调度器 最常用 beta，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_505
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.84
-common_nodes: [LoadImage, LoadRembgByBiRefNetModel, RembgByBiRefNet, SaveImage]
+coverage: 0.895833
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json, 图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json, 图片生成/图生图/移除背景工作流_2014701119468998657.json, 图片生成/图生图/绿幕抠图_2036987086074548226.json, 图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json]
+members: [视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json, 视频生成/图生视频/Seedance2.0 fast 全能参考视频(支持真人)_2067073738482470914.json, 视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json, 视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json, 视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json, 视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_505
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json、图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json、图片生成/图生图/移除背景工作流_2014701119468998657.json、图片生成/图生图/绿幕抠图_2036987086074548226.json、图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json、视频生成/图生视频/Seedance2.0 fast 全能参考视频(支持真人)_2067073738482470914.json、视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json、视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json、视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `LoadRembgByBiRefNetModel`
-- `RembgByBiRefNet`
-- `SaveImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 1/5 个有
-- `MaskPreview` —— 1/5 个有
+- `RH_SparkVideoAssetCreate` —— 5/6 个有
+- `RH_SparkVideoAssetIdsMerge` —— 5/6 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/6 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/6 个有
+- `RH_SparkVideoAssetQuery` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `SoundFlow_TrimAudio` —— 1/6 个有
 
 ## 典型参数
 

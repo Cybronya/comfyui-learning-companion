@@ -1,57 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_296
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.923
-common_nodes: [CR Text, CogVideoEnhanceAVideo, CombinationText, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RH_LLMAPI_NODE, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, easy string, easy textSwitch]
+coverage: 0.966625
+common_nodes: [CreateCFGScheduleFloatList, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json, 视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json, 视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json, 视频生成/图生视频/万物360度旋转_1994253220916690946.json, 视频生成/图生视频/图生视频_2000816719373496322.json, 视频生成/文生视频/360度旋转 细节保留 真实光影 超强一致 Wan2.2万物旋转 - 360度轨道镜头   万相任意_2000731719860879361.json, 视频生成/文生视频/【wan2.2】360度旋转特效+图生视频  万物旋转360度 KJ加速版_1972165939687059457.json]
+members: [视频生成/图生视频/CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json, 视频生成/图生视频/CG迷-Wan2.2 Kijai图生视频工作流（支持gguf）_1950495596585144322.json, 视频生成/图生视频/CG迷-Wan2.2 Kijai首尾帧频工作流（支持gguf）_1952283809247080449.json, 视频生成/图生视频/MultiTalk对口型（万相实现）_1937838193955749889.json, 视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json, 视频生成/图生视频/WAN2.2_multitalk数字人（动作幅度较大）_1953061353666899969.json, 视频生成/图生视频/wanvideo_multitalk_test_01_1936354882708475905.json, 视频生成/文生视频/wanvideo_multitalk_test_01g_1978251602106703873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_296
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json、视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json、视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json、视频生成/图生视频/万物360度旋转_1994253220916690946.json、视频生成/图生视频/图生视频_2000816719373496322.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json、视频生成/图生视频/CG迷-Wan2.2 Kijai图生视频工作流（支持gguf）_1950495596585144322.json、视频生成/图生视频/CG迷-Wan2.2 Kijai首尾帧频工作流（支持gguf）_1952283809247080449.json、视频生成/图生视频/MultiTalk对口型（万相实现）_1937838193955749889.json、视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `CombinationText`
+全部 8 个 workflow 都包含：
 - `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
-- `easy string`
-- `easy textSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `INTConstant` —— 7/8 个有
+- `WanVideoBlockSwap` —— 7/8 个有
+- `DownloadAndLoadWav2VecModel` —— 6/8 个有
+- `LoadAudio` —— 6/8 个有
+- `MultiTalkModelLoader` —— 6/8 个有
+- `MultiTalkWav2VecEmbeds` —— 6/8 个有
+- `AudioCrop` —— 5/8 个有
+- `AudioSeparation` —— 5/8 个有
+- `CLIPVisionLoader` —— 5/8 个有
+- `ImageResizeKJv2` —— 5/8 个有
+- `WanVideoClipVisionEncode` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 5/8 个有
+- `WanVideoContextOptions` —— 4/8 个有
+- `WanVideoSetBlockSwap` —— 4/8 个有
+- `WanVideoSetLoRAs` —— 4/8 个有
+- `GetImageSizeAndCount` —— 3/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `VHS_DuplicateImages` —— 3/8 个有
+- `WanVideoEncode` —— 3/8 个有
+- `WanVideoUni3C_ControlnetLoader` —— 3/8 个有
+- `WanVideoUni3C_embeds` —— 3/8 个有
+- `Audio Duration (mtb)` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `ImageResizeKJ` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `JWInteger` —— 1/8 个有
+- `JWIntegerToString` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `TextInput_` —— 1/8 个有
 
 ## 典型参数
 

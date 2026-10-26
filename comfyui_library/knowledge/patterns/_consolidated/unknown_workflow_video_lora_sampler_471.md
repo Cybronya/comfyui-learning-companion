@@ -1,74 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_471
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.942
-common_nodes: [CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.4458
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json, 视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json, 视频生成/图生视频/爆火的西游记人物唱歌 ， Infinite talk 数字人（循环流不爆显存）除非到了平台的时长限制_1980902275004678145.json, "音频生成/音频生成/MV,音乐达人，高动态音乐数字人_2046930658349555714.json"]
+members: [数字人/数字人/视频人物替换 动作迁移 SCAIL 2（支持多人）_2065647705745084418.json, 数字人/数字人/视频人物替换 视频动作迁移 SCAIL 2（单人和多人）_2065655949918031874.json, 视频生成/图生视频/SCAIL 2 角色替换+动作迁移+表情迁移（长视频续航版）_2065651452084834306.json, 视频生成/图生视频/SCAIL-2 影视级角色动作驱动与替换_2064580143158480898.json, 视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_471
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json、视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json、视频生成/图生视频/爆火的西游记人物唱歌 ， Infinite talk 数字人（循环流不爆显存）除非到了平台的时长限制_1980902275004678145.json、音频生成/音频生成/MV,音乐达人，高动态音乐数字人_2046930658349555714.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/视频人物替换 动作迁移 SCAIL 2（支持多人）_2065647705745084418.json、数字人/数字人/视频人物替换 视频动作迁移 SCAIL 2（单人和多人）_2065655949918031874.json、视频生成/图生视频/SCAIL 2 角色替换+动作迁移+表情迁移（长视频续航版）_2065651452084834306.json、视频生成/图生视频/SCAIL-2 影视级角色动作驱动与替换_2064580143158480898.json、视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
+- `CheckpointLoaderSimple`
+- `GetNode`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `SetNode`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/4 个有
-- `AudioSeparation` —— 3/4 个有
-- `Bjornulf_ShowInt` —— 3/4 个有
-- `GetImageSizeAndCount` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `easy int` —— 3/4 个有
-- `Bjornulf_ShowFloat` —— 1/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Display Int (rgthree)` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageScaleBy` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `IndexTTS2Run` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `Pick From Batch (mtb)` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SetNode` —— 1/4 个有
+- `BatchImagesNode` —— 4/5 个有
+- `ColorTransfer` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `GetImageRangeFromBatch` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `VHS_VideoInfo` —— 4/5 个有
+- `ApplySageAttention` —— 3/5 个有
+- `CR Text` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `Seed` —— 3/5 个有
+- `easy imageRemBg` —— 3/5 个有
+- `ImageFromBatch` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `Text` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `DiffusionModelLoaderKJ` —— 1/5 个有
+- `GoogleTranslateTextNode` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `ModelPatchTorchSettings` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
+- `WanChunkFeedForward` —— 1/5 个有
 
 ## 典型参数
 

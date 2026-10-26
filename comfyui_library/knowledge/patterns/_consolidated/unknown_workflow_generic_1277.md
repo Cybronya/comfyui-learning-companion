@@ -3,41 +3,33 @@ name: unknown_workflow_generic_1277
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.3715
-common_nodes: [CR Text, CR Text Concatenate, GetNode, InversionDemoLazyIndexSwitch, JjkText, RH_Jimeng4_Image2Image, SaveImage, SetNode, ShowText|pysssss, easy int]
+coverage: 0.575
+common_nodes: [JjkText, RH_LLMAPI_Pro_Node, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/jimeng4.0-多图编辑版（5张图）Multi image editing version_1967852742049935362.json, 图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json]
+members: [图片生成/反推提示词/(工具流)LLM-agent基础框架（gemini3.1）小说出seedance2.0台本简易版_2041787370315456514.json, 图片生成/反推提示词/(工具流)全自动小说改seedance2.0台本-LLM-agent基础框架（gemini3.1）_2041429321407008769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1277
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/jimeng4.0-多图编辑版（5张图）Multi image editing version_1967852742049935362.json、图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/(工具流)LLM-agent基础框架（gemini3.1）小说出seedance2.0台本简易版_2041787370315456514.json、图片生成/反推提示词/(工具流)全自动小说改seedance2.0台本-LLM-agent基础框架（gemini3.1）_2041429321407008769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：37%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `GetNode`
-- `InversionDemoLazyIndexSwitch`
 - `JjkText`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `easy int`
+- `RH_LLMAPI_Pro_Node`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,75 +3,78 @@ name: unknown_workflow_controlnet_video_upscale_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.548
-common_nodes: [AIO_Preprocessor, CR Upscale Image, DWPreprocessor, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, MyOpenPoseNode, OpenposePreprocessor, PreviewImage, ReActorFaceSwap, ReActorRestoreFace, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEasyCache, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoRealisDanceLatents, WanVideoSLG, WanVideoSampler, WanVideoSetRadialAttention, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoUniAnimatePoseInput, WanVideoVAELoader, easy showAnything]
+coverage: 0.838
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PlaySound|pysssss, PreviewImage, RH_Captioner, RH_Translator, RIFE VFI, SimpleMath+, Text Concatenate, UpscaleModelLoader, VHS_DuplicateImages, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy anythingIndexSwitch, easy compare, easy ifElse, easy imageScaleDownToSize, easy imageSize, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json, 视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json]
+members: [视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json, 音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json、视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json、音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Upscale Image`
-- `DWPreprocessor`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Text`
 - `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `ImageResizeKJ`
-- `ImageSmartSharpen+`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageScale`
+- `ImageUpscaleWithModel`
+- `JWInteger`
+- `JWIntegerToString`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `MyOpenPoseNode`
-- `OpenposePreprocessor`
+- `PlaySound|pysssss`
 - `PreviewImage`
-- `ReActorFaceSwap`
-- `ReActorRestoreFace`
-- `SetNode`
+- `RH_Captioner`
+- `RH_Translator`
+- `RIFE VFI`
+- `SimpleMath+`
+- `Text Concatenate`
+- `UpscaleModelLoader`
+- `VHS_DuplicateImages`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
 - `WanVideoEncode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoFreeInitArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoRealisDanceLatents`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetRadialAttention`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
-- `WanVideoUniAnimatePoseInput`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy compare`
+- `easy ifElse`
+- `easy imageScaleDownToSize`
+- `easy imageSize`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Manual XY Entry Info` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy imageListToImageBatch` —— 1/2 个有
 
 ## 典型参数
 

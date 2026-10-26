@@ -3,58 +3,70 @@ name: unknown_workflow_video_sampler_vae_60
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.912375
-common_nodes: [ImageConcatMulti, ImagePadKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.75025
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json, 视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json, 视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json, 视频生成/图生视频/上传一张图生成电商产品展示视频（phantom主体一致性）_1917815570186567682.json, 视频生成/图生视频/字节Phantom14B_最新多图参考一致性视频(电商带货)_1916395426835005442.json, 视频生成/图生视频/字节Phantom14B单主体(电商广告视频生成)_1927557646478643202.json]
+members: [视频生成/图生视频/WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json, 视频生成/图生视频/vace阔图_1925382654517030913.json, 视频生成/图生视频/vace首尾帧_1925399301634109442.json, 视频生成/图生视频/【VACE系列】首尾帧工作流初体验_1925182598413545473.json, 视频生成/图生视频/最新Wan2.1+Vace  视频画面内容拓展【中文注释简单易懂】_1911760861873274882.json, 视频生成/图生视频/极速视频编辑 Self-Forcing + VACE nightly_1928359146670964738.json, 视频生成/文生视频/万相控制视频 VACE nightly_1923433916261126146.json, 视频生成/文生视频/🥪【大炮视频】FusionX VACE首尾帧+姿态迁移🥪_1934860931379699714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json、视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json、视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json、视频生成/图生视频/vace阔图_1925382654517030913.json、视频生成/图生视频/vace首尾帧_1925399301634109442.json、视频生成/图生视频/【VACE系列】首尾帧工作流初体验_1925182598413545473.json、视频生成/图生视频/最新Wan2.1+Vace  视频画面内容拓展【中文注释简单易懂】_1911760861873274882.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
 - `ImageConcatMulti`
-- `ImagePadKJ`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 7/8 个有
-- `Text Multiline` —— 7/8 个有
-- `Primitive integer [Crystools]` —— 6/8 个有
-- `WanVideoTeaCache` —— 6/8 个有
-- `EmptyImage` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `RH_Translator` —— 2/8 个有
-- `AddLabel` —— 1/8 个有
-- `DF_Integer` —— 1/8 个有
-- `GetImageSize` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `WanVideoTeaCache` —— 7/8 个有
+- `WanVideoTextEncode` —— 7/8 个有
+- `WanVideoVACEModelSelect` —— 7/8 个有
+- `ImagePadKJ` —— 6/8 个有
+- `VHS_LoadVideo` —— 6/8 个有
+- `GetImageRangeFromBatch` —— 5/8 个有
+- `GetNode` —— 5/8 个有
+- `ImageResizeKJv2` —— 5/8 个有
+- `LoadImage` —— 5/8 个有
+- `MaskPreview` —— 5/8 个有
+- `SetNode` —— 5/8 个有
+- `WanVideoVACEStartToEndFrame` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `DepthAnything_V2` —— 3/8 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 3/8 个有
+- `ImageResizeKJ` —— 3/8 个有
+- `MaskPreview+` —— 3/8 个有
+- `WanVideoEnhanceAVideo` —— 3/8 个有
+- `WanVideoApplyNAG` —— 2/8 个有
+- `WanVideoMagCache` —— 2/8 个有
+- `WanVideoTextEncodeSingle` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
 - `SimpleMath+` —— 1/8 个有
-- `easy clearCacheAll` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `WanVideoLoraSelect` —— 1/8 个有
 
 ## 典型参数
 

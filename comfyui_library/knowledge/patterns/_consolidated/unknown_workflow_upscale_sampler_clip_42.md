@@ -1,72 +1,62 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_42
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7865
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Upscale Image, DetailDaemonSamplerNode, DualCLIPLoader, EmptySD3LatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Image Tiled, ImageConcanateOfUtils, ImageFromBatch, KSamplerSelect, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TeaCache, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+frequency: 3
+level: strong
+coverage: 0.823
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), KSamplerAdvanced, PreviewImage, QwenImageLatentAspectRatio, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/B站：AI绘画师-数码宝贝-天女兽生图工作流_1904073338157965314.json, 图片生成/文生图/星空女孩lora-工作流_1967085637759275009.json]
+members: [图片生成/图生图/极速文生图，极速洗图 Zimage-差异生图_2000199609148375041.json, 图片生成/文生图/Zimage-差异生图_2000774772462059522.json, 图片生成/文生图/极速，Zimage-差异生图，高清_2000564738843082754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_42
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/B站：AI绘画师-数码宝贝-天女兽生图工作流_1904073338157965314.json、图片生成/文生图/星空女孩lora-工作流_1967085637759275009.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/极速文生图，极速洗图 Zimage-差异生图_2000199609148375041.json、图片生成/文生图/Zimage-差异生图_2000774772462059522.json、图片生成/文生图/极速，Zimage-差异生图，高清_2000564738843082754.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Upscale Image`
-- `DetailDaemonSamplerNode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `Image Tiled`
-- `ImageConcanateOfUtils`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `ModelSamplingFlux`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImageLatentAspectRatio`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TeaCache`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
+- `LoadImage` —— 1/3 个有
+- `MaraScottIsEmptyOrNone_v1` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | er_sde | - | 3 | 100% |
+| 重绘幅度 | sgm_uniform | - | 3 | 100% |
 
 ## 常见问题
 
@@ -74,4 +64,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 er_sde，3 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，3 个样本，一致性 100%

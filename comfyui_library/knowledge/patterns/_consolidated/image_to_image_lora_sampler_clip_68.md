@@ -2,23 +2,23 @@
 name: image_to_image_lora_sampler_clip_68
 type: Image To Image
 frequency: 4
-level: moderate
-coverage: 0.91525
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.85775
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/F.1图生图车身修复_2079052568524845058.json, 图片生成/图生图/【査老师制作】一键老照片修复_1956924520524124162.json, 图片生成/图生图/产品精修2.0-金属类_2016066176866062337.json, 图片生成/图生图/人像日系调色-Kontext_1955302228431179778.json]
+members: [图片生成/图生图/Kontext+lora新版产品溶图_1961704631699181570.json, 图片生成/图生图/Kontext1--三视图+细化_1985957193465962497.json, 图片生成/图生图/flux_kontext_dev（附Presets插件，解放双手，无需手写触发词）_1956999676890157057.json, 图片生成/图生图/kontext 产品融合场景2.0 (光影lora)_1954190048486944770.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_68
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/F.1图生图车身修复_2079052568524845058.json、图片生成/图生图/【査老师制作】一键老照片修复_1956924520524124162.json、图片生成/图生图/产品精修2.0-金属类_2016066176866062337.json、图片生成/图生图/人像日系调色-Kontext_1955302228431179778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Kontext+lora新版产品溶图_1961704631699181570.json、图片生成/图生图/Kontext1--三视图+细化_1985957193465962497.json、图片生成/图生图/flux_kontext_dev（附Presets插件，解放双手，无需手写触发词）_1956999676890157057.json、图片生成/图生图/kontext 产品融合场景2.0 (光影lora)_1954190048486944770.json）
 
 - **类型**：Image To Image
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
@@ -26,10 +26,13 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `Image Comparer (rgthree)`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -37,39 +40,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 3/4 个有
-- `ReferenceLatent` —— 3/4 个有
+- `EmptySD3LatentImage` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `FastCanvas` —— 2/4 个有
+- `FastCanvasTool` —— 2/4 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `RebatchLatents` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `AILab_QwenVL` —— 1/4 个有
-- `ConstrainImage|pysssss` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `RepeatLatentBatch` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `图像缩放V2_孤海` —— 1/4 个有
+- `easy imageDetailTransfer` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
+- `LayerUtility: ImageAutoCrop V2` —— 1/4 个有
+- `LoadKontextPresets` —— 1/4 个有
+- `ModelSamplingFlux` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 8 - 30 | 4 | 61% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 1 | 0.59 - 1 | 4 | 80% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 8 - 30，4 个样本
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 0.59 - 1，4 个样本，取值集中（一致性 80%）
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

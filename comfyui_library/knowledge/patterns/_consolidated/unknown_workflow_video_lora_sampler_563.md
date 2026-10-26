@@ -1,61 +1,51 @@
 ---
 name: unknown_workflow_video_lora_sampler_563
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.963333
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7465
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json, 视频生成/图生视频/【遇见AI】wan2.1 Skyreels V2 图生视频，支持超过81帧_2067521044533039105.json, 视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json]
+members: [视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json, 视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json, 视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json, 视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_563
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json、视频生成/图生视频/【遇见AI】wan2.1 Skyreels V2 图生视频，支持超过81帧_2067521044533039105.json、视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json、视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json、视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json、视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadWav2VecModel` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `WanVideoExperimentalArgs` —— 2/3 个有
-- `CreateCFGScheduleFloatList` —— 1/3 个有
-- `FantasyTalkingModelLoader` —— 1/3 个有
-- `FantasyTalkingWav2VecEmbeds` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `MelBandRoFormerModelLoader` —— 1/3 个有
-- `MelBandRoFormerSampler` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
-- `WanVideoImageToVideoSkyreelsv3_audio` —— 1/3 个有
-- `WanVideoPassImagesFromSamples` —— 1/3 个有
+- `CR Text` —— 2/4 个有
+- `LoadVideo` —— 2/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `RTXVideoSuperResolution` —— 2/4 个有
+- `TextInput_` —— 2/4 个有
+- `BiRefNetRMBG` —— 1/4 个有
 
 ## 典型参数
 

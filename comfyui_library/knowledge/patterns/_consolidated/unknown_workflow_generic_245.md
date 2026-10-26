@@ -3,34 +3,37 @@ name: unknown_workflow_generic_245
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.719222
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.967444
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频G 1.5图生视频_2075512794958622721.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2061309598879019009.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH版）_2061070407112941570.json, 视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2061096383377141761.json, 视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2078659733879353345.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版 0.03_秒_2049413181075890177.json, 视频生成/图生视频/全能视频X图生视频（RH版）_2054445953876275202.json, 视频生成/文生视频/(支持真人)超能视频2.0多图参考R2V视频生成V2（1秒1元）_2033903081225723906.json]
+members: [图片生成/图生图/DreamO双图人物一致性Try On换装V2（不炸显存）_1925970864809152514.json, 图片生成/图生图/Nano 全能图片V1 Pro2+0.2一个标准九宫图_2000446115969368065.json, 图片生成/图生图/全能图片V1 2 旅拍写真组图_1999315041277050882.json, 图片生成/图生图/全能图片V1 2 旅拍写真组图_1999443031344414722.json, 图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场_2000499215249833985.json, 图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场稳定版_2000522097862508546.json, 图片生成/图生图/动漫转真人（一步还原）香芭蕉_2015650982276894722.json, 图片生成/图生图/动漫转真人（两步还原）香芭蕉_2015637352621809665.json, 图片生成/文生图/🍌2 pro+Pro2+0.05一个标准九宫图 全能图片+xiangjiao_2027184563528667137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_245
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/全能视频G 1.5图生视频_2075512794958622721.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2061309598879019009.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH版）_2061070407112941570.json、视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2061096383377141761.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/DreamO双图人物一致性Try On换装V2（不炸显存）_1925970864809152514.json、图片生成/图生图/Nano 全能图片V1 Pro2+0.2一个标准九宫图_2000446115969368065.json、图片生成/图生图/全能图片V1 2 旅拍写真组图_1999315041277050882.json、图片生成/图生图/全能图片V1 2 旅拍写真组图_1999443031344414722.json、图片生成/图生图/全能图片V1 Pro2+动漫转真人+拍摄现场_2000499215249833985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
 - `LoadImage`
-- `SaveVideo`
+- `PDIMAGE_LongerSize`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 8/9 个有
-- `easy showAnything` —— 8/9 个有
-- `CR Prompt Text` —— 5/9 个有
-- `RH_CinematicVideoGenerator` —— 1/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 7/9 个有
+- `ImageGridtoBatch` —— 4/9 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/9 个有
+- `RunningHub DreamO` —— 1/9 个有
 
 ## 典型参数
 

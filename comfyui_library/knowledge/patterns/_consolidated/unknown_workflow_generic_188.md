@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_188
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9857
-common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
+coverage: 0.887091
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json, 图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json, 图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json, 图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json, 图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json, 图片生成/图生图/全能图片V1 三图_1968839390380347393.json, 图片生成/图生图/全能图片V1 单图_1963478031736213506.json, 图片生成/图生图/全能图片V1 四图融合_1970048530469580802.json, 图片生成/图生图/全能图片V1-lmage2lmage-图生图-傲雪AIGC_1994422410524889090.json, 图片生成/图生图/全能图片V1基础多图编辑（A pose）_1975563839305592834.json]
+members: [图片生成/文生图/全能图片Pro 文生图_1991707945115267074.json, 图片生成/文生图/全能图片Pro图生图_2031907838896906241.json, 图片生成/文生图/全能图片Pro批量生图替换物品_2037795451444924418.json, 图片生成/文生图/全能图片TG-2026-2支持文生图_图生图_2025879024190365698.json, 图片生成/文生图/全能图片V1 2 & Pro 最强图片生成（支持文生图_图生图）_1992280946389086209.json, 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图_1993262441970810881.json, 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json, 图片生成/文生图/全能图片V1 2单图编辑标准版，每日前5次免费，只扣RH点数_1994259087814836225.json, 图片生成/文生图/全能图片V12单图编辑_1992468217274716161.json, 数字人/数字人/全能图片V12人物换姿势单双图_1992800802117054466.json, 数字人/数字人/口播分身图制作 NB Pro_2031070736890208258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_188
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json、图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json、图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json、图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json、图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/全能图片Pro 文生图_1991707945115267074.json、图片生成/文生图/全能图片Pro图生图_2031907838896906241.json、图片生成/文生图/全能图片Pro批量生图替换物品_2037795451444924418.json、图片生成/文生图/全能图片TG-2026-2支持文生图_图生图_2025879024190365698.json、图片生成/文生图/全能图片V1 2 & Pro 最强图片生成（支持文生图_图生图）_1992280946389086209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `ImageResize+`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Translator`
+全部 11 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Combine Prompt` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `PresetTextSelector` —— 1/10 个有
+- `LoadImage` —— 10/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/11 个有
+- `CR Text` —— 5/11 个有
 
 ## 典型参数
 

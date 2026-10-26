@@ -3,39 +3,33 @@ name: unknown_workflow_generic_1269
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6135
-common_nodes: [Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
+coverage: 0.4375
+common_nodes: [PrimitiveStringMultiline, SaveImage, StringConcatenate]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedvr高清放大_1988909843182399489.json, 图片生成/图生图/seedVR2最强放大，细节还原夸张_1950769674688618497.json]
+members: [comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json, 图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1269
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedvr高清放大_1988909843182399489.json、图片生成/图生图/seedVR2最强放大，细节还原夸张_1950769674688618497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json、图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LoadImage`
-- `PreviewImage`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
+- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `c3c58f7e-2004-43ae-8b06-a956294bf7f4` —— 1/2 个有
+- `workflow>krea2` —— 1/2 个有
 
 ## 典型参数
 

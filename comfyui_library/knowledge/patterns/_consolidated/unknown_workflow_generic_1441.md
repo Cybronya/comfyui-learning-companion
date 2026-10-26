@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1441
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.697
-common_nodes: [CR Text, LoadImage, PreviewImage, PrimitiveInt, QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
+coverage: 1
+common_nodes: [ImageScaleToTotalPixels, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2, SeedVR2BlockSwap, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/通义千问图像反推生图（可中文）_1952626130375380994.json, 图片生成/图生图/通义千问图像模型（支持中文生成，对标即梦）_1952539310585253890.json]
+members: [图片生成/图生图/一键生成人物三视图(影视二创神器)_2085503795311759362.json, 图片生成/图生图/全能图片G2图生图（RH版）_2088340261612118017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1441
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/通义千问图像反推生图（可中文）_1952626130375380994.json、图片生成/图生图/通义千问图像模型（支持中文生成，对标即梦）_1952539310585253890.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键生成人物三视图(影视二创神器)_2085503795311759362.json、图片生成/图生图/全能图片G2图生图（RH版）_2088340261612118017.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveInt`
-- `QwenImageModelLoader`
-- `RH_QwenImageGenerator`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,54 +3,70 @@ name: unknown_workflow_lora_sampler_clip_79
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.846
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FramePackLoraSelect, FramePackSingleFrameSampler, LoadFramePackModel, LoadImage, PreviewImage, SaveImage, VAEDecodeTiled, VAEEncode, VAELoader]
+coverage: 0.790667
+common_nodes: [AutoCropFaces, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, GetNode, ImageConcanate, ImageScaleToTotalPixels, KSamplerSelect, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, ProcessString, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/TG_art姿势迁移_1974973230664560642.json, 图片生成/图生图/framepack 姿势迁移_1953751001843073025.json, 图片生成/图生图/framepack 姿势迁移_1954710027120590850.json, 图片生成/图生图/创艺姿势工作流_1958018520103661570.json, 图片生成/图生图/动作迁移（卡通类）_1957148113146404866.json, 图片生成/图生图/姿势迁移终结者_1958447750033653762.json]
+members: [图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098918585958752257.json, 图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098977260433920001.json, 图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2099652850648444929.json, 图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2082053043998253058.json, 图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2095363897950822401.json, 图片生成/文生图/77.Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2096535795153850369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_79
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/TG_art姿势迁移_1974973230664560642.json、图片生成/图生图/framepack 姿势迁移_1953751001843073025.json、图片生成/图生图/framepack 姿势迁移_1954710027120590850.json、图片生成/图生图/创艺姿势工作流_1958018520103661570.json、图片生成/图生图/动作迁移（卡通类）_1957148113146404866.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098918585958752257.json、图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098977260433920001.json、图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2099652850648444929.json、图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2082053043998253058.json、图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2095363897950822401.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `AutoCropFaces`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `FramePackLoraSelect`
-- `FramePackSingleFrameSampler`
-- `LoadFramePackModel`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
+- `ProcessString`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `VAEDecodeTiled`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/6 个有
-- `ImageConcatMulti` —— 4/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `FramePackFindNearestBucket` —— 2/6 个有
-- `INTConstant` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `Seed (rgthree)` —— 2/6 个有
-- `Checkpoint Loader` —— 1/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageResize+` —— 1/6 个有
-- `UltimateSDUpscale` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
+- `EmptyImage` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

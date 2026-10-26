@@ -3,54 +3,72 @@ name: unknown_workflow_sampler_unet_vae_171
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.885667
-common_nodes: [CLIPLoader, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.736833
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, CreateVideo, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: ["图片生成/图生图/qwen 2.1 人像瘦脸祛痘磨皮美白 Face Slimming, Acne Removal, S_2109441353208909826.json", 图片生成/图生图/qwen_image_2.1 _ 图像编辑_2103129784736903169.json, 图片生成/图生图/qwenimage2.0编辑图片_2101937853101076481.json, 图片生成/图生图/人物照片六种精修工具_2109075675494834178.json, 图片生成/图生图/六种风格_2108026478259691522.json, 图片生成/图生图/林茜数字人_Qwen 2.1换脸工作流_2112738971427106817.json]
+members: [comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json, comfyui-workflow-templates-json/video_minimax_h3_multiframe_reference.json, comfyui-workflow-templates-json/video_minimax_h3_r2v.json, 视频生成/图生视频/LynnReal-FastH3 pose2v动作迁移_2101573571259752450.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-动作迁移-生成视频-工作流_2093578653677481986.json, 视频生成/图生视频/MinimaxH3人物替换character swap_2109965862622031874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_171
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/qwen 2.1 人像瘦脸祛痘磨皮美白 Face Slimming, Acne Removal, S_2109441353208909826.json、图片生成/图生图/qwen_image_2.1 _ 图像编辑_2103129784736903169.json、图片生成/图生图/qwenimage2.0编辑图片_2101937853101076481.json、图片生成/图生图/人物照片六种精修工具_2109075675494834178.json、图片生成/图生图/六种风格_2108026478259691522.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json、comfyui-workflow-templates-json/video_minimax_h3_multiframe_reference.json、comfyui-workflow-templates-json/video_minimax_h3_r2v.json、视频生成/图生视频/LynnReal-FastH3 pose2v动作迁移_2101573571259752450.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-动作迁移-生成视频-工作流_2093578653677481986.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `LoadImage`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `KSamplerSelect`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `JjkText` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
+- `LoadImage` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `PrimitiveInt` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `VAEDecodeAudio` —— 5/6 个有
+- `LoadVideo` —— 4/6 个有
+- `GetVideoComponents` —— 3/6 个有
+- `AnySwitch` —— 2/6 个有
+- `Fast Bypasser (rgthree)` —— 2/6 个有
+- `GetImageSize` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `Video Slice` —— 2/6 个有
+- `622cceeb-7ba3-4dd9-b0e8-00066c5222a4` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `LynnRealAlignedReference` —— 1/6 个有
+- `MiniMaxH3AddGuide` —— 1/6 个有
+- `MiniMaxH3FunControlNetApply` —— 1/6 个有
+- `ModelPatchLoader` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `QwenH3PromptLocal` —— 1/6 个有
+- `VideoFrameSample` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 40 | 6 | 70% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 6 | 43% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| ControlNet 权重 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -58,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 40，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，6 个样本，取值分散，一致性仅 43%
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,38 +3,33 @@ name: unknown_workflow_generic_705
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7875
-common_nodes: [CR Text, JjkText, LayerUtility: TextJoin, Qwen3_VQA, SaveImage, Seedream4StreamingNode, easy showAnything]
+coverage: 0.95825
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/场景参考_1992762127528120322.json, 图片生成/图生图/物品增加_1992828377742594049.json, 图片生成/图生图/物品替换_1992805330686111746.json, 图片生成/文生图/单图编辑工作流_1992792485630111746.json]
+members: [图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json, 图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json, 图片生成/图生图/一句话连续做图_1930893029039603713.json, 图片生成/图生图/双图连接_2045780608885985281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_705
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/场景参考_1992762127528120322.json、图片生成/图生图/物品增加_1992828377742594049.json、图片生成/图生图/物品替换_1992805330686111746.json、图片生成/文生图/单图编辑工作流_1992792485630111746.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json、图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json、图片生成/图生图/一句话连续做图_1930893029039603713.json、图片生成/图生图/双图连接_2045780608885985281.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `Qwen3_VQA`
+- `LoadImage`
 - `SaveImage`
-- `Seedream4StreamingNode`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 3/4 个有
-- `MultiplePathsInput` —— 3/4 个有
-- `LoadImage` —— 1/4 个有
+- `easy imageConcat` —— 3/4 个有
+- `Gemini_Flash_200_Exp` —— 2/4 个有
+- `RH_ComfyFluxKontext` —— 1/4 个有
 
 ## 典型参数
 

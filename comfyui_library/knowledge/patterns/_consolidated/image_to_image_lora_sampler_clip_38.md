@@ -3,11 +3,11 @@ name: image_to_image_lora_sampler_clip_38
 type: Image To Image
 frequency: 7
 level: moderate
-coverage: 0.862857
+coverage: 0.883714
 common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux1-kontext图像转绘--换上黑色连体紧身乳胶衣_1948047861566058497.json, 图片生成/图生图/Flux1-kontext图像转绘--画面镜头拉远_1948030689980624898.json, 图片生成/图生图/Flux1-kontext图像转绘--蓝色水晶化_1948037999742332929.json, 图片生成/图生图/Flux1-kontext图像转绘-定格黏土效果_1948375118293676033.json, 图片生成/图生图/Flux1-kontext图像转绘-手绘美漫_1948401596431511554.json, 图片生成/图生图/IP图像三视图生成工作流_2046911147395256321.json, 图片生成/图生图/kontext万物迁移（产品替换+光影融合）_1948345697857863681.json]
+members: [图片生成/图生图/Flux1-kontext图像转绘--换上黑色连体紧身乳胶衣_1948047861566058497.json, 图片生成/图生图/Flux1-kontext图像转绘--画面镜头拉远_1948030689980624898.json, 图片生成/图生图/Flux1-kontext图像转绘--蓝色水晶化_1948037999742332929.json, 图片生成/图生图/Flux1-kontext图像转绘-定格黏土效果_1948375118293676033.json, 图片生成/图生图/Flux1-kontext图像转绘-手绘美漫_1948401596431511554.json, 图片生成/图生图/IP图像三视图生成工作流_2046911147395256321.json, 图片生成/图生图/kontext 正面转反面_1942431853267595265.json]
 source: knowledge_consolidation
 ---
 
@@ -18,7 +18,7 @@ source: knowledge_consolidation
 - **类型**：Image To Image
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -38,21 +38,20 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `FluxKontextImageScale` —— 4/7 个有
 - `EmptySD3LatentImage` —— 3/7 个有
-- `FluxKontextImageScale` —— 3/7 个有
 - `Image Comparer (rgthree)` —— 3/7 个有
 - `ImageConcanate` —— 3/7 个有
 - `MZ_Flux1PartialLoad_Patch` —— 3/7 个有
-- `GetNode` —— 2/7 个有
+- `Anything Everywhere3` —— 2/7 个有
 - `ImpactSwitch` —— 2/7 个有
 - `PIP_图像联结` —— 2/7 个有
 - `Seed (rgthree)` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `Anything Everywhere3` —— 1/7 个有
-- `FastCanvas` —— 1/7 个有
-- `FastCanvasTool` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `easy imageRemBg` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy seed` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,47 +1,40 @@
 ---
 name: unknown_workflow_generic_665
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.648
-common_nodes: [BatchCount+, ImageScale, LoadImage, PreviewAny, PreviewImage, RHExtractImage, RHUploadZip, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, easy batchAnything, easy forLoopEnd, easy forLoopStart]
+coverage: 0.7794
+common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [图片生成/图生图/image2.5异步循环批量出layout_2108376170386513922.json, 图片生成/图生图/image2异步循环批量出layout_2071096885426876417.json, 图片生成/图生图/image2异步循环批量出layout_2112735689677819905.json, 图片生成/图生图/全能图片异步循环批量出layout_2108382700884287490.json]
+members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_665
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image2.5异步循环批量出layout_2108376170386513922.json、图片生成/图生图/image2异步循环批量出layout_2071096885426876417.json、图片生成/图生图/image2异步循环批量出layout_2112735689677819905.json、图片生成/图生图/全能图片异步循环批量出layout_2108382700884287490.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BatchCount+`
-- `ImageScale`
-- `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `ShowText|pysssss`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 3/4 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/4 个有
-- `JjkText` —— 1/4 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `Apply Whisper` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `SaveAudioMP3` —— 1/5 个有
 
 ## 典型参数
 

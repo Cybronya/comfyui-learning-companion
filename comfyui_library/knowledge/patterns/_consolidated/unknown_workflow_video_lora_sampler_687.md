@@ -2,85 +2,77 @@
 name: unknown_workflow_video_lora_sampler_687
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.726667
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.957667
+common_nodes: [BasicScheduler, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json]
+members: [视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_687
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json、视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json、视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageFromBatch+`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `ComfyNumberConvert`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `PreviewImage`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExtraModelSelect`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `WanVideoTextEncodeCached` —— 2/3 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/3 个有
-- `easy indexTTSGenerateSimple` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `Audio Duration (mtb)` —— 1/3 个有
-- `AudioCrop` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `JWIntegerToString` —— 1/3 个有
-- `LoadWanVideoT5TextEncoder` —— 1/3 个有
-- `WanVideoTextEncode` —— 1/3 个有
+- `CFGGuider` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `LiconMSR` —— 2/3 个有
+- `PromptRelayEncode` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `LTXVDualCFGGuider` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `YuanCLIPTimeline` —— 1/3 个有
+- `YuanTool` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 241 | 241 - 241 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -88,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 241，观测区间 241 - 241，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

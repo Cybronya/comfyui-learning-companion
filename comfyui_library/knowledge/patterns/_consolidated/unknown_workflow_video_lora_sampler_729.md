@@ -1,73 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_729
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateCFGScheduleFloatList, EmptySD3LatentImage, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, IndexTTSNode, KSampler, Label (rgthree), LoadAudio, LoadWanVideoT5TextEncoder, ModelSamplingAuraFlow, PreviewAudio, PreviewImage, SetNode, ShowText, Text, TextConcatenator, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.838
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_1954404045349908481.json, 视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json]
+members: [视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json, 视频生成/图生视频/minimax_h3_多参_单图版注意力再加速_2105908156558823425.json, 视频生成/图生视频/minimax_h3_多参_短剧批量专用（支持90个角色、场景、道具）_2101317527325470722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_729
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_1954404045349908481.json、视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json、视频生成/图生视频/minimax_h3_多参_单图版注意力再加速_2105908156558823425.json、视频生成/图生视频/minimax_h3_多参_短剧批量专用（支持90个角色、场景、道具）_2101317527325470722.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CreateCFGScheduleFloatList`
-- `EmptySD3LatentImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `IndexTTSNode`
-- `KSampler`
-- `Label (rgthree)`
-- `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `ModelSamplingAuraFlow`
-- `PreviewAudio`
-- `PreviewImage`
-- `SetNode`
-- `ShowText`
-- `Text`
-- `TextConcatenator`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoraLoaderModelOnly`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicScheduler` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `ManualSigmas` —— 2/3 个有
+- `MiniMaxChunkFeedForward` —— 2/3 个有
+- `ki_MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `ExtendIntermediateSigmas` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/3 个有
+- `MiniMaxH3TurboSampler` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SolAttnPatch` —— 1/3 个有
+- `ki_宫格拼图高阶版` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,9 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,35 +3,32 @@ name: unknown_workflow_generic_1541
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7665
-common_nodes: [LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, RH_SparkVideoAssetQuery, SaveVideo]
+coverage: 0.857
+common_nodes: [Image Comparer (rgthree), ImageConcanate, JWInteger, LoadImage, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json, 视频生成/文生视频/RhartVideoSparkvideo20FastImageToVideo+全节点注释_2052015008300707842.json]
+members: [图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json, 图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1541
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json、视频生成/文生视频/RhartVideoSparkvideo20FastImageToVideo+全节点注释_2052015008300707842.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json、图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `JWInteger`
 - `LoadImage`
-- `RH_SparkVideoAssetCreate`
-- `RH_SparkVideoAssetIdsMerge`
-- `RH_SparkVideoAssetQuery`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/2 个有
+- `SaveImage`
+- `SeedVR2`
 
 ## 典型参数
 

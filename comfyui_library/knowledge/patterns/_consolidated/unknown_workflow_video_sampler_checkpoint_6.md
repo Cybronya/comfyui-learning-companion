@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_video_sampler_checkpoint_6
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8385
+coverage: 0.9112
 common_nodes: [ImageOnlyCheckpointLoader, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/数字人_Sonic_1893677979124338689.json, 视频生成/图生视频/数字人工作流_图片音频驱动_支持人形五官_sonic_1930219583813357570.json, 视频生成/图生视频/新SONIC照片数字人+INDEX TTS1.5配音(无限制）效果太好_1894944054985752577.json, 视频生成/图生视频/新版SONIC+INDEX TTS照片数字人(无限制版）_1929379921658023937.json]
+members: [视频生成/图生视频/卡通人物最强对口型Sonic数字人，强烈 推荐！值得一试！_2032256428198600706.json, 视频生成/图生视频/哪吒妈妈唱歌+Ai数字人唱歌=艾橘溪_1891734244585287681.json, 视频生成/图生视频/数字人_Sonic_1893677979124338689.json, 视频生成/图生视频/最强对口型Sonic数字人！任意分辨率！艾橘溪_1887696642861367297.json, 音频生成/音频生成/seed-vc 快速语音音色转变+sonic对口型_1928023395433070593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_6
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/数字人_Sonic_1893677979124338689.json、视频生成/图生视频/数字人工作流_图片音频驱动_支持人形五官_sonic_1930219583813357570.json、视频生成/图生视频/新SONIC照片数字人+INDEX TTS1.5配音(无限制）效果太好_1894944054985752577.json、视频生成/图生视频/新版SONIC+INDEX TTS照片数字人(无限制版）_1929379921658023937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/卡通人物最强对口型Sonic数字人，强烈 推荐！值得一试！_2032256428198600706.json、视频生成/图生视频/哪吒妈妈唱歌+Ai数字人唱歌=艾橘溪_1891734244585287681.json、视频生成/图生视频/数字人_Sonic_1893677979124338689.json、视频生成/图生视频/最强对口型Sonic数字人！任意分辨率！艾橘溪_1887696642861367297.json、音频生成/音频生成/seed-vc 快速语音音色转变+sonic对口型_1928023395433070593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `ImageOnlyCheckpointLoader`
 - `LoadAudio`
 - `LoadImage`
@@ -32,11 +32,11 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `ImageResizeAndCropNode` —— 1/4 个有
-- `IndexTTSNode` —— 1/4 个有
-- `IndexTTSRun` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `SaveAudio` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `ImageResizeAndCropNode` —— 1/5 个有
+- `SeedVCNode` —— 1/5 个有
 
 ## 典型参数
 

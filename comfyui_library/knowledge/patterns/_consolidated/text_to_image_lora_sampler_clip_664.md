@@ -3,49 +3,50 @@ name: text_to_image_lora_sampler_clip_664
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.814
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, ComfyMathExpression, EmptyLatentImage, JjkText, JoinStrings, KSampler, LoadImagesFromFolderKJ, LoraLoaderModelOnly, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR Text, CheckpointLoaderSimple, CompressImages, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, ImageListToBatch_, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveInt, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, ZML_SwitchOutput, easy boolean, easy float, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3智能分镜助手全网最强版｜V13.4.14反推提示词图生视频_2091637488497545217.json, 视频生成/文生视频/全网最强分镜助手｜H3智能V13.4.14反推提示词_2091800172140515330.json]
+members: [图片生成/图生图/超真实超高清图生图增强版-图片换背景工作流_2087384685222653954.json, 图片生成/图生图/超真实超高清图生图增强版｜图片换背景图片编辑工作流_2088359836114313218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_664
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/H3智能分镜助手全网最强版｜V13.4.14反推提示词图生视频_2091637488497545217.json、视频生成/文生视频/全网最强分镜助手｜H3智能V13.4.14反推提示词_2091800172140515330.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/超真实超高清图生图增强版-图片换背景工作流_2087384685222653954.json、图片生成/图生图/超真实超高清图生图增强版｜图片换背景图片编辑工作流_2088359836114313218.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `ComfyMathExpression`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `CompressImages`
 - `EmptyLatentImage`
+- `FluxKontextMultiReferenceLatentMethod`
+- `ImageListToBatch_`
+- `Int`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
-- `LoadImagesFromFolderKJ`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PrimitiveInt`
-- `SaveText`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `Text Multiline`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy positive`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `ZML_SwitchOutput`
+- `easy boolean`
+- `easy float`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
@@ -65,7 +66,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -76,5 +77,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

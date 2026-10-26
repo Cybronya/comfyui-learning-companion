@@ -3,44 +3,37 @@ name: unknown_workflow_generic_1283
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7435
-common_nodes: [BatchCount+, CR Text, ImageScale, PreviewAny, PreviewImage, RHExtractImage, RHUploadZip, RH_Captioner_Pro, SaveImage, easy batchAnything, easy forLoopEnd, easy forLoopStart]
+coverage: 0.8445
+common_nodes: [CR Prompt Text, LoadVideo, RH_LLMAPI_Pro_Node, SaveVideo, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json, 图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json]
+members: [图片生成/反推提示词/G3最强短视频反推提示词_2028027331515785217.json, 图片生成/反推提示词/SeeDance 2.0爆款视频分析高级版V1_2020488922731646977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1283
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json、图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/G3最强短视频反推提示词_2028027331515785217.json、图片生成/反推提示词/SeeDance 2.0爆款视频分析高级版V1_2020488922731646977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BatchCount+`
-- `CR Text`
-- `ImageScale`
-- `PreviewAny`
-- `PreviewImage`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_Captioner_Pro`
-- `SaveImage`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `CR Prompt Text`
+- `LoadVideo`
+- `RH_LLMAPI_Pro_Node`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/2 个有
-- `RH_YouchuanTextToImageV82Fast` —— 1/2 个有
-- `RH_YouchuanTextToImageV82Turbo` —— 1/2 个有
+- `Comfly_LLm_API` —— 1/2 个有
+- `TextCombinerTwo` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

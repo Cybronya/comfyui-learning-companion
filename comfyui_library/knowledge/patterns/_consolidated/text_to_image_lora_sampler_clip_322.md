@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_322
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.875833
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.836333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json, 图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json, 图片生成/文生图/生图模型天花板｜谷歌🍌2文生图图生图双修_2096619590288756738.json, 图片生成/文生图/谷歌最强生图模型2｜文生图图生图双模式生成_2096366087892979714.json]
+members: [图片生成/反推提示词/MOSS image提示增强反推风格参考｜文生图全能流_2114038286766403585.json, 图片生成/反推提示词/Moss image SFT高质量加速V2 文生图反推处理工具_2113418743924744193.json, 图片生成/反推提示词/Moss-image三模式文生图，Sft+Fixed组合反推提示词出图_2112601764338946050.json, 图片生成/反推提示词/Moss全流程文生图 提示词优化反推图像生成工具_2113381718588739585.json, 图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json, 图片生成/图生图/MOSS Image布局控制图像设计 SFT双模式图生图工具_2113052080075268097.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_322
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json、图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json、图片生成/文生图/生图模型天花板｜谷歌🍌2文生图图生图双修_2096619590288756738.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/MOSS image提示增强反推风格参考｜文生图全能流_2114038286766403585.json、图片生成/反推提示词/Moss image SFT高质量加速V2 文生图反推处理工具_2113418743924744193.json、图片生成/反推提示词/Moss-image三模式文生图，Sft+Fixed组合反推提示词出图_2112601764338946050.json、图片生成/反推提示词/Moss全流程文生图 提示词优化反推图像生成工具_2113381718588739585.json、图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
@@ -28,8 +28,9 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -38,13 +39,25 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `workflow>儿童AI摄影` —— 4/6 个有
-- `workflow>创意图片处理` —— 4/6 个有
-- `workflow>宠物守护神AI摄影` —— 4/6 个有
-- `workflow>真实照片处理` —— 4/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/6 个有
+- `ComfySwitchNode` —— 5/6 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `TextGenerate` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `PrimitiveBoolean` —— 4/6 个有
+- `SkipLayerGuidanceDiTSimple` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `CreateBoundingBoxes` —— 1/6 个有
+- `ImageCompare` —— 1/6 个有
+- `MOSSImageBlockCacheT8` —— 1/6 个有
+- `MOSSImageLayoutPrompt` —— 1/6 个有
+- `MOSSImagePromptEnhancerT8` —— 1/6 个有
+- `QwenImage21Cache` —— 1/6 个有
+- `SaveImageAdvanced` —— 1/6 个有
+- `SeedNode` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `TextEncodeQwenImage21` —— 1/6 个有
+- `Textbox` —— 1/6 个有
 
 ## 典型参数
 
@@ -62,7 +75,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -73,4 +86,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/6 个样本）：Steps较低可能导致细节不足

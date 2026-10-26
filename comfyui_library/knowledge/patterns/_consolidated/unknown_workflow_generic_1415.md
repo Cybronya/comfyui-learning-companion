@@ -3,33 +3,44 @@ name: unknown_workflow_generic_1415
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageG2TextToImage, SaveImage, Text]
+coverage: 0.7435
+common_nodes: [BatchCount+, CR Text, ImageScale, PreviewAny, PreviewImage, RHExtractImage, RHUploadZip, RH_Captioner_Pro, SaveImage, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [图片生成/图生图/洗稿_2058734103784153089.json, 图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json]
+members: [图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json, 图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1415
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗稿_2058734103784153089.json、图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json、图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageG2TextToImage`
+- `BatchCount+`
+- `CR Text`
+- `ImageScale`
+- `PreviewAny`
+- `PreviewImage`
+- `RHExtractImage`
+- `RHUploadZip`
+- `RH_Captioner_Pro`
 - `SaveImage`
-- `Text`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `JWStringConcat` —— 1/2 个有
-- `RHSettingsNode` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_RhartImageNProOfficialEdit` —— 1/2 个有
+- `RH_YouchuanTextToImageV82Fast` —— 1/2 个有
+- `RH_YouchuanTextToImageV82Turbo` —— 1/2 个有
 
 ## 典型参数
 

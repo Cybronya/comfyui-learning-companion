@@ -3,31 +3,33 @@ name: unknown_workflow_generic_755
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.857
-common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub Univideo Generator(MultiID), RunningHub Univideo Loader, SaveVideo]
+coverage: 0.8905
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json, 视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json, 视频生成/图生视频/多图视频生成_2014230079726948354.json, 视频生成/图生视频/多图视频生成_2044236452975874050.json]
+members: [图片生成/图生图/全能图片PRO-图生图Ultra-官方稳定版_2061674348385226753.json, 图片生成/文生图/NPro_OfficialEditUltra_v1.0_2033838622704672770.json, 图片生成/文生图/多图编辑+全能图片PRO-图生图Edit Ultra-官方稳定版+全节点注释_2061758420763631618.json, 图片生成/文生图/柏拉图全能图片G2.0图生图_2047882527460823041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_755
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json、视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json、视频生成/图生视频/多图视频生成_2014230079726948354.json、视频生成/图生视频/多图视频生成_2044236452975874050.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片PRO-图生图Ultra-官方稳定版_2061674348385226753.json、图片生成/文生图/NPro_OfficialEditUltra_v1.0_2033838622704672770.json、图片生成/文生图/多图编辑+全能图片PRO-图生图Edit Ultra-官方稳定版+全节点注释_2061758420763631618.json、图片生成/文生图/柏拉图全能图片G2.0图生图_2047882527460823041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RunningHub Univideo Generator(MultiID)`
-- `RunningHub Univideo Loader`
-- `SaveVideo`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageNProOfficialEditUltra` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `🙅GPT_image_2_官方稳定@炮老师的小课堂` —— 1/4 个有
 
 ## 典型参数
 

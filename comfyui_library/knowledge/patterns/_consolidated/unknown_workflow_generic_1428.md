@@ -3,37 +3,36 @@ name: unknown_workflow_generic_1428
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LayerMask: MaskPreview, LayerUtility: ImageCombineAlpha, LoadImage, PreviewImage, SaveImage]
+coverage: 0.6025
+common_nodes: [LoadAndResizeImage, RH_ComfyFluxKontext, RH_Translator, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/线稿+扣图 全能图片G_2075044348831555585.json, 图片生成/图生图/线稿+扣图_2046069094440509442.json]
+members: [图片生成/图生图/【免费】Flux-Kontext图像编辑（一句话改图）_1928999736483942401.json, 图片生成/图生图/【电商模特产品展示】Flux Kontext图像编辑（免费）_1929214915087863809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1428
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/线稿+扣图 全能图片G_2075044348831555585.json、图片生成/图生图/线稿+扣图_2046069094440509442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【免费】Flux-Kontext图像编辑（一句话改图）_1928999736483942401.json、图片生成/图生图/【电商模特产品展示】Flux Kontext图像编辑（免费）_1929214915087863809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageCombineAlpha`
-- `LoadImage`
-- `PreviewImage`
+- `LoadAndResizeImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 

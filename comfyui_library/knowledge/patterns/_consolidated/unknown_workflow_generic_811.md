@@ -3,34 +3,38 @@ name: unknown_workflow_generic_811
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.50825
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_description, SaveAudio]
+coverage: 0.97725
+common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, RH_FireRedAudioLoader, RH_FireRedAudioTTS, SaveAudio, ShowAnything|Mie]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json, 音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json]
+members: [数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json, 音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json, 音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json, 音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_811
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json、音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json、音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json、音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json、音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Apply Whisper`
 - `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_description`
+- `LoadAudio`
+- `RH_FireRedAudioLoader`
+- `RH_FireRedAudioTTS`
 - `SaveAudio`
+- `ShowAnything|Mie`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `LoadImage` —— 1/4 个有
+- `AudioCrop` —— 1/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `SaveAudioMP3` —— 1/4 个有
 
 ## 典型参数
 

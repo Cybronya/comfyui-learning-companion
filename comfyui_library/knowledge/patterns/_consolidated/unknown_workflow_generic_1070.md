@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1070
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.791667
-common_nodes: [SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceDesign]
+coverage: 1
+common_nodes: [LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/A-17 Qwen3-TTS 音色设计 无需录音 文生音频 10国语言_2107472276244484097.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音色设计_2014646764153868290.json, 音频生成/音频生成/Qwen3 TTS 音色设计_2061734734996267010.json]
+members: [图片生成/文生图/LongCat-Image文生图_1999000295881461762.json, 图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json, 图片生成/文生图/longcat-image-generate_1998221329243471874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1070
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/A-17 Qwen3-TTS 音色设计 无需录音 文生音频 10国语言_2107472276244484097.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音色设计_2014646764153868290.json、音频生成/音频生成/Qwen3 TTS 音色设计_2061734734996267010.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图_1999000295881461762.json、图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json、图片生成/文生图/longcat-image-generate_1998221329243471874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `SaveAudio`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceDesign`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 

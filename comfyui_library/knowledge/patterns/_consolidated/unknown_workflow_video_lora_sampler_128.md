@@ -1,92 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_128
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.737833
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, CreateCFGScheduleFloatList, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, Int, InversionDemoLazyIndexSwitch, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
+coverage: 0.961357
+common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, INTConstant, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json, 图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json, 图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json, 图片生成/图生图/动态表情包定制_2007359970110607362.json, 图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json, 图片生成/文生图/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2072237916960677889.json, 视频生成/图生视频/Pro-wan2.2动态_2010899703377960962.json, 视频生成/图生视频/【动态表情包定制V2生成】 全能图片Pro-wan2.2动态_2067073649651306497.json, 视频生成/图生视频/【动态表情包定制V2生成】 全能图片Pro-wan2.2动态_2067075192274382849.json, 视频生成/图生视频/表情包定制(可拆分)_2041003408856977412.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2058188130242621442.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2068868048580333570.json]
+members: [数字人/数字人/wan2.2 文生视频+数字人_1956285868619255809.json, 视频生成/图生视频/AIwood-Wan2.2 Multitalk 文生视频版_1952022803912577026.json, 视频生成/图生视频/AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054032452045295618.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054464076696301569.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054724195342405634.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版《落花》_2054371842873405441.json, 视频生成/图生视频/wan2.2 图生视频+数字人_1956285883156758529.json, 视频生成/图生视频/wan2.2+Multitalk 图生视频_1952158327776202754.json, 视频生成/图生视频/wan2.2+Multitalk+图生视频版_2059875517922369538.json, 视频生成/图生视频/wan2.2-Multitalk图生视频_1952274805175341058.json, 视频生成/图生视频/【图生视频】wan2.2 Multitalk_1952625032197541890.json, 视频生成/图生视频/图生视频 -AIwood-wan2.2 Multitalk_2034089808573767681.json, 视频生成/图生视频/图生视频版_1952636876098342913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_128
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json、图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json、图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json、图片生成/图生图/动态表情包定制_2007359970110607362.json、图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/wan2.2 文生视频+数字人_1956285868619255809.json、视频生成/图生视频/AIwood-Wan2.2 Multitalk 文生视频版_1952022803912577026.json、视频生成/图生视频/AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json、视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054032452045295618.json、视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054464076696301569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPVisionLoader`
-- `CR String To Number`
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `ColorCorrectOfUtils`
+全部 14 个 workflow 都包含：
 - `CreateCFGScheduleFloatList`
-- `FluxResolutionNode`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `InversionDemoLazyIndexSwitch`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `DownloadAndLoadWav2VecModel`
+- `INTConstant`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 11/12 个有
-- `RHHiddenNodes` —— 10/12 个有
-- `RH_Nano_Banana2_Image2Image` —— 8/12 个有
-- `Fast Groups Muter (rgthree)` —— 5/12 个有
-- `ImageCropV2` —— 5/12 个有
-- `ImageResizeKJ` —— 5/12 个有
-- `ImageScale` —— 5/12 个有
-- `PrimitiveBoundingBox` —— 5/12 个有
-- `RH_LLMAPI_Pro_Node` —— 5/12 个有
-- `VHS_LoadVideo` —— 5/12 个有
-- `VHS_VideoInfo` —— 5/12 个有
-- `Any Switch (rgthree)` —— 4/12 个有
-- `Comfly_api_set` —— 4/12 个有
-- `Comfly_gpt_image_2_official_ratio` —— 4/12 个有
-- `RH_RhartImageG2ImageToImage` —— 4/12 个有
-- `EG_ZZ_TMTX` —— 1/12 个有
-- `Float` —— 1/12 个有
-- `GrowMaskWithBlur` —— 1/12 个有
-- `PreviewAny` —— 1/12 个有
-- `Qwen3_VQA_Plus` —— 1/12 个有
-- `RMBG` —— 1/12 个有
-- `Sa2VANodeTpl` —— 1/12 个有
-- `SimpleMath+` —— 1/12 个有
-- `TT_img_enc` —— 1/12 个有
-- `easy imageCropFromMask` —— 1/12 个有
+- `GetImageSizeAndCount` —— 13/14 个有
+- `Float to Int` —— 12/14 个有
+- `ImageResizeKJv2` —— 12/14 个有
+- `Int` —— 12/14 个有
+- `LoadImage` —— 12/14 个有
+- `RH_GetAudioDuration` —— 12/14 个有
+- `SimpleMath+` —— 12/14 个有
+- `WanVideoImageToVideoEncode` —— 12/14 个有
+- `Audio Duration (mtb)` —— 2/14 个有
+- `AudioSeparation` —— 2/14 个有
+- `FloatConstant` —— 2/14 个有
+- `MathExpression|pysssss` —— 2/14 个有
+- `WanVideoEmptyEmbeds` —— 2/14 个有
+- `easy showAnything` —— 2/14 个有
+- `CLIPVisionLoader` —— 1/14 个有
+- `CR Text Replace` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `PrimitiveBoolean` —— 1/14 个有
+- `RH_Captioner` —— 1/14 个有
+- `TextBox` —— 1/14 个有
+- `WanVideoClipVisionEncode` —— 1/14 个有
+- `easy ifElse` —— 1/14 个有
+- `easy int` —— 1/14 个有
 
 ## 典型参数
 

@@ -1,92 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_63
 type: Unknown Workflow
-frequency: 19
-level: strong
-coverage: 0.943158
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+frequency: 20
+level: moderate
+coverage: 0.62475
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3-图生视频-音画同步-人物一致性优化版_2039916059230216193.json, 视频生成/图生视频/LTX2.3 双人对话-图生视频_2050558938583707649.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030554473583611905.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030803826088873986.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2031218465863897089.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2033196066207703042.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2036786729985777666.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版工作流_2038212622302056450.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版工作流_2038574000934227969.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2047146472457637889.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2049309806019743746.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2055254996790333442.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2060523387025444866.json, 视频生成/图生视频/LTX2.3+单人_双人对话-图生视频_2082722092436512769.json, 视频生成/图生视频/LTX2.3+图生视频+提示词扩写自动优化版+数字人说话唱歌+_2072475992752484353.json, 视频生成/图生视频/LTX2.3+图生视频自动 提示词自动 数字人_2065067084408774657.json, 视频生成/图生视频/LTX2.3_2037103853568528385.json, 视频生成/图生视频/LTX2.3服装模特手机自拍-图生视频_2056038472141549569.json, 视频生成/图生视频/aidir-LTX2.3 首帧图生视频 人物一致性优化版💃_2069596918434590721.json]
+members: [图片生成/文生图/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2049085267893555202.json, 数字人/数字人/Wan Animate 2.2-角色替换-动作迁移-图生视频-许老师专用_1981594203375443969.json, 数字人/数字人/dnf_scail.json_2081553214935228418.json, 数字人/数字人/人物替换Wan-Animate_1969759682535563266.json, 视频生成/图生视频/Wan2.2图生视频人物替换动作迁移_2028365300059611138.json, 视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052450080971603969.json, 视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052663395060600834.json, 视频生成/图生视频/Wan2.7+视频换脸  换头换发型+真实自然+视频换脸+人物角色替换+虚拟美女模特_2061612628442705921.json, 视频生成/图生视频/人物换脸 图生视频_2001188538823606273.json, 视频生成/图生视频/人物替换，主播带货，产品展示_2041577855473160193.json, 视频生成/图生视频/人物角色替换_2062336789762895874.json, 视频生成/图生视频/动作模仿动作迁移图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上）_1988865006097797121.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_1988497741976395777.json, 视频生成/图生视频/换装换脸+动作迁移 支持生成10s以上 超长时间 视频动作迁移  Wan2.2人物替换动作迁移_2048642449622441986.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2059815304972292098.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2064155930153021442.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2064600210499784705.json, 视频生成/图生视频/视频换脸+高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2065330125998219265.json, 视频生成/图生视频/视频换脸+高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2068858062965927938.json, 视频生成/图生视频/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换 (1)_2069968810341396482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_63
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-图生视频-音画同步-人物一致性优化版_2039916059230216193.json、视频生成/图生视频/LTX2.3 双人对话-图生视频_2050558938583707649.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030554473583611905.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030803826088873986.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2031218465863897089.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2049085267893555202.json、数字人/数字人/Wan Animate 2.2-角色替换-动作迁移-图生视频-许老师专用_1981594203375443969.json、数字人/数字人/dnf_scail.json_2081553214935228418.json、数字人/数字人/人物替换Wan-Animate_1969759682535563266.json、视频生成/图生视频/Wan2.2图生视频人物替换动作迁移_2028365300059611138.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：20
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+全部 20 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `PixelPerfectResolution`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 18/19 个有
-- `CR Text` —— 17/19 个有
-- `Seed (rgthree)` —— 17/19 个有
-- `easy int` —— 17/19 个有
-- `DapaoImageAspectRatioResizeNode` —— 16/19 个有
-- `RH_LLMAPI_Pro_Node` —— 16/19 个有
-- `SimpleMath+` —— 16/19 个有
-- `Label (rgthree)` —— 3/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/19 个有
-- `llama_cpp_instruct_adv` —— 3/19 个有
-- `llama_cpp_model_loader` —— 3/19 个有
-- `INTConstant` —— 2/19 个有
-- `LTXVLatentUpsampler` —— 2/19 个有
-- `LatentUpscaleModelLoader` —— 2/19 个有
-- `PrimitiveInt` —— 2/19 个有
-- `ShowText|pysssss` —— 2/19 个有
-- `Switch` —— 2/19 个有
-- `CR Prompt Text` —— 1/19 个有
-- `CustomAddLabel` —— 1/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/19 个有
-- `GetNode` —— 1/19 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/19 个有
-- `Note Plus (mtb)` —— 1/19 个有
-- `PreviewAny` —— 1/19 个有
-- `PrimitiveStringMultiline` —— 1/19 个有
-- `SetNode` —— 1/19 个有
-- `TTResolutionSelector` —— 1/19 个有
-- `llama_cpp_parameters` —— 1/19 个有
+- `BlockifyMask` —— 19/20 个有
+- `DrawMaskOnImage` —— 19/20 个有
+- `GrowMask` —— 19/20 个有
+- `Int` —— 19/20 个有
+- `LayerUtility: PurgeVRAM` —— 18/20 个有
+- `WanVideoLoraSelectMulti` —— 18/20 个有
+- `JWInteger` —— 17/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 17/20 个有
+- `LayerUtility: PurgeVRAM V2` —— 17/20 个有
+- `MathExpression|pysssss` —— 17/20 个有
+- `CR Text` —— 16/20 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 16/20 个有
+- `VHS_VideoInfo` —— 16/20 个有
+- `easy cleanGpuUsed` —— 16/20 个有
+- `PreviewImage` —— 15/20 个有
+- `GetImageSizeAndCount` —— 4/20 个有
+- `WanVideoTorchCompileSettings` —— 3/20 个有
+- `CM_IntToFloat` —— 2/20 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 2/20 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 2/20 个有
+- `MemoryCleaner` —— 2/20 个有
+- `RHHiddenNodes` —— 2/20 个有
+- `RMBG` —— 2/20 个有
+- `SimpleMath+` —— 2/20 个有
+- `AutoNegativePrompt` —— 1/20 个有
+- `DF_Int_to_Float` —— 1/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
+- `LoadVideo` —— 1/20 个有
+- `PrimitiveStringMultiline` —— 1/20 个有
+- `RH_AlibabaWan27VideoEdit` —— 1/20 个有
+- `SaveVideo` —— 1/20 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 19 | 100% |
-| 高度 | 25 | 25 - 25 | 19 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,5 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，19 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，19 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,69 +3,52 @@ name: unknown_workflow_video_lora_sampler_674
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.403667
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PlaySound|pysssss, PreviewImage, PrimitiveFloat, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.562
+common_nodes: [BasicScheduler, BerniniStudio, CLIPLoader, GetNode, INTConstant, Int, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, Seed (rgthree), SetNode, SimpleMath+, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/影视二创_2022695116523180034.json, 视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json, 视频生成/图生视频/首帧二创人物替换优化_2042773742413156353.json]
+members: [视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2076512997073313793.json, 视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2079802404345827330.json, 视频生成/文生视频/Berinini Studio x Remix LoRA 图生视频工作流_2079090473137950721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_674
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/影视二创_2022695116523180034.json、视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json、视频生成/图生视频/首帧二创人物替换优化_2042773742413156353.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2076512997073313793.json、视频生成/图生视频/Berinini Studio 视频编辑+多图参考 工作流_2079802404345827330.json、视频生成/文生视频/Berinini Studio x Remix LoRA 图生视频工作流_2079090473137950721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：40%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
+- `BasicScheduler`
+- `BerniniStudio`
+- `CLIPLoader`
 - `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
+- `Label (rgthree)`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SamplerCustom`
+- `Seed (rgthree)`
 - `SetNode`
+- `SimpleMath+`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PoseAndFaceDetection` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `SDPoseOODLoader` —— 2/3 个有
-- `SDPoseOODProcessor` —— 2/3 个有
-- `YOLOModelLoader` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `BBoxYOLO` —— 1/3 个有
-- `CheckpointLoaderSimple` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `DrawViTPose` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `NumberComparison` —— 1/3 个有
-- `PixelPerfectResolution` —— 1/3 个有
-- `SDPoseDrawKeypoints` —— 1/3 个有
-- `SDPoseKeypointExtractor` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,76 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_177
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.806571
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse, easy imageSizeBySide, easy int]
-problems: []
+frequency: 8
+level: weak
+coverage: 0.9765
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-Klein--产品精修_2054918894313320450.json, 图片生成/图生图/Flux-Klein首饰产品精修 高清放大_2055474345887191041.json, 图片生成/图生图/Flux-Klein首饰产品精修加高清放大_2055843890846027778.json, 图片生成/图生图/Flux2-klein-美甲迁移_2029843703233257474.json, 图片生成/图生图/Flux2-klein人物角色 任意变发型 发型迁移 假发模特_2025741951122808834.json, 图片生成/图生图/flux2-klein-产品精修-万物精修_2013791137181474818.json, 图片生成/图生图/最新Flux2 Klein 9B Klein万物产品精修_2043524112580087809.json]
+members: [图片生成/文生图/大凯辰光-潜水亚洲审美模型Z_image_turbo-UltraFluxVAE高清直出-文生图工作流_2009840006055071746.json, 图片生成/文生图/完美中文海报生成_2002018843826503681.json, 图片生成/文生图/文生图工作流购买的1 (1)_2045309169393209345.json, 图片生成/文生图/文生图工作流购买的1 (1)_2068998152438501378.json, 图片生成/文生图/文生图工作流购买的1_2047220596840341506.json, 图片生成/文生图/文生图工作流购买的1_2047619516003262466.json, 图片生成/文生图/文生图片工作流_2056608192112713729.json, 图片生成/文生图/超强文生图Z-image-base_2016185060738732034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_177
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux-Klein--产品精修_2054918894313320450.json、图片生成/图生图/Flux-Klein首饰产品精修 高清放大_2055474345887191041.json、图片生成/图生图/Flux-Klein首饰产品精修加高清放大_2055843890846027778.json、图片生成/图生图/Flux2-klein-美甲迁移_2029843703233257474.json、图片生成/图生图/Flux2-klein人物角色 任意变发型 发型迁移 假发模特_2025741951122808834.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/大凯辰光-潜水亚洲审美模型Z_image_turbo-UltraFluxVAE高清直出-文生图工作流_2009840006055071746.json、图片生成/文生图/完美中文海报生成_2002018843826503681.json、图片生成/文生图/文生图工作流购买的1 (1)_2045309169393209345.json、图片生成/文生图/文生图工作流购买的1 (1)_2068998152438501378.json、图片生成/文生图/文生图工作流购买的1_2047220596840341506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy compare`
-- `easy ifElse`
-- `easy imageSizeBySide`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `AILab_QwenVL` —— 5/7 个有
-- `GetImageSize` —— 5/7 个有
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `ImageScaleBy` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `SeedVR2LoadDiTModel` —— 5/7 个有
-- `SeedVR2LoadVAEModel` —— 5/7 个有
-- `SeedVR2VideoUpscaler` —— 5/7 个有
-- `AIO_Preprocessor` —— 2/7 个有
-- `Any Switch (rgthree)` —— 2/7 个有
-- `ColorMatch` —— 2/7 个有
-- `ImpactMakeAnyList` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `Text Multiline` —— 2/7 个有
-- `easy imageSize` —— 2/7 个有
+- `CR Text` —— 7/8 个有
+- `DoubaoSizePreset` —— 1/8 个有
+- `FluxResolutionNode` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `Image Filter Adjustments` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `MemoryCleaner` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 50 | 8 | 10% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 8 | 20% |
+| 采样算法 | euler | - | 8 | 75% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 50，8 个样本，取值分散，一致性仅 10%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，8 个样本，取值分散，一致性仅 20%
+- 采样算法 最常用 euler，8 个样本，一致性 75%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（5/8 个样本）：Steps较低可能导致细节不足

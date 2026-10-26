@@ -3,36 +3,38 @@ name: unknown_workflow_generic_596
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9448
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.809
+common_nodes: [LoadImage, SaveImage, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json, 音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json, 音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json, 音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json, 音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json]
+members: [图片生成/图生图/多景别镜头 13镜（高级版）_2008068892815527938.json, 图片生成/图生图/家具批量出图_2037404390805475330.json, 图片生成/图生图/童装出图_2037511391975837698.json, 图片生成/图生图/童装出图_2038815068757954561.json, 视频生成/文生视频/AI图生剧本_2039001758223044609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_596
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json、音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json、音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json、音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json、音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/多景别镜头 13镜（高级版）_2008068892815527938.json、图片生成/图生图/家具批量出图_2037404390805475330.json、图片生成/图生图/童装出图_2037511391975837698.json、图片生成/图生图/童装出图_2038815068757954561.json、视频生成/文生视频/AI图生剧本_2039001758223044609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `SaveImage`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/5 个有
-- `LoadVideo` —— 3/5 个有
-- `GetVideoComponents` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 4/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 2/5 个有
+- `ProcessString` —— 1/5 个有
+- `ShellAgentPluginOutputText` —— 1/5 个有
 
 ## 典型参数
 

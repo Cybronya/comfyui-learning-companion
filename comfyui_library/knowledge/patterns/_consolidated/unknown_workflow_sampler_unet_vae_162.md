@@ -1,71 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_162
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.8785
-common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.878143
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Klein-9B-图像各种风格转换_2022484805551661058.json, 图片生成/图生图/Klein-9B-图像风格、灯光迁移（lora）_2065039831608156161.json, 图片生成/图生图/Klein-9B-点状插图风格_2043666470843981826.json, 图片生成/图生图/Klein-9b VS Klein-9B-KV-图像编辑对比_2032988026435018754.json, 图片生成/图生图/Klein-BFS-黑兽换脸_2048205881640226818.json, 图片生成/图生图/Klien-9B-图像转电影风格图像_2043669674784727041.json]
+members: [图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json, 图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json, 图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json, 图片生成/文生图/Qwen Image 文生图_2102936313539416066.json, 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json, 图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json, 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_162
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein-9B-图像各种风格转换_2022484805551661058.json、图片生成/图生图/Klein-9B-图像风格、灯光迁移（lora）_2065039831608156161.json、图片生成/图生图/Klein-9B-点状插图风格_2043666470843981826.json、图片生成/图生图/Klein-9b VS Klein-9B-KV-图像编辑对比_2032988026435018754.json、图片生成/图生图/Klein-BFS-黑兽换脸_2048205881640226818.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json、图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json、图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json、图片生成/文生图/Qwen Image 文生图_2102936313539416066.json、图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
+- `EmptyLatentImage`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PainterFluxImageEdit`
+- `ResolutionSelector`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `AddLabel` —— 1/6 个有
-- `CropFace` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `PrimitiveFloat` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `QwenImage21Cache` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `PathchSageAttentionKJ` —— 2/7 个有
+- `CompressImages` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 5 - 10 | 6 | 79% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 30 | 25 - 50 | 7 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1024 | 864 - 1024 | 7 | 94% |
+| 高度 | 1024 | 1024 - 1536 | 7 | 84% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 5 - 10，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 25 - 50，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 864 - 1024，7 个样本，取值集中（一致性 94%）
+- 高度 中位数 1024，观测区间 1024 - 1536，7 个样本，取值集中（一致性 84%）

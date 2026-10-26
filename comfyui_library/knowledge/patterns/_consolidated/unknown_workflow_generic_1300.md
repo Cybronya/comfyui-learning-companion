@@ -3,36 +3,43 @@ name: unknown_workflow_generic_1300
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.866
-common_nodes: [CR Simple Image Compare, LoadImage, Note Plus (mtb), PrimitiveStringMultiline, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.749
+common_nodes: [PreviewAny, RHBatchImages:, RHExtractImage, RHUploadZip, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/【橘子AI】FLUX KONTEXT 全能图像修改工作流（单图+多图参考）_1929757301459292161.json, 图片生成/文生图/FLUX KONTEXT 全能图像修改工作流单图_1930155063808004097.json]
+members: [图片生成/反推提示词/Qwen3 VL批量自动打标_2026894908874821633.json, 数字人/数字人/图片批量打标反推_1997013031525761026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1300
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【橘子AI】FLUX KONTEXT 全能图像修改工作流（单图+多图参考）_1929757301459292161.json、图片生成/文生图/FLUX KONTEXT 全能图像修改工作流单图_1930155063808004097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VL批量自动打标_2026894908874821633.json、数字人/数字人/图片批量打标反推_1997013031525761026.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Simple Image Compare`
-- `LoadImage`
-- `Note Plus (mtb)`
-- `PrimitiveStringMultiline`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+- `PreviewAny`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `easy imageScaleDownToSize` —— 1/2 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `Bjornulf_ShowInt` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

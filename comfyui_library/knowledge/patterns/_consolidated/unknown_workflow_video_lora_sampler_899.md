@@ -3,54 +3,66 @@ name: unknown_workflow_video_lora_sampler_899
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.981
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.9045
+common_nodes: [BerniniPromptEnhancer, CreateVideo, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, Seed (rgthree), SimpleMath+, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/漫剧自用，低消耗版_2096831553887358978.json, 视频生成/文生视频/图音视参考工作流_2101747777444343810.json]
+members: [视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json, 视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_899
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/漫剧自用，低消耗版_2096831553887358978.json、视频生成/文生视频/图音视参考工作流_2101747777444343810.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json、视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `BerniniPromptEnhancer`
+- `CreateVideo`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `PreviewAny`
+- `Seed (rgthree)`
+- `SimpleMath+`
+- `StringFunction|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetLatentSizeAndCount` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `MiniMaxH3ChunkFeedForward` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `MiniMaxLowVRAMAttention` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SolAttnPatch` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `XB_VAEDecode` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `BatchImagesNode` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `llama_cpp_instruct_adv` —— 1/2 个有
+- `llama_cpp_model_loader` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 

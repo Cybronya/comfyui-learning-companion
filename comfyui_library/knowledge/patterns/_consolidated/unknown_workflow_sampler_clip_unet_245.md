@@ -1,72 +1,55 @@
 ---
 name: unknown_workflow_sampler_clip_unet_245
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8822
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LayerUtility: PurgeVRAM V2, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, SeedVR2, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.91
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSampler, LoadImage, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader, Wan22ImageToVideoLatent]
 problems: []
 missing: []
-members: [图片生成/图生图/SROP-细节修复-洗图工作流_1971806203087155202.json, 图片生成/图生图/SRPO FLUX超真实感洗图_1969353764324995074.json, 图片生成/图生图/SRPO-image-fix-workflow_1967519002291474434.json, 图片生成/图生图/SRPO-image-fix-图像精修-高清放大-电影级皮肤质感-图生图_1973764334977462274.json, 图片生成/文生图/写实人像、电影质感画质-文生图-2K直出_1989660235738607618.json]
+members: [视频生成/图生视频/ComfyUI官网版Wan2.2 5B图生视频_1949854984923996162.json, 视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json, 视频生成/文生视频/video_wan2_2_5B_ti2v_1954455270426603522.json, 视频生成/文生视频/wan2.2 5B_ti2v官方工作流_1950005929661087745.json, 视频生成/文生视频/万相wan2.2 5B文、图生视频官方工作流_1950178934676701186.json, 视频生成/文生视频/万相wan2.2 5B文图生视频官方工作流_1950766450359324674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_245
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SROP-细节修复-洗图工作流_1971806203087155202.json、图片生成/图生图/SRPO FLUX超真实感洗图_1969353764324995074.json、图片生成/图生图/SRPO-image-fix-workflow_1967519002291474434.json、图片生成/图生图/SRPO-image-fix-图像精修-高清放大-电影级皮肤质感-图生图_1973764334977462274.json、图片生成/文生图/写实人像、电影质感画质-文生图-2K直出_1989660235738607618.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ComfyUI官网版Wan2.2 5B图生视频_1949854984923996162.json、视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json、视频生成/文生视频/video_wan2_2_5B_ti2v_1954455270426603522.json、视频生成/文生视频/wan2.2 5B_ti2v官方工作流_1950005929661087745.json、视频生成/文生视频/万相wan2.2 5B文、图生视频官方工作流_1950178934676701186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SeedVR2`
+- `CreateVideo`
+- `KSampler`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `Wan22ImageToVideoLatent`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `EmptySD3LatentImage` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `Float` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `ImpactInt` —— 2/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `CustomAddLabel` —— 1/5 个有
-- `GetImageSize` —— 1/5 个有
-- `KSampler` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `SeedVR2BlockSwap` —— 1/5 个有
-- `SeedVR2ExtraArgs` —— 1/5 个有
-- `TeaCache` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `VHS_VideoCombine` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 5 | 5 - 5 | 6 | 100% |
+| 采样算法 | uni_pc | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -74,4 +57,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

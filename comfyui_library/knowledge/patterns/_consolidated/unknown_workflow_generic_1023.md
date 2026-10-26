@@ -3,33 +3,41 @@ name: unknown_workflow_generic_1023
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.557
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2065639949671686145.json, 视频生成/图生视频/wan2.7图生视频参考_2041786158845267970.json]
+members: [图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json, 图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json, 图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1023
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json、视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2065639949671686145.json、视频生成/图生视频/wan2.7图生视频参考_2041786158845267970.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json、图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json、图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/3 个有
-- `Textbox` —— 2/3 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 1/3 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Text Concatenate` —— 1/3 个有
 
 ## 典型参数
 

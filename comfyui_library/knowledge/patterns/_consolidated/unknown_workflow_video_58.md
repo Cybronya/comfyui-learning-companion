@@ -3,36 +3,36 @@ name: unknown_workflow_video_58
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [CustomAddLabel, GetVideoComponents, LoadImage, SaveVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [Bjornulf_ShowInt, GetImageSizeAndCount, ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, RepeatImageBatch, TransparentBGSession+, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Happyhorse1.0-快乐马-视频新王-图生视频_2048747607035482114.json, 视频生成/图生视频/Seedance2.0 Fast 图生视频-不用排队（真人支持）_2048319245276155906.json, 视频生成/图生视频/Seedance2.0 Fast 图生视频（首尾帧）-不用排队（真人支持）_2048058912468901890.json]
+members: [图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json, 数字人/数字人/大雪纷飞特效_2044074187223994369.json, 视频生成/图生视频/火山爆发特效_2043002610755571714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_58
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Happyhorse1.0-快乐马-视频新王-图生视频_2048747607035482114.json、视频生成/图生视频/Seedance2.0 Fast 图生视频-不用排队（真人支持）_2048319245276155906.json、视频生成/图生视频/Seedance2.0 Fast 图生视频（首尾帧）-不用排队（真人支持）_2048058912468901890.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json、数字人/数字人/大雪纷飞特效_2044074187223994369.json、视频生成/图生视频/火山爆发特效_2043002610755571714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CustomAddLabel`
-- `GetVideoComponents`
-- `LoadImage`
-- `SaveVideo`
+- `Bjornulf_ShowInt`
+- `GetImageSizeAndCount`
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `RepeatImageBatch`
+- `TransparentBGSession+`
+- `VHS_LoadVideo`
+- `VHS_SplitImages`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `RH_AlibabaHappyhorse10ImageToVideo` —— 1/3 个有
 
 ## 典型参数
 

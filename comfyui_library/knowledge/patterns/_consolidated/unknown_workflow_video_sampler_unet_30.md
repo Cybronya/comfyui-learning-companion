@@ -1,89 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_unet_30
 type: Unknown Workflow
-frequency: 12
+frequency: 10
 level: moderate
-coverage: 0.600417
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, JoinStringMulti, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SetNode, StringConcatenate, ToString, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.6668
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 Ref2VA 自用多图参考_2092052345797570562.json, 视频生成/图生视频/MiniMax H3 参考生视频 1080P高清版-9图+3音频参考-自动提示词优化-V1.6_2086990183689445377.json, 视频生成/图生视频/MiniMax H3 参考生视频-8步加速-自动提示词优化-V2_2085675916306509826.json, 视频生成/图生视频/MiniMax H3 参考生视频-lightx2v 4步加速-自动提示词优化-V1.3_2085749432846479361.json, 视频生成/图生视频/MiniMax H3 参考生视频完美版本 1080P高清-多图+多音频参考-自动提示词优化-V1.2_2091401181330501633.json, 视频生成/图生视频/MiniMax H3图片加音色参考生视频-自动提示词优化-V2.1_2083091369735843842.json, 视频生成/图生视频/绘影 - MiniMax H3参考生视频 1080P高清版-V2_2095314550949240833.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-fl2va-bf16-720P-V2_2102641646197366785.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-fl2va-int8-720P-V2_2102641358329700353.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-ref2va-int8-720P-V2_2100107761043460098.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-混合25-49-int8-720P-V2_2102552907047596033.json, 视频生成/文生视频/MiniMax H3 Ref2VA 多参考素材生视频 1080P高清版-9图+3音频参考带自动提示词_2091171246720503809.json]
+members: [视频生成/图生视频/minimax_h3_i2v_fastH3_2108036419896823810.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_2110569508896329729.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_2111011197268090882.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_contextmontion_longvideo_2104473475128840194.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_trim_base_2109449627366940674.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_trim_latent_upscale_2109449701736140802.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_trim_multiframe_2109449722762190850.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_v2_veda_2110543734483013634.json, 视频生成/图生视频/minimax_h3_ref2va_fastH3_trim_latent_upscale_2112724448817274882.json, 视频生成/图生视频/开源版minimax_h3_i2v_fastH3 快速图生视频精品_2108072194780778497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_30
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref2VA 自用多图参考_2092052345797570562.json、视频生成/图生视频/MiniMax H3 参考生视频 1080P高清版-9图+3音频参考-自动提示词优化-V1.6_2086990183689445377.json、视频生成/图生视频/MiniMax H3 参考生视频-8步加速-自动提示词优化-V2_2085675916306509826.json、视频生成/图生视频/MiniMax H3 参考生视频-lightx2v 4步加速-自动提示词优化-V1.3_2085749432846479361.json、视频生成/图生视频/MiniMax H3 参考生视频完美版本 1080P高清-多图+多音频参考-自动提示词优化-V1.2_2091401181330501633.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/minimax_h3_i2v_fastH3_2108036419896823810.json、视频生成/图生视频/minimax_h3_i2v_fastH3_2110569508896329729.json、视频生成/图生视频/minimax_h3_i2v_fastH3_2111011197268090882.json、视频生成/图生视频/minimax_h3_i2v_fastH3_contextmontion_longvideo_2104473475128840194.json、视频生成/图生视频/minimax_h3_i2v_fastH3_trim_base_2109449627366940674.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 10 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `JoinStringMulti`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `StringConcatenate`
-- `ToString`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 11/12 个有
-- `H3SigmaRefiner` —— 10/12 个有
-- `MiniMaxH3SigmaShift` —— 10/12 个有
-- `ModelAttentionBackend` —— 10/12 个有
-- `ZNGB_ImageBatchMulti` —— 10/12 个有
-- `Int` —— 7/12 个有
-- `ratio_selector` —— 7/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/12 个有
-- `PDRatioSelector` —— 6/12 个有
-- `ConvertAny2Int` —— 5/12 个有
-- `LTXVConcatAVLatent` —— 5/12 个有
-- `LTXVSeparateAVLatent` —— 5/12 个有
-- `MiniMaxChunkFeedForward` —— 5/12 个有
-- `MiniMaxLowVRAMAttention` —— 5/12 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/12 个有
-- `ResolutionSelector` —— 5/12 个有
-- `SplitSigmas` —— 5/12 个有
-- `VHS_LoadVideo` —— 5/12 个有
-- `ModelPreviewOverrideKJ` —— 3/12 个有
-- `SolAttnMiniMax` —— 3/12 个有
-- `BatchImagesNode` —— 2/12 个有
-- `ComfyNumberConvert` —— 1/12 个有
-- `ComfySwitchNode` —— 1/12 个有
-- `Compare` —— 1/12 个有
-- `CreateVideo` —— 1/12 个有
-- `SaveVideo` —— 1/12 个有
-- `SetReserveVRAM` —— 1/12 个有
-- `SplitStringByDelimiter` —— 1/12 个有
-- `TrimAudioDuration` —— 1/12 个有
-- `easy ifElse` —— 1/12 个有
+- `MiniMaxH3ImageToVideo` —— 9/10 个有
+- `SetNode` —— 8/10 个有
+- `GetNode` —— 6/10 个有
+- `LTXVConcatAVLatent` —— 2/10 个有
+- `LTXVSeparateAVLatent` —— 2/10 个有
+- `ManualSigmas` —— 2/10 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/10 个有
+- `PreviewAny` —— 2/10 个有
+- `SplitSigmas` —— 2/10 个有
+- `MiniMaxH3AddGuide` —— 1/10 个有
+- `MiniMaxH3MotionContext` —— 1/10 个有
+- `MiniMaxH3MotionContextChain` —— 1/10 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 1/10 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 1/10 个有
+- `MiniMaxH3MotionContextTrim` —— 1/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/10 个有
+- `QwenH3PromptLocal` —— 1/10 个有
+- `VedaSparseAttention` —— 1/10 个有
 
 ## 典型参数
 

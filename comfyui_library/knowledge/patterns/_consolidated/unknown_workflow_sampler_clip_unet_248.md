@@ -2,37 +2,38 @@
 name: unknown_workflow_sampler_clip_unet_248
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.9076
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.6374
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux2klein去除主体_2103376169314906113.json, 图片生成/图生图/flux2klein去除卡片_2103408490587967490.json, 图片生成/图生图/flux2klein去除文字_2103396557008752641.json, 图片生成/图生图/flux2klein添加主体_2103385812510535682.json, 图片生成/图生图/仅更改尺寸，图案不变_2059163011654438913.json]
+members: [图片生成/图生图/10_产品精修_2074323611346882561.json, 图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json, 图片生成/图生图/Flux逆采样修图_1926603675945570306.json, 图片生成/图生图/一键精修，图片精修_1961613590690205697.json, 图片生成/图生图/反差修图_2071109475523719169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_248
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/flux2klein去除主体_2103376169314906113.json、图片生成/图生图/flux2klein去除卡片_2103408490587967490.json、图片生成/图生图/flux2klein去除文字_2103396557008752641.json、图片生成/图生图/flux2klein添加主体_2103385812510535682.json、图片生成/图生图/仅更改尺寸，图案不变_2059163011654438913.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/10_产品精修_2074323611346882561.json、图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json、图片生成/图生图/Flux逆采样修图_1926603675945570306.json、图片生成/图生图/一键精修，图片精修_1961613590690205697.json、图片生成/图生图/反差修图_2071109475523719169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FlipSigmas`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `InFluxModelSamplingPred`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
@@ -41,19 +42,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 4/5 个有
-- `GetImageSize` —— 3/5 个有
+- `FluxDeGuidance` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `Joy_caption_two` —— 4/5 个有
+- `Joy_caption_two_load` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `ImageBlend` —— 3/5 个有
+- `LayerColor: Brightness & Contrast` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
 - `PreviewImage` —— 3/5 个有
-- `ImageToMask` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `PixaromaInpaintCrop` —— 2/5 个有
-- `PixaromaUncrop` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
+- `easy hiresFix` —— 3/5 个有
+- `easy imageSize` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/5 个有
+- `LayerMask: LoadBiRefNetModel` —— 2/5 个有
+- `LoraLoader` —— 2/5 个有
+- `PreviewBridge` —— 2/5 个有
+- `ColorMatch` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `FluxGuidance` —— 1/5 个有
+- `Get Image Size` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.95 | - | 2 | 95% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -61,4 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.95，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1387
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7335
-common_nodes: [RH_YouchuanTextToImageV82Turbo, SaveImage]
+coverage: 0.7735
+common_nodes: [LoadImage, LoadOOTDPipelineHub, OOTDGenerate, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/悠船图生图-v8.2-极速版_2092078122366754817.json, 图片生成/文生图/悠船文生图-v8.2-极速版_2091841574027223041.json]
+members: [图片生成/图生图/OOTD一键换装_1887474966970171394.json, 图片生成/图生图/ootd上半身全是连衣裙换装工作流_1946924755540959234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1387
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v8.2-极速版_2092078122366754817.json、图片生成/文生图/悠船文生图-v8.2-极速版_2091841574027223041.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OOTD一键换装_1887474966970171394.json、图片生成/图生图/ootd上半身全是连衣裙换装工作流_1946924755540959234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_YouchuanTextToImageV82Turbo`
+- `LoadImage`
+- `LoadOOTDPipelineHub`
+- `OOTDGenerate`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

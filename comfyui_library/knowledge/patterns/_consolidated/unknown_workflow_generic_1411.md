@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [ImageBatchMulti, LoadImage, RH_BatchImages, ResizeAndPadImage, SaveImage, easy imageSize, easy positive]
+common_nodes: [LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/本地专用 全能图片pro 并发_2019305009652965378.json, 图片生成/文生图/2030168431735083010.json]
+members: [图片生成/图生图/logo 剪裁_1970051206548758529.json, 图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1411
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/本地专用 全能图片pro 并发_2019305009652965378.json、图片生成/文生图/2030168431735083010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/logo 剪裁_1970051206548758529.json、图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,17 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageBatchMulti`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: ObjectDetectorFL2`
 - `LoadImage`
-- `RH_BatchImages`
-- `ResizeAndPadImage`
 - `SaveImage`
-- `easy imageSize`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image_Batch` —— 1/2 个有
+- `BoundingBox_Cropper` —— 1/2 个有
+- `LayerMask: SAM2Ultra` —— 1/2 个有
 
 ## 典型参数
 

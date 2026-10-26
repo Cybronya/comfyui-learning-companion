@@ -3,60 +3,53 @@ name: unknown_workflow_lora_sampler_unet_218
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.868
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.888667
+common_nodes: [CLIPLoader, ConditioningZeroOut, FluxKontextMultiReferenceLatentMethod, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键换装：完美4宫格替换衣物，超高一致性保持。_2095157044230844418.json, 图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2011329691990368258.json, 数字人/数字人/图生图（换装）_2092958523377410049.json]
+members: [图片生成/图生图/QwenEdit 2511真人转动漫_2010414545075965953.json, 图片生成/图生图/QwenEdit2511真人转绘动漫_2042772056793686018.json, 图片生成/图生图/【推荐】QwenEdit2511真人转绘动漫_2011460814603034626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_218
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键换装：完美4宫格替换衣物，超高一致性保持。_2095157044230844418.json、图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2011329691990368258.json、数字人/数字人/图生图（换装）_2092958523377410049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenEdit 2511真人转动漫_2010414545075965953.json、图片生成/图生图/QwenEdit2511真人转绘动漫_2042772056793686018.json、图片生成/图生图/【推荐】QwenEdit2511真人转绘动漫_2011460814603034626.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `CropWithPadInfo`
+- `FluxKontextMultiReferenceLatentMethod`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/3 个有
-- `ControlNetApplySD3` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SetUnionControlNetType` —— 1/3 个有
+- `Anything Everywhere3` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Text Input [Dream]` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy setNode` —— 2/3 个有
+- `PIP_图像联结` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1.5 | - | 1 | 100% |
 | 采样步数 | 4 | 4 - 4 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |

@@ -1,90 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_81
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.752118
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 18
+level: strong
+coverage: 0.873111
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, INTConstant, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RIFEInterpolation, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2049085267893555202.json, 视频生成/图生视频/02角色迁移更新+全节点注释_2055549996304478210.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞 Animate_2082283032458907650.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2=艾橘溪_1969244065881595906.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058552984040198146.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058894447605280770.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058904092608651265.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2060366272411557890.json, 视频生成/图生视频/AI动作模仿+唱歌跳舞对口型=AnimateWan2.2_2094462690289868801.json, 视频生成/图生视频/AI动作模仿+跳舞+剑舞=Animate wan2.2_2030816272992178178.json, 视频生成/图生视频/AI动作模仿+跳舞+剑舞=Animate wan2.2_2047151840906711042.json, 视频生成/图生视频/AI动作模仿+高清流畅！_2072563254043430913.json, 视频生成/图生视频/Animate Wan2.2 动作迁移2_1992566625708691457.json, 视频生成/图生视频/Animate wan2.2   抖音快手爆火美女跳舞_1986294172028207106.json, 视频生成/图生视频/Animate优化人物一致性精准替换_1969765016436154369.json, 视频生成/图生视频/Animate优化人物一致性精准替换【人物动作表情背景】_1971382393225592834.json, 视频生成/图生视频/Animate优化颜色匹配精准替换人换脸_1971226836661420034.json]
+members: [图片生成/图生图/数字人视频+BerniniS2V+Index图生视频_2084101037882957826.json, 数字人/数字人/Bernini S2V高动态数字人V1_2076481694571524098.json, 视频生成/图生视频/Bernini S2V高动态数字人V2_2075633285170032642.json, 视频生成/图生视频/Bernini V2_音视频_2075860093270323201.json, 视频生成/图生视频/BerniniS2v+IndexTTS_2075534910647005186.json, 视频生成/图生视频/BerniniS2v+IndexTTS数字人_2076643931248488450.json, 视频生成/图生视频/Bernini音频驱动+单双图角色参考_2077033010171568129.json, 视频生成/图生视频/Bernini音频驱动+角色参考数字人_2075515497583570946.json, 视频生成/图生视频/Bernini音频驱动+角色参考数字人（视频生成）_2076480633026727938.json, 视频生成/图生视频/Bernini音频驱动数字人_2078320387280162818.json, 视频生成/图生视频/参考声音和图片生成视频BerniniS2v_2075881409121701889.json, 视频生成/图生视频/声音生视频 数字人 Bernini S2V_2076477889901580289.json, 视频生成/图生视频/数字人视频 BerniniS2V+IndexTTS_2076518219430584321.json, 视频生成/图生视频/语音克隆生视频 S2v Bernini+IndexTTS_2076904015870390274.json, 视频生成/图生视频/音频生视频+角色参考数字人 Bernini_2076468920160186370.json, 视频生成/图生视频/高动态图生视频_2079545449362575361.json, 视频生成/文生视频/数字人声音克隆生视频 Bernini + TTS_2076918978248790017.json, 视频生成/文生视频/🎬 【开源版 Seedance 2.0】Bernini 原生音画同步直出_2075962978561781762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_81
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2049085267893555202.json、视频生成/图生视频/02角色迁移更新+全节点注释_2055549996304478210.json、视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞 Animate_2082283032458907650.json、视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2=艾橘溪_1969244065881595906.json、视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058552984040198146.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/数字人视频+BerniniS2V+Index图生视频_2084101037882957826.json、数字人/数字人/Bernini S2V高动态数字人V1_2076481694571524098.json、视频生成/图生视频/Bernini S2V高动态数字人V2_2075633285170032642.json、视频生成/图生视频/Bernini V2_音视频_2075860093270323201.json、视频生成/图生视频/BerniniS2v+IndexTTS_2075534910647005186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `JWInteger`
+全部 18 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `INTConstant`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
+- `RIFEInterpolation`
+- `SoundFlow_GetLength`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 16/17 个有
-- `LayerUtility: PurgeVRAM` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `VHS_VideoInfo` —— 16/17 个有
-- `WanVideoLoraSelectMulti` —— 16/17 个有
-- `easy cleanGpuUsed` —— 16/17 个有
-- `Text` —— 13/17 个有
-- `PrimitiveInt` —— 11/17 个有
-- `SimpleMath+` —— 11/17 个有
-- `ttN float` —— 11/17 个有
-- `ImageFromBatch` —— 7/17 个有
-- `BlockifyMask` —— 6/17 个有
-- `DrawMaskOnImage` —— 6/17 个有
-- `GrowMask` —— 6/17 个有
-- `ImageConcatMulti` —— 4/17 个有
-- `PreviewImage` —— 4/17 个有
-- `DownloadAndLoadSAM2Model` —— 3/17 个有
-- `GetImageSizeAndCount` —— 3/17 个有
-- `INTConstant` —— 3/17 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 3/17 个有
-- `PointsEditor` —— 3/17 个有
-- `Sam2Segmentation` —— 3/17 个有
-- `WanVideoEncode` —— 3/17 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/17 个有
-- `WanVideoUni3C_embeds` —— 3/17 个有
-- `easy showAnything` —— 3/17 个有
-- `CR Text` —— 1/17 个有
-- `ImageBatchGet` —— 1/17 个有
-- `ImitationHueNode` —— 1/17 个有
-- `Int` —— 1/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/17 个有
-- `LoadRembgByBiRefNetModel` —— 1/17 个有
-- `MathExpression|pysssss` —— 1/17 个有
-- `RembgByBiRefNet` —— 1/17 个有
-- `WanVideoLoraSelect` —— 1/17 个有
+- `BerniniS2VConditioning` —— 17/18 个有
+- `TrimAudioDuration` —— 17/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 14/18 个有
+- `AudioConcat` —— 12/18 个有
+- `easy cleanGpuUsed` —— 7/18 个有
+- `IndexTTS2Run` —— 6/18 个有
+- `PreviewAudio` —— 6/18 个有
+- `RunningHub Deepcleaner` —— 4/18 个有
+- `Text` —— 4/18 个有
+- `Float` —— 3/18 个有
+- `BerniniS2VConditioningV2` —— 2/18 个有
+- `PrimitiveFloat` —— 2/18 个有
+- `FlashVSRNode` —— 1/18 个有
+- `Label (rgthree)` —— 1/18 个有
+- `SaveImage` —— 1/18 个有
+- `Sleep` —— 1/18 个有
+- `easy clearCacheAll` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 18 | 89% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 18 | 100% |
+| 采样算法 | 1 | 1 - 1 | 18 | 100% |
+| 调度器 | dpmpp_2m_sde | - | 18 | 100% |
+| 重绘幅度 | sgm_uniform | - | 18 | 100% |
 
 ## 常见问题
 
@@ -92,4 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，18 个样本，一致性 89%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，18 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m_sde，18 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，18 个样本，一致性 100%

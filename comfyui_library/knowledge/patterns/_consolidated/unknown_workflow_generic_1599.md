@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [RH_BytedanceSeedance20GlobalMiniTextToVideo, SaveVideo]
+common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 2.0 Global Mini 文生视频｜支持4K_2097628085431660545.json, 视频生成/文生视频/Seedance 2.0 Global Mini文生视频｜支持4K高清直出_2097970966197530625.json]
+members: [图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json, 图片生成/文生图/RPTimage2_2059197846456463362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1599
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Mini 文生视频｜支持4K_2097628085431660545.json、视频生成/文生视频/Seedance 2.0 Global Mini文生视频｜支持4K高清直出_2097970966197530625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json、图片生成/文生图/RPTimage2_2059197846456463362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,8 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_BytedanceSeedance20GlobalMiniTextToVideo`
-- `SaveVideo`
+- `CR Text`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RHLLMChatNode` —— 1/2 个有
+- `SaveImageNode` —— 1/2 个有
 
 ## 典型参数
 

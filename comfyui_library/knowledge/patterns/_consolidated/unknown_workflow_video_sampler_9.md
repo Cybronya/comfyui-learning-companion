@@ -1,43 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_9
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.873167
-common_nodes: [Float to Int, GetVideoComponents, LoadImage, LoadVideo, MathExpression|pysssss, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
+coverage: 0.85175
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode]
 problems: []
 missing: []
-members: [视频生成/图生视频/DreamID-V视频换脸_2009253489515438082.json, 视频生成/图生视频/DreamID-V视频换脸稳定加速版V4（支持非脸空帧）_2009864984473374722.json, 视频生成/图生视频/王炸！DreamID-V 视频换脸_2009621483731030017.json, 视频生成/图生视频/王炸！DreamID-V视频换脸加速版V3（修复报错2倍加速）_2008970047242375169.json, 视频生成/图生视频/视频换脸_2050705839849259009.json, 视频生成/图生视频/😶‍🌫️DreamID-V 最新视频换脸😶‍🌫️_2009059203486322689.json]
+members: [视频生成/图生视频/【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423615982297089.json, 视频生成/图生视频/动态变装_2000450911669452801.json, 视频生成/图生视频/动态变装（支持首尾帧）_2016320506777051137.json, 视频生成/图生视频/动态变装（支持首尾帧）_2044848219955400706.json, 视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2031909424805187585.json, 视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2034804172817702913.json, 视频生成/图生视频/王炸自动反推首尾换装 Wan2.2-Insight_1982023011672956929.json, 视频生成/图生视频/首尾帧视频最新创意玩法（自动反推）_1982343398008995841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸_2009253489515438082.json、视频生成/图生视频/DreamID-V视频换脸稳定加速版V4（支持非脸空帧）_2009864984473374722.json、视频生成/图生视频/王炸！DreamID-V 视频换脸_2009621483731030017.json、视频生成/图生视频/王炸！DreamID-V视频换脸加速版V3（修复报错2倍加速）_2008970047242375169.json、视频生成/图生视频/视频换脸_2050705839849259009.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423615982297089.json、视频生成/图生视频/动态变装_2000450911669452801.json、视频生成/图生视频/动态变装（支持首尾帧）_2016320506777051137.json、视频生成/图生视频/动态变装（支持首尾帧）_2044848219955400706.json、视频生成/图生视频/图生视频 -动态变装（支持首尾帧）_2031909424805187585.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Float to Int`
-- `GetVideoComponents`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
 - `MathExpression|pysssss`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
+- `RHHiddenNodes`
+- `RIFE VFI`
+- `SetNode`
 - `VHS_VideoCombine`
+- `Wan22PromptSelector`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 5/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `Float` —— 2/6 个有
-- `INTConstant` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
+- `LoadWanVideoT5TextEncoder` —— 7/8 个有
+- `WanVideoSetBlockSwap` —— 7/8 个有
+- `WanVideoVAELoader` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
+- `Text Concatenate` —— 6/8 个有
+- `AILab_QwenVL` —— 2/8 个有
+- `CR Text Concatenate` —— 2/8 个有
+- `ImageConcanate` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RH_Nano_Banana_Image2Image` —— 2/8 个有
+- `RH_Translator` —— 2/8 个有
+- `SaveImage` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `RH_LLMAPI_NODE` —— 1/8 个有
 
 ## 典型参数
 

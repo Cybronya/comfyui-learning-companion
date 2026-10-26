@@ -3,39 +3,37 @@ name: unknown_workflow_generic_918
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.793333
-common_nodes: [ImageConcanate, LoadImage, PreviewImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.877333
+common_nodes: [JoyAI_Image_SM_Clip, JoyAI_Image_Understand, LoadImage, PreviewAny, SaveImage, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片   双图一致性编辑，融图_1960553335965253633.json, 图片生成/图生图/全能图片V1 最强语言编辑单图_1960867255657664513.json, 图片生成/图生图/全能图片V1， 完美换装_1961015020459114498.json]
+members: [图片生成/反推提示词/JoyAI_Image图像反推_2042045578409938945.json, 图片生成/反推提示词/JoyAI_Image图像对比_2042043171374374914.json, 图片生成/图生图/JoyAI_图像反推_2042252443634896898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_918
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片   双图一致性编辑，融图_1960553335965253633.json、图片生成/图生图/全能图片V1 最强语言编辑单图_1960867255657664513.json、图片生成/图生图/全能图片V1， 完美换装_1961015020459114498.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/JoyAI_Image图像反推_2042045578409938945.json、图片生成/反推提示词/JoyAI_Image图像对比_2042043171374374914.json、图片生成/图生图/JoyAI_图像反推_2042252443634896898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageConcanate`
+- `JoyAI_Image_SM_Clip`
+- `JoyAI_Image_Understand`
 - `LoadImage`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
+- `PreviewAny`
 - `SaveImage`
-- `Text Multiline`
-- `easy showAnything`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/3 个有
-- `Note _O` —— 2/3 个有
-- `easy textSwitch` —— 2/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `ImageBatch` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,40 +3,31 @@ name: unknown_workflow_generic_1527
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9165
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSVoiceClone, IndexTTS2Run, LoadAudio, PreviewAudio, PrimitiveStringMultiline, SaveAudioMP3, Text, 忽略多组孤海]
+coverage: 0.8
+common_nodes: [LoadImagesToBatch, MaskToImage, PreviewImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [数字人/数字人/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2096188886392328193.json, 音频生成/音频生成/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2094932655317020673.json]
+members: [图片生成/图生图/批量移除背景工作流_1990627919011733506.json, 图片生成/图生图/批量移除背景工作流_2110303800144777217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1527
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2096188886392328193.json、音频生成/音频生成/声音克隆二合一｜Index TTS2 + Qwen3 TTS｜音色参考｜语气情感控制_2094932655317020673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量移除背景工作流_1990627919011733506.json、图片生成/图生图/批量移除背景工作流_2110303800144777217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSVoiceClone`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `Text`
-- `忽略多组孤海`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 1/2 个有
-- `EmptyAudio` —— 1/2 个有
+- `LoadImagesToBatch`
+- `MaskToImage`
+- `PreviewImage`
+- `SaveImage`
+- `easy imageRemBg`
 
 ## 典型参数
 

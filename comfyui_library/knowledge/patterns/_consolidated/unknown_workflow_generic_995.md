@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+common_nodes: [LoadImage, SaveImage, ttN text]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V1工作流_2000370551262674946.json, 图片生成/文生图/香蕉工作流_1960889396658679810.json, 视频生成/图生视频/全能图片V1丨 完美换装丨稳定版 一句话改图_2066719710112210946.json]
+members: [图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json, 图片生成/图生图/全能图片2.0_2027393529009414146.json, 图片生成/图生图/珠宝替换_精简版_2110422160215990274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_995
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片V1工作流_2000370551262674946.json、图片生成/文生图/香蕉工作流_1960889396658679810.json、视频生成/图生视频/全能图片V1丨 完美换装丨稳定版 一句话改图_2066719710112210946.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json、图片生成/图生图/全能图片2.0_2027393529009414146.json、图片生成/图生图/珠宝替换_精简版_2110422160215990274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -24,11 +24,12 @@ source: knowledge_consolidation
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
+- `ttN text`
 
 **可变部分**（部分 workflow 才有）：
-- `JWImageResizeByLongerSide` —— 1/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
 
 ## 典型参数
 
