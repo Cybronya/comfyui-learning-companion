@@ -1,70 +1,88 @@
 ---
 name: unknown_workflow_video_inpaint_lora_7
 type: Unknown Workflow
-frequency: 7
+frequency: 3
 level: moderate
-coverage: 0.566143
-common_nodes: [AdjustBrightnessContrastSaturationNode, BlendInpaint, BlockifyMask, CLIPVisionLoader, DownloadAndLoadFlorence2Model, DrawMaskOnImage, Florence2Run, GetNode, ImageFromBatch, ImageResizeKJv2, ImageScale, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, MaskPreview+, MaskToImage, OpenposePreprocessor, PreviewImage, RMBG, RepeatImageBatch, SaveImage, SetNode, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy imageConcat, easy imageSize, easy imageSizeBySide]
+coverage: 0.543333
+common_nodes: [Any Switch (rgthree), ApplyFaceProcessor, ClothesSegment, DWPreprocessor, FaceProcessorLoader, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INPAINT_MaskedFill, Image Comparer (rgthree), ImageCompositeMasked, ImageResizeKJv2, ImageToMask, Label (rgthree), LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, MediaPipe-FaceMeshPreprocessor, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewAny, PreviewImage, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RH_Captioner, RMBG, RepeatImageBatch, SaveImage, SetNode, StringConcatenate, StringLength, ToBinaryMask, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/animate不挑图换装流_2027236475301007362.json, 图片生成/图生图/animate不挑图换装流_2069984474603020289.json, 图片生成/图生图/animate不挑图换装流_2093207459186954242.json, 图片生成/图生图/li 遮罩换装_2038159520484036610.json, 平台全量/Wan2.2 Animate 最强换装_2017245242163990529.json, 平台全量/animate不挑图换装流_1986405622952456194.json, 平台全量/换装_2042646209508151298.json]
+members: [图片生成/图生图/人物替换-图片编辑V1（支持多人，蒙版圈中角色替换）_2004118122019864578.json, 图片生成/图生图/人物替换-图片编辑V1（支持多人，蒙版圈中角色替换）_2026570441309032450.json, 图片生成/文生图/人物替换-图片编辑V1（偏参考图，不会改变风格）_1965710290023284737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/animate不挑图换装流_2027236475301007362.json、图片生成/图生图/animate不挑图换装流_2069984474603020289.json、图片生成/图生图/animate不挑图换装流_2093207459186954242.json、图片生成/图生图/li 遮罩换装_2038159520484036610.json、平台全量/Wan2.2 Animate 最强换装_2017245242163990529.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/人物替换-图片编辑V1（支持多人，蒙版圈中角色替换）_2004118122019864578.json、图片生成/图生图/人物替换-图片编辑V1（支持多人，蒙版圈中角色替换）_2026570441309032450.json、图片生成/文生图/人物替换-图片编辑V1（偏参考图，不会改变风格）_1965710290023284737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AdjustBrightnessContrastSaturationNode`
-- `BlendInpaint`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadFlorence2Model`
-- `DrawMaskOnImage`
-- `Florence2Run`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `ApplyFaceProcessor`
+- `ClothesSegment`
+- `DWPreprocessor`
+- `FaceProcessorLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageFromBatch`
+- `INPAINT_MaskedFill`
+- `Image Comparer (rgthree)`
+- `ImageCompositeMasked`
 - `ImageResizeKJv2`
-- `ImageScale`
 - `ImageToMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Label (rgthree)`
+- `LayerUtility: CropByMask V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `Mask Fill Holes`
-- `MaskPreview+`
 - `MaskToImage`
-- `OpenposePreprocessor`
+- `MediaPipe-FaceMeshPreprocessor`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PreviewAny`
 - `PreviewImage`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RH_Captioner`
 - `RMBG`
 - `RepeatImageBatch`
 - `SaveImage`
 - `SetNode`
-- `WanVideoAnimateEmbeds`
+- `StringConcatenate`
+- `StringLength`
+- `ToBinaryMask`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy imageConcat`
-- `easy imageSize`
-- `easy imageSizeBySide`
+- `easy compare`
+- `easy ifElse`
+- `easy int`
+- `easy isMaskEmpty`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 6/7 个有
-- `easy int` —— 1/7 个有
+- `Bookmark (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

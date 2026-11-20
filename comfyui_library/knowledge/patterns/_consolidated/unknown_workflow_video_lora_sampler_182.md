@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_video_lora_sampler_182
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.544615
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.720909
+common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json, 视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json, 视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json, 视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json, 视频生成/图生视频/Wan2.2 Animate 角色替换视频动作迁移 KJ加速版-StarAI_1969526770116554754.json, 视频生成/图生视频/Wan2.2 Animate人物迁移 单_多人舞蹈影视替换 （点编辑器遮罩）_1971057186338152449.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_1970283537297514497.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_2059310361421115394.json, 视频生成/图生视频/WanAnimate 场景九 多人视频精准替换_2044021235868241922.json, 视频生成/图生视频/WanAnimate 场景六 单独面部表情迁移_1970399426625892354.json, 视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json, 视频生成/图生视频/多人镜头替换工具-MM_1970004050341208065.json, 视频生成/图生视频/超精准多人视频替换(支持3DCG和真人)_20251014_1976173547762647041.json]
+members: [图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json, 视频生成/图生视频/KJ版 wan2.2-Fun-VACE动作迁移-美女跳舞_1968454947522138113.json, 视频生成/图生视频/wan2.2 Fun VACE 图生视频 KJ_1967866937906724865.json, 视频生成/图生视频/wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json, 视频生成/图生视频/wan2.2 Fun VACE首尾帧 KJ工作流_1967823701351739393.json, 视频生成/图生视频/wan2.2-Fun-VACE动作迁移-KJ_1967789727392890881.json, 视频生成/图生视频/wan2.2-Fun-VACE动作迁移-KJ_1968381285397868546.json, 视频生成/图生视频/wan2.2-Fun-VACE单图生视频-KJ版_1968419088865349633.json, 视频生成/图生视频/wan2.2-Fun-VACE突击侦查动作迁移-KJ_1967232757493534722.json, 视频生成/图生视频/wan2.2-Fun-VACE舞蹈动作迁移-KJ_1967220964087959554.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967848289393606658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_182
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json、视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json、视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json、视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json、视频生成/图生视频/Wan2.2 Animate 角色替换视频动作迁移 KJ加速版-StarAI_1969526770116554754.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json、视频生成/图生视频/KJ版 wan2.2-Fun-VACE动作迁移-美女跳舞_1968454947522138113.json、视频生成/图生视频/wan2.2 Fun VACE 图生视频 KJ_1967866937906724865.json、视频生成/图生视频/wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json、视频生成/图生视频/wan2.2 Fun VACE首尾帧 KJ工作流_1967823701351739393.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
+全部 11 个 workflow 都包含：
 - `GetNode`
-- `ImageCropByMaskAndResize`
+- `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PixelPerfectResolution`
 - `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
@@ -44,45 +38,30 @@ source: knowledge_consolidation
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 12/13 个有
-- `BlockifyMask` —— 10/13 个有
-- `DrawMaskOnImage` —— 10/13 个有
-- `GetImageSizeAndCount` —— 10/13 个有
-- `GrowMask` —— 9/13 个有
-- `WanVideoTorchCompileSettings` —— 9/13 个有
-- `DownloadAndLoadSAM2Model` —— 8/13 个有
-- `PointsEditor` —— 8/13 个有
-- `Sam2Segmentation` —— 8/13 个有
-- `INTConstant` —— 7/13 个有
-- `WanVideoContextOptions` —— 7/13 个有
-- `Int` —— 5/13 个有
-- `JWInteger` —— 5/13 个有
-- `CR Text` —— 3/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/13 个有
-- `LayerUtility: PurgeVRAM` —— 3/13 个有
-- `VHS_VideoInfo` —— 3/13 个有
-- `easy cleanGpuUsed` —— 3/13 个有
-- `Text` —— 2/13 个有
-- `easy showAnything` —— 2/13 个有
-- `AILab_MiniCPM_4_V` —— 1/13 个有
-- `DilateErodeMask` —— 1/13 个有
-- `Float` —— 1/13 个有
-- `GetImageSize` —— 1/13 个有
-- `LayerMask: LoadFlorence2Model` —— 1/13 个有
-- `LayerMask: ObjectDetectorFL2` —— 1/13 个有
-- `LayerMask: SAM2VideoUltra` —— 1/13 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/13 个有
-- `Mask Invert` —— 1/13 个有
-- `MaskSmooth+` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
-- `OpenDWPose_JK` —— 1/13 个有
-- `OpenposePreprocessor` —— 1/13 个有
-- `PlaySound|pysssss` —— 1/13 个有
-- `Seed_` —— 1/13 个有
-- `ToFloat` —— 1/13 个有
+- `WanVideoScheduler` —— 9/11 个有
+- `CreateCFGScheduleFloatList` —— 7/11 个有
+- `LayerUtility: TextJoin` —— 7/11 个有
+- `RH_Captioner` —— 7/11 个有
+- `DWPreprocessor` —— 6/11 个有
+- `GetImageSizeAndCount` —— 6/11 个有
+- `ImageBlend` —— 6/11 个有
+- `VHS_LoadVideo` —— 6/11 个有
+- `Zoe-DepthMapPreprocessor` —— 6/11 个有
+- `WanVideoVACEStartToEndFrame` —— 5/11 个有
+- `Text Multiline` —— 4/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `PrimitiveFloat` —— 2/11 个有
+- `RH_Translator` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `ImageStitch` —— 1/11 个有
+- `LayerUtility: TextJoinV2` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
 
 ## 典型参数
 

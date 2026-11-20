@@ -1,74 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_unet_143
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.934667
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.8946
+common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, ImageConcanate, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json, 图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json, 图片生成/文生图/F.1 - 极致逼真文生图（噪声注入）_2007506616567992322.json, 图片生成/文生图/FLUX + LORA 基础工作流_1830939420676771841.json, 图片生成/文生图/FLUX去除AI味道-噪波注入文生图工作流_1942941680951574529.json, 平台全量/flux去除AI味道丨噪波注入_1838132480304988161.json]
+members: [图片生成/图生图/Qwen Edit 2509，社区Lora，保持人脸_1987522076376502273.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，双人合照_1987922191335493633.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，双人接吻_1987930666904039426.json, 图片生成/图生图/Qwen Edit 2509，社区Lora，添加人物_1987939997108121602.json, 图片生成/图生图/疯狂动物城合照_1992252774878433281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json、图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json、图片生成/文生图/F.1 - 极致逼真文生图（噪声注入）_2007506616567992322.json、图片生成/文生图/FLUX + LORA 基础工作流_1830939420676771841.json、图片生成/文生图/FLUX去除AI味道-噪波注入文生图工作流_1942941680951574529.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2509，社区Lora，保持人脸_1987522076376502273.json、图片生成/图生图/Qwen Edit 2509，社区Lora，双人合照_1987922191335493633.json、图片生成/图生图/Qwen Edit 2509，社区Lora，双人接吻_1987930666904039426.json、图片生成/图生图/Qwen Edit 2509，社区Lora，添加人物_1987939997108121602.json、图片生成/图生图/疯狂动物城合照_1992252774878433281.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `KSamplerSelect`
+全部 5 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
+- `EmptyLatentImage`
+- `ImageConcanate`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 5/6 个有
-- `VAEDecode` —— 5/6 个有
-- `CLIPTextEncode` —— 4/6 个有
-- `CR SDXL Aspect Ratio` —— 4/6 个有
-- `DualCLIPLoader` —— 4/6 个有
-- `DisableNoise` —— 3/6 个有
-- `ImageSmartSharpen+` —— 3/6 个有
-- `InjectLatentNoise+` —— 3/6 个有
-- `LatentInterpolate` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `SplitSigmasDenoise` —— 3/6 个有
-- `CLIPTextEncodeFlux` —— 2/6 个有
-- `DualCLIPLoaderGGUF` —— 2/6 个有
-- `EmptyLatentImage` —— 2/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `LatentUpscaleBy` —— 2/6 个有
-- `LayerUtility: PurgeVRAM` —— 2/6 个有
-- `StringConstantMultiline` —— 2/6 个有
-- `ImageGenResolutionFromLatent` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `VAEDecodeTiled` —— 1/6 个有
+- `INTConstant` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 3/5 个有
+- `UltimateSDUpscaleNoUpscale` —— 3/5 个有
+- `CR Prompt List` —— 1/5 个有
+- `ImageAndMaskPreview` —— 1/5 个有
+- `InvertMask` —— 1/5 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/5 个有
+- `LayerUtility: CropByMask V3` —— 1/5 个有
+- `ReActorFaceSwap` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 872 | - | 2 | 83% |
-| 高度 | 1600 | - | 2 | 80% |
+| 采样步数 | 6 | 6 - 6 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 872，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高度 中位数 1600，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- 采样步数 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,83 +1,82 @@
 ---
 name: image_to_image_sampler_unet_vae_36
 type: Image To Image
-frequency: 7
+frequency: 5
 level: strong
-coverage: 0.902429
-common_nodes: [CLIPLoader, ConditioningZeroOut, FluxKontextImageScale, Get Image Size, Image Blank, Image Comparer (rgthree), ImageCompositeMasked, JoinImageWithAlpha, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8406
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2-klein-无限扩图(颜色校正版)_2012322171997134849.json, 图片生成/图生图/Flux2-klein-无限扩图_2012182107996557314.json, 图片生成/图生图/Flux2-klein-物品移除（适用于小物品移除）_2012184119664447489.json, 图片生成/图生图/Qwen-edit-2511-无限扩图_2005084136446586881.json, 平台全量/Flux2-klein-9b 扩图_2016066404197339138.json, 平台全量/QIANSUI+Qwen-Edit-2511-扩图_2036385078598701057.json, 平台全量/Qwen-edit-2511 无限扩图_2006266802841587714.json]
+members: [图片生成/图生图/Qwen Edit 2511 图像编辑_遮罩编辑_2004146251220328449.json, 图片生成/图生图/Qwen Edit 2511 零偏移编辑图像_2003862140756893698.json, 图片生成/图生图/Qwen-Edit+2511-细化改图-零偏移图生图_2036406339810889730.json, 图片生成/图生图/Qwen-Edit-2511 Anypose 精确控制人体姿势_2084960929535582210.json, 图片生成/图生图/应用级：千问单_双图编辑，和风整理_2008344909979328513.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_36
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2-klein-无限扩图(颜色校正版)_2012322171997134849.json、图片生成/图生图/Flux2-klein-无限扩图_2012182107996557314.json、图片生成/图生图/Flux2-klein-物品移除（适用于小物品移除）_2012184119664447489.json、图片生成/图生图/Qwen-edit-2511-无限扩图_2005084136446586881.json、平台全量/Flux2-klein-9b 扩图_2016066404197339138.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2511 图像编辑_遮罩编辑_2004146251220328449.json、图片生成/图生图/Qwen Edit 2511 零偏移编辑图像_2003862140756893698.json、图片生成/图生图/Qwen-Edit+2511-细化改图-零偏移图生图_2036406339810889730.json、图片生成/图生图/Qwen-Edit-2511 Anypose 精确控制人体姿势_2084960929535582210.json、图片生成/图生图/应用级：千问单_双图编辑，和风整理_2008344909979328513.json）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `FluxKontextImageScale`
-- `Get Image Size`
-- `Image Blank`
-- `Image Comparer (rgthree)`
-- `ImageCompositeMasked`
-- `JoinImageWithAlpha`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImagePadForOutpaint` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `CLIPTextEncode` —— 4/7 个有
-- `CFGNorm` —— 3/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `ModelSamplingAuraFlow` —— 3/7 个有
-- `TextEncodeQwenImageEditPlus` —— 3/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `Mask Fill Holes` —— 1/7 个有
-- `SeedVR2` —— 1/7 个有
-- `SeedVR2BlockSwap` —— 1/7 个有
-- `SeedVR2ExtraArgs` —— 1/7 个有
-- `YC Color Match` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 3/5 个有
+- `Get Image Size` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 3/5 个有
+- `LayerUtility: ImageReel` —— 3/5 个有
+- `LayerUtility: ImageReelComposit` —— 3/5 个有
+- `MaxNode` —— 3/5 个有
+- `TextInput_` —— 3/5 个有
+- `ReferenceLatent` —— 2/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `Anything Everywhere3` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
+- `easy imageConcat` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 5 - 6 | 7 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 5 - 6，7 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（7/5 个样本）：Steps较低可能导致细节不足

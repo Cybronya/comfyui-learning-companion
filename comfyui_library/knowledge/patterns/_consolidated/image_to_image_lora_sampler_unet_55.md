@@ -1,80 +1,81 @@
 ---
 name: image_to_image_lora_sampler_unet_55
 type: Image To Image
-frequency: 11
-level: strong
-coverage: 0.932455
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 10
+level: moderate
+coverage: 0.8382
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/002.Qwen编辑之王003.单图编辑_2034486910499954689.json, 图片生成/图生图/002.Qwen编辑之王019.单图多视角_2034824618657193985.json, 图片生成/图生图/0像素偏移基准版和非基准版_2042496356362752001.json, 图片生成/图生图/2511人物变瘦工作流_2004064077204889602.json, 图片生成/图生图/2511饰品多角度摆放+机位（5个）_2094745463726624770.json, 图片生成/图生图/5.其他类型-6.NSF+-08.Qwen_2511生图001.QW2511单图编辑.json_2021976908983963649.json, 图片生成/图生图/5.其他类型-6.NSF+-08.Qwen_2511生图003.QW2511单图多视角.json_2021976973089710082.json, 图片生成/图生图/qwen 2511重新照明重打光_2059634574510092289.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2055844453260242946.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2056203314009780225.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2113526159744004098.json]
+members: [图片生成/图生图/Qwen-edit 超自然重打光_2054846333298724865.json, 图片生成/图生图/Qwen-edit_万物重打光_2099321308822724609.json, 图片生成/图生图/Qwen-edit_万物重打光_2099665295848861698.json, 图片生成/图生图/Qwen-image-edit2511指哪打哪工作流_1959082223985176577.json, 图片生成/图生图/QwenEdit2509服装白底图提取_1993628856821235713.json, 图片生成/图生图/☯️千问Edit_单图编辑_1972192308055764994.json, 图片生成/图生图/一键生成Hello Kitty中国风头像_2013190174729052161.json, 图片生成/图生图/人像写真重打光_2076370520215474177.json, 图片生成/图生图/人像写真重打光_2077926058837504001.json, 图片生成/图生图/人像写真重打光_2077938985393020930.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_55
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/002.Qwen编辑之王003.单图编辑_2034486910499954689.json、图片生成/图生图/002.Qwen编辑之王019.单图多视角_2034824618657193985.json、图片生成/图生图/0像素偏移基准版和非基准版_2042496356362752001.json、图片生成/图生图/2511人物变瘦工作流_2004064077204889602.json、图片生成/图生图/2511饰品多角度摆放+机位（5个）_2094745463726624770.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen-edit 超自然重打光_2054846333298724865.json、图片生成/图生图/Qwen-edit_万物重打光_2099321308822724609.json、图片生成/图生图/Qwen-edit_万物重打光_2099665295848861698.json、图片生成/图生图/Qwen-image-edit2511指哪打哪工作流_1959082223985176577.json、图片生成/图生图/QwenEdit2509服装白底图提取_1993628856821235713.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 10/11 个有
-- `easy cleanGpuUsed` —— 10/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `Image Comparer (rgthree)` —— 8/11 个有
-- `ModelSamplingAuraFlow` —— 6/11 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/11 个有
-- `Int` —— 4/11 个有
-- `PreviewImage` —— 3/11 个有
-- `CR Prompt List` —— 2/11 个有
-- `CR Text` —— 2/11 个有
-- `PathchSageAttentionKJ` —— 2/11 个有
-- `String Literal` —— 2/11 个有
-- `easy showAnything` —— 2/11 个有
-- `GetImageSize` —— 1/11 个有
-- `ImageBatch` —— 1/11 个有
-- `孤海图像缩放按像素` —— 1/11 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `JjkText` —— 7/10 个有
+- `TextEncodeQwenImageEdit` —— 7/10 个有
+- `ColorMatch` —— 6/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
+- `TextEncodeQwenImageEditPlus` —— 4/10 个有
+- `Canny` —— 3/10 个有
+- `LayerUtility: ImageReel` —— 3/10 个有
+- `LayerUtility: ImageReelComposit` —— 3/10 个有
+- `ModelPatchLoader` —— 3/10 个有
+- `QwenImageDiffsynthControlnet` —— 3/10 个有
+- `CR Text` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
+- `ImageAndMaskPreview` —— 1/10 个有
+- `Textbox` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 11 | 73% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 55% |
-| 调度器 | simple | - | 11 | 45% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 8 | 4 - 30 | 10 | 29% |
+| Prompt 约束强度(CFG) | 1 | 0.99 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 55%
-- 调度器 最常用 simple，11 个样本，一致性 45%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（16/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 30，10 个样本，取值分散，一致性仅 29%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 0.99 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.99，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 高发问题（6/10 个样本）：Steps较低可能导致细节不足

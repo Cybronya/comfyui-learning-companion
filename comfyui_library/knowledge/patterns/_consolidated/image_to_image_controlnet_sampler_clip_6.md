@@ -1,69 +1,75 @@
 ---
 name: image_to_image_controlnet_sampler_clip_6
 type: Image To Image
-frequency: 7
+frequency: 5
 level: strong
-coverage: 0.950857
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SaveImage, VAEDecode, VAEEncode, WD14Tagger|pysssss]
+coverage: 0.8454
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Bypasser (rgthree), ImpactImageBatchToImageList, ImpactInt, KSampler, LayerUtility: PurgeVRAM, LoadImage, ModelPatchLoader, Mute / Bypass Repeater (rgthree), PreviewImage, QwenImageDiffsynthControlnet, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/IPAdapterFaceID动漫风换脸_1937044464424882178.json, 图片生成/图生图/IPAdapterFaceID深度推算插画风换脸_1937046648038019074.json, 图片生成/图生图/IPAdapterFaceID真实感换脸_1936332844761272322.json, 图片生成/图生图/LABUBU转绘动漫游戏摄影风_1936665105587163138.json, 平台全量/IPuLID真实人像换脸_1937384110413529090.json, 平台全量/InstantID真实人像换脸_1937050033458155522.json, 平台全量/PuLID深度控制真实人像换脸_1937388891651653633.json]
+members: [图片生成/图生图/251225001.010.Z-image批量强控洗图，下载到本地换备用节点_2004230957110620162.json, 图片生成/图生图/Z-image批量4张图洗图+强控流_2008253153619218433.json, 图片生成/图生图/Z-image批量洗图+姿态控制_1999117660967272449.json, 图片生成/图生图/Z-image批量洗图+姿态控制【傲雪AIGC 】_1998990561690443777.json, 图片生成/图生图/🤖Z-image小钢炮批量洗图+强控流_1997854052056764417.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/IPAdapterFaceID动漫风换脸_1937044464424882178.json、图片生成/图生图/IPAdapterFaceID深度推算插画风换脸_1937046648038019074.json、图片生成/图生图/IPAdapterFaceID真实感换脸_1936332844761272322.json、图片生成/图生图/LABUBU转绘动漫游戏摄影风_1936665105587163138.json、平台全量/IPuLID真实人像换脸_1937384110413529090.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/251225001.010.Z-image批量强控洗图，下载到本地换备用节点_2004230957110620162.json、图片生成/图生图/Z-image批量4张图洗图+强控流_2008253153619218433.json、图片生成/图生图/Z-image批量洗图+姿态控制_1999117660967272449.json、图片生成/图生图/Z-image批量洗图+姿态控制【傲雪AIGC 】_1998990561690443777.json、图片生成/图生图/🤖Z-image小钢炮批量洗图+强控流_1997854052056764417.json）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
+- `Fast Bypasser (rgthree)`
+- `ImpactImageBatchToImageList`
+- `ImpactInt`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `ModelPatchLoader`
+- `Mute / Bypass Repeater (rgthree)`
 - `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `Seed (rgthree)`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `WD14Tagger|pysssss`
+- `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IPAdapterFaceID` —— 6/7 个有
-- `IPAdapterUnifiedLoaderFaceID` —— 6/7 个有
-- `AIO_Preprocessor` —— 5/7 个有
-- `ApplyInstantID` —— 3/7 个有
-- `ColorizeDepthmap` —— 3/7 个有
-- `ImageInvert` —— 3/7 个有
-- `InstantIDFaceAnalysis` —— 3/7 个有
-- `InstantIDModelLoader` —— 3/7 个有
-- `MarigoldDepthEstimation` —— 3/7 个有
-- `RemapDepth` —— 3/7 个有
-- `ApplyPulid` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `PulidEvaClipLoader` —— 1/7 个有
-- `PulidInsightFaceLoader` —— 1/7 个有
-- `PulidModelLoader` —— 1/7 个有
+- `ImpactMakeImageBatch` —— 4/5 个有
+- `Any Switch (rgthree)` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `Qwen3VL_Advanced` —— 3/5 个有
+- `RH_LLMAPI_NODE` —— 3/5 个有
+- `DapaoImageAspectRatioResizeNode` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `Grok_Chat` —— 2/5 个有
+- `PrimitiveString` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `Float` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `Qwen3VL_ExtraOptions` —— 1/5 个有
+- `VHS_LoadImagesPath` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 30 | 7 | 93% |
-| Prompt 约束强度(CFG) | 7 | 3.5 - 7 | 7 | 81% |
-| 采样算法 | dpmpp_2m | - | 7 | 86% |
-| 调度器 | karras | - | 7 | 86% |
-| 重绘幅度 | 1 | 0.5 - 1 | 7 | 81% |
-| ControlNet 权重 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 10 | 10 - 10 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler_ancestral | - | 5 | 100% |
+| 调度器 | sgm_uniform | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.8 - 1 | 5 | 92% |
 
 ## 常见问题
 
@@ -71,9 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 30，7 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 3.5 - 7，7 个样本，取值集中（一致性 81%）
-- 采样算法 最常用 dpmpp_2m，7 个样本，一致性 86%
-- 调度器 最常用 karras，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，7 个样本，取值集中（一致性 81%）
-- ControlNet 权重 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，5 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）

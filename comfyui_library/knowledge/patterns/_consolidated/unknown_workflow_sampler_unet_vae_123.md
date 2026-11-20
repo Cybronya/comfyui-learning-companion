@@ -1,68 +1,86 @@
 ---
 name: unknown_workflow_sampler_unet_vae_123
 type: Unknown Workflow
-frequency: 10
+frequency: 8
 level: strong
-coverage: 0.8106
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.812625
+common_nodes: [AutoCropFaces, CLIPLoader, CR Text, DapaoImageAspectRatioResizeNode, Image Comparer (rgthree), ImageConcanate, KSampler, LoadImage, PainterFluxImageEdit, SaveImage, SolidMask, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy ifElse, easy imageRemBg, easy int, easy isMaskEmpty]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json, 图片生成/文生图/incontext-controlnet-home_1914936305506287617.json, 图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json, 图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json, 图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json, 图片生成/文生图/一键微电影分镜-flux完全人物一致+自动裁剪-三分镜_1911275546050002945.json, 图片生成/文生图/国漫美女生成器_1965956635371941889.json, 图片生成/文生图/国漫美女生成器_2059552047061626882.json, 图片生成/文生图/赤木晴子生成工作流_1923305531946299393.json, 平台全量/小说推文_1957367934870024194.json]
+members: [图片生成/图生图/DG（整理)_Klein换脸 换头二合一 又快又好_2019256828802113537.json, 图片生成/图生图/F.2Klein9B换脸换头二合一_2061626857174421505.json, 图片生成/图生图/Flux2-Klein-精准换脸_换头_2016780019858673666.json, 图片生成/图生图/Flux2-Klein换脸&换头_2027726464363274241.json, 图片生成/图生图/Klein换脸+换头二合一_2025800867483488258.json, 图片生成/图生图/Klein换脸+换头二合一_2026595310755123202.json, 图片生成/图生图/MsPai换脸换头二合一_2057303632898514945.json, 图片生成/图生图/🤹Klein换脸 换头二合一 又快又好🤹_2016443125459324930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_123
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json、图片生成/文生图/incontext-controlnet-home_1914936305506287617.json、图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json、图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json、图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/DG（整理)_Klein换脸 换头二合一 又快又好_2019256828802113537.json、图片生成/图生图/F.2Klein9B换脸换头二合一_2061626857174421505.json、图片生成/图生图/Flux2-Klein-精准换脸_换头_2016780019858673666.json、图片生成/图生图/Flux2-Klein换脸&换头_2027726464363274241.json、图片生成/图生图/Klein换脸+换头二合一_2025800867483488258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：8
 - **可信度**：强结论
 - **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+全部 8 个 workflow 都包含：
+- `AutoCropFaces`
+- `CLIPLoader`
+- `CR Text`
+- `DapaoImageAspectRatioResizeNode`
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `KSampler`
+- `LoadImage`
+- `PainterFluxImageEdit`
 - `SaveImage`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy anythingIndexSwitch`
+- `easy ifElse`
+- `easy imageRemBg`
+- `easy int`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 9/10 个有
-- `ModelSamplingFlux` —— 9/10 个有
-- `LoraLoader` —— 8/10 个有
-- `CLIPTextEncode` —— 6/10 个有
-- `PreviewImage` —— 6/10 个有
-- `FluxGuidance` —— 5/10 个有
-- `CLIPTextEncodeFlux` —— 4/10 个有
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `PrimitiveInt` —— 2/10 个有
-- `easy int` —— 2/10 个有
-- `EmptyLatentImage` —— 1/10 个有
-- `ImageCrop+` —— 1/10 个有
-- `ImpactInt` —— 1/10 个有
+- `Fast Bypasser (rgthree)` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `Mute / Bypass Repeater (rgthree)` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `easy sam3ImageSegmentation` —— 3/8 个有
+- `easy sam3ModelLoader` —— 3/8 个有
+- `AILab_MaskOverlay` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `MaskPreview` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.8 - 1 | 8 | 91% |
-| LoRA 文本强度 | 1 | 0.7 - 1 | 8 | 90% |
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1536 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，8 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 0.7 - 1，8 个样本，取值集中（一致性 90%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

@@ -1,89 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_336
 type: Unknown Workflow
-frequency: 9
+frequency: 7
 level: moderate
-coverage: 0.413667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetNode, GetVideoComponents, ImageAddNoise, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetNode, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy anythingInversedSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy saveVideo, easy showAnything]
+coverage: 0.443143
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3_导演台长视频_2097299993232236545.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2103031580498415618.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2105589907493314562.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2108378297288712194.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2113647217943859201.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2113786461760876545.json, 视频生成/图生视频/MiniMax-H3_导演台长视频_2113787802507894786.json, 视频生成/文生视频/MiniMax-H3_导演台长视频_2115629820280401921.json, 视频生成/视频生视频/MiniMax-H3_导演台长视频_2097299993232236545.json]
+members: [数字人/数字人/LongCatAvatar_无限时长工作流_2006174789139959810.json, 数字人/数字人/LongCatAvatar丝滑全自动无限时长数字人_2021765346931249153.json, 数字人/数字人/LongCat数字人一键生成_2009171897438703617.json, 视频生成/图生视频/LongCat-Video-Avatar数字人_2005920919849758721.json, 视频生成/图生视频/LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json, 视频生成/图生视频/LongCatAvatar_audio_image_to_video_example_Kijai_2004028313129656322.json, 视频生成/图生视频/LongCatAvatar美团龙猫图片生成唱歌等数字人视频数字人图生视频_2003503610359103489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_336
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3_导演台长视频_2097299993232236545.json、视频生成/图生视频/MiniMax-H3_导演台长视频_2103031580498415618.json、视频生成/图生视频/MiniMax-H3_导演台长视频_2105589907493314562.json、视频生成/图生视频/MiniMax-H3_导演台长视频_2108378297288712194.json、视频生成/图生视频/MiniMax-H3_导演台长视频_2113647217943859201.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/LongCatAvatar_无限时长工作流_2006174789139959810.json、数字人/数字人/LongCatAvatar丝滑全自动无限时长数字人_2021765346931249153.json、数字人/数字人/LongCat数字人一键生成_2009171897438703617.json、视频生成/图生视频/LongCat-Video-Avatar数字人_2005920919849758721.json、视频生成/图生视频/LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `ExtendIntermediateSigmas`
+全部 7 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
 - `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `GetVideoComponents`
-- `ImageAddNoise`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `ReplaceVideoLatentFrames`
 - `SetNode`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingInversedSwitch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy mergeVideosFromPaths`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
-- `easy saveVideo`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 8/9 个有
-- `VHS_VideoInfoLoaded` —— 8/9 个有
-- `BlockSparseAttention` —— 6/9 个有
-- `ResolutionSelector` —— 6/9 个有
-- `Any Switch (rgthree)` —— 5/9 个有
-- `BatchImagesNode` —— 5/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/9 个有
-- `LTXVConcatAVLatent` —— 5/9 个有
-- `LTXVSeparateAVLatent` —— 5/9 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/9 个有
-- `ConditioningZeroOut` —— 4/9 个有
-- `SelfLiftH3Sampler` —— 4/9 个有
-- `easy anythingIndexSwitch` —— 4/9 个有
-- `SplitSigmas` —— 3/9 个有
-- `EmptyImage` —— 2/9 个有
+- `TrimAudioDuration` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 4/7 个有
+- `Wav2VecModelLoader` —— 4/7 个有
+- `easy forLoopEnd` —— 4/7 个有
+- `easy forLoopStart` —— 4/7 个有
+- `Int` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `Audio Duration (mtb)` —— 1/7 个有
+- `CR SDXL Aspect Ratio` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `DF_Ceil` —— 1/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `Float` —— 1/7 个有
+- `FloorNode` —— 1/7 个有
+- `GetAudioDurationFromAudio` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `MemoryCleaner` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `TextInput_` —— 1/7 个有
+- `easy compare` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
+- `easy isNone` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

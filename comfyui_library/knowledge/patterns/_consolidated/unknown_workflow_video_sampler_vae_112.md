@@ -3,65 +3,78 @@ name: unknown_workflow_video_sampler_vae_112
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7748
-common_nodes: [AddLabel, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, ImageConcatMulti, ImagePadKJ, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.7908
+common_nodes: [EmptyImage, ImageConcanate, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, ShowText|pysssss, TextBox, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFlowEdit, WanVideoLoopArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy imageSize, easy textSwitch]
 problems: []
 missing: []
-members: [平台全量/FusionX-VACE视频扩图_1934173151117139969.json, 平台全量/FusionX加速版视频扩图V1_1933936111058079746.json, 平台全量/VACE 14B视频扩图工作流_1923198805812891650.json, 平台全量/【VACE系列】视频扩展工作流实现猫咪后宫梦！_1925904698380095490.json, 视频生成/图生视频/VACE14B-视频多方位扩展编辑_1922732185021812737.json]
+members: [视频生成/图生视频/图生视频 _ VACE-14B (CausVid 加速)_1924420521310474241.json, 视频生成/图生视频/图生视频 _ VACE-14B (MoviiGen)_1922900275059900417.json, 视频生成/图生视频/首尾帧 _ VACE-14B (CausVid 加速)_1924340185381654529.json, 视频生成/图生视频/首尾帧 _ VACE-14B_1922900237688475650.json, 视频生成/文生视频/文生视频 _ VACE-14B (CausVid 加速)_1924412501411155969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_112
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/FusionX-VACE视频扩图_1934173151117139969.json、平台全量/FusionX加速版视频扩图V1_1933936111058079746.json、平台全量/VACE 14B视频扩图工作流_1923198805812891650.json、平台全量/【VACE系列】视频扩展工作流实现猫咪后宫梦！_1925904698380095490.json、视频生成/图生视频/VACE14B-视频多方位扩展编辑_1922732185021812737.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/图生视频 _ VACE-14B (CausVid 加速)_1924420521310474241.json、视频生成/图生视频/图生视频 _ VACE-14B (MoviiGen)_1922900275059900417.json、视频生成/图生视频/首尾帧 _ VACE-14B (CausVid 加速)_1924340185381654529.json、视频生成/图生视频/首尾帧 _ VACE-14B_1922900237688475650.json、视频生成/文生视频/文生视频 _ VACE-14B (CausVid 加速)_1924412501411155969.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AddLabel`
 - `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImagePadKJ`
+- `ImageConcanate`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `ShowText|pysssss`
+- `TextBox`
+- `Textbox`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
+- `WanVideoFlowEdit`
+- `WanVideoLoopArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 4/5 个有
-- `WanVideoTextEncode` —— 4/5 个有
-- `WanVideoVACEModelSelect` —— 4/5 个有
-- `GetNode` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `MaskPreview` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `WanVideoApplyNAG` —— 1/5 个有
-- `WanVideoTextEncodeSingle` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `LoadImage` —— 4/5 个有
+- `RH_Captioner` —— 4/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `LayerUtility: ColorImage V2` —— 3/5 个有
+- `WanVideoVACEStartToEndFrame` —— 3/5 个有
+- `easy int` —— 3/5 个有
+- `AddLabel` —— 2/5 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `ImageRepeat` —— 1/5 个有
+- `ImageToMask` —— 1/5 个有
+- `LayerUtility: BooleanOperator` —— 1/5 个有
+- `LayerUtility: CropByMask` —— 1/5 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/5 个有
+- `LayerUtility: SimpleTextImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `Text Find and Replace` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
+- `easy imageSizeBySide` —— 1/5 个有
 
 ## 典型参数
 

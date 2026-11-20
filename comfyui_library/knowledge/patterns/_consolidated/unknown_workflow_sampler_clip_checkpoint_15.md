@@ -2,70 +2,76 @@
 name: unknown_workflow_sampler_clip_checkpoint_15
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.8295
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptySD3LatentImage, KSampler, SaveImage, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.912167
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, ImpactSwitch, KSampler (Efficient), KSampler Adv. (Efficient), PrimitiveFloat, SaveImage, VAEDecode, VAEEncode, VAELoader, easy positive]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/flux_schnell.json, comfyui-workflow-templates-json/sd3.5_large_blur.json, comfyui-workflow-templates-json/sd3.5_large_canny_controlnet_example.json, 图片生成/图生图/FLUX_InstantX_Canny_1902238464656433153.json, 图片生成/图生图/Flux ControlNet-Union-Pro-2.0_1918244190503763969.json, 图片生成/图生图/Flux_Controlnet_Canny官方工作流_1930182640068935681.json]
+members: [图片生成/文生图/anima(冥神)_2059802290592243713.json, 图片生成/文生图/anima（育婴龙女）_2060546911119167489.json, 图片生成/文生图/anima（阿宝阿库）_2059812406750175233.json, 图片生成/文生图/ill一采，anima二采样（天气）_2059556474224988161.json, 图片生成/文生图/ill一采，anima二采样（柴郡猫）_2059088000453267458.json, 图片生成/文生图/模型图片测试（迷迭香）_2059812487205314562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_15
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/flux_schnell.json、comfyui-workflow-templates-json/sd3.5_large_blur.json、comfyui-workflow-templates-json/sd3.5_large_canny_controlnet_example.json、图片生成/图生图/FLUX_InstantX_Canny_1902238464656433153.json、图片生成/图生图/Flux ControlNet-Union-Pro-2.0_1918244190503763969.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/anima(冥神)_2059802290592243713.json、图片生成/文生图/anima（育婴龙女）_2060546911119167489.json、图片生成/文生图/anima（阿宝阿库）_2059812406750175233.json、图片生成/文生图/ill一采，anima二采样（天气）_2059556474224988161.json、图片生成/文生图/ill一采，anima二采样（柴郡猫）_2059088000453267458.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `EmptyLatentImage`
+- `ImpactSwitch`
+- `KSampler (Efficient)`
+- `KSampler Adv. (Efficient)`
+- `PrimitiveFloat`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `ControlNetLoader` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `Canny` —— 3/6 个有
-- `ControlNetApplySD3` —— 3/6 个有
-- `FluxGuidance` —— 3/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `ControlNetApplyAdvanced` —— 2/6 个有
-- `AIO_Preprocessor` —— 1/6 个有
-- `ImageScale` —— 1/6 个有
-- `ImpactImageInfo` —— 1/6 个有
-- `SetUnionControlNetType` —— 1/6 个有
+- `LatentUpscaleBy` —— 3/6 个有
+- `LoraLoader` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `VAEDecodeTiled` —— 3/6 个有
+- `easy promptConcat` —— 3/6 个有
+- `PreviewImage` —— 2/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 32 | 6 | 57% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 6 | 26% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| ControlNet 权重 | 0.66 | 0.4 - 1 | 5 | 61% |
+| 采样步数 | 40 | 30 - 40 | 3 | 87% |
+| Prompt 约束强度(CFG) | 22.5 | 5 - 50 | 6 | 19% |
+| 采样算法 | 5 | 5 - 5 | 3 | 100% |
+| 调度器 | normal | - | 6 | 50% |
+| 重绘幅度 | 0.3 | 0.3 - 0.3 | 3 | 100% |
+| 宽度 | 1024 | 896 - 1024 | 6 | 94% |
+| 高度 | 1024 | 1024 - 1280 | 6 | 89% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 32，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，6 个样本，取值分散，一致性仅 26%
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.66，观测区间 0.4 - 1，5 个样本
+- 采样步数 中位数 40，观测区间 30 - 40，3 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 22.5，观测区间 5 - 50，6 个样本，取值分散，一致性仅 19%
+- 采样算法 中位数 5，观测区间 5 - 5，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 normal，6 个样本，一致性 50%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 0.3，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 896 - 1024，6 个样本，取值集中（一致性 94%）
+- 高度 中位数 1024，观测区间 1024 - 1280，6 个样本，取值集中（一致性 89%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -1,34 +1,32 @@
 ---
 name: image_to_image_sampler_clip_unet_13
 type: Image To Image
-frequency: 17
-level: moderate
-coverage: 0.958824
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleToTotalPixels, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 15
+level: weak
+coverage: 0.995867
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/54bejingxiaoshi_2051276423373045762.json, 图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json, 图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json, 图片生成/图生图/Flux 2 Klein 9B Edit_2063304186351149058.json, 图片生成/图生图/Qwen-Image-Layered图像分层_2017069015822245890.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2030837051507089409.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2096516146404085762.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2096873987820310529.json, 图片生成/图生图/Qwen-Image-Layered图像分层多个 RGBA 图层_2021876336322678785.json, 图片生成/图生图/Qwen-Image-Layered图像分层工作流_2038849289849409537.json, 图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json, 图片生成/图生图/Qwen图像分层，将图片拆成多个+RGBA+图层_2017122772144627713.json, 图片生成/图生图/背景消失术：一键实现人物与海报文字的完美分离_2008910987314864130.json, 图片生成/图生图/🦖Image-Layered图片拆分图层_2010567440442331137.json, 平台全量/Qwen-Image-Layered图像分层_拆分图层_2067450118902730753.json, 平台全量/Qwen-Image-Layered图像拆分图层_2009130817045401602.json, 平台全量/拆分图层工作流_2029383124731305985.json]
+members: [图片生成/图生图/图生图-百度-ERNIE-Image_2044557979541835777.json, 图片生成/图生图/图生图工作流77_2114259153182089217.json, 图片生成/图生图/场景洗图_2065796507659497474.json, 图片生成/图生图/旗袍美女qwen2512_2033779880537624578.json, 图片生成/图生图/日常穿搭Qwen2512真实人像质感御姐美女_2040711683684962306.json, 图片生成/图生图/昏暗灯光Qwen2512真实人像质感御姐美女_2040742192599277569.json, 图片生成/图生图/晚礼服Qwen2512真实人像质感御姐美女_2040739616071880706.json, 图片生成/图生图/欧式美女Qwen2512真实人像质感御姐美女_2040716624658960385.json, 图片生成/图生图/现代客厅美女Qwen2512真实人像质感御姐美女_2040726673531871234.json, 图片生成/图生图/睡衣系列Qwen2512真实人像质感御姐美女_2040663406696472578.json, 图片生成/图生图/短裤Qwen2512真实人像质感御姐美女_2040678187201470465.json, 图片生成/图生图/立体立绘Qwen2512真实人像质感御姐美女_2040764555873226753.json, 图片生成/图生图/粉色长发Qwen2512真实人像质感御姐美女_2040766504697860098.json, 图片生成/图生图/美女写真图Qwen2512真实人像质感御姐美女_2040708454158962689.json, 图片生成/图生图/蕾丝内衣Qwen2512真实人像质感御姐美女_2040698349422125057.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/反推提示词/54bejingxiaoshi_2051276423373045762.json、图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json、图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json、图片生成/图生图/Flux 2 Klein 9B Edit_2063304186351149058.json、图片生成/图生图/Qwen-Image-Layered图像分层_2017069015822245890.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/图生图-百度-ERNIE-Image_2044557979541835777.json、图片生成/图生图/图生图工作流77_2114259153182089217.json、图片生成/图生图/场景洗图_2065796507659497474.json、图片生成/图生图/旗袍美女qwen2512_2033779880537624578.json、图片生成/图生图/日常穿搭Qwen2512真实人像质感御姐美女_2040711683684962306.json…）
 
 - **类型**：Image To Image
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：15
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,40 +34,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 16/17 个有
-- `EmptyQwenImageLayeredLatentImage` —— 14/17 个有
-- `JWInteger` —— 14/17 个有
-- `LatentCutToBatch` —— 14/17 个有
-- `ModelSamplingAuraFlow` —— 14/17 个有
-- `PreviewImage` —— 9/17 个有
-- `ConditioningZeroOut` —— 3/17 个有
-- `EmptyFlux2LatentImage` —— 3/17 个有
-- `GetImageSize+` —— 1/17 个有
-- `HAIGC_SaveImagesToZip` —— 1/17 个有
-- `Image Comparer (rgthree)` —— 1/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/17 个有
+- `LoraLoaderModelOnly` —— 14/15 个有
+- `scale` —— 13/15 个有
+- `ModelSamplingAuraFlow` —— 12/15 个有
+- `Note _O` —— 12/15 个有
+- `BiRefNet_Loader_LG` —— 1/15 个有
+- `DF_Get_image_size` —— 1/15 个有
+- `Image Comparer (rgthree)` —— 1/15 个有
+- `ImageResizeKJv2` —— 1/15 个有
+- `RepeatLatentBatch` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 20 | 17 | 65% |
-| Prompt 约束强度(CFG) | 2.5 | 0.5 - 2.5 | 17 | 67% |
-| 采样算法 | euler | - | 17 | 100% |
-| 调度器 | simple | - | 17 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 采样步数 | 4 | 4 - 20 | 15 | 26% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 15 | 66% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | beta | - | 15 | 87% |
+| 重绘幅度 | 0.5 | 0.1 - 1 | 15 | 67% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 20，17 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 0.5 - 2.5，17 个样本
-- 采样算法 最常用 euler，17 个样本，一致性 100%
-- 调度器 最常用 simple，17 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 0.5，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 采样步数 中位数 4，观测区间 4 - 20，15 个样本，取值分散，一致性仅 26%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，15 个样本
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 beta，15 个样本，一致性 87%
+- 重绘幅度 中位数 0.5，观测区间 0.1 - 1，15 个样本
+- 高发问题（13/15 个样本）：Steps较低可能导致细节不足

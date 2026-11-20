@@ -1,75 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_unet_50
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.886667
-common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: moderate
+coverage: 0.853273
+common_nodes: [BasicGuider, CLIPLoader, DF_Text_Box, GH_CropRestore, GH_MaskCropV2, Get Image Size, GetNode, GoohaiAnyExists, GoohaiDisplayAny, GulfSeaImageMergeMask, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ColorImage, LoraLoaderModelOnly, ManualSigmas, QwenImagePromptOptimizer, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader, easy ifElse, 图像缩放V2_孤海, 图像缩放范围孤海, 忽略多组孤海]
+problems: []
 missing: []
-members: [图片生成/图生图/qwen视角控制_2055330832017043457.json, 图片生成/图生图/▶Qwen Edit 2511多角度视角控制_2086719564179656705.json, 图片生成/图生图/一键换装，电商福音，复杂场景超高一致性_2054931613225635841.json, 图片生成/图生图/一键换装，电商福音，复杂场景超高一致性_2055107672713768961.json, 图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2078040033306693634.json, 图片生成/图生图/一键换装：完美替换衣物，超高一致性保持（超低费用）_2068049220736733186.json, 图片生成/图生图/人物光影修图_2049318930015068162.json, 图片生成/图生图/多角度视角控制_2017241324424011778.json, 图片生成/图生图/没啥用的 qwen 多角度视角控制_2040817872036962306.json, 图片生成/文生图/Qwen Edit 2511多角度视角控制_2073300184922148866.json, 平台全量/qwen-edit-2511-模特换衣服_2041898713563537409.json, 平台全量/转角度Qwen Edit 2511_2010646880362962945.json]
+members: [图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json, 图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json, 图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_2113462305160777729.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113773453261234178.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113810483525541889.json, 图片生成/图生图/千问2.1 精准删除和定制重绘 GH优化版 像素无漂移_2113107421391581185.json, 图片生成/图生图/图像删除和定制重绘 Qwen2.1_2114328793446965249.json, 图片生成/图生图/局部重绘丨Qwen-Image 2.1丨物体移除_2113145473245736961.json, 图片生成/图生图/老孙AI Qwen 2.1 移除 _ 局部重绘_2113088082609266690.json, 数字人/数字人/Qwen2.1图像删除与定制重绘｜指定区域清除随心再创作_2114682241522692098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_50
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/qwen视角控制_2055330832017043457.json、图片生成/图生图/▶Qwen Edit 2511多角度视角控制_2086719564179656705.json、图片生成/图生图/一键换装，电商福音，复杂场景超高一致性_2054931613225635841.json、图片生成/图生图/一键换装，电商福音，复杂场景超高一致性_2055107672713768961.json、图片生成/图生图/一键换装：完美替换衣物，超高一致性保持。_2078040033306693634.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json、图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json、图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json、图片生成/图生图/Qwen_2.1_移除_局部重绘_2113462305160777729.json、图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113773453261234178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `DF_Text_Box`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
+- `Get Image Size`
+- `GetNode`
+- `GoohaiAnyExists`
+- `GoohaiDisplayAny`
+- `GulfSeaImageMergeMask`
 - `Image Comparer (rgthree)`
-- `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
+- `LayerUtility: ColorImage`
 - `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
+- `ManualSigmas`
+- `QwenImagePromptOptimizer`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `SetNode`
+- `TextEncodeQwenImage21GH`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
+- `图像缩放V2_孤海`
+- `图像缩放范围孤海`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CropWithPadInfo` —— 11/12 个有
-- `QwenEditOutputExtractor` —— 11/12 个有
-- `PrimitiveStringMultiline` —— 6/12 个有
-- `QwenEditAdaptiveLongestEdge` —— 6/12 个有
-- `QwenMultiangleCameraNode` —— 6/12 个有
-- `easy showAnything` —— 5/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
-- `JjkText` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `UnetLoaderGGUF` —— 1/12 个有
-- `easy promptList` —— 1/12 个有
+- `GoohaiUniversalSlider` —— 10/11 个有
+- `LoadImageGoohai` —— 10/11 个有
+- `PreviewImage` —— 7/11 个有
+- `孤海注释` —— 7/11 个有
+- `LoadImage` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
+- `MaskPreview` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `INTConstant` —— 1/11 个有
+- `easy getNode` —— 1/11 个有
+- `easy setNode` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 12 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | beta57 | - | 12 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，12 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 beta57，12 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（12/12 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

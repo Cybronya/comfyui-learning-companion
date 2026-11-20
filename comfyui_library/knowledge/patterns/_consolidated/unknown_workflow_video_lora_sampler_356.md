@@ -1,77 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_356
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.572875
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.853143
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [平台全量/SeC整合版：2.WanAnimate+Sec 一键换主体_1985858678060457986.json, 平台全量/SeC整合版：4.WanAnimate 主体替换(自动)2.0_1986448672231718914.json, 平台全量/SeC整合版：5.WanAnimate 姿势参考2.0_1986448792906039298.json, 平台全量/（KJ版）姿势参考WanAnimate V2_1974868952310484993.json, 数字人/数字人/SeC整合版：1.WanAnimate+Sec 一键换头_1985857562799218689.json, 数字人/数字人/姿势迁移V2_2002454631311634433.json, 视频生成/图生视频/24号特工：快速版舞蹈视频人物替换+节约RH币+节约时间+性价比拉满_2030543201047678977.json, 视频生成/图生视频/Wan-Animate_V2-动作迁移自动版_1975030930718986242.json]
+members: [视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json, 视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json, 视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json, 视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json, 视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2073463668316323840.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2076823460927598594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_356
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/SeC整合版：2.WanAnimate+Sec 一键换主体_1985858678060457986.json、平台全量/SeC整合版：4.WanAnimate 主体替换(自动)2.0_1986448672231718914.json、平台全量/SeC整合版：5.WanAnimate 姿势参考2.0_1986448792906039298.json、平台全量/（KJ版）姿势参考WanAnimate V2_1974868952310484993.json、数字人/数字人/SeC整合版：1.WanAnimate+Sec 一键换头_1985857562799218689.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json、视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json、视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json、视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json、视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAudio`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `WanVideoTorchCompileSettings` —— 7/8 个有
-- `ImpactInt` —— 6/8 个有
-- `Int` —— 6/8 个有
-- `PreviewImage` —— 6/8 个有
-- `WanVideoSetBlockSwap` —— 6/8 个有
-- `BlockifyMask` —— 5/8 个有
-- `DrawMaskOnImage` —— 5/8 个有
-- `CLIPLoader` —— 4/8 个有
-- `CLIPTextEncode` —— 4/8 个有
-- `GrowMaskWithBlur` —— 4/8 个有
-- `MathExpression|pysssss` —— 4/8 个有
-- `Textbox` —— 4/8 个有
-- `WanVideoTextEmbedBridge` —— 4/8 个有
-- `WanVideoTextEncodeCached` —— 4/8 个有
-- `DownloadAndLoadSAM2Model` —— 3/8 个有
-- `GetImageSizeAndCount` —— 3/8 个有
-- `Sam2Segmentation` —— 3/8 个有
-- `GrowMask` —— 2/8 个有
-- `INTConstant` —— 2/8 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 2/8 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 2/8 个有
-- `MaskToImage` —— 2/8 个有
-- `SeCModelLoader` —— 2/8 个有
-- `SeCVideoSegmentation` —— 2/8 个有
-- `Text` —— 1/8 个有
+- `ComfySwitchNode` —— 6/7 个有
+- `PrimitiveBoolean` —— 6/7 个有
+- `LTXDirectorGuide` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `GuHaiAutoImageSplit` —— 4/7 个有
+- `LTXDirector` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `CS-LTXGridDirector` —— 3/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `PreviewAny` —— 3/7 个有
+- `RHHiddenNodes` —— 3/7 个有
+- `RH_LLMAPI_Pro_Node` —— 3/7 个有
+- `YusuLTXDirectorGuide` —— 2/7 个有
+- `孤海注释` —— 2/7 个有
+- `LTXVChunkFeedForward` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_395
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8498
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleToTotalPixels, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8718
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/SeedVR2.5视频超分｜高清放大视频生视频画质增强_2089400018850639874.json, 图片生成/图生图/SeedVR2视频超分新升级｜2K分辨率放大一键出片v1_2107641334705250306.json, 图片生成/图生图/宫格图故事板分割｜高清放大图生图一键拆分处理_2092901712502812674.json, 平台全量/Stargazing星绘视频修复｜最强高清超分放大处理_2093738774541987842.json, 视频生成/文生视频/SeedVR2.5视频高清放大流｜老片新看画质逆袭_2098771107917688833.json]
+members: [图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json, 图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json, 图片生成/图生图/全能图片Pro图像编辑 单张低至两毛经济实惠_2098279022848466946.json, 图片生成/图生图/全能图片Pro版图生图处理生成工作流工具包_2101045975958777857.json, 图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_395
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2.5视频超分｜高清放大视频生视频画质增强_2089400018850639874.json、图片生成/图生图/SeedVR2视频超分新升级｜2K分辨率放大一键出片v1_2107641334705250306.json、图片生成/图生图/宫格图故事板分割｜高清放大图生图一键拆分处理_2092901712502812674.json、平台全量/Stargazing星绘视频修复｜最强高清超分放大处理_2093738774541987842.json、视频生成/文生视频/SeedVR2.5视频高清放大流｜老片新看画质逆袭_2098771107917688833.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json、图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json、图片生成/图生图/全能图片Pro图像编辑 单张低至两毛经济实惠_2098279022848466946.json、图片生成/图生图/全能图片Pro版图生图处理生成工作流工具包_2101045975958777857.json、图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -26,10 +26,11 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -37,38 +38,28 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `INTConstant` —— 3/5 个有
-- `SeedVR2` —— 3/5 个有
-- `SeedVR2BlockSwap` —— 3/5 个有
-- `SeedVR2ExtraArgs` —— 3/5 个有
-- `SeedVR2LoadDiTModel` —— 3/5 个有
-- `SeedVR2LoadVAEModel` —— 3/5 个有
-- `SeedVR2VideoUpscaler` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `GuHaiAutoImageSplit` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `LamSaveVideo` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `VHS_VideoInfoSource` —— 1/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/5 个有
+- `RelayBanana2ImageGenerator` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
+- `MmuuaiGroupBypass` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
 | 采样步数 | 4 | 4 - 4 | 5 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
 | 采样算法 | er_sde | - | 5 | 100% |
 | 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
@@ -78,11 +69,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，5 个样本，一致性 100%
 - 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

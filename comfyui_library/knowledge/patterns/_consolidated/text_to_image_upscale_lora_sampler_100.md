@@ -3,92 +3,91 @@ name: text_to_image_upscale_lora_sampler_100
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.896667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GrowMask, Image Comparer (rgthree), ImageUpscaleWithModel, InvertMask, JjkText, JoinImageWithAlpha, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, Upscale Model Loader, VAEDecode, VAELoader, YUAN_TXTConvertAny, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.957
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Image Crop Face, Image Paste Face, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, KSamplerSelect, LoadImage, LoraLoader, MaraScottTextConcatenate_v1, MaskToSEGS, ModelSamplingFlux, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SDXLAspectRatioSelector, SEGSPreview, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Text _O, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageScaleDownToSize]
+problems: []
 missing: []
-members: [图片生成/图生图/图片去红工作流｜图生图色偏修复｜一键还原真实色彩_2104791228796723202.json, 图片生成/图生图/扩图工作流 画布延展精准控制一键放大高效出图_2104998044063326209.json, 图片生成/图生图/扩图工作流｜图生图画面延展｜小图秒变大场景构图_2104780384641830913.json]
+members: [图片生成/图生图/自然随手拍风格 全能图片G4o 同款_1920307960541544449.json, 图片生成/图生图/自然随手拍风格_1920316909131337730.json, 图片生成/图生图/😍全能图片G4o随手自拍的你🌻_1921024423321866241.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_100
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图片去红工作流｜图生图色偏修复｜一键还原真实色彩_2104791228796723202.json、图片生成/图生图/扩图工作流 画布延展精准控制一键放大高效出图_2104998044063326209.json、图片生成/图生图/扩图工作流｜图生图画面延展｜小图秒变大场景构图_2104780384641830913.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/自然随手拍风格 全能图片G4o 同款_1920307960541544449.json、图片生成/图生图/自然随手拍风格_1920316909131337730.json、图片生成/图生图/😍全能图片G4o随手自拍的你🌻_1921024423321866241.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `GrowMask`
-- `Image Comparer (rgthree)`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `Image Crop Face`
+- `Image Paste Face`
+- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `InvertMask`
-- `JjkText`
-- `JoinImageWithAlpha`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
+- `LoraLoader`
+- `MaraScottTextConcatenate_v1`
+- `MaskToSEGS`
+- `ModelSamplingFlux`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SDXLAspectRatioSelector`
+- `SEGSPreview`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `Text _O`
 - `UNETLoader`
-- `Upscale Model Loader`
+- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/3 个有
-- `GrowMaskWithBlur` —— 2/3 个有
-- `InpaintModelConditioning` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `LayerUtility: ExtendCanvasV2` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `TextEncodeQwenImageEditPlus` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `LatentBlend` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `ReferenceLatent` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `easy cleanGpuUsed`
+- `easy imageScaleDownToSize`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
+| 宽度 | 832 | 832 - 832 | 3 | 100% |
+| 高度 | 1216 | 1216 - 1216 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
 | 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 重绘幅度 | 0.55 | 0.55 - 0.55 | 3 | 100% |
+| LoRA 模型强度 | 0.9 | 0.9 - 0.9 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 宽度 中位数 832，观测区间 832 - 832，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1216，观测区间 1216 - 1216，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
 - 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 重绘幅度 中位数 0.55，观测区间 0.55 - 0.55，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.9，观测区间 0.9 - 0.9，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

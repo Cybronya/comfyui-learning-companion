@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_vae_56
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.687889
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.797
+common_nodes: [DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageFromBatch+, ImageMirror, ImageRepeat, ImageResizeKJ, ImpactSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, OpenposePreprocessor, VHS_LoadVideo, VHS_MergeImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX+LightX2V RANK64首尾帧特别版V1_1945374427557318658.json, 视频生成/图生视频/FusionX-VACE最强首尾帧_1934239339964493825.json, 视频生成/图生视频/FusionX双倍加速高细节最强首尾帧V1_1933577534904651778.json, 视频生成/图生视频/FusionX视频首尾帧稳定可靠_1939625951204655105.json, 视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json, 视频生成/图生视频/Vace 14B非对称逆推理尾帧参考FLF2V图生视频V1_1924821785194524673.json, 视频生成/图生视频/Vace 14B首尾帧工作流稳定修正版V2_1922710943292166146.json, 视频生成/图生视频/【首尾帧】FusionX 加速首尾帧图生视频_1933853840162607105.json, 视频生成/图生视频/通义万相视频FusionX模型一统江湖（首尾帧）_1934905346538283010.json]
+members: [视频生成/图生视频/FusionX controlnet控制稳定双倍加速版视频转绘_1933785528938450945.json, 视频生成/图生视频/FusionX+VACE深度_姿势控制稳定双倍加速版视频转绘V1_1933557560941395970.json, 视频生成/图生视频/VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254456322.json, 视频生成/图生视频/VACE 14B图像参考双重引导姿势及深度控制视频生视频V2_1922710757258006529.json, 视频生成/图生视频/VACE图像参考双重引导姿势及深度控制视频生视频V1_1907443729060532226.json, 视频生成/图生视频/Wan2.1 FusionX-VACE动作迁移加速工作流_1933759507254435841.json, 视频生成/图生视频/Wan2.1-FusionX-VACE动作迁移_1933708885247352833.json, 视频生成/图生视频/视频动作迁移｜高清 720P｜深度+open pose 控制_1937848032371064834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_56
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/FusionX+LightX2V RANK64首尾帧特别版V1_1945374427557318658.json、视频生成/图生视频/FusionX-VACE最强首尾帧_1934239339964493825.json、视频生成/图生视频/FusionX双倍加速高细节最强首尾帧V1_1933577534904651778.json、视频生成/图生视频/FusionX视频首尾帧稳定可靠_1939625951204655105.json、视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX controlnet控制稳定双倍加速版视频转绘_1933785528938450945.json、视频生成/图生视频/FusionX+VACE深度_姿势控制稳定双倍加速版视频转绘V1_1933557560941395970.json、视频生成/图生视频/VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254456322.json、视频生成/图生视频/VACE 14B图像参考双重引导姿势及深度控制视频生视频V2_1922710757258006529.json、视频生成/图生视频/VACE图像参考双重引导姿势及深度控制视频生视频V1_1907443729060532226.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
+全部 8 个 workflow 都包含：
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `ImageFromBatch+`
+- `ImageMirror`
+- `ImageRepeat`
 - `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `OpenposePreprocessor`
+- `VHS_LoadVideo`
+- `VHS_MergeImages`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 6/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/9 个有
-- `Note Plus (mtb)` —— 5/9 个有
-- `WanVideoTeaCache` —— 5/9 个有
-- `MathExpression|pysssss` —— 4/9 个有
-- `CR Prompt Text` —— 3/9 个有
-- `CR Text` —— 3/9 个有
-- `PDIMAGE_LongerSize` —— 3/9 个有
-- `WanVideoEnhanceAVideo` —— 3/9 个有
-- `WanVideoTorchCompileSettings` —— 3/9 个有
-- `WanVideoVACEModelSelect` —— 2/9 个有
-- `Image Blank` —— 1/9 个有
-- `LayerMask: MaskPreview` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `WanVideoLoraSelect` —— 1/9 个有
-- `easy batchAnything` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `PreviewImage` —— 7/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `WanVideoTeaCache` —— 6/8 个有
+- `DF_Integer` —— 5/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `Note Plus (mtb)` —— 4/8 个有
+- `WanVideoVACEModelSelect` —— 3/8 个有
+- `Blend` —— 2/8 个有
+- `Note _O` —— 2/8 个有
+- `WanVideoLoraSelect` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageBlend` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

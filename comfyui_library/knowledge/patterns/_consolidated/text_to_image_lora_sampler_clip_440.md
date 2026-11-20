@@ -2,98 +2,83 @@
 name: text_to_image_lora_sampler_clip_440
 type: Text To Image
 frequency: 4
-level: weak
-coverage: 0.56075
-common_nodes: [Any Switch (rgthree), CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, INTConstant, JDCN_StringToList, KSampler, LayerColor: Brightness & Contrast, LayerFilter: AddGrain, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveBoolean, ProcessString, SaveImage, SetNode, StringConcatenate, VAEDecode, ZFImageReferenceAnalyzer, ZFLazyPromptSwitch, ZFPromptDirector, ZFPromptDirectorLocalLLM, ZFPromptDirectorMultiTextSelector, ZFPromptValidator, ZFReferenceCreativeAdapter, ZFTextListMemory, easy seed, easy showAnything, llama_cpp_model_loader, llama_cpp_parameters]
+level: strong
+coverage: 0.81875
+common_nodes: [Anything Everywhere, Anything Everywhere3, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, FluxResolutionNode, JjkText, KSampler, LoraLoader, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/提示词导演台_2114637456388743170.json, 图片生成/反推提示词/提示词导演台_2115296852001251330.json, 图片生成/文生图/提示词导演台_2083560457750794241.json, 图片生成/文生图/提示词导演台分镜出图，文生图创意设定一步到位_2110784213380329473.json]
+members: [图片生成/图生图/Qwen-图生图-支持文案输入-极速版_1960977962109743106.json, 图片生成/图生图/自己用：以图生图-Qwen-Edit_1965220654645694466.json, 图片生成/文生图/Qwen-Edit-以图生图_1965105754103533569.json, 图片生成/文生图/Qwen-文生图（极速版）_1960945431024996353.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_440
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/提示词导演台_2114637456388743170.json、图片生成/反推提示词/提示词导演台_2115296852001251330.json、图片生成/文生图/提示词导演台_2083560457750794241.json、图片生成/文生图/提示词导演台分镜出图，文生图创意设定一步到位_2110784213380329473.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-图生图-支持文案输入-极速版_1960977962109743106.json、图片生成/图生图/自己用：以图生图-Qwen-Edit_1965220654645694466.json、图片生成/文生图/Qwen-Edit-以图生图_1965105754103533569.json、图片生成/文生图/Qwen-文生图（极速版）_1960945431024996353.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
+- `Anything Everywhere`
+- `Anything Everywhere3`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `ComfySwitchNode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `JDCN_StringToList`
+- `FluxResolutionNode`
+- `JjkText`
 - `KSampler`
-- `LayerColor: Brightness & Contrast`
-- `LayerFilter: AddGrain`
-- `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `ProcessString`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
+- `UNETLoader`
 - `VAEDecode`
-- `ZFImageReferenceAnalyzer`
-- `ZFLazyPromptSwitch`
-- `ZFPromptDirector`
-- `ZFPromptDirectorLocalLLM`
-- `ZFPromptDirectorMultiTextSelector`
-- `ZFPromptValidator`
-- `ZFReferenceCreativeAdapter`
-- `ZFTextListMemory`
-- `easy seed`
-- `easy showAnything`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `2a91f281-c31b-48ff-aed3-2aa987de1461` —— 1/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `UNETLoader` —— 1/4 个有
-- `VAELoader` —— 1/4 个有
-- `solarL_SaveImagesToZip` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `RH_LLMAPI_NODE` —— 3/4 个有
+- `Int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
+- `easy textSwitch` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 80 - 1024 | 4 | 48% |
-| 高度 | 1024 | 80 - 1024 | 4 | 48% |
-| 采样步数 | 8 | 4 - 8 | 4 | 75% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 4 | 19% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1.01 | 1.01 - 1.01 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 512 | 512 - 512 | 4 | 100% |
+| 高度 | 512 | 512 - 512 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 80 - 1024，4 个样本，取值分散，一致性仅 48%
-- 高度 中位数 1024，观测区间 80 - 1024，4 个样本，取值分散，一致性仅 48%
-- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，4 个样本，取值分散，一致性仅 19%
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1.01，观测区间 1.01 - 1.01，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

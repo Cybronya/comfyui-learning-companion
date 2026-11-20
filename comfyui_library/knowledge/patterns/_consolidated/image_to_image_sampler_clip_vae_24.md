@@ -3,17 +3,17 @@ name: image_to_image_sampler_clip_vae_24
 type: Image To Image
 frequency: 9
 level: strong
-coverage: 0.918333
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.919
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Kontext单姿势图直接出图_1944080635831128065.json, 图片生成/图生图/Kontext去水印史上最强去除水印——水印移除King（watermark killer）_1941296156943216642.json, 图片生成/图生图/Kontext图像编辑工作流_1986390332885630978.json, 图片生成/图生图/Kontext老照片修复上色（高度还原，一键成片）极速版_2034265635953315841.json, 图片生成/图生图/kontext一句话编辑_2009592730074222594.json, 图片生成/图生图/kontext老照片修复工作流_2079953891206189058.json, 图片生成/图生图/一致性dev版本_1945764160510554113.json, 图片生成/图生图/万物一键转换——亚克力立架_1946941574536421378.json, 图片生成/图生图/万物一键转换——绒毛玩偶_1946954844869681154.json]
+members: [图片生成/图生图/kontext-gguf版单图编辑（真人转3D，真人转动漫，动漫转真人）_1989474249289158658.json, 图片生成/图生图/kontext单图工作流_1944956155041075201.json, 图片生成/图生图/kontext单图工作流_1971121957414543362.json, 图片生成/图生图/kontext单图转绘-免费-速度快-效果好_1963527482023694337.json, 图片生成/图生图/kontext去水印_1958369496044093441.json, 图片生成/图生图/kontext商业级印花提取工作流V1版本_1945098408367673345.json, 图片生成/图生图/kontext图生图(双图)故事绘本_2010263590753800193.json, 图片生成/图生图/kontext皮肤纹理真实化_1942120587915587585.json, 图片生成/图生图/工作流基础系列13-FLUX.1-Kontext编辑工作流_2012813919022227458.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_24
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Kontext单姿势图直接出图_1944080635831128065.json、图片生成/图生图/Kontext去水印史上最强去除水印——水印移除King（watermark killer）_1941296156943216642.json、图片生成/图生图/Kontext图像编辑工作流_1986390332885630978.json、图片生成/图生图/Kontext老照片修复上色（高度还原，一键成片）极速版_2034265635953315841.json、图片生成/图生图/kontext一句话编辑_2009592730074222594.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/kontext-gguf版单图编辑（真人转3D，真人转动漫，动漫转真人）_1989474249289158658.json、图片生成/图生图/kontext单图工作流_1944956155041075201.json、图片生成/图生图/kontext单图工作流_1971121957414543362.json、图片生成/图生图/kontext单图转绘-免费-速度快-效果好_1963527482023694337.json、图片生成/图生图/kontext去水印_1958369496044093441.json…）
 
 - **类型**：Image To Image
 - **样本数**：9
@@ -25,7 +25,6 @@ source: knowledge_consolidation
 全部 9 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `FluxGuidance`
 - `KSampler`
 - `LoadImage`
@@ -36,28 +35,30 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 8/9 个有
-- `UNETLoader` —— 7/9 个有
-- `Image Comparer (rgthree)` —— 6/9 个有
-- `LoraLoaderModelOnly` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
-- `RepeatLatentBatch` —— 4/9 个有
-- `DeepTranslatorTextNode` —— 3/9 个有
-- `NunchakuFluxDiTLoader` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `easy imageRemBg` —— 3/9 个有
-- `Fast Bypasser (rgthree)` —— 2/9 个有
-- `ImpactInt` —— 2/9 个有
-- `easy imageScaleDownToSize` —— 2/9 个有
-- `AIO_Preprocessor` —— 1/9 个有
-- `ImpactSwitch` —— 1/9 个有
-- `NunchakuFluxLoraLoader` —— 1/9 个有
+- `DualCLIPLoader` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `FluxKontextImageScale` —— 6/9 个有
+- `EmptySD3LatentImage` —— 3/9 个有
+- `ImageStitch` —— 3/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `UnetLoaderGGUF` —— 3/9 个有
+- `ImageScaleToTotalPixels` —— 2/9 个有
+- `DualCLIPLoaderGGUF` —— 1/9 个有
+- `ETN_Translate` —— 1/9 个有
+- `GetImageSize+` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
+- `LayerUtility: GetImageSize` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `Seed` —— 1/9 个有
+- `Seed (rgthree)` —— 1/9 个有
+- `easy promptList` —— 1/9 个有
+- `workflow>UpSpeed` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 9 | 90% |
+| 采样步数 | 20 | 8 - 20 | 9 | 80% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
 | 采样算法 | euler | - | 9 | 100% |
 | 调度器 | simple | - | 9 | 100% |
@@ -65,11 +66,13 @@ source: knowledge_consolidation
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，9 个样本，取值集中（一致性 90%）
+- 采样步数 中位数 20，观测区间 8 - 20，9 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，9 个样本，一致性 100%
 - 调度器 最常用 simple，9 个样本，一致性 100%

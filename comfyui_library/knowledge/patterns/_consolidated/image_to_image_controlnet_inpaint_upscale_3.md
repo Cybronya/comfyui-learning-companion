@@ -1,102 +1,87 @@
 ---
 name: image_to_image_controlnet_inpaint_upscale_3
 type: Image To Image
-frequency: 5
+frequency: 3
 level: strong
-coverage: 0.855
-common_nodes: [ApplyInstantID, ApplyPulid, CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, ControlNetLoader, CropFaces, DetailerForEach, DetectFaces, DifferentialDiffusion, FaceAnalysisModels, FaceBoundingBox, Florence2ModelLoader, Florence2Run, GrowMaskWithBlur, Image Comparer (rgthree), Image Crop Face, ImageCompositeMasked, ImageListToImageBatch, ImageResizeKJ, ImageScaleBy, ImageUpscaleWithModel, ImpactMakeImageList, InpaintModelConditioning, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LayerMask: PersonMaskUltra V2, LoadImage, LoraLoader, MaskPreview+, MaskToSEGS, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, PreviewImage, PulidFluxEvaClipLoader, PulidFluxFaceDetector, PulidFluxInsightFaceLoader, PulidFluxOptions, PulidInsightFaceLoader, PulidModelLoader, RHHiddenNodes, SaveImage, ShowText|pysssss, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, WarpFacesBack]
-problems: []
+coverage: 0.825
+common_nodes: [AIO_Preprocessor, BOPBTL_LoadScratchMaskModel, BOPBTL_ScratchMask, CFGNorm, CLIPLoader, CheckpointLoaderSimple, ConditioningZeroOut, FaceRestoreCFWithModel, FaceRestoreModelLoader, INPAINT_InpaintWithModel, INPAINT_LoadInpaintModel, ImageScaleToTotalPixels, KSampler, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Dilate Region, Mask Invert, MaskComposite, MaskPreview, Masks Add, ModelPatchLoader, PreviewAny, PreviewImage, QwenImageDiffsynthControlnet, RemapMaskRange, ResizeMask, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetLatentNoiseMask, TextEncodeQwenImageEditPlus, TextGenerate, VAEDecode, VAEEncode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/旅拍中国 1 张版本_1932314680440909825.json, 平台全量/旅拍中国_1930656665035845633.json, 平台全量/旅拍中国（无 nacha）_1939889769537310722.json, 数字人/数字人/旅拍中国0701（无问题 02）_1939947232085118977.json, 数字人/数字人/旅拍中国0701（无问题）_1939895180897984514.json]
+members: [图片生成/图生图/全链路老照片智能修复工作流_去霉去折痕_+_面部精修_+4K放大_2081937062894333953.json, 图片生成/图生图/全链路老照片智能修复工作流_去霉去折痕_+_面部精修_+4K放大_2082013570501529602.json, 图片生成/图生图/老照片智能修复工作流_去霉去折痕_+_面部精修_+_4K_放大_2083565985545670658.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/旅拍中国 1 张版本_1932314680440909825.json、平台全量/旅拍中国_1930656665035845633.json、平台全量/旅拍中国（无 nacha）_1939889769537310722.json、数字人/数字人/旅拍中国0701（无问题 02）_1939947232085118977.json、数字人/数字人/旅拍中国0701（无问题）_1939895180897984514.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全链路老照片智能修复工作流_去霉去折痕_+_面部精修_+4K放大_2081937062894333953.json、图片生成/图生图/全链路老照片智能修复工作流_去霉去折痕_+_面部精修_+4K放大_2082013570501529602.json、图片生成/图生图/老照片智能修复工作流_去霉去折痕_+_面部精修_+_4K_放大_2083565985545670658.json）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ApplyInstantID`
-- `ApplyPulid`
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `BOPBTL_LoadScratchMaskModel`
+- `BOPBTL_ScratchMask`
+- `CFGNorm`
+- `CLIPLoader`
 - `CheckpointLoaderSimple`
-- `ColorMatch`
-- `ControlNetLoader`
-- `CropFaces`
-- `DetailerForEach`
-- `DetectFaces`
-- `DifferentialDiffusion`
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `Image Crop Face`
-- `ImageCompositeMasked`
-- `ImageListToImageBatch`
-- `ImageResizeKJ`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `ImpactMakeImageList`
-- `InpaintModelConditioning`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
+- `ConditioningZeroOut`
+- `FaceRestoreCFWithModel`
+- `FaceRestoreModelLoader`
+- `INPAINT_InpaintWithModel`
+- `INPAINT_LoadInpaintModel`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `LayerMask: PersonMaskUltra V2`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `MaskPreview+`
-- `MaskToSEGS`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
+- `Mask Dilate Region`
+- `Mask Invert`
+- `MaskComposite`
+- `MaskPreview`
+- `Masks Add`
+- `ModelPatchLoader`
+- `PreviewAny`
 - `PreviewImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxFaceDetector`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxOptions`
-- `PulidInsightFaceLoader`
-- `PulidModelLoader`
-- `RHHiddenNodes`
+- `QwenImageDiffsynthControlnet`
+- `RemapMaskRange`
+- `ResizeMask`
 - `SaveImage`
-- `ShowText|pysssss`
-- `UpscaleModelLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SetLatentNoiseMask`
+- `TextEncodeQwenImageEditPlus`
+- `TextGenerate`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
-- `VAELoader`
-- `WarpFacesBack`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 11 | 11 - 11 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler_ancestral | - | 5 | 100% |
-| 调度器 | sgm_uniform | - | 5 | 100% |
-| 重绘幅度 | 0.55 | 0.55 - 0.55 | 5 | 100% |
-| LoRA 模型强度 | 0.65 | 0.65 - 0.65 | 5 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 6 | 6 - 6 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 0.85 | 0.85 - 0.85 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 11，观测区间 11 - 11，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，5 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
-- 重绘幅度 中位数 0.55，观测区间 0.55 - 0.55，5 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.65，观测区间 0.65 - 0.65，5 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.85，观测区间 0.85 - 0.85，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

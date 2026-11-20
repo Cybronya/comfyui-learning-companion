@@ -1,117 +1,86 @@
 ---
 name: text_to_image_lora_sampler_clip_432
 type: Text To Image
-frequency: 5
-level: strong
-coverage: 0.6518
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip, 孤海注释]
+frequency: 4
+level: moderate
+coverage: 0.81425
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DepthAnythingV2Preprocessor, EmptyLatentImage, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LoadImage, PreviewAny, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax R2V多参考图生视频 参考音频视频混合生成处理工具_2112964584029118465.json, 视频生成/图生视频/MiniMax h3开源加速版 海螺多参文生视频图生视频音频参考_2085303974785273857.json, 视频生成/图生视频/MiniMax多参考生成视频R2V图生视频处理工具_2102478493312442370.json, 视频生成/图生视频/MiniMax视频续写多帧插入 latent保存图生视频处理工具_2112962732864659458.json, 视频生成/图生视频/Minimax多帧插入视频续写，视频生视频拉长片段神器_2110489536747884545.json]
+members: [图片生成/图生图/Krea2-深度控制图片反推生图_2077206480499077122.json, 图片生成/图生图/krea2_深度控制姿势图生图（反推+Cosplay人像lora）_2081293171086151681.json, 图片生成/文生图/Krea2-深度控制文生图_2077200610818088962.json, 图片生成/文生图/Krea2-深度控制文生图_2078085516737736705.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_432
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax R2V多参考图生视频 参考音频视频混合生成处理工具_2112964584029118465.json、视频生成/图生视频/MiniMax h3开源加速版 海螺多参文生视频图生视频音频参考_2085303974785273857.json、视频生成/图生视频/MiniMax多参考生成视频R2V图生视频处理工具_2102478493312442370.json、视频生成/图生视频/MiniMax视频续写多帧插入 latent保存图生视频处理工具_2112962732864659458.json、视频生成/图生视频/Minimax多帧插入视频续写，视频生视频拉长片段神器_2110489536747884545.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Krea2-深度控制图片反推生图_2077206480499077122.json、图片生成/图生图/krea2_深度控制姿势图生图（反推+Cosplay人像lora）_2081293171086151681.json、图片生成/文生图/Krea2-深度控制文生图_2077200610818088962.json、图片生成/文生图/Krea2-深度控制文生图_2078085516737736705.json）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `ConditioningZeroOut`
+- `DepthAnythingV2Preprocessor`
 - `EmptyLatentImage`
-- `GetNode`
-- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
+- `Krea2ControlApply`
+- `Krea2ControlImageEncode`
+- `Krea2ControlLoRALoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
+- `PreviewAny`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/5 个有
-- `PrimitiveBoolean` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `AudioConcat` —— 3/5 个有
-- `TrimAudioDuration` —— 3/5 个有
-- `easy minimaxH3AudioLock` —— 3/5 个有
-- `AudioInfo` —— 2/5 个有
-- `ColorMatchV2` —— 2/5 个有
-- `EmptyAudio` —— 2/5 个有
-- `GetImageRangeFromBatch` —— 2/5 个有
-- `INTConstant` —— 2/5 个有
-- `Image Batch` —— 2/5 个有
-- `ImageAddNoise` —— 2/5 个有
-- `ImageFromBatch` —— 2/5 个有
-- `ImageScale` —— 2/5 个有
-- `MiniMaxH3AddGuide` —— 2/5 个有
-- `MiniMaxH3SaveLatent` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `ModelAttentionBackend` —— 2/5 个有
-- `AnyIsEmpty` —— 1/5 个有
-- `AudioCrop` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `LLAIDownloadVideo` —— 1/5 个有
-- `MiniMaxH3LoadLatent` —— 1/5 个有
-- `MiniMaxH3LoopTrim` —— 1/5 个有
-- `MiniMaxH3VideoExtender` —— 1/5 个有
-- `MiniMaxH3VideoMerge` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `ShowAnything|Mie` —— 1/5 个有
-- `VHS_VideoInfo` —— 1/5 个有
+- `CR Text` —— 3/4 个有
+- `ConditioningKrea2Rebalance` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `DF_String_Concatenate` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `TextConcat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 512 | 512 - 1024 | 4 | 65% |
+| 高度 | 512 | 512 - 1024 | 4 | 65% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 1024，4 个样本
+- 高度 中位数 512，观测区间 512 - 1024，4 个样本
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

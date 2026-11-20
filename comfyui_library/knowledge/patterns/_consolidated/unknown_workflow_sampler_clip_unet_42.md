@@ -1,83 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_42
 type: Unknown Workflow
-frequency: 18
-level: strong
-coverage: 0.819389
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
+frequency: 17
+level: moderate
+coverage: 0.930824
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json, 视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json, 视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json, 视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json, 视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json, 视频生成/文生视频/LTX2.5文生视频-自动扩写提示词-高质量直出1K_2087739530110660610.json, 视频生成/文生视频/LTX2.5文生视频-高质量直出1K_2087559289287303170.json, 视频生成/文生视频/LTX2.5文生视频2608_2095392989672722433.json, 视频生成/文生视频/LTX2.5文生视频_2087332158187859970.json, 视频生成/文生视频/LTX2.5文生视频_2087393833666568193.json, 视频生成/文生视频/LTX2.5文生视频_2087526329527922689.json, 视频生成/文生视频/LTX2.5文生视频_2087539582974906369.json, 视频生成/文生视频/LTX2.5文生视频减油版v1_2087405116231081985.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087431365884207105.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087443856160804866.json, 视频生成/文生视频/LTX2.5文生视频（原生支持4K高清）_2087436136628187138.json, 视频生成/文生视频/LTX2.5文生视频（速度快、像素高）_2087530677137928194.json, 视频生成/文生视频/ltx2.5 - 文_图生视频 (2)_2087437692429750274.json]
+members: [图片生成/图生图/Flux2 Klein 指定人物换服装（指定替换、单人换装、服装提取）_2040768619432382465.json, 图片生成/图生图/Flux2 Klein 替换人脸（蒙版指定替换）_2040732116815716354.json, 图片生成/图生图/Flux2 Klein 最强动漫转写实真人_2042405511412326401.json, 图片生成/图生图/Flux2 Klein 美甲迁移增强流_2025502923685367809.json, 图片生成/图生图/Flux2 Klein 美甲迁移增强流_2068736740612988929.json, 图片生成/图生图/Flux2 Klein-9B 多图编辑_2012089508413579266.json, 图片生成/图生图/Flux2 Klein-9B 多图编辑_2012133102637817858.json, 图片生成/图生图/Flux2 Klein-多图编辑-9B版本_2012129280318251010.json, 图片生成/图生图/Flux2 Klein-多图编辑-9B版本_2012144093203275777.json, 图片生成/图生图/Flux2 Klein_史上最强动漫转写实真人_2016180945006628865.json, 图片生成/图生图/Flux2 Klein_史上最强动漫转写实真人_2052278231113453570.json, 图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2011999673732567042.json, 图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2012006356626186241.json, 图片生成/图生图/Flux2-Klein-9B多图编辑+极速_2016797202454159362.json, 图片生成/图生图/Flux2-Klein-9B多图编辑_极速稳定版_2012803071105048578.json, 图片生成/图生图/Flux2-Klein-9B多图编辑基本工作流极速_2012433542348808194.json, 图片生成/图生图/Flux2-Klein-9B现实风格转换_2030135458734280705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json、视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json、视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json、视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json、视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 指定人物换服装（指定替换、单人换装、服装提取）_2040768619432382465.json、图片生成/图生图/Flux2 Klein 替换人脸（蒙版指定替换）_2040732116815716354.json、图片生成/图生图/Flux2 Klein 最强动漫转写实真人_2042405511412326401.json、图片生成/图生图/Flux2 Klein 美甲迁移增强流_2025502923685367809.json、图片生成/图生图/Flux2 Klein 美甲迁移增强流_2068736740612988929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 17 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVLatentUpsampler` —— 17/18 个有
-- `LatentUpscaleModelLoader` —— 17/18 个有
-- `PrimitiveStringMultiline` —— 17/18 个有
-- `ResolutionSelector` —— 17/18 个有
-- `LTXVDualCFGGuider` —— 16/18 个有
-- `CreateVideo` —— 15/18 个有
-- `SaveVideo` —— 15/18 个有
-- `TextGenerateLTX2Prompt` —— 13/18 个有
-- `ComfySwitchNode` —— 12/18 个有
-- `PreviewAny` —— 11/18 个有
-- `PrimitiveBoolean` —— 11/18 个有
-- `easy showAnything` —— 5/18 个有
-- `LoraLoaderModelOnly` —— 4/18 个有
-- `VHS_VideoCombine` —— 4/18 个有
-- `RH_LLMAPI_Pro_Node` —— 3/18 个有
-- `CFGGuider` —— 2/18 个有
-- `CR Text` —— 2/18 个有
-- `LTXFloatToInt` —— 2/18 个有
-- `PrimitiveFloat` —— 2/18 个有
-- `CR Prompt Text` —— 1/18 个有
-- `ComfyNotNode` —— 1/18 个有
-- `FlashVSRNode` —— 1/18 个有
-- `Int` —— 1/18 个有
-- `LTXVImgToVideoInplace` —— 1/18 个有
-- `LTXVPreprocess` —— 1/18 个有
-- `LoadImage` —— 1/18 个有
-- `ResizeImageMaskNode` —— 1/18 个有
-- `ShellAgentPluginOutputText` —— 1/18 个有
-- `孤海注释` —— 1/18 个有
+- `CR Text` —— 16/17 个有
+- `ConditioningZeroOut` —— 16/17 个有
+- `LayerUtility: PurgeVRAM` —— 9/17 个有
+- `PreviewImage` —— 8/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/17 个有
+- `LoraLoaderModelOnly` —— 6/17 个有
+- `InpaintCropImproved` —— 2/17 个有
+- `InpaintStitchImproved` —— 2/17 个有
+- `DrawMaskOnImage` —— 1/17 个有
+- `Fast Groups Muter (rgthree)` —— 1/17 个有
+- `INPAINT_ExpandMask` —— 1/17 个有
+- `Image Compare (mtb)` —— 1/17 个有
+- `ImageStitch` —— 1/17 个有
+- `Text Multiline` —— 1/17 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 18 | 92% |
-| 高度 | 25 | 25 - 25 | 18 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，18 个样本，取值集中（一致性 92%）
-- 高度 中位数 25，观测区间 25 - 25，18 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

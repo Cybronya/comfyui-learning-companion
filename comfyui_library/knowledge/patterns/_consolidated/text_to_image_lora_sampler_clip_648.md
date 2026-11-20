@@ -3,58 +3,57 @@ name: text_to_image_lora_sampler_clip_648
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8955
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GoohaiAnyExists, GoohaiRouteBlocker, Image Comparer (rgthree), JjkText, KOOK_ImageCompression, KSampler, KSamplerAdvanced, LoadImage, LoadImageGoohai, LoraLoaderModelOnly, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, ResolutionSelector, RestoreQwenImage21GH, SaveImage, Seed (rgthree), ShowText|pysssss, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader, easy boolean, easy getNode, easy ifElse, easy positive, easy setNode, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9085
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CropWithPadInfo_EditUtils, EmptyLatentImage, Fast Bypasser (rgthree), FlowMatchEulerDiscreteScheduler (Custom), ImpactExecutionOrderController, JjkText, JoinStrings, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenEditOutputExtractor_EditUtils, QwenEditTextEncode_EditUtils, SamplerCustom, SaveImage, SplitSigmasDenoise, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Q2.1全能工作流v2｜文生图图生图图片处理三合一_2113901855465107457.json, 图片生成/图生图/Qwen2.1全能工作流V2 文生图多图编辑放大处理工具_2114051586149412865.json]
+members: [图片生成/图生图/动漫脸秒变真人AI感全消Z-Image文生图处理工作流_2102118058830684161.json, 图片生成/文生图/动漫脸秒变真人AI感全消｜Z-image工作流全节点注释｜反推提示词_2101889744358690817.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_648
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Q2.1全能工作流v2｜文生图图生图图片处理三合一_2113901855465107457.json、图片生成/图生图/Qwen2.1全能工作流V2 文生图多图编辑放大处理工具_2114051586149412865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/动漫脸秒变真人AI感全消Z-Image文生图处理工作流_2102118058830684161.json、图片生成/文生图/动漫脸秒变真人AI感全消｜Z-image工作流全节点注释｜反推提示词_2101889744358690817.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GoohaiAnyExists`
-- `GoohaiRouteBlocker`
-- `Image Comparer (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `FlowMatchEulerDiscreteScheduler (Custom)`
+- `ImpactExecutionOrderController`
 - `JjkText`
-- `KOOK_ImageCompression`
+- `JoinStrings`
 - `KSampler`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadImageGoohai`
 - `LoraLoaderModelOnly`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenImagePromptOptimizer`
-- `ResolutionSelector`
-- `RestoreQwenImage21GH`
+- `ModelSamplingAuraFlow`
+- `QwenEditOutputExtractor_EditUtils`
+- `QwenEditTextEncode_EditUtils`
+- `SamplerCustom`
 - `SaveImage`
-- `Seed (rgthree)`
-- `ShowText|pysssss`
-- `TextEncodeQwenImage21GH`
+- `SplitSigmasDenoise`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy boolean`
-- `easy getNode`
-- `easy ifElse`
-- `easy positive`
-- `easy setNode`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_unload_model`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
@@ -74,7 +73,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -85,5 +84,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

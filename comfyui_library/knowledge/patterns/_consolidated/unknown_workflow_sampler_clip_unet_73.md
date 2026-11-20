@@ -1,28 +1,29 @@
 ---
 name: unknown_workflow_sampler_clip_unet_73
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.903357
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.889917
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/flux1_krea_dev 对比 flux dev_1950943932404400129.json, 图片生成/文生图/flux1_krea_dev 很漂亮_1954159231169642497.json, 图片生成/文生图/flux1_krea_dev满血版出图_1951839776326537218.json, 图片生成/文生图/kontext_dev基础文生图_1952701907708088321.json, 图片生成/文生图/z-image滑块系列文生图_2057114517376688130.json, 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json, 图片生成/文生图/千问Qwen_image文生图海报_fp8_官方版26125_2015389169786294274.json, 图片生成/文生图/千问文生图快速中文直出2512_2027699940423639041.json, 图片生成/文生图/古风男工作流_2051554347225497601.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/墨宝映画人物设定_2015364874955657217.json, 图片生成/文生图/工作流基础系列16-FLUX-Krea文生图工作流_2047554003969511425.json, 图片生成/文生图/工作流基础系列4-z image turbo文生图工作流-基础向讲解此工作流_2044389426284990466.json, 图片生成/文生图/组件系列6-Z-image-turbo文生图_2058749993380569090.json]
+members: [comfyui-workflow-templates-json/image_qwen_image_2512_with_2steps_lora.json, 图片生成/反推提示词/4bjs_2052395586623684609.json, 图片生成/反推提示词/50pptmake_2051255545180499970.json, 图片生成/反推提示词/72wstzs_2052609391525933058.json, 图片生成/反推提示词/79manhuawst_2053041688037347330.json, 图片生成/图生图/Z 文生图（厨房模型）_2000808844013993985.json, 图片生成/文生图/Qwen2512文生图工作流_2026224981025234945.json, 图片生成/文生图/Y-Z-Image-turbo+lenovo lora-workflow_1995640202892861441.json, 图片生成/文生图/Y-Z-Image-turbo+zit-flow-dpo-lora-workflow_2029147456390303745.json, 图片生成/文生图/Z 手持质感 文生图_2021145496873607169.json, 图片生成/文生图/Z_image告别图片单一性（蓝色多脑盒）_2000908501360799745.json, 图片生成/文生图/女团生成器_Zimage_2003080375004012545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/flux1_krea_dev 对比 flux dev_1950943932404400129.json、图片生成/文生图/flux1_krea_dev 很漂亮_1954159231169642497.json、图片生成/文生图/flux1_krea_dev满血版出图_1951839776326537218.json、图片生成/文生图/kontext_dev基础文生图_1952701907708088321.json、图片生成/文生图/z-image滑块系列文生图_2057114517376688130.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_2512_with_2steps_lora.json、图片生成/反推提示词/4bjs_2052395586623684609.json、图片生成/反推提示词/50pptmake_2051255545180499970.json、图片生成/反推提示词/72wstzs_2052609391525933058.json、图片生成/反推提示词/79manhuawst_2053041688037347330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `KSampler`
@@ -32,38 +33,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 10/14 个有
-- `LoraLoaderModelOnly` —— 10/14 个有
-- `CLIPLoader` —— 8/14 个有
-- `ModelSamplingAuraFlow` —— 7/14 个有
-- `DualCLIPLoader` —— 6/14 个有
-- `PreviewImage` —— 3/14 个有
-- `Seed (rgthree)` —— 3/14 个有
-- `FluxGuidance` —— 2/14 个有
-- `easy promptList` —— 2/14 个有
-- `easy seed` —— 2/14 个有
-- `CR Multiline Text` —— 1/14 个有
+- `ModelSamplingAuraFlow` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `easy cleanGpuUsed` —— 6/12 个有
+- `ConditioningZeroOut` —— 5/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `RTXVideoSuperResolution` —— 4/12 个有
+- `SeedVR2` —— 4/12 个有
+- `SeedVR2BlockSwap` —— 4/12 个有
+- `SeedVR2ExtraArgs` —— 4/12 个有
+- `Image Comparer (rgthree)` —— 2/12 个有
+- `SDXLAspectRatio` —— 2/12 个有
+- `DuckHideNode` —— 1/12 个有
+- `LoraLoader` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 25 | 14 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 14 | 31% |
-| 采样算法 | euler | - | 14 | 86% |
-| 调度器 | simple | - | 14 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 8 | 1 - 10 | 12 | 55% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 64% |
+| 采样算法 | euler | - | 12 | 58% |
+| 调度器 | simple | - | 12 | 75% |
+| 重绘幅度 | 1 | 0.8 - 1 | 12 | 94% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 25，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 31%
-- 采样算法 最常用 euler，14 个样本，一致性 86%
-- 调度器 最常用 simple，14 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 1 - 10，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 58%
+- 调度器 最常用 simple，12 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，12 个样本，取值集中（一致性 94%）
+- 高发问题（11/12 个样本）：Steps较低可能导致细节不足

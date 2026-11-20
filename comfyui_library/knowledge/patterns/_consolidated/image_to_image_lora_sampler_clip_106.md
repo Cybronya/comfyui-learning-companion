@@ -1,99 +1,99 @@
 ---
 name: image_to_image_lora_sampler_clip_106
 type: Image To Image
-frequency: 4
-level: moderate
-coverage: 0.823
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DF_Integer, DualCLIPLoader, FluxGuidance, ImageListToBatch+, ImpactImageBatchToImageList, KSampler, LayerColor: ColorAdapter, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: Seed, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, ReferenceLatent, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TeaCache, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.922333
+common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen_image_edit迄今超强6步快速出万物提取衣物+可选4K高清放大_1964971680823169026.json, 平台全量/Kontext-DEV迄今超强8步万物模糊_低分辨率图像高分辨率修复来袭+高清4K放大✨_1976200777020653570.json, 平台全量/Qwen-Image-Edit迄今超强万物产品溶图打光神器_1975411336698048513.json, 平台全量/kontext-dev迄今超强8步纠正场景背景透视角度匹配物体溶图重打光+可选4K高清出图_1962732827903176706.json]
+members: [图片生成/图生图/分镜 自动分镜  短剧分镜 漫剧分镜_2095774817839575042.json, 图片生成/图生图/无遮挡电商产品图_2038156576611115010.json, 图片生成/图生图/有遮挡电商产品图_2038159479967059970.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_106
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen_image_edit迄今超强6步快速出万物提取衣物+可选4K高清放大_1964971680823169026.json、平台全量/Kontext-DEV迄今超强8步万物模糊_低分辨率图像高分辨率修复来袭+高清4K放大✨_1976200777020653570.json、平台全量/Qwen-Image-Edit迄今超强万物产品溶图打光神器_1975411336698048513.json、平台全量/kontext-dev迄今超强8步纠正场景背景透视角度匹配物体溶图重打光+可选4K高清出图_1962732827903176706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/分镜 自动分镜  短剧分镜 漫剧分镜_2095774817839575042.json、图片生成/图生图/无遮挡电商产品图_2038156576611115010.json、图片生成/图生图/有遮挡电商产品图_2038159479967059970.json）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
-- `DF_Integer`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageListToBatch+`
-- `ImpactImageBatchToImageList`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `LayerColor: ColorAdapter`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: Seed`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `RHHiddenNodes`
+- `RandomNoise`
 - `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TeaCache`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `FluxKontextImageScale` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `easy imageSize` —— 3/4 个有
-- `Anything Everywhere3` —— 2/4 个有
-- `CFGNorm` —— 2/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `ImageColorMatch+` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `KSampler (Efficient)` —— 2/4 个有
-- `ModelSamplingAuraFlow` —— 2/4 个有
-- `Text Concatenate` —— 2/4 个有
-- `TextEncodeQwenImageEdit` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ColorMatch` —— 1/4 个有
-- `ConstrainImage|pysssss` —— 1/4 个有
-- `FloatConstant` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `TTP_text_mix` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `ColorPickerMW` —— 2/3 个有
+- `DF_Get_image_size` —— 2/3 个有
+- `FillMaskWithColor` —— 2/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `InvertMask` —— 2/3 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 2/3 个有
+- `LayerUtility: CropByMask V3` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `LayerUtility: RestoreCropBox` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `BiRefNetRMBG` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `JDCN_StringToList` —— 1/3 个有
+- `LayerUtility: ImageBlendAdvance V3` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `ProcessString` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `Switch` —— 1/3 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 4 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 4 | 53% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 8 | 6 - 8 | 3 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | beta57 | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（6/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 beta57，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

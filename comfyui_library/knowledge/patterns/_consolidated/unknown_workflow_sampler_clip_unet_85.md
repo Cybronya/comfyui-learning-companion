@@ -1,72 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_85
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.738077
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 12
+level: weak
+coverage: 0.98225
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/(贞贞Lora)Ernie Turbo文生图自动提示词优化极速版V1_2045747492465156097.json, 图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2044590595057917954.json, 图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2046103550576562177.json, 图片生成/文生图/Flux3 Image Klein distill t2i加速文生图_2110971162019848193.json, 图片生成/文生图/Flux3-Klein Text-to-Image 文生图工作流_2110954206533341186.json, 图片生成/文生图/HS-image_ernie_image_2044628228756742146.json, 图片生成/文生图/Moss-image Base Fixed文生图_2112185356295688193.json, 图片生成/文生图/Moss-image Base文生图_2112066738195091457.json, 图片生成/文生图/Moss-image Base文生图_2112122177809108994.json, 图片生成/文生图/Moss-image Base文生图_2112140955116728321.json, 图片生成/文生图/Moss-image Sft Fixed文生图_2112185347613487105.json, 图片生成/文生图/Moss-image Sft文生图_2112060921463001089.json, 图片生成/文生图/flux3 t2v 蒸馏版本_2111318527201341441.json]
+members: [视频生成/文生视频/DNR-wan2.2-官方文生视频_1952913163996041218.json, 视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json, 视频生成/文生视频/Holocine电影分镜工作流_1982118673722818561.json, 视频生成/文生视频/Holocine电影分镜工作流（含提示词样例）_1987110613501587458.json, 视频生成/文生视频/Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1950043620181237761.json, 视频生成/文生视频/Wan2.2 Dyno+Remix 新模型1.0文生视频V2（官方采样器）_1975847969142517762.json, 视频生成/文生视频/Wan2.2 Dyno+Remix文生视频V1_1974792612945244161.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2同模型高动态文生视频V1（官方采样器）_1979857088648220673.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2差异模型高动态文生视频V1（官方采样器）_1979868052277858305.json, 视频生成/文生视频/（6+6步）Wan2.2 Smooth Mix高动态文生视频V1（官方采样器）_1978740895153541121.json, 视频生成/文生视频/（自用）Dyno+Remix 1.0新模型文生视频（官方版）_1975846179902722050.json, 视频生成/文生视频/（自用）Dyno+Remix文生视频（官方版）_1974785719120080898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_85
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/(贞贞Lora)Ernie Turbo文生图自动提示词优化极速版V1_2045747492465156097.json、图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2044590595057917954.json、图片生成/文生图/Ernie文生图自动提示词优化满血版V1_2046103550576562177.json、图片生成/文生图/Flux3 Image Klein distill t2i加速文生图_2110971162019848193.json、图片生成/文生图/Flux3-Klein Text-to-Image 文生图工作流_2110954206533341186.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/DNR-wan2.2-官方文生视频_1952913163996041218.json、视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json、视频生成/文生视频/Holocine电影分镜工作流_1982118673722818561.json、视频生成/文生视频/Holocine电影分镜工作流（含提示词样例）_1987110613501587458.json、视频生成/文生视频/Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1950043620181237761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **样本数**：12
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSampler`
-- `PrimitiveStringMultiline`
-- `SaveImage`
-- `TextGenerate`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 12/13 个有
-- `PreviewAny` —— 12/13 个有
-- `PrimitiveBoolean` —— 9/13 个有
-- `ResolutionSelector` —— 8/13 个有
-- `StringReplace` —— 4/13 个有
-- `Ideogram4PromptBuilderKJ` —— 2/13 个有
-- `CR Prompt Text` —— 1/13 个有
-- `ConcatTextOfUtils` —— 1/13 个有
-- `JjkText` —— 1/13 个有
-- `LoraLoaderModelOnly` —— 1/13 个有
-- `easy showAnything` —— 1/13 个有
+- `INTConstant` —— 10/12 个有
+- `VHS_VideoCombine` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 9/12 个有
+- `JWInteger` —— 8/12 个有
+- `SaveImage` —— 7/12 个有
+- `TT_img_enc` —— 7/12 个有
+- `ImageFromBatch+` —— 4/12 个有
+- `easy cleanGpuUsed` —— 4/12 个有
+- `LoadImage` —— 2/12 个有
+- `LayerUtility: PurgeVRAM` —— 1/12 个有
+- `SeargePromptText` —— 1/12 个有
+- `TextBox` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 8 - 50 | 13 | 52% |
-| Prompt 约束强度(CFG) | 3 | 1 - 4 | 13 | 56% |
-| 采样算法 | er_sde | - | 13 | 62% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | fixed | - | 12 | 75% |
+| Prompt 约束强度(CFG) | 12 | 8 - 20 | 12 | 71% |
+| 采样算法 | 1 | 1 - 3.5 | 12 | 36% |
+| 调度器 | euler | - | 12 | 75% |
+| 重绘幅度 | simple | - | 12 | 83% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 50，13 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，13 个样本
-- 采样算法 最常用 er_sde，13 个样本，一致性 62%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，12 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 8 - 20，12 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，12 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 euler，12 个样本，一致性 75%
+- 重绘幅度 最常用 simple，12 个样本，一致性 83%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -3,55 +3,62 @@ name: text_to_image_lora_sampler_clip_656
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8735
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7835
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, NineGridMosaicNode, PreviewImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, SetNode, SomethingToString, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/QwenEdit2511真人转动漫｜CG幻想风格化图生图绘制_2093133017576464385.json, 图片生成/图生图/自动矫正角度重布光源｜全能电商产品溶图生成_2092944358944366593.json]
+members: [图片生成/图生图/多图参考图生成分镜宫格｜4宫格9宫格25宫格 图生图批量出图_2104095794335936513.json, 图片生成/图生图/多图参考生成分镜宫格 4宫格9宫格25宫格任选_2104328939698221058.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_656
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QwenEdit2511真人转动漫｜CG幻想风格化图生图绘制_2093133017576464385.json、图片生成/图生图/自动矫正角度重布光源｜全能电商产品溶图生成_2092944358944366593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图参考图生成分镜宫格｜4宫格9宫格25宫格 图生图批量出图_2104095794335936513.json、图片生成/图生图/多图参考生成分镜宫格 4宫格9宫格25宫格任选_2104328939698221058.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `GetNode`
 - `JjkText`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `NineGridMosaicNode`
+- `PreviewImage`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `SetNode`
+- `SomethingToString`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Text Input [Dream]` —— 1/2 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `JoinStrings` —— 1/2 个有
 
 ## 典型参数
 

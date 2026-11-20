@@ -3,72 +3,91 @@ name: unknown_workflow_upscale_latent_upscale_lora_76
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.741333
-common_nodes: [CLIPLoader, CLIPTextEncode, ClownsharKSampler_Beta, EmptyHunyuanLatentVideo, Image Sharpen FS, KSampler, LatentUpscaleBy, LoraLoaderModelOnly, PreviewImage, SaveImage, String, Text, Text Concatenate, UnetLoaderGGUF, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.895333
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/42ttoihighquality_2050047254924414978.json, 图片生成/文生图/WAN2.2高质量真实照片生成_1955155949084446721.json, 图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json]
+members: [视频生成/图生视频/work_one（图生视频工作流）_2056265109323993089.json, 视频生成/图生视频/【运镜+自动脚本】图生视频 LTXV 2.0-19B 测试版_2008778999371145217.json, 视频生成/图生视频/图生视频  音画同步  带多种电影级别运镜 LTXV 2.0_2025763431185387521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_76
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/42ttoihighquality_2050047254924414978.json、图片生成/文生图/WAN2.2高质量真实照片生成_1955155949084446721.json、图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/work_one（图生视频工作流）_2056265109323993089.json、视频生成/图生视频/【运镜+自动脚本】图生视频 LTXV 2.0-19B 测试版_2008778999371145217.json、视频生成/图生视频/图生视频  音画同步  带多种电影级别运镜 LTXV 2.0_2025763431185387521.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ClownsharKSampler_Beta`
-- `EmptyHunyuanLatentVideo`
-- `Image Sharpen FS`
-- `KSampler`
-- `LatentUpscaleBy`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `Int`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
-- `String`
-- `Text`
-- `Text Concatenate`
-- `UnetLoaderGGUF`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
-- `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
+- `CR Text Replace` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LTXVImgToVideoInplace` —— 2/3 个有
+- `ManualSigmas` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `SamplerCustom` —— 2/3 个有
+- `Textbox` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `intToFloat _O` —— 2/3 个有
+- `DualCLIPLoader` —— 1/3 个有
+- `KSampler` —— 1/3 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
+- `TextGenerateLTX2Prompt` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | bong_tangent | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
-| 采样算法 | 10 | 10 - 10 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 0.3 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 bong_tangent，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 风险：重绘幅度 观测到 1，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

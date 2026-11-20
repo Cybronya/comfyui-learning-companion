@@ -1,88 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_150
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.822571
-common_nodes: [Any Switch (rgthree), BasicGuider, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), H3SigmaRefiner, LoadAudio, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PrimitiveFloat, RH_Screenwriter, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer, ZML_IntegerFloatConverter]
+frequency: 13
+level: moderate
+coverage: 0.884385
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/MiniMax-H3视频对口型数字人（视频生视频）_2098439515059871745.json, 数字人/数字人/MiniMax-H3视频对口型数字人（视频生视频）_2096864802261000194.json, 数字人/数字人/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2114681829616865282.json, 数字人/数字人/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2114683930212388866.json, 视频生成/图生视频/MiniMax-H3音频驱动对口型数字人，MV创作专用_2091543791437176834.json, 视频生成/图生视频/MiniMax-H3音频驱动数字人，MV创作专用_2095437567507386370.json, 视频生成/图生视频/老照片修复Flux2-Klein+MiniMax-H3_2092469294427893762.json, 视频生成/图生视频/老照片修复Flux2-Klein+MiniMax-H3_2097160477880180738.json, 视频生成/图生视频/老照片修复Flux2-Klein+MiniMax-H3_2097500745795985409.json, 视频生成/图生视频/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2094370315370586113.json, 视频生成/图生视频/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2094387651045580802.json, 视频生成/图生视频/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2098028999967592450.json, 视频生成/文生视频/MiniMax-H3文生图生多参首尾帧多合一分镜视频制作_2092570315934228482.json, 视频生成/文生视频/老照片修复+MiniMax-H3动态视频_2092779312918392833.json]
+members: [视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json, 视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json, 视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json, 视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json, 视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json, 视频生成/图生视频/（音频驱动-zs05）MiniMax H3数字人加速版V1_2092541557630136322.json, 视频生成/图生视频/（音频驱动-音乐MV-数字人）MiniMax H3加速_2105347148022894593.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099766391334330369.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099827196100694018.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099845520981323778.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2104909753217536002.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版_2099850720488017921.json, 视频生成/文生视频/Minimax4步lora+双时钟-超快速工作流_2085689486171787265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_150
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（平台全量/MiniMax-H3视频对口型数字人（视频生视频）_2098439515059871745.json、数字人/数字人/MiniMax-H3视频对口型数字人（视频生视频）_2096864802261000194.json、数字人/数字人/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2114681829616865282.json、数字人/数字人/（MV创作专用）MiniMax-H3开源 音频驱动对口型数字人_2114683930212388866.json、视频生成/图生视频/MiniMax-H3音频驱动对口型数字人，MV创作专用_2091543791437176834.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json、视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json、视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json、视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json、视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 13 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
 - `LoadAudio`
+- `LoadImage`
 - `LoraLoaderBypassModelOnly`
-- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PreviewAny`
 - `PrimitiveFloat`
-- `RH_Screenwriter`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WujiCleaner`
-- `WujiH3PromptEnhancer`
-- `ZML_IntegerFloatConverter`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 13/14 个有
-- `LoadImage` —— 12/14 个有
-- `RHHiddenNodes` —— 7/14 个有
-- `WujiAudioLoader` —— 7/14 个有
-- `easy showAnything` —— 7/14 个有
-- `Int` —— 5/14 个有
-- `CLIPTextEncode` —— 4/14 个有
-- `CheckpointLoaderSimple` —— 4/14 个有
-- `ConditioningZeroOut` —— 4/14 个有
-- `EmptyLatentImage` —— 4/14 个有
-- `Image Comparer (rgthree)` —— 4/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/14 个有
-- `ReferenceLatent` —— 4/14 个有
-- `SaveImage` —— 4/14 个有
-- `VAEEncode` —— 4/14 个有
-- `WujiSampler` —— 4/14 个有
-- `WujiUpscaler` —— 4/14 个有
-- `CR Text Concatenate` —— 2/14 个有
-- `LoadVideo` —— 2/14 个有
-- `VHS_LoadVideo` —— 2/14 个有
-- `easy promptConcat` —— 1/14 个有
+- `ModelAttentionBackend` —— 12/13 个有
+- `SolAttnMiniMax` —— 12/13 个有
+- `Float to Int` —— 2/13 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/13 个有
+- `R2T2GGUFLoader` —— 2/13 个有
+- `R2T2Transcribe` —— 2/13 个有
+- `StringConcatenate` —— 2/13 个有
+- `T8PerformanceDirectorConfig` —— 2/13 个有
+- `easy cleanGpuUsed` —— 2/13 个有
+- `easy showAnything` —— 2/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,5 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

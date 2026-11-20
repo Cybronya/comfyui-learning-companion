@@ -1,66 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_unet_21
 type: Unknown Workflow
-frequency: 18
+frequency: 14
 level: moderate
-coverage: 0.867222
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.875643
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087570594790465537.json, 视频生成/图生视频/Minimax H3数字人多人极速版_2085589743303225345.json, 视频生成/图生视频/Minimax H3音频驱动数字人_双人_多人版_2084886816611717121.json, 视频生成/图生视频/Minimax-H3-数字人-双人_三人-多条语音合并_2085298936998359041.json, 视频生成/图生视频/MinimaxH3-数字人-单人版-音频参考_2085298918895742977.json, 视频生成/图生视频/MinimaxH3开源版 音频驱动数字人唱歌单人版_2084952200182329345.json, 视频生成/图生视频/MinimaxH3开源版 音频驱动数字人唱歌对口型单人版_2084987771718029313.json, 视频生成/图生视频/MinimaxH3数字人 音频驱动单人版_2084904774553653249.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人版_2084835679577661441.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人版_2087022951702028289.json, 视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！两人！_2085574360487784450.json, 视频生成/图生视频/音频驱动数字人对口型_2089870047274688514.json, 视频生成/图生视频/音频驱动数字人对口型_2092803978378694657.json, 视频生成/文生视频/Digital Humans音频驱动数字人对口型_2094956968829083649.json]
+members: [视频生成/图生视频/单人换视频中的单人（简单提示词)_2113259206127210498.json, 视频生成/图生视频/单图Minimax H3_2084901814679461889.json, 视频生成/图生视频/单图Minimax H3_2085688315197616129.json, 视频生成/图生视频/多参生成视频_2110673932587200514.json, 视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json, 视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json, 视频生成/图生视频/街舞表演视频制作_2106024930591731713.json, 视频生成/图生视频/（api强化武打）竖屏640p坤坤H3官流lora加速20步_2114244637195071489.json, 视频生成/图生视频/（api）横屏640p坤坤H3官流无lora12步_2110413455923699713.json, 视频生成/图生视频/（api）竖屏608p坤坤H3官流无lora_2108200300300554241.json, 视频生成/图生视频/（api）竖屏768p坤坤H3官流_2108103067618070530.json, 视频生成/文生视频/H3官流全能参考9图1音频1视频_2105563203647393793.json, 视频生成/文生视频/H3官流（mpov版）-不用加速lora_2107126428574773249.json, 视频生成/文生视频/H3官流（单采极速文戏）_2106642679642812418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_21
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json、视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087570594790465537.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/单人换视频中的单人（简单提示词)_2113259206127210498.json、视频生成/图生视频/单图Minimax H3_2084901814679461889.json、视频生成/图生视频/单图Minimax H3_2085688315197616129.json、视频生成/图生视频/多参生成视频_2110673932587200514.json、视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 17/18 个有
-- `PathchSageAttentionKJ` —— 16/18 个有
-- `PreviewAudio` —— 15/18 个有
-- `ComfyMathExpression` —— 14/18 个有
-- `PrimitiveStringMultiline` —— 13/18 个有
-- `AudioConcat` —— 9/18 个有
-- `EmptyAudio` —— 9/18 个有
-- `CR Prompt Text` —— 4/18 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/18 个有
-- `MathExpression|pysssss` —— 4/18 个有
-- `EasyCache` —— 2/18 个有
-- `MiniMaxChunkFeedForward` —— 2/18 个有
-- `MiniMaxLowVRAMAttention` —— 2/18 个有
-- `ModelAttentionBackend` —— 2/18 个有
-- `ModelPreviewOverrideKJ` —— 2/18 个有
-- `PixaromaLabel` —— 2/18 个有
-- `Fast Groups Muter (rgthree)` —— 1/18 个有
-- `PainterVRAM` —— 1/18 个有
+- `BasicScheduler` —— 13/14 个有
+- `ModelAttentionBackend` —— 13/14 个有
+- `VAEDecodeAudio` —— 13/14 个有
+- `BlockSparseAttention` —— 11/14 个有
+- `LoraLoaderModelOnly` —— 10/14 个有
+- `ModelPreviewOverrideKJ` —— 10/14 个有
+- `ManualSigmas` —— 9/14 个有
+- `LoadAudio` —— 8/14 个有
+- `VHS_LoadVideo` —— 5/14 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/14 个有
+- `MiniMaxH3SigmaShift` —— 2/14 个有
+- `SolAttnMiniMax` —— 2/14 个有
+- `ExtendIntermediateSigmas` —— 1/14 个有
+- `GetVideoComponents` —— 1/14 个有
+- `INTConstant` —— 1/14 个有
+- `LoadVideo` —— 1/14 个有
+- `LoraLoaderBypassModelOnly` —— 1/14 个有
+- `PreviewAny` —— 1/14 个有
+- `忽略多组孤海` —— 1/14 个有
 
 ## 典型参数
 

@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_84
 type: Unknown Workflow
-frequency: 19
+frequency: 18
 level: moderate
-coverage: 0.758211
-common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.948944
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2053068919455399938.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2054042696234356738.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103067378409103361.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103091767229898754.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2109239041446203393.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图生成器_2055205534084673538.json, 图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图生成器_2079521350217195522.json, 图片生成/图生图/图生图-动漫动态壁纸-一键生成_2065258970960453634.json, 图片生成/图生图/图生图-动漫动态壁纸-一键生成_2082644415797096450.json, 图片生成/图生图/宠物动态壁纸-动起来_2054485566716170241.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052593532090757122.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052907021460099074.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2052920812591697922.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2057264018573848577.json, 图片生成/图生图/超顺滑动漫动态壁纸-图生图一键生成_2057264328226729985.json, 图片生成/文生图/动态壁纸-一键生成_1940241127955976194.json, 视频生成/图生视频/Wan2.1 生成动态壁纸_1913951966869843970.json, 视频生成/图生视频/Wan2.1-14B _ 动态壁纸专用 图生视频 Florence2反推 TeaCach_2060066021968539649.json, 视频生成/图生视频/【动态壁纸】 Wan2.1 图生视频_1913946553239961602.json]
+members: [视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json, 视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json, 视频生成/图生视频/Wan2.1-胜利之舞_1902955748278571009.json, 视频生成/图生视频/Wan360度旋转-微波炉特效视频工作流_1899781896895881218.json, 视频生成/图生视频/Wan变身超级赛亚人_2079036262153023489.json, 视频生成/图生视频/Wan捏捏图生视频工作流_1899122164795133953.json, 视频生成/图生视频/Wan波动拳图生视频工作流_1899508208174809089.json, 视频生成/图生视频/wan2.1 图生视频-掀起衣服_1900918919576854530.json, 视频生成/图生视频/wan2.1万相图生视拔刀特效lora_1920904820126060546.json, 视频生成/图生视频/wan2.1万相图生视拖红影特效lora_1922514213686886402.json, 视频生成/图生视频/wan2.1图生视频-燃烧特效_1900758531451297794.json, 视频生成/图生视频/wan2.1图生视频特效走秀燃烧起火工作流_1920925508526346241.json, 视频生成/图生视频/wan2.1捏捏乐_1896450417918345217.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频_1909162790840639489.json, 视频生成/图生视频/双人2对打100wan2.1万相图生视视_1929451203611234306.json, 视频生成/图生视频/街舞单手倒立200确定_1928166272100352001.json, 视频生成/图生视频/街舞大风车176确认好的_1928158479809134593.json, 视频生成/图生视频/通义万相wan2.1万物旋转360度特效_1901238900759609346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_84
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2053068919455399938.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2054042696234356738.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103067378409103361.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2103091767229898754.json、图片生成/图生图/一键生成超顺滑动漫动态壁纸-动图_2109239041446203393.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json、视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json、视频生成/图生视频/Wan2.1-胜利之舞_1902955748278571009.json、视频生成/图生视频/Wan360度旋转-微波炉特效视频工作流_1899781896895881218.json、视频生成/图生视频/Wan变身超级赛亚人_2079036262153023489.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 18 个 workflow 都包含：
+- `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `StringFunction|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 18/19 个有
-- `LoadImage` —— 18/19 个有
-- `CogVideoEnhanceAVideo` —— 17/19 个有
-- `WanVideoSetBlockSwap` —— 17/19 个有
-- `easy cleanGpuUsed` —— 17/19 个有
-- `GetNode` —— 3/19 个有
-- `SetNode` —— 3/19 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/19 个有
-- `Seed Everywhere` —— 2/19 个有
-- `WanVideoEnhanceAVideo` —— 2/19 个有
-- `CLIPTextEncode` —— 1/19 个有
-- `CheckpointLoaderSimple` —— 1/19 个有
-- `LoadImageFromUrl` —— 1/19 个有
-- `ResizeLongestToNode` —— 1/19 个有
-- `Text` —— 1/19 个有
-- `TextInput_` —— 1/19 个有
-- `WanVideoSEDecode` —— 1/19 个有
-- `WanVideoSEImageClipEncode` —— 1/19 个有
-- `WanVideoSEModelLoader` —— 1/19 个有
-- `WanVideoSESampler` —— 1/19 个有
+- `WanVideoTextEncode` —— 17/18 个有
+- `WanVideoBlockSwap` —— 16/18 个有
+- `WanVideoEnhanceAVideo` —— 14/18 个有
+- `ImageResizeKJ` —— 13/18 个有
+- `LayerUtility: PurgeVRAM` —— 9/18 个有
+- `Int` —— 8/18 个有
+- `DownloadAndLoadGIMMVFIModel` —— 6/18 个有
+- `GIMMVFI_interpolate` —— 6/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/18 个有
+- `Textbox` —— 4/18 个有
+- `TextInput_` —— 3/18 个有
+- `CR Upscale Image` —— 2/18 个有
+- `Note Plus (mtb)` —— 2/18 个有
+- `PreviewImage` —— 2/18 个有
+- `VHS_LoadVideo` —— 1/18 个有
+- `workflow>文本` —— 1/18 个有
 
 ## 典型参数
 

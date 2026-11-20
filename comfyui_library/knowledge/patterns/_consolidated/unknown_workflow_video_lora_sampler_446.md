@@ -1,64 +1,90 @@
 ---
 name: unknown_workflow_video_lora_sampler_446
 type: Unknown Workflow
-frequency: 7
+frequency: 5
 level: moderate
-coverage: 0.847857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.4816
+common_nodes: [AudioConcatenate, BasicScheduler, CLIPLoader, CM_FloatBinaryOperation, CM_IntBinaryOperation, CM_IntToFloat, CreateVideo, FloatConstant, GetImageSize, INTConstant, ImageBatch, ImageExpandBatch+, ImageFromBatch+, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/MINIMAX-H3热血战斗Qwen3.8 提示词增强单图全自动工作流_2089736069146308610.json, 视频生成/图生视频/MINIMAX-H3热血战斗单图全自动工作流_2089691196661780481.json, 视频生成/图生视频/MiniMax H3极速二采高质量图_文生视频_2086658165340463105.json, 视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json, 视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json, 视频生成/文生视频/MINIMAXH3多图参考打斗全自动工作流_2099696081260081154.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3打斗专用全自动工作流_2087897093984837634.json]
+members: [图片生成/图生图/Minimax动作迁移_latent接续，优化版_2114255450542788610.json, 视频生成/图生视频/Minimax动作迁移_2104782824657211394.json, 视频生成/图生视频/Minimax动作迁移_latent接续，优化版_2110928214188191745.json, 视频生成/图生视频/Minimax动作迁移_latent接续，优化版_2113781959360073729.json, 视频生成/图生视频/Minimax动作迁移_官方接续_2105994599452995586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_446
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MINIMAX-H3热血战斗Qwen3.8 提示词增强单图全自动工作流_2089736069146308610.json、视频生成/图生视频/MINIMAX-H3热血战斗单图全自动工作流_2089691196661780481.json、视频生成/图生视频/MiniMax H3极速二采高质量图_文生视频_2086658165340463105.json、视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json、视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Minimax动作迁移_latent接续，优化版_2114255450542788610.json、视频生成/图生视频/Minimax动作迁移_2104782824657211394.json、视频生成/图生视频/Minimax动作迁移_latent接续，优化版_2110928214188191745.json、视频生成/图生视频/Minimax动作迁移_latent接续，优化版_2113781959360073729.json、视频生成/图生视频/Minimax动作迁移_官方接续_2105994599452995586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 5 个 workflow 都包含：
+- `AudioConcatenate`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CM_FloatBinaryOperation`
+- `CM_IntBinaryOperation`
+- `CM_IntToFloat`
+- `CreateVideo`
+- `FloatConstant`
+- `GetImageSize`
+- `INTConstant`
+- `ImageBatch`
+- `ImageExpandBatch+`
+- `ImageFromBatch+`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `TrimAudioDuration`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `RH_LLMAPI_Pro_Node` —— 4/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `LoadAudio` —— 3/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `H3SigmaRefiner` —— 1/7 个有
-- `MemoryCleaner` —— 1/7 个有
-- `easy saveText` —— 1/7 个有
-- `llama_cpp_instruct_adv` —— 1/7 个有
-- `llama_cpp_model_loader` —— 1/7 个有
-- `llama_cpp_parameters` —— 1/7 个有
+- `ImageFromBatch` —— 4/5 个有
+- `ModelPreviewOverrideKJ` —— 4/5 个有
+- `BasicGuider` —— 3/5 个有
+- `ImageToMask` —— 3/5 个有
+- `LTXVConcatAVLatent` —— 3/5 个有
+- `LTXVSeparateAVLatent` —— 3/5 个有
+- `LatentConcat` —— 3/5 个有
+- `LatentCut` —— 3/5 个有
+- `MaskComposite` —— 3/5 个有
+- `MaskToImage` —— 3/5 个有
+- `RandomNoise` —— 3/5 个有
+- `RepeatImageBatch` —— 3/5 个有
+- `SamplerCustomAdvanced` —— 3/5 个有
+- `SetLatentNoiseMask` —— 3/5 个有
+- `SolidMask` —— 3/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `H3SigmaRefiner` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `SelfLiftH3Sampler` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
+- `MiniMaxH3AddGuide` —— 1/5 个有
+- `MiniMaxH3MotionContext` —— 1/5 个有
+- `MiniMaxH3MotionContextTrim` —— 1/5 个有
 
 ## 典型参数
 

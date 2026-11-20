@@ -1,64 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_unet_22
 type: Unknown Workflow
-frequency: 17
+frequency: 13
 level: moderate
-coverage: 0.546941
-common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.645538
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/15步手动拟合特效增强，GIMM补帧战斗画面丝滑不卡_2116398340802965506.json, 图片生成/图生图/一人一鲸深海同游，8秒治愈大片直出_2117109958323036162.json, 图片生成/图生图/参考图变御剑飞行仙侠大片，云海穿行8秒直出_2117106745683304450.json, 图片生成/图生图/末日废土横屏宽画幅，沙暴追击8秒电影级直出_2116747481823404034.json, 图片生成/图生图/萌宠化身小厨师翻锅名场面，8秒治愈短片直出_2116748968242802690.json, 图片生成/图生图/雨夜功夫近身实战，打击气浪特效拉满直出8秒大片_2116746010159566850.json, 平台全量/参考图变深空机甲白刃大战，爆破光轨8秒直出_2117489747911340033.json, 平台全量/参考图变符文法术对轰横屏大片，金蓝冲击波8秒直出_2117491252278157313.json, 平台全量/参考图变雨夜霓虹追逐大片，全息光轨8秒直出_2117972380088889346.json, 平台全量/霓虹雨夜横屏宽画幅，全息都市追逐8秒直出_2117108464970457090.json, 视频生成/图生视频/MiniMax H3  15s全参_2084269888650174465.json, 视频生成/图生视频/MiniMax H3 I2V 图生视频 Fused ACC 8步 神奇工作流_2096909523062714369.json, 视频生成/图生视频/MiniMax H3 全能多参1280分辨率3_4Harness专用_2094567538721116161.json, 视频生成/图生视频/MiniMax H3 全能多参1280分辨率加速工作流_2085980820623413250.json, 视频生成/图生视频/MiniMax H3 全能多参DSW工作流Harness专用_2095550051505491970.json, 视频生成/图生视频/MiniMax H34步Lora超级加速版全能多图参考生视频_2085675097481891842.json, 视频生成/文生视频/MiniMax H3 I2V 图生视频 1280分辨率加速工作流_2085953821150367746.json]
+members: [图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json, 图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json, 视频生成/图生视频/LTX+2.3 Director 6宫格 _ 单图 简化版工作流-用于集成_2064037629812895745.json, 视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json, 视频生成/图生视频/LTX2.3-自动剧情-全自动宫格导演台_2068587096239071233.json, 视频生成/图生视频/LTX导演台_2075025517912346625.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2070124907555545090.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-六宫格全自动宫格导演台-自动剧情_2070402488083238913.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062715570117758978.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台（短剧使用）_2071479057736355841.json, 视频生成/图生视频/图生视频-LTX2.3_2057271107857768450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_22
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/15步手动拟合特效增强，GIMM补帧战斗画面丝滑不卡_2116398340802965506.json、图片生成/图生图/一人一鲸深海同游，8秒治愈大片直出_2117109958323036162.json、图片生成/图生图/参考图变御剑飞行仙侠大片，云海穿行8秒直出_2117106745683304450.json、图片生成/图生图/末日废土横屏宽画幅，沙暴追击8秒电影级直出_2116747481823404034.json、图片生成/图生图/萌宠化身小厨师翻锅名场面，8秒治愈短片直出_2116748968242802690.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json、图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json、视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json、视频生成/图生视频/LTX+2.3 Director 6宫格 _ 单图 简化版工作流-用于集成_2064037629812895745.json、视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `GetNode`
 - `KSamplerSelect`
-- `LoadImage`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `MiniMaxH3ReferenceToVideo` —— 15/17 个有
-- `ManualSigmas` —— 10/17 个有
-- `SaveImage` —— 10/17 个有
-- `孤海注释` —— 10/17 个有
-- `BasicScheduler` —— 7/17 个有
-- `ComfyMathExpression` —— 7/17 个有
-- `PrimitiveFloat` —— 7/17 个有
-- `ResolutionSelector` —— 7/17 个有
-- `Text` —— 7/17 个有
-- `LoraLoaderModelOnly` —— 6/17 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/17 个有
-- `Label (rgthree)` —— 5/17 个有
-- `SigmasGraph` —— 4/17 个有
-- `ImageFromBatch` —— 3/17 个有
-- `LoadAudio` —— 3/17 个有
-- `VHS_LoadVideo` —— 3/17 个有
-- `LoadVideo` —— 2/17 个有
-- `MiniMaxH3ImageToVideo` —— 2/17 个有
-- `LoraLoaderBypassModelOnly` —— 1/17 个有
-- `ModelAttentionBackend` —— 1/17 个有
-- `SolAttnMiniMax` —— 1/17 个有
+- `LoraLoaderModelOnly` —— 11/13 个有
+- `LoadImage` —— 10/13 个有
+- `PreviewAny` —— 9/13 个有
+- `RH_LLMAPI_Pro_Node` —— 9/13 个有
+- `TTResolutionSelector` —— 9/13 个有
+- `CS-LTXGridDirector` —— 8/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `LTXDirector` —— 4/13 个有
+- `Int` —— 3/13 个有
+- `JjkText` —— 3/13 个有
+- `RH_Utils` —— 3/13 个有
+- `ttN concat` —— 3/13 个有
+- `孤海注释` —— 3/13 个有
+- `CS-LTXSixGridDirector` —— 2/13 个有
+- `DiffusionModelLoaderKJ` —— 2/13 个有
+- `RHSettingsNode` —— 2/13 个有
+- `RH_RhartImageG2TextToImage` —— 2/13 个有
+- `SaveImage` —— 2/13 个有
+- `Text` —— 2/13 个有
+- `AppParams` —— 1/13 个有
 
 ## 典型参数
 

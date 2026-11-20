@@ -1,88 +1,85 @@
 ---
 name: text_to_image_controlnet_sampler_clip_17
 type: Text To Image
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.84975
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Seed, ConditioningZeroOut, EmptyLatentImage, GenerateNoise, KSampler, LGNoiseInjectionLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, ZImageFunControlnet, easy framesEditor, easy sam3ImageSegmentation, easy sam3ModelLoader]
-problems: []
+coverage: 0.733667
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Int, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, easy imageIndexSwitch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z image SAM3.1 区域重绘工作流😸-V1换装换脸换任何区域_2055581575559041026.json, 平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2078369803244490753.json, 平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2096405023059173377.json, 平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2096416468069076993.json]
+members: [图片生成/图生图/Z-image+t2i++Controlnet+(6G显存可用)_2074078629277028354.json, 图片生成/文生图/Z-image+Controlnet+V2.1+可使用lora+双采样+(6G显存可用)_2074075484878626817.json, 图片生成/文生图/Z-image+t2i++Controlnet_1998348287713402881.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_17
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z image SAM3.1 区域重绘工作流😸-V1换装换脸换任何区域_2055581575559041026.json、平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2078369803244490753.json、平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2096405023059173377.json、平台全量/Z+image+SAM3.1区域重绘工作流换装换脸换任何区域_2096416468069076993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Z-image+t2i++Controlnet+(6G显存可用)_2074078629277028354.json、图片生成/文生图/Z-image+Controlnet+V2.1+可使用lora+双采样+(6G显存可用)_2074075484878626817.json、图片生成/文生图/Z-image+t2i++Controlnet_1998348287713402881.json）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Seed`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GenerateNoise`
+- `Fast Groups Bypasser (rgthree)`
+- `Int`
 - `KSampler`
-- `LGNoiseInjectionLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `MaskPreview`
 - `ModelPatchLoader`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `ZImageFunControlnet`
-- `easy framesEditor`
-- `easy sam3ImageSegmentation`
-- `easy sam3ModelLoader`
+- `easy imageIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `ImageUpscaleWithModel` —— 3/4 个有
-- `LoraLoader` —— 3/4 个有
-- `PrimitiveInt` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `UpscaleModelLoader` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
+- `ImpactConditionalBranch` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `SeedVR2LoadDiTModel` —— 1/3 个有
+- `SeedVR2LoadVAEModel` —— 1/3 个有
+- `SeedVR2VideoUpscaler` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | dpmpp_2s_ancestral | - | 4 | 100% |
-| 调度器 | bong_tangent | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
-| LoRA 模型强度 | 2 | 2 - 2 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 10 | 9 - 10 | 3 | 95% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 0.65 - 1 | 3 | 81% |
+| 宽度 | 1024 | 1024 - 1280 | 3 | 89% |
+| 高度 | 1536 | 1536 - 1920 | 3 | 89% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2s_ancestral，4 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 9 - 10，3 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 0.65 - 1，3 个样本，取值集中（一致性 81%）
+- 宽度 中位数 1024，观测区间 1024 - 1280，3 个样本，取值集中（一致性 89%）
+- 高度 中位数 1536，观测区间 1536 - 1920，3 个样本，取值集中（一致性 89%）
+- 高发问题（2/3 个样本）：Steps较低可能导致细节不足

@@ -3,63 +3,57 @@ name: text_to_image_upscale_lora_sampler_91
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.762
-common_nodes: [AILab_ImagePreview, AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSizeAndCount, GetNode, Image Comparer (rgthree), ImageConcanate, ImageResizeKJv2, JjkText, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, Krea2StyleReference, Krea2StyleTransfer, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2TorchCompileSettings, SeedVR2VideoUpscaler, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, UNETLoader_Any, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.866667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Muter (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_NODE, RH_RhartImageG2ImageToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, WujiCleaner, WujiUpscaler, easy promptConcat, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093522058536902657.json, 图片生成/图生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093620006817980418.json, 图片生成/文生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093061101394161666.json]
+members: [图片生成/图生图/Qwen image2.1 image2.5二合一多参海报生成器文生多图生均可_2108657486508158978.json, 图片生成/图生图/Qwen image2.1与2.5二合一｜多参海报生成文生多图生均可_2111144922781929474.json, 图片生成/图生图/Qwen-Eidt-2511与image2二合一｜多参海报生成器文生多图生_2092002351044448258.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_91
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093522058536902657.json、图片生成/图生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093620006817980418.json、图片生成/文生图/Krea2风格迁移编辑｜图片风格化文生图图生图一键换风格_2093061101394161666.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1 image2.5二合一多参海报生成器文生多图生均可_2108657486508158978.json、图片生成/图生图/Qwen image2.1与2.5二合一｜多参海报生成文生多图生均可_2111144922781929474.json、图片生成/图生图/Qwen-Eidt-2511与image2二合一｜多参海报生成器文生多图生_2092002351044448258.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_ImagePreview`
-- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageResizeKJv2`
+- `Fast Groups Muter (rgthree)`
 - `JjkText`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
-- `Krea2StyleReference`
-- `Krea2StyleTransfer`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2TorchCompileSettings`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
-- `UNETLoader_Any`
 - `VAEDecode`
 - `VAELoader`
+- `WujiCleaner`
+- `WujiUpscaler`
+- `easy promptConcat`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/3 个有
+- `TextEncodeQwenImage21` —— 2/3 个有
+- `WujiPromptEditor` —— 2/3 个有
+- `CFGNorm` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
+- `PresetTextSelector` —— 1/3 个有
+- `TextEncodeQwenImageEditPlus` —— 1/3 个有
+- `WujiStyleSelector` —— 1/3 个有
 
 ## 典型参数
 
@@ -77,7 +71,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -88,4 +82,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（9/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

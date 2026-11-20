@@ -3,54 +3,60 @@ name: text_to_image_lora_sampler_clip_460
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.85375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.73175
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, INTConstant, JjkText, KSampler, KSamplerAdvanced, LoraLoaderModelOnly, SaveImage, SetNode, Text Multiline, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1一键图片自动透明分层，精准抠图图层分离图生图工具_2103258930473422849.json, 图片生成/图生图/Qwen Image 2.1双图参考编辑｜图生图换背景与图片处理一步到位_2104481950252756993.json, 图片生成/图生图/千问2.1双图参考编辑 两张输入精准改图_2104672253739880450.json, 图片生成/文生图/千问2.1文生图片支持透明底｜文生图海报制作 商品换背景好帮手_2104051581292466177.json]
+members: [图片生成/图生图/智绘品牌秒出全案｜LOGO名片招牌工服多场景自动生成_2090089023988654082.json, 图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json, 图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_460
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1一键图片自动透明分层，精准抠图图层分离图生图工具_2103258930473422849.json、图片生成/图生图/Qwen Image 2.1双图参考编辑｜图生图换背景与图片处理一步到位_2104481950252756993.json、图片生成/图生图/千问2.1双图参考编辑 两张输入精准改图_2104672253739880450.json、图片生成/文生图/千问2.1文生图片支持透明底｜文生图海报制作 商品换背景好帮手_2104051581292466177.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/智绘品牌秒出全案｜LOGO名片招牌工服多场景自动生成_2090089023988654082.json、图片生成/文生图/短剧主角人设文生图｜附带提示词直接套用出图_2106591010779385858.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2106893671210766338.json、图片生成/文生图/短剧人物主角设计附带提示词工作流，文生图角色设计创作工具_2108742835515248641.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `GetNode`
+- `INTConstant`
 - `JjkText`
 - `KSampler`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `SetNode`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
+- `AILab_QwenVL` —— 3/4 个有
 - `CR Text` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `RH_LLMAPI_Pro_Node` —— 3/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `QwenImage21Cache` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
-- `Text Load Line From File` —— 1/4 个有
-- `easy forLoopEnd` —— 1/4 个有
-- `easy forLoopStart` —— 1/4 个有
+- `Int` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `Text Concatenate` —— 3/4 个有
+- `孤海注释` —— 3/4 个有
+- `EmptyImage` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `JjkShowText` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `RH_RhartImageG2ImageToImage` —— 1/4 个有
+- `TextEncodeQwenImageEditPlus` —— 1/4 个有
+- `VAEEncode` —— 1/4 个有
 
 ## 典型参数
 
@@ -68,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -79,4 +85,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

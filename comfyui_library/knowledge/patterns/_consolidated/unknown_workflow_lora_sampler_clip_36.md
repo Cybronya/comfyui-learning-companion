@@ -1,104 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_36
 type: Unknown Workflow
-frequency: 12
+frequency: 10
 level: strong
-coverage: 0.840083
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, VAEDecodeTiled]
-problems: []
+coverage: 0.7123
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ColorCorrect, Image Comparer (rgthree), ImageScaleBy, Int, KSampler, LoraLoaderModelOnly, MemoryCleaner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430530.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.0_（mv数字人）_2054790441681342465.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_2054484478025838593.json, 视频生成/图生视频/LTX2.3_数字人口播_v2.0_（融合音频生成，效果未必比1.0好）_2054789125802340354.json, 视频生成/图生视频/LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好）_2054780723667718145.json, 视频生成/图生视频/LTX2.3_数字人口播_v3.1_（首尾帧）_2058082401418563586.json, 视频生成/图生视频/LTX2.3_数字人口播_v5.0_（首尾帧）_2058097242602557441.json, 视频生成/图生视频/LTX2.3_数字人口播_v5.1_（首尾帧）_2058053097523601410.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.0_（首尾帧，抖动问题未解决）_2058106663583969282.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.1_（首尾帧，未解决抖动问题）_2058106651525345282.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.3_(首尾帧，Fisher优化版)_2057761252751003649.json, 视频生成/图生视频/LTX2.3_数字人口播_v6.3_(首尾帧，Fisher优化版)_2058134319910187009.json]
+members: [图片生成/文生图/Qwen-image2512+文生图+高清放大_2006552281617014786.json, 图片生成/文生图/Qwen-image2512文生图+seedvr2放大（4K）_2006688942132830209.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2006358896344047617.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2008143714165723138.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2011686421953781762.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2013576617548845058.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2048380210885697538.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2061008676458156034.json, 图片生成/文生图/Qwen-image2512文生图_2007145074009837570.json, 图片生成/文生图/文生图-Qwen-image2512海报-字体-抽象-艺术摄影等_2007748442419896321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430530.json、视频生成/图生视频/LTX2.3_数字人口播_v1.0_（mv数字人）_2054790441681342465.json、视频生成/图生视频/LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_2054484478025838593.json、视频生成/图生视频/LTX2.3_数字人口播_v2.0_（融合音频生成，效果未必比1.0好）_2054789125802340354.json、视频生成/图生视频/LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好）_2054780723667718145.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Qwen-image2512+文生图+高清放大_2006552281617014786.json、图片生成/文生图/Qwen-image2512文生图+seedvr2放大（4K）_2006688942132830209.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2006358896344047617.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2008143714165723138.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2011686421953781762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
+- `CR SDXL Aspect Ratio`
+- `ColorCorrect`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `Int`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `MemoryCleaner`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 11/12 个有
-- `LTXVAudioVAEDecode` —— 11/12 个有
-- `LTXVLatentUpsampler` —— 11/12 个有
-- `LatentUpscaleModelLoader` —— 11/12 个有
-- `PrimitiveStringMultiline` —— 11/12 个有
-- `CR Text` —— 10/12 个有
-- `CreateVideo` —— 10/12 个有
-- `LTXVImgToVideoInplace` —— 10/12 个有
-- `RunningHub_VoxCPM_Generate` —— 10/12 个有
-- `RunningHub_VoxCPM_LoadModel` —— 10/12 个有
-- `SaveVideo` —— 10/12 个有
-- `PrimitiveBoolean` —— 9/12 个有
-- `ResizeImagesByLongerEdge` —— 9/12 个有
-- `LTXVImgToVideoInplaceKJ` —— 7/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/12 个有
-- `PreviewAny` —— 5/12 个有
-- `Qwen3ASRLoader_DFT` —— 5/12 个有
-- `Qwen3ASRTranscribe_DFT` —— 5/12 个有
-- `ResizeImageMaskNode` —— 5/12 个有
-- `StringConcatenate` —— 5/12 个有
-- `FloatConstant` —— 4/12 个有
-- `LTXVEmptyLatentAudio` —— 4/12 个有
-- `SimpleMath+` —— 4/12 个有
-- `easy cleanGpuUsed` —— 4/12 个有
-- `ImageResizeKJv2` —— 2/12 个有
-- `LTXVChunkFeedForward` —— 2/12 个有
-- `ModelPatchTorchSettings` —— 2/12 个有
-- `PathchSageAttentionKJ` —— 2/12 个有
-- `RH_LLMAPI_Pro_Node` —— 2/12 个有
-- `TextCombinerTwo` —— 2/12 个有
-- `VHS_VideoCombine` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `GetImageSize` —— 1/12 个有
-- `LTXVAddGuide` —— 1/12 个有
-- `SamplerEulerAncestral` —— 1/12 个有
+- `SeedVR2` —— 9/10 个有
+- `SeedVR2BlockSwap` —— 9/10 个有
+- `SeedVR2ExtraArgs` —— 9/10 个有
+- `PreviewImage` —— 8/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/10 个有
+- `CR Text` —— 3/10 个有
+- `LoadImage` —— 2/10 个有
+- `easy imageConcat` —— 2/10 个有
+- `easy promptLine` —— 2/10 个有
+- `easy seed` —— 2/10 个有
+- `SeedVR2LoadDiTModel` —— 1/10 个有
+- `SeedVR2LoadVAEModel` —— 1/10 个有
+- `SeedVR2VideoUpscaler` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+| 采样步数 | 8 | 4 - 8 | 10 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | res_2s | - | 10 | 100% |
+| 调度器 | beta57 | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，10 个样本，一致性 100%
+- 调度器 最常用 beta57，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（12/10 个样本）：Steps较低可能导致细节不足

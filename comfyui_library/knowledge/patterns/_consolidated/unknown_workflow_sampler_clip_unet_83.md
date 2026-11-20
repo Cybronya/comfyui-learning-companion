@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_83
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.960615
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 12
+level: weak
+coverage: 0.951417
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/材质迁移工作流：两次同时（目前最强）_2106755242196037633.json, 图片生成/图生图/炉石卡通转换_2093517690102181890.json, 图片生成/图生图/预测女儿长相_2046549583253213186.json, 图片生成/图生图/👾怪獸-Flux2Klein 去水印马赛克👾_2047809913426022401.json, 平台全量/KIein 9B Base 4k高清放大+增强细节_2030987361521242113.json, 平台全量/KIein 9B Base 产品精修_2041322038987591682.json, 平台全量/KIein 9B Base 人像精修_2043141656685318146.json, 平台全量/KIein 9B Base人物融图_2051132852267429890.json, 平台全量/Klein 9B Base 肌肤细节增强_2027294504553816066.json, 平台全量/klein 9B 增强皮肤细节_2025111356504018946.json, 平台全量/klein产品材质替换_2021066492002967554.json, 平台全量/【阡陌】FLUX-2-Klein 9B 蒸馏版4步单图编辑工作流_2016512839728504833.json, 平台全量/产品精修+高清放大V1.0_2064740555518726146.json]
+members: [图片生成/文生图/Z-image-turbo-fp8 基础文生图_1994352646947475457.json, 图片生成/文生图/Z-image-turbo-t2i_2073765816608313345.json, 图片生成/文生图/Z-image-文生图工作流_2103815728557281281.json, 图片生成/文生图/Z-image-淡妆浓抹V3.0文生图_2026649178574688257.json, 图片生成/文生图/Z-image-超现实模型3.0_2021938613541412866.json, 图片生成/文生图/Z-image基础文生图_2017017701364932609.json, 图片生成/文生图/Z-image文生图-像素艺术风格_1999249293112377346.json, 图片生成/文生图/Z-image文生图8步Lora2602_2028594976501800961.json, 图片生成/文生图/Z-image文生图GGUF.json_2057397174631223298.json, 图片生成/文生图/qwen-image文生图4step加速_2033447038481866754.json, 图片生成/文生图/z-image Engineer 打光lora 真实lora测试_2033372581125955586.json, 图片生成/文生图/z_image_文生图（儿童）_2034571865527685121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_83
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/材质迁移工作流：两次同时（目前最强）_2106755242196037633.json、图片生成/图生图/炉石卡通转换_2093517690102181890.json、图片生成/图生图/预测女儿长相_2046549583253213186.json、图片生成/图生图/👾怪獸-Flux2Klein 去水印马赛克👾_2047809913426022401.json、平台全量/KIein 9B Base 4k高清放大+增强细节_2030987361521242113.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Z-image-turbo-fp8 基础文生图_1994352646947475457.json、图片生成/文生图/Z-image-turbo-t2i_2073765816608313345.json、图片生成/文生图/Z-image-文生图工作流_2103815728557281281.json、图片生成/文生图/Z-image-淡妆浓抹V3.0文生图_2026649178574688257.json、图片生成/文生图/Z-image-超现实模型3.0_2021938613541412866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：12
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 9/13 个有
-- `Image Comparer (rgthree)` —— 7/13 个有
-- `ImageUpscaleWithModel` —— 2/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/13 个有
-- `UpscaleModelLoader` —— 2/13 个有
-- `ttN text` —— 2/13 个有
-- `FancyNoteNode` —— 1/13 个有
-- `ImageBatch` —— 1/13 个有
-- `ImageBlend` —— 1/13 个有
-- `ImageGrid` —— 1/13 个有
-- `ImageSharpen` —— 1/13 个有
-- `MuyeSizeSelector` —— 1/13 个有
-- `PreviewImage` —— 1/13 个有
-- `RHHiddenNodes` —— 1/13 个有
+- `CLIPLoader` —— 11/12 个有
+- `VAELoader` —— 11/12 个有
+- `ConditioningZeroOut` —— 9/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `CLIPLoaderGGUF` —— 2/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/12 个有
+- `PrimitiveStringMultiline` —— 2/12 个有
+- `AV_VAELoader` —— 1/12 个有
+- `PrimitiveString` —— 1/12 个有
+- `ResolutionSelector` —— 1/12 个有
+- `easy promptConcat` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 50 | 12 | 7% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 64% |
+| 采样算法 | euler | - | 12 | 50% |
+| 调度器 | simple | - | 12 | 92% |
+| 重绘幅度 | 1 | 0.9 - 1 | 12 | 97% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 50，12 个样本，取值分散，一致性仅 7%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 50%
+- 调度器 最常用 simple，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 0.9 - 1，12 个样本，取值集中（一致性 97%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

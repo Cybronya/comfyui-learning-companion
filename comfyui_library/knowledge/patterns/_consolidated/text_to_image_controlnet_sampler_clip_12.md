@@ -1,63 +1,77 @@
 ---
 name: text_to_image_controlnet_sampler_clip_12
 type: Text To Image
-frequency: 5
+frequency: 4
 level: strong
-coverage: 1
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, SaveImage, VAEDecode]
+coverage: 0.77525
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSizeAndCount, ImageConcatMulti, ImpactSwitch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy imageConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/19.tonnie-SD1.5老照片修复_1997627618528833537.json, 图片生成/图生图/SD1.5控制图片_2000762731127074817.json, 图片生成/图生图/绘画风格转换（水彩）_1977998649215123457.json, 图片生成/图生图/绘画风格转换（综合 油画）_2033381081344380929.json, 图片生成/图生图/绘画风格转换（综合 油画）_2113174659905703938.json]
+members: [图片生成/图生图/Z-Image Fun-ControlNet-Union 2.0 深度、姿态、条线，精准控制_1996476841798025217.json, 图片生成/图生图/Z-Image+三种ControlNet洗图新姿势（单采样器）Fun版_1996838851123585025.json, 图片生成/图生图/z image三种ControlNet洗图新姿势-fun版_1996944254406705154.json, 图片生成/文生图/Z-Image 三种控制生图+提示词反推_1997284184953667585.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/19.tonnie-SD1.5老照片修复_1997627618528833537.json、图片生成/图生图/SD1.5控制图片_2000762731127074817.json、图片生成/图生图/绘画风格转换（水彩）_1977998649215123457.json、图片生成/图生图/绘画风格转换（综合 油画）_2033381081344380929.json、图片生成/图生图/绘画风格转换（综合 油画）_2113174659905703938.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z-Image Fun-ControlNet-Union 2.0 深度、姿态、条线，精准控制_1996476841798025217.json、图片生成/图生图/Z-Image+三种ControlNet洗图新姿势（单采样器）Fun版_1996838851123585025.json、图片生成/图生图/z image三种ControlNet洗图新姿势-fun版_1996944254406705154.json、图片生成/文生图/Z-Image 三种控制生图+提示词反推_1997284184953667585.json）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImpactSwitch`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ModelPatchLoader`
+- `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `Text Multiline`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `easy ifElse`
+- `easy imageConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IPAdapterUnifiedLoader` —— 4/5 个有
-- `LoraLoader` —— 4/5 个有
-- `IPAdapterMS` —— 3/5 个有
-- `ImageResizeKJ` —— 3/5 个有
-- `StringFunction|pysssss` —— 3/5 个有
-- `CLIPVisionLoader` —— 1/5 个有
-- `IPAdapterFaceID` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
+- `Anything Everywhere` —— 3/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `MaraScottIsEmpty_v1` —— 3/4 个有
+- `MuyeTextEditOutput` —— 3/4 个有
+- `Qwen3_VQA` —— 3/4 个有
+- `QwenLoader` —— 3/4 个有
+- `WanVideoPromptExtender` —— 3/4 个有
+- `easy convertAnything` —— 3/4 个有
+- `easy int` —— 3/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `MaraScottIsEmptyOrNone_v1` —— 1/4 个有
+- `ttN concat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.7 | 0.7 - 1 | 5 | 82% |
-| 宽度 | 512 | 512 - 512 | 5 | 100% |
-| 高度 | 512 | 512 - 512 | 5 | 100% |
-| 采样步数 | 17 | 17 - 20 | 5 | 92% |
-| Prompt 约束强度(CFG) | 6.21 | 6.21 - 8 | 5 | 87% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | normal | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
+| 采样步数 | 10 | 10 - 10 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -65,13 +79,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.7，观测区间 0.7 - 1，5 个样本，取值集中（一致性 82%）
-- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 17，观测区间 17 - 20，5 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 6.21，观测区间 6.21 - 8，5 个样本，取值集中（一致性 87%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 normal，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

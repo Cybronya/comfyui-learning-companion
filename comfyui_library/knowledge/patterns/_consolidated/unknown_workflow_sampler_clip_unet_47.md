@@ -1,75 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_47
 type: Unknown Workflow
-frequency: 17
+frequency: 16
 level: moderate
-coverage: 0.862588
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.922687
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2-Klein文生图_2012139649845698562.json, 图片生成/图生图/MOSS IMAGE （首选 文生图，效果好适合详情页，主图）_2116863678090928129.json, 图片生成/文生图/(贞贞10000步 1批次)Flux Klein 9B文生图V1_2013675609699913730.json, 图片生成/文生图/(贞贞共16000步 4批次)Flux Klein 9B文生图V1_2013675619237761025.json, 图片生成/文生图/Flux-Klein文生图_2110216204848820226.json, 图片生成/文生图/Flux-Klein文生图_2110287496109187074.json, 图片生成/文生图/Flux2 Klein基础文生图工作流_2012173193552863233.json, 图片生成/文生图/Flux2-Klein 4B文生图2k版_2012059929259020289.json, 图片生成/文生图/Flux2-Klein 9B文生图2k版_2012059534927335425.json, 图片生成/文生图/Flux2-Klein-9B文生图 极速_1986681179082551298.json, 图片生成/文生图/Flux2-Klein-9B文生图 极速_2011995104159993858.json, 图片生成/文生图/Flux2-Klein-9B文生图 极速出图模型_2011995254534184961.json, 图片生成/文生图/Flux2-Klein-9B文生图+极速_2013513759398039554.json, 图片生成/文生图/极速文生图-flux 2 klein-4b_2014548009350074370.json, 图片生成/文生图/秒级文生图-Flux2-Klein 9B_2012169109827493890.json, 图片生成/文生图/秒级文生图-Flux2-Klein 9B版_2013822140604227585.json, 图片生成/文生图/秒级文生图—flux-2-klein-4b_2013130405263712257.json]
+members: [图片生成/图生图/FLUX.2多图编辑工作流_2035290550059929602.json, 图片生成/图生图/Flux-Klein-9b图片编辑_2078379352756146178.json, 图片生成/图生图/Flux.2 Klein 细节增强_2053519932205355010.json, 图片生成/图生图/Flux.2 Klein 细节增强_2058818588181622785.json, 图片生成/图生图/Flux.2 Klein 细节增强_2065718342186520578.json, 图片生成/图生图/Flux.2 Klein 细节增强_2067146753337544705.json, 图片生成/图生图/Flux.2 Klein 细节增强_2086293216298618882.json, 图片生成/图生图/Flux.2 [Klein]：图片编辑4B ComfyUI官方流_2012038832811675650.json, 图片生成/图生图/Flux.2 [Klein]：多图编辑4B ComfyUI官方流_2012024295991549954.json, 图片生成/图生图/Flux.2-Klein-图像编辑_2012002471639523329.json, 图片生成/图生图/Flux2 Klein 9B Klein 海量 一图生多图 保持人物一致 多角度_2055163523919032321.json, 图片生成/图生图/Flux2 Klein 9B Klein 海量 一图生多图 保持人物一致 多角度_2059923401174765569.json, 图片生成/图生图/Flux2Klein细节增强真实皮肤质感_2064503315794321409.json, 图片生成/图生图/Klein9b产品渲染精修_2048198461790621698.json, 图片生成/图生图/净化截图_2059612411639980033.json, 图片生成/图生图/图像编辑：超强一致性比肩某全能图像模型！Flux2 Klein_2030101405222047745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_47
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein文生图_2012139649845698562.json、图片生成/图生图/MOSS IMAGE （首选 文生图，效果好适合详情页，主图）_2116863678090928129.json、图片生成/文生图/(贞贞10000步 1批次)Flux Klein 9B文生图V1_2013675609699913730.json、图片生成/文生图/(贞贞共16000步 4批次)Flux Klein 9B文生图V1_2013675619237761025.json、图片生成/文生图/Flux-Klein文生图_2110216204848820226.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/FLUX.2多图编辑工作流_2035290550059929602.json、图片生成/图生图/Flux-Klein-9b图片编辑_2078379352756146178.json、图片生成/图生图/Flux.2 Klein 细节增强_2053519932205355010.json、图片生成/图生图/Flux.2 Klein 细节增强_2058818588181622785.json、图片生成/图生图/Flux.2 Klein 细节增强_2065718342186520578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
-- `KSampler`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 16/17 个有
-- `PathchSageAttentionKJ` —— 16/17 个有
-- `CR Text` —— 13/17 个有
-- `ConditioningZeroOut` —— 12/17 个有
-- `LayerUtility: PurgeVRAM` —— 10/17 个有
-- `PreviewImage` —— 7/17 个有
-- `GetNode` —— 5/17 个有
-- `SetNode` —— 5/17 个有
-- `JWInteger` —— 4/17 个有
-- `Int` —— 3/17 个有
-- `LoraLoaderModelOnly` —— 3/17 个有
-- `CR Prompt Text` —— 2/17 个有
-- `LoadImage` —— 2/17 个有
-- `easy promptLine` —— 2/17 个有
-- `easy seed` —— 2/17 个有
+- `ReferenceLatent` —— 15/16 个有
+- `VAEEncode` —— 15/16 个有
+- `ConditioningZeroOut` —— 14/16 个有
+- `GetImageSize` —— 14/16 个有
+- `ImageScaleToTotalPixels` —— 12/16 个有
+- `CR Text` —— 10/16 个有
+- `LoraLoaderModelOnly` —— 10/16 个有
+- `PreviewImage` —— 9/16 个有
+- `Image Comparer (rgthree)` —— 8/16 个有
+- `Int` —— 7/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/16 个有
+- `CR Prompt List` —— 2/16 个有
+- `easy promptLine` —— 2/16 个有
+- `Anything Everywhere` —— 1/16 个有
+- `ConditioningAddImageReferenceDual` —— 1/16 个有
+- `FluxKontextImageScale` —— 1/16 个有
+- `ImageScale` —— 1/16 个有
+- `ImageScaleToMaxDimension` —— 1/16 个有
+- `LayerColor: ColorAdapter` —— 1/16 个有
+- `PrimitiveInt` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 25 | 17 | 38% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 17 | 68% |
-| 采样算法 | euler | - | 17 | 94% |
-| 调度器 | simple | - | 17 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 16/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 25，17 个样本，取值分散，一致性仅 38%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，17 个样本
-- 采样算法 最常用 euler，17 个样本，一致性 94%
-- 调度器 最常用 simple，17 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 高发问题（16/17 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

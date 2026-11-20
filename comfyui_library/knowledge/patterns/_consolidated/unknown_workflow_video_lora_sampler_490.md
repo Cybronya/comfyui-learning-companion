@@ -1,83 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_490
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.493833
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader]
+coverage: 0.3582
+common_nodes: [BOOLConstant, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyNumberConvert, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveStringMultiline, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan2.2 Animate动作迁移 个人自用更新第三版4.16_2015321059171508225.json, 平台全量/动作迁移+表情迁移—Wan2.2AnimateV2+SDPose动作识别_2037066553992159233.json, 平台全量/复制抖音，爆款舞蹈，动作迁移，表情迁移，千问姿态识别_2018704980445765633.json, 数字人/数字人/动作迁移+表情迁移 升级版本_1996485212181766146.json, 数字人/数字人/动作迁移+表情迁移—Wan2.2AnimateV2+SDPose姿态识别_2045340909658705922.json, 视频生成/图生视频/Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.json]
+members: [视频生成/图生视频/SCAIL2+深度图动作参考（自然表情）降低原视频细节干扰方案_2081964333583654914.json, 视频生成/图生视频/SCAIL2人物替换+重打光lora 优化版工作流（清晰布局_小白适用_效果超夯）_2078736579782340610.json, 视频生成/图生视频/SCAIL2人物替换+首帧自动姿态对齐（一键自动工作流）_2079575491580878850.json, 视频生成/图生视频/SCAIL2系列优化版--动作迁移专用工作流（清晰布局_小白适用_效果超夯）_2075772380282187777.json, 视频生成/图生视频/多图参考 动作迁移 --SCAIL2系列优化版 （清晰布局_小白适用_效果超夯）_2074416012107272194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_490
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Wan2.2 Animate动作迁移 个人自用更新第三版4.16_2015321059171508225.json、平台全量/动作迁移+表情迁移—Wan2.2AnimateV2+SDPose动作识别_2037066553992159233.json、平台全量/复制抖音，爆款舞蹈，动作迁移，表情迁移，千问姿态识别_2018704980445765633.json、数字人/数字人/动作迁移+表情迁移 升级版本_1996485212181766146.json、数字人/数字人/动作迁移+表情迁移—Wan2.2AnimateV2+SDPose姿态识别_2045340909658705922.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/SCAIL2+深度图动作参考（自然表情）降低原视频细节干扰方案_2081964333583654914.json、视频生成/图生视频/SCAIL2人物替换+重打光lora 优化版工作流（清晰布局_小白适用_效果超夯）_2078736579782340610.json、视频生成/图生视频/SCAIL2人物替换+首帧自动姿态对齐（一键自动工作流）_2079575491580878850.json、视频生成/图生视频/SCAIL2系列优化版--动作迁移专用工作流（清晰布局_小白适用_效果超夯）_2075772380282187777.json、视频生成/图生视频/多图参考 动作迁移 --SCAIL2系列优化版 （清晰布局_小白适用_效果超夯）_2074416012107272194.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BOOLConstant`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
+- `CheckpointLoaderSimple`
+- `ComfyNumberConvert`
 - `GetNode`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `Int`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
 - `PreviewImage`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
+- `PrimitiveStringMultiline`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus TorchCompileSettings`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 4/6 个有
-- `Text` —— 3/6 个有
-- `WanVideoContextOptions` —— 3/6 个有
-- `DrawViTPose` —— 2/6 个有
-- `INTConstant` —— 2/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `MemoryCleaner` —— 2/6 个有
-- `MuyeTextEditOutput` —— 2/6 个有
-- `Primitive integer [Crystools]` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `WanVideoTeaCache` —— 2/6 个有
-- `ZML_AnyTypeSwitchFive` —— 2/6 个有
-- `easy anythingIndexSwitch` —— 2/6 个有
-- `easy float` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `BlockifyMask` —— 1/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `DrawMaskOnImage` —— 1/6 个有
-- `Evaluate Integers` —— 1/6 个有
-- `GrowMaskWithBlur` —— 1/6 个有
-- `JWStringMultiline` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
-- `easy sam3ModelLoader` —— 1/6 个有
-- `easy sam3VideoModelExtraConfig` —— 1/6 个有
-- `easy sam3VideoSegmentation` —— 1/6 个有
+- `PrimitiveBoolean` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `easy imageRemBg` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `BiRefNet_Hugo` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `ImageBatchMulti` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `Seed (rgthree)` —— 1/5 个有
+- `VideoFrameSelector` —— 1/5 个有
 
 ## 典型参数
 

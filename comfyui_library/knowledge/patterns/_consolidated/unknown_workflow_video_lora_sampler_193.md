@@ -1,88 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_193
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.712
-common_nodes: [CLIPVisionLoader, DWPreprocessor, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.782727
+common_nodes: [GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed, easy seed]
 problems: []
 missing: []
-members: [平台全量/Wan2.2 animate 动作迁移KJ版_1976818662579621890.json, 平台全量/Wan2.2 animate 视频人物、背景更换_1977377943250968578.json, 平台全量/Wan2.2 animate 视频衣服替换_1977227006632972289.json, 平台全量/Wan2.2 animate表情动作迁移（适合中近景））_1970410230880346113.json, 平台全量/Wan2.2-Animate 动作表情迁移 动作模仿 跳舞视频工作流_2052800204788776962.json, 平台全量/Wan2.2-Animate视频多合1工作流 (动作参考、角色替换、视频换装换L换万物)_1997641273764941825.json, 数字人/数字人/AI模仿mean girl表情打量别人，Wan-Animate数字人初体验_1969328742353039362.json, 视频生成/图生视频/Wan-Animate-动作参考-KJ_1969398350657318913.json, 视频生成/图生视频/Wan-Animate-角色替换-KJ_1962703044544737281.json, 视频生成/图生视频/Wan-Animate-角色替换-人物唱歌-KJ_1969620771280744450.json, 视频生成/图生视频/Wan-Animate-角色替换-小鸟摇-KJ_1969608004544983041.json, 视频生成/图生视频/Wan-Animate动作表情迁移遮罩_1969402248658907137.json]
+members: [视频生成/图生视频/Wan2.2图生视频增益加速V4_2001919692862308354.json, 视频生成/图生视频/Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json, 视频生成/图生视频/Wan2.2图生视频网感十足_2019227457009750018.json, 视频生成/图生视频/效果拉满V5-1022顶配图生视频_1981374201879773186.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_1973043672696623106.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V4_1978022050193362945.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5+lynx_1978408031887233025.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1022版_1981325230595629057.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-moe-人物适用_1978390766324224001.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V5+lynx_1978411441667592194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_193
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（平台全量/Wan2.2 animate 动作迁移KJ版_1976818662579621890.json、平台全量/Wan2.2 animate 视频人物、背景更换_1977377943250968578.json、平台全量/Wan2.2 animate 视频衣服替换_1977227006632972289.json、平台全量/Wan2.2 animate表情动作迁移（适合中近景））_1970410230880346113.json、平台全量/Wan2.2-Animate 动作表情迁移 动作模仿 跳舞视频工作流_2052800204788776962.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频增益加速V4_2001919692862308354.json、视频生成/图生视频/Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json、视频生成/图生视频/Wan2.2图生视频网感十足_2019227457009750018.json、视频生成/图生视频/效果拉满V5-1022顶配图生视频_1981374201879773186.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_1973043672696623106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `ImageResizeKJv2`
+全部 11 个 workflow 都包含：
+- `GetNode`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `String Literal`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoSetRadialAttention`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy globalSeed`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `FaceMaskFromPoseKeypoints` —— 11/12 个有
-- `ImageCropByMaskAndResize` —— 11/12 个有
-- `BlockifyMask` —— 10/12 个有
-- `DownloadAndLoadSAM2Model` —— 10/12 个有
-- `DrawMaskOnImage` —— 10/12 个有
-- `Sam2Segmentation` —— 10/12 个有
-- `GetImageSizeAndCount` —— 9/12 个有
-- `PointsEditor` —— 9/12 个有
-- `WanVideoSetLoRAs` —— 9/12 个有
-- `GrowMask` —— 8/12 个有
-- `PreviewImage` —— 8/12 个有
-- `INTConstant` —— 7/12 个有
-- `SimpleMath+` —— 7/12 个有
-- `ImageConcatMulti` —— 6/12 个有
-- `GetNode` —— 5/12 个有
-- `Int` —— 5/12 个有
-- `SetNode` —— 5/12 个有
-- `AudioCropProcessUTK` —— 4/12 个有
-- `GetImageRangeFromBatch` —— 4/12 个有
-- `easy cleanGpuUsed` —— 3/12 个有
-- `Fast Groups Muter (rgthree)` —— 2/12 个有
-- `GrowMaskWithBlur` —— 2/12 个有
-- `Switch image [Crystools]` —— 2/12 个有
-- `VHS_VideoInfoLoaded` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `Bjornulf_ShowInt` —— 1/12 个有
-- `DownloadAndLoadFlorence2Model` —— 1/12 个有
-- `Florence2Run` —— 1/12 个有
-- `Florence2toCoordinates` —— 1/12 个有
-- `InvertMask` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/12 个有
-- `MaskToImage` —— 1/12 个有
-- `Mix Color By Mask` —— 1/12 个有
-- `RMBG` —— 1/12 个有
-- `SaveImage` —— 1/12 个有
-- `TT_img_enc` —— 1/12 个有
-- `VHS_VideoInfo` —— 1/12 个有
-- `WanVideoContextOptions` —— 1/12 个有
-- `easy clearCacheAll` —— 1/12 个有
+- `ImageResizeKJv2` —— 10/11 个有
+- `Int` —— 10/11 个有
+- `PreviewImage` —— 10/11 个有
+- `WanVideoImageToVideoEncode` —— 10/11 个有
+- `WanVideoTorchCompileSettings` —— 10/11 个有
+- `easy showAnything` —— 10/11 个有
+- `LoadLynxResampler` —— 6/11 个有
+- `LynxEncodeFaceIP` —— 6/11 个有
+- `LynxInsightFaceCrop` —— 6/11 个有
+- `RH_Captioner` —— 6/11 个有
+- `WanVideoAddLynxEmbeds` —— 6/11 个有
+- `WanVideoExtraModelSelect` —— 6/11 个有
+- `WanVideoTextEncodeCached` —— 6/11 个有
+- `WanVideoEmptyEmbeds` —— 1/11 个有
+- `WanVideoVACEEncode` —— 1/11 个有
+- `WanVideoVACEModelSelect` —— 1/11 个有
+- `easy float` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 

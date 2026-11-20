@@ -1,76 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_clip_32
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: strong
-coverage: 0.895533
-common_nodes: [CLIPLoader, CLIPTextEncode, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.978714
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010412985205923842.json, 视频生成/图生视频/DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010413439973330946.json, 视频生成/图生视频/大丝袜DasiwaWAN22漫剧专用图生视频_2010348801411780609.json, 视频生成/图生视频/大丝袜DasiwaWAN22漫剧专用图生视频_2010386931812667393.json, 视频生成/图生视频/电影质感+动漫视频+单图版（DaSiWaV9 WAN2.single image）_2013251284761059330.json, 视频生成/图生视频/电影质感动漫视频生成DaSiWaV9 -三图生视频-首帧+中间帧+尾帧-自动提示词_2023651384347860994.json, 视频生成/图生视频/电影质感动漫视频生成DaSiWaV9 -单图生视频-自动提示词_2023419797345669121.json, 视频生成/图生视频/电影质感动漫视频生成DaSiWaV9 -双图首尾帧视频-自动提示词_2023632584692994049.json, 视频生成/图生视频/真人动漫视频生成DaSiWaV9_支持单图 _首尾帧 _ 三图首尾帧_2055193382787526658.json, 视频生成/图生视频/首尾帧视频-无提示词_2025278485094211586.json, 视频生成/图生视频/🔥超好用🔥动漫视频生成-支持单图 -首尾帧 -三图首尾帧_2046496638318944258.json, 视频生成/文生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2083117546869444609.json, 视频生成/文生视频/最强动漫视频生成DaSiWaV9_2013204639008694274.json, 视频生成/文生视频/最强动漫视频生成DaSiWaV9_支持单图+_首尾帧+_+三图首尾帧_2045146603354333186.json, 视频生成/文生视频/超自然动漫图生视频DaSiWaV9支持单图+_首尾帧+_三图_2034443299951480833.json]
+members: [图片生成/图生图/万相wan2.1极致图生视频ComfyUI_1906877379761905665.json, 视频生成/图生视频/87time WAN 图生视频_1913510854523060225.json, 视频生成/图生视频/FusioniX图生视频_1947317037666291713.json, 视频生成/图生视频/UNET加载器跑wan2.1视频_1935624782786527233.json, 视频生成/图生视频/WAN2.1图生视频_1902195474282258433.json, 视频生成/图生视频/Wan2.1 360度旋转_1938538805421105153.json, 视频生成/图生视频/Wan2.1 万相 飞天特效_1910876944500752386.json, 视频生成/图生视频/Wan2.1 万相360度万物旋转（超快）_1910598046382784514.json, 视频生成/图生视频/Wan2.1 万相图生视频_1902233258837303298.json, 视频生成/图生视频/Wan2.1 图生视频+Lora 工作流_1942457845642366977.json, 视频生成/图生视频/Wan2.1 图生视频+Lora 工作流【AI小王子】_1902895670603460609.json, 视频生成/图生视频/Wan2.1 图生视频_1911283580138418178.json, 视频生成/图生视频/Wan2.1 通义万相 捏捏特效 捏扁特效_1911587726854975489.json, 视频生成/图生视频/万相wan2.1 图生视频 ComfyUI org 官方流  B站 楚门的AI世界_1894951787738824705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_32
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010412985205923842.json、视频生成/图生视频/DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010413439973330946.json、视频生成/图生视频/大丝袜DasiwaWAN22漫剧专用图生视频_2010348801411780609.json、视频生成/图生视频/大丝袜DasiwaWAN22漫剧专用图生视频_2010386931812667393.json、视频生成/图生视频/电影质感+动漫视频+单图版（DaSiWaV9 WAN2.single image）_2013251284761059330.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/万相wan2.1极致图生视频ComfyUI_1906877379761905665.json、视频生成/图生视频/87time WAN 图生视频_1913510854523060225.json、视频生成/图生视频/FusioniX图生视频_1947317037666291713.json、视频生成/图生视频/UNET加载器跑wan2.1视频_1935624782786527233.json、视频生成/图生视频/WAN2.1图生视频_1902195474282258433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
 - `LoadImage`
-- `SimpleMath+`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 14/15 个有
-- `ModelSamplingSD3` —— 14/15 个有
-- `PathchSageAttentionKJ` —— 14/15 个有
-- `easy cleanGpuUsed` —— 14/15 个有
-- `PainterI2V` —— 12/15 个有
-- `RIFE VFI` —— 12/15 个有
-- `INTConstant` —— 11/15 个有
-- `ImageConcatMulti` —— 11/15 个有
-- `JoinStrings` —— 11/15 个有
-- `Qwen3_VQA` —— 11/15 个有
-- `ShowText|pysssss` —— 11/15 个有
-- `TextInput_` —— 11/15 个有
-- `WanFirstLastFrameToVideo` —— 8/15 个有
-- `ImageBatchMulti` —— 7/15 个有
-- `ImageResizeKJv2` —— 7/15 个有
-- `PreviewImage` —— 7/15 个有
-- `PrimitiveInt` —— 7/15 个有
-- `WanMultiFrameRefToVideo` —— 7/15 个有
-- `Fast Groups Muter (rgthree)` —— 6/15 个有
-- `CR Text` —— 4/15 个有
-- `PrimitiveString` —— 4/15 个有
-- `RHHiddenNodes` —— 4/15 个有
-- `CustomAddLabel` —— 3/15 个有
-- `LoraLoaderModelOnly` —— 1/15 个有
+- `ImageResizeKJ` —— 12/14 个有
+- `UNETLoader` —— 10/14 个有
+- `WanVideoTeaCacheKJ` —— 9/14 个有
+- `LoraLoaderModelOnly` —— 6/14 个有
+- `WanVideoEnhanceAVideoKJ` —— 6/14 个有
+- `Int` —— 4/14 个有
+- `UnetLoaderGGUF` —— 4/14 个有
+- `TextInput_` —— 2/14 个有
+- `ImageUpscaleWithModel` —— 1/14 个有
+- `MathExpression|pysssss` —— 1/14 个有
+- `ModelSamplingSD3` —— 1/14 个有
+- `UpscaleModelLoader` —— 1/14 个有
+- `WanVideoModelLoader` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 15 | 100% |
-| Prompt 约束强度(CFG) | 6 | 4 - 6 | 15 | 81% |
-| 采样算法 | 1 | 1 - 1 | 15 | 100% |
-| 调度器 | euler | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 87% |
+| 采样步数 | 20 | 10 - 20 | 14 | 87% |
+| Prompt 约束强度(CFG) | 6 | 1 - 8 | 14 | 75% |
+| 采样算法 | uni_pc | - | 14 | 93% |
+| 调度器 | simple | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
@@ -78,8 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，15 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，15 个样本，取值集中（一致性 81%）
-- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 87%
+- 采样步数 中位数 20，观测区间 10 - 20，14 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 8，14 个样本
+- 采样算法 最常用 uni_pc，14 个样本，一致性 93%
+- 调度器 最常用 simple，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）

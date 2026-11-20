@@ -1,74 +1,69 @@
 ---
 name: unknown_workflow_unet_vae_4
 type: Unknown Workflow
-frequency: 14
-level: weak
-coverage: 0.866714
-common_nodes: [CLIPLoader, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 16
+level: moderate
+coverage: 0.88925
+common_nodes: [CLIPLoader, MiniMaxH3ImageToVideo, ResolutionSelector, UNETLoader, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/guidao画风-moss_2116143813424148482.json, 图片生成/图生图/多参考图生成图片 1底图-4参考图_2113249722726182913.json, 图片生成/图生图/多参考图生成图片 1底图-5参考图_2112078134458806274.json, 图片生成/图生图/水墨武侠-moss_2115319736803352578.json, 图片生成/文生图/ERNIE-Image-Turbo文生图，测试用，感觉效果一般般_2046403986416214017.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2045418640316567553.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2059103096625782786.json, 图片生成/文生图/ERNIE-Image灵韵东方 • 文心一格造像师：定格知识增强的跨模态艺术巅峰_2044349388868292609.json, 图片生成/文生图/Erine Turbo文生图_2044755147204599809.json, 图片生成/文生图/MOSS-8步文生图_2115078986400358401.json, 图片生成/文生图/cos水墨武侠moss_2115245609451089921.json, 图片生成/文生图/ernie+klein双采_2045055189861801985.json, 图片生成/文生图/ernie+zit双采样_2045054582375587842.json, 图片生成/文生图/百度ernie+zit双采样_2045695437658656770.json]
+members: [数字人/数字人/minimax H3-rapid_2084240131556470785.json, 视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json, "视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json", 视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json, 视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json, 视频生成/图生视频/海螺H3)首尾帧生视频_2085148305012649985.json, 视频生成/图生视频/海螺Minimax_H3_图生视频——极速优化版_2084239451739484161.json, 视频生成/文生视频/Minimax H3 首尾帧丨首帧丨尾帧丨文生视频丨老许Gary🎉_2084172294758424577.json, 视频生成/文生视频/Minimax_h3_文生视频_2088656070670643202.json, 视频生成/文生视频/minimax-h3 -标准官方工作流（文生_首尾帧生视频）_2094754298751180802.json, 视频生成/文生视频/minimax_h3文生视频 图生视频 首尾帧+sage加速_2084126972392857602.json, 视频生成/文生视频/minimax_h3文生视频 图生视频 首尾帧+sage加速_2085982926470213634.json, 视频生成/文生视频/海螺-Minimax_H3_文生视频-优化版_2085285483189456897.json, 视频生成/文生视频/海螺H3(Minimax h3)文生视频加速开源版_2084173653360599042.json, 视频生成/文生视频/海螺Minimax_H3_文生视频——极速优化版_2084238982388477954.json, 视频生成/文生视频/首尾帧生视频+_2084526811551195138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/guidao画风-moss_2116143813424148482.json、图片生成/图生图/多参考图生成图片 1底图-4参考图_2113249722726182913.json、图片生成/图生图/多参考图生成图片 1底图-5参考图_2112078134458806274.json、图片生成/图生图/水墨武侠-moss_2115319736803352578.json、图片生成/文生图/ERNIE-Image-Turbo文生图，测试用，感觉效果一般般_2046403986416214017.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/minimax H3-rapid_2084240131556470785.json、视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json、视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json、视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json、视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
-- `SaveImage`
+- `MiniMaxH3ImageToVideo`
+- `ResolutionSelector`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 12/14 个有
-- `EmptyFlux2LatentImage` —— 12/14 个有
-- `KSampler` —— 11/14 个有
-- `PreviewImage` —— 11/14 个有
-- `ConditioningZeroOut` —— 8/14 个有
-- `LoraLoaderModelOnly` —— 8/14 个有
-- `LoadImage` —— 6/14 个有
-- `CR Text` —— 5/14 个有
-- `KSamplerAdvanced` —— 3/14 个有
-- `easy imageConcat` —— 3/14 个有
-- `ModelSamplingAuraFlow` —— 2/14 个有
-- `TextEncodeQwenImage21` —— 2/14 个有
-- `VAEEncode` —— 2/14 个有
-- `GetNode` —— 1/14 个有
-- `INTConstant` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `SetNode` —— 1/14 个有
+- `BasicGuider` —— 15/16 个有
+- `BasicScheduler` —— 15/16 个有
+- `KSamplerSelect` —— 15/16 个有
+- `PathchSageAttentionKJ` —— 15/16 个有
+- `RandomNoise` —— 15/16 个有
+- `SamplerCustomAdvanced` —— 15/16 个有
+- `VAEDecode` —— 15/16 个有
+- `VAEDecodeAudio` —— 15/16 个有
+- `CR Text` —— 14/16 个有
+- `LoadImage` —— 12/16 个有
+- `PainterVRAM` —— 12/16 个有
+- `VHS_VideoCombine` —— 12/16 个有
+- `GetImageSize` —— 10/16 个有
+- `ImageScaleToTotalPixels` —— 10/16 个有
+- `ComfyMathExpression` —— 8/16 个有
+- `INTConstant` —— 8/16 个有
+- `PrimitiveFloat` —— 8/16 个有
+- `SimpleMath+` —— 8/16 个有
+- `CreateVideo` —— 5/16 个有
+- `SaveVideo` —— 5/16 个有
+- `EasyCache` —— 4/16 个有
+- `Label (rgthree)` —— 3/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/16 个有
+- `PreviewImage` —— 1/16 个有
+- `workflow>采样解码` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 11 | 41% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 14 | 0% |
-| 采样算法 | euler | - | 14 | 79% |
-| 调度器 | simple | - | 14 | 79% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，11 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，14 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，14 个样本，一致性 79%
-- 调度器 最常用 simple，14 个样本，一致性 79%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（9/14 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,50 +3,59 @@ name: text_to_image_lora_sampler_clip_644
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.904
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, INTConstant, Image Comparer (rgthree), JjkText, KSampler, KSamplerAdvanced, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, QwenEditTextEncode_EditUtils, SaveImage, UNETLoader, VAEDecode, VAELoader, easy clearCacheAll, easy imageScaleDownToSize, easy loraStack, easy loraStackApply, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8035
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DF_Integer, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GetNode, Image Comparer (rgthree), ImageCASharpening+, ImageColorMatch+, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, ReferenceLatent, SaveImage, SeedVR2Conditioning, SeedVR2Preprocess, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy float, easy int, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2动漫转真人双采加速图生图处理工作流_2102131179557310466.json, 图片生成/图生图/豹豹喵呜K2漫转真工作流｜Krea2动漫转真人双采加速高遵从_2101934725219840002.json]
+members: [图片生成/图生图/人像写真商用级8K无损超分，1分钟极速去AI味加皮肤质感高清放大优化版_2112252252428791809.json, 图片生成/图生图/迄今超强人像商用极速版｜去油去AI味加皮肤质感｜最高8K无损超分放大_2112068659169554434.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_644
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Krea2动漫转真人双采加速图生图处理工作流_2102131179557310466.json、图片生成/图生图/豹豹喵呜K2漫转真工作流｜Krea2动漫转真人双采加速高遵从_2101934725219840002.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人像写真商用级8K无损超分，1分钟极速去AI味加皮肤质感高清放大优化版_2112252252428791809.json、图片生成/图生图/迄今超强人像商用极速版｜去油去AI味加皮肤质感｜最高8K无损超分放大_2112068659169554434.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
+- `DF_Integer`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
-- `INTConstant`
+- `FluxGuidance`
+- `GetNode`
 - `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageColorMatch+`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `Krea2OstrisEditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `QwenEditTextEncode_EditUtils`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `ReferenceLatent`
 - `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2Preprocess`
+- `SetNode`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `easy clearCacheAll`
-- `easy imageScaleDownToSize`
-- `easy loraStack`
-- `easy loraStackApply`
+- `easy float`
+- `easy int`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
@@ -66,7 +75,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,5 +86,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

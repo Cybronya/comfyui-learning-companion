@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_vae_11
 type: Text To Image
-frequency: 10
+frequency: 11
 level: strong
-coverage: 0.897
+coverage: 0.946636
 common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/krea-小红书 超逼真 网图制作_1973625565053890561.json, 图片生成/图生图/图像自动反推+图生图_1973015122102849538.json, 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json, 图片生成/文生图/F.1 在线生图-文生图_1873981103047315457.json, 图片生成/文生图/F.1 在线生图-文生图_2043506086015143938.json, 图片生成/文生图/F.1 在线生图-文生图_2043856469157748737.json, 图片生成/文生图/【阡陌】FLUX krea 反推提示词文生图工作流_1951531387230826497.json, 图片生成/文生图/【阡陌】FLUX+LORA+Joy Caption 反推提示词文生图_1942186080890204162.json, 图片生成/文生图/【阡陌】Nunchaku8倍加速 flux joy反推文生图_1944743997447524354.json, 平台全量/【洗图神器】网红写实美女模特 小红书各大平台 电商模特 电商产品 超真实 网图制作 小红日常晒图_1979393936655552514.json]
+members: [图片生成/文生图/FLUX GGUF Q4 更节约显存，出图更快_1829532907324231681.json, 图片生成/文生图/FLUX GGUF Q4_1961449815852957697.json, 图片生成/文生图/FLUX文生图+2_LoRA_1912954209854259202.json, 图片生成/文生图/FLUX文生图+LoRA_1912954176630943746.json, 图片生成/文生图/FLUX文生图_1922920426165473282.json, 图片生成/文生图/Flux1.1pro-精炼人像lora_1910491843820253185.json, 图片生成/文生图/Flux人像写真最终版_1910503564932804610.json, 图片生成/文生图/flux 文生图3倍加速 基础款_1934106744388018178.json, 图片生成/文生图/flux-8_1930451421953691649.json, 图片生成/文生图/flux文生图-8步生图_1976848182871314434.json, 图片生成/文生图/z-image文生图_2094325413752426498.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/krea-小红书 超逼真 网图制作_1973625565053890561.json、图片生成/图生图/图像自动反推+图生图_1973015122102849538.json、图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json、图片生成/文生图/F.1 在线生图-文生图_1873981103047315457.json、图片生成/文生图/F.1 在线生图-文生图_2043506086015143938.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/FLUX GGUF Q4 更节约显存，出图更快_1829532907324231681.json、图片生成/文生图/FLUX GGUF Q4_1961449815852957697.json、图片生成/文生图/FLUX文生图+2_LoRA_1912954209854259202.json、图片生成/文生图/FLUX文生图+LoRA_1912954176630943746.json、图片生成/文生图/FLUX文生图_1922920426165473282.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
@@ -31,50 +31,45 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/10 个有
-- `DualCLIPLoader` —— 9/10 个有
-- `FluxGuidance` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `LayerUtility: JoyCaptionBeta1` —— 7/10 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 7/10 个有
-- `LoadImage` —— 7/10 个有
-- `Anything Everywhere3` —— 6/10 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 6/10 个有
-- `ShowText|pysssss` —— 5/10 个有
-- `JjkText` —— 3/10 个有
-- `DeepTranslatorTextNode` —— 2/10 个有
-- `CR Text Concatenate` —— 1/10 个有
-- `MuyeTextEditOutput` —— 1/10 个有
-- `NunchakuFluxDiTLoader` —— 1/10 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `DualCLIPLoader` —— 10/11 个有
+- `FluxGuidance` —— 10/11 个有
+- `UNETLoader` —— 9/11 个有
+- `LoraLoaderModelOnly` —— 6/11 个有
+- `PreviewImage` —— 6/11 个有
+- `TeaCache` —— 4/11 个有
+- `LoraLoader` —— 2/11 个有
+- `UnetLoaderGGUF` —— 2/11 个有
+- `CLIPLoader` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 30 | 10 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 80% |
-| 调度器 | simple | - | 10 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 1024 | 768 - 1024 | 10 | 89% |
-| 高度 | 1536 | 1024 - 1536 | 10 | 83% |
+| 采样步数 | 20 | 8 - 35 | 11 | 45% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 11 | 97% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 73% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 768 | 720 - 1080 | 11 | 88% |
+| 高度 | 1200 | 1024 - 1960 | 11 | 78% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 30，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 80%
-- 调度器 最常用 simple，10 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 768 - 1024，10 个样本，取值集中（一致性 89%）
-- 高度 中位数 1536，观测区间 1024 - 1536，10 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 20，观测区间 8 - 35，11 个样本，取值分散，一致性仅 45%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，11 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 73%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 720 - 1080，11 个样本，取值集中（一致性 88%）
+- 高度 中位数 1200，观测区间 1024 - 1960，11 个样本
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

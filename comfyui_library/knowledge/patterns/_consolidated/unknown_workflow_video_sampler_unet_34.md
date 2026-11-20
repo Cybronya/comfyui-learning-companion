@@ -1,59 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_unet_34
 type: Unknown Workflow
-frequency: 12
+frequency: 9
 level: moderate
-coverage: 0.811333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.686667
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!(加速版)_2085390867740844033.json, 视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!_2084829895192043521.json, 视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版加速版!RH普通会员可跑!_2085390604653125634.json, 视频生成/图生视频/MiniMax_H3全能多参自动提示词版_2084314426563452929.json, 视频生成/图生视频/RH-H3-参考生视频-基础流程1.0_2114523574005493761.json, 视频生成/图生视频/RH-H3-参考生视频-基础流程1.0_2115597164633214977.json, 视频生成/图生视频/RH-H3-文图生视频-基础流程1.0_2114526025295155202.json, 视频生成/图生视频/RH-H3-文图生视频-基础流程1.0_2115600681053806594.json, 视频生成/文生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2086089679518134274.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频-自动提示词_2084463867618488321.json, 视频生成/文生视频/MiniMax_H3文生视频自动提示词版_2084361115349372930.json, 视频生成/文生视频/minimax_h3 多参考图生视频+sage加速_2084551631911342082.json]
+members: [视频生成/图生视频/ltx2.3导演台_2061378483611328514.json, 视频生成/图生视频/【Work-Fisher】全自动六宫格LTX2.3导演台_2062044647668666370.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json, 视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json, 视频生成/图生视频/六宫格横屏1280导演台自动化工作流（固定15秒）_2070323766567194626.json, 视频生成/图生视频/短剧漫剧wan+九宫格横屏1280导演台自动化工作流（固定20秒）_2080658867448541185.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定18秒）_2067903674852134913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_34
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!(加速版)_2085390867740844033.json、视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!_2084829895192043521.json、视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版加速版!RH普通会员可跑!_2085390604653125634.json、视频生成/图生视频/MiniMax_H3全能多参自动提示词版_2084314426563452929.json、视频生成/图生视频/RH-H3-参考生视频-基础流程1.0_2114523574005493761.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/ltx2.3导演台_2061378483611328514.json、视频生成/图生视频/【Work-Fisher】全自动六宫格LTX2.3导演台_2062044647668666370.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
+全部 9 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `GetNode`
 - `KSamplerSelect`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/12 个有
-- `PrimitiveStringMultiline` —— 10/12 个有
-- `LoraLoaderModelOnly` —— 9/12 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/12 个有
-- `孤海注释` —— 7/12 个有
-- `MiniMaxH3ImageToVideo` —— 5/12 个有
-- `RHHiddenNodes` —— 5/12 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/12 个有
-- `GIMMVFI_interpolate` —— 3/12 个有
-- `ImageStitch` —— 3/12 个有
-- `MemoryCleaner` —— 3/12 个有
-- `图像缩放V2_孤海` —— 3/12 个有
-- `EasyCache` —— 2/12 个有
-- `Text` —— 2/12 个有
+- `LoadImage` —— 8/9 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `RH_LLMAPI_Pro_Node` —— 8/9 个有
+- `TTResolutionSelector` —— 7/9 个有
+- `LoadVideo` —— 6/9 个有
+- `Text Multiline` —— 6/9 个有
+- `LTXDirectorGuide` —— 5/9 个有
+- `CS-LTXGridDirector` —— 4/9 个有
+- `SF-LTXDirectorGuide` —— 4/9 个有
+- `SF-LTXGridDirector` —— 4/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `DiffusionModelLoaderKJ` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `LTXDirector` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_RhartImageG2ImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
 
 ## 典型参数
 

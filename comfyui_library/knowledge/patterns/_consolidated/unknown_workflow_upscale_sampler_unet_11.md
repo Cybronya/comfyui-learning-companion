@@ -1,88 +1,82 @@
 ---
 name: unknown_workflow_upscale_sampler_unet_11
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.892167
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, DF_Int_to_Float, EasyCache, Fast Groups Bypasser (rgthree), GetVideoComponents, ImpactSwitch, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoadVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowAnything|Mie, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.70325
+common_nodes: [Any Switch (rgthree), Anything Everywhere3, CLIPLoader, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, QwenImage21Cache, RHLLMChatNode, ResizeLongestToNode, ResolutionSelector, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json, 视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json, 视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json, 视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/文生视频/双采高低采singularity模型加速版vdn高步数-MiniMax H3｜多参图像音频极速生视频_2097862187531456514.json]
+members: [图片生成/文生图/Qwen Image 2.1 全能工作流合集_2101841162679177218.json, 图片生成/文生图/Qwen Image 2.1文生编辑一锅端工作流详拆系列11集_2102948623549026306.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101781526932447234.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101831592514772993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json、视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json、视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json、视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json、视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 全能工作流合集_2101841162679177218.json、图片生成/文生图/Qwen Image 2.1文生编辑一锅端工作流详拆系列11集_2102948623549026306.json、图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101781526932447234.json、图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101831592514772993.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `DF_Int_to_Float`
-- `EasyCache`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
-- `ImpactSwitch`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoadAudio`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `LoadVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `PreviewImage`
+- `QwenImage21Cache`
+- `RHLLMChatNode`
+- `ResizeLongestToNode`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowAnything|Mie`
+- `ShowText|pysssss`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 5/6 个有
-- `DapaoH3LocalPromptNode` —— 5/6 个有
-- `DapaoH3PromptBoxNode` —— 5/6 个有
-- `ImageResizeKJv2` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 5/6 个有
-- `PreviewAny` —— 5/6 个有
-- `SolAttnMiniMax` —— 5/6 个有
-- `VAEEncode` —— 5/6 个有
-- `VAEEncodeAudio` —— 5/6 个有
-- `RandomSeedNoise` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `T8_IndexTTS25_EmotionControl` —— 4/6 个有
-- `T8_IndexTTS25_Generate` —— 4/6 个有
-- `T8_IndexTTS25_ModelLoader` —— 4/6 个有
-- `ManualSigmas` —— 2/6 个有
-- `GoohaiUniversalSlider` —— 1/6 个有
-- `LTXVSeparateAVLatent` —— 1/6 个有
-- `Lora Loader Stack (rgthree)` —— 1/6 个有
-- `MiniMaxH3SparkAttentionAuto` —— 1/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/6 个有
-- `SplitSigmas` —— 1/6 个有
+- `Label (rgthree)` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `Fast Bypasser (rgthree)` —— 1/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SplitImageWithAlpha` —— 1/4 个有
+- `VOSR2ModelLoader` —— 1/4 个有
+- `VOSR2Upscale` —— 1/4 个有
+- `easy float` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 25 | 25 - 25 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -90,4 +84,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

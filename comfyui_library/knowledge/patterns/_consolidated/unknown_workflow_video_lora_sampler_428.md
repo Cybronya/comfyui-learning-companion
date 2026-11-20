@@ -1,86 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_428
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.767143
-common_nodes: [CR Text, GetImageSizeAndCount, ImageFromBatch+, ImageResizeKJ, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, Text Concatenate, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
+frequency: 6
+level: strong
+coverage: 0.500333
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/Wan2.1_T2V_lynx+VACE姿势参考人物一致性_1976840452160868354.json, 平台全量/Wan2.1_T2V_lynx+VACE视频换脸_1976890391054241794.json, 平台全量/姿态迁移模仿-人脸一致性视频Wan2.1_T2V_lynx+VACE文本驱动_1977636048396263425.json, 视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json, 视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json, 视频生成/图生视频/完美参考人脸lynx加VACE精准姿势迁移_1977047772987838465.json, 视频生成/图生视频/顶配视频换脸lynx+VACE完美一致性_1977047808907857921.json]
+members: [视频生成/图生视频/单图出高动态音画视频加对口型_2031370411778248706.json, 视频生成/图生视频/短剧对白生成 图片转视频音频同步支持单图首尾帧_2020844422413422593.json, 视频生成/图生视频/首尾帧出高动态音画视频加对口型_2031577434885197826.json, 视频生成/图生视频/高动态对口型图生视频_2029600384762781697.json, 视频生成/图生视频/高动态音画视频口型一条龙-支持单图、首尾帧_2017232753040822273.json, 视频生成/文生视频/高动态音画同步图生视频_支持单图、首尾帧_2046419746307973122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_428
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/Wan2.1_T2V_lynx+VACE姿势参考人物一致性_1976840452160868354.json、平台全量/Wan2.1_T2V_lynx+VACE视频换脸_1976890391054241794.json、平台全量/姿态迁移模仿-人脸一致性视频Wan2.1_T2V_lynx+VACE文本驱动_1977636048396263425.json、视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json、视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/单图出高动态音画视频加对口型_2031370411778248706.json、视频生成/图生视频/短剧对白生成 图片转视频音频同步支持单图首尾帧_2020844422413422593.json、视频生成/图生视频/首尾帧出高动态音画视频加对口型_2031577434885197826.json、视频生成/图生视频/高动态对口型图生视频_2029600384762781697.json、视频生成/图生视频/高动态音画视频口型一条龙-支持单图、首尾帧_2017232753040822273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CR Text`
-- `GetImageSizeAndCount`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
+- `ColorMatch`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PreviewImage`
-- `Text Concatenate`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `ModelPatchTorchSettings`
+- `PainterAI2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddLynxEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `ImpactSwitch` —— 6/7 个有
-- `RH_LLMAPI_NODE` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `ImageConcatMulti` —— 5/7 个有
-- `AIO_Preprocessor` —— 4/7 个有
-- `DrawMaskOnImage` —— 4/7 个有
-- `GrowMask` —— 4/7 个有
-- `SeCModelLoader` —— 4/7 个有
-- `SeCVideoSegmentation` —— 4/7 个有
-- `BlockifyMask` —— 3/7 个有
-- `DepthAnything_V2` —— 3/7 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/7 个有
-- `ImageFromBatch` —— 3/7 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 3/7 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 3/7 个有
-- `MaskPreview+` —— 3/7 个有
-- `PointsEditor` —— 2/7 个有
-- `Image Crop Face` —— 1/7 个有
-- `ImageScale` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy imageColorMatch` —— 1/7 个有
+- `JoinStrings` —— 5/6 个有
+- `PreviewAudio` —— 5/6 个有
+- `Qwen3_VQA` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `SomethingToString` —— 5/6 个有
+- `TextInput_` —— 5/6 个有
+- `AudioSeparation` —— 4/6 个有
+- `SaveAudio` —— 4/6 个有
+- `TDQwen3TTSDefineSpeaker` —— 4/6 个有
+- `TDQwen3TTSModelLoader` —— 4/6 个有
+- `TDQwen3TTSMultiDialog` —— 4/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `RIFE VFI` —— 2/6 个有
+- `Float` —— 1/6 个有
+- `GetImagesFromBatchIndexed` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 6 | 83% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 83% |
 
 ## 常见问题
 
@@ -88,4 +84,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，6 个样本，取值集中（一致性 83%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 83%

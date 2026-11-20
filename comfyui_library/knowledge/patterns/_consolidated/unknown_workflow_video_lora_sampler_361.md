@@ -1,66 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_361
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.866875
-common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveInt, ResolutionSelector, SelfLiftH3Sampler, SelfLiftH3TST, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy loraStack, easy loraStackApply]
+coverage: 0.656714
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/minimax h3 Fast_omni模型 SelfLift  二采基础工作流_2117882051616661506.json, 平台全量/minimax h3 SelfLift  二采基础工作流_2117833099823374337.json, 平台全量/minimax h3 fast_h3_omni模型 动作迁移_SelfLift 人物替换二采_2117825972014772226.json, 平台全量/minimax h3 pika_h3 SelfLift 二采基础工作流_2117843603002322946.json, 平台全量/minimax h3 pika_h3 lora 人物迁移SelfLift 二采_2117586709830529026.json, 平台全量/minimax h3 动作迁移_SelfLift 人物替换_2114736679738232834.json, "数字人/数字人/h3+动作迁移 人物替换 Action Transfer, Character Replacemen_2116341700925939713.json", "视频生成/图生视频/h3+动作迁移_人物替换_Action_Transfer,_Character_Replacemen_2116359873431687170.json"]
+members: [视频生成/图生视频/SVI稳定长视频生成【无限循环】_1983506887171842049.json, 视频生成/图生视频/SVI长视频_1982104863096086530.json, 视频生成/图生视频/SVI长镜头分段提示词工作流_1981341961615474690.json, 视频生成/图生视频/Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测！_2000388407983566850.json, 视频生成/图生视频/Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大公开！_1986760720148852738.json, 视频生成/图生视频/无限视频SVI-Wan22_1999143356380966913.json, 视频生成/文生视频/网红制造WanVideoWrapper_I2V_SVI_长视频工作流_1988840595856691202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_361
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/minimax h3 Fast_omni模型 SelfLift  二采基础工作流_2117882051616661506.json、平台全量/minimax h3 SelfLift  二采基础工作流_2117833099823374337.json、平台全量/minimax h3 fast_h3_omni模型 动作迁移_SelfLift 人物替换二采_2117825972014772226.json、平台全量/minimax h3 pika_h3 SelfLift 二采基础工作流_2117843603002322946.json、平台全量/minimax h3 pika_h3 lora 人物迁移SelfLift 二采_2117586709830529026.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/SVI稳定长视频生成【无限循环】_1983506887171842049.json、视频生成/图生视频/SVI长视频_1982104863096086530.json、视频生成/图生视频/SVI长镜头分段提示词工作流_1981341961615474690.json、视频生成/图生视频/Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测！_2000388407983566850.json、视频生成/图生视频/Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大公开！_1986760720148852738.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `SelfLiftH3TST`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `easy loraStack`
-- `easy loraStackApply`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3SigmaShift` —— 6/8 个有
-- `ModelAttentionBackend` —— 6/8 个有
-- `easy cleanGpuUsed` —— 6/8 个有
-- `easy positive` —— 6/8 个有
-- `ComfySwitchNode` —— 5/8 个有
-- `TrimAudioDuration` —— 5/8 个有
-- `VHS_VideoInfo` —— 5/8 个有
-- `ImageBatchMulti` —— 3/8 个有
-- `ImageFromBatch` —— 3/8 个有
-- `RepeatImageBatch` —— 3/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `CLIPVisionLoader` —— 5/7 个有
+- `InvertMask` —— 5/7 个有
+- `WanVideoClipVisionEncode` —— 5/7 个有
+- `WanVideoVACEStartToEndFrame` —— 5/7 个有
+- `ColorMatch` —— 4/7 个有
+- `WanVideoSetLoRAs` —— 4/7 个有
+- `easy forLoopEnd` —— 3/7 个有
+- `easy forLoopStart` —— 3/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `PrimitiveStringMultiline` —— 2/7 个有
+- `easy showAnything` —— 2/7 个有
+- `AudioCrop` —— 1/7 个有
+- `CR Text Input Switch (4 way)` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LoadAudio` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `RIFE VFI` —— 1/7 个有
+- `easy promptLine` —— 1/7 个有
 
 ## 典型参数
 

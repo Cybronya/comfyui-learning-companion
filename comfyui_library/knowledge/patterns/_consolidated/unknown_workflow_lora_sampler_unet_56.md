@@ -1,82 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_unet_56
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: strong
-coverage: 0.902909
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.972
+common_nodes: [CLIPLoader, EmptyLatentImage, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, KSampler, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeKrea2OstrisEdit, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Anything2Real 2601：动漫转真人_2009908341815906305.json, 图片生成/图生图/Qwen 2511一键换装，复杂场景超高一致性_2055129671032942594.json, 图片生成/图生图/Qwen 2511零偏移换装流_2060847633358479361.json, 图片生成/图生图/Qwen Image Edit 2511 Anime：真人转动漫_2009866929703489537.json, 图片生成/图生图/Qwen Image-Eidt 2511零偏移换装流_2029356578679300098.json, 图片生成/图生图/Qwen-Image-Edit-2511-Anime：真人转动漫_2012495893307592705.json, 图片生成/图生图/Qwen2511- Anime-真人转动漫-写实转二次元_2046231083565457410.json, 图片生成/图生图/Qwen2511-Anything2Real 2601：动漫转真人-二次元转真人_2046228567264071681.json, 图片生成/图生图/Qwenedit2511（强化编辑效果一致性）_2011527482813452289.json, 图片生成/图生图/【三种对比】QwenEdit2511任意风格转写实_2010304815355666433.json, 平台全量/换脸换装 智能图片编辑 万物迁移 QwenEdit 2511 提升角色一致性Lora  人物写真照片_2013795462008020994.json]
+members: [图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json, 图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079277352131063809.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079758940988071937.json, 图片生成/图生图/Krea2编辑移除元素_2079366566331904001.json, 图片生成/图生图/krea2-多人姿态控制_2092223835184656385.json, 图片生成/图生图/krea2-最强姿态控制_2091531264733048833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Anything2Real 2601：动漫转真人_2009908341815906305.json、图片生成/图生图/Qwen 2511一键换装，复杂场景超高一致性_2055129671032942594.json、图片生成/图生图/Qwen 2511零偏移换装流_2060847633358479361.json、图片生成/图生图/Qwen Image Edit 2511 Anime：真人转动漫_2009866929703489537.json、图片生成/图生图/Qwen Image-Eidt 2511零偏移换装流_2029356578679300098.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json、图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
+- `EmptyLatentImage`
+- `FluxKontextImageScale`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
+- `Krea2OstrisEditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `TextEncodeKrea2OstrisEdit`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 8/11 个有
-- `VAEDecode` —— 6/11 个有
-- `Image Comparer (rgthree)` —— 5/11 个有
-- `Seed Everywhere` —— 5/11 个有
-- `VAEDecodeTiled` —— 5/11 个有
-- `LayerUtility: ImageReel` —— 4/11 个有
-- `LayerUtility: ImageReelComposit` —— 4/11 个有
-- `PreviewImage` —— 4/11 个有
-- `CFGNorm` —— 3/11 个有
-- `CustomAddLabel` —— 3/11 个有
-- `Label (rgthree)` —— 3/11 个有
-- `ModelSamplingAuraFlow` —— 3/11 个有
-- `GetImageSize` —— 2/11 个有
-- `ImageResize+` —— 2/11 个有
-- `JjkText` —— 2/11 个有
-- `ImageScaleBy` —— 1/11 个有
-- `QwenEditAdaptiveLongestEdge` —— 1/11 个有
+- `GetImageSize` —— 8/10 个有
+- `CR Prompt Text` —— 5/10 个有
+- `BodyRatioMapperSDPoseRender` —— 2/10 个有
+- `CheckpointLoaderSimple` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `ResolutionSelector` —— 2/10 个有
+- `SDPoseKeypointExtractor` —— 2/10 个有
+- `BBoxYOLO` —— 1/10 个有
+- `YOLOModelLoader` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 11 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | beta57 | - | 11 | 73% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 10 | 8 - 10 | 10 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 752 - 1024 | 10 | 87% |
+| 高度 | 1208 | 1024 - 1584 | 10 | 81% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 5/11 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 beta57，11 个样本，一致性 73%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（18/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 10，10 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 752 - 1024，10 个样本，取值集中（一致性 87%）
+- 高度 中位数 1208，观测区间 1024 - 1584，10 个样本，取值集中（一致性 81%）

@@ -1,118 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_175
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.565923
-common_nodes: [Any Switch (rgthree), BlockifyMask, Bookmark (rgthree), CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageBatch, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageToMask, LayerMask: DrawBBoxMaskV2, LayerMask: MaskGrow, LayerMask: ObjectDetectorMask, LayerMask: SegformerB2ClothesUltra, LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PowerVisionObjectDetection, PowerVisionQwenModelLoader, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, RepeatImageBatch, ResizeMask, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, StringConcatenate, Switch any [Crystools], ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy sam3ModelLoader, easy sam3VideoSegmentation, easy seed, easy showAnything]
+coverage: 0.790364
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, DiffusionModelLoaderKJ, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UniBlockSwap, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/VIP-Wan视频编辑高级版V5.2-PRO_2085277773182103554.json, 平台全量/Wan视频编辑高级版V5.2-PRO_2066377766559371265.json, 平台全量/ZTX-V5.2-PRO最新_2013561547997581314.json, 平台全量/ZTX=V5.2-PRO_1998347245554663426.json, 平台全量/影视替换高级版_1999752094389239809.json, 平台全量/视频人物转绘（bata）_2072212481044467714.json, 平台全量/视频编辑5_2004878957029851137.json, 数字人/数字人/V5.2-PRO（遮罩20 开启人脸检测）_2034257190483140609.json, 数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json, 视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json, 视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json, 视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json, 视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json]
+members: [图片生成/图生图/MiniMax_H3_活人爱神8步_2098940180483891201.json, 图片生成/图生图/MiniMax_H3_活人爱神8步_2099052125048365057.json, 图片生成/图生图/MiniMax_H3_活人爱神8步_2099677604700844034.json, 视频生成/图生视频/H3 八步图生视频｜5秒预检版_2098722980808445953.json, 视频生成/文生视频/MiniMax H3 活人感多合一视频工作流_2103421922276106242.json, 视频生成/文生视频/MiniMax H3 活人爱神8步_2097733630738128897.json, 视频生成/文生视频/MiniMax H3一键直出活人感女友二采工作流_2098322238746480641.json, 视频生成/文生视频/MiniMax+H3+多参考生视频双采放大高清流+Multi_Ref+Video+Gen_2087401084498309122.json, 视频生成/文生视频/MiniMax+H3+文生_图生视频_首尾帧+双采高清加速版+_2087401112684027906.json, 视频生成/文生视频/MiniMax+H3多参双采latent放大版_2090080342467235842.json, 视频生成/文生视频/MiniMax+H3文生视频双采latent放大版_2090080368669057026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_175
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（平台全量/VIP-Wan视频编辑高级版V5.2-PRO_2085277773182103554.json、平台全量/Wan视频编辑高级版V5.2-PRO_2066377766559371265.json、平台全量/ZTX-V5.2-PRO最新_2013561547997581314.json、平台全量/ZTX=V5.2-PRO_1998347245554663426.json、平台全量/影视替换高级版_1999752094389239809.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/MiniMax_H3_活人爱神8步_2098940180483891201.json、图片生成/图生图/MiniMax_H3_活人爱神8步_2099052125048365057.json、图片生成/图生图/MiniMax_H3_活人爱神8步_2099677604700844034.json、视频生成/图生视频/H3 八步图生视频｜5秒预检版_2098722980808445953.json、视频生成/文生视频/MiniMax H3 活人感多合一视频工作流_2103421922276106242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BlockifyMask`
-- `Bookmark (rgthree)`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: MaskGrow`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: CropByMask V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `PowerVisionObjectDetection`
-- `PowerVisionQwenModelLoader`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveString`
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `DiffusionModelLoaderKJ`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_Translator`
-- `RMBG`
-- `RepeatImageBatch`
-- `ResizeMask`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SimpleMath+`
-- `StringConcatenate`
-- `Switch any [Crystools]`
-- `ToBinaryMask`
-- `VHS_LoadVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UniBlockSwap`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy isMaskEmpty`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 12/13 个有
-- `PointsEditor` —— 11/13 个有
-- `AddLabel` —— 9/13 个有
-- `ImpactIfNone` —— 9/13 个有
-- `DownloadAndLoadSAM2Model` —— 7/13 个有
-- `Sam2Segmentation` —— 7/13 个有
-- `Note Plus (mtb)` —— 6/13 个有
-- `easy framesEditor` —— 6/13 个有
-- `ImageResizeKJ` —— 1/13 个有
-- `easy convertAnything` —— 1/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/11 个有
+- `Label (rgthree)` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `SaveImage` —— 10/11 个有
+- `CS-MultiImageLoader` —— 9/11 个有
+- `LTXVConcatAVLatent` —— 9/11 个有
+- `LTXVSeparateAVLatent` —— 9/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 9/11 个有
+- `MinimaxH3LatentUpscaler3D` —— 9/11 个有
+- `VAEDecodeAudio` —— 9/11 个有
+- `LoadAudio` —— 8/11 个有
+- `ManualSigmas` —— 8/11 个有
+- `VHS_LoadVideo` —— 8/11 个有
+- `ModelAttentionBackend` —— 7/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
+- `PreviewImage` —— 3/11 个有
+- `ImageResizeKJv2` —— 2/11 个有
+- `MiniMaxH3AVDecodeT8` —— 2/11 个有
+- `MiniMaxH3ImageToVideo` —— 2/11 个有
+- `PT_H3ConcatAVLatent` —— 2/11 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/11 个有
+- `RunningHub Deepcleaner` —— 2/11 个有
+- `ShowText|fofo` —— 2/11 个有
+- `VAEEncode` —— 2/11 个有
+- `VAEEncodeAudio` —— 2/11 个有
+- `UNETLoader` —— 1/11 个有
 
 ## 典型参数
 

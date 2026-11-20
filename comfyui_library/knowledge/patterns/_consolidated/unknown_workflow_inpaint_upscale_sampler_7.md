@@ -1,79 +1,90 @@
 ---
 name: unknown_workflow_inpaint_upscale_sampler_7
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: strong
-coverage: 0.701
-common_nodes: [CLIPTextEncodeFlux, CLIPVisionLoader, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyImage, Image Comparer (rgthree), ImageConcanate, ImageCrop+, ImageToMask, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewBridge, PreviewImage, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.837333
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ColorCorrectOfUtils, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GetImageSize+, Image Comparer (rgthree), ImageCompositeMasked, ImagePadForOutpaintMasked, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LoadImage, MultiplicationNode, PreviewImage, PrimitiveFloat, PrimitiveInt, SaveImage, StyleModelApply, StyleModelLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy imageColorMatch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/更好用的万物迁移Fill-OneReward_1967472909642031106.json, 平台全量/【超好用的万物迁移】Fill-OneReward 局部重绘  最新最好用的万物迁移_1986964949111123969.json, 平台全量/产品图商用工作流【全行业】_1896745402626711554.json, 平台全量/安-好用的万物迁移_1937080050640408577.json, 平台全量/更好用的万物迁移_1972125173342269442.json]
+members: [图片生成/图生图/FLUX 无痕扩图 (高清人像专用)_1935171756485189633.json, 图片生成/图生图/FLUX无痕扩图+ 细节自动修复_1975516517129433090.json, 图片生成/图生图/双截棍极速扩图-一分钟出图_1922314971554729985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_upscale_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/更好用的万物迁移Fill-OneReward_1967472909642031106.json、平台全量/【超好用的万物迁移】Fill-OneReward 局部重绘  最新最好用的万物迁移_1986964949111123969.json、平台全量/产品图商用工作流【全行业】_1896745402626711554.json、平台全量/安-好用的万物迁移_1937080050640408577.json、平台全量/更好用的万物迁移_1972125173342269442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX 无痕扩图 (高清人像专用)_1935171756485189633.json、图片生成/图生图/FLUX无痕扩图+ 细节自动修复_1975516517129433090.json、图片生成/图生图/双截棍极速扩图-一分钟出图_1922314971554729985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPTextEncodeFlux`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `ConditioningZeroOut`
+- `ColorCorrectOfUtils`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
-- `EmptyImage`
+- `FluxGuidance`
+- `GetImageSize+`
 - `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageCrop+`
-- `ImageToMask`
+- `ImageCompositeMasked`
+- `ImagePadForOutpaintMasked`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
 - `InpaintModelConditioning`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: MaskGrow`
 - `LoadImage`
-- `MaskToImage`
-- `PreviewBridge`
+- `MultiplicationNode`
 - `PreviewImage`
-- `ReduxAdvanced`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `SaveImage`
+- `StyleModelApply`
 - `StyleModelLoader`
-- `UNETLoader`
-- `UltimateSDUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: MaskPreview` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `GetImageSize` —— 3/5 个有
-- `ImageRemoveBackground+` —— 1/5 个有
-- `RemBGSession+` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `Florence2ModelLoader` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
+- `NunchakuFluxDiTLoader` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy imageInsetCrop` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | normal | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | sgm_uniform | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 normal，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

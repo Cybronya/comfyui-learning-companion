@@ -2,80 +2,78 @@
 name: text_to_image_sampler_clip_unet_100
 type: Text To Image
 frequency: 7
-level: moderate
-coverage: 0.858143
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
+level: strong
+coverage: 0.846
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2 Turbo风格迁移（双采反推版）_2070847946253496321.json, 图片生成/图生图/Krea2-trubo-洗图_2069945131855343618.json, 图片生成/图生图/Krea2-trubo-洗图工作流_2069770345149718529.json, 图片生成/图生图/boogu-trubo-洗图工作流_2069767095663030273.json, 图片生成/图生图/百度ERNIE-imag-turbo-洗图工作流（反推提示词）_2044786223306252289.json, 图片生成/文生图/Krea2 Turbo风格迁移（双采反推版）_2070490329257697282.json, 图片生成/文生图/百度ERNIE-image 人像文生图 【 提示词尺寸优化版 】_2044598172412022786.json]
+members: [图片生成/图生图/Z-image 图像反推+去AI感_1994614273647185921.json, 图片生成/图生图/Z-image 图像反推+去AI感_2084482159057915906.json, 图片生成/图生图/Z-image自动反推图生图+seedvr2放大工作流_1994759435346190337.json, 图片生成/图生图/z-image图提示词生图_1999347155796193281.json, 图片生成/图生图/老高Z-image + seedvr2 + 背景反推_2014303163351830530.json, 图片生成/文生图/Z-image + seedvr2 + 图片反推_1990637223408263169.json, 图片生成/文生图/Z-image 图像反推+去AI感_1994602887898669057.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_100
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Krea2 Turbo风格迁移（双采反推版）_2070847946253496321.json、图片生成/图生图/Krea2-trubo-洗图_2069945131855343618.json、图片生成/图生图/Krea2-trubo-洗图工作流_2069770345149718529.json、图片生成/图生图/boogu-trubo-洗图工作流_2069767095663030273.json、图片生成/图生图/百度ERNIE-imag-turbo-洗图工作流（反推提示词）_2044786223306252289.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-image 图像反推+去AI感_1994614273647185921.json、图片生成/图生图/Z-image 图像反推+去AI感_2084482159057915906.json、图片生成/图生图/Z-image自动反推图生图+seedvr2放大工作流_1994759435346190337.json、图片生成/图生图/z-image图提示词生图_1999347155796193281.json、图片生成/图生图/老高Z-image + seedvr2 + 背景反推_2014303163351830530.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 5/7 个有
-- `ShowText|pysssss` —— 5/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `llama_cpp_parameters` —— 3/7 个有
-- `PreviewAny` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `ImpactSwitch` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `ResolutionSelector` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `Qwen3_VQA` —— 6/7 个有
+- `SeedVR2` —— 6/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `AddTextPrefix` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `TT_img_enc` —— 1/7 个有
+- `TextBox` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 10 | 7 | 80% |
+| 采样步数 | 9 | 9 - 9 | 7 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 7 | 43% |
-| 重绘幅度 | 1 | 0.4 - 1 | 7 | 67% |
-| 宽度 | 1024 | 720 - 1024 | 7 | 85% |
-| 高度 | 1280 | 1024 - 1280 | 7 | 90% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1080 | 1080 - 1920 | 7 | 76% |
+| 高度 | 1920 | 1080 - 1920 | 7 | 83% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 10，7 个样本
+- 采样步数 中位数 9，观测区间 9 - 9，7 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，7 个样本，一致性 43%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，7 个样本
-- 宽度 中位数 1024，观测区间 720 - 1024，7 个样本，取值集中（一致性 85%）
-- 高度 中位数 1280，观测区间 1024 - 1280，7 个样本，取值集中（一致性 90%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 1080 - 1920，7 个样本
+- 高度 中位数 1920，观测区间 1080 - 1920，7 个样本，取值集中（一致性 83%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

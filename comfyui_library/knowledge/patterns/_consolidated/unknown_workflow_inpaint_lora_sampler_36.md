@@ -1,73 +1,93 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_36
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.39
-common_nodes: [BiRefNet_Hugo, CLIPLoader, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FastCanvas, FastCanvasTool, GetImageSize+, GetNode, ImagePadForOutpaint, InpaintModelConditioning, KSampler (Efficient), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, PreviewImage, QwenMultiangleCameraNode, SaveImage, SetNode, UNETLoader, VAELoader]
-problems: []
+coverage: 0.936
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyImage, FluxGuidance, GetImageSize+, Image Comparer (rgthree), ImageConcanate, ImageCrop+, ImageToMask, InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, KSamplerAdvanced, LayerMask: MaskStroke, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MaskToImage, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy imageInsetCrop, easy imageRemBg, easy imageSize, easy makeImageForICLora]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Klein_9B文生图、单图编辑、多图编辑、局部重绘、扩图_2055930510144221186.json, 图片生成/文生图/flux-2-klein-9b-fp8  全套 全家福 文生 编辑 溶图 扩图 洗图 修图 多角度_2020325725206745089.json, 图片生成/文生图/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2084459615470841857.json, 图片生成/文生图/一键运行 klein 9B TRUE-V2 微调模型  文生图、单图编辑、多图编辑、局部重绘、扩图_2055864120817266690.json, 平台全量/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2026567949154263041.json]
+members: [图片生成/图生图/FLUX高精度万物迁移_1985765112948695042.json, 图片生成/图生图/换内衣改，只上传涂抹，不要动其他的_2096872904851021825.json, 图片生成/图生图/新完美迁移服装 内衣_1963438376848396289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Klein_9B文生图、单图编辑、多图编辑、局部重绘、扩图_2055930510144221186.json、图片生成/文生图/flux-2-klein-9b-fp8  全套 全家福 文生 编辑 溶图 扩图 洗图 修图 多角度_2020325725206745089.json、图片生成/文生图/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2084459615470841857.json、图片生成/文生图/一键运行 klein 9B TRUE-V2 微调模型  文生图、单图编辑、多图编辑、局部重绘、扩图_2055864120817266690.json、平台全量/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2026567949154263041.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX高精度万物迁移_1985765112948695042.json、图片生成/图生图/换内衣改，只上传涂抹，不要动其他的_2096872904851021825.json、图片生成/图生图/新完美迁移服装 内衣_1963438376848396289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BiRefNet_Hugo`
-- `CLIPLoader`
-- `CR Text`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `FastCanvas`
-- `FastCanvasTool`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `FluxGuidance`
 - `GetImageSize+`
-- `GetNode`
-- `ImagePadForOutpaint`
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `ImageCrop+`
+- `ImageToMask`
+- `InpaintCrop`
 - `InpaintModelConditioning`
-- `KSampler (Efficient)`
+- `InpaintStitch`
+- `KSampler`
+- `KSamplerAdvanced`
+- `LayerMask: MaskStroke`
+- `LayerUtility: ImageRemoveAlpha`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PainterFluxImageEdit`
-- `PreviewImage`
-- `QwenMultiangleCameraNode`
+- `MaskToImage`
 - `SaveImage`
-- `SetNode`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
+- `easy imageInsetCrop`
+- `easy imageRemBg`
+- `easy imageSize`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCaptionNode` —— 4/5 个有
-- `VAEEncode` —— 4/5 个有
+- `PreviewImage` —— 2/3 个有
+- `BaiduTranslateNode` —— 1/3 个有
+- `CR Latent Batch Size` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 5 | 44% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 20 | 3 | 0% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 20，3 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

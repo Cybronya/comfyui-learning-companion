@@ -1,66 +1,84 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_51
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9242
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, JWFloat, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3ChunkFeedForwardT8Advanced, MiniMaxH3ChunkedTwoPassPlanT8Advanced, MiniMaxH3ChunkedTwoPassUpscaleT8Advanced, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, easy cleanGpuUsed]
+frequency: 4
+level: strong
+coverage: 0.91075
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [图片生成/图生图/低显存直出4k-MiniMax H3双采多参生视频_2113461682122092545.json, 视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100787039317876737.json, 视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100884384172830721.json, 视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100928696604520449.json, 视频生成/图生视频/MiniMax H3双采参考生视频-低显存版本_2104091652603338754.json]
+members: [图片生成/图生图/【人物一致多角度】FLUX完美三视图不同视角IP角色创建_1916057498137333761.json, 图片生成/图生图/室内外洗图洗稿2.0丨超强质感3k高清_1925214634473627650.json, 图片生成/图生图/室内建筑场景洗图+高清修复_1937868192171606018.json, 图片生成/图生图/室内建筑场景洗图+高清修复_1976190617967558657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_51
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/低显存直出4k-MiniMax H3双采多参生视频_2113461682122092545.json、视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100787039317876737.json、视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100884384172830721.json、视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100928696604520449.json、视频生成/图生视频/MiniMax H3双采参考生视频-低显存版本_2104091652603338754.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【人物一致多角度】FLUX完美三视图不同视角IP角色创建_1916057498137333761.json、图片生成/图生图/室内外洗图洗稿2.0丨超强质感3k高清_1925214634473627650.json、图片生成/图生图/室内建筑场景洗图+高清修复_1937868192171606018.json、图片生成/图生图/室内建筑场景洗图+高清修复_1976190617967558657.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `JWFloat`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
+- `ImageResizeKJ`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3ChunkFeedForwardT8Advanced`
-- `MiniMaxH3ChunkedTwoPassPlanT8Advanced`
-- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PreviewAny`
+- `LoraLoader`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
+- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/5 个有
-- `SaveVideo` —— 4/5 个有
-- `GetNode` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `RH_DLSS5Enhance` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `Joy_caption_two` —— 2/4 个有
+- `Joy_caption_two_load` —— 2/4 个有
+- `LayerMask: LoadFlorence2Model` —— 2/4 个有
+- `LayerUtility: Florence2Image2Prompt` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `ControlNetApplySD3` —— 1/4 个有
+- `ControlNetLoader` —— 1/4 个有
+- `DWPreprocessor` —— 1/4 个有
+- `EmptySD3LatentImage` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Florence2ModelLoader` —— 1/4 个有
+- `Florence2Run` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `LoadImagesFromURL` —— 1/4 个有
+- `ModelSamplingFlux` —— 1/4 个有
+- `Simple String` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
+- `UltimateSDUpscale` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| ControlNet 权重 | 0.75 | - | 1 | 100% |
+| LoRA 模型强度 | 0.5 | 0.5 - 0.9 | 4 | 71% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -68,4 +86,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.5，观测区间 0.5 - 0.9，4 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

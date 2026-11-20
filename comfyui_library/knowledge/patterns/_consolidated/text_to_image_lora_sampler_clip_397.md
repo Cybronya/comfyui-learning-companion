@@ -3,81 +3,77 @@ name: text_to_image_lora_sampler_clip_397
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8562
-common_nodes: [Anything Everywhere3, ApplyFBCacheOnModel, Bjornulf_FreeVRAM, CFGZeroStarAndInit, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Int, KSampler, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy seed, easy showAnything]
-problems: []
+coverage: 0.8276
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/cos自拍_1919987623421743105.json, 图片生成/图生图/公孙离自拍_1920419864220209153.json, 图片生成/图生图/梦见月自拍_1920439776271601666.json, 图片生成/图生图/花火cos_1918976114239410178.json, 图片生成/图生图/躺地拍照2_1918867851929915393.json]
+members: [图片生成/图生图/全能图片2.1图生图 低价渠道高效处理生成工具_2114069487065587714.json, 图片生成/图生图/全能图片2.5全能编辑 文生图图生图多功能处理_2098835900410195969.json, 图片生成/图生图/全能图片2.5电商低成本生图 单张低至0.21元_2098862195231772674.json, 图片生成/图生图/全能图片2角色一致四格分镜 漫剧自动分镜出图_2098848127490023425.json, 图片生成/图生图/全能图片G 2.0去脏去噪｜精修图生图电商处理_2090660175639310337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_397
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/cos自拍_1919987623421743105.json、图片生成/图生图/公孙离自拍_1920419864220209153.json、图片生成/图生图/梦见月自拍_1920439776271601666.json、图片生成/图生图/花火cos_1918976114239410178.json、图片生成/图生图/躺地拍照2_1918867851929915393.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片2.1图生图 低价渠道高效处理生成工具_2114069487065587714.json、图片生成/图生图/全能图片2.5全能编辑 文生图图生图多功能处理_2098835900410195969.json、图片生成/图生图/全能图片2.5电商低成本生图 单张低至0.21元_2098862195231772674.json、图片生成/图生图/全能图片2角色一致四格分镜 漫剧自动分镜出图_2098848127490023425.json、图片生成/图生图/全能图片G 2.0去脏去噪｜精修图生图电商处理_2090660175639310337.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Anything Everywhere3`
-- `ApplyFBCacheOnModel`
-- `Bjornulf_FreeVRAM`
-- `CFGZeroStarAndInit`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `Int`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: TextJoin`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Molmo7BDbnb` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/5 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_Nano_Banana2_Image2Image_Batch` —— 1/5 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 1/5 个有
+- `RH_RhartImageNNb21ImageToImage` —— 1/5 个有
+- `RH_RhartImageNProEdit` —— 1/5 个有
+- `Textbox` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1920 | 5 | 66% |
-| 高度 | 1920 | 1080 - 1920 | 5 | 77% |
-| 采样步数 | 35 | 35 - 35 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1920，5 个样本
-- 高度 中位数 1920，观测区间 1080 - 1920，5 个样本
-- 采样步数 中位数 35，观测区间 35 - 35，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

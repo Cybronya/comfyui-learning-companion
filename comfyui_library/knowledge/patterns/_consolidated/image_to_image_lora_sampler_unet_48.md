@@ -1,74 +1,75 @@
 ---
 name: image_to_image_lora_sampler_unet_48
 type: Image To Image
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.844
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.892636
+common_nodes: [CLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/万物手办简单玩法_1971909657885339650.json, 图片生成/图生图/产品去标贴_1971522569771892738.json, 图片生成/图生图/修图师必备一键去瑕疵_2018971979549777922.json, 图片生成/图生图/修图师早点下班_2001217985199173634.json, 图片生成/图生图/修图师精修专用_2000844949270786050.json, 图片生成/图生图/千问超级版（去水印抹除物体、添加模特，一致性人物，更改服装，）_1959594362835513345.json, 图片生成/图生图/物品人物生成手办动漫摆放电脑前万物手办简单玩法_2068932630082576385.json, 图片生成/图生图/老金驿站】Qwen单图溶图4步极速工作流_1958797125020774402.json, 图片生成/图生图/融图原版（产品标贴会变）_2034564115947069442.json, 平台全量/fusion v2_1967419094213517314.json, 平台全量/产品与场景的融合_2026918184837713922.json, 平台全量/产品祛除标贴、瑕疵_2036981380885782529.json, 平台全量/修图师早点下班_1963490839417933826.json]
+members: [图片生成/图生图/Qwen去水印_1986102218543824897.json, 图片生成/图生图/Z-Image图生图洗图_2046840416087052290.json, 图片生成/图生图/Z-Image图生图洗图_2094304765537771521.json, 图片生成/图生图/Z-Image图生图洗图_2101937229131243521.json, 图片生成/图生图/Z-Image图生图洗图_2105121490088841217.json, 图片生成/图生图/Z-Image图生图洗图_2105498770577387521.json, 图片生成/图生图/Z-Image图生图洗图_2112490094929203201.json, 图片生成/图生图/Z-image + LoRA 图生图工作流_2059600757091033090.json, 图片生成/图生图/Z-image ControlNet 图生图工作流_2059610100196798465.json, 图片生成/图生图/Z-image ControlNet 图生图工作流_2091491515486003202.json, 图片生成/图生图/【工作台】图生图洗图+lora换脸_2075928247342292993.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_48
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/万物手办简单玩法_1971909657885339650.json、图片生成/图生图/产品去标贴_1971522569771892738.json、图片生成/图生图/修图师必备一键去瑕疵_2018971979549777922.json、图片生成/图生图/修图师早点下班_2001217985199173634.json、图片生成/图生图/修图师精修专用_2000844949270786050.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen去水印_1986102218543824897.json、图片生成/图生图/Z-Image图生图洗图_2046840416087052290.json、图片生成/图生图/Z-Image图生图洗图_2094304765537771521.json、图片生成/图生图/Z-Image图生图洗图_2101937229131243521.json、图片生成/图生图/Z-Image图生图洗图_2105121490088841217.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGNorm`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
+- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 12/13 个有
-- `Image Comparer (rgthree)` —— 12/13 个有
-- `easy cleanGpuUsed` —— 10/13 个有
-- `FluxKontextImageScale` —— 9/13 个有
-- `SeedVR2` —— 9/13 个有
-- `SeedVR2BlockSwap` —— 9/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/13 个有
-- `RH_Translator` —— 3/13 个有
-- `ImageResizeKJv2` —— 2/13 个有
-- `ImageScaleToTotalPixels` —— 2/13 个有
-- `PathchSageAttentionKJ` —— 1/13 个有
+- `CLIPTextEncode` —— 10/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
+- `RepeatLatentBatch` —— 4/11 个有
+- `PreviewImage` —— 3/11 个有
+- `AIO_Preprocessor` —— 2/11 个有
+- `ConditioningZeroOut` —— 2/11 个有
+- `ModelPatchLoader` —— 2/11 个有
+- `ZImageFunControlnet` —— 2/11 个有
+- `DuckHideNode` —— 1/11 个有
+- `DuckQREncodeNode` —— 1/11 个有
+- `ImageScale` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 4 - 25 | 13 | 54% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 13 | 35% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 9 | 4 - 10 | 11 | 82% |
+| Prompt 约束强度(CFG) | 1.5 | 1 - 2 | 11 | 77% |
+| 采样算法 | euler | - | 11 | 91% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 0.85 | 0.4 - 1 | 11 | 79% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 4 - 25，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，13 个样本，取值分散，一致性仅 35%
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 9，观测区间 4 - 10，11 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 2，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 91%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 0.85，观测区间 0.4 - 1，11 个样本
+- 高发问题（8/11 个样本）：Steps较低可能导致细节不足

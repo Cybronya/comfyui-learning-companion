@@ -1,82 +1,80 @@
 ---
 name: image_to_image_lora_sampler_unet_101
 type: Image To Image
-frequency: 8
+frequency: 6
 level: strong
-coverage: 0.8615
-common_nodes: [CFGNorm, CLIPLoader, CR Text, Compare, GetImageSize, ImageResize+, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RHHiddenNodes, SaveImage, ShowText|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy ifElse]
+coverage: 0.5945
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【双向补齐-故事分镜制作V2】全能图片pro-qwen 2509（关键帧叙事法）_1986024758141747201.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）_1983000935146356738.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2034085594611060737.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2041160207996297218.json, 图片生成/图生图/千问【故事分镜制作】图生图工作流_1992872342263230466.json, 图片生成/图生图/双向分镜故事链_1994343795951083521.json, 平台全量/【故事分镜制作】洗图神器qwen-Edit-2509（next scene）_1989523225610735617.json, 视频生成/图生视频/【故事分镜制作】qwen-Edit-2509_2015966817742753793.json]
+members: [图片生成/图生图/FireRed 1.1 海报文字渲染 参考图生艺术字_2029383175213948929.json, 图片生成/图生图/FireRed 1.1 自动化妆美颜-超强一致性_2029381063323160577.json, 图片生成/图生图/FireRed Image-Eidt  4步加速Lora 小红书图像编辑模型_2025955278805540865.json, 图片生成/图生图/FireRed Image-Eidt 1.1 8步加速Lora 小红书图像编辑模型_2029213158472159233.json, 图片生成/图生图/Qwen-Image多视角图像生成，强一致性！！_1975747642506522626.json, 图片生成/文生图/2029840730553847809.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_101
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【双向补齐-故事分镜制作V2】全能图片pro-qwen 2509（关键帧叙事法）_1986024758141747201.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）_1983000935146356738.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2034085594611060737.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2041160207996297218.json、图片生成/图生图/千问【故事分镜制作】图生图工作流_1992872342263230466.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FireRed 1.1 海报文字渲染 参考图生艺术字_2029383175213948929.json、图片生成/图生图/FireRed 1.1 自动化妆美颜-超强一致性_2029381063323160577.json、图片生成/图生图/FireRed Image-Eidt  4步加速Lora 小红书图像编辑模型_2025955278805540865.json、图片生成/图生图/FireRed Image-Eidt 1.1 8步加速Lora 小红书图像编辑模型_2029213158472159233.json、图片生成/图生图/Qwen-Image多视角图像生成，强一致性！！_1975747642506522626.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CFGNorm`
 - `CLIPLoader`
-- `CR Text`
-- `Compare`
-- `GetImageSize`
-- `ImageResize+`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `RHHiddenNodes`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SetNode`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 6/8 个有
-- `EmptyLatentImage` —— 2/8 个有
-- `FluxResolutionNode` —— 2/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
-- `RH_Nano_Banana_Image2Image` —— 1/8 个有
+- `AspectRatio` —— 5/6 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `JjkText` —— 5/6 个有
+- `ImageResize+` —— 4/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `AlphaChanelRemove` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/6 个有
+- `NunchakuQwenImageDiTLoader` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `ZML_AddSolidColorBackground` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| 采样步数 | 8 | 8 - 8 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 8 | 6 - 8 | 6 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 6 - 8，6 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（8/6 个样本）：Steps较低可能导致细节不足

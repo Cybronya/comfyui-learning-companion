@@ -1,78 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_unet_57
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.969727
-common_nodes: [CLIPLoader, EmptyLatentImage, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, KSampler, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeKrea2OstrisEdit, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: moderate
+coverage: 0.9368
+common_nodes: [CLIPLoader, ConditioningZeroOut, ImageStitch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json, 图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json, 图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079277352131063809.json, 图片生成/图生图/Krea2编辑模型Remove移除（5750步）_2079758940988071937.json, 图片生成/图生图/Krea2编辑移除元素_2079366566331904001.json, 图片生成/图生图/krea2-多人姿态控制_2092223835184656385.json, 图片生成/图生图/krea2-最强姿态控制_2091531264733048833.json, 平台全量/Krea2-风格参考迁移工作流_2098323483385225217.json]
+members: [图片生成/图生图/Nunchaku-Pose姿势参考-千问Edit2509图像编辑_1971205875295830018.json, 图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971207824632168449.json, 图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971210529568149505.json, 图片生成/图生图/Nunchaku-证件照-Edit2509图像编辑_1971199922907336705.json, 图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1970828887754186753.json, 图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1971040326016212994.json, 图片生成/图生图/Qwen-Image-Edit_2509单图融合编辑【Nunchaku版】_1971933422384050178.json, 图片生成/图生图/qwen-2511 Cosplay任何角色_2028679612187811842.json, 图片生成/图生图/千问Edit2509图像编辑-多图结婚照_1971036029203423233.json, 图片生成/图生图/多人场景融合-千问Edit2509图像编辑_1970822561934282754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Krea2-风格参考迁移工作流_2099055746683064321.json、图片生成/图生图/Krea2-风格参考迁移工作流_2099660682370306049.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2078078349246812162.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079019378749825025.json、图片生成/图生图/Krea2_Ostris_风格迁移工作流_2079401963980156929.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Nunchaku-Pose姿势参考-千问Edit2509图像编辑_1971205875295830018.json、图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971207824632168449.json、图片生成/图生图/Nunchaku-人物首尾帧制作-Edit2509图像编辑_1971210529568149505.json、图片生成/图生图/Nunchaku-证件照-Edit2509图像编辑_1971199922907336705.json、图片生成/图生图/Pose姿势参考-千问Edit2509图像编辑_1970828887754186753.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `FluxKontextImageScale`
-- `FluxKontextMultiReferenceLatentMethod`
+- `ConditioningZeroOut`
+- `ImageStitch`
 - `KSampler`
-- `Krea2OstrisEditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeKrea2OstrisEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 8/11 个有
-- `CR Prompt Text` —— 5/11 个有
-- `PrimitiveStringMultiline` —— 3/11 个有
-- `ResolutionSelector` —— 3/11 个有
-- `BodyRatioMapperSDPoseRender` —— 2/11 个有
-- `CheckpointLoaderSimple` —— 2/11 个有
-- `PreviewImage` —— 2/11 个有
-- `SDPoseKeypointExtractor` —— 2/11 个有
-- `BBoxYOLO` —— 1/11 个有
-- `YOLOModelLoader` —— 1/11 个有
+- `Text Multiline` —— 9/10 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 9/10 个有
+- `NunchakuQwenImageDiTLoader` —— 5/10 个有
+- `AIO_Preprocessor` —— 3/10 个有
+- `PrimitiveInt` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `ImageConcanate` —— 2/10 个有
+- `ImageConcatMulti` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `Seed (rgthree)` —— 2/10 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/10 个有
+- `Anything Everywhere3` —— 1/10 个有
+- `RH_LLMAPI_NODE` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 11 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 82% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1024 | 752 - 1024 | 11 | 87% |
-| 高度 | 1392 | 1024 - 1584 | 11 | 81% |
+| 采样步数 | 20 | 4 - 20 | 10 | 67% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 10 | 73% |
+| 采样算法 | euler | - | 10 | 90% |
+| 调度器 | beta57 | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，11 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 82%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 752 - 1024，11 个样本，取值集中（一致性 87%）
-- 高度 中位数 1392，观测区间 1024 - 1584，11 个样本，取值集中（一致性 81%）
+- 采样步数 中位数 20，观测区间 4 - 20，10 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，10 个样本
+- 采样算法 最常用 euler，10 个样本，一致性 90%
+- 调度器 最常用 beta57，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

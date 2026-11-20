@@ -1,75 +1,74 @@
 ---
 name: image_to_image_lora_sampler_unet_56
 type: Image To Image
-frequency: 11
+frequency: 10
 level: strong
-coverage: 0.929364
-common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8591
+common_nodes: [CLIPLoader, CR Prompt List, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ProcessString, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen edit IClight服务端_1959118992034181121.json, 图片生成/图生图/Qwen edit一句话Q版改写实_1958805864788418561.json, 图片生成/图生图/Qwen edit一句话改变图片_1958535559591391233.json, 图片生成/图生图/Qwen edit一句话老照片修复服务端_1958737882548760578.json, 图片生成/图生图/Qwen edit产品精修_1959184380298211330.json, 图片生成/图生图/Qwen edit高清修复服务端_1959056991652098050.json, 图片生成/图生图/Qwen-动漫转真人-百万像素_2000487022429077506.json, 图片生成/图生图/Qwen-动漫转真人_1992896735680983041.json, 图片生成/图生图/千问Qwen edit一段话文生图高精度bf16_2000496512356544513.json, 图片生成/文生图/25.8.22 Qwen edit一段话任意改变图片_1958882089787666433.json, 平台全量/阮旭东AIGC：Qwen-Edit-Plus（Qwen_2509）服装行业服装电商一键换装工作流_1971030132615979009.json]
+members: [图片生成/图生图/Qwen2509场景多角度分镜制作镜头风格一致性分镜加速版_2054480221952331778.json, 图片生成/图生图/Qwen2509巅峰赋能：多场景分镜输出，风格一致性绝对制霸_1987162767272644610.json, 图片生成/图生图/Qwen专用场景多角度镜头_2014687187824025602.json, 图片生成/图生图/Qwen多角度一致性_2003674616868577281.json, 图片生成/图生图/【CQ808】场景多角度镜头风格_2010666611983781889.json, 图片生成/图生图/【CQ808】巨日禄专用场景多角度镜头V.10_2011797751985610754.json, 图片生成/图生图/史上最最最强一键生成多角度、多镜头控制工作流_1986826718788972546.json, 图片生成/图生图/场景多角度_1990615866486263810.json, 图片生成/图生图/场景多角度分镜2.0制作镜头qwen2511风格一致性分镜加速版(3)_2003652314483335170.json, 图片生成/文生图/千问Qwen2509超强自定义短剧分镜一致性_1988465961592340482.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen edit IClight服务端_1959118992034181121.json、图片生成/图生图/Qwen edit一句话Q版改写实_1958805864788418561.json、图片生成/图生图/Qwen edit一句话改变图片_1958535559591391233.json、图片生成/图生图/Qwen edit一句话老照片修复服务端_1958737882548760578.json、图片生成/图生图/Qwen edit产品精修_1959184380298211330.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen2509场景多角度分镜制作镜头风格一致性分镜加速版_2054480221952331778.json、图片生成/图生图/Qwen2509巅峰赋能：多场景分镜输出，风格一致性绝对制霸_1987162767272644610.json、图片生成/图生图/Qwen专用场景多角度镜头_2014687187824025602.json、图片生成/图生图/Qwen多角度一致性_2003674616868577281.json、图片生成/图生图/【CQ808】场景多角度镜头风格_2010666611983781889.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Prompt List`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `ProcessString`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio` —— 10/11 个有
-- `CR Text` —— 8/11 个有
-- `RepeatLatentBatch` —— 8/11 个有
-- `Image Comparer (rgthree)` —— 5/11 个有
-- `ResizeLongestToNode` —— 5/11 个有
-- `easy imageConcat` —— 5/11 个有
-- `ImageConcanate` —— 4/11 个有
-- `TextEncodeQwenImageEditPlus` —— 3/11 个有
-- `CFGNorm` —— 1/11 个有
-- `Seed_` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `easy imageScaleDownToSize` —— 1/11 个有
+- `Anything Everywhere3` —— 9/10 个有
+- `Text Multiline` —— 8/10 个有
+- `CR Text` —— 3/10 个有
+- `Float` —— 2/10 个有
+- `ConditioningZeroOut` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `SetNode` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 11 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 91% |
-| 调度器 | beta | - | 11 | 91% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | sa_solver | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 91%
-- 调度器 最常用 beta，11 个样本，一致性 91%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

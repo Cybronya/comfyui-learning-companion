@@ -1,76 +1,76 @@
 ---
 name: image_to_image_lora_sampler_unet_54
 type: Image To Image
-frequency: 12
-level: strong
-coverage: 0.89125
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+frequency: 10
+level: moderate
+coverage: 0.8081
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/胡文的服装设计_2043927068303433730.json, 图片生成/图生图/调整镜头方向Qwen 2511_2037043928532262913.json, 图片生成/图生图/镜头控制Qwen_2511_2049396359823892482.json, 平台全量/5个视角_2010974721340346369.json, 平台全量/Qwen 2511 edit 多视角镜头拍摄 智能多角度生成 qwen image edit_2010617857817710593.json, "平台全量/Qwen Edit 2511+镜头多角度控制,一张图片变换多个角度_2019345368613396481.json", 平台全量/一转五_2017143196706414594.json, 平台全量/万物自由多角度相机控制 Qwen-Edit-2511  镜头自由调节 选择拍摄镜头调整   镜头选择_2013807532858413058.json, 平台全量/多角度场景_2039573087489892354.json, 平台全量/工作流千问篇7-Qwen千问-多角度角色三视图分镜工作流，漫剧神器_2026206861183164418.json, 平台全量/（柯基大佬版）2511+镜头选择_2068077457059700737.json, 视频生成/图生视频/QWEN imageEdit拍摄视角选择器_2010896559696777218.json]
+members: [图片生成/图生图/Qwen edit 图像编辑_1970750998853677057.json, 图片生成/图生图/Qwen-Edit-2509 超多角度切换 LoRA_1990400053313507330.json, 图片生成/图生图/Qwen-Edit-2509-多角度切换_1990328940835336193.json, 图片生成/图生图/Qwen-Edit-2509-白底图转模特展示_1989690060327014401.json, 图片生成/图生图/Qwen-Edit-一键角度编辑器_1990319553639051265.json, 图片生成/图生图/Qwen-Image-Edit-InScene-Annotate_1984575376770940930.json, 图片生成/图生图/Qwen-Image-Edit-InScene_1984569830982500353.json, 图片生成/图生图/Qwen-Image-Edit-InStyle_1984563047832436738.json, 图片生成/图生图/Qwen-Image-Edit-InSubject_1984566159439708162.json, 图片生成/图生图/Qwen-Image-Edit-多角度_1984584360991014913.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/胡文的服装设计_2043927068303433730.json、图片生成/图生图/调整镜头方向Qwen 2511_2037043928532262913.json、图片生成/图生图/镜头控制Qwen_2511_2049396359823892482.json、平台全量/5个视角_2010974721340346369.json、平台全量/Qwen 2511 edit 多视角镜头拍摄 智能多角度生成 qwen image edit_2010617857817710593.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen edit 图像编辑_1970750998853677057.json、图片生成/图生图/Qwen-Edit-2509 超多角度切换 LoRA_1990400053313507330.json、图片生成/图生图/Qwen-Edit-2509-多角度切换_1990328940835336193.json、图片生成/图生图/Qwen-Edit-2509-白底图转模特展示_1989690060327014401.json、图片生成/图生图/Qwen-Edit-一键角度编辑器_1990319553639051265.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 11/12 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 11/12 个有
-- `ImageScaleToTotalPixels` —— 11/12 个有
-- `QwenMultiangleCameraNode` —— 11/12 个有
-- `easy promptList` —— 9/12 个有
-- `Comfly_LLm_API` —— 1/12 个有
-- `Comfly_api_set` —— 1/12 个有
-- `KepStringList` —— 1/12 个有
-- `PreviewAny` —— 1/12 个有
-- `ProcessString` —— 1/12 个有
-- `easy promptLine` —— 1/12 个有
+- `TextEncodeQwenImageEditPlus` —— 9/10 个有
+- `ImageScaleToTotalPixels` —— 8/10 个有
+- `PreviewImage` —— 8/10 个有
+- `easy imageSize` —— 7/10 个有
+- `PrimitiveStringMultiline` —— 6/10 个有
+- `CameraControlPromptNode` —— 1/10 个有
+- `Display Any (rgthree)` —— 1/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `LoadImageFromUrl` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `TextEncodeQwenImageEdit` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 12 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 8 | 8 - 20 | 10 | 61% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 10 | 61% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（12/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 20，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，10 个样本
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（21/10 个样本）：Steps较低可能导致细节不足

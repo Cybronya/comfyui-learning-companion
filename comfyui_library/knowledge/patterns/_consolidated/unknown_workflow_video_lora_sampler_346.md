@@ -1,65 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_346
 type: Unknown Workflow
-frequency: 9
+frequency: 7
 level: moderate
-coverage: 0.946556
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int, easy mathInt]
+coverage: 0.735
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SparkTTSClone, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json, 视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json, 视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json, 视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998839138951168.json, 视频生成/文生视频/SCAIL-2 Single-Reference Long Video Edit_2072998856218157056.json, 视频生成/文生视频/SCAIL-2 Triple Character Motion Drive_2072998837192794112.json, 视频生成/文生视频/SCAIL-2 双人生物长视频驱动_2064973862177173505.json]
+members: [数字人/数字人/数字人-音频_文本驱动（带音色模拟功能）支持动物_2004212445377953794.json, 视频生成/图生视频/AI动物说_2043873863750127617.json, 视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json, 视频生成/图生视频/最新3.0AI动物说话（懒人版）_2065443186113339394.json, 视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json, 视频生成/文生视频/AI动物说话=B站艾橘溪_1970041990975025153.json, 音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_346
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json、视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json、视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json、视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json、视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/数字人-音频_文本驱动（带音色模拟功能）支持动物_2004212445377953794.json、视频生成/图生视频/AI动物说_2043873863750127617.json、视频生成/图生视频/AI动物说话=B站艾橘溪_1963961319592480770.json、视频生成/图生视频/最新3.0AI动物说话（懒人版）_2065443186113339394.json、视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `GetImageRangeFromBatch`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `ImageResizeKJv2`
 - `Int`
-- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SaveAudio`
+- `SetNode`
+- `SparkTTSClone`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy int`
-- `easy mathInt`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 4/9 个有
-- `ImageCompositeMasked` —— 4/9 个有
-- `SAM3_TrackToMask` —— 4/9 个有
-- `CLIPLoaderGGUF` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `If ANY execute A else B` —— 4/7 个有
+- `Int2Any_AS` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `Any Switch (rgthree)` —— 3/7 个有
+- `CR String To Number` —— 3/7 个有
+- `CR Text` —— 3/7 个有
+- `Fast Groups Muter (rgthree)` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `easy anythingIndexSwitch` —— 3/7 个有
+- `CR Integer To String` —— 2/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `IndexTTS2Run` —— 2/7 个有
+- `JWInteger` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `Random Number` —— 2/7 个有
+- `ShowText|pysssss` —— 2/7 个有
 
 ## 典型参数
 

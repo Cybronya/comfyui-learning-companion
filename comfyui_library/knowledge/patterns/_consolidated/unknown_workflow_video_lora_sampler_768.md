@@ -1,63 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_768
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.506
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.726667
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json, 视频生成/图生视频/超稳定！wan2.2超清图片跳舞，动作复刻-动作表情口型_1991126725268471809.json, 视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json, 视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json]
+members: [视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_768
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json、视频生成/图生视频/超稳定！wan2.2超清图片跳舞，动作复刻-动作表情口型_1991126725268471809.json、视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json、视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExtraModelSelect`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `WanVideoLoraSelectMulti` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/3 个有
+- `easy indexTTSGenerateSimple` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Audio Duration (mtb)` —— 1/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `JWIntegerToString` —— 1/3 个有
+- `LoadWanVideoT5TextEncoder` —— 1/3 个有
+- `WanVideoTextEncode` —— 1/3 个有
 
 ## 典型参数
 

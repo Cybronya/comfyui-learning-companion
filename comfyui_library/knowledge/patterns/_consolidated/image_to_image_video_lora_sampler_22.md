@@ -3,99 +3,75 @@ name: image_to_image_video_lora_sampler_22
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.6285
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingAuraFlow, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, RunningHub Deepcleaner, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.686
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CR Prompt Text, ConditioningZeroOut, DrawViTPose, EmptyFlux2LatentImage, FillMaskWithColor, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, JWInteger, KSampler, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, ReferenceLatent, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Comfyui教学第六期-数字人_2011627104890265602.json, 数字人/数字人/MV制作流程1-演唱镜头_2005162233674039298.json]
+members: [视频生成/图生视频/本地开源免费，sea sponge swing_2057138676102160386.json, 视频生成/图生视频/本地开源免费，拿破仑进行曲换脸版_2056990007289798657.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Comfyui教学第六期-数字人_2011627104890265602.json、数字人/数字人/MV制作流程1-演唱镜头_2005162233674039298.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/本地开源免费，sea sponge swing_2057138676102160386.json、视频生成/图生视频/本地开源免费，拿破仑进行曲换脸版_2056990007289798657.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGNorm`
 - `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `DrawViTPose`
+- `EmptyFlux2LatentImage`
+- `FillMaskWithColor`
+- `GetImageSize`
 - `GetNode`
 - `ImageResizeKJv2`
-- `Int`
+- `ImageScaleToTotalPixels`
+- `JWInteger`
 - `KSampler`
-- `LoadAudio`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelSamplingAuraFlow`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `RunningHub Deepcleaner`
-- `SaveImage`
+- `ReferenceLatent`
 - `SetNode`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 - `easy showAnything`
 
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioSelectNode` —— 1/2 个有
-- `AudioSplitNode` —— 1/2 个有
-- `AudioToFPS` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageListToBatch+` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
-- `Mute / Bypass Relay (rgthree)` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
-- `Wav2VecModelLoader` —— 1/2 个有
-- `ZML_ImageSelectorNode` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
-
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4.5 | - | 2 | 89% |
+| 采样步数 | 5 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -109,7 +85,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

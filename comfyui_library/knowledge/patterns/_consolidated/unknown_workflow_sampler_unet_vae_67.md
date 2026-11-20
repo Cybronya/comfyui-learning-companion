@@ -1,32 +1,31 @@
 ---
 name: unknown_workflow_sampler_unet_vae_67
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.703286
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 12
+level: strong
+coverage: 0.922417
+common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/KD_Qwen-Image-2.1-PE-文生图-提示词优化-加速版_2115349965794009089.json, 图片生成/文生图/QWEN IMAGE 2.1 文生图，带提示词增强_2103073606212341761.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2108811508326166529.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109545902754066433.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109573850085281794.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2111996327927312386.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112074578649509889.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112076292018495489.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112081176390361090.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112091885144727554.json, 图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2112093934708150274.json, 图片生成/文生图/Qwen Image2.1文生图（LTX2提示词扩写）2609_2106051218907942913.json, 图片生成/文生图/image_qwen_image_2_1_t2i_2101968376938717186.json, 视频生成/文生视频/Qwen_image_2.1_文生图_2104447797318733826.json]
+members: [图片生成/图生图/参考图一键调色_2112107742885404674.json, 图片生成/图生图/多参考图生成图片 1参考图_2113249997767663617.json, 图片生成/图生图/多参考图生成图片 1底图-1参考图_2113249672428081154.json, 图片生成/图生图/多参考图生成图片 1底图-2参考图_2113249688706183170.json, 图片生成/图生图/多参考图生成图片 1底图-3参考图_2113249697853956097.json, 图片生成/图生图/多参考图生成图片 1底图-4参考图_2113249722726182913.json, 图片生成/图生图/多参考图生成图片 1底图-5参考图_2112078134458806274.json, 图片生成/图生图/（10图）qwen-image-2.1多图编辑_2107971848804855810.json, 图片生成/图生图/（五图编辑）Qwen-image-2.1-单图编辑_2104871202018914306.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词老邵_2108408117536059393.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词老邵_2108416050982375426.json, 视频生成/文生视频/AI角色姿态导演台｜Character Pose Director_2102626865503625217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_67
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/KD_Qwen-Image-2.1-PE-文生图-提示词优化-加速版_2115349965794009089.json、图片生成/文生图/QWEN IMAGE 2.1 文生图，带提示词增强_2103073606212341761.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2108811508326166529.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109545902754066433.json、图片生成/文生图/Qwen Image 2.1-PE-文生图-提示词优化-加速版_2109573850085281794.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/参考图一键调色_2112107742885404674.json、图片生成/图生图/多参考图生成图片 1参考图_2113249997767663617.json、图片生成/图生图/多参考图生成图片 1底图-1参考图_2113249672428081154.json、图片生成/图生图/多参考图生成图片 1底图-2参考图_2113249688706183170.json、图片生成/图生图/多参考图生成图片 1底图-3参考图_2113249697853956097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
 - `KSampler`
-- `ResolutionSelector`
+- `LoadImage`
 - `SaveImage`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
@@ -34,44 +33,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 12/14 个有
-- `ComfySwitchNode` —— 11/14 个有
-- `SaveImageAdvanced` —— 11/14 个有
-- `easy showAnything` —— 11/14 个有
-- `LoraLoaderModelOnly` —— 10/14 个有
-- `PreviewImage` —— 10/14 个有
-- `PrimitiveBoolean` —— 10/14 个有
-- `RH_QwenImagePromptEnhancer` —— 10/14 个有
-- `QwenImage21_T2IPromptRewrite` —— 9/14 个有
-- `TextGenerateLTX2Prompt` —— 4/14 个有
-- `PreviewAny` —— 3/14 个有
-- `EmptyImage` —— 1/14 个有
+- `PreviewImage` —— 7/12 个有
+- `QwenImage21Cache` —— 6/12 个有
+- `ImageScale` —— 5/12 个有
+- `CR Text` —— 3/12 个有
+- `GetImageSize` —— 2/12 个有
+- `Image Comparer (rgthree)` —— 2/12 个有
+- `CR Prompt Text` —— 1/12 个有
+- `EmptyLatentImage` —— 1/12 个有
+- `LoraLoaderModelOnly` —— 1/12 个有
+- `VNCCS_PoseStudio` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 14 | 14% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 14 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 14 | 100% |
+| 采样步数 | 25 | 25 - 40 | 12 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，14 个样本，取值分散，一致性仅 14%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，14 个样本，取值集中（一致性 100%）
-- 高发问题（10/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 25 - 40，12 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

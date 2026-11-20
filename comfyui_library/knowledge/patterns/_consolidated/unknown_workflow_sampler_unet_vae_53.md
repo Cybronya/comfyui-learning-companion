@@ -1,79 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_53
 type: Unknown Workflow
-frequency: 15
-level: strong
-coverage: 0.828
-common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview+, PainterFluxImageEdit, SolidMask, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy imageRemBg, easy isMaskEmpty]
-problems: [Steps较低可能导致细节不足]
+frequency: 14
+level: moderate
+coverage: 0.806857
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: ["图片生成/图生图/Face Swap, Head Swap换脸换头++换脸换装多图编辑_2094608453212925953.json", 图片生成/图生图/Flux 2 Klein 换头极速版_2016335569361575937.json, 图片生成/图生图/Flux 2 Klein换头换脸-光影自动融合_2039931189670191106.json, 图片生成/图生图/Flux 2 Klein换头换脸_2016156557255380994.json, 图片生成/图生图/Flux 2 Klein换头换脸_2016316866293141505.json, 图片生成/图生图/Flux 2 Klein换头换脸_2018969931152367617.json, 图片生成/图生图/Flux 2 Klein换头换脸（80%一致性-30秒出图） 林耀_2016532491355561986.json, 图片生成/图生图/一键换头换脸高质量Flux 2 Klein_2024366116075741185.json, 图片生成/图生图/换脸klein9b_2026610134717304834.json, 图片生成/图生图/换脸klein9b超绝一致性_2036752635256119298.json, 平台全量/Flux.2 Klein 换脸_2040002047793176578.json, 平台全量/Flux.2 Klein_2042187783460098050.json, 平台全量/Flux.2+Klein+究极换头&换脸，零违和感_2031893920250077185.json, 平台全量/‎_2053879840520056833.json, 平台全量/【CQ808】图片换脸-klein_2034596478634692610.json]
+members: [视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json, 视频生成/文生视频/Minimax文生视频高质量极速版_2084997026189758466.json, 视频生成/文生视频/Minimxa-lightx2v-SLA加速文生图_2091334717189746689.json, 视频生成/文生视频/VividMuse_MiniMax_H3_文生视频_2084269402014437378.json, 视频生成/文生视频/comfyui官方工作流-video_minimax_h3_t2v_2084148000615657474.json, 视频生成/文生视频/minimax_h3 4steps加速_2085757759953399809.json, 视频生成/文生视频/minimax_h3_lightx2v正式版 文生、图生、首尾帧加速_2085755880041181185.json, 视频生成/文生视频/minimax_h3_文生视频_2084110685591654402.json, 视频生成/文生视频/minimax_h3_文生视频_8步加速_2084159928788410370.json, 视频生成/文生视频/minimax文字出视频_2084271438885904386.json, 视频生成/文生视频/【Gensor-AI】MINIMAX-H3工作流合集【加速版】_2085550246054162433.json, 视频生成/文生视频/【V-zion】Minimax-H3【文生视频_首尾帧_首帧_尾帧】附加提示词模板_2084613485291462658.json, 视频生成/文生视频/开源版MINIMAX-H3 文生视频 图生视频 多图参考生视频 三大工作流合集_2084584790304583681.json, 视频生成/文生视频/开源版MINIMAX-H3 文生视频 图生视频 多图参考生视频 三大工作流合集_2084619362476052481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Face Swap, Head Swap换脸换头++换脸换装多图编辑_2094608453212925953.json、图片生成/图生图/Flux 2 Klein 换头极速版_2016335569361575937.json、图片生成/图生图/Flux 2 Klein换头换脸-光影自动融合_2039931189670191106.json、图片生成/图生图/Flux 2 Klein换头换脸_2016156557255380994.json、图片生成/图生图/Flux 2 Klein换头换脸_2016316866293141505.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json、视频生成/文生视频/Minimax文生视频高质量极速版_2084997026189758466.json、视频生成/文生视频/Minimxa-lightx2v-SLA加速文生图_2091334717189746689.json、视频生成/文生视频/VividMuse_MiniMax_H3_文生视频_2084269402014437378.json、视频生成/文生视频/comfyui官方工作流-video_minimax_h3_t2v_2084148000615657474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `MaskPreview+`
-- `PainterFluxImageEdit`
-- `SolidMask`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageRemBg`
-- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 14/15 个有
-- `Image Comparer (rgthree)` —— 13/15 个有
-- `SaveImage` —— 13/15 个有
-- `ColorMatch` —— 8/15 个有
-- `LoraLoaderModelOnly` —— 8/15 个有
-- `CR Text` —— 7/15 个有
-- `CompressImages` —— 3/15 个有
-- `Int` —— 3/15 个有
-- `CustomAddLabel` —— 1/15 个有
-- `DuckHideNode` —— 1/15 个有
-- `GetNode` —— 1/15 个有
-- `Note Plus (mtb)` —— 1/15 个有
-- `PreviewImage` —— 1/15 个有
-- `SetNode` —— 1/15 个有
+- `CreateVideo` —— 12/14 个有
+- `SaveVideo` —— 12/14 个有
+- `MiniMaxH3ImageToVideo` —— 11/14 个有
+- `PrimitiveStringMultiline` —— 7/14 个有
+- `JjkText` —— 6/14 个有
+- `LoadImage` —— 6/14 个有
+- `LoraLoaderModelOnly` —— 6/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/14 个有
+- `LoadAudio` —— 4/14 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/14 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/14 个有
+- `PathchSageAttentionKJ` —— 3/14 个有
+- `VHS_VideoCombine` —— 2/14 个有
+- `CR Prompt Text` —— 1/14 个有
+- `DF_Float` —— 1/14 个有
+- `EasyCache` —— 1/14 个有
+- `MiniMaxH3BlockCacheT8` —— 1/14 个有
+- `ModelAttentionBackend` —— 1/14 个有
+- `Seed (rgthree)` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 15 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（15/15 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

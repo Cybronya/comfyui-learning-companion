@@ -1,81 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_unet_120
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.812
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ExtractLinesByIndex, Int Literal, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MotionContext, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything]
+frequency: 6
+level: strong
+coverage: 0.847333
+common_nodes: [ConditioningZeroOut, DiptychCreate, DualCLIPLoader, FluxGuidance, ICEFConditioning, ImageCrop, InContextEditInstruction, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json, 视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json, 视频生成/图生视频/ONE SHOT STORY｜MiniMax H3 一图生成15秒品牌短片_2087898553539710978.json, 视频生成/文生视频/Minimax H3 全自动短片（要配合提示词skill使用）林耀_2091930702962057218.json, 视频生成/文生视频/动漫短剧全自动工作流V5（海螺MinimaxH3）（自动循环+自动延长）_2089665991025455105.json]
+members: [图片生成/图生图/IC+Edit全能图片G4o创成式填充服务端_1921536493649608705.json, 图片生成/图生图/IC-EDIT官方工作流优化版  提示词修改图片_1924492642829463553.json, 图片生成/图生图/ICEdit 工作流_1921046053074698242.json, 图片生成/图生图/ICEdit-MoE 最新图像编辑处理，低显存运行_1923196553685889025.json, 图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920531109803655169.json, 图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920674826652942338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_120
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json、视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json、视频生成/图生视频/ONE SHOT STORY｜MiniMax H3 一图生成15秒品牌短片_2087898553539710978.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/IC+Edit全能图片G4o创成式填充服务端_1921536493649608705.json、图片生成/图生图/IC-EDIT官方工作流优化版  提示词修改图片_1924492642829463553.json、图片生成/图生图/ICEdit 工作流_1921046053074698242.json、图片生成/图生图/ICEdit-MoE 最新图像编辑处理，低显存运行_1923196553685889025.json、图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920531109803655169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ExtractLinesByIndex`
-- `Int Literal`
-- `KSamplerSelect`
-- `LoadImage`
+全部 6 个 workflow 都包含：
+- `ConditioningZeroOut`
+- `DiptychCreate`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `ICEFConditioning`
+- `ImageCrop`
+- `InContextEditInstruction`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptConcat`
-- `easy saveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 6/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
-- `MiniMaxH3MotionContextTrim` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `Text To Image (mtb)` —— 6/7 个有
-- `easy batchAnything` —— 6/7 个有
-- `Text String Truncate` —— 4/7 个有
-- `DF_Float` —— 2/7 个有
-- `LTXVConcatAVLatent` —— 2/7 个有
-- `LTXVSeparateAVLatent` —— 2/7 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/7 个有
-- `SplitSigmas` —— 2/7 个有
-- `CreateVideo` —— 1/7 个有
-- `ImageFromBatch` —— 1/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
+- `MaskPreview` —— 5/6 个有
+- `ImageUpscaleWithModel` —— 4/6 个有
+- `RH_Translator` —— 4/6 个有
+- `UpscaleModelLoader` —— 4/6 个有
+- `Anything Everywhere` —— 1/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `ImageScaleBy` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `Seed Everywhere` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `VHS_DuplicateLatents` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 28 | 28 - 28 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
@@ -83,4 +70,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 28，观测区间 28 - 28，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 28，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

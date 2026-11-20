@@ -2,85 +2,84 @@
 name: unknown_workflow_lora_sampler_unet_130
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.802167
-common_nodes: [CLIPLoader, FluxKontextImageScale, KSampler, LayerMask: MaskInvert, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.649667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, H3FaceStitch, H3FaceTrackCrop, H3InjectVideoLatent, H3PerFrameDenoise, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Edit-2511超级扩图_2012115418680397825.json, 图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2012078904898494465.json, 图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2013902159636602881.json, 图片生成/图生图/[🛫书墨]Qwen-Edit-2511-极限扩图测试_2003854957788995586.json, 图片生成/图生图/[🛫书墨]小红书fireRed-image-edit超比例扩图_2026578402613923842.json, 图片生成/图生图/【🛫书墨】人物换装、换背景_2011647468227792898.json]
+members: [视频生成/图生视频/2026-08-31 minimax_h3_i2v_face_refine_2097894239211442178.json, 视频生成/图生视频/2026-08-31 minimax_h3_r2v_face_refine_2097593143318368258.json, 视频生成/图生视频/H3 面部重绘 FACE REFINE 修复崩脸_2090087014422110210.json, 视频生成/图生视频/Minimax H3  多图参考生视频｜Singularity  武斗专属模型+ 4步 急速 + 放大 + 双重 人脸精修_2107657989724401665.json, 视频生成/图生视频/minimax h3 面部修复_2101135085809520641.json, 视频生成/文生视频/Minimax H3 文生 & 图生视频｜FastH3 8步 急速 + 放大 + 人脸精修_2102582100221325314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_130
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511超级扩图_2012115418680397825.json、图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2012078904898494465.json、图片生成/图生图/Qwen-Eidt-2511人物换装，换背景_2013902159636602881.json、图片生成/图生图/[🛫书墨]Qwen-Edit-2511-极限扩图测试_2003854957788995586.json、图片生成/图生图/[🛫书墨]小红书fireRed-image-edit超比例扩图_2026578402613923842.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2026-08-31 minimax_h3_i2v_face_refine_2097894239211442178.json、视频生成/图生视频/2026-08-31 minimax_h3_r2v_face_refine_2097593143318368258.json、视频生成/图生视频/H3 面部重绘 FACE REFINE 修复崩脸_2090087014422110210.json、视频生成/图生视频/Minimax H3  多图参考生视频｜Singularity  武斗专属模型+ 4步 急速 + 放大 + 双重 人脸精修_2107657989724401665.json、视频生成/图生视频/minimax h3 面部修复_2101135085809520641.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `FluxKontextImageScale`
-- `KSampler`
-- `LayerMask: MaskInvert`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `H3FaceStitch`
+- `H3FaceTrackCrop`
+- `H3InjectVideoLatent`
+- `H3PerFrameDenoise`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `PrimitiveStringMultiline`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 5/6 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/6 个有
-- `LayerMask: MaskPreview` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `InpaintModelConditioning` —— 4/6 个有
-- `Any Switch (rgthree)` —— 3/6 个有
-- `ClothesSegment` —— 3/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `Fast Groups Muter (rgthree)` —— 3/6 个有
-- `GetImageSize` —— 3/6 个有
-- `LayerUtility: ExtendCanvasV2` —— 3/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 3/6 个有
-- `SolidMask` —— 3/6 个有
-- `easy int` —— 3/6 个有
-- `GrowMaskWithBlur` —— 1/6 个有
-- `easy imageConcat` —— 1/6 个有
+- `ComfyMathExpression` —— 5/6 个有
+- `MiniMaxH3NativeAudioLock` —— 5/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `VHS_VideoCombine` —— 5/6 个有
+- `VOSR2ModelLoader` —— 5/6 个有
+- `VOSR2Upscale` —— 5/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
+- `BlockSparseAttention` —— 3/6 个有
+- `GetNode` —— 3/6 个有
+- `MiniMaxH3SigmaShift` —— 3/6 个有
+- `ModelAttentionBackend` —— 3/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `LTXVConcatAVLatent` —— 2/6 个有
+- `LTXVSeparateAVLatent` —— 2/6 个有
+- `MiniMaxH3ImageToVideo` —— 2/6 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SplitSigmas` —— 2/6 个有
+- `CreateVideo` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `ImageConcanate` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `ManualSigmas` —— 1/6 个有
+- `ModelPreviewOverrideKJ` —— 1/6 个有
+- `SaveVideo` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 50% |
-| 调度器 | simple | - | 6 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 512 | 512 - 512 | 5 | 100% |
-| 高度 | 512 | 512 - 512 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 50%
-- 调度器 最常用 simple，6 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

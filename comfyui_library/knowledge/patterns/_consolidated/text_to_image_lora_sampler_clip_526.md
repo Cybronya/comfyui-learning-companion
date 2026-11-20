@@ -3,65 +3,57 @@ name: text_to_image_lora_sampler_clip_526
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.836
-common_nodes: [AudioSeparation, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, MultiTextConcatenate, PreviewAudio, PrimitiveBoolean, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveImage, SaveVideoNode, Text, UNETLoader, VAEDecode, VAELoader, easy getAudioFromVideo, easy ifElse, easy saveText, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.871
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, Text, UNETLoader, VAEDecode, VAELoader, easy promptConcat, easy promptLine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/定制爆款视频复刻｜自定义提示词随意改 背景音色也能换_2097506459964760066.json, 图片生成/反推提示词/爆款视频复刻定制专用｜自定义提示词背景配音视频生成_2097110047389216770.json, 图片生成/反推提示词/爆款视频复刻定制工作流｜自定义提示词背景音色视频生成_2097389230640160769.json]
+members: [图片生成/图生图/全能图片V1_Pro电商详情页｜一键生成整套详情，上架图不用求设计_2099474049553494017.json, 图片生成/图生图/最新G_image2官方全量稳定版V1.0｜跨境电商主图详情页图生图一键出_2100503932853379073.json, 图片生成/图生图/电商主图详情图12图全能图片2.0自动分割经济版，图生图低成本方案_2103965668390559746.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_526
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/定制爆款视频复刻｜自定义提示词随意改 背景音色也能换_2097506459964760066.json、图片生成/反推提示词/爆款视频复刻定制专用｜自定义提示词背景配音视频生成_2097110047389216770.json、图片生成/反推提示词/爆款视频复刻定制工作流｜自定义提示词背景音色视频生成_2097389230640160769.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1_Pro电商详情页｜一键生成整套详情，上架图不用求设计_2099474049553494017.json、图片生成/图生图/最新G_image2官方全量稳定版V1.0｜跨境电商主图详情页图生图一键出_2100503932853379073.json、图片生成/图生图/电商主图详情图12图全能图片2.0自动分割经济版，图生图低成本方案_2103965668390559746.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MultiTextConcatenate`
-- `PreviewAudio`
-- `PrimitiveBoolean`
+- `ProcessString`
 - `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveImage`
-- `SaveVideoNode`
+- `ShowText|pysssss`
 - `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy getAudioFromVideo`
-- `easy ifElse`
-- `easy saveText`
+- `easy promptConcat`
+- `easy promptLine`
 - `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `忽略多组孤海` —— 2/3 个有
-- `ComfyMathExpression` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `OmniVoiceVoiceCloneTTS` —— 1/3 个有
-- `Qwen3ASRLoader` —— 1/3 个有
-- `Qwen3ASRTranscribe` —— 1/3 个有
-- `RH_GetAudioDuration` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `EmptyImage` —— 2/3 个有
+- `HAIGC_CombineUnits` —— 2/3 个有
+- `HAIGC_Layer` —— 2/3 个有
+- `HAIGC_SavePSD` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 2/3 个有
+- `GuHaiAutoImageSplit` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/3 个有
 
 ## 典型参数
 

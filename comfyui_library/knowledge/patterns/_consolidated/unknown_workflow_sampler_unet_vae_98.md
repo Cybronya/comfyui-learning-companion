@@ -1,78 +1,75 @@
 ---
 name: unknown_workflow_sampler_unet_vae_98
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.971636
-common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, KSampler, LoadImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8176
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合006.提示词优化单图编辑-精简_2035251644513918978.json, 图片生成/图生图/C-模特换装（4K版）-V5_2038522798334812162.json, 图片生成/图生图/FLUX.2-klein 图像编辑- 图像编辑-快速出图图像生成zip输出_2022641416794542081.json, 图片生成/图生图/FLUX.2-klein 图像编辑-亚秒级图像生成_2012112860427591681.json, 图片生成/图生图/FireRed-Image-Edit-三图融合-一致性加强版本_2027291315473489922.json, 图片生成/图生图/Fk2-图像编辑低限版_2032400294235082754.json, 图片生成/图生图/Fk2-图像编辑低限版_2037529896523669505.json, 图片生成/图生图/Qwen-Edit-2511-多图融合-一致性加强版本_2003661742527946754.json, 图片生成/图生图/一键生成三视图（人物版）-Qwen-Edit-2511_2024368464114225154.json, 图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511_2012814594942705666.json, 图片生成/图生图/人物四视图影视短剧角色资产图一键生成_Qwen-Edit-2511_2094804202357870593.json]
+members: [视频生成/图生视频/MiniMax H3 图生视频高质量加速版_2084173235788275713.json, 视频生成/图生视频/MiniMax H3开源 稳定加速版 全能参考加速版本 支持自定义音频_2091103432185827330.json, 视频生成/图生视频/MiniMax H3开源 稳定加速版 全能参考加速版本 支持自定义音频_2091128219092213762.json, 视频生成/图生视频/MiniMax H3稳定加速版（全能参考加速版本支持自定义音频）_2088836712364601345.json, 视频生成/图生视频/MiniMax H3稳定加速版（全能参考加速版本支持自定义音频）_2092061440717967361.json, 视频生成/图生视频/MiniMax H3稳定加速版（整合打斗和脸部修复lora）_2090765284436176898.json, 视频生成/图生视频/MiniMax-H3 Fl2va 首尾帧生视频标准版_2095499784147791873.json, 视频生成/图生视频/Minimax H3 图生视频｜冻结时间 360 环绕、首尾画面循环闭环｜+ HyperFlow 8 步 LoRA_2104492606691569665.json, 视频生成/图生视频/MinimaxH3开源版-全能多参支持视频参考-标准_加速集合版_2087030186406662145.json, 视频生成/文生视频/MiNiMaxH3全能参考_2087801246601277442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_98
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合006.提示词优化单图编辑-精简_2035251644513918978.json、图片生成/图生图/C-模特换装（4K版）-V5_2038522798334812162.json、图片生成/图生图/FLUX.2-klein 图像编辑- 图像编辑-快速出图图像生成zip输出_2022641416794542081.json、图片生成/图生图/FLUX.2-klein 图像编辑-亚秒级图像生成_2012112860427591681.json、图片生成/图生图/FireRed-Image-Edit-三图融合-一致性加强版本_2027291315473489922.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生视频高质量加速版_2084173235788275713.json、视频生成/图生视频/MiniMax H3开源 稳定加速版 全能参考加速版本 支持自定义音频_2091103432185827330.json、视频生成/图生视频/MiniMax H3开源 稳定加速版 全能参考加速版本 支持自定义音频_2091128219092213762.json、视频生成/图生视频/MiniMax H3稳定加速版（全能参考加速版本支持自定义音频）_2088836712364601345.json、视频生成/图生视频/MiniMax H3稳定加速版（全能参考加速版本支持自定义音频）_2092061440717967361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `ConditioningZeroOut`
-- `KSampler`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 10/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/11 个有
-- `SaveImage` —— 10/11 个有
-- `LoraLoaderModelOnly` —— 6/11 个有
-- `EmptyFlux2LatentImage` —— 5/11 个有
-- `EmptySD3LatentImage` —— 5/11 个有
-- `PreviewImage` —— 2/11 个有
-- `CR Text Concatenate` —— 1/11 个有
-- `CompressImages` —— 1/11 个有
-- `EmptyLatentImage` —— 1/11 个有
-- `INTConstant` —— 1/11 个有
-- `ImageResizeKJv2` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `TextInput_` —— 1/11 个有
-- `easy imageConcat` —— 1/11 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `VHS_VideoCombine` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `LoraLoaderBypassModelOnly` —— 8/10 个有
+- `MiniMaxH3AudioConditioningT8` —— 8/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
+- `PrimitiveStringMultiline` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `LoadAudio` —— 7/10 个有
+- `MiniMaxH3DualClockSamplerT8` —— 6/10 个有
+- `MiniMaxH3AVDecodeT8` —— 3/10 个有
+- `MiniMaxH3ImageToVideo` —— 3/10 个有
+- `AudioCrop` —— 2/10 个有
+- `Label (rgthree)` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 2/10 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/10 个有
+- `ModelAttentionBackend` —— 2/10 个有
+- `VHS_LoadVideo` —— 2/10 个有
+- `忽略多组孤海` —— 2/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 11 | 49% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 55% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 768 | - | 1 | 100% |
-| 高度 | 1344 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，11 个样本，取值分散，一致性仅 49%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 55%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

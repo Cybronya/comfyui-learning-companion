@@ -1,75 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_38
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: strong
-coverage: 0.865909
-common_nodes: [CLIPTextEncode, CR Text, ConditioningZeroOut, DapaoImageRatioLimitNode, EmptyLatentImage, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.5478
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/001.Z-image生图巅峰024.随机美女抽卡or洗图_2042252208422526977.json, 图片生成/文生图/001.Z-image生图巅峰023.随机美女抽卡机_2041536436695994370.json, 图片生成/文生图/RPG角色卡 随机美女孵蛋器 V2升级版【角色卡模式】_2039603421052932097.json, 图片生成/文生图/ZT+ZB文生图参考自动优化20260406_2041136071802621954.json, 图片生成/文生图/ZT角色卡文生图20260407_2041458720655282177.json, 图片生成/文生图/Zimage随机美少女抽卡机【无限出图模式】_2059903175817252865.json, 图片生成/文生图/美女 孵蛋器 最新版【无限模式】_2041501084815990786.json, 图片生成/文生图/美女孵蛋器 V3升级版【无限模式】_2073460891844177921.json, 图片生成/文生图/🥳随机美女孵蛋器 V3升级版【无限模式】20260407_2041458441293668354.json, 图片生成/文生图/🥳随机美女孵蛋器 V3升级版【无限模式】_2040331510699528194.json, 平台全量/Z-image双采美女生成器V3_2049476682955890690.json]
+members: [数字人/数字人/Berinini版-无限时长-带货数字人替换_2074707187401838593.json, 视频生成/图生视频/Bernini 角色替换_2069319914443333634.json, 视频生成/图生视频/video_wan2_2_bernini_rv2v_add_2064247414655115266.json, 视频生成/图生视频/video_wan2_2_bernini_rv2v_replace_2064232122084319234.json, 视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json, 视频生成/文生视频/video_wan2_2_bernini_i2i_2064270918700060673.json, 视频生成/文生视频/video_wan2_2_bernini_multi_r2v_2064268091416207362.json, 视频生成/文生视频/video_wan2_2_bernini_r2v_2064265816681570306.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_change_style_2064258770699636737.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_changebg_2064251615900688385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/001.Z-image生图巅峰024.随机美女抽卡or洗图_2042252208422526977.json、图片生成/文生图/001.Z-image生图巅峰023.随机美女抽卡机_2041536436695994370.json、图片生成/文生图/RPG角色卡 随机美女孵蛋器 V2升级版【角色卡模式】_2039603421052932097.json、图片生成/文生图/ZT+ZB文生图参考自动优化20260406_2041136071802621954.json、图片生成/文生图/ZT角色卡文生图20260407_2041458720655282177.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Berinini版-无限时长-带货数字人替换_2074707187401838593.json、视频生成/图生视频/Bernini 角色替换_2069319914443333634.json、视频生成/图生视频/video_wan2_2_bernini_rv2v_add_2064247414655115266.json、视频生成/图生视频/video_wan2_2_bernini_rv2v_replace_2064232122084319234.json、视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DapaoImageRatioLimitNode`
-- `EmptyLatentImage`
-- `Int`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoaderGGUF` —— 10/11 个有
-- `llama_cpp_instruct_adv` —— 9/11 个有
-- `llama_cpp_model_loader` —— 9/11 个有
-- `llama_cpp_parameters` —— 9/11 个有
-- `DapaoImageAspectRatioResizeNode` —— 8/11 个有
-- `LoadImage` —— 8/11 个有
-- `ImpactSwitch` —— 7/11 个有
-- `DapaoImageWatermarkNode` —— 6/11 个有
-- `Note Plus (mtb)` —— 6/11 个有
-- `DapaoSafeSaveImage` —— 3/11 个有
-- `RH_LLMAPI_NODE` —— 2/11 个有
-- `CLIPLoader` —— 1/11 个有
-- `PreviewAny` —— 1/11 个有
-- `PrimitiveBoolean` —— 1/11 个有
-- `RH_Translator` —— 1/11 个有
-- `TT_img_enc_v2` —— 1/11 个有
-- `ZML_SwitchOutput` —— 1/11 个有
-- `easy ifElse` —— 1/11 个有
-- `easy isNone` —— 1/11 个有
+- `BerniniConditioning` —— 9/10 个有
+- `ModelSamplingSD3` —— 9/10 个有
+- `VHS_LoadVideo` —— 9/10 个有
+- `VHS_VideoCombine` —— 9/10 个有
+- `WanVideoNAG` —— 9/10 个有
+- `CFGZeroStar` —— 8/10 个有
+- `CLIPVisionLoader` —— 8/10 个有
+- `GetNode` —— 8/10 个有
+- `SetNode` —— 8/10 个有
+- `BatchImagesNode` —— 7/10 个有
+- `CLIPVisionEncode` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `VHS_VideoInfoLoaded` —— 1/10 个有
+- `WanContextWindowsManual` —— 1/10 个有
+- `WanImageToVideo` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 864 | 864 - 864 | 11 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 11 | 100% |
-| 采样步数 | randomize | - | 11 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 11 | 100% |
-| 采样算法 | 1 | 1 - 1 | 11 | 100% |
-| 调度器 | euler | - | 11 | 100% |
-| 重绘幅度 | simple | - | 11 | 100% |
+| 采样步数 | fixed | - | 10 | 70% |
+| Prompt 约束强度(CFG) | 6 | 6 - 10 | 10 | 81% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | lcm | - | 10 | 80% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
@@ -77,10 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 864，观测区间 864 - 864，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，11 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 randomize，11 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，11 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，11 个样本，一致性 100%
-- 重绘幅度 最常用 simple，11 个样本，一致性 100%
+- 采样步数 最常用 fixed，10 个样本，一致性 70%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 10，10 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，10 个样本，一致性 80%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%

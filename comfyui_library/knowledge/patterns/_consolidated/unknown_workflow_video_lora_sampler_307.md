@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_307
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.698444
-common_nodes: [ADE_CameraPoseCombo, CameraPoseVisualizer, GetNode, ImageResizeKJv2, LoadImage, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.496625
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/YJ-APP-Wan2.2-Fun-Camera运镜控制_2038822958365413377.json, 平台全量/Wan2.2-Fun-Camera运镜控制_2018144816646856706.json, 数字人/数字人/YJ-APP-wan2.2-Fun-Camera运镜控制_2036465713577205761.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_1956348088506089473.json, 视频生成/图生视频/WH-AI-Studio-wan2.2官方专用运镜模型图生视频_2015621060615475201.json, 视频生成/图生视频/Wan2.2 运镜特效_2004051872707166210.json, 视频生成/图生视频/Wan2.2-ControlCamera镜头控制_2004354618245214209.json, 视频生成/图生视频/Wan2.2-Fun-Camera运镜控制_1956308864335532034.json, 视频生成/图生视频/【gen全能视频Si】wan2.2-fun-camera运镜控制_1963766587461439490.json]
+members: [视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json, 视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json, 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json, 视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json, 视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json, 视频生成/图生视频/🐱OneToAll视频姿势参考（骨骼驱动）-言灵ru😼_2000904519246639105.json, 视频生成/文生视频/One-to-All Animation角色动画与图像姿态迁移延长流_1999029619397382145.json, 视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_307
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/YJ-APP-Wan2.2-Fun-Camera运镜控制_2038822958365413377.json、平台全量/Wan2.2-Fun-Camera运镜控制_2018144816646856706.json、数字人/数字人/YJ-APP-wan2.2-Fun-Camera运镜控制_2036465713577205761.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_1956348088506089473.json、视频生成/图生视频/WH-AI-Studio-wan2.2官方专用运镜模型图生视频_2015621060615475201.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json、视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json、视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json、视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json、视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ADE_CameraPoseCombo`
-- `CameraPoseVisualizer`
+全部 8 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
 - `PreviewImage`
 - `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 7/9 个有
-- `ImageConcatMulti` —— 6/9 个有
-- `Text Multiline` —— 6/9 个有
-- `SimpleMath+` —— 4/9 个有
-- `ImpactInt` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `Switch` —— 2/9 个有
-- `CLIPLoader` —— 1/9 个有
-- `CLIPTextEncode` —— 1/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `CreateVideo` —— 1/9 个有
-- `Float` —— 1/9 个有
-- `JWInteger` —— 1/9 个有
-- `PreViewVideo` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `TextInput_` —— 1/9 个有
-- `WanVideoTextEmbedBridge` —— 1/9 个有
+- `FloatConstant` —— 7/8 个有
+- `WanVideoScheduler` —— 7/8 个有
+- `MathExpression|pysssss` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `easy forLoopEnd` —— 3/8 个有
+- `easy forLoopStart` —— 3/8 个有
+- `MaskPreview+` —— 2/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
+- `GIMMVFI_interpolate` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 

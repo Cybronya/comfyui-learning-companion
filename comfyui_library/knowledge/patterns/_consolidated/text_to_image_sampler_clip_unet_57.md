@@ -1,74 +1,73 @@
 ---
 name: text_to_image_sampler_clip_unet_57
 type: Text To Image
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.988083
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.845
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/QWEN千问古风美女_1976489433270755329.json, 图片生成/文生图/Qwen Image 2512 准确文字文生图_2027984052459937793.json, 图片生成/文生图/Qwen Image 2512文生图_2042508621921132546.json, 图片生成/文生图/Qwen2512巨无霸奶美女身材调节_2019041837285117953.json, 图片生成/文生图/Qwen2512文生图基础款_2024281731670482946.json, 图片生成/文生图/Qwen2512日系JK制服少女甜妹_2019053173494779906.json, 图片生成/文生图/Qwen2512日系少女甜妹美女_2019045029121101826.json, 图片生成/文生图/Qwen2512梨形完美身材美女_2018952499717218306.json, 图片生成/文生图/qwen2512大雷甜妹JK制服少女_2018569892831694850.json, 图片生成/文生图/qwenimg2512-文生图_2009674166802321409.json, "图片生成/文生图/全新VAE Z_image_turbo-VAE,加强细节，更高清_2003404331451912194.json", 平台全量/高清细节文生图VAE+Z_image_turbo_2019239445886672897.json]
+members: [图片生成/文生图/FLUX2-双图融合_1993897229222084609.json, 图片生成/文生图/Krea2 Turbo 基础文生图_2070831897437097985.json, 图片生成/文生图/Krea2_2070039943791071234.json, 图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json, 图片生成/文生图/Z-IMAGE：文生图，一段话生出好看的美图！_1993890310312968194.json, 图片生成/文生图/Z-Image-Turbo-BF16文生图_2078377958095544321.json, 图片生成/文生图/Z-Image：文生图，极速光影，将文字转化为超现实影像！_1993869296981966849.json, 图片生成/文生图/Z-image文生图_1993984303098953730.json, 图片生成/文生图/最强模型Z-Image：超写实生图_1993922948425777153.json, 图片生成/文生图/百度大模型 文生图ERNIE-image-turbo 人物一致性 自然真实_2044640662099857410.json, 图片生成/文生图/百度大模型ERNIE-image-turbo-文生图  人物一致性 自然真实_2044656791585296386.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/QWEN千问古风美女_1976489433270755329.json、图片生成/文生图/Qwen Image 2512 准确文字文生图_2027984052459937793.json、图片生成/文生图/Qwen Image 2512文生图_2042508621921132546.json、图片生成/文生图/Qwen2512巨无霸奶美女身材调节_2019041837285117953.json、图片生成/文生图/Qwen2512文生图基础款_2024281731670482946.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/FLUX2-双图融合_1993897229222084609.json、图片生成/文生图/Krea2 Turbo 基础文生图_2070831897437097985.json、图片生成/文生图/Krea2_2070039943791071234.json、图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json、图片生成/文生图/Z-IMAGE：文生图，一段话生出好看的美图！_1993890310312968194.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 11/12 个有
-- `LatentFrequencyEnhancer_lrzjason` —— 6/12 个有
-- `CFGNorm` —— 3/12 个有
-- `CompressImages` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `LoraLoader` —— 1/12 个有
-- `VAEEncode` —— 1/12 个有
+- `PreviewImage` —— 9/11 个有
+- `JWInteger` —— 5/11 个有
+- `JjkText` —— 5/11 个有
+- `RH_LLMAPI_NODE` —— 4/11 个有
+- `ShowText|pysssss` —— 3/11 个有
+- `RH_Translator` —— 2/11 个有
+- `CR Prompt Text` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `QwenImage21Cache` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1536 | 12 | 74% |
-| 高度 | 1360 | 1024 - 1920 | 12 | 74% |
-| 采样步数 | 9 | 8 - 16 | 12 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 12 | 46% |
-| 采样算法 | euler | - | 12 | 75% |
-| 调度器 | simple | - | 12 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 10 | 8 - 25 | 11 | 56% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 91% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1080 | 720 - 1280 | 11 | 84% |
+| 高度 | 1920 | 720 - 1920 | 11 | 74% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1536，12 个样本
-- 高度 中位数 1360，观测区间 1024 - 1920，12 个样本
-- 采样步数 中位数 9，观测区间 8 - 16，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，12 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 euler，12 个样本，一致性 75%
-- 调度器 最常用 simple，12 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（8/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 25，11 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 91%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 720 - 1280，11 个样本，取值集中（一致性 84%）
+- 高度 中位数 1920，观测区间 720 - 1920，11 个样本

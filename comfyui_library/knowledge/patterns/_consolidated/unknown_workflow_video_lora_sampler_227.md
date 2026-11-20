@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_227
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.645182
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
+coverage: 0.8173
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [平台全量/AI代码侠土豆-Bernini 电商换产品视频编辑_2062397821210423297.json, 平台全量/Bernini 视频换人换背景_2063178699649933314.json, 平台全量/Bernini-视频编辑-字节开源-基于wan2.2_2065440184044445698.json, 平台全量/Bernini视频编辑-v1.0_2070757377581867010.json, 平台全量/Bernini视频编辑-v1_2077664467026014209.json, 平台全量/Character Video Costume Changes人物视频换装_2099665216236773377.json, 平台全量/最新字节开源Bernini+电商换产品+视频编辑_2064723591240966145.json, 平台全量/电商服饰产品展示 万物迁移 换装换衣 模特人物换脸+电商服装展示_2065063988869812225.json, 视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json, 视频生成/图生视频/电商服饰产品展示 万物迁移 视频换脸换装换衣 模特人物换脸+电商服装展示 Bernini+电商换产品_2064890559977840642.json, 视频生成/图生视频/视频换装换衣+电商服饰产品展示+ 模特人物换脸 电商服装展示  Bernini+电商换产品视频编辑_2064510607130451970.json]
+members: [视频生成/图生视频/🥝stand-in脸部一致性视频生成 文生视频🥝_1956266863963590657.json, 视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json, 视频生成/文生视频/Aiwood-Stand-id+vace控制版_1955702074303397890.json, 视频生成/文生视频/Aiwood-Stand-id无控制板_1955698165593751554.json, 视频生成/文生视频/Stand In+Aniwan脸部参考文生视频V1 （高动态版）_1956789708207394817.json, 视频生成/文生视频/Stand In+Vace姿势参考脸部一致性视频生成V1_1956763443317628929.json, 视频生成/文生视频/Stand In脸部参考文生视频V1_1956768845814796289.json, 视频生成/文生视频/Wan面部参考+动作参考Stand-in文生视频_1957506592558215169.json, 视频生成/文生视频/文生视频stand-in脸部保持一致性视频生成_1957446441918722049.json, 视频生成/文生视频/🥝stand-in脸部一致性视频生成 VACE姿态迁移版🥝_1956266838781034498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_227
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/AI代码侠土豆-Bernini 电商换产品视频编辑_2062397821210423297.json、平台全量/Bernini 视频换人换背景_2063178699649933314.json、平台全量/Bernini-视频编辑-字节开源-基于wan2.2_2065440184044445698.json、平台全量/Bernini视频编辑-v1.0_2070757377581867010.json、平台全量/Bernini视频编辑-v1_2077664467026014209.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/🥝stand-in脸部一致性视频生成 文生视频🥝_1956266863963590657.json、视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json、视频生成/文生视频/Aiwood-Stand-id+vace控制版_1955702074303397890.json、视频生成/文生视频/Aiwood-Stand-id无控制板_1955698165593751554.json、视频生成/文生视频/Stand In+Aniwan脸部参考文生视频V1 （高动态版）_1956789708207394817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerSelect`
+全部 10 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 10/11 个有
-- `ImageResizeKJv2` —— 8/11 个有
-- `TTResolutionSelector` —— 8/11 个有
-- `Text` —— 8/11 个有
-- `easy cleanGpuUsed` —— 8/11 个有
-- `easy showAnything` —— 8/11 个有
-- `GetNode` —— 7/11 个有
-- `SetNode` —— 7/11 个有
-- `Int` —— 3/11 个有
-- `easy getNode` —— 3/11 个有
-- `easy setNode` —— 3/11 个有
-- `CR Text` —— 2/11 个有
-- `LoadVideo` —— 2/11 个有
-- `VAEDecodeTiled` —— 1/11 个有
-- `easy mathInt` —— 1/11 个有
+- `WanVideoVACEModelSelect` —— 9/10 个有
+- `ImageConcanate` —— 8/10 个有
+- `WanVideoEmptyEmbeds` —— 8/10 个有
+- `CR Text` —— 7/10 个有
+- `INTConstant` —— 7/10 个有
+- `ImpactInt` —— 6/10 个有
+- `OpenposePreprocessor` —— 5/10 个有
+- `VHS_LoadVideo` —— 5/10 个有
+- `WanVideoTorchCompileSettings` —— 5/10 个有
+- `WanVideoVACEEncode` —— 5/10 个有
+- `WanVideoVACEStartToEndFrame` —— 5/10 个有
+- `ImageConcatMulti` —— 4/10 个有
+- `JWInteger` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `SimpleMath+` —— 3/10 个有
+- `GetNode` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `JjkText` —— 1/10 个有
 
 ## 典型参数
 

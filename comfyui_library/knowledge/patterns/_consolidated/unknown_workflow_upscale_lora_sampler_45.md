@@ -1,94 +1,85 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_45
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.618833
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GetNode, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactImageBatchToImageList, Int, KSamplerSelect, LoraLoaderModelOnly, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed Everywhere, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.8892
+common_nodes: [BetterFilmGrain, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageScaleToMegapixels, ImageSharpen, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/gongzuoliuziyong1_1937562107925958657.json, 平台全量/gongzuoliuziyong2_1945022215995969538.json, 平台全量/【企鹅AI】Flux girl 网红生成器 PRO-V3_1854098231419342849.json, 平台全量/【企鹅AI】Flux girl 网红生成器 V2_1846476978701660162.json, 平台全量/【企鹅AI】FluxGirl穿搭小游戏V2_1852303664731119618.json, 平台全量/【企鹅AI】FluxGirl穿搭小游戏_1851605882294648833.json]
+members: [图片生成/文生图/Aiwood-qwen+wan2.1洗图流_1956048542387326978.json, 图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json, 图片生成/文生图/[T2I] 极速出图Nunchaku R128高质量（Nunchaku-Qwen）_1965055612562362369.json, 图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json, 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_45
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/gongzuoliuziyong1_1937562107925958657.json、平台全量/gongzuoliuziyong2_1945022215995969538.json、平台全量/【企鹅AI】Flux girl 网红生成器 PRO-V3_1854098231419342849.json、平台全量/【企鹅AI】Flux girl 网红生成器 V2_1846476978701660162.json、平台全量/【企鹅AI】FluxGirl穿搭小游戏V2_1852303664731119618.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Aiwood-qwen+wan2.1洗图流_1956048542387326978.json、图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json、图片生成/文生图/[T2I] 极速出图Nunchaku R128高质量（Nunchaku-Qwen）_1965055612562362369.json、图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json、图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `ImpactImageBatchToImageList`
-- `Int`
-- `KSamplerSelect`
+全部 5 个 workflow 都包含：
+- `BetterFilmGrain`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptySD3LatentImage`
+- `ImageScaleToMegapixels`
+- `ImageSharpen`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `ModelSamplingSD3`
 - `SaveImage`
-- `Seed Everywhere`
-- `SetNode`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnythingPreprocessor` —— 5/6 个有
-- `DisableNoise` —— 5/6 个有
-- `LayerFilter: FilmV2` —— 5/6 个有
-- `ModelSamplingFlux` —— 5/6 个有
-- `SplitSigmasDenoise` —— 5/6 个有
-- `CLIPTextEncode` —— 4/6 个有
-- `LoadImage` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `LayerUtility: ImageBlendAdvance` —— 3/6 个有
-- `SaveImageAndMetadata_` —— 3/6 个有
-- `String` —— 3/6 个有
-- `StringFunction|pysssss` —— 3/6 个有
-- `CR Text Input Switch (4 way)` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `RHHiddenNodes` —— 2/6 个有
-- `Random Number` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `CR Simple Image Compare` —— 1/6 个有
-- `ImageResizeKJ` —— 1/6 个有
-- `Joy_caption` —— 1/6 个有
-- `Joy_caption_load` —— 1/6 个有
-- `RH_Captioner` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `EsesImageEffectBloom` —— 4/5 个有
+- `easy showAnything` —— 3/5 个有
+- `CFGNorm` —— 2/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `NunchakuQwenImageDiTLoader` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `easy promptConcat` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `LazySwitch2way` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 6 | 100% |
-| 高度 | 512 | 512 - 512 | 6 | 100% |
+| 采样步数 | 8 | 4 - 10 | 5 | 62% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.15 - 1 | 5 | 37% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 10，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.15 - 1，5 个样本，取值分散，一致性仅 37%
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

@@ -1,81 +1,78 @@
 ---
 name: unknown_workflow_sampler_unet_vae_124
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9029
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.91575
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【开源】Qwen image 2.1 文生图_2102002816368857089.json, 图片生成/文生图/【遇见AI】qwen image 2.1 turbo大模型基础文生图_2108863368416292866.json, 图片生成/文生图/【遇见AI】qwen image 2.1 官方turbo加速lora文生图基础流_2108863647031320578.json, 图片生成/文生图/【遇见AI】qwen image 2.1文生图基础流_2101841432792363010.json, 图片生成/文生图/千问2.1文生图_2101907864641167362.json, 图片生成/文生图/图像编辑（多图）-qwen image 2.1_2101936015538737153.json, 图片生成/文生图/多图编辑工作流_2105329811446124546.json, 平台全量/Qwen21_三图换装姿势_细节LoRA_RunningHub_2117565399293321218.json, 平台全量/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2105640635368820738.json, 平台全量/饰品图精修2026_2106615076340981761.json]
+members: [图片生成/图生图/Fire Red Image Edit三图参考图编辑_2028311979135344641.json, 图片生成/图生图/FireRed-Image-Edit-1.0 人物换装_2026821364107190274.json, 图片生成/图生图/FireRed-edit-单图编辑_2020792649099251713.json, 图片生成/图生图/FireRed-edit-多图编辑_2027000392680218626.json, 图片生成/图生图/FireRed-edit1.1-单图编辑_2029538924632219649.json, 图片生成/图生图/Qwen 2511最强开源图像编辑工作流_2054749060900376577.json, 图片生成/图生图/Qwen 2511最强开源图像编辑工作流_2055186368539709441.json, 图片生成/图生图/Qwen-Edit-2511-真人转动漫_2082801924931411970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_124
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/【开源】Qwen image 2.1 文生图_2102002816368857089.json、图片生成/文生图/【遇见AI】qwen image 2.1 turbo大模型基础文生图_2108863368416292866.json、图片生成/文生图/【遇见AI】qwen image 2.1 官方turbo加速lora文生图基础流_2108863647031320578.json、图片生成/文生图/【遇见AI】qwen image 2.1文生图基础流_2101841432792363010.json、图片生成/文生图/千问2.1文生图_2101907864641167362.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Fire Red Image Edit三图参考图编辑_2028311979135344641.json、图片生成/图生图/FireRed-Image-Edit-1.0 人物换装_2026821364107190274.json、图片生成/图生图/FireRed-edit-单图编辑_2020792649099251713.json、图片生成/图生图/FireRed-edit-多图编辑_2027000392680218626.json、图片生成/图生图/FireRed-edit1.1-单图编辑_2029538924632219649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 9/10 个有
-- `LoadImage` —— 8/10 个有
-- `QwenImage21Cache` —— 5/10 个有
-- `ComfySwitchNode` —— 4/10 个有
-- `LoraLoaderModelOnly` —— 4/10 个有
-- `SaveImageAdvanced` —— 4/10 个有
-- `Image Comparer (rgthree)` —— 2/10 个有
-- `Seed (rgthree)` —— 2/10 个有
-- `Text` —— 2/10 个有
-- `Text Multiline` —— 2/10 个有
-- `XinbaoImageStandardizer` —— 2/10 个有
-- `ACE_TextConcatenate` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `PrimitiveFloat` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `RHHiddenNodes` —— 1/10 个有
-- `easy ifElse` —— 1/10 个有
-- `easy promptList` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `ConditioningZeroOut` —— 6/8 个有
+- `TextEncodeQwenImageEditPlus` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `FluxKontextImageScale` —— 3/8 个有
+- `GetImageSize` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `LoraLoader` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 8 - 25 | 10 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 1024 | 1024 - 1248 | 10 | 93% |
-| 高度 | 1024 | 1024 - 1664 | 10 | 80% |
+| 宽度 | 512 | 512 - 1280 | 8 | 53% |
+| 高度 | 512 | 512 - 1280 | 8 | 53% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 7 | 4 - 15 | 8 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 25，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1248，10 个样本，取值集中（一致性 93%）
-- 高度 中位数 1024，观测区间 1024 - 1664，10 个样本
+- 宽度 中位数 512，观测区间 512 - 1280，8 个样本
+- 高度 中位数 512，观测区间 512 - 1280，8 个样本
+- 采样步数 中位数 7，观测区间 4 - 15，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（6/8 个样本）：Steps较低可能导致细节不足

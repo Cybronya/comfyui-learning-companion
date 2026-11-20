@@ -1,81 +1,66 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_3
 type: Unknown Workflow
-frequency: 19
-level: strong
-coverage: 0.883316
-common_nodes: [CLIPTextEncode, ColorCorrect, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImpactInt, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: RestoreCropBox, LoadImage, Mask Fill Holes, SaveImage, ToBinaryMask, UNETLoader, VAEDecode, VAELoader, easy ifElse]
+frequency: 14
+level: moderate
+coverage: 0.9315
+common_nodes: [CLIPTextEncode, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Fill -OneReward 万物重绘增强版_1980477800337616897.json, 图片生成/图生图/Flux手动去水印_2006193627856379905.json, 图片生成/图生图/OneReward-Fill 最强局部重绘 - 框选模式 （直出4K大图）_1982037924495663105.json, 图片生成/图生图/OneReward-Fill 最强局部重绘 - 涂抹模式 （直出4K大图）_1980525783024357377.json, 图片生成/图生图/OneReward-Fill-最强局部重绘-框选遮罩_1981340609220870145.json, 图片生成/图生图/OneReward-Fill-最强局部重绘-遮罩涂抹模式_1981313979459035137.json, 图片生成/图生图/OneReward-Fill最强擦除【支持超大面积擦除】_1996020269028458497.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】_1978644930367262722.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】_1980971341039984641.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】许老师版_1978949823430823937.json, 图片生成/图生图/OneReward-Fill重绘_1991413143960309762.json, 图片生成/图生图/局部重绘Flux-Fill最强局部重绘-OneReward-Fill1.0_1985568936228016129.json, 图片生成/图生图/局部重绘Flux-OneReward-Fill_2061649505245818881.json, 图片生成/图生图/局部重绘Flux-OneReward-Fill自用_1997666079226966018.json, 图片生成/图生图/局部重绘丨Flux-Fill最新最强局部重绘-OneReward-Fill最强重绘【高清直出】_1979068377333403649.json, 图片生成/图生图/手部修复-OneReward-Fill重绘修手_1981942247061110786.json, 图片生成/图生图/最强重绘4K直出不挑图_1980059607995420674.json, 图片生成/图生图/最强重绘OneReward-Fill 工作流 不限尺寸 想改啥改啥_1979444855506112514.json, 平台全量/【完美修手】手部修复-OneReward-Fill重绘修手-完美修手 全自动手部修复_2027907970113216514.json]
+members: [图片生成/图生图/Z image-局部重绘_1996406494566432770.json, 图片生成/图生图/Z-image_局部重绘_1998016560675586050.json, 图片生成/图生图/Z-image局部重绘_1994770932847849474.json, 图片生成/图生图/Z-image局部重绘_1995667925262598145.json, 图片生成/图生图/Z-image局部重绘_1998549428036337666.json, 图片生成/图生图/Z-image局部重绘_2008078929575284737.json, 图片生成/图生图/Z-image局部重绘_2044248370755149826.json, 图片生成/图生图/Z-image局部重绘_2046509363543678977.json, 图片生成/图生图/Z-image开源-局部重绘【非edit模型】_1994233157631279106.json, 图片生成/图生图/[FLUX] 改变发型_1921732538652377090.json, 图片生成/图生图/flux fill 移除、局部重绘_2083238672299814914.json, 图片生成/图生图/一键移除工作流_2020033286864637954.json, 图片生成/图生图/完美遮罩移除功能 Removal 升级版_1983888624603332610.json, 图片生成/图生图/局部重绘 支持4K_1991035247468945410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/Fill -OneReward 万物重绘增强版_1980477800337616897.json、图片生成/图生图/Flux手动去水印_2006193627856379905.json、图片生成/图生图/OneReward-Fill 最强局部重绘 - 框选模式 （直出4K大图）_1982037924495663105.json、图片生成/图生图/OneReward-Fill 最强局部重绘 - 涂抹模式 （直出4K大图）_1980525783024357377.json、图片生成/图生图/OneReward-Fill-最强局部重绘-框选遮罩_1981340609220870145.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Z image-局部重绘_1996406494566432770.json、图片生成/图生图/Z-image_局部重绘_1998016560675586050.json、图片生成/图生图/Z-image局部重绘_1994770932847849474.json、图片生成/图生图/Z-image局部重绘_1995667925262598145.json、图片生成/图生图/Z-image局部重绘_1998549428036337666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ColorCorrect`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
 - `InpaintModelConditioning`
 - `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: RestoreCropBox`
 - `LoadImage`
-- `Mask Fill Holes`
 - `SaveImage`
-- `ToBinaryMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `easy boolean` —— 15/19 个有
-- `CR Text` —— 13/19 个有
-- `DeepTranslatorTextNode` —— 12/19 个有
-- `LoraLoader` —— 5/19 个有
-- `PrimitiveBoolean` —— 4/19 个有
-- `RH_Translator` —— 4/19 个有
-- `LayerMask: LoadSAM2Model` —— 2/19 个有
-- `LayerMask: ObjectDetectorYOLO8` —— 2/19 个有
-- `LayerMask: SAM2UltraV2` —— 2/19 个有
-- `LoraLoaderModelOnly` —— 2/19 个有
-- `MaskPreview` —— 2/19 个有
-- `PreviewImage` —— 2/19 个有
-- `easy showAnything` —— 2/19 个有
-- `ApplyFBCacheOnModel` —— 1/19 个有
-- `ImageConcatMulti` —— 1/19 个有
-- `Note Plus (mtb)` —— 1/19 个有
+- `ConditioningZeroOut` —— 13/14 个有
+- `DifferentialDiffusion` —— 13/14 个有
+- `FluxGuidance` —— 12/14 个有
+- `MaskBlur+` —— 10/14 个有
+- `CLIPLoader` —— 9/14 个有
+- `Image Comparer (rgthree)` —— 6/14 个有
+- `DualCLIPLoader` —— 5/14 个有
+- `LoraLoaderModelOnly` —— 4/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/14 个有
+- `Mask Fill Holes` —— 3/14 个有
+- `GrowMaskWithBlur` —— 2/14 个有
+- `ImageResize+` —— 2/14 个有
+- `ImpactInt` —— 2/14 个有
+- `CR Text` —— 1/14 个有
+- `ColorCorrect` —— 1/14 个有
+- `ImageAndMaskPreview` —— 1/14 个有
+- `MaskPreview+` —— 1/14 个有
+- `easy ifElse` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 20 - 30 | 19 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 19 | 100% |
-| 采样算法 | er_sde | - | 19 | 100% |
-| 调度器 | simple | - | 19 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 10 | 10 - 25 | 14 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 86% |
+| 调度器 | simple | - | 14 | 64% |
+| 重绘幅度 | 0.85 | 0.75 - 1 | 14 | 91% |
 
 ## 常见问题
 
@@ -83,10 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 20 - 30，19 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，19 个样本，一致性 100%
-- 调度器 最常用 simple，19 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 25，14 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 86%
+- 调度器 最常用 simple，14 个样本，一致性 64%
+- 重绘幅度 中位数 0.85，观测区间 0.75 - 1，14 个样本，取值集中（一致性 91%）

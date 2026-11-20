@@ -1,70 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_184
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.94675
-common_nodes: [CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.725143
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/flux文生图_1988616802869624833.json, 图片生成/文生图/Pornmaster_krea2_t2i_Raw+Turbo_2098728229115879426.json, 图片生成/文生图/Z-Image+Base&Turbo双重采样工作流_2058016487142674434.json, 图片生成/文生图/Z-Image-Turbo文生图双重采样_2018553894216929282.json, 图片生成/文生图/Z-image-Turbo文生图 双重采样_2020839379777884161.json, 图片生成/文生图/一键生成美女Z-Image双重采样_2039874902513160193.json, 图片生成/文生图/文生图 双采 行为艺术 黑兽9优化版_2065363132853612544.json, 图片生成/文生图/电商生成真实感模特 ZImage 双采样_2046138498574454786.json]
+members: [图片生成/反推提示词/MOSS image 提示增强_反推_风格参考 全能流_2113532439992823810.json, 图片生成/反推提示词/moss全流程工作流+提示词优化+反推_2100824591068385282.json, 图片生成/图生图/FLUX 3 Image Klein 图像编辑_2111121518007767042.json, 图片生成/图生图/Flux3 Image Klein distill t2i加速图生图_2110971174585978882.json, 图片生成/图生图/Flux3 Klein 图生图局部编辑标准版_2113475197054570497.json, 图片生成/图生图/MOSS Image 超级保真4步急速图像生成_2112898230974500865.json, 图片生成/图生图/MOSS Image布局控制图像设计Sft+base_2112216902151008257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_184
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux文生图_1988616802869624833.json、图片生成/文生图/Pornmaster_krea2_t2i_Raw+Turbo_2098728229115879426.json、图片生成/文生图/Z-Image+Base&Turbo双重采样工作流_2058016487142674434.json、图片生成/文生图/Z-Image-Turbo文生图双重采样_2018553894216929282.json、图片生成/文生图/Z-image-Turbo文生图 双重采样_2020839379777884161.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/MOSS image 提示增强_反推_风格参考 全能流_2113532439992823810.json、图片生成/反推提示词/moss全流程工作流+提示词优化+反推_2100824591068385282.json、图片生成/图生图/FLUX 3 Image Klein 图像编辑_2111121518007767042.json、图片生成/图生图/Flux3 Image Klein distill t2i加速图生图_2110971174585978882.json、图片生成/图生图/Flux3 Klein 图生图局部编辑标准版_2113475197054570497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `ComfySwitchNode`
+- `EmptyFlux2LatentImage`
+- `KSampler`
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 7/8 个有
-- `Int` —— 7/8 个有
-- `ModelSamplingAuraFlow` —— 6/8 个有
-- `SaveImage` —— 6/8 个有
-- `Seed (rgthree)` —— 6/8 个有
-- `CompressImages` —— 4/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `DualCLIPLoader` —— 1/8 个有
-- `FluxGuidance` —— 1/8 个有
-- `JjkText` —— 1/8 个有
+- `PreviewAny` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `ResolutionSelector` —— 4/7 个有
+- `BatchImagesNode` —— 3/7 个有
+- `CreateBoundingBoxes` —— 3/7 个有
+- `ReferenceMultiLatent` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `MOSSImageLayoutPrompt` —— 2/7 个有
+- `SkipLayerGuidanceDiTSimple` —— 2/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
+- `Flux3LayoutPrompt` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageCompare` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 20 | 8 | 9% |
-| 采样算法 | 1 | 1 - 1.5 | 8 | 84% |
-| 调度器 | euler | - | 8 | 88% |
-| 重绘幅度 | sgm_uniform | - | 8 | 75% |
-| 宽度 | 1080 | 832 - 1920 | 8 | 74% |
-| 高度 | 1728 | 1080 - 1920 | 8 | 80% |
+| 采样步数 | 25 | 4 - 50 | 7 | 39% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 7 | 51% |
+| 采样算法 | euler | - | 7 | 71% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 20，8 个样本，取值分散，一致性仅 9%
-- 采样算法 中位数 1，观测区间 1 - 1.5，8 个样本，取值集中（一致性 84%）
-- 调度器 最常用 euler，8 个样本，一致性 88%
-- 重绘幅度 最常用 sgm_uniform，8 个样本，一致性 75%
-- 宽度 中位数 1080，观测区间 832 - 1920，8 个样本
-- 高度 中位数 1728，观测区间 1080 - 1920，8 个样本
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 25，观测区间 4 - 50，7 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 71%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

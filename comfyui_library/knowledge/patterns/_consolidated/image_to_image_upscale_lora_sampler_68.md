@@ -3,82 +3,88 @@ name: image_to_image_upscale_lora_sampler_68
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.820333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, FluxGuidance, Image Comparer (rgthree), ImageScaleBy, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive, easy promptReplace, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.92
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ConstrainImage|pysssss, DisableNoise, DualCLIPLoader, Fast Groups Bypasser (rgthree), FlipSigmas, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, Image Comparer (rgthree), ImageUpscaleWithModel, InFluxModelSamplingPred, Joy_caption_two, Joy_caption_two_load, KSampler, LayerColor: Exposure, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerUtility: ColorPicker, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LoadImage, LoraLoader, OutFluxModelSamplingPred, PreviewImage, SamplerCustomAdvanced, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein编辑功能—— 电商最强—致性换装流_2030646604079828994.json, 图片生成/图生图/电商最强—致性换装流编辑功能Klein——ENG⭐️⭐️⭐️⭐️⭐️_2087109202438344705.json, 平台全量/Flux.2 Klein： 精准换装_2033824924699205633.json]
+members: [图片生成/图生图/电商产品精修丨_1902158654961770497.json, 图片生成/图生图/电商产品精修丨一键生图系列_1909487858250620930.json, 图片生成/图生图/电商产品精修物品精修_1929119337175531522.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_68
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein编辑功能—— 电商最强—致性换装流_2030646604079828994.json、图片生成/图生图/电商最强—致性换装流编辑功能Klein——ENG⭐️⭐️⭐️⭐️⭐️_2087109202438344705.json、平台全量/Flux.2 Klein： 精准换装_2033824924699205633.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/电商产品精修丨_1902158654961770497.json、图片生成/图生图/电商产品精修丨一键生图系列_1909487858250620930.json、图片生成/图生图/电商产品精修物品精修_1929119337175531522.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `FluxGuidance`
+- `ConstrainImage|pysssss`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `FlipSigmas`
+- `FluxDeGuidance`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
 - `Image Comparer (rgthree)`
-- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `InFluxModelSamplingPred`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `LayerColor: Exposure`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LayerUtility: ColorPicker`
+- `LayerUtility: ImageCombineAlpha`
+- `LayerUtility: ImageRemoveAlpha`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoraLoader`
+- `OutFluxModelSamplingPred`
 - `PreviewImage`
-- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy positive`
-- `easy promptReplace`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `Switch any [Crystools]` —— 2/3 个有
-- `llama_cpp_clean_states` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
 - `RHHiddenNodes` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | exponential | - | 3 | 100% |
+| 重绘幅度 | 0.7 | 0.7 - 0.7 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（8/3 个样本）：Steps较低可能导致细节不足
+- 调度器 最常用 exponential，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.7，观测区间 0.7 - 0.7，3 个样本，取值集中（一致性 100%）

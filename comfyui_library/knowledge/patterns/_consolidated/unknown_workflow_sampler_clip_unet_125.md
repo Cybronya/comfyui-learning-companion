@@ -3,88 +3,80 @@ name: unknown_workflow_sampler_clip_unet_125
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.8596
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, MaskToSEGS, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SEGSPreview, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.807
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json, 图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json, 图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json, 图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json, 图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json, 图片生成/图生图/参考图生成卡通可爱四宫格漫画_1918124542395617281.json, 图片生成/图生图/拍立得照片卡通形象_1912392096207306754.json, 图片生成/图生图/拍立得照片卡通形象_1913231363498278913.json, 图片生成/图生图/真人转剪纸艺术工作流_1895381354098065410.json, 平台全量/剪纸人像_1879424612927791106.json]
+members: [视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json, 视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json, 视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json, 视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json, 视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json, 视频生成/文生视频/LTX2.5_I2V_T2V_2087347078044405762.json, 视频生成/文生视频/LTX2.5图生视频（默认工作流）_2088281770851651585.json, 视频生成/文生视频/Ltx2.5 图_文生视频-双采高清-蒸馏加速_2087683911039143937.json, 视频生成/文生视频/ltx2.5 - 文_图生视频 (2)_2087437692429750274.json, 视频生成/文生视频/ltx2.5双采文生+图生_2087504450205339650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_125
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json、图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json、图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json、图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json、图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json、视频生成/文生视频/LTX2.5-文生视频_2087399947888062465.json、视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json、视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json、视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LoadImage`
-- `MaskToSEGS`
-- `PreviewImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
-- `SEGSPreview`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 9/10 个有
-- `ShowText|pysssss` —— 9/10 个有
-- `easy cleanGpuUsed` —— 9/10 个有
-- `JjkText` —— 8/10 个有
-- `TextCombinerTwo` —— 8/10 个有
-- `FluxResolutionNode` —— 7/10 个有
-- `LoraLoader` —— 7/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `ImageResizeKJ` —— 3/10 个有
-- `ApplyFBCacheOnModel` —— 2/10 个有
-- `ApplyFluxControlNet` —— 2/10 个有
-- `ConditioningZeroOut` —— 2/10 个有
-- `HEDPreprocessor` —— 2/10 个有
-- `HfImageToRGB` —— 2/10 个有
-- `Image Levels Adjustment` —— 2/10 个有
-- `LoadFluxControlNet` —— 2/10 个有
-- `VAEEncode` —— 2/10 个有
-- `XlabsSampler` —— 2/10 个有
-- `easy imageRemBg` —— 2/10 个有
-- `BaiduTranslateNode` —— 1/10 个有
-- `CR Text Concatenate` —— 1/10 个有
-- `ETN_Translate` —— 1/10 个有
-- `ImageConcatMulti` —— 1/10 个有
-- `LayerUtility: ExtendCanvas` —— 1/10 个有
-- `MaskPreview+` —— 1/10 个有
+- `LTXVLatentUpsampler` —— 9/10 个有
+- `LatentUpscaleModelLoader` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `ResolutionSelector` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `LTXVDualCFGGuider` —— 7/10 个有
+- `PrimitiveBoolean` —— 6/10 个有
+- `LTXVImgToVideoInplace` —— 5/10 个有
+- `LTXVPreprocess` —— 5/10 个有
+- `LoadImage` —— 5/10 个有
+- `ResizeImageMaskNode` —— 5/10 个有
+- `TextGenerateLTX2Prompt` —— 5/10 个有
+- `ComfySwitchNode` —— 4/10 个有
+- `CFGGuider` —— 3/10 个有
+- `LTXFloatToInt` —— 3/10 个有
+- `PreviewAny` —— 3/10 个有
+- `PrimitiveFloat` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `ComfyNotNode` —— 2/10 个有
+- `RH_LLMAPI_Pro_Node` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
 - `Note Plus (mtb)` —— 1/10 个有
-- `PMRF` —— 1/10 个有
-- `easy positive` —— 1/10 个有
+- `PurgeVRAM_UTK` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 1024 | 10 | 86% |
-| 高度 | 1024 | 1024 - 1024 | 10 | 100% |
-| LoRA 模型强度 | 0.85 | 0.7 - 1 | 7 | 86% |
-| LoRA 文本强度 | 0.8 | 0.7 - 1 | 7 | 85% |
+| 宽度 | 97 | 97 - 121 | 10 | 89% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
@@ -92,7 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 1024，10 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.85，观测区间 0.7 - 1，7 个样本，取值集中（一致性 86%）
-- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 1，7 个样本，取值集中（一致性 85%）
+- 宽度 中位数 97，观测区间 97 - 121，10 个样本，取值集中（一致性 89%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

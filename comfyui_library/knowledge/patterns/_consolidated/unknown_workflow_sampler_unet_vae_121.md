@@ -1,82 +1,83 @@
 ---
 name: unknown_workflow_sampler_unet_vae_121
 type: Unknown Workflow
-frequency: 10
+frequency: 8
 level: moderate
-coverage: 0.8277
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.86
+common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json, 图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json, 平台全量/MiniMax H3 文图生视频、参考生视频多合一工作流-B站UP主@好奇漫步_2097248370111901698.json, 数字人/数字人/MINIMAX-H3 8参考_2086224463867236354.json, 数字人/数字人/MINIMAX-H3 9参考_2086239769545232385.json, 数字人/数字人/MINIMAX-H3 9参考_2086338746995265538.json, 视频生成/文生视频/MiniMax H3多合一｜Turbo4 + Sage + T8 Stable｜R2V Turbo6 EXP + 二采增强版｜B站UP主@好奇漫步_2086836147753410562.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜10Eros+LightX2V__2088301741266788353.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜LightX2V_v1_4Ste_2088301834657157121.json, 视频生成/文生视频/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2087029485995642882.json]
+members: [图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json, 图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json, 图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json, 图片生成/图生图/Mad裂变资产-1_1989310590176948226.json, 图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json, 图片生成/图生图/Qwen-Edit-2511人物角色三视图3D国漫CG风格（图生图）_2083446869669277698.json, 图片生成/图生图/qwen2511生活照秒变精结婚照登记照片婚纱_2057652286989619201.json, 图片生成/图生图/qwen2511生活照秒变精结婚照登记照片婚纱_2061052010992070658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_121
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json、图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json、平台全量/MiniMax H3 文图生视频、参考生视频多合一工作流-B站UP主@好奇漫步_2097248370111901698.json、数字人/数字人/MINIMAX-H3 8参考_2086224463867236354.json、数字人/数字人/MINIMAX-H3 9参考_2086239769545232385.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json、图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json、图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json、图片生成/图生图/Mad裂变资产-1_1989310590176948226.json、图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `LoadVideo` —— 8/10 个有
-- `LoraLoaderBypassModelOnly` —— 8/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `MiniMaxH3ImageToVideo` —— 7/10 个有
-- `ComfySwitchNode` —— 6/10 个有
-- `GetVideoComponents` —— 6/10 个有
-- `ImageResizeKJv2` —— 6/10 个有
-- `PT_H3ConcatAVLatent` —— 6/10 个有
-- `PrimitiveInt` —— 6/10 个有
-- `VAEEncode` —— 6/10 个有
-- `VAEEncodeAudio` —— 6/10 个有
-- `JWString` —— 3/10 个有
-- `JoinStrings` —— 3/10 个有
-- `MiniMaxH3DualClockSamplerT8` —— 3/10 个有
-- `EasyCache` —— 2/10 个有
-- `Get Date Time String (JPS)` —— 2/10 个有
-- `MiniMaxH3SigmaShift` —— 2/10 个有
-- `SaveText|pysssss` —— 2/10 个有
-- `ShowText|pysssss` —— 2/10 个有
-- `StringFunction|pysssss` —— 2/10 个有
-- `WidgetToString` —— 2/10 个有
-- `ModelAttentionBackend` —— 1/10 个有
-- `PathchSageAttentionKJ` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `TextEncodeQwenImageEditPlus` —— 6/8 个有
+- `PreviewImage` —— 4/8 个有
+- `TextEncodeQwenImageEdit` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `Anything Everywhere3` —— 2/8 个有
+- `ImageStitch` —— 2/8 个有
+- `easy imageConcat` —— 2/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `GetImageSizeAndCount` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `ttN concat` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1360 | 768 - 1920 | 8 | 71% |
+| 高度 | 1024 | 720 - 1920 | 8 | 68% |
+| 采样步数 | 6 | 4 - 8 | 8 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 14/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1360，观测区间 768 - 1920，8 个样本
+- 高度 中位数 1024，观测区间 720 - 1920，8 个样本
+- 采样步数 中位数 6，观测区间 4 - 8，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（14/8 个样本）：Steps较低可能导致细节不足

@@ -1,61 +1,77 @@
 ---
 name: unknown_workflow_lora_sampler_clip_58
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: strong
-coverage: 0.845444
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ColorMatch, Fast Groups Muter (rgthree), ImageScaleToTotalPixels, Int, KSamplerAdvanced, LatentSwitch, LoraLoaderModelOnly, PreviewImage, QwenImageLatentAspectRatio, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.93275
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LayerUtility: TextJoin, LoadImage, LoraLoader, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/AI视频文生图_2042991324063866882.json, 图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json, 图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085256281174138881.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085257479918804993.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085259061586653186.json, 图片生成/文生图/超强文生图，极致细节：Zimage系列底图，Klein高清修复_2018129430551465986.json]
+members: [图片生成/图生图/一键真人照片转绘泡泡玛特3d风格_1936073081570103298.json, 图片生成/图生图/全能图片G-4o 同款 Q版手办玩偶套装_1912381711098019841.json, 图片生成/图生图/全能图片G4o同款 3D卡通人物玩偶+名字_1921402683154972673.json, 图片生成/图生图/卡通风格人物一键转换_1927654415660892161.json, 图片生成/图生图/照片转简洁q版卡通手办-全能图片G-4o同款_1920801534802591746.json, 图片生成/图生图/生成你的专属Labubu_1935175886897610753.json, 图片生成/图生图/面部迁移 + 人物手办｜全能图片G4o 同款_1920290508118364161.json, 图片生成/文生图/一键真人转3d泡泡玛特风格_1924656165467115521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_58
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/AI视频文生图_2042991324063866882.json、图片生成/文生图/Zimage构图+Klein高清修复_2037766497598181377.json、图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一键真人照片转绘泡泡玛特3d风格_1936073081570103298.json、图片生成/图生图/全能图片G-4o 同款 Q版手办玩偶套装_1912381711098019841.json、图片生成/图生图/全能图片G4o同款 3D卡通人物玩偶+名字_1921402683154972673.json、图片生成/图生图/卡通风格人物一键转换_1927654415660892161.json、图片生成/图生图/照片转简洁q版卡通手办-全能图片G-4o同款_1920801534802591746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
-- `Fast Groups Muter (rgthree)`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `KSamplerAdvanced`
-- `LatentSwitch`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImageLatentAspectRatio`
-- `ReferenceLatent`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `LoraLoader`
+- `RandomNoise`
+- `ReduxAdvanced`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 8/9 个有
+- `Joy_caption_two_advanced` —— 7/8 个有
+- `Joy_caption_two_load` —— 7/8 个有
+- `Joy_extra_options` —— 7/8 个有
+- `TextInput_` —— 7/8 个有
+- `ApplyPulidFlux` —— 5/8 个有
+- `ApplyTeaCachePatch` —— 5/8 个有
+- `PulidFluxInsightFaceLoader` —— 5/8 个有
+- `PulidFluxModelLoader` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `ShowText|pysssss` —— 4/8 个有
+- `EcomIDEvaClipLoader` —— 3/8 个有
+- `PulidFluxEvaClipLoader` —— 2/8 个有
+- `easy imageScaleDownToSize` —— 2/8 个有
+- `DeepTranslatorTextNode` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `LP-TranslateToEN` —— 1/8 个有
+- `Miaoshouai_Tagger` —— 1/8 个有
+- `RepeatLatentBatch` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 89% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+| 宽度 | 1024 | 768 - 1024 | 8 | 87% |
+| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
+| LoRA 模型强度 | 0.95 | 0.8 - 1.5 | 8 | 79% |
+| LoRA 文本强度 | 0.95 | 0.8 - 1.5 | 8 | 79% |
 
 ## 常见问题
 
@@ -63,8 +79,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 89%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 768 - 1024，8 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.95，观测区间 0.8 - 1.5，8 个样本
+- LoRA 文本强度 中位数 0.95，观测区间 0.8 - 1.5，8 个样本

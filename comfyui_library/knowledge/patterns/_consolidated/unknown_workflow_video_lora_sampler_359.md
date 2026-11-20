@@ -1,102 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_359
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.712375
-common_nodes: [CLIPLoader, CLIPTextEncode, DWPreprocessor, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: moderate
+coverage: 0.907571
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+problems: []
 missing: []
-members: [平台全量/Wan2.2-Animate workfow comfyUI_1969068684759212034.json, 平台全量/Wan2.2-Animate-角色替换_2055343235647713282.json, 平台全量/角色替换_1983725374326644738.json, 视频生成/图生视频/Wan2.2-Animate-图生视频 官方原版更稳定 人物替换SEC（精准换人）+长视频 稳如老狗_1983610116006191105.json, 视频生成/图生视频/Wan2.2-Animate-图生视频（人物替换+长视频）_1975191732172230658.json, 视频生成/图生视频/Wan2.2-Animate-图生视频（动作迁移+前后视角一致性）_1991499381406908418.json, 视频生成/图生视频/Wan2.2-Animate_V2模型-图生视频（人物替换+长视频）_1975411032183148546.json, 视频生成/图生视频/Wan2.2-Animate_V2模型-图生视频（自动检测+人物替换+长视频）_1988553294480064514.json]
+members: [视频生成/图生视频/Multitalk多人对话极速优化版 数字人对口型_1952655521791819778.json, 视频生成/图生视频/Multitalk最强数字人运镜参考版 运行加强版_1952724785534070786.json, 视频生成/图生视频/Wan2.1 InfiniteTalk 单人版_1990298374261927937.json, 视频生成/图生视频/Wan双人对口型不需要遮罩_2042473229025021954.json, 视频生成/图生视频/最强图生双人数字人万相2.1+Infinite Talk_1958149674144321538.json, 视频生成/图生视频/👾【大炮数字人】MultiTalk双人对口型加速版👾_1941429442441015297.json, 音频生成/音频生成/Multitalk单人唱歌数字人_1952348321673359361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_359
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/Wan2.2-Animate workfow comfyUI_1969068684759212034.json、平台全量/Wan2.2-Animate-角色替换_2055343235647713282.json、平台全量/角色替换_1983725374326644738.json、视频生成/图生视频/Wan2.2-Animate-图生视频 官方原版更稳定 人物替换SEC（精准换人）+长视频 稳如老狗_1983610116006191105.json、视频生成/图生视频/Wan2.2-Animate-图生视频（人物替换+长视频）_1975191732172230658.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Multitalk多人对话极速优化版 数字人对口型_1952655521791819778.json、视频生成/图生视频/Multitalk最强数字人运镜参考版 运行加强版_1952724785534070786.json、视频生成/图生视频/Wan2.1 InfiniteTalk 单人版_1990298374261927937.json、视频生成/图生视频/Wan双人对口型不需要遮罩_2042473229025021954.json、视频生成/图生视频/最强图生双人数字人万相2.1+Infinite Talk_1958149674144321538.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DWPreprocessor`
-- `ImageResizeKJv2`
-- `KSampler`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PixelPerfectResolution`
-- `TrimVideoLatent`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 7/8 个有
-- `CLIPVisionLoader` —— 7/8 个有
-- `DrawMaskOnImage` —— 7/8 个有
-- `FaceMaskFromPoseKeypoints` —— 7/8 个有
-- `GrowMask` —— 7/8 个有
-- `ImageCropByMaskAndResize` —— 7/8 个有
-- `BlockifyMask` —— 6/8 个有
-- `DownloadAndLoadSAM2Model` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `PointsEditor` —— 6/8 个有
-- `Sam2Segmentation` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `CM_IntToFloat` —— 5/8 个有
-- `GetImageRangeFromBatch` —— 5/8 个有
-- `ImageBatchMulti` —— 5/8 个有
-- `Int` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `RHHiddenNodes` —— 5/8 个有
-- `SimpleMath+` —— 5/8 个有
-- `VHS_GetImageCount` —— 5/8 个有
-- `VHS_VideoInfoLoaded` —— 5/8 个有
-- `easy seed` —— 5/8 个有
-- `INTConstant` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `CreateVideo` —— 1/8 个有
-- `ImageAndMaskPreview` —— 1/8 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/8 个有
-- `LayerMask: SegformerClothesPipelineLoader` —— 1/8 个有
-- `LayerMask: SegformerUltraV2` —— 1/8 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/8 个有
-- `SaveVideo` —— 1/8 个有
-- `ShowAnything|Mie` —— 1/8 个有
-- `VantageWanBlockSwap` —— 1/8 个有
+- `AudioCrop` —— 6/7 个有
+- `Int` —— 6/7 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `WanVideoImageToVideoMultiTalk` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `ImageResizeKJv2` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
+- `SaveAudio` —— 4/7 个有
+- `SeparateMasks` —— 4/7 个有
+- `MaskPreview+` —— 3/7 个有
+- `WanVideoContextOptions` —— 3/7 个有
+- `Audio Duration (mtb)` —— 2/7 个有
+- `RH_GetAudioDuration` —— 2/7 个有
+- `ToInt` —— 2/7 个有
+- `AudioCombine` —— 1/7 个有
+- `DF_Image_scale_to_side` —— 1/7 个有
+- `Float to Int` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `WanVideoImageToVideoEncode` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
+- `easy convertAnything` —— 1/7 个有
+- `kkGetImage` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 6 | 8 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 18/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 6，8 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（18/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

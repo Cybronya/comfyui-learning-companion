@@ -1,81 +1,91 @@
 ---
 name: unknown_workflow_video_upscale_lora_18
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.601
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SeargePromptText, SetNode, ShowText|pysssss, SimpleCondition+, VHS_VideoCombine, Video_Upscale_With_Model, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 3
+level: strong
+coverage: 0.949
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, CreateCFGScheduleFloatList, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GetImageSizeAndCount, INTConstant, ImageFromBatch+, ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, JWInteger, JjkShowText, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, LoraLoader, LoraLoaderModelOnly, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json, 视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json, 视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json, 视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json]
+members: [视频生成/图生视频/WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.json, 视频生成/图生视频/（微缩景观）WAN2.2图片到视频_1957832678953381890.json, 视频生成/图生视频/（微缩景观）WAN图片到视频_1957835967409352705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_18
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json、视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json、视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json、视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.json、视频生成/图生视频/（微缩景观）WAN2.2图片到视频_1957832678953381890.json、视频生成/图生视频/（微缩景观）WAN图片到视频_1957835967409352705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetNode`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `CreateCFGScheduleFloatList`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageFromBatch+`
+- `ImageListToImageBatch`
 - `ImageResizeKJ`
-- `ImageSmartSharpen+`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
+- `JWInteger`
+- `JjkShowText`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SeargePromptText`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleCondition+`
+- `LoraLoader`
+- `LoraLoaderModelOnly`
+- `RH_Translator`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Video_Upscale_With_Model`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoEasyCache`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Int` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `WanVideoClipVisionEncode` —— 3/4 个有
-- `WanVideoFreeInitArgs` —— 3/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `WanVideoEasyCache` —— 2/4 个有
-- `WanVideoExperimentalArgs` —— 2/4 个有
-- `WanVideoSLG` —— 2/4 个有
-- `WanVideoSetRadialAttention` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `ADE_CameraPoseBasic` —— 1/4 个有
-- `CameraPoseVisualizer` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `LoadWanVideoClipTextEncoder` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `WanVideoFunCameraEmbeds` —— 1/4 个有
-- `WanVideoMagCache` —— 1/4 个有
-- `WanVideoTeaCache` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | 768 - 768 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -83,4 +93,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 768，观测区间 768 - 768，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

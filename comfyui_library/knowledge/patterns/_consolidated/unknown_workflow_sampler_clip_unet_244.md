@@ -2,67 +2,86 @@
 name: unknown_workflow_sampler_clip_unet_244
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.894
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.7755
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, CreateVideo, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PreviewAny, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/3.扩展图片_2050623451928510466.json, 图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json, 图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json, 图片生成/图生图/Flux2 Klein 动漫转写实_2024871399084527618.json, 平台全量/TY360-全景照片编辑_2038841674725597185.json, 平台全量/动漫转真人_2027619419937054721.json]
+members: [视频生成/图生视频/A-10 LTX-2.5 首尾帧生视频 （FLF2V）_2087395088770097154.json, 视频生成/图生视频/A-9 LTX-2.5 图生视频（I2V）· 首帧图直接出片 · 音画同步_2087380641817124866.json, 视频生成/图生视频/LTX 2.5 图生视频_2093915637625212929.json, 视频生成/图生视频/LTX 2.5 首尾帧生视频版_2094313555356119041.json, 视频生成/图生视频/LTX-2.5 T2V_I2V单采样_2087377086850883585.json, 视频生成/图生视频/LTX-2.5 T2V_I2V双采样_2087409169308676098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_244
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/3.扩展图片_2050623451928510466.json、图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json、图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json、图片生成/图生图/Flux2 Klein 动漫转写实_2024871399084527618.json、平台全量/TY360-全景照片编辑_2038841674725597185.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/A-10 LTX-2.5 首尾帧生视频 （FLF2V）_2087395088770097154.json、视频生成/图生视频/A-9 LTX-2.5 图生视频（I2V）· 首帧图直接出片 · 音画同步_2087380641817124866.json、视频生成/图生视频/LTX 2.5 图生视频_2093915637625212929.json、视频生成/图生视频/LTX 2.5 首尾帧生视频版_2094313555356119041.json、视频生成/图生视频/LTX-2.5 T2V_I2V单采样_2087377086850883585.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVDualCFGGuider`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
+- `ManualSigmas`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `ImageScaleToTotalPixels` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `easy imageConcat` —— 3/6 个有
-- `GetNode` —— 2/6 个有
-- `MuyeTextEditOutput` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `TY360Pasteback` —— 2/6 个有
-- `TY360Preview` —— 2/6 个有
-- `TY360Roundtrip` —— 2/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `ConcatTextOfUtils` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImagePadForOutpaint` —— 1/6 个有
-- `ResizeImagesByLongerEdge` —— 1/6 个有
-- `Text` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `KSamplerSelect` —— 4/6 个有
+- `LTXVImgToVideoInplace` —— 4/6 个有
+- `ResizeImageMaskNode` —— 4/6 个有
+- `ResolutionSelector` —— 4/6 个有
+- `LTXVLatentUpsampler` —— 3/6 个有
+- `LatentUpscaleModelLoader` —— 3/6 个有
+- `CFGGuider` —— 2/6 个有
+- `ComfyNotNode` —— 2/6 个有
+- `DualCLIPLoader` —— 2/6 个有
+- `GetImageSize` —— 2/6 个有
+- `ImageFromBatch` —— 2/6 个有
+- `LTXFloatToInt` —— 2/6 个有
+- `LTXVAddGuide` —— 2/6 个有
+- `LTXVCropGuides` —— 2/6 个有
+- `PrimitiveFloat` —— 2/6 个有
+- `SamplerEulerAncestral` —— 2/6 个有
+- `SaveAudio` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `VHS_VideoCombine` —— 2/6 个有
+- `GemmaAPITextEncode` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `SeedGenerator` —— 1/6 个有
+- `StringContains` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 121 | 6 | 89% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -70,4 +89,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 121，6 个样本，取值集中（一致性 89%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

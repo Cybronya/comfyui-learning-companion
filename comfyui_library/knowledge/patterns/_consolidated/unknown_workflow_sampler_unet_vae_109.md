@@ -1,63 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_109
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.867182
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.858667
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxh3首尾帧视频_2109562727692849153.json, 视频生成/图生视频/minmaxh3图生视频_2109544409682497537.json, 视频生成/图生视频/video_minimax_h3_i2v_first_last_frame_2092171283260862466.json, 视频生成/图生视频/开源版Minimax H3 图生视频_2089902055870787586.json, 视频生成/文生视频/GF01-MiniMax H3：文生视频_2084716666163908609.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-图像 音频参考生视频  DiT int8加速版_2090416308562251777.json, 视频生成/文生视频/MiniMax H3 图生视频（SageAttention 加速版）_2085990371192037378.json, 视频生成/文生视频/MiniMax H3 图生视频（SageAttention+LoRA 双重加速）_2086288398037372929.json, 视频生成/文生视频/MiniMax_H3_文生视频加速_2099770316435316738.json, 视频生成/文生视频/MiniMax_H3_文生视频加速_2100031727967232001.json, 视频生成/文生视频/Minimax H3 文生视频 8步加速Lora+sage双重加速工作流_2089325283299119105.json]
+members: [图片生成/图生图/Qwen Image 2.1_三视图+多表情+多视角_2109917911023439874.json, 图片生成/图生图/Qwen Image 2.1单图编辑（角色四视图）2609_2106315774649528321.json, 图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json, 图片生成/图生图/Qwen Image 2.1多图编辑_2102313870550462466.json, 图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json, 图片生成/图生图/Qwen Image 2.1多图编辑_2107745252730826754.json, 图片生成/图生图/Qwen Image 2.1多图编辑_2108519033753653250.json, 图片生成/图生图/Qwen Image 2.1多图编辑！B站艾橘溪_2102245556734218241.json, 图片生成/图生图/双人场景合成丨Qwen Image 2.1丨三图融合·提示词增强_2112093043179479041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_109
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/minimaxh3首尾帧视频_2109562727692849153.json、视频生成/图生视频/minmaxh3图生视频_2109544409682497537.json、视频生成/图生视频/video_minimax_h3_i2v_first_last_frame_2092171283260862466.json、视频生成/图生视频/开源版Minimax H3 图生视频_2089902055870787586.json、视频生成/文生视频/GF01-MiniMax H3：文生视频_2084716666163908609.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1_三视图+多表情+多视角_2109917911023439874.json、图片生成/图生图/Qwen Image 2.1单图编辑（角色四视图）2609_2106315774649528321.json、图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json、图片生成/图生图/Qwen Image 2.1多图编辑_2102313870550462466.json、图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `EmptyLatentImage`
+- `KSampler`
+- `LoadImage`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/11 个有
-- `PrimitiveFloat` —— 8/11 个有
-- `ResolutionSelector` —— 8/11 个有
-- `LoraLoaderModelOnly` —— 7/11 个有
-- `LoadImage` —— 6/11 个有
-- `Label (rgthree)` —— 4/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/11 个有
-- `easy int` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `Seed (rgthree)` —— 2/11 个有
-- `ImageScale` —— 1/11 个有
-- `LoraLoaderBypassModelOnly` —— 1/11 个有
-- `PrimitiveInt` —— 1/11 个有
-- `YK_LoadImageFromURL` —— 1/11 个有
-- `easy positive` —— 1/11 个有
+- `ComfySwitchNode` —— 8/9 个有
+- `QwenImage21Cache` —— 8/9 个有
+- `JjkText` —— 7/9 个有
+- `BatchImagesNode` —— 6/9 个有
+- `TextGenerateLTX2Prompt` —— 5/9 个有
+- `easy imageConcat` —— 3/9 个有
+- `ImageStitch` —— 2/9 个有
+- `Anything Everywhere3` —— 1/9 个有
+- `CompressImages` —— 1/9 个有
+- `ImageScale` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 1/9 个有
+- `PrimitiveBoolean` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
+- `TextGenerate` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1088 | 9 | 98% |
+| 高度 | 1024 | 1024 - 1920 | 9 | 75% |
+| 采样步数 | 50 | 25 - 50 | 9 | 76% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
@@ -65,4 +68,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1088，9 个样本，取值集中（一致性 98%）
+- 高度 中位数 1024，观测区间 1024 - 1920，9 个样本
+- 采样步数 中位数 50，观测区间 25 - 50，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

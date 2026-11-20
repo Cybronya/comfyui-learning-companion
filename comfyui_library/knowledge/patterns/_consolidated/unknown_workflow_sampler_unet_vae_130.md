@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_sampler_unet_vae_130
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.8896
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.60275
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3全能参考_2084306466529439745.json, 视频生成/文生视频/MiniMax H3开源版 多模态 图生视频【开源】_2084505380671021058.json, 视频生成/文生视频/MiniMax H3满血加速优化版 多模态生视频【快速高清 】_2085727977836466178.json, 视频生成/文生视频/MiniMax H3满血版 生视频【4步加速优化版+可出1080】_2085719967990898690.json, 视频生成/文生视频/MinimaxH3多参生视频+(量化加速版)_2084546214854483969.json, 视频生成/文生视频/Minimax参考生视频 高质量 加速版_2086430508090744833.json, 视频生成/文生视频/minimaxH3文生视频武器打斗转用工作流_2095690809084571649.json, 视频生成/文生视频/【遇见AI】minimax H3 高动态打斗场景武术动作二采修复+提示词skill工作流_2095684866888257537.json, 视频生成/文生视频/剑斗多参模式_2094373732667187201.json, 视频生成/文生视频/战斗双采首尾帧模式_2094373774731862018.json]
+members: [图片生成/图生图/Qwen image2.1-多功能图像编辑_2104767444010225665.json, 图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json, 图片生成/图生图/Qwen-image21-图像编辑_2103256220042874881.json, 图片生成/图生图/Qwen2.1多图编辑工作流_2104849503940603905.json, 图片生成/图生图/QwenImage2.1 I2I + 官方提示词助手_2102348928711741442.json, 图片生成/图生图/QwenImage2.1图片编辑+ 官方提示词助手_2102657855655600129.json, 图片生成/文生图/Qwen_image_2.1_图像编辑_文生图_2101895020063318018.json, 视频生成/图生视频/Qwen_image_2.1_图像编辑_2104436552209354753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_130
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3全能参考_2084306466529439745.json、视频生成/文生视频/MiniMax H3开源版 多模态 图生视频【开源】_2084505380671021058.json、视频生成/文生视频/MiniMax H3满血加速优化版 多模态生视频【快速高清 】_2085727977836466178.json、视频生成/文生视频/MiniMax H3满血版 生视频【4步加速优化版+可出1080】_2085719967990898690.json、视频生成/文生视频/MinimaxH3多参生视频+(量化加速版)_2084546214854483969.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1-多功能图像编辑_2104767444010225665.json、图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json、图片生成/图生图/Qwen-image21-图像编辑_2103256220042874881.json、图片生成/图生图/Qwen2.1多图编辑工作流_2104849503940603905.json、图片生成/图生图/QwenImage2.1 I2I + 官方提示词助手_2102348928711741442.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 9/10 个有
-- `PrimitiveFloat` —— 9/10 个有
-- `ResolutionSelector` —— 9/10 个有
-- `easy cleanGpuUsed` —— 7/10 个有
-- `CreateVideo` —— 6/10 个有
-- `SaveVideo` —— 6/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `DisableNoise` —— 4/10 个有
-- `LoadAudio` —— 4/10 个有
-- `PathchSageAttentionKJ` —— 4/10 个有
-- `VHS_VideoCombine` —— 4/10 个有
-- `ExtendIntermediateSigmas` —— 3/10 个有
-- `JjkText` —— 3/10 个有
-- `RTXVideoSuperResolution` —— 3/10 个有
-- `SplitSigmasDenoise` —— 3/10 个有
-- `CLIPTextEncode` —— 2/10 个有
-- `MiniMaxH3BlockCacheT8` —— 2/10 个有
-- `PrimitiveInt` —— 2/10 个有
-- `ImageResizeKJv2` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `MiniMaxH3ImageToVideo` —— 1/10 个有
-- `SplitSigmas` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `QwenImage21Cache` —— 7/8 个有
+- `ResolutionSelector` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 6/8 个有
+- `GetNode` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `SetNode` —— 5/8 个有
+- `Seed (rgthree)` —— 4/8 个有
+- `easy showAnything` —— 4/8 个有
+- `PreviewImage` —— 3/8 个有
+- `SaveImageAdvanced` —— 3/8 个有
+- `Any Switch (rgthree)` —— 2/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `ImageBatchMulti` —— 2/8 个有
+- `JsonExtractString` —— 2/8 个有
+- `PrimitiveBoolean` —— 2/8 个有
+- `TextConcatenator` —— 2/8 个有
+- `TextGenerate` —— 2/8 个有
+- `TextGenerateLTX2Prompt` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 高度 | 1024 | 1024 - 1920 | 8 | 74% |
+| 采样步数 | 30 | 25 - 50 | 8 | 74% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -72,4 +77,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1920，8 个样本
+- 采样步数 中位数 30，观测区间 25 - 50，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

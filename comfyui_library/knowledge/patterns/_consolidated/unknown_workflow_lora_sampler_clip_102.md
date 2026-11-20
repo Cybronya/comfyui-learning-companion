@@ -1,77 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_clip_102
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.684
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, FluxDeGuidance, FluxKontextImageScale, ImageConcanate, KSamplerSelect, LayerUtility: ImageMaskScaleAs, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoaderV2, RandomNoise, ReferenceLatent, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, TextBox, VAEDecode, VAEEncode, VAELoader, easy showAnything]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.6432
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ComfyUI-Krea2T-Enhancer, ConditioningZeroOut, EmptySD3LatentImage, ImageGrid, ImpactStringSelector, KSampler, PixaromaLoraLoader, PixaromaRunTimer, PixaromaSeed, PixaromaTextJoinTwo, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RBG_Smart_Seed_Variance, SaveImage, StrToCombo, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/13种提示词预设 _ Kontext Presets_1944364168247955457.json, 图片生成/图生图/Kontext Presets 官方预设提示｜提高生图_1947832362266673154.json, 图片生成/图生图/Kontext Presets 官方预设词模版 高效生图_1947214222984945665.json, 图片生成/图生图/Kontext Presets_12种提示词预设_1944911580158156801.json, 图片生成/图生图/Kontext Presets_12种提示词预设_1948205498127527937.json, 图片生成/图生图/单图编辑基础流 _ 双截棍+kontext （速度极快）_1939493492726931458.json]
+members: [图片生成/图生图/Krea2节点抽卡_2095691750642900994.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json, 图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_102
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/13种提示词预设 _ Kontext Presets_1944364168247955457.json、图片生成/图生图/Kontext Presets 官方预设提示｜提高生图_1947832362266673154.json、图片生成/图生图/Kontext Presets 官方预设词模版 高效生图_1947214222984945665.json、图片生成/图生图/Kontext Presets_12种提示词预设_1944911580158156801.json、图片生成/图生图/Kontext Presets_12种提示词预设_1948205498127527937.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Krea2节点抽卡_2095691750642900994.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json、图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `FluxDeGuidance`
-- `FluxKontextImageScale`
-- `ImageConcanate`
-- `KSamplerSelect`
-- `LayerUtility: ImageMaskScaleAs`
-- `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoaderV2`
-- `RandomNoise`
-- `ReferenceLatent`
-- `RepeatLatentBatch`
-- `SamplerCustomAdvanced`
+- `ComfySwitchNode`
+- `ComfyUI-Krea2T-Enhancer`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `ImageGrid`
+- `ImpactStringSelector`
+- `KSampler`
+- `PixaromaLoraLoader`
+- `PixaromaRunTimer`
+- `PixaromaSeed`
+- `PixaromaTextJoinTwo`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RBG_Smart_Seed_Variance`
 - `SaveImage`
-- `TextBox`
+- `StrToCombo`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 5/6 个有
-- `CR Text Replace` —— 5/6 个有
-- `GoogleTranslateTextNode` —— 5/6 个有
-- `LoadKontextPresets` —— 5/6 个有
-- `RH_Captioner` —— 5/6 个有
-- `BiRefNet_Hugo` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `Int` —— 4/6 个有
-- `LayerMask: RmBgUltra V2` —— 4/6 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 4/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `PrimitiveString` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `RH_LLMAPI_NODE` —— 1/6 个有
+- `PreviewAny` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `AILab_QwenVL` —— 1/5 个有
+- `JjkShowText` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `TTResolutionSelector` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

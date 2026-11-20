@@ -3,53 +3,60 @@ name: unknown_workflow_video_sampler_vae_27
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.913
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.943923
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json, 视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930415960338108418.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425345.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《大摆锤舞蹈》_1917823045400985602.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《强风特效》_1917833994954539009.json, 视频生成/图生视频/万相视频-万物切切乐_1936085964831772673.json, 视频生成/图生视频/万相视频-万物漏气 超级加速版快速生成_1936088683596648450.json, 视频生成/图生视频/万相视频-深情接吻 超级加速版快速生成_1936098801763405825.json, 视频生成/图生视频/刀切Labubu短视频生成 WAN2.1_1937498299152646145.json, 视频生成/图生视频/通义Wan2.1  图生视频_KJ大神 效果强悍_1911397365478293506.json, 视频生成/文生视频/刀切食物水果蔬菜 图片转视频 丨万物切切乐_1938096369187864577.json]
+members: [视频生成/图生视频/VACE图生视频加速版_1923668312054484994.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频_1923687527591366658.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频追色版工作流V1_1923364827979239425.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速混合模型无色差图生视频V1_1923428731015393281.json, 视频生成/图生视频/Vace 14B 双引导MoviiGen图生视频ACC超级加速版_1927548581379465217.json, 视频生成/图生视频/Vace+MoviiGen图生高质量视频_1925380470958399490.json, 视频生成/图生视频/图生视频--VACE14B正式版【动作迁移&图片跳舞】_2057296595577823234.json, 视频生成/图生视频/最新wan2.1 14B视频重绘动作迁移参考图片_1926800707893010433.json, 视频生成/图生视频/神技！Vace 14B 双引导MoviiGen图生视频高质量工作流V2(提高脸部相似度)_1923373962599067649.json, 视频生成/图生视频/绝了，Vace 14B+MoviiGen图生高质量视频V3_1925013790104952834.json, 视频生成/图生视频/🤖VACE 14b 5倍加速图生视频_1923636242792312834.json, 视频生成/图生视频/🤖新VACE 14b 加速图生视频_1924304259204960258.json, 视频生成/文生视频/MoviiGen超强动作细节表达高清文生视频优化版V1_1923351101066629121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json、视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json、视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json、视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930415960338108418.json、视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425345.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/VACE图生视频加速版_1923668312054484994.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频_1923687527591366658.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频追色版工作流V1_1923364827979239425.json、视频生成/图生视频/Vace 14B CausVid 3倍加速混合模型无色差图生视频V1_1923428731015393281.json、视频生成/图生视频/Vace 14B 双引导MoviiGen图生视频ACC超级加速版_1927548581379465217.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `TextInput_`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoClipVisionEncode` —— 12/13 个有
-- `WanVideoEnhanceAVideo` —— 12/13 个有
-- `WanVideoImageToVideoEncode` —— 12/13 个有
-- `WanVideoBlockSwap` —— 11/13 个有
-- `WanVideoLoraSelect` —— 11/13 个有
-- `CLIPVisionLoader` —— 7/13 个有
-- `LoadWanVideoClipTextEncoder` —— 6/13 个有
-- `WanVideoTorchCompileSettings` —— 6/13 个有
-- `PreviewImage` —— 5/13 个有
-- `Text` —— 4/13 个有
-- `WanVideoVRAMManagement` —— 3/13 个有
-- `SaveAnimatedWEBP` —— 2/13 个有
-- `INTConstant` —— 1/13 个有
-- `WanVideoImageClipEncode` —— 1/13 个有
-- `easy cleanGpuUsed` —— 1/13 个有
+- `JWInteger` —— 11/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/13 个有
+- `WanVideoEnhanceAVideo` —— 11/13 个有
+- `WanVideoExperimentalArgs` —— 11/13 个有
+- `WanVideoSLG` —— 11/13 个有
+- `AIO_Preprocessor` —— 8/13 个有
+- `VHS_LoadVideo` —— 8/13 个有
+- `WanVideoTeaCache` —— 8/13 个有
+- `WanVideoVACEStartToEndFrame` —— 8/13 个有
+- `WanVideoLoraSelect` —— 7/13 个有
+- `ImageRepeat` —— 4/13 个有
+- `ColorMatch` —— 3/13 个有
+- `Bjornulf_ShowJson` —— 2/13 个有
+- `ImageResizeKJ` —— 2/13 个有
+- `Note Plus (mtb)` —— 2/13 个有
+- `RHHiddenNodes` —— 2/13 个有
+- `RH_Translator` —— 2/13 个有
+- `WanVideoTorchCompileSettings` —— 2/13 个有
+- `PreviewImage` —— 1/13 个有
+- `WanVideoEmptyEmbeds` —— 1/13 个有
 
 ## 典型参数
 

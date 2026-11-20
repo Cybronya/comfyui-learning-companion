@@ -1,103 +1,96 @@
 ---
 name: unknown_workflow_inpaint_upscale_sampler_6
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8464
-common_nodes: [Bounded Image Blend with Mask, Bounded Image Crop with Mask, CLIPTextEncode, CLIPVisionLoader, CR Color Panel, CR Upscale Image, DifferentialDiffusion, DualCLIPLoader, GetImageSize+, Image Comparer (rgthree), ImageCompositeMasked, ImageConcanate, ImageToMask, ImpactImageBatchToImageList, InpaintCrop, InpaintModelConditioning, InpaintStitch, JWImageResize, JWImageResizeByLongerSide, KSampler, LayerMask: MaskGrow, LayerMask: SegmentAnythingUltra V2, LayerUtility: ColorImage, LayerUtility: ColorImage V2, LayerUtility: ColorPicker, LayerUtility: ImageBlendAdvance, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleRestore V2, LoadImage, MaskPreview+, MaskToImage, MathExpression|pysssss, PreviewImage, RepeatLatentBatch, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy ifElse, easy imageConcat, easy imageCropFromMask, easy imageSize, easy imageSizeBySide, easy int, easy isMaskEmpty]
+frequency: 4
+level: moderate
+coverage: 0.663
+common_nodes: [AILab_ImagePreview, AILab_Preview, AIO_Preprocessor, BasicScheduler, BatchImagesNode, CFGGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, FaceAnalysisModels, FaceEmbedDistance, GetImageSizeAndCount, INTConstant, Image Comparer (rgthree), Image Paste Crop, ImageBlend, ImageCropByMask, ImagePadForOutpaint, ImageScaleToMaxDimension, ImageStitch, ImageToMask, Images to RGB, InpaintModelConditioning, InvertMask, KSamplerSelect, LoadImage, MaskToImage, ModelAttentionBackend, PreviewImage, QwenImage21Cache, QwenImage21SpectrumT8, RandomNoise, SAM3_Detect, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux.1-万物重绘_万物迁移_1982490386239242241.json, 图片生成/图生图/万物迁移换装_1942410924168785921.json, 图片生成/图生图/模特自动换衣 一键换装_换产品_1976462041307324417.json, 平台全量/【大炮VIP】模特自动换衣 一键换装_换产品_1910522308606525442.json, 平台全量/一键自动换装_1908746808808644609.json]
+members: [图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109591373203730433.json, 图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109601936193441794.json, 图片生成/图生图/图片编辑-换头(局部重绘)-QwenImage2.1_2107437547424145409.json, 图片生成/图生图/图片编辑-换脸(局部重绘)-QwenImage2.1_2107759133796683777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_upscale_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux.1-万物重绘_万物迁移_1982490386239242241.json、图片生成/图生图/万物迁移换装_1942410924168785921.json、图片生成/图生图/模特自动换衣 一键换装_换产品_1976462041307324417.json、平台全量/【大炮VIP】模特自动换衣 一键换装_换产品_1910522308606525442.json、平台全量/一键自动换装_1908746808808644609.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109591373203730433.json、图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109601936193441794.json、图片生成/图生图/图片编辑-换头(局部重绘)-QwenImage2.1_2107437547424145409.json、图片生成/图生图/图片编辑-换脸(局部重绘)-QwenImage2.1_2107759133796683777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Bounded Image Blend with Mask`
-- `Bounded Image Crop with Mask`
+全部 4 个 workflow 都包含：
+- `AILab_ImagePreview`
+- `AILab_Preview`
+- `AIO_Preprocessor`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CR Color Panel`
-- `CR Upscale Image`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `GetImageSize+`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `FaceAnalysisModels`
+- `FaceEmbedDistance`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `Image Comparer (rgthree)`
-- `ImageCompositeMasked`
-- `ImageConcanate`
+- `Image Paste Crop`
+- `ImageBlend`
+- `ImageCropByMask`
+- `ImagePadForOutpaint`
+- `ImageScaleToMaxDimension`
+- `ImageStitch`
 - `ImageToMask`
-- `ImpactImageBatchToImageList`
-- `InpaintCrop`
+- `Images to RGB`
 - `InpaintModelConditioning`
-- `InpaintStitch`
-- `JWImageResize`
-- `JWImageResizeByLongerSide`
-- `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: ColorImage`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: ColorPicker`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleRestore V2`
+- `InvertMask`
+- `KSamplerSelect`
 - `LoadImage`
-- `MaskPreview+`
 - `MaskToImage`
-- `MathExpression|pysssss`
+- `ModelAttentionBackend`
 - `PreviewImage`
-- `RepeatLatentBatch`
+- `QwenImage21Cache`
+- `QwenImage21SpectrumT8`
+- `RandomNoise`
+- `SAM3_Detect`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StyleModelLoader`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
 - `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageConcat`
-- `easy imageCropFromMask`
-- `easy imageSize`
-- `easy imageSizeBySide`
-- `easy int`
-- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 3/5 个有
-- `CLIPVisionEncode` —— 3/5 个有
-- `Fast Bypasser (rgthree)` —— 3/5 个有
-- `FluxGuidance` —— 3/5 个有
-- `ImageResize+` —— 3/5 个有
-- `JWMaskResize` —— 3/5 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 3/5 个有
-- `PreviewBridge` —— 3/5 个有
-- `StyleModelApply` —— 3/5 个有
-- `easy positive` —— 3/5 个有
-- `InspyrenetRembg` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `RHHiddenNodes` —— 2/5 个有
-- `ReduxAdvanced` —— 2/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
+- `ComfyNumberConvert` —— 3/4 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `Mask Crop Region` —— 3/4 个有
+- `Mask Paste Region` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `easy int` —— 3/4 个有
+- `AutoCropFaces` —— 1/4 个有
+- `ColorMatchV2` —— 1/4 个有
+- `FaceAlign` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `OpenposePreprocessor` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | normal | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -105,8 +98,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 normal，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

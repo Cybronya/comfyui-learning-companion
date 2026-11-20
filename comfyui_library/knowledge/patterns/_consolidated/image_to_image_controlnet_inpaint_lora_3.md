@@ -2,23 +2,23 @@
 name: image_to_image_controlnet_inpaint_lora_3
 type: Image To Image
 frequency: 8
-level: moderate
-coverage: 0.829875
-common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.914375
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/image_qwen_image_instantx_inpainting_controlnet.json, "图片生成/图生图/Qwen Image, Instantx, Inpainting 局部重绘_1987174155143548929.json", 图片生成/图生图/qwen-image-蒙版-局部重绘_1983723157448237057.json, 图片生成/图生图/千问Qwen-2512-局部重绘_2061631721447182337.json, 图片生成/图生图/千问Qwen-2512-局部重绘_2067057839675371521.json, 图片生成/图生图/千问Qwen-2512-局部重绘_2067170819138220034.json, 图片生成/图生图/千问Qwen-inpainting-扩图_2061654605532061697.json, 图片生成/图生图/大碗有料-Qwen扩图-（拆解）_2009535083581022210.json]
+members: [图片生成/图生图/千问qwen2512扩图（上、下、左、右按像素精准扩图）_1981271690015662082.json, 图片生成/图生图/千问局部重绘工作流_2005603751757053954.json, 图片生成/图生图/千问局部重绘工作流_2010317606443552769.json, 图片生成/图生图/千问扩图工作流_2005599741033541633.json, 图片生成/图生图/千问扩图工作流_2010274187272785921.json, 图片生成/图生图/啊癫 千问【最新】扩图工作流_2026689029210644481.json, 图片生成/图生图/局部重绘王者对局（qwen与fill）_1967206477310070785.json, 图片生成/图生图/👾怪獸-局部重绘 Fill or 千问inpaintX双版本👾_1979927726142427137.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_instantx_inpainting_controlnet.json、图片生成/图生图/Qwen Image, Instantx, Inpainting 局部重绘_1987174155143548929.json、图片生成/图生图/qwen-image-蒙版-局部重绘_1983723157448237057.json、图片生成/图生图/千问Qwen-2512-局部重绘_2061631721447182337.json、图片生成/图生图/千问Qwen-2512-局部重绘_2067057839675371521.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/千问qwen2512扩图（上、下、左、右按像素精准扩图）_1981271690015662082.json、图片生成/图生图/千问局部重绘工作流_2005603751757053954.json、图片生成/图生图/千问局部重绘工作流_2010317606443552769.json、图片生成/图生图/千问扩图工作流_2005599741033541633.json、图片生成/图生图/千问扩图工作流_2010274187272785921.json…）
 
 - **类型**：Image To Image
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
@@ -30,43 +30,40 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `MaskPreview` —— 7/8 个有
-- `GrowMask` —— 6/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
-- `ModelSamplingAuraFlow` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `MaskBlur+` —— 4/8 个有
-- `ImageCompositeMasked` —— 3/8 个有
-- `ImagePadForOutpaint` —— 3/8 个有
-- `ImageScaleToMaxDimension` —— 3/8 个有
-- `Mask Fill Holes` —— 3/8 个有
-- `ImageConcanate` —— 2/8 个有
-- `2a4b2cc0-db37-4302-a067-da392f38f06b` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `GrowMaskWithBlur` —— 1/8 个有
-- `ImageAndMaskPreview` —— 1/8 个有
-- `MaskPreview+` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `cade3e30-0eb2-4fd2-bf6e-8518f3a96e0c` —— 1/8 个有
-- `f93c215e-c393-460e-9534-ed2c3d8a652e` —— 1/8 个有
+- `ConditioningZeroOut` —— 4/8 个有
+- `ImageAndMaskPreview` —— 4/8 个有
+- `ImagePadForOutpaint` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `PDImageResizeV2` —— 3/8 个有
+- `DifferentialDiffusion` —— 2/8 个有
+- `DualCLIPLoader` —— 2/8 个有
+- `FluxGuidance` —— 2/8 个有
+- `ImageScaleToTotalPixels` —— 2/8 个有
+- `InpaintModelConditioning` —— 2/8 个有
+- `RH_Translator` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `UpscaleModelLoader` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 8 | 45% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 8 | 58% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 50% |
+| 采样步数 | 8 | 6 - 8 | 8 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
@@ -77,9 +74,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，8 个样本，取值分散，一致性仅 45%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 50%
+- 采样步数 中位数 8，观测区间 6 - 8，8 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 高发问题（8/8 个样本）：Steps较低可能导致细节不足

@@ -1,77 +1,78 @@
 ---
 name: unknown_workflow_sampler_vae_27
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.952
-common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.952167
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
+problems: []
 missing: []
-members: [图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json, 图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json, 图片生成/图生图/qwen图生图  洗图  重绘 局部修改_2046419289288216577.json, 图片生成/图生图/产品展示 产品替换 图生图 多图编辑_2044376198586834945.json, 图片生成/图生图/产品展示 多图编辑 多图融合  图生图_2044421173475287041.json, 图片生成/图生图/产品展示 多图融合 多图编辑_2044376805544566785.json, 图片生成/图生图/产品替换 产品展示 电商 双图融合 多图编辑 多图融合  图生图_2045403356130189314.json, 图片生成/图生图/产品替换 产品展示_2045428594398208002.json, 图片生成/图生图/产品替换 双图融合 多图编辑 多图融合  图生图_2045390109431832578.json, 图片生成/图生图/人物角色-全视角参考视图_2040802253094785026.json, 图片生成/图生图/全视图 _ 角色一致性_1991419477451624450.json, 图片生成/图生图/全视图 _ 角色一致性_2007004747022213121.json, 平台全量/全视图 _ 角色一致性_1870371208901599234.json]
+members: [数字人/数字人/AI脱口秀_2064723957512757249.json, 数字人/数字人/AI脱口秀_2066018894162255874.json, 视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json, 视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json, 视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2056974345699942402.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2059911251098165250.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-大话西游版_2059273921228263425.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-歌曲《再见》_2060383965181202433.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-电商带货_2057720205580783618.json, 视频生成/图生视频/LTX2.3导演AI版的剪映版全能控制台-运镜分镜一网打进_2055283011867947010.json, 视频生成/图生视频/LTX导演工作流_2059458319999397889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/qwen千问2509 多图编辑  加速版（4步）_1997547051980361729.json、图片生成/图生图/qwen千问2509 多图编辑_1997529016326361089.json、图片生成/图生图/qwen图生图  洗图  重绘 局部修改_2046419289288216577.json、图片生成/图生图/产品展示 产品替换 图生图 多图编辑_2044376198586834945.json、图片生成/图生图/产品展示 多图编辑 多图融合  图生图_2044421173475287041.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/AI脱口秀_2064723957512757249.json、数字人/数字人/AI脱口秀_2066018894162255874.json、视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json、视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json、视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
 - **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `VAEDecode`
-- `VAELoader`
+全部 12 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTXDirectorGuide`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 12/13 个有
-- `UNETLoader` —— 12/13 个有
-- `ConditioningZeroOut` —— 11/13 个有
-- `PreviewImage` —— 7/13 个有
-- `Anything Everywhere` —— 4/13 个有
-- `Anything Everywhere3` —— 4/13 个有
-- `ConstrainImage|pysssss` —— 4/13 个有
-- `ImageResize+` —— 2/13 个有
-- `MuyeTextEditOutput` —— 1/13 个有
-- `NunchakuQwenImageDiTLoader` —— 1/13 个有
-- `PathchSageAttentionKJ` —— 1/13 个有
+- `CreateVideo` —— 11/12 个有
+- `LTXVAudioVAEDecode` —— 11/12 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `VAEDecodeTiled` —— 11/12 个有
+- `LTXDirector` —— 10/12 个有
+- `LTXVLatentUpsampler` —— 10/12 个有
+- `LatentUpscaleModelLoader` —— 10/12 个有
+- `LTX2SamplingPreviewOverride` —— 9/12 个有
+- `CheckpointLoaderSimple` —— 8/12 个有
+- `VHS_VideoCombine` —— 7/12 个有
+- `SaveVideo` —— 6/12 个有
+- `GetVideoComponents` —— 5/12 个有
+- `PrimitiveFloat` —— 5/12 个有
+- `SimpleMath+` —— 4/12 个有
+- `DiffusionModelLoaderKJ` —— 3/12 个有
+- `ModelPreviewOverrideKJ` —— 2/12 个有
+- `TTResolutionSelector` —— 2/12 个有
+- `UNETLoader` —— 2/12 个有
+- `Yusu-LTXDirector` —— 2/12 个有
+- `孤海注释` —— 2/12 个有
+- `LTXFloatToInt` —— 1/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `LayerUtility: ColorImage` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `VAEDecode` —— 1/12 个有
+- `easy imageSize` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 960 - 1024 | 13 | 97% |
-| 高度 | 1536 | 1248 - 1536 | 13 | 91% |
-| 采样步数 | 8 | 4 - 20 | 13 | 60% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 13 | 64% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 60/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 960 - 1024，13 个样本，取值集中（一致性 97%）
-- 高度 中位数 1536，观测区间 1248 - 1536，13 个样本，取值集中（一致性 91%）
-- 采样步数 中位数 8，观测区间 4 - 20，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，13 个样本
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 高发问题（60/13 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

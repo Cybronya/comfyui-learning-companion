@@ -3,76 +3,72 @@ name: text_to_image_lora_sampler_clip_639
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.764
-common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, CLIPLoader, CLIPTextEncode, ColorMatchV2, ConditioningZeroOut, EmptyLatentImage, GetImageSize, GetNode, ImageSmartSharpen+, ImageToMask, Int, KSampler, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, NoiseFromImage+, ReferenceLatent, ResizeAndPadImage, ResizeImageMixlab, ResizeLongestToNode, SaveImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+coverage: 0.8795
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, EmptyLatentImage, Fast Groups Muter (rgthree), INTConstant, InversionDemoLazyIndexSwitch, KSampler, LoadImage, LoraLoaderModelOnly, Mute / Bypass Repeater (rgthree), OpenAI_Chat_API, SaveImage, Text Concatenate, UNETLoader, VAEDecode, VAELoader, easy loraStack, easy loraStackApply, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Klein_TTP放大-写实自用_2100514063276138498.json, 图片生成/图生图/Klein_TTP放大-写实（自用）_2100074942904750082.json]
+members: [图片生成/图生图/krea2多风格图生图工作流 提示词自动优化_2083026053383155713.json, 图片生成/文生图/Krea2文生图工作流_2070407052580708354.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_639
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Klein_TTP放大-写实自用_2100514063276138498.json、图片生成/图生图/Klein_TTP放大-写实（自用）_2100074942904750082.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/krea2多风格图生图工作流 提示词自动优化_2083026053383155713.json、图片生成/文生图/Krea2文生图工作流_2070407052580708354.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bounded Image Crop`
-- `Bounded Image Crop with Mask`
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatchV2`
+- `CR Text`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSize`
-- `GetNode`
-- `ImageSmartSharpen+`
-- `ImageToMask`
-- `Int`
+- `Fast Groups Muter (rgthree)`
+- `INTConstant`
+- `InversionDemoLazyIndexSwitch`
 - `KSampler`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `NoiseFromImage+`
-- `ReferenceLatent`
-- `ResizeAndPadImage`
-- `ResizeImageMixlab`
-- `ResizeLongestToNode`
+- `Mute / Bypass Repeater (rgthree)`
+- `OpenAI_Chat_API`
 - `SaveImage`
-- `SetNode`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
+- `easy loraStack`
+- `easy loraStackApply`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| 采样步数 | 4 | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1080 | - | 2 | 100% |
+| 高度 | 1920 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -82,12 +78,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_video_lora_sampler_466
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.604857
-common_nodes: [CLIPVisionLoader, CR Prompt Text, DrawViTPose, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+frequency: 5
+level: moderate
+coverage: 0.5348
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, INTConstant, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/定制专用-动作迁移工作流（Wan采样器版）-单路 ViTPose+Draw ViT Pose标准方案_2051347806027296770.json, 视频生成/图生视频/本地开源免费，巴西funk摇僵尸版_2055572704480243714.json, 视频生成/图生视频/本地开源免费，拿破仑进行曲_2056626842236440577.json, 视频生成/图生视频/本地开源免费，杀青梗_2054219479617425409.json, 视频生成/图生视频/本地开源免费，越南鼓捣蒜舞_2055312593698467841.json, 视频生成/图生视频/本地开源免费，香菜摇5_2054476626561388545.json, 视频生成/图生视频/漫剧图生视频remixv1_2069226848269201409.json]
+members: [数字人/数字人/wan-2.2-动作迁移-V3_2058811529675501570.json, 数字人/数字人/wan2.2_Animate_14B视频人物替换_1969312509834502146.json, 视频生成/图生视频/Wan-Animate动作表情迁移不遮罩_1968169520768647170.json, 视频生成/图生视频/wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_1969709240275378178.json, 视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_466
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/定制专用-动作迁移工作流（Wan采样器版）-单路 ViTPose+Draw ViT Pose标准方案_2051347806027296770.json、视频生成/图生视频/本地开源免费，巴西funk摇僵尸版_2055572704480243714.json、视频生成/图生视频/本地开源免费，拿破仑进行曲_2056626842236440577.json、视频生成/图生视频/本地开源免费，杀青梗_2054219479617425409.json、视频生成/图生视频/本地开源免费，越南鼓捣蒜舞_2055312593698467841.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/wan-2.2-动作迁移-V3_2058811529675501570.json、数字人/数字人/wan2.2_Animate_14B视频人物替换_1969312509834502146.json、视频生成/图生视频/Wan-Animate动作表情迁移不遮罩_1968169520768647170.json、视频生成/图生视频/wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_1969709240275378178.json、视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：60%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DrawViTPose`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+- `PixelPerfectResolution`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAnimateEmbeds`
@@ -42,39 +45,40 @@ source: knowledge_consolidation
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `JWInteger` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `VHS_VideoInfoSource` —— 6/7 个有
-- `GetImageRangeFromBatch` —— 4/7 个有
-- `FlashVSR_SM_KSampler` —— 3/7 个有
-- `FlashVSR_SM_Model` —— 3/7 个有
-- `GetImageSize` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `easy indexAnything` —— 2/7 个有
-- `ImageScale` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `VHS_VideoInfoLoaded` —— 1/7 个有
-- `easy imageCount` —— 1/7 个有
-- `ttN float` —— 1/7 个有
+- `BlockifyMask` —— 3/5 个有
+- `CLIPLoader` —— 3/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `DrawMaskOnImage` —— 3/5 个有
+- `GrowMask` —— 3/5 个有
+- `ImageConcatMulti` —— 3/5 个有
+- `WanVideoTextEmbedBridge` —— 3/5 个有
+- `WanVideoTextEncodeCached` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `InspyrenetRembgAdvanced` —— 2/5 个有
+- `PreviewAnimation` —— 2/5 个有
+- `Switch image [Crystools]` —— 2/5 个有
+- `VHS_VideoInfoLoaded` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `DownloadAndLoadSAM2Model` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `PointsEditor` —— 1/5 个有
+- `RIFEInterpolation` —— 1/5 个有
+- `Sam2Segmentation` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
+- `SeedVR2ExtraArgs` —— 1/5 个有
+- `UNETLoader` —— 1/5 个有
+- `UltimateSDUpscaleNoUpscale` —— 1/5 个有
+- `VAELoader` —— 1/5 个有
+- `WanVideoContextOptions` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1.75832e+09 | 4.59823e+08 - 1.87794e+09 | 3 | 53% |
-| Prompt 约束强度(CFG) | randomize | - | 3 | 100% |
-| 采样算法 | 2 | 2 - 2 | 3 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 3 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,10 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.75832e+09，观测区间 4.59823e+08 - 1.87794e+09，3 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，3 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.87794e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

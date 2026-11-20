@@ -3,17 +3,17 @@ name: unknown_workflow_video_upscale_latent_upscale_111
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.619333
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXTiledSampler, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsamplerTiled, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.618333
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy int, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/电商视频编辑更换拍摄角度 Ltx2.3 CrossView_2079148058566283266.json, 视频生成/图生视频/LTX-2.3_ICLoRA_crossview_2076951479637864450.json, 视频生成/图生视频/LTXIC视频生成 二次元_2079022514478608385.json]
+members: [视频生成/图生视频/LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高清-图生视频-自动提示词-三阶采样_2050734311749505025.json, 视频生成/图生视频/LTX2.3图生视频三段式采样_2044724693445382146.json, 视频生成/图生视频/ltx2.3电商 首尾帧  服装行业  服装展示_2082418673716912130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_111
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/电商视频编辑更换拍摄角度 Ltx2.3 CrossView_2079148058566283266.json、视频生成/图生视频/LTX-2.3_ICLoRA_crossview_2076951479637864450.json、视频生成/图生视频/LTXIC视频生成 二次元_2079022514478608385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高清-图生视频-自动提示词-三阶采样_2050734311749505025.json、视频生成/图生视频/LTX2.3图生视频三段式采样_2044724693445382146.json、视频生成/图生视频/ltx2.3电商 首尾帧  服装行业  服装展示_2082418673716912130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -25,43 +25,62 @@ source: knowledge_consolidation
 全部 3 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXTiledSampler`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsamplerTiled`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SimpleMath+`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `easy int` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CheckpointLoaderSimple` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `llama_cpp_instruct_adv` —— 2/3 个有
+- `llama_cpp_model_loader` —— 2/3 个有
+- `llama_cpp_parameters` —— 2/3 个有
+- `BatchImagesNode` —— 1/3 个有
+- `BerniniPromptEnhancer` —— 1/3 个有
+- `CustomAddLabel` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `ImpactFloat` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `LTX2_NAG` —— 1/3 个有
+- `LTXVAddGuide` —— 1/3 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
+- `PurgeVRAM_UTK` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `TTResolutionSelector` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `VAELoaderKJ` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy float` —— 1/3 个有
+- `string_util_StrConcat` —— 1/3 个有
 
 ## 典型参数
 

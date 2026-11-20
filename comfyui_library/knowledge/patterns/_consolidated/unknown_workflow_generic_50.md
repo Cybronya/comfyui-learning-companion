@@ -1,41 +1,46 @@
 ---
 name: unknown_workflow_generic_50
 type: Unknown Workflow
-frequency: 23
+frequency: 20
 level: moderate
-coverage: 0.705652
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveImage, easy showAnything]
+coverage: 0.8259
+common_nodes: [LoadImage, SaveImage, SeeThrough_GenerateDepth, SeeThrough_GenerateLayers, SeeThrough_LoadDepthModel, SeeThrough_LoadLayerDiffModel, SeeThrough_PostProcess, SeeThrough_SavePSD]
 problems: []
 missing: []
-members: [图片生成/反推提示词/全能视频S Character角色username提取（贞贞工坊API版）_1990014324192276482.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro OOTD价格及分解V1（贞贞AI工坊版）_1995206775337103361.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro 艺术感3x3照片V1（贞贞AI工坊版）_1995193949377716225.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro9格Q版风格贴纸V1（贞贞AI工坊版）_1995187429432864770.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro万物材质分解V1（贞贞AI工坊版）_1995174606497570817.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro三宫格漫画分镜大师V3（贞贞AI工坊版）_1992451123361673218.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro九宫格大头贴V1（贞贞AI工坊版）_1995190591761866754.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro五官打分器V1（贞贞AI工坊版）_1995196261957611521.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro全景式角色深度概念分解图V1（贞贞AI工坊版）_1995206161563627522.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro动漫与现实分割肖像V1（贞贞AI工坊版）_1995203250758594562.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro单图编辑（贞贞AI工坊版）_1992450036212584449.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro卡通情趣用品分解图V1（贞贞AI工坊版）_1992672130858897410.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro卡通转真人情趣用品分解图V1（贞贞AI工坊版）_1993273871906390017.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro发型设计和溯源V1（贞贞AI工坊版）_1995198356693639169.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro复古宝丽来照片V1（贞贞AI工坊版）_1995188169219956737.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro女孩的一生V1（贞贞AI工坊版）_1995200707898880002.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro网红虚拟打卡（贞贞AI工坊版）_1997291047673860098.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro衣服平铺背视图V1（贞贞AI工坊版）_1993273202923290625.json, 图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro超写实拼图肖像V1（贞贞AI工坊版）_1995182535426629633.json, 图片生成/图生图/(4K-基准0.15)Nano 全能图片V1 Pro九宫格风格化漫画分镜大师V1（贞贞AI工坊版）_1992664326502936577.json, 图片生成/图生图/(4K-基准0.15)Nano 全能图片V1 Pro单图编辑（贞贞AI工坊版）_1991892205518516226.json, 图片生成/图生图/(4K-基准0.15)Nano 全能图片V1 Pro双图编辑（贞贞AI工坊版）_1991886640323031041.json, 图片生成/图生图/(4K-基准0.15)卡通转写实版 全能图片V1 Pro内衣模特分解图V1（贞贞AI工坊版）_1993248346307575809.json]
+members: [图片生成/图生图/See Through-图像超级分层_2040236988468563969.json, 图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json, 图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2052228852306464770.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2039958431506898945.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2040046165248450562.json, 图片生成/图生图/SeeThrough分层工作流_2049314933434753026.json, 图片生成/图生图/SeeThrough图像PSD完整分层工作流V1_2044008357320728578.json, 图片生成/图生图/SeeThrough图像分层_2040064434797813762.json, 图片生成/图生图/SeeThrough图像拆分_2077199511004471297.json, 图片生成/图生图/SeeThrough真人PSD完整分层工作流V1_2039976374139625473.json, 图片生成/图生图/二次元拆分分层输出PSD-SeeThrough_2040420040951996417.json, 图片生成/图生图/图像分层  PSD  SeeThrough_2040216332402171906.json, 图片生成/图生图/图像分层 -—— PSD_2051294797817757697.json, 图片生成/图生图/图像分层 -—— PSD_2068728786014789633.json, 图片生成/图生图/图像分层 PSD SeeThrough  抠图_2069610389201047553.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2052600759396651009.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2057499012751781889.json, 图片生成/图生图/图层拆分 SeeThrough_2040211441290055681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_50
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/反推提示词/全能视频S Character角色username提取（贞贞工坊API版）_1990014324192276482.json、图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro OOTD价格及分解V1（贞贞AI工坊版）_1995206775337103361.json、图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro 艺术感3x3照片V1（贞贞AI工坊版）_1995193949377716225.json、图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro9格Q版风格贴纸V1（贞贞AI工坊版）_1995187429432864770.json、图片生成/图生图/(4K-基准0.15) 全能图片V1 Pro万物材质分解V1（贞贞AI工坊版）_1995174606497570817.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/See Through-图像超级分层_2040236988468563969.json、图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json、图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json、图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json、图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2052228852306464770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+全部 20 个 workflow 都包含：
 - `LoadImage`
 - `SaveImage`
-- `easy showAnything`
+- `SeeThrough_GenerateDepth`
+- `SeeThrough_GenerateLayers`
+- `SeeThrough_LoadDepthModel`
+- `SeeThrough_LoadLayerDiffModel`
+- `SeeThrough_PostProcess`
+- `SeeThrough_SavePSD`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 22/23 个有
-- `Comfly_nano_banana2_edit` —— 21/23 个有
-- `Comfly_nano_banana2_edit_S2A` —— 1/23 个有
-- `Comfly_sora2_character` —— 1/23 个有
-- `ConcatTextOfUtils` —— 1/23 个有
-- `Text Concatenate` —— 1/23 个有
+- `PreviewImage` —— 16/20 个有
+- `easy cleanGpuUsed` —— 7/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/20 个有
+- `Image Comparer (rgthree)` —— 3/20 个有
+- `InspyrenetRembg` —— 3/20 个有
+- `MaskToImage` —— 3/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/20 个有
+- `LayerUtility: PurgeVRAM` —— 1/20 个有
 
 ## 典型参数
 

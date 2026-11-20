@@ -1,82 +1,86 @@
 ---
 name: image_to_image_lora_sampler_unet_89
 type: Image To Image
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.750625
-common_nodes: [CFGNorm, CLIPLoader, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.953286
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Comfyui节点系列60-Qwen Multiangle Camera_2056593331202912258.json, 图片生成/图生图/Qwen-Edit-2511 新多角度_2010907366249734146.json, 图片生成/图生图/Qwen-Edit-2511 新多角度_2010947423933304834.json, 图片生成/图生图/Qwen2511编辑+ Multiangle -镜头控制_2010585733614018561.json, 图片生成/图生图/qwen  精准镜头控制器 图生图 多视角  Qwen Multiangle Camera_2041768515669069826.json, 图片生成/图生图/qwen  精准镜头控制器 多视角套图  镜头选择_2041695143425744897.json, 图片生成/图生图/qwen  精准镜头控制器 模特套图  镜头选择_2039528560959950849.json, 平台全量/镜头切换（直观调整简单好用） Qwen-Image-Edit-2511_2012761543200481282.json]
+members: [图片生成/图生图/Qwen-next-scene 一图十五生视角_1992262489524031489.json, 图片生成/图生图/Qwen2509-艺术写真_1992774724711411713.json, 图片生成/图生图/一图生成15视角qwen（姿势控制出图）_1983309779022049281.json, 图片生成/图生图/宝宝写真1119_1991051348286349313.json, 图片生成/图生图/宝宝艺术照写真_1999842319564238850.json, 图片生成/图生图/👉千问2509-一键生成艺术写真 🧁_1992532497875660802.json, 图片生成/图生图/👉千问2509-宝宝艺术写真 🧁_1990324254409453570.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_89
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Comfyui节点系列60-Qwen Multiangle Camera_2056593331202912258.json、图片生成/图生图/Qwen-Edit-2511 新多角度_2010907366249734146.json、图片生成/图生图/Qwen-Edit-2511 新多角度_2010947423933304834.json、图片生成/图生图/Qwen2511编辑+ Multiangle -镜头控制_2010585733614018561.json、图片生成/图生图/qwen  精准镜头控制器 图生图 多视角  Qwen Multiangle Camera_2041768515669069826.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-next-scene 一图十五生视角_1992262489524031489.json、图片生成/图生图/Qwen2509-艺术写真_1992774724711411713.json、图片生成/图生图/一图生成15视角qwen（姿势控制出图）_1983309779022049281.json、图片生成/图生图/宝宝写真1119_1991051348286349313.json、图片生成/图生图/宝宝艺术照写真_1999842319564238850.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `ImageScaleToTotalPixels` —— 6/8 个有
-- `easy showAnything` —— 4/8 个有
-- `ImpactMakeAnyList` —— 3/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `FluxKontextImageScale` —— 2/8 个有
-- `AddLabel` —— 1/8 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/8 个有
-- `Float` —— 1/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `QWEN_TextDisplay` —— 1/8 个有
-- `VNCCS_VisualPositionControl` —— 1/8 个有
-- `easy promptLine` —— 1/8 个有
+- `EmptyImage` —— 5/7 个有
+- `ImpactInt` —— 5/7 个有
+- `RepeatLatentBatch` —— 5/7 个有
+- `SDXLEmptyLatentSizePicker+` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `RH_LLMAPI_NODE` —— 4/7 个有
+- `easy showAnything` —— 3/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `easy anythingIndexSwitch` —— 2/7 个有
+- `easy forLoopEnd` —— 2/7 个有
+- `easy forLoopStart` —— 2/7 个有
+- `PreviewImage` —— 1/7 个有
+- `Qwen3VL_Chat` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 8 | 70% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 8 | 8 - 8 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 832x1216 (0.68) | - | 5 | 80% |
+| 高度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（18/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 最常用 832x1216 (0.68)，5 个样本，一致性 80%
+- 高度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

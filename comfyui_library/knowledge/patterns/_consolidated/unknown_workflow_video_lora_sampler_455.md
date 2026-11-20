@@ -1,82 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_455
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.776857
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DapaoSmartMemoryOptimizerNode, Fast Bypasser (rgthree), GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, RIFE VFI, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy setNode]
+frequency: 5
+level: moderate
+coverage: 0.4348
+common_nodes: [CLIPVisionLoader, DrawMaskOnImage, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.json, 视频生成/图生视频/Wan2.2-REMIX V3-无审查-首尾帧视频_2061751615295680514.json, 视频生成/图生视频/Wan2.2工作流-REMIX V3-图生视频_2061718724150906881.json, 视频生成/图生视频/最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json, 视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2038957915788283906.json, 视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2089713058884177921.json, 视频生成/图生视频/🕵🏻极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2034912808818712577.json]
+members: [图片生成/文生图/YJ-FAST-WanAnimate-服装迁移-abao-tmp2-测试-简易_2036362537280741377.json, 数字人/数字人/YJ-APP-WanAnimate-视频人物替换_2034926423135232002.json, 视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json, 视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json, 视频生成/图生视频/无线时长视频换人_2001302724798971906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_455
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.json、视频生成/图生视频/Wan2.2-REMIX V3-无审查-首尾帧视频_2061751615295680514.json、视频生成/图生视频/Wan2.2工作流-REMIX V3-图生视频_2061718724150906881.json、视频生成/图生视频/最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json、视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2038957915788283906.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/YJ-FAST-WanAnimate-服装迁移-abao-tmp2-测试-简易_2036362537280741377.json、数字人/数字人/YJ-APP-WanAnimate-视频人物替换_2034926423135232002.json、视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json、视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json、视频生成/图生视频/无线时长视频换人_2001302724798971906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DapaoSmartMemoryOptimizerNode`
-- `Fast Bypasser (rgthree)`
-- `GetNode`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DrawMaskOnImage`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `easy setNode`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `PainterI2V` —— 6/7 个有
-- `easy ifElse` —— 6/7 个有
-- `easy isNone` —— 6/7 个有
-- `easy showAnything` —— 6/7 个有
-- `llama_cpp_instruct_adv` —— 6/7 个有
-- `llama_cpp_model_loader` —— 6/7 个有
-- `llama_cpp_parameters` —— 6/7 个有
-- `easy getNode` —— 4/7 个有
-- `CustomAddLabel` —— 3/7 个有
-- `FlashVSRNode` —— 3/7 个有
-- `ImageConcanate` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `EmptyLTXVLatentVideo` —— 1/7 个有
-- `ImageResizeKJ` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `PainterFLF2V` —— 1/7 个有
-- `PromptRelayEncodeTimeline` —— 1/7 个有
+- `BlockifyMask` —— 4/5 个有
+- `DrawViTPose` —— 4/5 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `ImageFromBatch` —— 4/5 个有
+- `OnnxDetectionModelLoader` —— 4/5 个有
+- `PoseAndFaceDetection` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `GrowMaskWithBlur` —— 3/5 个有
+- `PointsEditor` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `SeCModelLoader` —— 3/5 个有
+- `SeCVideoSegmentation` —— 3/5 个有
+- `WanVideoContextOptions` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `JjkText` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `ImageToMask` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `RMBG` —— 1/5 个有
+- `RunningHub Deepcleaner` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `WujiCleaner` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy sam3ModelLoader` —— 1/5 个有
+- `easy sam3VideoSegmentation` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | 1 | 1 - 1 | 7 | 100% |
-| 重绘幅度 | euler_ancestral | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,8 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

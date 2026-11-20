@@ -1,69 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_144
 type: Unknown Workflow
-frequency: 10
-level: weak
-coverage: 0.9421
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.913875
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [平台全量/wan2.2-14B 首尾帧官方最新工作流_1952547094831796226.json, 平台全量/【加速版】wan2.2-14B 首尾帧工作流_1955442128911417345.json, 视频生成/图生视频/DasiwaV10首尾帧生视频_2036098308422242306.json, 视频生成/图生视频/DasiwaV10首帧生视频_2036097978263412738.json, 视频生成/图生视频/SwoothMix首帧生视频_2031653989615411202.json, 视频生成/图生视频/WAN2.2 视频生成（首尾帧，首帧）_2019023279008260098.json, 视频生成/图生视频/remix_v3.0首尾帧生视频_2036071693340385282.json, 视频生成/图生视频/remix_v3.0首帧生视频_2036017252914434050.json, 视频生成/图生视频/wan2.2_SmoothMix首尾帧生视频_2031673957350379522.json, 视频生成/图生视频/wan2.2首帧生视频4steps加速工作流_2030866059493904385.json]
+members: [图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json, 图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json, 图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json, 图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json, 图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json, 图片生成/图生图/全能图片G-4o_真人转3D头像_1911383209878220801.json, 图片生成/图生图/全能图片G4o 同款 JOJO 风｜一键生图系列_1909501337153712129.json, 图片生成/图生图/全能图片G4o 同款史努比卡通风格｜一键生图系列_1908447812558987266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_144
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/wan2.2-14B 首尾帧官方最新工作流_1952547094831796226.json、平台全量/【加速版】wan2.2-14B 首尾帧工作流_1955442128911417345.json、视频生成/图生视频/DasiwaV10首尾帧生视频_2036098308422242306.json、视频生成/图生视频/DasiwaV10首帧生视频_2036097978263412738.json、视频生成/图生视频/SwoothMix首帧生视频_2031653989615411202.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json、图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json、图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json、图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json、图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 7/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/10 个有
-- `SimpleMath+` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
-- `FloatConstant` —— 6/10 个有
-- `INTConstant` —— 6/10 个有
-- `ModelPatchTorchSettings` —— 6/10 个有
-- `PathchSageAttentionKJ` —— 6/10 个有
-- `WanFirstLastFrameToVideo` —— 6/10 个有
-- `WanImageToVideo` —— 5/10 个有
-- `LoraLoaderModelOnly` —— 4/10 个有
-- `Int` —— 2/10 个有
-- `LayerUtility: ImageMaskScaleAs` —— 2/10 个有
-- `ApplySageAttention` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `UnetLoaderGGUF` —— 1/10 个有
+- `PreviewImage` —— 6/8 个有
+- `ConcatTextOfUtils` —— 5/8 个有
+- `EmptyLatentImage` —— 5/8 个有
+- `LoraLoader` —— 5/8 个有
+- `VAEEncode` —— 5/8 个有
+- `EmptySD3LatentImage` —— 3/8 个有
+- `SDVN Joy Caption` —— 3/8 个有
+- `Joy_caption` —— 2/8 个有
+- `Joy_caption_load` —— 2/8 个有
+- `Lora Loader Stack (rgthree)` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy clearCacheAll` —— 2/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PulidFluxFaceDetector` —— 1/8 个有
+- `PulidFluxOptions` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 10 | 90% |
-| Prompt 约束强度(CFG) | 4 | 4 - 20 | 10 | 20% |
-| 采样算法 | 1 | 1 - 4 | 10 | 25% |
-| 调度器 | euler_ancestral | - | 10 | 60% |
-| 重绘幅度 | simple | - | 10 | 100% |
+| 宽度 | 768 | 768 - 768 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| LoRA 模型强度 | 0.8 | 0.8 - 1 | 5 | 90% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -71,9 +74,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，10 个样本，一致性 90%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，10 个样本，取值分散，一致性仅 20%
-- 采样算法 中位数 1，观测区间 1 - 4，10 个样本，取值分散，一致性仅 25%
-- 调度器 最常用 euler_ancestral，10 个样本，一致性 60%
-- 重绘幅度 最常用 simple，10 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 768，观测区间 768 - 768，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，5 个样本，取值集中（一致性 90%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

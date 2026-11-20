@@ -1,95 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_427
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.748571
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SimpleMath+, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.734667
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, PreviewAny, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan 2.1 SCAIL 视频人物替换_2062884370725302274.json, 数字人/数字人/Scail 一键跳舞！骨骼完美驱动！_2003096928302899201.json, 数字人/数字人/萌宠跳舞-动作运镜最强迁移-SCAIL_3D单人多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2019072391724408834.json, 视频生成/图生视频/02.16gSCAIL多人_2002262972904947714.json, 视频生成/图生视频/12号特工：保留原图场景+SCAIL动作迁移_2026286261522141186.json, 视频生成/图生视频/251220001.01.16gSCAIL单人_2002263013321261058.json, 视频生成/图生视频/251220001.03.SCAIL双角色超动态动作迁移_2002262953242030082.json]
+members: [视频生成/图生视频/人声分离精准识别-生成mv-高质量数字人Infinite Talk极速版_1986427607413620737.json, 视频生成/图生视频/优化版Infinite Talk口型高质量图生视频数字人_1979895392475189249.json, 视频生成/图生视频/商用娱乐地表最强数字人（测颜版）_1988227930037903361.json, 视频生成/图生视频/图片人物对口型正式版_2002936132511907841.json, 视频生成/图生视频/数字人-音频驱动_2008032708106133505.json, 视频生成/图生视频/最强的数字人_2079549546333560833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_427
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/Wan 2.1 SCAIL 视频人物替换_2062884370725302274.json、数字人/数字人/Scail 一键跳舞！骨骼完美驱动！_2003096928302899201.json、数字人/数字人/萌宠跳舞-动作运镜最强迁移-SCAIL_3D单人多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2019072391724408834.json、视频生成/图生视频/02.16gSCAIL多人_2002262972904947714.json、视频生成/图生视频/12号特工：保留原图场景+SCAIL动作迁移_2026286261522141186.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/人声分离精准识别-生成mv-高质量数字人Infinite Talk极速版_1986427607413620737.json、视频生成/图生视频/优化版Infinite Talk口型高质量图生视频数字人_1979895392475189249.json、视频生成/图生视频/商用娱乐地表最强数字人（测颜版）_1988227930037903361.json、视频生成/图生视频/图片人物对口型正式版_2002936132511907841.json、视频生成/图生视频/数字人-音频驱动_2008032708106133505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `SimpleMath+`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
-- `WanVideoBlockSwap`
+- `MultiTalkModelLoader`
+- `PreviewAny`
+- `VHS_VideoCombine`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetLoRAs`
+- `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 6/7 个有
-- `INTConstant` —— 6/7 个有
-- `VHS_LoadVideo` —— 6/7 个有
-- `VHS_VideoCombine` —— 6/7 个有
-- `WanVideoSetBlockSwap` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `DownloadAndLoadNLFModel` —— 5/7 个有
-- `FloatConstant` —— 5/7 个有
-- `GetNode` —— 5/7 个有
-- `ImageConcatMulti` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `WanVideoEncode` —— 5/7 个有
-- `WanVideoUni3C_ControlnetLoader` —— 5/7 个有
-- `WanVideoUni3C_embeds` —— 5/7 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 3/7 个有
-- `DWPreprocessor` —— 3/7 个有
-- `LoadNLFModel` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `CreateVideo` —— 1/7 个有
-- `CustomAddLabel` —— 1/7 个有
-- `Float to Int` —— 1/7 个有
-- `GetImageSizeRatio` —— 1/7 个有
-- `GetVideoComponents` —— 1/7 个有
-- `INPAINT_InpaintWithModel` —— 1/7 个有
-- `INPAINT_LoadInpaintModel` —— 1/7 个有
-- `ImageFromBatch` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `ImagePadForOutpaint` —— 1/7 个有
-- `ImageResize+` —— 1/7 个有
-- `ImageToMask` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `LoadVideo` —— 1/7 个有
-- `Mask Invert` —— 1/7 个有
-- `MaskToImage` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `MultiTalkWav2VecEmbeds` —— 5/6 个有
+- `WanVideoBlockSwap` —— 5/6 个有
+- `WanVideoModelLoader` —— 5/6 个有
+- `SetNode` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `GetNode` —— 3/6 个有
+- `AudioToFPS` —— 2/6 个有
+- `GetAudioDurationFromAudio` —— 2/6 个有
+- `JWFloat` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `MelBandRoFormerModelLoader` —— 2/6 个有
+- `MelBandRoFormerSampler` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `SimpleMath+` —— 2/6 个有
+- `SoundFlow_TrimAudio` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `easy clearCacheAll` —— 2/6 个有
+- `Apply Whisper` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `OmniVoiceLongformTTS` —— 1/6 个有
+- `OmniVoiceMultiSpeakerTTS` —— 1/6 个有
+- `OmniVoiceVoiceDesignTTS` —— 1/6 个有
+- `OmniVoiceWhisperLoader` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `RIFE VFI` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
+- `workflow>2` —— 1/6 个有
 
 ## 典型参数
 

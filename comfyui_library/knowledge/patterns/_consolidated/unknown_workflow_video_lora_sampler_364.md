@@ -1,61 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_364
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.655125
-common_nodes: [BasicGuider, BasicScheduler, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderBypassModelOnly, ModelAttentionBackend, ResolutionSelector, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VHS_VideoCombine]
+coverage: 0.573714
+common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2094598277214851073.json, 平台全量/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2094725964998733825.json, 视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json, 视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json, 视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json, 视频生成/图生视频/极致简化 MiniMax H3 全功能  自动提示词 工作流（已修复） (1)_2089935656989585409.json, 视频生成/图生视频/模特步汝窑-极致简化 MiniMax H3 全功能  自动提示词 工作流_2094828825057255426.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2092301452621467649.json]
+members: [视频生成/图生视频/Wan2.2 Animate最强 视频人物角色替换V2版 15秒以上稳如老狗 工作流_1980483253431877633.json, 视频生成/图生视频/人物角色替换Animate    V2版_1979152858195070977.json, 视频生成/图生视频/人物角色替换_2032500996332593153.json, 视频生成/图生视频/极品！！！全能视频S人物替换实现一致性 Animate V2_2039247939687686145.json, 视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_364
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2094598277214851073.json、平台全量/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2094725964998733825.json、视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json、视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json、视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate最强 视频人物角色替换V2版 15秒以上稳如老狗 工作流_1980483253431877633.json、视频生成/图生视频/人物角色替换Animate    V2版_1979152858195070977.json、视频生成/图生视频/人物角色替换_2032500996332593153.json、视频生成/图生视频/极品！！！全能视频S人物替换实现一致性 Animate V2_2039247939687686145.json、视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `Fast Groups Bypasser (rgthree)`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `FeiHouEasyH3RHPromptPreview`
+全部 7 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CR Text`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoraLoaderBypassModelOnly`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ImpactInt`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LoadImage`
 - `SetNode`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FeiHouEasyH3RHLoraStack` —— 6/8 个有
-- `ModelPreviewOverrideKJ` —— 6/8 个有
-- `RandomSeedNoise` —— 6/8 个有
-- `Label (rgthree)` —— 5/8 个有
-- `RandomNoise` —— 2/8 个有
-- `easy clearCacheAll` —— 2/8 个有
-- `CM_FloatToInt` —— 1/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
+- `DrawViTPose` —— 6/7 个有
+- `OnnxDetectionModelLoader` —— 6/7 个有
+- `PoseAndFaceDetection` —— 6/7 个有
+- `RH_LLMAPI_NODE` —— 6/7 个有
+- `AudioSeparation` —— 2/7 个有
+- `DownloadAndLoadWav2VecModel` —— 2/7 个有
+- `MultiTalkModelLoader` —— 2/7 个有
+- `MultiTalkWav2VecEmbeds` —— 2/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `FaceMaskFromPoseKeypoints` —— 1/7 个有
+- `ImageCropByMaskAndResize` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `PixelPerfectResolution` —— 1/7 个有
+- `RH_Captioner` —— 1/7 个有
+- `SaveAudioMP3` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

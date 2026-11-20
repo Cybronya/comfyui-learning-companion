@@ -1,100 +1,102 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_132
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.635667
-common_nodes: [Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SimpleMath+, SolidMask, TextGenerateLTX2Prompt, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy seed]
+frequency: 2
+level: weak
+coverage: 0.7425
+common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, CreateVideo, DF_Int_to_Float, DrawMaskOnImage, DualCLIPLoader, GetImageSize, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, ImageScaleBy, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, QZ_ResolutionPreset, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json, 视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json, 视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json]
+members: [图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json, 视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_132
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json、视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json、视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json、视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：64%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockifyMask`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfySwitchNode`
-- `EmptyLTXVLatentVideo`
+- `CreateVideo`
+- `DF_Int_to_Float`
+- `DrawMaskOnImage`
+- `DualCLIPLoader`
 - `GetImageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
 - `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
+- `LTXVCropGuides`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
 - `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `QZ_ResolutionPreset`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
+- `SaveVideo`
+- `SetNode`
 - `SimpleMath+`
-- `SolidMask`
-- `TextGenerateLTX2Prompt`
+- `UNETLoader`
 - `VAEDecodeTiled`
-- `VAELoader`
+- `VAEEncode`
+- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SomethingToString` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
-- `llama_cpp_parameters` —— 1/3 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `ImageCompositeFromMaskBatch+` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageInvert` —— 1/2 个有
+- `LTX2_NAG` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LTXVReferenceAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ModelMemoryUsageFactorOverride` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `SAM3Segment` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 116 | - | 1 | 100% |
+| 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -102,7 +104,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

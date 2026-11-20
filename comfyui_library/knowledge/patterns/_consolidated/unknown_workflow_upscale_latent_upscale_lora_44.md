@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_44
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.918
-common_nodes: [BasicGuider, CLIPLoader, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader]
+coverage: 0.52175
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2102237008474230785.json, 视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2104442997843783681.json, 视频生成/图生视频/02_BUNNY_1人音色参考_生成新对白_2102300239691599874.json, 视频生成/图生视频/02_BUNNY_2人音色参考_生成新对白_2102237076006719490.json, 视频生成/图生视频/03_BUNNY_已有配音驱动_单人镜头_2102237115760332802.json, 视频生成/图生视频/03_BUNNY_已有配音驱动_多人同框_2102308527359479809.json, 视频生成/图生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2100950589130760193.json, 视频生成/图生视频/H3_高动态双采放大_2102818737027117058.json, 视频生成/图生视频/H3_高动态双采放大_2106167971315011585.json]
+members: [图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2098949863919673345.json, 图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2099061501553373185.json, 数字人/数字人/Minmax h3文戏——Reminx_10Eros模型_2094475274502103042.json, 视频生成/图生视频/MINIMAX-H3文戏工作流_2102802402159194114.json, 视频生成/图生视频/MINIMAX-H3文戏工作流_2106920065542213634.json, 视频生成/图生视频/MINIMAXH3-武戏高动态二采工作流_Aiforly_2110713376044314626.json, 视频生成/图生视频/MINIMAXH3武戏高动态二采工作流_Aiforly｜高动态武戏专用_2114686173607190530.json, 视频生成/图生视频/Minima-H3-武戏工作流_2108453082106515458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_44
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2102237008474230785.json、视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2104442997843783681.json、视频生成/图生视频/02_BUNNY_1人音色参考_生成新对白_2102300239691599874.json、视频生成/图生视频/02_BUNNY_2人音色参考_生成新对白_2102237076006719490.json、视频生成/图生视频/03_BUNNY_已有配音驱动_单人镜头_2102237115760332802.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2098949863919673345.json、图片生成/图生图/【MINIMAX-H3】八月最强文戏-高配版_2099061501553373185.json、数字人/数字人/Minmax h3文戏——Reminx_10Eros模型_2094475274502103042.json、视频生成/图生视频/MINIMAX-H3文戏工作流_2102802402159194114.json、视频生成/图生视频/MINIMAX-H3文戏工作流_2106920065542213634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderBypassModelOnly`
-- `LoraLoaderModelOnly`
 - `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3DualClockSamplerT8`
@@ -37,31 +41,35 @@ source: knowledge_consolidation
 - `MiniMaxH3TwoPassDetailMixerT8Advanced`
 - `MiniMaxH3TwoPassLatentReconcileT8Advanced`
 - `ModelAttentionBackend`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `SolAttnMiniMax`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 7/9 个有
-- `ModelPreviewOverrideKJ` —— 7/9 个有
-- `GetImageSize` —— 6/9 个有
-- `ImageScaleToTotalPixels` —— 6/9 个有
-- `MiniMaxH3OutputTrimT8` —— 6/9 个有
-- `VHS_VideoCombine` —— 6/9 个有
-- `ComfyMathExpression` —— 5/9 个有
-- `MiniMaxH3DurationPlannerT8` —— 4/9 个有
-- `CreateVideo` —— 3/9 个有
-- `ResolutionSelector` —— 3/9 个有
-- `SaveVideo` —— 3/9 个有
-- `MiniMaxH3AudioWindowT8` —— 2/9 个有
-- `MiniMaxH3TwoPassAudioAuditT8Advanced` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `SoundFlow_GetLength` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `忽略多组孤海` —— 4/8 个有
+- `ConcatTextOfUtils` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `MiniMaxChunkFeedForward` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 3/8 个有
+- `MiniMaxLowVRAMAttention` —— 3/8 个有
+- `EmptyImage` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `CreateVideo` —— 1/8 个有
+- `ModelPreviewOverrideKJ` —— 1/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `SaveVideo` —— 1/8 个有
+- `easy imageChooser` —— 1/8 个有
+- `kkVideoFirstLastFrames` —— 1/8 个有
 
 ## 典型参数
 

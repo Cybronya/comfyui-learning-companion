@@ -1,93 +1,86 @@
 ---
 name: text_to_image_controlnet_lora_sampler_5
 type: Text To Image
-frequency: 7
-level: strong
-coverage: 0.801143
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Get Image Size, GetImageSizeAndCount, ImageCASharpening+, ImageResize+, ImageScaleToTotalPixels, ImpactMinMax, ImpactSwitch, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MaraScottIsEmptyOrNone_v1, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, RH_Captioner, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy showAnything, ttN concat]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.8438
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-Image ControlNet 2.1 2601 八步最新洗图_2015610869585027073.json, 图片生成/图生图/Z-Image ControlNet 最新洗图+放大_2001098985597173761.json, 图片生成/图生图/Z-Image+ControlNet 最强洗图_2014936453461053441.json, 图片生成/图生图/图像4K放大 可指定头像 洗图 Z-Image+ControlNet 2_2003022377183244289.json, 图片生成/图生图/洗图 Z-Image+ControlNet 2+TTP +SeedVR2放大_2007687831925297154.json, 图片生成/文生图/Z-Image+ControlNet 2最新洗图_1996252169982590978.json, 平台全量/Z-Image+ControlNet 2 pro洗图 精准控制生图  线稿 深度 姿态 软边缘四种控_2012043412765151234.json]
+members: [图片生成/图生图/87time # 50  通义千问 QW 控制 CN_1970450658602196993.json, 图片生成/图生图/87time # 52 QW 局部重绘_1970447904290861057.json, 图片生成/图生图/87time #52 QW 局部重绘_1965687455661834242.json, 图片生成/图生图/【阡陌】Qwen-Image-ControlNet-Union精准控图工作流_1960641591251787778.json, 图片生成/文生图/Qwen image 2512文生图+CN控制汇总_2006971640961306626.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-Image ControlNet 2.1 2601 八步最新洗图_2015610869585027073.json、图片生成/图生图/Z-Image ControlNet 最新洗图+放大_2001098985597173761.json、图片生成/图生图/Z-Image+ControlNet 最强洗图_2014936453461053441.json、图片生成/图生图/图像4K放大 可指定头像 洗图 Z-Image+ControlNet 2_2003022377183244289.json、图片生成/图生图/洗图 Z-Image+ControlNet 2+TTP +SeedVR2放大_2007687831925297154.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/87time # 50  通义千问 QW 控制 CN_1970450658602196993.json、图片生成/图生图/87time # 52 QW 局部重绘_1970447904290861057.json、图片生成/图生图/87time #52 QW 局部重绘_1965687455661834242.json、图片生成/图生图/【阡陌】Qwen-Image-ControlNet-Union精准控图工作流_1960641591251787778.json、图片生成/文生图/Qwen image 2512文生图+CN控制汇总_2006971640961306626.json）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ControlNetLoader`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Get Image Size`
-- `GetImageSizeAndCount`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
-- `ImpactMinMax`
-- `ImpactSwitch`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaraScottIsEmptyOrNone_v1`
-- `ModelPatchLoader`
-- `PreviewImage`
-- `QwenImageDiffsynthControlnet`
-- `RH_Captioner`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
-- `easy showAnything`
-- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `LayerUtility: ImageReel` —— 6/7 个有
-- `LayerUtility: ImageReelComposit` —— 6/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `DepthAnything_V2` —— 1/7 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/7 个有
-- `ImageConcanate` —— 1/7 个有
+- `ControlNetApplyAdvanced` —— 4/5 个有
+- `AIO_Preprocessor` —— 3/5 个有
+- `GetImageSize+` —— 3/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `ModelSamplingAuraFlow` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `CFGNorm` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `ControlNetInpaintingAliMamaApply` —— 1/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `ModelPatchLoader` —— 1/5 个有
+- `QwenImageDiffsynthControlnet` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `SetUnionControlNetType` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 7 | 100% |
+| 采样步数 | 8 | 4 - 8 | 5 | 76% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 768 | 768 - 1280 | 5 | 76% |
+| 高度 | 1024 | 720 - 1024 | 5 | 87% |
+| ControlNet 权重 | 0.925 | 0.85 - 3 | 4 | 36% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1280，5 个样本
+- 高度 中位数 1024，观测区间 720 - 1024，5 个样本，取值集中（一致性 87%）
+- ControlNet 权重 中位数 0.925，观测区间 0.85 - 3，4 个样本，取值分散，一致性仅 36%
+- 高发问题（7/5 个样本）：Steps较低可能导致细节不足

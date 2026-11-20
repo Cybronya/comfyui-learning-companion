@@ -1,73 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_71
 type: Unknown Workflow
-frequency: 14
+frequency: 13
 level: moderate
-coverage: 0.968357
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.798923
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/ERNIE文心生图蒸馏版本VS原生版本_2044661245202141185.json, 图片生成/文生图/Erine满血版--文生图_2044756541005373442.json, 图片生成/文生图/FLUX.2-Klein多模态文生图工作流_2068581821109071873.json, 图片生成/文生图/FLUX.2-Klein文生图工作流_2015679953211232258.json, 图片生成/文生图/FLUX2文生图_2038528285033897986.json, 图片生成/文生图/FLUX板块：FLUX.2-Klein多模态文生图工作流_2049841830287687681.json, 图片生成/文生图/Flux-Kelin--文生图_2034949979520901121.json, 图片生成/文生图/Flux.2-Klein-文生图_2057389434856886274.json, 图片生成/文生图/Flux.2-Klein-文生图_2060250377894846466.json, 图片生成/文生图/z-image-文生图_2041812350243704833.json, 图片生成/文生图/z-image-文生图_2059886095051087873.json, 图片生成/文生图/百度 ERNIE_Image 生图基础工作流_2044955952499134465.json, 图片生成/文生图/百度 ERNIE_Image 生图基础工作流_2045013148784136193.json, 图片生成/文生图/百度 ERNIE_Image 生图基础工作流_2045101296834846722.json]
+members: [图片生成/文生图/ideogram4文生图_2062829306715402242.json, 图片生成/文生图/ideogram4文生图_2074082025207844866.json, 图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json, 图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json, 图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json, 图片生成/文生图/ideogram4精准定位文生图_2066720301649768448.json, 图片生成/文生图/ideogram_光学眼镜模特_2073959342348521473.json, 图片生成/文生图/image_ideogram4_t2i_2062711247589691394.json, 图片生成/文生图/image_ideogram4_t2i_2062872301623926785.json, 图片生成/文生图/new_image_ideogram4_t2i  文生图工作流_2062929225497268226.json, 图片生成/文生图/【开源MJ】Ideogram4美学大师_2063949376107663361.json, 图片生成/文生图/图文排版新模型-IdeoGram4_2062809092619591682.json, 图片生成/文生图/指哪打哪文生图_ideogram4_t2i_2062732159298920450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_71
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/ERNIE文心生图蒸馏版本VS原生版本_2044661245202141185.json、图片生成/文生图/Erine满血版--文生图_2044756541005373442.json、图片生成/文生图/FLUX.2-Klein多模态文生图工作流_2068581821109071873.json、图片生成/文生图/FLUX.2-Klein文生图工作流_2015679953211232258.json、图片生成/文生图/FLUX2文生图_2038528285033897986.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/ideogram4文生图_2062829306715402242.json、图片生成/文生图/ideogram4文生图_2074082025207844866.json、图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json、图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json、图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 12/14 个有
-- `Seed (rgthree)` —— 8/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/14 个有
-- `LoraLoader` —— 4/14 个有
-- `ConditioningZeroOut` —— 3/14 个有
-- `EmptySD3LatentImage` —— 2/14 个有
-- `CR Text` —— 1/14 个有
-- `MuyeTextEditOutput` —— 1/14 个有
-- `UnetLoaderGGUF` —— 1/14 个有
+- `ConditioningZeroOut` —— 10/13 个有
+- `KSamplerSelect` —— 10/13 个有
+- `ResolutionSelector` —— 10/13 个有
+- `CustomCombo` —— 9/13 个有
+- `PreviewAny` —— 9/13 个有
+- `PrimitiveStringMultiline` —— 8/13 个有
+- `Ideogram4PromptBuilderKJ` —— 5/13 个有
+- `PreviewImage` —— 5/13 个有
+- `ImageConcatMulti` —— 4/13 个有
+- `ShowText|pysssss` —— 4/13 个有
+- `StringConcatenate` —— 4/13 个有
+- `TextGenerate` —— 4/13 个有
+- `SamplerEulerAncestral` —— 3/13 个有
+- `CR Text` —— 2/13 个有
+- `AILab_ImagePreview` —— 1/13 个有
+- `DeepTranslatorTextNode` —— 1/13 个有
+- `Display Int (rgthree)` —— 1/13 个有
+- `ImageBlend` —— 1/13 个有
+- `LoraLoaderModelOnly` —— 1/13 个有
+- `RHLLMChatNode` —— 1/13 个有
+- `SeedVR2` —— 1/13 个有
+- `SeedVR2BlockSwap` —— 1/13 个有
+- `SeedVR2ExtraArgs` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 50 | 14 | 14% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 14 | 27% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| LoRA 模型强度 | 0.6 | 0.4 - 0.8 | 4 | 67% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 13/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 50，14 个样本，取值分散，一致性仅 14%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 27%
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.4 - 0.8，4 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（13/14 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

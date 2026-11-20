@@ -3,39 +3,42 @@ name: unknown_workflow_video_upscale_latent_upscale_123
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.623667
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy int, easy showAnything]
-problems: []
+coverage: 0.93
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVFirstLastFrameControl_TTP, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高清-图生视频-自动提示词-三阶采样_2050734311749505025.json, 视频生成/图生视频/超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2044928269383897089.json, 视频生成/图生视频/超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2046030109836054530.json]
+members: [视频生成/图生视频/电商内衣换装+视频生成_2039914785319424002.json, 视频生成/文生视频/LTX-2图_3图NVFP4首尾帧_2009643807456890881.json, 视频生成/文生视频/LTX-2图_3图首尾帧_2009549891193806850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_123
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高清-图生视频-自动提示词-三阶采样_2050734311749505025.json、视频生成/图生视频/超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2044928269383897089.json、视频生成/图生视频/超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2046030109836054530.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商内衣换装+视频生成_2039914785319424002.json、视频生成/文生视频/LTX-2图_3图NVFP4首尾帧_2009643807456890881.json、视频生成/文生视频/LTX-2图_3图首尾帧_2009549891193806850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
+- `LTXVFirstLastFrameControl_TTP`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVScheduler`
@@ -44,35 +47,30 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SimpleMath+`
-- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `ConcatTextOfUtils` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `CustomAddLabel` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `LTX2_NAG` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `FloatConstant` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTXVMiddleFrame_TTP` —— 2/3 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `BetaSamplingScheduler` —— 1/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `KSampler` —— 1/3 个有
+- `MemoryCleaner` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/3 个有
 - `UNETLoader` —— 1/3 个有
-- `VAELoaderKJ` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
-- `llama_cpp_parameters` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `VAELoader` —— 1/3 个有
 
 ## 典型参数
 
@@ -80,10 +78,17 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 97 | 3 | 100% |
 | 高度 | 25 | 25 - 25 | 3 | 100% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 

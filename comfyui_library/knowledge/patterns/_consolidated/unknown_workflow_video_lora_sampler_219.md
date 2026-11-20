@@ -1,77 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_219
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.292455
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, Fast Groups Bypasser (rgthree), GetNode, ImageBatchExtendWithOverlap, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SetNode, ShowText|pysssss, SomethingToString, Split String, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanAdvancedI2V, easy int]
+frequency: 10
+level: moderate
+coverage: 0.7738
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/SVI2Pro 全自动反推长视频_2009674822111989761.json, 视频生成/图生视频/(一致性)Wan2.2 Remix v2.1 + SVI2Pro +FLMF全自动提示词图生视频V1_2010956569466376194.json, 视频生成/图生视频/Wan2.2 Dasiwa V10+ SVI2 +Qwen3.5全自动提示词图生长视频V1_2040996955320487938.json, 视频生成/图生视频/Wan2.2 Remix v2.0 + SVI2Pro +FLMF全自动提示词图生视频V1_2010980319209459714.json, 视频生成/图生视频/Wan2.2 Remix v3 + SVI2 +Qwen3.5全自动提示词图生长视频V1_2035643021630377985.json, 视频生成/图生视频/Wan2.2 Remix v3 + SVI2 +Qwen3.5全自动提示词图生长视频V1_2036995772033540097.json, 视频生成/图生视频/Wan2.2 Smooth V2+ SVI2Pro +FLMF全自动提示词图生视频V1_2010983920858308609.json, 视频生成/图生视频/（N SFW）Wan2.2 Smooth V3+ SVI2Pro+Qwen3.5全自动提示词图生长视_2037035317777141762.json, 视频生成/图生视频/（自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长视频_2040996971149795330.json, 视频生成/图生视频/（自用）Wan2.2 Smooth V2+ SVI2Pro +全自动提示词图生视频V1_2011039757379313666.json, 视频生成/图生视频/（自用）Wan2.2 Smooth V3+ SVI2Pro+Qwen3.5全自动提示词图生长视频V2_2035651804888829954.json]
+members: [视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json, 视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json, 视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json, 视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json, 视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json, 视频生成/图生视频/祝福视频测试 HUMO_2037863999005532162.json, 视频生成/文生视频/HuMo音频驱动文生数字人V1_1966946187645476866.json, 视频生成/文生视频/HuMo音频驱动文生数字人稳定修正版V3_1968587379978186753.json, 视频生成/文生视频/humo双图参考_1968180863945027585.json, 音频生成/音频生成/数字人HuMo单人参考数字人V1_1967105592944943105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_219
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/SVI2Pro 全自动反推长视频_2009674822111989761.json、视频生成/图生视频/(一致性)Wan2.2 Remix v2.1 + SVI2Pro +FLMF全自动提示词图生视频V1_2010956569466376194.json、视频生成/图生视频/Wan2.2 Dasiwa V10+ SVI2 +Qwen3.5全自动提示词图生长视频V1_2040996955320487938.json、视频生成/图生视频/Wan2.2 Remix v2.0 + SVI2Pro +FLMF全自动提示词图生视频V1_2010980319209459714.json、视频生成/图生视频/Wan2.2 Remix v3 + SVI2 +Qwen3.5全自动提示词图生长视频V1_2035643021630377985.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json、视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json、视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json、视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json、视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：29%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
+全部 10 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `SetNode`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `Split String`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `WanAdvancedI2V`
-- `easy int`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 10/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/11 个有
-- `CR Text Concatenate` —— 8/11 个有
-- `TextPreview` —— 8/11 个有
-- `ShellAgentPluginOutputText` —— 6/11 个有
-- `easy cleanGpuUsed` —— 6/11 个有
-- `easy showAnything` —— 6/11 个有
-- `llama_cpp_instruct_adv` —— 6/11 个有
-- `llama_cpp_model_loader` —— 6/11 个有
-- `llama_cpp_parameters` —— 6/11 个有
-- `DuckHideNode` —— 5/11 个有
-- `Qwen3_VQA` —— 5/11 个有
-- `SaveImage` —— 5/11 个有
-- `TT_img_enc` —— 5/11 个有
-- `TT_img_enc_v2` —— 5/11 个有
+- `CR Prompt Text` —— 9/10 个有
+- `GetNode` —— 9/10 个有
+- `ImageResizeKJv2` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `PreviewImage` —— 8/10 个有
+- `ImageBatchMulti` —— 7/10 个有
+- `ImageConcatMulti` —— 7/10 个有
+- `RMBG` —— 6/10 个有
+- `INTConstant` —— 5/10 个有
+- `JWInteger` —— 4/10 个有
+- `MultiTalkModelLoader` —— 3/10 个有
+- `MultiTalkWav2VecEmbeds` —— 3/10 个有
+- `WanVideoCombineEmbeds` —— 3/10 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/10 个有
+- `Wav2VecModelLoader` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `PDIMAGE_LongerSize` —— 2/10 个有
+- `WanVideoTorchCompileSettings` —— 2/10 个有
+- `DF_Int_to_Float` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 11 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 11 | 100% |
-| 采样算法 | 1 | 1 - 1 | 11 | 100% |
-| 调度器 | euler | - | 11 | 100% |
-| 重绘幅度 | simple | - | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -79,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，11 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，11 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，11 个样本，一致性 100%
-- 重绘幅度 最常用 simple，11 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论
