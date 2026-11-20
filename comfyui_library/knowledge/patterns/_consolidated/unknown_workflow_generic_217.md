@@ -1,38 +1,46 @@
 ---
 name: unknown_workflow_generic_217
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.583091
-common_nodes: [JjkText, RH_Suno_Single, SaveAudio, ShellAgentPluginOutputText]
+coverage: 0.8254
+common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [平台全量/AI音乐 自定义曲风，商用BGM_2095102736898547713.json, 音频生成/音频生成/RH Suno_Single_2031164290161451010.json, 音频生成/音频生成/Suno AI音乐创作-自动生成歌词_2031624341296783361.json, 音频生成/音频生成/Suno5.0-AI 音乐创作-歌曲创作-原创音乐生成_2047279211932557313.json, 音频生成/音频生成/Suno_Single音乐克隆_1985533739885281281.json, 音频生成/音频生成/suno v5 歌曲创作 音乐创作 生成原创歌曲 AI音乐 自定义曲风_2054008022871093249.json, 音频生成/音频生成/suno v5付费音乐_2046107780586672130.json, 音频生成/音频生成/suno v5最强歌曲创作_2032367123665788930.json, 音频生成/音频生成/suno v5歌曲创作_音乐创作_生成原创歌曲_自定义曲风_2046066989352882178.json, 音频生成/音频生成/suno v5音乐创作 生成原创歌曲 AI音乐 自定义曲风，商用BGM_2035901494800683009.json, 音频生成/音频生成/suno音乐生成工作流_2088935989556375553.json]
+members: [图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json, 图片生成/图生图/全能图像王-全能图片_2056671805045305346.json, 图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json, 图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json, 图片生成/图生图/全能图片2.0 电商海报洗图复刻_2067998887889162241.json, 图片生成/图生图/全能图片V2 多图参考优化版_2036357262402392065.json, 图片生成/图生图/全能图片V2 多图参考优化版_2036724522824503297.json, 图片生成/图生图/全能图片V2洗图+结构化提示词强化版【API节点一张图1毛钱】_2038835400483016706.json, 图片生成/图生图/图片重绘_2044580670260908034.json, 图片生成/图生图/延展再裁切测试_2034169911026655234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_217
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/AI音乐 自定义曲风，商用BGM_2095102736898547713.json、音频生成/音频生成/RH Suno_Single_2031164290161451010.json、音频生成/音频生成/Suno AI音乐创作-自动生成歌词_2031624341296783361.json、音频生成/音频生成/Suno5.0-AI 音乐创作-歌曲创作-原创音乐生成_2047279211932557313.json、音频生成/音频生成/Suno_Single音乐克隆_1985533739885281281.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json、图片生成/图生图/全能图像王-全能图片_2056671805045305346.json、图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json、图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json、图片生成/图生图/全能图片2.0 电商海报洗图复刻_2067998887889162241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `JjkText`
-- `RH_Suno_Single`
-- `SaveAudio`
-- `ShellAgentPluginOutputText`
+全部 10 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 9/11 个有
-- `SaveAudioMP3` —— 9/11 个有
-- `LoadImage` —— 6/11 个有
-- `ShowText` —— 2/11 个有
+- `easy showAnything` —— 7/10 个有
+- `RH_LLMAPI_Pro_Node` —— 6/10 个有
+- `PreviewImage` —— 5/10 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `DapaoPromptBrakeNode` —— 2/10 个有
+- `ImageStitch` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `StringFunction|pysssss` —— 2/10 个有
+- `AspectRatio` —— 1/10 个有
+- `GetImage` —— 1/10 个有
+- `KOOK_SaveJPGImage` —— 1/10 个有
 
 ## 典型参数
 

@@ -3,63 +3,53 @@ name: unknown_workflow_video_sampler_vae_146
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8655
-common_nodes: [ImageResizeKJ, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.951
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan_fun_control_官方工作流_文生视频t2v_K神版_1930315857648369666.json, 平台全量/通义万相wan2.1 Fun control视频转绘_1907331700114743297.json, 视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json, 视频生成/文生视频/FUN 动作迁移稳定版_1909601709499580417.json]
+members: [视频生成/文生视频/Wan2.1-14B-FusionX-Image2video模型 图生视频工作流_1934961731435470849.json, 视频生成/文生视频/【Wan2.1系列】画质救星SLG技术_1918486985445675009.json, 视频生成/文生视频/【加速版】图生视频wan2.1万相2.1稳定效果强大_1945351110414540801.json, 视频生成/文生视频/丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_146
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan_fun_control_官方工作流_文生视频t2v_K神版_1930315857648369666.json、平台全量/通义万相wan2.1 Fun control视频转绘_1907331700114743297.json、视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json、视频生成/文生视频/FUN 动作迁移稳定版_1909601709499580417.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.1-14B-FusionX-Image2video模型 图生视频工作流_1934961731435470849.json、视频生成/文生视频/【Wan2.1系列】画质救星SLG技术_1918486985445675009.json、视频生成/文生视频/【加速版】图生视频wan2.1万相2.1稳定效果强大_1945351110414540801.json、视频生成/文生视频/丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageResizeKJ`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `CLIPVisionLoader` —— 3/4 个有
-- `GetImageSizeAndCount` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `WanVideoClipVisionEncode` —— 3/4 个有
-- `WanVideoControlEmbeds` —— 3/4 个有
-- `WanVideoEmptyEmbeds` —— 3/4 个有
-- `WanVideoImageToVideoEncode` —— 3/4 个有
-- `AIO_Preprocessor` —— 2/4 个有
-- `WanVideoEnhanceAVideo` —— 2/4 个有
-- `WanVideoVRAMManagement` —— 2/4 个有
-- `AnimateDiffCombine` —— 1/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `DepthAnything_V2` —— 1/4 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageBlend` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/4 个有
-- `WanVideoUni3C_embeds` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoSLG` —— 3/4 个有
+- `WanVideoTeaCache` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `ImageResizeKJ` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
+- `GIMMVFI_interpolate` —— 1/4 个有
+- `LoadWanVideoClipTextEncoder` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `WanVideoExperimentalArgs` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,54 +1,64 @@
 ---
 name: unknown_workflow_video_upscale_lora_31
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.627
-common_nodes: [Anything Everywhere, LoadWanVideoT5TextEncoder, RIFE VFI, SetNode, Text Prompt (JPS), UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+frequency: 2
+level: weak
+coverage: 0.8905
+common_nodes: [AILab_ImageStitch, Anything Everywhere3, CLIPVisionLoader, FastUnsharpSharpen, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResize+, ImageUpscaleWithModel, LoadImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json, 视频生成/图生视频/文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.json, 视频生成/文生视频/[免费课程对应工作流] Wrapper-SelfForcing-TextToVideo-60FPS_1937520782014595074.json]
+members: [视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json, 视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_31
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json、视频生成/图生视频/文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.json、视频生成/文生视频/[免费课程对应工作流] Wrapper-SelfForcing-TextToVideo-60FPS_1937520782014595074.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json、视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `LoadWanVideoT5TextEncoder`
+全部 2 个 workflow 都包含：
+- `AILab_ImageStitch`
+- `Anything Everywhere3`
+- `CLIPVisionLoader`
+- `FastUnsharpSharpen`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageResize+`
+- `ImageUpscaleWithModel`
+- `LoadImage`
 - `RIFE VFI`
-- `SetNode`
-- `Text Prompt (JPS)`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `WanVideoBlockSwap` —— 2/3 个有
-- `WanVideoEmptyEmbeds` —— 2/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `WanVideoImageClipEncode` —— 1/3 个有
+- `LayerColor: ColorAdapter` —— 1/2 个有
+- `OnnxDetectionModelLoader` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `SDPoseOODLoader` —— 1/2 个有
+- `SDPoseOODProcessor` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 
@@ -60,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

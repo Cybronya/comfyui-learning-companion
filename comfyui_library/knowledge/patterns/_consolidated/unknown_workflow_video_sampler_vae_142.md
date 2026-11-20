@@ -3,54 +3,54 @@ name: unknown_workflow_video_sampler_vae_142
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8335
-common_nodes: [LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.75475
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json, 视频生成/图生视频/wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json, 视频生成/图生视频/极速图生视频工作流(self-forcing-cfg-step-distill)_1935517569509937153.json, 视频生成/文生视频/丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json]
+members: [视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json, 视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json, 视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json, 视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_142
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json、视频生成/图生视频/wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json、视频生成/图生视频/极速图生视频工作流(self-forcing-cfg-step-distill)_1935517569509937153.json、视频生成/文生视频/丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json、视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json、视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json、视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoGetClosestBucketSize`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageScale`
+- `LoadImage`
+- `SetNode`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `CLIPTextEncode` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `WanVideoTextEmbedBridge` —— 3/4 个有
-- `ImageResizeKJ` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `LoadWanVideoClipTextEncoder` —— 2/4 个有
-- `WanVideoClipVisionEncode` —— 2/4 个有
-- `WanVideoEmptyEmbeds` —— 2/4 个有
-- `WanVideoImageToVideoEncode` —— 2/4 个有
-- `WanVideoVRAMManagement` —— 2/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `JanusImageUnderstanding` —— 1/4 个有
+- `JanusModelLoader` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
 
 ## 典型参数
 

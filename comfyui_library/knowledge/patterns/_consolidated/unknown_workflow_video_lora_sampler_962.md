@@ -3,66 +3,62 @@ name: unknown_workflow_video_lora_sampler_962
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.865
-common_nodes: [BasicGuider, BasicScheduler, BlockifyMask, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ColorMatchV2, ComfyMathExpression, CreateVideo, GetImageSizeAndCount, GrowMaskWithBlur, ImageAndMaskPreview, ImageFromBatch, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskToImage, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, RHLLMChatNode, RandomNoise, SAM3_TrackToMask, SAM3_VideoTrack, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy int, easy positive, easy showAnything, 孤海注释]
+coverage: 1
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, RH_Nano_Banana_Image2Image, RH_Translator, SoundFlow_GetLength, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/1-Aiden-MinimaxH3-超快速视频编辑流，v0.1版本！_2098469069073764353.json, 视频生成/图生视频/MinimaxH3-超快速视频换人自动提示词版_2100599403835912194.json]
+members: [视频生成/图生视频/全能图片V1+MegaTTS3+InfiniteTalk数字人带货_1963202407591292929.json, 视频生成/文生视频/全能图片V1+IndexTTS-2.0+InfiniteTalk数字人带货_1968265294475079681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_962
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/1-Aiden-MinimaxH3-超快速视频编辑流，v0.1版本！_2098469069073764353.json、视频生成/图生视频/MinimaxH3-超快速视频换人自动提示词版_2100599403835912194.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能图片V1+MegaTTS3+InfiniteTalk数字人带货_1963202407591292929.json、视频生成/文生视频/全能图片V1+IndexTTS-2.0+InfiniteTalk数字人带货_1968265294475079681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockifyMask`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ColorMatchV2`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
-- `ImageAndMaskPreview`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `SoundFlow_GetLength`
+- `String Literal`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `easy int`
-- `easy positive`
-- `easy showAnything`
-- `孤海注释`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `IndexTTS2Run` —— 1/2 个有
+- `JWStringMultiline` —— 1/2 个有
+- `MegaTTS3Run` —— 1/2 个有
+- `SaveAudioMP3` —— 1/2 个有
 
 ## 典型参数
 

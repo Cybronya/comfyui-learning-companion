@@ -3,36 +3,45 @@ name: unknown_workflow_generic_413
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.903429
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.779857
+common_nodes: [Apply Whisper, LoadAudio, PreviewAudio, ShowText|pysssss, SoundFlow_TrimAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1-一键转手办建模原版V1_1961282875477966849.json, 图片生成/图生图/-全能图片V1-蜡笔小新风格转换v22_1965054781519708161.json, 图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1962726052797788162.json, 图片生成/图生图/一键生成龙珠分身_1961722590039621633.json, 图片生成/图生图/全能图片V1：与自己和解_1998313406258143233.json, 平台全量/【全能换背景】 全能图片V1谷歌香蕉 电商美妆日用3C家电家居产品模特产品沙发椅子 万能图像_1981930462207713282.json, 平台全量/全能图片V1-一键手办_1961632676925128706.json]
+members: [音频生成/音频生成/FireRed-TTS2语音自动克隆-声音超级还原_2051587777204113410.json, 音频生成/音频生成/FireRedTTS2 双人对话克隆_1970297817912778753.json, 音频生成/音频生成/FireRedTTS2单人声音克隆_1968448619034619905.json, 音频生成/音频生成/FireRedTTS2小红书超自然语音克隆技术，支持单人和双人_1970352061521010689.json, 音频生成/音频生成/FireRedTTS2小红书超自然语音克隆技术，支持单人和双人_1971134290073395202.json, 音频生成/音频生成/FireRedTTS2语音自动克隆_1970161540651491330.json, 音频生成/音频生成/FireRedTTS2语音自动克隆_1970365053411225602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_413
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-一键转手办建模原版V1_1961282875477966849.json、图片生成/图生图/-全能图片V1-蜡笔小新风格转换v22_1965054781519708161.json、图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1962726052797788162.json、图片生成/图生图/一键生成龙珠分身_1961722590039621633.json、图片生成/图生图/全能图片V1：与自己和解_1998313406258143233.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/FireRed-TTS2语音自动克隆-声音超级还原_2051587777204113410.json、音频生成/音频生成/FireRedTTS2 双人对话克隆_1970297817912778753.json、音频生成/音频生成/FireRedTTS2单人声音克隆_1968448619034619905.json、音频生成/音频生成/FireRedTTS2小红书超自然语音克隆技术，支持单人和双人_1970352061521010689.json、音频生成/音频生成/FireRedTTS2小红书超自然语音克隆技术，支持单人和双人_1971134290073395202.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+- `Apply Whisper`
+- `LoadAudio`
+- `PreviewAudio`
+- `ShowText|pysssss`
+- `SoundFlow_TrimAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `ImageConcanate` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
+- `FireRedTTS2MonologueNode` —— 6/7 个有
+- `FireRedTTS2_Dialogue` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `SaveAudioMP3` —— 5/7 个有
+- `SaveImage` —— 4/7 个有
+- `LoadImage` —— 3/7 个有
+- `SaveAudio` —— 3/7 个有
+- `AudioSeparation` —— 2/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

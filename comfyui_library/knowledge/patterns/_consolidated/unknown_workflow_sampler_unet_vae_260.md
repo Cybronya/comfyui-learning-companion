@@ -1,62 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_260
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8588
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.7645
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【qwen2.1短剧资产】图生角色设定图（(目前只支持真人▏无PE）_2102180346572922881.json, 图片生成/图生图/【遇见AI】qwen image 2.1图生图和图片参考基础流_2101841464891367425.json, 图片生成/图生图/一键抠图背景移除-qwen image 2.1_2112444591415848961.json, 图片生成/图生图/换装-Qwen Image 2.1-图像编辑_2101859929576534017.json, 平台全量/一句话修改图片_2107757251153981442.json]
+members: [视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json, 视频生成/文生视频/MiniMax-H3全能参考工作流-金水1987_2084528401230159874.json, 视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json, 视频生成/文生视频/Minimax H3 全系列工作流【AI小王子】_2084162640192032770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_260
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【qwen2.1短剧资产】图生角色设定图（(目前只支持真人▏无PE）_2102180346572922881.json、图片生成/图生图/【遇见AI】qwen image 2.1图生图和图片参考基础流_2101841464891367425.json、图片生成/图生图/一键抠图背景移除-qwen image 2.1_2112444591415848961.json、图片生成/图生图/换装-Qwen Image 2.1-图像编辑_2101859929576534017.json、平台全量/一句话修改图片_2107757251153981442.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json、视频生成/文生视频/MiniMax-H3全能参考工作流-金水1987_2084528401230159874.json、视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json、视频生成/文生视频/Minimax H3 全系列工作流【AI小王子】_2084162640192032770.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `SaveImageAdvanced`
-- `TextEncodeQwenImage21`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCompare` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `easy boolean` —— 1/5 个有
-- `easy float` —— 1/5 个有
+- `EasyCache` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `MiniMaxH3ImageToVideo` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `ComfySwitchNode` —— 2/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
+- `RegexReplace` —— 2/4 个有
+- `ResizeImagesByLongerEdge` —— 2/4 个有
+- `VRAM_Debug` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `easy string` —— 2/4 个有
+- `llama_cpp_instruct_adv` —— 2/4 个有
+- `llama_cpp_model_loader` —— 2/4 个有
+- `ttN int` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 40 | 5 | 79% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,10 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 40，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

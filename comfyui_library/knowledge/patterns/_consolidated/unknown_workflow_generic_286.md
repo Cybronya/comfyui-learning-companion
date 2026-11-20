@@ -1,50 +1,41 @@
 ---
 name: unknown_workflow_generic_286
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.847556
-common_nodes: [CR Simple Text Watermark, CR Text, CR Text Concatenate, CR Text Replace, Fast Groups Bypasser (rgthree), ImageBatchMulti, ImageCrop+, LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage, SeedVR2]
+coverage: 0.81275
+common_nodes: [LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/AI小说推文分镜流（一次九张版）_2017544866812665857.json, 图片生成/图生图/AI小说推文（一次4张版）横屏16_9版_2017176913428619266.json, 图片生成/图生图/AI小说推文（一次九张版）_2046416789873106946.json, 图片生成/图生图/AI小说推文（一次十八张版）横屏16_9版_2018238467544719361.json, 图片生成/图生图/AI漫剧、小说推文（一次9张版）横屏16_9版_2017479043729334273.json, 图片生成/文生图/AI小说推文（一次4张版）_2013080252641185794.json, 图片生成/文生图/AI小说推文（一次九张版）_2013089309171130370.json, 图片生成/文生图/AI小说推文（一次十八张版）_2016435898019221506.json, 图片生成/文生图/推文（一次九张版）_2017116845068787713.json]
+members: [图片生成/反推提示词/Qwen3.8-MiniMax H3提示词增强器_2097524162662322177.json, 图片生成/反推提示词/Qwen3.8本地版最强MiniMax+H3提示词增强器_2095554204206198786.json, 图片生成/反推提示词/SeeDance 2.0 爆款脚本优化洗稿器V1_2020565811433312257.json, 图片生成/反推提示词/音乐MV提示词强化工作流（贞贞的平价AI小屋）_2099763702609305601.json, 图片生成/反推提示词/（9.18-因果链）最强MiniMax H3提示词增强器（贞贞的平价AI小屋）_2085719535029673986.json, 图片生成/反推提示词/（拓拓）最强MiniMax H3提示词增强器（_2107077537309487106.json, 视频生成/文生视频/SeeDance 2.0 爆款脚本优化洗稿器V1_2020721759913254913.json, 视频生成/文生视频/SeeDance 2.0爆款视频分析高级版V1_2020740263819350017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_286
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI小说推文分镜流（一次九张版）_2017544866812665857.json、图片生成/图生图/AI小说推文（一次4张版）横屏16_9版_2017176913428619266.json、图片生成/图生图/AI小说推文（一次九张版）_2046416789873106946.json、图片生成/图生图/AI小说推文（一次十八张版）横屏16_9版_2018238467544719361.json、图片生成/图生图/AI漫剧、小说推文（一次9张版）横屏16_9版_2017479043729334273.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/Qwen3.8-MiniMax H3提示词增强器_2097524162662322177.json、图片生成/反推提示词/Qwen3.8本地版最强MiniMax+H3提示词增强器_2095554204206198786.json、图片生成/反推提示词/SeeDance 2.0 爆款脚本优化洗稿器V1_2020565811433312257.json、图片生成/反推提示词/音乐MV提示词强化工作流（贞贞的平价AI小屋）_2099763702609305601.json、图片生成/反推提示词/（9.18-因果链）最强MiniMax H3提示词增强器（贞贞的平价AI小屋）_2085719535029673986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Simple Text Watermark`
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageBatchMulti`
-- `ImageCrop+`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SeedVR2`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 8/9 个有
-- `HAIGC_SaveImagesToZip` —— 7/9 个有
-- `Any Switch (rgthree)` —— 3/9 个有
-- `ImagePass` —— 3/9 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/9 个有
-- `SeedVR2BlockSwap` —— 3/9 个有
-- `ExtractLinesByIndex` —— 2/9 个有
-- `GetNode` —— 2/9 个有
+- `CR Prompt Text` —— 7/8 个有
+- `MiniMaxH3PromptEnhancerT8` —— 5/8 个有
+- `Comfly_LLm_API` —— 3/8 个有
+- `T8PerformanceDirectorConfig` —— 3/8 个有
+- `RH_LLMAPI_Pro_Node` —— 2/8 个有
+- `LoadVideo` —— 1/8 个有
+- `easy saveText` —— 1/8 个有
 
 ## 典型参数
 

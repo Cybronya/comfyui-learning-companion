@@ -1,82 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_763
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.7305
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CM_IntToFloat, ComfyMathExpression, GetNode, INTConstant, ImageBatchMulti, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RH_GetAudioDuration, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy cleanGpuUsed, easy mathInt, easy seed, wanBlockSwap]
+frequency: 3
+level: moderate
+coverage: 0.930333
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json, 视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json]
+members: [视频生成/图生视频/电商产品展示 固定模特  视频版_1985965046280986626.json, 视频生成/图生视频/首尾帧Wan2.2 Fun VACE_1971104908562862081.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-图生视频_1967620116848545793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_763
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json、视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商产品展示 固定模特  视频版_1985965046280986626.json、视频生成/图生视频/首尾帧Wan2.2 Fun VACE_1971104908562862081.json、视频生成/文生视频/Wan 2.2-Fun-VACE-图生视频_1967620116848545793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `ComfyMathExpression`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageLoader`
 - `ImageResizeKJv2`
-- `Int`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RH_GetAudioDuration`
-- `SetNode`
-- `Text`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanMultiFrameRefToVideo`
-- `easy cleanGpuUsed`
-- `easy mathInt`
-- `easy seed`
-- `wanBlockSwap`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiplePathsInput` —— 3/4 个有
-- `Qwen3_VQA` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LongCatTTS` —— 2/4 个有
-- `RunningHub SeedXPro Translator` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `TT_img_enc` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `DiffusionModelLoaderKJ` —— 2/3 个有
+- `DiffusionModelSelector` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageRepeat` —— 1/3 个有
+- `ImpactFloat` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `ZML_DualInteger` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 16 | 3 | 57% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | lcm | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -84,8 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 16，3 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

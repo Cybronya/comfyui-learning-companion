@@ -1,56 +1,65 @@
 ---
 name: unknown_workflow_video_sampler_vae_170
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.75475
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, SetNode, VHS_VideoCombine]
+coverage: 0.558
+common_nodes: [AddLabel, Bjornulf_CombineTexts, CR Text Input Switch, DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, Florence2ModelLoader, Florence2Run, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive string multiline [Crystools], SetNode, VHS_LoadVideoFFmpeg, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy promptReplace, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json, 视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json, 视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json, 视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json]
+members: [视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_170
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/混元视频 I2V 图生视频 Kijai版工作流_1897643797684408322.json、视频生成/图生视频/混元视频I2V图生视频720PTeaCache加速版_1898316734435414018.json、视频生成/图生视频/混元视频I2V图生视频janus提示词反推_1903686975529066497.json、视频生成/图生视频/腾讯混元图生视频K神修复模型人物一致性和稳定性非常好（Rick随风0309更新）_1898690241098633218.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json、视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json、视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
-- `GetImageSizeAndCount`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoGetClosestBucketSize`
-- `HyVideoI2VEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageScale`
+全部 3 个 workflow 都包含：
+- `AddLabel`
+- `Bjornulf_CombineTexts`
+- `CR Text Input Switch`
+- `DWPreprocessor`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetNode`
+- `INTConstant`
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `Primitive string multiline [Crystools]`
 - `SetNode`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/4 个有
-- `ImageConcatMulti` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `JanusImageUnderstanding` —— 1/4 个有
-- `JanusModelLoader` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `VHS_VideoInfoLoaded`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy promptReplace`
+- `easy showAnything`
 
 ## 典型参数
 

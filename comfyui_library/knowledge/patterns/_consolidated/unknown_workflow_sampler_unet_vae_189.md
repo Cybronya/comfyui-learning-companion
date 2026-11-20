@@ -1,64 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_189
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.829143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ImageFromBatch, ImageStitch, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, StringConcatenate, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.8795
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MinimaxH3 角色六视图（自动版）_2090089945036845057.json, 图片生成/图生图/MinimaxH3 角色四视图（自动版）_2090070169673621506.json, 图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2096867791893778433.json, 图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2097159652462125058.json, 视频生成/图生视频/Minimax H3 生成场景 8 视图（可以场景中某物为中心）_2092374389412155393.json, 视频生成/图生视频/Minimax H3 生成角色 6 视图 + 360°旋转+人脸特写 视频_2092354483618672642.json, 视频生成/图生视频/【老金驿站】MinimaxH3生成人物三视图工作流_2089550852343291906.json]
+members: [图片生成/文生图/故事_1982707861027471361.json, 图片生成/文生图/文生图+LoRA_1932450301490425858.json, 图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json, 图片生成/文生图/英文字体设计_1927964492725141505.json, 图片生成/文生图/英文字体设计_2084095503633043458.json, 图片生成/文生图/超好用室内文生图+放大集合_1963922300439547906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_189
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MinimaxH3 角色六视图（自动版）_2090089945036845057.json、图片生成/图生图/MinimaxH3 角色四视图（自动版）_2090070169673621506.json、图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2096867791893778433.json、图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2097159652462125058.json、视频生成/图生视频/Minimax H3 生成场景 8 视图（可以场景中某物为中心）_2092374389412155393.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/故事_1982707861027471361.json、图片生成/文生图/文生图+LoRA_1932450301490425858.json、图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json、图片生成/文生图/英文字体设计_1927964492725141505.json、图片生成/文生图/英文字体设计_2084095503633043458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ImageFromBatch`
-- `ImageStitch`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringConcatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxChunkFeedForward` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `ModelPatchTorchSettings` —— 4/7 个有
-- `ResolutionSelector` —— 4/7 个有
-- `BatchImagesNode` —— 3/7 个有
-- `MiniMaxH3SigmaShift` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `CreateVideo` —— 2/7 个有
-- `LTX_lora_loader` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `RHLLMChatNode` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `AILab_QwenVL` —— 1/7 个有
+- `CLIPTextEncode` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `LoraLoader` —— 4/6 个有
+- `UltimateSDUpscale` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `FluxGuidance` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `BatchPromptSchedule` —— 1/6 个有
+- `CheckpointLoaderSimple` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1112 | 1024 - 1280 | 6 | 90% |
+| 高度 | 872 | 720 - 1600 | 6 | 68% |
+| LoRA 模型强度 | 0.7 | 0.6 - 0.8 | 4 | 86% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -66,4 +62,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1112，观测区间 1024 - 1280，6 个样本，取值集中（一致性 90%）
+- 高度 中位数 872，观测区间 720 - 1600，6 个样本
+- LoRA 模型强度 中位数 0.7，观测区间 0.6 - 0.8，4 个样本，取值集中（一致性 86%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

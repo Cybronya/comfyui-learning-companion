@@ -3,93 +3,74 @@ name: unknown_workflow_video_lora_sampler_987
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.616
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CheckpointLoaderSimple, ConditioningZeroOut, DWPreprocessor, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageConcanate, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImpactConditionalBranch, Int, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PainterVRAM, PoseAndFaceDetection, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy compare]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.466
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+problems: []
 missing: []
-members: [平台全量/wan-Animate动作迁移_2037413866488995841.json, 视频生成/图生视频/wan123首针重绘动作迁移_2047166439689297922.json]
+members: [视频生成/图生视频/视频-Wan2.2首中尾帧FMLF，首中尾三帧参考_2068809925526118401.json, 视频生成/图生视频/首尾祯动感转场_1994048317403447297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_987
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/wan-Animate动作迁移_2037413866488995841.json、视频生成/图生视频/wan123首针重绘动作迁移_2047166439689297922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频-Wan2.2首中尾帧FMLF，首中尾三帧参考_2068809925526118401.json、视频生成/图生视频/首尾祯动感转场_1994048317403447297.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DWPreprocessor`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageFromBatch`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `ImpactConditionalBranch`
-- `Int`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PainterVRAM`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SaveImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `SetNode`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `UNETLoader`
 - `VAEDecode`
-- `VHS_LoadVideo`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy compare`
+- `WanVideoNAG`
+
+**可变部分**（部分 workflow 才有）：
+- `AILab_QwenVL` —— 1/2 个有
+- `CM_IntToFloat` —— 1/2 个有
+- `CR Seed` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `WanFirstMiddleLastFrameToVideo` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 0.97 | - | 2 | 97% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.97，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 50%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

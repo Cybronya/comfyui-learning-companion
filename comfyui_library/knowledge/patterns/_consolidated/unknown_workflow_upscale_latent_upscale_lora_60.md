@@ -1,85 +1,63 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_60
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.846167
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo]
+frequency: 5
+level: moderate
+coverage: 0.9926
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FluxGuidance, InjectLatentNoise+, KSamplerSelect, LatentUpscaleBy, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmasDenoise, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json, 视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json, 视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json, 视频生成/文生视频/LTX-2.3生成Logo展示视频_2030526628283027457.json, 视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json, 视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json]
+members: [图片生成/文生图/抖音网红脸cos敖闰_1892232669667745794.json, 图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json, 图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json, 图片生成/文生图/颜值网红美女工作流_1896063182081490945.json, 视频生成/图生视频/美女跳舞图片_1932281057691729921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_60
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json、视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json、视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json、视频生成/文生视频/LTX-2.3生成Logo展示视频_2030526628283027457.json、视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/抖音网红脸cos敖闰_1892232669667745794.json、图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json、图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json、图片生成/文生图/颜值网红美女工作流_1896063182081490945.json、视频生成/图生视频/美女跳舞图片_1932281057691729921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `InjectLatentNoise+`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LatentUpscaleBy`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `SplitSigmasDenoise`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 5/6 个有
-- `ComfyMathExpression` —— 5/6 个有
-- `LTXVAudioVAELoader` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `ResizeImageMaskNode` —— 5/6 个有
-- `VAEDecodeTiled` —— 5/6 个有
-- `Label (rgthree)` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `CR Text Replace` —— 2/6 个有
-- `PreviewAny` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageResizeKJv2` —— 1/6 个有
-- `LTX2_NAG` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `StringReplace` —— 1/6 个有
-- `UNETLoader` —— 1/6 个有
-- `VAEDecode` —— 1/6 个有
-- `VAELoader` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy clearCacheAll` —— 1/6 个有
-- `string_util_StrConcat` —— 1/6 个有
+- `CR Aspect Ratio` —— 4/5 个有
+- `ModelSamplingFlux` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `CheckpointLoaderSimple` —— 1/5 个有
+- `EmptyLatentImage` —— 1/5 个有
+- `ImageSmartSharpen+` —— 1/5 个有
+- `LatentInterpolate` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1600 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -87,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

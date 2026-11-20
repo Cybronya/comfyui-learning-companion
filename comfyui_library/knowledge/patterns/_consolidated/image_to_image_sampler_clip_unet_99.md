@@ -1,32 +1,31 @@
 ---
 name: image_to_image_sampler_clip_unet_99
 type: Image To Image
-frequency: 6
-level: moderate
-coverage: 0.929667
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: weak
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit模型，手办风格-4K直出_1961646663603568641.json, 图片生成/图生图/Qwen-Image-Edit模型，精准编辑图片文字_1957821483923992578.json, 图片生成/图生图/qwen千问图片编辑神器发布v1.0_1957726030365818881.json, 图片生成/图生图/qwen编辑线稿转效果图_1958881314973888513.json, 平台全量/qwen家具换背景_1958162771085053954.json, 视频生成/图生视频/水墨插画qwen_2037441276806701058.json]
+members: [图片生成/图生图/flux.2-三图融合-标准版-（必收藏）_2052738645555200002.json, 图片生成/图生图/flux.2-去除水印-标准版-（必收藏）_2056999199815847938.json, 图片生成/图生图/flux2_klein_2077688220808208385.json, 图片生成/图生图/klein 洗图工作流_2041123980865708033.json, 图片生成/图生图/最强Qwan中文图像洗图工作流_1954158265661833217.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_99
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit模型，手办风格-4K直出_1961646663603568641.json、图片生成/图生图/Qwen-Image-Edit模型，精准编辑图片文字_1957821483923992578.json、图片生成/图生图/qwen千问图片编辑神器发布v1.0_1957726030365818881.json、图片生成/图生图/qwen编辑线稿转效果图_1958881314973888513.json、平台全量/qwen家具换背景_1958162771085053954.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/flux.2-三图融合-标准版-（必收藏）_2052738645555200002.json、图片生成/图生图/flux.2-去除水印-标准版-（必收藏）_2056999199815847938.json、图片生成/图生图/flux2_klein_2077688220808208385.json、图片生成/图生图/klein 洗图工作流_2041123980865708033.json、图片生成/图生图/最强Qwan中文图像洗图工作流_1954158265661833217.json）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：5
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `SaveImage`
 - `UNETLoader`
@@ -35,40 +34,35 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `ModelSamplingAuraFlow` —— 5/6 个有
-- `easy imageConcat` —— 5/6 个有
-- `FluxKontextImageScale` —— 3/6 个有
-- `TextEncodeQwenImageEdit` —— 3/6 个有
-- `ImageUpscaleWithModel` —— 2/6 个有
-- `Int` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `TextEncodeQwenImageEditPlus` —— 2/6 个有
-- `UpscaleModelLoader` —— 2/6 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `ReferenceLatent` —— 3/5 个有
+- `ModelSamplingAuraFlow` —— 2/5 个有
+- `CFGNorm` —— 1/5 个有
+- `GoogleTranslator` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `Seed (rgthree)` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | 8 - 20 | 6 | 57% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 6 | 57% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | normal | - | 6 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 20 | 6 - 20 | 5 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 5 | 27% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 0.7 - 1 | 5 | 87% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 14，观测区间 8 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，6 个样本
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 normal，6 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（3/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 6 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，5 个样本，取值分散，一致性仅 27%
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 0.7 - 1，5 个样本，取值集中（一致性 87%）

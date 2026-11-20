@@ -1,81 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_651
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.87925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, GetImagesFromBatchIndexed, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageRemoveBackground+, ImageResizeKJ, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MatAnyoneVideoMatting, ModelSamplingFlux, PreviewImage, RIFE VFI, RandomNoise, SAMModelLoader (segment anything), SamplerCustomAdvanced, SaveImage, TransparentBGSession+, UNETLoader, UnetLoaderGGUF, VAEDecode, VAEDecodeTiled, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy getNode, easy setNode]
+frequency: 3
+level: moderate
+coverage: 0.928
+common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_1910346221037518849.json, 平台全量/正面转360-多视图3d_v2_1910676525640024065.json, 视频生成/图生视频/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_2046766402748555265.json, 视频生成/图生视频/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_2047192826013818882.json]
+members: [数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json, 视频生成/图生视频/Wan2.1数字人_1951180458820313090.json, 视频生成/图生视频/数字人加运镜_1951224914336526338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_651
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_1910346221037518849.json、平台全量/正面转360-多视图3d_v2_1910676525640024065.json、视频生成/图生视频/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_2046766402748555265.json、视频生成/图生视频/图片转视频360旋转视角训练lora工作流，人物五官服装保持一致性多图版文生图_2047192826013818882.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json、视频生成/图生视频/Wan2.1数字人_1951180458820313090.json、视频生成/图生视频/数字人加运镜_1951224914336526338.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 3 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `GetImagesFromBatchIndexed`
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImageRemoveBackground+`
-- `ImageResizeKJ`
-- `KSampler`
-- `KSamplerSelect`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MatAnyoneVideoMatting`
-- `ModelSamplingFlux`
-- `PreviewImage`
-- `RIFE VFI`
-- `RandomNoise`
-- `SAMModelLoader (segment anything)`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `TransparentBGSession+`
-- `UNETLoader`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VHS_LoadVideoFFmpeg`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoTeaCacheKJ`
-- `easy getNode`
-- `easy setNode`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
+- `JWInteger` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 4 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

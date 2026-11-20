@@ -1,78 +1,70 @@
 ---
 name: image_to_image_sampler_clip_unet_139
 type: Image To Image
-frequency: 4
-level: strong
-coverage: 0.91
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 3
+level: weak
+coverage: 0.905333
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合012.图生图洗图_2035264685058035713.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-006.flux-2-klein-多角度转换流_2026629969102774274.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-008.flux-2-klein-图生图洗图流_2026630101286264834.json, 图片生成/图生图/照片多角度转换_2039558607653572610.json]
+members: [图片生成/图生图/QWen-Image图生图中文渲染-ComfyUI_1953102878534791169.json, 图片生成/图生图/ZImage+LoRA图生图_1995169009526038529.json, 图片生成/图生图/Z_image_turbo图洗图_2056328304931725313.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_139
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合012.图生图洗图_2035264685058035713.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-006.flux-2-klein-多角度转换流_2026629969102774274.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-008.flux-2-klein-图生图洗图流_2026630101286264834.json、图片生成/图生图/照片多角度转换_2039558607653572610.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QWen-Image图生图中文渲染-ComfyUI_1953102878534791169.json、图片生成/图生图/ZImage+LoRA图生图_1995169009526038529.json、图片生成/图生图/Z_image_turbo图洗图_2056328304931725313.json）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：强结论
+- **样本数**：3
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `UnetLoaderGGUF` —— 3/4 个有
-- `ColorMatch` —— 2/4 个有
-- `EmptyFlux2LatentImage` —— 2/4 个有
-- `QwenMultiangleCameraNode` —— 2/4 个有
-- `ReferenceLatent` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `DownloadAndLoadFlorence2Model` —— 1/4 个有
-- `EasySizeSimpleImage` —— 1/4 个有
-- `Florence2Run` —— 1/4 个有
-- `RAMCleanup` —— 1/4 个有
-- `WujiCleaner` —— 1/4 个有
-- `图像缩放V2_孤海` —— 1/4 个有
+- `EmptySD3LatentImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `Text Concatenate` —— 2/3 个有
+- `Image Compare (mtb)` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `easy stylesSelector` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.8 | 0.6 - 1 | 4 | 75% |
+| 采样步数 | 9 | 4 - 20 | 3 | 39% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 3 | 53% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.8，观测区间 0.6 - 1，4 个样本
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 4 - 20，3 个样本，取值分散，一致性仅 39%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
+- 高发问题（2/3 个样本）：Steps较低可能导致细节不足

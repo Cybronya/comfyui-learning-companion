@@ -1,61 +1,39 @@
 ---
 name: unknown_workflow_generic_328
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.740889
-common_nodes: [1hew_TextListToString, CR Text, CR Text Replace, ExtractSubstring, GetTextFromJson, ImageFromBatch, ImageListToBatch+, List of strings [Crystools], LoadJsonFromText, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, RH_RhartVideoSparkvideo20MultimodalVideo, RunningHub Deepcleaner, SaveImage, SaveVideo, String, StringFunction|pysssss, easy convertAnything, easy promptLine, easy showAnything]
+coverage: 0.46325
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频-自由角色版_2046142791364907010.json, 视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频——自由角色版_2044773028768256001.json, 视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043164738057670657.json, 视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043539865706434561.json, 视频生成/图生视频/漫剧一键生成流（自动角色+剧本+视频）_2041820143440891906.json, 视频生成/图生视频/🦄一站式漫剧全流程 角色+剧本+视频【自由角色版】🦄 26-04-08_2041675359040577538.json, 视频生成/图生视频/🦄一站式漫剧全流程 角色+剧本+视频【自由角色版】🦄 26_2059242519535378433.json, 视频生成/文生视频/傻瓜式一键生成漫剧【全自动】_2044421706512605185.json, 视频生成/文生视频/漫剧一键生成流（自动角色+剧本+视频）_2049460328357961730.json]
+members: [视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧components版（基准0.3_8S）_1980581515803447298.json, 视频生成/图生视频/调用T8的api 全能视频V3.1 首尾帧（4-5毛_8S）_2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_328
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频-自由角色版_2046142791364907010.json、视频生成/图生视频/一站式漫剧全流程 角色+剧本+视频——自由角色版_2044773028768256001.json、视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043164738057670657.json、视频生成/图生视频/一站式漫剧全流程+角色+剧本+视频【自由角色版】_2043539865706434561.json、视频生成/图生视频/漫剧一键生成流（自动角色+剧本+视频）_2041820143440891906.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `1hew_TextListToString`
-- `CR Text`
-- `CR Text Replace`
-- `ExtractSubstring`
-- `GetTextFromJson`
-- `ImageFromBatch`
-- `ImageListToBatch+`
-- `List of strings [Crystools]`
-- `LoadJsonFromText`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RunningHub Deepcleaner`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `LoadImage`
 - `SaveVideo`
-- `String`
-- `StringFunction|pysssss`
-- `easy convertAnything`
-- `easy promptLine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoBatchImageGrid` —— 7/9 个有
-- `DapaoImageSplitNode` —— 7/9 个有
-- `DapaoMakeImageBatchNode` —— 7/9 个有
-- `LoadImage` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `Image Batch` —— 2/9 个有
-- `Text` —— 2/9 个有
-- `easy imageBatchToImageList` —— 2/9 个有
-- `easy imageSplitGrid` —— 2/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
+- `Comfly_Googel_Veo3` —— 5/8 个有
+- `Comfly_vidu_img2video` —— 2/8 个有
+- `Comfly_vidu_start-end2video` —— 1/8 个有
+- `HfSaveImage` —— 1/8 个有
 
 ## 典型参数
 

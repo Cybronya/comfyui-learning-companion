@@ -1,74 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_696
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.6275
-common_nodes: [Anything Everywhere3, CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, Int, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, PixelPerfectResolution, Seed Everywhere, SetNode, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.733333
+common_nodes: [BasicScheduler, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [平台全量/动作迁移 Motion transfer WAN2.2 Animate_1975181614286286850.json, 平台全量/电商产品展示 参考视频动作表情 wan2.2 animate_2035232688927416322.json, 平台全量/视频服装替换 Video costume replacement WAN2.2 Animate_1980300071138975746.json, 平台全量/视频服装替换 Video costume replacement WAN2.2 Animate_2032833460196352001.json]
+members: [视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json, 视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json, 视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_696
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/动作迁移 Motion transfer WAN2.2 Animate_1975181614286286850.json、平台全量/电商产品展示 参考视频动作表情 wan2.2 animate_2035232688927416322.json、平台全量/视频服装替换 Video costume replacement WAN2.2 Animate_1980300071138975746.json、平台全量/视频服装替换 Video costume replacement WAN2.2 Animate_2032833460196352001.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json、视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json、视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `GetLatentSizeAndCount`
 - `GetNode`
-- `ImageCropByMaskAndResize`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PixelPerfectResolution`
-- `Seed Everywhere`
+- `LoraLoaderBypassModelOnly`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `SelfLiftH3Sampler`
 - `SetNode`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `BlockifyMask` —— 2/4 个有
-- `DrawMaskOnImage` —— 2/4 个有
-- `DuckHideNode` —— 2/4 个有
-- `GrowMaskWithBlur` —— 2/4 个有
-- `LayerMask: SegformerClothesPipelineLoader` —— 2/4 个有
-- `LayerMask: SegformerUltraV2` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `TT_img_enc_v2` —— 2/4 个有
-- `easy anythingIndexSwitch` —— 2/4 个有
-- `easy imageRemBg` —— 2/4 个有
-- `Anything Everywhere` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `WanVideoEncode` —— 1/4 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/4 个有
-- `WanVideoUni3C_embeds` —— 1/4 个有
+- `GH_AudioVideoMerger` —— 1/3 个有
+- `GH_ImageVideoComparer` —— 1/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
+- `RH_DLSS5Enhance` —— 1/3 个有
+- `VOSR2ModelLoader` —— 1/3 个有
+- `VOSR2Upscale` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

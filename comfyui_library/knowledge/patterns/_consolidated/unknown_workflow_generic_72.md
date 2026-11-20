@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_72
 type: Unknown Workflow
-frequency: 20
+frequency: 17
 level: moderate
-coverage: 0.9452
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.980882
+common_nodes: [LoadImage, RunningHub DreamO, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json, 音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089775704459276290.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089967983820099585.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(日文版)_2089788413020037121.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(英文版)_2089775716555640834.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090016341951598594.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090064407945629698.json, 音频生成/音频生成/IndexTTS 2.5语音克隆2608_2094635934229815298.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2094792849782042625.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2098246921596002306.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2087829131324116993.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088205542249558017.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088241722756259842.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2094792952475377666.json, 音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json, 音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json, 音频生成/音频生成/啊癫 IndexTTS2.5语音克隆音频克隆_2092610497064558594.json, 音频生成/音频生成/让孩子随时都能听到你讲故事（AI语音克隆2.5）_2090440396223639553.json]
+members: ["图片生成/图生图/DreamO + IP,ID,Style_1925663555176337409.json", 图片生成/图生图/DreamO IP风格一致主体更换实验版V3(需要抽卡！不炸显存版)_1925886376980467714.json, 图片生成/图生图/DreamO 双图融合_1926233838349938689.json, 图片生成/图生图/DreamO人物一致性_1926144702796500994.json, 图片生成/图生图/DreamO人物一致性_1926454640617922562.json, 图片生成/图生图/DreamO人物一致性动作编辑背景融合工作流V2（不炸显存）_1925928354346651649.json, 图片生成/图生图/DreamO单人换脸_1926471520141611010.json, 图片生成/图生图/DreamO单人换脸换装_1926491012795932673.json, 图片生成/图生图/DreamO双人融合一致性工作流V2（不炸显存）_1925968531849187329.json, 图片生成/图生图/DreamO多人换脸_1926473823258877954.json, 图片生成/图生图/DreamO多人换装_1926486318728253441.json, 图片生成/图生图/DreamO多图一致性_1926452410628345857.json, 图片生成/图生图/DreamO换装_1926474716523995137.json, 图片生成/图生图/DreamO毕业礼盒原服装版_1928260943740813313.json, 图片生成/图生图/DreamO毕业礼盒换装版_1928277135717187585.json, 图片生成/图生图/DreamO风格人物一致性_1926461837213339650.json, 图片生成/图生图/DreamO风格多人物一致性_1926466212845490178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_72
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json、音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json、音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json、音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089775704459276290.json、音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089967983820099585.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/DreamO + IP,ID,Style_1925663555176337409.json、图片生成/图生图/DreamO IP风格一致主体更换实验版V3(需要抽卡！不炸显存版)_1925886376980467714.json、图片生成/图生图/DreamO 双图融合_1926233838349938689.json、图片生成/图生图/DreamO人物一致性_1926144702796500994.json、图片生成/图生图/DreamO人物一致性_1926454640617922562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+全部 17 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub DreamO`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_Pronunciation` —— 10/20 个有
-- `孤海注释` —— 4/20 个有
-- `T8_IndexTTS25_SamplingConfig` —— 3/20 个有
+- `ImageConcanate` —— 16/17 个有
+- `easy cleanGpuUsed` —— 16/17 个有
+- `PDIMAGE_LongerSize` —— 15/17 个有
+- `ImageResize+` —— 12/17 个有
+- `Primitive string [Crystools]` —— 12/17 个有
 
 ## 典型参数
 

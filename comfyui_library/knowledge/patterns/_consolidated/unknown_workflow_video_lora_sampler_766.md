@@ -1,64 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_766
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.784
-common_nodes: [DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.968667
+common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/翻跟头踢再过头万相图生视60---------_1942408642337386497.json, 视频生成/图生视频/跳连踢头万相图生视68_1942291396009332737.json, 视频生成/图生视频/踢飞001万相图生视60_1942258694929453057.json, 视频生成/文生视频/wan2.1 美女模特环绕360镜头_1948183432305225730.json]
+members: [视频生成/图生视频/音乐数字人（单人唱歌） wan2.2 multiTalk_1957437861178044418.json, 视频生成/文生视频/Wan2.2 Multitalk-超好用图生视频_1953496222059384834.json, 视频生成/文生视频/Wan2.2+Multitalk 文生视频_1952158294372765697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_766
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/翻跟头踢再过头万相图生视60---------_1942408642337386497.json、视频生成/图生视频/跳连踢头万相图生视68_1942291396009332737.json、视频生成/图生视频/踢飞001万相图生视60_1942258694929453057.json、视频生成/文生视频/wan2.1 美女模特环绕360镜头_1948183432305225730.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/音乐数字人（单人唱歌） wan2.2 multiTalk_1957437861178044418.json、视频生成/文生视频/Wan2.2 Multitalk-超好用图生视频_1953496222059384834.json、视频生成/文生视频/Wan2.2+Multitalk 文生视频_1952158294372765697.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `Fast Groups Bypasser (rgthree)`
-- `GIMMVFI_interpolate`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 3/4 个有
-- `LatentSyncNode` —— 3/4 个有
-- `LoadAudio` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VideoLengthAdjuster` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `ImageScaleToMegapixels` —— 2/4 个有
-- `ImageSmartSharpen+` —— 2/4 个有
-- `UpscaleModelLoader` —— 2/4 个有
-- `GetNode` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `InspyrenetRembg` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SetNode` —— 1/4 个有
+- `Float to Int` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_GetAudioDuration` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `WanVideoImageToVideoEncode` —— 2/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `WanVideoClipVisionEncode` —— 1/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 

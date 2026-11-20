@@ -1,59 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_269
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.83
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8412
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json, 图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json, 图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json, 图片生成/文生图/Krea2双采美感超强_文生图_2071509119319756801.json, 图片生成/文生图/Krea2文生图（双模型双采美感强化）_2071588892037443585.json, 图片生成/文生图/Z-Image 双重采样工作流_2043154035779313665.json]
+members: [图片生成/图生图/多多安全区banner_2079455432715890690.json, 图片生成/图生图/局部重绘-Flux2-klein-模板_2050108664723320834.json, 图片生成/图生图/扩图-Flux2-klein-模板_2050109267771961345.json, 图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json, 图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_269
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json、图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json、图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json、图片生成/文生图/Krea2双采美感超强_文生图_2071509119319756801.json、图片生成/文生图/Krea2文生图（双模型双采美感强化）_2071588892037443585.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/多多安全区banner_2079455432715890690.json、图片生成/图生图/局部重绘-Flux2-klein-模板_2050108664723320834.json、图片生成/图生图/扩图-Flux2-klein-模板_2050109267771961345.json、图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json、图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `GetNode` —— 3/6 个有
-- `Int` —— 3/6 个有
-- `ModelSamplingAuraFlow` —— 3/6 个有
-- `SetNode` —— 3/6 个有
-- `TTResolutionSelector` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `Seed (rgthree)` —— 1/6 个有
+- `ColorMatch` —— 4/5 个有
+- `DrawMaskOnImage` —— 4/5 个有
+- `ImagePadForOutpaint` —— 4/5 个有
+- `CR Text` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `easy seed` —— 2/5 个有
+- `JjkText` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `图像缩放V2_孤海` —— 1/5 个有
+- `忽略多组孤海` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1080 | 1024 - 1280 | 6 | 92% |
-| 高度 | 1800 | 1536 - 1920 | 6 | 90% |
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 6.5 | 3 - 15 | 6 | 34% |
-| 采样算法 | 1 | 1 - 2 | 6 | 65% |
-| 调度器 | euler | - | 6 | 83% |
-| 重绘幅度 | simple | - | 6 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,11 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1024 - 1280，6 个样本，取值集中（一致性 92%）
-- 高度 中位数 1800，观测区间 1536 - 1920，6 个样本，取值集中（一致性 90%）
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6.5，观测区间 3 - 15，6 个样本，取值分散，一致性仅 34%
-- 采样算法 中位数 1，观测区间 1 - 2，6 个样本
-- 调度器 最常用 euler，6 个样本，一致性 83%
-- 重绘幅度 最常用 simple，6 个样本，一致性 67%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

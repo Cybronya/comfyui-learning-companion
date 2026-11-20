@@ -1,65 +1,54 @@
 ---
 name: unknown_workflow_lora_sampler_clip_69
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.92925
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, ImageConcanate, ImpactInt, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.695429
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/最美证件照-Kontext 自动矫正_2068967063636500481.json, 图片生成/图生图/证件排版+美颜-Kontext 自动矫正  证件照-多种背景_服饰选择 证件照生成_2067814898117210113.json, 图片生成/图生图/证件照一键生成，排版+美颜-Kontext（自动矫正）_2023654966904229890.json, 图片生成/图生图/证件照一键生成，排版+美颜-Kontext（自动矫正）_2063496200963321857.json, 图片生成/图生图/🥎Kontext图案提取测试🤹_1946740951667601410.json, 图片生成/图生图/🥎【大炮工具】Kontext 证件照一键排版【微美颜】🤹_1947908863526875138.json, 平台全量/Kontext 证件照一键排版【微美颜】🤹_1950008646110461954.json, 平台全量/证件排版+美颜-Kontext（自动矫正）_1978027455183212545.json]
+members: [图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json, 视频生成/图生视频/Bernini 三图参考生视频_2082419589669015553.json, 视频生成/图生视频/Bernini 双图参考生视频_2082414642227404801.json, 视频生成/图生视频/Bernini 图生视频_2080281287134367745.json, 视频生成/图生视频/Bernini_宝藏模型_参考生视频_2066854228743778305.json, 视频生成/图生视频/Bernini_宝藏模型_视频编辑+参考图_2066854283353612289.json, 视频生成/文生视频/Bernini 文生视频_2082360670233911297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_69
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/最美证件照-Kontext 自动矫正_2068967063636500481.json、图片生成/图生图/证件排版+美颜-Kontext 自动矫正  证件照-多种背景_服饰选择 证件照生成_2067814898117210113.json、图片生成/图生图/证件照一键生成，排版+美颜-Kontext（自动矫正）_2023654966904229890.json、图片生成/图生图/证件照一键生成，排版+美颜-Kontext（自动矫正）_2063496200963321857.json、图片生成/图生图/🥎Kontext图案提取测试🤹_1946740951667601410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json、视频生成/图生视频/Bernini 三图参考生视频_2082419589669015553.json、视频生成/图生视频/Bernini 双图参考生视频_2082414642227404801.json、视频生成/图生视频/Bernini 图生视频_2080281287134367745.json、视频生成/图生视频/Bernini_宝藏模型_参考生视频_2066854228743778305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
+全部 7 个 workflow 都包含：
 - `BasicScheduler`
+- `BerniniConditioning`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `ImageConcanate`
-- `ImpactInt`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `StringFunction|pysssss`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `SamplerCustom`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Border` —— 7/8 个有
-- `ImageConcanateOfUtils` —— 7/8 个有
-- `ImageFromBatch` —— 7/8 个有
-- `ImageListToImageBatch` —— 7/8 个有
-- `ReActorImageDublicator` —— 7/8 个有
-- `Seed (rgthree)` —— 7/8 个有
-- `SimpleMath+` —— 7/8 个有
-- `String` —— 7/8 个有
-- `easy anythingIndexSwitch` —— 7/8 个有
-- `PreviewImage` —— 6/8 个有
-- `CR Text` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `SimpleComparison+` —— 6/7 个有
+- `VHS_VideoCombine` —— 6/7 个有
+- `easy ifElse` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `PrimitiveBoolean` —— 3/7 个有
+- `PrimitiveFloat` —— 3/7 个有
+- `BatchImagesNode` —— 2/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

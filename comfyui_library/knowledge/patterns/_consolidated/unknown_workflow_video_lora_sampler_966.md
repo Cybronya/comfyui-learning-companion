@@ -3,93 +3,69 @@ name: unknown_workflow_video_lora_sampler_966
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6475
-common_nodes: [AIO_Preprocessor, AddLabel, ColorMatch, Compare, DWPreprocessor, EmptyImage, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBlend, ImageConcanate, ImageConcatMulti, ImageResizeKJ, ImpactStringSelector, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], RH_Captioner, RH_Translator, RandomInt, SaveImage, SetNode, ShowText|pysssss, String Replace (mtb), Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy ifElse, easy showAnything]
+coverage: 0.883
+common_nodes: [AILab_QwenVL_Advanced, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, HunyuanVideoFoley, ImageBatch, ImageResizeKJv2, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuideMulti, LTXVChunkFeedForward, LTXVConditioning, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VRAMReserver, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [平台全量/23种风VACE万相视频转绘_转绘神器(Kontext）_1941413180801445890.json, 视频生成/图生视频/23种风VACE万相视频转绘_支持随机抽卡和用户自定义风格全能转绘神器(Kontext）_1929256563398316034.json]
+members: [视频生成/图生视频/动作生视频_2081421017964171266.json, 视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_966
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/23种风VACE万相视频转绘_转绘神器(Kontext）_1941413180801445890.json、视频生成/图生视频/23种风VACE万相视频转绘_支持随机抽卡和用户自定义风格全能转绘神器(Kontext）_1929256563398316034.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动作生视频_2081421017964171266.json、视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `ColorMatch`
-- `Compare`
-- `DWPreprocessor`
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
+- `AILab_QwenVL_Advanced`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBlend`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `ImpactStringSelector`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RH_Captioner`
-- `RH_Translator`
-- `RandomInt`
-- `SaveImage`
-- `SetNode`
+- `HunyuanVideoFoley`
+- `ImageBatch`
+- `ImageResizeKJv2`
+- `JjkText`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAddGuideMulti`
+- `LTXVChunkFeedForward`
+- `LTXVConditioning`
+- `LTXVPreprocess`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `ShowText|pysssss`
-- `String Replace (mtb)`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `StringFunction|pysssss`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy ifElse`
-- `easy showAnything`
+- `VRAMReserver`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `ImagePadKJ` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RH_ComfyFluxKontext` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `LTXVAddGuide` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

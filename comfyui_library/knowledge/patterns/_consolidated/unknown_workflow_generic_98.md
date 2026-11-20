@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_98
 type: Unknown Workflow
-frequency: 17
+frequency: 15
 level: moderate
-coverage: 0.640176
-common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo, easy showAnything]
+coverage: 0.810133
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/RH 全能视频S Image to Video_1976908809417494529.json, 视频生成/图生视频/RH 全能视频S 图生视频_1976111925840973826.json, 视频生成/图生视频/全能视频S 15s竖屏或者横屏高清图生视频_1975795249727541250.json, 视频生成/图生视频/全能视频S 图生视频_1974244784342700033.json, 视频生成/图生视频/全能视频S-Plus图生视频竖屏横屏- 10s_15s直接生成_1985726193741770753.json, 视频生成/图生视频/全能视频S-图生视频-RH直接使用版！！_1976486505747226626.json, "视频生成/图生视频/全能视频S-图生视频-提示词理解很好,速度快_1976563649210880001.json", 视频生成/图生视频/全能视频S丨图生视频1080P！！！！_1980452258129338369.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版_1979393173581631490.json, 视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json, 视频生成/图生视频/全能视频S产品广告视频生成_1987484061469970434.json, 视频生成/图生视频/全能视频S图生带货视频（横屏）_1977991817520185346.json, 视频生成/图生视频/全能视频S图生带货视频（横屏）！！_1980184444998946818.json, 视频生成/图生视频/全能视频S图生带货视频（竖屏）_1977998627845066754.json, 视频生成/文生视频/全能视频S 15s高清横竖屏高清文生视频，图生视频大集合_1975790888603488258.json, 视频生成/文生视频/全能视频S文_图自动生成创意广告视频10-15秒（横屏、竖屏可选）_1989503517457084418.json]
+members: [图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json, 图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json, 图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json, 图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json, 图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json, 图片生成/图生图/Flux Kontext 明星撕拉片风格_1930442669259132929.json, 图片生成/图生图/Flux Kontext 玩偶换装+场景_1930205044313067521.json, 图片生成/图生图/Flux Kontext 简易一键3D皮克斯_1931318230567026690.json, 图片生成/图生图/Flux Kontext 简易动漫转真人_1931946293634248706.json, 图片生成/图生图/Flux Kontext 美甲设计灵感_1930517989458874370.json, 图片生成/图生图/Flux Kontext 胶片滤镜风格_1930219808170872834.json, 图片生成/图生图/Flux图像编辑模型Kontext API版_1928517504623128577.json, 图片生成/图生图/Kontext产品换背景_2005920838870331394.json, 图片生成/图生图/Kontext多图迁移融合工作流_1932849669003415554.json, 图片生成/图生图/kontext 产品与背景融合丨双图模式 全自动作图_1944656011766452225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_98
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/RH 全能视频S Image to Video_1976908809417494529.json、视频生成/图生视频/RH 全能视频S 图生视频_1976111925840973826.json、视频生成/图生视频/全能视频S 15s竖屏或者横屏高清图生视频_1975795249727541250.json、视频生成/图生视频/全能视频S 图生视频_1974244784342700033.json、视频生成/图生视频/全能视频S-Plus图生视频竖屏横屏- 10s_15s直接生成_1985726193741770753.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json、图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json、图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json、图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json、图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V`
-- `RH_Translator`
-- `SaveVideo`
-- `easy showAnything`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 6/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
-- `RH_Sora2_T2V` —— 2/17 个有
-- `CR Text` —— 1/17 个有
-- `Label (rgthree)` —— 1/17 个有
-- `PDImageResizeV3` —— 1/17 个有
+- `RH_Translator` —— 14/15 个有
+- `ConstrainImage|pysssss` —— 12/15 个有
+- `PreviewImage` —— 6/15 个有
+- `ImageConcanate` —— 2/15 个有
+- `ACE_TextGoogleTranslate` —— 1/15 个有
 
 ## 典型参数
 

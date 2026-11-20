@@ -3,66 +3,54 @@ name: unknown_workflow_inpaint_lora_sampler_74
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8835
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, INPAINT_InpaintWithModel, INPAINT_LoadInpaintModel, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9335
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), InpaintModelConditioning, KSampler, LoadImage, LoraLoader, SaveImage, UnetLoaderGGUF, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/5.tonnie-flux-fill+局部重绘，万物消除_1992560063481008130.json, 平台全量/flux万物移除_1930520252453654529.json]
+members: [图片生成/图生图/身材局部调节_1924737292291010562.json, 图片生成/图生图/身材局部调节用法补充_1963868766877863938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_74
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/5.tonnie-flux-fill+局部重绘，万物消除_1992560063481008130.json、平台全量/flux万物移除_1930520252453654529.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/身材局部调节_1924737292291010562.json、图片生成/图生图/身材局部调节用法补充_1963868766877863938.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `INPAINT_InpaintWithModel`
-- `INPAINT_LoadInpaintModel`
+- `Image Comparer (rgthree)`
 - `InpaintModelConditioning`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `Mask Fill Holes`
+- `LoraLoader`
 - `SaveImage`
-- `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoader|pysssss` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `LoraLoader|pysssss` —— 1/2 个有
-- `MaskPreview+` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
-- `easy getNode` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
 | 采样步数 | 20 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 50% |
-| 重绘幅度 | 0.94 | - | 2 | 94% |
+| 调度器 | normal | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -73,6 +61,8 @@ source: knowledge_consolidation
 - 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.94，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
+- 调度器 最常用 normal，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

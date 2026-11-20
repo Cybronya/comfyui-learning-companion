@@ -1,71 +1,57 @@
 ---
 name: text_to_image_face_detailer_sampler_clip_2
 type: Text To Image
-frequency: 4
-level: strong
-coverage: 0.8905
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, FaceDetailer, Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, KSampler, LoadImage, RH_Translator, SAMLoader, SaveImage, ShowText|pysssss, Text Concatenate, UltralyticsDetectorProvider, VAEDecode, easy positive]
+frequency: 2
+level: weak
+coverage: 0.835
+common_nodes: [Anything Everywhere3, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, FaceDetailer, KSampler, Prompts Everywhere, SAMLoader, SaveImage, UltralyticsDetectorProvider, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/动漫角色生成_2080880897351573505.json, 图片生成/图生图/动漫角色生成_2080882019592134657.json, 图片生成/文生图/QIANSUI+动漫游戏角色生成+反推提示词_1984641878358376449.json, 平台全量/QIANSUI+动漫游戏角色生成+反推提示词_1984531533405044738.json]
+members: [图片生成/文生图/二次采样文生图_1908735322887495681.json, 图片生成/文生图/面部细化基础款_1899743176406478849.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_face_detailer_sampler_clip_2
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/动漫角色生成_2080880897351573505.json、图片生成/图生图/动漫角色生成_2080882019592134657.json、图片生成/文生图/QIANSUI+动漫游戏角色生成+反推提示词_1984641878358376449.json、平台全量/QIANSUI+动漫游戏角色生成+反推提示词_1984531533405044738.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/二次采样文生图_1908735322887495681.json、图片生成/文生图/面部细化基础款_1899743176406478849.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `FaceDetailer`
-- `Joy_caption_two_advanced`
-- `Joy_caption_two_load`
-- `Joy_extra_options`
 - `KSampler`
-- `LoadImage`
-- `RH_Translator`
+- `Prompts Everywhere`
 - `SAMLoader`
 - `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
 - `UltralyticsDetectorProvider`
 - `VAEDecode`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `LoraLoader` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SeedVR2LoadDiTModel` —— 2/4 个有
-- `SeedVR2LoadVAEModel` —— 2/4 个有
-- `SeedVR2VideoUpscaler` —— 2/4 个有
-- `CR Multiline Text` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `LatentUpscaleBy` —— 1/2 个有
+- `SDXLPromptStyler` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1728 | 1536 - 1920 | 4 | 89% |
-| LoRA 模型强度 | 0.5 | 0.2 - 0.5 | 3 | 65% |
-| LoRA 文本强度 | 1 | 0.7 - 1 | 3 | 84% |
-| 采样步数 | 40 | 40 - 40 | 4 | 100% |
-| Prompt 约束强度(CFG) | 7 | 7 - 8 | 4 | 94% |
-| 采样算法 | euler_ancestral | - | 4 | 100% |
-| 调度器 | sgm_uniform | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 17 | - | 2 | 82% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 2 | 50% |
+| 调度器 | normal | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 744 | - | 2 | 97% |
+| 高度 | 1152 | - | 2 | 89% |
 
 ## 常见问题
 
@@ -73,12 +59,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1728，观测区间 1536 - 1920，4 个样本，取值集中（一致性 89%）
-- LoRA 模型强度 中位数 0.5，观测区间 0.2 - 0.5，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.7 - 1，3 个样本，取值集中（一致性 84%）
-- 采样步数 中位数 40，观测区间 40 - 40，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 8，4 个样本，取值集中（一致性 94%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 17，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，2 个样本，一致性 50%
+- 调度器 最常用 normal，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 744，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
+- 高度 中位数 1152，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

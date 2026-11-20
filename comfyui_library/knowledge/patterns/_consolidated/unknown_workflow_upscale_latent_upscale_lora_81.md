@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_81
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.833667
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.8345
+common_nodes: [BlockifyMask, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, FaceSegment, GetImageRangeFromBatch, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXVAddLatentGuide, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocessMasks, LTXVSeparateAVLatent, LTXVSetVideoLatentNoiseMasks, LatentUpscaleModelLoader, LoadAudio, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeMask, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VAEEncode, VHS_LoadVideoFFmpeg, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/四只兔子_H3_高动态双采放大专属_2096882401648668673.json, 视频生成/文生视频/10Eros Beta5 + FL2VA_Ref2VA小脸去油二采精修流_2101605881900261377.json, 视频生成/文生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2095962479263309826.json]
+members: [视频生成/图生视频/LTX2.3 V2V 视频对口型_2073317542965366785.json, 音频生成/音频生成/LTX2.3 V2V 视频对口型_2039622711588167681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_81
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/四只兔子_H3_高动态双采放大专属_2096882401648668673.json、视频生成/文生视频/10Eros Beta5 + FL2VA_Ref2VA小脸去油二采精修流_2101605881900261377.json、视频生成/文生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2095962479263309826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 V2V 视频对口型_2073317542965366785.json、音频生成/音频生成/LTX2.3 V2V 视频对口型_2039622711588167681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `BlockifyMask`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
 - `CreateVideo`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
+- `FaceSegment`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXVAddLatentGuide`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVAudioVideoMask`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocessMasks`
+- `LTXVSeparateAVLatent`
+- `LTXVSetVideoLatentNoiseMasks`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeMask`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `UNETLoader`
-- `VAELoader`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `ConcatTextOfUtils` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `SolAttnMiniMax` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `Video Slice` —— 1/3 个有
-- `easy loraStack` —— 1/3 个有
-- `easy loraStackApply` —— 1/3 个有
+- `DualCLIPLoaderGGUF` —— 1/2 个有
+- `LTXAVTextEncoderLoader` —— 1/2 个有
 
 ## 典型参数
 
@@ -73,4 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

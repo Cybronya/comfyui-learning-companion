@@ -1,58 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_910
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.454667
-common_nodes: [GetNode, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.5585
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json, 视频生成/文生视频/03-14-01-WAN2.1-视频风格转换-ditto_1989939354082660353.json, 视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json]
+members: [视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json, 视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_910
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json、视频生成/文生视频/03-14-01-WAN2.1-视频风格转换-ditto_1989939354082660353.json、视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json、视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `LoadWanVideoT5TextEncoder`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `WanVideoSLG` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `StringConstantMultiline` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `DrawViTPose` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PoseAndFaceDetection` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
+- `WanVideoUni3C_embeds` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -64,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

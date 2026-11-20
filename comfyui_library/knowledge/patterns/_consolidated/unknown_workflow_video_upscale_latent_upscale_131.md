@@ -1,67 +1,76 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_131
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.412
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, UniBlockSwap, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, easy float, easy ifElse, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 2
+level: weak
+coverage: 0.9295
+common_nodes: [BasicGuider, BasicScheduler, BatchImagesNode, CLIPLoader, CR String To Number, ComfyMathExpression, GuHaiAutoImageSplit, ImageBatchMulti, ImageFromBatch+, ImageResizeKJv2, Int, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ExtendCanvasV2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, SplitSigmas, StringConcatenate, StringSubstring, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mathInt, easy showAnything, easy sleep]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax h3多图参考2K高清工作流_2099029207962701826.json, 视频生成/图生视频/minimax_h3多图参考2K高清工作流_2099786197458575361.json, 视频生成/图生视频/minimax_h3多图参考2K高清工作流_2100042314185003010.json]
+members: [图片生成/图生图/comfyui 工作流_2109468418498981890.json, 视频生成/图生视频/comfyui 工作流_2114318472292429826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_131
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax h3多图参考2K高清工作流_2099029207962701826.json、视频生成/图生视频/minimax_h3多图参考2K高清工作流_2099786197458575361.json、视频生成/图生视频/minimax_h3多图参考2K高清工作流_2100042314185003010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/comfyui 工作流_2109468418498981890.json、视频生成/图生视频/comfyui 工作流_2114318472292429826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
+- `CR String To Number`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `GuHaiAutoImageSplit`
+- `ImageBatchMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
 - `LTXVSeparateAVLatent`
+- `LayerUtility: ExtendCanvasV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `ManualSigmas`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3SigmaShift`
 - `MinimaxH3LatentUpscaler3D`
 - `ModelAttentionBackend`
-- `PrimitiveBoolean`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SimpleMath+`
 - `SplitSigmas`
+- `StringConcatenate`
+- `StringSubstring`
+- `Text Load Line From File`
+- `Text Multiline`
 - `UNETLoader`
-- `UniBlockSwap`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadAudioUpload`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy float`
-- `easy ifElse`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy mathInt`
 - `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy sleep`
 
 ## 典型参数
 
@@ -73,4 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

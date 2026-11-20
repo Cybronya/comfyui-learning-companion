@@ -1,61 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_619
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9414
-common_nodes: [GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.66125
+common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-KJ版图生视频-首尾帧（强烈推荐）_1953456123129024514.json, 视频生成/图生视频/Wan2.2-KJ版本图生视频_1950370270352687105.json, 视频生成/图生视频/Wan2.2-KJ版本图生视频_1952541764970328066.json, 视频生成/图生视频/Wan2.2图生视频-植物生长蔓延-kijai版工作流_1959544112867389442.json, 视频生成/图生视频/wan2.2图生视频首尾帧（KJ版）_1955148796940488705.json]
+members: [视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json, 视频生成/文生视频/lynx标准工作流_1975939269380452353.json, 视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json, 视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_619
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-KJ版图生视频-首尾帧（强烈推荐）_1953456123129024514.json、视频生成/图生视频/Wan2.2-KJ版本图生视频_1950370270352687105.json、视频生成/图生视频/Wan2.2-KJ版本图生视频_1952541764970328066.json、视频生成/图生视频/Wan2.2图生视频-植物生长蔓延-kijai版工作流_1959544112867389442.json、视频生成/图生视频/wan2.2图生视频首尾帧（KJ版）_1955148796940488705.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json、视频生成/文生视频/lynx标准工作流_1975939269380452353.json、视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json、视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 4/5 个有
-- `Int` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `WanVideoSetRadialAttention` —— 3/5 个有
-- `Seed` —— 2/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
-- `QwenLoader` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `WanVideoPromptExtender` —— 1/5 个有
-- `easy promptReplace` —— 1/5 个有
-- `ttN int` —— 1/5 个有
-- `ttN text` —— 1/5 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RMBG` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

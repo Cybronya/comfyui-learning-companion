@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_163
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.974692
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.723417
+common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json, 图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json, 图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json, 图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json, 图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json, 图片生成/文生图/-全能图片V1-pro_1991891403967975426.json, 图片生成/文生图/0201发布版：全能图片Pro_2020093603560820737.json, 图片生成/文生图/10合一超级全能图片香焦 bnana Pro_2019427181721554946.json, 图片生成/文生图/2029813681218916353.json, 图片生成/文生图/2029824177317875713.json, 图片生成/文生图/4k直出标注式服装款式图_2020845106500210689.json, 平台全量/4k批量生成直出模特换装+多角度一致性_2007779241630375937.json, 数字人/数字人/nano 全能图片V1n 2 图参考_1996431889017749506.json]
+members: [音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json, 音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2038824621578919937.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2043543938941853698.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2075456272979283970.json, 音频生成/音频生成/FishAudio_2060290526255083522.json, 音频生成/音频生成/【3月】FishAudio S2TTS单人音色克隆_2033527407566659586.json, 音频生成/音频生成/单人语音克隆-83种语言-FishAudio S2 TTS（含特殊音效）吊打闭源_2033180836341747713.json, 音频生成/音频生成/带强调语气音频生成 FishAudio S2 TTS语气标签自动插入_2036968089769746434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_163
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json、图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json、图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json、图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json、图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json、音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `FishS2VoiceCloneTTS`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 3/13 个有
-- `RMBG` —— 1/13 个有
+- `CR Prompt Text` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `SaveAudioMP3` —— 10/12 个有
+- `RH_LLMAPI_Pro_Node` —— 8/12 个有
+- `SaveAudio` —— 2/12 个有
+- `easy clearCacheAll` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,74 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_vae_176
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.635333
-common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, GetImageSizeAndCount, GrowMaskWithBlur, ImageCompositeMasked, ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskToImage, Primitive integer [Crystools], SolidMask, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy clearCacheAll, easy imageSize, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.942
+common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, JWInteger, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, PrimitiveString, RHHiddenNodes, SeedVR2BlockSwap, SeedVR2GGUF, ShowText|pysssss, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/MiniMax-Remover去除视频移动水印_1935890656063909890.json, 平台全量/视频一键去水印【AI小王子】_2076839296698507265.json, 平台全量/视频移动水印擦除_MiniMax-Remover多套方法全集_1935357461597716482.json]
+members: [图片生成/反推提示词/复刻视频之文生视频反推万相wan2.2+MiniCPM4.5V+专属提示词_1962056229839421442.json, 视频生成/图生视频/复刻视频之图生视频反推万相wan2.2+MiniCPM4.5V+Stand-in+动作迁移+专属扩词_1962159024101900289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_176
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/MiniMax-Remover去除视频移动水印_1935890656063909890.json、平台全量/视频一键去水印【AI小王子】_2076839296698507265.json、平台全量/视频移动水印擦除_MiniMax-Remover多套方法全集_1935357461597716482.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/复刻视频之文生视频反推万相wan2.2+MiniCPM4.5V+专属提示词_1962056229839421442.json、视频生成/图生视频/复刻视频之图生视频反推万相wan2.2+MiniCPM4.5V+Stand-in+动作迁移+专属扩词_1962159024101900289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 2 个 workflow 都包含：
+- `CR Text`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `Primitive integer [Crystools]`
-- `SolidMask`
-- `Text Multiline`
+- `PrimitiveString`
+- `RHHiddenNodes`
+- `SeedVR2BlockSwap`
+- `SeedVR2GGUF`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoMiniMaxRemoverEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy clearCacheAll`
-- `easy imageSize`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `BBoxesToSAM2` —— 1/3 个有
-- `DownloadAndLoadQwenModel` —— 1/3 个有
-- `DownloadAndLoadSAM2Model` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `ImageBatchToList+` —— 1/3 个有
-- `LayerMask: SAM2Ultra` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `PointsEditor` —— 1/3 个有
-- `PreviewBridge` —— 1/3 个有
-- `QwenVLDetection` —— 1/3 个有
-- `Sam2Segmentation` —— 1/3 个有
-- `VHS_DuplicateMasks` —— 1/3 个有
+- `ApplyFaceProcessor` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `FaceProcessorLoader` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `Primitive integer [Crystools]` —— 1/2 个有
+- `WanVideoAddStandInLatent` —— 1/2 个有
+- `WanVideoEasyCache` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoVACEEncode` —— 1/2 个有
 
 ## 典型参数
 
@@ -80,4 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

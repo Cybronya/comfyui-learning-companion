@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_361
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.95175
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.758
+common_nodes: [Anything Everywhere, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ImageCASharpening+, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/文生图/Kontext 多图融合_1952011457573629953.json, 平台全量/CG迷-kontext手动设置宽高换装工作流_1938594591647916033.json, 平台全量/Kontext 单图-万能改图去水印改风格抠图万能集合提示词改即可_1954738880698302465.json, 平台全量/Kontext 单图转换正交等距视图_1946109217210068994.json]
+members: [图片生成/图生图/【字体风格模仿】Qwen图生图-8步加速（持续加更）_1954926788238458881.json, 图片生成/文生图/【即梦平替】Qwen-image文生图（基础流）_1953815039516004354.json, 图片生成/文生图/【超全字体设计】Qwen文生图-8步加速（持续加更）_1954331468988334082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_361
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Kontext 多图融合_1952011457573629953.json、平台全量/CG迷-kontext手动设置宽高换装工作流_1938594591647916033.json、平台全量/Kontext 单图-万能改图去水印改风格抠图万能集合提示词改即可_1954738880698302465.json、平台全量/Kontext 单图转换正交等距视图_1946109217210068994.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【字体风格模仿】Qwen图生图-8步加速（持续加更）_1954926788238458881.json、图片生成/文生图/【即梦平替】Qwen-image文生图（基础流）_1953815039516004354.json、图片生成/文生图/【超全字体设计】Qwen文生图-8步加速（持续加更）_1954331468988334082.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
 - `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `CR Text`
+- `ImageCASharpening+`
 - `KSamplerSelect`
-- `LoadImage`
-- `ModelSamplingFlux`
+- `ModelSamplingAuraFlow`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 3/4 个有
-- `FluxResolutionNode` —— 3/4 个有
-- `MathExpression|pysssss` —— 3/4 个有
-- `RH_Translator` —— 3/4 个有
-- `FluxKontextImageScale` —— 2/4 个有
-- `ImageResize+` —— 2/4 个有
-- `ImageStitch` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `EmptySD3LatentImage` —— 1/4 个有
-- `LayerMask: BenUltra` —— 1/4 个有
-- `LayerMask: LoadBenModel` —— 1/4 个有
-- `LayerUtility: ImageScaleRestore` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `RBGImageStitchPlus` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `CFGGuider` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `EmptyLatentImage` —— 2/3 个有
+- `FluxResolutionNode` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `RH_Prompter` —— 2/3 个有
+- `easy textSwitch` —— 2/3 个有
+- `BasicGuider` —— 1/3 个有
+- `CR Text Replace` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1280 | 1280 - 1280 | 3 | 100% |
-| LoRA 模型强度 | 0.85 | - | 1 | 100% |
-| LoRA 文本强度 | 0.85 | - | 1 | 100% |
+| 宽度 | 840 | - | 2 | 100% |
+| 高度 | 1216 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -72,5 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1280，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 840，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1216，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

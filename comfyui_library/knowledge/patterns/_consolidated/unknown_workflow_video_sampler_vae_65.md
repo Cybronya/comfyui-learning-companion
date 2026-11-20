@@ -1,74 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_vae_65
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.9405
-common_nodes: [INTConstant, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.988143
+common_nodes: [JWInteger, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, Text, VHS_VideoCombine, VideoCombine_Adv, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/CausVid-3步720P参考编辑(Wan2.1&MoviiGen&Skyreels)_1923420902107566082.json, 平台全量/CausVid-3步720P控制+参考(Wan2.1&MoviiGen&Skyreels)_1923413100647600129.json, 平台全量/WAN-VACE（视频的参考编辑）_1909088194090905601.json, 平台全量/Wan14BT2VFusioniX-VACE-七组实践_1932278596193124353.json, 视频生成/图生视频/CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249.json, 视频生成/图生视频/CausVid-3步720P多图参考(Wan2.1&MoviiGen&Skyreels)_1923698037238263809.json, 视频生成/文生视频/Self Forcing-VACE-七组实践_1933086733389139969.json, 视频生成/文生视频/lightx2v-V2-VACE-七组实践_1945819044681576449.json]
+members: [图片生成/图生图/发男友的吻-改zip_1963881811234607105.json, 图片生成/图生图/早生贵子_1964949282598080513.json, 视频生成/图生视频/FusionX-图生视频-变成胖子_1937000254204186626.json, 视频生成/图生视频/FusionX-图生视频-女友的吻_1936801128262832130.json, 视频生成/图生视频/FusionX-图生视频_1934980178835906562.json, 视频生成/图生视频/FusionX-首尾帧-图生视频_1935329421408796673.json, 视频生成/文生视频/FusionX-文生视频_1935708946168803329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_65
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/CausVid-3步720P参考编辑(Wan2.1&MoviiGen&Skyreels)_1923420902107566082.json、平台全量/CausVid-3步720P控制+参考(Wan2.1&MoviiGen&Skyreels)_1923413100647600129.json、平台全量/WAN-VACE（视频的参考编辑）_1909088194090905601.json、平台全量/Wan14BT2VFusioniX-VACE-七组实践_1932278596193124353.json、视频生成/图生视频/CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/发男友的吻-改zip_1963881811234607105.json、图片生成/图生图/早生贵子_1964949282598080513.json、视频生成/图生视频/FusionX-图生视频-变成胖子_1937000254204186626.json、视频生成/图生视频/FusionX-图生视频-女友的吻_1936801128262832130.json、视频生成/图生视频/FusionX-图生视频_1934980178835906562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `INTConstant`
-- `ImageResizeKJ`
-- `LoadImage`
+全部 7 个 workflow 都包含：
+- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `Text`
 - `VHS_VideoCombine`
+- `VideoCombine_Adv`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
+- `WanVideoMagCache`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: LoadFlorence2Model` —— 7/8 个有
-- `LayerMask: ObjectDetectorFL2` —— 7/8 个有
-- `LayerMask: SAM2Ultra` —— 7/8 个有
-- `RH_Captioner` —— 7/8 个有
-- `WanVideoSLG` —— 7/8 个有
-- `WanVideoTeaCache` —— 7/8 个有
-- `WanVideoTorchCompileSettings` —— 7/8 个有
-- `String Literal` —— 6/8 个有
-- `VHS_LoadVideo` —— 6/8 个有
-- `WanVideoVACEModelSelect` —— 6/8 个有
-- `GetImageSize` —— 5/8 个有
-- `GrowMaskWithBlur` —— 5/8 个有
-- `Image Blank` —— 5/8 个有
-- `ImageCompositeMasked` —— 5/8 个有
-- `InpaintPreprocessor` —— 5/8 个有
-- `WanVideoLoraSelect` —— 5/8 个有
-- `easy showAnything` —— 5/8 个有
-- `AIO_Preprocessor` —— 4/8 个有
-- `GetImageSizeAndCount` —— 4/8 个有
-- `ImageConcanate` —— 4/8 个有
-- `LayerUtility: PurgeVRAM` —— 4/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/8 个有
-- `easy ifElse` —— 4/8 个有
-- `GetImageSize+` —— 3/8 个有
-- `ImagePadKJ` —— 3/8 个有
-- `MaskToImage` —— 3/8 个有
-- `WanVideoVACEStartToEndFrame` —— 3/8 个有
-- `GetNode` —— 1/8 个有
-- `WanVideoFreeInitArgs` —— 1/8 个有
+- `GetImageSize+` —— 6/7 个有
+- `ImageScale` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `WanVideoVACEStartToEndFrame` —— 2/7 个有
+- `PreviewImage` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `RH_ComfyFluxKontext` —— 1/7 个有
 
 ## 典型参数
 

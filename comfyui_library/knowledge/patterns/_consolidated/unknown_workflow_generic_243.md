@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_243
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.811
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.943111
+common_nodes: [PreviewTextNode, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Background Page_2088163751735414786.json, 图片生成/图生图/Background Page_2094985040261373953.json, 图片生成/图生图/G-image2  公众号长图推文分图_2065235483633995777.json, 图片生成/图生图/【G2官方稳定版】3D分层纸质动漫海报_2071490141159518210.json, 图片生成/图生图/【G2官方稳定版】一键Q版夸张肖像手办_2070864524076474370.json, 图片生成/图生图/【G2官方稳定版】一键拍立得拼图海报_2073951689585025025.json, 图片生成/图生图/【G2官方稳定版】商用定制 3D 卡通头像表情合集_2073183598303342594.json, 图片生成/图生图/【G2官方稳定版】手绘涂鸦简笔马克笔速写风_2071757125566681089.json, 图片生成/图生图/全能图片G2.0----官方稳定版_2048615974139600898.json, 图片生成/文生图/龙虾自用官方版十图参考_2048447841378504706.json]
+members: [图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json, 图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100070771115773954.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100182023997579266.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100223245185277953.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2101867405055188993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_243
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Background Page_2088163751735414786.json、图片生成/图生图/Background Page_2094985040261373953.json、图片生成/图生图/G-image2  公众号长图推文分图_2065235483633995777.json、图片生成/图生图/【G2官方稳定版】3D分层纸质动漫海报_2071490141159518210.json、图片生成/图生图/【G2官方稳定版】一键Q版夸张肖像手办_2070864524076474370.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json、图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
+全部 9 个 workflow 都包含：
+- `PreviewTextNode`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 2/10 个有
-- `ShowAnything|Mie` —— 2/10 个有
+- `LoadImage` —— 8/9 个有
+- `Text Multiline` —— 8/9 个有
+- `EmptyImage` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `CRT_StringSplitter` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,32 +1,32 @@
 ---
 name: unknown_workflow_sampler_clip_unet_158
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.940111
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.929875
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux2klein去除主体_2103376169314906113.json, 图片生成/图生图/flux2klein去除卡片_2103408490587967490.json, 图片生成/图生图/flux2klein去除文字_2103396557008752641.json, 图片生成/图生图/flux2klein添加主体_2103385812510535682.json, 图片生成/图生图/一键人像转3D建模_2031914265522737154.json, 图片生成/图生图/一键去万物工作流Seg3+Klein_2031956746331230209.json, 图片生成/图生图/交换角色位置_2042497890186170370.json, 图片生成/图生图/仅更改尺寸，图案不变_2059163011654438913.json, 图片生成/文生图/flux2-Timestep Distillation（步级蒸馏）_2061782953197391873.json]
+members: [图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json, 图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json, 图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json, 图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json, 图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json, 图片生成/图生图/人物换装-Klein-9B-工作流_2041526824202674177.json, 图片生成/图生图/最新Flux.2-Klein单图编辑双图编辑文生图（4B加速版工作流）1.0_2013425810153152514.json, 图片生成/图生图/角色四视图-klein9b_2083577051046567937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_158
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/flux2klein去除主体_2103376169314906113.json、图片生成/图生图/flux2klein去除卡片_2103408490587967490.json、图片生成/图生图/flux2klein去除文字_2103396557008752641.json、图片生成/图生图/flux2klein添加主体_2103385812510535682.json、图片生成/图生图/一键人像转3D建模_2031914265522737154.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json、图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json、图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json、图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json、图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -39,21 +39,20 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 8/9 个有
-- `GetImageSize` —— 7/9 个有
-- `FluxGuidance` —— 6/9 个有
-- `LoraLoaderModelOnly` —— 6/9 个有
-- `Anything Everywhere3` —— 4/9 个有
-- `ImageScaleToTotalPixels` —— 4/9 个有
-- `PreviewImage` —— 3/9 个有
-- `ImageToMask` —— 2/9 个有
-- `PixaromaInpaintCrop` —— 2/9 个有
-- `PixaromaUncrop` —— 2/9 个有
-- `VRAMReserver` —— 2/9 个有
-- `AIO_Preprocessor` —— 1/9 个有
-- `CFGGuider` —— 1/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `Flux2Scheduler` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `BasicScheduler` —— 3/8 个有
+- `ModelSamplingAuraFlow` —— 3/8 个有
+- `easy int` —— 3/8 个有
+- `CR Text Concatenate` —— 2/8 个有
+- `JjkText` —— 2/8 个有
+- `ResizeImagesByLongerEdge` —— 2/8 个有
+- `GetImageSize+` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
 
 ## 典型参数
 

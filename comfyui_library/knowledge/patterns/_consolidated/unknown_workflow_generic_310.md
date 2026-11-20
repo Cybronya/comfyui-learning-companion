@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_310
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.962444
-common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.9655
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/微调模块_2057855758682902529.json, 图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json, 图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json, 图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json, 图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json, 平台全量/三视图_2046505116894765058.json, 平台全量/分镜图_2046508370219241473.json, 平台全量/图改图_2046494144708743169.json, 平台全量/场景图_2046507402744303617.json]
+members: [图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json, 图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2113908508688216066.json, 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json, 图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json, 图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json, 图片生成/文生图/（RH版）即梦4.5电商商品拍摄场图工作流(白底图生成场景图4K) V1.0_1998105602192736257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_310
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/微调模块_2057855758682902529.json、图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json、图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json、图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json、图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json、图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2113908508688216066.json、图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CR Prompt Text`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 6/8 个有
+- `RH_Jimeng4_Image2Image` —— 2/8 个有
 
 ## 典型参数
 

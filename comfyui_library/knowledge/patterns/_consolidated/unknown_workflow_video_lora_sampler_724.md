@@ -1,75 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_724
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.94825
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, INTConstant, Int, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.857
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, ImageFromBatch+, JWInteger, JWStringConcat, LayerColor: Brightness & Contrast, LoadWanVideoT5TextEncoder, MathExpression|pysssss, ShowText|pysssss, TextConcat, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/KJ+radial+Fastwan+lightx高低+自动扩词极速万相wan2.2_1950062965963841538.json, 视频生成/图生视频/万相2.2+KJ+multitalk+radial+Fastwan+lightx644)图生视数字人_1952381797537648642.json, 视频生成/图生视频/万相2.2+KJ+multitalk+克隆音色图生视数字人_1952389394525294594.json, 视频生成/图生视频/最强万相wan2.2首尾帧KJ+CineSca+MTV-Crafter+自动扩词_1950597048527704066.json]
+members: [视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json, 视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json, 视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_724
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/KJ+radial+Fastwan+lightx高低+自动扩词极速万相wan2.2_1950062965963841538.json、视频生成/图生视频/万相2.2+KJ+multitalk+radial+Fastwan+lightx644)图生视数字人_1952381797537648642.json、视频生成/图生视频/万相2.2+KJ+multitalk+克隆音色图生视数字人_1952389394525294594.json、视频生成/图生视频/最强万相wan2.2首尾帧KJ+CineSca+MTV-Crafter+自动扩词_1950597048527704066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json、视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json、视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CR Prompt Text`
 - `CreateCFGScheduleFloatList`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `INTConstant`
-- `Int`
+- `ImageFromBatch+`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `JWStringConcat`
+- `LayerColor: Brightness & Contrast`
 - `LoadWanVideoT5TextEncoder`
-- `RHHiddenNodes`
-- `SimpleMath+`
+- `MathExpression|pysssss`
+- `ShowText|pysssss`
+- `TextConcat`
 - `VHS_VideoCombine`
+- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `PIP_StringConcatenation` —— 3/4 个有
-- `Wan22PromptSelector` —— 3/4 个有
-- `WanVideoSetRadialAttention` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `DownloadAndLoadWav2VecModel` —— 2/4 个有
-- `Float to Int` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MultiTalkModelLoader` —— 2/4 个有
-- `MultiTalkWav2VecEmbeds` —— 2/4 个有
-- `RH_GetAudioDuration` —— 2/4 个有
-- `AudioSeparation` —— 1/4 个有
-- `IndexTTSRun` —— 1/4 个有
-- `SeedVR2` —— 1/4 个有
-- `SeedVR2BlockSwap` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `easy anythingIndexSwitch` —— 1/4 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `CreateVideo` —— 1/3 个有
+- `FluxResolutionNode` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RunningHub ThinkSound` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `String` —— 1/3 个有
+- `easy mathInt` —— 1/3 个有
 
 ## 典型参数
 

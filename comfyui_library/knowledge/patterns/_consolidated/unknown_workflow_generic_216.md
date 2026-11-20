@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_216
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.801545
-common_nodes: [RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
+coverage: 0.7423
+common_nodes: [LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V1 Pro一键制作韩式条漫（0.22元一张）_1993244376866422786.json, 图片生成/文生图/双子星+全能图片_2027688561536929794.json, 图片生成/文生图/短剧分镜创作 全方位视图 智能多角度 人物角色一致性 一键生成分镜图 适配短剧创作 短剧分镜创作_2048596921719201793.json, 图片生成/文生图/自用图片工作流_2083444090800267266.json, 平台全量/一图一剧情+生成25分镜图_2026655458664124418.json, 平台全量/一键生成分镜图 —— 短剧角色设定_2052928115055312898.json, 平台全量/一键生成分镜图 —— 短剧角色设定_2072700514478936066.json, 平台全量/一键生成分镜图 —— 短剧角色设定_2075251330066771969.json, 平台全量/一键生成分镜图 —— 短剧角色设定_2075251389839790081.json, 平台全量/一键生成分镜图 —— 短剧角色设定_2075554807330463746.json, 平台全量/一键生成分镜图 网剧短剧角色设定_2052566554931408897.json]
+members: [图片生成/图生图/全能图像2_2027222749164347394.json, 视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json, 视频生成/图生视频/RH超能视频 多角色图生视频_2037347862715043842.json, 视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json, 视频生成/图生视频/产品介绍图生视频 模特主播 数字人手持产品带货视频-15秒长视频_2060157052013600769.json, 视频生成/图生视频/图生视频数字人手持产品带货视频15秒短视频_2076931692736106497.json, 视频生成/图生视频/多角色库模式_2039312431591198722.json, 视频生成/图生视频/数字人手持产品带货视频-15秒短视频_2046555653115744258.json, 视频生成/图生视频/电商带货，抖音带货，爆款复刻，手持产品带货视频-15秒短视频，已经做到百分之99%还原_2046648278296567810.json, 视频生成/图生视频/（多ID录入版-支持真人）地表最强超能视频2.0_全能参考_2037519797197479937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_216
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/全能图片V1 Pro一键制作韩式条漫（0.22元一张）_1993244376866422786.json、图片生成/文生图/双子星+全能图片_2027688561536929794.json、图片生成/文生图/短剧分镜创作 全方位视图 智能多角度 人物角色一致性 一键生成分镜图 适配短剧创作 短剧分镜创作_2048596921719201793.json、图片生成/文生图/自用图片工作流_2083444090800267266.json、平台全量/一图一剧情+生成25分镜图_2026655458664124418.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图像2_2027222749164347394.json、视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json、视频生成/图生视频/RH超能视频 多角色图生视频_2037347862715043842.json、视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json、视频生成/图生视频/产品介绍图生视频 模特主播 数字人手持产品带货视频-15秒长视频_2060157052013600769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `easy showAnything`
+全部 10 个 workflow 都包含：
+- `LoadImage`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/11 个有
-- `CR Text` —— 8/11 个有
-- `Text Multiline` —— 3/11 个有
-- `AnyBooleanSwitch` —— 1/11 个有
-- `ShowText|pysssss` —— 1/11 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 8/10 个有
+- `PreviewAny` —— 6/10 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 2/10 个有
+- `RH_SparkVideoAssetQuery` —— 1/10 个有
 
 ## 典型参数
 

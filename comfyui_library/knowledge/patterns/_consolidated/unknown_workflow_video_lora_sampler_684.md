@@ -1,69 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_684
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.9515
-common_nodes: [CR Prompt Text, Float, INTConstant, ImageConcatMulti, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.954
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan2.2-Vace-视频画面扩展_1983816289653334017.json, 视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json, 视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json, 视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json]
+members: [视频生成/图生视频/InfiniteTalk+Lynx人脸一致性_无限长音频驱动数字人_20251117_1990595971572785153.json, 视频生成/图生视频/InfiniteTalk无限长音频驱动数字人_20251117_1990339469129732098.json, 视频生成/图生视频/祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_684
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan2.2-Vace-视频画面扩展_1983816289653334017.json、视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json、视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json、视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk+Lynx人脸一致性_无限长音频驱动数字人_20251117_1990595971572785153.json、视频生成/图生视频/InfiniteTalk无限长音频驱动数字人_20251117_1990339469129732098.json、视频生成/图生视频/祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
 - `CR Prompt Text`
-- `Float`
-- `INTConstant`
-- `ImageConcatMulti`
+- `DownloadAndLoadWav2VecModel`
 - `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `StringToFloatList`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 2/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `GrowMaskWithBlur` —— 2/4 个有
-- `ImageAndMaskPreview` —— 2/4 个有
-- `ImagePadKJ` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `MaskPreview+` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `WanVideoExtraModelSelect` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `WanVideoVACEModelSelect` —— 2/4 个有
-- `ImageResize` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
+- `Frames Slice` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `JWFloat` —— 1/3 个有
+- `LoadLynxResampler` —— 1/3 个有
+- `LynxEncodeFaceIP` —— 1/3 个有
+- `LynxInsightFaceCrop` —— 1/3 个有
+- `WanVideoAddLynxEmbeds` —— 1/3 个有
+- `WanVideoBlockSwap` —— 1/3 个有
+- `WanVideoExtraModelSelect` —— 1/3 个有
 
 ## 典型参数
 

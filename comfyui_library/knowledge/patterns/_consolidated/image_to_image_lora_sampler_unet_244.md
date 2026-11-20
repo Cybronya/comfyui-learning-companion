@@ -3,36 +3,33 @@ name: image_to_image_lora_sampler_unet_244
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.922
-common_nodes: [CFGNorm, CLIPLoader, CR Image Input Switch, ConditioningZeroOut, FluxKontextMultiReferenceLatentMethod, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg]
+coverage: 0.845
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/BFS QwenEdit 2509 _ 2511 换头换脸 + 換背景_2081405625912881154.json, 图片生成/图生图/BFS QwenEdit 2509 _ 2511 换头换脸_2019938986193592321.json]
+members: [图片生成/文生图/一致性姿态与光影控制VNCCS Pose Studio+2511_2020409094468800513.json, 视频生成/图生视频/Qwen  2511 去水印_2039186389039845377.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_244
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/BFS QwenEdit 2509 _ 2511 换头换脸 + 換背景_2081405625912881154.json、图片生成/图生图/BFS QwenEdit 2509 _ 2511 换头换脸_2019938986193592321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一致性姿态与光影控制VNCCS Pose Studio+2511_2020409094468800513.json、视频生成/图生视频/Qwen  2511 去水印_2039186389039845377.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `CR Image Input Switch`
-- `ConditioningZeroOut`
 - `FluxKontextMultiReferenceLatentMethod`
-- `Int`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
 - `TextEncodeQwenImageEditPlus`
@@ -40,22 +37,22 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `CompressImages` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `ImageResize` —— 1/2 个有
+- `JWStringConcat` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `String Literal` —— 1/2 个有
+- `VNCCS_PoseStudio` —— 1/2 个有
+- `image_scale_pixel_v2` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | - | 2 | 57% |
+| 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -69,7 +66,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 14，样本不足，未给区间，2 个样本
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

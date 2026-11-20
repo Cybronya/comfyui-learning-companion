@@ -2,34 +2,32 @@
 name: unknown_workflow_sampler_clip_unet_172
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.931625
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: weak
+coverage: 0.913875
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json, 图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json, 图片生成/反推提示词/82huantou_2053067673583529985.json, 图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json, 图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json, 图片生成/图生图/FLUX克莱因指令编辑_2019953559508361217.json, 图片生成/图生图/Flux2 klein kv高速图片编辑_2040977793638469634.json, 图片生成/图生图/电商万物迁移 Flux klein_2021109944589754370.json]
+members: [图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json, 图片生成/文生图/flux文生图(自用）_1891744030592774146.json, 图片生成/文生图/flux文生图_1896040375998414850.json, 图片生成/文生图/flux文生图_1896043053692092417.json, 图片生成/文生图/flux生图工作流_1946106579613609985.json, 图片生成/文生图/小红书生活FLUX一键生成极致逼真美女—comfyui工作流_1957765376640909314.json, 图片生成/文生图/文生四宫格图_1908149869620375554.json, 图片生成/文生图/文生四宫格图_2060284327476416514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_172
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json、图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json、图片生成/反推提示词/82huantou_2053067673583529985.json、图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json、图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json、图片生成/文生图/flux文生图(自用）_1891744030592774146.json、图片生成/文生图/flux文生图_1896040375998414850.json、图片生成/文生图/flux文生图_1896043053692092417.json、图片生成/文生图/flux生图工作流_1946106579613609985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -38,32 +36,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/8 个有
-- `GetImageSize` —— 7/8 个有
-- `ImageScaleToTotalPixels` —— 7/8 个有
-- `ReferenceLatent` —— 7/8 个有
-- `VAEEncode` —— 7/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `FluxKVCache` —— 2/8 个有
-- `ImpactInt` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `RTXVideoSuperResolution` —— 2/8 个有
-- `easy int` —— 2/8 个有
-- `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` —— 1/8 个有
-- `93041a64-452a-477a-9447-40330b7c1136` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `Colored Image (mtb)` —— 1/8 个有
-- `ImageResize+` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `LayerUtility: CropByMask V3` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `LayerUtility: RestoreCropBox` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `EmptyLatentImage` —— 5/8 个有
+- `FluxGuidance` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `UnetLoaderGGUF` —— 3/8 个有
+- `CheckpointLoaderSimple` —— 2/8 个有
+- `EmptySD3LatentImage` —— 2/8 个有
+- `ModelSamplingFlux` —— 2/8 个有
+- `DualCLIPLoaderGGUF` —— 1/8 个有
+- `ImageCrop+` —— 1/8 个有
+- `RandomPrompt` —— 1/8 个有
+- `SDXLEmptyLatentSizePicker+` —— 1/8 个有
+- `StringFunction|pysssss` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 512 - 1448 | 5 | 70% |
+| 高度 | 1024 | 1 - 1920 | 6 | 38% |
 
 ## 常见问题
 
@@ -71,4 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 512 - 1448，5 个样本
+- 高度 中位数 1024，观测区间 1 - 1920，6 个样本，取值分散，一致性仅 38%

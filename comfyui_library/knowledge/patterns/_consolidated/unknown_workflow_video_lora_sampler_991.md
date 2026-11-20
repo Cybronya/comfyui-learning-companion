@@ -3,63 +3,63 @@ name: unknown_workflow_video_lora_sampler_991
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.865
-common_nodes: [Anything Everywhere3, CheckpointLoaderSimple, EmptyLatentImage, ImageScale, KSampler (Efficient), LoadImage, LoraLoader, RHHiddenNodes, TextInput_, VHS_LoadVideo, VHS_VideoCombine, WD14Tagger|pysssss, easy float, easy promptConcat, easy seed]
+coverage: 0.894
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageLoader, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, TT_img_enc, TT_img_enc_v2, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, wanBlockSwap]
 problems: []
 missing: []
-members: [平台全量/万物皆可今晨卜卦爆款舞蹈工作流_1892917854130614273.json, 平台全量/抖音千万播放万物舞蹈流（植物跳舞）_1859771319960342530.json]
+members: [视频生成/图生视频/首尾帧V4_2000212534974181377.json, 视频生成/图生视频/（自用）Wan2.2 Smooth + Qwen VL3双参自动丝滑首尾帧V3_1982679380579237890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_991
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/万物皆可今晨卜卦爆款舞蹈工作流_1892917854130614273.json、平台全量/抖音千万播放万物舞蹈流（植物跳舞）_1859771319960342530.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/首尾帧V4_2000212534974181377.json、视频生成/图生视频/（自用）Wan2.2 Smooth + Qwen VL3双参自动丝滑首尾帧V3_1982679380579237890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CheckpointLoaderSimple`
-- `EmptyLatentImage`
-- `ImageScale`
-- `KSampler (Efficient)`
-- `LoadImage`
-- `LoraLoader`
-- `RHHiddenNodes`
-- `TextInput_`
-- `VHS_LoadVideo`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageLoader`
+- `Int`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveImage`
+- `TT_img_enc`
+- `TT_img_enc_v2`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WD14Tagger|pysssss`
-- `easy float`
-- `easy promptConcat`
-- `easy seed`
+- `WanFirstLastFrameToVideo`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `ACE_ImageGetSize` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `DuckHideNode` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MultiplePathsInput` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 544 | - | 2 | 100% |
-| 高度 | 960 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
-| 采样算法 | lcm | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | normal | - | 2 | 100% |
 
 ## 常见问题
 
@@ -67,13 +67,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 544，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 960，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 lcm，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 normal，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

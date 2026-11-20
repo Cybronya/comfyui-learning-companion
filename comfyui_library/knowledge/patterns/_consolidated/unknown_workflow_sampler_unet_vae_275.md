@@ -1,71 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_275
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.7568
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.83
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, PrimitiveStringMultiline, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/Ace Step 1.5xl turbo文生音乐工作流_2090785357209100290.json, 音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json, 音频生成/音频生成/编曲、bgm生成_2053301419213631490.json, 音频生成/音频生成/编曲、歌曲生成、bgm_2048663825725001730.json, 音频生成/音频生成/音乐歌曲_ACE_2069334357084561410.json]
+members: [图片生成/图生图/Qwen-image2.1万物移除工作流｜图生图一键抹除多余物体无痕迹_2108760305202458625.json, 图片生成/文生图/OWEN IMAGE 2.1 文生图_2103073574478245890.json, 图片生成/文生图/Qwen Image 2.1 文生图 _ 纯净官流40步无PE_2102016238707892225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_275
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Ace Step 1.5xl turbo文生音乐工作流_2090785357209100290.json、音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json、音频生成/音频生成/编曲、bgm生成_2053301419213631490.json、音频生成/音频生成/编曲、歌曲生成、bgm_2048663825725001730.json、音频生成/音频生成/音乐歌曲_ACE_2069334357084561410.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1万物移除工作流｜图生图一键抹除多余物体无痕迹_2108760305202458625.json、图片生成/文生图/OWEN IMAGE 2.1 文生图_2103073574478245890.json、图片生成/文生图/Qwen Image 2.1 文生图 _ 纯净官流40步无PE_2102016238707892225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `EmptyLatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `TextEncodeAceStepAudio1.5`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 4/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `LoadImage` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `SaveAudioAdvanced` —— 1/5 个有
-- `easy float` —— 1/5 个有
+- `LoadImage` —— 2/3 个有
+- `SaveImageAdvanced` —— 2/3 个有
+- `DrawMaskOnImage` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `Mask Fill Holes` —— 1/3 个有
+- `PixaromaRunTimer` —— 1/3 个有
+- `PixaromaSeed` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 5 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 5 | 0% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 25 | 25 - 40 | 3 | 76% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，5 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，5 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 25 - 40，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）

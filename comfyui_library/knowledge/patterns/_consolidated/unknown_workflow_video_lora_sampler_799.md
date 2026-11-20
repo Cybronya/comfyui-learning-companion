@@ -1,57 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_799
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.929333
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, EmptyHunyuanLatentVideo, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, RIFEInterpolation, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json, 图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json, 图片生成/文生图/文生图-wan2.2图像反推文生图_1954793772753182722.json]
+members: [数字人/数字人/Bernini-双人对口型数字人工作流_2075526300999180289.json, 数字人/数字人/Bernini-多参考图_视频-多功能数字人_2075227928262168577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_799
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json、图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json、图片生成/文生图/文生图-wan2.2图像反推文生图_1954793772753182722.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Bernini-双人对口型数字人工作流_2075526300999180289.json、数字人/数字人/Bernini-多参考图_视频-多功能数字人_2075227928262168577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 2 个 workflow 都包含：
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SplitSigmas`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
+- `RIFEInterpolation`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanVideoNAG`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
+- `AudioConcatenate` —— 1/2 个有
+- `BerniniS2VConditioning` —— 1/2 个有
+- `BerniniS2VConditioningV2` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -59,4 +64,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

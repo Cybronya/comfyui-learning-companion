@@ -1,31 +1,30 @@
 ---
 name: unknown_workflow_sampler_clip_unet_316
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.8596
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.97725
+common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-Image Base 文生图_2016498773949685761.json, 图片生成/文生图/Z-Image-Base-8steps 文生图_2063211651511443458.json, 图片生成/文生图/Z-Image-Base文生图V2（高画质版）_2016193102607818754.json, 图片生成/文生图/Z-Image-Turbo批量文生图_1993884946834145281.json, 图片生成/文生图/千问文生图-海报制造机器_1954172979645181954.json]
+members: [图片生成/文生图/Flex.2-preview-文生图_1917071528809136129.json, 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json, 图片生成/文生图/flux1_dev文生图_2059177447408627714.json, 图片生成/文生图/flux1_krea_dev 对比 flux dev_1950943932404400129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_316
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-Image Base 文生图_2016498773949685761.json、图片生成/文生图/Z-Image-Base-8steps 文生图_2063211651511443458.json、图片生成/文生图/Z-Image-Base文生图V2（高画质版）_2016193102607818754.json、图片生成/文生图/Z-Image-Turbo批量文生图_1993884946834145281.json、图片生成/文生图/千问文生图-海报制造机器_1954172979645181954.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flex.2-preview-文生图_1917071528809136129.json、图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json、图片生成/文生图/flux1_dev文生图_2059177447408627714.json、图片生成/文生图/flux1_krea_dev 对比 flux dev_1950943932404400129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `DualCLIPLoader`
 - `KSampler`
 - `SaveImage`
 - `UNETLoader`
@@ -33,35 +32,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 4/5 个有
-- `easy promptLine` —— 3/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `MuyeSizeSelector` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `WujiUpscaler` —— 1/5 个有
-- `easy hiresFix` —— 1/5 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `EmptySD3LatentImage` —— 2/4 个有
+- `Flex2Conditioner` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `CR Multiline Text` —— 1/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `SDXLEmptyLatentSizePicker+` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 50 | 5 | 34% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 5 | 46% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 22.5 | 8 - 25 | 4 | 64% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | deis | - | 4 | 50% |
+| 调度器 | beta | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 768x1280 (0.6) | - | 1 | 100% |
+| 高度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 50，5 个样本，取值分散，一致性仅 34%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，5 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 22.5，观测区间 8 - 25，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 deis，4 个样本，一致性 50%
+- 调度器 最常用 beta，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

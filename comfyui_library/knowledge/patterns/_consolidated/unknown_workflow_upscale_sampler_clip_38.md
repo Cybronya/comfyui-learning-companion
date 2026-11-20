@@ -1,60 +1,74 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_38
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: strong
-coverage: 0.6954
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, 孤海注释]
+coverage: 0.830667
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DownloadAndLoadFlorence2Model, Florence2Run, ImageUpscaleWithModel, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/图生图/Krea2机甲四视图一次成型，SeedVR2超分细节直接交付_2116757927414558722.json, 图片生成/图生图/Krea2正侧背三视图一次成型，SeedVR2超分细节直接交付_2117118817074769921.json, 图片生成/图生图/Krea2资产库角色四视图一次生成，SeedVR2超分细节可直接交付_2116393692742381569.json, 平台全量/Krea2潮玩四视图一次成型，SeedVR2超分细节直接交付_2117868258484375554.json, 平台全量/Krea2潮鞋四视图一次成型，SeedVR2超分细节直接交付_2117978091288092674.json]
+members: [图片生成/图生图/HiDream&TTP_1925414382111760386.json, 图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json, 图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Krea2机甲四视图一次成型，SeedVR2超分细节直接交付_2116757927414558722.json、图片生成/图生图/Krea2正侧背三视图一次成型，SeedVR2超分细节直接交付_2117118817074769921.json、图片生成/图生图/Krea2资产库角色四视图一次生成，SeedVR2超分细节可直接交付_2116393692742381569.json、平台全量/Krea2潮玩四视图一次成型，SeedVR2超分细节直接交付_2117868258484375554.json、平台全量/Krea2潮鞋四视图一次成型，SeedVR2超分细节直接交付_2117978091288092674.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HiDream&TTP_1925414382111760386.json、图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json、图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `ShowText|pysssss`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `VAEDecode`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `孤海注释`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `YUAN_TXTParagraphSplitter` —— 1/5 个有
-- `YUAN_TXTPreviewContent` —— 1/5 个有
-- `YUAN_TXTReplace` —— 1/5 个有
+- `CLIPLoader` —— 2/3 个有
+- `Florence2ModelLoader` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LoraLoader` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageScaleBy` —— 1/3 个有
+- `ImageSmartSharpen+` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `QuadrupleCLIPLoader` —— 1/3 个有
+- `SetNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| LoRA 模型强度 | 0.85 | - | 2 | 100% |
+| LoRA 文本强度 | 0.85 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -62,8 +76,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

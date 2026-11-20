@@ -1,81 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_840
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.792333
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, ImageCropByMaskAndResize, ImageResizeKJv2, Int, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.9115
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/SP503-动作迁移+动态运镜（wan2.2 Animate）_1970122062549426177.json, 数字人/数字人/SP503-视频换人+音频同步（wan2.2 Animate）_1969349828675313665.json, 数字人/数字人/最稳定的本地部署动作迁移 表情很ok_1987421383569420290.json]
+members: [视频生成/图生视频/H3加速方式对比_2087392191630106625.json, 视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_840
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/SP503-动作迁移+动态运镜（wan2.2 Animate）_1970122062549426177.json、数字人/数字人/SP503-视频换人+音频同步（wan2.2 Animate）_1969349828675313665.json、数字人/数字人/最稳定的本地部署动作迁移 表情很ok_1987421383569420290.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3加速方式对比_2087392191630106625.json、视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `Int`
+全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `KSamplerSelect`
+- `Label (rgthree)`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 2/3 个有
-- `DownloadAndLoadSAM2Model` —— 2/3 个有
-- `DrawMaskOnImage` —— 2/3 个有
-- `GrowMask` —— 2/3 个有
-- `ImageFromBatch` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `PointsEditor` —— 2/3 个有
-- `Sam2Segmentation` —— 2/3 个有
-- `WanVideoEncode` —— 2/3 个有
-- `WanVideoUni3C_ControlnetLoader` —— 2/3 个有
-- `WanVideoUni3C_embeds` —— 2/3 个有
-- `easy convertAnything` —— 2/3 个有
-- `easy positive` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LayerUtility: GeminiV2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `LoraLoaderBypassModelOnly` —— 1/2 个有
+- `MiniMaxH3BlockCacheT8` —— 1/2 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `SolAttnMiniMax` —— 1/2 个有
+- `StringConcatenate` —— 1/2 个有
+- `easy convertAnything` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `easy string` —— 1/2 个有
+- `string_util_StrConcat` —— 1/2 个有
 
 ## 典型参数
 
@@ -87,4 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

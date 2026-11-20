@@ -1,80 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_325
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.713
-common_nodes: [Anything Everywhere3, CLIPLoader, CR Prompt Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, KSampler, QwenImage21Cache, ResolutionSelector, SaveImage, Seed (rgthree), SetNode, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, easy setNode, easy showAnything]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.7475
+common_nodes: [Anything Everywhere3, CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 Character Reference Sheet (Four Views)_2102316050699345921.json, 图片生成/文生图/Qwen Image 2.1 Short Drama Asset Series – Environm_2102362481237782530.json, 图片生成/文生图/【Qwen Image 2.1】图生图_2113732060803330050.json]
+members: [图片生成/图生图/姿势迁移极速版 精准迁移 支持产品 flux-2-klein_2043564102882168833.json, 图片生成/图生图/没有之一的老照片划痕清理终极版_2053908646307868674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_325
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 Character Reference Sheet (Four Views)_2102316050699345921.json、图片生成/文生图/Qwen Image 2.1 Short Drama Asset Series – Environm_2102362481237782530.json、图片生成/文生图/【Qwen Image 2.1】图生图_2113732060803330050.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/姿势迁移极速版 精准迁移 支持产品 flux-2-klein_2043564102882168833.json、图片生成/图生图/没有之一的老照片划痕清理终极版_2053908646307868674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `Anything Everywhere3`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
 - `KSampler`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PainterFluxImageEdit`
+- `PreviewImage`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy setNode`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LayerUtility: TextJoin` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `CR Prompt Text` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `Int Literal` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 采样步数 | 40 | 40 - 40 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,65 +1,74 @@
 ---
 name: unknown_workflow_sampler_clip_unet_445
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.905
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingSD3, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.8325
+common_nodes: [AILab_QwenVL, Bjornulf_ShowInt, CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/WAN2.2文生图_1953166220825718786.json, 图片生成/文生图/Wan2.2文生图_1949897867035107330.json, 图片生成/文生图/Wan2.2文生图最优实现_1950849465034940417.json]
+members: [图片生成/图生图/批量洗图自动化（Qwen2512大模型）_2093655624746889217.json, 图片生成/图生图/批量洗图自动化（Z-image）_2093654082945900546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_445
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/WAN2.2文生图_1953166220825718786.json、图片生成/文生图/Wan2.2文生图_1949897867035107330.json、图片生成/文生图/Wan2.2文生图最优实现_1950849465034940417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量洗图自动化（Qwen2512大模型）_2093655624746889217.json、图片生成/图生图/批量洗图自动化（Z-image）_2093654082945900546.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AILab_QwenVL`
+- `Bjornulf_ShowInt`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `KSampler`
-- `ModelSamplingSD3`
-- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `CFGNorm` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelSamplingAuraFlow` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 3 | 56% |
-| 采样算法 | heun | - | 3 | 33% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 0.5 | 0.3 - 1 | 3 | 51% |
+| 采样步数 | 8.5 | - | 2 | 94% |
+| Prompt 约束强度(CFG) | 1.25 | - | 2 | 80% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.925 | - | 2 | 92% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，3 个样本
-- 采样算法 最常用 heun，3 个样本，一致性 33%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 0.5，观测区间 0.3 - 1，3 个样本
+- 采样步数 中位数 8.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1.25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.925，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

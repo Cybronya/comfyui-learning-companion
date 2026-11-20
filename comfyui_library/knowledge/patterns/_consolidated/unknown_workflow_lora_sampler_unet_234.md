@@ -1,60 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_unet_234
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.534
-common_nodes: [CLIPLoader, CR Prompt Text, CreateVideo, GetNode, H3AutoContextSampler, H3Parameter, H3SeamCorrection, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, MiniMaxLowVRAMAttention, ResolutionSelector, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, 孤海注释]
+coverage: 0.823333
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采武戏直出_2101160593582546945.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采直出_2099477874922315778.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大1080P直出_2101166794710011905.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大武戏1080P直出_2101178415406731265.json]
+members: [图片生成/图生图/换装新_2048517500643577857.json, 图片生成/图生图/服装批量改颜色（FK2一致性）_2073328215275425794.json, 图片生成/图生图/汽车轮轮胎轮毂整体替换方案v2_2056270200219201538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_234
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采武戏直出_2101160593582546945.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采直出_2099477874922315778.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大1080P直出_2101166794710011905.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大武戏1080P直出_2101178415406731265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换装新_2048517500643577857.json、图片生成/图生图/服装批量改颜色（FK2一致性）_2073328215275425794.json、图片生成/图生图/汽车轮轮胎轮毂整体替换方案v2_2056270200219201538.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `CreateVideo`
-- `GetNode`
-- `H3AutoContextSampler`
-- `H3Parameter`
-- `H3SeamCorrection`
-- `ImageResizeKJv2`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxLowVRAMAttention`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SetNode`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/4 个有
-- `H3SigmaRefiner` —— 2/4 个有
-- `LTXVConcatAVLatent` —— 2/4 个有
-- `LTXVSeparateAVLatent` —— 2/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `SolAttnPatch` —— 2/4 个有
-- `SplitSigmas` —— 2/4 个有
+- `AdaptiveLongestEdge_EditUtils` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `InpaintCropImproved` —— 1/3 个有
+- `InpaintStitchImproved` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerColor: ColorAdapter` —— 1/3 个有
+- `ModelSamplingFlux` —— 1/3 个有
+- `easy promptList` —— 1/3 个有
 
 ## 典型参数
 

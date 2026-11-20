@@ -1,36 +1,45 @@
 ---
 name: unknown_workflow_generic_225
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.692545
-common_nodes: [LoadAudio, PreviewAny, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT]
+coverage: 0.8009
+common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [平台全量/音频转文本（带时间轴）_2103802462737092609.json, 数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json, 音频生成/音频生成/音频转文本带时间轴_2108384766226690050.json, 音频生成/音频生成/音频转文本带时间轴_2109825587190779905.json]
+members: [数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json, 数字人/数字人/声音克隆 文案版_2052943957910409217.json, 数字人/数字人/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2028335692316680194.json, 视频生成/图生视频/Qwen3 TTS 语音克隆_2037007176320950273.json, 视频生成/图生视频/豆包 Seedance  Pro 图生视频  Qwen3 TTS 声音克隆_2026172216152428545.json, 音频生成/音频生成/Qwen3-TTS全家桶_ 语音设计，克隆与生成！_2014485662963081217.json, 音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2069787707148161026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_225
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/音频转文本（带时间轴）_2103802462737092609.json、数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json、数字人/数字人/声音克隆 文案版_2052943957910409217.json、数字人/数字人/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2028335692316680194.json、视频生成/图生视频/Qwen3 TTS 语音克隆_2037007176320950273.json、视频生成/图生视频/豆包 Seedance  Pro 图生视频  Qwen3 TTS 声音克隆_2026172216152428545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `Apply Whisper`
 - `LoadAudio`
-- `PreviewAny`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `easy saveText` —— 8/11 个有
-- `SaveText` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `Qwen3TTSCustomVoice` —— 6/10 个有
+- `Qwen3TTSVoiceDesign` —— 6/10 个有
+- `AudioCrop` —— 5/10 个有
+- `TextInputBasic` —— 3/10 个有
+- `easy seed` —— 3/10 个有
+- `LoadImage` —— 2/10 个有
+- `RH_Doubao_Seedance_1_5_Pro` —— 1/10 个有
+- `SaveVideo` —— 1/10 个有
 
 ## 典型参数
 

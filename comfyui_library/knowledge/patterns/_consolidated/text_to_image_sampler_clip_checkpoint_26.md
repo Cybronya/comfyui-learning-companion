@@ -1,57 +1,58 @@
 ---
 name: text_to_image_sampler_clip_checkpoint_26
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.813
-common_nodes: [CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, PreviewImage, SaveImage, VAEDecode]
+frequency: 2
+level: weak
+coverage: 0.6785
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningSetTimestepRange, EmptyLatentImage, GetNode, ImageScaleBy, Int, KSampler, Label (rgthree), LayerUtility: PurgeVRAM, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, Text Multiline, VAEDecode]
 problems: []
 missing: []
-members: [平台全量/Pixel Art Workflow_1864574343366787073.json, 平台全量/Workflow 18 (Silhouette- Juggernaut XI)_1867466563682271234.json, 平台全量/xl卡通风格文生图_1777968814491766785.json]
+members: [图片生成/文生图/AI代码侠土豆-Red-Z-Image_AIO文生图_1998316363712225282.json, 图片生成/文生图/ZX文生图工作流搭建_2079128535050051585.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_checkpoint_26
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Pixel Art Workflow_1864574343366787073.json、平台全量/Workflow 18 (Silhouette- Juggernaut XI)_1867466563682271234.json、平台全量/xl卡通风格文生图_1777968814491766785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI代码侠土豆-Red-Z-Image_AIO文生图_1998316363712225282.json、图片生成/文生图/ZX文生图工作流搭建_2079128535050051585.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPSetLastLayer`
+全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `ConditioningSetTimestepRange`
 - `EmptyLatentImage`
+- `GetNode`
+- `ImageScaleBy`
+- `Int`
 - `KSampler`
+- `Label (rgthree)`
+- `LayerUtility: PurgeVRAM`
 - `PreviewImage`
 - `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SetNode`
+- `Text Multiline`
 - `VAEDecode`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 2/3 个有
-- `FreeU_V2` —— 1/3 个有
-- `ImageUpscaleWithModel` —— 1/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1056 | 3 | 71% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
-| 采样步数 | 30 | 20 - 37 | 3 | 76% |
-| Prompt 约束强度(CFG) | 7 | 5.5 - 7 | 3 | 89% |
-| 采样算法 | dpmpp_sde_gpu | - | 3 | 33% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.33 - 1 | 3 | 59% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler_cfg_pp | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -59,10 +60,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1056，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 采样步数 中位数 30，观测区间 20 - 37，3 个样本
-- Prompt 约束强度(CFG) 中位数 7，观测区间 5.5 - 7，3 个样本，取值集中（一致性 89%）
-- 采样算法 最常用 dpmpp_sde_gpu，3 个样本，一致性 33%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.33 - 1，3 个样本
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_cfg_pp，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

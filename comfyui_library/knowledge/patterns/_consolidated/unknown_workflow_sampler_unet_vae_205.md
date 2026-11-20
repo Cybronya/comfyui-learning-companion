@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_sampler_unet_vae_205
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.814571
-common_nodes: [CLIPLoader, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.798
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, FluxGuidance, ImageFromBatch, KSamplerSelect, LayerUtility: SaveImagePlus, PreviewImage, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen image 2.1 文生图_2110328458579632130.json, 图片生成/文生图/qwen-image-2.1_2101675550237614082.json, 图片生成/文生图/qwen-image-2.1多图编辑_2101799458202804226.json, 图片生成/文生图/千问iamge2.1文生图_2102716967022063618.json, 图片生成/文生图/文生图_qwenimage2.1_2101826399211446273.json, 数字人/数字人/Qwen Image 2.1 文生图 T2I_2101822255830495234.json, 数字人/数字人/【尺素】Qwen_image_2.1文生图（自带PE）_2101922141309595650.json]
+members: [图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json, 图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json, 图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json, 图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json, 图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_205
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1 文生图_2110328458579632130.json、图片生成/文生图/qwen-image-2.1_2101675550237614082.json、图片生成/文生图/qwen-image-2.1多图编辑_2101799458202804226.json、图片生成/文生图/千问iamge2.1文生图_2102716967022063618.json、图片生成/文生图/文生图_qwenimage2.1_2101826399211446273.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json、图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json、图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json、图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json、图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ConditioningZeroOut`
+- `FluxGuidance`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `LayerUtility: SaveImagePlus`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `ScheduledCFGGuidance`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/7 个有
-- `TextGenerateLTX2Prompt` —— 5/7 个有
-- `EmptyLatentImage` —— 4/7 个有
-- `ResolutionSelector` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `QwenImage21Cache` —— 3/7 个有
-- `LoadImage` —— 2/7 个有
-- `SaveImageAdvanced` —— 2/7 个有
-- `EmptySD3LatentImage` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `SetNode` —— 1/7 个有
+- `Label (rgthree)` —— 4/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `EmptyMiniMaxH3LatentAV` —— 3/5 个有
+- `easy imageColorMatch` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `LayerUtility: ImageReel` —— 2/5 个有
+- `LayerUtility: ImageReelComposit` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 50 | 7 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,10 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 50，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

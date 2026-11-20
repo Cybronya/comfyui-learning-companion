@@ -3,97 +3,53 @@ name: image_to_image_video_lora_sampler_20
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.6125
-common_nodes: [BlockifyMask, CFGNorm, CLIPLoader, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, Sam2Segmentation, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9525
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, ImageBatchToList, ImageListToBatch, KSampler, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, ReferenceLatent, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/AI搞笑二创《牛马表》，上传自拍照，AI痛哭朗读《牛马表》_1974813971238752257.json, 视频生成/图生视频/换背景动作模仿动作迁移插帧人物替换WanAnimate2.2（15s++）_2008394927624953858.json]
+members: [视频生成/图生视频/全能视频S 去水印-优化版_1977697115973505025.json, 视频生成/图生视频/全能视频S 去水印_1977584250008543233.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/AI搞笑二创《牛马表》，上传自拍照，AI痛哭朗读《牛马表》_1974813971238752257.json、视频生成/图生视频/换背景动作模仿动作迁移插帧人物替换WanAnimate2.2（15s++）_2008394927624953858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S 去水印-优化版_1977697115973505025.json、视频生成/图生视频/全能视频S 去水印_1977584250008543233.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CFGNorm`
-- `CLIPLoader`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `ImageBatchToList`
+- `ImageListToBatch`
 - `KSampler`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `Sam2Segmentation`
-- `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
-- `UNETLoader`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `ReferenceLatent`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `DF_Int_to_Float` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
 - `EmptySD3LatentImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImageBlend` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
-- `PurgeVRAM_UTK` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
+| 采样步数 | 6 | - | 2 | 67% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
@@ -107,7 +63,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%

@@ -1,32 +1,35 @@
 ---
 name: text_to_image_sampler_clip_unet_208
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.867667
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.7735
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Float, Int, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-Image 美女自动扩写文生图_1996110278268010498.json, 图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json, 图片生成/文生图/Z-Image-lora_1994678393864134657.json]
+members: [图片生成/反推提示词/81wsthy_2053062655686004737.json, 图片生成/文生图/Z-Image 文生图细节增强版_2015753448066650114.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-Image 美女自动扩写文生图_1996110278268010498.json、图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json、图片生成/文生图/Z-Image-lora_1994678393864134657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/81wsthy_2053062655686004737.json、图片生成/文生图/Z-Image 文生图细节增强版_2015753448066650114.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Float`
+- `Int`
 - `KSampler`
 - `SaveImage`
 - `UNETLoader`
@@ -34,42 +37,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GenerateNoise` —— 1/2 个有
+- `LGNoiseInjectionLatent` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 15 | 3 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1080 | 512 - 1080 | 3 | 70% |
-| 高度 | 1920 | 512 - 1920 | 3 | 54% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 9.5 | - | 2 | 95% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1000 | - | 2 | 72% |
+| 高度 | 1600 | - | 2 | 80% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 15，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 512 - 1080，3 个样本
-- 高度 中位数 1920，观测区间 512 - 1920，3 个样本
+- 采样步数 中位数 9.5，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1000，样本不足，未给区间，2 个样本
+- 高度 中位数 1600，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

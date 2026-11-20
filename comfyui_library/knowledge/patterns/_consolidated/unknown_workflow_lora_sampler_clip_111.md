@@ -1,72 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_111
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.783667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, Flux2Scheduler, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.9294
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CR Text Concatenate, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImageResizeKJ, ImageSmartSharpen+, JjkShowText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Captioner, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, TeaCache, TextInput_, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json, 图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json, 平台全量/boogu image edit turbo编辑_2077017630837399553.json, 数字人/数字人/260920 身材优化_2101508683275522049.json]
+members: [图片生成/图生图/万物 Labubu｜人物迁移参考_1936242276983033857.json, 图片生成/图生图/万物Labubu_1930592157512683521.json, 图片生成/图生图/万物一键变成Labubu_1996474642594414594.json, 图片生成/图生图/万物生成Labubu_1996507431935025153.json, 图片生成/图生图/万物迁移Labubu_1930810031602905089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_111
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json、图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json、平台全量/boogu image edit turbo编辑_2077017630837399553.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/万物 Labubu｜人物迁移参考_1936242276983033857.json、图片生成/图生图/万物Labubu_1930592157512683521.json、图片生成/图生图/万物一键变成Labubu_1996474642594414594.json、图片生成/图生图/万物生成Labubu_1996507431935025153.json、图片生成/图生图/万物迁移Labubu_1930810031602905089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text`
-- `Flux2Scheduler`
-- `GetNode`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `DetailDaemonSamplerNode`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `ImageSmartSharpen+`
+- `JjkShowText`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `RH_Captioner`
 - `RandomNoise`
-- `ReferenceLatent`
+- `ReduxAdvanced`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
+- `StyleModelLoader`
+- `TeaCache`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `EmptyLatentImage` —— 5/6 个有
-- `GetImageSize` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `ColorMatchV2` —— 4/6 个有
-- `FluxKontextImageScale` —— 4/6 个有
-- `ImageScaleBy` —— 4/6 个有
-- `TextEncodeBooguEdit` —— 4/6 个有
-- `VAEDecodeTiled` —— 4/6 个有
-- `easy float` —— 4/6 个有
-- `CompressImages` —— 1/6 个有
-- `EmptyFlux2LatentImage` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `LayerUtility: TextJoin` —— 1/6 个有
-- `SaveText` —— 1/6 个有
-- `easy imageScaleDownToSize` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 1360 | 5 | 50% |
-| 高度 | 512 | 512 - 768 | 5 | 82% |
+| 宽度 | 856 | 856 - 856 | 5 | 100% |
+| 高度 | 1152 | 1152 - 1152 | 5 | 100% |
 
 ## 常见问题
 
@@ -74,5 +64,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1360，5 个样本
-- 高度 中位数 512，观测区间 512 - 768，5 个样本，取值集中（一致性 82%）
+- 宽度 中位数 856，观测区间 856 - 856，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1152，观测区间 1152 - 1152，5 个样本，取值集中（一致性 100%）

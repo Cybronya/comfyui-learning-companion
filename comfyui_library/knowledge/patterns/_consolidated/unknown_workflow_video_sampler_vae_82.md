@@ -1,80 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_vae_82
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.697714
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PointsEditor, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, RMBG, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UnloadModel, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.9385
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/万能手动遮罩2人以上视频中的替换人物或换脸换头换衣服+口播对口型短视频商业短视频_2060603003312369666.json, 平台全量/万能手动遮罩2人以上视频中的替换人物或换脸换头换衣服+口播对口型短视频商业短视频_2083918207328546817.json, 平台全量/指定人物替换-手动遮罩替换多人视频中的指定人物+WanAnimate_2025105397538885633.json, 平台全量/替换多人视频中的某个人 万能手动遮罩2人以上视频中的替换Z3_2025379505409368066.json, 平台全量/替换视频中的产品  适合手持的小产品，Plus模式_2044806098640707586.json, 视频生成/图生视频/指定人物替换-手动遮罩替换多人视频中的指定人物+WanAnimate_2064955834492342273.json, 视频生成/图生视频/电商带货 直播带货 短视频_2043943018939551745.json]
+members: [视频生成/图生视频/Wan2.1 Fusion X 图生视频_1949673530895540225.json, 视频生成/图生视频/fusionx 动漫视频 图生视频_1947087609853685762.json, 视频生成/图生视频/wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json, 视频生成/图生视频/wan2.1FusionX超高清图生视频_1934598793851510785.json, 视频生成/图生视频/高清图生视频工作流-Wan fusionX_1937875802723913730.json, 视频生成/图生视频/龙明wan2.1 图生视频fusionX+NAG_1935009209383886850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_82
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/万能手动遮罩2人以上视频中的替换人物或换脸换头换衣服+口播对口型短视频商业短视频_2060603003312369666.json、平台全量/万能手动遮罩2人以上视频中的替换人物或换脸换头换衣服+口播对口型短视频商业短视频_2083918207328546817.json、平台全量/指定人物替换-手动遮罩替换多人视频中的指定人物+WanAnimate_2025105397538885633.json、平台全量/替换多人视频中的某个人 万能手动遮罩2人以上视频中的替换Z3_2025379505409368066.json、平台全量/替换视频中的产品  适合手持的小产品，Plus模式_2044806098640707586.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Fusion X 图生视频_1949673530895540225.json、视频生成/图生视频/fusionx 动漫视频 图生视频_1947087609853685762.json、视频生成/图生视频/wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json、视频生成/图生视频/wan2.1FusionX超高清图生视频_1934598793851510785.json、视频生成/图生视频/高清图生视频工作流-Wan fusionX_1937875802723913730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RMBG`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
-- `UnloadModel`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoSetLoRAs` —— 6/7 个有
-- `GrowMaskWithBlur` —— 5/7 个有
-- `AudioCrop` —— 4/7 个有
-- `JWIntegerToString` —— 4/7 个有
-- `PreviewAudio` —— 4/7 个有
-- `SeCModelLoader` —— 4/7 个有
-- `SeCVideoSegmentation` —— 4/7 个有
-- `WanVideoContextOptions` —— 4/7 个有
-- `DWPreprocessor` —— 3/7 个有
-- `WanVideoAnimateEmbeds` —— 3/7 个有
-- `MultiTalkModelLoader` —— 2/7 个有
-- `WanVideoEnhanceAVideo` —— 2/7 个有
-- `WanVideoLoraSelectMulti` —— 2/7 个有
-- `WanVideoSLG` —— 2/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/6 个有
+- `GIMMVFI_interpolate` —— 4/6 个有
+- `ImageResizeKJ` —— 4/6 个有
+- `ImageScaleToMegapixels` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `Note Plus (mtb)` —— 2/6 个有
+- `ImageSmartSharpen+` —— 1/6 个有
+- `LoadImageFromUrl` —— 1/6 个有
+- `LoadWanVideoClipTextEncoder` —— 1/6 个有
+- `WanVideoClipVisionEncode` —— 1/6 个有
 
 ## 典型参数
 

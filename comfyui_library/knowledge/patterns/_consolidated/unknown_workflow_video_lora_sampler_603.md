@@ -1,78 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_603
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8832
-common_nodes: [CLIPVisionLoader, ImageBatchMulti, ImageResizeKJv2, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.46375
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, GetNode, GoohaiUniversalSlider, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json, 视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json, 视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json]
+members: [视频生成/图生视频/自用文武双全音频驱动_2112933738454802433.json, 视频生成/文生视频/MiniMax H3 终极篇-文生视频_2113466253888282626.json, 视频生成/文生视频/MiniMax H3生成视频_2113923437487026177.json, 视频生成/文生视频/YZ金鱼-MiniMax+H3+终极篇-文武双全_2113310444478877698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_603
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json、视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json、视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/自用文武双全音频驱动_2112933738454802433.json、视频生成/文生视频/MiniMax H3 终极篇-文生视频_2113466253888282626.json、视频生成/文生视频/MiniMax H3生成视频_2113923437487026177.json、视频生成/文生视频/YZ金鱼-MiniMax+H3+终极篇-文武双全_2113310444478877698.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `InvertMask`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `GetNode`
+- `GoohaiUniversalSlider`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `ResolutionSelector`
+- `SetNode`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `easy imageRemBg` —— 4/5 个有
-- `CLIPLoader` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `SolidMask` —— 3/5 个有
-- `TextImageEncodeQwenVL` —— 3/5 个有
-- `WanVideoSetLoRAs` —— 3/5 个有
-- `DrawMaskOnImage` —— 2/5 个有
-- `ImageRemoveBackground+` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `TextInput_` —— 2/5 个有
-- `TransparentBGSession+` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DF_Text_Box` —— 1/5 个有
-- `ImagePadKJ` —— 1/5 个有
-- `MaskPreview` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
-- `math_calculate` —— 1/5 个有
-- `ttN seed` —— 1/5 个有
+- `LoadAudio` —— 3/4 个有
+- `MiniMaxChunkFeedForward` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SelfLiftH3Sampler` —— 3/4 个有
+- `VAEDecodeAudio` —— 3/4 个有
+- `LoadAudioFromUrl` —— 1/4 个有
+- `MiniMaxH3AddGuide` —— 1/4 个有
+- `SelfLiftAvatarH3Sampler` —— 1/4 个有
+- `SoundFlow_GetLength` —— 1/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,36 +1,51 @@
 ---
 name: unknown_workflow_video_lora_unet_2
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.793333
-common_nodes: [CLIPLoader, ComfyBerniniDirector, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.875667
+common_nodes: [CLIPLoader, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, SaveVideo, UNETLoader, VAELoader, easy modelLoaderPack, easy multiTrackEditor, easy multitrackProject, easy multitrackProjectVideoCombine]
 problems: []
 missing: []
-members: [平台全量/Bernini导演台全能工作流_2117403653886799874.json, 视频生成/文生视频/Bernini导演台全能工作流_2079374352503631873.json, 视频生成/文生视频/爆款百变_2101968748646330370.json]
+members: [视频生成/图生视频/MiniMax H3 长视频导演台-EasyMedia - Motion Context V2_2107329550337265665.json, 视频生成/图生视频/MiniMax-H3开源-极简导演台_2097630312233783298.json, 视频生成/图生视频/MiniMaxH3-极简导演台_2095766324508184577.json, 视频生成/图生视频/Minmax H4多轨编辑器_2097344874348638209.json, 视频生成/图生视频/RH-MINIMAX+H3+Motion+Context_长视频生成工作流V2_2105583664313749506.json, 视频生成/文生视频/RH-MINIMAX+H3+Motion+Context 长视频生成工作流V2_2103474631964446722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Bernini导演台全能工作流_2117403653886799874.json、视频生成/文生视频/Bernini导演台全能工作流_2079374352503631873.json、视频生成/文生视频/爆款百变_2101968748646330370.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 长视频导演台-EasyMedia - Motion Context V2_2107329550337265665.json、视频生成/图生视频/MiniMax-H3开源-极简导演台_2097630312233783298.json、视频生成/图生视频/MiniMaxH3-极简导演台_2095766324508184577.json、视频生成/图生视频/Minmax H4多轨编辑器_2097344874348638209.json、视频生成/图生视频/RH-MINIMAX+H3+Motion+Context_长视频生成工作流V2_2105583664313749506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyBerniniDirector`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
-- `VHS_VideoCombine`
+- `easy modelLoaderPack`
+- `easy multiTrackEditor`
+- `easy multitrackProject`
+- `easy multitrackProjectVideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicScheduler` —— 4/6 个有
+- `KSamplerSelect` —— 4/6 个有
+- `ManualSigmas` —— 3/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
+- `easy saveVideo` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `CreateVideo` —— 1/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
 
 ## 典型参数
 

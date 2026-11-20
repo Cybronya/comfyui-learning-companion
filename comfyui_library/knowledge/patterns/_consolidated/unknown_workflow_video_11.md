@@ -1,43 +1,50 @@
 ---
 name: unknown_workflow_video_11
 type: Unknown Workflow
-frequency: 11
+frequency: 7
 level: moderate
-coverage: 0.874273
-common_nodes: [CR Text, CR Value, LoadImage, RIFE VFI, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.840143
+common_nodes: [Any To Any, CR Prompt Text, GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, MultiplePathsInput, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/视频换脸+补帧 精准版_2005804455352303618.json, 平台全量/视频换脸--补帧_2018164260303544321.json, 平台全量/视频换脸_1911057339510915074.json, 平台全量/视频换脸_2048043614311292930.json, 平台全量/视频换脸工作流_2058789057945235458.json, 平台全量/视频换脸工作流_2117649017952882690.json, 平台全量/视频换脸工作流【AI小王子】_1902895343732731906.json, 平台全量/视频换脸（取自AI小王子）_1915355100636975106.json, 平台全量/超简单视频换脸工作流1.0_1917875847712411650.json, 视频生成/图生视频/自用一键换脸工作流_1996420197084962817.json, 视频生成/图生视频/视频换脸+补帧 精准版_2041860257923735554.json]
+members: [图片生成/图生图/Foley-全自动-视频-音效生成_1988126827040382977.json, 音频生成/音频生成/Floley 音效生成_1988103459142541314.json, 音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json, 音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json, 音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json, 音频生成/音频生成/Qwen3-VL+Foley-全自动-视频音效生成_1987470194266279938.json, 音频生成/音频生成/Z-Foley-全自动-视频-音效生成_1992057230069657602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_11
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/视频换脸+补帧 精准版_2005804455352303618.json、平台全量/视频换脸--补帧_2018164260303544321.json、平台全量/视频换脸_1911057339510915074.json、平台全量/视频换脸_2048043614311292930.json、平台全量/视频换脸工作流_2058789057945235458.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Foley-全自动-视频-音效生成_1988126827040382977.json、音频生成/音频生成/Floley 音效生成_1988103459142541314.json、音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json、音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json、音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Text`
-- `CR Value`
-- `LoadImage`
-- `RIFE VFI`
-- `ReActorFaceSwap`
-- `VHS_LoadVideo`
+全部 7 个 workflow 都包含：
+- `Any To Any`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadVideo`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 10/11 个有
-- `SimpleMath+` —— 10/11 个有
-- `VHS_VideoInfo` —— 10/11 个有
-- `ImageResizeKJ` —— 9/11 个有
-- `easy showAnything` —— 9/11 个有
-- `PreviewImage` —— 8/11 个有
+- `easy float` —— 6/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `easy textSwitch` —— 1/7 个有
 
 ## 典型参数
 

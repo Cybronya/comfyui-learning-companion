@@ -1,66 +1,63 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_70
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.94975
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LoadImage, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.7255
+common_nodes: [Anything Everywhere3, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImagePadForOutpaint, InpaintModelConditioning, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/flux redux参考_1894318351114502145.json, 平台全量/F.1 生成任何特效字体 Generate any effect font_1864135884689047554.json, 平台全量/IC_Mask 节点(Flux Fill + Redux转移)工作流示例 icmask_exampl_1899405977442013186.json, 平台全量/LayerUtility_ IC Mask_1871110764130861058.json]
+members: [图片生成/图生图/一句话修改颜色_1909521697626857474.json, 图片生成/图生图/扩图加局部修复_1971578287728357378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_70
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/flux redux参考_1894318351114502145.json、平台全量/F.1 生成任何特效字体 Generate any effect font_1864135884689047554.json、平台全量/IC_Mask 节点(Flux Fill + Redux转移)工作流示例 icmask_exampl_1899405977442013186.json、平台全量/LayerUtility_ IC Mask_1871110764130861058.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一句话修改颜色_1909521697626857474.json、图片生成/图生图/扩图加局部修复_1971578287728357378.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+- `ConditioningZeroOut`
+- `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `ImagePadForOutpaint`
 - `InpaintModelConditioning`
 - `KSampler`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `StyleModelApply`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `DepthAnythingV2Preprocessor` —— 2/4 个有
-- `EmptySD3LatentImage` —— 2/4 个有
-- `LayerMask: MaskGrow` —— 2/4 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 2/4 个有
-- `LayerUtility: CropByMask V2` —— 2/4 个有
-- `LayerUtility: ICMask` —— 2/4 个有
-- `LayerUtility: ICMaskCropBack` —— 2/4 个有
-- `LayerUtility: RestoreCropBox` —— 2/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `preview_mask` —— 1/4 个有
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `LayerUtility: CropByMask V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `PreviewMask_` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 20 - 25 | 4 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 26.5 | - | 2 | 94% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | normal | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,8 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 20 - 25，4 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 26.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 normal，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -2,71 +2,79 @@
 name: unknown_workflow_lora_sampler_clip_169
 type: Unknown Workflow
 frequency: 4
-level: weak
-coverage: 0.75275
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.802
+common_nodes: [AudioCrop, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadAudio, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ]
+problems: []
 missing: []
-members: [图片生成/图生图/26.tonnie-Qwen局部重绘（改中文）_1998076860787490818.json, 图片生成/图生图/29.tonnie-wan2.2最强修手_2001777953891577858.json, 图片生成/图生图/FusionX 稳定修手_1947821442744336385.json, 图片生成/图生图/Klein文生图CG动漫风格（修手）_2043430633757741058.json]
+members: [视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json, 视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json, 视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json, 视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_169
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/26.tonnie-Qwen局部重绘（改中文）_1998076860787490818.json、图片生成/图生图/29.tonnie-wan2.2最强修手_2001777953891577858.json、图片生成/图生图/FusionX 稳定修手_1947821442744336385.json、图片生成/图生图/Klein文生图CG动漫风格（修手）_2043430633757741058.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json、视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json、视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json、视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
+- `AudioCrop`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
-- `LoadImage`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UnetLoaderGGUF`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `InpaintModelConditioning` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `Mask Fill Holes` —— 2/4 个有
+- `CreateVideo` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `SaveVideo` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `LTXVImgToVideoInplace` —— 2/4 个有
+- `LTXVLatentUpsampler` —— 2/4 个有
+- `LTXVPreprocess` —— 2/4 个有
+- `LatentUpscaleModelLoader` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
 - `PreviewImage` —— 2/4 个有
-- `ColorCorrect` —— 1/4 个有
-- `ImageAndMaskPreview` —— 1/4 个有
-- `Kontext Inpainting Conditioning` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
+- `LTX2_NAG` —— 1/4 个有
+- `MaskPreview` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 10 | 4 | 66% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 3.5 | 4 | 47% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 0.475 | 0.2 - 1 | 4 | 39% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 10，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 47%
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 0.475，观测区间 0.2 - 1，4 个样本，取值分散，一致性仅 39%
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

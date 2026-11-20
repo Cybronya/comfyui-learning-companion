@@ -1,61 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_562
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9224
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.441
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json, 图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json, 平台全量/自定义Wan2.2视频内容_2009426801088532482.json, 视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json, 视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json]
+members: [视频生成/图生视频/MiniMaxH38高动态加速流_2091799612456783873.json, 视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json, 视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_562
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json、图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json、平台全量/自定义Wan2.2视频内容_2009426801088532482.json、视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json、视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH38高动态加速流_2091799612456783873.json、视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json、视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json、视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_ImageStitch` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `ImageFromBatch+` —— 4/5 个有
-- `ImageStitch` —— 4/5 个有
-- `RMBG` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `RH_Nano_Banana_Image2Image` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `ExtendIntermediateSigmas` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `FloatConstant` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 

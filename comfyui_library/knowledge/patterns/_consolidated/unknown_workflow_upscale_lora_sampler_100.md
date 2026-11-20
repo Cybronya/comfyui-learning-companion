@@ -3,68 +3,71 @@ name: unknown_workflow_upscale_lora_sampler_100
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.903
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text Concatenate, DualCLIPLoader, EmptyLatentImage, FluxSampler, ImageScaleBy, ImageUpscaleWithModel, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.597
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningAverage, Florence2ModelLoader, Florence2Run, GetNode, Image Comparer (rgthree), ImageResizeKJ, ImageScaleToTotalPixels, ImageSmartSharpen+, ImageUpscaleWithModel, KSamplerSelect, LoadImage, LoraLoaderModelOnly, Manual XY Entry Info, ModelSamplingSD3, NAGGuider, PathchSageAttentionKJ, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, TTP_CoordinateSplitter, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTP_condsetarea_merge, TTP_condtobatch, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/反推提示词/沙雕动画场景{写实转动漫}_超清反推出图_1934615857110949889.json, 图片生成/文生图/沙雕动漫提示词都市动漫图片FLUX_1934960733677658114.json]
+members: [图片生成/图生图/wan2.2+ttp放大【分块提示词】+nag高清放大_1955888060602961921.json, 图片生成/图生图/✅wan2.2+ttp放大+nag-高清放大_细节修复-分块提示词_1950234235819966466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_100
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/沙雕动画场景{写实转动漫}_超清反推出图_1934615857110949889.json、图片生成/文生图/沙雕动漫提示词都市动漫图片FLUX_1934960733677658114.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/wan2.2+ttp放大【分块提示词】+nag高清放大_1955888060602961921.json、图片生成/图生图/✅wan2.2+ttp放大+nag-高清放大_细节修复-分块提示词_1950234235819966466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `CR Text Concatenate`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxSampler`
-- `ImageScaleBy`
+- `ConditioningAverage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJ`
+- `ImageScaleToTotalPixels`
+- `ImageSmartSharpen+`
 - `ImageUpscaleWithModel`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `Manual XY Entry Info`
+- `ModelSamplingSD3`
+- `NAGGuider`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `TTP_CoordinateSplitter`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TTP_condsetarea_merge`
+- `TTP_condtobatch`
 - `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowStringText` —— 1/2 个有
-- `CR Upscale Image` —— 1/2 个有
-- `CannyEdgePreprocessor` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `Joy_caption_alpha_load` —— 1/2 个有
-- `Joy_caption_alpha_run` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `SDVN Translate` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1184 | - | 2 | 86% |
-| 高度 | 768 | - | 2 | 100% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,6 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1184，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

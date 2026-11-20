@@ -1,65 +1,49 @@
 ---
 name: unknown_workflow_upscale_sampler_2
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.850769
-common_nodes: [Get Image Size, GetImageRangeFromBatch, ImageCASharpening+, ImageResize+, ImpactMinMax, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch]
+frequency: 8
+level: moderate
+coverage: 0.703375
+common_nodes: [PrimitiveStringMultiline, RHHiddenNodes, SaveImage, ShowText|pysssss, WujiQwenEditor, WujiSampler, WujiUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/03-17-04-WAN2.1-图片高清放大-FlashVsr1.1+SeedVR2.5+TTP分块_2000041264647110658.json, 图片生成/图生图/2K图像超清放大工作流  浮云_1998297538107203585.json, 图片生成/图生图/一键8K图像超清放大修复FlashVsr1.1+SeedVR2.5+TTP分块_1995018321785499649.json, 图片生成/图生图/图片高清放大修复FlashVSR+SeedVR2.5_2001462449176014850.json, 图片生成/图生图/最强8K图像超清放大工作流  浮云_1995307793727074305.json, 图片生成/图生图/最强8K图像高清超清放大修复FlashVsr1.1+SeedVR2.5+TTP分块_1994746471113166850.json, 图片生成/图生图/最强8K图像高清超清放大修复FlashVsr1.1+SeedVR2.5+TTP分块_1994991712038793217.json, 图片生成/图生图/漫剧专用 8K直出 极致细节_2045575557361967105.json, 图片生成/图生图/超强8K放大修复-极致细节，毫厘必现_1995113403595284482.json, 图片生成/图生图/（能力层调用）图像4K放大_2066692074161926145.json, 图片生成/图生图/（能力层调用）图像4K放大_2067512612836958210.json, 平台全量/8K图像高清超清放大修复RFMSR+SeedVR2.5+TTP分块_2082689584877629441.json, 平台全量/KR_图片超分处理（15号流） (1)_2062732910196781057.json]
+members: [图片生成/文生图/Z-image ZIB+SeedVR2.5.1+超真实感定妆照文生图_2018497861872259074.json, 图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 写实妆造文生图_2019302519515652098.json, 图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 超真实感定妆照文生图_2018160748647686146.json, 图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 超真实感定妆照文生图_2019047156476289026.json, 图片生成/文生图/ZIB+SeedVR2.5.1 超真实感定妆照文生图_2021793194589036545.json, 图片生成/文生图/搭配SeeDance 2.0AI短剧漫剧专用超真实感角色卡Z-image ZIB模型_2026489804094967809.json, 图片生成/文生图/角色生成Z-imageZIB模型_2027227031502594050.json, 数字人/数字人/SeeDance 2.0AI短剧漫剧人物生成机_2026838938404528130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/03-17-04-WAN2.1-图片高清放大-FlashVsr1.1+SeedVR2.5+TTP分块_2000041264647110658.json、图片生成/图生图/2K图像超清放大工作流  浮云_1998297538107203585.json、图片生成/图生图/一键8K图像超清放大修复FlashVsr1.1+SeedVR2.5+TTP分块_1995018321785499649.json、图片生成/图生图/图片高清放大修复FlashVSR+SeedVR2.5_2001462449176014850.json、图片生成/图生图/最强8K图像超清放大工作流  浮云_1995307793727074305.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Z-image ZIB+SeedVR2.5.1+超真实感定妆照文生图_2018497861872259074.json、图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 写实妆造文生图_2019302519515652098.json、图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 超真实感定妆照文生图_2018160748647686146.json、图片生成/文生图/Z-image红潮ZIB+SeedVR2.5.1 超真实感定妆照文生图_2019047156476289026.json、图片生成/文生图/ZIB+SeedVR2.5.1 超真实感定妆照文生图_2021793194589036545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `Get Image Size`
-- `GetImageRangeFromBatch`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+全部 8 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+- `ShowText|pysssss`
+- `WujiQwenEditor`
+- `WujiSampler`
+- `WujiUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 12/13 个有
-- `FlashVSR_SM_KSampler` —— 11/13 个有
-- `FlashVSR_SM_Model` —— 11/13 个有
-- `Image Comparer (rgthree)` —— 11/13 个有
-- `JWInteger` —— 10/13 个有
-- `PreviewImage` —— 8/13 个有
-- `ImageConcanate` —— 7/13 个有
-- `easy cleanGpuUsed` —— 3/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `FlashVSRNode` —— 1/13 个有
-- `PDIMAGE_LongerSize` —— 1/13 个有
-- `RH_RFMSR_ModelLoader` —— 1/13 个有
-- `RH_RFMSR_Upscale` —— 1/13 个有
+- `Any Switch (rgthree)` —— 5/8 个有
+- `Fast Groups Muter (rgthree)` —— 5/8 个有
+- `CLIPLoader` —— 4/8 个有
+- `UNETLoader` —— 4/8 个有
+- `VAELoader` —— 4/8 个有
+- `WujiLoader` —— 4/8 个有
+- `WujiCleaner` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1.30362e+09 | 4.56375e+08 - 2.0998e+09 | 11 | 50% |
-| Prompt 约束强度(CFG) | randomize | - | 11 | 100% |
-| 采样算法 | 2 | 2 - 2 | 11 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 11 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,10 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.30362e+09，观测区间 4.56375e+08 - 2.0998e+09，11 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，11 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，11 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，11 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，11 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 2.0998e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

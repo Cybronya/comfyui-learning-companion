@@ -1,44 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_936
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.923
-common_nodes: [BasicGuider, CLIPLoader, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3HybridModelLoaderT8Advanced, MiniMaxH3LoRACompatibilityLoaderT8Advanced, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAELoader, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.8685
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json]
+members: [视频生成/图生视频/wan2.2官方版图生视频_1992405756192550914.json, 视频生成/图生视频/图生视频 _ 高动态 _ wan 1030_1988897566454591490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_936
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2官方版图生视频_1992405756192550914.json、视频生成/图生视频/图生视频 _ 高动态 _ wan 1030_1988897566454591490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3HybridModelLoaderT8Advanced`
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CM_IntToFloat` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `Seed (rgthree)` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `wanBlockSwap` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler_ancestral | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -46,4 +68,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

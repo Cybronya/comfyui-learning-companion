@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_80
 type: Unknown Workflow
-frequency: 19
+frequency: 17
 level: moderate
-coverage: 0.634263
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, VoxCPM_TTS]
+coverage: 0.7
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/音频-单人文本配音方言-VoxCPM TTS_1979209711771881473.json, 音频生成/音频生成/VoxCPM 1.5模型 TTS_2004529592717246465.json, 音频生成/音频生成/VoxCPM TTS_1982760850182291457.json, 音频生成/音频生成/上海话克隆方案_2019290074126487554.json, 音频生成/音频生成/声音克隆-王也-TTS_1970759411755065345.json, 音频生成/音频生成/声音克隆方言版VoxCPM TTS_1970700878623764482.json, 音频生成/音频生成/支持方言克隆VoxCPM TTS_2033823161522855937.json, 音频生成/音频生成/方言克隆VoxCPM TTS V1.5_1970710435227987969.json, 音频生成/音频生成/方言克隆VoxCPM TTS V1.5_2034104742531567617.json, 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS V2_1970517276229332994.json, 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json, 音频生成/音频生成/（四川话冯宝宝版）VoxCPM 1.5模型新版 TTS V6_1970503768104181762.json, 音频生成/音频生成/（天津话）VoxCPM 1.5模型 TTS V3_1970510709371117570.json, 音频生成/音频生成/（天津话）VoxCPM 1.5模型TTS语音克隆新版_2015817229698342914.json, 音频生成/音频生成/（广东话）VoxCPM 1.5模型 TTS V3_1970515445252038658.json, 音频生成/音频生成/（广东话）VoxCPM TTS V2_1993570822308773890.json, 音频生成/音频生成/（广西话）VoxCPM 1.5模型TTS语音克隆新版_2015820758781534209.json, 音频生成/音频生成/（河南话）VoxCPM 1.5模型TTS语音克隆新版_2015815964285214722.json, 音频生成/音频生成/（粤语）VoxCPM 1.5模型TTS语音克隆新版_2015812620049190914.json]
+members: [图片生成/图生图/爆火拼贴风格_2015781110902431745.json, 图片生成/图生图/生成属于自己的表情包_2035204437177798657.json, 图片生成/图生图/白底服装精修・原生质感还原_2038135664767668226.json, 图片生成/图生图/简约版拍立得一键生成器_2032039795228155906.json, 图片生成/图生图/经典动漫全员梦幻同框_2039315266831650817.json, 图片生成/图生图/职场人AI照相馆_2014988136681574401.json, 图片生成/图生图/花丛里闪个大片_2039565322868494337.json, 图片生成/图生图/蜡笔手绘风格_2033766037648318466.json, 图片生成/图生图/街潮玩偶镜像_2019636309530255362.json, 图片生成/图生图/角色分解图_2034977788750467074.json, 图片生成/图生图/软萌手账・甜系光影随笔_2037406784532516866.json, 图片生成/图生图/这波好运，直接拉满_2021160663120351234.json, 图片生成/图生图/这波好运，直接拉满~_2021165660310605826.json, 图片生成/图生图/霓虹像素同框_2016407188847206402.json, 图片生成/图生图/青春元气拼贴_2033521478829875201.json, 图片生成/图生图/💕与我的世界角色同框_2014616187652542466.json, 数字人/数字人/斜联仰拍・新春氛围感_2021840858697437186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_80
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（数字人/数字人/音频-单人文本配音方言-VoxCPM TTS_1979209711771881473.json、音频生成/音频生成/VoxCPM 1.5模型 TTS_2004529592717246465.json、音频生成/音频生成/VoxCPM TTS_1982760850182291457.json、音频生成/音频生成/上海话克隆方案_2019290074126487554.json、音频生成/音频生成/声音克隆-王也-TTS_1970759411755065345.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/爆火拼贴风格_2015781110902431745.json、图片生成/图生图/生成属于自己的表情包_2035204437177798657.json、图片生成/图生图/白底服装精修・原生质感还原_2038135664767668226.json、图片生成/图生图/简约版拍立得一键生成器_2032039795228155906.json、图片生成/图生图/经典动漫全员梦幻同框_2039315266831650817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `VoxCPM_TTS`
+全部 17 个 workflow 都包含：
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 2/19 个有
-- `easy seed` —— 1/19 个有
+- `Textbox` —— 16/17 个有
+- `RH_Captioner` —— 1/17 个有
 
 ## 典型参数
 

@@ -1,70 +1,62 @@
 ---
 name: unknown_workflow_sampler_clip_vae_22
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.868364
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: strong
+coverage: 1
+common_nodes: [CLIPTextEncode, EmptySenseNovaLatentImage, JWInteger, KSampler, SaveImage, SenseNovaSamplingOptions, SenseNovaU15Loader, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/QWEN image 引导版工作流  附多图像范例及提示词模板_1975853038126632962.json, 图片生成/文生图/Qwen-Image 超级加速简体中文版_1966547887809343490.json, 图片生成/文生图/Qwen-Image极速版文生图V1_1961312747210346498.json, 图片生成/文生图/Qwen-Image极速版文生图V1_2038788902223351809.json, 图片生成/文生图/Qwen千问反推生图，中文生成王者_1952795772553203714.json, 图片生成/文生图/Qwen千问文生图+lora_1953742275262251009.json, 图片生成/文生图/Qwen千问文生图8步lora加速_1954707955675480065.json, 图片生成/文生图/Qwen千问文生图，最佳中文生成_1952594396518780930.json, 图片生成/文生图/千问image2512文生图_2006334068803248129.json, 图片生成/文生图/千问image文生图_1973958786882908161.json, 图片生成/文生图/千问国庆中秋双节海报制作_1967092738313293826.json]
+members: [图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093391746997768193.json, 图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json, 图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093662961184366594.json, 图片生成/图生图/SenseNova_1.5_SFT图像编辑_2097130331257270274.json, 图片生成/图生图/SenseNova_1.5_SFT图像编辑_2097229171482259458.json, 图片生成/文生图/SenseNova SFT 文生图_2093391761937887234.json, 图片生成/文生图/SenseNova SFT 文生图_2093628735328186370.json, 图片生成/文生图/SenseNova SFT 文生图_2093661381492035585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_22
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/QWEN image 引导版工作流  附多图像范例及提示词模板_1975853038126632962.json、图片生成/文生图/Qwen-Image 超级加速简体中文版_1966547887809343490.json、图片生成/文生图/Qwen-Image极速版文生图V1_1961312747210346498.json、图片生成/文生图/Qwen-Image极速版文生图V1_2038788902223351809.json、图片生成/文生图/Qwen千问反推生图，中文生成王者_1952795772553203714.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093391746997768193.json、图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json、图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093662961184366594.json、图片生成/图生图/SenseNova_1.5_SFT图像编辑_2097130331257270274.json、图片生成/图生图/SenseNova_1.5_SFT图像编辑_2097229171482259458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
+- `EmptySenseNovaLatentImage`
+- `JWInteger`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `SenseNovaSamplingOptions`
+- `SenseNovaU15Loader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 10/11 个有
-- `easy cleanGpuUsed` —— 8/11 个有
-- `PreviewImage` —— 7/11 个有
-- `UNETLoader` —— 7/11 个有
-- `CR Text` —— 6/11 个有
-- `LoadImage` —— 6/11 个有
-- `LoraLoaderModelOnly` —— 4/11 个有
-- `NunchakuQwenImageDiTLoader` —— 4/11 个有
-- `LayerUtility: PurgeVRAM` —— 3/11 个有
-- `CR SDXL Aspect Ratio` —— 1/11 个有
-- `NunchakuQwenImageLoraLoader` —— 1/11 个有
-- `RH_Captioner` —— 1/11 个有
+- `ImageConcanate` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `LoadImage` —— 5/8 个有
+- `SenseNovaReferenceImage` —— 5/8 个有
+- `CR Prompt Text` —— 3/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 11 | 66% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 11 | 54% |
-| 采样算法 | euler | - | 11 | 91% |
-| 调度器 | simple | - | 11 | 64% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 50 | 50 - 50 | 8 | 100% |
+| Prompt 约束强度(CFG) | 3.5 | 3 - 3.5 | 8 | 93% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | normal | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，11 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，11 个样本
-- 采样算法 最常用 euler，11 个样本，一致性 91%
-- 调度器 最常用 simple，11 个样本，一致性 64%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 50，观测区间 50 - 50，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 3 - 3.5，8 个样本，取值集中（一致性 93%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 normal，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

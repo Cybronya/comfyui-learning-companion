@@ -1,42 +1,52 @@
 ---
 name: unknown_workflow_video_sampler_36
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.814
-common_nodes: [Echo_LoadModel, Echo_Sampler, ImageResizeAdvanced, LoadAudio, LoadImage, PreviewImage, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.4925
+common_nodes: [AddLabel, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetImageSize, GetNode, ImageConcatMulti, ImageResizeKJ, SDVN Any Show, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy int, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json, 平台全量/EchoMimic_v2数字人语音驱动支持手势_1861508087180873730.json, 视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json, 视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json]
+members: [视频生成/图生视频/FlashVSR-视频放大 高清视频放大 最强视频放大神器 高清修复-速度快 显存占用低_2006193866545827841.json, 视频生成/图生视频/FlashVSR-视频放大-高清修复-速度快，显存占用低_2000859857857245185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json、平台全量/EchoMimic_v2数字人语音驱动支持手势_1861508087180873730.json、视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json、视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FlashVSR-视频放大 高清视频放大 最强视频放大神器 高清修复-速度快 显存占用低_2006193866545827841.json、视频生成/图生视频/FlashVSR-视频放大-高清修复-速度快，显存占用低_2000859857857245185.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Echo_LoadModel`
-- `Echo_Sampler`
-- `ImageResizeAdvanced`
-- `LoadAudio`
-- `LoadImage`
-- `PreviewImage`
+全部 2 个 workflow 都包含：
+- `AddLabel`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `GetImageSize`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `SDVN Any Show`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/4 个有
+- `VHS_VideoInfo`
+- `easy int`
+- `easy seed`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8.20906e+08 | - | 2 | 21% |
+| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | 3.5 | - | 2 | 100% |
+| 重绘幅度 | 11 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -44,4 +54,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8.20906e+08，样本不足，未给区间，2 个样本，取值分散，一致性仅 21%
+- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.46652e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

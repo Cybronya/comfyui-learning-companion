@@ -1,71 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_clip_185
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.88275
-common_nodes: [Any Switch (rgthree), AspectRatio, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, ImageResize+, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly_Any, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TT_img_enc_v2, TwoWaySwitch, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.936667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoConditionOnly, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json, 图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json, 图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json, 图片生成/文生图/Flux2 Klein 文生图 平替全能图片 9B 质量 _支持两种出图方式_2029393137902292993.json]
+members: [图片生成/图生图/LTX2.5 - CQ Enhancer lora for images 图像高清修复放大工具-RH_2100842979803095041.json, 图片生成/图生图/Workflow_LTX2.5 - CQ Enhancer lora for images.json_2100773980268490754.json, 数字人/数字人/LTX2.5 - CQ Enhancer lora video 视频高清修复放大工具-小宣喧-RH_2100842998178340866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_185
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json、图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json、图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json、图片生成/文生图/Flux2 Klein 文生图 平替全能图片 9B 质量 _支持两种出图方式_2029393137902292993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LTX2.5 - CQ Enhancer lora for images 图像高清修复放大工具-RH_2100842979803095041.json、图片生成/图生图/Workflow_LTX2.5 - CQ Enhancer lora for images.json_2100773980268490754.json、数字人/数字人/LTX2.5 - CQ Enhancer lora video 视频高清修复放大工具-小宣喧-RH_2100842998178340866.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AspectRatio`
+全部 3 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
-- `Int`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly_Any`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoConditionOnly`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ReferenceLatent`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `TT_img_enc_v2`
-- `TwoWaySwitch`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadLoraOnly` —— 2/4 个有
-- `MergeLoraToModel` —— 2/4 个有
-- `easy prompt` —— 2/4 个有
-- `easy promptConcat` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `PrimitiveFloat` —— 1/4 个有
-- `Textbox` —— 1/4 个有
-- `easy saveText` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `llama_cpp_instruct_adv` —— 1/4 个有
-- `llama_cpp_model_loader` —— 1/4 个有
+- `ImpactInt` —— 2/3 个有
+- `LG_Color_Match_V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `FL_Switch` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `KOOK_SaveJPGImage` —— 1/3 个有
+- `LTXVAudioVAEDecode` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/3 个有
+- `LTXVConcatAVLatent` —— 1/3 个有
+- `LTXVEmptyLatentAudio` —— 1/3 个有
+- `LTXVSeparateAVLatent` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 1 | 100% |
+| 高度 | 25 | - | 1 | 100% |
 
 ## 常见问题
 

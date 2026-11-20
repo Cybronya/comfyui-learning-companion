@@ -3,82 +3,64 @@ name: unknown_workflow_sampler_clip_unet_328
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7575
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImpactMinMax, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
-problems: []
+coverage: 0.95225
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, QwenImageLatentAspectRatio, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2-kelin人物一致性换装_2094700257849462785.json, 平台全量/Flux2-kelin人物一致性换装_2043907440378388482.json, 平台全量/开源模型flux_klein建筑室内外效果图工作流+高清放大_2056269427657756673.json, 平台全量/开源模型flux_klein建筑室内外效果图工作流+高清放大应用2_2057395635455873026.json]
+members: [图片生成/文生图/ZImage文生图高清生图工作流_1995538393234857986.json, 图片生成/文生图/ZImage，文生图高清生图工作流_1994233153258799106.json, 图片生成/文生图/真人感文生图_1996075408321888258.json, 图片生成/文生图/菜单菜品商品电商人物动物品文生图 【用积分】_2074679846487289857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_328
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2-kelin人物一致性换装_2094700257849462785.json、平台全量/Flux2-kelin人物一致性换装_2043907440378388482.json、平台全量/开源模型flux_klein建筑室内外效果图工作流+高清放大_2056269427657756673.json、平台全量/开源模型flux_klein建筑室内外效果图工作流+高清放大应用2_2057395635455873026.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/ZImage文生图高清生图工作流_1995538393234857986.json、图片生成/文生图/ZImage，文生图高清生图工作流_1994233153258799106.json、图片生成/文生图/真人感文生图_1996075408321888258.json、图片生成/文生图/菜单菜品商品电商人物动物品文生图 【用积分】_2074679846487289857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
-- `KSamplerSelect`
-- `LoadImage`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `QwenImageLatentAspectRatio`
 - `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
-- `DF_Get_image_size` —— 2/4 个有
-- `DF_Integer` —— 2/4 个有
-- `Get Image Size` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `JWFloat` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `AILab_QwenVL_Advanced` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `Text List` —— 1/4 个有
-- `Text List to Text` —— 1/4 个有
-- `easy positive` —— 1/4 个有
+- `MuyeTextEditOutput` —— 3/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `LatentUpscaleBy` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 4 - 9 | 4 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 0.75 | 0.5 - 1 | 4 | 67% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 4 - 9，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 0.75，观测区间 0.5 - 1，4 个样本
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

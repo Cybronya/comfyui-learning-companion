@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_73
 type: Unknown Workflow
-frequency: 20
+frequency: 17
 level: moderate
-coverage: 0.98275
-common_nodes: [CR Prompt Text, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.983941
+common_nodes: [LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json, 音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json, 音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json, 音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json, 音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json, 音频生成/音频生成/VoxCPM2语音克隆(四川话)_2047577873472561153.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（天津话）V3_2041826223764021250.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（广东话）V3_2041823275411574786.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（河南话）V3_2041823297939185665.json, 音频生成/音频生成/VoxCPM2语音克隆（天津话）_2047581701450244098.json, 音频生成/音频生成/VoxCPM2语音克隆（广东话）_2047575508455530497.json, 音频生成/音频生成/VoxCPM2语音克隆（河南话）_2047580936384024578.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2041822737211072514.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2045487794499362817.json, 音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计V2_2041780714080833537.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计_2047580106213822465.json, 音频生成/音频生成/VoxCPM语音克隆_2043262047881793538.json, 音频生成/音频生成/VoxCPM：最强语音克隆+音频设计_2042490156510355457.json, 音频生成/音频生成/【AI音频】 - VoxCPM2语音克隆设计_2043155950047076353.json]
+members: [图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json, 数字人/数字人/HeyGem 数字人_1925527587681136642.json, 数字人/数字人/HeyGem 数字人口播工作流_2081255647898853377.json, 数字人/数字人/HeyGem口播数字人_2031281536267456513.json, 数字人/数字人/HeyGem对口型_2083001180531286018.json, 数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json, 数字人/数字人/HeyGem数字人新版V2.0_1925826186901934081.json, 数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json, 数字人/数字人/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2082326188680368129.json, 数字人/数字人/Heygem数字人_1952194718887260161.json, 数字人/数字人/Heygem数字人_1969131978589151233.json, 数字人/数字人/V3视频对口型HeyGem_2066723231473688577.json, 数字人/数字人/heygem- 视频对口型 v2v 声音驱动视频 影视对口型  外语片翻译_2074321478153228290.json, 数字人/数字人/index TTS + HeyGem 最强数字人对口型_1926189901543534594.json, 音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json, 音频生成/音频生成/HeyGem数字人+语音克隆_1925738543635992577.json, 音频生成/音频生成/HeyGem数字人+语音克隆（极速生成）_1926023691921231874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_73
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json、音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json、音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json、音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json、音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json、数字人/数字人/HeyGem 数字人_1925527587681136642.json、数字人/数字人/HeyGem 数字人口播工作流_2081255647898853377.json、数字人/数字人/HeyGem口播数字人_2031281536267456513.json、数字人/数字人/HeyGem对口型_2083001180531286018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：17
 - **可信度**：中等可信
 - **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CR Prompt Text`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+全部 17 个 workflow 都包含：
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub_VoxCPM_Generate` —— 18/20 个有
-- `LoadAudio` —— 15/20 个有
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/20 个有
-- `RunningHub_VoxCPM_MultiSpeaker` —— 1/20 个有
-- `SaveAudioMP3` —— 1/20 个有
+- `IndexTTSRun` —— 4/17 个有
+- `CR Prompt Text` —— 3/17 个有
+- `SaveAudio` —— 3/17 个有
+- `CR Text` —— 2/17 个有
+- `ImpactSwitch` —— 1/17 个有
+- `easy cleanGpuUsed` —— 1/17 个有
 
 ## 典型参数
 

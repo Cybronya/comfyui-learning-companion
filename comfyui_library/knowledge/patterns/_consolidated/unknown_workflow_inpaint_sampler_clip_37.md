@@ -1,92 +1,61 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_37
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: strong
-coverage: 0.9
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageCrop+, InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, LoadImage, MaskToImage, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.845
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX_Redux_电商模特换装_1896041388389826561.json, 图片生成/图生图/FLUX淘宝一键换装换鞋_2014910556368543745.json, 图片生成/图生图/Flux_服装迁移换装_1900211139815403521.json, 图片生成/图生图/【极致精准换装】FLUX 一键快速迁移换装_1929459573017493505.json, 图片生成/图生图/电商场景生成模特，保持模特不变_1899787202992156674.json, 平台全量/FLUX__电商模特产品一致性生成V4_1898490998631419906.json]
+members: [图片生成/图生图/模特局部修改-Flux_1958484921721503746.json, 图片生成/图生图/灵弦无痕扩图工作流_1932358260127690753.json, 图片生成/图生图/电商图片扩图 FluxOneReward_1992130460604231682.json, 图片生成/图生图/👾怪獸-OneReward局部重绘👾_2014683004244860930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_37
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX_Redux_电商模特换装_1896041388389826561.json、图片生成/图生图/FLUX淘宝一键换装换鞋_2014910556368543745.json、图片生成/图生图/Flux_服装迁移换装_1900211139815403521.json、图片生成/图生图/【极致精准换装】FLUX 一键快速迁移换装_1929459573017493505.json、图片生成/图生图/电商场景生成模特，保持模特不变_1899787202992156674.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/模特局部修改-Flux_1958484921721503746.json、图片生成/图生图/灵弦无痕扩图工作流_1932358260127690753.json、图片生成/图生图/电商图片扩图 FluxOneReward_1992130460604231682.json、图片生成/图生图/👾怪獸-OneReward局部重绘👾_2014683004244860930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `ImageConcanate`
-- `ImageCrop+`
-- `InpaintCrop`
 - `InpaintModelConditioning`
-- `InpaintStitch`
 - `KSampler`
 - `LoadImage`
-- `MaskToImage`
 - `SaveImage`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageToMask` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `StyleModelApply` —— 5/6 个有
-- `GetImageSize+` —— 4/6 个有
-- `GroundingDinoModelLoader (segment anything)` —— 4/6 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 4/6 个有
-- `Image Filter Adjustments` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `SAMModelLoader (segment anything)` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `ConstrainImage|pysssss` —— 3/6 个有
-- `ImageResize+` —— 3/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `InspyrenetRembg` —— 2/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `GetImageSize_` —— 1/6 个有
-- `Image To Mask` —— 1/6 个有
-- `ImageCrop` —— 1/6 个有
-- `ImpactInt` —— 1/6 个有
-- `LayerColor: Brightness & Contrast` —— 1/6 个有
-- `LayerMask: BiRefNetUltra` —— 1/6 个有
-- `LayerUtility: ColorImage V2` —— 1/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `PreviewBridge` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `ReduxAdvanced` —— 1/6 个有
-- `easy clearCacheAll` —— 1/6 个有
-- `easy makeImageForICLora` —— 1/6 个有
-- `preview_mask` —— 1/6 个有
+- `PreviewImage` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `ImagePadForOutpaint` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 20 - 35 | 6 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -94,8 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 20 - 35，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

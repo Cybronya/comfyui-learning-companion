@@ -3,74 +3,68 @@ name: unknown_workflow_lora_sampler_unet_163
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9342
-common_nodes: [CLIPLoader, EmptyLatentImage, GetImageSize, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9172
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Moss_Image_EDIT 图像编辑工作流_2113950613439606785.json, 图片生成/图生图/Qwen edit 千问编辑_1958364031461572610.json, 图片生成/图生图/QwenImageEdit-8Steps_1958006497307504641.json, 图片生成/文生图/QwenImageEdit-8step基础版_1960161305468547074.json, 平台全量/Qwen image Edit模型八种用法_1958061647464189953.json]
+members: [视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json, 视频生成/文生视频/MiniMax_H3_文生视频加速_2099770316435316738.json, 视频生成/文生视频/MiniMax_H3_文生视频加速_2100031727967232001.json, 视频生成/文生视频/Minimax_h3_超级加速文生视频_2084160987023896578.json, 视频生成/文生视频/文生视频-MiniMaxH3-BV1-模板_2090725747148288002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_163
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Moss_Image_EDIT 图像编辑工作流_2113950613439606785.json、图片生成/图生图/Qwen edit 千问编辑_1958364031461572610.json、图片生成/图生图/QwenImageEdit-8Steps_1958006497307504641.json、图片生成/文生图/QwenImageEdit-8step基础版_1960161305468547074.json、平台全量/Qwen image Edit模型八种用法_1958061647464189953.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json、视频生成/文生视频/MiniMax_H3_文生视频加速_2099770316435316738.json、视频生成/文生视频/MiniMax_H3_文生视频加速_2100031727967232001.json、视频生成/文生视频/Minimax_h3_超级加速文生视频_2084160987023896578.json、视频生成/文生视频/文生视频-MiniMaxH3-BV1-模板_2090725747148288002.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `GetImageSize`
-- `KSampler`
-- `LoadImage`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEdit` —— 4/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `ImageScaleToTotalPixels` —— 3/5 个有
-- `ModelSamplingAuraFlow` —— 3/5 个有
-- `PrimitiveString` —— 2/5 个有
-- `CFGNorm` —— 1/5 个有
-- `FluxKontextImageScale` —— 1/5 个有
-- `MOSSImageOstrisEditModelPatch` —— 1/5 个有
-- `SkipLayerGuidanceDiTSimple` —— 1/5 个有
-- `TextEncodeMOSSImageOstrisEdit` —— 1/5 个有
+- `CreateVideo` —— 4/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `SaveVideo` —— 4/5 个有
+- `Seed (rgthree)` —— 4/5 个有
+- `Label (rgthree)` —— 3/5 个有
+- `CR Text` —— 2/5 个有
+- `VHS_VideoCombine` —— 2/5 个有
+- `INTConstant` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `PainterVRAM` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `Text Find and Replace` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
+- `TextOverlay` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 30 | 5 | 29% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 5 | 43% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 512 | 512 - 1032 | 5 | 66% |
-| 高度 | 512 | 512 - 1024 | 5 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 30，5 个样本，取值分散，一致性仅 29%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，5 个样本，取值分散，一致性仅 43%
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 1032，5 个样本
-- 高度 中位数 512，观测区间 512 - 1024，5 个样本
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

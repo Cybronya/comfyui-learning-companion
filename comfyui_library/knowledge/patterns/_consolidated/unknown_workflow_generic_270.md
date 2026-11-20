@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_270
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.8858
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.688
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [平台全量/可灵 O1 视频编辑 指令变换_1995677270197022722.json, 平台全量/可灵 v2.6 Motion Control_2016763198224994306.json, 平台全量/可灵 v2.6 Motion Control_2039168673016975361.json, 平台全量/可灵O1视频人物替换_1997876383416246273.json, 数字人/数字人/可灵v2.6动作控制Klingv2.6+动作模仿+动作迁移+对口型_2029093246118400002.json, 视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json, 视频生成/图生视频/可灵 v2.6 Motion Control_2018215664321830914.json, 视频生成/图生视频/可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高难度动作画面细节听指令_2054007288427499522.json]
+members: [视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json, 视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json, 视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json, 视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json, 视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json, 视频生成/文生视频/全能视频S-卖护肤品+衣服+兵马俑_1977261430313492482.json, 视频生成/文生视频/全能视频S-图生视频-蛤蟆精_1994200651171299330.json, 视频生成/文生视频/全能视频S-文生视频-与小时候的自己一起玩耍_1978032008305717250.json, 视频生成/文生视频/全能视频S-文生视频-老鼠人_1990657346928074753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_270
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/可灵 O1 视频编辑 指令变换_1995677270197022722.json、平台全量/可灵 v2.6 Motion Control_2016763198224994306.json、平台全量/可灵 v2.6 Motion Control_2039168673016975361.json、平台全量/可灵O1视频人物替换_1997876383416246273.json、数字人/数字人/可灵v2.6动作控制Klingv2.6+动作模仿+动作迁移+对口型_2029093246118400002.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json、视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json、视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json、视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json、视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
+- `RH_Sora2_I2V`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Kling26_MotionControl` —— 6/10 个有
-- `RH_KlingO1_VideoEdit` —— 4/10 个有
-- `CR Text` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `RH_Sora2_T2V` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
 
 ## 典型参数
 

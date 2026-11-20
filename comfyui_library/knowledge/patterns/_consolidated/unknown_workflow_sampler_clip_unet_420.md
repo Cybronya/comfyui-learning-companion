@@ -1,60 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_420
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.866333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, GetImageSize, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.8705
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Flux2Scheduler, FluxKontextImageScale, ImageScaleBy, KSamplerSelect, LoadImage, PreviewAny, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize, easy positive]
 problems: []
 missing: []
-members: [图片生成/图生图/千问Qwen-inpaint（局部重绘）_1958799757202317313.json, 图片生成/图生图/千问Qwen-inpaint（局部重绘）_2003855266217115649.json, 图片生成/图生图/千问反推出图_1954724393643589634.json]
+members: [图片生成/图生图/F2klein沙发白底图与室内场景图融合工作流_2060871504107237377.json, 图片生成/图生图/Flux2-klein-风格转换_2027976064428937217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_420
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问Qwen-inpaint（局部重绘）_1958799757202317313.json、图片生成/图生图/千问Qwen-inpaint（局部重绘）_2003855266217115649.json、图片生成/图生图/千问反推出图_1954724393643589634.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/F2klein沙发白底图与室内场景图融合工作流_2060871504107237377.json、图片生成/图生图/Flux2-klein-风格转换_2027976064428937217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `GetImageSize`
-- `KSampler`
+- `EmptyLatentImage`
+- `Flux2Scheduler`
+- `FluxKontextImageScale`
+- `ImageScaleBy`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
+- `PreviewAny`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageSize`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchLoader` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `QwenImageDiffsynthControlnet` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `Mask Fill Holes` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `TextBox` —— 1/3 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RMBG` —— 1/2 个有
+- `SamplerEulerAncestral` —— 1/2 个有
+- `Seed (rgthree)` —— 1/2 个有
+- `WujiStyleSelector` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy promptConcat` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | 2.5 - 3.5 | 3 | 83% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -62,8 +74,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 3.5，3 个样本，取值集中（一致性 83%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,64 +1,53 @@
 ---
 name: unknown_workflow_sampler_clip_unet_112
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.938545
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9508
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2.Klein图像编辑与扩图重绘_2014617059883225089.json, 图片生成/图生图/Flux2Klein 单图编辑 指定画面比例_2013884566422949890.json, 图片生成/图生图/Flux2Klein 单图编辑_2012572910803755010.json, 图片生成/图生图/Flux2Klein 去水印马赛克_2013545657268703234.json, 图片生成/图生图/Flux2Klein 高清化_2013543196827066370.json, 图片生成/图生图/Flux2Klein图像编辑终极版角色一致性_2060283231865495553.json, 图片生成/图生图/Flux2Klein图像编辑终极版角色一致性_2062072605993168898.json, 图片生成/图生图/Flux2_Klein_9B印花提取_2104442102175322114.json, 图片生成/图生图/Flux2_Klein_9B模特换脸工作流_2019648494549602305.json, 图片生成/图生图/【去文字】flux-2-klein-9b_2104893740522491906.json, 图片生成/图生图/扩图工作流（FK2）_2091708039295496194.json]
+members: [图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json, 图片生成/图生图/Flux3加速版多图编辑V1_2114191708626964481.json, 图片生成/图生图/Flux3加速版多图编辑_2111040326122164225.json, 图片生成/图生图/Flux3加速版多图编辑_2111060681888976898.json, 图片生成/图生图/Flux3图像编辑_2111273434834624514.json, 图片生成/图生图/Flux3图像编辑_2114630236741656578.json, 图片生成/图生图/多图编辑Flux3 PE提示词强化加速版_2111482509593763842.json, 图片生成/文生图/FLUX3 PE提示词强化加速版文生图v1_2111364151871365122.json, 图片生成/文生图/FLUX3+PE提示词强化加速版文生图_2111485679510319106.json, 图片生成/文生图/Flux3+PE提示词强化加速版多图编辑_2111485757222383618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_112
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux2.Klein图像编辑与扩图重绘_2014617059883225089.json、图片生成/图生图/Flux2Klein 单图编辑 指定画面比例_2013884566422949890.json、图片生成/图生图/Flux2Klein 单图编辑_2012572910803755010.json、图片生成/图生图/Flux2Klein 去水印马赛克_2013545657268703234.json、图片生成/图生图/Flux2Klein 高清化_2013543196827066370.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json、图片生成/图生图/Flux3加速版多图编辑V1_2114191708626964481.json、图片生成/图生图/Flux3加速版多图编辑_2111040326122164225.json、图片生成/图生图/Flux3加速版多图编辑_2111060681888976898.json、图片生成/图生图/Flux3图像编辑_2111273434834624514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
 - `KSamplerSelect`
-- `LoadImage`
+- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 8/11 个有
-- `ConditioningZeroOut` —— 4/11 个有
-- `Image Comparer (rgthree)` —— 4/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/11 个有
-- `PreviewImage` —— 4/11 个有
-- `ImagePadForOutpaint` —— 3/11 个有
-- `LoraLoaderModelOnly` —— 3/11 个有
-- `DifferentialDiffusion` —— 2/11 个有
-- `DrawMaskOnImage` —— 2/11 个有
-- `IdentityFeatureTransferV3` —— 2/11 个有
-- `AdjustBrightnessContrastSaturationNode` —— 1/11 个有
-- `ColorMatchV2` —— 1/11 个有
-- `EmptyUnitGenerator_UTK` —— 1/11 个有
-- `Fast Groups Muter (rgthree)` —— 1/11 个有
-- `ImageStitch` —— 1/11 个有
-- `InpaintModelConditioning` —— 1/11 个有
-- `PathchSageAttentionKJ` —— 1/11 个有
-- `easy imageConcat` —— 1/11 个有
+- `LoadImage` —— 8/10 个有
+- `ReferenceMultiLatent` —— 8/10 个有
+- `CR Prompt Text` —— 7/10 个有
+- `Flux3PELoader` —— 5/10 个有
+- `Flux3PromptEnhance` —— 5/10 个有
+- `GetLatentSize` —— 5/10 个有
+- `PrimitiveInt` —— 2/10 个有
+- `QwenPERewriteT8` —— 2/10 个有
+- `ResolutionSelector` —— 2/10 个有
+- `PreviewImage` —— 1/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 

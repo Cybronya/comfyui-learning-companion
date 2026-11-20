@@ -3,42 +3,39 @@ name: unknown_workflow_generic_199
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.674455
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 0.856909
+common_nodes: [Audio To Text (mtb), CR Prompt Text, Load Whisper (mtb), LoadAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/反推提示词/探店工作流_2115683075802882050.json, 图片生成/图生图/全能图像G image2.0电商主图制作_2058773169477079042.json, 图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json, 图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json, 图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json, 图片生成/图生图/全能图像G2.0详情页制作_2070059530897158145.json, 图片生成/图生图/全能图片V1 Pro详情页生成PSD格式保存_2008032417004658690.json, 图片生成/图生图/详情页生成器_2009996963613253634.json, 图片生成/文生图/TEMU跨境电商商品详情页生成(psd)_2009507733443190785.json, 图片生成/文生图/国内商品详情页生成(psd)_2008738737584345089.json, 平台全量/电商详情页生成支持国内和跨境电商切换PSD分层_2009652021342773249.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039309185434783746.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039694725573255170.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039215676392480769.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039696306108633089.json, 音频生成/音频生成/单人语音克隆TTS_2044697057641897985.json, 音频生成/音频生成/双人语音克隆对话_2044482244785475586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_199
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/探店工作流_2115683075802882050.json、图片生成/图生图/全能图像G image2.0电商主图制作_2058773169477079042.json、图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json、图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json、图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `easy showAnything`
+- `Audio To Text (mtb)`
+- `CR Prompt Text`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 10/11 个有
-- `PromptBatchQueue` —— 10/11 个有
-- `HAIGC_CombineUnits` —— 9/11 个有
-- `HAIGC_Layer` —— 9/11 个有
-- `HAIGC_SavePSD` —— 9/11 个有
-- `RH_RhartImageG2ImageToImage` —— 6/11 个有
-- `RH_Nano_Banana2_Image2Image` —— 5/11 个有
-- `CR Text Concatenate` —— 1/11 个有
-- `SplitAndExtractText` —— 1/11 个有
-- `Switch any [Crystools]` —— 1/11 个有
+- `SaveAudio` —— 10/11 个有
+- `NormalizeAudioLoudness` —— 9/11 个有
+- `LongCatVoiceCloneTTS` —— 8/11 个有
+- `LongCatMultiSpeakerTTS` —— 3/11 个有
+- `TrimAudioDuration` —— 2/11 个有
+- `TDQwen3TTSDefineSpeaker` —— 1/11 个有
 
 ## 典型参数
 

@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_clip_97
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.943714
+coverage: 0.940571
 common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/空白工作流_1899517701415456770.json, 视频生成/图生视频/美女飞翔+AI视频生成=艾橘溪_1899801104287150081.json, 视频生成/图生视频/羞羞的铁拳+人物拳击特效=艾橘溪_1899436993728696322.json, 视频生成/图生视频/通义万相WAN2.1 图生视频_1913599266676273153.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json, 视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1992837863268216833.json, 视频生成/文生视频/火力 全开！冲锋枪射击特效--万相WAN2.1_1934071211976478722.json]
+members: [视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json, 视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json, 视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json, 视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json, 视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json, 视频生成/图生视频/通义万相之图片捏捏乐_1940715917842214913.json, 视频生成/图生视频/🦖wan2.1 变玩偶捏捏_1925461590995292161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_97
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/空白工作流_1899517701415456770.json、视频生成/图生视频/美女飞翔+AI视频生成=艾橘溪_1899801104287150081.json、视频生成/图生视频/羞羞的铁拳+人物拳击特效=艾橘溪_1899436993728696322.json、视频生成/图生视频/通义万相WAN2.1 图生视频_1913599266676273153.json、视频生成/图生视频/通义万相WAN2.1图生360度旋转视频_1909470636823949313.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json、视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json、视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json、视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json、视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
@@ -36,20 +36,16 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `LayerUtility: PurgeVRAM` —— 6/7 个有
 - `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoTeaCache` —— 5/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `easy imageSize` —— 4/7 个有
-- `ImageUpscaleWithModel` —— 3/7 个有
-- `UpscaleModelLoader` —— 3/7 个有
-- `ImageScaleToTotalPixels` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `TextInput_` —— 2/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Image Batch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `Note _O` —— 1/7 个有
 - `PreviewImage` —— 1/7 个有
-- `Select Image Indices` —— 1/7 个有
-- `TextWildcardList_AS` —— 1/7 个有
-- `WanVideoEnhanceAVideo` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `WanVideoTorchCompileSettings` —— 1/7 个有
 
 ## 典型参数
 

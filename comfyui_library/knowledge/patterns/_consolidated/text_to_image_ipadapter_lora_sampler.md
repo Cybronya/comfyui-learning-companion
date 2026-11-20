@@ -1,101 +1,60 @@
 ---
 name: text_to_image_ipadapter_lora_sampler
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.86825
-common_nodes: [BrushNet, BrushNetLoader, CLIPTextEncode, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, DetailTransfer, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GrowMaskWithBlur, ICLightConditioning, IPAdapter, IPAdapterAdvanced, IPAdapterUnifiedLoader, Image Comparer (rgthree), InspyrenetRembg, KSampler, LayerUtility: ExtendCanvas, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextJoin, LoadAndApplyICLightUnet, LoadImage, LoraLoader, LoraLoaderModelOnly, MaskPreview+, PreviewImage, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy getNode, easy imageSize, easy setNode, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.963
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, IPAdapterFaceID, IPAdapterInsightFaceLoader, IPAdapterModelLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/【升级版】一键人像换背景+自适应环境打光+FLUX优化+_2022610568435212290.json, 图片生成/图生图/一键人像换背景+自适应环境打光+FLUX优化_1977930130830020609.json, 平台全量/【升级版】一键人像换背景+自适应环境打光+FLUX优化_1920834564716171266.json, 平台全量/一键人像换背景+自适应环境打光+FLUX优化_1915340871951122434.json]
+members: [图片生成/图生图/【遇见AI】ipadapter风格迁移功能全讲解_2018229864947523585.json, 图片生成/文生图/WH-AI-Studio-IPAdapter文生图-换脸-根据人脸文生图_2020112202174308353.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_ipadapter_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【升级版】一键人像换背景+自适应环境打光+FLUX优化+_2022610568435212290.json、图片生成/图生图/一键人像换背景+自适应环境打光+FLUX优化_1977930130830020609.json、平台全量/【升级版】一键人像换背景+自适应环境打光+FLUX优化_1920834564716171266.json、平台全量/一键人像换背景+自适应环境打光+FLUX优化_1915340871951122434.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【遇见AI】ipadapter风格迁移功能全讲解_2018229864947523585.json、图片生成/文生图/WH-AI-Studio-IPAdapter文生图-换脸-根据人脸文生图_2020112202174308353.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BrushNet`
-- `BrushNetLoader`
+全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CR Text`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DetailTransfer`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `GrowMaskWithBlur`
-- `ICLightConditioning`
-- `IPAdapter`
-- `IPAdapterAdvanced`
-- `IPAdapterUnifiedLoader`
-- `Image Comparer (rgthree)`
-- `InspyrenetRembg`
+- `IPAdapterFaceID`
+- `IPAdapterInsightFaceLoader`
+- `IPAdapterModelLoader`
 - `KSampler`
-- `LayerUtility: ExtendCanvas`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: TextJoin`
-- `LoadAndApplyICLightUnet`
 - `LoadImage`
-- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `MaskPreview+`
-- `PreviewImage`
-- `RH_Captioner`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `easy getNode`
-- `easy imageSize`
-- `easy setNode`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 3/4 个有
-- `BodySegment` —— 3/4 个有
-- `ControlNetApplyAdvanced` —— 3/4 个有
-- `ControlNetLoader` —— 3/4 个有
-- `FaceDetailer` —— 3/4 个有
-- `Image Overlay` —— 3/4 个有
-- `Joy_caption` —— 3/4 个有
-- `Joy_caption_load` —— 3/4 个有
-- `LayerUtility: ImageRemoveAlpha` —— 3/4 个有
-- `SAMLoader` —— 3/4 个有
-- `SUPIR_Upscale` —— 3/4 个有
-- `SetLatentNoiseMask` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `UltralyticsDetectorProvider` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `easy imageColorMatch` —— 3/4 个有
-- `preview_mask` —— 3/4 个有
+- `IPAdapterAdvanced` —— 1/2 个有
+- `IPAdapterCombineEmbeds` —— 1/2 个有
+- `IPAdapterEmbeds` —— 1/2 个有
+- `IPAdapterEncoder` —— 1/2 个有
+- `IPAdapterUnifiedLoader` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 4 | 33% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 100% |
-| 重绘幅度 | 0.2 | 0.2 - 1 | 4 | 13% |
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
-| LoRA 模型强度 | 0.4 | 0.4 - 0.6 | 4 | 81% |
-| LoRA 文本强度 | 0.4 | 0.4 - 0.6 | 4 | 81% |
-| ControlNet 权重 | 0.25 | 0.25 - 0.25 | 3 | 100% |
+| 宽度 | 616 | - | 2 | 83% |
+| 高度 | 896 | - | 2 | 57% |
+| 采样步数 | 25 | - | 2 | 80% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | normal | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -103,13 +62,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.2，观测区间 0.2 - 1，4 个样本，取值分散，一致性仅 13%
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.4，观测区间 0.4 - 0.6，4 个样本，取值集中（一致性 81%）
-- LoRA 文本强度 中位数 0.4，观测区间 0.4 - 0.6，4 个样本，取值集中（一致性 81%）
-- ControlNet 权重 中位数 0.25，观测区间 0.25 - 0.25，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 616，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
+- 高度 中位数 896，样本不足，未给区间，2 个样本
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 normal，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

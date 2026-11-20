@@ -1,66 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_201
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.988625
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.964571
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2文生视频工作流_2011408541554315266.json, 图片生成/文生图/wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json, 图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json, 图片生成/文生图/wan22文生图_1950527410125066242.json, 视频生成/图生视频/Wan2.1+文生视频  高清流畅版_2010908567217381378.json, 视频生成/图生视频/【老金驿站】高清WANt2v高速Magcache生成工作流_1934184638036275202.json, 视频生成/文生视频/Wan2.1 文生视频【AI小王子】_1902942394851954690.json, 视频生成/文生视频/Wan2.1+文生视频高清动态视频_2010596616985649154.json]
+members: [图片生成/文生图/Flux2 klein 文生图+高清放大_2062019207847567361.json, 图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json, 图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json, 图片生成/文生图/Flux2文生图极速版—阿浩_2029018694231269377.json, 图片生成/文生图/文生图（解禁模型）：Flux.2 Klein 9B_2051283326727663617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_201
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Wan2.2文生视频工作流_2011408541554315266.json、图片生成/文生图/wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json、图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json、图片生成/文生图/wan22文生图_1950527410125066242.json、视频生成/图生视频/Wan2.1+文生视频  高清流畅版_2010908567217381378.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux2 klein 文生图+高清放大_2062019207847567361.json、图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json、图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 7/8 个有
-- `ModelSamplingSD3` —— 5/8 个有
-- `WanVideoTeaCacheKJ` —— 3/8 个有
-- `MagCache` —— 1/8 个有
-- `SaveAnimatedWEBP` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `TeaCache` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `Int` —— 5/7 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 2/7 个有
+- `LayerUtility: PurgeVRAM` —— 2/7 个有
+- `SeedVR2LoadDiTModel` —— 2/7 个有
+- `SeedVR2LoadVAEModel` —— 2/7 个有
+- `SeedVR2VideoUpscaler` —— 2/7 个有
+- `String Literal` —— 2/7 个有
+- `Anything Everywhere` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 4 - 30 | 8 | 65% |
-| Prompt 约束强度(CFG) | 6 | 1 - 6 | 8 | 66% |
-| 采样算法 | uni_pc | - | 8 | 38% |
-| 调度器 | simple | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 4 - 30，8 个样本
-- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，8 个样本
-- 采样算法 最常用 uni_pc，8 个样本，一致性 38%
-- 调度器 最常用 simple，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

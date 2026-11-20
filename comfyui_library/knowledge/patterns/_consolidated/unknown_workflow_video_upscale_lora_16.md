@@ -1,55 +1,65 @@
 ---
 name: unknown_workflow_video_upscale_lora_16
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleImageWithModelIfNeed, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.582
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), Float, GetNode, JWImageResizeByLongerSide, JjkText, KSamplerSelect, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, QwenH3PromptLocal, RIFE VFI, RTXVideoSuperResolution, ResolutionSelector, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json, 视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json, 视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json, 视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json]
+members: [视频生成/图生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2108366750462078978.json, 视频生成/图生视频/开源版Minimax H3 selflift 精品工作流VOSR_2108074638948528129.json, 视频生成/文生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2107077000434380802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_16
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json、视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json、视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json、视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2108366750462078978.json、视频生成/图生视频/开源版Minimax H3 selflift 精品工作流VOSR_2108074638948528129.json、视频生成/文生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2107077000434380802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `ExtendIntermediateSigmas`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetNode`
+- `JWImageResizeByLongerSide`
+- `JjkText`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `UpscaleImageWithModelIfNeed`
-- `UpscaleModelLoader`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `QwenH3PromptLocal`
+- `RIFE VFI`
+- `RTXVideoSuperResolution`
+- `ResolutionSelector`
+- `SelfLiftH3Sampler`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelect`
-- `WanVideoSEDecode`
-- `WanVideoSEImageClipEncode`
-- `WanVideoSEModelLoader`
-- `WanVideoSESampler`
-- `WanVideoSLG`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 3/4 个有
-- `Florence2Run` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `StringFunction|pysssss` —— 3/4 个有
-- `ImageResize+` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

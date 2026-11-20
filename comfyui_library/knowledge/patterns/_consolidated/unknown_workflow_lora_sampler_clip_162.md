@@ -1,77 +1,58 @@
 ---
 name: unknown_workflow_lora_sampler_clip_162
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8034
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, LoraLoaderModelOnly, OutFluxModelSamplingPred, PreviewImage, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: weak
+coverage: 0.99
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [平台全量/CG迷-万物重塑FLUX逆采样工作流_1927290969123610626.json, 平台全量/FLUX电商产品精修，可输入提示词，效果立竿见影_1905053268458786818.json, 平台全量/Fluxtapoz Stylization Kiri Edition_1869930356542443522.json, 平台全量/Flux洗图（皮肤质感偏光滑）_1985947356887691266.json, 平台全量/【阡陌】Fluxtapoz逆采样产品精修工作流_1909475234301227009.json]
+members: [图片生成/文生图/Wan2.2文生图_1951193822992773122.json, 图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json, 图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json, 图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_162
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/CG迷-万物重塑FLUX逆采样工作流_1927290969123610626.json、平台全量/FLUX电商产品精修，可输入提示词，效果立竿见影_1905053268458786818.json、平台全量/Fluxtapoz Stylization Kiri Edition_1869930356542443522.json、平台全量/Flux洗图（皮肤质感偏光滑）_1985947356887691266.json、平台全量/【阡陌】Fluxtapoz逆采样产品精修工作流_1909475234301227009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Wan2.2文生图_1951193822992773122.json、图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json、图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json、图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `DualCLIPLoader`
-- `FlipSigmas`
-- `FluxDeGuidance`
-- `FluxForwardODESampler`
-- `FluxReverseODESampler`
-- `InFluxModelSamplingPred`
-- `LoadImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `OutFluxModelSamplingPred`
-- `PreviewImage`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `ImageResize+` —— 4/5 个有
-- `Image Lucy Sharpen` —— 3/5 个有
-- `ViewText` —— 2/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Florence2ModelLoader` —— 1/5 个有
-- `Florence2Run` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
-- `KSampler (Efficient)` —— 1/5 个有
-- `LatentUpscaleBy` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `easy imageSize` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `ImpactInt` —— 2/4 个有
+- `JWInteger` —— 1/4 个有
+- `PMRF` —— 1/4 个有
+- `SaveAnimatedWEBP` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 33 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | sgm_uniform | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | randomize | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 12 | 12 - 20 | 4 | 75% |
+| 采样算法 | 1 | 1 - 3.5 | 4 | 33% |
+| 调度器 | res_2s | - | 4 | 50% |
+| 重绘幅度 | bong_tangent | - | 4 | 50% |
 
 ## 常见问题
 
@@ -79,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 20，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
+- 调度器 最常用 res_2s，4 个样本，一致性 50%
+- 重绘幅度 最常用 bong_tangent，4 个样本，一致性 50%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

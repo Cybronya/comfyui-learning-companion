@@ -3,62 +3,58 @@ name: unknown_workflow_lora_sampler_clip_295
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5685
-common_nodes: [AnimaFlowCorrectiveSampler, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, ColorMatch, Fast Groups Bypasser (rgthree), GetNode, Int, JDC_ResizeFactor, List of strings [Crystools], LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RTXVideoSuperResolution, SaveImage, Seed (rgthree), SetNode, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEEncode, VAELoader, WD14Tagger|pysssss, ZML_PreviewImage, ZML_TextFormatter, easy imageBatchToImageList, easy imageListToImageBatch, easy negative, easy showAnything]
+coverage: 0.987
+common_nodes: [Anything Everywhere, BaiduTranslateNode, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSampler, LoraLoader, LoraNames_, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy getNode, easy seed, easy setNode, ttN float]
 problems: []
 missing: []
-members: [图片生成/图生图/PSO2NGS专用高清放大流_2072922316006322178.json, 图片生成/图生图/PSO2NGS专用高清放大流_2080328358927364097.json]
+members: [图片生成/文生图/F.1 lora测试权重 工作流 V1.0_1987756179793317890.json, 图片生成/文生图/lora测试权重_1948980662670434305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_295
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/PSO2NGS专用高清放大流_2072922316006322178.json、图片生成/图生图/PSO2NGS专用高清放大流_2080328358927364097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/F.1 lora测试权重 工作流 V1.0_1987756179793317890.json、图片生成/文生图/lora测试权重_1948980662670434305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AnimaFlowCorrectiveSampler`
-- `CLIPLoader`
+- `Anything Everywhere`
+- `BaiduTranslateNode`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `CR Text`
-- `ColorMatch`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Int`
-- `JDC_ResizeFactor`
-- `List of strings [Crystools]`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RTXVideoSuperResolution`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `KSampler`
+- `LoraLoader`
+- `LoraNames_`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
 - `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
 - `VAELoader`
-- `WD14Tagger|pysssss`
-- `ZML_PreviewImage`
-- `ZML_TextFormatter`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy negative`
-- `easy showAnything`
+- `easy getNode`
+- `easy seed`
+- `easy setNode`
+- `ttN float`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.1 | - | 2 | 100% |
+| LoRA 文本强度 | 0.1 | - | 2 | 100% |
+| 采样步数 | 30 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -66,4 +62,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- LoRA 模型强度 中位数 0.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

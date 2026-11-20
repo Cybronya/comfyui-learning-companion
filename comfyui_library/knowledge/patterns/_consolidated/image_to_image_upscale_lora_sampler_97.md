@@ -3,100 +3,59 @@ name: image_to_image_upscale_lora_sampler_97
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.719
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPLoader_Any, CLIPTextEncode, CR Text Concatenate, ColorCorrect, ConstrainImage|pysssss, EditTextEncode_EditUtils, Fast Groups Bypasser (rgthree), Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Get Image Size, GetImageSize+, GetNode, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, ImageScaleToTotalPixelsX, ImageUpscaleWithModel, Int Literal, KSampler, KSamplerAdvanced, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SaveImageJPG_GH, SeedVR2, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, StringConstant, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextInput_, UNETLoader, UNETLoader_Any, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, VAELoader_Any, easy boolean, easy cleanGpuUsed, easy ifElse, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy imageScaleToNormPixels, easy imageSize, easy showAnything, 取色器_孤海, 图像缩放V2_孤海, 数学运算_孤海]
+coverage: 0.9255
+common_nodes: [CLIPTextEncode, Florence2ModelLoader, Florence2Run, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/SeedVR2.5_+_TTP_分块放大_2115617911112032258.json, 图片生成/图生图/SeedVR2.5_+_TTP_分块放大_2115665854103908354.json]
+members: [图片生成/图生图/万相wan2.2洗图神器_1983816990546698242.json, 图片生成/图生图/无损2倍放大_1987797032171671554.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_97
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2.5_+_TTP_分块放大_2115617911112032258.json、图片生成/图生图/SeedVR2.5_+_TTP_分块放大_2115665854103908354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/万相wan2.2洗图神器_1983816990546698242.json、图片生成/图生图/无损2倍放大_1987797032171671554.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPLoader_Any`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `ColorCorrect`
-- `ConstrainImage|pysssss`
-- `EditTextEncode_EditUtils`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Get Image Size`
-- `GetImageSize+`
-- `GetNode`
+- `Florence2ModelLoader`
+- `Florence2Run`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `ImageScaleToTotalPixels`
-- `ImageScaleToTotalPixelsX`
 - `ImageUpscaleWithModel`
-- `Int Literal`
 - `KSampler`
-- `KSamplerAdvanced`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SaveImageJPG_GH`
-- `SeedVR2`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `StringConstant`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextInput_`
 - `UNETLoader`
-- `UNETLoader_Any`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `VAELoader_Any`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageBatchToImageList`
-- `easy imageColorMatch`
-- `easy imageListToImageBatch`
-- `easy imageScaleToNormPixels`
-- `easy imageSize`
-- `easy showAnything`
-- `取色器_孤海`
-- `图像缩放V2_孤海`
-- `数学运算_孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPLoader` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `ModelSamplingSD3` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | beta57 | - | 2 | 100% |
+| 采样步数 | 7 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 50% |
+| 重绘幅度 | 0.45 | - | 2 | 44% |
 
 ## 常见问题
 
@@ -106,10 +65,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta57，2 个样本，一致性 100%
+- 采样步数 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 50%
+- 重绘幅度 中位数 0.45，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

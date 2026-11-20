@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_143
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.7605
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.857167
+common_nodes: [LoadImage, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/4宫格肖像_半身头像（全能图片）生成_2033719200379834369.json, 图片生成/图生图/NB2多图编辑优化稳定版_2027441138520559617.json, 图片生成/图生图/YJ-APP-全能图片2-三图编辑-渠道版_2033437691773194242.json, 图片生成/图生图/YJ-APP-全能图片2-双图编辑_2032108442059542530.json, 图片生成/图生图/gemini-3.1-flash建筑生多角度工作流_2054379951264149506.json, 图片生成/图生图/gemini-3.1-flash建筑生多角度工作流_2059468780534853634.json, 图片生成/图生图/gemini-3.1-flash建筑生多角度工作流_2059488083124514817.json, 图片生成/图生图/gemini-3.1-flash建筑生多角度工作流_2064553038068666369.json, 图片生成/图生图/image_image_2069235784963682305.json, 图片生成/图生图/image_image_2069616843089866754.json, 图片生成/图生图/image_image_2069660624333918209.json, 图片生成/图生图/多动作生成_2033796379398639617.json, 图片生成/图生图/换头-换装-换场景-多图并发_2036992753753661442.json, 图片生成/图生图/牛牛-复刻模版_2047672773966827521.json]
+members: [图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json, 图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json, 图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json, 图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json, 图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json, 图片生成/反推提示词/Qwen3.5 强悍的图像反推工作流_2035648568308015105.json, 图片生成/反推提示词/Qwen3.5--图像反推_2035655088227753985.json, 图片生成/反推提示词/gemma4出 jimen用文字_2044599371559342082.json, 图片生成/反推提示词/gemma4直出短剧漫剧分镜脚本_2043148693875990530.json, 图片生成/反推提示词/空白工作流_2043534147645349889.json, 图片生成/反推提示词/（N版）Gemma4图像反推工作流（31B Q8高质量）V1_2042595096012525569.json, 图片生成/图生图/Llama反推图像反推_2042150217411207169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_143
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/4宫格肖像_半身头像（全能图片）生成_2033719200379834369.json、图片生成/图生图/NB2多图编辑优化稳定版_2027441138520559617.json、图片生成/图生图/YJ-APP-全能图片2-三图编辑-渠道版_2033437691773194242.json、图片生成/图生图/YJ-APP-全能图片2-双图编辑_2032108442059542530.json、图片生成/图生图/gemini-3.1-flash建筑生多角度工作流_2054379951264149506.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json、图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json、图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json、图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json、图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 10/14 个有
-- `RH_LLMAPI_Pro_Node` —— 7/14 个有
-- `Text Multiline` —— 6/14 个有
-- `LayerUtility: TextJoin` —— 3/14 个有
-- `PreviewImage` —— 2/14 个有
-- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 2/14 个有
-- `Image Comparer (rgthree)` —— 1/14 个有
-- `easy showAnything` —— 1/14 个有
+- `PreviewAny` —— 11/12 个有
+- `SaveImage` —— 11/12 个有
+- `ShellAgentPluginOutputText` —— 11/12 个有
+- `SaveText|pysssss` —— 1/12 个有
+- `ShowText` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 

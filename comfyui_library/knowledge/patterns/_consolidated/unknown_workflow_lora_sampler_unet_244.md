@@ -2,64 +2,73 @@
 name: unknown_workflow_lora_sampler_unet_244
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.881667
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, ConditioningZeroOut, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.884333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetVideoComponents, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Krea2-图像风格参考_2077246669674082306.json, 图片生成/图生图/image_krea2_turbo_int8_image_style_reference_2110364654659792898.json, 图片生成/图生图/【遇见AI】Krea2风格参考风格迁移的lora实现方法_2079861428944719874.json]
+members: [视频生成/图生视频/MiniMax-H3 图生视频动作模仿ref turbo加速_2087775662382862337.json, 视频生成/图生视频/MiniMax-H3 图生视频动作迁移二采放大_2093997320298909698.json, 视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_244
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Krea2-图像风格参考_2077246669674082306.json、图片生成/图生图/image_krea2_turbo_int8_image_style_reference_2110364654659792898.json、图片生成/图生图/【遇见AI】Krea2风格参考风格迁移的lora实现方法_2079861428944719874.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 图生视频动作模仿ref turbo加速_2087775662382862337.json、视频生成/图生视频/MiniMax-H3 图生视频动作迁移二采放大_2093997320298909698.json、视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
+- **可信度**：中等可信
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
+- `CreateVideo`
+- `GetVideoComponents`
 - `KSamplerSelect`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `StringConcatenate` —— 1/3 个有
-- `TextGenerate` —— 1/3 个有
-- `easy imageSize` —— 1/3 个有
+- `ComfySwitchNode` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTXVConcatAVLatent` —— 2/3 个有
+- `LTXVSeparateAVLatent` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MiniMaxH3BlockCacheT8` —— 2/3 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
+- `ModelPreviewOverrideKJ` —— 2/3 个有
+- `PixaromaDuration` —— 2/3 个有
+- `PixaromaSizes` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `VRAM_Debug` —— 2/3 个有
+- `Video Slice` —— 2/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `ManualSigmas` —— 1/3 个有
+- `MiniMaxH3SigmaShift` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,5 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,99 +3,75 @@ name: unknown_workflow_video_upscale_latent_upscale_158
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5625
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoaderGGUF, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, HeartMuLa_Transcribe, ImageResizeKJv2, ImageScaleBy, ImpactExecutionOrderController, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoaderGGUF, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, ShowText|pysssss, SolidMask, StringReplace, TrimAudioDuration, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.8565
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXTiledSampler, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2 + Qwer3-TTS 数字人_2016443355604983809.json, 视频生成/图生视频/LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版高级工作流_2014681763813007362.json]
+members: [视频生成/文生视频/LTX2.3 自用优化版 T2V customer Audio_2063969507642798081.json, 视频生成/文生视频/LTX2.3 自用版 T2V_2063969490962042881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_158
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2 + Qwer3-TTS 数字人_2016443355604983809.json、视频生成/图生视频/LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版高级工作流_2014681763813007362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX2.3 自用优化版 T2V customer Audio_2063969507642798081.json、视频生成/文生视频/LTX2.3 自用版 T2V_2063969490962042881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoaderGGUF`
-- `EmptyImage`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `HeartMuLa_Transcribe`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImpactExecutionOrderController`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
+- `LTX2_NAG`
+- `LTXTiledSampler`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVImgToVideoInplace`
+- `LTXVCropGuides`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
-- `LoaderGGUF`
+- `LayerUtility: PurgeVRAM`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PrimitiveFloat`
 - `PrimitiveInt`
 - `PrimitiveStringMultiline`
+- `PromptRelayEncode`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `ShowText|pysssss`
-- `SolidMask`
-- `StringReplace`
-- `TrimAudioDuration`
-- `VAELoader`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 1/2 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVAudioVAELoader` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReservedVRAMSetter` —— 1/2 个有
-- `ResizeImagesByLongerEdge` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy ckptNames` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `AudioConcat` —— 1/2 个有
+- `LTXVAudioVAEDecode` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 1 | 100% |
+| 高度 | 25 | - | 1 | 100% |
 
 ## 常见问题
 

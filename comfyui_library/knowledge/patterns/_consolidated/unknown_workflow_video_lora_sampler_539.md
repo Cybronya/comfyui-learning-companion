@@ -1,61 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_539
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.492
-common_nodes: [Float, GetNode, If ANY execute A else B, ImageResizeKJv2, ImpactSwitch, JWStringSplit, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PrimitiveBoolean, PrimitiveString, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy convertAnything, easy imageRemBg]
+coverage: 0.91925
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, H3InjectVideoLatent, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3NativeAudioLock, MiniMaxH3SigmaShift, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/参考生成视频-三图_1950878198265487362.json, 视频生成/图生视频/参考生成视频-三图_1967512579738361857.json, 视频生成/图生视频/参考生成视频-单图_1950857772990660610.json, 视频生成/图生视频/参考生成视频-单图_1967526201378136065.json, 视频生成/图生视频/参考生成视频-双图_1950866948588503042.json, 视频生成/图生视频/参考生成视频-双图_1967525929503297538.json]
+members: [数字人/数字人/无限长视频生成 3 高清f放大 1080P MiniMax H3_2090714008914587649.json, 视频生成/图生视频/MiniMax H3｜通用视频二阶高清重绘_2090290098544930818.json, 视频生成/文生视频/MiniMax H3｜通用视频二阶高清重绘_2089986546912030722.json, 视频生成/文生视频/MiniMax+H3+万能视频高清重绘｜一键生成式放大_2088992117300482049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_539
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/参考生成视频-三图_1950878198265487362.json、视频生成/图生视频/参考生成视频-三图_1967512579738361857.json、视频生成/图生视频/参考生成视频-单图_1950857772990660610.json、视频生成/图生视频/参考生成视频-单图_1967526201378136065.json、视频生成/图生视频/参考生成视频-双图_1950866948588503042.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/无限长视频生成 3 高清f放大 1080P MiniMax H3_2090714008914587649.json、视频生成/图生视频/MiniMax H3｜通用视频二阶高清重绘_2090290098544930818.json、视频生成/文生视频/MiniMax H3｜通用视频二阶高清重绘_2089986546912030722.json、视频生成/文生视频/MiniMax+H3+万能视频高清重绘｜一键生成式放大_2088992117300482049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Float`
-- `GetNode`
-- `If ANY execute A else B`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JWStringSplit`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveBoolean`
-- `PrimitiveString`
-- `SetNode`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `H3InjectVideoLatent`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3NativeAudioLock`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy convertAnything`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMultiple+` —— 4/6 个有
-- `ImageConcatFromBatch` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `PrimitiveInt` —— 4/6 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `LTXVConcatAVLatent` —— 3/4 个有
+- `LTXVSeparateAVLatent` —— 3/4 个有
+- `LoadVideoUI` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/4 个有
+- `DiffusionModelLoaderKJ` —— 1/4 个有
+- `ImageFromBatch` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `Yuan_RTXVideoUpscaleH3` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

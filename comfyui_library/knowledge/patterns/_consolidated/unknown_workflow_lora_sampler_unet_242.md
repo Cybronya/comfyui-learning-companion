@@ -2,59 +2,62 @@
 name: unknown_workflow_lora_sampler_unet_242
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.908333
-common_nodes: [Canny, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.854333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/F.1通过线稿，生成室内效果图+放大_1908319381733187585.json, 图片生成/图生图/F.1通过线稿，生成室内效果图_1908530217424400386.json, 图片生成/图生图/FLUX+CN丨canny+Depth丨深度 线稿 lora_1898940711260082177.json]
+members: [视频生成/图生视频/H3-4STEP-REF-ALL   全能参考工作流_2093171439917686785.json, 视频生成/图生视频/MiniMax H3 REF2VA-Lightx2v-官方4步加速lora-V0.1-自动扩写提示词_全能参考生视频_2087366652605329409.json, 视频生成/图生视频/MiniMax H3 REF2VA-Lightx2v-官方4步加速lora-V0.1-自动扩写提示词_全能参考生视频_2087793588594888705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_242
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/F.1通过线稿，生成室内效果图+放大_1908319381733187585.json、图片生成/图生图/F.1通过线稿，生成室内效果图_1908530217424400386.json、图片生成/图生图/FLUX+CN丨canny+Depth丨深度 线稿 lora_1898940711260082177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3-4STEP-REF-ALL   全能参考工作流_2093171439917686785.json、视频生成/图生视频/MiniMax H3 REF2VA-Lightx2v-官方4步加速lora-V0.1-自动扩写提示词_全能参考生视频_2087366652605329409.json、视频生成/图生视频/MiniMax H3 REF2VA-Lightx2v-官方4步加速lora-V0.1-自动扩写提示词_全能参考生视频_2087793588594888705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Canny`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `InstructPixToPixConditioning`
-- `KSampler`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
+- `MathExpression|pysssss`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 2/3 个有
-- `ImageResize` —— 2/3 个有
-- `ArgosTranslateTextNode` —— 1/3 个有
-- `BaiduTranslateNode` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DepthAnythingPreprocessor` —— 1/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MultiTextConcatenate` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `RH_Utils` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `DF_Text_Box` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 20 - 28 | 3 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 28，3 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_37
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.7172
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader]
+coverage: 0.860667
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DownloadAndLoadFlorence2Model, Florence2Run, Image Comparer (rgthree), ImageUpscaleWithModel, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/图生图/4Kttpflux 放大工作流 api 版本_1984539387545468930.json, 图片生成/图生图/F1一键精修+放大，金属，户外带通用_1993247312828891137.json, 图片生成/图生图/FLUX-测图+TTP放大_1959876674903027714.json, 图片生成/图生图/FLUX高清修复去油腻工作流_1942936253006569474.json, 图片生成/图生图/Flux 4k高清修复_1932001102521106433.json]
+members: [图片生成/图生图/Flux-Nunchaku极速洗图-优化细节_1911034449600151554.json, 图片生成/图生图/Flux商业洗图+放大_1904367585897652225.json, 图片生成/图生图/Qwen-Image的分块放大_1955543349093548034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_37
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/4Kttpflux 放大工作流 api 版本_1984539387545468930.json、图片生成/图生图/F1一键精修+放大，金属，户外带通用_1993247312828891137.json、图片生成/图生图/FLUX-测图+TTP放大_1959876674903027714.json、图片生成/图生图/FLUX高清修复去油腻工作流_1942936253006569474.json、图片生成/图生图/Flux 4k高清修复_1932001102521106433.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Nunchaku极速洗图-优化细节_1911034449600151554.json、图片生成/图生图/Flux商业洗图+放大_1904367585897652225.json、图片生成/图生图/Qwen-Image的分块放大_1955543349093548034.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
 - `KSamplerSelect`
 - `LoadImage`
@@ -40,46 +39,33 @@ source: knowledge_consolidation
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 4/5 个有
-- `LoraLoader` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `easy imageBatchToImageList` —— 4/5 个有
-- `VAEDecode` —— 3/5 个有
-- `Florence2Run` —— 2/5 个有
-- `ImageListToImageBatch` —— 2/5 个有
-- `Seed Everywhere` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `easy imageListToImageBatch` —— 2/5 个有
-- `DisableNoise` —— 1/5 个有
-- `DownloadAndLoadFlorence2Model` —— 1/5 个有
-- `Florence2ModelLoader` —— 1/5 个有
-- `ImageListToBatch+` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `ImpactImageBatchToImageList` —— 1/5 个有
-- `InjectLatentNoise+` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `KepStringLiteral` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `LayerUtility: JoyCaption2` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `SplitSigmasDenoise` —— 1/5 个有
-- `TeaCache` —— 1/5 个有
-- `easy imageSize` —— 1/5 个有
+- `ImageScale` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `CFGGuider` —— 1/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `Display Any (rgthree)` —— 1/3 个有
+- `DualCLIPLoader` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `NunchakuFluxDiTLoader` —— 1/3 个有
+- `NunchakuFluxLoraLoader` —— 1/3 个有
+- `NunchakuTextEncoderLoader` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `VAEDecodeTiled` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.9 | 0.5 - 1 | 4 | 75% |
-| LoRA 文本强度 | 0.9 | 0.5 - 1 | 4 | 75% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,5 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，观测区间 0.5 - 1，4 个样本
-- LoRA 文本强度 中位数 0.9，观测区间 0.5 - 1，4 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,60 +1,73 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_19
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.752
-common_nodes: [ApplyFluxControlNet, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
+frequency: 3
+level: strong
+coverage: 0.892667
+common_nodes: [AIO_Preprocessor, ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ControlNetApplySD3, ControlNetLoader, DownloadAndLoadFlorence2Model, DualCLIPLoader, EmptySD3LatentImage, Florence2Run, FluxGuidance, ImageScale, KSamplerSelect, LoadImage, ModelSamplingFlux, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json, 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json, 图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json, 平台全量/真人转动漫二次元手绘插画_1977340334776700930.json]
+members: [图片生成/图生图/PuLID角色一致性（面部）_1920675244418203649.json, 图片生成/图生图/【面部一致】FLUX PuLID 网红角色面部保持一致性不同姿势生成_1908024842749419521.json, 图片生成/图生图/面部保持一致_1902523531027197954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_19
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json、图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json、图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json、平台全量/真人转动漫二次元手绘插画_1977340334776700930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/PuLID角色一致性（面部）_1920675244418203649.json、图片生成/图生图/【面部一致】FLUX PuLID 网红角色面部保持一致性不同姿势生成_1908024842749419521.json、图片生成/图生图/面部保持一致_1902523531027197954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyFluxControlNet`
-- `CLIPTextEncodeFlux`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `ControlNetApplySD3`
+- `ControlNetLoader`
+- `DownloadAndLoadFlorence2Model`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `LoadFluxControlNet`
+- `EmptySD3LatentImage`
+- `Florence2Run`
+- `FluxGuidance`
+- `ImageScale`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
+- `ModelSamplingFlux`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `XlabsSampler`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnythingV2Preprocessor` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `CannyEdgePreprocessor` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `CLIPTextEncode` —— 1/4 个有
-- `DF_Text_Box` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `HEDPreprocessor` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
+- `FromBasicPipe_v2` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `ToBasicPipe` —— 2/3 个有
+- `easy imageSplitGrid` —— 2/3 个有
+- `easy imagesSplitImage` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 4 | 76% |
-| 高度 | 1024 | 512 - 1024 | 4 | 75% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| ControlNet 权重 | 0.66 | 0.66 - 0.66 | 3 | 100% |
 
 ## 常见问题
 
@@ -62,5 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，4 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，4 个样本
+- ControlNet 权重 中位数 0.66，观测区间 0.66 - 0.66，3 个样本，取值集中（一致性 100%）

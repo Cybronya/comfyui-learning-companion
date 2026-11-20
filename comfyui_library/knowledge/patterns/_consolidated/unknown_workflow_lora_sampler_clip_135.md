@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_135
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.906
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, FluxGuidance, ImpactImageInfo, KSamplerSelect, LoadImage, LoraLoader, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, 取色器_孤海]
+frequency: 4
+level: moderate
+coverage: 0.919
+common_nodes: [BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningConcat, DisableNoise, FlowEditGuider, FlowEditSampler, FluxGuidance, Image Comparer (rgthree), LoraLoaderModelOnly, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2-klein-4B-消除流水线_2060191230574813185.json, 图片生成/图生图/FLUX2-klein-9b——object-remove移除万物+重绘_2013596554896089089.json, 图片生成/图生图/【遇见AI】FLUX2-klein-4b，red-zoom局部放大，fal版lora_2014167810544508930.json, 平台全量/【遇见AI】FLUX2-klein-4b，object-remove移除万物，重绘，fal版lora_2013541060743532546.json, 平台全量/【遇见AI】FLUX2-klein-4b，outpaint扩图，fal版lora_2013431600855388161.json]
+members: [图片生成/图生图/FLUX照片转吉卜力风格Ghibli_1916495126468689921.json, 图片生成/图生图/全能图片G-4o 漫画头像转绘_1908423995211788289.json, 图片生成/图生图/吉卜力风格转绘_1912669503619301378.json, 图片生成/图生图/风格转绘（支持多人）_1937504241412149250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_135
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX2-klein-4B-消除流水线_2060191230574813185.json、图片生成/图生图/FLUX2-klein-9b——object-remove移除万物+重绘_2013596554896089089.json、图片生成/图生图/【遇见AI】FLUX2-klein-4b，red-zoom局部放大，fal版lora_2014167810544508930.json、平台全量/【遇见AI】FLUX2-klein-4b，object-remove移除万物，重绘，fal版lora_2013541060743532546.json、平台全量/【遇见AI】FLUX2-klein-4b，outpaint扩图，fal版lora_2013431600855388161.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX照片转吉卜力风格Ghibli_1916495126468689921.json、图片生成/图生图/全能图片G-4o 漫画头像转绘_1908423995211788289.json、图片生成/图生图/吉卜力风格转绘_1912669503619301378.json、图片生成/图生图/风格转绘（支持多人）_1937504241412149250.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ConditioningConcat`
+- `DisableNoise`
+- `FlowEditGuider`
+- `FlowEditSampler`
 - `FluxGuidance`
-- `ImpactImageInfo`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoader`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
+- `Image Comparer (rgthree)`
+- `LoraLoaderModelOnly`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `取色器_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: MaskPreview` —— 4/5 个有
-- `LayerUtility: ColorImage V2` —— 4/5 个有
-- `LayerUtility: ImageBlendAdvance` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `Mask Fill Holes` —— 3/5 个有
-- `BlockifyMask` —— 2/5 个有
-- `ColorMatchV2` —— 1/5 个有
-- `DifferentialDiffusion` —— 1/5 个有
-- `DrawMaskOnImage` —— 1/5 个有
-- `GrowMaskWithBlur` —— 1/5 个有
-- `ImageCompositeMasked` —— 1/5 个有
-- `ImagePadForOutpaint` —— 1/5 个有
+- `ConfigureModifiedFlux` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `DualCLIPLoader` —— 2/4 个有
+- `DualCLIPLoaderGGUF` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LoadAndResizeImage` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `RepeatLatentBatch` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1.1 | 0.5 - 1.1 | 5 | 76% |
-| LoRA 文本强度 | 1.1 | 1 - 1.1 | 5 | 96% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,5 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1.1，观测区间 0.5 - 1.1，5 个样本
-- LoRA 文本强度 中位数 1.1，观测区间 1 - 1.1，5 个样本，取值集中（一致性 96%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

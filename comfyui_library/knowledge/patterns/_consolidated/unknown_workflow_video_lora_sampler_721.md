@@ -1,67 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_721
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.73875
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3PromptEnhancerT8, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetNode, T8LLMProviderConfig, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.828667
+common_nodes: [CR Text Replace, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveBoolean, RH_Captioner, TextBox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json, 视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json, 视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json, 视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json]
+members: [视频生成/图生视频/Wan2.2-720P 高速版｜图生视频_1952617990284087298.json, 视频生成/图生视频/Wan2.2-JK高速版-高清1920 -自动提示词_1952604203145474049.json, 视频生成/图生视频/【视频】Wan2.2首尾帧一键生成视频_1952674570933309442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_721
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json、视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json、视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json、视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-720P 高速版｜图生视频_1952617990284087298.json、视频生成/图生视频/Wan2.2-JK高速版-高清1920 -自动提示词_1952604203145474049.json、视频生成/图生视频/【视频】Wan2.2首尾帧一键生成视频_1952674570933309442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
+全部 3 个 workflow 都包含：
+- `CR Text Replace`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3PromptEnhancerT8`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetNode`
-- `T8LLMProviderConfig`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `TextBox`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SaveLatent` —— 3/4 个有
-- `VAEDecodeAudio` —— 3/4 个有
-- `Any To String (mtb)` —— 2/4 个有
-- `AudioCrop` —— 2/4 个有
-- `LTXVAudioVAEEncode` —— 2/4 个有
-- `LTXVConcatAVLatent` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `SaveAudioAdvanced` —— 2/4 个有
-- `SetLatentNoiseMask` —— 2/4 个有
-- `SolidMask` —— 2/4 个有
-- `SoundFlow_GetLength` —— 2/4 个有
-- `Int` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageFromBatch+` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VAELoader` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
 
 ## 典型参数
 

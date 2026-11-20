@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_generic_194
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.889
-common_nodes: [RH_Sora2_T2V, SaveVideo]
+coverage: 0.864091
+common_nodes: [RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json, 视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json, 视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json, 视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json, 视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json, 视频生成/文生视频/全能视频S文生视频-打太极+跳舞+对打_1974653948734869506.json, 视频生成/文生视频/全能视频S文生视频-直播卖货+日常vlog+遥遥领先_1974243774320783362.json, 视频生成/文生视频/全能视频S文生视频_1987477979272032258.json, 视频生成/文生视频/全能视频S文生视频_2001107406144892930.json, 视频生成/文生视频/全能视频S梭罗2文生视频_2002992476006805505.json, 视频生成/文生视频/全能视频S视频生成（新版）_1983079288096366594.json, 视频生成/文生视频/最简单的文生视频_1988203879588347906.json]
+members: [视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json, 视频生成/图生视频/Seedance2.0_Fast_API版-全能参考视频_2111086762943672321.json, 视频生成/图生视频/seeddance2.0-Fast-多模态_2039340026965794817.json, 视频生成/图生视频/最强超能视频PRO 2.0-Fast极速版_全能参考 生视频_2037337961548746754.json, 视频生成/图生视频/真人替换-地表最强超能视频2.0-Fast_全能参考 生视频_2038496435926208514.json, 视频生成/图生视频/（支持真人）地表最强超能视频2.0-Fast_全能参考 生视频_2037433035041280001.json, 视频生成/文生视频/HPSeedance2.0_2080565115467948033.json, 视频生成/文生视频/Seedance2.0 Fast 全素材+ID工作流_2059887943552167937.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Fast_2041707454861414402.json, 视频生成/文生视频/资产ID流 Seedance2.0 Fast_2059831058182524929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_194
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json、视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json、视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json、视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json、视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json、视频生成/图生视频/Seedance2.0_Fast_API版-全能参考视频_2111086762943672321.json、视频生成/图生视频/seeddance2.0-Fast-多模态_2039340026965794817.json、视频生成/图生视频/最强超能视频PRO 2.0-Fast极速版_全能参考 生视频_2037337961548746754.json、视频生成/图生视频/真人替换-地表最强超能视频2.0-Fast_全能参考 生视频_2038496435926208514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_Sora2_T2V`
+全部 11 个 workflow 都包含：
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 1/12 个有
+- `LoadImage` —— 10/11 个有
+- `LoadVideo` —— 10/11 个有
+- `JjkText` —— 3/11 个有
+- `LoadAudio` —— 3/11 个有
+- `PreviewAny` —— 3/11 个有
+- `RH_SparkVideoAssetIdsMerge` —— 2/11 个有
 
 ## 典型参数
 

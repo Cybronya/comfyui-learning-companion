@@ -1,61 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_610
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9928
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.52025
+common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json, 视频生成/图生视频/Multitalk双人对唱数字人_1941678134205038593.json, 视频生成/图生视频/infinitetalk单人图生视频对口型_1960923370206498818.json, 视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json, 视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json]
+members: [视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json, 视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json, 视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json, 视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_610
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json、视频生成/图生视频/Multitalk双人对唱数字人_1941678134205038593.json、视频生成/图生视频/infinitetalk单人图生视频对口型_1960923370206498818.json、视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json、视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json、视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json、视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json、视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 4 个 workflow 都包含：
+- `FloatConstant`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 4/5 个有
-- `SeparateMasks` —— 4/5 个有
-- `WanVideoApplyNAG` —— 4/5 个有
-- `WanVideoTextEncodeSingle` —— 4/5 个有
-- `PreviewAudio` —— 3/5 个有
-- `EsesImageEffectBloom` —— 2/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `WanVideoSLG` —— 2/5 个有
-- `AudioCropProcessUTK` —— 1/5 个有
-- `Manual XY Entry Info` —— 1/5 个有
-- `WanVideoSetRadialAttention` —— 1/5 个有
-- `WanVideoTextEncode` —— 1/5 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

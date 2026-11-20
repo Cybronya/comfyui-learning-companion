@@ -1,78 +1,85 @@
 ---
 name: unknown_workflow_sampler_clip_unet_459
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.866333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, PrimitiveInt, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.5855
+common_nodes: [AIO_Preprocessor, Anything Everywhere, CLIPLoader, CLIPTextEncode, DrawMaskOnImage, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), FastCanvas, FastCanvasTool, Flux2Scheduler, GetNode, JoinImageWithAlpha, KSamplerSelect, LoadImage, PreviewAny, PreviewImage, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg, easy seed, 孤海-图像与遮罩描边]
+problems: []
 missing: []
-members: [图片生成/文生图/对比系列01-5大生图模型对比_2050390146960379906.json, 图片生成/文生图/对比系列03-Lens_Lens-Turbo_ZIT文生图_2066895289654530049.json, 图片生成/文生图/工作流基础系列30-Lens_Lens-T文生图工作流_2066888219807014913.json]
+members: [图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json, 图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_459
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/对比系列01-5大生图模型对比_2050390146960379906.json、图片生成/文生图/对比系列03-Lens_Lens-Turbo_ZIT文生图_2066895289654530049.json、图片生成/文生图/工作流基础系列30-Lens_Lens-T文生图工作流_2066888219807014913.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json、图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `Anything Everywhere`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `DrawMaskOnImage`
 - `EmptyFlux2LatentImage`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
+- `Fast Groups Bypasser (rgthree)`
+- `FastCanvas`
+- `FastCanvasTool`
+- `Flux2Scheduler`
+- `GetNode`
+- `JoinImageWithAlpha`
+- `KSamplerSelect`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageRemBg`
+- `easy seed`
+- `孤海-图像与遮罩描边`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `LayerUtility: TextBox` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `Bjornulf_ShowInt` —— 1/3 个有
-- `CFGNorm` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `RH_RhartImageG2TextToImage` —— 1/3 个有
-- `TextEncodeQwenImageEditPlus` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `BasicGuider` —— 1/2 个有
+- `CFGGuider` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `RebatchLatents` —— 1/2 个有
+- `RepeatLatentBatch` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（9/3 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

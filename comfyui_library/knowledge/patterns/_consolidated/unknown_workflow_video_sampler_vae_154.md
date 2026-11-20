@@ -1,31 +1,35 @@
 ---
 name: unknown_workflow_video_sampler_vae_154
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.754
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.941333
+common_nodes: [DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, ImageResizeKJ, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/03-15-02-WAN2.1-长视频单段生成-SVI_1988253691843141633.json, 视频生成/图生视频/Wan_FusionX_i2v_wrapper_WF图生视频_1948047192052367361.json, 视频生成/图生视频/wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json, 视频生成/图生视频/wanvideo2.1_svi_infinite_generate_1983813929321308162.json]
+members: [视频生成/图生视频/FantasyTalking数字人_1917046861591678978.json, 视频生成/图生视频/FantasyTalking数字人_1917159345606295553.json, 视频生成/图生视频/Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_1934084180739280897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_154
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/03-15-02-WAN2.1-长视频单段生成-SVI_1988253691843141633.json、视频生成/图生视频/Wan_FusionX_i2v_wrapper_WF图生视频_1948047192052367361.json、视频生成/图生视频/wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json、视频生成/图生视频/wanvideo2.1_svi_infinite_generate_1983813929321308162.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FantasyTalking数字人_1917046861591678978.json、视频生成/图生视频/FantasyTalking数字人_1917159345606295553.json、视频生成/图生视频/Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_1934084180739280897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `DownloadAndLoadWav2VecModel`
+- `FantasyTalkingModelLoader`
+- `FantasyTalkingWav2VecEmbeds`
+- `ImageResizeKJ`
+- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -33,22 +37,24 @@ source: knowledge_consolidation
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 3/4 个有
-- `WanVideoLoraSelectMulti` —— 3/4 个有
-- `WanVideoSetBlockSwap` —— 3/4 个有
-- `WanVideoTextEncode` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `AILab_QwenVL` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Qwen_VLM_API` —— 1/4 个有
-- `WanVideoSetLoRAs` —— 1/4 个有
-- `WanVideoTextEncodeCached` —— 1/4 个有
+- `Bjornulf_ShowInt` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `DF_Integer` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `LoadWanVideoClipTextEncoder` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `WanVideoSLG` —— 2/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `SeargeFloatConstant` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
 
 ## 典型参数
 

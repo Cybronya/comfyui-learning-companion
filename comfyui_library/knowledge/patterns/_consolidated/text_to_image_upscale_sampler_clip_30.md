@@ -1,78 +1,66 @@
 ---
 name: text_to_image_upscale_sampler_clip_30
 type: Text To Image
-frequency: 4
-level: weak
-coverage: 0.906
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, ImageUpscaleWithModel, KSampler, SaveImage, UpscaleModelLoader, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen文生图+真实感+8K高清_1994701699338080257.json, 图片生成/文生图/Qwen文生图真实感_1991384108102430721.json, 图片生成/文生图/Z image_1984983374504804353.json, 图片生成/文生图/Z-Image Turbo 图像放大和细节处理_2051922049270071297.json]
+members: [图片生成/图生图/iL、Pony、XL通用基础文生图工作流_2040618537173127170.json, 图片生成/文生图/iL、Pony、XL通用基础文生图工作流，简洁高效出图_1934957385754550274.json, 图片生成/文生图/文生图-并放大图片工作流_1934952424287182850.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_30
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen文生图+真实感+8K高清_1994701699338080257.json、图片生成/文生图/Qwen文生图真实感_1991384108102430721.json、图片生成/文生图/Z image_1984983374504804353.json、图片生成/文生图/Z-Image Turbo 图像放大和细节处理_2051922049270071297.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/iL、Pony、XL通用基础文生图工作流_2040618537173127170.json、图片生成/文生图/iL、Pony、XL通用基础文生图工作流，简洁高效出图_1934957385754550274.json、图片生成/文生图/文生图-并放大图片工作流_1934952424287182850.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `ImageUpscaleWithModel`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `ImageScaleDownToSize` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `EmptySD3LatentImage` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `FaceDetailer` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `UltralyticsDetectorProvider` —— 2/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 928 | 768 - 1280 | 4 | 81% |
-| 高度 | 1344 | 720 - 1664 | 4 | 68% |
-| 采样步数 | 17 | 9 - 25 | 4 | 53% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 4 | 57% |
-| 采样算法 | res_2m | - | 4 | 50% |
-| 调度器 | sgm_uniform | - | 4 | 75% |
-| 重绘幅度 | 0.625 | 0.15 - 1 | 4 | 33% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 8 | 3 | 71% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | normal | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 720 | 512 - 720 | 3 | 85% |
+| 高度 | 1280 | 512 - 1280 | 3 | 65% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 928，观测区间 768 - 1280，4 个样本，取值集中（一致性 81%）
-- 高度 中位数 1344，观测区间 720 - 1664，4 个样本
-- 采样步数 中位数 17，观测区间 9 - 25，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 res_2m，4 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.625，观测区间 0.15 - 1，4 个样本，取值分散，一致性仅 33%
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 8，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 normal，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 720，观测区间 512 - 720，3 个样本，取值集中（一致性 85%）
+- 高度 中位数 1280，观测区间 512 - 1280，3 个样本

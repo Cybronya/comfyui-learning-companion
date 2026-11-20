@@ -1,77 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_383
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.86875
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxResolutionNode, JjkText, KSamplerSelect, Label (rgthree), LoadImage, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.649
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, FluxKontextMultiReferenceLatentMethod, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [平台全量/品牌创意灵感_1888079162437951490.json, 平台全量/幸运IP过新年_1879814938511503362.json, 平台全量/毛绒玩具设计手稿_1879469214250557441.json, 平台全量/野兽派波普风景绘画_1869660766063202305.json]
+members: [图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json, 图片生成/文生图/yxmys-遗物生成_2039166117398192130.json, 图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_383
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/品牌创意灵感_1888079162437951490.json、平台全量/幸运IP过新年_1879814938511503362.json、平台全量/毛绒玩具设计手稿_1879469214250557441.json、平台全量/野兽派波普风景绘画_1869660766063202305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json、图片生成/文生图/yxmys-遗物生成_2039166117398192130.json、图片生成/文生图/游戏道具图标生成+全节点注释_2039697938036822018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxResolutionNode`
-- `JjkText`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSamplerSelect`
-- `Label (rgthree)`
-- `LoadImage`
-- `RH_Captioner`
+- `ModelSamplingAuraFlow`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `TextCombinerTwo` —— 3/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `StyleModelLoader` —— 2/4 个有
-- `AddLabel` —— 1/4 个有
-- `Anything Everywhere3` —— 1/4 个有
-- `CLIPVisionEncode` —— 1/4 个有
-- `LayerUtility: ImageReel` —— 1/4 个有
-- `LayerUtility: ImageReelComposit` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `Primitive integer [Crystools]` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
-- `StyleModelApplySimple` —— 1/4 个有
-- `TextCombinerSix` —— 1/4 个有
-- `VAEEncode` —— 1/4 个有
-- `YC_LG_Redux` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy imageIndexSwitch` —— 1/4 个有
+- `AV_LoraLoader` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `MultiTextConcatenate` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `ReferenceLatent` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 4 | 75% |
-| 高度 | 1280 | 512 - 1280 | 4 | 69% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -79,5 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，4 个样本
-- 高度 中位数 1280，观测区间 512 - 1280，4 个样本
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

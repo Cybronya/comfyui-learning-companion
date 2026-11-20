@@ -1,60 +1,63 @@
 ---
 name: image_to_image_sampler_clip_unet_117
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 0.8912
-common_nodes: [CLIPTextEncode, CR SDXL Aspect Ratio, ImageResize+, KSampler, LoadImage, ModelSamplingSD3, QuadrupleCLIPLoader, RH_Captioner, SaveImage, Text Concatenate, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.8625
+common_nodes: [CLIPTextEncode, Image Comparer (rgthree), KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/HiDream-I1图生图_1915601249054425090.json, 图片生成/图生图/HiDreamFull图生图ComfyUI原生支持_1915248465113452546.json, 图片生成/图生图/hiddream图生图   高质量原生支持_1934832828377178113.json, 图片生成/文生图/图生图_1943252903802904578.json, 视频生成/文生视频/图生图   原生支持_1930884360281763841.json]
+members: [图片生成/图生图/WAN2.1图生图_1949144078248812546.json, 图片生成/图生图/Wan2.1图生图（洗图增强真实感）_1949495116142125057.json, 图片生成/图生图/Z-image 图生图工作流_2046980983332806658.json, 图片生成/文生图/Flux-Krea图生图（降低AI感的大模型）_1950930994167742465.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_117
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/HiDream-I1图生图_1915601249054425090.json、图片生成/图生图/HiDreamFull图生图ComfyUI原生支持_1915248465113452546.json、图片生成/图生图/hiddream图生图   高质量原生支持_1934832828377178113.json、图片生成/文生图/图生图_1943252903802904578.json、视频生成/文生视频/图生图   原生支持_1930884360281763841.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/WAN2.1图生图_1949144078248812546.json、图片生成/图生图/Wan2.1图生图（洗图增强真实感）_1949495116142125057.json、图片生成/图生图/Z-image 图生图工作流_2046980983332806658.json、图片生成/文生图/Flux-Krea图生图（降低AI感的大模型）_1950930994167742465.json）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `ImageResize+`
+- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `QuadrupleCLIPLoader`
-- `RH_Captioner`
+- `PreviewImage`
 - `SaveImage`
-- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `PrimitiveString` —— 4/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `CLIPLoader` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `FilmGrain` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `DualCLIPLoader` —— 1/4 个有
+- `LayerColor: Brightness & Contrast` —— 1/4 个有
+- `LoraLoader` —— 1/4 个有
+- `Primitive float [Crystools]` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 35 | 35 - 35 | 5 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 0.7 | 0.22 - 0.7 | 5 | 68% |
+| 采样步数 | 20 | 10 - 20 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 4 | 81% |
+| 采样算法 | euler | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 50% |
+| 重绘幅度 | 0.4 | 0.1 - 0.5 | 4 | 53% |
+| LoRA 模型强度 | 0.45 | - | 1 | 100% |
+| LoRA 文本强度 | 0.45 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -62,8 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 35，观测区间 35 - 35，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 0.7，观测区间 0.22 - 0.7，5 个样本
+- 采样步数 中位数 20，观测区间 10 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，4 个样本，取值集中（一致性 81%）
+- 采样算法 最常用 euler，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 50%
+- 重绘幅度 中位数 0.4，观测区间 0.1 - 0.5，4 个样本

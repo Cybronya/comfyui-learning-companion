@@ -1,55 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_779
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.94
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.726333
+common_nodes: [ImageResizeKJv2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json, 视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json, 视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json, 视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json]
+members: [视频生成/文生视频/Wan21_lynx_人物一致视频_1976007633784147970.json, 视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json, 视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_779
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json、视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json、视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json、视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan21_lynx_人物一致视频_1976007633784147970.json、视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json、视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
+全部 3 个 workflow 都包含：
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `ImageToMask` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `WanVideoAddTTMLatents` —— 1/4 个有
-- `WanVideoEncode` —— 1/4 个有
-- `easy globalSeed` —— 1/4 个有
+- `Bounded Image Crop` —— 2/3 个有
+- `Bounded Image Crop with Mask` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `GroundingDinoModelLoader (segment anything)` —— 2/3 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 2/3 个有
+- `SAMModelLoader (segment anything)` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `Image Crop Face` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `WanVideoVACEEncode` —— 1/3 个有
 
 ## 典型参数
 

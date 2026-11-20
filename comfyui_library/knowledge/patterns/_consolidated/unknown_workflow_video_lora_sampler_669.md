@@ -1,66 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_669
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.85625
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageBatchMulti, ImageFromBatch, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RepeatImageBatch, ResizeImagesByShorterEdge, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.648667
+common_nodes: [DWPreprocessor, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddControlEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/MiniMax H3 小猫踏步舞专属流_2118273680668188673.json, 平台全量/MiniMax H3 视频人物替换_2117507945054429185.json, 平台全量/MiniMax H3汽车模型高铁转场_2120052668998705154.json, 平台全量/MiniMax H3视频主角替换_2119720542717693953.json]
+members: [视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json, 视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_669
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/MiniMax H3 小猫踏步舞专属流_2118273680668188673.json、平台全量/MiniMax H3 视频人物替换_2117507945054429185.json、平台全量/MiniMax H3汽车模型高铁转场_2120052668998705154.json、平台全量/MiniMax H3视频主角替换_2119720542717693953.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json、视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `DWPreprocessor`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `RepeatImageBatch`
-- `ResizeImagesByShorterEdge`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideoFFmpeg`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoAddControlEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `INTConstant` —— 3/4 个有
-- `LoadVideo` —— 3/4 个有
-- `MiniMaxH3PromptEnhancerT8` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `ShellAgentPluginOutputText` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `忽略多组孤海` —— 1/4 个有
+- `CLIPLoader` —— 2/3 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `DepthAnything_V2` —— 2/3 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `PDIMAGE_LongerSize` —— 2/3 个有
+- `WanVideoTextEmbedBridge` —— 2/3 个有
+- `CreateShapeImageOnPath` —— 1/3 个有
+- `GetMaskSizeAndCount` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `SplineEditor` —— 1/3 个有
+- `Zoe-DepthMapPreprocessor` —— 1/3 个有
 
 ## 典型参数
 

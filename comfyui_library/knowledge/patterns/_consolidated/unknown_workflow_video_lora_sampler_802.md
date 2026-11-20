@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_802
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.45
-common_nodes: [GIMMVFI_interpolate, GetNode, LoadWanVideoT5TextEncoder, PrimitiveInt, RIFE VFI, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetRadialAttention, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.983
+common_nodes: [AudioBeforeAfterSilence, AudioToPath, ComfyMathExpression, ConcatVideos, GetImageRangeFromBatch, GetImageSize, ImageFromBatch, ImageResizeKJv2, ListAppendNode, ListCreateNode, LoadImage, LongCatAvatarWhisperEmbeds, ManualSigmas, MultiMergeVideos, PrimitiveString, RH_GetAudioDuration, ReplaceVideoLatentFrames, SP_DynamicCombo, SaveVideo, SystemUUIDGenerator, VHS_SelectFilename, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, YC Extract Number, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [平台全量/03-03-02-WAN2.1-视频转绘-t2v-kijai_1989235364458016770.json, 视频生成/图生视频/03-02-02-WAN2.1-图生视频-kijai_1989234021240549377.json, 视频生成/文生视频/03-01-02-WAN2.1-文生视频-kijai_1989233864696541185.json]
+members: [数字人/数字人/LongCat 1.5 数字人口播｜5–180秒·三档分辨率_2112843247210033153.json, 数字人/数字人/LongCat 1.5 数字人口播｜省钱版·5–180秒_2113105068068270082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_802
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/03-03-02-WAN2.1-视频转绘-t2v-kijai_1989235364458016770.json、视频生成/图生视频/03-02-02-WAN2.1-图生视频-kijai_1989234021240549377.json、视频生成/文生视频/03-01-02-WAN2.1-文生视频-kijai_1989233864696541185.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/LongCat 1.5 数字人口播｜5–180秒·三档分辨率_2112843247210033153.json、数字人/数字人/LongCat 1.5 数字人口播｜省钱版·5–180秒_2113105068068270082.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GIMMVFI_interpolate`
-- `GetNode`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
-- `RIFE VFI`
-- `SetNode`
+全部 2 个 workflow 都包含：
+- `AudioBeforeAfterSilence`
+- `AudioToPath`
+- `ComfyMathExpression`
+- `ConcatVideos`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `ListAppendNode`
+- `ListCreateNode`
+- `LoadImage`
+- `LongCatAvatarWhisperEmbeds`
+- `ManualSigmas`
+- `MultiMergeVideos`
+- `PrimitiveString`
+- `RH_GetAudioDuration`
+- `ReplaceVideoLatentFrames`
+- `SP_DynamicCombo`
+- `SaveVideo`
+- `SystemUUIDGenerator`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanAnimatePlus BlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetRadialAttention`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `YC Extract Number`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `WanVideoEmptyEmbeds` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `WanVideoClipVisionEncode` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `WanVideoImageToVideoEncode` —— 1/3 个有
+- `LoadAudio` —— 1/2 个有
+- `VHS_LoadAudioUpload` —— 1/2 个有
 
 ## 典型参数
 
@@ -67,4 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

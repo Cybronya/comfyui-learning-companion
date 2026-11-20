@@ -1,58 +1,56 @@
 ---
 name: unknown_workflow_sampler_unet_vae_195
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.885286
-common_nodes: [BasicScheduler, CLIPLoader, CR Text, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.980167
+common_nodes: [BasicGuider, CLIPLoader, CreateVideo, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/boogu edit图像编辑_2069677788981981186.json, 图片生成/图生图/boogu edit图像编辑_2070346438869086209.json, 图片生成/图生图/boogu edit图像编辑_2070347722284158977.json, 图片生成/图生图/boogu 图像编辑模式 提示词自动优化版_2083613193791959042.json, 图片生成/图生图/开源图像boogu 图像编辑 提示词自动优化版_2069584129343184898.json, 图片生成/图生图/开源图像悍将boogu 图像编辑模式 提示词自动优化版_2069366511243980802.json, 视频生成/图生视频/开源图像boogu_图像编辑_提示词自动优化版_2116348585221640193.json]
+members: [视频生成/文生视频/02_MiniMax H3｜OpenVDN DMD8｜通用生视频 768P_2099156575138177025.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8 深度视频引导视频生成｜动作·运镜·结构迁移_2103416786740924418.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2098317972656971777.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2099120747452129282.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 2K_2098414505846992898.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 4K_2098414520787103746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_195
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/boogu edit图像编辑_2069677788981981186.json、图片生成/图生图/boogu edit图像编辑_2070346438869086209.json、图片生成/图生图/boogu edit图像编辑_2070347722284158977.json、图片生成/图生图/boogu 图像编辑模式 提示词自动优化版_2083613193791959042.json、图片生成/图生图/开源图像boogu 图像编辑 提示词自动优化版_2069584129343184898.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/02_MiniMax H3｜OpenVDN DMD8｜通用生视频 768P_2099156575138177025.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8 深度视频引导视频生成｜动作·运镜·结构迁移_2103416786740924418.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2098317972656971777.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2099120747452129282.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 2K_2098414505846992898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
-- `KSamplerSelect`
+- `CreateVideo`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
-- `SaveImage`
-- `TextEncodeBooguEdit`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoImageAspectRatioResizeNode` —— 4/7 个有
-- `Dapao_LlamaChat` —— 4/7 个有
-- `Seed (rgthree)` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `孤海注释` —— 4/7 个有
-- `GetImageSize` —— 3/7 个有
-- `ResizeImageMaskNode` —— 3/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
+- `RH_DLSS5FrameInterpolation` —— 3/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `SeedVR2` —— 2/6 个有
+- `SeedVR2BlockSwap` —— 2/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `LoadVideo` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `Video Slice` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 1024 | 7 | 65% |
-| 高度 | 512 | 512 - 1024 | 7 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,5 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1024，7 个样本
-- 高度 中位数 512，观测区间 512 - 1024，7 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

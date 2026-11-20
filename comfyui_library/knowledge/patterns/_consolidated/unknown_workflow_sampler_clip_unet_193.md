@@ -1,69 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_193
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.820375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: moderate
+coverage: 0.881429
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/FLUX2-klein 文生图4b_2012349235420729345.json, 图片生成/文生图/FLUX2-klein 文生图9b_2012344744420052994.json, 图片生成/文生图/Klein文生图+全节点注释_2072566661164658689.json, 图片生成/文生图/Klein文生图_2014600663744913409.json, 图片生成/文生图/Klein文生图_2072558936527560706.json, 图片生成/文生图/Klein文生图_2073934557337964546.json, 图片生成/文生图/【1月】高质量2K文生图 Flux2-Klein-9B_2012159064800763905.json, 视频生成/图生视频/Klein文生图+全节点注释_2072926956559097858.json]
+members: [图片生成/图生图/klein 局部重绘+全节点注释_2061408975094112257.json, 图片生成/图生图/klein溶图打光_2110918582837272578.json, 图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2032735984915320833.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2097884372610404353.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2099412832235380737.json, 图片生成/文生图/F.2klein9b自动溶图打光一致性_2058899052313530370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_193
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/FLUX2-klein 文生图4b_2012349235420729345.json、图片生成/文生图/FLUX2-klein 文生图9b_2012344744420052994.json、图片生成/文生图/Klein文生图+全节点注释_2072566661164658689.json、图片生成/文生图/Klein文生图_2014600663744913409.json、图片生成/文生图/Klein文生图_2072558936527560706.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/klein 局部重绘+全节点注释_2061408975094112257.json、图片生成/图生图/klein溶图打光_2110918582837272578.json、图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json、图片生成/图生图/材质纹理迁移_最新klein工作流_2032735984915320833.json、图片生成/图生图/材质纹理迁移_最新klein工作流_2097884372610404353.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/8 个有
-- `JWInteger` —— 6/8 个有
-- `LoadImage` —— 5/8 个有
-- `FluxResolutionNode` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
+- `GetImageSize` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `easy positive` —— 5/7 个有
+- `ImageScaleToTotalPixels` —— 3/7 个有
+- `Mask Fill Holes` —— 3/7 个有
+- `MaskPreview` —— 3/7 个有
+- `SetLatentNoiseMask` —— 3/7 个有
+- `Int` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `INPAINT_ExpandMask` —— 1/7 个有
+- `InpaintModelConditioning` —— 1/7 个有
+- `LayerColor: Brightness & Contrast` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `RepeatLatentBatch` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,80 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_756
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.875
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR String To Combo, ImageResizeKJ, ImpactInt, ImpactStringSelector, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RH_LLMAPI_NODE, SimpleMath+, SplitStringByDelimiter, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.403667
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PlaySound|pysssss, PreviewImage, PrimitiveFloat, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/万相2.1运镜控制LORA十合一集合_1964309918603988994.json, 视频生成/图生视频/万相2.1运镜控制LORA十合一集合_2018166622560718849.json, 视频生成/图生视频/自己用：wan2.1_10个运镜lora_1940692152370311170.json, 视频生成/文生视频/【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频充满灵性~_1931150479697620994.json]
+members: [视频生成/图生视频/影视二创_2022695116523180034.json, 视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json, 视频生成/图生视频/首帧二创人物替换优化_2042773742413156353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_756
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万相2.1运镜控制LORA十合一集合_1964309918603988994.json、视频生成/图生视频/万相2.1运镜控制LORA十合一集合_2018166622560718849.json、视频生成/图生视频/自己用：wan2.1_10个运镜lora_1940692152370311170.json、视频生成/文生视频/【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频充满灵性~_1931150479697620994.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/影视二创_2022695116523180034.json、视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json、视频生成/图生视频/首帧二创人物替换优化_2042773742413156353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 3 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR String To Combo`
-- `ImageResizeKJ`
-- `ImpactInt`
-- `ImpactStringSelector`
-- `KSampler`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RH_Captioner`
-- `RH_LLMAPI_NODE`
-- `SimpleMath+`
-- `SplitStringByDelimiter`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `OnnxDetectionModelLoader`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `JoinStringMulti` —— 2/4 个有
-- `JoinStrings` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `SDPoseOODLoader` —— 2/3 个有
+- `SDPoseOODProcessor` —— 2/3 个有
+- `YOLOModelLoader` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `BBoxYOLO` —— 1/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DrawViTPose` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `NumberComparison` —— 1/3 个有
+- `PixelPerfectResolution` —— 1/3 个有
+- `SDPoseDrawKeypoints` —— 1/3 个有
+- `SDPoseKeypointExtractor` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 14 | 8 - 20 | 4 | 57% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

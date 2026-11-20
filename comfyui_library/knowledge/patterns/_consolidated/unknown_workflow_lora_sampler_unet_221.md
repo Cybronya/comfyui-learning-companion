@@ -1,86 +1,65 @@
 ---
 name: unknown_workflow_lora_sampler_unet_221
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.83375
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy batchAnything, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything]
+coverage: 0.849333
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键生成15-45S MV视频！效果非常好！_2096496210461945858.json, 图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json, 平台全量/单采循环流字节出品_2118705667614793730.json, 视频生成/图生视频/一键MV_2095144928673357825.json]
+members: [图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json, 图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json, 图片生成/图生图/单图强一致性编辑_2078743919415873537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_221
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键生成15-45S MV视频！效果非常好！_2096496210461945858.json、图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json、平台全量/单采循环流字节出品_2118705667614793730.json、视频生成/图生视频/一键MV_2095144928673357825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json、图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json、图片生成/图生图/单图强一致性编辑_2078743919415873537.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveFloat`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `Text Multiline`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptConcat`
-- `easy saveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `Text To Image (mtb)` —— 3/4 个有
-- `ACE_AudioCrop` —— 2/4 个有
-- `ASRMW` —— 2/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `DF_Float` —— 2/4 个有
-- `ExtractLinesByIndex` —— 2/4 个有
-- `GetAudioDurationFromAudio` —— 2/4 个有
-- `Int Literal` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `Text String Truncate` —— 2/4 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/4 个有
-- `easy clearCacheAll` —— 2/4 个有
-- `ttN concat` —— 2/4 个有
-- `BlockSparseAttention` —— 1/4 个有
-- `ExtendIntermediateSigmas` —— 1/4 个有
-- `LoraLoaderBypassModelOnly` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
-- `easy MiniMaxH3MotionContextHard` —— 1/4 个有
+- `AdaptiveLongestEdge_EditUtils` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `CR Value` —— 1/3 个有
+- `GrowMask` —— 1/3 个有
+- `ImpactConditionalBranch` —— 1/3 个有
+- `InpaintCrop` —— 1/3 个有
+- `InpaintStitch` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/3 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/3 个有
+- `MaskPreview+` —— 1/3 个有
+- `easy boolean` —— 1/3 个有
+- `easy imageColorMatch` —— 1/3 个有
 
 ## 典型参数
 

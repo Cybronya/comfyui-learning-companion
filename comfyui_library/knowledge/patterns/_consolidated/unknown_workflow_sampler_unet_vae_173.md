@@ -1,68 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_173
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.84775
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, ImpactSwitch, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.911667
+common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/地表最强开源-Minimax H3 REF2V图生视频_2084811145361321985.json, 视频生成/图生视频/地表最强开源-Minimax H3 REF2V多参生视频_2084910817996271617.json, 视频生成/文生视频/MiniMax H3 加速版 全能参考生视频_2085495312386453506.json, 视频生成/文生视频/MiniMax_H3多图参考视频生成_2095691860177149954.json, 视频生成/文生视频/biaozhun6_accel_jellyfish_2087563509491134466.json, 视频生成/文生视频/加速版-MiniMax H3｜多参图像音频极速生视频_2085190320597331969.json, 视频生成/文生视频/加速版-MiniMax H3｜多参图像音频极速生视频_2089636411841540097.json, 视频生成/文生视频/加速版-MiniMax H3｜多参图像音频极速生视频_2091126218266603521.json]
+members: [图片生成/图生图/Boogu-Image 图片编辑_2068185847907835905.json, 图片生成/图生图/Boogu_Edit工作流_2067413961858965505.json, 图片生成/图生图/Boogu_Image_edit 单图编辑_2067731696430178305.json, 图片生成/图生图/boogu_edit_图像编辑-图生图_2069074867202383874.json, 图片生成/图生图/boogu_edit_图像编辑_2069391664145321986.json, 图片生成/文生图/boogu编辑图片_2067805061354446849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_173
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/地表最强开源-Minimax H3 REF2V图生视频_2084811145361321985.json、视频生成/图生视频/地表最强开源-Minimax H3 REF2V多参生视频_2084910817996271617.json、视频生成/文生视频/MiniMax H3 加速版 全能参考生视频_2085495312386453506.json、视频生成/文生视频/MiniMax_H3多图参考视频生成_2095691860177149954.json、视频生成/文生视频/biaozhun6_accel_jellyfish_2087563509491134466.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Boogu-Image 图片编辑_2068185847907835905.json、图片生成/图生图/Boogu_Edit工作流_2067413961858965505.json、图片生成/图生图/Boogu_Image_edit 单图编辑_2067731696430178305.json、图片生成/图生图/boogu_edit_图像编辑-图生图_2069074867202383874.json、图片生成/图生图/boogu_edit_图像编辑_2069391664145321986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ImpactSwitch`
+- `EmptyLatentImage`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
+- `SaveImage`
+- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EasyCache` —— 7/8 个有
-- `LoadAudio` —— 7/8 个有
-- `PathchSageAttentionKJ` —— 7/8 个有
-- `GetVideoComponents` —— 6/8 个有
-- `LoadVideo` —— 6/8 个有
-- `PrimitiveFloat` —— 6/8 个有
-- `ShowAnything|Mie` —— 6/8 个有
-- `CR Prompt Text` —— 5/8 个有
-- `DF_Int_to_Float` —— 5/8 个有
-- `Int` —— 2/8 个有
-- `TextBox` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `MiniMaxH3BlockCacheT8` —— 1/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/8 个有
-- `ReroutePrimitive|pysssss` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
+- `PreviewImage` —— 4/6 个有
+- `FluxKontextImageScale` —— 2/6 个有
+- `GetImageSize+` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `Text` —— 2/6 个有
+- `ImageConcanate` —— 1/6 个有
+- `ImageConcatMulti` —— 1/6 个有
+- `JWStringConcat` —— 1/6 个有
+- `PDRatioSelector` —— 1/6 个有
+- `RH_Captioner` —— 1/6 个有
+- `图像缩放V2_孤海` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1280 | 1024 - 1536 | 6 | 84% |
+| 高度 | 1024 | 1024 - 1280 | 6 | 89% |
 
 ## 常见问题
 
@@ -70,4 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1280，观测区间 1024 - 1536，6 个样本，取值集中（一致性 84%）
+- 高度 中位数 1024，观测区间 1024 - 1280，6 个样本，取值集中（一致性 89%）

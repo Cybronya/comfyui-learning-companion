@@ -3,56 +3,67 @@ name: unknown_workflow_video_lora_sampler_1022
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9655
-common_nodes: [CreateCFGScheduleFloatList, FloatConstant, GetImageSizeAndCount, INTConstant, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, ShowText|pysssss, TT_img_enc, Text Random Line, TextCombinerTwo, TextInput_, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.682
+common_nodes: [CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, QwenLoader, SetNode, ShowText|pysssss, SimpleMath+, Text, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2.2show_her_feetAAAAA_2007442248425807873.json, 视频生成/图生视频/站立踩-standing face-revealing dick-stepping_2007441699622096897.json]
+members: [视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json, 视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1022
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2.2show_her_feetAAAAA_2007442248425807873.json、视频生成/图生视频/站立踩-standing face-revealing dick-stepping_2007441699622096897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json、视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CR Text`
 - `CreateCFGScheduleFloatList`
-- `FloatConstant`
+- `Fast Groups Muter (rgthree)`
 - `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
+- `ImageConcatMulti`
+- `ImagePadKJ`
 - `ImageResizeKJ`
-- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
+- `ImpactInt`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SaveImage`
+- `PreviewImage`
+- `QwenLoader`
+- `SetNode`
 - `ShowText|pysssss`
-- `TT_img_enc`
-- `Text Random Line`
-- `TextCombinerTwo`
-- `TextInput_`
+- `SimpleMath+`
+- `Text`
+- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
+- `WanVideoPromptExtender`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
 - `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `WanVideoContextOptions` —— 1/2 个有
 
 ## 典型参数
 

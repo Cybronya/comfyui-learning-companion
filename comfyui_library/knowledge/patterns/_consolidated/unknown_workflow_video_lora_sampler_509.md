@@ -1,63 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_509
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.877833
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.9818
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/4步首尾帧+自动提示词（短剧专用）_2000837178416656386.json, 视频生成/图生视频/8步首帧+自动提示词（短剧专用）_2000842508747800577.json, 视频生成/图生视频/Smooth Mix i2V v2.0首尾帧生视频8步加速版_2026846377501790209.json, 视频生成/图生视频/Smooth Mix i2V v2.0首尾帧生视频8步加速版_2038172701340213249.json, 视频生成/图生视频/WAN2.2首尾帧_2021954787742326786.json, 视频生成/图生视频/Wan2.2 14B 首尾帧_1989350434903085058.json]
+members: [视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json, 视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json, 视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json, 视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_509
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/4步首尾帧+自动提示词（短剧专用）_2000837178416656386.json、视频生成/图生视频/8步首帧+自动提示词（短剧专用）_2000842508747800577.json、视频生成/图生视频/Smooth Mix i2V v2.0首尾帧生视频8步加速版_2026846377501790209.json、视频生成/图生视频/Smooth Mix i2V v2.0首尾帧生视频8步加速版_2038172701340213249.json、视频生成/图生视频/WAN2.2首尾帧_2021954787742326786.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan图生视频+运镜=艾橘溪_1948677616428548098.json、视频生成/图生视频/首尾帧=FusionX=图生视频=艾橘溪_1912904491438669825.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2041339598445481985.json、视频生成/图生视频/首尾帧=FusionX=图生视频_2046408331203452929.json、视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanFirstLastFrameToVideo` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/6 个有
-- `ImageResize+` —— 3/6 个有
-- `RH_LLMAPI_NODE` —— 3/6 个有
-- `ShowText|pysssss` —— 3/6 个有
-- `easy imageConcat` —— 2/6 个有
-- `ImpactInt` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `WanImageToVideo` —— 1/6 个有
-- `WanVideoNAG` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
+- `ColorMatch` —— 4/5 个有
+- `WanVideoEnhanceAVideo` —— 4/5 个有
+- `WanVideoSLG` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `Bjornulf_ShowInt` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
+- `WanVideoUni3C_embeds` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 83% |
-| Prompt 约束强度(CFG) | 6 | 4 - 10 | 6 | 59% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,8 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 83%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 10，6 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

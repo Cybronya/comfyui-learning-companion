@@ -1,71 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_548
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.946333
-common_nodes: [CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.70925
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json, 视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json, 视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json, 视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json, 视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json, 视频生成/文生视频/ltx-2.3文生视频蒸馏二阶段放大_2030336856772059137.json]
+members: [视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json, 视频生成/图生视频/电商服饰产品展示 万物迁移 视频换脸换装换衣 模特人物换脸+电商服装展示 Bernini+电商换产品_2064890559977840642.json, 视频生成/图生视频/视频换装换衣+电商服饰产品展示+ 模特人物换脸 电商服装展示  Bernini+电商换产品视频编辑_2064510607130451970.json, 视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_548
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json、视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json、视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json、视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json、视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json、视频生成/图生视频/电商服饰产品展示 万物迁移 视频换脸换装换衣 模特人物换脸+电商服装展示 Bernini+电商换产品_2064890559977840642.json、视频生成/图生视频/视频换装换衣+电商服饰产品展示+ 模特人物换脸 电商服装展示  Bernini+电商换产品视频编辑_2064510607130451970.json、视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniConditioning`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SplitSigmas`
 - `UNETLoader`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
 - `VAELoader`
-- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 5/6 个有
-- `KSamplerSelect` —— 5/6 个有
-- `ManualSigmas` —— 5/6 个有
-- `ClownSampler_Beta` —— 4/6 个有
-- `GuiderParameters` —— 4/6 个有
-- `LTXVScheduler` —— 4/6 个有
-- `MultimodalGuider` —— 4/6 个有
-- `LTXVLatentUpsampler` —— 2/6 个有
-- `LatentUpscaleModelLoader` —— 2/6 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `TTResolutionSelector` —— 3/4 个有
+- `Text` —— 3/4 个有
+- `VAEDecode` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `BatchImagesNode` —— 1/4 个有
+- `ComfyMathExpression` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `VAEDecodeTiled` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

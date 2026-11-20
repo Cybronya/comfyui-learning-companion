@@ -3,69 +3,59 @@ name: unknown_workflow_controlnet_upscale_lora_10
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.778
-common_nodes: [AILab_QwenVL, BasicScheduler, CFGGuider, CLIPLoader, CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, Image Comparer (rgthree), ImageBlur, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, RandomNoise, SamplerCustom, SamplerCustomAdvanced, SamplerEulerAncestral, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy cleanGpuUsed, easy positive, easy promptConcat, easy showAnything]
+coverage: 0.4915
+common_nodes: [AIO_Preprocessor, CLIPTextEncode, CR SDXL Aspect Ratio, CheckpointLoaderSimple, ConditioningSetTimestepRange, ConditioningZeroOut, ImageScaleToTotalPixels, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, Qwen3_VQA, QwenImageDiffsynthControlnet, RHHiddenNodes, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/二维码美化防检测_2083209367024922626.json, 图片生成/文生图/SD1.5-艺术二维码-二维码美化_2026877662597222401.json]
+members: [图片生成/文生图/超好用🔥避免同质化电商洗图-模特-场景可按需调整_2058476049717092354.json, 图片生成/文生图/避免同质化电商带货洗图模特场景都可以+全节点注释_2058419748949544961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_lora_10
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/二维码美化防检测_2083209367024922626.json、图片生成/文生图/SD1.5-艺术二维码-二维码美化_2026877662597222401.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/超好用🔥避免同质化电商洗图-模特-场景可按需调整_2058476049717092354.json、图片生成/文生图/避免同质化电商带货洗图模特场景都可以+全节点注释_2058419748949544961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPSetLastLayer`
+- `AIO_Preprocessor`
 - `CLIPTextEncode`
+- `CR SDXL Aspect Ratio`
 - `CheckpointLoaderSimple`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `Image Comparer (rgthree)`
-- `ImageBlur`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageMaskScaleAs`
+- `ConditioningSetTimestepRange`
+- `ConditioningZeroOut`
+- `ImageScaleToTotalPixels`
+- `KSampler`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustom`
-- `SamplerCustomAdvanced`
-- `SamplerEulerAncestral`
+- `ModelPatchLoader`
+- `Qwen3_VQA`
+- `QwenImageDiffsynthControlnet`
+- `RHHiddenNodes`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `UNETLoader`
+- `ShowText|pysssss`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAEEncodeTiled`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `easy positive`
-- `easy promptConcat`
-- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1 | - | 2 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -73,5 +63,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

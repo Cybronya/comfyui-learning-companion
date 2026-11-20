@@ -1,37 +1,44 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_47
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.830667
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DownloadAndLoadFlorence2Model, Florence2Run, ImageUpscaleWithModel, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+frequency: 2
+level: weak
+coverage: 0.7865
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Upscale Image, DetailDaemonSamplerNode, DualCLIPLoader, EmptySD3LatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Image Tiled, ImageConcanateOfUtils, ImageFromBatch, KSamplerSelect, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TeaCache, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/图生图/HiDream&TTP_1925414382111760386.json, 图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json, 图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json]
+members: [图片生成/图生图/B站：AI绘画师-数码宝贝-天女兽生图工作流_1904073338157965314.json, 图片生成/文生图/星空女孩lora-工作流_1967085637759275009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_47
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HiDream&TTP_1925414382111760386.json、图片生成/图生图/Wan2.2分块超清放大_1950844011227578369.json、图片生成/图生图/🐮老许Gary：WAN2.2分块超清放大_2017249178774151170.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/B站：AI绘画师-数码宝贝-天女兽生图工作流_1904073338157965314.json、图片生成/文生图/星空女孩lora-工作流_1967085637759275009.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPTextEncode`
-- `DownloadAndLoadFlorence2Model`
+- `CR Upscale Image`
+- `DetailDaemonSamplerNode`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Florence2ModelLoader`
 - `Florence2Run`
-- `ImageUpscaleWithModel`
+- `FluxGuidance`
+- `Image Tiled`
+- `ImageConcanateOfUtils`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `LoadImage`
-- `ModelSamplingSD3`
+- `ModelSamplingFlux`
+- `PreviewImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -39,8 +46,9 @@ source: knowledge_consolidation
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
+- `TeaCache`
 - `UNETLoader`
-- `UpscaleModelLoader`
+- `VAEDecode`
 - `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
@@ -48,27 +56,17 @@ source: knowledge_consolidation
 - `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `Florence2ModelLoader` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageScaleBy` —— 1/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `QuadrupleCLIPLoader` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `LoraLoader` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `RepeatLatentBatch` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.85 | - | 2 | 100% |
-| LoRA 文本强度 | 0.85 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -76,5 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

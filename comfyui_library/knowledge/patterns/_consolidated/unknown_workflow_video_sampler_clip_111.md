@@ -2,82 +2,57 @@
 name: unknown_workflow_video_sampler_clip_111
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.705833
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VHS_VideoCombine]
+level: strong
+coverage: 0.990667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2 高动态音图生视频数字人_2009430936194125826.json, 视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json, 视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json, 视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json, 视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json, 视频生成/图生视频/高动态音图生视频数字人LTX2 Ai2V_2009631227556405249.json]
+members: [视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json, 视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json, 视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json, 视频生成/图生视频/万相-Wan2.1-图生视频_1901974657921081346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_111
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/LTX2 高动态音图生视频数字人_2009430936194125826.json、视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json、视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json、视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json、视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json、视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json、视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json、视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json、视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `VAEDecodeTiled` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `JWInteger` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `RH_LLMAPI_Pro_Node` —— 3/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `VRAMReserver` —— 2/6 个有
-- `AudioCrop` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerMask: MaskPreview` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `PrimitiveFloat` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `Textbox` —— 1/6 个有
-- `VAEDecode` —— 1/6 个有
-- `easy float` —— 1/6 个有
-- `easy mathFloat` —— 1/6 个有
+- `ImageResizeKJ` —— 3/6 个有
+- `JanusImageUnderstanding` —— 1/6 个有
+- `JanusModelLoader` —— 1/6 个有
+- `ModelSamplingSD3` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringFunction|pysssss` —— 1/6 个有
+- `TeaCache` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 8 | 6 | 86% |
+| 采样算法 | uni_pc | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -85,4 +60,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 86%）
+- 采样算法 最常用 uni_pc，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

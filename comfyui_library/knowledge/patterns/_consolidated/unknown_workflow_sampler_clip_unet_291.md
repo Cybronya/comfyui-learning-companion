@@ -1,62 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_291
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9108
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.76775
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2多图溶图_2016400551017193474.json, 图片生成/图生图/FLUX2支持多图溶图-透视修正_2045081810996043777.json, 图片生成/图生图/Flux 2 klein 单图编辑角色卡（多角度图-图生图）工作流_2054450460597202945.json, 图片生成/图生图/Flux2溶图_2014992165562228737.json, 平台全量/klein动漫转真人_2034642998985760769.json]
+members: [图片生成/图生图/FLUX-图生图-TTP4K、8K放大_1905644946848944129.json, 图片生成/图生图/FLUX超大图分块优化_2005076783177367554.json, 图片生成/图生图/【 Banan美甲定制】香蕉图像编辑-TTP高清放大_1967708079838158849.json, 图片生成/图生图/小图变2k、4k、6k、8k无限放大_1916024025137479681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_291
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX2多图溶图_2016400551017193474.json、图片生成/图生图/FLUX2支持多图溶图-透视修正_2045081810996043777.json、图片生成/图生图/Flux 2 klein 单图编辑角色卡（多角度图-图生图）工作流_2054450460597202945.json、图片生成/图生图/Flux2溶图_2014992165562228737.json、平台全量/klein动漫转真人_2034642998985760769.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX-图生图-TTP4K、8K放大_1905644946848944129.json、图片生成/图生图/FLUX超大图分块优化_2005076783177367554.json、图片生成/图生图/【 Banan美甲定制】香蕉图像编辑-TTP高清放大_1967708079838158849.json、图片生成/图生图/小图变2k、4k、6k、8k无限放大_1916024025137479681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
 - `LoadImage`
+- `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `Text Concatenate` —— 4/5 个有
-- `PreviewImage` —— 3/5 个有
-- `RHHiddenNodes` —— 3/5 个有
-- `ttN text` —— 3/5 个有
-- `FastCanvas` —— 2/5 个有
-- `FastCanvasTool` —— 2/5 个有
-- `InspyrenetRembg` —— 2/5 个有
-- `LayerUtility: CropByMask V2` —— 2/5 个有
-- `LayerUtility: ImageRemoveAlpha` —— 2/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `FaceDetailer` —— 1/5 个有
-- `SAMLoader` —— 1/5 个有
-- `UltralyticsDetectorProvider` —— 1/5 个有
+- `ImageScaleBy` —— 3/4 个有
+- `ImageUpscaleWithModel` —— 3/4 个有
+- `UpscaleModelLoader` —— 3/4 个有
+- `easy imageListToImageBatch` —— 3/4 个有
+- `Anything Everywhere` —— 2/4 个有
+- `ImageResize+` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `ImageListToBatch+` —— 1/4 个有
+- `Load Image Batch` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `RH_Nano_Banana_Image2Image` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
 
 ## 典型参数
 

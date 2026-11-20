@@ -1,69 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_623
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9174
-common_nodes: [CR SDXL Aspect Ratio, CR Text, Fast Groups Bypasser (rgthree), ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+frequency: 3
+level: strong
+coverage: 0.787
+common_nodes: [CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterPrompt, PainterSequentialF2V, PathchSageAttentionKJ, PrimitiveInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy promptList]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2运镜控制(KJ)_1957349808384176130.json, 视频生成/图生视频/Wan2.2长视频生成(KJ)15秒以上_1957714010304249858.json, 视频生成/图生视频/Wan2.2长视频生成20秒以上_1970311632809304066.json, 视频生成/图生视频/Wan2.2长视频生成_1969679472318443521.json, 视频生成/图生视频/一键生成飞行长视频(30秒以上)_1960259311396139009.json]
+members: [图片生成/图生图/26.2.14绘画小子节点-首尾帧FOR循环长视频生成_2022611248910700545.json, 视频生成/图生视频/首尾帧for循环长视频生成-附视频分段提示词_2022953132912807937.json, 视频生成/图生视频/🐳首尾帧FOR循环长视频生成🐳_2022491815936532481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_623
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2运镜控制(KJ)_1957349808384176130.json、视频生成/图生视频/Wan2.2长视频生成(KJ)15秒以上_1957714010304249858.json、视频生成/图生视频/Wan2.2长视频生成20秒以上_1970311632809304066.json、视频生成/图生视频/Wan2.2长视频生成_1969679472318443521.json、视频生成/图生视频/一键生成飞行长视频(30秒以上)_1960259311396139009.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/26.2.14绘画小子节点-首尾帧FOR循环长视频生成_2022611248910700545.json、视频生成/图生视频/首尾帧for循环长视频生成-附视频分段提示词_2022953132912807937.json、视频生成/图生视频/🐳首尾帧FOR循环长视频生成🐳_2022491815936532481.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR SDXL Aspect Ratio`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PainterPrompt`
+- `PainterSequentialF2V`
+- `PathchSageAttentionKJ`
 - `PrimitiveInt`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 4/5 个有
-- `DF_Int_to_Float` —— 4/5 个有
-- `GetImageSize` —— 4/5 个有
-- `ImageBatch` —— 4/5 个有
-- `ImageFromBatch+` —— 4/5 个有
-- `LoadAudio` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `RH_Translator` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `WanVideoClipVisionEncode` —— 4/5 个有
-- `WanVideoLoraSelectMulti` —— 4/5 个有
-- `ADE_CameraPoseBasic` —— 1/5 个有
-- `WanVideoFunCameraEmbeds` —— 1/5 个有
+- `CustomAddLabel` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -71,4 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

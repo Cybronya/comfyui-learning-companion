@@ -1,81 +1,80 @@
 ---
 name: unknown_workflow_clip_unet_vae_13
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8266
-common_nodes: [CLIPLoader, CLIPTextEncode, Canny, CreateVideo, GetVideoComponents, LoadImage, LoadVideo, ModelSamplingSD3, PreviewImage, SaveVideo, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.91675
+common_nodes: [CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, FluxGuidance, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan2_2_14B_fun_control.json, comfyui-workflow-templates-json/video_wan2_2_5B_fun_control.json, comfyui-workflow-templates-json/video_wan_vace_14B_v2v.json, 平台全量/WAN-线稿控制_1994225191316373505.json, 平台全量/wan2.2-动作迁移-加速lora-4步极速-14B_fun_control_1956361254153670657.json]
+members: [图片生成/图生图/Kontext[Dev]—图片编辑_1938506351540920321.json, 图片生成/图生图/Kontext万物迁移-无需PS加强溶图_1952551302192672769.json, 图片生成/图生图/Kontext单图万物迁移_1950471483208421377.json, 图片生成/图生图/Kontext多图万物迁移_1950078595554263041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan2_2_14B_fun_control.json、comfyui-workflow-templates-json/video_wan2_2_5B_fun_control.json、comfyui-workflow-templates-json/video_wan_vace_14B_v2v.json、平台全量/WAN-线稿控制_1994225191316373505.json、平台全量/wan2.2-动作迁移-加速lora-4步极速-14B_fun_control_1956361254153670657.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Kontext[Dev]—图片编辑_1938506351540920321.json、图片生成/图生图/Kontext万物迁移-无需PS加强溶图_1952551302192672769.json、图片生成/图生图/Kontext单图万物迁移_1950471483208421377.json、图片生成/图生图/Kontext多图万物迁移_1950078595554263041.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `Canny`
-- `CreateVideo`
-- `GetVideoComponents`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `LoadImage`
-- `LoadVideo`
-- `ModelSamplingSD3`
 - `PreviewImage`
-- `SaveVideo`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 3/5 个有
-- `Wan22FunControlToVideo` —— 3/5 个有
-- `KSamplerAdvanced` —— 2/5 个有
-- `LoraLoader` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `SaveAnimatedWEBP` —— 2/5 个有
-- `TrimVideoLatent` —— 2/5 个有
-- `WanVaceToVideo` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
+- `BasicScheduler` —— 3/4 个有
+- `FastCanvas` —— 3/4 个有
+- `FastCanvasTool` —— 3/4 个有
+- `InpaintCrop` —— 3/4 个有
+- `InpaintStitch` —— 3/4 个有
+- `KSamplerSelect` —— 3/4 个有
+- `LayerUtility: CropByMask V3` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `SamplerCustomAdvanced` —— 3/4 个有
+- `easy ifElse` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `BasicGuider` —— 2/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `EmptySD3LatentImage` —— 2/4 个有
+- `FluxKontextImageScale` —— 2/4 个有
+- `GetImageSize+` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `ModelSamplingFlux` —— 2/4 个有
+- `RBGImageStitchPlus` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `RepeatLatentBatch` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `NAGCFGGuider` —— 1/4 个有
+- `easy isMaskEmpty` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
+- `workflow>采样器` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 3 | 19% |
-| Prompt 约束强度(CFG) | 4 | 1 - 20 | 5 | 0% |
-| 采样算法 | uni_pc | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 0.3 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，3 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 20，5 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 uni_pc，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

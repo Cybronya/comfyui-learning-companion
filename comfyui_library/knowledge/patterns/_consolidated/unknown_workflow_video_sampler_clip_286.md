@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_286
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.73
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, ImpactInt, KSamplerAdvanced, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveStringMultiline, RIFE VFI, Seed (rgthree), SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed]
+coverage: 0.8655
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResize+, KSampler, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/一键换装+电商女装丝滑带货文图生视频工作流_2082688216334946306.json, 视频生成/图生视频/最强电商女装丝滑带货文图生视频工作流_2050045558773035009.json]
+members: [视频生成/文生视频/Wan 2.1 ComfyUI 首尾帧+故事版驱动工作流_1926598014440251394.json, 视频生成/文生视频/wan2.1 FusionX 2video_1957967397764349953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_286
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/一键换装+电商女装丝滑带货文图生视频工作流_2082688216334946306.json、视频生成/图生视频/最强电商女装丝滑带货文图生视频工作流_2050045558773035009.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan 2.1 ComfyUI 首尾帧+故事版驱动工作流_1926598014440251394.json、视频生成/文生视频/wan2.1 FusionX 2video_1957967397764349953.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -27,46 +27,32 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `KSamplerAdvanced`
+- `ImageResize+`
+- `KSampler`
 - `LoadImage`
-- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
-- `RIFE VFI`
-- `Seed (rgthree)`
-- `SetNode`
-- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CropWithPadInfo` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `QwenEditConfigPreparer` —— 1/2 个有
-- `QwenEditOutputExtractor` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
+- `Anything Everywhere` —— 1/2 个有
+- `Load Lora` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `WanImageToVideo` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | - | 2 | 29% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | beta57 | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | 9 | - | 2 | 89% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -76,7 +62,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 3.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 29%
-- 调度器 最常用 beta57，2 个样本，一致性 50%
+- 采样步数 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（1/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

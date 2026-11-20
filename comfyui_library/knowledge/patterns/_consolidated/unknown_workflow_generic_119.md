@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_119
 type: Unknown Workflow
-frequency: 16
+frequency: 14
 level: moderate
-coverage: 0.808375
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.8425
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json, 音频生成/音频生成/Qwen3 TTS 声音完美克隆_2014978379094695938.json, 音频生成/音频生成/Qwen3 TTS 最强语音合成_2103005053178179586.json, 音频生成/音频生成/Qwen3 TTS 语音克隆_2018696714370158594.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2014828028999766018.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2026220914022555650.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2105586117281140738.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2108372556238639105.json, 音频生成/音频生成/全新声音模仿&语音克隆Qwen3 TTS_2015006488967778306.json, 音频生成/音频生成/声音克隆 Qwen3 TTS_2109114164743598082.json]
+members: [图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json, 图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json, 图片生成/图生图/全能图片3.0_2056901771477479426.json, 图片生成/图生图/全能图片3.0_2058578600839966721.json, 图片生成/图生图/全能图片SSS_2055150764548476929.json, 图片生成/图生图/全身白底制作：人物头部 + 3 套服装参考_2075031506845786114.json, 图片生成/图生图/南音-模特换背景-全能图片2.0_2054883303676760065.json, 图片生成/图生图/双人版穿搭场景复刻工作流（荔枝云客））_2038626848879415298.json, 图片生成/图生图/哈哈哈 全能图片2.0_2040710630193238018.json, 图片生成/图生图/国风古装风格-美女生成_2053645023501144065.json, 图片生成/图生图/图片裂变 白底背景 人物多姿势  多角度+自定义姿势+批量生图  根据图片风格随机变换姿势_2085179465243648002.json, 图片生成/图生图/换脸换装换人人物一致性全能图片2.0_2027953621379321858.json, 图片生成/图生图/服装行业-模特换装（全能图片2）_2017250254978027522.json, 图片生成/图生图/模特换背景-全能图片2.0_2031176888189722626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_119
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json、图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json、图片生成/图生图/全能图片3.0_2056901771477479426.json、图片生成/图生图/全能图片3.0_2058578600839966721.json、图片生成/图生图/全能图片SSS_2055150764548476929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 14 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 15/16 个有
-- `JjkText` —— 5/16 个有
-- `Label (rgthree)` —— 1/16 个有
-- `PrimitiveFloat` —— 1/16 个有
-- `PrimitiveStringMultiline` —— 1/16 个有
+- `ImageConcatMulti` —— 5/14 个有
+- `Repeater|pysssss` —— 1/14 个有
 
 ## 典型参数
 
