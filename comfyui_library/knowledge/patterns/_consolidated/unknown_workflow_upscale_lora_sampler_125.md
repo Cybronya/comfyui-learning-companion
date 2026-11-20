@@ -3,17 +3,17 @@ name: unknown_workflow_upscale_lora_sampler_125
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.936
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, PreviewImage, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, UpscaleModelLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy int]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 0.9365
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/高质感人像纹理还原_1990348117071548418.json, 图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json]
+members: [图片生成/文生图/写实人像摄影-Zimage+Flow-DPO-真实光影色彩_2030184168344260609.json, 数字人/数字人/VividMuse真实人像摄影V2.1_2022302845051080706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_125
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/高质感人像纹理还原_1990348117071548418.json、图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/写实人像摄影-Zimage+Flow-DPO-真实光影色彩_2030184168344260609.json、数字人/数字人/VividMuse真实人像摄影V2.1_2022302845051080706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,68 +23,63 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
-- `Image Comparer (rgthree)`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `GetImageSize+`
 - `ImageResize+`
 - `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `KSampler`
-- `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
-- `PreviewImage`
-- `SUPIR_conditioner`
-- `SUPIR_decode`
-- `SUPIR_encode`
-- `SUPIR_first_stage`
-- `SUPIR_model_loader_v2`
-- `SUPIR_sample`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Input Switch` —— 1/2 个有
-- `DF_Integer` —— 1/2 个有
-- `ImageCASharpening+` —— 1/2 个有
-- `ImpactMinMax` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `TTP_Image_Assy` —— 1/2 个有
-- `TTP_Image_Tile_Batch` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `DF_Text_Box` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `Seed_` —— 1/2 个有
 - `easy cleanGpuUsed` —— 1/2 个有
-- `easy imageSize` —— 1/2 个有
+- `easy promptList` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | kl_optimal | - | 2 | 50% |
-| 重绘幅度 | 0.475 | - | 2 | 53% |
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | res_multistep | - | 2 | 50% |
+| 重绘幅度 | simple | - | 2 | 50% |
+| 宽度 | 1536 | - | 2 | 100% |
+| 高度 | 2048 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 kl_optimal，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.475，样本不足，未给区间，2 个样本
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 res_multistep，2 个样本，一致性 50%
+- 重绘幅度 最常用 simple，2 个样本，一致性 50%
+- 宽度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 2048，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

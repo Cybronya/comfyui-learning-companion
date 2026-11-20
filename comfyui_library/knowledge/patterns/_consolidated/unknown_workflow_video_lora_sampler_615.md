@@ -1,73 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_615
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.6926
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 4
+level: strong
+coverage: 0.78425
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyHunyuanLatentVideo, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, RH_LLMAPI_NODE, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Animate动作迁移（动作模仿非替换）KJ_V2_1988196414314471426.json, 视频生成/图生视频/Wan2.2+Animate动作迁移-动作模仿-效果好_1993922923654217730.json, 视频生成/图生视频/Wan22Animate动作迁移抖版_2004522934133817346.json, 视频生成/图生视频/Wan22Animate动作迁移抖版_2029116870359519233.json, 视频生成/图生视频/动作迁移优化版_2087223386203312129.json]
+members: [视频生成/文生视频/Wan2.2 14B文生视频魔改加速版_1949984328258379777.json, 视频生成/文生视频/Wan2.2+14B官方文生视频，超高效率_1950202760701591554.json, 视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json, 视频生成/文生视频/【官版】Wan2.2-Lightning4步加速文生视频_1953992275665801217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_615
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate动作迁移（动作模仿非替换）KJ_V2_1988196414314471426.json、视频生成/图生视频/Wan2.2+Animate动作迁移-动作模仿-效果好_1993922923654217730.json、视频生成/图生视频/Wan22Animate动作迁移抖版_2004522934133817346.json、视频生成/图生视频/Wan22Animate动作迁移抖版_2029116870359519233.json、视频生成/图生视频/动作迁移优化版_2087223386203312129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 14B文生视频魔改加速版_1949984328258379777.json、视频生成/文生视频/Wan2.2+14B官方文生视频，超高效率_1950202760701591554.json、视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json、视频生成/文生视频/【官版】Wan2.2-Lightning4步加速文生视频_1953992275665801217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `EmptyHunyuanLatentVideo`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM V2`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `RH_LLMAPI_NODE`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `GetImageSizeAndCount` —— 3/5 个有
-- `Int` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CM_IntToFloat` —— 2/5 个有
-- `CR Text` —— 2/5 个有
-- `ImageFromBatch+` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `String Literal` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `easy int` —— 2/5 个有
-- `ttN float` —— 2/5 个有
-- `Float` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `String` —— 1/5 个有
+- `GetNode` —— 3/4 个有
+- `ImpactSwitch` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `FlashVSRNode` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 10 | 4 | 90% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 50% |
+| 重绘幅度 | simple | - | 4 | 75% |
 
 ## 常见问题
 
@@ -75,4 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 10，4 个样本，取值集中（一致性 90%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 50%
+- 重绘幅度 最常用 simple，4 个样本，一致性 75%

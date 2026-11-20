@@ -1,60 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_523
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.9335
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.82575
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json, 视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json, 视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json, 视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json, 视频生成/图生视频/Wan2.2图生视频 KJ加速版（小优化）_1960986667224109058.json, 视频生成/文生视频/Wan2.2文生视频 KJ加速版（小优化）_1960686158676189186.json]
+members: [图片生成/图生图/Wan2.2局部洗图_1977364859492933633.json, 图片生成/图生图/傻瓜版视频 & 图片高清放大合并版（基于SeedVR2）_1938156714976022530.json, 图片生成/图生图/全能图片V1手动编辑产品融背景_1968675156921077761.json, 图片生成/图生图/全能图片V1指哪打哪万物融图+Wan2.2洗图（手动编辑）_1966034816619679745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_523
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json、视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json、视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json、视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json、视频生成/图生视频/Wan2.2图生视频 KJ加速版（小优化）_1960986667224109058.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Wan2.2局部洗图_1977364859492933633.json、图片生成/图生图/傻瓜版视频 & 图片高清放大合并版（基于SeedVR2）_1938156714976022530.json、图片生成/图生图/全能图片V1手动编辑产品融背景_1968675156921077761.json、图片生成/图生图/全能图片V1指哪打哪万物融图+Wan2.2洗图（手动编辑）_1966034816619679745.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DisableNoise`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `RH_Captioner`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 5/6 个有
-- `WanVideoImageToVideoEncode` —— 5/6 个有
-- `easy positive` —— 5/6 个有
-- `GetImageSizeAndCount` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `PrimitiveFloat` —— 3/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `easy seed` —— 2/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageStitch` —— 1/6 个有
-- `LayerUtility: PurgeVRAM` —— 1/6 个有
-- `WanVideoEmptyEmbeds` —— 1/6 个有
-- `easy humanSegmentation` —— 1/6 个有
+- `PreviewImage` —— 3/4 个有
+- `SeedVR2` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `FastCanvas` —— 2/4 个有
+- `FastCanvasTool` —— 2/4 个有
+- `InpaintCrop` —— 2/4 个有
+- `InpaintStitch` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `RH_Nano_Banana_Image2Image` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `DF_Get_image_size` —— 1/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
+- `preview_mask` —— 1/4 个有
 
 ## 典型参数
 

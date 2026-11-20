@@ -1,112 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_678
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.629
-common_nodes: [AIO_Preprocessor, ApplyFaceProcessor, CLIPLoader, CLIPTextEncode, DWPreprocessor, EsesImageEffectLevels, FaceProcessorLoader, FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageBlend, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, MaskToImage, MathExpression|pysssss, MultiTalkModelLoader, PreviewImage, SetNode, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy seed, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.866667
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), FloatConstant, INTConstant, KSamplerAdvanced, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, LoadLatent, LoraLoaderModelOnly, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, SaveLatent, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/WAN-VACE人物位置调整，指定位置添加自定义人物搭配STAND IN完美复刻人物和动作_1957126901270548481.json, 平台全量/WAN-VACE指定替换视频人物，搭配STAND IN完美复刻动作，还原人物_1956871832618065921.json, 数字人/数字人/WAN-VACE+MultiTalk+Stand-In移动人物位置，添加自定义人物，同台演唱_1957556428611448834.json, 音频生成/音频生成/WAN-VACE+MultiTalk+Stand-In完美复刻舞蹈唱歌_1955906696134754305.json]
+members: [视频生成/图生视频/B妮B妳_N_S_F_W_系列-Wan22-Dasiwa_首尾帧_2033423743539748866.json, 视频生成/图生视频/B妮B妳_N_S_F_W系列_Wan22-Dasiwa_图生视频_2033423714901041154.json, 视频生成/文生视频/B妮B妳_N_S_F_W_系列_Wan22-Remix_文生视频_2034652401642250242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_678
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/WAN-VACE人物位置调整，指定位置添加自定义人物搭配STAND IN完美复刻人物和动作_1957126901270548481.json、平台全量/WAN-VACE指定替换视频人物，搭配STAND IN完美复刻动作，还原人物_1956871832618065921.json、数字人/数字人/WAN-VACE+MultiTalk+Stand-In移动人物位置，添加自定义人物，同台演唱_1957556428611448834.json、音频生成/音频生成/WAN-VACE+MultiTalk+Stand-In完美复刻舞蹈唱歌_1955906696134754305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/B妮B妳_N_S_F_W_系列-Wan22-Dasiwa_首尾帧_2033423743539748866.json、视频生成/图生视频/B妮B妳_N_S_F_W系列_Wan22-Dasiwa_图生视频_2033423714901041154.json、视频生成/文生视频/B妮B妳_N_S_F_W_系列_Wan22-Remix_文生视频_2034652401642250242.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `ApplyFaceProcessor`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DWPreprocessor`
-- `EsesImageEffectLevels`
-- `FaceProcessorLoader`
+- `Fast Groups Bypasser (rgthree)`
 - `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageBlend`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `PreviewImage`
-- `SetNode`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
+- `LoadLatent`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `SaveLatent`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEmbedBridge`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 3/4 个有
-- `DownloadAndLoadFlorence2Model` —— 3/4 个有
-- `DownloadAndLoadSAM2Model` —— 3/4 个有
-- `Florence2Run` —— 3/4 个有
-- `Florence2toCoordinates` —— 3/4 个有
-- `LayerMask: MaskGrow` —— 3/4 个有
-- `LayerUtility: ImageBlendAdvance` —— 3/4 个有
-- `PointsEditor` —— 3/4 个有
-- `PreviewAnimation` —— 3/4 个有
-- `RMBG` —— 3/4 个有
-- `Sam2Segmentation` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `DownloadAndLoadWav2VecModel` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `LayerMask: BBoxJoin` —— 2/4 个有
-- `LayerUtility: LaMa` —— 2/4 个有
-- `Masks Combine Regions` —— 2/4 个有
-- `MultiTalkWav2VecEmbeds` —— 2/4 个有
-- `ProPainterInpaint` —— 2/4 个有
-- `SaveAudioMP3` —— 2/4 个有
-- `SeedVR2` —— 2/4 个有
-- `SeedVR2BlockSwap` —— 2/4 个有
-- `VHS_LoadAudioUpload` —— 2/4 个有
-- `WanVideoEasyCache` —— 2/4 个有
-- `DepthAnythingV2Preprocessor` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `VHS_VideoInfoSource` —— 1/4 个有
-- `easy imageRemBg` —— 1/4 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `EmptyHunyuanLatentVideo` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 1/3 个有
+- `WanImageToVideo` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -114,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

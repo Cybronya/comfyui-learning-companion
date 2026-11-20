@@ -1,75 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_618
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.5724
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, WanVideoNAG]
+frequency: 4
+level: moderate
+coverage: 0.5045
+common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetNode, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_2006374874046009346.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_final_2006035355308400642.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_smoothremix_2008049171638521858.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_video_extend_2005944550638186497.json]
+members: [视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json, 视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json, 视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json, 视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_618
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_2006374874046009346.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_final_2006035355308400642.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_auto_extend2_smoothremix_2008049171638521858.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_video_extend_2005944550638186497.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json、视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json、视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json、视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：57%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Fast Groups Muter (rgthree)`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `StringConcatenate`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `WanVideoNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `easy forLoopEnd` —— 3/5 个有
-- `easy forLoopStart` —— 3/5 个有
-- `easy promptLine` —— 3/5 个有
-- `PreviewAny` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DF_Int_to_Float` —— 1/5 个有
-- `GODMT_ListGetByIndex` —— 1/5 个有
-- `GODMT_SplitString` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `StringToInt` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WWAA-LineCount` —— 1/5 个有
+- `Bookmark (rgthree)` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `WanVideoVRAMManagement` —— 3/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `WanVideoApplyNAG` —— 1/4 个有
+- `WanVideoTextEncodeSingle` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 5 | 88% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | lcm | - | 5 | 80% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，5 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，5 个样本，一致性 80%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

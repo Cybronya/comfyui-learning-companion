@@ -3,78 +3,70 @@ name: unknown_workflow_video_lora_sampler_1001
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.527
-common_nodes: [ApplyFaceProcessor, BlockifyMask, DWPreprocessor, DownloadAndLoadFlorence2Model, DrawMaskOnImage, FaceProcessorLoader, Florence2Run, Florence2toCoordinates, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageCompositeMasked, ImageListToBatch+, ImageResizeKJ, ImpactSwitch, LayerMask: MaskGrow, LayerUtility: PurgeVRAM V2, LoadImage, LoadSAM3Model, LoadWanVideoT5TextEncoder, MaskFromBatch+, MaskToImage, PreviewImage, SAM3PointCollector, SAM3Segmentation, SeCModelLoader_Ultra-Fast, SeCVideoSegmentation, SetNode, ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageConcat, easy imageRemBg]
+coverage: 0.3335
+common_nodes: [Any Switch (rgthree), BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, EmptyImage, Fast Groups Bypasser (rgthree), GetNode, GoohaiUniversalSlider, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AudioSelect, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MultimodalChat, MiniMaxH3ReferenceSplitter, MiniMaxH3SigmaShift, MiniMaxH3SparkAttentionSM89, MiniMaxH3UnifiedToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, RTXVideoFrameGeneration, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VRAM_Debug]
 problems: []
 missing: []
-members: [平台全量/🈚️人物置入视频场景_人物迁移_换人物-wan 2.1_2.2 low vace+stand in_1937951058335567873.json, 平台全量/🈚️人物置入视频场景_人物迁移_换人物-wan 2.2-vace 2.2 fun+stand in_1967004177702457346.json]
+members: [视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V5-latent分块二采_2113454316114759682.json, 视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V5-单采2K直出-RH版_2113465285872275458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1001
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/🈚️人物置入视频场景_人物迁移_换人物-wan 2.1_2.2 low vace+stand in_1937951058335567873.json、平台全量/🈚️人物置入视频场景_人物迁移_换人物-wan 2.2-vace 2.2 fun+stand in_1967004177702457346.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V5-latent分块二采_2113454316114759682.json、视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V5-单采2K直出-RH版_2113465285872275458.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：33%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `BlockifyMask`
-- `DWPreprocessor`
-- `DownloadAndLoadFlorence2Model`
-- `DrawMaskOnImage`
-- `FaceProcessorLoader`
-- `Florence2Run`
-- `Florence2toCoordinates`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `EmptyImage`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
-- `ImageListToBatch+`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `LayerMask: MaskGrow`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoadSAM3Model`
-- `LoadWanVideoT5TextEncoder`
-- `MaskFromBatch+`
-- `MaskToImage`
+- `GoohaiUniversalSlider`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AudioSelect`
+- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3MultimodalChat`
+- `MiniMaxH3ReferenceSplitter`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxH3SparkAttentionSM89`
+- `MiniMaxH3UnifiedToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PreviewImage`
-- `SAM3PointCollector`
-- `SAM3Segmentation`
-- `SeCModelLoader_Ultra-Fast`
-- `SeCVideoSegmentation`
+- `RTXVideoFrameGeneration`
 - `SetNode`
-- `ToBinaryMask`
-- `VHS_LoadVideo`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageConcat`
-- `easy imageRemBg`
+- `VRAM_Debug`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `Manual XY Entry Info` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `LTXVConcatAVLatent` —— 1/2 个有
+- `LTXVSeparateAVLatent` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `MiniMaxH3SigmaRefiner` —— 1/2 个有
+- `MiniMaxH3TiledSampler` —— 1/2 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
+- `RandomNoise` —— 1/2 个有
+- `SamplerCustomAdvanced` —— 1/2 个有
+- `SelfLiftAvatarH3Sampler` —— 1/2 个有
 
 ## 典型参数
 

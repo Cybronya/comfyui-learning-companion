@@ -1,57 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_899
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.949667
-common_nodes: [CR Text Replace, CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, EmptyImage, LoadWanVideoT5TextEncoder, RH_Prompter, SimpleMath+, TextBox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageSize, easy seed, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.9045
+common_nodes: [BerniniPromptEnhancer, CreateVideo, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, Seed (rgthree), SimpleMath+, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json, 视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json, 视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json]
+members: [视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json, 视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_899
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json、视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json、视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json、视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text Replace`
-- `CogVideoEnhanceAVideo`
-- `CreateCFGScheduleFloatList`
-- `DF_Integer`
-- `EmptyImage`
-- `LoadWanVideoT5TextEncoder`
-- `RH_Prompter`
+全部 2 个 workflow 都包含：
+- `BerniniPromptEnhancer`
+- `CreateVideo`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `PreviewAny`
+- `Seed (rgthree)`
 - `SimpleMath+`
-- `TextBox`
+- `StringFunction|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy imageSize`
-- `easy seed`
-- `easy showAnything`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 1/3 个有
-- `StringToFloatList` —— 1/3 个有
+- `BatchImagesNode` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `llama_cpp_instruct_adv` —— 1/2 个有
+- `llama_cpp_model_loader` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 
@@ -63,4 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

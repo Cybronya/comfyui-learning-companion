@@ -1,71 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_82
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.854
-common_nodes: [Anything Everywhere, CFGOverride, CLIPLoader, CLIPTextEncode, CR Text Concatenate, DualModelGuider, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, ImageSharpen, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, PainterFluxImageEdit, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, workflow>Qwen3.5反推, workflow>Qwen3.5自动提示词, workflow>自定义节点]
+frequency: 6
+level: moderate
+coverage: 0.932333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text Concatenate, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, TextInput_, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Ideogram4+Klein+生图+洗图_2071486295674810370.json, 图片生成/文生图/Ideogram4+Klein+生图+洗图_2070340784196513793.json, 图片生成/文生图/Ideogram4+Klein+生图+洗图_2071395147308425217.json, 图片生成/文生图/Ideogram4+Klein_生图_洗图_2063994567111831553.json, 图片生成/文生图/Ideogram4+Klein_生图_洗图_2076440564509274114.json, 图片生成/文生图/Ideogram4+Klein文生图高清输出洗图_2065246912453898241.json, 图片生成/文生图/提示词反推 +高清放大  Ideogram4+Klein+文_图生图+最新洗图_2071411449490132994.json]
+members: [图片生成/图生图/一键优化滤镜+图片风格渲染_1903002764916727809.json, 图片生成/图生图/三分镜一致性掌控：轻松分开控制场景、人设与构图！_1921404322280587266.json, 图片生成/文生图/ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json, 图片生成/文生图/In-Context-Lora字体设计_2018938772628443138.json, 图片生成/文生图/【微电影】镜头风格一致性电影3分镜in-context微电影_1905062711074689026.json, 图片生成/文生图/一致性电影分镜头_In-Context-LoRA_1909546503734763521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_82
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Ideogram4+Klein+生图+洗图_2071486295674810370.json、图片生成/文生图/Ideogram4+Klein+生图+洗图_2070340784196513793.json、图片生成/文生图/Ideogram4+Klein+生图+洗图_2071395147308425217.json、图片生成/文生图/Ideogram4+Klein_生图_洗图_2063994567111831553.json、图片生成/文生图/Ideogram4+Klein_生图_洗图_2076440564509274114.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键优化滤镜+图片风格渲染_1903002764916727809.json、图片生成/图生图/三分镜一致性掌控：轻松分开控制场景、人设与构图！_1921404322280587266.json、图片生成/文生图/ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json、图片生成/文生图/In-Context-Lora字体设计_2018938772628443138.json、图片生成/文生图/【微电影】镜头风格一致性电影3分镜in-context微电影_1905062711074689026.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Anything Everywhere`
-- `CFGOverride`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
 - `CR Text Concatenate`
-- `DualModelGuider`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `ImageSharpen`
 - `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MuyeTextEditOutput`
-- `PainterFluxImageEdit`
+- `LoraLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `workflow>Qwen3.5反推`
-- `workflow>Qwen3.5自动提示词`
-- `workflow>自定义节点`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 6/7 个有
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `ModelSamplingAuraFlow` —— 6/7 个有
-- `Ideogram4Scheduler` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `Text Concatenate (JPS)` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `Fast Bypasser (rgthree)` —— 2/6 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/6 个有
+- `Text Concatenate` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `ConditioningCombineMultiple+` —— 1/6 个有
+- `ConditioningSetArea` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1080 | 7 | 100% |
-| 高度 | 1624 | 1624 - 1624 | 7 | 100% |
+| 宽度 | 1024 | 1024 - 1984 | 6 | 69% |
+| 高度 | 1536 | 1152 - 1536 | 6 | 88% |
+| LoRA 模型强度 | 0.815 | 0.6 - 1 | 6 | 80% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -73,5 +64,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1080，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1624，观测区间 1624 - 1624，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1984，6 个样本
+- 高度 中位数 1536，观测区间 1152 - 1536，6 个样本，取值集中（一致性 88%）
+- LoRA 模型强度 中位数 0.815，观测区间 0.6 - 1，6 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

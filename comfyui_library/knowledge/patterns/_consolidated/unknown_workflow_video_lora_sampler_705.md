@@ -1,68 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_705
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.63825
-common_nodes: [DWPreprocessor, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddControlEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.527667
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewAny, PrimitiveFloat, PrimitiveInt, RIFE VFI, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [平台全量/（KJ版）Wan Fun Control视频洗稿工作流V1_1956347988744523778.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json, 视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json, 视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json]
+members: [视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json, 视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json, 视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_705
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/（KJ版）Wan Fun Control视频洗稿工作流V1_1956347988744523778.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json、视频生成/图生视频/(KJ版)Wan2.2 Fun Control深度控制加速版V1_1956361346596130818.json、视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json、视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json、视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DWPreprocessor`
-- `GetImageSizeAndCount`
+全部 3 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
+- `GrowMaskWithBlur`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RIFE VFI`
+- `SaveAudio`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddControlEmbeds`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `DepthAnything_V2` —— 3/4 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `CLIPTextEncode` —— 2/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `PDIMAGE_LongerSize` —— 2/4 个有
-- `WanVideoTextEmbedBridge` —— 2/4 个有
-- `CreateShapeImageOnPath` —— 1/4 个有
-- `GetMaskSizeAndCount` —— 1/4 个有
-- `ImageBlend` —— 1/4 个有
-- `SplineEditor` —— 1/4 个有
-- `Zoe-DepthMapPreprocessor` —— 1/4 个有
+- `DWPreprocessor` —— 2/3 个有
+- `DrawViTPose` —— 2/3 个有
+- `LayerMask: MaskInvert` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `OnnxDetectionModelLoader` —— 2/3 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

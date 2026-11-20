@@ -1,77 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_162
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.96825
-common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.878143
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/【遇见AI】_基础文生图_2059983485657509890.json, 图片生成/图生图/印花提取-Qwen-Edit-2511-V8_2044695357266862082.json, 图片生成/图生图/图片转美漫_2007627923578167297.json, 图片生成/图生图/提取纹理 Extract-Texture-Qwen-Image-Edit-2509_2038167839743414273.json, 图片生成/图生图/无需服装、化妆、道具，一键将日常照片转为cosplay照片v0.1_1981200369042841601.json, 图片生成/图生图/真人照片转动漫 Qwen-Image-Edit-Photo-to-AnimeV2.0_2007448629186924546.json, 图片生成/文生图/文生图对比Z-Image VS Qwen_2019752105942196226.json, 平台全量/影楼专用 _ 一键复刻样片 _ 任意背景拍摄还原样片背景、光影_1994245980570714114.json]
+members: [图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json, 图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json, 图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json, 图片生成/文生图/Qwen Image 文生图_2102936313539416066.json, 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json, 图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json, 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_162
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【遇见AI】_基础文生图_2059983485657509890.json、图片生成/图生图/印花提取-Qwen-Edit-2511-V8_2044695357266862082.json、图片生成/图生图/图片转美漫_2007627923578167297.json、图片生成/图生图/提取纹理 Extract-Texture-Qwen-Image-Edit-2509_2038167839743414273.json、图片生成/图生图/无需服装、化妆、道具，一键将日常照片转为cosplay照片v0.1_1981200369042841601.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json、图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json、图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json、图片生成/文生图/Qwen Image 文生图_2102936313539416066.json、图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGNorm`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `EmptyLatentImage`
 - `KSampler`
+- `ResolutionSelector`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
-- `ModelSamplingAuraFlow` —— 7/8 个有
-- `TextEncodeQwenImageEditPlus` —— 7/8 个有
-- `LoraLoader` —— 5/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `CLIPTextEncode` —— 2/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `GetImageSize+` —— 2/8 个有
-- `ImageScaleDownToSize` —— 2/8 个有
-- `FluxGuidance` —— 1/8 个有
-- `ImageScaleBy` —— 1/8 个有
-- `TextEncodeQwenImageEdit` —— 1/8 个有
-- `VAEEncode` —— 1/8 个有
+- `QwenImage21Cache` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `PathchSageAttentionKJ` —— 2/7 个有
+- `CompressImages` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 8 | 58% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 28% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 模型强度 | 1 | 0.8 - 1 | 5 | 92% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 30 | 25 - 50 | 7 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1024 | 864 - 1024 | 7 | 94% |
+| 高度 | 1024 | 1024 - 1536 | 7 | 84% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 25 - 50，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 864 - 1024，7 个样本，取值集中（一致性 94%）
+- 高度 中位数 1024，观测区间 1024 - 1536，7 个样本，取值集中（一致性 84%）

@@ -1,55 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_908
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.447
-common_nodes: [FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageColorMatch+, ImageRepeat, ImageResizeKJv2, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.5785
+common_nodes: [BatchCount+, DWPreprocessor, DrawViTPose, GetNode, ImageFromBatch, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PreviewImage, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything, math_calculate]
 problems: []
 missing: []
-members: [视频生成/图生视频/【周杰伦同款】首尾帧+时光机效果_1946036968394289154.json, 视频生成/图生视频/【周杰伦同款】首尾帧视频 + 时光机 人物变化_1946043472392712193.json, 视频生成/图生视频/偶像出道时光机穿梭视频制作指南，开源首尾帧方案盖过即梦生成效果_1943291621532463106.json]
+members: [视频生成/图生视频/Wan22Animate人物替换_循环_2032090534226960386.json, 视频生成/图生视频/Wan22Animate动作迁移_2029464241350119426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_908
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【周杰伦同款】首尾帧+时光机效果_1946036968394289154.json、视频生成/图生视频/【周杰伦同款】首尾帧视频 + 时光机 人物变化_1946043472392712193.json、视频生成/图生视频/偶像出道时光机穿梭视频制作指南，开源首尾帧方案盖过即梦生成效果_1943291621532463106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan22Animate人物替换_循环_2032090534226960386.json、视频生成/图生视频/Wan22Animate动作迁移_2029464241350119426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageRangeFromBatch`
+全部 2 个 workflow 都包含：
+- `BatchCount+`
+- `DWPreprocessor`
+- `DrawViTPose`
 - `GetNode`
-- `INTConstant`
-- `ImageColorMatch+`
-- `ImageRepeat`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Label (rgthree)`
+- `Int`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
 - `PreviewImage`
+- `RepeatImageBatch`
 - `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `math_calculate`
+
+**可变部分**（部分 workflow 才有）：
+- `BlockifyMask` —— 1/2 个有
+- `Combine Video` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `DrawMaskOnImage` —— 1/2 个有
+- `Florence2ModelLoader` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `Florence2toCoordinates` —— 1/2 个有
+- `GrowMask` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImageBatchMultiple+` —— 1/2 个有
+- `LazySwitch1way` —— 1/2 个有
+- `MaskToImage` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
+- `easy compare` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
+- `easy sam3ModelLoader` —— 1/2 个有
+- `easy sam3VideoSegmentation` —— 1/2 个有
 
 ## 典型参数
 
@@ -61,4 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

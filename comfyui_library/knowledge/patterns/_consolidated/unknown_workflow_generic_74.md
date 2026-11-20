@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_74
 type: Unknown Workflow
-frequency: 19
+frequency: 17
 level: moderate
-coverage: 0.894895
-common_nodes: [DeepTranslatorTextNode, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.968235
+common_nodes: [ImageScaleDownToSize, LoadImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.1 Kontext多图参考融合_1928768548259401730.json, 图片生成/图生图/FLUX.1 Kontext最强图像编辑技术_1928419543075405826.json, 图片生成/图生图/Flux-Kontext 单图编辑- 一句修改图_1933163859874066433.json, 图片生成/图生图/Flux-Kontext多图融合 双图编辑-双人合影 一句修改图_1933162031539204098.json, 图片生成/图生图/Flux.1-Kontext双图融合生图_1934450178084728834.json, 图片生成/图生图/Kontext-pro一句话变素描_1937747476524744706.json, 图片生成/图生图/kontext 图像编辑---超燃多模态_1929776711196643330.json, 图片生成/图生图/kontext 图像编辑丨万物改图_1918718920348336129.json, 图片生成/图生图/kontext 图像编辑丨万物改图_1928494120128618497.json, 图片生成/图生图/kontext 图像编辑丨万物改图_多视图_1931186075497377794.json, 图片生成/图生图/kontext 图像编辑丨万物改图_多视图_1948268102069956610.json, 图片生成/图生图/产品一键融合背景，迁移万物（Kontext ）_1938120131203481601.json, 图片生成/文生图/Kontext-max一句话修改云文字_1936979411319050242.json, 图片生成/文生图/Kontext-pro一句话真人转绘青铜雕塑_1937014343026266114.json, 图片生成/文生图/一句话动漫转真人_1938480294855139329.json, 平台全量/【阡陌】Kontext超强一致性双图融合万物迁移工作流_1932326505261821954.json, 平台全量/一句话去除背景多余人像_1938482385702813698.json, 平台全量/一句话换动作物品服饰背景_1938475643229110274.json, 平台全量/一句话换老虎森林_1938473012301594625.json]
+members: [图片生成/图生图/Nano全能图片V1多图融合-谷歌一致性图像编_1960687374332289025.json, 图片生成/图生图/Seedream4.0【双图】图像编辑  服装迁移_1968707947662594049.json, 图片生成/图生图/全能图片V1——最强换装_2037533156097662977.json, 图片生成/图生图/全能图片V1双图编辑丨多图融合丨一键换装！_1981266161876762625.json, 图片生成/图生图/全能图片V1多图融合-谷歌一致性图像编_1980087830594621441.json, 图片生成/图生图/全能图片V1多图融合-谷歌最强模型_1992184696792739842.json, 图片生成/图生图/全能图片V1多图融合多图编辑一致性图像编辑_1986268491043000321.json, 图片生成/图生图/全能图片V1多图融合（最新）_1992187939675328513.json, 图片生成/图生图/全能图片V1换装丨多图融合丨换装_1981242901755756546.json, 图片生成/图生图/全能图片V1谷歌一致性图像编_1960500719545741314.json, 图片生成/图生图/既梦4.0-图像编辑【单图_多图】_1966405457541836801.json, 图片生成/图生图/最火爆的_全能图片V1双图编辑，RH版_1960970063593574402.json, 图片生成/图生图/服装迁移-既梦4.0图像编辑_1965938012930641922.json, 图片生成/文生图/全能图片V1多图融合-谷歌一致性图像编_1962727003998797826.json, 图片生成/文生图/全能图片V1多图融合-谷歌一致性图像编_1964284032529874946.json, 图片生成/文生图/全能图片V1多图融合-谷歌一致性图像编_1964288162107412482.json, 图片生成/文生图/双图融合_人物一致性_高还原度_1981511127022608385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_74
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext多图参考融合_1928768548259401730.json、图片生成/图生图/FLUX.1 Kontext最强图像编辑技术_1928419543075405826.json、图片生成/图生图/Flux-Kontext 单图编辑- 一句修改图_1933163859874066433.json、图片生成/图生图/Flux-Kontext多图融合 双图编辑-双人合影 一句修改图_1933162031539204098.json、图片生成/图生图/Flux.1-Kontext双图融合生图_1934450178084728834.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Nano全能图片V1多图融合-谷歌一致性图像编_1960687374332289025.json、图片生成/图生图/Seedream4.0【双图】图像编辑  服装迁移_1968707947662594049.json、图片生成/图生图/全能图片V1——最强换装_2037533156097662977.json、图片生成/图生图/全能图片V1双图编辑丨多图融合丨一键换装！_1981266161876762625.json、图片生成/图生图/全能图片V1多图融合-谷歌一致性图像编_1980087830594621441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `DeepTranslatorTextNode`
+全部 17 个 workflow 都包含：
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
 - `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 15/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/19 个有
-- `PreviewImage` —— 11/19 个有
-- `easy showAnything` —— 3/19 个有
-- `easy imageConcat` —— 1/19 个有
+- `ImageStitch` —— 16/17 个有
+- `RH_Nano_Banana_Image2Image` —— 14/17 个有
+- `easy batchAnything` —— 13/17 个有
+- `RH_Jimeng4_Image2Image` —— 3/17 个有
 
 ## 典型参数
 

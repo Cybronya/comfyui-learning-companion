@@ -1,114 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_727
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.6245
-common_nodes: [CFGGuider, CLIPTextEncode, CannyEdgePreprocessor, DWPreprocessor, DepthAnythingV2Preprocessor, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, MathExpression|pysssss, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.610667
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, INTConstant, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-视频参考生成原生720P版工作流_2031747450532274178.json, 视频生成/图生视频/LTX2.3-视频参考生成超分720P加速版_2031927472920469506.json, 视频生成/文生视频/LTX 2.3 音视频生成 All-In-One 拆分子图-6和1版工作流_2046932902830678017.json, 视频生成/文生视频/LTX 2.5 All-In-One (八合一全功能) 解开子图版工作流_2091797657235845121.json]
+members: [视频生成/图生视频/animate动作参考_1993657124511219713.json, 视频生成/图生视频/wan2.2Animate美女跳舞工作流_2033057095406329858.json, 视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_727
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-视频参考生成原生720P版工作流_2031747450532274178.json、视频生成/图生视频/LTX2.3-视频参考生成超分720P加速版_2031927472920469506.json、视频生成/文生视频/LTX 2.3 音视频生成 All-In-One 拆分子图-6和1版工作流_2046932902830678017.json、视频生成/文生视频/LTX 2.5 All-In-One (八合一全功能) 解开子图版工作流_2091797657235845121.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/animate动作参考_1993657124511219713.json、视频生成/图生视频/wan2.2Animate美女跳舞工作流_2033057095406329858.json、视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CannyEdgePreprocessor`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `DWPreprocessor`
-- `DepthAnythingV2Preprocessor`
-- `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
+- `FaceMaskFromPoseKeypoints`
 - `GetNode`
 - `INTConstant`
-- `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
+- `PixelPerfectResolution`
 - `SetNode`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `LTXVLatentUpsampler` —— 3/4 个有
-- `LatentUpscaleModelLoader` —— 3/4 个有
-- `ResizeImagesByLongerEdge` —— 3/4 个有
-- `Any Switch (rgthree)` —— 2/4 个有
-- `CM_FloatToInt` —— 2/4 个有
-- `CM_IntToFloat` —— 2/4 个有
-- `ComfyMathExpression` —— 2/4 个有
-- `EmptyImage` —— 2/4 个有
-- `FinalFrameSelector` —— 2/4 个有
-- `ImageResizeAdvanced` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `LTXVImgToVideoInplace` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `Power Lora Loader (rgthree)` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `Switch any [Crystools]` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `UnetLoaderGGUF` —— 2/4 个有
-- `mxSlider` —— 2/4 个有
-- `Any To Any` —— 1/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `ComfySwitchNode` —— 1/4 个有
-- `LTX2SamplingPreviewOverride` —— 1/4 个有
-- `LTXVAddGuideMulti` —— 1/4 个有
-- `LTXVChunkFeedForward` —— 1/4 个有
-- `LTXVDualCFGGuider` —— 1/4 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
-- `SimpleCalculatorKJ` —— 1/4 个有
-- `TrimAudioDuration` —— 1/4 个有
-- `VAELoader` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `LayerMask: LoadFlorence2Model` —— 1/3 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 24.5 | 24 - 25 | 4 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -116,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 24.5，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

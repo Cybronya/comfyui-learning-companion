@@ -1,64 +1,59 @@
 ---
 name: unknown_workflow_sampler_clip_unet_116
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.872455
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, JWStringConcat, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy showAnything]
+coverage: 0.9654
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【灵感工具】影视动画剧情分镜延展_FLUX.2.0-Klein9B_2031248180645470210.json, 图片生成/图生图/一张图生成九宫格分镜！FLUX2-Klein，漫剧创作效率翻倍_2042605435265490946.json, 图片生成/图生图/一键批量生成动漫、短剧、角色分镜_2016397532888309761.json, 图片生成/图生图/动漫短剧_AI短剧一致性超强九宫格分镜图工作流_2013924585485373442.json, 图片生成/图生图/动漫短剧_AI短剧一致性超强九宫格分镜图工作流_2018226172726874113.json, 图片生成/图生图/短剧 FLUX2-Klein一致性分镜生成_2016877010534010881.json, 图片生成/图生图/🦖FLUX-Klein超强9宫格分镜流_2015677364994318338.json, 图片生成/文生图/Flux2-Klein一自动分镜 一键生成_2014679299307085826.json, 平台全量/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2117232936218091521.json, 平台全量/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2117238364616347650.json, 平台全量/Klein 连续分镜｜三镜头预检版_2098722161740574721.json]
+members: [图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json, 图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json, 图片生成/图生图/图片编辑（对比）_2094024830000656386.json, 图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056907377747783682.json, 图片生成/图生图/常用_图片_flux2_单图_2037742922816299009.json, 图片生成/图生图/建筑、室内 flux2-klein3图 编辑_2039312458275364866.json, 图片生成/图生图/添加真实感细节 _ flux 2_1962490094668132354.json, 图片生成/图生图/自拍照+服装参考图一键生成证件照_2020047100834226178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_116
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/【灵感工具】影视动画剧情分镜延展_FLUX.2.0-Klein9B_2031248180645470210.json、图片生成/图生图/一张图生成九宫格分镜！FLUX2-Klein，漫剧创作效率翻倍_2042605435265490946.json、图片生成/图生图/一键批量生成动漫、短剧、角色分镜_2016397532888309761.json、图片生成/图生图/动漫短剧_AI短剧一致性超强九宫格分镜图工作流_2013924585485373442.json、图片生成/图生图/动漫短剧_AI短剧一致性超强九宫格分镜图工作流_2018226172726874113.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json、图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json、图片生成/图生图/图片编辑（对比）_2094024830000656386.json、图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json、图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `JWStringConcat`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `Qwen3_VQA`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 10/11 个有
-- `PreviewImage` —— 4/11 个有
-- `Anything Everywhere3` —— 1/11 个有
-- `Bjornulf_ShowInt` —— 1/11 个有
-- `FluxResolutionNode` —— 1/11 个有
-- `ImageConcatMulti` —— 1/11 个有
-- `ImageFromBatch+` —— 1/11 个有
-- `ImageListToBatch+` —— 1/11 个有
-- `easy getNode` —— 1/11 个有
-- `easy imageBatchToImageList` —— 1/11 个有
-- `easy setNode` —— 1/11 个有
+- `EmptyFlux2LatentImage` —— 9/10 个有
+- `SaveImage` —— 9/10 个有
+- `ConditioningZeroOut` —— 8/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ImageResize+` —— 4/10 个有
+- `ImageScaleToTotalPixels` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `Preview from image [Crystools]` —— 1/10 个有
+- `PrimitiveString` —— 1/10 个有
+- `RMBG` —— 1/10 个有
+- `ResizeImageNode` —— 1/10 个有
+- `SaveImageAndMetadata_` —— 1/10 个有
+- `StringReplace` —— 1/10 个有
+- `ttN text` —— 1/10 个有
 
 ## 典型参数
 

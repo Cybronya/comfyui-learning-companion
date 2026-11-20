@@ -1,72 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_561
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7154
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, GetNode, INTConstant, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.517
+common_nodes: [BatchImagesNode, BlockSparseAttention, ComfySwitchNodeV2, Fast Groups Bypasser (rgthree), FeiHouEasyH3RHDurationCrop, FeiHouEasyH3RHFaceRefine, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHMedia, FeiHouEasyH3RHRemixLoader, FeiHouEasyH3RHSampleEnhancer1st, FeiHouEasyH3RHSampleEnhancer2nd, FeiHouEasyH3RHSetup, GetNode, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveBoolean, PrimitiveInt, RandomSeedNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json, 数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json, 视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json, 视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json, 视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json]
+members: [视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2109109925753475073.json, 视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2110607462595383297.json, 视频生成/图生视频/MiniMax_Easy_H3_Remix_高动态快速二阶采样工作流_V6_2113799636451422210.json, 视频生成/图生视频/【阿良绘】H3无限画布式操作 _ 反推+双采+人脸精修_2109562411400384513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_561
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json、数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json、视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json、视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json、视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2109109925753475073.json、视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2110607462595383297.json、视频生成/图生视频/MiniMax_Easy_H3_Remix_高动态快速二阶采样工作流_V6_2113799636451422210.json、视频生成/图生视频/【阿良绘】H3无限画布式操作 _ 反推+双采+人脸精修_2109562411400384513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
+全部 4 个 workflow 都包含：
+- `BatchImagesNode`
+- `BlockSparseAttention`
+- `ComfySwitchNodeV2`
+- `Fast Groups Bypasser (rgthree)`
+- `FeiHouEasyH3RHDurationCrop`
+- `FeiHouEasyH3RHFaceRefine`
+- `FeiHouEasyH3RHLoraStack`
+- `FeiHouEasyH3RHMedia`
+- `FeiHouEasyH3RHRemixLoader`
+- `FeiHouEasyH3RHSampleEnhancer1st`
+- `FeiHouEasyH3RHSampleEnhancer2nd`
+- `FeiHouEasyH3RHSetup`
 - `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MultiTextConcatenate`
-- `MuyeTextEditOutput`
-- `RandomNoise`
-- `ResolutionSelector`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `RandomSeedNoise`
 - `SamplerCustomAdvanced`
 - `SetNode`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 4/5 个有
-- `RHLLMChatNode` —— 4/5 个有
-- `VAEDecodeAudio` —— 4/5 个有
-- `easy int` —— 4/5 个有
-- `忽略多组孤海` —— 4/5 个有
-- `ComfyMathExpression` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageBatchMultiV2` —— 1/5 个有
-- `LTXVAudioVAEEncode` —— 1/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LTXVSeparateAVLatent` —— 1/5 个有
-- `LayerUtility: TextJoin` —— 1/5 个有
-- `SetLatentNoiseMask` —— 1/5 个有
-- `SolidMask` —— 1/5 个有
-- `SoundFlow_GetLength` —— 1/5 个有
-- `llama_cpp_instruct_adv` —— 1/5 个有
-- `llama_cpp_model_loader` —— 1/5 个有
-- `llama_cpp_parameters` —— 1/5 个有
+- `Label (rgthree)` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

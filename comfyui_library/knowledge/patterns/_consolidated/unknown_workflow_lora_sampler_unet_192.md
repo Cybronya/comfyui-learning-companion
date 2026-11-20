@@ -1,75 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_unet_192
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9368
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RH_DLSS5FrameInterpolation, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.9565
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 2K_2098776208187154433.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 4K_2098400619433381889.json]
+members: [图片生成/图生图/千问2511GGUF-单双三图参考_2026470669629792258.json, 图片生成/图生图/千问漫剧改图专用_2004540596394098689.json, 图片生成/图生图/👾怪獸Qwen-Edit-2511单图多图编辑👾_2003830705392107521.json, 图片生成/文生图/Qwen Image Edit 2511_2004568468768915457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_192
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json、视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 2K_2098776208187154433.json、视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 4K_2098400619433381889.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千问2511GGUF-单双三图参考_2026470669629792258.json、图片生成/图生图/千问漫剧改图专用_2004540596394098689.json、图片生成/图生图/👾怪獸Qwen-Edit-2511单图多图编辑👾_2003830705392107521.json、图片生成/文生图/Qwen Image Edit 2511_2004568468768915457.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RH_DLSS5FrameInterpolation`
-- `ResolutionSelector`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `SeedVR2` —— 4/5 个有
-- `SeedVR2BlockSwap` —— 4/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `MiniMaxChunkFeedForward` —— 3/5 个有
-- `MiniMaxLowVRAMAttention` —— 3/5 个有
-- `SelfLiftH3Sampler` —— 3/5 个有
-- `BasicGuider` —— 2/5 个有
-- `LTXVConcatAVLatent` —— 2/5 个有
-- `LTXVSeparateAVLatent` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/5 个有
-- `RandomNoise` —— 2/5 个有
-- `SamplerCustomAdvanced` —— 2/5 个有
-- `SplitSigmas` —— 2/5 个有
+- `EmptySD3LatentImage` —— 3/4 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 3/4 个有
+- `UnetLoaderGGUF` —— 2/4 个有
+- `AnyBooleanSwitch` —— 1/4 个有
+- `EmptyLatentImage` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 6 | 4 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1280 | - | 1 | 100% |
+| 高度 | 720 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 6，4 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

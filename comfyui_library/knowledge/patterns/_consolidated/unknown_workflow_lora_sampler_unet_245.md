@@ -2,62 +2,73 @@
 name: unknown_workflow_lora_sampler_unet_245
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.923667
-common_nodes: [CLIPLoader, CR Prompt Text, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PathchSageAttentionKJ, PixaromaLabel, PreviewImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.459333
+common_nodes: [BasicGuider, BlockSparseAttention, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Bypasser (rgthree), GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VRAM_Debug, easy ifElse, 布尔孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json, 图片生成/图生图/Qwen Image 2.1 透明图层抠图    手动标记改图专属工作流_2107175001689513986.json, 图片生成/图生图/Qwen Image 2.1 透明图层抠图改图_2108778898052968449.json]
+members: [视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json, 视频生成/图生视频/MiniMax-H3 高速大动态 速度快 不模糊_2114541691175784450.json, 视频生成/图生视频/MiniMax-H3_高速大动态_无劣化抗形变模糊工作流_工作版_2113780111102271490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_245
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json、图片生成/图生图/Qwen Image 2.1 透明图层抠图    手动标记改图专属工作流_2107175001689513986.json、图片生成/图生图/Qwen Image 2.1 透明图层抠图改图_2108778898052968449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 极限复杂场景 _ 高速运动大动态 _ 高质感无画面劣化  抗形变模糊工作流  （工作版）_2108809186309136386.json、视频生成/图生视频/MiniMax-H3 高速大动态 速度快 不模糊_2114541691175784450.json、视频生成/图生视频/MiniMax-H3_高速大动态_无劣化抗形变模糊工作流_工作版_2113780111102271490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Bypasser (rgthree)`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PixaromaLabel`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
+- `VRAM_Debug`
+- `easy ifElse`
+- `布尔孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImageAdvanced` —— 2/3 个有
-- `EmptyLatentImage` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `ImagePadKJ` —— 1/3 个有
-- `TextGenerateLTX2Prompt` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 40 | 40 - 40 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 40 - 40，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

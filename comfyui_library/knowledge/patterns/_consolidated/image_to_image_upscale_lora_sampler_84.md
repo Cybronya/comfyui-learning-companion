@@ -1,89 +1,80 @@
 ---
 name: image_to_image_upscale_lora_sampler_84
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.934667
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, ConstrainImage|pysssss, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactImageBatchToImageList, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.8705
+common_nodes: [CFGNorm, CLIPLoader, CR Prompt Text, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus_lrzjason, UnetLoaderGGUF, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy imageScaleDownBy]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/Kontext _ 超写实简笔画转模特_1982970563897491457.json, 平台全量/【产品渲染】Kontext位置不变溶图打光_1980427221787697153.json, 平台全量/【超强光影融合】Kontext  位置不变溶图打光 电商产品光影融合 保留细节_1987004172925079554.json]
+members: [图片生成/图生图/QwenEdit Plus新版像素偏移修正加强版V3（Lora加强）_1973242527857905665.json, 图片生成/图生图/【双图】QwenEdit Plus新版像素偏移修正加强版_1973932963765293058.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_84
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Kontext _ 超写实简笔画转模特_1982970563897491457.json、平台全量/【产品渲染】Kontext位置不变溶图打光_1980427221787697153.json、平台全量/【超强光影融合】Kontext  位置不变溶图打光 电商产品光影融合 保留细节_1987004172925079554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QwenEdit Plus新版像素偏移修正加强版V3（Lora加强）_1973242527857905665.json、图片生成/图生图/【双图】QwenEdit Plus新版像素偏移修正加强版_1973932963765293058.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `ConstrainImage|pysssss`
-- `DualCLIPLoader`
-- `FluxGuidance`
+全部 2 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
+- `CR Prompt Text`
 - `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
 - `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `ImpactImageBatchToImageList`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `Text`
-- `UNETLoader`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus_lrzjason`
+- `UnetLoaderGGUF`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEDecodeTiled`
 - `VAEEncode`
+- `VAEEncodeTiled`
 - `VAELoader`
+- `easy imageScaleDownBy`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_TextTranslate` —— 2/3 个有
-- `Image Filter Adjustments` —— 2/3 个有
-- `DifferentialDiffusion` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GoogleTranslator` —— 1/3 个有
-- `InpaintModelConditioning` —— 1/3 个有
-- `JoinStrings` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PixaromaLabel` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RepeatLatentBatch` —— 1/3 个有
-- `String` —— 1/3 个有
+- `AIO_Preprocessor` —— 1/2 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `EmptySD3LatentImage` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 3 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.65 | - | 2 | 46% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

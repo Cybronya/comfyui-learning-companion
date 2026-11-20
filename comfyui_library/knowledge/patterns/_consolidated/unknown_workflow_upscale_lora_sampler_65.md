@@ -2,79 +2,80 @@
 name: unknown_workflow_upscale_lora_sampler_65
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.838667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageLoader, ImageScaleToTotalPixels, KSamplerSelect, LoraLoaderModelOnly, MultiTextConcatenate, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, TextInputNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
+level: strong
+coverage: 0.894333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CheckpointLoaderSimple, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, RandomNoise, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/3D、VAM、二次元动漫转真人图像-Klein+ZIT超强双重洗图_2041715230685798401.json, 图片生成/图生图/3D、VAM、二次元动漫转真人图像-自动提示词加强版 Klein超强洗图工作流_2041703569144946690.json, 图片生成/图生图/3D、VAM、二次元动漫转真人图像-自定义提示词控制版 Klein超强洗图工作流_2041712187827298306.json]
+members: [图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json, 图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json, 图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/3D、VAM、二次元动漫转真人图像-Klein+ZIT超强双重洗图_2041715230685798401.json、图片生成/图生图/3D、VAM、二次元动漫转真人图像-自动提示词加强版 Klein超强洗图工作流_2041703569144946690.json、图片生成/图生图/3D、VAM、二次元动漫转真人图像-自定义提示词控制版 Klein超强洗图工作流_2041712187827298306.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json、图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json、图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
 - `Image Comparer (rgthree)`
-- `ImageLoader`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `MultiTextConcatenate`
-- `PreviewImage`
 - `RandomNoise`
-- `ReferenceLatent`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
-- `TextInputNode`
 - `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiplePathsInput` —— 2/3 个有
-- `Qwen3_VQA` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CR Seed` —— 1/3 个有
-- `GenerateNoise` —— 1/3 个有
-- `KSampler` —— 1/3 个有
-- `LGNoiseInjectionLatent` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `kkGetImage` —— 1/3 个有
+- `ColorMatch` —— 2/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `CR Upscale Image` —— 1/3 个有
+- `ImageListToImageBatch` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `ImpactImageBatchToImageList` —— 1/3 个有
+- `Joy_caption_two` —— 1/3 个有
+- `Joy_caption_two_load` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `TTP_Image_Assy` —— 1/3 个有
+- `TTP_Image_Tile_Batch` —— 1/3 个有
+- `TTP_Tile_image_size` —— 1/3 个有
+- `UltimateSDUpscaleNoUpscale` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | dpmpp_2s_ancestral | - | 1 | 100% |
-| 调度器 | bong_tangent | - | 1 | 100% |
-| 重绘幅度 | 0.3 | - | 1 | 100% |
+| LoRA 模型强度 | 0.8 | 0.7 - 0.8 | 3 | 94% |
+| LoRA 文本强度 | 0.8 | 0.7 - 0.8 | 3 | 94% |
 
 ## 常见问题
 
@@ -82,4 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 0.8，3 个样本，取值集中（一致性 94%）

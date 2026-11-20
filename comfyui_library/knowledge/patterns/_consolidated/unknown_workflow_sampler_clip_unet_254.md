@@ -1,64 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_254
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.858333
-common_nodes: [BasicGuider, BasicScheduler, Bjornulf_ShowStringText, CLIPTextEncode, DualCLIPLoader, ImageResize+, JjkText, KSamplerSelect, LoadImage, RH_Prompter, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextCombinerTwo, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.6788
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux图生图_1819700411573145602.json, 图片生成/图生图/Flux图生图_2045033605507850241.json, 图片生成/图生图/Flux图生图，精美，值得推荐！_2034854654676307970.json, 图片生成/图生图/Flux图生图，精美，值得推荐！_2047520744250286082.json, 图片生成/图生图/设计手稿转真人（真实还原）_2028393801617776641.json, 平台全量/服装设计4-手稿转真人_1909915350702718978.json]
+members: [图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json, 图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json, 图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_254
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux图生图_1819700411573145602.json、图片生成/图生图/Flux图生图_2045033605507850241.json、图片生成/图生图/Flux图生图，精美，值得推荐！_2034854654676307970.json、图片生成/图生图/Flux图生图，精美，值得推荐！_2047520744250286082.json、图片生成/图生图/设计手稿转真人（真实还原）_2028393801617776641.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json、图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json、图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `Bjornulf_ShowStringText`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `ImageResize+`
-- `JjkText`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_Prompter`
-- `RH_Translator`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextCombinerTwo`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 4/6 个有
-- `SeedGenerator` —— 4/6 个有
-- `ImageResizeKJ` —— 2/6 个有
-- `ImageUpscaleWithModel` —— 2/6 个有
-- `LoraLoader` —— 2/6 个有
-- `RH_Captioner` —— 2/6 个有
-- `UpscaleModelLoader` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `MuyeTextEditOutput` —— 4/5 个有
+- `Any Switch (rgthree)` —— 3/5 个有
+- `DapaoImagePadDirectionNode` —— 3/5 个有
+- `ImageCompositorNode` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `LayerUtility: ColorImage` —— 3/5 个有
+- `MaskFillHoles` —— 3/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `RH_Translator` —— 3/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `EmptyFlux2LatentImage` —— 2/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `ColorMatch` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.5 | - | 2 | 100% |
-| LoRA 文本强度 | 0.5 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

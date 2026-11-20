@@ -1,73 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_clip_107
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.856833
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7768
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, Flux2Scheduler, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Rebalance写实洗图工作流_1990797714432667650.json, 图片生成/图生图/Qwen写实洗图工作流单张（防侵权）_1991315465637310465.json, 图片生成/图生图/Qwen洗图工作流单张（防侵权）_1995445153374593026.json, 图片生成/图生图/高级感服装模特展示图+全节点注释_2039663460946022401.json, 图片生成/文生图/Qwen Rebalance 写实洗图工作流_1991492700780371970.json, 图片生成/文生图/Qwen Rebalance超强写实质感出图_1990940694510514177.json]
+members: [图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json, 图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json, 数字人/数字人/260920 身材优化_2101508683275522049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_107
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen Rebalance写实洗图工作流_1990797714432667650.json、图片生成/图生图/Qwen写实洗图工作流单张（防侵权）_1991315465637310465.json、图片生成/图生图/Qwen洗图工作流单张（防侵权）_1995445153374593026.json、图片生成/图生图/高级感服装模特展示图+全节点注释_2039663460946022401.json、图片生成/文生图/Qwen Rebalance 写实洗图工作流_1991492700780371970.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json、图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json、数字人/数字人/260920 身材优化_2101508683275522049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `CR Text`
+- `Flux2Scheduler`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 5/6 个有
-- `CheckpointLoaderSimple` —— 5/6 个有
-- `ConditioningZeroOut` —— 5/6 个有
-- `EmptySD3LatentImage` —— 5/6 个有
-- `LayerUtility: ImageReel` —— 5/6 个有
-- `LayerUtility: ImageReelComposit` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `PreviewAny` —— 5/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Text Concatenate` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/6 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `EmptyLatentImage` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `ColorMatchV2` —— 3/5 个有
+- `FluxKontextImageScale` —— 3/5 个有
+- `ImageScaleBy` —— 3/5 个有
+- `TextEncodeBooguEdit` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `easy float` —— 3/5 个有
+- `CompressImages` —— 1/5 个有
+- `EmptyFlux2LatentImage` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `SaveText` —— 1/5 个有
+- `easy imageScaleDownToSize` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 26 | 6 | 39% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 6 | 44% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 512 | 512 - 1360 | 4 | 49% |
+| 高度 | 512 | 512 - 768 | 4 | 81% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 26，6 个样本，取值分散，一致性仅 39%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，6 个样本，取值分散，一致性仅 44%
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（10/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 1360，4 个样本，取值分散，一致性仅 49%
+- 高度 中位数 512，观测区间 512 - 768，4 个样本，取值集中（一致性 81%）

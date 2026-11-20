@@ -1,69 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_clip_203
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.8715
-common_nodes: [BasicScheduler, BatchImagesNode, BerniniConditioning, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoInfo]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.753
+common_nodes: [AddLabel, CR Image Grid Panel, CR Math Operation, ConditioningZeroOut, EmptyLatentImage, Float, GoogleTranslateCLIPTextEncodeNode, JoinStringMulti, KSampler, LoraLoaderModelOnly, MuyeTextEditOutput, PreviewImage, SaveImage, SimpleMath+, VAEDecode, VAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/Bernini 参考图视频编辑_2062483604135047170.json, 平台全量/Bernini 开源效果！多图参考 + 人物替换_2062410700735213570.json, 平台全量/Bernini 视频编辑模型 一句话改变视频 换人物换背景_2069582307207503873.json, 视频生成/文生视频/Bernini 视频编辑模型 一句话改变视频 RV2V 模式 换人物换背景_2062391464264560641.json]
+members: [图片生成/文生图/(Qc_Lora)Z-ImageLora_text_1996391726472380417.json, 图片生成/文生图/2029887943283843073.json, 图片生成/文生图/lora测试xy图表工作流_1987396378466955266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_203
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Bernini 参考图视频编辑_2062483604135047170.json、平台全量/Bernini 开源效果！多图参考 + 人物替换_2062410700735213570.json、平台全量/Bernini 视频编辑模型 一句话改变视频 换人物换背景_2069582307207503873.json、视频生成/文生视频/Bernini 视频编辑模型 一句话改变视频 RV2V 模式 换人物换背景_2062391464264560641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/(Qc_Lora)Z-ImageLora_text_1996391726472380417.json、图片生成/文生图/2029887943283843073.json、图片生成/文生图/lora测试xy图表工作流_1987396378466955266.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerSelect`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `AddLabel`
+- `CR Image Grid Panel`
+- `CR Math Operation`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `Float`
+- `GoogleTranslateCLIPTextEncodeNode`
+- `JoinStringMulti`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
+- `MuyeTextEditOutput`
+- `PreviewImage`
+- `SaveImage`
+- `SimpleMath+`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `ImpactInt` —— 2/4 个有
-- `SimpleMath+` —— 2/4 个有
-- `StringFunction|pysssss` —— 2/4 个有
-- `VHS_VideoCombine` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
-- `CM_IntToFloat` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `easy imageScaleDownToSize` —— 1/4 个有
+- `CLIPLoader` —— 2/3 个有
+- `FluxGuidance` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `DualCLIPLoader` —— 1/3 个有
+- `EnhancedLoadDiffusionModel` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 768 - 1024 | 3 | 87% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 采样步数 | 20 | 9 - 20 | 3 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | dpmpp_2m_sde | - | 3 | 33% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 9 - 20，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde，3 个样本，一致性 33%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

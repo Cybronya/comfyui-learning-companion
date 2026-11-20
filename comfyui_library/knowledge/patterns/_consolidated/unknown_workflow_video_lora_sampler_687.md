@@ -1,66 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_687
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.7505
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoraLoaderModelOnly, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, ki_MiniMaxH3ReferenceToVideo, ki_宫格拼图高阶版]
+frequency: 3
+level: strong
+coverage: 0.957667
+common_nodes: [BasicScheduler, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/ki_MiniMax H3_多参selflift双采分镜硬控流_2105695202211098626.json, 平台全量/ki_MiniMax H3_多参selflift双采分镜硬控流_2119420965615661058.json, 平台全量/ki_MiniMax_H3_多参分镜硬控流_2117404280977186817.json, 视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json]
+members: [视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_687
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/ki_MiniMax H3_多参selflift双采分镜硬控流_2105695202211098626.json、平台全量/ki_MiniMax H3_多参selflift双采分镜硬控流_2119420965615661058.json、平台全量/ki_MiniMax_H3_多参分镜硬控流_2117404280977186817.json、视频生成/图生视频/ki_MiniMax H3_多参分镜硬控流_2096068614947434498.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json、视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json、视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `ComfyNumberConvert`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewImage`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `ki_MiniMaxH3ReferenceToVideo`
-- `ki_宫格拼图高阶版`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 2/4 个有
-- `BlockSparseAttention` —— 2/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `MiniMaxH3TurboSampler` —— 2/4 个有
-- `RandomNoise` —— 2/4 个有
-- `SamplerCustomAdvanced` —— 2/4 个有
-- `SelfLiftH3Sampler` —— 2/4 个有
-- `easy ifElse` —— 2/4 个有
+- `CFGGuider` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `LiconMSR` —— 2/3 个有
+- `PromptRelayEncode` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `LTXVDualCFGGuider` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `YuanCLIPTimeline` —— 1/3 个有
+- `YuanTool` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 241 | 241 - 241 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -68,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 241，观测区间 241 - 241，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

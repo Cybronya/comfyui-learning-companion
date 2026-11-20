@@ -1,55 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_vae_18
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 1
-common_nodes: [BasicScheduler, BlockSparseAttention, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MiniMaxH3VAEDecodeFast, ModelAttentionBackend, SaveVideo, SelfLiftAvatarH3Sampler, SpectrumApplyMiniMaxH3, VAEDecode, VAEDecodeAudio]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.843
+common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, Image Comparer (rgthree), ImageScaleBy, KSampler, Light-Tool: ImageToMask, LoadImage, MaskFillHole, NunchakuQwenImageDiTLoader, NunchakuQwenImageLoraStack, PreviewImage, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, SetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2119333413755899906.json, 平台全量/极速Minimax_H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2117480325357072386.json, 视频生成/图生视频/minimax H3 参考生视频 图生视频_2109542546711076865.json, 视频生成/图生视频/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2117081479258918913.json, 视频生成/视频生视频/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2112395053464375298.json]
+members: [图片生成/图生图/Qwen换装 极速无漂移_1988519910391373826.json, 图片生成/图生图/一键自由换装 Qwen无偏移_1990436669985886210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2119333413755899906.json、平台全量/极速Minimax_H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2117480325357072386.json、视频生成/图生视频/minimax H3 参考生视频 图生视频_2109542546711076865.json、视频生成/图生视频/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2117081479258918913.json、视频生成/视频生视频/极速Minimax H3多参考视频工作流（加速双重采样1080P-10秒-5分钟）_2112395053464375298.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen换装 极速无漂移_1988519910391373826.json、图片生成/图生图/一键自由换装 Qwen无偏移_1990436669985886210.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `ExtendIntermediateSigmas`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3VAEDecodeFast`
-- `ModelAttentionBackend`
-- `SaveVideo`
-- `SelfLiftAvatarH3Sampler`
-- `SpectrumApplyMiniMaxH3`
+- `CropWithPadInfo`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `KSampler`
+- `Light-Tool: ImageToMask`
+- `LoadImage`
+- `MaskFillHole`
+- `NunchakuQwenImageDiTLoader`
+- `NunchakuQwenImageLoraStack`
+- `PreviewImage`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAELoader`
+- `easy ifElse`
+- `easy isMaskEmpty`
+
+**可变部分**（部分 workflow 才有）：
+- `MaskPreview` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta57 | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta57，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

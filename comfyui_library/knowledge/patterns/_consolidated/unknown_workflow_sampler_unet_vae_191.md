@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_191
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.808571
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, PreviewAny, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 6
+level: moderate
+coverage: 0.886833
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-2.1角色卡立绘_2102980604450140162.json, 图片生成/图生图/一键制作人物风格信息图--Qwen image 2.1_2105302134995644418.json, 图片生成/图生图/姿势迁移-qwen21_2105531509292752897.json, 图片生成/图生图/绅士私房写真图片qwen21_2105590393751560193.json, 图片生成/图生图/角色头部替换qwen21_2105521210460303362.json, 图片生成/文生图/厚涂cg-qwen21_2106296350756401153.json, 平台全量/图片转白膜-qwen21_2117404595398991874.json]
+members: [视频生成/图生视频/MinimaxH3图生视频&首尾帧 量化加速版_2084545071873093633.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2101850161256423426.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2104052395767582721.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播5秒_2101848980366913538.json, 视频生成/图生视频/fastvideo_fasth3_图生视频_2101837609382277121.json, 视频生成/图生视频/海螺H3八步极速生成文图首尾帧视频3合一工作流_2088515866974576641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_191
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-2.1角色卡立绘_2102980604450140162.json、图片生成/图生图/一键制作人物风格信息图--Qwen image 2.1_2105302134995644418.json、图片生成/图生图/姿势迁移-qwen21_2105531509292752897.json、图片生成/图生图/绅士私房写真图片qwen21_2105590393751560193.json、图片生成/图生图/角色头部替换qwen21_2105521210460303362.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3图生视频&首尾帧 量化加速版_2084545071873093633.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2101850161256423426.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2104052395767582721.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播5秒_2101848980366913538.json、视频生成/图生视频/fastvideo_fasth3_图生视频_2101837609382277121.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 6/7 个有
-- `easy clearCacheAll` —— 6/7 个有
-- `easy imageConcat` —— 5/7 个有
-- `ImageScaleBy` —— 4/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `LoraLoaderBypassModelOnly` —— 2/7 个有
-- `PIP_图像联结` —— 2/7 个有
-- `CR Prompt List` —— 1/7 个有
-- `ComfySwitchNode` —— 1/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `BlockSparseAttention` —— 4/6 个有
+- `MiniMaxH3SigmaShift` —— 4/6 个有
+- `ModelAttentionBackend` —— 4/6 个有
+- `AnyBooleanSwitch` —— 2/6 个有
+- `EmptyImage` —— 2/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `PrimitiveBoolean` —— 2/6 个有
+- `CM_BoolBinaryOperation` —— 1/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `Float` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `ImpactConditionalBranch` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
+- `ResolutionSelector` —— 1/6 个有
+- `Switch image [Crystools]` —— 1/6 个有
+- `easy float` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 采样步数 | 30 | 30 - 40 | 7 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,10 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，观测区间 30 - 40，7 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,65 +3,49 @@ name: text_to_image_lora_sampler_clip_651
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.6885
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, GetNode, Image Comparer (rgthree), JjkText, KSampler, LayerMask: MaskGrow, LayerUtility: ColorImage, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview+, PreviewImage, PrimitiveStringMultiline, QwenImage21Cache, SaveImage, SetNode, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 取色器_孤海, 孤海注释]
+coverage: 0.927
+common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Get Image Size, Image Comparer (rgthree), ImageColorMatchAdobe+, ImageResize+, ImpactMinMax, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2, SeedVR2BlockSwap, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen image 2.1单人换脸 精准局部重绘图生图工具_2113742502653161473.json, 图片生成/图生图/Qwen image 2.1多人换脸 局部重绘图生图处理工具_2113737567773487106.json]
+members: [图片生成/图生图/原图直出高清放大｜无损画质增强细节修复工具_2093513755102638082.json, 图片生成/图生图/原图直出高清放大｜无损画质增强细节修复工具_2093612059454955521.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_651
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1单人换脸 精准局部重绘图生图工具_2113742502653161473.json、图片生成/图生图/Qwen image 2.1多人换脸 局部重绘图生图处理工具_2113737567773487106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/原图直出高清放大｜无损画质增强细节修复工具_2093513755102638082.json、图片生成/图生图/原图直出高清放大｜无损画质增强细节修复工具_2093612059454955521.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `DF_Integer`
 - `EmptyLatentImage`
-- `GetImageSize`
-- `GetNode`
+- `Get Image Size`
 - `Image Comparer (rgthree)`
+- `ImageColorMatchAdobe+`
+- `ImageResize+`
+- `ImpactMinMax`
 - `JjkText`
 - `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ColorImage`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskPreview+`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `取色器_孤海`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/2 个有
-- `LayerUtility: CropBoxResolve` —— 1/2 个有
-- `LayerUtility: CropByMask V2` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

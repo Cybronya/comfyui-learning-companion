@@ -1,45 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_911
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.875667
-common_nodes: [CLIPVisionLoader, DrawViTPose, Evaluate Integers, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.546
+common_nodes: [Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Prompt Text, Display Any (rgthree), DrawMaskOnImage, DrawViTPose, Evaluate Integers, GetImageSize, GetNode, ImageBatch, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, Int, JWImageExtractFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveFloat, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization]
 problems: []
 missing: []
-members: [视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json, 视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json, 音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json]
+members: [视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json, 视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_911
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json、视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json、音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json、视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `Anything Everywhere`
+- `BlockifyMask`
 - `CLIPVisionLoader`
+- `CR Prompt Text`
+- `Display Any (rgthree)`
+- `DrawMaskOnImage`
 - `DrawViTPose`
 - `Evaluate Integers`
-- `GetImageSizeAndCount`
+- `GetImageSize`
+- `GetNode`
+- `ImageBatch`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `Int`
+- `JWImageExtractFromBatch`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `OnnxDetectionModelLoader`
 - `PoseAndFaceDetection`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
+- `RepeatImageBatch`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `VHS_VideoInfo`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
@@ -49,24 +63,17 @@ source: knowledge_consolidation
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCount+` —— 2/3 个有
-- `Evaluate Floats` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `Image Batch` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `SynVowImageBatchRangeIndex` —— 2/3 个有
-- `SynVowImageTotalGroups` —— 2/3 个有
-- `easy batchAnything` —— 2/3 个有
-- `easy convertAnything` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `easy forLoopEnd` —— 2/3 个有
-- `easy forLoopStart` —— 2/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
+- `Manual XY Entry Info` —— 1/2 个有
+- `MathExpressionNode` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ZML_IntegerFloatConverter` —— 1/2 个有
 
 ## 典型参数
 
@@ -78,4 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

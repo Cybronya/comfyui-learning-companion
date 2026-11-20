@@ -1,67 +1,70 @@
 ---
 name: text_to_image_controlnet_sampler_clip_14
 type: Text To Image
-frequency: 5
-level: strong
-coverage: 0.9154
-common_nodes: [CLIPTextEncode, CannyEdgePreprocessor, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, GetImageSize_, ImageResize+, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.656
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX线稿上色 逼真细节 减少AI感_1921726181299912706.json, 图片生成/图生图/FLUX线稿上色｜真细节 减少AI感_1921800485895077889.json, 图片生成/图生图/kontext dev 线稿上色_1948257307990863873.json, 图片生成/图生图/连环画线稿上色_1970615580032200706.json, 平台全量/Canny+Redux线稿上色_在线生图_1895671416807686145.json]
+members: [图片生成/图生图/千问图生图 【小即梦你懂的~】_1959580226474946562.json, 图片生成/文生图/Controlnet 控制 Z-image_2018207991035596801.json, 图片生成/文生图/Z-IMAGE_ControlNet控制_1996388619596210177.json, 图片生成/文生图/节点系列12-Image Color Match节点_2013504175904137217.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX线稿上色 逼真细节 减少AI感_1921726181299912706.json、图片生成/图生图/FLUX线稿上色｜真细节 减少AI感_1921800485895077889.json、图片生成/图生图/kontext dev 线稿上色_1948257307990863873.json、图片生成/图生图/连环画线稿上色_1970615580032200706.json、平台全量/Canny+Redux线稿上色_在线生图_1895671416807686145.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千问图生图 【小即梦你懂的~】_1959580226474946562.json、图片生成/文生图/Controlnet 控制 Z-image_2018207991035596801.json、图片生成/文生图/Z-IMAGE_ControlNet控制_1996388619596210177.json、图片生成/文生图/节点系列12-Image Color Match节点_2013504175904137217.json）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CannyEdgePreprocessor`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `GetImageSize_`
-- `ImageResize+`
+- `GetNode`
 - `KSampler`
 - `LoadImage`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `SetUnionControlNetType` —— 4/5 个有
-- `UltimateSDUpscale` —— 4/5 个有
-- `UpscaleModelLoader` —— 4/5 个有
-- `CLIPVisionEncode` —— 1/5 个有
-- `CLIPVisionLoader` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `StyleModelApply` —— 1/5 个有
-- `StyleModelLoader` —— 1/5 个有
+- `AIO_Preprocessor` —— 3/4 个有
+- `CR Text` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
+- `easy imageColorMatch` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.6 | 0.6 - 0.9 | 5 | 83% |
-| 宽度 | 768 | 768 - 768 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 采样步数 | 25 | 25 - 25 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | normal | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1128 | 512 - 1536 | 4 | 57% |
+| 高度 | 1024 | 512 - 1280 | 4 | 71% |
+| 采样步数 | 13 | 10 - 20 | 4 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 4 | 53% |
+| 采样算法 | euler_ancestral | - | 4 | 50% |
+| 调度器 | bong_tangent | - | 4 | 25% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -69,11 +72,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.6，观测区间 0.6 - 0.9，5 个样本，取值集中（一致性 83%）
-- 宽度 中位数 768，观测区间 768 - 768，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 normal，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1128，观测区间 512 - 1536，4 个样本
+- 高度 中位数 1024，观测区间 512 - 1280，4 个样本
+- 采样步数 中位数 13，观测区间 10 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，4 个样本
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 50%
+- 调度器 最常用 bong_tangent，4 个样本，一致性 25%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

@@ -2,79 +2,77 @@
 name: unknown_workflow_video_upscale_latent_upscale_109
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.930333
-common_nodes: [BasicGuider, BasicScheduler, BatchImagesNode, CLIPLoader, CR String To Number, ComfyMathExpression, GuHaiAutoImageSplit, ImageBatchMulti, ImageFromBatch+, ImageResizeKJv2, Int, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ExtendCanvasV2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, SplitSigmas, StringConcatenate, StringSubstring, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mathInt, easy showAnything, easy sleep]
+level: strong
+coverage: 0.492
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, GuHaiAutoImageSplit, INTConstant, ImageFromBatch+, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, Label (rgthree), LatentUpscaleModelLoader, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, RandomNoise, RecordAudio, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SimpleCalculatorKJ, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/comfyui 工作流_2109468418498981890.json, 图片生成/文生图/comyui工作流_2116060622306766850.json, 视频生成/图生视频/comfyui 工作流_2114318472292429826.json]
+members: [视频生成/图生视频/LTX2.3 四宫格短剧_2045413538109329409.json, 视频生成/图生视频/aidir-LTX2.3 四宫格生视频_2070309380381298690.json, 视频生成/图生视频/图生视频二号_2052328089341964289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_109
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/comfyui 工作流_2109468418498981890.json、图片生成/文生图/comyui工作流_2116060622306766850.json、视频生成/图生视频/comfyui 工作流_2114318472292429826.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 四宫格短剧_2045413538109329409.json、视频生成/图生视频/aidir-LTX2.3 四宫格生视频_2070309380381298690.json、视频生成/图生视频/图生视频二号_2052328089341964289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **可信度**：强结论
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CR String To Number`
-- `ComfyMathExpression`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
 - `GuHaiAutoImageSplit`
-- `ImageBatchMulti`
+- `INTConstant`
 - `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `Int`
 - `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LayerUtility: ExtendCanvasV2`
+- `Label (rgthree)`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
 - `PreviewImage`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
-- `ResolutionSelector`
+- `RecordAudio`
 - `SamplerCustomAdvanced`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMath+`
-- `SplitSigmas`
-- `StringConcatenate`
-- `StringSubstring`
-- `Text Load Line From File`
-- `Text Multiline`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleCalculatorKJ`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 - `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy mathInt`
-- `easy showAnything`
-- `easy sleep`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -82,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

@@ -1,72 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_373
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.811375
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.868
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/更好用的InfiniteTalk对口型说话_唱歌数字人-稳定动态+强引导+色彩还原_2060438227680583681.json, 数字人/数字人/电商数字人infinitetalk_1988491410166996993.json, 数字人/数字人/老炮infinitetalk_1959555573828235265.json, 视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json, 视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json, 视频生成/图生视频/infinitetalk-数字人口播对口型V1_2054541988237717506.json, 视频生成/图生视频/高清数字人-稳定加强V2.0版(对口型、口播、唱歌）最强AI数字人高清InfiniteTalk单人口_2075038609807339522.json, 音频生成/音频生成/AA--声音克隆数字人-InfiniteTalk对口型图生视频（情感控制）_2030212385763495938.json]
+members: [视频生成/图生视频/minmax生图工作流_2097534784162582529.json, 视频生成/图生视频/【官模】Lightx2v正式版+8步加速+_+Minimax双时钟参考生视频V1_2087816150808879105.json, 视频生成/图生视频/双时钟采样4步无损加速｜MiniMAX-H3-T8图生视频_2096460092848828418.json, 视频生成/图生视频/自用 4步加速 图生视频_2100517066590744577.json, 视频生成/图生视频/（4步极速转化版) Minimax开源 双时钟图生视频快速生视频_2086025973031587841.json, 视频生成/文生视频/H3-最优加速工作流_2085603426867695618.json, 视频生成/文生视频/极速版 MinimaxH3 首尾帧 图生视频 文生视频 T8版_2085915545450401793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_373
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/更好用的InfiniteTalk对口型说话_唱歌数字人-稳定动态+强引导+色彩还原_2060438227680583681.json、数字人/数字人/电商数字人infinitetalk_1988491410166996993.json、数字人/数字人/老炮infinitetalk_1959555573828235265.json、视频生成/图生视频/Infinite Talk 双人数字人_1970484627771170817.json、视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/minmax生图工作流_2097534784162582529.json、视频生成/图生视频/【官模】Lightx2v正式版+8步加速+_+Minimax双时钟参考生视频V1_2087816150808879105.json、视频生成/图生视频/双时钟采样4步无损加速｜MiniMAX-H3-T8图生视频_2096460092848828418.json、视频生成/图生视频/自用 4步加速 图生视频_2100517066590744577.json、视频生成/图生视频/（4步极速转化版) Minimax开源 双时钟图生视频快速生视频_2086025973031587841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/8 个有
-- `AudioSeparation` —— 6/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `CR Text` —— 4/8 个有
-- `SoundFlow_GetLength` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `Float to Int` —— 3/8 个有
-- `Int` —— 3/8 个有
-- `ToInt` —— 3/8 个有
-- `easy showAnything` —— 3/8 个有
-- `GetNode` —— 2/8 个有
-- `ImpactInt` —— 2/8 个有
-- `JWIntegerToString` —— 2/8 个有
-- `RH_GetAudioDuration` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `easy int` —— 2/8 个有
-- `1hew_AudioDuration` —— 1/8 个有
-- `Bjornulf_ShowInt` —— 1/8 个有
-- `CM_IntToFloat` —— 1/8 个有
-- `IndexTTS2Run` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `SaveAudio` —— 1/8 个有
-- `easy float` —— 1/8 个有
+- `CR Prompt Text` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `PrimitiveStringMultiline` —— 2/7 个有
+- `CM_IntToFloat` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `MiniMaxH3TurboLoRA` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 

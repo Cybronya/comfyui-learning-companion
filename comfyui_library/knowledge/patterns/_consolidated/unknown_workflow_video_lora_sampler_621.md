@@ -1,61 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_621
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8712
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], RH_LLMAPI_NODE, StringReplace, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy showAnything]
+coverage: 0.8495
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-运镜转场视频-图生视频-KJ-高清放大_1989534940729626625.json, 视频生成/图生视频/Wan2.2-运镜转场视频-图生视频-KJ_1989309256367304706.json, 视频生成/图生视频/Wan2.2运镜转场视频-KJ_1950590406721490945.json, 视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1950544574634708994.json, 视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1971495513445089282.json]
+members: [视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json, 视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json, 视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json, 视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_621
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-运镜转场视频-图生视频-KJ-高清放大_1989534940729626625.json、视频生成/图生视频/Wan2.2-运镜转场视频-图生视频-KJ_1989309256367304706.json、视频生成/图生视频/Wan2.2运镜转场视频-KJ_1950590406721490945.json、视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1950544574634708994.json、视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1971495513445089282.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json、视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json、视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json、视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `RH_LLMAPI_NODE`
-- `StringReplace`
-- `Text Multiline`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/5 个有
-- `WanVideoImageToVideoEncode` —— 3/5 个有
-- `GetNode` —— 2/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `WanVideoEmptyEmbeds` —— 2/5 个有
-- `CR Upscale Image` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/4 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/4 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/4 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `LoadAudio` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `孤海注释` —— 2/4 个有
+- `AudioCrop` —— 1/4 个有
+- `ConcatTextOfUtils` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `JWStringToFloat` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
 
 ## 典型参数
 

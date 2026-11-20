@@ -1,79 +1,73 @@
 ---
 name: image_to_image_lora_sampler_unet_154
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 0.9266
-common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, FluxKontextMultiReferenceLatentMethod, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+frequency: 4
+level: weak
+coverage: 0.91975
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json, 图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json, 图片生成/图生图/多角度多视角批量出图_2011269248949161985.json, 图片生成/图生图/多角度镜头选择版本_2009891554516799489.json]
+members: [图片生成/图生图/Qwen-image-edit线图或插图直接转换3D真实图_1981531839686942721.json, 图片生成/图生图/QwenEdit图片编辑+1个流的多玩法_1959226835055882241.json, 图片生成/图生图/qwen_edit_一键Chibi角色风格转换 Q版风格化_1980449032965435394.json, 图片生成/文生图/Qwen-Image-Edit-一键转宫崎骏风_2095060097503420418.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_154
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一张图一次性出多角度分镜图_2018357518489096194.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2061089518836600833.json、图片生成/图生图/一张图片生成任意角度图片qwen2511多角度图片生成器_2062521101770649602.json、图片生成/图生图/多角度多视角批量出图_2011269248949161985.json、图片生成/图生图/多角度镜头选择版本_2009891554516799489.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-image-edit线图或插图直接转换3D真实图_1981531839686942721.json、图片生成/图生图/QwenEdit图片编辑+1个流的多玩法_1959226835055882241.json、图片生成/图生图/qwen_edit_一键Chibi角色风格转换 Q版风格化_1980449032965435394.json、图片生成/文生图/Qwen-Image-Edit-一键转宫崎骏风_2095060097503420418.json）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
-- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `QwenMultiangleCameraNode`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 4/5 个有
-- `CompressImages` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `easy promptList` —— 3/5 个有
-- `RHHiddenNodes` —— 2/5 个有
-- `CR Prompt List` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageFromBatch` —— 1/5 个有
-- `ImageListToBatch+` —— 1/5 个有
-- `KOOK_SaveJPGImage` —— 1/5 个有
-- `LayerUtility: Collage` —— 1/5 个有
+- `SaveImage` —— 3/4 个有
+- `TextEncodeQwenImageEdit` —— 3/4 个有
+- `CR Simple Image Compare` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `AILab_ImageStitch` —— 1/4 个有
+- `TextEncodeQwenImageEditEnhanced` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy imageSave` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 6 | 4 - 20 | 4 | 27% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 4 | 0% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 4 - 20，4 个样本，取值分散，一致性仅 27%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，4 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

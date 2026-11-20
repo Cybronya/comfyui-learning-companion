@@ -1,50 +1,38 @@
 ---
 name: unknown_workflow_generic_54
 type: Unknown Workflow
-frequency: 23
+frequency: 20
 level: moderate
-coverage: 0.891739
-common_nodes: [DF_Integer, Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch]
+coverage: 0.9857
+common_nodes: [CR Prompt Text, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2+TTP 高清放大_1989281903083704321.json, 图片生成/图生图/SeedVR2+TTP分块｜高清修复放大｜8K画质_2116885141229490177.json, 图片生成/图生图/SeedVR2分块放大+4K&8K不变形+全节点注释_2059535091696750594.json, 图片生成/图生图/SeedVR2图片高清细节放大_2037772953709977602.json, 图片生成/图生图/Seedvr2图像高清变清晰_1972617007914999809.json, 图片生成/图生图/TTP分块万物高清放大（效果好）_1979143501155831809.json, 图片生成/图生图/seedVR2 万物4K超清放大（分块）_2041729291301429250.json, 图片生成/图生图/seedVR2 万物高清放大 TTP放大 增加皮肤纹理 超级细节修复 超真实 去AI塑料感 图生图_1996133909765275650.json, 图片生成/图生图/seedVR2 万物高清放大（分块） 超级细节修复 超真实_1984775476948385794.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2014990182071672833.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2054224790436761601.json, 图片生成/图生图/seedVR2 万物高清放大（分块）_2089192862389985282.json, 图片生成/图生图/seedVR2 万物高清放大（支持分块）_1976821726065704962.json, 图片生成/图生图/seedVR2 高清放大_1984149005791854594.json, 图片生成/图生图/seedVR2 高清放大工作流_2040689256242352129.json, 图片生成/图生图/seedVR2 高清放大工作流_2051931514862096386.json, 图片生成/图生图/seedVR2 高清放大（自用）_1996763680530472961.json, "图片生成/图生图/seedVR2-万物极速高清放大-最强分块版（支持4k,6k,8k）_1989502979894112257.json", "图片生成/图生图/seedVR2-万物高清放大-加强版支持文字 人像 物品等（支持4k,8k）_1989503162178523137.json", 图片生成/图生图/seedVR2_万物高清放大分块去噪声杂点_2094717893291368450.json, 图片生成/图生图/seedVR2放大修复（按目标分辨率K数同比例放大）_1980684915954110466.json, 图片生成/图生图/老孙AI 万物高清放大（分块）_2085590392736673793.json, 平台全量/SeedVR2+TTP分块｜8K画质｜高清修复放大_2117435227281907714.json]
+members: [音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json, 音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json, 音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json, 音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json, 音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json, 音频生成/音频生成/VoxCPM2语音克隆(四川话)_2047577873472561153.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（天津话）V3_2041826223764021250.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（广东话）V3_2041823275411574786.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（河南话）V3_2041823297939185665.json, 音频生成/音频生成/VoxCPM2语音克隆（天津话）_2047581701450244098.json, 音频生成/音频生成/VoxCPM2语音克隆（广东话）_2047575508455530497.json, 音频生成/音频生成/VoxCPM2语音克隆（河南话）_2047580936384024578.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2041822737211072514.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2045487794499362817.json, 音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计V2_2041780714080833537.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计_2047580106213822465.json, 音频生成/音频生成/VoxCPM语音克隆_2043262047881793538.json, 音频生成/音频生成/VoxCPM：最强语音克隆+音频设计_2042490156510355457.json, 音频生成/音频生成/（贞贞lora）VoxCPM2语音克隆+声音设计_2049724105854816257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_54
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/SeedVR2+TTP 高清放大_1989281903083704321.json、图片生成/图生图/SeedVR2+TTP分块｜高清修复放大｜8K画质_2116885141229490177.json、图片生成/图生图/SeedVR2分块放大+4K&8K不变形+全节点注释_2059535091696750594.json、图片生成/图生图/SeedVR2图片高清细节放大_2037772953709977602.json、图片生成/图生图/Seedvr2图像高清变清晰_1972617007914999809.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json、音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json、音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json、音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json、音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `DF_Integer`
-- `Get Image Size`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
-- `LoadImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+全部 20 个 workflow 都包含：
+- `CR Prompt Text`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 22/23 个有
-- `easy cleanGpuUsed` —— 21/23 个有
-- `SaveImage` —— 18/23 个有
-- `KOOK_SaveJPGImage` —— 5/23 个有
-- `PreviewImage` —— 4/23 个有
-- `KOOK_ImageCompression` —— 2/23 个有
-- `RHHiddenNodes` —— 2/23 个有
-- `孤海注释` —— 2/23 个有
-- `Fast Groups Muter (rgthree)` —— 1/23 个有
-- `Int` —— 1/23 个有
+- `RunningHub_VoxCPM_Generate` —— 18/20 个有
+- `LoadAudio` —— 15/20 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/20 个有
+- `Qwen3ASRLoader` —— 1/20 个有
+- `Qwen3ASRTranscribe` —— 1/20 个有
 
 ## 典型参数
 

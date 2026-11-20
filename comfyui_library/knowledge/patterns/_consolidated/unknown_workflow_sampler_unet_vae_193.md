@@ -1,71 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_193
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.717333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-image2.1自动换头术图像编辑_2107768453926047746.json, 图片生成/图生图/Qwen-image2.1自动换头术图像编辑_2107805917923336194.json, 图片生成/图生图/Qwen2.1-图生图12参考-提速版_2112576868661682177.json, 图片生成/图生图/Qwen2.1-图生图16参考_2115240696591503362.json, 图片生成/图生图/Qwen2.1-图生图16参考_2115314444816445442.json, 图片生成/图生图/Qwen2.1-图生图16参考提速版_2115478113609142274.json, 图片生成/图生图/image_qwen_image_2.1 角色表_2112852975646494721.json]
+members: [视频生成/图生视频/开源版Minimax-h3 多模态全能参考版_2084936517058912257.json, 视频生成/图生视频/电商产品展示 MiniMax H3 图生视频_2086081191966498817.json, 视频生成/图生视频/电商产品视频 图生视频增强版_2095009978229813249.json, 视频生成/图生视频/老秦的声音克隆数字人_2097164544790589442.json, 视频生成/图生视频/超级融合模型-高质量(10Eros-Max)Minimax BF16参考生视频-加速版-TEST3版_2086762633667108866.json, 视频生成/文生视频/Minimax_h3官方多参视频生成工作流_2084688064726781954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_193
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1自动换头术图像编辑_2107768453926047746.json、图片生成/图生图/Qwen-image2.1自动换头术图像编辑_2107805917923336194.json、图片生成/图生图/Qwen2.1-图生图12参考-提速版_2112576868661682177.json、图片生成/图生图/Qwen2.1-图生图16参考_2115240696591503362.json、图片生成/图生图/Qwen2.1-图生图16参考_2115314444816445442.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/开源版Minimax-h3 多模态全能参考版_2084936517058912257.json、视频生成/图生视频/电商产品展示 MiniMax H3 图生视频_2086081191966498817.json、视频生成/图生视频/电商产品视频 图生视频增强版_2095009978229813249.json、视频生成/图生视频/老秦的声音克隆数字人_2097164544790589442.json、视频生成/图生视频/超级融合模型-高质量(10Eros-Max)Minimax BF16参考生视频-加速版-TEST3版_2086762633667108866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 6/7 个有
-- `EmptyLatentImage` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `ImageCompare` —— 2/7 个有
-- `WujiCleaner` —— 2/7 个有
-- `WujiUpscaler2` —— 2/7 个有
-- `QwenImage21SageAttentionT8` —— 1/7 个有
-- `easy promptLine` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `AudioCrop` —— 3/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `Any To String (mtb)` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `MiniMaxH3BlockCacheT8` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 8 - 50 | 7 | 30% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 29% |
-| 采样算法 | euler | - | 7 | 71% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 0.7 - 1 | 7 | 85% |
-| 宽度 | 1920 | 1024 - 1920 | 5 | 76% |
-| 高度 | 1080 | 720 - 1080 | 5 | 86% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 50，7 个样本，取值分散，一致性仅 30%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，7 个样本，一致性 71%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.7 - 1，7 个样本，取值集中（一致性 85%）
-- 宽度 中位数 1920，观测区间 1024 - 1920，5 个样本
-- 高度 中位数 1080，观测区间 720 - 1080，5 个样本，取值集中（一致性 86%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

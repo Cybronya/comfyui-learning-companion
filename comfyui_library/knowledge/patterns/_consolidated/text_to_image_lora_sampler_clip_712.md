@@ -3,70 +3,75 @@ name: text_to_image_lora_sampler_clip_712
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: []
+coverage: 0.9025
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【API】ANIMA文生图_2111986830584410113.json, 图片生成/文生图/【API】Krea2文生图（巨构）_2111986910141964289.json]
+members: [视频生成/文生视频/Anima-2.9B智能图生图Qwen3VL反推｜文生视频视频生视频图生视频_2090074818287849473.json, 视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_712
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【API】ANIMA文生图_2111986830584410113.json、图片生成/文生图/【API】Krea2文生图（巨构）_2111986910141964289.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Anima-2.9B智能图生图Qwen3VL反推｜文生视频视频生视频图生视频_2090074818287849473.json、视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `Display Any (rgthree)` —— 1/2 个有
-- `JoinStringMulti` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
+- `Qwen3VLProcessor` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `VAEEncode` —— 1/2 个有
+- `VAELoaderKJ` —— 1/2 个有
+- `image_scale_pixel_v2` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | - | 2 | 40% |
-| Prompt 约束强度(CFG) | 3 | - | 2 | 33% |
-| 采样算法 | dpmpp_2m | - | 2 | 50% |
-| 调度器 | beta57 | - | 2 | 50% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
-- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 50%
-- 调度器 最常用 beta57，2 个样本，一致性 50%
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

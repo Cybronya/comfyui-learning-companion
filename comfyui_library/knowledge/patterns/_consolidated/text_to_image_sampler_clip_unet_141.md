@@ -2,69 +2,73 @@
 name: text_to_image_sampler_clip_unet_141
 type: Text To Image
 frequency: 5
-level: strong
-coverage: 0.9876
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.7826
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image图生图-局部重绘_1994196646854672386.json, 图片生成/图生图/最新模型Z-image，秒杀FLUX2，图像反推_1994237148719235073.json, 图片生成/文生图/1文生图基础流_2025773663856893953.json, 图片生成/文生图/Z-image文生图+图生图+提示词反推_1994191793115824130.json, 图片生成/文生图/Z-image文生图-十个案例_1994576108777578497.json]
+members: [图片生成/文生图/Krea2基础文生图（提示词扩写）_2070539846480912385.json, 图片生成/文生图/Z-iamge文生图批量版_2009171371842084866.json, 图片生成/文生图/Z-image 多图生成_2021773113834344449.json, 图片生成/文生图/Z-image多图生成（抖音）_2044693320726745089.json, 图片生成/文生图/Z-image批量文生图_2008069205383450626.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_141
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z-image图生图-局部重绘_1994196646854672386.json、图片生成/图生图/最新模型Z-image，秒杀FLUX2，图像反推_1994237148719235073.json、图片生成/文生图/1文生图基础流_2025773663856893953.json、图片生成/文生图/Z-image文生图+图生图+提示词反推_1994191793115824130.json、图片生成/文生图/Z-image文生图-十个案例_1994576108777578497.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Krea2基础文生图（提示词扩写）_2070539846480912385.json、图片生成/文生图/Z-iamge文生图批量版_2009171371842084866.json、图片生成/文生图/Z-image 多图生成_2021773113834344449.json、图片生成/文生图/Z-image多图生成（抖音）_2044693320726745089.json、图片生成/文生图/Z-image批量文生图_2008069205383450626.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Joy_caption_two` —— 4/5 个有
-- `Joy_caption_two_load` —— 4/5 个有
-- `MuyeTextEditOutput` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `MuyeLoadImage` —— 2/5 个有
-- `InpaintModelConditioning` —— 1/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
+- `PromptBatchQueue` —— 4/5 个有
+- `HAIGC_SaveImagesToZip` —— 3/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
+- `TTResolutionSelector` —— 1/5 个有
+- `llama_cpp_instruct_adv` —— 1/5 个有
+- `llama_cpp_model_loader` —— 1/5 个有
+- `llama_cpp_parameters` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 5 | 100% |
+| 宽度 | 1024 | 512 - 1664 | 5 | 66% |
+| 高度 | 1472 | 512 - 1536 | 5 | 66% |
+| 采样步数 | 10 | 8 - 10 | 5 | 92% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
 | 采样算法 | euler | - | 5 | 100% |
 | 调度器 | simple | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1080 | 1080 - 1920 | 5 | 71% |
-| 高度 | 1920 | 1080 - 1920 | 5 | 74% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 512 - 1664，5 个样本
+- 高度 中位数 1472，观测区间 512 - 1536，5 个样本
+- 采样步数 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 92%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，5 个样本，一致性 100%
 - 调度器 最常用 simple，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1080 - 1920，5 个样本
-- 高度 中位数 1920，观测区间 1080 - 1920，5 个样本

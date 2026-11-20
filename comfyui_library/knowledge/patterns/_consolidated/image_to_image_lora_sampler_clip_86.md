@@ -1,82 +1,82 @@
 ---
 name: image_to_image_lora_sampler_clip_86
 type: Image To Image
-frequency: 5
+frequency: 3
 level: strong
-coverage: 0.824
-common_nodes: [Anything Everywhere3, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.727667
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResizeKJv2, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, QwenImage21Cache, RH_RhartImageG25FlareImageToImage, ReferenceLatent, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/光影-梦幻光影-工作流_1955142308644601858.json, 图片生成/图生图/光影-梦幻光影-工作流_1965767182925893633.json, 图片生成/图生图/梦幻光影-多彩打光-图生图_2031907252721946625.json, 平台全量/flux kontext 单图示例（包含擦除，转绘，添加，修复，去水印等15个示例）_1937171150583840769.json, 平台全量/光影-梦幻光影-工作流_1949026453221453825.json]
+members: [图片生成/图生图/COS自动修图V2版_2114184059889999873.json, 图片生成/图生图/自动COS原图直出版局部重绘_2114641746079608833.json, 图片生成/图生图/自动COS原图直出版（局部重绘）_2108747499723907074.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_86
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/光影-梦幻光影-工作流_1955142308644601858.json、图片生成/图生图/光影-梦幻光影-工作流_1965767182925893633.json、图片生成/图生图/梦幻光影-多彩打光-图生图_2031907252721946625.json、平台全量/flux kontext 单图示例（包含擦除，转绘，添加，修复，去水印等15个示例）_1937171150583840769.json、平台全量/光影-梦幻光影-工作流_1949026453221453825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/COS自动修图V2版_2114184059889999873.json、图片生成/图生图/自动COS原图直出版局部重绘_2114641746079608833.json、图片生成/图生图/自动COS原图直出版（局部重绘）_2108747499723907074.json）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
+- `ComfySwitchNode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `RH_Translator`
+- `PrimitiveStringMultiline`
+- `QwenImage21Cache`
+- `RH_RhartImageG25FlareImageToImage`
 - `ReferenceLatent`
 - `SaveImage`
+- `TextEncodeQwenImage21`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 4/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `ModelSamplingFlux` —— 4/5 个有
-- `NunchakuFluxDiTLoader` —— 4/5 个有
-- `NunchakuFluxLoraLoader` —— 4/5 个有
-- `Text Find and Replace` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `DrawMaskOnImage` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `InpaintCropImproved` —— 2/3 个有
+- `InpaintStitchImproved` —— 2/3 个有
+- `Node Collector (rgthree)` —— 2/3 个有
+- `SetLatentNoiseMask` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `JoinImageWithAlpha` —— 1/3 个有
+- `SplitImageWithAlpha` —— 1/3 个有
+- `easy imageColorMatch` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 9 - 20 | 5 | 75% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | normal | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 25 | 25 - 30 | 3 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 15/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 9 - 20，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 normal，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（15/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 25 - 30，3 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

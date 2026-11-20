@@ -3,84 +3,65 @@ name: unknown_workflow_video_lora_sampler_1031
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.541
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, FloatConstant, GIMMVFI_interpolate, GetNode, INTConstant, ImageBatchMulti, ImageCrop, ImageResizeKJv2, ImpactMakeAnyList, ImpactMakeImageList, ImpactSelectNthItemOfAnyList, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, PreviewAny, PreviewImage, SetNode, SolidMask, SomethingToString, StringConstantMultiline, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy promptLine, easy seed]
+coverage: 0.672
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, EmptyImage, GetImageSizeAndCount, GetNode, INTConstant, ImpactFloat, JWFloatToString, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RH_LLMAPI_NODE, SetNode, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoVACEStartToEndFrame, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy saveText, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json, 视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json]
+members: [视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-官方_1982718924657704961.json, 视频生成/文生视频/视频-文生视频扩写-wan2.2-官方_1972671707976802306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1031
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/BindWeave_多图参考-超高一致性和高保真_1990305288395911170.json、视频生成/图生视频/BindWeave_超高一致性和高保真的视频方案_1990127244414734338.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-官方_1982718924657704961.json、视频生成/文生视频/视频-文生视频扩写-wan2.2-官方_1972671707976802306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
 - `CLIPLoader`
-- `CLIPVisionLoader`
-- `Display Int (rgthree)`
-- `DownloadAndLoadGIMMVFIModel`
-- `FloatConstant`
-- `GIMMVFI_interpolate`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `EmptyImage`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageCrop`
-- `ImageResizeKJv2`
-- `ImpactMakeAnyList`
-- `ImpactMakeImageList`
-- `ImpactSelectNthItemOfAnyList`
-- `InvertMask`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
-- `PreviewAny`
-- `PreviewImage`
+- `ImpactFloat`
+- `JWFloatToString`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RH_LLMAPI_NODE`
 - `SetNode`
-- `SolidMask`
-- `SomethingToString`
-- `StringConstantMultiline`
-- `TextImageEncodeQwenVL`
+- `StringFunction|pysssss`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy lengthAnything`
-- `easy promptLine`
+- `WanMoeKSampler`
+- `WanVideoVACEStartToEndFrame`
+- `easy anythingIndexSwitch`
+- `easy imageSize`
+- `easy int`
+- `easy positive`
+- `easy saveText`
 - `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `ResizeAndPadImage` —— 1/2 个有
-- `easy imageListToImageBatch` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `easy showAnything`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 20 | - | 2 | 100% |
+| 采样算法 | 1.5 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | sa_solver | - | 2 | 100% |
 
 ## 常见问题
 
@@ -88,4 +69,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 sa_solver，2 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,73 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_148
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.768778
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 7
+level: moderate
+coverage: 0.843
+common_nodes: [CFGGuider, CLIPLoader, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/Minimax-Music3开源版_2092083462328111106.json, 音频生成/音频生成/MinimaxH3-music3_2094205332569550850.json, 音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json, 音频生成/音频生成/Munimax+Music+_2095313021102026754.json, 音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json, 音频生成/音频生成/audio_minimax_music_3_2088057881949196289.json, 音频生成/音频生成/audio_minimax_music_3_2088165410591035394.json, 音频生成/音频生成/audio_minimax_music_3_2089996070670655489.json, 音频生成/音频生成/audio_minimax_music_3_2103383216622231553.json]
+members: [图片生成/图生图/Flux.2 Klein 9B一键换装_2066148887555039234.json, 图片生成/图生图/Flux.2 Klein 身份一致性引导 单图参考工作流（图生图）简化版_2055121040795283457.json, 图片生成/图生图/Flux.2 Klein助力电商实现AI模特换装自由_ComfyUI工作流_2021893743644778498.json, 图片生成/图生图/Flux2 Klein 单图编辑 加速版 提示词P图_1993505563980087297.json, 图片生成/图生图/一键扩图！Flux2 klein 加速版！艾橘溪_2017423026056339458.json, 图片生成/图生图/全新Flux2 Klein 9B一键换装_2066832444266991617.json, 数字人/数字人/Flux2 Klein 多图编辑 加速版_2012172771391971330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_148
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/Minimax-Music3开源版_2092083462328111106.json、音频生成/音频生成/MinimaxH3-music3_2094205332569550850.json、音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json、音频生成/音频生成/Munimax+Music+_2095313021102026754.json、音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux.2 Klein 9B一键换装_2066148887555039234.json、图片生成/图生图/Flux.2 Klein 身份一致性引导 单图参考工作流（图生图）简化版_2055121040795283457.json、图片生成/图生图/Flux.2 Klein助力电商实现AI模特换装自由_ComfyUI工作流_2021893743644778498.json、图片生成/图生图/Flux2 Klein 单图编辑 加速版 提示词P图_1993505563980087297.json、图片生成/图生图/一键扩图！Flux2 klein 加速版！艾橘溪_2017423026056339458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedNode` —— 8/9 个有
-- `ComfySwitchNode` —— 7/9 个有
-- `VAEDecodeAudioTiled` —— 7/9 个有
-- `PrimitiveFloat` —— 4/9 个有
-- `JjkText` —— 2/9 个有
-- `PrimitiveStringMultiline` —— 2/9 个有
-- `Float` —— 1/9 个有
-- `FloatConstant` —— 1/9 个有
-- `PrimitiveBoolean` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
-- `Textbox` —— 1/9 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `SaveImage` —— 6/7 个有
+- `CLIPTextEncode` —— 5/7 个有
+- `GetNode` —— 5/7 个有
+- `SetNode` —— 5/7 个有
+- `Int` —— 4/7 个有
+- `JjkText` —— 3/7 个有
+- `CLIPTextEncodeBREAK` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `Float` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `IdentityFeatureTransferV3` —— 1/7 个有
+- `Image Size to Number` —— 1/7 个有
+- `ImageResize+` —— 1/7 个有
+- `LayerUtility: SaveImagePlusV2` —— 1/7 个有
+- `MathExpression|pysssss` —— 1/7 个有
+- `PrimitiveString` —— 1/7 个有
+- `easy globalSeed` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 9/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

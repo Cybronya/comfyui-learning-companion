@@ -1,59 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_700
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.6305
-common_nodes: [CM_IntToFloat, CR Prompt Text, GetImageSizeAndCount, GetNode, INTConstant, ImageConcanate, ImageFromBatch, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SetNode, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.896
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, ImageFromBatch+, ImageResizeKJv2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveInt, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/视频-视频转真人-wan2.1-ditto-KJ_1980506852125491201.json, 平台全量/视频-视频转绘-wan2.1-ditto-KJ_1980500985380519937.json, 平台全量/视频-视频转绘-wan2.1-ditto-KJ_2087411184407506945.json, 视频生成/图生视频/视频-视频转绘-wan2.1ditto-KJ_30s_1988019422692577281.json]
+members: [视频生成/图生视频/SunoV5音乐+InfiniteTalk数字人MV_1983589305073508353.json, 视频生成/图生视频/wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json, 音频生成/音频生成/最新视频对口型工作流_1966738551159336961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_700
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/视频-视频转真人-wan2.1-ditto-KJ_1980506852125491201.json、平台全量/视频-视频转绘-wan2.1-ditto-KJ_1980500985380519937.json、平台全量/视频-视频转绘-wan2.1-ditto-KJ_2087411184407506945.json、视频生成/图生视频/视频-视频转绘-wan2.1ditto-KJ_30s_1988019422692577281.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SunoV5音乐+InfiniteTalk数字人MV_1983589305073508353.json、视频生成/图生视频/wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json、音频生成/音频生成/最新视频对口型工作流_1966738551159336961.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CM_IntToFloat`
-- `CR Prompt Text`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageConcanate`
-- `ImageFromBatch`
+全部 3 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
 - `ImageFromBatch+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PreviewImage`
-- `SetNode`
-- `StringFunction|pysssss`
-- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveInt`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoadWanVideoT5TextEncoder` —— 2/3 个有
+- `SaveAudioMP3` —— 2/3 个有
+- `WanVideoEncode` —— 2/3 个有
+- `WanVideoTextEncode` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `HAIGC_VideoSubtitleEnhanced` —— 1/3 个有
+- `RH_Suno_Single` —— 1/3 个有
+- `String` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoImageToVideoEncode` —— 1/3 个有
+- `WanVideoSetBlockSwap` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/3 个有
+- `easy indexTTSGenerateSimple` —— 1/3 个有
+- `孤海-取色器` —— 1/3 个有
 
 ## 典型参数
 

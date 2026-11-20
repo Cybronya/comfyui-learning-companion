@@ -1,69 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_929
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.546333
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJ, ImageSmartSharpen+, Int, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.52
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CreateCFGScheduleFloatList, DF_Int_to_Float, DownloadAndLoadWav2VecModel, GetNode, INTConstant, JWImageResize, LayerUtility: ImageScaleByAspectRatio, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, PreviewAudio, PreviewImage, RH_GetAudioDuration, SetNode, ShowAnything|Mie, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/🈚尾帧-kj版 图生视频（倒推首帧）_1943209482220691457.json, 视频生成/图生视频/🈚️尾帧-kj版本-wan+LIGHTX2V+VACE i2v-图生视频 尾帧倒推首帧_1943184983563657218.json, 视频生成/图生视频/🈚️首中尾帧-首尾帧插入中间帧-kj版本-wan+Lightx2v+VACE 图生视频_1934978229164023809.json]
+members: [视频生成/图生视频/wan 21 Multi_InfiniteTalk 数字人 对口型_2044768518683500546.json, 视频生成/图生视频/wanvideo fantasy talking 对口型_2045415712142925826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_929
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/🈚尾帧-kj版 图生视频（倒推首帧）_1943209482220691457.json、视频生成/图生视频/🈚️尾帧-kj版本-wan+LIGHTX2V+VACE i2v-图生视频 尾帧倒推首帧_1943184983563657218.json、视频生成/图生视频/🈚️首中尾帧-首尾帧插入中间帧-kj版本-wan+Lightx2v+VACE 图生视频_1934978229164023809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan 21 Multi_InfiniteTalk 数字人 对口型_2044768518683500546.json、视频生成/图生视频/wanvideo fantasy talking 对口型_2045415712142925826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+全部 2 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CreateCFGScheduleFloatList`
+- `DF_Int_to_Float`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
-- `ImageResizeKJ`
-- `ImageSmartSharpen+`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
+- `INTConstant`
+- `JWImageResize`
+- `LayerUtility: ImageScaleByAspectRatio`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewAudio`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
+- `RH_GetAudioDuration`
 - `SetNode`
+- `ShowAnything|Mie`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoExtraModelSelect`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 2/3 个有
-- `WanVideoEasyCache` —— 2/3 个有
-- `WanVideoFreeInitArgs` —— 2/3 个有
-- `WanVideoSetRadialAttention` —— 2/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `Manual XY Entry Info` —— 1/3 个有
-- `MaskBatchMulti` —— 1/3 个有
-- `SeedVR2` —— 1/3 个有
-- `Video_Upscale_With_Model` —— 1/3 个有
-- `WanVideoMagCache` —— 1/3 个有
+- `FantasyTalkingModelLoader` —— 1/2 个有
+- `FantasyTalkingWav2VecEmbeds` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `MultiTalkModelLoader` —— 1/2 个有
+- `MultiTalkWav2VecEmbeds` —— 1/2 个有
+- `VHS_DuplicateImages` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
+- `WanVideoUni3C_embeds` —— 1/2 个有
 
 ## 典型参数
 
@@ -75,4 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,61 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_888
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.944
-common_nodes: [ColorMatch, ImageConcanate, ImageResizeKJ, LoadImage, LoadImageFromUrl, LoadWanVideoT5TextEncoder, Note Plus (mtb), PreviewImage, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.8475
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, ImageSmartSharpen+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoNAG, easy cleanGpuUsed, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 AccVideo vace 双图参考快速模型_1948689505176956929.json, 视频生成/图生视频/Wan2.1 VACE双图参考改进版_1948588073054535682.json, 视频生成/图生视频/Wan2.1 causvid vace 双图参考快速模型_1948684591906336769.json]
+members: [视频生成/图生视频/WAN2.2-最新首尾图生成视频_2052037082595504130.json, 视频生成/文生视频/Wan2.2最新图生视频-加速版_2071097964008927234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_888
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 AccVideo vace 双图参考快速模型_1948689505176956929.json、视频生成/图生视频/Wan2.1 VACE双图参考改进版_1948588073054535682.json、视频生成/图生视频/Wan2.1 causvid vace 双图参考快速模型_1948684591906336769.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.2-最新首尾图生成视频_2052037082595504130.json、视频生成/文生视频/Wan2.2最新图生视频-加速版_2071097964008927234.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ColorMatch`
-- `ImageConcanate`
-- `ImageResizeKJ`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `ImageSmartSharpen+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadImageFromUrl`
-- `LoadWanVideoT5TextEncoder`
-- `Note Plus (mtb)`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `RIFE VFI`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `WanMoeKSampler`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageRemBg` —— 2/3 个有
-- `ImageCompositeMasked` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `GetNode` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `WanImageToVideo` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | euler | - | 2 | 100% |
 
 ## 常见问题
 
@@ -63,4 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，2 个样本，一致性 100%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

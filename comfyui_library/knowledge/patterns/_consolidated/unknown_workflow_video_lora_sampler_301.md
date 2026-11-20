@@ -1,68 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_301
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.909778
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, ImageConcanate, ImageConcatMulti, ImageResizeKJ, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PDIMAGE_LongerSize, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.9085
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3TimeSmear, H3V2VInit, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/MAGREF最强图像编辑加速6图版V1_1935302402784559106.json, 视频生成/图生视频/LightX2V RANK128人&物体高一致性 双图融合超级加速视频生成_1947482709851525122.json, 视频生成/图生视频/MAGREF 人+物体一致性LightX2V 5步超级加速视频编辑V1_1935281267648954369.json, 视频生成/图生视频/MAGREF+LIGHTX2V保留图像id生成视频（双图）+视频放大_1942037582668840961.json, 视频生成/图生视频/MAGREF+LightX2V 超级加速视频编辑_1935538353750069250.json, 视频生成/图生视频/MAGREF+light2V快速视频编辑模型_1935677358408200194.json, 视频生成/图生视频/MAGREF双人一致性LightX2V 5步超级加速视频编辑V1_1935239165498032130.json, 视频生成/图生视频/MAGREF图像编辑支持NAG负面提示词_1935507618146484226.json, 视频生成/图生视频/WAN MAGREF 电商带货实战，人&物体高度一致性LightX2V 超级加速视频生成_1935550198397730818.json]
+members: [视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json, 视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json, 视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json, 视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json, 视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088568398233038849.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088607540094521346.json, 视频生成/文生视频/Minimax H3拖影强化文生视频工作流_2088291098631434242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_301
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/MAGREF最强图像编辑加速6图版V1_1935302402784559106.json、视频生成/图生视频/LightX2V RANK128人&物体高一致性 双图融合超级加速视频生成_1947482709851525122.json、视频生成/图生视频/MAGREF 人+物体一致性LightX2V 5步超级加速视频编辑V1_1935281267648954369.json、视频生成/图生视频/MAGREF+LIGHTX2V保留图像id生成视频（双图）+视频放大_1942037582668840961.json、视频生成/图生视频/MAGREF+LightX2V 超级加速视频编辑_1935538353750069250.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json、视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json、视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json、视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json、视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PDIMAGE_LongerSize`
-- `PreviewImage`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `H3ExactRecover`
+- `H3InjectSchedule`
+- `H3JerkHeatmap`
+- `H3JerkOracle`
+- `H3TimeSmear`
+- `H3V2VInit`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTextEncode` —— 8/9 个有
-- `JWInteger` —— 7/9 个有
-- `Primitive integer [Crystools]` —— 7/9 个有
-- `Text Multiline` —— 5/9 个有
-- `ImageResizeKJv2` —— 3/9 个有
-- `RH_Translator` —— 3/9 个有
-- `ImageBatchMulti` —— 2/9 个有
-- `ImageFromBatch+` —— 2/9 个有
-- `Note Plus (mtb)` —— 2/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `ImageUpscaleWithModel` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
-- `UpscaleModelLoader` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
-- `WanVideoApplyNAG` —— 1/9 个有
-- `WanVideoTextEncodeSingle` —— 1/9 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `H3AudioRecover` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `MiniMaxH3ImageToVideo` —— 4/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `孤海注释` —— 2/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `MemoryCleaner` —— 1/8 个有
 
 ## 典型参数
 

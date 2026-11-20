@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_238
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.85025
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.896667
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy getNode, easy setNode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json, 视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json, 视频生成/文生视频/Minimax_h3_超级加速文生视频_2084160987023896578.json, 视频生成/文生视频/海螺H3 文生视频-提示词自动优化扩写_2086430630488924162.json]
+members: [图片生成/图生图/角色资产创建（性价比最高）_2052301263978676226.json, 图片生成/文生图/Qwen2511 物体四视图_2066481102876921857.json, 图片生成/文生图/角色资产创建（开源版）_2052229242536116226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_238
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json、视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json、视频生成/文生视频/Minimax_h3_超级加速文生视频_2084160987023896578.json、视频生成/文生视频/海螺H3 文生视频-提示词自动优化扩写_2086430630488924162.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/角色资产创建（性价比最高）_2052301263978676226.json、图片生成/文生图/Qwen2511 物体四视图_2066481102876921857.json、图片生成/文生图/角色资产创建（开源版）_2052229242536116226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `CreateVideo` —— 2/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `EasyCache` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `PainterVRAM` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `Seed (rgthree)` —— 1/4 个有
-- `Text Find and Replace` —— 1/4 个有
-- `TextOverlay` —— 1/4 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `SeedVR2` —— 2/3 个有
+- `SeedVR2BlockSwap` —— 2/3 个有
+- `SeedVR2ExtraArgs` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `DF_Get_image_size` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `JoinImages` —— 1/3 个有
+- `RH_RhartImageNProEdit` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（9/3 个样本）：Steps较低可能导致细节不足

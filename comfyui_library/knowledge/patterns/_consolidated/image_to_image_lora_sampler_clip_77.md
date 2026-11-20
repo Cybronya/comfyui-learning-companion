@@ -1,82 +1,76 @@
 ---
 name: image_to_image_lora_sampler_clip_77
 type: Image To Image
-frequency: 5
-level: moderate
-coverage: 0.9866
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, RH_LLMAPI_NODE, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: strong
+coverage: 0.9715
+common_nodes: [CLIPTextEncode, CR Text Concatenate, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/图生图/Kontext Presets官方预设模板_1944785081019846657.json, 图片生成/图生图/Kontext dev 多图融合 Nunchaku+8步Lora加速_1939587544893857794.json, 图片生成/图生图/单图极速出图Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词_1938402352451751937.json, 图片生成/图生图/双图极速出图Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词​_1938413795544862722.json, 图片生成/图生图/极速超级卸妆Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词_1955657512878051330.json]
+members: [图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json, 图片生成/图生图/最强真实老照片修复_1947226707453497346.json, 图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json, 图片生成/图生图/老照片修复，一键修复_2029503656806064129.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_77
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext Presets官方预设模板_1944785081019846657.json、图片生成/图生图/Kontext dev 多图融合 Nunchaku+8步Lora加速_1939587544893857794.json、图片生成/图生图/单图极速出图Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词_1938402352451751937.json、图片生成/图生图/双图极速出图Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词​_1938413795544862722.json、图片生成/图生图/极速超级卸妆Flux Kontext Dev+Nunchaku+8步Lora+LLM自动润词_1955657512878051330.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json、图片生成/图生图/最强真实老照片修复_1947226707453497346.json、图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json、图片生成/图生图/老照片修复，一键修复_2029503656806064129.json）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `EmptySD3LatentImage`
 - `FluxGuidance`
 - `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `RH_LLMAPI_NODE`
+- `LoraLoaderModelOnly`
 - `ReferenceLatent`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 4/5 个有
-- `ImageStitch` —— 3/5 个有
-- `GetImageSize+` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `Bjornulf_ShowStringText` —— 1/5 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `LoadKontextPresets` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `CR Text` —— 3/4 个有
+- `FilmGrain` —— 3/4 个有
+- `LayerColor: Brightness & Contrast` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `RH_Translator` —— 3/4 个有
+- `DF_Image_scale_by_ratio` —— 1/4 个有
+- `KontextArchPresetMain` —— 1/4 个有
+- `NunchakuFluxDiTLoader` —— 1/4 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 5 | 54% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 0.8 | 0.8 - 1 | 4 | 90% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 0.95 | 0.5 - 0.95 | 4 | 77% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 0.8，观测区间 0.8 - 1，4 个样本，取值集中（一致性 90%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 0.95，观测区间 0.5 - 0.95，4 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 0.8，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

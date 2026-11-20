@@ -1,70 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_685
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.89825
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageToMask, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MaskToImage, ModelSamplingSD3, PathchSageAttentionKJ, RepeatImageBatch, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+frequency: 3
+level: moderate
+coverage: 0.659
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Primitive string multiline [Crystools], RH_GetAudioDuration, SaveAudio, SeargeIntegerConstant, SetNode, SimpleCondition+, SimpleMath+, ToInt, VHS_LoadVideoFFmpeg, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/Wan2.2视频扩图实验版V1_1950024427478147073.json, 视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json, 视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json, 视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json]
+members: [视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json, 视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json, 视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_685
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan2.2视频扩图实验版V1_1950024427478147073.json、视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json、视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json、视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json、视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json、视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageToMask`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoraLoaderModelOnly`
-- `MaskToImage`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `RepeatImageBatch`
-- `TrimVideoLatent`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Primitive string multiline [Crystools]`
+- `RH_GetAudioDuration`
+- `SaveAudio`
+- `SeargeIntegerConstant`
+- `SetNode`
+- `SimpleCondition+`
+- `SimpleMath+`
+- `ToInt`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 3/4 个有
-- `ImageFromBatch+` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `LayerUtility: PurgeVRAM` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `MathExpression|pysssss` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `SolidMask` —— 3/4 个有
-- `GetVideoComponents` —— 1/4 个有
-- `ImagePadForOutpaint` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `LoadImage` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `FantasyPortraitFaceDetector` —— 1/3 个有
+- `FantasyPortraitModelLoader` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `WanVideoAddFantasyPortrait` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 10 | 8 - 10 | 4 | 91% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,8 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 10，4 个样本，取值集中（一致性 91%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

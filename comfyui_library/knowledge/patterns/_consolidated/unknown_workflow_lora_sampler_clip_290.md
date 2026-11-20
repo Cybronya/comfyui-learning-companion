@@ -3,17 +3,17 @@ name: unknown_workflow_lora_sampler_clip_290
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8275
-common_nodes: [BlockifyMask, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskToImage, PreviewImage, RandomNoise, ReferenceLatent, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, SaveImage, SetNode, ToBinaryMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, YOLOModelLoader]
+coverage: 0.8305
+common_nodes: [BasicScheduler, BetterFilmGrain, CLIPLoader, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, EsesImageEffectBloom, FluxGuidance, ImageSharpen, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein-9B-最强二创_多人角色替换-新版_2027838925250764801.json, 图片生成/图生图/Klein-9B-最强二创_多角色替换-（一次替换2个，支持动漫&真人）_2040771742951542785.json]
+members: [图片生成/文生图/Aiwood-SRPO+Wan2.2LN模型美学+质感兼得_1966814186120601602.json, 图片生成/文生图/万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_290
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Klein-9B-最强二创_多人角色替换-新版_2027838925250764801.json、图片生成/图生图/Klein-9B-最强二创_多角色替换-（一次替换2个，支持动漫&真人）_2040771742951542785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Aiwood-SRPO+Wan2.2LN模型美学+质感兼得_1966814186120601602.json、图片生成/文生图/万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,52 +23,53 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CFGGuider`
+- `BasicScheduler`
+- `BetterFilmGrain`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DrawMaskOnImage`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `ImageScaleToTotalPixels`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `EsesImageEffectBloom`
+- `FluxGuidance`
+- `ImageSharpen`
+- `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `PreviewImage`
+- `ModelSamplingSD3`
 - `RandomNoise`
-- `ReferenceLatent`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
-- `ToBinaryMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YOLOModelLoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ClothesSegment` —— 1/2 个有
-- `Florence2ModelLoader` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `MaskPreview+` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy isMaskEmpty` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `CFGGuider` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `GeminiFLUXResolutions` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageScaleToMegapixels` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `ModelSamplingFlux` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.15 | - | 2 | 67% |
 
 ## 常见问题
 
@@ -76,4 +77,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

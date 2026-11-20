@@ -3,68 +3,80 @@ name: unknown_workflow_lora_sampler_clip_240
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.901
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningKrea2Rebalance, ConditioningZeroOut, EmptyLatentImage, ImageScaleBy, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.516667
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXIdentityOverlapConditioning, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/文生图/Krea2 文生图 双采_2104499569571749889.json, 图片生成/文生图/Krea2 文生图 双采_2104771231848423426.json, 图片生成/文生图/Krea2-Kroma 分步采样+二采放大_2083406748295188481.json]
+members: [视频生成/文生视频/LTX2.3-R2V人物参考图-图生视频_2081338352216924161.json, 视频生成/文生视频/LTX2.3_Best-FaceID_文生视频_人物脸部参考_2081784355512471553.json, 视频生成/文生视频/ltx2.3-BFI_2079731636958224385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_240
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2 文生图 双采_2104499569571749889.json、图片生成/文生图/Krea2 文生图 双采_2104771231848423426.json、图片生成/文生图/Krea2-Kroma 分步采样+二采放大_2083406748295188481.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.3-R2V人物参考图-图生视频_2081338352216924161.json、视频生成/文生视频/LTX2.3_Best-FaceID_文生视频_人物脸部参考_2081784355512471553.json、视频生成/文生视频/ltx2.3-BFI_2079731636958224385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ConditioningKrea2Rebalance`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
+- `ComfyNumberConvert`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXIdentityOverlapConditioning`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBlend` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `ImageUpscaleWithModel` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `easy clearCacheAll` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `LatentUpscaleBy` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
+- `CreateVideo` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTX2SamplingPreviewOverride` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VAELoader` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `AddLabel` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `LatentUpscaleModelLoader` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `ManualSigmas` —— 1/3 个有
+- `RecordAudio` —— 1/3 个有
+- `SetReserveVRAM` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | sa_solver | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -72,10 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

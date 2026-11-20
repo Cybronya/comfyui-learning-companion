@@ -3,22 +3,22 @@ name: text_to_image_sampler_clip_unet_166
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.83925
+coverage: 0.84525
 common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea-2 高真实感与卓越美学文生图_2069683043954151426.json, 图片生成/文生图/Krea-2-Turbo 文生图_2071991072359796737.json, 图片生成/文生图/Krea2 MJ风格图片生成_2113335543516979201.json, 图片生成/文生图/Z-image-turbo文生图_2055253303348482049.json]
+members: [图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json, 图片生成/文生图/Krea2文生图_2095904097835765761.json, 图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json, 图片生成/文生图/krea2-场景图_2094627383453241346.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_166
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea-2 高真实感与卓越美学文生图_2069683043954151426.json、图片生成/文生图/Krea-2-Turbo 文生图_2071991072359796737.json、图片生成/文生图/Krea2 MJ风格图片生成_2113335543516979201.json、图片生成/文生图/Z-image-turbo文生图_2055253303348482049.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json、图片生成/文生图/Krea2文生图_2095904097835765761.json、图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json、图片生成/文生图/krea2-场景图_2094627383453241346.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -34,27 +34,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `ImpactInt` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ClipLoaderGGUF` —— 1/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
-- `Seed (rgthree)` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `Seed (rgthree)` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `easy stylesSelector` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 720 - 1280 | 4 | 80% |
-| 高度 | 1152 | 720 - 1920 | 4 | 64% |
-| 采样步数 | 8 | 8 - 10 | 4 | 90% |
+| 宽度 | 680 | 512 - 768 | 4 | 85% |
+| 高度 | 1120 | 512 - 1280 | 4 | 69% |
+| 采样步数 | 9 | 8 - 10 | 4 | 89% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 75% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
@@ -62,15 +61,15 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 720 - 1280，4 个样本，取值集中（一致性 80%）
-- 高度 中位数 1152，观测区间 720 - 1920，4 个样本
-- 采样步数 中位数 8，观测区间 8 - 10，4 个样本，取值集中（一致性 90%）
+- 宽度 中位数 680，观测区间 512 - 768，4 个样本，取值集中（一致性 85%）
+- 高度 中位数 1120，观测区间 512 - 1280，4 个样本
+- 采样步数 中位数 9，观测区间 8 - 10，4 个样本，取值集中（一致性 89%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

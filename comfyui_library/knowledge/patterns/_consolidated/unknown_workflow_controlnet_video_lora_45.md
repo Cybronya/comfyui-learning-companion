@@ -3,70 +3,77 @@ name: unknown_workflow_controlnet_video_lora_45
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.413
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, ImageResizeKJv2, Int, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewAny, PreviewImage, SaveAudio, SetNode, Text, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy seed]
+coverage: 0.6165
+common_nodes: [Bjornulf_ShowInt, CLIPVisionLoader, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewImage, Primitive string [Crystools], RHBatchImages:, RHExtractImage, RHUploadZip, RenderNLFPoses, SaveImage, SetNode, SimpleCalculatorKJ, TT_img_enc, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/图片生成口播视频 可参考动作_2027996577247272961.json, 视频生成/图生视频/🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_2005645026296295426.json]
+members: [视频生成/图生视频/批量+Scail+增加晃动lora+跳舞_2011633491498246146.json, 视频生成/图生视频/批量姿势复刻_2027971895844413441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_45
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/图片生成口播视频 可参考动作_2027996577247272961.json、视频生成/图生视频/🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_2005645026296295426.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/批量+Scail+增加晃动lora+跳舞_2011633491498246146.json、视频生成/图生视频/批量姿势复刻_2027971895844413441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
+- `Bjornulf_ShowInt`
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
 - `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+- `NLFPredict`
 - `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewAny`
+- `PoseDetectionVitPoseToDWPose`
 - `PreviewImage`
-- `SaveAudio`
+- `Primitive string [Crystools]`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `RenderNLFPoses`
+- `SaveImage`
 - `SetNode`
-- `Text`
-- `VHS_LoadAudioUpload`
+- `SimpleCalculatorKJ`
+- `TT_img_enc`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAddS2VEmbeds`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy seed`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
+- `DownloadAndLoadNLFModel` —— 1/2 个有
+- `LoadNLFModel` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

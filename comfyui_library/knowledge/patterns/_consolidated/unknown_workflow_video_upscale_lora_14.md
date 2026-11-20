@@ -3,17 +3,17 @@ name: unknown_workflow_video_upscale_lora_14
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80825
-common_nodes: [BasicScheduler, CLIPLoader, CreateVideo, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PreviewAny, SaveVideo, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8135
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImageSizeAndCount, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Yuan_RTXVideoUpscaleH3, easy int]
 problems: []
 missing: []
-members: [数字人/数字人/黑白小方全能导演台_2093002108361601025.json, 视频生成/文生视频/一次60秒！海螺 H3 导演台！ 搅拌手大佬版_2090681519022108674.json, 视频生成/文生视频/海螺 H3！视频生成！ 免费！全能导演台！V2 - SelfLife - 搅拌手大佬版_2101201232391131138.json, 视频生成/文生视频/海螺H3 全能导演台 搅拌手大佬版 可以尝试一次60秒了_2090783538529525761.json]
+members: [视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json, 视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json, 视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json, 视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/黑白小方全能导演台_2093002108361601025.json、视频生成/文生视频/一次60秒！海螺 H3 导演台！ 搅拌手大佬版_2090681519022108674.json、视频生成/文生视频/海螺 H3！视频生成！ 免费！全能导演台！V2 - SelfLife - 搅拌手大佬版_2101201232391131138.json、视频生成/文生视频/海螺H3 全能导演台 搅拌手大佬版 可以尝试一次60秒了_2090783538529525761.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json、视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json、视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json、视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,29 +23,42 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `FastGroupsBypassSwitch`
-- `LoraLoaderBypassModelOnly`
+- `ComfyMathExpression`
+- `GetImageSizeAndCount`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorRefine`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SaveVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `Yuan_RTXVideoUpscaleH3`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSleep` —— 1/4 个有
-- `MiniMaxH3DirectorFaceRefine` —— 1/4 个有
-- `MiniMaxH3DirectorSelfLift` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
+- `MiniMaxH3HybridLoader` —— 2/4 个有
+- `MiniMaxH3ImageToVideo` —— 2/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `ImagePadForOutpaint` —— 1/4 个有
 
 ## 典型参数
 

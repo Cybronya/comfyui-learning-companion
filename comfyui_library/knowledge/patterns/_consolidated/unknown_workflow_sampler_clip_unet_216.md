@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_sampler_clip_unet_216
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.881429
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.861167
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/klein 局部重绘+全节点注释_2061408975094112257.json, 图片生成/图生图/klein溶图打光_2110918582837272578.json, 图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2032735984915320833.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2097884372610404353.json, 图片生成/图生图/材质纹理迁移_最新klein工作流_2099412832235380737.json, 图片生成/文生图/F.2klein9b自动溶图打光一致性_2058899052313530370.json]
+members: [图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json, 图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json, 图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json, 图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json, 图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json, 图片生成/图生图/脸部迁移+换头_2015404568665919489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_216
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/klein 局部重绘+全节点注释_2061408975094112257.json、图片生成/图生图/klein溶图打光_2110918582837272578.json、图片生成/图生图/全屋定制-2-衣柜材质更改-PS_2059839460128411649.json、图片生成/图生图/材质纹理迁移_最新klein工作流_2032735984915320833.json、图片生成/图生图/材质纹理迁移_最新klein工作流_2097884372610404353.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json、图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json、图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json、图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json、图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
@@ -40,21 +42,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `easy positive` —— 5/7 个有
-- `ImageScaleToTotalPixels` —— 3/7 个有
-- `Mask Fill Holes` —— 3/7 个有
-- `MaskPreview` —— 3/7 个有
-- `SetLatentNoiseMask` —— 3/7 个有
-- `Int` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `INPAINT_ExpandMask` —— 1/7 个有
-- `InpaintModelConditioning` —— 1/7 个有
-- `LayerColor: Brightness & Contrast` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `RepeatLatentBatch` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `SeedVR2LoadDiTModel` —— 3/6 个有
+- `SeedVR2LoadVAEModel` —— 3/6 个有
+- `SeedVR2VideoUpscaler` —— 3/6 个有
+- `RH_Translator` —— 2/6 个有
+- `Text` —— 2/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `QwenMultiangleCameraNode` —— 1/6 个有
+- `QwenMultiangleLightningNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,64 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_385
 type: Unknown Workflow
-frequency: 8
+frequency: 6
 level: moderate
-coverage: 0.845875
-common_nodes: [CreateCFGScheduleFloatList, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.74
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json, 视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json, 视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json, 视频生成/图生视频/ai动画_1988552709458542593.json, 视频生成/图生视频/wan2.2 图生视频工作量_1974850739472306178.json, 视频生成/图生视频/wan2.2图生视频加速，kj版_1951106522648653826.json, 视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json, 视频生成/文生视频/(KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950046289267441666.json]
+members: [图片生成/图生图/wan2_3 infinate talk_1958473679946543105.json, 图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json, 图片生成/文生图/wan2_3 infinate talk_1958496258287681537.json, 图片生成/文生图/zpzszr_2080531792297287681.json, 数字人/数字人/InfiniteTalk数字人图生长视频-自动对口型（支持唱歌_说话）_api+(8)_2078178475407659010.json, 数字人/数字人/infinitetalk多段mv生成5段_1995307640144191489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_385
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json、视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json、视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json、视频生成/图生视频/ai动画_1988552709458542593.json、视频生成/图生视频/wan2.2 图生视频工作量_1974850739472306178.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/wan2_3 infinate talk_1958473679946543105.json、图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json、图片生成/文生图/wan2_3 infinate talk_1958496258287681537.json、图片生成/文生图/zpzszr_2080531792297287681.json、数字人/数字人/InfiniteTalk数字人图生长视频-自动对口型（支持唱歌_说话）_api+(8)_2078178475407659010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 7/8 个有
-- `CR Prompt Text` —— 6/8 个有
-- `INTConstant` —— 6/8 个有
-- `JWInteger` —— 5/8 个有
-- `LayerUtility: PurgeVRAM` —— 5/8 个有
-- `ImageFromBatch+` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `CLIPVisionLoader` —— 2/8 个有
-- `GetNode` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `WanVideoClipVisionEncode` —— 2/8 个有
-- `Display Int (rgthree)` —— 1/8 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 1/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `ShowText` —— 1/8 个有
-- `StringReplace` —— 1/8 个有
-- `TrimVideoLatent` —— 1/8 个有
-- `WanVideoContextOptions` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `SimpleMath+` —— 5/6 个有
+- `WanVideoImageToVideoMultiTalk` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `AudioCrop` —— 4/6 个有
+- `AudioSeparation` —— 4/6 个有
+- `GetNode` —— 4/6 个有
+- `LoadWanVideoT5TextEncoder` —— 4/6 个有
+- `RH_GetAudioDuration` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `WanVideoTextEncode` —— 4/6 个有
+- `Float to Int` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `WanVideoTextEncodeCached` —— 2/6 个有
+- `Display Int (rgthree)` —— 1/6 个有
+- `ImageBatchMulti` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `MaskPreview+` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `SaveAudioOpus` —— 1/6 个有
+- `SeparateMasks` —— 1/6 个有
+- `SoundFlow_GetLength` —— 1/6 个有
+- `SoundFlow_TrimAudio` —— 1/6 个有
+- `WanVideoImageToVideoEncode` —— 1/6 个有
+- `easy anythingIndexSwitch` —— 1/6 个有
 
 ## 典型参数
 

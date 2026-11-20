@@ -1,66 +1,52 @@
 ---
 name: unknown_workflow_video_lora_sampler_320
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.878667
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.918375
+common_nodes: [Float, ImpactInt, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, PreviewAudio, RH_Translator, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMaxH3带货视频生成工作流_2112497234167291905.json, 视频生成/图生视频/CGD加电影lora_2104927511938428929.json, 视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json, 视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json, 视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json, 视频生成/图生视频/MINIMAX H3 急速双采 + 无线时长_2099690271108845570.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100409429870075905.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100496703639089154.json, 视频生成/图生视频/Minimax H3 SelfLift 图生视频_2115640648958308353.json]
+members: [视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json, 视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json, 视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2054447841707347969.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2056272340383789058.json, 视频生成/图生视频/解压切水果小说配视频-图生视频+wan2.1+lora_2031988264575438849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_320
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/MiniMaxH3带货视频生成工作流_2112497234167291905.json、视频生成/图生视频/CGD加电影lora_2104927511938428929.json、视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json、视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json、视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json、视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json、视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+全部 8 个 workflow 都包含：
+- `Float`
+- `ImpactInt`
+- `JjkText`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `MMAudioFeatureUtilsLoader`
+- `MMAudioModelLoader`
+- `MMAudioSampler`
+- `PreviewAudio`
+- `RH_Translator`
+- `String`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `CreateVideo` —— 7/9 个有
-- `AudioConcat` —— 4/9 个有
-- `MiniMaxH3MotionContext` —— 3/9 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 3/9 个有
-- `MiniMaxH3MotionContextTrim` —— 3/9 个有
-- `VHS_MergeImages` —— 3/9 个有
-- `LoadAudio` —— 2/9 个有
-- `QwenH3PromptLocal` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `BlockSparseAttention` —— 1/9 个有
-- `ImageBatch` —— 1/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `MiniMaxH3AddGuide` —— 1/9 个有
-- `TrimAudioDuration` —— 1/9 个有
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

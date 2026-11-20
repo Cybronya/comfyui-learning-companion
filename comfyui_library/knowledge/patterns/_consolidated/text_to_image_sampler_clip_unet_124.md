@@ -3,22 +3,22 @@ name: text_to_image_sampler_clip_unet_124
 type: Text To Image
 frequency: 6
 level: moderate
-coverage: 0.869167
+coverage: 0.9665
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json, 图片生成/文生图/Krea2文生图_2095904097835765761.json, 图片生成/文生图/MOSS Image base文生图_2113316857922023426.json, 图片生成/文生图/MOSS Image sft 文生图_2113321575687737346.json, 图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json, 图片生成/文生图/krea2-场景图_2094627383453241346.json]
+members: [图片生成/文生图/Z-image文生图art_2017930293285490690.json, 图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json, 图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json, 图片生成/文生图/Z-image，文生图_1995081308172955649.json, 图片生成/文生图/api-z-image_1995157591246430209.json, 图片生成/文生图/image_Z-16秒_2013832572974927874.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_124
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Krea2-风格扩展_无限创意_2090018651477987330.json、图片生成/文生图/Krea2文生图_2095904097835765761.json、图片生成/文生图/MOSS Image base文生图_2113316857922023426.json、图片生成/文生图/MOSS Image sft 文生图_2113321575687737346.json、图片生成/文生图/Z-Image 反推描述生图_1993864386123071490.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-image文生图art_2017930293285490690.json、图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json、图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json、图片生成/文生图/Z-image，文生图_1995081308172955649.json、图片生成/文生图/api-z-image_1995157591246430209.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
@@ -33,42 +33,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 5/6 个有
-- `ConditioningZeroOut` —— 4/6 个有
-- `Label (rgthree)` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `LoadImage` —— 2/6 个有
-- `Seed (rgthree)` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `RH_Captioner` —— 1/6 个有
-- `easy stylesSelector` —— 1/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `easy promptLine` —— 2/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `LatentFrequencyEnhancer_lrzjason` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `Text _O` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 744 | 512 - 1024 | 6 | 76% |
-| 高度 | 1024 | 512 - 1280 | 6 | 75% |
-| 采样步数 | 10 | 8 - 50 | 6 | 15% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 6 | 43% |
-| 采样算法 | euler | - | 6 | 100% |
+| 采样步数 | 10 | 8 - 14 | 6 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
 | 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1112 | 512 - 2416 | 6 | 50% |
+| 高度 | 1276 | 512 - 1920 | 6 | 65% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 744，观测区间 512 - 1024，6 个样本
-- 高度 中位数 1024，观测区间 512 - 1280，6 个样本
-- 采样步数 中位数 10，观测区间 8 - 50，6 个样本，取值分散，一致性仅 15%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，6 个样本，取值分散，一致性仅 43%
-- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 采样步数 中位数 10，观测区间 8 - 14，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
 - 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1112，观测区间 512 - 2416，6 个样本
+- 高度 中位数 1276，观测区间 512 - 1920，6 个样本

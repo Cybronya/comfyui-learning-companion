@@ -1,99 +1,81 @@
 ---
 name: image_to_image_lora_sampler_clip_141
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.922333
-common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.635
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, GetNode, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/分镜 自动分镜  短剧分镜 漫剧分镜_2095774817839575042.json, 图片生成/图生图/无遮挡电商产品图_2038156576611115010.json, 图片生成/图生图/有遮挡电商产品图_2038159479967059970.json]
+members: [图片生成/图生图/Z-Base，图生图洗图_2068968208014594050.json, 图片生成/图生图/动漫转真人+zimage细节增强+Seed放大_2009102080778182657.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_141
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/分镜 自动分镜  短剧分镜 漫剧分镜_2095774817839575042.json、图片生成/图生图/无遮挡电商产品图_2038156576611115010.json、图片生成/图生图/有遮挡电商产品图_2038159479967059970.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z-Base，图生图洗图_2068968208014594050.json、图片生成/图生图/动漫转真人+zimage细节增强+Seed放大_2009102080778182657.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CFGNorm`
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Text`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `GetNode`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorPickerMW` —— 2/3 个有
-- `DF_Get_image_size` —— 2/3 个有
-- `FillMaskWithColor` —— 2/3 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `InvertMask` —— 2/3 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 2/3 个有
-- `LayerUtility: CropByMask V3` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `LayerUtility: RestoreCropBox` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `BiRefNetRMBG` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `JDCN_StringToList` —— 1/3 个有
-- `LayerUtility: ImageBlendAdvance V3` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `ProcessString` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `RMBG` —— 1/3 个有
-- `Switch` —— 1/3 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/3 个有
+- `CheckpointLoaderSimple` —— 1/2 个有
+- `Display Any (rgthree)` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Joy_caption_two_advanced` —— 1/2 个有
+- `Joy_caption_two_load` —— 1/2 个有
+- `Joy_extra_options` —— 1/2 个有
+- `SeedVR2` —— 1/2 个有
+- `TextEncodeQwenImageEditPlus` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 3 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | beta57 | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 9 | - | 2 | 89% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | res_2s | - | 2 | 50% |
+| 调度器 | linear_quadratic | - | 2 | 50% |
+| 重绘幅度 | 0.65 | - | 2 | 46% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 beta57，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，2 个样本，一致性 50%
+- 调度器 最常用 linear_quadratic，2 个样本，一致性 50%
+- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,74 +1,81 @@
 ---
 name: image_to_image_sampler_clip_unet_188
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.889333
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, InvertMask, KSampler, LayerUtility: ImageRemoveAlpha, LoadImage, MagCache, Mask Fill Holes, PreviewImage, ReferenceLatent, SaveImage, Seed, TeaCache, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.605
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Get resolution [Crystools], KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/移除重绘 手绘蒙版指哪打哪 Flux kontext_1938781745640562690.json, 平台全量/Kontext模型 手绘蒙版 精准删除 指哪打哪_1964902341944201218.json, 平台全量/终极万能精准删除 手绘蒙版指哪打哪 kontext remove_1938614208604856321.json]
+members: [图片生成/文生图/YJ-APP-flux-kelin_自动扩图流_2033829607656398849.json, 数字人/数字人/YJ-APP-flux2-klein-BFS-双图换脸_2031282446473371649.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_188
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/移除重绘 手绘蒙版指哪打哪 Flux kontext_1938781745640562690.json、平台全量/Kontext模型 手绘蒙版 精准删除 指哪打哪_1964902341944201218.json、平台全量/终极万能精准删除 手绘蒙版指哪打哪 kontext remove_1938614208604856321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/YJ-APP-flux-kelin_自动扩图流_2033829607656398849.json、数字人/数字人/YJ-APP-flux2-klein-BFS-双图换脸_2031282446473371649.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `InvertMask`
+- `EmptyFlux2LatentImage`
+- `Get resolution [Crystools]`
 - `KSampler`
-- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MagCache`
-- `Mask Fill Holes`
-- `PreviewImage`
+- `PrimitiveInt`
 - `ReferenceLatent`
 - `SaveImage`
-- `Seed`
-- `TeaCache`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy compare`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImageStitch` —— 1/3 个有
-- `LayerUtility: ColorPicker` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
+- `CR Text` —— 1/2 个有
+- `ColorMatchV2` —— 1/2 个有
+- `FillMaskWithColor` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImagePadForOutpaint` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `NumberRound` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 7 | - | 2 | 86% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

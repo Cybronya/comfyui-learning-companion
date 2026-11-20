@@ -1,58 +1,75 @@
 ---
 name: unknown_workflow_video_sampler_vae_164
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.82125
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.582667
+common_nodes: [EmptyImage, GetImageSizeAndCount, GetNode, ImageConcanate, ImageConcatMulti, JoinStrings, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy positive]
 problems: []
 missing: []
-members: [视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，不带加速_2061018684998635522.json, 视频生成/图生视频/万象ATI视频轨迹控制_1931322403022897154.json, 视频生成/图生视频/新版ATI轨迹指引图生视频超级加速版V1_1941169318455570433.json, 视频生成/文生视频/ComfyUI Wan 2.1 可实现任意轨迹指令运动控制 AI 视频生成工作流_1928353858429566977.json]
+members: [视频生成/图生视频/Wan2.1 VACE 双图参考_1948576222688227330.json, 视频生成/图生视频/vace 视频双图参考 卖货必备_1911155835706273794.json, 视频生成/图生视频/多图参考生视频_1933060763407843330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_164
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，不带加速_2061018684998635522.json、视频生成/图生视频/万象ATI视频轨迹控制_1931322403022897154.json、视频生成/图生视频/新版ATI轨迹指引图生视频超级加速版V1_1941169318455570433.json、视频生成/文生视频/ComfyUI Wan 2.1 可实现任意轨迹指令运动控制 AI 视频生成工作流_1928353858429566977.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 VACE 双图参考_1948576222688227330.json、视频生成/图生视频/vace 视频双图参考 卖货必备_1911155835706273794.json、视频生成/图生视频/多图参考生视频_1933060763407843330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `JoinStrings`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SetNode`
+- `String Literal`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `SplineEditor` —— 3/4 个有
-- `WanVideoATITracks` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `AppendStringsToList` —— 2/4 个有
-- `WanVideoATITracksVisualize` —— 2/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `CLIPTextEncode` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `StringConstantMultiline` —— 1/4 个有
-- `WanVideoTextEmbedBridge` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
+- `AddLabel` —— 2/3 个有
+- `Bookmark (rgthree)` —— 2/3 个有
+- `ImageCompositeMasked` —— 2/3 个有
+- `ImageRemoveBackground+` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `TransparentBGSession+` —— 2/3 个有
+- `WanVideoTeaCache` —— 2/3 个有
+- `easy imageScaleDownToSize` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `ColorMatch` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LoadImageFromUrl` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `WanVideoEnhanceAVideo` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
+- `WanVideoVRAMManagement` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_generic_107
 type: Unknown Workflow
-frequency: 16
+frequency: 15
 level: moderate
-coverage: 0.913
-common_nodes: [SaveImage]
+coverage: 0.6958
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json, comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json, 图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json, 图片生成/图生图/plus-template_2090730241135304705.json, 图片生成/图生图/ultra-template_2090730690630471681.json, 图片生成/文生图/Test-不要运行_1967141889277353985.json, 图片生成/文生图/听雪楼占位工作流_2102078588089622529.json, 平台全量/api-call_2058108480875220994.json, 平台全量/图片涂抹获取遮罩工作流_1917501214781804546.json, 数字人/数字人/复现问题工作流_2089642846738538497.json, 数字人/数字人/空白工作流_2054899208875978754.json, 视频生成/图生视频/人物替换视频换装娱乐版180帧 动作迁移图生视频换装方案_2091174606882304001.json, 视频生成/文生视频/Anima-2.9B｜三阶高质量渲染_2089668746540572673.json, 视频生成/文生视频/Anima-2.9B｜文生图+修脸+修手_2089672439675580417.json, 视频生成/文生视频/Qwen 2.0测试效果及提示词_2021915762851586049.json, 视频生成/文生视频/全能参考生视频｜海螺H3极速6分钟10秒标准模式_2092159573208682498.json]
+members: [数字人/数字人/全能视频X V1.5图生视频新版自用2_2082857820239781890.json, 数字人/数字人/全能视频X V1.5图生视频新版自用_2075510949661995009.json, 视频生成/图生视频/RH 全能视频X-图生视频-低价渠道版-v1.5_2069682233727864833.json, 视频生成/图生视频/三笔成书——全能视频S参考图生视频_2002997457627824129.json, 视频生成/图生视频/三笔成书——全能视频S图生视频_1999425022747869185.json, 视频生成/图生视频/全能视频G 1.5图生视频_2075512794958622721.json, 视频生成/图生视频/全能视频S 图生视频 绕过快捷创作Plus排队_1998291468160786434.json, 视频生成/图生视频/全能视频S 图生视频工作流_1997937476507435010.json, 视频生成/图生视频/全能视频Spro_2028862368343658498.json, 视频生成/图生视频/全能视频S图生视频 每日5次免费_2073213892439928834.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2061309598879019009.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json, 视频生成/图生视频/梭罗2图生视频稳定版全能视频S图生视频最新模型0.08元_次（支持横版竖版1080p）支持15s_1973461590655766530.json, 视频生成/图生视频/海烟五分钱全能视频S_1981327937985216514.json, 视频生成/文生视频/全能视频S图生视频openai最新模型0.5元_次（国庆前5次免费）_1973570458102665218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_107
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json、comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json、图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json、图片生成/图生图/plus-template_2090730241135304705.json、图片生成/图生图/ultra-template_2090730690630471681.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/全能视频X V1.5图生视频新版自用2_2082857820239781890.json、数字人/数字人/全能视频X V1.5图生视频新版自用_2075510949661995009.json、视频生成/图生视频/RH 全能视频X-图生视频-低价渠道版-v1.5_2069682233727864833.json、视频生成/图生视频/三笔成书——全能视频S参考图生视频_2002997457627824129.json、视频生成/图生视频/三笔成书——全能视频S图生视频_1999425022747869185.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `SaveImage`
+全部 15 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 15/16 个有
-- `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` —— 2/16 个有
+- `CR Prompt Text` —— 13/15 个有
+- `easy showAnything` —— 13/15 个有
+- `RH_Sora2_I2V` —— 9/15 个有
+- `RH_RhartVideoGImageToVideo` —— 6/15 个有
+- `ShowText` —— 1/15 个有
+- `Text Concatenate` —— 1/15 个有
 
 ## 典型参数
 

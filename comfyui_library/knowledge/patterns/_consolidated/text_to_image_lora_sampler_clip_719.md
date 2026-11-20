@@ -3,50 +3,49 @@ name: text_to_image_lora_sampler_clip_719
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.882
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, EnhancedLoadDiffusionModel, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, JjkText, KSampler, KSamplerCacheable, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, QwenPERewriteT8, ResolutionSelector, SaveImage, ShowAnything|Mie, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VAELoader_Any, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8945
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/千问2.1图片编辑图生图工作流，文生图图生图双核引擎创作方案_2106474151585337346.json, 图片生成/文生图/千问Qwen2.1图片编辑神器｜文生图图生图双模式v260927新版本_2106191621074276353.json]
+members: [音频生成/音频生成/IndexTTS情绪控制语音克隆｜音频生成情绪拿捏_2114053267243233281.json, 音频生成/音频生成/多人音色克隆情绪TTS｜VOXCPM2.0音频自动生成_2092613191384780802.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_719
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/千问2.1图片编辑图生图工作流，文生图图生图双核引擎创作方案_2106474151585337346.json、图片生成/文生图/千问Qwen2.1图片编辑神器｜文生图图生图双模式v260927新版本_2106191621074276353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS情绪控制语音克隆｜音频生成情绪拿捏_2114053267243233281.json、音频生成/音频生成/多人音色克隆情绪TTS｜VOXCPM2.0音频自动生成_2092613191384780802.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `EmptyLatentImage`
-- `EnhancedLoadDiffusionModel`
-- `Fast Groups Bypasser (rgthree)`
-- `FastGroupsBypassSwitch`
 - `JjkText`
 - `KSampler`
-- `KSamplerCacheable`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `QwenPERewriteT8`
-- `ResolutionSelector`
-- `SaveImage`
-- `ShowAnything|Mie`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoader_Any`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudioUI` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `SaveAudioMP3` —— 1/2 个有
+- `WujiVoiceActorVoxCPM` —— 1/2 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/2 个有
+- `easy indexTTSEmotionVector` —— 1/2 个有
+- `easy indexTTSGenerate` —— 1/2 个有
 
 ## 典型参数
 

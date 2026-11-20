@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_233
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: weak
-coverage: 0.916
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.569167
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, KSampler, ModelSamplingAuraFlow, PrimitiveBoolean, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json, 图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json, 图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json, 图片生成/文生图/Z-Image-Turbo-文生图_2013422713167155201.json, 图片生成/文生图/Zimage文生图基础_2044005460373676034.json, 图片生成/文生图/Zimage文生图基础_2060261069804892162.json, 图片生成/文生图/z-image-有无负面提示词对比_2016338426164944897.json]
+members: [图片生成/文生图/MOSS单采_双采合集工作流_2112898314982215681.json, 图片生成/文生图/Qwen Image 2512文生图_2053316351783124994.json, 图片生成/文生图/Qwen Image 港风霓虹街景_2058558846393741314.json, 图片生成/文生图/Qwen2512测试工作流_2041793002967928833.json, 图片生成/文生图/image_qwen_image_2099207941726498817.json, 图片生成/文生图/image_z_image_2099207955014053890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_233
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json、图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json、图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json、图片生成/文生图/Z-Image-Turbo-文生图_2013422713167155201.json、图片生成/文生图/Zimage文生图基础_2044005460373676034.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/MOSS单采_双采合集工作流_2112898314982215681.json、图片生成/文生图/Qwen Image 2512文生图_2053316351783124994.json、图片生成/文生图/Qwen Image 港风霓虹街景_2058558846393741314.json、图片生成/文生图/Qwen2512测试工作流_2041793002967928833.json、图片生成/文生图/image_qwen_image_2099207941726498817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
+- `ComfySwitchNode`
 - `KSampler`
+- `ModelSamplingAuraFlow`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `LoadImage` —— 2/7 个有
-- `LayerMask: BiRefNetUltra` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `VAEDecodeTiled` —— 1/7 个有
+- `EmptySD3LatentImage` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `ResolutionSelector` —— 3/6 个有
+- `SetNode` —— 2/6 个有
+- `EmptyFlux2LatentImage` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `KSamplerAdvanced` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 30 | 7 | 21% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 7 | 57% |
-| 采样算法 | res_multistep | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 50 | 20 - 50 | 5 | 65% |
+| Prompt 约束强度(CFG) | 4 | 4 - 50 | 6 | 0% |
+| 采样算法 | euler | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 30，7 个样本，取值分散，一致性仅 21%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，7 个样本
-- 采样算法 最常用 res_multistep，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（5/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 50，观测区间 20 - 50，5 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 50，6 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

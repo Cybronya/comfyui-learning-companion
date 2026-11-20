@@ -3,78 +3,73 @@ name: unknown_workflow_controlnet_sampler_clip_15
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.885
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, Canny, ConditioningZeroOut, DepthAnythingV2Preprocessor, EmptySD3LatentImage, FloatConstant, GetImageSize, HEDPreprocessor, ImageScaleToMaxDimension, KSampler, LayerUtility: PurgeVRAM, ModelPatchLoader, ModelSamplingAuraFlow, OpenposePreprocessor, PreviewImage, Qwen3_VQA, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.94225
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, ImageScaleDownToSize, ImageStitch, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image-Turbo  双图编辑 身材优化  图生图 cn姿态控制 动作风格参考迁移_2028700458553970689.json, 图片生成/图生图/Zimage-图生图-4种方式-人物写真_2000832433547247618.json, 图片生成/图生图/zimage-双图编辑模式-图生图_2001583305646567426.json, 平台全量/姿势控制Z-image-Turbo 双图编辑 身材优化 图生图 cn深度姿态控制 动作风格参考迁移_2029458304421859330.json]
+members: [图片生成/图生图/千问文字渲染_QWen-Image线稿Canny控制ComfyUI官方_1958771497777197058.json, 图片生成/图生图/千问深度Depth和canny控制_QWen-Image_1959234107358261249.json, 图片生成/图生图/千问深度Depth控制_QWen-Image-ComfyUI官方_1958744331945402370.json, 图片生成/图生图/千问线稿Canny控制-QWen-Image-ComfyUI官方_1958717419227344898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_15
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z-image-Turbo  双图编辑 身材优化  图生图 cn姿态控制 动作风格参考迁移_2028700458553970689.json、图片生成/图生图/Zimage-图生图-4种方式-人物写真_2000832433547247618.json、图片生成/图生图/zimage-双图编辑模式-图生图_2001583305646567426.json、平台全量/姿势控制Z-image-Turbo 双图编辑 身材优化 图生图 cn深度姿态控制 动作风格参考迁移_2029458304421859330.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千问文字渲染_QWen-Image线稿Canny控制ComfyUI官方_1958771497777197058.json、图片生成/图生图/千问深度Depth和canny控制_QWen-Image_1959234107358261249.json、图片生成/图生图/千问深度Depth控制_QWen-Image-ComfyUI官方_1958744331945402370.json、图片生成/图生图/千问线稿Canny控制-QWen-Image-ComfyUI官方_1958717419227344898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `Canny`
-- `ConditioningZeroOut`
-- `DepthAnythingV2Preprocessor`
 - `EmptySD3LatentImage`
-- `FloatConstant`
 - `GetImageSize`
-- `HEDPreprocessor`
-- `ImageScaleToMaxDimension`
+- `ImageScaleDownToSize`
+- `ImageStitch`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `ModelPatchLoader`
 - `ModelSamplingAuraFlow`
-- `OpenposePreprocessor`
 - `PreviewImage`
-- `Qwen3_VQA`
 - `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 3/4 个有
-- `TextConcatenate` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `LayerUtility: TextJoin` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `RunningHub QwenImage Canny Pipeline` —— 1/4 个有
+- `RunningHub QwenImage Canny Sampler` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 9 - 9 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_multistep | - | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
 | 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 16/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 9 - 9，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，4 个样本，一致性 100%
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
 - 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（16/4 个样本）：Steps较低可能导致细节不足

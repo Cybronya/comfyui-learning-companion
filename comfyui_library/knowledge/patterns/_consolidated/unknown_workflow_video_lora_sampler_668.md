@@ -1,75 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_668
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.902
-common_nodes: [BasicScheduler, CLIPTextEncode, CM_IntToFloat, ConditioningZeroOut, DF_Int_to_Float, DualCLIPLoader, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAEEncodeTiled, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VRAMReserver, VisualizeSigmasKJ, easy getNode, easy setNode, easy showAnything]
+coverage: 0.810667
+common_nodes: [CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/LTX2.3视频扩展（视频续写二创）_2058774707096346626.json, 平台全量/LTX2.3视频续写_视频扩展_视频延长_2071750695442796546.json, 数字人/数字人/LTX2.3视频扩展_2051830363772731393.json, 视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json]
+members: [数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json, 视频生成/图生视频/InfiniteTalk高动态_1985744717117890562.json, 音频生成/音频生成/(歌曲数字人)全流程精准口型高强动作V4_1989287142675369986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_668
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/LTX2.3视频扩展（视频续写二创）_2058774707096346626.json、平台全量/LTX2.3视频续写_视频扩展_视频延长_2071750695442796546.json、数字人/数字人/LTX2.3视频扩展_2051830363772731393.json、视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json、视频生成/图生视频/InfiniteTalk高动态_1985744717117890562.json、音频生成/音频生成/(歌曲数字人)全流程精准口型高强动作V4_1989287142675369986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `ConditioningZeroOut`
-- `DF_Int_to_Float`
-- `DualCLIPLoader`
-- `Int`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVideoMask`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SamplerCustom`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `ToInt`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `VRAMReserver`
-- `VisualizeSigmasKJ`
-- `easy getNode`
-- `easy setNode`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageBatch` —— 2/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `RepeatImageBatch` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `easy compare` —— 2/4 个有
-- `easy ifElse` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `JWFloat` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `RH_GetAudioDuration` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `Bjornulf_ShowFloat` —— 1/3 个有
+- `Bjornulf_ShowInt` —— 1/3 个有
+- `Comfly_api_set` —— 1/3 个有
+- `Comfly_suno_custom` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `IndexTTS2Run` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `PrimitiveString` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `SoundFlow_GetLength` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

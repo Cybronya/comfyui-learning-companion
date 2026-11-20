@@ -1,28 +1,28 @@
 ---
 name: image_to_image_sampler_clip_unet_20
 type: Image To Image
-frequency: 14
+frequency: 12
 level: strong
-coverage: 0.896357
+coverage: 0.993583
 common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.1图生图工作流_2088546573432217602.json, 图片生成/图生图/Flex.2-preview-图生图_1917082177446809601.json, 图片生成/图生图/Flux.1基础图生图工作流_2100839312702132226.json, 图片生成/图生图/flux_kontext_example-官方工作流_1938480873924943873.json, 图片生成/图生图/flux_kontext_照片转换素描_1948621429297283073.json, 图片生成/图生图/flux_kontext_综合-场景集合 (1)_1982460983069286402.json, 图片生成/图生图/产品精修-金属类_1951522356852371458.json, 图片生成/图生图/手办模型_1961814911435345921.json, 图片生成/图生图/手办模型盲盒_2047665313591857154.json, 图片生成/图生图/手办模型盲盒_2063493693570633730.json, 平台全量/Kontext 线稿花卉上色_1983141958333952001.json, 平台全量/Kontext 老照片修复_1941703248103501825.json, 平台全量/Kontext 黑白上色_1957663795831304193.json, 平台全量/Kontext_3D人物转绘_1941699476425961474.json]
+members: [图片生成/图生图/FLUX图生图工作流_2075049931479543809.json, 图片生成/图生图/Flux Krea图生图_1951057726677917698.json, 图片生成/图生图/Flux-dev-fp8-图生图_2064238323991932929.json, 图片生成/图生图/Flux图生图工作流_1912803304072540161.json, 图片生成/图生图/Flux图生图工作流_1980482281401925633.json, 图片生成/图生图/Flux图生图工作流_1985262437538668545.json, 图片生成/图生图/Flux图生图工作流_1992168901211648002.json, 图片生成/图生图/Flux图生图工作流_2007730863437516801.json, 图片生成/图生图/Flux图生图工作流_2008831243256864770.json, 图片生成/图生图/Flux图生图工作流产品设计_1918558384063451138.json, 图片生成/图生图/Flux图生图工作流（RunningHub拖入一键运行)_2090772341793054722.json, 图片生成/图生图/图生图工作流_2106376021615403010.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_20
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/FLUX.1图生图工作流_2088546573432217602.json、图片生成/图生图/Flex.2-preview-图生图_1917082177446809601.json、图片生成/图生图/Flux.1基础图生图工作流_2100839312702132226.json、图片生成/图生图/flux_kontext_example-官方工作流_1938480873924943873.json、图片生成/图生图/flux_kontext_照片转换素描_1948621429297283073.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX图生图工作流_2075049931479543809.json、图片生成/图生图/Flux Krea图生图_1951057726677917698.json、图片生成/图生图/Flux-dev-fp8-图生图_2064238323991932929.json、图片生成/图生图/Flux图生图工作流_1912803304072540161.json、图片生成/图生图/Flux图生图工作流_1980482281401925633.json…）
 
 - **类型**：Image To Image
-- **样本数**：14
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
 - `DualCLIPLoader`
 - `KSampler`
@@ -34,31 +34,24 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 13/14 个有
-- `LoraLoaderModelOnly` —— 12/14 个有
-- `ReferenceLatent` —— 11/14 个有
-- `FluxKontextImageScale` —— 9/14 个有
-- `Image Comparer (rgthree)` —— 7/14 个有
-- `CR Text` —— 6/14 个有
-- `ConstrainImage|pysssss` —— 6/14 个有
-- `EmptySD3LatentImage` —— 6/14 个有
-- `ConditioningZeroOut` —— 4/14 个有
-- `ImageScaleBy` —— 3/14 个有
-- `ImageScale` —— 2/14 个有
-- `Anything Everywhere3` —— 1/14 个有
-- `Flex2Conditioner` —— 1/14 个有
-- `ImageResizeKJ` —— 1/14 个有
-- `RHHiddenNodes` —— 1/14 个有
+- `CLIPTextEncodeFlux` —— 11/12 个有
+- `JWImageResizeByLongerSide` —— 11/12 个有
+- `DF_Text_Box` —— 10/12 个有
+- `ConditioningZeroOut` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 1/12 个有
+- `ImageScaleDownToSize` —— 1/12 个有
+- `easy imageConcat` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 14 | 84% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 93% |
-| 调度器 | simple | - | 14 | 93% |
-| 重绘幅度 | 1 | 0.5 - 1 | 14 | 80% |
+| 采样步数 | 25 | 20 - 30 | 12 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | dpmpp_2m | - | 12 | 92% |
+| 调度器 | sgm_uniform | - | 12 | 92% |
+| 重绘幅度 | 0.7 | 0.6 - 0.7 | 12 | 96% |
 
 ## 常见问题
 
@@ -66,8 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，14 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 93%
-- 调度器 最常用 simple，14 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，14 个样本，取值集中（一致性 80%）
+- 采样步数 中位数 25，观测区间 20 - 30，12 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m，12 个样本，一致性 92%
+- 调度器 最常用 sgm_uniform，12 个样本，一致性 92%
+- 重绘幅度 中位数 0.7，观测区间 0.6 - 0.7，12 个样本，取值集中（一致性 96%）

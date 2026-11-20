@@ -3,70 +3,75 @@ name: unknown_workflow_controlnet_upscale_lora_9
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.394
-common_nodes: [AIO_Preprocessor, Any Switch (rgthree), CLIPLoaderGGUF, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, INTConstant, Image Comparer (rgthree), ImageScaleToTotalPixels, Int, JjkText, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, RH_LLMAPI_Pro_Node, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, ShowText|pysssss, Switch image [Crystools], UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8365
+common_nodes: [AIO_Preprocessor, ApplyFBCacheOnModel, BasicGuider, BasicScheduler, CLIPTextEncode, CR Text, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EG_FX_BDAPI, EmptyLatentImage, FL_SDUltimate_Slices, FluxGuidance, ImpactInt, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingFlux, PreviewImage, PrimitiveFloat, RHLoraLoader, RH_LLMAPI_NODE, RandomNoise, SDXLEmptyLatentSizePicker+, SamplerCustomAdvanced, SaveImage, SetUnionControlNetType, ShowText|pysssss, Text Concatenate, TextInputBasic, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/ZTurbo采样洗图工作流_2061747459356979202.json, 平台全量/ZTurbo采样洗图工作流_2058389704193691649.json]
+members: [图片生成/文生图/王奶奶_2019943219475255298.json, 图片生成/文生图/王奶奶模板_2027328590890672129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ZTurbo采样洗图工作流_2061747459356979202.json、平台全量/ZTurbo采样洗图工作流_2058389704193691649.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/王奶奶_2019943219475255298.json、图片生成/文生图/王奶奶模板_2027328590890672129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `AIO_Preprocessor`
-- `Any Switch (rgthree)`
-- `CLIPLoaderGGUF`
+- `ApplyFBCacheOnModel`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `CR Text`
+- `ConditioningZeroOut`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
+- `DualCLIPLoader`
+- `EG_FX_BDAPI`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `JjkText`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `FL_SDUltimate_Slices`
+- `FluxGuidance`
+- `ImpactInt`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelSamplingAuraFlow`
+- `ModelSamplingFlux`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
-- `RH_LLMAPI_Pro_Node`
+- `PrimitiveFloat`
+- `RHLoraLoader`
+- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `SDXLEmptyLatentSizePicker+`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
+- `SetUnionControlNetType`
 - `ShowText|pysssss`
-- `Switch image [Crystools]`
+- `Text Concatenate`
+- `TextInputBasic`
 - `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Lora Loader Stack (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 13 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | sgm_uniform | - | 2 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| ControlNet 权重 | 0.6 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -74,12 +79,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 13，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 13，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

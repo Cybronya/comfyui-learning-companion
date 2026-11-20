@@ -1,66 +1,75 @@
 ---
 name: unknown_workflow_sampler_unet_vae_295
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.8305
-common_nodes: [CLIPLoader, CR Text, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 3
+level: moderate
+coverage: 0.916667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainManifestLoad, MiniMaxH3ChainPlan, MiniMaxH3ChainReview, MiniMaxH3ChainScenePromptEditor, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【API】Qwen-Image2.1角色四视图_2111987076626468865.json, 图片生成/文生图/Qwen2.1摆拍美学文生图极致_2111870447930400769.json, 图片生成/文生图/摆拍美学文生图V1.1_2108522154689122305.json, 图片生成/文生图/摆拍美学文生图_2108391724740595714.json]
+members: [视频生成/图生视频/MiniMax H3-多参W版长视频-V2.0_2111463571648499714.json, 视频生成/图生视频/MiniMax-H3-无限时长分镜版_2105836805424762881.json, 视频生成/图生视频/MiniMax-H3-无限时长分镜版_2110656252312383490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_295
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【API】Qwen-Image2.1角色四视图_2111987076626468865.json、图片生成/文生图/Qwen2.1摆拍美学文生图极致_2111870447930400769.json、图片生成/文生图/摆拍美学文生图V1.1_2108522154689122305.json、图片生成/文生图/摆拍美学文生图_2108391724740595714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-多参W版长视频-V2.0_2111463571648499714.json、视频生成/图生视频/MiniMax-H3-无限时长分镜版_2105836805424762881.json、视频生成/图生视频/MiniMax-H3-无限时长分镜版_2110656252312383490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
-- `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
+- `MiniMaxH3ChainAssemble`
+- `MiniMaxH3ChainContext`
+- `MiniMaxH3ChainCurrent`
+- `MiniMaxH3ChainLoopEnd`
+- `MiniMaxH3ChainLoopStart`
+- `MiniMaxH3ChainManifestLoad`
+- `MiniMaxH3ChainPlan`
+- `MiniMaxH3ChainReview`
+- `MiniMaxH3ChainScenePromptEditor`
+- `MiniMaxH3ChainSegmentSave`
+- `MiniMaxH3LoopTrim`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 3/4 个有
-- `JDCN_StringToList` —— 3/4 个有
-- `PrimitiveInt` —— 3/4 个有
-- `ProcessString` —— 3/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
-- `llama_cpp_clean_states` —— 1/4 个有
-- `llama_cpp_unload_model` —— 1/4 个有
+- `Float` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `JoinStringMulti` —— 2/3 个有
+- `ModelAttentionBackend` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `SomethingToString` —— 2/3 个有
+- `StringFunction|pysssss` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `MiniMaxH3ChainPlanModern` —— 1/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `easy saveText` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 40 | 40 - 40 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,10 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 40 - 40，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

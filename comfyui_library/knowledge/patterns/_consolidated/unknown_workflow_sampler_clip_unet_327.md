@@ -3,68 +3,56 @@ name: unknown_workflow_sampler_clip_unet_327
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9185
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.89075
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein Euler_2034106354624897025.json, 图片生成/图生图/Flux2_Klein-PS扩图_无需参数白色填充_2087356447444258818.json, 图片生成/图生图/PS扩图 无需参数（个人原创）_2039171118006804482.json, 图片生成/图生图/设计工作流——鸟瞰设计_2018294277486419969.json]
+members: [图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json, 图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json, 图片生成/文生图/z_image二采_2093223736949432322.json, 图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_327
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein Euler_2034106354624897025.json、图片生成/图生图/Flux2_Klein-PS扩图_无需参数白色填充_2087356447444258818.json、图片生成/图生图/PS扩图 无需参数（个人原创）_2039171118006804482.json、图片生成/图生图/设计工作流——鸟瞰设计_2018294277486419969.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json、图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json、图片生成/文生图/z_image二采_2093223736949432322.json、图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL_Advanced` —— 2/4 个有
-- `ConstrainImage|pysssss` —— 2/4 个有
-- `ImageResize+` —— 2/4 个有
-- `ImageUpscaleWithModel` —— 2/4 个有
-- `InspyrenetRembg` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `UpscaleModelLoader` —— 2/4 个有
-- `CR Simple Text Watermark` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_RhartImageG2ImageToImage` —— 1/4 个有
-- `Text Concatenate` —— 1/4 个有
-- `scale` —— 1/4 个有
-- `text_mul_Join` —— 1/4 个有
-- `text_mul_remove` —— 1/4 个有
-- `text_mul_replace` —— 1/4 个有
+- `LatentColorMatch` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `easy promptList` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 10 | 3 - 20 | 4 | 44% |
+| 采样算法 | 1 | 1 - 3 | 4 | 42% |
+| 调度器 | gradient_estimation | - | 4 | 25% |
+| 重绘幅度 | sgm_uniform | - | 4 | 75% |
+| 宽度 | 960 | 720 - 1080 | 4 | 85% |
+| 高度 | 1216 | 1024 - 1920 | 4 | 74% |
 
 ## 常见问题
 
@@ -72,4 +60,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 3 - 20，4 个样本，取值分散，一致性仅 44%
+- 采样算法 中位数 1，观测区间 1 - 3，4 个样本，取值分散，一致性仅 42%
+- 调度器 最常用 gradient_estimation，4 个样本，一致性 25%
+- 重绘幅度 最常用 sgm_uniform，4 个样本，一致性 75%
+- 宽度 中位数 960，观测区间 720 - 1080，4 个样本，取值集中（一致性 85%）
+- 高度 中位数 1216，观测区间 1024 - 1920，4 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

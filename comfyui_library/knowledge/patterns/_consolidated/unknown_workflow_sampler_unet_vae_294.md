@@ -1,72 +1,81 @@
 ---
 name: unknown_workflow_sampler_unet_vae_294
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.80975
-common_nodes: [Image Comparer (rgthree), JoinImageWithAlpha, KSampler, LoadImage, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 3
+level: moderate
+coverage: 0.887
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json, 平台全量/SeedVR2图片放大_2098983632491864065.json]
+members: [视频生成/图生视频/MiniMax H3 合集 多参视频加速版本  文生视频  首位帧视频_2085757259535175682.json, 视频生成/图生视频/MiniMax H3 图生视频_2084120970457079810.json, 视频生成/图生视频/MiniMax H3开源版  多参 图生视频  文生视频 首尾帧 视频合集_2084290396510838785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_294
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json、平台全量/SeedVR2图片放大_2098983632491864065.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 合集 多参视频加速版本  文生视频  首位帧视频_2085757259535175682.json、视频生成/图生视频/MiniMax H3 图生视频_2084120970457079810.json、视频生成/图生视频/MiniMax H3开源版  多参 图生视频  文生视频 首尾帧 视频合集_2084290396510838785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `JoinImageWithAlpha`
-- `KSampler`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `ResizeImageMaskNode`
-- `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `ImageSmartSharpen+` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SplitImageWithAlpha` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `RHMiniMaxH3FL2VAEncode` —— 2/3 个有
+- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 2/3 个有
+- `RHMiniMaxH3FL2VAModelLoader` —— 2/3 个有
+- `RHMiniMaxH3FL2VATarget` —— 2/3 个有
+- `RHMiniMaxH3FL2VATextEncoderLoader` —— 2/3 个有
+- `RHMiniMaxH3FL2VAVAELoader` —— 2/3 个有
+- `JjkText` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `MiniMaxH3BlockCacheT8` —— 1/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1 | 1 - 1 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
-- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

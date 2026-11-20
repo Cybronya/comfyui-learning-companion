@@ -1,67 +1,58 @@
 ---
 name: unknown_workflow_sampler_unet_vae_95
 type: Unknown Workflow
-frequency: 12
+frequency: 10
 level: moderate
-coverage: 0.850917
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.9593
+common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3工作流_2088343591486840833.json, 视频生成/图生视频/MINIMAX-H3-图生视频_2084159275156467714.json, 视频生成/图生视频/MINIMAX-H3-图生视频_2084308814681169921.json, 视频生成/图生视频/MINIMAX-H3首尾帧视频_2085192239885668354.json, 视频生成/图生视频/Mini max  H3开源啦(加速版）_2085639639234338818.json, 视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084172305701367810.json, 视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084193937832632322.json, 视频生成/图生视频/MiniMax H3 4步 首尾帧图生视频_2090639499977117697.json, 视频生成/图生视频/MiniMax H3 4步 首帧图生视频_2090629891019599874.json, 视频生成/图生视频/Minimax H3 多参 Lightx2v 加速_2087571144038764548.json, 视频生成/图生视频/MinimaxH3多参_2085409741941067777.json, 视频生成/图生视频/海螺H3-全自动图生视频-自动撰写提示词_2086431051328614402.json]
+members: [图片生成/图生图/boogu_edit_图片编辑_2068898671525195778.json, 图片生成/图生图/boogu_edit图像编辑_2068963144776638466.json, 图片生成/图生图/boogu_image_edit 图生图_2074490249920729090.json, 图片生成/图生图/image_boogu_edit图片编辑工作流_2082720783633305601.json, 图片生成/图生图/【遇见AI】boogu image edit 基础工作流_2067908267849900034.json, 图片生成/图生图/布谷boogu_image图像编辑单图编辑_2074485181544751106.json, 图片生成/图生图/高清洗图（增强控制细节）_2099854123326857217.json, 图片生成/文生图/Boogu Image 0.1 Single-Image Edit_2072998833342423040.json, 图片生成/文生图/Boogu-Image 0.1 单图编辑_2067856537388933122.json, 图片生成/文生图/image_boogu_edit图片编辑工作流_2088517071389941762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_95
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/H3工作流_2088343591486840833.json、视频生成/图生视频/MINIMAX-H3-图生视频_2084159275156467714.json、视频生成/图生视频/MINIMAX-H3-图生视频_2084308814681169921.json、视频生成/图生视频/MINIMAX-H3首尾帧视频_2085192239885668354.json、视频生成/图生视频/Mini max  H3开源啦(加速版）_2085639639234338818.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/boogu_edit_图片编辑_2068898671525195778.json、图片生成/图生图/boogu_edit图像编辑_2068963144776638466.json、图片生成/图生图/boogu_image_edit 图生图_2074490249920729090.json、图片生成/图生图/image_boogu_edit图片编辑工作流_2082720783633305601.json、图片生成/图生图/【遇见AI】boogu image edit 基础工作流_2067908267849900034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyLatentImage`
 - `KSamplerSelect`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
+- `SaveImage`
+- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ImageToVideo` —— 9/12 个有
-- `CR Text` —— 6/12 个有
-- `LoraLoaderModelOnly` —— 5/12 个有
-- `PathchSageAttentionKJ` —— 4/12 个有
-- `RH_LLMAPI_Pro_Node` —— 4/12 个有
-- `easy showAnything` —— 4/12 个有
-- `LoadAudio` —— 3/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/12 个有
-- `PreviewAny` —— 3/12 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 3/12 个有
-- `ImageScaleToTotalPixels` —— 2/12 个有
-- `MiniMaxH3BlockCacheT8` —— 2/12 个有
-- `MiniMaxH3SigmaShift` —— 2/12 个有
-- `EasyCache` —— 1/12 个有
-- `ImageResizeKJv2` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `SetNode` —— 1/12 个有
+- `PreviewImage` —— 5/10 个有
+- `GetImageSize` —— 4/10 个有
+- `Text` —— 3/10 个有
+- `ConstrainImage|pysssss` —— 2/10 个有
+- `FluxKontextImageScale` —— 2/10 个有
+- `GetImageSizeAndCount` —— 1/10 个有
+- `MuyeTextEditOutput` —— 1/10 个有
+- `RH_Translator` —— 1/10 个有
+- `图像缩放V2_孤海` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 512 - 1024 | 10 | 82% |
+| 高度 | 1024 | 512 - 2048 | 10 | 61% |
 
 ## 常见问题
 
@@ -69,4 +60,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 512 - 1024，10 个样本，取值集中（一致性 82%）
+- 高度 中位数 1024，观测区间 512 - 2048，10 个样本

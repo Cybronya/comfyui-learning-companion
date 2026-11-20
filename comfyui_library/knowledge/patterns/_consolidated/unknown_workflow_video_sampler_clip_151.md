@@ -2,95 +2,73 @@
 name: unknown_workflow_video_sampler_clip_151
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.6045
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, DrawViTPose, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, JjkText, KSampler, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewImage, Primitive integer [Crystools], SetNode, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanAnimateToVideo, easy showAnything]
+level: moderate
+coverage: 0.95375
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/完美人物替换Animate 新3.2（真人替换）_1972999507698913281.json, "视频生成/图生视频/完美动作迁移,(换！！)_2031965334302892033.json", 视频生成/图生视频/完美动作迁移Animate 新 3.0（极致稳定+表情迁移）_1972602081016217602.json, 视频生成/图生视频/完美视频人物替换  V3_2007121113012248578.json]
+members: [视频生成/图生视频/03-02-01-WAN2.1-图生视频-原生_1989951203440291842.json, 视频生成/图生视频/FusionX图生视频量化版_1935875055609896962.json, 视频生成/图生视频/WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_1898354232771170306.json, 视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_151
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/完美人物替换Animate 新3.2（真人替换）_1972999507698913281.json、视频生成/图生视频/完美动作迁移,(换！！)_2031965334302892033.json、视频生成/图生视频/完美动作迁移Animate 新 3.0（极致稳定+表情迁移）_1972602081016217602.json、视频生成/图生视频/完美视频人物替换  V3_2007121113012248578.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/03-02-01-WAN2.1-图生视频-原生_1989951203440291842.json、视频生成/图生视频/FusionX图生视频量化版_1935875055609896962.json、视频生成/图生视频/WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_1898354232771170306.json、视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：60%
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
-- `DrawViTPose`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JjkText`
+- `CLIPVisionLoader`
 - `KSampler`
 - `LoadImage`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `SetNode`
-- `SimpleMath+`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `WanAnimateToVideo`
-- `easy showAnything`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 3/4 个有
-- `BlockifyMask` —— 2/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `DrawMaskOnImage` —— 2/4 个有
-- `ImageBlend` —— 2/4 个有
-- `CLIPVisionLoader` —— 1/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `EmptyImage` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `OnnxDetectionModelLoader` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `Sam2Segmentation` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `WanVideoBlockSwap` —— 1/4 个有
-- `WanVideoClipVisionEncode` —— 1/4 个有
-- `wanBlockSwap` —— 1/4 个有
+- `ModelSamplingSD3` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `WanVideoTeaCacheKJ` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `EG_FX_BDAPI` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
+- `SaveAnimatedWEBP` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1 | 1 - 1 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | sa_solver | - | 4 | 75% |
-| 调度器 | beta | - | 4 | 100% |
+| 采样步数 | 16 | 5 - 20 | 4 | 56% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
+| 采样算法 | uni_pc | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，4 个样本，一致性 75%
-- 调度器 最常用 beta，4 个样本，一致性 100%
+- 采样步数 中位数 16，观测区间 5 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

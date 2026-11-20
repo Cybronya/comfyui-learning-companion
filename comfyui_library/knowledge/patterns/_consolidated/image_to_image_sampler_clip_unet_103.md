@@ -1,33 +1,36 @@
 ---
 name: image_to_image_sampler_clip_unet_103
 type: Image To Image
-frequency: 6
+frequency: 5
 level: strong
-coverage: 0.921833
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8566
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux-Kontext文生图_局部重绘_2039270148548333570.json, 图片生成/图生图/flux-kontext-画面精准控制_1945126183988285441.json, 图片生成/图生图/flux_1_kontext+flux lora工作流_1944430917349986305.json, 图片生成/图生图/flux_1_kontext_生成封面图_1940659961330561026.json, 图片生成/图生图/kontext 超完美转手办卡通人物一致性高_1944805495855304705.json, 平台全量/kontext 真人转手办卡通人物_1961244242448465921.json]
+members: [图片生成/图生图/电商产品任意更换颜色 万能真实换色  服饰指定换色 保持材质不变_2052695533499756546.json, 图片生成/图生图/电商产品任意更换颜色_万能真实换色_服饰指定换色_保持材质不变_2096800408797794305.json, 图片生成/图生图/电商产品任意更换颜色_万能真实换色_服饰指定换色_保持材质不变_2097143368966041602.json, 图片生成/文生图/去除水印_2090086272101605377.json, 图片生成/文生图/电商改色丨Flux丨AI改色图生成_2100864143933919233.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_103
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/flux-Kontext文生图_局部重绘_2039270148548333570.json、图片生成/图生图/flux-kontext-画面精准控制_1945126183988285441.json、图片生成/图生图/flux_1_kontext+flux lora工作流_1944430917349986305.json、图片生成/图生图/flux_1_kontext_生成封面图_1940659961330561026.json、图片生成/图生图/kontext 超完美转手办卡通人物一致性高_1944805495855304705.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/电商产品任意更换颜色 万能真实换色  服饰指定换色 保持材质不变_2052695533499756546.json、图片生成/图生图/电商产品任意更换颜色_万能真实换色_服饰指定换色_保持材质不变_2096800408797794305.json、图片生成/图生图/电商产品任意更换颜色_万能真实换色_服饰指定换色_保持材质不变_2097143368966041602.json、图片生成/文生图/去除水印_2090086272101605377.json、图片生成/文生图/电商改色丨Flux丨AI改色图生成_2100864143933919233.json）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
 - `KSampler`
 - `LoadImage`
+- `PreviewImage`
+- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -36,30 +39,23 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `FluxKontextImageScale` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `PathchSageAttentionKJ` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `StringConcatenate` —— 4/6 个有
-- `StringConstantMultiline` —— 4/6 个有
-- `EmptySD3LatentImage` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImageResize+` —— 1/6 个有
-- `Kontext Inpainting Conditioning` —— 1/6 个有
-- `LayerStyle: ColorOverlay` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `RMBG` —— 1/6 个有
+- `Colored Image (mtb)` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `ImageCrop` —— 4/5 个有
+- `ImageResize+` —— 4/5 个有
+- `ImpactInt` —— 4/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `FluxKontextImageScale` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 6 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -67,8 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，6 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

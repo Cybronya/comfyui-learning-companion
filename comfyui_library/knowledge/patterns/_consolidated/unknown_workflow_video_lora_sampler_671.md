@@ -1,68 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_671
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.670333
+common_nodes: [Anything Everywhere, CR Prompt Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), FloatConstant, GetNode, INTConstant, LayerUtility: PurgeVRAM V2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/MinimaxH3 全自动长视频&数字人_2101528217386573826.json, 数字人/数字人/H3数字人对口型_2094236378186993665.json, 视频生成/图生视频/H3数字人对口型_2092500387885576193.json, 视频生成/图生视频/MinimaxH3 全自动长视频&数字人_2101599345828261889.json]
+members: [视频生成/图生视频/04-05-01-WAN2.2-FUN-镜头控制-Cameral Control_1991509572473069569.json, 视频生成/图生视频/04-05-02-WAN2.2-FUN-首尾帧视频控制-INP_1990968837673787394.json, 视频生成/图生视频/04-05-03-WAN2.2-FUN-视频姿势深度控制-Control_1991503138804998145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_671
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/MinimaxH3 全自动长视频&数字人_2101528217386573826.json、数字人/数字人/H3数字人对口型_2094236378186993665.json、视频生成/图生视频/H3数字人对口型_2092500387885576193.json、视频生成/图生视频/MinimaxH3 全自动长视频&数字人_2101599345828261889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/04-05-01-WAN2.2-FUN-镜头控制-Cameral Control_1991509572473069569.json、视频生成/图生视频/04-05-02-WAN2.2-FUN-首尾帧视频控制-INP_1990968837673787394.json、视频生成/图生视频/04-05-03-WAN2.2-FUN-视频姿势深度控制-Control_1991503138804998145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
-- `LoadAudio`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `Fast Groups Muter (rgthree)`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SetNode`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `Float` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageBatchMulti` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `MiniMaxH3AddGuide` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `ShowAnything|Mie` —— 2/4 个有
-- `SoundFlow_GetLength` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `ADE_CameraPoseCombo` —— 1/3 个有
+- `CameraPoseVisualizer` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LoadWanVideoClipTextEncoder` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoClipVisionEncode` —— 1/3 个有
+- `WanVideoControlEmbeds` —— 1/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoFunCameraEmbeds` —— 1/3 个有
 
 ## 典型参数
 

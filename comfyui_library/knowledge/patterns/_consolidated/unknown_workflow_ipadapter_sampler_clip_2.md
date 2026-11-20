@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_ipadapter_sampler_clip_2
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.78575
-common_nodes: [ApplyFluxIPAdapter, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, ImageScale, LoadFluxIPAdapter, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
+frequency: 2
+level: weak
+coverage: 0.7125
+common_nodes: [CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, DetailTransfer, Fast Bypasser (rgthree), FreeU_V2, GetNode, ICLightConditioning, IPAdapterAdvanced, IPAdapterUnifiedLoader, Image Comparer (rgthree), ImageCASharpening+, KSampler (Efficient), LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadAndApplyICLightUnet, LoadImage, SaveImage, SetNode, VAEDecode, VAEEncode, easy negative, easy positive, easy seed, easy showAnything, easy stylesSelector]
 problems: []
 missing: []
-members: [图片生成/图生图/多图风格融合  Flux+IPAdapter_1915051485367889922.json, 图片生成/文生图/Flux+IPAdapter 文生同风格图片_1914704276978106370.json, 平台全量/Flux模型+IPAdapter-胖喵_1828743948205740033.json, 平台全量/图生图风格迁移（Flux+IPAdapter）_1828978179221450754.json]
+members: [图片生成/图生图/PS高阶-光影优化_1922110524610265090.json, 图片生成/图生图/PS高阶-光影自动优化（个人原创）_1911626362736836610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_ipadapter_sampler_clip_2
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/多图风格融合  Flux+IPAdapter_1915051485367889922.json、图片生成/文生图/Flux+IPAdapter 文生同风格图片_1914704276978106370.json、平台全量/Flux模型+IPAdapter-胖喵_1828743948205740033.json、平台全量/图生图风格迁移（Flux+IPAdapter）_1828978179221450754.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/PS高阶-光影优化_1922110524610265090.json、图片生成/图生图/PS高阶-光影自动优化（个人原创）_1911626362736836610.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyFluxIPAdapter`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `ImageScale`
-- `LoadFluxIPAdapter`
+全部 2 个 workflow 都包含：
+- `CLIPSetLastLayer`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `DetailTransfer`
+- `Fast Bypasser (rgthree)`
+- `FreeU_V2`
+- `GetNode`
+- `ICLightConditioning`
+- `IPAdapterAdvanced`
+- `IPAdapterUnifiedLoader`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `KSampler (Efficient)`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAndApplyICLightUnet`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
+- `SetNode`
 - `VAEDecode`
-- `VAELoader`
-- `XlabsSampler`
+- `VAEEncode`
+- `easy negative`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
+- `easy stylesSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `LoraLoader` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `DisplayText_Zho` —— 1/4 个有
-- `ImpactMakeImageBatch` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
+- `Anything Everywhere3` —— 1/2 个有
+- `Prompts Everywhere` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 896 | 504 - 1024 | 4 | 74% |
-| 高度 | 1024 | 512 - 1024 | 4 | 75% |
+| 采样步数 | 30 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 3 | - | 2 | 100% |
+| 采样算法 | dpmpp_2m_sde | - | 2 | 100% |
+| 调度器 | karras | - | 2 | 100% |
+| 重绘幅度 | 0.7 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -63,7 +70,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，观测区间 504 - 1024，4 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，4 个样本
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde，2 个样本，一致性 100%
+- 调度器 最常用 karras，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

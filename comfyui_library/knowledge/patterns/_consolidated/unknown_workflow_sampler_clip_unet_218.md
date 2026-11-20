@@ -1,34 +1,39 @@
 ---
 name: unknown_workflow_sampler_clip_unet_218
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.991
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.877
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, Flux2Scheduler, GrowMaskWithBlur, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/快速万物消除 擦除 去水印_2102605007383261185.json, 图片生成/图生图/换脸Flux2Klein多图编辑4B加速版_2057827199104929793.json, 图片生成/图生图/换脸Flux2Klein多图编辑9B加速版Flux2Klein多图编辑9B加速版+_2025838254557237250.json, 图片生成/图生图/换脸Flux2Klein多图编辑9B加速版_2031581292579528705.json, 图片生成/图生图/换脸换人换衣服 写实换装 人物一致 Flux2-Klein9b 保留服饰细节 多图编辑 多图编辑_2100011899302797314.json, 图片生成/图生图/换脸换人换衣服_写实换装_人物一致_Flux2-Klein9b_保留服饰细节_多图编辑_多图编辑_2101216470276595714.json, 图片生成/图生图/换装Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2012781629911076866.json]
+members: [图片生成/图生图/Flux2-Klein移除水印单图版V2（保持原图不变）_2014510703759069185.json, 图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2015367193973760002.json, 图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2028122775256305666.json, 图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2054741458850205697.json, 图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2054837030131126273.json, 图片生成/图生图/移除即梦水印单图版V2（保持原图不变）_2012487948297572353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_218
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/快速万物消除 擦除 去水印_2102605007383261185.json、图片生成/图生图/换脸Flux2Klein多图编辑4B加速版_2057827199104929793.json、图片生成/图生图/换脸Flux2Klein多图编辑9B加速版Flux2Klein多图编辑9B加速版+_2025838254557237250.json、图片生成/图生图/换脸Flux2Klein多图编辑9B加速版_2031581292579528705.json、图片生成/图生图/换脸换人换衣服 写实换装 人物一致 Flux2-Klein9b 保留服饰细节 多图编辑 多图编辑_2100011899302797314.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein移除水印单图版V2（保持原图不变）_2014510703759069185.json、图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2015367193973760002.json、图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2028122775256305666.json、图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2054741458850205697.json、图片生成/图生图/Flux2-klein局部重绘_扩图_移除_2054837030131126273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ColorMatch`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
+- `GrowMaskWithBlur`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -39,22 +44,21 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `ImageScaleToTotalPixels` —— 4/7 个有
-- `JWFloat` —— 4/7 个有
-- `EmptyFlux2LatentImage` —— 3/7 个有
-- `GetImageSize` —— 3/7 个有
-- `ImageConcanate` —— 3/7 个有
-- `easy imageSize` —— 3/7 个有
-- `Int` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
-- `InpaintCropImproved` —— 1/7 个有
-- `InpaintModelConditioning` —— 1/7 个有
-- `InpaintStitchImproved` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `easy imageConcat` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `DrawMaskOnImage` —— 4/6 个有
+- `EmptyFlux2LatentImage` —— 4/6 个有
+- `GetImageSize` —— 4/6 个有
+- `ImagePadForOutpaint` —— 4/6 个有
+- `ImageMaskSwitch` —— 3/6 个有
+- `ImpactSwitch` —— 3/6 个有
+- `Int` —— 3/6 个有
+- `ImageCompositeMasked` —— 2/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `ImageCrop+` —— 2/6 个有
+- `LayerUtility: ImageMaskScaleAs` —— 2/6 个有
+- `LayerUtility: ImageReel` —— 2/6 个有
+- `LayerUtility: ImageReelComposit` —— 2/6 个有
+- `MaskPreview` —— 1/6 个有
 
 ## 典型参数
 

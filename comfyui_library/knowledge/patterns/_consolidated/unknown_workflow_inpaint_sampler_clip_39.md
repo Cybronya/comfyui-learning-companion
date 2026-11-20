@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_39
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.9795
-common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LoadImage, RH_Translator, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 3
+level: moderate
+coverage: 0.831667
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImagePadForOutpaint, InpaintModelConditioning, KSampler, LoadImage, PreviewImage, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/局部重绘 _ OneReward_Fill_1990120170746204161.json, 图片生成/图生图/局部重绘-OneReward-CFUI版_1966417889844768769.json, 图片生成/图生图/局部重绘-字节OneReward-ComfyUI版_1966169381141123074.json, 图片生成/图生图/扩图-字节OneReward-ComfyUI版_1966171018454798338.json, 图片生成/图生图/最新OneReward-局部重绘&扩图工作流_1967045684761333761.json, 平台全量/局部重绘 _ OneReward_Fill_1966168054050754562.json]
+members: [图片生成/图生图/FLUX扩图_1914938088290775041.json, 图片生成/图生图/扩图_1955198486787473409.json, 图片生成/图生图/超简单去水印，秒变竖屏手机版_1903016455229841409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_39
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/局部重绘 _ OneReward_Fill_1990120170746204161.json、图片生成/图生图/局部重绘-OneReward-CFUI版_1966417889844768769.json、图片生成/图生图/局部重绘-字节OneReward-ComfyUI版_1966169381141123074.json、图片生成/图生图/扩图-字节OneReward-ComfyUI版_1966171018454798338.json、图片生成/图生图/最新OneReward-局部重绘&扩图工作流_1967045684761333761.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX扩图_1914938088290775041.json、图片生成/图生图/扩图_1955198486787473409.json、图片生成/图生图/超简单去水印，秒变竖屏手机版_1903016455229841409.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `ImagePadForOutpaint`
 - `InpaintModelConditioning`
 - `KSampler`
 - `LoadImage`
-- `RH_Translator`
+- `PreviewImage`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 5/6 个有
-- `ImageAndMaskPreview` —— 4/6 个有
-- `easy imageConcat` —— 3/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `ImagePadForOutpaint` —— 2/6 个有
-- `MaskPreview` —— 2/6 个有
-- `RunningHub OneReward Loader` —— 2/6 个有
-- `RunningHub OneReward Sampler` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `YC_SingleTextNode` —— 1/6 个有
+- `Joy_caption_two` —— 2/3 个有
+- `Joy_caption_two_load` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `JWImageResizeByLongerSide` —— 1/3 个有
+- `MaskPreview+` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
+- `scale` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | normal | - | 6 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 20 | 4 - 25 | 3 | 45% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | normal | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 normal，6 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 4 - 25，3 个样本，取值分散，一致性仅 45%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 normal，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

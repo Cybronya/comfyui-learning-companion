@@ -1,76 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_unet_190
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9182
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.90125
+common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveStringMultiline, ProcessString, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3爆图工作流，参考图（一次15图）_2093213612537110530.json, 视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次15图）_2092562660834496514.json, 视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次45图）_2093285352231497729.json, 视频生成/图生视频/MinimaxH3 女友ASMR_2091175012479881217.json, 视频生成/图生视频/MinimaxH3 数字人（文字版）_2084533534718517250.json]
+members: [图片生成/图生图/主图裂变-人物写真专用，抖音小红书涨粉（相同场景版）_2034540677446508545.json, 图片生成/图生图/主图裂变模特人物专用-相同场景版_2028710405786312705.json, 图片生成/图生图/套图_2001178928289021954.json, 图片生成/文生图/一键生成健身房对镜拍抖音小红书涨粉_2039945938139090945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_190
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3爆图工作流，参考图（一次15图）_2093213612537110530.json、视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次15图）_2092562660834496514.json、视频生成/图生视频/MiniMaxH3爆图工作流，文生图像（一次45图）_2093285352231497729.json、视频生成/图生视频/MinimaxH3 女友ASMR_2091175012479881217.json、视频生成/图生视频/MinimaxH3 数字人（文字版）_2084533534718517250.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/主图裂变-人物写真专用，抖音小红书涨粉（相同场景版）_2034540677446508545.json、图片生成/图生图/主图裂变模特人物专用-相同场景版_2028710405786312705.json、图片生成/图生图/套图_2001178928289021954.json、图片生成/文生图/一键生成健身房对镜拍抖音小红书涨粉_2039945938139090945.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `SaveImage`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy promptLine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `ExtractStoryboards_xuhuan1024` —— 3/5 个有
-- `LTXVConcatAVLatent` —— 3/5 个有
-- `LTXVSeparateAVLatent` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `SaveImage` —— 3/5 个有
-- `SplitSigmas` —— 3/5 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CharacterCount` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `MiniMaxH3ImageToVideo` —— 2/5 个有
-- `SimpleMath+` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `VAEDecodeAudio` —— 2/5 个有
-- `easy convertAnything` —— 2/5 个有
-- `DF_Float` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `ImpactInt` —— 3/4 个有
+- `Textbox` —— 3/4 个有
+- `ImageLoader` —— 2/4 个有
+- `CLIPTextEncode` —— 1/4 个有
+- `EmptySD3LatentImage` —— 1/4 个有
+- `LoadImageFromUrl` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta57 | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta57，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

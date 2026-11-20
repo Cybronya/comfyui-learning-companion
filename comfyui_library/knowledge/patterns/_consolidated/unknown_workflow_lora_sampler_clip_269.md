@@ -1,95 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_269
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.456333
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DownloadAndLoadSAM2Model, DrawMaskOnImage, ImageFromBatch, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveInt, Sam2Segmentation, SaveVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.915
+common_nodes: [ApplyPulidFlux, CLIPTextEncode, CLIPVisionLoader, CR Text, CR Text Concatenate, ConditioningZeroOut, DepthAnythingV2Preprocessor, DownloadAndLoadFlorence2Model, DualCLIPLoader, Florence2Run, FluxGuidance, ImageScaleToTotalPixels, InstructPixToPixConditioning, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, ReduxAdvanced, SaveImage, ShowText|pysssss, StyleModelLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/WanAnimate Native角色替换动作迁移不限时长_2074164248804159489.json, 视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json, 视频生成/图生视频/wan22_animate_auto_character_replace+全节点注释_2055788920813703169.json]
+members: [图片生成/图生图/flux-蜡笔画_1909477759297400834.json, 图片生成/图生图/吉卜力风格_flux图生图_1907367695694589954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_269
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WanAnimate Native角色替换动作迁移不限时长_2074164248804159489.json、视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json、视频生成/图生视频/wan22_animate_auto_character_replace+全节点注释_2055788920813703169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/flux-蜡笔画_1909477759297400834.json、图片生成/图生图/吉卜力风格_flux图生图_1907367695694589954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：46%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `ApplyPulidFlux`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CreateVideo`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `ImageFromBatch`
-- `ImageScale`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DepthAnythingV2Preprocessor`
+- `DownloadAndLoadFlorence2Model`
+- `DualCLIPLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `ImageScaleToTotalPixels`
+- `InstructPixToPixConditioning`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
-- `Sam2Segmentation`
-- `SaveVideo`
-- `TrimVideoLatent`
-- `UNETLoader`
+- `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `ReduxAdvanced`
+- `SaveImage`
+- `ShowText|pysssss`
+- `StyleModelLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `GetVideoComponents` —— 2/3 个有
-- `GrowMaskWithBlur` —— 2/3 个有
-- `LoadVideo` —— 2/3 个有
-- `ModelSamplingSD3` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `ComfyMathExpression` —— 1/3 个有
-- `ContextWindowsManual` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `GrowMask` —— 1/3 个有
-- `ImageBatch` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `PixelPerfectResolution` —— 1/3 个有
-- `PointsEditor` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
+- `ApplyFBCacheOnModel` —— 1/2 个有
+- `CheckpointLoaderSimple` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 3 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 12 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | dpmpp_2m | - | 2 | 100% |
+| 调度器 | sgm_uniform | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，3 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 12，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

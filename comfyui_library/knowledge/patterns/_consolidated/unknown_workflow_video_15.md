@@ -1,36 +1,53 @@
 ---
 name: unknown_workflow_video_15
 type: Unknown Workflow
-frequency: 10
+frequency: 6
 level: moderate
-coverage: 0.6703
-common_nodes: [FlashVSRNode, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.692667
+common_nodes: [CR Text, GetImageRangeFromBatch, Image Comparer (rgthree), ImageScaleBy, PlaySound|pysssss, RH_Sora2_T2V, SaveVideo, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy anythingIndexSwitch, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/全能视频S快速视频放大视频高清放大视频超分视频高清flashvsr高清放大_2003483116905897986.json, 平台全量/视频2倍高清放大_2087103974745923586.json, 平台全量/视频4K修复-FlashVSR_2034461189358493697.json, 平台全量/视频高清修复Flash VSR_1988541209926918146.json, 平台全量/视频高清修复放大 FlashVSR 视频超分辨率修复 高质量极速低显存版_2020006350146768898.json, 平台全量/视频高清修复放大，超快速度，超高质量_2044657350400806913.json, 平台全量/视频高清修复放大，超快速度，超高质量_2118248332236779522.json, 平台全量/视频高清放大_2007083699703128066.json, 视频生成/图生视频/Work-Fisher-FlshVSR视频高清修复放大，超快速度，超高质量_2022218420804128770.json, 视频生成/文生视频/FlashVSR视频高清放大_2098223279231291394.json]
+members: [数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json, 视频生成/文生视频/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980068181710639105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_15
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/全能视频S快速视频放大视频高清放大视频超分视频高清flashvsr高清放大_2003483116905897986.json、平台全量/视频2倍高清放大_2087103974745923586.json、平台全量/视频4K修复-FlashVSR_2034461189358493697.json、平台全量/视频高清修复Flash VSR_1988541209926918146.json、平台全量/视频高清修复放大 FlashVSR 视频超分辨率修复 高质量极速低显存版_2020006350146768898.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `FlashVSRNode`
-- `VHS_LoadVideo`
+全部 6 个 workflow 都包含：
+- `CR Text`
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `PlaySound|pysssss`
+- `RH_Sora2_T2V`
+- `SaveVideo`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy anythingIndexSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 7/10 个有
-- `JWInteger` —— 5/10 个有
-- `ImageConcatMulti` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `easy int` —— 5/6 个有
+- `MuyeLoadImage` —— 1/6 个有
+- `RH_Sora2_I2V` —— 1/6 个有
+- `RH_Sora2_I2V_PRO` —— 1/6 个有
+- `RH_Sora2_T2V_PRO` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

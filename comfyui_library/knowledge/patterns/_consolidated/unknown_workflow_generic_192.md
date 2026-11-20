@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_generic_192
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.880583
-common_nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
+coverage: 0.925273
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedance2_0, Comfly_api_set, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json, 视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json, 视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json, 视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037034972783058946.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037444767545561089.json, 视频生成/文生视频/Seedance2.0 Fast文生视频（RH版）_2054421311123927041.json, 视频生成/文生视频/seeddance2.0 文生视频_2040952630356217857.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-纯文本生视频】工作流_2037776749177610242.json, 视频生成/文生视频/地表最强超能视频2.0-Fast_文生视频_2037432927675490306.json]
+members: [视频生成/图生视频/(贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043649059289829378.json, 视频生成/图生视频/(资产ID复用版)Seedance2.0满血版多参生视频V2（贞贞的AI工坊）_2043635164273713153.json, 视频生成/图生视频/(顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分组sd-global）_2044775674057072641.json, 视频生成/图生视频/(飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385674595377154.json, 视频生成/图生视频/(首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊）_2043147768188903425.json, 视频生成/图生视频/Gxx image V2+Seedance2.0多参生视频V1（贞贞的AI工坊-满血版）_2045043366005575681.json, 视频生成/图生视频/Seedance2.0多参生视频原生1080P（贞贞的AI工坊）_2046909844334055426.json, 视频生成/图生视频/（心动女生）)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2050051947612385281.json, 视频生成/文生视频/(最强满血版-支持真人)Seedance2.0多参生视频（贞贞工坊）_2061824732235919362.json, 视频生成/文生视频/Seedance2.0图+音频多参生视频（贞贞的AI工坊-满血版）_2043883680384421890.json, 视频生成/文生视频/Seedance2.0多参生视频V2（API-满血版）_2048760381065142274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_192
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json、视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json、视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json、视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json、视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/(贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043649059289829378.json、视频生成/图生视频/(资产ID复用版)Seedance2.0满血版多参生视频V2（贞贞的AI工坊）_2043635164273713153.json、视频生成/图生视频/(顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分组sd-global）_2044775674057072641.json、视频生成/图生视频/(飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385674595377154.json、视频生成/图生视频/(首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊）_2043147768188903425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20FastTextToVideo`
+全部 11 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedance2_0`
+- `Comfly_api_set`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/12 个有
+- `LoadImage` —— 9/11 个有
+- `LoadAudio` —— 3/11 个有
+- `Comfly_Doubao_Seedance2_0_AssetIdBundle` —— 2/11 个有
+- `Fast Bypasser (rgthree)` —— 1/11 个有
 
 ## 典型参数
 

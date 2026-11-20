@@ -1,71 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_unet_123
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.871714
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 6
+level: strong
+coverage: 0.951167
+common_nodes: [CLIPLoader, KSampler, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json, 视频生成/文生视频/Minimax H3-文生视频（高动态去噪点）_2089345292486402050.json, 视频生成/文生视频/Minimax h3 4 步 lora2 加速版_2092076952441151490.json, 视频生成/文生视频/Minimax-H3-文生视频（Lightx2v正式版）_2087549637837283330.json, 视频生成/文生视频/MinimaxH3LORA加速工作流ENG文生视频4步ENG_2087097542533279745.json, 视频生成/文生视频/MinimaxH3文生视频4步LORA加速工作流_2084217093255421954.json, 视频生成/文生视频/Minmax H3参考加速工作流_2086695240752263170.json]
+members: [图片生成/图生图/klein人像全身白底图 _ 测试中_2090653357085122562.json, 图片生成/图生图/【服装行业】模特服装提取白底图_2017380216762540033.json, 图片生成/图生图/溶图2_2102275717336756225.json, 图片生成/图生图/鞋子换色_2063808483375542273.json, 图片生成/文生图/Flux-Klein去除ai感优化光影效果去水印输入提示词_2071089227948969985.json, 图片生成/文生图/可过小红书FLUX2-Klein去除ai感_2055920772278956034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_123
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json、视频生成/文生视频/Minimax H3-文生视频（高动态去噪点）_2089345292486402050.json、视频生成/文生视频/Minimax h3 4 步 lora2 加速版_2092076952441151490.json、视频生成/文生视频/Minimax-H3-文生视频（Lightx2v正式版）_2087549637837283330.json、视频生成/文生视频/MinimaxH3LORA加速工作流ENG文生视频4步ENG_2087097542533279745.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/klein人像全身白底图 _ 测试中_2090653357085122562.json、图片生成/图生图/【服装行业】模特服装提取白底图_2017380216762540033.json、图片生成/图生图/溶图2_2102275717336756225.json、图片生成/图生图/鞋子换色_2063808483375542273.json、图片生成/文生图/Flux-Klein去除ai感优化光影效果去水印输入提示词_2071089227948969985.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 6/7 个有
-- `MiniMaxH3ImageToVideo` —— 6/7 个有
-- `ResolutionSelector` —— 6/7 个有
-- `SaveVideo` —— 6/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `H3SigmaRefiner` —— 2/7 个有
-- `LoadImage` —— 2/7 个有
-- `MiniMaxH3SigmaShift` —— 2/7 个有
-- `MuyeTextEditOutput` —— 2/7 个有
-- `easy int` —— 2/7 个有
-- `ExtendIntermediateSigmas` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `SigmasPreview` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ConstrainImage|pysssss` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `GetImageSize+` —— 4/6 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `ImageLoader` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `ImageStitch` —— 2/6 个有
+- `DetailTransfer` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JoinStrings` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 6 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 6 | 96% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，6 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

@@ -1,79 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_828
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.878667
-common_nodes: [AILab_MiniCPM_4_V, CR Prompt Text, Float, GrowMask, INTConstant, ImageCompositeMasked, ImageConcanate, ImageFromBatch, ImageRemoveBackground+, ImageResizeKJv2, Int, InvertMask, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, RepeatImageBatch, ShowText|pysssss, SolidMask, StringToFloatList, TransparentBGSession+, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.5375
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, Power Lora Loader (rgthree), PreviewImage, ProcessString, SetNode, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy promptLine, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/神都猫2025-10-7 vace 2.2 vace遮罩重绘视频换背景工作流_1975532423968632833.json, 平台全量/视频换背景3.0_1977222023132913666.json, 视频生成/图生视频/神都猫2025-11-5 vace 2.2 vace遮罩重绘视频换背景工作流 长时版_1986317389732216834.json]
+members: [视频生成/图生视频/AI代码侠土豆 图片控制分镜镜头+首尾帧视频_1985971814922891266.json, 视频生成/图生视频/短片1.0（工作流套装）_1988448828670001154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_828
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/神都猫2025-10-7 vace 2.2 vace遮罩重绘视频换背景工作流_1975532423968632833.json、平台全量/视频换背景3.0_1977222023132913666.json、视频生成/图生视频/神都猫2025-11-5 vace 2.2 vace遮罩重绘视频换背景工作流 长时版_1986317389732216834.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆 图片控制分镜镜头+首尾帧视频_1985971814922891266.json、视频生成/图生视频/短片1.0（工作流套装）_1988448828670001154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_MiniCPM_4_V`
-- `CR Prompt Text`
-- `Float`
-- `GrowMask`
-- `INTConstant`
-- `ImageCompositeMasked`
-- `ImageConcanate`
-- `ImageFromBatch`
-- `ImageRemoveBackground+`
-- `ImageResizeKJv2`
-- `Int`
-- `InvertMask`
-- `LayerUtility: PurgeVRAM V2`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `RepeatImageBatch`
-- `ShowText|pysssss`
-- `SolidMask`
-- `StringToFloatList`
-- `TransparentBGSession+`
-- `VHS_DuplicateMasks`
-- `VHS_LoadVideo`
+- `Power Lora Loader (rgthree)`
+- `PreviewImage`
+- `ProcessString`
+- `SetNode`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
+- `WanMoeKSampler`
+- `easy promptLine`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 1/3 个有
+- `EmptySD3LatentImage` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `QZ_ResolutionPreset` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `WanImageToVideo` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 22% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | 1 | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 22%
+- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

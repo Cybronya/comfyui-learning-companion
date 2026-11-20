@@ -1,61 +1,64 @@
 ---
 name: unknown_workflow_sampler_unet_vae_207
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.881714
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.8026
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/故事_1982707861027471361.json, 图片生成/文生图/文生图+LoRA_1932450301490425858.json, 图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json, 图片生成/文生图/英文字体设计_1927964492725141505.json, 图片生成/文生图/英文字体设计_2084095503633043458.json, 图片生成/文生图/超好用室内文生图+放大集合_1963922300439547906.json, 平台全量/带着画笔去旅行_1838478160345153538.json]
+members: [图片生成/图生图/Qwen image 2.1图片编辑+角色定妆照_2103068698557902850.json, 图片生成/图生图/Qwen image 2.1图片编辑-1_2112506837907099650.json, 图片生成/图生图/QwenImage2.1 千问图像2.1 任意姿态生成_2103489835767001089.json, 图片生成/图生图/QwenImage2.1图像编辑_2101863711043579906.json, 图片生成/图生图/▶Qwen-image21-图像编辑（无位移）_2112039096406331394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_207
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/故事_1982707861027471361.json、图片生成/文生图/文生图+LoRA_1932450301490425858.json、图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json、图片生成/文生图/英文字体设计_1927964492725141505.json、图片生成/文生图/英文字体设计_2084095503633043458.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1图片编辑+角色定妆照_2103068698557902850.json、图片生成/图生图/Qwen image 2.1图片编辑-1_2112506837907099650.json、图片生成/图生图/QwenImage2.1 千问图像2.1 任意姿态生成_2103489835767001089.json、图片生成/图生图/QwenImage2.1图像编辑_2101863711043579906.json、图片生成/图生图/▶Qwen-image21-图像编辑（无位移）_2112039096406331394.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `LoadImage`
+- `QwenImage21Cache`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `LoraLoader` —— 4/7 个有
-- `UltimateSDUpscale` —— 4/7 个有
-- `UpscaleModelLoader` —— 4/7 个有
-- `FluxGuidance` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `BatchPromptSchedule` —— 1/7 个有
-- `CheckpointLoaderSimple` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `ResolutionSelector` —— 3/5 个有
+- `Seed (rgthree)` —— 3/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `easy loraStack` —— 2/5 个有
+- `easy loraStackApply` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1280 | 7 | 84% |
-| 高度 | 1024 | 720 - 1600 | 7 | 70% |
-| LoRA 模型强度 | 0.7 | 0.6 - 0.8 | 4 | 86% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 25 | 25 - 50 | 5 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 16 - 1536 | 5 | 46% |
+| 高度 | 1024 | 1024 - 2048 | 5 | 67% |
 
 ## 常见问题
 
@@ -63,7 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1280，7 个样本，取值集中（一致性 84%）
-- 高度 中位数 1024，观测区间 720 - 1600，7 个样本
-- LoRA 模型强度 中位数 0.7，观测区间 0.6 - 0.8，4 个样本，取值集中（一致性 86%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 50，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 16 - 1536，5 个样本，取值分散，一致性仅 46%
+- 高度 中位数 1024，观测区间 1024 - 2048，5 个样本

@@ -1,81 +1,75 @@
 ---
 name: image_to_image_lora_sampler_unet_98
 type: Image To Image
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.845
-common_nodes: [Anything Everywhere3, CLIPLoader, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ProcessString, RH_LLMAPI_NODE, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.83
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, SaveImage, Switch any [Crystools], TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit 分镜编辑（Next Scene LoRA）_2005443551607619585.json, 图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1980860923768426497.json, 图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2010358808517812225.json, 图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2016040452352380930.json, 图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2075495556738281473.json, 图片生成/图生图/【微电影】镜头风格一致性电影3分镜+Qwen+Next+Scene+影视剧情分镜制作_1999832070736183298.json, 图片生成/图生图/【微电影分镜制作】镜头风格一致性电影分镜 Qwen+Next+Scene_1984487279752265729.json, 图片生成/图生图/一句话出分镜Qwen-Edit-2509影视剧情分镜制作_1985703552763011073.json]
+members: [图片生成/图生图/瓷器-换产品_2032924200163352578.json, 图片生成/图生图/瓷器-白底2.0_2035598661832413185.json, 图片生成/图生图/瓷器-白底2.2_2036037358008668161.json, 图片生成/图生图/瓷器-白底_2033061093744054274.json, 图片生成/文生图/FireRed Image Edit 1.1 8步加速_2073313339664584705.json, 图片生成/文生图/FireRed Image Edit 1.1 阿凡达 Lora 测试流_2073314483048640514.json, 数字人/数字人/小红书编辑模型FireRed Image Edit 1.1 8步加速_2029994284878929921.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_98
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit 分镜编辑（Next Scene LoRA）_2005443551607619585.json、图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1980860923768426497.json、图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2010358808517812225.json、图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2016040452352380930.json、图片生成/图生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_2075495556738281473.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/瓷器-换产品_2032924200163352578.json、图片生成/图生图/瓷器-白底2.0_2035598661832413185.json、图片生成/图生图/瓷器-白底2.2_2036037358008668161.json、图片生成/图生图/瓷器-白底_2033061093744054274.json、图片生成/文生图/FireRed Image Edit 1.1 8步加速_2073313339664584705.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 7 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `Int`
+- `FluxKontextImageScale`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ProcessString`
-- `RH_LLMAPI_NODE`
+- `ModelSamplingAuraFlow`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `SaveImage`
+- `Switch any [Crystools]`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 7/8 个有
-- `ShellAgentPluginOutputText` —— 7/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
-- `Note _O` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `SeedVR2` —— 1/8 个有
-- `SeedVR2BlockSwap` —— 1/8 个有
-- `SeedVR2ExtraArgs` —— 1/8 个有
-- `ttN seed` —— 1/8 个有
-- `ttN textOutput` —— 1/8 个有
+- `EG_TX_SFBLS` —— 4/7 个有
+- `LayerUtility: TextBox` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `GetImageSize+` —— 3/7 个有
+- `ImageResizePresetNode` —— 3/7 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 3/7 个有
+- `LayerUtility: ColorImage V2` —— 3/7 个有
+- `LayerUtility: ImageBlendAdvance V2` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 8 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | sa_solver | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 40 | 40 - 40 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 40，观测区间 40 - 40，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

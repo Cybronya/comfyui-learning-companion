@@ -1,67 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_782
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.8495
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.6295
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ColorTransfer, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageFromBatch, ImageResizeKJv2, JjkText, JoinStrings, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideo, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleCalculatorKJ, Text, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, Video_Fade, easy seed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json, 视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json, 视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json, 视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json]
+members: [图片生成/图生图/动态循环壁纸一键生成_2081926524151877634.json, 视频生成/图生视频/动态循环壁纸一键生成_2072296730909044737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_782
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json、视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json、视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json、视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/动态循环壁纸一键生成_2081926524151877634.json、视频生成/图生视频/动态循环壁纸一键生成_2072296730909044737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `ColorTransfer`
+- `ComfyNumberConvert`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `JjkText`
+- `JoinStrings`
+- `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideo`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RTXVideoSuperResolution`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `Text`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VRAM_Debug`
+- `Video_Fade`
+- `easy seed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/4 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/4 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/4 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
-- `AudioCrop` —— 1/4 个有
-- `ConcatTextOfUtils` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
+- `DuckHideNode` —— 1/2 个有
+- `Float to Int` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 193 | - | 2 | 100% |
+| 高度 | 50 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,4 +87,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 193，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 50，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

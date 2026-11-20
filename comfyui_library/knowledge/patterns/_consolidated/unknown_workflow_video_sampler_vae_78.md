@@ -1,68 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_vae_78
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.694714
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.905833
+common_nodes: [VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json, 视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json, 视频生成/图生视频/Vace首尾帧工作流修复版_1913425967614783490.json, 视频生成/图生视频/Wan VACE视频编辑参考双图出视频-KJ版_1908555077475573761.json, 视频生成/图生视频/Wan万相VACE首尾帧_1908722738436186113.json, 视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json, 视频生成/图生视频/通义万相最新VACE超级首尾帧图生视频_1908024334332342274.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json, 图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json, 视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json, 视频生成/图生视频/phontom 多图参考_1928118108420980738.json, 视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json, 视频生成/图生视频/多参考一致性视频_Phantom_1927430164823564289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_78
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json、视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json、视频生成/图生视频/Vace首尾帧工作流修复版_1913425967614783490.json、视频生成/图生视频/Wan VACE视频编辑参考双图出视频-KJ版_1908555077475573761.json、视频生成/图生视频/Wan万相VACE首尾帧_1908722738436186113.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json、图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json、视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json、视频生成/图生视频/phontom 多图参考_1928118108420980738.json、视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+全部 6 个 workflow 都包含：
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `WanVideoVACEStartToEndFrame` —— 6/7 个有
-- `WanVideoTeaCache` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `ImageBatchMulti` —— 3/7 个有
-- `JWImageExtractFromBatch` —— 2/7 个有
-- `JjkText` —— 2/7 个有
-- `MathExpression|pysssss` —— 2/7 个有
-- `Note Plus (mtb)` —— 2/7 个有
-- `SaveImage` —— 2/7 个有
-- `WanVideoVRAMManagement` —— 2/7 个有
-- `easy batchAnything` —— 2/7 个有
-- `easy forLoopEnd` —— 2/7 个有
-- `easy forLoopStart` —— 2/7 个有
-- `ImageConcanate` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `easy imageScaleDownToSize` —— 1/7 个有
+- `LoadImage` —— 5/6 个有
+- `WanVideoEncode` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `WanVideoPhantomEmbeds` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `ImageResizeKJ` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `LoadWanVideoT5TextEncoder` —— 3/6 个有
+- `WanVideoSetBlockSwap` —— 3/6 个有
+- `WanVideoSetLoRAs` —— 3/6 个有
+- `WanVideoTextEncode` —— 3/6 个有
+- `WanVideoTextEncodeCached` —— 3/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/6 个有
+- `GIMMVFI_interpolate` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `easy imageRemBg` —— 2/6 个有
+- `ImagePadKJ` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `WanVideoEmptyEmbeds` —— 1/6 个有
+- `WanVideoVRAMManagement` —— 1/6 个有
 
 ## 典型参数
 

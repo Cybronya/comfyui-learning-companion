@@ -1,65 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_745
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.83425
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.875667
+common_nodes: [CLIPVisionLoader, DrawViTPose, Evaluate Integers, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json, 视频生成/图生视频/wan2.2 图生图_1995404196142833665.json, 视频生成/文生视频/1022对比测试_1981324716671664130.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json]
+members: [视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json, 视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json, 音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_745
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json、视频生成/图生视频/wan2.2 图生图_1995404196142833665.json、视频生成/文生视频/1022对比测试_1981324716671664130.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json、视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json、音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `Evaluate Integers`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `String Literal` —— 3/4 个有
-- `StringToFloatList` —— 3/4 个有
-- `WanVideoSetRadialAttention` —— 3/4 个有
-- `easy globalSeed` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `INTConstant` —— 2/4 个有
-- `WanVideoContextOptions` —— 2/4 个有
-- `WanVideoScheduler` —— 2/4 个有
-- `WanVideoSigmaToStep` —— 2/4 个有
-- `AddLabel` —— 1/4 个有
-- `CLIPVisionLoader` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `WanVideoClipVisionEncode` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `BatchCount+` —— 2/3 个有
+- `Evaluate Floats` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Image Batch` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `SynVowImageBatchRangeIndex` —— 2/3 个有
+- `SynVowImageTotalGroups` —— 2/3 个有
+- `easy batchAnything` —— 2/3 个有
+- `easy convertAnything` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `easy forLoopEnd` —— 2/3 个有
+- `easy forLoopStart` —— 2/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
 
 ## 典型参数
 

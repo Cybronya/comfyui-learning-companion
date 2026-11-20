@@ -1,67 +1,62 @@
 ---
 name: unknown_workflow_sampler_unet_vae_110
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.817545
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, LoadImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.819889
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_minimax_h3_r2v_turbo 多参加速_2100758868111486978.json, 视频生成/图生视频/video_minimax_h3_r2v_turbo_4ref_2102954009563848706.json, 视频生成/图生视频/【开源】minimax_h3 音频参考生MV_2084184318896857090.json, 视频生成/图生视频/【老金驿站】MinimaxH3多参考视频工作流_2084270884050792449.json, 视频生成/图生视频/主要_2092662832407076865.json, 视频生成/图生视频/加速升级版！ MiniMax-H3 图生视频！_2088799409717997570.json, 视频生成/图生视频/加速版Minimax多参生视频BF16高质量-sage+Block Cache (T8)_2085374592817909762.json, 视频生成/图生视频/加速高质开源MiniMax+H3+FL2VA开源版-首尾帧参考生视频+++_2084152775365189633.json, 视频生成/图生视频/参考生视频_MiniMax H3_2084453784557809665.json, 视频生成/图生视频/无参考视频-新加速高质开源MiniMax H3 RE2VA开源版_2087442373067501569.json, 视频生成/文生视频/多图参考H3广告_2085248140055236609.json]
+members: [图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json, 图片生成/文生图/incontext-controlnet-home_1914936305506287617.json, 图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json, 图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json, 图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json, 图片生成/文生图/一键微电影分镜-flux完全人物一致+自动裁剪-三分镜_1911275546050002945.json, 图片生成/文生图/国漫美女生成器_1965956635371941889.json, 图片生成/文生图/国漫美女生成器_2059552047061626882.json, 图片生成/文生图/赤木晴子生成工作流_1923305531946299393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_110
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/video_minimax_h3_r2v_turbo 多参加速_2100758868111486978.json、视频生成/图生视频/video_minimax_h3_r2v_turbo_4ref_2102954009563848706.json、视频生成/图生视频/【开源】minimax_h3 音频参考生MV_2084184318896857090.json、视频生成/图生视频/【老金驿站】MinimaxH3多参考视频工作流_2084270884050792449.json、视频生成/图生视频/主要_2092662832407076865.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Q版3D女孩生成器_1977989588658651138.json、图片生成/文生图/incontext-controlnet-home_1914936305506287617.json、图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json、图片生成/文生图/incontextlora-人物肖像_1915236159570509826.json、图片生成/文生图/一致性美女小红书网图神器｜Flux_1909542088999116801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
+- **样本数**：9
+- **可信度**：强结论
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `LoadImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `DualCLIPLoader`
+- `KSamplerSelect`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 10/11 个有
-- `KSamplerSelect` —— 9/11 个有
-- `LoadAudio` —— 7/11 个有
-- `PathchSageAttentionKJ` —— 6/11 个有
-- `VHS_LoadVideo` —— 5/11 个有
-- `MiniMaxH3BlockCacheT8` —— 4/11 个有
-- `LoraLoaderModelOnly` —— 3/11 个有
-- `PreviewAny` —— 3/11 个有
-- `RHLLMChatNode` —— 3/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/11 个有
-- `MiniMaxH3TurboLoRA` —— 2/11 个有
-- `MiniMaxH3TurboSampler` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `MiniMaxH3ImageToVideo` —— 1/11 个有
-- `TrimAudioDuration` —— 1/11 个有
-- `VHS_VideoInfo` —— 1/11 个有
-- `easy cleanGpuUsed` —— 1/11 个有
+- `EmptySD3LatentImage` —— 8/9 个有
+- `ModelSamplingFlux` —— 8/9 个有
+- `LoraLoader` —— 7/9 个有
+- `CLIPTextEncode` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
+- `CLIPTextEncodeFlux` —— 4/9 个有
+- `FluxGuidance` —— 4/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `PrimitiveInt` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `EmptyLatentImage` —— 1/9 个有
+- `ImageCrop+` —— 1/9 个有
+- `ImpactInt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | 0.8 - 1 | 7 | 90% |
+| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1536 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -69,4 +64,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，7 个样本，取值集中（一致性 90%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

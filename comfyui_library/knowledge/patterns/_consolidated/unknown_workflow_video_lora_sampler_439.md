@@ -1,101 +1,54 @@
 ---
 name: unknown_workflow_video_lora_sampler_439
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.808429
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.894833
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageFromBatch+, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json, 视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json, 视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json, 视频生成/图生视频/图生视频 BindWeave 双图编辑 · 数字人音色克隆_2029535256906309633.json, 视频生成/文生视频/多重参考生视频（WAN_BindWeave+TTS+MULTITALK）_1990350029464498177.json]
+members: [视频生成/文生视频/wan2.2 文生视频_1956285811346079746.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json, 视频生成/文生视频/（6+4步最佳质量）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978813759940628482.json, 视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2模型高低噪同模型高动态文生视频V1（KJ版）_1979736664522264578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_439
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json、视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json、视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/wan2.2 文生视频_1956285811346079746.json、视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json、视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json、视频生成/文生视频/（6+4步最佳质量）Wan2.2 Smooth Mix高动态差异模型文生视频V1（KJ版）_1978813759940628482.json、视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
+全部 6 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
 - `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `CLIPLoader` —— 5/7 个有
-- `CR Prompt Text` —— 5/7 个有
-- `DrawMaskOnImage` —— 5/7 个有
-- `ImageBatchMulti` —— 5/7 个有
-- `InvertMask` —— 5/7 个有
-- `MaskBatchMulti` —— 5/7 个有
-- `MathExpression|pysssss` —— 5/7 个有
-- `PreviewAny` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `SaveAudio` —— 5/7 个有
-- `SolidMask` —— 5/7 个有
-- `TextImageEncodeQwenVL` —— 5/7 个有
-- `WanVideoAddBindweaveEmbeds` —— 5/7 个有
-- `WanVideoEncodeLatentBatch` —— 5/7 个有
-- `WanVideoTextEncodeCached` —— 5/7 个有
-- `easy imageRemBg` —— 5/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `ImageRemoveBackground+` —— 3/7 个有
-- `Int` —— 3/7 个有
-- `PrimitiveFloat` —— 3/7 个有
-- `TextInput_` —— 3/7 个有
-- `TransparentBGSession+` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `CreateCFGScheduleFloatList` —— 2/7 个有
-- `Float` —— 2/7 个有
-- `INTConstant` —— 2/7 个有
-- `ImageConcanate` —— 2/7 个有
-- `ImagePadKJ` —— 2/7 个有
-- `JjkText` —— 2/7 个有
-- `MaskPreview+` —— 2/7 个有
-- `Primitive integer [Crystools]` —— 2/7 个有
-- `RMBG` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `WanVideoScheduler` —— 2/7 个有
-- `WanVideoSigmaToStep` —— 2/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
+- `CR Prompt Text` —— 5/6 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `JWInteger` —— 5/6 个有
+- `LayerColor: Brightness & Contrast` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `easy int` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,98 +3,78 @@ name: image_to_image_controlnet_lora_sampler_10
 type: Image To Image
 frequency: 3
 level: strong
-coverage: 0.737667
-common_nodes: [AIO_Preprocessor, BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, CR Latent Batch Size, CR Text, CR Text Concatenate, ConditioningZeroOut, ControlNetApplySD3, ControlNetLoaderAdvanced, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), ImpactSwitch, Int, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, PreviewImage, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, SetUnionControlNetType, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy float]
-problems: []
+coverage: 0.828667
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX krea 图生图工作流｜ControlNet_1953392904431697922.json, 图片生成/图生图/FLUX 图生图 + 反推提示词 + ControlNet_1942957881928925186.json, 图片生成/图生图/Flux Krea 图生图+自动提示词+润色+ControlNet_1951125854850064386.json]
+members: [图片生成/图生图/Qwen控制+Z_image洗图_1993937974584950785.json, 图片生成/文生图/controlnet—千问教学工作流_1994239870906417154.json, 图片生成/文生图/qwen-毛坯房一键精装图_1994410356925665282.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX krea 图生图工作流｜ControlNet_1953392904431697922.json、图片生成/图生图/FLUX 图生图 + 反推提示词 + ControlNet_1942957881928925186.json、图片生成/图生图/Flux Krea 图生图+自动提示词+润色+ControlNet_1951125854850064386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen控制+Z_image洗图_1993937974584950785.json、图片生成/文生图/controlnet—千问教学工作流_1994239870906417154.json、图片生成/文生图/qwen-毛坯房一键精装图_1994410356925665282.json）
 
 - **类型**：Image To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `AIO_Preprocessor`
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPTextEncodeFlux`
-- `CR Latent Batch Size`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `ControlNetApplySD3`
-- `ControlNetLoaderAdvanced`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
 - `Image Comparer (rgthree)`
-- `ImpactSwitch`
-- `Int`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `PreviewImage`
-- `RH_Translator`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetUnionControlNetType`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy float`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `RH_Prompter` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `Joy_caption_two` —— 1/3 个有
-- `Joy_caption_two_load` —— 1/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SetUnionControlNetType` —— 2/3 个有
+- `AILab_QwenVL` —— 1/3 个有
+- `CR SDXL Aspect Ratio` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `SeedVR2` —— 1/3 个有
+- `SeedVR2ExtraArgs` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.2 | 0.2 - 0.2 | 3 | 100% |
-| LoRA 文本强度 | 0.2 | 0.2 - 0.2 | 3 | 100% |
-| ControlNet 权重 | 0.5 | 0.5 - 0.5 | 3 | 100% |
-| 采样步数 | 30 | 20 - 30 | 3 | 82% |
+| 采样步数 | 8 | 4 - 10 | 3 | 66% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 100% |
-| 重绘幅度 | 0.55 | 0.55 - 0.55 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| ControlNet 权重 | 0.8 | 0.75 - 1 | 3 | 87% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.2，观测区间 0.2 - 0.2，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.2，观测区间 0.2 - 0.2，3 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.5，观测区间 0.5 - 0.5，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，观测区间 20 - 30，3 个样本，取值集中（一致性 82%）
+- 采样步数 中位数 8，观测区间 4 - 10，3 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 100%
-- 重绘幅度 中位数 0.55，观测区间 0.55 - 0.55，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.8，观测区间 0.75 - 1，3 个样本，取值集中（一致性 87%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

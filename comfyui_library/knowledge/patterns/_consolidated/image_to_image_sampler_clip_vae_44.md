@@ -1,63 +1,72 @@
 ---
 name: image_to_image_sampler_clip_vae_44
 type: Image To Image
-frequency: 5
-level: moderate
-coverage: 0.9036
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, NunchakuFluxDiTLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.867667
+common_nodes: [CLIPTextEncode, Compositor3, CompositorConfig3, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, InspyrenetRembg, KSampler, KepStringLiteral, LoadImage, PreviewImage, RH_Translator, ReferenceLatent, SDXLEmptyLatentSizePicker+, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/nunchaku-flux.1-kontext-dev-8步快速t生成三视图_1942909354280435713.json, 图片生成/图生图/nunchaku-flux.1-kontext-dev-8步快速出图_1942473442157342721.json, 图片生成/图生图/nunchaku-flux.1-kontext-dev-扩图-8步快速出图_1954878812870754306.json, 图片生成/图生图/【全能图片G4o同款】Flux Kontext 图像编辑加速版_1948192407916544002.json, 平台全量/Kontext- 改图 - Nunchaku 加速版_1942944997371240449.json]
+members: [图片生成/图生图/nunchaku-Kontext-3倍加速_1940681407448641538.json, 图片生成/图生图/图像拼接与融合（Kontext&enricos-nodes）_1939667632876654594.json, 图片生成/图生图/图像融合-Kontext&ACE++_1940386465027174401.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_44
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/nunchaku-flux.1-kontext-dev-8步快速t生成三视图_1942909354280435713.json、图片生成/图生图/nunchaku-flux.1-kontext-dev-8步快速出图_1942473442157342721.json、图片生成/图生图/nunchaku-flux.1-kontext-dev-扩图-8步快速出图_1954878812870754306.json、图片生成/图生图/【全能图片G4o同款】Flux Kontext 图像编辑加速版_1948192407916544002.json、平台全量/Kontext- 改图 - Nunchaku 加速版_1942944997371240449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/nunchaku-Kontext-3倍加速_1940681407448641538.json、图片生成/图生图/图像拼接与融合（Kontext&enricos-nodes）_1939667632876654594.json、图片生成/图生图/图像融合-Kontext&ACE++_1940386465027174401.json）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
+- `Compositor3`
+- `CompositorConfig3`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `FluxKontextImageScale`
+- `InspyrenetRembg`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KepStringLiteral`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
+- `PreviewImage`
+- `RH_Translator`
 - `ReferenceLatent`
+- `SDXLEmptyLatentSizePicker+`
 - `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `easy imageConcat` —— 3/5 个有
-- `LayerUtility: ImageMaskScaleAs` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `ImagePadForOutpaint` —— 1/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `UNETLoader` —— 2/3 个有
+- `ACE_ImageFaceCrop` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LayerMask: LoadSAM2Model` —— 1/3 个有
+- `LayerMask: ObjectDetectorFL2` —— 1/3 个有
+- `LayerMask: SAM2UltraV2` —— 1/3 个有
+- `LoadFlorence2Model` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `NunchakuFluxDiTLoader` —— 1/3 个有
+- `NunchakuFluxLoraLoader` —— 1/3 个有
+- `RH_ComfyFluxKontext` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 343 | 5 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 768x1280 (0.6) | - | 3 | 67% |
+| 高度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,9 +74,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 343，5 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 343，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 宽度 最常用 768x1280 (0.6)，3 个样本，一致性 67%
+- 高度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

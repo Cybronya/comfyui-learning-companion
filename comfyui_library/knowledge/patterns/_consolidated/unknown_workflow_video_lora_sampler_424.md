@@ -1,79 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_424
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.449571
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.8385
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/SCAIL2+动作迁移_角色替换+relighting+无限时长_2080312516533637121.json, 数字人/数字人/scail2_2068593062779121665.json, 视频生成/图生视频/10段换装 最终版本_2077357335839854594.json, 视频生成/图生视频/10段换装 补帧_2077460288709947393.json, 视频生成/图生视频/10段换装_2077288214603329538.json, 视频生成/图生视频/10段换装改_2077324573078548481.json, 视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json]
+members: [视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json, 视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json, 视频生成/图生视频/wanvideo_Stand-In_人脸一致性_1959331317118873601.json, 视频生成/图生视频/wanvideo_Stand-In角色一致性工作流_1956293638198362114.json, 视频生成/图生视频/角色一致性图生视频_1973164651716415490.json, 视频生成/文生视频/Wan2.2Stand-in视频面部交换实战_2004807686212513794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_424
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/SCAIL2+动作迁移_角色替换+relighting+无限时长_2080312516533637121.json、数字人/数字人/scail2_2068593062779121665.json、视频生成/图生视频/10段换装 最终版本_2077357335839854594.json、视频生成/图生视频/10段换装 补帧_2077460288709947393.json、视频生成/图生视频/10段换装_2077288214603329538.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json、视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json、视频生成/图生视频/wanvideo_Stand-In_人脸一致性_1959331317118873601.json、视频生成/图生视频/wanvideo_Stand-In角色一致性工作流_1956293638198362114.json、视频生成/图生视频/角色一致性图生视频_1973164651716415490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 6/7 个有
-- `GetNode` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `SamplerCustom` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `VAEDecode` —— 6/7 个有
-- `WanSCAILToVideo` —— 6/7 个有
-- `BatchImagesNode` —— 5/7 个有
-- `ColorTransfer` —— 5/7 个有
-- `ComfyMathExpression` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `GetImageRangeFromBatch` —— 5/7 个有
-- `WanChunkFeedForward` —— 5/7 个有
-- `PrimitiveBoolean` —— 3/7 个有
-- `PrimitiveStringMultiline` —— 3/7 个有
-- `VHS_VideoInfo` —— 2/7 个有
-- `FL_RIFE` —— 1/7 个有
-- `GoogleTranslateTextNode` —— 1/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `PrimitiveString` —— 1/7 个有
-- `SCAILAutoExtend` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `TTResolutionSelector` —— 1/7 个有
-- `UNETLoader` —— 1/7 个有
-- `WanContextWindowsManual` —— 1/7 个有
+- `ApplyFaceProcessor` —— 5/6 个有
+- `FaceProcessorLoader` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `CreateCFGScheduleFloatList` —— 3/6 个有
+- `GetImageSizeAndCount` —— 3/6 个有
+- `WanVideoSetLoRAs` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `DrawMaskOnImage` —— 1/6 个有
+- `FaceOnlyModeSwitch` —— 1/6 个有
+- `GetImageSize+` —— 1/6 个有
+- `ImagePadKJ` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `InvertMask` —— 1/6 个有
+- `RMBG` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `VideoInputPreprocessor` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,85 +3,75 @@ name: unknown_workflow_controlnet_video_lora_42
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.946
-common_nodes: [CLIPVisionLoader, CR Text, ConvertOpenPoseKeypointsToDWPose, DWPreprocessor, DrawViTPose, EmptyImage, GetImageRangeFromBatch, GroundingDinoModelLoader_SDPose, ImageFromBatch+, ImageResizeKJv2, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch1way, LoadImage, LoadNLFModel, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseAndFaceDetection, PoseDetectionOneToAllAnimation, PoseDetectionVitPoseToDWPose, PrimitiveBoolean, RenderNLFPoses, SDPoseOODLoader, SDPoseOODProcessor, SimpleCalculatorKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoAddSteadyDancerEmbeds, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSamplerExtraArgs, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSamplerv2, WanVideoScheduler, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy compare, easy int]
+coverage: 0.4915
+common_nodes: [CLIPVisionLoader, CR Prompt Text, GetNode, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SDPoseOODLoader, SDPoseOODProcessor, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader]
 problems: []
 missing: []
-members: [平台全量/动作迁移合集-wan2.2+Animate、SteadyDancer、SCAIL_2018334020274233346.json, 视频生成/图生视频/动作迁移合集-图生视频-wan Animate、SteadyDancer、SCAIL_2017059703095824385.json]
+members: [视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json, 视频生成/图生视频/animate动作迁移_1983367608349171713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_42
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/动作迁移合集-wan2.2+Animate、SteadyDancer、SCAIL_2018334020274233346.json、视频生成/图生视频/动作迁移合集-图生视频-wan Animate、SteadyDancer、SCAIL_2017059703095824385.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json、视频生成/图生视频/animate动作迁移_1983367608349171713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Text`
-- `ConvertOpenPoseKeypointsToDWPose`
-- `DWPreprocessor`
-- `DrawViTPose`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GroundingDinoModelLoader_SDPose`
-- `ImageFromBatch+`
+- `CR Prompt Text`
+- `GetNode`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LazySwitch1way`
+- `JWInteger`
 - `LoadImage`
-- `LoadNLFModel`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
 - `OnnxDetectionModelLoader`
 - `PoseAndFaceDetection`
-- `PoseDetectionOneToAllAnimation`
-- `PoseDetectionVitPoseToDWPose`
-- `PrimitiveBoolean`
-- `RenderNLFPoses`
 - `SDPoseOODLoader`
 - `SDPoseOODProcessor`
-- `SimpleCalculatorKJ`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
-- `WanVideoAddSteadyDancerEmbeds`
+- `VHS_VideoInfo`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSamplerv2`
-- `WanVideoScheduler`
-- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy compare`
-- `easy int`
+- `YOLOModelLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `DrawViTPose` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `MemoryCleaner` —— 1/2 个有
+- `PDIMAGE_LongerSize` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `Switch any [Crystools]` —— 1/2 个有
+- `TT_img_enc_v2` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `easy boolean` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
+- `easy int` —— 1/2 个有
 
 ## 典型参数
 

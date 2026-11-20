@@ -1,74 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_486
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.850333
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, Display Int (rgthree), INTConstant, ImageConcanate, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewImage, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+coverage: 0.4838
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Float, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SigmasGraph, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/S2V+控制+Framepack+ContextWindow长视频工作流_1977342021478305793.json, 视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json, 视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json, 视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json, 视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json, 视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json]
+members: [视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json, 视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json, 视频生成/图生视频/心然·寻源-MiniMax H3 多模态参考数字人对口型_2090830886253195265.json, 视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_486
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/S2V+控制+Framepack+ContextWindow长视频工作流_1977342021478305793.json、视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json、视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json、视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json、视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json、视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json、视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json、视频生成/图生视频/心然·寻源-MiniMax H3 多模态参考数字人对口型_2090830886253195265.json、视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `DWPreprocessor`
-- `Display Int (rgthree)`
-- `INTConstant`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewImage`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
-- `VHS_LoadVideo`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Float`
+- `GetNode`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `SigmasGraph`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 5/6 个有
-- `GIMMVFI_interpolate` —— 5/6 个有
-- `ImageFlip+` —— 5/6 个有
-- `DepthAnythingPreprocessor` —— 1/6 个有
-- `GetImageRangeFromBatch` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch+` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `WanVideoLoraSelect` —— 1/6 个有
+- `Divide [DVB]` —— 4/5 个有
+- `FlashVSRNode` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `JWInteger` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `Text` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/5 个有
+- `LoadAudio` —— 2/5 个有
+- `MiniMaxH3ImageToVideo` —— 2/5 个有
+- `ZNGB_AudioCrop` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `SDVN Fast Groups Bypasser` —— 1/5 个有
+- `SoundFlow_GetLength` —— 1/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/5 个有
 
 ## 典型参数
 

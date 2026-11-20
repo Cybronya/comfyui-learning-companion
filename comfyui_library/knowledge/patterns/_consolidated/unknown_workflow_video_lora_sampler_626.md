@@ -1,68 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_626
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.5796
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.782333
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetNode, ImageConcanate, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/magref 三图参考极速视频生成_1935629484227743745.json, 视频生成/图生视频/magref 单图参考极速视频生成_1935594856536264705.json, 视频生成/图生视频/magref 双图参考极速视频生成_1935606766069809154.json, 视频生成/图生视频/wanvideo+ani全能视频S动画视频生成_1945320019179839489.json, 视频生成/图生视频/更强的一致性双图编辑MAGREF_lightx2v加速_1935270745905745921.json]
+members: [图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json, 图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json, 视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_626
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/magref 三图参考极速视频生成_1935629484227743745.json、视频生成/图生视频/magref 单图参考极速视频生成_1935594856536264705.json、视频生成/图生视频/magref 双图参考极速视频生成_1935606766069809154.json、视频生成/图生视频/wanvideo+ani全能视频S动画视频生成_1945320019179839489.json、视频生成/图生视频/更强的一致性双图编辑MAGREF_lightx2v加速_1935270745905745921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json、图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json、视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
 - `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 4/5 个有
-- `ImageConcatFromBatch` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `RMBG` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `EmptyImage` —— 3/5 个有
-- `Label (rgthree)` —— 3/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `Video_Upscale_With_Model` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `AddLabel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `InspyrenetRembg` —— 1/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

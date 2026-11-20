@@ -3,66 +3,83 @@ name: unknown_workflow_video_upscale_latent_upscale_155
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.496
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, Pipe from any [Crystools], Pipe to/edit any [Crystools], PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SimpleMath+, SolAttnMiniMax, SplitSigmas, UNETLoader, VAELoader, VHS_VideoCombine, easy blocker, easy boolean, easy ifElse]
+coverage: 0.5905
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CM_IntToFloat, CR Prompt Text, ComfyMathExpression, EasyCache, FloatConstant, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LiconMSR, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, ModelAttentionBackend, PathchSageAttentionKJ, PromptRelayEncode, PurgeVRAM_UTK, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringFunction|pysssss, StringLength, StringSubstring, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, string_util_StrFind]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3_多参生视频_2108931656911507457.json, 视频生成/图生视频/minimax_H3_多参_2108804190872096769.json]
+members: [视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json, 视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_155
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3_多参生视频_2108931656911507457.json、视频生成/图生视频/minimax_H3_多参_2108804190872096769.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json、视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
-- `CR Text`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `ExtendIntermediateSigmas`
+- `EasyCache`
+- `FloatConstant`
 - `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
-- `LoadAudio`
+- `LTX2AttentionTunerPatch`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LiconMSR`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SemanticBridgeApplyT8`
-- `MiniMaxH3SemanticBridgeConfigT8`
+- `MiniMaxH3ImageToVideo`
 - `ModelAttentionBackend`
-- `Pipe from any [Crystools]`
-- `Pipe to/edit any [Crystools]`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `PathchSageAttentionKJ`
+- `PromptRelayEncode`
+- `PurgeVRAM_UTK`
+- `RHLLMChatNode`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleMath+`
-- `SolAttnMiniMax`
-- `SplitSigmas`
+- `SolidMask`
+- `StringFunction|pysssss`
+- `StringLength`
+- `StringSubstring`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy blocker`
-- `easy boolean`
-- `easy ifElse`
+- `easy showAnything`
+- `string_util_StrFind`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
 
 ## 典型参数
 

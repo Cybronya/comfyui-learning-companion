@@ -1,77 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_855
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.621667
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.796
+common_nodes: [> Text Replace, Any To Any, CFGGuider, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VHS_SelectFilename, VHS_VideoCombine, VRAMReserver, VisualizeSigmasKJ, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json, 视频生成/图生视频/Animate最强—人物姿态迁移！！--双人视频--单人视频！！_1978005827682455554.json, 视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json]
+members: [视频生成/图生视频/Ltx2多帧首尾帧运动强化版V1_2010552640517705729.json, 视频生成/图生视频/多图首尾帧视频-Ltx2-V20260112(48g)_2010704583722536962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_855
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json、视频生成/图生视频/Animate最强—人物姿态迁移！！--双人视频--单人视频！！_1978005827682455554.json、视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Ltx2多帧首尾帧运动强化版V1_2010552640517705729.json、视频生成/图生视频/多图首尾帧视频-Ltx2-V20260112(48g)_2010704583722536962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
+全部 2 个 workflow 都包含：
+- `> Text Replace`
+- `Any To Any`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `Int`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `MultiplePathsInput`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
+- `Qwen3_VQA`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `VHS_LoadVideo`
+- `VAEDecodeTiled`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `ImageConcatMulti` —— 2/3 个有
-- `ImpactInt` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `WanVideoLoraSelectMulti` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `FlashVSRNode` —— 1/3 个有
-- `GemmaAPITextEncode` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `MemoryCleaner` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `ShellAgentPluginSaveAudios` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `Textbox` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `WanVideoTeaCache` —— 1/3 个有
-- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `VRAMReserver`
+- `VisualizeSigmasKJ`
+- `easy showAnything`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | - | 2 | 100% |
+| 高度 | 25 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -79,4 +79,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,55 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_482
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.683667
-common_nodes: [ImageResizeKJv2, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9314
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, PreviewAudio, SimpleMath+, SoundFlow_GetLength, SoundFlow_TrimAudio, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy int]
 problems: []
 missing: []
-members: [平台全量/58.tonnie-Ditto视频风格转绘（效果不好）_2008694710507937794.json, 平台全量/Ditto视频转绘（内置几十种风格任选）_1995489402400997377.json, 平台全量/Ditto视频转绘（内置几十种风格任选）_2064313700726689794.json, 平台全量/Ditto视频风格转换_1981976450750390274.json, 平台全量/ditto+wan2.2最强视频风格转换_1980305437578997761.json, 平台全量/ditto+wan2.2最强视频风格转换_2018164623127617538.json]
+members: [视频生成/图生视频/Humo单人数字人_1967417931208515586.json, 视频生成/图生视频/电商带货，投喂产品图加模特即可_2037199894196264961.json, 视频生成/文生视频/Humo音频生视频-by Aiwood_1966919444201136129.json, 视频生成/文生视频/humo单图参考+配音_1968279752563937282.json, 音频生成/音频生成/12.Humo电商展示+语音_录音_2000793155027038209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_482
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/58.tonnie-Ditto视频风格转绘（效果不好）_2008694710507937794.json、平台全量/Ditto视频转绘（内置几十种风格任选）_1995489402400997377.json、平台全量/Ditto视频转绘（内置几十种风格任选）_2064313700726689794.json、平台全量/Ditto视频风格转换_1981976450750390274.json、平台全量/ditto+wan2.2最强视频风格转换_1980305437578997761.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Humo单人数字人_1967417931208515586.json、视频生成/图生视频/电商带货，投喂产品图加模特即可_2037199894196264961.json、视频生成/文生视频/Humo音频生视频-by Aiwood_1966919444201136129.json、视频生成/文生视频/humo单图参考+配音_1968279752563937282.json、音频生成/音频生成/12.Humo电商展示+语音_录音_2000793155027038209.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `VHS_LoadVideo`
+- `LoadAudio`
+- `LoadImage`
+- `PreviewAudio`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
+- `ToInt`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 4/6 个有
-- `WanVideoSLG` —— 4/6 个有
-- `INTConstant` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `GetNode` —— 2/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `RIFE VFI` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `WanVideoEnhanceAVideo` —— 2/6 个有
-- `WanVideoExperimentalArgs` —— 2/6 个有
-- `SimpleMath+` —— 1/6 个有
+- `AudioSeparation` —— 4/5 个有
+- `Display Int (rgthree)` —— 4/5 个有
+- `ImageBatchMulti` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `LoadWanVideoT5TextEncoder` —— 3/5 个有
+- `RecordAudio` —— 3/5 个有
+- `WanVideoTextEncode` —— 3/5 个有
+- `easy imageRemBg` —— 3/5 个有
+- `WanVideoSetBlockSwap` —— 2/5 个有
+- `WanVideoSetLoRAs` —— 2/5 个有
+- `WanVideoTextEncodeCached` —— 2/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `MelBandRoFormerModelLoader` —— 1/5 个有
+- `MelBandRoFormerSampler` —— 1/5 个有
+- `NormalizeAudioLoudness` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
 
 ## 典型参数
 

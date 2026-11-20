@@ -1,73 +1,82 @@
 ---
 name: image_to_image_sampler_clip_unet_137
 type: Image To Image
-frequency: 5
+frequency: 3
 level: strong
-coverage: 0.5178
-common_nodes: [Bookmark (rgthree), CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetNode, ImageScaleToTotalPixels, KSampler, Label (rgthree), LoadImage, ModelSamplingAuraFlow, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, SaveImage, SetNode, Switch any [Crystools], UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.824333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, ImageAndMaskPreview, ImageResizeKJ, KSampler, LoadImage, Mask Fill Holes, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, ShowText|pysssss, TTP_text_mix, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/当今最强！阿里生图模型Z-Image_1993863439988752385.json, 图片生成/文生图/阿里生图模型Z-Image-阿浩_1994001483769249794.json, 图片生成/文生图/阿里生图模型Z-Image-阿浩_2017794207607431170.json, 数字人/数字人/阿里生图模型Z-Image-阿浩_2013173069061300225.json, 数字人/数字人/阿里生图模型Z-Image-阿浩_2026864764109983745.json]
+members: [图片生成/图生图/Kontext-稳定融图-双图版-产品_1940597087887323137.json, 图片生成/图生图/Kontext-稳定融图-双图版-产品_1970426361695379458.json, 图片生成/图生图/Kontext指定区域产品溶图（双图）_1942126651151171585.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_137
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/当今最强！阿里生图模型Z-Image_1993863439988752385.json、图片生成/文生图/阿里生图模型Z-Image-阿浩_1994001483769249794.json、图片生成/文生图/阿里生图模型Z-Image-阿浩_2017794207607431170.json、数字人/数字人/阿里生图模型Z-Image-阿浩_2013173069061300225.json、数字人/数字人/阿里生图模型Z-Image-阿浩_2026864764109983745.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Kontext-稳定融图-双图版-产品_1940597087887323137.json、图片生成/图生图/Kontext-稳定融图-双图版-产品_1970426361695379458.json、图片生成/图生图/Kontext指定区域产品溶图（双图）_1942126651151171585.json）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `GetNode`
-- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `ImageAndMaskPreview`
+- `ImageResizeKJ`
 - `KSampler`
-- `Label (rgthree)`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `Mask Fill Holes`
+- `PreviewImage`
+- `RH_Translator`
+- `ReferenceLatent`
 - `SaveImage`
-- `SetNode`
-- `Switch any [Crystools]`
+- `ShowText|pysssss`
+- `TTP_text_mix`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/5 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `FluxKontextImageScale` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `ImpactInt` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `NunchakuFluxDiTLoader` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `RepeatLatentBatch` —— 2/3 个有
+- `Seed` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -1,104 +1,78 @@
 ---
 name: image_to_image_lora_sampler_unet_185
 type: Image To Image
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.873
-common_nodes: [CLIPLoader, CR Text Concatenate, ComfySwitchNode, ConditioningZeroOut, DapaoBatchImageGrid, EmptyLatentImage, HfImageToRGB, KSampler, LayerColor: Brightness & Contrast, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, QwenImage21Cache, RHHiddenNodes, ReferenceLatent, SaveImage, SeedVR2Conditioning, SeedVR2Preprocess, ShunjingAIShade, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy compare, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSwitch, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, 图像缩放V2_孤海, 长边短边]
+coverage: 0.873667
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2114635915229483009.json, 图片生成/图生图/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2115294649714831362.json, 图片生成/图生图/“一张图能变多少姿势？”不！是Qwen2.1出的一整套人像写真！小红书宫格图组图故事板分镜随心发！_2108456964538847234.json, 视频生成/图生视频/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2116327143281090562.json]
+members: [图片生成/图生图/Qwen2511-多视角_2004491947710578690.json, 图片生成/图生图/laoA 单姿态控制_2083568675835174913.json, 图片生成/图生图/qwen image edit 2509-图像编辑_1971041918497001474.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_185
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2114635915229483009.json、图片生成/图生图/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2115294649714831362.json、图片生成/图生图/“一张图能变多少姿势？”不！是Qwen2.1出的一整套人像写真！小红书宫格图组图故事板分镜随心发！_2108456964538847234.json、视频生成/图生视频/“一张图能变多少姿势？”不！Qwen2.1出的一整套人像写真！小红书宫格图组图故事板短剧分镜随心发！_2116327143281090562.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen2511-多视角_2004491947710578690.json、图片生成/图生图/laoA 单姿态控制_2083568675835174913.json、图片生成/图生图/qwen image edit 2509-图像编辑_1971041918497001474.json）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CR Text Concatenate`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `DapaoBatchImageGrid`
-- `EmptyLatentImage`
-- `HfImageToRGB`
 - `KSampler`
-- `LayerColor: Brightness & Contrast`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropByMask V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: ImageScaleRestore V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `RHHiddenNodes`
-- `ReferenceLatent`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2Preprocess`
-- `ShunjingAIShade`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `easy compare`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSwitch`
-- `easy promptLine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `图像缩放V2_孤海`
-- `长边短边`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Bypasser (rgthree)` —— 2/3 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `EmptySD3LatentImage` —— 1/3 个有
+- `FluxKontextImageScale` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `ImageBatchMulti` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `SeedVR2` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 采样步数 | 40 | 40 - 40 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | deis_2m | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis_2m，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（12/3 个样本）：Steps较低可能导致细节不足

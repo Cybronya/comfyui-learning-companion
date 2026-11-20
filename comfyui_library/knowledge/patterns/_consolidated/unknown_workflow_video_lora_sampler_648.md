@@ -1,75 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_648
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.58225
-common_nodes: [GetImageSizeAndCount, GetNode, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.877333
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/首尾帧-FusionX_VACE_放大_补帧_1933343489382096898.json, 平台全量/一键图转2K高清动态壁纸 +旋转_1984282159491989505.json, 平台全量/姿态模仿-FusionX_VACE_1935209988690477058.json, 视频生成/图生视频/一键将图像转换为2K高清动态壁纸_1930433955672264705.json]
+members: [数字人/数字人/Infinitetalk_视频对口型-保持原视频动作一致_1979962837202276353.json, 数字人/数字人/数字人-视频对口型-完美复刻动作，保持原视频动作一致_1988076238738796546.json, 视频生成/图生视频/InfiniteTalk数字人 _ 视频生视频-自动对口型（支持唱歌_说话）高动态_1992841755221618690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_648
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/首尾帧-FusionX_VACE_放大_补帧_1933343489382096898.json、平台全量/一键图转2K高清动态壁纸 +旋转_1984282159491989505.json、平台全量/姿态模仿-FusionX_VACE_1935209988690477058.json、视频生成/图生视频/一键将图像转换为2K高清动态壁纸_1930433955672264705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Infinitetalk_视频对口型-保持原视频动作一致_1979962837202276353.json、数字人/数字人/数字人-视频对口型-完美复刻动作，保持原视频动作一致_1988076238738796546.json、视频生成/图生视频/InfiniteTalk数字人 _ 视频生视频-自动对口型（支持唱歌_说话）高动态_1992841755221618690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `GetNode`
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `SetNode`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
-- `WanVideoMagCache`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 3/4 个有
-- `LoadAudio` —— 3/4 个有
-- `RIFE VFI` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `TextCombinerTwo` —— 3/4 个有
-- `Video_Upscale_With_Model` —— 3/4 个有
-- `WanVideoVACEStartToEndFrame` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `RH_Captioner` —— 2/4 个有
-- `RH_Prompter` —— 2/4 个有
-- `Anything Everywhere` —— 1/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `ImageBlend` —— 1/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `ImageListToImageBatch` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `ImpactImageBatchToImageList` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `ReActorFaceSwap` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `Zoe-DepthMapPreprocessor` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `Float to Int` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RH_GetAudioDuration` —— 1/3 个有
+- `SaveAudio` —— 1/3 个有
+- `SoundFlow_GetLength` —— 1/3 个有
+- `Switch any [Crystools]` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `VHS_VideoInfoSource` —— 1/3 个有
+- `easy seed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

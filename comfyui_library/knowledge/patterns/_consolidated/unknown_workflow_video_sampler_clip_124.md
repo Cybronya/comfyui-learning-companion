@@ -2,58 +2,66 @@
 name: unknown_workflow_video_sampler_clip_124
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.9176
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJ, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+level: moderate
+coverage: 0.806
+common_nodes: [Anything Everywhere3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/图生图/万相wan2.1极致图生视频ComfyUI_1906877379761905665.json, 平台全量/B站：AI绘画师-万相wan2.1 图生视频 ComfyUI org工作流_1906341291280486401.json, 平台全量/【趣味】wan2.1官方图生视频工作流+teacache加速_1897940491827105794.json, 视频生成/图生视频/万相-Wan2.1-图生视频_1901974657921081346.json, 视频生成/图生视频/万相wan2.1 图生视频 ComfyUI org 官方流  B站 楚门的AI世界_1894951787738824705.json]
+members: [视频生成/图生视频/AI写视频提示词 首尾帧视频 wan2.1_1909176550938259458.json, 视频生成/图生视频/Wan首尾帧视频V2_1914690267922821122.json, 视频生成/图生视频/通义万相Wan2.1首尾帧视频V3-url_1918734259941474306.json, 视频生成/图生视频/通义万相Wan2.1首尾帧视频V3_1918700780960808961.json, 视频生成/图生视频/首尾帧视频 wan2.1_1908903068329779201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_124
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/万相wan2.1极致图生视频ComfyUI_1906877379761905665.json、平台全量/B站：AI绘画师-万相wan2.1 图生视频 ComfyUI org工作流_1906341291280486401.json、平台全量/【趣味】wan2.1官方图生视频工作流+teacache加速_1897940491827105794.json、视频生成/图生视频/万相-Wan2.1-图生视频_1901974657921081346.json、视频生成/图生视频/万相wan2.1 图生视频 ComfyUI org 官方流  B站 楚门的AI世界_1894951787738824705.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/AI写视频提示词 首尾帧视频 wan2.1_1909176550938259458.json、视频生成/图生视频/Wan首尾帧视频V2_1914690267922821122.json、视频生成/图生视频/通义万相Wan2.1首尾帧视频V3-url_1918734259941474306.json、视频生成/图生视频/通义万相Wan2.1首尾帧视频V3_1918700780960808961.json、视频生成/图生视频/首尾帧视频 wan2.1_1908903068329779201.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ImageResizeKJ`
-- `KSampler`
+- `Anything Everywhere3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `ModelSamplingSD3` —— 2/5 个有
-- `TextInput_` —— 2/5 个有
-- `ImageScaleDownToSize` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `TeaCache` —— 1/5 个有
+- `RH_Translator` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `easy positive` —— 2/5 个有
+- `Bjornulf_CombineTexts` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Load Image From Url (mtb)` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `TextBox` —— 1/5 个有
+- `TextCombinerSix` —— 1/5 个有
+- `easy getNode` —— 1/5 个有
+- `easy setNode` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | uni_pc | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

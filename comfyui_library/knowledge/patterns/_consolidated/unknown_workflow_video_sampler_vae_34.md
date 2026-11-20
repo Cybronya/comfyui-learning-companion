@@ -3,54 +3,58 @@ name: unknown_workflow_video_sampler_vae_34
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.956727
-common_nodes: [LoadWanVideoT5TextEncoder, Primitive integer [Crystools], ShowText, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.919818
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/FusionX-LORA大师级文生视频_1934653525920292866.json, 图片生成/文生图/MoviiGen+LLM电影级视频生成(kj)_1923249753776451586.json, 图片生成/文生图/Self-Forcing+LLM极速万相文生视频_1932599018294013953.json, 图片生成/文生图/WanVAC文生视频CausVid)_2059893998071930881.json, 视频生成/文生视频/FusionX-VACE大师级文生视频_1933556886325346305.json, 视频生成/文生视频/【WanVACE】3-9步极速文生视频_1923635839874551809.json, 视频生成/文生视频/仅需3-9步极速WanVACE+LLM文生视频CausVid)_1923291518734356481.json, 视频生成/文生视频/最新MoviiGen LORA+LLM电影级视频生成_1927750568260059137.json, 视频生成/文生视频/极速万相文生视频-Self-Forcing+LLM_2071395063619477505.json, 视频生成/文生视频/极速万相文生视频_2029388586482667522.json, 视频生成/文生视频/通义万相快速文生视频Self-Forcing+LLM自动视频分镜_1932781703125422081.json]
+members: [视频生成/图生视频/minimaxH3快乐的小孩_2088616677788446722.json, 视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json, 视频生成/图生视频/人物表情语言变化_2098063808349696001.json, 视频生成/图生视频/创意无限_2087087580423741441.json, 视频生成/图生视频/双姝_2098043624184434690.json, 视频生成/图生视频/古装美女扮相_2098413882426609665.json, 视频生成/图生视频/吉他和狗狗_2090264859219947522.json, 视频生成/图生视频/图生视频_2086720339278647297.json, 视频生成/图生视频/快乐的小猫咪_2092480218379411457.json, 视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json, 视频生成/图生视频/香水广告_2098035698040397826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/FusionX-LORA大师级文生视频_1934653525920292866.json、图片生成/文生图/MoviiGen+LLM电影级视频生成(kj)_1923249753776451586.json、图片生成/文生图/Self-Forcing+LLM极速万相文生视频_1932599018294013953.json、图片生成/文生图/WanVAC文生视频CausVid)_2059893998071930881.json、视频生成/文生视频/FusionX-VACE大师级文生视频_1933556886325346305.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/minimaxH3快乐的小孩_2088616677788446722.json、视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json、视频生成/图生视频/人物表情语言变化_2098063808349696001.json、视频生成/图生视频/创意无限_2087087580423741441.json、视频生成/图生视频/双姝_2098043624184434690.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `ShowText`
-- `Text Multiline`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ImageToVideo`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 10/11 个有
-- `RHHiddenNodes` —— 9/11 个有
-- `WanVideoEnhanceAVideo` —— 8/11 个有
-- `Text Concatenate` —— 6/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/11 个有
-- `WanVideoTeaCache` —— 5/11 个有
-- `easy cleanGpuUsed` —— 5/11 个有
-- `ShowText|pysssss` —— 4/11 个有
-- `ColorMatch` —— 3/11 个有
-- `WanVideoVACEModelSelect` —— 3/11 个有
-- `CM_IntToFloat` —— 2/11 个有
-- `JWStringReplace` —— 2/11 个有
-- `RH_LLMAPI_NODE` —— 2/11 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `PrimitiveFloat` —— 10/11 个有
+- `Text` —— 10/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/11 个有
+- `EnhancedLoadDiffusionModel` —— 7/11 个有
+- `LoraLoaderBypassModelOnly` —— 7/11 个有
+- `RH_Captioner` —— 6/11 个有
+- `ResolutionSelector` —— 6/11 个有
+- `TextConcatenate_UTK` —— 6/11 个有
+- `easy showAnything` —— 6/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
+- `RHHiddenNodes` —— 5/11 个有
+- `UNETLoader` —— 4/11 个有
+- `ImageResizeKJv2` —— 2/11 个有
+- `MiniMaxH3BlockCacheT8` —— 2/11 个有
+- `ExtractSubstring` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `JWStringToFloat` —— 1/11 个有
 
 ## 典型参数
 

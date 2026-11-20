@@ -1,82 +1,75 @@
 ---
 name: unknown_workflow_controlnet_upscale_sampler_2
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.773667
-common_nodes: [Anything Everywhere, ApplyPulidFlux, BasicGuider, BasicScheduler, BiRefNet_Hugo, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, DualCLIPLoader, EmptySD3LatentImage, ExpressionEditor, Fast Groups Bypasser (rgthree), FluxGuidance, GridImageSplitter, GrowMask, Image Overlay, ImageFromBatch+, ImageResize+, ImageUpscaleWithModel, InvertMask, KSamplerSelect, LoadImage, ModelSamplingFlux, PreviewImage, Prompts Everywhere, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SeargeIntegerConstant, ShowText|pysssss, TextCombinerTwo, UltimateSDUpscale, UnetLoaderGGUF, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageInsetCrop, easy positive, easy seed]
+frequency: 4
+level: moderate
+coverage: 0.81325
+common_nodes: [AILab_QwenVL, AIO_Preprocessor, BasicScheduler, CLIPLoader, CLIPTextEncode, DetailDaemonSamplerNode, Fast Groups Bypasser (rgthree), ImageScaleToTotalPixelsX, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, SamplerCustom, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SplitSigmas, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZImageFunControlnet, easy cleanGpuUsed, easy imageSizeBySide, easy positive, easy promptConcat]
 problems: []
 missing: []
-members: [图片生成/图生图/【AI由北】人物一致性（电商统一模特）_1917191770050854913.json, 图片生成/图生图/自定义人物【一致性】_1919046530878345217.json, 平台全量/【一致性】生成人物角色素材集_1856622054693916674.json, 平台全量/【一致性】生成人物角色素材集_1977342694357901313.json, 平台全量/【人物一致性】生成人物角色素材集 训练lora_1904203844807462914.json, 数字人/数字人/人物一致性(生成人物角色素材集)  训练Lora_1968573520374583297.json]
+members: [图片生成/图生图/Z-Image-电商专用洗图_2059467669958647810.json, 图片生成/图生图/z-image-turbo-服装模特图-洗图_2059176245241409538.json, 图片生成/文生图/z-image-完美文生图-婚纱摄影-批量出图_2033415203097939970.json, 图片生成/文生图/z-image-完美文生图-私房摄影-批量出图_2036973821743337474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【AI由北】人物一致性（电商统一模特）_1917191770050854913.json、图片生成/图生图/自定义人物【一致性】_1919046530878345217.json、平台全量/【一致性】生成人物角色素材集_1856622054693916674.json、平台全量/【一致性】生成人物角色素材集_1977342694357901313.json、平台全量/【人物一致性】生成人物角色素材集 训练lora_1904203844807462914.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z-Image-电商专用洗图_2059467669958647810.json、图片生成/图生图/z-image-turbo-服装模特图-洗图_2059176245241409538.json、图片生成/文生图/z-image-完美文生图-婚纱摄影-批量出图_2033415203097939970.json、图片生成/文生图/z-image-完美文生图-私房摄影-批量出图_2036973821743337474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Anything Everywhere`
-- `ApplyPulidFlux`
-- `BasicGuider`
+全部 4 个 workflow 都包含：
+- `AILab_QwenVL`
+- `AIO_Preprocessor`
 - `BasicScheduler`
-- `BiRefNet_Hugo`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `ExpressionEditor`
+- `DetailDaemonSamplerNode`
 - `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GridImageSplitter`
-- `GrowMask`
-- `Image Overlay`
-- `ImageFromBatch+`
-- `ImageResize+`
-- `ImageUpscaleWithModel`
-- `InvertMask`
+- `ImageScaleToTotalPixelsX`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingFlux`
-- `PreviewImage`
-- `Prompts Everywhere`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RH_Captioner`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
 - `SaveImage`
-- `SeargeIntegerConstant`
-- `ShowText|pysssss`
-- `TextCombinerTwo`
-- `UltimateSDUpscale`
-- `UnetLoaderGGUF`
-- `UpscaleModelLoader`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SplitSigmas`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `ZImageFunControlnet`
 - `easy cleanGpuUsed`
-- `easy imageInsetCrop`
+- `easy imageSizeBySide`
 - `easy positive`
-- `easy seed`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 5/6 个有
-- `Note _O` —— 2/6 个有
+- `PreviewImage` —— 3/4 个有
+- `JDCN_StringToList` —— 2/4 个有
+- `LatentColorMatchSimple` —— 2/4 个有
+- `LayerUtility: ColorImage V2` —— 2/4 个有
+- `LayerUtility: ImageBlend` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `ProcessString` —— 2/4 个有
+- `RepeatLatentBatch` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `取色器_孤海` —— 2/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 0.85 | 0.85 - 0.85 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,4 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.85，观测区间 0.85 - 0.85，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

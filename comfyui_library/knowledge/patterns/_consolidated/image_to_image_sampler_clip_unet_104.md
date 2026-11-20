@@ -1,77 +1,69 @@
 ---
 name: image_to_image_sampler_clip_unet_104
 type: Image To Image
-frequency: 6
-level: strong
-coverage: 0.939167
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.9254
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/fluxkontext_一键生成字效_1929844250890944514.json, 图片生成/图生图/kontext单图_1938771721912508418.json, 图片生成/图生图/kontext单图_1981602295718789122.json, 图片生成/图生图/kontext官方工作流 双图编辑模式_1938780307606982657.json, 图片生成/图生图/三视图_Kontext-Dev_1944234284179918849.json, 图片生成/图生图/旧照片精准修复+放大_1992858360515022850.json]
+members: [图片生成/图生图/（洗图图生图效果很好）Z-Image_turbo图生图-又快又好_2101289951110459394.json, 图片生成/文生图/Anima Preview2图生图_2033542974574956546.json, 图片生成/文生图/Anima图生图_2021929700087566337.json, 视频生成/图生视频/【动漫】Anima Preview2图生图_2038098911314841602.json, 视频生成/文生视频/Anima-2.9B｜智能图生图_Qwen3VL反推_2089343535781859329.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_104
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/fluxkontext_一键生成字效_1929844250890944514.json、图片生成/图生图/kontext单图_1938771721912508418.json、图片生成/图生图/kontext单图_1981602295718789122.json、图片生成/图生图/kontext官方工作流 双图编辑模式_1938780307606982657.json、图片生成/图生图/三视图_Kontext-Dev_1944234284179918849.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/（洗图图生图效果很好）Z-Image_turbo图生图-又快又好_2101289951110459394.json、图片生成/文生图/Anima Preview2图生图_2033542974574956546.json、图片生成/文生图/Anima图生图_2021929700087566337.json、视频生成/图生视频/【动漫】Anima Preview2图生图_2038098911314841602.json、视频生成/文生视频/Anima-2.9B｜智能图生图_Qwen3VL反推_2089343535781859329.json）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `FluxKontextImageScale` —— 5/6 个有
-- `RH_Translator` —— 5/6 个有
-- `ConstrainImage|pysssss` —— 4/6 个有
-- `PreviewImage` —— 3/6 个有
-- `easy imageConcat` —— 3/6 个有
-- `ImageUpscaleWithModel` —— 2/6 个有
-- `UpscaleModelLoader` —— 2/6 个有
-- `ImageResize` —— 1/6 个有
-- `JWImageResizeByLongerSide` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `LoraLoader` —— 1/6 个有
-- `ShowText` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy clearCacheAll` —— 1/6 个有
+- `VAELoader` —— 4/5 个有
+- `image_scale_pixel_v2` —— 4/5 个有
+- `Qwen3VLProcessor` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 1/5 个有
+- `RepeatLatentBatch` —— 1/5 个有
+- `VAELoaderKJ` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 26 | 6 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 31 | 8 - 40 | 5 | 60% |
+| Prompt 约束强度(CFG) | 4 | 1 - 5 | 5 | 60% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 5 | 40% |
+| 调度器 | simple | - | 5 | 40% |
+| 重绘幅度 | 0.7 | 0.5 - 0.75 | 5 | 86% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 26，6 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 31，观测区间 8 - 40，5 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 5，5 个样本
+- 采样算法 最常用 dpmpp_2m_sde_gpu，5 个样本，一致性 40%
+- 调度器 最常用 simple，5 个样本，一致性 40%
+- 重绘幅度 中位数 0.7，观测区间 0.5 - 0.75，5 个样本，取值集中（一致性 86%）

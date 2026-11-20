@@ -1,50 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_484
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.9515
-common_nodes: [BerniniBlockSwap, BerniniContextOptions, BerniniDirector, BerniniLoraSelectMulti, BerniniModelLoader, BerniniSamplerExtraArgs, BerniniScheduler, BerniniSetBlockSwap, BerniniSetLoRAs, BerniniT5Config, BerniniVAELoader, VHS_VideoCombine]
+coverage: 0.901
+common_nodes: [CFGGuider, CLIPTextEncode, LTX2_NAG, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEnhanceAVideoKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/Bernini 全能编辑导演台_2081631916859678721.json, 视频生成/图生视频/Bernini 全能编辑导演台工作流_2081023174543761410.json, 视频生成/图生视频/Bernini 导演台 视频处理_2065460725128192002.json, 视频生成/图生视频/Bernini 视频生成与“多镜头导演台”_2065713086010585089.json, 视频生成/图生视频/Bernini全能编辑导演台工作流（可破甲）_2066334769738244098.json, 视频生成/图生视频/全功能视频处理 极简版 Bernini_Director 贝尔尼尼导演台 搅拌手大佬版_2065453516738617346.json]
+members: [视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json, 视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json, 视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json, 视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json, 视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_484
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Bernini 全能编辑导演台_2081631916859678721.json、视频生成/图生视频/Bernini 全能编辑导演台工作流_2081023174543761410.json、视频生成/图生视频/Bernini 导演台 视频处理_2065460725128192002.json、视频生成/图生视频/Bernini 视频生成与“多镜头导演台”_2065713086010585089.json、视频生成/图生视频/Bernini全能编辑导演台工作流（可破甲）_2066334769738244098.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 导演台高级lora版_2072446244018016257.json、视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json、视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json、视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json、视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BerniniBlockSwap`
-- `BerniniContextOptions`
-- `BerniniDirector`
-- `BerniniLoraSelectMulti`
-- `BerniniModelLoader`
-- `BerniniSamplerExtraArgs`
-- `BerniniScheduler`
-- `BerniniSetBlockSwap`
-- `BerniniSetLoRAs`
-- `BerniniT5Config`
-- `BerniniVAELoader`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `LTX2_NAG`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PlaySound|pysssss`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 5/6 个有
-- `CreateVideo` —— 3/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `SaveVideo` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PlaySound|pysssss` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `BasicScheduler` —— 4/5 个有
+- `DualCLIPLoaderGGUF` —— 4/5 个有
+- `KSamplerSelect` —— 4/5 个有
+- `LTXVLatentUpsampler` —— 4/5 个有
+- `LatentUpscaleModelLoader` —— 4/5 个有
+- `LTX2SamplingPreviewOverride` —— 3/5 个有
+- `LTXVCropGuides` —— 3/5 个有
+- `UnetLoaderGGUF` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `Display Any (rgthree)` —— 2/5 个有
+- `LTXDirectorCropGuides` —— 2/5 个有
+- `LTXVTiledVAEDecode` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `ModelPreviewOverrideKJ` —— 2/5 个有
+- `TextGenerateLTX2Prompt` —— 2/5 个有
+- `UNETLoader` —— 2/5 个有
+- `DualCLIPLoader` —— 1/5 个有
+- `ManualSigmas` —— 1/5 个有
+- `SamplerEulerAncestral` —— 1/5 个有
 
 ## 典型参数
 

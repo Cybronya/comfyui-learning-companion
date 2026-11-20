@@ -1,76 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_clip_160
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.9014
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, CreateVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+frequency: 4
+level: moderate
+coverage: 0.95225
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UnetLoaderGGUF, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/wan2.2-加速lora-4步极速-官方-文生视频-输入主题-自动优化提示词_1956317420480856065.json, 视频生成/图生视频/wan2.2-加速lora-4步极速-官方-图生视频-输入主题-自动优化提示词_1956316164643323905.json, 视频生成/文生视频/wan2.2-文生视频-KJ加速版-输入大纲-自动优化提示词_1955139127446573057.json, 视频生成/文生视频/wan2.2-文生视频-火焰人_1955297362048684033.json, 视频生成/文生视频/wan2_2.14B_提示词自动优化-文生视频-加速版-KJ模型_1950557928396935169.json]
+members: [图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json, 图片生成/文生图/LOGO生成器 Qwen-image Q8+4步Lora极速生成_1954712420105252865.json, 图片生成/文生图/Qwen image 汉字专用海报极速文生图+润色_1954718876200267778.json, 图片生成/文生图/一键LOGO极速生成_2034820251891798017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_160
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/wan2.2-加速lora-4步极速-官方-文生视频-输入主题-自动优化提示词_1956317420480856065.json、视频生成/图生视频/wan2.2-加速lora-4步极速-官方-图生视频-输入主题-自动优化提示词_1956316164643323905.json、视频生成/文生视频/wan2.2-文生视频-KJ加速版-输入大纲-自动优化提示词_1955139127446573057.json、视频生成/文生视频/wan2.2-文生视频-火焰人_1955297362048684033.json、视频生成/文生视频/wan2_2.14B_提示词自动优化-文生视频-加速版-KJ模型_1950557928396935169.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json、图片生成/文生图/LOGO生成器 Qwen-image Q8+4步Lora极速生成_1954712420105252865.json、图片生成/文生图/Qwen image 汉字专用海报极速文生图+润色_1954718876200267778.json、图片生成/文生图/一键LOGO极速生成_2034820251891798017.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `CreateVideo`
-- `KSamplerAdvanced`
+- `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SaveVideo`
-- `SimpleMath+`
-- `TextBox`
-- `UNETLoader`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `Text Multiline`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 4/5 个有
-- `RH_Prompter` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `ImpactInt` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `WanImageToVideo` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
+- `EmptySD3LatentImage` —— 3/4 个有
+- `Text Concatenate` —— 3/4 个有
+- `SeedVR2` —— 2/4 个有
+- `SeedVR2BlockSwap` —— 2/4 个有
+- `CFGZeroStar` —— 1/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 10 | 4 - 20 | 5 | 39% |
-| 采样算法 | 3.5 | 1 - 3.5 | 5 | 51% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 采样步数 | 4 | 4 - 10 | 4 | 53% |
+| Prompt 约束强度(CFG) | 5 | 4 - 5 | 4 | 91% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 20，5 个样本，取值分散，一致性仅 39%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，5 个样本
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 4，观测区间 4 - 10，4 个样本
+- Prompt 约束强度(CFG) 中位数 5，观测区间 4 - 5，4 个样本，取值集中（一致性 91%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

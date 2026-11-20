@@ -1,67 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_831
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.584
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoraLoaderModelOnly, SetNode, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanImageToVideoSVIPro]
+frequency: 2
+level: weak
+coverage: 0.907
+common_nodes: [Bjornulf_ShowStringText, GetImageSizeAndCount, INTConstant, ImageResizeKJ, ImageResizeKJv2, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, TTP_text_mix, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/视频延长smoothMixWan22+超清放大_2012798357684621314.json, 平台全量/👾怪獸SVI-Pro视频无限延长👾_2005875049108303874.json, 视频生成/图生视频/SVIpro视频延长-Aiwood_2005629100242993154.json]
+members: [视频生成/图生视频/AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最长6分镜连续_1954097242955235330.json, 视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_831
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/视频延长smoothMixWan22+超清放大_2012798357684621314.json、平台全量/👾怪獸SVI-Pro视频无限延长👾_2005875049108303874.json、视频生成/图生视频/SVIpro视频延长-Aiwood_2005629100242993154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最长6分镜连续_1954097242955235330.json、视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetImageRangeFromBatch`
-- `GetNode`
+全部 2 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `SetNode`
-- `SimpleMath+`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkConcat`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `TTP_text_mix`
+- `TextInput_`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanImageToVideoSVIPro`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
-- `easy imageColorMatch` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CreateCFGScheduleFloatList` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ForLoopClose` —— 1/2 个有
+- `ForLoopOpen` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GridStrings` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Int2String` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 14 | 14 - 14 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,9 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 14，观测区间 14 - 14，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

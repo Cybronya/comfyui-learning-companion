@@ -1,96 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_clip_129
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.851333
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled]
-problems: []
+frequency: 4
+level: weak
+coverage: 0.75275
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX 2.3-IA2V-国风 MV_2038201954467323905.json, 视频生成/图生视频/danotebook-ltx2.3-digital_2062522880226848770.json, 视频生成/图生视频/【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3工作流实测_2044766587655294977.json, 视频生成/图生视频/【LTX-2.3xinyao】_2070029372056231937.json, 视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json, 视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json]
+members: [图片生成/图生图/26.tonnie-Qwen局部重绘（改中文）_1998076860787490818.json, 图片生成/图生图/29.tonnie-wan2.2最强修手_2001777953891577858.json, 图片生成/图生图/FusionX 稳定修手_1947821442744336385.json, 图片生成/图生图/Klein文生图CG动漫风格（修手）_2043430633757741058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_129
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3-IA2V-国风 MV_2038201954467323905.json、视频生成/图生视频/danotebook-ltx2.3-digital_2062522880226848770.json、视频生成/图生视频/【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3工作流实测_2044766587655294977.json、视频生成/图生视频/【LTX-2.3xinyao】_2070029372056231937.json、视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/26.tonnie-Qwen局部重绘（改中文）_1998076860787490818.json、图片生成/图生图/29.tonnie-wan2.2最强修手_2001777953891577858.json、图片生成/图生图/FusionX 稳定修手_1947821442744336385.json、图片生成/图生图/Klein文生图CG动漫风格（修手）_2043430633757741058.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 5/6 个有
-- `CreateVideo` —— 5/6 个有
-- `LTXAVTextEncoderLoader` —— 5/6 个有
-- `LTXVLatentUpsampler` —— 5/6 个有
-- `LatentUpscaleModelLoader` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `Label (rgthree)` —— 4/6 个有
-- `PrimitiveBoolean` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `HeartMuLa_Generate` —— 2/6 个有
-- `HeartMuLa_Transcribe` —— 2/6 个有
-- `PreviewAudio` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `SongGeneration_Loader` —— 2/6 个有
-- `SongGeneration_Sampler` —— 2/6 个有
-- `SongGeneration_Stage1` —— 2/6 个有
-- `SongGeneration_Stage2` —— 2/6 个有
-- `Text _O` —— 2/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `DiffusionModelLoaderKJ` —— 1/6 个有
-- `DualCLIPLoaderGGUF` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `RecordAudio` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
-- `UnetLoaderGGUF` —— 1/6 个有
-- `VAELoaderKJ` —— 1/6 个有
-- `VHS_VideoCombine` —— 1/6 个有
+- `InpaintModelConditioning` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `Mask Fill Holes` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `ColorCorrect` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `Kontext Inpainting Conditioning` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `ModelSamplingSD3` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 10 | 4 | 66% |
+| Prompt 约束强度(CFG) | 1.75 | 1 - 3.5 | 4 | 47% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 50% |
+| 重绘幅度 | 0.475 | 0.2 - 1 | 4 | 39% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 10，4 个样本
+- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 47%
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 50%
+- 重绘幅度 中位数 0.475，观测区间 0.2 - 1，4 个样本，取值分散，一致性仅 39%
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

@@ -1,84 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_474
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.44
-common_nodes: [CLIPVisionLoader, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, SetNode, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.7286
+common_nodes: [Anything Everywhere, CreateCFGScheduleFloatList, GetNode, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Pipe from any [Crystools], Pipe to/edit any [Crystools], Seed Everywhere, SetNode, SimpleMath+, TextCombinerTwo, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/LongCatAvatar_龙猫数字人-文生图_2002914137871118338.json, 图片生成/文生图/内部测试0001_2006740333874384898.json, 数字人/数字人/LongCat Video Avatar 数字人图生视频_2004813148668522498.json, 数字人/数字人/LongCat-Video-Avatar-数字人-视频对口型_2005133378838036482.json, 数字人/数字人/LongCatAvatar 多段自动拼接 数字人_2004211639698292738.json, 视频生成/图生视频/LongCat-Video-Avatar大模型来了！上传1张照片+1段录音，轻松生成高质量数字人视频！_2004069109543411713.json]
+members: [视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json, 视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json, 视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json, 视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json, 视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_474
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/LongCatAvatar_龙猫数字人-文生图_2002914137871118338.json、图片生成/文生图/内部测试0001_2006740333874384898.json、数字人/数字人/LongCat Video Avatar 数字人图生视频_2004813148668522498.json、数字人/数字人/LongCat-Video-Avatar-数字人-视频对口型_2005133378838036482.json、数字人/数字人/LongCatAvatar 多段自动拼接 数字人_2004211639698292738.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json、视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json、视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json、视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json、视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `INTConstant`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `ReplaceVideoLatentFrames`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Pipe from any [Crystools]`
+- `Pipe to/edit any [Crystools]`
+- `Seed Everywhere`
 - `SetNode`
-- `TrimAudioDuration`
+- `SimpleMath+`
+- `TextCombinerTwo`
+- `Textbox`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadWav2VecModel` —— 5/6 个有
-- `INTConstant` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `IndexTTS2Run` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `MultiLinePromptIndex` —— 2/6 个有
-- `SaveAudioMP3` —— 2/6 个有
-- `AddLabel` —— 1/6 个有
-- `AudioCrop` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `PrimitiveFloat` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
-- `SaveAudio` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `ZML_ImageSelectorNode` —— 1/6 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/6 个有
-- `easy indexTTSGenerateSimple` —— 1/6 个有
+- `CR Text Concatenate` —— 2/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LoadLatent` —— 1/5 个有
+- `SaveLatent` —— 1/5 个有
 
 ## 典型参数
 

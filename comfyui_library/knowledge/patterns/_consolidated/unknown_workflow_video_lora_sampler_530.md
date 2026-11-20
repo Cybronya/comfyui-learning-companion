@@ -1,75 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_530
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.516833
-common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoNAG]
+frequency: 4
+level: moderate
+coverage: 0.7105
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Z-video_wan2_2_14B_i2v_lightx2v-1030_1991795364107857922.json, 视频生成/图生视频/video_wan2_2_14B_i2v_lightX2V_1030_1983825079475838977.json, 视频生成/图生视频/video_wan2_2_14B_i2v_lightx2v-1030_1984268065183514625.json, 视频生成/图生视频/video_wan2_2_14B_i2v_svi2_1997912298406731777.json, 视频生成/图生视频/图片自动出视频_1989490434684669953.json, 视频生成/图生视频/图生视频千问反推版3_1986291016309362690.json]
+members: [数字人/数字人/04-06-03-WAN2.2-数字人-S2V-动作驱动无限长-kijai_1990969083397087234.json, 数字人/数字人/S2V动作驱动无限长数字人（kijai版全功能）楚门的AI世界_1961390638342279169.json, 视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json, 视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_530
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Z-video_wan2_2_14B_i2v_lightx2v-1030_1991795364107857922.json、视频生成/图生视频/video_wan2_2_14B_i2v_lightX2V_1030_1983825079475838977.json、视频生成/图生视频/video_wan2_2_14B_i2v_lightx2v-1030_1984268065183514625.json、视频生成/图生视频/video_wan2_2_14B_i2v_svi2_1997912298406731777.json、视频生成/图生视频/图片自动出视频_1989490434684669953.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/04-06-03-WAN2.2-数字人-S2V-动作驱动无限长-kijai_1990969083397087234.json、数字人/数字人/S2V动作驱动无限长数字人（kijai版全功能）楚门的AI世界_1961390638342279169.json、视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json、视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：52%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `INTConstant`
-- `KSamplerAdvanced`
+全部 4 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoNAG`
+- `WanVideoAddAudioEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FlashVSRNode` —— 5/6 个有
-- `GetImageRangeFromBatch` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `GetImageSizeAndCount` —— 1/6 个有
-- `ImageGetSize` —— 1/6 个有
-- `JWImageResizeByLongerSide` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `PrimitiveBoolean` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `Switch any [Crystools]` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy textSwitch` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `VHS_SplitImages` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | lcm | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

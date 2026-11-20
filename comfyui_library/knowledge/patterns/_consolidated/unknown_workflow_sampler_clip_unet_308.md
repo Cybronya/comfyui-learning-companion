@@ -1,55 +1,78 @@
 ---
 name: unknown_workflow_sampler_clip_unet_308
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8874
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxSamplerParams+, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.88725
+common_nodes: [BiRefNetRMBG, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, GetNode, KSamplerSelect, LoadImage, RHLLMChatNode, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX1-DEV-FP16文生图_2032756063350562818.json, 图片生成/文生图/FLUX1-DEV-FP16文生图_2043001809165361153.json, 图片生成/文生图/Flux文生图_2041424074966044673.json, 图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json, 平台全量/FLUX_充气膨胀背景_1962718401800089601.json]
+members: [图片生成/图生图/爆分游戏组件-卷轴_2084885638360428545.json, 图片生成/图生图/爆分游戏组件-数字_2085273251034517506.json, 图片生成/图生图/爆分游戏组件-横幅_2084518617588256769.json, 图片生成/图生图/爆分游戏组件-道具图标_2085295867472465922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_308
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/FLUX1-DEV-FP16文生图_2032756063350562818.json、图片生成/文生图/FLUX1-DEV-FP16文生图_2043001809165361153.json、图片生成/文生图/Flux文生图_2041424074966044673.json、图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json、平台全量/FLUX_充气膨胀背景_1962718401800089601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/爆分游戏组件-卷轴_2084885638360428545.json、图片生成/图生图/爆分游戏组件-数字_2085273251034517506.json、图片生成/图生图/爆分游戏组件-横幅_2084518617588256769.json、图片生成/图生图/爆分游戏组件-道具图标_2085295867472465922.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
+- **样本数**：4
+- **可信度**：中等可信
 - **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BiRefNetRMBG`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxSamplerParams+`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int2String` —— 2/5 个有
-- `LoraLoader` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Seed_` —— 2/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `Note _O` —— 1/5 个有
-- `TextCombinerTwo` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `PreviewTextNode` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `EmptyLatentImage` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `PreviewBridge` —— 2/4 个有
+- `Text Load Line From File` —— 2/4 个有
+- `ImageCompositeMasked` —— 1/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: ColorImage` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `YUAN_TXTParagraphSplitter` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 1024 | 5 | 86% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 480 | - | 2 | 75% |
+| 高度 | 320 | - | 2 | 88% |
 
 ## 常见问题
 
@@ -57,7 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 1024，5 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 480，样本不足，未给区间，2 个样本
+- 高度 中位数 320，样本不足，未给区间，2 个样本，取值集中（一致性 88%）

@@ -1,46 +1,41 @@
 ---
 name: unknown_workflow_generic_60
 type: Unknown Workflow
-frequency: 22
+frequency: 19
 level: moderate
-coverage: 0.825045
-common_nodes: [LoadImage, SaveImage, SeeThrough_GenerateDepth, SeeThrough_GenerateLayers, SeeThrough_LoadDepthModel, SeeThrough_LoadLayerDiffModel, SeeThrough_PostProcess, SeeThrough_SavePSD]
+coverage: 0.820737
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/See Through-图像超级分层_2040236988468563969.json, 图片生成/图生图/See-through：一键将单张动漫图拆成 24 层 PSD透明图层_2115329577819140098.json, 图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json, 图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2052228852306464770.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2039958431506898945.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2040046165248450562.json, 图片生成/图生图/SeeThrough分层工作流_2049314933434753026.json, 图片生成/图生图/SeeThrough图像PSD完整分层工作流V1_2044008357320728578.json, 图片生成/图生图/SeeThrough图像分层_2040064434797813762.json, 图片生成/图生图/SeeThrough图像拆分_2077199511004471297.json, 图片生成/图生图/SeeThrough真人PSD完整分层工作流V1_2039976374139625473.json, 图片生成/图生图/二次元拆分分层输出PSD-SeeThrough_2040420040951996417.json, 图片生成/图生图/图像分层  PSD  SeeThrough_2040216332402171906.json, 图片生成/图生图/图像分层 -—— PSD_2051294797817757697.json, 图片生成/图生图/图像分层 -—— PSD_2068728786014789633.json, 图片生成/图生图/图像分层 PSD SeeThrough  抠图_2069610389201047553.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2052600759396651009.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2057499012751781889.json, 图片生成/图生图/图层拆分 SeeThrough_2040211441290055681.json, 平台全量/图像分层 PSD SeeThrough  抠图_2052555395683635201.json]
+members: [音频生成/音频生成/Qwen3 TTS 一键声音克隆_2014695099287998466.json, 音频生成/音频生成/Qwen3 TTS 单声音克隆-老祺虾说_2029550073687838722.json, 音频生成/音频生成/Qwen3 TTS 声音克隆-3秒克隆你的声音_2014677921528553473.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014607135769894913.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014685779439652866.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014980105134678017.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2015035039628664833.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2105586117281140738.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2108372556238639105.json, 音频生成/音频生成/全新声音模仿&语音克隆Qwen3 TTS_2015006488967778306.json, 音频生成/音频生成/声音克隆 Qwen3 TTS_2109114164743598082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_60
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/See Through-图像超级分层_2040236988468563969.json、图片生成/图生图/See-through：一键将单张动漫图拆成 24 层 PSD透明图层_2115329577819140098.json、图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json、图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json、图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 一键声音克隆_2014695099287998466.json、音频生成/音频生成/Qwen3 TTS 单声音克隆-老祺虾说_2029550073687838722.json、音频生成/音频生成/Qwen3 TTS 声音克隆-3秒克隆你的声音_2014677921528553473.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2014607135769894913.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2014685779439652866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `SeeThrough_GenerateDepth`
-- `SeeThrough_GenerateLayers`
-- `SeeThrough_LoadDepthModel`
-- `SeeThrough_LoadLayerDiffModel`
-- `SeeThrough_PostProcess`
-- `SeeThrough_SavePSD`
+全部 19 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 18/22 个有
-- `easy cleanGpuUsed` —— 8/22 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/22 个有
-- `Image Comparer (rgthree)` —— 4/22 个有
-- `InspyrenetRembg` —— 4/22 个有
-- `MaskToImage` —— 4/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/22 个有
-- `LayerUtility: PurgeVRAM` —— 1/22 个有
+- `JjkText` —— 5/19 个有
+- `PrimitiveFloat` —— 1/19 个有
+- `SaveAudioMP3` —— 1/19 个有
+- `Text Multiline` —— 1/19 个有
 
 ## 典型参数
 

@@ -1,65 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_143
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.836333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.82875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json, 视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json, 视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json, 视频生成/图生视频/Minimax参考生视频-(8步加速-768P)_2085357536189960194.json, 视频生成/图生视频/aidir-Minimax_h3_多参考图生视频_2087056895474491393.json, 视频生成/图生视频/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）_2084269573662142465.json, 视频生成/图生视频/minimax h3多元素参考 生视频工作流_2084531165620432897.json, 视频生成/图生视频/minimax h3多图参考视频工作流（int8底模+8步提速方案）_2087813787285020674.json, 视频生成/文生视频/Minimax-H3 (电影质感_8步加速版)_2093740212219367425.json]
+members: [视频生成/文生视频/02-04-01-爱小墨-高级流-音画同出-文生视频v1.0_2085907402355990529.json, 视频生成/文生视频/37.MiniMax H3 文生视频_2085360265259995138.json, 视频生成/文生视频/39.MiniMax H3 多参考图生视频_2085360251456548866.json, 视频生成/文生视频/4步MiniMax-H3文生视频-LynnReal-Omni_2099804217237135361.json, 视频生成/文生视频/A-3 MiniMax-H3 文生视频 开源版_2084541355501641730.json, 视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json, 视频生成/文生视频/MINIMAX-H3工作流_2091759961062862849.json, 视频生成/文生视频/[Minimax H3]9图片+3音频全能参考_2084583737949511681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_143
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json、视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json、视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json、视频生成/图生视频/Minimax参考生视频-(8步加速-768P)_2085357536189960194.json、视频生成/图生视频/aidir-Minimax_h3_多参考图生视频_2087056895474491393.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/02-04-01-爱小墨-高级流-音画同出-文生视频v1.0_2085907402355990529.json、视频生成/文生视频/37.MiniMax H3 文生视频_2085360265259995138.json、视频生成/文生视频/39.MiniMax H3 多参考图生视频_2085360251456548866.json、视频生成/文生视频/4步MiniMax-H3文生视频-LynnReal-Omni_2099804217237135361.json、视频生成/文生视频/A-3 MiniMax-H3 文生视频 开源版_2084541355501641730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `LoadAudio` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 7/9 个有
-- `ComfyMathExpression` —— 6/9 个有
-- `CreateVideo` —— 5/9 个有
-- `SaveVideo` —— 5/9 个有
-- `Int` —— 4/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `PathchSageAttentionKJ` —— 4/9 个有
-- `VHS_VideoCombine` —— 4/9 个有
-- `VHS_LoadVideo` —— 3/9 个有
-- `EasyCache` —— 2/9 个有
-- `PainterVRAM` —— 2/9 个有
-- `AudioCrop` —— 1/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `JjkText` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `MiniMaxH3AddGuide` —— 1/9 个有
-- `MiniMaxH3BlockCacheT8` —— 1/9 个有
-- `SimpleMath+` —— 1/9 个有
-- `easy anythingIndexSwitch` —— 1/9 个有
+- `PrimitiveFloat` —— 7/8 个有
+- `MiniMaxH3ImageToVideo` —— 5/8 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `LoadImage` —— 3/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
+- `LoadAudio` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `ComfyNumberConvert` —— 1/8 个有
+- `ComfySwitchNode` —— 1/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `GetVideoComponents` —— 1/8 个有
+- `Image Compare (mtb)` —— 1/8 个有
+- `PrimitiveBoolean` —— 1/8 个有
+- `easy int` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 

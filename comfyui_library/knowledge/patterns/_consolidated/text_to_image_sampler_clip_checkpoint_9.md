@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_checkpoint_9
 type: Text To Image
-frequency: 10
+frequency: 7
 level: moderate
-coverage: 1
+coverage: 0.976571
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
-problems: []
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json, 图片生成/文生图/SD1.5官方文生图工作流_1989688004904185857.json, 图片生成/文生图/SD1.5文生图(教学用)_1955947044106108930.json, 图片生成/文生图/国画_2055308067151073282.json, 图片生成/文生图/字体设计_2069831680575238146.json, 图片生成/文生图/尘白禁区_二次元_2049892451862753282.json, 图片生成/文生图/御姐_2069833373064982529.json, 图片生成/文生图/手鞠_2106608817659277314.json, 图片生成/文生图/文字_2069832301265113090.json, 图片生成/文生图/文生图2_2001532648583491585.json]
+members: [sd1.5/lora.png, sd1.5/text-to-image-workflow.png, 图片生成/图生图/45.tonnie-Qwen Edit-Rapid AIO改背景，改风格（效果不好）_2005325056215576577.json, 图片生成/文生图/2025_2000816337700126721.json, 图片生成/文生图/Goth_qipao哥特旗袍女孩 v2_1931901282749972482.json, 图片生成/文生图/Goth_qipao哥特旗袍女孩_1931899467023495169.json, 图片生成/文生图/Lora_1894234987661557762.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_checkpoint_9
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json、图片生成/文生图/SD1.5官方文生图工作流_1989688004904185857.json、图片生成/文生图/SD1.5文生图(教学用)_1955947044106108930.json、图片生成/文生图/国画_2055308067151073282.json、图片生成/文生图/字体设计_2069831680575238146.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（sd1.5/lora.png、sd1.5/text-to-image-workflow.png、图片生成/图生图/45.tonnie-Qwen Edit-Rapid AIO改背景，改风格（效果不好）_2005325056215576577.json、图片生成/文生图/2025_2000816337700126721.json、图片生成/文生图/Goth_qipao哥特旗袍女孩 v2_1931901282749972482.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `EmptyLatentImage`
@@ -31,38 +31,41 @@ source: knowledge_consolidation
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 8/10 个有
-- `easy cleanGpuUsed` —— 2/10 个有
-- `ImpactWildcardProcessor` —— 1/10 个有
-- `TT_img_enc` —— 1/10 个有
-- `easy positive` —— 1/10 个有
+- `LoraLoader` —— 5/7 个有
+- `LatentUpscale` —— 3/7 个有
+- `LoadImage` —— 3/7 个有
+- `VAEEncode` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 10 | 92% |
-| Prompt 约束强度(CFG) | 8 | 5 - 8 | 10 | 88% |
-| 采样算法 | dpmpp_2m | - | 10 | 50% |
-| 调度器 | karras | - | 10 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| LoRA 模型强度 | 0.31 | -0.12 - 0.9 | 8 | 17% |
-| LoRA 文本强度 | 0.44 | 0.14 - 0.9 | 8 | 41% |
-| 宽度 | 1156 | 512 - 1288 | 10 | 70% |
-| 高度 | 720 | 512 - 1536 | 10 | 68% |
+| 宽度 | 768 | 512 - 1280 | 7 | 69% |
+| 高度 | 1024 | 512 - 2048 | 7 | 51% |
+| LoRA 模型强度 | 0.8 | 0.75 - 1 | 5 | 89% |
+| LoRA 文本强度 | 0.9 | 0.8 - 1 | 5 | 90% |
+| 采样步数 | 20 | 6 - 40 | 7 | 50% |
+| Prompt 约束强度(CFG) | 6.5 | 1 - 8 | 7 | 61% |
+| 采样算法 | euler | - | 7 | 57% |
+| 调度器 | normal | - | 7 | 57% |
+| 重绘幅度 | 1 | 0.5 - 1 | 7 | 74% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，10 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 8，观测区间 5 - 8，10 个样本，取值集中（一致性 88%）
-- 采样算法 最常用 dpmpp_2m，10 个样本，一致性 50%
-- 调度器 最常用 karras，10 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.31，观测区间 -0.12 - 0.9，8 个样本，取值分散，一致性仅 17%
-- LoRA 文本强度 中位数 0.44，观测区间 0.14 - 0.9，8 个样本，取值分散，一致性仅 41%
-- 宽度 中位数 1156，观测区间 512 - 1288，10 个样本
-- 高度 中位数 720，观测区间 512 - 1536，10 个样本
+- 宽度 中位数 768，观测区间 512 - 1280，7 个样本
+- 高度 中位数 1024，观测区间 512 - 2048，7 个样本
+- LoRA 模型强度 中位数 0.8，观测区间 0.75 - 1，5 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 0.9，观测区间 0.8 - 1，5 个样本，取值集中（一致性 90%）
+- 采样步数 中位数 20，观测区间 6 - 40，7 个样本
+- Prompt 约束强度(CFG) 中位数 6.5，观测区间 1 - 8，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 57%
+- 调度器 最常用 normal，7 个样本，一致性 57%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，7 个样本

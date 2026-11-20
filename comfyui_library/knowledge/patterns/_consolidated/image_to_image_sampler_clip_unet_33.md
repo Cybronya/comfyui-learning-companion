@@ -1,35 +1,32 @@
 ---
 name: image_to_image_sampler_clip_unet_33
 type: Image To Image
-frequency: 11
+frequency: 10
 level: strong
-coverage: 0.939727
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8859
+common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合017.图像高清放大_2035275904460525569.json, 图片生成/图生图/3D模型转写实写实效果图_2079501722829025281.json, 图片生成/图生图/F.2 klein9B工业级产品精修_2054118658212941825.json, 图片生成/图生图/F.2 klein9B工业级产品精修_2056255888368955393.json, 图片生成/图生图/Flux 2-klein9B工业级产品精修_2015804302496899073.json, 图片生成/图生图/Flux+2-klein9B工业级产品精修_2040782267097812993.json, 图片生成/图生图/WH-AI-Studio（产品精修、旧变新）（人物服装提取、去皱褶）（人物、产品去AI感）电商三合一_2022679693748604930.json, 图片生成/图生图/工业级产品精修Flux2-klein_2018881806765920258.json, 图片生成/图生图/超细节-工业级产品精修_2068953091722010626.json, 平台全量/产品精修 修图 Flux 2-klein9B 工业级产品精修 五金产品精修 万物电商精修 摄影后期_2021760384125902850.json, 平台全量/真实好用！工业级产品精修 产品精修 万物修图 Flux 2-klein9B  五金产品精修 电商产品_2021842196617502721.json]
+members: [图片生成/图生图/FLUX.1图生图工作流_2088546573432217602.json, 图片生成/图生图/Flex.2-preview-图生图_1917082177446809601.json, 图片生成/图生图/Flux.1基础图生图工作流_2100839312702132226.json, 图片生成/图生图/flux_kontext_example-官方工作流_1938480873924943873.json, 图片生成/图生图/flux_kontext_照片转换素描_1948621429297283073.json, 图片生成/图生图/flux_kontext_综合-场景集合 (1)_1982460983069286402.json, 图片生成/图生图/产品精修-金属类_1951522356852371458.json, 图片生成/图生图/手办模型_1961814911435345921.json, 图片生成/图生图/手办模型盲盒_2047665313591857154.json, 图片生成/图生图/手办模型盲盒_2063493693570633730.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_33
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合017.图像高清放大_2035275904460525569.json、图片生成/图生图/3D模型转写实写实效果图_2079501722829025281.json、图片生成/图生图/F.2 klein9B工业级产品精修_2054118658212941825.json、图片生成/图生图/F.2 klein9B工业级产品精修_2056255888368955393.json、图片生成/图生图/Flux 2-klein9B工业级产品精修_2015804302496899073.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX.1图生图工作流_2088546573432217602.json、图片生成/图生图/Flex.2-preview-图生图_1917082177446809601.json、图片生成/图生图/Flux.1基础图生图工作流_2100839312702132226.json、图片生成/图生图/flux_kontext_example-官方工作流_1938480873924943873.json、图片生成/图生图/flux_kontext_照片转换素描_1948621429297283073.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -37,40 +34,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 10/11 个有
-- `LoraLoaderModelOnly` —— 10/11 个有
-- `CR Prompt Text` —— 9/11 个有
-- `EmptyFlux2LatentImage` —— 9/11 个有
-- `Int` —— 9/11 个有
-- `Float` —— 6/11 个有
-- `LatentUpscaleBy` —— 1/11 个有
-- `Switch` —— 1/11 个有
-- `easy imageColorMatch` —— 1/11 个有
-- `easy imageConcat` —— 1/11 个有
-- `ttN concat` —— 1/11 个有
-- `ttN text` —— 1/11 个有
+- `FluxGuidance` —— 9/10 个有
+- `LoraLoaderModelOnly` —— 8/10 个有
+- `FluxKontextImageScale` —— 7/10 个有
+- `ReferenceLatent` —— 7/10 个有
+- `CR Text` —— 5/10 个有
+- `EmptySD3LatentImage` —— 5/10 个有
+- `ConstrainImage|pysssss` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 4/10 个有
+- `ImageScaleBy` —— 3/10 个有
+- `ImageScale` —— 2/10 个有
+- `Flex2Conditioner` —— 1/10 个有
+- `ImageResizeKJ` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 20 | 20 - 30 | 10 | 82% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 90% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 0.5 - 1 | 10 | 77% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 30，10 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 90%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，10 个样本
