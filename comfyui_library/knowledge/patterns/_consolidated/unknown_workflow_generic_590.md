@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_590
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.829167
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+coverage: 0.8488
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/（Fal稳定版）全能图片G-image-2-fal_2055874343908986881.json, 图片生成/文生图/0.04积分全能图片G V2文生图（API申请看简介）+全节点注释_2047282365352906754.json, 图片生成/文生图/image2.0_2046839485811396609.json, 图片生成/文生图/全能图片G IMAGE2 6宫格图片生成_2093233039366246401.json, 图片生成/文生图/全能图片G IMAGE2 人物替换_2073926699695296513.json, 图片生成/文生图/👾怪獸-全能G-image2图像编辑+文生图👾_2047265774842155010.json]
+members: [图片生成/图生图/全能图片V1谷歌大香蕉图片编辑工作流_1976582772619874306.json, 图片生成/图生图/最新王者 全能图片V1编辑工作流_1960543275885166593.json, 图片生成/图生图/谷歌Gemini__全能图片V1AI手办玩具生成_1961608181988397057.json, 图片生成/文生图/RH__全能图片V1_1981300934502506497.json, 数字人/数字人/「HM」布鲁大师产品添加_1971075000247717889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_590
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/（Fal稳定版）全能图片G-image-2-fal_2055874343908986881.json、图片生成/文生图/0.04积分全能图片G V2文生图（API申请看简介）+全节点注释_2047282365352906754.json、图片生成/文生图/image2.0_2046839485811396609.json、图片生成/文生图/全能图片G IMAGE2 6宫格图片生成_2093233039366246401.json、图片生成/文生图/全能图片G IMAGE2 人物替换_2073926699695296513.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片V1谷歌大香蕉图片编辑工作流_1976582772619874306.json、图片生成/图生图/最新王者 全能图片V1编辑工作流_1960543275885166593.json、图片生成/图生图/谷歌Gemini__全能图片V1AI手办玩具生成_1961608181988397057.json、图片生成/文生图/RH__全能图片V1_1981300934502506497.json、数字人/数字人/「HM」布鲁大师产品添加_1971075000247717889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `Comfly_gpt_image_2_S2A` —— 3/6 个有
-- `RH_RhartImageG2ImageToImage` —— 3/6 个有
-- `CR Text` —— 1/6 个有
-- `Comfly_gpt_image_2` —— 1/6 个有
-- `Comfly_gpt_image_2_fal` —— 1/6 个有
+- `RH_Translator` —— 3/5 个有
+- `ImageResizePresetNode` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `CR Text Replace` —— 1/5 个有
+- `ImageResize+` —— 1/5 个有
+- `MaskColorize` —— 1/5 个有
 
 ## 典型参数
 

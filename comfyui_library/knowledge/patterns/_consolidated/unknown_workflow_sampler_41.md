@@ -1,43 +1,43 @@
 ---
 name: unknown_workflow_sampler_41
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8448
-common_nodes: [HeartMuLa_Transcribe, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio, ShowText|pysssss, easy saveText]
+coverage: 0.9665
+common_nodes: [GetImageSizeAndCount, ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json, 音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json, 音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json, 音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json, 音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json]
+members: [图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json, 图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_41
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json、音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json、音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json、音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json、音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json、图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `easy saveText`
+全部 4 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCombine` —— 4/5 个有
-- `SaveAudioMP3` —— 4/5 个有
-- `SeedVCRun` —— 4/5 个有
-- `AdjustAudio` —— 1/5 个有
-- `AudioAdjustVolume` —— 1/5 个有
-- `Int` —— 1/5 个有
+- `CR SDXL Aspect Ratio` —— 2/4 个有
+- `DDColor_Colorize` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
 
 ## 典型参数
 

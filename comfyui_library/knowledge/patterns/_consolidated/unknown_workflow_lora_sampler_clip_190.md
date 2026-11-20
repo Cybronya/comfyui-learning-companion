@@ -1,72 +1,63 @@
 ---
 name: unknown_workflow_lora_sampler_clip_190
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.96875
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.670333
+common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, Float, GetNode, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, KSamplerSelect, LoadImage, LoraLoaderModelOnly, NunchakuFluxDiTLoader, PreviewImage, RHHiddenNodes, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/文生图/2059VSMeiTu对比测试_1983097610955333634.json, 图片生成/文生图/CG迷-Qwen编辑工作流9大用法_1958563656520855554.json, 图片生成/文生图/MeiTu图像编辑_1983138603914174466.json, 平台全量/qwen-图片万能编辑工作流_1958072086285733889.json]
+members: [图片生成/图生图/【胶片感】Nun Flux krea图生图（基础流）_1953442222597439489.json, 数字人/数字人/Flux krea图生图（自用）_2086078047396126722.json, 数字人/数字人/Flux krea图生图（自用）_2086084841233281025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_190
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/2059VSMeiTu对比测试_1983097610955333634.json、图片生成/文生图/CG迷-Qwen编辑工作流9大用法_1958563656520855554.json、图片生成/文生图/MeiTu图像编辑_1983138603914174466.json、平台全量/qwen-图片万能编辑工作流_1958072086285733889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【胶片感】Nun Flux krea图生图（基础流）_1953442222597439489.json、数字人/数字人/Flux krea图生图（自用）_2086078047396126722.json、数字人/数字人/Flux krea图生图（自用）_2086084841233281025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `Float`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `NunchakuFluxDiTLoader`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_Translator`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
-- `UNETLoader`
+- `SetNode`
+- `ShowText|pysssss`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `Seed (rgthree)` —— 2/4 个有
-- `String Literal` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ImageSmartSharpen+` —— 1/4 个有
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 8 | 4 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 8，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

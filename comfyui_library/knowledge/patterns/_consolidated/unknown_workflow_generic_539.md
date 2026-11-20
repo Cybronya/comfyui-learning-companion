@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_539
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.653167
-common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
+coverage: 0.7562
+common_nodes: [ImageLoader, MultiplePathsInput, Qwen3_VQA, SaveImage, VideoLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json, 图片生成/图生图/图像清晰工具_2064882507623002113.json, 图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json, 图片生成/图生图/生图 拆图分享_2042426276874555393.json, 图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json]
+members: [图片生成/反推提示词/Qwen3-vl 8B视频专业AI提示词反推-电影大师_2002603180787679233.json, 图片生成/反推提示词/Qwen3VL图片反推、视频反推动态提示词_自用_1983716881720877058.json, 图片生成/反推提示词/Qwen3VL图片反推、视频反推动态提示词_自用_2054468679361933314.json, 图片生成/文生图/Qwen3-vl 8B反推激版_1986329254659051521.json, 视频生成/图生视频/qwen_反推_1999384812546818049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_539
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json、图片生成/图生图/图像清晰工具_2064882507623002113.json、图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json、图片生成/图生图/生图 拆图分享_2042426276874555393.json、图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Qwen3-vl 8B视频专业AI提示词反推-电影大师_2002603180787679233.json、图片生成/反推提示词/Qwen3VL图片反推、视频反推动态提示词_自用_1983716881720877058.json、图片生成/反推提示词/Qwen3VL图片反推、视频反推动态提示词_自用_2054468679361933314.json、图片生成/文生图/Qwen3-vl 8B反推激版_1986329254659051521.json、视频生成/图生视频/qwen_反推_1999384812546818049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageFromBatch+`
-- `ImageTile+`
-- `LoadImage`
-- `PreviewImage`
+全部 5 个 workflow 都包含：
+- `ImageLoader`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
 - `SaveImage`
+- `VideoLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `AILab_QwenVL_Advanced` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
 
 ## 典型参数
 

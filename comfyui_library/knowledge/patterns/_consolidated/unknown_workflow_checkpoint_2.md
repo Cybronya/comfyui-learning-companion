@@ -1,30 +1,49 @@
 ---
 name: unknown_workflow_checkpoint_2
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.793333
-common_nodes: [CheckpointLoaderSimple, LoadImage, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.6585
+common_nodes: [CheckpointLoaderSimple, ColorMatch, DF_Float, ExpressionEditor, Fast Groups Bypasser (rgthree), FeatherMask, GetImageSize, GetNode, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImageToMask, ImpactInt, ImpactSimpleDetectorSEGS, LayerUtility: ColorImage, LayerUtility: CropByMask, LayerUtility: ImageScaleRestore, LayerUtility: RestoreCropBox, LoadImage, PreviewImage, SAMLoader, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, Seed (rgthree), SegsToCombinedMask, SetNode, SimpleMathDual+, String Literal, UltralyticsDetectorProvider, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [图片生成/图生图/放大_2031973545307279362.json, 平台全量/CG迷-SUPIR图片修复，高清放大工作流_1927016363271868418.json, 平台全量/高清放大_sdz_1937021542687739905.json]
+members: [图片生成/图生图/人像表情控制微调01_2092229890107076610.json, 图片生成/图生图/人像表情控制微调02_2087188740228870145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_checkpoint_2
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/放大_2031973545307279362.json、平台全量/CG迷-SUPIR图片修复，高清放大工作流_1927016363271868418.json、平台全量/高清放大_sdz_1937021542687739905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人像表情控制微调01_2092229890107076610.json、图片生成/图生图/人像表情控制微调02_2087188740228870145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CheckpointLoaderSimple`
+- `ColorMatch`
+- `DF_Float`
+- `ExpressionEditor`
+- `Fast Groups Bypasser (rgthree)`
+- `FeatherMask`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageToMask`
+- `ImpactInt`
+- `ImpactSimpleDetectorSEGS`
+- `LayerUtility: ColorImage`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageScaleRestore`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
+- `PreviewImage`
+- `SAMLoader`
 - `SUPIR_conditioner`
 - `SUPIR_decode`
 - `SUPIR_encode`
@@ -32,15 +51,14 @@ source: knowledge_consolidation
 - `SUPIR_model_loader_v2`
 - `SUPIR_sample`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageScaleBy` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `Seed (rgthree)`
+- `SegsToCombinedMask`
+- `SetNode`
+- `SimpleMathDual+`
+- `String Literal`
+- `UltralyticsDetectorProvider`
+- `easy getNode`
+- `easy setNode`
 
 ## 典型参数
 
@@ -52,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

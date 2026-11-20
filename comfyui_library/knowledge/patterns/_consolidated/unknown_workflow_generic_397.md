@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_397
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.59125
-common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex]
+coverage: 0.870857
+common_nodes: [CR Text, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json, 音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json, 音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json, 音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json, 音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json, 音频生成/音频生成/双人说话带情绪用情绪音频控制+全节点注释_2052273666066526209.json, 音频生成/音频生成/双人说话带情绪用文本控制+全节点注释_2052273712635883522.json, 音频生成/音频生成/双人说话带情绪随机情绪+全节点注释_2052273819569664001.json]
+members: [数字人/数字人/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2071218252579172354.json, 音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json, 音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json, 音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json, 音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json, 音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json, 音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_397
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json、音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json、音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json、音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json、音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2071218252579172354.json、音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json、音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json、音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json、音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `LoadImage`
-- `MultiLinePromptIndex`
+全部 7 个 workflow 都包含：
+- `CR Text`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 7/8 个有
-- `SaveAudio` —— 2/8 个有
-- `easy imageSave` —— 1/8 个有
+- `LoadAudio` —— 6/7 个有
+- `SaveAudioMP3` —— 3/7 个有
+- `Text Multiline` —— 2/7 个有
+- `easy boolean` —— 2/7 个有
+- `easy seed` —— 2/7 个有
 
 ## 典型参数
 

@@ -1,68 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_unet_70
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.852833
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.764333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/xinlingjitang_2095332464360251393.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人加速开源版_2084869370685247490.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人语音克隆加速开源版_2084910413048795137.json, 视频生成/图生视频/海螺H3(minimax H3)数字人双人语音克隆（可多人）加速开源版_2084897123694366722.json, 视频生成/文生视频/fengjing_2095750565702750210.json, 视频生成/文生视频/fengjing_2099671218269016065.json]
+members: [视频生成/文生视频/minimax_h3_i2v w4a8-超低显存-0810_2086689468593041410.json, 视频生成/文生视频/video_minimax_h3_t2v_2084181061847838721.json, 视频生成/文生视频/文生视频 可文字指定音频 minimax h3_2084283510747127809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_70
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/xinlingjitang_2095332464360251393.json、视频生成/图生视频/海螺H3(minimax H3)数字人单人加速开源版_2084869370685247490.json、视频生成/图生视频/海螺H3(minimax H3)数字人单人语音克隆加速开源版_2084910413048795137.json、视频生成/图生视频/海螺H3(minimax H3)数字人双人语音克隆（可多人）加速开源版_2084897123694366722.json、视频生成/文生视频/fengjing_2095750565702750210.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/minimax_h3_i2v w4a8-超低显存-0810_2086689468593041410.json、视频生成/文生视频/video_minimax_h3_t2v_2084181061847838721.json、视频生成/文生视频/文生视频 可文字指定音频 minimax h3_2084283510747127809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioCrop`
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadAudio`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 3/6 个有
-- `Label (rgthree)` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `PreviewAudio` —— 3/6 个有
-- `PrimitiveString` —— 3/6 个有
-- `ResolutionSelector` —— 3/6 个有
-- `Text` —— 3/6 个有
-- `ZML_MergeText` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `Qwen3TTSModelLoader` —— 2/6 个有
-- `Qwen3TTSVoiceClone` —— 2/6 个有
-- `SaveAudio` —— 2/6 个有
-- `WhisperSTT` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `AudioConcat` —— 1/6 个有
-- `EmptyAudio` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `MiniMaxH3BlockCacheT8` —— 1/6 个有
+- `PreviewAny` —— 2/3 个有
+- `Display Any (rgthree)` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `LoraLoaderBypassModelOnly` —— 1/3 个有
+- `MiniMaxH3BlockCacheT8` —— 1/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SolAttnPatch` —— 1/3 个有
 
 ## 典型参数
 

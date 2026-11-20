@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_346
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.979125
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo]
+coverage: 0.747286
+common_nodes: [CR Prompt Text, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance2.0-Mini_多模态视频_2114262968979517441.json, 图片生成/图生图/Seedance2.0-Mini_多模态视频_2115292155223822338.json, 平台全量/Seedance2.0-Mini_多模态视频_2117196003060305921.json, 平台全量/seedance2.0-Mini_多模态视频_2069670461335760898.json, 视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json, 视频生成/图生视频/Seedance Mini 无缝循环动态壁纸_2071615448948494337.json, 视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json, 视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json]
+members: [图片生成/反推提示词/Minimax-H3-9个官方提示词skill-AI前置词_2085977121104683010.json, 图片生成/反推提示词/SeeDance 2.0 爆款脚本优化_2021841538329878530.json, 图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（RH免费版-Gemini-3-Pro）_1992219655683239938.json, 图片生成/反推提示词/（RH免费版）Gemini 3 Pro视频超级反推V1_1991326814788255746.json, 视频生成/图生视频/SEEDANCE 创作工具 2 - 15秒广告片提示词优化_2022496407428538369.json, 视频生成/图生视频/分镜图生成视频提示词-seedance2.0提示词创作_2039897126431363073.json, 视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_346
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedance2.0-Mini_多模态视频_2114262968979517441.json、图片生成/图生图/Seedance2.0-Mini_多模态视频_2115292155223822338.json、平台全量/Seedance2.0-Mini_多模态视频_2117196003060305921.json、平台全量/seedance2.0-Mini_多模态视频_2069670461335760898.json、视频生成/图生视频/SD2.0多模态生成视频_2071488575727824898.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Minimax-H3-9个官方提示词skill-AI前置词_2085977121104683010.json、图片生成/反推提示词/SeeDance 2.0 爆款脚本优化_2021841538329878530.json、图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（RH免费版-Gemini-3-Pro）_1992219655683239938.json、图片生成/反推提示词/（RH免费版）Gemini 3 Pro视频超级反推V1_1991326814788255746.json、视频生成/图生视频/SEEDANCE 创作工具 2 - 15秒广告片提示词优化_2022496407428538369.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `SaveVideo`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 7/8 个有
-- `PreviewImage` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 6/7 个有
+- `VHS_LoadVideo` —— 3/7 个有
+- `RHMiniMaxH3T2VATextEncode` —— 2/7 个有
+- `CR Text` —— 1/7 个有
+- `RH_Captioner_Pro` —— 1/7 个有
 
 ## 典型参数
 

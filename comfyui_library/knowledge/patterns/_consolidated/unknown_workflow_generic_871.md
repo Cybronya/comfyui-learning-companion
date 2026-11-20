@@ -3,39 +3,41 @@ name: unknown_workflow_generic_871
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.952
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LayerMask: MaskPreview, LayerUtility: ImageCombineAlpha, LoadImage, SaveImage]
+coverage: 0.82875
+common_nodes: [LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图-透明背景_2069258206609760257.json, 图片生成/图生图/一键抠图-透明背景_2071503241636044802.json, 图片生成/图生图/五虎素材透明底图_2046146651005390849.json, 图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json]
+members: [音频生成/音频生成/LongCat AudioDIT TTS 单人双人 高相似度语音克隆_2100480847823589378.json, 音频生成/音频生成/LongCat-AudioDiT 语音克隆_2041738987102019586.json, 音频生成/音频生成/LongCat-AudioDiT单_双人语音克隆TTS_2039290948785545217.json, 音频生成/音频生成/影视真人台词感-单人语音克隆--LongCat-AudioDiT（翻译）_2039728236652924929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_871
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键抠图-透明背景_2069258206609760257.json、图片生成/图生图/一键抠图-透明背景_2071503241636044802.json、图片生成/图生图/五虎素材透明底图_2046146651005390849.json、图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/LongCat AudioDIT TTS 单人双人 高相似度语音克隆_2100480847823589378.json、音频生成/音频生成/LongCat-AudioDiT 语音克隆_2041738987102019586.json、音频生成/音频生成/LongCat-AudioDiT单_双人语音克隆TTS_2039290948785545217.json、音频生成/音频生成/影视真人台词感-单人语音克隆--LongCat-AudioDiT（翻译）_2039728236652924929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageCombineAlpha`
-- `LoadImage`
-- `SaveImage`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
-- `JWStringConcat` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `Text Input [Dream]` —— 1/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `LongCatMultiSpeakerTTS` —— 2/4 个有
+- `SaveAudio` —— 2/4 个有
+- `RunningHub SeedXPro Translator` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `忽略多组孤海` —— 1/4 个有
 
 ## 典型参数
 

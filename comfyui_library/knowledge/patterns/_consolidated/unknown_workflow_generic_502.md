@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_502
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.492714
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, Fast Groups Bypasser (rgthree), JjkText, Label (rgthree), RH_RhartAudioSunoV55Custom, RH_RhartAudioSunoV55Single, SaveAudio, ShowText, easy showAnything]
+coverage: 0.836667
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/歌曲创作 音频生成+AI歌曲音乐+SunoV5.5+歌词生成+数字人唱歌_2062398119878418434.json, 音频生成/音频生成/AI歌曲音乐 歌曲创作+音频生成 +SunoV5.5+歌词生成+数字人唱歌_2077576546365304833.json, 音频生成/音频生成/SunoV5.5歌曲音乐_2050510886334418945.json, 音频生成/音频生成/SunoV5.5歌曲音乐_2078369220232044546.json, 音频生成/音频生成/歌曲创作+数字人唱歌音频生成+AI歌曲音乐+SunoV5.5+歌词生成_2066340472414629889.json, 音频生成/音频生成/歌曲音乐创作 SunoV5.5_2085296882905083906.json, 音频生成/音频生成/音频生成 AI歌曲音乐 SunoV5.5 歌词生成 数字人唱歌_2059079388481806337.json]
+members: [数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json, 数字人/数字人/超能视频2.0 视频参考生视频_2034441191185457154.json, 视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json, 视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json, 视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json, 视频生成/图生视频/参考生视频工作流｜万相 3.0 多图多视频参考_2100471493141549057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_502
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/歌曲创作 音频生成+AI歌曲音乐+SunoV5.5+歌词生成+数字人唱歌_2062398119878418434.json、音频生成/音频生成/AI歌曲音乐 歌曲创作+音频生成 +SunoV5.5+歌词生成+数字人唱歌_2077576546365304833.json、音频生成/音频生成/SunoV5.5歌曲音乐_2050510886334418945.json、音频生成/音频生成/SunoV5.5歌曲音乐_2078369220232044546.json、音频生成/音频生成/歌曲创作+数字人唱歌音频生成+AI歌曲音乐+SunoV5.5+歌词生成_2066340472414629889.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json、数字人/数字人/超能视频2.0 视频参考生视频_2034441191185457154.json、视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json、视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json、视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_custom`
-- `Fast Groups Bypasser (rgthree)`
-- `JjkText`
-- `Label (rgthree)`
-- `RH_RhartAudioSunoV55Custom`
-- `RH_RhartAudioSunoV55Single`
-- `SaveAudio`
-- `ShowText`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/7 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 4/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `RH_SeedanceVideoRefToVideo` —— 2/6 个有
 
 ## 典型参数
 

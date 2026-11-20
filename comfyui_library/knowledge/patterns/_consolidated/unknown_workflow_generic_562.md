@@ -1,37 +1,46 @@
 ---
 name: unknown_workflow_generic_562
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.9375
-common_nodes: [LoadImage, RunningHub HunyuanTo3D Image, SaveImage, ShellAgentPluginOutputText, ShowText]
+coverage: 0.513
+common_nodes: [Fast Groups Muter (rgthree), GetNode, JjkText, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage, SetNode, ShowText|pysssss, StringFunction|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/【3D打印专用】腾讯混元3.0-图生3D模型_1970771911947001858.json, 平台全量/腾讯混元3.0-图生3D模型_1970432342198263810.json, 平台全量/腾讯混元3.0-图生3D模型_1984983848322809857.json, 平台全量/腾讯混元3.0-图生3D模型_1987787444982583298.json, 平台全量/腾讯混元3.0-图生3D模型_2033510287436947458.json, 平台全量/腾讯混元3.0-图生3D模型_2054431631745798145.json]
+members: [图片生成/图生图/GTYH_V1.0_1981628649931710465.json, 图片生成/图生图/GTYH_V1.1_1982710057609641986.json, 图片生成/图生图/GTYH_V1.2_1982748297242779650.json, 图片生成/图生图/GTYH_V1.3_1983461357637017601.json, 图片生成/图生图/GTYH_V1.4_1983817490767781889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_562
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【3D打印专用】腾讯混元3.0-图生3D模型_1970771911947001858.json、平台全量/腾讯混元3.0-图生3D模型_1970432342198263810.json、平台全量/腾讯混元3.0-图生3D模型_1984983848322809857.json、平台全量/腾讯混元3.0-图生3D模型_1987787444982583298.json、平台全量/腾讯混元3.0-图生3D模型_2033510287436947458.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GTYH_V1.0_1981628649931710465.json、图片生成/图生图/GTYH_V1.1_1982710057609641986.json、图片生成/图生图/GTYH_V1.2_1982748297242779650.json、图片生成/图生图/GTYH_V1.3_1983461357637017601.json、图片生成/图生图/GTYH_V1.4_1983817490767781889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `JjkText`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `RunningHub HunyuanTo3D Image`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `ShowText`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/6 个有
-- `easy imageRemBg` —— 1/6 个有
+- `Image Switch (JPS)` —— 4/5 个有
+- `Int` —— 3/5 个有
+- `ImpactSwitch` —— 1/5 个有
 
 ## 典型参数
 

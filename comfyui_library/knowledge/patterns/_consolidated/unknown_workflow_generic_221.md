@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_221
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.945455
-common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
+coverage: 0.8406
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Seed-VC 44kHz｜后期音色转换_2118244123839909889.json, 平台全量/SeedVc V2 TTS语音及唱歌克隆_1932140349614190594.json, 平台全量/歌声音色转换（SeedVC）_2107916620931887105.json, 音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
+members: [图片生成/图生图/景观-su生成竞赛风鸟瞰图工作流_2043282178926186497.json, 图片生成/图生图/景观-乡村旧路转完工后效果工作流_2042221961408946177.json, 图片生成/图生图/景观-模型图生成插画风效果图工作流_2042230827349708802.json, 图片生成/图生图/景观-模型图秒变线稿风剖透视图工作流_2043883097824960513.json, 图片生成/图生图/柔软蓬松的饮料罐（全能图像编辑）_2014895099309723649.json, 图片生成/图生图/汽车kv单人物替换_2016398480041840642.json, 图片生成/图生图/汽车kv多人物替换_2016397861474275330.json, 图片生成/图生图/规划-乡村改造轴测分析图工作流_2043562997389463554.json, 图片生成/文生图/服装上身一键穿搭不同姿势4张图_2065034750770900993.json, 图片生成/文生图/规划-生成SWOT分析图工作流_2042965652633292801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_221
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/Seed-VC 44kHz｜后期音色转换_2118244123839909889.json、平台全量/SeedVc V2 TTS语音及唱歌克隆_1932140349614190594.json、平台全量/歌声音色转换（SeedVC）_2107916620931887105.json、音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/景观-su生成竞赛风鸟瞰图工作流_2043282178926186497.json、图片生成/图生图/景观-乡村旧路转完工后效果工作流_2042221961408946177.json、图片生成/图生图/景观-模型图生成插画风效果图工作流_2042230827349708802.json、图片生成/图生图/景观-模型图秒变线稿风剖透视图工作流_2043883097824960513.json、图片生成/图生图/柔软蓬松的饮料罐（全能图像编辑）_2014895099309723649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
+全部 10 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/11 个有
-- `Resample Audio (HQ)` —— 1/11 个有
+- `DapaoBanana2ZhenzhenNode` —— 6/10 个有
+- `CR Text` —— 2/10 个有
 
 ## 典型参数
 

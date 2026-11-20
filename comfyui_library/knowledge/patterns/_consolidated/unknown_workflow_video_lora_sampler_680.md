@@ -1,91 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_680
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.9795
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DrawViTPose, ImageResizeKJv2, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimateToVideo, easy getNode, easy int, easy setNode]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.829
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageResizeKJ, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [平台全量/Wan-animate动作迁移_视频转绘_2007482946818678785.json, 平台全量/Wan-animate角色替换_2007774730069217281.json, "视频生成/图生视频/【推荐,动态增强】Wan-animate动作迁移_视频转绘_2009846390779809793.json", "视频生成/图生视频/【推荐,动态增强】Wan-animate角色替换_2009846422258065410.json"]
+members: [视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json, 视频生成/图生视频/抖音网红AI视频_1867168400106569730.json, 视频生成/图生视频/抖音网红视频_1862018692308729857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_680
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan-animate动作迁移_视频转绘_2007482946818678785.json、平台全量/Wan-animate角色替换_2007774730069217281.json、视频生成/图生视频/【推荐,动态增强】Wan-animate动作迁移_视频转绘_2009846390779809793.json、视频生成/图生视频/【推荐,动态增强】Wan-animate角色替换_2009846422258065410.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json、视频生成/图生视频/抖音网红AI视频_1867168400106569730.json、视频生成/图生视频/抖音网红视频_1862018692308729857.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DrawViTPose`
-- `ImageResizeKJv2`
-- `ImageStitch`
-- `KSampler`
-- `LoadImage`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `TrimVideoLatent`
+- `ModelSamplingFlux`
+- `RIFE VFI`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimateToVideo`
-- `easy getNode`
-- `easy int`
-- `easy setNode`
+- `VideoCombine_Adv`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 2/4 个有
-- `DrawMaskOnImage` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GrowMask` —— 2/4 个有
-- `MaskToImage` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `easy framesEditor` —— 2/4 个有
-- `easy sam3ModelLoader` —— 2/4 个有
-- `easy sam3VideoSegmentation` —— 2/4 个有
-- `Int` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy imageChooser` —— 2/3 个有
+- `Joy_caption` —— 1/3 个有
+- `Joy_caption_load` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

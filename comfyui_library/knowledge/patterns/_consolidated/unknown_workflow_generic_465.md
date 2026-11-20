@@ -1,54 +1,36 @@
 ---
 name: unknown_workflow_generic_465
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.770714
-common_nodes: [ConstrainImage|pysssss, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleBy, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy forLoopEnd, easy forLoopStart, easy joinImageBatch]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/分镜切割机-2k_2008082317960552450.json, 图片生成/图生图/分镜切割机-2k_2115623210095038466.json, 图片生成/图生图/分镜切割机-2k_2115669913720410113.json, 图片生成/图生图/新年表情包一键生成器_2065144681117343746.json, 图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json, 平台全量/分镜切割机-2k_2064872360372686849.json, 平台全量/表情包 节日海报 人物表情 全能图像编辑 马年九宫格写真海报_2011681623116353537.json]
+members: [图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json, 图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json, 图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json, 图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json, 图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json, 图片生成/图生图/建筑灯光改造（全能图像编辑）_2015618296388784130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_465
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/分镜切割机-2k_2008082317960552450.json、图片生成/图生图/分镜切割机-2k_2115623210095038466.json、图片生成/图生图/分镜切割机-2k_2115669913720410113.json、图片生成/图生图/新年表情包一键生成器_2065144681117343746.json、图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json、图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json、图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json、图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json、图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageScaleBy`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy joinImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Grid Panel` —— 4/7 个有
-- `ImageListToBatch+` —— 4/7 个有
-- `Fast Groups Muter (rgthree)` —— 3/7 个有
-- `JjkText` —— 3/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/7 个有
-- `easy anythingIndexSwitch` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `TT_img_enc` —— 1/7 个有
+- `CR Text` —— 4/6 个有
+- `ImageConcanate` —— 4/6 个有
+- `CR Text Concatenate` —— 1/6 个有
 
 ## 典型参数
 

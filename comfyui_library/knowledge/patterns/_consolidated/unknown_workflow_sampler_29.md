@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_sampler_29
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
 coverage: 1
-common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncode, SaveImage]
+common_nodes: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, easy int]
 problems: []
 missing: []
-members: [图片生成/文生图/BitDance字节-文生图_2026930242924843010.json, 图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json, 图片生成/文生图/BitDance文生图V1_2026616770223677442.json, 图片生成/文生图/BitDance文生图_2026827350784086018.json, 图片生成/文生图/BitDance文生图_2027273573546594306.json, 图片生成/文生图/字节跳动 BitDance 文生图_2028002596664905730.json]
+members: [图片生成/图生图/风格迁移-主题固定【单参考图】uso_1967831030130421761.json, 图片生成/图生图/风格迁移-主题固定【双参考图】uso_1968132045371244546.json, 图片生成/图生图/风格迁移-单图-uso_2016515744707645442.json, 图片生成/文生图/风格迁移【单参考图】文生图版-uso_1968119490942763009.json, 图片生成/文生图/风格迁移【双参考图】文生图版-uso_1968132053638217730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/BitDance字节-文生图_2026930242924843010.json、图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json、图片生成/文生图/BitDance文生图V1_2026616770223677442.json、图片生成/文生图/BitDance文生图_2026827350784086018.json、图片生成/文生图/BitDance文生图_2027273573546594306.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/风格迁移-主题固定【单参考图】uso_1967831030130421761.json、图片生成/图生图/风格迁移-主题固定【双参考图】uso_1968132045371244546.json、图片生成/图生图/风格迁移-单图-uso_2016515744707645442.json、图片生成/文生图/风格迁移【单参考图】文生图版-uso_1968119490942763009.json、图片生成/文生图/风格迁移【双参考图】文生图版-uso_1968132053638217730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BitDanceDecode`
-- `BitDanceLoader`
-- `BitDanceResolution`
-- `BitDanceSampler`
-- `BitDanceTextEncode`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
 - `SaveImage`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/6 个有
-- `Text` —— 1/6 个有
+- `LayerUtility: ColorImage` —— 3/5 个有
 
 ## 典型参数
 

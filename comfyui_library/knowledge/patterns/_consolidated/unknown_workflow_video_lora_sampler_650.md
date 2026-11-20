@@ -1,68 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_650
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.935
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, EmptyConditioning, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJ, KSampler, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [ComfyNumberConvert, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LongCatAvatarWhisperEmbeds, SimpleMath+, Text, TrimAudioDuration, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json, 图片生成/文生图/【老金驿站】WAN2.1国家地理场景分镜生成工作流_1929433520668839938.json, 图片生成/文生图/【老金驿站】WAN2.1好莱坞人物分镜生成工作流_1929150896092123137.json, 图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json]
+members: [数字人/数字人/LongCat1.5--数字人对口型_2059893332653985793.json, 视频生成/图生视频/LongCat1.5--数字人对口型_2059078929838854146.json, 视频生成/图生视频/LongCat1.5--数字人对口型_2059921141237641218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_650
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json、图片生成/文生图/【老金驿站】WAN2.1国家地理场景分镜生成工作流_1929433520668839938.json、图片生成/文生图/【老金驿站】WAN2.1好莱坞人物分镜生成工作流_1929150896092123137.json、图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/LongCat1.5--数字人对口型_2059893332653985793.json、视频生成/图生视频/LongCat1.5--数字人对口型_2059078929838854146.json、视频生成/图生视频/LongCat1.5--数字人对口型_2059921141237641218.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `EmptyConditioning`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJ`
-- `KSampler`
+全部 3 个 workflow 都包含：
+- `ComfyNumberConvert`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_VideoCombine`
+- `LongCatAvatarWhisperEmbeds`
+- `SimpleMath+`
+- `Text`
+- `TrimAudioDuration`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
+- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
-- `easy cleanGpuUsed`
+- `WhisperModelLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `Audio Duration (mtb)` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | deis | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

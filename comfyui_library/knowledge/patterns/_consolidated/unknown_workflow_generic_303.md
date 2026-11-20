@@ -1,36 +1,46 @@
 ---
 name: unknown_workflow_generic_303
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.816222
-common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.68875
+common_nodes: [CR Text Concatenate, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json, 图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json, 图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json, 图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json, 图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json, 图片生成/图生图/全能图片2.0-二图生图_2027911158522449922.json, 图片生成/图生图/全能图片2.0-单图编辑_2027911148363845633.json, 图片生成/图生图/全能图片2.0_2027243924556877826.json, 图片生成/图生图/全能图片2.0_2027319442090237954.json]
+members: [图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json, 图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json, 图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json, 图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json, 图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json, 图片生成/图生图/图生图9宫格分镜图_2100548658549837825.json, 图片生成/图生图/图生图9宫格分镜图_2101492586950254593.json, 图片生成/图生图/图生图9宫格分镜图_2102306879014785025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_303
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json、图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json、图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json、图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json、图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json、图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json、图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json、图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json、图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `JjkText`
+全部 8 个 workflow 都包含：
+- `CR Text Concatenate`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `GetRandomIntegerInRange` —— 1/9 个有
-- `TT_img_enc` —— 1/9 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `Crop (mtb)` —— 1/8 个有
+- `EmptyImage` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageBatchMultiple+` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
 
 ## 典型参数
 

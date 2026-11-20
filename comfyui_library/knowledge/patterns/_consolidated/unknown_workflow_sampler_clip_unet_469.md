@@ -1,56 +1,58 @@
 ---
 name: unknown_workflow_sampler_clip_unet_469
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.952333
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyHunyuanLatentVideo, KSamplerAdvanced, MathExpression|pysssss, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.9085
+common_nodes: [AILab_QwenVL, BatchTextReplace, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, PrimitiveBoolean, SaveImage, ShowText, Text, UNETLoader, VAEDecode, VAELoader, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2文生视频-14B-T2V_1950032228946501633.json, 视频生成/文生视频/Wan2.2文生视频-ComfyUI流_1949846570944651266.json, 视频生成/文生视频/Wan2.2文生视频_1949986877459881985.json]
+members: [图片生成/文生图/Z-image-base-极具画面感-自动提示词-文生图_2017137036016226305.json, 图片生成/文生图/Z-image-base文生图自动提示词_2017225082980016130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_469
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生视频-14B-T2V_1950032228946501633.json、视频生成/文生视频/Wan2.2文生视频-ComfyUI流_1949846570944651266.json、视频生成/文生视频/Wan2.2文生视频_1949986877459881985.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image-base-极具画面感-自动提示词-文生图_2017137036016226305.json、图片生成/文生图/Z-image-base文生图自动提示词_2017225082980016130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AILab_QwenVL`
+- `BatchTextReplace`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `PrimitiveBoolean`
+- `SaveImage`
+- `ShowText`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `DF_Integer` —— 1/3 个有
-- `JjkText` —— 1/3 个有
+- `CustomAddLabel` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
-| 采样算法 | 3.5 | 3.5 - 3.5 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 50 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
+| 采样算法 | res_multistep | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -58,9 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 50，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

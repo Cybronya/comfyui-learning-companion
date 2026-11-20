@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_384
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.74375
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.584857
+common_nodes: [JjkText, LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/indexTTS2高保真_2085125028710014977.json, 音频生成/音频生成/Index-TTS2：数字人单人AI语音音色克隆，你的声音，无限可能！声音克隆_音色克隆_1967936640092110849.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1922462439601012737.json, 音频生成/音频生成/Spark TTS 音色克隆 文本转语音_1937526015025397762.json, 音频生成/音频生成/indexTTS2语音克隆+文本转语音=数字人工具！B站艾橘溪_1901518882283077634.json, 音频生成/音频生成/indexTTS2高保真文本语音克隆_2083146989964972034.json, 音频生成/音频生成/indexTTS2高保真文本语音克隆_2089241106285420545.json, 音频生成/音频生成/indexTTS2高保真文本语音克隆_2089684059302752258.json]
+members: [图片生成/图生图/图生图G-2.5生成多图参考_2098400317699350530.json, 图片生成/图生图/室内效果图分阶修复专家_2105273074542272513.json, 图片生成/图生图/家装专业制图（六大分析图)_2105445228051259394.json, 图片生成/图生图/换装 _ 全能图片G2.5_2099368749932572674.json, 图片生成/图生图/更换服装 _ 上衣+下装 _ G2.5_2101692595960377346.json, 图片生成/图生图/模特换装 全能图片G2.5 Model Outfit Changes_2100411542360641537.json, 图片生成/图生图/模特换装+全能图片G2.5+Model+Outfit+Changes 换脸_2107627490838671362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_384
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/indexTTS2高保真_2085125028710014977.json、音频生成/音频生成/Index-TTS2：数字人单人AI语音音色克隆，你的声音，无限可能！声音克隆_音色克隆_1967936640092110849.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1922462439601012737.json、音频生成/音频生成/Spark TTS 音色克隆 文本转语音_1937526015025397762.json、音频生成/音频生成/indexTTS2语音克隆+文本转语音=数字人工具！B站艾橘溪_1901518882283077634.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生图G-2.5生成多图参考_2098400317699350530.json、图片生成/图生图/室内效果图分阶修复专家_2105273074542272513.json、图片生成/图生图/家装专业制图（六大分析图)_2105445228051259394.json、图片生成/图生图/换装 _ 全能图片G2.5_2099368749932572674.json、图片生成/图生图/更换服装 _ 上衣+下装 _ G2.5_2101692595960377346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
+全部 7 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 7/8 个有
-- `IndexTTS2_Basic` —— 6/8 个有
-- `SparkTTSClone` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `CR Text Concatenate` —— 1/7 个有
 
 ## 典型参数
 

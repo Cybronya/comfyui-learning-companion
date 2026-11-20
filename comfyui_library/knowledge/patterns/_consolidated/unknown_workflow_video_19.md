@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_video_19
 type: Unknown Workflow
-frequency: 9
+frequency: 6
 level: moderate
-coverage: 0.95
-common_nodes: [SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.794667
+common_nodes: [AudioSeparation, LoadAudio, SeedVCRun, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2视频放大工作流_2021463683360104449.json, 平台全量/HD Upscaler for Video📽️_1963259185548988417.json, 平台全量/SP505-视频放大（SeedVR2）视频超清放大 视频高清放大_1974136524436582402.json, 平台全量/SeedVR2 Video Upscaler_1968242589499568129.json, 平台全量/SeedVR2 视频高清放大_提升清晰度_2027657629618671617.json, 平台全量/SeedVR2视频高清放大_1938189696503844866.json, 平台全量/SeedVR2视频高清放大_2090322758872952834.json, 平台全量/SeedVR2视频高清放大_2108721662844825602.json, 平台全量/SeedVR2视频高清放大工作流_1967864723263881218.json]
+members: [视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json, 音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json, 音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json, 音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json, 音频生成/音频生成/视频人物音色替换_2105883053682937858.json, 音频生成/音频生成/青松换音色_2050078680013131778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_19
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/SeedVR2视频放大工作流_2021463683360104449.json、平台全量/HD Upscaler for Video📽️_1963259185548988417.json、平台全量/SP505-视频放大（SeedVR2）视频超清放大 视频高清放大_1974136524436582402.json、平台全量/SeedVR2 Video Upscaler_1968242589499568129.json、平台全量/SeedVR2 视频高清放大_提升清晰度_2027657629618671617.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/适用Seedance2.5-视频音色替换，音色修正_2110615660710686721.json、音频生成/音频生成/Seed-vc语音音色替换_2056578460562313217.json、音频生成/音频生成/Seed-vc语音音色替换_2067521701025509377.json、音频生成/音频生成/[发布版]百变音君-导入视频mp4版_2035959335800541185.json、音频生成/音频生成/视频人物音色替换_2105883053682937858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 6 个 workflow 都包含：
+- `AudioSeparation`
+- `LoadAudio`
+- `SeedVCRun`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 8/9 个有
-- `VHS_VideoInfo` —— 8/9 个有
-- `easy cleanGpuUsed` —— 6/9 个有
-- `LoadImage` —— 3/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `VHS_VideoInfoSource` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `SaveAudioMP3` —— 4/6 个有
+- `孤海注释` —— 4/6 个有
 
 ## 典型参数
 

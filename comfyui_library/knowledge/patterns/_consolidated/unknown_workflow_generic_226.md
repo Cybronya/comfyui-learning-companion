@@ -1,48 +1,38 @@
 ---
 name: unknown_workflow_generic_226
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.934273
-common_nodes: [LoadAudio, NovelTextStructureNode, PreviewAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSEmotionMerge, easy indexTTSGenerateSimple]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/2人语音模仿_2011981427163795457.json, 数字人/数字人/indexTTS2-有声书制作 多人语音模仿_2011988758232567809.json, 数字人/数字人/indexTTS2-有声书制作 多人语音模仿_2049400121535766530.json, 音频生成/音频生成/indexTTS2- 单多人语音模仿 有声书制作_2036738111874535425.json, 音频生成/音频生成/indexTTS2-单人多人声音克隆_2050487352761565185.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_1980901258972282882.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2014197303279624194.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2046163060200574977.json, 音频生成/音频生成/赵老师傅的声音克隆_2065098685150752770.json, 音频生成/音频生成/超好用🔥TTS2-有声书制作-多人语音模仿-克隆_2047208745079410689.json, 音频生成/音频生成/（漫剧配音）全能语音大合集_2049541110682361857.json]
+members: [视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json, 视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json, 视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json, 视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json, 视频生成/图生视频/Seedance2.5 多模态视频生成_2085920194110771201.json, 视频生成/图生视频/Seedance2.5全参工作流_2088937374653964290.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100055319186595841.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100136230091575297.json, 视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json, 视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_226
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/2人语音模仿_2011981427163795457.json、数字人/数字人/indexTTS2-有声书制作 多人语音模仿_2011988758232567809.json、数字人/数字人/indexTTS2-有声书制作 多人语音模仿_2049400121535766530.json、音频生成/音频生成/indexTTS2- 单多人语音模仿 有声书制作_2036738111874535425.json、音频生成/音频生成/indexTTS2-单人多人声音克隆_2050487352761565185.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json、视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json、视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json、视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json、视频生成/图生视频/Seedance2.5 多模态视频生成_2085920194110771201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadAudio`
-- `NovelTextStructureNode`
-- `PreviewAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSGenerateSimple`
+全部 10 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionAudio` —— 10/11 个有
-- `easy indexTTSEmotionVector` —— 10/11 个有
-- `easy showAnything` —— 10/11 个有
-- `PreviewAny` —— 8/11 个有
-- `Text Multiline` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `Qwen3TTSCustomVoice` —— 1/11 个有
-- `Qwen3TTSModelLoader` —— 1/11 个有
-- `Qwen3TTSVoiceDesign` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
+- `LoadVideo` —— 9/10 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 8/10 个有
+- `LoadAudio` —— 6/10 个有
+- `MuyeTextEditOutput` —— 4/10 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 2/10 个有
+- `ttN text` —— 1/10 个有
 
 ## 典型参数
 

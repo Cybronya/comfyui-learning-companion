@@ -1,53 +1,38 @@
 ---
 name: unknown_workflow_generic_423
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.862143
-common_nodes: [Bjornulf_ShowInt, CompressImages, ImageListToBatch_, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy batchAnything, easy cleanGpuUsed, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.7335
+common_nodes: [LoadImage, RH_LLMAPI_NODE, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061625229243412481.json, 图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061724347244572673.json, 图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2096874184919052290.json, 图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2097168246758789121.json, 图片生成/图生图/食杂素材批量抠图【压缩包上传+压缩包下载】_2014306406605791233.json, 平台全量/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061545328695930881.json, 平台全量/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2090743779258093569.json]
+members: [图片生成/反推提示词/103图片反推提示词_2058789812529881090.json, 图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（ai贞贞工坊-gemini-3-pro版）_1992188875172892674.json, 图片生成/反推提示词/分镜反推工作流-Kimi2.5版视频分镜及画面三宫格提示词生成仅做提示词生成不是图片_2019991888387907586.json, 图片生成/反推提示词/（贞贞AI工坊成API）Kimi2.5版视频分镜及画面三宫格提示词生成_2019861408355196929.json, 图片生成/反推提示词/（贞贞AI工坊）Gemini 3 Pro图像超级反推API_1991188464685154305.json, 图片生成/反推提示词/（贞贞AI工坊）Grok图像反推API V2_1985746002089058305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_423
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061625229243412481.json、图片生成/图生图/BiRefNet批量抠图【压缩包上传+压缩包下载】_2061724347244572673.json、图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2096874184919052290.json、图片生成/图生图/BiRefNet批量抠图，循环抠图，鞋子抠图，鞋子批量抠图【压缩包上传+压缩包下载】_2097168246758789121.json、图片生成/图生图/食杂素材批量抠图【压缩包上传+压缩包下载】_2014306406605791233.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/103图片反推提示词_2058789812529881090.json、图片生成/反推提示词/全能视频S角色客串自动分镜大师V1（ai贞贞工坊-gemini-3-pro版）_1992188875172892674.json、图片生成/反推提示词/分镜反推工作流-Kimi2.5版视频分镜及画面三宫格提示词生成仅做提示词生成不是图片_2019991888387907586.json、图片生成/反推提示词/（贞贞AI工坊成API）Kimi2.5版视频分镜及画面三宫格提示词生成_2019861408355196929.json、图片生成/反推提示词/（贞贞AI工坊）Gemini 3 Pro图像超级反推API_1991188464685154305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CompressImages`
-- `ImageListToBatch_`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `SaveImage`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `ShellAgentPluginOutputText`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `忽略多组孤海` —— 6/7 个有
-- `BiRefNetRMBG` —— 3/7 个有
-- `GH_MaskGrowthBlur` —— 3/7 个有
-- `JoinImageWithAlpha` —— 3/7 个有
-- `LoadImage` —— 3/7 个有
-- `LoadRembgByBiRefNetModel` —— 3/7 个有
-- `RembgByBiRefNet` —— 3/7 个有
-- `easy imageRemBg` —— 1/7 个有
+- `CR Prompt Text` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `JjkText` —— 2/6 个有
+- `easy saveText` —— 1/6 个有
 
 ## 典型参数
 

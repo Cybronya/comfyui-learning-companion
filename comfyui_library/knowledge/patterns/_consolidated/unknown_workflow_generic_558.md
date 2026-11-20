@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_558
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.913
-common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), InvertMask, InvertMask (segment anything), LayerUtility: CropByMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SAMLoader, SaveImage]
+coverage: 0.861
+common_nodes: [ArgosTranslateTextNode, Bjornulf_ShowStringText, LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/co 批量裁剪新2_2071504923543556097.json, 图片生成/图生图/co 批量裁剪新3_2071519463295508482.json, 图片生成/图生图/co裁剪1_2075961816714407937.json, 图片生成/图生图/co裁剪_2075131937269829633.json, 平台全量/cocoon 裁剪1_2071114194623225858.json, 平台全量/co裁剪新_2117807875505606657.json]
+members: [图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json, 图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json, 图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json, 图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json, 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_558
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/co 批量裁剪新2_2071504923543556097.json、图片生成/图生图/co 批量裁剪新3_2071519463295508482.json、图片生成/图生图/co裁剪1_2075961816714407937.json、图片生成/图生图/co裁剪_2075131937269829633.json、平台全量/cocoon 裁剪1_2071114194623225858.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json、图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json、图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json、图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json、图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `InvertMask`
-- `InvertMask (segment anything)`
-- `LayerUtility: CropByMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 5 个 workflow 都包含：
+- `ArgosTranslateTextNode`
+- `Bjornulf_ShowStringText`
 - `LoadImage`
-- `SAMLoader`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GroupSwitcher` —— 3/6 个有
+- `Image Stitch` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

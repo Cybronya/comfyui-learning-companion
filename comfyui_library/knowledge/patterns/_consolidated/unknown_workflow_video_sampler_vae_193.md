@@ -1,63 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_193
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.720667
-common_nodes: [ImageConcatMulti, JWInteger, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, LoadWanVideoT5TextEncoder, Note Plus (mtb), PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.755
+common_nodes: [ColorMatch, DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoCFG, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoModelLoader, HyVideoSampler, HyVideoTextEncode, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJ, Int, LoadImage, MathExpression|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json, 视频生成/图生视频/VACE 14B双图参考强视频编辑_1922711297270452225.json, 视频生成/图生视频/VACE自定义背景强一致性双重引导蒙版人物动作迁移V1_1907459540840026113.json]
+members: [视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json, 视频生成/图生视频/混元_SkyReels_图生视频，对标可灵与海螺等！_1892126522352820225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_193
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json、视频生成/图生视频/VACE 14B双图参考强视频编辑_1922711297270452225.json、视频生成/图生视频/VACE自定义背景强一致性双重引导蒙版人物动作迁移V1_1907459540840026113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json、视频生成/图生视频/混元_SkyReels_图生视频，对标可灵与海螺等！_1892126522352820225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageConcatMulti`
-- `JWInteger`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
+全部 2 个 workflow 都包含：
+- `ColorMatch`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `HyVideoBlockSwap`
+- `HyVideoCFG`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTextEncode`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Note Plus (mtb)`
-- `PreviewImage`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/3 个有
-- `JWImageResizeByLongerSide` —— 2/3 个有
-- `TTP_Expand_And_Mask` —— 2/3 个有
-- `GrowMaskWithBlur` —— 1/3 个有
-- `ImageFromBatch+` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 1/3 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 1/3 个有
-- `LayerUtility: ImageBlend V2` —— 1/3 个有
-- `MaskToImage` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_MergeImages` —— 1/3 个有
-- `WanVideoVACEModelSelect` —— 1/3 个有
+- `CR Text` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -69,4 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

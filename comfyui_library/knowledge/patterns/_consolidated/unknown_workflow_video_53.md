@@ -1,45 +1,44 @@
 ---
 name: unknown_workflow_video_53
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.956833
-common_nodes: [Int, MathExpression_UTK, RIFE VFI, SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
+coverage: 0.719667
+common_nodes: [AILab_QwenVL, SaveVideo, ShowText|pysssss, VHS_LoadVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/SeedVR2&RealESRGAN视频高清放大+补针_1974860417333858306.json, 平台全量/SeedVR2.5.1 视频高清放大+补帧   Video Upscaler 视频高清修_2022149192772231170.json, 平台全量/SeedVR2视频高清放大+补针_1975064510107136002.json, 平台全量/视频高清放大+补帧 SeedVR2.5.1 Video Upscaler 视频高清修_2022498567172136961.json, 视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json, 视频生成/文生视频/批量视频生成  全能S2文生视频合集 高速10个合并生成超长视频 SeedVR2.5.1 视频高清放_2022937587438067714.json]
+members: [图片生成/反推提示词/Qwen3 VL视频反推+全能视频S文生视频无需输入提示词_1981604972750086145.json, 视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json, 视频生成/文生视频/Qwen3 视频反推+全能视频S文生视频，直出视频，无需输入提示词_1986442098058657793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_53
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/SeedVR2&RealESRGAN视频高清放大+补针_1974860417333858306.json、平台全量/SeedVR2.5.1 视频高清放大+补帧   Video Upscaler 视频高清修_2022149192772231170.json、平台全量/SeedVR2视频高清放大+补针_1975064510107136002.json、平台全量/视频高清放大+补帧 SeedVR2.5.1 Video Upscaler 视频高清修_2022498567172136961.json、视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VL视频反推+全能视频S文生视频无需输入提示词_1981604972750086145.json、视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json、视频生成/文生视频/Qwen3 视频反推+全能视频S文生视频，直出视频，无需输入提示词_1986442098058657793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Int`
-- `MathExpression_UTK`
-- `RIFE VFI`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `SaveVideo`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `CR Text` —— 2/6 个有
-- `RH_Sora2_T2V_Batch` —— 2/6 个有
-- `SaveVideo` —— 2/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
+- `CR Text` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_Sora2_T2V` —— 2/3 个有
+- `String` —— 2/3 个有
+- `RH_Sora2_I2V` —— 1/3 个有
 
 ## 典型参数
 

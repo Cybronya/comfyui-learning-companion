@@ -1,71 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_339
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.867
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.944
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/千问 批量生成同一人物不同场景图片_1960644814964424706.json, 图片生成/图生图/千问 改图 极速版_2068917331832696833.json, 图片生成/文生图/Qwen-Image-文生图批量_1953016614931337218.json, 平台全量/千问 文字编辑图片_1958788372313632770.json]
+members: [图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json, 图片生成/图生图/13.老照片修复_2051995992244932609.json, 图片生成/图生图/Flux2 Klein Multi-Image Edit_2018198139378864129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_339
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/千问 批量生成同一人物不同场景图片_1960644814964424706.json、图片生成/图生图/千问 改图 极速版_2068917331832696833.json、图片生成/文生图/Qwen-Image-文生图批量_1953016614931337218.json、平台全量/千问 文字编辑图片_1958788372313632770.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json、图片生成/图生图/13.老照片修复_2051995992244932609.json、图片生成/图生图/Flux2 Klein Multi-Image Edit_2018198139378864129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `TextEncodeQwenImageEdit` —— 3/4 个有
-- `CR Prompt List` —— 2/4 个有
-- `FluxKontextImageScale` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `easy imageSize` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `EmptyFlux2LatentImage` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ResizeImagesByLongerEdge` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `Image Padding` —— 1/3 个有
+- `ImageAddNoise` —— 1/3 个有
+- `ImageCASharpening+` —— 1/3 个有
+- `ImageColorMatch+` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `LoaderGGUF` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 4 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

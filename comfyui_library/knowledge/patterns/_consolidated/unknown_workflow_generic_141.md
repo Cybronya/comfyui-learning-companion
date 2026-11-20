@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_generic_141
 type: Unknown Workflow
-frequency: 14
+frequency: 13
 level: moderate
-coverage: 0.568643
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.815462
+common_nodes: [RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/(贞贞AI工坊)全能视频V3.1 双图参考图生视频Pro版（基准0.3元_8S）_1980579384295903234.json, 视频生成/图生视频/(90%稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2034670975614193666.json, 视频生成/图生视频/(Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖屏频-基准价格1.7元）_1977807207951728641.json, 视频生成/图生视频/(Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横竖屏频-基准价格0.1元）_1979417427316477953.json, 视频生成/图生视频/(宽松审核)全能视频V3.1 Lite多参生视频（贞贞工坊-备用分组1）_2045803250208739330.json, 视频生成/图生视频/(新版0.1积分-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选default)_2036008151446724610.json, 视频生成/图生视频/(稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2045808720227082242.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 双图参考图生视频特价版（基准0.3_8S）_1980575345395060738.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧视频特价版（基准0.3_8S）_1980581502599741442.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1图生视频特价版（基准0.3_8S）_1980566479743664129.json, 视频生成/图生视频/世界最强图生视频全能视频V3 v3特价版（基准价格1.5元_次）_1946030532021153794.json, 视频生成/图生视频/世界最强图生视频全能视频V3 v3（基准价格1.5元_次）_1944929553569730561.json, 视频生成/文生视频/世界最强图生视频全能视频V3 v5 版（基准价格1.5元_次）_1942486518382661633.json, 视频生成/文生视频/世界最强文生视频全能视频V3 v3（基准价格1.5元_次）_1942436897685712898.json]
+members: [视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json, 视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json, 视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2068031543890960384.json, 视频生成/文生视频/Happyhorse 视频新王文生视频_2048670229525438466.json, 视频生成/文生视频/Happyhorse1.0-文生视频_2048997203577933826.json, 视频生成/文生视频/Happyhorse1.0-超强模型-文生视频工作流_2048769700766687233.json, 视频生成/文生视频/Happyhorse1.0文生视频｜输入文字直接生成短片_2106625262682202113.json, 视频生成/文生视频/happyhorse-1.0 快乐马+文生视频_2049334884107296770.json, 视频生成/文生视频/happyhorse文生视频（快乐马）_2048763504257146881.json, 视频生成/文生视频/视频丨阿里happyhorse快乐小马文生视频_2053809575291301890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_141
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/(贞贞AI工坊)全能视频V3.1 双图参考图生视频Pro版（基准0.3元_8S）_1980579384295903234.json、视频生成/图生视频/(90%稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2034670975614193666.json、视频生成/图生视频/(Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖屏频-基准价格1.7元）_1977807207951728641.json、视频生成/图生视频/(Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横竖屏频-基准价格0.1元）_1979417427316477953.json、视频生成/图生视频/(宽松审核)全能视频V3.1 Lite多参生视频（贞贞工坊-备用分组1）_2045803250208739330.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json、视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json、视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `LoadImage`
+全部 13 个 workflow 都包含：
+- `RH_AlibabaHappyhorse10TextToVideo`
 - `SaveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Googel_Veo3` —— 9/14 个有
-- `SaveImage` —— 9/14 个有
-- `Comfly_sora2` —— 5/14 个有
-- `ShellAgentPluginOutputText` —— 4/14 个有
-- `Comfly_Googel_Veo3_Lite` —— 1/14 个有
-- `ImageConcatMulti` —— 1/14 个有
+- `JjkText` —— 6/13 个有
+- `LoadImage` —— 1/13 个有
 
 ## 典型参数
 

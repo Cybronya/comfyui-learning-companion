@@ -1,56 +1,43 @@
 ---
 name: unknown_workflow_upscale_vae_25
 type: Unknown Workflow
-frequency: 8
+frequency: 6
 level: moderate
-coverage: 0.825625
-common_nodes: [Image Comparer (rgthree), ImageScale, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, SaveImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
+coverage: 0.739333
+common_nodes: [LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/QT106-图像高清放大 超分放大_2046444473789452289.json, 图片生成/图生图/SeedVR2_四版本高清放大_2054841174053138433.json, 图片生成/图生图/SeedVR2——适用于高清的增加细节_2031549216664850433.json, 图片生成/图生图/SeedVR2图像_1990614296726048770.json, 图片生成/图生图/SeedVR2放大（一）——适用于不清晰的图像_2031541186091028482.json, 图片生成/图生图/⭐️ SeedVR2 四版本高清放大_1988399778717417474.json, 图片生成/图生图/⭐️_SeedVR2_四版本高清放大_2054759441928597506.json, 图片生成/图生图/⭐️_SeedVR2_四版本高清放大_2055158088608567298.json]
+members: [图片生成/图生图/-全能图片V2 图像编辑_1991491723134246914.json, 图片生成/图生图/007.其他-功能风格004.SeedVR2 高清图片修复_2035402510206242818.json, 图片生成/图生图/007.其他-功能风格005.批量SeedVR2 高清图片修复_2035403955248832513.json, 图片生成/图生图/SeedVR-2高清修复_2077567322830757890.json, 图片生成/图生图/SeedVR-2高清修复_2077670806905253889.json, 图片生成/图生图/SeedVR2图像4K放大_2089291110207279106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/QT106-图像高清放大 超分放大_2046444473789452289.json、图片生成/图生图/SeedVR2_四版本高清放大_2054841174053138433.json、图片生成/图生图/SeedVR2——适用于高清的增加细节_2031549216664850433.json、图片生成/图生图/SeedVR2图像_1990614296726048770.json、图片生成/图生图/SeedVR2放大（一）——适用于不清晰的图像_2031541186091028482.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/-全能图片V2 图像编辑_1991491723134246914.json、图片生成/图生图/007.其他-功能风格004.SeedVR2 高清图片修复_2035402510206242818.json、图片生成/图生图/007.其他-功能风格005.批量SeedVR2 高清图片修复_2035403955248832513.json、图片生成/图生图/SeedVR-2高清修复_2077567322830757890.json、图片生成/图生图/SeedVR-2高清修复_2077670806905253889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScale`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `PrimitiveInt`
+- `PreviewImage`
 - `SaveImage`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy imageSizeBySide`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVR2GGUF` —— 7/8 个有
-- `SeedVR2` —— 5/8 个有
-- `Fast Groups Muter (rgthree)` —— 4/8 个有
-- `GetImageSize+` —— 4/8 个有
-- `ImageResize+` —— 4/8 个有
-- `ImageScaleBy` —— 4/8 个有
-- `SeedVR2LoadDiTModel` —— 4/8 个有
-- `SeedVR2LoadVAEModel` —— 4/8 个有
-- `SeedVR2VideoUpscaler` —— 4/8 个有
-- `PreviewImage` —— 3/8 个有
-- `PlaySound|pysssss` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `easy imageScaleDownToSize` —— 2/6 个有
+- `RB_LoadImagesFromDir` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `VOSR2ModelLoader` —— 1/6 个有
+- `VOSR2Upscale` —— 1/6 个有
 
 ## 典型参数
 

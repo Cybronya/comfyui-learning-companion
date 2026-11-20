@@ -1,62 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_17
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyHunyuanLatentVideo, KSampler, ModelSamplingSD3, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8414
+common_nodes: [BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, HiDreamO1PatchSeamSmoothing, KSamplerSelect, ModelNoiseScale, SamplerCustom, SaveImage, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/04.WAN2.2-文生图-nf_1991131479682166785.json, 图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json, 视频生成/图生视频/AIO-V10大一统文生视频-Wan2.2_1950720538975096834.json, 视频生成/文生视频/rapid-aio一个模型搞定文生视频_1955156862251536386.json, 视频生成/文生视频/▶Wan2.2-AllInOne-V10文生视频超快速工作流【好奇漫步】_1970121357323366402.json, 视频生成/文生视频/文生视频Wan2.2 - T2V-rapid-aio AI 文生视频_2009171871626960898.json]
+members: [图片生成/图生图/【遇见AI】HiDream O1 comfyui官流，多图参考_2055211379967176705.json, 图片生成/文生图/Hidream-01-文生图_2055289829646192642.json, 图片生成/文生图/hidream_o1_image 文生图_2055326981159432193.json, 图片生成/文生图/hidream_o1_image_t2i_2055131118483066881.json, 图片生成/文生图/【遇见AI】HiDream O1 comfyui官流，文生图_2055167421874483202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/04.WAN2.2-文生图-nf_1991131479682166785.json、图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json、视频生成/图生视频/AIO-V10大一统文生视频-Wan2.2_1950720538975096834.json、视频生成/文生视频/rapid-aio一个模型搞定文生视频_1955156862251536386.json、视频生成/文生视频/▶Wan2.2-AllInOne-V10文生视频超快速工作流【好奇漫步】_1970121357323366402.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【遇见AI】HiDream O1 comfyui官流，多图参考_2055211379967176705.json、图片生成/文生图/Hidream-01-文生图_2055289829646192642.json、图片生成/文生图/hidream_o1_image 文生图_2055326981159432193.json、图片生成/文生图/hidream_o1_image_t2i_2055131118483066881.json、图片生成/文生图/【遇见AI】HiDream O1 comfyui官流，文生图_2055167421874483202.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
-- `ModelSamplingSD3`
+- `HiDreamO1PatchSeamSmoothing`
+- `KSamplerSelect`
+- `ModelNoiseScale`
+- `SamplerCustom`
+- `SaveImage`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 4/6 个有
-- `LayerUtility: PurgeVRAM` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `INTConstant` —— 1/6 个有
+- `LoadImage` —— 4/5 个有
+- `EmptyHiDreamO1LatentImage` —— 3/5 个有
+- `AILab_QwenVL` —— 2/5 个有
+- `EmptyLatentImage` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `HiDreamO1ReferenceImages` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 6 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | sa_solver | - | 6 | 50% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1440 | - | 2 | 100% |
+| 高度 | 2560 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，6 个样本，一致性 50%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1440，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 2560，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

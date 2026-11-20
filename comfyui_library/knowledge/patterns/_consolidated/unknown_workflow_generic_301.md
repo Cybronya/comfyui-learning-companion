@@ -1,46 +1,40 @@
 ---
 name: unknown_workflow_generic_301
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.675667
-common_nodes: [CR Text Concatenate, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text]
+coverage: 0.679625
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json, 图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json, 图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json, 图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json, 图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json, 图片生成/图生图/图生图9宫格分镜图_2100548658549837825.json, 图片生成/图生图/图生图9宫格分镜图_2101492586950254593.json, 图片生成/图生图/图生图9宫格分镜图_2102306879014785025.json, 平台全量/AI电影短剧分镜V2加强版_2020751813347123201.json]
+members: [图片生成/图生图/chat 全能图片G_2073669221862694914.json, 图片生成/图生图/全能图片G2_2112017803111911425.json, 图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json, 图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json, 图片生成/文生图/全能图片G2.0_2047522964949704706.json, 图片生成/文生图/全能图片G2.0_2047539684821176321.json, 图片生成/文生图/全能图片G2低价版_2051165573173784578.json, 图片生成/文生图/全能图片G2通用流（低价版）_2051172217471422466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_301
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/一张图生成9宫格分镜图_1999852310501224450.json、图片生成/图生图/一张图生成9宫格电影分镜图_2010640602496503809.json、图片生成/图生图/九宫格分镜_一致性超强工作流_2028467372574646274.json、图片生成/图生图/全网最强！上传一张图一键生成9张分镜图，AI创作必备，无私奉献！_2000393758724288513.json、图片生成/图生图/图生图9宫格分镜图_2100179312413593602.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/chat 全能图片G_2073669221862694914.json、图片生成/图生图/全能图片G2_2112017803111911425.json、图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json、图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json、图片生成/文生图/全能图片G2.0_2047522964949704706.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
 - **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Text Concatenate`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 8/9 个有
-- `Crop (mtb)` —— 1/9 个有
-- `EmptyImage` —— 1/9 个有
-- `GetImageSize` —— 1/9 个有
-- `ImageBatchMultiple+` —— 1/9 个有
-- `JjkText` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
+- `RH_RhartImageG2TextToImage` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `PlaySound|pysssss` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

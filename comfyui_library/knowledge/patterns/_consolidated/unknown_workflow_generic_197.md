@@ -3,39 +3,33 @@ name: unknown_workflow_generic_197
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.704818
-common_nodes: [CR Prompt Text, PreviewAny, Qwen3_VQA, SaveImage, easy showAnything]
+coverage: 0.754545
+common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3 VL 4B图片+视频反推V2_2064613376470376449.json, 图片生成/反推提示词/Qwen3 VL 4B视频反推_1981611031120224258.json, 图片生成/反推提示词/Qwen3 VL 8B图像反推V1_1980928347800817666.json, 图片生成/反推提示词/Qwen3 VL 8B图像反推_1981297088204103682.json, 图片生成/反推提示词/Qwen3 VL 8B视频反推V3_1980924554673606657.json, 图片生成/反推提示词/Qwen3 VL 8B视频反推V3_2067244042886410242.json, 图片生成/反推提示词/Qwen3_VL_8B图像反推提示词_2064241754370564097.json, 图片生成/反推提示词/（N版）Qwen3 VL 4B图像反推V1_1980928358605344769.json, 图片生成/反推提示词/（N版）Qwen3 VL 4B视频反推V2_1980913307014053889.json, 图片生成/反推提示词/（N版）Qwen3 VL 4B视频反推V2_2064160709461766146.json, 视频生成/图生视频/Qwen3-VL图片视频反推_2064223309994221569.json]
+members: [视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频_1979082743093039105.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_197
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VL 4B图片+视频反推V2_2064613376470376449.json、图片生成/反推提示词/Qwen3 VL 4B视频反推_1981611031120224258.json、图片生成/反推提示词/Qwen3 VL 8B图像反推V1_1980928347800817666.json、图片生成/反推提示词/Qwen3 VL 8B图像反推_1981297088204103682.json、图片生成/反推提示词/Qwen3 VL 8B视频反推V3_1980924554673606657.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json、视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json、视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json、视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CR Prompt Text`
 - `PreviewAny`
-- `Qwen3_VQA`
-- `SaveImage`
-- `easy showAnything`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 10/11 个有
-- `LoadImage` —— 8/11 个有
-- `VideoLoaderPlus` —— 6/11 个有
-- `ImageLoader` —— 5/11 个有
-- `MultiplePathsInput` —— 1/11 个有
-- `VideoLoader` —— 1/11 个有
+- `Text _O` —— 1/11 个有
 
 ## 典型参数
 

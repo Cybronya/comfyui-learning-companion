@@ -1,82 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_vae_32
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.85475
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+frequency: 7
+level: moderate
+coverage: 0.892857
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json, 视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json, 视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json, 视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json, 视频生成/文生视频/video_ltx2_3_i2v_GGUF_2030688003991015426.json, 视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json, 视频生成/文生视频/video_ltx2_3_i2v图生视频，音画同步视频生成，qwen3.5文本反推，_2042515888879968257.json, 视频生成/文生视频/咕咕嘎嘎？_2042845410145869826.json]
+members: [图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json, 图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json, 图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json, 图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2041331289025945602.json, 图片生成/文生图/FLUX2文生图_1994284131244851202.json, 图片生成/文生图/FLUX2文生图基础工作流_1993578946742730753.json, 图片生成/文生图/FLUX2文生图基础工作流_1993609903375843329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json、视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json、视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json、视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json、视频生成/文生视频/video_ltx2_3_i2v_GGUF_2030688003991015426.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json、图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json、图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json、图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2041331289025945602.json、图片生成/文生图/FLUX2文生图_1994284131244851202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 7/8 个有
-- `KSamplerSelect` —— 7/8 个有
-- `LTXVAudioVAELoader` —— 7/8 个有
-- `LTXVCropGuides` —— 7/8 个有
-- `LTXVLatentUpsampler` —— 7/8 个有
-- `LatentUpscaleModelLoader` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `VAEDecodeTiled` —— 7/8 个有
-- `LTXAVTextEncoderLoader` —— 6/8 个有
-- `LTXVImgToVideoInplace` —— 5/8 个有
-- `LTXVPreprocess` —— 5/8 个有
-- `PrimitiveBoolean` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `ResizeImageMaskNode` —— 5/8 个有
-- `ResizeImagesByLongerEdge` —— 5/8 个有
-- `LoadImage` —— 4/8 个有
-- `VAEDecode` —— 2/8 个有
-- `DualCLIPLoader` —— 1/8 个有
-- `DualCLIPLoaderGGUF` —— 1/8 个有
-- `LTXVScheduler` —— 1/8 个有
-- `PathchSageAttentionKJ` —— 1/8 个有
-- `SamplerEulerAncestral` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
-- `VAELoaderKJ` —— 1/8 个有
-- `easy getNode` —— 1/8 个有
-- `easy setNode` —— 1/8 个有
-- `llama_cpp_instruct_adv` —— 1/8 个有
-- `llama_cpp_model_loader` —— 1/8 个有
-- `llama_cpp_parameters` —— 1/8 个有
+- `UNETLoader` —— 6/7 个有
+- `Text Multiline` —— 3/7 个有
+- `Int` —— 2/7 个有
+- `RH_LLMAPI_NODE` —— 2/7 个有
+- `easy showAnything` —— 2/7 个有
+- `CR SDXL Aspect Ratio` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `UnetLoaderGGUF` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 8 | 92% |
-| 高度 | 25 | 25 - 25 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，8 个样本，取值集中（一致性 92%）
-- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

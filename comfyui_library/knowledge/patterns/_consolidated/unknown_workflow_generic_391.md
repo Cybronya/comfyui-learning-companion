@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_391
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.762
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json, 视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2020042971273498625.json, "视频生成/图生视频/ViduQ3-Pro图生视频（支持2k,1080p）_2018301447317757954.json", 视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json]
+members: [图片生成/文生图/image two文生图_2060255026014150658.json, 图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json, 图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json, 图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json, 图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json, 图片生成/文生图/全能图像G2-文生图_2048754806386331650.json, 图片生成/文生图/角色资产创建（API）_2051982716761067521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_391
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json、视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json、视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/image two文生图_2060255026014150658.json、图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json、图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json、图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json、图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_ViduQ3_Image2Video` —— 7/8 个有
-- `CR Text` —— 3/8 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/8 个有
+- `CR Text` —— 5/7 个有
+- `PreviewImage` —— 4/7 个有
+- `LoadImage` —— 2/7 个有
+- `RH_RhartImageNProEdit` —— 1/7 个有
 
 ## 典型参数
 

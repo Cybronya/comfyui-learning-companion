@@ -1,35 +1,33 @@
 ---
 name: image_to_image_sampler_clip_unet_178
 type: Image To Image
-frequency: 3
-level: moderate
-coverage: 0.792667
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-图生图丨洗图_1988237602652381186.json, 图片生成/图生图/Z-image通用图生图工作流_2087374985752039425.json, 图片生成/图生图/Z-image通用图生图工作流_2087403054042796034.json]
+members: [图片生成/图生图/图生图_1912269070673113089.json, 图片生成/图生图/图生图kontext_1950688427077472258.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_178
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-图生图丨洗图_1988237602652381186.json、图片生成/图生图/Z-image通用图生图工作流_2087374985752039425.json、图片生成/图生图/Z-image通用图生图工作流_2087403054042796034.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图生图_1912269070673113089.json、图片生成/图生图/图生图kontext_1950688427077472258.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -37,34 +35,32 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `JanusImageUnderstanding` —— 1/3 个有
-- `JanusModelLoader` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `ImageScaleDownToSize` —— 1/2 个有
+- `Joy_caption` —— 1/2 个有
+- `Joy_caption_load` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 3 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 3 | 53% |
-| 采样算法 | res_multistep | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 0.55 | 0.55 - 0.6 | 3 | 96% |
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.65 | - | 2 | 77% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，3 个样本
-- 采样算法 最常用 res_multistep，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 0.55，观测区间 0.55 - 0.6，3 个样本，取值集中（一致性 96%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

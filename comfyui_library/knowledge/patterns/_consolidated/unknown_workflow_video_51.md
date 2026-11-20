@@ -1,38 +1,54 @@
 ---
 name: unknown_workflow_video_51
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.955333
-common_nodes: [FlashVSRNode, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.8695
+common_nodes: [Any To Any, CR Prompt Text, GetImageSizeAndCount, GetVideoComponents, LayerUtility: PurgeVRAM V2, LoadVideo, MathExpression|pysssss, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/FlashVSR V1.1模糊视频高清放大_2018240987654529025.json, 平台全量/FlashVSR 视频高清放大 极速低显存版_1986991085123776514.json, 平台全量/FlashVSR-自用 1.1_1986708239440097281.json, 平台全量/FlashVSR模糊视频高清处理工作流_1981562253055016962.json, 平台全量/FlashVSR模糊视频高清放大_1980654731339153410.json, 视频生成/图生视频/【阡陌】FlashVSR视频超分辨率高清修复放大_1983077919813726210.json]
+members: [音频生成/音频生成/Woosh+Qwen3 VL视频自动音效-自动提示词_2043709526666387458.json, 音频生成/音频生成/Woosh+Qwen3 VL视频自动音效V1_2043499448038334465.json, 音频生成/音频生成/Woosh+Qwen3+VL视频自动音效V1_2043983264049795073.json, 音频生成/音频生成/Woosh视频配音效（提示词增强）_2054759772985012225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_51
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/FlashVSR V1.1模糊视频高清放大_2018240987654529025.json、平台全量/FlashVSR 视频高清放大 极速低显存版_1986991085123776514.json、平台全量/FlashVSR-自用 1.1_1986708239440097281.json、平台全量/FlashVSR模糊视频高清处理工作流_1981562253055016962.json、平台全量/FlashVSR模糊视频高清放大_1980654731339153410.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Woosh+Qwen3 VL视频自动音效-自动提示词_2043709526666387458.json、音频生成/音频生成/Woosh+Qwen3 VL视频自动音效V1_2043499448038334465.json、音频生成/音频生成/Woosh+Qwen3+VL视频自动音效V1_2043983264049795073.json、音频生成/音频生成/Woosh视频配音效（提示词增强）_2054759772985012225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `FlashVSRNode`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `Any To Any`
+- `CR Prompt Text`
+- `GetImageSizeAndCount`
+- `GetVideoComponents`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadVideo`
+- `MathExpression|pysssss`
+- `Qwen3_VQA`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
+- `WooshLoadFlow`
+- `WooshLoadVideo`
+- `WooshSample`
+- `WooshTextEncode`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `Float` —— 2/6 个有
-- `LoadImage` —— 2/6 个有
-- `VHS_VideoInfoLoaded` —— 2/6 个有
-- `easy imageConcat` —— 1/6 个有
+- `PreviewAudio` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
+- `CustomAddLabel` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `ResizeImagesByLongerEdge` —— 1/4 个有
+- `RunningHub Deepcleaner` —— 1/4 个有
 
 ## 典型参数
 

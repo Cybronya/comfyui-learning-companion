@@ -3,37 +3,54 @@ name: unknown_workflow_generic_1509
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [CLIPLoader, GetVideoComponents, LoadVideo, SaveImage, ShowText|pysssss, TextGenerate, easy showAnything]
+coverage: 0.8355
+common_nodes: [EmptyImage, Fast Groups Muter (rgthree), GeminiImageNode, GetImageSize, ImageCompositeMasked, ImageConcatMulti, ImagePadForOutpaintMasked_UTK, ImagePadKJ, ImageResizeKJ, ImageTextOverlay, Int, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, TTP_text_mix]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Gemma4 FT_2098902714246852609.json, 图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json]
+members: [图片生成/图生图/大香蕉-全能图片V1 应用合集_1963466085067739137.json, 视频生成/图生视频/-全能图片V1 玩法合集_1971482222584905730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1509
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Gemma4 FT_2098902714246852609.json、图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/大香蕉-全能图片V1 应用合集_1963466085067739137.json、视频生成/图生视频/-全能图片V1 玩法合集_1971482222584905730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `GetVideoComponents`
-- `LoadVideo`
+- `EmptyImage`
+- `Fast Groups Muter (rgthree)`
+- `GeminiImageNode`
+- `GetImageSize`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImagePadForOutpaintMasked_UTK`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `ImageTextOverlay`
+- `Int`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextGenerate`
-- `easy showAnything`
+- `TTP_text_mix`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `JanusImageUnderstanding` —— 1/2 个有
+- `JanusModelLoader` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `SDVN Any Show` —— 1/2 个有
+- `SeedVR2GGUF` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
 
 ## 典型参数
 

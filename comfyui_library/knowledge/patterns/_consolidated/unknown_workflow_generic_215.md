@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_215
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.911364
-common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.9284
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/scc 文生图_2027011474685698050.json, "图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json", 图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json, 图片生成/文生图/全能图片 Pro_2032032541141639169.json, 图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json, 图片生成/文生图/全能图片V1 2 & Pro-文生图版强的可怕-text-to-image_1991900059478585346.json, 图片生成/文生图/全能图片V1 2 文生图_1992265412136030210.json, 图片生成/文生图/全能图片V1 Pro双图编辑_1993152726519529474.json, 图片生成/文生图/全能图片V12-香蕉2_1991696350530334722.json, 平台全量/全能图像Pro（三图编辑）_2018635250422784002.json, 平台全量/全能图像Pro（双图编辑）_2018368806111940609.json]
+members: [图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json, 图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json, 图片生成/图生图/扣子用flash+pro_2065376363892264962.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json, 图片生成/图生图/👾怪獸-全能图片2&Pro进阶玩法指定人物、服装、姿势👾_2047643887178616833.json, 图片生成/文生图/(自用) 2&Pro_2028323439991328770.json, 图片生成/文生图/2030936263259332609.json, 图片生成/文生图/最强生图模型2&pro_2032269255114231810.json, 图片生成/文生图/角色站位图_2037123359535800321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_215
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/scc 文生图_2027011474685698050.json、图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json、图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json、图片生成/文生图/全能图片 Pro_2032032541141639169.json、图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json、图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json、图片生成/图生图/扣子用flash+pro_2065376363892264962.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
+全部 10 个 workflow 都包含：
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 9/11 个有
-- `LoadImage` —— 7/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
-- `TextInput_` —— 2/11 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 9/10 个有
+- `CR Prompt Text` —— 8/10 个有
+- `RH_Nano_Banana2_Image2Image` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
+- `CR Text` —— 2/10 个有
+- `RH_LLMAPI_Pro_Node` —— 2/10 个有
+- `JjkConcat` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
 
 ## 典型参数
 

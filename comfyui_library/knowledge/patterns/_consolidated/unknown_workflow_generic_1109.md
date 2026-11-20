@@ -3,36 +3,44 @@ name: unknown_workflow_generic_1109
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.875
-common_nodes: [LoadAudio, LoadImage, RH_Captioner, RunningHub MultiTalk AllInOne, RunningHub MultiTalk Pipeline, SaveVideo]
+coverage: 0.865333
+common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LongCatVoiceCloneTTS, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PreviewAny, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/5倍加速！双人互动数字人MultiTalk高质量长视频版 V3_1934893033231949825.json, 数字人/数字人/MeiGen-AI-MultiTalk_1934668980059873282.json, 视频生成/图生视频/MultiTalk加速版双人互动数字人_1935958745736208386.json]
+members: [数字人/数字人/声音设计（用于短剧多角色声音一致性）_2090434415913689090.json, 音频生成/音频生成/声音设计+声音克隆多_2069722323015524354.json, 音频生成/音频生成/声音设计+声音克隆多合一工作流（Qwen3+OmniVoice+Longcat）_2059986652633849857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1109
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/5倍加速！双人互动数字人MultiTalk高质量长视频版 V3_1934893033231949825.json、数字人/数字人/MeiGen-AI-MultiTalk_1934668980059873282.json、视频生成/图生视频/MultiTalk加速版双人互动数字人_1935958745736208386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/声音设计（用于短剧多角色声音一致性）_2090434415913689090.json、音频生成/音频生成/声音设计+声音克隆多_2069722323015524354.json、音频生成/音频生成/声音设计+声音克隆多合一工作流（Qwen3+OmniVoice+Longcat）_2059986652633849857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadAudio`
 - `LoadImage`
-- `RH_Captioner`
-- `RunningHub MultiTalk AllInOne`
-- `RunningHub MultiTalk Pipeline`
-- `SaveVideo`
+- `LongCatVoiceCloneTTS`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `PreviewAny`
+- `PreviewAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `JWInteger` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
 
 ## 典型参数
 

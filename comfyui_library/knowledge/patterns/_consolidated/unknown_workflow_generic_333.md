@@ -1,40 +1,33 @@
 ---
 name: unknown_workflow_generic_333
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.978778
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 1
+common_nodes: [RH_Doubao_Seedance_1_5_Pro, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
+members: [视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004068802759434242.json, 视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json, 视频生成/图生视频/豆包 Seedance 1.5 Pro 首尾帧图生视频_2005581003802505218.json, 视频生成/文生视频/文生视频豆包+Seedance+1.5+Pro_2031924626279895041.json, 视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004066004755988481.json, 视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004402427434598402.json, 视频生成/文生视频/豆包 最新-Seedance 1.5 Pro 图生视频_2004227379792936962.json, 视频生成/文生视频/豆包1.5Pro_文生视频+音画同步_2019242735152144386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_333
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004068802759434242.json、视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json、视频生成/图生视频/豆包 Seedance 1.5 Pro 首尾帧图生视频_2005581003802505218.json、视频生成/文生视频/文生视频豆包+Seedance+1.5+Pro_2031924626279895041.json、视频生成/文生视频/豆包 Seedance 1.5 Pro 文生视频_2004066004755988481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+全部 8 个 workflow 都包含：
+- `RH_Doubao_Seedance_1_5_Pro`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
-- `Text` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `LoadImage` —— 4/8 个有
 
 ## 典型参数
 

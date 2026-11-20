@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_396
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.901125
-common_nodes: [CR Text, LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, RunningHubAudio8ModelLoader, RunningHubAudio8Prompt, RunningHubAudio8Sampling, RunningHubAudio8TTS, SaveAudio]
+coverage: 0.940714
+common_nodes: [Int, JjkText, LoadAudio, Note _O, SaveAudio, SparkTTSClone, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083863614699687937.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864179072659457.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864678345826305.json]
+members: [数字人/数字人/Spark TTS Run文本转语音_克隆语音_2073276172070375426.json, 音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json, 音频生成/音频生成/文本转语音-克隆_1944291353318555649.json, 音频生成/音频生成/语音克隆_文本转语音工作流-两个功能_2040153394723168257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_396
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json、音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json、音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Spark TTS Run文本转语音_克隆语音_2073276172070375426.json、音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text`
+全部 7 个 workflow 都包含：
+- `Int`
+- `JjkText`
 - `LoadAudio`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `RunningHubAudio8ModelLoader`
-- `RunningHubAudio8Prompt`
-- `RunningHubAudio8Sampling`
-- `RunningHubAudio8TTS`
+- `Note _O`
 - `SaveAudio`
+- `SparkTTSClone`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/8 个有
+- `SparkTTSRun` —— 6/7 个有
+- `Preview from image [Crystools]` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

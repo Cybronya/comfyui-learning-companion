@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_159
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.935
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.976167
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/index_voice clone_2000829530019332097.json, 音频生成/音频生成/tts_edge.json_2072854733987078145.json, 音频生成/音频生成/ttts_edge.json_2072873542991044609.json, 音频生成/音频生成/一键版-IndexTTS2单人_2087156386538024962.json, 音频生成/音频生成/个人使用_2058518109392297985.json, 音频生成/音频生成/乱神版-超好用Easy IndexTTS2无限组合版(单人)_1970149188463980545.json, 音频生成/音频生成/乱神版-超好用Easy IndexTTS2无限组合版(双人)_1970148854437998593.json, 音频生成/音频生成/单人语音克隆-简单超好用Easy IndexTTS2_2044635974092722178.json, 音频生成/音频生成/口播音频生成-自定义上传参考音色-Index TTS_2028738552854482946.json, 音频生成/音频生成/声音克隆IndexTTS2(单人)IndexTTS2_1970163405971726337.json, 音频生成/音频生成/声音克隆超好用Easy IndexTTS2无限组合版(双人)_1970161118201212929.json, 音频生成/音频生成/声音模仿+语音生成-Easy-IndexTTS2（简化版）_1976612538186076161.json, 音频生成/音频生成/文字转语言 + 人声克隆 Index TTS 2_1971248872825798658.json, 音频生成/音频生成/超好用Easy IndexTTS2无限组合版_2043548119710830593.json]
+members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_159
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（音频生成/音频生成/index_voice clone_2000829530019332097.json、音频生成/音频生成/tts_edge.json_2072854733987078145.json、音频生成/音频生成/ttts_edge.json_2072873542991044609.json、音频生成/音频生成/一键版-IndexTTS2单人_2087156386538024962.json、音频生成/音频生成/个人使用_2058518109392297985.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `LoadAudio`
+全部 12 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
 - `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 11/14 个有
-- `PreviewAudio` —— 9/14 个有
-- `JjkText` —— 3/14 个有
-- `easy indexTTSAudioMerge` —— 2/14 个有
-- `LoadImage` —— 1/14 个有
+- `LoadAudio` —— 9/12 个有
+- `StringInput` —— 3/12 个有
+- `Text` —— 3/12 个有
 
 ## 典型参数
 

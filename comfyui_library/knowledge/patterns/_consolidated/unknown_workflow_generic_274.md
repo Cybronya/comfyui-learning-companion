@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_274
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.8596
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.914778
+common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json, 音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json, 音频生成/音频生成/FishAudio S2 TTS多人语音克隆【对话版】_2034897039745622017.json, 音频生成/音频生成/FishAudio S2 双人对话配音工作流（克隆与情感对话）_2083510070012366849.json, 音频生成/音频生成/FishAudio S2多人对话配音模仿音色生成器_2035736179924013057.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆-支持粤语-上海话-成都话等等）_1983796918008651777.json, 音频生成/音频生成/【3月】FishAudio S2TTS双人对话音色克隆_2033545964560060418.json]
+members: [音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json, 音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_274
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json、音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json、音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json、音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json、音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadAudio`
 - `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `FishS2MultiSpeakerTTS` —— 9/10 个有
-- `CR Prompt Text` —— 7/10 个有
-- `LoadImage` —— 2/10 个有
-- `VoxCPM_TTS` —— 1/10 个有
+- `LoadImage` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
 
 ## 典型参数
 

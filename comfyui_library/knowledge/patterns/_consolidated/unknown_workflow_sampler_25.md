@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_sampler_25
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.7795
-common_nodes: [LayeredControlV2Sampler, LoadImage, LoadLayeredControlV2Pipe, SaveImage]
+coverage: 0.9714
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen layer文本控制_2031980500822265858.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json, 图片生成/图生图/龚老师的PPT页面分层_2051236518982897666.json]
+members: [图片生成/反推提示词/szr_2046244663052472322.json, 视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json, 视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen layer文本控制_2031980500822265858.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/szr_2046244663052472322.json、视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json、视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json、视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json、视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayeredControlV2Sampler`
+全部 5 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadLayeredControlV2Pipe`
-- `SaveImage`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `Mask To Image (mtb)` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
+- `Int` —— 2/5 个有
+- `IndexTTS2_Emotion` —— 1/5 个有
+- `ZML_AnyTypeSwitchFiveBoolean` —— 1/5 个有
 
 ## 典型参数
 

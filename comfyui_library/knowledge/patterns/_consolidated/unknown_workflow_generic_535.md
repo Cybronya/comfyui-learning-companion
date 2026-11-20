@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_535
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.86
-common_nodes: [LoadAudio, LoadImage, SaveVideo, Seedance_Config, Seedance_MultimodalVideo]
+coverage: 0.8132
+common_nodes: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json, 视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json, 视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json, 视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json, 视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json, 视频生成/文生视频/电商友好型-Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078403070370861058.json]
+members: [图片生成/反推提示词/Joy-Caption-Beta-One_1936246760434208770.json, 图片生成/反推提示词/Joy3反推提示词_1951286525193564161.json, 图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074044403320188930.json, 图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074053430632607745.json, 图片生成/反推提示词/自用反推提示词_1966095069008883713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_535
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json、视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json、视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json、视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json、视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Joy-Caption-Beta-One_1936246760434208770.json、图片生成/反推提示词/Joy3反推提示词_1951286525193564161.json、图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074044403320188930.json、图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074053430632607745.json、图片生成/反推提示词/自用反推提示词_1966095069008883713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: JoyCaptionBeta1ExtraOptions`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `SaveVideo`
-- `Seedance_Config`
-- `Seedance_MultimodalVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/6 个有
+- `DeepTranslatorTextNode` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `PreviewTextNode` —— 2/5 个有
+- `Bjornulf_ShowStringText` —— 1/5 个有
 
 ## 典型参数
 

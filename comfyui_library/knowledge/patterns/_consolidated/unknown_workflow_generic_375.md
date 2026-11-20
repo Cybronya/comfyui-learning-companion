@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_375
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.8285
-common_nodes: [CR Text, PromptBatchQueue, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.623857
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/ppt生成-全能图像G image2.0_2062005096938033154.json, 图片生成/文生图/全能图像G image2.0ppt生成_2070710615466930178.json, 图片生成/文生图/全能图像G image2.0ppt生成_2071064766843539457.json, 图片生成/文生图/全能图像G image2.0ppt生成_2071080439430864898.json, 图片生成/文生图/全能图像G image2.0批量文生图_2059814852197179393.json, 图片生成/文生图/全能图像G image2.0批量文生图_2070714249630019586.json, 图片生成/文生图/全能图像G image2.0批量文生图_2071060280838279169.json, 图片生成/文生图/全能图像G image2.0批量文生图_2071076531887230978.json]
+members: [图片生成/图生图/[书墨🛫]万物皆成“冰”——冰雕世界_1934606257615478786.json, 图片生成/图生图/klein高清放大2k_2057671437875499010.json, 图片生成/图生图/图片场景优化（全能图片-2.0）_2031338334768865282.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058230403361759234.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058481857167183873.json, 图片生成/图生图/最佳全能高清修复放大2K4K_2058487778131922946.json, 图片生成/图生图/细节_1996167870063263745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_375
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/ppt生成-全能图像G image2.0_2062005096938033154.json、图片生成/文生图/全能图像G image2.0ppt生成_2070710615466930178.json、图片生成/文生图/全能图像G image2.0ppt生成_2071064766843539457.json、图片生成/文生图/全能图像G image2.0ppt生成_2071080439430864898.json、图片生成/文生图/全能图像G image2.0批量文生图_2059814852197179393.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/[书墨🛫]万物皆成“冰”——冰雕世界_1934606257615478786.json、图片生成/图生图/klein高清放大2k_2057671437875499010.json、图片生成/图生图/图片场景优化（全能图片-2.0）_2031338334768865282.json、图片生成/图生图/最佳全能高清修复放大2K4K_2058230403361759234.json、图片生成/图生图/最佳全能高清修复放大2K4K_2058481857167183873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text`
-- `PromptBatchQueue`
-- `RH_RhartImageG2TextToImage`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_ImagesToPPTX` —— 4/8 个有
-- `easy imageBatchToImageList` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `RHHiddenNodes` —— 4/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/7 个有
+- `ImageScale` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
 
 ## 典型参数
 

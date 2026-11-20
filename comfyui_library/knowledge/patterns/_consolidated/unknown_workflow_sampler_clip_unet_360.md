@@ -1,64 +1,54 @@
 ---
 name: unknown_workflow_sampler_clip_unet_360
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.86875
-common_nodes: [BasicScheduler, CFGOverride, CLIPLoader, CLIPTextEncode, DualModelGuider, EmptyFlux2LatentImage, ExtendIntermediateSigmas, Ideogram4PromptBuilderKJ, KSamplerSelect, ModelSamplingAuraFlow, PreviewAny, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SigmasPreview, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.959667
+common_nodes: [CLIPTextEncode, ConstrainImage|pysssss, FluxGuidance, ImagePadForOutpaint, KSampler, LoadImage, RHHiddenNodes, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Ideogram4 人像Lora测试流_2073324611147751426.json, 图片生成/文生图/Ideogram4 可视化提示词编辑+14步高质量加速流_2073324002667483137.json, 图片生成/文生图/Ideogram4 多人物Lora测试流_2073325009149456386.json, 图片生成/文生图/Ideogram_V4_FP8 边界框精准定义++文生图 工作流_2064688948349333505.json]
+members: [图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_1996770973594656770.json, 图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_2050580205823115266.json, 图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_2084122878726983682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_360
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Ideogram4 人像Lora测试流_2073324611147751426.json、图片生成/文生图/Ideogram4 可视化提示词编辑+14步高质量加速流_2073324002667483137.json、图片生成/文生图/Ideogram4 多人物Lora测试流_2073325009149456386.json、图片生成/文生图/Ideogram_V4_FP8 边界框精准定义++文生图 工作流_2064688948349333505.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_1996770973594656770.json、图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_2050580205823115266.json、图片生成/图生图/【保姆级】任意图片指定方向扩图，支持各种风格_2084122878726983682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGOverride`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `ExtendIntermediateSigmas`
-- `Ideogram4PromptBuilderKJ`
-- `KSamplerSelect`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ConstrainImage|pysssss`
+- `FluxGuidance`
+- `ImagePadForOutpaint`
+- `KSampler`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `SigmasPreview`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 3/4 个有
-- `Epsilon Scaling` —— 3/4 个有
-- `ImpactSwitch` —— 3/4 个有
-- `LyingSigmaSampler` —— 3/4 个有
-- `MuyeImageBlendingMode` —— 3/4 个有
-- `PrimitiveInt` —— 3/4 个有
-- `ScheduledCFGGuidance` —— 3/4 个有
-- `easy float` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `ConditioningZeroOut` —— 1/4 个有
-- `Seed (rgthree)` —— 1/4 个有
+- `SetNode` —— 2/3 个有
+- `CompressImages` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 10 - 20 | 3 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | normal | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +56,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 10 - 20，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 normal，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

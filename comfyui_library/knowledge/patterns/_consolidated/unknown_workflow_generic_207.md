@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_207
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.751273
-common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.7581
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/人物一致性换装_2035897982054309889.json, 图片生成/图生图/全能图片Pro施工图读图实景改造_1999291673677099010.json, 图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜 Z-image+Flux2+qwen千问_1994648807474405378.json, 图片生成/图生图/全能图片V12Pro2图像编辑pro版本人物一致性_1991888033886654465.json, 图片生成/图生图/换装3.0全能图片V12Pro2图像编辑pro版本人物一致性_1996788824619589634.json, 图片生成/图生图/换装全能图片V12Pro2图像编辑pro版本人物一致性_2007467037655834626.json, 图片生成/图生图/漫画图生图一键生成全能图片V12Pro2图像编辑pro版本人物一致性_1994295265001668609.json, 图片生成/图生图/漫画图生图一键生成全能图片V12Pro香蕉2图像编辑pro版本人物一致性_2002271911587508226.json, 图片生成/图生图/老照片修复全能图片V12Pro2图像编辑pro版本人物一致性_1993564978536005634.json, 图片生成/图生图/超强换装3..3全能图片V12Pro香蕉2图像编辑pro版本人物一致性_1999084958817939458.json, 图片生成/文生图/换装3.0图像编辑 版本人物一致性_1998788705697587202.json]
+members: [图片生成/图生图/IP角色设定-三视图角色设计（全能图片-2.0）_2031709681965604866.json, 图片生成/图生图/Nanana 全能图片V12 单图_多图编辑版本_1991716602379071489.json, 图片生成/图生图/【剧本分镜-三人版】全能图片pro三角色+场景+剧本_2021042521119399938.json, 图片生成/图生图/【剧本分镜-双人版】全能图片V12pro双角色+场景+剧本_1998689303339356161.json, 图片生成/图生图/【音乐MV-九宫格分镜】全能图片pro（单图）_2020236028535119873.json, 图片生成/图生图/一站式模特换装换姿势_1996756058079121410.json, 图片生成/图生图/全能图片V1 2（多图）_1991694487644745730.json, 图片生成/图生图/全能图片V12产品精修+商品图_1991698531685855233.json, 图片生成/图生图/剧本分镜1_全能图片pro_2014580689252917250.json, 图片生成/图生图/模特穿搭_2012795556938129410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_207
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/人物一致性换装_2035897982054309889.json、图片生成/图生图/全能图片Pro施工图读图实景改造_1999291673677099010.json、图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜 Z-image+Flux2+qwen千问_1994648807474405378.json、图片生成/图生图/全能图片V12Pro2图像编辑pro版本人物一致性_1991888033886654465.json、图片生成/图生图/换装3.0全能图片V12Pro2图像编辑pro版本人物一致性_1996788824619589634.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/IP角色设定-三视图角色设计（全能图片-2.0）_2031709681965604866.json、图片生成/图生图/Nanana 全能图片V12 单图_多图编辑版本_1991716602379071489.json、图片生成/图生图/【剧本分镜-三人版】全能图片pro三角色+场景+剧本_2021042521119399938.json、图片生成/图生图/【剧本分镜-双人版】全能图片V12pro双角色+场景+剧本_1998689303339356161.json、图片生成/图生图/【音乐MV-九宫格分镜】全能图片pro（单图）_2020236028535119873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `ImageConcanate`
+全部 10 个 workflow 都包含：
 - `LoadImage`
 - `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `ImageConcatMulti` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
+- `CR Text` —— 8/10 个有
+- `PreviewImage` —— 5/10 个有
+- `RHHiddenNodes` —— 5/10 个有
+- `Fast Groups Muter (rgthree)` —— 4/10 个有
+- `ImageConcatMulti` —— 3/10 个有
 
 ## 典型参数
 

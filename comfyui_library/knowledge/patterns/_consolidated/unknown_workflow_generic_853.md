@@ -3,35 +3,36 @@ name: unknown_workflow_generic_853
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9365
-common_nodes: [LoadImage, SaveImage, Text Multiline]
+coverage: 0.9475
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Nano全能图片V1- PRO 4图工具组_1999085324791934978.json, 图片生成/图生图/全能图片V1-4图工具组_1978352261577465857.json, 图片生成/文生图/全能图片V1 一致性图像编辑_1962455723336667137.json, 平台全量/【万能产品迁移】全能图片模型编辑单双多图组合换装换物换背景_2039237139937894402.json]
+members: [视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json, 视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json, 视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json, 视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_853
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nano全能图片V1- PRO 4图工具组_1999085324791934978.json、图片生成/图生图/全能图片V1-4图工具组_1978352261577465857.json、图片生成/文生图/全能图片V1 一致性图像编辑_1962455723336667137.json、平台全量/【万能产品迁移】全能图片模型编辑单双多图组合换装换物换背景_2039237139937894402.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json、视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json、视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json、视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
-- `Text Multiline`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `ImageScaleDownToSize` —— 3/4 个有
-- `RH_Nano_Banana_Image2Image` —— 3/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 3/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

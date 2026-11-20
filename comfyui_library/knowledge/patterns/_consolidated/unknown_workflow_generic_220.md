@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_220
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.930182
-common_nodes: [LoadImage, Preview3D, RunningHubPixal3DImageTo3D, RunningHubPixal3DModelLoader, RunningHubPixal3DSaveGLB, easy saveText]
+coverage: 0.935
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [平台全量/Pixal3D-图像生成3D-像素级对齐-高精度3D模型_2055557261635932161.json, 平台全量/Pixal3D-图转3D（生成高精度3D模型）_2085572334450208770.json, 平台全量/Pixal3D-图转3D（生成高精度3D模型）_2111347964986871810.json, 平台全量/Pixal3D_图片转3D模型（可下载glb）_2055547266865352705.json, 平台全量/【Pixal3D】图片 转 3D模型_2057360906027364353.json, 平台全量/图像zhuan3D建模-Pixal3D_2055418000743903233.json, 平台全量/图像生成3D_2055681211372187650.json, 平台全量/图像转3D模型[Plus模式生成] Pixal3D-图像生成3D-像素级对齐-高精度3D模型_2060178512773992449.json, 平台全量/最新 Pixal3D 图像生成3D_2055447273844297729.json, 平台全量/最新 Pixal3D 图像生成3D模型生成_2055451455519240193.json, 视频生成/文生视频/Pixal3D Image to 3D_2057792674358452225.json]
+members: [图片生成/图生图/建筑-生成建筑电影感分镜工作流_2016678345735413762.json, 图片生成/图生图/硬核拆解_万物皆可生成说明书_2035713994807320578.json, 图片生成/图生图/萌宠跳舞图片生成_2016774724713455618.json, 图片生成/文生图/DG(整理)_rh_全能图片B-PRO_1957020005667889153.json, 图片生成/文生图/全流程测试用_2083814014668333058.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用-runinghub api_2002935527328346113.json, 图片生成/文生图/全能图片V1progenerate_1995684120686628865.json, 图片生成/文生图/全能图片模型_1999049685178384385.json, 图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json, 视频生成/图生视频/全能图片pro_2029979002751950850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_220
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/Pixal3D-图像生成3D-像素级对齐-高精度3D模型_2055557261635932161.json、平台全量/Pixal3D-图转3D（生成高精度3D模型）_2085572334450208770.json、平台全量/Pixal3D-图转3D（生成高精度3D模型）_2111347964986871810.json、平台全量/Pixal3D_图片转3D模型（可下载glb）_2055547266865352705.json、平台全量/【Pixal3D】图片 转 3D模型_2057360906027364353.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/建筑-生成建筑电影感分镜工作流_2016678345735413762.json、图片生成/图生图/硬核拆解_万物皆可生成说明书_2035713994807320578.json、图片生成/图生图/萌宠跳舞图片生成_2016774724713455618.json、图片生成/文生图/DG(整理)_rh_全能图片B-PRO_1957020005667889153.json、图片生成/文生图/全流程测试用_2083814014668333058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `Preview3D`
-- `RunningHubPixal3DImageTo3D`
-- `RunningHubPixal3DModelLoader`
-- `RunningHubPixal3DSaveGLB`
-- `easy saveText`
+全部 10 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `Label (rgthree)` —— 3/11 个有
+- `LoadImage` —— 9/10 个有
+- `ZML_MergeText` —— 1/10 个有
 
 ## 典型参数
 

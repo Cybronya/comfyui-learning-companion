@@ -3,72 +3,58 @@ name: unknown_workflow_controlnet_video_lora_41
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5105
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Prompt Text, DrawViTPose, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, JWInteger, LoadImage, Manual XY Entry Info, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.9545
+common_nodes: [CLIPVisionLoader, DrawViTPose, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan Animate2.2各种风格视频转绘集合_1971230843148681218.json, 平台全量/Wan Animate2.2替换主体和背景V2_1976640783187054593.json]
+members: [视频生成/图生视频/Wan2.2 Animate 动作迁移（单人、多人、非人）_2036708435315658754.json, 视频生成/图生视频/吴京梗 _ 无音频动作&表情迁移 _ 采访类视频_1983890278471925762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/Wan Animate2.2各种风格视频转绘集合_1971230843148681218.json、平台全量/Wan Animate2.2替换主体和背景V2_1976640783187054593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate 动作迁移（单人、多人、非人）_2036708435315658754.json、视频生成/图生视频/吴京梗 _ 无音频动作&表情迁移 _ 采访类视频_1983890278471925762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageFromBatch+`
 - `ImageResizeKJv2`
 - `JWInteger`
 - `LoadImage`
-- `Manual XY Entry Info`
 - `OnnxDetectionModelLoader`
 - `PoseAndFaceDetection`
-- `PreviewImage`
-- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEncode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR String To Combo` —— 1/2 个有
-- `Display Any (rgthree)` —— 1/2 个有
-- `Int2String` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `RunningHub OmniConsistency LoraLoader` —— 1/2 个有
-- `RunningHub OmniConsistency Sampler` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
 - `Switch any [Crystools]` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `TextSwitchCase` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoSetBlockSwap` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

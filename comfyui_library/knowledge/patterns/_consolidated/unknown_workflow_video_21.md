@@ -1,37 +1,47 @@
 ---
 name: unknown_workflow_video_21
 type: Unknown Workflow
-frequency: 9
+frequency: 6
 level: moderate
-coverage: 0.904889
-common_nodes: [AdvancedLivePortrait, ExpressionEditor, LoadImage]
+coverage: 0.8965
+common_nodes: [Any To Any, CR Prompt Text, GetVideoComponents, HunyuanVideoFoley, LoadVideo, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/表情生成器工作流_1923003836288724994.json, 数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json, 视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json, 视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json, 视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json, 视频生成/图生视频/最强大的人物表情编辑器_2044605432366374913.json, 视频生成/图生视频/最强大的人物表情编辑器_2047499828749406209.json, 视频生成/图生视频/最简单好用的人物表情编辑器_2027544531457019906.json, 视频生成/图生视频/表情编辑器（表情图生视频）_1938199316035211265.json]
+members: [音频生成/音频生成/【橘子AI】视频音效生成  Foley-Qwen 反推_1988964595618418689.json, 音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效优化版V1_2043505374543749121.json, 音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效工作流V1_1985680738127360002.json, 音频生成/音频生成/混元Foley视频自动配音效（提示增强）_2054739137890144258.json, 音频生成/音频生成/视频添加音效 混元Foley_2092948660618354689.json, 音频生成/音频生成/视频音效生成  Foley-Qwen_1988180765982769154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_21
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/表情生成器工作流_1923003836288724994.json、数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json、视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json、视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json、视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/【橘子AI】视频音效生成  Foley-Qwen 反推_1988964595618418689.json、音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效优化版V1_2043505374543749121.json、音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效工作流V1_1985680738127360002.json、音频生成/音频生成/混元Foley视频自动配音效（提示增强）_2054739137890144258.json、音频生成/音频生成/视频添加音效 混元Foley_2092948660618354689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AdvancedLivePortrait`
-- `ExpressionEditor`
-- `LoadImage`
+全部 6 个 workflow 都包含：
+- `Any To Any`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `LoadVideo`
+- `Qwen3_VQA`
+- `VHS_SelectFilename`
+- `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 8/9 个有
-- `SaveImage` —— 7/9 个有
-- `VHS_LoadVideo` —— 5/9 个有
-- `PreviewImage` —— 3/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/6 个有
+- `MultiplePathsInput` —— 2/6 个有
+- `Int` —— 1/6 个有
+- `SaveLatent` —— 1/6 个有
+- `VAEEncode` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
+- `easy anythingIndexSwitch` —— 1/6 个有
+- `easy float` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,59 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_382
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.80775
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DualCLIPLoader, HunyuanVideo15ImageToVideo, KSamplerSelect, ModelSamplingSD3, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.885667
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, FluxGuidance, Int, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [平台全量/video_capybara_v0_1_video_edit_2027025679124013057.json, 平台全量/video_capybara_v0_1_video_edit_fast_2027033973167235074.json, 视频生成/图生视频/video_capybara_v0_1_image_to_video_2026952696527327234.json, 视频生成/图生视频/video_capybara_v0_1_image_to_video_fast_2027031167693754370.json]
+members: [图片生成/文生图/FLUX2文生图+提示词优化_1994307599898263554.json, 图片生成/文生图/Flux2文生图工作流_1993530593369587713.json, 图片生成/文生图/👾怪獸-FLUX.2文生图+提示词扩写👾_1993647811195584514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_382
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/video_capybara_v0_1_video_edit_2027025679124013057.json、平台全量/video_capybara_v0_1_video_edit_fast_2027033973167235074.json、视频生成/图生视频/video_capybara_v0_1_image_to_video_2026952696527327234.json、视频生成/图生视频/video_capybara_v0_1_image_to_video_fast_2027031167693754370.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/FLUX2文生图+提示词优化_1994307599898263554.json、图片生成/文生图/Flux2文生图工作流_1993530593369587713.json、图片生成/文生图/👾怪獸-FLUX.2文生图+提示词扩写👾_1993647811195584514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `HunyuanVideo15ImageToVideo`
-- `KSamplerSelect`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `FluxGuidance`
+- `Int`
+- `KSampler`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 2/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `ResizeAndPadImage` —— 2/4 个有
-- `ResizeImageMaskNode` —— 2/4 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -61,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_294
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.702444
-common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
+coverage: 0.68225
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Index TTS声音克隆_2073344736039100417.json, 图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json, 数字人/数字人/克隆声音 _ Index-TTS 官方版📢_2073279320860225537.json, 音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
+members: [图片生成/图生图/LLM+G-2.0图生图_2098413355869499394.json, 图片生成/图生图/【全能图片G2.0】角色资产-图生图（二次元版）_2093076942378586114.json, 图片生成/图生图/饮料瓶一键融入自然场景，产品主图自带氛围感_2058447418420719617.json, 图片生成/文生图/Gimage2.0 - 原始出图_2047159050583941122.json, 图片生成/文生图/一键生成小红书风格的卡通风格海报_2066851577717149697.json, 图片生成/文生图/全能图片G2.0----低价渠道版_2067271836173422593.json, 图片生成/文生图/图片故事版（G-2低价）_2088797546922725377.json, 图片生成/文生图/故事版生成（G-2)七图_2088814472105390082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_294
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Index TTS声音克隆_2073344736039100417.json、图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json、数字人/数字人/克隆声音 _ Index-TTS 官方版📢_2073279320860225537.json、音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LLM+G-2.0图生图_2098413355869499394.json、图片生成/图生图/【全能图片G2.0】角色资产-图生图（二次元版）_2093076942378586114.json、图片生成/图生图/饮料瓶一键融入自然场景，产品主图自带氛围感_2058447418420719617.json、图片生成/文生图/Gimage2.0 - 原始出图_2047159050583941122.json、图片生成/文生图/一键生成小红书风格的卡通风格海报_2066851577717149697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `IndexTTSNode`
-- `JjkText`
-- `LoadAudio`
-- `SaveAudio`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 7/9 个有
+- `JjkText` —— 7/8 个有
+- `RHLLMChatNode` —— 2/8 个有
+- `CR Text Concatenate` —— 1/8 个有
 
 ## 典型参数
 

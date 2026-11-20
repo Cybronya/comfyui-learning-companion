@@ -1,65 +1,52 @@
 ---
 name: unknown_workflow_video_lora_sampler_914
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.96
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.9145
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FL_KsamplerPlus, FL_PathAnimator, GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, TorchCompileModelWanVideo, UNETLoader, VAELoader, VHS_DuplicateImages, VHS_VideoCombine, WanTrackToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能图片V1+MegaTTS3+InfiniteTalk数字人带货_1963202407591292929.json, 视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json, 视频生成/文生视频/全能图片V1+IndexTTS-2.0+InfiniteTalk数字人带货_1968265294475079681.json]
+members: [视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json, 视频生成/图生视频/WanTrackToVideo_2039588649964150785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_914
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能图片V1+MegaTTS3+InfiniteTalk数字人带货_1963202407591292929.json、视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json、视频生成/文生视频/全能图片V1+IndexTTS-2.0+InfiniteTalk数字人带货_1968265294475079681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json、视频生成/图生视频/WanTrackToVideo_2039588649964150785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `FL_KsamplerPlus`
+- `FL_PathAnimator`
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `TorchCompileModelWanVideo`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanTrackToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `MelBandRoFormerModelLoader` —— 2/3 个有
-- `MelBandRoFormerSampler` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `RH_Nano_Banana_Image2Image` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `SoundFlow_GetLength` —— 2/3 个有
-- `String Literal` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `IndexTTS2Run` —— 1/3 个有
-- `JWStringMultiline` —— 1/3 个有
-- `MegaTTS3Run` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `SaveAudioMP3` —— 1/3 个有
+- `AudioEncoderEncode` —— 1/2 个有
+- `AudioEncoderLoader` —— 1/2 个有
+- `WanSoundImageToVideo` —— 1/2 个有
 
 ## 典型参数
 
@@ -71,4 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

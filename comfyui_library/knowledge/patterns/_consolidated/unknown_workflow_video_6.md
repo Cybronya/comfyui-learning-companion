@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_video_6
 type: Unknown Workflow
-frequency: 11
+frequency: 9
 level: moderate
-coverage: 0.838182
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.941889
+common_nodes: [AdvancedLivePortrait, ExpressionEditor, LoadImage]
 problems: []
 missing: []
-members: [图片生成/文生图/GIMM-VFI插帧补帧工作流_2115432909929795585.json, 图片生成/文生图/GIMM-VFI插帧补帧工作流_2115658164489252866.json, 平台全量/GIMM VFI Interpolate视频补帧_2003762710485606402.json, 平台全量/GIMM-VFI插帧补帧工作流_2115004469711822849.json, 平台全量/GIMM-VFI视频插帧补帧_2027001774678220801.json, 平台全量/纯视频补帧_1964563102744367105.json, 平台全量/视频插针补帧工作流_2067886836793561090.json, 平台全量/视频补帧_2000507144921284610.json, 平台全量/视频补帧专用_1953001575733260289.json, 视频生成/图生视频/AI漫剧视频补帧（30帧补到60帧）_2012124857437265922.json, 视频生成/图生视频/视频优化板块：GIMM-VFI视频插帧补帧工作流_2050850045557264386.json]
+members: [数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json, 视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json, 视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json, 视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json, 视频生成/图生视频/最强大的人物表情编辑器_2044605432366374913.json, 视频生成/图生视频/最强大的人物表情编辑器_2047499828749406209.json, 视频生成/图生视频/最简单好用的人物表情编辑器_2027544531457019906.json, 视频生成/图生视频/表情编辑器（表情图生视频）_1925149915092033537.json, 视频生成/图生视频/表情编辑器（表情图生视频）_1938199316035211265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_6
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/GIMM-VFI插帧补帧工作流_2115432909929795585.json、图片生成/文生图/GIMM-VFI插帧补帧工作流_2115658164489252866.json、平台全量/GIMM VFI Interpolate视频补帧_2003762710485606402.json、平台全量/GIMM-VFI插帧补帧工作流_2115004469711822849.json、平台全量/GIMM-VFI视频插帧补帧_2027001774678220801.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Ai 表情编辑器工作流_1995518705998168065.json、视频生成/图生视频/图生视频+表情编辑器_1925149431442644994.json、视频生成/图生视频/最强大的人物表情编辑器_1922299028233715713.json、视频生成/图生视频/最强大的人物表情编辑器_1922473443520892929.json、视频生成/图生视频/最强大的人物表情编辑器_2044605432366374913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `SimpleMath+`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
+全部 9 个 workflow 都包含：
+- `AdvancedLivePortrait`
+- `ExpressionEditor`
+- `LoadImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 7/11 个有
-- `easy int` —— 6/11 个有
-- `CM_IntToFloat` —— 4/11 个有
-- `Int` —— 2/11 个有
-- `Float` —— 1/11 个有
+- `SaveImage` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `VHS_LoadVideo` —— 5/9 个有
+- `PreviewImage` —— 2/9 个有
 
 ## 典型参数
 

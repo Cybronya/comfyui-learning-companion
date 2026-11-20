@@ -3,55 +3,61 @@ name: unknown_workflow_lora_sampler_clip_298
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.852
-common_nodes: [BasicScheduler, CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, DeepTranslatorTextNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RH_Captioner, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.483
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, INTConstant, ImageScaleToTotalPixels, ImpactControlBridge, ImpactNeg, Int, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PrimitiveBoolean, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZML_AnyTypeSwitchFive, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json, 图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json]
+members: [图片生成/文生图/Flux2-Klein-9B&KV一键切换工作流_2033089304238497794.json, 图片生成/文生图/Flux2-Klein_All-In-One工作流_2033169323140845570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_298
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json、图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B&KV一键切换工作流_2033089304238497794.json、图片生成/文生图/Flux2-Klein_All-In-One工作流_2033169323140845570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGZeroStarAndInit`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `DeepTranslatorTextNode`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
+- `ImpactControlBridge`
+- `ImpactNeg`
+- `Int`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RH_Captioner`
-- `SamplerCustom`
+- `Lora Loader Stack (rgthree)`
+- `PrimitiveBoolean`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `ZML_AnyTypeSwitchFive`
+- `easy ifElse`
+
+**可变部分**（部分 workflow 才有）：
+- `Logic Comparison AND` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.7 | - | 2 | 100% |
-| LoRA 文本强度 | 0.7 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,6 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

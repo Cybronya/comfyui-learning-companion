@@ -1,41 +1,42 @@
 ---
 name: unknown_workflow_generic_519
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.81
-common_nodes: [LoadAudio, YuE2CoverTranscribe, YuE2Generate, YuE2Loader, YuE2SamplingConfig]
+coverage: 0.92
+common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [音频生成/音频生成/YUE2翻唱（原音改词）_2099404353990914049.json, 音频生成/音频生成/YUE2翻唱（非指定音色）_2098288466747551746.json, 音频生成/音频生成/YuE2改词翻唱_AI音乐改歌词翻唱_2108562246023602178.json, 音频生成/音频生成/YuE2改词翻唱改词不改曲_AI音乐改编_2109527581035941890.json, 音频生成/音频生成/Yue2音乐翻唱_2099713683374034945.json, 音频生成/音频生成/心然·寻源-YuE2 改词翻唱_2098395896680632322.json, 音频生成/音频生成/逆天！YUE2翻唱 毫无违和感（非指定音色版）_2099490277114339329.json]
+members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_519
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/YUE2翻唱（原音改词）_2099404353990914049.json、音频生成/音频生成/YUE2翻唱（非指定音色）_2098288466747551746.json、音频生成/音频生成/YuE2改词翻唱_AI音乐改歌词翻唱_2108562246023602178.json、音频生成/音频生成/YuE2改词翻唱改词不改曲_AI音乐改编_2109527581035941890.json、音频生成/音频生成/Yue2音乐翻唱_2099713683374034945.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadAudio`
-- `YuE2CoverTranscribe`
-- `YuE2Generate`
-- `YuE2Loader`
-- `YuE2SamplingConfig`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 6/7 个有
-- `CR Prompt Text` —— 5/7 个有
-- `PreviewAny` —— 3/7 个有
-- `INTConstant` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `SaveAudioAdvanced` —— 1/7 个有
+- `CR Prompt Text` —— 5/6 个有
+- `LongCatVoiceCloneTTS` —— 4/6 个有
+- `NormalizeAudioLoudness` —— 4/6 个有
+- `LongCatMultiSpeakerTTS` —— 3/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SaveAudio` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

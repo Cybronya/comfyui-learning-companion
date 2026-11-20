@@ -3,17 +3,17 @@ name: unknown_workflow_sampler_65
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.944333
-common_nodes: [Kimodo_ExportBVH, Kimodo_LoadModel, Kimodo_Preview, Kimodo_Preview3D, Kimodo_Sampler, Kimodo_SaveNPZ, Kimodo_TextEncode, SaveImage]
+coverage: 0.939
+common_nodes: [Apply Whisper, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM V2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/kimodo-basic_2067452656217579521.json, 平台全量/Kimodo 3D姿态骨骼动画V1_2040255986887299074.json, 平台全量/kimodo-with-post-process_2068218265180135425.json]
+members: [音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json, 音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json, 音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/kimodo-basic_2067452656217579521.json、平台全量/Kimodo 3D姿态骨骼动画V1_2040255986887299074.json、平台全量/kimodo-with-post-process_2068218265180135425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json、音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json、音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,22 +23,30 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Kimodo_ExportBVH`
-- `Kimodo_LoadModel`
-- `Kimodo_Preview`
-- `Kimodo_Preview3D`
-- `Kimodo_Sampler`
-- `Kimodo_SaveNPZ`
-- `Kimodo_TextEncode`
-- `SaveImage`
+- `Apply Whisper`
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Kimodo_PostProcess` —— 2/3 个有
+- `AudioCrop` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `Qwen3TTSCustomVoice` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `VRAMReserver` —— 2/3 个有
 - `CR Prompt Text` —— 1/3 个有
-- `FancyTimerNode` —— 1/3 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
 - `LoadImage` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

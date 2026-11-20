@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_578
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.916667
-common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.7114
+common_nodes: [Image Comparer (rgthree), LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/动漫图像：无损放大_RTX  2倍_2078741451684536322.json, 图片生成/图生图/图片放大流-邻家AI大女孩_2042021543248666626.json, 图片生成/图生图/图片放大流_2043153528998338562.json, 图片生成/图生图/图片放大流_2043532049205698562.json, 图片生成/图生图/图片放大超快版_2035196864009605122.json, 图片生成/图生图/图生图---Nvidia_RTX_Nodes_ComfyUI 图片放大流_2047568646817456129.json]
+members: [图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090098027892658178.json, 图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090617016930627585.json, 图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090632503592833025.json, 图片生成/图生图/提取主体生成透明背景-0602更新_2086632830762840066.json, 图片生成/图生图/提取主体生成透明背景png_2083238815178772482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_578
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/动漫图像：无损放大_RTX  2倍_2078741451684536322.json、图片生成/图生图/图片放大流-邻家AI大女孩_2042021543248666626.json、图片生成/图生图/图片放大流_2043153528998338562.json、图片生成/图生图/图片放大流_2043532049205698562.json、图片生成/图生图/图片放大超快版_2035196864009605122.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090098027892658178.json、图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090617016930627585.json、图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090632503592833025.json、图片生成/图生图/提取主体生成透明背景-0602更新_2086632830762840066.json、图片生成/图生图/提取主体生成透明背景png_2083238815178772482.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `RTXVideoSuperResolution`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `KOOK_SaveJPGImage` —— 1/6 个有
-- `孤海注释` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `String Literal` —— 2/5 个有
 
 ## 典型参数
 

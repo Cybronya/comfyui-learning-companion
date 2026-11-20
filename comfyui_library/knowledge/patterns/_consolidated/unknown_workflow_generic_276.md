@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_276
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9714
-common_nodes: [CR Text, LoadAudio, SaveAudio]
+coverage: 0.707444
+common_nodes: [HeartMuLa_Generate, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json, 音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json, 音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json, 音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS（自研）_2042139833367269378.json, 音频生成/音频生成/VoxCPM2.0双人音色克隆对话_2045804851086499842.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2042135828993937409.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2043545957635198978.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2071261044680511489.json]
+members: [音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json, 音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json, 音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013466293235621890.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013643901214658562.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015014154909786114.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015587368438341634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_276
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json、音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json、音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json、音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json、音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json、音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json、音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
+全部 9 个 workflow 都包含：
+- `HeartMuLa_Generate`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `WujiVoiceActorVoxCPM` —— 8/10 个有
-- `MegaTTS3Run` —— 2/10 个有
+- `PreviewAny` —— 7/9 个有
+- `RH_LLMAPI_Pro_Node` —— 7/9 个有
+- `Label (rgthree)` —— 5/9 个有
+- `CR Text` —— 4/9 个有
 
 ## 典型参数
 

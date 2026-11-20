@@ -3,38 +3,53 @@ name: unknown_workflow_generic_1768
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8395
-common_nodes: [CR Prompt Text, ImageConcatMulti, LayerUtility: TextJoin, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage, easy showAnything]
+coverage: 0.804
+common_nodes: [CR Prompt Text, CR Text, ImageFromBatch+, ImageTile+, LoadImage, LoadVideo, MuyeTextEditOutput, PreviewAny, PreviewImage, RH_Grok_Video3, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_PixverseV6ImageToVideo, RH_RhartVideoSparkvideo20ImageToVideo, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SeedanceVideoRefToVideo, RH_Veo3_Image2Video, SaveImage, SaveVideo, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/玩具类--详情图 v3.0_1998207761412423681.json, 图片生成/图生图/详情图--日用百货_1998272366167908353.json]
+members: [视频生成/文生视频/老YE 广告大师一体工作流_2039012455036231682.json, 视频生成/文生视频/老YE 漫剧一体工作流_2027821681871425538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1768
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/玩具类--详情图 v3.0_1998207761412423681.json、图片生成/图生图/详情图--日用百货_1998272366167908353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/老YE 广告大师一体工作流_2039012455036231682.json、视频生成/文生视频/老YE 漫剧一体工作流_2027821681871425538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Prompt Text`
-- `ImageConcatMulti`
-- `LayerUtility: TextJoin`
+- `CR Text`
+- `ImageFromBatch+`
+- `ImageTile+`
 - `LoadImage`
+- `LoadVideo`
+- `MuyeTextEditOutput`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_Grok_Video3`
 - `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash_Batch`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_PixverseV6ImageToVideo`
+- `RH_RhartVideoSparkvideo20ImageToVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RH_SeedanceVideoRefToVideo`
+- `RH_Veo3_Image2Video`
 - `SaveImage`
+- `SaveVideo`
+- `easy saveText`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 - `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ShellAgentPluginOutputText` —— 1/2 个有
 
 ## 典型参数
 

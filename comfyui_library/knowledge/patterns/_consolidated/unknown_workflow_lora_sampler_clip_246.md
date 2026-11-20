@@ -1,59 +1,60 @@
 ---
 name: unknown_workflow_lora_sampler_clip_246
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.806
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, EmptySD3LatentImage, Int, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, RH_LLMAPI_NODE, SaveImage, SeedVR2, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.9635
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, Flux2Scheduler, ImageAndMaskPreview, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Translator, RandomNoise, ReferenceLatent, ResizeImagesByLongerEdge, SAM3Segment, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Image-2512-毛笔书法字体-高清直出_2034243256430632961.json, 图片生成/文生图/书法字体-毛笔字-Qwen-Image-2512-文生图-高清直出_2034233371894747138.json, 图片生成/文生图/书法字体-毛笔字-草书-Qwen-Image-2512-文生图-高清直出_2034240729781903361.json]
+members: [图片生成/图生图/4.精准改图编辑_2050624023272402945.json, 图片生成/图生图/6.去除物体_2050758953088368641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_246
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-2512-毛笔书法字体-高清直出_2034243256430632961.json、图片生成/文生图/书法字体-毛笔字-Qwen-Image-2512-文生图-高清直出_2034233371894747138.json、图片生成/文生图/书法字体-毛笔字-草书-Qwen-Image-2512-文生图-高清直出_2034240729781903361.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/4.精准改图编辑_2050624023272402945.json、图片生成/图生图/6.去除物体_2050758953088368641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `EmptySD3LatentImage`
-- `Int`
-- `JjkText`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `CR Text`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `ImageAndMaskPreview`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `RH_LLMAPI_NODE`
+- `PreviewImage`
+- `RH_Translator`
+- `RandomNoise`
+- `ReferenceLatent`
+- `ResizeImagesByLongerEdge`
+- `SAM3Segment`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 2/3 个有
+- `ColorMatchToReference` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `INPAINT_ExpandMask` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 50 - 50 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 50 - 50，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

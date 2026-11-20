@@ -1,80 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_unet_179
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8566
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: strong
+coverage: 0.94375
+common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/千问图像编辑Plus增强版image_edit多图融合，人物一致性，姿态迁移，服装迁移_1968691125903085570.json, 图片生成/图生图/图生图-控制姿势：Qwen-Image Edit Plus_1988231763208093697.json, 图片生成/图生图/图生图：Qwen-Image Edit Plus_1986626403615571970.json, 图片生成/图生图/指定图片人物，文生图换背景，_2043663846178562050.json, 平台全量/千问图片编辑（最新版qwen2511）+多图参考+controlnet多重控制_1980835488670072833.json]
+members: [图片生成/图生图/Qwen-image2.1-产品融图_2108161171131027457.json, 图片生成/图生图/Qwen-image2.1-产品融图_2112741548281655298.json, 图片生成/图生图/Qwen-image2.1-动漫转真人_2107796380067655682.json, 图片生成/图生图/Qwen2.1 漫转真_2103754802361618433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_179
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/千问图像编辑Plus增强版image_edit多图融合，人物一致性，姿态迁移，服装迁移_1968691125903085570.json、图片生成/图生图/图生图-控制姿势：Qwen-Image Edit Plus_1988231763208093697.json、图片生成/图生图/图生图：Qwen-Image Edit Plus_1986626403615571970.json、图片生成/图生图/指定图片人物，文生图换背景，_2043663846178562050.json、平台全量/千问图片编辑（最新版qwen2511）+多图参考+controlnet多重控制_1980835488670072833.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-产品融图_2108161171131027457.json、图片生成/图生图/Qwen-image2.1-产品融图_2112741548281655298.json、图片生成/图生图/Qwen-image2.1-动漫转真人_2107796380067655682.json、图片生成/图生图/Qwen2.1 漫转真_2103754802361618433.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 4/5 个有
-- `CFGNorm` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `ModelSamplingAuraFlow` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `OpenposePreprocessor` —— 2/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `TextEncodeQwenImageEdit` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `FastCanvas` —— 2/4 个有
+- `InspyrenetRembg` —— 2/4 个有
+- `FastCanvasTool` —— 1/4 个有
+- `YYZPack_yyz_canvasnodeTool` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 5 | 36% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 5 | 82% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1080 | 928 - 1152 | 5 | 93% |
-| 高度 | 1664 | 1536 - 1920 | 5 | 92% |
+| 采样步数 | 25 | 25 - 40 | 4 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，5 个样本，取值分散，一致性仅 36%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，5 个样本，取值集中（一致性 82%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 928 - 1152，5 个样本，取值集中（一致性 93%）
-- 高度 中位数 1664，观测区间 1536 - 1920，5 个样本，取值集中（一致性 92%）
-- 高发问题（3/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 25 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

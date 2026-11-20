@@ -1,68 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_vae_53
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8978
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.98675
+common_nodes: [CLIPLoader, CLIPTextEncode, FluxGuidance, Load pi-Flow Model, LoadImage, ModelSamplingPiFlow, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader, pi-Flow Sampler]
+problems: []
 missing: []
-members: [图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json, 图片生成/文生图/玄幻壁纸_1950582399950327809.json, 图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json, 图片生成/文生图/粗线条插画_2016470143131459586.json, 图片生成/文生图/粗线条水彩_2021242555865763842.json]
+members: [图片生成/图生图/Flux 2-Pi 4步超级加速图像编辑V1_2006071587203715073.json, 图片生成/图生图/Flux2-单图编辑（4步出图）_2007029117383876609.json, 图片生成/文生图/FLUX2-PIFLOW-4步加速_2008106083335802881.json, 图片生成/文生图/pi-Flux2 4步文生图_2073296324719632386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json、图片生成/文生图/玄幻壁纸_1950582399950327809.json、图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json、图片生成/文生图/粗线条插画_2016470143131459586.json、图片生成/文生图/粗线条水彩_2021242555865763842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2-Pi 4步超级加速图像编辑V1_2006071587203715073.json、图片生成/图生图/Flux2-单图编辑（4步出图）_2007029117383876609.json、图片生成/文生图/FLUX2-PIFLOW-4步加速_2008106083335802881.json、图片生成/文生图/pi-Flux2 4步文生图_2073296324719632386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `FluxGuidance`
+- `Load pi-Flow Model`
+- `LoadImage`
+- `ModelSamplingPiFlow`
+- `ReferenceLatent`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `pi-Flow Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `JjkText` —— 2/5 个有
-- `SeedVR2` —— 2/5 个有
-- `SeedVR2BlockSwap` —— 2/5 个有
-- `LatentUpscaleBy` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `NunchakuQwenImageDiTLoader` —— 1/5 个有
-- `easy stylesSelector` —— 1/5 个有
+- `EmptyFlux2LatentImage` —— 3/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 12 | 8 - 20 | 5 | 64% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 54% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 8 - 20，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

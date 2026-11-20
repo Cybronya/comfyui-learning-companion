@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_488
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.784571
-common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText]
+coverage: 0.824
+common_nodes: [LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [平台全量/推理-中心-RH-Pro_2014395798145998850.json, 平台全量/推理-生成分镜-RH-Pro_2014168661996605441.json, 平台全量/推理-生成剧本-RH-Pro_2014168672331374593.json, 平台全量/推理-生成小说-RH-Pro_2014168601065951233.json, 平台全量/推理-角色-RH-Pro_2014392076611362818.json, 视频生成/图生视频/图生视频提示词生成器-v2_2039872629422690305.json, 视频生成/图生视频/推理-图生视频提示词-qwen3VL_1982736072637595650.json]
+members: [图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json, 图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json, 图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json, 图片生成/文生图/image2文生图节点_2080482425800577025.json, 图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json, 图片生成/文生图/全能图片GGPPTT-image2.5-文生图+图片编辑_2097495837743075330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_488
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/推理-中心-RH-Pro_2014395798145998850.json、平台全量/推理-生成分镜-RH-Pro_2014168661996605441.json、平台全量/推理-生成剧本-RH-Pro_2014168672331374593.json、平台全量/推理-生成小说-RH-Pro_2014168601065951233.json、平台全量/推理-角色-RH-Pro_2014392076611362818.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/组件系列2-全能图片GGPPTT-image2-文生图_图片编辑_2058728879455563777.json、图片生成/图生图/组件系列3-全能图片G-image2-图生图_2058729064730554369.json、图片生成/文生图/G-image2-文生图+图生图_2047303167016181761.json、图片生成/文生图/image2文生图节点_2080482425800577025.json、图片生成/文生图/全能图片G2文生图+图生图（低价渠道版）_2056201109059981314.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `easy positive`
-- `easy saveText`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 6/7 个有
-- `easy seed` —— 6/7 个有
-- `LoadImage` —— 2/7 个有
-- `Qwen3_VQA` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
+- `RH_RhartImageG2TextToImage` —— 5/6 个有
+- `LayerUtility: TextBox` —— 3/6 个有
+- `CR Prompt Text` —— 1/6 个有
 
 ## 典型参数
 

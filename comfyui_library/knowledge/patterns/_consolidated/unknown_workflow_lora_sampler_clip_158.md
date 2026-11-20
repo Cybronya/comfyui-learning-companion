@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_clip_158
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8734
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.915
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Engineer-V6_2070131809500884994.json, 图片生成/文生图/Z-image-trubo-Engineer v6提示词扩展+Dopsd最高质量文生图V1_2064643788697591810.json, 图片生成/文生图/Z-image抖音小红书爆款涨粉美女_2010628888250032130.json, 图片生成/文生图/文生图提示词扩写_2063964617184997378.json, 图片生成/文生图/（墨幽版-高允贞）Krea2文生图加速版V1_2086004168828997634.json]
+members: [图片生成/文生图/For循环批量提示词跑图_1948523697077387265.json, 图片生成/文生图/【一键运行】二次元性感美少女_2018845332670521345.json, 图片生成/文生图/【一键运行】牛皮革皮质纹理增强生成器_1936219766145323010.json, 图片生成/文生图/批量提示词跑图_1947936412476801026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_158
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-Image-Engineer-V6_2070131809500884994.json、图片生成/文生图/Z-image-trubo-Engineer v6提示词扩展+Dopsd最高质量文生图V1_2064643788697591810.json、图片生成/文生图/Z-image抖音小红书爆款涨粉美女_2010628888250032130.json、图片生成/文生图/文生图提示词扩写_2063964617184997378.json、图片生成/文生图/（墨幽版-高允贞）Krea2文生图加速版V1_2086004168828997634.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/For循环批量提示词跑图_1948523697077387265.json、图片生成/文生图/【一键运行】二次元性感美少女_2018845332670521345.json、图片生成/文生图/【一键运行】牛皮革皮质纹理增强生成器_1936219766145323010.json、图片生成/文生图/批量提示词跑图_1947936412476801026.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `ClipLoaderGGUF` —— 3/5 个有
-- `PreviewAny` —— 3/5 个有
-- `QwenImageEngineer` —— 3/5 个有
-- `CLIPLoader` —— 2/5 个有
-- `ResolutionSelector` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `DeepTranslatorTextNode` —— 2/4 个有
+- `LoadImageMask` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `Text Load Line From File` —— 2/4 个有
+- `easy forLoopEnd` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
+- `easy seed` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 5 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | res_multistep | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1052 | 768 - 1080 | 4 | 87% |
+| 高度 | 1288 | 1024 - 1552 | 4 | 80% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，5 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1052，观测区间 768 - 1080，4 个样本，取值集中（一致性 87%）
+- 高度 中位数 1288，观测区间 1024 - 1552，4 个样本

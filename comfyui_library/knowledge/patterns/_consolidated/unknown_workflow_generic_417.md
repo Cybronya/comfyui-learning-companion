@@ -3,36 +3,38 @@ name: unknown_workflow_generic_417
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.701429
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.802857
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/AI 定制专属表情包｜你的形象，一键变萌_2051688202452389889.json, 图片生成/图生图/G2 6图分开出图（单尺寸）_低价节点版_2056969736130490370.json, 图片生成/图生图/Image 2.0 Edit-解锁藏在时光照片里的温柔瞬间【画意手记 • 时光涂鸦】_2053920361955250178.json, 图片生成/图生图/image2 多图融合+全节点注释_2065799898812993538.json, 图片生成/图生图/【新年特辑】一键生成喜庆氛围大片_2006384712570380290.json, 图片生成/图生图/利用参考图生图（全能图片-2.0）_2031366046078214146.json, 平台全量/全能图片V1 pro 一键ip，文创衍生品_1993236879229255681.json]
+members: [音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json, 音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json, 音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json, 音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1984116301922795522.json, 音频生成/音频生成/音频克隆 单双人SoulX_1984268792450662401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_417
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI 定制专属表情包｜你的形象，一键变萌_2051688202452389889.json、图片生成/图生图/G2 6图分开出图（单尺寸）_低价节点版_2056969736130490370.json、图片生成/图生图/Image 2.0 Edit-解锁藏在时光照片里的温柔瞬间【画意手记 • 时光涂鸦】_2053920361955250178.json、图片生成/图生图/image2 多图融合+全节点注释_2065799898812993538.json、图片生成/图生图/【新年特辑】一键生成喜庆氛围大片_2006384712570380290.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json、音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json、音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json、音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json、音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 6/7 个有
-- `PreviewImage` —— 4/7 个有
-- `RH_RhartImageG2ImageToImage` —— 4/7 个有
-- `ImageResize+` —— 3/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/7 个有
-- `PreviewAny` —— 1/7 个有
+- `PreviewAudio` —— 5/7 个有
+- `JjkText` —— 2/7 个有
+- `TextConcatenator` —— 2/7 个有
+- `Note _O` —— 1/7 个有
 
 ## 典型参数
 

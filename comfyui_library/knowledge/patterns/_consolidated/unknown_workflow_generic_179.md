@@ -1,53 +1,36 @@
 ---
 name: unknown_workflow_generic_179
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.877083
-common_nodes: [Image Comparer (rgthree), ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch]
+coverage: 0.670455
+common_nodes: [LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/TTP分块+SeedVR2放大_2095793233937920002.json, 图片生成/图生图/TTP分块+SeedVR2放大_2096150294785773569.json, 图片生成/图生图/seedVR2图片高清放大_1977995529814769665.json, 图片生成/图生图/室内设计专属高清放大_2061811811082653698.json, 图片生成/图生图/最好用的8k放大工作流-放大的图片一点都不油腻和畸变（懂得自然懂)_1989240428505468930.json, 图片生成/图生图/最新3.0万物高清放大_2065014492030914562.json, 图片生成/图生图/高效精准高清放大2_2070751671319355393.json, 图片生成/图生图/高清放大 seedVR2 TTP_1972557496084852737.json, 图片生成/图生图/高清放大 seedVR2 TTP_2098713428201402370.json, 图片生成/图生图/高清放大_seedVR2_TTP_2089687383133474818.json, 平台全量/2K4K高清放大一致性保持TTP+SeedVR2_2005620917923442690.json, 平台全量/TTP分块+SeedVR2放大_2072205017750265857.json]
+members: [图片生成/图生图/【闭源】全能图片G2.5（经济版-图片编辑）_2098371909300867074.json, 图片生成/图生图/全能G2.5-sunbrust图像编辑_2098243739906043906.json, 图片生成/图生图/全能图像G2.5图生图 高质量版_2097976779142160385.json, 图片生成/图生图/全能图片 G-PT  Image 2.5 Sunburst 图生图_2097953864036212738.json, 图片生成/图生图/全能图片_G-PT_Image_2.5_Sunburst_图生图_2098218274612932610.json, 图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json, 图片生成/图生图/六种户型彩平图_2105320989470060545.json, 图片生成/图生图/图片艺术处理3_2104930329265004545.json, 图片生成/图生图/图片转艺术风格插画六宫图-G-2.5_2101627808400371714.json, 图片生成/图生图/效果图四种光影渲染（G-2.5)_2108730203576029185.json, 图片生成/图生图/照片重新渲染六种风格-G-2.5_2101498062207279105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_179
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/TTP分块+SeedVR2放大_2095793233937920002.json、图片生成/图生图/TTP分块+SeedVR2放大_2096150294785773569.json、图片生成/图生图/seedVR2图片高清放大_1977995529814769665.json、图片生成/图生图/室内设计专属高清放大_2061811811082653698.json、图片生成/图生图/最好用的8k放大工作流-放大的图片一点都不油腻和畸变（懂得自然懂)_1989240428505468930.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/【闭源】全能图片G2.5（经济版-图片编辑）_2098371909300867074.json、图片生成/图生图/全能G2.5-sunbrust图像编辑_2098243739906043906.json、图片生成/图生图/全能图像G2.5图生图 高质量版_2097976779142160385.json、图片生成/图生图/全能图片 G-PT  Image 2.5 Sunburst 图生图_2097953864036212738.json、图片生成/图生图/全能图片_G-PT_Image_2.5_Sunburst_图生图_2098218274612932610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImpactMinMax`
+全部 11 个 workflow 都包含：
 - `LoadImage`
+- `RH_RhartImageG25SunburstImageToImage`
 - `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
 
 **可变部分**（部分 workflow 才有）：
-- `Get Image Size` —— 11/12 个有
-- `DF_Integer` —— 8/12 个有
-- `ImageCASharpening+` —— 8/12 个有
-- `SeedVR2BlockSwap` —— 8/12 个有
-- `easy cleanGpuUsed` —— 5/12 个有
-- `ImageColorMatchAdobe+` —— 4/12 个有
-- `SeedVR2ExtraArgs` —— 4/12 个有
-- `easy int` —— 4/12 个有
-- `ConstrainImage|pysssss` —— 3/12 个有
-- `Bilateral_Filter` —— 1/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
-- `GetImageSize` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
+- `JjkText` —— 9/11 个有
+- `PreviewImage` —— 2/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
 
 ## 典型参数
 

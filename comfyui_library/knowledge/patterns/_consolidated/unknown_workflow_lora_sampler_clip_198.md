@@ -1,55 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_198
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.90275
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.841333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/flux-4步极速文生图_1954712659226705921.json, 图片生成/文生图/nunchaku 文生图+lora 加速工作流_1920069563512459265.json, 图片生成/文生图/nunchaku-FLUX-FP4秒级中文提示词自动扩写文生图工作流_1918127402818404354.json, 图片生成/文生图/生成拟人化可爱小动物图=艾橘溪_1904465680211611649.json]
+members: [图片生成/图生图/惠绘_Klein修脸厚涂_橙子（_2024776560175222785.json, 图片生成/图生图/惠绘_橙子一键2d转3dKlein_2049837309243207681.json, 图片生成/图生图/换脸_2071838717576302593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_198
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/flux-4步极速文生图_1954712659226705921.json、图片生成/文生图/nunchaku 文生图+lora 加速工作流_1920069563512459265.json、图片生成/文生图/nunchaku-FLUX-FP4秒级中文提示词自动扩写文生图工作流_1918127402818404354.json、图片生成/文生图/生成拟人化可爱小动物图=艾橘溪_1904465680211611649.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/惠绘_Klein修脸厚涂_橙子（_2024776560175222785.json、图片生成/图生图/惠绘_橙子一键2d转3dKlein_2049837309243207681.json、图片生成/图生图/换脸_2071838717576302593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
+- `Label (rgthree)`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ChinesePrompt_Mix` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `Pipe from any [Crystools]` —— 2/3 个有
+- `Pipe to/edit any [Crystools]` —— 2/3 个有
+- `StringConcatenate` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `AILab_ImageCompare` —— 1/3 个有
+- `AILab_ImageResize` —— 1/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 

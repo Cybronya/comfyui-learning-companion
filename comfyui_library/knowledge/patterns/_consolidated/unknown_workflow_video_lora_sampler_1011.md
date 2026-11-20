@@ -3,71 +3,51 @@ name: unknown_workflow_video_lora_sampler_1011
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.783
-common_nodes: [CR Prompt Text, ComfyMathExpression, ComfyNumberConvert, Float, GetImageRangeFromBatch, GetImageSizeAndCount, ImageBatchExtendWithOverlap, ImageResizeKJv2, Int, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, ReplaceVideoLatentFrames, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, easy forLoopEnd, easy forLoopStart]
+coverage: 0.656
+common_nodes: [BasicGuider, BasicScheduler, GetNode, HAIGC_VideoLoader, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, VAEDecode, VAEEncode, VAEEncodeAudio, VHS_VideoCombine, easy clearCacheAll, 忽略多组孤海]
 problems: []
 missing: []
-members: [数字人/数字人/Longcat-Avatar1.5-超长时长数字人（for循环）_2060344344913211393.json, 数字人/数字人/Longcat-Avatar1.5数字人说话循环静态手动遮罩_2067886174374551553.json]
+members: [视频生成/文生视频/MinimaxH3全能参考V3极简版（人脸增强8步二次采样1080p）_2087773102355869698.json, 视频生成/文生视频/MinimaxH3全能参考V5电影画质去油版1_2089032793069277185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1011
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Longcat-Avatar1.5-超长时长数字人（for循环）_2060344344913211393.json、数字人/数字人/Longcat-Avatar1.5数字人说话循环静态手动遮罩_2067886174374551553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考V3极简版（人脸增强8步二次采样1080p）_2087773102355869698.json、视频生成/文生视频/MinimaxH3全能参考V5电影画质去油版1_2089032793069277185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `Float`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `ImageBatchExtendWithOverlap`
+- `BasicGuider`
+- `BasicScheduler`
+- `GetNode`
+- `HAIGC_VideoLoader`
 - `ImageResizeKJv2`
-- `Int`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
 - `LoadAudio`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
-- `ReplaceVideoLatentFrames`
-- `TrimAudioDuration`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `VAEDecode`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/2 个有
-- `CR Text Replace` —— 1/2 个有
-- `ColorMatchV2` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ProcessString` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
-- `easy indexAnything` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `easy clearCacheAll`
+- `忽略多组孤海`
 
 ## 典型参数
 

@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_sampler_6
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.933692
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.972
+common_nodes: [LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json, 图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json, 图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json, 图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json, 图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json, 图片生成/图生图/USO双风格迁移一致性图生图V1_1962481064499363842.json, 图片生成/图生图/USO双风格迁移一致性图生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2038432905407504386.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962486590113202178.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962802231387009026.json, 图片生成/文生图/USO双风格迁移一致性文生图V1_1962487178385338370.json, 平台全量/USO商品图风格转换V1_1964120165602443265.json, 平台全量/USO风格迁移工作流_1962510810310393857.json, 数字人/数字人/USO单风格迁移一致性文生图V1_1977549738595753986.json]
+members: [图片生成/图生图/USO-图片风格参考_1962725955003367426.json, 图片生成/图生图/USO：字节开源画风参考角色一致性工作流_2046950467451756545.json, 图片生成/图生图/uso-难道全能图片V1开源了？_1962733084800073730.json, 图片生成/图生图/字节-USO FLUX-单图参考-煮个蛋_1964122121494478849.json, 图片生成/图生图/字节-USO FLUX-单图编辑-人物手办_1964124265073266690.json, 图片生成/图生图/字节USO-FLUX-三图参考_1964127783234490369.json, 图片生成/图生图/字节USO-FLUX-单图参考-女孩登雪山_1964125057951875073.json, 图片生成/图生图/字节USO-FLUX-双图参考-女孩在卧室睡觉_1963777204847087617.json, 图片生成/图生图/字节开源画风参考角色一致性工作流_2033434710512242690.json, 图片生成/图生图/字节开源画风参考角色一致性工作流_2036245665436667906.json, 图片生成/图生图/最新uso-全能图片V1开源了？_1962730818986721282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json、图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json、图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json、图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json、图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/USO-图片风格参考_1962725955003367426.json、图片生成/图生图/USO：字节开源画风参考角色一致性工作流_2046950467451756545.json、图片生成/图生图/uso-难道全能图片V1开源了？_1962733084800073730.json、图片生成/图生图/字节-USO FLUX-单图参考-煮个蛋_1964122121494478849.json、图片生成/图生图/字节-USO FLUX-单图编辑-人物手办_1964124265073266690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
+全部 11 个 workflow 都包含：
 - `LoadImage`
 - `RunningHub USO Loader`
 - `RunningHub USO Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 12/13 个有
-- `PDIMAGE_LongerSize` —— 12/13 个有
-- `PreviewImage` —— 9/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/13 个有
+- `RH_Translator` —— 10/11 个有
+- `ImageConcanate` —— 7/11 个有
+- `ImageResizeKJv2` —— 6/11 个有
+- `FluxResolutionNode` —— 4/11 个有
+- `PreviewImage` —— 1/11 个有
 
 ## 典型参数
 

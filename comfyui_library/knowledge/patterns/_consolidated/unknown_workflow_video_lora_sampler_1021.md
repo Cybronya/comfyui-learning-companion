@@ -3,62 +3,56 @@ name: unknown_workflow_video_lora_sampler_1021
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.476
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CropFace, DWPreprocessor, FloatConstant, GetImageSizeAndCount, INTConstant, ImageFromBatch, ImageResize+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PrimitiveStringMultiline, Seed (rgthree), SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7765
+common_nodes: [CreateCFGScheduleFloatList, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, INTConstant, ImageFromBatch, ImageListToImageBatch, Int, LoadWanVideoT5TextEncoder, RIFE VFI, SaveImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/06 低消耗KJ加速版+全节点注释_2055499286644838401.json, 视频生成/图生视频/Wan Animate 视频动作驱动 动作迁移 低消耗 人物一致 精准版  Remix图生视频_2005823918298595330.json]
+members: [视频生成/文生视频/Wan2.2 文生视频高动态质量--(Palingenesis版)_1972223829290446850.json, 视频生成/文生视频/Work-Fisher_Wan2.2-T2V增强版_1971802147362893826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1021
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/06 低消耗KJ加速版+全节点注释_2055499286644838401.json、视频生成/图生视频/Wan Animate 视频动作驱动 动作迁移 低消耗 人物一致 精准版  Remix图生视频_2005823918298595330.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 文生视频高动态质量--(Palingenesis版)_1972223829290446850.json、视频生成/文生视频/Work-Fisher_Wan2.2-T2V增强版_1971802147362893826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CropFace`
-- `DWPreprocessor`
-- `FloatConstant`
+- `CreateCFGScheduleFloatList`
+- `Fast Groups Bypasser (rgthree)`
 - `GetImageSizeAndCount`
 - `INTConstant`
 - `ImageFromBatch`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `PixelPerfectResolution`
-- `PrimitiveStringMultiline`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `ImageListToImageBatch`
+- `Int`
+- `LoadWanVideoT5TextEncoder`
+- `RIFE VFI`
+- `SaveImage`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEmbedBridge`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCropFromMask` —— 1/2 个有
+- `Float` —— 1/2 个有
 - `GetNode` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 - `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `WanVideoScheduler` —— 1/2 个有
+- `WanVideoSigmaToStep` —— 1/2 个有
 
 ## 典型参数
 

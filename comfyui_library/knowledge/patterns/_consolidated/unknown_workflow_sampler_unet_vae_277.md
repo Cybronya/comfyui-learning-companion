@@ -1,71 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_277
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.88775
-common_nodes: [KSampler, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.741333
+common_nodes: [BatchImagesNode, CLIPLoader, CR Text Concatenate, ComfySwitchNode, EmptySD3LatentImage, Int, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OpenposePreprocessor, PreviewAny, PreviewImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, kkGetImage]
+problems: []
 missing: []
-members: [图片生成/图生图/2-VOSR2 VS SeedVR2图像高清放大对比工作流-V1_2104828213053710337.json, 图片生成/图生图/SeedVR Upscale高清放大_2080476908478885890.json, 图片生成/图生图/seedvr2-高清放大_2089735390029762561.json, 图片生成/图生图/图像高清-seedvr2_2081342312935936001.json]
+members: [图片生成/图生图/Qwen_Image2.1丨姿势迁移_2110646296100032514.json, 图片生成/图生图/Qwen_Image2.1丨姿势迁移_2111276056136208386.json, 图片生成/图生图/（换姿势）QwenImage2.1 原生controlNet_2107976794220621826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_277
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2-VOSR2 VS SeedVR2图像高清放大对比工作流-V1_2104828213053710337.json、图片生成/图生图/SeedVR Upscale高清放大_2080476908478885890.json、图片生成/图生图/seedvr2-高清放大_2089735390029762561.json、图片生成/图生图/图像高清-seedvr2_2081342312935936001.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen_Image2.1丨姿势迁移_2110646296100032514.json、图片生成/图生图/Qwen_Image2.1丨姿势迁移_2111276056136208386.json、图片生成/图生图/（换姿势）QwenImage2.1 原生controlNet_2107976794220621826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CR Text Concatenate`
+- `ComfySwitchNode`
+- `EmptySD3LatentImage`
+- `Int`
+- `JjkText`
 - `KSampler`
-- `ResizeImageMaskNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `OpenposePreprocessor`
+- `PreviewAny`
+- `PreviewImage`
+- `QwenImage21Cache`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `LoadAndResizeImage` —— 1/4 个有
-- `VOSR2ModelLoader` —— 1/4 个有
-- `VOSR2Upscale` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `kkGetImage`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1 | 1 - 2 | 4 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 25 | 25 - 25 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 1，观测区间 1 - 2，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
-- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -1,65 +1,57 @@
 ---
 name: unknown_workflow_video_sampler_vae_120
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.733
-common_nodes: [ADE_CameraPoseBasic, GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.89175
+common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json, 视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json, 视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json, 视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json]
+members: [图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json, 视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json, 视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json, 视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_120
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2025-05-05 wanvideo_Fun_control_camera_1918711068057866241.json、视频生成/图生视频/Ai女友一键运镜！一镜到底=艾橘溪_1922871224979046401.json、视频生成/图生视频/Ai女友一键运镜！一镜到底_2043494570079559681.json、视频生成/图生视频/Fun control camera稳定优化加速版运镜及主体位移视频引导V1_1917857129724575746.json、视频生成/图生视频/【视频运镜】Fun control camera稳定优化加速版_1923702725929070593.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json、视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json、视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json、视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ADE_CameraPoseBasic`
-- `GetNode`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `HunyuanImageToVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `TextEncodeHunyuanVideo_ImageToVideo`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `CameraPoseVisualizer` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `ColorMatch` —— 2/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `MathExpression|pysssss` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `RIFE VFI` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `ImageResizeKJ` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
+- `UNETLoader` —— 3/4 个有
+- `VAEDecode` —— 3/4 个有
+- `SaveWEBM` —— 2/4 个有
+- `ImageFromBatch` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `SaveAnimatedWEBP` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

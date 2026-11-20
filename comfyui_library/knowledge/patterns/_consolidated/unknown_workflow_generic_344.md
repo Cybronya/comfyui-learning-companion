@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_344
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.731
+common_nodes: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, ShowText|pysssss, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json, 图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json, 平台全量/PixVerse V6 图生视频_2042509252765421570.json, 平台全量/Seedance2.0全能参考视频_2049691318334566401.json, 视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json, 视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json, 视频生成/图生视频/SDM展款-九宫格图生视频_2061625263947079681.json, 视频生成/文生视频/SDM-图+脚本生视频_2061983483773407233.json]
+members: [图片生成/反推提示词/JoyCaption3单图提示词反推_1985316314757611522.json, 图片生成/反推提示词/JoyCaption3单图提示词反推_2006656762513989634.json, 图片生成/反推提示词/JoyCaption3单图提示词反推_2006724999889035266.json, 图片生成/反推提示词/JoyCaption3反推专用（带中文翻译）_2014585851241566209.json, 图片生成/反推提示词/图片反推提示词带翻译_2075768836552482817.json, 图片生成/反推提示词/工作流实用推荐篇3-图片反推提示词带翻译_2016856265120550914.json, 图片生成/图生图/JoyCaption3反推专用（带中文翻译）_2098548982212554753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_344
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json、图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json、平台全量/PixVerse V6 图生视频_2042509252765421570.json、平台全量/Seedance2.0全能参考视频_2049691318334566401.json、视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/JoyCaption3单图提示词反推_1985316314757611522.json、图片生成/反推提示词/JoyCaption3单图提示词反推_2006656762513989634.json、图片生成/反推提示词/JoyCaption3单图提示词反推_2006724999889035266.json、图片生成/反推提示词/JoyCaption3反推专用（带中文翻译）_2014585851241566209.json、图片生成/反推提示词/图片反推提示词带翻译_2075768836552482817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
+- `ShowText|pysssss`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_PixverseV6ImageToVideo` —— 4/8 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 4/8 个有
-- `SaveImage` —— 4/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/8 个有
+- `DeepTranslatorTextNode` —— 6/7 个有
+- `SaveText|pysssss` —— 5/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/7 个有
 
 ## 典型参数
 

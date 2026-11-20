@@ -1,62 +1,59 @@
 ---
 name: unknown_workflow_sampler_clip_unet_467
 type: Unknown Workflow
-frequency: 3
+frequency: 2
 level: weak
-coverage: 0.934
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader, WanFirstLastFrameToVideo]
+coverage: 0.9055
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, PreviewAny, RH_LLMAPI_NODE, SaveImage, Seed (rgthree), SeedVarianceEnhancer, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2-14B 首尾帧官方最新工作流_1951969161985642497.json, 视频生成/图生视频/wan2.2-14B 首尾帧视频工作流_1961016346521878529.json, 视频生成/图生视频/▶WAN2.2首尾帧生视频_2029048647224139778.json]
+members: [图片生成/文生图/Z Image Remix Reality & Fantasy_2012230310775234562.json, 图片生成/文生图/Z Image Remix Reality （zip）_2012346362108579841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_467
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2-14B 首尾帧官方最新工作流_1951969161985642497.json、视频生成/图生视频/wan2.2-14B 首尾帧视频工作流_1961016346521878529.json、视频生成/图生视频/▶WAN2.2首尾帧生视频_2029048647224139778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z Image Remix Reality & Fantasy_2012230310775234562.json、图片生成/文生图/Z Image Remix Reality （zip）_2012346362108579841.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SeedVarianceEnhancer`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanFirstLastFrameToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 2/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
+- `CompressImages` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 20 | 4 - 20 | 3 | 49% |
-| 采样算法 | 4 | 1 - 4 | 3 | 53% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | res_multistep | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,9 +61,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 4 - 20，3 个样本，取值分散，一致性仅 49%
-- 采样算法 中位数 4，观测区间 1 - 4，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

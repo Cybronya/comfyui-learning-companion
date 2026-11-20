@@ -1,35 +1,47 @@
 ---
 name: unknown_workflow_generic_379
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
+coverage: 0.460286
+common_nodes: [JoinStringMulti, LoadImage, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, ShowText|pysssss, TextSplitByDelimiterEnhanced, easy int, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/万相2.7-图生视频-首尾帧生视频_2040050776902471682.json, 视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json, 视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json, 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json, 视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json, 视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json, 视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json, 视频生成/文生视频/万相2.7-图生视频-首尾帧生视频_2040678606728339457.json]
+members: [图片生成/图生图/一键生成电商主图_2063137686013177857.json, 图片生成/图生图/一键生成电商主图_2069359780325580802.json, 图片生成/图生图/一键生成电商主图_2073744223848980482.json, 图片生成/图生图/产品图一键生成电商详情页（G-image-2.5）_2048573626043076609.json, 图片生成/图生图/产品图一键生成电商详情页（G-image-2）_2068998254318153730.json, 图片生成/图生图/详情页（G-image-2.5）_2111735466230902785.json, 图片生成/文生图/详情页（G-image-2.5）_2110909940465496065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_379
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/万相2.7-图生视频-首尾帧生视频_2040050776902471682.json、视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json、视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json、视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json、视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一键生成电商主图_2063137686013177857.json、图片生成/图生图/一键生成电商主图_2069359780325580802.json、图片生成/图生图/一键生成电商主图_2073744223848980482.json、图片生成/图生图/产品图一键生成电商详情页（G-image-2.5）_2048573626043076609.json、图片生成/图生图/产品图一键生成电商详情页（G-image-2）_2068998254318153730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `JoinStringMulti`
 - `LoadImage`
-- `RH_AlibabaWan27ImageToVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextSplitByDelimiterEnhanced`
+- `easy int`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/8 个有
-- `TextBox` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 4/7 个有
+- `RH_RhartImageG25FlareImageToImage` —— 4/7 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/7 个有
+- `RHLLMChatNode` —— 3/7 个有
 
 ## 典型参数
 

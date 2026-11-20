@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_447
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.681429
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.906
+common_nodes: [LayerUtility: TextBox, LoadImage, RH_RhartImageNProEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/chat 全能图片G_2073669221862694914.json, 图片生成/图生图/全能图片G2_2112017803111911425.json, 图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json, 图片生成/文生图/全能图片G2.0_2047522964949704706.json, 图片生成/文生图/全能图片G2.0_2047539684821176321.json, 图片生成/文生图/全能图片G2低价版_2051165573173784578.json, 图片生成/文生图/全能图片G2通用流（低价版）_2051172217471422466.json]
+members: [图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json, 图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json, 图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json, 图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json, 图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json, 图片生成/图生图/全能图片g-image2去脏去噪修复_2098791212693155841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_447
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/chat 全能图片G_2073669221862694914.json、图片生成/图生图/全能图片G2_2112017803111911425.json、图片生成/图生图/全能电商G-2.0-图生图，适配国内电商与跨境电商_2050786063559479297.json、图片生成/文生图/全能图片G2.0_2047522964949704706.json、图片生成/文生图/全能图片G2.0_2047539684821176321.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json、图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json、图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json、图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json、图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `LayerUtility: TextBox`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
+- `RH_RhartImageNProEdit`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `PreviewImage` —— 5/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
-- `孤海注释` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `ImageCompare` —— 3/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 

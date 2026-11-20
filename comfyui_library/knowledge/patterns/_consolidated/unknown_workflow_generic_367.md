@@ -1,59 +1,40 @@
 ---
 name: unknown_workflow_generic_367
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.4995
-common_nodes: [CM_IntUnaryOperation, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageLoader, ImageScaleToTotalPixels, MemoryCleaner, PreviewImage, Qwen3VL_Advanced, RH_LLMAPI_NODE, SaveImage, SetNode, SimpleMath+, StringFunction|pysssss, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+coverage: 0.924
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadOmniGen2Model, OmniGen2, PMRF, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2062203582530801665.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2066055876622217216.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片_2006195630225498113.json]
+members: [图片生成/图生图/OmniGen2一致性编辑媲美Kontext_1936973220929245185.json, 图片生成/图生图/OmniGen2主体增加物品+高清化V1_1936647673447370753.json, 图片生成/图生图/OmniGen2换背景+高清化V1_1936621728108023809.json, 图片生成/图生图/OmniGen2风格转化+高清化V1_1936622137207853057.json, 图片生成/图生图/Omnigen2主体颜色编辑+高清化V1_1936625546971238402.json, 图片生成/图生图/Omnigen2双人编辑+高清化实验版V1_1936622124867964929.json, 图片生成/图生图/Omnigen2擦除物体+高清化实验版V1_1936626557861662722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_367
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/OmniGen2一致性编辑媲美Kontext_1936973220929245185.json、图片生成/图生图/OmniGen2主体增加物品+高清化V1_1936647673447370753.json、图片生成/图生图/OmniGen2换背景+高清化V1_1936621728108023809.json、图片生成/图生图/OmniGen2风格转化+高清化V1_1936622137207853057.json、图片生成/图生图/Omnigen2主体颜色编辑+高清化V1_1936625546971238402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CM_IntUnaryOperation`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatchMulti`
-- `ImageLoader`
-- `ImageScaleToTotalPixels`
-- `MemoryCleaner`
-- `PreviewImage`
-- `Qwen3VL_Advanced`
-- `RH_LLMAPI_NODE`
+全部 7 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadOmniGen2Model`
+- `OmniGen2`
+- `PMRF`
+- `RH_Translator`
 - `SaveImage`
-- `SetNode`
-- `SimpleMath+`
-- `StringFunction|pysssss`
-- `easy anythingIndexSwitch`
-- `easy anythingInversedSwitch`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveString` —— 7/8 个有
-- `ImageConcanate` —— 5/8 个有
-- `RH_LLMAPI_Pro_Node` —— 3/8 个有
-- `RH_RhartImageG2ImageToImage` —— 3/8 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 2/8 个有
-- `RH_GPT_Image15` —— 1/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
-- `RH_Nano_Banana_Image2Image` —— 1/8 个有
+- `ImageConcanate` —— 6/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_475
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.843571
-common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, SaveAudioAdvanced, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.861
+common_nodes: [LoadImage, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/文生图/BreezeTTS2_声音克隆_带参考文稿_2115992417353691138.json, 图片生成/文生图/BreezeTTS2_声音克隆_带参考文稿_2116007346873921537.json, 音频生成/音频生成/BreezeTTS2 声音克隆 带参考文稿_2115780588685848577.json, 音频生成/音频生成/BreezeTTS2 声音克隆_2115491075229048834.json, 音频生成/音频生成/BreezeTTS2 声音导演 带参考文稿_2115784962552188930.json, 音频生成/音频生成/BreezeTTS2 声音导演_2115502278030487553.json, 音频生成/音频生成/breeze-tts声音导演_2095511724165263361.json]
+members: [图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json, 图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json, 图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json, 图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json, 图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json, 图片生成/文生图/竖屏九宫格直接出图（老程）_2016304604631277570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_475
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/BreezeTTS2_声音克隆_带参考文稿_2115992417353691138.json、图片生成/文生图/BreezeTTS2_声音克隆_带参考文稿_2116007346873921537.json、音频生成/音频生成/BreezeTTS2 声音克隆 带参考文稿_2115780588685848577.json、音频生成/音频生成/BreezeTTS2 声音克隆_2115491075229048834.json、音频生成/音频生成/BreezeTTS2 声音导演 带参考文稿_2115784962552188930.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json、图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json、图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json、图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json、图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudioAdvanced`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 6/7 个有
-- `T8_BreezeTTS_CloneRequest` —— 4/7 个有
-- `T8_BreezeTTS_DirectionRequest` —— 3/7 个有
+- `RH_LLMAPI_Pro_Node` —— 4/6 个有
+- `Qwen3VL_Chat` —— 2/6 个有
 
 ## 典型参数
 

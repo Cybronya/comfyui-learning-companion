@@ -3,42 +3,39 @@ name: unknown_workflow_sampler_33
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6912
-common_nodes: [ACE_ImageFaceCrop, BiRefNetRMBG, CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, PMRF, RunningHub XVerse Pipeline Loader, RunningHub XVerse Sampler, SaveImage]
+coverage: 0.7858
+common_nodes: [AudioCombine, HeartMuLa_Generate, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/Xverse一句话双图融合_1944016705532100610.json, 图片生成/图生图/Xverse单人一致性250714_1944539618484080642.json, 图片生成/图生图/Xverse单人物品强一致性互动V1_1943889529516462082.json, 图片生成/图生图/Xverse双人一致性_1944286736124088321.json, 图片生成/图生图/最强双人一致性互动编辑Xverse（T8优化版）V1_1943887486902763522.json]
+members: [音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json, 音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json, 音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Xverse一句话双图融合_1944016705532100610.json、图片生成/图生图/Xverse单人一致性250714_1944539618484080642.json、图片生成/图生图/Xverse单人物品强一致性互动V1_1943889529516462082.json、图片生成/图生图/Xverse双人一致性_1944286736124088321.json、图片生成/图生图/最强双人一致性互动编辑Xverse（T8优化版）V1_1943887486902763522.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json、音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json、音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ACE_ImageFaceCrop`
-- `BiRefNetRMBG`
-- `CR Prompt Text`
-- `ImageConcanate`
-- `LoadImage`
-- `PDIMAGE_LongerSize`
-- `PMRF`
-- `RunningHub XVerse Pipeline Loader`
-- `RunningHub XVerse Sampler`
-- `SaveImage`
+- `AudioCombine`
+- `HeartMuLa_Generate`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudioMP3`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 3/5 个有
-- `GetNode` —— 2/5 个有
-- `SetNode` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
 
 ## 典型参数
 

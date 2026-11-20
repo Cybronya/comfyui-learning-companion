@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_579
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.8196
+common_nodes: [LoadImage, SaveImage, TransparentImage]
 problems: []
 missing: []
-members: [图片生成/图生图/宝宝自拍照百变造型_ 全能图片V1_1968590146830512130.json, 平台全量/空白工作流001_2053086307538223106.json, 平台全量/窗帘布样生成场景图_1985191497815441409.json, 平台全量/自用全能图片V1香蕉_1953621761252360193.json, 数字人/数字人/全能图片V1图片编辑 单图模式_1978370860388126722.json, 视频生成/图生视频/全能图片V1丨 完美换装丨稳定版 一句话改图_2066719710112210946.json]
+members: [图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json, 图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json, 图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json, 图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json, 图片生成/图生图/透明_2068898137724514305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_579
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/宝宝自拍照百变造型_ 全能图片V1_1968590146830512130.json、平台全量/空白工作流001_2053086307538223106.json、平台全量/窗帘布样生成场景图_1985191497815441409.json、平台全量/自用全能图片V1香蕉_1953621761252360193.json、数字人/数字人/全能图片V1图片编辑 单图模式_1978370860388126722.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键抠图获取透明图像_2003072026501873666.json、图片生成/图生图/一键抠图获取透明图像_2006620350502674434.json、图片生成/图生图/一键抠图获取透明图像（Segment+anything语义分割）_1990626347234070530.json、图片生成/图生图/语义分割任何元素+黑白背景SegmentAnything+全节点注释_2056026873137778690.json、图片生成/图生图/透明_2068898137724514305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
+- `TransparentImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 1/6 个有
-- `SeargePromptText` —— 1/6 个有
+- `GroundingDinoModelLoader (segment anything)` —— 4/5 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 4/5 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 4/5 个有
+- `MaskToImage` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `SAMLoader` —— 4/5 个有
+- `RHHiddenNodes` —— 1/5 个有
 
 ## 典型参数
 

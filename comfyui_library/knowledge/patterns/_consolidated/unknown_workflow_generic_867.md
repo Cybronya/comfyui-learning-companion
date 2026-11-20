@@ -3,34 +3,35 @@ name: unknown_workflow_generic_867
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.6305
-common_nodes: [Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, Text]
+coverage: 0.73175
+common_nodes: [HeartMuLa_Generate, RH_LLMAPI_NODE, SaveAudio, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json, 图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json]
+members: [音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json, 音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json, 音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json, 音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_867
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json、图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json、音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json、音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json、音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Comfly_gpt_image_2`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `SaveImage`
-- `Text`
+- `HeartMuLa_Generate`
+- `RH_LLMAPI_NODE`
+- `SaveAudio`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `String` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_268
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.8442
-common_nodes: [LoadImage, RH_AlibabaWan30ImageToVideo, SaveVideo]
+coverage: 0.916667
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [平台全量/RH 万相3.0-图生视频_2117671819690995714.json, 视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json, 视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json, 视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json, 视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json, 视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json, 视频生成/图生视频/Wan3.0首帧_2100196132054986754.json, 视频生成/图生视频/wan3 单图_双图 视频生成 Wan3.0 首尾帧生视频_2092056558216765441.json, 视频生成/图生视频/图生视频工作流｜万相 3.0 首尾帧 最高 1080P_2100471486690713601.json, 视频生成/文生视频/Wan 3.0 文生视频 图生视频 首尾帧 女装带货模版+车内一周穿搭展示+全节点注释_2091861387894149122.json]
+members: [视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json, 视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2020042971273498625.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2054482014081961986.json, "视频生成/图生视频/ViduQ3-Pro图生视频（支持2k,1080p）_2018301447317757954.json", 视频生成/文生视频/Seedance2.5 文生视频工作流+全节点注释_2085924053302464514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_268
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/RH 万相3.0-图生视频_2117671819690995714.json、视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json、视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json、视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json、视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json、视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json、视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RH_AlibabaWan30ImageToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `RH_ViduQ3_Image2Video` —— 8/9 个有
+- `CR Text` —— 3/9 个有
+- `JjkText` —— 2/9 个有
+- `RH_BytedanceSeedance25TokenTextToVideo` —— 1/9 个有
 
 ## 典型参数
 

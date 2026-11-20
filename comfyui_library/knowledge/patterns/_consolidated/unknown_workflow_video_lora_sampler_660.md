@@ -1,58 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_660
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8995
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy getNode, easy setNode]
+coverage: 0.835667
+common_nodes: [CLIPVisionLoader, CR Text, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Bernini视频编辑-v2.0版本_2071571700168351746.json, 平台全量/Bernini视频编辑-基于Wan2.2视频人物替换动作迁移等_2063291826559344641.json, 平台全量/Bernini视频编辑_2062057725374328833.json, 平台全量/字节跳动开源：Bernini视频编辑-基于Wan2.2_2062335781536100354.json]
+members: [数字人/数字人/「HM」图生视频（wan2.2优化）_1958402299645345793.json, 数字人/数字人/「HM」图生视频（wan2.2优化）_1985522827342323713.json, 视频生成/图生视频/可灵同款泼水变装特效_1935726272695689217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_660
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Bernini视频编辑-v2.0版本_2071571700168351746.json、平台全量/Bernini视频编辑-基于Wan2.2视频人物替换动作迁移等_2063291826559344641.json、平台全量/Bernini视频编辑_2062057725374328833.json、平台全量/字节跳动开源：Bernini视频编辑-基于Wan2.2_2062335781536100354.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/「HM」图生视频（wan2.2优化）_1958402299645345793.json、数字人/数字人/「HM」图生视频（wan2.2优化）_1985522827342323713.json、视频生成/图生视频/可灵同款泼水变装特效_1935726272695689217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CR Text`
 - `Int`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `easy getNode`
-- `easy setNode`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `BatchImagesNode` —— 2/4 个有
-- `BerniniPromptEnhancer` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `Anything Everywhere` —— 2/3 个有
+- `Anything Everywhere3` —— 2/3 个有
+- `CreateCFGScheduleFloatList` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Seed (rgthree)` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoSLG` —— 2/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoTeaCache` —— 1/3 个有
 
 ## 典型参数
 

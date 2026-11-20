@@ -3,36 +3,40 @@ name: unknown_workflow_generic_1156
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.786
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, ImageCompositeMasked, ImageGaussianBlur, ImageInvert, ImageToMask, LoadImage, MaskToImage, PreviewImage, SaveImage]
+coverage: 0.804
+common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_BytedanceSeedance20GlobalFastMultimodalVideo, RH_BytedanceSeedance20GlobalFastTextToVideo, RH_BytedanceSeedance20GlobalMiniImageToVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/一键AI抠图_2086652389351841793.json, 图片生成/图生图/一键AI抠图_2090265768528269314.json, 平台全量/一键AI抠图_2082016013608112129.json]
+members: [视频生成/文生视频/Seedance2.0 Mini 多模态视频生成-短视频制作_2075511899470524417.json, 视频生成/文生视频/Seedance2.0 Mini 多模态视频生成（Globa全球版）_2075820621400989698.json, 视频生成/文生视频/Seedance2.0 Mini 文生视频-短视频制作_2075815909545046017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1156
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键AI抠图_2086652389351841793.json、图片生成/图生图/一键AI抠图_2090265768528269314.json、平台全量/一键AI抠图_2082016013608112129.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Mini 多模态视频生成-短视频制作_2075511899470524417.json、视频生成/文生视频/Seedance2.0 Mini 多模态视频生成（Globa全球版）_2075820621400989698.json、视频生成/文生视频/Seedance2.0 Mini 文生视频-短视频制作_2075815909545046017.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `ImageCompositeMasked`
-- `ImageGaussianBlur`
-- `ImageInvert`
-- `ImageToMask`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
 - `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
-- `SaveImage`
+- `LoadVideo`
+- `RH_BytedanceSeedance20GlobalFastMultimodalVideo`
+- `RH_BytedanceSeedance20GlobalFastTextToVideo`
+- `RH_BytedanceSeedance20GlobalMiniImageToVideo`
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
+- `RH_RhartVideoSparkvideo20MiniTextToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 1/3 个有
 
 ## 典型参数
 

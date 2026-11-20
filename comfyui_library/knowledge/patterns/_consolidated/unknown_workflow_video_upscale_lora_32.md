@@ -1,83 +1,61 @@
 ---
 name: unknown_workflow_video_upscale_lora_32
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.631667
-common_nodes: [DownloadAndLoadWav2VecModel, FaceRestoreCFWithModel, FaceRestoreModelLoader, Float, GetNode, ImageFromBatch+, ImageResize+, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, Note _O, PreviewAudio, PrimitiveBoolean, RH_Captioner, RH_GetAudioDuration, ReActorFaceSwap, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.606
+common_nodes: [ControlNextGetPoses, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResize+, ImageUpscaleWithModel, ImpactInt, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy positive, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json, 视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json, 视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json]
+members: [视频生成/图生视频/Wan2.2-FunControl美女跳舞_1971091047734484993.json, 视频生成/图生视频/【放大补帧】Wan2.2-FunControl 视频动作迁移 美女跳舞_1975040693611663361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_32
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json、视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json、视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-FunControl美女跳舞_1971091047734484993.json、视频生成/图生视频/【放大补帧】Wan2.2-FunControl 视频动作迁移 美女跳舞_1975040693611663361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadWav2VecModel`
-- `FaceRestoreCFWithModel`
-- `FaceRestoreModelLoader`
-- `Float`
+全部 2 个 workflow 都包含：
+- `ControlNextGetPoses`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageFromBatch+`
+- `INTConstant`
 - `ImageResize+`
 - `ImageUpscaleWithModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `ImpactInt`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
-- `Note _O`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `RH_GetAudioDuration`
-- `ReActorFaceSwap`
+- `MathExpression|pysssss`
+- `RIFE VFI`
 - `SetNode`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
 - `WanVideoBlockSwap`
+- `WanVideoControlEmbeds`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CreateCFGScheduleFloatList` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
-- `StringToFloatList` —— 1/3 个有
-- `WanVideoClipVisionEncode` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
-- `WanVideoScheduler` —— 1/3 个有
-- `WanVideoSigmaToStep` —— 1/3 个有
+- `easy positive`
+- `easy seed`
 
 ## 典型参数
 
@@ -89,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,29 +1,28 @@
 ---
 name: unknown_workflow_sampler_30
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.972167
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
+coverage: 0.975
+common_nodes: [LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json, 视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json, 视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json, 视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）林耀2.6_2019693859390885889.json]
+members: [数字人/数字人/FlashTalk实时数字人_2016663666405412866.json, 数字人/数字人/艾希 无限时长FlashTalk实时数字人工作流 V1.0_2016408423792906242.json, 视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json, 视频生成/文生视频/FlashTalk 无限时长实时数字人工作流   高保真 直播数字人 超强_2057451172184809474.json, 视频生成/文生视频/SoulX-FlashTalk数字人_2017233700479569922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_30
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json、视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json、视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json、视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json、视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/FlashTalk实时数字人_2016663666405412866.json、数字人/数字人/艾希 无限时长FlashTalk实时数字人工作流 V1.0_2016408423792906242.json、视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json、视频生成/文生视频/FlashTalk 无限时长实时数字人工作流   高保真 直播数字人 超强_2057451172184809474.json、视频生成/文生视频/SoulX-FlashTalk数字人_2017233700479569922.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 5 个 workflow 都包含：
 - `LoadAudio`
 - `LoadImage`
 - `RunningHub FlashTalk Loader`
@@ -31,10 +30,10 @@ source: knowledge_consolidation
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `TrimAudioDuration` —— 1/6 个有
-- `WujiCleaner` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 3/5 个有
+- `AudioCrop` —— 2/5 个有
+- `FluxKontextImageScale` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
 
 ## 典型参数
 

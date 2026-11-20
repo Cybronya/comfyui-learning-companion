@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_615
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.979167
-common_nodes: [LoadAudio, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTSRun, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/SD2.0满血_2038582456567205889.json, 视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json, 视频生成/图生视频/自动化工作流seedance2.0全参_2060303603629387777.json, 视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json, 视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json, 视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json]
+members: [数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json, 数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json, 视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json, 视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json, 音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_615
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/SD2.0满血_2038582456567205889.json、视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json、视频生成/图生视频/自动化工作流seedance2.0全参_2060303603629387777.json、视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json、视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json、数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json、视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json、视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json、音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTSRun`
 - `LoadAudio`
-- `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `LoadVideo`
+- `RH_HeyGemNode`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 4/6 个有
-- `MuyeTextEditOutput` —— 1/6 个有
-- `Primitive string multiline [Crystools]` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
+- `SaveAudio` —— 3/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `JWStringReplace` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 

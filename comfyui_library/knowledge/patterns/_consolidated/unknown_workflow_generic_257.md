@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_257
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9284
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.55
+common_nodes: [JjkText, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json, 图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json, 图片生成/图生图/扣子用flash+pro_2065376363892264962.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json, 图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json, 图片生成/图生图/👾怪獸-全能图片2&Pro进阶玩法指定人物、服装、姿势👾_2047643887178616833.json, 图片生成/文生图/(自用) 2&Pro_2028323439991328770.json, 图片生成/文生图/2030936263259332609.json, 图片生成/文生图/最强生图模型2&pro_2032269255114231810.json, 图片生成/文生图/角色站位图_2037123359535800321.json]
+members: [图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2088508959744421889.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2096618980592152578.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2114356047153557506.json, 图片生成/图生图/全能图片G-双图模式-支持PS插件_2047200668506656770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_257
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/九宫格多景别演绎工作流_2039918282903396353.json、图片生成/图生图/全能图像2.0 —文生图，单图、多图编辑_2027309402113445890.json、图片生成/图生图/扣子用flash+pro_2065376363892264962.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新_2067591935463878658.json、图片生成/图生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2075600299074613250.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadImage`
+全部 9 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 9/10 个有
-- `CR Prompt Text` —— 8/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
-- `CR Text` —— 2/10 个有
-- `RH_LLMAPI_Pro_Node` —— 2/10 个有
-- `JjkConcat` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
+- `LoadImage` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `孤海注释` —— 5/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `YK_LoadImageFromURL` —— 1/9 个有
 
 ## 典型参数
 

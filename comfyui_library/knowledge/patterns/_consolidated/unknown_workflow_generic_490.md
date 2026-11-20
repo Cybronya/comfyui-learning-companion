@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_490
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.969857
-common_nodes: [AuKGenerateEdit, AuKModelLoader, CR Prompt Text, Float, LoadAudio, PreviewAudio, SaveAudio]
+coverage: 0.823167
+common_nodes: [CR Text Concatenate, PrimitiveInt, RH_Jimeng4_Image2Image, SaveImage, String, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [平台全量/音频编辑auk腾讯_2101657456685436929.json, 音频生成/音频生成/AUK全能音频编辑_2100139446757842946.json, 音频生成/音频生成/AUK全能音频编辑_2101857355255341058.json, 音频生成/音频生成/AUK全能音频编辑_2101870544005193730.json, 音频生成/音频生成/AUK全能音频编辑_2102672414227390465.json, 音频生成/音频生成/AUK全能音频编辑音频改词_2106206317739339777.json, 音频生成/音频生成/腾讯AUK音频自由编辑 改文字改情绪_2100179069961859073.json]
+members: [图片生成/图生图/（RH版）即梦4.5时尚杂志封面_1997935706448257026.json, 图片生成/图生图/（RH版）即梦4.5银杏叶特写_1996455737993871361.json, 图片生成/文生图/Seedream4.0 电商设计师工作流 V1.0_1971146446642782209.json, 图片生成/文生图/即梦4.0文生图2K版_1970103362941296641.json, 图片生成/文生图/即梦4.0文生图4K版_1970112247827734529.json, 图片生成/文生图/美式复古logo_1977420326877437954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_490
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/音频编辑auk腾讯_2101657456685436929.json、音频生成/音频生成/AUK全能音频编辑_2100139446757842946.json、音频生成/音频生成/AUK全能音频编辑_2101857355255341058.json、音频生成/音频生成/AUK全能音频编辑_2101870544005193730.json、音频生成/音频生成/AUK全能音频编辑_2102672414227390465.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/（RH版）即梦4.5时尚杂志封面_1997935706448257026.json、图片生成/图生图/（RH版）即梦4.5银杏叶特写_1996455737993871361.json、图片生成/文生图/Seedream4.0 电商设计师工作流 V1.0_1971146446642782209.json、图片生成/文生图/即梦4.0文生图2K版_1970103362941296641.json、图片生成/文生图/即梦4.0文生图4K版_1970112247827734529.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AuKGenerateEdit`
-- `AuKModelLoader`
-- `CR Prompt Text`
-- `Float`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `CR Text Concatenate`
+- `PrimitiveInt`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
+- `String`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/7 个有
-- `EmptyImage` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `LoadImage` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `easy imageConcat` —— 1/6 个有
 
 ## 典型参数
 

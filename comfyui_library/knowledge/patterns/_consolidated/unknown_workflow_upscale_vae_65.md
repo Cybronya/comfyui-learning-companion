@@ -1,41 +1,49 @@
 ---
 name: unknown_workflow_upscale_vae_65
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.768667
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+frequency: 2
+level: weak
+coverage: 0.5605
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, MuyeTextEditOutput, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json, 图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json, 平台全量/SeedVR2.5无损高清放大工作流_2054743611299901441.json]
+members: [图片生成/文生图/全能图片G--image-2.0 RH平台廉价版api调用  0.1_次_2047868011910012930.json, 图片生成/文生图/全能图片G--image-2.0 官方稳定版 api 调用_2048948080573161474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_65
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json、图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json、平台全量/SeedVR2.5无损高清放大工作流_2054743611299901441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G--image-2.0 RH平台廉价版api调用  0.1_次_2047868011910012930.json、图片生成/文生图/全能图片G--image-2.0 官方稳定版 api 调用_2048948080573161474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
+- `MuyeTextEditOutput`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `Text`
+- `easy int`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `HAIGC_LoadImagesFromZip` —— 1/3 个有
-- `RH_BatchImages` —— 1/3 个有
-- `ResizeImagesByLongerEdge` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -47,4 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

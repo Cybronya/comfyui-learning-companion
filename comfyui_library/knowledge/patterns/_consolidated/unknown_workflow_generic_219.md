@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_generic_219
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.790909
-common_nodes: [JWStringReplace, LoadAudio, LoadVideo, RH_HeyGemNode, RH_LLMAPI_NODE, SaveAudio, SaveVideo, Text Multiline, easy showAnything]
+coverage: 0.9686
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1986731994317008898.json, 平台全量/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1986732577287516161.json, 平台全量/heygem口播数字人商品带货主题词LLM大模型文案Index-TTS2.0声音快速克隆声音电商口播_2060572779963052033.json, 数字人/数字人/HeyGem 数字人口播工作流｜IndexTTS1.5 声音克隆｜长文自动分段_2080557618623500290.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2061095673738645506.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2080642775611174913.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json, 视频生成/文生视频/直播间数字人 _ BRairt.F1_1933349167462789122.json, 音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json, 音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json]
+members: [图片生成/图生图/全能图片V12文生图🍌_1991516051691282433.json, 图片生成/图生图/多图参考去AI味 数字人角色脸型设计工作流 V1.0_2043973048876929025.json, 图片生成/图生图/多图构造Ten+picture+editor_2031188627916595201.json, 图片生成/图生图/多宫格生图_2032677490291904514.json, 图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json, 图片生成/图生图/影视剧角色脸型设计工作流 V1.0_2047610302040121345.json, 图片生成/图生图/换脸2.0完美换脸全能图片V12pro人物一致性_1996792747057192962.json, 图片生成/图生图/换脸完美换脸2pro人物一致性_2007470415756660738.json, 图片生成/文生图/XJ官方工作流_2027674347040677890.json, 图片生成/文生图/全能图片pro 单图_双图_多图编辑版本_2021946380721332226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_219
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1986731994317008898.json、平台全量/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1986732577287516161.json、平台全量/heygem口播数字人商品带货主题词LLM大模型文案Index-TTS2.0声音快速克隆声音电商口播_2060572779963052033.json、数字人/数字人/HeyGem 数字人口播工作流｜IndexTTS1.5 声音克隆｜长文自动分段_2080557618623500290.json、数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2061095673738645506.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图片V12文生图🍌_1991516051691282433.json、图片生成/图生图/多图参考去AI味 数字人角色脸型设计工作流 V1.0_2043973048876929025.json、图片生成/图生图/多图构造Ten+picture+editor_2031188627916595201.json、图片生成/图生图/多宫格生图_2032677490291904514.json、图片生成/图生图/完美换脸全能图片2 pro_2016449331317968898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `JWStringReplace`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `SaveVideo`
-- `Text Multiline`
-- `easy showAnything`
+全部 10 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 8/11 个有
-- `IndexTTSNode` —— 2/11 个有
-- `IndexTTSRun` —— 1/11 个有
-- `LongTextToList` —— 1/11 个有
-- `PIP_StringConcatenation` —— 1/11 个有
-- `RegexReplace` —— 1/11 个有
-- `TextBox` —— 1/11 个有
+- `CR Text` —— 9/10 个有
+- `LoadImage` —— 9/10 个有
+- `ImageConcatMulti` —— 5/10 个有
+- `ImageStitch` —— 2/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `RH_RhartImageG2ImageToImage` —— 1/10 个有
 
 ## 典型参数
 

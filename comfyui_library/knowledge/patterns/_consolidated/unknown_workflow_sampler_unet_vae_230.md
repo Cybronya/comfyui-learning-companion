@@ -1,61 +1,59 @@
 ---
 name: unknown_workflow_sampler_unet_vae_230
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.925667
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8795
+common_nodes: [AILab_QwenVL, AnySwitch, BasicGuider, BasicScheduler, CLIPLoader, Fast Bypasser (rgthree), ImageFromBatch, KSamplerSelect, PreviewAny, PreviewImage, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, TTP_text_mix, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/SBAPI_MinimaxH3三分镜参考生成视频工作流_2114262243859845121.json, 图片生成/图生图/SBAPI_MinimaxH3三分镜参考生成视频工作流_2115291432847233026.json, 图片生成/图生图/VividMuse_MiniMax_H3_多参生视频_2084280381586628609.json, 图片生成/图生图/pika_h3_flex_ref2va多参模式_2116689235410513921.json, 视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json, 视频生成/文生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json]
+members: [图片生成/图生图/MiniMax-H3 图像编辑(图像合成)_2084939205624553474.json, 图片生成/图生图/MiniMax-H3 图像编辑8步加速_2086059655217893377.json, 图片生成/图生图/MiniMax-H3 图像编辑II_2084940373666918402.json, 音频生成/音频生成/MiniMax-H3 图像生成_2084926468798373889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_230
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SBAPI_MinimaxH3三分镜参考生成视频工作流_2114262243859845121.json、图片生成/图生图/SBAPI_MinimaxH3三分镜参考生成视频工作流_2115291432847233026.json、图片生成/图生图/VividMuse_MiniMax_H3_多参生视频_2084280381586628609.json、图片生成/图生图/pika_h3_flex_ref2va多参模式_2116689235410513921.json、视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3 图像编辑(图像合成)_2084939205624553474.json、图片生成/图生图/MiniMax-H3 图像编辑8步加速_2086059655217893377.json、图片生成/图生图/MiniMax-H3 图像编辑II_2084940373666918402.json、音频生成/音频生成/MiniMax-H3 图像生成_2084926468798373889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `AILab_QwenVL`
+- `AnySwitch`
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `Fast Bypasser (rgthree)`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveInt`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TTP_text_mix`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
-- `DF_String_Concatenate` —— 4/6 个有
-- `DF_Text_Box` —— 4/6 个有
-- `JWStringGetLine` —— 4/6 个有
-- `JjkConcat` —— 4/6 个有
-- `JjkShowText` —— 4/6 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 4/6 个有
-- `ReplaceString` —— 4/6 个有
-- `StringConstant` —— 4/6 个有
-- `ManualSigmas` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Seed (rgthree)` —— 1/6 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `MiniMaxH3BlockCacheT8` —— 1/4 个有
+- `MiniMaxH3ImageToVideo` —— 1/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/4 个有
+- `RepeatImageBatch` —— 1/4 个有
 
 ## 典型参数
 

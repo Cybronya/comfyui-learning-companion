@@ -1,48 +1,48 @@
 ---
 name: unknown_workflow_generic_484
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.700143
-common_nodes: [GetNode, Label (rgthree), LoadAudio, PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSGenerateSimple]
+coverage: 0.742833
+common_nodes: [PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/indexTTS2 语音复刻支持多人_2088829234772004865.json, 平台全量/indexTTS2 语音复刻支持多人_2119654413840248833.json, 平台全量/indexTTS2 语音复刻支持多人_2119685121174499330.json, 音频生成/音频生成/Final-indexTTS2  短剧2人(旁白+台词)对话_2057670896361500674.json, 音频生成/音频生成/Final-indexTTS2 支持多人 10人对话_2052690741419356162.json, 音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_1991505712654270465.json, 音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_2088069492038524929.json]
+members: [图片生成/图生图/局部修改批量建筑工地流程（定制化流程）_2014730093721034753.json, 图片生成/图生图/懒人版一键批量抠图 ZIP批量上传图片，for循环处理多张图片工作流 V1.0_1980087975402967041.json, 图片生成/图生图/批量图片-工作流_2070423126621638658.json, 图片生成/图生图/批量改图-内部使用_2011643955431084033.json, 图片生成/图生图/批量自动抠图+ZIP上传+透明PNG图_2002652302882291714.json, 图片生成/图生图/最强批量图片编辑工作流_2047238302452948994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_484
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/indexTTS2 语音复刻支持多人_2088829234772004865.json、平台全量/indexTTS2 语音复刻支持多人_2119654413840248833.json、平台全量/indexTTS2 语音复刻支持多人_2119685121174499330.json、音频生成/音频生成/Final-indexTTS2  短剧2人(旁白+台词)对话_2057670896361500674.json、音频生成/音频生成/Final-indexTTS2 支持多人 10人对话_2052690741419356162.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/局部修改批量建筑工地流程（定制化流程）_2014730093721034753.json、图片生成/图生图/懒人版一键批量抠图 ZIP批量上传图片，for循环处理多张图片工作流 V1.0_1980087975402967041.json、图片生成/图生图/批量图片-工作流_2070423126621638658.json、图片生成/图生图/批量改图-内部使用_2011643955431084033.json、图片生成/图生图/批量自动抠图+ZIP上传+透明PNG图_2002652302882291714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetNode`
-- `Label (rgthree)`
-- `LoadAudio`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `SetNode`
-- `StringConcatenate`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSGenerateSimple`
+全部 6 个 workflow 都包含：
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `SaveImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 5/7 个有
-- `Fast Groups Muter (rgthree)` —— 5/7 个有
-- `SaveAudio` —— 5/7 个有
-- `easy indexTTSEmotionAudio` —— 5/7 个有
-- `easy indexTTSEmotionMerge` —— 5/7 个有
-- `easy indexTTSEmotionVector` —— 5/7 个有
-- `SaveAudioAdvanced` —— 2/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
+- `Bjornulf_ShowInt` —— 5/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
+- `easy batchAnything` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `easy imageRemBg` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `MuyeLoadImage` —— 1/6 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/6 个有
 
 ## 典型参数
 

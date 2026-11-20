@@ -1,52 +1,40 @@
 ---
 name: unknown_workflow_generic_178
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.823
-common_nodes: [Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch]
+coverage: 0.936091
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR无损4k放大（极速）_2006705954708000770.json, 图片生成/图生图/SeedVR无损4k放大（极速）_2011349356733014017.json, 图片生成/图生图/SeedVR无损4k放大（极速）_2021427542640566274.json, 图片生成/图生图/万物图片高清放大（分块）seedVR2_1956177364311048194.json, 图片生成/图生图/万物高清_2086061742978846722.json, 图片生成/图生图/万物高清放大_1985667227728916481.json, 图片生成/图生图/人像、文字、万物皆可高清放大8K（不变形）_2112521603924971521.json, 图片生成/图生图/人像高清放大修复不改变原细节 产品高清修复 人物高清修复 产品高清放大4K 8k_2007832429540675585.json, 图片生成/图生图/图片4K高清放大修复不改变原细节（分块）seedVR2_2032131005594738690.json, 图片生成/图生图/图片清晰放大优化精修模糊变清晰seedVR2 万物高清放大（分块）_2074670337190621185.json, 图片生成/图生图/多分镜&二次放大-Rubby_2007714930438443010.json, 图片生成/图生图/多分镜&二次放大-rubby_2008814429311340545.json]
+members: [图片生成/图生图/VoxCPM2语音克隆_语音设计_2073318209389940738.json, 数字人/数字人/TTS_2045864413609074690.json, 数字人/数字人/VoxCPM2 设计新的声音_2042592659730079745.json, 数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json, 数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json, 数字人/数字人/VoxCPM2语音极限克隆V2 (1)_2082320141043453953.json, 音频生成/音频生成/VoxCPM2  声音克隆 音色迁移 方言 韵律更自然、VoxCPM2细节更丰富_2041826724777824258.json, 音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json, 音频生成/音频生成/VoxCPM2-终极克隆-语音克隆-声音克隆-好用-速度快-支持方言_2049750876226637825.json, 音频生成/音频生成/VoxCPM2-语音克隆-极速克隆-支持方言_2084189235472592898.json, 音频生成/音频生成/VoxCPM2声音克隆--角色声音-续写西部克苏鲁_2043940742078406657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_178
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/SeedVR无损4k放大（极速）_2006705954708000770.json、图片生成/图生图/SeedVR无损4k放大（极速）_2011349356733014017.json、图片生成/图生图/SeedVR无损4k放大（极速）_2021427542640566274.json、图片生成/图生图/万物图片高清放大（分块）seedVR2_1956177364311048194.json、图片生成/图生图/万物高清_2086061742978846722.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/VoxCPM2语音克隆_语音设计_2073318209389940738.json、数字人/数字人/TTS_2045864413609074690.json、数字人/数字人/VoxCPM2 设计新的声音_2042592659730079745.json、数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json、数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Get Image Size`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
-- `LoadImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+全部 11 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 10/12 个有
-- `SaveImage` —— 10/12 个有
-- `DF_Integer` —— 9/12 个有
-- `SimpleMath+` —— 9/12 个有
-- `easy cleanGpuUsed` —— 9/12 个有
-- `PreviewImage` —— 7/12 个有
-- `SetNode` —— 4/12 个有
-- `GetNode` —— 3/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `KOOK_SaveJPGImage` —— 2/12 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/12 个有
-- `ImageConcatMulti` —— 1/12 个有
-- `TT_img_enc` —— 1/12 个有
+- `LoadAudio` —— 10/11 个有
+- `CR Prompt Text` —— 8/11 个有
+- `AudioSeparation` —— 5/11 个有
+- `Text` —— 4/11 个有
+- `CR Text` —— 3/11 个有
+- `AudioCrop` —— 2/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
 
 ## 典型参数
 

@@ -3,37 +3,34 @@ name: unknown_workflow_generic_414
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.784857
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.960571
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/004.RMBG2.0一键抠图.json_2092170782251245569.json, 图片生成/图生图/007.其他-功能风格001.一键抠图_2035399330865090562.json, 图片生成/图生图/Eiffe-一键发丝透明抠图（商用抠图）_2038824649479426049.json, 图片生成/图生图/大碗有料整合-抠图_2010549321225216001.json, 图片生成/图生图/抠图简单易用_1915824544420921345.json, 平台全量/01.一键抠图_2066877661850460162.json, 平台全量/升级2.0抠图神器一键抠图自动抠图_2009975672965439490.json]
+members: [音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json, 音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json, 音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json, 音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json, 音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json, 音频生成/音频生成/文字控制 音色+情绪参考_2083374388392583169.json, 音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_414
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/004.RMBG2.0一键抠图.json_2092170782251245569.json、图片生成/图生图/007.其他-功能风格001.一键抠图_2035399330865090562.json、图片生成/图生图/Eiffe-一键发丝透明抠图（商用抠图）_2038824649479426049.json、图片生成/图生图/大碗有料整合-抠图_2010549321225216001.json、图片生成/图生图/抠图简单易用_1915824544420921345.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json、音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json、音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json、音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json、音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/7 个有
-- `RMBG` —— 6/7 个有
-- `MaskPreview+` —— 5/7 个有
-- `BiRefNet_Hugo` —— 2/7 个有
-- `MaskToImage` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `easy imageRemBg` —— 1/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `LoadVideo` —— 2/7 个有
 
 ## 典型参数
 

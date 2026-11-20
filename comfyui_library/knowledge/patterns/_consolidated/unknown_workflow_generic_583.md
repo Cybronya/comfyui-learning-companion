@@ -1,45 +1,40 @@
 ---
 name: unknown_workflow_generic_583
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.892667
-common_nodes: [Compare, ImpactSwitch, Int, InversionDemoLazySwitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Multi Text Merge, RHHiddenNodes, SaveImage, TextInput_, easy showAnything]
+coverage: 0.864
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json, 图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json, 图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json, 平台全量/百搭秀Pro v4 全能图片V1最佳平替_2006445525561778178.json, 平台全量/穿搭大师 Pro OOTD 姿势控制_2008113644567011329.json, 平台全量/穿搭大师 Pro v4 姿势控制_2043620182693781505.json]
+members: [图片生成/图生图/不败神话！全能图片V12 多图编辑版本_1991676044673499138.json, 图片生成/图生图/云雾v10_2049162619633799169.json, 图片生成/图生图/服装上身RH_V2_2052194715839279106.json, 图片生成/图生图/老照片完美修复【全能图片V12 一张0.3元】支持4k直出_1999678264090165249.json, 图片生成/图生图/🥯人物二次元拆解全能图片V1版【每张图差不多5毛钱】【小红书种草神器】🥯_2002996715349241857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_583
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json、图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json、图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json、平台全量/百搭秀Pro v4 全能图片V1最佳平替_2006445525561778178.json、平台全量/穿搭大师 Pro OOTD 姿势控制_2008113644567011329.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/不败神话！全能图片V12 多图编辑版本_1991676044673499138.json、图片生成/图生图/云雾v10_2049162619633799169.json、图片生成/图生图/服装上身RH_V2_2052194715839279106.json、图片生成/图生图/老照片完美修复【全能图片V12 一张0.3元】支持4k直出_1999678264090165249.json、图片生成/图生图/🥯人物二次元拆解全能图片V1版【每张图差不多5毛钱】【小红书种草神器】🥯_2002996715349241857.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Compare`
-- `ImpactSwitch`
-- `Int`
-- `InversionDemoLazySwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `Multi Text Merge`
-- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `TextInput_`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 5/6 个有
-- `CR Overlay Text` —— 2/6 个有
-- `JjkText` —— 1/6 个有
-- `easy promptConcat` —— 1/6 个有
+- `CR Text` —— 4/5 个有
+- `Note Plus (mtb)` —— 3/5 个有
+- `CR Text Replace` —— 2/5 个有
+- `easy imageConcat` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,47 +1,47 @@
 ---
 name: unknown_workflow_lora_sampler_6
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.7605
-common_nodes: [CR Prompt Text, CalligrapherBlockSwap, CalligrapherImageProcesssor, CalligrapherLora, CalligrapherModelLoader, CalligrapherSampler, GrowMaskWithBlur, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, MaskToImage, PreviewImage, SaveImage]
+coverage: 0.916333
+common_nodes: [AddLabel, CR String To Combo, ImageResizeKJv2, Int2String, LoadImage, Primitive integer [Crystools], RH_Captioner, RunningHub OmniConsistency LoraLoader, RunningHub OmniConsistency Sampler, SaveImage, Text Concatenate, TextSwitchCase, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Calligrapher单步骤极速文字编辑（交叉引用版）_1944066975452762113.json, 图片生成/图生图/Calligrapher单步骤极速文字编辑（自引用版）_1944064211175505922.json, 图片生成/图生图/Calligrapher单步骤极速文字编辑（非文本引用版）_1943996948556709889.json, 图片生成/图生图/Calligrapher自由文字方便面版_1944042463516327938.json]
+members: [图片生成/图生图/OmniConsistencyz风格选择器+提示词_1930538835334320130.json, 图片生成/图生图/OmniConsistencyz风格选择器-全网最精简_1928834484957822977.json, 图片生成/图生图/稳定转绘22种风格_1929376093126692865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Calligrapher单步骤极速文字编辑（交叉引用版）_1944066975452762113.json、图片生成/图生图/Calligrapher单步骤极速文字编辑（自引用版）_1944064211175505922.json、图片生成/图生图/Calligrapher单步骤极速文字编辑（非文本引用版）_1943996948556709889.json、图片生成/图生图/Calligrapher自由文字方便面版_1944042463516327938.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/OmniConsistencyz风格选择器+提示词_1930538835334320130.json、图片生成/图生图/OmniConsistencyz风格选择器-全网最精简_1928834484957822977.json、图片生成/图生图/稳定转绘22种风格_1929376093126692865.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `CalligrapherBlockSwap`
-- `CalligrapherImageProcesssor`
-- `CalligrapherLora`
-- `CalligrapherModelLoader`
-- `CalligrapherSampler`
-- `GrowMaskWithBlur`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+全部 3 个 workflow 都包含：
+- `AddLabel`
+- `CR String To Combo`
+- `ImageResizeKJv2`
+- `Int2String`
 - `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RH_Captioner`
+- `RunningHub OmniConsistency LoraLoader`
+- `RunningHub OmniConsistency Sampler`
 - `SaveImage`
+- `Text Concatenate`
+- `TextSwitchCase`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `ImageResizeKJ` —— 3/4 个有
-- `PMRF` —— 3/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `ImageConcanate` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `String` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,65 +1,57 @@
 ---
 name: unknown_workflow_video_sampler_vae_199
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.709
-common_nodes: [GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.963
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan fusionX-极速首尾帧图生视频_1936994959667138561.json, 视频生成/图生视频/wan2.1最新首尾帧 自动提示词_1936944185436180482.json, 视频生成/图生视频/🈚️首尾帧vace-KJ版本-wan fusionX_1934825133528031234.json]
+members: [视频生成/图生视频/🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json, 视频生成/文生视频/Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_199
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan fusionX-极速首尾帧图生视频_1936994959667138561.json、视频生成/图生视频/wan2.1最新首尾帧 自动提示词_1936944185436180482.json、视频生成/图生视频/🈚️首尾帧vace-KJ版本-wan fusionX_1934825133528031234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json、视频生成/文生视频/Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoMagCache`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVACEEncode`
 - `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `ImageResizeKJ` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `easy imageConcat` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `ImageScaleToMegapixels` —— 1/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `SeargePromptText` —— 1/3 个有
-- `SimpleCondition+` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
-- `Video_Upscale_With_Model` —— 1/3 个有
-- `WD14Tagger|pysssss` —— 1/3 个有
+- `GetNode` —— 1/2 个有
+- `MaskPreview+` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ResizeLongestToNode` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 
@@ -71,4 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

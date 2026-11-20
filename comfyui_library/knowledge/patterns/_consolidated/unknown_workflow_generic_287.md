@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_287
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.943111
-common_nodes: [PreviewTextNode, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.830125
+common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json, 图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json, 图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100070771115773954.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100182023997579266.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2100223245185277953.json, 图片生成/图生图/【角色】【场景】【道具】一键AI角色多视图设计方案_2101867405055188993.json]
+members: [图片生成/反推提示词/反推视频提示词_2051967379722256386.json, 图片生成/反推提示词/视频反推 _ gemini-3.5_1901724104188436481.json, 图片生成/反推提示词/视频反推 视频反推提示词 gemini_2043326651647397889.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048358839178764290.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048371260505198593.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2053167415483215873.json, 图片生成/反推提示词/超强反推视频提示词 Runninghub LLM API Pro_2038165185508151297.json, 图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_287
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Advertisement Nine-Grid  电商广告分镜-九宫格分镜复刻  九宫格分镜图_2094234502183874562.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2057460499830370306.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2061032447353118721.json、图片生成/图生图/GImage2.0产品海报产品详情页设计_2062025704744775682.json、图片生成/图生图/【1图变5图】多角度分镜生成【5张分镜高清直出】_2036680359714234370.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/反推视频提示词_2051967379722256386.json、图片生成/反推提示词/视频反推 _ gemini-3.5_1901724104188436481.json、图片生成/反推提示词/视频反推 视频反推提示词 gemini_2043326651647397889.json、图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048358839178764290.json、图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048371260505198593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `PreviewTextNode`
+全部 8 个 workflow 都包含：
+- `LoadVideo`
 - `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `Text Multiline` —— 8/9 个有
-- `EmptyImage` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `CRT_StringSplitter` —— 1/9 个有
-- `RHHiddenNodes` —— 1/9 个有
+- `easy showAnything` —— 7/8 个有
+- `workflow>视频信息` —— 5/8 个有
+- `ShowText` —— 4/8 个有
+- `CR Prompt Text` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_generic_503
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.969857
-common_nodes: [LoadAudio, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
+coverage: 0.938333
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/(600种语言-支持方言-支持跨语言)OmniVoice双人对话_2041435267776651265.json, 音频生成/音频生成/LongCat-AudioDiT语音克隆_2056284486660345857.json, 音频生成/音频生成/OmniVoice双人对话_2044613780373508098.json, 音频生成/音频生成/OmniVoice双人对话_2046456542991491074.json, 音频生成/音频生成/OmniVoice双人对话版语音克隆生成器：600种语言-支持方言-支持跨语言_2041740888291938306.json, 音频生成/音频生成/OmniVoice声音克隆(支持600种语言-支持方言)OmniVoice双人对话_2041478774998441985.json, 音频生成/音频生成/声音clone_2056654266353410050.json]
+members: [视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json, 视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json, 视频生成/图生视频/超能视频2.0-全能参考 生真人视频_2039220191824973826.json, 视频生成/图生视频/超能视频2.0-图生视频 生真人视频_2039512964276948994.json, 视频生成/图生视频/超能视频2.0-多图生视频_2044295602602778625.json, 视频生成/文生视频/seedance2.0超强多模态全能参考_2039735724001464321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_503
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言-支持跨语言)OmniVoice双人对话_2041435267776651265.json、音频生成/音频生成/LongCat-AudioDiT语音克隆_2056284486660345857.json、音频生成/音频生成/OmniVoice双人对话_2044613780373508098.json、音频生成/音频生成/OmniVoice双人对话_2046456542991491074.json、音频生成/音频生成/OmniVoice双人对话版语音克隆生成器：600种语言-支持方言-支持跨语言_2041740888291938306.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json、视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json、视频生成/图生视频/超能视频2.0-全能参考 生真人视频_2039220191824973826.json、视频生成/图生视频/超能视频2.0-图生视频 生真人视频_2039512964276948994.json、视频生成/图生视频/超能视频2.0-多图生视频_2044295602602778625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 6/7 个有
-- `OmniVoiceMultiSpeakerTTS` —— 5/7 个有
-- `AudioCrop` —— 2/7 个有
-- `LongCatVoiceCloneTTS` —— 2/7 个有
-- `NormalizeAudioLoudness` —— 2/7 个有
-- `easy showAnything` —— 1/7 个有
+- `RH_SparkVideoAssetCreate` —— 5/6 个有
+- `RH_SparkVideoAssetIdsMerge` —— 5/6 个有
+- `LoadVideo` —— 4/6 个有
+- `easy seed` —— 3/6 个有
+- `Fast Groups Muter (rgthree)` —— 2/6 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 2/6 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 2/6 个有
 
 ## 典型参数
 

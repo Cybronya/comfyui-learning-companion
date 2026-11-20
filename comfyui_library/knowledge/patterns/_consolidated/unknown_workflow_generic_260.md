@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_260
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9846
-common_nodes: [LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, SaveImage]
+coverage: 0.618222
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/复杂背景抠图工作流_2096872684587143169.json, 图片生成/图生图/复杂背景抠图工作流_2097165064066392065.json, 图片生成/图生图/抠图-BiRefNet商品主体_2096866902932021249.json, 图片生成/图生图/抠图-Birefnet_1981185562751262721.json, 图片生成/图生图/抠图工作流-Birefnet_2029467670369804289.json, 图片生成/图生图/抠图工作流-Birefnet_2033499327313743874.json, 图片生成/图生图/抠图工作流_1987833650836385793.json, 图片生成/图生图/生成透明背景图片和绿幕图片_1968573871228112897.json, 平台全量/复杂背景抠图工作流_1897193863243878401.json, 平台全量/空白工作流_2038803933489008641.json]
+members: [图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json, 图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101139696062648322.json, 视频生成/文生视频/RH_万相3.0-图生视频_2098945972377309186.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099058093874307074.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099682872125906946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_260
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/复杂背景抠图工作流_2096872684587143169.json、图片生成/图生图/复杂背景抠图工作流_2097165064066392065.json、图片生成/图生图/抠图-BiRefNet商品主体_2096866902932021249.json、图片生成/图生图/抠图-Birefnet_1981185562751262721.json、图片生成/图生图/抠图工作流-Birefnet_2029467670369804289.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json、图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json、图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LoadImage`
+全部 9 个 workflow 都包含：
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 5/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/10 个有
-- `LayerUtility: ColorImage V2` —— 1/10 个有
-- `LayerUtility: ImageBlend` —— 1/10 个有
+- `PIP_StringConcatenation` —— 6/9 个有
+- `easy positive` —— 6/9 个有
+- `EmptyImage` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
 
 ## 典型参数
 

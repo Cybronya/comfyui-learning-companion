@@ -1,51 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_clip_145
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9292
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.92875
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAddGuide, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVScheduler, LoadImage, SamplerCustom, TextInput_, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/通宵全力搭建！最新ai视频生成王炸！！万相2.1 图生视频工作流_1895025130055794689.json, 视频生成/图生视频/阿里万象图生视频_1894625480669069313.json, 视频生成/图生视频/阿里万象捏爆特效视频_1899083552049512450.json, 视频生成/图生视频/（真人_动漫）图生视频（加速稳定版）_1949494090500579330.json, 视频生成/文生视频/wan2.1美女跳舞 细节完美 不崩脸_1922456339556028417.json]
+members: [图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json, 视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_145
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/通宵全力搭建！最新ai视频生成王炸！！万相2.1 图生视频工作流_1895025130055794689.json、视频生成/图生视频/阿里万象图生视频_1894625480669069313.json、视频生成/图生视频/阿里万象捏爆特效视频_1899083552049512450.json、视频生成/图生视频/（真人_动漫）图生视频（加速稳定版）_1949494090500579330.json、视频生成/文生视频/wan2.1美女跳舞 细节完美 不崩脸_1922456339556028417.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json、视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAddGuide`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `SamplerCustom`
+- `TextInput_`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `WanVideoSLG` —— 2/5 个有
-- `CR Upscale Image` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `WanVideoEnhanceAVideo` —— 1/5 个有
-- `WanVideoMagCache` —— 1/5 个有
-- `WanVideoTeaCache` —— 1/5 个有
+- `ApplyFBCacheOnModel` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PatchModelPatcherOrder` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

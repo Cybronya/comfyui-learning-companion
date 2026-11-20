@@ -1,36 +1,59 @@
 ---
 name: unknown_workflow_video_132
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.783333
-common_nodes: [RH_DLSS5Enhance, RH_DLSS5FrameInterpolation, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.8085
+common_nodes: [ACEStepGen, AudioCrop, Fast Groups Bypasser (rgthree), FloatProcess, GenerationParameters, GetTextFromJson, LayerUtility: PurgeVRAM, LoadAudio, LoadFloatModels, LoadImage, LoadJsonFromText, MultiLineLyrics, MultiLinePromptACES, PrimitiveFloat, RH_LLMAPI_NODE, ReplaceText, SaveAudio, ShowText, Text Concatenate, Text Multiline, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/DLSS5 放大+插帧_2112714160982290434.json, 平台全量/DLSS5_超分高清放大（标准版&高动态版）_2098142551722250241.json, 平台全量/英伟达NVIDIA DLSS5大力水手 高动态版120hz 超分高清放大视频超分 极致参数版_2112177125544513537.json]
+members: [视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json, 视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_132
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/DLSS5 放大+插帧_2112714160982290434.json、平台全量/DLSS5_超分高清放大（标准版&高动态版）_2098142551722250241.json、平台全量/英伟达NVIDIA DLSS5大力水手 高动态版120hz 超分高清放大视频超分 极致参数版_2112177125544513537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音乐无限_仅需主题一键生成带字幕音乐数字人_1921955597195886593.json、视频生成/文生视频/极速FLOAT 数字人遇见ACE-Step和LLM音乐数字人无限_1920266162955812865.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_DLSS5Enhance`
-- `RH_DLSS5FrameInterpolation`
-- `VHS_LoadVideo`
+全部 2 个 workflow 都包含：
+- `ACEStepGen`
+- `AudioCrop`
+- `Fast Groups Bypasser (rgthree)`
+- `FloatProcess`
+- `GenerationParameters`
+- `GetTextFromJson`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
+- `LoadFloatModels`
+- `LoadImage`
+- `LoadJsonFromText`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `PrimitiveFloat`
+- `RH_LLMAPI_NODE`
+- `ReplaceText`
+- `SaveAudio`
+- `ShowText`
+- `Text Concatenate`
+- `Text Multiline`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `忽略多组孤海` —— 2/3 个有
-- `CR Text` —— 1/3 个有
+- `Add Subtitles To Frames` —— 1/2 个有
+- `Apply Whisper` —— 1/2 个有
+- `DF_Int_to_Float` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `Primitive integer [Crystools]` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

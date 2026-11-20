@@ -3,37 +3,46 @@ name: unknown_workflow_generic_1719
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9175
-common_nodes: [CR Text, LoadImage, PreviewImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveImage, SaveVideo]
+coverage: 0.786
+common_nodes: [AILab_ImagePreview, CR SDXL Aspect Ratio, DF_Text_Box, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleDownToSize, LoadImage, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, RH_Translator, SaveImage, SaveVideo, ShowText|pysssss, Text Multiline, TextCombinerTwo, easy ifElse, easy showAnything, workflow>FLUX-KONTEXT]
 problems: []
 missing: []
-members: [图片生成/图生图/大波服装设计工作流_2037704375614840833.json, 视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json]
+members: [视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1978505891551055873.json, 视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1987789640667172865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1719
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/大波服装设计工作流_2037704375614840833.json、视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1978505891551055873.json、视频生成/图生视频/全能视频s 图生视频（真人版）- nano 全能图片v1+全能视频S2_1987789640667172865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `AILab_ImagePreview`
+- `CR SDXL Aspect Ratio`
+- `DF_Text_Box`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `PreviewImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `PrimitiveBoolean`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Sora2_I2V`
+- `RH_Translator`
 - `SaveImage`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
-- `Video Slice` —— 1/2 个有
+- `ShowText|pysssss`
+- `Text Multiline`
+- `TextCombinerTwo`
+- `easy ifElse`
+- `easy showAnything`
+- `workflow>FLUX-KONTEXT`
 
 ## 典型参数
 

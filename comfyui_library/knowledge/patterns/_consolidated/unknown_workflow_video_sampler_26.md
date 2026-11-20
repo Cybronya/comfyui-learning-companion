@@ -1,44 +1,46 @@
 ---
 name: unknown_workflow_video_sampler_26
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.806167
-common_nodes: [Float to Int, GetVideoComponents, LoadImage, LoadVideo, MathExpression|pysssss, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
+coverage: 0.893
+common_nodes: [Any To Any, CR Prompt Text, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, Qwen3_VQA, VHS_LoadVideo, VHS_SelectFilename, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/03-23-01-WAN2.1-DreamID-V视频换脸_2009981518013272065.json, 平台全量/DreamID-V 最好的视频换脸工作流_2009115847930945537.json, 平台全量/DreamID-V视频换脸_2009098702660571138.json, 平台全量/全自动视频换脸_2029952563444981762.json, 平台全量/视频换脸术-加速版-DreamID-V_2011400317048463362.json, 视频生成/图生视频/DreamID-V视频换脸稳定加速版V4（支持非脸空帧）_2009864984473374722.json]
+members: [音频生成/音频生成/MMaudio + Qwen3 VL自动视频配音效_1985682788978438146.json, 音频生成/音频生成/MMaudio + Qwen3 VL视频配音效优化版V1_2043507645843247106.json, 音频生成/音频生成/MMaudio视频配音效（提示词增强）_2054751569878503426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_26
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/03-23-01-WAN2.1-DreamID-V视频换脸_2009981518013272065.json、平台全量/DreamID-V 最好的视频换脸工作流_2009115847930945537.json、平台全量/DreamID-V视频换脸_2009098702660571138.json、平台全量/全自动视频换脸_2029952563444981762.json、平台全量/视频换脸术-加速版-DreamID-V_2011400317048463362.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MMaudio + Qwen3 VL自动视频配音效_1985682788978438146.json、音频生成/音频生成/MMaudio + Qwen3 VL视频配音效优化版V1_2043507645843247106.json、音频生成/音频生成/MMaudio视频配音效（提示词增强）_2054751569878503426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Float to Int`
-- `GetVideoComponents`
-- `LoadImage`
-- `LoadVideo`
-- `MathExpression|pysssss`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
+全部 3 个 workflow 都包含：
+- `Any To Any`
+- `CR Prompt Text`
+- `MMAudioFeatureUtilsLoader`
+- `MMAudioModelLoader`
+- `MMAudioSampler`
+- `Qwen3_VQA`
+- `VHS_LoadVideo`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 5/6 个有
-- `JWInteger` —— 5/6 个有
-- `Float` —— 3/6 个有
-- `easy showAnything` —— 2/6 个有
-- `AddLabel` —— 1/6 个有
-- `Int` —— 1/6 个有
+- `GoogleTranslateTextNode` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 

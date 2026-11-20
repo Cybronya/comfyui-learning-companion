@@ -3,56 +3,64 @@ name: unknown_workflow_lora_sampler_unet_328
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.728
-common_nodes: [CLIPLoader, KSampler, Label (rgthree), LoadImage, LoraLoaderModelOnly, PrimitiveInt, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9125
+common_nodes: [1hew_AudioDuration, BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LoadAudio, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, TrimAudio, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen2.1_动漫转写实_2105154791876947970.json, 图片生成/图生图/Qwen_Image_2_1_Outpainting 图像外绘编辑+自然曝光Lora工作流_2104584979157180417.json]
+members: [视频生成/图生视频/mInimax h3 sol attention 提速工作流_2113180576420294657.json, 视频生成/图生视频/minimax h3 selflift 双采8工作流_2109955158095519746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_328
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen2.1_动漫转写实_2105154791876947970.json、图片生成/图生图/Qwen_Image_2_1_Outpainting 图像外绘编辑+自然曝光Lora工作流_2104584979157180417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/mInimax h3 sol attention 提速工作流_2113180576420294657.json、视频生成/图生视频/minimax h3 selflift 双采8工作流_2109955158095519746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `1hew_AudioDuration`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `Label (rgthree)`
-- `LoadImage`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudio`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImagePadKJ` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `BlockSparseAttention` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `H3SigmaRefiner` —— 1/2 个有
+- `LTXVSeparateAVLatent` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `QwenH3PromptLocal` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

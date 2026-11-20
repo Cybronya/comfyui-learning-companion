@@ -1,47 +1,35 @@
 ---
 name: unknown_workflow_generic_330
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.789444
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, ShowText|pysssss]
+coverage: 0.791
+common_nodes: [SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json, 视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json, 视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json, 视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json, 视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json, 视频生成/图生视频/服装带货—街拍服装带货短视频（全自动生成）_2095749153849700354.json, 视频生成/图生视频/红果短剧・短视频・AI全自动生成工作流_2081954189047066625.json, 视频生成/图生视频/街拍服装带货短视频（全自动生成）_2079176863691399170.json, 视频生成/文生视频/导演分镜故事板+SD2全自动短剧视频工作流_2076975761147383810.json]
+members: [视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json, 视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json, 视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json, 视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json, 视频生成/文生视频/最简洁的全能视频S 文生视频工作流 支持横_竖屏_2005119650105098242.json, 视频生成/文生视频/梭罗2稳定版全能视频S文生视频0.08元每次_2036026472900599809.json, 视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099368852604940290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_330
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json、视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json、视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json、视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json、视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json、视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json、视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json、视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
 - **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
+全部 8 个 workflow 都包含：
 - `SaveVideo`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
-- `SaveImage` —— 8/9 个有
-- `PD_JoinStringMultiLine` —— 6/9 个有
-- `PreviewAny` —— 5/9 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/9 个有
+- `CR Text` —— 6/8 个有
+- `LoadImage` —— 6/8 个有
+- `RH_MinimaxH3MaxTurboImageToVideo` —— 4/8 个有
+- `RH_Sora2_T2V` —— 4/8 个有
 
 ## 典型参数
 

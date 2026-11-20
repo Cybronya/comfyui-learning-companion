@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_319
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.91675
+common_nodes: [RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Wan2.5 图生视频_1970671854082027521.json, 平台全量/万相 2.6 图生视频_2000764394218942466.json, 视频生成/图生视频/WAN2.5图生视频_1970775618499584001.json, 视频生成/图生视频/Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json, 视频生成/图生视频/Wan2.5Preview图生视频_1978791620122447873.json, 视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1970790621206245377.json, 视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1976114306217545729.json, 视频生成/图生视频/Wan2.5图生视频API_1970643756695363586.json, 视频生成/图生视频/wan2.5图生视频_1971058917423882242.json]
+members: [图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json, 图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2049781605606100993.json, 图片生成/文生图/全能图片G2文能图官方版 _ 2026最强生图_2056451598993416193.json, 图片生成/文生图/最新G image2  全量文生图官方稳定版 V1.0_2048017540726661121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_319
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/Wan2.5 图生视频_1970671854082027521.json、平台全量/万相 2.6 图生视频_2000764394218942466.json、视频生成/图生视频/WAN2.5图生视频_1970775618499584001.json、视频生成/图生视频/Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json、视频生成/图生视频/Wan2.5Preview图生视频_1978791620122447873.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json、图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json、图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Wan25_I2V` —— 7/9 个有
-- `RH_Wan26_I2V` —— 2/9 个有
-- `Text Multiline` —— 1/9 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_151
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.688286
-common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.882917
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/场景背景复刻迁移产品+图像合成_2069959719518822402.json, 图片生成/图生图/王者驾临-全能图片 2 （极速版）_2027261640210649089.json, 图片生成/图生图/（RH版）全能图片2极速-单图编辑-电商、艺术、室内、平面等_2027402024060461058.json, 图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商-艺术-室内-平面_2028087143918211073.json, 图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商、艺术、室内、平面等_2027408195676803073.json, 图片生成/图生图/（RH版）全能图片2极速版图像编辑V1_2027091098656575490.json, 图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json, 图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json, 图片生成/文生图/全能图片2 文生图_2027577479132618754.json, 图片生成/文生图/全能图片2--文生图_2027189055745695745.json, 图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2083786920437571585.json, 图片生成/文生图/全能图片制作分镜_2027212222014951426.json, 图片生成/文生图/最新全能模型🍌2_极速生图_图像编辑_2027315921492119553.json]
+members: [图片生成/图生图/seedance2.5 (过人脸审核操作)_2086788953847459842.json, 视频生成/图生视频/HeyGem对口型，全节点注释，直接抄_2064694224074919938.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083141810741923842.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083152271352877058.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083400389453508610.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083404860132773889.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083416442275459073.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083422180163014658.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083425658755174402.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083429061518512129.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083069534579286018.json, 视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_151
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/场景背景复刻迁移产品+图像合成_2069959719518822402.json、图片生成/图生图/王者驾临-全能图片 2 （极速版）_2027261640210649089.json、图片生成/图生图/（RH版）全能图片2极速-单图编辑-电商、艺术、室内、平面等_2027402024060461058.json、图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商-艺术-室内-平面_2028087143918211073.json、图片生成/图生图/（RH版）全能图片2极速-多图编辑-电商、艺术、室内、平面等_2027408195676803073.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/seedance2.5 (过人脸审核操作)_2086788953847459842.json、视频生成/图生视频/HeyGem对口型，全节点注释，直接抄_2064694224074919938.json、视频生成/图生视频/Mini Max H3多模态参考生视频_2083141810741923842.json、视频生成/图生视频/Mini Max H3多模态参考生视频_2083152271352877058.json、视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083400389453508610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 13/14 个有
-- `easy showAnything` —— 13/14 个有
-- `LoadImage` —— 11/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `RH_Captioner_Pro` —— 1/14 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/14 个有
+- `CR Text` —— 11/12 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 9/12 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 2/12 个有
+- `RH_HeyGemNode` —— 1/12 个有
 
 ## 典型参数
 

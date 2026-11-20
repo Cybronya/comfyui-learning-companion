@@ -1,52 +1,38 @@
 ---
 name: unknown_workflow_generic_446
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.554143
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.813167
+common_nodes: [FlashVSRNode, Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/banan图片V1 2  Pro（简便操作版）_2036271306152353794.json, 图片生成/图生图/banan多角度不断改进图_2038436343981805570.json, 图片生成/图生图/全能图片G-2.0 增强板_2039291427972190209.json, 图片生成/图生图/全能图片V1 2  Pro（简便操作版）_1996645945498640386.json, 图片生成/图生图/全能图片V1 2 Pro（简便操作版）_2046402961106018305.json, "图片生成/文生图/Chat全能图片G-2.5 高级版,适用于资产调整，海报设计，资产设计_2110642752408080386.json", 图片生成/文生图/全能图片G-2.5 高级版_2100848705426518018.json]
+members: [图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json, 图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json, 图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json, 图片生成/图生图/flashVSR图片高清放大_2067075698631729154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_446
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/banan图片V1 2  Pro（简便操作版）_2036271306152353794.json、图片生成/图生图/banan多角度不断改进图_2038436343981805570.json、图片生成/图生图/全能图片G-2.0 增强板_2039291427972190209.json、图片生成/图生图/全能图片V1 2  Pro（简便操作版）_1996645945498640386.json、图片生成/图生图/全能图片V1 2 Pro（简便操作版）_2046402961106018305.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json、图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json、图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
+全部 6 个 workflow 都包含：
+- `FlashVSRNode`
+- `Image Comparer (rgthree)`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 6/7 个有
-- `MathExpression|pysssss` —— 6/7 个有
-- `easy int` —— 6/7 个有
-- `easy promptLine` —— 6/7 个有
-- `easy showAnything` —— 6/7 个有
-- `easy textIndexSwitch` —— 6/7 个有
-- `ImpactSwitch` —— 4/7 个有
-- `ProcessString` —— 4/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 4/7 个有
-- `Any Switch (rgthree)` —— 3/7 个有
-- `Image Comparer (rgthree)` —— 3/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/7 个有
-- `RH_RhartImageG25FlareImageToImage` —— 2/7 个有
-- `RH_RhartImageG25FlareTextToImage` —— 2/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `RH_RhartImageG2TextToImage` —— 1/7 个有
+- `INTConstant` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `easy imageScaleDownToSize` —— 3/6 个有
+- `Int` —— 2/6 个有
 
 ## 典型参数
 

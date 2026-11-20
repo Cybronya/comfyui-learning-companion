@@ -3,40 +3,39 @@ name: unknown_workflow_generic_415
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.313429
-common_nodes: [Any Switch (rgthree), DF_Text_Box, GetNode, LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage, SetNode, 孤海注释, 忽略多组孤海]
+coverage: 0.874286
+common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json, 图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json, 图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json, 平台全量/GImage20老照片修复低价版全能图片编辑王_2060908247388876801.json, 平台全量/低价版：G-Image-2.0 全能图片编辑王_2055162802481975298.json]
+members: [音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json, 音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json, 音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json, 音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json, 音频生成/音频生成/声音克隆&声音设计_2061665723885383682.json, 音频生成/音频生成/🦖QwenTTS 语音克隆 音色设计🦖 2_2014631013019815937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_415
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json、图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json、图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3  TTS 语音克隆与设计_2014616780165095426.json、音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json、音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json、音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json、音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：31%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `DF_Text_Box`
-- `GetNode`
-- `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `SetNode`
-- `孤海注释`
-- `忽略多组孤海`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 6/7 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/7 个有
+- `CR Text` —— 6/7 个有
+- `Qwen3TTSVoiceDesign` —— 6/7 个有
+- `HeartMuLa_Transcribe` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `WhisperTurboRun` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

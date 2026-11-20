@@ -3,32 +3,33 @@ name: unknown_workflow_sampler_clip_unet_330
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.84775
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.915
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Image_capybara_v0_1_image_edit_2027040053440024577.json, 图片生成/图生图/Image_capybara_v0_1_image_edit_fast_2027042674460594177.json, 图片生成/文生图/Image_capybara_v0_1_text_to_image_2026943093957730306.json, 图片生成/文生图/Image_capybara_v0_1_text_to_image_fast_2027038386724278274.json]
+members: [图片生成/文生图/flux2文生图1.0_1998240533703196674.json, 图片生成/文生图/【Flux2】一键生成影视级CG工作流（电影光柔焦质感）_2041504457069957122.json, 图片生成/文生图/【GUGU】FLUX2.0文生图_1993486400035160066.json, 图片生成/文生图/🍕最强开源 FLUX2系列之文生图【题词自动优化】_1993551504671965186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_330
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Image_capybara_v0_1_image_edit_2027040053440024577.json、图片生成/图生图/Image_capybara_v0_1_image_edit_fast_2027042674460594177.json、图片生成/文生图/Image_capybara_v0_1_text_to_image_2026943093957730306.json、图片生成/文生图/Image_capybara_v0_1_text_to_image_fast_2027038386724278274.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/flux2文生图1.0_1998240533703196674.json、图片生成/文生图/【Flux2】一键生成影视级CG工作流（电影光柔焦质感）_2041504457069957122.json、图片生成/文生图/【GUGU】FLUX2.0文生图_1993486400035160066.json、图片生成/文生图/🍕最强开源 FLUX2系列之文生图【题词自动优化】_1993551504671965186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `ModelSamplingSD3`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -37,18 +38,23 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 2/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `EmptyHunyuanVideo15Latent` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `HunyuanVideo15ImageToVideo` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `ResizeImageMaskNode` —— 2/4 个有
+- `CR Text` —— 2/4 个有
+- `CR Seed` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `Int Literal` —— 1/4 个有
+- `LoraLoader` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

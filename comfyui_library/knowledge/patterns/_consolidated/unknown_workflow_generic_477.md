@@ -1,33 +1,39 @@
 ---
 name: unknown_workflow_generic_477
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.952429
-common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage]
+coverage: 0.759833
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/NG31Flash_TextToImage_v3.1_2033838530295762945.json, 图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json, 图片生成/文生图/全能图片V2-文生_2065069414512422913.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json, 图片生成/文生图/全能图片V2-文生图_2066896721665417218.json, 图片生成/文生图/文生图-全能图片V2_2067782403392888833.json]
+members: [图片生成/图生图/全能图片G image2_2061070240217391106.json, 图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-低价渠道版G2_2070142031623704577.json, 图片生成/文生图/G PT-image 2 图生图+文生图二合一_2047114788400009218.json, 图片生成/文生图/Image2.0生图低价版_2047484518893887490.json, 图片生成/文生图/image2提示词选择节点+0.1元低价版-全能图片G2-文生_图生（T8）_2049784021718188034.json, 图片生成/文生图/全能图片G image2_2056550103275622401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_477
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/NG31Flash_TextToImage_v3.1_2033838530295762945.json、图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json、图片生成/文生图/全能图片V2-文生_2065069414512422913.json、图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json、图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图片G image2_2061070240217391106.json、图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-低价渠道版G2_2070142031623704577.json、图片生成/文生图/G PT-image 2 图生图+文生图二合一_2047114788400009218.json、图片生成/文生图/Image2.0生图低价版_2047484518893887490.json、图片生成/文生图/image2提示词选择节点+0.1元低价版-全能图片G2-文生_图生（T8）_2049784021718188034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_RhartImageNG31FlashTextToImage`
+全部 6 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text _O` —— 1/7 个有
+- `CR Prompt Text` —— 4/6 个有
+- `easy showAnything` —— 2/6 个有
+- `GPTImage2PromptSelector` —— 1/6 个有
+- `JjkText` —— 1/6 个有
 
 ## 典型参数
 

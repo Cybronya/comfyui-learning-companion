@@ -3,17 +3,17 @@ name: unknown_workflow_upscale_face_detailer_lora_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.795
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, CR Aspect Ratio SDXL, CR Text, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, FaceDetailer, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PhiPrompt, LoadImage, LoraLoader, RandomNoise, SAMLoader, SUPIR_Upscale, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, StringFunction|pysssss, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAELoader, easy cleanGpuUsed]
+coverage: 0.8005
+common_nodes: [BasicGuider, BasicScheduler, CFGZeroStarAndInit, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FaceDetailer, FluxGuidance, GetNode, ImpactInt, KSamplerSelect, ModelSamplingFlux, PatchModelPatcherOrder, Power Lora Loader (rgthree), RH_LLMAPI_NODE, RandomNoise, SAMLoader, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, UltimateSDUpscale, UltralyticsDetectorProvider, Upscale Model Loader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux三视图一致性文生图完美反推自动提示词_1910692535243866113.json, 平台全量/Flux三视图一致性文生图完美反推自动提示词_1923287327131824129.json]
+members: [图片生成/文生图/多个少女团生成流（可动态）_1944334469094625282.json, 图片生成/文生图/🤡【大炮擦边】女团_名yuan一键生成器🤡_1944235914703015938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_face_detailer_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux三视图一致性文生图完美反推自动提示词_1910692535243866113.json、平台全量/Flux三视图一致性文生图完美反推自动提示词_1923287327131824129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/多个少女团生成流（可动态）_1944334469094625282.json、图片生成/文生图/🤡【大炮擦边】女团_名yuan一键生成器🤡_1944235914703015938.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -25,43 +25,41 @@ source: knowledge_consolidation
 全部 2 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGZeroStarAndInit`
 - `CLIPTextEncode`
-- `CLIPTextEncodeFlux`
-- `CR Aspect Ratio SDXL`
 - `CR Text`
-- `DetailDaemonSamplerNode`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
 - `FaceDetailer`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
+- `FluxGuidance`
+- `GetNode`
+- `ImpactInt`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PhiPrompt`
-- `LoadImage`
-- `LoraLoader`
+- `ModelSamplingFlux`
+- `PatchModelPatcherOrder`
+- `Power Lora Loader (rgthree)`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
 - `SAMLoader`
-- `SUPIR_Upscale`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
 - `SetNode`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
 - `UNETLoader`
+- `UltimateSDUpscale`
 - `UltralyticsDetectorProvider`
+- `Upscale Model Loader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 800 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| LoRA 模型强度 | 0.8 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,8 +67,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 800，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

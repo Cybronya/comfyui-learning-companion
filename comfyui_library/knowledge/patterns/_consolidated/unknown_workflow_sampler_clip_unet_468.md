@@ -1,71 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_468
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.952333
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, ImageResizeKJv2, KSampler, LoadImage, MathExpression|pysssss, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecodeTiled, VAELoader, Wan22ImageToVideoLatent]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 2
+level: weak
+coverage: 0.972
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2-5B图生视频 官方工作流_1950030033369874433.json, 视频生成/图生视频/wan2.2-5B图生视频-ComfyUI官方_1950015509658034177.json, 视频生成/图生视频/wan2.2-TI2V-5B-ComfyUI官方_1949844295606034434.json]
+members: [图片生成/文生图/Z-Image二次采样反推洗图_2073307813459353602.json, 图片生成/文生图/Z-Image哈迪斯风格反推重绘_2073310291110223874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_468
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2-5B图生视频 官方工作流_1950030033369874433.json、视频生成/图生视频/wan2.2-5B图生视频-ComfyUI官方_1950015509658034177.json、视频生成/图生视频/wan2.2-TI2V-5B-ComfyUI官方_1949844295606034434.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image二次采样反推洗图_2073307813459353602.json、图片生成/文生图/Z-Image哈迪斯风格反推重绘_2073310291110223874.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `ImageResizeKJv2`
+- `EmptySD3LatentImage`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `Wan22ImageToVideoLatent`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `ConstrainImage|pysssss` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `Int` —— 1/3 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `KSamplerAdvanced` —— 1/2 个有
+- `LatentUpscaleBy` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ModelSamplingAuraFlow` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 3 | 89% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 30 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 6 | - | 2 | 67% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode
+- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本
+- 调度器 最常用 euler，2 个样本，一致性 50%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

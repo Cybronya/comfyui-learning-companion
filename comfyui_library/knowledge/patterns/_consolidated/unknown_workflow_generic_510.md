@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_510
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.733429
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.8155
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json, 音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json, 音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json, 音频生成/音频生成/音乐生成--HeartMula让你写歌自由_2013804466218209282.json, 音频生成/音频生成/🎵HeartMuLa🎵最新最强开源音乐生成_2014297660701810690.json]
+members: [视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083133964038008833.json, 视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083411318568210433.json, 视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json, 视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json, 视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json, 视频生成/文生视频/Seedance 2.5 多模态全能视频生成_2088191547308339201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_510
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json、音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json、音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083133964038008833.json、视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083411318568210433.json、视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json、视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json、视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/7 个有
-- `INTConstant` —— 1/7 个有
-- `SaveAudioMP3` —— 1/7 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 1/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 

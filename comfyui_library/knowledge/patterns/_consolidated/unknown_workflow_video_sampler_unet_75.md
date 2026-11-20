@@ -1,59 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_unet_75
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.89875
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.725
+common_nodes: [CLIPLoader, ComfyMathExpression, Label (rgthree), LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, workflow>运行采样]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json, 视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json, 视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json, 视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json]
+members: [视频生成/图生视频/MiniMax-H3无限视频生成_2096054807244136449.json, 视频生成/文生视频/MiniMax-H3无限视频生成_2096045789138219009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_75
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json、视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json、视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json、视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3无限视频生成_2096054807244136449.json、视频生成/文生视频/MiniMax-H3无限视频生成_2096045789138219009.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `Label (rgthree)`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `RandomNoise`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `workflow>运行采样`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `SolAttnMiniMax` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `IntToString` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderBypassModelOnly` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Seed_` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `text-util-join-text` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `ReservedVRAMSetter` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -65,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

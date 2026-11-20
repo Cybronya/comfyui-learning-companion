@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_348
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.580125
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
+coverage: 0.854286
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json, 图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json, 图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json, 图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json, 图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json, 图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json, 平台全量/Seedream 4.5 人物一致性_单图编辑API版_1997521204842008578.json]
+members: [图片生成/图生图/+全能图片V1+谷歌顶级综合图像编辑_1976625373477736449.json, 图片生成/图生图/+全能图片V1单图转手办场景（无高清放大）_1965062073304666113.json, 图片生成/图生图/+全能图片V1双图重组融合工作流_1965074764886851585.json, 图片生成/图生图/+全能图片V1图像编辑的顶级理解_1980089098960539649.json, 图片生成/图生图/全能图片V1  图像编辑 全版本（附带30+创意提示词）_1962922953333780481.json, 图片生成/图生图/全能图片V1图像编辑【含单图，双图，三图】_1973227641526464514.json, 图片生成/文生图/全能图片V1图像编辑的顶级理解_1962730235911356417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_348
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json、图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json、图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json、图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json、图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/+全能图片V1+谷歌顶级综合图像编辑_1976625373477736449.json、图片生成/图生图/+全能图片V1单图转手办场景（无高清放大）_1965062073304666113.json、图片生成/图生图/+全能图片V1双图重组融合工作流_1965074764886851585.json、图片生成/图生图/+全能图片V1图像编辑的顶级理解_1980089098960539649.json、图片生成/图生图/全能图片V1  图像编辑 全版本（附带30+创意提示词）_1962922953333780481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_Doubao_Seedream_4_5`
-- `Comfly_api_set`
+全部 7 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
 - `SaveImage`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 6/8 个有
-- `JWImageResizeByLongerSide` —— 3/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `PreviewImage` —— 5/7 个有
+- `ImageAndMaskPreview` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `easy bookmark` —— 1/7 个有
 
 ## 典型参数
 

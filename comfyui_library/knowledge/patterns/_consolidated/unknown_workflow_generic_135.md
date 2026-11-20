@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_135
 type: Unknown Workflow
-frequency: 15
+frequency: 13
 level: moderate
-coverage: 0.911067
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.974308
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/TTS音色克隆_2118319405384945665.json, 平台全量/晚灯-十四_2120440499965349889.json, 数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json, 数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json, 数字人/数字人/IndexTTS2声音克隆IndexTTS2(单人)_2031259293445525506.json, 数字人/数字人/indextts2基础+情感_1972186995231485954.json, 数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json, 音频生成/音频生成/Index TTS2 声音克隆_2070816843719331841.json, 音频生成/音频生成/Index TTS2 声音克隆工作流_2051515883343888385.json, 音频生成/音频生成/IndexTTS2-有声书制作 多人声音克隆+情感参考_1998673212043055105.json, 音频生成/音频生成/indexTTS2 语音克隆+情感语气参考_2018600516997091330.json, 音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json, 音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json, 音频生成/音频生成/声音克隆+情感参考（转跳爷）_2046777867777875970.json, 音频生成/音频生成/声音克隆（单人_双人克隆音色，情感调节）_2051295398525972481.json]
+members: [图片生成/图生图/单图编辑 _  全能图片V1 🍌_1961313555331137537.json, 图片生成/图生图/双人人物合影 +全能图片V1_1985625396215459841.json, 图片生成/图生图/大峰漫剧角色🍌（四视图）_1979539906361987074.json, 图片生成/图生图/漫剧角色（四视图）_1991472082315911169.json, 图片生成/图生图/香蕉多图融合_1998288180698865666.json, 图片生成/文生图/全能图片 V1_2014603891056320513.json, 图片生成/文生图/全能图片V1图像编辑_1984997799391612929.json, 图片生成/文生图/全能图片V1多图参考_1987857807712129026.json, 图片生成/文生图/可乐-单图扩展成四视图_2009154735978323969.json, 图片生成/文生图/情侣求婚场景-图生图_1983723273634684929.json, 图片生成/文生图/情侣求婚场景_1983453022506426369.json, 图片生成/文生图/求婚场景_1983357701608644610.json, 图片生成/文生图/经典电影探班，5分钱一张_1999813413306068993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_135
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/TTS音色克隆_2118319405384945665.json、平台全量/晚灯-十四_2120440499965349889.json、数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json、数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json、数字人/数字人/IndexTTS2声音克隆IndexTTS2(单人)_2031259293445525506.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/单图编辑 _  全能图片V1 🍌_1961313555331137537.json、图片生成/图生图/双人人物合影 +全能图片V1_1985625396215459841.json、图片生成/图生图/大峰漫剧角色🍌（四视图）_1979539906361987074.json、图片生成/图生图/漫剧角色（四视图）_1991472082315911169.json、图片生成/图生图/香蕉多图融合_1998288180698865666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 12/15 个有
-- `easy indexTTSEmotionVector` —— 10/15 个有
-- `CR Prompt Text` —— 8/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/15 个有
-- `easy indexTTSAudioMerge` —— 7/15 个有
-- `easy indexTTSEmotionAudio` —— 6/15 个有
-- `easy indexTTSEmotionMerge` —— 4/15 个有
-- `LoadImage` —— 2/15 个有
+- `RH_Translator` —— 11/13 个有
+- `ImageResize+` —— 10/13 个有
+- `Textbox` —— 3/13 个有
 
 ## 典型参数
 

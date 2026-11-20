@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_222
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 1
-common_nodes: [JWInteger, LoadVideo, RH_Astra, SaveVideo]
+coverage: 0.7417
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [平台全量/Topaz Video 最强视频高清放大｜星光版｜非星光版_2099630075242180609.json, 平台全量/Topaz Video 高清放大@承象（非星光）_2102041130123751425.json, 平台全量/Topaz Video 高清放大V1（非星光）_2098789139587096577.json, 平台全量/Topaz Video 高清放大V1（非星光）_2102918696464375810.json, 平台全量/Topaz Video 高清放大V1（非星光）_2103367452934627329.json, 平台全量/Topaz Video 高清放大V1（非星光）_2110614419863592961.json, 平台全量/Topaz Video 高清放大V1（非星光）_2111475263908433922.json, 平台全量/Topaz Video星光放大V1_2102918417329254402.json, 平台全量/视频无损高清放大 Topaz Video 高清放大_2116433244064407554.json, 平台全量/视频高清放大 Top_2101866607449559042.json, 视频生成/图生视频/Topaz Video星光放大V1_2098777654546751489.json]
+members: [图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json, 图片生成/文生图/02_城市微缩切片_2056334605820719105.json, 图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json, 图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json, 图片生成/文生图/05_雾感极简石版画_2056336981935869953.json, 图片生成/文生图/【阡陌】全能图片G-2-文生图-官方稳定版Image 2_2049053252511076353.json, 图片生成/文生图/全能图像G image2.0文生图_官方稳定版_2049383994692734977.json, 图片生成/文生图/全能图像G image2.0文生图官方稳定版_2049313423787302914.json, 图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json, 图片生成/文生图/柏拉图全能图片G-image2_多图参考_图生图_2053818189842264066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_222
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/Topaz Video 最强视频高清放大｜星光版｜非星光版_2099630075242180609.json、平台全量/Topaz Video 高清放大@承象（非星光）_2102041130123751425.json、平台全量/Topaz Video 高清放大V1（非星光）_2098789139587096577.json、平台全量/Topaz Video 高清放大V1（非星光）_2102918696464375810.json、平台全量/Topaz Video 高清放大V1（非星光）_2103367452934627329.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json、图片生成/文生图/02_城市微缩切片_2056334605820719105.json、图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json、图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json、图片生成/文生图/05_雾感极简石版画_2056336981935869953.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `JWInteger`
-- `LoadVideo`
-- `RH_Astra`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub Deepcleaner` —— 10/11 个有
-- `忽略多组孤海` —— 1/11 个有
+- `CR Text` —— 9/10 个有
+- `LoadImage` —— 8/10 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 8/10 个有
+- `🙅GPT_image_2_综合@炮老师的小课堂` —— 2/10 个有
+- `PreviewImage` —— 1/10 个有
 
 ## 典型参数
 

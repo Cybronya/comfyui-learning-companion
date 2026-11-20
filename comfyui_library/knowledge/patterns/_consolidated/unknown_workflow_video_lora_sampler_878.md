@@ -1,67 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_878
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.988667
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.9095
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json, 视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V1.0_1961819630828503041.json, 视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V2.0_1968840482644217858.json]
+members: [视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json, 视频生成/图生视频/scail2再次进化！！！【拒绝面部崩坏】多条件控制与极简连线_2073067673981898754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_878
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json、视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V1.0_1961819630828503041.json、视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V2.0_1968840482644217858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json、视频生成/图生视频/scail2再次进化！！！【拒绝面部崩坏】多条件控制与极简连线_2073067673981898754.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `CheckpointLoaderSimple`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `ImageFromBatch+` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `WanVideoBlockSwap` —— 2/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `CreateCFGScheduleFloatList` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `JWIntegerToString` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `WanVideoImageToVideoEncode` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `BatchImagesNode` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `MaskToImage` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 1/2 个有
+- `SCAIL2ChunkKeyframeExtractor` —— 1/2 个有
+- `SCAIL2FaceCompositeBack` —— 1/2 个有
+- `SCAIL2HeadTrackCrop` —— 1/2 个有
+- `SCAIL2KeyframeMatrixViewer` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
@@ -73,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,46 +1,37 @@
 ---
 name: unknown_workflow_generic_166
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.634846
-common_nodes: [CR Prompt Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.730364
+common_nodes: [LayerUtility: PurgeVRAM, LoadVideo, Qwen3VLProcessor, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [平台全量/影帝套餐▶真语音克隆_2119365259495563265.json, 数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json, 数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json, 数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json, 音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2050893627286663170.json, 音频生成/音频生成/LongCat-AudioDIT-语音克隆_2055595682752417794.json, 音频生成/音频生成/LongCat龙猫语音单人_2075500484881903618.json, 音频生成/音频生成/Qwen3TTS-声音克隆—剪辑后期补救小助手_2079779281244344321.json, 音频生成/音频生成/YZ-LongCat-AudioDIT-TTS_2041359894686732290.json, 音频生成/音频生成/YZ金鱼-LongCat-AudioDIT-TTS_2039380233228394497.json, 音频生成/音频生成/【阿良绘】LongCat语音克隆 _（适合短语音克隆）_2063169655795179521.json, 音频生成/音频生成/三七-（sanqi）语音克隆_2062100898129731586.json]
+members: [图片生成/反推提示词/1视频 Qwen3VL  视频反推视频剧情内容_2111439074992152578.json, 图片生成/反推提示词/Qwen3VL-视频反推剧情内容_2044424415521280001.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042091855675924481.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042921981309362177.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2076660879998939137.json, 图片生成/反推提示词/视频剧情内容反推！Qwen3VL！_2042397334411157505.json, 图片生成/反推提示词/视频反推视频剧情内容！Qwen3VL！_2029484149798604802.json, 图片生成/反推提示词/视频反推视频剧情内容！Qwen3VL！_2050999069090295810.json, 图片生成/反推提示词/视频图像反推工作流_2105221614995591169.json, 图片生成/反推提示词/🦄Qwen3视频反推 🎯天下无腰_2069454766840827905.json, 图片生成/图生图/Qwen3VL-视频反推剧情内容_2063494888439767042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_166
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（平台全量/影帝套餐▶真语音克隆_2119365259495563265.json、数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json、数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json、数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json、音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/1视频 Qwen3VL  视频反推视频剧情内容_2111439074992152578.json、图片生成/反推提示词/Qwen3VL-视频反推剧情内容_2044424415521280001.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042091855675924481.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042921981309362177.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2076660879998939137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+全部 11 个 workflow 都包含：
+- `LayerUtility: PurgeVRAM`
+- `LoadVideo`
+- `Qwen3VLProcessor`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 12/13 个有
-- `PreviewAudio` —— 12/13 个有
-- `easy showAnything` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/13 个有
-- `LongCatMultiSpeakerTTS` —— 7/13 个有
-- `GetNode` —— 3/13 个有
-- `SetNode` —— 3/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `TextInputNode` —— 1/13 个有
+- `JjkText` —— 3/11 个有
+- `LoadImage` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,69 +1,57 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_34
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.406667
-common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, GetNode, Image Comparer (rgthree), KSamplerSelect, LoadImage, ModelPatchLoader, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZImageFunControlnet]
+frequency: 2
+level: weak
+coverage: 0.7975
+common_nodes: [ACN_AdvancedControlNetApply, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, ControlNetLoader, DualCLIPLoader, EmptySD3LatentImage, ImpactSwitch, KSampler, LoadImage, SaveImage, TripleCLIPLoader, VAEDecode]
 problems: []
 missing: []
-members: [平台全量/Z-Image Tile 2.1 使用技巧：从 Denoise 调整到采样轨迹控制_2087006360826372098.json, 平台全量/Z-Image Tile 2.1 实测：一种不同于传统 Upscaler 的高清化方法_2084263638143168513.json, 平台全量/Z-Image-Turbo 模型（ ComfyUI 原生节点分块放大流 ）_2066027264583753729.json]
+members: [图片生成/图生图/【遇见AI】SD3.5 blur_2042810005010780161.json, 图片生成/图生图/【遇见AI】SD3.5 canny和depth_2042802452788944897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_34
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Z-Image Tile 2.1 使用技巧：从 Denoise 调整到采样轨迹控制_2087006360826372098.json、平台全量/Z-Image Tile 2.1 实测：一种不同于传统 Upscaler 的高清化方法_2084263638143168513.json、平台全量/Z-Image-Turbo 模型（ ComfyUI 原生节点分块放大流 ）_2066027264583753729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【遇见AI】SD3.5 blur_2042810005010780161.json、图片生成/图生图/【遇见AI】SD3.5 canny和depth_2042802452788944897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicGuider`
-- `BasicScheduler`
+全部 2 个 workflow 都包含：
+- `ACN_AdvancedControlNetApply`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `ControlNetLoader`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `ImpactSwitch`
+- `KSampler`
 - `LoadImage`
-- `ModelPatchLoader`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `SplitSigmas`
-- `UNETLoader`
+- `TripleCLIPLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `ZImageFunControlnet`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `ImageMergeTileList` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `ResizeImageMaskNode` —— 2/3 个有
-- `SplitImageToTileList` —— 2/3 个有
-- `ColorMatchV2` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `SigmasPreview` —— 1/3 个有
+- `Canny` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| ControlNet 权重 | 0.7 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -71,4 +59,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_201
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.620364
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveImage, easy showAnything]
+coverage: 0.7124
+common_nodes: [LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/GT-Image-2--单图编辑_2046611866562072577.json, 图片生成/图生图/GT-Image-2--模特换姿势_2046617474476548098.json, 图片生成/图生图/GT-Image-2--模特换脸_2046616208635600897.json, 图片生成/图生图/GT-Image-2--模特换装_2046614924419407873.json, 图片生成/图生图/GT-Image-2-官方4K-图片编辑_2050411033780604930.json, 图片生成/图生图/TNGS棚拍模特图（全能图片G）_2053358800740073473.json, 图片生成/图生图/g-image-2图像编辑_G能图像！_2046529834695794690.json, 图片生成/图生图/gxx imzge2——0.04元一张图_2046529800587714562.json, 图片生成/图生图/gxx-image-2图像编辑（贞贞的AI工坊-Chat模式）_2046481702016524290.json, 图片生成/图生图/全能图 Image2 文生图+图生图--（4K-0.04积分默认分组贞贞的AI工坊）_2049288136013914114.json, 图片生成/文生图/一键运行：Image-2  文生图 图像编辑_2048222382300602369.json]
+members: [图片生成/反推提示词/Qwen3音频转文字_2031992191672913921.json, 数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/推理-音频提取字幕-Qwen3-ASR_2052619440117821442.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_201
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/GT-Image-2--单图编辑_2046611866562072577.json、图片生成/图生图/GT-Image-2--模特换姿势_2046617474476548098.json、图片生成/图生图/GT-Image-2--模特换脸_2046616208635600897.json、图片生成/图生图/GT-Image-2--模特换装_2046614924419407873.json、图片生成/图生图/GT-Image-2-官方4K-图片编辑_2050411033780604930.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/Qwen3音频转文字_2031992191672913921.json、数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveImage`
-- `easy showAnything`
+全部 10 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader_DFT`
+- `Qwen3ASRTranscribe_DFT`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gpt_image_2` —— 7/11 个有
-- `Comfly_gpt_image_2_official_ratio` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `PreviewImage` —— 2/11 个有
-- `Image Comparer (rgthree)` —— 1/11 个有
-- `LayerUtility: ImageReel` —— 1/11 个有
-- `LayerUtility: ImageReelComposit` —— 1/11 个有
+- `PreviewAny` —— 9/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

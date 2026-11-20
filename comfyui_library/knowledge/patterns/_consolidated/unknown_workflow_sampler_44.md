@@ -3,34 +3,39 @@ name: unknown_workflow_sampler_44
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.775
-common_nodes: [Image Comparer (rgthree), InvSRSampler, LoadImage, LoadInvSRModels, SaveImage]
+coverage: 0.92475
+common_nodes: [ImageConcatMulti, LoadImage, RunningHub XVerse Pipeline Loader, RunningHub XVerse Sampler, SaveImage, Text Multiline, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/InvSR 高清修复放大_1951927913987952642.json, 图片生成/图生图/InvSR图片无损零变形高清放大_1952258557775392769.json, 平台全量/invsr超分辨率高清放大4K_1930814356957933569.json, 平台全量/【阡陌】InvSR 高清修复放大_1945399146448658433.json]
+members: [图片生成/图生图/任意男女合影_字节XVerse多主题一致性_1944543533074141186.json, 图片生成/图生图/单物一致性_字节XVerse多主题一致性_1943974592962527233.json, 图片生成/图生图/多人物一致性_字节XVerse多主题一致性_1943729955022966786.json, 图片生成/图生图/服装一致性_字节XVerse多人物一致性_1943740467731369986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_44
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/InvSR 高清修复放大_1951927913987952642.json、图片生成/图生图/InvSR图片无损零变形高清放大_1952258557775392769.json、平台全量/invsr超分辨率高清放大4K_1930814356957933569.json、平台全量/【阡陌】InvSR 高清修复放大_1945399146448658433.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/任意男女合影_字节XVerse多主题一致性_1944543533074141186.json、图片生成/图生图/单物一致性_字节XVerse多主题一致性_1943974592962527233.json、图片生成/图生图/多人物一致性_字节XVerse多主题一致性_1943729955022966786.json、图片生成/图生图/服装一致性_字节XVerse多人物一致性_1943740467731369986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `InvSRSampler`
+- `ImageConcatMulti`
 - `LoadImage`
-- `LoadInvSRModels`
+- `RunningHub XVerse Pipeline Loader`
+- `RunningHub XVerse Sampler`
 - `SaveImage`
+- `Text Multiline`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ResizeLongestToNode` —— 1/4 个有
+- `CropFace` —— 3/4 个有
+- `LayerMask: PersonMaskUltra V2` —— 3/4 个有
+- `LayerUtility: CropByMask V2` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 

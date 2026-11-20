@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_clip_234
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9335
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVAdainLatent, LTXVConditioning, LTXVFilmGrain, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVTiledSampler, RandomNoise, STGGuiderAdvanced, Set VAE Decoder Noise, VAEDecodeTiled, VAEEncode, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.928
+common_nodes: [ApplyFBCacheOnModel, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWImageResizeByLongerSide, KSamplerSelect, LTXVApplySTG, LTXVPreprocess, LTXVScheduler, LayerUtility: PurgeVRAM, LoadImage, Note Plus (mtb), PatchModelPatcherOrder, PathchSageAttentionKJ, RH_Captioner, RandomNoise, STGGuider, SamplerCustomAdvanced, String Replace (mtb), StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/ltxv模型快速视频放大_1946193285667020801.json, 视频生成/图生视频/【老金驿站】LTXvideo-13b高清放大工作流_1921818761756622849.json]
+members: [视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json, 视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_234
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/ltxv模型快速视频放大_1946193285667020801.json、视频生成/图生视频/【老金驿站】LTXvideo-13b高清放大工作流_1921818761756622849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json、视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,34 +23,40 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ApplyFBCacheOnModel`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `JWImageResizeByLongerSide`
 - `KSamplerSelect`
-- `LTXVAdainLatent`
-- `LTXVConditioning`
-- `LTXVFilmGrain`
-- `LTXVLatentUpsampler`
-- `LTXVLatentUpsamplerModelLoader`
-- `LTXVTiledSampler`
+- `LTXVApplySTG`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `PatchModelPatcherOrder`
+- `PathchSageAttentionKJ`
+- `RH_Captioner`
 - `RandomNoise`
-- `STGGuiderAdvanced`
-- `Set VAE Decoder Noise`
+- `STGGuider`
+- `SamplerCustomAdvanced`
+- `String Replace (mtb)`
+- `StringFunction|pysssss`
 - `VAEDecodeTiled`
-- `VAEEncode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `FloatToSigmas` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
+- `EmptyLTXVLatentVideo` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
 - `ImageScale` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `STGAdvancedPresets` —— 1/2 个有
-- `SplitSigmas` —— 1/2 个有
-- `StringToFloatList` —— 1/2 个有
+- `LTXVAddGuide` —— 1/2 个有
+- `LTXVConditioning` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideo` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

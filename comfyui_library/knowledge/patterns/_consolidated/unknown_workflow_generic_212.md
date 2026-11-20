@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_212
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.889455
-common_nodes: [LayerUtility: TextJoin, LoadImage, PrimitiveInt, SaveImage, easy promptLine]
+coverage: 0.9774
+common_nodes: [LoadImage, RH_RhartImageNProEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/女童运动背心批量附图_2062715383810977793.json, 图片生成/图生图/女装附图 -运动款_2057636245613932545.json, 图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json, 图片生成/图生图/男装附图_2064181021381316609.json, 图片生成/图生图/童装批量生图_2061286729377734657.json, 图片生成/图生图/童装附图_2064255951846338562.json, 图片生成/图生图/衣服换色_2053020912231960578.json, 图片生成/图生图/衣服换色_2064174361678008322.json, 图片生成/图生图/鞋子附图_2054442284216791042.json, 图片生成/图生图/饰品批量附图_2056998025419116545.json, 图片生成/图生图/饰品批量附图_2061653260913696769.json]
+members: [图片生成/图生图/【遇见AI】全能图片 pro，RH版_2051592713459511297.json, 图片生成/图生图/人物换发型_2042195917419319297.json, 图片生成/图生图/人物换发型_2058084043064963074.json, 图片生成/图生图/全能图片PRO-图生图-低价渠道版 API专用_2081646608755814401.json, 图片生成/图生图/全能图片PRO-图生图-低价渠道版 对比图_2062356098086170625.json, 图片生成/图生图/全能图片PRO-图生图-低价渠道版_2105325511445667842.json, 图片生成/图生图/全能图片PRO-测试_2081554849937846273.json, 图片生成/图生图/全能图片图片编辑_2079477886016385026.json, 图片生成/图生图/老孙AI---全能图像3图编辑_2083216210833002498.json, 图片生成/文生图/NPro_Edit_v1.0_2033838566815567874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_212
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/女童运动背心批量附图_2062715383810977793.json、图片生成/图生图/女装附图 -运动款_2057636245613932545.json、图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json、图片生成/图生图/男装附图_2064181021381316609.json、图片生成/图生图/童装批量生图_2061286729377734657.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【遇见AI】全能图片 pro，RH版_2051592713459511297.json、图片生成/图生图/人物换发型_2042195917419319297.json、图片生成/图生图/人物换发型_2058084043064963074.json、图片生成/图生图/全能图片PRO-图生图-低价渠道版 API专用_2081646608755814401.json、图片生成/图生图/全能图片PRO-图生图-低价渠道版 对比图_2062356098086170625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LayerUtility: TextJoin`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `PrimitiveInt`
+- `RH_RhartImageNProEdit`
 - `SaveImage`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 9/11 个有
-- `Text` —— 7/11 个有
-- `CR Text` —— 4/11 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/11 个有
+- `MuyeTextEditOutput` —— 2/10 个有
+- `RHSettingsNode` —— 1/10 个有
 
 ## 典型参数
 

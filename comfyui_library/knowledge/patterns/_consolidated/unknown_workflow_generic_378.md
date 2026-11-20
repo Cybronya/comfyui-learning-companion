@@ -1,47 +1,40 @@
 ---
 name: unknown_workflow_generic_378
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.7575
-common_nodes: [RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.740143
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/ForLoop批量白底图_1955871115472240641.json, 平台全量/ZIP批量上传图片，for循环处理多张图片_1951205435003052034.json, 平台全量/ZIP批量上传图片，for循环处理多张图片演示实例_1924764106128355330.json, 平台全量/ZIP批量上传图片，for循环处理多张图片演示实例_1926205203148914689.json, 平台全量/全能图片V1香蕉批量图片处理_1950420279791149058.json, 平台全量/图片批量抠图去背景_1979086025580515330.json, 平台全量/批量处理工具：zip上传——批量放大——zip下载_1962795838013616129.json, 平台全量/批量移除背景_1952647065652408322.json]
+members: [图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json, 图片生成/图生图/个人号洗4.0_2055233377527189506.json, 图片生成/图生图/个人号洗_2052376260571090945.json, 图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json, 图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json, 图片生成/图生图/简单的动作更改，不改变原图风格_1978322603704246273.json, 图片生成/文生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1977798578682953729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_378
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/ForLoop批量白底图_1955871115472240641.json、平台全量/ZIP批量上传图片，for循环处理多张图片_1951205435003052034.json、平台全量/ZIP批量上传图片，for循环处理多张图片演示实例_1924764106128355330.json、平台全量/ZIP批量上传图片，for循环处理多张图片演示实例_1926205203148914689.json、平台全量/全能图片V1香蕉批量图片处理_1950420279791149058.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json、图片生成/图生图/个人号洗4.0_2055233377527189506.json、图片生成/图生图/个人号洗_2052376260571090945.json、图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json、图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+全部 7 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `easy imageRemBg` —— 7/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `CompressImages` —— 1/8 个有
-- `HYPIRImageRestoration` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `RH_Nano_Banana_Image2Image` —— 1/8 个有
+- `CR Text` —— 6/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `ResizeLongestToNode` —— 1/7 个有
 
 ## 典型参数
 

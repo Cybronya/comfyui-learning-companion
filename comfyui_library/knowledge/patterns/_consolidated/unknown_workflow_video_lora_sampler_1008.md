@@ -3,63 +3,45 @@ name: unknown_workflow_video_lora_sampler_1008
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8015
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8635
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveStringMultiline, RandomNoise, SFH3MultimodalDirector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/Infinitetalk_视频对口型-保持原视频动作一致_1979962837202276353.json, 数字人/数字人/zy1736_2015662602763898882.json]
+members: [视频生成/文生视频/MiniMax H3｜多模态参考导演台｜ 宫格分镜自动拆分+全能参考（图片｜视频｜音频）_2096977007417585666.json, 视频生成/文生视频/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2085626169877155842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1008
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Infinitetalk_视频对口型-保持原视频动作一致_1979962837202276353.json、数字人/数字人/zy1736_2015662602763898882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜多模态参考导演台｜ 宫格分镜自动拆分+全能参考（图片｜视频｜音频）_2096977007417585666.json、视频生成/文生视频/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2085626169877155842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SFH3MultimodalDirector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `Float to Int` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `RH_GetAudioDuration` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VHS_LoadAudioUpload` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy seed` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `image_scale_pixel_v2` —— 1/2 个有
+- `ImpactFloat` —— 1/2 个有
 
 ## 典型参数
 

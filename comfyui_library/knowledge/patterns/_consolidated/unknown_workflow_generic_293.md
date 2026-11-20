@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_293
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.717111
-common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.79375
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Image-2 单图_2056307334154117122.json, 图片生成/图生图/x海报双图编辑全能图片G低耗_2054921213780217857.json, 图片生成/图生图/三图生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2049707741547073537.json, 图片生成/图生图/人物角色看板-全能模型g2_2058736453479395329.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G 低价渠道_2053173826476879873.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G 低价渠道_2100061659556564994.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100212074252165121.json, 视频生成/图生视频/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100183570366156801.json, 视频生成/图生视频/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2101868979630465026.json]
+members: [图片生成/图生图/GImage20一键换装稳定官方版_2062016542912638977.json, 图片生成/图生图/HYYYYY_2071456493253255169.json, 图片生成/图生图/cold_参考风格重绘_02_2069377442665553922.json, 图片生成/图生图/image2.5自用稳定版_2071518816428969986.json, 图片生成/图生图/全能图像G2+官方版【图生图】_2057459117228384258.json, 图片生成/文生图/中鲸生图 image2（官方API）_2050596257315471361.json, 图片生成/文生图/全能图像G image2.0图像编辑官方稳定版_2049360177303920641.json, 图片生成/文生图/小商家省钱神器：2张图生成无模特悬浮商拍，全节点注释拿来就用_2085287679217987585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_293
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Image-2 单图_2056307334154117122.json、图片生成/图生图/x海报双图编辑全能图片G低耗_2054921213780217857.json、图片生成/图生图/三图生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2049707741547073537.json、图片生成/图生图/人物角色看板-全能模型g2_2058736453479395329.json、图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G 低价渠道_2053173826476879873.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/GImage20一键换装稳定官方版_2062016542912638977.json、图片生成/图生图/HYYYYY_2071456493253255169.json、图片生成/图生图/cold_参考风格重绘_02_2069377442665553922.json、图片生成/图生图/image2.5自用稳定版_2071518816428969986.json、图片生成/图生图/全能图像G2+官方版【图生图】_2057459117228384258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 6/9 个有
-- `GuHaiAutoImageSplit` —— 5/9 个有
-- `EmptyImage` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `DuckHideNode` —— 1/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 7/8 个有
+- `CR Text` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `HYPIRAdvancedRestoration` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_435
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.795143
-common_nodes: [CR Text, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.876667
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/PS扩图_2074317387641475073.json, 图片生成/图生图/PS扩图_无需参数_2097172894366392322.json, 图片生成/图生图/PS扩图_无需参数_2097511698746920962.json, 图片生成/图生图/人物动作九宫格_2080523856682512386.json, 图片生成/图生图/白边扩图-无需参数_2096407182140071938.json, 图片生成/图生图/白边扩图-无需参数_2096417864545820674.json, 平台全量/白边扩图-无需参数_2094309789437349890.json]
+members: [图片生成/反推提示词/爆款视频脚本优化二创洗稿-提示词反推_2020688652573089793.json, 图片生成/反推提示词/爆款视频脚本优化二创洗稿V2-提示词反推_2021901058301235202.json, 图片生成/反推提示词/爆款视频脚本优化二创洗稿V3-提示词反推_2021927836331806721.json, 图片生成/图生图/AI修图2.0_2064966501488218114.json, 图片生成/图生图/图片生成加反推2_2061748509363236865.json, 视频生成/文生视频/爆款视频脚本优化二创洗稿-提示词反推_2021922017947160577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_435
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/PS扩图_2074317387641475073.json、图片生成/图生图/PS扩图_无需参数_2097172894366392322.json、图片生成/图生图/PS扩图_无需参数_2097511698746920962.json、图片生成/图生图/人物动作九宫格_2080523856682512386.json、图片生成/图生图/白边扩图-无需参数_2096407182140071938.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/爆款视频脚本优化二创洗稿-提示词反推_2020688652573089793.json、图片生成/反推提示词/爆款视频脚本优化二创洗稿V2-提示词反推_2021901058301235202.json、图片生成/反推提示词/爆款视频脚本优化二创洗稿V3-提示词反推_2021927836331806721.json、图片生成/图生图/AI修图2.0_2064966501488218114.json、图片生成/图生图/图片生成加反推2_2061748509363236865.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>扩图V2` —— 6/7 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/7 个有
+- `Label (rgthree)` —— 4/6 个有
+- `CR Text Concatenate` —— 2/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/6 个有
 
 ## 典型参数
 

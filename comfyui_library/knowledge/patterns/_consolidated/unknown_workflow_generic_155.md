@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_155
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.879786
-common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.659583
+common_nodes: [JjkText, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/G PT-image 2 文生图_2047138828355375106.json, 图片生成/文生图/G-2.0-文生图-低价渠道版_2055543404574068738.json, 图片生成/文生图/G-2文生图_2066869087967465473.json, 图片生成/文生图/G-P-T 2 文生图_2046717919031201793.json, 图片生成/文生图/G-image+2+文生图-低价渠道版_2047193301115215873.json, 图片生成/文生图/G-image-2-文生图-低价渠道版_2054057457269395457.json, 图片生成/文生图/G-image2低价版文生图_2087387744153718785.json, 图片生成/文生图/G2 文生图 低价版_2068303970501746689.json, 图片生成/文生图/G2文生图_2050785668636389377.json, 图片生成/文生图/Image 2图像最强模型文生图_2049703457665327105.json, 图片生成/文生图/RH 万相3.0-图生视频_2046775087558299649.json, 图片生成/文生图/RH封面制作 同时出中英文封面_2052576650784714753.json, 图片生成/文生图/全能图像G 2.0 文生图 全能图片G image 2.0_2046787294027325441.json, 图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片Gimage2.0_2046905073803993089.json]
+members: [图片生成/文生图/API 全能图片编辑 Pro 4k 多图编辑_1991694187288686593.json, 图片生成/文生图/Nano 全能图片V1 2 Pro改尺寸比例拓图_1992878092253286401.json, 图片生成/文生图/全能图片 Pro 分镜设计_2015071733652398081.json, 图片生成/文生图/全能图片 Pro 首尾帧设计_2013605074479620097.json, 图片生成/文生图/全能图片 Pro_2046181217166430210.json, 图片生成/文生图/全能图片V1 2 & Pro_1991670805503418370.json, 图片生成/文生图/全能图片V1 Pro文生图_1999318602018942977.json, 图片生成/文生图/图片生成_2020685230981521410.json, 图片生成/文生图/文生图_2003028258058846209.json, 图片生成/文生图/漫剧   场景  2_2001912172391329793.json, 图片生成/文生图/漫剧   角色  2_2001263681361113089.json, 图片生成/文生图/飞哥·香蕉2漫剧制作-角色_场景_2007302152376557570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_155
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/G PT-image 2 文生图_2047138828355375106.json、图片生成/文生图/G-2.0-文生图-低价渠道版_2055543404574068738.json、图片生成/文生图/G-2文生图_2066869087967465473.json、图片生成/文生图/G-P-T 2 文生图_2046717919031201793.json、图片生成/文生图/G-image+2+文生图-低价渠道版_2047193301115215873.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/API 全能图片编辑 Pro 4k 多图编辑_1991694187288686593.json、图片生成/文生图/Nano 全能图片V1 2 Pro改尺寸比例拓图_1992878092253286401.json、图片生成/文生图/全能图片 Pro 分镜设计_2015071733652398081.json、图片生成/文生图/全能图片 Pro 首尾帧设计_2013605074479620097.json、图片生成/文生图/全能图片 Pro_2046181217166430210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `RH_RhartImageG2TextToImage`
+全部 12 个 workflow 都包含：
+- `JjkText`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/14 个有
-- `CompressImages` —— 1/14 个有
-- `StringConcatenate` —— 1/14 个有
+- `LoadImage` —— 6/12 个有
+- `PrimitiveInt` —— 3/12 个有
 
 ## 典型参数
 

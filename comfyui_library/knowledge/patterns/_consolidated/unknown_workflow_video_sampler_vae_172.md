@@ -1,51 +1,51 @@
 ---
 name: unknown_workflow_video_sampler_vae_172
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.9145
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.913667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json, 视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json, 视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json, 视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json]
+members: [视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json, 视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json, 视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json、视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json、视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json、视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/wan 文生视频，搭配梵高油画风格lora_1906626628410068994.json、视频生成/文生视频/wan2.1-FusionX-图生视频  (文生视频)_1934618185205522434.json、视频生成/文生视频/文生视频_Wan_T2V_nightly_1913149731756015618.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 3/4 个有
-- `WanVideoExperimentalArgs` —— 3/4 个有
-- `WanVideoSLG` —— 3/4 个有
-- `WanVideoLoraSelect` —— 2/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `LoadAndResizeImage` —— 1/4 个有
-- `Note _O` —— 1/4 个有
-- `WanVideoImageToVideoEncode` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `WanVideoVRAMManagement` —— 1/4 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `LoadAndResizeImage` —— 1/3 个有
+- `Note _O` —— 1/3 个有
+- `WanVideoImageToVideoEncode` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `WanVideoVRAMManagement` —— 1/3 个有
 
 ## 典型参数
 

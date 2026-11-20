@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_vae_168
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.75825
-common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.863333
+common_nodes: [ADE_CameraPoseBasic, CameraPoseVisualizer, INTConstant, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/抖音蜜蜂宝宝_1933541518860800001.json, 视频生成/图生视频/抖音骑上我心爱的小摩托_1933704774371954690.json, 视频生成/文生视频/WAN_FusionX_LoRa_文图生视频_1943843153860497410.json, 视频生成/文生视频/【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_1918878513657479170.json]
+members: [视频生成/图生视频/【💫书墨】Fun Control Camera视频运镜_1917932586730196994.json, 视频生成/图生视频/万相运镜控制图生视频 Fun Camera_1924473517754994690.json, 视频生成/文生视频/最新阿里Wan2.1图生视频运镜控制_1929007015320829954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_168
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/抖音蜜蜂宝宝_1933541518860800001.json、视频生成/图生视频/抖音骑上我心爱的小摩托_1933704774371954690.json、视频生成/文生视频/WAN_FusionX_LoRa_文图生视频_1943843153860497410.json、视频生成/文生视频/【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_1918878513657479170.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【💫书墨】Fun Control Camera视频运镜_1917932586730196994.json、视频生成/图生视频/万相运镜控制图生视频 Fun Camera_1924473517754994690.json、视频生成/文生视频/最新阿里Wan2.1图生视频运镜控制_1929007015320829954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
+全部 3 个 workflow 都包含：
+- `ADE_CameraPoseBasic`
+- `CameraPoseVisualizer`
+- `INTConstant`
+- `ImageConcatMulti`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoFunCameraEmbeds`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `MathExpression|pysssss` —— 3/4 个有
-- `WanVideoEnhanceAVideo` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `WanVideoEmptyEmbeds` —— 2/4 个有
-- `WanVideoExperimentalArgs` —— 2/4 个有
-- `WanVideoVRAMManagement` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `LayerUtility: TextBox` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
 
 ## 典型参数
 

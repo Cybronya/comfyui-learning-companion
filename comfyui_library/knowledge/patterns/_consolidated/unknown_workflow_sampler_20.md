@@ -1,46 +1,40 @@
 ---
 name: unknown_workflow_sampler_20
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.856
-common_nodes: [EligenArgsConcat, LoadImage, LoadQwenImageDiffSynthiPipe, MaskToImage, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetEligenArgs]
+coverage: 0.924
+common_nodes: [ImageConcanate, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json, 图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json, 图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json, 图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json, 图片生成/文生图/Qwen千问Eligen自由设计画布_1954024086618066945.json, 图片生成/文生图/指哪画哪！Qwen-Image自由画布eligen_1955738055426674689.json]
+members: [图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json, 图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json, 图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json, 图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json, 图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json, 图片生成/图生图/极速版-UniWorld吉卜力风格转绘工作流_1931046093231206402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Eligen自由画布工作流48GB显存版要点“运行Plus”_1953929861947805698.json、图片生成/文生图/Eligen自由画布工作流_1955090857663893506.json、图片生成/文生图/Qwen-Image-EliGen 日拱一卒 封面生成_1958077760537317377.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V1_1954036823100313601.json、图片生成/文生图/Qwen-Image-EliGen自由画布工作流V2（贞贞lora版）_1954578900275884034.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json、图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json、图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json、图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json、图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `EligenArgsConcat`
+全部 6 个 workflow 都包含：
+- `ImageConcanate`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `MaskToImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
-- `SetEligenArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImageRatio2Size` —— 6/7 个有
-- `LoadQwenImageDiffSynthLora` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `CR Text` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `SetMultiEligenArgs` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `CR Prompt Text` —— 5/6 个有
+- `PDIMAGE_LongerSize` —— 5/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,36 +1,44 @@
 ---
 name: unknown_workflow_generic_780
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [IndexTTSNode, LoadAudio, SaveAudio]
+coverage: 0.35825
+common_nodes: [CR Text, DapaoGPTImage2AllroundNode, LoadImage, Note Plus (mtb), PrimitiveString, SaveImage, Seed (rgthree), easy showAnything, 孤海注释]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS1.0_1931991655790870530.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json, 音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json, 音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json]
+members: [图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2098970285230874626.json, 图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2100166199358349313.json, 图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json, 图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_780
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS1.0_1931991655790870530.json、音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json、音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json、音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json、音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2098970285230874626.json、图片生成/图生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2100166199358349313.json、图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json、图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `IndexTTSNode`
-- `LoadAudio`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `DapaoGPTImage2AllroundNode`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `PrimitiveString`
+- `SaveImage`
+- `Seed (rgthree)`
+- `easy showAnything`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 3/5 个有
-- `Primitive string [Crystools]` —— 2/5 个有
-- `PreviewAudio` —— 1/5 个有
+- `DapaoBatchImageGrid` —— 3/4 个有
+- `DapaoDetailFlowPromptNode` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `DapaoVisualStylePromptNode` —— 1/4 个有
 
 ## 典型参数
 

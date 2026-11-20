@@ -1,37 +1,47 @@
 ---
 name: unknown_workflow_generic_688
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.76
-common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.677
+common_nodes: [HAIGC_LoadImagesFromZip, HAIGC_SaveImagesToZip, ImageScaleToTotalPixels, PreviewImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json, 图片生成/图生图/分镜三人_2029364786164666370.json, 图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json, 图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json, 图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json]
+members: [图片生成/反推提示词/Qwen3.5_图片批量打标_2037249054605844482.json, 图片生成/反推提示词/qwen3.5批量快速批量打标_2042200295891017730.json, 图片生成/反推提示词/图片批量打标_2041441041722646530.json, 图片生成/文生图/图片批量打标_2034228470494011393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_688
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json、图片生成/图生图/分镜三人_2029364786164666370.json、图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json、图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json、图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Qwen3.5_图片批量打标_2037249054605844482.json、图片生成/反推提示词/qwen3.5批量快速批量打标_2042200295891017730.json、图片生成/反推提示词/图片批量打标_2041441041722646530.json、图片生成/文生图/图片批量打标_2034228470494011393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RHHiddenNodes`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `HAIGC_LoadImagesFromZip`
+- `HAIGC_SaveImagesToZip`
+- `ImageScaleToTotalPixels`
+- `PreviewImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `JWImageFlip` —— 1/5 个有
+- `PreviewAny` —— 3/4 个有
+- `RH_BatchImages` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `AILab_QwenVL` —— 2/4 个有
+- `llama_cpp_instruct_adv` —— 2/4 个有
+- `llama_cpp_model_loader` —— 2/4 个有
+- `llama_cpp_parameters` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `RHBatchImages:` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,57 +3,61 @@ name: unknown_workflow_video_sampler_clip_282
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9515
-common_nodes: [FaceAnalysisModels, FaceBoundingBox, ImageConcanate, ImagePadForOutpaint, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: LaMa, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageConcat]
+coverage: 0.887
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptyHunyuanLatentVideo, Florence2ModelLoader, Florence2Run, FluxGuidance, GetImageSizeAndCount, HunyuanImageToVideo, ImageBatch, ImageFromBatch, KSamplerSelect, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, String, Text Concatenate, Text Find and Replace, TextEncodeHunyuanVideo_ImageToVideo, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json, 视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json]
+members: [视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905235717641916417.json, 视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905625750312259585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_282
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json、视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905235717641916417.json、视频生成/文生视频/HunYuan_无限时长工作流_文生视频+图生视频(10秒)_1905625750312259585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
-- `ImageConcanate`
-- `ImagePadForOutpaint`
-- `ImageToMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: LaMa`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `GetImageSizeAndCount`
+- `HunyuanImageToVideo`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
 - `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `String`
+- `Text Concatenate`
+- `Text Find and Replace`
+- `TextEncodeHunyuanVideo_ImageToVideo`
 - `TextInput_`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy imageConcat`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoTeaCache` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `SaveAnimatedWEBP` —— 1/2 个有
 
 ## 典型参数
 

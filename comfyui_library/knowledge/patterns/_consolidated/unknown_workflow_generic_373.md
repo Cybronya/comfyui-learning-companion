@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_373
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.7685
-common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
+coverage: 0.923857
+common_nodes: [CR Text, Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
+members: [图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json, 图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json, 图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json, 图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json, 图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json, 图片生成/图生图/一键换装Seedream-v5-pro 服装迁移 局部重绘  人物模特服饰换装 换装换脸 高度一致风_2075423755916103682.json, 图片生成/图生图/换脸换装 全能图片 图生图 高质量版_2099308533576716290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_373
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json、图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json、图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json、图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json、图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `LayerUtility: PurgeVRAM`
-- `LongCatImageModelLoader`
-- `LongCatImageTextToImage`
+全部 7 个 workflow 都包含：
+- `CR Text`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 7/8 个有
-- `LoadImage` —— 2/8 个有
+- `RH_SeedreamV5ProImageToImage` —— 5/7 个有
+- `图像缩放V2_孤海` —— 5/7 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
 
 ## 典型参数
 

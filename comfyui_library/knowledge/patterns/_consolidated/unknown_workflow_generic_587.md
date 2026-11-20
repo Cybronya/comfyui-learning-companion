@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_587
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.639667
-common_nodes: [JjkText, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.8934
+common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
 problems: []
 missing: []
-members: [图片生成/图生图/角色雕塑_1966709018846801921.json, 图片生成/文生图/-全能图片V1 现任最强编辑工具_1960902587279183873.json, 图片生成/文生图/全能图片V1人物卡通形象同框_1966482684086267906.json, 图片生成/文生图/全能图片V1包装设计_1961061276023767042.json, 图片生成/文生图/🦖香蕉改图（全能图片V1，默认手办）_1960521014704861186.json, 平台全量/电商一键生成人物手办  全能图片V1_1963078305450799106.json]
+members: [图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json, 图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_587
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/角色雕塑_1966709018846801921.json、图片生成/文生图/-全能图片V1 现任最强编辑工具_1960902587279183873.json、图片生成/文生图/全能图片V1人物卡通形象同框_1966482684086267906.json、图片生成/文生图/全能图片V1包装设计_1961061276023767042.json、图片生成/文生图/🦖香蕉改图（全能图片V1，默认手办）_1960521014704861186.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json、图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json、图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JjkText`
-- `RH_Nano_Banana_Image2Image`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
 - `SaveImage`
+- `Seedance_Config`
+- `Zhenzhen_Image_G25_Lowprice`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `CR Text Replace` —— 1/6 个有
+- `LoadImage` —— 3/5 个有
 
 ## 典型参数
 

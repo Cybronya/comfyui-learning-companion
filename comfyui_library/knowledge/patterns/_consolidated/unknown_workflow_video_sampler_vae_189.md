@@ -1,79 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_189
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.629
-common_nodes: [Anything Everywhere, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, GetImageSizeAndCount, GetNode, ImageCASharpening+, ImageResize+, Int, LayerColor: Brightness & Contrast, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, OpenposePreprocessor, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+frequency: 2
+level: weak
+coverage: 0.976
+common_nodes: [GetImageSize+, ImagePadKJ, ImageResizeKJ, LoadWanVideoT5TextEncoder, MaskToImage, String Literal, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json, 视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json, 视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json]
+members: [视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json, 视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_189
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json、视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json、视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json、视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `ColorCorrectOfUtils`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `LayerColor: Brightness & Contrast`
-- `LoadImage`
+全部 2 个 workflow 都包含：
+- `GetImageSize+`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `OpenposePreprocessor`
-- `SetNode`
-- `ShowText|pysssss`
+- `MaskToImage`
+- `String Literal`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Integer To String` —— 2/3 个有
-- `CR String To Number` —— 2/3 个有
-- `FluxResolutionNode` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `WanVideoSetBlockSwap` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
+- `GetNode` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoSetLoRAs` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 
@@ -85,4 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

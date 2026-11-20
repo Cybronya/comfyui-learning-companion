@@ -3,72 +3,65 @@ name: unknown_workflow_lora_sampler_unet_332
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5605
-common_nodes: [CFGNorm, CLIPLoader, ColorCorrect, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8375
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Text Multiline, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy saveVideo]
+problems: []
 missing: []
-members: [图片生成/图生图/Work-Fisher-白底图生场景+重新打光_1985012681621065730.json, 平台全量/Work-Fisher-白底图生场景+重新打光_1984495690501996546.json]
+members: [视频生成/图生视频/无限长视频生成 1 开头 Minimax H3_2091358451745251329.json, 视频生成/图生视频/无限长视频生成 2 延长 Minimax H3_2091357546257932290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_332
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Work-Fisher-白底图生场景+重新打光_1985012681621065730.json、平台全量/Work-Fisher-白底图生场景+重新打光_1984495690501996546.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/无限长视频生成 1 开头 Minimax H3_2091358451745251329.json、视频生成/图生视频/无限长视频生成 2 延长 Minimax H3_2091357546257932290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGNorm`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ColorCorrect`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `ComfyMathExpression`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `Text Multiline`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `easy cleanGpuUsed`
+- `easy saveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: SegmentAnythingUltra V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RMBG` —— 1/2 个有
-- `SDMatteApply` —— 1/2 个有
+- `MiniMaxH3MotionContext` —— 1/2 个有
+- `MiniMaxH3MotionContextTrim` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

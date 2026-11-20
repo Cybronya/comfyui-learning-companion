@@ -3,37 +3,43 @@ name: unknown_workflow_sampler_31
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9714
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
+coverage: 0.8906
+common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, OmniVoiceWhisperLoader, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/反推提示词/szr_2046244663052472322.json, 视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json, 视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json]
+members: [数字人/数字人/音色克隆_2064891468476669953.json, 音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json, 音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json, 音频生成/音频生成/【遇见AI】OmniVoice-TTS语音模型，声音克隆，长语音，声音设计，多人对话，支持方言_2043639883255783425.json, 音频生成/音频生成/超绝音色克隆 OmniVoice-TTS_2041735213079859201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_31
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/szr_2046244663052472322.json、视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json、视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json、视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json、视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/音色克隆_2064891468476669953.json、音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json、音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json、音频生成/音频生成/【遇见AI】OmniVoice-TTS语音模型，声音克隆，长语音，声音设计，多人对话，支持方言_2043639883255783425.json、音频生成/音频生成/超绝音色克隆 OmniVoice-TTS_2041735213079859201.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
-- `SaveVideo`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceMultiSpeakerTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `OmniVoiceWhisperLoader`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/5 个有
-- `IndexTTS2_Emotion` —— 1/5 个有
-- `ZML_AnyTypeSwitchFiveBoolean` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `PreviewAudio` —— 4/5 个有
+- `TrimAudio` —— 3/5 个有
+- `YC_SingleTextNode` —— 3/5 个有
+- `YC_textReplaceNode` —— 3/5 个有
+- `MelBandRoFormerModelLoader` —— 2/5 个有
+- `MelBandRoFormerSampler` —— 2/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 

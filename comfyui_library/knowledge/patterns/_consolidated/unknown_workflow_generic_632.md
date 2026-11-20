@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_632
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.804667
-common_nodes: [Apply Whisper, AudioSeparation, LoadAudio, SaveAudio, SoundFlow_TrimAudio, VoxCPM_TTS]
+coverage: 0.9142
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json, 音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json, 音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json, 音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json, 音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json]
+members: [视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json, 视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json, 视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json, 视频生成/文生视频/Seedance2.0全能参考_ 图_音_文_视频生视频_2045121809271496706.json, 视频生成/文生视频/Seedance图生视频+全节点注释_2055483674128338946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_632
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json、音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json、音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json、音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json、音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json、视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json、视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json、视频生成/文生视频/Seedance2.0全能参考_ 图_音_文_视频生视频_2045121809271496706.json、视频生成/文生视频/Seedance图生视频+全节点注释_2055483674128338946.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioSeparation`
-- `LoadAudio`
-- `SaveAudio`
-- `SoundFlow_TrimAudio`
-- `VoxCPM_TTS`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `LayerUtility: TextBox` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `RHSettingsNode` —— 1/5 个有
+- `TextBoxMira` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,57 +3,50 @@ name: unknown_workflow_video_lora_sampler_1012
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, ComfyMathExpression, ComfyNumberConvert, Float, ImageResizeKJv2, Int, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.732
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, GetNode, JjkText, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PrimitiveFloat, RandomSeedNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 忽略多组孤海]
 problems: []
 missing: []
-members: [数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json, 视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json]
+members: [视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096894819447697410.json, 视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096916840424497154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1012
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json、视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096894819447697410.json、视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096916840424497154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+- `BasicGuider`
+- `CLIPLoader`
 - `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `Float`
-- `ImageResizeKJv2`
-- `Int`
+- `GetNode`
+- `JjkText`
 - `LoadAudio`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
-- `TrimAudioDuration`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
+- `PrimitiveFloat`
+- `RandomSeedNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `SolAttnMiniMax`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `ReplaceVideoLatentFrames` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy indexAnything` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
+- `忽略多组孤海`
 
 ## 典型参数
 

@@ -1,80 +1,66 @@
 ---
 name: image_to_image_upscale_sampler_clip_34
 type: Image To Image
-frequency: 4
-level: strong
-coverage: 0.7335
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR Image Grid Panel, CR Prompt List, CheckpointLoaderSimple, GetNode, ImageListToImageBatch, ImageScaleBy, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoadImage, ModelPassThrough, ModelSamplingAuraFlow, PreviewImage, SaveImage, SetNode, TextEncodeQwenImageEdit, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.920333
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ImageUpscaleWithModel, KSampler, LoadImage, PreviewImage, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [图片生成/图生图/02-06-02-QwenEdit-生成多场景生成人物一致性数据集_1987548453649715202.json, 图片生成/图生图/人物写实-一致性-多角度_1973156772745711618.json, 图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json, 图片生成/文生图/Qwen_Image_一脸一致性(LoRA训练数据集首选)_1960360967525773313.json]
+members: [图片生成/图生图/一张图的百变风格_1805176859603755010.json, 图片生成/图生图/图生图+高清修复_1865926491224621057.json, 图片生成/图生图/图生图+高清修复_2030924373321846786.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_34
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/02-06-02-QwenEdit-生成多场景生成人物一致性数据集_1987548453649715202.json、图片生成/图生图/人物写实-一致性-多角度_1973156772745711618.json、图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json、图片生成/文生图/Qwen_Image_一脸一致性(LoRA训练数据集首选)_1960360967525773313.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一张图的百变风格_1805176859603755010.json、图片生成/图生图/图生图+高清修复_1865926491224621057.json、图片生成/图生图/图生图+高清修复_2030924373321846786.json）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Image Grid Panel`
-- `CR Prompt List`
 - `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageListToImageBatch`
-- `ImageScaleBy`
-- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
 - `KSampler`
 - `LoadImage`
-- `ModelPassThrough`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEdit`
-- `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Lora Loader Stack (rgthree)` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
+- `RepeatLatentBatch` —— 2/3 个有
+- `CannyEdgePreprocessor` —— 1/3 个有
+- `ControlNetApply` —— 1/3 个有
+- `ControlNetLoader` —— 1/3 个有
+- `DepthAnythingPreprocessor` —— 1/3 个有
+- `SDXLPromptStyler` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_2s | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 3 | 87% |
+| 采样算法 | euler_ancestral | - | 3 | 100% |
+| 调度器 | normal | - | 3 | 100% |
+| 重绘幅度 | 0.45 | 0.15 - 0.8 | 3 | 43% |
+| ControlNet 权重 | 0.7 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
+- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
+- 调度器 最常用 normal，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.45，观测区间 0.15 - 0.8，3 个样本，取值分散，一致性仅 43%

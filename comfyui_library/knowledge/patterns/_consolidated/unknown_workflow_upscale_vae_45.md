@@ -1,45 +1,54 @@
 ---
 name: unknown_workflow_upscale_vae_45
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.8445
-common_nodes: [BOOLConstant, ComfyUI_Image_Round__ImageCropAdvanced, DisplayAny, DualCLIPLoader, GetImageSize, ImageUpscaleWithModel, JoinStrings, KOOK_SaveJPGImage, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SimpleMath+, Text Input [Dream], UpscaleModelLoader, VAELoader, easy ifElse, easy imageSplitGrid]
+frequency: 2
+level: weak
+coverage: 0.7645
+common_nodes: [Fast Groups Bypasser (rgthree), IfInnerExecute, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleComparison+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json, 图片生成/图生图/配饰工作流_2076518830742007809.json, 平台全量/电商服装工作流6组动作_2083444257926508546.json, 平台全量/配饰工作流_2074869171187437569.json]
+members: [图片生成/图生图/SeedVR2+TTP无损高清放大8k（RH批量版）_2050833550534029314.json, 图片生成/图生图/SeedVR2+TTP无损高清放大_2045402007468511234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_45
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json、图片生成/图生图/配饰工作流_2076518830742007809.json、平台全量/电商服装工作流6组动作_2083444257926508546.json、平台全量/配饰工作流_2074869171187437569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2+TTP无损高清放大8k（RH批量版）_2050833550534029314.json、图片生成/图生图/SeedVR2+TTP无损高清放大_2045402007468511234.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BOOLConstant`
-- `ComfyUI_Image_Round__ImageCropAdvanced`
-- `DisplayAny`
-- `DualCLIPLoader`
-- `GetImageSize`
-- `ImageUpscaleWithModel`
-- `JoinStrings`
-- `KOOK_SaveJPGImage`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SimpleMath+`
-- `Text Input [Dream]`
-- `UpscaleModelLoader`
-- `VAELoader`
-- `easy ifElse`
-- `easy imageSplitGrid`
+全部 2 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `IfInnerExecute`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SimpleComparison+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
+
+**可变部分**（部分 workflow 才有）：
+- `Bjornulf_ShowText` —— 1/2 个有
+- `HAIGC_LoadImagesFromZip` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `SelectImageList` —— 1/2 个有
+- `easy forLoopEnd` —— 1/2 个有
+- `easy forLoopStart` —— 1/2 个有
+- `easy imageCount` —— 1/2 个有
 
 ## 典型参数
 
@@ -51,4 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

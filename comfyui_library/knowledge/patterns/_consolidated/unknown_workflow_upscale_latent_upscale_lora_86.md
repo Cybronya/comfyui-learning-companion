@@ -3,65 +3,56 @@ name: unknown_workflow_upscale_latent_upscale_lora_86
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9585
-common_nodes: [BasicGuider, BasicScheduler, CreateVideo, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, 孤海注释]
+coverage: 0.758
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [平台全量/H3参考轨迹路径运镜工作流_2092260569507254273.json, 视频生成/文生视频/那颗星星 _ MinimaxH3 二采潜空间放大 极简版_2089560595371745281.json]
+members: [视频生成/图生视频/四只兔子_H3_高动态双采放大专属_2096882401648668673.json, 视频生成/文生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2095962479263309826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_86
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/H3参考轨迹路径运镜工作流_2092260569507254273.json、视频生成/文生视频/那颗星星 _ MinimaxH3 二采潜空间放大 极简版_2089560595371745281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/四只兔子_H3_高动态双采放大专属_2096882401648668673.json、视频生成/文生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2095962479263309826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyOutput`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SplitSigmas`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `孤海注释`
+- `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `GetLatentSizeAndCount` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3EasyLoader` —— 1/2 个有
-- `MiniMaxH3EasyModelAdapter` —— 1/2 个有
-- `MiniMaxH3EasySecondPassConditioning` —— 1/2 个有
-- `MiniMaxLowVRAMAttention` —— 1/2 个有
-- `ModelPreviewOverrideKJ` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `easy loraStack` —— 1/2 个有
+- `easy loraStackApply` —— 1/2 个有
 
 ## 典型参数
 

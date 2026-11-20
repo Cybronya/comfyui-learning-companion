@@ -1,39 +1,49 @@
 ---
 name: unknown_workflow_generic_1058
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.448
-common_nodes: [AudioCrop, CR Text, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.568667
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, Comfly_sora2_character, Fast Groups Bypasser (rgthree), LoadImage, MuyeLoadImage, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana_Image2Image, RH_Sora2_T2V, RH_Translator, SaveVideo, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json, 音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json]
+members: [图片生成/图生图/自己用：全能视频S创建角色_2008099306938568705.json, 视频生成/图生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json, 视频生成/文生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1058
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json、音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/自己用：全能视频S创建角色_2008099306938568705.json、视频生成/图生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json、视频生成/文生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `CR Text`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2`
+- `Comfly_sora2_character`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `MuyeLoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Sora2_T2V`
+- `RH_Translator`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `RH_IndexTTS25_Loader` —— 2/4 个有
-- `RH_IndexTTS25_Synthesize` —— 2/4 个有
+- `preview_text` —— 2/3 个有
+- `RH_Sora2_I2V` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

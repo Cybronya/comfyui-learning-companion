@@ -1,43 +1,35 @@
 ---
 name: unknown_workflow_generic_332
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.848667
-common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, SaveAudio, ShowText|pysssss]
+coverage: 0.825
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json, 音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json, 音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json, 音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033118250942337025.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033509490481434625.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆_2034064881514717186.json, 音频生成/音频生成/FishAudioS2全家桶（语音生成、克隆、对话）_2039554342889459713.json]
+members: [视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json, 视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json, 视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json, 视频生成/图生视频/图生视频 修改局部_1991867400045875201.json, 视频生成/图生视频/开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_1998420316537913346.json, 视频生成/图生视频/最新即梦图生视频3.0 PRO 图生视频 API调用 无水印_1994588476685361153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_332
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json、音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json、音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json、音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json、音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json、视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json、视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json、视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json、视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `FishS2VoiceCloneTTS`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 6/9 个有
-- `easy cleanGpuUsed` —— 4/9 个有
-- `FishS2MultiSpeakerTTS` —— 3/9 个有
-- `FishS2TTS` —— 3/9 个有
-- `AudioCrop` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Textbox` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `RH_Jimeng_Image2Video_V2` —— 5/8 个有
+- `RH_RhartVideoGImageToVideo` —— 3/8 个有
 
 ## 典型参数
 

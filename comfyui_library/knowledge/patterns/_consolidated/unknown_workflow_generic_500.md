@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_500
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.825429
-common_nodes: [RH_Sora2_T2V, SaveVideo]
+coverage: 0.806833
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH 全能视频S Text to Video文生视频_1988598374855262209.json, 视频生成/文生视频/【阡陌】全能视频S高清文生视频每日免费5次，超过0.05元_次_1976562597690515457.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json, 视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json, 视频生成/文生视频/文生视频-RH 全能视频S Text to Video_1993696214761799682.json, 视频生成/文生视频/最简洁的全能视频S 文生视频工作流 支持横_竖屏_2005119650105098242.json, 视频生成/文生视频/梭罗2稳定版全能视频S文生视频0.08元每次_2036026472900599809.json]
+members: [数字人/数字人/可灵v2.6动作控制Klingv2.6+动作模仿+动作迁移+对口型_2029093246118400002.json, 视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json, 视频生成/图生视频/MiniMax H3全能参考视频（动作迁移）+全节点注释_2084857078455291906.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083532806159953921.json, 视频生成/图生视频/可灵 v2.6 Motion Control_2018215664321830914.json, 视频生成/图生视频/可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高难度动作画面细节听指令_2054007288427499522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_500
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频S Text to Video文生视频_1988598374855262209.json、视频生成/文生视频/【阡陌】全能视频S高清文生视频每日免费5次，超过0.05元_次_1976562597690515457.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1974991117479489537.json、视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json、视频生成/文生视频/文生视频-RH 全能视频S Text to Video_1993696214761799682.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/可灵v2.6动作控制Klingv2.6+动作模仿+动作迁移+对口型_2029093246118400002.json、视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json、视频生成/图生视频/MiniMax H3全能参考视频（动作迁移）+全节点注释_2084857078455291906.json、视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083532806159953921.json、视频生成/图生视频/可灵 v2.6 Motion Control_2018215664321830914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_Sora2_T2V`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/7 个有
-- `CR Text` —— 4/7 个有
-- `TextInput_` —— 1/7 个有
+- `RH_Kling26_MotionControl` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 2/6 个有
 
 ## 典型参数
 

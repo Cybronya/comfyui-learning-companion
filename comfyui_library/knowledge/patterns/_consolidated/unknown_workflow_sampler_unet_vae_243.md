@@ -1,68 +1,56 @@
 ---
 name: unknown_workflow_sampler_unet_vae_243
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: strong
-coverage: 0.9622
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.91125
+common_nodes: [CLIPLoader, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/卡通3d中国美食生成_1929220483173224450.json, 图片生成/反推提示词/反推后出图_1954531331520786433.json, 图片生成/图生图/ai滤镜应用版_1985270833641832449.json, 图片生成/图生图/照片转全能图片G-4o卡通人像形象丨一键在线运行_1911405677586149377.json, 图片生成/文生图/反推提示词+在线生图v1.0_1946032541281251330.json]
+members: [图片生成/图生图/Qwen2.1图像编辑【透明图专用】_2103544673385140226.json, 图片生成/图生图/Qwen_2.1_角色替换_换人_2114261197271953410.json, 图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json, 图片生成/图生图/qwen-image-2.1多图编辑_2102013603833532417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_243
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/卡通3d中国美食生成_1929220483173224450.json、图片生成/反推提示词/反推后出图_1954531331520786433.json、图片生成/图生图/ai滤镜应用版_1985270833641832449.json、图片生成/图生图/照片转全能图片G-4o卡通人像形象丨一键在线运行_1911405677586149377.json、图片生成/文生图/反推提示词+在线生图v1.0_1946032541281251330.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen2.1图像编辑【透明图专用】_2103544673385140226.json、图片生成/图生图/Qwen_2.1_角色替换_换人_2114261197271953410.json、图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json、图片生成/图生图/qwen-image-2.1多图编辑_2102013603833532417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
-- `Joy_caption_two_advanced`
-- `Joy_caption_two_load`
-- `Joy_extra_options`
-- `KSamplerSelect`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `KSampler`
 - `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 4/5 个有
-- `CLIPTextEncode` —— 3/5 个有
-- `DisplayText` —— 3/5 个有
-- `LayerUtility: TextJoin` —— 3/5 个有
-- `LoraLoader` —— 3/5 个有
-- `TextInput_` —— 3/5 个有
-- `CLIPTextEncodeFlux` —— 2/5 个有
-- `ImageResize+` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `CR Latent Batch Size` —— 1/5 个有
-- `DifferentialDiffusion` —— 1/5 个有
-- `Joy_caption_alpha_load` —— 1/5 个有
-- `Joy_caption_alpha_run` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
+- `PreviewImage` —— 2/4 个有
+- `SaveImageAdvanced` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `StringConcatenate` —— 1/4 个有
+- `StringConstantMultiline` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 720 - 1024 | 4 | 86% |
-| 高度 | 1024 | 720 - 1400 | 4 | 77% |
-| LoRA 模型强度 | 1 | 0.8 - 1 | 3 | 90% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 32.5 | 25 - 40 | 4 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -70,7 +58,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 720 - 1024，4 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 720 - 1400，4 个样本
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，3 个样本，取值集中（一致性 90%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 32.5，观测区间 25 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

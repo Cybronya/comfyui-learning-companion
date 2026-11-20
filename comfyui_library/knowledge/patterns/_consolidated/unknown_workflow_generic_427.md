@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_generic_427
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.908429
-common_nodes: [LayerUtility: TextBox, LoadImage, RH_RhartImageNProEdit, SaveImage]
+coverage: 0.678667
+common_nodes: [LoadImage, RH_Captioner_Pro]
 problems: []
 missing: []
-members: [图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json, 图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json, 图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json, 图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json, 图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json, 图片生成/图生图/全能图片g-image2去脏去噪修复_2098791212693155841.json, 平台全量/G-image2+去脏去噪 图片去除Ai感 参考洗图 反推洗图重绘 放大保留细节_2069598641760849922.json]
+members: [图片生成/反推提示词/Gemini提示词方案优化_2045423060362207234.json, 图片生成/反推提示词/Qwen3-VL-Plus图片反推提示词（0.02元一次）保存TXT-CSV格式_1979383002444763138.json, 图片生成/反推提示词/Qwen3反推图片提示词工作流_1980220401861222402.json, 图片生成/反推提示词/gemini-3-pro 图像反推 【公式版】_1900281320290004993.json, 图片生成/文生图/gemini-3-pro 图像反推 + 全能图片G2.0 【公式版】_1922305291264675842.json, 图片生成/文生图/全能图片2.0高质量洗图——gemini-3-pro 图像反推0.1元1张图_2053377949067431937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_427
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json、图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json、图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json、图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json、图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/Gemini提示词方案优化_2045423060362207234.json、图片生成/反推提示词/Qwen3-VL-Plus图片反推提示词（0.02元一次）保存TXT-CSV格式_1979383002444763138.json、图片生成/反推提示词/Qwen3反推图片提示词工作流_1980220401861222402.json、图片生成/反推提示词/gemini-3-pro 图像反推 【公式版】_1900281320290004993.json、图片生成/文生图/gemini-3-pro 图像反推 + 全能图片G2.0 【公式版】_1922305291264675842.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LayerUtility: TextBox`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageNProEdit`
-- `SaveImage`
+- `RH_Captioner_Pro`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 5/7 个有
-- `ImageCompare` —— 4/7 个有
-- `孤海注释` —— 1/7 个有
+- `easy saveText` —— 5/6 个有
+- `JjkText` —— 4/6 个有
+- `ShowText|pysssss` —— 4/6 个有
+- `CR Text Replace` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `AspectRatioSelect` —— 2/6 个有
+- `RH_RhartImageG2TextToImage` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `AIO_Preprocessor` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_RhartImageG2ImageToImage` —— 1/6 个有
 
 ## 典型参数
 

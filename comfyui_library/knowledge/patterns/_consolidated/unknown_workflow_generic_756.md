@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_756
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7754
-common_nodes: [LoadImage, Qwen3_VQA, RH_Translator, SaveVideo, Text Multiline, easy anythingIndexSwitch]
+coverage: 0.7535
+common_nodes: [Fast Groups Muter (rgthree), LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容-分镜提示词一键生成_1998768118094778370.json, 视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容简单提示词_1998768343349911554.json, 视频生成/图生视频/Video3 静态产品图片转化为专业的视频广告内容-自动提示词版本一键生成+全节点注释_1998761612855140353.json, 视频生成/图生视频/全能视频V3.1 静态产品图片转化为专业的视频广告内容-自动提示词版_1999153411486609410.json, 视频生成/图生视频/全能视频V3.1+静态产品图片转化为专业的视频广告内容_1999312879121821697.json]
+members: [图片生成/图生图/全能图片V1 Pro 万物迁移_一致性姿势_1991525969649418242.json, 图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json, 图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json, 图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_756
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容-分镜提示词一键生成_1998768118094778370.json、视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容简单提示词_1998768343349911554.json、视频生成/图生视频/Video3 静态产品图片转化为专业的视频广告内容-自动提示词版本一键生成+全节点注释_1998761612855140353.json、视频生成/图生视频/全能视频V3.1 静态产品图片转化为专业的视频广告内容-自动提示词版_1999153411486609410.json、视频生成/图生视频/全能视频V3.1+静态产品图片转化为专业的视频广告内容_1999312879121821697.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro 万物迁移_一致性姿势_1991525969649418242.json、图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json、图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json、图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
 - `LoadImage`
-- `Qwen3_VQA`
-- `RH_Translator`
-- `SaveVideo`
-- `Text Multiline`
-- `easy anythingIndexSwitch`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 4/5 个有
-- `RH_Grok_Video3` —— 2/5 个有
-- `RH_Veo3_Image2Video` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `RH_RhartVideoGImageToVideo` —— 1/5 个有
+- `CR Prompt Text` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
 
 ## 典型参数
 

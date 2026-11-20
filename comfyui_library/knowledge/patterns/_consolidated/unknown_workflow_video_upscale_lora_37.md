@@ -3,98 +3,46 @@ name: unknown_workflow_video_upscale_lora_37
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.532
-common_nodes: [AILab_Preview, BlockifyMask, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, DrawMaskOnImage, GIMMVFI_interpolate, GetImageSizeAndCount, GetNode, GrowMask, GrowMaskWithBlur, INTConstant, ImageBatchRepeatInterleaving, ImageBlend, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageScaleBy, ImageScaleToMaxDimension, ImageToMask, LoadImage, LoadSAM3Model, LoadWanVideoT5TextEncoder, MaskToImage, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewAny, SAM3Segmentation, SeCModelLoader, SeCVideoSegmentation, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SimpleCalculatorKJ, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy boolean, easy compare, easy ifElse, easy int, easy lengthAnything, easy mathInt]
+coverage: 0.844
+common_nodes: [BlockSparseAttention, CLIPLoader, GH_AudioVideoMerger, GH_ImageVideoComparer, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, 忽略多组孤海]
 problems: []
 missing: []
-members: [平台全量/视频编辑_WanAnimate_长视频_指定角色替换或动作迁移_2007797762489847810.json, 平台全量/视频编辑_WanVACE_Stand-In_指定角色替换或动作迁移_2007853415845601281.json]
+members: [视频生成/图生视频/导演台合集最终完成版_2106268078148505602.json, 视频生成/图生视频/视频换人复刻丨MiniMax H3 Hybrid丨多段续接·可选超分_2110593335210631169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/视频编辑_WanAnimate_长视频_指定角色替换或动作迁移_2007797762489847810.json、平台全量/视频编辑_WanVACE_Stand-In_指定角色替换或动作迁移_2007853415845601281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/导演台合集最终完成版_2106268078148505602.json、视频生成/图生视频/视频换人复刻丨MiniMax H3 Hybrid丨多段续接·可选超分_2110593335210631169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_Preview`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `Display Int (rgthree)`
-- `DownloadAndLoadGIMMVFIModel`
-- `DrawMaskOnImage`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageBatchRepeatInterleaving`
-- `ImageBlend`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImageScaleToMaxDimension`
-- `ImageToMask`
-- `LoadImage`
-- `LoadSAM3Model`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewAny`
-- `SAM3Segmentation`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `VHS_LoadVideo`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `GH_AudioVideoMerger`
+- `GH_ImageVideoComparer`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `ModelAttentionBackend`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageResizeToClosest`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy lengthAnything`
-- `easy mathInt`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFaceProcessor` —— 1/2 个有
-- `DrawViTPose` —— 1/2 个有
-- `FaceProcessorLoader` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `PoseAndFaceDetection` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `WanVideoAddStandInLatent` —— 1/2 个有
-- `WanVideoAnimateEmbeds` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
-- `WanVideoEncode` —— 1/2 个有
-- `WanVideoVACEEncode` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `LayerFilter: GaussianBlur` —— 1/2 个有
+- `图像缩放V2_孤海` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

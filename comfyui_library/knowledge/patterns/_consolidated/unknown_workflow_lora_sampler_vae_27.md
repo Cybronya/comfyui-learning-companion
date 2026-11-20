@@ -3,67 +3,61 @@ name: unknown_workflow_lora_sampler_vae_27
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.902
-common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, NunchakuQwenImageDiTLoader, Qwen3_VQA, SaveImage, Text Multiline (Code Compatible), TextEncodeQwenImageEditPlus_lrzjason, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8105
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/双截棍千问编辑模型_2000845122298314753.json, 图片生成/图生图/双截棍千问编辑模型_2001209657291141122.json]
+members: [视频生成/文生视频/【MinimaxH3】首尾帧视频-5倍急速版（25→5分钟）_2087187021684101121.json, 视频生成/文生视频/首尾帧加速图minimax_h3_lightx2v生文生ENG_2087087697318998017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/双截棍千问编辑模型_2000845122298314753.json、图片生成/图生图/双截棍千问编辑模型_2001209657291141122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【MinimaxH3】首尾帧视频-5倍急速版（25→5分钟）_2087187021684101121.json、视频生成/文生视频/首尾帧加速图minimax_h3_lightx2v生文生ENG_2087087697318998017.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `KSampler`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `NunchakuQwenImageDiTLoader`
-- `Qwen3_VQA`
-- `SaveImage`
-- `Text Multiline (Code Compatible)`
-- `TextEncodeQwenImageEditPlus_lrzjason`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `DiffusionModelLoaderKJ` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `SolAttnPatch` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

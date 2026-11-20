@@ -1,47 +1,53 @@
 ---
 name: unknown_workflow_sampler_vae_54
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8574
-common_nodes: [JoyAI_Image_ENCODER, JoyAI_Image_LATENTS, JoyAI_Image_SM_Clip, JoyAI_Image_SM_KSampler, JoyAI_Image_SM_Model, JoyAI_Image_SM_VAE, JoyAI_Vae_Decoder, LoadImage, PreviewAny, SaveImage]
+coverage: 0.9755
+common_nodes: [BasicGuider, BasicScheduler, CreateVideo, KSamplerSelect, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/JoyAI_Image图像编辑_2042043063824031746.json, 图片生成/图生图/京东编辑模型_2079972499621761026.json, 图片生成/文生图/JoyAI-Image单图编辑_2043308514138918913.json, 图片生成/文生图/JoyAI_Image 图像编辑_2043146539337519106.json, 数字人/数字人/JoyAI_Image图像编辑_2042125972094328834.json]
+members: [视频生成/文生视频/MiniMax H3 真全能参考工作流_2085567946600046593.json, 视频生成/文生视频/MiniMax_H3_Easy_hybrid全能参考极简多合一工作流_2105216168821878786.json, 视频生成/文生视频/MiniMax_H3_全能参考-即梦写法_2085624803662323714.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版_2088792747246444545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_54
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/JoyAI_Image图像编辑_2042043063824031746.json、图片生成/图生图/京东编辑模型_2079972499621761026.json、图片生成/文生图/JoyAI-Image单图编辑_2043308514138918913.json、图片生成/文生图/JoyAI_Image 图像编辑_2043146539337519106.json、数字人/数字人/JoyAI_Image图像编辑_2042125972094328834.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 真全能参考工作流_2085567946600046593.json、视频生成/文生视频/MiniMax_H3_Easy_hybrid全能参考极简多合一工作流_2105216168821878786.json、视频生成/文生视频/MiniMax_H3_全能参考-即梦写法_2085624803662323714.json、视频生成/文生视频/MinimaxH3工作流多合一极简版_2088792747246444545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JoyAI_Image_ENCODER`
-- `JoyAI_Image_LATENTS`
-- `JoyAI_Image_SM_Clip`
-- `JoyAI_Image_SM_KSampler`
-- `JoyAI_Image_SM_Model`
-- `JoyAI_Image_SM_VAE`
-- `JoyAI_Vae_Decoder`
-- `LoadImage`
-- `PreviewAny`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CreateVideo`
+- `KSamplerSelect`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `VAEDecode`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 3/5 个有
-- `CR Prompt Text` —— 3/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `KepStringLiteral` —— 2/5 个有
-- `image_scale_pixel_v2` —— 2/5 个有
-- `MuyeSizeSelector` —— 1/5 个有
+- `LoadAudio` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `AudioAdjustVolume` —— 1/4 个有
+- `EasyCache` —— 1/4 个有
+- `MiniMaxH3BlockCacheT8` —— 1/4 个有
+- `MiniMaxH3EasyMediaLoader` —— 1/4 个有
+- `SolAttnPatch` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,45 +1,47 @@
 ---
 name: unknown_workflow_video_upscale_vae_3
 type: Unknown Workflow
-frequency: 11
+frequency: 3
 level: moderate
-coverage: 0.579727
-common_nodes: [INTConstant, ImageScaleToTotalPixels, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.847333
+common_nodes: [CM_FloatToInt, CM_IntToFloat, Fast Groups Bypasser (rgthree), FlashVSRNode, ImageScaleToTotalPixels, RTXVideoSuperResolution, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [平台全量/【最强视频放大补帧】_2069643842403528706.json, 平台全量/心然·寻源-SeedVR2.5 视频高清放大_2061462363160797186.json, 平台全量/星绘-最强高清视频修复（Stargazing-The Ultimate HD Video Re）_2021064237384212482.json, 平台全量/最强视频修复合集：SeedVR2.5 & FlashVSR_2036743196587331585.json, "平台全量/视频修复_ 支持SeedVR2.5,FlashVSR_2021143685181739010.json", 平台全量/视频细节修复和放大： SeedVR2.5+FlashVSR_2063615333767933954.json, 平台全量/视频高清放大-质量更高_2035631035928547329.json, 平台全量/视频高清放大-质量更高_2043161152342986754.json, 平台全量/视频高清放大-质量更高_2043543826161213441.json, 平台全量/视频高清放大1_2046779456903188481.json, 平台全量/视频高清放大_2039696942942396417.json]
+members: [视频生成/图生视频/【极速视频放大】FlashVR 工业级短视频生产流水线视频放大_2032402915746390017.json, 视频生成/图生视频/【视频放大——遗珍重塑】SeedVR 语义级超清视频放大修复大片_2033193391764283393.json, 视频生成/图生视频/【视频放大硬件之光】NVIDIA RTX VSR 底层硬件级视界增强视频放大_2033193385128894465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/【最强视频放大补帧】_2069643842403528706.json、平台全量/心然·寻源-SeedVR2.5 视频高清放大_2061462363160797186.json、平台全量/星绘-最强高清视频修复（Stargazing-The Ultimate HD Video Re）_2021064237384212482.json、平台全量/最强视频修复合集：SeedVR2.5 & FlashVSR_2036743196587331585.json、平台全量/视频修复_ 支持SeedVR2.5,FlashVSR_2021143685181739010.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【极速视频放大】FlashVR 工业级短视频生产流水线视频放大_2032402915746390017.json、视频生成/图生视频/【视频放大——遗珍重塑】SeedVR 语义级超清视频放大修复大片_2033193391764283393.json、视频生成/图生视频/【视频放大硬件之光】NVIDIA RTX VSR 底层硬件级视界增强视频放大_2033193385128894465.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `INTConstant`
+全部 3 个 workflow 都包含：
+- `CM_FloatToInt`
+- `CM_IntToFloat`
+- `Fast Groups Bypasser (rgthree)`
+- `FlashVSRNode`
 - `ImageScaleToTotalPixels`
+- `RTXVideoSuperResolution`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `SetNode` —— 10/11 个有
-- `FlashVSRNode` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `JWInteger` —— 3/11 个有
-- `LamSaveVideo` —— 1/11 个有
-- `MemoryCleaner` —— 1/11 个有
-- `ShowAnything|Mie` —— 1/11 个有
+- `ImpactSwitch` —— 2/3 个有
+- `ShowAnything|Mie` —— 2/3 个有
+- `easy ifElse` —— 1/3 个有
 
 ## 典型参数
 

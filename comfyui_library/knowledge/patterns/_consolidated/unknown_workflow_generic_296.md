@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_296
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.731778
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.77525
+common_nodes: [LoadImage, LoadOmniGen2Model, OmniGen2, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/QY睡裤通用主图_2066851024517820417.json, 图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json, 图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json, 图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json, 图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json, 图片生成/图生图/童装详情页设计_2104950032737849345.json, 图片生成/文生图/服装详情页设计_2054201706078064641.json, 平台全量/duofenjing_2117078395002638338.json, 平台全量/童装详情页设计｜纯产品清爽9页｜无人物电商长图_2105251969442074626.json]
+members: [图片生成/图生图/OmniGen2--一键手办生成_1937084348833370113.json, 图片生成/图生图/OmniGen2--图像编辑和motion控制_1937080503122169858.json, 图片生成/图生图/OmniGen2--换装(测试不稳定)_1937080466665279490.json, 图片生成/图生图/Omnigen2电商美女拿包_1936684455555928065.json, 图片生成/图生图/Omnigen2角色一致性同框_1936636241985310722.json, 图片生成/图生图/【遇见AI】OmniGen2多模态模型_2041819478459162626.json, 图片生成/图生图/最新Omnigen2 多图融合｜电商海报_1936708941567135745.json, 图片生成/文生图/OmniGen2--线稿(测试)_1937073804357062657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_296
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/QY睡裤通用主图_2066851024517820417.json、图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json、图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json、图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json、图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/OmniGen2--一键手办生成_1937084348833370113.json、图片生成/图生图/OmniGen2--图像编辑和motion控制_1937080503122169858.json、图片生成/图生图/OmniGen2--换装(测试不稳定)_1937080466665279490.json、图片生成/图生图/Omnigen2电商美女拿包_1936684455555928065.json、图片生成/图生图/Omnigen2角色一致性同框_1936636241985310722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `JjkText`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `LoadOmniGen2Model`
+- `OmniGen2`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Find and Replace` —— 4/9 个有
-- `Image Stitch` —— 3/9 个有
-- `ZML_MergeText` —— 2/9 个有
-- `FusionText` —— 1/9 个有
+- `PreviewImage` —— 7/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `Text` —— 4/8 个有
+- `PrimitiveString` —— 3/8 个有
+- `BiRefNet_Hugo` —— 1/8 个有
 
 ## 典型参数
 

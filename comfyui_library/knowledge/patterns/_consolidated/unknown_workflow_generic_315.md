@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_315
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.926
-common_nodes: [RH_RhartImageG2OfficialTextToImage, SaveImage]
+coverage: 0.7685
+common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json, 图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2049781605606100993.json, 图片生成/文生图/全能图片G2文能图官方版 _ 2026最强生图_2056451598993416193.json, 图片生成/文生图/最新G image2  全量文生图官方稳定版 V1.0_2048017540726661121.json, 平台全量/全能图片G-2-文生图-官方稳定版_2047853165214703618.json]
+members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_315
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json、图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json、图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `RH_RhartImageG2OfficialTextToImage`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LayerUtility: PurgeVRAM`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/9 个有
+- `JWInteger` —— 7/8 个有
+- `LoadImage` —— 2/8 个有
 
 ## 典型参数
 

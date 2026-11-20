@@ -1,36 +1,43 @@
 ---
 name: unknown_workflow_generic_467
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.584857
-common_nodes: [JjkText, LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
+coverage: 0.7935
+common_nodes: [CR Draw Shape, GetImageSizeAndCount, Image Crop Location, ImageCompositeMasked, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, Mask Crop Region, MaskPreview+, SaveImage, SplitImageWithAlpha, TTP_Expand_And_Mask]
 problems: []
 missing: []
-members: [图片生成/图生图/图生图G-2.5生成多图参考_2098400317699350530.json, 图片生成/图生图/室内效果图分阶修复专家_2105273074542272513.json, 图片生成/图生图/家装专业制图（六大分析图)_2105445228051259394.json, 图片生成/图生图/换装 _ 全能图片G2.5_2099368749932572674.json, 图片生成/图生图/更换服装 _ 上衣+下装 _ G2.5_2101692595960377346.json, 图片生成/图生图/模特换装 全能图片G2.5 Model Outfit Changes_2100411542360641537.json, 图片生成/图生图/模特换装+全能图片G2.5+Model+Outfit+Changes 换脸_2107627490838671362.json]
+members: [图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json, 图片生成/图生图/一键抠图_2069242214223532033.json, 图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json, 图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json, 图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json, 图片生成/图生图/最强智能扣白底图，透明底，可以自定义各种底色，电商专用_2059924781755092993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_467
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生图G-2.5生成多图参考_2098400317699350530.json、图片生成/图生图/室内效果图分阶修复专家_2105273074542272513.json、图片生成/图生图/家装专业制图（六大分析图)_2105445228051259394.json、图片生成/图生图/换装 _ 全能图片G2.5_2099368749932572674.json、图片生成/图生图/更换服装 _ 上衣+下装 _ G2.5_2101692595960377346.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json、图片生成/图生图/一键抠图_2069242214223532033.json、图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json、图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json、图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `JjkText`
+全部 6 个 workflow 都包含：
+- `CR Draw Shape`
+- `GetImageSizeAndCount`
+- `Image Crop Location`
+- `ImageCompositeMasked`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `RH_RhartImageG25SunburstImageToImage`
+- `Mask Crop Region`
+- `MaskPreview+`
 - `SaveImage`
+- `SplitImageWithAlpha`
+- `TTP_Expand_And_Mask`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `CR Text Concatenate` —— 1/7 个有
+- `PreviewImage` —— 5/6 个有
 
 ## 典型参数
 

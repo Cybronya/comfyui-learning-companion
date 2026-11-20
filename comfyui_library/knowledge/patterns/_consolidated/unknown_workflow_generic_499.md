@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_499
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.646429
-common_nodes: [GetRandomIntegerInRange, ImpactSwitch, JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text Load Line From File, easy mathInt]
+coverage: 0.966167
+common_nodes: [IndexTTS2Run, LoadAudio, MultiLinePromptIndex, PreviewAudio, SaveAudioMP3, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/最新3.0TTS 声音设计（懒人版）_2066092416477786114.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2016037375239004162.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2085781651526868994.json]
+members: [数字人/数字人/index TTS2-1114_1990254945960120322.json, 数字人/数字人/index TTS2情绪控制_1977023883834466305.json, 数字人/数字人/index TTS2语音克隆，情绪语音克隆，多控制情绪克隆，双人对话情绪克隆，小说阅读，推文阅读。_1969042109099634690.json, 音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json, 音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json, 音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_499
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/最新3.0TTS 声音设计（懒人版）_2066092416477786114.json、音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json、音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json、音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json、音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/index TTS2-1114_1990254945960120322.json、数字人/数字人/index TTS2情绪控制_1977023883834466305.json、数字人/数字人/index TTS2语音克隆，情绪语音克隆，多控制情绪克隆，双人对话情绪克隆，小说阅读，推文阅读。_1969042109099634690.json、音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json、音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetRandomIntegerInRange`
-- `ImpactSwitch`
-- `JjkText`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `Text Load Line From File`
-- `easy mathInt`
+全部 6 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `MultiLinePromptIndex`
+- `PreviewAudio`
+- `SaveAudioMP3`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 6/7 个有
-- `ShowText` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `JjkText` —— 3/6 个有
+- `SaveAudio` —— 3/6 个有
 
 ## 典型参数
 

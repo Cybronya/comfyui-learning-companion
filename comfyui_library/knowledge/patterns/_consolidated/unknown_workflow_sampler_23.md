@@ -3,37 +3,38 @@ name: unknown_workflow_sampler_23
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.9815
-common_nodes: [ImageAndMaskPreview, ImageStitch, LoadImage, RunningHub OneReward Loader, SaveImage]
+coverage: 0.972167
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/OneReward擦除物体_1965642962145263617.json, 图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json, 图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json, 图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json, 图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json, 图片生成/图生图/文字绘写-字节OneReward-Fill_1966331017168662530.json]
+members: [视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json, 视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json, 视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json, 视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json, 视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）林耀2.6_2019693859390885889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_23
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OneReward擦除物体_1965642962145263617.json、图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json、图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json、图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json、图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/FlashTalk实时数字人V1_2016222816277893122.json、视频生成/图生视频/FlashTalk数字人ai数字人ai视频口播数字人带手势动作说话数字人_2029234704314011649.json、视频生成/图生视频/FlashTalk数字人：ai数字人ai视频口播数字人带手势动作说话数字人工作流_2029404488372592642.json、视频生成/图生视频/FlashTalk无限时长数字人工作流_2057455596126953474.json、视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）_2018669346142294017.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ImageAndMaskPreview`
-- `ImageStitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub OneReward Loader`
-- `SaveImage`
+- `RunningHub FlashTalk Loader`
+- `RunningHub FlashTalk Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub OneReward Sampler` —— 4/6 个有
-- `RH_Translator` —— 2/6 个有
-- `RunningHub OneReward Eraser` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `TrimAudioDuration` —— 1/6 个有
+- `WujiCleaner` —— 1/6 个有
 
 ## 典型参数
 

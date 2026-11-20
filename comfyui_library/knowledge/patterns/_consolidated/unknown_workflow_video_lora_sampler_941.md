@@ -1,73 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_941
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.969667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, SavePNGZIP_and_Preview_RGBA_AnimatedWEBP, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.8795
+common_nodes: [ImageConcatMulti, ImageResizeKJv2, Int, LoadImage, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/文生视频/Wan Alpha Composite视频融合V2 （基础版）_1974722920842964994.json, 视频生成/文生视频/Wan Alpha文生透明通道视频V1_1974712309266427905.json, 视频生成/文生视频/wan_alpha_t2v_14B create transparent video_1973778662703108098.json]
+members: [视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json, 视频生成/文生视频/wan2_2_fun_vace_文生视频-KJ_1971908206685515778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_941
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan Alpha Composite视频融合V2 （基础版）_1974722920842964994.json、视频生成/文生视频/Wan Alpha文生透明通道视频V1_1974712309266427905.json、视频生成/文生视频/wan_alpha_t2v_14B create transparent video_1973778662703108098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2_2_fun_vace_图片参考视频-KJ_1967598097377497089.json、视频生成/文生视频/wan2_2_fun_vace_文生视频-KJ_1971908206685515778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SavePNGZIP_and_Preview_RGBA_AnimatedWEBP`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 2 个 workflow 都包含：
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadImage`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImageToMask` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `PDIMAGE_LongerSize` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `INTConstant` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_349
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.9355
-common_nodes: [CR Prompt Text, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
+coverage: 0.685
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075391736549044226.json, 图片生成/图生图/即梦5-换装-公司用_2081671570501754881.json, 图片生成/图生图/即梦5pro-换装，细节多图参考还原版-公司用_2081984727237615617.json]
+members: [图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json, 图片生成/图生图/11_2038431448486649858.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2064558042129195010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_349
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
+全部 7 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_SeedreamV5ProImageToImage`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 5/8 个有
-- `Int` —— 3/8 个有
-- `孤海注释` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ColorMatch` —— 1/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `PreviewImage` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `Image Compare (mtb)` —— 1/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_368
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.821375
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+coverage: 0.746571
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json, 图片生成/图生图/系统_提取印花_2069300103478865922.json, 图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json, 图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json, 图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json, 图片生成/文生图/全能图2 全家桶  Image2 文生图 + 图生图_2046939440123224066.json, 图片生成/文生图/现最强图像处理 全能图片 GP-T-Image-2  文生图 + 图像编辑_2046966083659239425.json, 数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json]
+members: [图片生成/图生图/QY睡裤通用主图_2066851024517820417.json, 图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json, 图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json, 图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json, 图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json, 图片生成/图生图/童装详情页设计_2104950032737849345.json, 图片生成/文生图/服装详情页设计_2054201706078064641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_368
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json、图片生成/图生图/系统_提取印花_2069300103478865922.json、图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json、图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json、图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/QY睡裤通用主图_2066851024517820417.json、图片生成/图生图/XY-图生图-G-image-2_2098679604755124226.json、图片生成/图生图/image 2.0-G一键详情页产品说明书_2047518478931861506.json、图片生成/图生图/《缄默独白》极简人像九宫格时尚大片_2070423307127709698.json、图片生成/图生图/【电商海报】商业营销高转化海报风格_2073191767305965570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
 - `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `RH_RhartImageG2TextToImage` —— 3/8 个有
-- `ttN seed` —— 1/8 个有
+- `Text Find and Replace` —— 3/7 个有
+- `Image Stitch` —— 2/7 个有
+- `ZML_MergeText` —— 1/7 个有
 
 ## 典型参数
 

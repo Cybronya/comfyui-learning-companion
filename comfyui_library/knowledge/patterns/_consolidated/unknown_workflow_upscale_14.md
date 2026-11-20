@@ -1,45 +1,42 @@
 ---
 name: unknown_workflow_upscale_14
 type: Unknown Workflow
-frequency: 7
+frequency: 5
 level: moderate
-coverage: 0.699286
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2ExtraArgs]
+coverage: 0.8304
+common_nodes: [Image Comparer (rgthree), ImageTile+, ImageUntile+, ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_1991030278124707841.json, 图片生成/图生图/SeedVR2-V2_高清修复_1979466745759043586.json, 图片生成/图生图/SeedVR2放大工作流无LORA_2106293919716827137.json, 图片生成/图生图/WanAn_seedVR2-V2_1990356586835136514.json, 图片生成/图生图/图像放大（可看清毛孔）_1988799951931052033.json, 图片生成/图生图/高清放大_2017481297899298817.json, 平台全量/Work_SeedVR2-V2_1976550126867058690.json]
+members: [图片生成/图生图/Flux.1 kontext 变胖后样子，并高清放大_1936685016862609410.json, 图片生成/图生图/Flux.1 kontext 老照片修复，并高清放大_1933804536005840897.json, 图片生成/图生图/RMBG一键抠图_抠像_去背景-透明背景_2020007419199361025.json, 图片生成/图生图/人像高清放大后人物抠像_1932419244866871298.json, 图片生成/图生图/人像高清放大，人像高清修复_1932294830721069057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_14
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/B5、SeedVR2 V2 + 放大模型  —— 和风整理_1991030278124707841.json、图片生成/图生图/SeedVR2-V2_高清修复_1979466745759043586.json、图片生成/图生图/SeedVR2放大工作流无LORA_2106293919716827137.json、图片生成/图生图/WanAn_seedVR2-V2_1990356586835136514.json、图片生成/图生图/图像放大（可看清毛孔）_1988799951931052033.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux.1 kontext 变胖后样子，并高清放大_1936685016862609410.json、图片生成/图生图/Flux.1 kontext 老照片修复，并高清放大_1933804536005840897.json、图片生成/图生图/RMBG一键抠图_抠像_去背景-透明背景_2020007419199361025.json、图片生成/图生图/人像高清放大后人物抠像_1932419244866871298.json、图片生成/图生图/人像高清放大，人像高清修复_1932294830721069057.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageTile+`
+- `ImageUntile+`
+- `ImageUpscaleWithModel`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2ExtraArgs`
+- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `ImageUpscaleWithModel` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `SeedVR2BlockSwap` —— 6/7 个有
-- `UpscaleModelLoader` —— 6/7 个有
-- `PlaySound|pysssss` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `FlashVSRNode` —— 1/7 个有
-- `ImageSharpen` —— 1/7 个有
-- `Int` —— 1/7 个有
+- `RH_ComfyFluxKontext` —— 2/5 个有
+- `RMBG` —— 2/5 个有
+- `TextNode` —— 2/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

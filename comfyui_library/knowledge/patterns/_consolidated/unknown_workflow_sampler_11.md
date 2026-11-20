@@ -1,48 +1,41 @@
 ---
 name: unknown_workflow_sampler_11
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.811
-common_nodes: [AudioMerge, AudioSeparation, LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio]
+coverage: 0.922333
+common_nodes: [LoadImage, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/soulx-singer_歌曲声音转换_2056227107524620289.json, 音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json, 音频生成/音频生成/soulx-singer_多语言翻唱_2081217314275545089.json, 音频生成/音频生成/soulx-singer_歌曲声音转换_2027973593069527042.json, 音频生成/音频生成/一键翻唱爆款歌曲（普通话版）_2054373511006826498.json, 音频生成/音频生成/一键翻唱爆款歌曲（普通话版）_2054766006710620162.json, 音频生成/音频生成/歌曲音色转换_2025823310495358977.json, 音频生成/音频生成/音频分离与音色转化_2041523190177996801.json, 音频生成/音频生成/音频处理大集合（Supermate宝藏宝）_2081261037361393666.json, 音频生成/音频生成/音频改变音色音调 SoulX 歌曲音色转换 人声改变音色 音乐变人声音色_2027222941980692482.json]
+members: [图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json, 图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json, 图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json, 图片生成/图生图/USO多种风格参考_1962720773230182401.json, 图片生成/图生图/目前最强风格迁移（USO）_1962810979518136322.json, 图片生成/文生图/USO换风格+换背景工作流_1965031029104889857.json, 图片生成/文生图/USO风格迁移图生图_2073390240361959425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/soulx-singer_歌曲声音转换_2056227107524620289.json、音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json、音频生成/音频生成/soulx-singer_多语言翻唱_2081217314275545089.json、音频生成/音频生成/soulx-singer_歌曲声音转换_2027973593069527042.json、音频生成/音频生成/一键翻唱爆款歌曲（普通话版）_2054373511006826498.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json、图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json、图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AudioMerge`
-- `AudioSeparation`
-- `LoadAudio`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_Translator`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_FreeVRAM` —— 9/10 个有
-- `MelBandRoFormerModelLoader` —— 9/10 个有
-- `MelBandRoFormerSampler` —— 9/10 个有
-- `FL_ChatterboxVC` —— 2/10 个有
-- `SeedVCRun` —— 2/10 个有
-- `TrimAudioDuration` —— 2/10 个有
-- `easy cleanGpuUsed` —— 2/10 个有
-- `AudioAdjustVolume` —— 1/10 个有
-- `Fast Groups Muter (rgthree)` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
+- `ImageConcanate` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `Fast Groups Muter (rgthree)` —— 2/9 个有
+- `DF_Get_image_size` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
 
 ## 典型参数
 

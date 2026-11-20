@@ -3,35 +3,31 @@ name: unknown_workflow_generic_336
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.830125
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, easy saveText]
+coverage: 0.753
+common_nodes: [RH_CinematicVideoGenerator, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/反推视频提示词_2051967379722256386.json, 图片生成/反推提示词/视频反推 _ gemini-3.5_1901724104188436481.json, 图片生成/反推提示词/视频反推 视频反推提示词 gemini_2043326651647397889.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048358839178764290.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048371260505198593.json, 图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2053167415483215873.json, 图片生成/反推提示词/超强反推视频提示词 Runninghub LLM API Pro_2038165185508151297.json, 图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json]
+members: [视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json, 视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json, 视频生成/文生视频/超能视频2.0 在线生成 自定义分辨率1080P，帧率30fps，时长10秒_2038429253519286274.json, 视频生成/文生视频/超能视频2.0 多图参考_2036032722329669634.json, 视频生成/文生视频/超能视频2.0已接入，不用排队（5s_10s_15s）_2035676995136266241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_336
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/反推视频提示词_2051967379722256386.json、图片生成/反推提示词/视频反推 _ gemini-3.5_1901724104188436481.json、图片生成/反推提示词/视频反推 视频反推提示词 gemini_2043326651647397889.json、图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048358839178764290.json、图片生成/反推提示词/视频描述  视频反推提示词 视频提示词 gemnini_2048371260505198593.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json、视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
+- `RH_CinematicVideoGenerator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 7/8 个有
-- `workflow>视频信息` —— 5/8 个有
-- `ShowText` —— 4/8 个有
-- `CR Prompt Text` —— 1/8 个有
+- `LoadImage` —— 7/8 个有
 
 ## 典型参数
 

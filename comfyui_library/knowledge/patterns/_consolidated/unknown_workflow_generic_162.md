@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_162
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.707692
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 1
+common_nodes: [CR Prompt Text, T8_BreezeTTS_DesignRequest, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json, 图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json, 图片生成/图生图/图像无损高清放大_1956239087894188033.json, 图片生成/图生图/图像无损高清放大_2059279536960917505.json, 图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json, 图片生成/图生图/最佳放大工作流：SeedVR2_bole_1956324968839741442.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1975560945038700545.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1997925676596494338.json, 图片生成/文生图/SeedVR2 高清无损放大_1965606007600762881.json, 平台全量/SeedVR2图像无损超清放大_2000911048045719553.json, 平台全量/SeedVR2高清放大_1981210333077561346.json, 平台全量/最佳放大工作流：SeedVR2_bole_1963068178471563265.json, 平台全量/最强放大工作流_1981955634574827522.json]
+members: [音频生成/音频生成/Breeze TTS 2 声音设计02_2105860935498944514.json, 音频生成/音频生成/Breeze TTS 2 声音设计2608_2095529337591255041.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2095397290671427585.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2096210340668334081.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2098773117446475778.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2105767525727428610.json, 音频生成/音频生成/Breeze TTS 2 声音设计_2108106530464821250.json, 音频生成/音频生成/Breeze+TTS+2+声音设计_2095446951604080641.json, 音频生成/音频生成/MUMU 短剧语音设计_2095538490858631169.json, 音频生成/音频生成/TTS Breeze 2 高质量声音设计｜世界第一开源_2096091514106630145.json, 音频生成/音频生成/breeze-tts声音设计_2095440166545608705.json, 音频生成/音频生成/声音生成_2103712405774753794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_162
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json、图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json、图片生成/图生图/图像无损高清放大_1956239087894188033.json、图片生成/图生图/图像无损高清放大_2059279536960917505.json、图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/Breeze TTS 2 声音设计02_2105860935498944514.json、音频生成/音频生成/Breeze TTS 2 声音设计2608_2095529337591255041.json、音频生成/音频生成/Breeze TTS 2 声音设计_2095397290671427585.json、音频生成/音频生成/Breeze TTS 2 声音设计_2096210340668334081.json、音频生成/音频生成/Breeze TTS 2 声音设计_2098773117446475778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 12 个 workflow 都包含：
+- `CR Prompt Text`
+- `T8_BreezeTTS_DesignRequest`
+- `T8_BreezeTTS_Generate`
+- `T8_BreezeTTS_GenerationSettings`
+- `T8_BreezeTTS_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 11/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/13 个有
-- `Int` —— 3/13 个有
-- `PrimitiveInt` —— 1/13 个有
+- `SaveAudio` —— 11/12 个有
+- `PreviewAudio` —— 6/12 个有
+- `SaveAudioAdvanced` —— 1/12 个有
 
 ## 典型参数
 

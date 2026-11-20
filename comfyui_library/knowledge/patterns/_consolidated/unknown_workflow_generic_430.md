@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_430
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.726286
-common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.848167
+common_nodes: [Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/HYPIR一键4K高清放大_1951879855451353089.json, 图片生成/图生图/HYPIR极速高清放大｜8K高清放大｜适合静物放大_2078322517764300801.json, 平台全量/HYPIR-保留细节高清修复_1952357561276280833.json, 平台全量/HYPIR最强高清修复放大文字不变形_1957823511481122817.json, 平台全量/HYPIR高清放大_1961968417190428673.json, 平台全量/Hypir高清放大8k_1951578913149497346.json, 平台全量/Hypir高清放大瞬升8K、无损放大、细节保留 HYPIR图像2K4K8K超高清放大降噪修复强化_1990217273224908801.json]
+members: [图片生成/反推提示词/一键自动生成超能视频2.0爆款视频脚本_2022293700851798018.json, 图片生成/反推提示词/爆款视频一键复刻！Seedance 2.0模型的视频分镜脚本_2095544015277084673.json, 图片生成/反推提示词/爆款视频反推 - 视频提示词反推_2050152352849641474.json, 图片生成/反推提示词/爆款视频反推-提示词分析-视频脚本反推_2020689025664815105.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2051484759532027906.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2053679480492834817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_430
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/HYPIR一键4K高清放大_1951879855451353089.json、图片生成/图生图/HYPIR极速高清放大｜8K高清放大｜适合静物放大_2078322517764300801.json、平台全量/HYPIR-保留细节高清修复_1952357561276280833.json、平台全量/HYPIR最强高清修复放大文字不变形_1957823511481122817.json、平台全量/HYPIR高清放大_1961968417190428673.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/一键自动生成超能视频2.0爆款视频脚本_2022293700851798018.json、图片生成/反推提示词/爆款视频一键复刻！Seedance 2.0模型的视频分镜脚本_2095544015277084673.json、图片生成/反推提示词/爆款视频反推 - 视频提示词反推_2050152352849641474.json、图片生成/反推提示词/爆款视频反推-提示词分析-视频脚本反推_2020689025664815105.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2051484759532027906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `HYPIRImageRestoration`
-- `Image Comparer (rgthree)`
+全部 6 个 workflow 都包含：
+- `Label (rgthree)`
 - `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/7 个有
-- `ImpactInt` —— 1/7 个有
+- `CR Prompt Text` —— 5/6 个有
+- `LoadVideo` —— 5/6 个有
+- `easy saveText` —— 2/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SaveText` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
 
 ## 典型参数
 

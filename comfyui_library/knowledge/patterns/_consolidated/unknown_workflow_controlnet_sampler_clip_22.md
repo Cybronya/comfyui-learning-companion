@@ -1,71 +1,64 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_22
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.90975
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetUnionControlNetType, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.877667
+common_nodes: [AIO_Preprocessor, ApplyFluxControlNet, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Image Comparer (rgthree), LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
 problems: []
 missing: []
-members: [图片生成/图生图/转换风格，不改变构图 Controlnet union 2 串联工作流（深度图+线稿图）_1936410663122030594.json, 图片生成/文生图/FLUX ControlNet-Union-Pro-2.0 生图可控性增强流_1912691278339895298.json, 图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json, 平台全量/图生图基础款_1910841538946002946.json]
+members: [图片生成/图生图/一键解锁二次元 你的专属动漫滤镜_1916667244833869826.json, 图片生成/图生图/一键转卡通_1916440283846737922.json, 图片生成/图生图/室内设计毛坯房秒变效果图带lora快速出图Flux版_1899710160435105793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_22
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/转换风格，不改变构图 Controlnet union 2 串联工作流（深度图+线稿图）_1936410663122030594.json、图片生成/文生图/FLUX ControlNet-Union-Pro-2.0 生图可控性增强流_1912691278339895298.json、图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json、平台全量/图生图基础款_1910841538946002946.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键解锁二次元 你的专属动漫滤镜_1916667244833869826.json、图片生成/图生图/一键转卡通_1916440283846737922.json、图片生成/图生图/室内设计毛坯房秒变效果图带lora快速出图Flux版_1899710160435105793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `ApplyFluxControlNet`
 - `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
 - `DualCLIPLoader`
+- `EmptyLatentImage`
 - `FluxGuidance`
-- `KSamplerSelect`
+- `Image Comparer (rgthree)`
+- `LoadFluxControlNet`
 - `LoadImage`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetUnionControlNetType`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `XlabsSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 3/4 个有
-- `EmptyLatentImage` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `ApplyFBCacheOnModel` —— 1/4 个有
-- `ApplyIPAdapterFlux` —— 1/4 个有
-- `CR Text` —— 1/4 个有
-- `DepthAnythingV2Preprocessor` —— 1/4 个有
-- `GridLoras` —— 1/4 个有
-- `IPAdapterFluxLoader` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `ModelSamplingFlux` —— 1/4 个有
-- `Text Concatenate (JPS)` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ModelSamplingFlux` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.8 | 0.6 - 1 | 4 | 82% |
-| 宽度 | 768 | 512 - 1024 | 3 | 73% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -73,6 +66,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.8，观测区间 0.6 - 1，4 个样本，取值集中（一致性 82%）
-- 宽度 中位数 768，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）

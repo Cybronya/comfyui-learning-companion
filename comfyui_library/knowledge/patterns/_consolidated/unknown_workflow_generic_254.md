@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_254
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.7994
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.943333
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json, 图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json, 图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json, 图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json, 图片生成/图生图/全能图片V1多图融合_1962420011333718018.json, 图片生成/图生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1961127751719784449.json, 图片生成/图生图/🍌香蕉 _Banan最强一致性编辑工作流 V1.0_1960400731750674434.json, 图片生成/文生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1962390591537549313.json, 平台全量/香蕉  全能图片V1两图_三图编辑工作流_1961136342853947394.json, 平台全量/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1962882890289885185.json]
+members: [图片生成/图生图/全能图像NB_3.1_2028679974646976513.json, 图片生成/图生图/全能图像iamge2.5三图编辑_2097971733251842050.json, 图片生成/图生图/全能图像iamge2.5双图编辑_2097970411341438977.json, 图片生成/图生图/全能图像image2.5单图编辑_2097968216239853570.json, 图片生成/图生图/全能图片G IMAGE 2.5 Sunburst图像编辑(RH版)_2098072370094366722.json, 图片生成/图生图/全能图片G image2.5角色表生成_2098077259415511041.json, 图片生成/图生图/全能图片G2.5 图生图_编辑_低价版_2099745408699420674.json, 图片生成/图生图/全能图片image2.5单图编辑_2099725292788080642.json, 图片生成/图生图/全能图片image2.5双图生图_2099717198494396418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_254
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json、图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json、图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json、图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json、图片生成/图生图/全能图片V1多图融合_1962420011333718018.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图像NB_3.1_2028679974646976513.json、图片生成/图生图/全能图像iamge2.5三图编辑_2097971733251842050.json、图片生成/图生图/全能图像iamge2.5双图编辑_2097970411341438977.json、图片生成/图生图/全能图像image2.5单图编辑_2097968216239853570.json、图片生成/图生图/全能图片G IMAGE 2.5 Sunburst图像编辑(RH版)_2098072370094366722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleDownToSize` —— 8/10 个有
-- `easy imageConcat` —— 7/10 个有
-- `Text Multiline` —— 5/10 个有
-- `PIP_图像联结` —— 4/10 个有
-- `Text` —— 4/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `ImageStitch` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `easy batchAnything` —— 1/10 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 8/9 个有
+- `CR Text` —— 7/9 个有
+- `RHSettingsNode` —— 1/9 个有
+- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 1/9 个有
 
 ## 典型参数
 

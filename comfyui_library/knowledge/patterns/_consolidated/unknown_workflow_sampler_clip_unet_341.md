@@ -1,64 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_341
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.829
-common_nodes: [CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), ImageScaleToTotalPixels, JWFloat, KSamplerAdvanced, LatentSwitch, LoadImage, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match]
+frequency: 3
+level: moderate
+coverage: 0.673333
+common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/极速图像拆分，九宫格 四宫格 自动高清_2037817863880314881.json, 图片生成/图生图/模糊变清晰，修复细节 ，  极速 Klein 9B_2036341734451453954.json, 图片生成/图生图/自动九宫格拆分，四宫格拆分，自动变清晰，极速。_2037807292028035073.json, 图片生成/图生图/高清放大，一键模糊变清晰，  Klein 9B  极速_2036332368893579265.json]
+members: [图片生成/图生图/Deepfacelab素材一键直出16宫格_2028777260731338753.json, 图片生成/文生图/Z-Image+人像细节增强+美颜版本+全节点注释_2058872484786692098.json, 图片生成/文生图/Z-Image_写真写实+反推图片提示词生成+全节点注释_2057697011813675010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_341
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/极速图像拆分，九宫格 四宫格 自动高清_2037817863880314881.json、图片生成/图生图/模糊变清晰，修复细节 ，  极速 Klein 9B_2036341734451453954.json、图片生成/图生图/自动九宫格拆分，四宫格拆分，自动变清晰，极速。_2037807292028035073.json、图片生成/图生图/高清放大，一键模糊变清晰，  Klein 9B  极速_2036332368893579265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Deepfacelab素材一键直出16宫格_2028777260731338753.json、图片生成/文生图/Z-Image+人像细节增强+美颜版本+全节点注释_2058872484786692098.json、图片生成/文生图/Z-Image_写真写实+反推图片提示词生成+全节点注释_2057697011813675010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `JWFloat`
-- `KSamplerAdvanced`
-- `LatentSwitch`
-- `LoadImage`
-- `PreviewImage`
-- `ReferenceLatent`
+- `EmptySD3LatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `YC Color Match`
 
 **可变部分**（部分 workflow 才有）：
-- `GuHaiAutoImageSplit` —— 2/4 个有
-- `ImageFromBatch+` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `TTResolutionSelector` —— 2/4 个有
-- `TwoWaySwitch` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `math_calculate` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `ConstrainImage|pysssss` —— 1/3 个有
+- `DetailDaemonSamplerNode` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `MultiplySigmas` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `SeedVarianceEnhancer` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,8 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,39 +3,41 @@ name: unknown_workflow_sampler_34
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, SaveImage]
+coverage: 0.8448
+common_nodes: [HeartMuLa_Transcribe, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/字节-BitDance-文生图_2020025833859059714.json, 图片生成/文生图/2029733758898806786.json, 图片生成/文生图/BitDance 文生图_2026539870499377153.json, 图片生成/文生图/BitDance-14B-64x_2026611465637072898.json, 图片生成/文生图/BitDance文生图大模型：真人照片生成能力实测！_2027013975447183361.json]
+members: [音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json, 音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json, 音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json, 音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json, 音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_34
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/字节-BitDance-文生图_2020025833859059714.json、图片生成/文生图/2029733758898806786.json、图片生成/文生图/BitDance 文生图_2026539870499377153.json、图片生成/文生图/BitDance-14B-64x_2026611465637072898.json、图片生成/文生图/BitDance文生图大模型：真人照片生成能力实测！_2027013975447183361.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json、音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json、音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json、音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json、音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BitDanceDecode`
-- `BitDanceLoader`
-- `BitDanceResolution`
-- `BitDanceSampler`
-- `SaveImage`
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `BitDanceTextEncodeCached` —— 3/5 个有
-- `CR Text` —— 3/5 个有
-- `BitDanceTextEncode` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `AudioCombine` —— 4/5 个有
+- `SaveAudioMP3` —— 4/5 个有
+- `SeedVCRun` —— 4/5 个有
+- `AdjustAudio` —— 1/5 个有
+- `AudioAdjustVolume` —— 1/5 个有
+- `Int` —— 1/5 个有
 
 ## 典型参数
 

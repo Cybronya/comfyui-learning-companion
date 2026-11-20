@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_353
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.435875
-common_nodes: [CR Text Concatenate, JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage, ShowText, easy anythingIndexSwitch]
+coverage: 0.911143
+common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/jimeng多图_1990594104864247809.json, 图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json, 图片生成/图生图/广告产品 改图_1984200074525818882.json, 图片生成/图生图/漫剧场景 改图_1991480238735630337.json, 图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json, 图片生成/文生图/漫剧角色 改图_1991415445890813953.json, 平台全量/即梦4.0-豆包筑梦-图像编辑Api_1984970187252383745.json, 平台全量/即梦4.0-豆包筑梦_1965605806202830849.json]
+members: [图片生成/图生图/AI漫剧-四宫格-LTX-2.3 图生视频（全面优化版）_2042999270382505986.json, 图片生成/图生图/AI漫剧-四宫格-NB2_2041686222145327106.json, 图片生成/图生图/SD2.0 专用分镜资产生成（角色+场景+三宫图+九宫图）_2037509100929552385.json, 图片生成/图生图/【电商】模特商品融图专用-NB_2043641108210655234.json, 图片生成/图生图/全能图像2 全身六角度生成_2047933906619473921.json, 图片生成/图生图/全能图片V2-图生图-低价渠道版_2080574005882482689.json, 图片生成/图生图/全能图片合集 （文、图生图，图像编辑）_2052290275405512706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_353
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/jimeng多图_1990594104864247809.json、图片生成/图生图/即梦4.0 多图融合_1965948117067698178.json、图片生成/图生图/广告产品 改图_1984200074525818882.json、图片生成/图生图/漫剧场景 改图_1991480238735630337.json、图片生成/图生图/豆包即梦4.0-Seedream 4.0直出2K_1976722642734661634.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI漫剧-四宫格-LTX-2.3 图生视频（全面优化版）_2042999270382505986.json、图片生成/图生图/AI漫剧-四宫格-NB2_2041686222145327106.json、图片生成/图生图/SD2.0 专用分镜资产生成（角色+场景+三宫图+九宫图）_2037509100929552385.json、图片生成/图生图/【电商】模特商品融图专用-NB_2043641108210655234.json、图片生成/图生图/全能图像2 全身六角度生成_2047933906619473921.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text Concatenate`
-- `JjkText`
+全部 7 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `RH_Jimeng4_Image2Image`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `ShowText`
-- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `easy seed` —— 2/8 个有
-- `PrimitiveInt` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `RH_RhartImageG2ImageToImage` —— 2/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/7 个有
 
 ## 典型参数
 
